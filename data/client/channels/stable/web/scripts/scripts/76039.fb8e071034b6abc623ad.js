@@ -9600,8 +9600,8 @@
                 USER_PROFILE_MUTUAL_GUILDS_COUNT: "member of {count, plural, =0 {0 servers} one {1 server} other {{count} servers}}",
                 USER_PROFILE_MUTUAL_FRIENDS_PLACEHOLDER: "Mutual Friends",
                 USER_PROFILE_MUTUAL_GUILDS_PLACEHOLDER: "Mutual Servers",
-                USER_PROFILE_MUTUAL_FRIENDS_TOOLTIP: "Click to see all mutual friends",
-                USER_PROFILE_MUTUAL_GUILDS_TOOLTIP: "Click to see all mutual servers",
+                USER_PROFILE_MUTUAL_FRIENDS_TOOLTIP: "See all mutual friends",
+                USER_PROFILE_MUTUAL_GUILDS_TOOLTIP: "See all mutual servers",
                 USER_PROFILE_MUTUALS_TITLE: "Mutuals",
                 PROFILE_JOIN_VOICE_CHANNEL: "Join Voice Channel",
                 PROFILE_IN_VOICE_CALL: "In a voice call",
@@ -12321,6 +12321,7 @@
                 PREMIUM_CANCEL_WHAT_YOU_LOSE_SUBTITLE: "If you cancel, **you will lose these perks:**",
                 PREMIUM_CANCEL_WHAT_YOU_LOSE_BACK: "Nevermind, keep Nitro",
                 PREMIUM_CANCEL_WHAT_YOU_LOSE_BACK_CTA: "Never mind, keep Nitro",
+                PREMIUM_CANCEL_WHAT_YOU_LOSE_SUBTITLE_TENURE_REWARD: "If you cancel, you will lose your reward progress and all of these rewards:",
                 PREMIUM_PAUSE_INSTEAD: "Pause Instead",
                 PREMIUM_PAUSE_SELECT_TITLE: "Pause or cancel subscription",
                 PREMIUM_PAUSE_SELECT_SUBTITLE: "If you want to take a break from paid subscriptions, you have the option to pause it for a few months",
@@ -15294,6 +15295,11 @@
                 COLLECTIBLES_SHOP_GIFT_MODAL_SELECT_HEADER: "Send a gift",
                 COLLECTIBLES_SHOP_GIFT_MODAL_REVIEW_HEADER: "Review your gift",
                 COLLECTIBLES_GIFT_CODE_MODAL_UPSELL: "You can also send gifts to your friends from the Shop! $[Check it out](checkItOut).",
+                COLLECTIBLES_MOBILE_SHOP_IAP_TITLE: "Shop anywhere, anytime",
+                COLLECTIBLES_MOBILE_SHOP_IAP_DESCRIPTION_1: "Buy Avatar Decorations and Profile Effects to personalize your profile.",
+                COLLECTIBLES_MOBILE_SHOP_IAP_DESCRIPTION_2: "Popular styles include Anime, Fantasy, Cyberpunk, and more.",
+                COLLECTIBLES_MOBILE_SHOP_IAP_DESCRIPTION_3: "Nitro members get discounts on everything in the Shop.",
+                COLLECTIBLES_MOBILE_SHOP_IAP_CONFIRMATION: "Visit Shop",
                 DIRECTORY_CATEGORY_TOWN_HALL_1: "Staff Picks",
                 DIRECTORY_CATEGORY_TOWN_HALL_2: "Gaming",
                 DIRECTORY_CATEGORY_TOWN_HALL_3: "Indie Spotlight",
@@ -16539,6 +16545,7 @@
                 GUILD_HEADER_MEMBER_COUNT: "{count, plural, =1 {# Member} other {# Members}}",
                 GUILD_HEADER_MEMBER_COUNT_UNKNOWN: "— Members",
                 SENDER_BLOCKED_MEDIA_MARK_FALSE_POSITIVE: "Mark as not sensitive",
+                SENDER_BLOCKED_MEDIA_FALSE_POSITIVE_LINK: "Did we make a mistake? [Let us know](handleFalsePositiveHook)",
                 SENDER_BLOCKED_MEDIA_BOT_GUILD_MESSAGE: "Your message could not be sent. It may contain explicit media, which has been blocked by the server.",
                 SENDER_BLOCKED_MEDIA_BOT_DMS_MESSAGE: "Your message could not be sent. It may contain sensitive media, which has been blocked by someone in this conversation.",
                 SENDER_BLOCKED_MEDIA_EXPIRED_ERROR_HEADER: "Unable to Mark as Not Sensitive",
@@ -16768,6 +16775,11 @@
                 POLL_COACHMARK_SUBTITLE: "Plan events, gather opinions, or drop a silly question in the chat.",
                 POLL_COACHMARK_CTA: "Start a poll now!",
                 POLL_COACHMARK_DISMISS: "Maybe later.",
+                POLL_LURKING_VOTE_TITLE: "You can't vote on this poll yet!",
+                POLL_LURKING_VOTE_SUBTITLE: "You have to join the community before you can use polls.",
+                POLL_LURKING_SEE_VOTES_TITLE: "You can't see votes on this poll yet!",
+                POLL_LURKING_UNVOTE_TITLE: "You can't remove your vote unless you're a member.",
+                POLL_LURKING_UNVOTE_SUBTITLE: "You have to re-join the community before you can use polls again.",
                 POLL_NOT_INTERACTIVE: "View original message to interact",
                 POLL_NO_VOTES_FOR_ANSWER_TITLE: "Nothing to see here",
                 POLL_NO_VOTES_FOR_ANSWER_BODY: "There are no votes for this answer.",
@@ -16851,10 +16863,8 @@
                 GEO_RESTRICTED_MODAL_BODY: "**{serverName}** is not available in your region.",
                 QUESTS: "Quests",
                 QUEST: "{questName} Quest",
-                QUESTS_AVAILABLE_THROUGH: "Available through {date}",
-                QUESTS_SHOW_CODE: "Show code",
-                QUESTS_CLAIM_REWARD: "Claim reward",
-                QUESTS_CLAIM_YOUR_REWARD: "Claim your reward",
+                QUESTS_SEE_CODE: "See Code",
+                QUESTS_CLAIM_REWARD: "Claim Reward",
                 QUESTS_ACCEPT: "Accept Quest",
                 QUESTS_COMPLETE_TOOLTIP: "Hit claim to get your reward code!",
                 QUESTS_ACCEPT_TOOLTIP: "Accept the Quest and complete the task to unlock the reward",
@@ -16865,18 +16875,18 @@
                 QUESTS_REWARD_VERIFICATION_ERROR: "Uh oh! We failed to send you a verification email.",
                 QUEST_REWARD: "Win {reward}",
                 QUEST_REWARD_COMPLETED: "You unlocked {reward} on {date}",
-                QUESTS_REWARD_CODE_HEADER: "Your reward code",
+                QUESTS_REWARD_CODE_HEADER: "Your Reward Code",
                 QUESTS_REWARD_CODE_CONGRATS: "Congrats!",
                 QUESTS_REWARD_CODE_PLATFORM_SELECTION_HEADER: "What is your preferred platform?",
                 QUESTS_REWARD_CODE_ERROR: "Uh oh! Something went wrong, please try again later",
-                QUESTS_REWARD_CODE_SELECT_PLATFORM_LABEL: "Choose a platform",
-                QUESTS_REWARD_CODE_SELECT_PLATFORM_PLACEHOLDER: "Select platform",
-                QUESTS_REWARD_CODE_SELECT_PLATFORM_INSTRUCTIONS: "We will generate a platform-specific code for your {rewardName}. **You will not be able to change your selection after hitting Get code.**",
+                QUESTS_REWARD_CODE_SELECT_PLATFORM_LABEL: "Choose a Platform",
+                QUESTS_REWARD_CODE_SELECT_PLATFORM_PLACEHOLDER: "Select Platform",
+                QUESTS_REWARD_CODE_SELECT_PLATFORM_INSTRUCTIONS: "We will generate a platform-specific code for your {rewardName}. **You will not be able to change your selection after hitting Get Code.**",
                 QUESTS_REWARD_CODE_DONE: "Done",
-                QUESTS_REWARD_CODE_GET_CODE: "Get code",
-                QUESTS_REWARD_CODE_TRY_AGAIN: "Try again",
-                QUESTS_REWARD_CODE_UNCLAIMED_REWARD_TILE_SUBHEADER: "Claim this",
-                QUESTS_REWARD_CODE_CLAIMED_REWARD_TILE_SUBHEADER: "You claimed this",
+                QUESTS_REWARD_CODE_GET_CODE: "Get Code",
+                QUESTS_REWARD_CODE_TRY_AGAIN: "Try Again",
+                QUESTS_REWARD_CODE_UNCLAIMED_REWARD_TILE_SUBHEADER: "Claim This",
+                QUESTS_REWARD_CODE_CLAIMED_REWARD_TILE_SUBHEADER: "You Claimed This",
                 QUESTS_REWARD_CODE_PLATFORM_CROSS_PLATFORM: "Cross-platform",
                 QUESTS_REWARD_CODE_PLATFORM_PC: "PC",
                 QUESTS_REWARD_CODE_PLATFORM_PLAYSTATION: "PlayStation",
@@ -16884,22 +16894,22 @@
                 QUESTS_REWARD_CODE_PLATFORM_XBOX: "Xbox",
                 QUESTS_SPONSORED: "Sponsored",
                 QUESTS_PROMOTED: "Promoted",
-                QUESTS_LEARN_MORE_V2: "Learn more",
-                QUESTS_LEARN_MORE_STACKED: "Learn\n\nmore",
-                QUESTS_LEARN_MORE_LINK: "[Learn more]({questsLearnMoreLink})",
+                QUESTS_LEARN_MORE_V2: "Learn More",
+                QUESTS_LEARN_MORE_STACKED: "Learn\n\nMore",
+                QUESTS_LEARN_MORE_LINK: "[Learn More]({questsLearnMoreLink})",
                 QUESTS_ACCEPT_QUEST: "Accept Quest",
                 QUESTS_INSTRUCTIONS_TO_WIN_REWARD: "Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win {questReward}.",
                 QUESTS_ACCEPTED_INSTRUCTIONS_TO_WIN_REWARD: "**Quest accepted!** Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win {questReward}.",
-                QUESTS_TRACK_YOUR_PROGRESS: "Track your progress",
+                QUESTS_TRACK_YOUR_PROGRESS: "Track Your Progress",
                 QUESTS_TITLE: "{questName} Quest",
                 QUESTS_LANDING_PAGE_ERROR_HEADING: "Whoops!",
                 QUESTS_LANDING_PAGE_MOBILE_WEB_BODY: "Quests aren’t available on mobile...yet. Sorry about that! From your desktop Discord app or browser you can go to **User Settings > Gift Inventory** and accept the Quest there.",
                 QUESTS_MOBILE_EMBED_TITLE: "Quests aren’t available on mobile",
                 QUESTS_MOBILE_EMBED_BODY: "From your desktop Discord app or browser you can go to \nUser Settings > Gift Inventory and accept the Quest there.",
-                QUESTS_GET_THIS_GAME: "Get this game",
+                QUESTS_GET_THIS_GAME: "Get Game",
                 QUESTS_DISCLOSURE_LABEL: "Why am I seeing this?",
-                QUESTS_SHARE_LINK: "Copy share link",
-                QUESTS_HIDE_THIS: "Hide this",
+                QUESTS_SHARE_LINK: "Copy Share Link",
+                QUESTS_HIDE_THIS: "Hide This",
                 QUESTS_FIND_QUEST: "You can find this again in User Settings > Gift Inventory",
                 QUESTS_CLAIM_BY: "Claim by {expirationDate}.",
                 QUESTS_AVAILABLE_UNTIL: "Available until {expirationDate}.",
@@ -16930,8 +16940,8 @@
                 LIST_SUMMARY_LABEL_TWO: "!!{first}!! and !!{second}!!",
                 LIST_SUMMARY_LABEL_THREE: "!!{first}!!, !!{second}!!, and !!{third}!!",
                 LIST_SUMMARY_LABEL_THREE_AND_OTHERS: "!!{first}!!, !!{second}!!, !!{third}!!, and {count, plural, one {1 other} other {{count} others}}",
-                STOREFRONT: "App Store",
-                STOREFRONT_TITLE: "{appName} App Store",
+                STOREFRONT: "Store",
+                STOREFRONT_TITLE: "{appName} Store",
                 STOREFRONT_APP_SUBSCRIPTIONS: "App Subscriptions",
                 STOREFRONT_APP_SUBSCRIPTIONS_BODY: "Purchase subscriptions from {appName}",
                 STOREFRONT_APP_PRODUCTS: "App Products",
@@ -16980,7 +16990,25 @@
                 MEMBER_LIST_CONTENT_FEED_TIMESTAMP_FOR_HOURS: "for {hours}h",
                 MEMBER_LIST_CONTENT_FEED_TIMESTAMP_ACTIVE: "{minutes, plural, =-1 {} other {{minutes}:}}{seconds, plural, =-1 {} other {{seconds}}}",
                 MEMBER_LIST_CONTENT_FEED_FIRST_TIME: "First time",
-                CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity"
+                MEMBER_LIST_CONTENT_FEED_WATCHED_MEDIA: "Watched **{mediaTitle}**",
+                MEMBER_LIST_CONTENT_FEED_USER_WATCHED_MEDIA: "{userName} watched **{mediaTitle}**",
+                CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity",
+                RECENT_GAMES: "Recent Games",
+                USER_RECENT_GAMES_LAST_PLAYED_WEEKS_AGO: "{count} {count, plural, =1 {week} other {weeks}} ago",
+                USER_RECENT_GAMES_LAST_PLAYED_DAYS_AGO: "{count} {count, plural, =1 {day} other {days}} ago",
+                USER_RECENT_GAMES_LAST_PLAYED_HOURS_AGO: "{count} {count, plural, =1 {hour} other {hours}} ago",
+                USER_RECENT_GAMES_LAST_PLAYED_MINUTES_AGO: "{count} {count, plural, =1 {minute} other {minutes}} ago",
+                USER_RECENT_GAMES_LAST_PLAYED_SECONDS_AGO: "{count} {count, plural, =1 {second} other {seconds}} ago",
+                USER_RECENT_GAMES_LAST_PLAYED_WEEKS_AGO_SHORT: "{count}w ago",
+                USER_RECENT_GAMES_LAST_PLAYED_DAYS_AGO_SHORT: "{count}d ago",
+                USER_RECENT_GAMES_LAST_PLAYED_HOURS_AGO_SHORT: "{count}h ago",
+                USER_RECENT_GAMES_LAST_PLAYED_MINUTES_AGO_SHORT: "{count}m ago",
+                USER_RECENT_GAMES_LAST_PLAYED_SECONDS_AGO_SHORT: "{count}s ago",
+                MEMBERS_TABLE_JOINED_AT_TIMESTAMP_MINUTES: "{count} {count, plural, =1 {min} other {mins}} ago",
+                MEMBERS_TABLE_JOINED_AT_TIMESTAMP_HOURS: "{count} {count, plural, =1 {hr} other {hrs}} this week",
+                USER_RECENT_GAMES_PLAYED_LAST_WEEK_HOURS: "{count} {count, plural, =1 {hr} other {hrs}} this week",
+                USER_RECENT_GAMES_PLAYED_LAST_WEEK_MINUTES: "{count} {count, plural, =1 {min} other {mins}} this week",
+                USER_RECENT_GAMES_PLAYED_LAST_WEEK_SECONDS: "{count} {count, plural, =1 {sec} other {secs}} this week"
             })
         },
         444051: function(e, _, E) {
@@ -17299,6 +17327,7 @@
                 PACKAGES_HELP_5: "Oh that's right, it's {percent, number}%.",
                 PACKAGES_HELP_6: "Now please go thank your mail delivery person.",
                 PACKAGES_HELP_7: "They'll appreciate it.",
+                PACKAGES_FOOTER_NOTE: "Missed your mail delivery person? [They'll try again tomorrow.]({url})",
                 PACKAGES_NO_TEXT_TO_SPEECH_ANSWER_YES: "Yes",
                 PACKAGES_NO_TEXT_TO_SPEECH_ANSWER_NO: "No",
                 PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_1: "Is this a joke?",
@@ -18505,7 +18534,7 @@
                 l = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276064", ", Version Hash: ").concat("61aa23c47b1b479ee1ed1dff20db4282ff21119e")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276554", ", Version Hash: ").concat("6767969433e519cc7739d77b2fb7ce7d0b6c94db")), t.default.setTags({
                 appContext: R.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
         },
@@ -20873,8 +20902,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "276064", "276064"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276064")), _ = 0), _
+                let _ = parseInt((e = "276554", "276554"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276554")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -21696,27 +21725,39 @@
             "use strict";
             E.r(_), E.d(_, {
                 isEligibleForContentInventoryV1: function() {
-                    return n
+                    return r
                 }
             });
             var t = E("862205");
             let o = (0, t.createExperiment)({
-                kind: "user",
-                id: "2024-02_v1_content_inventory_feed",
-                label: "V1 Feed of the content inventory",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Show feed",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            });
+                    kind: "user",
+                    id: "2024-02_v1_content_inventory_feed",
+                    label: "V1 Feed of the content inventory",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Show feed",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                }),
+                n = (0, t.createExperiment)({
+                    kind: "user",
+                    id: "2024-03_content_inventory_surface_holdout",
+                    label: "Content Inventory Surface Holdout",
+                    defaultConfig: {},
+                    treatments: []
+                });
 
-            function n(e) {
+            function r(e) {
+                n.getCurrentConfig({
+                    location: e
+                }, {
+                    autoTrackExposure: !0
+                });
                 let {
                     enabled: _
                 } = o.getCurrentConfig({
@@ -25504,86 +25545,99 @@
             "use strict";
             E.r(_), E.d(_, {
                 default: function() {
-                    return L
+                    return U
                 }
-            });
-            var t = E("37983");
-            E("884691");
-            var o = E("66007"),
-                n = E("800619"),
-                r = E("459334"),
-                a = E("151426"),
-                i = E("669491"),
-                I = E("77078"),
-                s = E("79112"),
-                T = E("10641"),
-                S = E("447845"),
-                N = E("724001"),
-                O = E("638131"),
-                A = E("49111"),
-                R = E("994428"),
-                l = E("782340"),
-                u = E("61701");
+            }), E("222007");
+            var t = E("37983"),
+                o = E("884691"),
+                n = E("414456"),
+                r = E.n(n),
+                a = E("66007"),
+                i = E("800619"),
+                I = E("459334"),
+                s = E("151426"),
+                T = E("669491"),
+                S = E("77078"),
+                N = E("79112"),
+                O = E("10641"),
+                A = E("447845"),
+                R = E("724001"),
+                l = E("638131"),
+                u = E("630615"),
+                L = E("49111"),
+                C = E("994428"),
+                D = E("782340"),
+                c = E("61701");
+            let d = "https://www.youtube.com/embed/".concat(u.LOOTBOX_VIDEO_ID, "?autoplay=1&mute=1&controls=0&loop=1&playlist=").concat(u.LOOTBOX_VIDEO_ID, "&origin=https://").concat(L.PRIMARY_DOMAIN);
 
-            function L() {
-                let {
-                    allowOpeningLootboxes: e
-                } = S.default.useExperiment({
+            function U() {
+                let [e, _] = o.useState(!1), {
+                    allowOpeningLootboxes: E
+                } = A.default.useExperiment({
                     location: "lootbox_entrypoint"
-                }), _ = !(0, T.useIsDismissibleContentDismissed)(a.DismissibleContent.LOOTBOXES_ENTRYPOINT), E = e => {
-                    (0, T.markDismissibleContentAsDismissed)(a.DismissibleContent.LOOTBOXES_ENTRYPOINT, {
+                }), n = !(0, O.useIsDismissibleContentDismissed)(s.DismissibleContent.LOOTBOXES_ENTRYPOINT), u = e => {
+                    (0, O.markDismissibleContentAsDismissed)(s.DismissibleContent.LOOTBOXES_ENTRYPOINT, {
                         dismissAction: e
                     })
                 };
-                return e && _ ? (0, t.jsxs)("div", {
-                    className: u.wrapper,
-                    children: [(0, t.jsxs)(I.Clickable, {
-                        className: u.closeButton,
-                        onClick: () => E(R.ContentDismissActionType.DISMISS),
-                        children: [(0, t.jsx)(n.CloseSmallIcon, {
-                            className: u.closeIcon,
-                            color: i.default.colors.WHITE
-                        }), (0, t.jsx)(r.Text, {
+                return E && n ? (0, t.jsxs)("div", {
+                    className: r(c.wrapper, e ? c.wrapperHovered : null),
+                    onMouseLeave: () => _(!1),
+                    children: [(0, t.jsxs)(S.Clickable, {
+                        className: c.closeButton,
+                        onClick: () => u(C.ContentDismissActionType.DISMISS),
+                        children: [(0, t.jsx)(i.CloseSmallIcon, {
+                            className: c.closeIcon,
+                            color: T.default.colors.WHITE
+                        }), (0, t.jsx)(I.Text, {
                             variant: "text-xs/bold",
                             color: "always-white",
-                            children: l.default.Messages.PACKAGES_ENTRYPOINT_CLOSE
+                            children: D.default.Messages.PACKAGES_ENTRYPOINT_CLOSE
                         })]
-                    }), (0, t.jsxs)(I.Clickable, {
-                        className: u.entrypoint,
-                        onClick: () => {
-                            E(R.ContentDismissActionType.PRIMARY), s.default.open(A.UserSettingsSections.LOOTBOXES)
-                        },
-                        children: [(0, t.jsx)("div", {
-                            className: u.backgroundWrapper,
-                            children: (0, t.jsx)(O.default, {
-                                className: u.backgroundImage,
-                                pageMultiplier: 5
-                            })
-                        }), (0, t.jsx)(N.default, {
-                            className: u.image,
-                            color: i.default.colors.POLLS_NORMAL_FILL_HOVER,
-                            width: 70,
-                            height: 70
-                        }), (0, t.jsxs)("div", {
-                            className: u.body,
-                            children: [(0, t.jsx)(r.Text, {
-                                variant: "text-md/bold",
-                                color: "always-white",
-                                children: l.default.Messages.PACKAGES_ENTRYPOINT_TITLE
-                            }), (0, t.jsx)(r.Text, {
-                                variant: "text-sm/medium",
-                                color: "always-white",
-                                children: l.default.Messages.PACKAGES_ENTRYPOINT_DESCRIPTION
-                            })]
-                        }), (0, t.jsx)("div", {
-                            className: u.buttonWrapper,
-                            children: (0, t.jsx)("div", {
-                                className: u.iconButton,
-                                children: (0, t.jsx)(o.ArrowLargeRightIcon, {
-                                    className: u.buttonIcon,
-                                    color: i.default.colors.WHITE
+                    }), (0, t.jsxs)("div", {
+                        className: c.videoWrapper,
+                        children: [(0, t.jsx)("iframe", {
+                            className: c.video,
+                            src: d,
+                            sandbox: "allow-same-origin allow-scripts"
+                        }), (0, t.jsxs)(S.Clickable, {
+                            className: c.entrypoint,
+                            onClick: () => {
+                                u(C.ContentDismissActionType.PRIMARY), N.default.open(L.UserSettingsSections.LOOTBOXES)
+                            },
+                            onMouseEnter: () => _(!0),
+                            children: [(0, t.jsx)("div", {
+                                className: c.backgroundWrapper,
+                                children: (0, t.jsx)(l.default, {
+                                    className: c.backgroundImage,
+                                    pageMultiplier: 5
                                 })
-                            })
+                            }), (0, t.jsx)(R.default, {
+                                className: c.image,
+                                color: T.default.colors.POLLS_NORMAL_FILL_HOVER,
+                                width: 70,
+                                height: 70
+                            }), (0, t.jsxs)("div", {
+                                className: c.body,
+                                children: [(0, t.jsx)(I.Text, {
+                                    variant: "text-md/bold",
+                                    color: "always-white",
+                                    children: D.default.Messages.PACKAGES_ENTRYPOINT_TITLE
+                                }), (0, t.jsx)(I.Text, {
+                                    variant: "text-sm/medium",
+                                    color: "always-white",
+                                    children: D.default.Messages.PACKAGES_ENTRYPOINT_DESCRIPTION
+                                })]
+                            }), (0, t.jsx)("div", {
+                                className: c.buttonWrapper,
+                                children: (0, t.jsx)("div", {
+                                    className: c.iconButton,
+                                    children: (0, t.jsx)(a.ArrowLargeRightIcon, {
+                                        className: c.buttonIcon,
+                                        color: T.default.colors.WHITE
+                                    })
+                                })
+                            })]
                         })]
                     })]
                 }) : null
@@ -26712,8 +26766,7 @@
             class y extends t.default {
                 maybeFetchCurrentQuests() {
                     (0, R.getIsEligibleForQuests)({
-                        location: L.QuestsExperimentLocations.QUESTS_MANAGER,
-                        autoTrackExposure: !1
+                        location: L.QuestsExperimentLocations.QUESTS_MANAGER
                     }) && !l.default.isFetchingCurrentQuests && (0, O.fetchCurrentQuests)()
                 }
                 constructor(...e) {
@@ -37153,4 +37206,4 @@
         }
     }
 ]);
-//# sourceMappingURL=76039.7d135dd4cbc09e00aa3c.js.map
+//# sourceMappingURL=76039.fb8e071034b6abc623ad.js.map

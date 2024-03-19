@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29062"], {
+    ["67229"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -67242,27 +67242,29 @@
             }
 
             function W(e) {
-                var t, n;
+                var t, n, i, s;
                 let {
-                    channelId: i,
-                    messageId: s,
-                    attachmentIds: r,
-                    embedIds: a
+                    channelId: r,
+                    messageId: a,
+                    attachmentIds: o,
+                    embedIds: l
                 } = e;
-                if (null == i || null == s || (null !== (t = null == r ? void 0 : r.length) && void 0 !== t ? t : 0) === 0 && (null !== (n = null == a ? void 0 : a.length) && void 0 !== n ? n : 0) === 0) return;
-                let o = m.default.getChannel(i);
+                if (null == r || null == a || (null !== (t = null == o ? void 0 : o.length) && void 0 !== t ? t : 0) === 0 && (null !== (n = null == l ? void 0 : l.length) && void 0 !== n ? n : 0) === 0) return;
+                let u = m.default.getChannel(r);
                 v.default.track(N.AnalyticEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, {
-                    channel_id: i,
-                    guild_id: null == o ? void 0 : o.guild_id,
-                    message_id: s,
-                    embed_ids: a,
+                    channel_id: r,
+                    guild_id: null == u ? void 0 : u.guild_id,
+                    message_id: a,
+                    embed_ids: l,
                     user_is_underage: (0, h.isCurrentUserTeen)(),
                     scan_timeout_duration: I.MESSAGE_SCAN_TIMEOUT,
-                    attachment_ids_v2: r
+                    attachment_ids_v2: o
                 }), E.default.increment({
                     name: c.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT,
                     tags: ["metricVersion:".concat(1)]
-                })
+                }), E.default.distribution({
+                    name: c.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT_DISTRIBUTION
+                }, (null !== (i = null == o ? void 0 : o.length) && void 0 !== i ? i : 0) + (null !== (s = null == l ? void 0 : l.length) && void 0 !== s ? s : 0))
             }
 
             function z(e) {
@@ -67282,7 +67284,9 @@
                     num_of_attachments_pending_scan: i,
                     num_of_embeds: s,
                     num_of_embeds_pending_scan: r
-                })
+                }), E.default.distribution({
+                    name: c.MetricEvents.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED
+                }, i + r)
             }
 
             function q(e) {
@@ -67469,15 +67473,6 @@
                 })
         },
         733589: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return i
-                }
-            });
-            var i = n("106919").default
-        },
-        106919: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
@@ -83839,7 +83834,7 @@
             function T(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
                 for (let i of (!Array.isArray(e) && (e = [e]), e)) {
-                    if (!t.includes(i.type)) return null;
+                    if (void 0 === i || !t.includes(i.type)) return null;
                     if (i.type === c.AST_KEY.INLINE_CODE) {
                         let e = [...t, ...n];
                         if (null == T(i.validationChildContent, e)) return null
@@ -84757,6 +84752,56 @@
                         })
                     }
                 }
+        },
+        817720: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                isEligibleForWebAudioAPI: function() {
+                    return r
+                }
+            });
+            var i = n("862205");
+            let s = (0, i.createExperiment)({
+                kind: "user",
+                id: "2024-03_web_audio_api_rollout",
+                label: "Web Audio API Rollout",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enable Web Audio API usage",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            });
+
+            function r(e) {
+                let {
+                    location: t
+                } = e, {
+                    enabled: n
+                } = s.getCurrentConfig({
+                    location: t
+                }, {
+                    autoTrackExposure: !1
+                });
+                return n
+            }
+        },
+        804998: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getOrCreateAudioContext: function() {
+                    return s
+                }
+            });
+            let i = null;
+
+            function s() {
+                return null == i && (i = new AudioContext), i
+            }
         },
         711326: function(e, t, n) {
             "use strict";
@@ -87860,11 +87905,12 @@
                     this._metrics.push(n), (t || this._metrics.length >= 100) && this._flush()
                 }
                 distribution(e, t) {
-                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-                        i = {
-                            ...this._getMetricWithDefaults(e, "distribution"),
-                            value: t
-                        };
+                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+                    if (!(0, u.isMetricsEndpointV2Enabled)("distribution-metric")) return;
+                    let i = {
+                        ...this._getMetricWithDefaults(e, "distribution"),
+                        value: t
+                    };
                     this._metrics.push(i), (n || this._metrics.length >= 100) && this._flush()
                 }
                 _flush() {
@@ -87875,8 +87921,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710783731547",
-                                    build_number: "276064"
+                                    built_at: "1710868014898",
+                                    build_number: "276554"
                                 }
                             },
                             retries: 1
@@ -100086,7 +100132,7 @@
                     label: l.default.Messages.FORM_LABEL_NOTHING
                 }]
             }(r = i || (i = {})).EMBED = "Embed", r.BROWSER = "Thread Browser", r.POPOUT = "Active Threads Popout", r.CHANNEL_LIST = "Channel List", r.GUILD_ACTIVE_THREADS_MODAL = "Guild Active Threads Modal", r.INBOX = "Inbox", r.FORUM = "Forum", r.VOICE_AUTO_OPEN = "Voice Auto Open", (a = s || (s = {})).LATEST_ACTIVITY = "Last Message", a.CREATION_DATE = "Creation";
-            let g = new Set([o.AbortCodes.TOO_MANY_ATTACHMENTS, o.AbortCodes.EXPLICIT_CONTENT, o.AbortCodes.ENTITY_TOO_LARGE]),
+            let g = new Set([o.AbortCodes.TOO_MANY_ATTACHMENTS, o.AbortCodes.EXPLICIT_CONTENT, o.AbortCodes.ENTITY_TOO_LARGE, o.AbortCodes.EXPLICIT_CONTENT]),
                 m = new Set([o.AbortCodes.AUTOMOD_MESSAGE_BLOCKED, o.AbortCodes.AUTOMOD_TITLE_BLOCKED])
         },
         800843: function(e, t, n) {
@@ -104525,9 +104571,10 @@
                 r = n("643619");
             i = class e extends s.default {
                 static createInvoiceFromServer(t) {
+                    var n;
                     return new e({
                         id: t.id,
-                        invoiceItems: t.invoice_items.map(r.createInvoiceItemFromServer),
+                        invoiceItems: null === (n = t.invoice_items) || void 0 === n ? void 0 : n.map(r.createInvoiceItemFromServer),
                         total: t.total,
                         subtotal: t.subtotal,
                         currency: t.currency,
@@ -107394,7 +107441,8 @@
                     this.waitFor(o.default, a.default), Object.defineProperties(this, {
                         isDeveloper: {
                             configurable: !1,
-                            get: () => d
+                            get: () => d,
+                            set: () => {}
                         }
                     }), c(), setTimeout(() => Object.freeze(this))
                 }
@@ -125315,7 +125363,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "61aa23c47b1b479ee1ed1dff20db4282ff21119e"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "6767969433e519cc7739d77b2fb7ce7d0b6c94db"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134813,7 +134861,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "276064"
+                                build_number: "276554"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -137864,43 +137912,50 @@
             let i;
             n.r(t), n.d(t, {
                 createSoundForPack: function() {
-                    return o
-                },
-                createSound: function() {
                     return l
                 },
-                playSound: function() {
+                createSound: function() {
                     return u
+                },
+                playSound: function() {
+                    return d
                 }
             });
-            var s = n("870696"),
-                r = n("319291"),
-                a = n("102985");
-
-            function o(e, t) {
-                var n;
-                let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1,
-                    s = (0, r.default)(t);
-                return l(null !== (n = s[e]) && void 0 !== n ? n : e, e, i)
+            var s = n("817720"),
+                r = n("870696"),
+                a = n("319291"),
+                o = n("102985");
+            {
+                let e = (0, s.isEligibleForWebAudioAPI)({
+                        location: "SoundUtils"
+                    }),
+                    t = n("895737");
+                i = e ? t.WebAudioAPISound : t.WebAudioSound
             }
 
             function l(e, t) {
+                var n;
+                let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1,
+                    s = (0, a.default)(t);
+                return u(null !== (n = s[e]) && void 0 !== n ? n : e, e, i)
+            }
+
+            function u(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1;
                 return new i(e, t, n)
             }
 
-            function u(e) {
+            function d(e) {
                 var t;
                 let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
                     i = arguments.length > 2 ? arguments[2] : void 0;
-                if (a.default.disableSounds) return;
-                let o = (0, r.default)(s.default.getSoundpack()),
-                    u = l(null !== (t = o[e]) && void 0 !== t ? t : e, e, n);
-                return null != i ? u.playWithListener().then(e => {
+                if (o.default.disableSounds) return;
+                let s = (0, a.default)(r.default.getSoundpack()),
+                    l = u(null !== (t = s[e]) && void 0 !== t ? t : e, e, n);
+                return null != i ? l.playWithListener().then(e => {
                     e && i()
-                }) : u.play(), u
+                }) : l.play(), l
             }
-            i = n("895737").WebAudioSound
         },
         271560: function(e, t, n) {
             "use strict";
@@ -139430,40 +139485,54 @@
             "use strict";
             n.r(t), n.d(t, {
                 playGiftSound: function() {
-                    return c
+                    return m
                 },
                 WebAudioSound: function() {
-                    return _
+                    return S
+                },
+                WebAudioAPISound: function() {
+                    return v
                 }
-            }), n("70102");
-            var i = n("917351"),
-                s = n.n(i),
-                r = n("520497"),
-                a = n("812809"),
-                o = n("42887"),
-                l = n("773336");
-            let u = "default",
-                d = u;
-
-            function c(e, t) {
-                let n = new Audio((0, r.default)(e));
-                n.volume = (0, a.default)(t), n.play()
+            }), n("222007"), n("70102");
+            var i, s, r = n("917351"),
+                a = n.n(r),
+                o = n("804998"),
+                l = n("520497"),
+                u = n("812809"),
+                d = n("42887"),
+                c = n("773336");
+            let f = "default",
+                _ = f;
+            (s = i || (i = {})).Stopped = "stopped", s.Playing = "playing", s.Looping = "looping", s.Paused = "paused";
+            let E = new Map;
+            async function h(e) {
+                let t = await fetch(n("89400")("../../sounds/".concat(e, ".mp3").replace("../../sounds/", "./"))).then(e => e.arrayBuffer());
+                return (0, o.getOrCreateAudioContext)().decodeAudioData(t)
+            }
+            async function g(e) {
+                let t = E.get(e);
+                return null == t && (t = h(e), E.set(e, t)), await t
             }
 
-            function f() {
+            function m(e, t) {
+                let n = new Audio((0, l.default)(e));
+                n.volume = (0, u.default)(t), n.play()
+            }
+
+            function p() {
                 null != window.navigator.mediaDevices && window.navigator.mediaDevices.enumerateDevices().then(e => {
-                    let t = o.default.getOutputDevices(),
-                        n = s(t).sortBy(e => e.index).findIndex(e => e.id === o.default.getOutputDeviceId()),
-                        i = t[o.default.getOutputDeviceId()],
-                        r = e.filter(e => "audiooutput" === e.kind && "communications" !== e.deviceId),
-                        a = r[n];
-                    null != i && (null == a || a.label !== i.name) && (a = r.find(e => e.label === i.name)), d = null != a ? a.deviceId : u
+                    let t = d.default.getOutputDevices(),
+                        n = a(t).sortBy(e => e.index).findIndex(e => e.id === d.default.getOutputDeviceId()),
+                        i = t[d.default.getOutputDeviceId()],
+                        s = e.filter(e => "audiooutput" === e.kind && "communications" !== e.deviceId),
+                        r = s[n];
+                    null != i && (null == r || r.label !== i.name) && (r = s.find(e => e.label === i.name)), _ = null != r ? r.deviceId : f
                 }).catch(() => {
-                    d = u
+                    _ = f
                 })
             }
-            l.isPlatformEmbedded && (o.default.addChangeListener(f), f());
-            class _ {
+            c.isPlatformEmbedded && (d.default.addChangeListener(p), p());
+            class S {
                 get volume() {
                     return this._volume
                 }
@@ -139505,12 +139574,75 @@
                     return this._audio = null !== (e = this._audio) && void 0 !== e ? e : new Promise((e, t) => {
                         let i = new Audio;
                         i.src = n("89400")("../../sounds/".concat(this.name, ".mp3").replace("../../sounds/", "./")), i.onloadeddata = () => {
-                            i.volume = Math.min(o.default.getOutputVolume() / 100 * this._volume, 1), l.isPlatformEmbedded && i.setSinkId(d), e(i)
+                            i.volume = Math.min(d.default.getOutputVolume() / 100 * this._volume, 1), c.isPlatformEmbedded && i.setSinkId(_), e(i)
                         }, i.onerror = () => t(Error("could not play audio")), i.onended = () => this._destroyAudio(), i.load()
                     }), this._audio
                 }
                 constructor(e, t, n) {
                     this.name = e, this._volume = n
+                }
+            }
+            class v {
+                get volume() {
+                    return this._volume
+                }
+                set volume(e) {
+                    this._ensureAudio().then(t => {
+                        let {
+                            gainNode: n,
+                            context: i
+                        } = t;
+                        this._volume = e, n.gain.setValueAtTime(e, i.currentTime)
+                    })
+                }
+                loop() {
+                    "looping" !== this._state && (this._state = "looping", this._ensureAudio().then(e => {
+                        let {
+                            source: t
+                        } = e;
+                        "looping" === this._state && (t.loop = !0, t.start())
+                    }))
+                }
+                play() {
+                    "playing" !== this._state && (this._state = "playing", this._ensureAudio().then(e => {
+                        let {
+                            source: t
+                        } = e;
+                        "playing" === this._state && (t.loop = !1, t.start())
+                    }))
+                }
+                pause() {
+                    "paused" !== this._state && (this._state = "paused", this._ensureAudio().then(e => {
+                        let {
+                            source: t
+                        } = e;
+                        "paused" === this._state && (t.stop(), this._state = "paused")
+                    }))
+                }
+                stop() {
+                    this._destroyAudio()
+                }
+                _destroyAudio() {
+                    "stopped" !== this._state && (this._state = "stopped", this._ensureAudio().then(e => {
+                        let {
+                            source: t
+                        } = e;
+                        "stopped" === this._state && (t.disconnect(), t.stop(), this._source = null, this._buffer = null, this._state = "stopped", this._ensureAudioPromise = null)
+                    }))
+                }
+                async _ensureAudio() {
+                    if (null == this._ensureAudioPromise) {
+                        let e = Math.min(d.default.getOutputVolume() / 100 * this._volume, 1);
+                        this._ensureAudioPromise = g(this.name).then(t => null == t ? Promise.reject(Error("Failed to load audio: ".concat(this.name))) : (this._audioContext = (0, o.getOrCreateAudioContext)(), this._gain = new GainNode(this._audioContext), this._gain.gain.value = e, c.isPlatformEmbedded && this._audioContext.setSinkId(_), this._buffer = t, this._source = this._audioContext.createBufferSource(), this._source.buffer = t, this._source.connect(this._gain).connect(this._audioContext.destination), this._source.loop = !1, this._source.onended = () => this._destroyAudio(), Promise.resolve({
+                            context: this._audioContext,
+                            gainNode: this._gain,
+                            source: this._source
+                        }))).catch(() => Promise.reject(Error("Failed to load audio: ".concat(this.name))))
+                    }
+                    return await this._ensureAudioPromise
+                }
+                constructor(e, t, n) {
+                    this.name = e, this._volume = n, this._audioContext = null, this._buffer = null, this._source = null, this._state = "stopped", this._ensureAudioPromise = null
                 }
             }
         },
@@ -144663,7 +144795,8 @@
                     return null != this.conn.fastUdpReconnect ? this.numFastUdpReconnects : null
                 }
                 wasRemoteDisconnected() {
-                    this.conn.wasRemoteDisconnected()
+                    var e, t;
+                    null === (e = (t = this.conn).wasRemoteDisconnected) || void 0 === e || e.call(t)
                 }
                 setLocalVideoDisabled(e, t) {
                     this.disabledLocalVideos[e] = t, this.emit(m.BaseConnectionEvent.LocalVideoDisabled, e, t)
@@ -152000,7 +152133,7 @@
                 MetricEvents: function() {
                     return i
                 }
-            }), n("222007"), (s = i || (i = {})).APP_CRASHED = "app_crashed", s.SOCKET_CRASHED = "socket_crashed", s.MESSAGE_REQUEST_VIEW = "message_request_view", s.SPAM_MESSAGE_REQUEST_VIEW = "spam_message_request_view", s.SPAM_MESSAGE_REQUEST_ERROR_VIEW = "spam_message_request_error_view", s.FAMILY_CENTER_VIEW = "family_center_view", s.SAFETY_HUB_VIEW = "safety_hub_view", s.APPEAL_INGESTION_VIEW = "appeal_ingestion_view", s.MESSAGE_REQUEST_COUNT_DRIFT = "message_request_count_drift", s.FORUM_CHANNEL_GRID_AUTO_ENABLED = "forum_channel_grid_auto_enabled", s.REMIX_FONT_LOADING_ERROR = "remix_font_loading_error", s.AFK_NOT_IDLE = "afk_not_idle", s.CAPTCHA_EVENT = "captcha_event", s.SAFETY_WARNING_VIEW = "safety_warning_view", s.SAFETY_WARNING_MODAL_VIEW = "safety_warning_modal_view", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT = "explicit_media_scan_client_timed_out", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING = "explicit_media_scan_client_timing", s.EXPLICIT_MEDIA_SENDER_FP_BUTTON_VIEW = "explicit_media_sender_fp_button_view", s.QUEST_CONTENT_IMPRESSION = "quest_content_impression", s.OTA_CHECK_ATTEMPT = "OtaCheckAttempt", s.OTA_ASSET_DOWNLOAD_ATTEMPT = "OtaAssetDownloadAttempt", s.OTA_UPDATE_CHECK = "ota_update_check", s.OTA_ASSET_DOWNLOAD = "ota_asset_download", s.DEBUG_OTA_200_TIMEOUT = "debug_ota_200_timeout", s.IMAGE_LOAD_ERROR = "image_load_error"
+            }), n("222007"), (s = i || (i = {})).APP_CRASHED = "app_crashed", s.SOCKET_CRASHED = "socket_crashed", s.MESSAGE_REQUEST_VIEW = "message_request_view", s.SPAM_MESSAGE_REQUEST_VIEW = "spam_message_request_view", s.SPAM_MESSAGE_REQUEST_ERROR_VIEW = "spam_message_request_error_view", s.FAMILY_CENTER_VIEW = "family_center_view", s.SAFETY_HUB_VIEW = "safety_hub_view", s.APPEAL_INGESTION_VIEW = "appeal_ingestion_view", s.MESSAGE_REQUEST_COUNT_DRIFT = "message_request_count_drift", s.FORUM_CHANNEL_GRID_AUTO_ENABLED = "forum_channel_grid_auto_enabled", s.REMIX_FONT_LOADING_ERROR = "remix_font_loading_error", s.AFK_NOT_IDLE = "afk_not_idle", s.CAPTCHA_EVENT = "captcha_event", s.SAFETY_WARNING_VIEW = "safety_warning_view", s.SAFETY_WARNING_MODAL_VIEW = "safety_warning_modal_view", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT = "explicit_media_scan_client_timed_out", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING = "explicit_media_scan_client_timing", s.EXPLICIT_MEDIA_SENDER_FP_BUTTON_VIEW = "explicit_media_sender_fp_button_view", s.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED = "explicit_media_pending_message_loaded", s.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT_DISTRIBUTION = "explicit_media_scan_client_timed_out_distribution", s.QUEST_CONTENT_IMPRESSION = "quest_content_impression", s.OTA_CHECK_ATTEMPT = "OtaCheckAttempt", s.OTA_ASSET_DOWNLOAD_ATTEMPT = "OtaAssetDownloadAttempt", s.OTA_UPDATE_CHECK = "ota_update_check", s.OTA_ASSET_DOWNLOAD = "ota_asset_download", s.DEBUG_OTA_200_TIMEOUT = "debug_ota_200_timeout", s.IMAGE_LOAD_ERROR = "image_load_error"
         },
         561467: function(e, t, n) {
             "use strict";
@@ -152045,9 +152178,9 @@
                 ReleaseChannelsSets: function() {
                     return r
                 }
-            }), n("222007"), (s = i || (i = {})).STABLE = "stable", s.BETA = "beta", s.ALPHA = "alpha", s.PTB = "ptb", s.CANARY = "canary", s.STAGING = "staging", s.DEVELOPMENT = "development";
+            }), n("222007"), (s = i || (i = {})).STABLE = "stable", s.PTB = "ptb", s.CANARY = "canary", s.BETA = "betaRelease", s.ALPHA = "alphaRelease", s.STAGING = "staging", s.DEVELOPMENT = "development";
             let r = {
-                ALL: new Set(["alpha", "beta", "canary", "development", "ptb", "stable", "staging"])
+                ALL: new Set(["alphaRelease", "betaRelease", "canary", "development", "ptb", "stable", "staging"])
             }
         },
         843117: function(e, t, n) {
@@ -152451,4 +152584,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.f6260949f2ce30881a95.js.map
+//# sourceMappingURL=67229.1951670db1bbdb9ec200.js.map
