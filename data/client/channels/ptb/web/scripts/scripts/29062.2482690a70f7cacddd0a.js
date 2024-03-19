@@ -87921,8 +87921,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710866809071",
-                                    build_number: "276539"
+                                    built_at: "1710867720052",
+                                    build_number: "276549"
                                 }
                             },
                             retries: 1
@@ -104571,9 +104571,10 @@
                 r = n("643619");
             i = class e extends s.default {
                 static createInvoiceFromServer(t) {
+                    var n;
                     return new e({
                         id: t.id,
-                        invoiceItems: t.invoice_items.map(r.createInvoiceItemFromServer),
+                        invoiceItems: null === (n = t.invoice_items) || void 0 === n ? void 0 : n.map(r.createInvoiceItemFromServer),
                         total: t.total,
                         subtotal: t.subtotal,
                         currency: t.currency,
@@ -125362,7 +125363,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "f5a545ca352bb077217ff748bb87dc0d1a9b73f2"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "df690ee6346ba0ef13b47b940babfb39d0d965fa"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134860,7 +134861,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "276539"
+                                build_number: "276549"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -152583,4 +152584,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.fecde5e0b8ea7dffe977.js.map
+//# sourceMappingURL=29062.2482690a70f7cacddd0a.js.map
