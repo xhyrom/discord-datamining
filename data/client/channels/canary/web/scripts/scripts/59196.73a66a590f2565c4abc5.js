@@ -35261,7 +35261,7 @@
             class l {
                 async loadRemoteImage(e, t) {
                     let n = new Image;
-                    n.src = t, n.crossOrigin = "anonymous", await n.decode(), this.assets[e] = n
+                    return n.src = t, n.crossOrigin = "anonymous", await n.decode(), this.assets[e] = n, Promise.resolve()
                 }
                 get(e) {
                     return this.assets[e]
@@ -82755,4 +82755,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59196.b5b52f3e0ceecae20afd.js.map
+//# sourceMappingURL=59196.73a66a590f2565c4abc5.js.map
