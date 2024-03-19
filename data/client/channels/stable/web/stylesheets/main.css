@@ -26482,8 +26482,28 @@ html .progress__4ef76 {
     overflow: hidden
 }
 
+.header__0420f {
+    display: grid;
+    grid-template-columns: 1fr 24px;
+    grid-template-areas: "question infoIcon" "prompt infoIcon";
+    grid-gap: 0 8px;
+    gap: 0 8px
+}
+
+.question_ebf72e {
+    grid-area: question;
+    word-break: break-word
+}
+
 .prompt__75afd {
+    grid-area: prompt;
     margin: 4px 0 0
+}
+
+.infoButton__66908 {
+    grid-area: infoIcon;
+    align-self: flex-start;
+    cursor: pointer
 }
 
 .detailsText__5f51b {
@@ -36846,18 +36866,15 @@ html .progress__4ef76 {
 .headerContainer__74e18 {
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    cursor: pointer;
+    height: 16px
 }
 
 .header_dc6f49 {
     display: flex;
     align-items: center;
     gap: 4px
-}
-
-.toggleExpandButton__22eac {
-    height: 16px;
-    cursor: pointer
 }
 
 .toggleExpandIcon_ab767d {
@@ -77272,7 +77289,7 @@ input::-webkit-inner-spin-button {
 }
 
 .contentWrapperExpanded__0ed2e:after {
-    box-shadow: 0 0 10px currentColor
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, .2), 0 -2px 4px rgba(0, 0, 0, .3)
 }
 
 .contentWrapperAccepted__6d410 {
@@ -114672,32 +114689,6 @@ html .invoiceCancelRow_a8669b {
     height: 100%
 }
 
-.select__01286 {
-    background-color: var(--background-secondary);
-    border-radius: 3px
-}
-
-.guildPickerContainer_feed7d:not(:last-child) {
-    margin-bottom: 8px;
-    padding-top: 16px
-}
-
-.guildPickerDescription_e2bc20 {
-    margin-bottom: 8px
-}
-
-.breadcrumbs_b587a9:after {
-    content: "";
-    display: block;
-    border-bottom: 1px solid var(--background-modifier-accent);
-    margin-top: 16px;
-    padding-bottom: 0
-}
-
-.userSubscriptionDetailsContainer__5e335 {
-    padding-top: 16px
-}
-
 .answerRow__9fc86 {
     display: grid;
     grid-template-columns: 1fr;
@@ -118094,6 +118085,32 @@ html .invoiceCancelRow_a8669b {
     width: 100%
 }
 
+.select__01286 {
+    background-color: var(--background-secondary);
+    border-radius: 3px
+}
+
+.guildPickerContainer_feed7d:not(:last-child) {
+    margin-bottom: 8px;
+    padding-top: 16px
+}
+
+.guildPickerDescription_e2bc20 {
+    margin-bottom: 8px
+}
+
+.breadcrumbs_b587a9:after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid var(--background-modifier-accent);
+    margin-top: 16px;
+    padding-bottom: 0
+}
+
+.userSubscriptionDetailsContainer__5e335 {
+    padding-top: 16px
+}
+
 .headerContainer_d9fdf2 {
     flex-direction: column
 }
@@ -119995,7 +120012,9 @@ html .invoiceCancelRow_a8669b {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    width: 92px;
+    height: 92px
 }
 
 .headerContainer__122e4 {
@@ -130244,4 +130263,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ee49e687c7e05ac93363.css.map*/
+/*# sourceMappingURL=app.dd40ceea8770fba6910e.css.map*/

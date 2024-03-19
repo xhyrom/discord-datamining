@@ -20662,7 +20662,8 @@ h6.title__7a3bb {
     flex-direction: column;
     align-items: center;
     background-color: var(--modal-background);
-    padding: 0 16px 24px
+    padding: 0 16px 24px;
+    border-radius: 4px
 }
 
 .giftCodeSection__8806e {
@@ -28019,8 +28020,8 @@ span.button__4f306.disabled_dc5630 {
 
 .title_cb085d {
     font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-transform: uppercase
 }
 
@@ -28126,8 +28127,8 @@ span.button__4f306.disabled_dc5630 {
     display: flex;
     align-items: center;
     border-radius: 5px;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 1rem;
+    line-height: 1.125rem;
     padding: 16px
 }
 
@@ -28215,4 +28216,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.e02734ad6e90e387d8be.css.map*/
+/*# sourceMappingURL=shared.27ed71f39efe1fd7cb9f.css.map*/

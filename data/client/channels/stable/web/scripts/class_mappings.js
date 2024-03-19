@@ -5819,7 +5819,6 @@
             e.exports = {
                 header: "header_dc6f49",
                 headerContainer: "headerContainer__74e18",
-                toggleExpandButton: "toggleExpandButton__22eac",
                 toggleExpandIcon: "toggleExpandIcon_ab767d"
             }
         },
@@ -19377,7 +19376,10 @@
                 container: "container__3ca24",
                 detailsText: "detailsText__5f51b",
                 detailsTextButton: "detailsTextButton_d4f894",
+                header: "header__0420f",
+                infoButton: "infoButton__66908",
                 prompt: "prompt__75afd",
+                question: "question_ebf72e",
                 secondaryAction: "secondaryAction__6fd41",
                 tertiaryAction: "tertiaryAction__09766"
             }
