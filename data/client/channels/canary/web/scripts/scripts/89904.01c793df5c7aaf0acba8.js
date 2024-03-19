@@ -13,10 +13,10 @@
                     return T
                 },
                 useGetSubscriptionInvoice: function() {
-                    return p
+                    return A
                 },
                 getItemUnitPriceWithDiscount: function() {
-                    return A
+                    return p
                 }
             }), r("222007");
             var n = r("884691"),
@@ -134,7 +134,7 @@
                         },
                         oldFormErrors: !0
                     });
-                    return e.body
+                    return f.default.createInvoiceFromServer(e.body)
                 } catch (e) {
                     throw new a.BillingError(e)
                 }
@@ -190,12 +190,12 @@
                 return S(e, t)
             }
 
-            function p(e) {
+            function A(e) {
                 let t = (0, n.useCallback)(() => L(e), [JSON.stringify(e)]);
                 return S(e, t)
             }
 
-            function A(e) {
+            function p(e) {
                 let t = e.subscriptionPlanPrice;
                 return e.discounts.forEach(r => {
                     let n = r.amount / e.quantity;
@@ -332,14 +332,14 @@
                 d.add(e)
             }
 
-            function p(e) {
+            function A(e) {
                 let {
                     messages: t
                 } = e;
-                t.forEach(e => A(e))
+                t.forEach(e => p(e))
             }
 
-            function A(e) {
+            function p(e) {
                 let t = e.type === n.MessageTypes.PREMIUM_REFERRAL ? e.content : null;
                 if (null == t) return !1;
                 if (!R.has(t) && !d.has(t)) {
@@ -440,14 +440,14 @@
                     } = e;
                     d.delete(t), R.add(t)
                 },
-                LOAD_MESSAGES_SUCCESS: p,
+                LOAD_MESSAGES_SUCCESS: A,
                 MESSAGE_CREATE: function(e) {
                     let {
                         message: t
                     } = e;
-                    A(t)
+                    p(t)
                 },
-                LOAD_MESSAGES_AROUND_SUCCESS: p,
+                LOAD_MESSAGES_AROUND_SUCCESS: A,
                 LOGOUT: function() {
                     f = null, o = {}, c = [], _ = new Set, E = !1, d = new Set, R = new Set, I = {}, L = 0, S = null
                 }
@@ -631,9 +631,12 @@
                     } = e;
                     null != t ? o.userTrialOffers[t.trial_id] = t : o.userTrialOffers = {}, null != r ? o.userDiscountOffers[r.discount_id] = r : null != n ? o.userDiscountOffers[n.discount_id] = n : o.userDiscountOffers = {}, o.userOffersLastFetchedAtDate = Date.now()
                 },
+                BILLING_USER_OFFER_FETCH_FAIL: function() {
+                    c(), o.userOffersLastFetchedAtDate = Date.now()
+                },
                 LOGOUT: c
             })
         }
     }
 ]);
-//# sourceMappingURL=89904.a8efed4a1a4dd8bea112.js.map
+//# sourceMappingURL=89904.01c793df5c7aaf0acba8.js.map
