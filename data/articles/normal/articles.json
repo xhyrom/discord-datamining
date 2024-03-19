@@ -5545,33 +5545,6 @@
     "body": "<p>With QR code login, you can connect to Discord quickly and securely without typing out your full password or sharing your password on an unfamiliar setup! Scanning a QR code with your logged in Discord mobile app is a super easy way to get logged in on a new computer, no matter where you are.</p>\n<h1 id=\"using-qr-code-login\">Using QR Code Login</h1>\n<p>To login using a QR code, you'll first want to download the Discord mobile app and log in with your account credentials. QR code scanning is available on both <a href=\"https://play.google.com/store/apps/details?id=com.discord&amp;hl=en_US\" target=\"_self\">Discord for Android</a> and <a href=\"https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjbjdKR8Z3nAhXVtp4KHa8KBbcQFjAAegQIAxAB&amp;url=https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fdiscord%2Fid985746746&amp;usg=AOvVaw1PNPyol20tdMi2gPY9McHu\" target=\"_self\">Discord for iOS</a>!</p>\n<p>Once you're logged in on your mobile device, you can log into the Discord desktop or browser client by scanning a QR code with the app. The QR code on the login screen looks like this!</p>\n<p><img src=\"https://support.discord.com/hc/article_attachments/360048105592\" alt=\"mceclip0.png\"></p>\n<p><em>Fun fact: QR codes only work for 2 minutes, so this one won't work anymore! Scan it and you'll see!</em></p>\n<p>To scan the login code, head to the Discord app. Open the User Settings menu, then choose the Scan QR Code option! We'll ask for camera permissions if you haven't granted them to us already, then you're ready to scan! Once the scanner's open, simply line up the box with the QR code on screen.</p>\n<h3>You can also scan the QR code using any application that supports QR scanning, including the Camera app on many devices! You'll get a quick shortcut to the Discord app for final scanning and approval.</h3>\n<h1 id=\"logging-in\">Logging In</h1>\n<p>Once you've scanned the QR code, you'll be asked to verify and approve the ongoing login attempt. You'll see a screen that looks like this!</p>\n<p><img class=\"shrinkToFit transparent\" src=\"https://cdn.discordapp.com/attachments/667100630820847618/669322222925512704/image0.png\" alt=\"https://cdn.discordapp.com/attachments/667100630820847618/669322222925512704/image0.png\" width=\"474\" height=\"1029\"></p>\n<p>After approval, your desktop device will be logged in and ready to go! Want to log out of that device? Just head to User Settings &gt; Log Out on the desktop or browser client and you'll be logged out until your next session!</p>\n<h3>QR codes only last for 2 minutes. If you don't scan the QR code you generate within 2 minutes, you'll need to generate a new QR code to login successfully—just refresh the login page or restart the desktop app!</h3>\n<h1 id=\"safety-tips\">Safety Tips</h1>\n<p>You've got full control over what devices are allowed to login with the verification screen shown above. Even if you've scanned a QR code that's opened the Discord app by mistake, you can prevent the login attempt right away.</p>\n<p><strong>Never approve a QR code login that you didn't generate yourself! </strong>If you've been sent a QR code by someone else that opened the login verification screen, <strong>hit cancel right away</strong>.</p>\n<p>If you approve a login that wasn't yours by mistake, you can <a href=\"https://support.discord.com/hc/en-us/articles/218410947\" target=\"_self\">change your Discord password</a> to log out all devices at once, including those you don't personally approve of.</p>\n<p>Most importantly, don't forget that <strong>any QR code login attempt needs to be approved before it goes through</strong>. Keep an eye out for that verification screen and <strong>never verify or approve a login that you didn't ask for.</strong></p>\n<h3>If someone you don't know is asking you to login using a QR code, they may be trying to phish your account. You can learn more about phishing <a href=\"https://support.discord.com/hc/en-us/articles/360037660611\" target=\"_self\">here</a>!</h3>\n<p> </p>\n<p>If you have feedback on this new feature, please don't hesitate to share it with us as well! You can share any of your feedback <a href=\"https://dis.gd/feedback\" target=\"_self\">here</a>.</p>"
   },
   {
-    "id": 360037947212,
-    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/360037947212.json",
-    "html_url": "https://support.discord.com/hc/en-us/articles/360037947212--Known-Issue-Screenshare-and-GoLive-on-Windows-7",
-    "author_id": 114628872252,
-    "comments_disabled": true,
-    "draft": false,
-    "promoted": false,
-    "position": 0,
-    "section_id": 115000352292,
-    "created_at": "2019-12-27T12:43:47Z",
-    "name": "[Known Issue] Screenshare and GoLive on Windows 7",
-    "title": "[Known Issue] Screenshare and GoLive on Windows 7",
-    "source_locale": "en-us",
-    "locale": "en-us",
-    "outdated": false,
-    "outdated_locales": [],
-    "edited_at": "2019-12-27T12:43:54Z",
-    "user_segment_id": null,
-    "permission_group_id": 1720972,
-    "content_tag_ids": [],
-    "label_names": [
-      "known bugs",
-      "answer-bot"
-    ],
-    "body": "<p>As of <strong>December 17th, 2019</strong>, we became aware of a number of users on the Windows 7 OS facing issues attempting to use Screenshare and GoLive. This issue manifests as a blank black screen when attempting to use the feature.</p>\n<p>To make sure that your settings are optimal, you can check to see if the following is enabled:<br><strong>User Settings &gt; Voice &amp; Video &gt; 'Use our latest technology to capture your screen' Turn On</strong></p>\n<p>If this does not correct the issue, our sincerest apologies. The team is aware of a broader issue and investigating. We do not yet have an ETA on when this will be corrected.</p>"
-  },
-  {
     "id": 360037842511,
     "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/360037842511.json",
     "html_url": "https://support.discord.com/hc/en-us/articles/360037842511--Known-Issues-New-Chat-Text-Box",
@@ -7405,32 +7378,6 @@
       "answer-bot"
     ],
     "body": "<p>Oh no! Spotify keeps pausing while you're listening, but why?!</p>\n<p>If you are transmitting with your mic in voice chat for 30 seconds while Spotify is playing, <strong>Spotify will stop playing</strong>, and you'll get this error bar at the top of your app: </p>\n<p><img src=\"https://support.discord.com/hc/article_attachments/360000253872/mceclip0.png\"></p>\n<p><strong>This autopause error may also appear when using the following features with Spotify:<br>- Voice Chat<br>- Screenshare<br>- Go Live</strong></p>\n<h3>Because Spotify is intended for personal and private use, the auto pause function allows us to stay in compliance with Spotify's Terms &amp; Conditions outlined at <a href=\"https://www.spotify.com/legal/end-user-agreement/\" target=\"_blank\" rel=\"noopener\">https://www.spotify.com/legal/end-user-agreement/</a>. </h3>\n<p>To avoid this try using Push-To-Talk or adjusting your voice activity sensitivity so that your mic is not activating while you listen. For more info on how to do that, check out <a href=\"https://support.discord.com/hc/en-us/articles/211376518\" target=\"_blank\" rel=\"noopener noreferrer\">this article</a>!</p>"
-  },
-  {
-    "id": 115002834812,
-    "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/115002834812.json",
-    "html_url": "https://support.discord.com/hc/en-us/articles/115002834812-Kernel32-dll-errors",
-    "author_id": 364802902112,
-    "comments_disabled": true,
-    "draft": false,
-    "promoted": false,
-    "position": 0,
-    "section_id": 360007875231,
-    "created_at": "2017-11-17T20:23:16Z",
-    "name": "Kernel32.dll errors",
-    "title": "Kernel32.dll errors",
-    "source_locale": "en-us",
-    "locale": "en-us",
-    "outdated": false,
-    "outdated_locales": [],
-    "edited_at": "2021-07-30T03:00:24Z",
-    "user_segment_id": null,
-    "permission_group_id": 1720972,
-    "content_tag_ids": [],
-    "label_names": [
-      "answer-bot"
-    ],
-    "body": "<p>If you're running into errors referencing Kernel32.dll and you're on Windows 7, try these steps!</p>\n<ul>\n<li>Install this Windows 7 patch: <a href=\"https://support.microsoft.com/en-us/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remote\" target=\"_blank\" rel=\"noopener\">https://support.microsoft.com/en-us/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remote</a>\n</li>\n<li>After that, try a clean install by following <a href=\"https://support.discord.com/hc/en-us/articles/209099387\" target=\"_blank\" rel=\"noopener\">these steps</a>\n</li>\n</ul>"
   },
   {
     "id": 115002787571,
