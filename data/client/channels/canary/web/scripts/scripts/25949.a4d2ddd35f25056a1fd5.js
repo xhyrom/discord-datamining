@@ -252,15 +252,15 @@
                     properties: m
                 });
                 let _ = (0, d.useWindowDispatch)(),
-                    v = r.useCallback(() => {
+                    T = r.useCallback(() => {
                         _.dispatch(C.ComponentActions.POPOUT_SHOW)
                     }, [_]),
-                    T = r.useCallback(() => {
+                    v = r.useCallback(() => {
                         _.dispatch(C.ComponentActions.POPOUT_HIDE)
                     }, [_]);
                 return (0, a.jsx)(E.AppReferencePositionLayer, {
-                    onMount: v,
-                    onUnmount: T,
+                    onMount: T,
+                    onUnmount: v,
                     reference: () => o,
                     position: null != f ? f : "right",
                     align: null != h ? h : "top",
@@ -937,7 +937,7 @@
                 g.set(e, a)
             }
 
-            function v(e) {
+            function T(e) {
                 return null != e ? {
                     type: h.BroadcastSourceType.GUILD,
                     guildId: e
@@ -945,7 +945,7 @@
                     type: h.BroadcastSourceType.GLOBAL
                 }
             }
-            class T extends i.default.Store {
+            class v extends i.default.Store {
                 getBroadcasts() {
                     return g.values(S.BROADCASTS_BY_VALIDITY(2))
                 }
@@ -962,8 +962,8 @@
                     return C
                 }
             }
-            T.displayName = "BroadcastingStore";
-            var I = new T(u.default, {
+            v.displayName = "BroadcastingStore";
+            var I = new v(u.default, {
                 PRESENCE_UPDATES: function(e) {
                     let {
                         updates: t
@@ -974,7 +974,7 @@
                             broadcast: n,
                             guildId: a
                         } = e;
-                        _(t.id, n, v(a))
+                        _(t.id, n, T(a))
                     })
                 },
                 PRESENCES_REPLACE: function(e) {
@@ -987,7 +987,7 @@
                             broadcast: n,
                             guildId: a
                         } = e;
-                        _(t.id, n, v(a))
+                        _(t.id, n, T(a))
                     })
                 },
                 CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
@@ -1001,7 +1001,7 @@
                             broadcast: n,
                             guildId: a
                         } = e;
-                        _(t.id, n, v(a))
+                        _(t.id, n, T(a))
                     }), n.forEach(e => {
                         let {
                             presences: t,
@@ -1012,7 +1012,7 @@
                                 user: t,
                                 broadcast: a
                             } = e;
-                            _(t.id, a, v(n))
+                            _(t.id, a, T(n))
                         })
                     })
                 },
@@ -1358,7 +1358,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return N
+                    return y
                 }
             }), n("70102"), n("222007");
             var a = n("37983"),
@@ -1379,18 +1379,18 @@
                 S = n("449008"),
                 g = n("387111"),
                 _ = n("99795"),
-                v = n("49111"),
-                T = n("782340"),
+                T = n("49111"),
+                v = n("782340"),
                 I = n("964376");
 
             function A(e, t) {
                 switch (e) {
                     case _.ParticipantTypes.ACTIVITY:
-                        return T.default.Messages.EMBEDDED_ACTIVITIES_NUM_PARTICIPANTS.format({
+                        return v.default.Messages.EMBEDDED_ACTIVITIES_NUM_PARTICIPANTS.format({
                             numUsers: t
                         });
                     case _.ParticipantTypes.STREAM:
-                        return T.default.Messages.SPECTATORS.format({
+                        return v.default.Messages.SPECTATORS.format({
                             numViewers: t
                         });
                     default:
@@ -1459,9 +1459,9 @@
                     })
                 })
             }
-            let y = [];
+            let N = [];
 
-            function N(e) {
+            function y(e) {
                 let {
                     channelId: t,
                     guildId: s,
@@ -1469,15 +1469,15 @@
                     className: m,
                     compact: C = !1,
                     disableInteraction: g = !1,
-                    maxVisibleUsers: T = 3
-                } = e, [A, N] = r.useState(!1), O = r.useRef(new d.DelayedCall(150, () => N(!1))), L = (0, o.useStateFromStoresArray)([E.default, p.default], () => {
+                    maxVisibleUsers: v = 3
+                } = e, [A, y] = r.useState(!1), O = r.useRef(new d.DelayedCall(150, () => y(!1))), L = (0, o.useStateFromStoresArray)([E.default, p.default], () => {
                     if (l.type === _.ParticipantTypes.STREAM) {
                         let e = E.default.getViewerIds(l.id);
-                        return e.length > 0 ? e.map(e => p.default.getUser(e)).filter(S.isNotNullish) : y
+                        return e.length > 0 ? e.map(e => p.default.getUser(e)).filter(S.isNotNullish) : N
                     }
-                    return l.type === _.ParticipantTypes.ACTIVITY ? l.participants.size > 0 ? Array.from(l.participants).map(e => p.default.getUser(e)).filter(S.isNotNullish) : y : y
+                    return l.type === _.ParticipantTypes.ACTIVITY ? l.participants.size > 0 ? Array.from(l.participants).map(e => p.default.getUser(e)).filter(S.isNotNullish) : N : N
                 }, [l]), x = r.useCallback(() => {
-                    O.current.cancel(), N(!0)
+                    O.current.cancel(), y(!0)
                 }, []), P = r.useCallback(() => {
                     O.current.delay()
                 }, []), D = r.useCallback((e, t) => {
@@ -1495,24 +1495,24 @@
                 }, [P, x]);
                 if (0 === L.length) return null;
                 if (C) return (0, a.jsx)(R, {
-                    maxVisibleUsers: T,
+                    maxVisibleUsers: v,
                     users: L,
                     guildId: s,
                     channelId: t,
                     className: m,
                     participantType: l.type
                 });
-                let b = u(L).take(T).map(e => (0, a.jsx)(c.Avatar, {
+                let b = u(L).take(v).map(e => (0, a.jsx)(c.Avatar, {
                     src: e.getAvatarURL(s, 24),
                     "aria-label": e.username,
                     size: c.AvatarSizes.SIZE_24,
                     className: I.viewer
                 }, e.id)).value();
-                return L.length > T && (b[b.length - 1] = (0, a.jsxs)("div", {
+                return L.length > v && (b[b.length - 1] = (0, a.jsxs)("div", {
                     className: I.overflow,
-                    children: ["+", L.length - T + 1]
+                    children: ["+", L.length - v + 1]
                 }, "overflow")), (0, a.jsx)(h.default, {
-                    section: v.AnalyticsSections.STREAM_VIEWER_POPOUT,
+                    section: T.AnalyticsSections.STREAM_VIEWER_POPOUT,
                     children: (0, a.jsx)("div", {
                         onMouseEnter: x,
                         onMouseLeave: P,
@@ -1614,14 +1614,14 @@
                     preset: S,
                     resolution: g,
                     fps: _
-                } = (0, s.useStateFromStoresObject)([d.default], () => d.default.getState()), v = (0, s.useStateFromStores)([f.default], () => f.default.getGoLiveSource()), T = (0, s.useStateFromStores)([h.default], () => h.default.getCurrentUser()), I = (0, s.useStateFromStores)([c.default], () => {
+                } = (0, s.useStateFromStoresObject)([d.default], () => d.default.getState()), T = (0, s.useStateFromStores)([f.default], () => f.default.getGoLiveSource()), v = (0, s.useStateFromStores)([h.default], () => h.default.getCurrentUser()), I = (0, s.useStateFromStores)([c.default], () => {
                     var t;
                     return null === (t = c.default.getGuild(null == e ? void 0 : e.guildId)) || void 0 === t ? void 0 : t.premiumTier
                 }), {
                     location: A
                 } = (0, u.useAnalyticsContext)(), M = r.useCallback((e, r, s, u) => {
                     if (e) {
-                        if (null != v) {
+                        if (null != T) {
                             let e = {
                                 qualityOptions: {
                                     preset: p.ApplicationStreamPresets.PRESET_CUSTOM,
@@ -1630,12 +1630,12 @@
                                 },
                                 context: m.MediaEngineContextTypes.STREAM
                             };
-                            null != v.desktopSource ? e.desktopSettings = {
-                                sourceId: v.desktopSource.id,
+                            null != T.desktopSource ? e.desktopSettings = {
+                                sourceId: T.desktopSource.id,
                                 sound: !0
-                            } : null != v.cameraSource && (e.cameraSettings = {
-                                videoDeviceGuid: v.cameraSource.videoDeviceGuid,
-                                audioDeviceGuid: v.cameraSource.audioDeviceGuid
+                            } : null != T.cameraSource && (e.cameraSettings = {
+                                videoDeviceGuid: T.cameraSource.videoDeviceGuid,
+                                audioDeviceGuid: T.cameraSource.audioDeviceGuid
                             }), l.default.setGoLiveSource(e)
                         }
                     } else {
@@ -1656,14 +1656,14 @@
                             contextKey: o === E.AppContext.POPOUT ? i.POPOUT_MODAL_CONTEXT : i.DEFAULT_MODAL_CONTEXT
                         })
                     }
-                }, [t, A, v]);
+                }, [t, A, T]);
                 if (null == e) return null;
                 let R = S === p.ApplicationStreamPresets.PRESET_DOCUMENTS ? p.ApplicationStreamFPS.FPS_30 : _,
-                    y = p.ApplicationStreamFPSButtonsWithSuffixLabel.map(e => {
+                    N = p.ApplicationStreamFPSButtonsWithSuffixLabel.map(e => {
                         let {
                             value: t,
                             label: n
-                        } = e, r = (0, o.default)(p.ApplicationStreamPresets.PRESET_CUSTOM, g, t, T, I);
+                        } = e, r = (0, o.default)(p.ApplicationStreamPresets.PRESET_CUSTOM, g, t, v, I);
                         return (0, a.jsx)(i.MenuRadioItem, {
                             group: "stream-settings-fps",
                             id: "stream-settings-fps-".concat(t),
@@ -1672,11 +1672,11 @@
                             action: () => M(r, g, t, E.AnalyticsObjectTypes.RESOLUTION)
                         }, "stream-settings-fps-".concat(t))
                     }),
-                    N = p.ApplicationStreamResolutionButtonsWithSuffixLabel.map(e => {
+                    y = p.ApplicationStreamResolutionButtonsWithSuffixLabel.map(e => {
                         let {
                             value: t,
                             label: n
-                        } = e, r = (0, o.default)(p.ApplicationStreamPresets.PRESET_CUSTOM, t, R, T, I);
+                        } = e, r = (0, o.default)(p.ApplicationStreamPresets.PRESET_CUSTOM, t, R, v, I);
                         return (0, a.jsx)(i.MenuRadioItem, {
                             group: "stream-settings-resolution",
                             id: "stream-settings-resolution-".concat(t),
@@ -1688,10 +1688,10 @@
                 return (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(i.MenuGroup, {
                         label: C.default.Messages.SCREENSHARE_FRAME_RATE,
-                        children: y
+                        children: N
                     }), (0, a.jsx)(i.MenuGroup, {
                         label: C.default.Messages.STREAM_RESOLUTION,
-                        children: N
+                        children: y
                     })]
                 })
             }
@@ -1746,13 +1746,14 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return l
+                    return u
                 }
             }), n("222007");
             var a = n("446674"),
                 r = n("913144");
-            let s = new Map;
-            class i extends a.default.Store {
+            let s = new Map,
+                i = !1;
+            class l extends a.default.Store {
                 getFeed(e) {
                     return s.get(e)
                 }
@@ -1760,11 +1761,14 @@
                     var t;
                     return null === (t = this.getFeed(e)) || void 0 === t ? void 0 : t.request_id
                 }
+                get hidden() {
+                    return i
+                }
             }
-            i.displayName = "ContentInventoryStore";
-            var l = new i(r.default, {
+            l.displayName = "ContentInventoryStore";
+            var u = new l(r.default, {
                 CONNECTION_OPEN: function() {
-                    s.clear()
+                    s.clear(), i = !1
                 },
                 CONTENT_INVENTORY_SET_FEED: function(e) {
                     let {
@@ -1772,6 +1776,9 @@
                         feed: n
                     } = e;
                     s.set(t, n)
+                },
+                CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: function() {
+                    i = !i
                 }
             })
         },
@@ -1793,7 +1800,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return N
+                    return y
                 }
             }), n("222007");
             var a = n("37983"),
@@ -1814,8 +1821,8 @@
                 S = n("90404"),
                 g = n("599110"),
                 _ = n("286235"),
-                v = n("50885"),
-                T = n("49111"),
+                T = n("50885"),
+                v = n("49111"),
                 I = n("782340"),
                 A = n("966585");
 
@@ -1848,7 +1855,7 @@
             }, 100, {
                 trailing: !1
             });
-            class y extends r.PureComponent {
+            class N extends r.PureComponent {
                 componentDidCatch(e, t) {
                     this.triggerSoftCrash(e, t)
                 }
@@ -1861,14 +1868,14 @@
                     let a = _.default.captureCrash(e, {
                         extra: t
                     });
-                    g.default.track(T.AnalyticEvents.APP_CRASHED, {
+                    g.default.track(v.AnalyticEvents.APP_CRASHED, {
                         path: n.pathname,
                         extra: t,
                         error_message: e.message,
                         error_stack: e.stack,
                         sentry_issue_id: a,
                         uses_client_mods: (0, p.usesClientMods)()
-                    }), R(), v.default.cleanupDisplaySleep()
+                    }), R(), T.default.cleanupDisplaySleep()
                 }
                 _handleSubmitReport() {
                     location.reload(!0)
@@ -1920,7 +1927,7 @@
                     }, this.discordErrorsSet = !1
                 }
             }
-            var N = y
+            var y = N
         },
         160139: function(e, t, n) {
             "use strict";
@@ -1948,15 +1955,15 @@
                 S = n("238500"),
                 g = n("773336"),
                 _ = n("439932"),
-                v = n("50885"),
-                T = n("782340"),
+                T = n("50885"),
+                v = n("782340"),
                 I = n("804392");
-            let A = e => v.default.close(e),
-                M = e => v.default.minimize(e),
+            let A = e => T.default.close(e),
+                M = e => T.default.minimize(e),
                 R = (e, t) => {
-                    (0, g.isMac)() && !t.altKey ? v.default.fullscreen(e) : v.default.maximize(e)
+                    (0, g.isMac)() && !t.altKey ? T.default.fullscreen(e) : T.default.maximize(e)
                 },
-                y = e => {
+                N = e => {
                     let {
                         windowKey: t,
                         themeOverride: n,
@@ -1972,25 +1979,25 @@
                         }), (0, a.jsx)(l.Clickable, {
                             className: I.winButtonClose,
                             onClick: () => A(t),
-                            "aria-label": T.default.Messages.TITLE_BAR_CLOSE_WINDOW,
+                            "aria-label": v.default.Messages.TITLE_BAR_CLOSE_WINDOW,
                             tabIndex: -1,
                             children: (0, a.jsx)(h.default, {})
                         }), (0, a.jsx)(l.Clickable, {
                             className: I.winButtonMinMax,
                             onClick: e => R(t, e),
-                            "aria-label": T.default.Messages.TITLE_BAR_MAXIMIZE_WINDOW,
+                            "aria-label": v.default.Messages.TITLE_BAR_MAXIMIZE_WINDOW,
                             tabIndex: -1,
                             children: (0, a.jsx)(p.default, {})
                         }), (0, a.jsx)(l.Clickable, {
                             className: I.winButtonMinMax,
                             onClick: () => M(t),
-                            "aria-label": T.default.Messages.TITLE_BAR_MINIMIZE_WINDOW,
+                            "aria-label": v.default.Messages.TITLE_BAR_MINIMIZE_WINDOW,
                             tabIndex: -1,
                             children: (0, a.jsx)(C.default, {})
                         })]
                     })
                 },
-                N = e => {
+                y = e => {
                     let {
                         focused: t,
                         windowKey: n,
@@ -2002,7 +2009,7 @@
                         className: s(r ? I.typeMacOSWithFrame : I.typeMacOS, t ? I.focused : I.unfocused, (0, _.getThemeClass)(i), {
                             [I.withBackgroundOverride]: !u
                         }),
-                        onDoubleClick: () => v.default.maximize(n),
+                        onDoubleClick: () => T.default.maximize(n),
                         tabIndex: -1,
                         children: [o.default.window.USE_OSX_NATIVE_TRAFFIC_LIGHTS ? (0, a.jsx)("div", {
                             className: I.macDragRegion
@@ -2011,7 +2018,7 @@
                             children: [(0, a.jsx)(l.Clickable, {
                                 className: I.macButtonClose,
                                 onClick: () => A(n),
-                                "aria-label": T.default.Messages.TITLE_BAR_CLOSE_WINDOW,
+                                "aria-label": v.default.Messages.TITLE_BAR_CLOSE_WINDOW,
                                 tabIndex: -1,
                                 children: (0, a.jsx)(E.default, {
                                     color: "#4c0000"
@@ -2019,7 +2026,7 @@
                             }), (0, a.jsx)(l.Clickable, {
                                 className: I.macButtonMinimize,
                                 onClick: () => M(n),
-                                "aria-label": T.default.Messages.TITLE_BAR_MINIMIZE_WINDOW,
+                                "aria-label": v.default.Messages.TITLE_BAR_MINIMIZE_WINDOW,
                                 tabIndex: -1,
                                 children: (0, a.jsx)(S.default, {
                                     color: "#975500"
@@ -2027,7 +2034,7 @@
                             }), (0, a.jsx)(l.Clickable, {
                                 className: I.macButtonMaximize,
                                 onClick: e => R(n, e),
-                                "aria-label": T.default.Messages.TITLE_BAR_FULLSCREEN_WINDOW,
+                                "aria-label": v.default.Messages.TITLE_BAR_FULLSCREEN_WINDOW,
                                 tabIndex: -1,
                                 children: (0, a.jsx)(m.default, {
                                     color: "#006500"
@@ -2053,13 +2060,13 @@
                 if (f) return null;
                 switch (n) {
                     case g.PlatformTypes.WINDOWS:
-                        return (0, a.jsx)(y, {
+                        return (0, a.jsx)(N, {
                             windowKey: r,
                             themeOverride: l,
                             hasOpenLayer: h
                         });
                     case g.PlatformTypes.OSX:
-                        return (0, a.jsx)(N, {
+                        return (0, a.jsx)(y, {
                             focused: t,
                             windowKey: r,
                             frame: s,
@@ -2198,7 +2205,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-50dd0ed75707f62e5385efa81b580e841ec703bd",
+                    release: "discord_web-be73f1d14e17728f9baac64d9723ae25e219d663",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2216,7 +2223,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "276747", "276747")), a.setTag("builtAt", String("1710884071140"));
+                }), a.setTag("buildNumber", (e = "276757", "276757")), a.setTag("builtAt", String("1710885075013"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -2706,7 +2713,7 @@
                     return _
                 },
                 default: function() {
-                    return T
+                    return v
                 }
             }), n("222007");
             var a = n("446674"),
@@ -2775,7 +2782,7 @@
                     r = h.default.getStageInstanceByChannel(e);
                 return t && null == r && !a
             }
-            class v extends r.default {
+            class T extends r.default {
                 handleVoiceChannelSelect(e) {
                     let {
                         channelId: t
@@ -2824,7 +2831,7 @@
                     }
                 }
             }
-            var T = new v
+            var v = new T
         },
         274438: function(e, t, n) {
             "use strict";
@@ -3131,7 +3138,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 useOtherStreams: function() {
-                    return T
+                    return v
                 },
                 default: function() {
                     return I
@@ -3156,9 +3163,9 @@
                 S = n("773336"),
                 g = n("49111"),
                 _ = n("353927"),
-                v = n("782340");
+                T = n("782340");
 
-            function T(e, t, n) {
+            function v(e, t, n) {
                 let a = (0, r.useStateFromStores)([l.default], () => l.default.getSelectedParticipantId(e.id)),
                     s = (0, r.useStateFromStores)([c.default], () => null != a ? c.default.getActiveStreamForStreamKey(a) : null, [a]),
                     i = (0, r.useStateFromStoresArray)([h.default], () => {
@@ -3183,26 +3190,26 @@
                     onClose: I,
                     onSelect: A,
                     appContext: M = g.AppContext.APP
-                } = e, R = f.default.supports(_.Features.DESKTOP_CAPTURE_APPLICATIONS), y = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, N = T(n, r, l), O = (0, o.default)(y, M), L = (0, u.default)(y, M, g.NOOP_NULL), x = null == y ? (0, a.jsx)(s.MenuItem, {
+                } = e, R = f.default.supports(_.Features.DESKTOP_CAPTURE_APPLICATIONS), N = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, y = v(n, r, l), O = (0, o.default)(N, M), L = (0, u.default)(N, M, g.NOOP_NULL), x = null == N ? (0, a.jsx)(s.MenuItem, {
                     id: "share-your-screen",
-                    label: v.default.Messages.SHARE_YOUR_SCREEN,
+                    label: T.default.Messages.SHARE_YOUR_SCREEN,
                     icon: E.default,
                     action: C
                 }) : (0, a.jsxs)(a.Fragment, {
                     children: [S.isPlatformEmbedded ? (0, a.jsx)(s.MenuItem, {
                         id: "stream-settings",
-                        label: v.default.Messages.SCREENSHARE_STREAM_QUALITY,
+                        label: T.default.Messages.SCREENSHARE_STREAM_QUALITY,
                         children: O
                     }) : null, h ? L : null, R ? (0, a.jsx)(s.MenuItem, {
                         id: "change-windows",
-                        label: v.default.Messages.SCREENSHARE_CHANGE_WINDOWS,
+                        label: T.default.Messages.SCREENSHARE_CHANGE_WINDOWS,
                         icon: E.default,
                         action: C
                     }) : null, (0, a.jsx)(s.MenuItem, {
                         id: "stop-streaming",
-                        label: v.default.Messages.STOP_STREAMING,
+                        label: T.default.Messages.STOP_STREAMING,
                         icon: p.default,
-                        action: () => (0, d.default)(y)
+                        action: () => (0, d.default)(N)
                     })]
                 });
                 return (0, a.jsx)(i.default, {
@@ -3211,16 +3218,16 @@
                         onSelect: A,
                         navId: "manage-streams",
                         onClose: I,
-                        "aria-label": null != y ? v.default.Messages.STOP_STREAMING : v.default.Messages.SHARE_YOUR_SCREEN,
+                        "aria-label": null != N ? T.default.Messages.STOP_STREAMING : T.default.Messages.SHARE_YOUR_SCREEN,
                         children: [(0, a.jsx)(s.MenuGroup, {
-                            children: N.map(e => {
+                            children: y.map(e => {
                                 let {
                                     stream: t,
                                     username: n
                                 } = e;
                                 return (0, a.jsx)(s.MenuItem, {
                                     id: t.ownerId,
-                                    label: v.default.Messages.STOP_WATCHING_USER.format({
+                                    label: T.default.Messages.STOP_WATCHING_USER.format({
                                         username: n
                                     }),
                                     icon: m.default,
@@ -4352,15 +4359,15 @@
                         pulseSpeakingIndicator: C = !1,
                         speaking: S = !1,
                         ...g
-                    } = e, _ = null != p ? p : n, v = (0, l.default)(_, s.default.unsafe_rawColors.PRIMARY_800.css), T = (0, u.useCallBannerBackgroundExperiment)(!0, "VideoBackground-web").enabled, I = (0, c.default)(null != m ? m : h.EMPTY_STRING_SNOWFLAKE_ID), A = null == I ? void 0 : I.getBannerURL({
+                    } = e, _ = null != p ? p : n, T = (0, l.default)(_, s.default.unsafe_rawColors.PRIMARY_800.css), v = (0, u.useCallBannerBackgroundExperiment)(!0, "VideoBackground-web").enabled, I = (0, c.default)(null != m ? m : h.EMPTY_STRING_SNOWFLAKE_ID), A = null == I ? void 0 : I.getBannerURL({
                         size: 1024,
                         canAnimate: f.GifAutoPlay.getSetting()
                     });
                     if (r.useEffect(() => {
-                            null != m && T && (0, d.default)(m, void 0, {
+                            null != m && v && (0, d.default)(m, void 0, {
                                 dispatchWait: !0
                             })
-                        }, [T, m]), null == n) return null;
+                        }, [v, m]), null == n) return null;
                     let M = (0, a.jsx)(i.Avatar, {
                             className: E.avatarWrapper,
                             src: n,
@@ -4368,9 +4375,9 @@
                         }),
                         R = {
                             ...t,
-                            backgroundColor: v
+                            backgroundColor: T
                         };
-                    return null != A && S && T && (R.backgroundImage = "url(".concat(A, ")"), R.backgroundSize = "cover"), (0, a.jsx)("div", {
+                    return null != A && S && v && (R.backgroundImage = "url(".concat(A, ")"), R.backgroundSize = "cover"), (0, a.jsx)("div", {
                         style: R,
                         className: E.background,
                         children: C ? (0, a.jsx)(o.default, {
@@ -4778,4 +4785,4 @@
         }
     }
 ]);
-//# sourceMappingURL=25949.473412ec26c8c212c47c.js.map
+//# sourceMappingURL=25949.a4d2ddd35f25056a1fd5.js.map
