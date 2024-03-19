@@ -36866,18 +36866,15 @@ html .progress__4ef76 {
 .headerContainer__74e18 {
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    cursor: pointer;
+    height: 16px
 }
 
 .header_dc6f49 {
     display: flex;
     align-items: center;
     gap: 4px
-}
-
-.toggleExpandButton__22eac {
-    height: 16px;
-    cursor: pointer
 }
 
 .toggleExpandIcon_ab767d {
@@ -130264,4 +130261,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.fcb9e16dcbe62c2e0d37.css.map*/
+/*# sourceMappingURL=app.fad107dfb4d9887badf3.css.map*/
