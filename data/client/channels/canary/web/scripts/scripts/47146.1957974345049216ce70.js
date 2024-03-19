@@ -228,8 +228,8 @@
                 L = i("986214"),
                 P = i("126939"),
                 g = i("837707"),
-                m = i("334368"),
-                R = i("803353"),
+                R = i("334368"),
+                m = i("803353"),
                 M = i("420444"),
                 U = i("954016"),
                 V = i("49111"),
@@ -239,7 +239,7 @@
 
             function w(t) {
                 var e;
-                let i = null == t ? void 0 : null === (e = t.activity) || void 0 === e ? void 0 : e.client_platform_config[(0, m.default)((0, v.getOS)())].release_phase;
+                let i = null == t ? void 0 : null === (e = t.activity) || void 0 === e ? void 0 : e.client_platform_config[(0, R.default)((0, v.getOS)())].release_phase;
                 return {
                     releasePhase: i
                 }
@@ -483,7 +483,7 @@
                             this.showLaunchErrorModal(b.default.Messages.EMBEDDED_ACTIVITIES_NOT_AVAILABLE_ON_OS);
                             return
                         }
-                        if (!(0, R.default)(null == E ? void 0 : null === (e = E.embedded_activity_config) || void 0 === e ? void 0 : e.supported_platforms)) {
+                        if (!(0, m.default)(null == E ? void 0 : null === (e = E.embedded_activity_config) || void 0 === e ? void 0 : e.supported_platforms)) {
                             this.showLaunchErrorModal(b.default.Messages.EMBEDDED_ACTIVITIES_APPLICATION_UNSUPPORTED_OS);
                             return
                         }
@@ -754,8 +754,8 @@
                         GuildStore: s.default
                     }),
                     g = _.default.getSelfEmbeddedActivityForChannel(i),
-                    m = null == g ? void 0 : g.applicationId,
-                    R = null != m && null !== (e = a.default.getApplication(m)) && void 0 !== e ? e : void 0;
+                    R = null == g ? void 0 : g.applicationId,
+                    m = null != R && null !== (e = a.default.getApplication(R)) && void 0 !== e ? e : void 0;
                 ! function(t) {
                     let {
                         embeddedActivityJoinability: e,
@@ -804,7 +804,7 @@
                     handleCanJoin: async function t() {
                         null != p && await (0, f.default)({
                             applicationId: p.applicationId,
-                            currentEmbeddedApplication: R,
+                            currentEmbeddedApplication: m,
                             activityChannelId: i,
                             locationObject: {},
                             embeddedActivitiesManager: O,
@@ -855,15 +855,15 @@
                 if (null == p) return s.ComponentDispatch.dispatch(v.ComponentActions.SHOW_ACTIVITIES_CHANNEL_SELECTOR, {
                     applicationId: e.application.id
                 }), !1;
-                let m = a.default.getChannel(p);
-                if (null == m) return !1;
-                let R = null != p ? (0, f.getEmbeddedActivityLaunchability)({
+                let R = a.default.getChannel(p);
+                if (null == R) return !1;
+                let m = null != p ? (0, f.getEmbeddedActivityLaunchability)({
                     channelId: p,
                     ChannelStore: a.default,
                     GuildStore: r.default,
                     PermissionStore: u.default
                 }) : f.EmbeddedActivityLaunchability.NO_CHANNEL;
-                if (R !== f.EmbeddedActivityLaunchability.CAN_LAUNCH) return R === f.EmbeddedActivityLaunchability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION ? (0, l.showActivitiesInvalidPermissionsAlert)() : R === f.EmbeddedActivityLaunchability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS && n.default.show({
+                if (m !== f.EmbeddedActivityLaunchability.CAN_LAUNCH) return m === f.EmbeddedActivityLaunchability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION ? (0, l.showActivitiesInvalidPermissionsAlert)() : m === f.EmbeddedActivityLaunchability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS && n.default.show({
                     title: O.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GENERIC,
                     body: O.default.Messages.EMBEDDED_ACTIVITIES_NOT_AVAILABLE_ON_OS,
                     hideActionSheet: !1
@@ -871,21 +871,21 @@
                 let M = await (0, _.confirmActivityLaunchChecks)({
                     applicationId: e.application.id,
                     application: e.application,
-                    channel: m,
+                    channel: R,
                     currentEmbeddedApplication: i,
                     embeddedActivitiesManager: h,
                     user: g
                 });
                 if (!M) return !1;
                 let U = (0, I.default)(p),
-                    V = N.SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES.includes(m.type);
+                    V = N.SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES.includes(R.type);
                 if (U) {
                     let t = await (0, A.default)({
                         channelId: p,
                         bypassChangeModal: null != i
                     });
                     if (!t) return !1
-                } else if (!(0, o.isActivitiesInTextEnabled)(m, "handleStartEmbeddedActivity") || !V) return !1;
+                } else if (!(0, o.isActivitiesInTextEnabled)(R, "handleStartEmbeddedActivity") || !V) return !1;
                 return E.startEmbeddedActivity(p, e.application.id, L), (0, C.default)(y, p), (0, T.default)({
                     type: v.AnalyticsGameOpenTypes.LAUNCH,
                     userId: g.id,
@@ -1942,7 +1942,7 @@
                     CDN_HOST: i
                 } = window.GLOBAL_ENV;
                 return null != i ? "".concat(location.protocol, "//").concat(i, "/badge-icons/").concat(t, ".png") : "".concat(location.protocol).concat(e).concat(I.Endpoints.BADGE_ICON(t))
-            }(n = s || (s = {})).USER_INFO = "USER_INFO", n.USER_INFO_CONNECTIONS = "USER_INFO_CONNECTIONS", n.ACTIVITY = "ACTIVITY", n.MUTUAL_GUILDS = "MUTUAL_GUILDS", n.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", n.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", n.RECENT_GAMES = "RECENT_GAMES", (l = o || (o = {})).POPOUT = "POPOUT", l.MODAL = "MODAL", l.SETTINGS = "SETTINGS", l.PANEL = "PANEL", l.CARD = "CARD", l.POMELO_POPOUT = "POMELO_POPOUT", l.CANCEL_MODAL = "CANCEL_MODAL", (a = c || (c = {})).POPOUT = "POPOUT", a.MODAL = "MODAL", a.DM_PANEL = "DM_PANEL", a.ACCOUNT_POPOUT = "ACCOUNT_POPOUT", a.ACTION_SHEET = "ACTION_SHEET", (r = E || (E = {}))[r.NICKNAME = 0] = "NICKNAME", r[r.PRONOUNS = 1] = "PRONOUNS", r[r.AVATAR = 2] = "AVATAR", r[r.ANIMATED_AVATAR = 3] = "ANIMATED_AVATAR", r[r.BANNER = 4] = "BANNER", r[r.ANIMATED_BANNER = 5] = "ANIMATED_BANNER", r[r.BIO = 6] = "BIO", r[r.THEME = 7] = "THEME", r[r.AVATAR_DECORATION = 8] = "AVATAR_DECORATION", r[r.PROFILE_EFFECT = 9] = "PROFILE_EFFECT", (u = _ || (_ = {})).VIEW = "VIEW", u.SEND_MESSAGE = "SEND_MESSAGE", u.SEND_DIRECT_MESSAGE = "SEND_DIRECT_MESSAGE", u.SEND_FRIEND_REQUEST = "SEND_FRIEND_REQUEST", u.ACCEPT_FRIEND_REQUEST = "ACCEPT_FRIEND_REQUEST", u.IGNORE_FRIEND_REQUEST = "IGNORE_FRIEND_REQUEST", u.CANCEL_FRIEND_REQUEST = "CANCEL_FRIEND_REQUEST", u.REMOVE_FRIEND = "REMOVE_FRIEND", u.BLOCK = "BLOCK", u.UNBLOCK = "UNBLOCK", u.REPORT = "REPORT", u.COPY_USERNAME = "COPY_USERNAME", u.COPY_USER_ID = "COPY_USER_ID", u.PRESS_VIEW_PROFILE = "PRESS_VIEW_PROFILE", u.PRESS_OPTIONS = "PRESS_OPTIONS", u.PRESS_BADGE = "PRESS_BADGE", u.PRESS_SECTION = "PRESS_SECTION", u.PRESS_PREMIUM_UPSELL = "PRESS_PREMIUM_UPSELL", u.JOIN_ACTIVITY = "JOIN_ACTIVITY", u.SET_NOTE = "SET_NOTE", u.SET_STATUS = "SET_STATUS", u.SET_CUSTOM_STATUS = "SET_CUSTOM_STATUS", u.SET_FRIEND_NICKNAME = "SET_FRIEND_NICKNAME", u.SWITCH_ACCOUNTS = "SWITCH_ACCOUNTS", u.EDIT_PROFILE = "EDIT_PROFILE", u.EDIT_GUILD_PROFILE = "EDIT_GUILD_PROFILE", u.GIFT_PREMIUM = "GIFT_PREMIUM", u.VOICE_CALL = "VOICE_CALL", u.VIDEO_CALL = "VIDEO_CALL", u.SET_VOLUME = "SET_VOLUME", u.MUTE = "MUTE", u.MUTE_SOUNDBOARD = "MUTE_SOUNDBOARD", u.DISABLE_VIDEO = "DISABLE_VIDEO", u.DEAFEN = "DEAFEN", u.DISCONNECT = "DISCONNECT", (d = f || (f = {})).VOICE = "VOICE", d.PLAYING = "PLAYING", d.STREAMING = "STREAMING", d.LISTENING = "LISTENING", d.WATCHING = "WATCHING", d.CUSTOM_STATUS = "CUSTOM_STATUS", d.COMPETING = "COMPETING", d.HANG_STATUS = "HANG_STATUS"
+            }(n = s || (s = {})).USER_INFO = "USER_INFO", n.USER_INFO_CONNECTIONS = "USER_INFO_CONNECTIONS", n.ACTIVITY = "ACTIVITY", n.MUTUAL_GUILDS = "MUTUAL_GUILDS", n.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", n.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", n.RECENT_GAMES = "RECENT_GAMES", (l = o || (o = {})).POPOUT = "POPOUT", l.MODAL = "MODAL", l.SETTINGS = "SETTINGS", l.PANEL = "PANEL", l.CARD = "CARD", l.POMELO_POPOUT = "POMELO_POPOUT", l.CANCEL_MODAL = "CANCEL_MODAL", (a = c || (c = {})).POPOUT = "POPOUT", a.MODAL = "MODAL", a.DM_PANEL = "DM_PANEL", a.ACCOUNT_POPOUT = "ACCOUNT_POPOUT", a.ACTION_SHEET = "ACTION_SHEET", (r = E || (E = {}))[r.NICKNAME = 0] = "NICKNAME", r[r.PRONOUNS = 1] = "PRONOUNS", r[r.AVATAR = 2] = "AVATAR", r[r.ANIMATED_AVATAR = 3] = "ANIMATED_AVATAR", r[r.BANNER = 4] = "BANNER", r[r.ANIMATED_BANNER = 5] = "ANIMATED_BANNER", r[r.BIO = 6] = "BIO", r[r.THEME = 7] = "THEME", r[r.AVATAR_DECORATION = 8] = "AVATAR_DECORATION", r[r.PROFILE_EFFECT = 9] = "PROFILE_EFFECT", (u = _ || (_ = {})).VIEW = "VIEW", u.SEND_MESSAGE = "SEND_MESSAGE", u.SEND_DIRECT_MESSAGE = "SEND_DIRECT_MESSAGE", u.SEND_FRIEND_REQUEST = "SEND_FRIEND_REQUEST", u.ACCEPT_FRIEND_REQUEST = "ACCEPT_FRIEND_REQUEST", u.IGNORE_FRIEND_REQUEST = "IGNORE_FRIEND_REQUEST", u.CANCEL_FRIEND_REQUEST = "CANCEL_FRIEND_REQUEST", u.REMOVE_FRIEND = "REMOVE_FRIEND", u.BLOCK = "BLOCK", u.UNBLOCK = "UNBLOCK", u.REPORT = "REPORT", u.COPY_USERNAME = "COPY_USERNAME", u.COPY_USER_ID = "COPY_USER_ID", u.PRESS_VIEW_PROFILE = "PRESS_VIEW_PROFILE", u.PRESS_OPTIONS = "PRESS_OPTIONS", u.PRESS_BADGE = "PRESS_BADGE", u.PRESS_SECTION = "PRESS_SECTION", u.PRESS_PREMIUM_UPSELL = "PRESS_PREMIUM_UPSELL", u.PRESS_SET_STATUS = "PRESS_SET_STATUS", u.PRESS_SET_CUSTOM_STATUS = "PRESS_SET_CUSTOM_STATUS", u.PRESS_SWITCH_ACCOUNTS = "PRESS_SWITCH_ACCOUNTS", u.JOIN_ACTIVITY = "JOIN_ACTIVITY", u.SET_NOTE = "SET_NOTE", u.SET_FRIEND_NICKNAME = "SET_FRIEND_NICKNAME", u.EDIT_PROFILE = "EDIT_PROFILE", u.EDIT_GUILD_PROFILE = "EDIT_GUILD_PROFILE", u.GIFT_PREMIUM = "GIFT_PREMIUM", u.VOICE_CALL = "VOICE_CALL", u.VIDEO_CALL = "VIDEO_CALL", u.SET_VOLUME = "SET_VOLUME", u.MUTE = "MUTE", u.MUTE_SOUNDBOARD = "MUTE_SOUNDBOARD", u.DISABLE_VIDEO = "DISABLE_VIDEO", u.DEAFEN = "DEAFEN", u.DISCONNECT = "DISCONNECT", (d = f || (f = {})).VOICE = "VOICE", d.PLAYING = "PLAYING", d.STREAMING = "STREAMING", d.LISTENING = "LISTENING", d.WATCHING = "WATCHING", d.CUSTOM_STATUS = "CUSTOM_STATUS", d.COMPETING = "COMPETING", d.HANG_STATUS = "HANG_STATUS"
         },
         349649: function(t, e, i) {
             "use strict";
@@ -2190,4 +2190,4 @@
         }
     }
 ]);
-//# sourceMappingURL=47146.8a940d4b2218e6076b47.js.map
+//# sourceMappingURL=47146.1957974345049216ce70.js.map
