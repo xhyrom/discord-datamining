@@ -4,17 +4,17 @@
                 n("70102"), n("424973");
                 var r, o, i, u = e.exports = {};
 
-                function a() {
+                function c() {
                     throw Error("setTimeout has not been defined")
                 }
 
-                function s() {
+                function a() {
                     throw Error("clearTimeout has not been defined")
                 }
 
-                function c(e) {
+                function s(e) {
                     if (r === setTimeout) return setTimeout(e, 0);
-                    if ((r === a || !r) && setTimeout) return r = setTimeout, setTimeout(e, 0);
+                    if ((r === c || !r) && setTimeout) return r = setTimeout, setTimeout(e, 0);
                     try {
                         return r(e, 0)
                     } catch (t) {
@@ -26,14 +26,14 @@
                     }
                 }! function() {
                     try {
-                        r = "function" == typeof setTimeout ? setTimeout : a
+                        r = "function" == typeof setTimeout ? setTimeout : c
                     } catch (e) {
-                        r = a
+                        r = c
                     }
                     try {
-                        o = "function" == typeof clearTimeout ? clearTimeout : s
+                        o = "function" == typeof clearTimeout ? clearTimeout : a
                     } catch (e) {
-                        o = s
+                        o = a
                     }
                 }();
                 var l = [],
@@ -46,7 +46,7 @@
 
                 function p() {
                     if (!d) {
-                        var e = c(h);
+                        var e = s(h);
                         d = !0;
                         for (var t = l.length; t;) {
                             for (i = l, l = []; ++f < t;) i && i[f].run();
@@ -54,7 +54,7 @@
                         }
                         i = null, d = !1, ! function(e) {
                             if (o === clearTimeout) return clearTimeout(e);
-                            if ((o === s || !o) && clearTimeout) return o = clearTimeout, clearTimeout(e);
+                            if ((o === a || !o) && clearTimeout) return o = clearTimeout, clearTimeout(e);
                             try {
                                 o(e)
                             } catch (t) {
@@ -68,19 +68,19 @@
                     }
                 }
 
-                function b(e, t) {
+                function m(e, t) {
                     this.fun = e, this.array = t
                 }
 
-                function m() {}
+                function b() {}
                 u.nextTick = function(e) {
                     var t = Array(arguments.length - 1);
                     if (arguments.length > 1)
                         for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-                    l.push(new b(e, t)), 1 === l.length && !d && c(p)
-                }, b.prototype.run = function() {
+                    l.push(new m(e, t)), 1 === l.length && !d && s(p)
+                }, m.prototype.run = function() {
                     this.fun.apply(null, this.array)
-                }, u.title = "browser", u.browser = !0, u.env = {}, u.argv = [], u.version = "", u.versions = {}, u.on = m, u.addListener = m, u.once = m, u.off = m, u.removeListener = m, u.removeAllListeners = m, u.emit = m, u.prependListener = m, u.prependOnceListener = m, u.listeners = function(e) {
+                }, u.title = "browser", u.browser = !0, u.env = {}, u.argv = [], u.version = "", u.versions = {}, u.on = b, u.addListener = b, u.once = b, u.off = b, u.removeListener = b, u.removeAllListeners = b, u.emit = b, u.prependListener = b, u.prependOnceListener = b, u.listeners = function(e) {
                     return []
                 }, u.binding = function(e) {
                     throw Error("process.binding is not supported")
@@ -140,7 +140,7 @@
                         return u
                     },
                     initSentry: function() {
-                        return s
+                        return a
                     }
                 }), n("222007");
                 var r = n("245123"),
@@ -151,22 +151,22 @@
                     let e = window;
                     return null != e.jQuery || null != e.$ || null != e.BetterDiscord || null != e.BdApi || null != e.rambox
                 }
-                let a = (0, o.filterThrottle)({
+                let c = (0, o.filterThrottle)({
                     maxBudgetMinute: 1,
                     maxBudgetHour: 3
                 });
 
-                function s() {
+                function a() {
                     var e;
                     r.init({
                         tunnel: "/error-reporting-proxy/web",
                         dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                         autoSessionTracking: !1,
                         environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                        release: "discord_web-4a08e591641a4b9eb9213129e329bf70187818ab",
+                        release: "discord_web-8900c611117dc66edb2ccb4c73629104a7ff5085",
                         beforeSend: e => {
                             var t, n;
-                            return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || i.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !u() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && a() ? e : null
+                            return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || i.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !u() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && c() ? e : null
                         },
                         integrations: [new r.Integrations.GlobalHandlers({
                             onerror: !0,
@@ -181,7 +181,7 @@
                         })],
                         ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                         denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                    }), r.setTag("buildNumber", (e = "276476", "276476")), r.setTag("builtAt", String("1710838100468"));
+                    }), r.setTag("buildNumber", (e = "276485", "276485")), r.setTag("builtAt", String("1710845635076"));
                     let t = window.GLOBAL_ENV.SENTRY_TAGS;
                     if (null != t && "object" == typeof t)
                         for (let e in t) r.setTag(e, t[e]);
@@ -219,11 +219,11 @@
             e[u] = [n, o, i];
             return
         }
-        for (var a = 1 / 0, u = 0; u < e.length; u++) {
-            for (var n = e[u][0], o = e[u][1], i = e[u][2], s = !0, c = 0; c < n.length; c++) a >= i && Object.keys(r.O).every(function(e) {
-                return r.O[e](n[c])
-            }) ? n.splice(c--, 1) : (s = !1, i < a && (a = i));
-            if (s) {
+        for (var c = 1 / 0, u = 0; u < e.length; u++) {
+            for (var n = e[u][0], o = e[u][1], i = e[u][2], a = !0, s = 0; s < n.length; s++) c >= i && Object.keys(r.O).every(function(e) {
+                return r.O[e](n[s])
+            }) ? n.splice(s--, 1) : (a = !1, i < c && (c = i));
+            if (a) {
                 e.splice(u--, 1);
                 var l = o();
                 void 0 !== l && (t = l)
@@ -270,14 +270,14 @@
                 var o = n[0],
                     i = n[1],
                     u = n[2],
-                    a, s, c = 0;
+                    c, a, s = 0;
                 if (o.some(function(t) {
                         return 0 !== e[t]
                     })) {
-                    for (a in i) r.o(i, a) && (r.m[a] = i[a]);
+                    for (c in i) r.o(i, c) && (r.m[c] = i[c]);
                     if (u) var l = u(r)
                 }
-                for (t && t(n); c < o.length; c++) s = o[c], r.o(e, s) && e[s] && e[s][0](), e[s] = 0;
+                for (t && t(n); s < o.length; s++) a = o[s], r.o(e, a) && e[a] && e[a][0](), e[a] = 0;
                 return r.O(l)
             },
             n = this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || [];
@@ -288,4 +288,4 @@
     });
     r.O(o)
 }();
-//# sourceMappingURL=sentry.29a569f5f2316c3137bc.js.map
+//# sourceMappingURL=sentry.f8a0a72e37c27a5177bb.js.map
