@@ -47391,8 +47391,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -114672,32 +114672,6 @@ html .invoiceCancelRow_a8669b {
     height: 100%
 }
 
-.select__01286 {
-    background-color: var(--background-secondary);
-    border-radius: 3px
-}
-
-.guildPickerContainer_feed7d:not(:last-child) {
-    margin-bottom: 8px;
-    padding-top: 16px
-}
-
-.guildPickerDescription_e2bc20 {
-    margin-bottom: 8px
-}
-
-.breadcrumbs_b587a9:after {
-    content: "";
-    display: block;
-    border-bottom: 1px solid var(--background-modifier-accent);
-    margin-top: 16px;
-    padding-bottom: 0
-}
-
-.userSubscriptionDetailsContainer__5e335 {
-    padding-top: 16px
-}
-
 .answerRow__9fc86 {
     display: grid;
     grid-template-columns: 1fr;
@@ -118092,6 +118066,32 @@ html .invoiceCancelRow_a8669b {
     grid-gap: 8px;
     gap: 8px;
     width: 100%
+}
+
+.select__01286 {
+    background-color: var(--background-secondary);
+    border-radius: 3px
+}
+
+.guildPickerContainer_feed7d:not(:last-child) {
+    margin-bottom: 8px;
+    padding-top: 16px
+}
+
+.guildPickerDescription_e2bc20 {
+    margin-bottom: 8px
+}
+
+.breadcrumbs_b587a9:after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid var(--background-modifier-accent);
+    margin-top: 16px;
+    padding-bottom: 0
+}
+
+.userSubscriptionDetailsContainer__5e335 {
+    padding-top: 16px
 }
 
 .headerContainer_d9fdf2 {
@@ -130244,4 +130244,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.caa99fde02660f15fe49.css.map*/
+/*# sourceMappingURL=app.3c17788defc9bc6669bc.css.map*/
