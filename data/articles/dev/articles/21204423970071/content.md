@@ -7,6 +7,7 @@
 <p><a href="https://support-dev.discord.com/hc/en-us/articles/21204423970071#h_01HR55DRFE03C2FMFANHEV60TA">How do I get started?</a></p>
 <p><a href="https://support-dev.discord.com/hc/en-us/articles/21204423970071#h_01HR55DRFEBJ5S3AM7KGDXQQ9V">How can people launch my activity?</a></p>
 <p><a href="https://support-dev.discord.com/hc/en-us/articles/21204423970071#h_01HR55DRFERC2MHXDDAWXRE6YJ">Where can I find my Activity’s Application ID?</a></p>
+<p><a href="https://support-dev.discord.com/hc/en-us/articles/21204423970071#h_01HSCAMTBN1P18CY3Y5R9H75B1">How do I disable the Activity Settings for my App?</a></p>
 <p><a href="https://support-dev.discord.com/hc/en-us/articles/21204423970071#h_01HR55DRFEJ5DHMY0PNGVWN9HQ">Additional Resources</a></p>
 <h2 id="h_01HR55DRFE0XQKWBFK0TD7BZ6W">What is the Embedded App SDK?</h2>
 <p>The Embedded App SDK is a tool that developers can use to turn their eligible game into an Activity playable in a Discord voice channel! (Activities in text coming soon!)</p>
@@ -26,6 +27,11 @@
 <p>You are able to do that in the <a href="https://discord.com/developers/applications">Discord Developer Portal</a>. You can find and copy the Application ID under the <strong>General Information</strong> section.</p>
 <p><img src="https://support-dev.discord.com/hc/article_attachments/21794784663319" alt="2_.png"></p>
 <p>If you received an invitation to become an app tester, you will find the application ID in the request email.</p>
+<h2 id="h_01HSCAMTBN1P18CY3Y5R9H75B1">How do I disable the Activity Settings for my App?</h2>
+<p>To disable the Activity settings, navigate to your application's settings page on the <a href="https://discord.com/developers/applications">Developer Portal</a>.</p>
+<p>Locate the <strong>Activities</strong> section on the left and select <strong>Settings</strong>.</p>
+<p>At the bottom of the <strong>Activity Settings</strong> page, select <strong>Remove</strong>.</p>
+<p><img src="https://support-dev.discord.com/hc/article_attachments/22196069249303" alt="Screenshot 2024-03-19 at 2.46.24 PM.png"><!-- notionvc: 9918a00b-7fc5-4041-937d-38ab0ac685d3 --></p>
 <h2 id="h_01HR55DRFEJ5DHMY0PNGVWN9HQ">Additional Resources</h2>
 <ul>
     <li><a href="https://discord.com/developers/docs/activities/overview">Embedded App SDK - Getting Started Guide</a></li>
