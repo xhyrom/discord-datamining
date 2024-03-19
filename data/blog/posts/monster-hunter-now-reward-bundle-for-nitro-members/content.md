@@ -36,7 +36,7 @@
             </ul>
             <p>And that’s it! The next time you launch Monster Hunter Now, your hunting supplies will be waiting for you in your Item Box. If you were already playing, you may need to restart the game to see your stuff.&nbsp;</p>
             <p>With your stash chock-full of supplies and a new monster-filled perspective of your local area, get out there and hunt some Pukei-Pukei with your friends! You can redeem your items until <strong>April 18, 2024</strong>, so Nitro members should head into <em>User Settings &gt; Gift Inventory</em> before then to claim their supplies.&nbsp;</p>
-            <p>If you need some extra hunting help, we’ve got two resources for you to use. (Educational resources, not crafting resources.) Check out <a href="https://support.discord.com/hc/en-us/articles/21326495894935">our support article</a> about this promo or Niantic’s article about <a href="https://canary.discord.com/channels/309801877187330068/1207831784453185557/1212812312071643147">redeeming codes for Monster Hunter Now</a>.&nbsp;</p>
+            <p>If you need some extra hunting help, we’ve got two resources for you to use. (Educational resources, not crafting resources.) Check out <a href="https://support.discord.com/hc/en-us/articles/21326495894935">our support article</a> about this promo or Niantic’s article about <a href="https://niantic.helpshift.com/hc/en/39-monster-hunter-now/faq/4209-redeeming-offer-redemption-codes/">redeeming codes for Monster Hunter Now</a>.&nbsp;</p>
         </div>
     </div>
     <div id="heading-3" class="rich-wrapper">
