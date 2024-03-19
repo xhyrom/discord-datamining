@@ -15295,6 +15295,11 @@
                 COLLECTIBLES_SHOP_GIFT_MODAL_SELECT_HEADER: "Send a gift",
                 COLLECTIBLES_SHOP_GIFT_MODAL_REVIEW_HEADER: "Review your gift",
                 COLLECTIBLES_GIFT_CODE_MODAL_UPSELL: "You can also send gifts to your friends from the Shop! $[Check it out](checkItOut).",
+                COLLECTIBLES_MOBILE_SHOP_IAP_TITLE: "Shop anywhere, anytime",
+                COLLECTIBLES_MOBILE_SHOP_IAP_DESCRIPTION_1: "Buy Avatar Decorations and Profile Effects to personalize your profile.",
+                COLLECTIBLES_MOBILE_SHOP_IAP_DESCRIPTION_2: "Popular styles include Anime, Fantasy, Cyberpunk, and more.",
+                COLLECTIBLES_MOBILE_SHOP_IAP_DESCRIPTION_3: "Nitro members get discounts on everything in the Shop.",
+                COLLECTIBLES_MOBILE_SHOP_IAP_CONFIRMATION: "Visit Shop",
                 DIRECTORY_CATEGORY_TOWN_HALL_1: "Staff Picks",
                 DIRECTORY_CATEGORY_TOWN_HALL_2: "Gaming",
                 DIRECTORY_CATEGORY_TOWN_HALL_3: "Indie Spotlight",
@@ -16981,7 +16986,23 @@
                 MEMBER_LIST_CONTENT_FEED_FIRST_TIME: "First time",
                 MEMBER_LIST_CONTENT_FEED_WATCHED_MEDIA: "Watched **{mediaTitle}**",
                 MEMBER_LIST_CONTENT_FEED_USER_WATCHED_MEDIA: "{userName} watched **{mediaTitle}**",
-                CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity"
+                CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity",
+                RECENT_GAMES: "Recent Games",
+                USER_RECENT_GAMES_LAST_PLAYED_WEEKS_AGO: "{count} {count, plural, =1 {week} other {weeks}} ago",
+                USER_RECENT_GAMES_LAST_PLAYED_DAYS_AGO: "{count} {count, plural, =1 {day} other {days}} ago",
+                USER_RECENT_GAMES_LAST_PLAYED_HOURS_AGO: "{count} {count, plural, =1 {hour} other {hours}} ago",
+                USER_RECENT_GAMES_LAST_PLAYED_MINUTES_AGO: "{count} {count, plural, =1 {minute} other {minutes}} ago",
+                USER_RECENT_GAMES_LAST_PLAYED_SECONDS_AGO: "{count} {count, plural, =1 {second} other {seconds}} ago",
+                USER_RECENT_GAMES_LAST_PLAYED_WEEKS_AGO_SHORT: "{count}w ago",
+                USER_RECENT_GAMES_LAST_PLAYED_DAYS_AGO_SHORT: "{count}d ago",
+                USER_RECENT_GAMES_LAST_PLAYED_HOURS_AGO_SHORT: "{count}h ago",
+                USER_RECENT_GAMES_LAST_PLAYED_MINUTES_AGO_SHORT: "{count}m ago",
+                USER_RECENT_GAMES_LAST_PLAYED_SECONDS_AGO_SHORT: "{count}s ago",
+                MEMBERS_TABLE_JOINED_AT_TIMESTAMP_MINUTES: "{count} {count, plural, =1 {min} other {mins}} ago",
+                MEMBERS_TABLE_JOINED_AT_TIMESTAMP_HOURS: "{count} {count, plural, =1 {hr} other {hrs}} this week",
+                USER_RECENT_GAMES_PLAYED_LAST_WEEK_HOURS: "{count} {count, plural, =1 {hr} other {hrs}} this week",
+                USER_RECENT_GAMES_PLAYED_LAST_WEEK_MINUTES: "{count} {count, plural, =1 {min} other {mins}} this week",
+                USER_RECENT_GAMES_PLAYED_LAST_WEEK_SECONDS: "{count} {count, plural, =1 {sec} other {secs}} this week"
             })
         },
         444051: function(e, _, E) {
@@ -18507,7 +18528,7 @@
                 l = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o.default, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276359", ", Version Hash: ").concat("a5cae5992e62a3b3e30e1ec4d14bd38e892a781b")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("276386", ", Version Hash: ").concat("2db296b137a056a097edf9eb788b1efc390f5b3b")), t.default.setTags({
                 appContext: R.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
         },
@@ -20875,8 +20896,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "276359", "276359"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276359")), _ = 0), _
+                let _ = parseInt((e = "276386", "276386"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("276386")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -26727,8 +26748,7 @@
             class y extends t.default {
                 maybeFetchCurrentQuests() {
                     (0, R.getIsEligibleForQuests)({
-                        location: L.QuestsExperimentLocations.QUESTS_MANAGER,
-                        autoTrackExposure: !1
+                        location: L.QuestsExperimentLocations.QUESTS_MANAGER
                     }) && !l.default.isFetchingCurrentQuests && (0, O.fetchCurrentQuests)()
                 }
                 constructor(...e) {
@@ -37168,4 +37188,4 @@
         }
     }
 ]);
-//# sourceMappingURL=76039.364d5d5cf700d4a49098.js.map
+//# sourceMappingURL=76039.53f9cf4245d160f5d81a.js.map

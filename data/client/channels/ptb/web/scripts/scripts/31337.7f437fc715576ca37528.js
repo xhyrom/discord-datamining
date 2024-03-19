@@ -522,7 +522,7 @@
                     return L
                 },
                 getBuiltInCommands: function() {
-                    return B
+                    return x
                 }
             }), n("222007"), n("70102");
             var i = n("627445"),
@@ -1181,7 +1181,7 @@
                     }
                 }],
                 b = P.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.name)),
-                B = (e, t, n) => {
+                x = (e, t, n) => {
                     let i = t ? P : b;
                     return i = i.filter(t => t.type === e && (!n || t.inputType === O.ApplicationCommandInputType.BUILT_IN_TEXT || t.inputType === O.ApplicationCommandInputType.BUILT_IN_INTEGRATION))
                 }
@@ -1425,13 +1425,13 @@
                 P = Symbol("currentUser"),
                 U = Symbol("stale"),
                 b = Symbol("current"),
-                B = Object.freeze({
+                x = Object.freeze({
                     descriptors: [],
                     commands: [],
                     sectionedCommands: [],
                     loading: !0
                 }),
-                x = Object.freeze({
+                B = Object.freeze({
                     serverVersion: b,
                     fetchState: {
                         fetching: !1
@@ -1512,7 +1512,7 @@
                 }
                 getContextState(e) {
                     var t, n;
-                    return null != e && ee(e) ? null !== (n = this.indices[null !== (t = e.guild_id) && void 0 !== t ? t : e.id]) && void 0 !== n ? n : F : x
+                    return null != e && ee(e) ? null !== (n = this.indices[null !== (t = e.guild_id) && void 0 !== t ? t : e.id]) && void 0 !== n ? n : F : B
                 }
                 getUserState() {
                     var e;
@@ -1520,11 +1520,11 @@
                         location: "getUserState"
                     }, {
                         autoTrackExposure: !1
-                    }) ? null !== (e = this.indices[P]) && void 0 !== e ? e : F : x
+                    }) ? null !== (e = this.indices[P]) && void 0 !== e ? e : F : B
                 }
                 query(e, t, n) {
                     let i = A.default.getCurrentUser();
-                    if (null == i) return B;
+                    if (null == i) return x;
                     let l = this.getContextState(e),
                         a = this.getUserState(),
                         o = (0, y.buildPermissionContext)(e, t.commandType),
@@ -1624,7 +1624,7 @@
                             let s = {
                                 ...e,
                                 description: null !== (l = null !== (i = e.description_default) && void 0 !== i ? i : e.description) && void 0 !== l ? l : "",
-                                dm_permission: void 0,
+                                dm_permission: e.dm_permission,
                                 name: null !== (a = e.name_default) && void 0 !== a ? a : e.name,
                                 options: null !== (o = null === (n = e.options) || void 0 === n ? void 0 : n.map(en)) && void 0 !== o ? o : [],
                                 permissions: null != e.permissions ? el(e.permissions, t) : void 0
@@ -2544,56 +2544,59 @@
                     return i
                 },
                 hasAccess: function() {
-                    return I
+                    return T
                 },
                 computeAllowedForChannel: function() {
-                    return E
+                    return C
                 },
                 computeAllowedForUser: function() {
-                    return C
+                    return N
                 }
             }), n("222007");
             var i, l, a = n("627445"),
                 o = n.n(a),
                 s = n("316693"),
-                r = n("892692"),
-                u = n("233069"),
-                d = n("305961"),
-                c = n("524768"),
-                p = n("389153"),
-                f = n("123373"),
-                m = n("317041"),
-                _ = n("49111");
+                r = n("798609"),
+                u = n("892692"),
+                d = n("233069"),
+                c = n("305961"),
+                p = n("524768"),
+                f = n("389153"),
+                m = n("123373"),
+                _ = n("317041"),
+                I = n("49111");
 
-            function I(e, t, n, i, l) {
+            function T(e, t, n, i, l) {
                 let {
                     context: a,
-                    commandType: r,
-                    allowNsfw: c,
-                    computedPermissions: I,
-                    userId: T,
-                    roleIds: A,
-                    isImpersonating: N,
-                    hasBaseAccessPermissions: g
+                    commandType: u,
+                    allowNsfw: p,
+                    computedPermissions: T,
+                    userId: A,
+                    roleIds: E,
+                    isImpersonating: g,
+                    hasBaseAccessPermissions: M
                 } = t;
-                if (e.type !== r) return 2;
-                if (e.nsfw && !c) return 1;
-                let M = (0, f.computeCommandContextType)(a, l);
-                if (null != e.contexts && !e.contexts.includes(M)) return 4;
-                if (null != e.predicate && a instanceof u.ChannelRecordBase) {
-                    let t = d.default.getGuild(a.guild_id);
+                if (e.type !== u) return 2;
+                if (e.nsfw && !p) return 1;
+                let O = (0, m.computeCommandContextType)(a, l);
+                if (null != e.contexts) {
+                    if (!e.contexts.includes(O)) return 4
+                } else if (!1 === e.dmPermission && O === r.InteractionContextType.BOT_DM || O === r.InteractionContextType.PRIVATE_CHANNEL) return 4;
+                if (null != e.predicate && a instanceof d.ChannelRecordBase) {
+                    let t = c.default.getGuild(a.guild_id);
                     if (!e.predicate({
                             channel: a,
                             guild: t
                         })) return 3
                 }
-                if (e.applicationId === m.BuiltInSectionId.BUILT_IN) return 0;
-                let O = (0, f.getContextGuildId)(a);
-                if (null == O || s.default.has(I, _.Permissions.ADMINISTRATOR)) return 0;
-                if (!g) return 5;
-                if (a instanceof u.ChannelRecordBase) {
+                if (e.applicationId === _.BuiltInSectionId.BUILT_IN) return 0;
+                let S = (0, m.getContextGuildId)(a);
+                if (null == S || s.default.has(T, I.Permissions.ADMINISTRATOR)) return 0;
+                if (!M) return 5;
+                if (a instanceof d.ChannelRecordBase) {
                     o(void 0 !== i, "missing applicationAllowedForChannel");
-                    let t = E(e.permissions, a, O);
+                    let t = C(e.permissions, a, S);
                     if (function(e) {
                             return !1 === e
                         }(t) || ! function(e) {
@@ -2602,53 +2605,53 @@
                             return !1 === e
                         }(i)) return 6
                 }
-                let S = C(e.permissions, O, T, A, N);
+                let h = N(e.permissions, S, A, E, g);
                 return function(e) {
                     return !0 === e
-                }(S) ? 0 : function(e) {
+                }(h) ? 0 : function(e) {
                     return !1 === e
-                }(S) ? 7 : function(e) {
+                }(h) ? 7 : function(e) {
                     return !1 === e
-                }(n) || null != e.defaultMemberPermissions && !(!s.default.equals(e.defaultMemberPermissions, p.DISABLED_BY_DEFAULT_PERMISSION_FLAG) && s.default.has(I, e.defaultMemberPermissions)) ? 7 : 0
-            }
-
-            function T(e) {
-                return !0 === e
+                }(n) || null != e.defaultMemberPermissions && !(!s.default.equals(e.defaultMemberPermissions, f.DISABLED_BY_DEFAULT_PERMISSION_FLAG) && s.default.has(T, e.defaultMemberPermissions)) ? 7 : 0
             }
 
             function A(e) {
+                return !0 === e
+            }
+
+            function E(e) {
                 return !1 === e
             }
 
-            function E(e, t, n) {
+            function C(e, t, n) {
                 if (null == e) return null;
                 let i = t.id;
                 if (t.isThread()) {
                     var l;
                     i = null !== (l = t.parent_id) && void 0 !== l ? l : t.id
                 }
-                let a = e[(0, r.toPermissionKey)(i, c.ApplicationCommandPermissionType.CHANNEL)];
+                let a = e[(0, u.toPermissionKey)(i, p.ApplicationCommandPermissionType.CHANNEL)];
                 if (null != a) return a.permission;
-                let o = e[(0, r.toPermissionKey)((0, p.allChannelsSentinel)(n), c.ApplicationCommandPermissionType.CHANNEL)];
+                let o = e[(0, u.toPermissionKey)((0, f.allChannelsSentinel)(n), p.ApplicationCommandPermissionType.CHANNEL)];
                 return null != o ? o.permission : null
             }
 
-            function C(e, t, n, i, l) {
+            function N(e, t, n, i, l) {
                 if (null == e) return null;
                 if (!l) {
-                    let t = e[(0, r.toPermissionKey)(n, c.ApplicationCommandPermissionType.USER)];
+                    let t = e[(0, u.toPermissionKey)(n, p.ApplicationCommandPermissionType.USER)];
                     if (null != t) return t.permission
                 }
                 let a = !1;
                 for (let t of i) {
-                    let n = e[(0, r.toPermissionKey)(t, c.ApplicationCommandPermissionType.ROLE)];
+                    let n = e[(0, u.toPermissionKey)(t, p.ApplicationCommandPermissionType.ROLE)];
                     if (null != n) {
                         if (n.permission) return !0;
                         a = !0
                     }
                 }
                 if (a) return !1;
-                let o = e[(0, r.toPermissionKey)(t, c.ApplicationCommandPermissionType.ROLE)];
+                let o = e[(0, u.toPermissionKey)(t, p.ApplicationCommandPermissionType.ROLE)];
                 return null != o ? o.permission : null
             }(l = i || (i = {}))[l.ALLOWED = 0] = "ALLOWED", l[l.NSFW_NOT_ALLOWED = 1] = "NSFW_NOT_ALLOWED", l[l.WRONG_COMMAND_TYPE = 2] = "WRONG_COMMAND_TYPE", l[l.PREDICATE_FAILED = 3] = "PREDICATE_FAILED", l[l.CONTEXT_NOT_ALLOWED = 4] = "CONTEXT_NOT_ALLOWED", l[l.MISSING_BASE_PERMISSIONS = 5] = "MISSING_BASE_PERMISSIONS", l[l.CHANNEL_DENIED = 6] = "CHANNEL_DENIED", l[l.USER_DENIED = 7] = "USER_DENIED"
         },
@@ -2694,8 +2697,8 @@
                 P = n("317041"),
                 U = n("49111"),
                 b = n("894488"),
-                B = n("782340");
-            let x = (e, t) => {
+                x = n("782340");
+            let B = (e, t) => {
                     var n;
                     return null == e ? void 0 : null === (n = e.find(e => e.displayName === t)) || void 0 === n ? void 0 : n.value
                 },
@@ -2706,7 +2709,7 @@
                     if (o) return n.autocomplete.query;
                     if ("" === t) return null;
                     let s = y.default.getAutocompleteLastChoices(n.channel.id, e.name);
-                    return null != s ? null !== (l = x(s, t)) && void 0 !== l ? l : a(t) : a(t)
+                    return null != s ? null !== (l = B(s, t)) && void 0 !== l ? l : a(t) : a(t)
                 },
                 H = e => {
                     let t = e.toLowerCase() === P.TRUE_OPTION_NAME.toLowerCase(),
@@ -2721,7 +2724,7 @@
                     context: D,
                     commandTargetId: P,
                     maxSizeCallback: b,
-                    commandOrigin: B = R.CommandOrigin.CHAT
+                    commandOrigin: x = R.CommandOrigin.CHAT
                 } = e;
                 null == D.autocomplete && a.default.dispatch({
                     type: "APPLICATION_COMMAND_USED",
@@ -2730,7 +2733,7 @@
                 }), await A.default.unarchiveThreadIfNecessary(D.channel.id);
                 let w = [],
                     k = [],
-                    W = (0, L.getCommandAttachmentDraftType)(B);
+                    W = (0, L.getCommandAttachmentDraftType)(x);
                 if (null != S.options)
                     for (let e of S.options) {
                         if (e.type === u.ApplicationCommandOptionType.SUB_COMMAND || e.type === u.ApplicationCommandOptionType.SUB_COMMAND_GROUP || !(e.name in y)) continue;
@@ -2738,7 +2741,7 @@
                             n = null;
                         if (e.type === u.ApplicationCommandOptionType.STRING) {
                             let i = null !== (r = null === (o = v.getOptionalString(y, e.name)) || void 0 === o ? void 0 : o.trim()) && void 0 !== r ? r : "";
-                            n = null != e.choices ? x(e.choices, i) : e.autocomplete ? F(e, i, D) : i, l(null != D.autocomplete || null != n, 'Option "'.concat(e.name, '" expects a value')), null != n && w.push({
+                            n = null != e.choices ? B(e.choices, i) : e.autocomplete ? F(e, i, D) : i, l(null != D.autocomplete || null != n, 'Option "'.concat(e.name, '" expects a value')), null != n && w.push({
                                 type: e.type,
                                 name: e.name,
                                 value: n,
@@ -2818,13 +2821,13 @@
                             case u.ApplicationCommandOptionType.INTEGER:
                                 if ("text" === s.type) {
                                     let t = s.text.trim();
-                                    n = null != e.choices ? Number(x(e.choices, t)) : e.autocomplete ? F(e, t, D, Number) : Number(v.normalizeNumericString(E.default.locale, t))
+                                    n = null != e.choices ? Number(B(e.choices, t)) : e.autocomplete ? F(e, t, D, Number) : Number(v.normalizeNumericString(E.default.locale, t))
                                 }
                                 break;
                             case u.ApplicationCommandOptionType.NUMBER:
                                 if ("text" === s.type) {
                                     let t = s.text.trim();
-                                    n = null != e.choices ? Number(x(e.choices, t)) : e.autocomplete ? F(e, t, D, Number) : Number(v.normalizeNumericString(E.default.locale, t))
+                                    n = null != e.choices ? Number(B(e.choices, t)) : e.autocomplete ? F(e, t, D, Number) : Number(v.normalizeNumericString(E.default.locale, t))
                                 }
                                 break;
                             default:
@@ -2854,7 +2857,7 @@
                     command_id: S.id,
                     application_id: S.applicationId,
                     command_type: S.type,
-                    location: B === R.CommandOrigin.APPLICATION_LAUNCHER ? R.ApplicationCommandTriggerLocations.APP_LAUNCHER : R.ApplicationCommandTriggerLocations.SLASH_UI
+                    location: x === R.CommandOrigin.APPLICATION_LAUNCHER ? R.ApplicationCommandTriggerLocations.APP_LAUNCHER : R.ApplicationCommandTriggerLocations.SLASH_UI
                 }), S.execute(w, D);
                 if (S.inputType === R.ApplicationCommandInputType.BUILT_IN || S.inputType === R.ApplicationCommandInputType.BUILT_IN_TEXT || S.inputType === R.ApplicationCommandInputType.BUILT_IN_INTEGRATION) return;
                 let V = {
@@ -2876,7 +2879,7 @@
                         G(y)
                     },
                     commandDisplayName: S.displayName,
-                    analytics_location: B === R.CommandOrigin.APPLICATION_LAUNCHER ? R.ApplicationCommandTriggerLocations.APP_LAUNCHER : R.ApplicationCommandTriggerLocations.SLASH_UI
+                    analytics_location: x === R.CommandOrigin.APPLICATION_LAUNCHER ? R.ApplicationCommandTriggerLocations.APP_LAUNCHER : R.ApplicationCommandTriggerLocations.SLASH_UI
                 }))
             }
             let G = e => {
@@ -3005,7 +3008,7 @@
             async function j(e, t, n, i) {
                 let l = (0, M.maxFileSize)(n),
                     a = e => {
-                        null == i || i(l, e), _.setFailed(t, U.AbortCodes.ENTITY_TOO_LARGE, B.default.Messages.UPLOAD_AREA_TOO_LARGE_HELP.format({
+                        null == i || i(l, e), _.setFailed(t, U.AbortCodes.ENTITY_TOO_LARGE, x.default.Messages.UPLOAD_AREA_TOO_LARGE_HELP.format({
                             maxSize: (0, M.sizeString)(l)
                         }))
                     },
@@ -3017,7 +3020,7 @@
                 try {
                     await (0, c.stageAttachmentFiles)(e)
                 } catch {
-                    _.setFailed(t, void 0, B.default.Messages.UPLOADING_FILES_FAILED.format({
+                    _.setFailed(t, void 0, x.default.Messages.UPLOADING_FILES_FAILED.format({
                         count: e.length
                     }))
                 }({
@@ -3589,7 +3592,7 @@
             let i;
             n.r(t), n.d(t, {
                 computeThreadIdsSnapshot: function() {
-                    return B
+                    return x
                 },
                 default: function() {
                     return H
@@ -3645,12 +3648,12 @@
                 var e;
                 let t = m.default.getChannelId();
                 if (null == t || !(null === (e = p.default.getChannel(t)) || void 0 === e ? void 0 : e.isForumLikeChannel())) return U(), !1;
-                x({
+                B({
                     refreshThreadIds: !0
                 })
             }
 
-            function B(e) {
+            function x(e) {
                 let t = p.default.getChannel(e);
                 return null == t ? [] : Object.values(u.default.getThreadsForParent(t.guild_id, t.id)).map(e => {
                     let {
@@ -3660,7 +3663,7 @@
                 }).sort(P(g))
             }
 
-            function x(e) {
+            function B(e) {
                 var t;
                 let n = p.default.getChannel(C);
                 if (null == n) return;
@@ -3697,11 +3700,11 @@
                     let i = e !== C,
                         l = !(0, _.areSetsEqual)(n, N),
                         a = t !== g;
-                    return C = e, N = n, g = t, i ? x({
+                    return C = e, N = n, g = t, i ? B({
                         refreshThreadIds: !0
-                    }) : a ? x({
+                    }) : a ? B({
                         sortThreadIds: !0
-                    }) : l && x(), O
+                    }) : l && B(), O
                 }
                 getCurrentThreadIds() {
                     return O
@@ -3733,7 +3736,7 @@
                         guildId: n
                     } = e;
                     if (null == C || n !== (null === (t = p.default.getChannel(C)) || void 0 === t ? void 0 : t.guild_id)) return !1;
-                    x({
+                    B({
                         refreshThreadIds: !0
                     })
                 },
@@ -3752,12 +3755,12 @@
                     if (null == t.parent_id || t.parent_id !== C) return !1;
                     let n = (0, T.isForumPostPinned)(t.id),
                         i = R.has(t.id);
-                    if (n && !i) R.add(t.id), x({
+                    if (n && !i) R.add(t.id), B({
                         sortThreadIds: !0
                     });
                     else {
                         if (n || !i) return !1;
-                        R.delete(t.id), x({
+                        R.delete(t.id), B({
                             sortThreadIds: !0
                         })
                     }
@@ -3767,7 +3770,7 @@
                         channel: t
                     } = e;
                     if (null == t.parent_id || t.parent_id !== C) return !1;
-                    D.add(t.id), x({
+                    D.add(t.id), B({
                         sortThreadIds: !0
                     })
                 },
@@ -3776,7 +3779,7 @@
                         channelId: t
                     } = e;
                     if (null == t || t !== C) return !1;
-                    x({
+                    B({
                         refreshThreadIds: !0
                     })
                 },
@@ -3971,7 +3974,7 @@
                     }
                     let O = (0, M.getAutoArchiveDuration)(t),
                         S = I.default.getChannel(g.default.castMessageIdAsChannelId(n)),
-                        h = await B(t, () => {
+                        h = await x(t, () => {
                             let e = null != n ? y.Endpoints.CHANNEL_MESSAGE_THREADS(t.id, n) : y.Endpoints.CHANNEL_THREADS(t.id);
                             return o.default.post({
                                 url: e,
@@ -3992,7 +3995,7 @@
             }
 
             function U(e, t, n, i, l) {
-                return B(e, () => o.default.post({
+                return x(e, () => o.default.post({
                     url: y.Endpoints.CHANNEL_THREADS(e.id),
                     body: {
                         name: t,
@@ -4027,7 +4030,7 @@
                                 flags: 0 !== d ? d : void 0
                             }
                         },
-                        C = await B(t, () => null != r && r.length > 0 ? s(A, E, r) : o.default.post({
+                        C = await x(t, () => null != r && r.length > 0 ? s(A, E, r) : o.default.post({
                             url: A,
                             body: E
                         }));
@@ -4038,7 +4041,7 @@
                     }), null == l || l(C), C
                 }, [t, n, l, i, s])
             }(l = i || (i = {}))[l.Disabled = 1] = "Disabled", l[l.Enabled = 2] = "Enabled", l[l.PrivateOnly = 3] = "PrivateOnly";
-            async function B(e, t) {
+            async function x(e, t) {
                 let n;
                 let i = e.isForumLikeChannel();
                 try {
@@ -4230,4 +4233,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31337.f76503dfae48dd5b337a.js.map
+//# sourceMappingURL=31337.7f437fc715576ca37528.js.map

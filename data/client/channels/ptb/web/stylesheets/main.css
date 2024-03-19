@@ -8515,6 +8515,36 @@
     border-radius: 8px
 }
 
+.section__6f61e {
+    padding-top: 12px
+}
+
+.section__6f61e:empty {
+    display: none
+}
+
+.lastSection__37b97 {
+    padding-bottom: 12px
+}
+
+.recentGames__8974e {
+    display: grid;
+    grid-gap: 12px
+}
+
+.recentGamesHeading_a75677 {
+    padding-bottom: 8px
+}
+
+.recentGameContainer_a9ee15 {
+    display: flex;
+    align-items: center
+}
+
+.recentGameTextContainer__85ecf {
+    padding-left: 12px
+}
+
 .divider__2bbbc {
     margin-top: 12px;
     height: 1px;
@@ -16080,18 +16110,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .actionsWrapper__753d7 .actionsProfileV2__1c710 {
     margin-left: 0;
     margin-top: 12px
-}
-
-.section__6f61e {
-    padding-top: 12px
-}
-
-.section__6f61e:empty {
-    display: none
-}
-
-.lastSection__37b97 {
-    padding-bottom: 12px
 }
 
 .activity__20c1e {
@@ -130223,4 +130241,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.b201fc6c5176f12c7ede.css.map*/
+/*# sourceMappingURL=app.a14a2d8e3e58772f798a.css.map*/

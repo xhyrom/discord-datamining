@@ -24259,6 +24259,15 @@
                 username: "username__64026"
             }
         },
+        530479: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                recentGameContainer: "recentGameContainer_a9ee15",
+                recentGameTextContainer: "recentGameTextContainer__85ecf",
+                recentGames: "recentGames__8974e",
+                recentGamesHeading: "recentGamesHeading_a75677"
+            }
+        },
         889367: function(e, t, n) {
             "use strict";
             e.exports = {
