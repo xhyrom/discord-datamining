@@ -497,6 +497,7 @@ id,hash,label
 2024-03_amd_vdec_tests_1,1872798231,"GPU Workarounds: AMD video decode tests 1 (1002:1636, 1002:1638)"
 2024-03_clickstream_analytics,937474337,Clickstream Analytics
 2024-03_collectibles_springtoons_marketing,2818518480,Springtoons marketing experiment
+2024-03_content_inventory_surface_holdout,3738481102,Content Inventory Surface Holdout
 2024-03_explicit_content_adult_defaults,2540058718,Explicit Media Redaction New Setting Defaults
 2024-03_friend_finder_selected_states,3744134882,Friend Finder State Experiment
 2024-03_media_play_metrics,465715532,Media play metrics User Experiment

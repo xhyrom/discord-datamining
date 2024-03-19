@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-03_content_inventory_surface_holdout",
+    "label": "Content Inventory Surface Holdout",
+    "description": [
+      "Not Eligible",
+      "Control Bucket"
+    ],
+    "hash": 3738481102,
+    "buckets": [
+      -1,
+      0
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
