@@ -8,7 +8,7 @@
                 <li>A new type of App means <strong>new submission categories</strong>, all designed to show off what’s possible with the new <a href="http://www.discord.com/build/embedded-app-sdk">Embedded App SDK</a>.&nbsp;</li>
                 <li>Alongside five category winners, <strong>one entry will be deemed the Grand Prize winner this time, earning up to a whopping $30,000 USD*!&nbsp;</strong></li>
                 <li>Since this year’s Discord App Pitches involves creating games or experiences that users enjoy inside Discord, <strong>a prototype will be required when submitting your pitch</strong>. <em>But don’t worry - you have over a month to start building before submissions close!</em></li>
-                <li>Power to the people: <strong>we’ll have a User Voting period of Discord App Pitches this year</strong>! Make your voice heard by joining <a href="http://discord.com/invite/discord-town-hall">Discord’s Town Hall</a> to play and vote for your favorite pitch when the time comes in June!</li>
+                <li>Power to the people: <strong>we’ll have a User Voting period of Discord App Pitches this year</strong>! Make your voice heard by joining <a href="http://discord.com/invite/discord-townhall">Discord’s Town Hall</a> to play and vote for your favorite pitch when the time comes in June!</li>
             </ul>
             <p><strong>You can submit your pitch any time between April 1, 2024, and May 1, 2024</strong>. Jump straight into the action by exploring our Discord App Pitches 2024 website using the big button below!</p>
             <div class="w-embed">
