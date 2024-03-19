@@ -79,7 +79,7 @@
 <h2 id="h_01HRDJ0P8BYVARNQE1KVHFYC7T">Servers</h2>
 <h3 id="h_01HRDJ0P8BNCZW338JDX31115J"><span style="color: #434343;" data-darkreader-inline-color="">If you leave a server before requesting your Data Package, that server will not be included. Your Data Package only includes servers you are a member of at the time of the request.</span></h3>
 <p>The servers folder contains information for all of the servers that you are a member of. This includes servers that you own. The information provided for each is a little different. There is a JSON file which also contains a full list of the folders included.</p>
-<p>The folder for a server you own will contain the following. </p>
+<p>The folder for a server you own will contain the following:</p>
 <ul>
     <li>A folder containing emoji that you have uploaded.</li>
     <li>A JSON file containing actions from your Audit Log.</li>
