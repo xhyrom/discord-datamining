@@ -4839,6 +4839,10 @@
   },
   "USER_RECENT_GAMES": {
     "url": "/users/:param/profile/recent-games",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   }
 }
