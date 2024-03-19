@@ -522,7 +522,7 @@
                     return L
                 },
                 getBuiltInCommands: function() {
-                    return x
+                    return B
                 }
             }), n("222007"), n("70102");
             var i = n("627445"),
@@ -1181,7 +1181,7 @@
                     }
                 }],
                 b = P.filter(e => ["gif", "tenor", "tts", "me", "tableflip", "unflip", "shrug", "spoiler", "nick"].includes(e.name)),
-                x = (e, t, n) => {
+                B = (e, t, n) => {
                     let i = t ? P : b;
                     return i = i.filter(t => t.type === e && (!n || t.inputType === O.ApplicationCommandInputType.BUILT_IN_TEXT || t.inputType === O.ApplicationCommandInputType.BUILT_IN_INTEGRATION))
                 }
@@ -1425,13 +1425,13 @@
                 P = Symbol("currentUser"),
                 U = Symbol("stale"),
                 b = Symbol("current"),
-                x = Object.freeze({
+                B = Object.freeze({
                     descriptors: [],
                     commands: [],
                     sectionedCommands: [],
                     loading: !0
                 }),
-                B = Object.freeze({
+                x = Object.freeze({
                     serverVersion: b,
                     fetchState: {
                         fetching: !1
@@ -1512,7 +1512,7 @@
                 }
                 getContextState(e) {
                     var t, n;
-                    return null != e && ee(e) ? null !== (n = this.indices[null !== (t = e.guild_id) && void 0 !== t ? t : e.id]) && void 0 !== n ? n : F : B
+                    return null != e && ee(e) ? null !== (n = this.indices[null !== (t = e.guild_id) && void 0 !== t ? t : e.id]) && void 0 !== n ? n : F : x
                 }
                 getUserState() {
                     var e;
@@ -1520,11 +1520,11 @@
                         location: "getUserState"
                     }, {
                         autoTrackExposure: !1
-                    }) ? null !== (e = this.indices[P]) && void 0 !== e ? e : F : B
+                    }) ? null !== (e = this.indices[P]) && void 0 !== e ? e : F : x
                 }
                 query(e, t, n) {
                     let i = A.default.getCurrentUser();
-                    if (null == i) return x;
+                    if (null == i) return B;
                     let l = this.getContextState(e),
                         a = this.getUserState(),
                         o = (0, y.buildPermissionContext)(e, t.commandType),
@@ -2570,19 +2570,19 @@
                 let {
                     context: a,
                     commandType: u,
-                    allowNsfw: p,
-                    computedPermissions: T,
-                    userId: A,
-                    roleIds: E,
-                    isImpersonating: g,
-                    hasBaseAccessPermissions: M
+                    allowNsfw: T,
+                    computedPermissions: A,
+                    userId: E,
+                    roleIds: g,
+                    isImpersonating: M,
+                    hasBaseAccessPermissions: O
                 } = t;
                 if (e.type !== u) return 2;
-                if (e.nsfw && !p) return 1;
-                let O = (0, m.computeCommandContextType)(a, l);
+                if (e.nsfw && !T) return 1;
+                let S = (0, m.computeCommandContextType)(a, l);
                 if (null != e.contexts) {
-                    if (!e.contexts.includes(O)) return 4
-                } else if (!1 === e.dmPermission && O === r.InteractionContextType.BOT_DM || O === r.InteractionContextType.PRIVATE_CHANNEL) return 4;
+                    if (!e.contexts.includes(S)) return 4
+                } else if (e.inputType === p.ApplicationCommandInputType.BOT && (!1 === e.dmPermission && S === r.InteractionContextType.BOT_DM || S === r.InteractionContextType.PRIVATE_CHANNEL)) return 4;
                 if (null != e.predicate && a instanceof d.ChannelRecordBase) {
                     let t = c.default.getGuild(a.guild_id);
                     if (!e.predicate({
@@ -2591,12 +2591,12 @@
                         })) return 3
                 }
                 if (e.applicationId === _.BuiltInSectionId.BUILT_IN) return 0;
-                let S = (0, m.getContextGuildId)(a);
-                if (null == S || s.default.has(T, I.Permissions.ADMINISTRATOR)) return 0;
-                if (!M) return 5;
+                let h = (0, m.getContextGuildId)(a);
+                if (null == h || s.default.has(A, I.Permissions.ADMINISTRATOR)) return 0;
+                if (!O) return 5;
                 if (a instanceof d.ChannelRecordBase) {
                     o(void 0 !== i, "missing applicationAllowedForChannel");
-                    let t = C(e.permissions, a, S);
+                    let t = C(e.permissions, a, h);
                     if (function(e) {
                             return !1 === e
                         }(t) || ! function(e) {
@@ -2605,14 +2605,14 @@
                             return !1 === e
                         }(i)) return 6
                 }
-                let h = N(e.permissions, S, A, E, g);
+                let y = N(e.permissions, h, E, g, M);
                 return function(e) {
                     return !0 === e
-                }(h) ? 0 : function(e) {
+                }(y) ? 0 : function(e) {
                     return !1 === e
-                }(h) ? 7 : function(e) {
+                }(y) ? 7 : function(e) {
                     return !1 === e
-                }(n) || null != e.defaultMemberPermissions && !(!s.default.equals(e.defaultMemberPermissions, f.DISABLED_BY_DEFAULT_PERMISSION_FLAG) && s.default.has(T, e.defaultMemberPermissions)) ? 7 : 0
+                }(n) || null != e.defaultMemberPermissions && !(!s.default.equals(e.defaultMemberPermissions, f.DISABLED_BY_DEFAULT_PERMISSION_FLAG) && s.default.has(A, e.defaultMemberPermissions)) ? 7 : 0
             }
 
             function A(e) {
@@ -2697,8 +2697,8 @@
                 P = n("317041"),
                 U = n("49111"),
                 b = n("894488"),
-                x = n("782340");
-            let B = (e, t) => {
+                B = n("782340");
+            let x = (e, t) => {
                     var n;
                     return null == e ? void 0 : null === (n = e.find(e => e.displayName === t)) || void 0 === n ? void 0 : n.value
                 },
@@ -2709,7 +2709,7 @@
                     if (o) return n.autocomplete.query;
                     if ("" === t) return null;
                     let s = y.default.getAutocompleteLastChoices(n.channel.id, e.name);
-                    return null != s ? null !== (l = B(s, t)) && void 0 !== l ? l : a(t) : a(t)
+                    return null != s ? null !== (l = x(s, t)) && void 0 !== l ? l : a(t) : a(t)
                 },
                 H = e => {
                     let t = e.toLowerCase() === P.TRUE_OPTION_NAME.toLowerCase(),
@@ -2724,7 +2724,7 @@
                     context: D,
                     commandTargetId: P,
                     maxSizeCallback: b,
-                    commandOrigin: x = R.CommandOrigin.CHAT
+                    commandOrigin: B = R.CommandOrigin.CHAT
                 } = e;
                 null == D.autocomplete && a.default.dispatch({
                     type: "APPLICATION_COMMAND_USED",
@@ -2733,7 +2733,7 @@
                 }), await A.default.unarchiveThreadIfNecessary(D.channel.id);
                 let w = [],
                     k = [],
-                    W = (0, L.getCommandAttachmentDraftType)(x);
+                    W = (0, L.getCommandAttachmentDraftType)(B);
                 if (null != S.options)
                     for (let e of S.options) {
                         if (e.type === u.ApplicationCommandOptionType.SUB_COMMAND || e.type === u.ApplicationCommandOptionType.SUB_COMMAND_GROUP || !(e.name in y)) continue;
@@ -2741,7 +2741,7 @@
                             n = null;
                         if (e.type === u.ApplicationCommandOptionType.STRING) {
                             let i = null !== (r = null === (o = v.getOptionalString(y, e.name)) || void 0 === o ? void 0 : o.trim()) && void 0 !== r ? r : "";
-                            n = null != e.choices ? B(e.choices, i) : e.autocomplete ? F(e, i, D) : i, l(null != D.autocomplete || null != n, 'Option "'.concat(e.name, '" expects a value')), null != n && w.push({
+                            n = null != e.choices ? x(e.choices, i) : e.autocomplete ? F(e, i, D) : i, l(null != D.autocomplete || null != n, 'Option "'.concat(e.name, '" expects a value')), null != n && w.push({
                                 type: e.type,
                                 name: e.name,
                                 value: n,
@@ -2821,13 +2821,13 @@
                             case u.ApplicationCommandOptionType.INTEGER:
                                 if ("text" === s.type) {
                                     let t = s.text.trim();
-                                    n = null != e.choices ? Number(B(e.choices, t)) : e.autocomplete ? F(e, t, D, Number) : Number(v.normalizeNumericString(E.default.locale, t))
+                                    n = null != e.choices ? Number(x(e.choices, t)) : e.autocomplete ? F(e, t, D, Number) : Number(v.normalizeNumericString(E.default.locale, t))
                                 }
                                 break;
                             case u.ApplicationCommandOptionType.NUMBER:
                                 if ("text" === s.type) {
                                     let t = s.text.trim();
-                                    n = null != e.choices ? Number(B(e.choices, t)) : e.autocomplete ? F(e, t, D, Number) : Number(v.normalizeNumericString(E.default.locale, t))
+                                    n = null != e.choices ? Number(x(e.choices, t)) : e.autocomplete ? F(e, t, D, Number) : Number(v.normalizeNumericString(E.default.locale, t))
                                 }
                                 break;
                             default:
@@ -2857,7 +2857,7 @@
                     command_id: S.id,
                     application_id: S.applicationId,
                     command_type: S.type,
-                    location: x === R.CommandOrigin.APPLICATION_LAUNCHER ? R.ApplicationCommandTriggerLocations.APP_LAUNCHER : R.ApplicationCommandTriggerLocations.SLASH_UI
+                    location: B === R.CommandOrigin.APPLICATION_LAUNCHER ? R.ApplicationCommandTriggerLocations.APP_LAUNCHER : R.ApplicationCommandTriggerLocations.SLASH_UI
                 }), S.execute(w, D);
                 if (S.inputType === R.ApplicationCommandInputType.BUILT_IN || S.inputType === R.ApplicationCommandInputType.BUILT_IN_TEXT || S.inputType === R.ApplicationCommandInputType.BUILT_IN_INTEGRATION) return;
                 let V = {
@@ -2879,7 +2879,7 @@
                         G(y)
                     },
                     commandDisplayName: S.displayName,
-                    analytics_location: x === R.CommandOrigin.APPLICATION_LAUNCHER ? R.ApplicationCommandTriggerLocations.APP_LAUNCHER : R.ApplicationCommandTriggerLocations.SLASH_UI
+                    analytics_location: B === R.CommandOrigin.APPLICATION_LAUNCHER ? R.ApplicationCommandTriggerLocations.APP_LAUNCHER : R.ApplicationCommandTriggerLocations.SLASH_UI
                 }))
             }
             let G = e => {
@@ -3008,7 +3008,7 @@
             async function j(e, t, n, i) {
                 let l = (0, M.maxFileSize)(n),
                     a = e => {
-                        null == i || i(l, e), _.setFailed(t, U.AbortCodes.ENTITY_TOO_LARGE, x.default.Messages.UPLOAD_AREA_TOO_LARGE_HELP.format({
+                        null == i || i(l, e), _.setFailed(t, U.AbortCodes.ENTITY_TOO_LARGE, B.default.Messages.UPLOAD_AREA_TOO_LARGE_HELP.format({
                             maxSize: (0, M.sizeString)(l)
                         }))
                     },
@@ -3020,7 +3020,7 @@
                 try {
                     await (0, c.stageAttachmentFiles)(e)
                 } catch {
-                    _.setFailed(t, void 0, x.default.Messages.UPLOADING_FILES_FAILED.format({
+                    _.setFailed(t, void 0, B.default.Messages.UPLOADING_FILES_FAILED.format({
                         count: e.length
                     }))
                 }({
@@ -3592,7 +3592,7 @@
             let i;
             n.r(t), n.d(t, {
                 computeThreadIdsSnapshot: function() {
-                    return x
+                    return B
                 },
                 default: function() {
                     return H
@@ -3648,12 +3648,12 @@
                 var e;
                 let t = m.default.getChannelId();
                 if (null == t || !(null === (e = p.default.getChannel(t)) || void 0 === e ? void 0 : e.isForumLikeChannel())) return U(), !1;
-                B({
+                x({
                     refreshThreadIds: !0
                 })
             }
 
-            function x(e) {
+            function B(e) {
                 let t = p.default.getChannel(e);
                 return null == t ? [] : Object.values(u.default.getThreadsForParent(t.guild_id, t.id)).map(e => {
                     let {
@@ -3663,7 +3663,7 @@
                 }).sort(P(g))
             }
 
-            function B(e) {
+            function x(e) {
                 var t;
                 let n = p.default.getChannel(C);
                 if (null == n) return;
@@ -3700,11 +3700,11 @@
                     let i = e !== C,
                         l = !(0, _.areSetsEqual)(n, N),
                         a = t !== g;
-                    return C = e, N = n, g = t, i ? B({
+                    return C = e, N = n, g = t, i ? x({
                         refreshThreadIds: !0
-                    }) : a ? B({
+                    }) : a ? x({
                         sortThreadIds: !0
-                    }) : l && B(), O
+                    }) : l && x(), O
                 }
                 getCurrentThreadIds() {
                     return O
@@ -3736,7 +3736,7 @@
                         guildId: n
                     } = e;
                     if (null == C || n !== (null === (t = p.default.getChannel(C)) || void 0 === t ? void 0 : t.guild_id)) return !1;
-                    B({
+                    x({
                         refreshThreadIds: !0
                     })
                 },
@@ -3755,12 +3755,12 @@
                     if (null == t.parent_id || t.parent_id !== C) return !1;
                     let n = (0, T.isForumPostPinned)(t.id),
                         i = R.has(t.id);
-                    if (n && !i) R.add(t.id), B({
+                    if (n && !i) R.add(t.id), x({
                         sortThreadIds: !0
                     });
                     else {
                         if (n || !i) return !1;
-                        R.delete(t.id), B({
+                        R.delete(t.id), x({
                             sortThreadIds: !0
                         })
                     }
@@ -3770,7 +3770,7 @@
                         channel: t
                     } = e;
                     if (null == t.parent_id || t.parent_id !== C) return !1;
-                    D.add(t.id), B({
+                    D.add(t.id), x({
                         sortThreadIds: !0
                     })
                 },
@@ -3779,7 +3779,7 @@
                         channelId: t
                     } = e;
                     if (null == t || t !== C) return !1;
-                    B({
+                    x({
                         refreshThreadIds: !0
                     })
                 },
@@ -3974,7 +3974,7 @@
                     }
                     let O = (0, M.getAutoArchiveDuration)(t),
                         S = I.default.getChannel(g.default.castMessageIdAsChannelId(n)),
-                        h = await x(t, () => {
+                        h = await B(t, () => {
                             let e = null != n ? y.Endpoints.CHANNEL_MESSAGE_THREADS(t.id, n) : y.Endpoints.CHANNEL_THREADS(t.id);
                             return o.default.post({
                                 url: e,
@@ -3995,7 +3995,7 @@
             }
 
             function U(e, t, n, i, l) {
-                return x(e, () => o.default.post({
+                return B(e, () => o.default.post({
                     url: y.Endpoints.CHANNEL_THREADS(e.id),
                     body: {
                         name: t,
@@ -4030,7 +4030,7 @@
                                 flags: 0 !== d ? d : void 0
                             }
                         },
-                        C = await x(t, () => null != r && r.length > 0 ? s(A, E, r) : o.default.post({
+                        C = await B(t, () => null != r && r.length > 0 ? s(A, E, r) : o.default.post({
                             url: A,
                             body: E
                         }));
@@ -4041,7 +4041,7 @@
                     }), null == l || l(C), C
                 }, [t, n, l, i, s])
             }(l = i || (i = {}))[l.Disabled = 1] = "Disabled", l[l.Enabled = 2] = "Enabled", l[l.PrivateOnly = 3] = "PrivateOnly";
-            async function x(e, t) {
+            async function B(e, t) {
                 let n;
                 let i = e.isForumLikeChannel();
                 try {
@@ -4233,4 +4233,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31337.7f437fc715576ca37528.js.map
+//# sourceMappingURL=31337.3475034a12db03a1ca68.js.map
