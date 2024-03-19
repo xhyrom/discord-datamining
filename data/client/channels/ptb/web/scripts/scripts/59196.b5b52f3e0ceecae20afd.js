@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["60053"], {
+    ["59196"], {
         777483: function(e, t, n) {
             var i = {
                 "./icon-file-acrobat.svg": "668973",
@@ -55224,6 +55224,118 @@
                     }) : null
                 }
         },
+        597517: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                hideHotspot: function() {
+                    return s
+                },
+                setHotspotOverride: function() {
+                    return r
+                },
+                clearHotspotOverride: function() {
+                    return o
+                }
+            });
+            var i = n("913144"),
+                l = n("599110"),
+                a = n("49111");
+
+            function s(e) {
+                l.default.track(a.AnalyticEvents.HOTSPOT_HIDDEN, {
+                    hotspot_location: e
+                }), i.default.wait(() => {
+                    i.default.dispatch({
+                        type: "HOTSPOT_HIDE",
+                        location: e
+                    })
+                })
+            }
+
+            function r(e, t) {
+                i.default.dispatch({
+                    type: "HOTSPOT_OVERRIDE_SET",
+                    location: e,
+                    enabled: t
+                })
+            }
+
+            function o(e) {
+                i.default.dispatch({
+                    type: "HOTSPOT_OVERRIDE_CLEAR",
+                    location: e
+                })
+            }
+        },
+        269596: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return d
+                }
+            }), n("222007");
+            var i = n("446674"),
+                l = n("913144"),
+                a = n("197881"),
+                s = n("492397");
+            let r = new Set,
+                o = {};
+            class u extends i.default.PersistedStore {
+                initialize(e) {
+                    null != e && (Array.isArray(e.hiddenHotspots) && (r = new Set(e.hiddenHotspots)), null != e.hotspotOverrides && (o = e.hotspotOverrides))
+                }
+                hasHotspot(e) {
+                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                        n = !t && o[e];
+                    return !(s.CONFERENCE_MODE_ENABLED || a.ProcessArgs.isDisallowPopupsSet()) && (n || !r.has(e))
+                }
+                hasHiddenHotspot(e) {
+                    return r.has(e)
+                }
+                getHotspotOverride(e) {
+                    return o[e]
+                }
+                getState() {
+                    return {
+                        hiddenHotspots: r,
+                        hotspotOverrides: o
+                    }
+                }
+            }
+            u.displayName = "HotspotStore", u.persistKey = "hotspots", u.migrations = [e => ({
+                hiddenHotspots: null != e ? e : [],
+                hotspotOverrides: {}
+            })];
+            var d = new u(l.default, {
+                OVERLAY_INITIALIZE: function(e) {
+                    let {
+                        hiddenHotspots: t
+                    } = e;
+                    r = new Set(t)
+                },
+                HOTSPOT_HIDE: function(e) {
+                    let {
+                        location: t
+                    } = e;
+                    if (r.has(t)) return !1;
+                    r.add(t)
+                },
+                HOTSPOT_OVERRIDE_SET: function(e) {
+                    let {
+                        location: t,
+                        enabled: n
+                    } = e;
+                    o[t] = n
+                },
+                HOTSPOT_OVERRIDE_CLEAR: function(e) {
+                    let {
+                        location: t
+                    } = e;
+                    if (null == o[t]) return !1;
+                    delete o[t]
+                }
+            })
+        },
         139321: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -80304,6 +80416,80 @@
             };
             var C = S
         },
+        58608: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return d
+                }
+            });
+            var i = n("37983"),
+                l = n("884691"),
+                a = n("118810"),
+                s = n("446674"),
+                r = n("206230"),
+                o = n("719347");
+            let u = e => {
+                let {
+                    externalRef: t,
+                    autoPlay: n,
+                    playOnHover: u,
+                    responsive: d,
+                    mediaLayoutType: c,
+                    ...f
+                } = e, p = (0, s.useStateFromStores)([r.default], () => r.default.useReducedMotion), m = l.useRef(null);
+
+                function h() {
+                    var e;
+                    u && (null == m || null === (e = m.current) || void 0 === e || e.play())
+                }
+
+                function x() {
+                    var e;
+                    u && (null == m || null === (e = m.current) || void 0 === e || e.pause())
+                }
+                return l.useLayoutEffect(() => () => {
+                    let {
+                        current: e
+                    } = m;
+                    null != e && function(e) {
+                        e.removeAttribute("src"), Array.from(e.children).forEach(e => {
+                            (0, a.isElement)(e, HTMLSourceElement) && (e.removeAttribute("src"), e.removeAttribute("type")), (0, a.isElement)(e, HTMLImageElement) && e.removeAttribute("src")
+                        });
+                        try {
+                            e.load()
+                        } catch (e) {}
+                    }(e)
+                }, []), l.useLayoutEffect(() => ("function" == typeof t ? (t(null), t(m.current)) : null != t && (t.current = m.current), () => {
+                    "function" == typeof t ? t(null) : null != t && (t.current = null)
+                }), [t, m]), (0, i.jsx)("video", {
+                    ref: m,
+                    autoPlay: !p && !u && n,
+                    onMouseEnter: h,
+                    onMouseLeave: x,
+                    onFocus: h,
+                    onBlur: x,
+                    style: c === o.MediaLayoutType.MOSAIC ? {
+                        width: "100%",
+                        height: "100%",
+                        maxHeight: "inherit",
+                        objectFit: "cover"
+                    } : d ? function() {
+                        return {
+                            maxWidth: f.width,
+                            maxHeight: f.height,
+                            width: "100%",
+                            height: "100%"
+                        }
+                    }() : {},
+                    ...f
+                })
+            };
+            var d = l.forwardRef((e, t) => (0, i.jsx)(u, {
+                ...e,
+                externalRef: t
+            }))
+        },
         267625: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -82569,4 +82755,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.09a57a70c78aca1087bf.js.map
+//# sourceMappingURL=59196.b5b52f3e0ceecae20afd.js.map
