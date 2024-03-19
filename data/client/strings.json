@@ -16769,6 +16769,7 @@
   "POLL_VOTES_TOOLTIP_3": "\"!!{a}!!, !!{b}!!, and !!{c}!!\"",
   "POLL_VOTES_TOOLTIP_3_N": "\"!!{a}!!, !!{b}!!, !!{c}!!, and {n, plural, one {1 other} other {{n} others}}\"",
   "POLL_VOTES_TOOLTIP_N": "\"{n, plural, one {1 person} other {{n} people}}\"",
+  "POLLS_EXPERIMENT_INFO_TEXT": "\"Polls are in Beta and can only be created in certain servers.\"",
   "CREATE_POLL": "\"Create Poll\"",
   "CREATE_POLL_HEADING": "\"Create a Poll\"",
   "CREATE_POLL_EXPIRATION": "\"Poll will be live for 24 hours\"",
