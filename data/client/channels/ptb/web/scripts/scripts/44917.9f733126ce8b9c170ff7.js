@@ -644,11 +644,11 @@
                     postSuccessGuild: x,
                     openInvoiceId: A,
                     applicationId: y,
-                    referralTrialOfferId: w,
-                    giftRecipient: b,
-                    returnRef: L,
-                    subscription: P
-                } = null != e ? e : {}, V = !1, O = (0, r.v4)(), j = u.default.getCurrentUser(), U = (0, f.isPremiumExactly)(j, E.PremiumTypes.TIER_2);
+                    referralTrialOfferId: b,
+                    giftRecipient: w,
+                    returnRef: V,
+                    subscription: L
+                } = null != e ? e : {}, P = !1, O = (0, r.v4)(), j = u.default.getCurrentUser(), U = (0, f.isPremiumExactly)(j, E.PremiumTypes.TIER_2);
                 (0, s.openModalLazy)(async () => {
                     let {
                         default: e
@@ -665,14 +665,14 @@
                             skuId: (0, f.castPremiumSubscriptionAsSkuId)(M),
                             isGift: T,
                             giftMessage: S,
-                            giftRecipient: b,
+                            giftRecipient: w,
                             initialPlanId: t,
                             followupSKUInfo: v,
                             onClose: (e, t) => {
                                 r(), null == C || C(e), e && (null == _ || _(), !T && null != t && t === E.PremiumSubscriptionSKUs.TIER_2 && !U && d.ComponentDispatch.dispatch(h.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED))
                             },
                             onComplete: () => {
-                                V = !0, null == p || p(), !T && (0, o.setCanPlayWowMoment)(!0)
+                                P = !0, null == p || p(), !T && (0, o.setCanPlayWowMoment)(!0)
                             },
                             onSubscriptionConfirmation: _,
                             analyticsLocations: I,
@@ -684,15 +684,15 @@
                             planGroup: E.ORDERED_PREMIUM_SUBSCRIPTION_PLANS,
                             openInvoiceId: A,
                             applicationId: y,
-                            referralTrialOfferId: w,
-                            returnRef: L,
-                            subscription: P
+                            referralTrialOfferId: b,
+                            returnRef: V,
+                            subscription: L
                         })
                     }
                 }, {
                     modalKey: "payment-modal",
                     onCloseCallback: () => {
-                        !V && c.default.track(h.AnalyticEvents.PAYMENT_FLOW_CANCELED, {
+                        !P && c.default.track(h.AnalyticEvents.PAYMENT_FLOW_CANCELED, {
                             load_id: O,
                             payment_type: h.PurchaseTypeToAnalyticsPaymentType[h.PurchaseTypes.SUBSCRIPTION],
                             location: null != N ? N : m,
@@ -702,7 +702,7 @@
                             eligible_for_trial: null != R,
                             application_id: y,
                             location_stack: I
-                        }), (0, l.clearError)(), (0, a.clearPurchaseTokenAuthState)(), null == C || C(V), V && (null == _ || _())
+                        }), (0, l.clearError)(), (0, a.clearPurchaseTokenAuthState)(), null == C || C(P), P && (null == _ || _())
                     }
                 })
             }
@@ -1989,18 +1989,18 @@
         157590: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                default: function() {
-                    return i
+                VisibilityObserver: function() {
+                    return l
                 }
             }), n("222007");
-            var i, r = n("817736"),
-                s = n("118810");
-            let l = {
+            var i = n("817736"),
+                r = n("118810");
+            let s = {
                 root: null,
                 rootMargin: "0px",
                 threshold: .5
             };
-            i = class {
+            class l {
                 isVisible(e) {
                     return null == this._observer || this._visibleComponents.has(e)
                 }
@@ -2008,8 +2008,8 @@
                     let t = this._observer;
                     if (null == t) return;
                     this.unobserve(e);
-                    let n = (0, r.findDOMNode)(e);
-                    (0, s.isElement)(n, HTMLElement) && (this._nodes.set(n, e), this._components.set(e, n), t.observe(n))
+                    let n = (0, i.findDOMNode)(e);
+                    (0, r.isElement)(n, HTMLElement) && (this._nodes.set(n, e), this._components.set(e, n), t.observe(n))
                 }
                 unobserve(e) {
                     let t = this._observer;
@@ -2017,7 +2017,7 @@
                     let n = this._components.get(e);
                     null != n && (this._nodes.delete(n), this._components.delete(e), this._visibleComponents.delete(e), t.unobserve(n))
                 }
-                constructor(e = l) {
+                constructor(e = s) {
                     this._nodes = new WeakMap, this._components = new WeakMap, this._visibleComponents = new WeakSet, this._handleEntries = e => {
                         e.forEach(e => {
                             let t;
@@ -2041,8 +2041,8 @@
         235855: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                default: function() {
-                    return c
+                VisibilitySensor: function() {
+                    return u
                 }
             }), n("222007"), n("70102");
             var i = n("884691"),
@@ -2091,7 +2091,7 @@
                     } = e;
                     t ? a.has(t) ? this.elementId = a.get(t) || "" : a.set(t, (0, r.v4)()) : this.elementId = l;
                     let u = this.getVisibilityObserverId();
-                    !o.has(u) && o.set(u, new s.default({
+                    !o.has(u) && o.set(u, new s.VisibilityObserver({
                         root: t,
                         rootMargin: n,
                         threshold: i
@@ -2104,17 +2104,16 @@
                 root: null,
                 rootMargin: "0px 0px 0px 0px",
                 threshold: [0, Number.MIN_VALUE]
-            };
-            var c = u
+            }
         },
         290381: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 VisibilityObserver: function() {
-                    return i.default
+                    return i.VisibilityObserver
                 },
                 VisibilitySensor: function() {
-                    return r.default
+                    return r.VisibilitySensor
                 }
             }), n("6268");
             var i = n("157590"),
@@ -2122,4 +2121,4 @@
         }
     }
 ]);
-//# sourceMappingURL=44917.09b907da3cbcb5b6cb9d.js.map
+//# sourceMappingURL=44917.9f733126ce8b9c170ff7.js.map
