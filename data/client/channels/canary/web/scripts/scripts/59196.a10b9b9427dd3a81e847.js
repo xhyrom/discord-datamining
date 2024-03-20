@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["60053"], {
+    ["59196"], {
         777483: function(e, t, n) {
             var i = {
                 "./icon-file-acrobat.svg": "668973",
@@ -50065,7 +50065,7 @@
                 l = n("884691"),
                 a = n("414456"),
                 s = n.n(a),
-                r = n("235855"),
+                r = n("290381"),
                 o = n("77078"),
                 u = n("997289"),
                 d = n("685665"),
@@ -50113,7 +50113,7 @@
                         className: s(_.wrapper, n),
                         children: N ? (0, i.jsx)(o.Spinner, {
                             type: o.SpinnerTypes.PULSING_ELLIPSIS
-                        }) : (0, i.jsx)(r.default, {
+                        }) : (0, i.jsx)(r.VisibilitySensor, {
                             onChange: e => {
                                 e && !O.current && (E.default.track(g.AnalyticEvents.PREMIUM_UPSELL_VIEWED, {
                                     type: S.PremiumUpsellTypes.EMOJI_PICKER_SEARCH,
@@ -81694,4 +81694,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.13a22af62de11b5c6318.js.map
+//# sourceMappingURL=59196.a10b9b9427dd3a81e847.js.map
