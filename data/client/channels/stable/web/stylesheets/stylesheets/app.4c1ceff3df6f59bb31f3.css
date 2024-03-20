@@ -26764,21 +26764,46 @@ html .progress__4ef76 {
 
 .outerContainer_b1a8db {
     padding: 16px;
-    display: flex
+    display: grid;
+    grid-template: "cta-img text cta-buttons" 1fr "cta-img progress-bar progress-bar" min-content/min-content 1fr auto;
+    grid-column-gap: 16px;
+    align-items: center
 }
 
-.outerContainerGiftInventory_da366b {
-    height: 130px
+.outerContainerSm__7a2b1 {
+    max-height: none;
+    grid-template: "cta-img text" auto"progress-bar progress-bar" auto"cta-buttons cta-buttons" auto/min-content 1fr;
+    grid-row-gap: 6px;
+    grid-column-gap: 12px
 }
 
-.outerContainerEmbed__2b071 {
-    height: 80px
+.outerContainerXs_ae4233 {
+    max-height: none;
+    position: relative;
+    grid-template: "cta-img" auto"text" auto"progress-bar" auto"cta-buttons" auto/1fr;
+    grid-row-gap: 6px;
+    grid-column-gap: 12px
+}
+
+.gridImg__75048 {
+    grid-area: cta-img
+}
+
+.gridText__51c95 {
+    grid-area: text
+}
+
+.gridCtaButtons__1d06d {
+    grid-area: cta-buttons
+}
+
+.gridProgressBar__7d761 {
+    grid-area: progress-bar
 }
 
 .questReward__47fba {
     border-radius: 8px;
-    pointer-events: none;
-    margin-right: 16px
+    pointer-events: none
 }
 
 .questRewardGiftInventory__48caa {
@@ -26789,6 +26814,18 @@ html .progress__4ef76 {
 .questRewardEmbed__27812 {
     height: 80px;
     width: 80px
+}
+
+.questRewardEmbedSm_e9be23 {
+    height: 70px;
+    width: 70px
+}
+
+.questRewardEmbedXs__1a9e5 {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    bottom: 0
 }
 
 .innerContainer__1ed70 {
@@ -26806,18 +26843,40 @@ html .progress__4ef76 {
     height: 100%
 }
 
+.taskDetails_b31ee2 {
+    min-width: 180px
+}
+
 .taskInstructions_a218f2 {
     margin-bottom: 4px
 }
 
 .ctaButtonContainer_cc98bf {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap-reverse;
+    align-items: center;
     gap: 8px
 }
 
+.outerContainerXs_ae4233 .ctaButtonContainer_cc98bf {
+    flex-direction: column-reverse
+}
+
 .ctaButtonWrapper_d00132 {
-    flex: 0 0 auto
+    flex: 1 0 auto
+}
+
+.outerContainerSm__7a2b1 .ctaButtonWrapper_d00132,
+.outerContainerXs_ae4233 .ctaButtonWrapper_d00132 {
+    flex-grow: 1
+}
+
+.outerContainerXs_ae4233 .ctaButtonWrapper_d00132 {
+    width: 100%
+}
+
+.learnMoreLink__03264 {
+    cursor: pointer
 }
 
 .ctaTooltipCopy__0f513 {
@@ -26899,10 +26958,14 @@ html .progress__4ef76 {
     align-items: center
 }
 
+.img__4f1c2 {
+    width: 100%
+}
+
 .questIcon__3a4c1 {
     margin-right: 8px;
-    height: 34px;
-    width: 34px;
+    height: 100%;
+    max-width: 34px;
     border-radius: 4px;
     pointer-events: none
 }
@@ -26988,66 +27051,92 @@ html .progress__4ef76 {
 }
 
 .questsCard_a68cbc {
-    width: 660px;
+    width: 100%;
+    max-width: 660px;
+    min-width: 280px;
     margin-bottom: 16px;
     border-radius: 8px;
     overflow: hidden
 }
 
-.invalidContainer__68fba {
+.container_b0b3bd {
     box-sizing: border-box;
-    height: 250px;
-    width: 660px;
     margin-bottom: 16px;
-    border-radius: 8px;
-    overflow: hidden;
+    width: 100%;
+    max-width: 660px;
+    min-width: 280px
+}
+
+.wide__5c941.container_b0b3bd {
+    height: 250px;
     display: flex;
     flex-shrink: 0
 }
 
-.invalidLeftSideOuterContainer_cffb56 {
-    background: var(--background-tertiary);
+.tall__0c3ff.container_b0b3bd {
+    display: flex;
+    flex-direction: column-reverse
+}
+
+.contentContainer_d0b45f {
+    flex: 1;
     padding: 16px;
-    width: 330px;
+    padding-top: 38px;
+    background: var(--background-tertiary);
+    border-radius: 8px 0 0 8px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between
+    flex-direction: column
 }
 
-.invalidLeftSideInnerContainer__3266c {
-    margin-top: 16px;
-    display: flex;
-    flex-direction: column;
-    width: 248px
+.tall__0c3ff .contentContainer_d0b45f {
+    border-radius: 0 0 8px 8px;
+    padding: 16px
 }
 
-.invalidRightSideOuterContainer__0557c {
+.buttonContainer__3e279 {
+    margin-top: auto;
+    align-self: flex-start
+}
+
+.tall__0c3ff .buttonContainer__3e279 {
+    margin-top: 50px;
+    width: 100%
+}
+
+.tall__0c3ff .button__85c2b {
+    width: 100%
+}
+
+.imgContainer_b65d7f {
+    flex: 1;
     padding: 16px;
     background: var(--background-secondary);
-    width: 330px;
+    border-radius: 0 8px 8px 0;
     display: flex;
     align-items: center;
     justify-content: center
 }
 
 .missingQuestImage_cdfd93 {
-    width: 270px;
-    height: 180px
+    width: 100%;
+    height: 180px;
+    -o-object-fit: contain;
+    object-fit: contain
 }
 
-.theme-light .invalidLeftSideOuterContainer_cffb56 {
+.theme-light .contentContainer_d0b45f {
     background: var(--background-secondary)
 }
 
-.theme-light .invalidRightSideOuterContainer__0557c {
+.theme-light .imgContainer_b65d7f {
     background: var(--background-secondary-alt)
 }
 
-.theme-dark .invalidLeftSideOuterContainer_cffb56 {
+.theme-dark .contentContainer_d0b45f {
     background: var(--background-tertiary)
 }
 
-.theme-dark .invalidRightSideOuterContainer__0557c {
+.theme-dark .imgContainer_b65d7f {
     background: var(--background-secondary)
 }
 
@@ -36957,7 +37046,6 @@ html .progress__4ef76 {
 
 .badgesContainer_b001e0 {
     display: flex;
-    justify-content: space-between;
     gap: 8px;
     align-items: center
 }
@@ -47408,8 +47496,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -95001,6 +95089,29 @@ html .tabBadge__002b3 {
     color: var(--header-primary)
 }
 
+.container_cd4fee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+
+.header__93d65 {
+    margin-bottom: var(--spacing-8)
+}
+
+.buttonContainer__142d8 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: var(--spacing-24)0 0
+}
+
+.button__88b63 {
+    margin-bottom: var(--spacing-8)
+}
+
 .container_aacd33 {
     min-width: 440px;
     margin-left: -16px
@@ -130307,4 +130418,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.af7eb53c8eaeb9ba1117.css.map*/
+/*# sourceMappingURL=app.4c1ceff3df6f59bb31f3.css.map*/

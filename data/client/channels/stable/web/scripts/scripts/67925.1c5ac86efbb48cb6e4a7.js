@@ -229,10 +229,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 shouldShowGuildOnboardingUpsell: function() {
-                    return h
+                    return C
                 },
                 dismissedGuildOnboardingUpsell: function() {
-                    return C
+                    return h
                 }
             }), n("222007");
             var s = n("866227"),
@@ -251,7 +251,7 @@
             let T = [r.DismissibleContent.GUILD_ONBOARDING_UPSELL_MODAL_V2, r.DismissibleContent.GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE, r.DismissibleContent.GUILD_ONBOARDING_UPSELL_NAGBAR],
                 p = [0, 1, 7];
 
-            function h(e, t) {
+            function C(e, t) {
                 var n;
                 let s = d.default.getGuilds(),
                     r = c.default.entries(s).some(e => {
@@ -261,13 +261,13 @@
                 if (r || !(0, f.isGuildOnboardingSettingsAvailable)(e)) return !1;
                 let l = null === (n = o.default.settings.userContent) || void 0 === n ? void 0 : n.guildOnboardingUpsellDismissedAt,
                     _ = null != l ? a.Timestamp.toDate(l) : void 0,
-                    h = null != _ ? i().diff(_, "days") : null,
-                    C = T.indexOf(t);
-                if (-1 === C) return !1;
-                let g = null == h || h > p[C];
-                if (!g) return !1;
-                let A = T.find(e => !(0, u.isDismissibleContentDismissed)(e)) === t;
+                    C = null != _ ? i().diff(_, "days") : null,
+                    h = T.indexOf(t);
+                if (-1 === h) return !1;
+                let A = null == C || C > p[h];
                 if (!A) return !1;
+                let g = T.find(e => !(0, u.isDismissibleContentDismissed)(e)) === t;
+                if (!g) return !1;
                 let {
                     showLifecycleUpsells: I
                 } = E.default.getCurrentConfig({
@@ -280,7 +280,7 @@
                 return I
             }
 
-            function C(e, t) {
+            function h(e, t) {
                 let n = a.Timestamp.now();
                 l.PreloadedUserSettingsActionCreators.updateAsync("userContent", e => {
                     e.guildOnboardingUpsellDismissedAt = n
@@ -626,13 +626,13 @@
                     return p
                 },
                 resetQuestPreviewStatus: function() {
-                    return h
-                },
-                resetQuestDismissibilityStatus: function() {
                     return C
                 },
+                resetQuestDismissibilityStatus: function() {
+                    return h
+                },
                 optimisticallyUpdateQuestProgress: function() {
-                    return g
+                    return A
                 }
             });
             var s = n("872717"),
@@ -779,8 +779,9 @@
                 }
             }
             async function _(e, t) {
-                let n = u.default.isDismissingContent(e);
-                if (!n) {
+                let n = u.default.isDismissingContent(e),
+                    a = (0, l.isDismissible)(t);
+                if (!n && a) {
                     i.default.dispatch({
                         type: "QUESTS_DISMISS_CONTENT_BEGIN",
                         questId: e,
@@ -829,7 +830,7 @@
                     })
                 }
             }
-            async function h(e) {
+            async function C(e) {
                 try {
                     let t = await s.default.delete({
                         url: o.Endpoints.QUESTS_PREVIEW_STATUS(e),
@@ -847,7 +848,7 @@
                     })
                 }
             }
-            async function C(e) {
+            async function h(e) {
                 try {
                     let t = await s.default.delete({
                         url: o.Endpoints.QUESTS_PREVIEW_DISMISSIBILITY(e),
@@ -866,7 +867,7 @@
                 }
             }
 
-            function g(e) {
+            function A(e) {
                 i.default.dispatch({
                     type: "QUESTS_OPTIMISTIC_PROGRESS_UPDATE",
                     userStatus: e
@@ -876,26 +877,21 @@
         166604: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                DismissibleQuestContentFlags: function() {
+                    return u.DismissibleQuestContentFlags
+                },
                 QuestsExperimentLocations: function() {
                     return i
-                },
-                DismissibleQuestContentFlags: function() {
-                    return u
                 },
                 CONSECUTIVE_HEARTBEAT_PERIOD_MS: function() {
                     return l
                 }
             });
-            var s, i, r = n("718517"),
-                a = n("588025");
+            var s, i, r = n("310694"),
+                a = n("718517"),
+                u = n("490788");
             (s = i || (i = {})).ACTIVITY_PANEL = "quests_bar_activity_panel", s.QUESTS_MANAGER = "quests_manager", s.USER_SETTINGS_GIFT_INVENTORY = "user_settings_gift_inventory", s.USE_QUESTS = "use_quests", s.STREAM_SOURCE_SELECT = "stream_source_select";
-            let u = {
-                    [a.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE]: 1,
-                    [a.QuestContent.QUEST_BAR]: 2,
-                    [a.QuestContent.ACTIVITY_PANEL]: 4,
-                    [a.QuestContent.QUEST_LIVE_STREAM]: 8
-                },
-                l = 2 * r.default.Millis.MINUTE
+            let l = a.default.Millis.MINUTE * r.Quests.ConsecutiveHeartbeatPeriodMinutes
         },
         374023: function(e, t, n) {
             "use strict";
@@ -990,16 +986,16 @@
                     return p
                 },
                 getQuestBarAnimatedHeroAssetUrl: function() {
-                    return h
-                },
-                getGameTileAssetUrl: function() {
                     return C
                 },
+                getGameTileAssetUrl: function() {
+                    return h
+                },
                 getGameLogotypeAssetUrl: function() {
-                    return g
+                    return A
                 },
                 getQuestUrl: function() {
-                    return A
+                    return g
                 },
                 getQuestForTargetedContent: function() {
                     return I
@@ -1011,10 +1007,10 @@
                     return N
                 },
                 getContextualEntrypointHeading: function() {
-                    return U
+                    return y
                 },
                 isDismissible: function() {
-                    return y
+                    return U
                 },
                 isDismissed: function() {
                     return R
@@ -1023,7 +1019,7 @@
                     return L
                 },
                 captureQuestsException: function() {
-                    return O
+                    return b
                 }
             }), n("222007");
             var s = n("568734"),
@@ -1113,10 +1109,10 @@
                 _ = e => "".concat(l).concat(e).concat("/hero.png"),
                 T = e => "".concat(l).concat(e).concat("/hero.webm"),
                 p = e => "".concat(l).concat(e).concat("/quests_bar_hero.png"),
-                h = e => "".concat(l).concat(e).concat("/quests_bar_hero.webm"),
-                C = e => "".concat(l).concat(e).concat("/game_tile.png"),
-                g = (e, t) => "".concat(l).concat(e, "/").concat(t).concat("/game_logotype.png"),
-                A = e => "".concat(location.protocol, "//").concat(location.host, "/quests/").concat(e);
+                C = e => "".concat(l).concat(e).concat("/quests_bar_hero.webm"),
+                h = e => "".concat(l).concat(e).concat("/game_tile.png"),
+                A = (e, t) => "".concat(l).concat(e, "/").concat(t).concat("/game_logotype.png"),
+                g = e => "".concat(location.protocol, "//").concat(location.host, "/quests/").concat(e);
 
             function I(e, t) {
                 for (let [n, s] of e)
@@ -1151,7 +1147,7 @@
                 return Math.min(t / 60 / s, 1)
             }
 
-            function U(e) {
+            function y(e) {
                 var t, n;
                 if ((null === (t = e.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return u.default.Messages.QUESTS_COMPLETION_PROGRESS_COMPLETE;
                 if ((null === (n = e.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null) {
@@ -1163,19 +1159,21 @@
                 })
             }
 
-            function y(e) {
-                return e in a.DismissibleQuestContentFlags
+            function U(e) {
+                return Object.keys(a.DismissibleQuestContentFlags).includes(r.QuestContent[e])
             }
 
             function R(e, t) {
-                return (0, s.hasFlag)(e.dismissedQuestContent, a.DismissibleQuestContentFlags[t])
+                if (!U(t)) return !1;
+                let n = r.QuestContent[t];
+                return (0, s.hasFlag)(e.dismissedQuestContent, a.DismissibleQuestContentFlags[n])
             }
 
             function L(e, t) {
                 return e.targetedContent.includes(t)
             }
 
-            function O(e, t) {
+            function b(e, t) {
                 i.default.captureException(e, {
                     ...t,
                     tags: {
@@ -1388,7 +1386,25 @@
                     })]
                 })
             }
+        },
+        490788: function(e, t, n) {
+            "use strict";
+            var s, i;
+            n.r(t), n.d(t, {
+                DismissibleQuestContentFlags: function() {
+                    return s
+                }
+            }), (i = s || (s = {}))[i.GIFT_INVENTORY_SETTINGS_BADGE = 1] = "GIFT_INVENTORY_SETTINGS_BADGE", i[i.QUEST_BAR = 2] = "QUEST_BAR", i[i.ACTIVITY_PANEL = 4] = "ACTIVITY_PANEL", i[i.QUEST_LIVE_STREAM = 8] = "QUEST_LIVE_STREAM"
+        },
+        310694: function(e, t, n) {
+            "use strict";
+            var s, i;
+            n.r(t), n.d(t, {
+                Quests: function() {
+                    return s
+                }
+            }), (i = s || (s = {}))[i.ConsecutiveHeartbeatPeriodMinutes = 2] = "ConsecutiveHeartbeatPeriodMinutes", i[i.StatusLookbackPeriodDays = 30] = "StatusLookbackPeriodDays"
         }
     }
 ]);
-//# sourceMappingURL=67925.56fedf3952b48bc5e52d.js.map
+//# sourceMappingURL=67925.1c5ac86efbb48cb6e4a7.js.map
