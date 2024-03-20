@@ -6303,6 +6303,10 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     color: var(--brand-experiment-560)
 }
 
+.colorDefault__0b482.focused__27621 path {
+    fill: var(--white-500)
+}
+
 .colorDefault__0b482:active:not(.hideInteraction__2790e) {
     background-color: var(--brand-experiment-600);
     color: var(--white-500)
@@ -28156,4 +28160,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.f593ead26bb41822f9bc.css.map*/
+/*# sourceMappingURL=shared.b0153d5a89073fe04cf2.css.map*/
