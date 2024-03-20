@@ -83164,15 +83164,29 @@ html .tabBadge__002b3 {
     gap: 16px
 }
 
+@value gridSize: 320px;
+
 .productList_bce430 {
     display: grid;
     grid-gap: 16px;
     gap: 16px;
-    padding: 48px 0 16px
+    padding: 48px 0 16px;
+    grid-template-columns: 320px;
+    justify-items: center;
+    justify-content: center;
+    margin: 0 auto
 }
 
-.productCard_eabca8 {
-    margin: 0 auto
+@media(min-width:760px) {
+    .productList_bce430 {
+        grid-template-columns: 320px 320px
+    }
+}
+
+@media(min-width:1100px) {
+    .productList_bce430 {
+        grid-template-columns: 320px 320px 320px
+    }
 }
 
 .subDetailsModal__7eb23 {
@@ -130293,4 +130307,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.13ef8534865f7a951696.css.map*/
+/*# sourceMappingURL=app.af7eb53c8eaeb9ba1117.css.map*/
