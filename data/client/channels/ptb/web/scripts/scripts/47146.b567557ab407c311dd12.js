@@ -216,8 +216,8 @@
                 I = i("271938"),
                 A = i("42203"),
                 T = i("945956"),
-                C = i("18494"),
-                S = i("697218"),
+                S = i("18494"),
+                C = i("697218"),
                 N = i("599110"),
                 v = i("773336"),
                 O = i("289732"),
@@ -249,7 +249,7 @@
                     channelId: e,
                     applicationId: i,
                     analyticsLocations: n
-                } = t, l = A.default.getChannel(e), a = null == l ? void 0 : l.getGuildId(), r = S.default.getCurrentUser();
+                } = t, l = A.default.getChannel(e), a = null == l ? void 0 : l.getGuildId(), r = C.default.getCurrentUser();
                 if (null == l || null == r) return;
                 let u = p.default.getShelfActivities(a),
                     d = O.default.getState().shelfOrder,
@@ -303,7 +303,7 @@
                 let {
                     channelId: n,
                     applicationId: l
-                } = t, a = F[l], r = A.default.getChannel(n), u = p.default.getEmbeddedActivityDurationMs(n, l), d = S.default.getCurrentUser(), s = null == r ? void 0 : r.getGuildId();
+                } = t, a = F[l], r = A.default.getChannel(n), u = p.default.getEmbeddedActivityDurationMs(n, l), d = C.default.getCurrentUser(), s = null == r ? void 0 : r.getGuildId();
                 if (null == a || null == r || null == d) return;
                 let o = p.default.getShelfActivities(s),
                     c = (0, y.default)({
@@ -355,8 +355,8 @@
                         application_id: _
                     } = l,
                     f = (0, g.default)(l),
-                    C = null == E && (null == c ? void 0 : c.isVocal()) === !0;
-                null != f && !C && (null === (e = Y[_]) || void 0 === e || e.call(Y, {
+                    S = null == E && (null == c ? void 0 : c.isVocal()) === !0;
+                null != f && !S && (null === (e = Y[_]) || void 0 === e || e.call(Y, {
                     activitySessionId: f,
                     activityUserSessionId: (0, r.v4)(),
                     instanceId: l.activity_id,
@@ -394,14 +394,14 @@
             }
             n = class extends s.default {
                 _initialize() {
-                    C.default.addChangeListener(this.handleSelectedChannelUpdate), u.default.subscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), u.default.subscribe("EMBEDDED_ACTIVITY_OPEN", G), u.default.subscribe("EMBEDDED_ACTIVITY_CLOSE", B), u.default.subscribe("EMBEDDED_ACTIVITY_INBOUND_UPDATE", H), u.default.subscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), u.default.subscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), u.default.subscribe("MEDIA_SESSION_JOINED", k)
+                    S.default.addChangeListener(this.handleSelectedChannelUpdate), u.default.subscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), u.default.subscribe("EMBEDDED_ACTIVITY_OPEN", G), u.default.subscribe("EMBEDDED_ACTIVITY_CLOSE", B), u.default.subscribe("EMBEDDED_ACTIVITY_INBOUND_UPDATE", H), u.default.subscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), u.default.subscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), u.default.subscribe("MEDIA_SESSION_JOINED", k)
                 }
                 _terminate() {
-                    C.default.removeChangeListener(this.handleSelectedChannelUpdate), u.default.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), u.default.unsubscribe("EMBEDDED_ACTIVITY_OPEN", G), u.default.unsubscribe("EMBEDDED_ACTIVITY_CLOSE", B), u.default.unsubscribe("EMBEDDED_ACTIVITY_INBOUND_UPDATE", H), u.default.unsubscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), u.default.unsubscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), u.default.unsubscribe("MEDIA_SESSION_JOINED", k)
+                    S.default.removeChangeListener(this.handleSelectedChannelUpdate), u.default.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), u.default.unsubscribe("EMBEDDED_ACTIVITY_OPEN", G), u.default.unsubscribe("EMBEDDED_ACTIVITY_CLOSE", B), u.default.unsubscribe("EMBEDDED_ACTIVITY_INBOUND_UPDATE", H), u.default.unsubscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), u.default.unsubscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), u.default.unsubscribe("MEDIA_SESSION_JOINED", k)
                 }
                 constructor(...t) {
                     super(...t), this.handleSelectedChannelUpdate = () => {
-                        let t = C.default.getVoiceChannelId();
+                        let t = S.default.getVoiceChannelId();
                         for (let {
                                 channelId: e,
                                 applicationId: i
@@ -474,7 +474,7 @@
                             applicationId: r,
                             analyticsLocations: u
                         } = t, d = A.default.getChannel(a);
-                        if (void 0 === d || f.GUILD_VOCAL_CHANNEL_TYPES.has(null == d ? void 0 : d.type) && C.default.getVoiceChannelId() !== a) return;
+                        if (void 0 === d || f.GUILD_VOCAL_CHANNEL_TYPES.has(null == d ? void 0 : d.type) && S.default.getVoiceChannelId() !== a) return;
                         let s = p.default.getSelfEmbeddedActivityForChannel(a);
                         if ((null == s ? void 0 : s.applicationId) === r) return;
                         let E = await o.default.fetchApplication(r),
@@ -491,14 +491,14 @@
                         null != I && (await o.default.fetchApplication(I), l = c.default.getApplication(I));
                         let T = null !== (i = null == d ? void 0 : d.getGuildId()) && void 0 !== i ? i : void 0,
                             {
-                                activityConfigs: S,
+                                activityConfigs: C,
                                 applications: N
                             } = await (0, D.fetchShelf)({
                                 guildId: T
                             }),
                             v = (0, y.default)({
                                 applicationId: r,
-                                activityConfigs: S,
+                                activityConfigs: C,
                                 applications: N
                             });
                         if (null == v) {
@@ -671,8 +671,8 @@
                     currentEmbeddedApplication: i,
                     activityChannelId: A,
                     locationObject: T,
-                    embeddedActivitiesManager: C,
-                    analyticsLocations: S
+                    embeddedActivitiesManager: S,
+                    analyticsLocations: C
                 } = t, N = l.default.getChannel(A), v = null == N ? void 0 : N.getGuildId(), O = null == v || "" === v, D = r.default.getCurrentUser();
                 if (null == N || O && !N.isPrivate() || null == A || null == D) return Promise.resolve(!1);
                 if (a.default.getVoiceChannelId() === A && (null == i ? void 0 : i.id) === e) return (0, _.default)(v, A), Promise.resolve(!0);
@@ -681,7 +681,7 @@
                     application: n.default.getApplication(e),
                     channel: N,
                     currentEmbeddedApplication: i,
-                    embeddedActivitiesManager: C,
+                    embeddedActivitiesManager: S,
                     user: D
                 });
                 if (!p) return !1;
@@ -694,12 +694,12 @@
                     });
                     if (!t) return !1
                 } else if (!(0, u.isActivitiesInTextEnabled)(N, "joinEmbeddedActivity") || !h) return !1;
-                return (0, _.default)(v, A), (0, d.startEmbeddedActivity)(A, e, S), (0, E.default)({
+                return (0, _.default)(v, A), (0, d.startEmbeddedActivity)(A, e, C), (0, E.default)({
                     type: I.AnalyticsGameOpenTypes.JOIN,
                     userId: D.id,
                     applicationId: e,
                     locationObject: T,
-                    analyticsLocations: S
+                    analyticsLocations: C
                 }), !0
             }
         },
@@ -707,7 +707,7 @@
             "use strict";
             i.r(e), i.d(e, {
                 maybeJoinEmbeddedActivity: function() {
-                    return C
+                    return S
                 }
             });
             var n = i("404118"),
@@ -725,18 +725,18 @@
                 I = i("126939"),
                 A = i("501260"),
                 T = i("782340");
-            async function C(t) {
+            async function S(t) {
                 var e;
                 let {
                     channelId: i,
-                    applicationId: C,
-                    instanceId: S,
+                    applicationId: S,
+                    instanceId: C,
                     inputApplication: N,
                     analyticsLocations: v,
                     embeddedActivitiesManager: O
-                } = t, D = _.default.getEmbeddedActivitiesForChannel(i), p = D.find(t => t.applicationId === C && (null == S || t.instanceId === S)), y = N;
+                } = t, D = _.default.getEmbeddedActivitiesForChannel(i), p = D.find(t => t.applicationId === S && (null == C || t.instanceId === C)), y = N;
                 if (null == y) {
-                    let t = await l.default.fetchApplication(C);
+                    let t = await l.default.fetchApplication(S);
                     y = u.default.createFromServer(t)
                 }
                 if (null == p || null == y) return;
@@ -836,8 +836,8 @@
                 I = i("420444"),
                 A = i("541473"),
                 T = i("407908"),
-                C = i("578708"),
-                S = i("702173"),
+                S = i("578708"),
+                C = i("702173"),
                 N = i("954016"),
                 v = i("49111"),
                 O = i("782340");
@@ -851,7 +851,7 @@
                     embeddedActivitiesManager: h,
                     analyticsLocations: L
                 } = t, P = r.default.getGuild(y), g = d.default.getCurrentUser();
-                if (null == P && !(0, S.isPrivateChannelWithEnabledActivities)(p) || null == g || null == e || null == e.application) return !1;
+                if (null == P && !(0, C.isPrivateChannelWithEnabledActivities)(p) || null == g || null == e || null == e.application) return !1;
                 if (null == p) return s.ComponentDispatch.dispatch(v.ComponentActions.SHOW_ACTIVITIES_CHANNEL_SELECTOR, {
                     applicationId: e.application.id
                 }), !1;
@@ -886,7 +886,7 @@
                     });
                     if (!t) return !1
                 } else if (!(0, o.isActivitiesInTextEnabled)(R, "handleStartEmbeddedActivity") || !V) return !1;
-                return E.startEmbeddedActivity(p, e.application.id, L), (0, C.default)(y, p), (0, T.default)({
+                return E.startEmbeddedActivity(p, e.application.id, L), (0, S.default)(y, p), (0, T.default)({
                     type: v.AnalyticsGameOpenTypes.LAUNCH,
                     userId: g.id,
                     applicationId: e.application.id,
@@ -946,8 +946,8 @@
                     RelationshipStore: I,
                     SelectedChannelStore: A,
                     VoiceStateStore: T,
-                    PermissionStore: C
-                } = t, S = E.getChannel(s), N = (0, l.getIsActivitiesEnabledForCurrentPlatform)(S);
+                    PermissionStore: S
+                } = t, C = E.getChannel(s), N = (0, l.getIsActivitiesEnabledForCurrentPlatform)(C);
                 if (null == e) return !1;
                 if (c) return (0, a.default)({
                     userId: e.id,
@@ -958,7 +958,7 @@
                     isActivitiesEnabledForCurrentPlatform: N,
                     ChannelStore: E,
                     VoiceStateStore: T,
-                    PermissionStore: C,
+                    PermissionStore: S,
                     GuildStore: _
                 }) === a.EmbeddedActivityJoinability.CAN_JOIN;
                 if (!(0, n.isDesktop)()) return !1;
@@ -983,7 +983,7 @@
             "use strict";
             i.r(e), i.d(e, {
                 confirmActivityLaunchChecks: function() {
-                    return C
+                    return S
                 }
             }), i("702976");
             var n = i("913144"),
@@ -1068,7 +1068,7 @@
                     })
                 }))
             }
-            async function C(t) {
+            async function S(t) {
                 let e = await I(t);
                 if (!e) return !1;
                 let i = await A(t);
@@ -1121,19 +1121,19 @@
                 if (!(0, _.default)(null == r ? void 0 : null === (i = r.embeddedActivityConfig) || void 0 === i ? void 0 : i.supported_platforms)) return 6;
                 let T = null != u ? u : null === (n = E.getVoiceStateForSession(l, null == a ? void 0 : a.session_id)) || void 0 === n ? void 0 : n.channelId;
                 if (null == T) return 4;
-                let C = o.getChannel(u);
-                if (null == C) return 4;
-                let S = C.getGuildId();
-                if (!C.isPrivate()) {
-                    if (null == S) return 10;
-                    let t = A.getGuild(S);
-                    if ((null == t ? void 0 : t.afkChannelId) === C.id) return 9;
-                    let e = E.getCurrentClientVoiceChannelId(C.getGuildId()) === T,
-                        i = (0, c.isChannelFull)(C, E, A),
-                        n = I.can(f.Permissions.CONNECT, C),
-                        l = I.can(f.Permissions.USE_EMBEDDED_ACTIVITIES, C);
+                let S = o.getChannel(u);
+                if (null == S) return 4;
+                let C = S.getGuildId();
+                if (!S.isPrivate()) {
+                    if (null == C) return 10;
+                    let t = A.getGuild(C);
+                    if ((null == t ? void 0 : t.afkChannelId) === S.id) return 9;
+                    let e = E.getCurrentClientVoiceChannelId(S.getGuildId()) === T,
+                        i = (0, c.isChannelFull)(S, E, A),
+                        n = I.can(f.Permissions.CONNECT, S),
+                        l = I.can(f.Permissions.USE_EMBEDDED_ACTIVITIES, S);
                     if (!l) return 1;
-                    if (C.isVocal() && !e) {
+                    if (S.isVocal() && !e) {
                         if (i) return 3;
                         if (!n) return 2
                     }
@@ -1562,8 +1562,8 @@
                             connected: I,
                             needSubscriptionToAccess: A,
                             locked: T = !1,
-                            routeDirectlyToChannel: C = !1,
-                            bypassChangeModal: S,
+                            routeDirectlyToChannel: S = !1,
+                            bypassChangeModal: C,
                             bypassGuildIdCheck: N = !1
                         } = t;
                         e.isThread() && (await s.default.unarchiveThreadIfNecessary(e.id), !d.default.hasJoined(e.id) && await s.default.joinThread(e, "Join Voice"));
@@ -1571,7 +1571,7 @@
                             O = E.default.getVoiceStateForSession(o.default.getId(), v),
                             D = (null == O ? void 0 : O.channelId) === e.id,
                             p = D || c.default.getChannelId() === E.default.getCurrentClientVoiceChannelId(e.guild_id);
-                        return !S && !T && (0, _.shouldShowVoiceChannelChangeConfirmation)(e) ? new Promise(t => {
+                        return !C && !T && (0, _.shouldShowVoiceChannelChangeConfirmation)(e) ? new Promise(t => {
                             (0, l.openModalLazy)(async () => {
                                 let {
                                     default: l
@@ -1582,14 +1582,14 @@
                                         channel: e,
                                         connected: I,
                                         needSubscriptionToAccess: A,
-                                        routeDirectlyToChannel: C,
+                                        routeDirectlyToChannel: S,
                                         locked: T,
                                         bypassChangeModal: !0
                                     })),
                                     ...i
                                 })
                             })
-                        }) : (!T && !I && a.default.selectVoiceChannel(e.id), !__OVERLAY__ && (I || p || A || C) && ! function(t) {
+                        }) : (!T && !I && a.default.selectVoiceChannel(e.id), !__OVERLAY__ && (I || p || A || S) && ! function(t) {
                             let e = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                                 i = t.getGuildId();
                             if (null == i && !e) throw Error("VoiceChannel, transitionTo: Channel does not have a guildId");
@@ -1640,7 +1640,7 @@
                     return A
                 },
                 getSpotifyMetadataFromActivity: function() {
-                    return C
+                    return S
                 }
             }), i("70102"), i("860677"), i("222007");
             var n = i("968194"),
@@ -1718,7 +1718,7 @@
                 if ("string" == typeof t) return t;
                 throw Error("value is not a string")
             }
-            async function C(t, e) {
+            async function S(t, e) {
                 var i;
                 let l = await (0, n.getMetadata)(t, e),
                     a = (0, o.getSpotifyResourceType)(T(null !== (i = l.type) && void 0 !== i ? i : o.SpotifyResourceTypes.TRACK));
@@ -1942,7 +1942,7 @@
                     CDN_HOST: i
                 } = window.GLOBAL_ENV;
                 return null != i ? "".concat(location.protocol, "//").concat(i, "/badge-icons/").concat(t, ".png") : "".concat(location.protocol).concat(e).concat(I.Endpoints.BADGE_ICON(t))
-            }(n = s || (s = {})).USER_INFO = "USER_INFO", n.USER_INFO_CONNECTIONS = "USER_INFO_CONNECTIONS", n.ACTIVITY = "ACTIVITY", n.MUTUAL_GUILDS = "MUTUAL_GUILDS", n.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", n.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", n.RECENT_GAMES = "RECENT_GAMES", (l = o || (o = {})).POPOUT = "POPOUT", l.MODAL = "MODAL", l.SETTINGS = "SETTINGS", l.PANEL = "PANEL", l.CARD = "CARD", l.POMELO_POPOUT = "POMELO_POPOUT", l.CANCEL_MODAL = "CANCEL_MODAL", (a = c || (c = {})).POPOUT = "POPOUT", a.MODAL = "MODAL", a.DM_PANEL = "DM_PANEL", a.ACCOUNT_POPOUT = "ACCOUNT_POPOUT", a.ACTION_SHEET = "ACTION_SHEET", (r = E || (E = {}))[r.NICKNAME = 0] = "NICKNAME", r[r.PRONOUNS = 1] = "PRONOUNS", r[r.AVATAR = 2] = "AVATAR", r[r.ANIMATED_AVATAR = 3] = "ANIMATED_AVATAR", r[r.BANNER = 4] = "BANNER", r[r.ANIMATED_BANNER = 5] = "ANIMATED_BANNER", r[r.BIO = 6] = "BIO", r[r.THEME = 7] = "THEME", r[r.AVATAR_DECORATION = 8] = "AVATAR_DECORATION", r[r.PROFILE_EFFECT = 9] = "PROFILE_EFFECT", (u = _ || (_ = {})).VIEW = "VIEW", u.SEND_MESSAGE = "SEND_MESSAGE", u.SEND_DIRECT_MESSAGE = "SEND_DIRECT_MESSAGE", u.SEND_FRIEND_REQUEST = "SEND_FRIEND_REQUEST", u.ACCEPT_FRIEND_REQUEST = "ACCEPT_FRIEND_REQUEST", u.IGNORE_FRIEND_REQUEST = "IGNORE_FRIEND_REQUEST", u.CANCEL_FRIEND_REQUEST = "CANCEL_FRIEND_REQUEST", u.REMOVE_FRIEND = "REMOVE_FRIEND", u.BLOCK = "BLOCK", u.UNBLOCK = "UNBLOCK", u.REPORT = "REPORT", u.COPY_USERNAME = "COPY_USERNAME", u.COPY_USER_ID = "COPY_USER_ID", u.PRESS_VIEW_PROFILE = "PRESS_VIEW_PROFILE", u.PRESS_OPTIONS = "PRESS_OPTIONS", u.PRESS_BADGE = "PRESS_BADGE", u.PRESS_SECTION = "PRESS_SECTION", u.PRESS_PRONOUNS = "PRESS_PRONOUNS", u.PRESS_PREMIUM_UPSELL = "PRESS_PREMIUM_UPSELL", u.PRESS_SET_STATUS = "PRESS_SET_STATUS", u.PRESS_SET_CUSTOM_STATUS = "PRESS_SET_CUSTOM_STATUS", u.PRESS_SWITCH_ACCOUNTS = "PRESS_SWITCH_ACCOUNTS", u.PRESS_SET_FRIEND_NICKNAME = "PRESS_SET_FRIEND_NICKNAME", u.JOIN_ACTIVITY = "JOIN_ACTIVITY", u.SET_NOTE = "SET_NOTE", u.SET_VOLUME = "SET_VOLUME", u.EDIT_PROFILE = "EDIT_PROFILE", u.EDIT_GUILD_PROFILE = "EDIT_GUILD_PROFILE", u.GIFT_PREMIUM = "GIFT_PREMIUM", u.VOICE_CALL = "VOICE_CALL", u.VIDEO_CALL = "VIDEO_CALL", u.MUTE = "MUTE", u.MUTE_SOUNDBOARD = "MUTE_SOUNDBOARD", u.DISABLE_VIDEO = "DISABLE_VIDEO", u.DEAFEN = "DEAFEN", u.DISCONNECT = "DISCONNECT", (d = f || (f = {})).VOICE = "VOICE", d.PLAYING = "PLAYING", d.STREAMING = "STREAMING", d.LISTENING = "LISTENING", d.WATCHING = "WATCHING", d.CUSTOM_STATUS = "CUSTOM_STATUS", d.COMPETING = "COMPETING", d.HANG_STATUS = "HANG_STATUS"
+            }(n = s || (s = {})).USER_INFO = "USER_INFO", n.USER_INFO_CONNECTIONS = "USER_INFO_CONNECTIONS", n.ACTIVITY = "ACTIVITY", n.MUTUAL_GUILDS = "MUTUAL_GUILDS", n.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", n.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", n.RECENT_GAMES = "RECENT_GAMES", (l = o || (o = {})).POPOUT = "POPOUT", l.MODAL = "MODAL", l.SETTINGS = "SETTINGS", l.PANEL = "PANEL", l.CARD = "CARD", l.POMELO_POPOUT = "POMELO_POPOUT", l.CANCEL_MODAL = "CANCEL_MODAL", (a = c || (c = {})).POPOUT = "POPOUT", a.BITE_SIZE_POPOUT = "BITE_SIZE_POPOUT", a.MODAL = "MODAL", a.DM_PANEL = "DM_PANEL", a.ACCOUNT_POPOUT = "ACCOUNT_POPOUT", a.ACTION_SHEET = "ACTION_SHEET", (r = E || (E = {}))[r.NICKNAME = 0] = "NICKNAME", r[r.PRONOUNS = 1] = "PRONOUNS", r[r.AVATAR = 2] = "AVATAR", r[r.ANIMATED_AVATAR = 3] = "ANIMATED_AVATAR", r[r.BANNER = 4] = "BANNER", r[r.ANIMATED_BANNER = 5] = "ANIMATED_BANNER", r[r.BIO = 6] = "BIO", r[r.THEME = 7] = "THEME", r[r.AVATAR_DECORATION = 8] = "AVATAR_DECORATION", r[r.PROFILE_EFFECT = 9] = "PROFILE_EFFECT", (u = _ || (_ = {})).VIEW = "VIEW", u.SEND_MESSAGE = "SEND_MESSAGE", u.SEND_DIRECT_MESSAGE = "SEND_DIRECT_MESSAGE", u.SEND_FRIEND_REQUEST = "SEND_FRIEND_REQUEST", u.ACCEPT_FRIEND_REQUEST = "ACCEPT_FRIEND_REQUEST", u.IGNORE_FRIEND_REQUEST = "IGNORE_FRIEND_REQUEST", u.CANCEL_FRIEND_REQUEST = "CANCEL_FRIEND_REQUEST", u.REMOVE_FRIEND = "REMOVE_FRIEND", u.BLOCK = "BLOCK", u.UNBLOCK = "UNBLOCK", u.REPORT = "REPORT", u.COPY_USERNAME = "COPY_USERNAME", u.COPY_USER_ID = "COPY_USER_ID", u.PRESS_VIEW_PROFILE = "PRESS_VIEW_PROFILE", u.PRESS_OPTIONS = "PRESS_OPTIONS", u.PRESS_BADGE = "PRESS_BADGE", u.PRESS_SECTION = "PRESS_SECTION", u.PRESS_PRONOUNS = "PRESS_PRONOUNS", u.PRESS_PREMIUM_UPSELL = "PRESS_PREMIUM_UPSELL", u.PRESS_SET_STATUS = "PRESS_SET_STATUS", u.PRESS_SET_CUSTOM_STATUS = "PRESS_SET_CUSTOM_STATUS", u.PRESS_SWITCH_ACCOUNTS = "PRESS_SWITCH_ACCOUNTS", u.PRESS_SET_FRIEND_NICKNAME = "PRESS_SET_FRIEND_NICKNAME", u.JOIN_ACTIVITY = "JOIN_ACTIVITY", u.SET_NOTE = "SET_NOTE", u.SET_VOLUME = "SET_VOLUME", u.EDIT_PROFILE = "EDIT_PROFILE", u.EDIT_GUILD_PROFILE = "EDIT_GUILD_PROFILE", u.GIFT_PREMIUM = "GIFT_PREMIUM", u.VOICE_CALL = "VOICE_CALL", u.VIDEO_CALL = "VIDEO_CALL", u.MUTE = "MUTE", u.MUTE_SOUNDBOARD = "MUTE_SOUNDBOARD", u.DISABLE_VIDEO = "DISABLE_VIDEO", u.DEAFEN = "DEAFEN", u.DISCONNECT = "DISCONNECT", (d = f || (f = {})).VOICE = "VOICE", d.PLAYING = "PLAYING", d.STREAMING = "STREAMING", d.LISTENING = "LISTENING", d.WATCHING = "WATCHING", d.CUSTOM_STATUS = "CUSTOM_STATUS", d.COMPETING = "COMPETING", d.HANG_STATUS = "HANG_STATUS"
         },
         349649: function(t, e, i) {
             "use strict";
@@ -2190,4 +2190,4 @@
         }
     }
 ]);
-//# sourceMappingURL=47146.f1ec4cbc2b9e9e33ba15.js.map
+//# sourceMappingURL=47146.b567557ab407c311dd12.js.map
