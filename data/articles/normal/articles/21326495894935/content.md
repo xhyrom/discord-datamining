@@ -14,28 +14,28 @@
 <p>Claim through Discord <strong>Gift Inventory</strong> from <strong>March 19, 2024 (10:00am PST)</strong> to <strong>April 18, 2024 (11:59pm PST)</strong>, and redeem in your Monster Hunter Now account by <strong>April 25, 2024 (11:59pm PST)</strong>.</p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
-    <li><a href="#h_01HS98DA660Z26TSW283GVAQAA"><strong>What is Discord Nitro?</strong></a></li>
-    <li><a href="#h_01HS98DA66NFV699PVJM8K0VET"><strong>What is Monster Hunter Now? </strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/21326495894935#h_01HS98DA660Z26TSW283GVAQAA"><strong>What is Discord Nitro?</strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/21326495894935#h_01HS98DA66NFV699PVJM8K0VET"><strong>What is Monster Hunter Now? </strong></a></li>
     <li>
-        <a href="#h_01HS98DA66P00RHZYW5391GTDR"><strong>How do I claim the Reward Bundle in Discord? </strong></a>
+        <a href="https://support.discord.com/hc/en-us/articles/21326495894935#h_01HS98DA66P00RHZYW5391GTDR"><strong>How do I claim the Reward Bundle in Discord? </strong></a>
         <ul>
-            <li><a href="#h_01HS98DA663K1BNPV0Z1B6BYWF">Eligibility for Claiming this Promotion in Discord</a></li>
-            <li><a href="#h_01HS98DA66QMW2JT918D24V2M3">Step By Step Claim Instructions </a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/21326495894935#h_01HS98DA663K1BNPV0Z1B6BYWF">Eligibility for Claiming this Promotion in Discord</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/21326495894935#h_01HS98DA66QMW2JT918D24V2M3">Step By Step Claim Instructions </a></li>
         </ul>
     </li>
     <li>
-        <a href="#h_01HS98DA66XB4M5RA3YRQ7HBEE"><strong>How do I redeem the Reward Bundle on my Monster Hunter Now Account? </strong></a>
+        <a href="https://support.discord.com/hc/en-us/articles/21326495894935#h_01HS98DA66XB4M5RA3YRQ7HBEE"><strong>How do I redeem the Reward Bundle on my Monster Hunter Now Account? </strong></a>
         <ul>
-            <li><a href="#h_01HS98DA66RQ5T0NDTPDBFF24T">Eligibility for Redeeming the Reward Bundle</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/21326495894935#h_01HS98DA66RQ5T0NDTPDBFF24T">Eligibility for Redeeming the Reward Bundle</a></li>
         </ul>
     </li>
     <li>
-        <a href="#h_01HS98DA663Y1KFMSS3AKKBB4H"><strong>Frequently Asked Questions</strong></a>
+        <a href="https://support.discord.com/hc/en-us/articles/21326495894935#h_01HS98DA663Y1KFMSS3AKKBB4H"><strong>Frequently Asked Questions</strong></a>
         <ul>
-            <li><a href="#h_01HS98DA66KF4NZEDEF2D77A38">Promotion Details</a></li>
-            <li><a href="#h_01HS98DA665QRVXD451GT0R6KJ">Eligibility for the Promotion</a></li>
-            <li><a href="#h_01HS98DA66ADNZZFP7THS5V2D4">Claiming and Redemption Process</a></li>
-            <li><a href="#h_01HS98DA66SV9A4T4Q0091JD2N">Potential Errors and Other Issues</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/21326495894935#h_01HS98DA66KF4NZEDEF2D77A38">Promotion Details</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/21326495894935#h_01HS98DA665QRVXD451GT0R6KJ">Eligibility for the Promotion</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/21326495894935#h_01HS98DA66ADNZZFP7THS5V2D4">Claiming and Redemption Process</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/21326495894935#h_01HS98DA66SV9A4T4Q0091JD2N">Potential Errors and Other Issues</a></li>
         </ul>
     </li>
 </ul>
@@ -92,15 +92,15 @@
 <h1 id="h_01HS98DA663Y1KFMSS3AKKBB4H">Frequently Asked Questions</h1>
 <p>We know there's a lot of information to unpack on this promotion above, so we've also broken down this information in this FAQ section as well too.</p>
 <ul>
-    <li><a href="#h_01HS98DA66KF4NZEDEF2D77A38"><strong>Promotion Details</strong></a></li>
-    <li><a href="#h_01HS98DA665QRVXD451GT0R6KJ"><strong>Eligibility for the Promotion</strong></a></li>
-    <li><a href="#h_01HS98DA66ADNZZFP7THS5V2D4"><strong>Claiming and Redemption Process</strong></a></li>
-    <li><a href="#h_01HS98DA66SV9A4T4Q0091JD2N"><strong>Potential Errors and Other Issues</strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/21326495894935#h_01HS98DA66KF4NZEDEF2D77A38"><strong>Promotion Details</strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/21326495894935#h_01HS98DA665QRVXD451GT0R6KJ"><strong>Eligibility for the Promotion</strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/21326495894935#h_01HS98DA66ADNZZFP7THS5V2D4"><strong>Claiming and Redemption Process</strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/21326495894935#h_01HS98DA66SV9A4T4Q0091JD2N"><strong>Potential Errors and Other Issues</strong></a></li>
 </ul>
 <h2 id="h_01HS98DA66KF4NZEDEF2D77A38">Promotion Details</h2>
 <p><strong>Q: How long does this promotion for Nitro members run for?</strong></p>
 <p><strong>A: </strong>This promotion runs from <strong>March 19, 2024 (10:00am PST)</strong> to <strong>April 18, 2024 (11:59pm PST)</strong>.</p>
-<p>After <strong>April 18, 2024 (11:59pm PST)</strong>, Nitro members will no longer be able to claim a trial code.</p>
+<p>After <strong>April 18, 2024 (11:59pm PST)</strong>, Nitro members will no longer be able to claim the exclusive reward bundle code.</p>
 <p><strong>Q: How long does my Monster Hunter Now code last for in my Gift Inventory?</strong></p>
 <p><strong>A: </strong>Once a code is claimed in the <strong>Gift Inventory</strong> in Discord, all Monster Hunter Now codes must be redeemed by <strong>April 25, 2024 (11:59pm PST)</strong>.</p>
 <p>If a code has not been redeemed to your Monster Hunter Now account by <strong>April 25, 2024 (11:59pm PST)</strong>, it will expire and you will no longer be able to claim <strong>Monster Hunter Now exclusive reward bundle. </strong></p>
