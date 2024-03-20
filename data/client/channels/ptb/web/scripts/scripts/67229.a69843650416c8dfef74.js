@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["45109"], {
+    ["67229"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -87924,8 +87924,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710959483161",
-                                    build_number: "277054"
+                                    built_at: "1710961307765",
+                                    build_number: "277075"
                                 }
                             },
                             retries: 1
@@ -125366,7 +125366,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "ce4c2df4051cc0a0092c7b7aaf83efddb87ec93a"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "a35832fecf5c16e283b1f7cf07204e043b63ef22"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134864,7 +134864,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "277054"
+                                build_number: "277075"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -152181,9 +152181,9 @@
                 ReleaseChannelsSets: function() {
                     return r
                 }
-            }), n("222007"), (s = i || (i = {})).STABLE = "stable", s.PTB = "ptb", s.CANARY = "canary", s.BETA = "betaRelease", s.ALPHA = "alphaRelease", s.STAGING = "staging", s.DEVELOPMENT = "development";
+            }), n("222007"), (s = i || (i = {})).STABLE = "stable", s.PTB = "ptb", s.CANARY = "canary", s.BETA_RELEASE = "betaRelease", s.CANARY_RELEASE = "canaryRelease", s.GOOGLE_RELEASE = "googleRelease", s.STAGING = "staging", s.DEVELOPMENT = "development";
             let r = {
-                ALL: new Set(["alphaRelease", "betaRelease", "canary", "development", "ptb", "stable", "staging"])
+                ALL: new Set(["betaRelease", "canary", "canaryRelease", "development", "googleRelease", "ptb", "stable", "staging"])
             }
         },
         843117: function(e, t, n) {
@@ -152587,4 +152587,4 @@
         }
     }
 ]);
-//# sourceMappingURL=45109.c350ba9c250a104bfc4e.js.map
+//# sourceMappingURL=67229.a69843650416c8dfef74.js.map
