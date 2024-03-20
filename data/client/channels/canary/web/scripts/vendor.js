@@ -30279,10 +30279,11 @@
                     if (!__OVERLAY__) throw Error("OverlayActionCreators.setInstanceLocked: Must be called within Overlay context");
                     _.setLocked(e, (0, d.getPID)())
                 },
-                setEnabled(e) {
+                setEnabled(e, t) {
                     s.default.dispatch({
                         type: "OVERLAY_SET_ENABLED",
-                        enabled: e
+                        enabled: e,
+                        legacyEnabled: t
                     })
                 },
                 selectCall(e) {
@@ -69742,25 +69743,19 @@
                         overlayMethod: D.OverlayMethod.Disabled
                     }
                 }
-                let n = E.isOOPExperimentEnabled() && (0, N.supportsOutOfProcess)(),
-                    i = null == e.id ? null : K[e.id],
-                    s = n && null != i && i.supportsOutOfProcessOverlay,
-                    r = s ? D.OverlayMethod.OutOfProcess : D.OverlayMethod.Hook,
-                    a = g.OverlayStoredSettings.methodOverride;
-                if (null != a && a !== D.OverlayMethod.Disabled) {
-                    let t = D.OverlayMethod[r],
-                        n = D.OverlayMethod[a];
-                    P.info("getOverlayGameStatus: overlay method overriden ".concat(t, " -> ").concat(n, " (").concat(e.name, ")")), r = a
-                }
-                let o = H.enableOverlay[$(e)];
-                return null != o ? {
+                let n = E.isOOPExperimentEnabled() && (0, N.supportsOutOfProcess)() && !g.OverlayStoredSettings.legacyEnabled,
+                    i = n ? D.OverlayMethod.OutOfProcess : D.OverlayMethod.Hook,
+                    s = H.enableOverlay[$(e)];
+                if (null != s) return {
                     source: R.OverlayGameStatusSource.USER_OVERRIDE,
-                    enabled: o,
-                    overlayMethod: r
-                } : null != i ? {
+                    enabled: s,
+                    overlayMethod: i
+                };
+                let r = null == e.id ? null : K[e.id];
+                return null != r ? {
                     source: R.OverlayGameStatusSource.DATABASE,
-                    enabled: i.enabled || s,
-                    overlayMethod: r
+                    enabled: r.enabled || n,
+                    overlayMethod: i
                 } : {
                     source: R.OverlayGameStatusSource.DEFAULT,
                     enabled: !1,
@@ -87979,8 +87974,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710975216612",
-                                    build_number: "277249"
+                                    built_at: "1710976281962",
+                                    build_number: "277261"
                                 }
                             },
                             retries: 1
@@ -91003,17 +90998,17 @@
                 static get enabled() {
                     return o.load().enabled
                 }
-                static get methodOverride() {
-                    return o.load().methodOverride
+                static get legacyEnabled() {
+                    return o.load().legacyEnabled
                 }
                 static update(e) {
                     let t = o.load();
-                    "boolean" == typeof e.enabled && (t.enabled = e.enabled), "methodOverride" in e && (t.methodOverride = e.methodOverride), t.save()
+                    "boolean" == typeof e.enabled && (t.enabled = e.enabled), "boolean" == typeof e.legacyEnabled && (t.legacyEnabled = e.legacyEnabled), t.save()
                 }
                 save() {
                     let e = {
                         enabled: this.enabled,
-                        methodOverride: this.methodOverride
+                        legacyEnabled: this.legacyEnabled
                     };
                     r.default.set("OverlayStore3", e)
                 }
@@ -91021,29 +91016,28 @@
                     return null == o._loaded && (o._loaded = o.loadInternal()), o._loaded
                 }
                 static loadInternal() {
-                    let e = void 0,
-                        t = r.default.get("OverlayStore");
+                    let e = r.default.get("OverlayStore");
+                    if (null != e) {
+                        let t = "boolean" == typeof e.enabled ? e.enabled : a.OVERLAY_SUPPORTED,
+                            n = new o(t, !1);
+                        return n.save(), r.default.remove("OverlayStore"), n
+                    }
+                    let t = r.default.get("overlayEnabled");
                     if (null != t) {
-                        let n = "boolean" == typeof t.enabled ? t.enabled : a.OVERLAY_SUPPORTED,
-                            i = new o(n, e);
-                        return i.save(), r.default.remove("OverlayStore"), i
+                        let e = "boolean" == typeof t ? t : a.OVERLAY_SUPPORTED,
+                            n = new o(e, !1);
+                        return n.save(), r.default.remove("overlayEnabled"), n
                     }
-                    let n = r.default.get("overlayEnabled");
+                    let n = r.default.get("OverlayStore3");
                     if (null != n) {
-                        let t = "boolean" == typeof n ? n : a.OVERLAY_SUPPORTED,
-                            i = new o(t, e);
-                        return i.save(), r.default.remove("overlayEnabled"), i
+                        var i, s;
+                        return new o(null !== (i = n.enabled) && void 0 !== i ? i : a.OVERLAY_SUPPORTED, null !== (s = n.legacyEnabled) && void 0 !== s && s)
                     }
-                    let i = r.default.get("OverlayStore3");
-                    if (null != i) {
-                        var s, l;
-                        return new o(null !== (s = i.enabled) && void 0 !== s ? s : a.OVERLAY_SUPPORTED, null !== (l = i.methodOverride) && void 0 !== l ? l : e)
-                    }
-                    let u = new o(a.OVERLAY_SUPPORTED, e);
-                    return u.save(), u
+                    let l = new o(a.OVERLAY_SUPPORTED, !1);
+                    return l.save(), l
                 }
                 constructor(e, t) {
-                    this.enabled = e, this.methodOverride = t
+                    this.enabled = e, this.legacyEnabled = t
                 }
             }
             o._loaded = null
@@ -124941,7 +124935,7 @@
                 w = new Map,
                 k = !1,
                 V = new Set,
-                G = new Set,
+                G = !1,
                 F = !1,
                 x = !1,
                 B = null,
@@ -125010,7 +125004,7 @@
                         let t = await es();
                         X = "reconcile.createHostProcess", e.createHostProcess(t, eE, ef)
                     } else X = "reconcile.destroyHostProcess", e.destroyHostProcess()
-                } else if (F) {
+                } else if (G) {
                     let t = await es();
                     e.createHostProcess(t, eE, ef)
                 } else e.destroyHostProcess()
@@ -125059,7 +125053,7 @@
                         q.error("Failed to deconstruct tracked game ".concat(t), e)
                     }
                 }
-                if (null == e || !F) {
+                if (null == e || !G) {
                     q.verbose("updateIntendedOverlayPIDs: Removing all.", U, e);
                     let t = Object.keys(U);
                     for (let e of t) await n(Number(e));
@@ -125163,16 +125157,17 @@
                     removed: []
                 })
             }
-            let ec = Z("setOverlayEnabled", async e => {
-                if (!b.OVERLAY_SUPPORTED || F === e) return;
-                F = e, v.OverlayStoredSettings.update({
-                    enabled: e
+            let ec = Z("setOverlayEnabled", async (e, t) => {
+                if (!b.OVERLAY_SUPPORTED || G === e && F === t) return;
+                G = e, F = t, v.OverlayStoredSettings.update({
+                    enabled: e,
+                    legacyEnabled: t
                 }), eN.emitChange();
-                let t = await er(),
+                let n = await er(),
                     {
-                        OutOfProcess: n
-                    } = t;
-                (0, L.setOutOfProcessSupport)(null != n), F ? (await $(t), ed()) : (await en(void 0), await $(t))
+                        OutOfProcess: i
+                    } = n;
+                (0, L.setOutOfProcessSupport)(null != i), await en(void 0), await $(n), G && ed()
             });
 
             function ef(e) {
@@ -125318,7 +125313,7 @@
             }
             class ey extends l.default.Store {
                 initialize() {
-                    !(!b.OVERLAY_SUPPORTED || __OVERLAY__) && (G.add(b.OverlayMethod.Hook), this.waitFor(S.default, A.default), m.setReceiveCommandHandler(eC, eA), A.default.addChangeListener(eh), ec(v.OverlayStoredSettings.enabled), u.default.addInterceptor(eT))
+                    !(!b.OVERLAY_SUPPORTED || __OVERLAY__) && (this.waitFor(S.default, A.default), m.setReceiveCommandHandler(eC, eA), A.default.addChangeListener(eh), ec(v.OverlayStoredSettings.enabled, v.OverlayStoredSettings.legacyEnabled), u.default.addInterceptor(eT))
                 }
                 isInputLocked(e) {
                     return !K.has(e)
@@ -125326,10 +125321,10 @@
                 isSupported() {
                     return b.OVERLAY_SUPPORTED
                 }
-                isMethodSupported(e) {
-                    return b.OVERLAY_SUPPORTED && G.has(e)
-                }
                 get enabled() {
+                    return G
+                }
+                get legacyEnabled() {
                     return F
                 }
                 getFocusedPID() {
@@ -125382,9 +125377,10 @@
                 },
                 OVERLAY_SET_ENABLED: function(e) {
                     let {
-                        enabled: t
+                        enabled: t,
+                        legacyEnabled: n
                     } = e;
-                    return ec(t), !1
+                    return ec(t, n), !1
                 },
                 OVERLAY_FOCUSED: function(e) {
                     let {
@@ -125422,7 +125418,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "71d465b87306c4ea9345fd065819b643b3752055"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "d1d170d24989c62a2c14a0831f398174a7cdbabb"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134920,7 +134916,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "277249"
+                                build_number: "277261"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -152643,4 +152639,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.469f9418dfbe58e982dc.js.map
+//# sourceMappingURL=29062.17ead3da635c7faee1b9.js.map
