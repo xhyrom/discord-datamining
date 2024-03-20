@@ -47497,8 +47497,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -95090,6 +95090,29 @@ html .tabBadge__002b3 {
     color: var(--header-primary)
 }
 
+.container_cd4fee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+
+.header__93d65 {
+    margin-bottom: var(--spacing-8)
+}
+
+.buttonContainer__142d8 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: var(--spacing-24)0 0
+}
+
+.button__88b63 {
+    margin-bottom: var(--spacing-8)
+}
+
 .container_aacd33 {
     min-width: 440px;
     margin-left: -16px
@@ -130396,4 +130419,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.e784e3b97072d58a3aaa.css.map*/
+/*# sourceMappingURL=app.5b0e4d46b8363b9e1918.css.map*/
