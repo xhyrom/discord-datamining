@@ -4268,10 +4268,10 @@
         75979: function(e, t, a) {
             "use strict";
             e.exports = {
+                background: "background__4b7c4",
+                content: "content_f95ddf",
                 icon: "icon__0fd04",
-                subtitle: "subtitle_dd3e5f",
-                textWrapper: "textWrapper__1c560",
-                title: "title__1f83d",
+                image: "image__44e2d",
                 wrapper: "wrapper__3d173"
             }
         },
@@ -4304,26 +4304,12 @@
         370621: function(e, t, a) {
             "use strict";
             e.exports = {
-                button: "button_bb1081",
                 cardHeaderImg: "cardHeaderImg_f6c932",
                 cardPrice: "cardPrice__92dbb",
-                cta: "cta__19506",
                 description: "description_f818e8",
                 details: "details_f03d10",
                 footer: "footer__13718",
-                productCard: "productCard_a1742a"
-            }
-        },
-        562235: function(e, t, a) {
-            "use strict";
-            e.exports = {
-                background: "background_c10072",
-                blur: "blur_a2ff57",
-                container: "container_f1e37c",
-                content: "content_cc40de",
-                details: "details_ceefbd",
-                header: "header_cd79e3",
-                image: "image_ecb6cf"
+                wrapper: "wrapper__478f3"
             }
         },
         484687: function(e, t, a) {
@@ -4346,10 +4332,16 @@
                 purchaseBtn: "purchaseBtn_e85930"
             }
         },
-        627327: function(e, t, a) {
+        939021: function(e, t, a) {
             "use strict";
             e.exports = {
-                container: "container_e318fa"
+                container: "container_e8e8b1"
+            }
+        },
+        35589: function(e, t, a) {
+            "use strict";
+            e.exports = {
+                hoverCard: "hoverCard__5afad"
             }
         },
         76050: function(e, t, a) {
