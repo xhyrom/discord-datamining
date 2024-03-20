@@ -34115,9 +34115,12 @@
                     let {
                         placeholder: t,
                         onEnter: n,
-                        setEditorRef: a
-                    } = e, [s, r] = l.useState(""), [o, u] = l.useState((0, c.toRichValue)(""));
-                    return (0, i.jsx)(f.default, {
+                        setEditorRef: a,
+                        showEmojiButton: s = !1
+                    } = e, [r, o] = l.useState(""), [u, p] = l.useState((0, c.toRichValue)("")), m = d.ChatInputTypes.ATOMIC_REACTOR_REPLY_INPUT;
+                    return s && (m.emojis = {
+                        button: !0
+                    }), (0, i.jsx)(f.default, {
                         placeholder: t,
                         className: g.replyInput,
                         showRemainingCharsAfterCount: -1,
@@ -34125,11 +34128,11 @@
                         maxCharacterCount: x.MAX_CHAR_COUNT,
                         channel: S,
                         onChange: (e, t, n) => {
-                            r(t), u(n)
+                            o(t), p(n)
                         },
-                        type: d.ChatInputTypes.ATOMIC_REACTOR_REPLY_INPUT,
-                        textValue: s,
-                        richValue: o,
+                        type: m,
+                        textValue: r,
+                        richValue: u,
                         onSubmit: e => {
                             let {
                                 value: t
@@ -81692,4 +81695,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59196.3265168ff15f3c1164ad.js.map
+//# sourceMappingURL=59196.04dd646aec85f9ad61eb.js.map
