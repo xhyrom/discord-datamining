@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["59196"], {
+    ["60053"], {
         777483: function(e, t, n) {
             var i = {
                 "./icon-file-acrobat.svg": "668973",
@@ -51833,10 +51833,13 @@
                     children: function() {
                         let e = o(r).take(a).map(e => {
                                 let t = f.default.getName(e);
-                                return y ? (0, i.jsx)(u.Avatar, {
-                                    src: e.getAvatarURL(m, 24),
-                                    "aria-label": t,
-                                    size: x
+                                return y ? (0, i.jsx)("div", {
+                                    className: p.avatar,
+                                    children: (0, i.jsx)(u.Avatar, {
+                                        src: e.getAvatarURL(m, 24),
+                                        "aria-label": t,
+                                        size: x
+                                    })
                                 }) : (0, i.jsx)(u.TooltipContainer, {
                                     text: t,
                                     className: p.avatar,
@@ -51899,11 +51902,14 @@
                     children: function() {
                         let e = r(l).take(n).map(e => {
                                 let t = e.name;
-                                return m ? (0, i.jsx)(u.default, {
-                                    guild: e,
-                                    onClick: c,
-                                    size: f,
-                                    showTooltip: !1
+                                return m ? (0, i.jsx)("div", {
+                                    className: d.avatar,
+                                    children: (0, i.jsx)(u.default, {
+                                        guild: e,
+                                        onClick: c,
+                                        size: f,
+                                        showTooltip: !1
+                                    })
                                 }) : (0, i.jsx)(o.TooltipContainer, {
                                     text: t,
                                     className: d.avatar,
@@ -81694,4 +81700,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59196.a10b9b9427dd3a81e847.js.map
+//# sourceMappingURL=60053.c3871a30208dcd269bb8.js.map
