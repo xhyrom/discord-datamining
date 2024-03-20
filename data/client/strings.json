@@ -16930,6 +16930,7 @@
   "STOREFRONT_PURCHASE_FOR": "\"Buy for {price}\"",
   "STOREFRONT_ONE_TIME_PURCHASE": "\"One-Time Purchase\"",
   "STOREFRONT_PREMIUM_ITEMS": "\"Premium Items\"",
+  "STOREFRONT_DURABLE_AVAILABILITY": "\"1 / 1 Available\"",
   "QUIET_MODE_DISABLED": "\"Focus Mode Disabled\"",
   "QUIET_MODE_ENABLED": "\"Focus Mode Enabled\"",
   "QUIET_MODE_DND": "\"Focus Mode (DND) Enabled\"",
