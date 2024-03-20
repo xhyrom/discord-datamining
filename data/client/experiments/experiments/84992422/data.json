@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-03_user_recent_games",
-    "label": "Recent Games",
+    "id": "2024-03_user_recent_games_api",
+    "label": "Recent Games API",
     "description": [
       "Not Eligible",
       "Treatment 0: Control",
       "Treatment 1: Enabled"
     ],
-    "hash": 2769393059,
+    "hash": 84992422,
     "buckets": [
       -1,
       0,
