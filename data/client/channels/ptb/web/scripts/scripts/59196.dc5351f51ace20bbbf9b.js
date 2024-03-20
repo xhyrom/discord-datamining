@@ -66946,7 +66946,7 @@
                 r = n("446674"),
                 o = n("77078"),
                 u = n("812204"),
-                d = n("820081"),
+                d = n("755815"),
                 c = n("373469"),
                 f = n("271938"),
                 p = n("42203"),
@@ -67031,7 +67031,7 @@
                         location: u.default.PROFILE_POPOUT,
                         disable: ex
                     }),
-                    ey = (0, d.useIsUserRecentGamesEnabled)(K.id);
+                    ey = (0, d.useIsUserRecentGamesFetchEnabled)(K.id);
                 if (K.isSystemUser()) return null;
                 if (K.isNonUserBot()) return (0, i.jsx)(D.default, {
                     user: K,
@@ -68748,18 +68748,18 @@
                 }
             }
         },
-        75326: function(e, t, n) {
+        916355: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                useUserIsRecentGamesExperimentEnabled: function() {
+                useUserIsRecentGamesExperimentApiEnabled: function() {
                     return a
                 }
             });
             var i = n("862205");
             let l = (0, i.createExperiment)({
-                    id: "2024-03_user_recent_games",
+                    id: "2024-03_user_recent_games_api",
                     kind: "user",
-                    label: "Recent Games",
+                    label: "Recent Games API",
                     defaultConfig: {
                         enabled: !1
                     },
@@ -68779,14 +68779,11 @@
                 }),
                 a = e => {
                     let {
-                        location: t,
-                        autoTrackExposure: n
-                    } = e, i = l.useExperiment({
                         location: t
-                    }, {
-                        autoTrackExposure: n
+                    } = e, n = l.useExperiment({
+                        location: t
                     });
-                    return i.enabled
+                    return n.enabled
                 }
         },
         757457: function(e, t, n) {
@@ -68923,25 +68920,24 @@
                 }
             }
         },
-        820081: function(e, t, n) {
+        755815: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                useIsUserRecentGamesEnabled: function() {
+                useIsUserRecentGamesFetchEnabled: function() {
                     return s
                 }
             });
             var i = n("446674"),
                 l = n("697218"),
-                a = n("75326");
+                a = n("916355");
 
             function s(e) {
                 let t = (0, i.useStateFromStores)([l.default], () => {
                         let t = l.default.getUser(e);
                         return null != t && !t.bot
                     }),
-                    n = (0, a.useUserIsRecentGamesExperimentEnabled)({
-                        location: "28tk0bf_1",
-                        autoTrackExposure: !0
+                    n = (0, a.useUserIsRecentGamesExperimentApiEnabled)({
+                        location: "28tk0bf_1"
                     });
                 return n && t
             }
@@ -68957,10 +68953,10 @@
                 l = n("446674"),
                 a = n("890537"),
                 s = n("757457"),
-                r = n("820081");
+                r = n("755815");
 
             function o(e) {
-                let t = (0, r.useIsUserRecentGamesEnabled)(e),
+                let t = (0, r.useIsUserRecentGamesFetchEnabled)(e),
                     n = i.useRef(new AbortController),
                     {
                         recentGames: o,
@@ -81695,4 +81691,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59196.04dd646aec85f9ad61eb.js.map
+//# sourceMappingURL=59196.dc5351f51ace20bbbf9b.js.map
