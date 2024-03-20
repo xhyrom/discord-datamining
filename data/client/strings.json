@@ -3490,6 +3490,7 @@
   "HYPESQUAD_QUESTION_14_RESPONSE_D": "\"Pretend you didn't hear them.\"",
   "OVERLAY_EXPLANATION": "\"\\nEnabling the overlay will probably trigger a false positive in your anti-virus.\\nAlso, the overlay may not work for everyone. If you have trouble or questions check out\\n[this fancy help article!]({supportURL})\\n\"",
   "ENABLE_INGAME_OVERLAY": "\"Enable in-game overlay.\"",
+  "ENABLE_LEGACY_OVERLAY": "\"Enable legacy overlay.\"",
   "OVERLAY_DISABLED_OLD_CLIENT": "\"Overlay is disabled because your client is out of date.\"",
   "KEYBIND_TOGGLE_OVERLAY_INPUT_LOCK": "\"Toggle Overlay Lock\"",
   "KEYBIND_ACTIVATE_OVERLAY_CHAT": "\"Activate Overlay Chat\"",
