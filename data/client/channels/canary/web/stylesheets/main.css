@@ -83198,7 +83198,9 @@ html .tabBadge__002b3 {
 .modal_af101e {
     border-radius: 12px;
     overflow: hidden;
-    height: calc(90vh - 60px)
+    height: calc(90vh - 60px);
+    width: calc(100vw - 60px);
+    max-width: 1124px
 }
 
 .modalHeader__616c1 {
@@ -130291,4 +130293,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.be80c52dcb0dcbeb06ea.css.map*/
+/*# sourceMappingURL=app.13ef8534865f7a951696.css.map*/
