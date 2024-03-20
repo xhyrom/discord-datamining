@@ -3678,7 +3678,6 @@
                 backButton: "backButton_aeaa52",
                 banner: "banner__36618",
                 footer: "footer_c689c6",
-                productCard: "productCard_eabca8",
                 productList: "productList_bce430",
                 subDetailsModal: "subDetailsModal__7eb23",
                 tabs: "tabs__88df8",
