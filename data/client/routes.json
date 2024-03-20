@@ -4667,7 +4667,7 @@
     ]
   },
   "POLL_EXPIRE": {
-    "url": "/channels/:param/messages/:param/expire",
+    "url": "/channels/:param/polls/:param/expire",
     "allowed_methods": [
       "OPTIONS",
       "POST"
