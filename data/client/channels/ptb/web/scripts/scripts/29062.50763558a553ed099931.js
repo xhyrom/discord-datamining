@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["67229"], {
+    ["29062"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -88019,8 +88019,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1710983894211",
-                                    build_number: "277314"
+                                    built_at: "1711005902668",
+                                    build_number: "277341"
                                 }
                             },
                             retries: 1
@@ -121937,8 +121937,11 @@
                     let {
                         user: t,
                         sessionId: n
-                    } = e;
-                    h = {}, g = {}, p = {}, m = {}, i = t.id, s = n
+                    } = e, r = null != i && i !== t.id;
+                    return r && (h = {}, g = {}, p = {}, m = {}), i = t.id, s = n, r
+                },
+                CONNECTION_OPEN_SUPPLEMENTAL: function() {
+                    h = {}, g = {}, p = {}, m = {}
                 },
                 OVERLAY_INITIALIZE: function(e) {
                     let {
@@ -125463,7 +125466,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "6c66aab03fd5d4a414b1676893fd93f511b0b9e8"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "32c8c263daee98052fa71020cfa0f01f33fb73e8"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134961,7 +134964,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "277314"
+                                build_number: "277341"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (c.user_id = f.id, c.user_name = f.tag, null != f.email && (c.email = f.email));
@@ -152684,4 +152687,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67229.2a2c9979b39914c334ef.js.map
+//# sourceMappingURL=29062.50763558a553ed099931.js.map
