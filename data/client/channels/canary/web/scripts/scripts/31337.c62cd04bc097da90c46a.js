@@ -2519,11 +2519,11 @@
             function E(e) {
                 let t;
                 if (e instanceof u.ChannelRecordBase && e.isPrivate()) return {
-                    computedPermissions: l.default.deserialize(0),
+                    computedPermissions: l.deserialize(0),
                     hasBaseAccessPermissions: !0
                 };
                 let n = f.default.computePermissions(e);
-                return t = !!l.default.has(n, _.Permissions.ADMINISTRATOR) || (e instanceof u.ChannelRecordBase ? l.default.has(n, _.Permissions.VIEW_CHANNEL) && l.default.has(n, _.Permissions.USE_APPLICATION_COMMANDS) : l.default.has(n, _.Permissions.VIEW_CHANNEL)), {
+                return t = !!l.has(n, _.Permissions.ADMINISTRATOR) || (e instanceof u.ChannelRecordBase ? l.has(n, _.Permissions.VIEW_CHANNEL) && l.has(n, _.Permissions.USE_APPLICATION_COMMANDS) : l.has(n, _.Permissions.VIEW_CHANNEL)), {
                     computedPermissions: n,
                     hasBaseAccessPermissions: t
                 }
@@ -2592,7 +2592,7 @@
                 }
                 if (e.applicationId === _.BuiltInSectionId.BUILT_IN) return 0;
                 let h = (0, m.getContextGuildId)(a);
-                if (null == h || s.default.has(A, I.Permissions.ADMINISTRATOR)) return 0;
+                if (null == h || s.has(A, I.Permissions.ADMINISTRATOR)) return 0;
                 if (!O) return 5;
                 if (a instanceof d.ChannelRecordBase) {
                     o(void 0 !== i, "missing applicationAllowedForChannel");
@@ -2612,7 +2612,7 @@
                     return !1 === e
                 }(y) ? 7 : function(e) {
                     return !1 === e
-                }(n) || null != e.defaultMemberPermissions && !(!s.default.equals(e.defaultMemberPermissions, f.DISABLED_BY_DEFAULT_PERMISSION_FLAG) && s.default.has(A, e.defaultMemberPermissions)) ? 7 : 0
+                }(n) || null != e.defaultMemberPermissions && !(!s.equals(e.defaultMemberPermissions, f.DISABLED_BY_DEFAULT_PERMISSION_FLAG) && s.has(A, e.defaultMemberPermissions)) ? 7 : 0
             }
 
             function A(e) {
@@ -3812,7 +3812,7 @@
             function u(e, t) {
                 let [n, i, u] = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [o.default, l.default, a.default], d = i.getGuild(e), c = n.getUser(t);
                 if (null == d || null == c || c.isNonUserBot()) return !1;
-                let p = d.isOwner(c) || s.default.can({
+                let p = d.isOwner(c) || s.can({
                     permission: r.Permissions.ADMINISTRATOR,
                     user: c,
                     context: d
@@ -4233,4 +4233,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31337.3475034a12db03a1ca68.js.map
+//# sourceMappingURL=31337.c62cd04bc097da90c46a.js.map

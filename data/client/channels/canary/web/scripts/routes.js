@@ -10655,62 +10655,62 @@
             });
             (x = L || (L = {}))[x.VIEW_CHANNEL = 1024] = "VIEW_CHANNEL", x[x.READ_MESSAGE_HISTORY = 65536] = "READ_MESSAGE_HISTORY", x[x.CONNECT = 1048576] = "CONNECT";
             let Permissions = Object.freeze({
-                    CREATE_INSTANT_INVITE: _t.default.getFlag(0),
-                    KICK_MEMBERS: _t.default.getFlag(1),
-                    BAN_MEMBERS: _t.default.getFlag(2),
-                    ADMINISTRATOR: _t.default.getFlag(3),
-                    MANAGE_CHANNELS: _t.default.getFlag(4),
-                    MANAGE_GUILD: _t.default.getFlag(5),
-                    CHANGE_NICKNAME: _t.default.getFlag(26),
-                    MANAGE_NICKNAMES: _t.default.getFlag(27),
-                    MANAGE_ROLES: _t.default.getFlag(28),
-                    MANAGE_WEBHOOKS: _t.default.getFlag(29),
-                    MANAGE_GUILD_EXPRESSIONS: _t.default.getFlag(30),
-                    CREATE_GUILD_EXPRESSIONS: _t.default.getFlag(43),
-                    VIEW_AUDIT_LOG: _t.default.getFlag(7),
-                    VIEW_CHANNEL: _t.default.getFlag(10),
-                    VIEW_GUILD_ANALYTICS: _t.default.getFlag(19),
-                    VIEW_CREATOR_MONETIZATION_ANALYTICS: _t.default.getFlag(41),
-                    MODERATE_MEMBERS: _t.default.getFlag(40),
-                    USE_EMBEDDED_ACTIVITIES: _t.default.getFlag(39),
-                    SEND_MESSAGES: _t.default.getFlag(11),
-                    SEND_TTS_MESSAGES: _t.default.getFlag(12),
-                    MANAGE_MESSAGES: _t.default.getFlag(13),
-                    EMBED_LINKS: _t.default.getFlag(14),
-                    ATTACH_FILES: _t.default.getFlag(15),
-                    READ_MESSAGE_HISTORY: _t.default.getFlag(16),
-                    MENTION_EVERYONE: _t.default.getFlag(17),
-                    USE_EXTERNAL_EMOJIS: _t.default.getFlag(18),
-                    ADD_REACTIONS: _t.default.getFlag(6),
-                    USE_APPLICATION_COMMANDS: _t.default.getFlag(31),
-                    MANAGE_THREADS: _t.default.getFlag(34),
-                    CREATE_PUBLIC_THREADS: _t.default.getFlag(35),
-                    CREATE_PRIVATE_THREADS: _t.default.getFlag(36),
-                    USE_EXTERNAL_STICKERS: _t.default.getFlag(37),
-                    SEND_MESSAGES_IN_THREADS: _t.default.getFlag(38),
-                    SEND_VOICE_MESSAGES: _t.default.getFlag(46),
-                    USE_CLYDE_AI: _t.default.getFlag(47),
-                    CONNECT: _t.default.getFlag(20),
-                    SPEAK: _t.default.getFlag(21),
-                    MUTE_MEMBERS: _t.default.getFlag(22),
-                    DEAFEN_MEMBERS: _t.default.getFlag(23),
-                    MOVE_MEMBERS: _t.default.getFlag(24),
-                    USE_VAD: _t.default.getFlag(25),
-                    PRIORITY_SPEAKER: _t.default.getFlag(8),
-                    STREAM: _t.default.getFlag(9),
-                    USE_SOUNDBOARD: _t.default.getFlag(42),
-                    USE_EXTERNAL_SOUNDS: _t.default.getFlag(45),
-                    SET_VOICE_CHANNEL_STATUS: _t.default.getFlag(48),
-                    REQUEST_TO_SPEAK: _t.default.getFlag(32),
-                    MANAGE_EVENTS: _t.default.getFlag(33),
-                    CREATE_EVENTS: _t.default.getFlag(44)
+                    CREATE_INSTANT_INVITE: _t.getFlag(0),
+                    KICK_MEMBERS: _t.getFlag(1),
+                    BAN_MEMBERS: _t.getFlag(2),
+                    ADMINISTRATOR: _t.getFlag(3),
+                    MANAGE_CHANNELS: _t.getFlag(4),
+                    MANAGE_GUILD: _t.getFlag(5),
+                    CHANGE_NICKNAME: _t.getFlag(26),
+                    MANAGE_NICKNAMES: _t.getFlag(27),
+                    MANAGE_ROLES: _t.getFlag(28),
+                    MANAGE_WEBHOOKS: _t.getFlag(29),
+                    MANAGE_GUILD_EXPRESSIONS: _t.getFlag(30),
+                    CREATE_GUILD_EXPRESSIONS: _t.getFlag(43),
+                    VIEW_AUDIT_LOG: _t.getFlag(7),
+                    VIEW_CHANNEL: _t.getFlag(10),
+                    VIEW_GUILD_ANALYTICS: _t.getFlag(19),
+                    VIEW_CREATOR_MONETIZATION_ANALYTICS: _t.getFlag(41),
+                    MODERATE_MEMBERS: _t.getFlag(40),
+                    USE_EMBEDDED_ACTIVITIES: _t.getFlag(39),
+                    SEND_MESSAGES: _t.getFlag(11),
+                    SEND_TTS_MESSAGES: _t.getFlag(12),
+                    MANAGE_MESSAGES: _t.getFlag(13),
+                    EMBED_LINKS: _t.getFlag(14),
+                    ATTACH_FILES: _t.getFlag(15),
+                    READ_MESSAGE_HISTORY: _t.getFlag(16),
+                    MENTION_EVERYONE: _t.getFlag(17),
+                    USE_EXTERNAL_EMOJIS: _t.getFlag(18),
+                    ADD_REACTIONS: _t.getFlag(6),
+                    USE_APPLICATION_COMMANDS: _t.getFlag(31),
+                    MANAGE_THREADS: _t.getFlag(34),
+                    CREATE_PUBLIC_THREADS: _t.getFlag(35),
+                    CREATE_PRIVATE_THREADS: _t.getFlag(36),
+                    USE_EXTERNAL_STICKERS: _t.getFlag(37),
+                    SEND_MESSAGES_IN_THREADS: _t.getFlag(38),
+                    SEND_VOICE_MESSAGES: _t.getFlag(46),
+                    USE_CLYDE_AI: _t.getFlag(47),
+                    CONNECT: _t.getFlag(20),
+                    SPEAK: _t.getFlag(21),
+                    MUTE_MEMBERS: _t.getFlag(22),
+                    DEAFEN_MEMBERS: _t.getFlag(23),
+                    MOVE_MEMBERS: _t.getFlag(24),
+                    USE_VAD: _t.getFlag(25),
+                    PRIORITY_SPEAKER: _t.getFlag(8),
+                    STREAM: _t.getFlag(9),
+                    USE_SOUNDBOARD: _t.getFlag(42),
+                    USE_EXTERNAL_SOUNDS: _t.getFlag(45),
+                    SET_VOICE_CHANNEL_STATUS: _t.getFlag(48),
+                    REQUEST_TO_SPEAK: _t.getFlag(32),
+                    MANAGE_EVENTS: _t.getFlag(33),
+                    CREATE_EVENTS: _t.getFlag(44)
                 }),
                 _B = function() {
                     for (var _ = arguments.length, E = Array(_), I = 0; I < _; I++) E[I] = arguments[I]
                 },
                 _g = () => null,
                 _H = [Permissions.KICK_MEMBERS, Permissions.BAN_MEMBERS, Permissions.ADMINISTRATOR, Permissions.MANAGE_CHANNELS, Permissions.MANAGE_GUILD, Permissions.MANAGE_ROLES, Permissions.MANAGE_MESSAGES, Permissions.MANAGE_THREADS, Permissions.MODERATE_MEMBERS],
-                _f = _t.default.combine(..._H),
+                _f = _t.combine(..._H),
                 _h = 1,
                 _y = 6463,
                 _Y = 10,
@@ -13507,8 +13507,38 @@
                 isBigFlag: function() {
                     return T
                 },
-                default: function() {
+                deserialize: function() {
+                    return N
+                },
+                filter: function() {
+                    return c
+                },
+                invert: function() {
+                    return L
+                },
+                equals: function() {
+                    return D
+                },
+                combine: function() {
+                    return S
+                },
+                has: function() {
+                    return C
+                },
+                hasAny: function() {
                     return l
+                },
+                add: function() {
+                    return s
+                },
+                remove: function() {
+                    return P
+                },
+                getFlag: function() {
+                    return M
+                },
+                asUintN: function() {
+                    return U
                 }
             }), I("274635");
             var e = I("552442"),
@@ -13660,43 +13690,40 @@
                     return _ === E
                 } : function(_, E) {
                     return null == _ || null == E ? _ == E : _.equals(E)
-                },
-                S = A ? function(_) {
+                };
+
+            function S() {
+                for (var _ = arguments.length, E = Array(_), I = 0; I < _; I++) E[I] = arguments[I];
+                let e = E[0];
+                for (let _ = 1; _ < E.length; _++) e = O(e, E[_]);
+                return e
+            }
+
+            function C(_, E) {
+                return D(c(_, E), E)
+            }
+
+            function l(_, E) {
+                return !D(c(_, E), i)
+            }
+
+            function s(_, E) {
+                return E === i ? _ : O(_, E)
+            }
+
+            function P(_, E) {
+                return E === i ? _ : n(_, c(_, E))
+            }
+            let M = A ? function(_) {
                     return BigInt(1) << BigInt(_)
                 } : function(_) {
                     return t.fromBit(_)
                 },
-                C = A ? function(_, E) {
+                U = A ? function(_, E) {
                     return Number(BigInt.asUintN(_, E))
                 } : function(_, E) {
                     return t.asUintN(_, E)
-                };
-            var l = {
-                asUintN: C,
-                combine: function() {
-                    for (var _ = arguments.length, E = Array(_), I = 0; I < _; I++) E[I] = arguments[I];
-                    let e = E[0];
-                    for (let _ = 1; _ < E.length; _++) e = O(e, E[_]);
-                    return e
-                },
-                add: function(_, E) {
-                    return E === i ? _ : O(_, E)
-                },
-                remove: function(_, E) {
-                    return E === i ? _ : n(_, c(_, E))
-                },
-                filter: c,
-                invert: L,
-                has: function(_, E) {
-                    return D(c(_, E), E)
-                },
-                hasAny: function(_, E) {
-                    return !D(c(_, E), i)
-                },
-                equals: D,
-                deserialize: N,
-                getFlag: S
-            }
+                }
         },
         509043: function(_, E, I) {
             "use strict";
@@ -13838,4 +13865,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.0ed3cfc979e90c71be73.js.map
+//# sourceMappingURL=7273.114e1027d7c2a7bf361e.js.map

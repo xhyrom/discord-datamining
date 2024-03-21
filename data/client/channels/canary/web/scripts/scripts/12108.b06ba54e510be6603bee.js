@@ -257,7 +257,7 @@
 
             function c(e) {
                 let t = (0, i.useStateFromStores)([u.default], () => u.default.getGuild(e)),
-                    n = (0, i.useStateFromStores)([a.default], () => null != t && l.default.hasAny(a.default.computePermissions(t), d.IncidentAlertModeratorPermissions)),
+                    n = (0, i.useStateFromStores)([a.default], () => null != t && l.hasAny(a.default.computePermissions(t), d.IncidentAlertModeratorPermissions)),
                     r = o.useExperiment({
                         guildId: e,
                         location: "c3fae3_1"
@@ -280,7 +280,7 @@
 
             function f(e) {
                 let t = u.default.getGuild(e),
-                    n = null != t && l.default.hasAny(a.default.computePermissions(t), d.IncidentAlertModeratorPermissions),
+                    n = null != t && l.hasAny(a.default.computePermissions(t), d.IncidentAlertModeratorPermissions),
                     i = o.getCurrentConfig({
                         guildId: e,
                         location: "c3fae3_3"
@@ -341,7 +341,7 @@
                     value: 24,
                     label: r.default.Messages.GUILD_SERVER_LOCKDOWN_DURATION_24_HOURS
                 }],
-                o = l.default.combine(i.Permissions.ADMINISTRATOR, i.Permissions.MANAGE_GUILD, i.Permissions.BAN_MEMBERS, i.Permissions.KICK_MEMBERS, i.Permissions.MODERATE_MEMBERS)
+                o = l.combine(i.Permissions.ADMINISTRATOR, i.Permissions.MANAGE_GUILD, i.Permissions.BAN_MEMBERS, i.Permissions.KICK_MEMBERS, i.Permissions.MODERATE_MEMBERS)
         },
         712125: function(e, t, n) {
             "use strict";
@@ -1237,4 +1237,4 @@
         }
     }
 ]);
-//# sourceMappingURL=12108.2ffc303b04df908b5b3b.js.map
+//# sourceMappingURL=12108.b06ba54e510be6603bee.js.map
