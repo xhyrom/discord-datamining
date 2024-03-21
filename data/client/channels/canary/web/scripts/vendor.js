@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["54731"], {
+    ["67229"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -52379,16 +52379,22 @@
             }
 
             function _(e, t) {
-                let n = (0, s.useStateFromStores)([o.default], () => o.default.getChannel(e)),
-                    i = d(n),
-                    a = (null == n ? void 0 : n.guild_id) != null ? r.default : l,
-                    u = a.useExperiment({
-                        guildId: null == n ? void 0 : n.guild_id,
-                        location: t
-                    }, {
-                        autoTrackExposure: !0
-                    });
-                return u.activitiesInTextEnabled && i
+                let {
+                    isActivitiesInTextEnabledForChannelType: n,
+                    channelGuildId: i
+                } = (0, s.useStateFromStoresObject)([o.default], () => {
+                    let t = o.default.getChannel(e);
+                    return {
+                        isActivitiesInTextEnabledForChannelType: d(t),
+                        channelGuildId: null == t ? void 0 : t.guild_id
+                    }
+                }), a = null != i ? r.default : l, u = a.useExperiment({
+                    guildId: i,
+                    location: t
+                }, {
+                    autoTrackExposure: !0
+                });
+                return u.activitiesInTextEnabled && n
             }
 
             function f(e, t) {
@@ -88036,8 +88042,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711046566455",
-                                    build_number: "277480"
+                                    built_at: "1711046988465",
+                                    build_number: "277485"
                                 }
                             },
                             retries: 1
@@ -121813,9 +121819,9 @@
             let i, s;
             n.r(t), n.d(t, {
                 default: function() {
-                    return R
+                    return P
                 }
-            }), n("808653"), n("222007");
+            }), n("222007"), n("808653");
             var r = n("917351"),
                 a = n.n(r),
                 o = n("446674"),
@@ -121827,21 +121833,23 @@
             let f = 0,
                 E = 0,
                 h = {},
-                g = {},
-                m = {},
+                g = new Set,
+                m = new Map,
                 p = {},
-                S = {};
+                S = {},
+                v = {},
+                T = {};
 
-            function v(e, t) {
+            function I(e, t) {
                 return "".concat(e, ":").concat(t)
             }
 
-            function T(e, t) {
+            function A(e, t) {
                 let n = e[t];
                 return null == n && (n = {}, e[t] = n), n
             }
 
-            function I(e) {
+            function C(e) {
                 var t;
                 let n = null !== (t = h[c.ME]) && void 0 !== t ? t : {},
                     i = {};
@@ -121850,15 +121858,37 @@
                 }), h[c.ME] = i
             }
 
-            function A(e, t, n) {
-                let i = T(h, null != e ? e : c.ME),
-                    s = i[t],
-                    r = n(s);
-                return s === r ? [!1, r, s] : (null != s && (delete i[t], null != s.channelId && (delete T(g, s.channelId)[t], delete T(m, s.channelId)[t]), null != s.sessionId && delete T(p, t)[s.sessionId]), null != r && (i[t] = r, null != r.channelId && (T(g, r.channelId)[t] = r, r.selfVideo && (T(m, r.channelId)[t] = r)), null != r.sessionId && (T(p, t)[r.sessionId] = r)), [!0, r, s])
+            function y(e) {
+                var t;
+                return null !== (t = m.get(e)) && void 0 !== t ? t : new Set
             }
 
-            function C(e, t) {
-                return A(e, t.userId, e => {
+            function N(e, t, n) {
+                var i, s, r, a;
+                let o = A(h, null != e ? e : c.ME),
+                    l = o[t],
+                    u = n(l);
+                if (l === u) return [!1, u, l];
+                if (null != l) {
+                    ;
+                    let n;
+                    delete o[t], null != l.channelId && (delete A(p, l.channelId)[t], delete A(S, l.channelId)[t]), null != l.sessionId && delete A(v, t)[l.sessionId];
+                    i = null != e ? e : c.ME, s = t, !(n = y(i)).has(s) || ((n = new Set(n)).delete(s), 0 === n.size ? m.delete(i) : m.set(i, n))
+                }
+                if (null != u) {
+                    if (o[t] = u, null != u.channelId && (A(p, u.channelId)[t] = u, u.selfVideo)) {
+                        ;
+                        let n;
+                        A(S, u.channelId)[t] = u;
+                        r = null != e ? e : c.ME, a = t, (n = y(r)).has(a) || ((n = new Set(n)).add(a), m.set(r, n))
+                    }
+                    null != u.sessionId && (A(v, t)[u.sessionId] = u)
+                }
+                return [!0, u, l]
+            }
+
+            function R(e, t) {
+                return N(e, t.userId, e => {
                     if (null == t.channelId) return null;
                     {
                         let n = {
@@ -121879,15 +121909,15 @@
                 })
             }
 
-            function y(e) {
+            function O(e) {
                 let {
                     guild: t
                 } = e;
                 a.forEach(h[t.id], e => {
-                    A(t.id, e.userId, () => null)
+                    N(t.id, e.userId, () => null)
                 }), delete h[t.id]
             }
-            class N extends o.default.Store {
+            class D extends o.default.Store {
                 getAllVoiceStates() {
                     return h
                 }
@@ -121895,13 +121925,13 @@
                     return E
                 }
                 getVoiceStates(e) {
-                    return T(h, null != e ? e : c.ME)
+                    return A(h, null != e ? e : c.ME)
                 }
                 getVoiceStatesForChannel(e) {
-                    return T(g, e)
+                    return A(p, e)
                 }
                 getVideoVoiceStatesForChannel(e) {
-                    return T(m, e)
+                    return A(S, e)
                 }
                 getVoiceState(e, t) {
                     return this.getVoiceStates(e)[t]
@@ -121909,14 +121939,14 @@
                 getVoiceStateForChannel(e) {
                     var t;
                     let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i;
-                    return null === (t = T(g, e)) || void 0 === t ? void 0 : t[n]
+                    return null === (t = A(p, e)) || void 0 === t ? void 0 : t[n]
                 }
                 getVoiceStateForUser(e) {
-                    return Object.values(T(p, e))[0]
+                    return Object.values(A(v, e))[0]
                 }
                 getVoiceStateForSession(e, t) {
                     var n;
-                    return null != t ? null === (n = T(p, e)) || void 0 === n ? void 0 : n[t] : null
+                    return null != t ? null === (n = A(v, e)) || void 0 === n ? void 0 : n[t] : null
                 }
                 getUserVoiceChannelId(e, t) {
                     var n;
@@ -121926,9 +121956,13 @@
                     let t = this.getVoiceState(e, i);
                     return null != t && null != s && t.sessionId === s ? t.channelId : null
                 }
+                getUsersWithVideo(e) {
+                    var t;
+                    return null !== (t = m.get(e)) && void 0 !== t ? t : g
+                }
                 isCurrentClientInVoiceChannel() {
                     var e;
-                    return null != s && (null === (e = p[i]) || void 0 === e ? void 0 : e[s]) != null
+                    return null != s && (null === (e = v[i]) || void 0 === e ? void 0 : e[s]) != null
                 }
                 isInChannel(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i;
@@ -121937,28 +121971,28 @@
                     return null != n && (t !== i || null != s && n.sessionId === s)
                 }
                 hasVideo(e) {
-                    return Object.values(T(m, e)).length > 0
+                    return Object.values(A(S, e)).length > 0
                 }
                 getVoicePlatformForChannel(e, t) {
                     var n, r;
-                    let a = null != s && (null === (r = p[i]) || void 0 === r ? void 0 : null === (n = r[s]) || void 0 === n ? void 0 : n.channelId);
-                    return t === i && e === a ? _.VoicePlatforms.DESKTOP : S[v(t, e)]
+                    let a = null != s && (null === (r = v[i]) || void 0 === r ? void 0 : null === (n = r[s]) || void 0 === n ? void 0 : n.channelId);
+                    return t === i && e === a ? _.VoicePlatforms.DESKTOP : T[I(t, e)]
                 }
                 get userHasBeenMovedVersion() {
                     return f
                 }
             }
-            N.displayName = "VoiceStateStore";
-            var R = new N(l.default, {
+            D.displayName = "VoiceStateStore";
+            var P = new D(l.default, {
                 CONNECTION_OPEN: function(e) {
                     let {
                         user: t,
                         sessionId: n
                     } = e, r = null != i && i !== t.id;
-                    return r && (h = {}, g = {}, p = {}, m = {}), i = t.id, s = n, r
+                    return r && (h = {}, p = {}, v = {}, S = {}, m.clear()), i = t.id, s = n, r
                 },
                 CONNECTION_OPEN_SUPPLEMENTAL: function() {
-                    h = {}, g = {}, p = {}, m = {}
+                    h = {}, p = {}, v = {}, S = {}, m.clear()
                 },
                 OVERLAY_INITIALIZE: function(e) {
                     let {
@@ -121966,15 +122000,15 @@
                         user: n,
                         sessionId: r
                     } = e;
-                    for (let [e, n] of(h = {}, g = {}, p = {}, m = {}, Object.entries(t)))
-                        for (let [t, i] of Object.entries(n)) A(e, t, () => new u.default(i));
+                    for (let [e, n] of(h = {}, p = {}, v = {}, S = {}, Object.entries(t)))
+                        for (let [t, i] of Object.entries(n)) N(e, t, () => new u.default(i));
                     i = n.id, s = r
                 },
                 VOICE_CHANNEL_SELECT: function(e) {
                     let {
                         guildId: t,
                         channelId: n
-                    } = e, [s] = A(t, i, e => null == e ? void 0 : e.set("channelId", n));
+                    } = e, [s] = N(t, i, e => null == e ? void 0 : e.set("channelId", n));
                     return s
                 },
                 VOICE_STATE_UPDATES: function(e) {
@@ -121982,23 +122016,23 @@
                         voiceStates: t
                     } = e;
                     return t.reduce((e, t) => {
-                        let [n, i, r] = C(t.guildId, t);
+                        let [n, i, r] = R(t.guildId, t);
                         return n ? (t.sessionId === s && null != i && null != r && r.channelId !== i.channelId && (f += 1), E++, !0) : e
                     }, !1)
                 },
-                GUILD_DELETE: y,
-                GUILD_CREATE: y,
+                GUILD_DELETE: O,
+                GUILD_CREATE: O,
                 CHANNEL_DELETE: function(e) {
                     let {
                         channel: t
                     } = e;
-                    I(t.id)
+                    C(t.id)
                 },
                 CALL_DELETE: function(e) {
                     let {
                         channelId: t
                     } = e;
-                    I(t)
+                    C(t)
                 },
                 PASSIVE_UPDATE_V1: function(e) {
                     var t, n;
@@ -122006,10 +122040,10 @@
                         s = d.default.keys(null !== (t = h[e.guildId]) && void 0 !== t ? t : {}),
                         r = new Set(s);
                     for (let t of null !== (n = e.voiceStates) && void 0 !== n ? n : []) {
-                        let [n] = C(e.guildId, t);
+                        let [n] = R(e.guildId, t);
                         i = i || n, r.delete(t.userId)
                     }
-                    for (let t of r) A(e.guildId, t, () => null), i = !0;
+                    for (let t of r) N(e.guildId, t, () => null), i = !0;
                     return i && E++, i
                 },
                 RTC_CONNECTION_PLATFORM: function(e) {
@@ -122018,7 +122052,7 @@
                         channelId: n,
                         platform: i
                     } = e;
-                    S[v(t, n)] = i
+                    T[I(t, n)] = i
                 }
             })
         },
@@ -125483,7 +125517,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "ed02294950daa48dca8f83565d0872523e88c755"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "c1f417f91ffe2b794144c18afb064173175494a7"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134981,7 +135015,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "277480"
+                                build_number: "277485"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -152757,4 +152791,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54731.9675ed556c64e9aef9e3.js.map
+//# sourceMappingURL=67229.a7af53fbbb26c562d95e.js.map
