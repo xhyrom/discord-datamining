@@ -70479,7 +70479,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return F
+                    return B
                 }
             }), n("808653");
             var i = n("917351"),
@@ -70500,26 +70500,28 @@
                 p = n("18494"),
                 S = n("101125"),
                 v = n("205817"),
-                T = n("41642"),
-                I = n("518916"),
-                A = n("571420"),
-                C = n("399010"),
-                y = n("49111"),
-                N = n("397336");
-            let R = window.DiscordNative;
-            I.socket.dispatcher.getDispatchHandler = C.default;
-            let O = new l.default("ConnectionStore"),
-                D = 0,
-                P = null,
-                L = !0;
-            async function M(e) {
-                D = Date.now(), P = e.sessionId, I.localPresenceState.handleConnectionOpen();
+                T = n("773336"),
+                I = n("41642"),
+                A = n("518916"),
+                C = n("571420"),
+                y = n("399010"),
+                N = n("49111"),
+                R = n("397336");
+            let O = window.DiscordNative;
+            A.socket.dispatcher.getDispatchHandler = y.default;
+            let D = new l.default("ConnectionStore"),
+                P = 0,
+                L = null,
+                M = !0,
+                b = null;
+            async function U(e) {
+                P = Date.now(), L = e.sessionId, A.localPresenceState.handleConnectionOpen();
                 let t = {},
                     n = p.default.getVoiceChannelId();
                 if (null != n) {
                     var i, s, r, a, l, u, d, c;
-                    let e = (null === (l = window) || void 0 === l ? void 0 : null === (a = l.performance) || void 0 === a ? void 0 : null === (r = a.getEntriesByType) || void 0 === r ? void 0 : null === (s = r.call(a, "navigation")) || void 0 === s ? void 0 : null === (i = s[0]) || void 0 === i ? void 0 : i.type) === "reload" || (null === (u = await (null == R ? void 0 : null === (c = R.processUtils) || void 0 === c ? void 0 : null === (d = c.getLastCrash) || void 0 === d ? void 0 : d.call(c))) || void 0 === u ? void 0 : u.rendererCrashReason) != null;
-                    if (e || !L) {
+                    let e = (null === (l = window) || void 0 === l ? void 0 : null === (a = l.performance) || void 0 === a ? void 0 : null === (r = a.getEntriesByType) || void 0 === r ? void 0 : null === (s = r.call(a, "navigation")) || void 0 === s ? void 0 : null === (i = s[0]) || void 0 === i ? void 0 : i.type) === "reload" || (null === (u = await (null == O ? void 0 : null === (c = O.processUtils) || void 0 === c ? void 0 : null === (d = c.getLastCrash) || void 0 === d ? void 0 : d.call(c))) || void 0 === u ? void 0 : u.rendererCrashReason) != null;
+                    if (e || !M) {
                         let e = f.default.getChannel(n);
                         null != e && (t = {
                             guildId: e.getGuildId(),
@@ -70527,79 +70529,79 @@
                         })
                     } else g.default.setLastSessionVoiceChannelId(null != n ? n : null), o.default.selectVoiceChannel(null)
                 }
-                I.localVoiceState.update(t, !0), I.localLobbyVoiceStates.update({}, !0), L = !1
-            }
-
-            function b() {
-                I.localVoiceState.update()
-            }
-
-            function U() {
-                return I.localVoiceState.update(), I.localLobbyVoiceStates.update(), !1
+                A.localVoiceState.update(t, !0), A.localLobbyVoiceStates.update({}, !0), M = !1
             }
 
             function w() {
-                return I.localPresenceState.update(), !1
+                A.localVoiceState.update()
             }
 
             function k() {
-                return I.localLobbyVoiceStates.update(), !1
+                return A.localVoiceState.update(), A.localLobbyVoiceStates.update(), !1
             }
 
-            function V(e) {
-                I.socket.isSessionEstablished() && I.socket.streamDelete(e)
+            function V() {
+                return A.localPresenceState.update(), !1
             }
-            class G extends r.default.Store {
+
+            function G() {
+                return A.localLobbyVoiceStates.update(), !1
+            }
+
+            function F(e) {
+                A.socket.isSessionEstablished() && A.socket.streamDelete(e)
+            }
+            class x extends r.default.Store {
                 initialize() {
-                    this.waitFor(c.default, p.default, f.default, _.default, E.default, d.default), this.syncWith([h.default], U), this.syncWith([S.default], w)
+                    this.waitFor(c.default, p.default, f.default, _.default, E.default, d.default), this.syncWith([h.default], k), this.syncWith([S.default], V)
                 }
                 getSocket() {
-                    return I.socket
+                    return A.socket
                 }
                 isTryingToConnect() {
-                    return !I.socket.isClosed()
+                    return !A.socket.isClosed()
                 }
                 isConnected() {
-                    return I.socket.isSessionEstablished()
+                    return A.socket.isSessionEstablished()
                 }
                 isConnectedOrOverlay() {
-                    return I.socket.isSessionEstablished() || __OVERLAY__
+                    return A.socket.isSessionEstablished() || __OVERLAY__
                 }
                 lastTimeConnectedChanged() {
-                    return D
+                    return P
                 }
             }
-            G.displayName = "GatewayConnectionStore";
-            var F = new G(a.default, {
+            x.displayName = "GatewayConnectionStore";
+            var B = new x(a.default, {
                 START_SESSION: function() {
-                    return I.socket.isClosed() ? (O.verbose("Socket is reconnecting because of starting new session"), I.socket.connect()) : (O.verbose("Socket is not reconnecting during a new session because it is not closed"), !1)
+                    return A.socket.isClosed() ? (D.verbose("Socket is reconnecting because of starting new session"), A.socket.connect()) : (D.verbose("Socket is not reconnecting during a new session because it is not closed"), !1)
                 },
                 LOGIN_SUCCESS: function() {
-                    return O.verbose("session refresh dispatched", {
-                        isEstablished: I.socket.isSessionEstablished()
-                    }), !!I.socket.isSessionEstablished() && (I.socket.close(), I.socket.connect())
+                    return D.verbose("session refresh dispatched", {
+                        isEstablished: A.socket.isSessionEstablished()
+                    }), !!A.socket.isSessionEstablished() && (A.socket.close(), A.socket.connect())
                 },
                 LOGOUT: function(e) {
-                    e.isSwitchingAccount && I.localPresenceState.handleAccountSwitch(), O.verbose("Closing socket because of logout"), I.socket.close()
+                    e.isSwitchingAccount && A.localPresenceState.handleAccountSwitch(), D.verbose("Closing socket because of logout"), A.socket.close()
                 },
                 CLEAR_CACHES: function(e) {
-                    return e.resetSocket && (I.socket.close(), I.socket.dispatcher.clear(), I.socket.connect()), !1
+                    return e.resetSocket && (A.socket.close(), A.socket.dispatcher.clear(), A.socket.connect()), !1
                 },
                 CONNECTION_OPEN: e => {
-                    M(e)
+                    U(e)
                 },
                 CONNECTION_CLOSED: function() {
-                    O.verbose("connection closed dispatched"), D = Date.now()
+                    D.verbose("connection closed dispatched"), P = Date.now()
                 },
                 RTC_CONNECTION_STATE: function(e) {
-                    if (e.state !== y.RTCConnectionStates.DISCONNECTED) return !1;
-                    e.willReconnect && (null != e.streamKey ? I.socket.streamPing(e.streamKey) : I.socket.voiceServerPing())
+                    if (e.state !== N.RTCConnectionStates.DISCONNECTED) return !1;
+                    e.willReconnect && (null != e.streamKey ? A.socket.streamPing(e.streamKey) : A.socket.voiceServerPing())
                 },
                 VOICE_CHANNEL_SELECT: function(e) {
-                    return I.localVoiceState.update({
+                    return A.localVoiceState.update({
                         guildId: e.guildId,
                         channelId: e.channelId
-                    }), !1
+                    }), (0, T.isIOS)() && null == e.channelId && b === N.AppStates.BACKGROUND && A.socket.close(!0), !1
                 },
                 VOICE_STATE_UPDATES: function(e) {
                     let {
@@ -70607,13 +70609,13 @@
                     } = e;
                     return t.reduce((e, t) => {
                         if (c.default.getId() !== t.userId) return e;
-                        if (t.sessionId === P) I.localVoiceState.setState({
+                        if (t.sessionId === L) A.localVoiceState.setState({
                             guildId: t.guildId,
                             channelId: t.channelId
                         });
                         else {
-                            if (t.guildId !== I.localVoiceState.guildId) return e;
-                            I.localVoiceState.setState({
+                            if (t.guildId !== A.localVoiceState.guildId) return e;
+                            A.localVoiceState.setState({
                                 guildId: null,
                                 channelId: null
                             })
@@ -70622,7 +70624,7 @@
                     }, !1)
                 },
                 GUILD_DELETE: function(e) {
-                    e.guild.id === I.localVoiceState.guildId && I.localVoiceState.setState({
+                    e.guild.id === A.localVoiceState.guildId && A.localVoiceState.setState({
                         guildId: null,
                         channelId: null
                     })
@@ -70631,7 +70633,7 @@
                     let {
                         channel: t
                     } = e;
-                    t.id === I.localVoiceState.channelId && I.localVoiceState.setState({
+                    t.id === A.localVoiceState.channelId && A.localVoiceState.setState({
                         guildId: null,
                         channelId: null
                     })
@@ -70640,21 +70642,21 @@
                     let {
                         channelId: t
                     } = e;
-                    t === I.localVoiceState.channelId && I.localVoiceState.setState({
+                    t === A.localVoiceState.channelId && A.localVoiceState.setState({
                         guildId: null,
                         channelId: null
                     })
                 },
                 APP_STATE_UPDATE: function(e) {
-                    return e.state === y.AppStates.ACTIVE && (A.setIsPaused(!1), c.default.isAuthenticated() && I.socket.resetBackoff("App state is active")), !1
+                    return (0, T.isIOS)() ? (c.default.isAuthenticated() && (b === N.AppStates.INACTIVE && e.state === N.AppStates.BACKGROUND && null == A.localVoiceState.channelId ? A.socket.close(!0) : b === N.AppStates.BACKGROUND && e.state === N.AppStates.ACTIVE && (C.setIsPaused(!1), A.socket.connect())), b = e.state) : e.state === N.AppStates.ACTIVE && (C.setIsPaused(!1), c.default.isAuthenticated() && A.socket.resetBackoff("App state is active")), !1
                 },
                 GUILD_MEMBERS_REQUEST: function(e) {
-                    return I.socket.isSessionEstablished() && ("userIds" in e ? s(e.userIds).chunk(100).forEach(t => {
-                        I.socket.requestGuildMembers(e.guildIds, {
+                    return A.socket.isSessionEstablished() && ("userIds" in e ? s(e.userIds).chunk(100).forEach(t => {
+                        A.socket.requestGuildMembers(e.guildIds, {
                             userIds: t,
                             presences: !!e.presences
                         })
-                    }) : I.socket.requestGuildMembers(e.guildIds, {
+                    }) : A.socket.requestGuildMembers(e.guildIds, {
                         query: e.query,
                         limit: e.limit,
                         presences: !!e.presences
@@ -70666,7 +70668,7 @@
                         query: n,
                         continuationToken: i
                     } = e;
-                    I.socket.isSessionEstablished() && I.socket.searchRecentMembers(t, {
+                    A.socket.isSessionEstablished() && A.socket.searchRecentMembers(t, {
                         query: n,
                         continuationToken: i
                     })
@@ -70675,20 +70677,20 @@
                     let {
                         subscriptions: t
                     } = e;
-                    return I.socket.isSessionEstablished() && I.socket.updateGuildSubscriptions(t), !1
+                    return A.socket.isSessionEstablished() && A.socket.updateGuildSubscriptions(t), !1
                 },
                 CALL_CONNECT: function(e) {
                     let {
                         channelId: t
                     } = e;
-                    return I.socket.isSessionEstablished() && I.socket.callConnect(t), !1
+                    return A.socket.isSessionEstablished() && A.socket.callConnect(t), !1
                 },
                 CALL_CONNECT_MULTIPLE: function(e) {
                     let {
                         channelIds: t
                     } = e;
-                    return I.socket.isSessionEstablished() && t.forEach(e => {
-                        I.socket.callConnect(e)
+                    return A.socket.isSessionEstablished() && t.forEach(e => {
+                        A.socket.callConnect(e)
                     }), !1
                 },
                 LOBBY_CONNECT: function(e) {
@@ -70696,28 +70698,28 @@
                         lobbyId: t,
                         lobbySecret: n
                     } = e;
-                    return I.socket.isSessionEstablished() && I.socket.lobbyConnect(t, n), !1
+                    return A.socket.isSessionEstablished() && A.socket.lobbyConnect(t, n), !1
                 },
                 LOBBY_DISCONNECT: function(e) {
                     let {
                         lobbyId: t
                     } = e;
-                    return I.socket.isSessionEstablished() && I.socket.lobbyDisconnect(t), I.localLobbyVoiceStates.update(), !1
+                    return A.socket.isSessionEstablished() && A.socket.lobbyDisconnect(t), A.localLobbyVoiceStates.update(), !1
                 },
-                LOBBY_VOICE_CONNECT: k,
-                LOBBY_VOICE_DISCONNECT: k,
-                RPC_APP_DISCONNECTED: k,
-                STREAM_CREATE: b,
+                LOBBY_VOICE_CONNECT: G,
+                LOBBY_VOICE_DISCONNECT: G,
+                RPC_APP_DISCONNECTED: G,
+                STREAM_CREATE: w,
                 STREAM_START: function(e) {
                     let {
                         streamType: t,
                         guildId: n,
                         channelId: i
                     } = e;
-                    if (I.socket.isSessionEstablished()) {
+                    if (A.socket.isSessionEstablished()) {
                         var s, r;
                         let e = null != n ? null === (s = f.default.getChannel(i)) || void 0 === s ? void 0 : s.rtcRegion : null === (r = _.default.getCall(i)) || void 0 === r ? void 0 : r.region;
-                        I.socket.streamCreate(t, n, i, null != e ? e : m.default.getPreferredRegion())
+                        A.socket.streamCreate(t, n, i, null != e ? e : m.default.getPreferredRegion())
                     }
                     return !1
                 },
@@ -70726,28 +70728,28 @@
                         streamKey: t,
                         allowMultiple: n
                     } = e;
-                    return I.socket.isSessionEstablished() && (n || ! function() {
+                    return A.socket.isSessionEstablished() && (n || ! function() {
                         let e = function() {
                             return v.default.getAllActiveStreamKeys().find(e => (0, u.decodeStreamKey)(e).ownerId === c.default.getId())
                         }();
-                        v.default.getAllActiveStreamKeys().filter(t => t !== e).forEach(e => V(e))
-                    }(), I.socket.streamWatch(t)), !1
+                        v.default.getAllActiveStreamKeys().filter(t => t !== e).forEach(e => F(e))
+                    }(), A.socket.streamWatch(t)), !1
                 },
                 STREAM_STOP: function(e) {
                     let {
                         streamKey: t
                     } = e;
-                    return V(t), b(), !1
+                    return F(t), w(), !1
                 },
                 STREAM_SET_PAUSED: function(e) {
                     let {
                         streamKey: t,
                         paused: n
                     } = e;
-                    I.socket.isSessionEstablished() && I.socket.streamSetPaused(t, n)
+                    A.socket.isSessionEstablished() && A.socket.streamSetPaused(t, n)
                 },
                 PUSH_NOTIFICATION_CLICK: function() {
-                    return I.socket.expeditedHeartbeat(5e3, "user clicked on notification", !0), !1
+                    return A.socket.expeditedHeartbeat(5e3, "user clicked on notification", !0), !1
                 },
                 EMBEDDED_ACTIVITY_DISCONNECT: function(e) {
                     var t, n;
@@ -70755,7 +70757,7 @@
                         channelId: i,
                         applicationId: s
                     } = e, r = null !== (n = null === (t = f.default.getChannel(i)) || void 0 === t ? void 0 : t.getGuildId()) && void 0 !== n ? n : null;
-                    I.socket.embeddedActivityClose(r, i, s)
+                    A.socket.embeddedActivityClose(r, i, s)
                 },
                 REQUEST_FORUM_UNREADS: function(e) {
                     let {
@@ -70763,35 +70765,35 @@
                         channelId: n,
                         threads: i
                     } = e;
-                    I.socket.requestForumUnreads(t, n, i)
+                    A.socket.requestForumUnreads(t, n, i)
                 },
                 REQUEST_SOUNDBOARD_SOUNDS: function(e) {
                     let {
                         guildIds: t
                     } = e;
-                    I.socket.requestSoundboardSounds(t)
+                    A.socket.requestSoundboardSounds(t)
                 },
                 REMOTE_COMMAND: function(e) {
                     let {
                         sessionId: t,
                         payload: n
                     } = e;
-                    return I.socket.isSessionEstablished() && I.socket.remoteCommand(t, n), !1
+                    return A.socket.isSessionEstablished() && A.socket.remoteCommand(t, n), !1
                 },
                 RESET_SOCKET: function(e) {
-                    I.socket.connectionState !== T.default.WILL_RECONNECT && I.socket.resetSocketOnError(e.args)
+                    A.socket.connectionState !== I.default.WILL_RECONNECT && A.socket.resetSocketOnError(e.args)
                 },
                 RTC_SPEED_TEST_START_TEST: function() {
-                    return I.socket.isSessionEstablished() && I.socket.speedTestCreate(m.default.getPreferredRegion()), !1
+                    return A.socket.isSessionEstablished() && A.socket.speedTestCreate(m.default.getPreferredRegion()), !1
                 },
                 RTC_SPEED_TEST_STOP_TEST: function() {
-                    return I.socket.isSessionEstablished() && I.socket.speedTestDelete(), !1
+                    return A.socket.isSessionEstablished() && A.socket.speedTestDelete(), !1
                 },
-                CLIPS_SETTINGS_UPDATE: b,
-                RUNNING_GAMES_CHANGE: b,
+                CLIPS_SETTINGS_UPDATE: w,
+                RUNNING_GAMES_CHANGE: w,
                 USER_SETTINGS_PROTO_UPDATE: function(e) {
                     var t;
-                    e.settings.type === N.UserSettingsTypes.PRELOADED_USER_SETTINGS && (null === (t = e.settings.proto.clips) || void 0 === t ? void 0 : t.allowVoiceRecording) != null && b()
+                    e.settings.type === R.UserSettingsTypes.PRELOADED_USER_SETTINGS && (null === (t = e.settings.proto.clips) || void 0 === t ? void 0 : t.allowVoiceRecording) != null && w()
                 }
             })
         },
@@ -71291,11 +71293,14 @@
                     })
                 }
                 close() {
+                    let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
                     if (this.isClosed()) {
                         k.verbose("close() called, but socket is already closed.");
                         return
                     }
-                    k.info("Closing connection, current state is ".concat(this.connectionState)), this._cleanup(e => e.close()), this.connectionState = N.default.CLOSED, setImmediate(() => {
+                    k.info("Closing connection, current state is ".concat(this.connectionState));
+                    let t = e ? 4e3 : void 0;
+                    this._cleanup(e => e.close(t)), this.connectionState = N.default.CLOSED, !e && setImmediate(() => {
                         this._reset(!0, 1e3, "Disconnect requested by user")
                     })
                 }
@@ -88031,8 +88036,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711044259975",
-                                    build_number: "277455"
+                                    built_at: "1711045504527",
+                                    build_number: "277463"
                                 }
                             },
                             retries: 1
@@ -125478,7 +125483,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "5afd3b4d1c2037edc264e2dce087765a2acbb402"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "eaa0e5a01cfbb411ddbcb7f6d6364523fdb18800"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134976,7 +134981,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "277455"
+                                build_number: "277463"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -152752,4 +152757,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67229.56e2aedc2e192943318d.js.map
+//# sourceMappingURL=67229.8e433f928208658b093a.js.map
