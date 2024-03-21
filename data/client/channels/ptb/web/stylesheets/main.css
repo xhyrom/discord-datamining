@@ -17558,6 +17558,10 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     color: ButtonText
 }
 
+.biteSizeHeaderContainer__8cc75 {
+    padding-bottom: 12px
+}
+
 .roleDot_ee4aa4 {
     margin-right: 2px;
     margin-left: -2px
@@ -26839,6 +26843,18 @@ html .progress__4ef76 {
 .percentCompleteLabelOffset__738e1,
 .progressBarFill_e448b3 {
     transition: width.3s ease-in-out
+}
+
+.desktopTooltip__33fd1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 4px 0
+}
+
+.infoIcon_d5bdac {
+    color: var(--white-500);
+    margin-right: 4px
 }
 
 .outerContainer_b1a8db {
@@ -130568,4 +130584,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.20057784fbc5671879ed.css.map*/
+/*# sourceMappingURL=app.062984259c8d19d777e8.css.map*/

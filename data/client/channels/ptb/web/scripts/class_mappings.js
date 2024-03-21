@@ -21700,6 +21700,8 @@
         220350: function(e, t, n) {
             "use strict";
             e.exports = {
+                desktopTooltip: "desktopTooltip__33fd1",
+                infoIcon: "infoIcon_d5bdac",
                 percentCompleteLabel: "percentCompleteLabel__049d5",
                 percentCompleteLabelOffset: "percentCompleteLabelOffset__738e1",
                 percentCompleteWrapper: "percentCompleteWrapper_fb73d6",
@@ -24439,6 +24441,7 @@
                 avatarWrapper: "avatarWrapper_f77579",
                 avatarWrapperNonUserBot: "avatarWrapperNonUserBot_d27212 avatarWrapper_f77579",
                 avatarWrapperNormal: "avatarWrapperNormal__0bddb avatarWrapper_f77579",
+                biteSizeHeaderContainer: "biteSizeHeaderContainer__8cc75",
                 clickable: "clickable__35918",
                 profileBadges: "profileBadges__7a7cb",
                 profileBadgesCompactNoTouch: "profileBadgesCompactNoTouch__9b41f profileBadges__7a7cb",
