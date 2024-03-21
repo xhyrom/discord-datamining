@@ -9720,7 +9720,7 @@
   "GIFT_SUBSCRIPTION_INFO": "\"{sender} has gifted you Nitro for 1 {timeInterval}!\"",
   "GIFT_SUBSCRIPTION_INFO_TIER_0": "\"{sender} has gifted you Nitro Basic for 1 {timeInterval}!\"",
   "GIFT_SUBSCRIPTION_INFO_GENERIC": "\"{sender} has gifted you Nitro!\"",
-  "GIFT_SUBSCRIPTION_INFO_SENDER_UNKNOWN": "\"You have been gifted you Nitro for 1 {timeInterval}!\"",
+  "GIFT_SUBSCRIPTION_INFO_SENDER_UNKNOWN": "\"You have been gifted Nitro for 1 {timeInterval}!\"",
   "GIFT_SUBSCRIPTION_INFO_TIER_0_SENDER_UNKNOWN": "\"You have been gifted Nitro Basic for 1 {timeInterval}!\"",
   "GIFT_SUBSCRIPTION_INFO_GENERIC_SENDER_UNKNOWN": "\"You have been gifted Nitro!\"",
   "GIFT_SELECT_SOUND": "\"Add sound effect\"",
