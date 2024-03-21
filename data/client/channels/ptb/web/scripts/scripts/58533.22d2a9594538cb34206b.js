@@ -108,7 +108,7 @@
 
             function F(e, t, r) {
                 let s = Date.now();
-                y(t), i.default.get({
+                y(t), i.HTTP.get({
                     url: _.Endpoints.GIFS_SEARCH,
                     query: {
                         q: e,
@@ -145,7 +145,7 @@
             }
 
             function A(e) {
-                "" !== e && null != e && i.default.get({
+                "" !== e && null != e && i.HTTP.get({
                     url: _.Endpoints.GIFS_SUGGEST,
                     query: {
                         q: e,
@@ -192,7 +192,7 @@
                     index_num: r,
                     source_object: "GIF Picker",
                     query: o
-                }), null != c && i.default.post({
+                }), null != c && i.HTTP.post({
                     url: _.Endpoints.GIFS_SELECT,
                     body: {
                         id: c,
@@ -216,7 +216,7 @@
             }
 
             function P() {
-                i.default.get({
+                i.HTTP.get({
                     url: _.Endpoints.GIFS_TRENDING,
                     query: {
                         provider: "tenor",
@@ -241,7 +241,7 @@
 
             function M(e) {
                 let t = Date.now();
-                y(_.GIFPickerResultTypes.TRENDING_GIFS), i.default.get({
+                y(_.GIFPickerResultTypes.TRENDING_GIFS), i.HTTP.get({
                     url: _.Endpoints.GIFS_TRENDING_GIFS,
                     query: {
                         media_format: f.default.getSelectedFormat(),
@@ -1743,7 +1743,7 @@
                 return e.attachments.some(p) || e.embeds.some(g)
             }
             async function E(e) {
-                let t = await n.default.post({
+                let t = await n.HTTP.post({
                     url: o.Endpoints.ATTACHMENTS_REFRESH_URLS,
                     body: {
                         attachment_urls: [e]
@@ -2251,4 +2251,4 @@
         }
     }
 ]);
-//# sourceMappingURL=58533.905dede5cdbbedf50fce.js.map
+//# sourceMappingURL=58533.22d2a9594538cb34206b.js.map

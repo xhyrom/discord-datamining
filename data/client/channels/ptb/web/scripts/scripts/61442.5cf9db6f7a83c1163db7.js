@@ -65,8 +65,8 @@
                 l = i("775433"),
                 u = i("697218"),
                 c = i("10514"),
-                d = i("764364"),
-                o = i("719923"),
+                o = i("764364"),
+                d = i("719923"),
                 f = i("676572"),
                 S = i("646718"),
                 h = i("49111");
@@ -78,7 +78,7 @@
                     });
                     let {
                         body: e
-                    } = await s.default.get({
+                    } = await s.HTTP.get({
                         url: h.Endpoints.USER_PREMIUM_LIKELIHOOD
                     });
                     a.default.dispatch({
@@ -127,7 +127,7 @@
             }
 
             function k(e, t, i, r) {
-                null != e && !(0, d.isPremium)(e) && i && (t && E(), r && (!c.default.isLoadedForSKU((0, o.castPremiumSubscriptionAsSkuId)(S.PremiumSubscriptionSKUs.TIER_0)) && !c.default.isFetchingForSKU((0, o.castPremiumSubscriptionAsSkuId)(S.PremiumSubscriptionSKUs.TIER_0)) && (0, l.fetchSubscriptionPlansForSKU)((0, o.castPremiumSubscriptionAsSkuId)(S.PremiumSubscriptionSKUs.TIER_0)), !c.default.isLoadedForSKU((0, o.castPremiumSubscriptionAsSkuId)(S.PremiumSubscriptionSKUs.TIER_2)) && !c.default.isFetchingForSKU((0, o.castPremiumSubscriptionAsSkuId)(S.PremiumSubscriptionSKUs.TIER_2)) && (0, l.fetchSubscriptionPlansForSKU)((0, o.castPremiumSubscriptionAsSkuId)(S.PremiumSubscriptionSKUs.TIER_2))))
+                null != e && !(0, o.isPremium)(e) && i && (t && E(), r && (!c.default.isLoadedForSKU((0, d.castPremiumSubscriptionAsSkuId)(S.PremiumSubscriptionSKUs.TIER_0)) && !c.default.isFetchingForSKU((0, d.castPremiumSubscriptionAsSkuId)(S.PremiumSubscriptionSKUs.TIER_0)) && (0, l.fetchSubscriptionPlansForSKU)((0, d.castPremiumSubscriptionAsSkuId)(S.PremiumSubscriptionSKUs.TIER_0)), !c.default.isLoadedForSKU((0, d.castPremiumSubscriptionAsSkuId)(S.PremiumSubscriptionSKUs.TIER_2)) && !c.default.isFetchingForSKU((0, d.castPremiumSubscriptionAsSkuId)(S.PremiumSubscriptionSKUs.TIER_2)) && (0, l.fetchSubscriptionPlansForSKU)((0, d.castPremiumSubscriptionAsSkuId)(S.PremiumSubscriptionSKUs.TIER_2))))
             }
         },
         676572: function(e, t, i) {
@@ -223,19 +223,19 @@
                     return g
                 },
                 fetchGuildStickers: function() {
-                    return v
+                    return T
                 },
                 deleteGuildSticker: function() {
-                    return y
+                    return v
                 },
                 createGuildSticker: function() {
-                    return _
+                    return y
                 },
                 updateGuildSticker: function() {
-                    return R
+                    return _
                 },
                 addStickerPreview: function() {
-                    return T
+                    return R
                 },
                 clearStickerPreview: function() {
                     return L
@@ -254,8 +254,8 @@
                 l = i("404118"),
                 u = i("619443"),
                 c = i("915639"),
-                d = i("872173"),
-                o = i("766274"),
+                o = i("872173"),
+                d = i("766274"),
                 f = i("341542"),
                 S = i("697218"),
                 h = i("271560"),
@@ -287,7 +287,7 @@
                     body: {
                         sticker_packs: t
                     }
-                } = await s.default.get({
+                } = await s.HTTP.get({
                     url: E.Endpoints.STICKER_PACKS,
                     query: {
                         locale: e
@@ -300,17 +300,17 @@
             }, g = async e => {
                 let {
                     body: t
-                } = await s.default.get({
+                } = await s.HTTP.get({
                     url: E.Endpoints.STICKER(e)
                 });
                 a.default.dispatch({
                     type: "STICKER_FETCH_SUCCESS",
                     sticker: t
                 })
-            }, v = async e => {
+            }, T = async e => {
                 let {
                     body: t
-                } = await s.default.get({
+                } = await s.HTTP.get({
                     url: E.Endpoints.GUILD_STICKER_PACKS(e)
                 });
                 a.default.dispatch({
@@ -318,15 +318,15 @@
                     guildId: e,
                     stickers: t.map(e => null != e.user ? {
                         ...e,
-                        user: new o.default(e.user)
+                        user: new d.default(e.user)
                     } : e)
                 })
-            }, y = async e => {
-                await s.default.delete({
+            }, v = async e => {
+                await s.HTTP.del({
                     url: E.Endpoints.GUILD_STICKER(e.guild_id, e.id)
                 })
-            }, _ = async (e, t) => {
-                let i = await s.default.post({
+            }, y = async (e, t) => {
+                let i = await s.HTTP.post({
                     url: E.Endpoints.GUILD_STICKER_PACKS(e),
                     body: t
                 });
@@ -338,15 +338,15 @@
                         user: S.default.getCurrentUser()
                     }
                 }), i.body
-            }, R = async (e, t, i) => {
-                let r = await s.default.patch({
+            }, _ = async (e, t, i) => {
+                let r = await s.HTTP.patch({
                     url: E.Endpoints.GUILD_STICKER(e, t),
                     body: i
                 });
                 return r.body
             };
 
-            function T(e, t, i) {
+            function R(e, t, i) {
                 a.default.dispatch({
                     type: "ADD_STICKER_PREVIEW",
                     channelId: e,
@@ -368,7 +368,7 @@
             }
 
             function A(e) {
-                d.FrecencyUserSettingsActionCreators.updateAsync("favoriteStickers", t => (t.stickerIds = x(t.stickerIds), n.size(t.stickerIds) >= I.MAX_FAVORITES) ? (l.default.show({
+                o.FrecencyUserSettingsActionCreators.updateAsync("favoriteStickers", t => (t.stickerIds = x(t.stickerIds), n.size(t.stickerIds) >= I.MAX_FAVORITES) ? (l.default.show({
                     title: p.default.Messages.FAVORITES_LIMIT_REACHED_TITLE,
                     body: p.default.Messages.FAVORITES_LIMIT_REACHED_BODY.format({
                         count: I.MAX_FAVORITES
@@ -377,7 +377,7 @@
             }
 
             function P(e) {
-                d.FrecencyUserSettingsActionCreators.updateAsync("favoriteStickers", t => {
+                o.FrecencyUserSettingsActionCreators.updateAsync("favoriteStickers", t => {
                     t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = x(t.stickerIds)
                 }, I.UserSettingsDelay.INFREQUENT_USER_ACTION)
             }
@@ -386,19 +386,19 @@
             "use strict";
             i.r(t), i.d(t, {
                 useFetchStickerPack: function() {
-                    return v
+                    return T
                 },
                 useShouldAnimateSticker: function() {
-                    return y
+                    return v
                 },
                 useStickersGrid: function() {
-                    return _
+                    return y
                 },
                 useHasSendableSticker: function() {
-                    return R
+                    return _
                 },
                 useFetchStickerPacks: function() {
-                    return T
+                    return R
                 },
                 useFavoriteStickerIds: function() {
                     return A
@@ -423,8 +423,8 @@
                 l = i("42507"),
                 u = i("305961"),
                 c = i("162771"),
-                d = i("677099"),
-                o = i("697218"),
+                o = i("677099"),
+                d = i("697218"),
                 f = i("427459"),
                 S = i("991170"),
                 h = i("866353"),
@@ -435,30 +435,30 @@
                 k = i("24373"),
                 C = i("49111"),
                 g = i("782340");
-            let v = e => {
-                    T();
+            let T = e => {
+                    R();
                     let t = (0, n.useStateFromStores)([I.default], () => I.default.hasLoadedStickerPacks);
                     r.useEffect(() => {
                         t && null == I.default.getStickerPack(e) && (0, m.fetchStickerPack)(e)
                     }, [e, t])
                 },
-                y = e => {
+                v = e => {
                     let t = a.AnimateStickers.useSetting();
                     return (0, k.shouldAnimateSticker)(t, e)
                 },
-                _ = e => {
+                y = e => {
                     let {
                         collapsedStickersCategories: t,
                         filteredStickers: i,
                         listPaddingRight: n = 0,
                         listWidth: a = 0,
                         stickerNodeMargin: l = 0,
-                        stickerNodeWidth: d,
-                        stickersCategories: o
+                        stickerNodeWidth: o,
+                        stickersCategories: d
                     } = e;
                     return r.useMemo(() => {
-                        let e = Math.floor((a - n + l) / (d + l)),
-                            r = Math.floor(Math.max(l, (a - n - d * e) / (e - 1))),
+                        let e = Math.floor((a - n + l) / (o + l)),
+                            r = Math.floor(Math.max(l, (a - n - o * e) / (e - 1))),
                             S = [],
                             h = [],
                             m = [],
@@ -473,13 +473,13 @@
                                         canCreateExpressions: a
                                     } = (0, s.getManageResourcePermissions)(n),
                                     l = c.default.getGuildId(),
-                                    d = o.findIndex(e => e.type === p.StickerCategoryTypes.FAVORITE),
-                                    v = o.findIndex(e => e.type === p.StickerCategoryTypes.RECENT),
-                                    y = t.length;
-                                null != n && l === n.id && a && t.length < (0, f.getTotalStickerCountForTier)(n.premiumTier) && y++;
-                                let _ = Math.ceil(y / e);
-                                h[I] = r ? 0 : _;
-                                for (let s = 0; s < _; s++) {
+                                    o = d.findIndex(e => e.type === p.StickerCategoryTypes.FAVORITE),
+                                    T = d.findIndex(e => e.type === p.StickerCategoryTypes.RECENT),
+                                    v = t.length;
+                                null != n && l === n.id && a && t.length < (0, f.getTotalStickerCountForTier)(n.premiumTier) && v++;
+                                let y = Math.ceil(v / e);
+                                h[I] = r ? 0 : y;
+                                for (let s = 0; s < y; s++) {
                                     let a = s * e,
                                         l = a + e,
                                         u = t.slice(a, l).map((e, t) => ({
@@ -492,7 +492,7 @@
                                             visibleRowIndex: C,
                                             category: i
                                         }));
-                                    I > v && I > d && null != n && y > t.length && u.push({
+                                    I > T && I > o && null != n && v > t.length && u.push({
                                         type: p.StickerGridItemTypes.CREATE_STICKER,
                                         guild_id: n.id,
                                         name: g.default.Messages.STICKER_PICKER_CREATE_STICKER_TITLE,
@@ -505,7 +505,7 @@
                                 I++
                             };
                             if (null == i)
-                                for (let e of o) e.stickers.length > 0 ? (E++, r(e.stickers, e.type, (null == t ? void 0 : t.has(e.id)) === !0)) : e.type === p.StickerCategoryTypes.EMPTY_GUILD_UPSELL && (h[I] = 0, I++);
+                                for (let e of d) e.stickers.length > 0 ? (E++, r(e.stickers, e.type, (null == t ? void 0 : t.has(e.id)) === !0)) : e.type === p.StickerCategoryTypes.EMPTY_GUILD_UPSELL && (h[I] = 0, I++);
                             else i.sendable.length > 0 && r(i.sendable, p.StickerCategoryTypes.SEARCH_RESULTS), i.sendableWithPremium.length > 0 && r(i.sendableWithPremium, p.StickerCategoryTypes.SEARCH_RESULTS)
                         }
                         return {
@@ -515,10 +515,10 @@
                             gutterWidth: r,
                             columnCounts: S
                         }
-                    }, [t, i, n, a, l, d, o])
+                    }, [t, i, n, a, l, o, d])
                 },
-                R = e => {
-                    let t = (0, n.useStateFromStores)([o.default], () => o.default.getCurrentUser());
+                _ = e => {
+                    let t = (0, n.useStateFromStores)([d.default], () => d.default.getCurrentUser());
                     return (0, n.useStateFromStores)([I.default], () => {
                         let i = I.default.getAllStickersIterator();
                         for (let r of i)
@@ -526,22 +526,22 @@
                         return !1
                     }, [t, e])
                 },
-                T = () => {
+                R = () => {
                     r.useEffect(() => {
                         (0, m.fetchStickerPacks)()
                     }, [])
                 },
                 L = e => {
                     let t = (0, n.useStateFromStores)([I.default], () => I.default.getAllGuildStickers()),
-                        i = (0, n.useStateFromStoresArray)([d.default, u.default], () => {
-                            let e = d.default.getFlattenedGuildIds(),
+                        i = (0, n.useStateFromStoresArray)([o.default, u.default], () => {
+                            let e = o.default.getFlattenedGuildIds(),
                                 t = [];
                             return e.forEach(e => {
                                 let i = u.default.getGuild(e);
                                 null != i && t.push(i)
                             }), t
                         }, []),
-                        a = (0, n.useStateFromStores)([o.default], () => o.default.getCurrentUser());
+                        a = (0, n.useStateFromStores)([d.default], () => d.default.getCurrentUser());
                     return r.useMemo(() => {
                         let r = [];
                         for (let {
@@ -610,7 +610,7 @@
                             packs: I.default.getPremiumPacks(),
                             frequentlyUsedStickers: E.default.stickerFrecencyWithoutFetchingLatest.frequently
                         }), []),
-                        a = (0, n.useStateFromStores)([o.default], () => o.default.getCurrentUser()),
+                        a = (0, n.useStateFromStores)([d.default], () => d.default.getCurrentUser()),
                         l = L(e);
                     return r.useMemo(() => {
                         var r;
@@ -677,8 +677,8 @@
                 l = i("627445"),
                 u = i.n(l),
                 c = i("146606"),
-                d = i("446674"),
-                o = i("290381"),
+                o = i("446674"),
+                d = i("290381"),
                 f = i("77078"),
                 S = i("206230"),
                 h = i("407063"),
@@ -689,18 +689,18 @@
                 k = i("161585"),
                 C = i("24373"),
                 g = i("782340"),
-                v = i("419664");
-            let y = e => e.preventDefault(),
-                _ = {
+                T = i("419664");
+            let v = e => e.preventDefault(),
+                y = {
                     tension: 1100,
                     friction: 40
                 },
-                R = {
+                _ = {
                     tension: 1600,
                     friction: 60
                 };
 
-            function T(e, t) {
+            function R(e, t) {
                 return n.cloneElement(e, {
                     "data-type": "sticker",
                     "data-id": t
@@ -723,25 +723,25 @@
                         withLoadingIndicator: u = !0
                     } = e, c = l >= 33;
                     return (0, r.jsxs)("div", {
-                        className: a(v.assetWrapper, {
-                            [v.assetWrapperMasked]: i || s
+                        className: a(T.assetWrapper, {
+                            [T.assetWrapperMasked]: i || s
                         }),
                         style: {
                             height: l,
                             width: l
                         },
                         children: [i ? (0, r.jsxs)("div", {
-                            className: v.error,
+                            className: T.error,
                             children: [(0, r.jsx)(m.default, {
-                                className: v.errorIcon
+                                className: T.errorIcon
                             }), c && (0, r.jsx)(f.Text, {
-                                className: v.errorText,
+                                className: T.errorText,
                                 color: "header-secondary",
                                 variant: "text-sm/normal",
                                 children: g.default.Messages.STICKER_ASSET_LOAD_ERROR
                             })]
                         }) : t, u && n && (0, r.jsx)("div", {
-                            className: v.loadingIndicator
+                            className: T.loadingIndicator
                         })]
                     })
                 },
@@ -752,14 +752,14 @@
                         sticker: a,
                         fileUri: l,
                         assetData: c,
-                        isFocused: d,
-                        className: o,
+                        isFocused: o,
+                        className: d,
                         maskAsset: f,
                         positionRef: S,
                         withLoadingIndicator: m,
                         onError: E
-                    } = e, I = n.useRef(null), p = n.useRef(null), [k, y] = n.useState(!0), [_, R] = n.useState(!1), A = n.useRef(!1);
-                    A.current = t && d;
+                    } = e, I = n.useRef(null), p = n.useRef(null), [k, v] = n.useState(!0), [y, _] = n.useState(!1), A = n.useRef(!1);
+                    A.current = t && o;
                     let P = null == l ? (0, C.getStickerAssetUrl)(a) : l;
                     return (u(null != P, "Unable to determine sticker asset URL. Sticker ID: ".concat(a.id)), n.useEffect(() => {
                         if (null == I.current || null == P) return;
@@ -776,10 +776,10 @@
                                     assetUrl: P,
                                     assetData: c,
                                     onInitialDraw: () => {
-                                        !t && y(!1)
+                                        !t && v(!1)
                                     },
                                     onError: () => {
-                                        !t && (y(!1), R(!0), null == E || E())
+                                        !t && (v(!1), _(!0), null == E || E())
                                     }
                                 }), A.current && p.current.setState(!0))
                             };
@@ -790,20 +790,20 @@
                     }, [P, s, a.id, c, E]), n.useEffect(() => {
                         var e;
                         let i;
-                        !t && (i = 0), null === (e = p.current) || void 0 === e || e.setState(t && d, i)
-                    }, [a, t, d]), null == P) ? null : (0, r.jsx)("div", {
+                        !t && (i = 0), null === (e = p.current) || void 0 === e || e.setState(t && o, i)
+                    }, [a, t, o]), null == P) ? null : (0, r.jsx)("div", {
                         role: "img",
-                        className: o,
-                        "aria-label": _ ? g.default.Messages.ERROR_LOADING_STICKER : L(a),
+                        className: d,
+                        "aria-label": y ? g.default.Messages.ERROR_LOADING_STICKER : L(a),
                         ref: S,
                         children: (0, r.jsx)(x, {
-                            hasError: _,
+                            hasError: y,
                             isLoading: k,
                             maskAsset: f,
                             size: s,
                             withLoadingIndicator: m,
-                            children: T((0, r.jsx)("canvas", {
-                                className: v.lottieCanvas,
+                            children: R((0, r.jsx)("canvas", {
+                                className: T.lottieCanvas,
                                 ref: I
                             }), a.id)
                         })
@@ -817,10 +817,10 @@
                         size: l,
                         className: u,
                         maskAsset: c,
-                        positionRef: d,
+                        positionRef: o,
                         withLoadingIndicator: f,
                         fileUri: S
-                    } = e, [h, m] = n.useState(!1), [E, I] = n.useState(!0), [p, k] = n.useState(!1), g = n.useRef(null), _ = n.useRef(null), R = null != S ? S : (0, C.getStickerAssetUrl)(i, {
+                    } = e, [h, m] = n.useState(!1), [E, I] = n.useState(!0), [p, k] = n.useState(!1), g = n.useRef(null), y = n.useRef(null), _ = null != S ? S : (0, C.getStickerAssetUrl)(i, {
                         isPreview: !t || !h || !s,
                         size: l
                     }), A = n.useCallback(() => {
@@ -837,29 +837,29 @@
                         }
                     }, []), n.useLayoutEffect(() => {
                         var e;
-                        (null === (e = _.current) || void 0 === e ? void 0 : e.complete) === !0 && I(!1)
-                    }, []), null == R) ? null : (0, r.jsx)(o.VisibilitySensor, {
+                        (null === (e = y.current) || void 0 === e ? void 0 : e.complete) === !0 && I(!1)
+                    }, []), null == _) ? null : (0, r.jsx)(d.VisibilitySensor, {
                         ref: g,
                         onChange: m,
                         threshold: .7,
                         children: (0, r.jsx)("div", {
-                            className: a(u, v.pngImageWrapper),
-                            ref: d,
+                            className: a(u, T.pngImageWrapper),
+                            ref: o,
                             children: (0, r.jsx)(x, {
                                 hasError: p,
                                 isLoading: E,
                                 maskAsset: c,
                                 size: l,
                                 withLoadingIndicator: f,
-                                children: T((0, r.jsx)("img", {
-                                    className: v.pngImage,
+                                children: R((0, r.jsx)("img", {
+                                    className: T.pngImage,
                                     alt: L(i),
-                                    src: R,
+                                    src: _,
                                     draggable: !1,
                                     onError: P,
                                     onLoad: A,
-                                    onContextMenu: y,
-                                    ref: _
+                                    onContextMenu: v,
+                                    ref: y
                                 }), i.id)
                             })
                         })
@@ -873,8 +873,8 @@
                         isInteracting: a,
                         positionRef: l,
                         size: u,
-                        sticker: o
-                    } = e, h = (0, d.useStateFromStores)([S.default], () => S.default.useReducedMotion), m = n.useRef(null), I = {
+                        sticker: d
+                    } = e, h = (0, o.useStateFromStores)([S.default], () => S.default.useReducedMotion), m = n.useRef(null), I = {
                         transform: "scale(".concat(h ? 1 : 1 / i, ")"),
                         opacity: 0
                     }, p = (0, c.useTransition)(a, {
@@ -885,41 +885,41 @@
                             opacity: 1
                         },
                         leave: I,
-                        config: _
+                        config: y
                     }), k = n.useRef(null), C = (0, c.useSpring)({
                         ref: k,
                         transform: a || h ? "translateY(0)" : "translateY(-25px)",
                         opacity: a ? 1 : 0,
-                        config: R
+                        config: _
                     });
                     return (0, c.useChain)(a ? [m, k] : [k, m], a ? [0, .0625] : [0, 0]), p((e, n) => n && (0, r.jsx)(E.AppReferencePositionLayer, {
-                        className: v.positionedLayer,
+                        className: T.positionedLayer,
                         fixed: !0,
                         align: "center",
                         position: "center",
                         reference: l,
                         children: () => (0, r.jsxs)("div", {
-                            className: v.overlayWrapper,
+                            className: T.overlayWrapper,
                             children: [(0, r.jsx)(c.animated.div, {
-                                className: v.overlayStickerWrapper,
+                                className: T.overlayStickerWrapper,
                                 style: e,
                                 children: (0, r.jsx)(M, {
-                                    className: v.overlaySticker,
+                                    className: T.overlaySticker,
                                     disableAnimation: t,
                                     enlargeOnInteraction: !1,
                                     isInteracting: a,
                                     maskAsset: !1,
-                                    sticker: o,
+                                    sticker: d,
                                     size: Math.round(u * i),
                                     withLoadingIndicator: !1
                                 })
                             }), s && (0, r.jsx)(c.animated.div, {
-                                className: v.overlayLabelWrapper,
+                                className: T.overlayLabelWrapper,
                                 style: C,
                                 children: (0, r.jsx)(f.Text, {
                                     variant: "text-sm/medium",
-                                    className: v.overlayLabel,
-                                    children: o.name
+                                    className: T.overlayLabel,
+                                    children: d.name
                                 })
                             })]
                         })
@@ -934,22 +934,22 @@
                         enlargeScaleFactor: l = 1.55,
                         maskAsset: u = !1,
                         size: c,
-                        sticker: d,
-                        className: o,
+                        sticker: o,
+                        className: d,
                         withLoadingIndicator: f,
                         assetData: S,
                         fileUri: h,
                         onError: m
                     } = e, E = (0, I.useIsWindowFocused)(), C = (0, p.useShouldAnimateSticker)(t) && !i, g = n.useRef(null);
-                    if (null == d) return null;
-                    let v = d.format_type === k.StickerFormat.LOTTIE ? A : P;
+                    if (null == o) return null;
+                    let T = o.format_type === k.StickerFormat.LOTTIE ? A : P;
                     return (0, r.jsxs)(n.Fragment, {
-                        children: [(0, r.jsx)(v, {
+                        children: [(0, r.jsx)(T, {
                             shouldAnimate: C,
                             isFocused: E,
                             size: c,
-                            sticker: d,
-                            className: o,
+                            sticker: o,
+                            className: d,
                             maskAsset: u,
                             positionRef: g,
                             withLoadingIndicator: f,
@@ -963,9 +963,9 @@
                             isInteracting: t,
                             positionRef: g,
                             size: c,
-                            sticker: d
+                            sticker: o
                         })]
-                    }, "".concat(d.id, ",").concat(c))
+                    }, "".concat(o.id, ",").concat(c))
                 };
             var N = M
         },
@@ -1002,7 +1002,7 @@
             "use strict";
             i.r(t), i.d(t, {
                 default: function() {
-                    return T
+                    return R
                 }
             });
             var r = i("37983"),
@@ -1012,8 +1012,8 @@
                 l = i("917351"),
                 u = i("617258"),
                 c = i("77078"),
-                d = i("272030"),
-                o = i("997289"),
+                o = i("272030"),
+                d = i("997289"),
                 f = i("246511"),
                 S = i("151185"),
                 h = i("599110"),
@@ -1024,16 +1024,16 @@
                 k = i("591522"),
                 C = i("49111"),
                 g = i("782340"),
-                v = i("677930");
-            let y = (0, u.cssValueToNumber)(v.stickerPickerPreviewDimensions),
-                _ = (0, u.cssValueToNumber)(v.stickerPickerPreviewPadding),
-                R = n.memo(function(e) {
+                T = i("677930");
+            let v = (0, u.cssValueToNumber)(T.stickerPickerPreviewDimensions),
+                y = (0, u.cssValueToNumber)(T.stickerPickerPreviewPadding),
+                _ = n.memo(function(e) {
                     let {
                         isDisplayingIndividualStickers: t = !1,
                         preferAnimation: s = !0,
                         getStickerItemProps: u,
-                        getStickerRowProps: R,
-                        gutterWidth: T,
+                        getStickerRowProps: _,
+                        gutterWidth: R,
                         inspectedStickerPosition: L,
                         isScrolling: x,
                         isUsingKeyboardNavigation: A,
@@ -1042,8 +1042,8 @@
                         rowIndex: M,
                         stickerClassName: N,
                         stickerDescriptors: F,
-                        stickerPadding: b = _,
-                        stickerSize: w = y,
+                        stickerPadding: b = y,
+                        stickerSize: w = v,
                         ownedStickerPacks: K,
                         enlargeOnInteraction: O = !1,
                         channel: j,
@@ -1051,46 +1051,46 @@
                         checkSendability: D = !0
                     } = e, {
                         location: H
-                    } = (0, o.useAnalyticsContext)(), V = w + 2 * b, B = n.useMemo(() => ({
-                        gridColumnGap: T,
+                    } = (0, d.useAnalyticsContext)(), V = w + 2 * b, B = n.useMemo(() => ({
+                        gridColumnGap: R,
                         gridTemplateColumns: "repeat(auto-fill, ".concat(V, "px)"),
                         height: V,
                         paddingRight: t ? void 0 : V
-                    }), [t, T, V]), z = n.useMemo(() => ({
+                    }), [t, R, V]), z = n.useMemo(() => ({
                         width: w,
                         height: w,
                         padding: b
                     }), [b, w]);
                     return (0, r.jsx)("div", {
-                        className: v.row,
+                        className: T.row,
                         style: B,
-                        ...null == R ? void 0 : R(M),
+                        ...null == _ ? void 0 : _(M),
                         children: F.map(e => {
-                            var o;
-                            let y = e.visibleRowIndex === (null == L ? void 0 : L.rowIndex) && e.columnIndex === (null == L ? void 0 : L.columnIndex),
-                                _ = e.type === E.StickerGridItemTypes.STICKER && O && y,
-                                R = (0, l.throttle)(() => {
-                                    (null == x ? void 0 : x.current) !== !0 && (null == A ? void 0 : A.current) !== !0 && !y && (null == P || P(e))
+                            var d;
+                            let v = e.visibleRowIndex === (null == L ? void 0 : L.rowIndex) && e.columnIndex === (null == L ? void 0 : L.columnIndex),
+                                y = e.type === E.StickerGridItemTypes.STICKER && O && v,
+                                _ = (0, l.throttle)(() => {
+                                    (null == x ? void 0 : x.current) !== !0 && (null == A ? void 0 : A.current) !== !0 && !v && (null == P || P(e))
                                 }, 250),
                                 {
-                                    ref: T,
+                                    ref: R,
                                     tabIndex: F,
                                     onFocus: b,
                                     ...V
-                                } = null !== (o = null == u ? void 0 : u(e.columnIndex, M)) && void 0 !== o ? o : {};
+                                } = null !== (d = null == u ? void 0 : u(e.columnIndex, M)) && void 0 !== d ? d : {};
                             switch (e.type) {
                                 case E.StickerGridItemTypes.CREATE_STICKER:
                                     return (0, r.jsx)("div", {
                                         ...V,
                                         children: (0, r.jsxs)(c.Clickable, {
                                             "aria-label": e.name,
-                                            className: a(v.createSticker, N, {
-                                                [v.createInspected]: y
+                                            className: a(T.createSticker, N, {
+                                                [T.createInspected]: v
                                             }),
-                                            innerRef: T,
+                                            innerRef: R,
                                             tabIndex: F,
-                                            onFocus: null != b ? b : R,
-                                            onMouseMove: R,
+                                            onFocus: null != b ? b : _,
+                                            onMouseMove: _,
                                             onClick: () => {
                                                 e.type === E.StickerGridItemTypes.CREATE_STICKER && (h.default.track(C.AnalyticEvents.OPEN_MODAL, {
                                                     type: C.AnalyticsSections.CREATE_STICKER_MODAL,
@@ -1107,11 +1107,11 @@
                                             },
                                             style: z,
                                             children: [!O && (0, r.jsx)("div", {
-                                                className: v.inspectedIndicator
+                                                className: T.inspectedIndicator
                                             }), (0, r.jsx)("div", {
-                                                className: v.iconWrapper,
+                                                className: T.iconWrapper,
                                                 children: (0, r.jsx)(S.default, {
-                                                    className: v.icon
+                                                    className: T.icon
                                                 })
                                             }), (0, r.jsx)(c.Text, {
                                                 color: "interactive-active",
@@ -1126,18 +1126,18 @@
                                         ...V,
                                         key: e.sticker.id
                                     }, (0, r.jsxs)(c.Clickable, {
-                                        className: a(v.sticker, N, {
-                                            [v.stickerInspected]: y
+                                        className: a(T.sticker, N, {
+                                            [T.stickerInspected]: v
                                         }),
-                                        innerRef: T,
+                                        innerRef: R,
                                         tabIndex: F,
-                                        onFocus: null != b ? b : R,
-                                        onMouseMove: R,
+                                        onFocus: null != b ? b : _,
+                                        onMouseMove: _,
                                         onClick: t => {
                                             (null == x ? void 0 : x.current) !== !0 && (null == A ? void 0 : A.current) !== !0 && (null == U || U(e, t))
                                         },
                                         onContextMenu: e => {
-                                            (0, d.openContextMenuLazy)(e, async () => {
+                                            (0, o.openContextMenuLazy)(e, async () => {
                                                 let {
                                                     default: e
                                                 } = await i.el("367343").then(i.bind(i, "367343"));
@@ -1154,17 +1154,17 @@
                                         }), (0, r.jsxs)("div", {
                                             "aria-hidden": !0,
                                             children: [!O && (0, r.jsx)("div", {
-                                                className: v.inspectedIndicator
+                                                className: T.inspectedIndicator
                                             }), (0, r.jsx)(p.default, {
-                                                className: a(v.stickerNode, {
-                                                    [v.stickerNodeDimmed]: O && !y && null != L && -1 !== L.rowIndex && -1 !== L.columnIndex,
-                                                    [v.stickerNodeHidden]: _,
-                                                    [v.stickerUnsendable]: D && !(0, m.isSendableSticker)(e.sticker, G, j)
+                                                className: a(T.stickerNode, {
+                                                    [T.stickerNodeDimmed]: O && !v && null != L && -1 !== L.rowIndex && -1 !== L.columnIndex,
+                                                    [T.stickerNodeHidden]: y,
+                                                    [T.stickerUnsendable]: D && !(0, m.isSendableSticker)(e.sticker, G, j)
                                                 }),
-                                                disableAnimation: !y && !s,
+                                                disableAnimation: !v && !s,
                                                 enlargeOnInteraction: O,
-                                                isInteracting: y,
-                                                maskAsset: y,
+                                                isInteracting: v,
+                                                maskAsset: v,
                                                 sticker: e.sticker,
                                                 size: w
                                             }), l ? (0, r.jsx)(k.default, {
@@ -1177,7 +1177,7 @@
                         })
                     })
                 });
-            var T = R
+            var R = _
         },
         113270: function(e, t, i) {
             "use strict";
@@ -1451,4 +1451,4 @@
         }
     }
 ]);
-//# sourceMappingURL=61442.8450bab283c23bdc86aa.js.map
+//# sourceMappingURL=61442.5cf9db6f7a83c1163db7.js.map

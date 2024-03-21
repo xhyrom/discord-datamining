@@ -37,10 +37,10 @@
                     return C
                 },
                 clearErrors: function() {
-                    return O
+                    return P
                 },
                 resetPendingAccountChanges: function() {
-                    return P
+                    return O
                 },
                 resetAllPending: function() {
                     return g
@@ -80,7 +80,7 @@
             function f(e, t) {
                 let n = t ? c.default.Messages.DELETE_ACCOUNT : c.default.Messages.DISABLE_ACCOUNT,
                     r = t ? a.Endpoints.DELETE_ACCOUNT : a.Endpoints.DISABLE_ACCOUNT;
-                return (0, T.default)(t => i.default.post({
+                return (0, T.default)(t => i.HTTP.post({
                     url: r,
                     body: {
                         password: e,
@@ -97,7 +97,7 @@
                 })
             }
             async function N(e) {
-                let t = await i.default.patch({
+                let t = await i.HTTP.patch({
                         url: a.Endpoints.ME,
                         oldFormErrors: !0,
                         body: e
@@ -177,14 +177,14 @@
             }
 
             function U() {
-                return i.default.get({
+                return i.HTTP.get({
                     url: a.Endpoints.USER_HARVEST,
                     oldFormErrors: !0
                 })
             }
 
             function p() {
-                return i.default.post({
+                return i.HTTP.post({
                     url: a.Endpoints.USER_HARVEST,
                     oldFormErrors: !0
                 })
@@ -218,13 +218,13 @@
                 })
             }
 
-            function O() {
+            function P() {
                 o.default.dispatch({
                     type: "USER_SETTINGS_CLEAR_ERRORS"
                 })
             }
 
-            function P() {
+            function O() {
                 o.default.dispatch({
                     type: "USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES"
                 })
@@ -328,7 +328,7 @@
                     avatar_decoration_sku_id: null === _ ? null : null == _ ? void 0 : _.skuId
                 };
                 try {
-                    let t = await i.default.patch({
+                    let t = await i.HTTP.patch({
                         url: o.Endpoints.SET_GUILD_MEMBER(e),
                         body: l,
                         oldFormErrors: !0
@@ -856,7 +856,7 @@
                         type: "USER_PROFILE_UPDATE_START",
                         userId: d
                     });
-                    let n = await i.default.patch({
+                    let n = await i.HTTP.patch({
                         url: null != t ? T.Endpoints.GUILD_PROFILE(t, T.ME) : T.Endpoints.USER_PROFILE(T.ME),
                         body: e
                     });
@@ -1020,12 +1020,12 @@
                 }).value(), N[e.userId] = e.mutualFriends.length
             }
 
-            function O() {
+            function P() {
                 if (0 === Object.keys(A).length) return !1;
                 A = {}
             }
 
-            function P(e) {
+            function O(e) {
                 if (null == A[e.user.id]) return !1;
                 delete A[e.user.id]
             }
@@ -1052,8 +1052,8 @@
                     let t = e.mutual_friends_count;
                     N[e.user.id] = t
                 }
-                let O = null !== (d = e.premium_since) && void 0 !== d ? d : null,
-                    P = e.application;
+                let P = null !== (d = e.premium_since) && void 0 !== d ? d : null,
+                    O = e.application;
                 if (I[e.user.id] = {
                         userId: e.user.id,
                         banner: null === (t = e.user_profile) || void 0 === t ? void 0 : t.banner,
@@ -1065,20 +1065,20 @@
                         pronouns: null !== (f = null === (T = e.user_profile) || void 0 === T ? void 0 : T.pronouns) && void 0 !== f ? f : "",
                         connectedAccounts: null !== (U = e.connected_accounts.filter(e => u.default.isSupported(e.type))) && void 0 !== U ? U : [],
                         applicationRoleConnections: null !== (p = e.application_role_connections) && void 0 !== p ? p : [],
-                        premiumSince: null != O ? new Date(O) : null,
+                        premiumSince: null != P ? new Date(P) : null,
                         premiumType: e.premium_type,
                         premiumGuildSince: null != e.premium_guild_since ? new Date(e.premium_guild_since) : null,
                         lastFetched: Date.now(),
                         legacyUsername: e.legacy_username,
                         profileFetchFailed: !1,
-                        application: null != P ? {
-                            id: P.id,
-                            primarySkuId: P.primary_sku_id,
-                            customInstallUrl: P.custom_install_url,
-                            installParams: P.install_params,
-                            integrationTypesConfig: P.integration_types_config,
-                            flags: P.flags,
-                            popularApplicationCommandIds: P.popular_application_command_ids
+                        application: null != O ? {
+                            id: O.id,
+                            primarySkuId: O.primary_sku_id,
+                            customInstallUrl: O.custom_install_url,
+                            installParams: O.install_params,
+                            integrationTypesConfig: O.integration_types_config,
+                            flags: O.flags,
+                            popularApplicationCommandIds: O.popular_application_command_ids
                         } : null,
                         badges: e.badges
                     }, null != e.guild_member_profile) {
@@ -1258,10 +1258,10 @@
                         MUTUAL_FRIENDS_FETCH_START: D,
                         MUTUAL_FRIENDS_FETCH_SUCCESS: C,
                         MUTUAL_FRIENDS_FETCH_FAILURE: G,
-                        GUILD_JOIN: O,
-                        GUILD_DELETE: O,
-                        GUILD_MEMBER_ADD: P,
-                        GUILD_MEMBER_REMOVE: P,
+                        GUILD_JOIN: P,
+                        GUILD_DELETE: P,
+                        GUILD_MEMBER_ADD: O,
+                        GUILD_MEMBER_REMOVE: O,
                         GUILD_MEMBER_UPDATE: M,
                         USER_UPDATE: M,
                         LOGOUT: R
@@ -1304,11 +1304,11 @@
                 p = U.FormStates.CLOSED, R = {}
             }
 
-            function O() {
-                P(), g(), R = {}
+            function P() {
+                O(), g(), R = {}
             }
 
-            function P() {
+            function O() {
                 i = void 0, r = void 0, u = void 0, o = void 0
             }
 
@@ -1410,7 +1410,7 @@
                 },
                 USER_SETTINGS_ACCOUNT_CLOSE: C,
                 USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM: function() {
-                    O(), v(), C()
+                    P(), v(), C()
                 },
                 USER_SETTINGS_ACCOUNT_SUBMIT: function() {
                     p = U.FormStates.SUBMITTING, R = {}
@@ -1513,9 +1513,9 @@
                 USER_SETTINGS_CLEAR_ERRORS: function() {
                     R = {}
                 },
-                USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES: P,
+                USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES: O,
                 USER_SETTINGS_RESET_PENDING_PROFILE_CHANGES: g,
-                USER_SETTINGS_RESET_ALL_PENDING: O,
+                USER_SETTINGS_RESET_ALL_PENDING: P,
                 USER_SETTINGS_RESET_ALL_TRY_IT_OUT: v,
                 USER_SETTINGS_RESET_PENDING_AVATAR_DECORATION: function() {
                     u = void 0
@@ -1542,4 +1542,4 @@
         }
     }
 ]);
-//# sourceMappingURL=28727.cc9d44af91804b0e786e.js.map
+//# sourceMappingURL=28727.a18bb1582c746f8e4e82.js.map
