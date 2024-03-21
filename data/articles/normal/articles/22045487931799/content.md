@@ -27,6 +27,8 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22075711437079" width="255" height="461"></p>
 <p>You can collapse the view down to three activity cards and expand to see everything (up to 50 recent activities).</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22075711451799" width="364" height="80"></p>
+<p id="docs-internal-guid-89d7b8ee-7fff-5a4f-8a4f-9745e0f2136f">You can also choose to fully collapse activity cards or hide activity cards by selecting the <strong>cogwheel </strong>[<img src="https://support.discord.com/hc/article_attachments/22244053468183" width="26" height="24">] (within the activity card) and pressing the checkbox for the <strong>Hide Activity Cards </strong>option. </p>
+<p id="docs-internal-guid-94a2abeb-7fff-6c07-5868-f026e0973b33" class="wysiwyg-text-align-center"><span id="docs-internal-guid-a898de19-7fff-83b5-0330-6603ad2bf681"><img src="https://support.discord.com/hc/article_attachments/22244084790423" width="392" height="153"></span></p>
 <h2 id="h_01HRZ59A41S2JJDPJXRQKRAPMA">Engaging with Activity Cards</h2>
 <p>Want to ask a friend about that new game they’re playing? By selecting the activity cards, you can reply directly to the activity or even send them an emoji. In either case, this will send a direct message (<strong>DM</strong>) with a reference to the activity.</p>
 <p> </p>
@@ -37,13 +39,13 @@
 <p>If you want to prevent your activity from showing up in this feature, you can do so in two ways: 1) globally or 2) for a specific game.</p>
 <p><span class="wysiwyg-font-size-large"><strong>Globally</strong></span></p>
 <p>If you want to control whether <strong><em>any</em></strong> activity is shared, you can enable or disable your global settings in the <strong>Activity Privacy</strong> settings. </p>
-<p>1. Head over to your <strong>User Settings </strong>by selecting the <strong>cogwheel </strong>[<img src="https://support.discord.com/hc/article_attachments/22075711510039" width="20" height="20">] in the bottom left corner.</p>
+<p>1. Head over to your <strong>User Settings </strong>by selecting the <strong>cogwheel </strong>[<span id="docs-internal-guid-0e88afa6-7fff-e857-cf35-8ca2474c00a2"><img src="https://support.discord.com/hc/article_attachments/22244053510039" width="26" height="24"></span>] in the bottom left corner.</p>
 <p>2. Then under the <strong>Activity Settings</strong> section, select <strong>Activity Privacy</strong>. </p>
 <p>3. From here, you can use the toggle to enable or disable <strong>Share Activity with Others</strong>.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22075711534743" width="600" height="386"></p>
 <p><span class="wysiwyg-font-size-large"><strong>Specific Games</strong></span></p>
 <p>Alternatively, if you just want to prevent a specific game from being shared, you can disable specific games through the <strong>Registered Games </strong>menu. </p>
-<p>1. Head over to your <strong>User Settings </strong>by selecting the <strong>cogwheel </strong>[<img src="https://support.discord.com/hc/article_attachments/22075711562135" width="20" height="20">] in the bottom left corner.</p>
+<p>1. Head over to your <strong>User Settings </strong>by selecting the <strong>cogwheel </strong>[<span id="docs-internal-guid-0e88afa6-7fff-e857-cf35-8ca2474c00a2"><img src="https://support.discord.com/hc/article_attachments/22244084820375" width="26" height="24"></span>] in the bottom left corner.</p>
 <p>2. Then under the <strong>Activity Settings </strong>section, select <strong>Registered Games</strong>.</p>
 <p>3. From here, you can select the icon for <strong>Toggle Detection </strong>to prevent a game from showing up in the activity cards going forward.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22075683844119" width="624" height="237"></p>
