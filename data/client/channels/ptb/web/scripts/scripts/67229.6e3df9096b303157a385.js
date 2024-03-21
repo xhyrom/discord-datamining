@@ -87822,6 +87822,7 @@
                     nick: null !== (n = l.nick) && void 0 !== n ? n : _,
                     colorString: null !== (i = l.colorString) && void 0 !== i ? i : void 0,
                     colorRoleName: null != l.colorRoleId && null != a ? null == o ? void 0 : null === (t = o[l.colorRoleId]) || void 0 === t ? void 0 : t.name : void 0,
+                    colorRoleId: l.colorRoleId,
                     iconRoleId: l.iconRoleId,
                     guildMemberAvatar: l.avatar
                 }
@@ -88030,8 +88031,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711042457977",
-                                    build_number: "277430"
+                                    built_at: "1711043453312",
+                                    build_number: "277443"
                                 }
                             },
                             retries: 1
@@ -125477,7 +125478,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "757d0968826448bfc4fc21fc1f5fd000aafc922a"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "2f3d01bb15bdbafc8d75e07acf234724a3c02692"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -134975,7 +134976,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "277430"
+                                build_number: "277443"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -152751,4 +152752,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67229.b865c98ed2de2da72a7a.js.map
+//# sourceMappingURL=67229.6e3df9096b303157a385.js.map
