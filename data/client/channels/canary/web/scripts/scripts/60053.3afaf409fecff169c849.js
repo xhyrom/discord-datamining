@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["59196"], {
+    ["60053"], {
         777483: function(e, t, n) {
             var i = {
                 "./icon-file-acrobat.svg": "668973",
@@ -57759,7 +57759,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return R
+                    return k
                 }
             });
             var i = n("37983");
@@ -57774,21 +57774,23 @@
                 c = n("272030"),
                 f = n("888503"),
                 p = n("206230"),
-                m = n("862205"),
-                h = n("895026"),
-                x = n("506885"),
-                E = n("981601"),
-                y = n("42203"),
-                g = n("26989"),
-                S = n("305961"),
-                C = n("697218"),
-                _ = n("145131"),
-                T = n("666897"),
-                I = n("826684"),
-                v = n("782340"),
-                N = n("665958"),
-                A = n("919163");
-            let O = (0, m.createExperiment)({
+                m = n("812204"),
+                h = n("685665"),
+                x = n("862205"),
+                E = n("895026"),
+                y = n("506885"),
+                g = n("981601"),
+                S = n("42203"),
+                C = n("26989"),
+                _ = n("305961"),
+                T = n("697218"),
+                I = n("145131"),
+                v = n("666897"),
+                N = n("826684"),
+                A = n("782340"),
+                O = n("665958"),
+                R = n("919163");
+            let M = (0, x.createExperiment)({
                 kind: "user",
                 id: "2021-07_role_popout",
                 label: "Role Popout",
@@ -57804,119 +57806,125 @@
                 }]
             });
 
-            function R(e) {
+            function k(e) {
                 let {
                     roleColor: t,
                     roleId: l,
                     channelId: s,
-                    roleName: m,
-                    guildId: R,
-                    children: M,
-                    inlinePreview: k = !1
-                } = e, L = (0, u.useStateFromStores)([p.default], () => p.default.roleStyle), P = null != t && 0 !== t && !k, b = P && "dot" === L, j = e => (0, i.jsxs)(T.default, {
-                    className: a(A.roleMention),
-                    color: "username" === L && P ? t : null,
+                    roleName: x,
+                    guildId: k,
+                    children: L,
+                    inlinePreview: P = !1
+                } = e, {
+                    AnalyticsLocationProvider: b
+                } = (0, h.default)(m.default.ROLE_MENTION), j = (0, u.useStateFromStores)([p.default], () => p.default.roleStyle), U = null != t && 0 !== t && !P, D = U && "dot" === j, w = e => (0, i.jsxs)(v.default, {
+                    className: a(R.roleMention),
+                    color: "username" === j && U ? t : null,
                     ...e,
-                    children: [b && (0, i.jsx)(d.RoleDot, {
+                    children: [D && (0, i.jsx)(d.RoleDot, {
                         color: (0, o.int2hex)(t),
-                        className: N.roleDot,
+                        className: O.roleDot,
                         background: !1,
                         tooltip: !1
-                    }), M]
+                    }), L]
                 }), {
-                    enabled: U
-                } = O.getCurrentConfig({
+                    enabled: F
+                } = M.getCurrentConfig({
                     location: "2ec235_1"
                 }, {
                     autoTrackExposure: !1
                 });
-                return !U || k || null == s || null == R || null == l && "@everyone" !== m ? j() : (0, i.jsx)(d.Popout, {
-                    preload: async () => {
-                        null != l && await (0, h.requestMembersForRole)(R, l)
-                    },
-                    renderPopout: e => {
-                        let t = y.default.getChannel(s),
-                            a = S.default.getGuild(R),
-                            o = g.default.getMembers(a.id),
-                            u = S.default.getRole(R, null != l ? l : a.getEveryoneRoleId()),
-                            p = r(o).filter(e => {
-                                if ("@everyone" === m || e.roles.includes(l)) {
-                                    let t = C.default.getUser(e.userId);
-                                    return null != t
-                                }
-                                return !1
-                            }).sortBy(e => {
-                                var t;
-                                let n = C.default.getUser(e.userId);
-                                return (null != n ? null !== (t = e.nick) && void 0 !== t ? t : n.username : "").toLocaleLowerCase()
-                            }).map(e => {
-                                let l = C.default.getUser(e.userId);
-                                return (0, i.jsx)(d.Popout, {
-                                    preload: () => (0, x.default)(l.id, l.getAvatarURL(t.guild_id, 80), {
-                                        guildId: t.guild_id,
-                                        channelId: t.id
-                                    }),
-                                    renderPopout: n => (0, i.jsx)(E.default, {
-                                        ...n,
-                                        userId: e.userId,
-                                        guildId: a.id,
-                                        channelId: t.id
-                                    }),
-                                    spacing: 14,
-                                    children: (s, r) => {
-                                        let {
-                                            isShown: o
-                                        } = r;
-                                        return (0, i.jsx)(f.default, {
-                                            selected: o,
-                                            colorString: e.colorString,
-                                            colorRoleName: u.name,
-                                            user: l,
-                                            isOwner: e.userId === a.ownerId,
-                                            nick: e.nick,
-                                            premiumSince: null == e.premiumSince ? null : new Date(e.premiumSince),
-                                            channel: t,
-                                            guildId: a.id,
-                                            onContextMenu: e => {
-                                                (0, c.openContextMenuLazy)(e, async () => {
-                                                    let {
-                                                        default: e
-                                                    } = await n.el("834247").then(n.bind(n, "834247"));
-                                                    return n => (0, i.jsx)(e, {
-                                                        ...n,
-                                                        user: l,
-                                                        guildId: a.id,
-                                                        channel: t,
-                                                        showMediaItems: !0
-                                                    })
-                                                })
-                                            },
-                                            ...s
-                                        }, e.userId)
+                return !F || P || null == s || null == k || null == l && "@everyone" !== x ? (0, i.jsx)(b, {
+                    children: w()
+                }) : (0, i.jsx)(b, {
+                    children: (0, i.jsx)(d.Popout, {
+                        preload: async () => {
+                            null != l && await (0, E.requestMembersForRole)(k, l)
+                        },
+                        renderPopout: e => {
+                            let t = S.default.getChannel(s),
+                                a = _.default.getGuild(k),
+                                o = C.default.getMembers(a.id),
+                                u = _.default.getRole(k, null != l ? l : a.getEveryoneRoleId()),
+                                p = r(o).filter(e => {
+                                    if ("@everyone" === x || e.roles.includes(l)) {
+                                        let t = T.default.getUser(e.userId);
+                                        return null != t
                                     }
-                                }, l.id)
-                            }).value();
-                        return (0, i.jsx)(_.default, {
-                            className: A.rolePopout,
-                            ...e,
-                            children: (0, i.jsxs)(d.Scroller, {
-                                className: A.roleScroller,
-                                children: [(0, i.jsx)(I.default, {
-                                    className: A.roleHeader,
-                                    "aria-label": v.default.Messages.CHANNEL_MEMBERS_A11Y_LABEL.format({
-                                        title: u.name,
-                                        count: p.length
-                                    }),
-                                    children: (0, i.jsxs)("span", {
-                                        "aria-hidden": !0,
-                                        children: [u.name, " — ", p.length]
-                                    })
-                                }), p]
+                                    return !1
+                                }).sortBy(e => {
+                                    var t;
+                                    let n = T.default.getUser(e.userId);
+                                    return (null != n ? null !== (t = e.nick) && void 0 !== t ? t : n.username : "").toLocaleLowerCase()
+                                }).map(e => {
+                                    let l = T.default.getUser(e.userId);
+                                    return (0, i.jsx)(d.Popout, {
+                                        preload: () => (0, y.default)(l.id, l.getAvatarURL(t.guild_id, 80), {
+                                            guildId: t.guild_id,
+                                            channelId: t.id
+                                        }),
+                                        renderPopout: n => (0, i.jsx)(g.default, {
+                                            ...n,
+                                            userId: e.userId,
+                                            guildId: a.id,
+                                            channelId: t.id
+                                        }),
+                                        spacing: 14,
+                                        children: (s, r) => {
+                                            let {
+                                                isShown: o
+                                            } = r;
+                                            return (0, i.jsx)(f.default, {
+                                                selected: o,
+                                                colorString: e.colorString,
+                                                colorRoleName: u.name,
+                                                user: l,
+                                                isOwner: e.userId === a.ownerId,
+                                                nick: e.nick,
+                                                premiumSince: null == e.premiumSince ? null : new Date(e.premiumSince),
+                                                channel: t,
+                                                guildId: a.id,
+                                                onContextMenu: e => {
+                                                    (0, c.openContextMenuLazy)(e, async () => {
+                                                        let {
+                                                            default: e
+                                                        } = await n.el("834247").then(n.bind(n, "834247"));
+                                                        return n => (0, i.jsx)(e, {
+                                                            ...n,
+                                                            user: l,
+                                                            guildId: a.id,
+                                                            channel: t,
+                                                            showMediaItems: !0
+                                                        })
+                                                    })
+                                                },
+                                                ...s
+                                            }, e.userId)
+                                        }
+                                    }, l.id)
+                                }).value();
+                            return (0, i.jsx)(I.default, {
+                                className: R.rolePopout,
+                                ...e,
+                                children: (0, i.jsxs)(d.Scroller, {
+                                    className: R.roleScroller,
+                                    children: [(0, i.jsx)(N.default, {
+                                        className: R.roleHeader,
+                                        "aria-label": A.default.Messages.CHANNEL_MEMBERS_A11Y_LABEL.format({
+                                            title: u.name,
+                                            count: p.length
+                                        }),
+                                        children: (0, i.jsxs)("span", {
+                                            "aria-hidden": !0,
+                                            children: [u.name, " — ", p.length]
+                                        })
+                                    }), p]
+                                })
                             })
-                        })
-                    },
-                    position: "right",
-                    children: j
+                        },
+                        position: "right",
+                        children: w
+                    })
                 })
             }
         },
@@ -57924,7 +57932,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return _
+                    return I
                 }
             });
             var i = n("37983");
@@ -57935,57 +57943,65 @@
                 r = n("446674"),
                 o = n("77078"),
                 u = n("272030"),
-                d = n("980215"),
-                c = n("506885"),
-                f = n("981601"),
-                p = n("42203"),
-                m = n("26989"),
-                h = n("305961"),
-                x = n("27618"),
-                E = n("697218"),
-                y = n("666897"),
-                g = n("387111"),
-                S = n("158998"),
-                C = n("680894");
+                d = n("812204"),
+                c = n("685665"),
+                f = n("980215"),
+                p = n("506885"),
+                m = n("981601"),
+                h = n("42203"),
+                x = n("26989"),
+                E = n("305961"),
+                y = n("27618"),
+                g = n("697218"),
+                S = n("666897"),
+                C = n("387111"),
+                _ = n("158998"),
+                T = n("680894");
 
-            function _(e) {
+            function I(e) {
                 let {
                     className: t,
                     userId: l,
-                    channelId: _,
-                    inlinePreview: T = !1
-                } = e, I = (0, r.useStateFromStores)([E.default], () => E.default.getUser(l)), v = (0, r.useStateFromStores)([p.default], () => p.default.getChannel(_)), N = null != v ? v.getGuildId() : null, A = T || null == I || null == N || null == _ ? void 0 : e => {
-                    null != v && (0, u.openContextMenuLazy)(e, async () => {
+                    channelId: I,
+                    inlinePreview: v = !1
+                } = e, {
+                    AnalyticsLocationProvider: N
+                } = (0, c.default)(d.default.USER_MENTION), A = (0, r.useStateFromStores)([g.default], () => g.default.getUser(l)), O = (0, r.useStateFromStores)([h.default], () => h.default.getChannel(I)), R = null != O ? O.getGuildId() : null, M = v || null == A || null == R || null == I ? void 0 : e => {
+                    null != O && (0, u.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
                         } = await n.el("834247").then(n.bind(n, "834247"));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            user: I,
-                            channel: v,
-                            guildId: N
+                            user: A,
+                            channel: O,
+                            guildId: R
                         })
                     })
-                }, O = S.default.useName(I), R = (0, r.useStateFromStores)([p.default, m.default, x.default], () => g.default.getNickname(N, _, I)), M = h.default.getGuild(N), k = (0, d.useClydeEnabled)(M, v), L = k && l === C.CLYDE_AI_USER_ID ? C.CLYDE_AI_MENTION_COLOR : null, P = e => (0, i.jsx)(y.default, {
+                }, k = _.default.useName(A), L = (0, r.useStateFromStores)([h.default, x.default, y.default], () => C.default.getNickname(R, I, A)), P = E.default.getGuild(R), b = (0, f.useClydeEnabled)(P, O), j = b && l === T.CLYDE_AI_USER_ID ? T.CLYDE_AI_MENTION_COLOR : null, U = e => (0, i.jsx)(S.default, {
                     className: t,
-                    onContextMenu: A,
-                    color: L,
+                    onContextMenu: M,
+                    color: j,
                     ...e,
-                    children: "@".concat(null != R ? R : O)
+                    children: "@".concat(null != L ? L : k)
                 });
-                return T ? P() : (0, i.jsx)(o.Popout, {
-                    preload: null == I ? void 0 : () => (0, c.default)(I.id, I.getAvatarURL(N, 80), {
-                        guildId: null != N ? N : void 0,
-                        channelId: null != _ ? _ : void 0
-                    }),
-                    renderPopout: e => (a(null != I, "Unexpected missing user"), (0, i.jsx)(f.default, {
-                        userId: I.id,
-                        guildId: null != N ? N : void 0,
-                        channelId: _,
-                        ...e
-                    })),
-                    position: s.isMobile ? "top" : "right",
-                    children: e => P(e)
+                return v ? (0, i.jsx)(N, {
+                    children: U()
+                }) : (0, i.jsx)(N, {
+                    children: (0, i.jsx)(o.Popout, {
+                        preload: null == A ? void 0 : () => (0, p.default)(A.id, A.getAvatarURL(R, 80), {
+                            guildId: null != R ? R : void 0,
+                            channelId: null != I ? I : void 0
+                        }),
+                        renderPopout: e => (a(null != A, "Unexpected missing user"), (0, i.jsx)(m.default, {
+                            userId: A.id,
+                            guildId: null != R ? R : void 0,
+                            channelId: I,
+                            ...e
+                        })),
+                        position: s.isMobile ? "top" : "right",
+                        children: e => U(e)
+                    })
                 })
             }
         },
@@ -64513,11 +64529,12 @@
                         userId: n,
                         guildId: u,
                         channelId: d,
-                        analyticsLocations: c = r
+                        newAnalyticsLocations: c = r
                     } = e, f = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1], {
                         AnalyticsLocationProvider: p,
-                        analyticsLocations: m
-                    } = (0, a.default)(c), h = l.useMemo(() => ({
+                        analyticsLocations: m,
+                        sourceAnalyticsLocations: h
+                    } = (0, a.default)(c), x = l.useMemo(() => ({
                         layout: t,
                         userId: null != n ? n : null,
                         guildId: null != u ? u : null,
@@ -64526,14 +64543,14 @@
                     l.useEffect(() => {
                         f && (0, s.trackUserProfileAction)({
                             action: "VIEW",
+                            analyticsLocations: h,
                             layout: t,
                             userId: n,
                             guildId: u,
-                            channelId: d,
-                            analyticsLocations: m
+                            channelId: d
                         })
                     }, [f]);
-                    let x = l.useCallback(e => {
+                    let E = l.useCallback(e => {
                             (0, s.trackUserProfileAction)({
                                 layout: t,
                                 userId: n,
@@ -64543,21 +64560,21 @@
                                 ...e
                             })
                         }, [t, n, u, d, m]),
-                        E = l.useCallback(e => {
+                        y = l.useCallback(e => {
                             let {
                                 children: t
                             } = e;
                             return (0, i.jsx)(o.Provider, {
-                                value: h,
+                                value: x,
                                 children: (0, i.jsx)(p, {
                                     children: t
                                 })
                             })
-                        }, [h, p]);
+                        }, [x, p]);
                     return {
-                        UserProfileAnalyticsProvider: E,
+                        UserProfileAnalyticsProvider: y,
                         analyticsLocations: m,
-                        trackUserProfileAction: x
+                        trackUserProfileAction: E
                     }
                 },
                 d = function() {
@@ -66773,24 +66790,25 @@
                     closePopout: T,
                     setPopoutRef: H,
                     disableUserProfileLink: B = __OVERLAY__,
-                    analyticsParams: V = {}
-                } = e, K = l.useRef(null), W = (0, O.default)(t.id, n), Y = (0, d.default)(K), z = (0, r.useStateFromStores)([N.default], () => {
+                    analyticsParams: V = {},
+                    newAnalyticsLocations: K = []
+                } = e, W = l.useRef(null), Y = (0, O.default)(t.id, n), z = (0, d.default)(W), Z = (0, r.useStateFromStores)([N.default], () => {
                     var e;
                     return null === (e = N.default.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
-                }), Z = (0, r.useStateFromStores)([S.default], () => null != n ? S.default.getGuild(n) : null), J = (0, r.useStateFromStores)([g.default], () => null != n ? g.default.getMember(n, t.id) : null), q = t.isNonUserBot(), {
-                    UserProfileAnalyticsProvider: X
+                }), J = (0, r.useStateFromStores)([S.default], () => null != n ? S.default.getGuild(n) : null), q = (0, r.useStateFromStores)([g.default], () => null != n ? g.default.getMember(n, t.id) : null), X = t.isNonUserBot(), {
+                    UserProfileAnalyticsProvider: Q
                 } = (0, v.useUserProfileAnalyticsProvider)({
                     layout: "POPOUT",
-                    analyticsLocations: [h.default.PROFILE_POPOUT],
+                    newAnalyticsLocations: [...K, h.default.PROFILE_POPOUT],
                     userId: t.id,
                     guildId: n,
                     channelId: a
-                }, null == J || null != J.fullProfileLoadedTimestamp), {
-                    activity: Q,
-                    customStatusActivity: $,
-                    status: ee,
-                    isMobile: et,
-                    isApplicationStreaming: en
+                }, null == q || null != q.fullProfileLoadedTimestamp), {
+                    activity: $,
+                    customStatusActivity: ee,
+                    status: et,
+                    isMobile: en,
+                    isApplicationStreaming: ei
                 } = (0, r.useStateFromStoresObject)([y.default, C.default], () => {
                     let e = null != y.default.getAnyStreamForUser(t.id);
                     return {
@@ -66806,40 +66824,40 @@
                             } = e;
                             return t === D.ActivityTypes.CUSTOM_STATUS
                         }),
-                        status: q ? null : C.default.getStatus(t.id),
+                        status: X ? null : C.default.getStatus(t.id),
                         isMobile: C.default.isMobileOnline(t.id),
                         isApplicationStreaming: e
                     }
-                }), [ei, el] = l.useState(!1), ea = l.useMemo(() => null != n ? {
+                }), [el, ea] = l.useState(!1), es = l.useMemo(() => null != n ? {
                     [n]: [t.id]
                 } : {}, [n, t.id]);
-                (0, f.useSubscribeGuildMembers)(ea);
-                let es = (0, A.default)(t.id, n),
-                    er = (0, j.useShouldShowUserPopoutCollectiblesUpsell)({
+                (0, f.useSubscribeGuildMembers)(es);
+                let er = (0, A.default)(t.id, n),
+                    eo = (0, j.useShouldShowUserPopoutCollectiblesUpsell)({
                         popoutUser: t,
                         source: P.UserPopoutUpsellSource.USER_POPOUT,
                         guildId: n
                     }),
-                    [eo, eu] = l.useState(!1);
-                (0, c.default)(() => eu(!0), er.shouldShow ? 250 : null);
-                let ed = (0, E.useGetOrFetchApplication)(null == Q ? void 0 : Q.application_id);
+                    [eu, ed] = l.useState(!1);
+                (0, c.default)(() => ed(!0), eo.shouldShow ? 250 : null);
+                let ec = (0, E.useGetOrFetchApplication)(null == $ ? void 0 : $.application_id);
                 return l.useEffect(() => {
-                    null == H || H(null == K ? void 0 : K.current)
-                }, [K, H]), l.useEffect(() => {
-                    if (!ei)((null == Q ? void 0 : Q.application_id) == null || null != ed) && (null == n || (null == J ? void 0 : J.fullProfileLoadedTimestamp) != null) && (function() {
+                    null == H || H(null == W ? void 0 : W.current)
+                }, [W, H]), l.useEffect(() => {
+                    if (!el)((null == $ ? void 0 : $.application_id) == null || null != ec) && (null == n || (null == q ? void 0 : q.fullProfileLoadedTimestamp) != null) && (function() {
                         var e;
                         let i, l, s;
-                        null != Q && (i = Q.party, l = Q.assets, s = null != Q.application_id ? x.default.getApplication(Q.application_id) : null);
-                        let r = ee;
-                        ee === D.StatusTypes.ONLINE && (r = et ? D.AnalyticsUserStatusTypes.ONLINE_MOBILE : D.AnalyticsUserStatusTypes.ONLINE_DESKTOP);
-                        let o = null != J ? {
-                                has_nickname: !!(null == J ? void 0 : J.nick),
-                                has_guild_member_avatar: !!(null == J ? void 0 : J.avatar),
-                                has_guild_member_banner: !!(null == W ? void 0 : W.isUsingGuildMemberBanner()),
-                                has_guild_member_bio: !!(null == W ? void 0 : W.isUsingGuildMemberBio())
+                        null != $ && (i = $.party, l = $.assets, s = null != $.application_id ? x.default.getApplication($.application_id) : null);
+                        let r = et;
+                        et === D.StatusTypes.ONLINE && (r = en ? D.AnalyticsUserStatusTypes.ONLINE_MOBILE : D.AnalyticsUserStatusTypes.ONLINE_DESKTOP);
+                        let o = null != q ? {
+                                has_nickname: !!(null == q ? void 0 : q.nick),
+                                has_guild_member_avatar: !!(null == q ? void 0 : q.avatar),
+                                has_guild_member_banner: !!(null == Y ? void 0 : Y.isUsingGuildMemberBanner()),
+                                has_guild_member_bio: !!(null == Y ? void 0 : Y.isUsingGuildMemberBio())
                             } : {},
-                            u = null != z ? {
-                                other_application_id: null == z ? void 0 : z.id,
+                            u = null != Z ? {
+                                other_application_id: null == Z ? void 0 : Z.id,
                                 other_application_name: t.toString()
                             } : {};
                         I.default.track(D.AnalyticEvents.OPEN_POPOUT, {
@@ -66847,77 +66865,77 @@
                             guild_id: n,
                             channel_id: a,
                             other_user_id: t.id,
-                            application_id: null != Q ? Q.application_id : void 0,
-                            application_name: null != Q ? Q.name : void 0,
+                            application_id: null != $ ? $.application_id : void 0,
+                            application_name: null != $ ? $.name : void 0,
                             sku_id: null != s ? s.primarySkuId : null,
                             is_friend: _.default.isFriend(t.id),
                             has_images: !!(null !== (e = null == l ? void 0 : l.large_image) && void 0 !== e ? e : null == l ? void 0 : l.small_image),
                             party_max: null != i && null != i.size ? i.size[1] : void 0,
                             party_id: null != i ? i.id : void 0,
                             party_platform: null != i && (0, w.isSpotifyParty)(i.id) ? D.PlatformTypes.SPOTIFY : null,
-                            game_platform: (0, p.default)(Q),
+                            game_platform: (0, p.default)($),
                             profile_user_status: r,
-                            is_streaming: en,
-                            has_custom_status: null != $,
+                            is_streaming: ei,
+                            has_custom_status: null != ee,
                             has_avatar_decoration: null != t.avatarDecoration,
-                            has_profile_effect: (null == W ? void 0 : W.profileEffectId) != null,
-                            profile_has_nitro_customization: null != W && (null == W ? void 0 : W.hasPremiumCustomization()),
-                            profile_has_theme_color_customized: null != W && W.hasThemeColors(),
-                            profile_has_theme_animation: (null == W ? void 0 : W.popoutAnimationParticleType) != null,
+                            has_profile_effect: (null == Y ? void 0 : Y.profileEffectId) != null,
+                            profile_has_nitro_customization: null != Y && (null == Y ? void 0 : Y.hasPremiumCustomization()),
+                            profile_has_theme_color_customized: null != Y && Y.hasThemeColors(),
+                            profile_has_theme_animation: (null == Y ? void 0 : Y.popoutAnimationParticleType) != null,
                             ...o,
                             ...u,
                             ...V
                         })
-                    }(), el(!0))
-                }, [J, null == Q ? void 0 : Q.application_id, ed, ei, n]), (0, i.jsx)(X, {
+                    }(), ea(!0))
+                }, [q, null == $ ? void 0 : $.application_id, ec, el, n]), (0, i.jsx)(Q, {
                     children: (0, i.jsx)(u.default, {
                         section: D.AnalyticsSections.PROFILE_POPOUT,
                         children: (0, i.jsx)(o.Dialog, {
-                            ref: K,
+                            ref: W,
                             "aria-label": t.username,
                             onClick: G,
                             onContextMenu: G,
-                            style: er.shouldShow ? {
+                            style: eo.shouldShow ? {
                                 marginTop: L.DEFAULT_COLLECTIBLES_UPSELL_HEIGHT
                             } : void 0,
                             children: (0, i.jsxs)(M.default, {
                                 user: t,
                                 guildId: n,
                                 profileType: U.UserProfileTypes.POPOUT,
-                                className: er.shouldShow ? F.hasCollectiblesUpsell : void 0,
-                                showOutOfBoundaryComponents: eo,
+                                className: eo.shouldShow ? F.hasCollectiblesUpsell : void 0,
+                                showOutOfBoundaryComponents: eu,
                                 children: [(0, i.jsx)(b.default, {
                                     user: t,
-                                    displayProfile: W,
+                                    displayProfile: Y,
                                     guildId: n,
                                     channelId: a,
                                     onClose: () => null == T ? void 0 : T(),
-                                    isMobile: et,
-                                    isStreaming: (0, m.default)(Q),
-                                    status: ee,
+                                    isMobile: en,
+                                    isStreaming: (0, m.default)($),
+                                    status: et,
                                     disableUserProfileLink: B,
-                                    isHovering: Y,
-                                    upsell: er.shouldShow ? (0, i.jsx)(L.default, {
+                                    isHovering: z,
+                                    upsell: eo.shouldShow ? (0, i.jsx)(L.default, {
                                         user: t,
                                         upsellSource: P.UserPopoutUpsellSource.USER_POPOUT,
-                                        displayProfile: W,
+                                        displayProfile: Y,
                                         onClose: T,
-                                        ...er
+                                        ...eo
                                     }) : void 0
                                 }), (0, i.jsxs)(M.default.Inner, {
                                     children: [(0, i.jsx)(R.default, {
                                         onTooltipClose: T
                                     }), (0, i.jsx)(k.default, {
-                                        activity: Q,
-                                        customStatusActivity: $,
-                                        displayProfile: W,
+                                        activity: $,
+                                        customStatusActivity: ee,
+                                        displayProfile: Y,
                                         user: t,
-                                        guild: Z,
-                                        guildMember: J,
+                                        guild: J,
+                                        guildMember: q,
                                         channelId: a,
                                         onClose: T,
                                         setNote: s,
-                                        canDM: es,
+                                        canDM: er,
                                         analyticsParams: V
                                     })]
                                 })]
@@ -81700,4 +81718,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59196.317f04313d7f21f174cf.js.map
+//# sourceMappingURL=60053.3afaf409fecff169c849.js.map
