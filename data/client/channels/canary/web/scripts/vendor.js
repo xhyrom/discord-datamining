@@ -88074,8 +88074,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711055362556",
-                                    build_number: "277572"
+                                    built_at: "1711058486835",
+                                    build_number: "277622"
                                 }
                             },
                             retries: 1
@@ -125556,7 +125556,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "67ff7fb095e3ef1b373b2a1761a63ded4975048b"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "84151eeaf8d6536459029f36681088f837d2fd72"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -135054,7 +135054,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "277572"
+                                build_number: "277622"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -147004,7 +147004,7 @@
             });
             var i = n("37983"),
                 s = n("884691"),
-                r = n("677935"),
+                r = n("465098"),
                 a = n.n(r),
                 o = n("582909"),
                 l = n.n(o),
@@ -147072,7 +147072,7 @@
             }), n("222007");
             var i = n("37983"),
                 s = n("884691"),
-                r = n("677935"),
+                r = n("465098"),
                 a = n.n(r),
                 o = n("811022"),
                 l = n("784063");
@@ -150137,7 +150137,7 @@
             });
             var i = n("37983"),
                 s = n("884691"),
-                r = n("677935"),
+                r = n("465098"),
                 a = n.n(r),
                 o = n("793722"),
                 l = n("441822");
@@ -152823,4 +152823,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.79a1b5bfe6fa9a2bb22d.js.map
+//# sourceMappingURL=29062.61555eef53cf5f69f97b.js.map
