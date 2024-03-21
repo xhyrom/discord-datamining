@@ -1,23 +1,23 @@
 <p><strong><span class="wysiwyg-font-size-large">What this article covers: </span></strong></p>
 <ul>
-    <li><a href="#h_01HSED5BPEA50Y83ZT0A73ZPNC">What is Polls?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/22163184112407#h_01HSED5BPEA50Y83ZT0A73ZPNC">What is Polls?</a></li>
     <li>
-        <a href="#h_01HSED5BPEP8237V9AR1RJMJWQ">How do I create a Poll?</a>
+        <a href="https://support.discord.com/hc/en-us/articles/22163184112407#h_01HSED5BPEP8237V9AR1RJMJWQ">How do I create a Poll?</a>
         <ul>
-            <li><a href="#h_01HSED5BPES3AW3NAQF30VMNPM">Desktop</a></li>
-            <li><a href="#h_01HSED5BPE82FE27Z418WJ487B">Mobile</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/22163184112407#h_01HSED5BPES3AW3NAQF30VMNPM">Desktop</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/22163184112407#h_01HSED5BPE82FE27Z418WJ487B">Mobile</a></li>
         </ul>
     </li>
     <li>
-        <a href="#h_01HSED5BPE1J4JCH04CDD99GBP">How do I vote in a Poll?</a>
+        <a href="https://support.discord.com/hc/en-us/articles/22163184112407#h_01HSED5BPE1J4JCH04CDD99GBP">How do I vote in a Poll?</a>
         <ul>
-            <li><a href="#h_01HSED5BPE4GKY11FXKRJBF9CR">Desktop</a></li>
-            <li><a href="#h_01HSED5BPE6P59JJ15321H9R8R">Mobile</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/22163184112407#h_01HSED5BPE4GKY11FXKRJBF9CR">Desktop</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/22163184112407#h_01HSED5BPE6P59JJ15321H9R8R">Mobile</a></li>
         </ul>
     </li>
-    <li><a href="#h_01HSED5BPEDH4YYFVVCXQ2NKZ1">Frequently Asked Questions</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/22163184112407#h_01HSED5BPEDH4YYFVVCXQ2NKZ1">Frequently Asked Questions</a></li>
 </ul>
-<h3 id="h_01HSED5BPE69HJMFWDK6Y6X8BZ"><span style="color: #434343;" data-darkreader-inline-color="">This is currently an experiment and available to a select group of users.</span></h3>
+<h3 id="h_01HSED5BPE69HJMFWDK6Y6X8BZ"><span style="color: #434343;" data-darkreader-inline-color="">This is currently an experiment and available to a select number of servers.</span></h3>
 <h1 id="h_01HSED5BPEA50Y83ZT0A73ZPNC">What is Polls?</h1>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22214929953303" width="538" height="337"></p>
 <p>Polls is a feature on Discord with which you can create a poll to have your friends and community members vote on anything! You can add up to 10 answers for people to vote on in each poll. This can help decide the next game you’ll play together for game night, if pineapple belongs on pizza, and so much more!</p>
