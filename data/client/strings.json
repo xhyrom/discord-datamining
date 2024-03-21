@@ -16894,6 +16894,7 @@
   "QUESTS_FIND_QUEST": "\"You can find this again in User Settings > Gift Inventory\"",
   "QUESTS_CLAIM_BY": "\"Claim by {expirationDate}.\"",
   "QUESTS_AVAILABLE_UNTIL": "\"Available until {expirationDate}.\"",
+  "QUESTS_PROGRESS_WEB_TIP": "\"Use the desktop app to make progress!\"",
   "QUESTS_COMPLETION_PROGRESS_NOT_STARTED": "\"Ready when you are...\"",
   "QUESTS_COMPLETION_PROGRESS_STARTED": "\"Keep it up!\"",
   "QUESTS_COMPLETION_PROGRESS_HALFWAY": "\"You're halfway there!\"",
