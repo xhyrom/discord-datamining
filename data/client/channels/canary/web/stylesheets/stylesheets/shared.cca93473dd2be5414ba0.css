@@ -17889,6 +17889,192 @@ html.disable-forced-colors * {
     text-decoration: underline
 }
 
+.inline_be422b {
+    opacity: 1;
+    transition: all.1s ease
+}
+
+.inline_be422b.hiddenAttachment_dfecc7 {
+    visibility: hidden
+}
+
+.obscured_dd8869 {
+    transition: all.1s ease
+}
+
+.obscured_dd8869.hiddenAttachment_dfecc7 {
+    pointer-events: none
+}
+
+.obscured_dd8869.hiddenAttachment_dfecc7.hiddenSpoiler__57186 {
+    filter: blur(var(--custom-message-attachment-spoiler-blur-radius))
+}
+
+.obscured_dd8869.hiddenAttachment_dfecc7.hiddenExplicit__607a7 {
+    filter: blur(40px)brightness(.55)
+}
+
+.obscureVideo_efdb7b {
+    bottom: 36px
+}
+
+.attachmentContentItem_ef9fc2 {
+    flex: auto
+}
+
+.removeAttachmentButton__72505 {
+    opacity: 0;
+    align-self: flex-start;
+    flex: 0 0 auto;
+    cursor: pointer;
+    color: var(--interactive-normal);
+    padding: 2px
+}
+
+.spoilerRemoveAttachmentButton__9c0d3 {
+    position: absolute;
+    top: -2px;
+    right: -20px
+}
+
+.messageAttachment_b97504 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: start;
+    max-width: 100%;
+    height: 100%
+}
+
+.messageAttachmentNoJustify__922b7 {
+    justify-self: auto !important
+}
+
+.messageAttachmentFullWidth__89ab6 {
+    width: 100%;
+    align-items: center
+}
+
+.messageAttachmentMediaMosaic__65bfc {
+    position: relative;
+    max-height: inherit;
+    border-radius: 2px
+}
+
+.hasFooter__07269 {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    max-width: 100%
+}
+
+.hasFooter__07269 video {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0
+}
+
+.messageAttachmentWithFooter_b68ca2 {
+    flex-direction: column
+}
+
+.hideOverflow_d442b2 {
+    overflow: hidden
+}
+
+:hover+.removeAttachmentButton__72505,
+.removeAttachmentButton__72505:hover,
+.removeAttachmentButton__72505:focus-within,
+:hover+.hoverButtonGroup__5b423,
+.hoverButtonGroup__5b423:hover,
+.keyboard-mode .hoverButtonGroup__5b423:focus-within {
+    opacity: 1
+}
+
+.removeAttachmentButton__72505:hover {
+    color: var(--interactive-hover)
+}
+
+.hoverButtonGroup__5b423 {
+    display: flex;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+    border-radius: 5px;
+    top: 4px;
+    right: 4px;
+    background-color: var(--background-primary);
+    overflow: hidden
+}
+
+.nonMediaAttachment__30665 {
+    top: -8px;
+    right: -8px;
+    outline: 1px solid var(--background-secondary)
+}
+
+.hoverButtonGroup__5b423:hover,
+.hoverButtonGroup__5b423:focus {
+    cursor: pointer
+}
+
+.hoverButton__13836 {
+    display: flex;
+    padding: 6px;
+    color: var(--interactive-normal)
+}
+
+.hoverButton__13836:hover,
+.keyboard-mode .hoverButton__13836:focus {
+    background-color: var(--background-modifier-hover);
+    color: var(--interactive-hover)
+}
+
+.hoverButton__13836:active {
+    background-color: var(--background-modifier-active);
+    color: var(--interactive-active)
+}
+
+.removeAttachmentHoverButton__4ddb5:hover,
+.keyboard-mode .removeAttachmentHoverButton__4ddb5:focus {
+    background-color: var(--button-danger-background);
+    color: var(--white-500)
+}
+
+.removeAttachmentHoverButton__4ddb5:active {
+    background-color: var(--button-danger-background-active);
+    color: var(--white-500)
+}
+
+.downloadHoverButtonIcon_cc2f59 {
+    width: 20px;
+    height: 20px
+}
+
+.clipPill__75a57 {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    padding: 4px 8px;
+    background-color: var(--brand-500);
+    border-radius: var(--radius-xs);
+    z-index: 1;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px
+}
+
+.enable-forced-colors .removeAttachmentButton__72505 {
+    background-color: ButtonFace;
+    border: 1px solid ButtonFace;
+    color: ButtonText;
+    opacity: 1
+}
+
+.enable-forced-colors .removeAttachmentButton__72505:hover,
+.enable-forced-colors .removeAttachmentButton__72505:focus {
+    border-color: ButtonText
+}
+
 @use postcss-pxtorem;
 
 .theme-dark.custom-theme-background .embedFull__8dc21 {
@@ -18538,192 +18724,6 @@ html.disable-forced-colors * {
     .theme-light .ephemeralMessage__6a8ba {
         font-weight: 500
     }
-}
-
-.inline_be422b {
-    opacity: 1;
-    transition: all.1s ease
-}
-
-.inline_be422b.hiddenAttachment_dfecc7 {
-    visibility: hidden
-}
-
-.obscured_dd8869 {
-    transition: all.1s ease
-}
-
-.obscured_dd8869.hiddenAttachment_dfecc7 {
-    pointer-events: none
-}
-
-.obscured_dd8869.hiddenAttachment_dfecc7.hiddenSpoiler__57186 {
-    filter: blur(var(--custom-message-attachment-spoiler-blur-radius))
-}
-
-.obscured_dd8869.hiddenAttachment_dfecc7.hiddenExplicit__607a7 {
-    filter: blur(40px)brightness(.55)
-}
-
-.obscureVideo_efdb7b {
-    bottom: 36px
-}
-
-.attachmentContentItem_ef9fc2 {
-    flex: auto
-}
-
-.removeAttachmentButton__72505 {
-    opacity: 0;
-    align-self: flex-start;
-    flex: 0 0 auto;
-    cursor: pointer;
-    color: var(--interactive-normal);
-    padding: 2px
-}
-
-.spoilerRemoveAttachmentButton__9c0d3 {
-    position: absolute;
-    top: -2px;
-    right: -20px
-}
-
-.messageAttachment_b97504 {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: start;
-    max-width: 100%;
-    height: 100%
-}
-
-.messageAttachmentNoJustify__922b7 {
-    justify-self: auto !important
-}
-
-.messageAttachmentFullWidth__89ab6 {
-    width: 100%;
-    align-items: center
-}
-
-.messageAttachmentMediaMosaic__65bfc {
-    position: relative;
-    max-height: inherit;
-    border-radius: 2px
-}
-
-.hasFooter__07269 {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    max-width: 100%
-}
-
-.hasFooter__07269 video {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0
-}
-
-.messageAttachmentWithFooter_b68ca2 {
-    flex-direction: column
-}
-
-.hideOverflow_d442b2 {
-    overflow: hidden
-}
-
-:hover+.removeAttachmentButton__72505,
-.removeAttachmentButton__72505:hover,
-.removeAttachmentButton__72505:focus-within,
-:hover+.hoverButtonGroup__5b423,
-.hoverButtonGroup__5b423:hover,
-.keyboard-mode .hoverButtonGroup__5b423:focus-within {
-    opacity: 1
-}
-
-.removeAttachmentButton__72505:hover {
-    color: var(--interactive-hover)
-}
-
-.hoverButtonGroup__5b423 {
-    display: flex;
-    opacity: 0;
-    z-index: 2;
-    position: absolute;
-    border-radius: 5px;
-    top: 4px;
-    right: 4px;
-    background-color: var(--background-primary);
-    overflow: hidden
-}
-
-.nonMediaAttachment__30665 {
-    top: -8px;
-    right: -8px;
-    outline: 1px solid var(--background-secondary)
-}
-
-.hoverButtonGroup__5b423:hover,
-.hoverButtonGroup__5b423:focus {
-    cursor: pointer
-}
-
-.hoverButton__13836 {
-    display: flex;
-    padding: 6px;
-    color: var(--interactive-normal)
-}
-
-.hoverButton__13836:hover,
-.keyboard-mode .hoverButton__13836:focus {
-    background-color: var(--background-modifier-hover);
-    color: var(--interactive-hover)
-}
-
-.hoverButton__13836:active {
-    background-color: var(--background-modifier-active);
-    color: var(--interactive-active)
-}
-
-.removeAttachmentHoverButton__4ddb5:hover,
-.keyboard-mode .removeAttachmentHoverButton__4ddb5:focus {
-    background-color: var(--button-danger-background);
-    color: var(--white-500)
-}
-
-.removeAttachmentHoverButton__4ddb5:active {
-    background-color: var(--button-danger-background-active);
-    color: var(--white-500)
-}
-
-.downloadHoverButtonIcon_cc2f59 {
-    width: 20px;
-    height: 20px
-}
-
-.clipPill__75a57 {
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    padding: 4px 8px;
-    background-color: var(--brand-500);
-    border-radius: var(--radius-xs);
-    z-index: 1;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px
-}
-
-.enable-forced-colors .removeAttachmentButton__72505 {
-    background-color: ButtonFace;
-    border: 1px solid ButtonFace;
-    color: ButtonText;
-    opacity: 1
-}
-
-.enable-forced-colors .removeAttachmentButton__72505:hover,
-.enable-forced-colors .removeAttachmentButton__72505:focus {
-    border-color: ButtonText
 }
 
 .oneByOneGrid__02495 {
@@ -28164,4 +28164,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.cf9c24eda4691396dc51.css.map*/
+/*# sourceMappingURL=shared.cca93473dd2be5414ba0.css.map*/
