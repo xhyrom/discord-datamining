@@ -8294,6 +8294,8 @@
   "PREMIUM_MOBILE_TRIAL_MARKETING_PAGE_BADGE": "\"Free Trial ({days, plural, =1 {# day left} other {# days left}})\"",
   "PREMIUM_MOBILE_TRIAL_FREE_TRIAL_BADGE": "\"Free Trial\"",
   "POWERED_BY_NITRO": "\"Powered by Nitro\"",
+  "PREMIUM_ATTACHMENT_HOVER_NON_SUBSCRIBER": "\"Unlock 500MB uploads with Nitro\"",
+  "PREMIUM_ATTACHMENT_HOVER_SUBSCRIBER": "\"500MB uploads unlocked!\"",
   "USER_ACTIVITY_HEADER_PLAYING": "\"Playing a game\"",
   "USER_ACTIVITY_HEADER_LIVE_ON_PLATFORM": "\"Live on !!{platform}!!\"",
   "USER_ACTIVITY_HEADER_PLAYING_ON_PLATFORM": "\"Playing on !!{platform}!!\"",
