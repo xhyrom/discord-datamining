@@ -12,7 +12,7 @@
                 a = n("49111"),
                 o = n("782340"),
                 s = {
-                    changeNickname: (e, t, n, s) => i.default.patch({
+                    changeNickname: (e, t, n, s) => i.HTTP.patch({
                         url: a.Endpoints.GUILD_MEMBER_NICK(e, n),
                         body: {
                             nick: s
@@ -1334,7 +1334,7 @@
                 let d = async t => u >= 3 ? (p(!0), l.default.dispatch({
                     type: "APPLICATION_COMMAND_INDEX_FETCH_FAILURE",
                     target: e
-                })) : (await new Promise(e => setTimeout(e, t)), c()), c = () => i.default.get({
+                })) : (await new Promise(e => setTimeout(e, t)), c()), c = () => i.HTTP.get({
                     url: r,
                     retries: 3 - u - 1,
                     signal: n.signal,
@@ -3976,7 +3976,7 @@
                         S = I.default.getChannel(g.default.castMessageIdAsChannelId(n)),
                         h = await B(t, () => {
                             let e = null != n ? y.Endpoints.CHANNEL_MESSAGE_THREADS(t.id, n) : y.Endpoints.CHANNEL_THREADS(t.id);
-                            return o.default.post({
+                            return o.HTTP.post({
                                 url: e,
                                 body: {
                                     name: N,
@@ -3995,7 +3995,7 @@
             }
 
             function U(e, t, n, i, l) {
-                return B(e, () => o.default.post({
+                return B(e, () => o.HTTP.post({
                     url: y.Endpoints.CHANNEL_THREADS(e.id),
                     body: {
                         name: t,
@@ -4030,7 +4030,7 @@
                                 flags: 0 !== d ? d : void 0
                             }
                         },
-                        C = await B(t, () => null != r && r.length > 0 ? s(A, E, r) : o.default.post({
+                        C = await B(t, () => null != r && r.length > 0 ? s(A, E, r) : o.HTTP.post({
                             url: A,
                             body: E
                         }));
@@ -4233,4 +4233,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31337.c62cd04bc097da90c46a.js.map
+//# sourceMappingURL=31337.51b247b7a1e212f12ae0.js.map

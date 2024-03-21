@@ -42,7 +42,7 @@
                         extraInfo: t,
                         mediaEngineState: l.default.getState()
                     };
-                    n = await a.default.post({
+                    n = await a.HTTP.post({
                         url: u.Endpoints.DEBUG_LOGS(u.DebugLogCategory.RTC),
                         attachments: [...i.map(e => ({
                             name: e.name,
@@ -438,7 +438,7 @@
                     return i
                 },
                 trackClientThemeUpdated: function() {
-                    return H
+                    return F
                 },
                 default: function() {
                     return W
@@ -483,8 +483,8 @@
                     EDITOR: x.UserSettingsDelay.SLOW_USER_ACTION,
                     SETTINGS: x.UserSettingsDelay.INFREQUENT_USER_ACTION
                 }),
-                F = l.createContext({}),
-                H = e => {
+                H = l.createContext({}),
+                F = e => {
                     let {
                         isPersisted: t,
                         themeName: n,
@@ -569,7 +569,7 @@
                         type: t,
                         delay: k[t]
                     }), [t]);
-                    return (0, s.jsx)(F.Provider, {
+                    return (0, s.jsx)(H.Provider, {
                         value: o,
                         children: (0, s.jsx)("div", {
                             ...a,
@@ -583,10 +583,10 @@
                     className: t
                 } = e, {
                     delay: n
-                } = l.useContext(F), {
+                } = l.useContext(H), {
                     analyticsLocations: i
                 } = (0, p.default)(_.default.CLIENT_THEMES_THEME_SELECTOR), [a, o, u] = (0, d.useStateFromStoresArray)([I.default, y.default, b.default], () => [I.default.theme, null == b.default.gradientPreset, y.default.useSystemTheme === L.SystemThemeState.ON]), c = e => {
-                    (0, O.resetBackgroundGradientPreset)(), H({
+                    (0, O.resetBackgroundGradientPreset)(), F({
                         isPersisted: !0,
                         analyticsLocations: i,
                         themeName: "default ".concat(e)
@@ -619,7 +619,7 @@
                 } = e, {
                     type: u,
                     delay: f
-                } = l.useContext(F), {
+                } = l.useContext(H), {
                     analyticsLocations: g
                 } = (0, p.default)(_.default.CLIENT_THEMES_THEME_SELECTOR), [v, I, y] = (0, d.useStateFromStoresArray)([b.default], () => {
                     var e;
@@ -629,7 +629,7 @@
                     (R === w.BACKGROUND_GRADIENT_PRESETS.length - 2 && "EDITOR" === u || y === c.BackgroundGradientPresetId.EASTER_EGG) && A(!0)
                 }, [R, u, y]);
                 let K = (e, t) => {
-                    if ((0, O.updateBackgroundGradientPreset)(e.id), H({
+                    if ((0, O.updateBackgroundGradientPreset)(e.id), F({
                             isPersisted: !v,
                             analyticsLocations: g,
                             themeName: c.BackgroundGradientPresetId[e.id]
@@ -745,7 +745,7 @@
                         g = "\n    ".concat((0, d.default)(f), "\n\n    Metadata:\n    ").concat(JSON.stringify((0, u.default)(), void 0, 2), "\n\n    ChannelStore:\n    ").concat(JSON.stringify(s.default.getDebugInfo(), void 0, 2), "\n\n    Logs:\n    ").concat(t, "\n\n    System logs:\n    ").concat(n, "\n\n    Push Notifications:\n    ").concat(a, "\n    ");
                     l.clear();
                     let m = c.Endpoints.DEBUG_LOG(e, "discord_app_logs");
-                    await i.default.post({
+                    await i.HTTP.post({
                         url: m,
                         body: g,
                         retries: 3,
@@ -797,8 +797,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "277622",
-                    versionHash: "84151eeaf8d6536459029f36681088f837d2fd72"
+                    buildNumber: "277642",
+                    versionHash: "d3c289974653591981d86e1f668303ea97c9613f"
                 }
             }
             n.r(t), n.d(t, {
@@ -1154,10 +1154,10 @@
                 s = n("872717"),
                 l = n("49111");
             async function o() {
-                return (await s.default.get(l.Endpoints.NOTIFICATION_SNAPSHOTS)).body
+                return (await s.HTTP.get(l.Endpoints.NOTIFICATION_SNAPSHOTS)).body
             }
             async function r(e) {
-                return (await s.default.post({
+                return (await s.HTTP.post({
                     url: l.Endpoints.NOTIFICATION_SNAPSHOTS,
                     body: {
                         label: e
@@ -1165,10 +1165,10 @@
                 })).body
             }
             async function u(e) {
-                return (await s.default.post(l.Endpoints.RESTORE_NOTIFICATION_SNAPSHOT(e))).body
+                return (await s.HTTP.post(l.Endpoints.RESTORE_NOTIFICATION_SNAPSHOT(e))).body
             }
             async function d(e) {
-                return (await s.default.delete(l.Endpoints.NOTIFICATION_SNAPSHOT(e))).body
+                return (await s.HTTP.del(l.Endpoints.NOTIFICATION_SNAPSHOT(e))).body
             }
             async function c(e) {
                 if (e.length > 0) {
@@ -1452,8 +1452,8 @@
                 }
             }
             async function k(e) {
-                await F(() => H()), await F(() => d.default.setAccountFlag(O.AccountNotificationFlags.USE_NEW_NOTIFICATIONS, !0));
-                let t = await F(() => f.default.saveUserGuildSettingsBulk(e));
+                await H(() => F()), await H(() => d.default.setAccountFlag(O.AccountNotificationFlags.USE_NEW_NOTIFICATIONS, !0));
+                let t = await H(() => f.default.saveUserGuildSettingsBulk(e));
                 r.default.dispatch({
                     type: "USER_GUILD_SETTINGS_FULL_UPDATE",
                     userGuildSettings: t
@@ -1461,7 +1461,7 @@
                     type: "RECOMPUTE_READ_STATES"
                 })
             }
-            async function F(e) {
+            async function H(e) {
                 for (let e = 0; e < 3; e++) try {
                     break
                 } catch (t) {
@@ -1469,7 +1469,7 @@
                 }
                 return await e()
             }
-            async function H() {
+            async function F() {
                 let e = await (0, C.listSnapshots)();
                 if (e.length > 0) {
                     let t = await
@@ -1855,7 +1855,7 @@
                             guild_noise: o,
                             usage: g
                         }
-                    } = await a.default.get("/users/@me/notification-migration-data2"), m = (0, c.transformUsageData)(g), {
+                    } = await a.HTTP.get("/users/@me/notification-migration-data2"), m = (0, c.transformUsageData)(g), {
                         default: h
                     } = await n.el("923660").then(n.bind(n, "923660"));
                     if (!(0, l.hasAnyModalOpen)()) d.UnreadsEntryPointExperiment.trackExposure({
@@ -1881,7 +1881,7 @@
                         guild_noise: t,
                         usage: s
                     }
-                } = await a.default.get("/users/@me/notification-migration-data2"), o = (0, c.transformUsageData)(s);
+                } = await a.HTTP.get("/users/@me/notification-migration-data2"), o = (0, c.transformUsageData)(s);
                 (0, l.openModalLazy)(async () => {
                     let {
                         default: a
@@ -1954,4 +1954,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4574.39c2b7da530d67a3ce0b.js.map
+//# sourceMappingURL=4574.9f5663ea73470ac78c44.js.map

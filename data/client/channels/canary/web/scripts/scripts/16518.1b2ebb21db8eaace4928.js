@@ -55,16 +55,16 @@
                     return I
                 },
                 fetchCollectiblesPurchases: function() {
-                    return A
+                    return T
                 },
                 fetchCollectiblesProduct: function() {
-                    return L
+                    return A
                 },
                 claimPremiumCollectiblesProduct: function() {
-                    return S
+                    return L
                 },
                 validateCollectiblesRecipient: function() {
-                    return T
+                    return S
                 },
                 setCollectiblesCategoryItemsViewed: function() {
                     return p
@@ -113,7 +113,7 @@
                     let t = {};
                     null != e && (!0 === e.noCache && (t.no_cache = !0), !0 === e.includeUnpublished && (t.include_unpublished = !0), null != e.countryCode && (t.countryCode = e.countryCode));
                     try {
-                        let e = await u.default.get({
+                        let e = await u.HTTP.get({
                             url: o.Endpoints.COLLECTIBLES_CATEGORIES,
                             query: t
                         });
@@ -127,12 +127,12 @@
                             error: e
                         }), new E.APIError(e)
                     }
-                }, A = async () => {
+                }, T = async () => {
                     n.default.dispatch({
                         type: "COLLECTIBLES_PURCHASES_FETCH"
                     });
                     try {
-                        let e = await u.default.get(o.Endpoints.COLLECTIBLES_PURCHASES);
+                        let e = await u.HTTP.get(o.Endpoints.COLLECTIBLES_PURCHASES);
                         n.default.dispatch({
                             type: "COLLECTIBLES_PURCHASES_FETCH_SUCCESS",
                             purchases: e.body.map(c.default.fromServer)
@@ -143,12 +143,12 @@
                             error: e
                         }), new E.APIError(e)
                     }
-                }, L = async (e, t) => {
+                }, A = async (e, t) => {
                     n.default.dispatch({
                         type: "COLLECTIBLES_PRODUCT_FETCH"
                     });
                     try {
-                        let r = await u.default.get({
+                        let r = await u.HTTP.get({
                             url: o.Endpoints.COLLECTIBLES_PRODUCTS(e),
                             query: null != t ? {
                                 country_code: t
@@ -164,14 +164,14 @@
                             error: e
                         }), new E.APIError(e)
                     }
-                }, S = async e => {
+                }, L = async e => {
                     n.default.dispatch({
                         type: "COLLECTIBLES_CLAIM",
                         skuId: e
                     });
                     try {
                         var t;
-                        let r = await u.default.put({
+                        let r = await u.HTTP.put({
                             url: o.Endpoints.COLLECTIBLES_CLAIM,
                             body: {
                                 sku_id: e
@@ -189,9 +189,9 @@
                             error: t
                         }), new E.APIError(t)
                     }
-                }, T = async (e, t) => {
+                }, S = async (e, t) => {
                     try {
-                        let r = await u.default.get({
+                        let r = await u.HTTP.get({
                             url: o.Endpoints.COLLECTIBLES_VALID_GIFT_RECIPIENT,
                             query: {
                                 sku_id: t,
@@ -569,16 +569,16 @@
                     return I
                 },
                 HOME_HEADER_MAX_HEIGHT: function() {
-                    return A
+                    return T
                 },
                 BANNER_ASPECT_RATIO: function() {
-                    return L
+                    return A
                 },
                 GUILD_BANNER_ASPECT_RATIO: function() {
-                    return S
+                    return L
                 },
                 SCHEDULED_EVENT_IMAGE_ASPECT_RATIO: function() {
-                    return T
+                    return S
                 },
                 HOME_HEADER_ASPECT_RATIO: function() {
                     return p
@@ -615,14 +615,14 @@
                 _ = 2400,
                 d = 960,
                 I = 2400,
-                A = 600,
-                L = 17 / 6,
-                S = 16 / 9,
-                T = 2.5,
+                T = 600,
+                A = 17 / 6,
+                L = 16 / 9,
+                S = 2.5,
                 p = 4,
-                O = l / L,
-                f = l / S,
-                R = l / T,
+                O = l / A,
+                f = l / L,
+                R = l / S,
                 y = l / p,
                 h = s.BACKGROUND_REPLACEMENT_SIZE.width / s.BACKGROUND_REPLACEMENT_SIZE.height,
                 m = l / h;
@@ -656,4 +656,4 @@
         }
     }
 ]);
-//# sourceMappingURL=16518.59fde425dd84a188917d.js.map
+//# sourceMappingURL=16518.1b2ebb21db8eaace4928.js.map

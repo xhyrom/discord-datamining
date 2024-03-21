@@ -3285,7 +3285,7 @@
                                 body: {
                                     settings: t
                                 }
-                            } = await s.default.get({
+                            } = await s.HTTP.get({
                                 url: m.Endpoints.USER_SETTINGS_PROTO(this.type)
                             }), n = (0, S.b64ToProto)(this.ProtoClass, t);
                             if (null == n) {
@@ -3376,7 +3376,7 @@
                             this.saveLastSendTime();
                             let {
                                 body: n
-                            } = await s.default.patch({
+                            } = await s.HTTP.patch({
                                 url: m.Endpoints.USER_SETTINGS_PROTO(this.type),
                                 body: {
                                     settings: t,
@@ -3810,7 +3810,7 @@
                                     client_send_timestamp: t
                                 }
                             }));
-                        return u.default.post({
+                        return u.HTTP.post({
                             url: m,
                             body: {
                                 token: i,
@@ -4126,7 +4126,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "277622", "277622"), 10);
+                let o = parseInt((n = "277642", "277642"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5684,4 +5684,4 @@
         }
     }
 ]);
-//# sourceMappingURL=87475.0c8a8544bbb872c98cbc.js.map
+//# sourceMappingURL=87475.acb3270e8f2c68c84e9f.js.map

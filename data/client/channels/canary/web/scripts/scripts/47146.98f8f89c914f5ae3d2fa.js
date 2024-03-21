@@ -47,7 +47,7 @@
                 if (null == t.session_id) throw Error("null/undefined session_id");
                 let {
                     body: d
-                } = await n.default.get({
+                } = await n.HTTP.get({
                     url: u.Endpoints.USER_ACTIVITY_METADATA(e, t.session_id, t.application_id),
                     oldFormErrors: !0
                 });
@@ -1975,7 +1975,7 @@
                 try {
                     let {
                         body: e
-                    } = await a.default.get({
+                    } = await a.HTTP.get({
                         url: d.Endpoints.NOTE(t),
                         oldFormErrors: !0
                     });
@@ -2190,4 +2190,4 @@
         }
     }
 ]);
-//# sourceMappingURL=47146.b567557ab407c311dd12.js.map
+//# sourceMappingURL=47146.98f8f89c914f5ae3d2fa.js.map

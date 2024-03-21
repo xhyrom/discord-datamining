@@ -106,7 +106,7 @@
             }
 
             function I(e) {
-                return i.default.post({
+                return i.HTTP.post({
                     url: c.Endpoints.STORE_PUBLISHED_LISTINGS_SKU_JOIN_GUILD(e),
                     oldFormErrors: !0
                 })
@@ -1444,4 +1444,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72879.1745abd724ab1ab44652.js.map
+//# sourceMappingURL=72879.cb63912907010250f443.js.map

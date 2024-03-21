@@ -73,7 +73,7 @@
             async function d(e) {
                 try {
                     var t;
-                    let r = await l.default.put({
+                    let r = await l.HTTP.put({
                         url: (0, s.getAPIEndpoint)(u),
                         body: {
                             overrides: e,
@@ -91,7 +91,7 @@
             }
             async function o(e) {
                 try {
-                    let t = await l.default.put({
+                    let t = await l.HTTP.put({
                         url: (0, s.getAPIEndpoint)("/__development/link"),
                         body: {
                             payload: e,
@@ -106,7 +106,7 @@
                 }
             }
             async function c() {
-                let e = await l.default.delete({
+                let e = await l.HTTP.del({
                     url: (0, s.getAPIEndpoint)(u),
                     oldFormErrors: !0
                 });
@@ -115,7 +115,7 @@
 
             function f(e) {
                 var t;
-                return l.default.post({
+                return l.HTTP.post({
                     url: (0, s.getAPIEndpoint)("/__development/create_build_override_link"),
                     body: e,
                     headers: {
@@ -838,4 +838,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60499.503ab84a0a5310db59fb.js.map
+//# sourceMappingURL=60499.ed4011814fda3eba003f.js.map

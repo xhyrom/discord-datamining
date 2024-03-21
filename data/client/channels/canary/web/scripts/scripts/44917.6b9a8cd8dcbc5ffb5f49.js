@@ -281,10 +281,10 @@
                     return r
                 },
                 getJoinSourceTypeLabel: function() {
-                    return g
+                    return T
                 },
                 getIntegrationLabel: function() {
-                    return T
+                    return g
                 },
                 useGetIntegrationIconString: function() {
                     return S
@@ -325,7 +325,7 @@
                     C[e + t] = 3
                 })(e, t, 3))
             }(a = r || (r = {}))[a.UNSPECIFIED = 0] = "UNSPECIFIED", a[a.BOT = 1] = "BOT", a[a.INTEGRATION = 2] = "INTEGRATION", a[a.DISCOVERY = 3] = "DISCOVERY", a[a.HUB = 4] = "HUB", a[a.INVITE = 5] = "INVITE", a[a.VANITY_URL = 6] = "VANITY_URL";
-            let g = function(e) {
+            let T = function(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
                     n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                 switch (e) {
@@ -349,7 +349,7 @@
                 }
             };
             (o = s || (s = {})).DISCORD = "discord", o.TWITCH = "twitch", o.YOUTUBE = "youtube", o.GUILD_SUBSCRIPTION = "guild_subscription";
-            let T = e => {
+            let g = e => {
                     switch (e) {
                         case "twitch":
                             return v.default.Messages.MEMBER_SAFETY_JOIN_TYPE_INTEGRATION_TWITCH;
@@ -380,7 +380,7 @@
                 if (0 === i.length) return [];
                 m(n, 2);
                 try {
-                    let t = await u.default.post({
+                    let t = await u.HTTP.post({
                         url: E.Endpoints.MEMBER_SAFETY_SUPPLEMENTAL(e),
                         body: {
                             user_ids: i
@@ -553,22 +553,22 @@
                     setBodyNode: I,
                     setFooterNode: m,
                     setModalOverlayNode: N,
-                    setReadySlideId: g
-                } = (0, f.usePaymentContext)(), T = _.find(e => e.key === p);
+                    setReadySlideId: T
+                } = (0, f.usePaymentContext)(), g = _.find(e => e.key === p);
                 r.useEffect(() => {
                     N(null)
-                }, [p, N]), o(null != T, "Unknown step for current payment flow.");
-                let S = null !== (u = null == T ? void 0 : null === (t = T.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== u && u,
-                    M = null == T ? void 0 : null === (n = T.options) || void 0 === n ? void 0 : n.bodyClassName,
-                    R = void 0 !== v && v ? h.sliderBodyLarge : null == T ? void 0 : null === (s = T.options) || void 0 === s ? void 0 : s.sliderBodyClassName;
+                }, [p, N]), o(null != g, "Unknown step for current payment flow.");
+                let S = null !== (u = null == g ? void 0 : null === (t = g.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== u && u,
+                    M = null == g ? void 0 : null === (n = g.options) || void 0 === n ? void 0 : n.bodyClassName,
+                    R = void 0 !== v && v ? h.sliderBodyLarge : null == g ? void 0 : null === (s = g.options) || void 0 === s ? void 0 : s.sliderBodyClassName;
                 return (0, i.jsxs)(i.Fragment, {
-                    children: [null === (c = null == T ? void 0 : null === (a = T.options) || void 0 === a ? void 0 : a.renderHeader) || void 0 === c || c ? E : null, T.renderStep(C), null == p || S ? null : (0, i.jsxs)(i.Fragment, {
+                    children: [null === (c = null == g ? void 0 : null === (a = g.options) || void 0 === a ? void 0 : a.renderHeader) || void 0 === c || c ? E : null, g.renderStep(C), null == p || S ? null : (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(d.ModalContent, {
                             className: l(h.body, M),
                             children: (0, i.jsx)(d.Slides, {
                                 activeSlide: p,
                                 centered: !1,
-                                onSlideReady: e => g(e),
+                                onSlideReady: e => T(e),
                                 children: _.filter(e => null != e.key).map(e => (0, i.jsx)(d.Slide, {
                                     id: e.key,
                                     children: (0, i.jsx)("form", {
@@ -636,8 +636,8 @@
                     analyticsLocations: I,
                     analyticsObject: m,
                     analyticsLocation: N,
-                    analyticsSourceLocation: g,
-                    isGift: T = !1,
+                    analyticsSourceLocation: T,
+                    isGift: g = !1,
                     giftMessage: S,
                     subscriptionTier: M,
                     trialId: R,
@@ -663,22 +663,22 @@
                             loadId: O,
                             subscriptionTier: M,
                             skuId: (0, f.castPremiumSubscriptionAsSkuId)(M),
-                            isGift: T,
+                            isGift: g,
                             giftMessage: S,
                             giftRecipient: w,
                             initialPlanId: t,
                             followupSKUInfo: v,
                             onClose: (e, t) => {
-                                r(), null == C || C(e), e && (null == _ || _(), !T && null != t && t === E.PremiumSubscriptionSKUs.TIER_2 && !U && d.ComponentDispatch.dispatch(h.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED))
+                                r(), null == C || C(e), e && (null == _ || _(), !g && null != t && t === E.PremiumSubscriptionSKUs.TIER_2 && !U && d.ComponentDispatch.dispatch(h.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED))
                             },
                             onComplete: () => {
-                                P = !0, null == p || p(), !T && (0, o.setCanPlayWowMoment)(!0)
+                                P = !0, null == p || p(), !g && (0, o.setCanPlayWowMoment)(!0)
                             },
                             onSubscriptionConfirmation: _,
                             analyticsLocations: I,
                             analyticsObject: m,
                             analyticsLocation: N,
-                            analyticsSourceLocation: g,
+                            analyticsSourceLocation: T,
                             trialId: R,
                             postSuccessGuild: x,
                             planGroup: E.ORDERED_PREMIUM_SUBSCRIPTION_PLANS,
@@ -696,9 +696,9 @@
                             load_id: O,
                             payment_type: h.PurchaseTypeToAnalyticsPaymentType[h.PurchaseTypes.SUBSCRIPTION],
                             location: null != N ? N : m,
-                            source: g,
+                            source: T,
                             subscription_type: h.SubscriptionTypes.PREMIUM,
-                            is_gift: T,
+                            is_gift: g,
                             eligible_for_trial: null != R,
                             application_id: y,
                             location_stack: I
@@ -2121,4 +2121,4 @@
         }
     }
 ]);
-//# sourceMappingURL=44917.810effa1ef52b183d6ad.js.map
+//# sourceMappingURL=44917.6b9a8cd8dcbc5ffb5f49.js.map
