@@ -493,6 +493,7 @@ id,hash,label
 2024-02_nvenc_new_presets,1871481173,nvenc new presets
 2024-02_safety_hub_guild_violation_in_app_appeals,668094544,Safety Hub Guild Violation In App Appeals
 2024-02_v1_content_inventory_feed,1747551262,V1 Feed of the content inventory
+2024-03_airpods_mute_support,2035601025,Support for muting/unmuting via AirPods
 2024-03_ait_guild_entry_point,1979035979,Activities in Text Guild Experiment w/ new Entry Point
 2024-03_amd_vdec_tests_1,1872798231,"GPU Workarounds: AMD video decode tests 1 (1002:1636, 1002:1638)"
 2024-03_clickstream_analytics,937474337,Clickstream Analytics
@@ -500,6 +501,7 @@ id,hash,label
 2024-03_content_inventory_surface_holdout,3738481102,Content Inventory Surface Holdout
 2024-03_explicit_content_adult_defaults,2540058718,Explicit Media Redaction New Setting Defaults
 2024-03_friend_finder_selected_states,3744134882,Friend Finder State Experiment
+2024-03_krisp_sentiment,2156584863,override krisp setting
 2024-03_media_play_metrics,465715532,Media play metrics User Experiment
 2024-03_metrics_endpoint_v2,1779058233,Metrics V2 Endpoint Rollout
 2024-03_nitro_tenure_reward_card,2962984975,Nitro Tenure Reward Card

@@ -1,12 +1,30 @@
 {
   "data": {
     "kind": "guild",
+    "id": "2024-03_krisp_sentiment",
+    "label": "override krisp setting",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Force enable krisp",
+      "Treatment 2: Force disable krisp"
+    ],
     "hash": 2156584863,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
     "holdout": {
       "name": null,
       "bucket": null
     },
-    "aa_mode": false
+    "aa_mode": false,
+    "config_keys": [
+      "shouldOverrideKrisp",
+      "overrideKrispSetting"
+    ]
   },
   "rollout": {
     "populations": [

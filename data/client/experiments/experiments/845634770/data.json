@@ -6,18 +6,21 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Allow users to open packages"
+      "Treatment 1: Allow users to open packages",
+      "Treatment 2: Allow users to open packages 2"
     ],
     "hash": 845634770,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "allowOpeningLootboxes"
+      "allowOpeningLootboxes",
+      "showMainEntrypoints"
     ]
   }
 }
