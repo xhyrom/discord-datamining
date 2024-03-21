@@ -19756,6 +19756,20 @@
                 tooltipTextContainer: "tooltipTextContainer_b04cee"
             }
         },
+        452207: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                extraNitroPill: "extraNitroPill_ce9cd5",
+                negativeTop: "negativeTop__3752d",
+                nitroBorder: "nitroBorder__0af2b",
+                nitroBorderHover: "nitroBorderHover__1189e",
+                nitroPill: "nitroPill_d19d06",
+                nitroPillHover: "nitroPillHover__3c8e6",
+                nitroPillPointerCursor: "nitroPillPointerCursor__48778",
+                nitroText: "nitroText__83391",
+                nitroWheel: "nitroWheel__67143"
+            }
+        },
         455701: function(e, t, n) {
             "use strict";
             e.exports = {
@@ -21799,13 +21813,11 @@
                 header: "header__6145e",
                 headerContent: "headerContent__8ec3c",
                 iconLogotypeContainer: "iconLogotypeContainer_e2a170",
-                img: "img__4f1c2",
                 outerContainer: "outerContainer_d63ffb",
                 outerContainerEmbed: "outerContainerEmbed__41c25",
                 outerContainerGiftInventory: "outerContainerGiftInventory__1d198",
-                questIcon: "questIcon__3a4c1",
+                partnerBranding: "partnerBranding__66df7",
                 questInfo: "questInfo__6694d",
-                questLogotype: "questLogotype__50770",
                 questSplash: "questSplash_b92f41",
                 submenuIcon: "submenuIcon__762a6",
                 submenuWrapper: "submenuWrapper_dcff9a"
@@ -25319,6 +25331,7 @@
             "use strict";
             e.exports = {
                 border: "border__8d6b3",
+                content: "content__960ea",
                 header: "header_a2ba3b",
                 headerBoostGem: "headerBoostGem__2176d",
                 headerBoostGems: "headerBoostGems_b5bab6",
