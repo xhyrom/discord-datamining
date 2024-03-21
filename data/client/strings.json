@@ -5356,6 +5356,7 @@
   "STREAM_SINGLE_PERSON_INVITE": "\"Invite people to join you!\"",
   "STREAM_SINGLE_PERSON_NO_INVITE": "\"You're alone in this call.\"",
   "STREAM_NO_PERMISSION_CTA": "\"No permission\"",
+  "STREAM_PREMIUM_AFFINITY_UPSELL": "\"{numFriends, plural, =1 {1 friend has} =2 {2 friends have} other {{numFriends}+ friends have}} HD streaming with Nitro\"",
   "DISPLAY_NAME": "\"Display Name\"",
   "PICTURE_IN_PICTURE_COLLAPSE": "\"Collapse\"",
   "PICTURE_IN_PICTURE_EXPAND": "\"Expand\"",
