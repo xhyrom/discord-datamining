@@ -26890,7 +26890,7 @@ span.button__4f306.disabled_dc5630 {
 
     .locale__533cd {
         padding: 10px;
-        font-size: .875rem;
+        font-size: 14px;
         opacity: .8;
         display: flex;
         position: relative
@@ -26929,7 +26929,7 @@ span.button__4f306.disabled_dc5630 {
     position: absolute;
     top: 30px;
     left: 0;
-    font-size: .8125rem;
+    font-size: 13px;
     box-shadow: 0 1px 3px hsl(calc(1 * 0%), 0%-hsl / 0.1);
     box-shadow: 0 1px 3px hsl(var(0, calc(0%*var(--saturation-factor, 1)), 0%-hsl)/.1);
     overflow: hidden;
@@ -28164,4 +28164,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.26d3c7b44c3a8a81c9da.css.map*/
+/*# sourceMappingURL=shared.cca93473dd2be5414ba0.css.map*/
