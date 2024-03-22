@@ -37137,7 +37137,7 @@ html .progress__4ef76 {
     height: 16px
 }
 
-.container_a4a0ea {
+.container__1cb6c {
     display: flex;
     box-sizing: border-box;
     margin-left: 8px;
@@ -37152,49 +37152,40 @@ html .progress__4ef76 {
     justify-content: space-between
 }
 
-.container_a4a0ea:hover {
+.container__1cb6c:hover {
     background: var(--bg-overlay-5, var(--background-modifier-hover));
     cursor: pointer
 }
 
-.container_a4a0ea:hover .contentDescription__00793 {
+.container__1cb6c:hover .contentDescription__47a19 {
     color: var(--interactive-hover)
 }
 
-.container_a4a0ea .badgeContainer_ee7a35 {
-    margin-top: 2px;
-    margin-bottom: -2px
-}
-
-.contentDescription__00793 {
-    color: var(--text-secondary)
-}
-
-.selected_ddb73c {
+.selected_a60e74 {
     background-color: var(--background-modifier-selected)
 }
 
-.selected_ddb73c:hover {
+.selected_a60e74:hover {
     background-color: var(--background-modifier-selected)
 }
 
-.selected_ddb73c .contentDescription__00793 {
+.selected_a60e74 .contentDescription__47a19 {
     color: var(--interactive-hover)
 }
 
-.textSection__4cfbe {
+.infoSection_e65d14 {
     display: flex;
     flex-direction: column;
     min-width: 0
 }
 
-.userSection__6b551 {
+.userSection__10b07 {
     gap: 6px;
     display: flex;
     align-items: center
 }
 
-.userName_dbc1a6 {
+.userName__206c3 {
     color: var(--channels-default);
     white-space: nowrap;
     overflow: hidden;
@@ -37206,34 +37197,43 @@ html .progress__4ef76 {
     font-weight: 500
 }
 
-.userName_dbc1a6.fontScaling_e12a83 {
+.userName__206c3.fontScaling__35f69 {
     font-size: .875rem
 }
 
-.badgesContainer_b001e0 {
+.contentDescription__47a19 {
+    color: var(--text-secondary)
+}
+
+.badgeRow__889b8 {
     display: flex;
     gap: 8px;
     align-items: center
 }
 
-.badgeContainer_ee7a35 {
+.badgeContainer__14c9e {
     display: flex;
     gap: 4px;
     align-items: center
 }
 
-.contentImage__94461 {
+.container__1cb6c .badgeContainer__14c9e {
+    margin-top: 2px;
+    margin-bottom: -2px
+}
+
+.contentImage__8e0cb {
     border-radius: var(--radius-xs)
 }
 
-.popout__97332 {
+.popout_cfa8bc {
     width: 342px;
     display: flex;
     flex-direction: column;
     filter: drop-shadow(0 8px 8px hsl(var(--black-500-hsl)/.32))
 }
 
-.hero_f37d0a {
+.hero_dc420c {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -37242,29 +37242,18 @@ html .progress__4ef76 {
     border-top-right-radius: var(--radius-md)
 }
 
-.heroDetails_b002cf {
-    display: flex;
-    justify-content: space-between;
-    gap: 8px;
-    min-width: 0
-}
-
-.popoutDescription__875c7 {
+.popoutTitle__8cc5f {
     margin-top: 6px
 }
 
-.heroImage_e3e7d9 {
-    border-radius: var(--radius-md)
-}
-
-.reactions_d488fa {
+.reactionContainer__4f763 {
     padding: 16px;
     background-color: var(--background-primary);
     border-bottom-left-radius: var(--radius-md);
     border-bottom-right-radius: var(--radius-md)
 }
 
-.emojiHotrail_a7034f {
+.emojiHotrail_ed5388 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37272,19 +37261,26 @@ html .progress__4ef76 {
     padding: 0 12px
 }
 
-.emojiSuggestionButton_d25ed5:hover {
+.emojiSuggestionButton_fcc89a:hover {
     cursor: pointer
 }
 
-.emoji_db6bae {
+.emoji__3bd00 {
     width: 24px
 }
 
-.contentImage_ee0279 {
+.contentImage_e19564 {
     border-radius: var(--radius-sm)
 }
 
-.badgeContainer__7ffff {
+.heroDetails__0c37e {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    min-width: 0
+}
+
+.badgeContainer__99e7d {
     padding: 2px
 }
 
@@ -47679,8 +47675,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -85677,8 +85673,8 @@ html .tabBadge__002b3 {
 
 .bodyText__923f7 {
     color: var(--interactive-normal);
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -85725,8 +85721,8 @@ html .tabBadge__002b3 {
 }
 
 .trialCheckboxLabel__0297c {
-    font-size: 14px;
-    line-height: 18px
+    font-size: .875rem;
+    line-height: 1.125rem
 }
 
 .loader_acb69b {
@@ -130750,4 +130746,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.4d1b98ffb9953217b592.css.map*/
+/*# sourceMappingURL=app.e7cbc0f225edfce89133.css.map*/
