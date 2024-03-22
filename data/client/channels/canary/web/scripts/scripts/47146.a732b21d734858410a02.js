@@ -2014,13 +2014,16 @@
                     section: i,
                     guildId: d = u.ME,
                     channelId: s,
-                    friendToken: o,
-                    autoFocusNote: c,
-                    analyticsLocation: E
-                } = t, _ = a.default.getUser(e), f = d !== u.ME ? d : void 0;
-                if (null == _) return (0, l.fetchProfile)(e, {
-                    friendToken: o,
-                    guildId: f
+                    messageId: o,
+                    roleId: c,
+                    friendToken: E,
+                    autoFocusNote: _,
+                    analyticsLocation: f,
+                    sourceAnalyticsLocations: I
+                } = t, A = a.default.getUser(e), T = d !== u.ME ? d : void 0;
+                if (null == A) return (0, l.fetchProfile)(e, {
+                    friendToken: E,
+                    guildId: T
                 }).then(() => {
                     n.default.dispatch({
                         type: "USER_PROFILE_MODAL_OPEN",
@@ -2028,24 +2031,30 @@
                         section: i,
                         guildId: d,
                         channelId: s,
-                        friendToken: o,
-                        autoFocusNote: c,
-                        analyticsLocation: E
+                        messageId: o,
+                        roleId: c,
+                        friendToken: E,
+                        autoFocusNote: _,
+                        analyticsLocation: f,
+                        sourceAnalyticsLocations: I
                     })
                 });
-                (0, r.default)(e, _.getAvatarURL(void 0, 80), {
+                (0, r.default)(e, A.getAvatarURL(void 0, 80), {
                     withMutualGuilds: !0,
-                    friendToken: o,
-                    guildId: f
+                    friendToken: E,
+                    guildId: T
                 }), n.default.dispatch({
                     type: "USER_PROFILE_MODAL_OPEN",
                     userId: e,
                     section: i,
                     guildId: d,
                     channelId: s,
-                    friendToken: o,
-                    autoFocusNote: c,
-                    analyticsLocation: E
+                    messageId: o,
+                    roleId: c,
+                    friendToken: E,
+                    autoFocusNote: _,
+                    analyticsLocation: f,
+                    sourceAnalyticsLocations: I
                 })
             }
 
@@ -2190,4 +2199,4 @@
         }
     }
 ]);
-//# sourceMappingURL=47146.5611a94b185373ec31a3.js.map
+//# sourceMappingURL=47146.a732b21d734858410a02.js.map
