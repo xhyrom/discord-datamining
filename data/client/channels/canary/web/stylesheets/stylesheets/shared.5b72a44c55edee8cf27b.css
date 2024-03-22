@@ -5646,18 +5646,17 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     height: 15px;
     padding: 0 4px;
     margin-top: 1px;
-    border-radius: 3px
+    border-radius: 4px
 }
 
 .rem__931aa.botTag__4211a {
     height: .9375rem;
     padding: 0 .275rem;
     margin-top: .075em;
-    border-radius: .1875rem
+    border-radius: 4px
 }
 
 .rem__931aa.botTag__4211a.botTagOP_e48ddb {
-    border-radius: .4rem;
     margin-top: .25em
 }
 
@@ -5685,8 +5684,8 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 }
 
 .px__97c6b .botTagVerified_a8fa0b {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     margin-left: -4px
 }
 
@@ -28158,4 +28157,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.253ab86dfcee59914f68.css.map*/
+/*# sourceMappingURL=shared.5b72a44c55edee8cf27b.css.map*/
