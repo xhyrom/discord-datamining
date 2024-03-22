@@ -120363,7 +120363,10 @@ html .invoiceCancelRow_a8669b {
     box-shadow: var(--shadow-medium);
     left: 50%;
     transform: translatex(-50%);
-    text-align: center
+    text-align: center;
+    max-width: 80%;
+    width: -moz-max-content;
+    width: max-content
 }
 
 .count_eb8387 {
@@ -130747,4 +130750,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.f2abc6cc2725bca52337.css.map*/
+/*# sourceMappingURL=app.4d1b98ffb9953217b592.css.map*/
