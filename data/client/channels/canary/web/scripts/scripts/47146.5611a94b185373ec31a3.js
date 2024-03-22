@@ -1434,7 +1434,7 @@
 
             function a(t) {
                 var e;
-                let i = (0, n.default)([l.default], () => l.default.getChannel(t)),
+                let i = (0, n.useStateFromStores)([l.default], () => l.default.getChannel(t)),
                     a = null !== (e = null == i ? void 0 : i.isPrivate()) && void 0 !== e && e;
                 return a
             }
@@ -2190,4 +2190,4 @@
         }
     }
 ]);
-//# sourceMappingURL=47146.98f8f89c914f5ae3d2fa.js.map
+//# sourceMappingURL=47146.5611a94b185373ec31a3.js.map

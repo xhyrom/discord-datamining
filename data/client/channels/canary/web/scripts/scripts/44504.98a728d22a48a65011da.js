@@ -247,7 +247,7 @@
                     baseConfig: c,
                     addClickListener: E,
                     removeClickListener: _
-                } = e, T = (0, a.useConfettiCannon)(s, n), I = (0, l.default)([o.default], () => o.default.useReducedMotion), N = r.useMemo(() => I ? u : {
+                } = e, T = (0, a.useConfettiCannon)(s, n), I = (0, l.useStateFromStores)([o.default], () => o.default.useReducedMotion), N = r.useMemo(() => I ? u : {
                     confettiCanvas: s,
                     cannon: T,
                     createConfetti: (e, t) => T.createConfetti({
@@ -801,7 +801,7 @@
                         closeLayer: t,
                         guild: s,
                         isVisible: E
-                    } = e, _ = (0, a.default)([o.default], () => o.default.useReducedMotion), T = (0, r.useSpring)({
+                    } = e, _ = (0, a.useStateFromStores)([o.default], () => o.default.useReducedMotion), T = (0, r.useSpring)({
                         transform: E ? "translateY(-100%)" : "translateY(0%)",
                         opacity: E ? 1 : 0,
                         config: {
@@ -1125,7 +1125,7 @@
                     setShouldFireConfetti: M,
                     tier: G,
                     tierMarkerAnimationPosition: h
-                } = e, O = (0, o.default)([u.default], () => u.default.useReducedMotion), {
+                } = e, O = (0, o.useStateFromStores)([u.default], () => u.default.useReducedMotion), {
                     analyticsLocations: p
                 } = (0, d.default)(), C = N.AppliedGuildBoostsRequiredForBoostedGuildTier[G], A = C - r.premiumSubscriberCount, B = G <= h || m, x = B && G <= r.premiumTier, v = B && G < r.premiumTier, P = B && G === r.premiumTier, {
                     scaleFactor: L
@@ -1752,7 +1752,7 @@
                 })
             }
             var T = function() {
-                let e = (0, r.default)([l.default], () => l.default.useReducedMotion);
+                let e = (0, r.useStateFromStores)([l.default], () => l.default.useReducedMotion);
                 return (0, i.jsxs)("div", {
                     className: n.wrapper,
                     children: [(0, i.jsx)(a.Heading, {
@@ -2518,4 +2518,4 @@
         }
     }
 ]);
-//# sourceMappingURL=44504.d153e82113445970455e.js.map
+//# sourceMappingURL=44504.98a728d22a48a65011da.js.map
