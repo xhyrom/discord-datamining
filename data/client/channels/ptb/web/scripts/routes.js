@@ -1150,6 +1150,8 @@
                     REGISTER: "/auth/register",
                     REGISTER_PHONE: "/auth/register/phone",
                     MFA_WEBAUTHN_CREDENTIALS: "/users/@me/mfa/webauthn/credentials",
+                    WEBAUTHN_CONDITIONAL_UI_CHALLENGE: "/auth/conditional/start",
+                    WEBAUTHN_CONDITIONAL_UI_LOGIN: "/auth/conditional/finish",
                     MFA_WEBAUTHN_CREDENTIAL: _ => "/users/@me/mfa/webauthn/credentials/".concat(_),
                     INVITE: _ => "/invites/".concat(_),
                     UNRESOLVED_GUILD_TEMPLATE: _ => "/guilds/templates/".concat(_),
@@ -13865,4 +13867,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.e46383b44aa6da841a1b.js.map
+//# sourceMappingURL=7273.b7716f304b26605461dc.js.map
