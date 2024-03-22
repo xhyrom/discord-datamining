@@ -512,6 +512,7 @@ id,hash,label
 2024-03_quests_activity_quest,1874994306,Activity Quest
 2024-03_quests_client_monitoring,2848826960,Quests client monitoring experiment
 2024-03_social_proof_hd_streaming,913903122,Social proof in HD streaming upsell
+2024-03_unreads_new_users,1135801489,Unreads Experiment (grey-dot mode) (new users)
 2024-03_user_recent_games,2769393059,Recent Games
 2024-03_user_recent_games_api,84992422,Recent Games API
 2024-03_valorant_user_signup,950315547,Valorant User Signup
