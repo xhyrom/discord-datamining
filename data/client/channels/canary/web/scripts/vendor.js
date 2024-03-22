@@ -24921,6 +24921,23 @@
                         event: a.NetworkActionNames.USER_VERIFY_RESEND
                     }
                 }),
+                async loginWebAuthn(e) {
+                    let {
+                        ticket: t,
+                        credential: n,
+                        source: i,
+                        giftCodeSKUId: s
+                    } = e, r = await l.HTTP.post({
+                        url: T.Endpoints.WEBAUTHN_CONDITIONAL_UI_LOGIN,
+                        body: {
+                            credential: n,
+                            ticket: t,
+                            source: i,
+                            giftCodeSKUId: s
+                        }
+                    });
+                    return r.body.token
+                },
                 async resetPassword(e, t, n) {
                     d.default.dispatch({
                         type: "LOGIN"
@@ -55306,7 +55323,7 @@
                 r = n("605250"),
                 a = n("778689");
             let o = new r.default("BasicChannelCacheStore");
-            class l extends i.default {
+            class l extends i.Store {
                 hasChannel(e) {
                     return this.channels.has(e)
                 }
@@ -55374,7 +55391,7 @@
                 o = n("802493");
             let l = new r.default("FileSystemStore"),
                 u = 10 * a.default.Millis.MINUTE;
-            class d extends i.default {
+            class d extends i.Store {
                 handlePostConnectionOpen() {
                     return this.refresh(), !1
                 }
@@ -60182,7 +60199,7 @@
                     return N
                 }
             }), n("222007");
-            var r = n("35092"),
+            var r = n("446674"),
                 a = n("151426"),
                 o = n("913144"),
                 l = n("10641"),
@@ -88088,8 +88105,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711130476632",
-                                    build_number: "277857"
+                                    built_at: "1711131551003",
+                                    build_number: "277868"
                                 }
                             },
                             retries: 1
@@ -98167,12 +98184,12 @@
                     return d
                 }
             });
-            var i = n("35092"),
+            var i = n("75247"),
                 s = n("913144"),
                 r = n("474643");
             let a = {},
                 o = {};
-            class l extends i.default.Store {
+            class l extends i.Store {
                 getStickerPreview(e, t) {
                     let n = t === r.DraftType.FirstThreadMessage ? o : a;
                     return n[e]
@@ -125579,7 +125596,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "74b986621fb11672f2a1f141aaeb71b838c96a2d"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "b2081bccc33bcc7255d9db348ed079d6bbaad28f"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -135077,7 +135094,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "277857"
+                                build_number: "277868"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -152843,4 +152860,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.0089d191cfbf42c6bac9.js.map
+//# sourceMappingURL=29062.e80bded14f29d46462f2.js.map
