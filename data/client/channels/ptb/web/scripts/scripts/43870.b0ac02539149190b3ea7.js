@@ -55,28 +55,30 @@
             let a, n;
             r.r(t), r.d(t, {
                 default: function() {
-                    return T
+                    return g
                 }
             }), r("222007");
             var l = r("917351"),
-                i = r("446674"),
-                u = r("913144"),
-                o = r("915639"),
-                s = r("491232");
-            let c = new Map,
-                d = new Map,
-                f = c,
+                i = r("394846"),
+                u = r("446674"),
+                o = r("913144"),
+                s = r("915639"),
+                c = r("491232");
+            let d = new Map,
+                f = new Map,
                 v = d,
-                C = !1;
-            let E = () => {
-                f = c, v = d, n = void 0, C = !1, a = void 0
-            };
-            class A extends i.default.Store {
+                C = f,
+                E = !1;
+            let A = new Set(["1220513972189663413"]),
+                T = () => {
+                    v = d, C = f, n = void 0, E = !1, a = void 0
+                };
+            class m extends u.default.Store {
                 initialize() {
-                    this.syncWith([o.default], E)
+                    this.syncWith([s.default], T)
                 }
                 get isFetching() {
-                    return C
+                    return E
                 }
                 get error() {
                     return a
@@ -85,49 +87,52 @@
                     return n
                 }
                 get categories() {
-                    return f
-                }
-                get products() {
                     return v
                 }
+                get products() {
+                    return C
+                }
                 getCategory(e) {
-                    return null != e ? f.get(e) : void 0
+                    return null != e ? v.get(e) : void 0
                 }
                 getProduct(e) {
-                    return null != e ? v.get(e) : void 0
+                    return null != e ? C.get(e) : void 0
                 }
                 getCategoryForProduct(e) {
                     let t = this.getProduct(e);
                     return this.getCategory(null == t ? void 0 : t.categorySkuId)
                 }
             }
-            A.displayName = "CollectiblesCategoryStore";
-            var T = new A(u.default, {
+            m.displayName = "CollectiblesCategoryStore";
+            var g = new m(o.default, {
                 COLLECTIBLES_CATEGORIES_FETCH: e => {
-                    C = !0, a = void 0
+                    E = !0, a = void 0
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: e => {
-                    0 === e.categories.length ? (f = c, v = d) : !(0, l.isEqual)([...f.values()], e.categories) && (f = new Map(e.categories.map(e => [e.skuId, e])), v = new Map((0, s.getProductsFromCategories)(f).map(e => [e.skuId, e]))), n = Date.now(), C = !1, a = void 0
+                    0 === e.categories.length ? (v = d, C = f) : !(0, l.isEqual)([...v.values()], e.categories) && (v = new Map(e.categories.filter(e => {
+                        let t = i.isMobile && A.has(e.skuId);
+                        return !t
+                    }).map(e => [e.skuId, e])), C = new Map((0, c.getProductsFromCategories)(v).map(e => [e.skuId, e]))), n = Date.now(), E = !1, a = void 0
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_FAILURE: e => {
                     let {
                         error: t
                     } = e;
-                    f = c, v = d, C = !1, a = t
+                    v = d, C = f, E = !1, a = t
                 },
                 COLLECTIBLES_PRODUCT_FETCH: e => {
-                    C = !0, a = void 0
+                    E = !0, a = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_SUCCESS: e => {
-                    v.set(e.product.skuId, e.product), C = !1, a = void 0
+                    C.set(e.product.skuId, e.product), E = !1, a = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_FAILURE: e => {
                     let {
                         error: t
                     } = e;
-                    C = !1, a = t
+                    E = !1, a = t
                 },
-                LOGOUT: E
+                LOGOUT: T
             })
         },
         491232: function(e, t, r) {
@@ -401,4 +406,4 @@
         }
     }
 ]);
-//# sourceMappingURL=43870.d29d8de4f673987354b8.js.map
+//# sourceMappingURL=43870.b0ac02539149190b3ea7.js.map
