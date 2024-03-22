@@ -7827,6 +7827,62 @@
     margin-bottom: 16px
 }
 
+.container__79b26 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1)50%, rgba(255, 255, 255, 0));
+    height: 50px
+}
+
+.iconContainer_e97d42 {
+    display: flex
+}
+
+.icon__3a061+.icon__3a061 {
+    margin-left: -8px
+}
+
+.mask_b6df54 {
+    -webkit-mask-image: url(/assets/289b6053fc6a89d75452.svg);
+    mask-image: url(/assets/289b6053fc6a89d75452.svg);
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+    -webkit-mask-size: 100%100%;
+    mask-size: 100%100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat
+}
+
+.textContainer__02ecb {
+    margin-left: 9px;
+    text-align: left
+}
+
+.container__1011e {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-tertiary);
+    height: 44px;
+    margin: 24px 32px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-500)
+}
+
+.iconContainer__2a1f3 {
+    display: flex
+}
+
+.icon__9e690+.icon__9e690 {
+    margin-left: -8px
+}
+
+.textContainer__6d8ea {
+    margin-left: 8px;
+    text-align: left
+}
+
 .root_ef2095 {
     text-align: center
 }
@@ -7839,8 +7895,9 @@
     margin-bottom: 8px
 }
 
-.enhancedHeader__7ec88 {
-    padding: 0 38px
+.enhancedHeader__7ec88,
+.subHeader__57c23 {
+    padding: 0 32px
 }
 
 .content__24381 {
@@ -69672,38 +69729,6 @@ html .invoiceCancelRow_c1bfe7 {
     stop-color: var(--premium-tier-0-header-gradient-5)
 }
 
-.container__79b26 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1)50%, rgba(255, 255, 255, 0));
-    height: 50px
-}
-
-.iconContainer_e97d42 {
-    display: flex
-}
-
-.icon__3a061+.icon__3a061 {
-    margin-left: -8px
-}
-
-.mask_b6df54 {
-    -webkit-mask-image: url(/assets/289b6053fc6a89d75452.svg);
-    mask-image: url(/assets/289b6053fc6a89d75452.svg);
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-    -webkit-mask-size: 100%100%;
-    mask-size: 100%100%;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat
-}
-
-.textContainer__02ecb {
-    margin-left: 9px;
-    text-align: left
-}
-
 .container__1e26b {
     display: flex;
     align-items: center;
@@ -130584,4 +130609,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.062984259c8d19d777e8.css.map*/
+/*# sourceMappingURL=app.7934daf78e9e50352902.css.map*/
