@@ -16200,7 +16200,21 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    position: relative;
+    z-index: 0
+}
+
+.background__3b30f:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: inherit
 }
 
 .avatarWrapper__76c62 {
@@ -28164,4 +28178,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.cca93473dd2be5414ba0.css.map*/
+/*# sourceMappingURL=shared.da039fd40e24337efc63.css.map*/
