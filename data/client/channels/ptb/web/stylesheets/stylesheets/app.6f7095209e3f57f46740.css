@@ -83375,7 +83375,9 @@ html .tabBadge__002b3 {
 .tabs__88df8 {
     display: flex;
     flex-direction: row;
-    gap: 16px
+    gap: 16px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--background-modifier-hover)
 }
 
 @value gridSize: 320px;
@@ -83384,7 +83386,7 @@ html .tabBadge__002b3 {
     display: grid;
     grid-gap: 16px;
     gap: 16px;
-    padding: 48px 0 16px;
+    padding: 24px 0 16px;
     grid-template-columns: 320px;
     justify-items: center;
     justify-content: center;
@@ -83428,7 +83430,8 @@ html .tabBadge__002b3 {
     overflow: hidden;
     height: calc(90vh - 60px);
     width: calc(100vw - 60px);
-    max-width: 1124px
+    max-width: 1124px;
+    background-color: var(--background-floating)
 }
 
 .modalHeader__616c1 {
@@ -83436,18 +83439,13 @@ html .tabBadge__002b3 {
     justify-content: space-between;
     align-items: center;
     color: var(--interactive-active);
-    padding: 12px 16px;
-    background-color: var(--primary-830)
+    padding: 12px 16px
 }
 
 .modalTitle_ffda3a {
     display: flex;
     align-items: center;
     gap: 8px
-}
-
-.modalContent_f377b6 {
-    background-color: var(--background-floating)
 }
 
 .modalContent__7f555 {
@@ -130740,4 +130738,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.9a392220525827f067e1.css.map*/
+/*# sourceMappingURL=app.6f7095209e3f57f46740.css.map*/

@@ -4294,10 +4294,8 @@
         134560: function(e, t, a) {
             "use strict";
             e.exports = {
-                body: "body__34e23",
                 icon: "icon_e1e45d",
                 selected: "selected__2b4d8",
-                title: "title__8b7fa",
                 wrapper: "wrapper__83f97"
             }
         },
@@ -4324,8 +4322,6 @@
                 cardBenefit: "cardBenefit__5c2e7",
                 cardBenefitDesc: "cardBenefitDesc_c9ec93",
                 cardBenefitIcon: "cardBenefitIcon_fc8f2f",
-                cardBenefitName: "cardBenefitName__64263",
-                cardBenefitTitle: "cardBenefitTitle__59c65",
                 container: "container_a98e7e",
                 description: "description__6afbb",
                 image: "image__2e834",
