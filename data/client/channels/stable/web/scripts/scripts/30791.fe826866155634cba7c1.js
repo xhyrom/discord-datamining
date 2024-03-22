@@ -359,10 +359,10 @@
                         profileEffectConfig: p,
                         noBorderRadius: v = !1,
                         introDelay: I = c.ENTRY_DELAY
-                    } = e, _ = u.useRef(null), [S, N] = u.useState([]);
+                    } = e, S = u.useRef(null), [_, N] = u.useState([]);
                     (0, A.default)(p);
-                    let [h, O] = u.useState(0), [C, y] = u.useState(0), {
-                        accessibilityLabel: F
+                    let [h, O] = u.useState(0), [C, F] = u.useState(0), {
+                        accessibilityLabel: y
                     } = p, [g, L] = u.useState(-I), {
                         stop: P,
                         reset: D,
@@ -375,22 +375,22 @@
                     }, [p]), u.useEffect(() => {
                         let e = 0,
                             t = 1 / 0;
-                        S.forEach(r => {
+                        _.forEach(r => {
                             let n = r.start + r.duration;
                             n > e && (e = n), r.loop && r.start < t && (t = r.start)
-                        }), O(t), y(e)
-                    }, [y, S]);
+                        }), O(t), F(e)
+                    }, [F, _]);
                     let [M, b] = u.useState(!1);
                     return u.useEffect(() => {
                         !0 !== s && !i && (P(), L(0)), !i && M && x.current && (P(), L(0)), o && i && !x.current && (D(), p.animationType === f.AnimationTypes.PERSISTENT ? L(T === f.RestartMethod.FromStart ? 0 : h) : L(0))
                     }, [i, M, h, o, P, D, x, p.animationType, s, T]), (0, n.jsx)("div", {
-                        ref: _,
+                        ref: S,
                         className: l(m.profileEffects, {
                             [m.hovered]: i && a
                         }),
                         children: (0, n.jsx)("div", {
                             className: v ? m.innerNoRadius : m.inner,
-                            children: S.map((e, u) => {
+                            children: _.map((e, u) => {
                                 var o, l, i, a, d, E, T, A;
                                 if (!x.current) {
                                     if (p.animationType === f.AnimationTypes.PERSISTENT && null != p.staticFrameSrc && 0 === u && !0 === s) {
@@ -404,24 +404,24 @@
                                                 left: null !== (E = null === (a = e.position) || void 0 === a ? void 0 : a.x) && void 0 !== E ? E : 0
                                             },
                                             src: r,
-                                            alt: F
+                                            alt: y
                                         }, e.src + u)
                                     }
                                     return (0, n.jsx)("img", {
                                         src: c.RESET,
-                                        alt: F
+                                        alt: y
                                     }, e.src + u)
                                 }
                                 if (g < e.start || !e.loop && g > e.duration + e.start) return (0, n.jsx)("img", {
                                     src: c.RESET,
-                                    alt: F
+                                    alt: y
                                 }, e.src + u);
                                 if (p.animationType === f.AnimationTypes.PERSISTENT && !M && null != r && g >= C && b(!0), e.loop && void 0 !== e.loopDelay && e.loopDelay > 0) {
                                     let t = e.duration + e.loopDelay,
                                         o = Math.floor((g - e.start) / t);
                                     if (g - e.start - o * t > e.duration) return p.animationType === f.AnimationTypes.INTERMITTENT && !M && null != r && o >= r && b(!0), (0, n.jsx)("img", {
                                         src: c.RESET,
-                                        alt: F
+                                        alt: y
                                     }, e.src + u)
                                 }
                                 return (0, n.jsx)("img", {
@@ -431,7 +431,7 @@
                                         top: (null !== (T = null === (o = e.position) || void 0 === o ? void 0 : o.y) && void 0 !== T ? T : 0) - t,
                                         left: null !== (A = null === (l = e.position) || void 0 === l ? void 0 : l.x) && void 0 !== A ? A : 0
                                     },
-                                    alt: F
+                                    alt: y
                                 }, e.src + u)
                             })
                         })
@@ -617,7 +617,7 @@
                 d = r("49111");
 
             function E(e) {
-                let t = (0, l.default)([s.default], () => s.default.saturation);
+                let t = (0, l.useStateFromStores)([s.default], () => s.default.saturation);
                 return (0, n.useMemo)(() => null == e ? null : {
                     overlaySyncedWithUserTheme: i.default.colors.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME.resolve({
                         theme: e,
@@ -716,4 +716,4 @@
         }
     }
 ]);
-//# sourceMappingURL=30791.3330a7487a797de2909a.js.map
+//# sourceMappingURL=30791.fe826866155634cba7c1.js.map

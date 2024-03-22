@@ -24921,6 +24921,23 @@
                         event: a.NetworkActionNames.USER_VERIFY_RESEND
                     }
                 }),
+                async loginWebAuthn(e) {
+                    let {
+                        ticket: t,
+                        credential: n,
+                        source: i,
+                        giftCodeSKUId: s
+                    } = e, r = await l.HTTP.post({
+                        url: T.Endpoints.WEBAUTHN_CONDITIONAL_UI_LOGIN,
+                        body: {
+                            credential: n,
+                            ticket: t,
+                            source: i,
+                            giftCodeSKUId: s
+                        }
+                    });
+                    return r.body.token
+                },
                 async resetPassword(e, t, n) {
                     d.default.dispatch({
                         type: "LOGIN"
@@ -44107,7 +44124,7 @@
 
             function a(e, t) {
                 let n = (0, s.default)(),
-                    a = (0, i.default)([r.default], () => r.default.saturation);
+                    a = (0, i.useStateFromStores)([r.default], () => r.default.saturation);
                 return e.resolve({
                     theme: null != t ? t : n,
                     saturation: a
@@ -55306,7 +55323,7 @@
                 r = n("605250"),
                 a = n("778689");
             let o = new r.default("BasicChannelCacheStore");
-            class l extends i.default {
+            class l extends i.Store {
                 hasChannel(e) {
                     return this.channels.has(e)
                 }
@@ -55374,7 +55391,7 @@
                 o = n("802493");
             let l = new r.default("FileSystemStore"),
                 u = 10 * a.default.Millis.MINUTE;
-            class d extends i.default {
+            class d extends i.Store {
                 handlePostConnectionOpen() {
                     return this.refresh(), !1
                 }
@@ -60182,7 +60199,7 @@
                     return N
                 }
             }), n("222007");
-            var r = n("35092"),
+            var r = n("446674"),
                 a = n("151426"),
                 o = n("913144"),
                 l = n("10641"),
@@ -61942,7 +61959,7 @@
             }
 
             function E(e) {
-                let t = (0, o.default)([d.default], () => d.default.saturation);
+                let t = (0, o.useStateFromStores)([d.default], () => d.default.saturation);
                 return i.useMemo(() => {
                     if (null == e) return null;
                     if ("currentColor" === e || e.startsWith("var(")) return e;
@@ -61954,7 +61971,7 @@
 
             function h(e, t) {
                 let n = (0, u.useTheme)(),
-                    s = (0, o.default)([d.default], () => d.default.saturation),
+                    s = (0, o.useStateFromStores)([d.default], () => d.default.saturation),
                     r = i.useMemo(() => {
                         if (null == e) return null;
                         let i = l.default.colors[c(e)].resolve({
@@ -62714,7 +62731,7 @@
                 var n;
                 let d = (0, l.useIsEligibleForGuildShopPreview)(t),
                     c = (0, r.useIsDismissibleContentDismissed)(s.DismissibleContent.SERVER_SHOP_PHANTOM_PREVIEW),
-                    _ = (0, i.default)([o.default], () => null != e && o.default.can(u.Permissions.ADMINISTRATOR, e)),
+                    _ = (0, i.useStateFromStores)([o.default], () => null != e && o.default.can(u.Permissions.ADMINISTRATOR, e)),
                     f = null !== (n = null == e ? void 0 : e.hasFeature(u.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) && void 0 !== n && n,
                     E = (0, a.useGuildEligibleForGuildProducts)(null == e ? void 0 : e.id, "useGuildShopPreviewVisible"),
                     h = [u.GuildFeatures.CREATOR_MONETIZABLE, u.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL, u.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED].some(t => (null == e ? void 0 : e.hasFeature(t)) === !0);
@@ -64026,7 +64043,7 @@
                 u = a.default.Millis.DAY;
 
             function d(e) {
-                let t = (0, i.default)([r.default], () => r.default.getId()),
+                let t = (0, i.useStateFromStores)([r.default], () => r.default.getId()),
                     n = null != t ? o.default.age(t) : 0;
                 return e.filter(e => {
                     var t;
@@ -77261,7 +77278,7 @@
             }
 
             function m(e) {
-                let t = (0, r.default)([u.default], () => u.default.getGuild(e)),
+                let t = (0, r.useStateFromStores)([u.default], () => u.default.getGuild(e)),
                     n = (0, _.default)(t),
                     {
                         homeSettingsEnabled: i
@@ -77271,9 +77288,9 @@
                     }, {
                         autoTrackExposure: !1
                     }),
-                    d = (0, r.default)([o.default], () => o.default.isFullServerPreview(e)),
+                    d = (0, r.useStateFromStores)([o.default], () => o.default.isFullServerPreview(e)),
                     m = (0, f.default)(e),
-                    p = (0, r.default)([l.default], () => l.default.getMutableGuildChannelsForGuild(e));
+                    p = (0, r.useStateFromStores)([l.default], () => l.default.getMutableGuildChannelsForGuild(e));
                 if (null == t || __OVERLAY__ || e === E.ME || e === E.FAVORITES) return !1;
                 if (d) return g(t);
                 let S = i && (0, a.isGuildOnboardingSettingsAvailable)(e) && t.hasFeature(E.GuildFeatures.GUILD_ONBOARDING) && t.hasFeature(E.GuildFeatures.GUILD_SERVER_GUIDE),
@@ -85184,8 +85201,8 @@
                 id: "2023-10_bandwidth_estimation_v1",
                 label: "Bandwidth Estimation",
                 defaultConfig: {
-                    enabled: !1,
-                    fullname: ""
+                    enabled: !0,
+                    fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/trendline-window-duration-3750,robust-estimator"
                 },
                 treatments: [{
                     id: 1,
@@ -85354,6 +85371,27 @@
                     config: {
                         enabled: !0,
                         fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/trendline-window-duration-3750,robust-estimator,rate-control-link-capacity-fix"
+                    }
+                }, {
+                    id: 25,
+                    label: "Sender + Worker: Trendline Window Duration 7500ms + Robust Estimator, worker REMB PLI only",
+                    config: {
+                        enabled: !0,
+                        fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/trendline-window-duration-3750,robust-estimator,worker-bitrate-remb-pli"
+                    }
+                }, {
+                    id: 26,
+                    label: "Sender + Worker: Trendline Window Duration 7500ms + Robust Estimator, worker continuous REMB only",
+                    config: {
+                        enabled: !0,
+                        fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/trendline-window-duration-3750,robust-estimator,worker-bitrate-remb-preemption-v1"
+                    }
+                }, {
+                    id: 27,
+                    label: "Sender + Worker: Trendline Window Duration 7500ms + Robust Estimator, worker REMB PLI with continuous",
+                    config: {
+                        enabled: !0,
+                        fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/trendline-window-duration-3750,robust-estimator,worker-bitrate-remb-preemption-v1,worker-bitrate-remb-pli"
                     }
                 }]
             });
@@ -88088,8 +88126,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711059906217",
-                                    build_number: "277643"
+                                    built_at: "1711140080748",
+                                    build_number: "277953"
                                 }
                             },
                             retries: 1
@@ -89029,6 +89067,9 @@
                 },
                 UnreadsEntryPointExperiment: function() {
                     return r
+                },
+                NewUserUnreadsEntryPointExperiment: function() {
+                    return a
                 }
             });
             var i = n("862205");
@@ -89079,6 +89120,30 @@
                             logExposure: !1,
                             autoOpen: !1,
                             manuallyOpen: !0
+                        }
+                    }]
+                }),
+                a = (0, i.createExperiment)({
+                    kind: "user",
+                    id: "2024-03_unreads_new_users",
+                    label: "Unreads Experiment (grey-dot mode) (new users)",
+                    defaultConfig: {
+                        enabled: !1,
+                        logExposure: !1
+                    },
+                    treatments: [{
+                        id: 0,
+                        label: "Control",
+                        config: {
+                            enabled: !1,
+                            logExposure: !0
+                        }
+                    }, {
+                        id: 1,
+                        label: "Auto open migration",
+                        config: {
+                            enabled: !0,
+                            logExposure: !0
                         }
                     }]
                 })
@@ -91933,9 +91998,6 @@
                 },
                 CreateGDMPollsExperiment: function() {
                     return r
-                },
-                PollsUserExperiment: function() {
-                    return a
                 }
             });
             var i = n("862205");
@@ -91964,21 +92026,6 @@
                     treatments: [{
                         id: 1,
                         label: "Enables creation of polls within a GDM",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                }),
-                a = (0, i.createExperiment)({
-                    kind: "user",
-                    id: "2023-10_poll_users",
-                    label: "Polls User Experiment",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 1,
-                        label: "Enables poll messages",
                         config: {
                             enabled: !0
                         }
@@ -98158,12 +98205,12 @@
                     return d
                 }
             });
-            var i = n("35092"),
+            var i = n("75247"),
                 s = n("913144"),
                 r = n("474643");
             let a = {},
                 o = {};
-            class l extends i.default.Store {
+            class l extends i.Store {
                 getStickerPreview(e, t) {
                     let n = t === r.DraftType.FirstThreadMessage ? o : a;
                     return n[e]
@@ -125570,7 +125617,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "472335475737f8b8d63cd8c962cbaf4acdea61ac"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "2ff410b2c7a82f971302ee9752549128f06d97b9"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -126574,7 +126621,7 @@
             function d(e) {
                 let {
                     className: t
-                } = e, s = (0, a.default)([o.default], () => o.default.useReducedMotion);
+                } = e, s = (0, a.useStateFromStores)([o.default], () => o.default.useReducedMotion);
                 async function d() {
                     let {
                         default: e
@@ -135068,7 +135115,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "277643"
+                                build_number: "277953"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -142925,9 +142972,6 @@
                         operations: n.complete()
                     }, t) : Promise.resolve())
                 }
-                toString() {
-                    return "[Database #".concat(this.handle, ": ").concat(this.name, "]")
-                }
                 constructor(e) {
                     this.raw = e, this.name = e.name, this.lastState = a.DatabaseState.Open, this.handle = e.handle, this.databaseStateCallback = r.Runtime.addDatabaseStateCallback((e, t) => {
                         this.handle === e && (this.lastState = t)
@@ -147018,7 +147062,7 @@
             });
             var i = n("37983"),
                 s = n("884691"),
-                r = n("465098"),
+                r = n("677935"),
                 a = n.n(r),
                 o = n("582909"),
                 l = n.n(o),
@@ -147086,7 +147130,7 @@
             }), n("222007");
             var i = n("37983"),
                 s = n("884691"),
-                r = n("465098"),
+                r = n("677935"),
                 a = n.n(r),
                 o = n("811022"),
                 l = n("784063");
@@ -150151,7 +150195,7 @@
             });
             var i = n("37983"),
                 s = n("884691"),
-                r = n("465098"),
+                r = n("677935"),
                 a = n.n(r),
                 o = n("793722"),
                 l = n("441822");
@@ -152837,4 +152881,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.600b1d4fbde65ff6c792.js.map
+//# sourceMappingURL=29062.55b752f0bf03d62c9657.js.map
