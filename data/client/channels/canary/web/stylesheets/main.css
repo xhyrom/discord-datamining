@@ -40909,6 +40909,23 @@ html .progress__4ef76 {
     outline: 2px solid Highlight
 }
 
+.tooltipContainer_fb55eb {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative
+}
+
+.tooltipBackground__909e8 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1
+}
+
 .pill__357e7 {
     position: absolute;
     top: 0;
@@ -121932,6 +121949,120 @@ div.nagbar_c731ff {
     align-items: center
 }
 
+.content_d4edcd {
+    border-radius: 8px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    position: relative
+}
+
+.modal__59cfa {
+    background-color: black
+}
+
+.header_cad314 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 400px
+}
+
+.question__5e7eb {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    margin-top: 200px
+}
+
+.options_b3360d {
+    display: flex;
+    gap: 16px
+}
+
+.option_ee91e5 {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1px solid var(--border-subtle);
+    cursor: pointer
+}
+
+.option_ee91e5:hover {
+    border-color: var(--border-strong)
+}
+
+.optionContent_db386b {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.selectedOption__86384 {
+    border: 2px solid var(--brand-500);
+    padding: 15px
+}
+
+.selectedOption__86384:hover {
+    border: 2px solid var(--brand-500)
+}
+
+.iconContainer__72376 {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: var(--background-primary);
+    box-sizing: border-box
+}
+
+.icon__60ae5 {
+    color: var(--interactive-normal);
+    width: 24px;
+    height: 24px
+}
+
+.emailContainer__410bb {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    margin-top: 40px
+}
+
+.emailForm__4a294 {
+    display: flex;
+    gap: 16px
+}
+
+.emailInput__03fc4 {
+    width: 320px
+}
+
+.completedContainer__86372 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 16px;
+    min-height: 560px;
+    min-width: 890px;
+    height: 100%
+}
+
+.closeButtonContainer_fbb3fd {
+    position: absolute;
+    top: 24px;
+    right: 24px
+}
+
 .waveformCanvas_ed56c9 {
     width: 100%;
     height: 100%
@@ -130609,4 +130740,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.7934daf78e9e50352902.css.map*/
+/*# sourceMappingURL=app.df251d9999c957f65385.css.map*/
