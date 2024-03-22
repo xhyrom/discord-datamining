@@ -44107,7 +44107,7 @@
 
             function a(e, t) {
                 let n = (0, s.default)(),
-                    a = (0, i.default)([r.default], () => r.default.saturation);
+                    a = (0, i.useStateFromStores)([r.default], () => r.default.saturation);
                 return e.resolve({
                     theme: null != t ? t : n,
                     saturation: a
@@ -61942,7 +61942,7 @@
             }
 
             function E(e) {
-                let t = (0, o.default)([d.default], () => d.default.saturation);
+                let t = (0, o.useStateFromStores)([d.default], () => d.default.saturation);
                 return i.useMemo(() => {
                     if (null == e) return null;
                     if ("currentColor" === e || e.startsWith("var(")) return e;
@@ -61954,7 +61954,7 @@
 
             function h(e, t) {
                 let n = (0, u.useTheme)(),
-                    s = (0, o.default)([d.default], () => d.default.saturation),
+                    s = (0, o.useStateFromStores)([d.default], () => d.default.saturation),
                     r = i.useMemo(() => {
                         if (null == e) return null;
                         let i = l.default.colors[c(e)].resolve({
@@ -62714,7 +62714,7 @@
                 var n;
                 let d = (0, l.useIsEligibleForGuildShopPreview)(t),
                     c = (0, r.useIsDismissibleContentDismissed)(s.DismissibleContent.SERVER_SHOP_PHANTOM_PREVIEW),
-                    _ = (0, i.default)([o.default], () => null != e && o.default.can(u.Permissions.ADMINISTRATOR, e)),
+                    _ = (0, i.useStateFromStores)([o.default], () => null != e && o.default.can(u.Permissions.ADMINISTRATOR, e)),
                     f = null !== (n = null == e ? void 0 : e.hasFeature(u.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) && void 0 !== n && n,
                     E = (0, a.useGuildEligibleForGuildProducts)(null == e ? void 0 : e.id, "useGuildShopPreviewVisible"),
                     h = [u.GuildFeatures.CREATOR_MONETIZABLE, u.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL, u.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED].some(t => (null == e ? void 0 : e.hasFeature(t)) === !0);
@@ -64026,7 +64026,7 @@
                 u = a.default.Millis.DAY;
 
             function d(e) {
-                let t = (0, i.default)([r.default], () => r.default.getId()),
+                let t = (0, i.useStateFromStores)([r.default], () => r.default.getId()),
                     n = null != t ? o.default.age(t) : 0;
                 return e.filter(e => {
                     var t;
@@ -77261,7 +77261,7 @@
             }
 
             function m(e) {
-                let t = (0, r.default)([u.default], () => u.default.getGuild(e)),
+                let t = (0, r.useStateFromStores)([u.default], () => u.default.getGuild(e)),
                     n = (0, _.default)(t),
                     {
                         homeSettingsEnabled: i
@@ -77271,9 +77271,9 @@
                     }, {
                         autoTrackExposure: !1
                     }),
-                    d = (0, r.default)([o.default], () => o.default.isFullServerPreview(e)),
+                    d = (0, r.useStateFromStores)([o.default], () => o.default.isFullServerPreview(e)),
                     m = (0, f.default)(e),
-                    p = (0, r.default)([l.default], () => l.default.getMutableGuildChannelsForGuild(e));
+                    p = (0, r.useStateFromStores)([l.default], () => l.default.getMutableGuildChannelsForGuild(e));
                 if (null == t || __OVERLAY__ || e === E.ME || e === E.FAVORITES) return !1;
                 if (d) return g(t);
                 let S = i && (0, a.isGuildOnboardingSettingsAvailable)(e) && t.hasFeature(E.GuildFeatures.GUILD_ONBOARDING) && t.hasFeature(E.GuildFeatures.GUILD_SERVER_GUIDE),
@@ -88088,8 +88088,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711078625936",
-                                    build_number: "277756"
+                                    built_at: "1711093655603",
+                                    build_number: "277770"
                                 }
                             },
                             retries: 1
@@ -125552,7 +125552,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "dd0eb83dd3b5997e218514481cdb9218fcb64367"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "ebc6d6da785c387126b27081fb30501c3b7e96c2"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -126556,7 +126556,7 @@
             function d(e) {
                 let {
                     className: t
-                } = e, s = (0, a.default)([o.default], () => o.default.useReducedMotion);
+                } = e, s = (0, a.useStateFromStores)([o.default], () => o.default.useReducedMotion);
                 async function d() {
                     let {
                         default: e
@@ -135050,7 +135050,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "277756"
+                                build_number: "277770"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -152816,4 +152816,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.01960ec2bd5f118c527d.js.map
+//# sourceMappingURL=29062.18f87d94a84cd3bfc1df.js.map
