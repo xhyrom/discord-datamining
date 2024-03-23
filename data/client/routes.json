@@ -4694,7 +4694,8 @@
     "allowed_methods": [
       "GET",
       "HEAD",
-      "OPTIONS"
+      "OPTIONS",
+      "POST"
     ]
   },
   "QUESTS_CURRENT_QUESTS": {
