@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-03_gateway_zstd",
+    "label": "Gateway Zstd compression",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Use Zstd"
+    ],
+    "hash": 3940464351,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
