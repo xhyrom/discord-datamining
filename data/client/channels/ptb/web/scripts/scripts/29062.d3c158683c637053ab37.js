@@ -70371,22 +70371,24 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return _
+                    return f
                 }
             }), n("424973"), n("311790"), n("477657"), n("811875"), n("90301"), n("652153"), n("28797"), n("817884"), n("597349"), n("667536"), n("690341"), n("70102"), n("222007");
             var i = n("917351"),
                 s = n.n(i),
                 r = n("605250"),
-                a = n("197881");
+                a = n("197881"),
+                o = n("863856");
             let {
-                NativeModules: o
-            } = {}, l = [];
-            class u {
+                NativeModules: l
+            } = {}, u = [];
+            class d {
                 static canUse() {
                     return !1
                 }
                 bindWebSocket(e) {}
                 feed(e) {}
+                recomputeAlgorithm() {}
                 dataReady(e) {
                     this._onDataReady = e
                 }
@@ -70394,7 +70396,7 @@
                     this._onDataReady = null, this._gatewayEncoding = e
                 }
             }
-            l.push(class extends u {
+            u.push(class extends d {
                 static canUse() {
                     return void 0 !== window.Uint8Array
                 }
@@ -70454,7 +70456,7 @@
                         });
                     i.onEnd = this.handleFlushEnd.bind(this)
                 }
-            }), l.push(class extends u {
+            }), u.push(class extends d {
                 static canUse() {
                     return !0
                 }
@@ -70475,15 +70477,18 @@
                 constructor(...e) {
                     super(...e), this._pako = n("181905")
                 }
-            }), l.push(class extends u {
+            }), u.push(class extends d {
                 static canUse() {
                     return !1
                 }
                 bindWebSocket(e) {
-                    this.close(), this._socketId = e._socketId, o.DCDCompressionManager.enableZlibStreamSupport(this._socketId)
+                    this.close(), this._socketId = e._socketId, this._usesZstd ? l.DCDCompressionManager.enableZstdStreamSupport(this._socketId, 0) : l.DCDCompressionManager.enableZlibStreamSupport(this._socketId)
+                }
+                recomputeAlgorithm() {
+                    this._usesZstd = o.default.shouldUseZstd()
                 }
                 getAlgorithm() {
-                    return "zlib-stream"
+                    return this._usesZstd ? "zstd-stream" : "zlib-stream"
                 }
                 usesLegacyCompression() {
                     return !1
@@ -70494,13 +70499,13 @@
                 }
                 close() {
                     let e = this._socketId;
-                    this._socketId = null, null !== e && o.DCDCompressionManager.disableZlibStreamSupport(e)
+                    this._socketId = null, null !== e && l.DCDCompressionManager.disableZlibStreamSupport(e)
                 }
                 constructor(e) {
-                    super(e), this._socketId = null
+                    super(e), this._usesZstd = !1, this._socketId = null
                 }
             });
-            class d extends u {
+            class c extends d {
                 static canUse() {
                     return !0
                 }
@@ -70516,10 +70521,10 @@
                 }
                 close() {}
             }
-            l.push(d);
-            let c = s.find(l, e => e.canUse());
-            a.ProcessArgs.isDiscordGatewayPlaintextSet() && (c = d);
-            var _ = c
+            u.push(c);
+            let _ = s.find(u, e => e.canUse());
+            a.ProcessArgs.isDiscordGatewayPlaintextSet() && (_ = c);
+            var f = _
         },
         619443: function(e, t, n) {
             "use strict";
@@ -70961,6 +70966,7 @@
                 b = n("571420"),
                 U = n("797785"),
                 w = n("49111");
+            n("863856");
             let k = new m.default("GatewaySocket"),
                 V = new D.default;
 
@@ -71000,7 +71006,7 @@
                         k.info("Skipping _connect because socket is paused");
                         return
                     }
-                    this.connectionState = N.default.CONNECTING, this.nextReconnectIsImmediate = !1;
+                    this.connectionState = N.default.CONNECTING, this.nextReconnectIsImmediate = !1, this.compressionHandler.recomputeAlgorithm();
                     let i = this.compressionHandler.getAlgorithm(),
                         s = V.getName(),
                         r = this._getGatewayUrl(),
@@ -71964,6 +71970,100 @@
                     reason: n
                 })
             })
+        },
+        863856: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return g
+                }
+            });
+            var i = n("811022"),
+                s = n("446674"),
+                r = n("913144"),
+                a = n("862205"),
+                o = n("789563"),
+                l = n("15511");
+            let u = (0, a.createExperiment)({
+                    id: "2024-03_gateway_zstd",
+                    label: "Gateway Zstd compression",
+                    kind: "user",
+                    defaultConfig: {
+                        useZstd: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Use Zstd",
+                        config: {
+                            useZstd: !0
+                        }
+                    }]
+                }),
+                d = new i.default("GatewayZstdStore"),
+                c = !1,
+                _ = !1,
+                f = 0;
+
+            function E(e) {
+                if (e && !(0, l.supportsZstd)()) {
+                    d.warn("Attempting to enable zstd but it is not supported");
+                    return
+                }(0, l.setFastConnectZstd)(e), e !== c && d.info("Setting Zstd to ".concat(e)), c = e
+            }
+            class h extends s.default.Store {
+                initialize() {
+                    this.waitFor(o.default), c = (0, l.supportsZstd)() && (0, l.getFastConnectZstd)()
+                }
+                shouldUseZstd() {
+                    return c
+                }
+            }
+            h.displayName = "GatewayZstdStore";
+            var g = new h(r.default, {
+                CONNECTION_OPEN: function() {
+                    if (_) {
+                        d.info("Ignoring zstd experiment config because we fell back to zlib");
+                        return
+                    }
+                    let e = u.getCurrentConfig({
+                        location: "GatewayZstdStore"
+                    }, {
+                        autoTrackExposure: (0, l.supportsZstd)()
+                    });
+                    E(e.useZstd), f = 0
+                },
+                CONNECTION_INTERRUPTED: function() {
+                    c && (f += 1) > 3 && (d.error("Disabling zstd due to consecutive errors"), E(!1), _ = !0)
+                }
+            })
+        },
+        15511: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                supportsZstd: function() {
+                    return r
+                },
+                getFastConnectZstd: function() {
+                    return a
+                },
+                setFastConnectZstd: function() {
+                    return o
+                }
+            });
+            var i = n("811022");
+            let s = new i.default("FAST CONNECT");
+
+            function r() {
+                return !1
+            }
+
+            function a() {
+                return !1
+            }
+
+            function o(e) {
+                s.error("Attempting to set fast connect zstd when unsupported")
+            }
         },
         413196: function(e, t, n) {
             "use strict";
@@ -88126,8 +88226,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711156894280",
-                                    build_number: "278090"
+                                    built_at: "1711159655842",
+                                    build_number: "278097"
                                 }
                             },
                             retries: 1
@@ -125648,7 +125748,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "fbf653f9bf2b5b4196e20ebca0cee4225264899c"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "96b49edc1c020e4ded93672abce41c742ad88840"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -135146,7 +135246,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "278090"
+                                build_number: "278097"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -152961,4 +153061,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.27b4d81cca95a7cf512c.js.map
+//# sourceMappingURL=29062.d3c158683c637053ab37.js.map
