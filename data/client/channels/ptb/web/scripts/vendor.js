@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["29062"], {
+    ["45109"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -88126,8 +88126,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711150502607",
-                                    build_number: "278051"
+                                    built_at: "1711154822805",
+                                    build_number: "278083"
                                 }
                             },
                             retries: 1
@@ -91998,6 +91998,9 @@
                 },
                 CreateGDMPollsExperiment: function() {
                     return r
+                },
+                CreatePollsCoachmarkExperiment: function() {
+                    return a
                 }
             });
             var i = n("862205");
@@ -92030,6 +92033,21 @@
                             enabled: !0
                         }
                     }]
+                }),
+                a = (0, i.createExperiment)({
+                    kind: "guild",
+                    id: "2024-03_polls_coachmark",
+                    label: "Show coachmark for poll creation entry point",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Can show coachmark for poll creation entry point",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
                 })
         },
         562228: function(e, t, n) {
@@ -92047,26 +92065,29 @@
                 useCanPostPollsInChannel: function() {
                     return A
                 },
-                useCanPostImagePolls: function() {
+                useCanShowPollsChatInputCoachmarkInGuild: function() {
                     return C
                 },
-                isPollCreationEmpty: function() {
+                useCanPostImagePolls: function() {
                     return y
                 },
-                isAnswerFilled: function() {
+                isPollCreationEmpty: function() {
                     return N
                 },
-                isIncompleteAnswer: function() {
+                isAnswerFilled: function() {
                     return R
                 },
-                createPollServerDataFromCreateRequest: function() {
+                isIncompleteAnswer: function() {
                     return O
                 },
-                getTotalVotes: function() {
+                createPollServerDataFromCreateRequest: function() {
                     return D
                 },
-                getPollAnswerVotesTooltipText: function() {
+                getTotalVotes: function() {
                     return P
+                },
+                getPollAnswerVotesTooltipText: function() {
+                    return L
                 }
             }), n("781738"), n("222007"), n("808653");
             var i = n("917351"),
@@ -92130,15 +92151,25 @@
                 return i || s
             }
 
-            function C() {
+            function C(e) {
+                let {
+                    enabled: t
+                } = g.CreatePollsCoachmarkExperiment.useExperiment({
+                    guildId: e,
+                    location: "useCanShowPollsChatInputCoachmarkInGuild"
+                });
+                return t
+            }
+
+            function y() {
                 return !1
             }
 
-            function y(e, t, n) {
-                return 0 === e.length && null == t.find(e => N(e, n))
+            function N(e, t, n) {
+                return 0 === e.length && null == t.find(e => R(e, n))
             }
 
-            function N(e, t) {
+            function R(e, t) {
                 if (t === a.PollLayoutTypes.IMAGE_ONLY_ANSWERS) return null != e.image;
                 {
                     var n;
@@ -92147,13 +92178,13 @@
                 }
             }
 
-            function R(e, t) {
+            function O(e, t) {
                 var n;
                 let i = null === (n = e.text) || void 0 === n ? void 0 : n.trim();
                 return t === a.PollLayoutTypes.DEFAULT && null != e.image && (null == i || 0 === i.length)
             }
 
-            function O(e) {
+            function D(e) {
                 var t, n;
                 if (null == e) return;
                 let i = null == e ? void 0 : null === (t = e.answers) || void 0 === t ? void 0 : t.map((e, t) => {
@@ -92180,14 +92211,14 @@
                 }
             }
 
-            function D(e) {
+            function P(e) {
                 return e.reduce((e, t) => {
                     var n, i;
                     return e + (null !== (i = null === (n = t.count_details) || void 0 === n ? void 0 : n.vote) && void 0 !== i ? i : 0)
                 }, 0)
             }
 
-            function P(e, t, n) {
+            function L(e, t, n) {
                 var i, r;
                 let a = c.default.getMessage(t, e);
                 if (null == a) return "";
@@ -125617,7 +125648,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "6491248c3ca1ba449bdc7bf938dd8a739f1815a4"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "a3a9acd2ff47314f8f8f4548d96e801eaf33abcd"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -135115,7 +135146,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "278051"
+                                build_number: "278083"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -152930,4 +152961,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.208d0fa3ea1346aefad5.js.map
+//# sourceMappingURL=45109.6e638336e1e2c047cb67.js.map
