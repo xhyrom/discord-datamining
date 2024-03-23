@@ -1,0 +1,69 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2024-03_polls_coachmark",
+    "label": "Show coachmark for poll creation entry point",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Can show coachmark for poll creation entry point"
+    ],
+    "hash": 1325121101,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {
+      "name": null,
+      "bucket": null
+    },
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_member_count_range",
+            "min_count": 1,
+            "max_count": 200
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 0,
+    "overrides": {
+      "1": [
+        "1042148168726487101"
+      ]
+    },
+    "overrides_formatted": []
+  }
+}
