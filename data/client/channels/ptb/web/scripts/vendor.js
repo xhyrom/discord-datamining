@@ -88238,8 +88238,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711397342571",
-                                    build_number: "278332"
+                                    built_at: "1711399042700",
+                                    build_number: "278348"
                                 }
                             },
                             retries: 1
@@ -125760,7 +125760,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "ef3b9b27de4caa64479fcc098fa978cc50027952"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "ed6fef5de66531b071a635ff59b7b9ba7ea6d4f0"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -135258,7 +135258,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "278332"
+                                build_number: "278348"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -152638,7 +152638,7 @@
                 QuestContent: function() {
                     return i
                 }
-            }), (s = i || (i = {}))[s.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", s[s.QUEST_BAR = 1] = "QUEST_BAR", s[s.QUEST_INVENTORY_CARD = 2] = "QUEST_INVENTORY_CARD", s[s.QUESTS_EMBED = 3] = "QUESTS_EMBED", s[s.ACTIVITY_PANEL = 4] = "ACTIVITY_PANEL", s[s.QUEST_LIVE_STREAM = 5] = "QUEST_LIVE_STREAM"
+            }), (s = i || (i = {}))[s.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", s[s.QUEST_BAR = 1] = "QUEST_BAR", s[s.QUEST_INVENTORY_CARD = 2] = "QUEST_INVENTORY_CARD", s[s.QUESTS_EMBED = 3] = "QUESTS_EMBED", s[s.ACTIVITY_PANEL = 4] = "ACTIVITY_PANEL", s[s.QUEST_LIVE_STREAM = 5] = "QUEST_LIVE_STREAM", s[s.MEMBERS_LIST = 6] = "MEMBERS_LIST"
         },
         313989: function(e, t, n) {
             "use strict";
@@ -153073,4 +153073,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.82fc084fb701c6dd6542.js.map
+//# sourceMappingURL=29062.c6755b33944a788aa632.js.map

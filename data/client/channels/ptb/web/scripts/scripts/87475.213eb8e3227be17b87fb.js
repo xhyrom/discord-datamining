@@ -4126,7 +4126,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "278332", "278332"), 10);
+                let o = parseInt((n = "278348", "278348"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5684,4 +5684,4 @@
         }
     }
 ]);
-//# sourceMappingURL=87475.e1b91173248f33cb9bc4.js.map
+//# sourceMappingURL=87475.213eb8e3227be17b87fb.js.map
