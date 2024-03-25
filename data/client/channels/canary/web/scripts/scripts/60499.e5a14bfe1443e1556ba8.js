@@ -511,7 +511,7 @@
 
             function i() {
                 var e;
-                let t = null !== (e = n.default.get(l)) && void 0 !== e ? e : [];
+                let t = null !== (e = n.Storage.get(l)) && void 0 !== e ? e : [];
                 return t.filter(e => null == e.exp || e.exp > Date.now())
             }
 
@@ -524,7 +524,7 @@
                     },
                     a = i(),
                     s = [r, ...a.filter(e => r.id !== e.id)].slice(0, 5);
-                n.default.set(l, s)
+                n.Storage.set(l, s)
             }
         },
         758926: function(e, t, r) {
@@ -838,4 +838,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60499.ed4011814fda3eba003f.js.map
+//# sourceMappingURL=60499.e5a14bfe1443e1556ba8.js.map

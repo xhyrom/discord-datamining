@@ -24798,9 +24798,9 @@
                         url: T.Endpoints.LOGOUT,
                         body: {
                             provider: (0, v.getDevicePushProvider)(),
-                            token: u.default.get(T.DEVICE_TOKEN),
+                            token: u.Storage.get(T.DEVICE_TOKEN),
                             voip_provider: v.DEVICE_PUSH_VOIP_PROVIDER,
-                            voip_token: u.default.get(T.DEVICE_VOIP_TOKEN)
+                            voip_token: u.Storage.get(T.DEVICE_VOIP_TOKEN)
                         },
                         oldFormErrors: !0,
                         trackedActionData: {
@@ -24947,10 +24947,10 @@
                             password: t,
                             source: n
                         },
-                        s = u.default.get(T.DEVICE_TOKEN),
+                        s = u.Storage.get(T.DEVICE_TOKEN),
                         r = (0, v.getDevicePushProvider)();
                     null != r && null != s && (i.push_provider = r, i.push_token = s);
-                    let o = u.default.get(T.DEVICE_VOIP_TOKEN);
+                    let o = u.Storage.get(T.DEVICE_VOIP_TOKEN);
                     null != v.DEVICE_PUSH_VOIP_PROVIDER && null != o && (i.push_voip_provider = v.DEVICE_PUSH_VOIP_PROVIDER, i.push_voip_token = o);
                     try {
                         let {
@@ -31717,10 +31717,10 @@
                                     ...e,
                                     discriminator: null != m && "" !== m ? m : void 0
                                 },
-                                r = s.default.get(c.DEVICE_TOKEN),
+                                r = s.Storage.get(c.DEVICE_TOKEN),
                                 l = (0, _.getDevicePushProvider)();
                             null != l && null != r && (t.push_provider = l, t.push_token = r);
-                            let u = s.default.get(c.DEVICE_VOIP_TOKEN);
+                            let u = s.Storage.get(c.DEVICE_VOIP_TOKEN);
                             return null != _.DEVICE_PUSH_VOIP_PROVIDER && null != u && (t.push_voip_provider = _.DEVICE_PUSH_VOIP_PROVIDER, t.push_voip_token = u), i.HTTP.patch({
                                 url: c.Endpoints.ME,
                                 oldFormErrors: !0,
@@ -57650,13 +57650,13 @@
                     },
                     getBlockedDomains() {
                         if ((0, a.isDesktop)()) {
-                            let e = s.default.get("BlockedDomainsV2");
+                            let e = s.Storage.get("BlockedDomainsV2");
                             return Promise.resolve(null == e ? [] : e.split("\n"))
                         }
                         return Promise.resolve([])
                     },
                     saveBlockedDomains(e) {
-                        (0, a.isDesktop)() && s.default.set("BlockedDomainsV2", e.join("\n"))
+                        (0, a.isDesktop)() && s.Storage.set("BlockedDomainsV2", e.join("\n"))
                     }
                 }
         },
@@ -57680,12 +57680,12 @@
                 f = null;
             class E extends s.default.Store {
                 initialize() {
-                    i = null, r.default.get(c) && (r.default.remove(_), r.default.remove(c))
+                    i = null, r.Storage.get(c) && (r.Storage.remove(_), r.Storage.remove(c))
                 }
                 getCurrentRevision() {
                     if (null == i) {
                         var e;
-                        i = null !== (e = r.default.get(_)) && void 0 !== e ? e : null
+                        i = null !== (e = r.Storage.get(_)) && void 0 !== e ? e : null
                     }
                     return i
                 }
@@ -57714,7 +57714,7 @@
                         list: t,
                         revision: n
                     } = e;
-                    f = null, i = null, u.default.saveBlockedDomains(t), r.default.set("BlockedDomainRevision", n)
+                    f = null, i = null, u.default.saveBlockedDomains(t), r.Storage.set("BlockedDomainRevision", n)
                 }
             })
         },
@@ -65732,16 +65732,16 @@
                 let {
                     isSwitchingAccount: t
                 } = e;
-                u.default.remove(p), !t && (u.default.remove(S), u.default.remove(T), u.default.remove(v), L = {}, M = {}), O = {}, N = [], C = {}, A = !1
+                u.Storage.remove(p), !t && (u.Storage.remove(S), u.Storage.remove(T), u.Storage.remove(v), L = {}, M = {}), O = {}, N = [], C = {}, A = !1
             }
 
             function ee() {
-                A = !1, C = {}, u.default.remove(p)
+                A = !1, C = {}, u.Storage.remove(p)
             }
 
             function et() {
                 try {
-                    u.default.set(T, L)
+                    u.Storage.set(T, L)
                 } catch (e) {
                     I.error("Error saving user experiment overrides, unsaved data will be lost", e), E.default.track(m.AnalyticEvents.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
                         module: "discord_app",
@@ -65749,7 +65749,7 @@
                     })
                 }
                 try {
-                    u.default.set(v, M)
+                    u.Storage.set(v, M)
                 } catch (e) {
                     I.error("Error saving guild experiment overrides, unsaved data will be lost", e), E.default.track(m.AnalyticEvents.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
                         module: "discord_app",
@@ -65760,7 +65760,7 @@
 
             function en(e) {
                 try {
-                    u.default.set(p, {
+                    u.Storage.set(p, {
                         v: 1,
                         e: e
                     })
@@ -65857,7 +65857,7 @@
             class eo extends f.default {
                 initialize() {
                     C = function() {
-                        let e = u.default.get(p);
+                        let e = u.Storage.get(p);
                         if (null == e || 1 !== e.v) return {};
                         let t = e.e,
                             n = Date.now(),
@@ -65866,7 +65866,7 @@
                         return i && en(t), t
                     }(), ! function() {
                         var e, t, n;
-                        let i = [null !== (e = u.default.get(S)) && void 0 !== e ? e : {}, null !== (t = u.default.get(T)) && void 0 !== t ? t : {}, null !== (n = u.default.get(v)) && void 0 !== n ? n : {}];
+                        let i = [null !== (e = u.Storage.get(S)) && void 0 !== e ? e : {}, null !== (t = u.Storage.get(T)) && void 0 !== t ? t : {}, null !== (n = u.Storage.get(v)) && void 0 !== n ? n : {}];
                         L = {}, M = {};
                         let s = !a.isEmpty(i[0]);
                         for (let e of i)
@@ -69855,7 +69855,7 @@
             }
 
             function ei() {
-                u.default.set(L, H)
+                u.Storage.set(L, H)
             }
 
             function es(e) {
@@ -70004,7 +70004,7 @@
             class eu extends l.default.Store {
                 initialize() {
                     var e, t, n, i;
-                    let s = null !== (e = u.default.get(L)) && void 0 !== e ? e : {
+                    let s = null !== (e = u.Storage.get(L)) && void 0 !== e ? e : {
                         gamesSeen: [],
                         gameOverrides: {},
                         enableOverlay: {},
@@ -75018,18 +75018,18 @@
             let l = (0, r.default)((e, t) => ({
                     notificationDismissedInGuilds: function() {
                         var e;
-                        let t = null !== (e = a.default.get(o.DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY)) && void 0 !== e ? e : [];
+                        let t = null !== (e = a.Storage.get(o.DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY)) && void 0 !== e ? e : [];
                         return new Set(t)
                     }(),
                     dismissNotification: n => {
                         let i = t().notificationDismissedInGuilds;
-                        i.add(n), a.default.set(o.DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY, i), e({
+                        i.add(n), a.Storage.set(o.DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY, i), e({
                             notificationDismissedInGuilds: i
                         })
                     },
                     resetNotification: n => {
                         let i = t().notificationDismissedInGuilds;
-                        i.has(n) && (i.delete(n), a.default.set(o.DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY, i), e({
+                        i.has(n) && (i.delete(n), a.Storage.set(o.DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY, i), e({
                             notificationDismissedInGuilds: i
                         }))
                     }
@@ -80203,7 +80203,7 @@
                     return null != o ? o.id : null
                 }
                 showPublicSuccessModal() {
-                    return !m.default.get(L.PUBLIC_SUCCESS_MODAL_SEEN_KEY)
+                    return !m.Storage.get(L.PUBLIC_SUCCESS_MODAL_SEEN_KEY)
                 }
                 getGuild() {
                     return o
@@ -83232,12 +83232,12 @@
                     setExperimentEnabled: t => {
                         e({
                             _experimentEnabled: t
-                        }), a.default.set(f, t)
+                        }), a.Storage.set(f, t)
                     },
                     setInitialized: () => {
                         e(e => e._experimentCacheInitialized ? e : {
                             _experimentCacheInitialized: !0,
-                            _experimentEnabled: !0 === a.default.get(f)
+                            _experimentEnabled: !0 === a.Storage.get(f)
                         })
                     }
                 }));
@@ -83407,11 +83407,11 @@
                     ...t,
                     disable: f,
                     autoTrackExposure: !o && (null === (s = null == t ? void 0 : t.autoTrackExposure) || void 0 === s || s)
-                }) : (!d && (c = null !== (n = i.default.get("--you-bar-experiment-cached-config")) && void 0 !== n ? n : u, d = !0), c)
+                }) : (!d && (c = null !== (n = i.Storage.get("--you-bar-experiment-cached-config")) && void 0 !== n ? n : u, d = !0), c)
             }
 
             function E() {
-                let e = i.default.get("--you-bar-experiment-first-seen");
+                let e = i.Storage.get("--you-bar-experiment-first-seen");
                 return null == e ? -1 : Math.floor((Date.now() - e) / o.default.Millis.DAY)
             }
         },
@@ -88238,8 +88238,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711395878563",
-                                    build_number: "278320"
+                                    built_at: "1711397000602",
+                                    build_number: "278328"
                                 }
                             },
                             retries: 1
@@ -91301,25 +91301,25 @@
                         enabled: this.enabled,
                         legacyEnabled: this.legacyEnabled
                     };
-                    r.default.set("OverlayStore3", e)
+                    r.Storage.set("OverlayStore3", e)
                 }
                 static load() {
                     return null == o._loaded && (o._loaded = o.loadInternal()), o._loaded
                 }
                 static loadInternal() {
-                    let e = r.default.get("OverlayStore");
+                    let e = r.Storage.get("OverlayStore");
                     if (null != e) {
                         let t = "boolean" == typeof e.enabled ? e.enabled : a.OVERLAY_SUPPORTED,
                             n = new o(t, !1);
-                        return n.save(), r.default.remove("OverlayStore"), n
+                        return n.save(), r.Storage.remove("OverlayStore"), n
                     }
-                    let t = r.default.get("overlayEnabled");
+                    let t = r.Storage.get("overlayEnabled");
                     if (null != t) {
                         let e = "boolean" == typeof t ? t : a.OVERLAY_SUPPORTED,
                             n = new o(e, !1);
-                        return n.save(), r.default.remove("overlayEnabled"), n
+                        return n.save(), r.Storage.remove("overlayEnabled"), n
                     }
-                    let n = r.default.get("OverlayStore3");
+                    let n = r.Storage.get("OverlayStore3");
                     if (null != n) {
                         var i, s;
                         return new o(null !== (i = n.enabled) && void 0 !== i ? i : a.OVERLAY_SUPPORTED, null !== (s = n.legacyEnabled) && void 0 !== s && s)
@@ -97175,9 +97175,9 @@
                         } = e;
                         t.forEach(e => {
                             if (null == e.channelId || e.userId !== a.default.getId()) return;
-                            if (this.terminate(), i.default.get(d.STAGE_AUDIENCE_NOTICE_SHOWN_STORAGE_KEY, !1)) return;
+                            if (this.terminate(), i.Storage.get(d.STAGE_AUDIENCE_NOTICE_SHOWN_STORAGE_KEY, !1)) return;
                             let t = o.default.getVoiceChannelId();
-                            if (null != t) e.channelId === t && u.default.isAudienceMember(e.userId, t) && (i.default.set(d.STAGE_AUDIENCE_NOTICE_SHOWN_STORAGE_KEY, !0), l.openStageChannelAudienceNoticeModal(t))
+                            if (null != t) e.channelId === t && u.default.isAudienceMember(e.userId, t) && (i.Storage.set(d.STAGE_AUDIENCE_NOTICE_SHOWN_STORAGE_KEY, !0), l.openStageChannelAudienceNoticeModal(t))
                         })
                     }
                 }
@@ -101995,8 +101995,8 @@
                 }
             }
             p.displayName = "UnsyncedUserSettingsStore", p.persistKey = "UnsyncedUserSettingsStore", p.migrations = [() => {
-                let e = d.default.get("UserSettingsStore");
-                return d.default.remove("UserSettingsStore"), l.pick(e, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations")
+                let e = d.Storage.get("UserSettingsStore");
+                return d.Storage.remove("UserSettingsStore"), l.pick(e, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations")
             }];
             var S = new p(c.default, {
                 UNSYNCED_USER_SETTINGS_UPDATE: function(e) {
@@ -105845,7 +105845,7 @@
 
             function en(e) {
                 let t = null != o.getToken(),
-                    n = null != c.default.get(C.TOKEN_KEY);
+                    n = null != c.Storage.get(C.TOKEN_KEY);
                 R.verbose(e, {
                     tokenManagerHasToken: t,
                     storageHasToken: n
@@ -105854,7 +105854,7 @@
 
             function ei() {
                 let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-                if (w = c.default.get(O), null != $) return $;
+                if (w = c.Storage.get(O), null != $) return $;
                 let t = null != w ? w : o.getToken();
                 !(!(0, m.isValidFingerprintRoute)() || !e && null != t || I.default.isHandoffAvailable()) && es({
                     withGuildExperiments: !0
@@ -105899,7 +105899,7 @@
             }
 
             function er() {
-                k = w, w = null, c.default.remove(O)
+                k = w, w = null, c.Storage.remove(O)
             }
 
             function ea(e, t) {
@@ -105920,11 +105920,11 @@
                 en("handleLogout called."), eo(), er(), !(null == e ? void 0 : e.isSwitchingAccount) && ei(), u.default.PersistedStore.clearAll({
                     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore"],
                     type: (null == e ? void 0 : e.isSwitchingAccount) ? "user-data-only" : "all"
-                }), A.default.clearAll(), h.clear(), v.default.clearUser(), c.default.remove(P), L = null, G = (null == e ? void 0 : e.isSwitchingAccount) ? C.LoginStates.LOGGING_IN : C.LoginStates.NONE, F = C.RegistrationStates.NONE, H = "", z = "", K = null, Y = !1, q = !1, X = !1, Q = {}, Z = {}
+                }), A.default.clearAll(), h.clear(), v.default.clearUser(), c.Storage.remove(P), L = null, G = (null == e ? void 0 : e.isSwitchingAccount) ? C.LoginStates.LOGGING_IN : C.LoginStates.NONE, F = C.RegistrationStates.NONE, H = "", z = "", K = null, Y = !1, q = !1, X = !1, Q = {}, Z = {}
             }
             class ed extends u.default.Store {
                 initialize() {
-                    L = c.default.get(P), M = c.default.get(D), ee = c.default.get("login_cache"), null == o.getToken() && ei(), this.addChangeListener(() => (0, E.setClientState)(L))
+                    L = c.Storage.get(P), M = c.Storage.get(D), ee = c.Storage.get("login_cache"), null == o.getToken() && ei(), this.addChangeListener(() => (0, E.setClientState)(L))
                 }
                 getEmail() {
                     return M
@@ -106043,7 +106043,7 @@
                         analyticsToken: r,
                         auth: a
                     } = e;
-                    en("handleConnectionOpen called"), v.default.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, p.default)(n)), b = i, U = s, V = r, L = n.id, M = n.email, void 0 !== a && (B = a.authenticator_types), c.default.set(D, n.email), c.default.set(P, n.id)
+                    en("handleConnectionOpen called"), v.default.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, p.default)(n)), b = i, U = s, V = r, L = n.id, M = n.email, void 0 !== a && (B = a.authenticator_types), c.Storage.set(D, n.email), c.Storage.set(P, n.id)
                 },
                 OVERLAY_INITIALIZE: function(e) {
                     var t;
@@ -106053,7 +106053,7 @@
                         analyticsToken: s,
                         token: r
                     } = e;
-                    v.default.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, p.default)(n)), b = i, V = s, ea(r), er(), L = n.id, c.default.set(P, n.id)
+                    v.default.setUser(n.id, n.username, null !== (t = n.email) && void 0 !== t ? t : void 0, (0, p.default)(n)), b = i, V = s, ea(r), er(), L = n.id, c.Storage.set(P, n.id)
                 },
                 CONNECTION_CLOSED: function(e) {
                     let {
@@ -106065,7 +106065,7 @@
                             return
                         }
                         S.default.track(C.AnalyticEvents.APP_USER_DEAUTHENTICATED, {
-                            user_id: c.default.get(P)
+                            user_id: c.Storage.get(P)
                         }), eu(), setImmediate(() => (0, m.transitionTo)(C.Routes.DEFAULT_LOGGED_OUT))
                     }
                 },
@@ -106177,7 +106177,7 @@
                     null == w ? null != t ? (S.default.track(C.AnalyticEvents.USER_FINGERPRINT_CHANGED, {
                         old_fingerprint: null != k ? (0, l.extractId)(k) : null,
                         new_fingerprint: (0, l.extractId)(t)
-                    }), w = t, k = t, c.default.set(O, w)) : ei() : null != t && w !== t && S.default.track(C.AnalyticEvents.EXTERNAL_FINGERPRINT_DROPPED, {
+                    }), w = t, k = t, c.Storage.set(O, w)) : ei() : null != t && w !== t && S.default.track(C.AnalyticEvents.EXTERNAL_FINGERPRINT_DROPPED, {
                         fingerprint: (0, l.extractId)(w),
                         dropped_fingerprint: (0, l.extractId)(t)
                     })
@@ -106247,7 +106247,7 @@
                     let {
                         user: t
                     } = e;
-                    L = t.id, M = t.email, void 0 !== t.authenticator_types && (B = t.authenticator_types), c.default.set(D, t.email), c.default.set(P, t.id)
+                    L = t.id, M = t.email, void 0 !== t.authenticator_types && (B = t.authenticator_types), c.Storage.set(D, t.email), c.Storage.set(P, t.id)
                 },
                 AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: el,
                 CLEAR_AUTHENTICATION_ERRORS: function() {
@@ -106307,7 +106307,7 @@
             }
 
             function T() {
-                s = null, p.stop(), m = !1, l.default.set(g, m)
+                s = null, p.stop(), m = !1, l.Storage.set(g, m)
             }
 
             function v() {
@@ -106315,7 +106315,7 @@
             }
             class I extends o.default.Store {
                 initialize() {
-                    !1 !== l.default.get(g) && (m = E.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
+                    !1 !== l.Storage.get(g) && (m = E.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
                 }
                 isHandoffAvailable() {
                     return !h.ProcessArgs.isDisallowPopupsSet() && m
@@ -106555,7 +106555,7 @@
             }
             class h extends r.default.Store {
                 initialize() {
-                    let e = a.default.get(u);
+                    let e = a.Storage.get(u);
                     null != e && s.forEach(e, (e, t) => {
                         e.forEach(e => {
                             "audioinput" === e.type && e.hardwareMute && (e.hardwareMute = !1)
@@ -106604,7 +106604,7 @@
                         applicationId: t,
                         devices: n
                     } = e;
-                    E(t, n), a.default.set(u, d), _++
+                    E(t, n), a.Storage.set(u, d), _++
                 }
             })
         },
@@ -107894,11 +107894,11 @@
                     ...h,
                     ...g,
                     ...e
-                }, f.set(g.sourceMapsEnabled), o.default.set(E, g)
+                }, f.set(g.sourceMapsEnabled), o.Storage.set(E, g)
             }
             class p extends r.default.Store {
                 initialize() {
-                    let e = o.default.get(E);
+                    let e = o.Storage.get(E);
                     null != e && (g = {
                         ...h,
                         ...e
@@ -108688,7 +108688,7 @@
                 _ = {},
                 f = {},
                 E = {},
-                h = null !== (s = a.default.get(c)) && void 0 !== s ? s : {},
+                h = null !== (s = a.Storage.get(c)) && void 0 !== s ? s : {},
                 g = "";
             let m = null;
 
@@ -108776,7 +108776,7 @@
                     return l.ShowCurrentGame.getSetting() && !i && !(t || n)
                 }
                 markGameReported(e) {
-                    h[e] = !0, a.default.set(c, h)
+                    h[e] = !0, a.Storage.set(c, h)
                 }
             }
             T.displayName = "GameStore", T.persistKey = "GameStore", T.migrations = [e => {
@@ -110509,7 +110509,7 @@
             class l extends i.default.Store {
                 initialize() {
                     var e;
-                    o = null !== (e = s.default.get(a)) && void 0 !== e ? e : o
+                    o = null !== (e = s.Storage.get(a)) && void 0 !== e ? e : o
                 }
                 didAgree(e) {
                     return null != e && (o[e] || !1)
@@ -110521,7 +110521,7 @@
                     let {
                         guildId: t
                     } = e;
-                    o[t] = !0, s.default.set(a, o)
+                    o[t] = !0, s.Storage.set(a, o)
                 }
             })
         },
@@ -112318,7 +112318,7 @@
             }
             v.displayName = "LayoutStore", v.persistKey = "LayoutStore", v.migrations = [() => {
                 let e = {
-                        ...c.default.get("OverlayStore")
+                        ...c.Storage.get("OverlayStore")
                     },
                     {
                         pinnedWidgets: t,
@@ -112578,7 +112578,7 @@
 
             function E() {
                 var e;
-                return null !== (e = a.default.get(f)) && void 0 !== e ? e : {}
+                return null !== (e = a.Storage.get(f)) && void 0 !== e ? e : {}
             }
             let h = !1,
                 g = {},
@@ -112589,14 +112589,14 @@
                 v = !1;
 
             function I() {
-                a.default.set(f, {
+                a.Storage.set(f, {
                     ...E(),
                     activeLaunchOptionIds: T
                 })
             }
 
             function A() {
-                a.default.set(f, {
+                a.Storage.set(f, {
                     ...E(),
                     activeLibraryApplicationBranchIds: S
                 })
@@ -112632,7 +112632,7 @@
             class O extends r.default.Store {
                 initialize() {
                     this.waitFor(c.default);
-                    let e = a.default.get(f);
+                    let e = a.Storage.get(f);
                     null != e && (null == e.activeLaunchOptionIds ? I() : T = e.activeLaunchOptionIds, null == e.activeLibraryApplicationBranchIds ? A() : S = e.activeLibraryApplicationBranchIds)
                 }
                 get libraryApplications() {
@@ -113121,7 +113121,7 @@
             class g extends s.default.Store {
                 initialize() {
                     var e;
-                    let t = null !== (e = r.default.get(d)) && void 0 !== e ? e : {};
+                    let t = null !== (e = r.Storage.get(d)) && void 0 !== e ? e : {};
                     if (Array.isArray(t)) c = new Set(null != t ? Array.from(t) : null), _ = new Set;
                     else {
                         let {
@@ -113145,7 +113145,7 @@
                         url: t
                     } = e;
                     if (E(t)) return !1;
-                    c.add((0, l.getHostname)(t)), r.default.set(d, {
+                    c.add((0, l.getHostname)(t)), r.Storage.set(d, {
                         trustedDomains: c,
                         trustedProtocols: _
                     })
@@ -113155,7 +113155,7 @@
                         url: t
                     } = e;
                     if (h(t)) return !1;
-                    _.add((0, l.getProtocol)(t)), r.default.set(d, {
+                    _.add((0, l.getProtocol)(t)), r.Storage.set(d, {
                         trustedDomains: c,
                         trustedProtocols: _
                     })
@@ -113513,7 +113513,7 @@
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : em.MediaEngineContextTypes.DEFAULT,
                     n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
                     i = e4(t);
-                return Object.assign(i, e), !__OVERLAY__ && n && m.default.set(eT, eC), i
+                return Object.assign(i, e), !__OVERLAY__ && n && m.Storage.set(eT, eC), i
             }
 
             function tr() {
@@ -113955,10 +113955,10 @@
                         (null == a ? void 0 : null === (n = a.desktopSource) || void 0 === n ? void 0 : n.id) === e && (null != t && (null == r ? void 0 : null === (i = r.desktopSource) || void 0 === i ? void 0 : i.soundshareId) !== t && v.cancelAttachToProcess(t), a = null)
                     }), ti.reset(), ! function() {
                         var e;
-                        let t = m.default.get("audio");
-                        null != t && (m.default.set(eT, {
+                        let t = m.Storage.get("audio");
+                        null != t && (m.Storage.set(eT, {
                                 [em.MediaEngineContextTypes.DEFAULT]: t
-                            }), m.default.remove("audio")), eC = null !== (e = m.default.get(eT)) && void 0 !== e ? e : {}, _.each(eC, e => {
+                            }), m.Storage.remove("audio")), eC = null !== (e = m.Storage.get(eT)) && void 0 !== e ? e : {}, _.each(eC, e => {
                                 if (_.defaultsDeep(e, eI()), null != e.modeOptions && "string" == typeof e.modeOptions.shortcut && (e.modeOptions.shortcut = (0, es.toCombo)(e.modeOptions.shortcut)), null != e.modeOptions && 4 !== e.vadUseKrispSettingVersion && (e.vadUseKrispSettingVersion = 4, e.modeOptions.vadUseKrisp = !0), !e.qosMigrated && (e.qosMigrated = !0, e.qos = !1), !e.vadThrehsoldMigrated) {
                                     var t;
                                     e.vadThrehsoldMigrated = !0, (null === (t = e.modeOptions) || void 0 === t ? void 0 : t.threshold) === -40 && (e.modeOptions.threshold = -60)
@@ -114649,7 +114649,7 @@
                     })
                 },
                 AUDIO_RESET: function() {
-                    m.default.remove(eT), location.reload()
+                    m.Storage.remove(eT), location.reload()
                 },
                 AUDIO_INPUT_DETECTED: function(e) {
                     let {
@@ -118513,7 +118513,7 @@
                 } = e;
                 if ("string" != typeof i || "" === (i = i.trim())) return;
                 let s = v[n] = null !== (t = v[n]) && void 0 !== t ? t : [],
-                    r = s.indexOf(i); - 1 !== r ? (s.splice(r, 1), s.unshift(i)) : null != s[0] && "" !== s[0] && i.startsWith(s[0]) ? s[0] = i : r < 0 && s.unshift(i), s.length > 5 && s.splice(5, s.length), o.default.set(S, {
+                    r = s.indexOf(i); - 1 !== r ? (s.splice(r, 1), s.unshift(i)) : null != s[0] && "" !== s[0] && i.startsWith(s[0]) ? s[0] = i : r < 0 && s.unshift(i), s.length > 5 && s.splice(5, s.length), o.Storage.set(S, {
                     history: v
                 })
             }
@@ -118533,14 +118533,14 @@
             class N extends a.default.Store {
                 initialize() {
                     this.waitFor(_.default, c.default);
-                    let e = o.default.get(S);
+                    let e = o.Storage.get(S);
                     if ((null == e ? void 0 : e.history) != null) {
                         var t;
                         Object.keys(t = e.history).forEach(e => {
                             Array.isArray(t[e]) && (t[e] = t[e].filter(e => "string" == typeof e && e.trim())), (!Array.isArray(t[e]) || 0 === t[e].length) && delete t[e]
                         }), v = t
                     }
-                    T = !!o.default.get("tokenized")
+                    T = !!o.Storage.get("tokenized")
                 }
                 isOpen() {
                     return h
@@ -118742,7 +118742,7 @@
                     let {
                         searchId: t
                     } = e;
-                    null == t ? (o.default.remove(S), v = {}) : (delete v[t], o.default.set(S, {
+                    null == t ? (o.Storage.remove(S), v = {}) : (delete v[t], o.Storage.set(S, {
                         history: v
                     }))
                 },
@@ -118751,13 +118751,13 @@
                         searchId: t,
                         query: n
                     } = e;
-                    null != v[t] && (v[t] = v[t].filter(e => e !== n), o.default.set(S, {
+                    null != v[t] && (v[t] = v[t].filter(e => e !== n), o.Storage.set(S, {
                         history: v
                     }))
                 },
                 SEARCH_ADD_HISTORY: A,
                 LOGOUT: function() {
-                    o.default.remove(S), v = {}
+                    o.Storage.remove(S), v = {}
                 },
                 CONNECTION_OPEN: function() {
                     Object.keys(E).forEach(e => {
@@ -118816,7 +118816,7 @@
             }
 
             function U() {
-                !__OVERLAY__ && f.default.set(O, {
+                !__OVERLAY__ && f.Storage.set(O, {
                     selectedChannelId: r,
                     selectedVoiceChannelId: o,
                     lastChannelFollowingDestination: a,
@@ -118887,7 +118887,7 @@
                 initialize() {
                     if (!__OVERLAY__) {
                         var e, t;
-                        let n = null !== (e = f.default.get(O)) && void 0 !== e ? e : {
+                        let n = null !== (e = f.Storage.get(O)) && void 0 !== e ? e : {
                             selectedChannelId: r,
                             selectedVoiceChannelId: o,
                             lastChannelFollowingDestination: a,
@@ -119032,7 +119032,7 @@
                     }, U())
                 },
                 LOGOUT: function() {
-                    D = {}, r = null, s = void 0, L = {}, a = {}, o = null, f.default.remove(O)
+                    D = {}, r = null, s = void 0, L = {}, a = {}, o = null, f.Storage.remove(O)
                 }
             })
         },
@@ -119480,13 +119480,13 @@
                     return "".concat(this.getClass().displayName, "-snapshot")
                 }
                 clear() {
-                    l.default.remove(this.persistKey)
+                    l.Storage.remove(this.persistKey)
                 }
                 save() {
-                    l.default.set(this.persistKey, this.takeSnapshot())
+                    l.Storage.set(this.persistKey, this.takeSnapshot())
                 }
                 readSnapshot(e) {
-                    let t = l.default.get(this.persistKey);
+                    let t = l.Storage.get(this.persistKey);
                     return null == t || t.version !== e ? null : t.data
                 }
                 getClass() {
@@ -123794,7 +123794,7 @@
             class h extends a.default.Store {
                 initialize() {
                     var e;
-                    let t = null !== (e = o.default.get(d)) && void 0 !== e ? e : {};
+                    let t = null !== (e = o.Storage.get(d)) && void 0 !== e ? e : {};
                     null != t.sortDirection && null != t.sortKey && (c = t.sortDirection, _ = t.sortKey)
                 }
                 get sortDirection() {
@@ -123817,7 +123817,7 @@
                         direction: t,
                         key: n
                     } = e;
-                    c = t, _ = n, o.default.set(d, {
+                    c = t, _ = n, o.Storage.set(d, {
                         sortDirection: c,
                         sortKey: _
                     })
@@ -124525,7 +124525,7 @@
                     paused: N,
                     userActions: Array.from(P)
                 };
-                d.default.set(A, e)
+                d.Storage.set(A, e)
             }
 
             function U() {
@@ -124599,7 +124599,7 @@
             class H extends u.default.Store {
                 initialize() {
                     var e;
-                    let t = null !== (e = d.default.get(A)) && void 0 !== e ? e : {
+                    let t = null !== (e = d.Storage.get(A)) && void 0 !== e ? e : {
                         queue: null,
                         paused: null,
                         userActions: null
@@ -124726,7 +124726,7 @@
                     (0, p.isDesktop)() && x()
                 },
                 LOGOUT: function() {
-                    d.default.remove(A), (0, p.isDesktop)() && m.default.pause()
+                    d.Storage.remove(A), (0, p.isDesktop)() && m.default.pause()
                 }
             })
         },
@@ -125760,7 +125760,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "6f2b16efa6e8b7194bdd8dbab28b52dd5fa337d0"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "3bf351fe8f4d39de379989d1d339f7297849b9ce"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -126055,7 +126055,7 @@
             }
             F.displayName = "OverlayStore", F.persistKey = "OverlayStoreV2", F.migrations = [() => {
                 let e = {
-                        ...s.default.get("OverlayStore")
+                        ...s.Storage.get("OverlayStore")
                     },
                     {
                         pinnedWidgets: t,
@@ -135258,7 +135258,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "278320"
+                                build_number: "278328"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -137861,10 +137861,10 @@
                 o = 60 * r.default.Millis.DAY;
 
             function l() {
-                let e = s.default.get(a);
+                let e = s.Storage.get(a);
                 if (null != e && e.expires >= Date.now()) return e.purchaseToken;
                 let t = (0, i.v4)();
-                return s.default.set(a, {
+                return s.Storage.set(a, {
                     purchaseToken: t,
                     expires: Date.now() + o
                 }), t
@@ -152458,10 +152458,10 @@
 
             function g() {
                 if (E) {
-                    r.default.remove(a.TOKEN_KEY), r.default.remove(a.TOKENS_KEY);
+                    r.Storage.remove(a.TOKEN_KEY), r.Storage.remove(a.TOKENS_KEY);
                     return
                 }
-                null != s ? r.default.set(a.TOKEN_KEY, s) : r.default.remove(a.TOKEN_KEY), r.default.set(a.TOKENS_KEY, f)
+                null != s ? r.Storage.set(a.TOKEN_KEY, s) : r.Storage.remove(a.TOKEN_KEY), r.Storage.set(a.TOKENS_KEY, f)
             }
 
             function m(e) {
@@ -152483,7 +152483,7 @@
 
             function S() {
                 if (h) return;
-                s = r.default.get(a.TOKEN_KEY), f = r.default.get(a.TOKENS_KEY) || {};
+                s = r.Storage.get(a.TOKEN_KEY), f = r.Storage.get(a.TOKENS_KEY) || {};
                 let {
                     decryptedToken: e,
                     wasEncrypted: t
@@ -153073,4 +153073,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.452fc2afd992bf161c13.js.map
+//# sourceMappingURL=29062.ae1a1ab43951e64e1434.js.map

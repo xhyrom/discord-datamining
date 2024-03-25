@@ -775,8 +775,8 @@
 
             function l(e, t) {
                 if (0 === e.length) return "No logs";
-                let n = i.default.get(s.DEVICE_TOKEN),
-                    a = i.default.get(s.DEVICE_VOIP_TOKEN),
+                let n = i.Storage.get(s.DEVICE_TOKEN),
+                    a = i.Storage.get(s.DEVICE_VOIP_TOKEN),
                     l = e.map(e => {
                         let n = e.silent ? "Silent" : "Displayed",
                             i = t ? "".concat(e.channelId, " - ").concat(e.messageId) : "".concat(e.title, " - ").concat(e.content);
@@ -797,8 +797,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "278320",
-                    versionHash: "6f2b16efa6e8b7194bdd8dbab28b52dd5fa337d0"
+                    buildNumber: "278328",
+                    versionHash: "3bf351fe8f4d39de379989d1d339f7297849b9ce"
                 }
             }
             n.r(t), n.d(t, {
@@ -1489,7 +1489,7 @@
                 } else(0, C.takeSnapshot)("Backup from ".concat(new Date().toLocaleDateString()))
             }
             async function B() {
-                o.default.set("turnedOffNewNotifications", !0), T.default.track(P.AnalyticEvents.NOTIFICATION_MIGRATION_OPTOUT, {
+                o.Storage.set("turnedOffNewNotifications", !0), T.default.track(P.AnalyticEvents.NOTIFICATION_MIGRATION_OPTOUT, {
                     num_guilds_with_new_setting: Object.values(p.default.getGuilds()).filter(e => S.default.resolveGuildUnreadSetting(e) === w.UnreadSetting.ONLY_MENTIONS).length
                 });
                 let e = await (0, C.listSnapshots)(),
@@ -1836,7 +1836,7 @@
                 f = n("49111");
             class g extends o.default {
                 handlePostConnectionOpen() {
-                    if (!s.default.get("turnedOffNewNotifications") && !!r.default.hasConsented(f.Consents.PERSONALIZATION) && !!d.NotificationsExperiment.getCurrentConfig({
+                    if (!s.Storage.get("turnedOffNewNotifications") && !!r.default.hasConsented(f.Consents.PERSONALIZATION) && !!d.NotificationsExperiment.getCurrentConfig({
                             location: "NotificationMigrationManager"
                         }, {
                             autoTrackExposure: !1
@@ -1969,4 +1969,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4574.f9cac0793795ce776c3f.js.map
+//# sourceMappingURL=4574.c16ee900c0c4fdcec808.js.map

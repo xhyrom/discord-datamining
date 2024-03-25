@@ -4,7 +4,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
+                    return S
                 }
             }), n("424973");
             var i = n("122717"),
@@ -37,7 +37,7 @@
             function f(e, t, n) {
                 return void 0 !== t && void 0 != n ? l(t, n) : e
             }
-            var E = {
+            var S = {
                 ...i,
                 Easing: o,
                 accelerate: function(e) {
@@ -56,12 +56,12 @@
                         reverse: c,
                         invert: d,
                         callback: _,
-                        type: E = "spring",
-                        shouldLoop: S,
+                        type: S = "spring",
+                        shouldLoop: E,
                         durationMin: g,
                         durationMax: m,
                         ...h
-                    } = n, p = t._value, I = f(n.duration, g, m), T = f(n.toValue, o, s), v = i[E](t, {
+                    } = n, p = t._value, I = f(n.duration, g, m), T = f(n.toValue, o, s), v = i[S](t, {
                         ...h,
                         toValue: T,
                         tension: l,
@@ -70,7 +70,7 @@
                     }), A = v;
                     if (c || d) {
                         let e = f(n.duration, g, m);
-                        r = i[E](t, {
+                        r = i[S](t, {
                             ...h,
                             toValue: c ? p : -T,
                             tension: l,
@@ -79,7 +79,7 @@
                         }), A = i.sequence([v, r])
                     }
                     u ? A.start(() => {
-                        (!S || S && S()) && (_ ? _(e.bind(null, t, n)) : e(t, n))
+                        (!E || E && E()) && (_ ? _(e.bind(null, t, n)) : e(t, n))
                     }) : A.start(_)
                 },
                 interpolate: function(e) {
@@ -180,10 +180,10 @@
                     return f
                 },
                 ButtonColors: function() {
-                    return E
+                    return S
                 },
                 ButtonBorderColors: function() {
-                    return S
+                    return E
                 },
                 ButtonHovers: function() {
                     return g
@@ -218,7 +218,7 @@
                     LINK: _.lookLink,
                     BLANK: _.lookBlank
                 },
-                E = {
+                S = {
                     BRAND: _.colorBrand,
                     RED: _.colorRed,
                     GREEN: _.colorGreen,
@@ -230,7 +230,7 @@
                     BRAND_NEW: _.colorBrandNew,
                     CUSTOM: ""
                 },
-                S = {
+                E = {
                     BRAND: _.borderBrand,
                     RED: _.borderRed,
                     GREEN: _.borderGreen,
@@ -269,7 +269,7 @@
             function h() {
                 let {
                     look: e = f.FILLED,
-                    color: t = E.BRAND,
+                    color: t = S.BRAND,
                     borderColor: n,
                     hover: i,
                     size: r = m.MEDIUM,
@@ -289,10 +289,10 @@
             function p(e) {
                 let {
                     look: t = f.FILLED,
-                    color: n = E.BRAND,
+                    color: n = S.BRAND,
                     borderColor: o,
                     hover: l,
-                    size: S = m.MEDIUM,
+                    size: E = m.MEDIUM,
                     fullWidth: g = !1,
                     grow: p = !0,
                     disabled: I = !1,
@@ -357,7 +357,7 @@
                             color: n,
                             borderColor: o,
                             hover: l,
-                            size: S,
+                            size: E,
                             fullWidth: g,
                             grow: p,
                             submitting: T,
@@ -374,7 +374,7 @@
                     })
                 });
                 return W ? (0, i.jsxs)("span", {
-                    className: s(_.disabledButtonWrapper, N, S, {
+                    className: s(_.disabledButtonWrapper, N, E, {
                         [_.grow]: p,
                         [_.fullWidth]: g
                     }),
@@ -389,14 +389,14 @@
             function I(e) {
                 let {
                     look: t = f.FILLED,
-                    color: n = E.BRAND,
+                    color: n = S.BRAND,
                     borderColor: r,
                     hover: o,
                     size: a = m.MEDIUM,
                     fullWidth: u = !1,
                     grow: c = !0,
                     style: d,
-                    className: S,
+                    className: E,
                     innerClassName: h,
                     to: p,
                     onClick: I,
@@ -414,7 +414,7 @@
                     onMouseDown: T,
                     style: d,
                     rel: N,
-                    className: s(S, _.button, t, n, r, o, a, {
+                    className: s(E, _.button, t, n, r, o, a, {
                         [_.fullWidth]: u,
                         [_.grow]: c,
                         [_.hasHover]: null != o && o !== g.DEFAULT
@@ -425,7 +425,7 @@
                     })
                 })
             }
-            p.Looks = f, p.Colors = E, p.BorderColors = S, p.Hovers = g, p.Sizes = m, p.Link = I
+            p.Looks = f, p.Colors = S, p.BorderColors = E, p.Hovers = g, p.Sizes = m, p.Link = I
         },
         390534: function(e, t, n) {
             "use strict";
@@ -455,15 +455,15 @@
                     d = u.luminance(),
                     _ = c,
                     f = l + a,
-                    E = r.contrast(u, c),
-                    S = 100;
-                for (; S-- > 0;) {
-                    let e = E < l,
-                        t = E > f;
+                    S = r.contrast(u, c),
+                    E = 100;
+                for (; E-- > 0;) {
+                    let e = S < l,
+                        t = S > f;
                     if (!e && !t) break;
                     let n = _.luminance(),
                         i = n > d;
-                    _ = t && i || e && !i ? _.darken() : _.brighten(), E = r.contrast(u, _)
+                    _ = t && i || e && !i ? _.darken() : _.brighten(), S = r.contrast(u, _)
                 }
                 return function(e) {
                     let [t, n, i, r] = e.rgba();
@@ -495,9 +495,9 @@
                         impression: d,
                         disableTrack: _,
                         returnRef: f,
-                        ...E
-                    } = e, S = r.useRef(null);
-                    (0, o.useFocusLock)(S, {
+                        ...S
+                    } = e, E = r.useRef(null);
+                    (0, o.useFocusLock)(E, {
                         returnRef: f
                     });
                     let g = r.useContext(a.default);
@@ -507,18 +507,18 @@
                         properties: null == d ? void 0 : d.impressionProperties
                     }, {
                         disableTrack: _
-                    }), r.useImperativeHandle(t, () => S.current), (0, i.jsx)(u.Provider, {
+                    }), r.useImperativeHandle(t, () => E.current), (0, i.jsx)(u.Provider, {
                         value: !0,
                         children: (0, i.jsx)("div", {
-                            ...E,
-                            ref: S,
+                            ...S,
+                            ref: E,
                             role: "dialog",
                             tabIndex: -1,
                             "aria-modal": !0,
                             children: (0, i.jsx)(l.HeadingLevel, {
                                 forceLevel: 1,
                                 children: (0, i.jsx)(s.FocusRingScope, {
-                                    containerRef: S,
+                                    containerRef: E,
                                     children: n
                                 })
                             })
@@ -685,9 +685,9 @@
                             null === (t = _.get(n)) || void 0 === t || t(e)
                         })
                     });
-                return r.forwardRef(function(o, E) {
+                return r.forwardRef(function(o, S) {
                     let {
-                        className: S,
+                        className: E,
                         onScroll: g,
                         onResize: m = null,
                         onContentResize: h = null,
@@ -726,7 +726,7 @@
                     } = (0, c.useCachedScrollerState)();
                     (0, c.usePaddingFixes)({
                         scrollerRef: J,
-                        className: S,
+                        className: E,
                         specs: l,
                         orientation: "vertical",
                         dir: p
@@ -801,14 +801,14 @@
                                 return [0, 0]
                             }, [])
                         }(I);
-                    r.useImperativeHandle(E, () => ({
+                    r.useImperativeHandle(S, () => ({
                         getScrollerNode: () => J.current,
                         getScrollerState: $,
                         getItems: e_,
                         getSectionRowFromIndex: ef,
                         ...(0, c.getAnimatedListScrollHelpers)(J, $, er, el)
                     }), [J, $, ef, e_, er, el]);
-                    let eE = r.useCallback(e => {
+                    let eS = r.useCallback(e => {
                         ec(1), null == K.current ? q(!0) : clearTimeout(K.current), K.current = setTimeout(() => {
                             K.current = null, q(!1)
                         }, 200), null != g && g(e)
@@ -824,8 +824,8 @@
                         totalHeight: et
                     }), (0, i.jsxs)("div", {
                         ref: J,
-                        onScroll: eE,
-                        className: s(S, {
+                        onScroll: eS,
+                        className: s(E, {
                             [e]: !0,
                             [t]: w,
                             [n]: G,
@@ -922,10 +922,10 @@
                     return f
                 },
                 openModalLazy: function() {
-                    return E
+                    return S
                 },
                 openModal: function() {
-                    return S
+                    return E
                 },
                 closeModal: function() {
                     return g
@@ -976,7 +976,7 @@
                 [l.DEFAULT_MODAL_CONTEXT]: [],
                 [l.POPOUT_MODAL_CONTEXT]: []
             }));
-            async function E(e) {
+            async function S(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
                     {
                         contextKey: n = d(),
@@ -985,19 +985,19 @@
                     o = null != t.modalKey ? t.modalKey : r(),
                     s = !1,
                     l = setTimeout(() => {
-                        s = !0, S(u, {
+                        s = !0, E(u, {
                             ...i,
                             modalKey: o
                         }, n)
                     }, 300),
                     a = await e();
-                return clearTimeout(l), s ? N(o, n) && m(o, a, i.onCloseRequest, i.onCloseCallback, n) : S(a, {
+                return clearTimeout(l), s ? N(o, n) && m(o, a, i.onCloseRequest, i.onCloseCallback, n) : E(a, {
                     ...i,
                     modalKey: o
                 }, n), o
             }
 
-            function S(e) {
+            function E(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.freeze({}),
                     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : d(),
                     {
@@ -1140,8 +1140,8 @@
                 d = n("458960"),
                 _ = n("413197"),
                 f = n("271841"),
-                E = n("130969"),
-                S = n("718776"),
+                S = n("130969"),
+                E = n("718776"),
                 g = n("860226"),
                 m = n("433600"),
                 h = n("446662"),
@@ -1189,7 +1189,7 @@
                 }), [M, D]);
                 return (0, o.jsx)(T.ModalContentContext.Provider, {
                     value: U,
-                    children: (0, o.jsx)(E.Dialog, {
+                    children: (0, o.jsx)(S.Dialog, {
                         className: N.focusLock,
                         role: l,
                         returnRef: p,
@@ -1203,7 +1203,7 @@
                             }),
                             ref: L,
                             style: O,
-                            children: (0, o.jsx)(S.FocusRingScope, {
+                            children: (0, o.jsx)(E.FocusRingScope, {
                                 containerRef: L,
                                 children: i
                             })
@@ -1466,7 +1466,7 @@
                     ..._
                 } = e, {
                     reducedMotion: f
-                } = s.useContext(u.AccessibilityPreferencesContext), E = f.enabled ? function(e) {
+                } = s.useContext(u.AccessibilityPreferencesContext), S = f.enabled ? function(e) {
                     switch (e) {
                         case "wanderingCubes":
                         case "chasingDots":
@@ -1475,8 +1475,8 @@
                             return e
                     }
                 }(t) : t;
-                if (l = null != l ? l : c.default.Messages.LOADING, "spinningCircle" === E || "spinningCircleSimple" === E) return (0, o.jsx)("div", {
-                    className: a(d.spinner, d[E], i, {
+                if (l = null != l ? l : c.default.Messages.LOADING, "spinningCircle" === S || "spinningCircleSimple" === S) return (0, o.jsx)("div", {
+                    className: a(d.spinner, d[S], i, {
                         [d.stopAnimation]: !n
                     }),
                     role: "img",
@@ -1487,7 +1487,7 @@
                         children: (0, o.jsxs)("svg", {
                             className: d.circular,
                             viewBox: "25 25 50 50",
-                            children: ["spinningCircle" === E && (0, o.jsxs)(o.Fragment, {
+                            children: ["spinningCircle" === S && (0, o.jsxs)(o.Fragment, {
                                 children: [(0, o.jsx)("circle", {
                                     className: a(d.path, d.path3, r),
                                     cx: "50",
@@ -1508,7 +1508,7 @@
                         })
                     })
                 });
-                let S = a(d.item, r);
+                let E = a(d.item, r);
                 return (0, o.jsx)("span", {
                     className: a(d.spinner, i, {
                         [d.stopAnimation]: !n
@@ -1517,13 +1517,13 @@
                     "aria-label": l,
                     ..._,
                     children: (0, o.jsxs)("span", {
-                        className: a(d.inner, d[E]),
+                        className: a(d.inner, d[S]),
                         children: [(0, o.jsx)("span", {
-                            className: S
+                            className: E
                         }), (0, o.jsx)("span", {
-                            className: S
-                        }), "pulsingEllipsis" === E || "lowMotion" === E ? (0, o.jsx)("span", {
-                            className: S
+                            className: E
+                        }), "pulsingEllipsis" === S || "lowMotion" === S ? (0, o.jsx)("span", {
+                            className: E
                         }) : null]
                     })
                 })
@@ -1549,10 +1549,10 @@
                     return f
                 },
                 useThemeContext: function() {
-                    return E
+                    return S
                 },
                 UseThemeContext: function() {
-                    return S
+                    return E
                 }
             }), n("702976"), n("70102");
             var i, r, o = n("37983"),
@@ -1591,7 +1591,7 @@
                     flags: d = 0,
                     contrast: _ = 1,
                     saturation: f = 1
-                } = e, E = s.useMemo(() => u({
+                } = e, S = s.useMemo(() => u({
                     theme: n,
                     primaryColor: i,
                     secondaryColor: r,
@@ -1601,7 +1601,7 @@
                     saturation: f
                 }), [n, i, r, a, d, _, f]);
                 return (0, o.jsx)(c.Provider, {
-                    value: E,
+                    value: S,
                     children: t
                 })
             }
@@ -1616,7 +1616,7 @@
                     flags: a,
                     contrast: d,
                     saturation: _
-                } = e, f = s.useContext(c), E = s.useMemo(() => u({
+                } = e, f = s.useContext(c), S = s.useMemo(() => u({
                     theme: null != n ? n : f.theme,
                     primaryColor: null != i ? i : f.primaryColor,
                     secondaryColor: null != r ? r : f.secondaryColor,
@@ -1626,13 +1626,13 @@
                     saturation: null != _ ? _ : f.saturation
                 }), [n, f.theme, f.primaryColor, f.secondaryColor, f.gradient, f.flags, f.contrast, f.saturation, i, r, l, a, d, _]);
                 return (0, o.jsx)(c.Provider, {
-                    value: E,
+                    value: S,
                     children: t
                 })
             }
 
             function f(e) {
-                let t = E(),
+                let t = S(),
                     n = s.useMemo(() => u({
                         ...t,
                         primaryColor: null,
@@ -1644,16 +1644,16 @@
                 })
             }
 
-            function E() {
+            function S() {
                 let e = s.useContext(c);
                 if (null == e) throw Error("useThemeContext must be used within a ThemeContext.Provider");
                 return e
             }
 
-            function S(e) {
+            function E(e) {
                 let {
                     children: t
-                } = e, n = E();
+                } = e, n = S();
                 return (0, o.jsx)(o.Fragment, {
                     children: t(n)
                 })
@@ -1772,7 +1772,7 @@
                     disableVoiceBackgrounds: !1
                 },
                 f = _,
-                E = {
+                S = {
                     12: "font-size-12",
                     14: "font-size-14",
                     15: "font-size-15",
@@ -1781,7 +1781,7 @@
                     20: "font-size-20",
                     24: "font-size-24"
                 };
-            class S extends i.default.DeviceSettingsStore {
+            class E extends i.default.DeviceSettingsStore {
                 initialize(e) {
                     this.waitFor(a.default), isNaN((f = {
                         ..._,
@@ -1802,7 +1802,7 @@
                 }
                 get fontScaleClass() {
                     var e;
-                    let t = null !== (e = E[this.fontSize]) && void 0 !== e ? e : "";
+                    let t = null !== (e = S[this.fontSize]) && void 0 !== e ? e : "";
                     return this.isFontScaledUp ? "a11y-font-scaled-up ".concat(t) : this.isFontScaledDown ? "a11y-font-scaled-down ".concat(t) : "".concat(t)
                 }
                 get zoom() {
@@ -1899,16 +1899,16 @@
                     return f
                 }
             }
-            S.displayName = "AccessibilityStore", S.persistKey = "AccessibilityStore", S.migrations = [() => {
+            E.displayName = "AccessibilityStore", E.persistKey = "AccessibilityStore", E.migrations = [() => {
                 let e = {
                         FONT_SCALE: "a11yFontScale",
                         ZOOM: "a11yZoom",
                         COLORBLIND_MODE: "a11yColorblindMode"
                     },
-                    t = r.default.get(e.FONT_SCALE) || 100,
-                    n = r.default.get(e.ZOOM) || c.Accessibility.ZOOM_DEFAULT,
-                    i = r.default.get(e.COLORBLIND_MODE) || !1;
-                return r.default.remove(e.FONT_SCALE), r.default.remove(e.ZOOM), r.default.remove(e.COLORBLIND_MODE), {
+                    t = r.Storage.get(e.FONT_SCALE) || 100,
+                    n = r.Storage.get(e.ZOOM) || c.Accessibility.ZOOM_DEFAULT,
+                    i = r.Storage.get(e.COLORBLIND_MODE) || !1;
+                return r.Storage.remove(e.FONT_SCALE), r.Storage.remove(e.ZOOM), r.Storage.remove(e.COLORBLIND_MODE), {
                     fontScale: t,
                     zoom: n,
                     colorblindMode: i,
@@ -1959,7 +1959,7 @@
                 ...e,
                 disableVoiceBackgrounds: !1
             })];
-            let g = new S(s.default, {
+            let g = new E(s.default, {
                 ACCESSIBILITY_SET_FONT_SIZE: function(e) {
                     var t;
                     let n = (t = e.fontSize, c.Accessibility.FONT_SIZES.indexOf(t) >= 0 ? t : c.Accessibility.FONT_SIZE_DEFAULT);
@@ -2144,10 +2144,10 @@
                     return f
                 },
                 NEW_MESSAGE_BAR_BUFFER_LARGE: function() {
-                    return E
+                    return S
                 },
                 NEW_MESSAGE_BAR_ID: function() {
-                    return S
+                    return E
                 },
                 SPOILER_ATTACHMENT_PREFIX: function() {
                     return g
@@ -2178,8 +2178,8 @@
                 d = 16,
                 _ = 16,
                 f = 32,
-                E = 64,
-                S = "---new-messages-bar",
+                S = 64,
+                E = "---new-messages-bar",
                 g = "SPOILER_";
             (o = i || (i = {})).ERROR_SOURCE_UNKNOWN = "ERROR_SOURCE_UNKNOWN", o.PRECOMPRESSION_SUM_TOO_LARGE = "PRECOMPRESSION_SUM_TOO_LARGE", o.PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE = "PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE", o.POSTCOMPRESSION_SUM_TOO_LARGE = "POSTCOMPRESSION_SUM_TOO_LARGE", o.POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE = "POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE", o.UPLOAD_ATTACHMENT_MAX_SIZE_ERROR = "UPLOAD_MESSAGE_ATTACHMENT_MAX_SIZE_ERROR", o.EXPLICIT_CONTENT = "EXPLICIT_CONTENT", (s = r || (r = {})).SYSTEM_DM_TAG_SYSTEM_TYPE = "a", s.BOT_TAG_SERVER_TYPE = "b", s.AI_TAG_TYPE = "c", s.BOT_TAG_BOT_TYPE = "d", s.REMIXING_TYPE = "e", s.POLL_TYPE = "g";
             let m = 209715200
@@ -2312,9 +2312,9 @@
             }
             c.displayName = "SelectivelySyncedUserSettingsStore", c.persistKey = "SelectivelySyncedUserSettingsStore", c.migrations = [() => {
                 var e, t;
-                let n = null !== (e = s.default.get("UserSettingsSync")) && void 0 !== e ? e : {},
-                    i = null !== (t = s.default.get("UserSettingsStore")) && void 0 !== t ? t : {};
-                s.default.remove("UserSettingsSync");
+                let n = null !== (e = s.Storage.get("UserSettingsSync")) && void 0 !== e ? e : {},
+                    i = null !== (t = s.Storage.get("UserSettingsStore")) && void 0 !== t ? t : {};
+                s.Storage.remove("UserSettingsSync");
                 let o = {};
                 return !1 === n[a.UserSettingsSections.TEXT] && (o.text = {
                     shouldSync: !1,
@@ -2461,10 +2461,10 @@
                     return f
                 },
                 ExpressionSuggestionsEnabled: function() {
-                    return E
+                    return S
                 },
                 IncludeStickersInAutocomplete: function() {
-                    return S
+                    return E
                 },
                 RenderSpoilers: function() {
                     return g
@@ -2611,10 +2611,10 @@
                     return ef
                 },
                 RenderEmbeds: function() {
-                    return eE
+                    return eS
                 },
                 RenderReactions: function() {
-                    return eS
+                    return eE
                 },
                 TimezoneOffset: function() {
                     return eg
@@ -2677,13 +2677,13 @@
                 }, e => o.BoolValue.create({
                     value: e
                 })),
-                E = (0, l.defineProtoSetting)("textAndImages", "expressionSuggestionsEnabled", e => {
+                S = (0, l.defineProtoSetting)("textAndImages", "expressionSuggestionsEnabled", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => o.BoolValue.create({
                     value: e
                 })),
-                S = (0, l.defineProtoSetting)("textAndImages", "includeStickersInAutocomplete", e => {
+                E = (0, l.defineProtoSetting)("textAndImages", "includeStickersInAutocomplete", e => {
                     var t;
                     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
                 }, e => o.BoolValue.create({
@@ -2936,13 +2936,13 @@
                 }, e => o.BoolValue.create({
                     value: e
                 })), "text", "inlineEmbedMedia"),
-                eE = (0, l.wrapSettingWithSelectiveSyncing)((0, l.defineProtoSetting)("textAndImages", "renderEmbeds", e => {
+                eS = (0, l.wrapSettingWithSelectiveSyncing)((0, l.defineProtoSetting)("textAndImages", "renderEmbeds", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => o.BoolValue.create({
                     value: e
                 })), "text", "renderEmbeds"),
-                eS = (0, l.wrapSettingWithSelectiveSyncing)((0, l.defineProtoSetting)("textAndImages", "renderReactions", e => {
+                eE = (0, l.wrapSettingWithSelectiveSyncing)((0, l.defineProtoSetting)("textAndImages", "renderReactions", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => o.BoolValue.create({
@@ -3104,8 +3104,8 @@
             }
             d.displayName = "UserSettingsOverridesStore", d.persistKey = "UserSettingsOverridesStore", d.migrations = [() => {
                 var e;
-                let t = null !== (e = r.default.get("UserSettingsStoreOverrides")) && void 0 !== e ? e : {};
-                return r.default.remove("UserSettingsStoreOverrides"), t
+                let t = null !== (e = r.Storage.get("UserSettingsStoreOverrides")) && void 0 !== e ? e : {};
+                return r.Storage.remove("UserSettingsStoreOverrides"), t
             }];
             var _ = new d(o.default, {
                 USER_SETTINGS_PROTO_UPDATE: function() {
@@ -3182,8 +3182,8 @@
                 d = n("718517"),
                 _ = n("674268"),
                 f = n("275877"),
-                E = n("374363"),
-                S = n("116949"),
+                S = n("374363"),
+                E = n("116949"),
                 g = n("397336"),
                 m = n("49111");
             let h = "UserSettingsProtoLastWriteTimes",
@@ -3195,7 +3195,7 @@
             }), "undefined" != typeof document && (document.addEventListener("mousedown", () => {}), document.addEventListener("keydown", () => {}));
             class I {
                 getEditInfo() {
-                    return E.default.getFullState()[this.type]
+                    return S.default.getFullState()[this.type]
                 }
                 getCurrentValue() {
                     return this.getEditInfo().proto
@@ -3206,7 +3206,7 @@
                     if (null == i) throw Error("Unknown proto field name ".concat(String(e)));
                     let r = i.T(),
                         o = this.getCurrentValue()[e],
-                        s = null != o ? r.fromBinary(r.toBinary(o), S.BINARY_READ_OPTIONS) : r.create(),
+                        s = null != o ? r.fromBinary(r.toBinary(o), E.BINARY_READ_OPTIONS) : r.create(),
                         l = t(s);
                     if (!1 === l) return;
                     let a = this.ProtoClass.create();
@@ -3249,7 +3249,7 @@
                         let e = s * d.default.Millis.SECOND;
                         t.jitter && (e += Math.floor(Math.random() * Math.min(e, 30 * d.default.Millis.SECOND))), this.logger.log("Scheduling save from markDirty"), o.timeout = setTimeout(this.persistChanges, e), o.timeoutDelay = s
                     }
-                    null != t.cleanup && (o.cleanupFuncs = [...i.cleanupFuncs, ...t.cleanup]), null == i.protoToSave ? o.protoToSave = e : o.protoToSave = (0, S.mergeTopLevelFields)(this.ProtoClass, i.protoToSave, e), this.dispatchChanges(o)
+                    null != t.cleanup && (o.cleanupFuncs = [...i.cleanupFuncs, ...t.cleanup]), null == i.protoToSave ? o.protoToSave = e : o.protoToSave = (0, E.mergeTopLevelFields)(this.ProtoClass, i.protoToSave, e), this.dispatchChanges(o)
                 }
                 dispatchChanges(e) {
                     c.default.dispatch({
@@ -3262,8 +3262,8 @@
                 }
                 saveLastSendTime() {
                     var e;
-                    let t = null !== (e = u.default.get(h)) && void 0 !== e ? e : {};
-                    t[this.type] = Date.now(), u.default.set(h, t)
+                    let t = null !== (e = u.Storage.get(h)) && void 0 !== e ? e : {};
+                    t[this.type] = Date.now(), u.Storage.set(h, t)
                 }
                 async loadIfNecessary(e) {
                     if (__OVERLAY__) {
@@ -3287,7 +3287,7 @@
                                 }
                             } = await s.HTTP.get({
                                 url: m.Endpoints.USER_SETTINGS_PROTO(this.type)
-                            }), n = (0, S.b64ToProto)(this.ProtoClass, t);
+                            }), n = (0, E.b64ToProto)(this.ProtoClass, t);
                             if (null == n) {
                                 this.dispatchChanges({
                                     loading: !1,
@@ -3300,7 +3300,7 @@
                                     proto: r,
                                     isDirty: o,
                                     cleanupFuncs: l
-                                } = (0, S.runMigrations)(n, i);
+                                } = (0, E.runMigrations)(n, i);
                             return await c.default.dispatch({
                                 type: "USER_SETTINGS_PROTO_UPDATE",
                                 settings: {
@@ -3367,7 +3367,7 @@
                             } = t;
                             return n(e.protoToSave)
                         });
-                        let t = (0, S.protoToB64)(this.ProtoClass, e.protoToSave);
+                        let t = (0, E.protoToB64)(this.ProtoClass, e.protoToSave);
                         if (null == t || "" === t) {
                             this.logger.log("Not persisting proto because there is nothing to change");
                             return
@@ -3384,7 +3384,7 @@
                                 }
                             });
                             n.out_of_date && this.logger.log("Proto was out of date, discarding changes"), this.getEditInfo().editInfo.cleanupFuncs.forEach(e => e());
-                            let i = (0, S.b64ToProto)(this.ProtoClass, n.settings);
+                            let i = (0, E.b64ToProto)(this.ProtoClass, n.settings);
                             if (null == i) return;
                             c.default.dispatch({
                                 type: "USER_SETTINGS_PROTO_UPDATE",
@@ -3419,11 +3419,11 @@
                 };
 
             function N(e, t, n) {
-                return T.updateAsync("guilds", n => (0, S.mutateUserGuildSettingsInternal)(n, e, t), n)
+                return T.updateAsync("guilds", n => (0, E.mutateUserGuildSettingsInternal)(n, e, t), n)
             }
 
             function C(e, t, n, i) {
-                return N(e, e => (0, S.mutateUserChannelSettingsInternal)(e, t, n), i)
+                return N(e, e => (0, E.mutateUserChannelSettingsInternal)(e, t, n), i)
             }
 
             function R(e) {
@@ -3458,7 +3458,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return S
+                    return E
                 }
             });
             var i = n("37983"),
@@ -3531,7 +3531,7 @@
                 basis: "auto",
                 wrap: !1
             };
-            let E = e => {
+            let S = e => {
                 let {
                     children: t,
                     className: n,
@@ -3539,16 +3539,16 @@
                     justify: o = c.START,
                     align: a = d.STRETCH,
                     wrap: f = _.NO_WRAP,
-                    shrink: E,
-                    grow: S,
+                    shrink: S,
+                    grow: E,
                     basis: g,
                     style: m,
                     ...h
                 } = e;
                 return (0, i.jsx)("div", {
                     style: {
-                        flexShrink: E,
-                        flexGrow: S,
+                        flexShrink: S,
+                        flexGrow: E,
                         flexBasis: g,
                         ...m
                     },
@@ -3557,12 +3557,12 @@
                     children: t
                 })
             };
-            E.defaultProps = {
+            S.defaultProps = {
                 shrink: 1,
                 grow: 1,
                 basis: "auto"
-            }, E.Child = f, E.Direction = u, E.Align = d, E.Justify = c, E.Wrap = _;
-            var S = E
+            }, S.Child = f, S.Direction = u, S.Align = d, S.Justify = c, S.Wrap = _;
+            var E = S
         },
         542489: function(e, t, n) {
             "use strict";
@@ -3737,7 +3737,7 @@
             let i, r, o;
             n.r(t), n.d(t, {
                 AnalyticsActionHandlers: function() {
-                    return E
+                    return S
                 },
                 analyticsTrackingStoreMaker: function() {
                     return m
@@ -3750,13 +3750,13 @@
             let d = 1500,
                 _ = null !== (s = window.requestIdleCallback) && void 0 !== s ? s : e => setImmediate(() => e()),
                 f = new c.default,
-                E = {
+                S = {
                     handleConnectionOpen: () => {},
                     handleConnectionClosed: () => {},
                     handleFingerprint: () => {},
                     handleTrack: () => {}
                 },
-                S = [],
+                E = [],
                 g = () => Promise.resolve({
                     sessionId: void 0
                 }),
@@ -3773,7 +3773,7 @@
                     d = null != h ? h : 1500;
 
                     function I() {
-                        return 0 !== S.length && (null != r ? null != i : null != s())
+                        return 0 !== E.length && (null != r ? null != i : null != s())
                     }
 
                     function T() {
@@ -3784,8 +3784,8 @@
 
                     function v() {
                         if (o = null, !I()) return;
-                        let e = S.slice();
-                        S = [];
+                        let e = E.slice();
+                        E = [];
                         let t = A(e);
                         t.then(() => {
                             e.forEach(e => {
@@ -3793,7 +3793,7 @@
                                 null === (t = e.resolve) || void 0 === t || t.call(e)
                             })
                         }, t => {
-                            S.unshift(...e);
+                            E.unshift(...e);
                             let {
                                 message: n
                             } = t.body || t;
@@ -3819,17 +3819,17 @@
                             retries: 3
                         })
                     }
-                    E.handleConnectionOpen = function(e) {
+                    S.handleConnectionOpen = function(e) {
                         let {
                             analyticsToken: t,
                             user: n
                         } = e;
                         return null != t && (i = t), null != n.id && (r = n.id), T(), !1
-                    }, E.handleConnectionClosed = function() {
+                    }, S.handleConnectionClosed = function() {
                         return v(), i = null, r = null, !1
-                    }, E.handleFingerprint = function() {
+                    }, S.handleFingerprint = function() {
                         return v(), !1
-                    }, E.handleTrack = function(e) {
+                    }, S.handleTrack = function(e) {
                         let {
                             event: t,
                             properties: n,
@@ -3854,7 +3854,7 @@
                                 let t = e.fingerprint || s();
                                 return null != t ? (0, l.extractId)(t) : null
                             }(c);
-                            null != d && (c.properties.client_uuid = f.generate(d)), S.push(c), S.length > 1e4 && (S = S.slice(-1e4)), i ? v() : T()
+                            null != d && (c.properties.client_uuid = f.generate(d)), E.push(c), E.length > 1e4 && (E = E.slice(-1e4)), i ? v() : T()
                         }), !1
                     };
                     class N extends a.default.Store {
@@ -3894,22 +3894,22 @@
                     return p.ImpressionGroups
                 },
                 ImpressionNames: function() {
-                    return S.ImpressionNames
+                    return E.ImpressionNames
                 },
                 NetworkActionNames: function() {
-                    return S.NetworkActionNames
+                    return E.NetworkActionNames
                 },
                 StandardAnalyticsSchemaNameMap: function() {
-                    return S.StandardAnalyticsSchemaNameMap
+                    return E.StandardAnalyticsSchemaNameMap
                 },
                 ImpressionSchema: function() {
-                    return S.ImpressionSchema
+                    return E.ImpressionSchema
                 },
                 encodeProperties: function() {
                     return m.encodeProperties
                 },
                 CommonAnalyticsSchema: function() {
-                    return S
+                    return E
                 },
                 getCampaignParams: function() {
                     return O
@@ -3944,8 +3944,8 @@
                 d = n.n(c),
                 _ = n("429030"),
                 f = n("95410"),
-                E = n("444095"),
-                S = n("33112"),
+                S = n("444095"),
+                E = n("33112"),
                 g = n("375492"),
                 m = n("612481"),
                 h = n("615582"),
@@ -4068,7 +4068,7 @@
             }
             if (null == i) try {
                 let e, t, n;
-                e = f.default.get(I), null == e && (e = function() {
+                e = f.Storage.get(I), null == e && (e = function() {
                     let e = {},
                         t = L();
                     return e.os = t, e.browser = function() {
@@ -4092,10 +4092,10 @@
                         else if (/Gecko/.test(e)) return "Mozilla";
                         else return ""
                     }(), e.device = y(), e.system_locale = (0, _.getSystemLocale)(), e
-                }(), f.default.set(I, e)), t = f.default.get(T), null == t && (t = D(), f.default.set(T, t)), n = E.default.get(T), null == n && (n = function(e, t) {
+                }(), f.Storage.set(I, e)), t = f.Storage.get(T), null == t && (t = D(), f.Storage.set(T, t)), n = S.SessionStorage.get(T), null == n && (n = function(e, t) {
                     let n = {};
                     return Object.keys(e).map(i => n["".concat(i).concat(t)] = e[i]), n
-                }(D(), "_current"), E.default.set(T, n)), i = {
+                }(D(), "_current"), S.SessionStorage.set(T, n)), i = {
                     ...e,
                     ... function() {
                         var e, t;
@@ -4126,7 +4126,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "278320", "278320"), 10);
+                let o = parseInt((n = "278328", "278328"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -4257,8 +4257,8 @@
                         children: d,
                         className: _,
                         dir: f = "ltr",
-                        orientation: E = "vertical",
-                        fade: S = !1,
+                        orientation: S = "vertical",
+                        fade: E = !1,
                         customTheme: g = !1,
                         paddingFix: m = !0,
                         style: h,
@@ -4266,15 +4266,15 @@
                     } = u, {
                         scrollerRef: I,
                         getScrollerState: T
-                    } = (0, a.useUncachedScrollerState)(), v = (0, a.useScrollSpring)(I, E);
+                    } = (0, a.useUncachedScrollerState)(), v = (0, a.useScrollSpring)(I, S);
                     r.useImperativeHandle(c, () => ({
                         getScrollerNode: () => I.current,
                         getScrollerState: T,
-                        ...(0, a.getAnimatedScrollHelpers)(I, T, v, E)
-                    }), [I, T, E, v]);
+                        ...(0, a.getAnimatedScrollHelpers)(I, T, v, S)
+                    }), [I, T, S, v]);
                     let A = (0, a.usePaddingFixes)({
                         paddingFix: m,
-                        orientation: E,
+                        orientation: S,
                         dir: f,
                         className: _,
                         scrollerRef: I,
@@ -4284,10 +4284,10 @@
                         ref: I,
                         className: s(_, {
                             [e]: !0,
-                            [t]: S,
+                            [t]: E,
                             [n]: g
                         }),
-                        style: (0, a.getMergedOrientationStyles)(h, E),
+                        style: (0, a.getMergedOrientationStyles)(h, S),
                         dir: f,
                         ...p,
                         children: (0, i.jsxs)(l.FocusRingScope, {
@@ -4621,25 +4621,25 @@
                         let l = this.sections[_],
                             a = 0,
                             d = s(_),
-                            S = this.getMaxColumnHeight(this.columnHeights);
-                        _ > 0 && (S = S - i + this.getSectionGutter());
+                            E = this.getMaxColumnHeight(this.columnHeights);
+                        _ > 0 && (E = E - i + this.getSectionGutter());
                         let g = d > 0 ? d + i : 0;
-                        for (let e = 0; e < this.columnHeights.length; e++) this.columnHeights[e] = S + g;
+                        for (let e = 0; e < this.columnHeights.length; e++) this.columnHeights[e] = E + g;
                         for (; a < l;) {
-                            var f, E;
+                            var f, S;
                             let e = t(_, a);
                             if (null == e) {
                                 a++;
                                 continue
                             }
-                            let [r, o] = (E = this.columnHeights).reduce((e, t, n) => t < e[0] ? [t, n] : e, [E[0], 0]);
+                            let [r, o] = (S = this.columnHeights).reduce((e, t, n) => t < e[0] ? [t, n] : e, [S[0], 0]);
                             o < this.lastColumnIndex && this.currentRow++, this.lastColumnIndex = o;
                             let s = n(_, a, this.columnWidth),
                                 l = {
                                     position: "absolute",
                                     [u]: this.columnWidth * o + i * (o + 1) - i,
                                     width: this.columnWidth,
-                                    top: r - S,
+                                    top: r - E,
                                     height: s
                                 },
                                 c = {
@@ -4659,8 +4659,8 @@
                             position: "absolute",
                             [u]: c,
                             width: this.columnWidth * e + i * (e - 1),
-                            top: S,
-                            height: this.getMaxColumnHeight(this.columnHeights) - S - i
+                            top: E,
+                            height: this.getMaxColumnHeight(this.columnHeights) - E - i
                         }, _++
                     }
                     this.columnHeights = this.columnHeights.map(e => e - i + d), this.totalHeight = this.getMaxColumnHeight(), this.visibleSections = {}, this.needsFullCompute = !1
@@ -5058,10 +5058,10 @@
                     return f.default
                 },
                 useScrollSpring: function() {
-                    return E.default
+                    return S.default
                 },
                 getScrollbarSpecs: function() {
-                    return S.default
+                    return E.default
                 }
             });
             var i = n("628793"),
@@ -5078,8 +5078,8 @@
                 _ = n("266913");
             n("776341");
             var f = n("542809"),
-                E = n("517448"),
-                S = n("853338")
+                S = n("517448"),
+                E = n("853338")
         },
         803828: function(e, t, n) {
             "use strict";
@@ -5424,8 +5424,8 @@
                     chunkSize: d = 250,
                     getScrollerState: _,
                     itemGutter: f,
-                    removeEdgeItemGutters: E,
-                    sectionGutter: S,
+                    removeEdgeItemGutters: S,
+                    sectionGutter: E,
                     padding: g,
                     paddingVertical: m,
                     paddingHorizontal: h,
@@ -5450,13 +5450,13 @@
                     getSectionHeight: c,
                     bufferWidth: N,
                     itemGutter: f,
-                    removeEdgeItemGutters: E,
-                    sectionGutter: S,
+                    removeEdgeItemGutters: S,
+                    sectionGutter: E,
                     padding: g,
                     paddingVertical: m,
                     paddingHorizontal: h,
                     dir: p
-                }), v.computeVisibleSections(Math.max(0, R * d), O * d), v.getState()), [C, v, t, n, a, u, c, R, O, d, f, E, S, g, m, h, N, p]), {
+                }), v.computeVisibleSections(Math.max(0, R * d), O * d), v.getState()), [C, v, t, n, a, u, c, R, O, d, f, S, E, g, m, h, N, p]), {
                     ...T.current,
                     masonryComputer: v,
                     forceUpdateOnChunkChange: L,
@@ -5495,8 +5495,8 @@
                     listHeaderHeight: d,
                     chunkSize: _ = 256,
                     paddingTop: f = 0,
-                    paddingBottom: E = 0,
-                    getScrollerState: S,
+                    paddingBottom: S = 0,
+                    getScrollerState: E,
                     getAnchorId: g
                 } = e, m = (0, o.default)(), h = (0, i.useRef)(l), [p] = (0, i.useState)(() => new r.default), {
                     dirty: I,
@@ -5505,13 +5505,13 @@
                     forceUpdateOnChunkChange: A
                 } = (0, s.default)({
                     chunkSize: _,
-                    getScrollerState: S,
+                    getScrollerState: E,
                     forceUpdate: m
                 }), {
                     items: N
                 } = h.current, C = null, {
                     scrollTop: R
-                } = S();
+                } = E();
                 for (let e of N) {
                     if (0 === R) break;
                     if ("footer" === e.type || "header" === e.type || null == e.anchorId) continue;
@@ -5535,11 +5535,11 @@
                         rowHeight: a,
                         footerHeight: u,
                         listHeaderHeight: d,
-                        paddingBottom: E,
+                        paddingBottom: S,
                         paddingTop: f,
                         sections: t,
                         getAnchorId: g
-                    }), p.compute(Math.max(0, T * _), v * _)), [I, T, v, n, a, u, d, E, f, t, p, _, g]);
+                    }), p.compute(Math.max(0, T * _), v * _)), [I, T, v, n, a, u, d, S, f, t, p, _, g]);
                 return (0, i.useLayoutEffect)(() => void(h.current = L)), {
                     ...L,
                     listComputer: p,
@@ -5627,12 +5627,12 @@
         },
         444095: function(e, t, n) {
             "use strict";
+            let i;
             n.r(t), n.d(t, {
-                default: function() {
+                SessionStorage: function() {
                     return i
                 }
-            });
-            var i = n("434596").impl
+            }), i = n("434596").impl
         },
         434596: function(e, t, n) {
             "use strict";
@@ -5684,4 +5684,4 @@
         }
     }
 ]);
-//# sourceMappingURL=87475.1aac133112b3e8e41aef.js.map
+//# sourceMappingURL=87475.322f4ae4611368070330.js.map
