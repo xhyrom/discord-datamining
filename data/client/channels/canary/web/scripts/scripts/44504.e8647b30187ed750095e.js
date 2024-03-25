@@ -324,9 +324,10 @@
                 a(null != c, "PremiumGuildPerksModalConnected: currentUser cannot be undefined");
                 let _ = (0, l.useStateFromStores)([u.default], () => u.default.getGuild(t), [t]),
                     {
-                        AnalyticsLocationProvider: T
+                        analyticsLocations: T
                     } = (0, n.default)(o.default.BOOSTED_GUILD_PERKS_MODAL);
-                return null == _ ? null : (0, i.jsx)(T, {
+                return null == _ ? null : (0, i.jsx)(n.AnalyticsLocationProvider, {
+                    value: T,
                     children: (0, i.jsx)(E.default, {
                         analyticsLocation: r,
                         onClose: s,
@@ -2518,4 +2519,4 @@
         }
     }
 ]);
-//# sourceMappingURL=44504.98a728d22a48a65011da.js.map
+//# sourceMappingURL=44504.e8647b30187ed750095e.js.map
