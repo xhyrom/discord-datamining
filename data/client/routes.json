@@ -1677,7 +1677,10 @@
   },
   "WEBAUTHN_CONDITIONAL_UI_CHALLENGE": {
     "url": "/auth/conditional/start",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "WEBAUTHN_CONDITIONAL_UI_LOGIN": {
     "url": "/auth/conditional/finish",
@@ -4650,6 +4653,10 @@
       "OPTIONS",
       "POST"
     ]
+  },
+  "EXPLICIT_MEDIA_GET_VALID_CONTENT_SCAN_VERSION": {
+    "url": "/explicit-media/current-version",
+    "allowed_methods": null
   },
   "EXPLICIT_MEDIA_SCAN_MESSAGES": {
     "url": "/channels/:param/explicit-media",
