@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["45109"], {
+    ["29062"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -67554,7 +67554,7 @@
                 }
             });
             let i = new class e {
-                enterPipMode() {
+                setActive(e) {
                     return Promise.resolve()
                 }
                 setEnabled(e) {}
@@ -67564,6 +67564,7 @@
                 setPipAspectRatio(e, t) {}
                 updateSourceTrackingView() {}
                 addOnPipModeChangedListener(e) {}
+                addOnPipModeWillChangeListener(e) {}
                 isEnabled() {
                     return !1
                 }
@@ -88226,8 +88227,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711389757031",
-                                    build_number: "278259"
+                                    built_at: "1711391721053",
+                                    build_number: "278282"
                                 }
                             },
                             retries: 1
@@ -125748,7 +125749,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "7d7c73517c1ae4eae1cd6c83e1a3426d0f443370"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "27e014a34446df68c221d4d128bfbe93b126ad3e"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -135246,7 +135247,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "278259"
+                                build_number: "278282"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -153061,4 +153062,4 @@
         }
     }
 ]);
-//# sourceMappingURL=45109.e4d50e56d5f14746a169.js.map
+//# sourceMappingURL=29062.4561083ca8d4ff9086d0.js.map
