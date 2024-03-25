@@ -729,6 +729,7 @@
             e.exports = {
                 emoji: "emoji__814a3",
                 icon: "icon_d942d4",
+                questsIcon: "questsIcon__113ae",
                 textRuler: "textRuler__61dab"
             }
         },
@@ -4603,17 +4604,6 @@
                 username: "username__17f9b",
                 warning: "warning_e0eefb",
                 xsmallAvatar: "xsmallAvatar__4f75e"
-            }
-        },
-        868387: function(e, t, n) {
-            "use strict";
-            e.exports = {
-                buttonContainer: "buttonContainer_c96d16",
-                noAnimation: "noAnimation__284e4",
-                sparkle: "sparkle__71a96",
-                sparkleContainer: "sparkleContainer__788fa",
-                sparklePlus: "sparklePlus__09307",
-                sparkleStar: "sparkleStar_eb8851"
             }
         },
         731859: function(e, t, n) {
@@ -21941,6 +21931,20 @@
                 mobileWebContainer: "mobileWebContainer_cc20ff",
                 mobileWebCopy: "mobileWebCopy__8577c",
                 mobileWebImage: "mobileWebImage__2e5f0"
+            }
+        },
+        418630: function(e, t, n) {
+            "use strict";
+            e.exports = {
+                bottom: "bottom_c5eb3e",
+                container: "container_c2bf5d",
+                imgUnderlay: "imgUnderlay__828a3",
+                imgWrapper: "imgWrapper__68927",
+                left: "left_c8394c",
+                middle: "middle__6911f",
+                right: "right__8f2d4",
+                top: "top_de4734",
+                wrapper: "wrapper_c7f333"
             }
         },
         435251: function(e, t, n) {

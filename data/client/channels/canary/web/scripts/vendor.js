@@ -52361,28 +52361,16 @@
                     entryPointEnabled: !1,
                     desktopThrobberEnabled: !1,
                     activitiesInTextEnabled: !1,
-                    showInOmniButtonMenu: !1,
-                    showChatInputButton: !1
+                    showInOmniButtonMenu: !1
                 },
                 treatments: [{
                     id: 1,
-                    label: "enable Activities in text channels",
+                    label: "Enable Activities in Text, DM, and GDM channels",
                     config: {
                         entryPointEnabled: !0,
                         activitiesInTextEnabled: !0,
                         desktopThrobberEnabled: !1,
-                        showInOmniButtonMenu: !0,
-                        showChatInputButton: !1
-                    }
-                }, {
-                    id: 3,
-                    label: "enable Activities in text with the rocket button in chat input",
-                    config: {
-                        entryPointEnabled: !0,
-                        activitiesInTextEnabled: !0,
-                        desktopThrobberEnabled: !1,
-                        showInOmniButtonMenu: !1,
-                        showChatInputButton: !0
+                        showInOmniButtonMenu: !0
                     }
                 }]
             });
@@ -52417,7 +52405,7 @@
                         isActivitiesInTextEnabledForChannelType: null != (t = n) && u(t.type),
                         channelGuildId: null == n ? void 0 : n.guild_id
                     }
-                }), a = void 0 !== i, d = r.default.useExperiment({
+                }), a = null != i, d = r.default.useExperiment({
                     guildId: i,
                     location: t
                 }, {
@@ -52437,7 +52425,7 @@
                         var t;
                         return null === (t = o.default.getChannel(e)) || void 0 === t ? void 0 : t.guild_id
                     }),
-                    i = void 0 !== n,
+                    i = null != n,
                     a = r.default.useExperiment({
                         guildId: n,
                         location: t
@@ -52451,13 +52439,7 @@
                         autoTrackExposure: !i,
                         disable: i
                     });
-                return i ? {
-                    showInOmniButtonMenu: a.showInOmniButtonMenu,
-                    showChatInputButton: a.showChatInputButton
-                } : {
-                    showInOmniButtonMenu: u.showInOmniButtonMenu,
-                    showChatInputButton: u.showChatInputButton
-                }
+                return i ? a : u
             }
         },
         954016: function(e, t, n) {
@@ -56986,8 +56968,7 @@
                     entryPointEnabled: !1,
                     activitiesInTextEnabled: !1,
                     desktopThrobberEnabled: !1,
-                    showInOmniButtonMenu: !1,
-                    showChatInputButton: !1
+                    showInOmniButtonMenu: !1
                 },
                 treatments: [{
                     id: 1,
@@ -56996,8 +56977,7 @@
                         entryPointEnabled: !0,
                         activitiesInTextEnabled: !1,
                         desktopThrobberEnabled: !1,
-                        showInOmniButtonMenu: !1,
-                        showChatInputButton: !1
+                        showInOmniButtonMenu: !1
                     }
                 }, {
                     id: 2,
@@ -57006,8 +56986,7 @@
                         entryPointEnabled: !0,
                         activitiesInTextEnabled: !0,
                         desktopThrobberEnabled: !1,
-                        showInOmniButtonMenu: !0,
-                        showChatInputButton: !1
+                        showInOmniButtonMenu: !0
                     }
                 }, {
                     id: 3,
@@ -57016,8 +56995,7 @@
                         entryPointEnabled: !0,
                         activitiesInTextEnabled: !0,
                         desktopThrobberEnabled: !0,
-                        showInOmniButtonMenu: !0,
-                        showChatInputButton: !1
+                        showInOmniButtonMenu: !0
                     }
                 }]
             })
@@ -88256,8 +88234,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711405498133",
-                                    build_number: "278414"
+                                    built_at: "1711405989722",
+                                    build_number: "278421"
                                 }
                             },
                             retries: 1
@@ -125778,7 +125756,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "0a789b922b6a48e372f5e42bcc0455e1bcd4d947"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "d7f4ede755feae6804127a815386f0267cfb90a7"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -135276,7 +135254,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "278414"
+                                build_number: "278421"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -153091,4 +153069,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.a31f81446ee07983562a.js.map
+//# sourceMappingURL=29062.7b8bbd363cbc3afd9f64.js.map
