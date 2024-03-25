@@ -47675,8 +47675,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -55936,11 +55936,6 @@ html .progress__4ef76 {
 
 .formItemSpaced_e8c8ff {
     margin-top: 16px
-}
-
-.clanLabel__35b0d {
-    display: flex;
-    gap: 8px
 }
 
 @value responsiveWidthMobile from '../../../../uikit/auth/WaveSplash.module.css';
@@ -130763,4 +130758,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.69532a8fed577e0c32c5.css.map*/
+/*# sourceMappingURL=app.660d06e22cb3f3d5aeff.css.map*/
