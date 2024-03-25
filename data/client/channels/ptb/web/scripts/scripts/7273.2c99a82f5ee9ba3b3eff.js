@@ -1549,6 +1549,7 @@
                     SEND_GAMING_STATS: _ => "/".concat(_, "/gaming-stats"),
                     UPDATE_GAMING_STATS: (_, E) => "/".concat(_, "/").concat(E, "/update-gaming-stats"),
                     BULK_GUILD_BAN: _ => "/guilds/".concat(_, "/bulk-ban"),
+                    EXPLICIT_MEDIA_GET_VALID_CONTENT_SCAN_VERSION: "/explicit-media/current-version",
                     EXPLICIT_MEDIA_SCAN_MESSAGES: _ => "/channels/".concat(_, "/explicit-media"),
                     EXPLICIT_MEDIA_SCAN_MULTI_CHANNEL_MESSAGES: "/messages/explicit-media",
                     POLL_ANSWERS: (_, E) => "/channels/".concat(_, "/polls/").concat(E, "/answers/@me"),
@@ -13867,4 +13868,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7273.6b7f84baefef045c53e7.js.map
+//# sourceMappingURL=7273.2c99a82f5ee9ba3b3eff.js.map
