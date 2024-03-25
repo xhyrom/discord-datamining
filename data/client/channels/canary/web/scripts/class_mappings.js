@@ -22697,6 +22697,7 @@
                 closeButtonContainer: "closeButtonContainer_fbb3fd",
                 completedContainer: "completedContainer__86372",
                 content: "content_d4edcd",
+                contentInner: "contentInner_d7be94",
                 emailContainer: "emailContainer__410bb",
                 emailForm: "emailForm__4a294",
                 emailInput: "emailInput__03fc4",

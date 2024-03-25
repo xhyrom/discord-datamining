@@ -121991,12 +121991,16 @@ div.nagbar_c731ff {
 
 .content_d4edcd {
     border-radius: 8px;
-    height: 640px;
+    max-height: 660px;
+    position: relative
+}
+
+.contentInner_d7be94 {
+    height: 560px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 40px;
-    position: relative
+    justify-content: space-between
 }
 
 .modal__59cfa {
@@ -130780,4 +130784,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.63682d854a7ee3fc2a4c.css.map*/
+/*# sourceMappingURL=app.72be2da2fd86efa52fd3.css.map*/
