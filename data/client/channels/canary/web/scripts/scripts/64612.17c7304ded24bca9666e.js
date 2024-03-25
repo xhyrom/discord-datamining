@@ -75,7 +75,7 @@
 
             function R(e) {
                 let t = y[e];
-                return null == t && (t = new r.default(N, L), y[e] = t), t
+                return null == t && (t = new r.SecondaryIndexMap(N, L), y[e] = t), t
             }
 
             function L(e) {
@@ -132,18 +132,18 @@
                 (null === (n = h[e]) || void 0 === n ? void 0 : n[t.channel_id]) == null && (h[e] = null !== (d = h[e]) && void 0 !== d ? d : {}, h[e][t.channel_id] = {}), h[e][t.channel_id][t.id] = t, null == v[t.channel_id] && (v[t.channel_id] = {}), v[t.channel_id][t.id] = e
             }
 
-            function Y(e, t) {
+            function x(e, t) {
                 let n = R(e),
                     d = n.values(m.GuildFeedSectionTypes.ALL);
                 for (let e of d)
                     if ((0, _.getAllMessageIdsFromFeedItem)(e).has(t)) return e
             }
 
-            function x(e, t) {
+            function Y(e, t) {
                 var n, d, i;
                 let l = w(e, t);
                 return null != l && (null === (d = h[l]) || void 0 === d || null === (n = d[e]) || void 0 === n || delete n[t], null === (i = v[e]) || void 0 === i || delete i[t], ! function(e, t) {
-                    let n = Y(e, t);
+                    let n = x(e, t);
                     if (null == n) return;
                     let d = (0, f.default)(n),
                         i = R(e),
@@ -199,7 +199,7 @@
                     return R(e).get(t)
                 }
                 getItemForMessageId(e, t) {
-                    return Y(e, t)
+                    return x(e, t)
                 }
                 getMessageItem(e, t) {
                     return this.getItem(e, (0, f.GUILD_FEED_MESSAGE_ITEM_ID_TEMPLATE)(t))
@@ -338,7 +338,7 @@
                     let {
                         item: t
                     } = e;
-                    (0, _.getAllMessagesFromFeedItem)(t).forEach(e => x(e.channel_id, e.id))
+                    (0, _.getAllMessagesFromFeedItem)(t).forEach(e => Y(e.channel_id, e.id))
                 },
                 GUILD_FEED_ITEM_HIDE: function(e) {
                     let {
@@ -409,14 +409,14 @@
                         id: t,
                         channelId: n
                     } = e;
-                    return x(n, t)
+                    return Y(n, t)
                 },
                 MESSAGE_DELETE_BULK: function(e) {
                     let {
                         ids: t,
                         channelId: n
                     } = e, d = !1;
-                    for (let e of t) d = x(n, e) || d;
+                    for (let e of t) d = Y(n, e) || d;
                     return d
                 },
                 MESSAGE_REACTION_ADD: K,
@@ -772,4 +772,4 @@
         }
     }
 ]);
-//# sourceMappingURL=64612.9a1ddaa5961bd1fdc234.js.map
+//# sourceMappingURL=64612.17c7304ded24bca9666e.js.map

@@ -58317,7 +58317,7 @@
                     return f
                 }
                 constructor(e) {
-                    this.participants = {}, this.lastSpoke = {}, this.participantByIndex = new o.default(e => {
+                    this.participants = {}, this.lastSpoke = {}, this.participantByIndex = new o.SecondaryIndexMap(e => {
                         var t;
                         let n = [];
                         return e.type === I.ParticipantTypes.USER && e.speaking && n.push("SPEAKING"), e.type === I.ParticipantTypes.USER && (null === (t = e.voiceState) || void 0 === t ? void 0 : t.selfVideo) ? (n.push("VIDEO"), !e.localVideoDisabled && n.push("FILTERED")) : (0, I.isStreamParticipant)(e) && (n.push("STREAM"), e.type !== I.ParticipantTypes.HIDDEN_STREAM && null != e.streamId && n.push("FILTERED")), e.type === I.ParticipantTypes.ACTIVITY && n.push("ACTIVITY"), n
@@ -78408,8 +78408,8 @@
             function E(e) {
                 return "plan:".concat(e)
             }(s = i || (i = {}))[s.NOT_FETCHED = 0] = "NOT_FETCHED", s[s.FETCHING = 1] = "FETCHING", s[s.FETCHED = 2] = "FETCHED";
-            let h = new l.default(e => [c(e.guild_id), ...e.subscription_listings_ids.map(_)], e => e.id),
-                g = new l.default(e => [f(e.application_id), E(e.subscription_plans[0].id)], e => e.id),
+            let h = new l.SecondaryIndexMap(e => [c(e.guild_id), ...e.subscription_listings_ids.map(_)], e => e.id),
+                g = new l.SecondaryIndexMap(e => [f(e.application_id), E(e.subscription_plans[0].id)], e => e.id),
                 m = {},
                 p = new Set,
                 S = {},
@@ -79095,7 +79095,7 @@
                 } = e, i = D(e) ? "\x00" : "\x01";
                 return "".concat(i, "-").concat(new Date(n).getTime(), "-").concat(t)
             }
-            let E = new a.default(e => {
+            let E = new a.SecondaryIndexMap(e => {
                     let {
                         guild_id: t,
                         entity_id: n,
@@ -88226,8 +88226,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711384635541",
-                                    build_number: "278215"
+                                    built_at: "1711384804465",
+                                    build_number: "278218"
                                 }
                             },
                             retries: 1
@@ -91748,7 +91748,7 @@
                 _ = n("39141"),
                 f = n("49111");
             let E = new Set,
-                h = new s.default(function(e) {
+                h = new s.SecondaryIndexMap(function(e) {
                     let {
                         userId: t,
                         channelId: n
@@ -91761,7 +91761,7 @@
                     } = e;
                     return "".concat(n, "-").concat(t)
                 }),
-                g = new s.default(function(e) {
+                g = new s.SecondaryIndexMap(function(e) {
                     let {
                         messageId: t,
                         channelId: n,
@@ -97201,7 +97201,7 @@
                 I = n("325861"),
                 A = n("834052");
             let C = "NO_GUILD",
-                y = new l.default(e => [function(e) {
+                y = new l.SecondaryIndexMap(e => [function(e) {
                     var t;
                     return null !== (t = e.getGuildId()) && void 0 !== t ? t : C
                 }(e)], e => e.id),
@@ -97551,7 +97551,7 @@
                 }
                 constructor(e) {
                     var t;
-                    this.participants = {}, this._participantsIndex = new l.default(R, C), this._requestToSpeakIndex = new l.default(() => [], y), this.channelId = e, this.guildId = null === (t = _.default.getChannel(e)) || void 0 === t ? void 0 : t.getGuildId()
+                    this.participants = {}, this._participantsIndex = new l.SecondaryIndexMap(R, C), this._requestToSpeakIndex = new l.SecondaryIndexMap(() => [], y), this.channelId = e, this.guildId = null === (t = _.default.getChannel(e)) || void 0 === t ? void 0 : t.getGuildId()
                 }
             }
         },
@@ -123966,7 +123966,7 @@
                     }
                 }
                 constructor(e) {
-                    this._pending = new Set, this._voiceStates = new a.default(e => {
+                    this._pending = new Set, this._voiceStates = new a.SecondaryIndexMap(e => {
                         let {
                             voiceState: {
                                 channelId: t
@@ -125748,7 +125748,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "06c7d05c7b5d3d12db2bb55d166cb73741d9db76"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "6c2a3efd2e6370a300c8d82be34b13378d9bad36"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -135246,7 +135246,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "278215"
+                                build_number: "278218"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -150444,18 +150444,18 @@
         407846: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                default: function() {
-                    return i
+                SecondaryIndexMap: function() {
+                    return o
                 }
             }), n("222007");
-            var i, s = n("167200"),
-                r = n.n(s);
+            var i = n("167200"),
+                s = n.n(i);
 
-            function a(e, t, n, i) {
-                null != t && e.splice(r(e, t, i), 1), null != n && e.splice(r(e, n, i), 0, n)
+            function r(e, t, n, i) {
+                null != t && e.splice(s(e, t, i), 1), null != n && e.splice(s(e, n, i), 0, n)
             }
-            let o = [];
-            i = class {
+            let a = [];
+            class o {
                 get version() {
                     return this._version
                 }
@@ -150474,7 +150474,7 @@
                 values(e) {
                     var t;
                     let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-                    return null == e ? this.valueArray : null !== (t = this.indexes(n)[e]) && void 0 !== t ? t : o
+                    return null == e ? this.valueArray : null !== (t = this.indexes(n)[e]) && void 0 !== t ? t : a
                 }
                 size(e) {
                     var t, n;
@@ -150491,7 +150491,7 @@
                 }
                 set(e, t) {
                     let n = this.get(e);
-                    return !(null == n && null == t || null != n && null != t && this.isEqual(n, t)) && (null != t ? this.valueMap.set(e, t) : this.valueMap.delete(e), a(this.valueArray, n, t, this.sortBy), null != n && this.indexBy(n).forEach(e => a(this.getIndex(e), n, null, this.sortBy)), null != t && this.indexBy(t).forEach(e => a(this.getIndex(e), null, t, this.sortBy)), this.dirty = !0, this._version++, !0)
+                    return !(null == n && null == t || null != n && null != t && this.isEqual(n, t)) && (null != t ? this.valueMap.set(e, t) : this.valueMap.delete(e), r(this.valueArray, n, t, this.sortBy), null != n && this.indexBy(n).forEach(e => r(this.getIndex(e), n, null, this.sortBy)), null != t && this.indexBy(t).forEach(e => r(this.getIndex(e), null, t, this.sortBy)), this.dirty = !0, this._version++, !0)
                 }
                 delete(e) {
                     return this.set(e, null)
@@ -153061,4 +153061,4 @@
         }
     }
 ]);
-//# sourceMappingURL=45109.ac3d6d5f21384ed53b7c.js.map
+//# sourceMappingURL=45109.4f9c9dd428b1579a0579.js.map
