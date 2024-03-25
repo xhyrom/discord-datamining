@@ -22,8 +22,8 @@
                 R = s("697218"),
                 y = s("25292"),
                 E = s("651879"),
-                C = s("253981"),
-                g = s("447909"),
+                g = s("253981"),
+                C = s("447909"),
                 T = s("195547"),
                 A = s("375822"),
                 m = s("49111");
@@ -77,7 +77,7 @@
             }
             l = class {
                 createSearchContext() {
-                    null == this.userSearchContext && (this.userSearchContext = g.default.getSearchContext(this.parseUserResults, this._limit))
+                    null == this.userSearchContext && (this.userSearchContext = C.default.getSearchContext(this.parseUserResults, this._limit))
                 }
                 setLimit(e) {
                     let {
@@ -220,8 +220,8 @@
                         pathname: i,
                         hostname: u = "",
                         host: n
-                    } = s, a = C.default.isDiscordHostname(u) || window.location.host === n;
-                    return null !== i && a && C.default.isAppRoute(i) ? [{
+                    } = s, a = g.default.isDiscordHostname(u) || window.location.host === n;
+                    return null !== i && a && g.default.isAppRoute(i) ? [{
                         type: A.AutocompleterResultTypes.LINK,
                         record: d.default.fromPath(i),
                         score: 1
@@ -295,7 +295,7 @@
                 null != e && (e[t] = null != s && "" !== s ? s : null)
             }
 
-            function C(e) {
+            function g(e) {
                 let t = [];
                 if (null == e || !(0, o.isPrivate)(e.type)) return t;
                 let {
@@ -307,7 +307,7 @@
                 }), t
             }
 
-            function g(e, t) {
+            function C(e, t) {
                 let s = [];
                 return e.forEach(e => {
                     let l = y(e.user);
@@ -430,7 +430,7 @@
                             guilds: t
                         } = e;
                         setTimeout(() => {
-                            let e = n.flatMap(t, e => g(e.members, e.id));
+                            let e = n.flatMap(t, e => C(e.members, e.id));
                             this.updateUsers(e)
                         }, 3e3)
                     }, this._handleOverlayInitialize = e => {
@@ -462,13 +462,13 @@
                         } = e, {
                             members: s
                         } = t;
-                        this.updateUsers(g(s, t.id))
+                        this.updateUsers(C(s, t.id))
                     }, this._handleGuildMembersChunk = e => {
                         let {
                             members: t,
                             guildId: s
                         } = e;
-                        this.updateUsers(g(t, s))
+                        this.updateUsers(C(t, s))
                     }, this._handleGuildMemberUpdate = e => {
                         let {
                             guildId: t,
@@ -477,7 +477,7 @@
                         } = e, i = y(s);
                         null != i && (E(i, t, l), this.updateUsers([i]))
                     }, this._handlePassiveUpdateV1 = e => {
-                        null != e.members && this.updateUsers(g(e.members, e.guildId))
+                        null != e.members && this.updateUsers(C(e.members, e.guildId))
                     }, this._handleRelationshipAdd = e => {
                         let t = y(e.relationship.user);
                         this.updateUsers([t])
@@ -492,7 +492,7 @@
                             channel: {
                                 id: t
                             }
-                        } = e, s = C(h.default.getChannel(t));
+                        } = e, s = g(h.default.getChannel(t));
                         if (0 === s.length) return;
                         let l = y(p.default.getCurrentUser());
                         E(l, t), s.push(l), this.updateUsers(s)
@@ -501,7 +501,7 @@
                             channels: t
                         } = e;
                         for (let e of t) {
-                            let t = C(h.default.getChannel(e.id));
+                            let t = g(h.default.getChannel(e.id));
                             if (0 === t.length) continue;
                             let s = y(p.default.getCurrentUser());
                             E(s, e.id), t.push(s), this.updateUsers(t)
@@ -648,8 +648,8 @@
                 R = s("42203"),
                 y = s("474643"),
                 E = s("923959"),
-                C = s("26989"),
-                g = s("305961"),
+                g = s("26989"),
+                C = s("305961"),
                 T = s("957255"),
                 A = s("660478"),
                 m = s("18494"),
@@ -672,7 +672,7 @@
                 F = [];
 
             function q() {
-                b = g.default.getGuildCount() >= 3 || u.size(R.default.getMutablePrivateChannels()) >= 20, Q = []
+                b = C.default.getGuildCount() >= 3 || u.size(R.default.getMutablePrivateChannels()) >= 20, Q = []
             }
 
             function x(e) {
@@ -780,7 +780,7 @@
                 }() : e, Q) && (Q = e, ! function(e, t) {
                     switch (k) {
                         case o.AutocompleterResultTypes.USER: {
-                            let t = g.default.getGuild(U.default.getGuildId());
+                            let t = C.default.getGuild(U.default.getGuildId());
                             e.unshift((0, o.createHeaderResult)(null != t ? v.default.Messages.QUICKSWITCHER_QUERYMODE_USERS_IN_GUILD.format({
                                 name: t.name
                             }) : v.default.Messages.QUICKSWITCHER_QUERYMODE_USERS)), G = e;
@@ -816,7 +816,7 @@
             class V extends n.default.PersistedStore {
                 initialize(e) {
                     var t;
-                    this.waitFor(C.default, g.default, R.default), this.syncWith([_.default], () => !0), H = r.default.get(D) || !1, F = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []
+                    this.waitFor(g.default, C.default, R.default), this.syncWith([_.default], () => !0), H = r.Storage.get(D) || !1, F = null !== (t = null == e ? void 0 : e.channelHistory) && void 0 !== t ? t : []
                 }
                 getState() {
                     return {
@@ -893,7 +893,7 @@
                 },
                 QUICKSWITCHER_SWITCH_TO: function() {
                     if (H) return !1;
-                    H = !0, r.default.set(D, !0)
+                    H = !0, r.Storage.set(D, !0)
                 },
                 CHANNEL_SELECT: function(e) {
                     let {
@@ -981,7 +981,7 @@
                 y = null,
                 E = null;
 
-            function C(e) {
+            function g(e) {
                 let {
                     guildId: t,
                     channelId: s
@@ -995,7 +995,7 @@
                 }))), l
             }
 
-            function g() {
+            function C() {
                 var e;
                 let t = null === (e = a.default.frecencyWithoutFetchingLatest.guildAndChannelFrecency) || void 0 === e ? void 0 : e.guildAndChannels;
                 if (null == t) return !1;
@@ -1009,7 +1009,7 @@
             };
             class A extends u.default.PersistedStore {
                 initialize(e) {
-                    this.waitFor(c.default, d.default), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && p.ID_REGEX.test(e.key)), T = e), this.syncWith([a.default], g)
+                    this.waitFor(c.default, d.default), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && p.ID_REGEX.test(e.key)), T = e), this.syncWith([a.default], C)
                 }
                 getState() {
                     return T
@@ -1040,8 +1040,8 @@
             }
             A.displayName = "FrecencyStore", A.persistKey = "FrecencyStore";
             var m = new A(n.default, {
-                CHANNEL_SELECT: C,
-                VOICE_CHANNEL_SELECT: C,
+                CHANNEL_SELECT: g,
+                VOICE_CHANNEL_SELECT: g,
                 USER_SETTINGS_PROTO_UPDATE: function(e) {
                     let {
                         settings: {
@@ -1142,4 +1142,4 @@
         }
     }
 ]);
-//# sourceMappingURL=83257.49b66b6b236e1a8153f9.js.map
+//# sourceMappingURL=83257.6db61b5d05b6bddf8914.js.map
