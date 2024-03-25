@@ -1728,12 +1728,14 @@
             function B(e) {
                 let {
                     channelId: t,
-                    messageRecord: n
+                    messageRecord: n,
+                    reason: a
                 } = e;
                 null != n && s.default.dispatch({
                     type: "MESSAGE_SEND_FAILED",
                     channelId: t,
-                    messageId: n.id
+                    messageId: n.id,
+                    reason: null != a ? a : null
                 })
             }
 
@@ -2288,4 +2290,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7040.240b7cd594222d8995df.js.map
+//# sourceMappingURL=7040.732bbc6ca6e92ebcb1ca.js.map
