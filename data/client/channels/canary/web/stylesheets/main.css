@@ -70186,30 +70186,30 @@ html .invoiceCancelRow_c1bfe7 {
     background-image: linear-gradient(to bottom, hsl(var(--white-500-hsl)/.71)0%, var(--background-primary)85%)
 }
 
-.cardDescriptionTenureReward_bca63f {
+.cardDescriptionTenureReward_a3fc50 {
     justify-content: flex-end;
     background-image: linear-gradient(to bottom, var(--background-secondary-alt)20%, hsl(var(--primary-660-hsl)/.3)80%, hsl(var(--primary-660-hsl)/0)95%)
 }
 
-.descriptionCTATenureReward__55e19 {
+.descriptionCTATenureReward__47d60 {
     display: flex;
     align-items: flex-end;
     justify-content: center
 }
 
-.descriptionCTATenureReward__55e19>img {
+.descriptionCTATenureReward__47d60>img {
     margin-right: 4px
 }
 
-.cardDescription_d7433f {
+.cardDescription__31bc4 {
     background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-660-hsl)/.75)80%)
 }
 
-.theme-light .cardDescription_d7433f {
+.theme-light .cardDescription__31bc4 {
     background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-160-hsl)/.5)80%)
 }
 
-@keyframes glowEffect_a3ec8f {
+@keyframes glowEffect__23092 {
     0% {
         box-shadow: var(--elevation-medium)
     }
@@ -70223,13 +70223,13 @@ html .invoiceCancelRow_c1bfe7 {
     }
 }
 
-.glowingCardContainer__7d35d {
-    animation: glowEffect_a3ec8f 3s ease-out 1s 1 forwards;
+.glowingCardContainer__33792 {
+    animation: glowEffect__23092 3s ease-out 1s 1 forwards;
     border-radius: 4px
 }
 
-.glowingCardContainer__7d35d:hover:after,
-.glowingCardContainer__7d35d:hover:before {
+.glowingCardContainer__33792:hover:after,
+.glowingCardContainer__33792:hover:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -70241,14 +70241,14 @@ html .invoiceCancelRow_c1bfe7 {
     pointer-events: none
 }
 
-.glowingCardContainer__7d35d:hover:after {
+.glowingCardContainer__33792:hover:after {
     z-index: 29;
     border: 1px solid var(--premium-tier-2-purple-for-gradients);
     -webkit-mask: linear-gradient(20deg, #000, rgba(0, 0, 0, 0));
     mask: linear-gradient(20deg, #000, rgba(0, 0, 0, 0))
 }
 
-.glowingCardContainer__7d35d:hover:before {
+.glowingCardContainer__33792:hover:before {
     z-index: 29;
     border: 1px solid var(--premium-tier-2-purple-for-gradients-2)
 }
@@ -130773,4 +130773,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.5a5fa777a8013b28af73.css.map*/
+/*# sourceMappingURL=app.7fd49379f04fd5027d26.css.map*/
