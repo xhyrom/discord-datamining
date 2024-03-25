@@ -54141,31 +54141,36 @@
             "use strict";
             n.r(t), n.d(t, {
                 trackClickstream: function() {
-                    return l
+                    return a
                 },
                 drainClickstream: function() {
-                    return u
+                    return o
                 }
             }), n("222007"), n("424973");
             var i = n("599110"),
-                s = n("407708"),
-                r = n("403040"),
-                a = n("862947");
-            let o = new Map;
+                s = n("407708");
+            let r = new Map;
 
-            function l(e, t) {
-                var n;
-                !o.has(e) && o.set(e, []), null === (n = o.get(e)) || void 0 === n || n.push((0, a.default)(e, t))
+            function a(e, t) {
+                var i;
+                !r.has(e) && r.set(e, []);
+                let {
+                    default: s
+                } = n("862947");
+                null === (i = r.get(e)) || void 0 === i || i.push(s(e, t))
             }
 
-            function u() {
+            function o() {
                 let e = (0, s.clickstreamExperimentEnabled)();
                 if (!e) {
-                    o.clear();
+                    r.clear();
                     return
                 }
-                for (let [e, t] of o) i.default.track(e, (0, r.default)(e, t));
-                o.clear()
+                let {
+                    default: t
+                } = n("403040");
+                for (let [e, n] of r) i.default.track(e, t(e, n));
+                r.clear()
             }
         },
         407708: function(e, t, n) {
@@ -54215,7 +54220,8 @@
                 if (e === i.AnalyticEvents.CHANNEL_OPENED_CLICKSTREAM) return {
                     time_minus: t.map(e => n.getTime() - e.timestamp.getTime()),
                     channel_ids: t.map(e => e.channelId),
-                    channel_types: t.map(e => e.channelType)
+                    channel_types: t.map(e => e.channelType),
+                    rtc_states: t.map(e => e.rtcState)
                 };
                 throw Error("getClicksteamDrainEvent: Unknown event: ".concat(e))
             }
@@ -54224,23 +54230,25 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return r
+                    return a
                 }
             }), n("70102");
             var i = n("42203"),
-                s = n("49111");
+                s = n("945956"),
+                r = n("49111");
 
-            function r(e, t) {
-                if (e === s.AnalyticEvents.CHANNEL_OPENED_CLICKSTREAM) {
-                    var n, r;
+            function a(e, t) {
+                if (e === r.AnalyticEvents.CHANNEL_OPENED_CLICKSTREAM) {
+                    var n, a;
                     let e = t.channelId,
-                        a = null !== (r = null === (n = i.default.getChannel(e)) || void 0 === n ? void 0 : n.type) && void 0 !== r ? r : s.ChannelTypes.UNKNOWN,
-                        o = {
+                        o = null !== (a = null === (n = i.default.getChannel(e)) || void 0 === n ? void 0 : n.type) && void 0 !== a ? a : r.ChannelTypes.UNKNOWN,
+                        l = {
                             channelId: e,
-                            channelType: a,
+                            channelType: o,
+                            rtcState: s.default.getState(),
                             timestamp: new Date
                         };
-                    return o
+                    return l
                 }
                 throw Error("getClickstreamTrackEvent: Unknown event: ".concat(e))
             }
@@ -88219,8 +88227,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711392242202",
-                                    build_number: "278285"
+                                    built_at: "1711393958032",
+                                    build_number: "278299"
                                 }
                             },
                             retries: 1
@@ -115291,7 +115299,7 @@
                     } = e, s = o.default.getOrCreate(t);
                     if (null == s || !s.has(n)) return !1;
                     let r = s.get(n, !0);
-                    s = (null == r ? void 0 : r.isPoll()) === !0 ? s.remove(n) : s.update(n, e => ((e = e.set("state", P.MessageStates.SEND_FAILED)).isCommandType() && (e = (e = e.set("interactionError", null != i ? i : "")).set("flags", (0, m.addFlag)(e.flags, P.MessageFlags.EPHEMERAL))), e)), o.default.commit(s)
+                    s = (null == r ? void 0 : r.isPoll()) === !0 ? s.remove(n) : s.update(n, e => ((e = e.set("state", P.MessageStates.SEND_FAILED)).isCommandType() ? e = (e = e.set("interactionError", null != i ? i : "")).set("flags", (0, m.addFlag)(e.flags, P.MessageFlags.EPHEMERAL)) : null != i && (e = e.set("interactionError", null != i ? i : "")), e)), o.default.commit(s)
                 },
                 MESSAGE_SEND_FAILED_AUTOMOD: F,
                 MESSAGE_EDIT_FAILED_AUTOMOD: F,
@@ -125741,7 +125749,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "84c0e2e4c26f224d2aa6d5f28a84f2f057846e5d"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "51ffa1c64225e1cd5e60637dcfe05a5cfea641e2"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -135239,7 +135247,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "278285"
+                                build_number: "278299"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -153054,4 +153062,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.b3cac09048a13465e606.js.map
+//# sourceMappingURL=29062.dad5e304c43b7c424c3d.js.map
