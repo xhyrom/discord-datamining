@@ -54248,6 +54248,9 @@
         685665: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                AnalyticsLocationProvider: function() {
+                    return d
+                },
                 default: function() {
                     return _
                 }
@@ -54263,7 +54266,7 @@
             function d(e) {
                 let {
                     children: t,
-                    currentContext: n
+                    value: n
                 } = e;
                 return (0, i.jsx)(u.Provider, {
                     value: n,
@@ -54278,25 +54281,14 @@
             }
 
             function _() {
-                for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-                let [o, l] = s.useState(n), _ = s.useContext(u), f = s.useMemo(() => c(_, o), [o, _]), E = s.useMemo(() => c(_, o.slice(0, o.length - 1)), [o, _]);
-                s.useEffect(() => {
-                    !a(n, o) && l(n)
-                }, [n]);
-                let h = s.useCallback(e => {
-                    let {
-                        children: t
-                    } = e;
-                    return (0, i.jsx)(d, {
-                        currentContext: f,
-                        children: t
-                    })
-                }, [f]);
-                return {
-                    AnalyticsLocationProvider: h,
-                    analyticsLocations: f,
-                    sourceAnalyticsLocations: E,
-                    newestAnalyticsLocation: null !== (e = f[f.length - 1]) && void 0 !== e ? e : null
+                for (var e, t = arguments.length, n = Array(t), i = 0; i < t; i++) n[i] = arguments[i];
+                let [r, o] = s.useState(n), l = s.useContext(u), d = s.useMemo(() => c(l, r), [r, l]), _ = s.useMemo(() => c(l, r.slice(0, r.length - 1)), [r, l]);
+                return s.useEffect(() => {
+                    !a(n, r) && o(n)
+                }, [n]), {
+                    analyticsLocations: d,
+                    sourceAnalyticsLocations: _,
+                    newestAnalyticsLocation: null !== (e = d[d.length - 1]) && void 0 !== e ? e : null
                 }
             }
         },
@@ -88227,8 +88219,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711391721053",
-                                    build_number: "278282"
+                                    built_at: "1711392242202",
+                                    build_number: "278285"
                                 }
                             },
                             retries: 1
@@ -125749,7 +125741,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "27e014a34446df68c221d4d128bfbe93b126ad3e"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "84c0e2e4c26f224d2aa6d5f28a84f2f057846e5d"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -135247,7 +135239,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "278282"
+                                build_number: "278285"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -153062,4 +153054,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.4561083ca8d4ff9086d0.js.map
+//# sourceMappingURL=29062.b3cac09048a13465e606.js.map

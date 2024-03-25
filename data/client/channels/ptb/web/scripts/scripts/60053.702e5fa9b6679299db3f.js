@@ -40025,7 +40025,7 @@
                     } = e;
                     u(null != eL, "chat input type must be set");
                     let {
-                        AnalyticsLocationProvider: e8
+                        analyticsLocations: e8
                     } = (0, y.default)(E.default.CHANNEL_TEXT_AREA), e4 = function(e) {
                         let t = l.useRef(null);
                         if (null != e && "function" == typeof e) throw Error("Only Ref objects are supported");
@@ -40330,7 +40330,8 @@
                         tq = !!(null === (eu = eL.emojis) || void 0 === eu ? void 0 : eu.button) && tM <= 44;
                     return (0, i.jsx)(N.EventEmitterProvider, {
                         value: tE,
-                        children: (0, i.jsxs)(e8, {
+                        children: (0, i.jsxs)(y.AnalyticsLocationProvider, {
+                            value: e8,
                             children: [tY && td ? (0, i.jsx)(el.default, {
                                 editorRef: e9,
                                 options: eL.markdown,
@@ -42914,9 +42915,10 @@
                 } = e, N = (0, s.useStateFromStores)([f.default], () => m.default.canUseIncreasedMessageLength(f.default.getCurrentUser())), A = (0, d.default)(), O = null != _ ? _ : A, R = null !== (S = null != I ? I : _) && void 0 !== S ? S : A / 10, M = T.length, k = null != C.upsellLongMessages && (null != M ? M : 0) > x.MAX_MESSAGE_LENGTH && N, L = null != C.upsellLongMessages && !N, P = (null === (n = (0, c.usePremiumTrialOffer)()) || void 0 === n ? void 0 : null === (t = n.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === E.PremiumSubscriptionSKUs.TIER_2, b = O - M, j = b > R, U = b < 0 && P, D = 0 === b ? y.default.Messages.CHARACTER_COUNT_AT_LIMIT : b > 0 ? y.default.Messages.CHARACTER_COUNT_CLOSE_TO_LIMIT.format({
                     count: b
                 }) : y.default.Messages.CHARACTER_COUNT_OVER_LIMIT, {
-                    AnalyticsLocationProvider: w
+                    analyticsLocations: w
                 } = (0, u.default)(o.default.CHARACTER_COUNT), F = k && b >= 0 || !j || L && !j;
-                return F ? (0, i.jsx)(w, {
+                return F ? (0, i.jsx)(u.AnalyticsLocationProvider, {
+                    value: w,
                     children: (0, i.jsxs)("div", {
                         className: a(v, g.characterCount, {
                             [g.error]: b < 0
@@ -48787,7 +48789,7 @@
                     ...eF,
                     section: null != eH ? eH : q.AnalyticsSections.EMOJI_PICKER_POPOUT
                 }), [eF, eH]), {
-                    AnalyticsLocationProvider: eW
+                    analyticsLocations: eW
                 } = (0, y.default)(E.default.EMOJI_PICKER), {
                     diversitySurrogate: eY
                 } = (0, d.useStateFromStoresObject)([S.default], () => ({
@@ -49019,7 +49021,8 @@
                         })]
                     })
                 });
-                return (0, i.jsx)(eW, {
+                return (0, i.jsx)(y.AnalyticsLocationProvider, {
+                    value: eW,
                     children: tr
                 })
             }))
@@ -53431,11 +53434,10 @@
                     stickerIconVisible: c = !1,
                     submitButtonVisible: f = !1
                 } = e, T = s.useContext(x.default), [_, A] = s.useState(null), [b, j] = s.useState(!1), [U, G] = s.useState(null), H = (0, E.useExpressionPickerStore)(e => null != e.activeView), B = s.useRef(null), [V, K] = s.useState(""), [W, Y] = s.useState(""), [z, Z] = s.useState(!1), [J, q] = s.useState(!1), X = (0, R.useStickerSuggestionResults)(V, b, i), {
-                    analyticsLocations: Q,
-                    AnalyticsLocationProvider: $
+                    analyticsLocations: Q
                 } = (0, h.default)(m.default.EXPRESSION_SUGGESTIONS), {
-                    handleTextChange: ee,
-                    debouncedSetTextInputValue: et
+                    handleTextChange: $,
+                    debouncedSetTextInputValue: ee
                 } = (0, R.useTextChangeHandler)({
                     setTextInputValue: K,
                     setHasDismissed: j,
@@ -53453,23 +53455,23 @@
                                 A(null), null === (i = n.current) || void 0 === i || i.focus()
                             }
                         };
-                    return T.addListener("text-changed", ee), T.addListener("autocomplete-visibility-change", e), T.addListener("selection-changed", t), () => {
-                        T.removeListener("text-changed", ee), T.removeListener("autocomplete-visibility-change", e), T.removeListener("selection-changed", t)
+                    return T.addListener("text-changed", $), T.addListener("autocomplete-visibility-change", e), T.addListener("selection-changed", t), () => {
+                        T.removeListener("text-changed", $), T.removeListener("autocomplete-visibility-change", e), T.removeListener("selection-changed", t)
                     }
-                }, [ee, n, T]), s.useLayoutEffect(() => {
+                }, [$, n, T]), s.useLayoutEffect(() => {
                     null == _ && G(null)
                 }, [_]);
-                let [en, ei] = s.useState(!1);
+                let [et, en] = s.useState(!1);
                 s.useLayoutEffect(() => {
                     requestAnimationFrame(() => {
                         let e = B.current;
-                        ei(l || (null == e ? void 0 : e.contains(null == e ? void 0 : e.ownerDocument.activeElement)) === !0)
+                        en(l || (null == e ? void 0 : e.contains(null == e ? void 0 : e.ownerDocument.activeElement)) === !0)
                     })
                 }, [l]);
-                let el = X.length > 0,
-                    ea = en && !H && !z && !b && !J && el,
+                let ei = X.length > 0,
+                    el = et && !H && !z && !b && !J && ei,
                     {
-                        stickersNavigator: es
+                        stickersNavigator: ea
                     } = function(e) {
                         let {
                             editorRef: t,
@@ -53518,20 +53520,20 @@
                         }
                     }({
                         editorRef: n,
-                        hasStickerResults: el,
-                        shouldRenderSuggestions: ea,
+                        hasStickerResults: ei,
+                        shouldRenderSuggestions: el,
                         focusedSuggestionType: _,
                         setFocusedSuggestionType: A,
                         setHasDismissed: j,
                         setFocusedStickerListItem: G,
                         setTextInputValue: K
                     }),
-                    er = (e, t) => {
-                        if (ea) {
+                    es = (e, t) => {
+                        if (el) {
                             if (O.default.track(k.AnalyticEvents.AUTO_SUGGEST_EXPRESSION_SELECTED, {
                                     sticker_id: e.id,
                                     suggestion_trigger: W
-                                }), t === y.StickerSendability.SENDABLE) j(!0), r(e, S.StickerSelectLocation.EXPRESSION_SUGGESTIONS), et.cancel(), K("");
+                                }), t === y.StickerSendability.SENDABLE) j(!0), r(e, S.StickerSelectLocation.EXPRESSION_SUGGESTIONS), ee.cancel(), K("");
                             else if ((0, C.isStandardSticker)(e)) {
                                 let t = g.default.getStickerPack(e.pack_id);
                                 null != t && (0, I.default)({
@@ -53542,19 +53544,20 @@
                             T.emit("sticker-suggestions-hidden")
                         }
                     },
-                    eo = s.useRef([]),
-                    eu = s.useRef(!1);
+                    er = s.useRef([]),
+                    eo = s.useRef(!1);
                 s.useEffect(() => {
-                    ea && (eo.current = X), ea !== eu.current && (T.emit(ea ? "sticker-suggestions-shown" : "sticker-suggestions-hidden"), ea && ((0, M.throttledTrackExpressionSuggestionDisplayed)(V), Y(V))), eu.current = ea
-                }, [T, ea, X, V]);
-                let ed = !ea,
-                    ec = ea ? X : eo.current;
-                return (0, a.jsx)($, {
+                    el && (er.current = X), el !== eo.current && (T.emit(el ? "sticker-suggestions-shown" : "sticker-suggestions-hidden"), el && ((0, M.throttledTrackExpressionSuggestionDisplayed)(V), Y(V))), eo.current = el
+                }, [T, el, X, V]);
+                let eu = !el,
+                    ed = el ? X : er.current;
+                return (0, a.jsx)(h.AnalyticsLocationProvider, {
+                    value: Q,
                     children: (0, a.jsxs)(p.Clickable, {
-                        tabIndex: ed ? -1 : 0,
-                        "aria-hidden": ed,
+                        tabIndex: eu ? -1 : 0,
+                        "aria-hidden": eu,
                         className: o(P.container, {
-                            [P.hidden]: ed,
+                            [P.hidden]: eu,
                             [P.submitButtonOffset]: f,
                             [P.stickerIconOffset]: c
                         }),
@@ -53568,7 +53571,7 @@
                         },
                         children: [(0, a.jsxs)(a.Fragment, {
                             children: [(0, a.jsx)(u.ListNavigatorProvider, {
-                                navigator: es,
+                                navigator: ea,
                                 children: (0, a.jsx)(u.ListNavigatorContainer, {
                                     children: e => {
                                         let {
@@ -53584,22 +53587,22 @@
                                             onMouseLeave: () => {
                                                 null == _ && G(null)
                                             },
-                                            tabIndex: ed ? -1 : n,
+                                            tabIndex: eu ? -1 : n,
                                             ...i,
-                                            children: ec.map((e, t) => {
+                                            children: ed.map((e, t) => {
                                                 let {
                                                     sticker: n,
                                                     sendability: i
                                                 } = e;
                                                 return (0, a.jsx)(F, {
                                                     isFocused: U === "".concat(t),
-                                                    isHidden: ed,
+                                                    isHidden: eu,
                                                     sendability: i,
                                                     listIndex: t,
                                                     onMouseOver: () => {
-                                                        es.setFocus("".concat(t)), G("".concat(t))
+                                                        ea.setFocus("".concat(t)), G("".concat(t))
                                                     },
-                                                    onSelectSticker: er,
+                                                    onSelectSticker: es,
                                                     sticker: n
                                                 }, n.id)
                                             })
@@ -57816,7 +57819,7 @@
                     children: L,
                     inlinePreview: P = !1
                 } = e, {
-                    AnalyticsLocationProvider: b
+                    analyticsLocations: b
                 } = (0, h.default)(m.default.ROLE_MENTION), j = (0, u.useStateFromStores)([p.default], () => p.default.roleStyle), U = null != t && 0 !== t && !P, D = U && "dot" === j, w = e => (0, i.jsxs)(v.default, {
                     className: a(R.roleMention),
                     color: "username" === j && U ? t : null,
@@ -57834,9 +57837,11 @@
                 }, {
                     autoTrackExposure: !1
                 });
-                return !F || P || null == s || null == k || null == l && "@everyone" !== x ? (0, i.jsx)(b, {
+                return !F || P || null == s || null == k || null == l && "@everyone" !== x ? (0, i.jsx)(h.AnalyticsLocationProvider, {
+                    value: b,
                     children: w()
-                }) : (0, i.jsx)(b, {
+                }) : (0, i.jsx)(h.AnalyticsLocationProvider, {
+                    value: b,
                     children: (0, i.jsx)(d.Popout, {
                         preload: async () => {
                             null != l && await (0, E.requestMembersForRole)(k, l)
@@ -57966,7 +57971,7 @@
                     channelId: I,
                     inlinePreview: v = !1
                 } = e, {
-                    AnalyticsLocationProvider: N
+                    analyticsLocations: N
                 } = (0, c.default)(d.default.USER_MENTION), A = (0, r.useStateFromStores)([g.default], () => g.default.getUser(l)), O = (0, r.useStateFromStores)([h.default], () => h.default.getChannel(I)), R = null != O ? O.getGuildId() : null, M = v || null == A || null == R || null == I ? void 0 : e => {
                     null != O && (0, u.openContextMenuLazy)(e, async () => {
                         let {
@@ -57986,9 +57991,11 @@
                     ...e,
                     children: "@".concat(null != L ? L : k)
                 });
-                return v ? (0, i.jsx)(N, {
+                return v ? (0, i.jsx)(c.AnalyticsLocationProvider, {
+                    value: N,
                     children: U()
-                }) : (0, i.jsx)(N, {
+                }) : (0, i.jsx)(c.AnalyticsLocationProvider, {
+                    value: N,
                     children: (0, i.jsx)(o.Popout, {
                         preload: null == A ? void 0 : () => (0, p.default)(A.id, A.getAvatarURL(R, 80), {
                             guildId: null != R ? R : void 0,
@@ -61139,7 +61146,7 @@
                     renderHeader: R,
                     defaultSoundsOnly: M
                 } = e, k = (0, o.useStateFromStores)([E.default], () => E.default.isFetchingSounds() || E.default.isFetchingDefaultSounds()), L = (0, o.useStateFromStores)([h.default], () => h.default.getMediaSessionId()), {
-                    AnalyticsLocationProvider: P
+                    analyticsLocations: P
                 } = (0, c.default)(d.default.SOUNDBOARD_POPOUT);
                 return (0, f.default)({
                     type: r.ImpressionTypes.POPOUT,
@@ -61151,7 +61158,8 @@
                     }
                 }), l.useEffect(() => {
                     x.maybeFetchSoundboardSounds(), m.FrecencyUserSettingsActionCreators.loadIfNecessary(), (0, p.setSearchQuery)("")
-                }, []), (0, i.jsx)(P, {
+                }, []), (0, i.jsx)(c.AnalyticsLocationProvider, {
+                    value: P,
                     children: (0, i.jsx)("div", {
                         className: s(g.picker, {
                             [g.fetching]: k,
@@ -61871,7 +61879,7 @@
                     } = e, {
                         location: z
                     } = (0, c.useAnalyticsContext)(), {
-                        AnalyticsLocationProvider: Z
+                        analyticsLocations: Z
                     } = (0, p.default)(f.default.STICKER_PICKER);
                     (0, y.useMaybeFetchPremiumLikelihood)(g.default);
                     let $ = (null === (a = (0, S.usePremiumTrialOffer)()) || void 0 === a ? void 0 : a.subscription_trial) != null,
@@ -61994,7 +62002,8 @@
                             location_section: F.AnalyticsSections.STICKER_PICKER_UPSELL
                         }), (0, E.navigateToPremiumMarketingPage)()
                     }, [Y]);
-                    return (0, i.jsxs)(Z, {
+                    return (0, i.jsxs)(p.AnalyticsLocationProvider, {
+                        value: Z,
                         children: [!($ && eo) && (0, i.jsx)("div", {
                             className: G.header,
                             children: (0, i.jsx)(j.default, {
@@ -62879,7 +62888,7 @@
                         stickersGrid: I,
                         channel: v
                     } = e, N = l.useRef(!1), A = l.useRef(null), [O, M] = m.StickerPickerStore.useStore(e => [e.activeCategoryIndex, e.inspectedExpressionPosition], a.default), {
-                        AnalyticsLocationProvider: k
+                        analyticsLocations: k
                     } = (0, f.default)(c.default.STICKER_PICKER), L = (0, h.useExpressionPickerStore)(e => e.searchQuery), P = (0, s.useStateFromStores)([R.default], () => R.default.getPremiumPacks()), j = l.useMemo(() => new Set(P.map(e => e.id)), [P]), {
                         renderRow: U,
                         renderSection: D,
@@ -62950,7 +62959,8 @@
                                 totalHeight: -1
                             }
                         }
-                    }), []), (0, i.jsx)(k, {
+                    }), []), (0, i.jsx)(f.AnalyticsLocationProvider, {
+                        value: k,
                         children: (0, i.jsxs)("div", {
                             className: G.wrapper,
                             children: [null != o && 0 === o.sendable.length && 0 === o.sendableWithPremium.length ? (0, i.jsx)(u.default, {
@@ -64536,9 +64546,8 @@
                         roleId: f,
                         newAnalyticsLocations: p = r
                     } = e, m = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1], {
-                        AnalyticsLocationProvider: h,
-                        analyticsLocations: x
-                    } = (0, a.default)(p), E = l.useMemo(() => ({
+                        analyticsLocations: h
+                    } = (0, a.default)(p), x = l.useMemo(() => ({
                         layout: t,
                         userId: null != n ? n : null,
                         guildId: null != u ? u : null,
@@ -64549,7 +64558,7 @@
                     l.useEffect(() => {
                         m && (0, s.trackUserProfileAction)({
                             action: "VIEW",
-                            analyticsLocations: x,
+                            analyticsLocations: h,
                             layout: t,
                             userId: n,
                             guildId: u,
@@ -64558,7 +64567,7 @@
                             roleId: f
                         })
                     }, [m]);
-                    let y = l.useCallback(e => {
+                    let E = l.useCallback(e => {
                             (0, s.trackUserProfileAction)({
                                 layout: t,
                                 userId: n,
@@ -64566,25 +64575,26 @@
                                 channelId: d,
                                 messageId: c,
                                 roleId: f,
-                                analyticsLocations: x,
+                                analyticsLocations: h,
                                 ...e
                             })
-                        }, [t, n, u, d, c, f, x]),
-                        g = l.useCallback(e => {
+                        }, [t, n, u, d, c, f, h]),
+                        y = l.useCallback(e => {
                             let {
                                 children: t
                             } = e;
                             return (0, i.jsx)(o.Provider, {
-                                value: E,
-                                children: (0, i.jsx)(h, {
+                                value: x,
+                                children: (0, i.jsx)(a.AnalyticsLocationProvider, {
+                                    value: h,
                                     children: t
                                 })
                             })
-                        }, [E, h]);
+                        }, [x, h]);
                     return {
-                        UserProfileAnalyticsProvider: g,
-                        analyticsLocations: x,
-                        trackUserProfileAction: y
+                        UserProfileAnalyticsProvider: y,
+                        analyticsLocations: h,
+                        trackUserProfileAction: E
                     }
                 },
                 d = function() {
@@ -67224,10 +67234,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 DEFAULT_COLLECTIBLES_UPSELL_HEIGHT: function() {
-                    return R
+                    return M
                 },
                 default: function() {
-                    return L
+                    return P
                 }
             }), n("222007"), n("794252");
             var i = n("37983"),
@@ -67247,39 +67257,40 @@
                 E = n("853987"),
                 y = n("491232"),
                 g = n("845962"),
-                S = n("697218"),
-                C = n("945330"),
-                T = n("719923"),
-                _ = n("627601"),
-                I = n("994428"),
-                v = n("782340"),
-                N = n("154477"),
-                A = n("604689");
+                S = n("501768"),
+                C = n("697218"),
+                T = n("945330"),
+                _ = n("719923"),
+                I = n("627601"),
+                v = n("994428"),
+                N = n("782340"),
+                A = n("154477"),
+                O = n("604689");
 
-            function O(e) {
+            function R(e) {
                 let {
                     onClick: t
                 } = e;
                 return (0, i.jsx)(u.Clickable, {
-                    className: N.closeButton,
+                    className: A.closeButton,
                     onClick: t,
-                    "aria-label": v.default.Messages.DISMISS,
-                    children: (0, i.jsx)(C.default, {
-                        className: N.closeIcon,
+                    "aria-label": N.default.Messages.DISMISS,
+                    children: (0, i.jsx)(T.default, {
+                        className: A.closeIcon,
                         width: 18,
                         height: 18
                     })
                 })
             }
-            let R = 76,
-                M = e => (0, i.jsx)(u.Text, {
+            let M = 76,
+                k = e => (0, i.jsx)(u.Text, {
                     variant: "text-sm/normal",
                     color: "text-normal",
                     tag: "span",
-                    className: N.ctaLink,
+                    className: A.ctaLink,
                     children: e
                 }),
-                k = e => {
+                L = e => {
                     let {
                         user: t,
                         onClick: n
@@ -67290,102 +67301,101 @@
                         size: (0, m.getDecorationSizeForAvatarSize)(u.AvatarSizes.SIZE_48)
                     });
                     return (0, i.jsx)(u.Clickable, {
-                        className: N.avatarButton,
+                        className: A.avatarButton,
                         onClick: n,
-                        "aria-label": v.default.Messages.COLLECTIBLES_CTA_GO_TO_SHOP,
+                        "aria-label": N.default.Messages.COLLECTIBLES_CTA_GO_TO_SHOP,
                         children: (0, i.jsx)(u.Avatar, {
-                            src: A,
+                            src: O,
                             avatarDecoration: l,
                             size: u.AvatarSizes.SIZE_48,
                             "aria-hidden": !0
                         })
                     })
                 };
-            var L = e => {
+            var P = e => {
                 var t;
                 let {
                     user: n,
                     displayProfile: a,
                     onClose: m,
                     onDismiss: h,
-                    isInSidebar: C = !1,
-                    canShowAvatarDecorationUpsell: A = !1,
-                    canShowProfileEffectUpsell: L = !1,
-                    upsellSource: P
+                    isInSidebar: T = !1,
+                    canShowAvatarDecorationUpsell: O = !1,
+                    canShowProfileEffectUpsell: P = !1,
+                    upsellSource: b
                 } = e, {
-                    analyticsLocations: b
-                } = (0, p.default)(f.default.COLLECTIBLES_USER_POPOUT_UPSELL), j = (0, o.useStateFromStores)([c.default], () => c.default.useReducedMotion), {
-                    ref: U,
-                    height: D
-                } = (0, d.default)(), w = l.useMemo(() => ({
-                    top: "-".concat((null != D ? D : R) + 6, "px")
-                }), [D]), F = (0, o.useStateFromStores)([S.default], () => S.default.getCurrentUser()), G = T.default.canUseCollectibles(F), {
-                    setUpsellSource: H,
-                    reset: B
-                } = (0, _.useUserPopoutCollectiblesUpsellStore)();
-                l.useEffect(() => (H(P), () => {
-                    B()
-                }), [H, P, B]);
-                let V = (0, o.useStateFromStores)([g.default], () => g.default.getProfileEffectById(null == a ? void 0 : a.profileEffectId)),
-                    [K, W] = (0, o.useStateFromStoresArray)([E.default], () => {
-                        var e;
-                        return [(0, y.isPremiumCollectiblesProduct)(E.default.getProduct(null === (e = n.avatarDecoration) || void 0 === e ? void 0 : e.skuId)), (0, y.isPremiumCollectiblesProduct)(E.default.getProduct(null == V ? void 0 : V.skuId))]
-                    }),
-                    Y = l.useCallback(() => {
-                        var e, t, i, l;
-                        null == h || h(I.ContentDismissActionType.PRIMARY), null == m || m(), (0, x.openCollectiblesShop)({
-                            analyticsLocations: b,
-                            analyticsSource: f.default.COLLECTIBLES_USER_POPOUT_UPSELL,
-                            initialProductSkuId: K ? null !== (i = null == V ? void 0 : V.skuId) && void 0 !== i ? i : null === (e = n.avatarDecoration) || void 0 === e ? void 0 : e.skuId : null !== (l = null === (t = n.avatarDecoration) || void 0 === t ? void 0 : t.skuId) && void 0 !== l ? l : null == V ? void 0 : V.skuId
-                        })
-                    }, [h, m, b, null == V ? void 0 : V.skuId, null === (t = n.avatarDecoration) || void 0 === t ? void 0 : t.skuId, K]),
-                    z = l.useCallback(() => {
-                        null == h || h(I.ContentDismissActionType.DISMISS)
-                    }, [h]);
-                if (!A && !L) return null;
-                let Z = (0, r.match)([A, L]).with([!0, !0], () => K && W && G ? v.default.Messages.COMBINED_STARTER_COLLECTIBLES_SOCIAL_UPSELL_NITRO.format({
-                    openShop: M
-                }) : K && W ? v.default.Messages.COMBINED_STARTER_COLLECTIBLES_SOCIAL_UPSELL_NON_NITRO.format({
-                    openShop: M
-                }) : v.default.Messages.COMBINED_COLLECTIBLES_SOCIAL_UPSELL.format({
-                    openShop: M
-                })).with([!0, !1], () => K && G ? v.default.Messages.STARTER_AVATAR_DECORATIONS_SOCIAL_UPSELL_NITRO.format({
-                    openShop: M
-                }) : v.default.Messages.AVATAR_DECORATIONS_SOCIAL_UPSELL.format({
-                    openShop: M
-                })).with([!1, !0], () => W && G ? v.default.Messages.STARTER_PROFILE_EFFECTS_SOCIAL_UPSELL_NITRO.format({
-                    openShop: M
-                }) : (W && v.default.Messages.STARTER_PROFILE_EFFECTS_SOCIAL_UPSELL_NON_NITRO.format({
-                    openShop: M
-                }), v.default.Messages.PROFILE_EFFECTS_SOCIAL_UPSELL.format({
-                    openShop: M
+                    analyticsLocations: j
+                } = (0, p.default)(f.default.COLLECTIBLES_USER_POPOUT_UPSELL), U = (0, o.useStateFromStores)([c.default], () => c.default.useReducedMotion), {
+                    ref: D,
+                    height: w
+                } = (0, d.default)(), F = l.useMemo(() => ({
+                    top: "-".concat((null != w ? w : M) + 6, "px")
+                }), [w]), G = (0, o.useStateFromStores)([C.default], () => C.default.getCurrentUser()), H = _.default.canUseCollectibles(G), {
+                    setUpsellSource: B,
+                    reset: V
+                } = (0, I.useUserPopoutCollectiblesUpsellStore)();
+                l.useEffect(() => (B(b), () => {
+                    V()
+                }), [B, b, V]);
+                let K = (0, o.useStateFromStores)([g.default], () => g.default.getProfileEffectById(null == a ? void 0 : a.profileEffectId));
+                (0, S.default)(null == K);
+                let [W, Y] = (0, o.useStateFromStoresArray)([E.default], () => {
+                    var e;
+                    return [(0, y.isPremiumCollectiblesProduct)(E.default.getProduct(null === (e = n.avatarDecoration) || void 0 === e ? void 0 : e.skuId)), (0, y.isPremiumCollectiblesProduct)(E.default.getProduct(null == K ? void 0 : K.skuId))]
+                }), z = l.useCallback(() => {
+                    var e, t, i, l;
+                    null == h || h(v.ContentDismissActionType.PRIMARY), null == m || m(), (0, x.openCollectiblesShop)({
+                        analyticsLocations: j,
+                        analyticsSource: f.default.COLLECTIBLES_USER_POPOUT_UPSELL,
+                        initialProductSkuId: W ? null !== (i = null == K ? void 0 : K.skuId) && void 0 !== i ? i : null === (e = n.avatarDecoration) || void 0 === e ? void 0 : e.skuId : null !== (l = null === (t = n.avatarDecoration) || void 0 === t ? void 0 : t.skuId) && void 0 !== l ? l : null == K ? void 0 : K.skuId
+                    })
+                }, [h, m, j, null == K ? void 0 : K.skuId, null === (t = n.avatarDecoration) || void 0 === t ? void 0 : t.skuId, W]), Z = l.useCallback(() => {
+                    null == h || h(v.ContentDismissActionType.DISMISS)
+                }, [h]);
+                if (!O && !P) return null;
+                let J = (0, r.match)([O, P]).with([!0, !0], () => W && Y && H ? N.default.Messages.COMBINED_STARTER_COLLECTIBLES_SOCIAL_UPSELL_NITRO.format({
+                    openShop: k
+                }) : W && Y ? N.default.Messages.COMBINED_STARTER_COLLECTIBLES_SOCIAL_UPSELL_NON_NITRO.format({
+                    openShop: k
+                }) : N.default.Messages.COMBINED_COLLECTIBLES_SOCIAL_UPSELL.format({
+                    openShop: k
+                })).with([!0, !1], () => W && H ? N.default.Messages.STARTER_AVATAR_DECORATIONS_SOCIAL_UPSELL_NITRO.format({
+                    openShop: k
+                }) : N.default.Messages.AVATAR_DECORATIONS_SOCIAL_UPSELL.format({
+                    openShop: k
+                })).with([!1, !0], () => Y && H ? N.default.Messages.STARTER_PROFILE_EFFECTS_SOCIAL_UPSELL_NITRO.format({
+                    openShop: k
+                }) : (Y && N.default.Messages.STARTER_PROFILE_EFFECTS_SOCIAL_UPSELL_NON_NITRO.format({
+                    openShop: k
+                }), N.default.Messages.PROFILE_EFFECTS_SOCIAL_UPSELL.format({
+                    openShop: k
                 }))).otherwise(() => null);
                 return (0, i.jsx)("div", {
-                    style: w,
-                    className: s(N.containerWrapper, {
-                        [N.animation]: !j,
-                        [N.inSidebar]: C
+                    style: F,
+                    className: s(A.containerWrapper, {
+                        [A.animation]: !U,
+                        [A.inSidebar]: T
                     }),
-                    ref: U,
+                    ref: D,
                     children: (0, i.jsxs)("div", {
-                        className: N.container,
-                        children: [A && (0, i.jsx)(k, {
+                        className: A.container,
+                        children: [O && (0, i.jsx)(L, {
                             user: n,
-                            onClick: Y
+                            onClick: z
                         }), (0, i.jsx)(u.Clickable, {
-                            className: A ? N.contentWithAvatar : N.content,
-                            onClick: Y,
-                            "aria-label": v.default.Messages.COLLECTIBLES_CTA_GO_TO_SHOP,
+                            className: O ? A.contentWithAvatar : A.content,
+                            onClick: z,
+                            "aria-label": N.default.Messages.COLLECTIBLES_CTA_GO_TO_SHOP,
                             children: (0, i.jsx)(u.Text, {
                                 variant: "text-sm/normal",
                                 color: "text-normal",
                                 tag: "span",
-                                children: Z
+                                children: J
                             })
                         }), (0, i.jsx)("div", {
-                            className: N.buttons,
-                            children: (0, i.jsx)(O, {
-                                onClick: z
+                            className: A.buttons,
+                            children: (0, i.jsx)(R, {
+                                onClick: Z
                             })
                         })]
                     })
@@ -81791,4 +81801,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.ac2bced496767a2f6c34.js.map
+//# sourceMappingURL=60053.702e5fa9b6679299db3f.js.map
