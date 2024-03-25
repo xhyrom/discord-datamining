@@ -4489,6 +4489,7 @@
   "TRANSFER_OWNERSHIP_FAILURE_MODAL_TITLE": "\"Server ownership transfer failed\"",
   "SERVER_SUBSCRIPTION_OWNERSHIP_TRANSFER_FAILURE_MODAL_BODY": "\"It looks like the new owner is ineligible for Server Monetization. Head to our [Support Article]({server_subscription_owner_transfer_article}) to learn more about why.\"",
   "TRANSFER_OWNERSHIP_SERVER_SUBSCRIPTION_GUILD": "\"You are transferring a server with Server Monetization enabled. Please also read our [Support Article]({server_subscription_owner_transfer_article}).\"",
+  "TRANSFER_OWNERSHIP_SUCCESS": "\"Transfer successful!\"",
   "USER_PROFILE_MODAL": "\"User Profile Modal\"",
   "PROFILE": "\"Profile\"",
   "USER_INFO": "\"User Info\"",
