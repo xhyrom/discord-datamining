@@ -2087,7 +2087,8 @@
                         boxArt: null != e.box_art ? (0, u.transformStoreAssetFromServer)(e.box_art) : null,
                         heroBackground: null != e.hero_background ? (0, u.transformStoreAssetFromServer)(e.hero_background) : null,
                         heroVideo: null != e.hero_video ? (0, u.transformStoreAssetFromServer)(e.hero_video) : null,
-                        entitlementBranchId: e.entitlement_branch_id
+                        entitlementBranchId: e.entitlement_branch_id,
+                        benefits: e.benefits
                     })
                 }
                 isSlimDirectoryVersion() {
@@ -3022,4 +3023,4 @@
         }
     }
 ]);
-//# sourceMappingURL=23777.a30370431abf716149dd.js.map
+//# sourceMappingURL=23777.b16e760e9dab25b95bde.js.map
