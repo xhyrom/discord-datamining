@@ -25048,8 +25048,6 @@
             e.exports = {
                 banner: "banner__1b5aa",
                 buttonIcon: "buttonIcon__3ae1d",
-                buttonIconLarge: "buttonIconLarge__6c2fd buttonIcon__3ae1d",
-                buttonIconSmall: "buttonIconSmall__72e00 buttonIcon__3ae1d",
                 footer: "footer__86d8f",
                 header: "header_d2e037",
                 headerBackground: "headerBackground__8a4ac",
@@ -25057,6 +25055,7 @@
                 headerCTA: "headerCTA__9fce3",
                 headerContainer: "headerContainer__122e4",
                 headerEasterEgg: "headerEasterEgg_d26151",
+                infoIcon: "infoIcon__388fc",
                 inline: "inline__3a4e8",
                 innerButton: "innerButton__2a740",
                 inventoryContainer: "inventoryContainer_f4883b",

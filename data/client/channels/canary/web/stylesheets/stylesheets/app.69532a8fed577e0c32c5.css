@@ -120484,16 +120484,6 @@ html .invoiceCancelRow_a8669b {
     margin-right: 8px
 }
 
-.buttonIconLarge__6c2fd {
-    width: 18px;
-    height: 18px
-}
-
-.buttonIconSmall__72e00 {
-    width: 14px;
-    height: 14px
-}
-
 .inventoryHeader_de1495 {
     margin: 20px 0 8px 12px;
     display: flex;
@@ -120542,19 +120532,19 @@ html .invoiceCancelRow_a8669b {
 
 .banner__1b5aa {
     background: linear-gradient(90deg, var(--guild-boosting-blue-for-gradients), var(--guild-boosting-purple-for-gradients))no-repeat;
-    padding: 8px;
+    padding: 20px;
     border-radius: var(--radius-sm);
     box-shadow: var(--shadow-low);
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 8px;
-    margin-bottom: 20px
+    margin-top: 20px
 }
 
-.banner__1b5aa .headerButton_fe8970 {
-    font-size: small;
-    padding: 2px 8px
+.infoIcon__388fc {
+    width: 18px;
+    height: 18px
 }
 
 .innerButton__2a740 {
@@ -130773,4 +130763,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.7fd49379f04fd5027d26.css.map*/
+/*# sourceMappingURL=app.69532a8fed577e0c32c5.css.map*/
