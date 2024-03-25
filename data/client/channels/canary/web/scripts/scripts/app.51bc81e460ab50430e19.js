@@ -5901,7 +5901,6 @@
             "use strict";
             e.exports = {
                 backButton: "backButton_c0ce06",
-                clanLabel: "clanLabel__35b0d",
                 closeButton: "closeButton__7bd3d",
                 createGuild: "createGuild_eb084b",
                 creationIntentCheckbox: "creationIntentCheckbox__24f3d",
