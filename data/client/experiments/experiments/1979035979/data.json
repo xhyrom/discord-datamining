@@ -27,8 +27,7 @@
       "entryPointEnabled",
       "activitiesInTextEnabled",
       "desktopThrobberEnabled",
-      "showInOmniButtonMenu",
-      "showChatInputButton"
+      "showInOmniButtonMenu"
     ]
   },
   "rollout": {

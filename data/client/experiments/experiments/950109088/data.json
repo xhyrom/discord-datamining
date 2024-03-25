@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-08_activities_in_text",
-    "label": "Activities in Text User",
+    "id": "2024-03_quests_members_list_entrypoint",
+    "label": "Quests Members List Entrypoint",
     "description": [
       "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable Activities in Text, DM, and GDM channels"
+      "Treatment 0: Control",
+      "Treatment 1: Quests Members List Entrypoint enabled"
     ],
-    "hash": 1295440499,
+    "hash": 950109088,
     "buckets": [
       -1,
       0,
