@@ -51813,7 +51813,7 @@
                     let n = t.uri,
                         i = t.file.name,
                         s = t.file.type;
-                    if (this.filename = i, null == i || null == n || null == s) throw I.error("Insufficient file data: ".concat({
+                    if ((0, S.isResolvedUpload)(t.file) && (this.uploadAnalytics.imageCompressionQuality = t.file.imageCompressionQuality, this.uploadAnalytics.videoCompressionQuality = t.file.videoCompressionQuality, this.uploadAnalytics.convertedMimeType = t.file.type), this.filename = i, null == i || null == n || null == s) throw I.error("Insufficient file data: ".concat({
                         filename: i,
                         uri: n,
                         mimeType: s
@@ -51881,10 +51881,10 @@
                     })
                 }
                 trackUploadFinished(e) {
-                    var t, n;
-                    let i = null != this.startTime ? performance.now() - this.startTime : -1;
+                    var t, n, i, s, r;
+                    let a = null != this.startTime ? performance.now() - this.startTime : -1;
                     E.default.track(v.AnalyticEvents.ATTACHMENT_UPLOAD_FINISHED, {
-                        duration_ms: i,
+                        duration_ms: a,
                         file_size: this.currentSize,
                         pre_compression_file_size: this.preCompressionSize,
                         final_state: e,
@@ -51898,6 +51898,11 @@
                         compress_time_ms: this.uploadAnalytics.timing.compressTimeMs,
                         get_upload_url_time_ms: this.uploadAnalytics.timing.getUploadUrlTimeMs,
                         upload_time_ms: this.uploadAnalytics.timing.uploadTimeMs,
+                        converted_mime_type: null !== (i = this.uploadAnalytics.convertedMimeType) && void 0 !== i ? i : "unknown",
+                        image_compression_quality: null !== (s = this.uploadAnalytics.imageCompressionQuality) && void 0 !== s ? s : 0,
+                        video_compression_quality: null !== (r = this.uploadAnalytics.videoCompressionQuality) && void 0 !== r ? r : "unknown",
+                        was_converted: this.mimeType !== this.uploadAnalytics.convertedMimeType,
+                        was_compressed: this.currentSize < this.preCompressionSize,
                         connection_type: f.default.getType(),
                         effective_connection_speed: f.default.getEffectiveConnectionSpeed(),
                         service_provider: f.default.getServiceProvider()
@@ -51915,6 +51920,9 @@
                 UploadPlatform: function() {
                     return r
                 },
+                isResolvedUpload: function() {
+                    return E
+                },
                 default: function() {
                     return o
                 }
@@ -51925,7 +51933,10 @@
                 c = n("748820"),
                 _ = n("254490"),
                 f = n("980134");
-            (i = r || (r = {}))[i.REACT_NATIVE = 0] = "REACT_NATIVE", i[i.WEB = 1] = "WEB", (s = a || (a = {}))[s.FILE_ATTACHMENT = 0] = "FILE_ATTACHMENT", s[s.IMAGE_PICKER = 1] = "IMAGE_PICKER", o = class extends l.EventEmitter {
+
+            function E(e) {
+                return void 0 !== e.isVideo && void 0 !== e.isImage
+            }(i = r || (r = {}))[i.REACT_NATIVE = 0] = "REACT_NATIVE", i[i.WEB = 1] = "WEB", (s = a || (a = {}))[s.FILE_ATTACHMENT = 0] = "FILE_ATTACHMENT", s[s.IMAGE_PICKER = 1] = "IMAGE_PICKER", o = class extends l.EventEmitter {
                 cancel() {}
                 resetState() {
                     return this
@@ -88227,8 +88238,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711394480134",
-                                    build_number: "278307"
+                                    built_at: "1711395279329",
+                                    build_number: "278315"
                                 }
                             },
                             retries: 1
@@ -125749,7 +125760,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "b6013c6ddc3f975e5a7b0324f8972bdb14e86a85"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "43634c80afeac1bc3f2422bca03f7b8abe76868c"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -135247,7 +135258,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "278307"
+                                build_number: "278315"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -153062,4 +153073,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.d6a0af9a5a3efbd1e9d1.js.map
+//# sourceMappingURL=29062.39b0735f62447b06f432.js.map
