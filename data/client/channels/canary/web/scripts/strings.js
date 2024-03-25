@@ -6201,6 +6201,7 @@
                 COMMUNITY_GUIDELINES: "[Community Guidelines]({url})",
                 BLOG_POST: "[Our blog post]({url})",
                 SEARCH_FILTER_CONTEXT_MENU_FROM: "From a specific person",
+                SEARCH_FILTER_CONTEXT_MENU_HAS: "Has specific data",
                 SEARCH_FILTER_CONTEXT_MENU_MENTIONS: "Mention someone",
                 SEARCH_FILTER_CONTEXT_MENU_CHANNEL: "In a specific channel",
                 SEARCH_FILTER_CONTEXT_MENU_BEFORE_DATE: "Before a date",
@@ -6208,6 +6209,7 @@
                 SEARCH_FILTER_CONTEXT_MENU_ON_DATE: "Sent on a date",
                 SEARCH_FILTER_MESSAGES_FROM_USER: "Filter messages from a particular user",
                 SEARCH_FILTER_MESSAGES_FROM_CHANNEL: "Filter messages from a particular channel",
+                SEARCH_FILTER_MESSAGES_HAS: "Filter messages with certain data types",
                 SEARCH_FILTER_MESSAGES_MENTION_USER: "Filter messages that mention a particular user",
                 SEARCH_FILTER_MESSAGES_BEFORE_DATE: "Filter messages from before a date",
                 SEARCH_FILTER_MESSAGES_AFTER_DATE: "Filter messages from after a date",
@@ -18607,7 +18609,7 @@
                 l = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278374", ", Version Hash: ").concat("75c79f1b23c466f3d2d52768239e35c9eea5a5db")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278391", ", Version Hash: ").concat("3809e94367566d48410802e78b224cc8334c22a2")), t.default.setTags({
                 appContext: R.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
         },
@@ -19987,7 +19989,7 @@
                     loadRightBeforeConnectionOpen: !0
                 },
                 ExplicitMediaManager: {
-                    actions: ["CHANNEL_SELECT", "LOAD_MESSAGES_SUCCESS", "MESSAGE_CREATE", "MESSAGE_UPDATE", "SEARCH_FINISH", "MOD_VIEW_SEARCH_FINISH", "LOAD_FORUM_POSTS", "LOAD_ARCHIVED_THREADS_SUCCESS", "LOAD_THREADS_SUCCESS", "LOGOUT", "LOAD_PINNED_MESSAGES_SUCCESS", "USER_SETTINGS_PROTO_UPDATE", "CHANNEL_RTC_UPDATE_CHAT_OPEN"],
+                    actions: ["CHANNEL_SELECT", "LOAD_MESSAGES_SUCCESS", "MESSAGE_CREATE", "MESSAGE_UPDATE", "SEARCH_FINISH", "MOD_VIEW_SEARCH_FINISH", "LOAD_FORUM_POSTS", "LOAD_ARCHIVED_THREADS_SUCCESS", "LOAD_THREADS_SUCCESS", "LOGOUT", "LOAD_PINNED_MESSAGES_SUCCESS", "USER_SETTINGS_PROTO_UPDATE", "CHANNEL_RTC_UPDATE_CHAT_OPEN", "POST_CONNECTION_OPEN"],
                     inlineRequire: () => E("983850").default,
                     neverLoadBeforeConnectionOpen: !0
                 },
@@ -20985,8 +20987,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "278374", "278374"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278374")), _ = 0), _
+                let _ = parseInt((e = "278391", "278391"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278391")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -37857,4 +37859,4 @@
         }
     }
 ]);
-//# sourceMappingURL=47513.035ba7aefd14fbb18690.js.map
+//# sourceMappingURL=47513.e54daef0c0a85c606a0c.js.map
