@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["10716"], {
+    ["45189"], {
         876779: function(N, I, A) {
             N.exports = {
                 Common: {
@@ -1711,13 +1711,13 @@
             "use strict";
             A.r(I), A.d(I, {
                 closeContextMenu: function() {
-                    return t
+                    return i
                 },
                 openContextMenu: function() {
-                    return n
+                    return t
                 },
                 openContextMenuLazy: function() {
-                    return i
+                    return n
                 }
             }), A("506083");
             var O = A("913144"),
@@ -1733,7 +1733,7 @@
                 })
             }
 
-            function t(N) {
+            function i(N) {
                 {
                     let {
                         flushSync: I
@@ -1748,13 +1748,13 @@
                 }
             }
 
-            function n(N, I, A, O) {
-                var t, n, i;
+            function t(N, I, A, O) {
+                var i, t, n;
                 if (N.stopPropagation(), null != N.currentTarget.contains && !N.currentTarget.contains(N.target)) return;
                 let R = 0,
                     G = 0;
                 if ("pageX" in N && (R = N.pageX, G = N.pageY), 0 === R && 0 === G) {
-                    let I = null === (t = N.target) || void 0 === t ? void 0 : t.getBoundingClientRect(),
+                    let I = null === (i = N.target) || void 0 === i ? void 0 : i.getBoundingClientRect(),
                         {
                             left: A = 0,
                             top: O = 0,
@@ -1766,10 +1766,10 @@
                 let r = {
                     render: I,
                     renderLazy: O,
-                    target: null !== (n = N.target) && void 0 !== n ? n : N.currentTarget,
+                    target: null !== (t = N.target) && void 0 !== t ? t : N.currentTarget,
                     rect: new DOMRect(R, G, 0, 0),
                     config: {
-                        context: __OVERLAY__ ? E.AppContext.OVERLAY : null !== (i = (0, T.getCurrentlyInteractingAppContext)()) && void 0 !== i ? i : E.AppContext.APP,
+                        context: __OVERLAY__ ? E.AppContext.OVERLAY : null !== (n = (0, T.getCurrentlyInteractingAppContext)()) && void 0 !== n ? n : E.AppContext.APP,
                         ...A
                     }
                 };
@@ -1780,8 +1780,8 @@
                 } else N.preventDefault(), V(r)
             }
 
-            function i(N, I, A) {
-                n(N, void 0, A, I)
+            function n(N, I, A) {
+                t(N, void 0, A, I)
             }
         },
         318696: function(N, I, A) {
@@ -1789,10 +1789,10 @@
             let O, T;
             A.r(I), A.d(I, {
                 setLocale: function() {
-                    return t
+                    return i
                 },
                 updateLocaleLoadingStatus: function() {
-                    return n
+                    return t
                 }
             }), A("424973"), A("222007"), A("860677");
             var _ = A("913144"),
@@ -1801,11 +1801,11 @@
             O = A("792788").default;
             let V = !1;
 
-            function t(N) {
-                T = E.default.loadPromise, O && O.setLocale(N), E.default.setLocale(N), n(N)
+            function i(N) {
+                T = E.default.loadPromise, O && O.setLocale(N), E.default.setLocale(N), t(N)
             }
 
-            function n(N) {
+            function t(N) {
                 let I = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
                 if (V && E.default.loadPromise === T) return;
                 V = !0, I ? (0, e.setLocaleHack)(N) : _.default.dispatch({
@@ -1814,9 +1814,9 @@
                 });
                 let A = [E.default.loadPromise];
                 O && A.push(O.loadPromise);
-                let t = Promise.all(A);
+                let i = Promise.all(A);
                 setImmediate(() => {
-                    t.then(() => {
+                    i.then(() => {
                         _.default.dispatch({
                             type: "I18N_LOAD_SUCCESS",
                             locale: N
@@ -1908,9 +1908,9 @@
                 e = A("118810"),
                 E = A("49671"),
                 V = A("605250"),
-                t = A("915639"),
-                n = A("449008"),
-                i = A("851234"),
+                i = A("915639"),
+                t = A("449008"),
+                n = A("851234"),
                 R = A("648610");
             let G = new V.default("Spellchecker"),
                 r = null === E.default || void 0 === E.default ? void 0 : E.default.spellCheck;
@@ -1970,10 +1970,10 @@
                 }
                 constructor(N) {
                     this._enabled = !0, this.misspelledWord = "", this.corrections = [];
-                    let [I, A] = t.default.locale.split("-");
+                    let [I, A] = i.default.locale.split("-");
                     this.regionPreference = A;
                     let O = this.getAvailableLanguages(N);
-                    this.languageDetector = new i.default(I, A => {
+                    this.languageDetector = new n.default(I, A => {
                         let T = "".concat(A, "-").concat(this.regionPreference);
                         if (-1 !== N.indexOf(T)) this.setLocale(T);
                         else {
@@ -1995,7 +1995,7 @@
             async function s() {
                 var N, I;
                 let A = null !== (N = await r.getAvailableDictionaries()) && void 0 !== N ? N : [],
-                    O = A.map(a).filter(n.isNotNullish),
+                    O = A.map(a).filter(t.isNotNullish),
                     T = new S(O);
                 return I = T, null != document.body && document.body.addEventListener("beforeinput", N => o(I, N.target), !0), T
             }
@@ -2151,7 +2151,7 @@
             "use strict";
             A.r(I), A.d(I, {
                 default: function() {
-                    return n
+                    return t
                 }
             });
             var O = A("446674"),
@@ -2165,7 +2165,7 @@
                 let A = null === (I = e.default.settings.localization) || void 0 === I ? void 0 : null === (N = I.locale) || void 0 === N ? void 0 : N.value;
                 return null != A && "" !== A && A !== E && (E = A, _.setLocale(E), !0)
             }
-            class t extends O.default.Store {
+            class i extends O.default.Store {
                 initialize() {
                     this.waitFor(e.default), V(), _.setLocale(E)
                 }
@@ -2173,8 +2173,8 @@
                     return E
                 }
             }
-            t.displayName = "LocaleStore";
-            var n = new t(T.default, {
+            i.displayName = "LocaleStore";
+            var t = new i(T.default, {
                 OVERLAY_INITIALIZE: V,
                 CACHE_LOADED: V,
                 CONNECTION_OPEN: V,
@@ -2191,7 +2191,7 @@
                     return V
                 },
                 default: function() {
-                    return i
+                    return n
                 }
             });
             var O = A("446674"),
@@ -2201,18 +2201,18 @@
                 E = null;
 
             function V(N) {
-                t({
+                i({
                     locale: N
                 })
             }
 
-            function t(N) {
+            function i(N) {
                 let {
                     locale: I
                 } = N;
                 _ = !0, e = I
             }
-            class n extends O.default.Store {
+            class t extends O.default.Store {
                 isLoading() {
                     return _
                 }
@@ -2220,9 +2220,9 @@
                     return E
                 }
             }
-            n.displayName = "I18nLoaderStore";
-            var i = new n(T.default, {
-                I18N_LOAD_START: t,
+            t.displayName = "I18nLoaderStore";
+            var n = new t(T.default, {
+                I18N_LOAD_START: i,
                 I18N_LOAD_SUCCESS: function(N) {
                     let {
                         locale: I
@@ -2237,34 +2237,6 @@
                     A === e && (_ = !1, E = null != I ? I : null, e = null)
                 }
             })
-        },
-        476765: function(N, I, A) {
-            "use strict";
-            A.r(I), A.d(I, {
-                uid: function() {
-                    return e
-                },
-                useUID: function() {
-                    return E
-                },
-                UID: function() {
-                    return V
-                }
-            });
-            var O = A("995008"),
-                T = A.n(O),
-                _ = A("775560");
-            let e = function() {
-                    let N = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "uid_";
-                    return T(N)
-                },
-                E = () => (0, _.useLazyValue)(() => e()),
-                V = N => {
-                    let {
-                        children: I
-                    } = N;
-                    return I(E())
-                }
         },
         449008: function(N, I, A) {
             "use strict";
@@ -2299,13 +2271,13 @@
                     return E
                 },
                 setEnabled: function() {
-                    return t
+                    return i
                 },
                 setLearnedWords: function() {
-                    return n
+                    return t
                 },
                 isMisspelled: function() {
-                    return i
+                    return n
                 },
                 getCorrections: function() {
                     return R
@@ -2332,15 +2304,15 @@
                 return (0, _.isDesktop)() && e()
             }
             let V = E() ? (0, T.install)() : null;
-            async function t(N) {
+            async function i(N) {
                 let I = await V;
                 null != I && (I.enabled = N)
             }
-            async function n(N) {
+            async function t(N) {
                 let I = await V;
                 null != I && I.setLearnedWords(N)
             }
-            async function i(N) {
+            async function n(N) {
                 let I = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     A = await V;
                 return null != A && A.isMisspelled(N, I)
@@ -2388,4 +2360,4 @@
         }
     }
 ]);
-//# sourceMappingURL=10716.04fdc4f40eb652341ca3.js.map
+//# sourceMappingURL=45189.8b4f4479127f9f59938d.js.map

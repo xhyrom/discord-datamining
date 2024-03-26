@@ -69620,21 +69620,25 @@
             "use strict";
             n.r(t), n.d(t, {
                 removeExecutablePathPrefix: function() {
-                    return s
+                    return r
                 },
                 getRunningGameAnalytics: function() {
-                    return r
+                    return a
+                },
+                isVerifiedGameExecutable: function() {
+                    return o
                 }
             });
-            var i = n("546463");
+            var i = n("546463"),
+                s = n("773336");
 
-            function s(e) {
+            function r(e) {
                 var t;
                 let n = ((t = (t = e).toLowerCase()).endsWith("/") && (t = t.slice(0, -1)), t);
                 return n.split("/").slice(-2).join("/")
             }
 
-            function r(e) {
+            function a(e) {
                 var t, n;
                 if (null == e) return {
                     gameName: void 0,
@@ -69642,14 +69646,20 @@
                     exe: void 0,
                     distributor: void 0
                 };
-                let r = i.default.getGameByName(e.name),
+                let s = i.default.getGameByName(e.name),
                     a = "exePath" in e ? e.exePath : e.exe;
                 return {
                     gameName: null !== (t = e.name) && void 0 !== t ? t : void 0,
-                    gameId: null == r ? void 0 : r.id,
-                    exe: null != a ? s(a) : void 0,
+                    gameId: null == s ? void 0 : s.id,
+                    exe: null != a ? r(a) : void 0,
                     distributor: null !== (n = e.distributor) && void 0 !== n ? n : void 0
                 }
+            }
+
+            function o(e, t) {
+                if (null == e || null == t) return !1;
+                let n = (0, s.getPlatformName)();
+                return t.some(t => t.os === n && t.name === r(e))
             }
         },
         161454: function(e, t, n) {
@@ -88265,8 +88275,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711486522051",
-                                    build_number: "278792"
+                                    built_at: "1711487526341",
+                                    build_number: "278811"
                                 }
                             },
                             retries: 1
@@ -125796,7 +125806,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "478ca66fd33665b2c6eb40507eb6f3cbbb8e11fc"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "71721c00b11ead4095a51dd4d1faf32a41a2734d"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -135350,7 +135360,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "278792"
+                                build_number: "278811"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -153186,4 +153196,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.9f2b0f0bf226632a7d0d.js.map
+//# sourceMappingURL=29062.259af500235280c1ae9f.js.map
