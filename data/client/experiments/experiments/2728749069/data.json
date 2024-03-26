@@ -1,0 +1,29 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-03_gdm_facepiles_desktop",
+    "label": "Group DM Facepiles (Desktop)",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Facepiles",
+      "Treatment 2: Facepiles + Status Indicator",
+      "Treatment 3: Facepiles + Status Indicator + Typing Indicator"
+    ],
+    "hash": 2728749069,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "isFacepileEnabled",
+      "isStatusIndicatorEnabled",
+      "isTypingIndicatorEnabled"
+    ]
+  }
+}
