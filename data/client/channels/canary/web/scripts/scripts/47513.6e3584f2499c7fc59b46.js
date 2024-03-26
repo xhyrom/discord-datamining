@@ -17028,7 +17028,7 @@
                 MEMBER_LIST_CONTENT_FEED_TIMESTAMP_ACTIVE: "{minutes, plural, =-1 {} other {{minutes}:}}{seconds, plural, =-1 {} other {{seconds}}}",
                 MEMBER_LIST_CONTENT_FEED_FIRST_TIME: "First time",
                 MEMBER_LIST_CONTENT_FEED_WATCHED_MEDIA: "Watched **{mediaTitle}**",
-                MEMBER_LIST_CONTENT_FEED_USER_WATCHED_MEDIA: "{userName} watched **{mediaTitle}**",
+                MEMBER_LIST_CONTENT_FEED_USER_WATCHED_MEDIA: "{userName} watched **{mediaTitle}** ({episodeDescription})",
                 CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity",
                 CONTENT_INVENTORY_MEMBERLIST_SETTINGS_HIDE: "Hide Activity Cards",
                 CONTENT_INVENTORY_MEMBERLIST_SETTINGS_ABOUT: "About Recent Activity",
@@ -18618,7 +18618,7 @@
                 l = E("782340");
             (0, i.setUpdateRules)(s.default), (0, n.default)(l.default, o, T.default), a.default.Emitter.injectBatchEmitChanges(r.batchUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278471", ", Version Hash: ").concat("d264a8ded49f9d5ea84dddbe4587eb6cc2c52dd6")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("278501", ", Version Hash: ").concat("354e96e8d2ddbe7bd9108a3511aeb8e061e7a9aa")), t.default.setTags({
                 appContext: R.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init()
         },
@@ -20996,8 +20996,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "278471", "278471"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278471")), _ = 0), _
+                let _ = parseInt((e = "278501", "278501"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("278501")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -37834,4 +37834,4 @@
         }
     }
 ]);
-//# sourceMappingURL=47513.1ae1632a04451e28de51.js.map
+//# sourceMappingURL=47513.6e3584f2499c7fc59b46.js.map
