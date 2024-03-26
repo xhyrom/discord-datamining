@@ -62610,10 +62610,6 @@ html .invoiceCancelRow_c1bfe7 {
     transform: translatey(5px)
 }
 
-.shopForAllBackgroundImage__009d9 {
-    background-image: url(/assets/de0896237eebfc178931.png)
-}
-
 .tryItOutSection__0f9fb {
     margin: 40px -24px 0;
     width: -moz-fit-content;
@@ -79411,6 +79407,25 @@ input::-webkit-inner-spin-button {
     margin-right: 8px
 }
 
+.marketingButtonImage_e4abff {
+    position: absolute;
+    width: 400px;
+    bottom: 0;
+    right: -180px;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    pointer-events: none
+}
+
+.marketingButtonImageHovered__3e25c {
+    opacity: 1
+}
+
+.shyButton__40b34 {
+    background: radial-gradient(ellipse at 120%200%, #ff4655 10%, var(--background-primary)70%);
+    background-clip: content-box
+}
+
 .empty__086ba {
     fill: var(--background-primary);
     padding: 16px
@@ -85868,6 +85883,34 @@ html .tabBadge__002b3 {
     justify-content: center;
     align-items: center;
     height: 200px
+}
+
+.countDownWrapper__98eb4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    position: fixed;
+    left: calc(50% + 156px);
+    border-radius: 48px;
+    bottom: 0;
+    width: 400px;
+    height: 32px;
+    padding: 4px 32px;
+    z-index: 100;
+    font-family: var(--font-code)
+}
+
+.countdownLabel_f81efd {
+    margin-left: -12px;
+    text-transform: uppercase;
+    font-family: inherit;
+    color: inherit
+}
+
+.countdown__3f5cd {
+    font-family: inherit;
+    color: inherit
 }
 
 .body__834d2 {
@@ -130416,4 +130459,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.451430d8ffe06220c838.css.map*/
+/*# sourceMappingURL=app.db10a15f761d106c16d6.css.map*/
