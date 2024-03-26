@@ -27837,6 +27837,10 @@ span.button__4f306.disabled_dc5630 {
     background-color: var(--background-modifier-hover)
 }
 
+.short__40ab3 {
+    min-height: auto
+}
+
 .image__2e834 {
     align-items: center;
     background-color: var(--brand-experiment);
@@ -27936,6 +27940,16 @@ span.button__4f306.disabled_dc5630 {
     -webkit-line-clamp: 1;
     display: -webkit-box;
     overflow: hidden
+}
+
+.benefitsSummary__05ead {
+    align-items: center;
+    align-self: stretch;
+    background: var(--background-tertiary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px
 }
 
 @value maxModalWidth from './MarkdownModal.module.css';
@@ -28157,4 +28171,4 @@ span.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.5b72a44c55edee8cf27b.css.map*/
+/*# sourceMappingURL=shared.b93f4628012b2e27bb87.css.map*/
