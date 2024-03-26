@@ -1,22 +1,10 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["81084"], {
-        811513: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var l = n("430143");
-            n.es(l, t)
-        },
-        304983: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var l = n("541742");
-            n.es(l, t)
-        },
+    ["86993"], {
         76385: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 NON_TOKEN_TYPE: function() {
-                    return r
+                    return a
                 },
                 Token: function() {
                     return o
@@ -26,23 +14,23 @@
                 }
             }), n("222007"), n("702976"), n("424973");
             let l = /.+/g,
-                r = "NON_TOKEN";
+                a = "NON_TOKEN";
 
-            function a(e, t, n) {
+            function r(e, t, n) {
                 if (null == t) return null;
                 for (let l = 0; l < t.length; l++) {
-                    let r;
-                    let a = t[l],
-                        s = u(e.match(a.regex), n);
+                    let a;
+                    let r = t[l],
+                        s = u(e.match(r.regex), n);
                     if (null != s) {
                         let {
                             cache: e
-                        } = a;
-                        if (null != e && null != (r = e.get(s[0])) && ((r = new o(r)).start = s.index), null == r) {
-                            if (r = new o(s, a.type), null != a.validator && !a.validator(r)) continue;
-                            null != e && !(null == e ? void 0 : e.has(s[0])) && e.set(s[0], r)
+                        } = r;
+                        if (null != e && null != (a = e.get(s[0])) && ((a = new o(a)).start = s.index), null == a) {
+                            if (a = new o(s, r.type), null != r.validator && !r.validator(a)) continue;
+                            null != e && !(null == e ? void 0 : e.has(s[0])) && e.set(s[0], a)
                         }
-                        return r
+                        return a
                     }
                 }
                 return null
@@ -55,45 +43,45 @@
             }
             class s {
                 reset(e) {
-                    this._rules = [], this._followers = {}, this._nonTokenType = null != e ? e : r
+                    this._rules = [], this._followers = {}, this._nonTokenType = null != e ? e : a
                 }
                 addRule(e) {
                     let t;
                     let {
                         type: n,
                         follows: l,
-                        validator: r
+                        validator: a
                     } = e, {
-                        regex: a
+                        regex: r
                     } = e;
-                    if ("^" !== a.source.charAt(0) && (a = new RegExp("^".concat(a.source), a.flags)), null != r && (t = new Map), null == l) {
+                    if ("^" !== r.source.charAt(0) && (r = new RegExp("^".concat(r.source), r.flags)), null != a && (t = new Map), null == l) {
                         this._rules.push({
-                            regex: a,
+                            regex: r,
                             type: n,
-                            validator: r,
+                            validator: a,
                             cache: t
                         });
                         return
                     }
                     l.forEach(e => {
                         null == this._followers[e] && (this._followers[e] = []), this._followers[e].push({
-                            regex: a,
+                            regex: r,
                             type: n,
-                            validator: r,
+                            validator: a,
                             cache: t
                         })
                     })
                 }
                 tokenize(e) {
                     let t, n = e,
-                        r = "",
-                        a = 0,
+                        a = "",
+                        r = 0,
                         s = [];
                     for (; n.length > 0;) {
-                        let e = this._getMatch(n, t, a + r.length);
-                        null != e ? (null != r && "" !== r && s.push(new o(u(r.match(l), a), this._nonTokenType)), t = e, s.push(e), a += t.length + r.length, n = n.substring(t.length), r = "") : (r += n[0], n = n.substring(1))
+                        let e = this._getMatch(n, t, r + a.length);
+                        null != e ? (null != a && "" !== a && s.push(new o(u(a.match(l), r), this._nonTokenType)), t = e, s.push(e), r += t.length + a.length, n = n.substring(t.length), a = "") : (a += n[0], n = n.substring(1))
                     }
-                    return null != r && "" !== r && s.push(new o(u(r.match(l), a), this._nonTokenType)), s
+                    return null != a && "" !== a && s.push(new o(u(a.match(l), r), this._nonTokenType)), s
                 }
                 clearCache() {
                     for (let e in this._rules.forEach(e => {
@@ -109,11 +97,11 @@
                 }
                 _getMatch(e, t, n) {
                     let l;
-                    let r = null != t ? t.type : null;
-                    return (null == t ? void 0 : t.end) === n && (l = a(e, this._followers[String(r)], n)), null == l && (l = a(e, this._rules, n)), l
+                    let a = null != t ? t.type : null;
+                    return (null == t ? void 0 : t.end) === n && (l = r(e, this._followers[String(a)], n)), null == l && (l = r(e, this._rules, n)), l
                 }
                 constructor(e = [], t) {
-                    this._rules = [], this._followers = {}, this._nonTokenType = r, this.reset(t), e.forEach(e => this.addRule(e))
+                    this._rules = [], this._followers = {}, this._nonTokenType = a, this.reset(t), e.forEach(e => this.addRule(e))
                 }
             }
             class o {
@@ -147,30 +135,30 @@
                     } else this.match = [], this.start = 0, this.type = t
                 }
             }
-            s.NON_TOKEN_TYPE = r, s.Token = o;
+            s.NON_TOKEN_TYPE = a, s.Token = o;
             var i = s
         },
         955513: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 getRandomDateShortcut: function() {
-                    return P
+                    return x
                 },
                 ComponentTypes: function() {
                     return l
                 },
                 refreshSearchTokens: function() {
-                    return Z
+                    return V
                 },
                 getFilterAutocompletions: function() {
-                    return z
+                    return X
                 },
                 default: function() {
-                    return q
+                    return z
                 }
             }), n("222007"), n("843762");
-            var l, r, a = n("448105"),
-                u = n.n(a),
+            var l, a, r = n("448105"),
+                u = n.n(r),
                 s = n("917351"),
                 o = n.n(s),
                 i = n("866227"),
@@ -185,151 +173,151 @@
                 R = n("25292"),
                 p = n("655518"),
                 A = n("158998"),
-                I = n("49111"),
-                g = n("782340");
+                g = n("49111"),
+                N = n("782340");
 
-            function N() {
+            function I() {
                 return new Set(c.months().map(e => e.toLowerCase()))
             }
 
-            function M() {
+            function y() {
                 return new Set(c.weekdays().map(e => e.toLowerCase()))
             }
 
-            function y() {
+            function m() {
                 let e = new Date().getFullYear();
                 return new Set(o.range(2015, e + 1).map(e => e.toString()))
             }
 
-            function m(e, t) {
+            function M(e, t) {
                 return [e, e.clone().add(1, t)]
             }
 
             function C(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
                     n = c().startOf(e).add(t, e);
-                return m(n, e)
+                return M(n, e)
             }
 
             function L(e, t, n) {
                 let l = c(e, t).local();
-                return m(l, n)
+                return M(l, n)
             }
 
             function F() {
                 return {
-                    [g.default.Messages.SEARCH_SHORTCUT_TODAY]: () => C("day"),
-                    [g.default.Messages.SEARCH_SHORTCUT_YESTERDAY]: () => C("day", -1),
-                    [g.default.Messages.SEARCH_SHORTCUT_WEEK]: () => C("week"),
-                    [g.default.Messages.SEARCH_SHORTCUT_MONTH]: () => C("month"),
-                    [g.default.Messages.SEARCH_SHORTCUT_YEAR]: () => C("year")
+                    [N.default.Messages.SEARCH_SHORTCUT_TODAY]: () => C("day"),
+                    [N.default.Messages.SEARCH_SHORTCUT_YESTERDAY]: () => C("day", -1),
+                    [N.default.Messages.SEARCH_SHORTCUT_WEEK]: () => C("week"),
+                    [N.default.Messages.SEARCH_SHORTCUT_MONTH]: () => C("month"),
+                    [N.default.Messages.SEARCH_SHORTCUT_YEAR]: () => C("year")
                 }
             }
-            let v = RegExp("(?:\\s*(".concat("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})", "|").concat("([0-9]{4})-([0-9]{1,2})", "|").concat("\\d{4}", "|").concat("([^\\d\\s]+)", "))"), "i"),
-                H = RegExp("\\s*(true|false)", "i");
+            let H = RegExp("(?:\\s*(".concat("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})", "|").concat("([0-9]{4})-([0-9]{1,2})", "|").concat("\\d{4}", "|").concat("([^\\d\\s]+)", "))"), "i"),
+                v = RegExp("\\s*(true|false)", "i");
 
-            function O(e) {
+            function k(e) {
                 return "".concat(e, ":")
             }
 
-            function k(e) {
-                return RegExp(O(e), "i")
+            function O(e) {
+                return RegExp(k(e), "i")
             }
 
             function w(e) {
                 let t;
                 let n = e.getMatch(1),
                     l = e => null != e ? null == e ? void 0 : e.id : null;
-                return null != (t = I.ID_REGEX.test(n) ? n : n === I.ME ? l(h.default.getCurrentUser()) : null != e.getMatch(4) ? l(h.default.findByTag(e.getMatch(4))) : l(h.default.findByTag(e.getMatch(2), e.getMatch(3)))) && (e.setData("userId", t), !0)
+                return null != (t = g.ID_REGEX.test(n) ? n : n === g.ME ? l(h.default.getCurrentUser()) : null != e.getMatch(4) ? l(h.default.findByTag(e.getMatch(4))) : l(h.default.findByTag(e.getMatch(2), e.getMatch(3)))) && (e.setData("userId", t), !0)
             }
 
             function D(e, t) {
                 let n, l;
-                let r = e.getFullMatch().trim().toLowerCase(),
-                    a = F()[r];
-                null != a ? [n, l] = a() : N().has(r) ? [n, l] = L(r, "MMMM", "month") : M().has(r) ? [n, l] = L(r, "dddd", "day") : y().has(r) ? [n, l] = L(r, "YYYY", "year") : [n, l] = L(r, I.SEARCH_DATE_FORMAT, "day");
+                let a = e.getFullMatch().trim().toLowerCase(),
+                    r = F()[a];
+                null != r ? [n, l] = r() : I().has(a) ? [n, l] = L(a, "MMMM", "month") : y().has(a) ? [n, l] = L(a, "dddd", "day") : m().has(a) ? [n, l] = L(a, "YYYY", "year") : [n, l] = L(a, g.SEARCH_DATE_FORMAT, "day");
                 let u = n.isValid() && l.isValid();
                 return !!u && ("before" === t ? (l = n, n = null) : "after" === t && (n = l, l = null), e.setData("start", n), e.setData("end", l), !0)
             }
 
-            function U(e) {
+            function W(e) {
                 let t = e.getMatch(1),
                     n = f.default.getGuildId(),
                     l = E.default.getChannels(n)[E.GUILD_SELECTABLE_CHANNELS_KEY].concat(E.default.getChannels(n)[E.GUILD_VOCAL_CHANNELS_KEY]),
-                    r = E.default.getTextChannelNameDisambiguations(n),
-                    a = o.chain(l).map(e => {
+                    a = E.default.getTextChannelNameDisambiguations(n),
+                    r = o.chain(l).map(e => {
                         let {
                             channel: t
                         } = e;
                         return t
                     }).find(e => {
                         var n, l;
-                        return t === (null !== (l = null === (n = r[e.id]) || void 0 === n ? void 0 : n.name) && void 0 !== l ? l : e.name)
+                        return t === (null !== (l = null === (n = a[e.id]) || void 0 === n ? void 0 : n.name) && void 0 !== l ? l : e.name)
                     }).value();
-                return null != a && (e.setData("channel", a), !0)
+                return null != r && (e.setData("channel", r), !0)
             }
 
-            function W(e) {
+            function U(e) {
                 let t = {
-                    [g.default.Messages.SEARCH_ANSWER_HAS_LINK]: "link",
-                    [g.default.Messages.SEARCH_ANSWER_HAS_EMBED]: "embed",
-                    [g.default.Messages.SEARCH_ANSWER_HAS_ATTACHMENT]: "file",
-                    [g.default.Messages.SEARCH_ANSWER_HAS_VIDEO]: "video",
-                    [g.default.Messages.SEARCH_ANSWER_HAS_IMAGE]: "image",
-                    [g.default.Messages.SEARCH_ANSWER_HAS_SOUND]: "sound",
-                    [g.default.Messages.SEARCH_ANSWER_HAS_STICKER]: "sticker"
+                    [N.default.Messages.SEARCH_ANSWER_HAS_LINK]: "link",
+                    [N.default.Messages.SEARCH_ANSWER_HAS_EMBED]: "embed",
+                    [N.default.Messages.SEARCH_ANSWER_HAS_ATTACHMENT]: "file",
+                    [N.default.Messages.SEARCH_ANSWER_HAS_VIDEO]: "video",
+                    [N.default.Messages.SEARCH_ANSWER_HAS_IMAGE]: "image",
+                    [N.default.Messages.SEARCH_ANSWER_HAS_SOUND]: "sound",
+                    [N.default.Messages.SEARCH_ANSWER_HAS_STICKER]: "sticker"
                 } [e.getMatch(1)];
                 return null != t && "" !== t && (e.setData("has", t), !0)
             }
 
+            function b() {
+                return [...Array.from(I()), ...Array.from(y()), ...Array.from(m()), ...Object.keys(F())]
+            }
+
             function x() {
-                return [...Array.from(N()), ...Array.from(M()), ...Array.from(y()), ...Object.keys(F())]
+                return o.sample(b())
             }
 
-            function P() {
-                return o.sample(x())
-            }
-
-            function b(e, t, n) {
-                return G(e, t, x()).map(e => ({
+            function G(e, t, n) {
+                return P(e, t, b()).map(e => ({
                     ...e,
                     group: n,
                     key: "".concat(n, "-").concat(e.text)
                 }))
             }
 
-            function G(e, t, n) {
+            function P(e, t, n) {
                 let l = e.toLocaleLowerCase();
                 return o(n).filter(e => u(l, e.toLocaleLowerCase())).take(t).map(e => ({
                     text: e
                 })).value()
             }
 
-            function Y(e, t) {
+            function j(e, t) {
                 let n, l = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 10,
-                    r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-                    a = _.default.getSearchType(t);
+                    a = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+                    r = _.default.getSearchType(t);
                 e = e.split("#")[0];
                 let u = {
                     query: e,
                     limit: l,
-                    request: r
+                    request: a
                 };
-                switch (a) {
-                    case I.SearchTypes.GUILD:
+                switch (r) {
+                    case g.SearchTypes.GUILD:
                         n = R.default.queryGuildUsers({
                             ...u,
                             guildId: t
                         });
                         break;
-                    case I.SearchTypes.CHANNEL:
+                    case g.SearchTypes.CHANNEL:
                         n = R.default.queryChannelUsers({
                             ...u,
                             channelId: t
                         });
                         break;
-                    case I.SearchTypes.DMS:
-                        n = R.default.queryUsers(e, l, !0, r, () => !0);
+                    case g.SearchTypes.DMS:
+                        n = R.default.queryUsers(e, l, !0, a, () => !0);
                         break;
                     default:
                         return []
@@ -350,141 +338,141 @@
                 })
             }
 
-            function B() {
-                return _.default.getSearchType() === I.SearchTypes.GUILD
+            function K() {
+                return _.default.getSearchType() === g.SearchTypes.GUILD
             }
 
-            function j() {
+            function B() {
                 return !S.default.hidePersonalInformation
             }
-            let V = /^(?:\s*(\d{17,20}|@me|([^@#:]+)#([0-9]{4})|([a-z0-9_.]{2,32})))/i;
-            (r = l || (l = {})).FILTER = "FILTER", r.ANSWER = "ANSWER";
-            let K = {};
+            let Y = /^(?:\s*(\d{17,20}|@me|([^@#:]+)#([0-9]{4})|([a-z0-9_.]{2,32})))/i;
+            (a = l || (l = {})).FILTER = "FILTER", a.ANSWER = "ANSWER";
+            let q = {};
 
-            function Z() {
-                Object.assign(K, function() {
-                    let e = [g.default.Messages.SEARCH_ANSWER_HAS_LINK, g.default.Messages.SEARCH_ANSWER_HAS_EMBED, g.default.Messages.SEARCH_ANSWER_HAS_ATTACHMENT, g.default.Messages.SEARCH_ANSWER_HAS_VIDEO, g.default.Messages.SEARCH_ANSWER_HAS_IMAGE, g.default.Messages.SEARCH_ANSWER_HAS_SOUND, g.default.Messages.SEARCH_ANSWER_HAS_STICKER];
+            function V() {
+                Object.assign(q, function() {
+                    let e = [N.default.Messages.SEARCH_ANSWER_HAS_LINK, N.default.Messages.SEARCH_ANSWER_HAS_EMBED, N.default.Messages.SEARCH_ANSWER_HAS_ATTACHMENT, N.default.Messages.SEARCH_ANSWER_HAS_VIDEO, N.default.Messages.SEARCH_ANSWER_HAS_IMAGE, N.default.Messages.SEARCH_ANSWER_HAS_SOUND, N.default.Messages.SEARCH_ANSWER_HAS_STICKER];
                     return {
-                        [I.SearchTokenTypes.FILTER_FROM]: {
-                            regex: k(g.default.Messages.SEARCH_FILTER_FROM),
+                        [g.SearchTokenTypes.FILTER_FROM]: {
+                            regex: O(N.default.Messages.SEARCH_FILTER_FROM),
                             componentType: "FILTER",
-                            key: O(g.default.Messages.SEARCH_FILTER_FROM),
-                            plainText: g.default.Messages.SEARCH_FILTER_FROM,
-                            validator: j,
-                            getAutocompletions: Y
+                            key: k(N.default.Messages.SEARCH_FILTER_FROM),
+                            plainText: N.default.Messages.SEARCH_FILTER_FROM,
+                            validator: B,
+                            getAutocompletions: j
                         },
-                        [I.SearchTokenTypes.ANSWER_USERNAME_FROM]: {
-                            follows: [I.SearchTokenTypes.FILTER_FROM],
-                            regex: V,
+                        [g.SearchTokenTypes.ANSWER_USERNAME_FROM]: {
+                            follows: [g.SearchTokenTypes.FILTER_FROM],
+                            regex: Y,
                             validator: w,
                             mutable: !0,
                             componentType: "ANSWER",
                             queryKey: "author_id"
                         },
-                        [I.SearchTokenTypes.FILTER_MENTIONS]: {
-                            regex: k(g.default.Messages.SEARCH_FILTER_MENTIONS),
+                        [g.SearchTokenTypes.FILTER_MENTIONS]: {
+                            regex: O(N.default.Messages.SEARCH_FILTER_MENTIONS),
                             componentType: "FILTER",
-                            key: O(g.default.Messages.SEARCH_FILTER_MENTIONS),
-                            plainText: g.default.Messages.SEARCH_FILTER_MENTIONS,
-                            validator: j,
-                            getAutocompletions: Y
+                            key: k(N.default.Messages.SEARCH_FILTER_MENTIONS),
+                            plainText: N.default.Messages.SEARCH_FILTER_MENTIONS,
+                            validator: B,
+                            getAutocompletions: j
                         },
-                        [I.SearchTokenTypes.ANSWER_USERNAME_MENTIONS]: {
-                            follows: [I.SearchTokenTypes.FILTER_MENTIONS],
-                            regex: V,
+                        [g.SearchTokenTypes.ANSWER_USERNAME_MENTIONS]: {
+                            follows: [g.SearchTokenTypes.FILTER_MENTIONS],
+                            regex: Y,
                             validator: w,
                             mutable: !0,
                             componentType: "ANSWER",
                             queryKey: "mentions"
                         },
-                        [I.SearchTokenTypes.FILTER_HAS]: {
-                            regex: k(g.default.Messages.SEARCH_FILTER_HAS),
+                        [g.SearchTokenTypes.FILTER_HAS]: {
+                            regex: O(N.default.Messages.SEARCH_FILTER_HAS),
                             componentType: "FILTER",
-                            key: O(g.default.Messages.SEARCH_FILTER_HAS),
-                            plainText: g.default.Messages.SEARCH_FILTER_HAS,
-                            getAutocompletions: (t, n, l) => G(t, l, e)
+                            key: k(N.default.Messages.SEARCH_FILTER_HAS),
+                            plainText: N.default.Messages.SEARCH_FILTER_HAS,
+                            getAutocompletions: (t, n, l) => P(t, l, e)
                         },
-                        [I.SearchTokenTypes.ANSWER_HAS]: {
+                        [g.SearchTokenTypes.ANSWER_HAS]: {
                             regex: RegExp("(?:\\s*-?(".concat(e.map(e => p.default.escape(e)).join("|"), "))"), "i"),
-                            follows: [I.SearchTokenTypes.FILTER_HAS],
-                            validator: W,
+                            follows: [g.SearchTokenTypes.FILTER_HAS],
+                            validator: U,
                             componentType: "ANSWER",
                             queryKey: "has"
                         },
-                        [I.SearchTokenTypes.FILTER_FILE_TYPE]: {
-                            regex: k(g.default.Messages.SEARCH_FILTER_FILE_TYPE),
-                            key: O(g.default.Messages.SEARCH_FILTER_FILE_TYPE),
-                            plainText: g.default.Messages.SEARCH_FILTER_FILE_TYPE,
+                        [g.SearchTokenTypes.FILTER_FILE_TYPE]: {
+                            regex: O(N.default.Messages.SEARCH_FILTER_FILE_TYPE),
+                            key: k(N.default.Messages.SEARCH_FILTER_FILE_TYPE),
+                            plainText: N.default.Messages.SEARCH_FILTER_FILE_TYPE,
                             componentType: "FILTER"
                         },
-                        [I.SearchTokenTypes.ANSWER_FILE_TYPE]: {
+                        [g.SearchTokenTypes.ANSWER_FILE_TYPE]: {
                             regex: /(?:\s*([^\s]+))/,
-                            follows: [I.SearchTokenTypes.FILTER_FILE_TYPE],
+                            follows: [g.SearchTokenTypes.FILTER_FILE_TYPE],
                             mutable: !0,
                             componentType: "ANSWER",
                             queryKey: "attachment_extensions"
                         },
-                        [I.SearchTokenTypes.FILTER_FILE_NAME]: {
-                            regex: k(g.default.Messages.SEARCH_FILTER_FILE_NAME),
-                            key: O(g.default.Messages.SEARCH_FILTER_FILE_NAME),
-                            plainText: g.default.Messages.SEARCH_FILTER_FILE_NAME,
+                        [g.SearchTokenTypes.FILTER_FILE_NAME]: {
+                            regex: O(N.default.Messages.SEARCH_FILTER_FILE_NAME),
+                            key: k(N.default.Messages.SEARCH_FILTER_FILE_NAME),
+                            plainText: N.default.Messages.SEARCH_FILTER_FILE_NAME,
                             componentType: "FILTER"
                         },
-                        [I.SearchTokenTypes.ANSWER_FILE_NAME]: {
+                        [g.SearchTokenTypes.ANSWER_FILE_NAME]: {
                             regex: /(?:\s*([^\s]+)(?=\s))/,
-                            follows: [I.SearchTokenTypes.FILTER_FILE_NAME],
+                            follows: [g.SearchTokenTypes.FILTER_FILE_NAME],
                             mutable: !0,
                             componentType: "ANSWER",
                             queryKey: "attachment_filename"
                         },
-                        [I.SearchTokenTypes.FILTER_BEFORE]: {
-                            regex: k(g.default.Messages.SEARCH_FILTER_BEFORE),
+                        [g.SearchTokenTypes.FILTER_BEFORE]: {
+                            regex: O(N.default.Messages.SEARCH_FILTER_BEFORE),
                             componentType: "FILTER",
-                            key: O(g.default.Messages.SEARCH_FILTER_BEFORE),
-                            plainText: g.default.Messages.SEARCH_FILTER_BEFORE,
-                            getAutocompletions: (e, t, n) => b(e, n, I.SearchTokenTypes.FILTER_BEFORE)
+                            key: k(N.default.Messages.SEARCH_FILTER_BEFORE),
+                            plainText: N.default.Messages.SEARCH_FILTER_BEFORE,
+                            getAutocompletions: (e, t, n) => G(e, n, g.SearchTokenTypes.FILTER_BEFORE)
                         },
-                        [I.SearchTokenTypes.FILTER_ON]: {
-                            regex: k("(".concat(g.default.Messages.SEARCH_FILTER_ON, "|").concat(g.default.Messages.SEARCH_FILTER_DURING, ")")),
+                        [g.SearchTokenTypes.FILTER_ON]: {
+                            regex: O("(".concat(N.default.Messages.SEARCH_FILTER_ON, "|").concat(N.default.Messages.SEARCH_FILTER_DURING, ")")),
                             componentType: "FILTER",
-                            key: O(g.default.Messages.SEARCH_FILTER_DURING),
-                            plainText: g.default.Messages.SEARCH_FILTER_DURING,
-                            getAutocompletions: (e, t, n) => b(e, n, I.SearchTokenTypes.FILTER_ON)
+                            key: k(N.default.Messages.SEARCH_FILTER_DURING),
+                            plainText: N.default.Messages.SEARCH_FILTER_DURING,
+                            getAutocompletions: (e, t, n) => G(e, n, g.SearchTokenTypes.FILTER_ON)
                         },
-                        [I.SearchTokenTypes.FILTER_AFTER]: {
-                            regex: k(g.default.Messages.SEARCH_FILTER_AFTER),
+                        [g.SearchTokenTypes.FILTER_AFTER]: {
+                            regex: O(N.default.Messages.SEARCH_FILTER_AFTER),
                             componentType: "FILTER",
-                            key: O(g.default.Messages.SEARCH_FILTER_AFTER),
-                            plainText: g.default.Messages.SEARCH_FILTER_AFTER,
-                            getAutocompletions: (e, t, n) => b(e, n, I.SearchTokenTypes.FILTER_AFTER)
+                            key: k(N.default.Messages.SEARCH_FILTER_AFTER),
+                            plainText: N.default.Messages.SEARCH_FILTER_AFTER,
+                            getAutocompletions: (e, t, n) => G(e, n, g.SearchTokenTypes.FILTER_AFTER)
                         },
-                        [I.SearchTokenTypes.ANSWER_BEFORE]: {
-                            regex: v,
-                            follows: [I.SearchTokenTypes.FILTER_BEFORE],
+                        [g.SearchTokenTypes.ANSWER_BEFORE]: {
+                            regex: H,
+                            follows: [g.SearchTokenTypes.FILTER_BEFORE],
                             componentType: "ANSWER",
                             mutable: !0,
                             validator: e => D(e, "before")
                         },
-                        [I.SearchTokenTypes.ANSWER_ON]: {
-                            regex: v,
-                            follows: [I.SearchTokenTypes.FILTER_ON],
+                        [g.SearchTokenTypes.ANSWER_ON]: {
+                            regex: H,
+                            follows: [g.SearchTokenTypes.FILTER_ON],
                             componentType: "ANSWER",
                             mutable: !0,
                             validator: e => D(e, "on")
                         },
-                        [I.SearchTokenTypes.ANSWER_AFTER]: {
-                            regex: v,
-                            follows: [I.SearchTokenTypes.FILTER_AFTER],
+                        [g.SearchTokenTypes.ANSWER_AFTER]: {
+                            regex: H,
+                            follows: [g.SearchTokenTypes.FILTER_AFTER],
                             componentType: "ANSWER",
                             mutable: !0,
                             validator: e => D(e, "after")
                         },
-                        [I.SearchTokenTypes.FILTER_IN]: {
-                            regex: k(g.default.Messages.SEARCH_FILTER_IN),
+                        [g.SearchTokenTypes.FILTER_IN]: {
+                            regex: O(N.default.Messages.SEARCH_FILTER_IN),
                             componentType: "FILTER",
-                            key: O(g.default.Messages.SEARCH_FILTER_IN),
-                            plainText: g.default.Messages.SEARCH_FILTER_IN,
-                            validator: B,
+                            key: k(N.default.Messages.SEARCH_FILTER_IN),
+                            plainText: N.default.Messages.SEARCH_FILTER_IN,
+                            validator: K,
                             getAutocompletions(e, t, n) {
                                 "#" === e[0] && (e = e.substring(1));
                                 let l = R.default.queryChannels({
@@ -508,39 +496,39 @@
                                         n = l.find(t => t.id === e);
                                     null != n && (l.splice(l.indexOf(n), 1), l.unshift(n))
                                 }
-                                let r = E.default.getTextChannelNameDisambiguations(t);
+                                let a = E.default.getTextChannelNameDisambiguations(t);
                                 return o(l).take(n).map(e => {
                                     var t, n;
                                     return {
-                                        text: "".concat(null !== (n = null === (t = r[e.id]) || void 0 === t ? void 0 : t.name) && void 0 !== n ? n : e.name),
+                                        text: "".concat(null !== (n = null === (t = a[e.id]) || void 0 === t ? void 0 : t.name) && void 0 !== n ? n : e.name),
                                         channel: e
                                     }
                                 }).value()
                             }
                         },
-                        [I.SearchTokenTypes.ANSWER_IN]: {
+                        [g.SearchTokenTypes.ANSWER_IN]: {
                             regex: /(?:\s*#?([^ ]+))/i,
                             mutable: !0,
-                            follows: [I.SearchTokenTypes.FILTER_IN],
+                            follows: [g.SearchTokenTypes.FILTER_IN],
                             componentType: "ANSWER",
-                            validator: U,
+                            validator: W,
                             queryKey: "channel_id"
                         },
-                        [I.SearchTokenTypes.FILTER_PINNED]: {
-                            regex: k(g.default.Messages.SEARCH_FILTER_PINNED),
+                        [g.SearchTokenTypes.FILTER_PINNED]: {
+                            regex: O(N.default.Messages.SEARCH_FILTER_PINNED),
                             componentType: "FILTER",
-                            key: O(g.default.Messages.SEARCH_FILTER_PINNED),
-                            plainText: g.default.Messages.SEARCH_FILTER_PINNED,
+                            key: k(N.default.Messages.SEARCH_FILTER_PINNED),
+                            plainText: N.default.Messages.SEARCH_FILTER_PINNED,
                             getAutocompletions: () => [{
                                 text: "true"
                             }, {
                                 text: "false"
                             }]
                         },
-                        [I.SearchTokenTypes.ANSWER_PINNED]: {
-                            regex: H,
+                        [g.SearchTokenTypes.ANSWER_PINNED]: {
+                            regex: v,
                             componentType: "ANSWER",
-                            follows: [I.SearchTokenTypes.FILTER_PINNED],
+                            follows: [g.SearchTokenTypes.FILTER_PINNED],
                             queryKey: "pinned",
                             validator: e => {
                                 let t = e.getMatch(1);
@@ -551,11 +539,11 @@
                 }())
             }
 
-            function z(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.keys(K).length;
-                return o(K).keys().filter(e => I.IS_SEARCH_FILTER_TOKEN.test(e)).filter(e => null != K[e].key).map(e => ({
+            function X(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.keys(q).length;
+                return o(q).keys().filter(e => g.IS_SEARCH_FILTER_TOKEN.test(e)).filter(e => null != q[e].key).map(e => ({
                     token: e,
-                    text: K[e].key
+                    text: q[e].key
                 })).filter(t => {
                     let {
                         text: n
@@ -563,17 +551,17 @@
                     return u(e.toLowerCase(), n)
                 }).take(t).value()
             }
-            var q = K
+            var z = q
         },
         578899: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 SimpleDeadchatPromptExperiment: function() {
-                    return r
+                    return a
                 }
             });
             var l = n("862205");
-            let r = (0, l.createExperiment)({
+            let a = (0, l.createExperiment)({
                 kind: "guild",
                 id: "2023-08_deadchat_simple_prompt_guild",
                 label: "Simple deadchat prompt",
@@ -598,140 +586,6 @@
                 }]
             })
         },
-        835257: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                registerFetchedSupplementals: function() {
-                    return I
-                },
-                JoinSourceType: function() {
-                    return r
-                },
-                getJoinSourceTypeLabel: function() {
-                    return g
-                },
-                getIntegrationLabel: function() {
-                    return N
-                },
-                useGetIntegrationIconString: function() {
-                    return M
-                },
-                fetchMemberSupplemental: function() {
-                    return m
-                }
-            }), n("424973");
-            var l, r, a, u, s, o, i = n("872717"),
-                c = n("819855"),
-                E = n("841098"),
-                d = n("376556"),
-                _ = n("572943"),
-                T = n("49111"),
-                f = n("782340");
-            let S = {};
-
-            function h(e, t) {
-                return e + t
-            }
-
-            function R(e, t) {
-                return t.map(t => e + t)
-            }
-
-            function p(e) {
-                return e.split("-")[1]
-            }(u = l || (l = {}))[u.FAILED = 0] = "FAILED", u[u.UNFETCHED = 1] = "UNFETCHED", u[u.PENDING = 2] = "PENDING", u[u.SUCCEEDED = 3] = "SUCCEEDED", u[u.FAILED_NO_RETRY = 4] = "FAILED_NO_RETRY";
-
-            function A(e, t) {
-                e.forEach(e => {
-                    S[e] = t
-                })
-            }
-
-            function I(e, t) {
-                t.forEach(t => (function(e, t, n) {
-                    S[e + t] = 3
-                })(e, t, 3))
-            }(s = r || (r = {}))[s.UNSPECIFIED = 0] = "UNSPECIFIED", s[s.BOT = 1] = "BOT", s[s.INTEGRATION = 2] = "INTEGRATION", s[s.DISCOVERY = 3] = "DISCOVERY", s[s.HUB = 4] = "HUB", s[s.INVITE = 5] = "INVITE", s[s.VANITY_URL = 6] = "VANITY_URL";
-            let g = function(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
-                    n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-                switch (e) {
-                    case 1:
-                        return f.default.Messages.MEMBER_SAFETY_JOIN_TYPE_BOT;
-                    case 2:
-                        return f.default.Messages.MEMBER_SAFETY_JOIN_TYPE_INTEGRATION;
-                    case 3:
-                        return f.default.Messages.MEMBER_SAFETY_JOIN_TYPE_DISCOVERY;
-                    case 4:
-                        return f.default.Messages.MEMBER_SAFETY_JOIN_TYPE_HUB;
-                    case 5:
-                        return f.default.Messages.MEMBER_SAFETY_JOIN_TYPE_INVITE;
-                    case 6:
-                        if (null != t && !n) return f.default.Messages.MEMBER_SAFETY_JOIN_TYPE_VANITY_URL_LABEL_NAME.format({
-                            vanityUrl: t
-                        });
-                        return f.default.Messages.MEMBER_SAFETY_JOIN_TYPE_VANITY_URL;
-                    default:
-                        return f.default.Messages.MEMBER_SAFETY_JOIN_TYPE_UNKNOWN
-                }
-            };
-            (o = a || (a = {})).DISCORD = "discord", o.TWITCH = "twitch", o.YOUTUBE = "youtube", o.GUILD_SUBSCRIPTION = "guild_subscription";
-            let N = e => {
-                    switch (e) {
-                        case "twitch":
-                            return f.default.Messages.MEMBER_SAFETY_JOIN_TYPE_INTEGRATION_TWITCH;
-                        case "youtube":
-                            return f.default.Messages.MEMBER_SAFETY_JOIN_TYPE_INTEGRATION_YOUTUBE;
-                        default:
-                            return f.default.Messages.MEMBER_SAFETY_JOIN_TYPE_INTEGRATION
-                    }
-                },
-                M = e => {
-                    let t = d.default.get((0, _.useLegacyPlatformType)(e)),
-                        n = (0, E.default)();
-                    return null != t && ["twitch", "youtube"].includes(e) ? "url('".concat((0, c.isThemeDark)(n) ? t.icon.darkSVG : t.icon.lightSVG, "')") : null
-                };
-
-            function y(e) {
-                return {
-                    userId: e.user_id,
-                    sourceInviteCode: e.source_invite_code,
-                    joinSourceType: e.join_source_type,
-                    inviterId: e.inviter_id,
-                    integrationType: e.integration_type
-                }
-            }
-            async function m(e, t) {
-                let n = R(e, t),
-                    l = n.filter(e => S[e] <= 1).map(p);
-                if (0 === l.length) return [];
-                A(n, 2);
-                try {
-                    let t = await i.HTTP.post({
-                        url: T.Endpoints.MEMBER_SAFETY_SUPPLEMENTAL(e),
-                        body: {
-                            user_ids: l
-                        }
-                    });
-                    if (!Array.isArray(t.body)) return A(n, 0), [];
-                    let r = t.body.map(y),
-                        a = [];
-                    r.forEach(e => {
-                        let {
-                            userId: t
-                        } = e;
-                        return a.push(t)
-                    });
-                    let u = R(e, a),
-                        s = l.filter(e => !a.includes(e)),
-                        o = R(e, s);
-                    return A(u, 3), A(o, 0), r
-                } catch (e) {
-                    A(n, 0)
-                }
-                return []
-            }
-        },
         347895: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -748,15 +602,15 @@
                     return A
                 },
                 completeNewMemberAction: function() {
-                    return I
+                    return g
                 },
                 getBlockForChannelDeletion: function() {
-                    return g
+                    return N
                 }
             }), n("222007"), n("808653");
             var l = n("872717"),
-                r = n("913144"),
-                a = n("819689"),
+                a = n("913144"),
+                r = n("819689"),
                 u = n("115718"),
                 s = n("38654"),
                 o = n("144491"),
@@ -769,7 +623,7 @@
                 f = n("290886"),
                 S = n("49111");
             let h = async e => {
-                r.default.dispatch({
+                a.default.dispatch({
                     type: "GUILD_HOME_SETTINGS_FETCH_START",
                     guildId: e
                 });
@@ -779,20 +633,20 @@
                             oldFormErrors: !0
                         }),
                         n = (0, _.settingsFromServer)(t.body);
-                    return r.default.dispatch({
+                    return a.default.dispatch({
                         type: "GUILD_HOME_SETTINGS_FETCH_SUCCESS",
                         guildId: e,
                         homeSettings: n
                     }), n
                 } catch (t) {
-                    r.default.dispatch({
+                    a.default.dispatch({
                         type: "GUILD_HOME_SETTINGS_FETCH_FAIL",
                         guildId: e
                     })
                 }
             }, R = async e => {
                 if (!s.default.isFullServerPreview(e)) {
-                    r.default.dispatch({
+                    a.default.dispatch({
                         type: "GUILD_NEW_MEMBER_ACTIONS_FETCH_START",
                         guildId: e
                     });
@@ -802,13 +656,13 @@
                                 oldFormErrors: !0
                             }),
                             n = (0, _.actionsFromServer)(t.body);
-                        return r.default.dispatch({
+                        return a.default.dispatch({
                             type: "GUILD_NEW_MEMBER_ACTIONS_FETCH_SUCCESS",
                             guildId: e,
                             memberActions: n
                         }), n
                     } catch (t) {
-                        r.default.dispatch({
+                        a.default.dispatch({
                             type: "GUILD_NEW_MEMBER_ACTIONS_FETCH_FAIL",
                             guildId: e
                         })
@@ -816,7 +670,7 @@
                 }
             }, p = function(e, t) {
                 let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
-                if (r.default.dispatch({
+                if (a.default.dispatch({
                         type: "SELECT_HOME_RESOURCE_CHANNEL",
                         guildId: e,
                         channelId: t
@@ -828,14 +682,14 @@
                     channel_id: l.id,
                     server_guide_channel_type: "resource",
                     channel_action_type: -1
-                }), n && (0, o.transitionToChannel)(t), a.default.jumpToMessage({
+                }), n && (0, o.transitionToChannel)(t), r.default.jumpToMessage({
                     channelId: t,
                     messageId: E.default.castChannelIdAsMessageId(t),
                     flash: !1,
                     jumpType: u.JumpTypes.INSTANT
                 })
             }, A = (e, t) => {
-                r.default.dispatch({
+                a.default.dispatch({
                     type: "SELECT_NEW_MEMBER_ACTION_CHANNEL",
                     guildId: e,
                     channelId: t
@@ -848,22 +702,22 @@
                     server_guide_channel_type: "member action",
                     channel_action_type: l.actionType
                 }), (0, o.transitionToChannel)(t)
-            }, I = (e, t) => {
-                if (r.default.dispatch({
+            }, g = (e, t) => {
+                if (a.default.dispatch({
                         type: "COMPLETE_NEW_MEMBER_ACTION",
                         guildId: e,
                         channelId: t
                     }), s.default.isFullServerPreview(e)) return;
                 let n = i.default.getChannel(t),
-                    a = d.default.getActionForChannel(e, t);
-                if (null != n && null != a) {
+                    r = d.default.getActionForChannel(e, t);
+                if (null != n && null != r) {
                     var u, o;
                     let t = E.default.keys(null !== (u = T.default.getCompletedActions(e)) && void 0 !== u ? u : {}),
                         l = null !== (o = d.default.getNewMemberActions(e)) && void 0 !== o ? o : [];
                     c.default.track(S.AnalyticEvents.SERVER_GUIDE_ACTION_COMPLETED, {
                         guild_id: n.guild_id,
                         channel_id: n.id,
-                        channel_action_type: a.actionType,
+                        channel_action_type: r.actionType,
                         has_completed_all: l.reduce((e, n) => e && t.includes(n.channelId), !0)
                     })
                 }
@@ -871,7 +725,7 @@
                     url: S.Endpoints.GUILD_MEMBER_ACTION_UPDATE(e, t)
                 })
             };
-            async function g(e, t) {
+            async function N(e, t) {
                 if (null == e) return !1;
                 let n = (0, f.canSeeOnboardingHome)(e);
                 if (!n) return !1;
@@ -910,7 +764,7 @@
                     return h
                 },
                 NewMemberActionTypes: function() {
-                    return r
+                    return a
                 },
                 newMemberActionFromServer: function() {
                     return R
@@ -922,28 +776,28 @@
                     return A
                 },
                 settingsToServer: function() {
-                    return I
-                },
-                actionsFromServer: function() {
                     return g
                 },
-                isWelcomeMessageEmpty: function() {
+                actionsFromServer: function() {
                     return N
                 },
-                isSettingsEmpty: function() {
-                    return M
+                isWelcomeMessageEmpty: function() {
+                    return I
                 },
-                isSettingsValid: function() {
+                isSettingsEmpty: function() {
                     return y
                 },
-                isChannelValidForResourceChannel: function() {
+                isSettingsValid: function() {
                     return m
+                },
+                isChannelValidForResourceChannel: function() {
+                    return M
                 },
                 isChannelValidForNewMemberAction: function() {
                     return C
                 }
             });
-            var l, r, a = n("42203"),
+            var l, a, r = n("42203"),
                 u = n("449008"),
                 s = n("991170"),
                 o = n("49111");
@@ -994,53 +848,53 @@
                     welcome_message: t,
                     new_member_actions: n,
                     resource_channels: l,
-                    enabled: r
+                    enabled: a
                 } = e, s = {
                     authorIds: t.author_ids,
                     message: t.message
-                }, o = n.filter(e => (0, u.isNotNullish)(a.default.getChannel(e.channel_id))).map(R), i = l.filter(e => (0, u.isNotNullish)(a.default.getChannel(e.channel_id))).map(p);
+                }, o = n.filter(e => (0, u.isNotNullish)(r.default.getChannel(e.channel_id))).map(R), i = l.filter(e => (0, u.isNotNullish)(r.default.getChannel(e.channel_id))).map(p);
                 return {
                     welcomeMessage: s,
                     newMemberActions: o,
                     resourceChannels: i,
-                    enabled: r
+                    enabled: a
                 }
             }
 
-            function I(e, t) {
+            function g(e, t) {
                 var n, l;
                 if (null == t) return null;
                 let {
-                    welcomeMessage: r,
+                    welcomeMessage: a,
                     newMemberActions: s,
                     resourceChannels: o,
                     enabled: i
                 } = t, c = {
-                    author_ids: null !== (n = null == r ? void 0 : r.authorIds) && void 0 !== n ? n : [],
-                    message: null !== (l = null == r ? void 0 : r.message) && void 0 !== l ? l : ""
-                }, E = (null != s ? s : []).filter(e => (0, u.isNotNullish)(a.default.getChannel(e.channelId))).map(e => {
-                    var t, n, l, r, a, u, s;
+                    author_ids: null !== (n = null == a ? void 0 : a.authorIds) && void 0 !== n ? n : [],
+                    message: null !== (l = null == a ? void 0 : a.message) && void 0 !== l ? l : ""
+                }, E = (null != s ? s : []).filter(e => (0, u.isNotNullish)(r.default.getChannel(e.channelId))).map(e => {
+                    var t, n, l, a, r, u, s;
                     return {
                         channel_id: e.channelId,
                         action_type: e.actionType,
                         title: e.title,
                         description: e.description,
                         emoji: {
-                            id: null !== (r = null === (t = e.emoji) || void 0 === t ? void 0 : t.id) && void 0 !== r ? r : void 0,
-                            name: null !== (a = null === (n = e.emoji) || void 0 === n ? void 0 : n.name) && void 0 !== a ? a : void 0,
+                            id: null !== (a = null === (t = e.emoji) || void 0 === t ? void 0 : t.id) && void 0 !== a ? a : void 0,
+                            name: null !== (r = null === (n = e.emoji) || void 0 === n ? void 0 : n.name) && void 0 !== r ? r : void 0,
                             animated: null !== (u = null === (l = e.emoji) || void 0 === l ? void 0 : l.animated) && void 0 !== u ? u : void 0
                         },
                         icon: null !== (s = e.icon) && void 0 !== s ? s : void 0
                     }
-                }), d = (null != o ? o : []).filter(e => (0, u.isNotNullish)(a.default.getChannel(e.channelId))).map(e => {
-                    var t, n, l, r, a, u, s;
+                }), d = (null != o ? o : []).filter(e => (0, u.isNotNullish)(r.default.getChannel(e.channelId))).map(e => {
+                    var t, n, l, a, r, u, s;
                     return {
                         channel_id: e.channelId,
                         title: e.title,
                         description: e.description,
                         emoji: {
-                            id: null !== (r = null === (t = e.emoji) || void 0 === t ? void 0 : t.id) && void 0 !== r ? r : void 0,
-                            name: null !== (a = null === (n = e.emoji) || void 0 === n ? void 0 : n.name) && void 0 !== a ? a : void 0,
+                            id: null !== (a = null === (t = e.emoji) || void 0 === t ? void 0 : t.id) && void 0 !== a ? a : void 0,
+                            name: null !== (r = null === (n = e.emoji) || void 0 === n ? void 0 : n.name) && void 0 !== r ? r : void 0,
                             animated: null !== (u = null === (l = e.emoji) || void 0 === l ? void 0 : l.animated) && void 0 !== u ? u : void 0
                         },
                         icon: null !== (s = e.icon) && void 0 !== s ? s : void 0
@@ -1053,28 +907,28 @@
                     resource_channels: d,
                     enabled: i
                 }
-            }(l = r || (r = {}))[l.VIEW = 0] = "VIEW", l[l.CHAT = 1] = "CHAT";
-            let g = e => {
+            }(l = a || (a = {}))[l.VIEW = 0] = "VIEW", l[l.CHAT = 1] = "CHAT";
+            let N = e => {
                 if (null == e) return null;
                 let t = {};
                 for (let n in e.channel_actions) t[n] = e.channel_actions[n].completed;
                 return t
             };
 
-            function N(e) {
+            function I(e) {
                 return null == e || (null == e.message || !(e.message.length > 0)) && (null == e.authorIds || !(e.authorIds.length > 0)) && !0
             }
 
-            function M(e) {
-                return null == e || !!N(e.welcomeMessage) && (null == e.newMemberActions || !(e.newMemberActions.length > 0)) && (null == e.resourceChannels || !(e.resourceChannels.length > 0)) && !0
-            }
-
             function y(e) {
-                var t, n;
-                return null != e && (!!M(e) || (null === (t = e.welcomeMessage) || void 0 === t ? void 0 : t.message) != null && !(e.welcomeMessage.message.length < i) && (null === (n = e.welcomeMessage) || void 0 === n ? void 0 : n.authorIds) != null && 0 !== e.welcomeMessage.authorIds.length && null != e.newMemberActions && !(e.newMemberActions.length < 3) && !0)
+                return null == e || !!I(e.welcomeMessage) && (null == e.newMemberActions || !(e.newMemberActions.length > 0)) && (null == e.resourceChannels || !(e.resourceChannels.length > 0)) && !0
             }
 
             function m(e) {
+                var t, n;
+                return null != e && (!!y(e) || (null === (t = e.welcomeMessage) || void 0 === t ? void 0 : t.message) != null && !(e.welcomeMessage.message.length < i) && (null === (n = e.welcomeMessage) || void 0 === n ? void 0 : n.authorIds) != null && 0 !== e.welcomeMessage.authorIds.length && null != e.newMemberActions && !(e.newMemberActions.length < 3) && !0)
+            }
+
+            function M(e) {
                 return e.type === o.ChannelTypes.GUILD_TEXT && !s.canEveryoneRole(o.Permissions.SEND_MESSAGES, e) && s.canEveryoneRole(o.Permissions.VIEW_CHANNEL, e)
             }
 
@@ -1094,7 +948,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 isSpamSupported: function() {
-                    return a
+                    return r
                 },
                 isSpammer: function() {
                     return u
@@ -1104,169 +958,20 @@
                 }
             });
             var l = n("697218"),
-                r = n("49111");
+                a = n("49111");
 
-            function a(e) {
-                return void 0 !== e && e.type !== r.ChannelTypes.DM
+            function r(e) {
+                return void 0 !== e && e.type !== a.ChannelTypes.DM
             }
 
             function u(e) {
                 var t, n;
-                return null !== (n = null === (t = l.default.getUser(e)) || void 0 === t ? void 0 : t.hasFlag(r.UserFlags.SPAMMER)) && void 0 !== n && n
+                return null !== (n = null === (t = l.default.getUser(e)) || void 0 === t ? void 0 : t.hasFlag(a.UserFlags.SPAMMER)) && void 0 !== n && n
             }
 
             function s(e) {
                 return u(e.author.id)
             }
-        },
-        433487: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return s
-                }
-            });
-            var l = n("37983");
-            n("884691");
-            var r = n("469563"),
-                a = n("304983"),
-                u = n("75196"),
-                s = (0, r.replaceIcon)(function(e) {
-                    let {
-                        width: t = 24,
-                        height: n = 24,
-                        color: r = "currentColor",
-                        foreground: a,
-                        ...s
-                    } = e;
-                    return (0, l.jsx)("svg", {
-                        ...(0, u.default)(s),
-                        width: t,
-                        height: n,
-                        viewBox: "0 0 24 24",
-                        children: (0, l.jsx)("path", {
-                            fill: r,
-                            className: a,
-                            fillRule: "evenodd",
-                            clipRule: "evenodd",
-                            d: "M7 12.001C7 10.8964 6.10457 10.001 5 10.001C3.89543 10.001 3 10.8964 3 12.001C3 13.1055 3.89543 14.001 5 14.001C6.10457 14.001 7 13.1055 7 12.001ZM14 12.001C14 10.8964 13.1046 10.001 12 10.001C10.8954 10.001 10 10.8964 10 12.001C10 13.1055 10.8954 14.001 12 14.001C13.1046 14.001 14 13.1055 14 12.001ZM19 10.001C20.1046 10.001 21 10.8964 21 12.001C21 13.1055 20.1046 14.001 19 14.001C17.8954 14.001 17 13.1055 17 12.001C17 10.8964 17.8954 10.001 19 10.001Z"
-                        })
-                    })
-                }, a.MoreHorizontalIcon, void 0, {
-                    size: 24
-                })
-        },
-        155207: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return s
-                }
-            });
-            var l = n("37983");
-            n("884691");
-            var r = n("469563"),
-                a = n("811513"),
-                u = n("75196"),
-                s = (0, r.replaceIcon)(function(e) {
-                    let {
-                        width: t = 24,
-                        height: n = 24,
-                        color: r = "currentColor",
-                        foreground: a,
-                        ...s
-                    } = e;
-                    return (0, l.jsxs)("svg", {
-                        ...(0, u.default)(s),
-                        width: t,
-                        height: n,
-                        viewBox: "0 0 24 24",
-                        children: [(0, l.jsx)("path", {
-                            className: a,
-                            fill: r,
-                            fillRule: "evenodd",
-                            clipRule: "evenodd",
-                            d: "M14 8.00598C14 10.211 12.206 12.006 10 12.006C7.795 12.006 6 10.211 6 8.00598C6 5.80098 7.794 4.00598 10 4.00598C12.206 4.00598 14 5.80098 14 8.00598ZM2 19.006C2 15.473 5.29 13.006 10 13.006C14.711 13.006 18 15.473 18 19.006V20.006H2V19.006Z"
-                        }), (0, l.jsx)("path", {
-                            className: a,
-                            fill: r,
-                            fillRule: "evenodd",
-                            clipRule: "evenodd",
-                            d: "M14 8.00598C14 10.211 12.206 12.006 10 12.006C7.795 12.006 6 10.211 6 8.00598C6 5.80098 7.794 4.00598 10 4.00598C12.206 4.00598 14 5.80098 14 8.00598ZM2 19.006C2 15.473 5.29 13.006 10 13.006C14.711 13.006 18 15.473 18 19.006V20.006H2V19.006Z"
-                        }), (0, l.jsx)("path", {
-                            className: a,
-                            fill: r,
-                            d: "M20.0001 20.006H22.0001V19.006C22.0001 16.4433 20.2697 14.4415 17.5213 13.5352C19.0621 14.9127 20.0001 16.8059 20.0001 19.006V20.006Z"
-                        }), (0, l.jsx)("path", {
-                            className: a,
-                            fill: r,
-                            d: "M14.8834 11.9077C16.6657 11.5044 18.0001 9.9077 18.0001 8.00598C18.0001 5.96916 16.4693 4.28218 14.4971 4.0367C15.4322 5.09511 16.0001 6.48524 16.0001 8.00598C16.0001 9.44888 15.4889 10.7742 14.6378 11.8102C14.7203 11.8418 14.8022 11.8743 14.8834 11.9077Z"
-                        })]
-                    })
-                }, a.GroupIcon, void 0, {
-                    size: 24
-                })
-        },
-        713573: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return E
-                }
-            });
-            var l = n("37983");
-            n("884691");
-            var r = n("414456"),
-                a = n.n(r),
-                u = n("77078"),
-                s = n("451914"),
-                o = n("548122");
-            let i = Object.freeze({
-                    SIZE_10: o.size10,
-                    SIZE_12: o.size12,
-                    SIZE_14: o.size14,
-                    SIZE_16: o.size16,
-                    SIZE_20: o.size20,
-                    SIZE_24: o.size24,
-                    SIZE_32: o.size32
-                }),
-                c = e => {
-                    let {
-                        id: t,
-                        muted: n = !1,
-                        className: r = s.wrapper,
-                        size: o = i.SIZE_14,
-                        selectable: c = !1,
-                        children: E,
-                        color: d,
-                        onClick: _,
-                        onContextMenu: T,
-                        style: f,
-                        title: S,
-                        uppercase: h
-                    } = e;
-                    return (0, l.jsx)(u.H, {
-                        role: null != _ ? "button" : void 0,
-                        onClick: _,
-                        onContextMenu: T,
-                        id: t,
-                        className: a(r, {
-                            [s.base]: !0,
-                            [o]: !0,
-                            [s.selectable]: c,
-                            [s.muted]: n,
-                            [s.uppercase]: h
-                        }),
-                        title: S,
-                        style: null != d ? {
-                            ...f,
-                            color: d
-                        } : f,
-                        children: E
-                    })
-                };
-            c.Sizes = i;
-            var E = c
         },
         746574: function(e, t, n) {
             "use strict";
@@ -1279,41 +984,41 @@
                 }
             }), n("424973"), n("222007");
             var l = n("917351"),
-                r = n.n(l),
-                a = n("605250");
-            let u = new a.default("DragAndDropUtils");
+                a = n.n(l),
+                r = n("605250");
+            let u = new r.default("DragAndDropUtils");
 
             function s(e) {
                 let {
                     oldOrdering: t,
                     newOrdering: n,
                     idGetter: l,
-                    existingPositionGetter: r,
-                    ascending: a = !0
+                    existingPositionGetter: a,
+                    ascending: r = !0
                 } = e, s = n.length;
                 if (t.length !== s) return u.warn("Arrays are not of the same length!", t, n), [];
                 let o = t.map(l).sort().join(":"),
                     i = n.map(l).sort().join(":");
                 if (o !== i) return u.warn("Object IDs in the old ordering and the new ordering are not the same.", o, i), [];
                 let c = {};
-                for (let e = 0; e < s; e++) c[l(t[e])] = r(t[e]);
+                for (let e = 0; e < s; e++) c[l(t[e])] = a(t[e]);
                 let E = [];
                 for (let e = 0; e < s; e++) {
                     let t = l(n[e]),
                         u = c[t],
-                        o = a ? e : s - 1 - e;
-                    (u !== o || r(n[e]) !== o) && E.push({
+                        o = r ? e : s - 1 - e;
+                    (u !== o || a(n[e]) !== o) && E.push({
                         id: t,
                         position: o
                     })
                 }
-                return !a && E.reverse(), E
+                return !r && E.reverse(), E
             }
 
             function o(e, t, n) {
                 let l = e[t],
-                    r = [...e];
-                return r.splice(t, 1), r.splice(n, 0, l), r
+                    a = [...e];
+                return a.splice(t, 1), a.splice(n, 0, l), a
             }
             var i = {
                 moveItemFromTo: o,
@@ -1323,16 +1028,16 @@
                         objectArray: t,
                         fromPosition: n,
                         toPosition: l,
-                        idGetter: a,
+                        idGetter: r,
                         existingPositionGetter: u,
                         ascending: i = !0
                     } = e;
-                    !Array.isArray(t) && (t = r.values(t));
+                    !Array.isArray(t) && (t = a.values(t));
                     let c = o(t, n, l);
                     return s({
                         oldOrdering: t,
                         newOrdering: c,
-                        idGetter: a,
+                        idGetter: r,
                         existingPositionGetter: u,
                         ascending: i
                     })
@@ -1367,24 +1072,24 @@
                     return A
                 },
                 tokenizeQuery: function() {
-                    return g
-                },
-                clearTokenCache: function() {
                     return N
                 },
-                showDatePicker: function() {
-                    return M
+                clearTokenCache: function() {
+                    return I
                 },
-                filterHasAnswer: function() {
+                showDatePicker: function() {
                     return y
                 },
-                refreshSearchTokens: function() {
+                filterHasAnswer: function() {
                     return m
+                },
+                refreshSearchTokens: function() {
+                    return M
                 }
             }), n("222007"), n("808653");
             var l = n("917351"),
-                r = n.n(l),
-                a = n("76385"),
+                a = n.n(l),
+                r = n("76385"),
                 u = n("955513"),
                 s = n("247013"),
                 o = n("697218"),
@@ -1439,17 +1144,17 @@
                             case c.SearchTokenTypes.ANSWER_ON:
                             case c.SearchTokenTypes.ANSWER_AFTER:
                                 let l = e.getData("start"),
-                                    r = e.getData("end");
-                                l && (t.min_id = i.default.fromTimestamp(l)), r && (t.max_id = i.default.fromTimestamp(r));
+                                    a = e.getData("end");
+                                l && (t.min_id = i.default.fromTimestamp(l)), a && (t.max_id = i.default.fromTimestamp(a));
                                 return
                         }
-                        let a = function(e) {
+                        let r = function(e) {
                             let t = u.default[e],
                                 n = null != t ? t.queryKey : null;
                             return null == n && (n = "content"), n
                         }(n);
-                        null == t[a] && (t[a] = new Set);
-                        let s = t[a];
+                        null == t[r] && (t[r] = new Set);
+                        let s = t[r];
                         switch (n) {
                             case c.SearchTokenTypes.ANSWER_USERNAME_FROM:
                             case c.SearchTokenTypes.ANSWER_USERNAME_MENTIONS:
@@ -1476,12 +1181,12 @@
             }
 
             function S(e, t, n) {
-                let l, r;
-                let a = e.find((a, u) => t >= a.start && t <= a.end && n >= a.start && n <= a.end ? (null != e[u + 1] && (r = e[u + 1]), !0) : (l = a, !1));
-                return null == a ? null : {
+                let l, a;
+                let r = e.find((r, u) => t >= r.start && t <= r.end && n >= r.start && n <= r.end ? (null != e[u + 1] && (a = e[u + 1]), !0) : (l = r, !1));
+                return null == r ? null : {
                     previousToken: l,
-                    currentToken: a,
-                    nextToken: r,
+                    currentToken: r,
+                    nextToken: a,
                     focusOffset: t,
                     anchorOffset: n
                 }
@@ -1492,7 +1197,7 @@
                 e = null != e ? e : {};
                 let {
                     currentToken: l,
-                    nextToken: r,
+                    nextToken: a,
                     previousToken: u
                 } = e;
                 if (0 === t.length) return {
@@ -1506,22 +1211,22 @@
                     token: null
                 };
                 if (c.IS_SEARCH_FILTER_TOKEN.test(l.type)) {
-                    if (null == r || r.type === a.default.NON_TOKEN_TYPE) return {
+                    if (null == a || a.type === r.default.NON_TOKEN_TYPE) return {
                         type: c.SearchPopoutModes.FILTER,
                         filter: l.type,
-                        token: r
+                        token: a
                     };
-                    if (null != r && !c.IS_SEARCH_ANSWER_TOKEN.test(r.type)) return {
+                    if (null != a && !c.IS_SEARCH_ANSWER_TOKEN.test(a.type)) return {
                         type: c.SearchPopoutModes.FILTER,
                         filter: l.type,
                         token: null
                     }
                 }
-                return l.type === a.default.NON_TOKEN_TYPE && null != u && c.IS_SEARCH_FILTER_TOKEN.test(u.type) ? {
+                return l.type === r.default.NON_TOKEN_TYPE && null != u && c.IS_SEARCH_FILTER_TOKEN.test(u.type) ? {
                     type: c.SearchPopoutModes.FILTER,
                     filter: u.type,
                     token: l
-                } : (l.type === a.default.NON_TOKEN_TYPE && (n = l), {
+                } : (l.type === r.default.NON_TOKEN_TYPE && (n = l), {
                     type: c.SearchPopoutModes.FILTER_ALL,
                     filter: null,
                     token: n
@@ -1530,14 +1235,14 @@
 
             function R(e, t) {
                 let n = [];
-                return r(e).forEach(e => {
+                return a(e).forEach(e => {
                     if (null == e || 0 === e.results.length) return;
                     let l = e.group;
                     n = n.concat(e.results.map(e => {
                         let n = e.text;
                         if (t === c.SearchPopoutModes.FILTER_ALL) {
-                            var r;
-                            l = null !== (r = e.group) && void 0 !== r ? r : l;
+                            var a;
+                            l = null !== (a = e.group) && void 0 !== a ? a : l;
                             let t = u.default[l];
                             (null == t ? void 0 : t.key) != null && (null == t ? void 0 : t.key) !== "" && (n = "".concat(t.key, " ").concat(n))
                         }
@@ -1553,102 +1258,32 @@
             function A(e) {
                 return null == e ? "" : e.map(e => e.getFullMatch()).join("")
             }
-            let I = new a.default;
+            let g = new r.default;
 
-            function g(e) {
-                return I.tokenize(e)
+            function N(e) {
+                return g.tokenize(e)
             }
 
-            function N() {
-                return I.clearCache()
+            function I() {
+                return g.clearCache()
             }
 
-            function M(e) {
+            function y(e) {
                 return null != e ? _[e] : null
             }
 
-            function y(e, t) {
+            function m(e, t) {
                 let n = c.IS_SEARCH_FILTER_TOKEN.test(e.type);
                 return (null != t || !n) && (null == t || !n || !!c.IS_SEARCH_ANSWER_TOKEN.test(t.type)) && !0
             }
 
-            function m() {
-                (0, u.refreshSearchTokens)(), I.reset(), r(u.default).forOwn((e, t) => I.addRule({
+            function M() {
+                (0, u.refreshSearchTokens)(), g.reset(), a(u.default).forOwn((e, t) => g.addRule({
                     type: t,
                     ...e
                 }))
             }
-        },
-        430143: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                GroupIcon: function() {
-                    return u
-                }
-            });
-            var l = n("37983");
-            n("884691");
-            var r = n("669491"),
-                a = n("82169");
-            let u = e => {
-                let {
-                    width: t = 24,
-                    height: n = 24,
-                    color: u = r.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: s = "",
-                    ...o
-                } = e;
-                return (0, l.jsx)("svg", {
-                    ...(0, a.default)(o),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: n,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, l.jsx)("path", {
-                        fill: "string" == typeof u ? u : u.css,
-                        d: "M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5 5 0 0 1 2.14 3.08c.01.06.06.1.12.1ZM18.44 17.27c.15.43.54.73 1 .73h1.06c.83 0 1.5-.67 1.5-1.5a7.5 7.5 0 0 0-6.5-7.43c-.55-.08-.99.38-1.1.92-.06.3-.15.6-.26.87-.23.58-.05 1.3.47 1.63a9.53 9.53 0 0 1 3.83 4.78ZM12.5 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM2 20.5a7.5 7.5 0 0 1 15 0c0 .83-.67 1.5-1.5 1.5a.2.2 0 0 1-.2-.16c-.2-.96-.56-1.87-.88-2.54-.1-.23-.42-.15-.42.1v2.1a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2.1c0-.25-.31-.33-.42-.1-.32.67-.67 1.58-.88 2.54a.2.2 0 0 1-.2.16A1.5 1.5 0 0 1 2 20.5Z",
-                        className: s
-                    })
-                })
-            }
-        },
-        541742: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                MoreHorizontalIcon: function() {
-                    return u
-                }
-            });
-            var l = n("37983");
-            n("884691");
-            var r = n("669491"),
-                a = n("82169");
-            let u = e => {
-                let {
-                    width: t = 24,
-                    height: n = 24,
-                    color: u = r.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: s = "",
-                    ...o
-                } = e;
-                return (0, l.jsx)("svg", {
-                    ...(0, a.default)(o),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: n,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, l.jsx)("path", {
-                        fill: "string" == typeof u ? u : u.css,
-                        fillRule: "evenodd",
-                        d: "M4 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm10-2a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm8 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z",
-                        clipRule: "evenodd",
-                        className: s
-                    })
-                })
-            }
         }
     }
 ]);
-//# sourceMappingURL=81084.6808285a989bfa40f254.js.map
+//# sourceMappingURL=86993.d4a429c53139b37c7add.js.map
