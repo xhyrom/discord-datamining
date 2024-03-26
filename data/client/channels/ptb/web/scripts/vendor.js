@@ -88264,8 +88264,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711477862870",
-                                    build_number: "278668"
+                                    built_at: "1711478655908",
+                                    build_number: "278678"
                                 }
                             },
                             retries: 1
@@ -92795,65 +92795,71 @@
                 DEFAULT_MAX_GRACE_PERIOD_DAYS: function() {
                     return ei
                 },
-                PAID_SUBSCRIPTION_MAX_GRACE_PERIOD_DAYS: function() {
+                DEFAULT_APPLE_GRACE_PERIOD_DAYS: function() {
                     return es
                 },
-                MAX_ACCOUNT_HOLD_DAYS: function() {
+                DEFAULT_GOOGLE_GRACE_PERIOD_DAYS: function() {
                     return er
                 },
-                BLACK_FRIDAY_2020_GIFT_CODE_BATCH_ID: function() {
+                PAID_SUBSCRIPTION_MAX_GRACE_PERIOD_DAYS: function() {
                     return ea
                 },
-                STICKERS_GIFT_CODE_BATCH_ID: function() {
+                MAX_ACCOUNT_HOLD_DAYS: function() {
                     return eo
                 },
-                USER_PREMIUM_SUBSCRIPTION_TRIAL_EXPIRES_APPROACHING_5_DAY_THRESHOLD: function() {
+                BLACK_FRIDAY_2020_GIFT_CODE_BATCH_ID: function() {
                     return el
                 },
-                MAX_PAYMENT_PROCESSING_TIME_DAYS: function() {
+                STICKERS_GIFT_CODE_BATCH_ID: function() {
                     return eu
                 },
-                PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID: function() {
+                USER_PREMIUM_SUBSCRIPTION_TRIAL_EXPIRES_APPROACHING_5_DAY_THRESHOLD: function() {
                     return ed
                 },
-                PREMIUM_TIER_2_REACTIVATION_TRIAL_ID: function() {
+                MAX_PAYMENT_PROCESSING_TIME_DAYS: function() {
                     return ec
                 },
-                PREMIUM_TIER_2_HFU_ONE_WEEK_TRIAL_ID: function() {
+                PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID: function() {
                     return e_
                 },
-                PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID: function() {
+                PREMIUM_TIER_2_REACTIVATION_TRIAL_ID: function() {
                     return ef
                 },
-                PREMIUM_TIER_2_HFU_ONE_MONTH_TRIAL_ID: function() {
+                PREMIUM_TIER_2_HFU_ONE_WEEK_TRIAL_ID: function() {
                     return eE
                 },
-                PREMIUM_TIER_2_AUTH3_TRIAL_ID: function() {
+                PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID: function() {
                     return eh
                 },
-                PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID: function() {
+                PREMIUM_TIER_2_HFU_ONE_MONTH_TRIAL_ID: function() {
+                    return eg
+                },
+                PREMIUM_TIER_2_AUTH3_TRIAL_ID: function() {
                     return em
                 },
-                PREMIUM_TIER_2_LIKELIHOOD_DISCOUNT_ID: function() {
-                    return ep
-                },
-                PREMIUM_TIER_2_REACTIVATION_DISCOUNT_ID: function() {
+                PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID: function() {
                     return eS
                 },
-                PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: function() {
+                PREMIUM_TIER_2_LIKELIHOOD_DISCOUNT_ID: function() {
                     return eT
                 },
-                PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: function() {
+                PREMIUM_TIER_2_REACTIVATION_DISCOUNT_ID: function() {
                     return ev
                 },
-                PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_30_PERCENT_DISCOUNT_ID: function() {
+                PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: function() {
                     return eI
                 },
-                PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: function() {
+                PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: function() {
                     return eA
                 },
-                SubscriptionTrials: function() {
+                PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_30_PERCENT_DISCOUNT_ID: function() {
                     return eC
+                },
+                PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: function() {
+                    return ey
+                },
+                SubscriptionTrials: function() {
+                    return eN
                 },
                 PremiumUpsellTypes: function() {
                     return l
@@ -92862,25 +92868,25 @@
                     return u
                 },
                 SKU_ID_PURCHASED_FLAGS: function() {
-                    return ey
-                },
-                MAX_PREMIUM_TIER_0_ATTACHMENT_SIZE: function() {
-                    return eN
-                },
-                IncrementalStickerCountsByTier: function() {
                     return eR
                 },
-                TotalStickerCountsByTier: function() {
+                MAX_PREMIUM_TIER_0_ATTACHMENT_SIZE: function() {
                     return eO
                 },
-                TotalSoundboardSoundCountsByTier: function() {
+                IncrementalStickerCountsByTier: function() {
                     return eD
                 },
-                BoostedGuildFeatures: function() {
+                TotalStickerCountsByTier: function() {
                     return eP
                 },
-                ORDERED_PREMIUM_SUBSCRIPTION_PLANS: function() {
+                TotalSoundboardSoundCountsByTier: function() {
                     return eL
+                },
+                BoostedGuildFeatures: function() {
+                    return eM
+                },
+                ORDERED_PREMIUM_SUBSCRIPTION_PLANS: function() {
+                    return eb
                 },
                 AnalyticsPremiumFeatureNames: function() {
                     return d
@@ -92889,13 +92895,13 @@
                     return c
                 },
                 DISCOUNTS: function() {
-                    return eM
+                    return eU
                 },
                 StreamQualities: function() {
                     return _
                 },
                 StreamQualitiesToPremiumType: function() {
-                    return eb
+                    return ew
                 },
                 PremiumMarketingEntrypoints: function() {
                     return f
@@ -92910,10 +92916,10 @@
                     return g
                 },
                 PromotionFlags: function() {
-                    return eU
+                    return ek
                 },
                 PremiumUserLimits: function() {
-                    return ew
+                    return eV
                 },
                 BoostingUpsellAction: function() {
                     return S
@@ -92922,28 +92928,28 @@
                     return T
                 },
                 LegacyPricingCountries: function() {
-                    return ek
-                },
-                LegacySeasonalGiftStyles: function() {
-                    return eV
-                },
-                STANDARD_GIFT_OPTIONS: function() {
                     return eG
                 },
-                SeasonalGiftStyles2023: function() {
+                LegacySeasonalGiftStyles: function() {
                     return eF
                 },
-                AllSeasonalGiftStyles: function() {
+                STANDARD_GIFT_OPTIONS: function() {
                     return ex
                 },
-                CUSTOM_GIFT_MESSAGE_MAX_LENGTH: function() {
+                SeasonalGiftStyles2023: function() {
                     return eB
                 },
-                DISCOUNT_DURATION_FALLBACK: function() {
+                AllSeasonalGiftStyles: function() {
                     return eH
                 },
-                DISCOUNT_PERCENTAGE_FALLBACK: function() {
+                CUSTOM_GIFT_MESSAGE_MAX_LENGTH: function() {
                     return eY
+                },
+                DISCOUNT_DURATION_FALLBACK: function() {
+                    return eK
+                },
+                DISCOUNT_PERCENTAGE_FALLBACK: function() {
+                    return ej
                 }
             }), n("222007");
             var i, s, r, a, o, l, u, d, c, _, f, E, h, g, m, p, S, T, v, I, A, C, y, N, R, O, D, P, L, M, b, U, w, k, V, G, F = n("49111"),
@@ -93142,35 +93148,29 @@
                 et = 30,
                 en = 2,
                 ei = 3,
-                es = 7,
+                es = 28,
                 er = 30,
-                ea = "775514091874680832",
-                eo = "845031178288889946",
-                el = 432e6,
-                eu = 14,
-                ed = "520373071933079552",
-                ec = "902329034132684800",
-                e_ = "983601860436819968",
-                ef = "983601860436819969",
-                eE = "984244797441048577",
-                eh = "1004850445463584768",
-                eg = "1073698058383917056",
-                em = "1070132870233980928",
-                ep = "1150904354090532864",
-                eS = "1199128659810582528",
-                eT = "1204865493622587392",
-                ev = "1204867673024888832",
-                eI = "1215346678383509504",
-                eA = "1215366184820539392",
-                eC = Object.freeze({
-                    [ed]: {
-                        id: ed,
-                        skus: ["521847234246082599"]
-                    },
-                    [ec]: {
-                        id: ec,
-                        skus: ["521847234246082599"]
-                    },
+                ea = 7,
+                eo = 30,
+                el = "775514091874680832",
+                eu = "845031178288889946",
+                ed = 432e6,
+                ec = 14,
+                e_ = "520373071933079552",
+                ef = "902329034132684800",
+                eE = "983601860436819968",
+                eh = "983601860436819969",
+                eg = "984244797441048577",
+                em = "1004850445463584768",
+                ep = "1073698058383917056",
+                eS = "1070132870233980928",
+                eT = "1150904354090532864",
+                ev = "1199128659810582528",
+                eI = "1204865493622587392",
+                eA = "1204867673024888832",
+                eC = "1215346678383509504",
+                ey = "1215366184820539392",
+                eN = Object.freeze({
                     [e_]: {
                         id: e_,
                         skus: ["521847234246082599"]
@@ -93187,42 +93187,50 @@
                         id: eh,
                         skus: ["521847234246082599"]
                     },
-                    [em]: {
-                        id: em,
-                        skus: ["978380684370378762"]
-                    },
                     [eg]: {
                         id: eg,
+                        skus: ["521847234246082599"]
+                    },
+                    [em]: {
+                        id: em,
+                        skus: ["521847234246082599"]
+                    },
+                    [eS]: {
+                        id: eS,
+                        skus: ["978380684370378762"]
+                    },
+                    [ep]: {
+                        id: ep,
                         skus: ["521847234246082599"]
                     }
                 });
             (N = l || (l = {})).ANIMATED_GUILD_BANNER_TOOLTIP = "animated_guild_banner_tooltip", N.EMOJI_PICKER_SEARCH = "emoji_picker_search", N.EMOJI_PICKER_EMOJI_CLICKED = "emoji_picker_emoji_clicked", N.EMOJI_PICKER_STICKER_CLICKED = "emoji_picker_sticker_clicked", N.EMOJI_PICKER_REACTION_EMOJI_CLICKED = "emoji_picker_reaction_emoji_clicked", N.EMOJI_PICKER_SUPER_REACTION_EMOJI_CLICKED = "emoji_picker_super_reaction_emoji_clicked", N.EMOJI_PICKER_STATUS_EMOJI_CLICKED = "emoji_picker_status_emoji_clicked", N.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED = "emoji_picker_top_server_emoji_clicked", N.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED = "emoji_picker_newly_added_emoji_clicked", N.EMOJI_AUTOSUGGEST_CLICKED = "emoji_autosuggest_clicked", N.EMOJI_AUTOCOMPLETE_INLINE = "emoji_autocomplete_inline", N.EMOJI_AUTOCOMPLETE_MODAL = "emoji_autocomplete_modal", N.EMOJI_IN_MESSAGE_HOVER = "emoji_in_message_hover", N.EMOJI_IN_REACTION_HOVER = "emoji_in_reaction_hover", N.EMOJI_IN_BURST_REACTION_HOVER = "emoji_in_burst_reaction_hover", N.EMOJI_IN_BURST_REACTION_HOVER_UPSELL = "emoji_in_burst_reaction_hover_upsell", N.EMOJI_PICKER_FLOATING_UPSELL = "emoji_picker_floating_upsell", N.STICKER_IN_MESSAGE_HOVER = "sticker_in_message_hover", N.EMPTY_STICKER_PICKER_UPSELL = "empty_sticker_picker_upsell", N.STREAM_QUALITY_INDICATOR = "stream_quality_indicator", N.GIFT_STREAM_QUALITY_INDICATOR = "gift_stream_quality_indicator", N.STREAM_QUALITY_UPSELL = "stream_quality_upsell", N.MESSAGE_LENGTH_UPSELL = "message_length_upsell", N.MESSAGE_LENGTH_IN_EDITOR_UPSELL = "message_length_in_editor_upsell", N.CUSTOM_PROFILE_UPSELL = "custom profiles upsell modal", N.CUSTOM_PROFILE_TRY_OUT_UPSELL = "try out custom profile in settings upsell", N.VIDEO_BACKGROUNDS_MODAL = "video backgrounds modal", N.VIDEO_BACKGROUNDS_INLINE = "video backgrounds inline", N.GUILD_CAP_INLINE_SERVER_LIST = "guild_cap_inline_server_list", N.GUILD_PREMIUM_UPSELL_MODAL = "premium guild premium upsell modal", N.GUILD_CAP_INLINE_INVITE_MODAL = "guild_cap_inline_invite_modal", N.GUILD_CAP_MODAL_UPSELL = "guild_cap_modal_upsell", N.PREMIUM_GUILD_IDENTITY_MODAL = "premium guild identity upsell alert", N.CUSTOM_PROFILE_SETTINGS_BANNER_BUTTON = "custom profiles settings banner upsell", N.CUSTOM_PROFILES_PROFILE_BANNER_SOCIAL_UPSELL = "custom profiles profile banner social upsell", N.STICKER_PICKER_UPSELL = "sticker_picker_upsell", N.ANIMATED_AVATAR_PREVIEW_GIF_MODAL = "animated avatar preview gif modal", N.PREMIUM_PROGRESS_BAR = "premium_progress_bar_tooltip", N.INVITE_SPLASH_UPSELL = "premium_invite_splash_upsell", N.ANIMATED_USER_AVATAR_MODAL = "animated user avatar upsell modal", N.UPLOAD_ERROR_UPSELL = "upload error upsell", N.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE = "premium guild member profile upsell inline", N.CONCURRENT_ACTIVITIES = "Concurrent Activities", N.PREMIUM_UNCANCEL_WINBACK_MODAL_VIEWED = "premium_uncancel_winback_modal_viewed", N.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET = "animated_video_background_new_preset", N.LOW_PRICE_EXPERIMENT_TOOLTIP = "low_price_experiment_tooltip", N.PREMIUM_PROFILE_BADGE_UPSELL = "premium_profile_badge_upsell", N.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI = "emoji", N.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_PROFILE_CUSTOMIZATION = "profile customization", N.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_HD_STREAMING = "hd streaming", N.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_LARGER_FILE_UPLOADS = "larger file uploads", N.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_BOGO = "bogo", N.VOICE_CHANNEL_EFFECTS_UPSELL = "voice_channel_effects_upsell", N.VOICE_CHANNEL_EFFECTS_BAR_EMOJI_UPSELL = "Voice Channel Effect Bar Emoji Upsell", N.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED = "voice_channel_effects_toggle_clicked", N.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED = "voice_channel_effects_toggle_clicked_expanded", N.PROFILE_THEME_UPSELL_MODAL = "profile_theme_upsell_modal", N.PROFILE_EFFECTS_INLINE_SETTINGS = "profile_effects_inline_settings", N.PROFILE_EFFECTS_INLINE_SETTINGS_MOBILE = "profile_effects_inline_settings_mobile", N.HIGH_VIDEO_QUALITY_UPSELL = "high_video_quality_upsell", N.PREMIUM_PROFILE_TRY_IT_OUT = "premium_profile_try_it_out", N.BURST_REACTION_RAIL_UPSELL = "burst_reaction_rail_upsell", N.BURST_REACTION_UPSELL = "burst_reaction_upsell", N.BURST_REACTION_QUICK_ACTION_UPSELL = "burst_reaction_quick_action_upsell", N.BURST_REACTION_CONTEXT_MENU_UPSELL = "burst_reaction_context_menu_upsell", N.PREMIUM_CLIENT_THEME_TRY_IT_OUT = "premium_client_theme_try_it_out", N.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL = "premium_client_theme_settings_upsell", N.VIDEO_STAGE_LIMIT = "video_stage_limit", N.SOUND_PICKER_SOUND_CLICKED = "sound_picker_sound_clicked", N.APP_ICON_UPSELL = "app_icon_upsell", N.COLLECTIBLES_SHOP = "collectibles_shop", N.COLLECTIBLES_PROFILE_SETTINGS_UPSELL = "collectibles_profile_settings_upsell", N.COLLECTIBLES_PREMIUM_MARKETING_PAGE_UPSELL = "collectibles_premium_marketing_page_upsell", N.CLIPS_GUILD_SIDEBAR_COACHMARK_PREMIUM_EARLY_ACCESS_UPSELL = "clips_guild_sidebar_coachmark_premium_early_access_upsell", N.CLIPS_GO_LIVE_PREMIUM_EARLY_ACCESS_ROADBLOCK_UPSELL = "clips_go_live_premium_early_access_roadblock_upsell", (R = u || (u = {}))[R.PREMIUM_TIER_1 = 1] = "PREMIUM_TIER_1", R[R.PREMIUM_TIER_2 = 2] = "PREMIUM_TIER_2", R[R.GUILD_BOOST = 4] = "GUILD_BOOST", R[R.PREMIUM_TIER_0 = 8] = "PREMIUM_TIER_0";
-            let ey = Object.freeze({
+            let eR = Object.freeze({
                     "978380684370378762": 8,
                     "521846918637420545": 1,
                     "521847234246082599": 2,
                     "590663762298667008": 4
                 }),
-                eN = 52428800,
-                eR = {
+                eO = 52428800,
+                eD = {
                     [F.BoostedGuildTiers.NONE]: 5,
                     [F.BoostedGuildTiers.TIER_1]: 10,
                     [F.BoostedGuildTiers.TIER_2]: 15,
                     [F.BoostedGuildTiers.TIER_3]: 30
                 },
-                eO = {
-                    [F.BoostedGuildTiers.NONE]: eR[F.BoostedGuildTiers.NONE],
-                    [F.BoostedGuildTiers.TIER_1]: eR[F.BoostedGuildTiers.NONE] + eR[F.BoostedGuildTiers.TIER_1],
-                    [F.BoostedGuildTiers.TIER_2]: eR[F.BoostedGuildTiers.NONE] + eR[F.BoostedGuildTiers.TIER_1] + eR[F.BoostedGuildTiers.TIER_2],
-                    [F.BoostedGuildTiers.TIER_3]: eR[F.BoostedGuildTiers.NONE] + eR[F.BoostedGuildTiers.TIER_1] + eR[F.BoostedGuildTiers.TIER_2] + eR[F.BoostedGuildTiers.TIER_3]
+                eP = {
+                    [F.BoostedGuildTiers.NONE]: eD[F.BoostedGuildTiers.NONE],
+                    [F.BoostedGuildTiers.TIER_1]: eD[F.BoostedGuildTiers.NONE] + eD[F.BoostedGuildTiers.TIER_1],
+                    [F.BoostedGuildTiers.TIER_2]: eD[F.BoostedGuildTiers.NONE] + eD[F.BoostedGuildTiers.TIER_1] + eD[F.BoostedGuildTiers.TIER_2],
+                    [F.BoostedGuildTiers.TIER_3]: eD[F.BoostedGuildTiers.NONE] + eD[F.BoostedGuildTiers.TIER_1] + eD[F.BoostedGuildTiers.TIER_2] + eD[F.BoostedGuildTiers.TIER_3]
                 },
-                eD = {
+                eL = {
                     [F.BoostedGuildTiers.NONE]: 8,
                     [F.BoostedGuildTiers.TIER_1]: 24,
                     [F.BoostedGuildTiers.TIER_2]: 36,
                     [F.BoostedGuildTiers.TIER_3]: 48
                 },
-                eP = Object.freeze({
+                eM = Object.freeze({
                     [F.BoostedGuildTiers.NONE]: {
                         features: [],
                         limits: {
@@ -93231,9 +93239,9 @@
                             fileSize: F.MAX_ATTACHMENT_SIZE,
                             screenShareQualityFramerate: 30,
                             screenShareQualityResolution: "720p",
-                            soundboardSounds: eD[F.BoostedGuildTiers.NONE],
+                            soundboardSounds: eL[F.BoostedGuildTiers.NONE],
                             maxConcurrentActivities: 2,
-                            stickers: eO[F.BoostedGuildTiers.NONE],
+                            stickers: eP[F.BoostedGuildTiers.NONE],
                             stageVideoUsers: F.MAX_STAGE_VIDEO_USER_LIMIT_TIER01
                         }
                     },
@@ -93245,9 +93253,9 @@
                             fileSize: F.MAX_ATTACHMENT_SIZE,
                             screenShareQualityFramerate: 60,
                             screenShareQualityResolution: "720p",
-                            soundboardSounds: eD[F.BoostedGuildTiers.TIER_1],
+                            soundboardSounds: eL[F.BoostedGuildTiers.TIER_1],
                             maxConcurrentActivities: 3,
-                            stickers: eO[F.BoostedGuildTiers.TIER_1],
+                            stickers: eP[F.BoostedGuildTiers.TIER_1],
                             stageVideoUsers: F.MAX_STAGE_VIDEO_USER_LIMIT_TIER01
                         }
                     },
@@ -93259,9 +93267,9 @@
                             fileSize: 52428800,
                             screenShareQualityFramerate: 60,
                             screenShareQualityResolution: "1080p",
-                            soundboardSounds: eD[F.BoostedGuildTiers.TIER_2],
+                            soundboardSounds: eL[F.BoostedGuildTiers.TIER_2],
                             maxConcurrentActivities: 5,
-                            stickers: eO[F.BoostedGuildTiers.TIER_2],
+                            stickers: eP[F.BoostedGuildTiers.TIER_2],
                             stageVideoUsers: F.MAX_STAGE_VIDEO_USER_LIMIT_TIER2
                         }
                     },
@@ -93273,16 +93281,16 @@
                             fileSize: 104857600,
                             screenShareQualityFramerate: 60,
                             screenShareQualityResolution: "1080p",
-                            soundboardSounds: eD[F.BoostedGuildTiers.TIER_3],
+                            soundboardSounds: eL[F.BoostedGuildTiers.TIER_3],
                             maxConcurrentActivities: Number.MAX_SAFE_INTEGER,
-                            stickers: eO[F.BoostedGuildTiers.TIER_3],
+                            stickers: eP[F.BoostedGuildTiers.TIER_3],
                             stageVideoUsers: F.MAX_STAGE_VIDEO_USER_LIMIT_TIER3
                         }
                     }
                 }),
-                eL = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
+                eb = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
             (O = d || (d = {})).SOUNDBOARD_PLAY = "soundboard play", O.PROFILE_THEME_COLOR = "profile_theme_color", O.PROFILE_BANNER = "profile_banner", O.ANIMATED_AVATAR = "animated_avatar", O.AVATAR_DECORATION = "avatar_decoration", O.CLIENT_THEME = "client_theme", O.SHARED_CANVAS = "shared_canvas", O.PROFILE_EFFECT = "profile_effect", (D = c || (c = {})).FREE = "free", D.PREMIUM_STANDARD = "premium-standard";
-            let eM = {
+            let eU = {
                 "1024422698568122368": 16,
                 "511651876987469824": 16,
                 "511651885459963904": 16,
@@ -93290,19 +93298,19 @@
                 "642251038925127690": 5
             };
             (P = _ || (_ = {})).HIGH_STREAMING_QUALITY = "high_streaming_quality", P.MID_STREAMING_QUALITY = "mid_streaming_quality";
-            let eb = Object.freeze({
+            let ew = Object.freeze({
                 high_streaming_quality: 2,
                 mid_streaming_quality: 1
             });
             (L = f || (f = {}))[L.UserSettings = 0] = "UserSettings", L[L.ApplicationStoreHome = 1] = "ApplicationStoreHome", (M = E || (E = {}))[M.DEFAULT = 0] = "DEFAULT", M[M.WINTER = 1] = "WINTER", (b = h || (h = {}))[b.SNOWGLOBE = 1] = "SNOWGLOBE", b[b.BOX = 2] = "BOX", b[b.CUP = 3] = "CUP", b[b.STANDARD_BOX = 4] = "STANDARD_BOX", b[b.CAKE = 5] = "CAKE", b[b.CHEST = 6] = "CHEST", b[b.COFFEE = 7] = "COFFEE", b[b.SEASONAL_STANDARD_BOX = 8] = "SEASONAL_STANDARD_BOX", b[b.SEASONAL_CAKE = 9] = "SEASONAL_CAKE", b[b.SEASONAL_CHEST = 10] = "SEASONAL_CHEST", b[b.SEASONAL_COFFEE = 11] = "SEASONAL_COFFEE", (U = g || (g = {})).USER_NOT_VERIFIED = "user_not_verified", U.NO_CODE_BODY = "no_code_body", U.NO_PROMOTION = "no_promotion", U.CODE_CLAIMED = "code_claimed", U.EXISTING_SUBSCRIBER = "existing_subscriber", U.PREVIOUS_SUBSCRIBER = "previous_subscriber", U.BLOCKED_PAYMENT = "blocked_payment";
-            let eU = Object.freeze({
+            let ek = Object.freeze({
                     IS_BLOCKED_IOS: 32,
                     IS_OUTBOUND_REDEEMABLE_BY_TRIAL_USERS: 64,
                     SUPPRESS_NOTIFICATION: 128
                 }),
-                ew = Object.freeze({
+                eV = Object.freeze({
                     3: {
-                        fileSize: eN
+                        fileSize: eO
                     },
                     1: {
                         fileSize: 52428800
@@ -93312,14 +93320,14 @@
                     }
                 });
             (w = m || (m = {})).EXPLORE_ALL_PERKS_CLICKED = "explore_all_perks_clicked", w.HELPER_COLLAPSED = "helper_collapsed", w.HELPER_UNCOLLAPSED = "helper_uncollapsed", w.UNLOCK_EMOJI_CLICKED = "unlock_emoji_clicked", w.CUSTOM_PROFILES_CLICKED = "custom_profiles_clicked", w.SERVER_BOOSTS_CLICKED = "server_boosts_clicked", w.HELPER_DISMISSED = "premium_feature_helper_dismissed", w.HELPER_RENDERED = "premium_feature_helper_rendered", (k = p || (p = {})).EMOJI_TUTORIAL_STARTED = "emoji_tutorial_started", k.EMOJI_INTRO_VIEWED = "emoji_intro_viewed", k.EMOJI_PROMPT_VIEWED = "emoji_prompt_viewed", k.CUSTOM_PROFILE_TUTORIAL_STARTED = "custom_profile_tutorial_started", k.CUSTOM_PROFILE_AVATAR_INTRO_VIEWED = "custom_profile_avatar_intro_viewed", k.CUSTOM_PROFILE_AVATAR_DECORATIONS_VIEWED = "custom_profile_avatar_decorations_viewed", k.CUSTOM_PROFILE_BANNER_INTRO_VIEWED = "custom_profile_banner_intro_viewed", k.CUSTOM_PROFILE_THEME_INTRO_VIEWED = "custom_profile_theme_intro_viewed", k.SERVER_PROFILE_INTRO_VIEWED = "server_profile_intro_viewed", k.SERVER_BOOST_TUTORIAL_STARTED = "server_boost_tutorial_started", k.BOOST_INTRO_VIEWED = "boost_intro_viewed", k.BOOST_PROMPT_VIEWED = "boost_prompt_viewed", (V = S || (S = {})).BOOST = "boost", V.DISMISS = "dismiss", (G = T || (T = {})).BADGE_TOOLTIP_VIEWED = "share_nitro_bagde_tooltip_viewed", G.BADGE_CLICKED = "share_nitro_badge_clicked", G.FLOW_STARTED = "share_nitro_flow_started", G.FLOW_COMPLETED = "share_nitro_flow_completed";
-            let ek = new Set(["PL", "TR"]),
-                eV = [1, 2, 3],
-                eG = [4, 5, 7, 6],
-                eF = [8, 9, 11, 10],
-                ex = eF.concat(eV),
-                eB = 190,
-                eH = 3,
-                eY = 30
+            let eG = new Set(["PL", "TR"]),
+                eF = [1, 2, 3],
+                ex = [4, 5, 7, 6],
+                eB = [8, 9, 11, 10],
+                eH = eB.concat(eF),
+                eY = 190,
+                eK = 3,
+                ej = 30
         },
         45120: function(e, t, n) {
             "use strict";
@@ -125787,7 +125795,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "ff47ff745b1592f4d8be9fd6b3a8e31fa80030e5"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "56babad471af0bc2cda0ef6f52f759a11880adbe"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -135285,7 +135293,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "278668"
+                                build_number: "278678"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -136286,7 +136294,7 @@
                 isPremiumSubscriptionPlan: function() {
                     return er
                 },
-                getBillingGracePeriodDays: function() {
+                getBillingGracePeriodDaysAndExpiresDate: function() {
                     return ea
                 },
                 isPrepaidPaymentSource: function() {
@@ -137024,19 +137032,42 @@
             }
 
             function ea(e) {
-                var t, n, i;
+                var t, n, i, s, r;
                 if (e.isPurchasedViaApple && (null === (t = e.metadata) || void 0 === t ? void 0 : t.apple_grace_period_expires_date) != null) {
-                    let t = d(e.metadata.apple_grace_period_expires_date),
-                        n = d(e.currentPeriodStart);
-                    return d.duration(t.diff(n)).days()
+                    let t = d(e.metadata.apple_grace_period_expires_date);
+                    return {
+                        days: d.duration(t.diff(e.currentPeriodStart)).days(),
+                        expiresDate: t
+                    }
                 }
                 if (e.isPurchasedViaGoogle && (null === (n = e.metadata) || void 0 === n ? void 0 : n.google_grace_period_expires_date) != null && (null === (i = e.metadata) || void 0 === i ? void 0 : i.google_original_expires_date) != null) {
                     let t = d(e.metadata.google_grace_period_expires_date),
                         n = d(e.metadata.google_original_expires_date);
-                    return d.duration(t.diff(n)).days()
+                    return {
+                        days: d.duration(t.diff(n)).days(),
+                        expiresDate: t
+                    }
                 }
-                if (e.isPurchasedExternally || null == e.paymentSourceId) return D.DEFAULT_MAX_GRACE_PERIOD_DAYS;
-                return D.PAID_SUBSCRIPTION_MAX_GRACE_PERIOD_DAYS
+                if (e.isPurchasedExternally) {
+                    let t = e.isPurchasedViaApple ? D.DEFAULT_APPLE_GRACE_PERIOD_DAYS : D.DEFAULT_GOOGLE_GRACE_PERIOD_DAYS;
+                    return {
+                        days: t,
+                        expiresDate: d(e.currentPeriodStart).add(t, "days")
+                    }
+                }
+                if ((null === (s = e.metadata) || void 0 === s ? void 0 : s.grace_period_expires_date) != null) {
+                    let t = d(null === (r = e.metadata) || void 0 === r ? void 0 : r.grace_period_expires_date).diff(e.currentPeriodStart, "days");
+                    return {
+                        days: t,
+                        expiresDate: d(e.metadata.grace_period_expires_date)
+                    }
+                } {
+                    let t = null == e.paymentSourceId ? D.DEFAULT_MAX_GRACE_PERIOD_DAYS : D.PAID_SUBSCRIPTION_MAX_GRACE_PERIOD_DAYS;
+                    return {
+                        days: t,
+                        expiresDate: d(e.currentPeriodStart).add(t, "days")
+                    }
+                }
             }
 
             function eo(e) {
@@ -137512,14 +137543,13 @@
                     });
                     else if (e.status === R.SubscriptionStatusTypes.PAST_DUE) {
                         var s, r;
-                        let t = ea(e),
-                            n = d(e.currentPeriodStart).add(t, "days");
-                        return (e.isPurchasedViaGoogle && (null === (s = e.metadata) || void 0 === s ? void 0 : s.google_grace_period_expires_date) != null && (n = d(e.metadata.google_grace_period_expires_date)), e.isPurchasedViaApple && (null === (r = e.metadata) || void 0 === r ? void 0 : r.apple_grace_period_expires_date) != null && (n = d(e.metadata.apple_grace_period_expires_date)), e.isPurchasedExternally) ? L.default.Messages.PREMIUM_SETTINGS_PAST_DUE_INFO_EXTERNAL.format({
-                            endDate: n,
+                        let t = ea(e).expiresDate;
+                        return (e.isPurchasedViaGoogle && (null === (s = e.metadata) || void 0 === s ? void 0 : s.google_grace_period_expires_date) != null && (t = d(e.metadata.google_grace_period_expires_date)), e.isPurchasedViaApple && (null === (r = e.metadata) || void 0 === r ? void 0 : r.apple_grace_period_expires_date) != null && (t = d(e.metadata.apple_grace_period_expires_date)), e.isPurchasedExternally) ? L.default.Messages.PREMIUM_SETTINGS_PAST_DUE_INFO_EXTERNAL.format({
+                            endDate: t,
                             paymentGatewayName: P.PaymentGatewayToFriendlyName[e.paymentGateway],
                             paymentSourceLink: eT(e.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT")
                         }) : L.default.Messages.PREMIUM_SETTINGS_PAST_DUE_INFO.format({
-                            endDate: d(e.currentPeriodStart).add(t, "days"),
+                            endDate: t,
                             price: i
                         })
                     } else return e.status === R.SubscriptionStatusTypes.ACCOUNT_HOLD ? e.isPurchasedViaGoogle && !(0, I.isAndroid)() ? L.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO_EXTERNAL.format({
@@ -153100,4 +153130,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.2b23a06e1e01a31bbe83.js.map
+//# sourceMappingURL=29062.4a99356fd744175b7531.js.map
