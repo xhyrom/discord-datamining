@@ -128253,6 +128253,7 @@ div.nagbar_c731ff {
     --redesign-channel-name-muted-text: var(--primary-360);
     --redesign-channel-name-text: var(--primary-130);
     --redesign-chat-input-background: var(--primary-700);
+    --redesign-image-button-pressed-background: hsl(var(--black-500-hsl) / 0.08);
     --redesign-input-control-active-bg: var(--primary-645);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--primary-530);
@@ -128568,6 +128569,7 @@ div.nagbar_c731ff {
     --redesign-channel-name-muted-text: var(--primary-460);
     --redesign-channel-name-text: var(--primary-860);
     --redesign-chat-input-background: hsl(var(--black-500-hsl) / 0.08);
+    --redesign-image-button-pressed-background: hsl(var(--black-500-hsl) / 0.08);
     --redesign-input-control-active-bg: var(--white-500);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--primary-430);
@@ -128883,6 +128885,7 @@ div.nagbar_c731ff {
     --redesign-channel-name-muted-text: var(--plum-10);
     --redesign-channel-name-text: var(--plum-2);
     --redesign-chat-input-background: hsl(var(--plum-23-alpha-hsl) / 0.09);
+    --redesign-image-button-pressed-background: hsl(var(--black-500-hsl) / 0.08);
     --redesign-input-control-active-bg: var(--plum-17);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--primary-530);
@@ -129198,6 +129201,7 @@ div.nagbar_c731ff {
     --redesign-channel-name-muted-text: var(--plum-10);
     --redesign-channel-name-text: var(--plum-3);
     --redesign-chat-input-background: hsl(var(--plum-11-hsl) / 0.12);
+    --redesign-image-button-pressed-background: hsl(var(--black-500-hsl) / 0.08);
     --redesign-input-control-active-bg: var(--plum-16);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--primary-530);
@@ -130548,4 +130552,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.d7d2517d0afa373e629c.css.map*/
+/*# sourceMappingURL=app.19b791bca4ceb395c657.css.map*/
