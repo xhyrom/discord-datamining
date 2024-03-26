@@ -88275,8 +88275,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711487526341",
-                                    build_number: "278811"
+                                    built_at: "1711488101552",
+                                    build_number: "278816"
                                 }
                             },
                             retries: 1
@@ -125806,7 +125806,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "71721c00b11ead4095a51dd4d1faf32a41a2734d"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "59dab0cf34b633d280c17c8d83f1d4e52ca1b022"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -135360,7 +135360,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "278811"
+                                build_number: "278816"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -153196,4 +153196,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.259af500235280c1ae9f.js.map
+//# sourceMappingURL=29062.ea744acf580eea7b327f.js.map
