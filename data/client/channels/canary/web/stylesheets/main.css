@@ -46741,8 +46741,8 @@ html .invoiceCancelRow_c1bfe7 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -125273,7 +125273,7 @@ div.nagbar_c731ff {
     display: inline;
     border-bottom: 2px solid transparent;
     height: 39px;
-    font-size: 14px
+    font-size: .875rem
 }
 
 .enable-forced-colors .tabBarItem_b56b35 {
@@ -130416,4 +130416,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.35000141a36bfee4bbf9.css.map*/
+/*# sourceMappingURL=app.7f1e2287aa8fe6b3c4d8.css.map*/
