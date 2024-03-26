@@ -50980,23 +50980,22 @@
                 if (l.useEffect(() => {
                         !A && (0, d.fetchSubscriptions)()
                     }, [A]), null == v || !(0, x.isSubscriptionStatusFailedPayment)(v.status) || a) return null;
-                let N = v.status === y.SubscriptionStatusTypes.PAST_DUE ? (0, x.getBillingGracePeriodDays)(v) : g.MAX_ACCOUNT_HOLD_DAYS,
-                    R = s(v.currentPeriodStart).add(N, "days"),
-                    O = "".concat(v.id, ":").concat(R.toISOString());
-                if (T === O) return null;
-                let M = x.default.getPremiumType(v.planId) === g.PremiumTypes.TIER_0 ? p.GradientCssUrls.PREMIUM_TIER_0 : x.default.getPremiumType(v.planId) === g.PremiumTypes.TIER_1 ? p.GradientCssUrls.PREMIUM_TIER_1 : p.GradientCssUrls.PREMIUM_TIER_2;
+                let N = v.status === y.SubscriptionStatusTypes.PAST_DUE ? (0, x.getBillingGracePeriodDaysAndExpiresDate)(v).expiresDate : s(v.currentPeriodStart).add(g.MAX_ACCOUNT_HOLD_DAYS),
+                    R = "".concat(v.id, ":").concat(N.toISOString());
+                if (T === R) return null;
+                let O = x.default.getPremiumType(v.planId) === g.PremiumTypes.TIER_0 ? p.GradientCssUrls.PREMIUM_TIER_0 : x.default.getPremiumType(v.planId) === g.PremiumTypes.TIER_1 ? p.GradientCssUrls.PREMIUM_TIER_1 : p.GradientCssUrls.PREMIUM_TIER_2;
                 return (0, i.jsxs)("div", {
                     className: C.premiumRetentionNotice,
                     children: [(0, i.jsx)(h.default, {
                         className: C.premiumRetentionNoticeIcon,
-                        color: M
+                        color: O
                     }), (0, i.jsxs)("div", {
                         className: C.premiumRetentionNoticeContent,
                         children: [(0, i.jsx)(u.Text, {
                             variant: "text-xs/normal",
                             children: S.default.Messages.PREMIUM_RETENTION_EMOJI_PICKER_DESCRIPTION.format({
                                 planName: x.default.getDisplayPremiumType(v.planId),
-                                endsAt: R
+                                endsAt: N
                             })
                         }), (0, i.jsx)("div", {
                             children: (0, i.jsx)(u.Anchor, {
@@ -51008,7 +51007,7 @@
                         })]
                     }), (0, i.jsx)(u.Clickable, {
                         onClick: () => {
-                            o.Storage.set(_, O), T = O, I(!0)
+                            o.Storage.set(_, R), T = R, I(!0)
                         },
                         children: (0, i.jsx)(m.default, {
                             className: C.premiumRetentionNoticeClose
@@ -82734,4 +82733,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.b224976bd64ee753ab47.js.map
+//# sourceMappingURL=60053.4c9164932c9baee86156.js.map
