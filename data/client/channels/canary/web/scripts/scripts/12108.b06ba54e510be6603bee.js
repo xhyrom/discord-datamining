@@ -1,95 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["12872"], {
-        666020: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                subscribeMembers: function() {
-                    return r
-                },
-                unsubscribeMembers: function() {
-                    return u
-                },
-                subscribeToMemberUpdates: function() {
-                    return a
-                },
-                unsubscribeFromMemberUpdates: function() {
-                    return d
-                },
-                subscribeChannel: function() {
-                    return s
-                },
-                subscribeChannelDimensions: function() {
-                    return o
-                }
-            }), n("424973");
-            var l = n("913144"),
-                i = n("696605");
-
-            function r(e, t) {
-                l.default.dispatch({
-                    type: "GUILD_SUBSCRIPTIONS_MEMBERS_ADD",
-                    guildId: e,
-                    userIds: t
-                })
-            }
-
-            function u(e, t) {
-                l.default.dispatch({
-                    type: "GUILD_SUBSCRIPTIONS_MEMBERS_REMOVE",
-                    guildId: e,
-                    userIds: t
-                })
-            }
-
-            function a(e) {
-                l.default.dispatch({
-                    type: "GUILD_SUBSCRIPTIONS_ADD_MEMBER_UPDATES",
-                    guildId: e
-                })
-            }
-
-            function d(e) {
-                l.default.dispatch({
-                    type: "GUILD_SUBSCRIPTIONS_REMOVE_MEMBER_UPDATES",
-                    guildId: e
-                })
-            }
-
-            function s(e, t, n) {
-                l.default.dispatch({
-                    type: "GUILD_SUBSCRIPTIONS_CHANNEL",
-                    guildId: e,
-                    channelId: t,
-                    ranges: n
-                })
-            }
-
-            function o(e) {
-                let {
-                    guildId: t,
-                    channelId: n,
-                    y: l,
-                    height: r,
-                    rowHeight: u
-                } = e;
-
-                function a(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
-                    return Math.max(0, Math.ceil(Math.ceil(e / u)) + t)
-                }
-                let d = [];
-
-                function o(e) {
-                    let t = e + (i.MINIMUM_RANGE - 1);
-                    return d.push([e, t]), t + 1
-                }
-                let c = a(.5 * r),
-                    f = a(l, -c),
-                    _ = a(l + r, c);
-                for (f > 0 && (f = Math.max(o(0), f)), f = Math.floor(f / i.MINIMUM_RANGE) * i.MINIMUM_RANGE; f <= _;) f = o(f);
-                s(t, n, d)
-            }
-        },
+    ["12108"], {
         267363: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -112,10 +22,10 @@
                     return h
                 },
                 ackGuildFeature: function() {
-                    return I
+                    return v
                 },
                 ackUserFeature: function() {
-                    return v
+                    return I
                 }
             }), n("222007"), n("424973");
             var l = n("913144"),
@@ -124,8 +34,8 @@
                 u = n("42203"),
                 a = n("245997"),
                 d = n("697218"),
-                s = n("299039"),
-                o = n("49111");
+                o = n("299039"),
+                s = n("49111");
 
             function c(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
@@ -138,7 +48,7 @@
                     messageId: i,
                     immediate: t,
                     force: n,
-                    context: o.CURRENT_APP_CONTEXT,
+                    context: s.CURRENT_APP_CONTEXT,
                     location: r
                 })
             }
@@ -151,7 +61,7 @@
                     if (null == l || null == l.guild_id) return;
                     let d = a.default.getCategories(l.guild_id);
                     if (null == d[e]) return;
-                    let s = d[e].filter(e => {
+                    let o = d[e].filter(e => {
                             let {
                                 channel: t
                             } = e;
@@ -162,19 +72,19 @@
                             } = e;
                             return t.id
                         }),
-                        o = [...s];
-                    for (let e of (s.forEach(e => {
+                        s = [...o];
+                    for (let e of (o.forEach(e => {
                             let t = i.default.getActiveJoinedThreadsForParent(l.guild_id, e);
-                            for (let e in t) o.push(e)
-                        }), o)) c(e, t, n)
-                }(e.id, !0, !0) : e.isForumLikeChannel() ? c(e.id, !0, !0, s.default.fromTimestamp(Date.now())) : c(e.id, !0, !0)
+                            for (let e in t) s.push(e)
+                        }), s)) c(e, t, n)
+                }(e.id, !0, !0) : e.isForumLikeChannel() ? c(e.id, !0, !0, o.default.fromTimestamp(Date.now())) : c(e.id, !0, !0)
             }
 
             function _(e, t) {
                 l.default.dispatch({
                     type: "BULK_ACK",
                     channels: e,
-                    context: o.CURRENT_APP_CONTEXT,
+                    context: s.CURRENT_APP_CONTEXT,
                     onFinished: t
                 })
             }
@@ -202,7 +112,7 @@
                 })
             }
 
-            function I(e, t, n) {
+            function v(e, t, n) {
                 l.default.dispatch({
                     type: "GUILD_FEATURE_ACK",
                     id: e,
@@ -212,7 +122,7 @@
                 })
             }
 
-            function v(e, t) {
+            function I(e, t) {
                 var n;
                 let i = null === (n = d.default.getCurrentUser()) || void 0 === n ? void 0 : n.id;
                 null != i && l.default.dispatch({
@@ -265,25 +175,6 @@
             var l = n("469062");
             n.es(l, t)
         },
-        750560: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                useSubscribeGuildMembers: function() {
-                    return a
-                }
-            }), n("37983");
-            var l = n("884691"),
-                i = n("917351"),
-                r = n.n(i);
-            n("233736");
-            var u = n("666020");
-
-            function a(e) {
-                l.useEffect(() => (r.forEach(e, (e, t) => (0, u.subscribeMembers)(t, e)), () => {
-                    r.forEach(e, (e, t) => (0, u.unsubscribeMembers)(t, e))
-                }), [e])
-            }
-        },
         320954: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -315,7 +206,7 @@
                 u = n("305961"),
                 a = n("957255"),
                 d = n("421127");
-            let s = (0, r.createExperiment)({
+            let o = (0, r.createExperiment)({
                     kind: "guild",
                     id: "2023-04_guild_alert_mode",
                     label: "Guild Alert Mode",
@@ -339,7 +230,7 @@
                         }
                     }]
                 }),
-                o = (0, r.createExperiment)({
+                s = (0, r.createExperiment)({
                     kind: "guild",
                     id: "2023-08_guild_alert_mode_friend_server",
                     label: "Guild Alert Mode (friend servers only)",
@@ -367,14 +258,14 @@
             function c(e) {
                 let t = (0, i.useStateFromStores)([u.default], () => u.default.getGuild(e)),
                     n = (0, i.useStateFromStores)([a.default], () => null != t && l.hasAny(a.default.computePermissions(t), d.IncidentAlertModeratorPermissions)),
-                    r = s.useExperiment({
+                    r = o.useExperiment({
                         guildId: e,
                         location: "c3fae3_1"
                     }, {
                         disable: !n,
                         autoTrackExposure: !0
                     }),
-                    c = o.useExperiment({
+                    c = s.useExperiment({
                         guildId: e,
                         location: "c3fae3_2"
                     }, {
@@ -390,14 +281,14 @@
             function f(e) {
                 let t = u.default.getGuild(e),
                     n = null != t && l.hasAny(a.default.computePermissions(t), d.IncidentAlertModeratorPermissions),
-                    i = s.getCurrentConfig({
+                    i = o.getCurrentConfig({
                         guildId: e,
                         location: "c3fae3_3"
                     }, {
                         disable: !n,
                         autoTrackExposure: !0
                     }),
-                    r = o.getCurrentConfig({
+                    r = s.getCurrentConfig({
                         guildId: e,
                         location: "c3fae3_4"
                     }, {
@@ -423,7 +314,7 @@
                     return d
                 },
                 IncidentAlertModeratorPermissions: function() {
-                    return s
+                    return o
                 }
             });
             var l = n("316693"),
@@ -450,7 +341,7 @@
                     value: 24,
                     label: r.default.Messages.GUILD_SERVER_LOCKDOWN_DURATION_24_HOURS
                 }],
-                s = l.combine(i.Permissions.ADMINISTRATOR, i.Permissions.MANAGE_GUILD, i.Permissions.BAN_MEMBERS, i.Permissions.KICK_MEMBERS, i.Permissions.MODERATE_MEMBERS)
+                o = l.combine(i.Permissions.ADMINISTRATOR, i.Permissions.MANAGE_GUILD, i.Permissions.BAN_MEMBERS, i.Permissions.KICK_MEMBERS, i.Permissions.MODERATE_MEMBERS)
         },
         712125: function(e, t, n) {
             "use strict";
@@ -474,10 +365,10 @@
                     return d
                 },
                 hasDetectedActivity: function() {
-                    return s
+                    return o
                 },
                 hasDetectedRaid: function() {
-                    return o
+                    return s
                 },
                 hasDetectedDMRaid: function() {
                     return c
@@ -498,10 +389,10 @@
                     return h
                 },
                 hasInvitesDisabled: function() {
-                    return I
+                    return v
                 },
                 getSecurityActionDetailsString: function() {
-                    return v
+                    return I
                 }
             }), n("424973");
             var l = n("866227"),
@@ -516,11 +407,11 @@
                 minute: "2-digit"
             };
 
-            function s(e) {
+            function o(e) {
                 return null != e.dmSpamDetectedAt && i(e.dmSpamDetectedAt).add(u.NAGBAR_DISPLAY_MAX_HOURS, "hours") > i() || null != e.raidDetectedAt && i(e.raidDetectedAt).add(u.NAGBAR_DISPLAY_MAX_HOURS, "hours") > i()
             }
 
-            function o(e) {
+            function s(e) {
                 return null != e.raidDetectedAt && i(e.raidDetectedAt).add(u.NAGBAR_DISPLAY_MAX_HOURS, "hours") > i()
             }
 
@@ -529,7 +420,7 @@
             }
 
             function f(e) {
-                return null == e ? void 0 : o(e) ? r.GuildIncidentAlertTypes.JOIN_RAID : r.GuildIncidentAlertTypes.DM_RAID
+                return null == e ? void 0 : s(e) ? r.GuildIncidentAlertTypes.JOIN_RAID : r.GuildIncidentAlertTypes.DM_RAID
             }
 
             function _(e, t) {
@@ -550,11 +441,11 @@
                 return (null == e ? void 0 : e.dmsDisabledUntil) != null && new Date(e.dmsDisabledUntil) > new Date
             }
 
-            function I(e) {
+            function v(e) {
                 return (null == e ? void 0 : e.invitesDisabledUntil) != null && new Date(e.invitesDisabledUntil) > new Date
             }
 
-            function v(e, t) {
+            function I(e, t) {
                 var n;
                 let l = null !== (n = e.dmsDisabledUntil) && void 0 !== n ? n : e.invitesDisabledUntil;
                 if (null == l) return "";
@@ -585,7 +476,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return I
+                    return v
                 }
             }), n("222007");
             var l = n("446674"),
@@ -594,8 +485,8 @@
                 u = n("305961"),
                 a = n("957255"),
                 d = n("607620"),
-                s = n("299039"),
-                o = n("610174"),
+                o = n("299039"),
+                s = n("610174"),
                 c = n("311161");
             let f = {},
                 _ = {};
@@ -604,8 +495,8 @@
                 var e;
                 let t = null !== (e = r.default.getGuildsProto()) && void 0 !== e ? e : {},
                     n = u.default.getGuilds(),
-                    l = s.default.keys(n);
-                for (let e of (_ = {}, l))(0, o.getGuildAlertModeEnabled)(e).showAlertMode && (_[e] = {
+                    l = o.default.keys(n);
+                for (let e of (_ = {}, l))(0, s.getGuildAlertModeEnabled)(e).showAlertMode && (_[e] = {
                     guildId: e,
                     guildName: n[e].name,
                     ...t[e]
@@ -635,7 +526,7 @@
                 }
             }
             h.displayName = "GuildIncidentsStore";
-            var I = new h(i.default, {
+            var v = new h(i.default, {
                 CONNECTION_OPEN: function(e) {
                     for (let n of (f = {}, e.guilds)) {
                         var t;
@@ -728,8 +619,8 @@
                 u = n("379881"),
                 a = n("271938"),
                 d = n("42203"),
-                s = n("923959"),
-                o = n("305961"),
+                o = n("923959"),
+                s = n("305961"),
                 c = n("49111");
             let f = null,
                 _ = {},
@@ -743,12 +634,12 @@
             }
             let h = A();
 
-            function I(e, t) {
+            function v(e, t) {
                 e.index = t
             }
 
-            function v(e) {
-                let t = s.default.getChannels(e),
+            function I(e) {
+                let t = o.default.getChannels(e),
                     n = A(),
                     l = e => {
                         var t;
@@ -768,73 +659,73 @@
                         channel: t,
                         index: -1
                     }), n[t.id] = []
-                }), t[0, s.GUILD_SELECTABLE_CHANNELS_KEY].forEach(l), t[0, s.GUILD_VOCAL_CHANNELS_KEY].forEach(l), (0, r.default)(n._categories, n).forEach(I), _[e] = n, n
+                }), t[0, o.GUILD_SELECTABLE_CHANNELS_KEY].forEach(l), t[0, o.GUILD_VOCAL_CHANNELS_KEY].forEach(l), (0, r.default)(n._categories, n).forEach(v), _[e] = n, n
             }
 
-            function D() {
-                _ = {}, null != f && v(f)
+            function L() {
+                _ = {}, null != f && I(f)
             }
 
-            function L(e) {
+            function D(e) {
                 let {
                     guild: {
                         id: t
                     }
                 } = e;
-                _[t] = void 0, f === t && v(t)
+                _[t] = void 0, f === t && I(t)
             }
 
-            function S(e) {
+            function g(e) {
                 let {
                     channel: {
                         guild_id: t
                     }
                 } = e;
                 if (null == t) return !1;
-                _[t] = void 0, f === t && v(t)
+                _[t] = void 0, f === t && I(t)
             }
 
-            function N(e) {
+            function C(e) {
                 let {
                     guildId: t
                 } = e;
-                _[t] = void 0, t === f && v(t)
+                _[t] = void 0, t === f && I(t)
             }
 
-            function C(e, t) {
+            function N(e, t) {
                 if (E = t, null == e || null == e.getGuildId()) return !1;
                 let n = e.getGuildId();
-                return null != n && (_[n] = void 0, n === f && v(n), !0)
+                return null != n && (_[n] = void 0, n === f && I(n), !0)
             }
 
-            function g() {
-                v(c.FAVORITES)
+            function S() {
+                I(c.FAVORITES)
             }
-            class M extends l.default.Store {
+            class m extends l.default.Store {
                 initialize() {
-                    this.waitFor(s.default, o.default, a.default, d.default, u.default), this.syncWith([u.default], g)
+                    this.waitFor(o.default, s.default, a.default, d.default, u.default), this.syncWith([u.default], S)
                 }
                 getCategories(e) {
                     return null != e ? function(e) {
                         let t = _[e];
-                        return null != t ? t : v(e)
+                        return null != t ? t : I(e)
                     }(e) : h
                 }
             }
-            M.displayName = "GuildCategoryStore";
-            var p = new M(i.default, {
+            m.displayName = "GuildCategoryStore";
+            var p = new m(i.default, {
                 CHANNEL_SELECT: function(e) {
                     let {
                         guildId: t
                     } = e;
                     if (f = null != t ? t : null, null == t || null != _[t]) return !1;
-                    v(t)
+                    I(t)
                 },
-                CONNECTION_OPEN: D,
-                OVERLAY_INITIALIZE: D,
-                CACHE_LOADED_LAZY: D,
-                GUILD_CREATE: L,
-                GUILD_UPDATE: L,
+                CONNECTION_OPEN: L,
+                OVERLAY_INITIALIZE: L,
+                CACHE_LOADED_LAZY: L,
+                GUILD_CREATE: D,
+                GUILD_UPDATE: D,
                 GUILD_DELETE: function(e) {
                     let {
                         guild: {
@@ -843,8 +734,8 @@
                     } = e;
                     delete _[t]
                 },
-                CHANNEL_CREATE: S,
-                CHANNEL_DELETE: S,
+                CHANNEL_CREATE: g,
+                CHANNEL_DELETE: g,
                 CHANNEL_UPDATES: function(e) {
                     let {
                         channels: t
@@ -852,7 +743,7 @@
                     for (let {
                             guild_id: e
                         }
-                        of t) null != e && (_[e] = void 0, n = !0, f === e && v(e));
+                        of t) null != e && (_[e] = void 0, n = !0, f === e && I(e));
                     return n
                 },
                 GUILD_MEMBER_UPDATE: function(e) {
@@ -861,22 +752,22 @@
                         user: n
                     } = e;
                     if (a.default.getId() !== n.id) return !1;
-                    _[t] = void 0, t === f && v(t)
+                    _[t] = void 0, t === f && I(t)
                 },
                 CURRENT_USER_UPDATE: function() {
                     if (null == f) return !1;
-                    v(f)
+                    I(f)
                 },
-                GUILD_ROLE_CREATE: N,
-                GUILD_ROLE_UPDATE: N,
-                GUILD_ROLE_DELETE: N,
-                IMPERSONATE_UPDATE: N,
-                IMPERSONATE_STOP: N,
+                GUILD_ROLE_CREATE: C,
+                GUILD_ROLE_UPDATE: C,
+                GUILD_ROLE_DELETE: C,
+                IMPERSONATE_UPDATE: C,
+                IMPERSONATE_STOP: C,
                 VOICE_CHANNEL_SELECT: function(e) {
                     let {
                         channelId: t
                     } = e;
-                    return null == t && null != E ? C(d.default.getChannel(E), null) : C(d.default.getChannel(t), t)
+                    return null == t && null != E ? N(d.default.getChannel(E), null) : N(d.default.getChannel(t), t)
                 },
                 VOICE_STATE_UPDATES: function(e) {
                     let {
@@ -887,7 +778,7 @@
                             channelId: n,
                             sessionId: l
                         } = t;
-                        return a.default.getSessionId() !== l ? e : C(d.default.getChannel(n), n) || e
+                        return a.default.getSessionId() !== l ? e : N(d.default.getChannel(n), n) || e
                     }, !1)
                 }
             })
@@ -1176,11 +1067,11 @@
                     secondaryColor: u = "transparent",
                     secondaryColorClass: a = "",
                     color: d = i.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: s = "",
-                    ...o
+                    colorClass: o = "",
+                    ...s
                 } = e;
                 return (0, l.jsxs)("svg", {
-                    ...(0, r.default)(o),
+                    ...(0, r.default)(s),
                     xmlns: "http://www.w3.org/2000/svg",
                     width: t,
                     height: n,
@@ -1197,7 +1088,7 @@
                         fillRule: "evenodd",
                         d: "M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm0-17a1 1 0 0 1 1 1v4h4a1 1 0 1 1 0 2h-4v4a1 1 0 1 1-2 0v-4H7a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z",
                         clipRule: "evenodd",
-                        className: s
+                        className: o
                     })]
                 })
             }
@@ -1346,4 +1237,4 @@
         }
     }
 ]);
-//# sourceMappingURL=12872.e254df0cddb25485aa3d.js.map
+//# sourceMappingURL=12108.b06ba54e510be6603bee.js.map
