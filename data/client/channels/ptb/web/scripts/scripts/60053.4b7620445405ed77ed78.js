@@ -59685,19 +59685,19 @@
                 return null != e
             }
             var R = function(e) {
-                var t, R, O;
+                var t, N, R;
                 let {
-                    quest: M,
-                    applicationStream: k,
-                    onMouseEnter: L,
-                    onMouseLeave: P,
-                    position: b
-                } = e, j = (0, g.useHandleClaimQuestsReward)({
-                    quest: M,
+                    quest: O,
+                    applicationStream: M,
+                    onMouseEnter: k,
+                    onMouseLeave: L,
+                    position: P
+                } = e, b = (0, g.useHandleClaimQuestsReward)({
+                    quest: O,
                     location: E.QuestContent.MEMBERS_LIST
-                }), U = (0, x.useIsQuestExpired)(M), D = (null == M ? void 0 : null === (t = M.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, w = (null == M ? void 0 : null === (R = M.userStatus) || void 0 === R ? void 0 : R.enrolledAt) != null, F = (null == M ? void 0 : null === (O = M.userStatus) || void 0 === O ? void 0 : O.completedAt) != null;
-                if (null == M || U || D && !N(k)) return null;
-                let G = () => {
+                }), j = (0, x.useIsQuestExpired)(O), U = (null == O ? void 0 : null === (t = O.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, D = (null == O ? void 0 : null === (N = O.userStatus) || void 0 === N ? void 0 : N.enrolledAt) != null, w = (null == O ? void 0 : null === (R = O.userStatus) || void 0 === R ? void 0 : R.completedAt) != null;
+                if (null == O || j || U && !(null != M)) return null;
+                let F = () => {
                         (0, s.openModalLazy)(async () => {
                             let {
                                 default: e
@@ -59705,33 +59705,59 @@
                             return t => (0, i.jsx)(e, {
                                 ...t,
                                 questContent: E.QuestContent.MEMBERS_LIST,
-                                questConfig: M.config
+                                questConfig: O.config
                             })
                         })
                     },
-                    H = () => {
+                    G = () => {
                         u.default.open(C.UserSettingsSections.INVENTORY)
-                    };
+                    },
+                    H = e => {
+                        e.stopPropagation(), F()
+                    },
+                    B = () => {
+                        if (null != M) {
+                            let e = f.default.getChannel(M.channelId);
+                            if (null != e && (0, c.canWatchStream)(e, h.default, p.default, m.default, d.default)[0]) {
+                                r.default.selectVoiceChannel(e.id), (0, o.watchStreamAndTransitionToStream)(M);
+                                return
+                            }
+                        }
+                        G()
+                    },
+                    V = (() => null != M ? {
+                        headerText: _.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE,
+                        ctaText: _.default.Messages.QUESTS_MEMBERS_LIST_STREAM_CTA,
+                        tileAssetUrl: (0, y.getGameTileAssetUrl)(O.id),
+                        handleClickCta: B
+                    } : w && !U ? {
+                        headerText: _.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_REWARD,
+                        ctaText: _.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_REWARD_CTA,
+                        tileAssetUrl: (0, y.getRewardAssetUrl)(O.id),
+                        handleClickCta: b
+                    } : D ? {
+                        headerText: _.default.Messages.QUESTS_MEMBERS_LIST_FINISH,
+                        ctaText: _.default.Messages.QUESTS_MEMBERS_LIST_FINISH_CTA,
+                        tileAssetUrl: (0, y.getRewardAssetUrl)(O.id),
+                        handleClickCta: G
+                    } : {
+                        headerText: _.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE,
+                        ctaText: _.default.Messages.QUESTS_MEMBERS_LIST_START_CTA,
+                        tileAssetUrl: (0, y.getGameTileAssetUrl)(O.id),
+                        handleClickCta: G
+                    })();
                 return (0, i.jsx)("div", {
-                    style: "bottom" === b ? {
+                    style: "bottom" === P ? {
                         paddingTop: "8px"
                     } : {
                         paddingBottom: "8px"
                     },
-                    onMouseEnter: L,
-                    onMouseLeave: P,
+                    onMouseEnter: k,
+                    onMouseLeave: L,
                     children: (0, i.jsxs)(s.Clickable, {
                         className: T.container,
                         onClick: () => {
-                            if (P(), N(k)) {
-                                let e = f.default.getChannel(k.channelId);
-                                if (null != e && (0, c.canWatchStream)(e, h.default, p.default, m.default, d.default)[0]) {
-                                    r.default.selectVoiceChannel(e.id), (0, o.watchStreamAndTransitionToStream)(k);
-                                    return
-                                }
-                            }
-                            if (F && !D) return j();
-                            H()
+                            L(), V.handleClickCta()
                         },
                         children: [(0, i.jsxs)("div", {
                             className: T.left,
@@ -59742,13 +59768,13 @@
                                     width: I
                                 }), (0, i.jsx)(s.Heading, {
                                     variant: "heading-md/semibold",
-                                    children: N(k) ? _.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE : F && !D ? _.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_REWARD : w ? _.default.Messages.QUESTS_MEMBERS_LIST_FINISH : _.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE
+                                    children: V.headerText
                                 })]
                             }), (0, i.jsxs)("div", {
                                 className: T.middle,
                                 children: [(0, i.jsx)(s.Text, {
                                     variant: "text-sm/normal",
-                                    children: N(k) ? _.default.Messages.QUESTS_MEMBERS_LIST_STREAM_CTA : F && !D ? _.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_REWARD_CTA : w ? _.default.Messages.QUESTS_MEMBERS_LIST_FINISH_CTA : _.default.Messages.QUESTS_MEMBERS_LIST_START_CTA
+                                    children: V.ctaText
                                 }), (0, i.jsx)(l.ArrowLargeRightIcon, {
                                     width: v,
                                     height: v
@@ -59756,13 +59782,13 @@
                             }), (0, i.jsxs)(s.Clickable, {
                                 className: T.bottom,
                                 onClick: e => {
-                                    e.stopPropagation(), P(), G()
+                                    L(), H(e)
                                 },
                                 children: [(0, i.jsx)(s.Text, {
                                     variant: "text-xs/medium",
                                     color: "text-muted",
                                     children: _.default.Messages.QUESTS_MEMBERS_LIST_PROMOTED_BY.format({
-                                        gamePublisher: M.config.messages.gamePublisher
+                                        gamePublisher: O.config.messages.gamePublisher
                                     })
                                 }), (0, i.jsx)(a.CircleQuestionIcon, {
                                     width: A,
@@ -59778,10 +59804,10 @@
                                     className: T.imgUnderlay
                                 }), (0, i.jsx)("img", {
                                     alt: _.default.Messages.QUESTS_MEMBERS_LIST_GAME_TILE_ALT.format({
-                                        gameTitle: M.config.messages.gameTitle,
-                                        gamePublisher: M.config.messages.gamePublisher
+                                        gameTitle: O.config.messages.gameTitle,
+                                        gamePublisher: O.config.messages.gamePublisher
                                     }),
-                                    src: !w || D || N(k) ? (0, y.getGameTileAssetUrl)(M.id) : (0, y.getRewardAssetUrl)(M.id)
+                                    src: V.tileAssetUrl
                                 })]
                             })
                         })]
@@ -82755,4 +82781,4 @@
         }
     }
 ]);
-//# sourceMappingURL=60053.667a21ca3e37b2d1ea3a.js.map
+//# sourceMappingURL=60053.4b7620445405ed77ed78.js.map
