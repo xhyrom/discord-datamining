@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-03_valorant_admin_signup",
+    "label": "Valorant Admin Signup",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show admin signup"
+    ],
+    "hash": 2999880206,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
