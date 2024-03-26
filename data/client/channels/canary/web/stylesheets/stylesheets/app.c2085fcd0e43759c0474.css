@@ -3800,7 +3800,7 @@
 }
 
 .title__746ed {
-    font-size: 1.0625rem
+    font-size: 17px
 }
 
 .developerResources_fdd04d:hover {
@@ -3831,8 +3831,8 @@
 }
 
 .backHeader__18afe {
-    font-size: 1.0625rem;
-    line-height: 1.5rem;
+    font-size: 17px;
+    line-height: 24px;
     color: var(--interactive-normal)
 }
 
@@ -27352,7 +27352,9 @@ html .progress__4ef76 {
     -o-object-fit: cover;
     object-fit: cover;
     position: absolute;
-    width: 660px
+    max-width: 660px;
+    width: 100%;
+    min-height: 100%
 }
 
 .header__6145e {
@@ -130784,4 +130786,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.5b4ec37f824e44244b29.css.map*/
+/*# sourceMappingURL=app.c2085fcd0e43759c0474.css.map*/
