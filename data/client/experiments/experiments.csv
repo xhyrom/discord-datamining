@@ -504,6 +504,8 @@ id,hash,label
 2024-03_friend_finder_selected_states,3744134882,Friend Finder State Experiment
 2024-03_gateway_zstd,3940464351,Gateway Zstd compression
 2024-03_gdm_facepiles_desktop,2728749069,Group DM Facepiles (Desktop)
+2024-03_holdout_bug_main_right_way,2112082891,Holdout Bug Experiment Right Way (pls ignore)
+2024-03_holdout_bug_main_wrong_way,2448001788,Holdout Bug Experiment Wrong Way (pls ignore)
 2024-03_krisp_sentiment,2156584863,override krisp setting
 2024-03_media_play_metrics,465715532,Media play metrics User Experiment
 2024-03_metrics_endpoint_v2,1779058233,Metrics V2 Endpoint Rollout
@@ -517,6 +519,7 @@ id,hash,label
 2024-03_quests_activity_quest,1874994306,Activity Quest
 2024-03_quests_client_monitoring,2848826960,Quests client monitoring experiment
 2024-03_quests_members_list_entrypoint,950109088,Quests Members List Entrypoint
+2024-03_simplified_profile_phase_one,526435992,Simplified Profile Experiment
 2024-03_social_proof_hd_streaming,913903122,Social proof in HD streaming upsell
 2024-03_unreads_new_users,1135801489,Unreads Experiment (grey-dot mode) (new users)
 2024-03_user_recent_games,2769393059,Recent Games
