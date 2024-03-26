@@ -304,7 +304,7 @@
                 d = n("49111"),
                 c = n("894488"),
                 p = n("782340");
-            let f = new l.default("CloudUploaderBase.tsx");
+            let f = new l.Logger("CloudUploaderBase.tsx");
             async function m(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     n = arguments.length > 2 ? arguments[2] : void 0,
@@ -1421,7 +1421,7 @@
                 v = n("217946"),
                 D = n("317041"),
                 R = n("49111");
-            let L = new r.default("ApplicationCommandIndexStore"),
+            let L = new r.Logger("ApplicationCommandIndexStore"),
                 P = Symbol("currentUser"),
                 U = Symbol("stale"),
                 b = Symbol("current"),
@@ -4233,4 +4233,4 @@
         }
     }
 ]);
-//# sourceMappingURL=31337.51b247b7a1e212f12ae0.js.map
+//# sourceMappingURL=31337.6fd87af98faed0786a4c.js.map

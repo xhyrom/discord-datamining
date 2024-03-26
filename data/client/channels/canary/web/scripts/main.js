@@ -26,7 +26,7 @@
                 o = n("254490"),
                 r = n("49671"),
                 u = n("49111");
-            let d = new i.default("uploadRtcLogFiles");
+            let d = new i.Logger("uploadRtcLogFiles");
             async function c(e, t) {
                 let n;
                 if (null == r.default.fileManager.readLogFiles) throw new s.UploadVoiceDebugLogsError(s.UploadErrorCodes.GENERAL);
@@ -797,8 +797,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "278775",
-                    versionHash: "a899f585ccf1ea39b0030fa2e7a16d5dc6095a84"
+                    buildNumber: "278786",
+                    versionHash: "930bcb93b248f40febec827fb4a2fd0ae7c7dee6"
                 }
             }
             n.r(t), n.d(t, {
@@ -1969,4 +1969,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4574.f742a8a2ce3988bfb76f.js.map
+//# sourceMappingURL=4574.7c879a978d1a618c9292.js.map

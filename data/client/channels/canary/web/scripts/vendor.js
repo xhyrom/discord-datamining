@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["67229"], {
+    ["29062"], {
         952110: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -31323,7 +31323,7 @@
                 d = n("697218"),
                 c = n("840707"),
                 _ = n("49111");
-            let f = new a.default("UserProfileModalActionCreators");
+            let f = new a.Logger("UserProfileModalActionCreators");
 
             function E() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
@@ -32085,7 +32085,7 @@
                     this._ref = e
                 }
                 render() {
-                    return (0, i.jsx)(r.default, {
+                    return (0, i.jsx)(r.FileInput, {
                         ref: this.setRef,
                         handleNativeClick: d,
                         embedded: (0, l.isDesktop)(),
@@ -49433,7 +49433,7 @@
                     for (let e in this.disabled = !0, this.perUserFpsWindow) this.deleteUser(e)
                 }
                 constructor(e, t, n, s) {
-                    this.logger = new i.default("VideoHealthManager"), this.disabled = !1, this.perUserFpsWindow = {}, this.prevFramesCodec = {}, this.prevTimestamp = {}, this.streamDisabledUsers = new Set, this.retryBackoffCache = {}, this.timeoutIdCache = {}, this.currentVideoAutoToggleState = {}, this.enableQueue = [], this.windowLength = e, this.fpsThreshold = n, this.fpsWindowBorderlineCount = Math.ceil(e * t), this.backoffTimeSec = s, this.logger.info("constructor with windowLength = ".concat(this.windowLength, ",\n      fpsWindowBorderlineCount = ").concat(this.fpsWindowBorderlineCount, ",\n      fpsThreshold = ").concat(this.fpsThreshold, ",\n      backoffTimeSec = ").concat(s))
+                    this.logger = new i.Logger("VideoHealthManager"), this.disabled = !1, this.perUserFpsWindow = {}, this.prevFramesCodec = {}, this.prevTimestamp = {}, this.streamDisabledUsers = new Set, this.retryBackoffCache = {}, this.timeoutIdCache = {}, this.currentVideoAutoToggleState = {}, this.enableQueue = [], this.windowLength = e, this.fpsThreshold = n, this.fpsWindowBorderlineCount = Math.ceil(e * t), this.backoffTimeSec = s, this.logger.info("constructor with windowLength = ".concat(this.windowLength, ",\n      fpsWindowBorderlineCount = ").concat(this.fpsWindowBorderlineCount, ",\n      fpsThreshold = ").concat(this.fpsThreshold, ",\n      backoffTimeSec = ").concat(s))
                 }
             }
         },
@@ -72038,7 +72038,7 @@
                         }
                     }]
                 }),
-                d = new i.default("GatewayZstdStore"),
+                d = new i.Logger("GatewayZstdStore"),
                 c = !1,
                 _ = !1,
                 f = 0;
@@ -72090,7 +72090,7 @@
                 }
             });
             var i = n("811022");
-            let s = new i.default("FAST CONNECT");
+            let s = new i.Logger("FAST CONNECT");
 
             function r() {
                 return !1
@@ -87544,7 +87544,7 @@
                 d = n("985365"),
                 c = n("599110"),
                 _ = n("49111");
-            let f = new i.default("MessageRoundtripTrackerStore");
+            let f = new i.Logger("MessageRoundtripTrackerStore");
 
             function E(e) {
                 return null != e.apiResponseTimestamp && null != e.gatewaySeenTimestamp
@@ -88265,8 +88265,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711485598306",
-                                    build_number: "278775"
+                                    built_at: "1711486019880",
+                                    build_number: "278786"
                                 }
                             },
                             retries: 1
@@ -95190,7 +95190,7 @@
                     return i
                 }
             });
-            var i = n("631734").default
+            var i = n("631734").RPCError
         },
         648030: function(e, t, n) {
             "use strict";
@@ -125796,7 +125796,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "a899f585ccf1ea39b0030fa2e7a16d5dc6095a84"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "930bcb93b248f40febec827fb4a2fd0ae7c7dee6"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -135350,7 +135350,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "278775"
+                                build_number: "278786"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -137884,7 +137884,7 @@
                 s = n("49671"),
                 r = n("921278"),
                 a = n("50885");
-            let o = new i.default("ProcessUtilsElectron");
+            let o = new i.Logger("ProcessUtilsElectron");
             class l extends r.ProcessUtils {
                 setupReportingTimer() {
                     var e, t;
@@ -144184,7 +144184,7 @@
                 s = n("350798"),
                 r = n("390493");
             let a = "1" === r.env.KV_STORAGE_LOGGING,
-                o = new i.default("Runtime");
+                o = new i.Logger("Runtime");
             class l {
                 static nextId() {
                     return ++this.counter
@@ -144507,7 +144507,7 @@
             var i, s = n("811022"),
                 r = n("773364"),
                 a = n("353927");
-            let o = new s.default("ConnectionEventFramerateReducer");
+            let o = new s.Logger("ConnectionEventFramerateReducer");
             i = class {
                 initialize() {
                     this.userSpeakingChange(!0)
@@ -145992,7 +145992,7 @@
                             }
                             this.stats = e
                         }
-                    }, this.logger = new f.default("Connection(".concat(e, ")")), this.videoSupported = n
+                    }, this.logger = new f.Logger("Connection(".concat(e, ")")), this.videoSupported = n
                 }
             }
         },
@@ -146162,7 +146162,7 @@
                 a = n("773364"),
                 o = n("784063"),
                 l = n("149416");
-            let u = new s.default("SpeedTester"),
+            let u = new s.Logger("SpeedTester"),
                 d = 0;
             i = class e extends r.default {
                 static create(t, n) {
@@ -146813,7 +146813,7 @@
                 }
                 constructor() {
                     var t, n;
-                    super(), t = this, this.Video = g.default, this.Camera = h.default, this.videoInputDeviceId = m.DISABLED_DEVICE_ID, this.connections = new Set, this.speedTesters = new Set, this.lastVoiceActivity = -1, this.audioSubsystem = "standard", this.audioLayer = "", this.deviceChangeGeneration = 0, this.consecutiveWatchdogFailures = 0, this.codecSurvey = null, this.logger = new o.default("MediaEngineNative"), this.handleDeviceChange = function() {
+                    super(), t = this, this.Video = g.default, this.Camera = h.default, this.videoInputDeviceId = m.DISABLED_DEVICE_ID, this.connections = new Set, this.speedTesters = new Set, this.lastVoiceActivity = -1, this.audioSubsystem = "standard", this.audioLayer = "", this.deviceChangeGeneration = 0, this.consecutiveWatchdogFailures = 0, this.codecSurvey = null, this.logger = new o.Logger("MediaEngineNative"), this.handleDeviceChange = function() {
                         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
                             n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [],
                             i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
@@ -146934,7 +146934,7 @@
                 }
             }), n("370692"), n("477657"), n("811875"), n("90301"), n("652153"), n("28797"), n("817884"), n("597349"), n("667536"), n("690341");
             var i = n("811022");
-            let s = new i.default("RenderingContextWebGL");
+            let s = new i.Logger("RenderingContextWebGL");
             class r {
                 static create(e) {
                     if (null == e) return null;
@@ -147440,7 +147440,7 @@
                 a = n.n(r),
                 o = n("811022"),
                 l = n("784063");
-            let u = new o.default("DirectVideo");
+            let u = new o.Logger("DirectVideo");
             class d {
                 addref() {
                     this.refcount++
@@ -147777,7 +147777,7 @@
                 u = n("111000"),
                 d = n("353927"),
                 c = n("843455");
-            let _ = new r.default("Output"),
+            let _ = new r.Logger("Output"),
                 f = new o.default;
             i = class extends s.EventEmitter {
                 destroy() {
@@ -148193,7 +148193,7 @@
 
             function m(e, t, n, s) {
                 let o = "".concat(null != r.name && "" !== r.name ? r.name : "unknown", " ").concat(null != r.version && "" !== r.version ? r.version : "unknown"),
-                    l = new a.default("Connection(".concat(e, ")"));
+                    l = new a.Logger("Connection(".concat(e, ")"));
                 return h.BROWSER_SUPPORTS_UNIFIED_PLAN ? (l.info("Using Unified Plan (".concat(o, ")")), new f.default(e, t, n, s)) : (l.info("Using Plan B (".concat(o, ")")), new i(e, t, n, s))
             }
             i = class extends l.default {
@@ -148233,7 +148233,7 @@
                 }
                 setVideoEncoderParameters(e) {}
                 constructor(e, t, n, i) {
-                    super(e, t, n, i), this.codecs = [], this.logger = new a.default("Connection(".concat(e, ")"));
+                    super(e, t, n, i), this.codecs = [], this.logger = new a.Logger("Connection(".concat(e, ")"));
                     let s = new u.default;
                     s.on("answer", e => this.pc.setRemoteDescription(e).catch(e => this.logger.error("Failed to set remote description (answer): ".concat(e)))), s.on("offer", e => {
                         this.pc.setRemoteDescription(e).then(() => this.pc.createAnswer()).then(e => this.fpc.setRemoteDescription(e)).catch(e => this.logger.error("Failed to set remote description (offer): ".concat(e)))
@@ -148750,7 +148750,7 @@
                 l = n("861001"),
                 u = n("441822"),
                 d = n("353927");
-            let c = new a.default("Output");
+            let c = new a.Logger("Output");
             (i = s || (s = {})).InteractionRequired = "interactionrequired", i.Speaking = "speaking", i.Video = "video", r = class extends o.default {
                 play() {
                     var e;
@@ -148843,7 +148843,7 @@
             var i, s = n("44170"),
                 r = n("811022"),
                 a = n("53452");
-            let o = new r.default("PeerConnection");
+            let o = new r.Logger("PeerConnection");
             i = class extends s.EventEmitter {
                 setBitRate(e) {
                     this.bitrate !== e && (this.bitrate = e, this.negotiationNeeded())
@@ -148991,7 +148991,7 @@
                 g = n("811022"),
                 m = n("353927"),
                 p = n("53452");
-            let S = new g.default("SDP");
+            let S = new g.Logger("SDP");
             (r = i || (i = {})).AUDIO = "a", r.VIDEO = "v", (a = s || (s = {})).SENDRECV = "sendrecv", a.SENDONLY = "sendonly", a.RECVONLY = "recvonly", a.INACTIVE = "inactive";
             let T = "UDP/TLS/RTP/SAVPF";
 
@@ -149720,7 +149720,7 @@
                                 (null === (t = this.users.get(e)) || void 0 === t ? void 0 : t.videoSSRC) == null && this.destroyOutput(e, n)
                             }
                         }
-                    }, this.logger = new o.default("UnifiedConnection(".concat(e, ")")), this.videoSupported = f.BROWSER_SUPPORTS_VIDEO;
+                    }, this.logger = new o.Logger("UnifiedConnection(".concat(e, ")")), this.videoSupported = f.BROWSER_SUPPORTS_VIDEO;
                     let s = this.pc = new RTCPeerConnection({
                         bundlePolicy: "max-bundle",
                         sdpSemantics: "unified-plan"
@@ -149979,7 +149979,7 @@
                 v = n("232125"),
                 I = n("353927"),
                 A = n("53452");
-            let C = new a.default("MediaEngineWebRTC");
+            let C = new a.Logger("MediaEngineWebRTC");
             i = class extends o.default {
                 destroy() {
                     null != this.voiceActivityInput && (this.voiceActivityInput.destroy(), this.voiceActivityInput = null), this.eachConnection(e => e.destroy()), this.emit(c.MediaEngineEvent.Destroy), this.removeAllListeners()
@@ -152405,8 +152405,8 @@
         997921: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                default: function() {
-                    return l
+                FileInput: function() {
+                    return o
                 }
             }), n("222007");
             var i = n("37983"),
@@ -152478,8 +152478,7 @@
                 multiple: !1,
                 disabled: !1,
                 tabIndex: 0
-            };
-            var l = o
+            }
         },
         171210: function(e, t, n) {
             "use strict";
@@ -152515,11 +152514,11 @@
         631734: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                default: function() {
+                RPCError: function() {
                     return i
                 }
             }), n("70102");
-            var i = class e extends Error {
+            class i extends Error {
                 constructor(e, t) {
                     super(t), "closeCode" in e ? (this.code = e.closeCode, this.closeCode = e.closeCode) : (this.code = e.errorCode, this.errorCode = e.errorCode), this.message = t, this.name = "RPCError"
                 }
@@ -153187,4 +153186,4 @@
         }
     }
 ]);
-//# sourceMappingURL=67229.cfd92468663de3c98e00.js.map
+//# sourceMappingURL=29062.21266ae9567d4e407975.js.map
