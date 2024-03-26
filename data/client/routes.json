@@ -1686,6 +1686,10 @@
     "url": "/auth/conditional/finish",
     "allowed_methods": null
   },
+  "WEBAUTHN_PASSWORDLESS_CHALLENGE": {
+    "url": "/auth/passwordless/start",
+    "allowed_methods": null
+  },
   "MFA_WEBAUTHN_CREDENTIAL": {
     "url": "/users/@me/mfa/webauthn/credentials/:param",
     "allowed_methods": [
