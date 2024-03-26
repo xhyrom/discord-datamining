@@ -67,13 +67,13 @@
 <p>2. Once redirected to Account, you will see that you can select various options. To edit a specific account detail, tap the specific option. </p>
 <p>3. Before the changes are solidified, you will be asked to verify your password to confirm the changes. Then, you should be all set!  </p>
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-2401a06b-7fff-5dd7-8cb4-4f02f12fc723"><img src="https://support.discord.com/hc/article_attachments/22330093416983" width="222" height="464">   </span><span id="docs-internal-guid-8ceaefa1-7fff-7115-8c99-51d1d4b714b6"><img src="https://support.discord.com/hc/article_attachments/22330111649303" width="222" height="461">   </span><span id="docs-internal-guid-6d7d67f1-7fff-82ed-16be-a157cc11ab59"><img src="https://support.discord.com/hc/article_attachments/22330111656855" width="222" height="462"></span></p>
-<p id="docs-internal-guid-987430c2-7fff-a47c-c5ff-8cf1b547e3b0">Additionally, if you ever need to change your password, you’ll be able to press <strong>Password</strong> in the <strong>Account</strong> settings.</p>
-<p id="docs-internal-guid-250a86c6-7fff-e9f3-9077-e59622754506">You can only change your username and avatar two times in an hour! So if you’ve reached the limit for the hour, you’ll need to wait before changing your name again! </p>
+<p id="docs-internal-guid-987430c2-7fff-a47c-c5ff-8cf1b547e3b0">4. Additionally, if you ever need to change your password, you’ll be able to press <strong>Password</strong> in the <strong>Account</strong> settings.</p>
+<h3 id="docs-internal-guid-250a86c6-7fff-e9f3-9077-e59622754506">You can only change your username and avatar two times in an hour! So if you’ve reached the limit for the hour, you’ll need to wait before changing your name again! </h3>
 <h1 id="h_01GVRC0YCTWPJ0KRMR6BA2KW6Y">Adding Friends</h1>
 <p>Now that you’ve officially created an account, you can directly add friends or receive friend requests from people that you already know on Discord!</p>
 <h2 id="h_01GVRC0QRS7ZKC74069CJT4TEE">Sending Friend Requests  </h2>
 <p id="docs-internal-guid-b2b324e3-7fff-6245-f76c-be3eb18fdaef">1. To send a friend request, be sure to tap the <strong>Messages </strong>tab in the bottom row. </p>
-<p> 2. Once you have been redirected to Messages, tap the <strong>Add Friends</strong> button in the upper right corner.</p>
+<p>2. Once you have been redirected to Messages, tap the <strong>Add Friends</strong> button in the upper right corner.</p>
 <p>3. To add your friend by their username, tap <strong>@</strong> <strong>Add by Username</strong> and input your friend’s <strong>username. </strong></p>
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-8fffe7ed-7fff-7d0d-b172-3766750e75e1"><img src="https://support.discord.com/hc/article_attachments/22349127669399" width="238" height="496"></span></p>
 <p class="wysiwyg-text-align-left">4. Once you’ve typed in your friend’s Discord username and press <strong>Send Friend Request</strong>, a request will be directly sent!</p>
