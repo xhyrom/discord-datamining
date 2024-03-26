@@ -88264,8 +88264,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711411395935",
-                                    build_number: "278471"
+                                    built_at: "1711415934898",
+                                    build_number: "278501"
                                 }
                             },
                             retries: 1
@@ -88657,7 +88657,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return y
+                    return N
                 }
             }), n("222007"), n("424973");
             var i = n("446674"),
@@ -88809,7 +88809,7 @@
                 }
             }
             C.displayName = "NotificationCenterItemsStore", C.persistKey = "NotificationCenterItemsStore_v2";
-            var y = new C(s.default, {
+            let y = new C(s.default, {
                 CONNECTION_OPEN: function(e) {
                     p(), h.default.initialLanguageLoad.then(() => {
                         let t = [];
@@ -88828,7 +88828,7 @@
                             e.guild_scheduled_events.forEach(e => {
                                 A(e)
                             })
-                        }), g.notifCenterLocalItems = t
+                        }), g.notifCenterLocalItems = t, y.emitChange()
                     })
                 },
                 LOGOUT: p,
@@ -88944,7 +88944,8 @@
                         void 0 === g.notifCenterLocalItems.find(t => t.local_id === e.local_id) && (g.notifCenterLocalItems = [...g.notifCenterLocalItems.filter(t => t.kind !== e.kind), e])
                     }
                 }
-            })
+            });
+            var N = y
         },
         360191: function(e, t, n) {
             "use strict";
@@ -125786,7 +125787,7 @@
                     } = e, n = crypto.getRandomValues(new Uint8Array(8));
                     Y = btoa(String.fromCharCode(...n));
                     let s = new URLSearchParams;
-                    s.append("build_id", "d264a8ded49f9d5ea84dddbe4587eb6cc2c52dd6"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
+                    s.append("build_id", "354e96e8d2ddbe7bd9108a3511aeb8e061e7a9aa"), s.append("rpc", String(t)), s.append("rpc_auth_token", Y), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(s.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -135284,7 +135285,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "278471"
+                                build_number: "278501"
                             },
                             _ = l.default.getCurrentUser();
                         null != _ && (c.user_id = _.id, c.user_name = _.tag, null != _.email && (c.email = _.email));
@@ -153099,4 +153100,4 @@
         }
     }
 ]);
-//# sourceMappingURL=29062.795c250226f5e97b8cc5.js.map
+//# sourceMappingURL=29062.72448a2fb5b7834d133a.js.map
