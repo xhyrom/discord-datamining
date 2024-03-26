@@ -2,9 +2,8 @@
 <p> </p>
 <p><span class="wysiwyg-underline"><strong><span class="wysiwyg-font-size-large">The REALLY Useful Stuff:</span></strong></span></p>
 <p><span class="wysiwyg-font-size-medium">I guess this is a bit of a subjective opinion, but here are some of the more widely-used or super-cool shortcuts that will help you keep your hands on the keys for longer (read: more rapid fire meme-cannoning).</span></p>
-<p> </p>
 <p><span class="wysiwyg-underline wysiwyg-font-size-large">Server &amp; Channel Navigation:</span></p>
-<p>  <strong><span class="wysiwyg-underline wysiwyg-font-size-medium"><img src="https://support.discord.com/hc/article_attachments/211203807" alt=""><img src="https://support.discord.com/hc/article_attachments/211069348" alt=""></span></strong></p>
+<p><strong><span class="wysiwyg-underline wysiwyg-font-size-medium"><img src="https://support.discord.com/hc/article_attachments/211203807" alt=""><img src="https://support.discord.com/hc/article_attachments/211069348" alt=""></span></strong></p>
 <p><span class="wysiwyg-underline wysiwyg-font-size-large">Speedy Message Reading:</span></p>
 <p> <strong><span class="wysiwyg-underline wysiwyg-font-size-medium"><img src="https://support.discord.com/hc/article_attachments/211069728" alt=""><img src="https://support.discord.com/hc/article_attachments/211069308" alt=""></span></strong></p>
 <p><img src="https://support.discord.com/hc/article_attachments/211069768" alt=""><img src="https://support.discord.com/hc/article_attachments/211069788" alt=""> </p>
