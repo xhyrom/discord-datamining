@@ -19785,17 +19785,6 @@
                 nitroWheel: "nitroWheel__67143"
             }
         },
-        455701: function(e, t, n) {
-            "use strict";
-            e.exports = {
-                buttonText: "buttonText__723e2",
-                giftButton: "giftButton_ff61dc",
-                giftIcon: "giftIcon__2d782",
-                gradientBackground: "gradientBackground__404d5",
-                gradientBackgroundHover: "gradientBackgroundHover_db9871",
-                innerGiftButton: "innerGiftButton__8d79f"
-            }
-        },
         916834: function(e, t, n) {
             "use strict";
             e.exports = {
@@ -24411,8 +24400,6 @@
                 appButtonColor: "appButtonColor__595dd",
                 appButtonContainer: "appButtonContainer_c8ebdb",
                 appListThemedContainer: "appListThemedContainer_cc61cb",
-                giftButton: "giftButton__0988e",
-                giftButtonContainer: "giftButtonContainer__68103",
                 mutualFriendsDivider: "mutualFriendsDivider_c21dfe",
                 mutualFriendsList: "mutualFriendsList__632b5",
                 mutualGuildsList: "mutualGuildsList__6e961",
