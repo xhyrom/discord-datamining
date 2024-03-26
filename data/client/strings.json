@@ -2646,6 +2646,7 @@
   "QR_CODE_FAIL": "\"Failed to scan\"",
   "QR_CODE_FAIL_DESCRIPTION": "\"Something went wrong when trying to scan.\"",
   "QR_CODE_IN_APP_SCANNER_ONLY": "\"Rescan the QR code to continue the login process.\"",
+  "SIGN_IN_WITH_PASSKEY": "\"Or, sign in with passkey\"",
   "SMS_CONFIRMATION_TITLE": "\"Enter your confirmation code\"",
   "SMS_CONFIRMATION_DESCRIPTION": "\"An SMS was sent to !!{phone}!!.\"",
   "PASSWORD_RECOVERY_TITLE": "\"Password Recovery\"",
