@@ -1629,9 +1629,9 @@
             function w() {
                 let {
                     renderWindow: e
-                } = n.useContext(I.default), t = e.document, [r] = n.useState(() => new u.default(() => t.createElement("img"), e => {
+                } = n.useContext(I.default), t = e.document, [r] = n.useState(() => new u.ElementPool(() => t.createElement("img"), e => {
                     e.onload = null, e.src = ""
-                })), [s] = n.useState(() => new u.default(() => {
+                })), [s] = n.useState(() => new u.ElementPool(() => {
                     let e = t.createElement("video");
                     return e.className = y.gif, e.autoplay = !0, e.loop = !0, e.muted = !0, e.preload = "auto", e.controls = !1, e
                 }, e => {
@@ -2230,11 +2230,11 @@
         217982: function(e, t, r) {
             "use strict";
             r.r(t), r.d(t, {
-                default: function() {
+                ElementPool: function() {
                     return s
                 }
             }), r("424973");
-            var s = class e {
+            class s {
                 getElement() {
                     return 0 === this._elements.length ? this._createElement() : this._elements.pop()
                 }
@@ -2251,4 +2251,4 @@
         }
     }
 ]);
-//# sourceMappingURL=58533.22d2a9594538cb34206b.js.map
+//# sourceMappingURL=58533.d5066ba1e9dddab9d02c.js.map

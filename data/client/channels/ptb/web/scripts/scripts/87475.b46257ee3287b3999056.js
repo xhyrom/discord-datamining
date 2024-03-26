@@ -3408,7 +3408,7 @@
                             } else if (400 === e.status && (null === (n = e.body) || void 0 === n ? void 0 : n.code) === m.AbortCodes.INVALID_USER_SETTINGS_DATA) throw this.logger.log("Reloading do to invalid data"), this.loadIfNecessary(!0), e;
                             else throw this.logger.log("Unknown user settings error"), e
                         }
-                    }, this.logger = new o.default(this.ProtoClass.typeName)
+                    }, this.logger = new o.Logger(this.ProtoClass.typeName)
                 }
             }
             let T = new I(a.PreloadedUserSettings, g.UserSettingsTypes.PRELOADED_USER_SETTINGS),
@@ -4123,7 +4123,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "278772", "278772"), 10);
+                let o = parseInt((n = "278786", "278786"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5681,4 +5681,4 @@
         }
     }
 ]);
-//# sourceMappingURL=87475.c6261fb2d4201b9b968a.js.map
+//# sourceMappingURL=87475.b46257ee3287b3999056.js.map

@@ -129,7 +129,7 @@
                 g = r("490931"),
                 C = r("225982"),
                 b = r("178406");
-            let m = new c.default("MemberSafetySearchManager");
+            let m = new c.Logger("MemberSafetySearchManager");
 
             function I(e) {
                 return "guild_".concat(e)
@@ -469,4 +469,4 @@
         }
     }
 ]);
-//# sourceMappingURL=78891.08cd8fae8100b1309197.js.map
+//# sourceMappingURL=78891.82a60a9e52a130068280.js.map
