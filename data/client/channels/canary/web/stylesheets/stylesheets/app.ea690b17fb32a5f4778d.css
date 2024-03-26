@@ -64326,7 +64326,8 @@ html .invoiceCancelRow_c1bfe7 {
 }
 
 .cardImage__9da5b {
-    pointer-events: none
+    pointer-events: none;
+    border-radius: 14px
 }
 
 .cardIllustrationNoHover_e49efc {
@@ -130410,4 +130411,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.1de6214b370c984501bc.css.map*/
+/*# sourceMappingURL=app.ea690b17fb32a5f4778d.css.map*/
