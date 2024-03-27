@@ -36593,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279163", ", Version Hash: ").concat("07225621825131b6cb5bddde32624ad37697905d")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279169", ", Version Hash: ").concat("5d027f49591b7003101036999f854078a1e2f6d7")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85443,8 +85443,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279163", "279163"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279163")), t = 0), t
+                let t = parseInt((e = "279169", "279169"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279169")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107422,8 +107422,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279163",
-                    versionHash: "07225621825131b6cb5bddde32624ad37697905d"
+                    buildNumber: "279169",
+                    versionHash: "5d027f49591b7003101036999f854078a1e2f6d7"
                 }
             }
             n.r(t), n.d(t, {
@@ -151549,196 +151549,28 @@
             var i = n("818083");
             let r = (0, i.createExperiment)({
                 kind: "user",
-                id: "2023-10_bandwidth_estimation_v1",
-                label: "Bandwidth Estimation",
+                id: "2024-03_remb_experiment",
+                label: "Bandwidth Estimation - REMB",
                 defaultConfig: {
                     enabled: !0,
                     fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/trendline-window-duration-3750,robust-estimator"
                 },
                 treatments: [{
                     id: 1,
-                    label: "Sender: Loss-Based BWE V2",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/loss-based-bwe-v2/"
-                    }
-                }, {
-                    id: 2,
-                    label: "Sender: Robust Estimator",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/robust-estimator/"
-                    }
-                }, {
-                    id: 3,
-                    label: "Sender: Loss-Based BWE V2 + Robust Estimator",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/loss-based-bwe-v2,robust-estimator/"
-                    }
-                }, {
-                    id: 4,
-                    label: "Sender: Trendline Window Size",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/trendline-window-size/"
-                    }
-                }, {
-                    id: 5,
-                    label: "Sender: Trendline Window Size + Robust Estimator",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/trendline-window-size,robust-estimator/"
-                    }
-                }, {
-                    id: 6,
-                    label: "Worker: Loss-Based BWE V2",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation//loss-based-bwe-v2"
-                    }
-                }, {
-                    id: 7,
-                    label: "Worker: Robust Estimator",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation//robust-estimator"
-                    }
-                }, {
-                    id: 8,
-                    label: "Worker: Loss-Based BWE V2 + Robust Estimator",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation//loss-based-bwe-v2,robust-estimator"
-                    }
-                }, {
-                    id: 9,
-                    label: "Worker: Trendline Window Size",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation//trendline-window-size"
-                    }
-                }, {
-                    id: 10,
-                    label: "Worker: Trendline Window Size + Robust Estimator",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation//trendline-window-size,robust-estimator"
-                    }
-                }, {
-                    id: 11,
-                    label: "Sender + Worker: Trendline Window Size",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/trendline-window-size/trendline-window-size"
-                    }
-                }, {
-                    id: 12,
-                    label: "Sender + Worker: Trendline Window Size + Robust Estimator",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/trendline-window-size,robust-estimator/trendline-window-size,robust-estimator"
-                    }
-                }, {
-                    id: 13,
-                    label: "Sender + Worker: Loss-Based-BWE V2 + Trendline Window Size + Robust Estimator",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/loss-based-bwe-v2,trendline-window-size,robust-estimator/loss-based-bwe-v2,trendline-window-size,robust-estimator"
-                    }
-                }, {
-                    id: 14,
-                    label: "Sender + Worker: Trendline Window Duration 50ms + Robust Estimator",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/trendline-window-duration-50,robust-estimator/trendline-window-duration-50,robust-estimator"
-                    }
-                }, {
-                    id: 15,
-                    label: "Sender + Worker: Trendline Window Duration 100ms + Robust Estimator",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/trendline-window-duration-100,robust-estimator/trendline-window-duration-100,robust-estimator"
-                    }
-                }, {
-                    id: 16,
-                    label: "Sender + Worker: Trendline Window Duration 250ms + Robust Estimator",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/trendline-window-duration-250,robust-estimator/trendline-window-duration-250,robust-estimator"
-                    }
-                }, {
-                    id: 17,
-                    label: "Sender + Worker: Trendline Window Duration 500ms + Robust Estimator",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/trendline-window-duration-500,robust-estimator/trendline-window-duration-500,robust-estimator"
-                    }
-                }, {
-                    id: 18,
-                    label: "Sender + Worker: Trendline Window Duration 1000ms + Robust Estimator",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/trendline-window-duration-1000,robust-estimator/trendline-window-duration-1000,robust-estimator"
-                    }
-                }, {
-                    id: 19,
-                    label: "Sender + Worker: Trendline Window Duration 2500ms + Robust Estimator",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/trendline-window-duration-2500,robust-estimator/trendline-window-duration-2500,robust-estimator"
-                    }
-                }, {
-                    id: 20,
-                    label: "Sender + Worker: Trendline Window Duration 3750ms + Robust Estimator",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/trendline-window-duration-3750,robust-estimator"
-                    }
-                }, {
-                    id: 21,
-                    label: "Sender + Worker: Trendline Window Duration 5000ms + Robust Estimator",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/trendline-window-duration-5000,robust-estimator/trendline-window-duration-5000,robust-estimator"
-                    }
-                }, {
-                    id: 22,
-                    label: "Sender + Worker: Trendline Window Duration 6250ms + Robust Estimator",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/trendline-window-duration-6250,robust-estimator/trendline-window-duration-6250,robust-estimator"
-                    }
-                }, {
-                    id: 23,
-                    label: "Sender + Worker: Trendline Window Duration 7500ms + Robust Estimator",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/trendline-window-duration-7500,robust-estimator/trendline-window-duration-7500,robust-estimator"
-                    }
-                }, {
-                    id: 24,
-                    label: "Sender + Worker: Trendline Window Duration 3750ms + Robust Estimator + RC Link Capacity Fix (Worker-only)",
-                    config: {
-                        enabled: !0,
-                        fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/trendline-window-duration-3750,robust-estimator,rate-control-link-capacity-fix"
-                    }
-                }, {
-                    id: 25,
                     label: "Sender + Worker: Trendline Window Duration 7500ms + Robust Estimator, worker REMB PLI only",
                     config: {
                         enabled: !0,
                         fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/trendline-window-duration-3750,robust-estimator,worker-bitrate-remb-pli"
                     }
                 }, {
-                    id: 26,
+                    id: 2,
                     label: "Sender + Worker: Trendline Window Duration 7500ms + Robust Estimator, worker continuous REMB only",
                     config: {
                         enabled: !0,
                         fullname: "bandwidth_estimation/trendline-window-duration-3750,robust-estimator/trendline-window-duration-3750,robust-estimator,worker-bitrate-remb-preemption-v1"
                     }
                 }, {
-                    id: 27,
+                    id: 3,
                     label: "Sender + Worker: Trendline Window Duration 7500ms + Robust Estimator, worker REMB PLI with continuous",
                     config: {
                         enabled: !0,
@@ -157799,8 +157631,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711569829591",
-                                    build_number: "279163"
+                                    built_at: "1711570520004",
+                                    build_number: "279169"
                                 }
                             },
                             retries: 1
@@ -231691,7 +231523,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "07225621825131b6cb5bddde32624ad37697905d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5d027f49591b7003101036999f854078a1e2f6d7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257757,7 +257589,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279163"
+                                build_number: "279169"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264902,7 +264734,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279163", "279163"), 10);
+                let s = parseInt((n = "279169", "279169"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291643,4 +291475,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.d85a9f67ff438b6d0655.js.map
+//# sourceMappingURL=24321.b7a3afa126a964c75e7e.js.map
