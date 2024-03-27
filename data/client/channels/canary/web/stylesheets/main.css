@@ -46900,8 +46900,8 @@ html .invoiceCancelRow_c1bfe7 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -79609,7 +79609,7 @@ input::-webkit-inner-spin-button {
 }
 
 .shyButton__40b34 {
-    background: radial-gradient(ellipse at 120%200%, #ff4655 10%, var(--background-primary)70%);
+    background: radial-gradient(ellipse at 120%200%, #ff4655 10%, transparent 70%);
     background-clip: content-box
 }
 
@@ -86086,6 +86086,11 @@ html .tabBadge__002b3 {
     padding: 4px 32px;
     z-index: 100;
     font-family: var(--font-code)
+}
+
+.countdownIcon_c5c020 {
+    height: 16px;
+    margin-right: 4px
 }
 
 .countdownLabel_f81efd {
@@ -130787,4 +130792,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.4c8caf4b095b868bc882.css.map*/
+/*# sourceMappingURL=app.509344892a04240966f5.css.map*/
