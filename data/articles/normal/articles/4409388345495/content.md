@@ -91,7 +91,7 @@
 <h3 id="h_01HNGBKZ1ABA9ZEEW5VV14G3E2">Note: Nitro<span style="font-weight: 400;"> and </span>Nitro Classic<span style="font-weight: 400;"> members can use </span><a href="https://support.discord.com/hc/en-us/articles/360036479811-Custom-Emojis"><span style="font-weight: 400;">custom emojis</span></a><span style="font-weight: 400;"> in their About Me.</span>
 </h3>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><strong><span id="docs-internal-guid-dd771cae-7fff-ddb3-129a-ba027fb0a510" style="color: #2f3941;"><img src="https://support.discord.com/hc/article_attachments/21750753353495" width="624" height="543"></span></strong></span></p>
-<h1 id="docs-internal-guid-7da00c79-7fff-f921-77c7-bed60ff6ee12">How do I add Avatar Decorations and Profile Effects to my Server Profile? </h1>
+<h1 id="docs-internal-guid-7da00c79-7fff-f921-77c7-bed60ff6ee12">How do I add Avatar Decorations and Profile Effects to my Server Profile?</h1>
 <p id="docs-internal-guid-0e77bf92-7fff-3462-1394-5151c16c0b4d">1. In your <strong>Server Profiles</strong> settings, be sure to choose the server you would like to update within the <strong>Choose A Server</strong> selection box. </p>
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-fc473c85-7fff-4978-45f0-8a190fc8700d" style="color: #4f545c;"><img src="https://support.discord.com/hc/article_attachments/21750745893911" width="624" height="404"></span></p>
 <p id="docs-internal-guid-2d5a8244-7fff-61a7-4976-ff67df627a7c">2.  Once you have chosen the server, press <strong>Change Decoration</strong> or <strong>Change Effect</strong> to select the avatar decoration or profile effect you would like to set for the specific Server Profile. </p>
