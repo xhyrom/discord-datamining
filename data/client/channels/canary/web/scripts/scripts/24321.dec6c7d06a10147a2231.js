@@ -36593,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279214", ", Version Hash: ").concat("2dee9a8c9df06167e62842ddd09ebb1a58a916df")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279218", ", Version Hash: ").concat("889098485276dbf9f2df1142281906a7ff68b7d3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55261,7 +55261,9 @@
                 SIGNUP_CLAN_OPTION_COMPETITIVE_TITLE: "Competitive",
                 SIGNUP_CLAN_OPTION_COMPETITIVE_DESCRIPTION: "We play together to win, rank up, or beat challenges.",
                 SIGNUP_CLAN_OPTION_CREATIVE_TITLE: "Creative",
-                SIGNUP_CLAN_OPTION_CREATIVE_DESCRIPTION: "We tend to your creativity by curating, solving, or creating"
+                SIGNUP_CLAN_OPTION_CREATIVE_DESCRIPTION: "We tend to your creativity by curating, solving, or creating",
+                RECENT_GAMES_SETTING_SUBLABEL: "Enable showing your Recently Played Games on your profile. [Check our Help Center for     more information.](onClick)",
+                RECENT_GAMES_SETTING_ACTIVITY_STATUS_DISABLED_SUBLABEL: "To enable Recent Games on your profile, you must first [enable sharing your Activity Status](onSettingClick).     We won’t use this data for anything except showing your recent activity. [Check our Help Center for more       information.](onHelpArticleClick)"
             })
         },
         539590: function(e) {
@@ -85453,8 +85455,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279214", "279214"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279214")), t = 0), t
+                let t = parseInt((e = "279218", "279218"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279218")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107432,8 +107434,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279214",
-                    versionHash: "2dee9a8c9df06167e62842ddd09ebb1a58a916df"
+                    buildNumber: "279218",
+                    versionHash: "889098485276dbf9f2df1142281906a7ff68b7d3"
                 }
             }
             n.r(t), n.d(t, {
@@ -157641,8 +157643,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711574470648",
-                                    build_number: "279214"
+                                    built_at: "1711575081724",
+                                    build_number: "279218"
                                 }
                             },
                             retries: 1
@@ -195862,7 +195864,7 @@
                 let a = c.default.getApplicationIconURL({
                     id: n.id,
                     icon: n.icon,
-                    size: 48
+                    size: 40
                 });
                 return (0, i.jsxs)("div", {
                     className: f.recentGameContainer,
@@ -195870,8 +195872,8 @@
                         alt: "",
                         "aria-hidden": !0,
                         src: a,
-                        width: 48,
-                        height: 48
+                        width: 40,
+                        height: 40
                     }), (0, i.jsxs)("div", {
                         className: f.recentGameTextContainer,
                         children: [(0, i.jsx)(l.Heading, {
@@ -231533,7 +231535,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2dee9a8c9df06167e62842ddd09ebb1a58a916df"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "889098485276dbf9f2df1142281906a7ff68b7d3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257599,7 +257601,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279214"
+                                build_number: "279218"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264744,7 +264746,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279214", "279214"), 10);
+                let s = parseInt((n = "279218", "279218"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291491,4 +291493,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.10066e8950d1c742ef4d.js.map
+//# sourceMappingURL=24321.dec6c7d06a10147a2231.js.map
