@@ -20888,7 +20888,9 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .container_e6561b {
-    padding: 12px
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px
 }
 
 .section__7cf21 {
@@ -20929,13 +20931,12 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     padding-left: 6px
 }
 
-.bottomPadding__3d20b {
-    padding-bottom: 12px
-}
-
 .container_b222f4 {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-left: 12px
 }
 
 .copiableField_ae045a {
@@ -21040,10 +21041,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     margin-bottom: 2px !important;
     display: inline-flex;
     line-height: 15px
-}
-
-.usernameSection_c91d32 {
-    padding: 12px
 }
 
 .auditLog_d27c92 {
@@ -130796,4 +130793,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.97b181cfcebf35679482.css.map*/
+/*# sourceMappingURL=99387.be10f4ee1f7a541cf00f.css.map*/
