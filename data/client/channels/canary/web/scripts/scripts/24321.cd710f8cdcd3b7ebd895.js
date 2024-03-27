@@ -36593,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279150", ", Version Hash: ").concat("94cb2487ef1f67fb7cf022b290e7ef7ac8bcbcb0")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279157", ", Version Hash: ").concat("3fbb68999802d608379d28584208683ea35b4261")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -79573,6 +79573,14 @@
                             null != e.application && T(u.default.createFromServer(e.application))
                         })
                     })(e))
+                },
+                USER_RECENT_GAMES_FETCH_SUCCESS: function(e) {
+                    let {
+                        recentGames: t
+                    } = e;
+                    t.forEach(e => {
+                        T(u.default.createFromServer(e.application))
+                    })
                 }
             })
         },
@@ -85435,8 +85443,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279150", "279150"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279150")), t = 0), t
+                let t = parseInt((e = "279157", "279157"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279157")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107409,8 +107417,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279150",
-                    versionHash: "94cb2487ef1f67fb7cf022b290e7ef7ac8bcbcb0"
+                    buildNumber: "279157",
+                    versionHash: "3fbb68999802d608379d28584208683ea35b4261"
                 }
             }
             n.r(t), n.d(t, {
@@ -157786,8 +157794,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711568675605",
-                                    build_number: "279150"
+                                    built_at: "1711569237783",
+                                    build_number: "279157"
                                 }
                             },
                             retries: 1
@@ -195976,66 +195984,119 @@
         },
         347949: function(e, t, n) {
             "use strict";
-            n.r(t);
+            n.r(t), n.d(t, {
+                UserProfileRecentGamesSection: function() {
+                    return A
+                },
+                UserProfileRecentGamesThemedSection: function() {
+                    return m
+                }
+            });
             var i = n("735250"),
                 r = n("470079"),
-                s = n("481060"),
-                a = n("566454"),
-                o = n("32966"),
-                l = n("768581"),
-                u = n("659101"),
-                d = n("689938"),
-                _ = n("458186");
+                s = n("803997"),
+                a = n.n(s),
+                o = n("442837"),
+                l = n("481060"),
+                u = n("812206"),
+                d = n("566454"),
+                _ = n("32966"),
+                c = n("768581"),
+                E = n("747074"),
+                I = n("659101"),
+                T = n("689938"),
+                f = n("458186");
 
-            function c(e) {
+            function S(e) {
                 let {
                     game: t
-                } = e, n = l.default.getApplicationIconURL({
-                    id: t.application.id,
-                    icon: t.application.icon,
+                } = e, n = (0, o.useStateFromStores)([u.default], () => u.default.getApplication(t.applicationId)), s = r.useMemo(() => null == t.duration || 0 === t.duration ? (0, d.getLastPlayedTimestamp)(t, !0) : "".concat((0, d.getLastPlayedTimestamp)(t, !0), " — ").concat((0, d.getTimePlayedLastWeek)(t)), [t]);
+                if (null == n) return null;
+                let a = c.default.getApplicationIconURL({
+                    id: n.id,
+                    icon: n.icon,
                     size: 48
-                }), o = r.useMemo(() => null == t.duration || 0 === t.duration ? (0, a.getLastPlayedTimestamp)(t, !0) : "".concat((0, a.getLastPlayedTimestamp)(t, !0), " — ").concat((0, a.getTimePlayedLastWeek)(t)), [t]);
+                });
                 return (0, i.jsxs)("div", {
-                    className: _.recentGameContainer,
-                    children: [null != n && (0, i.jsx)("img", {
+                    className: f.recentGameContainer,
+                    children: [null != a && (0, i.jsx)("img", {
                         alt: "",
                         "aria-hidden": !0,
-                        src: n,
+                        src: a,
                         width: 48,
                         height: 48
                     }), (0, i.jsxs)("div", {
-                        className: _.recentGameTextContainer,
-                        children: [(0, i.jsx)(s.Heading, {
+                        className: f.recentGameTextContainer,
+                        children: [(0, i.jsx)(l.Heading, {
                             variant: "heading-md/semibold",
-                            children: t.application.name
-                        }), (0, i.jsx)(s.Heading, {
+                            children: n.name
+                        }), (0, i.jsx)(l.Heading, {
                             variant: "heading-sm/normal",
-                            children: o
+                            children: s
                         })]
                     })]
                 })
             }
-            t.default = r.memo(function(e) {
+            let h = r.memo(function(e) {
                 let {
-                    user: t
+                    userId: t,
+                    containerClassName: n,
+                    wrapChildren: r
                 } = e, {
-                    recentGames: n,
-                    isFetching: r,
-                    hasError: a
-                } = (0, o.useUserRecentGames)(t.id);
-                return r || a || null == n || 0 === n.length ? null : (0, i.jsxs)(u.default, {
-                    children: [(0, i.jsx)(s.Heading, {
+                    recentGames: s,
+                    isFetching: o,
+                    hasError: l
+                } = (0, _.useUserRecentGames)(t);
+                if (o || l || null == s || 0 === s.length) return null;
+                let u = (0, i.jsx)("div", {
+                    className: a()(f.recentGames, n),
+                    children: null == s ? void 0 : s.map(e => (0, i.jsx)(S, {
+                        game: e
+                    }, e.lastSessionId))
+                });
+                return null != r ? (0, i.jsx)(i.Fragment, {
+                    children: r(u)
+                }) : u
+            });
+
+            function A(e) {
+                let {
+                    userId: t,
+                    containerClassName: n
+                } = e, s = r.useCallback(e => (0, i.jsxs)(I.default, {
+                    children: [(0, i.jsx)(l.Heading, {
                         variant: "eyebrow",
-                        className: _.recentGamesHeading,
-                        children: d.default.Messages.RECENT_GAMES
-                    }), (0, i.jsx)("div", {
-                        className: _.recentGames,
-                        children: null == n ? void 0 : n.map(e => (0, i.jsx)(c, {
-                            game: e
-                        }, e.lastSessionId))
-                    })]
+                        className: f.recentGamesHeading,
+                        children: T.default.Messages.RECENT_GAMES
+                    }), e]
+                }), []);
+                return (0, i.jsx)(h, {
+                    userId: t,
+                    containerClassName: n,
+                    wrapChildren: s
                 })
-            })
+            }
+
+            function m(e) {
+                let {
+                    userId: t,
+                    containerClassName: n
+                } = e, s = r.useCallback(e => (0, i.jsx)(E.default.Inner, {
+                    children: (0, i.jsxs)(I.default, {
+                        children: [(0, i.jsx)(l.Heading, {
+                            variant: "eyebrow",
+                            className: f.recentGamesHeading,
+                            children: T.default.Messages.RECENT_GAMES
+                        }), e]
+                    })
+                }), []);
+                return (0, i.jsx)(h, {
+                    userId: t,
+                    containerClassName: n,
+                    wrapChildren: s
+                })
+            }
+            t.default = h
         },
         841040: function(e, t, n) {
             "use strict";
@@ -196426,7 +196487,10 @@
                         location: u.default.PROFILE_POPOUT,
                         disable: ef
                     }),
-                    eh = (0, d.useIsUserRecentGamesFetchEnabled)(j.id);
+                    eh = (0, d.useIsUserRecentGamesFetchEnabled)({
+                        userId: j.id,
+                        location: "28tk0bf_3"
+                    });
                 if (j.isSystemUser()) return null;
                 if (j.isNonUserBot()) return (0, i.jsx)(k.default, {
                     user: j,
@@ -196481,8 +196545,8 @@
                                 userId: j.id,
                                 guild: K,
                                 guildMember: z
-                            }), eh && (0, i.jsx)(O.default, {
-                                user: j
+                            }), eh && (0, i.jsx)(O.UserProfileRecentGamesSection, {
+                                userId: j.id
                             }), eo && ea && (0, i.jsx)(B.default, {
                                 voiceChannel: er.voiceChannel,
                                 voiceGuild: er.voiceGuild,
@@ -198584,31 +198648,26 @@
             n.r(t);
             var i = n("544891"),
                 r = n("570140"),
-                s = n("973616"),
-                a = n("70956"),
-                o = n("385845"),
-                l = n("981631");
-            let u = 5 * a.default.Millis.MINUTE;
-            async function d(e, t) {
-                let n = o.default.getLastFetchTimestamp(e);
-                if (!(null != n && Date.now() - n < u)) {
+                s = n("70956"),
+                a = n("385845"),
+                o = n("981631");
+            let l = 5 * s.default.Millis.MINUTE;
+            async function u(e, t) {
+                let n = a.default.getLastFetchTimestamp(e);
+                if (!(null != n && Date.now() - n < l)) {
                     r.default.dispatch({
                         type: "USER_RECENT_GAMES_FETCH_START",
                         userId: e
                     });
                     try {
-                        let n = (await i.HTTP.get({
-                            url: l.Endpoints.USER_RECENT_GAMES(e),
+                        let n = await i.HTTP.get({
+                            url: o.Endpoints.USER_RECENT_GAMES(e),
                             signal: t
-                        })).body.recent_games.map(e => ({
-                            application: s.default.createFromServer(e.application),
-                            duration: e.duration,
-                            lastSessionId: e.last_session_id
-                        }));
+                        });
                         r.default.dispatch({
                             type: "USER_RECENT_GAMES_FETCH_SUCCESS",
                             userId: e,
-                            recentGames: n
+                            recentGames: n.body.recent_games
                         })
                     } catch (t) {
                         r.default.dispatch({
@@ -198619,7 +198678,14 @@
                 }
             }
             t.default = {
-                fetchUserRecentGames: d
+                fetchUserRecentGames: u,
+                updateUserRecentGamesLocal: function(e, t) {
+                    r.default.dispatch({
+                        type: "USER_RECENT_GAMES_UPDATE_LOCAL",
+                        applicationId: e,
+                        duration: t
+                    })
+                }
             }
         },
         602992: function(e, t, n) {
@@ -198661,50 +198727,60 @@
         },
         385845: function(e, t, n) {
             "use strict";
-            n.r(t), n("47120");
-            var i, r, s, a, o = n("442837"),
-                l = n("570140");
-            let u = new Map,
-                d = new Set,
-                _ = new Set;
-            class c extends(i = o.default.Store) {
+            n.r(t), n("47120"), n("653041");
+            var i, r, s, a, o = n("512722"),
+                l = n.n(o),
+                u = n("127437"),
+                d = n("442837"),
+                _ = n("570140"),
+                c = n("314897"),
+                E = n("77498"),
+                I = n("709054");
+            let T = new Map,
+                f = new Set,
+                S = new Set;
+            class h extends(i = d.default.Store) {
                 getRecentGames(e) {
                     var t;
-                    return null === (t = u.get(e)) || void 0 === t ? void 0 : t.recentGames
+                    return null === (t = T.get(e)) || void 0 === t ? void 0 : t.recentGames
                 }
                 getLastFetchTimestamp(e) {
                     var t;
-                    return null === (t = u.get(e)) || void 0 === t ? void 0 : t.lastFetchTimestampMs
+                    return null === (t = T.get(e)) || void 0 === t ? void 0 : t.lastFetchTimestampMs
                 }
                 isFetching(e) {
-                    return d.has(e)
+                    return f.has(e)
                 }
                 hasError(e) {
-                    return _.has(e)
+                    return S.has(e)
                 }
             }
-            a = "UserRecentGamesStore", (s = "displayName") in(r = c) ? Object.defineProperty(r, s, {
+            a = "UserRecentGamesStore", (s = "displayName") in(r = h) ? Object.defineProperty(r, s, {
                 value: a,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : r[s] = a, t.default = new c(l.default, {
+            }) : r[s] = a, t.default = new h(_.default, {
                 CONNECTION_OPEN: function() {
-                    u = new Map, d = new Set, _ = new Set
+                    T = new Map, f = new Set, S = new Set
                 },
                 USER_RECENT_GAMES_FETCH_START: function(e) {
                     let {
                         userId: t
                     } = e;
-                    d.add(t)
+                    f.add(t)
                 },
                 USER_RECENT_GAMES_FETCH_SUCCESS: function(e) {
                     let {
                         userId: t,
                         recentGames: n
                     } = e;
-                    d.delete(t), u.set(t, {
-                        recentGames: n,
+                    f.delete(t), T.set(t, {
+                        recentGames: n.map(e => ({
+                            applicationId: e.application.id,
+                            duration: e.duration,
+                            lastSessionId: e.last_session_id
+                        })).sort((e, t) => I.default.compare(t.lastSessionId, e.lastSessionId)),
                         lastFetchTimestampMs: Date.now()
                     })
                 },
@@ -198712,7 +198788,37 @@
                     let {
                         userId: t
                     } = e;
-                    d.delete(t), _.add(t)
+                    f.delete(t), S.add(t)
+                },
+                USER_RECENT_GAMES_UPDATE_LOCAL: function(e) {
+                    let {
+                        applicationId: t,
+                        duration: n
+                    } = e;
+                    if (null == E.default.getDetectableGame(t) || n < u.UserGameApplicationSessionDuration.MIN_DURATION_SECS) return !1;
+                    ! function(e, t) {
+                        var n, i;
+                        let r = T.get(e);
+                        if (null == r) return;
+                        let s = [],
+                            a = null;
+                        r.recentGames.forEach(e => {
+                            e.applicationId === t.applicationId ? a = e : s.push(e)
+                        });
+                        let o = null != a ? (n = a, i = t, l()(n.applicationId === i.applicationId, "[UserRecentGamesStore] Games must have same application for merge."), {
+                            applicationId: n.applicationId,
+                            duration: n.duration + i.duration,
+                            lastSessionId: I.default.compare(n.lastSessionId, i.lastSessionId) > 0 ? n.lastSessionId : i.lastSessionId
+                        }) : t;
+                        T.set(e, {
+                            lastFetchTimestampMs: Date.now(),
+                            recentGames: [o, ...s]
+                        })
+                    }(c.default.getId(), {
+                        applicationId: t,
+                        duration: n,
+                        lastSessionId: I.default.fromTimestamp(Date.now())
+                    })
                 }
             })
         },
@@ -198797,64 +198903,76 @@
             "use strict";
             n.r(t), n.d(t, {
                 useIsUserRecentGamesFetchEnabled: function() {
-                    return a
+                    return l
                 }
             });
             var i = n("442837"),
-                r = n("594174"),
-                s = n("602992");
+                r = n("695346"),
+                s = n("314897"),
+                a = n("594174"),
+                o = n("602992");
 
-            function a(e) {
-                let t = (0, i.useStateFromStores)([r.default], () => {
-                    let t = r.default.getUser(e);
-                    return null != t && !t.bot
-                });
-                return (0, s.useUserIsRecentGamesExperimentApiEnabled)({
-                    location: "28tk0bf_1"
-                }) && t
+            function l(e) {
+                let {
+                    userId: t,
+                    location: n
+                } = e, l = (0, i.useStateFromStores)([a.default], () => {
+                    let e = a.default.getUser(t);
+                    return null != e && !e.bot
+                }), u = r.RecentGamesEnabled.useSetting(), d = s.default.getId() === t ? l && u : l;
+                return (0, o.useUserIsRecentGamesExperimentApiEnabled)({
+                    location: n
+                }) && d
             }
         },
         32966: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 useUserRecentGames: function() {
-                    return l
+                    return d
                 }
             });
             var i = n("470079"),
                 r = n("442837"),
-                s = n("454175"),
-                a = n("385845"),
-                o = n("201819");
+                s = n("695346"),
+                a = n("314897"),
+                o = n("454175"),
+                l = n("385845"),
+                u = n("201819");
 
-            function l(e) {
-                let t = (0, o.useIsUserRecentGamesFetchEnabled)(e),
+            function d(e) {
+                let t = (0, u.useIsUserRecentGamesFetchEnabled)({
+                        userId: e,
+                        location: "28tk0bf_4"
+                    }),
                     n = i.useRef(new AbortController),
                     {
-                        recentGames: l,
-                        isFetching: u,
-                        hasError: d
-                    } = (0, r.useStateFromStoresObject)([a.default], () => ({
-                        recentGames: a.default.getRecentGames(e),
-                        isFetching: a.default.isFetching(e),
-                        hasError: a.default.hasError(e)
+                        recentGames: d,
+                        isFetching: _,
+                        hasError: c
+                    } = (0, r.useStateFromStoresObject)([l.default], () => ({
+                        recentGames: l.default.getRecentGames(e),
+                        isFetching: l.default.isFetching(e),
+                        hasError: l.default.hasError(e)
                     })),
-                    _ = i.useCallback(async () => {
-                        if (t && !u && !d) try {
-                            await s.default.fetchUserRecentGames(e, n.current.signal)
-                        } catch (e) {}
-                    }, [d, t, u, e]);
+                    E = i.useCallback(async () => {
+                        if (!!t && !_ && !c) {
+                            if (e !== a.default.getId() || s.RecentGamesEnabled.getSetting()) try {
+                                await o.default.fetchUserRecentGames(e, n.current.signal)
+                            } catch (e) {}
+                        }
+                    }, [c, t, _, e]);
                 return i.useEffect(() => {
-                    _()
-                }, [_]), i.useEffect(() => {
+                    E()
+                }, [E]), i.useEffect(() => {
                     let e = n.current;
                     return () => {
                         null == e || e.abort()
                     }
                 }, []), {
-                    hasError: d,
-                    recentGames: l,
-                    isFetching: u
+                    hasError: c,
+                    recentGames: d,
+                    isFetching: _
                 }
             }
         },
@@ -231568,7 +231686,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "94cb2487ef1f67fb7cf022b290e7ef7ac8bcbcb0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3fbb68999802d608379d28584208683ea35b4261"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257634,7 +257752,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279150"
+                                build_number: "279157"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264779,7 +264897,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279150", "279150"), 10);
+                let s = parseInt((n = "279157", "279157"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -290729,6 +290847,15 @@
                 }
             }), n("47120"), (r = i || (i = {}))[r.LATEST_ACTIVITY = 0] = "LATEST_ACTIVITY", r[r.CREATION_DATE = 1] = "CREATION_DATE"
         },
+        127437: function(e, t, n) {
+            "use strict";
+            var i, r;
+            n.r(t), n.d(t, {
+                UserGameApplicationSessionDuration: function() {
+                    return i
+                }
+            }), (r = i || (i = {}))[r.MIN_DURATION_SECS = 300] = "MIN_DURATION_SECS"
+        },
         724522: function(e, t, n) {
             "use strict";
             n.r(t), n("956067")
@@ -291511,4 +291638,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.464e52d53816d1acff49.js.map
+//# sourceMappingURL=24321.cd710f8cdcd3b7ebd895.js.map
