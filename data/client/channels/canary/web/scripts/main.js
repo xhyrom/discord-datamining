@@ -36593,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279070", ", Version Hash: ").concat("366a4da3cac5bdbdb17fd3c5e496bde45422f842")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279080", ", Version Hash: ").concat("0ff6986eab887e08bd2ef4f4db7773cca04b0997")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -38100,6 +38100,7 @@
                 FORM_HELP_SLOWMODE_FORUM: "Members will be restricted to creating one post per this interval, unless they have Manage Channel or Manage Messages permissions.",
                 FORM_LABEL_SLOWMODE_COOLDOWN: "Slowmode Cooldown",
                 FORM_LABEL_SLOWMODE_OFF: "Slowmode is off.",
+                FORM_LABEL_SLOWMODE_SEARCH_PLACEHOLDER: "Select a default or enter a custom duration!",
                 CANNOT_DELETE_CHANNEL: "Cannot Delete Channel",
                 DELETE_RULES_CHANNEL_BODY: "Community Servers are required to have a rules channel.",
                 DELETE_DEFAULT_CHANNEL_BODY: "Deleting this channel will make your server incompatible with Community Onboarding.",
@@ -85427,8 +85428,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279070", "279070"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279070")), t = 0), t
+                let t = parseInt((e = "279080", "279080"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279080")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107389,8 +107390,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279070",
-                    versionHash: "366a4da3cac5bdbdb17fd3c5e496bde45422f842"
+                    buildNumber: "279080",
+                    versionHash: "0ff6986eab887e08bd2ef4f4db7773cca04b0997"
                 }
             }
             n.r(t), n.d(t, {
@@ -157807,8 +157808,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711560995841",
-                                    build_number: "279070"
+                                    built_at: "1711561972755",
+                                    build_number: "279080"
                                 }
                             },
                             retries: 1
@@ -174290,7 +174291,7 @@
                     },
                     trackGuildAndChannelMetadata: r
                 })
-            }(i = r || (r = {})).LEARN_MORE = "LEARN_MORE", i.SHOW_REWARD = "SHOW_REWARD", i.CLAIM_REWARD = "CLAIM_REWARD", i.ACCEPT_QUEST = "ACCEPT_QUEST", i.COPY_QUEST_URL = "COPY_QUEST_URL", i.TRACK_PROGRESS = "TRACK_PROGRESS", i.OPEN_DISCLOSURE = "OPEN_DISCLOSURE", i.WATCH_STREAM = "WATCH_STREAM", i.REWARD_LEARN_MORE = "REWARD_LEARN_MORE", i.OPEN_CONTEXT_MENU = "OPEN_CONTEXT_MENU", i.CONTEXT_MENU_COPY_LINK = "CONTEXT_MENU.COPY_LINK", i.CONTEXT_MENU_HIDE_CONTENT = "CONTEXT_MENU.HIDE_CONTENT", i.CONTEXT_MENU_OPEN_GAME_LINK = "CONTEXT_MENU.OPEN_GAME_LINK", i.CONTEXT_MENU_OPEN_DISCLOSURE = "CONTEXT_MENU.OPEN_DISCLOSURE", i.CONTEXT_MENU_LEARN_MORE = "CONTEXT_MENU.LEARN_MORE"
+            }(i = r || (r = {})).LEARN_MORE = "LEARN_MORE", i.SHOW_REWARD = "SHOW_REWARD", i.CLAIM_REWARD = "CLAIM_REWARD", i.GET_REWARD_CODE = "GET_REWARD_CODE", i.COPY_REWARD_CODE = "COPY_REWARD_CODE", i.ACCEPT_QUEST = "ACCEPT_QUEST", i.COPY_QUEST_URL = "COPY_QUEST_URL", i.TRACK_PROGRESS = "TRACK_PROGRESS", i.OPEN_DISCLOSURE = "OPEN_DISCLOSURE", i.WATCH_STREAM = "WATCH_STREAM", i.REWARD_LEARN_MORE = "REWARD_LEARN_MORE", i.OPEN_CONTEXT_MENU = "OPEN_CONTEXT_MENU", i.CONTEXT_MENU_COPY_LINK = "CONTEXT_MENU.COPY_LINK", i.CONTEXT_MENU_HIDE_CONTENT = "CONTEXT_MENU.HIDE_CONTENT", i.CONTEXT_MENU_OPEN_GAME_LINK = "CONTEXT_MENU.OPEN_GAME_LINK", i.CONTEXT_MENU_OPEN_DISCLOSURE = "CONTEXT_MENU.OPEN_DISCLOSURE", i.CONTEXT_MENU_LEARN_MORE = "CONTEXT_MENU.LEARN_MORE"
         },
         272008: function(e, t, n) {
             "use strict";
@@ -231625,7 +231626,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "366a4da3cac5bdbdb17fd3c5e496bde45422f842"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "0ff6986eab887e08bd2ef4f4db7773cca04b0997"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257691,7 +257692,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279070"
+                                build_number: "279080"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264836,7 +264837,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279070", "279070"), 10);
+                let s = parseInt((n = "279080", "279080"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291568,4 +291569,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.7fd979fe87d731ce3c82.js.map
+//# sourceMappingURL=24321.96d2f64861271255b251.js.map
