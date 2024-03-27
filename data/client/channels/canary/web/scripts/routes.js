@@ -1461,6 +1461,7 @@
                     GUILD_PRODUCTS: _ => "/guilds/".concat(_, "/products"),
                     GUILD_PRODUCT_LISTINGS: (_, E) => "/guilds/".concat(_, "/products/listings").concat(null != E ? "/".concat(E) : ""),
                     GUILD_PRODUCT_ATTACHMENT_DOWNLOAD: (_, E, e) => "/guilds/".concat(_, "/products/listings/").concat(E, "/attachments/").concat(e, "/download"),
+                    GUILD_CONVERT_TO_CLAN: _ => "/clan/".concat(_),
                     TENOR_ASSET_PATH: "/tenor",
                     EMAIL_SETTINGS: "/users/@me/email-settings",
                     ACCOUNT_NOTIFICATION_SETTINGS: "/users/@me/notification-settings",
@@ -2610,7 +2611,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-d7bf2a3d34c40ef001ae758ae5aa106d973b010f",
+                    release: "discord_web-0782b8f2c9f82e34052036e2349cd702f30de4e2",
                     beforeSend: _ => {
                         var E, e;
                         return !(null != (E = _).exception && null != E.exception.values && E.exception.values.every(_ => null == _.stacktrace || null != _.stacktrace.frames && 1 === _.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || a.some(_ => window.navigator.appVersion.toLowerCase().indexOf(_) >= 0)) && !R() && !("Aborted" === (e = _).message || "cancel captcha" === e.message) && t() ? _ : null
@@ -2628,7 +2629,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), I.setTag("buildNumber", (_ = "279178", "279178")), I.setTag("builtAt", String("1711570921468"));
+                }), I.setTag("buildNumber", (_ = "279186", "279186")), I.setTag("builtAt", String("1711571542089"));
                 let E = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != E && "object" == typeof E)
                     for (let _ in E) I.setTag(_, E[_]);
@@ -13965,4 +13966,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84471.3dcc7cb90afa9eec5adc.js.map
+//# sourceMappingURL=84471.708e1a1a117bb05e7c9c.js.map

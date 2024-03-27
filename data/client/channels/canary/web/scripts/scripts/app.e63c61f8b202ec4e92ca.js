@@ -4984,6 +4984,54 @@
                 successTitle: "successTitle__15ac0"
             }
         },
+        290305: function(e) {
+            "use strict";
+            e.exports = {
+                exclusive: "exclusive__6ed26",
+                upsellContainer: "upsellContainer__6d38c"
+            }
+        },
+        653196: function(e) {
+            "use strict";
+            e.exports = {
+                animationContainer: "animationContainer_af2200",
+                buttonsContainer: "buttonsContainer_a90621",
+                closeButton: "closeButton_e88b7d",
+                closeIconButton: "closeIconButton_cc4258",
+                container: "container__699bf",
+                footer: "footer_d63e9e",
+                header: "header__05198",
+                introContainer: "introContainer__4ffdc",
+                mainContent: "mainContent__23e7a",
+                modalContent: "modalContent__2b13e",
+                overviewSidebar: "overviewSidebar__995aa",
+                overviewSidebarContent: "overviewSidebarContent_b8b257",
+                overviewText: "overviewText__01ee0",
+                progressContainer: "progressContainer__378bd",
+                progressStep: "progressStep_dec95e",
+                progressStepFilled: "progressStepFilled_c8bf61",
+                scrollBg: "scrollBg_b81d25",
+                scrollBgBottom: "scrollBgBottom__10a36",
+                scrollBgTop: "scrollBgTop_e0da83",
+                scrollContainer: "scrollContainer__3789e",
+                sequencer: "sequencer__0bd4c"
+            }
+        },
+        597338: function(e) {
+            "use strict";
+            e.exports = {
+                playstyleOption: "playstyleOption__67567",
+                playstyleSelect: "playstyleSelect_b7d88b",
+                selectedGame: "selectedGame__0084c",
+                selectedInterest: "selectedInterest_aa523d",
+                selectedPlaystyle: "selectedPlaystyle_e4490f",
+                selectedSection: "selectedSection__5c175",
+                slideContent: "slideContent__6ae94",
+                subtitle: "subtitle__62596",
+                tagInput: "tagInput__4fbf8",
+                title: "title__20916"
+            }
+        },
         802212: function(e) {
             "use strict";
             e.exports = {
