@@ -37887,85 +37887,6 @@ html .progress__00e29 {
     background-image: url(/assets/cdccee83bde523baf3d5.svg)
 }
 
-.nitroBorder__897d8 {
-    border-radius: var(--radius-md);
-    padding-top: 2px;
-    padding-bottom: 2px;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent
-}
-
-.nitroBorder__897d8.nitroBorderHover__82421 {
-    border-left: 2px solid var(--premium-tier-2-purple);
-    border-right: 2px solid var(--premium-tier-2-pink);
-    background-image: linear-gradient(90deg, var(--premium-tier-2-purple)0%, var(--premium-tier-2-pink)100%), linear-gradient(90deg, var(--premium-tier-2-purple)0%, var(--premium-tier-2-pink)100%);
-    background-size: 100%2px;
-    background-position: 0 0, 0 100%;
-    background-repeat: no-repeat
-}
-
-.negativeTop__1fec6 {
-    margin-top: -8px
-}
-
-.extraNitroPill__84b26 {
-    display: flex
-}
-
-.nitroPill__24a7b {
-    opacity: 0;
-    display: none;
-    pointer-events: none;
-    flex-direction: row;
-    -moz-column-gap: 2px;
-    column-gap: 2px;
-    margin-top: -1px;
-    margin-left: auto;
-    margin-right: 8px;
-    align-items: center;
-    padding: 2px 4px;
-    background: linear-gradient(90deg, rgba(180, 115, 245, .2)0%, rgba(226, 146, 170, .2)100%);
-    border-bottom-left-radius: var(--radius-sm);
-    border-bottom-right-radius: var(--radius-sm)
-}
-
-.nitroPill__24a7b.nitroPillHover__1c002 {
-    display: flex;
-    opacity: 1;
-    pointer-events: auto;
-    cursor: default
-}
-
-.nitroPill__24a7b.nitroPillPointerCursor__2588f {
-    cursor: pointer
-}
-
-.theme-dark .nitroText__1d389 {
-    background: linear-gradient(90deg, var(--premium-tier-2-purple)0%, var(--premium-tier-2-pink)100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent
-}
-
-.theme-dark .nitroWheel__7e6f1 {
-    height: 11px;
-    width: 11px;
-    color: var(--premium-tier-2-purple)
-}
-
-.theme-light .nitroText__1d389 {
-    background: linear-gradient(90deg, var(--premium-tier-2-purple-for-gradients)0%, var(--premium-tier-2-purple-for-gradients-2)50%, var(--premium-tier-2-purple-for-gradients)100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent
-}
-
-.theme-light .nitroWheel__7e6f1 {
-    height: 11px;
-    width: 11px;
-    color: var(--premium-tier-2-purple-for-gradients)
-}
-
 .wrapper_d69bcc {
     width: 100%
 }
@@ -131080,4 +131001,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2c1bedb0897c5f0f4857.css.map*/
+/*# sourceMappingURL=99387.f39d01db8304d119a887.css.map*/
