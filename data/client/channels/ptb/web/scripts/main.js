@@ -36593,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279117", ", Version Hash: ").concat("2dddd0839fb230d5463467f434d03414c3b3ee0e")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279124", ", Version Hash: ").concat("8fabc81089e9f7dd92bb1a4898f3fc3abcd3dace")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85432,8 +85432,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279117", "279117"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279117")), t = 0), t
+                let t = parseInt((e = "279124", "279124"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279124")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103283,25 +103283,26 @@
             n.r(t), n("47120");
             var s, a, o, l, u = n("392711"),
                 d = n("873546"),
-                _ = n("442837"),
-                c = n("570140"),
-                E = n("706454"),
-                I = n("884697");
-            let T = new Map,
-                f = new Map,
-                S = T,
+                _ = n("180650"),
+                c = n("442837"),
+                E = n("570140"),
+                I = n("706454"),
+                T = n("884697");
+            let f = new Map,
+                S = new Map,
                 h = f,
-                A = !1;
-            let m = new Set(["1220513972189663413"]),
-                N = () => {
-                    S = T, h = f, r = void 0, A = !1, i = void 0
+                A = S,
+                m = !1;
+            let N = new Set([_.CollectiblesCategorySkuId.SHY]),
+                O = () => {
+                    h = f, A = S, r = void 0, m = !1, i = void 0
                 };
-            class O extends(s = _.default.Store) {
+            class p extends(s = c.default.Store) {
                 initialize() {
-                    this.syncWith([E.default], N)
+                    this.syncWith([I.default], O)
                 }
                 get isFetching() {
-                    return A
+                    return m
                 }
                 get error() {
                     return i
@@ -103310,53 +103311,53 @@
                     return r
                 }
                 get categories() {
-                    return S
-                }
-                get products() {
                     return h
                 }
+                get products() {
+                    return A
+                }
                 getCategory(e) {
-                    return null != e ? S.get(e) : void 0
+                    return null != e ? h.get(e) : void 0
                 }
                 getProduct(e) {
-                    return null != e ? h.get(e) : void 0
+                    return null != e ? A.get(e) : void 0
                 }
                 getCategoryForProduct(e) {
                     let t = this.getProduct(e);
                     return this.getCategory(null == t ? void 0 : t.categorySkuId)
                 }
             }
-            l = "CollectiblesCategoryStore", (o = "displayName") in(a = O) ? Object.defineProperty(a, o, {
+            l = "CollectiblesCategoryStore", (o = "displayName") in(a = p) ? Object.defineProperty(a, o, {
                 value: l,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : a[o] = l, t.default = new O(c.default, {
+            }) : a[o] = l, t.default = new p(E.default, {
                 COLLECTIBLES_CATEGORIES_FETCH: e => {
-                    A = !0, i = void 0
+                    m = !0, i = void 0
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: e => {
-                    0 === e.categories.length ? (S = T, h = f) : !(0, u.isEqual)([...S.values()], e.categories) && (S = new Map(e.categories.filter(e => !(d.isMobile && m.has(e.skuId))).map(e => [e.skuId, e])), h = new Map((0, I.getProductsFromCategories)(S).map(e => [e.skuId, e]))), r = Date.now(), A = !1, i = void 0
+                    0 === e.categories.length ? (h = f, A = S) : !(0, u.isEqual)([...h.values()], e.categories) && (h = new Map(e.categories.filter(e => !(d.isMobile && N.has(e.skuId))).map(e => [e.skuId, e])), A = new Map((0, T.getProductsFromCategories)(h).map(e => [e.skuId, e]))), r = Date.now(), m = !1, i = void 0
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_FAILURE: e => {
                     let {
                         error: t
                     } = e;
-                    S = T, h = f, A = !1, i = t
+                    h = f, A = S, m = !1, i = t
                 },
                 COLLECTIBLES_PRODUCT_FETCH: e => {
-                    A = !0, i = void 0
+                    m = !0, i = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_SUCCESS: e => {
-                    h.set(e.product.skuId, e.product), A = !1, i = void 0
+                    A.set(e.product.skuId, e.product), m = !1, i = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_FAILURE: e => {
                     let {
                         error: t
                     } = e;
-                    A = !1, i = t
+                    m = !1, i = t
                 },
-                LOGOUT: N
+                LOGOUT: O
             })
         },
         574709: function(e, t, n) {
@@ -107394,8 +107395,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279117",
-                    versionHash: "2dddd0839fb230d5463467f434d03414c3b3ee0e"
+                    buildNumber: "279124",
+                    versionHash: "8fabc81089e9f7dd92bb1a4898f3fc3abcd3dace"
                 }
             }
             n.r(t), n.d(t, {
@@ -157769,8 +157770,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711565268905",
-                                    build_number: "279117"
+                                    built_at: "1711565762036",
+                                    build_number: "279124"
                                 }
                             },
                             retries: 1
@@ -231548,7 +231549,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2dddd0839fb230d5463467f434d03414c3b3ee0e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8fabc81089e9f7dd92bb1a4898f3fc3abcd3dace"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257614,7 +257615,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279117"
+                                build_number: "279124"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264759,7 +264760,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279117", "279117"), 10);
+                let s = parseInt((n = "279124", "279124"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291491,4 +291492,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.4b73caa0252e24c2b6a5.js.map
+//# sourceMappingURL=24321.1fbff044604ed40fcfd1.js.map
