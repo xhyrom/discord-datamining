@@ -6169,7 +6169,7 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .title__63238 {
-    font-size: 17px
+    font-size: 1.0625rem
 }
 
 .developerResources__8ef1d:hover {
@@ -6200,8 +6200,8 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .backHeader_cff6da {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     color: var(--interactive-normal)
 }
 
@@ -85759,10 +85759,11 @@ html .tabBadge_ff691d {
     background-position-y: 100%;
     background-origin: border-box;
     justify-content: center;
-    gap: 28px
+    gap: 120px;
+    box-shadow: 0 0 27.6px 0 rgba(255, 70, 85, .5)
 }
 
-.shyGridContainer__76348 {
+.noOverflow_cde9b3 {
     position: absolute;
     bottom: 0;
     overflow: hidden;
@@ -85813,10 +85814,8 @@ html .tabBadge_ff691d {
 }
 
 .shyBannerLogo__8ebd1 {
-    -o-object-position: center center;
-    object-position: center center;
-    max-width: 50%;
-    z-index: 100
+    position: absolute;
+    max-width: 55%
 }
 
 .summary__25fda {
@@ -130798,4 +130797,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.765674a2c479b3c77894.css.map*/
+/*# sourceMappingURL=99387.1b4a2d12629de6f17c85.css.map*/
