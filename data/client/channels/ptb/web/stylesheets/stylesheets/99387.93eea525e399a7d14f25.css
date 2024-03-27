@@ -56986,7 +56986,7 @@ html .progress__00e29 {
 .mainContent__23e7a {
     display: flex;
     flex-direction: column;
-    padding: 60px;
+    padding: 80px 60px 60px;
     flex: 1
 }
 
@@ -56996,6 +56996,7 @@ html .progress__00e29 {
     flex: 1
 }
 
+.scroller__24eef,
 .sequencer__0bd4c {
     display: flex;
     flex: 1
@@ -57147,20 +57148,44 @@ html .progress__00e29 {
     display: flex;
     flex-direction: column;
     padding: 18px;
-    margin: auto 12px auto
+    margin: auto 12px auto;
+    max-width: 800px
 }
 
-.title__20916,
-.subtitle__62596 {
+.title__20916 {
     margin-bottom: 12px
+}
+
+.subtitle__62596 {
+    margin-bottom: 40px
+}
+
+.inputContainer__1e798 {
+    width: 400px
+}
+
+.contentWithMinHeight__78ad4 {
+    margin-top: 36px;
+    min-height: 300px
+}
+
+.contentLabel_aa05d5 {
+    margin-bottom: 8px
 }
 
 .selectedSection__5c175 {
     display: flex;
-    gap: 8px
+    flex-wrap: wrap;
+    gap: 16px 8px
 }
 
-.selectedGame__0084c,
+.gameImagePlaceholder__732e7 {
+    width: 126px;
+    height: 168px;
+    background-color: var(--background-secondary);
+    border-radius: 4px
+}
+
 .selectedInterest_aa523d {
     display: flex;
     align-items: center;
@@ -57189,14 +57214,20 @@ html .progress__00e29 {
 }
 
 .playstyleOption__67567 {
+    background-color: var(--bg-base-tertiary);
     cursor: pointer;
     padding: 16px;
     border: 1px solid var(--border-subtle);
-    border-radius: 8px
+    border-radius: 8px;
+    align-self: stretch
 }
 
 .selectedPlaystyle_e4490f {
     border-color: var(--brand-experiment)
+}
+
+.playstyleTitle__00d17 {
+    margin: 12px 0 4px
 }
 
 .upsellContainer__6d38c {
@@ -57495,6 +57526,7 @@ html .progress__00e29 {
 }
 
 .card__019dd {
+    position: relative;
     border-radius: 8px;
     border: 1px solid var(--border-subtle);
     background-color: var(--bg-base-tertiary);
@@ -57516,6 +57548,14 @@ html .progress__00e29 {
     background-color: white;
     color: black;
     border-radius: 8px
+}
+
+.dismiss_d3cc2c {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: var(--interactive-normal);
+    cursor: pointer
 }
 
 .enable-forced-colors .container__8567b {
@@ -131040,4 +131080,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d283cfd804c9b1358589.css.map*/
+/*# sourceMappingURL=99387.93eea525e399a7d14f25.css.map*/
