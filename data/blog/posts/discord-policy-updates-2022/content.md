@@ -4,7 +4,7 @@
             <div>
                 <div class="safetie-author-photo-wrapper">
                     <div class="dropdown-wr-s">
-                        <div class="safetie-author-wr"><img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af306ca0ca4358e41d1c01_6377fd167aaafa645cea6e11_bri.jpeg" loading="lazy" alt="" sizes="(max-width: 479px) 60px, (max-width: 991px) 70px, 90px" srcset="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af306ca0ca4358e41d1c01_6377fd167aaafa645cea6e11_bri-p-500.jpeg 500w, https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af306ca0ca4358e41d1c01_6377fd167aaafa645cea6e11_bri.jpeg 800w" class="safetie-author-image">
+                        <div class="safetie-author-wr"><img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af306ca0ca4358e41d1c01_6377fd167aaafa645cea6e11_bri.jpeg" loading="lazy" alt="" sizes="(max-width: 479px) 60.000003814697266px, (max-width: 767px) 70px, (max-width: 991px) 9vw, 90.00000762939453px" srcset="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af306ca0ca4358e41d1c01_6377fd167aaafa645cea6e11_bri-p-500.jpeg 500w, https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af306ca0ca4358e41d1c01_6377fd167aaafa645cea6e11_bri.jpeg 800w" class="safetie-author-image">
                             <div class="safetie-author-title">Bri Riggio</div>
                         </div>
                     </div>
