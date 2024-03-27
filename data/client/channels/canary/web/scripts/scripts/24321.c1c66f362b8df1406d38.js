@@ -36593,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279218", ", Version Hash: ").concat("889098485276dbf9f2df1142281906a7ff68b7d3")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279243", ", Version Hash: ").concat("d2c689eeeff5ecedaf567c615100c51f7982a4eb")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55169,6 +55169,7 @@
                 CLAN_SETUP_GAMES_TITLE: "What games does your Clan play?",
                 CLAN_SETUP_GAMES_SUBTITLE: "You can always add more games later.",
                 CLAN_SETUP_GAMES_SEARCH_PLACEHOLDER: "Search for a game...",
+                CLAN_SETUP_SELECTED_GAMES: "Selected Games",
                 CLAN_SETUP_PLAYSTYLE_TITLE: "What's your Clan's playstyle?",
                 CLAN_SETUP_PLAYSTYLE_SUBTITLE: "Let potential members know what kind of gaming you do.",
                 CLAN_SETUP_PLAYSTYLE_SOCIAL_TITLE: "Very Casual",
@@ -79827,28 +79828,30 @@
                         children: () => d
                     })
                 }),
-                O = e => {
+                O = r.forwardRef(function(e, t) {
                     let {
-                        placeholder: t,
-                        onEnter: n,
-                        setEditorRef: s,
-                        showEmojiButton: a = !1
-                    } = e, [o, l] = r.useState(""), [u, E] = r.useState((0, _.toRichValue)("")), I = d.ChatInputTypes.ATOMIC_REACTOR_REPLY_INPUT;
-                    return a && (I.emojis = {
+                        placeholder: n,
+                        onEnter: s,
+                        setEditorRef: a,
+                        showEmojiButton: o = !1,
+                        autoCompletePosition: l
+                    } = e, [u, E] = r.useState(""), [I, T] = r.useState((0, _.toRichValue)("")), S = d.ChatInputTypes.ATOMIC_REACTOR_REPLY_INPUT;
+                    return o && (S.emojis = {
                         button: !0
                     }), (0, i.jsx)(c.default, {
-                        placeholder: t,
+                        ref: t,
+                        placeholder: n,
                         className: A.replyInput,
                         showRemainingCharsAfterCount: -1,
                         allowNewLines: !1,
                         maxCharacterCount: f.MAX_CHAR_COUNT,
                         channel: m,
                         onChange: (e, t, n) => {
-                            l(t), E(n)
+                            E(t), T(n)
                         },
-                        type: I,
-                        textValue: o,
-                        richValue: u,
+                        type: S,
+                        textValue: u,
+                        richValue: I,
                         onSubmit: e => {
                             let {
                                 value: t
@@ -79856,18 +79859,19 @@
                             return t.length > f.MAX_CHAR_COUNT ? Promise.resolve({
                                 shouldClear: !1,
                                 shouldRefocus: !0
-                            }) : (n(t), Promise.resolve({
+                            }) : (s(t), Promise.resolve({
                                 shouldClear: !0,
                                 shouldRefocus: !1
                             }))
                         },
-                        setEditorRef: s,
+                        setEditorRef: a,
                         focused: !0,
                         disableThemedBackground: !0,
                         emojiPickerCloseOnModalOuterClick: !0,
-                        disabled: !1
+                        disabled: !1,
+                        autoCompletePosition: l
                     })
-                },
+                }),
                 p = (e, t) => {
                     r.useEffect(() => {
                         let n = t => {
@@ -85455,8 +85459,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279218", "279218"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279218")), t = 0), t
+                let t = parseInt((e = "279243", "279243"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279243")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107434,8 +107438,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279218",
-                    versionHash: "889098485276dbf9f2df1142281906a7ff68b7d3"
+                    buildNumber: "279243",
+                    versionHash: "d2c689eeeff5ecedaf567c615100c51f7982a4eb"
                 }
             }
             n.r(t), n.d(t, {
@@ -108333,7 +108337,7 @@
                 }
             }), n("47120");
             var i = n("524437");
-            let r = new Set([i.DismissibleContent.AUTH_SESSIONS_NEW, i.DismissibleContent.CHANNEL_NOTICE_CLYDE_NUX, i.DismissibleContent.CHANNEL_NOTICE_QUICKSWITCHER, i.DismissibleContent.NAGBAR_NOTICE_MFA_SMS_BACKUP, i.DismissibleContent.NAGBAR_NOTICE_POMELO, i.DismissibleContent.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP])
+            let r = new Set([i.DismissibleContent.AUTH_SESSIONS_NEW, i.DismissibleContent.CHANNEL_NOTICE_CLYDE_NUX, i.DismissibleContent.CHANNEL_NOTICE_QUICKSWITCHER, i.DismissibleContent.NAGBAR_NOTICE_MFA_SMS_BACKUP, i.DismissibleContent.NAGBAR_NOTICE_POMELO, i.DismissibleContent.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP, i.DismissibleContent.SEEN_OLD_DESIGN, i.DismissibleContent.SEEN_LAUNCH_WELCOME])
         },
         211644: function(e, t, n) {
             "use strict";
@@ -157643,8 +157647,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711575081724",
-                                    build_number: "279218"
+                                    built_at: "1711577071684",
+                                    build_number: "279243"
                                 }
                             },
                             retries: 1
@@ -231535,7 +231539,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "889098485276dbf9f2df1142281906a7ff68b7d3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d2c689eeeff5ecedaf567c615100c51f7982a4eb"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -233403,9 +233407,9 @@
             });
             let i = .5,
                 r = 1.5,
-                s = .1,
+                s = .125,
                 a = .4,
-                o = .33
+                o = 1 / 3.5
         },
         196050: function(e, t, n) {
             "use strict";
@@ -257601,7 +257605,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279218"
+                                build_number: "279243"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264746,7 +264750,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279218", "279218"), 10);
+                let s = parseInt((n = "279243", "279243"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291493,4 +291497,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.dec6c7d06a10147a2231.js.map
+//# sourceMappingURL=24321.c1c66f362b8df1406d38.js.map
