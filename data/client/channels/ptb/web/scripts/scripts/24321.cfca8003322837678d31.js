@@ -36593,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279138", ", Version Hash: ").concat("f3caf39813d1b71d1ed4b878978b31e30300fdb2")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279141", ", Version Hash: ").concat("ce07bbfe87dcc646b5564de22cae3aadcb59cc17")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -68445,7 +68445,7 @@
             var i = n("735250");
             n("470079");
             var r = n("442837"),
-                s = n("202120"),
+                s = n("231757"),
                 a = n("553795"),
                 o = n("915863"),
                 l = n("689938"),
@@ -68458,7 +68458,10 @@
                     platform: d
                 } = e;
                 return (0, r.useStateFromStores)([a.default], () => a.default.getAccounts().some(e => e.type === d.type)) ? null : (0, i.jsx)(o.default, {
-                    onClick: () => (0, s.default)(d.type, "Activity Action"),
+                    onClick: () => (0, s.default)({
+                        platformType: d.type,
+                        location: "Activity Action"
+                    }),
                     color: t,
                     look: n,
                     fullWidth: !0,
@@ -85432,8 +85435,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279138", "279138"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279138")), t = 0), t
+                let t = parseInt((e = "279141", "279141"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279141")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -104716,6 +104719,69 @@
             let u = "application";
             (l = s || (s = {}))[l.INTEGER_LESS_THAN_EQUAL = 1] = "INTEGER_LESS_THAN_EQUAL", l[l.INTEGER_GREATER_THAN_EQUAL = 2] = "INTEGER_GREATER_THAN_EQUAL", l[l.INTEGER_EQUAL = 3] = "INTEGER_EQUAL", l[l.INTEGER_NOT_EQUAL = 4] = "INTEGER_NOT_EQUAL", l[l.DATETIME_LESS_THAN_EQUAL = 5] = "DATETIME_LESS_THAN_EQUAL", l[l.DATETIME_GREATER_THAN_EQUAL = 6] = "DATETIME_GREATER_THAN_EQUAL", l[l.BOOLEAN_EQUAL = 7] = "BOOLEAN_EQUAL", l[l.BOOLEAN_NOT_EQUAL = 8] = "BOOLEAN_NOT_EQUAL"
         },
+        231757: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return _
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("481060"),
+                s = n("842146"),
+                a = n("293177"),
+                o = n("349407"),
+                l = n("49012"),
+                u = n("202120"),
+                d = n("981631");
+
+            function _(e) {
+                let {
+                    platformType: t,
+                    location: _,
+                    overrideUrl: c
+                } = e;
+                if (t === d.PlatformTypes.LEAGUE_OF_LEGENDS && (t = d.PlatformTypes.RIOT_GAMES), t === d.PlatformTypes.CRUNCHYROLL) {
+                    s.showModal([null != _ ? _ : "unknown"]);
+                    return
+                }
+                if (t === d.PlatformTypes.XBOX) {
+                    o.showModal([null != _ ? _ : "unknown"]);
+                    return
+                }
+                if (t === d.PlatformTypes.PLAYSTATION || t === d.PlatformTypes.PLAYSTATION_STAGING) {
+                    a.showModal([null != _ ? _ : "unknown"], t);
+                    return
+                }
+                if (t === d.PlatformTypes.DOMAIN) {
+                    (0, r.openModalLazy)(async () => {
+                        let {
+                            default: e
+                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("64941")]).then(n.bind(n, "414402"));
+                        return t => (0, i.jsx)(e, {
+                            analyticsLocation: [null != _ ? _ : "unknown"],
+                            ...t
+                        })
+                    });
+                    return
+                }
+                if (null != c) {
+                    (0, l.handleClick)({
+                        shouldConfirm: !0,
+                        href: c,
+                        onConfirm: () => {
+                            (0, u.openProviderAuthorize)(t, {
+                                location: _
+                            }, c)
+                        }
+                    });
+                    return
+                }(0, u.openProviderAuthorize)(t, {
+                    location: _
+                })
+            }
+        },
         977392: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -105128,83 +105194,31 @@
         202120: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                },
                 openProviderAuthorize: function() {
-                    return E
+                    return o
                 }
             });
-            var i = n("735250");
-            n("470079");
-            var r = n("481060"),
-                s = n("457330"),
-                a = n("842146"),
-                o = n("293177"),
-                l = n("349407"),
-                u = n("49012"),
-                d = n("358085"),
-                _ = n("856651"),
-                c = n("981631");
-            async function E(e) {
+            var i = n("457330"),
+                r = n("358085"),
+                s = n("856651"),
+                a = n("981631");
+            async function o(e) {
                 let {
                     location: t,
                     twoWayLinkType: n
-                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, i = arguments.length > 2 ? arguments[2] : void 0, r = Math.round(screen.width / 2 - 350), a = screen.height > 640 ? Math.round(screen.height / 2 - 320) : 0, o = null;
-                !(0, d.isDesktop)() && (o = window.open("".concat(window.location.protocol, "//").concat(window.location.host).concat(c.Routes.CONNECTIONS(e), "?loading=true"), "authorize", "scrollbars=yes,resizable=yes,toolbar=no,location=yes,top=".concat(a, ",left=").concat(r, ",width=").concat(700, ",height=").concat(640)));
-                let l = i;
-                if (null == l && e !== _.GUILD_ROLE_CONNECTION_APPLICATION_CONNECTION_TYPE) {
+                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, o = arguments.length > 2 ? arguments[2] : void 0, l = Math.round(screen.width / 2 - 350), u = screen.height > 640 ? Math.round(screen.height / 2 - 320) : 0, d = null;
+                !(0, r.isDesktop)() && (d = window.open("".concat(window.location.protocol, "//").concat(window.location.host).concat(a.Routes.CONNECTIONS(e), "?loading=true"), "authorize", "scrollbars=yes,resizable=yes,toolbar=no,location=yes,top=".concat(u, ",left=").concat(l, ",width=").concat(700, ",height=").concat(640)));
+                let _ = o;
+                if (null == _ && e !== s.GUILD_ROLE_CONNECTION_APPLICATION_CONNECTION_TYPE) {
                     let {
-                        body: i
-                    } = await s.default.authorize(e, {
+                        body: r
+                    } = await i.default.authorize(e, {
                         location: t,
                         twoWayLinkType: n
                     });
-                    l = i.url
+                    _ = r.url
                 }
-                if (null != l) return null != o ? o.location.href = l : window.open(l), l
-            }
-
-            function I(e, t, s) {
-                if (e === c.PlatformTypes.LEAGUE_OF_LEGENDS && (e = c.PlatformTypes.RIOT_GAMES), e === c.PlatformTypes.CRUNCHYROLL) {
-                    a.showModal([null != t ? t : "unknown"]);
-                    return
-                }
-                if (e === c.PlatformTypes.XBOX) {
-                    l.showModal([null != t ? t : "unknown"]);
-                    return
-                }
-                if (e === c.PlatformTypes.PLAYSTATION || e === c.PlatformTypes.PLAYSTATION_STAGING) {
-                    o.showModal([null != t ? t : "unknown"], e);
-                    return
-                }
-                if (e === c.PlatformTypes.DOMAIN) {
-                    (0, r.openModalLazy)(async () => {
-                        let {
-                            default: e
-                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("64941")]).then(n.bind(n, "414402"));
-                        return n => (0, i.jsx)(e, {
-                            analyticsLocation: [null != t ? t : "unknown"],
-                            ...n
-                        })
-                    });
-                    return
-                }
-                if (null != s) {
-                    (0, u.handleClick)({
-                        shouldConfirm: !0,
-                        href: s,
-                        onConfirm: () => {
-                            E(e, {
-                                location: t
-                            }, s)
-                        }
-                    });
-                    return
-                }
-                E(e, {
-                    location: t
-                })
+                if (null != _) return null != d ? d.location.href = _ : window.open(_), _
             }
         },
         206583: function(e, t, n) {
@@ -107395,8 +107409,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279138",
-                    versionHash: "f3caf39813d1b71d1ed4b878978b31e30300fdb2"
+                    buildNumber: "279141",
+                    versionHash: "ce07bbfe87dcc646b5564de22cae3aadcb59cc17"
                 }
             }
             n.r(t), n.d(t, {
@@ -121601,7 +121615,7 @@
             var r = n("524437"),
                 s = n("952265"),
                 a = n("468026"),
-                o = n("202120"),
+                o = n("231757"),
                 l = n("605236"),
                 u = n("131951"),
                 d = n("626135"),
@@ -121649,7 +121663,9 @@
                     });
 
                     function I() {
-                        null != l && ((0, o.default)(l), d.default.track(E.AnalyticEvents.ACCOUNT_LINK_STEP, {
+                        null != l && ((0, o.default)({
+                            platformType: l
+                        }), d.default.track(E.AnalyticEvents.ACCOUNT_LINK_STEP, {
                             previous_step: c.GAME_CONSOLE_ALERT_MODAL_LOCATION,
                             current_step: "desktop oauth",
                             platform_type: l
@@ -157770,8 +157786,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711567470443",
-                                    build_number: "279138"
+                                    built_at: "1711567888437",
+                                    build_number: "279141"
                                 }
                             },
                             retries: 1
@@ -182834,11 +182850,14 @@
                     return s
                 }
             });
-            var i = n("202120"),
+            var i = n("231757"),
                 r = n("981631");
 
             function s(e) {
-                return !!e || ((0, i.default)(r.PlatformTypes.SPOTIFY, "Spotify Button"), !1)
+                return !!e || ((0, i.default)({
+                    platformType: r.PlatformTypes.SPOTIFY,
+                    location: "Spotify Button"
+                }), !1)
             }
         },
         300020: function(e, t, n) {
@@ -231549,7 +231568,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "f3caf39813d1b71d1ed4b878978b31e30300fdb2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ce07bbfe87dcc646b5564de22cae3aadcb59cc17"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257615,7 +257634,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279138"
+                                build_number: "279141"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264760,7 +264779,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279138", "279138"), 10);
+                let s = parseInt((n = "279141", "279141"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291492,4 +291511,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.d79f5058c68bcb6720ea.js.map
+//# sourceMappingURL=24321.cfca8003322837678d31.js.map
