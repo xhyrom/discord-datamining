@@ -43755,6 +43755,10 @@ html .invoiceCancelRow__75e19 {
     z-index: -1
 }
 
+.tooltip__13c08 {
+    max-width: 220px
+}
+
 .pill__357e7 {
     position: absolute;
     top: 0;
@@ -130792,4 +130796,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.509344892a04240966f5.css.map*/
+/*# sourceMappingURL=app.b391459c9f4b667413eb.css.map*/
