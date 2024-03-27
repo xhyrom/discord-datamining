@@ -26,7 +26,7 @@
     <li>
         <span style="font-weight: 400;">PTB - Can be found at </span><a href="https://discord.com/download" target="_blank" rel="noopener noreferrer">https://discord.com/download</a>
     </li>
-    <li><span style="font-weight: 400;">Canary - <a href="https://discord.com/api/downloads/distributions/app/installers/latest?platform=win&amp;channel=canary&amp;arch=x64">https://discord.com/api/downloads/distributions/app/installers/latest?platform=win&amp;channel=canary&amp;arch=x64</a></span></li>
+    <li><span style="font-weight: 400;">Canary 64-bit - <a href="https://discord.com/api/downloads/distributions/app/installers/latest?platform=win&amp;channel=canary&amp;arch=x64">https://discord.com/api/downloads/distributions/app/installers/latest?platform=win&amp;channel=canary&amp;arch=x64</a></span></li>
 </ul>
 <h2 id="h_01HT0CCGC6NX67V51CREY6SP28"><strong>MacOS:</strong></h2>
 <ul>
