@@ -1007,6 +1007,7 @@
                     GUILD_MEMBER_REQUEST_TO_JOIN: _ => "/guilds/".concat(_, "/requests/@me"),
                     GUILD_JOIN_REQUEST: (_, E) => "/guilds/".concat(_, "/requests/").concat(E),
                     GUILD_JOIN_REQUEST_ACK: (_, E) => "/guilds/".concat(_, "/requests/").concat(E, "/ack"),
+                    GUILD_JOIN_REQUEST_INTERVIEW: _ => "/join-requests/".concat(_, "/interview"),
                     GUILDS: "/guilds",
                     GUILD: _ => "/guilds/".concat(_),
                     GUILD_PINCODE: _ => "/guilds/".concat(_, "/pincode"),
@@ -2605,7 +2606,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-2fe5d3f96c9405e5e5a9d53bf9fdb624a9e87870",
+                    release: "discord_web-366a4da3cac5bdbdb17fd3c5e496bde45422f842",
                     beforeSend: _ => {
                         var E, e;
                         return !(null != (E = _).exception && null != E.exception.values && E.exception.values.every(_ => null == _.stacktrace || null != _.stacktrace.frames && 1 === _.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || a.some(_ => window.navigator.appVersion.toLowerCase().indexOf(_) >= 0)) && !R() && !("Aborted" === (e = _).message || "cancel captcha" === e.message) && t() ? _ : null
@@ -2623,7 +2624,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), I.setTag("buildNumber", (_ = "279067", "279067")), I.setTag("builtAt", String("1711560675881"));
+                }), I.setTag("buildNumber", (_ = "279070", "279070")), I.setTag("builtAt", String("1711560995841"));
                 let E = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != E && "object" == typeof E)
                     for (let _ in E) I.setTag(_, E[_]);
@@ -13960,4 +13961,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84471.0d21d3bdb154c57be493.js.map
+//# sourceMappingURL=84471.44f491856f71e2ac46a2.js.map
