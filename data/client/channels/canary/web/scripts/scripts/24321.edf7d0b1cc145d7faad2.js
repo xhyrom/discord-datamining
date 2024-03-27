@@ -36593,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279064", ", Version Hash: ").concat("0ce74cafd3c190e607866123f39763fef0ad0323")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279067", ", Version Hash: ").concat("2fe5d3f96c9405e5e5a9d53bf9fdb624a9e87870")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -49573,7 +49573,7 @@
                 AVATAR_DECORATION_MODAL_APPLY: "Apply",
                 AVATAR_DECORATION_SELECTION_SECTION_A11Y: "Avatar Decoration Selection Section",
                 PROFILE_EFFECT_MODAL_HEADER: "Add Profile Effect",
-                PROFILE_EFFECT_MODAL_SHOP_PREVIEW_HEADER: "Preview The Shop",
+                PROFILE_EFFECT_MODAL_SHOP_PREVIEW_HEADER: "Preview the Shop",
                 PROFILE_EFFECT_MODAL_APPLY: "Apply",
                 PROFILE_EFFECT_ACQUIRABILITY_DISCLAIMER_MOBILE: "The ability to acquire new profile effects is not available on this platform.",
                 PROFILE_EFFECT_NON_NITRO_DISCLAIMER_HEADER_MOBILE: "Looking for profile effects?",
@@ -85425,8 +85425,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279064", "279064"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279064")), t = 0), t
+                let t = parseInt((e = "279067", "279067"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279067")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107387,8 +107387,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279064",
-                    versionHash: "0ce74cafd3c190e607866123f39763fef0ad0323"
+                    buildNumber: "279067",
+                    versionHash: "2fe5d3f96c9405e5e5a9d53bf9fdb624a9e87870"
                 }
             }
             n.r(t), n.d(t, {
@@ -157803,8 +157803,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711560432326",
-                                    build_number: "279064"
+                                    built_at: "1711560675881",
+                                    build_number: "279067"
                                 }
                             },
                             retries: 1
@@ -231621,7 +231621,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0ce74cafd3c190e607866123f39763fef0ad0323"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "2fe5d3f96c9405e5e5a9d53bf9fdb624a9e87870"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257687,7 +257687,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279064"
+                                build_number: "279067"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264832,7 +264832,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279064", "279064"), 10);
+                let s = parseInt((n = "279067", "279067"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291564,4 +291564,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.6807c019fcccbc582a24.js.map
+//# sourceMappingURL=24321.edf7d0b1cc145d7faad2.js.map
