@@ -647,8 +647,9 @@
                     referralTrialOfferId: b,
                     giftRecipient: w,
                     returnRef: V,
-                    subscription: L
-                } = null != e ? e : {}, P = !1, O = (0, r.v4)(), j = u.default.getCurrentUser(), U = (0, f.isPremiumExactly)(j, E.PremiumTypes.TIER_2);
+                    subscription: L,
+                    skipConfirm: P
+                } = null != e ? e : {}, O = !1, j = (0, r.v4)(), U = u.default.getCurrentUser(), D = (0, f.isPremiumExactly)(U, E.PremiumTypes.TIER_2);
                 (0, s.openModalLazy)(async () => {
                     let {
                         default: e
@@ -660,7 +661,7 @@
                         } = n;
                         return (0, i.jsx)(e, {
                             ...s,
-                            loadId: O,
+                            loadId: j,
                             subscriptionTier: M,
                             skuId: (0, f.castPremiumSubscriptionAsSkuId)(M),
                             isGift: g,
@@ -669,10 +670,10 @@
                             initialPlanId: t,
                             followupSKUInfo: v,
                             onClose: (e, t) => {
-                                r(), null == C || C(e), e && (null == _ || _(), !g && null != t && t === E.PremiumSubscriptionSKUs.TIER_2 && !U && d.ComponentDispatch.dispatch(h.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED))
+                                r(), null == C || C(e), e && (null == _ || _(), !g && null != t && t === E.PremiumSubscriptionSKUs.TIER_2 && !D && d.ComponentDispatch.dispatch(h.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED))
                             },
                             onComplete: () => {
-                                P = !0, null == p || p(), !g && (0, o.setCanPlayWowMoment)(!0)
+                                O = !0, null == p || p(), !g && (0, o.setCanPlayWowMoment)(!0)
                             },
                             onSubscriptionConfirmation: _,
                             analyticsLocations: I,
@@ -686,14 +687,15 @@
                             applicationId: y,
                             referralTrialOfferId: b,
                             returnRef: V,
-                            subscription: L
+                            subscription: L,
+                            skipConfirm: !!P
                         })
                     }
                 }, {
                     modalKey: "payment-modal",
                     onCloseCallback: () => {
-                        !P && c.default.track(h.AnalyticEvents.PAYMENT_FLOW_CANCELED, {
-                            load_id: O,
+                        !O && c.default.track(h.AnalyticEvents.PAYMENT_FLOW_CANCELED, {
+                            load_id: j,
                             payment_type: h.PurchaseTypeToAnalyticsPaymentType[h.PurchaseTypes.SUBSCRIPTION],
                             location: null != N ? N : m,
                             source: T,
@@ -702,7 +704,7 @@
                             eligible_for_trial: null != R,
                             application_id: y,
                             location_stack: I
-                        }), (0, l.clearError)(), (0, a.clearPurchaseTokenAuthState)(), null == C || C(P), P && (null == _ || _())
+                        }), (0, l.clearError)(), (0, a.clearPurchaseTokenAuthState)(), null == C || C(O), O && (null == _ || _())
                     }
                 })
             }
@@ -2121,4 +2123,4 @@
         }
     }
 ]);
-//# sourceMappingURL=44917.6b9a8cd8dcbc5ffb5f49.js.map
+//# sourceMappingURL=44917.bbb0f3afb87715905bf5.js.map
