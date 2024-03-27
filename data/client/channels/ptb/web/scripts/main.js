@@ -36593,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279178", ", Version Hash: ").concat("d7bf2a3d34c40ef001ae758ae5aa106d973b010f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279186", ", Version Hash: ").concat("0782b8f2c9f82e34052036e2349cd702f30de4e2")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55159,33 +55159,43 @@
                 SERVER_DRAWER_ACTIVITY_PLAYING: "playing **!!{activity}!!**",
                 SERVER_DRAWER_ACTIVITY_STREAMING: "streaming **!!{activity}!!**",
                 SERVER_DRAWER_ACTIVITY_STREAMING_SCREEN: "sharing screen",
-                CREATION_INTENT_OPTION_CLAN: "A gaming clan",
-                CLAN_SETUP_OVERVIEW_TITLE: "Create Clan",
-                CLAN_SETUP_OVERVIEW_SUBTITLE: "Step {current, number} of {total, number}",
-                CLAN_SETUP_OVERVIEW_TITLE_TAG: "Pick a Tag",
-                CLAN_SETUP_OVERVIEW_TITLE_GAMES: "Select Game(s)",
-                CLAN_SETUP_OVERVIEW_TITLE_PLAYSTYLE: "Select Playstyle",
-                CLAN_SETUP_OVERVIEW_TITLE_INTERESTS: "Select Interest(s)",
-                CLAN_SETUP_OVERVIEW_TITLE_DESCRIPTION: "Write Description",
-                CLAN_SETUP_OVERVIEW_TITLE_PRIMETIME: "Set PrimeTime",
-                CLAN_SETUP_TAG_TITLE: "Choose a Clan Tag",
-                CLAN_SETUP_TAG_SUBTITLE: "Give members a way to rep your Clan around Discord.",
-                CLAN_SETUP_TAG_HELP_TEXT: "Maxmimum 4 characetrs, alphabet (A-Z) and numbers only",
-                CLAN_SETUP_TAG_PLACEHOLDER: "GGEZ",
+                CLAN_UPSELL_INVITE: "Exclusive Invite",
+                CLAN_UPSELL_CONTENT: "Want to recruit more people to play Valorant in your server?",
+                CLAN_SETUP_INTRO_TITLE: "Interested in recruiting more people to play Valorant?",
+                CLAN_SETUP_INTRO_INFO: "Your server is exclusively invited to be listed on Discovery, where other Valorant players can find and join your server.",
+                CLAN_SETUP_INTRO_CTA: "Become a Clan",
+                CLAN_SETUP_MODAL_SAVE_AND_QUIT: "Save & Exit",
+                CLAN_SETUP_STEPS: "Step {currentStep} of {totalSteps}",
                 CLAN_SETUP_GAMES_TITLE: "What games does your Clan play?",
                 CLAN_SETUP_GAMES_SUBTITLE: "You can always add more games later.",
+                CLAN_SETUP_GAMES_SEARCH_PLACEHOLDER: "Search for a game...",
                 CLAN_SETUP_PLAYSTYLE_TITLE: "What's your Clan's playstyle?",
                 CLAN_SETUP_PLAYSTYLE_SUBTITLE: "Let potential members know what kind of gaming you do.",
-                CLAN_SETUP_PLAYSTYLE_SOCIAL_TITLE: "We just play to hang out",
+                CLAN_SETUP_PLAYSTYLE_SOCIAL_TITLE: "Very Casual",
                 CLAN_SETUP_PLAYSTYLE_SOCIAL_SUBTITLE: "Skill doesn't matter. We have a good time win or lose.",
-                CLAN_SETUP_PLAYSTYLE_CASUAL_TITLE: "We can be chill or competitive",
-                CLAN_SETUP_PLAYSTYLE_CASUAL_SUBTITLE: "Some people group up to play competitively, and some just hang out.",
-                CLAN_SETUP_PLAYSTYLE_COMPETITIVE_TITLE: "We're competitive",
+                CLAN_SETUP_PLAYSTYLE_CASUAL_TITLE: "Casual",
+                CLAN_SETUP_PLAYSTYLE_CASUAL_SUBTITLE: "We play to chill and have fun, but more fun if we win!",
+                CLAN_SETUP_PLAYSTYLE_COMPETITIVE_TITLE: "Hardcore",
                 CLAN_SETUP_PLAYSTYLE_COMPETITIVE_SUBTITLE: "We play together to win, rank up, or beat challenges.",
-                CLAN_SETUP_PLAYSTYLE_CREATIVE_TITLE: "Creativity-driven",
-                CLAN_SETUP_PLAYSTYLE_CREATIVE_SUBTITLE: "We tend to your creativity by curating, solving, or creating",
+                CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_TITLE: "Very Hardcore",
+                CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_SUBTITLE: "We won't sleep until we win or beat the boss.",
                 CLAN_SETUP_INTERESTS_TITLE: "What are your Clan's interests?",
                 CLAN_SETUP_INTERESTS_SUBTITLE: "What does your Clan talk about? It doesn't have to be about gaming!",
+                CLAN_SETUP_INTERESTS_PLACEHOLDER: "Add a trait...",
+                CLAN_SETUP_DESCRIPTION_TITLE: "Write a description for your Clan.",
+                CLAN_SETUP_DESCRIPTION_SUBTITLE: "Think about why you made your Clan or what makes it unique!",
+                CLAN_SETUP_PRIMETIME_TITLE: "What's the best time to play games together?",
+                CLAN_SETUP_PRIMETIME_SUBTITLE: "PrimeTime is a dedicated time for the Clan to play games and hang out together.",
+                CLAN_SETUP_CUSTOMIZE_TITLE: "Pick a badge for your clan",
+                CLAN_SETUP_CUSTOMIZE_SUBTITLE: "Choose a badge to represent your clan. This will be shown on your clan tag and your clan's profile everywhere, so choose wisely!",
+                CLAN_SETUP_CUSTOMIZE_HELP_TEXT: "Maxmimum 4 characters, alphabet (A-Z) and numbers only",
+                CLAN_SETUP_TAG_PLACEHOLDER: "GGEZ",
+                CLAN_SETUP_OVERVIEW_TITLE: "We the people of **!!{guildName}!!**",
+                CLAN_SETUP_OVERVIEW_TEXT_DEFAULT: "...in order to create a space to play games, establish this charter for the Clan.",
+                CLAN_SETUP_OVERVIEW_TEXT_GAMES: "...in order to create a space to play **!!{games}!!**, establish this charter for the Clan.",
+                CLAN_SETUP_OVERVIEW_TEXT_GAMES_AND_PLAYSTYLE: "...in order to create a **{playstyle}** space to play **!!{games}!!**, establish this charter for the Clan.",
+                CLAN_SETUP_OVERVIEW_TEXT_TRAITS: "The Clan's traits shall be defined as **!!{traits}!!**.",
+                CLAN_SETUP_OVERVIEW_TEXT_WRAP: "Everyone will work together to uphold and nurture the values of the Clan and keep it safe and welcoming to all members.",
                 CLAN_START_INTERVIEW: "Start Interview",
                 CLAN_JOIN_INTERVIEW: "Join Interview",
                 PACKAGES: "Packages",
@@ -85443,8 +85453,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279178", "279178"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279178")), t = 0), t
+                let t = parseInt((e = "279186", "279186"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279186")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107422,8 +107432,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279178",
-                    versionHash: "d7bf2a3d34c40ef001ae758ae5aa106d973b010f"
+                    buildNumber: "279186",
+                    versionHash: "0782b8f2c9f82e34052036e2349cd702f30de4e2"
                 }
             }
             n.r(t), n.d(t, {
@@ -157631,8 +157641,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711570921468",
-                                    build_number: "279178"
+                                    built_at: "1711571542089",
+                                    build_number: "279186"
                                 }
                             },
                             retries: 1
@@ -231523,7 +231533,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d7bf2a3d34c40ef001ae758ae5aa106d973b010f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "0782b8f2c9f82e34052036e2349cd702f30de4e2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257589,7 +257599,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279178"
+                                build_number: "279186"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264734,7 +264744,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279178", "279178"), 10);
+                let s = parseInt((n = "279186", "279186"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291481,4 +291491,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.b7cbf54c285b4b8c016c.js.map
+//# sourceMappingURL=24321.d5ef2104e4963510196c.js.map
