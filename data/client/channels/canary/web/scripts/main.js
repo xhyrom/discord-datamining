@@ -18218,7 +18218,7 @@
                         "aria-label": !!f && void 0,
                         children: e => (0, i.jsx)("span", {
                             ...e,
-                            className: s()(E.username, _),
+                            className: s()(E.__invalid_username, _),
                             style: null != I ? {
                                 color: I
                             } : void 0,
@@ -19657,10 +19657,10 @@
                             children: i
                         })
                     }) : null, N = null != T ? (0, r.jsxs)(l.Text, {
-                        className: o()(d.submitText, d.spacing),
+                        className: o()(d.__invalid_submitText, d.spacing),
                         variant: "text-sm/normal",
                         children: [(0, r.jsx)("br", {}), (0, r.jsx)(l.Clickable, {
-                            className: o()(d.spacing, d.link),
+                            className: o()(d.spacing, d.__invalid_link),
                             onClick: this.handleRetry,
                             children: (0, r.jsx)(l.Anchor, {
                                 children: T
@@ -21650,7 +21650,7 @@
                                 ry: x
                             })]
                         }), (0, i.jsx)("foreignObject", {
-                            className: h.foreignObject,
+                            className: h.__invalid_foreignObject,
                             x: 0,
                             y: 0,
                             width: j,
@@ -22366,7 +22366,7 @@
                     PRIMARY: c.borderPrimary,
                     LINK: c.borderLink,
                     WHITE: c.borderWhite,
-                    BLACK: c.borderBlack,
+                    BLACK: c.__invalid_borderBlack,
                     TRANSPARENT: c.borderTransparent,
                     BRAND_NEW: c.borderBrandNew
                 },
@@ -22379,7 +22379,7 @@
                     PRIMARY: c.hoverPrimary,
                     LINK: c.hoverLink,
                     WHITE: c.hoverWhite,
-                    BLACK: c.hoverBlack,
+                    BLACK: c.__invalid_hoverBlack,
                     TRANSPARENT: c.hoverTransparent
                 },
                 S = {
@@ -28023,7 +28023,7 @@
                             foreground: E.check
                         }) : (0, i.jsx)(d.default, {
                             className: E.icon,
-                            foreground: E.checkboxEmpty
+                            foreground: E.__invalid_checkboxEmpty
                         })
                     })]
                 })
@@ -28369,11 +28369,11 @@
                         className: E.iconContainer,
                         children: s ? (0, i.jsx)(_.default, {
                             className: E.icon,
-                            background: E.radio,
+                            background: E.__invalid_radio,
                             foreground: E.radioSelection
                         }) : (0, i.jsx)(d.default, {
                             className: E.icon,
-                            foreground: E.radio
+                            foreground: E.__invalid_radio
                         })
                     })]
                 })
@@ -28430,7 +28430,7 @@
                     s && ((0, l.ensureItemVisible)(f), null === (e = h.current) || void 0 === e || e.focus())
                 }, [s]), (0, i.jsxs)("div", {
                     ref: f,
-                    className: d.submenuContainer,
+                    className: d.__invalid_submenuContainer,
                     children: [(0, i.jsx)("div", {
                         ref: S
                     }), n, s ? (0, i.jsx)(o.ReferencePositionLayer, {
@@ -28497,7 +28497,7 @@
                 let N = r.useCallback(e => d[e], [d]);
                 return (0, i.jsxs)("div", {
                     ref: I,
-                    className: l.submenuContainer,
+                    className: l.__invalid_submenuContainer,
                     children: [(0, i.jsx)("div", {
                         ref: T
                     }), t, n ? (0, i.jsx)(s.ReferencePositionLayer, {
@@ -34205,7 +34205,7 @@
                     children: [(0, i.jsxs)("div", {
                         className: l.toolbar,
                         children: [(0, i.jsx)(a.Heading, {
-                            className: l.title,
+                            className: l.__invalid_title,
                             variant: "heading-md/semibold",
                             id: d,
                             children: t
@@ -34921,7 +34921,7 @@
                                 return null
                         }
                     }(n), (0, i.jsx)(a.Text, {
-                        className: c.content,
+                        className: c.__invalid_content,
                         color: "header-primary",
                         variant: "text-md/normal",
                         children: t
@@ -36593,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279191", ", Version Hash: ").concat("5577791cf58be4a262a6a1f4a5b2e67cb40666c0")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279205", ", Version Hash: ").concat("c48c2d2d8077286f04600b122ac55a299aed481a")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -68125,7 +68125,7 @@
                                 children: (0, i.jsx)(_.default, {
                                     channelId: r.id,
                                     guildId: r.getGuildId(),
-                                    className: P.leftTrayIcon,
+                                    className: P.__invalid_leftTrayIcon,
                                     participant: g,
                                     compact: !0
                                 })
@@ -68186,7 +68186,7 @@
                             users: E,
                             size: 24,
                             max: 3,
-                            className: y.userSummaryContainer
+                            className: y.__invalid_userSummaryContainer
                         }), (0, i.jsx)(h.default, {
                             applicationId: r,
                             channelId: n.id,
@@ -71962,7 +71962,7 @@
                     ref: m,
                     children: (0, i.jsx)("div", {
                         ...O,
-                        className: f.container,
+                        className: f.__invalid_container,
                         children: (0, i.jsxs)("div", {
                             className: t,
                             children: [(0, i.jsxs)("div", {
@@ -72501,7 +72501,7 @@
                                 variant: "heading-lg/bold",
                                 children: u.name
                             }), (0, i.jsx)(o.Text, {
-                                className: a()(C.appDescription, g.markup),
+                                className: a()(C.__invalid_appDescription, g.markup),
                                 variant: "text-sm/medium",
                                 lineClamp: 3,
                                 children: U
@@ -85453,8 +85453,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279191", "279191"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279191")), t = 0), t
+                let t = parseInt((e = "279205", "279205"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279205")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -93775,7 +93775,7 @@
                     }, [d, I, n, c]),
                     f = r.useCallback(() => {
                         null != d && (0, l.openModal)(e => (0, i.jsx)(l.ModalRoot, {
-                            className: L.modal,
+                            className: L.__invalid_modal,
                             ...e,
                             size: l.ModalSize.DYNAMIC,
                             "aria-label": g.default.Messages.IMAGE,
@@ -93859,7 +93859,7 @@
                     onVideoLoadError: () => u(!0)
                 }) : (0, i.jsx)("div", {
                     onMouseEnter: o,
-                    className: a()(L.icon, L.imageContainer, {
+                    className: a()(L.icon, L.__invalid_imageContainer, {
                         [L[null !== (t = n.classification) && void 0 !== t ? t : ""]]: !0,
                         [L.imageSmall]: d
                     }),
@@ -100721,7 +100721,7 @@
                         value: o,
                         children: (0, s.jsx)("div", {
                             ...r,
-                            className: B.container,
+                            className: B.__invalid_container,
                             children: n
                         })
                     })
@@ -102553,17 +102553,17 @@
                         }), (0, i.jsxs)(u.Text, {
                             variant: "text-xs/medium",
                             color: "text-muted",
-                            className: f.subtitle,
+                            className: f.__invalid_subtitle,
                             children: [null != N ? "".concat(N, " • ") : null, O]
                         }), (0, i.jsx)(u.Text, {
                             variant: "text-xs/medium",
                             color: "text-muted",
-                            className: f.subtitle
+                            className: f.__invalid_subtitle
                         })]
                     }), null != m && m.length > 0 && (0, i.jsx)(_.default, {
                         maxUsers: 4,
                         users: m,
-                        className: f.facePile,
+                        className: f.__invalid_facePile,
                         guildId: S
                     })]
                 })
@@ -107166,7 +107166,7 @@
                     emoji: T
                 } = t, f = null != t.state && "" !== t.state ? t.state : u;
                 return (0, i.jsxs)("div", {
-                    className: s()(o.container, n),
+                    className: s()(o.__invalid_container, n),
                     children: [E || null == T ? null : (0, i.jsx)(a.ActivityEmoji, {
                         emoji: T,
                         className: s()(o.emoji, r, null != d ? {
@@ -107432,8 +107432,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279191",
-                    versionHash: "5577791cf58be4a262a6a1f4a5b2e67cb40666c0"
+                    buildNumber: "279205",
+                    versionHash: "c48c2d2d8077286f04600b122ac55a299aed481a"
                 }
             }
             n.r(t), n.d(t, {
@@ -110052,7 +110052,7 @@
                 b = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE),
                 G = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL),
                 w = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_PADDING),
-                k = (0, N.cssValueToNumber)(y.unicodeCategoryShortcutHeight),
+                k = (0, N.cssValueToNumber)(y.__invalid_unicodeCategoryShortcutHeight),
                 B = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
                 V = (0, N.cssValueToNumber)(_.default.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
                 F = b + U + 2 * w,
@@ -111070,7 +111070,7 @@
                         height: 24
                     });
                     let W = null != w ? (0, i.jsx)(N.default, {
-                            className: C.guildIcon,
+                            className: C.__invalid_guildIcon,
                             guild: w,
                             shouldAnimate: !B && k
                         }) : null,
@@ -111218,7 +111218,7 @@
                             showEmojiFavoriteTooltip: es,
                             channelGuildId: g,
                             category: r.sectionId,
-                            selectedItemClassName: K.selectedItem,
+                            selectedItemClassName: K.__invalid_selectedItem,
                             messageId: L,
                             isBurstReaction: D,
                             inNitroLockedSection: r.isNitroLocked
@@ -117589,7 +117589,7 @@
                         onClear: p,
                         onKeyDown: c,
                         onQueryChange: O,
-                        className: d.searchBar,
+                        className: d.__invalid_searchBar,
                         preventEscapePropagation: !1,
                         useKeyboardNavigation: !1,
                         inputProps: {
@@ -117806,7 +117806,7 @@
                         maskAsset: !0,
                         size: G,
                         sticker: a,
-                        className: U.sticker
+                        className: U.__invalid_sticker
                     }), i !== h.StickerSendability.SENDABLE && (0, s.jsx)(p.default, {
                         size: 14
                     })]
@@ -130575,7 +130575,7 @@
                     children: [(0, i.jsx)(n, {
                         className: _.icon
                     }), (0, i.jsx)(a.Text, {
-                        className: _.description,
+                        className: _.__invalid_description,
                         variant: "text-sm/medium",
                         children: r
                     })]
@@ -130700,7 +130700,7 @@
                                 className: a()(O.guildBoostCta, O.guildBoostCtaBoostWrapper),
                                 children: (0, i.jsx)(h.default, {
                                     className: O.guildBoostCtaBoost,
-                                    innerClassName: a()(O.guildBoostCtaContent, O.guildBoostCtaBoostContent),
+                                    innerClassName: a()(O.__invalid_guildBoostCtaContent, O.guildBoostCtaBoostContent),
                                     buttonShineClassName: O.guildBoostCtaBoostShine,
                                     guild: n,
                                     analyticsLocation: {
@@ -130717,7 +130717,7 @@
                             })
                         }), S.default.hasFreeBoosts(p) || S.default.isPremium(p, m.PremiumTypes.TIER_2) ? (0, i.jsxs)(u.Button, {
                             className: a()(O.guildBoostCta, O.guildBoostCtaSecondary),
-                            innerClassName: a()(O.guildBoostCtaContent, O.guildBoostCtaGiftContent),
+                            innerClassName: a()(O.__invalid_guildBoostCtaContent, O.guildBoostCtaGiftContent),
                             look: u.Button.Looks.OUTLINED,
                             color: u.Button.Colors.WHITE,
                             onClick: function() {
@@ -130741,7 +130741,7 @@
                             }), N.default.Messages.PREMIUM_GUILD_PERKS_MODAL_GIFT_NITRO]
                         }) : (0, i.jsx)(u.Button, {
                             className: a()(O.guildBoostCta, O.guildBoostCtaSecondary),
-                            innerClassName: a()(O.guildBoostCtaContent, O.guildBoostCtaSubscribeContent),
+                            innerClassName: a()(O.__invalid_guildBoostCtaContent, O.__invalid_guildBoostCtaSubscribeContent),
                             look: u.Button.Looks.OUTLINED,
                             color: u.Button.Colors.WHITE,
                             onClick: function() {
@@ -131675,7 +131675,7 @@
                             cellSpacing: 0,
                             children: [(0, i.jsx)("thead", {
                                 children: (0, i.jsxs)("tr", {
-                                    className: T.tableRow,
+                                    className: T.__invalid_tableRow,
                                     children: [(0, i.jsx)(S, {
                                         className: T.tableRowHeading,
                                         children: I.default.Messages.BOOSTING_MARKETING_REDESIGN_EXPERIMENT_TIER_COMPARISON_TABLE_COLUMN_HEADING_PERKS
@@ -131694,7 +131694,7 @@
                                     })]
                                 })
                             }), (0, i.jsx)("tbody", {
-                                className: T.tableBody,
+                                className: T.__invalid_tableBody,
                                 children: f.map((e, r) => {
                                     let u = n === r;
 
@@ -131702,7 +131702,7 @@
                                         s(r)
                                     }
                                     return void 0 === e.predicate ? (0, i.jsxs)("tr", {
-                                        className: T.tableRow,
+                                        className: T.__invalid_tableRow,
                                         children: [(0, i.jsx)("th", {
                                             className: a()(T.tableCell, T.tableCellWrapper),
                                             scope: "row",
@@ -155727,7 +155727,7 @@
                                     justify: y.default.Justify.CENTER,
                                     className: z.truncatingText,
                                     children: [(0, i.jsx)(d.Text, {
-                                        className: z.emojiName,
+                                        className: z.__invalid_emojiName,
                                         variant: "text-md/semibold",
                                         children: (0, i.jsx)(b.default, {
                                             children: t.name
@@ -155789,7 +155789,7 @@
                             mask: w.default.Masks.SQUIRCLE,
                             width: 32,
                             height: 32,
-                            className: z.guildIconContainer,
+                            className: z.__invalid_guildIconContainer,
                             children: null != u && _ ? (0, i.jsxs)(d.Clickable, {
                                 "aria-label": l,
                                 onClick: c,
@@ -155805,7 +155805,7 @@
                             })
                         }), (0, i.jsxs)(y.default, {
                             direction: y.default.Direction.VERTICAL,
-                            className: a()(z.guildInformation, z.truncatingText),
+                            className: a()(z.__invalid_guildInformation, z.truncatingText),
                             children: [(0, i.jsxs)(y.default, {
                                 align: y.default.Align.CENTER,
                                 children: [(0, i.jsx)(P.default, {
@@ -156034,7 +156034,7 @@
                                             className: z.showMoreEmojis,
                                             children: (0, i.jsxs)(y.default, {
                                                 children: [(0, i.jsx)(d.Text, {
-                                                    className: z.showMoreEmojisLabel,
+                                                    className: z.__invalid_showMoreEmojisLabel,
                                                     "aria-label": e,
                                                     variant: "text-xs/normal",
                                                     color: "none",
@@ -157641,8 +157641,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711572156213",
-                                    build_number: "279191"
+                                    built_at: "1711573511877",
+                                    build_number: "279205"
                                 }
                             },
                             retries: 1
@@ -169217,7 +169217,7 @@
                 } = e;
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(I.Heading, {
-                        className: P.header,
+                        className: P.__invalid_header,
                         variant: "heading-xl/semibold",
                         children: t
                     }), null != n && (0, i.jsx)(I.Text, {
@@ -169706,7 +169706,7 @@
                         closeOnScroll: !1,
                         ignoreModalClicks: !0,
                         children: () => (0, i.jsx)("div", {
-                            className: O.popoutTarget
+                            className: O.__invalid_popoutTarget
                         })
                     })
                 }) : null
@@ -171111,7 +171111,7 @@
                 return 0 === e.length ? null : (0, i.jsxs)("div", {
                     className: c.container,
                     children: [(0, i.jsx)(l.Avatar, {
-                        className: c.icon,
+                        className: c.__invalid_icon,
                         src: n,
                         "aria-label": t.username,
                         size: l.AvatarSizes.SIZE_24,
@@ -172546,10 +172546,10 @@
                 return null != r ? t = r.map(e => (0, i.jsx)(c, {
                     applicationId: n,
                     benefit: e,
-                    className: s()(u.benefit, o)
+                    className: s()(u.__invalid_benefit, o)
                 }, e.id)) : null != a && (t = a.map((e, t) => (0, i.jsx)(_, {
                     benefit: e,
-                    className: s()(u.benefit, o)
+                    className: s()(u.__invalid_benefit, o)
                 }, t))), (0, i.jsx)(i.Fragment, {
                     children: t
                 })
@@ -186185,7 +186185,7 @@
                         onChange: T,
                         threshold: .7,
                         children: (0, i.jsx)("div", {
-                            className: a()(l, O.pngImageWrapper),
+                            className: a()(l, O.__invalid_pngImageWrapper),
                             ref: d,
                             children: (0, i.jsx)(D, {
                                 hasError: h,
@@ -186246,7 +186246,7 @@
                                 className: O.overlayStickerWrapper,
                                 style: e,
                                 children: (0, i.jsx)(P, {
-                                    className: O.overlaySticker,
+                                    className: O.__invalid_overlaySticker,
                                     disableAnimation: t,
                                     enlargeOnInteraction: !1,
                                     isInteracting: a,
@@ -186754,7 +186754,7 @@
                             children: [(0, i.jsx)(l.Tooltip, {
                                 position: "right",
                                 text: V,
-                                tooltipContentClassName: D.tooltip,
+                                tooltipContentClassName: D.__invalid_tooltip,
                                 children: e => (0, i.jsx)("div", {
                                     role: "listitem",
                                     "aria-setsize": U,
@@ -187524,7 +187524,7 @@
                             className: F.wrapper,
                             children: [null != l && 0 === l.sendable.length && 0 === l.sendableWithPremium.length ? (0, i.jsx)(u.default, {
                                 message: V.default.Messages.NO_STICKER_SEARCH_RESULTS_WITH_SUGGESTIONS,
-                                className: F.noSearchResultsContainer,
+                                className: F.__invalid_noSearchResultsContainer,
                                 noResultsImageURL: x,
                                 suggestions: (0, i.jsx)(eo, {
                                     onSuggestionClick: e => (0, T.setSearchQuery)(e, !0)
@@ -187575,8 +187575,8 @@
                 m = n("981631"),
                 N = n("689938"),
                 O = n("900544");
-            let p = (0, l.cssValueToNumber)(O.stickerPickerPreviewDimensions),
-                R = (0, l.cssValueToNumber)(O.stickerPickerPreviewPadding),
+            let p = (0, l.cssValueToNumber)(O.__invalid_stickerPickerPreviewDimensions),
+                R = (0, l.cssValueToNumber)(O.__invalid_stickerPickerPreviewPadding),
                 C = r.memo(function(e) {
                     let {
                         isDisplayingIndividualStickers: t = !1,
@@ -187782,7 +187782,7 @@
                         onClear: p,
                         onKeyDown: n,
                         onQueryChange: O,
-                        className: E.searchBar,
+                        className: E.__invalid_searchBar,
                         preventEscapePropagation: !1,
                         useKeyboardNavigation: !1,
                         inputProps: {
@@ -194818,7 +194818,7 @@
                         })
                     },
                     children: () => (0, i.jsx)("span", {
-                        className: f.hidden
+                        className: f.__invalid_hidden
                     })
                 })
             }
@@ -194901,7 +194901,7 @@
                             integrationTypesConfig: n.integrationTypesConfig
                         })
                     },
-                    className: s()(N.applicationInstallButton, r),
+                    className: s()(N.__invalid_applicationInstallButton, r),
                     children: (0, i.jsxs)("div", {
                         className: N.applicationInstallButtonContent,
                         children: [(0, i.jsx)(T.default, {
@@ -195244,7 +195244,7 @@
                 let G = _.default.get((0, E.useLegacyPlatformType)(S.type)),
                     w = null == G ? void 0 : null === (t = G.getPlatformUserUrl) || void 0 === t ? void 0 : t.call(G, S);
                 null != M && M ? d = (0, i.jsx)(A.default, {
-                    className: a()(R.connectedAccountOpenIconContainer, R.connectedAccountHideIcon),
+                    className: a()(R.__invalid_connectedAccountOpenIconContainer, R.connectedAccountHideIcon),
                     foregroundColor: "currentColor"
                 }) : null != w && (d = (0, i.jsx)(u.Anchor, {
                     href: w,
@@ -195545,7 +195545,7 @@
                         onClick: C,
                         className: l()(R.avatarAndTextContainer, R.serverContainer),
                         children: [(0, s.jsx)("div", {
-                            className: R.avatars,
+                            className: R.__invalid_avatars,
                             children: (0, s.jsx)(E.default, {
                                 maxGuilds: r,
                                 guilds: S,
@@ -195649,9 +195649,9 @@
                             children: e => (0, s.jsxs)(d.Clickable, {
                                 ...e,
                                 onClick: M,
-                                className: l()(R.avatarAndTextContainer, R.friendsContainer),
+                                className: l()(R.avatarAndTextContainer, R.__invalid_friendsContainer),
                                 children: [(0, s.jsx)("div", {
-                                    className: R.avatars,
+                                    className: R.__invalid_avatars,
                                     children: (0, s.jsx)(c.default, {
                                         maxUsers: u,
                                         users: A,
@@ -195736,9 +195736,9 @@
                             children: e => (0, s.jsxs)(d.Clickable, {
                                 ...e,
                                 onClick: G(O.UserProfileSections.MUTUAL_FRIENDS),
-                                className: l()(R.avatarAndTextContainer, R.friendsContainer),
+                                className: l()(R.avatarAndTextContainer, R.__invalid_friendsContainer),
                                 children: [(0, s.jsx)("div", {
-                                    className: R.avatars,
+                                    className: R.__invalid_avatars,
                                     children: (0, s.jsx)(c.default, {
                                         maxUsers: _,
                                         users: C,
@@ -195763,7 +195763,7 @@
                                 onClick: G(O.UserProfileSections.MUTUAL_GUILDS),
                                 className: l()(R.avatarAndTextContainer, R.serverContainer),
                                 children: [!P && (0, s.jsx)("div", {
-                                    className: R.avatars,
+                                    className: R.__invalid_avatars,
                                     children: (0, s.jsx)(E.default, {
                                         maxGuilds: _,
                                         guilds: g,
@@ -195806,7 +195806,7 @@
                     className: l()(R.mainContainer, a),
                     children: [(0, s.jsx)(d.Heading, {
                         variant: "eyebrow",
-                        className: R.title,
+                        className: R.__invalid_title,
                         children: p.default.Messages.USER_PROFILE_MUTUALS_TITLE
                     }), N && (0, s.jsx)(L, {
                         user: i,
@@ -202999,7 +202999,7 @@
                 }));
                 return (0, i.jsx)("div", {
                     className: s()(T.content, T.streamHidden, {
-                        [T.small]: h
+                        [T.__invalid_small]: h
                     }),
                     children: (0, i.jsx)(E.default, {
                         className: T.streamHiddenEmptyState,
@@ -231533,7 +231533,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5577791cf58be4a262a6a1f4a5b2e67cb40666c0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "c48c2d2d8077286f04600b122ac55a299aed481a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -232598,7 +232598,7 @@
                             })
                         }), (0, r.jsxs)(C.AutocompleteRowContentSecondary, {
                             children: [(0, r.jsx)("span", {
-                                className: M.descriptionUsername,
+                                className: M.__invalid_descriptionUsername,
                                 children: R.default.getUserTag(e, {
                                     mode: "username",
                                     identifiable: i ? "never" : "always"
@@ -232763,7 +232763,7 @@
                             children: s(o, l || !0 === a)
                         }), (0, r.jsxs)(C.AutocompleteRowContentPrimary, {
                             children: [(0, r.jsx)(C.AutocompleteRowHeading, {
-                                className: M.stickerName,
+                                className: M.__invalid_stickerName,
                                 children: o.name
                             }), null != i && (0, r.jsx)(C.AutocompleteRowSubheading, {
                                 children: v.default.Messages.AUTOCOMPLETE_STICKERS_QUERY_MATCH.format({
@@ -233367,7 +233367,7 @@
                                     className: f.childWrapper,
                                     children: A
                                 }), N ? (0, s.jsx)("div", {
-                                    className: f.copyIconWrapper,
+                                    className: f.__invalid_copyIconWrapper,
                                     children: (0, s.jsx)(E.default, {
                                         width: 18,
                                         height: 18,
@@ -236906,7 +236906,7 @@
                             children: [this.renderMetadata(), this.renderVideo(), (0, s.jsx)("div", {
                                 className: P.playCenter,
                                 children: (0, s.jsx)(p.default, {
-                                    className: P.playButton,
+                                    className: P.__invalid_playButton,
                                     externalURL: n,
                                     renderLinkComponent: a
                                 })
@@ -249292,7 +249292,7 @@
                             [h.playing]: N
                         }),
                         children: (0, i.jsx)(f.default, {
-                            className: h.jumboPlayIcon
+                            className: h.__invalid_jumboPlayIcon
                         })
                     }), m && (0, i.jsx)(u.default, {
                         emojiId: null == A ? void 0 : A.emojiId,
@@ -250608,7 +250608,7 @@
                 }
                 renderIcon() {
                     return this.props.renderIcon ? (0, r.jsx)(T.default, {
-                        foreground: h.foreground,
+                        foreground: h.__invalid_foreground,
                         className: h.icon
                     }) : null
                 }
@@ -257599,7 +257599,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279191"
+                                build_number: "279205"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264744,7 +264744,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279191", "279191"), 10);
+                let s = parseInt((n = "279205", "279205"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291491,4 +291491,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.8196b59e4b2705b9a88e.js.map
+//# sourceMappingURL=24321.40ab50034b6785f7e032.js.map
