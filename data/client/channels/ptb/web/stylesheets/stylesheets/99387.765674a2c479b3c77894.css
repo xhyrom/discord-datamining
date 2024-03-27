@@ -99120,7 +99120,12 @@ html .invoiceCancelRow__6ff3e {
 }
 
 .container_ef1953 {
-    padding: 16px
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px
 }
 
 .disabledFormRenderer__8faf7 {
@@ -130793,4 +130798,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.be10f4ee1f7a541cf00f.css.map*/
+/*# sourceMappingURL=99387.765674a2c479b3c77894.css.map*/
