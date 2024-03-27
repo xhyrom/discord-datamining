@@ -36593,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279169", ", Version Hash: ").concat("5d027f49591b7003101036999f854078a1e2f6d7")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279178", ", Version Hash: ").concat("d7bf2a3d34c40ef001ae758ae5aa106d973b010f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85443,8 +85443,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279169", "279169"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279169")), t = 0), t
+                let t = parseInt((e = "279178", "279178"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279178")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107422,8 +107422,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279169",
-                    versionHash: "5d027f49591b7003101036999f854078a1e2f6d7"
+                    buildNumber: "279178",
+                    versionHash: "d7bf2a3d34c40ef001ae758ae5aa106d973b010f"
                 }
             }
             n.r(t), n.d(t, {
@@ -157631,8 +157631,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711570520004",
-                                    build_number: "279169"
+                                    built_at: "1711570921468",
+                                    build_number: "279178"
                                 }
                             },
                             retries: 1
@@ -231523,7 +231523,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5d027f49591b7003101036999f854078a1e2f6d7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d7bf2a3d34c40ef001ae758ae5aa106d973b010f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257589,7 +257589,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279169"
+                                build_number: "279178"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264734,7 +264734,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279169", "279169"), 10);
+                let s = parseInt((n = "279178", "279178"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -277655,7 +277655,13 @@
                 }
                 initialize(e) {
                     let t;
-                    this.logger.info("Creating connection to ".concat(e.address, ":").concat(e.port, " with audio ssrc: ").concat(e.ssrc)), this.audioSSRC = e.ssrc, this.streamUserId = e.streamUserId, this.initializeStreamParameters(e.streamParameters), e.streamParameters = this.videoStreamParameters;
+                    this.logger.info("Creating connection to ".concat(e.address, ":").concat(e.port, " with audio ssrc: ").concat(e.ssrc)), this.audioSSRC = e.ssrc, this.streamUserId = e.streamUserId, this.initializeStreamParameters(e.streamParameters), e.streamParameters = [{
+                        type: O.MediaTypes.AUDIO,
+                        ssrc: this.audioSSRC,
+                        rid: "",
+                        maxBitrate: 64e3,
+                        soundshare: this.context === p.MediaEngineContextTypes.STREAM
+                    }, ...this.videoStreamParameters];
                     let n = (0, A.getVoiceEngine)(),
                         i = null != n.getCodecCapabilities ? n.getCodecCapabilities : n.getSupportedVideoCodecs;
                     if (null != n.createOwnStreamConnectionWithOptions) s = this.context === p.MediaEngineContextTypes.STREAM && this.streamUserId === this.ids.userId ? n.createOwnStreamConnectionWithOptions : n.createVoiceConnectionWithOptions;
@@ -291475,4 +291481,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.b7a3afa126a964c75e7e.js.map
+//# sourceMappingURL=24321.b7cbf54c285b4b8c016c.js.map
