@@ -24497,12 +24497,6 @@
                 section: "section__62b44"
             }
         },
-        797849: function(e) {
-            "use strict";
-            e.exports = {
-                usernameSection: "usernameSection_c91d32"
-            }
-        },
         804384: function(e) {
             "use strict";
             e.exports = {
@@ -24515,7 +24509,6 @@
         735619: function(e) {
             "use strict";
             e.exports = {
-                bottomPadding: "bottomPadding__3d20b",
                 container: "container_f63223",
                 dotSpacer: "dotSpacer__33c55",
                 mutualFriendsText: "mutualFriendsText__47b48",
