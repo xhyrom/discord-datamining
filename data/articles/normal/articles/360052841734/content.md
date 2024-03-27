@@ -15,8 +15,8 @@
 <p>5.You will now need to fill out the application with all the necessary information in order for our team to review including:</p>
 <ul>
     <li>Server name</li>
-    <li>Server ID (i.e., 123456789987654321)</li>
-    <li>Select what you’d like your cap to be increased to (you must be within 10,000 members of the limit to request an increase.</li>
+    <li>Server ID (i.e. 123456789987654321)</li>
+    <li>Select what you’d like your cap to be increased to (you must be within 10,000 members of the limit to request an increase.)</li>
 </ul>
 <p>Lastly, when you have finished filling out this information, you can tap on <strong>Submit</strong> and the application will be sent to the Discord team to review further.</p>
 <h1 id="h_01HF9NMM37ZSG64WVNC01JG503">Criteria for Increasing the Member Cap</h1>
