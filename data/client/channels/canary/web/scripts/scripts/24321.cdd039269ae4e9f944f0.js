@@ -36593,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279474", ", Version Hash: ").concat("eb6698872e2771e39c9dcae67dde08eda2e9fca6")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279491", ", Version Hash: ").concat("75f474bd2f6965dc5557e3107577ad03f07b98ed")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -54804,6 +54804,7 @@
                 STOREFRONT_ONE_TIME_PURCHASE: "One-Time Purchase",
                 STOREFRONT_PREMIUM_ITEMS: "Premium Items",
                 STOREFRONT_DURABLE_AVAILABILITY: "1 / 1 Available",
+                STOREFRONT_MUST_LOGIN: "Login to browse store",
                 QUIET_MODE_DISABLED: "Focus Mode Disabled",
                 QUIET_MODE_ENABLED: "Focus Mode Enabled",
                 QUIET_MODE_DND: "Focus Mode (DND) Enabled",
@@ -85459,8 +85460,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279474", "279474"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279474")), t = 0), t
+                let t = parseInt((e = "279491", "279491"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279491")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107439,8 +107440,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279474",
-                    versionHash: "eb6698872e2771e39c9dcae67dde08eda2e9fca6"
+                    buildNumber: "279491",
+                    versionHash: "75f474bd2f6965dc5557e3107577ad03f07b98ed"
                 }
             }
             n.r(t), n.d(t, {
@@ -135285,7 +135286,7 @@
                     (0, r.openModalLazy)(async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("70935")]).then(n.bind(n, "645264"));
+                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("98880")]).then(n.bind(n, "645264"));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             guildId: e,
@@ -157648,8 +157649,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711645544074",
-                                    build_number: "279474"
+                                    built_at: "1711646872973",
+                                    build_number: "279491"
                                 }
                             },
                             retries: 1
@@ -172613,6 +172614,40 @@
                             children: n.description
                         })]
                     })]
+                })
+            }
+        },
+        886491: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                StorefrontButton: function() {
+                    return d
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("555730"),
+                s = n("481060"),
+                a = n("682864"),
+                o = n("359610"),
+                l = n("689938"),
+                u = n("320757");
+
+            function d(e) {
+                return (0, i.jsx)(o.default, {
+                    size: s.ButtonSizes.MEDIUM,
+                    ...e,
+                    children: (0, i.jsxs)("div", {
+                        className: u.storeBtn,
+                        children: [(0, i.jsx)(r.ShopSparkleIcon, {
+                            width: 16,
+                            height: 16,
+                            color: "#fff"
+                        }), (0, i.jsx)(a.default, {
+                            size: 4,
+                            horizontal: !0
+                        }), l.default.Messages.STOREFRONT]
+                    })
                 })
             }
         },
@@ -197524,11 +197559,11 @@
             var i = n("735250");
             n("470079");
             var r = n("442837"),
-                s = n("555730"),
-                a = n("481060"),
-                o = n("395661"),
-                l = n("171246"),
-                u = n("359610"),
+                s = n("481060"),
+                a = n("395661"),
+                o = n("171246"),
+                l = n("359610"),
+                u = n("886491"),
                 d = n("696906"),
                 _ = n("682864"),
                 c = n("191741"),
@@ -197548,7 +197583,7 @@
                 } = e, s = (0, r.useStateFromStores)([I.default], () => {
                     var e;
                     return null === (e = I.default.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
-                }), a = null != s && (0, E.canInstallApplication)({
+                }), o = null != s && (0, E.canInstallApplication)({
                     customInstallUrl: s.customInstallUrl,
                     installParams: s.installParams,
                     integrationTypesConfig: s.integrationTypesConfig
@@ -197560,10 +197595,10 @@
                     guildId: n
                 }), {
                     enabled: d
-                } = o.appStorefrontExperiment.useExperiment({
+                } = a.appStorefrontExperiment.useExperiment({
                     location: "BotButtonsSection"
                 });
-                return a || l ? (0, i.jsx)(S.default, {
+                return o || l ? (0, i.jsx)(S.default, {
                     children: (0, i.jsxs)("div", {
                         className: m.buttonsContainer,
                         children: [(0, i.jsx)(f.default, {
@@ -197585,7 +197620,7 @@
                 let {
                     listing: t,
                     guildId: n
-                } = e, r = null != t ? (0, l.getPayableSubscriptionListing)(t) : null, {
+                } = e, r = null != t ? (0, o.getPayableSubscriptionListing)(t) : null, {
                     openModal: s
                 } = (0, d.default)({
                     listing: r,
@@ -197594,7 +197629,7 @@
                     showBenefitsFirst: !0,
                     analyticsLocation: h.AnalyticsLocations.BOT_PROFILE_POPOUT
                 });
-                return (0, i.jsx)(u.default, {
+                return (0, i.jsx)(l.default, {
                     onClick: s,
                     className: m.button,
                     children: (0, i.jsxs)("div", {
@@ -197614,14 +197649,14 @@
                 let {
                     app: t,
                     listing: r,
-                    guildId: o
+                    guildId: a
                 } = e;
-                return null == t || null == o ? null : (0, i.jsx)(u.default, {
+                return null == t || null == a ? null : (0, i.jsx)(u.StorefrontButton, {
                     onClick: () => (function(e, t, r) {
-                        (0, a.openModalLazy)(async () => {
+                        (0, s.openModalLazy)(async () => {
                             let {
                                 default: s
-                            } = await Promise.all([n.e("49237"), n.e("99387"), n.e("98538")]).then(n.bind(n, "7225"));
+                            } = await Promise.all([n.e("49237"), n.e("99387"), n.e("98538"), n.e("44516")]).then(n.bind(n, "7225"));
                             return n => (0, i.jsx)(s, {
                                 transitionState: n.transitionState,
                                 onClose: n.onClose,
@@ -197630,19 +197665,9 @@
                                 guildId: r
                             })
                         })
-                    })(t, r, o),
+                    })(t, r, a),
                     className: m.button,
-                    children: (0, i.jsxs)("div", {
-                        className: m.botUpgradeButtonContent,
-                        children: [(0, i.jsx)(s.ShopSparkleIcon, {
-                            width: 16,
-                            height: 16,
-                            color: "#fff"
-                        }), (0, i.jsx)(_.default, {
-                            size: 4,
-                            horizontal: !0
-                        }), A.default.Messages.STOREFRONT]
-                    })
+                    size: s.ButtonSizes.SMALL
                 })
             }
         },
@@ -231543,7 +231568,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "eb6698872e2771e39c9dcae67dde08eda2e9fca6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "75f474bd2f6965dc5557e3107577ad03f07b98ed"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257611,7 +257636,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279474"
+                                build_number: "279491"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264756,7 +264781,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279474", "279474"), 10);
+                let s = parseInt((n = "279491", "279491"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291504,4 +291529,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.994225f16f1fa69274fa.js.map
+//# sourceMappingURL=24321.cdd039269ae4e9f944f0.js.map
