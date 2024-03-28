@@ -19415,6 +19415,10 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     color: var(--white-500)
 }
 
+.storeBtn_aa1533 {
+    display: flex
+}
+
 .icon__05b65 {
     align-self: center;
     background-color: var(--background-floating);
@@ -131046,4 +131050,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.9872f510f2c91bd203d6.css.map*/
+/*# sourceMappingURL=99387.f7968fbf6698c5a1e1cf.css.map*/
