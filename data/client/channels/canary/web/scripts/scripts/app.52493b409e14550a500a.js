@@ -143,7 +143,6 @@
                 familyCenterLinkButton: "familyCenterLinkButton_ab1e00",
                 familyCenterPendingBadge: "familyCenterPendingBadge_cafb4f",
                 hideGameUpdateProgressIndicator: "hideGameUpdateProgressIndicator_ef8a73",
-                localizeBadge: "localizeBadge_aa833b",
                 privateChannels: "privateChannels__9b518",
                 searchBar: "searchBar__621ec",
                 searchBarComponent: "searchBarComponent__8f95f",
@@ -20791,6 +20790,12 @@
                 sparkleStar: "sparkleStar_b659d5"
             }
         },
+        392934: function(e) {
+            "use strict";
+            e.exports = {
+                localizeBadge: "localizeBadge_f5c4cb"
+            }
+        },
         393845: function(e) {
             "use strict";
             e.exports = {
@@ -24399,6 +24404,8 @@
             "use strict";
             e.exports = {
                 recentGameContainer: "recentGameContainer__8231a",
+                recentGameIcon: "recentGameIcon__65d60",
+                recentGameName: "recentGameName_f79fae",
                 recentGameTextContainer: "recentGameTextContainer_bb26a9",
                 recentGames: "recentGames_e4425b",
                 recentGamesHeading: "recentGamesHeading_bb152b"
@@ -25128,8 +25135,6 @@
                 headerCTA: "headerCTA_c0a44b",
                 headerContainer: "headerContainer__70a91",
                 headerEasterEgg: "headerEasterEgg__723a4",
-                infoIcon: "infoIcon__4171a",
-                inline: "inline_bb3395",
                 innerButton: "innerButton__745ab",
                 inventoryContainer: "inventoryContainer__9ce4d",
                 inventoryHeader: "inventoryHeader__5f811",
