@@ -7742,8 +7742,11 @@ html .invoiceCancelRow_aa7946 {
     padding-bottom: 12px
 }
 
+@value iconSize: 40px;
+
 .recentGames_e4425b {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-gap: 12px
 }
 
@@ -7756,8 +7759,27 @@ html .invoiceCancelRow_aa7946 {
     align-items: center
 }
 
+.recentGameIcon__65d60 {
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 4px;
+    overflow: hidden
+}
+
 .recentGameTextContainer_bb26a9 {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
     padding-left: 12px
+}
+
+.recentGameName_f79fae {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
 }
 
 .divider_d6f39c {
@@ -70512,7 +70534,7 @@ html .progress__00e29 {
     display: flex;
     align-items: center;
     gap: 4px;
-    padding: 2px 8px
+    padding: 2px 8px 2px 4px
 }
 
 .closeIcon__08cd1 {
@@ -83268,6 +83290,10 @@ input::-webkit-inner-spin-button {
     background-clip: content-box
 }
 
+.localizeBadge_f5c4cb {
+    background-color: rgba(79, 84, 92, .24)
+}
+
 .empty__086ba {
     fill: var(--background-primary);
     padding: 16px
@@ -83380,10 +83406,6 @@ html .tabBadge_ff691d {
 
 .searchBarComponent__8f95f {
     background: var(--bg-overlay-4, var(--background-tertiary))
-}
-
-.localizeBadge_aa833b {
-    background-color: rgba(79, 84, 92, .24)
 }
 
 .activitiesBirthdayIcon__71788 {
@@ -120515,6 +120537,10 @@ html .invoiceCancelRow__6ff3e {
     height: 16px
 }
 
+.icon__7380b:hover {
+    color: var(--interactive-hover)
+}
+
 .containerOwned__029da {
     cursor: pointer
 }
@@ -120663,7 +120689,7 @@ html .invoiceCancelRow__6ff3e {
     width: 18px;
     height: 18px;
     color: var(--white-500);
-    margin-right: 8px
+    margin-right: 4px
 }
 
 .inventoryHeader__5f811 {
@@ -120714,7 +120740,7 @@ html .invoiceCancelRow__6ff3e {
 
 .banner__1b5aa {
     background: linear-gradient(90deg, var(--guild-boosting-blue-for-gradients), var(--guild-boosting-purple-for-gradients))no-repeat;
-    padding: 20px;
+    padding: 12px 20px;
     border-radius: var(--radius-sm);
     box-shadow: var(--shadow-low);
     display: flex;
@@ -120724,22 +120750,11 @@ html .invoiceCancelRow__6ff3e {
     margin-top: 20px
 }
 
-.infoIcon__4171a {
-    width: 18px;
-    height: 18px
-}
-
 .innerButton__745ab {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 4px
-}
-
-.inline_bb3395 {
-    display: flex;
-    align-items: center;
-    gap: 8px
 }
 
 .noTextToSpeech__76c96 {
@@ -131001,4 +131016,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f39d01db8304d119a887.css.map*/
+/*# sourceMappingURL=99387.f755f867351ad22ea443.css.map*/
