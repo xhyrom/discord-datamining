@@ -5020,9 +5020,12 @@
         597338: function(e) {
             "use strict";
             e.exports = {
+                addText: "addText__8f18c",
+                clickable: "clickable_a588cd",
                 contentLabel: "contentLabel_aa05d5",
                 contentWithMinHeight: "contentWithMinHeight__78ad4",
                 gameImagePlaceholder: "gameImagePlaceholder__732e7",
+                icon: "icon_e8e1b2",
                 inputContainer: "inputContainer__1e798",
                 playstyleOption: "playstyleOption__67567",
                 playstyleSelect: "playstyleSelect_b7d88b",
@@ -5033,6 +5036,8 @@
                 slideContent: "slideContent__6ae94",
                 subtitle: "subtitle__62596",
                 tagInput: "tagInput__4fbf8",
+                timeSelection: "timeSelection_cf3393",
+                timeSelectorRow: "timeSelectorRow_d86011",
                 title: "title__20916"
             }
         },
@@ -5388,6 +5393,7 @@
                 collectedInfoContainer: "collectedInfoContainer__6617a",
                 collectedTextContainer: "collectedTextContainer_b6fcfd",
                 confettiCanvas: "confettiCanvas_fbf264",
+                customConfetti: "customConfetti_c9b92e",
                 darkText: "darkText_ecd62a",
                 decorationBanner: "decorationBanner_f1b54c",
                 default: "default_c7c7b0",
@@ -5406,7 +5412,9 @@
                 countDownWrapper: "countDownWrapper__60b05",
                 countdown: "countdown_c6377a",
                 countdownIcon: "countdownIcon__7d52a",
-                countdownLabel: "countdownLabel__2f456"
+                countdownLabel: "countdownLabel__2f456",
+                fullScreenWrapper: "fullScreenWrapper__4d78b",
+                mobileWrapper: "mobileWrapper_c50f89"
             }
         },
         832371: function(e) {
@@ -7191,6 +7199,14 @@
                 header: "header__88d0c",
                 icon: "icon__37393",
                 iconWrapper: "iconWrapper_a8f659"
+            }
+        },
+        591373: function(e) {
+            "use strict";
+            e.exports = {
+                buttons: "buttons__15cf3",
+                container: "container__8aa3d",
+                formContainer: "formContainer_f90333"
             }
         },
         996650: function(e) {
@@ -18781,6 +18797,8 @@
             "use strict";
             e.exports = {
                 confettiCanvas: "confettiCanvas__27a82",
+                customConfetti: "customConfetti_a96273",
+                hidden: "hidden__91f3e",
                 modalOverrideBody: "modalOverrideBody__05130",
                 modalOverrideSliderBody: "modalOverrideSliderBody__18cec"
             }
@@ -21258,6 +21276,12 @@
                 name: "name_d4dd76"
             }
         },
+        320757: function(e) {
+            "use strict";
+            e.exports = {
+                storeBtn: "storeBtn_aa1533"
+            }
+        },
         886190: function(e) {
             "use strict";
             e.exports = {
@@ -22722,6 +22746,7 @@
                 emailContainer: "emailContainer__15951",
                 emailForm: "emailForm__4335d",
                 emailInput: "emailInput_bc5dc0",
+                eyebrow: "eyebrow__03c5b",
                 form: "form__2ca0d",
                 formGroup: "formGroup_eb9bae",
                 header: "header__3ffc0",

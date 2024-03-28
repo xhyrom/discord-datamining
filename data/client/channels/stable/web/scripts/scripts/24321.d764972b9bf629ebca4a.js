@@ -36593,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279382", ", Version Hash: ").concat("5c40119e7a25f9a00154b739436b9d3f107ce35d")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279687", ", Version Hash: ").concat("16253d73eaf9ce56b17f2f7d04ad4a2290b4c93d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -54804,6 +54804,7 @@
                 STOREFRONT_ONE_TIME_PURCHASE: "One-Time Purchase",
                 STOREFRONT_PREMIUM_ITEMS: "Premium Items",
                 STOREFRONT_DURABLE_AVAILABILITY: "1 / 1 Available",
+                STOREFRONT_MUST_LOGIN: "Login to browse store",
                 QUIET_MODE_DISABLED: "Focus Mode Disabled",
                 QUIET_MODE_ENABLED: "Focus Mode Enabled",
                 QUIET_MODE_DND: "Focus Mode (DND) Enabled",
@@ -55191,6 +55192,16 @@
                 CLAN_SETUP_CUSTOMIZE_SUBTITLE: "Choose a badge to represent your clan. This will be shown on your clan tag and your clan's profile everywhere, so choose wisely!",
                 CLAN_SETUP_CUSTOMIZE_HELP_TEXT: "Maxmimum 4 characters, alphabet (A-Z) and numbers only",
                 CLAN_SETUP_TAG_PLACEHOLDER: "GGEZ",
+                CLAN_PRIMETIME_PLACEHOLDER: "Day",
+                CLAN_PRIMETIME_MONDAY: "Monday",
+                CLAN_PRIMETIME_TUESDAY: "Tuesday",
+                CLAN_PRIMETIME_WEDNESDAY: "Wednesday",
+                CLAN_PRIMETIME_THURSDAY: "Thursday",
+                CLAN_PRIMETIME_FRIDAY: "Friday",
+                CLAN_PRIMETIME_SATURDAY: "Saturday",
+                CLAN_PRIMETIME_SUNDAY: "Sunday",
+                CLAN_PRIMETIME_WEEKDAYS: "Weekdays",
+                CLAN_PRIMETIME_WEEKENDS: "Weekends",
                 CLAN_SETUP_OVERVIEW_TITLE: "We the people of **!!{guildName}!!**",
                 CLAN_SETUP_OVERVIEW_TEXT_DEFAULT: "...in order to create a space to play games, establish this charter for the Clan.",
                 CLAN_SETUP_OVERVIEW_TEXT_GAMES: "...in order to create a space to play **!!{games}!!**, establish this charter for the Clan.",
@@ -55250,19 +55261,27 @@
                 PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_7: "You're welcome :)",
                 SIGNUP_BUTTON_TOOLTIP_CTA: "Click to preview",
                 SIGNUP_COMPLETE_CTA: "Sign Up",
-                SIGNUP_EMAIL_PROMPT: "Confirm your email to secure your spot on the waitlist.",
+                SIGNUP_EMAIL_PROMPT: "Confirm your email to secure your spot on the waitlist",
                 SIGNUP_EMAIL_PLACEHOLDER: "wumpus@example.com",
                 SIGNUP_EMAIL_ERROR: "We're unable to verify that email address. Please try another",
                 SIGNUP_COMPLETED_TITLE: "Thank you for your interest!",
-                SIGNUP_COMPLETED_DESCRIPTION: "We'll be in touch soon.",
-                SIGNUP_CLAN_OPTION_SOCIAL_TITLE: "Social",
-                SIGNUP_CLAN_OPTION_SOCIAL_DESCRIPTION: "Skill doesn't matter. We have a good time win or lose.",
+                SIGNUP_COMPLETED_DESCRIPTION: "We will get back to you once we have more updates.",
+                SIGNUP_NOTICE_EYEBROW: "EXCLUSIVE DISCORD INVITE",
+                SIGNUP_NOTICE_CTA: "Learn More",
+                SIGNUP_CLAN_PLAYSTYLE_TITLE: "What's your server's play style?",
+                SIGNUP_CLAN_PLAYSTYLE_DESCRIPTION: "Let potential members know what your gaming style is.",
+                SIGNUP_CLAN_ACKNOWLEDGEMENTS_TITLE: "Here is some additional information about Gaming Guilds",
+                SIGNUP_CLAN_ACKNOWLEDGEMENTS_DESCRIPTION: "Select all the checkboxes to acknowledge and continue.",
+                SIGNUP_CLAN_ACKNOWLEDGEMENT_CAP: "Gaming Guilds are capped to 200 members max",
+                SIGNUP_CLAN_ACKNOWLEDGEMENT_APPROVAL: "New members must be approved by you in order to join",
+                SIGNUP_CLAN_OPTION_VERY_CASUAL_TITLE: "Very Casual",
+                SIGNUP_CLAN_OPTION_VERY_CASUAL_DESCRIPTION: "Skill doesn't matter. We have a good time win or lose.",
                 SIGNUP_CLAN_OPTION_CASUAL_TITLE: "Casual",
-                SIGNUP_CLAN_OPTION_CASUAL_DESCRIPTION: "Some people group up to play competitively, and some just hang out.",
-                SIGNUP_CLAN_OPTION_COMPETITIVE_TITLE: "Competitive",
-                SIGNUP_CLAN_OPTION_COMPETITIVE_DESCRIPTION: "We play together to win, rank up, or beat challenges.",
-                SIGNUP_CLAN_OPTION_CREATIVE_TITLE: "Creative",
-                SIGNUP_CLAN_OPTION_CREATIVE_DESCRIPTION: "We tend to your creativity by curating, solving, or creating",
+                SIGNUP_CLAN_OPTION_CASUAL_DESCRIPTION: "We play to chill and have fun, but more fun if we win!",
+                SIGNUP_CLAN_OPTION_HARDCORE_TITLE: "Hardcore",
+                SIGNUP_CLAN_OPTION_HARDCORE_DESCRIPTION: "We play together to win, rank up, or beat challenges.",
+                SIGNUP_CLAN_OPTION_VERY_HARDCORE_TITLE: "Very Hardcore",
+                SIGNUP_CLAN_OPTION_VERY_HARDCORE_DESCRIPTION: "We won't sleep until we win or beat the boss.",
                 RECENT_GAMES_SETTING_SUBLABEL: "Enable showing your Recently Played Games on your profile. [Check our Help Center for     more information.](onClick)",
                 RECENT_GAMES_SETTING_ACTIVITY_STATUS_DISABLED_SUBLABEL: "To enable Recent Games on your profile, you must first [enable sharing your Activity Status](onSettingClick).     We won’t use this data for anything except showing your recent activity. [Check our Help Center for more       information.](onHelpArticleClick)"
             })
@@ -85459,8 +85478,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279382", "279382"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279382")), t = 0), t
+                let t = parseInt((e = "279687", "279687"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279687")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -85553,7 +85572,8 @@
                     SUMMARIES_DISABLED: 2048,
                     IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL: 8192,
                     IS_BROADCASTING: 16384,
-                    HIDE_MEDIA_DOWNLOAD_OPTIONS: 32768
+                    HIDE_MEDIA_DOWNLOAD_OPTIONS: 32768,
+                    IS_JOIN_REQUEST_INTERVIEW_CHANNEL: 65536
                 }),
                 c = 1024,
                 E = 4096;
@@ -103442,7 +103462,7 @@
                     E = c()
                 }
             }
-            u(I, "displayName", "CollectiblesPersistedStore"), u(I, "persistKey", "CollectiblesPersistedStoreV2"), t.default = new I(o.default, {
+            u(I, "displayName", "CollectiblesPersistedStore"), u(I, "persistKey", "CollectiblesPersistedStoreV2"), new I(o.default, {
                 COLLECTIBLES_CATEGORY_ITEMS_VIEWED: e => {
                     let {
                         categories: t,
@@ -107438,8 +107458,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279382",
-                    versionHash: "5c40119e7a25f9a00154b739436b9d3f107ce35d"
+                    buildNumber: "279687",
+                    versionHash: "16253d73eaf9ce56b17f2f7d04ad4a2290b4c93d"
                 }
             }
             n.r(t), n.d(t, {
@@ -135284,7 +135304,7 @@
                     (0, r.openModalLazy)(async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("70935")]).then(n.bind(n, "645264"));
+                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("98880")]).then(n.bind(n, "645264"));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             guildId: e,
@@ -142507,6 +142527,9 @@
                 areSchedulesIdentical: function() {
                     return y
                 },
+                convertJSDayToRRuleDay: function() {
+                    return C
+                },
                 generateNextRecurrences: function() {
                     return U
                 },
@@ -142536,6 +142559,9 @@
                 },
                 getScheduleFromEventData: function() {
                     return v
+                },
+                getValidWeekdays: function() {
+                    return w
                 },
                 hasScheduleChanges: function() {
                     return V
@@ -143188,7 +143214,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("79504"), n.e("58153"), n.e("25381"), n.e("33053"), n.e("51238"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("16114"), n.e("85552"), n.e("56630"), n.e("43643"), n.e("58227"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("40866"), n.e("48496"), n.e("28216"), n.e("75301"), n.e("62856"), n.e("21540")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("79504"), n.e("58153"), n.e("25381"), n.e("33053"), n.e("51238"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("16114"), n.e("85552"), n.e("56630"), n.e("43643"), n.e("58227"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("40866"), n.e("95003"), n.e("28216"), n.e("75301"), n.e("62856"), n.e("29598")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -157647,8 +157673,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711589761331",
-                                    build_number: "279382"
+                                    built_at: "1711663582620",
+                                    build_number: "279687"
                                 }
                             },
                             retries: 1
@@ -172612,6 +172638,40 @@
                             children: n.description
                         })]
                     })]
+                })
+            }
+        },
+        886491: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                StorefrontButton: function() {
+                    return d
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("555730"),
+                s = n("481060"),
+                a = n("682864"),
+                o = n("359610"),
+                l = n("689938"),
+                u = n("320757");
+
+            function d(e) {
+                return (0, i.jsx)(o.default, {
+                    size: s.ButtonSizes.MEDIUM,
+                    ...e,
+                    children: (0, i.jsxs)("div", {
+                        className: u.storeBtn,
+                        children: [(0, i.jsx)(r.ShopSparkleIcon, {
+                            width: 16,
+                            height: 16,
+                            color: "#fff"
+                        }), (0, i.jsx)(a.default, {
+                            size: 4,
+                            horizontal: !0
+                        }), l.default.Messages.STOREFRONT]
+                    })
                 })
             }
         },
@@ -197523,11 +197583,11 @@
             var i = n("735250");
             n("470079");
             var r = n("442837"),
-                s = n("555730"),
-                a = n("481060"),
-                o = n("395661"),
-                l = n("171246"),
-                u = n("359610"),
+                s = n("481060"),
+                a = n("395661"),
+                o = n("171246"),
+                l = n("359610"),
+                u = n("886491"),
                 d = n("696906"),
                 _ = n("682864"),
                 c = n("191741"),
@@ -197547,7 +197607,7 @@
                 } = e, s = (0, r.useStateFromStores)([I.default], () => {
                     var e;
                     return null === (e = I.default.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
-                }), a = null != s && (0, E.canInstallApplication)({
+                }), o = null != s && (0, E.canInstallApplication)({
                     customInstallUrl: s.customInstallUrl,
                     installParams: s.installParams,
                     integrationTypesConfig: s.integrationTypesConfig
@@ -197559,10 +197619,10 @@
                     guildId: n
                 }), {
                     enabled: d
-                } = o.appStorefrontExperiment.useExperiment({
+                } = a.appStorefrontExperiment.useExperiment({
                     location: "BotButtonsSection"
                 });
-                return a || l ? (0, i.jsx)(S.default, {
+                return o || l ? (0, i.jsx)(S.default, {
                     children: (0, i.jsxs)("div", {
                         className: m.buttonsContainer,
                         children: [(0, i.jsx)(f.default, {
@@ -197584,7 +197644,7 @@
                 let {
                     listing: t,
                     guildId: n
-                } = e, r = null != t ? (0, l.getPayableSubscriptionListing)(t) : null, {
+                } = e, r = null != t ? (0, o.getPayableSubscriptionListing)(t) : null, {
                     openModal: s
                 } = (0, d.default)({
                     listing: r,
@@ -197593,7 +197653,7 @@
                     showBenefitsFirst: !0,
                     analyticsLocation: h.AnalyticsLocations.BOT_PROFILE_POPOUT
                 });
-                return (0, i.jsx)(u.default, {
+                return (0, i.jsx)(l.default, {
                     onClick: s,
                     className: m.button,
                     children: (0, i.jsxs)("div", {
@@ -197613,14 +197673,14 @@
                 let {
                     app: t,
                     listing: r,
-                    guildId: o
+                    guildId: a
                 } = e;
-                return null == t || null == o ? null : (0, i.jsx)(u.default, {
+                return null == t || null == a ? null : (0, i.jsx)(u.StorefrontButton, {
                     onClick: () => (function(e, t, r) {
-                        (0, a.openModalLazy)(async () => {
+                        (0, s.openModalLazy)(async () => {
                             let {
                                 default: s
-                            } = await Promise.all([n.e("49237"), n.e("99387"), n.e("98538")]).then(n.bind(n, "7225"));
+                            } = await Promise.all([n.e("49237"), n.e("99387"), n.e("98538"), n.e("44516")]).then(n.bind(n, "7225"));
                             return n => (0, i.jsx)(s, {
                                 transitionState: n.transitionState,
                                 onClose: n.onClose,
@@ -197629,19 +197689,9 @@
                                 guildId: r
                             })
                         })
-                    })(t, r, o),
+                    })(t, r, a),
                     className: m.button,
-                    children: (0, i.jsxs)("div", {
-                        className: m.botUpgradeButtonContent,
-                        children: [(0, i.jsx)(s.ShopSparkleIcon, {
-                            width: 16,
-                            height: 16,
-                            color: "#fff"
-                        }), (0, i.jsx)(_.default, {
-                            size: 4,
-                            horizontal: !0
-                        }), A.default.Messages.STOREFRONT]
-                    })
+                    size: s.ButtonSizes.SMALL
                 })
             }
         },
@@ -205540,26 +205590,29 @@
                         })) : null
                     })
                 }
-                getIconURL(e) {
+                getIconURL(e, t) {
                     return null != this.icon ? s.default.getGameAssetURL({
                         id: this.id,
                         hash: this.icon,
-                        size: e
+                        size: e,
+                        format: t
                     }) : null
                 }
-                getIconSource(e) {
+                getIconSource(e, t) {
                     return null != this.icon ? s.default.getGameAssetSource({
                         id: this.id,
                         hash: this.icon,
-                        size: e
+                        size: e,
+                        format: t
                     }) : null
                 }
-                getSplashURL(e) {
+                getSplashURL(e, t) {
                     return null != this.splash ? s.default.getGameAssetURL({
                         id: this.id,
                         hash: this.splash,
                         size: e,
-                        keepAspectRatio: !0
+                        keepAspectRatio: !0,
+                        format: t
                     }) : null
                 }
                 getCoverImageURL(e) {
@@ -231539,7 +231592,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5c40119e7a25f9a00154b739436b9d3f107ce35d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "16253d73eaf9ce56b17f2f7d04ad4a2290b4c93d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -252668,7 +252721,8 @@
                     id: t,
                     hash: n,
                     size: i = c.AVATAR_SIZE,
-                    keepAspectRatio: r = !1
+                    keepAspectRatio: r = !1,
+                    format: s
                 } = e;
                 return h({
                     endpoint: c.Endpoints.APPLICATION_ICON,
@@ -252677,7 +252731,8 @@
                     hash: n,
                     size: i,
                     canAnimate: !1,
-                    keepAspectRatio: r
+                    keepAspectRatio: r,
+                    format: s
                 })
             }
 
@@ -257605,7 +257660,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279382"
+                                build_number: "279687"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264750,7 +264805,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279382", "279382"), 10);
+                let s = parseInt((n = "279687", "279687"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -273677,15 +273732,14 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let a = void 0,
-                o = new i.Logger("Flux"),
-                l = e => e();
+            let a = new i.Logger("Flux"),
+                o = e => e();
             t.default = new class e {
                 destroy() {
-                    this.changedStores.clear(), this.reactChangedStores.clear(), l = e => e()
+                    this.changedStores.clear(), this.reactChangedStores.clear(), o = e => e()
                 }
                 injectBatchEmitChanges(e) {
-                    l = e
+                    o = e
                 }
                 pause() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
@@ -273706,22 +273760,22 @@
                     }
                 }
                 emit() {
-                    !this.isBatchEmitting && !this.isPaused && l(() => {
+                    !this.isBatchEmitting && !this.isPaused && o(() => {
                         try {
                             this.isBatchEmitting = !0, this.changeSentinel++;
                             let e = 0,
                                 t = new Set,
                                 n = new Set;
                             for (; this.changedStores.size > 0;) {
-                                if (++e > 100) throw o.error("LastFewActions", r.serialize()), Error("change emit loop detected, aborting");
+                                if (++e > 100) throw a.error("LastFewActions", r.serialize()), Error("change emit loop detected, aborting");
                                 this.emitNonReactOnce(t, n)
                             }
                             for (; this.reactChangedStores.size > 0;) {
-                                if (++e > 100) throw o.error("LastFewActions", r.serialize()), Error("react change emit loop detected, aborting");
+                                if (++e > 100) throw a.error("LastFewActions", r.serialize()), Error("react change emit loop detected, aborting");
                                 this.emitReactOnce()
                             }
                         } finally {
-                            null == a || a(), this.isBatchEmitting = !1
+                            this.isBatchEmitting = !1
                         }
                     })
                 }
@@ -273749,7 +273803,7 @@
                         })
                     });
                     let s = Date.now();
-                    s - n > 100 && o.verbose("Slow batch emitChanges took ".concat(s - n, "ms recentActions:"), r.serialize())
+                    s - n > 100 && a.verbose("Slow batch emitChanges took ".concat(s - n, "ms recentActions:"), r.serialize())
                 }
                 emitReactOnce() {
                     let e = Date.now(),
@@ -273758,7 +273812,7 @@
                         e._reactChangeCallbacks.invokeAll(), this.reactChangedStores.delete(e)
                     });
                     let n = Date.now();
-                    n - e > 100 && o.verbose("Slow batch emitReactChanges took ".concat(n - e, "ms recentActions:"), r.serialize())
+                    n - e > 100 && a.verbose("Slow batch emitReactChanges took ".concat(n - e, "ms recentActions:"), r.serialize())
                 }
                 constructor() {
                     s(this, "changedStores", new Set), s(this, "reactChangedStores", new Set), s(this, "changeSentinel", 0), s(this, "isBatchEmitting", !1), s(this, "isDispatching", !1), s(this, "isPaused", !1), s(this, "pauseTimer", null)
@@ -290417,7 +290471,7 @@
 
             function s(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
-                    n = "" !== e.Messages.XSSDefenses ? e.Messages.XSSDefenses : e.Messages;
+                    n = "XSSDefenses" in e.Messages ? e.Messages.XSSDefenses : e.Messages;
                 null != n.SELF_XSS_HEADER && (console.log("%c".concat(n.SELF_XSS_HEADER), "color: #5865f2; -webkit-text-stroke: 2px black; font-size: 72px; font-weight: bold;"), console.log("%c".concat(n.SELF_XSS_LINE_1), "font-size: 16px;"), console.log("%c".concat(n.SELF_XSS_LINE_2), "font-size: 18px; font-weight: bold; color: red;"), t >= 4 ? (console.log("%c".concat(n.SELF_XSS_LINE_3), "font-size: 16px;"), console.log("%c".concat(n.SELF_XSS_LINE_4.format({
                     url: "".concat(location.protocol).concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/jobs")
                 })), "font-size: 16px;")) : setTimeout(() => s(e, t + 1), 1e3))
@@ -291499,4 +291553,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.18fa0eec5bab9de12fcb.js.map
+//# sourceMappingURL=24321.d764972b9bf629ebca4a.js.map
