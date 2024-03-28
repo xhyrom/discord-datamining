@@ -5001,6 +5001,7 @@
                 footer: "footer_d63e9e",
                 header: "header__05198",
                 introContainer: "introContainer__4ffdc",
+                lastParagraph: "lastParagraph__7a09c",
                 mainContent: "mainContent__23e7a",
                 modalContent: "modalContent__2b13e",
                 overviewSidebar: "overviewSidebar__995aa",
@@ -5014,7 +5015,9 @@
                 scrollBgTop: "scrollBgTop_e0da83",
                 scrollContainer: "scrollContainer__3789e",
                 scroller: "scroller__24eef",
-                sequencer: "sequencer__0bd4c"
+                sequencer: "sequencer__0bd4c",
+                signatureBlock: "signatureBlock__543fd",
+                signatureText: "signatureText_cb71b7"
             }
         },
         597338: function(e) {
@@ -5024,12 +5027,16 @@
                 clickable: "clickable_a588cd",
                 contentLabel: "contentLabel_aa05d5",
                 contentWithMinHeight: "contentWithMinHeight__78ad4",
+                enterToSearchText: "enterToSearchText_c64e49",
+                flex: "flex__7aeec",
                 gameImagePlaceholder: "gameImagePlaceholder__732e7",
                 icon: "icon_e8e1b2",
+                iconSmall: "iconSmall_cd3113",
                 inputContainer: "inputContainer__1e798",
                 playstyleOption: "playstyleOption__67567",
                 playstyleSelect: "playstyleSelect_b7d88b",
                 playstyleTitle: "playstyleTitle__00d17",
+                plusIcon: "plusIcon__22efe",
                 selectedInterest: "selectedInterest_aa523d",
                 selectedPlaystyle: "selectedPlaystyle_e4490f",
                 selectedSection: "selectedSection__5c175",
