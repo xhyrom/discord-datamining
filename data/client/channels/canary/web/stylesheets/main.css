@@ -86265,6 +86265,11 @@ html .tabBadge_ff691d {
     color: var(--black-500)
 }
 
+.customConfetti_c9b92e {
+    top: -120px;
+    right: -75px
+}
+
 .avatarDecoration__9eca4 {
     width: 48px;
     height: 48px
@@ -113842,6 +113847,15 @@ html .invoiceCancelRow__6ff3e {
     height: 100%
 }
 
+.customConfetti_a96273 {
+    opacity: 1;
+    transition: opacity.5s ease-in-out
+}
+
+.customConfetti_a96273.hidden__91f3e {
+    opacity: 0
+}
+
 .answerRow_ededa8 {
     display: grid;
     grid-template-columns: 1fr;
@@ -131016,4 +131030,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f755f867351ad22ea443.css.map*/
+/*# sourceMappingURL=99387.d7d4f6217c957f7159e5.css.map*/

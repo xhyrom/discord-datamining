@@ -5388,6 +5388,7 @@
                 collectedInfoContainer: "collectedInfoContainer__6617a",
                 collectedTextContainer: "collectedTextContainer_b6fcfd",
                 confettiCanvas: "confettiCanvas_fbf264",
+                customConfetti: "customConfetti_c9b92e",
                 darkText: "darkText_ecd62a",
                 decorationBanner: "decorationBanner_f1b54c",
                 default: "default_c7c7b0",
@@ -18781,6 +18782,8 @@
             "use strict";
             e.exports = {
                 confettiCanvas: "confettiCanvas__27a82",
+                customConfetti: "customConfetti_a96273",
+                hidden: "hidden__91f3e",
                 modalOverrideBody: "modalOverrideBody__05130",
                 modalOverrideSliderBody: "modalOverrideSliderBody__18cec"
             }
