@@ -23,6 +23,7 @@
 <p>Polls is a feature on Discord with which you can create a poll to have your friends and community members vote on anything! You can add up to 10 answers for people to vote on in each poll. This can help decide the next game you’ll play together for game night, if pineapple belongs on pizza, and so much more!</p>
 <h1 id="h_01HSED5BPEP8237V9AR1RJMJWQ">How do I create a Poll?</h1>
 <h3 id="h_01HSED5BPEKCGB8DZY5P06EQ7S"><span style="color: #434343;" data-darkreader-inline-color="">A poll can have up to 10 answers listed.</span></h3>
+<h3 id="h_01HT316M1C3SEBWPQ42WXACJ80"><span style="color: #434343;" data-darkreader-inline-color="">Any text within a poll (including questions and answers), will apply filters set by <a href="https://support.discord.com/hc/en-us/articles/4421269296535" target="_blank" rel="noopener noreferrer">AutoMod</a>. </span></h3>
 <h2 id="h_01HSED5BPES3AW3NAQF30VMNPM">Desktop</h2>
 <p>1. Tap on the <strong>plus sign</strong> [<img src="https://support.discord.com/hc/article_attachments/22214929965847" width="26" height="26">] located in the text field of the text channel, text chat of a voice channel, or group message that you want to share the poll in.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22214929986455" width="624" height="45"></p>
