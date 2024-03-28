@@ -36593,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279491", ", Version Hash: ").concat("75f474bd2f6965dc5557e3107577ad03f07b98ed")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279500", ", Version Hash: ").concat("98ec6c58f1273a37e9aff5b1d96c0234760cf6d2")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55192,6 +55192,16 @@
                 CLAN_SETUP_CUSTOMIZE_SUBTITLE: "Choose a badge to represent your clan. This will be shown on your clan tag and your clan's profile everywhere, so choose wisely!",
                 CLAN_SETUP_CUSTOMIZE_HELP_TEXT: "Maxmimum 4 characters, alphabet (A-Z) and numbers only",
                 CLAN_SETUP_TAG_PLACEHOLDER: "GGEZ",
+                CLAN_PRIMETIME_PLACEHOLDER: "Day",
+                CLAN_PRIMETIME_MONDAY: "Monday",
+                CLAN_PRIMETIME_TUESDAY: "Tuesday",
+                CLAN_PRIMETIME_WEDNESDAY: "Wednesday",
+                CLAN_PRIMETIME_THURSDAY: "Thursday",
+                CLAN_PRIMETIME_FRIDAY: "Friday",
+                CLAN_PRIMETIME_SATURDAY: "Saturday",
+                CLAN_PRIMETIME_SUNDAY: "Sunday",
+                CLAN_PRIMETIME_WEEKDAYS: "Weekdays",
+                CLAN_PRIMETIME_WEEKENDS: "Weekends",
                 CLAN_SETUP_OVERVIEW_TITLE: "We the people of **!!{guildName}!!**",
                 CLAN_SETUP_OVERVIEW_TEXT_DEFAULT: "...in order to create a space to play games, establish this charter for the Clan.",
                 CLAN_SETUP_OVERVIEW_TEXT_GAMES: "...in order to create a space to play **!!{games}!!**, establish this charter for the Clan.",
@@ -85460,8 +85470,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279491", "279491"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279491")), t = 0), t
+                let t = parseInt((e = "279500", "279500"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279500")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107440,8 +107450,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279491",
-                    versionHash: "75f474bd2f6965dc5557e3107577ad03f07b98ed"
+                    buildNumber: "279500",
+                    versionHash: "98ec6c58f1273a37e9aff5b1d96c0234760cf6d2"
                 }
             }
             n.r(t), n.d(t, {
@@ -142509,6 +142519,9 @@
                 areSchedulesIdentical: function() {
                     return y
                 },
+                convertJSDayToRRuleDay: function() {
+                    return C
+                },
                 generateNextRecurrences: function() {
                     return U
                 },
@@ -142538,6 +142551,9 @@
                 },
                 getScheduleFromEventData: function() {
                     return v
+                },
+                getValidWeekdays: function() {
+                    return w
                 },
                 hasScheduleChanges: function() {
                     return V
@@ -157649,8 +157665,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711646872973",
-                                    build_number: "279491"
+                                    built_at: "1711648007271",
+                                    build_number: "279500"
                                 }
                             },
                             retries: 1
@@ -231568,7 +231584,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "75f474bd2f6965dc5557e3107577ad03f07b98ed"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "98ec6c58f1273a37e9aff5b1d96c0234760cf6d2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257636,7 +257652,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279491"
+                                build_number: "279500"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264781,7 +264797,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279491", "279491"), 10);
+                let s = parseInt((n = "279500", "279500"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291529,4 +291545,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.cdd039269ae4e9f944f0.js.map
+//# sourceMappingURL=24321.fb0998999372a9d7847d.js.map
