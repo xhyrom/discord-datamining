@@ -36593,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279685", ", Version Hash: ").concat("77ded0ecd629f97d903516c4c9516acaff2d43e8")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279689", ", Version Hash: ").concat("51791258aa003895154680d3f488974687aaf467")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85478,8 +85478,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279685", "279685"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279685")), t = 0), t
+                let t = parseInt((e = "279689", "279689"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279689")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103329,27 +103329,24 @@
             let i, r;
             n.r(t), n("47120");
             var s, a, o, l, u = n("392711"),
-                d = n("873546"),
-                _ = n("180650"),
-                c = n("442837"),
-                E = n("570140"),
-                I = n("706454"),
-                T = n("884697");
-            let f = new Map,
-                S = new Map,
-                h = f,
-                A = S,
-                m = !1;
-            let N = new Set([_.CollectiblesCategorySkuId.SHY]),
-                O = () => {
-                    h = f, A = S, r = void 0, m = !1, i = void 0
-                };
-            class p extends(s = c.default.Store) {
+                d = n("442837"),
+                _ = n("570140"),
+                c = n("706454"),
+                E = n("884697");
+            let I = new Map,
+                T = new Map,
+                f = I,
+                S = T,
+                h = !1;
+            let A = () => {
+                f = I, S = T, r = void 0, h = !1, i = void 0
+            };
+            class m extends(s = d.default.Store) {
                 initialize() {
-                    this.syncWith([I.default], O)
+                    this.syncWith([c.default], A)
                 }
                 get isFetching() {
-                    return m
+                    return h
                 }
                 get error() {
                     return i
@@ -103358,53 +103355,53 @@
                     return r
                 }
                 get categories() {
-                    return h
+                    return f
                 }
                 get products() {
-                    return A
+                    return S
                 }
                 getCategory(e) {
-                    return null != e ? h.get(e) : void 0
+                    return null != e ? f.get(e) : void 0
                 }
                 getProduct(e) {
-                    return null != e ? A.get(e) : void 0
+                    return null != e ? S.get(e) : void 0
                 }
                 getCategoryForProduct(e) {
                     let t = this.getProduct(e);
                     return this.getCategory(null == t ? void 0 : t.categorySkuId)
                 }
             }
-            l = "CollectiblesCategoryStore", (o = "displayName") in(a = p) ? Object.defineProperty(a, o, {
+            l = "CollectiblesCategoryStore", (o = "displayName") in(a = m) ? Object.defineProperty(a, o, {
                 value: l,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : a[o] = l, t.default = new p(E.default, {
+            }) : a[o] = l, t.default = new m(_.default, {
                 COLLECTIBLES_CATEGORIES_FETCH: e => {
-                    m = !0, i = void 0
+                    h = !0, i = void 0
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: e => {
-                    0 === e.categories.length ? (h = f, A = S) : !(0, u.isEqual)([...h.values()], e.categories) && (h = new Map(e.categories.filter(e => !(d.isMobile && N.has(e.skuId))).map(e => [e.skuId, e])), A = new Map((0, T.getProductsFromCategories)(h).map(e => [e.skuId, e]))), r = Date.now(), m = !1, i = void 0
+                    0 === e.categories.length ? (f = I, S = T) : !(0, u.isEqual)([...f.values()], e.categories) && (f = new Map(e.categories.map(e => [e.skuId, e])), S = new Map((0, E.getProductsFromCategories)(f).map(e => [e.skuId, e]))), r = Date.now(), h = !1, i = void 0
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_FAILURE: e => {
                     let {
                         error: t
                     } = e;
-                    h = f, A = S, m = !1, i = t
+                    f = I, S = T, h = !1, i = t
                 },
                 COLLECTIBLES_PRODUCT_FETCH: e => {
-                    m = !0, i = void 0
+                    h = !0, i = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_SUCCESS: e => {
-                    A.set(e.product.skuId, e.product), m = !1, i = void 0
+                    S.set(e.product.skuId, e.product), h = !1, i = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_FAILURE: e => {
                     let {
                         error: t
                     } = e;
-                    m = !1, i = t
+                    h = !1, i = t
                 },
-                LOGOUT: O
+                LOGOUT: A
             })
         },
         574709: function(e, t, n) {
@@ -107458,8 +107455,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279685",
-                    versionHash: "77ded0ecd629f97d903516c4c9516acaff2d43e8"
+                    buildNumber: "279689",
+                    versionHash: "51791258aa003895154680d3f488974687aaf467"
                 }
             }
             n.r(t), n.d(t, {
@@ -157673,8 +157670,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711663393221",
-                                    build_number: "279685"
+                                    built_at: "1711663740197",
+                                    build_number: "279689"
                                 }
                             },
                             retries: 1
@@ -231592,7 +231589,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "77ded0ecd629f97d903516c4c9516acaff2d43e8"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "51791258aa003895154680d3f488974687aaf467"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257660,7 +257657,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279685"
+                                build_number: "279689"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264805,7 +264802,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279685", "279685"), 10);
+                let s = parseInt((n = "279689", "279689"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291553,4 +291550,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.cd463fbcc7444eb65822.js.map
+//# sourceMappingURL=24321.1d3db90b9bb982d9d51d.js.map
