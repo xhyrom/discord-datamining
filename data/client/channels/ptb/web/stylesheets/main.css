@@ -85758,7 +85758,16 @@ html .tabBadge_ff691d {
     height: 32px;
     padding: 4px 32px;
     z-index: 100;
-    font-family: var(--font-code)
+    font-family: var(--font-code);
+    pointer-events: none
+}
+
+.fullScreenWrapper__4d78b {
+    left: calc(50% + 20px)
+}
+
+.mobileWrapper_c50f89 {
+    left: 50%
 }
 
 .countdownIcon__7d52a {
@@ -131086,4 +131095,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7a63b5449378d9027c2f.css.map*/
+/*# sourceMappingURL=99387.a41a8f9b4eeb3c8230a3.css.map*/
