@@ -122256,14 +122256,13 @@ div.nagbar_c731ff {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 400px
+    width: 420px
 }
 
 .question_b664d3 {
     display: flex;
     gap: 16px;
-    flex-direction: column;
-    margin-top: 200px
+    flex-direction: column
 }
 
 .options__829b1 {
@@ -122397,6 +122396,13 @@ div.nagbar_c731ff {
     display: inline-block;
     width: 24px;
     height: 24px
+}
+
+.eyebrow__03c5b {
+    color: var(--yellow-200);
+    display: flex;
+    gap: 8px;
+    align-items: center
 }
 
 .waveformCanvas__32e12 {
@@ -131080,4 +131086,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.944708622be27bb59ce2.css.map*/
+/*# sourceMappingURL=99387.7a63b5449378d9027c2f.css.map*/

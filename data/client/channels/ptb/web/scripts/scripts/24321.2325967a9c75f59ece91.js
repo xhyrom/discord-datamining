@@ -36593,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279591", ", Version Hash: ").concat("799ff643578143a18d6d740d6418612fa0d938f6")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279601", ", Version Hash: ").concat("dcef6339626e2a20d8fa2ef69a049b946d5476fc")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55261,19 +55261,27 @@
                 PACKAGES_NO_TEXT_TO_SPEECH_QUESTION_7: "You're welcome :)",
                 SIGNUP_BUTTON_TOOLTIP_CTA: "Click to preview",
                 SIGNUP_COMPLETE_CTA: "Sign Up",
-                SIGNUP_EMAIL_PROMPT: "Confirm your email to secure your spot on the waitlist.",
+                SIGNUP_EMAIL_PROMPT: "Confirm your email to secure your spot on the waitlist",
                 SIGNUP_EMAIL_PLACEHOLDER: "wumpus@example.com",
                 SIGNUP_EMAIL_ERROR: "We're unable to verify that email address. Please try another",
                 SIGNUP_COMPLETED_TITLE: "Thank you for your interest!",
-                SIGNUP_COMPLETED_DESCRIPTION: "We'll be in touch soon.",
-                SIGNUP_CLAN_OPTION_SOCIAL_TITLE: "Social",
-                SIGNUP_CLAN_OPTION_SOCIAL_DESCRIPTION: "Skill doesn't matter. We have a good time win or lose.",
+                SIGNUP_COMPLETED_DESCRIPTION: "We will get back to you once we have more updates.",
+                SIGNUP_NOTICE_EYEBROW: "EXCLUSIVE DISCORD INVITE",
+                SIGNUP_NOTICE_CTA: "Learn More",
+                SIGNUP_CLAN_PLAYSTYLE_TITLE: "What's your server's play style?",
+                SIGNUP_CLAN_PLAYSTYLE_DESCRIPTION: "Let potential members know what your gaming style is.",
+                SIGNUP_CLAN_ACKNOWLEDGEMENTS_TITLE: "Here is some additional information about Gaming Guilds",
+                SIGNUP_CLAN_ACKNOWLEDGEMENTS_DESCRIPTION: "Select all the checkboxes to acknowledge and continue.",
+                SIGNUP_CLAN_ACKNOWLEDGEMENT_CAP: "Gaming Guilds are capped to 200 members max",
+                SIGNUP_CLAN_ACKNOWLEDGEMENT_APPROVAL: "New members must be approved by you in order to join",
+                SIGNUP_CLAN_OPTION_VERY_CASUAL_TITLE: "Very Casual",
+                SIGNUP_CLAN_OPTION_VERY_CASUAL_DESCRIPTION: "Skill doesn't matter. We have a good time win or lose.",
                 SIGNUP_CLAN_OPTION_CASUAL_TITLE: "Casual",
-                SIGNUP_CLAN_OPTION_CASUAL_DESCRIPTION: "Some people group up to play competitively, and some just hang out.",
-                SIGNUP_CLAN_OPTION_COMPETITIVE_TITLE: "Competitive",
-                SIGNUP_CLAN_OPTION_COMPETITIVE_DESCRIPTION: "We play together to win, rank up, or beat challenges.",
-                SIGNUP_CLAN_OPTION_CREATIVE_TITLE: "Creative",
-                SIGNUP_CLAN_OPTION_CREATIVE_DESCRIPTION: "We tend to your creativity by curating, solving, or creating",
+                SIGNUP_CLAN_OPTION_CASUAL_DESCRIPTION: "We play to chill and have fun, but more fun if we win!",
+                SIGNUP_CLAN_OPTION_HARDCORE_TITLE: "Hardcore",
+                SIGNUP_CLAN_OPTION_HARDCORE_DESCRIPTION: "We play together to win, rank up, or beat challenges.",
+                SIGNUP_CLAN_OPTION_VERY_HARDCORE_TITLE: "Very Hardcore",
+                SIGNUP_CLAN_OPTION_VERY_HARDCORE_DESCRIPTION: "We won't sleep until we win or beat the boss.",
                 RECENT_GAMES_SETTING_SUBLABEL: "Enable showing your Recently Played Games on your profile. [Check our Help Center for     more information.](onClick)",
                 RECENT_GAMES_SETTING_ACTIVITY_STATUS_DISABLED_SUBLABEL: "To enable Recent Games on your profile, you must first [enable sharing your Activity Status](onSettingClick).     We won’t use this data for anything except showing your recent activity. [Check our Help Center for more       information.](onHelpArticleClick)"
             })
@@ -85470,8 +85478,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279591", "279591"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279591")), t = 0), t
+                let t = parseInt((e = "279601", "279601"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279601")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107450,8 +107458,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279591",
-                    versionHash: "799ff643578143a18d6d740d6418612fa0d938f6"
+                    buildNumber: "279601",
+                    versionHash: "dcef6339626e2a20d8fa2ef69a049b946d5476fc"
                 }
             }
             n.r(t), n.d(t, {
@@ -157665,8 +157673,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711657461829",
-                                    build_number: "279591"
+                                    built_at: "1711658726814",
+                                    build_number: "279601"
                                 }
                             },
                             retries: 1
@@ -231584,7 +231592,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "799ff643578143a18d6d740d6418612fa0d938f6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "dcef6339626e2a20d8fa2ef69a049b946d5476fc"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257652,7 +257660,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279591"
+                                build_number: "279601"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264797,7 +264805,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279591", "279591"), 10);
+                let s = parseInt((n = "279601", "279601"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291545,4 +291553,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.989811ff7231f9f8191b.js.map
+//# sourceMappingURL=24321.2325967a9c75f59ece91.js.map
