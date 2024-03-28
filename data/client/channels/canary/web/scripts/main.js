@@ -36593,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279404", ", Version Hash: ").concat("a76fb13838681bd0c9bb14b347200556cb0b9316")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279413", ", Version Hash: ").concat("0276086376d6f3c405ce80dc5531a2e1c7ee47f0")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85459,8 +85459,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279404", "279404"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279404")), t = 0), t
+                let t = parseInt((e = "279413", "279413"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279413")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107438,8 +107438,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279404",
-                    versionHash: "a76fb13838681bd0c9bb14b347200556cb0b9316"
+                    buildNumber: "279413",
+                    versionHash: "0276086376d6f3c405ce80dc5531a2e1c7ee47f0"
                 }
             }
             n.r(t), n.d(t, {
@@ -157647,8 +157647,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711596543525",
-                                    build_number: "279404"
+                                    built_at: "1711601457099",
+                                    build_number: "279413"
                                 }
                             },
                             retries: 1
@@ -231539,7 +231539,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a76fb13838681bd0c9bb14b347200556cb0b9316"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "0276086376d6f3c405ce80dc5531a2e1c7ee47f0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257605,7 +257605,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279404"
+                                build_number: "279413"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264750,7 +264750,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279404", "279404"), 10);
+                let s = parseInt((n = "279413", "279413"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -273677,15 +273677,14 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let a = void 0,
-                o = new i.Logger("Flux"),
-                l = e => e();
+            let a = new i.Logger("Flux"),
+                o = e => e();
             t.default = new class e {
                 destroy() {
-                    this.changedStores.clear(), this.reactChangedStores.clear(), l = e => e()
+                    this.changedStores.clear(), this.reactChangedStores.clear(), o = e => e()
                 }
                 injectBatchEmitChanges(e) {
-                    l = e
+                    o = e
                 }
                 pause() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
@@ -273706,22 +273705,22 @@
                     }
                 }
                 emit() {
-                    !this.isBatchEmitting && !this.isPaused && l(() => {
+                    !this.isBatchEmitting && !this.isPaused && o(() => {
                         try {
                             this.isBatchEmitting = !0, this.changeSentinel++;
                             let e = 0,
                                 t = new Set,
                                 n = new Set;
                             for (; this.changedStores.size > 0;) {
-                                if (++e > 100) throw o.error("LastFewActions", r.serialize()), Error("change emit loop detected, aborting");
+                                if (++e > 100) throw a.error("LastFewActions", r.serialize()), Error("change emit loop detected, aborting");
                                 this.emitNonReactOnce(t, n)
                             }
                             for (; this.reactChangedStores.size > 0;) {
-                                if (++e > 100) throw o.error("LastFewActions", r.serialize()), Error("react change emit loop detected, aborting");
+                                if (++e > 100) throw a.error("LastFewActions", r.serialize()), Error("react change emit loop detected, aborting");
                                 this.emitReactOnce()
                             }
                         } finally {
-                            null == a || a(), this.isBatchEmitting = !1
+                            this.isBatchEmitting = !1
                         }
                     })
                 }
@@ -273749,7 +273748,7 @@
                         })
                     });
                     let s = Date.now();
-                    s - n > 100 && o.verbose("Slow batch emitChanges took ".concat(s - n, "ms recentActions:"), r.serialize())
+                    s - n > 100 && a.verbose("Slow batch emitChanges took ".concat(s - n, "ms recentActions:"), r.serialize())
                 }
                 emitReactOnce() {
                     let e = Date.now(),
@@ -273758,7 +273757,7 @@
                         e._reactChangeCallbacks.invokeAll(), this.reactChangedStores.delete(e)
                     });
                     let n = Date.now();
-                    n - e > 100 && o.verbose("Slow batch emitReactChanges took ".concat(n - e, "ms recentActions:"), r.serialize())
+                    n - e > 100 && a.verbose("Slow batch emitReactChanges took ".concat(n - e, "ms recentActions:"), r.serialize())
                 }
                 constructor() {
                     s(this, "changedStores", new Set), s(this, "reactChangedStores", new Set), s(this, "changeSentinel", 0), s(this, "isBatchEmitting", !1), s(this, "isDispatching", !1), s(this, "isPaused", !1), s(this, "pauseTimer", null)
@@ -291499,4 +291498,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.73263a7536e5f72494e8.js.map
+//# sourceMappingURL=24321.0281f19a18aa669fe12a.js.map
