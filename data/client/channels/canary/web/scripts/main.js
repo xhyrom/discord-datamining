@@ -36593,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279785", ", Version Hash: ").concat("8da5e7151c333e4d86ff5891afc1fe59fdbc2c59")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279802", ", Version Hash: ").concat("3cc027345fb394f3b1318d79e0c86850b124a8b9")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85483,8 +85483,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279785", "279785"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279785")), t = 0), t
+                let t = parseInt((e = "279802", "279802"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279802")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -105899,10 +105899,10 @@
                     children: p.default.Messages.CLEAR_BUILD_OVERRIDE
                 })
             }
-            let L = a().throttle(() => {
+            let L = a().throttle(e => {
                 f.default.increment({
                     name: u.MetricEvents.APP_CRASHED,
-                    tags: ["reason:".concat(o.AppCrashedReasons.UNHANDLED_JS_ERROR), "level:".concat(l.ErrorLevels.FATAL)]
+                    tags: ["reason:".concat(o.AppCrashedReasons.UNHANDLED_JS_ERROR), "level:".concat(l.ErrorLevels.FATAL), "modded_client:".concat(e)]
                 }, !0)
             }, 100, {
                 trailing: !1
@@ -105917,17 +105917,18 @@
                         error: e,
                         info: t
                     });
-                    let i = m.default.captureCrash(e, {
-                        extra: t
-                    });
+                    let i = (0, T.usesClientMods)(),
+                        r = m.default.captureCrash(e, {
+                            extra: t
+                        });
                     A.default.track(O.AnalyticEvents.APP_CRASHED, {
                         path: n.pathname,
                         extra: t,
                         error_message: e.message,
                         error_stack: e.stack,
-                        sentry_issue_id: i,
-                        uses_client_mods: (0, T.usesClientMods)()
-                    }), L(), N.default.cleanupDisplaySleep()
+                        sentry_issue_id: r,
+                        uses_client_mods: i
+                    }), L(i), N.default.cleanupDisplaySleep()
                 }
                 _handleSubmitReport() {
                     location.reload(!0)
@@ -107460,8 +107461,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279785",
-                    versionHash: "8da5e7151c333e4d86ff5891afc1fe59fdbc2c59"
+                    buildNumber: "279802",
+                    versionHash: "3cc027345fb394f3b1318d79e0c86850b124a8b9"
                 }
             }
             n.r(t), n.d(t, {
@@ -157675,8 +157676,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711673732511",
-                                    build_number: "279785"
+                                    built_at: "1711676735783",
+                                    build_number: "279802"
                                 }
                             },
                             retries: 1
@@ -231594,7 +231595,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8da5e7151c333e4d86ff5891afc1fe59fdbc2c59"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3cc027345fb394f3b1318d79e0c86850b124a8b9"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257662,7 +257663,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279785"
+                                build_number: "279802"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264807,7 +264808,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279785", "279785"), 10);
+                let s = parseInt((n = "279802", "279802"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291555,4 +291556,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.f0365ea0c35e416dd6fb.js.map
+//# sourceMappingURL=24321.44d1d52443a8cb57a798.js.map
