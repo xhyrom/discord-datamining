@@ -12,22 +12,46 @@
     "populations": [
       {
         "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 4500,
+                "end": 5000
+              },
+              {
+                "start": 5000,
+                "end": 10000
+              }
+            ]
+          },
           "none": {
             "rollout": [
               {
                 "start": 0,
-                "end": 10000
+                "end": 4000
               }
             ]
           }
         },
-        "filters": []
+        "filters": [
+          {
+            "type": "guild_member_count_range",
+            "min_count": 5000,
+            "max_count": null
+          },
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "COMMUNITY"
+            ]
+          }
+        ]
       }
     ],
     "revision": 0,
     "overrides": {
       "1": [
-        "1097548765818261534"
+        "651595875897835540"
       ]
     },
     "overrides_formatted": []

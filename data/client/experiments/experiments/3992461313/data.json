@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-03_passwordless_login",
-    "label": "Passwordless Login",
+    "id": "2024-02_clans",
+    "label": "Clans",
     "description": [
       "Not Eligible",
-      "Treatment 0: Control",
-      "Treatment 1: Enabled"
+      "Control Bucket",
+      "Treatment 1: Enable creation of clan guilds"
     ],
-    "hash": 2467249597,
+    "hash": 3992461313,
     "buckets": [
       -1,
       0,
@@ -17,7 +17,7 @@
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enabled"
+      "enableClanCreation"
     ]
   }
 }

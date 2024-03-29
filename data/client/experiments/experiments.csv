@@ -475,6 +475,7 @@ id,hash,label
 2024-02_applaunchermobilenew,2165998604,App Launcher - Mobile
 2024-02_audio_short_circuit,2886828494,Audio processing short circuiting
 2024-02_churn_user_discount_offer_experiment,2351506768,Churn User Discount Offer
+2024-02_clans,3992461313,Clans
 2024-02_clips_quality_decoupling,2198288410,Clips quality decoupling
 2024-02_collectibles_anime_v2_marketing,3989121258,Anime V2 marketing Experiment
 2024-02_collectibles_shop_elements_marketing,3290168049,Collectibles Shop Marketing Experiment - Elements
@@ -504,6 +505,7 @@ id,hash,label
 2024-03_friend_finder_selected_states,3744134882,Friend Finder State Experiment
 2024-03_gateway_zstd,3940464351,Gateway Zstd compression
 2024-03_gdm_facepiles_desktop,2728749069,Group DM Facepiles (Desktop)
+2024-03_gdm_presence,1948031068,Group DM Presence
 2024-03_holdout_bug_main_right_way,2112082891,Holdout Bug Experiment Right Way (pls ignore)
 2024-03_holdout_bug_main_wrong_way,2448001788,Holdout Bug Experiment Wrong Way (pls ignore)
 2024-03_krisp_sentiment,2156584863,override krisp setting
@@ -519,6 +521,8 @@ id,hash,label
 2024-03_quests_activity_quest,1874994306,Activity Quest
 2024-03_quests_client_monitoring,2848826960,Quests client monitoring experiment
 2024-03_quests_members_list_entrypoint,950109088,Quests Members List Entrypoint
+2024-03_referral_program_sender,2843439589,Referral Program Sender Experience
+2024-03_remb_experiment,3962844131,Bandwidth Estimation - REMB
 2024-03_simplified_profile_phase_one,526435992,Simplified Profile Experiment
 2024-03_social_proof_hd_streaming,913903122,Social proof in HD streaming upsell
 2024-03_unreads_new_users,1135801489,Unreads Experiment (grey-dot mode) (new users)

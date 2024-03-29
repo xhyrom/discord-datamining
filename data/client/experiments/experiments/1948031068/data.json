@@ -1,0 +1,37 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-03_gdm_presence",
+    "label": "Group DM Presence",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Status Indicator Only",
+      "Treatment 2: Typing Indicator Only",
+      "Treatment 3: Status Indicator + Typing Indicator",
+      "Treatment 4: Facepile Only",
+      "Treatment 5: Facepile + Status Indicator",
+      "Treatment 6: Facepile + Typing Indicator",
+      "Treatment 7: Facepile + Typing Indicator + Status Indicator"
+    ],
+    "hash": 1948031068,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "isFacepileEnabled",
+      "isStatusIndicatorEnabled",
+      "isTypingIndicatorEnabled"
+    ]
+  }
+}

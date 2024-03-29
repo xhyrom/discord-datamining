@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-03_explicit_content_adult_defaults",
-    "label": "Explicit Media Redaction New Setting Defaults",
+    "id": "2024-03_referral_program_sender",
+    "label": "Referral Program Sender Experience",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable new explicit media redaction settings defaults for new adults"
+      "Treatment 1: Enabled"
     ],
-    "hash": 2540058718,
+    "hash": 2843439589,
     "buckets": [
       -1,
       0,

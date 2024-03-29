@@ -39,10 +39,16 @@
             ]
           }
         },
-        "filters": []
+        "filters": [
+          {
+            "type": "guild_member_count_range",
+            "min_count": 1,
+            "max_count": 200
+          }
+        ]
       }
     ],
-    "revision": 0,
+    "revision": 2,
     "overrides": {
       "1": [
         "844690435841851453"
