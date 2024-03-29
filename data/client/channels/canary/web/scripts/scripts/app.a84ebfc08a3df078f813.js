@@ -1549,7 +1549,7 @@
                 viewAllNitroGames: "viewAllNitroGames_a65ce4"
             }
         },
-        523147: function(e) {
+        982179: function(e) {
             "use strict";
             e.exports = {
                 active: "active__92ae1",
