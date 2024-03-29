@@ -7768,18 +7768,35 @@ html .invoiceCancelRow_aa7946 {
     overflow: hidden
 }
 
-.recentGameTextContainer_bb26a9 {
-    min-width: 0;
+.recentGameDetails_fa472d {
     display: flex;
     flex-direction: column;
-    flex: 0 1 auto;
-    padding-left: 12px
+    justify-content: center;
+    margin-left: 12px;
+    min-width: 0;
+    flex: 0 1 auto
 }
 
-.recentGameName_f79fae {
+.recentGameTitleContainer_bd3ae5 {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    flex: 0 1 auto
+}
+
+.sharedGameIcon__45b1e {
+    max-width: 16px
+}
+
+.recentGameTitle__9adac {
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden
+    overflow: hidden;
+    margin-right: 4px;
+    font-size: 14px;
+    line-height: 1.2857142857142858;
+    font-weight: 600;
+    color: var(--header-primary)
 }
 
 .divider_d6f39c {
@@ -131152,4 +131169,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1e252e3ce52469992add.css.map*/
+/*# sourceMappingURL=99387.631a2b5e4d18bd539237.css.map*/
