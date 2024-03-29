@@ -36599,7 +36599,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280089", ", Version Hash: ").concat("8b4ebeccc947b7a51a92fc7418e5815d0bf1b47c")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280100", ", Version Hash: ").concat("618a8a31fd32cea33f32b48137b45c79a79c44a6")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85499,8 +85499,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280089", "280089"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280089")), t = 0), t
+                let t = parseInt((e = "280100", "280100"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280100")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107481,8 +107481,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280089",
-                    versionHash: "8b4ebeccc947b7a51a92fc7418e5815d0bf1b47c"
+                    buildNumber: "280100",
+                    versionHash: "618a8a31fd32cea33f32b48137b45c79a79c44a6"
                 }
             }
             n.r(t), n.d(t, {
@@ -157696,8 +157696,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711747816303",
-                                    build_number: "280089"
+                                    built_at: "1711748739599",
+                                    build_number: "280100"
                                 }
                             },
                             retries: 1
@@ -163308,7 +163308,7 @@
                 (0, s.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("6416"), n.e("14720"), n.e("63438"), n.e("62511"), n.e("61247"), n.e("58600"), n.e("32776"), n.e("57878"), n.e("95900"), n.e("8016"), n.e("17938"), n.e("84992"), n.e("35240"), n.e("25399")]).then(n.bind(n, "7305"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("6416"), n.e("14720"), n.e("63438"), n.e("62511"), n.e("61247"), n.e("58600"), n.e("32776"), n.e("57878"), n.e("95900"), n.e("8016"), n.e("17938"), n.e("84992"), n.e("35240"), n.e("34853")]).then(n.bind(n, "7305"));
                     return n => {
                         let {
                             onClose: r,
@@ -163411,7 +163411,7 @@
                         PaymentContextProvider: e
                     } = await Promise.resolve().then(n.bind(n, "598")), a = (await Promise.all([n.e("49237"), n.e("99387"), n.e("15972"), n.e("6416"), n.e("32776"), n.e("10993")]).then(n.bind(n, "405083"))).default, {
                         getApplicationPaymentSteps: E
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("58625"), n.e("14720"), n.e("63438"), n.e("62511"), n.e("61247"), n.e("58600"), n.e("95900"), n.e("34728")]).then(n.bind(n, "759386")), O = E({
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("58625"), n.e("14720"), n.e("63438"), n.e("62511"), n.e("61247"), n.e("58600"), n.e("95900"), n.e("89890")]).then(n.bind(n, "759386")), O = E({
                         guildId: T,
                         showBenefitsFirst: h,
                         eligibleApplicationSubscriptionGuilds: A
@@ -173525,95 +173525,102 @@
                     }
                 },
                 u = async function() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
-                        t = a.default.isFetching,
-                        n = 0 === a.default.profileEffects.length;
-                    if (!t && (e || n)) {
-                        r.default.dispatch({
-                            type: "USER_PROFILE_EFFECTS_FETCH"
-                        });
-                        try {
-                            let {
-                                body: e
-                            } = await i.HTTP.get(o.Endpoints.USER_PROFILE_EFFECTS), t = (null == e ? void 0 : e.profile_effect_configs).map(l);
+                    let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+                    if (!(!e && (a.default.hasFetched() || a.default.isFetching))) {
+                        if (a.default.canFetch()) {
                             r.default.dispatch({
-                                type: "USER_PROFILE_EFFECTS_FETCH_SUCCESS",
-                                profileEffects: t
-                            })
-                        } catch (e) {
-                            throw r.default.dispatch({
-                                type: "USER_PROFILE_EFFECTS_FETCH_FAILURE",
-                                error: e
-                            }), new s.APIError(e)
+                                type: "USER_PROFILE_EFFECTS_FETCH"
+                            });
+                            try {
+                                let {
+                                    body: e
+                                } = await i.HTTP.get(o.Endpoints.USER_PROFILE_EFFECTS), t = (null == e ? void 0 : e.profile_effect_configs).map(l);
+                                r.default.dispatch({
+                                    type: "USER_PROFILE_EFFECTS_FETCH_SUCCESS",
+                                    profileEffects: t
+                                })
+                            } catch (e) {
+                                throw r.default.dispatch({
+                                    type: "USER_PROFILE_EFFECTS_FETCH_FAILURE",
+                                    error: e
+                                }), new s.APIError(e)
+                            }
                         }
                     }
                 }
         },
         25251: function(e, t, n) {
             "use strict";
-            let i;
+            let i, r;
             n.r(t);
-            var r, s, a, o, l = n("392711"),
-                u = n("442837"),
-                d = n("570140");
-            let _ = [],
-                c = !1;
-            let E = _,
-                I = {},
-                T = null,
-                f = e => {
-                    E = (0, l.cloneDeep)(e);
+            var s, a, o, l, u = n("392711"),
+                d = n("442837"),
+                _ = n("570140");
+            let c = [],
+                E = !1;
+            let I = c,
+                T = {},
+                f = null;
+            let S = 0,
+                h = e => {
+                    I = (0, u.cloneDeep)(e);
                     let t = {};
-                    E.forEach(e => {
+                    I.forEach(e => {
                         t[e.id] = e
-                    }), I = t
+                    }), T = t
                 };
-            class S extends(o = u.default.Store) {
+            class A extends(l = d.default.Store) {
                 get isFetching() {
-                    return c
+                    return E
                 }
                 get fetchError() {
                     return i
                 }
                 get profileEffects() {
-                    return E
+                    return I
                 }
                 get tryItOutId() {
-                    return T
+                    return f
+                }
+                canFetch() {
+                    return null == r || Date.now() >= r
+                }
+                hasFetched() {
+                    return null != r && null == i
                 }
                 getProfileEffectById(e) {
-                    return null != e ? I[e] : void 0
+                    return null != e ? T[e] : void 0
                 }
             }
-            a = "ProfileEffectStore", (s = "displayName") in(r = S) ? Object.defineProperty(r, s, {
-                value: a,
+            o = "ProfileEffectStore", (a = "displayName") in(s = A) ? Object.defineProperty(s, a, {
+                value: o,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : r[s] = a, t.default = new S(d.default, {
+            }) : s[a] = o, t.default = new A(_.default, {
                 USER_PROFILE_EFFECTS_FETCH: () => {
-                    c = !0
+                    E = !0
                 },
                 USER_PROFILE_EFFECTS_FETCH_SUCCESS: e => {
                     let {
                         profileEffects: t
                     } = e;
-                    c = !1, f(0 === t.length ? _ : t)
+                    E = !1, i = void 0, r = Date.now() + 3e5, S = 0, h(0 === t.length ? c : t)
                 },
                 USER_PROFILE_EFFECTS_FETCH_FAILURE: e => {
                     let {
                         error: t
                     } = e;
-                    c = !1, i = t, f(_)
+                    E = !1, i = t, r = Date.now() + Math.min(6e4 * 2 ** S, 36e5), ++S, h(c)
                 },
                 PROFILE_EFFECTS_SET_TRY_IT_OUT: e => {
                     let {
                         id: t
                     } = e;
-                    T = t
+                    f = t
                 },
                 LOGOUT: e => {
-                    c = !1, f(_), T = null
+                    E = !1, h(c), f = null
                 }
             })
         },
@@ -173670,33 +173677,6 @@
                 }
             }
         },
-        996678: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return o
-                },
-                getOrFetchProfileEffects: function() {
-                    return l
-                }
-            });
-            var i = n("470079"),
-                r = n("442837"),
-                s = n("365943"),
-                a = n("25251");
-
-            function o() {
-                let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-                return i.useEffect(() => {
-                    (0, s.fetchUserProfileEffects)(e)
-                }, [e]), (0, r.useStateFromStores)([a.default], () => a.default.profileEffects)
-            }
-
-            function l() {
-                let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-                return (0, s.fetchUserProfileEffects)(e), a.default.profileEffects
-            }
-        },
         293335: function(e, t, n) {
             "use strict";
             n.r(t), n("47120"), n("724458"), n("653041");
@@ -173715,27 +173695,52 @@
                 }
             }
         },
+        731896: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                useProfileEffectPreset: function() {
+                    return o
+                }
+            });
+            var i = n("470079"),
+                r = n("442837"),
+                s = n("365943"),
+                a = n("25251");
+            let o = e => {
+                let t = (0, r.useStateFromStores)([a.default], () => a.default.getProfileEffectById(e)),
+                    n = null != t;
+                return i.useEffect(() => {
+                    null != e && !n && (0, s.fetchUserProfileEffects)(!0)
+                }, [e, n]), t
+            }
+        },
         607789: function(e, t, n) {
             "use strict";
             n.r(t), n("47120"), n("724458");
             var i = n("470079"),
-                r = n("25251"),
-                s = n("996678");
+                r = n("442837"),
+                s = n("25251"),
+                a = n("731896");
             t.default = e => {
-                let [t, n] = i.useState(e), [a, o] = i.useState(r.default.getProfileEffectById(e)), l = null == r.default.getProfileEffectById(e) && null != e, u = i.useMemo(() => (0, s.getOrFetchProfileEffects)(l), [l]), d = u.reduce((t, n, i) => (n.id === e && (t = i), t), 0), [, _] = i.useState(d), c = i.useRef(d);
+                let [t, n] = i.useState(e), [o, l] = i.useState(s.default.getProfileEffectById(e));
+                (0, a.useProfileEffectPreset)(e);
+                let u = (0, r.useStateFromStores)([s.default], () => s.default.profileEffects),
+                    d = u.reduce((t, n, i) => (n.id === e && (t = i), t), 0),
+                    [, _] = i.useState(d),
+                    c = i.useRef(d);
                 return i.useEffect(() => {
-                    n(e), o(r.default.getProfileEffectById(e))
+                    n(e), l(s.default.getProfileEffectById(e))
                 }, [e, u]), {
                     increment: () => {
                         let e = (c.current + 1) % u.length;
-                        c.current = e, _(e), n(u[e].id), o(u[e])
+                        c.current = e, _(e), n(u[e].id), l(u[e])
                     },
                     decrement: () => {
                         let e = 0 === c.current ? u.length - 1 : c.current - 1;
-                        c.current = e, _(e), n(u[e].id), o(u[e])
+                        c.current = e, _(e), n(u[e].id), l(u[e])
                     },
                     id: t,
-                    preset: a
+                    preset: o
                 }
             }
         },
@@ -193862,7 +193867,7 @@
                 r = n("232567"),
                 s = n("220082"),
                 a = n("275759"),
-                o = n("996678"),
+                o = n("365943"),
                 l = n("592125"),
                 u = n("271383"),
                 d = n("621853"),
@@ -193879,7 +193884,7 @@
                     channelId: N
                 } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
                 if ("" === e) return;
-                (0, o.getOrFetchProfileEffects)(), null != t && (0, s.maybeFetchColors)(t), null != m && !T && (T = !0), null != m && (I = null !== (c = null === (n = (0, a.getVisibleConnectionsRole)({
+                (0, o.fetchUserProfileEffects)(), null != t && (0, s.maybeFetchColors)(t), null != m && !T && (T = !0), null != m && (I = null !== (c = null === (n = (0, a.getVisibleConnectionsRole)({
                     guildMember: u.default.getMember(m, e),
                     channel: l.default.getChannel(N)
                 })) || void 0 === n ? void 0 : n.id) && void 0 !== c ? c : void 0);
@@ -196585,7 +196590,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 DEFAULT_COLLECTIBLES_UPSELL_HEIGHT: function() {
-                    return M
+                    return v
                 }
             }), n("47120"), n("627341");
             var i = n("735250"),
@@ -196604,41 +196609,40 @@
                 f = n("335131"),
                 S = n("597688"),
                 h = n("884697"),
-                A = n("25251"),
-                m = n("996678"),
-                N = n("594174"),
-                O = n("465670"),
-                p = n("74538"),
-                R = n("436478"),
-                C = n("921944"),
-                g = n("689938"),
-                L = n("617538"),
-                D = n("174492");
+                A = n("731896"),
+                m = n("594174"),
+                N = n("465670"),
+                O = n("74538"),
+                p = n("436478"),
+                R = n("921944"),
+                C = n("689938"),
+                g = n("617538"),
+                L = n("174492");
 
-            function v(e) {
+            function D(e) {
                 let {
                     onClick: t
                 } = e;
                 return (0, i.jsx)(u.Clickable, {
-                    className: L.closeButton,
+                    className: g.closeButton,
                     onClick: t,
-                    "aria-label": g.default.Messages.DISMISS,
-                    children: (0, i.jsx)(O.default, {
-                        className: L.closeIcon,
+                    "aria-label": C.default.Messages.DISMISS,
+                    children: (0, i.jsx)(N.default, {
+                        className: g.closeIcon,
                         width: 18,
                         height: 18
                     })
                 })
             }
-            let M = 76,
-                y = e => (0, i.jsx)(u.Text, {
+            let v = 76,
+                M = e => (0, i.jsx)(u.Text, {
                     variant: "text-sm/normal",
                     color: "text-normal",
                     tag: "span",
-                    className: L.ctaLink,
+                    className: g.ctaLink,
                     children: e
                 }),
-                P = e => {
+                y = e => {
                     let {
                         user: t,
                         onClick: n
@@ -196649,11 +196653,11 @@
                         size: (0, I.getDecorationSizeForAvatarSize)(u.AvatarSizes.SIZE_48)
                     });
                     return (0, i.jsx)(u.Clickable, {
-                        className: L.avatarButton,
+                        className: g.avatarButton,
                         onClick: n,
-                        "aria-label": g.default.Messages.COLLECTIBLES_CTA_GO_TO_SHOP,
+                        "aria-label": C.default.Messages.COLLECTIBLES_CTA_GO_TO_SHOP,
                         children: (0, i.jsx)(u.Avatar, {
-                            src: D,
+                            src: L,
                             avatarDecoration: r,
                             size: u.AvatarSizes.SIZE_48,
                             "aria-hidden": !0
@@ -196667,86 +196671,84 @@
                     displayProfile: s,
                     onClose: I,
                     onDismiss: T,
-                    isInSidebar: O = !1,
-                    canShowAvatarDecorationUpsell: D = !1,
-                    canShowProfileEffectUpsell: U = !1,
-                    upsellSource: b
+                    isInSidebar: N = !1,
+                    canShowAvatarDecorationUpsell: L = !1,
+                    canShowProfileEffectUpsell: P = !1,
+                    upsellSource: U
                 } = e, {
-                    analyticsLocations: G
-                } = (0, E.default)(c.default.COLLECTIBLES_USER_POPOUT_UPSELL), w = (0, l.useStateFromStores)([_.default], () => _.default.useReducedMotion), {
-                    ref: k,
-                    height: B
-                } = (0, d.default)(), V = r.useMemo(() => ({
-                    top: "-".concat((null != B ? B : M) + 6, "px")
-                }), [B]), F = (0, l.useStateFromStores)([N.default], () => N.default.getCurrentUser()), x = p.default.canUseCollectibles(F), {
-                    setUpsellSource: H,
-                    reset: Y
-                } = (0, R.useUserPopoutCollectiblesUpsellStore)();
-                r.useEffect(() => (H(b), () => {
-                    Y()
-                }), [H, b, Y]);
-                let j = (0, l.useStateFromStores)([A.default], () => A.default.getProfileEffectById(null == s ? void 0 : s.profileEffectId)),
-                    W = null != j;
-                r.useEffect(() => {
-                    !W && (0, m.getOrFetchProfileEffects)(!0)
-                }, [W]);
-                let [K, z] = (0, l.useStateFromStoresArray)([S.default], () => {
-                    var e;
-                    return [(0, h.isPremiumCollectiblesProduct)(S.default.getProduct(null === (e = n.avatarDecoration) || void 0 === e ? void 0 : e.skuId)), (0, h.isPremiumCollectiblesProduct)(S.default.getProduct(null == j ? void 0 : j.skuId))]
-                }), X = r.useCallback(() => {
-                    var e, t, i, r;
-                    null == T || T(C.ContentDismissActionType.PRIMARY), null == I || I(), (0, f.openCollectiblesShop)({
-                        analyticsLocations: G,
-                        analyticsSource: c.default.COLLECTIBLES_USER_POPOUT_UPSELL,
-                        initialProductSkuId: K ? null !== (i = null == j ? void 0 : j.skuId) && void 0 !== i ? i : null === (e = n.avatarDecoration) || void 0 === e ? void 0 : e.skuId : null !== (r = null === (t = n.avatarDecoration) || void 0 === t ? void 0 : t.skuId) && void 0 !== r ? r : null == j ? void 0 : j.skuId
-                    })
-                }, [T, I, G, null == j ? void 0 : j.skuId, null === (t = n.avatarDecoration) || void 0 === t ? void 0 : t.skuId, K]), Q = r.useCallback(() => {
-                    null == T || T(C.ContentDismissActionType.DISMISS)
-                }, [T]);
-                if (!D && !U) return null;
-                let q = (0, o.match)([D, U]).with([!0, !0], () => K && z && x ? g.default.Messages.COMBINED_STARTER_COLLECTIBLES_SOCIAL_UPSELL_NITRO.format({
-                    openShop: y
-                }) : K && z ? g.default.Messages.COMBINED_STARTER_COLLECTIBLES_SOCIAL_UPSELL_NON_NITRO.format({
-                    openShop: y
-                }) : g.default.Messages.COMBINED_COLLECTIBLES_SOCIAL_UPSELL.format({
-                    openShop: y
-                })).with([!0, !1], () => K && x ? g.default.Messages.STARTER_AVATAR_DECORATIONS_SOCIAL_UPSELL_NITRO.format({
-                    openShop: y
-                }) : g.default.Messages.AVATAR_DECORATIONS_SOCIAL_UPSELL.format({
-                    openShop: y
-                })).with([!1, !0], () => z && x ? g.default.Messages.STARTER_PROFILE_EFFECTS_SOCIAL_UPSELL_NITRO.format({
-                    openShop: y
-                }) : (z && g.default.Messages.STARTER_PROFILE_EFFECTS_SOCIAL_UPSELL_NON_NITRO.format({
-                    openShop: y
-                }), g.default.Messages.PROFILE_EFFECTS_SOCIAL_UPSELL.format({
-                    openShop: y
+                    analyticsLocations: b
+                } = (0, E.default)(c.default.COLLECTIBLES_USER_POPOUT_UPSELL), G = (0, l.useStateFromStores)([_.default], () => _.default.useReducedMotion), {
+                    ref: w,
+                    height: k
+                } = (0, d.default)(), B = r.useMemo(() => ({
+                    top: "-".concat((null != k ? k : v) + 6, "px")
+                }), [k]), V = (0, l.useStateFromStores)([m.default], () => m.default.getCurrentUser()), F = O.default.canUseCollectibles(V), {
+                    setUpsellSource: x,
+                    reset: H
+                } = (0, p.useUserPopoutCollectiblesUpsellStore)();
+                r.useEffect(() => (x(U), () => {
+                    H()
+                }), [x, U, H]);
+                let Y = (0, A.useProfileEffectPreset)(null == s ? void 0 : s.profileEffectId),
+                    [j, W] = (0, l.useStateFromStoresArray)([S.default], () => {
+                        var e;
+                        return [(0, h.isPremiumCollectiblesProduct)(S.default.getProduct(null === (e = n.avatarDecoration) || void 0 === e ? void 0 : e.skuId)), (0, h.isPremiumCollectiblesProduct)(S.default.getProduct(null == Y ? void 0 : Y.skuId))]
+                    }),
+                    K = r.useCallback(() => {
+                        var e, t, i, r;
+                        null == T || T(R.ContentDismissActionType.PRIMARY), null == I || I(), (0, f.openCollectiblesShop)({
+                            analyticsLocations: b,
+                            analyticsSource: c.default.COLLECTIBLES_USER_POPOUT_UPSELL,
+                            initialProductSkuId: j ? null !== (i = null == Y ? void 0 : Y.skuId) && void 0 !== i ? i : null === (e = n.avatarDecoration) || void 0 === e ? void 0 : e.skuId : null !== (r = null === (t = n.avatarDecoration) || void 0 === t ? void 0 : t.skuId) && void 0 !== r ? r : null == Y ? void 0 : Y.skuId
+                        })
+                    }, [T, I, b, null == Y ? void 0 : Y.skuId, null === (t = n.avatarDecoration) || void 0 === t ? void 0 : t.skuId, j]),
+                    z = r.useCallback(() => {
+                        null == T || T(R.ContentDismissActionType.DISMISS)
+                    }, [T]);
+                if (!L && !P) return null;
+                let X = (0, o.match)([L, P]).with([!0, !0], () => j && W && F ? C.default.Messages.COMBINED_STARTER_COLLECTIBLES_SOCIAL_UPSELL_NITRO.format({
+                    openShop: M
+                }) : j && W ? C.default.Messages.COMBINED_STARTER_COLLECTIBLES_SOCIAL_UPSELL_NON_NITRO.format({
+                    openShop: M
+                }) : C.default.Messages.COMBINED_COLLECTIBLES_SOCIAL_UPSELL.format({
+                    openShop: M
+                })).with([!0, !1], () => j && F ? C.default.Messages.STARTER_AVATAR_DECORATIONS_SOCIAL_UPSELL_NITRO.format({
+                    openShop: M
+                }) : C.default.Messages.AVATAR_DECORATIONS_SOCIAL_UPSELL.format({
+                    openShop: M
+                })).with([!1, !0], () => W && F ? C.default.Messages.STARTER_PROFILE_EFFECTS_SOCIAL_UPSELL_NITRO.format({
+                    openShop: M
+                }) : (W && C.default.Messages.STARTER_PROFILE_EFFECTS_SOCIAL_UPSELL_NON_NITRO.format({
+                    openShop: M
+                }), C.default.Messages.PROFILE_EFFECTS_SOCIAL_UPSELL.format({
+                    openShop: M
                 }))).otherwise(() => null);
                 return (0, i.jsx)("div", {
-                    style: V,
-                    className: a()(L.containerWrapper, {
-                        [L.animation]: !w,
-                        [L.inSidebar]: O
+                    style: B,
+                    className: a()(g.containerWrapper, {
+                        [g.animation]: !G,
+                        [g.inSidebar]: N
                     }),
-                    ref: k,
+                    ref: w,
                     children: (0, i.jsxs)("div", {
-                        className: L.container,
-                        children: [D && (0, i.jsx)(P, {
+                        className: g.container,
+                        children: [L && (0, i.jsx)(y, {
                             user: n,
-                            onClick: X
+                            onClick: K
                         }), (0, i.jsx)(u.Clickable, {
-                            className: D ? L.contentWithAvatar : L.content,
-                            onClick: X,
-                            "aria-label": g.default.Messages.COLLECTIBLES_CTA_GO_TO_SHOP,
+                            className: L ? g.contentWithAvatar : g.content,
+                            onClick: K,
+                            "aria-label": C.default.Messages.COLLECTIBLES_CTA_GO_TO_SHOP,
                             children: (0, i.jsx)(u.Text, {
                                 variant: "text-sm/normal",
                                 color: "text-normal",
                                 tag: "span",
-                                children: q
+                                children: X
                             })
                         }), (0, i.jsx)("div", {
-                            className: L.buttons,
-                            children: (0, i.jsx)(v, {
-                                onClick: Q
+                            className: g.buttons,
+                            children: (0, i.jsx)(D, {
+                                onClick: z
                             })
                         })]
                     })
@@ -231682,7 +231684,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8b4ebeccc947b7a51a92fc7418e5815d0bf1b47c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "618a8a31fd32cea33f32b48137b45c79a79c44a6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257778,7 +257780,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280089"
+                                build_number: "280100"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264923,7 +264925,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280089", "280089"), 10);
+                let s = parseInt((n = "280100", "280100"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291705,4 +291707,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.a16588f977bbde47f544.js.map
+//# sourceMappingURL=24321.1d31174a4d479492c6ed.js.map
