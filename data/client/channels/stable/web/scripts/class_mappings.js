@@ -3252,10 +3252,7 @@
                 backIcon: "backIcon_d1658d",
                 clickable: "clickable_c2a872",
                 closeContent: "closeContent__42d26",
-                closeContentMobile: "closeContentMobile__3a00f",
-                closeContentNotMobile: "closeContentNotMobile_dcb2cf",
                 closeIcon: "closeIcon__235bd",
-                closeIconNotMobile: "closeIconNotMobile__82a4e",
                 closeWrapper: "closeWrapper__06665",
                 content: "content__4353f",
                 developerResources: "developerResources__8ef1d",
@@ -24436,11 +24433,13 @@
             "use strict";
             e.exports = {
                 recentGameContainer: "recentGameContainer__8231a",
+                recentGameDetails: "recentGameDetails_fa472d",
                 recentGameIcon: "recentGameIcon__65d60",
-                recentGameName: "recentGameName_f79fae",
-                recentGameTextContainer: "recentGameTextContainer_bb26a9",
+                recentGameTitle: "recentGameTitle__9adac",
+                recentGameTitleContainer: "recentGameTitleContainer_bd3ae5",
                 recentGames: "recentGames_e4425b",
-                recentGamesHeading: "recentGamesHeading_bb152b"
+                recentGamesHeading: "recentGamesHeading_bb152b",
+                sharedGameIcon: "sharedGameIcon__45b1e"
             }
         },
         312916: function(e) {
