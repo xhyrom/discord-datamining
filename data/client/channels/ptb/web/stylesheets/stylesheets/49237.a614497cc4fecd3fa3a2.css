@@ -25789,15 +25789,15 @@ span.button_ae40a4.disabled__1dc58 {
 
 .emailVerificationModal_a12ecf .title_de0f4f {
     font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 1.875rem;
+    font-size: 24px;
+    line-height: 30px;
     margin-top: 100px;
     color: var(--header-primary)
 }
 
 .emailVerificationModal_a12ecf .body_fe5b0e {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center;
     color: var(--header-secondary)
 }
@@ -28179,4 +28179,4 @@ span.button_ae40a4.disabled__1dc58 {
     }
 }
 
-/*# sourceMappingURL=49237.88978fd45f81fd0a6f6a.css.map*/
+/*# sourceMappingURL=49237.a614497cc4fecd3fa3a2.css.map*/
