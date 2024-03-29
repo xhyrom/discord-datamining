@@ -36599,7 +36599,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("279943", ", Version Hash: ").concat("5dcd17a56744340b855ab9eb26dbcef5e4646010")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280008", ", Version Hash: ").concat("f1e6efeefaedbc11f9e0fde8351e38a7bc0a126e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -43647,6 +43647,7 @@
                 KEYBIND_DESCRIPTION_MODAL_SEARCH_EMOJIS: "Toggle emoji picker",
                 KEYBIND_DESCRIPTION_MODAL_SEARCH_GIFS: "Toggle GIF picker",
                 KEYBIND_DESCRIPTION_MODAL_SEARCH_STICKERS: "Toggle sticker picker",
+                KEYBIND_DESCRIPTION_MODAL_SEARCH_SOUNDBOARD: "Toggle soundboard",
                 KEYBIND_DESCRIPTION_MODAL_TOGGLE_HELP: "Get help",
                 KEYBIND_DESCRIPTION_MODAL_EASTER_EGG: "Raging Demon",
                 KEYBIND_DESCRIPTION_MODAL_SEARCH: "Search",
@@ -85494,8 +85495,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "279943", "279943"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("279943")), t = 0), t
+                let t = parseInt((e = "280008", "280008"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280008")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107476,8 +107477,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "279943",
-                    versionHash: "5dcd17a56744340b855ab9eb26dbcef5e4646010"
+                    buildNumber: "280008",
+                    versionHash: "f1e6efeefaedbc11f9e0fde8351e38a7bc0a126e"
                 }
             }
             n.r(t), n.d(t, {
@@ -157691,8 +157692,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711736281484",
-                                    build_number: "279943"
+                                    built_at: "1711742051706",
+                                    build_number: "280008"
                                 }
                             },
                             retries: 1
@@ -231673,7 +231674,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5dcd17a56744340b855ab9eb26dbcef5e4646010"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f1e6efeefaedbc11f9e0fde8351e38a7bc0a126e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257741,7 +257742,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "279943"
+                                build_number: "280008"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264886,7 +264887,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "279943", "279943"), 10);
+                let s = parseInt((n = "280008", "280008"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291668,4 +291669,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.0ecf9633c324e5bdc6f1.js.map
+//# sourceMappingURL=24321.e58e3f21f61a578439b7.js.map

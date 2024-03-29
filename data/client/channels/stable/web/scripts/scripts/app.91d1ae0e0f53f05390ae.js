@@ -1549,7 +1549,7 @@
                 viewAllNitroGames: "viewAllNitroGames_a65ce4"
             }
         },
-        523147: function(e) {
+        982179: function(e) {
             "use strict";
             e.exports = {
                 active: "active__92ae1",
@@ -21831,7 +21831,6 @@
                 contentInteractable: "contentInteractable__7fcbe",
                 cta: "cta_f68ce1",
                 ctaClaimReward: "ctaClaimReward_c270ed",
-                ctaWrapper: "ctaWrapper__3c52c",
                 description: "description__1e87a",
                 details: "details__6dee9",
                 heroAsset: "heroAsset__7f31f",

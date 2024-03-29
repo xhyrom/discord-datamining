@@ -63487,11 +63487,6 @@ html .progress__00e29 {
     top: 0
 }
 
-.ctaWrapper__3c52c {
-    flex: 0 0 auto;
-    padding-top: 8px
-}
-
 .heroAssetWrapper__5208a {
     border-radius: 8px 8px 0 0;
     overflow: hidden;
@@ -63529,6 +63524,8 @@ html .progress__00e29 {
 .cta_f68ce1 {
     background-color: hsl(var(--black-500-hsl)/.2);
     color: var(--white-500);
+    flex: 0 0 auto;
+    margin-top: 8px;
     padding-bottom: 4px;
     padding-top: 4px;
     transition: background-color.125s
@@ -131168,4 +131165,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.db9e12333f5533b28e01.css.map*/
+/*# sourceMappingURL=99387.03f675fb641f80563472.css.map*/
