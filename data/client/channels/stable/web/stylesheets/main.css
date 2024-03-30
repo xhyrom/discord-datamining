@@ -20930,9 +20930,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .container_e6561b {
-    padding-top: 12px;
-    padding-left: 12px;
-    padding-right: 12px
+    padding: 12px 12px 0
 }
 
 .section__7cf21 {
@@ -20951,8 +20949,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 .container_f63223 {
     display: flex;
     align-items: center;
-    padding-left: 12px;
-    padding-right: 12px
+    padding: 12px 12px 0
 }
 
 .spinnerContainer__9d60e {
@@ -20976,9 +20973,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 .container_b222f4 {
     display: flex;
     justify-content: space-between;
-    padding-top: 12px;
-    padding-right: 12px;
-    padding-left: 12px
+    padding: 12px 12px 0
 }
 
 .copiableField_ae045a {
@@ -21083,6 +21078,10 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     margin-bottom: 2px !important;
     display: inline-flex;
     line-height: 15px
+}
+
+.paddingBottom__9c272 {
+    padding-bottom: 12px
 }
 
 .auditLog_d27c92 {
@@ -56948,11 +56947,23 @@ html .progress__00e29 {
     background: var(--bg-overlay-2, var(--background-secondary))
 }
 
-.container__699bf {
+.modal_f49d0b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-surface-overlay);
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 20px
+}
+
+.modalContents_e19dbf {
+    position: relative;
     display: flex;
     flex-direction: row;
-    background-color: var(--bg-surface-overlay);
-    height: 100%
+    max-width: 1600px;
+    height: 100%;
+    flex: 1
 }
 
 .closeButton_e88b7d {
@@ -56966,7 +56977,8 @@ html .progress__00e29 {
     display: flex;
     flex-direction: column;
     padding: 80px 60px 60px;
-    flex: 1
+    flex: 1;
+    border-right: 1px solid var(--border-subtle)
 }
 
 .modalContent__2b13e {
@@ -57013,7 +57025,6 @@ html .progress__00e29 {
 
 .overviewSidebar__995aa {
     display: flex;
-    border-left: 1px solid var(--border-subtle);
     box-sizing: border-box;
     width: 380px;
     flex-shrink: 0;
@@ -57026,7 +57037,7 @@ html .progress__00e29 {
     top: 24px;
     left: 36px;
     right: 52px;
-    bottom: 24px;
+    bottom: 48px;
     background-color: var(--background-secondary);
     border-radius: 20px
 }
@@ -57092,7 +57103,7 @@ html .progress__00e29 {
 }
 
 .overviewSidebarContent_b8b257 {
-    padding: 100px 76px 160px 64px;
+    padding: 100px 76px 148px 64px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -57127,6 +57138,10 @@ html .progress__00e29 {
     right: 24px
 }
 
+.capitalize__50f8e {
+    text-transform: uppercase
+}
+
 .header__05198 {
     max-width: 480px;
     text-align: center
@@ -57147,7 +57162,68 @@ html .progress__00e29 {
     flex-shrink: 0;
     box-sizing: border-box;
     border-left: 1px solid transparent;
-    min-height: 200px
+    min-height: 200px;
+    height: 100%
+}
+
+.signTextLeft__88879 {
+    padding-left: 120px
+}
+
+.signTextRight_babb62 {
+    align-self: flex-end;
+    padding-bottom: 120px
+}
+
+.signButton__6f375 {
+    margin-bottom: 8px
+}
+
+.signButton__6f375:before {
+    content: "";
+    position: absolute;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 12px solid var(--brand-experiment);
+    left: -11px;
+    transition: border-color var(--custom-button-transition-duration)ease
+}
+
+.signButton__6f375:hover:before,
+.signButton__6f375:active:before {
+    border-right: 12px solid var(--brand-experiment-560)
+}
+
+.clickable_b41429 {
+    cursor: pointer
+}
+
+.fadeIn__0663f {
+    animation: fadeIn__0663f.5s
+}
+
+.fadeOut_de0df3 {
+    animation: fadeOut_de0df3.5s
+}
+
+@keyframes fadeIn__0663f {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeOut_de0df3 {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
 }
 
 .slideContent__6ae94 {
@@ -131165,4 +131241,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.03f675fb641f80563472.css.map*/
+/*# sourceMappingURL=99387.189dfabda15b8c160918.css.map*/
