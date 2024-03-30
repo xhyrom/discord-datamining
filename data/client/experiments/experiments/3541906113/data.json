@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-03_content_inventory_memberlist_and_ranker",
+    "label": "Enables the memberlist content feed",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Recency",
+      "Treatment 2: Heuristic"
+    ],
+    "hash": 3541906113,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-02_v1_content_inventory_feed",
-    "label": "V1 Feed of the content inventory",
+    "id": "2024-03_content_inventory_ranker_client_dummy",
+    "label": "Tracks exposure for which ranker bucket the user is in. This is here to test an exposure bug",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Show feed"
+      "Treatment 1: Heuristic"
     ],
-    "hash": 1747551262,
+    "hash": 826622459,
     "buckets": [
       -1,
       0,
