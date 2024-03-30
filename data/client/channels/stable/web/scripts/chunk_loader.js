@@ -1,9 +1,9 @@
 ! function() {
     var e, r = {
-            926064: function(e, r, n) {
+            972778: function(e, r, n) {
                 "use strict";
                 n.r(r);
-                var t = n("399039");
+                var t = n("25779");
                 window.DiscordSentry = (0, t.initSentry)()
             }
         },
@@ -108,9 +108,9 @@
             n = this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || [];
         n.forEach(r.bind(null, 0)), n.push = r.bind(null, n.push.bind(n))
     }();
-    var o = t.O(void 0, ["72474", "48375"], function() {
-        return t("926064")
+    var o = t.O(void 0, ["24217", "62734", "43455", "84471"], function() {
+        return t("972778")
     });
     t.O(o)
 }();
-//# sourceMappingURL=sentry.6bd5bc35ff461f4d2eb5.js.map
+//# sourceMappingURL=sentry.765b00e66783ff42fca1.js.map
