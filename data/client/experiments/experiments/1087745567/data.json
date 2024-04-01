@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-04_genshin_admin_signup",
+    "label": "Genshin Admin Signup",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show admin signup"
+    ],
+    "hash": 1087745567,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
