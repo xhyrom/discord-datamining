@@ -10197,6 +10197,8 @@
                 content: "content__40726",
                 description: "description_e091f8",
                 listControls: "listControls__994a8",
+                previewContainer: "previewContainer_e43d4c",
+                previewIcon: "previewIcon__0609a",
                 sortSelect: "sortSelect__1119c"
             }
         },
@@ -21037,8 +21039,11 @@
                 button: "button_f03392",
                 buttonContainer: "buttonContainer__6fc2d",
                 container: "container__66d36",
+                containerV2: "containerV2_a465d3",
                 content: "content_efdb3b",
+                contentV2: "contentV2_bceabf",
                 headerArt: "headerArt__63edd",
+                headerArtV2: "headerArtV2_dc35ff",
                 hidden: "hidden__174b8",
                 trialPill: "trialPill_fe4ced"
             }
@@ -21149,7 +21154,8 @@
                 perksDiscoverability: "perksDiscoverability__052be",
                 seeAllPerksButton: "seeAllPerksButton_bfef1d",
                 seeAllPerksButtonContent: "seeAllPerksButtonContent__33cad",
-                whatsNew: "whatsNew__36d59"
+                whatsNew: "whatsNew__36d59",
+                whatsNewWithOriginalHeroHeading: "whatsNewWithOriginalHeroHeading__3c219"
             }
         },
         518400: function(e) {
@@ -24919,6 +24925,12 @@
                 coachmark: "coachmark__9fcc0"
             }
         },
+        592145: function(e) {
+            "use strict";
+            e.exports = {
+                settingsItemHighlight: "settingsItemHighlight__56a67"
+            }
+        },
         531471: function(e) {
             "use strict";
             e.exports = {
@@ -25274,6 +25286,7 @@
                 list: "list__1b9fb",
                 requestNote: "requestNote__7fd48",
                 requestNoteColor: "requestNoteColor__23149",
+                settingsBackgroundFlashElement: "settingsBackgroundFlashElement__93672",
                 settingsTabBar: "settingsTabBar_c54406",
                 settingsTabBarItem: "settingsTabBarItem__94457",
                 status: "status__58720"
