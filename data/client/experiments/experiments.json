@@ -5950,7 +5950,6 @@
       "overrides": {
         "0": [
           "974519864045756446",
-          "662267976984297473",
           "522681957373575168",
           "884849473329692723",
           "170995199584108546",
@@ -5971,7 +5970,8 @@
           "1200301401499254895",
           "720413206400598017",
           "964645662866173972",
-          "1134431679730159678"
+          "1134431679730159678",
+          "662267976984297473"
         ]
       },
       "overrides_formatted": [
@@ -9484,15 +9484,13 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Show Profile Mutuals (Friends/Guilds) - Compact",
-        "Treatment 2: Show Profile Mutuals (Friends/Guilds) - Full Lines"
+        "Treatment 1: Show Profile Mutuals (Friends/Guilds)"
       ],
       "hash": 3478646609,
       "buckets": [
         -1,
         0,
-        1,
-        2
+        1
       ],
       "holdout": {},
       "aa_mode": false,
