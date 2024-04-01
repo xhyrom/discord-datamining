@@ -36623,7 +36623,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280261", ", Version Hash: ").concat("d524d74c46d6ce31d82050a9904ff3be25d38f43")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280265", ", Version Hash: ").concat("51944bbffbf5bc1d490164ac5bc90cf0c1d99f28")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -39531,6 +39531,7 @@
                 MEMBER_VERIFICATION_APPLICATION_CONFIRMATION_TITLE_WITH_GUILD_NAME: "Your application to join {guildName} is awaiting review!",
                 MEMBER_VERIFICATION_APPLICATION_CONFIRMATION_SUBTITLE: "You'll get notified when there's an update.",
                 MEMBER_VERIFICATION_CANCEL_APPLICATION: "Withdraw Application",
+                MEMBER_VERIFICATION_WITHDRAW_APPLICATION_CONFIRMATION: "Are you sure you want to withdraw your application from **!!{name}!!**?",
                 MEMBER_VERIFICATION_DISABLE_CONFIRM_TITLE: "There are still pending members that haven't passed your screen.",
                 MEMBER_VERIFICATION_DISABLE_CONFIRM_BODY: "Before you can disable Member Requirements, you have to either approve or kick all pending members. Approved members will still have to verify their email or phone (based on your Verification Level) to talk.",
                 MEMBER_VERIFICATION_DISABLE_CONFIRM_APPROVE_ALL: "Approve All",
@@ -47805,7 +47806,7 @@
                 MEMBER_VERIFICATION_APPLICATION_REJECTED_REASON: "Reason:",
                 MEMBER_VERIFICATION_APPLICATION_REAPPLY: "Reapply",
                 MEMBER_VERIFICATION_APPLICATION_REJECTED_ICON: "Stylized image of a clipboard with an X",
-                MEMBER_VERIFICATION_FOLDER_NAME: "Pending Join Requests",
+                MEMBER_VERIFICATION_FOLDER_NAME: "Pending Applications",
                 MEMBER_VERIFICATION_CONFIRM_LEAVE_TITLE: "Are you sure?",
                 MEMBER_VERIFICATION_ICON_DESC: "Server Application Status",
                 MEMBER_VERIFICATION_WARNING_UPDATE_MODAL_TITLE: "You need to update your app to join this server.",
@@ -85535,8 +85536,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280261", "280261"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280261")), t = 0), t
+                let t = parseInt((e = "280265", "280265"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280265")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107533,8 +107534,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280261",
-                    versionHash: "d524d74c46d6ce31d82050a9904ff3be25d38f43"
+                    buildNumber: "280265",
+                    versionHash: "51944bbffbf5bc1d490164ac5bc90cf0c1d99f28"
                 }
             }
             n.r(t), n.d(t, {
@@ -157748,8 +157749,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711978255235",
-                                    build_number: "280261"
+                                    built_at: "1711982946351",
+                                    build_number: "280265"
                                 }
                             },
                             retries: 1
@@ -231704,7 +231705,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d524d74c46d6ce31d82050a9904ff3be25d38f43"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "51944bbffbf5bc1d490164ac5bc90cf0c1d99f28"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257800,7 +257801,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280261"
+                                build_number: "280265"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264945,7 +264946,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280261", "280261"), 10);
+                let s = parseInt((n = "280265", "280265"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291727,4 +291728,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.f6b40a315670179f959d.js.map
+//# sourceMappingURL=24321.51ba4c7ee25336165942.js.map
