@@ -57919,7 +57919,7 @@ html .progress__00e29 {
 }
 
 .tooltipContainer__92298 {
-    padding: 4px;
+    padding: 8px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -57937,6 +57937,13 @@ html .progress__00e29 {
 
 .tooltip_ba9b5f {
     max-width: 220px
+}
+
+.tooltipContent__02017 {
+    padding: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, .4)
 }
 
 .pill__357e7 {
@@ -122559,7 +122566,7 @@ div.nagbar_c731ff {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 420px
+    width: 480px
 }
 
 .question_b664d3 {
@@ -131403,4 +131410,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d1049a6467fdfeb6903b.css.map*/
+/*# sourceMappingURL=99387.f7a643907f4aa14328e9.css.map*/
