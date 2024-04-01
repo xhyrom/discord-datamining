@@ -2613,7 +2613,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-2043e2abf388014d6753ccdfd0fcd32328c804ca",
+                    release: "discord_web-942bc0a49fbcc042231b77b5aa1916d2f782407b",
                     beforeSend: _ => {
                         var E, e;
                         return !(null != (E = _).exception && null != E.exception.values && E.exception.values.every(_ => null == _.stacktrace || null != _.stacktrace.frames && 1 === _.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || a.some(_ => window.navigator.appVersion.toLowerCase().indexOf(_) >= 0)) && !R() && !("Aborted" === (e = _).message || "cancel captcha" === e.message) && t() ? _ : null
@@ -2631,7 +2631,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), I.setTag("buildNumber", (_ = "280378", "280378")), I.setTag("builtAt", String("1711994699547"));
+                }), I.setTag("buildNumber", (_ = "280393", "280393")), I.setTag("builtAt", String("1711995632846"));
                 let E = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != E && "object" == typeof E)
                     for (let _ in E) I.setTag(_, E[_]);
@@ -2640,10 +2640,10 @@
         },
         526761: function(_, E, e) {
             "use strict";
-            var I, o, a, R, t, A, T, r, N, i, c, O, n, L, D;
+            var I, o, a, R, t, A, T, r, N, i, c, O, n, L, D, S, C;
             e.r(E), e.d(E, {
                 APPLICATION_SUBSCRIPTION_SUBSECTION: function() {
-                    return s
+                    return M
                 },
                 AccessibilityScrollPositions: function() {
                     return R
@@ -2652,19 +2652,22 @@
                     return o
                 },
                 ChangeEmailSteps: function() {
-                    return r
+                    return N
                 },
                 ChannelNotificationSettingsFlags: function() {
-                    return G
+                    return u
                 },
                 GuildNotificationSettingsFlags: function() {
-                    return d
+                    return p
                 },
                 MAX_FAVORITES: function() {
-                    return S
+                    return l
                 },
                 MAX_FAVORITE_GIFS_SIZE: function() {
-                    return C
+                    return s
+                },
+                PrivacyAndSafetyScrollPositions: function() {
+                    return A
                 },
                 ProfileCustomizationScrollPositions: function() {
                     return a
@@ -2673,41 +2676,42 @@
                     return I
                 },
                 ProtoAudioSettingsContextTypes: function() {
-                    return N
+                    return i
                 },
                 ROLE_SUBSCRIPTION_SUBSECTION: function() {
-                    return l
-                },
-                SOUNDBOARD_SUBSECTION: function() {
                     return P
                 },
+                SOUNDBOARD_SUBSECTION: function() {
+                    return U
+                },
                 UserSettingsDelay: function() {
-                    return T
+                    return r
                 },
                 UserSettingsScrollPositions: function() {
-                    return M
+                    return G
                 },
                 UserSettingsTypes: function() {
-                    return A
+                    return T
                 },
                 createEmptyEditInfo: function() {
-                    return U
+                    return d
                 }
             });
-            let S = 250,
-                C = 762880,
-                l = "ROLE_SUBSCRIPTIONS",
-                s = "APPLICATION_SUBSCRIPTION_SUBSECTION",
-                P = "SOUNDBOARD_SUBSECTION";
-            (i = I || (I = {})).USER_PROFILE = "user_profile", i.GUILD = "guild", i.TRY_IT_OUT = "try_it_out", (o || (o = {})).CUSTOM_APP_ICONS = "custom_app_icon", (a || (a = {})).TRY_IT_OUT = "try_it_out", (c = R || (R = {})).REDUCED_MOTION = "reduced_motion", c.SYNC_PROFILE_THEME_WITH_USER_THEME = "sync_profile_theme_with_user_theme", c.LEGACY_CHAT_INPUT = "legacy_chat_input", (t || (t = {})).HARDWARE_ACCELERATION = "hardware_acceleration";
-            let M = {
+            let l = 250,
+                s = 762880,
+                P = "ROLE_SUBSCRIPTIONS",
+                M = "APPLICATION_SUBSCRIPTION_SUBSECTION",
+                U = "SOUNDBOARD_SUBSECTION";
+            (c = I || (I = {})).USER_PROFILE = "user_profile", c.GUILD = "guild", c.TRY_IT_OUT = "try_it_out", (o || (o = {})).CUSTOM_APP_ICONS = "custom_app_icon", (a || (a = {})).TRY_IT_OUT = "try_it_out", (O = R || (R = {})).REDUCED_MOTION = "reduced_motion", O.SYNC_PROFILE_THEME_WITH_USER_THEME = "sync_profile_theme_with_user_theme", O.LEGACY_CHAT_INPUT = "legacy_chat_input", (t || (t = {})).HARDWARE_ACCELERATION = "hardware_acceleration", (n = A || (A = {})).DM_SAFETY_ALERTS = "dm_safety_alerts", n.MESSAGE_REQUESTS = "message_requests", n.EXPLICIT_MEDIA_REDACTION = "explicit_media_redaction";
+            let G = {
                 ProfileCustomizationScrollPositions: a,
                 AccessibilityScrollPositions: R,
                 VoiceAndVideoScrollPositions: t,
-                AppearanceScrollPositions: o
+                AppearanceScrollPositions: o,
+                PrivacyAndSafetyScrollPositions: A
             };
 
-            function U() {
+            function d() {
                 return {
                     protoToSave: void 0,
                     timeout: void 0,
@@ -2719,8 +2723,8 @@
                     triggeredMigrations: !1,
                     offlineEditDataVersion: void 0
                 }
-            }(O = A || (A = {}))[O.PRELOADED_USER_SETTINGS = 1] = "PRELOADED_USER_SETTINGS", O[O.FRECENCY_AND_FAVORITES_SETTINGS = 2] = "FRECENCY_AND_FAVORITES_SETTINGS", O[O.TEST_SETTINGS = 3] = "TEST_SETTINGS", (n = T || (T = {}))[n.INFREQUENT_USER_ACTION = 0] = "INFREQUENT_USER_ACTION", n[n.FREQUENT_USER_ACTION = 10] = "FREQUENT_USER_ACTION", n[n.SLOW_USER_ACTION = 20] = "SLOW_USER_ACTION", n[n.AUTOMATED = 30] = "AUTOMATED", n[n.DAILY = 86400] = "DAILY", (L = r || (r = {}))[L.CONFIRM_START = 0] = "CONFIRM_START", L[L.CONFIRM_CODE = 1] = "CONFIRM_CODE", L[L.EMAIL_AND_PASSWORD = 2] = "EMAIL_AND_PASSWORD", L[L.COMPLETE = 3] = "COMPLETE";
-            let G = {
+            }(L = T || (T = {}))[L.PRELOADED_USER_SETTINGS = 1] = "PRELOADED_USER_SETTINGS", L[L.FRECENCY_AND_FAVORITES_SETTINGS = 2] = "FRECENCY_AND_FAVORITES_SETTINGS", L[L.TEST_SETTINGS = 3] = "TEST_SETTINGS", (D = r || (r = {}))[D.INFREQUENT_USER_ACTION = 0] = "INFREQUENT_USER_ACTION", D[D.FREQUENT_USER_ACTION = 10] = "FREQUENT_USER_ACTION", D[D.SLOW_USER_ACTION = 20] = "SLOW_USER_ACTION", D[D.AUTOMATED = 30] = "AUTOMATED", D[D.DAILY = 86400] = "DAILY", (S = N || (N = {}))[S.CONFIRM_START = 0] = "CONFIRM_START", S[S.CONFIRM_CODE = 1] = "CONFIRM_CODE", S[S.EMAIL_AND_PASSWORD = 2] = "EMAIL_AND_PASSWORD", S[S.COMPLETE = 3] = "COMPLETE";
+            let u = {
                     NEW_FORUM_THREADS_ON: 16384,
                     NEW_FORUM_THREADS_OFF: 8192,
                     OPT_IN_ENABLED: 4096,
@@ -2728,13 +2732,13 @@
                     UNREADS_ALL_MESSAGES: 1024,
                     UNREADS_ONLY_MENTIONS: 512
                 },
-                d = {
+                p = {
                     OPT_IN_CHANNELS_ON: 16384,
                     OPT_IN_CHANNELS_OFF: 8192,
                     UNREADS_ONLY_MENTIONS: 4096,
                     UNREADS_ALL_MESSAGES: 2048
                 };
-            (D = N || (N = {})).USER = "user", D.STREAM = "stream"
+            (C = i || (i = {})).USER = "user", C.STREAM = "stream"
         },
         70956: function(_, E, e) {
             "use strict";
@@ -13999,4 +14003,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84471.db71978f5589b1eb93c3.js.map
+//# sourceMappingURL=84471.092e8e4dac27f0bf05df.js.map

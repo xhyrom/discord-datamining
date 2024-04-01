@@ -24925,6 +24925,12 @@
                 coachmark: "coachmark__9fcc0"
             }
         },
+        592145: function(e) {
+            "use strict";
+            e.exports = {
+                settingsItemHighlight: "settingsItemHighlight__56a67"
+            }
+        },
         531471: function(e) {
             "use strict";
             e.exports = {
@@ -25280,6 +25286,7 @@
                 list: "list__1b9fb",
                 requestNote: "requestNote__7fd48",
                 requestNoteColor: "requestNoteColor__23149",
+                settingsBackgroundFlashElement: "settingsBackgroundFlashElement__93672",
                 settingsTabBar: "settingsTabBar_c54406",
                 settingsTabBarItem: "settingsTabBarItem__94457",
                 status: "status__58720"
