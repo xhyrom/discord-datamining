@@ -99521,6 +99521,22 @@ html .invoiceCancelRow__6ff3e {
     margin-bottom: 24px
 }
 
+.previewIcon__0609a {
+    cursor: pointer;
+    color: var(--interactive-normal)
+}
+
+.previewIcon__0609a:hover {
+    color: var(--interactive-active)
+}
+
+.previewContainer_e43d4c {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-bottom: 8px
+}
+
 .container_ca070b {
     background-color: var(--background-secondary);
     padding: 12px 16px
@@ -131334,4 +131350,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.4542791cd9c8dfc930e7.css.map*/
+/*# sourceMappingURL=99387.8136b294f427ba24ccaf.css.map*/
