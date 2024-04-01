@@ -1,7 +1,7 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-03_gdm_presence",
+    "id": "2024-04_gdm_presence",
     "label": "Group DM Presence",
     "description": [
       "Not Eligible",
@@ -14,7 +14,7 @@
       "Treatment 6: Facepile + Typing Indicator",
       "Treatment 7: Facepile + Typing Indicator + Status Indicator"
     ],
-    "hash": 1948031068,
+    "hash": 2244369299,
     "buckets": [
       -1,
       0,
