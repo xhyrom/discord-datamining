@@ -32911,25 +32911,30 @@ input[type=checked]:focus-visible+.label__73b15 {
     color: var(--white-500)
 }
 
-.root__3eef0.idle_d696d0 {
+html.keyboard-mode .root__3eef0.idle_d696d0:not(:focus-within),
+html:not(.keyboard-mode) .root__3eef0.idle_d696d0 {
     cursor: none
 }
 
-.root__3eef0.idle_d696d0 .gradientContainer_cdada6 {
+html.keyboard-mode .root__3eef0.idle_d696d0:not(:focus-within) .gradientContainer_cdada6,
+html:not(.keyboard-mode) .root__3eef0.idle_d696d0 .gradientContainer_cdada6 {
     opacity: 0
 }
 
-.root__3eef0.idle_d696d0 .topControls_e834ab {
+html.keyboard-mode .root__3eef0.idle_d696d0:not(:focus-within) .topControls_e834ab,
+html:not(.keyboard-mode) .root__3eef0.idle_d696d0 .topControls_e834ab {
     opacity: 0;
     transform: translate3d(0, -8px, 0)
 }
 
-.root__3eef0.idle_d696d0 .bottomControls__72d8d {
+html.keyboard-mode .root__3eef0.idle_d696d0:not(:focus-within) .bottomControls__72d8d,
+html:not(.keyboard-mode) .root__3eef0.idle_d696d0 .bottomControls__72d8d {
     opacity: 0;
     transform: translate3d(0, 8px, 0)
 }
 
-.root__3eef0.idle_d696d0 .chatButton_a40cc3:not(.chatButtonShowing__460dc) {
+html.keyboard-mode .root__3eef0.idle_d696d0:not(:focus-within) .chatButton_a40cc3:not(.chatButtonShowing__460dc),
+html:not(.keyboard-mode) .root__3eef0.idle_d696d0 .chatButton_a40cc3:not(.chatButtonShowing__460dc) {
     opacity: 0;
     transform: translate3d(0, -8px, 0)
 }
@@ -131451,4 +131456,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7561ee13ef1d3aed10c7.css.map*/
+/*# sourceMappingURL=99387.3e4121636f86674de4ad.css.map*/
