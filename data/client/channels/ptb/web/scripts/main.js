@@ -36688,7 +36688,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280399", ", Version Hash: ").concat("3a922a7eae70560c8f3ee94b60ae350506382f87")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280411", ", Version Hash: ").concat("3ba5d1be02d50f731dab749ea678d650d894c904")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -43036,7 +43036,9 @@
                 PRIVACY_SETTINGS_MESSAGE_REQUESTS_DESC_HUB: "If direct messages are enabled, filter messages from hub members you may not know.[Learn more about this setting here.]({helpdeskArticle})",
                 PRIVACY_SETTINGS_MESSAGE_REQUESTS_DESC: "If direct messages are enabled, filter messages from server members you may not know. [Learn more about this setting here.]({helpdeskArticle})",
                 PRIVACY_SETTINGS_ACTIVITY_STATUS: "Activity Status",
+                PRIVACY_SETTINGS_ACTIVITY_STATUS_V2: "Activity Display",
                 PRIVACY_SETTINGS_ACTIVITY_STATUS_DESC: "Share your activity status in this server. [Learn more about this setting here.]({helpdeskArticle})",
+                PRIVACY_SETTINGS_ACTIVITY_STATUS_DESC_V2: "Control whether your activity displays as a status and in your profile for server members. This does not control all activity displays such as those on the platform level or your activity history. [Learn how to customize your global settings here.]({helpdeskArticle})",
                 PRIVACY_SETTINGS_ACTIVITY_JOINING: "Activity Joining",
                 PRIVACY_SETTINGS_ACTIVITY_JOINING_DESC: "Allow users to join your activity in this server. [Learn more about this setting here.]({helpdeskArticle})",
                 PRIVACY_SETTINGS_STAFF_ONLY_HEADER: "Staff Only Privacy Settings",
@@ -85594,8 +85596,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280399", "280399"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280399")), t = 0), t
+                let t = parseInt((e = "280411", "280411"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280411")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107592,8 +107594,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280399",
-                    versionHash: "3a922a7eae70560c8f3ee94b60ae350506382f87"
+                    buildNumber: "280411",
+                    versionHash: "3ba5d1be02d50f731dab749ea678d650d894c904"
                 }
             }
             n.r(t), n.d(t, {
@@ -158056,8 +158058,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711995827222",
-                                    build_number: "280399"
+                                    built_at: "1711996688240",
+                                    build_number: "280411"
                                 }
                             },
                             retries: 1
@@ -196307,7 +196309,7 @@
                 let {
                     game: t,
                     isSharedGame: n
-                } = e, s = (0, o.useStateFromStores)([_.default], () => _.default.getApplication(t.applicationId)), a = r.useMemo(() => null == t.duration || 0 === t.duration ? (0, c.getLastPlayedTimestamp)(t, !0) : "".concat((0, c.getLastPlayedTimestamp)(t, !0), " — ").concat((0, c.getTimePlayedLastWeek)(t)), [t]), E = r.useRef(null), [I, f] = r.useState(!1);
+                } = e, s = (0, o.useStateFromStores)([_.default], () => _.default.getApplication(t.applicationId)), a = r.useMemo(() => null == t.duration || 0 === t.duration ? (0, c.getLastPlayedTimestamp)(t, !1) : "".concat((0, c.getLastPlayedTimestamp)(t, !0), " — ").concat((0, c.getTimePlayedLastWeek)(t)), [t]), E = r.useRef(null), [I, f] = r.useState(!1);
                 if (r.useEffect(() => {
                         let e = E.current;
                         null != e && null != e.offsetWidth && null != e.scrollWidth && f(e.offsetWidth < e.scrollWidth)
@@ -232050,7 +232052,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3a922a7eae70560c8f3ee94b60ae350506382f87"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3ba5d1be02d50f731dab749ea678d650d894c904"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258267,7 +258269,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280399"
+                                build_number: "280411"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265412,7 +265414,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280399", "280399"), 10);
+                let s = parseInt((n = "280411", "280411"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292194,4 +292196,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.063bff5c68d3a7bbdae5.js.map
+//# sourceMappingURL=24321.f11a5281fbf6c89cbb7c.js.map
