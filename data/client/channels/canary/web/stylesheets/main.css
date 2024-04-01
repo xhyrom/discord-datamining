@@ -16740,8 +16740,12 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     left: -24px
 }
 
+.sectionContainer__6702e {
+    display: flex
+}
+
 .sectionHeader_d974fe {
-    display: flex;
+    display: inline-block;
     color: var(--interactive-normal);
     cursor: pointer
 }
@@ -16756,6 +16760,10 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .sectionHeader_d974fe .sectionTitle__1a48e {
     color: var(--interactive-normal)
+}
+
+.sectionHeaderContent_a85418 {
+    display: flex
 }
 
 .notFirstSectionHeader__11b56 {
@@ -131456,4 +131464,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.3e4121636f86674de4ad.css.map*/
+/*# sourceMappingURL=99387.223f0ffeee63e20597b0.css.map*/
