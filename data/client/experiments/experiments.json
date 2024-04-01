@@ -9363,6 +9363,29 @@
   },
   {
     "data": {
+      "kind": "user",
+      "id": "2024-03_passwordless_login",
+      "label": "Passwordless Login",
+      "description": [
+        "Not Eligible",
+        "Treatment 0: Control",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 2467249597,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "guild",
       "id": "2024-03_polls_coachmark",
       "label": "Show coachmark for poll creation entry point",
@@ -9535,29 +9558,6 @@
         "Treatment 1: Quests Members List Entrypoint enabled"
       ],
       "hash": 950109088,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-03_referral_program_sender",
-      "label": "Referral Program Sender Experience",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 2843439589,
       "buckets": [
         -1,
         0,

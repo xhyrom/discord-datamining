@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2024-03_referral_program_sender",
-    "label": "Referral Program Sender Experience",
+    "id": "2024-03_passwordless_login",
+    "label": "Passwordless Login",
     "description": [
       "Not Eligible",
-      "Control Bucket",
+      "Treatment 0: Control",
       "Treatment 1: Enabled"
     ],
-    "hash": 2843439589,
+    "hash": 2467249597,
     "buckets": [
       -1,
       0,
