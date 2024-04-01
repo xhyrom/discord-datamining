@@ -36691,7 +36691,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280308", ", Version Hash: ").concat("8f01afa9c8c02d2d0463686ee0e5011641bc7fbd")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280337", ", Version Hash: ").concat("9cf2bbcdc742b994e644012dfe3b46aa08817739")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85600,8 +85600,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280308", "280308"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280308")), t = 0), t
+                let t = parseInt((e = "280337", "280337"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280337")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107598,8 +107598,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280308",
-                    versionHash: "8f01afa9c8c02d2d0463686ee0e5011641bc7fbd"
+                    buildNumber: "280337",
+                    versionHash: "9cf2bbcdc742b994e644012dfe3b46aa08817739"
                 }
             }
             n.r(t), n.d(t, {
@@ -158062,8 +158062,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1711989829604",
-                                    build_number: "280308"
+                                    built_at: "1711991153242",
+                                    build_number: "280337"
                                 }
                             },
                             retries: 1
@@ -195453,14 +195453,15 @@
                                     className: o()({
                                         [p.profileBadge24]: 0 === w,
                                         [p.profileBadge22]: 1 === w,
-                                        [p.profileBadge18]: 2 === w
+                                        [p.profileBadge20]: 2 === w,
+                                        [p.profileBadge18]: 3 === w
                                     })
                                 })
                             })
                         }, e.id))
                     })
                 })
-            }(r = i || (i = {}))[r.SIZE_24 = 0] = "SIZE_24", r[r.SIZE_22 = 1] = "SIZE_22", r[r.SIZE_18 = 2] = "SIZE_18"
+            }(r = i || (i = {}))[r.SIZE_24 = 0] = "SIZE_24", r[r.SIZE_22 = 1] = "SIZE_22", r[r.SIZE_20 = 2] = "SIZE_20", r[r.SIZE_18 = 3] = "SIZE_18"
         },
         81334: function(e, t, n) {
             "use strict";
@@ -197516,6 +197517,7 @@
                 return t.isSystemUser() ? null : t.isNonUserBot() ? (0, i.jsxs)("div", {
                     className: _.paddingBottom,
                     children: [(0, i.jsx)(d.default, {
+                        guildId: null == c ? void 0 : c.id,
                         user: t,
                         nickname: null,
                         pronouns: null
@@ -197523,6 +197525,7 @@
                 }) : (0, i.jsxs)("div", {
                     className: _.paddingBottom,
                     children: [(0, i.jsx)(d.default, {
+                        guildId: null == c ? void 0 : c.id,
                         user: t,
                         nickname: T,
                         pronouns: null == n ? void 0 : n.pronouns,
@@ -197739,49 +197742,56 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return l
+                    return u
                 }
             });
             var i = n("735250");
             n("470079");
             var r = n("481060"),
                 s = n("129861"),
-                a = n("689938"),
-                o = n("395274");
+                a = n("184325"),
+                o = n("689938"),
+                l = n("395274");
 
-            function l(e) {
+            function u(e) {
                 let {
                     user: t,
-                    nickname: n,
-                    pronouns: l,
-                    usernameIcon: u
+                    guildId: n,
+                    nickname: u,
+                    pronouns: d,
+                    usernameIcon: _
                 } = e;
                 return (0, i.jsx)("div", {
-                    className: o.container,
+                    className: l.container,
                     children: (0, i.jsxs)("div", {
-                        className: o.userText,
-                        children: [null != n ? (0, i.jsx)(r.Heading, {
+                        className: l.userText,
+                        children: [null != u ? (0, i.jsx)(r.Heading, {
                             variant: "heading-lg/semibold",
-                            className: o.nickname,
-                            children: n
+                            className: l.nickname,
+                            children: u
                         }) : null, (0, i.jsxs)("div", {
-                            className: o.flex,
+                            className: l.flexRow,
                             children: [(0, i.jsx)(s.default, {
-                                usernameIcon: u,
+                                usernameIcon: _,
                                 user: t,
                                 forceUsername: !0,
-                                className: null == n ? o.userTagNoNickname : o.userTagWithNickname,
-                                usernameClass: null == n ? o.userTagUsernameNoNickname : o.userTagUsernameBase,
-                                discriminatorClass: null == n ? o.userTagDiscriminatorNoNickname : o.discrimBase,
-                                botClass: null == n ? o.headerBotTag : o.headerBotTagWithNickname
-                            }), null != l && "" !== l && (0, i.jsx)(r.Tooltip, {
-                                text: a.default.Messages.USER_PROFILE_PRONOUNS,
+                                className: null == u ? l.userTagNoNickname : l.userTagWithNickname,
+                                usernameClass: null == u ? l.userTagUsernameNoNickname : l.userTagUsernameBase,
+                                discriminatorClass: null == u ? l.userTagDiscriminatorNoNickname : l.discrimBase,
+                                botClass: null == u ? l.headerBotTag : l.headerBotTagWithNickname
+                            }), null != d && "" !== d && (0, i.jsx)(r.Tooltip, {
+                                text: o.default.Messages.USER_PROFILE_PRONOUNS,
                                 children: e => (0, i.jsx)(r.Text, {
                                     ...e,
                                     variant: "text-sm/normal",
-                                    className: o.biteSizePronouns,
-                                    children: l
+                                    className: l.biteSizePronouns,
+                                    children: d
                                 })
+                            }), (0, i.jsx)(a.default, {
+                                className: l.badges,
+                                user: t,
+                                guildId: n,
+                                size: a.BadgeSizes.SIZE_20
                             })]
                         })]
                     })
@@ -232036,7 +232046,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8f01afa9c8c02d2d0463686ee0e5011641bc7fbd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9cf2bbcdc742b994e644012dfe3b46aa08817739"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258253,7 +258263,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280308"
+                                build_number: "280337"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265398,7 +265408,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280308", "280308"), 10);
+                let s = parseInt((n = "280337", "280337"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292180,4 +292190,4 @@
         }
     }
 ]);
-//# sourceMappingURL=24321.28e463db353e13b93ef0.js.map
+//# sourceMappingURL=24321.6c25fe62e060a84dc5d6.js.map
