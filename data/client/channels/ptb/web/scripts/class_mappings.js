@@ -21039,8 +21039,11 @@
                 button: "button_f03392",
                 buttonContainer: "buttonContainer__6fc2d",
                 container: "container__66d36",
+                containerV2: "containerV2_a465d3",
                 content: "content_efdb3b",
+                contentV2: "contentV2_bceabf",
                 headerArt: "headerArt__63edd",
+                headerArtV2: "headerArtV2_dc35ff",
                 hidden: "hidden__174b8",
                 trialPill: "trialPill_fe4ced"
             }
@@ -21151,7 +21154,8 @@
                 perksDiscoverability: "perksDiscoverability__052be",
                 seeAllPerksButton: "seeAllPerksButton_bfef1d",
                 seeAllPerksButtonContent: "seeAllPerksButtonContent__33cad",
-                whatsNew: "whatsNew__36d59"
+                whatsNew: "whatsNew__36d59",
+                whatsNewWithOriginalHeroHeading: "whatsNewWithOriginalHeroHeading__3c219"
             }
         },
         518400: function(e) {

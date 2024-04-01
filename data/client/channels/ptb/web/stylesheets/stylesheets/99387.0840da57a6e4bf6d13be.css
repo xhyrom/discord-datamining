@@ -82362,8 +82362,11 @@ input::-webkit-inner-spin-button {
 }
 
 .whatsNew__36d59 {
-    margin-top: -128px;
     margin-bottom: 64px
+}
+
+.whatsNewWithOriginalHeroHeading__3c219 {
+    margin-top: -128px
 }
 
 .perksDiscoverability__052be {
@@ -82779,6 +82782,17 @@ input::-webkit-inner-spin-button {
     max-height: 600px
 }
 
+.containerV2_a465d3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 100px;
+    padding-top: 42px
+}
+
 .trialPill_fe4ced {
     margin-bottom: 16px;
     justify-content: center
@@ -82788,6 +82802,10 @@ input::-webkit-inner-spin-button {
     position: absolute;
     min-width: 500px;
     top: 24px
+}
+
+.contentV2_bceabf {
+    min-width: 500px
 }
 
 .hidden__174b8 {
@@ -82809,6 +82827,15 @@ input::-webkit-inner-spin-button {
 .headerArt__63edd {
     width: 100%;
     pointer-events: none
+}
+
+.headerArtV2_dc35ff {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+    z-index: -1;
+    top: 0;
+    min-width: 800px
 }
 
 .container_c7ab72 {
@@ -131350,4 +131377,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.8136b294f427ba24ccaf.css.map*/
+/*# sourceMappingURL=99387.0840da57a6e4bf6d13be.css.map*/
