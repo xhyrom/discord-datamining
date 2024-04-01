@@ -36686,7 +36686,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280542", ", Version Hash: ").concat("45662ea22e6f2593a75c57d8d02f8dd0b5c40e3e")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280560", ", Version Hash: ").concat("2394323dbafe64bf17b0b0dbc00c75df2141cdd6")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -52732,6 +52732,7 @@
                 TRIAL_EXPIRES: "Trial expires {date}",
                 DISMISS_BUTTON_TEXT: "I'm not interested in this",
                 SHARE_NITRO_VIEW_ON_DESKTOP: "Open this DM on desktop to start your free trial.",
+                USER_TRIAL_OFFER_ATTRIBUTION_BANNER: "{username} has shared a free Nitro trial with you.",
                 EMOJI_CATEGORY_TOP_GUILD_EMOJI: "Top Emoji in !!{guildName}!!",
                 TOP_GUILD_EMOJI_BADGE: "Popular",
                 NEWLY_ADDED_GUILD_EMOJI_BADGE: "Newly Added",
@@ -85596,8 +85597,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280542", "280542"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280542")), t = 0), t
+                let t = parseInt((e = "280560", "280560"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280560")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107593,8 +107594,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280542",
-                    versionHash: "45662ea22e6f2593a75c57d8d02f8dd0b5c40e3e"
+                    buildNumber: "280560",
+                    versionHash: "2394323dbafe64bf17b0b0dbc00c75df2141cdd6"
                 }
             }
             n.r(t), n.d(t, {
@@ -157899,8 +157900,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712006688564",
-                                    build_number: "280542"
+                                    built_at: "1712007917716",
+                                    build_number: "280560"
                                 }
                             },
                             retries: 1
@@ -165735,6 +165736,9 @@
                 },
                 PREMIUM_TIER_2_REACTIVATION_TRIAL_ID: function() {
                     return eI
+                },
+                PREMIUM_TIER_2_REFERRAL_TRIAL_ID: function() {
+                    return eA
                 },
                 PREMIUM_TYPE_OVERRIDE_OPTIONS: function() {
                     return H
@@ -228352,6 +228356,10 @@
                 hasAnyUnexpiredOffer() {
                     return Object.values(c.userTrialOffers).some(e => null == e.expires_at || Date.parse(e.expires_at) > Date.now())
                 }
+                getReferrer(e) {
+                    var t;
+                    return null == e ? null : null === (t = c.userTrialOffers[e]) || void 0 === t ? void 0 : t.referrer
+                }
                 getState() {
                     return c
                 }
@@ -231818,7 +231826,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "45662ea22e6f2593a75c57d8d02f8dd0b5c40e3e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "2394323dbafe64bf17b0b0dbc00c75df2141cdd6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257914,7 +257922,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280542"
+                                build_number: "280560"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265059,7 +265067,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280542", "280542"), 10);
+                let s = parseInt((n = "280560", "280560"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291807,4 +291815,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.d0d921b65908800dd43d.js.map
+//# sourceMappingURL=97256.e0041bb7b82d456f64dd.js.map
