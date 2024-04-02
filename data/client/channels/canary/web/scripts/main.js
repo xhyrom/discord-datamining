@@ -36669,7 +36669,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280757", ", Version Hash: ").concat("a06cab222c950b07c4bb978cf245133e800360f5")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280761", ", Version Hash: ").concat("3e9f674bb1de5e45c4f8dff09eb310ff11b26a3b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85574,8 +85574,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280757", "280757"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280757")), t = 0), t
+                let t = parseInt((e = "280761", "280761"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280761")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107571,8 +107571,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280757",
-                    versionHash: "a06cab222c950b07c4bb978cf245133e800360f5"
+                    buildNumber: "280761",
+                    versionHash: "3e9f674bb1de5e45c4f8dff09eb310ff11b26a3b"
                 }
             }
             n.r(t), n.d(t, {
@@ -133980,8 +133980,9 @@
 
             function c(e) {
                 arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-                let t = (0, i.useStateFromStores)([l.default, r.default], () => null != e && _(e.id, l.default, r.default));
-                return !__OVERLAY__ && !!t && null != e && e.hasFeature(d.GuildFeatures.GUILD_HOME_DEPRECATION_OVERRIDE)
+                let t = null == e ? void 0 : e.hasFeature(d.GuildFeatures.GUILD_HOME_DEPRECATION_OVERRIDE),
+                    n = (0, i.useStateFromStores)([l.default, r.default], () => null != e && t && _(e.id, l.default, r.default));
+                return !__OVERLAY__ && !!n && null != e && !0 === t
             }
 
             function E(e) {
@@ -148765,95 +148766,64 @@
             "use strict";
             n.r(t), n.d(t, {
                 getRootNavigationRefIfInExperiment: function() {
-                    return f
+                    return d
                 },
                 isInMainTabsExperiment: function() {
-                    return S
+                    return _
                 },
                 useInMainTabsExperiment: function() {
-                    return h
+                    return c
                 }
             }), n("411104"), n("470079");
             var i, r, s = n("652874"),
                 a = n("433517");
-            n("353926");
-            var o = n("695855");
-            n("528097");
-            var l = n("777639"),
-                u = n("277530"),
-                d = n("721877"),
-                _ = n("146552"),
-                c = n("488832");
-            (r = i || (i = {}))[r.EXISTING_USERS = 0] = "EXISTING_USERS", r[r.NEW_USERS = 1] = "NEW_USERS";
-            let E = "tabs-v2-experiment-key",
-                I = (0, s.default)((e, t) => ({
-                    _experimentCacheInitialized: !1,
-                    _experimentEnabled: !1,
-                    getExperimentEnabled() {
-                        if (!(0, d.isMainTabsExperimentPlatformSupported)()) return !1;
-                        let {
-                            _experimentCacheInitialized: e,
-                            _experimentEnabled: n
-                        } = t();
-                        if (!e) throw Error("MainTabsV2ExperimentStore: Experiment cache not initialized");
-                        return n
-                    },
-                    setExperimentEnabled: t => {
-                        e({
-                            _experimentEnabled: t
-                        }), a.Storage.set(E, t)
-                    },
-                    setInitialized: () => {
-                        e(e => e._experimentCacheInitialized ? e : {
-                            _experimentCacheInitialized: !0,
-                            _experimentEnabled: !0 === a.Storage.get(E)
-                        })
-                    }
-                }));
+            n("353926"), n("695855"), n("528097");
+            var o = n("777639");
+            n("277530");
+            var l = n("721877");
+            n("146552"), n("488832"), (r = i || (i = {}))[r.EXISTING_USERS = 0] = "EXISTING_USERS", r[r.NEW_USERS = 1] = "NEW_USERS";
+            let u = "tabs-v2-experiment-key";
 
-            function T() {
-                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, u.isMobileRedesignDisabled)(),
-                    t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                    n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : I.getState().getExperimentEnabled(),
-                    i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : (0, _.isTabsUIEnabledManually)(),
-                    r = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : (0, o.isRedesignToggleIgnored)();
-                if (!(0, d.isMainTabsExperimentPlatformSupported)()) return !1;
-                if (!r) {
-                    if (!t && e) return (0, c.updateIsInTabsUI)(!1), !1;
-                    if (i) return (0, c.updateIsInTabsUI)(!0), !0
+            function d() {
+                return _() ? (0, o.getRootNavigationRef)() : void 0
+            }
+
+            function _() {
+                return (0, l.isMainTabsExperimentPlatformSupported)()
+            }
+
+            function c() {
+                return arguments.length > 0 && void 0 !== arguments[0] && arguments[0], (0, l.isMainTabsExperimentPlatformSupported)()
+            }(0, s.default)((e, t) => ({
+                _experimentCacheInitialized: !1,
+                _experimentEnabled: !1,
+                getExperimentEnabled() {
+                    if (!(0, l.isMainTabsExperimentPlatformSupported)()) return !1;
+                    let {
+                        _experimentCacheInitialized: e,
+                        _experimentEnabled: n
+                    } = t();
+                    if (!e) throw Error("MainTabsV2ExperimentStore: Experiment cache not initialized");
+                    return n
+                },
+                setExperimentEnabled: t => {
+                    e({
+                        _experimentEnabled: t
+                    }), a.Storage.set(u, t)
+                },
+                setInitialized: () => {
+                    e(e => e._experimentCacheInitialized ? e : {
+                        _experimentCacheInitialized: !0,
+                        _experimentEnabled: !0 === a.Storage.get(u)
+                    })
                 }
-                return !t && (0, c.updateIsInTabsUI)(n), n
-            }
-
-            function f() {
-                return S() ? (0, l.getRootNavigationRef)() : void 0
-            }
-
-            function S() {
-                return T()
-            }
-
-            function h() {
-                let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
-                    t = (0, u.useMobileRedesignDisabled)(),
-                    n = I(e => e.getExperimentEnabled()),
-                    i = (0, _.useIsTabsUIEnabledManually)();
-                return T(t, e, n, i, (0, o.useRedesignToggleIgnored)())
-            }
+            }))
         },
         695855: function(e, t, n) {
             "use strict";
-            n.r(t), n.d(t, {
-                isRedesignToggleIgnored: function() {
-                    return a
-                },
-                useRedesignToggleIgnored: function() {
-                    return s
-                }
-            });
+            n.r(t);
             var i = n("818083");
-            n("781157");
-            let r = (0, i.createExperiment)({
+            n("781157"), (0, i.createExperiment)({
                 kind: "user",
                 id: "2023-09_mobile_redesign_override_toggles",
                 label: "Tabs V2 - redesign opt-out/in for all",
@@ -148883,8 +148853,7 @@
                         ignore: !0
                     }
                 }]
-            });
-            (0, i.createExperiment)({
+            }), (0, i.createExperiment)({
                 kind: "user",
                 id: "2023-09_mobile_redesign_override_toggles_t2",
                 label: "Tabs V2 - redesign opt-out for T2",
@@ -148904,17 +148873,7 @@
                         hide: !0
                     }
                 }]
-            });
-            let s = () => r.useExperiment({
-                    location: "x"
-                }, {
-                    autoTrackExposure: !1
-                }).ignore,
-                a = () => r.getCurrentConfig({
-                    location: "x"
-                }, {
-                    autoTrackExposure: !1
-                }).ignore
+            })
         },
         528097: function(e, t, n) {
             "use strict";
@@ -148995,22 +148954,7 @@
         },
         277530: function(e, t, n) {
             "use strict";
-
-            function i() {
-                return !1
-            }
-
-            function r() {
-                return !1
-            }
-            n.r(t), n.d(t, {
-                isMobileRedesignDisabled: function() {
-                    return r
-                },
-                useMobileRedesignDisabled: function() {
-                    return i
-                }
-            })
+            n.r(t)
         },
         721877: function(e, t, n) {
             "use strict";
@@ -149026,46 +148970,11 @@
         },
         146552: function(e, t, n) {
             "use strict";
-
-            function i() {
-                return !1
-            }
-
-            function r() {
-                return !1
-            }
-            n.r(t), n.d(t, {
-                isTabsUIEnabledManually: function() {
-                    return r
-                },
-                useIsTabsUIEnabledManually: function() {
-                    return i
-                }
-            })
+            n.r(t)
         },
         488832: function(e, t, n) {
             "use strict";
-            let i, r, s;
-            n.r(t), n.d(t, {
-                updateIsInTabsUI: function() {
-                    return d
-                }
-            });
-            var a = n("804098"),
-                o = n("20186"),
-                l = n("626135"),
-                u = n("960048");
-
-            function d(e) {
-                i !== e && (i = e, r = e, ! function() {
-                    let e = s && i && r ? a.DesignIds.YOU_BAR_IA : i ? r ? a.DesignIds.DESIGN_TABS_IA : a.DesignIds.DESIGN_IA : a.DesignIds.CLASSIC_IA;
-                    l.default.extendSuperProperties({
-                        design_id: e
-                    }), o.addGlobalTag("design_id", e), u.default.setTags({
-                        design_id: "".concat(e)
-                    })
-                }())
-            }
+            n.r(t), n("804098"), n("20186"), n("626135"), n("960048")
         },
         272423: function(e, t, n) {
             "use strict";
@@ -157870,8 +157779,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712069940316",
-                                    build_number: "280757"
+                                    built_at: "1712071451213",
+                                    build_number: "280761"
                                 }
                             },
                             retries: 1
@@ -157891,20 +157800,13 @@
         20186: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                addGlobalTag: function() {
-                    return r
-                },
                 getGlobalTagsArray: function() {
-                    return s
+                    return r
                 }
             });
             let i = {};
 
-            function r(e, t) {
-                i[e] = t
-            }
-
-            function s() {
+            function r() {
                 return Object.keys(i).map(e => "".concat(e, ":").concat(i[e]))
             }
         },
@@ -231827,7 +231729,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a06cab222c950b07c4bb978cf245133e800360f5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3e9f674bb1de5e45c4f8dff09eb310ff11b26a3b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257923,7 +257825,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280757"
+                                build_number: "280761"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265068,7 +264970,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280757", "280757"), 10);
+                let s = parseInt((n = "280761", "280761"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -290387,7 +290289,7 @@
         831209: function(e, t, n) {
             "use strict";
             var i, r;
-            n.r(t), (r = i || (i = {})).ACTION_SHEET_GRADIENT_BG = "var(--action-sheet-gradient-bg)", r.ACTIVITY_CARD_BACKGROUND = "var(--activity-card-background)", r.ACTIVITY_CARD_ICON_OVERLAY = "var(--activity-card-icon-overlay)", r.ALERT_BG = "var(--alert-bg)", r.ANDROID_NAVIGATION_BAR_BACKGROUND = "var(--android-navigation-bar-background)", r.ANDROID_NAVIGATION_SCRIM_BACKGROUND = "var(--android-navigation-scrim-background)", r.ANDROID_RIPPLE = "var(--android-ripple)", r.BACKGROUND_ACCENT = "var(--background-accent)", r.BACKGROUND_FLOATING = "var(--background-floating)", r.BACKGROUND_MENTIONED = "var(--background-mentioned)", r.BACKGROUND_MENTIONED_HOVER = "var(--background-mentioned-hover)", r.BACKGROUND_MESSAGE_AUTOMOD = "var(--background-message-automod)", r.BACKGROUND_MESSAGE_AUTOMOD_HOVER = "var(--background-message-automod-hover)", r.BACKGROUND_MESSAGE_HIGHLIGHT = "var(--background-message-highlight)", r.BACKGROUND_MESSAGE_HIGHLIGHT_HOVER = "var(--background-message-highlight-hover)", r.BACKGROUND_MESSAGE_HOVER = "var(--background-message-hover)", r.BACKGROUND_MOBILE_PRIMARY = "var(--background-mobile-primary)", r.BACKGROUND_MOBILE_SECONDARY = "var(--background-mobile-secondary)", r.BACKGROUND_MODIFIER_ACCENT = "var(--background-modifier-accent)", r.BACKGROUND_MODIFIER_ACCENT_2 = "var(--background-modifier-accent-2)", r.BACKGROUND_MODIFIER_ACTIVE = "var(--background-modifier-active)", r.BACKGROUND_MODIFIER_HOVER = "var(--background-modifier-hover)", r.BACKGROUND_MODIFIER_SELECTED = "var(--background-modifier-selected)", r.BACKGROUND_NESTED_FLOATING = "var(--background-nested-floating)", r.BACKGROUND_PRIMARY = "var(--background-primary)", r.BACKGROUND_SECONDARY = "var(--background-secondary)", r.BACKGROUND_SECONDARY_ALT = "var(--background-secondary-alt)", r.BACKGROUND_TERTIARY = "var(--background-tertiary)", r.BG_BACKDROP = "var(--bg-backdrop)", r.BG_BACKDROP_NO_OPACITY = "var(--bg-backdrop-no-opacity)", r.BG_BASE_PRIMARY = "var(--bg-base-primary)", r.BG_BASE_SECONDARY = "var(--bg-base-secondary)", r.BG_BASE_TERTIARY = "var(--bg-base-tertiary)", r.BG_BRAND = "var(--bg-brand)", r.BG_MOD_FAINT = "var(--bg-mod-faint)", r.BG_MOD_STRONG = "var(--bg-mod-strong)", r.BG_MOD_SUBTLE = "var(--bg-mod-subtle)", r.BG_SURFACE_OVERLAY = "var(--bg-surface-overlay)", r.BG_SURFACE_OVERLAY_TMP = "var(--bg-surface-overlay-tmp)", r.BG_SURFACE_RAISED = "var(--bg-surface-raised)", r.BLACK = "var(--black)", r.BLUR_FALLBACK = "var(--blur-fallback)", r.BLUR_FALLBACK_PRESSED = "var(--blur-fallback-pressed)", r.BORDER_FAINT = "var(--border-faint)", r.BORDER_STRONG = "var(--border-strong)", r.BORDER_SUBTLE = "var(--border-subtle)", r.BUG_REPORTER_MODAL_SUBMITTING_BACKGROUND = "var(--bug-reporter-modal-submitting-background)", r.BUTTON_CREATOR_REVENUE_BACKGROUND = "var(--button-creator-revenue-background)", r.BUTTON_DANGER_BACKGROUND = "var(--button-danger-background)", r.BUTTON_DANGER_BACKGROUND_ACTIVE = "var(--button-danger-background-active)", r.BUTTON_DANGER_BACKGROUND_DISABLED = "var(--button-danger-background-disabled)", r.BUTTON_DANGER_BACKGROUND_HOVER = "var(--button-danger-background-hover)", r.BUTTON_OUTLINE_BRAND_BACKGROUND = "var(--button-outline-brand-background)", r.BUTTON_OUTLINE_BRAND_BACKGROUND_ACTIVE = "var(--button-outline-brand-background-active)", r.BUTTON_OUTLINE_BRAND_BACKGROUND_HOVER = "var(--button-outline-brand-background-hover)", r.BUTTON_OUTLINE_BRAND_BORDER = "var(--button-outline-brand-border)", r.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE = "var(--button-outline-brand-border-active)", r.BUTTON_OUTLINE_BRAND_BORDER_HOVER = "var(--button-outline-brand-border-hover)", r.BUTTON_OUTLINE_BRAND_TEXT = "var(--button-outline-brand-text)", r.BUTTON_OUTLINE_BRAND_TEXT_ACTIVE = "var(--button-outline-brand-text-active)", r.BUTTON_OUTLINE_BRAND_TEXT_HOVER = "var(--button-outline-brand-text-hover)", r.BUTTON_OUTLINE_DANGER_BACKGROUND = "var(--button-outline-danger-background)", r.BUTTON_OUTLINE_DANGER_BACKGROUND_ACTIVE = "var(--button-outline-danger-background-active)", r.BUTTON_OUTLINE_DANGER_BACKGROUND_HOVER = "var(--button-outline-danger-background-hover)", r.BUTTON_OUTLINE_DANGER_BORDER = "var(--button-outline-danger-border)", r.BUTTON_OUTLINE_DANGER_BORDER_ACTIVE = "var(--button-outline-danger-border-active)", r.BUTTON_OUTLINE_DANGER_BORDER_HOVER = "var(--button-outline-danger-border-hover)", r.BUTTON_OUTLINE_DANGER_TEXT = "var(--button-outline-danger-text)", r.BUTTON_OUTLINE_DANGER_TEXT_ACTIVE = "var(--button-outline-danger-text-active)", r.BUTTON_OUTLINE_DANGER_TEXT_HOVER = "var(--button-outline-danger-text-hover)", r.BUTTON_OUTLINE_POSITIVE_BACKGROUND = "var(--button-outline-positive-background)", r.BUTTON_OUTLINE_POSITIVE_BACKGROUND_ACTIVE = "var(--button-outline-positive-background-active)", r.BUTTON_OUTLINE_POSITIVE_BACKGROUND_HOVER = "var(--button-outline-positive-background-hover)", r.BUTTON_OUTLINE_POSITIVE_BORDER = "var(--button-outline-positive-border)", r.BUTTON_OUTLINE_POSITIVE_BORDER_ACTIVE = "var(--button-outline-positive-border-active)", r.BUTTON_OUTLINE_POSITIVE_BORDER_HOVER = "var(--button-outline-positive-border-hover)", r.BUTTON_OUTLINE_POSITIVE_TEXT = "var(--button-outline-positive-text)", r.BUTTON_OUTLINE_POSITIVE_TEXT_ACTIVE = "var(--button-outline-positive-text-active)", r.BUTTON_OUTLINE_POSITIVE_TEXT_HOVER = "var(--button-outline-positive-text-hover)", r.BUTTON_OUTLINE_PRIMARY_BACKGROUND = "var(--button-outline-primary-background)", r.BUTTON_OUTLINE_PRIMARY_BACKGROUND_ACTIVE = "var(--button-outline-primary-background-active)", r.BUTTON_OUTLINE_PRIMARY_BACKGROUND_HOVER = "var(--button-outline-primary-background-hover)", r.BUTTON_OUTLINE_PRIMARY_BORDER = "var(--button-outline-primary-border)", r.BUTTON_OUTLINE_PRIMARY_BORDER_ACTIVE = "var(--button-outline-primary-border-active)", r.BUTTON_OUTLINE_PRIMARY_BORDER_HOVER = "var(--button-outline-primary-border-hover)", r.BUTTON_OUTLINE_PRIMARY_TEXT = "var(--button-outline-primary-text)", r.BUTTON_OUTLINE_PRIMARY_TEXT_ACTIVE = "var(--button-outline-primary-text-active)", r.BUTTON_OUTLINE_PRIMARY_TEXT_HOVER = "var(--button-outline-primary-text-hover)", r.BUTTON_POSITIVE_BACKGROUND = "var(--button-positive-background)", r.BUTTON_POSITIVE_BACKGROUND_ACTIVE = "var(--button-positive-background-active)", r.BUTTON_POSITIVE_BACKGROUND_DISABLED = "var(--button-positive-background-disabled)", r.BUTTON_POSITIVE_BACKGROUND_HOVER = "var(--button-positive-background-hover)", r.BUTTON_SECONDARY_BACKGROUND = "var(--button-secondary-background)", r.BUTTON_SECONDARY_BACKGROUND_ACTIVE = "var(--button-secondary-background-active)", r.BUTTON_SECONDARY_BACKGROUND_DISABLED = "var(--button-secondary-background-disabled)", r.BUTTON_SECONDARY_BACKGROUND_HOVER = "var(--button-secondary-background-hover)", r.CARD_GRADIENT_BG = "var(--card-gradient-bg)", r.CARD_GRADIENT_PRESSED_BG = "var(--card-gradient-pressed-bg)", r.CARD_PRIMARY_BG = "var(--card-primary-bg)", r.CARD_PRIMARY_PRESSED_BG = "var(--card-primary-pressed-bg)", r.CARD_SECONDARY_BG = "var(--card-secondary-bg)", r.CARD_SECONDARY_PRESSED_BG = "var(--card-secondary-pressed-bg)", r.CHANNEL_ICON = "var(--channel-icon)", r.CHANNEL_TEXT_AREA_PLACEHOLDER = "var(--channel-text-area-placeholder)", r.CHANNELS_DEFAULT = "var(--channels-default)", r.CHANNELTEXTAREA_BACKGROUND = "var(--channeltextarea-background)", r.CHAT_BACKGROUND = "var(--chat-background)", r.CHAT_BANNER_BG = "var(--chat-banner-bg)", r.CHAT_BORDER = "var(--chat-border)", r.CHAT_INPUT_CONTAINER_BACKGROUND = "var(--chat-input-container-background)", r.CHAT_SWIPE_TO_REPLY_BACKGROUND = "var(--chat-swipe-to-reply-background)", r.CHAT_SWIPE_TO_REPLY_GRADIENT_BACKGROUND = "var(--chat-swipe-to-reply-gradient-background)", r.COACHMARK_BG = "var(--coachmark-bg)", r.CONTEXT_MENU_BACKDROP_BACKGROUND = "var(--context-menu-backdrop-background)", r.CONTROL_BRAND_FOREGROUND = "var(--control-brand-foreground)", r.CONTROL_BRAND_FOREGROUND_NEW = "var(--control-brand-foreground-new)", r.CREATOR_REVENUE_ICON_GRADIENT_END = "var(--creator-revenue-icon-gradient-end)", r.CREATOR_REVENUE_ICON_GRADIENT_START = "var(--creator-revenue-icon-gradient-start)", r.CREATOR_REVENUE_INFO_BOX_BACKGROUND = "var(--creator-revenue-info-box-background)", r.CREATOR_REVENUE_INFO_BOX_BORDER = "var(--creator-revenue-info-box-border)", r.CREATOR_REVENUE_LOCKED_CHANNEL_ICON = "var(--creator-revenue-locked-channel-icon)", r.CREATOR_REVENUE_PROGRESS_BAR = "var(--creator-revenue-progress-bar)", r.DEPRECATED_CARD_BG = "var(--deprecated-card-bg)", r.DEPRECATED_CARD_EDITABLE_BG = "var(--deprecated-card-editable-bg)", r.DEPRECATED_QUICKSWITCHER_INPUT_BACKGROUND = "var(--deprecated-quickswitcher-input-background)", r.DEPRECATED_QUICKSWITCHER_INPUT_PLACEHOLDER = "var(--deprecated-quickswitcher-input-placeholder)", r.DEPRECATED_STORE_BG = "var(--deprecated-store-bg)", r.DEPRECATED_TEXT_INPUT_BG = "var(--deprecated-text-input-bg)", r.DEPRECATED_TEXT_INPUT_BORDER = "var(--deprecated-text-input-border)", r.DEPRECATED_TEXT_INPUT_BORDER_DISABLED = "var(--deprecated-text-input-border-disabled)", r.DEPRECATED_TEXT_INPUT_BORDER_HOVER = "var(--deprecated-text-input-border-hover)", r.DEPRECATED_TEXT_INPUT_PREFIX = "var(--deprecated-text-input-prefix)", r.DISPLAY_BANNER_OVERFLOW_BACKGROUND = "var(--display-banner-overflow-background)", r.DIVIDER_STRONG = "var(--divider-strong)", r.DIVIDER_SUBTLE = "var(--divider-subtle)", r.EMBED_BACKGROUND = "var(--embed-background)", r.EMBED_BACKGROUND_ALTERNATE = "var(--embed-background-alternate)", r.EMBED_TITLE = "var(--embed-title)", r.EXPRESSION_PICKER_BG = "var(--expression-picker-bg)", r.FOCUS_PRIMARY = "var(--focus-primary)", r.FORUM_POST_EXTRA_MEDIA_COUNT_CONTAINER_BACKGROUND = "var(--forum-post-extra-media-count-container-background)", r.FORUM_POST_TAG_BACKGROUND = "var(--forum-post-tag-background)", r.GUILD_ICON_INACTIVE_BG = "var(--guild-icon-inactive-bg)", r.GUILD_ICON_INACTIVE_NESTED_BG = "var(--guild-icon-inactive-nested-bg)", r.GUILD_NOTIFICATIONS_BOTTOM_SHEET_PILL_BACKGROUND = "var(--guild-notifications-bottom-sheet-pill-background)", r.HALO_POSITIVE = "var(--halo-positive)", r.HEADER_MUTED = "var(--header-muted)", r.HEADER_PRIMARY = "var(--header-primary)", r.HEADER_SECONDARY = "var(--header-secondary)", r.HOME_BACKGROUND = "var(--home-background)", r.HOME_CARD_RESTING_BORDER = "var(--home-card-resting-border)", r.ICON_MUTED = "var(--icon-muted)", r.ICON_PRIMARY = "var(--icon-primary)", r.ICON_SECONDARY = "var(--icon-secondary)", r.ICON_TRANSPARENT = "var(--icon-transparent)", r.INFO_BOX_BACKGROUND = "var(--info-box-background)", r.INFO_DANGER_BACKGROUND = "var(--info-danger-background)", r.INFO_DANGER_FOREGROUND = "var(--info-danger-foreground)", r.INFO_DANGER_TEXT = "var(--info-danger-text)", r.INFO_HELP_BACKGROUND = "var(--info-help-background)", r.INFO_HELP_FOREGROUND = "var(--info-help-foreground)", r.INFO_HELP_TEXT = "var(--info-help-text)", r.INFO_POSITIVE_BACKGROUND = "var(--info-positive-background)", r.INFO_POSITIVE_FOREGROUND = "var(--info-positive-foreground)", r.INFO_POSITIVE_TEXT = "var(--info-positive-text)", r.INFO_WARNING_BACKGROUND = "var(--info-warning-background)", r.INFO_WARNING_FOREGROUND = "var(--info-warning-foreground)", r.INFO_WARNING_TEXT = "var(--info-warning-text)", r.INPUT_BACKGROUND = "var(--input-background)", r.INPUT_FOCUSED_BORDER = "var(--input-focused-border)", r.INPUT_PLACEHOLDER_TEXT = "var(--input-placeholder-text)", r.INTERACTIVE_ACTIVE = "var(--interactive-active)", r.INTERACTIVE_HOVER = "var(--interactive-hover)", r.INTERACTIVE_MUTED = "var(--interactive-muted)", r.INTERACTIVE_NORMAL = "var(--interactive-normal)", r.LEGACY_ANDROID_BLUR_OVERLAY_DEFAULT = "var(--legacy-android-blur-overlay-default)", r.LEGACY_ANDROID_BLUR_OVERLAY_ULTRA_THIN = "var(--legacy-android-blur-overlay-ultra-thin)", r.LEGACY_BLUR_FALLBACK_DEFAULT = "var(--legacy-blur-fallback-default)", r.LEGACY_BLUR_FALLBACK_ULTRA_THIN = "var(--legacy-blur-fallback-ultra-thin)", r.LIVE_STAGE_TILE_BORDER = "var(--live-stage-tile-border)", r.LOGO_PRIMARY = "var(--logo-primary)", r.MENTION_BACKGROUND = "var(--mention-background)", r.MENTION_FOREGROUND = "var(--mention-foreground)", r.MODAL_BACKGROUND = "var(--modal-background)", r.MODAL_FOOTER_BACKGROUND = "var(--modal-footer-background)", r.NAVIGATOR_HEADER_TINT = "var(--navigator-header-tint)", r.PANEL_BG = "var(--panel-bg)", r.POLLS_NORMAL_FILL_HOVER = "var(--polls-normal-fill-hover)", r.POLLS_NORMAL_IMAGE_BACKGROUND = "var(--polls-normal-image-background)", r.POLLS_VICTOR_FILL = "var(--polls-victor-fill)", r.POLLS_VOTED_FILL = "var(--polls-voted-fill)", r.PROFILE_GRADIENT_CARD_BACKGROUND = "var(--profile-gradient-card-background)", r.PROFILE_GRADIENT_MESSAGE_INPUT_BORDER = "var(--profile-gradient-message-input-border)", r.PROFILE_GRADIENT_NOTE_BACKGROUND = "var(--profile-gradient-note-background)", r.PROFILE_GRADIENT_OVERLAY = "var(--profile-gradient-overlay)", r.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME = "var(--profile-gradient-overlay-synced-with-user-theme)", r.PROFILE_GRADIENT_PROFILE_BODY_BACKGROUND_HOVER = "var(--profile-gradient-profile-body-background-hover)", r.PROFILE_GRADIENT_ROLE_PILL_BACKGROUND = "var(--profile-gradient-role-pill-background)", r.PROFILE_GRADIENT_ROLE_PILL_BORDER = "var(--profile-gradient-role-pill-border)", r.PROFILE_GRADIENT_SECTION_BOX = "var(--profile-gradient-section-box)", r.REDESIGN_ACTIVITY_CARD_BACKGROUND = "var(--redesign-activity-card-background)", r.REDESIGN_ACTIVITY_CARD_BACKGROUND_PRESSED = "var(--redesign-activity-card-background-pressed)", r.REDESIGN_ACTIVITY_CARD_BADGE_ICON = "var(--redesign-activity-card-badge-icon)", r.REDESIGN_ACTIVITY_CARD_BORDER = "var(--redesign-activity-card-border)", r.REDESIGN_ACTIVITY_CARD_OVERFLOW_BACKGROUND = "var(--redesign-activity-card-overflow-background)", r.REDESIGN_BUTTON_ACTIVE_BACKGROUND = "var(--redesign-button-active-background)", r.REDESIGN_BUTTON_ACTIVE_PRESSED_BACKGROUND = "var(--redesign-button-active-pressed-background)", r.REDESIGN_BUTTON_ACTIVE_TEXT = "var(--redesign-button-active-text)", r.REDESIGN_BUTTON_DANGER_BACKGROUND = "var(--redesign-button-danger-background)", r.REDESIGN_BUTTON_DANGER_PRESSED_BACKGROUND = "var(--redesign-button-danger-pressed-background)", r.REDESIGN_BUTTON_DANGER_TEXT = "var(--redesign-button-danger-text)", r.REDESIGN_BUTTON_DESTRUCTIVE_BACKGROUND = "var(--redesign-button-destructive-background)", r.REDESIGN_BUTTON_DESTRUCTIVE_PRESSED_BACKGROUND = "var(--redesign-button-destructive-pressed-background)", r.REDESIGN_BUTTON_DESTRUCTIVE_TEXT = "var(--redesign-button-destructive-text)", r.REDESIGN_BUTTON_OVERLAY_ALPHA_BACKGROUND = "var(--redesign-button-overlay-alpha-background)", r.REDESIGN_BUTTON_OVERLAY_ALPHA_PRESSED_BACKGROUND = "var(--redesign-button-overlay-alpha-pressed-background)", r.REDESIGN_BUTTON_OVERLAY_ALPHA_TEXT = "var(--redesign-button-overlay-alpha-text)", r.REDESIGN_BUTTON_OVERLAY_BACKGROUND = "var(--redesign-button-overlay-background)", r.REDESIGN_BUTTON_OVERLAY_PRESSED_BACKGROUND = "var(--redesign-button-overlay-pressed-background)", r.REDESIGN_BUTTON_OVERLAY_TEXT = "var(--redesign-button-overlay-text)", r.REDESIGN_BUTTON_POSITIVE_BACKGROUND = "var(--redesign-button-positive-background)", r.REDESIGN_BUTTON_POSITIVE_PRESSED_BACKGROUND = "var(--redesign-button-positive-pressed-background)", r.REDESIGN_BUTTON_POSITIVE_TEXT = "var(--redesign-button-positive-text)", r.REDESIGN_BUTTON_PRIMARY_ALT_BACKGROUND = "var(--redesign-button-primary-alt-background)", r.REDESIGN_BUTTON_PRIMARY_ALT_BORDER = "var(--redesign-button-primary-alt-border)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_BACKGROUND = "var(--redesign-button-primary-alt-on-blurple-background)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_BORDER = "var(--redesign-button-primary-alt-on-blurple-border)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_PRESSED_BACKGROUND = "var(--redesign-button-primary-alt-on-blurple-pressed-background)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_PRESSED_BORDER = "var(--redesign-button-primary-alt-on-blurple-pressed-border)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_TEXT = "var(--redesign-button-primary-alt-on-blurple-text)", r.REDESIGN_BUTTON_PRIMARY_ALT_PRESSED_BACKGROUND = "var(--redesign-button-primary-alt-pressed-background)", r.REDESIGN_BUTTON_PRIMARY_ALT_PRESSED_BORDER = "var(--redesign-button-primary-alt-pressed-border)", r.REDESIGN_BUTTON_PRIMARY_ALT_PRESSED_TEXT = "var(--redesign-button-primary-alt-pressed-text)", r.REDESIGN_BUTTON_PRIMARY_ALT_TEXT = "var(--redesign-button-primary-alt-text)", r.REDESIGN_BUTTON_PRIMARY_BACKGROUND = "var(--redesign-button-primary-background)", r.REDESIGN_BUTTON_PRIMARY_ON_BLURPLE_PRESSED_TEXT = "var(--redesign-button-primary-on-blurple-pressed-text)", r.REDESIGN_BUTTON_PRIMARY_OVERLAY_BACKGROUND = "var(--redesign-button-primary-overlay-background)", r.REDESIGN_BUTTON_PRIMARY_OVERLAY_PRESSED_BACKGROUND = "var(--redesign-button-primary-overlay-pressed-background)", r.REDESIGN_BUTTON_PRIMARY_OVERLAY_TEXT = "var(--redesign-button-primary-overlay-text)", r.REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND = "var(--redesign-button-primary-pressed-background)", r.REDESIGN_BUTTON_PRIMARY_TEXT = "var(--redesign-button-primary-text)", r.REDESIGN_BUTTON_SECONDARY_BACKGROUND = "var(--redesign-button-secondary-background)", r.REDESIGN_BUTTON_SECONDARY_BORDER = "var(--redesign-button-secondary-border)", r.REDESIGN_BUTTON_SECONDARY_OVERLAY_BACKGROUND = "var(--redesign-button-secondary-overlay-background)", r.REDESIGN_BUTTON_SECONDARY_OVERLAY_PRESSED_BACKGROUND = "var(--redesign-button-secondary-overlay-pressed-background)", r.REDESIGN_BUTTON_SECONDARY_OVERLAY_TEXT = "var(--redesign-button-secondary-overlay-text)", r.REDESIGN_BUTTON_SECONDARY_PRESSED_BACKGROUND = "var(--redesign-button-secondary-pressed-background)", r.REDESIGN_BUTTON_SECONDARY_PRESSED_BORDER = "var(--redesign-button-secondary-pressed-border)", r.REDESIGN_BUTTON_SECONDARY_TEXT = "var(--redesign-button-secondary-text)", r.REDESIGN_BUTTON_SELECTED_BACKGROUND = "var(--redesign-button-selected-background)", r.REDESIGN_BUTTON_SELECTED_PRESSED_BACKGROUND = "var(--redesign-button-selected-pressed-background)", r.REDESIGN_BUTTON_SELECTED_TEXT = "var(--redesign-button-selected-text)", r.REDESIGN_BUTTON_TERTIARY_BACKGROUND = "var(--redesign-button-tertiary-background)", r.REDESIGN_BUTTON_TERTIARY_PRESSED_BACKGROUND = "var(--redesign-button-tertiary-pressed-background)", r.REDESIGN_BUTTON_TERTIARY_PRESSED_TEXT = "var(--redesign-button-tertiary-pressed-text)", r.REDESIGN_BUTTON_TERTIARY_TEXT = "var(--redesign-button-tertiary-text)", r.REDESIGN_CHANNEL_CATEGORY_NAME_TEXT = "var(--redesign-channel-category-name-text)", r.REDESIGN_CHANNEL_MESSAGE_PREVIEW_TEXT = "var(--redesign-channel-message-preview-text)", r.REDESIGN_CHANNEL_NAME_MUTED_TEXT = "var(--redesign-channel-name-muted-text)", r.REDESIGN_CHANNEL_NAME_TEXT = "var(--redesign-channel-name-text)", r.REDESIGN_CHAT_INPUT_BACKGROUND = "var(--redesign-chat-input-background)", r.REDESIGN_IMAGE_BUTTON_PRESSED_BACKGROUND = "var(--redesign-image-button-pressed-background)", r.REDESIGN_INPUT_CONTROL_ACTIVE_BG = "var(--redesign-input-control-active-bg)", r.REDESIGN_INPUT_CONTROL_SELECTED = "var(--redesign-input-control-selected)", r.REDESIGN_ONLY_BACKGROUND_ACTIVE = "var(--redesign-only-background-active)", r.REDESIGN_ONLY_BACKGROUND_DEFAULT = "var(--redesign-only-background-default)", r.REDESIGN_ONLY_BACKGROUND_OVERLAY = "var(--redesign-only-background-overlay)", r.REDESIGN_ONLY_BACKGROUND_RAISED = "var(--redesign-only-background-raised)", r.REDESIGN_ONLY_BACKGROUND_SUNKEN = "var(--redesign-only-background-sunken)", r.SCROLLBAR_AUTO_SCROLLBAR_COLOR_THUMB = "var(--scrollbar-auto-scrollbar-color-thumb)", r.SCROLLBAR_AUTO_SCROLLBAR_COLOR_TRACK = "var(--scrollbar-auto-scrollbar-color-track)", r.SCROLLBAR_AUTO_THUMB = "var(--scrollbar-auto-thumb)", r.SCROLLBAR_AUTO_TRACK = "var(--scrollbar-auto-track)", r.SCROLLBAR_THIN_THUMB = "var(--scrollbar-thin-thumb)", r.SCROLLBAR_THIN_TRACK = "var(--scrollbar-thin-track)", r.SPOILER_HIDDEN_BACKGROUND = "var(--spoiler-hidden-background)", r.SPOILER_REVEALED_BACKGROUND = "var(--spoiler-revealed-background)", r.STATUS_DANGER = "var(--status-danger)", r.STATUS_DANGER_BACKGROUND = "var(--status-danger-background)", r.STATUS_DANGER_TEXT = "var(--status-danger-text)", r.STATUS_DND = "var(--status-dnd)", r.STATUS_IDLE = "var(--status-idle)", r.STATUS_OFFLINE = "var(--status-offline)", r.STATUS_ONLINE = "var(--status-online)", r.STATUS_POSITIVE = "var(--status-positive)", r.STATUS_POSITIVE_BACKGROUND = "var(--status-positive-background)", r.STATUS_POSITIVE_TEXT = "var(--status-positive-text)", r.STATUS_SPEAKING = "var(--status-speaking)", r.STATUS_WARNING = "var(--status-warning)", r.STATUS_WARNING_BACKGROUND = "var(--status-warning-background)", r.STATUS_WARNING_TEXT = "var(--status-warning-text)", r.TEXT_BRAND = "var(--text-brand)", r.TEXT_DANGER = "var(--text-danger)", r.TEXT_LINK = "var(--text-link)", r.TEXT_LINK_LOW_SATURATION = "var(--text-link-low-saturation)", r.TEXT_LOW_CONTRAST = "var(--text-low-contrast)", r.TEXT_MESSAGE_PREVIEW_LOW_SAT = "var(--text-message-preview-low-sat)", r.TEXT_MUTED = "var(--text-muted)", r.TEXT_MUTED_ON_DEFAULT = "var(--text-muted-on-default)", r.TEXT_NORMAL = "var(--text-normal)", r.TEXT_POSITIVE = "var(--text-positive)", r.TEXT_PRIMARY = "var(--text-primary)", r.TEXT_SECONDARY = "var(--text-secondary)", r.TEXT_WARNING = "var(--text-warning)", r.TEXTBOX_MARKDOWN_SYNTAX = "var(--textbox-markdown-syntax)", r.THEME_LOCKED_BLUR_FALLBACK = "var(--theme-locked-blur-fallback)", r.TOAST_BG = "var(--toast-bg)", r.TYPING_INDICATOR_BG = "var(--typing-indicator-bg)", r.USER_PROFILE_HEADER_OVERFLOW_BACKGROUND = "var(--user-profile-header-overflow-background)", r.VOICE_VIDEO_VIDEO_TILE_BACKGROUND = "var(--voice-video-video-tile-background)", r.VOICE_VIDEO_VIDEO_TILE_BLUR_FALLBACK = "var(--voice-video-video-tile-blur-fallback)", r.WHITE = "var(--white)", r.YOU_BAR_BG = "var(--you-bar-bg)", t.default = i
+            n.r(t), (r = i || (i = {})).ACTION_SHEET_GRADIENT_BG = "var(--action-sheet-gradient-bg)", r.ACTIVITY_CARD_BACKGROUND = "var(--activity-card-background)", r.ACTIVITY_CARD_ICON_OVERLAY = "var(--activity-card-icon-overlay)", r.ALERT_BG = "var(--alert-bg)", r.ANDROID_NAVIGATION_BAR_BACKGROUND = "var(--android-navigation-bar-background)", r.ANDROID_NAVIGATION_SCRIM_BACKGROUND = "var(--android-navigation-scrim-background)", r.ANDROID_RIPPLE = "var(--android-ripple)", r.BACKGROUND_ACCENT = "var(--background-accent)", r.BACKGROUND_FLOATING = "var(--background-floating)", r.BACKGROUND_MENTIONED = "var(--background-mentioned)", r.BACKGROUND_MENTIONED_HOVER = "var(--background-mentioned-hover)", r.BACKGROUND_MESSAGE_AUTOMOD = "var(--background-message-automod)", r.BACKGROUND_MESSAGE_AUTOMOD_HOVER = "var(--background-message-automod-hover)", r.BACKGROUND_MESSAGE_HIGHLIGHT = "var(--background-message-highlight)", r.BACKGROUND_MESSAGE_HIGHLIGHT_HOVER = "var(--background-message-highlight-hover)", r.BACKGROUND_MESSAGE_HOVER = "var(--background-message-hover)", r.BACKGROUND_MOBILE_PRIMARY = "var(--background-mobile-primary)", r.BACKGROUND_MOBILE_SECONDARY = "var(--background-mobile-secondary)", r.BACKGROUND_MODIFIER_ACCENT = "var(--background-modifier-accent)", r.BACKGROUND_MODIFIER_ACCENT_2 = "var(--background-modifier-accent-2)", r.BACKGROUND_MODIFIER_ACTIVE = "var(--background-modifier-active)", r.BACKGROUND_MODIFIER_HOVER = "var(--background-modifier-hover)", r.BACKGROUND_MODIFIER_SELECTED = "var(--background-modifier-selected)", r.BACKGROUND_NESTED_FLOATING = "var(--background-nested-floating)", r.BACKGROUND_PRIMARY = "var(--background-primary)", r.BACKGROUND_SECONDARY = "var(--background-secondary)", r.BACKGROUND_SECONDARY_ALT = "var(--background-secondary-alt)", r.BACKGROUND_TERTIARY = "var(--background-tertiary)", r.BG_BACKDROP = "var(--bg-backdrop)", r.BG_BACKDROP_NO_OPACITY = "var(--bg-backdrop-no-opacity)", r.BG_BASE_PRIMARY = "var(--bg-base-primary)", r.BG_BASE_SECONDARY = "var(--bg-base-secondary)", r.BG_BASE_TERTIARY = "var(--bg-base-tertiary)", r.BG_BRAND = "var(--bg-brand)", r.BG_MOD_FAINT = "var(--bg-mod-faint)", r.BG_MOD_STRONG = "var(--bg-mod-strong)", r.BG_MOD_SUBTLE = "var(--bg-mod-subtle)", r.BG_SURFACE_OVERLAY = "var(--bg-surface-overlay)", r.BG_SURFACE_OVERLAY_TMP = "var(--bg-surface-overlay-tmp)", r.BG_SURFACE_RAISED = "var(--bg-surface-raised)", r.BLACK = "var(--black)", r.BLUR_FALLBACK = "var(--blur-fallback)", r.BLUR_FALLBACK_PRESSED = "var(--blur-fallback-pressed)", r.BORDER_FAINT = "var(--border-faint)", r.BORDER_STRONG = "var(--border-strong)", r.BORDER_SUBTLE = "var(--border-subtle)", r.BUG_REPORTER_MODAL_SUBMITTING_BACKGROUND = "var(--bug-reporter-modal-submitting-background)", r.BUTTON_CREATOR_REVENUE_BACKGROUND = "var(--button-creator-revenue-background)", r.BUTTON_DANGER_BACKGROUND = "var(--button-danger-background)", r.BUTTON_DANGER_BACKGROUND_ACTIVE = "var(--button-danger-background-active)", r.BUTTON_DANGER_BACKGROUND_DISABLED = "var(--button-danger-background-disabled)", r.BUTTON_DANGER_BACKGROUND_HOVER = "var(--button-danger-background-hover)", r.BUTTON_OUTLINE_BRAND_BACKGROUND = "var(--button-outline-brand-background)", r.BUTTON_OUTLINE_BRAND_BACKGROUND_ACTIVE = "var(--button-outline-brand-background-active)", r.BUTTON_OUTLINE_BRAND_BACKGROUND_HOVER = "var(--button-outline-brand-background-hover)", r.BUTTON_OUTLINE_BRAND_BORDER = "var(--button-outline-brand-border)", r.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE = "var(--button-outline-brand-border-active)", r.BUTTON_OUTLINE_BRAND_BORDER_HOVER = "var(--button-outline-brand-border-hover)", r.BUTTON_OUTLINE_BRAND_TEXT = "var(--button-outline-brand-text)", r.BUTTON_OUTLINE_BRAND_TEXT_ACTIVE = "var(--button-outline-brand-text-active)", r.BUTTON_OUTLINE_BRAND_TEXT_HOVER = "var(--button-outline-brand-text-hover)", r.BUTTON_OUTLINE_DANGER_BACKGROUND = "var(--button-outline-danger-background)", r.BUTTON_OUTLINE_DANGER_BACKGROUND_ACTIVE = "var(--button-outline-danger-background-active)", r.BUTTON_OUTLINE_DANGER_BACKGROUND_HOVER = "var(--button-outline-danger-background-hover)", r.BUTTON_OUTLINE_DANGER_BORDER = "var(--button-outline-danger-border)", r.BUTTON_OUTLINE_DANGER_BORDER_ACTIVE = "var(--button-outline-danger-border-active)", r.BUTTON_OUTLINE_DANGER_BORDER_HOVER = "var(--button-outline-danger-border-hover)", r.BUTTON_OUTLINE_DANGER_TEXT = "var(--button-outline-danger-text)", r.BUTTON_OUTLINE_DANGER_TEXT_ACTIVE = "var(--button-outline-danger-text-active)", r.BUTTON_OUTLINE_DANGER_TEXT_HOVER = "var(--button-outline-danger-text-hover)", r.BUTTON_OUTLINE_POSITIVE_BACKGROUND = "var(--button-outline-positive-background)", r.BUTTON_OUTLINE_POSITIVE_BACKGROUND_ACTIVE = "var(--button-outline-positive-background-active)", r.BUTTON_OUTLINE_POSITIVE_BACKGROUND_HOVER = "var(--button-outline-positive-background-hover)", r.BUTTON_OUTLINE_POSITIVE_BORDER = "var(--button-outline-positive-border)", r.BUTTON_OUTLINE_POSITIVE_BORDER_ACTIVE = "var(--button-outline-positive-border-active)", r.BUTTON_OUTLINE_POSITIVE_BORDER_HOVER = "var(--button-outline-positive-border-hover)", r.BUTTON_OUTLINE_POSITIVE_TEXT = "var(--button-outline-positive-text)", r.BUTTON_OUTLINE_POSITIVE_TEXT_ACTIVE = "var(--button-outline-positive-text-active)", r.BUTTON_OUTLINE_POSITIVE_TEXT_HOVER = "var(--button-outline-positive-text-hover)", r.BUTTON_OUTLINE_PRIMARY_BACKGROUND = "var(--button-outline-primary-background)", r.BUTTON_OUTLINE_PRIMARY_BACKGROUND_ACTIVE = "var(--button-outline-primary-background-active)", r.BUTTON_OUTLINE_PRIMARY_BACKGROUND_HOVER = "var(--button-outline-primary-background-hover)", r.BUTTON_OUTLINE_PRIMARY_BORDER = "var(--button-outline-primary-border)", r.BUTTON_OUTLINE_PRIMARY_BORDER_ACTIVE = "var(--button-outline-primary-border-active)", r.BUTTON_OUTLINE_PRIMARY_BORDER_HOVER = "var(--button-outline-primary-border-hover)", r.BUTTON_OUTLINE_PRIMARY_TEXT = "var(--button-outline-primary-text)", r.BUTTON_OUTLINE_PRIMARY_TEXT_ACTIVE = "var(--button-outline-primary-text-active)", r.BUTTON_OUTLINE_PRIMARY_TEXT_HOVER = "var(--button-outline-primary-text-hover)", r.BUTTON_POSITIVE_BACKGROUND = "var(--button-positive-background)", r.BUTTON_POSITIVE_BACKGROUND_ACTIVE = "var(--button-positive-background-active)", r.BUTTON_POSITIVE_BACKGROUND_DISABLED = "var(--button-positive-background-disabled)", r.BUTTON_POSITIVE_BACKGROUND_HOVER = "var(--button-positive-background-hover)", r.BUTTON_SECONDARY_BACKGROUND = "var(--button-secondary-background)", r.BUTTON_SECONDARY_BACKGROUND_ACTIVE = "var(--button-secondary-background-active)", r.BUTTON_SECONDARY_BACKGROUND_DISABLED = "var(--button-secondary-background-disabled)", r.BUTTON_SECONDARY_BACKGROUND_HOVER = "var(--button-secondary-background-hover)", r.CARD_GRADIENT_BG = "var(--card-gradient-bg)", r.CARD_GRADIENT_PRESSED_BG = "var(--card-gradient-pressed-bg)", r.CARD_PRIMARY_BG = "var(--card-primary-bg)", r.CARD_PRIMARY_PRESSED_BG = "var(--card-primary-pressed-bg)", r.CARD_SECONDARY_BG = "var(--card-secondary-bg)", r.CARD_SECONDARY_PRESSED_BG = "var(--card-secondary-pressed-bg)", r.CHANNEL_ICON = "var(--channel-icon)", r.CHANNEL_TEXT_AREA_PLACEHOLDER = "var(--channel-text-area-placeholder)", r.CHANNELS_DEFAULT = "var(--channels-default)", r.CHANNELTEXTAREA_BACKGROUND = "var(--channeltextarea-background)", r.CHAT_BACKGROUND = "var(--chat-background)", r.CHAT_BANNER_BG = "var(--chat-banner-bg)", r.CHAT_BORDER = "var(--chat-border)", r.CHAT_INPUT_CONTAINER_BACKGROUND = "var(--chat-input-container-background)", r.CHAT_SWIPE_TO_REPLY_BACKGROUND = "var(--chat-swipe-to-reply-background)", r.CHAT_SWIPE_TO_REPLY_GRADIENT_BACKGROUND = "var(--chat-swipe-to-reply-gradient-background)", r.COACHMARK_BG = "var(--coachmark-bg)", r.CONTEXT_MENU_BACKDROP_BACKGROUND = "var(--context-menu-backdrop-background)", r.CONTROL_BRAND_FOREGROUND = "var(--control-brand-foreground)", r.CONTROL_BRAND_FOREGROUND_NEW = "var(--control-brand-foreground-new)", r.CREATOR_REVENUE_ICON_GRADIENT_END = "var(--creator-revenue-icon-gradient-end)", r.CREATOR_REVENUE_ICON_GRADIENT_START = "var(--creator-revenue-icon-gradient-start)", r.CREATOR_REVENUE_INFO_BOX_BACKGROUND = "var(--creator-revenue-info-box-background)", r.CREATOR_REVENUE_INFO_BOX_BORDER = "var(--creator-revenue-info-box-border)", r.CREATOR_REVENUE_LOCKED_CHANNEL_ICON = "var(--creator-revenue-locked-channel-icon)", r.CREATOR_REVENUE_PROGRESS_BAR = "var(--creator-revenue-progress-bar)", r.DEPRECATED_CARD_BG = "var(--deprecated-card-bg)", r.DEPRECATED_CARD_EDITABLE_BG = "var(--deprecated-card-editable-bg)", r.DEPRECATED_QUICKSWITCHER_INPUT_BACKGROUND = "var(--deprecated-quickswitcher-input-background)", r.DEPRECATED_QUICKSWITCHER_INPUT_PLACEHOLDER = "var(--deprecated-quickswitcher-input-placeholder)", r.DEPRECATED_STORE_BG = "var(--deprecated-store-bg)", r.DEPRECATED_TEXT_INPUT_BG = "var(--deprecated-text-input-bg)", r.DEPRECATED_TEXT_INPUT_BORDER = "var(--deprecated-text-input-border)", r.DEPRECATED_TEXT_INPUT_BORDER_DISABLED = "var(--deprecated-text-input-border-disabled)", r.DEPRECATED_TEXT_INPUT_BORDER_HOVER = "var(--deprecated-text-input-border-hover)", r.DEPRECATED_TEXT_INPUT_PREFIX = "var(--deprecated-text-input-prefix)", r.DISPLAY_BANNER_OVERFLOW_BACKGROUND = "var(--display-banner-overflow-background)", r.DIVIDER_STRONG = "var(--divider-strong)", r.DIVIDER_SUBTLE = "var(--divider-subtle)", r.EMBED_BACKGROUND = "var(--embed-background)", r.EMBED_BACKGROUND_ALTERNATE = "var(--embed-background-alternate)", r.EMBED_TITLE = "var(--embed-title)", r.EXPRESSION_PICKER_BG = "var(--expression-picker-bg)", r.FOCUS_PRIMARY = "var(--focus-primary)", r.FORUM_POST_EXTRA_MEDIA_COUNT_CONTAINER_BACKGROUND = "var(--forum-post-extra-media-count-container-background)", r.FORUM_POST_TAG_BACKGROUND = "var(--forum-post-tag-background)", r.GUILD_ICON_INACTIVE_BG = "var(--guild-icon-inactive-bg)", r.GUILD_ICON_INACTIVE_NESTED_BG = "var(--guild-icon-inactive-nested-bg)", r.GUILD_NOTIFICATIONS_BOTTOM_SHEET_PILL_BACKGROUND = "var(--guild-notifications-bottom-sheet-pill-background)", r.HALO_POSITIVE = "var(--halo-positive)", r.HEADER_MUTED = "var(--header-muted)", r.HEADER_PRIMARY = "var(--header-primary)", r.HEADER_SECONDARY = "var(--header-secondary)", r.HOME_BACKGROUND = "var(--home-background)", r.HOME_CARD_RESTING_BORDER = "var(--home-card-resting-border)", r.ICON_MUTED = "var(--icon-muted)", r.ICON_PRIMARY = "var(--icon-primary)", r.ICON_SECONDARY = "var(--icon-secondary)", r.ICON_TRANSPARENT = "var(--icon-transparent)", r.INFO_BOX_BACKGROUND = "var(--info-box-background)", r.INFO_DANGER_BACKGROUND = "var(--info-danger-background)", r.INFO_DANGER_FOREGROUND = "var(--info-danger-foreground)", r.INFO_DANGER_TEXT = "var(--info-danger-text)", r.INFO_HELP_BACKGROUND = "var(--info-help-background)", r.INFO_HELP_FOREGROUND = "var(--info-help-foreground)", r.INFO_HELP_TEXT = "var(--info-help-text)", r.INFO_POSITIVE_BACKGROUND = "var(--info-positive-background)", r.INFO_POSITIVE_FOREGROUND = "var(--info-positive-foreground)", r.INFO_POSITIVE_TEXT = "var(--info-positive-text)", r.INFO_WARNING_BACKGROUND = "var(--info-warning-background)", r.INFO_WARNING_FOREGROUND = "var(--info-warning-foreground)", r.INFO_WARNING_TEXT = "var(--info-warning-text)", r.INPUT_BACKGROUND = "var(--input-background)", r.INPUT_FOCUSED_BORDER = "var(--input-focused-border)", r.INPUT_PLACEHOLDER_TEXT = "var(--input-placeholder-text)", r.INTERACTIVE_ACTIVE = "var(--interactive-active)", r.INTERACTIVE_HOVER = "var(--interactive-hover)", r.INTERACTIVE_MUTED = "var(--interactive-muted)", r.INTERACTIVE_NORMAL = "var(--interactive-normal)", r.LEGACY_ANDROID_BLUR_OVERLAY_DEFAULT = "var(--legacy-android-blur-overlay-default)", r.LEGACY_ANDROID_BLUR_OVERLAY_ULTRA_THIN = "var(--legacy-android-blur-overlay-ultra-thin)", r.LEGACY_BLUR_FALLBACK_DEFAULT = "var(--legacy-blur-fallback-default)", r.LEGACY_BLUR_FALLBACK_ULTRA_THIN = "var(--legacy-blur-fallback-ultra-thin)", r.LIVE_STAGE_TILE_BORDER = "var(--live-stage-tile-border)", r.LOGO_PRIMARY = "var(--logo-primary)", r.MENTION_BACKGROUND = "var(--mention-background)", r.MENTION_FOREGROUND = "var(--mention-foreground)", r.MODAL_BACKGROUND = "var(--modal-background)", r.MODAL_FOOTER_BACKGROUND = "var(--modal-footer-background)", r.NAVIGATOR_HEADER_TINT = "var(--navigator-header-tint)", r.PANEL_BG = "var(--panel-bg)", r.POLLS_NORMAL_FILL_HOVER = "var(--polls-normal-fill-hover)", r.POLLS_NORMAL_IMAGE_BACKGROUND = "var(--polls-normal-image-background)", r.POLLS_VICTOR_FILL = "var(--polls-victor-fill)", r.POLLS_VOTED_FILL = "var(--polls-voted-fill)", r.PROFILE_GRADIENT_CARD_BACKGROUND = "var(--profile-gradient-card-background)", r.PROFILE_GRADIENT_MESSAGE_INPUT_BORDER = "var(--profile-gradient-message-input-border)", r.PROFILE_GRADIENT_NOTE_BACKGROUND = "var(--profile-gradient-note-background)", r.PROFILE_GRADIENT_OVERLAY = "var(--profile-gradient-overlay)", r.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME = "var(--profile-gradient-overlay-synced-with-user-theme)", r.PROFILE_GRADIENT_PROFILE_BODY_BACKGROUND_HOVER = "var(--profile-gradient-profile-body-background-hover)", r.PROFILE_GRADIENT_ROLE_PILL_BACKGROUND = "var(--profile-gradient-role-pill-background)", r.PROFILE_GRADIENT_ROLE_PILL_BORDER = "var(--profile-gradient-role-pill-border)", r.PROFILE_GRADIENT_SECTION_BOX = "var(--profile-gradient-section-box)", r.REDESIGN_ACTIVITY_CARD_BACKGROUND = "var(--redesign-activity-card-background)", r.REDESIGN_ACTIVITY_CARD_BACKGROUND_PRESSED = "var(--redesign-activity-card-background-pressed)", r.REDESIGN_ACTIVITY_CARD_BADGE_ICON = "var(--redesign-activity-card-badge-icon)", r.REDESIGN_ACTIVITY_CARD_BORDER = "var(--redesign-activity-card-border)", r.REDESIGN_ACTIVITY_CARD_OVERFLOW_BACKGROUND = "var(--redesign-activity-card-overflow-background)", r.REDESIGN_BUTTON_ACTIVE_BACKGROUND = "var(--redesign-button-active-background)", r.REDESIGN_BUTTON_ACTIVE_PRESSED_BACKGROUND = "var(--redesign-button-active-pressed-background)", r.REDESIGN_BUTTON_ACTIVE_TEXT = "var(--redesign-button-active-text)", r.REDESIGN_BUTTON_DANGER_BACKGROUND = "var(--redesign-button-danger-background)", r.REDESIGN_BUTTON_DANGER_PRESSED_BACKGROUND = "var(--redesign-button-danger-pressed-background)", r.REDESIGN_BUTTON_DANGER_TEXT = "var(--redesign-button-danger-text)", r.REDESIGN_BUTTON_DESTRUCTIVE_BACKGROUND = "var(--redesign-button-destructive-background)", r.REDESIGN_BUTTON_DESTRUCTIVE_PRESSED_BACKGROUND = "var(--redesign-button-destructive-pressed-background)", r.REDESIGN_BUTTON_DESTRUCTIVE_TEXT = "var(--redesign-button-destructive-text)", r.REDESIGN_BUTTON_OVERLAY_ALPHA_BACKGROUND = "var(--redesign-button-overlay-alpha-background)", r.REDESIGN_BUTTON_OVERLAY_ALPHA_PRESSED_BACKGROUND = "var(--redesign-button-overlay-alpha-pressed-background)", r.REDESIGN_BUTTON_OVERLAY_ALPHA_TEXT = "var(--redesign-button-overlay-alpha-text)", r.REDESIGN_BUTTON_OVERLAY_BACKGROUND = "var(--redesign-button-overlay-background)", r.REDESIGN_BUTTON_OVERLAY_PRESSED_BACKGROUND = "var(--redesign-button-overlay-pressed-background)", r.REDESIGN_BUTTON_OVERLAY_TEXT = "var(--redesign-button-overlay-text)", r.REDESIGN_BUTTON_POSITIVE_BACKGROUND = "var(--redesign-button-positive-background)", r.REDESIGN_BUTTON_POSITIVE_PRESSED_BACKGROUND = "var(--redesign-button-positive-pressed-background)", r.REDESIGN_BUTTON_POSITIVE_TEXT = "var(--redesign-button-positive-text)", r.REDESIGN_BUTTON_PRIMARY_ALT_BACKGROUND = "var(--redesign-button-primary-alt-background)", r.REDESIGN_BUTTON_PRIMARY_ALT_BORDER = "var(--redesign-button-primary-alt-border)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_BACKGROUND = "var(--redesign-button-primary-alt-on-blurple-background)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_BORDER = "var(--redesign-button-primary-alt-on-blurple-border)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_PRESSED_BACKGROUND = "var(--redesign-button-primary-alt-on-blurple-pressed-background)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_PRESSED_BORDER = "var(--redesign-button-primary-alt-on-blurple-pressed-border)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_TEXT = "var(--redesign-button-primary-alt-on-blurple-text)", r.REDESIGN_BUTTON_PRIMARY_ALT_PRESSED_BACKGROUND = "var(--redesign-button-primary-alt-pressed-background)", r.REDESIGN_BUTTON_PRIMARY_ALT_PRESSED_BORDER = "var(--redesign-button-primary-alt-pressed-border)", r.REDESIGN_BUTTON_PRIMARY_ALT_PRESSED_TEXT = "var(--redesign-button-primary-alt-pressed-text)", r.REDESIGN_BUTTON_PRIMARY_ALT_TEXT = "var(--redesign-button-primary-alt-text)", r.REDESIGN_BUTTON_PRIMARY_BACKGROUND = "var(--redesign-button-primary-background)", r.REDESIGN_BUTTON_PRIMARY_ON_BLURPLE_PRESSED_TEXT = "var(--redesign-button-primary-on-blurple-pressed-text)", r.REDESIGN_BUTTON_PRIMARY_OVERLAY_BACKGROUND = "var(--redesign-button-primary-overlay-background)", r.REDESIGN_BUTTON_PRIMARY_OVERLAY_PRESSED_BACKGROUND = "var(--redesign-button-primary-overlay-pressed-background)", r.REDESIGN_BUTTON_PRIMARY_OVERLAY_TEXT = "var(--redesign-button-primary-overlay-text)", r.REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND = "var(--redesign-button-primary-pressed-background)", r.REDESIGN_BUTTON_PRIMARY_TEXT = "var(--redesign-button-primary-text)", r.REDESIGN_BUTTON_SECONDARY_BACKGROUND = "var(--redesign-button-secondary-background)", r.REDESIGN_BUTTON_SECONDARY_BORDER = "var(--redesign-button-secondary-border)", r.REDESIGN_BUTTON_SECONDARY_OVERLAY_BACKGROUND = "var(--redesign-button-secondary-overlay-background)", r.REDESIGN_BUTTON_SECONDARY_OVERLAY_PRESSED_BACKGROUND = "var(--redesign-button-secondary-overlay-pressed-background)", r.REDESIGN_BUTTON_SECONDARY_OVERLAY_TEXT = "var(--redesign-button-secondary-overlay-text)", r.REDESIGN_BUTTON_SECONDARY_PRESSED_BACKGROUND = "var(--redesign-button-secondary-pressed-background)", r.REDESIGN_BUTTON_SECONDARY_PRESSED_BORDER = "var(--redesign-button-secondary-pressed-border)", r.REDESIGN_BUTTON_SECONDARY_TEXT = "var(--redesign-button-secondary-text)", r.REDESIGN_BUTTON_SELECTED_BACKGROUND = "var(--redesign-button-selected-background)", r.REDESIGN_BUTTON_SELECTED_PRESSED_BACKGROUND = "var(--redesign-button-selected-pressed-background)", r.REDESIGN_BUTTON_SELECTED_TEXT = "var(--redesign-button-selected-text)", r.REDESIGN_BUTTON_TERTIARY_BACKGROUND = "var(--redesign-button-tertiary-background)", r.REDESIGN_BUTTON_TERTIARY_PRESSED_BACKGROUND = "var(--redesign-button-tertiary-pressed-background)", r.REDESIGN_BUTTON_TERTIARY_PRESSED_TEXT = "var(--redesign-button-tertiary-pressed-text)", r.REDESIGN_BUTTON_TERTIARY_TEXT = "var(--redesign-button-tertiary-text)", r.REDESIGN_CHANNEL_CATEGORY_NAME_TEXT = "var(--redesign-channel-category-name-text)", r.REDESIGN_CHANNEL_MESSAGE_PREVIEW_TEXT = "var(--redesign-channel-message-preview-text)", r.REDESIGN_CHANNEL_NAME_MUTED_TEXT = "var(--redesign-channel-name-muted-text)", r.REDESIGN_CHANNEL_NAME_TEXT = "var(--redesign-channel-name-text)", r.REDESIGN_CHAT_INPUT_BACKGROUND = "var(--redesign-chat-input-background)", r.REDESIGN_IMAGE_BUTTON_PRESSED_BACKGROUND = "var(--redesign-image-button-pressed-background)", r.REDESIGN_INPUT_CONTROL_ACTIVE_BG = "var(--redesign-input-control-active-bg)", r.REDESIGN_INPUT_CONTROL_SELECTED = "var(--redesign-input-control-selected)", r.REDESIGN_ONLY_BACKGROUND_ACTIVE = "var(--redesign-only-background-active)", r.REDESIGN_ONLY_BACKGROUND_DEFAULT = "var(--redesign-only-background-default)", r.REDESIGN_ONLY_BACKGROUND_OVERLAY = "var(--redesign-only-background-overlay)", r.REDESIGN_ONLY_BACKGROUND_RAISED = "var(--redesign-only-background-raised)", r.REDESIGN_ONLY_BACKGROUND_SUNKEN = "var(--redesign-only-background-sunken)", r.SCROLLBAR_AUTO_SCROLLBAR_COLOR_THUMB = "var(--scrollbar-auto-scrollbar-color-thumb)", r.SCROLLBAR_AUTO_SCROLLBAR_COLOR_TRACK = "var(--scrollbar-auto-scrollbar-color-track)", r.SCROLLBAR_AUTO_THUMB = "var(--scrollbar-auto-thumb)", r.SCROLLBAR_AUTO_TRACK = "var(--scrollbar-auto-track)", r.SCROLLBAR_THIN_THUMB = "var(--scrollbar-thin-thumb)", r.SCROLLBAR_THIN_TRACK = "var(--scrollbar-thin-track)", r.SPOILER_HIDDEN_BACKGROUND = "var(--spoiler-hidden-background)", r.SPOILER_REVEALED_BACKGROUND = "var(--spoiler-revealed-background)", r.STATUS_DANGER = "var(--status-danger)", r.STATUS_DANGER_BACKGROUND = "var(--status-danger-background)", r.STATUS_DANGER_TEXT = "var(--status-danger-text)", r.STATUS_DND = "var(--status-dnd)", r.STATUS_IDLE = "var(--status-idle)", r.STATUS_OFFLINE = "var(--status-offline)", r.STATUS_ONLINE = "var(--status-online)", r.STATUS_POSITIVE = "var(--status-positive)", r.STATUS_POSITIVE_BACKGROUND = "var(--status-positive-background)", r.STATUS_POSITIVE_TEXT = "var(--status-positive-text)", r.STATUS_SPEAKING = "var(--status-speaking)", r.STATUS_WARNING = "var(--status-warning)", r.STATUS_WARNING_BACKGROUND = "var(--status-warning-background)", r.STATUS_WARNING_TEXT = "var(--status-warning-text)", r.TEXT_BRAND = "var(--text-brand)", r.TEXT_DANGER = "var(--text-danger)", r.TEXT_LINK = "var(--text-link)", r.TEXT_LINK_LOW_SATURATION = "var(--text-link-low-saturation)", r.TEXT_LOW_CONTRAST = "var(--text-low-contrast)", r.TEXT_MESSAGE_PREVIEW_LOW_SAT = "var(--text-message-preview-low-sat)", r.TEXT_MUTED = "var(--text-muted)", r.TEXT_MUTED_ON_DEFAULT = "var(--text-muted-on-default)", r.TEXT_NORMAL = "var(--text-normal)", r.TEXT_POSITIVE = "var(--text-positive)", r.TEXT_PRIMARY = "var(--text-primary)", r.TEXT_SECONDARY = "var(--text-secondary)", r.TEXT_WARNING = "var(--text-warning)", r.TEXTBOX_MARKDOWN_SYNTAX = "var(--textbox-markdown-syntax)", r.THEME_LOCKED_BLUR_FALLBACK = "var(--theme-locked-blur-fallback)", r.THREAD_CHANNEL_SPINE = "var(--thread-channel-spine)", r.TOAST_BG = "var(--toast-bg)", r.TYPING_INDICATOR_BG = "var(--typing-indicator-bg)", r.USER_PROFILE_HEADER_OVERFLOW_BACKGROUND = "var(--user-profile-header-overflow-background)", r.VOICE_VIDEO_VIDEO_TILE_BACKGROUND = "var(--voice-video-video-tile-background)", r.VOICE_VIDEO_VIDEO_TILE_BLUR_FALLBACK = "var(--voice-video-video-tile-blur-fallback)", r.WHITE = "var(--white)", r.YOU_BAR_BG = "var(--you-bar-bg)", t.default = i
         },
         719711: function(e, t, n) {
             "use strict";
@@ -290919,11 +290821,7 @@
         804098: function(e, t, n) {
             "use strict";
             var i, r;
-            n.r(t), n.d(t, {
-                DesignIds: function() {
-                    return i
-                }
-            }), (r = i || (i = {}))[r.CLASSIC_IA = 0] = "CLASSIC_IA", r[r.DESIGN_IA = 1] = "DESIGN_IA", r[r.DESIGN_TABS_IA = 2] = "DESIGN_TABS_IA", r[r.YOU_BAR_IA = 3] = "YOU_BAR_IA"
+            n.r(t), (r = i || (i = {}))[r.CLASSIC_IA = 0] = "CLASSIC_IA", r[r.DESIGN_IA = 1] = "DESIGN_IA", r[r.DESIGN_TABS_IA = 2] = "DESIGN_TABS_IA", r[r.YOU_BAR_IA = 3] = "YOU_BAR_IA"
         },
         438954: function(e, t, n) {
             "use strict";
@@ -291854,4 +291752,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.d51aff81bf9860d235bf.js.map
+//# sourceMappingURL=97256.d3a7a76dc4cce5c3926f.js.map

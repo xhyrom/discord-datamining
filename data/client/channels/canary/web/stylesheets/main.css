@@ -129250,6 +129250,7 @@ div.nagbar_c731ff {
     --text-warning: var(--yellow-300);
     --textbox-markdown-syntax: var(--primary-360);
     --theme-locked-blur-fallback: hsl(var(--primary-700-hsl) / 0.96);
+    --thread-channel-spine: var(--primary-500);
     --toast-bg: var(--primary-800);
     --typing-indicator-bg: var(--primary-630);
     --user-profile-header-overflow-background: hsl(var(--primary-700-hsl) / 0.5);
@@ -129566,6 +129567,7 @@ div.nagbar_c731ff {
     --text-warning: var(--yellow-430);
     --textbox-markdown-syntax: var(--primary-530);
     --theme-locked-blur-fallback: hsl(var(--primary-700-hsl) / 0.96);
+    --thread-channel-spine: var(--primary-300);
     --toast-bg: var(--white-500);
     --typing-indicator-bg: var(--primary-130);
     --user-profile-header-overflow-background: hsl(var(--white-200-hsl) / 0.5);
@@ -129882,6 +129884,7 @@ div.nagbar_c731ff {
     --text-warning: var(--yellow-300);
     --textbox-markdown-syntax: var(--plum-9);
     --theme-locked-blur-fallback: hsl(var(--primary-700-hsl) / 0.96);
+    --thread-channel-spine: var(--plum-13);
     --toast-bg: var(--plum-19);
     --typing-indicator-bg: var(--black-500);
     --user-profile-header-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
@@ -130198,6 +130201,7 @@ div.nagbar_c731ff {
     --text-warning: var(--yellow-300);
     --textbox-markdown-syntax: var(--plum-9);
     --theme-locked-blur-fallback: hsl(var(--primary-700-hsl) / 0.96);
+    --thread-channel-spine: var(--plum-13);
     --toast-bg: var(--plum-17);
     --typing-indicator-bg: var(--plum-20);
     --user-profile-header-overflow-background: hsl(var(--plum-20-hsl) / 0.5);
@@ -131504,4 +131508,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.a65d5b1e6ad1a54fd21a.css.map*/
+/*# sourceMappingURL=99387.5c91aa555ab6c63bc64c.css.map*/
