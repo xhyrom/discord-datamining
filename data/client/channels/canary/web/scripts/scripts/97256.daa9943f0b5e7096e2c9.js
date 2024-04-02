@@ -36549,7 +36549,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281021", ", Version Hash: ").concat("e2760b1077dd25a5e6e4dce4db3887e70f3ee0c8")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281029", ", Version Hash: ").concat("a8905434eb9a31d88b540fa9924189b586bccf2d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -54848,6 +54848,8 @@
                 MEMBER_LIST_CONTENT_FEED_FIRST_TIME: "First time",
                 MEMBER_LIST_CONTENT_FEED_WATCHED_MEDIA: "Watched **{mediaTitle}**",
                 MEMBER_LIST_CONTENT_FEED_USER_WATCHED_MEDIA: "{userName} watched **{mediaTitle}** ({episodeDescription})",
+                MEMBER_LIST_CONTENT_FEED_TOP_GAME: "Top game",
+                MEMBER_LIST_CONTENT_FEED_TOP_GAME_WEEK_POPOUT: "{userName}'s top game this week: **{gameName}**",
                 CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity",
                 CONTENT_INVENTORY_MEMBERLIST_SETTINGS_HIDE: "Hide Activity Cards",
                 CONTENT_INVENTORY_MEMBERLIST_SETTINGS_ABOUT: "About Recent Activity",
@@ -85496,8 +85498,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281021", "281021"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281021")), t = 0), t
+                let t = parseInt((e = "281029", "281029"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281029")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107505,8 +107507,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281021",
-                    versionHash: "e2760b1077dd25a5e6e4dce4db3887e70f3ee0c8"
+                    buildNumber: "281029",
+                    versionHash: "a8905434eb9a31d88b540fa9924189b586bccf2d"
                 }
             }
             n.r(t), n.d(t, {
@@ -157755,8 +157757,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712098474189",
-                                    build_number: "281021"
+                                    built_at: "1712099443752",
+                                    build_number: "281029"
                                 }
                             },
                             retries: 1
@@ -166698,28 +166700,51 @@
             "use strict";
             n.r(t), n.d(t, {
                 checkRecipientEligibility: function() {
-                    return u
+                    return _
                 },
                 createReferralTrial: function() {
-                    return d
+                    return c
+                },
+                fetchReferralEligibleUsers: function() {
+                    return u
                 },
                 fetchReferralsRemaining: function() {
-                    return l
+                    return d
                 },
                 resolveReferralTrialOffer: function() {
-                    return _
+                    return E
                 }
             });
             var i = n("544891"),
                 r = n("570140"),
-                s = n("904245");
-            n("598077");
-            var a = n("944486"),
-                o = n("981631");
-            let l = () => (r.default.dispatch({
+                s = n("904245"),
+                a = n("598077"),
+                o = n("944486"),
+                l = n("981631");
+            async function u() {
+                r.default.dispatch({
+                    type: "REFERRALS_FETCH_ELIGIBLE_USER_START"
+                });
+                try {
+                    var e;
+                    let t = await i.HTTP.get({
+                        url: l.Endpoints.GET_REFERRAL_ELIGIBLE_USERS,
+                        oldFormErrors: !0
+                    });
+                    r.default.dispatch({
+                        type: "REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS",
+                        users: (null === (e = t.body) || void 0 === e ? void 0 : e.users) != null ? t.body.users.map(e => new a.default(e)) : []
+                    })
+                } catch (e) {
+                    r.default.dispatch({
+                        type: "REFERRALS_FETCH_ELIGIBLE_USER_FAIL"
+                    })
+                }
+            }
+            let d = () => (r.default.dispatch({
                     type: "BILLING_REFERRALS_REMAINING_FETCH_START"
                 }), i.HTTP.get({
-                    url: o.Endpoints.GET_REFERRALS_REMAINING,
+                    url: l.Endpoints.GET_REFERRALS_REMAINING,
                     oldFormErrors: !0
                 }).then(e => {
                     r.default.dispatch({
@@ -166732,11 +166757,11 @@
                         type: "BILLING_REFERRALS_REMAINING_FETCH_FAIL"
                     })
                 })),
-                u = e => (r.default.dispatch({
+                _ = e => (r.default.dispatch({
                     type: "BILLING_CREATE_REFERRAL_PREVIEW_START",
                     recipientId: e
                 }), i.HTTP.post({
-                    url: o.Endpoints.CREATE_REFERRAL_PREVIEW(e),
+                    url: l.Endpoints.CREATE_REFERRAL_PREVIEW(e),
                     oldFormErrors: !0
                 }).then(t => {
                     r.default.dispatch({
@@ -166750,11 +166775,11 @@
                         recipientId: e
                     })
                 }));
-            async function d(e) {
+            async function c(e) {
                 try {
                     var t;
                     let n = await i.HTTP.post({
-                            url: o.Endpoints.CREATE_REFERRAL(e),
+                            url: l.Endpoints.CREATE_REFERRAL(e),
                             oldFormErrors: !0
                         }),
                         s = null !== (t = n.body) && void 0 !== t ? t : null;
@@ -166767,17 +166792,17 @@
                 } catch (e) {
                     if (r.default.dispatch({
                             type: "BILLING_CREATE_REFERRAL_FAIL"
-                        }), e.body.code === o.AbortCodes.INVALID_MESSAGE_SEND_USER) {
-                        let t = a.default.getCurrentlySelectedChannelId();
+                        }), e.body.code === l.AbortCodes.INVALID_MESSAGE_SEND_USER) {
+                        let t = o.default.getCurrentlySelectedChannelId();
                         null != t && s.default.sendClydeError(t, e.body.code)
                     }
                 }
             }
-            async function _(e) {
+            async function E(e) {
                 try {
                     var t;
                     let n = await i.HTTP.get({
-                            url: o.Endpoints.REFERRAL_OFFER_ID_RESOLVE(e),
+                            url: l.Endpoints.REFERRAL_OFFER_ID_RESOLVE(e),
                             oldFormErrors: !0
                         }),
                         s = null !== (t = n.body) && void 0 !== t ? t : null;
@@ -231805,7 +231830,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e2760b1077dd25a5e6e4dce4db3887e70f3ee0c8"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a8905434eb9a31d88b540fa9924189b586bccf2d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257909,7 +257934,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281021"
+                                build_number: "281029"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265054,7 +265079,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281021", "281021"), 10);
+                let s = parseInt((n = "281029", "281029"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291840,4 +291865,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.0c9cb6b3afdf59d8fd05.js.map
+//# sourceMappingURL=97256.daa9943f0b5e7096e2c9.js.map
