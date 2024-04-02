@@ -57067,12 +57067,6 @@ html .progress__00e29 {
     border-right: 1px solid var(--border-subtle)
 }
 
-.modalContent__2b13e {
-    padding: 16px;
-    display: flex;
-    flex: 1
-}
-
 .scroller__24eef,
 .sequencer__0bd4c {
     display: flex;
@@ -57247,7 +57241,6 @@ html .progress__00e29 {
     width: 380px;
     flex-shrink: 0;
     box-sizing: border-box;
-    border-left: 1px solid transparent;
     min-height: 200px;
     height: 100%
 }
@@ -57284,12 +57277,30 @@ html .progress__00e29 {
     cursor: pointer
 }
 
+.closeButton_e88b7d {
+    position: absolute;
+    top: 24px;
+    left: 24px
+}
+
+.previousButton_b43130 {
+    position: absolute;
+    left: 24px;
+    bottom: 24px
+}
+
+.finishButton__8590c {
+    position: absolute;
+    right: 24px;
+    bottom: 24px
+}
+
 .fadeIn__0663f {
-    animation: fadeIn__0663f.5s
+    animation: fadeIn__0663f.2s
 }
 
 .fadeOut_de0df3 {
-    animation: fadeOut_de0df3.5s
+    animation: fadeOut_de0df3.2s
 }
 
 @keyframes fadeIn__0663f {
@@ -57349,10 +57360,25 @@ html .progress__00e29 {
 }
 
 .gameImagePlaceholder__732e7 {
-    width: 126px;
+    position: relative;
     height: 168px;
     background-color: var(--background-secondary);
-    border-radius: 4px
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 8px
+}
+
+.selectedGame__0084c {
+    display: flex;
+    flex-direction: column;
+    width: 126px
+}
+
+.selectedGameCheck__389d8 {
+    color: var(--brand-experiment);
+    position: absolute;
+    right: 8px;
+    top: 8px
 }
 
 .selectedInterest_aa523d {
@@ -57376,7 +57402,6 @@ html .progress__00e29 {
 }
 
 .playstyleSelect_b7d88b {
-    margin-top: 24px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -57385,16 +57410,24 @@ html .progress__00e29 {
 }
 
 .playstyleOption__67567 {
+    position: relative;
     background-color: var(--bg-base-tertiary);
     cursor: pointer;
     padding: 16px;
     border: 1px solid var(--border-subtle);
     border-radius: 8px;
-    align-self: stretch
+    width: 25%
 }
 
 .selectedPlaystyle_e4490f {
     border-color: var(--brand-experiment)
+}
+
+.checkmark_c7b206 {
+    color: var(--brand-experiment);
+    position: absolute;
+    right: 12px;
+    top: 12px
 }
 
 .playstyleTitle__00d17 {
@@ -131471,4 +131504,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d858312adc2f89b2529d.css.map*/
+/*# sourceMappingURL=99387.a65d5b1e6ad1a54fd21a.css.map*/
