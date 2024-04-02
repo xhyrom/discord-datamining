@@ -12,7 +12,7 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>How to Send a Voice Message on Discord <br></strong></h2>
             <p>Sending a Voice Message on Discord is as easy as pressing a button (literally)! The next time you’re in a Direct Message, Group DM, or servers with Voice Messages enabled, you’ll see a new microphone icon next to your emoji button. Hold it down, and you’ll quickly start recording your message.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center">
+            <figure class="w-richtext-align-center w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6437324beea4affa1feaa3e2_bkeEn_gZwAqmFr1dfyI9OghzjrD-2RlLrZ5mWi8dMUpmWOJksOGSYjResmf8z-JlLAYgvmhKoidB-Hx5fSbXrp9wbrqjYQmvZk39DJrn4liaj0yI6dn3lY6Tgd5lWxEBAYwXqLkJ5OfcYXlh9XhRngg.gif" alt="An animated GIF demonstrating how to send a Voice Message. The user is holding down a microphone button, speaking into their mobile device, and letting go of the button to send off their message.&nbsp;"></div>
             </figure>
             <p>Once you’re done recording, just let go of the recording button and your message will immediately be sent to your friend! If you end up needing to do another take, slide your finger over to the trash while recording your message and your ongoing recording will be discarded.&nbsp;</p>
@@ -23,7 +23,7 @@
     </div>
     <div id="heading-3" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6437324c17c2bacb78c95600_yOARInZ73h-WR-JxiN_sDH47NkHc1Sza1ibjTv4VC04rK4F7vGxRvK7suvrFB7l9BwGCmYmGAn1_HX0ot9Zwcfv8q_dF4RtKjgBPrBRFvyHkYzuLWZoHnBDUwoPiZt_c8MElyuBfj0eASEPc5CuOke8.png" alt=""></div>
             </figure>
             <p>Alongside text chat, voice calls and video chats, Voice Messages on Discord are the latest new addition in talking with your friends. They’re a great mix of the convenience of text chat and the personal feeling of talking to your best friend on a voice channel, and they can be listened to at your own pace whenever you’ve got time.</p>

@@ -10,7 +10,7 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>Season: A Letter to the Future</strong></h2>
             <p>You may have heard of Season: A Letter to the Future, a newly-released exploration game with a heavy focus on its story and taking things at your own pace with your trusty bicycle. Developed by Scavengers Studio, who describe themselves as a “small indie company with a diverse and inclusive team.”&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:80%">
+            <figure style="max-width:80%" class="w-richtext-align-center w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/63e2e41f42605e616ce0b235_grzOUtPOb5_forVnPSkIhQHBf8guc0ymw2r4IbynqEH9z1fkGEh7FPZeWFGJBL3XI_WWiQZD-TSwRa7gd2kK2HSoqujxUdslhwujSL-23heawqH6rR9Rh8kzHCNqAST5YB1darloXFjmsIqyjaSL1QM.png" alt="The server icon, name, and banner for the verified “Season” server.&nbsp;‍"></div>
             </figure>
             <p>The game’s verified Discord server is home to those looking for people to talk to during their journey through the game’s secluded village. The game stars a Black female protagonist who logs everything she discovers about the world in her trusty journal — the Scavengers Studio team says their game’s official Discord community is full of “so many POC who are thrilled to see themselves represented.”&nbsp;</p>
@@ -21,7 +21,7 @@
             <p><em>Season: A Letter to the Future</em> is out now on PlayStation 5, PlayStation 4, Steam, and the Epic Game Store. In addition to the official site, the Season community can be found in <a href="https://discord.com/servers">Server Discovery</a>.<br>‍</p>
             <h2><strong>MKBHD</strong></h2>
             <p>If you’re looking to start your own Discord server, there’s no better community to model yourself after than Marques Brownlee’s Discord community, or MKBHD as he’s widely known.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:80%">
+            <figure style="max-width:80%" class="w-richtext-align-center w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/63e2e41fdffe734715dd5cb5_DJQuALvPCZHfL4wY4zLnzLsVNg3KkjdE1zyHNu1P2RaoekioACZnzS49ZKI28i7rMmrw5h81j4TVFHKjUwZ7cHAAeTigtU7LTqtkFg_jlI5twMruOo343Kcp58piHDls--efWrohTeX_750Dx8W0FAg.png" alt="The server icon, name and banner for the verified “MKBHD” server.&nbsp;"></div>
             </figure>
             <p>Since his start in 2009, he’s become one of the most subscribed creators on YouTube, and his supportive community has followed him to his Discord server, where over 90,000 people come together to talk about the latest tech, share the things they’ve created, and stay in-the-know about every YouTube channel and podcast that Marques and his team runs.&nbsp;</p>

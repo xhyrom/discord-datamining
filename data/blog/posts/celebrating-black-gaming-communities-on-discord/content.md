@@ -12,7 +12,7 @@
                 <li><a href="https://www.theblackgirlgamers.com/"><strong>Black Girl Gamers</strong></a> — A “multiplatform and inclusive” community helping “keep over 9000+ Black women gamers safe online.”&nbsp;</li>
                 <li><a href="https://wearesnyder.com/us/artist/taylor-mcmanus"><strong>Taylor McManus</strong></a> — An “illustrator and educator” from Northern Virginia, and the artist behind our lovely blog header!&nbsp;</li>
             </ul>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/653021edd85706dfb6ffeba8_TV2v_-uOGq_-9bLKTL6x2sar01-RmueVTdSDMoDffirOVPSmfDpE9ebtlky9V0Z8qgOHr3eBnhGKm_iojFbktORKndkTthHv5sVTpaksHlm-JWX5j6kAomU-ZaY7agmFfYHZddfUIHpuMNzJkUvKfmk.png" alt=""></div>
             </figure>
             <p>Celebrating Black gaming communities online that are creating great culture and content is a great way to celebrate Black History Month near and far and is a tangible way to advocate for a more inclusive online world. Throughout February, Discord and Discord employees donated to non-profit organizations supporting Black communities, highlighted Black-owned businesses to help support their work, held thoughtful discussions of Black intersectionality with various identities, and celebrated Black joy together.</p>

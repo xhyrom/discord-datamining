@@ -10,17 +10,17 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>Earn the “Skill Issue” set by streaming THE FINALS to a friend on Discord</strong></h2>
             <p>Here’s the objective: <strong>Accept the Quest on Discord</strong> in the Gift Inventory, <strong>fire up THE FINALS</strong>, and <strong>stream your gameplay in any server you’re in with at least one friend for 15 minutes</strong>. (And try and pull off a sick play to impress ‘em, or better yet, invite them to join your team and play along.)&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1042pxpx">
+            <figure style="max-width:1042pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66074688e5f307e192d181da_Accepting%20The%20Quest.gif" loading="lazy" alt="A GIF demonstrating how to accept a Quest in User Settings > Gift Inventory"></div>
             </figure>
             <p>And… that’s it! <strong>After 15 minutes of streaming, your Quest is complete and the “Skill Issue” set redemption code will be waiting for you in your Gift Inventory!</strong> Use your new set as you dive into the game’s new map, try out those shiny new gadgets, and play a few rounds of THE FINALS.&nbsp;</p>
             <p>Simply put: stream cool game while you play it to your friends on Discord, get rewarded with a cool thing in THE FINALS. It’s <em>almost</em> as easy as solo-carrying your friends to victory.&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:940pxpx">
+            <figure style="max-width:940pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6607478eba138a2a37257d37_mhwyG5pTBwwMc_cSdrTFHmvNOmhWc6OFAkqAs4cOwHp0munniEisAtu8W7Cc9PRx5-RUZzeJ1V-nqNgOH4-0NnbAV_akoKpVxqlJ-29tfsNsc8hvXimt_KMR0HfjKRY0f8zygUuZXZaUmxjbq2eR93o.png" alt="A user is being rewarded the Skill Issue Set for THE FINALS from completing a Discord Quest"></div>
             </figure>
             <p>If you aren’t seeing the Quest in Settings or your gameplay isn’t being counted, double-check in <strong>User Settings &gt; Privacy &amp; Safety &gt; In-game rewards</strong> on the desktop app to make sure you’re sharing the deets on what game you’re playing with us. (We can’t give you your sweet reward if we can’t see you’re playing THE FINALS, ya’know?)&nbsp;</p>
             <p>Don’t delay: <strong>The Skill Issue set is exclusively available in Discord until April 16 at 11:59 pm UTC. While the Quest awaits you for two weeks, your redemption code remains valid until May 30, 2024 at 11:59 pm EDT.</strong> See Terms and Conditions below. (Don’t forget to claim your code after you finish the Quest!)</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8ae61e1d7bb0a2f64f_Hc0xfcW_Wq8yByPf0-9ELZ7dY9WniSc2FaOykBfJnQrySPUsRJgarLVVJkStDcdtxCkRFoOt4D69D1CZjtzoZxvVdOoYlvglK6LoAoy9TVlJoImf4AzrMn8fz2DZSpfyQIDDECAKrJMbg03-8akLnks.png" alt=""></div>
             </figure>
             <p>If you’ve never seen a Discord Quest before and could use some detailed set-up guidance, take a peek at the <a href="https://support.discord.com/hc/articles/22225719947543">Discord Quests support article</a>. If you’re already used to <a href="https://support.discord.com/hc/en-us/articles/360040816151-Go-Live-and-Screen-Share#h_01HFFJ28PJF3AW5WS7TNZNCPKN">streaming PC games to your friends on Discord</a>, you’ll get it down fast.</p>

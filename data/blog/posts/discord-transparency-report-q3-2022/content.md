@@ -20,14 +20,14 @@
             <h2><strong>Actions Taken on Accounts and Servers</strong></h2>
             <h3><strong>Account and Server Warnings</strong></h3>
             <p>Discord issues warnings with the goal of preventing future violations of our Community Guidelines. For some high-harm issues such as Violent Extremism or Child Sexual Abuse Material (CSAM) - a subcategory of Child Safety - we do not issue warnings but rather immediately disable the account and remove the content. In the case of CSAM, we also report the account to the <a href="https://www.missingkids.org/gethelpnow/cybertipline">National Center for Missing and Exploited Children</a>.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/639a648c30c9d2872c7fa763_GZ2yONyi5Y9rXvG4Wp_mnFj_wxHPKO7PiQ1SLD644Ut3mL-xZb2nR_dz2JOvTlJYnGhsLtmCRAf4T8Y5ttvl86DUMODc477EO2c60_rSHNXMOgstUhOosSKFkmDEcjQN-eg-LCOs7ReDlL1u38UydInjtDd8FFM3xNFzuQ1sWYaHIncBhzR-ixbeptHUbg.png" alt=""></div>
                 <figcaption>The above chart breaks down warnings issued to individual accounts, servers, and server members. A text version of this chart is available <a href="https://github.com/DiscordBlog/Discord-Transparency-Report-July-September-2022/blob/main/Q3%202022%20Transparency%20Report%20Data%20%20-%20Account%20and%20Server%20Warnings.csv">here</a>.</figcaption>
             </figure>
             <p>We issue two types of warnings for accounts: Individual Account Warnings, which are issued to individual users, and Server Member Warnings, which target multiple members of a server and may be issued when warning or removing a server from Discord.</p>
             <p>Individual accounts were issued <strong>17,809 </strong>warnings, an increase of 31% when compared to the previous quarter. The number of warnings issued to servers decreased by 11% to <strong>2,330</strong>, and warnings issued to server members decreased by 16.5% to <strong>1,290,964 </strong>accounts warned.</p>
             <h3><strong>Accounts Disabled</strong></h3>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6391031290352f1c27647a91_mb9k1DJ3yC233NtwvDOeGAlOgA7fakqNQ2Qq0KLgnU_toQuu3FX-svPv9ckpc9xVL2ni2gQ2cMi9qJw5oEtt9ObqqbR1d2EB1xzj7CVSR_CTTaATAbIVc7RL9OprNiYBWyICYVP1x_8TP-u6Cfcggy3yph6KIU7YvykXKIkC3OEZFtfjHFWQbmb9qjGGSQ.png" alt=""></div>
                 <figcaption>A text version of the number of accounts disabled by category chart is available <a href="https://github.com/DiscordBlog/Discord-Transparency-Report-July-September-2022/blob/main/Q3%202022%20Transparency%20Report%20Data%20%20-%20Accounts%20Disabled.csv">here</a>.</figcaption>
             </figure>
@@ -35,14 +35,14 @@
             <p>The Child Safety category accounted for 90% of this decrease in accounts disabled. This decline is a direct result of our ongoing improvements in our efforts to detect and proactively remove child exploitative content from Discord. Our ability to more rapidly detect networks of bad actors limits the number of accounts engaging with the content, resulting in fewer accounts disabled overall. An in-depth look at each of these categories, including Child Safety, can be found in the <a href="https://discord.com/blog/discord-transparency-report-q3-2022#heading-5">Enforcement Trend Analysis</a> of this report.</p>
             <p>Accounts disabled for spam or spam-related offenses increased to <strong>50,510,769</strong>.<strong> </strong>This is an increase of 82% from the previous quarter when we disabled 27,733,948 spam accounts. Our proactive anti-spam efforts continue to improve and become more sophisticated, creating a better user experience on Discord for all.</p>
             <h3><strong>Servers Removed</strong></h3>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/63910312534e46594bb2640b_4pURUNzcXBJygVHWhOplyH-mXKjbIo74bAfgSTiCz6BMMjcayf2116XhRdUvjFs-de8YMo1_Gnml6BdKDDW6MQd6F_1fpEZ7AIAafWJgCt8VsAkv8gmvRIbNcu_7ohX7vQOMZPlje-wFVR_jJ3rIfeWv1egRh_tod3hnwe92N7KfcbKiRW2ebHG23_ru4w.png" alt=""></div>
                 <figcaption>The above chart breaks down the number of servers removed by category and if they were removed proactively or reactively. A text version of this chart is available <a href="https://github.com/DiscordBlog/Discord-Transparency-Report-July-September-2022/blob/main/Q3%202022%20Transparency%20Report%20Data%20%20-%20Servers%20Removed.csv">here</a>.</figcaption>
             </figure>
             <p>We removed <strong>30,456 </strong>servers between July and September 2022, an increase of 7% from the 28,370 servers that we removed during the previous quarter.&nbsp;</p>
             <p>We continue to invest in our ability to proactively detect and remove servers before they’re reported to us, especially for high-harm categories. We’re proud to share that 92% of servers removed for Child Safety were removed proactively, with CSAM servers being removed proactively 99% of the time. Overall, 71% of removed servers were removed proactively.</p>
             <h3><strong>Appeals</strong></h3>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/639103123af30533ed331455_HHbIR5I_II5uSm-dtGB3Ss2K8zib6FRpyLg__OlDTqZ_Z0qL57WU6tDxYbDDwQgHDfFx8Ktpbj0VcXeUAe9sKjMO7lmgwIrZI9Fnn8lZzJMergiWMNqKL94S9EMmDb0dGYR9iT0CEdIM59xbE3_plgS2jENVpvD7OiiBEaRFDrkAVr4QSMUrSIHnu0clmQ.png" alt=""></div>
                 <figcaption>The above chart shows the total percentage of disabled accounts that submitted an appeal, and the percentage of those appeals that were granted. A text version of this chart is available <a href="https://github.com/DiscordBlog/Discord-Transparency-Report-July-September-2022/blob/main/Q3%202022%20Transparency%20Report%20Data%20%20-%20%20Appeals.csv">here</a>.</figcaption>
             </figure>
@@ -54,7 +54,7 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>Reports</strong></h2>
             <h3><strong>Reports Received By Category and Action Rates of Reports</strong></h3>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/639103741adaaae9dd018acd_tv-QagXvDzO6u8WzbhXcDSAPO_cZqRVhLHRlPoKFgGjbiR6EYvtrngffDqMxAqvCZaed3nP37uAcjqZjE2KPxjb3J3-zKHEXDAViV-yut19b_CXk0F4HP8l7_3K6LSMBkFjh3fJmE6khAm95rcJrSGwPT6JHj6jMgcsW7Gnf-HXwm8QnSbiID2lAD5YjIA.png" alt=""></div>
                 <figcaption>A text version of the reports received chart is available <a href="https://github.com/DiscordBlog/Discord-Transparency-Report-July-September-2022/blob/main/Q3%202022%20Transparency%20Report%20Data%20%20-%20Reports.csv">here</a>.</figcaption>
             </figure>
@@ -71,7 +71,7 @@
             <p>We invest heavily in advanced tooling and <a href="https://discord.com/safety/360044154611-Talking-about-online-safety-with-your-teen">education</a> so parents know how our service works and understand the controls that can contribute to creating a positive and safe experience on Discord for their children. As part of our <a href="https://discord.com/blog/an-update-on-our-mental-health-belonging-work">ongoing commitment to parent engagement</a>, Discord is a proud sponsor of the <a href="https://www.pta.org">National Parent Teacher Association</a> and <a href="https://www.connectsafely.org">ConnectSafely</a>. We continue to be a member of the Family Online Safety Institute, contributing to and learning from its important work.</p>
             <p>Users who upload abuse material of children to Discord are reported to NCMEC and removed from the service. We deeply value our partnership with NCMEC and their efforts to ensure that grooming and endangerment cases are quickly escalated to law enforcement.</p>
             <p>In the third quarter of 2022, we reported <strong>14,366 </strong>accounts to NCMEC. 14,303 of those reports were media (images or videos), of which many were flagged through PhotoDNA – a tool that uses a shared industry hash database of known CSAM. 63 high-harm grooming or endangerment reports were also delivered to NCMEC.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600px">
+            <figure style="max-width:1600px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/639103f21adaaa03180244e5_rGRt-QLBjj1BV1Yvi0JstjyTAHhuhRN1gNOTrRhDy77vZwqKlJFCQZMkgIClaTRnckE0p23eKj3SWFb9zvS0UaYNvHIEckMbI7Uc7bgxF_yHvtc3gFJSdDPvXxJR4h0L8Fy16MvriYzn36peQwkjw1lHygGDMR3xUNgU_jTjTTJ3EJjHHWxPK-ihFmwoCg.png" alt=""></div>
                 <figcaption>A text version of the reports filed to NCMEC chart is available <a href="https://github.com/DiscordBlog/Discord-Transparency-Report-July-September-2022/blob/main/Q3%202022%20Transparency%20Report%20Data%20%20-%20NCMEC.csv">here</a>.</figcaption>
             </figure>
@@ -128,7 +128,7 @@
             <p>Discord may also disclose user data to law enforcement in emergency situations when we possess a good faith belief that there is an imminent risk of serious physical injury or death. You can read more about how Discord works with law enforcement <a href="https://discord.com/safety/360044157931-Working-with-law-enforcement">here</a>.</p>
             <h3><strong>Legal Requests</strong></h3>
             <p>Discord received <strong>1,450 </strong>pieces<strong> </strong>of legal process during the third quarter of 2022, finding <strong>1,342</strong> both legally valid and specific enough for us to identify an account and produce relevant information. We work to limit disclosures of user information and content so they match the specific circumstances dictated by each request.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1400px">
+            <figure style="max-width:1400px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/639b6f6ae58842e1dc86608f_-aWfDJ4797I_UJxirf4TqONA3ozBfkuT4-ObKVruIrK88yx16rA1RMshkBpqs0nFkyqQQu0S1diuwuDQo6QWBnRBEkrusSaDPjLlG8gRNCyXqqLjB6BlhwNc61uo3ySidw2ulve8E5lYzJYZlTs3Hw77xtUBA6QAaNT87fina4ZcNaUoia8InwbA0FMYhw.png" alt=""></div>
                 <figcaption>A text version of the requests from law enforcement chart is available <a href="https://github.com/DiscordBlog/Discord-Transparency-Report-July-September-2022/blob/main/Q3%202022%20Transparency%20Report%20Data%20%20-%20Legal.csv">here</a>.</figcaption>
             </figure>

@@ -16,7 +16,7 @@
         <div class="blog-post-content w-richtext">
             <h2>Why is it important?</h2>
             <p>Simply put: humans get distracted. When I’m waiting for a test for more than a few seconds, I might click on a notification, open my browser, or get distracted for a few minutes. These distractions extend the feedback loop and make me less efficient in completing my current task.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:413pxpx">
+            <figure style="max-width:413pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/657257bafeeb80b48e72c137_compiling.png" alt="An XKCD comic. Two engineers are swordfighting, looking as if they're not working. The caption reads: &quot;The #1 programmer excuse for legitimately slacking off: 'My code's compiling.'&quot;"></div>
                 <figcaption><a href="https://3d.xkcd.com/303/"><em>https://3d.xkcd.com/303/</em></a></figcaption>
             </figure>
@@ -27,7 +27,7 @@
             <h2>Solution: Wait ahead of time!</h2>
             <p>After tinkering for a bit, I came up with a simple but imperfect solution that can speed things up significantly which I call “pytest daemon.” The gist of the approach is to have an already-loaded process on standby, letting us run any test quickly without having to wait for a new Python process to import.</p>
             <p>Our daemon manager watches for any code changes, and if something changes, a new process is spawned.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:2000pxpx">
+            <figure style="max-width:2000pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65725a338ca0f27dc38d69f9_Flowchart.png" loading="lazy" alt="A flowchart that goes as such: &quot;Dev -> Test -> daemon manager -> daemon&quot;"></div>
             </figure>
             <p>The difference between utilizing a vanilla test and running a test with the daemon involves replacing the regular pytest command: you use a script that transforms the arguments into a REST HTTP request. This is then sent to the daemon manager, which proxies the request to the active daemon.</p>
@@ -41,7 +41,7 @@
                 <script src="https://gist.github.com/DiscordBlog/722e4bc4e37230330377ca8a8b0206d8.js"></script>
             </div>
             <p>To utilize our tactic, we’ll need to determine which modules need to be reloaded and the order they should be reloaded. For instance, if we have the following imports:</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center">
+            <figure class="w-richtext-align-center w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65725adf90e0e3bcaa3f64e6_Screenshot%202023-12-07%20at%203.52.46%E2%80%AFPM.png" loading="lazy" alt="A flowchart with two paths. One goes: &quot;Test -> import -> view -> import -> model.&quot; The other goes: &quot;test -> import - model&quot;"></div>
             </figure>
             <ul role="list">
@@ -53,7 +53,7 @@
             <ol role="list">
                 <li>Build an import graph for our code, where each node is pointing to all the files that directly import it (reversing the import graph):</li>
             </ol>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center">
+            <figure class="w-richtext-align-center w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65725b1754caa81aae5cc169_Screenshot%202023-12-07%20at%203.53.37%E2%80%AFPM.png" loading="lazy" alt="A flowchart with two paths. One goes: &quot;model -> dependancy -> test.&quot; The other goes &quot;model -> dependancy -> view -> dependancy -> test.&quot;"></div>
             </figure>
             <ol role="list">
@@ -83,7 +83,7 @@
         <div class="blog-post-content w-richtext">
             <h2>How Much Faster Is It?</h2>
             <p>It’s <strong>so</strong> fast. Just look at these results:</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:2734pxpx">
+            <figure style="max-width:2734pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65725d02f8432d5f01ef30a6_Screenshot%202023-12-07%20at%204.01.59%E2%80%AFPM.png" loading="lazy" alt="A table comparing two results. One row reads: &quot;empty test with daemon, .4 seconds, without daemon, 12.7 seconds.&quot; The second row reads &quot;complex test with many dependancies, with daemon 3.9/2.4/2.4 seconds, without daemon 17.5 seconds.&quot;"></div>
             </figure>
             <p>A few notes when looking at these results:</p>

@@ -15,7 +15,7 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>Developer Tools<br></strong></h2>
             <p>Speaking of DevRel, I’ve brought in the help of a special friend from the DevRel team to add some event highlights below. Let’s go over to Shay, Senior Developer Advocate, with our 10-day weather foreca-…oops, wrong blog. Take it away, Shay!</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600px">
+            <figure style="max-width:1600px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6578bac72d2ddd4bd18848fb_tFCgt5lLWLs7Vm4D7sU0DPKMQqD4sQeFjZUkL-MST2StUUlSQadpiDxCk_-AVygpTtnc_Kj0EYx5vFhyM3s3qZM2CQLOYE-uK2dI_tvRwswkbpND8_ImkgUklDjcggXPc5wGBOj9ugl3e8EMXk3T5KA.png" alt=""></div>
             </figure>
             <p>Shay here! This year, we invested a ton in building out new tools and resources that make it easier for developers on Discord to build and debug their apps.</p>
@@ -29,7 +29,7 @@
             <h2><strong>Premium App Subscriptions <br></strong></h2>
             <p>In October, we announced Premium App Subscriptions natively within Discord. Now, developers within the US, UK, and European Union can offer additional features to their apps for a monthly subscription fee.&nbsp;</p>
             <p>What sorts of features? Well, that’s up to you and your dev team to decide! We’ve already seen devs offer additional moderation features, or just as a way to donate without a new feature as a reward.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:440px">
+            <figure style="max-width:440px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/657b9a0a8844db26de8bd02e_yLSwTf_GXlRC10wJM1QTtp5Xdo9iFoH4ONuC6LUusWt3uSH38R9evQU_6ne153t1I8NCxEA04707jBY7rrotlKndgbb5hBQcgLh5TMcJ52CftF4uqGWG1Krp_l2-GcPsyqJgvrH7Z-IOZirpTToWxLo.png" alt="An example of a user going through the purchase flow to subscribe to “Plant Pal Plus.”"></div>
             </figure>
             <p>There’s a whole ton more to Premium App Subscriptions — check out its <a href="https://discord.com/blog/premium-app-subscriptions-for-discord-developers">dedicated blog</a> and <a href="https://discord.com/build/premium-apps">webpage</a> for more deets.&nbsp;</p>
@@ -56,7 +56,7 @@
     </div>
     <div id="heading-6" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600px">
+            <figure style="max-width:1600px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6578bac72d2ddd4bd18848fb_tFCgt5lLWLs7Vm4D7sU0DPKMQqD4sQeFjZUkL-MST2StUUlSQadpiDxCk_-AVygpTtnc_Kj0EYx5vFhyM3s3qZM2CQLOYE-uK2dI_tvRwswkbpND8_ImkgUklDjcggXPc5wGBOj9ugl3e8EMXk3T5KA.png" alt=""></div>
             </figure>
             <p>Thanks, Shay! To everyone watching from home, we hope you can join us in the Discord Developers community for our <em>Platform Updates: 2023 Recap</em> event today at Noon Pacific. Can’t make it? No problem — a recording will be shared in DDevs after the event — you’ll find it in the #server-news announcement channel.</p>

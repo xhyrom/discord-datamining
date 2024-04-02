@@ -9,7 +9,7 @@
             <p>Got an app you want to add to the <a href="https://discord.com/application-directory">App Directory</a> right now? Getting really excited for the future of your app and want to learn how to add your app ahead of time? Let’s go through the process of getting your app listed on the App Directory.&nbsp;<br>‍</p>
             <h2><strong>How to Prepare for and Join the App Directory</strong></h2>
             <p>Every app in the App Directory has its own unique Product Page that explains what the app in question can do and how to use it. Once your app has been <a href="https://support.discord.com/hc/en-us/articles/360040720412-Bot-Verification-and-Data-Whitelisting">verified</a>, you’ll find a new page for creating your app’s Product Page in the <a href="https://discord.com/developers/applications">Developer Portal</a>.&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:500pxpx">
+            <figure style="max-width:500pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/635c1c746d7a971a07d6605c_Product%20Page.gif" loading="lazy" alt="An animated demonstration of how to find an app's product page inside the Developer Portal."></div>
             </figure>
             <p>You’ll be able to give an explanation of what your new app is all about, what languages it supports, and list a few of the Slash Commands that show off what your app does.&nbsp;</p>
@@ -23,11 +23,11 @@
             </ul>
             <p>In addition to sprucing up your app’s product page, you’ll also need to fulfill separate requirements relating to how your app functions and your personal Discord account, such as implementing Slash Commands and enabling 2-Factor Authentication on your Discord account (<a href="https://discord.com/blog/keeping-discord-safe-and-sound">which you really should do anyway</a>).</p>
             <p>You will also need to make sure that you and your app are complying with our <a href="https://support-dev.discord.com/hc/en-us/articles/9489299950487">App Directory content requirements policy</a>, <a href="https://discord.com/developers/docs/policies-and-agreements/terms-of-service">Developer Terms of Service</a>, and <a href="https://discord.com/developers/docs/policies-and-agreements/developer-policy">Developer Policy</a>.&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:500pxpx">
+            <figure style="max-width:500pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/635c1de4fce399110e81b02b_Discovery%20Page.gif" loading="lazy" alt="An animation of how to find the “Discovery Status” page for an app in the Developer Portal. A list of what’s required and what’s already fulfilled is displayed.&nbsp;"></div>
             </figure>
             <p>Once you’ve done all this and are ready to go, hit “Enable Discovery” and <em>BOOM</em>: Your app in all its beauty is opted in for inclusion in the App Directory. After all that hard work you and your team have put in to make your application a reality, bask in its majesty as Moderators and Admins across the globe discover your creation.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/634f18e010d5de8823970f31_vn-gUv4G1KSsvksdVXlvUAb2c-Cm-405izgrhQqqPm4GX_lcADUSTUfELstzVByB9VQAYsbp-UZ-HAqEw2BJkjbfGcRLOzuNlj8h58RVbrix3W9NLFF4qF8hrNyf2LgjenIGffLF1ns-vLp1g3zQ1__Tb4tKul03sxffhlv5CI9y6Uh6JffMLtTjJw.png" alt=""></div>
                 <figcaption>This could be you. Well, more specifically, your app.&nbsp;</figcaption>
             </figure>

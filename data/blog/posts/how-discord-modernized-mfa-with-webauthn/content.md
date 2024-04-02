@@ -58,7 +58,7 @@
             <h2>MFAv2 Frontend<br></h2>
             <p>The guiding principle of MFAv2 is that our backend is capable of returning a challenge containing a list of supported MFA factors to the frontend which will conditionally render an MFA option-picker UI.</p>
             <p>The following sequence diagram shows a normal MFAv2 flow for an MFA-enabled user taking an MFA-protected action.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:915pxpx">
+            <figure style="max-width:915pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6578b914bf7d06d9d47ed6c4_2hM-UCQvxgQrHRrQuGBcLKKgH_H78NknLqW-LqakLumSZHbHnKFZEUOrUE94T0CLvdcnYOUU89Ld6pBacT160GWUvV3f-N0EF3zDoCVw8havtgukGPw30e4sK_HuVKvyn8vnpKI_NAkzF3vtv4u3yaA.png" alt="Sequence diagram showing the MFAv2 flow on protected routes."></div>
             </figure>
             <p>In this flow, the user first attempts to make the request without any MFA credentials attached. The backend determines whether the request should be allowed based on the route’s MFA setting and the user’s configured MFA options:</p>
@@ -75,7 +75,7 @@
             <h2><strong>MFAv2 Backend<br></strong></h2>
             <p>Two services work in tandem for the backend handling of MFA actions: our Python API and our Rust authentication service. The Python API is responsible for determining whether an action requires MFA or not, and whether the user is capable of performing an MFA check. If the API decides that MFA must be performed then it requests an MFAv2 ‘ticket’ from our authentication service over gRPC.</p>
             <p>The authentication service is responsible for the creation of the MFA ticket and determining which factors the user can use to complete the challenge. For WebAuthn, this is where we create the server-side challenge and attach it to the ticket.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:753pxpx">
+            <figure style="max-width:753pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6578b931cdfe5516f83fc499_e8OCxPJEpS9Hn4O6OGLNnXneQdOB1z00qb06cH1du8vYQGE3YrcRaivJcxApsjFSqdT-jab_bfZiSGJ7xrp9Jk2b6387J5rNQdjVRUB3zkULNzOj9j5AVDtRC4XW2Qjk_J_2qM1xS32Eb8wNL98dRA0.png" alt="Sequence diagram showing the authentication service creating an MFAv2 ticket on protected routes."></div>
             </figure>
             <p>Alt-text: Sequence diagram showing the authentication service creating an MFAv2 ticket on protected routes.</p>
@@ -85,7 +85,7 @@
                 <script src="https://gist.github.com/DiscordBlog/cd3e83eacbf68654fb3881dcbd046d25.js"></script>
             </div>
             <p>The frontend creates its option picker based on the results included in the ticket:</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:445pxpx">
+            <figure style="max-width:445pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img alt="Discord promoting to the user to choose between three MFA options: Use a security key, use your authenticator app, or use a backup code.‍" src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6578b9318a9cbcc6d0691cf0_zyOaANGmW_sDGui47z4Wkt4uZJamYzxicbxoVdjc6uaFSnyb4-4tVRg8pNZMSVabxxq0_Yfe_QbkS5RypwQVFX9XEvIJlHp3SsrwE0H-ehKq6spPKevTjHTL07C8UbxD1Oo0vKAe4NOZKzZZAvhlce8.png"></div>
             </figure>
         </div>
@@ -102,12 +102,12 @@
             <h2><strong>Electron and Mac Kerfuffle<br></strong></h2>
             <p>One of the challenges we faced when introducing WebAuthn to Discord's desktop application was the lack of native prompts in Electron for Mac to specify a passkey or security key. To address this, we developed an Electron Native Module written in Objective-C++ which calls Mac native code (specifically using <a href="https://developer.apple.com/documentation/authenticationservices/asauthorizationcontroller">ASAuthorizationController</a>).</p>
             <p>Since the renderer process in Electron does not have direct access to windows, we had to use Inter-Process Communication (IPC) from the Renderer process to the Main process to trigger the native WebAuthn module. Since the main process can access the main application window, we were able to render the WebAuthn selector screen on Mac to support native WebAuthn for desktop clients.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:765pxpx">
+            <figure style="max-width:765pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6578bac7b297fd20f56bbeba_x7jZqyj1aBxOyg01I95KZBh8GSGcg8YQyhhIilmOgt9IresFS9pNMikeqgW6v6WshatT8o5aeeNePE8kfHN4WX1-jfJy30mTTCKHzhfD1WnrQk1HUSKj8IAmT49weILkjgFJhRgGeIwxzCykNElKAhI.png" alt="Sequence diagram showing the renderer Electron process sending an IPC to the main Electron process in order to trigger ASAuthorizationController code."></div>
             </figure>
             <p>We ship our Electron native modules outside of the Discord application to keep our install size small. Since this feature is only necessary for users interacting with WebAuthn on Mac, we download the module the first time the user attempts WebAuthn functionality from a Mac. After we ensure the module has been installed, we issue an IPC from the renderer process to the main process to trigger the MacOS system code for WebAuthn which ultimately returns the results to the renderer process over IPC.</p>
             <p>This Mac integration in an Electron Native Module allowed us to provide the necessary prompts and ensure a seamless WebAuthn experience for Discord users on Mac.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6578bac72d2ddd4bd18848fb_tFCgt5lLWLs7Vm4D7sU0DPKMQqD4sQeFjZUkL-MST2StUUlSQadpiDxCk_-AVygpTtnc_Kj0EYx5vFhyM3s3qZM2CQLOYE-uK2dI_tvRwswkbpND8_ImkgUklDjcggXPc5wGBOj9ugl3e8EMXk3T5KA.png" alt=""></div>
             </figure>
             <p>Introducing WebAuthn to Discord led us on a journey to address MFA on the platform holistically while providing an extensible and experience that’s easy for developers to use: onboarding MFA protection only requires a single-line change on the backend to enter our MFAv2 flow, developers don’t need to handle any frontend logic themselves, and we ensure support across our platforms.&nbsp;</p>

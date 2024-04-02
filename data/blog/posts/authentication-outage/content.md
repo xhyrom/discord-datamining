@@ -18,7 +18,7 @@
             <p>We architect our clusters to tolerate zonal failure; if we lose one zone, the cluster should continue to successfully serve requests. This behavior is due to both our configured replication factor in Scylla — spread across three zones — and quorum consistency reads against the database.</p>
             <p>Additionally, with our disk topology, we spend 40 minutes (scaling with the size of the persistent disk) on instance startup syncing the RAID, copying data from the persistent disks to the NVMEs. This copy must be completed before Scylla can start.</p>
             <p>The relevant cluster here — [scylla-authentication] — is fronted by our Rust authentication service. Whenever a user makes a request against our API, the authentication service is responsible for validating that the user is authenticated. It’s a critical part of our infrastructure: if we can’t authenticate users, it’s going to be very disruptive to everyone on Discord.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center">
+            <figure class="w-richtext-align-center w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65554f032ca59b02f43a41a4_mermaid-diagram-2023-11-08-144652.png" loading="lazy" alt="A chart starting at &quot;API&quot;, and moving through &quot;validate users&quot;, &quot;Authentication Service&quot;, and ending on &quot;scylla-authentication&quot;."></div>
             </figure>
         </div>
@@ -40,7 +40,7 @@
     <div id="heading-5" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <p>At <strong>10:52 AM</strong>, the script drained all connections from zone [c] of scylla-authentication, and the outage began.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center">
+            <figure class="w-richtext-align-center w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65555237eff274bf055e3e3b_Screenshot%202023-11-08%20at%204.46.15%20PM.png" loading="lazy" alt="&quot;discord-ap Availability&quot; chart from November 6th, showing a drop just before 19:00 and ending around 19:45."></div>
             </figure>
             <p>Discord’s availability, as measured by the percentage of HTTP requests returning a 200-level response, immediately plummeted to approximately 25% when connections drained.</p>
@@ -67,7 +67,7 @@
             <p>Unfortunately, by the time we had discovered the source of the issue, the upgrade script had detached the data disk. To get zone [c] back online, we needed to wait approximately 45 minutes to provision the new instances and rebuild the RAID array. We were hopeful that we could recover without needing to bring zone [c] back online by pulling other levers.</p>
             <p>When looking at the authentication cluster, we observed it to be saturated with queries and exhibiting high latency. To lessen load on the authentication cluster, we turned off sending typing events and marking messages as read at <strong>11:05 AM</strong>. This action restored authentication functionality to approximately 50% of users, but not the full recovery we were hoping for.</p>
             <p>At this point, we were racing the RAID rebuild; at approximately <strong>11:40 AM</strong>, it would complete and restore us to nominal capacity. Upon inspecting [scylla-authentication], we saw all four nodes being overwhelmed, with load at 100% for some shards on each node (Scylla operates on a shard per-core architecture, sharding the dataset internally on each node in addition to replicating the dataset around the cluster via a hash ring).</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center">
+            <figure class="w-richtext-align-center w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/655555ee5834a96f71f6e2e9_Screenshot%202023-11-08%20at%206.57.05%20PM.png" loading="lazy" alt="Chart for &quot;Load (scylla reactor) by Shard of Host&quot; with many lines jumping during the 19:00 to 19:45 time period."></div>
             </figure>
             <p>As we had already begun shedding load to the cluster, we had already used the biggest hammer available to us. Another option available to us was to restart the nodes in the cluster to clear out long running queries that had been abandoned by clients. There was a clear downside, however, to restarting nodes. While the cluster was clearly suffering serious issues and was unable to serve quorum queries, because all of zone [c] is offline, restarting nodes would absolutely break quorum, albeit in a predictable fashion.</p>

@@ -39,7 +39,7 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>Meet the Judges<br></strong></h2>
             <p>Your pitches will be reviewed by an ensemble of seven judges, including Discord employees and game developers with dozens of years of combined experience in the industry.&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1351pxpx">
+            <figure style="max-width:1351pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8b592fd5884ecd65a8_6p5cvv2mn1XFf6KFQ0JpaLtoruQyuefgpsHXrHjOmkRtpKL3hMsp6iGOZ1phK3EmLXFUlb_FyMt5Pn4ZEl2oN4XfT5g0eptZ0udoudjsjx91ft80lcbvDFdCB7v0yb1Q8J8T-LdWobTS34QzuM9lcG4.png" alt="A collage of the seven judges for App Pitches 2024. The text reads: &quot;Say hello to the official judges for App Pitches 2024!&quot;"></div>
             </figure>
             <p>Roll out the red carpet and make way for your esteemed panelists!:&nbsp;</p>
@@ -73,7 +73,7 @@
             </ul>
             <p>There’s even more to learn about each judge over on the Discord App Pitches page. What’re ya still doin’ here?! Go get building!&nbsp;</p>
             <p>Last but not least: our favorite line provided by Legal last year makes a return! Enjoy some finely crafted legalese about user eligibility:<br><br><em>The Discord App Pitches Program is open to users 18 and older, or users between the ages of 13-18 who provide proof of permission from their guardian in accordance with Discord's requirements, who have accounts in good standing on the platform. No purchase is necessary to enter. Users residing in Brazil, the Canadian province of Quebec, or Italy are not eligible. You’ll find all the rules, eligibility, terms, and important info </em><a href="https://discord.com/build/app-pitches-2024"><em>here</em></a><em>. </em><br></p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65f1ec8ae61e1d7bb0a2f64f_Hc0xfcW_Wq8yByPf0-9ELZ7dY9WniSc2FaOykBfJnQrySPUsRJgarLVVJkStDcdtxCkRFoOt4D69D1CZjtzoZxvVdOoYlvglK6LoAoy9TVlJoImf4AzrMn8fz2DZSpfyQIDDECAKrJMbg03-8akLnks.png" alt=""></div>
             </figure>
             <p>Go on, pitch your app! <strong>Aspiring developers and their teams can submit their pitches and prototypes from April 1st to May 1st, 2024.&nbsp;</strong></p>

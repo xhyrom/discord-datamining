@@ -6,7 +6,7 @@
                 <hr class="hr-style">
             </div>
             <p>Get ready for your next journey! Join Wumpus, Locke, Graggle, Mallow, and plenty more as they explore the world together, make new friends, and discover alternate universes in <strong>Wumpus Wonderventures</strong>: our new comic to experience over at WEBTOON.&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64595cfc233cf5efd8581091_fbdc15e1.png" alt="Key artwork for the Wumpus Wonderventure comic series.&nbsp;"></div>
             </figure>
             <p>Can the fate of the world be saved through time travel? Does Wumpus have a friend who is all-knowing? Who are the mysterious space monks? What do these questions even <em>mean</em>? You’ll have to keep reading over at WEBTOON to find out:&nbsp;</p>
@@ -14,7 +14,7 @@
                 <div class="btn-wrapper"><a data-track="https://www.webtoons.com/fr/fantasy/wumpus-wonderventures-discord-webcomic/list?title_no=5657" href="https://www.webtoons.com/fr/fantasy/wumpus-wonderventures-discord-webcomic/list?title_no=5657" class="btn-blog w-button" target="_blank">Read Wumpus Wonderventues</a></div>
             </div>
             <p>‍</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1405pxpx">
+            <figure style="max-width:1405pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64595d1cd45f965acf42479c_03ca0824.png" alt="The first four panels of Wumpus Wonderventures. Panel 1 - Wumpus is in their high-rise apartment thinking to themselves: “I’m hungry. I think I’ll order a pizza.” Panel 2 - Wumpus uses their phone to look up delivery times for a pizza, seeing that it’s a 60-minute wait. Wumpus looks sad and thinks “A whole hour?! But I’m hungry now!” Panel 3 - Wumpus remembers Locke, an elder wizard, saying to them, “Wumpus! I need a place to store my time machine for a few days! Don’t use it except in emergencies, okay, buddy?” After recollecting this, Wumpus says “I got it! I’ll borrow Locke’s Time Machine!” Panel 4 - Wumpus is getting into the time machine, thinking to themselves: “If being hungry isn’t an emergency, then I don’t know what.” Under these four panels is a box that says “Continue reading on WEBTOON.”&nbsp;&nbsp;"></div>
             </figure>
             <h2><strong>Wumpus &amp; WEBTOON: A Match Made in Paradise</strong></h2>

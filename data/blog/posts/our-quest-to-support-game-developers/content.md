@@ -11,7 +11,7 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>Opening up Quests to more games</strong></h2>
             <p>Quests are a way for players to discover games and earn rewards for playing them on Discord. We started experimenting with them over the last year, and millions of you opted in and completed them. We’ve heard great feedback from developers who partnered with us to create them and from many of you who completed one. If you didn’t see firsthand, the "May the 4th" <a href="https://discord.com/blog/fortnite-quest">Fortnite Quest</a> is a great example. Now, we’re opening up sponsored Quests to more game developers.&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65e90a9668c90690be12ad3f_QtK1sBMpK2Gry3ShRm1SiukXQnwC8CZBY8I83RGHrc62g550Zlj9JuhTRPJ3FBnW2avIALJw3XgoqlNrr8n--sbfbkQJqDmCi9WhBzekbHpp4lgRkvMdDUfFhb-rdS-__vSHEIVfmgJxSNaHMFfVykQ.png" alt="An example of a Quest appearing within a user’s Gift Inventory page on the desktop app."></div>
             </figure>
             <p>Quests will show up tastefully in Discord where you can opt-in to stream your game to friends and win rewards for playing. Some players will be made aware that a Quest is available, while others will discover it as their friends accept and embark on the Quest. Developers and publishers who sponsor Quests will work with our team to build an experience that showcases their game and offers a reward tailored for their game. </p>
@@ -22,7 +22,7 @@
             <h2><strong>Expanding Our Shop</strong></h2>
             <p>The second thing we’re announcing today is themed items in our Shop in partnership with game developers.&nbsp;</p>
             <p>Last year we <a href="https://discord.com/blog/complete-your-look-in-the-shop-now-open-to-all">launched the Shop</a> where you can buy frames for your avatar or fancy effects for your profile to flash them up, and a lot of you have purchased one. We really appreciate that!</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1425pxpx">
+            <figure style="max-width:1425pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65e90c1069a09ffe46b71584_Shop%20Preview.png" loading="lazy" alt="The Discord Shop, showcasing the Fantasy collection of Avatar Decorations."></div>
             </figure>
             <p>It's been so cool to see how people style their profiles with different effects. Some favorite themes, perhaps unsurprisingly, have been anime and fantasy. We've heard a lot of feedback on the kinds of decorations that you’d like to see, including cosmetics themed to the games you love.&nbsp;</p>

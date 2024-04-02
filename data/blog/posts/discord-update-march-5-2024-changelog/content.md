@@ -2,7 +2,7 @@
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <p><em>Here's the Discord Changelog from March 5, 2024. You can also find the most recent Changelog in the Discord app under </em><strong><em>Settings &gt; What's New</em></strong><em>.</em></p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:2000pxpx">
+            <figure style="max-width:2000pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65ce55fc7a104bbdcf043417_Untitled%20(1).png" loading="lazy" alt=""></div>
             </figure>
             <h2><strong>Making Mobile More Familiar</strong></h2>

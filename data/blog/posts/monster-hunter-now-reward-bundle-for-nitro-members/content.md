@@ -4,7 +4,7 @@
             <p>Grab your Palicos and your human pals! The winter season is nearing its end, meaning it’s time to go… <em>gasp</em>… <strong>OUTSIDE!! </strong>What better way to do that than to explore what’s around you, fighting huge monsters as you go in <a href="https://youtu.be/mwldbQnLKlI?si=hmAYxe5ICrKmeht1">Monster Hunter Now</a>, Niantic’s newest game that lets you and up to three nearby friends fight monsters by finding them in the real world.&nbsp;</p>
             <p>Our friends at Niantic want to bring you and your Discord friends together for an outdoor adventure this spring — starting on March 19th, <strong>Niantic is giving out one month of Discord Nitro to their players for Monster Hunter Now’s sixth-month anniversary</strong>, usable for anyone who hasn’t had Nitro within the last year.&nbsp;Download the game on the App Store or Google Play and take a peek at their in-game news for all the details.&nbsp;</p>
             <p>Already a cool cat with Discord Nitro? <strong>Nitro members can claim a bundle of rewards to use on their adventures in Monster Hunter Now!</strong> The bundle includes a material from the elusive DevilJho, one of the newest monsters you’ll encounter on your adventures.&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1921pxpx">
+            <figure style="max-width:1921pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65f9c166d3666ca7fd84d7fa_MHNItems.png" loading="lazy" alt="A preview of the Monster Hunter Now reward bundle contents."></div>
             </figure>
             <p>The reward bundle includes:&nbsp;</p>
@@ -28,7 +28,7 @@
                 <li>After you claim your code, head over to the redemption page <a href="https://store.monsterhunternow.com/offer-redemption">by clicking here</a>.&nbsp;</li>
                 <li>On that page, sign in with your Monster Hunter Now account. You’ll then be presented with the page displayed below:&nbsp;</li>
             </ul>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65f4bd3a3f0a07d09c723724_29RXfoEzEg0b3w5P8gs5u3LPOM08zMANexqwK-yJ1Q6SHGPcgIgRgSZ4B0qm-RfQDR7Lcw6DGQ8Yu7ba55omtFPNz7-6Yu-suqTIYJrXpOZv_gSUADY_dxvFAP6i6tuBpTXXWr-6NI6J8FlVAxgOrRU.png" alt="A screenshot of Niantic’s Offer Redemption page."></div>
             </figure>
             <ul role="list">

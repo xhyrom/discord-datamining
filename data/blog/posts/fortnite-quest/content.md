@@ -7,7 +7,7 @@
             </div>
             <p>For May the 4th, we’re doing something special with our friends at Epic Games and Lucasfilm Games: dropping in the Coruscant's Pride Wrap!</p>
             <p><strong>From now until May 22nd, 11:59 PM EDT</strong>, you can get your hands on this in-game Fortnite Wrap by either screen sharing Fortnite on PC to a friend in a server you’re in or by using an app within an official Fortnite Discord server.&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64503af18bcc502e25656301_2a6761a0.png" alt="A preview image of the Coruscant's Pride Wrap from Fortnite."></div>
             </figure>
             <p>Equip your new Wrap on your favorite weapons and Wrappable Outfits by completing the Find the Force Quest, and make the Coruscant's Pride Wrap yours today!</p>
@@ -21,7 +21,7 @@
             <p>To unlock the Coruscant’s Pride Wrap by screen sharing, you’ll first need to make sure you’re eligible to do so! Double-check your <strong>User Settings &gt; Privacy &amp; Safety &gt; In-game rewards</strong> on the desktop app to make sure you’re sharing the details of what game you’re playing.&nbsp;</p>
             <p>Once you’ve checked your Privacy settings allow you to obtain in-game rewards, head on over to any server where you can screen share using the desktop app and hop into a Voice channel. Don’t forget to launch Fortnite on your PC!&nbsp;</p>
             <p>With Fortnite running in the background, Go Live and <strong>share your application’s screen and have at least one friend watching you do your thing</strong>. Get some Battle Royale matches in, or explore some creator-made islands. <strong>As long as you’re screen sharing Fortnite to at least one viewer in Voice, it’ll count.&nbsp;</strong></p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1492pxpx">
+            <figure style="max-width:1492pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64503b1ac749500384f03e3e_57602271.png" alt="A screensharing session in a Discord server. Someone is streaming Fortnite!"></div>
             </figure>
             <p><strong>Once you have at least one friend watching you play Fortnite on PC for at least 15 minutes, you’ll receive a notification in Discord saying you have a Gift waiting in User Settings &gt; Gift Inventory.</strong> Follow the link and log in with your Epic Games account, and your new Wrap will appear for you! You may need to relaunch the game to see it in your Locker.&nbsp;&nbsp;</p>
@@ -44,7 +44,7 @@
             </ul>
             <p>Once you’ve joined one of the servers above, head into the “#find-the-force” channel. Depending on which server you joined, the channel name may be localized to a different language.&nbsp;</p>
             <p>Once you are interacting with the app, you’ll be taken to a webpage where you can link your Epic and Discord accounts together. Connect ‘em, then you’ll receive two additional tasks to complete: one inside the Fortnite Discord server you joined and one in Fortnite itself! </p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64503b662c55143c2f2daddf_39b7716b.png" alt="The “Gift Inventory” screen in User Settings on desktop. A Fortnite promotion is able to be redeemed.&nbsp;"></div>
             </figure>
             <p>After both your Discord and Fortnite tasks are complete, the Coruscant’s Pride Wrap will be redeemed and added to your Fortnite Locker!&nbsp;</p>
@@ -53,7 +53,7 @@
     </div>
     <div id="heading-4" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64503b66d707dd30fd5791f6_d38ad9b1.png" alt=""></div>
             </figure>
             <p>Whether you decide to spend some time with a friend or join one of the active and welcoming Fortnite communities on Discord, we hope your new Coruscant’s Pride Wrap helps make your May the 4th celebrations just a bit more special.&nbsp;&nbsp;</p>

@@ -20,7 +20,7 @@
             </ul>
             <p>Moderation app developers that integrate AutoMod can provide their users with the peace of mind that comes with proactive message moderation, reliable uptime, and automatic enhancements like RegEx support for keyword filters. When we release new types of spaces to hold conversation in your community such as Forum Channels, AutoMod compatibility will “just work.”&nbsp;</p>
             <p>Not only that, their apps will receive a snazzy badge on their app’s profile so users know it's able to provide top-of-the-line moderation capabilities. It looks kinda like this:&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1960pxpx">
+            <figure style="max-width:1960pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64407bb1e29c2f6e210eb6e3_image2.png" loading="lazy" alt=""></div>
             </figure>
         </div>

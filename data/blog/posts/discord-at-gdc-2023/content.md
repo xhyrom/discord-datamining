@@ -30,7 +30,7 @@
             <h2><strong>Try Out New Activities, Both at GDC and On The Go<br></strong></h2>
             <p>This week, there were some big updates to <a href="https://discord.com/blog/server-activities-games-voice-watch-together">Activities</a>. If you haven’t tried ‘em out yet, Activities are casual games and shared experiences you can enjoy in any Voice channel at the press of a button. Hop into a Voice channel, hit the green Rocket button and you and your friends can quickly start an Activity together!&nbsp;</p>
             <p>Alongside the game “Gartic Phone” joining the Activities lineup, we also announced mobile support for Activities, letting you enjoy all your favorite Discord Activities with your friends, whether you’re at your desk or at a desk but the desk is actually grass and you’re at the park.&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1200pxpx">
+            <figure style="max-width:1200pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/641231302c9ef2d3a6e12149_F62dLeJOUPzs2kMTj3gGIElL_R_4XPBWyfOSYnYj7mumf-9mkBlozzA1j4W4p9IlIth9vO5_DXPswWgkuRFwyqyskBaeSsKVGxOBt8xfjnKDukcXACDCu2Y2nWyukmkKyKHfz7avWoo8mUxQZIRRVKs.png" alt="A screenshot of a Discord user playing the drawing game “Sketch Heads” on their mobile phone."></div>
                 <figcaption>Be as happy as this Discord employee drawing someone being happy with a happy balloon and a happy shirt, writing the word “Happy.”&nbsp;</figcaption>
             </figure>

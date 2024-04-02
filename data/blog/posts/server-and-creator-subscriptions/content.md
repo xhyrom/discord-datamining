@@ -27,7 +27,7 @@
                 <li>Tier 3 (priced at $9.99 a month) grants access to never-before-seen behind the scenes content and all of the amazing perks from the previous two tiers.&nbsp;</li>
             </ul>
             <p>If you are interested in learning more about what Bella is offering, you can check out her <a href="https://discord.com/servers/bella-poarch-936663832070340678">Promo Page here</a>.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:5760pxpx">
+            <figure style="max-width:5760pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6388093330109856d66ed1fa_promopage%20preview%20(1).png" loading="lazy" alt="A preview of Marques Brownlee’s Promo Page."></div>
                 <figcaption><em>As another example, check out </em><a href="https://discord.com/servers/mkbhd-742765599738036275"><em>Marques Brownlee's page</em></a><em>!</em></figcaption>
             </figure>
@@ -40,7 +40,7 @@
             <p>The Creator Portal is your one-stop shop for all things creators on Discord. Similar to the Discord Moderator Academy and the Community Portal, the Creator Portal is an expansive resource tailor-made for creators or communities on Discord that want to establish a paid subscription tier in their servers.&nbsp;</p>
             <p>Enjoy Lightning Lessons taught by fellow creators <a href="https://discord.com/creators/fostering-fan-relationships">Marques Brownlee</a>, <a href="https://discord.com/creators/building-your-content-strategy">HannahxxRose,</a> and <a href="https://discord.com/creators/creating-a-premium-server-experience">ChefPK</a>. Get inspired with creator case studies, or get personalized recommendations on what to read up on next by taking our Creator Academy quiz (no studying needed beforehand)!&nbsp;</p>
             <p>Along with interactive resources and case studies, the <a href="http://www.discord.com/creators">Creator Portal </a>offers dozens of articles you can read up on, about all of the fun and fresh features provided by implementing Server Subscriptions to your server, including how to get started with <a href="https://discord.com/creators/say-hello-to-promo-pages-our-new-server-subscriptions-feature">Promo Pages!</a></p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:5760px">
+            <figure style="max-width:5760px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6388095e6fcbd7110531dc0c_Creator%20Portal%20Header.png" loading="lazy" alt="A preview of the Creator Portal, which is available to view at &quot;discord.com/creators&quot;."></div>
             </figure>
         </div>

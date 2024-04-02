@@ -42,7 +42,7 @@
             <p>The core security mechanism underlying Access is <a href="https://en.wikipedia.org/wiki/Role-based_access_control">role-based access control</a> (RBAC).&nbsp;</p>
             <p>As the name suggests, the most important concept in RBAC is <em>roles</em>. Roles are groups of users who share similar responsibilities, with the idea that those users will need similar permissions for various resources. Importantly, roles do not necessarily have parity with teams.&nbsp;</p>
             <p>Within a team, members may have a range of job functions (think managers vs. their reports) that may necessitate access to different services and data. Roles can also be used to temporarily grant access to systems, like in the case of cross-functional projects and on-call rotations. Practically, this method of access control means that individuals may have one or many roles assigned to them, sort of like a big Discord community!&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600px">
+            <figure style="max-width:1600px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66033f70a84c36a88a4b1692_V5h4Nm-lC9eKhQ4hGShV-WSFnuW1sFxTbxyYuzWBTQn0uc-mMXsirVsBgKqGTVWB-XQuAJ092fF1yvbM0AghIO3UQqo6S4Bo-rphAyJbp9wr82UV4s56DHolW5aQ9CMru-uRa3fgI2D8A12anGEqBqE.png" alt="The image has three columns. The first contains a team made up of a manager, a software engineer, and a data scientist. The second column contains a list of different job functions that could be set as roles: All Employees, Manager, Engineering, Data Science. The third column contains a list of resources like email, a manager Google group, GitHub, and a ML database. There are arrows between the columns showing how team members with different jobs may have many roles from the job function column which then map to permissions associated with the different resources."></div>
             </figure>
             <p>Roles make permissions much easier to manage. Rather than having to grant each employee access to each service individually, RBAC allows you to grant a role access to many resources, which then grants all of the members in the role access to the same resources by default. They also increase transparency by making it clear <em>why</em> a specific person has access to a resource, which aids in discovery and auditing.</p>
@@ -76,7 +76,7 @@
             <ul role="list">
                 <li><strong>Audit views:</strong> Every user, group, and role in Access has a page viewable by all employees that shows complete membership and ownership history. This allows users to troubleshoot their access if they think they have lost permissions, increases transparency, and creates an easily accessible record of past access grants.<strong>‍</strong> </li>
             </ul>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/66033fc5d82b867596f925ab_YN6fT5s4pQlxlJ2LSoJUO5pcTmED7EWrAFrvAQDkQFxDLuP6Dibv_OhZDUy2cUsXZMoWzrGkBkYNNSJDrM1_p1ogGlEF7FLzm18_N33p0RrLTvcs0HnFxr2V0n2Kfpr3xyoiuqNlCfkyFrnqW63NG5w.png" alt="The image is a screenshot of an Access user audit page. It displays the membership history for Locke, including which groups he has been in, whether he was a member or owner, and the duration of the access."></div>
             </figure>
             <ul role="list">
@@ -85,7 +85,7 @@
             <ul role="list">
                 <li><strong>Expiring access pages and bulk renewal:</strong> The Expiring Access UI is separated into two sections: Expiring Groups, which shows users whose access to a role or group is expiring soon, and Expiring Roles, which displays roles that will be losing their access to groups soon. Group owners can bulk-renew access for users while users can view which groups they will be losing access to soon and create an access request if they wish to extend their access individually.</li>
             </ul>
-            <figure class="w-richtext-figure-type-video w-richtext-align-fullwidth" style="padding-bottom:75%">
+            <figure style="padding-bottom:75%" class="w-richtext-align-fullwidth w-richtext-figure-type-video">
                 <div><iframe allowfullscreen="true" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/727uvA49nXA" title="Access Demo 2"></iframe></div>
             </figure>
             <ul role="list">

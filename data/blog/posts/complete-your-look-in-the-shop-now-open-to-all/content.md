@@ -15,7 +15,7 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>So What’s in the Shop?&nbsp;</strong></h2>
             <p>The Shop is where you’ll find a wide array of items that help you level up your profile, such as Avatar Decorations and Profile Effects. Once you purchase something from the Shop, it’s yours to keep and use whenever you want, including any limited-time seasonal items. Who says Halloween is only during October, anyway??</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:730pxpx">
+            <figure style="max-width:730pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65669669408aef793eb07574_Gift%20Nitro%20Animation%20462PX%204MB.gif" loading="lazy" alt=""></div>
             </figure>
             <p>Regardless of whether you're into anime emotes, magical effects, or just breakfast food - we have items in the Shop that will resonate with you. We'll also be releasing our newest items - Winter Wonderland! Surround your avatar with snowy pinecones or cover your profile in a set of string lights to bring a bit of winter wonder! And we’re always stockin’ the Shop with new styles, so be sure to poke your head in once in a while and see what’s new. 👀</p>
@@ -26,7 +26,7 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>How to Find the Shop&nbsp;</strong></h2>
             <p>The next time your friend goes “have you <em>SEEN</em> that new froggy profile effect??” and you desperately need to drop everything you’re doing and see that frog NOW, use the dedicated “Shop” tab located right under the Nitro tab when you click on the Discord icon on the top-left of the app:</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:900pxpx">
+            <figure style="max-width:900pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/655e96733b9fa4fce89cf032_QAgA7Q1kW-ELXxw7kTqc12cZRKxwqV9IytZX7F-j_8yS7WIQOpFWBBortBozfGU-hFqVSspNbD-ebW4WgXnnhqFsJzNmMmMgTp3Ui7S3LLCUinvu7C1Gnh4mAVWQ0HY3LCclSJDV_HhOebxyTynjMuA.png" alt="The “Shop” button highlighted on the desktop app."></div>
             </figure>
             <p>Alternatively, you can also find the Shop at the same place you edit your Discord profile: directly within Profile Settings. On either desktop or web, just head into <strong>User Settings &gt; Profiles</strong>. In this menu, you’ll see a banner that says&nbsp; “<strong>Go to Shop.</strong>” Select that to explore what’s available for purchase in the Shop!</p>

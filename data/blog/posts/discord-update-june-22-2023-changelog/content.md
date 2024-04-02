@@ -5,7 +5,7 @@
             <div class="w-embed">
                 <hr class="hr-style">
             </div>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center">
+            <figure class="w-richtext-align-center w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6494b277fe84ae2482c3620b_unnamed.png" loading="lazy" alt="Banner reading &quot;Activities are staying free for all&quot;."></div>
             </figure>
             <h2><strong><em>Desktop Updates</em></strong></h2>

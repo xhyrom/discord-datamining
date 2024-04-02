@@ -6,7 +6,7 @@
                 <hr class="hr-style">
             </div>
             <h2>Desktop and Mobile (iOS &amp; Android) Updates</h2>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:2560px">
+            <figure style="max-width:2560px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6441bb5d3394b50a6058a6c3_VoiceMessages_Changelog_1280x720_1%402x.png" loading="lazy" alt="Two friends using the voice messages feature to communicate on Discord"></div>
             </figure>
             <h3><strong>Big Win for Big Talkers</strong></h3>
@@ -19,7 +19,7 @@
             </ul>
             <h3><strong>New Nitro Perks</strong></h3>
             <p>We think Nitro is pretty cool (not biased), but check out this video about Nitro’s new perks to understand how we really feel about these updates:</p>
-            <figure class="w-richtext-figure-type-video w-richtext-align-center" style="padding-bottom:33.723653395784545%">
+            <figure style="padding-bottom:33.723653395784545%" class="w-richtext-align-center w-richtext-figure-type-video">
                 <div><iframe allowfullscreen="true" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/G1teGChUJQM" title="Announcing 4 new Nitro Perks"></iframe></div>
             </figure>
             <p>‍<strong>‍</strong></p>

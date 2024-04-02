@@ -11,7 +11,7 @@
             <h2><strong>Design Buddies<br></strong></h2>
             <p>If you’ve been a longtime Discord fan, you might recognize the <strong>Design Buddies</strong> community already: Grace Ling and her buddies can be seen on both <a href="https://discord.com/creators/design-buddies">the Discord Creator Portal</a> and <a href="https://discord.com/community/co-creating-with-your-community">our Community Resources site</a>. On top of that, Grace has shared some professional design tips for <a href="https://discord.com/blog/discord-profile-tips-from-design-professionals">making your Discord profile shine</a> and has even appeared in-app if you’re a server moderator that can see the Community Onboarding feature in Server Settings.&nbsp;</p>
             <p>It’s for good reason that Design Buddies has grown so much: it’s become one of the largest communities for design professionals of all skill levels to connect, learn from one another, and meet fellow colleagues. Some even land a sweet new design gig through the Discord community!&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:80%">
+            <figure style="max-width:80%" class="w-richtext-align-center w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/644afca3ba70fd01f89a3647_e17fb9fa.png" alt="The server icon, name, and banner for the partnered “Design Buddies” server."></div>
             </figure>
             <p>“We've had many people land jobs and find freelance roles through Design Buddies,” explains Grace Ling “We've helped companies hire designers from our community. We also helped design tools and educational companies get more users for their products!”</p>
@@ -21,7 +21,7 @@
             <p>If you’re interested in uncovering the mysterious, the unnerving, or the unknown, you’re designed to enter: <strong>ARIA 51</strong>.&nbsp;</p>
             <p>Aria Inthavong is a YouTuber and creator who focuses on what he describes as the “intersection behind true crime, travel, and the larger cultural issues surrounding them.” While that may seem like a pretty serious subject — and at times, it can be — that doesn’t mean his Discord community is also mysterious and moody.&nbsp;</p>
             <p>It’s quite the opposite: Aria’s community gives everyone a warm, heartfelt welcome as they enter a rather niche community of friends who are also interested in true crime and the sometimes scary. Sometimes, it may even be Aria himself greeting you with a warm welcome as you join.&nbsp;&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:80%">
+            <figure style="max-width:80%" class="w-richtext-align-center w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/644afca4a05d738266c9837f_2eab8b42.png" alt=""></div>
             </figure>
             <p>Stick around long enough and on top of connecting with some rad new friends, you may even take part in Aria’s content creation: Aria explains: “We had a couple of wonderful community IRL meetups last year in both Singapore and the Philippines. In both countries, I was able to connect with local members of the community who guided me in my work, as well as ultimately meet them in person during these meetups!”</p>

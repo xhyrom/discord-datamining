@@ -78,7 +78,7 @@
             <p>It’s been a quiet, well-behaved database (it’s okay to say this because I’m not on-call this week). We’re not having weekend-long firefights, nor are we juggling nodes in the cluster to attempt to preserve uptime. It’s a much more efficient database — we’re going from running 177 Cassandra nodes to just 72 ScyllaDB nodes. Each ScyllaDB node has 9 TB of disk space, up from the average of 4 TB per Cassandra node.</p>
             <p>Our tail latencies have also improved drastically. For example, fetching historical messages had a p99 of between 40-125ms on Cassandra, with ScyllaDB having a nice and chill 15ms p99 latency, and message insert performance going from 5-70ms p99 on Cassandra, to a steady 5ms p99 on ScyllaDB. Thanks to the aforementioned performance improvements, we’ve unlocked new product use cases now that we have confidence in our messages database.</p>
             <p>At the end of 2022, people all over the world tuned in to watch the World Cup. One thing we discovered very quickly was that goals scored showed up in our monitoring graphs. This was very cool because not only is it neat to see real-world events show up in your systems, but this gave our team an excuse to watch soccer during meetings. We weren’t “watching soccer during meetings”, we were “proactively monitoring our systems’ performance.”</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1536pxpx">
+            <figure style="max-width:1536pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6406587246a8ce1cfe8f105f_Screen%20Shot%202023-02-27%20at%205.44.56%20PM.png" loading="lazy" alt=""></div>
             </figure>
             <p>We can actually tell the story of the World Cup Final via our message send graph. The match was tremendous. Lionel Messi was trying to check off the last accomplishment in his career and cement his claim to being the greatest of all time and lead Argentina to the championship, but in his way stood the massively talented Kylian Mbappe and France.</p>
@@ -95,7 +95,7 @@
                 <li>It’s the end of extra time, we’re heading to penalty kicks!</li>
                 <li>Excitement and stress grow throughout the shootout until France misses and Argentina doesn’t! Argentina wins!</li>
             </ol>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1548pxpx">
+            <figure style="max-width:1548pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64065884c4a34e2bcb7b470d_Screen%20Shot%202023-02-27%20at%205.52.07%20PM.png" loading="lazy" alt=""></div>
                 <figcaption>Coalesced messages per second</figcaption>
             </figure>

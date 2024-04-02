@@ -30,7 +30,7 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>Accountability</strong></h2>
             <p>Like other companies covered by the DSA, we will send information about the reports we receive, and how we respond to them, to a public database. Later in the year, we will also publish a new DSA-focused Transparency Report that provides additional insight into the content moderation action we took, such as user appeals and requests from EU governments to take down user content.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:2000pxpx">
+            <figure style="max-width:2000pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65ce55fc7a104bbdcf043417_Untitled%20(1).png" loading="lazy" alt=""></div>
             </figure>
             <p>Keeping our users safe is central to everything we do at Discord, and we will continue our work with industry, parents, law enforcement, safety experts, non-profits, and regulators worldwide to do so. For more information on these changes under the Digital Services Act, please visit our <a href="https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord">Help Center</a>.</p>
