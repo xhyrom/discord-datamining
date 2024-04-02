@@ -7483,27 +7483,11 @@
       "populations": [
         {
           "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 3400,
-                  "end": 6700
-                }
-              ]
-            },
-            "2": {
-              "rollout": [
-                {
-                  "start": 6700,
-                  "end": 10000
-                }
-              ]
-            },
             "none": {
               "rollout": [
                 {
                   "start": 0,
-                  "end": 100
+                  "end": 10000
                 }
               ]
             }
