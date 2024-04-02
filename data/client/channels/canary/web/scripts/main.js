@@ -15185,14 +15185,15 @@
                 },
                 disconnect() {
                     let e = s.default.getRemoteSessionId();
-                    if (null != e && r.remoteDisconnect(e), (0, l.isOldVoiceUIEnabled)()) {
+                    if (null != e && r.remoteDisconnect(e), (0, l.isVoicePanelEnabled)()) this.selectVoiceChannel(null);
+                    else {
                         let e = u.default.getChannel(c.default.getChannelId()),
                             t = c.default.getChannelId() === c.default.getVoiceChannelId() && (null == e ? void 0 : e.isThread()) === !0;
                         if (this.selectVoiceChannel(null), a.close(S.PopoutWindowKeys.CHANNEL_CALL_POPOUT), t) {
                             let e = E.default.getGuildId();
                             null != e && (0, o.transitionTo)((0, T.previousTextChannelRouteForGuild)(e))
                         }
-                    } else this.selectVoiceChannel(null)
+                    }
                 }
             }
         },
@@ -36662,7 +36663,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280675", ", Version Hash: ").concat("ef79dd24248f1be0755b8f230869a7763b7a940f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280692", ", Version Hash: ").concat("a7f9fb4e61dac41d5d5a25e8f8fbe48b2e679aec")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85564,8 +85565,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280675", "280675"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280675")), t = 0), t
+                let t = parseInt((e = "280692", "280692"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280692")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107561,8 +107562,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280675",
-                    versionHash: "ef79dd24248f1be0755b8f230869a7763b7a940f"
+                    buildNumber: "280692",
+                    versionHash: "a7f9fb4e61dac41d5d5a25e8f8fbe48b2e679aec"
                 }
             }
             n.r(t), n.d(t, {
@@ -138335,83 +138336,86 @@
             "use strict";
             n.r(t), n.d(t, {
                 getChannelCoverageForOnboarding: function() {
-                    return m
+                    return N
                 },
                 getChattableDefaultChannels: function() {
                     return D
                 },
                 getMinimumSetOfDefaultChannelIds: function() {
-                    return C
+                    return g
                 },
                 getSelectedChannelIds: function() {
-                    return y
+                    return P
                 },
                 getSelectedRoleIds: function() {
-                    return M
+                    return y
                 },
                 isBlockedByOnboarding: function() {
-                    return h
+                    return A
                 },
                 isChattableChannel: function() {
-                    return p
+                    return R
                 },
                 isChattableChannelId: function() {
-                    return O
+                    return p
                 },
                 isGuildOnboardingSettingsAvailable: function() {
-                    return S
+                    return h
                 },
                 useChannelCoverageForOnboarding: function() {
-                    return N
+                    return O
                 },
                 useChattableDefaultChannels: function() {
-                    return v
+                    return M
                 },
                 useGuildOnboardingSettingsAvailable: function() {
-                    return f
+                    return S
                 },
                 useIsChattableChannel: function() {
-                    return R
+                    return C
                 }
             }), n("789020"), n("47120"), n("724458"), n("653041"), n("536091");
             var i = n("442837"),
-                r = n("447003"),
-                s = n("592125"),
-                a = n("984933"),
-                o = n("430824"),
-                l = n("496675"),
-                u = n("630388"),
-                d = n("823379"),
-                _ = n("700785"),
-                c = n("977258"),
-                E = n("981631"),
-                I = n("372897");
-            let T = new Date(16824888e5);
-
-            function f(e) {
-                let t = (0, i.useStateFromStores)([o.default], () => o.default.getGuild(e)),
-                    n = !!(null == t ? void 0 : t.hasFeature(E.GuildFeatures.COMMUNITY)),
-                    r = l.default.can(E.Permissions.MANAGE_GUILD, t),
-                    s = l.default.can(E.Permissions.MANAGE_ROLES, t);
-                return n && r && s
-            }
+                r = n("902704"),
+                s = n("447003"),
+                a = n("592125"),
+                o = n("984933"),
+                l = n("430824"),
+                u = n("496675"),
+                d = n("630388"),
+                _ = n("823379"),
+                c = n("700785"),
+                E = n("977258"),
+                I = n("981631"),
+                T = n("372897");
+            let f = new Date(16824888e5);
 
             function S(e) {
-                let t = o.default.getGuild(e),
-                    n = !!(null == t ? void 0 : t.hasFeature(E.GuildFeatures.COMMUNITY)),
-                    i = l.default.can(E.Permissions.MANAGE_GUILD, t),
-                    r = l.default.can(E.Permissions.MANAGE_ROLES, t);
+                return (0, i.useStateFromStores)([l.default, u.default], () => {
+                    let t = l.default.getGuild(e),
+                        n = !!(null == t ? void 0 : t.hasFeature(I.GuildFeatures.COMMUNITY)),
+                        i = u.default.can(I.Permissions.MANAGE_GUILD, t),
+                        r = u.default.can(I.Permissions.MANAGE_ROLES, t);
+                    return n && i && r
+                })
+            }
+
+            function h(e) {
+                let t = l.default.getGuild(e),
+                    n = !!(null == t ? void 0 : t.hasFeature(I.GuildFeatures.COMMUNITY)),
+                    i = u.default.can(I.Permissions.MANAGE_GUILD, t),
+                    r = u.default.can(I.Permissions.MANAGE_ROLES, t);
                 return n && i && r
             }
 
-            function h(e, t) {
+            function A(e, t) {
                 var n;
-                if (null == e || !e.hasFeature(E.GuildFeatures.GUILD_ONBOARDING) || null == t || null == t.joinedAt || new Date(t.joinedAt) < T) return !1;
+                if (null == e || !e.hasFeature(I.GuildFeatures.GUILD_ONBOARDING) || null == t || null == t.joinedAt || new Date(t.joinedAt) < f) return !1;
                 let i = null !== (n = t.flags) && void 0 !== n ? n : 0;
-                return u.hasFlag(i, I.GuildMemberFlags.STARTED_ONBOARDING) && !u.hasFlag(i, I.GuildMemberFlags.COMPLETED_ONBOARDING)
+                return d.hasFlag(i, T.GuildMemberFlags.STARTED_ONBOARDING) && !d.hasFlag(i, T.GuildMemberFlags.COMPLETED_ONBOARDING)
             }
 
-            function A(e, t, n) {
+            function m(e, t, n) {
                 let i = new Set;
                 e.forEach(e => {
                     e.options.forEach(e => {
@@ -138421,22 +138425,13 @@
                         })
                     })
                 }), t.forEach(e => i.add(e));
-                let s = n.filter(e => !e.isCategory() && !e.isThread() && !(0, r.default)(e)),
-                    a = s.filter(e => i.has(e.id) || null != e.parent_id && i.has(e.parent_id));
-                return [a, s.filter(e => !i.has(e.id) && !(null != e.parent_id && i.has(e.parent_id)))]
-            }
-
-            function m(e, t, n) {
-                return A(t, n, a.default.getChannels(e)[0, a.GUILD_SELECTABLE_CHANNELS_KEY].map(e => {
-                    let {
-                        channel: t
-                    } = e;
-                    return t
-                }))
+                let r = n.filter(e => !e.isCategory() && !e.isThread() && !(0, s.default)(e)),
+                    a = r.filter(e => i.has(e.id) || null != e.parent_id && i.has(e.parent_id));
+                return [a, r.filter(e => !i.has(e.id) && !(null != e.parent_id && i.has(e.parent_id)))]
             }
 
             function N(e, t, n) {
-                return A(t, n, (0, i.useStateFromStores)([a.default], () => a.default.getChannels(e))[0, a.GUILD_SELECTABLE_CHANNELS_KEY].map(e => {
+                return m(t, n, o.default.getChannels(e)[0, o.GUILD_SELECTABLE_CHANNELS_KEY].map(e => {
                     let {
                         channel: t
                     } = e;
@@ -138444,100 +138439,99 @@
                 }))
             }
 
-            function O(e) {
-                return p(s.default.getChannel(e))
+            function O(e, t, n) {
+                return m(t, n, (0, i.useStateFromStores)([o.default], () => o.default.getChannels(e))[0, o.GUILD_SELECTABLE_CHANNELS_KEY].map(e => {
+                    let {
+                        channel: t
+                    } = e;
+                    return t
+                }))
             }
 
             function p(e) {
-                return !!(null != e && (0, c.canChannelBeDefault)(e.guild_id, e.id)) && (e.isForumChannel() ? _.canEveryoneRole(E.Permissions.SEND_MESSAGES_IN_THREADS, e) : _.canEveryoneRole(E.Permissions.SEND_MESSAGES, e))
+                return R(a.default.getChannel(e))
             }
 
             function R(e) {
-                let t = (0, i.useStateFromStores)([s.default], () => s.default.getChannel(e));
-                return (0, d.isNotNullish)(t) && p(t)
+                return !!(null != e && (0, E.canChannelBeDefault)(e.guild_id, e.id)) && (e.isForumChannel() ? c.canEveryoneRole(I.Permissions.SEND_MESSAGES_IN_THREADS, e) : c.canEveryoneRole(I.Permissions.SEND_MESSAGES, e))
             }
 
-            function C(e, t, n) {
+            function C(e) {
+                return (0, i.useStateFromStores)([a.default], () => {
+                    let t = a.default.getChannel(e);
+                    return (0, _.isNotNullish)(t) && R(t)
+                })
+            }
+
+            function g(e, t, n) {
                 let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : () => !0,
-                    r = L(e, t).map(e => e.id).filter(i);
+                    r = L(e, t, e => e.id, i);
                 return n.forEach(t => {
                     var n, s;
                     if (!t.required) return;
-                    let a = L(e, null !== (s = null === (n = t.options[0]) || void 0 === n ? void 0 : n.channelIds) && void 0 !== s ? s : []).map(e => e.id),
+                    let a = L(e, null !== (s = null === (n = t.options[0]) || void 0 === n ? void 0 : n.channelIds) && void 0 !== s ? s : [], e => e.id),
                         o = t.options.reduce((t, n) => {
                             if (null == n.channelIds) return [];
-                            let s = L(e, n.channelIds).map(e => e.id).filter(e => i(e) && !r.includes(e));
+                            let s = L(e, n.channelIds, e => e.id, e => i(e) && !r.includes(e));
                             return s.length < t.length ? s : t
                         }, a);
                     r.push(...o)
                 }), r
             }
 
-            function g(e, t) {
-                return e.filter(e => {
-                    let n = t.find(t => {
-                        let {
-                            channel: n
-                        } = t;
-                        return n.id === e
-                    });
-                    return p(null == n ? void 0 : n.channel)
-                })
-            }
-
             function L(e, t) {
-                return a.default.getChannels(e)[a.GUILD_SELECTABLE_CHANNELS_KEY].filter(e => {
-                    let {
-                        channel: n
-                    } = e;
-                    return (0, c.canChannelBeDefault)(n.guild_id, n.id) && (t.includes(n.id) && !n.isCategory() || !n.isThread() && null != n.parent_id && t.includes(n.parent_id))
-                }).map(e => {
-                    let {
-                        channel: t
-                    } = e;
-                    return t
-                })
+                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : e => e,
+                    i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : () => !0,
+                    r = o.default.getChannels(e)[o.GUILD_SELECTABLE_CHANNELS_KEY],
+                    s = [];
+                for (let {
+                        channel: e
+                    }
+                    of r)
+                    if ((0, E.canChannelBeDefault)(e.guild_id, e.id) && (t.includes(e.id) && !e.isCategory() || !e.isThread() && null != e.parent_id && t.includes(e.parent_id))) {
+                        let t = n(e);
+                        i(t) && s.push(t)
+                    } return s
             }
 
             function D(e, t) {
-                let n = L(e, t),
-                    i = a.default.getChannels(e)[a.GUILD_SELECTABLE_CHANNELS_KEY];
-                return [g(n.map(e => {
+                var n, i;
+                let r = L(e, t),
+                    s = o.default.getChannels(e)[o.GUILD_SELECTABLE_CHANNELS_KEY],
+                    a = {};
+                for (let e of s) a[e.channel.id] = e;
+                return [(n = r.map(e => {
                     let {
                         id: t
                     } = e;
                     return t
-                }), i), n]
+                }), i = a, n.filter(e => {
+                    var t;
+                    return R(null === (t = i[e]) || void 0 === t ? void 0 : t.channel)
+                })), r]
             }
 
             function v(e, t) {
-                var n, r;
-                let s = (n = e, r = t, (0, i.useStateFromStores)([a.default], () => a.default.getChannels(n))[a.GUILD_SELECTABLE_CHANNELS_KEY].filter(e => {
-                        let {
-                            channel: t
-                        } = e;
-                        return (0, c.canChannelBeDefault)(t.guild_id, t.id) && (r.includes(t.id) && !t.isCategory() || !t.isThread() && null != t.parent_id && r.includes(t.parent_id))
-                    }).map(e => {
-                        let {
-                            channel: t
-                        } = e;
-                        return t
-                    })),
-                    o = (0, i.useStateFromStores)([a.default], () => a.default.getChannels(e))[a.GUILD_SELECTABLE_CHANNELS_KEY];
-                return [g(s.map(e => {
-                    let {
-                        id: t
-                    } = e;
-                    return t
-                }), o), s]
+                return e[0].length === t[0].length && e[1].length === t[1].length && (0, r.default)(e[0], t[0]) && (0, r.default)(e[1], t[1])
             }
 
-            function M(e) {
-                return new Set(e.map(e => e.roleIds).flat().filter(d.isNotNullish))
+            function M(e, t) {
+                return (0, i.useStateFromStores)([o.default], () => {
+                    let n = o.default.getChannels(e),
+                        i = [],
+                        r = [],
+                        s = {};
+                    for (let e of n[o.GUILD_SELECTABLE_CHANNELS_KEY])(0, E.canChannelBeDefault)(e.channel.guild_id, e.channel.id) && (t.has(e.channel.id) && !e.channel.isCategory() || !e.channel.isThread() && null != e.channel.parent_id && t.has(e.channel.parent_id)) && (s[e.channel.id] = e, i.push(e.channel), R(e.channel) && r.push(e.channel.id));
+                    return [r, i]
+                }, [e, t], v)
             }
 
             function y(e) {
-                return new Set(e.map(e => e.channelIds).flat().filter(d.isNotNullish))
+                return new Set(e.map(e => e.roleIds).flat().filter(_.isNotNullish))
+            }
+
+            function P(e) {
+                return new Set(e.map(e => e.channelIds).flat().filter(_.isNotNullish))
             }
         },
         17181: function(e, t, n) {
@@ -139530,24 +139524,23 @@
             }
 
             function S(e) {
-                let t = (0, s.useStateFromStores)([u.default], () => u.default.getGuild(e)),
-                    n = (0, c.default)(t),
-                    {
-                        homeSettingsEnabled: i
-                    } = _.default.useExperiment({
-                        guildId: e,
-                        location: "61eef9_2"
-                    }, {
-                        autoTrackExposure: !1
-                    }),
-                    d = (0, s.useStateFromStores)([o.default], () => o.default.isFullServerPreview(e)),
-                    S = (0, E.default)(e),
-                    h = (0, s.useStateFromStores)([l.default], () => l.default.getMutableGuildChannelsForGuild(e));
-                if (null == t || __OVERLAY__ || e === I.ME || e === I.FAVORITES) return !1;
-                if (d) return f(t);
-                let A = i && (0, a.isGuildOnboardingSettingsAvailable)(e) && t.hasFeature(I.GuildFeatures.GUILD_ONBOARDING) && t.hasFeature(I.GuildFeatures.GUILD_SERVER_GUIDE),
-                    m = r().some(r().values(h), e => e.hasFlag(T.ChannelFlags.IS_GUILD_RESOURCE_CHANNEL));
-                return !(!S && !m) && (n && t.hasFeature(I.GuildFeatures.GUILD_ONBOARDING) && t.hasFeature(I.GuildFeatures.GUILD_SERVER_GUIDE) || A) && t.hasFeature(I.GuildFeatures.COMMUNITY)
+                let {
+                    homeSettingsEnabled: t
+                } = _.default.useExperiment({
+                    guildId: e,
+                    location: "61eef9_2"
+                }, {
+                    autoTrackExposure: !1
+                }), n = (0, E.default)(e), i = l.default.getMutableGuildChannelsForGuild(e);
+                return (0, s.useStateFromStores)([u.default, o.default], () => {
+                    let s = u.default.getGuild(e);
+                    if (__OVERLAY__ || e === I.ME || e === I.FAVORITES || null == s) return !1;
+                    if (o.default.isFullServerPreview(e)) return f(s);
+                    let l = (0, c.default)(s),
+                        d = t && (0, a.isGuildOnboardingSettingsAvailable)(e) && s.hasFeature(I.GuildFeatures.GUILD_ONBOARDING) && s.hasFeature(I.GuildFeatures.GUILD_SERVER_GUIDE),
+                        _ = r().some(r().values(i), e => e.hasFlag(T.ChannelFlags.IS_GUILD_RESOURCE_CHANNEL));
+                    return !(!n && !_) && (l && s.hasFeature(I.GuildFeatures.GUILD_ONBOARDING) && s.hasFeature(I.GuildFeatures.GUILD_SERVER_GUIDE) || d) && s.hasFeature(I.GuildFeatures.COMMUNITY)
+                }, [e, t, n, i])
             }
 
             function h(e) {
@@ -139619,17 +139612,20 @@
                 o = n("630388"),
                 l = n("372897");
 
-            function u(e) {
-                var t;
-                let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                    i = (null == e ? void 0 : e.joinedAt) == null ? null : new Date(e.joinedAt),
-                    r = new Date;
-                return !!n || null != i && r.getTime() - i.getTime() < a.default.Millis.WEEK && !(0, o.hasFlag)(null !== (t = null == e ? void 0 : e.flags) && void 0 !== t ? t : 0, l.GuildMemberFlags.COMPLETED_HOME_ACTIONS)
+            function u(e, t) {
+                let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+                if (n) return !0;
+                let i = null != e ? new Date(e) : void 0;
+                return null != i && new Date().getTime() - i.getTime() < a.default.Millis.WEEK && !(0, o.hasFlag)(null != t ? t : 0, l.GuildMemberFlags.COMPLETED_HOME_ACTIONS)
             }
 
             function d(e) {
-                let t = (0, i.useStateFromStores)([s.default], () => s.default.getSelfMember(e));
-                return u(t, (0, i.useStateFromStores)([r.default], () => r.default.isFullServerPreview(e)))
+                return (0, i.useStateFromStores)([s.default, r.default], () => {
+                    var t, n;
+                    if (r.default.isFullServerPreview(e)) return !0;
+                    let i = s.default.getSelfMember(e);
+                    return u(null !== (t = null == i ? void 0 : i.joinedAt) && void 0 !== t ? t : void 0, null !== (n = null == i ? void 0 : i.flags) && void 0 !== n ? n : void 0)
+                })
             }
         },
         218315: function(e, t, n) {
@@ -139737,20 +139733,22 @@
                         } = await this._getOrLoadOnboardingMemberActions(e), r = null == n ? void 0 : n.find(e => e.channelId === t);
                         (null == i ? void 0 : i[t]) !== !0 && null != r && r.actionType === I.NewMemberActionTypes.CHAT && (0, c.completeNewMemberAction)(e, t)
                     }), A(this, "_getOrLoadOnboardingMemberActions", async e => {
-                        let t = (0, f.canSeeOnboardingHome)(e),
-                            n = a.default.isFullServerPreview(e);
-                        if (!t && !n) return {};
-                        let i = u.default.getSelfMember(e);
-                        if (null == i || !(0, S.getIsNewMember)(i)) return {};
-                        let [r, s] = await Promise.all([this._getOrLoadOnboardingHomeSettings(e, i), this._getOrLoadMemberActions(e, i)]);
+                        var t, n;
+                        let i = (0, f.canSeeOnboardingHome)(e),
+                            r = a.default.isFullServerPreview(e);
+                        if (!i && !r) return {};
+                        let s = u.default.getSelfMember(e);
+                        if (null == s || !(0, S.getIsNewMember)(null !== (t = s.joinedAt) && void 0 !== t ? t : void 0, null !== (n = s.flags) && void 0 !== n ? n : void 0)) return {};
+                        let [o, l] = await Promise.all([this._getOrLoadOnboardingHomeSettings(e, s), this._getOrLoadMemberActions(e, s)]);
                         return {
-                            memberActions: r,
-                            completedActions: s
+                            memberActions: o,
+                            completedActions: l
                         }
                     }), A(this, "_getOrLoadOnboardingHomeSettings", async (e, t) => {
-                        let n = E.default.getNewMemberActions(e),
-                            i = E.default.getIsLoading(e);
-                        if (!(null == n && !i && (0, S.getIsNewMember)(t))) return n;
+                        var n, i;
+                        let r = E.default.getNewMemberActions(e),
+                            s = E.default.getIsLoading(e);
+                        if (!(null == r && !s && (0, S.getIsNewMember)(null !== (n = t.joinedAt) && void 0 !== n ? n : void 0, null !== (i = t.flags) && void 0 !== i ? i : void 0))) return r;
                         {
                             let t = await (0, c.fetchGuildHomeSettings)(e);
                             return null == t ? void 0 : t.newMemberActions
@@ -157867,8 +157865,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712017935641",
-                                    build_number: "280675"
+                                    built_at: "1712021644740",
+                                    build_number: "280692"
                                 }
                             },
                             retries: 1
@@ -162280,10 +162278,13 @@
                 l = n("981631");
 
             function u(e) {
-                let t = (0, i.useStateFromStores)([a.default], () => a.default.isOptInEnabled(e)),
-                    n = (0, i.useStateFromStores)([r.default], () => r.default.getGuild(e)),
-                    s = (0, i.useStateFromStores)([o.default], () => o.default.getCurrentUser());
-                return null != e && null != n && null != s && (n.hasFeature(l.GuildFeatures.COMMUNITY) || s.isStaff()) && t
+                return (0, i.useStateFromStores)([a.default, r.default, o.default], () => {
+                    var t, n, i, s;
+                    let u = a.default.isOptInEnabled(e),
+                        d = null !== (i = null === (t = r.default.getGuild(e)) || void 0 === t ? void 0 : t.hasFeature(l.GuildFeatures.COMMUNITY)) && void 0 !== i && i,
+                        _ = null !== (s = null === (n = o.default.getCurrentUser()) || void 0 === n ? void 0 : n.isStaff()) && void 0 !== s && s;
+                    return u && (d || _)
+                })
             }
 
             function d(e) {
@@ -162293,17 +162294,14 @@
             }
 
             function _(e) {
-                let t = (0, i.useStateFromStores)([r.default], () => r.default.getGuild(e)),
-                    {
-                        canManageGuild: n,
-                        canManageRoles: a
-                    } = (0, i.useStateFromStoresObject)([s.default], () => ({
-                        canManageGuild: s.default.can(l.Permissions.MANAGE_GUILD, t),
-                        canManageRoles: s.default.can(l.Permissions.MANAGE_ROLES, t)
-                    }));
-                if (null == t) return !1;
-                let o = t.hasFeature(l.GuildFeatures.GUILD_ONBOARDING_EVER_ENABLED);
-                return n && a && !o
+                return (0, i.useStateFromStores)([r.default, s.default], () => {
+                    var t;
+                    let n = r.default.getGuild(e),
+                        i = s.default.can(l.Permissions.MANAGE_GUILD, n),
+                        a = s.default.can(l.Permissions.MANAGE_ROLES, n),
+                        o = null !== (t = null == n ? void 0 : n.hasFeature(l.GuildFeatures.GUILD_ONBOARDING_EVER_ENABLED)) && void 0 !== t && t;
+                    return null != n && i && a && !o
+                })
             }
         },
         658785: function(e, t, n) {
@@ -201711,7 +201709,7 @@
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: t
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("73422"), n.e("74112"), n.e("61366")]).then(n.bind(n, "598576"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("73422"), n.e("74112"), n.e("18290")]).then(n.bind(n, "598576"));
                     return n => (0, i.jsx)(t, {
                         analyticsLocation: e,
                         ...n
@@ -205728,7 +205726,7 @@
                 return !1
             }
             n.r(t), n.d(t, {
-                isOldVoiceUIEnabled: function() {
+                isVoicePanelEnabled: function() {
                     return i
                 }
             })
@@ -231809,7 +231807,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ef79dd24248f1be0755b8f230869a7763b7a940f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a7f9fb4e61dac41d5d5a25e8f8fbe48b2e679aec"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257905,7 +257903,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280675"
+                                build_number: "280692"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265050,7 +265048,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280675", "280675"), 10);
+                let s = parseInt((n = "280692", "280692"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291798,4 +291796,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.d29883a8d38a64ff003a.js.map
+//# sourceMappingURL=97256.79a160155296416ffa05.js.map
