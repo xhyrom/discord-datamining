@@ -36663,7 +36663,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280790", ", Version Hash: ").concat("5862baaa167f9b374232e55677bdb3c6c20d4b9f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280805", ", Version Hash: ").concat("ff02816a4e0b175965052fc299ddb0376efcacdb")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85568,8 +85568,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280790", "280790"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280790")), t = 0), t
+                let t = parseInt((e = "280805", "280805"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280805")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107574,8 +107574,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280790",
-                    versionHash: "5862baaa167f9b374232e55677bdb3c6c20d4b9f"
+                    buildNumber: "280805",
+                    versionHash: "ff02816a4e0b175965052fc299ddb0376efcacdb"
                 }
             }
             n.r(t), n.d(t, {
@@ -157782,8 +157782,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712076123486",
-                                    build_number: "280790"
+                                    built_at: "1712077718992",
+                                    build_number: "280805"
                                 }
                             },
                             retries: 1
@@ -231816,7 +231816,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5862baaa167f9b374232e55677bdb3c6c20d4b9f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ff02816a4e0b175965052fc299ddb0376efcacdb"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257920,7 +257920,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280790"
+                                build_number: "280805"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265065,7 +265065,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280790", "280790"), 10);
+                let s = parseInt((n = "280805", "280805"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -277419,7 +277419,7 @@
                     videoBudget: {
                         width: 1280,
                         height: 720,
-                        framerate: 30
+                        framerate: q
                     },
                     videoCapture: {
                         width: 1280,
@@ -277798,7 +277798,7 @@
                 }
                 applyQualityConstraints(e, t) {
                     let n = this.getQuality(t);
-                    return null != n.capture && (e.encodingVideoWidth = n.capture.width, e.encodingVideoHeight = n.capture.height, e.encodingVideoFrameRate = n.capture.framerate), null != n.encode && (e.remoteSinkWantsMaxFramerate = n.encode.framerate, e.remoteSinkWantsPixelCount = n.encode.pixelCount), null != n.bitrateTarget ? e.encodingVideoBitRate = n.bitrateTarget : e.encodingVideoBitRate = n.bitrateMax, e.encodingVideoMinBitRate = n.bitrateMin, e.encodingVideoMaxBitRate = n.bitrateMax, null != e.encodingVideoBitRate && null != e.encodingVideoMaxBitRate && (e.encodingVideoBitRate = Math.min(e.encodingVideoBitRate, e.encodingVideoMaxBitRate)), {
+                    return null != n.capture && (e.encodingVideoWidth = n.capture.width, e.encodingVideoHeight = n.capture.height, e.encodingVideoFrameRate = n.capture.framerate, e.captureVideoFrameRate = n.capture.framerate), null != n.encode && (e.remoteSinkWantsMaxFramerate = n.encode.framerate, e.remoteSinkWantsPixelCount = n.encode.pixelCount), null != n.bitrateTarget ? e.encodingVideoBitRate = n.bitrateTarget : e.encodingVideoBitRate = n.bitrateMax, e.encodingVideoMinBitRate = n.bitrateMin, e.encodingVideoMaxBitRate = n.bitrateMax, null != e.encodingVideoBitRate && null != e.encodingVideoMaxBitRate && (e.encodingVideoBitRate = Math.min(e.encodingVideoBitRate, e.encodingVideoMaxBitRate)), {
                         quality: n,
                         constraints: e
                     }
@@ -291813,4 +291813,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.2a19cf3de06822ad18fb.js.map
+//# sourceMappingURL=97256.df7c99fd692983328d24.js.map
