@@ -27877,6 +27877,10 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     background-image: linear-gradient(90deg, var(--premium-tier-2-pink-for-gradients)0%, var(--premium-tier-2-purple-for-gradients)50%, var(--premium-tier-2-pink-for-gradients)100%)
 }
 
+.requirement_f0aa0e {
+    margin-top: 4px
+}
+
 .sectionsContainer__45b62 {
     flex: 1
 }
@@ -131508,4 +131512,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.5c91aa555ab6c63bc64c.css.map*/
+/*# sourceMappingURL=99387.dc4689cc862aed985652.css.map*/
