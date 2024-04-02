@@ -36549,7 +36549,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280901", ", Version Hash: ").concat("caa1bace0461ef066dce3c4ec6af78cce47fa2e0")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280910", ", Version Hash: ").concat("59635e6a61e7213f49e0e120440ef29289d4549f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -80154,7 +80154,7 @@
                 let l = _.activitySize + _.padding + _.imagePadding;
                 e.setColor("dark" === o ? "white" : "rgb(6, 6, 7)"), e.setFont({
                     size: 16,
-                    family: '"gg sans", sans-serif',
+                    family: ["gg sans", "sans-serif"],
                     weight: 700
                 }), e.drawText("".concat(t.name), {
                     x: l,
@@ -80197,7 +80197,7 @@
                 let o = _.activitySize + _.padding + _.imagePadding;
                 e.setColor("dark" === a ? "white" : "rgb(6, 6, 7)"), e.setFont({
                     size: 14,
-                    family: '"gg sans", sans-serif',
+                    family: ["gg sans", "sans-serif"],
                     weight: 700
                 }), e.drawText("".concat(t.details), {
                     x: o,
@@ -80240,7 +80240,7 @@
                 let l = _.activitySize + _.padding + _.imagePadding;
                 e.setColor("dark" === o ? "white" : "rgb(6, 6, 7)"), e.setFont({
                     size: 14,
-                    family: '"gg sans", sans-serif',
+                    family: ["gg sans", "sans-serif"],
                     weight: 700
                 }), e.drawText(I.default.Messages.STATUS_LEAD_IN_JUST, {
                     x: l,
@@ -80288,7 +80288,7 @@
                 let o = _.activitySize + _.padding + _.imagePadding;
                 e.setColor("dark" === s ? "white" : "rgb(6, 6, 7)"), e.setFont({
                     size: 14,
-                    family: '"gg sans", sans-serif',
+                    family: ["gg sans", "sans-serif"],
                     weight: 700
                 }), e.drawText("".concat(t.details), {
                     x: o,
@@ -80337,7 +80337,7 @@
                 let l = _.activitySize + _.padding + _.imagePadding;
                 e.setColor("dark" === o ? "white" : "rgb(6, 6, 7)"), e.setFont({
                     size: 16,
-                    family: '"gg sans", sans-serif',
+                    family: ["gg sans", "sans-serif"],
                     weight: 700
                 }), e.drawText("Streaming ".concat(t.name), {
                     x: l,
@@ -84761,18 +84761,30 @@
         },
         4646: function(e, t, n) {
             "use strict";
-            n.r(t), n.d(t, {
-                loadAssetMap: function() {
-                    return i
-                }
-            }), n("653041"), n("47120");
-            async function i(e) {
-                let t = new r,
+
+            function i(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            async function r(e) {
+                let t = new s,
                     n = [];
                 for (let i of Object.keys(e)) n.push(t.loadRemoteImage(i, e[i]));
                 return await Promise.all(n), t
             }
-            class r {
+            n.r(t), n.d(t, {
+                loadAssetMap: function() {
+                    return r
+                }
+            }), n("653041"), n("47120");
+            class s {
+                loadFonts() {
+                    return Promise.resolve()
+                }
                 async loadRemoteImage(e, t) {
                     let n = new Image;
                     return n.src = t, n.crossOrigin = "anonymous", await n.decode(), this.assets[e] = n, Promise.resolve()
@@ -84784,13 +84796,7 @@
                     return null != this.assets[e]
                 }
                 constructor() {
-                    var e, t, n;
-                    e = this, n = {}, (t = "assets") in e ? Object.defineProperty(e, t, {
-                        value: n,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = n
+                    i(this, "assets", {}), i(this, "fontManager", void 0)
                 }
             }
         },
@@ -84835,7 +84841,7 @@
                         style: "normal",
                         weight: 300,
                         size: s.DEFAULT_FONT_SIZE,
-                        family: "serif",
+                        family: ["serif"],
                         truncate: a.TextTruncationMethod.None
                     }), o(this, "assetMap", void 0), o(this, "canvas", void 0), this.canvas = e, this.assetMap = t
                 }
@@ -84930,7 +84936,7 @@
                     return this.canvas
                 }
                 setContextProperties() {
-                    null != this.context && (this.context.fillStyle = this.color, this.context.strokeStyle = this.color, this.context.font = "".concat(this.font.style, " ").concat(this.font.weight, " ").concat(this.font.size, "px ").concat(this.font.family))
+                    null != this.context && (this.context.fillStyle = this.color, this.context.strokeStyle = this.color, this.context.font = "".concat(this.font.style, " ").concat(this.font.weight, " ").concat(this.font.size, "px ").concat(this.font.family.join(", ")))
                 }
                 setSize(e, t) {
                     let {
@@ -85247,7 +85253,14 @@
                     assetsToLoad: t,
                     drawImage: s,
                     exportConfigs: a
-                } = e, o = await (0, i.loadAssetMap)(t), l = n("503082").default, u = n("97008").default, d = document.createElement("canvas"), _ = new l(d, o), c = new u, E = new r.default(_, c);
+                } = e, o = await (0, i.loadAssetMap)(t);
+                await o.loadFonts();
+                let l = n("503082").default,
+                    u = n("97008").default,
+                    d = document.createElement("canvas"),
+                    _ = new l(d, o),
+                    c = new u,
+                    E = new r.default(_, c);
                 s(E.canvas);
                 let I = await E.export(a);
                 return d.remove(), I
@@ -85470,8 +85483,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280901", "280901"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280901")), t = 0), t
+                let t = parseInt((e = "280910", "280910"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280910")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107476,8 +107489,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280901",
-                    versionHash: "caa1bace0461ef066dce3c4ec6af78cce47fa2e0"
+                    buildNumber: "280910",
+                    versionHash: "59635e6a61e7213f49e0e120440ef29289d4549f"
                 }
             }
             n.r(t), n.d(t, {
@@ -157684,8 +157697,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712088510424",
-                                    build_number: "280901"
+                                    built_at: "1712089460628",
+                                    build_number: "280910"
                                 }
                             },
                             retries: 1
@@ -231734,7 +231747,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "caa1bace0461ef066dce3c4ec6af78cce47fa2e0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "59635e6a61e7213f49e0e120440ef29289d4549f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257838,7 +257851,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280901"
+                                build_number: "280910"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264983,7 +264996,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280901", "280901"), 10);
+                let s = parseInt((n = "280910", "280910"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291769,4 +291782,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.b8c63befe9612455d635.js.map
+//# sourceMappingURL=97256.6f7fd007beb537e7a160.js.map
