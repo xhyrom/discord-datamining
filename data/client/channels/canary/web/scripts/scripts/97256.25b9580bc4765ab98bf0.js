@@ -36663,7 +36663,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280772", ", Version Hash: ").concat("abb2f3394c752da4f444bcf3a9d9e231c47904b6")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280778", ", Version Hash: ").concat("a32f85bd85a1f9df0198a59ad9418162dd11fdac")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85568,8 +85568,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280772", "280772"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280772")), t = 0), t
+                let t = parseInt((e = "280778", "280778"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280778")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -105534,7 +105534,10 @@
                         feed: e
                     }), c = 0, _ = !1, h()
                 } catch (e) {
-                    c < 3 && (d = setTimeout(() => A(), 1e3 * Math.pow(5, c)), c += 1), _ = !1
+                    c < 3 ? (d = setTimeout(() => A(), 1e3 * Math.pow(5, c)), c += 1) : i.default.dispatch({
+                        type: "CONTENT_INVENTORY_CLEAR_FEED",
+                        feedId: u
+                    }), _ = !1
                 }
             }
 
@@ -105593,6 +105596,12 @@
                         feed: n
                     } = e;
                     u.set(t, n)
+                },
+                CONTENT_INVENTORY_CLEAR_FEED: function(e) {
+                    let {
+                        feedId: t
+                    } = e;
+                    u.delete(t)
                 },
                 CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: function() {
                     d = !d
@@ -107565,8 +107574,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280772",
-                    versionHash: "abb2f3394c752da4f444bcf3a9d9e231c47904b6"
+                    buildNumber: "280778",
+                    versionHash: "a32f85bd85a1f9df0198a59ad9418162dd11fdac"
                 }
             }
             n.r(t), n.d(t, {
@@ -157773,8 +157782,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712072706183",
-                                    build_number: "280772"
+                                    built_at: "1712073224732",
+                                    build_number: "280778"
                                 }
                             },
                             retries: 1
@@ -231723,7 +231732,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "abb2f3394c752da4f444bcf3a9d9e231c47904b6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a32f85bd85a1f9df0198a59ad9418162dd11fdac"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -235722,17 +235731,20 @@
                         renderLinkComponent: p,
                         onClick: R,
                         onPlay: C,
-                        onEnded: g,
-                        onVolumeChange: L,
-                        onMute: D,
-                        alt: v = u.default.Messages.VIDEO,
-                        ...M
+                        onPause: g,
+                        onEnded: L,
+                        onControlsShow: D,
+                        onControlsHide: v,
+                        onVolumeChange: M,
+                        onMute: y,
+                        alt: P = u.default.Messages.VIDEO,
+                        ...U
                     } = this.props;
                     return (0, i.jsx)(a.default, {
-                        alt: v,
+                        alt: P,
                         className: n,
                         src: d,
-                        ...M,
+                        ...U,
                         minWidth: o.default.minWidth,
                         minHeight: o.default.minHeight,
                         shouldLink: !1,
@@ -235746,10 +235758,10 @@
                                     width: u,
                                     height: d
                                 }
-                            } = n, v = !(c <= l.MAX_VIDEO_WIDTH && E <= l.MAX_VIDEO_HEIGHT || c <= l.MAX_VIDEO_HEIGHT && E <= l.MAX_VIDEO_WIDTH);
+                            } = n, P = !(c <= l.MAX_VIDEO_WIDTH && E <= l.MAX_VIDEO_HEIGHT || c <= l.MAX_VIDEO_HEIGHT && E <= l.MAX_VIDEO_WIDTH);
                             return (0, i.jsx)(o.default, {
                                 className: r,
-                                forceExternal: v,
+                                forceExternal: P,
                                 src: e,
                                 poster: a,
                                 width: u,
@@ -235768,9 +235780,12 @@
                                 renderOverlayContent: O,
                                 onClick: R,
                                 onPlay: C,
-                                onEnded: g,
-                                onVolumeChange: L,
-                                onMute: D,
+                                onPause: g,
+                                onEnded: L,
+                                onVolumeChange: M,
+                                onMute: y,
+                                onControlsShow: D,
+                                onControlsHide: v,
                                 mimeType: N,
                                 downloadable: T
                             })
@@ -236402,14 +236417,12 @@
                     this.state.translateY.setValue(this.props.autoPlay ? 1 : 0)
                 }
                 componentDidUpdate(e) {
+                    var t, n, i, r, s;
                     let {
-                        hide: t,
-                        playing: n
+                        hide: a,
+                        playing: o
                     } = this.props;
-                    if (t && !e.hide) {
-                        var i;
-                        this.animateControls(1, n), null === (i = this.volumeButton) || void 0 === i || i.blur()
-                    } else !t && e.hide && this.animateControls(0, n)
+                    a && !e.hide ? (this.animateControls(1, o), null === (t = this.volumeButton) || void 0 === t || t.blur(), null === (n = (i = this.props).onControlsHide) || void 0 === n || n.call(i)) : !a && e.hide && (this.animateControls(0, o), null === (r = (s = this.props).onControlsShow) || void 0 === r || r.call(s))
                 }
                 updateProgress(e) {
                     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
@@ -236983,28 +236996,30 @@
                             autoPlay: n,
                             playable: i = !0,
                             onVolumeShow: r,
-                            onVolumeHide: a
+                            onVolumeHide: a,
+                            onControlsHide: o,
+                            onControlsShow: l
                         },
                         state: {
-                            buffers: o,
-                            currentTime: l,
-                            duration: u,
-                            hasClickedPlay: d,
-                            hideControls: _,
-                            muted: c,
-                            playing: E,
-                            fullscreen: T,
-                            volume: f,
-                            dragging: S
+                            buffers: u,
+                            currentTime: d,
+                            duration: _,
+                            hasClickedPlay: c,
+                            hideControls: E,
+                            muted: T,
+                            playing: f,
+                            fullscreen: S,
+                            volume: m,
+                            dragging: N
                         }
-                    } = this, m = this.getWidth();
-                    return d || n || t === B.AUDIO ? (0, s.jsx)(x, {
-                        buffers: o,
-                        currentTime: l,
-                        duration: u,
-                        volume: (0, h.amplitudeToPerceptual)(f, 1),
-                        hide: t === B.VIDEO && _,
-                        muted: c,
+                    } = this, p = this.getWidth();
+                    return c || n || t === B.AUDIO ? (0, s.jsx)(x, {
+                        buffers: u,
+                        currentTime: d,
+                        duration: _,
+                        volume: (0, h.amplitudeToPerceptual)(m, 1),
+                        hide: t === B.VIDEO && E,
+                        muted: T,
                         autoPlay: n,
                         onDrag: this.handleDrag,
                         onDragEnd: this.handleDragEnd,
@@ -237014,11 +237029,13 @@
                         onToggleMuted: this.toggleMuted,
                         onVolumeShow: r,
                         onVolumeHide: a,
-                        playing: E,
-                        dragging: S,
+                        onControlsShow: l,
+                        onControlsHide: o,
+                        playing: f,
+                        dragging: N,
                         type: t,
                         ref: this.controlsRef,
-                        width: T ? window.screen.width : m,
+                        width: S ? window.screen.width : p,
                         disabled: !i,
                         children: t === B.VIDEO ? (0, s.jsx)(I.default, {
                             "aria-label": y.default.Messages.TITLE_BAR_FULLSCREEN_WINDOW,
@@ -257819,7 +257836,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280772"
+                                build_number: "280778"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264964,7 +264981,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280772", "280772"), 10);
+                let s = parseInt((n = "280778", "280778"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291712,4 +291729,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.398452a0ec03a92c3a21.js.map
+//# sourceMappingURL=97256.25b9580bc4765ab98bf0.js.map
