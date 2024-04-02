@@ -1,0 +1,7 @@
+<p id="docs-internal-guid-f68642d6-7fff-dae0-6dd9-d2e80a7c43c6"><a href="https://support.discord.com/hc/articles/22225719947543" target="_blank" rel="noopener noreferrer">Discord In-Game Rewards</a> are typically rewards or other experiences based on you interacting with the games you love while using Discord. You can view what Quests or other experiences are available on Discord through your <strong>Gift Inventory</strong>. </p>
+<p>We may tell you about Quests that we think will interest you based on the games you play or other information associated with your Discord account. If you’re not interested in receiving Discord Quests promotions, you can opt-out of this feature in your <strong>User Settings</strong>.</p>
+<p>1. Open Discord and press the <strong>cogwheel </strong>[<img src="https://support.discord.com/hc/article_attachments/22318423117847" width="23" height="24">] in the bottom left corner to go to <strong>User Settings</strong>.</p>
+<p>2. Then, select the <strong>Privacy &amp; Safety </strong>tab within the left-hand panel.</p>
+<p>3. Scroll down the page to the <strong>How We Use Your Data</strong> section and make sure to disable the <strong>In-game rewards (aka Quests) setting </strong>by selecting the toggle. </p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22318423128471" width="600" height="433"></p>
+<p>4. If you decide later you want to be notified about Quest opportunities, you can enable this setting once again.</p>
