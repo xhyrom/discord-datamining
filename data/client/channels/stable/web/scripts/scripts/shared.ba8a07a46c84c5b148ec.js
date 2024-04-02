@@ -1784,6 +1784,7 @@
                 inlineMediaEmbed: "inlineMediaEmbed_b25e49 embed_cc6dae",
                 isHidden: "isHidden__89db7",
                 justifyAuto: "justifyAuto__5cef0",
+                obscureVideoSpacing: "obscureVideoSpacing__98a58",
                 spoilerAttachment: "spoilerAttachment_d492d5 hiddenAttachment_c6b833",
                 spoilerEmbed: "spoilerEmbed_b9bdb5 hiddenEmbed__56989"
             }
@@ -3466,7 +3467,7 @@
                 messageAttachmentNoJustify: "messageAttachmentNoJustify__9df5b",
                 messageAttachmentWithFooter: "messageAttachmentWithFooter__05fa9",
                 nonMediaAttachment: "nonMediaAttachment_ef83c1",
-                obscureVideo: "obscureVideo__7133c",
+                obscureVideoSpacing: "obscureVideoSpacing__59d03",
                 obscured: "obscured_d8e1c5",
                 removeAttachmentButton: "removeAttachmentButton__692b5",
                 removeAttachmentHoverButton: "removeAttachmentHoverButton__161a2",

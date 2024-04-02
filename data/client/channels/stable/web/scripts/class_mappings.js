@@ -4998,17 +4998,18 @@
                 closeIconButton: "closeIconButton_cc4258",
                 fadeIn: "fadeIn__0663f",
                 fadeOut: "fadeOut_de0df3",
+                finishButton: "finishButton__8590c",
                 footer: "footer_d63e9e",
                 header: "header__05198",
                 introContainer: "introContainer__4ffdc",
                 lastParagraph: "lastParagraph__7a09c",
                 mainContent: "mainContent__23e7a",
                 modal: "modal_f49d0b",
-                modalContent: "modalContent__2b13e",
                 modalContents: "modalContents_e19dbf",
                 overviewSidebar: "overviewSidebar__995aa",
                 overviewSidebarContent: "overviewSidebarContent_b8b257",
                 overviewText: "overviewText__01ee0",
+                previousButton: "previousButton_b43130",
                 progressContainer: "progressContainer__378bd",
                 progressStep: "progressStep_dec95e",
                 progressStepFilled: "progressStepFilled_c8bf61",
@@ -5029,6 +5030,7 @@
             "use strict";
             e.exports = {
                 addText: "addText__8f18c",
+                checkmark: "checkmark_c7b206",
                 clickable: "clickable_a588cd",
                 contentLabel: "contentLabel_aa05d5",
                 contentWithMinHeight: "contentWithMinHeight__78ad4",
@@ -5042,6 +5044,8 @@
                 playstyleSelect: "playstyleSelect_b7d88b",
                 playstyleTitle: "playstyleTitle__00d17",
                 plusIcon: "plusIcon__22efe",
+                selectedGame: "selectedGame__0084c",
+                selectedGameCheck: "selectedGameCheck__389d8",
                 selectedInterest: "selectedInterest_aa523d",
                 selectedPlaystyle: "selectedPlaystyle_e4490f",
                 selectedSection: "selectedSection__5c175",
@@ -21625,6 +21629,12 @@
                 sparklesFlip: "sparklesFlip_f608ea"
             }
         },
+        630883: function(e) {
+            "use strict";
+            e.exports = {
+                requirement: "requirement_f0aa0e"
+            }
+        },
         56845: function(e) {
             "use strict";
             e.exports = {
@@ -24487,6 +24497,7 @@
         458186: function(e) {
             "use strict";
             e.exports = {
+                newIcon: "newIcon__6568d",
                 recentGameContainer: "recentGameContainer__8231a",
                 recentGameDetails: "recentGameDetails_fa472d",
                 recentGameIcon: "recentGameIcon__65d60",
