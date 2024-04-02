@@ -16740,8 +16740,12 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     left: -24px
 }
 
+.sectionContainer__6702e {
+    display: flex
+}
+
 .sectionHeader_d974fe {
-    display: flex;
+    display: inline-block;
     color: var(--interactive-normal);
     cursor: pointer
 }
@@ -16756,6 +16760,10 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .sectionHeader_d974fe .sectionTitle__1a48e {
     color: var(--interactive-normal)
+}
+
+.sectionHeaderContent_a85418 {
+    display: flex
 }
 
 .notFirstSectionHeader__11b56 {
@@ -32911,25 +32919,30 @@ input[type=checked]:focus-visible+.label__73b15 {
     color: var(--white-500)
 }
 
-.root__3eef0.idle_d696d0 {
+html.keyboard-mode .root__3eef0.idle_d696d0:not(:focus-within),
+html:not(.keyboard-mode) .root__3eef0.idle_d696d0 {
     cursor: none
 }
 
-.root__3eef0.idle_d696d0 .gradientContainer_cdada6 {
+html.keyboard-mode .root__3eef0.idle_d696d0:not(:focus-within) .gradientContainer_cdada6,
+html:not(.keyboard-mode) .root__3eef0.idle_d696d0 .gradientContainer_cdada6 {
     opacity: 0
 }
 
-.root__3eef0.idle_d696d0 .topControls_e834ab {
+html.keyboard-mode .root__3eef0.idle_d696d0:not(:focus-within) .topControls_e834ab,
+html:not(.keyboard-mode) .root__3eef0.idle_d696d0 .topControls_e834ab {
     opacity: 0;
     transform: translate3d(0, -8px, 0)
 }
 
-.root__3eef0.idle_d696d0 .bottomControls__72d8d {
+html.keyboard-mode .root__3eef0.idle_d696d0:not(:focus-within) .bottomControls__72d8d,
+html:not(.keyboard-mode) .root__3eef0.idle_d696d0 .bottomControls__72d8d {
     opacity: 0;
     transform: translate3d(0, 8px, 0)
 }
 
-.root__3eef0.idle_d696d0 .chatButton_a40cc3:not(.chatButtonShowing__460dc) {
+html.keyboard-mode .root__3eef0.idle_d696d0:not(:focus-within) .chatButton_a40cc3:not(.chatButtonShowing__460dc),
+html:not(.keyboard-mode) .root__3eef0.idle_d696d0 .chatButton_a40cc3:not(.chatButtonShowing__460dc) {
     opacity: 0;
     transform: translate3d(0, -8px, 0)
 }
@@ -62642,7 +62655,8 @@ html .progress__00e29 {
     flex: 0 0 auto;
     height: 32px;
     margin-right: 8px;
-    width: 32px
+    width: 32px;
+    border-radius: 4px
 }
 
 .headingCopy__15782 {
@@ -131450,4 +131464,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.63a329f17c98cea56f54.css.map*/
+/*# sourceMappingURL=99387.223f0ffeee63e20597b0.css.map*/

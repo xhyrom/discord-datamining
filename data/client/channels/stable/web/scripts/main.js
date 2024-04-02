@@ -36686,7 +36686,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280579", ", Version Hash: ").concat("93365c0d68f4a26a2eb81287e6fe1b5e3921d97b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280651", ", Version Hash: ").concat("4b088d15b156b48e733fc0a95efe49c5f4a7eeb5")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85600,8 +85600,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280579", "280579"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280579")), t = 0), t
+                let t = parseInt((e = "280651", "280651"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280651")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107597,8 +107597,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280579",
-                    versionHash: "93365c0d68f4a26a2eb81287e6fe1b5e3921d97b"
+                    buildNumber: "280651",
+                    versionHash: "4b088d15b156b48e733fc0a95efe49c5f4a7eeb5"
                 }
             }
             n.r(t), n.d(t, {
@@ -157903,8 +157903,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712010055281",
-                                    build_number: "280579"
+                                    built_at: "1712015983985",
+                                    build_number: "280651"
                                 }
                             },
                             retries: 1
@@ -181325,64 +181325,71 @@
                     toggleCollapsed: r,
                     index: s
                 } = e;
-                return (0, i.jsxs)(u.Clickable, {
-                    className: a()(F.sectionHeader, {
-                        [F.notFirstSectionHeader]: 0 !== s
-                    }),
-                    onClick: r,
-                    children: [function() {
-                        switch (t.type) {
-                            case D.SoundboardSoundGridSectionType.FAVORITES:
-                                return (0, i.jsx)(R.default, {
-                                    className: F.headerIcon
-                                });
-                            case D.SoundboardSoundGridSectionType.RECENTLY_HEARD:
-                                return (0, i.jsx)(O.default, {
-                                    className: F.headerIcon
-                                });
-                            case D.SoundboardSoundGridSectionType.FREQUENTLY_USED:
-                                return (0, i.jsx)(l.AnalyticsIcon, {
-                                    className: F.headerIcon
-                                });
-                            case D.SoundboardSoundGridSectionType.GUILD:
-                                return (0, i.jsx)(E.default, {
-                                    guild: t.guild,
-                                    height: 16,
-                                    width: 16
-                                });
-                            case D.SoundboardSoundGridSectionType.DEFAULTS:
-                                return (0, i.jsx)(p.default, {
-                                    className: F.headerIcon
-                                });
-                            case D.SoundboardSoundGridSectionType.SEARCH:
-                                return (0, i.jsx)(C.default, {
-                                    className: F.headerIcon
-                                })
-                        }
-                    }(), (0, i.jsx)(u.Heading, {
-                        variant: "eyebrow",
-                        color: "none",
-                        className: F.sectionTitle,
-                        children: function() {
-                            switch (t.type) {
-                                case D.SoundboardSoundGridSectionType.FAVORITES:
-                                    return V.default.Messages.FAVORITES;
-                                case D.SoundboardSoundGridSectionType.RECENTLY_HEARD:
-                                    return V.default.Messages.RECENTLY_HEARD;
-                                case D.SoundboardSoundGridSectionType.FREQUENTLY_USED:
-                                    return V.default.Messages.FREQUENTLY_USED;
-                                case D.SoundboardSoundGridSectionType.GUILD:
-                                    return t.guild.name;
-                                case D.SoundboardSoundGridSectionType.DEFAULTS:
-                                    return V.default.Messages.SOUNDBOARD_SOUND_SECTION_DEFAULTS;
-                                case D.SoundboardSoundGridSectionType.SEARCH:
-                                    return V.default.Messages.SEARCH_RESULTS_SECTION_LABEL
-                            }
-                        }()
-                    }), (0, i.jsx)(N.default, {
-                        className: F.headerIcon,
-                        direction: n ? N.default.Directions.RIGHT : N.default.Directions.DOWN
-                    })]
+                return (0, i.jsx)("div", {
+                    className: F.sectionContainer,
+                    children: (0, i.jsx)(u.Clickable, {
+                        className: a()(F.sectionHeader, {
+                            [F.notFirstSectionHeader]: 0 !== s
+                        }),
+                        onClick: r,
+                        "aria-expanded": !n,
+                        children: (0, i.jsxs)("div", {
+                            className: F.sectionHeaderContent,
+                            children: [function() {
+                                switch (t.type) {
+                                    case D.SoundboardSoundGridSectionType.FAVORITES:
+                                        return (0, i.jsx)(R.default, {
+                                            className: F.headerIcon
+                                        });
+                                    case D.SoundboardSoundGridSectionType.RECENTLY_HEARD:
+                                        return (0, i.jsx)(O.default, {
+                                            className: F.headerIcon
+                                        });
+                                    case D.SoundboardSoundGridSectionType.FREQUENTLY_USED:
+                                        return (0, i.jsx)(l.AnalyticsIcon, {
+                                            className: F.headerIcon
+                                        });
+                                    case D.SoundboardSoundGridSectionType.GUILD:
+                                        return (0, i.jsx)(E.default, {
+                                            guild: t.guild,
+                                            height: 16,
+                                            width: 16
+                                        });
+                                    case D.SoundboardSoundGridSectionType.DEFAULTS:
+                                        return (0, i.jsx)(p.default, {
+                                            className: F.headerIcon
+                                        });
+                                    case D.SoundboardSoundGridSectionType.SEARCH:
+                                        return (0, i.jsx)(C.default, {
+                                            className: F.headerIcon
+                                        })
+                                }
+                            }(), (0, i.jsx)(u.Heading, {
+                                variant: "eyebrow",
+                                color: "none",
+                                className: F.sectionTitle,
+                                children: function() {
+                                    switch (t.type) {
+                                        case D.SoundboardSoundGridSectionType.FAVORITES:
+                                            return V.default.Messages.FAVORITES;
+                                        case D.SoundboardSoundGridSectionType.RECENTLY_HEARD:
+                                            return V.default.Messages.RECENTLY_HEARD;
+                                        case D.SoundboardSoundGridSectionType.FREQUENTLY_USED:
+                                            return V.default.Messages.FREQUENTLY_USED;
+                                        case D.SoundboardSoundGridSectionType.GUILD:
+                                            return t.guild.name;
+                                        case D.SoundboardSoundGridSectionType.DEFAULTS:
+                                            return V.default.Messages.SOUNDBOARD_SOUND_SECTION_DEFAULTS;
+                                        case D.SoundboardSoundGridSectionType.SEARCH:
+                                            return V.default.Messages.SEARCH_RESULTS_SECTION_LABEL
+                                    }
+                                }()
+                            }), (0, i.jsx)(N.default, {
+                                className: F.headerIcon,
+                                direction: n ? N.default.Directions.RIGHT : N.default.Directions.DOWN
+                            })]
+                        })
+                    })
                 })
             }
 
@@ -181618,7 +181625,7 @@
                     f.maybeFetchSoundboardSounds(), I.FrecencyUserSettingsActionCreators.loadIfNecessary(), (0, E.setSearchQuery)("")
                 }, []), (0, i.jsx)(_.AnalyticsLocationProvider, {
                     value: U,
-                    children: (0, i.jsx)("div", {
+                    children: (0, i.jsx)(u.Dialog, {
                         className: a()(A.picker, {
                             [A.fetching]: y,
                             [A.autoWidth]: g
@@ -231838,7 +231845,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "93365c0d68f4a26a2eb81287e6fe1b5e3921d97b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "4b088d15b156b48e733fc0a95efe49c5f4a7eeb5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257934,7 +257941,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280579"
+                                build_number: "280651"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265079,7 +265086,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280579", "280579"), 10);
+                let s = parseInt((n = "280651", "280651"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291827,4 +291834,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.d523c1cd12acaf6dcd12.js.map
+//# sourceMappingURL=97256.dabe05b41502e6fd4447.js.map
