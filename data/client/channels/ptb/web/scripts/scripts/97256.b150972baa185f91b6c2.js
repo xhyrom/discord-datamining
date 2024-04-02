@@ -36543,7 +36543,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280817", ", Version Hash: ").concat("1275893bbb0ad3fa3b73a6919f84bbe0d8478cf7")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280819", ", Version Hash: ").concat("7dee738a9170c171659cc0c75d28db368da76741")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -64570,7 +64570,7 @@
                 isActivityInTextSupportedForChannelType: function() {
                     return u
                 },
-                useActivitiesInTextButtonVisibility: function() {
+                useActivitiesInTextExperimentConfig: function() {
                     return c
                 },
                 useIsActivitiesInTextEnabled: function() {
@@ -64590,7 +64590,8 @@
                     entryPointEnabled: !1,
                     desktopThrobberEnabled: !1,
                     activitiesInTextEnabled: !1,
-                    showInOmniButtonMenu: !1
+                    showInOmniButtonMenu: !1,
+                    showNewMobileLeaveUI: !1
                 },
                 treatments: [{
                     id: 1,
@@ -64599,7 +64600,18 @@
                         entryPointEnabled: !0,
                         activitiesInTextEnabled: !0,
                         desktopThrobberEnabled: !1,
-                        showInOmniButtonMenu: !0
+                        showInOmniButtonMenu: !0,
+                        showNewMobileLeaveUI: !1
+                    }
+                }, {
+                    id: 2,
+                    label: "Enable Activities in Text, DM, and GDM channels with new mobile leave UI",
+                    config: {
+                        entryPointEnabled: !0,
+                        activitiesInTextEnabled: !0,
+                        desktopThrobberEnabled: !1,
+                        showInOmniButtonMenu: !0,
+                        showNewMobileLeaveUI: !0
                     }
                 }]
             });
@@ -78963,7 +78975,8 @@
                     entryPointEnabled: !1,
                     activitiesInTextEnabled: !1,
                     desktopThrobberEnabled: !1,
-                    showInOmniButtonMenu: !1
+                    showInOmniButtonMenu: !1,
+                    showNewMobileLeaveUI: !1
                 },
                 treatments: [{
                     id: 1,
@@ -78972,7 +78985,8 @@
                         entryPointEnabled: !0,
                         activitiesInTextEnabled: !1,
                         desktopThrobberEnabled: !1,
-                        showInOmniButtonMenu: !1
+                        showInOmniButtonMenu: !1,
+                        showNewMobileLeaveUI: !1
                     }
                 }, {
                     id: 2,
@@ -78981,7 +78995,8 @@
                         entryPointEnabled: !0,
                         activitiesInTextEnabled: !0,
                         desktopThrobberEnabled: !1,
-                        showInOmniButtonMenu: !0
+                        showInOmniButtonMenu: !0,
+                        showNewMobileLeaveUI: !1
                     }
                 }, {
                     id: 3,
@@ -78990,7 +79005,8 @@
                         entryPointEnabled: !0,
                         activitiesInTextEnabled: !0,
                         desktopThrobberEnabled: !0,
-                        showInOmniButtonMenu: !0
+                        showInOmniButtonMenu: !0,
+                        showNewMobileLeaveUI: !1
                     }
                 }]
             })
@@ -85448,8 +85464,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280817", "280817"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280817")), t = 0), t
+                let t = parseInt((e = "280819", "280819"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280819")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107454,8 +107470,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280817",
-                    versionHash: "1275893bbb0ad3fa3b73a6919f84bbe0d8478cf7"
+                    buildNumber: "280819",
+                    versionHash: "7dee738a9170c171659cc0c75d28db368da76741"
                 }
             }
             n.r(t), n.d(t, {
@@ -157662,8 +157678,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712078591667",
-                                    build_number: "280817"
+                                    built_at: "1712079007721",
+                                    build_number: "280819"
                                 }
                             },
                             retries: 1
@@ -231688,7 +231704,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "1275893bbb0ad3fa3b73a6919f84bbe0d8478cf7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7dee738a9170c171659cc0c75d28db368da76741"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257792,7 +257808,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280817"
+                                build_number: "280819"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264937,7 +264953,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280817", "280817"), 10);
+                let s = parseInt((n = "280819", "280819"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291685,4 +291701,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.a254c90753a849786596.js.map
+//# sourceMappingURL=97256.b150972baa185f91b6c2.js.map
