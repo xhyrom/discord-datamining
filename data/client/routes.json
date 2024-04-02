@@ -2631,7 +2631,12 @@
   },
   "NOTIFICATION_SNAPSHOTS": {
     "url": "/users/@me/notification-settings/snapshots",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "NOTIFICATION_SNAPSHOT": {
     "url": "/users/@me/notification-settings/snapshots/:param",
@@ -2697,7 +2702,10 @@
   },
   "CONNECT_REQUEST": {
     "url": "/consoles/connect-request/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "CONSOLES_DEVICES": {
     "url": "/consoles/:param/devices",
@@ -2740,7 +2748,11 @@
   },
   "BURST_CREDIT_BALANCE": {
     "url": "/users/@me/burst-credits",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "SAVED_MESSAGES": {
     "url": "/saved-messages",
@@ -2808,11 +2820,17 @@
   },
   "PRIVATE_CHANNEL_INTEGRATION_CONSENT": {
     "url": "/channels/:param/integrations/consent",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "FINISH_MFA_CHECK": {
     "url": "/mfa/finish",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CREATE_USER_OFFER": {
     "url": "/user-offers/create/:param/:param",
@@ -2982,7 +3000,11 @@
   },
   "MY_CONTENT_INVENTORY": {
     "url": "/content-inventory/users/@me",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_LOOTBOX_DATA": {
     "url": "/users/@me/lootboxes",
