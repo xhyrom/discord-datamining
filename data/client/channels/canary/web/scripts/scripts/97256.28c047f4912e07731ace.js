@@ -36543,7 +36543,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280840", ", Version Hash: ").concat("fbeae71a3a4ea2916a727692281fe781b658620f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280849", ", Version Hash: ").concat("cb824805c187335670ce7222171dfdd9ed75ab74")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85464,8 +85464,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280840", "280840"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280840")), t = 0), t
+                let t = parseInt((e = "280849", "280849"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280849")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107470,8 +107470,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280840",
-                    versionHash: "fbeae71a3a4ea2916a727692281fe781b658620f"
+                    buildNumber: "280849",
+                    versionHash: "cb824805c187335670ce7222171dfdd9ed75ab74"
                 }
             }
             n.r(t), n.d(t, {
@@ -157678,8 +157678,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712081280207",
-                                    build_number: "280840"
+                                    built_at: "1712082118161",
+                                    build_number: "280849"
                                 }
                             },
                             retries: 1
@@ -166635,8 +166635,9 @@
             });
             var i = n("544891"),
                 r = n("570140"),
-                s = n("904245"),
-                a = n("944486"),
+                s = n("904245");
+            n("598077");
+            var a = n("944486"),
                 o = n("981631");
             let l = () => (r.default.dispatch({
                     type: "BILLING_REFERRALS_REMAINING_FETCH_START"
@@ -166737,20 +166738,21 @@
                 N = 0,
                 O = null,
                 p = [],
-                R = () => !0;
+                R = !1,
+                C = () => !0;
 
-            function C(e) {
+            function g(e) {
                 h.add(e)
             }
 
-            function g(e) {
+            function L(e) {
                 let {
                     messages: t
                 } = e;
-                t.forEach(e => L(e))
+                t.forEach(e => D(e))
             }
 
-            function L(e) {
+            function D(e) {
                 let t = e.type === o.MessageTypes.PREMIUM_REFERRAL ? e.content : null;
                 if (null == t) return !1;
                 if (!A.has(t) && !h.has(t)) {
@@ -166758,9 +166760,9 @@
                     n = t, h.add(n), u.default.wait(() => (0, _.resolveReferralTrialOffer)(t).catch(c.NOOP_NULL))
                 }
             }
-            class D extends(i = l.default.Store) {
+            class v extends(i = l.default.Store) {
                 initialize() {
-                    this.waitFor(d.default), this.syncWith([d.default], R)
+                    this.waitFor(d.default), this.syncWith([d.default], C)
                 }
                 checkAndFetchReferralsRemaining() {
                     null == E && !S && N < 5 && (null == O || O < Date.now()) && (0, _.fetchReferralsRemaining)()
@@ -166789,13 +166791,16 @@
                 getEligibleUsers() {
                     return p
                 }
+                getFetchingEligibleUsers() {
+                    return R
+                }
             }
-            a = "ReferralTrialStore", (s = "displayName") in(r = D) ? Object.defineProperty(r, s, {
+            a = "ReferralTrialStore", (s = "displayName") in(r = v) ? Object.defineProperty(r, s, {
                 value: a,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : r[s] = a, t.default = new D(u.default, {
+            }) : r[s] = a, t.default = new v(u.default, {
                 BILLING_REFERRAL_TRIAL_OFFER_UPDATE: function(e) {
                     let {
                         userTrialOfferId: t,
@@ -166858,16 +166863,28 @@
                     } = e;
                     h.delete(t), A.add(t)
                 },
-                LOAD_MESSAGES_SUCCESS: g,
+                REFERRALS_FETCH_ELIGIBLE_USER_START: function() {
+                    R = !0
+                },
+                REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: function(e) {
+                    let {
+                        users: t
+                    } = e;
+                    R = !1, p = t
+                },
+                REFERRALS_FETCH_ELIGIBLE_USER_FAIL: function() {
+                    R = !1
+                },
+                LOAD_MESSAGES_SUCCESS: L,
                 MESSAGE_CREATE: function(e) {
                     let {
                         message: t
                     } = e;
-                    L(t)
+                    D(t)
                 },
-                LOAD_MESSAGES_AROUND_SUCCESS: g,
+                LOAD_MESSAGES_AROUND_SUCCESS: L,
                 LOGOUT: function() {
-                    E = null, I = {}, T = [], f = new Set, S = !1, h = new Set, A = new Set, m = {}, N = 0, O = null, p = []
+                    E = null, I = {}, T = [], f = new Set, S = !1, h = new Set, A = new Set, m = {}, N = 0, O = null, p = [], R = !1
                 }
             })
         },
@@ -231704,7 +231721,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "fbeae71a3a4ea2916a727692281fe781b658620f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "cb824805c187335670ce7222171dfdd9ed75ab74"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257808,7 +257825,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280840"
+                                build_number: "280849"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264953,7 +264970,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280840", "280840"), 10);
+                let s = parseInt((n = "280849", "280849"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291701,4 +291718,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.bccd42f880568e4bd5ec.js.map
+//# sourceMappingURL=97256.28c047f4912e07731ace.js.map
