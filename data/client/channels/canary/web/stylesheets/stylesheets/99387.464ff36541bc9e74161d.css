@@ -99575,7 +99575,7 @@ html .invoiceCancelRow__6ff3e {
     height: 64px;
     display: flex;
     align-items: center;
-    background-color: var(--background-primary)
+    background-color: var(--bg-overlay-1, var(--background-primary))
 }
 
 .placeholderUsername__3d5c9,
@@ -99794,7 +99794,7 @@ html .invoiceCancelRow__6ff3e {
     justify-content: stretch;
     align-items: stretch;
     position: relative;
-    background: var(--background-primary);
+    background: var(--bg-overlay-chat, var(--background-primary));
     border-radius: 0 8px 8px 0;
     overflow: hidden
 }
@@ -99803,13 +99803,17 @@ html .invoiceCancelRow__6ff3e {
     width: 29vw;
     min-width: 400px;
     flex: 0 0 auto;
-    margin-left: 8px;
     border-radius: 8px 0 0 8px;
-    background: var(--background-primary);
+    background: var(--bg-overlay-chat, var(--background-primary));
     overflow: hidden;
     height: 100%;
     display: flex;
     flex-direction: column
+}
+
+.sidebarSeparator_d6fd29 {
+    background: var(--bg-overlay-3, var(--background-tertiary));
+    width: 8px
 }
 
 .close__6c704 {
@@ -131528,4 +131532,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.b2133f7e0ca36b2cb0d9.css.map*/
+/*# sourceMappingURL=99387.464ff36541bc9e74161d.css.map*/
