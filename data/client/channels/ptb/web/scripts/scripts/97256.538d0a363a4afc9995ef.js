@@ -36663,7 +36663,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280778", ", Version Hash: ").concat("a32f85bd85a1f9df0198a59ad9418162dd11fdac")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280783", ", Version Hash: ").concat("8b79f08c1209c9756506d8f20b0d7b136a28487d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -54990,6 +54990,8 @@
                 USER_RECENT_GAMES_ON_PROFILE: "Show recent games on profile",
                 USER_RECENT_GAMES_YOU_BOTH_PLAY: "You both play this game",
                 NEW_TO_THIS_GAME: "New to this game",
+                RECENT_GAMES_SETTING_NOTE: "Display up to four recently played games on your profile. Learn more about recent games sharing [here.](onHelpArticleClick)",
+                RECENT_GAMES_SETTING_REQUIREMENT: "You must have [Activity Sharing](onSettingClick) enabled.",
                 MEMBERS_TABLE_JOINED_AT_TIMESTAMP_MINUTES: "{count} {count, plural, =1 {min} other {mins}} ago",
                 MEMBERS_TABLE_JOINED_AT_TIMESTAMP_HOURS: "{count} {count, plural, =1 {hr} other {hrs}} this week",
                 USER_RECENT_GAMES_PLAYED_LAST_WEEK_HOURS: "{count} {count, plural, =1 {hr} other {hrs}} this week",
@@ -55362,9 +55364,7 @@
                 SIGNUP_CLAN_OPTION_HARDCORE_TITLE: "Hardcore",
                 SIGNUP_CLAN_OPTION_HARDCORE_DESCRIPTION: "We play together to win, rank up, or beat challenges.",
                 SIGNUP_CLAN_OPTION_VERY_HARDCORE_TITLE: "Very Hardcore",
-                SIGNUP_CLAN_OPTION_VERY_HARDCORE_DESCRIPTION: "We won't sleep until we win or beat the boss.",
-                RECENT_GAMES_SETTING_SUBLABEL: "Enable showing your Recently Played Games on your profile. [Check our Help Center for     more information.](onClick)",
-                RECENT_GAMES_SETTING_ACTIVITY_STATUS_DISABLED_SUBLABEL: "To enable Recent Games on your profile, you must first [enable sharing your Activity Status](onSettingClick).     We won’t use this data for anything except showing your recent activity. [Check our Help Center for more       information.](onHelpArticleClick)"
+                SIGNUP_CLAN_OPTION_VERY_HARDCORE_DESCRIPTION: "We won't sleep until we win or beat the boss."
             })
         },
         539590: function(e) {
@@ -85568,8 +85568,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280778", "280778"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280778")), t = 0), t
+                let t = parseInt((e = "280783", "280783"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280783")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107574,8 +107574,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280778",
-                    versionHash: "a32f85bd85a1f9df0198a59ad9418162dd11fdac"
+                    buildNumber: "280783",
+                    versionHash: "8b79f08c1209c9756506d8f20b0d7b136a28487d"
                 }
             }
             n.r(t), n.d(t, {
@@ -157782,8 +157782,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712073224732",
-                                    build_number: "280778"
+                                    built_at: "1712074085333",
+                                    build_number: "280783"
                                 }
                             },
                             retries: 1
@@ -175161,13 +175161,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 calculatePercentComplete: function() {
-                    return O
+                    return p
                 },
                 captureQuestsException: function() {
-                    return L
+                    return D
                 },
                 getContextualEntrypointHeading: function() {
-                    return p
+                    return R
                 },
                 getGameLogotypeAssetUrl: function() {
                     return h
@@ -175179,7 +175179,7 @@
                     return T
                 },
                 getPlatformString: function() {
-                    return N
+                    return O
                 },
                 getQuestBarHeroAssetUrl: function() {
                     return f
@@ -175194,28 +175194,31 @@
                     return A
                 },
                 getQuestsFromActivities: function() {
-                    return D
+                    return v
                 },
                 getRewardAssetUrl: function() {
                     return I
                 },
                 getVideoAssetMimeType: function() {
-                    return y
+                    return P
                 },
                 includesTarget: function() {
-                    return g
+                    return L
                 },
                 isAssetAnimated: function() {
-                    return v
+                    return M
                 },
                 isDismissed: function() {
-                    return C
+                    return g
                 },
                 isDismissible: function() {
-                    return R
+                    return C
                 },
                 isQuestExpired: function() {
                     return d
+                },
+                isTargetedForContent: function() {
+                    return N
                 },
                 questUserStatusFromServer: function() {
                     return _
@@ -175327,7 +175330,11 @@
                     if (i.targetedContent.includes(t)) return i;
                 return null
             }
-            let N = e => {
+
+            function N(e, t) {
+                return e.targetedContent.includes(t)
+            }
+            let O = e => {
                 switch (e) {
                     case s.QuestRewardCodePlatforms.XBOX:
                         return o.default.Messages.QUESTS_REWARD_CODE_PLATFORM_XBOX;
@@ -175342,7 +175349,7 @@
                 }
             };
 
-            function O(e) {
+            function p(e) {
                 if (null == e.userStatus) return 0;
                 let {
                     streamProgressSeconds: t,
@@ -175355,11 +175362,11 @@
                 return Math.min(t / 60 / i, 1)
             }
 
-            function p(e) {
+            function R(e) {
                 var t, n;
                 if ((null === (t = e.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return o.default.Messages.QUESTS_COMPLETION_PROGRESS_COMPLETE;
                 if ((null === (n = e.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null) {
-                    let t = O(e);
+                    let t = p(e);
                     return t >= .75 ? o.default.Messages.QUESTS_COMPLETION_PROGRESS_ALMOST_COMPLETE : t >= .45 && t <= .55 ? o.default.Messages.QUESTS_COMPLETION_PROGRESS_HALFWAY : t > 0 ? o.default.Messages.QUESTS_COMPLETION_PROGRESS_STARTED : o.default.Messages.QUESTS_COMPLETION_PROGRESS_NOT_STARTED
                 }
                 return o.default.Messages.QUESTS_TITLE.format({
@@ -175367,21 +175374,21 @@
                 })
             }
 
-            function R(e) {
+            function C(e) {
                 return Object.keys(a.DismissibleQuestContentFlags).includes(s.QuestContent[e])
             }
 
-            function C(e, t) {
-                if (!R(t)) return !1;
+            function g(e, t) {
+                if (!C(t)) return !1;
                 let n = s.QuestContent[t];
                 return (0, i.hasFlag)(e.dismissedQuestContent, a.DismissibleQuestContentFlags[n])
             }
 
-            function g(e, t) {
+            function L(e, t) {
                 return e.targetedContent.includes(t)
             }
 
-            function L(e, t) {
+            function D(e, t) {
                 r.default.captureException(e, {
                     ...t,
                     tags: {
@@ -175391,7 +175398,7 @@
                 })
             }
 
-            function D(e, t) {
+            function v(e, t) {
                 if (null == t || null == e) return null;
                 for (let n of t) {
                     if (null == n.application_id) continue;
@@ -175401,14 +175408,14 @@
                 return null
             }
 
-            function v(e) {
+            function M(e) {
                 return e.endsWith(".webm") || e.endsWith(".mp4")
             }
-            let M = /\.([a-zA-Z]+)$/;
+            let y = /\.([a-zA-Z]+)$/;
 
-            function y(e) {
+            function P(e) {
                 var t, n;
-                switch (null === (n = M.exec(e)) || void 0 === n ? void 0 : null === (t = n[1]) || void 0 === t ? void 0 : t.toLowerCase()) {
+                switch (null === (n = y.exec(e)) || void 0 === n ? void 0 : null === (t = n[1]) || void 0 === t ? void 0 : t.toLowerCase()) {
                     case "webm":
                         return "video/webm";
                     case "mp4":
@@ -196411,7 +196418,7 @@
                 o = n("442837"),
                 l = n("481060"),
                 u = n("100527"),
-                d = n("201819"),
+                d = n("761174"),
                 _ = n("199902"),
                 c = n("314897"),
                 E = n("592125"),
@@ -196496,9 +196503,9 @@
                         location: u.default.PROFILE_POPOUT,
                         disable: ef
                     }),
-                    eh = (0, d.useIsUserRecentGamesFetchEnabled)({
+                    eh = (0, d.useIsUserRecentGamesEnabled)({
                         userId: j.id,
-                        location: "28tk0bf_3"
+                        location: "28tk0bf_1"
                     });
                 if (j.isSystemUser()) return null;
                 if (j.isNonUserBot()) return (0, i.jsx)(B.default, {
@@ -198745,6 +198752,68 @@
                     }).enabled
                 }
         },
+        619914: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                isUserRecentGamesExperimentEnabled: function() {
+                    return r
+                },
+                useUserIsRecentGamesExperimentEnabled: function() {
+                    return s
+                }
+            });
+            let i = (0, n("818083").createExperiment)({
+                id: "2024-03_user_recent_games",
+                kind: "user",
+                label: "Recent Games",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 0,
+                    label: "Control",
+                    config: {
+                        enabled: !1
+                    }
+                }, {
+                    id: 1,
+                    label: "Enabled",
+                    config: {
+                        enabled: !0
+                    }
+                }, {
+                    id: 4,
+                    label: "Enabled",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            });
+
+            function r(e) {
+                let {
+                    location: t,
+                    autoTrackExposure: n = !1
+                } = e;
+                return i.getCurrentConfig({
+                    location: t
+                }, {
+                    autoTrackExposure: n
+                }).enabled
+            }
+
+            function s(e) {
+                let {
+                    location: t,
+                    autoTrackExposure: n = !1
+                } = e;
+                return i.useExperiment({
+                    location: t
+                }, {
+                    autoTrackExposure: n
+                }).enabled
+            }
+        },
         385845: function(e, t, n) {
             "use strict";
             n.r(t), n("47120"), n("653041");
@@ -198933,30 +199002,45 @@
                 }
             }
         },
-        201819: function(e, t, n) {
+        761174: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                useIsUserRecentGamesFetchEnabled: function() {
-                    return l
+                useIsSelfRecentGamesEnabled: function() {
+                    return u
+                },
+                useIsUserRecentGamesEnabled: function() {
+                    return d
                 }
             });
             var i = n("442837"),
                 r = n("695346"),
                 s = n("314897"),
                 a = n("594174"),
-                o = n("602992");
+                o = n("602992"),
+                l = n("619914");
 
-            function l(e) {
+            function u(e) {
+                let {
+                    location: t
+                } = e, n = (0, l.isUserRecentGamesExperimentEnabled)({
+                    location: t
+                }), i = r.RecentGamesEnabled.useSetting(), s = r.ShowCurrentGame.useSetting();
+                return n && s && i
+            }
+
+            function d(e) {
                 let {
                     userId: t,
                     location: n
-                } = e, l = (0, i.useStateFromStores)([a.default], () => {
+                } = e, r = (0, i.useStateFromStores)([a.default], () => {
                     let e = a.default.getUser(t);
                     return null != e && !e.bot
-                }), u = r.RecentGamesEnabled.useSetting(), d = s.default.getId() === t ? l && u : l;
+                }), l = s.default.getId() === t, d = u({
+                    location: n
+                });
                 return (0, o.useUserIsRecentGamesExperimentApiEnabled)({
                     location: n
-                }) && d
+                }) && (l ? r && d : r)
             }
         },
         32966: function(e, t, n) {
@@ -198970,10 +199054,10 @@
                 r = n("442837"),
                 s = n("454175"),
                 a = n("385845"),
-                o = n("201819");
+                o = n("761174");
 
             function l(e) {
-                let t = (0, o.useIsUserRecentGamesFetchEnabled)({
+                let t = (0, o.useIsUserRecentGamesEnabled)({
                         userId: e,
                         location: "28tk0bf_4"
                     }),
@@ -231732,7 +231816,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a32f85bd85a1f9df0198a59ad9418162dd11fdac"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8b79f08c1209c9756506d8f20b0d7b136a28487d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257836,7 +257920,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280778"
+                                build_number: "280783"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264981,7 +265065,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280778", "280778"), 10);
+                let s = parseInt((n = "280783", "280783"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291729,4 +291813,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.25b9580bc4765ab98bf0.js.map
+//# sourceMappingURL=97256.538d0a363a4afc9995ef.js.map
