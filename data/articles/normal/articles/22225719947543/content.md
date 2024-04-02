@@ -1,23 +1,23 @@
-<p>If you’re streaming your favorite game to friends through <strong>Go Live</strong> on Discord, you now have the chance to get rewards for that game! Continuing reading below to learn more.</p>
+<p>If you’re streaming your favorite game to friends through <strong>Go Live</strong> on Discord, you now have the chance to get rewards for that game! Continue reading below to learn more.</p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
     <li>
-        <a href="#h_01HT0TWT0CFSG0N8TMQQBFD0CJ">Active Discord Quests </a>
+        <a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HT0TWT0CFSG0N8TMQQBFD0CJ">Active Discord Quests </a>
         <ul>
-            <li><a href="#h_01HT0TWT0CA28YXKRXB7ZEB55A">The Finals</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HT0TWT0CA28YXKRXB7ZEB55A">The Finals</a></li>
         </ul>
     </li>
-    <li><a href="#h_01HT0TWT0CZRKA14J80S5KTJ4H">What are Discord Quests? </a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HT0TWT0CZRKA14J80S5KTJ4H">What are Discord Quests? </a></li>
     <li>
-        <a href="#h_01HT0TWT0CFXXQ74E3H8P9YEM8">How do I complete Discord Quests?</a>
+        <a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HT0TWT0CFXXQ74E3H8P9YEM8">How do I complete Discord Quests?</a>
         <ul>
-            <li><a href="#h_01HT0TWT0CV7QYP26SZKQ39TFZ">Accept the Quest</a></li>
-            <li><a href="#h_01HT0TWT0CXN9NS9QW75S8DMHA">Stream a Game to Friends on Discord</a></li>
-            <li><a href="#h_01HT0TWT0CH89Y0S5PKZYFVTEG">Claim Your Reward</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HT0TWT0CV7QYP26SZKQ39TFZ">Accept the Quest</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HT0TWT0CXN9NS9QW75S8DMHA">Stream a Game to Friends on Discord</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HT0TWT0CH89Y0S5PKZYFVTEG">Claim Your Reward</a></li>
         </ul>
     </li>
-    <li><a href="#h_01HT0TWT0C96WB1KSQ33Q4STFV">Opting-out of Quests Promotions</a></li>
-    <li><a href="#h_01HT0TWT0C02P8PNQ4WDEGA171">Frequently Asked Questions</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HT0TWT0C96WB1KSQ33Q4STFV">Opting-out of Quests Promotions</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HT0TWT0C02P8PNQ4WDEGA171">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01HT0TWT0CFSG0N8TMQQBFD0CJ">Active Discord Quests </h1>
 <h2 id="h_01HT0TWT0CA28YXKRXB7ZEB55A">THE FINALS</h2>
@@ -62,7 +62,7 @@
 <p>Once you have completed the Quest, you can claim the reward by pressing the <strong>Claim Reward</strong> button within any Discord Quest in-app notification.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22384508510743" width="624" height="376"></p>
 <p>The easiest way to claim your reward is by heading over to your <strong>User Settings &gt; Gift Inventory</strong>. <strong> </strong></p>
-<p>When you claim your reward you will be given a <strong>Discord Quest redemption code</strong> that you will need to redeem on the <strong>partnered game redemption website</strong>. You can find a link by heading over to our <a href="#h_01HT0TWT0CFSG0N8TMQQBFD0CJ">Active Discord Quests</a> section! You will also receive an email with redemption instructions once you’ve completed the Quest. </p>
+<p>When you claim your reward you will be given a <strong>Discord Quest redemption code</strong> that you will need to redeem on the <strong>partnered game redemption website</strong>. You can find a link by heading over to our <a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HT0TWT0CFSG0N8TMQQBFD0CJ">Active Discord Quests</a> section! You will also receive an email with redemption instructions once you’ve completed the Quest. </p>
 <h1 id="h_01HT0TWT0C4JAEPG4YY04MJ4FM">Opting-out of Quests Promotions</h1>
 <p>If you’re not interested in receiving promotions of Discord Quests, you can control these promotions in the following ways: </p>
 <h2 id="h_01HT0TWT0C6WPCAXWSPYVNPQ12">Hide an In-app Promotion of an Individual Quest<strong> </strong>
