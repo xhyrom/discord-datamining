@@ -4335,8 +4335,7 @@
                 container: "container__984a8",
                 description: "description__85fd0",
                 image: "image__654ad",
-                purchaseBtn: "purchaseBtn_dc4dbb",
-                short: "short__40ab3"
+                purchaseBtn: "purchaseBtn_dc4dbb"
             }
         },
         381585: function(e) {
