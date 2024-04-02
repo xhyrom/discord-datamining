@@ -15263,126 +15263,6 @@
                 }
             }
         },
-        558381: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                fetchAllStoreListingsForApplication: function() {
-                    return _
-                },
-                fetchStoreListingById: function() {
-                    return E
-                },
-                fetchStoreListingForApplication: function() {
-                    return I
-                },
-                fetchStoreListingForSku: function() {
-                    return c
-                },
-                goToApplicationStoreListing: function() {
-                    return A
-                },
-                goToSKUStoreListing: function() {
-                    return h
-                },
-                joinPublishedStoreListingSkuGuild: function() {
-                    return S
-                },
-                matureAgree: function() {
-                    return T
-                },
-                matureDisagree: function() {
-                    return f
-                }
-            });
-            var i = n("544891"),
-                r = n("570140"),
-                s = n("115130");
-            n("812206");
-            var a = n("703656"),
-                o = n("55563");
-            n("551428");
-            var l = n("695103"),
-                u = n("73346"),
-                d = n("981631");
-
-            function _(e) {
-                return (0, u.httpGetWithCountryCodeQuery)({
-                    url: d.Endpoints.STORE_PUBLISHED_LISTINGS_SKUS,
-                    query: {
-                        application_id: e
-                    },
-                    oldFormErrors: !0
-                }).then(e => (r.default.dispatch({
-                    type: "STORE_LISTINGS_FETCH_SUCCESS",
-                    storeListings: e.body
-                }), e.body))
-            }
-
-            function c(e) {
-                let t = o.default.get(e),
-                    n = null != t && (l.default.inTestModeForApplication(t.applicationId) || s.default.inDevModeForApplication(t.applicationId));
-                return (0, u.httpGetWithCountryCodeQuery)(n ? d.Endpoints.STORE_LISTINGS_SKU(e) : d.Endpoints.STORE_PUBLISHED_LISTINGS_SKU(e)).then(e => {
-                    n ? r.default.dispatch({
-                        type: "STORE_LISTINGS_FETCH_SUCCESS",
-                        storeListings: e.body
-                    }) : r.default.dispatch({
-                        type: "STORE_LISTING_FETCH_SUCCESS",
-                        storeListing: e.body
-                    })
-                })
-            }
-
-            function E(e) {
-                return (0, u.httpGetWithCountryCodeQuery)(d.Endpoints.STORE_LISTING(e)).then(e => {
-                    r.default.dispatch({
-                        type: "STORE_LISTING_FETCH_SUCCESS",
-                        storeListing: e.body
-                    })
-                })
-            }
-
-            function I(e) {
-                return (0, u.httpGetWithCountryCodeQuery)(d.Endpoints.STORE_PUBLISHED_LISTINGS_APPLICATION(e)).then(e => {
-                    r.default.dispatch({
-                        type: "STORE_LISTING_FETCH_SUCCESS",
-                        storeListing: e.body
-                    })
-                })
-            }
-
-            function T() {
-                r.default.dispatch({
-                    type: "APPLICATION_STORE_MATURE_AGREE"
-                })
-            }
-
-            function f() {
-                (0, a.transitionTo)(d.Routes.APPLICATION_STORE)
-            }
-
-            function S(e) {
-                return i.HTTP.post({
-                    url: d.Endpoints.STORE_PUBLISHED_LISTINGS_SKU_JOIN_GUILD(e),
-                    oldFormErrors: !0
-                })
-            }
-
-            function h(e, t) {
-                let {
-                    pathname: n,
-                    ...i
-                } = (0, u.getStoreListingLocation)(e, t);
-                (0, a.transitionTo)(n, i)
-            }
-
-            function A(e, t) {
-                let {
-                    pathname: n,
-                    ...i
-                } = (0, u.getApplicationStoreListingLocation)(e, t);
-                (0, a.transitionTo)(n, i)
-            }
-        },
         872810: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -36663,7 +36543,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280805", ", Version Hash: ").concat("ff02816a4e0b175965052fc299ddb0376efcacdb")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280817", ", Version Hash: ").concat("1275893bbb0ad3fa3b73a6919f84bbe0d8478cf7")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85568,8 +85448,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280805", "280805"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280805")), t = 0), t
+                let t = parseInt((e = "280817", "280817"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280817")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -89455,13 +89335,13 @@
                         allow: i.add(c.NONE, t),
                         deny: c.NONE
                     };
-                    (0, s.savePermissionUpdates)(e.id, [r], !0)
-                } else {
+                    return (0, s.savePermissionUpdates)(e.id, [r], !0)
+                } {
                     let {
                         allow: n,
                         deny: a
                     } = r;
-                    n = i.add(n, t), (0, s.updatePermission)(e, r.id, n, a)
+                    return n = i.add(n, t), (0, s.updatePermission)(e, r.id, n, a)
                 }
             }
 
@@ -107574,8 +107454,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280805",
-                    versionHash: "ff02816a4e0b175965052fc299ddb0376efcacdb"
+                    buildNumber: "280817",
+                    versionHash: "1275893bbb0ad3fa3b73a6919f84bbe0d8478cf7"
                 }
             }
             n.r(t), n.d(t, {
@@ -157782,8 +157662,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712077718992",
-                                    build_number: "280805"
+                                    built_at: "1712078591667",
+                                    build_number: "280817"
                                 }
                             },
                             retries: 1
@@ -163443,30 +163323,29 @@
                 })
             }
         },
-        59162: function(e, t, n) {
+        724870: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 openActivityApplicationPaymentModal: function() {
-                    return S
+                    return T
                 },
                 openApplicationPaymentModal: function() {
-                    return I
+                    return E
                 }
-            });
+            }), n("789020");
             var i = n("735250");
             n("470079");
             var r = n("512722"),
                 s = n.n(r),
                 a = n("481060"),
                 o = n("496929"),
-                l = n("558381"),
-                u = n("106976"),
-                d = n("488915"),
-                _ = n("171246"),
-                c = n("987209"),
-                E = n("981631");
+                l = n("171246"),
+                u = n("509545"),
+                d = n("55563"),
+                _ = n("987209"),
+                c = n("981631");
 
-            function I(e) {
+            function E(e) {
                 let {
                     initialPlanId: t,
                     activeSubscription: r,
@@ -163475,7 +163354,7 @@
                     analyticsLocations: l,
                     analyticsSubscriptionType: u,
                     renderHeader: d,
-                    planGroup: _,
+                    planGroup: E,
                     skuId: I,
                     guildId: T,
                     reviewWarningMessage: f,
@@ -163489,8 +163368,8 @@
                     let {
                         PaymentContextProvider: e
                     } = await Promise.resolve().then(n.bind(n, "598")), a = (await Promise.all([n.e("49237"), n.e("99387"), n.e("15972"), n.e("6416"), n.e("32776"), n.e("10993")]).then(n.bind(n, "405083"))).default, {
-                        getApplicationPaymentSteps: E
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("58625"), n.e("14720"), n.e("63438"), n.e("62511"), n.e("61247"), n.e("58600"), n.e("95900"), n.e("89890")]).then(n.bind(n, "759386")), O = E({
+                        getApplicationPaymentSteps: c
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("58625"), n.e("14720"), n.e("63438"), n.e("62511"), n.e("61247"), n.e("58600"), n.e("95900"), n.e("89890")]).then(n.bind(n, "759386")), O = c({
                         guildId: T,
                         showBenefitsFirst: h,
                         eligibleApplicationSubscriptionGuilds: A
@@ -163500,7 +163379,7 @@
                         activeSubscription: r,
                         stepConfigs: O,
                         skuIDs: [I],
-                        children: (0, i.jsx)(c.GiftContextProvider, {
+                        children: (0, i.jsx)(_.GiftContextProvider, {
                             children: (0, i.jsx)(a, {
                                 ...n,
                                 initialPlanId: t,
@@ -163510,7 +163389,7 @@
                                 analyticsLocation: o,
                                 analyticsSubscriptionType: u,
                                 renderHeader: d,
-                                planGroup: _,
+                                planGroup: E,
                                 reviewWarningMessage: f,
                                 applicationId: S,
                                 guildId: null != T ? T : void 0,
@@ -163520,45 +163399,38 @@
                         })
                     })
                 }, {
-                    onCloseRequest: E.NOOP
+                    onCloseRequest: c.NOOP
                 })
             }
-            let T = async e => {
-                let t = d.default.getSubscriptionGroupListingForApplication(e);
-                if (null != t) return t;
-                let n = (await (0, l.fetchAllStoreListingsForApplication)(e)).find(e => e.sku.type === E.SKUTypes.SUBSCRIPTION_GROUP);
-                s()(null != n, "Failed to find subscription store listing"), await (0, u.fetchAllSubscriptionListingsDataForApplication)(e, null == n ? void 0 : n.id);
-                let i = d.default.getSubscriptionGroupListingForApplication(e);
-                return s()(null != i, "Failed to find subscription group listing"), i
-            }, f = async (e, t) => {
+            let I = async (e, t) => {
                 let n = (await (0, o.fetchUserEntitlementsForApplication)(e)).filter(e => null == e.ends_at || new Date(e.ends_at) > new Date).find(e => e.sku_id === t);
                 s()(null == n, "User already has an active subscription to this SKU")
             };
-            async function S(e) {
+            async function T(e) {
+                var t;
                 let {
-                    applicationId: t,
-                    skuId: n,
-                    initialPlanId: i,
-                    analyticsLocationObject: r,
-                    analyticsLocations: a,
-                    renderHeader: o
-                } = e, l = await T(t), u = (0, _.getPayableSubscriptionListing)(l);
-                s()(null != u, "Failed to find subscription listing");
-                let d = (0, _.isApplicationUserSubscription)(u.sku_flags);
-                s()(d, "Guild application subscriptions unsupported!"), s()(u.published, "Subscription listing not published"), await f(t, n), I({
-                    initialPlanId: null != i ? i : null == u ? void 0 : u.subscription_plans[0].id,
+                    applicationId: n,
+                    skuId: i,
+                    initialPlanId: r,
+                    analyticsLocationObject: a,
+                    analyticsLocations: o,
+                    renderHeader: _
+                } = e, T = d.default.get(i), f = u.default.getForSKU(i);
+                s()(null != T, "Failed to find SKU");
+                let S = (0, l.isApplicationUserSubscription)(T.flags);
+                s()(S, "Guild application subscriptions unsupported!"), await I(n, i), E({
+                    initialPlanId: null != r ? r : null === (t = f[0]) || void 0 === t ? void 0 : t.id,
                     activeSubscription: null,
-                    analyticsLocations: a,
-                    analyticsLocationObject: r,
-                    analyticsSubscriptionType: E.SubscriptionTypes.APPLICATION,
-                    renderHeader: o,
-                    planGroup: l.subscription_listings_ids,
-                    skuId: n,
+                    analyticsLocations: o,
+                    analyticsLocationObject: a,
+                    analyticsSubscriptionType: c.SubscriptionTypes.APPLICATION,
+                    renderHeader: _,
+                    planGroup: [],
+                    skuId: i,
                     guildId: null,
                     eligibleApplicationSubscriptionGuilds: [],
                     showBenefitsFirst: !1,
-                    applicationId: t,
-                    listing: u
+                    applicationId: n
                 })
             }
         },
@@ -172878,7 +172750,7 @@
                 u = n("821849"),
                 d = n("906732"),
                 _ = n("887706"),
-                c = n("59162"),
+                c = n("724870"),
                 E = n("594174"),
                 I = n("509545"),
                 T = n("270144"),
@@ -231816,7 +231688,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ff02816a4e0b175965052fc299ddb0376efcacdb"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "1275893bbb0ad3fa3b73a6919f84bbe0d8478cf7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257920,7 +257792,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280805"
+                                build_number: "280817"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265065,7 +264937,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280805", "280805"), 10);
+                let s = parseInt((n = "280817", "280817"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291813,4 +291685,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.df7c99fd692983328d24.js.map
+//# sourceMappingURL=97256.a254c90753a849786596.js.map
