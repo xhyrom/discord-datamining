@@ -36669,7 +36669,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280725", ", Version Hash: ").concat("6bbddac07fecb9946afa5f8a86583fa180843268")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280734", ", Version Hash: ").concat("d5a285732740192225d0745fbc5c1eb9ce0588eb")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -53183,7 +53183,7 @@
                 COLLECTIBLES_PROFILE_EFFECT_PERMANENT_COLLECTION: "This effect is now part of your collection and can be used anytime!",
                 CHANGE_PROFILE_EFFECT_MODAL_PREVIEW_PURCHASE_PREMIUM: "Want this profile effect for yourself? Head to the Shop to buy and collect it!",
                 COLLECTIBLES_MOBILE_SHOP_USUAL_PRICE: "Usually {price}",
-                COLLECTIBLES_PURCHASE_DISCLAIMER_PAYMENT_MOBILE: "By Clicking '{buyButtonLabel}' you agree to the [Paid Service Terms]({paidServiceTermURL}). Once you complete your purchase, the item will be added to your collection and can be used anytime. Note that Nitro subscriptions become non-refundable once you've purchased an item.",
+                COLLECTIBLES_PURCHASE_DISCLAIMER_PAYMENT_MOBILE: "By Clicking '{buyButtonLabel}' you agree to the [Paid Service Terms]({paidServiceTermURL}). This purchase is non-refundable. Once you complete your purchase, the item will be added to your collection and can be used anytime. Note that Nitro subscriptions become non-refundable once you've purchased an item.",
                 COLLECTIBLES_MOBILE_SHOP_MARKETING_COACHTIP_TITLE: "See what's in Shop",
                 COLLECTIBLES_MOBILE_SHOP_MARKETING_COACHTIP_DESCRIPTION: "Personalize your profile with Anime, Cyberpunk, Fantasy decorations and more.",
                 COLLECTIBLES_MOBILE_SHOP_MARKETING_SHEET_USER_DESCRIPTION_1: "Super Smash Toads Champ 2024",
@@ -85572,8 +85572,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280725", "280725"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280725")), t = 0), t
+                let t = parseInt((e = "280734", "280734"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280734")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107569,8 +107569,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280725",
-                    versionHash: "6bbddac07fecb9946afa5f8a86583fa180843268"
+                    buildNumber: "280734",
+                    versionHash: "d5a285732740192225d0745fbc5c1eb9ce0588eb"
                 }
             }
             n.r(t), n.d(t, {
@@ -157868,8 +157868,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712029066913",
-                                    build_number: "280725"
+                                    built_at: "1712038260395",
+                                    build_number: "280734"
                                 }
                             },
                             retries: 1
@@ -231825,7 +231825,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "6bbddac07fecb9946afa5f8a86583fa180843268"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d5a285732740192225d0745fbc5c1eb9ce0588eb"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257921,7 +257921,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280725"
+                                build_number: "280734"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265066,7 +265066,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280725", "280725"), 10);
+                let s = parseInt((n = "280734", "280734"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291852,4 +291852,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.ebb44fec14a18e9cdab7.js.map
+//# sourceMappingURL=97256.4c2e34ff9eb8a83f9ab1.js.map
