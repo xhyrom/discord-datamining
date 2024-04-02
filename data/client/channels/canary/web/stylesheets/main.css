@@ -7910,6 +7910,13 @@ html .invoiceCancelRow_aa7946 {
     color: var(--header-primary)
 }
 
+.newIcon__6568d {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 4px;
+    column-gap: 4px
+}
+
 .divider_d6f39c {
     margin-top: 12px;
     height: 1px;
@@ -131464,4 +131471,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.223f0ffeee63e20597b0.css.map*/
+/*# sourceMappingURL=99387.d858312adc2f89b2529d.css.map*/

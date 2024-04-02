@@ -25588,6 +25588,12 @@
             var i = n("461286");
             n.es(i, t)
         },
+        420166: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("249800");
+            n.es(i, t)
+        },
         873706: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -36663,7 +36669,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280704", ", Version Hash: ").concat("e2c6c71e3edda185587bc7e7117b453a14c1a025")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280717", ", Version Hash: ").concat("872b7ef98a3e4bf0c995e6a54648b7641269e5f6")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -54989,6 +54995,7 @@
                 USER_RECENT_GAMES: "Recently Played",
                 USER_RECENT_GAMES_ON_PROFILE: "Show recent games on profile",
                 USER_RECENT_GAMES_YOU_BOTH_PLAY: "You both play this game",
+                NEW_TO_THIS_GAME: "New to this game",
                 MEMBERS_TABLE_JOINED_AT_TIMESTAMP_MINUTES: "{count} {count, plural, =1 {min} other {mins}} ago",
                 MEMBERS_TABLE_JOINED_AT_TIMESTAMP_HOURS: "{count} {count, plural, =1 {hr} other {hrs}} this week",
                 USER_RECENT_GAMES_PLAYED_LAST_WEEK_HOURS: "{count} {count, plural, =1 {hr} other {hrs}} this week",
@@ -85565,8 +85572,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280704", "280704"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280704")), t = 0), t
+                let t = parseInt((e = "280717", "280717"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280717")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107562,8 +107569,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280704",
-                    versionHash: "e2c6c71e3edda185587bc7e7117b453a14c1a025"
+                    buildNumber: "280717",
+                    versionHash: "872b7ef98a3e4bf0c995e6a54648b7641269e5f6"
                 }
             }
             n.r(t), n.d(t, {
@@ -157861,8 +157868,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712023591037",
-                                    build_number: "280704"
+                                    built_at: "1712027030638",
+                                    build_number: "280717"
                                 }
                             },
                             retries: 1
@@ -196028,10 +196035,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 UserProfileRecentGamesSection: function() {
-                    return O
+                    return p
                 },
                 UserProfileRecentGamesThemedSection: function() {
-                    return p
+                    return R
                 }
             }), n("47120");
             var i = n("735250"),
@@ -196040,79 +196047,91 @@
                 a = n.n(s),
                 o = n("442837"),
                 l = n("692547"),
-                u = n("5297"),
-                d = n("481060"),
-                _ = n("812206"),
-                c = n("566454"),
-                E = n("32966"),
-                I = n("314897"),
-                T = n("768581"),
-                f = n("747074"),
-                S = n("659101"),
-                h = n("689938"),
-                A = n("458186");
+                u = n("420166"),
+                d = n("5297"),
+                _ = n("481060"),
+                c = n("812206"),
+                E = n("566454"),
+                I = n("32966"),
+                T = n("314897"),
+                f = n("768581"),
+                S = n("747074"),
+                h = n("659101"),
+                A = n("689938"),
+                m = n("458186");
 
-            function m(e) {
+            function N(e) {
                 let {
                     game: t,
                     isSharedGame: n
-                } = e, s = (0, o.useStateFromStores)([_.default], () => _.default.getApplication(t.applicationId)), a = r.useMemo(() => null == t.duration || 0 === t.duration ? (0, c.getLastPlayedTimestamp)(t, !1) : "".concat((0, c.getLastPlayedTimestamp)(t, !0), " — ").concat((0, c.getTimePlayedLastWeek)(t)), [t]), E = r.useRef(null), [I, f] = r.useState(!1);
+                } = e, s = (0, o.useStateFromStores)([c.default], () => c.default.getApplication(t.applicationId)), a = r.useMemo(() => null == t.duration || 0 === t.duration ? (0, E.getLastPlayedTimestamp)(t, !1) : "".concat((0, E.getLastPlayedTimestamp)(t, !0), " — ").concat((0, E.getTimePlayedLastWeek)(t)), [t]), I = r.useRef(null), [T, S] = r.useState(!1);
                 if (r.useEffect(() => {
-                        let e = E.current;
-                        null != e && null != e.offsetWidth && null != e.scrollWidth && f(e.offsetWidth < e.scrollWidth)
+                        let e = I.current;
+                        null != e && null != e.offsetWidth && null != e.scrollWidth && S(e.offsetWidth < e.scrollWidth)
                     }, []), null == s) return null;
-                let S = T.default.getApplicationIconURL({
+                let h = f.default.getApplicationIconURL({
                     id: s.id,
                     icon: s.icon,
                     size: 40
                 });
                 return (0, i.jsxs)("div", {
-                    className: A.recentGameContainer,
+                    className: m.recentGameContainer,
                     children: [(0, i.jsx)("div", {
-                        className: A.recentGameIcon,
-                        children: null != S && (0, i.jsx)("img", {
+                        className: m.recentGameIcon,
+                        children: null != h && (0, i.jsx)("img", {
                             alt: "",
                             "aria-hidden": !0,
-                            src: S,
+                            src: h,
                             width: 40,
                             height: 40
                         })
                     }), (0, i.jsxs)("div", {
-                        className: A.recentGameDetails,
+                        className: m.recentGameDetails,
                         children: [(0, i.jsxs)("div", {
-                            className: A.recentGameTitleContainer,
-                            children: [(0, i.jsx)(d.Tooltip, {
+                            className: m.recentGameTitleContainer,
+                            children: [(0, i.jsx)(_.Tooltip, {
                                 text: s.name,
-                                color: d.Tooltip.Colors.PRIMARY,
-                                shouldShow: I,
+                                color: _.Tooltip.Colors.PRIMARY,
+                                shouldShow: T,
                                 children: e => (0, i.jsx)("span", {
-                                    ref: E,
+                                    ref: I,
                                     ...e,
-                                    className: A.recentGameTitle,
+                                    className: m.recentGameTitle,
                                     children: s.name
                                 })
-                            }), n && (0, i.jsx)(d.Tooltip, {
-                                text: h.default.Messages.USER_RECENT_GAMES_YOU_BOTH_PLAY,
-                                color: d.Tooltip.Colors.PRIMARY,
+                            }), n && (0, i.jsx)(_.Tooltip, {
+                                text: A.default.Messages.USER_RECENT_GAMES_YOU_BOTH_PLAY,
+                                color: _.Tooltip.Colors.PRIMARY,
                                 children: e => (0, i.jsx)("div", {
-                                    className: A.sharedGameIcon,
+                                    className: m.sharedGameIcon,
                                     ...e,
-                                    children: (0, i.jsx)(u.SparklesIcon, {
+                                    children: (0, i.jsx)(d.SparklesIcon, {
                                         height: 16,
                                         width: 16,
                                         color: l.default.colors.INTERACTIVE_MUTED
                                     })
                                 })
                             })]
-                        }), (0, i.jsx)(d.Text, {
+                        }), (0, i.jsx)(_.Text, {
                             variant: "text-sm/normal",
                             color: "header-secondary",
                             children: a
+                        }), t.isNew && (0, i.jsxs)("div", {
+                            className: m.newIcon,
+                            children: [(0, i.jsx)(u.NewUserIcon, {
+                                height: 12,
+                                width: 12,
+                                color: l.default.colors.STATUS_POSITIVE
+                            }), (0, i.jsx)(_.Text, {
+                                variant: "text-sm/normal",
+                                color: "status-positive",
+                                children: A.default.Messages.NEW_TO_THIS_GAME
+                            })]
                         })]
                     })]
                 })
             }
-            let N = r.memo(function(e) {
+            let O = r.memo(function(e) {
                 let {
                     userId: t,
                     containerClassName: n,
@@ -196122,15 +196141,15 @@
                     currentUserApplicationIds: o,
                     isFetching: l,
                     isError: u
-                } = (0, E.useUserRecentGames)(t);
+                } = (0, I.useUserRecentGames)(t);
                 if (l || u || null == s || 0 === s.length) return null;
                 let d = (0, i.jsx)("div", {
-                    className: a()(A.recentGames, n),
+                    className: a()(m.recentGames, n),
                     children: null == s ? void 0 : s.map(e => {
                         var n, r, s;
-                        return (0, i.jsx)(m, {
+                        return (0, i.jsx)(N, {
                             game: e,
-                            isSharedGame: (n = t, r = o, s = e.applicationId, n !== I.default.getId() && r.has(s))
+                            isSharedGame: (n = t, r = o, s = e.applicationId, n !== T.default.getId() && r.has(s))
                         }, e.lastSessionId)
                     })
                 });
@@ -196139,44 +196158,44 @@
                 }) : d
             });
 
-            function O(e) {
+            function p(e) {
                 let {
                     userId: t,
                     containerClassName: n
-                } = e, s = r.useCallback(e => (0, i.jsxs)(S.default, {
-                    children: [(0, i.jsx)(d.Heading, {
+                } = e, s = r.useCallback(e => (0, i.jsxs)(h.default, {
+                    children: [(0, i.jsx)(_.Heading, {
                         variant: "eyebrow",
-                        className: A.recentGamesHeading,
-                        children: h.default.Messages.RECENT_GAMES
+                        className: m.recentGamesHeading,
+                        children: A.default.Messages.RECENT_GAMES
                     }), e]
                 }), []);
-                return (0, i.jsx)(N, {
+                return (0, i.jsx)(O, {
                     userId: t,
                     containerClassName: n,
                     wrapChildren: s
                 })
             }
 
-            function p(e) {
+            function R(e) {
                 let {
                     userId: t,
                     containerClassName: n
-                } = e, s = r.useCallback(e => (0, i.jsx)(f.default.Inner, {
-                    children: (0, i.jsxs)(S.default, {
-                        children: [(0, i.jsx)(d.Heading, {
+                } = e, s = r.useCallback(e => (0, i.jsx)(S.default.Inner, {
+                    children: (0, i.jsxs)(h.default, {
+                        children: [(0, i.jsx)(_.Heading, {
                             variant: "eyebrow",
-                            className: A.recentGamesHeading,
-                            children: h.default.Messages.RECENT_GAMES
+                            className: m.recentGamesHeading,
+                            children: A.default.Messages.RECENT_GAMES
                         }), e]
                     })
                 }), []);
-                return (0, i.jsx)(N, {
+                return (0, i.jsx)(O, {
                     userId: t,
                     containerClassName: n,
                     wrapChildren: s
                 })
             }
-            t.default = N
+            t.default = O
         },
         841040: function(e, t, n) {
             "use strict";
@@ -198884,7 +198903,8 @@
                         recentGames: n.map(e => ({
                             applicationId: e.application.id,
                             duration: e.duration,
-                            lastSessionId: e.last_session_id
+                            lastSessionId: e.last_session_id,
+                            isNew: e.is_new
                         })).sort((e, t) => I.default.compare(t.lastSessionId, e.lastSessionId)),
                         lastFetchTimestampMs: Date.now()
                     })
@@ -198913,7 +198933,8 @@
                         let o = (n = a, i = t, l()(n.applicationId === i.applicationId, "[UserRecentGamesStore] Games must have same application for merge."), {
                             applicationId: n.applicationId,
                             duration: n.duration + i.duration,
-                            lastSessionId: I.default.compare(n.lastSessionId, i.lastSessionId) > 0 ? n.lastSessionId : i.lastSessionId
+                            lastSessionId: I.default.compare(n.lastSessionId, i.lastSessionId) > 0 ? n.lastSessionId : i.lastSessionId,
+                            isNew: n.isNew || i.isNew
                         });
                         f.set(e, {
                             lastFetchTimestampMs: Date.now(),
@@ -198922,7 +198943,8 @@
                     }(c.default.getId(), {
                         applicationId: t,
                         duration: n,
-                        lastSessionId: I.default.fromTimestamp(Date.now())
+                        lastSessionId: I.default.fromTimestamp(Date.now()),
+                        isNew: !1
                     })
                 }
             })
@@ -231803,7 +231825,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e2c6c71e3edda185587bc7e7117b453a14c1a025"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "872b7ef98a3e4bf0c995e6a54648b7641269e5f6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257899,7 +257921,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280704"
+                                build_number: "280717"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265044,7 +265066,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280704", "280704"), 10);
+                let s = parseInt((n = "280717", "280717"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -269794,6 +269816,44 @@
                         d: "M9.8 14.6c-.45.31-.9.6-1.37.89l-.02.01-1.15.73c-.85.57-1.68 1.2-2.4 2.1a7.75 7.75 0 0 0-.7 1.03c-.39.69-.7 1.48-.94 2.42a1 1 0 0 0 1.94.49c.12-.49.26-.9.42-1.28 1.98.08 9.05-.04 12.73-5.34 3.5-5.02 2.89-10.16 2.01-13.89-.19-.81-1.26-1-1.85-.42-1.8 1.8-3.69 2.32-5.67 2.86-2.34.63-4.8 1.3-7.35 4.15a9.13 9.13 0 0 0-2.13 8.7c.9-1.11 1.92-1.88 2.84-2.48.4-.28.8-.53 1.18-.76a13.7 13.7 0 0 0 3.55-2.83 1 1 0 1 1 1.52 1.3A13.44 13.44 0 0 1 9.8 14.6Z",
                         className: o
                     })
+                })
+            }
+        },
+        249800: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                NewUserIcon: function() {
+                    return a
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("692547"),
+                s = n("331595");
+            let a = e => {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: a = r.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: o = "",
+                    ...l
+                } = e;
+                return (0, i.jsxs)("svg", {
+                    ...(0, s.default)(l),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: n,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: [(0, i.jsx)("path", {
+                        fill: "string" == typeof a ? a : a.css,
+                        d: "M11.55 14.4c.28.17.62.17.9 0 1.6-.96 6.88-4.46 6.88-8.57A3.83 3.83 0 0 0 15.5 2c-1.56 0-2.58.6-3.5 1.5A4.66 4.66 0 0 0 8.5 2a3.83 3.83 0 0 0-3.83 3.83c0 4.1 5.29 7.61 6.88 8.57Z",
+                        className: o
+                    }), (0, i.jsx)("path", {
+                        fill: "string" == typeof a ? a : a.css,
+                        d: "M3.11 14.86a1 1 0 0 0-.83 1.24l.23.89a6 6 0 0 0 6.46 4.45l2.03-.22V22a1 1 0 1 0 2 0v-.78l2.03.22A6 6 0 0 0 21.5 17l.23-.89a1 1 0 0 0-.83-1.24l-2.05-.29a6 6 0 0 0-6.1 3.07L12 19l-.74-1.36a6 6 0 0 0-6.1-3.07l-2.05.29ZM2.93 9.4a.6.6 0 0 1 1.14 0l.1.25a2 2 0 0 0 1.18 1.19l.25.1a.6.6 0 0 1 0 1.13l-.25.1a2 2 0 0 0-1.19 1.18l-.1.25a.6.6 0 0 1-1.13 0l-.1-.25a2 2 0 0 0-1.18-1.19l-.25-.1a.6.6 0 0 1 0-1.13l.25-.1a2 2 0 0 0 1.19-1.18l.1-.25ZM21.46 9.82a.49.49 0 0 0-.92 0v.03a2 2 0 0 1-1.19 1.18l-.03.01a.49.49 0 0 0 0 .92h.03a2 2 0 0 1 1.18 1.19l.01.03c.16.43.76.43.92 0v-.03a2 2 0 0 1 1.19-1.18l.03-.01a.49.49 0 0 0 0-.92h-.03a2 2 0 0 1-1.18-1.19l-.01-.03Z",
+                        className: o
+                    })]
                 })
             }
         },
@@ -291792,4 +291852,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.112ad1f22c2258550c35.js.map
+//# sourceMappingURL=97256.d49930a49c3193c1d38e.js.map
