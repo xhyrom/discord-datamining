@@ -36669,7 +36669,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280734", ", Version Hash: ").concat("d5a285732740192225d0745fbc5c1eb9ce0588eb")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280748", ", Version Hash: ").concat("3e79d85fb4fe359047741b6ac9009dd8eb7496b4")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55313,8 +55313,10 @@
                 CLAN_SETUP_SELECTED_INTERESTS: "Selected Traits",
                 CLAN_SETUP_DESCRIPTION_TITLE: "Write a description for your Clan.",
                 CLAN_SETUP_DESCRIPTION_SUBTITLE: "Think about why you made your Clan or what makes it unique!",
+                CLAN_SETUP_DESCRIPTION_PLACEHOLDER: "What's your Clan about?",
                 CLAN_SETUP_PRIMETIME_TITLE: "What's the best time to play games together?",
                 CLAN_SETUP_PRIMETIME_SUBTITLE: "PrimeTime is a dedicated time for the Clan to play games and hang out together.",
+                CLAN_SETUP_PRIMETIME_ADD: "Add another",
                 CLAN_SETUP_CUSTOMIZE_TITLE: "Pick a badge for your clan",
                 CLAN_SETUP_CUSTOMIZE_SUBTITLE: "Choose a badge to represent your clan. This will be shown on your clan tag and your clan's profile everywhere, so choose wisely!",
                 CLAN_SETUP_CUSTOMIZE_HELP_TEXT: "Maxmimum 4 characters, alphabet (A-Z) and numbers only",
@@ -85572,8 +85574,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280734", "280734"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280734")), t = 0), t
+                let t = parseInt((e = "280748", "280748"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280748")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107569,8 +107571,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280734",
-                    versionHash: "d5a285732740192225d0745fbc5c1eb9ce0588eb"
+                    buildNumber: "280748",
+                    versionHash: "3e79d85fb4fe359047741b6ac9009dd8eb7496b4"
                 }
             }
             n.r(t), n.d(t, {
@@ -157868,8 +157870,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712038260395",
-                                    build_number: "280734"
+                                    built_at: "1712068337126",
+                                    build_number: "280748"
                                 }
                             },
                             retries: 1
@@ -231825,7 +231827,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d5a285732740192225d0745fbc5c1eb9ce0588eb"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3e79d85fb4fe359047741b6ac9009dd8eb7496b4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257921,7 +257923,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280734"
+                                build_number: "280748"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265066,7 +265068,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280734", "280734"), 10);
+                let s = parseInt((n = "280748", "280748"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291852,4 +291854,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.4c2e34ff9eb8a83f9ab1.js.map
+//# sourceMappingURL=97256.5b54a3084624d6d633dd.js.map
