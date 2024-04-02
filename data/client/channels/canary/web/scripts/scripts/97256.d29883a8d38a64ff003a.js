@@ -5225,30 +5225,6 @@
             "use strict";
             e.exports = n.p + "f6cfd7e6d7835c749f04.svg"
         },
-        828553: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "5a8c0deffdef605e040e.png"
-        },
-        591732: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "28b82f6678f8c4984b68.svg"
-        },
-        746530: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "b13a95d45c2094a74f9c.png"
-        },
-        142452: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "dbb7f63e095363469772.svg"
-        },
-        783514: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "b13a95d45c2094a74f9c.png"
-        },
-        676113: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "dbb7f63e095363469772.svg"
-        },
         706264: function(e, t, n) {
             "use strict";
             e.exports = n.p + "c5962409fd59d9ed5ac5.png"
@@ -36686,7 +36662,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280627", ", Version Hash: ").concat("bdc3278f78d1ae7ca6d743bc7458da708293991a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280675", ", Version Hash: ").concat("ef79dd24248f1be0755b8f230869a7763b7a940f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -57133,18 +57109,6 @@
                         return "https://".concat(t, "/")
                     },
                     enabled: !0
-                }, {
-                    type: o.PlatformTypes.AMAZON,
-                    name: "Amazon",
-                    icon: {
-                        lightPNG: n("746530"),
-                        darkPNG: n("828553"),
-                        whitePNG: n("783514"),
-                        lightSVG: n("142452"),
-                        darkSVG: n("591732"),
-                        whiteSVG: n("676113")
-                    },
-                    enabled: !1
                 }],
                 u = r().keyBy(l, "type"),
                 d = {};
@@ -85600,8 +85564,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280627", "280627"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280627")), t = 0), t
+                let t = parseInt((e = "280675", "280675"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280675")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107597,8 +107561,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280627",
-                    versionHash: "bdc3278f78d1ae7ca6d743bc7458da708293991a"
+                    buildNumber: "280675",
+                    versionHash: "ef79dd24248f1be0755b8f230869a7763b7a940f"
                 }
             }
             n.r(t), n.d(t, {
@@ -157903,8 +157867,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712014246975",
-                                    build_number: "280627"
+                                    built_at: "1712017935641",
+                                    build_number: "280675"
                                 }
                             },
                             retries: 1
@@ -231845,7 +231809,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "bdc3278f78d1ae7ca6d743bc7458da708293991a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ef79dd24248f1be0755b8f230869a7763b7a940f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257941,7 +257905,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280627"
+                                build_number: "280675"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265086,7 +265050,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280627", "280627"), 10);
+                let s = parseInt((n = "280675", "280675"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291834,4 +291798,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.e5147a3b4b4f9a868ab5.js.map
+//# sourceMappingURL=97256.d29883a8d38a64ff003a.js.map
