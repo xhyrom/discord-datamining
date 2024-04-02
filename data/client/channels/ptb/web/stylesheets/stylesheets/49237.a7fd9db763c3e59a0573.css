@@ -10909,6 +10909,11 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     margin-top: 4px
 }
 
+.obscureVideoSpacing__98a58 {
+    transition: .1s bottom ease-in-out;
+    bottom: 36px
+}
+
 .galleryImageContainer__37c56 {
     max-height: 100%
 }
@@ -20673,7 +20678,8 @@ strong {
     filter: blur(40px)brightness(.55)
 }
 
-.obscureVideo__7133c {
+.obscureVideoSpacing__59d03 {
+    transition: .1s bottom ease-in-out;
     bottom: 36px
 }
 
@@ -28179,4 +28185,4 @@ span.button_ae40a4.disabled__1dc58 {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.c20ef3bfa082e7ef18ce.css.map*/
+/*# sourceMappingURL=49237.a7fd9db763c3e59a0573.css.map*/
