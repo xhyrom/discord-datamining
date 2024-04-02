@@ -805,7 +805,10 @@
   },
   "CHANNEL_ENTITLEMENT_GRANT": {
     "url": "/channels/:param/store-listing/entitlement-grant",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CHANNEL_FOLLOWERS": {
     "url": "/channels/:param/followers",
@@ -865,7 +868,11 @@
   },
   "TUTORIAL_INDICATORS_SUPPRESS": {
     "url": "/tutorial/indicators/suppress",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST",
+      "PUT"
+    ]
   },
   "TUTORIAL_INDICATOR": {
     "url": "/tutorial/indicators/:param",
@@ -917,7 +924,11 @@
   },
   "DEVICES_SYNC_TOKEN": {
     "url": "/users/@me/devices/sync-token",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "DEVICES_SYNC": {
     "url": "/users/@me/devices/sync",
@@ -973,7 +984,11 @@
   },
   "CONNECTIONS_AUTHORIZE_LINK": {
     "url": "/connections/:param/authorize?two_way_link=true&two_way_link_type=:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CONNECTIONS_AUTHORIZE_LINK_DEVICE": {
     "url": "/connections/:param/authorize?two_way_link=true&two_way_link_type=device_code&two_way_user_code=:param",
@@ -1029,7 +1044,10 @@
   },
   "CAPTCHA": {
     "url": "/users/@me/captcha/verify",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "EXPERIMENTS": {
     "url": "/experiments",
@@ -1081,7 +1099,10 @@
   },
   "REGISTER_PHONE": {
     "url": "/auth/register/phone",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MFA_WEBAUTHN_CREDENTIALS": {
     "url": "/users/@me/mfa/webauthn/credentials",
@@ -1121,7 +1142,10 @@
   },
   "TRACK": {
     "url": "/science",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "METRICS": {
     "url": "/metrics",
@@ -1165,7 +1189,11 @@
   },
   "REGIONS": {
     "url": "/guilds/:param/regions",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "DEBUG_LOG": {
     "url": "/debug-logs/:param/:param",
@@ -1221,7 +1249,11 @@
   },
   "APPLICATION_RPC": {
     "url": "/oauth2/applications/:param/rpc",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "APPLICATION_ASSETS": {
     "url": "/oauth2/applications/:param/assets",
@@ -1269,7 +1301,10 @@
   },
   "OAUTH2_WHITELIST_ACCEPT": {
     "url": "/oauth2/allowlist/accept",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "OAUTH2_DEVICE_VERIFY": {
     "url": "/oauth2/device/verify",
@@ -1321,7 +1356,10 @@
   },
   "CALL_STOP_RINGING": {
     "url": "/channels/:param/call/stop-ringing",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "DISABLE_EMAIL_NOTIFICATIONS": {
     "url": "/users/disable-email-notifications",
@@ -1371,7 +1409,12 @@
   },
   "REACTIONS": {
     "url": "/channels/:param/messages/:param/reactions/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "REMOVE_REACTIONS": {
     "url": "/channels/:param/messages/:param/reactions",
@@ -1391,7 +1434,11 @@
   },
   "SEARCH_GUILD": {
     "url": "/guilds/:param/messages/search",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "SEARCH_FAVORITES": {
     "url": "/search/favorites",
@@ -1447,7 +1494,10 @@
   },
   "SEARCH_TABS_CHANNEL": {
     "url": "/channels/:param/messages/search/tabs",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BILLING_STRIPE_SETUP_INTENT_SECRET": {
     "url": "/users/@me/billing/stripe/setup-intents",
@@ -1491,7 +1541,11 @@
   },
   "BILLING_STRIPE_PAYMENT_INTENTS": {
     "url": "/users/@me/billing/stripe/payment-intents/payments/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "BILLING_STRIPE_PAYMENT_INTENTS_VIA_ID": {
     "url": "/users/@me/billing/stripe/payment-intents/:param",
@@ -1511,11 +1565,17 @@
   },
   "BILLING_POPUP_BRIDGE": {
     "url": "/billing/popup-bridge/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BILLING_POPUP_BRIDGE_CALLBACK": {
     "url": "/billing/popup-bridge/:param/callback",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX": {
     "url": "/billing/popup-bridge/:param/callback/:param/:param",
@@ -1556,7 +1616,10 @@
   },
   "BILLING_CREATE_APPLE_IAP_JWT_TOKEN": {
     "url": "/billing/apple/jwt-token",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BILLING_SUBSCRIPTION": {
     "url": "/users/@me/billing/subscriptions/:param",
@@ -1654,7 +1717,10 @@
   },
   "HANDOFF_EXCHANGE": {
     "url": "/auth/handoff/exchange",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "LIBRARY": {
     "url": "/users/@me/library",
@@ -1713,7 +1779,11 @@
   },
   "STORE_DIRECTORY_LAYOUT": {
     "url": "/store/directory-layouts/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "STORE_DIRECTORY": {
     "url": "/store/directory/:param",
@@ -1785,7 +1855,11 @@
   },
   "ENTITLEMENTS_FOR_APPLICATION": {
     "url": "/users/@me/applications/:param/entitlements",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "ENTITLEMENTS_FOR_USER": {
     "url": "/users/@me/entitlements",
@@ -1915,7 +1989,11 @@
   },
   "GUILD_DISCOVERY": {
     "url": "/discoverable-guilds",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_DISCOVERY_CATEGORIES": {
     "url": "/discovery/categories",
@@ -2055,7 +2133,10 @@
   },
   "ACTIVITY_UPLOAD_ATTACHMENT": {
     "url": "/activities/:param/attachment",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CHANNEL_THREADS": {
     "url": "/channels/:param/threads",
@@ -2125,7 +2206,11 @@
   },
   "USER_SURVEY": {
     "url": "/users/@me/survey",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_SURVEY_SEEN": {
     "url": "/users/@me/survey/:param/seen",
@@ -2248,7 +2333,11 @@
   },
   "DIRECTORY_ENTRIES_SEARCH": {
     "url": "/channels/:param/directory-entries/search",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "DIRECTORY_CHANNEL_CATEGORY_COUNTS": {
     "url": "/channels/:param/directory-entries/counts",
@@ -2311,7 +2400,13 @@
   },
   "DROPS_ENROLL_USER": {
     "url": "/drops/enrolled-user",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "DROPS_PLATFORM_AVAILABILITY": {
     "url": "/drops/reward-code/availability",
@@ -2371,7 +2466,11 @@
   },
   "GUILD_ROLE_SUBSCRIPTION_LISTINGS": {
     "url": "/guilds/:param/role-subscriptions/group-listings/:param/subscription-listings/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_ROLE_SUBSCRIPTION_GROUP_LISTING_ARCHIVE": {
     "url": "/guilds/:param/role-subscriptions/group-listings/:param/subscription-listings/:param/archive",
@@ -2418,7 +2517,11 @@
   },
   "CREATOR_MONETIZATION_MARKETING_ONBOARDING": {
     "url": "/guilds/:param/creator-monetization/marketing/onboarding",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY": {
     "url": "/creator-monetization/marketing/nag-activate/eligibility",
@@ -2535,7 +2638,10 @@
   },
   "SEND_SOUNDBOARD_SOUND": {
     "url": "/channels/:param/send-soundboard-sound",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "APPLICATION_COMMANDS_SEARCH": {
     "url": "/channels/:param/application-commands/search",
@@ -2647,7 +2753,10 @@
   },
   "RESTORE_NOTIFICATION_SNAPSHOT": {
     "url": "/users/@me/notification-settings/snapshots/:param/restore-guilds",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_ADMIN_SERVER_ELIGIBILITY": {
     "url": "/guilds/:param/admin-server-eligibility",
@@ -2713,7 +2822,10 @@
   },
   "CONSOLES_DEVICES_COMMANDS": {
     "url": "/consoles/:param/devices/:param/commands",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CONSOLES_DEVICES_COMMAND": {
     "url": "/consoles/:param/devices/:param/commands/:param",
@@ -2768,7 +2880,10 @@
   },
   "CREATE_REFERRAL_PREVIEW": {
     "url": "/users/@me/referrals/:param/preview",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CREATE_REFERRAL": {
     "url": "/users/@me/referrals/:param",
@@ -2898,7 +3013,10 @@
   },
   "SEND_GAMING_STATS": {
     "url": "/:param/gaming-stats",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "UPDATE_GAMING_STATS": {
     "url": "/:param/:param/update-gaming-stats",
@@ -3020,7 +3138,11 @@
   },
   "LOOTBOX_COUNT": {
     "url": "/lootboxes/count",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "TENURE_REWARD_SYNC": {
     "url": "/users/@me/tenure-reward/sync",
