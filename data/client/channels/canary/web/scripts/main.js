@@ -36549,7 +36549,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280932", ", Version Hash: ").concat("926d017a8cfcba9397834df33856984b4739c78d")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280937", ", Version Hash: ").concat("f04d8f4aff6e17717836be44d502d2d0c3810f3e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -83118,6 +83118,9 @@
                 isBuildOverrideLink: function() {
                     return S
                 },
+                isManualBuildOverrideLink: function() {
+                    return A
+                },
                 probablyHasBuildOverride: function() {
                     return I
                 },
@@ -83446,29 +83449,40 @@
                 s = n("442837"),
                 a = n("386506"),
                 o = n("304761"),
-                l = n("478543"),
-                u = n("366953");
-            async function d(e) {
+                l = n("865427"),
+                u = n("478543"),
+                d = n("366953");
+            async function _(e) {
                 if (200 !== (await (0, a.applyPublicBuildOverride)(e)).status) throw Error("Build override couldn't apply");
                 window.location.reload(!0)
             }
-            async function _() {
+            async function c(e) {
+                if (200 !== (await (0, a.applyStaffBuildOverride)(e)).status) throw Error("Build override couldn't apply");
+                window.location.reload(!0)
+            }
+            async function E() {
                 await (0, a.clearBuildOverride)(), window.location.reload(!0)
             }
             t.default = r.memo(function(e) {
                 let {
                     url: t
                 } = e, n = (0, s.useStateFromStoresObject)([o.default], () => o.default.getCurrentBuildOverride()), a = (0, s.useStateFromStores)([o.default], () => o.default.getBuildOverride(t)), {
-                    payload: c,
-                    validatedURL: E
-                } = a, I = n.state === o.State.Resolving || a.state === o.State.Resolving, T = r.useCallback(() => null == c ? Promise.reject(Error("Invalid override payload")) : ((0, u.addRecentBuildOverride)(a.override, c), d(c)), [c, a]);
-                return null != E ? (0, i.jsx)(l.default, {
-                    loading: I,
+                    payload: I,
+                    validatedURL: T
+                } = a, f = n.state === o.State.Resolving || a.state === o.State.Resolving, S = r.useCallback(() => {
+                    if ((0, l.isManualBuildOverrideLink)(a.url) && null != a.override) {
+                        var e;
+                        return c(null === (e = a.override) || void 0 === e ? void 0 : e.targetBuildOverride)
+                    }
+                    return null == I ? Promise.reject(Error("Invalid override payload")) : ((0, d.addRecentBuildOverride)(a.override, I), _(I))
+                }, [I, a]);
+                return null != T ? (0, i.jsx)(u.default, {
+                    loading: f,
                     linkMeta: a.override,
                     currentOverrides: n.overrides,
-                    applyBuildOverride: T,
-                    clearBuildOverride: _,
-                    url: E
+                    applyBuildOverride: S,
+                    clearBuildOverride: E,
+                    url: T
                 }) : null
             })
         },
@@ -85484,8 +85498,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280932", "280932"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280932")), t = 0), t
+                let t = parseInt((e = "280937", "280937"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280937")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -102933,6 +102947,9 @@
         830121: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                DEVLINK_REGEX: function() {
+                    return g
+                },
                 default: function() {
                     return F
                 },
@@ -107490,8 +107507,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280932",
-                    versionHash: "926d017a8cfcba9397834df33856984b4739c78d"
+                    buildNumber: "280937",
+                    versionHash: "f04d8f4aff6e17717836be44d502d2d0c3810f3e"
                 }
             }
             n.r(t), n.d(t, {
@@ -135336,7 +135353,7 @@
                     (0, r.openModalLazy)(async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("98880")]).then(n.bind(n, "645264"));
+                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("70935")]).then(n.bind(n, "645264"));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             guildId: e,
@@ -149664,7 +149681,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return k
+                    return V
                 }
             }), n("47120");
             var i = n("735250"),
@@ -149694,15 +149711,16 @@
                 L = n("943362"),
                 D = n("551452"),
                 v = n("69626"),
-                M = n("532901"),
-                y = n("981631"),
-                P = n("176505"),
-                U = n("689938"),
-                b = n("633353");
+                M = n("142990"),
+                y = n("532901"),
+                P = n("981631"),
+                U = n("176505"),
+                b = n("689938"),
+                G = n("633353");
             n("519308");
-            var G = n("931093");
+            var w = n("931093");
 
-            function w(e) {
+            function B(e) {
                 let {
                     text: t
                 } = e, [n, s] = r.useState(!1);
@@ -149723,12 +149741,12 @@
                     })
                 })
             }
-            let B = {
+            let k = {
                 blockQuote: {
                     react: (e, t, n) => (0, i.jsxs)("div", {
-                        className: G.blockquoteContainer,
+                        className: w.blockquoteContainer,
                         children: [(0, i.jsx)("div", {
-                            className: G.blockquoteDivider
+                            className: w.blockquoteDivider
                         }), (0, i.jsx)("blockquote", {
                             children: t(e.content, n)
                         })]
@@ -149759,15 +149777,15 @@
                 codeBlock: {
                     react(e, t, r) {
                         let s = () => (0, i.jsx)("code", {
-                            className: a()(b.scrollbarGhostHairline, "hljs"),
+                            className: a()(G.scrollbarGhostHairline, "hljs"),
                             children: (0, C.smartOutput)(e, t, r)
                         });
                         return (0, i.jsx)("pre", {
                             children: (0, i.jsxs)("div", {
-                                className: G.codeContainer,
+                                className: w.codeContainer,
                                 children: [p.SUPPORTS_COPY ? (0, i.jsx)("div", {
-                                    className: G.codeActions,
-                                    children: (0, i.jsx)(w, {
+                                    className: w.codeActions,
+                                    children: (0, i.jsx)(B, {
                                         text: e.content
                                     })
                                 }) : null, (0, i.jsx)(d.LazyLibrary, {
@@ -149779,7 +149797,7 @@
                                         {
                                             let n = t.highlight(e.lang, e.content, !0);
                                             return null == n ? s() : (0, i.jsx)("code", {
-                                                className: a()(b.scrollbarGhostHairline, "hljs", n.language),
+                                                className: a()(G.scrollbarGhostHairline, "hljs", n.language),
                                                 dangerouslySetInnerHTML: {
                                                     __html: n.value
                                                 }
@@ -149820,12 +149838,12 @@
                         let r = () => {
                             ! function(e, t) {
                                 let n = I.default.getGuild(e);
-                                if (null == e || null == n || !n.hasFeature(y.GuildFeatures.COMMUNITY)) return;
+                                if (null == e || null == n || !n.hasFeature(P.GuildFeatures.COMMUNITY)) return;
                                 let i = {
-                                        home: P.StaticChannelRoute.GUILD_HOME,
-                                        browse: P.StaticChannelRoute.CHANNEL_BROWSER,
-                                        customize: P.StaticChannelRoute.CUSTOMIZE_COMMUNITY,
-                                        guide: P.StaticChannelRoute.GUILD_HOME
+                                        home: U.StaticChannelRoute.GUILD_HOME,
+                                        browse: U.StaticChannelRoute.CHANNEL_BROWSER,
+                                        customize: U.StaticChannelRoute.CUSTOMIZE_COMMUNITY,
+                                        guide: U.StaticChannelRoute.GUILD_HOME
                                     } [t],
                                     r = I.default.getGuild(e);
                                 if ((null == r ? void 0 : r.joinedAt) == null) {
@@ -149833,21 +149851,21 @@
                                         channelId: i
                                     });
                                     return
-                                }(0, E.transitionTo)(y.Routes.CHANNEL(e, i))
+                                }(0, E.transitionTo)(P.Routes.CHANNEL(e, i))
                             }(e.guildId, e.channelId)
                         };
                         if (!(0, C.isStaticRouteIconType)(e.channelId)) return null;
                         let s = "".concat(e.channelId);
                         switch (e.channelId) {
-                            case P.StaticChannelId.GUILD_HOME:
-                            case P.StaticChannelId.SERVER_GUIDE:
-                                s = U.default.Messages.SERVER_GUIDE;
+                            case U.StaticChannelId.GUILD_HOME:
+                            case U.StaticChannelId.SERVER_GUIDE:
+                                s = b.default.Messages.SERVER_GUIDE;
                                 break;
-                            case P.StaticChannelId.CHANNEL_BROWSER:
-                                s = U.default.Messages.GUILD_SIDEBAR_CHANNEL_BROWSER;
+                            case U.StaticChannelId.CHANNEL_BROWSER:
+                                s = b.default.Messages.GUILD_SIDEBAR_CHANNEL_BROWSER;
                                 break;
-                            case P.StaticChannelId.CUSTOMIZE_COMMUNITY:
-                                s = U.default.Messages.CHANNELS_AND_ROLES
+                            case U.StaticChannelId.CUSTOMIZE_COMMUNITY:
+                                s = b.default.Messages.CHANNELS_AND_ROLES
                         }
                         return (0, i.jsx)(l.Tooltip, {
                             text: s,
@@ -149881,7 +149899,7 @@
                             r = null == e.start ? void 0 : (e.start + (e.items.length - 1)).toString().length;
                         return (0, o.reactElement)(i, "".concat(n.key), {
                             start: e.start,
-                            className: n.formatInline ? G.inlineFormat : null,
+                            className: n.formatInline ? w.inlineFormat : null,
                             style: {
                                 "--totalCharacters": r
                             },
@@ -149903,7 +149921,7 @@
                         });
                         return (0, o.reactElement)("h" + e.level, (null == n ? void 0 : n.key) != null ? "".concat(n.key) : null, {
                             children: i,
-                            className: n.formatInline ? G.inlineFormat : null
+                            className: n.formatInline ? w.inlineFormat : null
                         })
                     }
                 },
@@ -149927,10 +149945,11 @@
                 }
             };
 
-            function k(e) {
+            function V(e) {
                 return {
-                    ...B,
-                    link: (0, M.default)(e),
+                    ...k,
+                    link: (0, y.default)(e),
+                    devLink: (0, M.default)(e),
                     emoji: function(e) {
                         let {
                             emojiTooltipPosition: t = "top",
@@ -151164,6 +151183,43 @@
                         output: t,
                         state: n
                     })
+                }
+            }
+        },
+        142990: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return u
+                }
+            }), n("789020");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("865427"),
+                a = n("853425"),
+                o = n("830121");
+            let l = RegExp("^" + o.DEVLINK_REGEX.source, o.DEVLINK_REGEX.flags);
+
+            function u(e) {
+                return {
+                    match: (e, t) => t.allowLinks && t.allowDevLinks ? l.exec(e) : null,
+                    parse: (e, t) => ({
+                        target: e,
+                        type: "devLink"
+                    }),
+                    react: (e, t, n) => {
+                        let o = e.target[0];
+                        if ((0, s.isManualBuildOverrideLink)(o)) return (0, i.jsxs)(i.Fragment, {
+                            children: [(0, i.jsx)("span", {
+                                children: o
+                            }), (0, i.jsx)(r.Fragment, {
+                                children: (0, i.jsx)(a.default, {
+                                    url: o
+                                }, o)
+                            }, n.key)]
+                        })
+                    },
+                    order: 6
                 }
             }
         },
@@ -157698,8 +157754,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712090904573",
-                                    build_number: "280932"
+                                    built_at: "1712091251017",
+                                    build_number: "280937"
                                 }
                             },
                             retries: 1
@@ -231748,7 +231804,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "926d017a8cfcba9397834df33856984b4739c78d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f04d8f4aff6e17717836be44d502d2d0c3810f3e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257852,7 +257908,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280932"
+                                build_number: "280937"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264997,7 +265053,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280932", "280932"), 10);
+                let s = parseInt((n = "280937", "280937"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291783,4 +291839,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.d6c2b17a05c0e7f4a3f1.js.map
+//# sourceMappingURL=97256.740039bb98348c03c980.js.map
