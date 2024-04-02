@@ -60959,60 +60959,6 @@ html .progress__00e29 {
     color: var(--interactive-active)
 }
 
-.scroller_f0edbf {
-    margin-left: -3px;
-    margin-right: -7px;
-    padding: 4px 0 4px 4px;
-    min-height: 24px;
-    max-height: 132px
-}
-
-.scroller_f0edbf.expanded__092b8 {
-    margin-bottom: 4px
-}
-
-.voiceUsers__12c6d {
-    display: grid;
-    grid-template-columns: repeat(8, 24px);
-    grid-gap: 4px;
-    gap: 4px;
-    box-sizing: border-box;
-    width: 100%
-}
-
-.expandButton__5f053 {
-    grid-row: 1;
-    grid-column: 8
-}
-
-.avatarContainer__9688b {
-    border-radius: 50%;
-    overflow: hidden
-}
-
-.avatar_c9fdd4 {
-    display: block;
-    width: 24px;
-    height: 24px;
-    background-size: 100%;
-    border-radius: 50%;
-    cursor: pointer
-}
-
-.speaking__33297 {
-    box-shadow: inset 0 0 0 2px var(--green-360), inset 0 0 0 3px var(--background-secondary)
-}
-
-.avatarIconOverlay_d064a5 {
-    padding: 4px;
-    background-color: hsl(var(--black-500-hsl)/.3);
-    color: var(--white-500)
-}
-
-.avatarIconRed_d6095e {
-    color: var(--red-400)
-}
-
 .container_e1958d {
     color: var(--header-primary);
     font-size: 14px;
@@ -61288,6 +61234,60 @@ html .progress__00e29 {
 .enable-forced-colors .button_b82d53.disabled_ecf44b,
 .enable-forced-colors .button_b82d53.fauxDisabled_daee54 {
     opacity: 1
+}
+
+.scroller_f0edbf {
+    margin-left: -3px;
+    margin-right: -7px;
+    padding: 4px 0 4px 4px;
+    min-height: 24px;
+    max-height: 132px
+}
+
+.scroller_f0edbf.expanded__092b8 {
+    margin-bottom: 4px
+}
+
+.voiceUsers__12c6d {
+    display: grid;
+    grid-template-columns: repeat(8, 24px);
+    grid-gap: 4px;
+    gap: 4px;
+    box-sizing: border-box;
+    width: 100%
+}
+
+.expandButton__5f053 {
+    grid-row: 1;
+    grid-column: 8
+}
+
+.avatarContainer__9688b {
+    border-radius: 50%;
+    overflow: hidden
+}
+
+.avatar_c9fdd4 {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    border-radius: 50%;
+    cursor: pointer
+}
+
+.speaking__33297 {
+    box-shadow: inset 0 0 0 2px var(--green-360), inset 0 0 0 3px var(--background-secondary)
+}
+
+.avatarIconOverlay_d064a5 {
+    padding: 4px;
+    background-color: hsl(var(--black-500-hsl)/.3);
+    color: var(--white-500)
+}
+
+.avatarIconRed_d6095e {
+    color: var(--red-400)
 }
 
 .qrCodeButtonContent__92936 {
@@ -131528,4 +131528,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ce181c6e1afc679c31c0.css.map*/
+/*# sourceMappingURL=99387.b2133f7e0ca36b2cb0d9.css.map*/
