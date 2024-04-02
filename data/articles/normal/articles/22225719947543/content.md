@@ -21,7 +21,7 @@
 </ul>
 <h1 id="h_01HT0TWT0CFSG0N8TMQQBFD0CJ">Active Discord Quests </h1>
 <h2 id="h_01HT0TWT0CA28YXKRXB7ZEB55A">THE FINALS</h2>
-<p class="wysiwyg-text-align-center"><span style="color: #333333; background-color: #ffffff;"><img src="https://support.discord.com/hc/article_attachments/22384480014615" width="624" height="293"></span></p>
+<p class="wysiwyg-text-align-center"><span style="color: #333333; background-color: #ffffff;"><img src="https://support.discord.com/hc/article_attachments/22511030347671" alt="Screen Shot 2024-04-02 at 10.29.05 AM.png"></span></p>
 <p><span class="wysiwyg-font-size-large"><strong>Promotion Terms &amp; Redemption Instructions</strong></span><strong><br></strong><strong>Quest Game: The Finals</strong><strong><br></strong><strong>Quest Name: Skill Issue Set  </strong><strong><br></strong><strong>Offer Details: </strong>Stream 15 minutes o f the Finals and receive a <strong>Skill Issue Set</strong></p>
 <p><strong>Who is Eligible: </strong><span style="background-color: #ffffff;">Available on all platforms where the Finals are available. Discord’s premium services are restricted in some regions. If you are unable to access the Gift Inventory, you are not eligible for this Quest or reward.</span><span style="color: #0000ff; background-color: #ffffff;"> </span></p>
 <p><strong>Availability Period: </strong>The <strong>Finals Quest</strong> can be accepted on Discord from <strong>April 2, 2024</strong> until <strong>April 16, 2024 </strong>(<strong>11:59pm UTC</strong>). Quest requirements must be completed during this period to receive the reward. Reward gift codes expire <strong>May 30, 2024</strong>.</p>
@@ -45,7 +45,7 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22384508458519" width="600" height="432"></p>
 <p>If you don't see the Quest bar, navigate to your <strong>User Settings &gt; Gift Inventory.</strong></p>
 <p>While there, you will see the active Discord Quests that are available to join. Press <strong>Accept Quest</strong> to join the quest.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22384508479895" width="624" height="380"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22511030367255" alt="Screen Shot 2024-04-02 at 10.26.58 AM.png"></p>
 <h2 id="h_01HT0TWT0CXN9NS9QW75S8DMHA">Stream the Game to Friends on Discord </h2>
 <h3 id="h_01HT0TWT0C9GF6MC7DFRZ3TDY8"><span style="color: #434343;">To complete a Quest requirement, you must stream the game to friends through the Discord desktop app. </span></h3>
 <p>Once you join a Quest, you will need to stream the game on Discord to at least one friend for a short period of time. Each Quest will have its own required time to stream and you can confirm how long you need to stream the game for in the <strong>Promotion Terms</strong>. </p>
