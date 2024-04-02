@@ -27,7 +27,8 @@
       "entryPointEnabled",
       "activitiesInTextEnabled",
       "desktopThrobberEnabled",
-      "showInOmniButtonMenu"
+      "showInOmniButtonMenu",
+      "showNewMobileLeaveUI"
     ]
   },
   "rollout": {

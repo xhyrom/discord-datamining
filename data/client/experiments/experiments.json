@@ -5436,13 +5436,15 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Enable Activities in Text, DM, and GDM channels"
+        "Treatment 1: Enable Activities in Text, DM, and GDM channels",
+        "Treatment 2: Enable Activities in Text, DM, and GDM channels with new mobile leave UI"
       ],
       "hash": 1295440499,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
@@ -9428,7 +9430,8 @@
         "entryPointEnabled",
         "activitiesInTextEnabled",
         "desktopThrobberEnabled",
-        "showInOmniButtonMenu"
+        "showInOmniButtonMenu",
+        "showNewMobileLeaveUI"
       ]
     },
     "rollout": {
