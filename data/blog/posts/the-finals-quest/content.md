@@ -2,6 +2,9 @@
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <p>The newest season of THE FINALS is underway as we speak (or, type?), and we’re doing something special with our friends at Embark Studios in celebration of the new mode, map, ability, weapons, and gadgets that have been added! <br><br><strong>For the next two weeks, you can get your hands on the Discord-exclusive “Skill Issue” set for THE FINALS by completing a Quest</strong>. Desktop players can head into their Gift inventory (User Settings &gt; Gift Inventory) to get started, and thanks to the game’s cross-progression feature, you can use your newly-earned Skill Issue set anywhere you play THE FINALS after redeeming your code.&nbsp;</p>
+            <figure style="padding-bottom:56.206088992974244%" class="w-richtext-align-fullwidth w-richtext-figure-type-video">
+                <div><iframe allowfullscreen="true" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/-dsnSiREE4s" title="THE FINALS | Discord Quest | Season 2"></iframe></div>
+            </figure>
             <p>We’d tell a whole story about how cool this set looks, but you’re probably itching to get your new cosmetic set ASAP. Alright alright, let’s dig right in.</p>
         </div>
     </div>
