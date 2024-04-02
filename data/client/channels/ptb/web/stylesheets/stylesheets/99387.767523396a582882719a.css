@@ -86420,12 +86420,14 @@ html .tabBadge_ff691d {
 
 .attributionLogos__35ea7 {
     display: flex;
-    height: 16px;
-    gap: 4px;
+    align-items: center;
+    gap: 12px;
     color: var(--white)
 }
 
 .attributionLogos__35ea7 img {
+    height: 16px;
+    margin: 0 4px;
     -o-object-fit: contain;
     object-fit: contain
 }
@@ -131513,4 +131515,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.b131b3e92d3fe25d1746.css.map*/
+/*# sourceMappingURL=99387.767523396a582882719a.css.map*/
