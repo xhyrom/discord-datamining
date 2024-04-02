@@ -78214,7 +78214,7 @@ input::-webkit-inner-spin-button {
     overflow: hidden;
     height: calc(90vh - 60px);
     width: calc(100vw - 60px);
-    max-width: 1124px;
+    max-width: 1028px;
     background-color: var(--background-floating)
 }
 
@@ -78223,6 +78223,7 @@ input::-webkit-inner-spin-button {
     justify-content: space-between;
     align-items: center;
     color: var(--interactive-active);
+    background: var(--background-tertiary);
     padding: 12px 16px
 }
 
@@ -131512,4 +131513,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.dc4689cc862aed985652.css.map*/
+/*# sourceMappingURL=99387.b131b3e92d3fe25d1746.css.map*/
