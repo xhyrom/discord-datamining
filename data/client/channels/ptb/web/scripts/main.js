@@ -25732,12 +25732,6 @@
             var i = n("129426");
             n.es(i, t)
         },
-        5297: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var i = n("851911");
-            n.es(i, t)
-        },
         321096: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -36669,7 +36663,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280761", ", Version Hash: ").concat("3e9f674bb1de5e45c4f8dff09eb310ff11b26a3b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280772", ", Version Hash: ").concat("abb2f3394c752da4f444bcf3a9d9e231c47904b6")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85574,8 +85568,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280761", "280761"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280761")), t = 0), t
+                let t = parseInt((e = "280772", "280772"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280772")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107571,8 +107565,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280761",
-                    versionHash: "3e9f674bb1de5e45c4f8dff09eb310ff11b26a3b"
+                    buildNumber: "280772",
+                    versionHash: "abb2f3394c752da4f444bcf3a9d9e231c47904b6"
                 }
             }
             n.r(t), n.d(t, {
@@ -157779,8 +157773,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712071451213",
-                                    build_number: "280761"
+                                    built_at: "1712072706183",
+                                    build_number: "280772"
                                 }
                             },
                             retries: 1
@@ -195951,8 +195945,8 @@
                 a = n.n(s),
                 o = n("442837"),
                 l = n("692547"),
-                u = n("420166"),
-                d = n("5297"),
+                u = n("882485"),
+                d = n("420166"),
                 _ = n("481060"),
                 c = n("812206"),
                 E = n("566454"),
@@ -196009,9 +196003,9 @@
                                 children: e => (0, i.jsx)("div", {
                                     className: m.sharedGameIcon,
                                     ...e,
-                                    children: (0, i.jsx)(d.SparklesIcon, {
-                                        height: 16,
-                                        width: 16,
+                                    children: (0, i.jsx)(u.CircleInformationIcon, {
+                                        height: 12,
+                                        width: 12,
                                         color: l.default.colors.INTERACTIVE_MUTED
                                     })
                                 })
@@ -196022,7 +196016,7 @@
                             children: a
                         }), t.isNew && (0, i.jsxs)("div", {
                             className: m.newIcon,
-                            children: [(0, i.jsx)(u.NewUserIcon, {
+                            children: [(0, i.jsx)(d.NewUserIcon, {
                                 height: 12,
                                 width: 12,
                                 color: l.default.colors.STATUS_POSITIVE
@@ -231729,7 +231723,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3e9f674bb1de5e45c4f8dff09eb310ff11b26a3b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "abb2f3394c752da4f444bcf3a9d9e231c47904b6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257825,7 +257819,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280761"
+                                build_number: "280772"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264970,7 +264964,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280761", "280761"), 10);
+                let s = parseInt((n = "280772", "280772"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -270636,40 +270630,6 @@
                         d: "M7.05 3.32a1 1 0 0 1 1.9-.64l1 3a1 1 0 0 1-1.9.64l-1-3ZM22.97 9.76a1 1 0 0 0-1.21-.73l-4 1a1 1 0 1 0 .48 1.94l4-1a1 1 0 0 0 .73-1.21ZM20.68 16.95a1 1 0 0 0 .64-1.9l-3-1a1 1 0 0 0-.64 1.9l3 1Z",
                         className: o
                     })]
-                })
-            }
-        },
-        851911: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                SparklesIcon: function() {
-                    return a
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("692547"),
-                s = n("331595");
-            let a = e => {
-                let {
-                    width: t = 24,
-                    height: n = 24,
-                    color: a = r.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: o = "",
-                    ...l
-                } = e;
-                return (0, i.jsx)("svg", {
-                    ...(0, s.default)(l),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: n,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, i.jsx)("path", {
-                        fill: "string" == typeof a ? a : a.css,
-                        d: "M18.14 2.8a1.21 1.21 0 0 0-2.28 0l-.5 1.37a2 2 0 0 1-1.19 1.18l-1.38.51a1.21 1.21 0 0 0 0 2.28l1.38.5a2 2 0 0 1 1.18 1.19l.51 1.38a1.21 1.21 0 0 0 2.28 0l.5-1.38a2 2 0 0 1 1.19-1.18l1.38-.51a1.21 1.21 0 0 0 0-2.28l-1.38-.5a2 2 0 0 1-1.18-1.19l-.51-1.38ZM10.6 9.11a1.7 1.7 0 0 0-3.2 0l-.84 2.27a2 2 0 0 1-1.18 1.18l-2.27.85a1.7 1.7 0 0 0 0 3.18l2.27.85a2 2 0 0 1 1.18 1.18l.85 2.27a1.7 1.7 0 0 0 3.18 0l.85-2.27a2 2 0 0 1 1.18-1.18l2.27-.85a1.7 1.7 0 0 0 0-3.18l-2.27-.85a2 2 0 0 1-1.18-1.18l-.85-2.27Z",
-                        className: o
-                    })
                 })
             }
         },
@@ -291752,4 +291712,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.d3a7a76dc4cce5c3926f.js.map
+//# sourceMappingURL=97256.398452a0ec03a92c3a21.js.map
