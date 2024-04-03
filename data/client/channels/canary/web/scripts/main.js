@@ -36549,7 +36549,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281102", ", Version Hash: ").concat("9aa912647b5f541517399490d29067ce9a9267c4")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281117", ", Version Hash: ").concat("e46c9212576216dfc24909e418b9043c975dab85")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85505,8 +85505,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281102", "281102"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281102")), t = 0), t
+                let t = parseInt((e = "281117", "281117"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281117")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107516,8 +107516,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281102",
-                    versionHash: "9aa912647b5f541517399490d29067ce9a9267c4"
+                    buildNumber: "281117",
+                    versionHash: "e46c9212576216dfc24909e418b9043c975dab85"
                 }
             }
             n.r(t), n.d(t, {
@@ -157766,8 +157766,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712110170406",
-                                    build_number: "281102"
+                                    built_at: "1712151743406",
+                                    build_number: "281117"
                                 }
                             },
                             retries: 1
@@ -193411,6 +193411,9 @@
                 },
                 trackUserProfileBadgePressed: function() {
                     return p
+                },
+                trackUserProfileRecentGamesViewed: function() {
+                    return R
                 }
             }), n("653041");
             var i = n("367907"),
@@ -193571,6 +193574,32 @@
                         ...m(t),
                         location_stack: s,
                         badge: o
+                    })
+                },
+                R = e => {
+                    let {
+                        userId: t,
+                        guildId: n,
+                        channelId: r,
+                        analyticsLocations: s,
+                        layout: a,
+                        applicationIds: o,
+                        newApplicationIds: l,
+                        sharedApplicationIds: d
+                    } = e;
+                    u.default.track(I.AnalyticEvents.USER_PROFILE_RECENT_GAMES_VIEWED, {
+                        ...(0, i.collectGuildAnalyticsMetadata)(n),
+                        ...(0, i.collectChannelAnalyticsMetadataFromId)(r),
+                        ...A({
+                            layout: a,
+                            userId: t,
+                            guildId: n
+                        }),
+                        ...m(t),
+                        location_stack: s,
+                        profile_application_ids: o,
+                        profile_new_applications_ids: l,
+                        profile_shared_applications_ids: d
                     })
                 }
         },
@@ -195972,49 +196001,52 @@
             "use strict";
             n.r(t), n.d(t, {
                 UserProfileRecentGamesSection: function() {
-                    return p
+                    return g
                 },
                 UserProfileRecentGamesThemedSection: function() {
-                    return R
+                    return L
                 }
-            }), n("47120");
+            }), n("47120"), n("653041");
             var i = n("735250"),
                 r = n("470079"),
                 s = n("803997"),
                 a = n.n(s),
                 o = n("442837"),
                 l = n("692547"),
-                u = n("952216"),
-                d = n("420166"),
-                _ = n("481060"),
-                c = n("812206"),
-                E = n("566454"),
-                I = n("32966"),
-                T = n("314897"),
-                f = n("768581"),
-                S = n("747074"),
-                h = n("659101"),
-                A = n("689938"),
-                m = n("458186");
+                u = n("622535"),
+                d = n("952216"),
+                _ = n("420166"),
+                c = n("481060"),
+                E = n("812206"),
+                I = n("566454"),
+                T = n("32966"),
+                f = n("314897"),
+                S = n("768581"),
+                h = n("785717"),
+                A = n("221292"),
+                m = n("747074"),
+                N = n("659101"),
+                O = n("689938"),
+                p = n("458186");
 
-            function N(e) {
+            function R(e) {
                 let {
                     game: t,
                     isSharedGame: n
-                } = e, s = (0, o.useStateFromStores)([c.default], () => c.default.getApplication(t.applicationId)), a = r.useMemo(() => null == t.duration || 0 === t.duration ? (0, E.getLastPlayedTimestamp)(t, !1) : "".concat((0, E.getLastPlayedTimestamp)(t, !0), " — ").concat((0, E.getTimePlayedLastWeek)(t)), [t]), I = r.useRef(null), [T, S] = r.useState(!1);
+                } = e, s = (0, o.useStateFromStores)([E.default], () => E.default.getApplication(t.applicationId)), a = r.useMemo(() => null == t.duration || 0 === t.duration ? (0, I.getLastPlayedTimestamp)(t, !1) : "".concat((0, I.getLastPlayedTimestamp)(t, !0), " — ").concat((0, I.getTimePlayedLastWeek)(t)), [t]), u = r.useRef(null), [T, f] = r.useState(!1);
                 if (r.useEffect(() => {
-                        let e = I.current;
-                        null != e && null != e.offsetWidth && null != e.scrollWidth && S(e.offsetWidth < e.scrollWidth)
+                        let e = u.current;
+                        null != e && null != e.offsetWidth && null != e.scrollWidth && f(e.offsetWidth < e.scrollWidth)
                     }, []), null == s) return null;
-                let h = f.default.getApplicationIconURL({
+                let h = S.default.getApplicationIconURL({
                     id: s.id,
                     icon: s.icon,
                     size: 40
                 });
                 return (0, i.jsxs)("div", {
-                    className: m.recentGameContainer,
+                    className: p.recentGameContainer,
                     children: [(0, i.jsx)("div", {
-                        className: m.recentGameIcon,
+                        className: p.recentGameIcon,
                         children: null != h && (0, i.jsx)("img", {
                             alt: "",
                             "aria-hidden": !0,
@@ -196023,116 +196055,142 @@
                             height: 40
                         })
                     }), (0, i.jsxs)("div", {
-                        className: m.recentGameDetails,
+                        className: p.recentGameDetails,
                         children: [(0, i.jsxs)("div", {
-                            className: m.recentGameTitleContainer,
-                            children: [(0, i.jsx)(_.Tooltip, {
+                            className: p.recentGameTitleContainer,
+                            children: [(0, i.jsx)(c.Tooltip, {
                                 text: s.name,
-                                color: _.Tooltip.Colors.PRIMARY,
+                                color: c.Tooltip.Colors.PRIMARY,
                                 shouldShow: T,
                                 children: e => (0, i.jsx)("span", {
-                                    ref: I,
+                                    ref: u,
                                     ...e,
-                                    className: m.recentGameTitle,
+                                    className: p.recentGameTitle,
                                     children: s.name
                                 })
-                            }), n && (0, i.jsx)(_.Tooltip, {
-                                text: A.default.Messages.USER_RECENT_GAMES_YOU_BOTH_PLAY,
-                                color: _.Tooltip.Colors.PRIMARY,
+                            }), n && (0, i.jsx)(c.Tooltip, {
+                                text: O.default.Messages.USER_RECENT_GAMES_YOU_BOTH_PLAY,
+                                color: c.Tooltip.Colors.PRIMARY,
                                 children: e => (0, i.jsx)("div", {
-                                    className: m.sharedGameIcon,
+                                    className: p.sharedGameIcon,
                                     ...e,
-                                    children: (0, i.jsx)(u.DoubleCheckmarkLargeIcon, {
+                                    children: (0, i.jsx)(d.DoubleCheckmarkLargeIcon, {
                                         height: 14,
                                         width: 14,
                                         color: l.default.colors.INTERACTIVE_MUTED
                                     })
                                 })
                             })]
-                        }), (0, i.jsx)(_.Text, {
+                        }), (0, i.jsx)(c.Text, {
                             variant: "text-sm/normal",
                             color: "header-secondary",
                             children: a
                         }), t.isNew && (0, i.jsxs)("div", {
-                            className: m.newIcon,
-                            children: [(0, i.jsx)(d.NewUserIcon, {
+                            className: p.newIcon,
+                            children: [(0, i.jsx)(_.NewUserIcon, {
                                 height: 12,
                                 width: 12,
                                 color: l.default.colors.STATUS_POSITIVE
-                            }), (0, i.jsx)(_.Text, {
+                            }), (0, i.jsx)(c.Text, {
                                 variant: "text-xs/normal",
                                 color: "status-positive",
-                                children: A.default.Messages.NEW_TO_THIS_GAME
+                                children: O.default.Messages.NEW_TO_THIS_GAME
                             })]
                         })]
                     })]
                 })
             }
-            let O = r.memo(function(e) {
+            let C = r.memo(function(e) {
                 let {
                     userId: t,
                     containerClassName: n,
-                    wrapChildren: r
+                    wrapChildren: s
                 } = e, {
-                    recentGames: s,
-                    currentUserApplicationIds: o,
-                    isFetching: l,
-                    isError: u
-                } = (0, I.useUserRecentGames)(t);
-                if (l || u || null == s || 0 === s.length) return null;
-                let d = (0, i.jsx)("div", {
-                    className: a()(m.recentGames, n),
-                    children: null == s ? void 0 : s.map(e => {
-                        var n, r, s;
-                        return (0, i.jsx)(N, {
-                            game: e,
-                            isSharedGame: (n = t, r = o, s = e.applicationId, n !== T.default.getId() && r.has(s))
-                        }, e.lastSessionId)
+                    recentGames: o,
+                    currentUserApplicationIds: l,
+                    isFetching: d,
+                    isError: _
+                } = (0, T.useUserRecentGames)(t), {
+                    trackUserProfileAction: c,
+                    ...E
+                } = (0, h.useUserProfileAnalyticsContext)(), I = d || _ || null == o || 0 === o.length, [S, m] = r.useState(!1), [N, O] = r.useState(!1);
+                if (r.useEffect(() => {
+                        if (I || S || null == l || !N) return;
+                        m(!0);
+                        let e = [],
+                            t = [],
+                            n = [];
+                        o.forEach(i => {
+                            let {
+                                applicationId: r,
+                                isNew: s
+                            } = i;
+                            e.push(r), s && t.push(r), l.has(r) && n.push(r)
+                        }), (0, A.trackUserProfileRecentGamesViewed)({
+                            ...E,
+                            applicationIds: e,
+                            newApplicationIds: t,
+                            sharedApplicationIds: n
+                        })
+                    }, [l, I, o, m, S, E, N]), I) return null;
+                let C = (0, i.jsx)(u.VisibilitySensor, {
+                    onChange: O,
+                    threshold: .25,
+                    active: !S,
+                    children: (0, i.jsx)("div", {
+                        className: a()(p.recentGames, n),
+                        children: null == o ? void 0 : o.map(e => {
+                            var n, r, s;
+                            return (0, i.jsx)(R, {
+                                game: e,
+                                isSharedGame: (n = t, r = l, s = e.applicationId, n !== f.default.getId() && null != r && r.has(s))
+                            }, e.lastSessionId)
+                        })
                     })
                 });
-                return null != r ? (0, i.jsx)(i.Fragment, {
-                    children: r(d)
-                }) : d
+                return null != s ? (0, i.jsx)(i.Fragment, {
+                    children: s(C)
+                }) : C
             });
 
-            function p(e) {
+            function g(e) {
                 let {
                     userId: t,
                     containerClassName: n
-                } = e, s = r.useCallback(e => (0, i.jsxs)(h.default, {
-                    children: [(0, i.jsx)(_.Heading, {
+                } = e, s = r.useCallback(e => (0, i.jsxs)(N.default, {
+                    children: [(0, i.jsx)(c.Heading, {
                         variant: "eyebrow",
-                        className: m.recentGamesHeading,
-                        children: A.default.Messages.RECENT_GAMES
+                        className: p.recentGamesHeading,
+                        children: O.default.Messages.RECENT_GAMES
                     }), e]
                 }), []);
-                return (0, i.jsx)(O, {
+                return (0, i.jsx)(C, {
                     userId: t,
                     containerClassName: n,
                     wrapChildren: s
                 })
             }
 
-            function R(e) {
+            function L(e) {
                 let {
                     userId: t,
                     containerClassName: n
-                } = e, s = r.useCallback(e => (0, i.jsx)(S.default.Inner, {
-                    children: (0, i.jsxs)(h.default, {
-                        children: [(0, i.jsx)(_.Heading, {
+                } = e, s = r.useCallback(e => (0, i.jsx)(m.default.Inner, {
+                    children: (0, i.jsxs)(N.default, {
+                        children: [(0, i.jsx)(c.Heading, {
                             variant: "eyebrow",
-                            className: m.recentGamesHeading,
-                            children: A.default.Messages.RECENT_GAMES
+                            className: p.recentGamesHeading,
+                            children: O.default.Messages.RECENT_GAMES
                         }), e]
                     })
                 }), []);
-                return (0, i.jsx)(O, {
+                return (0, i.jsx)(C, {
                     userId: t,
                     containerClassName: n,
                     wrapChildren: s
                 })
             }
-            t.default = O
+            t.default = C
         },
         841040: function(e, t, n) {
             "use strict";
@@ -198718,13 +198776,13 @@
             }
             async function _(e, t, n) {
                 let i = o.default.getLastFetchTimestamp(e);
-                if (!(null != i && Date.now() - i < u) && (r.default.dispatch({
-                        type: "USER_RECENT_GAMES_FETCH_START",
-                        userId: e
-                    }), await d(e, t), n)) {
-                    let n = s.default.getId(),
-                        i = o.default.getLastFetchTimestamp(n);
-                    n !== e && null == i && await d(n, t)
+                if (!(null != i && Date.now() - i < u)) {
+                    if (n) {
+                        let n = s.default.getId(),
+                            i = o.default.getLastFetchTimestamp(n);
+                        n !== e && null == i && await d(n, t)
+                    }
+                    await d(e, t)
                 }
             }
             t.default = {
@@ -198848,29 +198906,28 @@
                 c = n("314897"),
                 E = n("77498"),
                 I = n("709054");
-            let T = new Set,
-                f = new Map,
-                S = new Set,
-                h = new Set;
-            class A extends(i = d.default.Store) {
+            let T = new Map,
+                f = new Set,
+                S = new Set;
+            class h extends(i = d.default.Store) {
                 getRecentGames(e) {
                     var t;
-                    return null === (t = f.get(e)) || void 0 === t ? void 0 : t.recentGames
+                    return null === (t = T.get(e)) || void 0 === t ? void 0 : t.recentGames
                 }
                 getLastFetchTimestamp(e) {
                     var t;
-                    return null === (t = f.get(e)) || void 0 === t ? void 0 : t.lastFetchTimestampMs
+                    return null === (t = T.get(e)) || void 0 === t ? void 0 : t.lastFetchTimestampMs
                 }
                 isFetching(e) {
-                    return S.has(e)
+                    return f.has(e)
                 }
                 isError(e) {
-                    return h.has(e)
+                    return S.has(e)
                 }
                 getCurrentUserApplicationIds() {
                     let e = c.default.getId(),
-                        t = f.get(e);
-                    return null == t ? T : new Set(t.recentGames.map(e => {
+                        t = T.get(e);
+                    return null == t ? null : new Set(t.recentGames.map(e => {
                         let {
                             applicationId: t
                         } = e;
@@ -198878,27 +198935,27 @@
                     }))
                 }
             }
-            a = "UserRecentGamesStore", (s = "displayName") in(r = A) ? Object.defineProperty(r, s, {
+            a = "UserRecentGamesStore", (s = "displayName") in(r = h) ? Object.defineProperty(r, s, {
                 value: a,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : r[s] = a, t.default = new A(_.default, {
+            }) : r[s] = a, t.default = new h(_.default, {
                 CONNECTION_OPEN: function() {
-                    f = new Map, S = new Set, h = new Set
+                    T = new Map, f = new Set, S = new Set
                 },
                 USER_RECENT_GAMES_FETCH_START: function(e) {
                     let {
                         userId: t
                     } = e;
-                    h.delete(t), S.add(t)
+                    S.delete(t), f.add(t)
                 },
                 USER_RECENT_GAMES_FETCH_SUCCESS: function(e) {
                     let {
                         userId: t,
                         recentGames: n
                     } = e;
-                    S.delete(t), f.set(t, {
+                    f.delete(t), T.set(t, {
                         recentGames: n.map(e => ({
                             applicationId: e.application.id,
                             duration: e.duration,
@@ -198912,7 +198969,7 @@
                     let {
                         userId: t
                     } = e;
-                    S.delete(t), h.add(t)
+                    f.delete(t), S.add(t)
                 },
                 USER_RECENT_GAMES_UPDATE_LOCAL: function(e) {
                     let {
@@ -198922,7 +198979,7 @@
                     if (null == E.default.getDetectableGame(t) || n < u.UserGameApplicationSessionDuration.MIN_DURATION_SECS) return !1;
                     ! function(e, t) {
                         var n, i;
-                        let r = f.get(e);
+                        let r = T.get(e);
                         if (null == r) return;
                         let s = [],
                             a = null;
@@ -198935,7 +198992,7 @@
                             lastSessionId: I.default.compare(n.lastSessionId, i.lastSessionId) > 0 ? n.lastSessionId : i.lastSessionId,
                             isNew: n.isNew || i.isNew
                         });
-                        f.set(e, {
+                        T.set(e, {
                             lastFetchTimestampMs: Date.now(),
                             recentGames: [o, ...s]
                         })
@@ -231839,7 +231896,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9aa912647b5f541517399490d29067ce9a9267c4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e46c9212576216dfc24909e418b9043c975dab85"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257943,7 +258000,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281102"
+                                build_number: "281117"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265088,7 +265145,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281102", "281102"), 10);
+                let s = parseInt((n = "281117", "281117"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291874,4 +291931,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.747dae89aaff942ae62f.js.map
+//# sourceMappingURL=97256.c45b6faab178cfb5dcd4.js.map
