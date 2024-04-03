@@ -7236,7 +7236,6 @@
         591373: function(e) {
             "use strict";
             e.exports = {
-                buttons: "buttons__15cf3",
                 container: "container__8aa3d",
                 formContainer: "formContainer_f90333"
             }
@@ -10210,6 +10209,12 @@
                 content: "content__3cb43",
                 sidebar: "sidebar_fea138",
                 sidebarSeparator: "sidebarSeparator_d6fd29"
+            }
+        },
+        51011: function(e) {
+            "use strict";
+            e.exports = {
+                buttons: "buttons__836c3"
             }
         },
         589247: function(e) {
