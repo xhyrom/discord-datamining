@@ -7427,69 +7427,6 @@
   },
   {
     "data": {
-      "kind": "guild",
-      "id": "2023-11_enable_hang_status",
-      "label": "Hang Statuses",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: enable hang statuses with no default",
-        "Treatment 2: enable hang statuses with default",
-        "Treatment 3: enable hang statuses with channel topic"
-      ],
-      "hash": 1033614739,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3
-      ],
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false,
-      "config_keys": [
-        "enableHangStatus",
-        "setDefaultStatus",
-        "allowChannelTopic"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 5,
-      "overrides": {
-        "1": [
-          "1151305620369199144",
-          "1136423398608744588",
-          "840296607785287763",
-          "495413339912929290"
-        ],
-        "3": [
-          "1095810146761973830",
-          "1199152226233483358"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
       "kind": "user",
       "id": "2023-11_friend_finder_sync",
       "label": "Friend Finder Sync",
@@ -8710,33 +8647,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-01_unreads",
-      "label": "Unreads Experiment (grey-dot mode)",
-      "description": [
-        "Not Eligible",
-        "Treatment 0: Control",
-        "Treatment 1: Auto open migration",
-        "Treatment 2: Manually open migration"
-      ],
-      "hash": 2883062585,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "logExposure",
-        "autoOpen",
-        "manuallyOpen"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2024-01_uu_forced_migration",
       "label": "Unique Username Forced Migration UI",
       "description": [
@@ -8808,6 +8718,110 @@
   {
     "data": {
       "kind": "user",
+      "id": "2024-02_all_marketing_page_optimization_phase_1",
+      "label": "Marketing Page Optimizations - Phase 1",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 336769699,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-02_safety_hub_guild_violation_in_app_appeals",
+      "label": "Safety Hub Guild Violation In App Appeals",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Allow guild violations to be applied using the new appeals ingestion flow"
+      ],
+      "hash": 668094544,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 747043176,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {},
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-01_unreads",
+      "label": "Unreads Experiment (grey-dot mode)",
+      "description": [
+        "Not Eligible",
+        "Treatment 0: Control",
+        "Treatment 1: Auto open migration",
+        "Treatment 2: Manually open migration"
+      ],
+      "hash": 2883062585,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "logExposure",
+        "autoOpen",
+        "manuallyOpen"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2024-02_activity_react_reply",
       "label": "Activity React Reply",
       "description": [
@@ -8830,6 +8844,47 @@
   },
   {
     "data": {
+      "kind": "guild",
+      "hash": 1443876045,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "959544916848029716",
+          "966095003136983121",
+          "968232043714588703",
+          "959195654813532202",
+          "949396043743789116",
+          "954473884273496124",
+          "1042148168726487101"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
       "kind": "user",
       "id": "2024-02_activityiframemountfromgatewayupdate",
       "label": "mount activity iframe in response to gateway update",
@@ -8839,29 +8894,6 @@
         "Treatment 1: enabled"
       ],
       "hash": 1678972737,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-02_all_marketing_page_optimization_phase_1",
-      "label": "Marketing Page Optimizations - Phase 1",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 336769699,
       "buckets": [
         -1,
         0,
@@ -8962,6 +8994,29 @@
   {
     "data": {
       "kind": "user",
+      "id": "2024-02_clans",
+      "label": "Clans",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable creation of clan guilds"
+      ],
+      "hash": 3992461313,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enableClanCreation"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2024-02_clips_quality_decoupling",
       "label": "Clips quality decoupling",
       "description": [
@@ -8979,6 +9034,54 @@
       "aa_mode": false,
       "config_keys": [
         "allowQualityDecoupling"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-02_collectibles_anime_v2_marketing",
+      "label": "Anime V2 marketing Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables coachtip"
+      ],
+      "hash": 3989121258,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-02_collectibles_shop_elements_marketing",
+      "label": "Collectibles Shop Marketing Experiment - Elements",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables the plain variant of Elements marketing toolip",
+        "Treatment 2: Enables the coachtip variant of Elements marketing toolip"
+      ],
+      "hash": 3290168049,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
       ]
     }
   },
@@ -9034,6 +9137,29 @@
   {
     "data": {
       "kind": "user",
+      "id": "2024-02_family_center_vc_join",
+      "label": "Family Center VC Join",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable VC Join in Family Center"
+      ],
+      "hash": 3569895137,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2024-02_h265_for_windows_with_amd",
       "label": "Test H.265 on Windows with the AMD hardware encoder",
       "description": [
@@ -9051,6 +9177,29 @@
       "aa_mode": false,
       "config_keys": [
         "signalH265SupportAMD"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-02_hide_member_list_activities",
+      "label": "Hide member list activities",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled (hide activities)"
+      ],
+      "hash": 1585236473,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
       ]
     }
   },
@@ -9218,29 +9367,6 @@
       "aa_mode": false,
       "config_keys": [
         "nvEnableNewPresets"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-02_safety_hub_guild_violation_in_app_appeals",
-      "label": "Safety Hub Guild Violation In App Appeals",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Allow guild violations to be applied using the new appeals ingestion flow"
-      ],
-      "hash": 668094544,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
       ]
     }
   },
@@ -9980,12 +10106,33 @@
   {
     "data": {
       "kind": "guild",
-      "hash": 747043176,
+      "id": "2024-04_hang_status_v2",
+      "label": "Hang Statuses - V2 experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: enable hang statuses with no default",
+        "Treatment 2: enable hang statuses with default",
+        "Treatment 3: enable hang statuses with channel topic"
+      ],
+      "hash": 1512150978,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
       "holdout": {
         "name": null,
         "bucket": null
       },
-      "aa_mode": false
+      "aa_mode": false,
+      "config_keys": [
+        "enableHangStatus",
+        "setDefaultStatus",
+        "allowChannelTopic"
+      ]
     },
     "rollout": {
       "populations": [
@@ -10004,166 +10151,19 @@
         }
       ],
       "revision": 0,
-      "overrides": {},
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 1443876045,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
       "overrides": {
         "1": [
-          "959544916848029716",
-          "966095003136983121",
-          "968232043714588703",
-          "959195654813532202",
-          "949396043743789116",
-          "954473884273496124",
-          "1042148168726487101"
+          "1151305620369199144",
+          "1136423398608744588",
+          "840296607785287763",
+          "495413339912929290"
+        ],
+        "3": [
+          "1095810146761973830",
+          "1199152226233483358"
         ]
       },
       "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-02_clans",
-      "label": "Clans",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable creation of clan guilds"
-      ],
-      "hash": 3992461313,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enableClanCreation"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-02_collectibles_anime_v2_marketing",
-      "label": "Anime V2 marketing Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables coachtip"
-      ],
-      "hash": 3989121258,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-02_collectibles_shop_elements_marketing",
-      "label": "Collectibles Shop Marketing Experiment - Elements",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables the plain variant of Elements marketing toolip",
-        "Treatment 2: Enables the coachtip variant of Elements marketing toolip"
-      ],
-      "hash": 3290168049,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-02_family_center_vc_join",
-      "label": "Family Center VC Join",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable VC Join in Family Center"
-      ],
-      "hash": 3569895137,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-02_hide_member_list_activities",
-      "label": "Hide member list activities",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled (hide activities)"
-      ],
-      "hash": 1585236473,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
     }
   },
   {

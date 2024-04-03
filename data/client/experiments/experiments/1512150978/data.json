@@ -1,8 +1,8 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-11_enable_hang_status",
-    "label": "Hang Statuses",
+    "id": "2024-04_hang_status_v2",
+    "label": "Hang Statuses - V2 experiment",
     "description": [
       "Not Eligible",
       "Control Bucket",
@@ -10,7 +10,7 @@
       "Treatment 2: enable hang statuses with default",
       "Treatment 3: enable hang statuses with channel topic"
     ],
-    "hash": 1033614739,
+    "hash": 1512150978,
     "buckets": [
       -1,
       0,
@@ -45,7 +45,7 @@
         "filters": []
       }
     ],
-    "revision": 5,
+    "revision": 0,
     "overrides": {
       "1": [
         "1151305620369199144",
