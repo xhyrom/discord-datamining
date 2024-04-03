@@ -36543,7 +36543,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281369", ", Version Hash: ").concat("9144101ec0a169f0793606088c39079971c31cad")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281378", ", Version Hash: ").concat("82b84f7cb058c4c928f574525fdc5706e4f610d3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85521,8 +85521,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281369", "281369"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281369")), t = 0), t
+                let t = parseInt((e = "281378", "281378"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281378")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107532,8 +107532,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281369",
-                    versionHash: "9144101ec0a169f0793606088c39079971c31cad"
+                    buildNumber: "281378",
+                    versionHash: "82b84f7cb058c4c928f574525fdc5706e4f610d3"
                 }
             }
             n.r(t), n.d(t, {
@@ -142567,20 +142567,18 @@
                     guildId: i,
                     updateRsvp: r,
                     openRsvpPicker: s,
-                    onRsvp: _,
-                    canRsvpToRecurrences: E = !0
-                } = e, I = a.default.getGuildScheduledEvent(t);
-                if (null == I) return;
-                let T = (0, o.getEventException)(n, t),
+                    onRsvp: _
+                } = e, E = a.default.getGuildScheduledEvent(t);
+                if (null == E) return;
+                let I = (0, o.getEventException)(n, t),
                     {
-                        startTime: f
-                    } = (0, l.getEventSchedule)(I, n),
-                    S = (null == I ? void 0 : I.scheduled_start_time) != null ? (0, u.getRecurrenceStatus)(T, f, new Date(null == I ? void 0 : I.scheduled_start_time)) : null,
-                    h = null != S && d.GuildScheduledEventStatusDone.has(S),
-                    A = E && !h ? null != n ? n : (0, u.getNextRecurrenceIdInEvent)(I) : null,
-                    m = c(I.id),
-                    N = c(I.id, A);
-                null == A ? (r(t, null, i, null != m ? d.GuildScheduledEventUserResponses.UNINTERESTED : d.GuildScheduledEventUserResponses.INTERESTED), null == _ || _()) : null != N ? (r(t, A, i, null != m ? d.GuildScheduledEventUserResponses.INTERESTED : d.GuildScheduledEventUserResponses.UNINTERESTED), null == _ || _()) : s(I, A)
+                        startTime: T
+                    } = (0, l.getEventSchedule)(E, n),
+                    f = (null == E ? void 0 : E.scheduled_start_time) != null ? (0, u.getRecurrenceStatus)(I, T, new Date(null == E ? void 0 : E.scheduled_start_time)) : null,
+                    S = null != f && d.GuildScheduledEventStatusDone.has(f) ? null : null != n ? n : (0, u.getNextRecurrenceIdInEvent)(E),
+                    h = c(E.id),
+                    A = c(E.id, S);
+                null == S ? (r(t, null, i, null != h ? d.GuildScheduledEventUserResponses.UNINTERESTED : d.GuildScheduledEventUserResponses.INTERESTED), null == _ || _()) : null != A ? (r(t, S, i, null != h ? d.GuildScheduledEventUserResponses.INTERESTED : d.GuildScheduledEventUserResponses.UNINTERESTED), null == _ || _()) : s(E, S)
             }(i = r || (r = {}))[i.SERIES = 0] = "SERIES", i[i.RECURRENCE = 1] = "RECURRENCE"
         },
         854698: function(e, t, n) {
@@ -157782,8 +157780,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712181290195",
-                                    build_number: "281369"
+                                    built_at: "1712182461926",
+                                    build_number: "281378"
                                 }
                             },
                             retries: 1
@@ -231930,7 +231928,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9144101ec0a169f0793606088c39079971c31cad"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "82b84f7cb058c4c928f574525fdc5706e4f610d3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258034,7 +258032,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281369"
+                                build_number: "281378"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265179,7 +265177,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281369", "281369"), 10);
+                let s = parseInt((n = "281378", "281378"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291927,4 +291925,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.47241684585a43eefce4.js.map
+//# sourceMappingURL=97256.fc1476bee2469c9638d4.js.map
