@@ -11896,36 +11896,36 @@
                     analyticsLocations: s = []
                 } = e, {
                     type: a
-                } = i, o = function(e, t, n) {
+                } = i, o = P.default.getChannel(i.id), l = function(e, t, n) {
                     var i, r;
                     if ((null == n ? void 0 : n.targetType) === Q.InviteTargetTypes.ROLE_SUBSCRIPTIONS_PURCHASE) return z.StaticChannelRoute.ROLE_SUBSCRIPTIONS;
                     if ((null == n ? void 0 : n.targetType) == null && !M.GUILD_VOCAL_CHANNEL_TYPES.has(t.type) && ((0, S.canSeeGuildHome)(e) || (0, m.canSeeOnboardingHome)(e))) return z.StaticChannelRoute.GUILD_HOME;
                     let s = P.default.getChannel(t.id);
                     return k.default.can(K.Permissions.VIEW_CHANNEL, s) ? t.id : null !== (r = null === (i = U.default.getDefaultChannel(e, !0, K.Permissions.CREATE_INSTANT_INVITE)) || void 0 === i ? void 0 : i.id) && void 0 !== r ? r : t.id
                 }(t, i, r), {
-                    targetUserId: l,
-                    targetType: u,
-                    targetApplicationId: d
-                } = null != r ? r : {}, _ = a === K.ChannelTypes.GUILD_STAGE_VOICE, c = K.Routes.CHANNEL(t, o);
+                    targetUserId: u,
+                    targetType: d,
+                    targetApplicationId: _
+                } = null != r ? r : {}, c = a === K.ChannelTypes.GUILD_STAGE_VOICE, T = K.Routes.CHANNEL(t, l);
                 M.GUILD_VOCAL_CHANNEL_TYPES.has(a) ? (0, f.addPostConnectionCallback)(() => {
                     Promise.resolve().then(n.bind(n, "287734")).then(e => {
                         let {
                             default: n
                         } = e, a = () => {
-                            if (_) {
-                                (0, v.connectAndOpen)(i instanceof M.ChannelRecordBase ? i : (0, M.createChannelRecord)(i)), (0, D.transitionTo)(c);
+                            if (c) {
+                                (0, v.connectAndOpen)(i instanceof M.ChannelRecordBase ? i : (0, M.createChannelRecord)(i)), (0, D.transitionTo)(T);
                                 return
                             }
-                            n.selectVoiceChannel(o), u === Q.InviteTargetTypes.STREAM && null != l && W.watchStreamAndTransitionToStream({
+                            n.selectVoiceChannel(l), d === Q.InviteTargetTypes.STREAM && null != u && W.watchStreamAndTransitionToStream({
                                 streamType: X.StreamTypes.GUILD,
-                                ownerId: l,
+                                ownerId: u,
                                 guildId: t,
-                                channelId: o
-                            }), u === Q.InviteTargetTypes.EMBEDDED_APPLICATION && null != d && ((0, D.transitionTo)(K.Routes.CHANNEL(null != t ? t : K.ME, o)), (0, I.default)(o, d, s, null == r ? void 0 : r.intent))
+                                channelId: l
+                            }), d === Q.InviteTargetTypes.EMBEDDED_APPLICATION && null != _ && ((0, D.transitionTo)(K.Routes.CHANNEL(null != t ? t : K.ME, l)), (0, I.default)(l, _, s, null == r ? void 0 : r.intent))
                         };
                         (0, A.shouldShowMembershipVerificationGate)(t, [G.default, w.default, V.default, b.default]) ? (0, h.openMemberVerificationModal)(t, a) : a()
                     })
-                }) : (0, E.isActivityInTextSupportedForChannelType)(a) && u === Q.InviteTargetTypes.EMBEDDED_APPLICATION && null != d && ((0, D.transitionTo)(K.Routes.CHANNEL(null != t ? t : K.ME, o)), (0, I.default)(o, d, s, null == r ? void 0 : r.intent)), (function(e, t) {
+                }) : (0, E.isActivityInTextSupportedForChannel)(o) && d === Q.InviteTargetTypes.EMBEDDED_APPLICATION && null != _ && ((0, D.transitionTo)(K.Routes.CHANNEL(null != t ? t : K.ME, l)), (0, I.default)(l, _, s, null == r ? void 0 : r.intent)), (function(e, t) {
                     let {
                         type: n
                     } = e, {
@@ -11936,7 +11936,7 @@
                         navigationReplace: !0
                     };
                     return null != r && (o.welcomeModalChannelId = r), a && (o.state = q.STAGE_INVITE_STATE_KEY), null != s && (o.guildScheduledEventId = s.id), e => null != i ? i(e, o, L.default.INVITE_ACCEPT) : (0, D.transitionTo)(e, o, L.default.INVITE_ACCEPT)
-                })(i, r)(c)
+                })(i, r)(T)
             }
             let et = function(e, t) {
                     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
@@ -36543,7 +36543,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281378", ", Version Hash: ").concat("82b84f7cb058c4c928f574525fdc5706e4f610d3")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281417", ", Version Hash: ").concat("e8075974f4de327791d661891413d0230860cdae")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -64600,7 +64600,7 @@
                 isActivitiesInTextEnabled: function() {
                     return d
                 },
-                isActivityInTextSupportedForChannelType: function() {
+                isActivityInTextSupportedForChannel: function() {
                     return u
                 },
                 useActivitiesInTextExperimentConfig: function() {
@@ -64650,12 +64650,14 @@
             });
 
             function u(e) {
-                return [i.ChannelTypes.GUILD_TEXT, i.ChannelTypes.GROUP_DM, i.ChannelTypes.DM].includes(e)
+                var t;
+                if (null == e || void 0 === e || null != e.parent_id && void 0 !== e.parent_id) return !1;
+                return t = e.type, [i.ChannelTypes.GUILD_TEXT, i.ChannelTypes.GROUP_DM, i.ChannelTypes.DM].includes(t)
             }
 
             function d(e, t) {
                 if (null == e) return !1;
-                let n = u(e.type);
+                let n = u(e);
                 return (null == e ? void 0 : e.guild_id) != null ? s.default.getCurrentConfig({
                     guildId: e.guild_id,
                     location: t
@@ -64673,11 +64675,10 @@
                     isActivitiesInTextEnabledForChannelType: n,
                     channelGuildId: i
                 } = (0, r.useStateFromStoresObject)([o.default], () => {
-                    var t;
-                    let n = o.default.getChannel(e);
+                    let t = o.default.getChannel(e);
                     return {
-                        isActivitiesInTextEnabledForChannelType: null != (t = n) && u(t.type),
-                        channelGuildId: null == n ? void 0 : n.guild_id
+                        isActivitiesInTextEnabledForChannelType: u(t),
+                        channelGuildId: null == t ? void 0 : t.guild_id
                     }
                 }), a = null != i, d = s.default.useExperiment({
                     guildId: i,
@@ -64695,25 +64696,24 @@
             }
 
             function c(e, t) {
-                let n = (0, r.useStateFromStores)([o.default], () => {
-                        var t;
-                        return null === (t = o.default.getChannel(e)) || void 0 === t ? void 0 : t.guild_id
-                    }),
-                    i = null != n,
-                    a = s.default.useExperiment({
-                        guildId: n,
+                let n = (0, r.useStateFromStores)([o.default], () => o.default.getChannel(e)),
+                    i = u(n),
+                    a = null == n ? void 0 : n.guild_id,
+                    d = null != a,
+                    _ = s.default.useExperiment({
+                        guildId: a,
                         location: t
                     }, {
-                        autoTrackExposure: i,
-                        disable: !i
+                        autoTrackExposure: d,
+                        disable: !d
                     }),
-                    u = l.useExperiment({
+                    c = l.useExperiment({
                         location: t
                     }, {
-                        autoTrackExposure: !i,
-                        disable: i
+                        autoTrackExposure: !d,
+                        disable: d
                     });
-                return i ? a : u
+                return i ? d ? _ : c : null
             }
         },
         24933: function(e, t, n) {
@@ -85521,8 +85521,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281378", "281378"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281378")), t = 0), t
+                let t = parseInt((e = "281417", "281417"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281417")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107532,8 +107532,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281378",
-                    versionHash: "82b84f7cb058c4c928f574525fdc5706e4f610d3"
+                    buildNumber: "281417",
+                    versionHash: "e8075974f4de327791d661891413d0230860cdae"
                 }
             }
             n.r(t), n.d(t, {
@@ -157780,8 +157780,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712182461926",
-                                    build_number: "281378"
+                                    built_at: "1712185258608",
+                                    build_number: "281417"
                                 }
                             },
                             retries: 1
@@ -231928,7 +231928,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "82b84f7cb058c4c928f574525fdc5706e4f610d3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e8075974f4de327791d661891413d0230860cdae"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258032,7 +258032,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281378"
+                                build_number: "281417"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265177,7 +265177,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281378", "281378"), 10);
+                let s = parseInt((n = "281417", "281417"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291925,4 +291925,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.fc1476bee2469c9638d4.js.map
+//# sourceMappingURL=97256.ea0b2e4d4eae4570bf79.js.map
