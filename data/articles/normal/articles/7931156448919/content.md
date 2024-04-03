@@ -40,7 +40,7 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22536176531607" width="385" height="437"></p>
 <h2 id="h_01HTJA8QV59M70ZB3DY4THZM27">On Global Activity Cards</h2>
 <p>You can also view the <strong>activity cards</strong> in the <strong>Messages</strong> tab on mobile or the <strong>Friends List </strong>on desktop. These will show you recent activity of Friends and people you interact with in your servers.</p>
-<p class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/22536176540567" width="584" height="318">   </strong><strong><img src="https://support.discord.com/hc/article_attachments/22536176546711" width="199" height="415"></strong></p>
+<p class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/22536176540567" width="610" height="332">   </strong><strong><img src="https://support.discord.com/hc/article_attachments/22536176546711" width="163" height="338"></strong></p>
 <h3 id="h_01HTJA8QV5EBWAT0D8Z93TGDQX">
     <span style="color: #434343;">Note: Activity Cards may appear in the server’s Members List while the Recent Activity experiment is in beta. You can learn more about this experiment </span><a href="https://support.discord.com/hc/en-us/articles/22045487931799"><span style="color: #434343;">here</span></a><span style="color: #434343;">.</span>
 </h3>
