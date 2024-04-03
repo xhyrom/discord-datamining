@@ -41459,6 +41459,12 @@ html .progress__00e29 {
     user-select: text
 }
 
+.buttons__836c3 {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
 .questionContainer_cda91c {
     margin-top: 24px
 }
@@ -41659,12 +41665,6 @@ html .progress__00e29 {
 .formContainer_f90333 {
     display: flex;
     flex-direction: column;
-    gap: 8px
-}
-
-.buttons__15cf3 {
-    display: flex;
-    align-items: center;
     gap: 8px
 }
 
@@ -80470,8 +80470,8 @@ input::-webkit-inner-spin-button {
 
 .bodyText_fa331b {
     color: var(--interactive-normal);
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -80518,8 +80518,8 @@ input::-webkit-inner-spin-button {
 }
 
 .trialCheckboxLabel__7d1e0 {
-    font-size: .875rem;
-    line-height: 1.125rem
+    font-size: 14px;
+    line-height: 18px
 }
 
 .loader_acb69b {
@@ -131632,4 +131632,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.64a6a77ca6dee14515af.css.map*/
+/*# sourceMappingURL=99387.273cc0a67d204d28d52a.css.map*/
