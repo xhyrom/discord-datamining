@@ -1206,7 +1206,10 @@
   },
   "WEBAUTHN_CONDITIONAL_UI_LOGIN": {
     "url": "/auth/conditional/finish",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "WEBAUTHN_PASSWORDLESS_CHALLENGE": {
     "url": "/auth/passwordless/start",
