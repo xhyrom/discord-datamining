@@ -25258,12 +25258,6 @@
             var i = n("570392");
             n.es(i, t)
         },
-        952216: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var i = n("413742");
-            n.es(i, t)
-        },
         934827: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -36549,7 +36543,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281289", ", Version Hash: ").concat("43ffbf03e3dff11b7f96b6c686dbbc083b753094")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281304", ", Version Hash: ").concat("945801150aaef6e8ad3c0420fcd5de75503a8fb8")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85527,8 +85521,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281289", "281289"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281289")), t = 0), t
+                let t = parseInt((e = "281304", "281304"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281304")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107538,8 +107532,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281289",
-                    versionHash: "43ffbf03e3dff11b7f96b6c686dbbc083b753094"
+                    buildNumber: "281304",
+                    versionHash: "945801150aaef6e8ad3c0420fcd5de75503a8fb8"
                 }
             }
             n.r(t), n.d(t, {
@@ -157788,8 +157782,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712176169025",
-                                    build_number: "281289"
+                                    built_at: "1712177126065",
+                                    build_number: "281304"
                                 }
                             },
                             retries: 1
@@ -196016,7 +196010,7 @@
                 o = n("442837"),
                 l = n("692547"),
                 u = n("622535"),
-                d = n("952216"),
+                d = n("298433"),
                 _ = n("420166"),
                 c = n("481060"),
                 E = n("812206"),
@@ -196076,7 +196070,7 @@
                                 children: e => (0, i.jsx)("div", {
                                     className: p.sharedGameIcon,
                                     ...e,
-                                    children: (0, i.jsx)(d.DoubleCheckmarkLargeIcon, {
+                                    children: (0, i.jsx)(d.GroupIcon, {
                                         height: 14,
                                         width: 14,
                                         color: l.default.colors.INTERACTIVE_MUTED
@@ -196106,53 +196100,54 @@
                 let {
                     userId: t,
                     containerClassName: n,
-                    wrapChildren: s
+                    maxItems: s = 3,
+                    wrapChildren: o
                 } = e, {
-                    recentGames: o,
-                    currentUserApplicationIds: l,
-                    isFetching: d,
-                    isError: _
-                } = (0, T.useUserRecentGames)(t), {
-                    trackUserProfileAction: c,
-                    ...E
-                } = (0, h.useUserProfileAnalyticsContext)(), I = d || _ || null == o || 0 === o.length, [S, m] = r.useState(!1), [N, O] = r.useState(!1);
+                    recentGames: l,
+                    currentUserApplicationIds: d,
+                    isFetching: _,
+                    isError: c
+                } = (0, T.useUserRecentGames)(t), E = r.useMemo(() => null == l ? void 0 : l.slice(0, s), [l, s]), {
+                    trackUserProfileAction: I,
+                    ...S
+                } = (0, h.useUserProfileAnalyticsContext)(), m = _ || c || null == E || 0 === E.length, [N, O] = r.useState(!1), [C, g] = r.useState(!1);
                 if (r.useEffect(() => {
-                        if (I || S || null == l || !N) return;
-                        m(!0);
+                        if (m || N || null == d || !C) return;
+                        O(!0);
                         let e = [],
                             t = [],
                             n = [];
-                        o.forEach(i => {
+                        E.forEach(i => {
                             let {
                                 applicationId: r,
                                 isNew: s
                             } = i;
-                            e.push(r), s && t.push(r), l.has(r) && n.push(r)
+                            e.push(r), s && t.push(r), d.has(r) && n.push(r)
                         }), (0, A.trackUserProfileRecentGamesViewed)({
-                            ...E,
+                            ...S,
                             applicationIds: e,
                             newApplicationIds: t,
                             sharedApplicationIds: n
                         })
-                    }, [l, I, o, m, S, E, N]), I) return null;
-                let C = (0, i.jsx)(u.VisibilitySensor, {
-                    onChange: O,
+                    }, [d, m, E, O, N, S, C]), m) return null;
+                let L = (0, i.jsx)(u.VisibilitySensor, {
+                    onChange: g,
                     threshold: .25,
-                    active: !S,
+                    active: !N,
                     children: (0, i.jsx)("div", {
                         className: a()(p.recentGames, n),
-                        children: null == o ? void 0 : o.map(e => {
+                        children: null == E ? void 0 : E.map(e => {
                             var n, r, s;
                             return (0, i.jsx)(R, {
                                 game: e,
-                                isSharedGame: (n = t, r = l, s = e.applicationId, n !== f.default.getId() && null != r && r.has(s))
+                                isSharedGame: (n = t, r = d, s = e.applicationId, n !== f.default.getId() && null != r && r.has(s))
                             }, e.lastSessionId)
                         })
                     })
                 });
-                return null != s ? (0, i.jsx)(i.Fragment, {
-                    children: s(C)
-                }) : C
+                return null != o ? (0, i.jsx)(i.Fragment, {
+                    children: o(L)
+                }) : L
             });
 
             function g(e) {
@@ -231898,7 +231893,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "43ffbf03e3dff11b7f96b6c686dbbc083b753094"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "945801150aaef6e8ad3c0420fcd5de75503a8fb8"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258002,7 +257997,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281289"
+                                build_number: "281304"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265147,7 +265142,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281289", "281289"), 10);
+                let s = parseInt((n = "281304", "281304"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -268615,44 +268610,6 @@
                     }), (0, i.jsx)("path", {
                         fill: "string" == typeof a ? a : a.css,
                         d: "M15.3 16.7a1 1 0 0 1 1.4-1.4l4.3 4.29V16a1 1 0 1 1 2 0v6a1 1 0 0 1-1 1h-6a1 1 0 1 1 0-2h3.59l-4.3-4.3Z",
-                        className: o
-                    })]
-                })
-            }
-        },
-        413742: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                DoubleCheckmarkLargeIcon: function() {
-                    return a
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("692547"),
-                s = n("331595");
-            let a = e => {
-                let {
-                    width: t = 24,
-                    height: n = 24,
-                    color: a = r.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: o = "",
-                    ...l
-                } = e;
-                return (0, i.jsxs)("svg", {
-                    ...(0, s.default)(l),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: n,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: [(0, i.jsx)("path", {
-                        fill: "string" == typeof a ? a : a.css,
-                        d: "M16.7 8.7a1 1 0 0 0-1.4-1.4l-3.26 3.24a1 1 0 0 0 1.42 1.42L16.7 8.7ZM3.7 11.3a1 1 0 0 0-1.4 1.4l4.5 4.5a1 1 0 0 0 1.4-1.4l-4.5-4.5Z",
-                        className: o
-                    }), (0, i.jsx)("path", {
-                        fill: "string" == typeof a ? a : a.css,
-                        d: "M21.7 9.7a1 1 0 0 0-1.4-1.4L13 15.58l-3.3-3.3a1 1 0 0 0-1.4 1.42l4 4a1 1 0 0 0 1.4 0l8-8Z",
                         className: o
                     })]
                 })
@@ -291933,4 +291890,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.3ed22017801f29cdb73d.js.map
+//# sourceMappingURL=97256.7aa16c008e6292828d43.js.map

@@ -7855,7 +7855,8 @@ html .invoiceCancelRow_aa7946 {
 
 @value iconSize: 40px;
 
-.recentGames_e4425b {
+.recentGames_e4425b,
+.recentGamesGrid_d370b2 {
     display: flex;
     flex-direction: column;
     grid-gap: 12px
@@ -126169,7 +126170,10 @@ div.nagbar_c731ff {
 .userInfoText_b87307 {
     margin-bottom: 16px;
     font-size: 14px;
-    line-height: 18px
+    line-height: 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px
 }
 
 .note__7a4f4 {
@@ -131570,4 +131574,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.05406e47528b43dda676.css.map*/
+/*# sourceMappingURL=99387.1dbe7a4f62bba3aefb76.css.map*/
