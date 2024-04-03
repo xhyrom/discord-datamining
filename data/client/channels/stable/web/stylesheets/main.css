@@ -55235,8 +55235,8 @@ html .progress__00e29 {
 }
 
 .name__4eb92 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -108087,6 +108087,28 @@ html .invoiceCancelRow__6ff3e {
     opacity: 0
 }
 
+.content__9de41 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.image_a2ee89 {
+    box-sizing: border-box;
+    height: 320px;
+    width: 320px
+}
+
+.imageBox__8b12e {
+    padding: 20px
+}
+
+.text__49fb6 {
+    margin: 20px 0;
+    text-align: center
+}
+
 .title_b5c056 {
     text-align: center;
     font-weight: 700;
@@ -131533,4 +131555,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c7b4cfb8c60217d5235b.css.map*/
+/*# sourceMappingURL=99387.a2f296aedca8c8a897e1.css.map*/

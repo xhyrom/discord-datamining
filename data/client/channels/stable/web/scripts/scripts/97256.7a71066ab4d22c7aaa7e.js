@@ -36549,7 +36549,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("280929", ", Version Hash: ").concat("95d4455a747c53097e418b7bf17c2059a333ed66")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281085", ", Version Hash: ").concat("405224ae446ee7501950b67ef5c5542e8c7f9fcb")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -51801,7 +51801,6 @@
                 APP_DIRECTORY_HOME_NEW_TO_APPS_BANNER_HEADING: "New to apps?",
                 APP_DIRECTORY_HOME_NEW_TO_APPS_BANNER_BODY: "Check out our starter guide to get familiar with all the cool things apps can do!",
                 APP_DIRECTORY_HOME_NEW_TO_APPS_BANNER_CTA: "Learn More",
-                APP_DIRECTORY_PROFILE_ADD_BUTTON: "Add to Server",
                 APP_DIRECTORY_PROFILE_SHARE_BUTTON: "Copy Link",
                 APP_DIRECTORY_PROFILE_DESCRIPTION_HEADING: "Overview",
                 APP_DIRECTORY_PROFILE_COMMANDS_HEADING: "Popular Slash Commands",
@@ -51861,7 +51860,6 @@
                 APP_DIRECTORY_COACHMARK: "You can find the App Directory at any point under Server Settings!",
                 APP_DIRECTORY_PROFILE_EMBED_HEADER: "Invite app to server",
                 APP_DIRECTORY_PROFILE_EMBED_GUILD_COUNT: "in {guildCount} servers",
-                APP_DIRECTORY_PROFILE_EMBED_BUTTON: "Add to Server",
                 APP_DIRECTORY_PROFILE_EMBED_INVALID_HEADER: "Oops, this link doesn't work...",
                 APP_DIRECTORY_PROFILE_EMBED_INVALID_INFO_TITLE: "Invalid Link",
                 APP_DIRECTORY_PROFILE_EMBED_INVALID_INFO_BODY: "Try sending another one!",
@@ -54812,6 +54810,7 @@
                 PACKAGES_OPEN_PACKAGE_CONFIRM: "Confirm",
                 PACKAGES_OPEN_PACKAGE_ITEM_OPENED: "You got a **{item}**",
                 PACKAGES_OPEN_PACKAGE_ITEM_OPENED_AN: "You got an **{item}**",
+                PACKAGES_REDUCED_MOTION_NOTE: "For the full Loot Box opening experience, turn off reduced motion",
                 PACKAGES_BADGE: "A clown, for a limited time",
                 PACKAGES_PACKAGES_OPENED: "Your Boxes Opened",
                 PACKAGES_UNIQUE_PACKAGES_OPENED: "Rewards Received",
@@ -54849,6 +54848,8 @@
                 MEMBER_LIST_CONTENT_FEED_FIRST_TIME: "First time",
                 MEMBER_LIST_CONTENT_FEED_WATCHED_MEDIA: "Watched **{mediaTitle}**",
                 MEMBER_LIST_CONTENT_FEED_USER_WATCHED_MEDIA: "{userName} watched **{mediaTitle}** ({episodeDescription})",
+                MEMBER_LIST_CONTENT_FEED_TOP_GAME: "Top game",
+                MEMBER_LIST_CONTENT_FEED_TOP_GAME_WEEK_POPOUT: "{userName}'s top game this week: **{gameName}**",
                 CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity",
                 CONTENT_INVENTORY_MEMBERLIST_SETTINGS_HIDE: "Hide Activity Cards",
                 CONTENT_INVENTORY_MEMBERLIST_SETTINGS_ABOUT: "About Recent Activity",
@@ -56067,13 +56068,22 @@
             "use strict";
             n.r(t), n.d(t, {
                 Histogram: function() {
-                    return r
+                    return s
                 }
             }), n("653041"), n("47120");
             var i = n("508385");
-            class r {
+
+            function r(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            class s {
                 addSample(e) {
-                    this.digest.push(e)
+                    this.mean = (e + this.mean * this.samples) / (this.samples + 1), this.samples++, this.digest.push(e)
                 }
                 getReport() {
                     var e, t, n, i;
@@ -56084,17 +56094,13 @@
                         min: null !== (t = this.digest.percentile(0)) && void 0 !== t ? t : 0,
                         max: null !== (n = this.digest.percentile(1)) && void 0 !== n ? n : 0,
                         count: null !== (i = this.digest.size()) && void 0 !== i ? i : 0,
-                        percentiles: s
+                        percentiles: s,
+                        mean: this.mean,
+                        samples: this.samples
                     }
                 }
                 constructor() {
-                    var e, t, n;
-                    e = this, t = "digest", n = new i.Digest, t in e ? Object.defineProperty(e, t, {
-                        value: n,
-                        enumerable: !0,
-                        configurable: !0,
-                        writable: !0
-                    }) : e[t] = n
+                    r(this, "digest", new i.Digest), r(this, "mean", 0), r(this, "samples", 0)
                 }
             }
         },
@@ -59746,13 +59752,15 @@
                         client_performance_cpu_percentile75: e.percentiles[75],
                         client_performance_cpu_percentile90: e.percentiles[90],
                         client_performance_cpu_percentile95: e.percentiles[95],
+                        client_performance_cpu_mean: e.mean,
                         client_performance_memory_percentile25: t.percentiles[25],
                         client_performance_memory_percentile50: t.percentiles[50],
                         client_performance_memory_percentile75: t.percentiles[75],
                         client_performance_memory_percentile90: t.percentiles[90],
                         client_performance_memory_percentile95: t.percentiles[95],
                         client_performance_memory_min: t.min,
-                        client_performance_memory_max: t.max
+                        client_performance_memory_max: t.max,
+                        client_performance_memory_mean: t.mean
                     }
                 }
                 takeSample() {
@@ -60425,7 +60433,7 @@
                     } = t, {
                         timestamp: c
                     } = n, E = (s - c) / 1e3;
-                    if (this.intervalTotal += E, this.resolutionTotal += a * E, this.minorResolutionTotal += o * E, this.majorResolutionTotal += l * E, this.cryptorMaxAttempts = Math.max(this.cryptorMaxAttempts, t.cryptorMaxAttempts), null != u && null != _ && "encoderBuckets" in this && (this.encoderBuckets[u] += E, this.codecBuckets[_] += E, null != t.codecType && "UNKNOWN" !== t.codecType && (this.encoderCodec = t.codecType), null != e.vmafScore && e.vmafScore >= 0 && (this.vmafScoreNum += 1, this.vmafScoreSum += e.vmafScore, this.vmafHistogram.addSample(e.vmafScore)), null != e.psnrDb && (this.psnrDbNum += 1, this.psnrDbSum += e.psnrDb, this.psnrHistogram.addSample(e.psnrDb)), null != e.outboundSinkWant && 0 !== e.outboundSinkWant && (this.outboundSinkWantNum += 1, this.outboundSinkWantSum += e.outboundSinkWant)), null != d && null != _ && "decoderBuckets" in this && (this.decoderBuckets[d] += E, this.codecBuckets[_] += E, null != t.codecType && "UNKNOWN" !== t.codecType && (this.decoderCodec = t.codecType)), this.statsWindow.length < 6) return;
+                    if (this.intervalTotal += E, this.resolutionTotal += a * E, this.minorResolutionTotal += o * E, this.majorResolutionTotal += l * E, this.cryptorMaxAttempts = Math.max(this.cryptorMaxAttempts, t.cryptorMaxAttempts), null != u && null != _ && "encoderBuckets" in this && (this.encoderBuckets[u] += E, this.codecBuckets[_] += E, null != t.codecType && "UNKNOWN" !== t.codecType && (this.encoderCodec = t.codecType), null != e.vmafScore && e.vmafScore >= 0 && (this.vmafScoreNum += 1, this.vmafScoreSum += e.vmafScore, this.vmafHistogram.addSample(e.vmafScore)), null != e.psnrDb && e.psnrDb >= 0 && (this.psnrDbNum += 1, this.psnrDbSum += e.psnrDb, this.psnrHistogram.addSample(e.psnrDb)), null != e.outboundSinkWant && 0 !== e.outboundSinkWant && (this.outboundSinkWantNum += 1, this.outboundSinkWantSum += e.outboundSinkWant)), null != d && null != _ && "decoderBuckets" in this && (this.decoderBuckets[d] += E, this.codecBuckets[_] += E, null != t.codecType && "UNKNOWN" !== t.codecType && (this.decoderCodec = t.codecType)), this.statsWindow.length < 6) return;
                     let {
                         bytes: I,
                         framesCodec: h,
@@ -83117,6 +83125,9 @@
                 isBuildOverrideLink: function() {
                     return S
                 },
+                isManualBuildOverrideLink: function() {
+                    return A
+                },
                 probablyHasBuildOverride: function() {
                     return I
                 },
@@ -83445,29 +83456,40 @@
                 s = n("442837"),
                 a = n("386506"),
                 o = n("304761"),
-                l = n("478543"),
-                u = n("366953");
-            async function d(e) {
+                l = n("865427"),
+                u = n("478543"),
+                d = n("366953");
+            async function _(e) {
                 if (200 !== (await (0, a.applyPublicBuildOverride)(e)).status) throw Error("Build override couldn't apply");
                 window.location.reload(!0)
             }
-            async function _() {
+            async function c(e) {
+                if (200 !== (await (0, a.applyStaffBuildOverride)(e)).status) throw Error("Build override couldn't apply");
+                window.location.reload(!0)
+            }
+            async function E() {
                 await (0, a.clearBuildOverride)(), window.location.reload(!0)
             }
             t.default = r.memo(function(e) {
                 let {
                     url: t
                 } = e, n = (0, s.useStateFromStoresObject)([o.default], () => o.default.getCurrentBuildOverride()), a = (0, s.useStateFromStores)([o.default], () => o.default.getBuildOverride(t)), {
-                    payload: c,
-                    validatedURL: E
-                } = a, I = n.state === o.State.Resolving || a.state === o.State.Resolving, T = r.useCallback(() => null == c ? Promise.reject(Error("Invalid override payload")) : ((0, u.addRecentBuildOverride)(a.override, c), d(c)), [c, a]);
-                return null != E ? (0, i.jsx)(l.default, {
-                    loading: I,
+                    payload: I,
+                    validatedURL: T
+                } = a, f = n.state === o.State.Resolving || a.state === o.State.Resolving, S = r.useCallback(() => {
+                    if ((0, l.isManualBuildOverrideLink)(a.url) && null != a.override) {
+                        var e;
+                        return c(null === (e = a.override) || void 0 === e ? void 0 : e.targetBuildOverride)
+                    }
+                    return null == I ? Promise.reject(Error("Invalid override payload")) : ((0, d.addRecentBuildOverride)(a.override, I), _(I))
+                }, [I, a]);
+                return null != T ? (0, i.jsx)(u.default, {
+                    loading: f,
                     linkMeta: a.override,
                     currentOverrides: n.overrides,
-                    applyBuildOverride: T,
-                    clearBuildOverride: _,
-                    url: E
+                    applyBuildOverride: S,
+                    clearBuildOverride: E,
+                    url: T
                 }) : null
             })
         },
@@ -85483,8 +85505,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "280929", "280929"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("280929")), t = 0), t
+                let t = parseInt((e = "281085", "281085"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281085")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -102932,6 +102954,9 @@
         830121: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                DEVLINK_REGEX: function() {
+                    return g
+                },
                 default: function() {
                     return F
                 },
@@ -103883,10 +103908,11 @@
                         pdp_bg: r,
                         mobile_bg: s,
                         success_modal_bg: o,
-                        ...l
+                        mobile_banner: l,
+                        ...u
                     } = e;
                     return new a({
-                        ...super.fromServer(l),
+                        ...super.fromServer(u),
                         products: t.reduce((e, t) => {
                             let n = i.default.fromServer(t);
                             return 0 === n.items.length ? e : (e.push(n), e)
@@ -103894,11 +103920,12 @@
                         logo: n,
                         pdpBg: r,
                         mobileBg: s,
-                        successModalBg: o
+                        successModalBg: o,
+                        mobileBanner: l
                     })
                 }
                 constructor(e) {
-                    super(e), s(this, "products", void 0), s(this, "logo", void 0), s(this, "pdpBg", void 0), s(this, "mobileBg", void 0), s(this, "successModalBg", void 0), this.products = e.products, this.logo = e.logo, this.pdpBg = e.pdpBg, this.mobileBg = e.mobileBg, this.successModalBg = e.successModalBg
+                    super(e), s(this, "products", void 0), s(this, "logo", void 0), s(this, "pdpBg", void 0), s(this, "mobileBg", void 0), s(this, "successModalBg", void 0), s(this, "mobileBanner", void 0), this.products = e.products, this.logo = e.logo, this.pdpBg = e.pdpBg, this.mobileBg = e.mobileBg, this.successModalBg = e.successModalBg, this.mobileBanner = e.mobileBanner
                 }
             }
         },
@@ -107489,8 +107516,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "280929",
-                    versionHash: "95d4455a747c53097e418b7bf17c2059a333ed66"
+                    buildNumber: "281085",
+                    versionHash: "405224ae446ee7501950b67ef5c5542e8c7f9fcb"
                 }
             }
             n.r(t), n.d(t, {
@@ -118116,6 +118143,9 @@
                 addOnPipModeChangedListener(e) {}
                 addOnPipModeWillChangeListener(e) {}
                 isEnabled() {
+                    return !1
+                }
+                isSupported() {
                     return !1
                 }
             };
@@ -149663,7 +149693,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return k
+                    return V
                 }
             }), n("47120");
             var i = n("735250"),
@@ -149693,15 +149723,16 @@
                 L = n("943362"),
                 D = n("551452"),
                 v = n("69626"),
-                M = n("532901"),
-                y = n("981631"),
-                P = n("176505"),
-                U = n("689938"),
-                b = n("633353");
+                M = n("142990"),
+                y = n("532901"),
+                P = n("981631"),
+                U = n("176505"),
+                b = n("689938"),
+                G = n("633353");
             n("519308");
-            var G = n("931093");
+            var w = n("931093");
 
-            function w(e) {
+            function B(e) {
                 let {
                     text: t
                 } = e, [n, s] = r.useState(!1);
@@ -149722,12 +149753,12 @@
                     })
                 })
             }
-            let B = {
+            let k = {
                 blockQuote: {
                     react: (e, t, n) => (0, i.jsxs)("div", {
-                        className: G.blockquoteContainer,
+                        className: w.blockquoteContainer,
                         children: [(0, i.jsx)("div", {
-                            className: G.blockquoteDivider
+                            className: w.blockquoteDivider
                         }), (0, i.jsx)("blockquote", {
                             children: t(e.content, n)
                         })]
@@ -149758,15 +149789,15 @@
                 codeBlock: {
                     react(e, t, r) {
                         let s = () => (0, i.jsx)("code", {
-                            className: a()(b.scrollbarGhostHairline, "hljs"),
+                            className: a()(G.scrollbarGhostHairline, "hljs"),
                             children: (0, C.smartOutput)(e, t, r)
                         });
                         return (0, i.jsx)("pre", {
                             children: (0, i.jsxs)("div", {
-                                className: G.codeContainer,
+                                className: w.codeContainer,
                                 children: [p.SUPPORTS_COPY ? (0, i.jsx)("div", {
-                                    className: G.codeActions,
-                                    children: (0, i.jsx)(w, {
+                                    className: w.codeActions,
+                                    children: (0, i.jsx)(B, {
                                         text: e.content
                                     })
                                 }) : null, (0, i.jsx)(d.LazyLibrary, {
@@ -149778,7 +149809,7 @@
                                         {
                                             let n = t.highlight(e.lang, e.content, !0);
                                             return null == n ? s() : (0, i.jsx)("code", {
-                                                className: a()(b.scrollbarGhostHairline, "hljs", n.language),
+                                                className: a()(G.scrollbarGhostHairline, "hljs", n.language),
                                                 dangerouslySetInnerHTML: {
                                                     __html: n.value
                                                 }
@@ -149819,12 +149850,12 @@
                         let r = () => {
                             ! function(e, t) {
                                 let n = I.default.getGuild(e);
-                                if (null == e || null == n || !n.hasFeature(y.GuildFeatures.COMMUNITY)) return;
+                                if (null == e || null == n || !n.hasFeature(P.GuildFeatures.COMMUNITY)) return;
                                 let i = {
-                                        home: P.StaticChannelRoute.GUILD_HOME,
-                                        browse: P.StaticChannelRoute.CHANNEL_BROWSER,
-                                        customize: P.StaticChannelRoute.CUSTOMIZE_COMMUNITY,
-                                        guide: P.StaticChannelRoute.GUILD_HOME
+                                        home: U.StaticChannelRoute.GUILD_HOME,
+                                        browse: U.StaticChannelRoute.CHANNEL_BROWSER,
+                                        customize: U.StaticChannelRoute.CUSTOMIZE_COMMUNITY,
+                                        guide: U.StaticChannelRoute.GUILD_HOME
                                     } [t],
                                     r = I.default.getGuild(e);
                                 if ((null == r ? void 0 : r.joinedAt) == null) {
@@ -149832,21 +149863,21 @@
                                         channelId: i
                                     });
                                     return
-                                }(0, E.transitionTo)(y.Routes.CHANNEL(e, i))
+                                }(0, E.transitionTo)(P.Routes.CHANNEL(e, i))
                             }(e.guildId, e.channelId)
                         };
                         if (!(0, C.isStaticRouteIconType)(e.channelId)) return null;
                         let s = "".concat(e.channelId);
                         switch (e.channelId) {
-                            case P.StaticChannelId.GUILD_HOME:
-                            case P.StaticChannelId.SERVER_GUIDE:
-                                s = U.default.Messages.SERVER_GUIDE;
+                            case U.StaticChannelId.GUILD_HOME:
+                            case U.StaticChannelId.SERVER_GUIDE:
+                                s = b.default.Messages.SERVER_GUIDE;
                                 break;
-                            case P.StaticChannelId.CHANNEL_BROWSER:
-                                s = U.default.Messages.GUILD_SIDEBAR_CHANNEL_BROWSER;
+                            case U.StaticChannelId.CHANNEL_BROWSER:
+                                s = b.default.Messages.GUILD_SIDEBAR_CHANNEL_BROWSER;
                                 break;
-                            case P.StaticChannelId.CUSTOMIZE_COMMUNITY:
-                                s = U.default.Messages.CHANNELS_AND_ROLES
+                            case U.StaticChannelId.CUSTOMIZE_COMMUNITY:
+                                s = b.default.Messages.CHANNELS_AND_ROLES
                         }
                         return (0, i.jsx)(l.Tooltip, {
                             text: s,
@@ -149880,7 +149911,7 @@
                             r = null == e.start ? void 0 : (e.start + (e.items.length - 1)).toString().length;
                         return (0, o.reactElement)(i, "".concat(n.key), {
                             start: e.start,
-                            className: n.formatInline ? G.inlineFormat : null,
+                            className: n.formatInline ? w.inlineFormat : null,
                             style: {
                                 "--totalCharacters": r
                             },
@@ -149902,7 +149933,7 @@
                         });
                         return (0, o.reactElement)("h" + e.level, (null == n ? void 0 : n.key) != null ? "".concat(n.key) : null, {
                             children: i,
-                            className: n.formatInline ? G.inlineFormat : null
+                            className: n.formatInline ? w.inlineFormat : null
                         })
                     }
                 },
@@ -149926,10 +149957,11 @@
                 }
             };
 
-            function k(e) {
+            function V(e) {
                 return {
-                    ...B,
-                    link: (0, M.default)(e),
+                    ...k,
+                    link: (0, y.default)(e),
+                    devLink: (0, M.default)(e),
                     emoji: function(e) {
                         let {
                             emojiTooltipPosition: t = "top",
@@ -151163,6 +151195,43 @@
                         output: t,
                         state: n
                     })
+                }
+            }
+        },
+        142990: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return u
+                }
+            }), n("789020");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("865427"),
+                a = n("853425"),
+                o = n("830121");
+            let l = RegExp("^" + o.DEVLINK_REGEX.source, o.DEVLINK_REGEX.flags);
+
+            function u(e) {
+                return {
+                    match: (e, t) => t.allowLinks && t.allowDevLinks ? l.exec(e) : null,
+                    parse: (e, t) => ({
+                        target: e,
+                        type: "devLink"
+                    }),
+                    react: (e, t, n) => {
+                        let o = e.target[0];
+                        if ((0, s.isManualBuildOverrideLink)(o)) return (0, i.jsxs)(i.Fragment, {
+                            children: [(0, i.jsx)("span", {
+                                children: o
+                            }), (0, i.jsx)(r.Fragment, {
+                                children: (0, i.jsx)(a.default, {
+                                    url: o
+                                }, o)
+                            }, n.key)]
+                        })
+                    },
+                    order: 6
                 }
             }
         },
@@ -157697,8 +157766,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712090828143",
-                                    build_number: "280929"
+                                    built_at: "1712106317335",
+                                    build_number: "281085"
                                 }
                             },
                             retries: 1
@@ -166640,28 +166709,51 @@
             "use strict";
             n.r(t), n.d(t, {
                 checkRecipientEligibility: function() {
-                    return u
+                    return _
                 },
                 createReferralTrial: function() {
-                    return d
+                    return c
+                },
+                fetchReferralEligibleUsers: function() {
+                    return u
                 },
                 fetchReferralsRemaining: function() {
-                    return l
+                    return d
                 },
                 resolveReferralTrialOffer: function() {
-                    return _
+                    return E
                 }
             });
             var i = n("544891"),
                 r = n("570140"),
-                s = n("904245");
-            n("598077");
-            var a = n("944486"),
-                o = n("981631");
-            let l = () => (r.default.dispatch({
+                s = n("904245"),
+                a = n("598077"),
+                o = n("944486"),
+                l = n("981631");
+            async function u() {
+                r.default.dispatch({
+                    type: "REFERRALS_FETCH_ELIGIBLE_USER_START"
+                });
+                try {
+                    var e;
+                    let t = await i.HTTP.get({
+                        url: l.Endpoints.GET_REFERRAL_ELIGIBLE_USERS,
+                        oldFormErrors: !0
+                    });
+                    r.default.dispatch({
+                        type: "REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS",
+                        users: (null === (e = t.body) || void 0 === e ? void 0 : e.users) != null ? t.body.users.map(e => new a.default(e)) : []
+                    })
+                } catch (e) {
+                    r.default.dispatch({
+                        type: "REFERRALS_FETCH_ELIGIBLE_USER_FAIL"
+                    })
+                }
+            }
+            let d = () => (r.default.dispatch({
                     type: "BILLING_REFERRALS_REMAINING_FETCH_START"
                 }), i.HTTP.get({
-                    url: o.Endpoints.GET_REFERRALS_REMAINING,
+                    url: l.Endpoints.GET_REFERRALS_REMAINING,
                     oldFormErrors: !0
                 }).then(e => {
                     r.default.dispatch({
@@ -166674,11 +166766,11 @@
                         type: "BILLING_REFERRALS_REMAINING_FETCH_FAIL"
                     })
                 })),
-                u = e => (r.default.dispatch({
+                _ = e => (r.default.dispatch({
                     type: "BILLING_CREATE_REFERRAL_PREVIEW_START",
                     recipientId: e
                 }), i.HTTP.post({
-                    url: o.Endpoints.CREATE_REFERRAL_PREVIEW(e),
+                    url: l.Endpoints.CREATE_REFERRAL_PREVIEW(e),
                     oldFormErrors: !0
                 }).then(t => {
                     r.default.dispatch({
@@ -166692,11 +166784,11 @@
                         recipientId: e
                     })
                 }));
-            async function d(e) {
+            async function c(e) {
                 try {
                     var t;
                     let n = await i.HTTP.post({
-                            url: o.Endpoints.CREATE_REFERRAL(e),
+                            url: l.Endpoints.CREATE_REFERRAL(e),
                             oldFormErrors: !0
                         }),
                         s = null !== (t = n.body) && void 0 !== t ? t : null;
@@ -166709,17 +166801,17 @@
                 } catch (e) {
                     if (r.default.dispatch({
                             type: "BILLING_CREATE_REFERRAL_FAIL"
-                        }), e.body.code === o.AbortCodes.INVALID_MESSAGE_SEND_USER) {
-                        let t = a.default.getCurrentlySelectedChannelId();
+                        }), e.body.code === l.AbortCodes.INVALID_MESSAGE_SEND_USER) {
+                        let t = o.default.getCurrentlySelectedChannelId();
                         null != t && s.default.sendClydeError(t, e.body.code)
                     }
                 }
             }
-            async function _(e) {
+            async function E(e) {
                 try {
                     var t;
                     let n = await i.HTTP.get({
-                            url: o.Endpoints.REFERRAL_OFFER_ID_RESOLVE(e),
+                            url: l.Endpoints.REFERRAL_OFFER_ID_RESOLVE(e),
                             oldFormErrors: !0
                         }),
                         s = null !== (t = n.body) && void 0 !== t ? t : null;
@@ -231747,7 +231839,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "95d4455a747c53097e418b7bf17c2059a333ed66"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "405224ae446ee7501950b67ef5c5542e8c7f9fcb"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257851,7 +257943,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "280929"
+                                build_number: "281085"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -264996,7 +265088,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "280929", "280929"), 10);
+                let s = parseInt((n = "281085", "281085"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -278286,7 +278378,7 @@
                         resolution: t,
                         frameRate: n
                     } = e.quality, i = t <= 480 ? t / 3 * 4 : t / 9 * 16;
-                    (0 === t || t > 1080) && this.handleVideoEncoderFallback("H265");
+                    !("undefined" != typeof window && ("canary" === window.GLOBAL_ENV.RELEASE_CHANNEL || "development" === window.GLOBAL_ENV.RELEASE_CHANNEL)) && (0 === t || t > 1080) && this.handleVideoEncoderFallback("H265");
                     let r = null;
                     if (null != e.desktopDescription ? r = e.desktopDescription.id : null != e.cameraDescription && (r = "".concat(e.cameraDescription.videoDeviceGuid, ":").concat(e.cameraDescription.audioDeviceGuid)), this.goLiveSourceIdentifier === r) {
                         this.setDesktopEncodingOptions(i, t, n);
@@ -291782,4 +291874,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.862e5b1297911fbbb0f1.js.map
+//# sourceMappingURL=97256.7a71066ab4d22c7aaa7e.js.map
