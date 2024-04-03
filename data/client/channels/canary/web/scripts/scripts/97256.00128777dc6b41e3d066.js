@@ -36549,7 +36549,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281168", ", Version Hash: ").concat("4739e0f3dd712b8202c58d58db23488a19eb0275")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281178", ", Version Hash: ").concat("7abfd9bf9284cd084a8fbb1100337ffd736928c4")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55228,6 +55228,17 @@
                 CLAN_PRIMETIME_SUNDAY: "Sunday",
                 CLAN_PRIMETIME_WEEKDAYS: "Weekdays",
                 CLAN_PRIMETIME_WEEKENDS: "Weekends",
+                CLAN_PRIMETIME_MORNING: "Morning",
+                CLAN_PRIMETIME_AFTERNOON: "Afternoon",
+                CLAN_PRIMETIME_EVENING: "Evening",
+                CLAN_PRIMETIME_LATE_NIGHT: "Late Night",
+                CLAN_PRIMETIME_FORMATTED_RECURRING_TIME: "{day} {time}",
+                CLAN_PRIMETIME_RECURRING_WEEKDAY: "Weekday",
+                CLAN_PRIMETIME_RECURRING_WEEKEND: "Weekend",
+                CLAN_PRIMETIME_RECURRING_MORNING: "mornings",
+                CLAN_PRIMETIME_RECURRING_AFTERNOON: "afternoons",
+                CLAN_PRIMETIME_RECURRING_EVENING: "evenings",
+                CLAN_PRIMETIME_RECURRING_LATE_NIGHT: "late nights",
                 CLAN_SETUP_OVERVIEW_TITLE: "We the people of **!!{guildName}!!**",
                 CLAN_SETUP_OVERVIEW_ESTABLISHED: "Est. {date}",
                 CLAN_SETUP_OVERVIEW_TEXT_DEFAULT: "...in order to create a space to play games, establish this charter for the Clan.",
@@ -85514,8 +85525,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281168", "281168"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281168")), t = 0), t
+                let t = parseInt((e = "281178", "281178"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281178")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107525,8 +107536,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281168",
-                    versionHash: "4739e0f3dd712b8202c58d58db23488a19eb0275"
+                    buildNumber: "281178",
+                    versionHash: "7abfd9bf9284cd084a8fbb1100337ffd736928c4"
                 }
             }
             n.r(t), n.d(t, {
@@ -157775,8 +157786,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712163902922",
-                                    build_number: "281168"
+                                    built_at: "1712164867326",
+                                    build_number: "281178"
                                 }
                             },
                             retries: 1
@@ -231903,7 +231914,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "4739e0f3dd712b8202c58d58db23488a19eb0275"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7abfd9bf9284cd084a8fbb1100337ffd736928c4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258007,7 +258018,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281168"
+                                build_number: "281178"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265152,7 +265163,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281168", "281168"), 10);
+                let s = parseInt((n = "281178", "281178"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291938,4 +291949,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.72a03fae8447c6350c78.js.map
+//# sourceMappingURL=97256.00128777dc6b41e3d066.js.map
