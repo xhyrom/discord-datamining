@@ -381,15 +381,26 @@
   },
   "GUILD_ROLE_CONNECTIONS_ASSIGN": {
     "url": "/guilds/:param/roles/:param/connections/assign",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_ROLE_CONNECTIONS_UNASSIGN": {
     "url": "/guilds/:param/roles/:param/connections/unassign",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_ONBOARDING": {
     "url": "/guilds/:param/onboarding",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "GUILD_ONBOARDING_PROMPT": {
     "url": "/guilds/:param/onboarding-prompts/:param",
@@ -441,7 +452,11 @@
   },
   "GUILD_RECOMMENDATIONS": {
     "url": "/guild-recommendations",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_EMOJIS": {
     "url": "/guilds/:param/emojis",
@@ -601,7 +616,14 @@
   },
   "BROADCAST_CHANNELS": {
     "url": "/channels/broadcast-channels",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
   },
   "THREAD_MEMBER": {
     "url": "/channels/:param/thread-members/:param",
@@ -741,7 +763,10 @@
   },
   "GUILD_FEED_MARK_SEEN": {
     "url": "/guilds/:param/guild-feed/mark-seen",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "PINS_ACK": {
     "url": "/channels/:param/pins/ack",
@@ -900,7 +925,10 @@
   },
   "POMELO_ATTEMPT": {
     "url": "/users/@me/pomelo-attempt",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "POMELO_ATTEMPT_UNAUTHED": {
     "url": "/unique-username/username-attempt-unauthed",
@@ -1059,7 +1087,10 @@
   },
   "LOGIN_MFA": {
     "url": "/auth/mfa/totp",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "LOGIN_SMS": {
     "url": "/auth/mfa/sms",
@@ -1228,7 +1259,10 @@
   },
   "INTEGRATION_JOIN": {
     "url": "/integrations/:param/join",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "INTEGRATION_SEARCH": {
     "url": "/integrations/:param/search",
@@ -1605,7 +1639,11 @@
   },
   "BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX": {
     "url": "/billing/popup-bridge/:param/callback/:param/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "BILLING_SUBSCRIPTIONS": {
     "url": "/users/@me/billing/subscriptions",
@@ -2211,7 +2249,10 @@
   },
   "SUBMIT_REPORT_MENU": {
     "url": "/reporting/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "SUBMIT_UNAUTHENTICATED_REPORT_MENU": {
     "url": "/reporting/unauthenticated/:param",
@@ -2412,7 +2453,10 @@
   },
   "APPLICATION_OWNER_TRANSFER": {
     "url": "/applications/:param/transfer",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "HUB_WAITLIST_SIGNUP": {
     "url": "/hub-waitlist/signup",
@@ -2627,7 +2671,10 @@
   },
   "UNFURL_EMBED_URLS": {
     "url": "/unfurler/embed-urls",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BUG_REPORTS": {
     "url": "/private/bug-reports",
@@ -2666,7 +2713,10 @@
   },
   "ACCOUNT_NOTIFICATION_SETTINGS": {
     "url": "/users/@me/notification-settings",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "VIDEO_FILTER_ASSETS": {
     "url": "/users/@me/video-filters/assets",
@@ -2776,7 +2826,10 @@
   },
   "USER_EMAIL": {
     "url": "/users/@me/email",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "USER_EMAIL_VERIFY_CODE": {
     "url": "/users/@me/email/verify-code",
@@ -2830,7 +2883,11 @@
   },
   "GUILD_ADMIN_SERVER_ELIGIBILITY": {
     "url": "/guilds/:param/admin-server-eligibility",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "JOIN_ADMIN_SERVER": {
     "url": "/guilds/:param/join-admin-server",
@@ -2948,7 +3005,12 @@
   },
   "GET_REFERRALS_REMAINING": {
     "url": "/users/@me/referrals/eligibility",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GET_REFERRAL_ELIGIBLE_USERS": {
     "url": "/users/@me/referrals/eligible-users",
@@ -3007,7 +3069,10 @@
   },
   "DISCORDIFY_ME": {
     "url": "/users/@me/avatars/discordify",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BADGE_ICON": {
     "url": "/badge-icons/:param.png",
@@ -3049,7 +3114,14 @@
   },
   "GUILD_MEMBERS_UNUSUAL_DM_ACTIVITY": {
     "url": "/guilds/:param/members/unusual-dm-activity",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
   },
   "EMOJI_CAPTIONS_GET": {
     "url": "/users/@me/emoji-captions",
@@ -3145,7 +3217,11 @@
   },
   "QUESTS_CURRENT_QUESTS": {
     "url": "/quests/@me",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "QUESTS_ENROLL": {
     "url": "/quests/:param/enroll",
@@ -3242,6 +3318,10 @@
   },
   "USER_RECENT_GAMES": {
     "url": "/users/:param/profile/recent-games",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   }
 }
