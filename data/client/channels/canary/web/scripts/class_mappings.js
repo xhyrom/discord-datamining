@@ -5886,7 +5886,12 @@
         535806: function(e) {
             "use strict";
             e.exports = {
+                closeIcon: "closeIcon__622b1",
+                header: "header__8fe3d",
+                headerContainer: "headerContainer__90e92",
                 menu: "menu__8306d",
+                messageHistory: "messageHistory__7547c",
+                messages: "messages_b7915b",
                 selectButton: "selectButton__83238"
             }
         },
@@ -5917,12 +5922,15 @@
                 contentImage: "contentImage__749b6",
                 emoji: "emoji__3bd00",
                 emojiHotrail: "emojiHotrail_cac44d",
+                emojiHotrailShareToChannel: "emojiHotrailShareToChannel__16b9a",
                 emojiSuggestionButton: "emojiSuggestionButton__6cb58",
                 hero: "hero_dc420c",
                 heroDetails: "heroDetails_f9bc0e",
+                inputContainerShareToChannel: "inputContainerShareToChannel__8eca3",
                 popout: "popout_cfa8bc",
                 popoutTitle: "popoutTitle__6f44d",
-                reactionContainer: "reactionContainer__06e98"
+                reactionContainer: "reactionContainer__06e98",
+                reactionContainerShareToChannel: "reactionContainerShareToChannel__318bd"
             }
         },
         261556: function(e) {

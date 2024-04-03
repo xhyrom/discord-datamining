@@ -7272,12 +7272,12 @@ html .invoiceCancelRow_aa7946 {
 .streamerModeEnabledBtn_b696dd {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -48806,6 +48806,46 @@ html .progress__00e29 {
     cursor: pointer
 }
 
+.messageHistory__7547c {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background: var(--background-primary);
+    position: relative;
+    height: 300px;
+    margin-bottom: 16px;
+    overflow: hidden
+}
+
+.messages_b7915b * {
+    overflow: hidden
+}
+
+.messages_b7915b ol>:last-child {
+    height: 4px
+}
+
+.headerContainer__90e92 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    position: relative;
+    overflow: visible;
+    z-index: 1;
+    box-shadow: 0 4px 4px 0 hsl(var(--black-500-hsl)/.25)
+}
+
+.header__8fe3d {
+    display: flex;
+    align-items: center;
+    gap: 6px
+}
+
+.closeIcon__622b1 {
+    cursor: pointer
+}
+
 .popout_cfa8bc {
     width: 342px;
     display: flex;
@@ -48862,6 +48902,24 @@ html .progress__00e29 {
 
 .badgeContainer__67878 {
     padding: 2px
+}
+
+.reactionContainerShareToChannel__318bd {
+    padding-bottom: 16px;
+    background-color: var(--background-primary);
+    border-bottom-left-radius: var(--radius-md);
+    border-bottom-right-radius: var(--radius-md)
+}
+
+.emojiHotrailShareToChannel__16b9a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 28px
+}
+
+.inputContainerShareToChannel__8eca3 {
+    padding: 0 16px
 }
 
 .container__1ba51 {
@@ -131574,4 +131632,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1dbe7a4f62bba3aefb76.css.map*/
+/*# sourceMappingURL=99387.2db12d81a121bc143580.css.map*/
