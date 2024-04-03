@@ -524,7 +524,11 @@
   },
   "EMOJI_SOURCE_DATA": {
     "url": "/emojis/:param/source",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "TOP_EMOJIS_FOR_GUILD": {
     "url": "/guilds/:param/top-emojis",
@@ -628,7 +632,10 @@
   },
   "GUILD_JOIN_REQUEST_INTERVIEW": {
     "url": "/join-requests/:param/interview",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILDS": {
     "url": "/guilds",
@@ -770,7 +777,10 @@
   },
   "MESSAGES_GREET": {
     "url": "/channels/:param/greet",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MESSAGE": {
     "url": "/channels/:param/messages/:param",
@@ -816,7 +826,10 @@
   },
   "BACKGROUND_SYNC": {
     "url": "/users/@me/background-sync",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MESSAGE_PREVIEWS": {
     "url": "/channels/preload-messages",
@@ -881,7 +894,10 @@
   },
   "TYPING": {
     "url": "/channels/:param/typing",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CHANNEL_PERMISSIONS_OVERWRITE": {
     "url": "/channels/:param/permissions/:param",
@@ -985,7 +1001,11 @@
   },
   "FORUM_TAG": {
     "url": "/channels/:param/tags/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "FRIEND_FINDER": {
     "url": "/friend-finder/find-friends",
@@ -1087,7 +1107,10 @@
   },
   "DELETE_ACCOUNT": {
     "url": "/users/@me/delete",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "DISABLE_ACCOUNT": {
     "url": "/users/@me/disable",
@@ -1148,7 +1171,13 @@
   },
   "FRIEND_INVITES": {
     "url": "/users/@me/invites",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "VERIFY_PHONE": {
     "url": "/phone-verifications/verify",
@@ -1252,7 +1281,12 @@
   },
   "NOTE": {
     "url": "/users/@me/notes/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "MENTIONS": {
     "url": "/users/@me/mentions",
@@ -1319,7 +1353,10 @@
   },
   "REMOTE_AUTH_LOGIN": {
     "url": "/users/@me/remote-auth/login",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "REMOTE_AUTH_FINISH": {
     "url": "/users/@me/remote-auth/finish",
@@ -1440,7 +1477,10 @@
   },
   "AUTHORIZE_IP": {
     "url": "/auth/authorize-ip",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "AUTHORIZE_PAYMENT": {
     "url": "/billing/verify-purchase-request",
@@ -1478,7 +1518,10 @@
   },
   "DEBUG_LOGS": {
     "url": "/debug-logs/multi/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "REPORT_V2": {
     "url": "/reports",
@@ -1666,7 +1709,10 @@
   },
   "MFA_SMS_DISABLE": {
     "url": "/users/@me/mfa/sms/disable",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MFA_CODES_VERIFICATION": {
     "url": "/users/@me/mfa/codes-verification",
@@ -2020,7 +2066,12 @@
   },
   "BILLING_SUBSCRIPTION": {
     "url": "/users/@me/billing/subscriptions/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "BILLING_SUBSCRIPTION_PREVIEW": {
     "url": "/users/@me/billing/subscriptions/:param/preview",
@@ -2523,7 +2574,10 @@
   },
   "STREAM": {
     "url": "/streams/:param/stream",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_PREVIEW": {
     "url": "/guilds/:param/preview",
@@ -2863,7 +2917,12 @@
   },
   "GUILD_AUTOMOD_RULES": {
     "url": "/guilds/:param/auto-moderation/rules",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_AUTOMOD_RULE": {
     "url": "/guilds/:param/auto-moderation/rules/:param",
@@ -3277,7 +3336,12 @@
   },
   "GUILD_CONVERT_TO_CLAN": {
     "url": "/clan/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "TENOR_ASSET_PATH": {
     "url": "/tenor",
@@ -3367,7 +3431,7 @@
   },
   "APPLICATION_COMMAND_INDEX_CHANNEL": {
     "url": "/channels/:param/application-command-index",
-    "allowed_methods": null
+    "allowed_methods": []
   },
   "APPLICATION_COMMAND_INDEX_GUILD": {
     "url": "/guilds/:param/application-command-index",
@@ -3435,7 +3499,11 @@
   },
   "CHANNEL_HIGHLIGHTS": {
     "url": "/guilds/:param/channel-highlights",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_EMAIL": {
     "url": "/users/@me/email",
@@ -3577,7 +3645,10 @@
   },
   "CONNECT_REQUEST_CREATE": {
     "url": "/consoles/connect-request",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CONNECT_REQUEST": {
     "url": "/consoles/connect-request/:param",
@@ -3643,7 +3714,11 @@
   },
   "USER_PREMIUM_LIKELIHOOD": {
     "url": "/users/@me/billing/premium-likelihood",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "BURST_CREDIT_BALANCE": {
     "url": "/users/@me/burst-credits",
@@ -3740,7 +3815,13 @@
   },
   "APPLICATIONS_SHELF": {
     "url": "/applications/shelf",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
   },
   "DISCORDIFY_ME": {
     "url": "/users/@me/avatars/discordify",
@@ -3874,7 +3955,10 @@
   },
   "BULK_GUILD_BAN": {
     "url": "/guilds/:param/bulk-ban",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "EXPLICIT_MEDIA_GET_VALID_CONTENT_SCAN_VERSION": {
     "url": "/explicit-media/current-version",
@@ -3972,7 +4056,10 @@
   },
   "QUESTS_PREVIEW_COMPLETE": {
     "url": "/quests/:param/preview/complete",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "ATTACHMENTS_REFRESH_URLS": {
     "url": "/attachments/refresh-urls",
@@ -4026,11 +4113,17 @@
   },
   "USER_LOOTBOX_OPEN_ITEM": {
     "url": "/users/@me/lootboxes/open",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "USER_LOOTBOX_REDEEM_PRIZE": {
     "url": "/users/@me/lootboxes/redeem-prize",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "LOOTBOX_COUNT": {
     "url": "/lootboxes/count",
