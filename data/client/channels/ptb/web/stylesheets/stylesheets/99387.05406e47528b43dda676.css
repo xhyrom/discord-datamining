@@ -48788,7 +48788,9 @@ html .progress__00e29 {
 }
 
 .contentImage__1c893 {
-    border-radius: var(--radius-xs)
+    border-radius: var(--radius-xs);
+    -o-object-fit: contain;
+    object-fit: contain
 }
 
 .menu__8306d {
@@ -131568,4 +131570,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.288b008a1dc9d2bf051f.css.map*/
+/*# sourceMappingURL=99387.05406e47528b43dda676.css.map*/
