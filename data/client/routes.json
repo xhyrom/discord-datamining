@@ -2496,7 +2496,10 @@
   },
   "USER_OFFER": {
     "url": "/users/@me/billing/user-offer",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "USER_OFFER_ACKNOWLEDGED": {
     "url": "/users/@me/billing/user-offer/ack",
@@ -2653,7 +2656,11 @@
   },
   "STICKER_PACKS": {
     "url": "/sticker-packs",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_STICKER_PACKS": {
     "url": "/guilds/:param/stickers",
@@ -2729,7 +2736,10 @@
   },
   "CHANNEL_MESSAGE_THREADS": {
     "url": "/channels/:param/messages/:param/threads",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "APPLICATION_BOT_GUILD_COMMAND_PERMISSIONS": {
     "url": "/applications/:param/guilds/:param/commands/:param/permissions",
@@ -2824,7 +2834,10 @@
   },
   "USER_SURVEY_SEEN": {
     "url": "/users/@me/survey/:param/seen",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_EVENTS": {
     "url": "/guild-events",
@@ -2984,7 +2997,14 @@
   },
   "DIRECTORY_CHANNEL_ENTRY": {
     "url": "/channels/:param/directory-entry/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "POST"
+    ]
   },
   "DIRECTORY_ENTRIES_SEARCH": {
     "url": "/channels/:param/directory-entries/search",
@@ -3086,7 +3106,11 @@
   },
   "DROPS_PLATFORM_AVAILABILITY": {
     "url": "/drops/reward-code/availability",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "DROPS_HEARTBEAT": {
     "url": "/drops/quests/:param/heartbeat",
@@ -3768,7 +3792,11 @@
   },
   "FAMILY_CENTER_TEEN_ACTIVITY": {
     "url": "/family-center/:param/activity",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "FAMILY_CENTER_TEEN_ACTIVITY_ME": {
     "url": "/family-center/@me",
@@ -3881,7 +3909,11 @@
   },
   "EMOJI_CAPTIONS_GET": {
     "url": "/users/@me/emoji-captions",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "SAFETY_HUB": {
     "url": "/safety-hub/@me",
