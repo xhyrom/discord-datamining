@@ -1080,7 +1080,10 @@
   },
   "POMELO_CREATE": {
     "url": "/users/@me/pomelo",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "DELETE_ACCOUNT": {
     "url": "/users/@me/delete",
@@ -1298,7 +1301,10 @@
   },
   "LOGIN_SMS_SEND": {
     "url": "/auth/mfa/sms/send",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "REMOTE_AUTH_INITIALIZE": {
     "url": "/users/@me/remote-auth",
@@ -1408,7 +1414,10 @@
   },
   "METRICS_V2": {
     "url": "/metrics/v2",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "SSO": {
     "url": "/sso",
@@ -1522,7 +1531,13 @@
   },
   "APPLICATIONS_DETECTABLE": {
     "url": "/applications/detectable",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
   },
   "APPLICATION_ICON": {
     "url": "/applications/:param/app-icons/:param.png",
@@ -1644,7 +1659,10 @@
   },
   "MFA_SMS_ENABLE": {
     "url": "/users/@me/mfa/sms/enable",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MFA_SMS_DISABLE": {
     "url": "/users/@me/mfa/sms/disable",
@@ -1834,7 +1852,10 @@
   },
   "USER_GUILD_BOOST_SLOT_UNCANCEL": {
     "url": "/users/@me/guilds/premium/subscription-slots/:param/uncancel",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "SEARCH_CHANNEL": {
     "url": "/channels/:param/messages/search",
@@ -1884,7 +1905,11 @@
   },
   "BILLING_PAYMENT": {
     "url": "/users/@me/billing/payments/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "BILLING_PAYMENTS_VOID": {
     "url": "/users/@me/billing/payments/:param/void",
@@ -2400,7 +2425,12 @@
   },
   "USER_GIFT_CODES": {
     "url": "/users/@me/entitlements/gift-codes",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "USER_TRIAL_OFFER": {
     "url": "/users/@me/billing/user-trial-offer",
@@ -2582,7 +2612,13 @@
   },
   "GUILD_STICKER": {
     "url": "/guilds/:param/stickers/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "STICKER_GUILD_DATA": {
     "url": "/stickers/:param/guild",
@@ -2793,7 +2829,10 @@
   },
   "GUILD_EVENT_EXCEPTIONS": {
     "url": "/guilds/:param/scheduled-events/:param/exceptions",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_EVENT_EXCEPTION": {
     "url": "/guilds/:param/scheduled-events/:param/exceptions/:param",
@@ -3175,7 +3214,10 @@
   },
   "CREATOR_MONETIZATION_REMOVE_MONETIZATION": {
     "url": "/guilds/:param/creator-monetization/remove-monetization",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "SUBSCRIPTION_PLAN_GROUP_LISTING": {
     "url": "/subscription-plans/:param/subscription-group-listing",
@@ -3317,7 +3359,11 @@
   },
   "APPLICATION_COMMANDS_SEARCH": {
     "url": "/channels/:param/application-commands/search",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "APPLICATION_COMMAND_INDEX_CHANNEL": {
     "url": "/channels/:param/application-command-index",
@@ -3583,7 +3629,10 @@
   },
   "SHARED_CANVAS_EMOJI_HOSES": {
     "url": "/channels/:param/:param/shared-canvas/emoji-hose",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "SHARED_CANVAS_EMOJI_HOSE": {
     "url": "/channels/:param/:param/shared-canvas/emoji-hose/:param",
@@ -3770,7 +3819,10 @@
   },
   "SAFETY_HUB_REQUEST_SUSPENDED_USER_REVIEW": {
     "url": "/safety-hub/suspended/request-review/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "SAFETY_HUB_SUSPENDED": {
     "url": "/safety-hub/suspended/@me",
@@ -3826,7 +3878,11 @@
   },
   "EXPLICIT_MEDIA_GET_VALID_CONTENT_SCAN_VERSION": {
     "url": "/explicit-media/current-version",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "EXPLICIT_MEDIA_SCAN_MESSAGES": {
     "url": "/channels/:param/explicit-media",
@@ -3892,7 +3948,12 @@
   },
   "QUESTS_REWARD_CODE": {
     "url": "/quests/:param/reward-code",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "QUESTS_DISMISS_CONTENT": {
     "url": "/quests/:param/dismissible-content/:param/dismiss",
