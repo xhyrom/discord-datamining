@@ -22890,8 +22890,6 @@ html.disable-forced-colors * {
     display: flex;
     flex: 1 1 auto;
     align-items: center;
-    margin: var(--spacing-16);
-    border-radius: 6px;
     padding: var(--spacing-8)var(--spacing-12)var(--spacing-8)var(--spacing-16);
     background: var(--background-floating);
     position: sticky;
@@ -28186,4 +28184,4 @@ span.button_ae40a4.disabled__1dc58 {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.6e7c3a8bc9b2c4e2af6d.css.map*/
+/*# sourceMappingURL=49237.155ec3fd4f66c9e57b03.css.map*/
