@@ -36549,7 +36549,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281150", ", Version Hash: ").concat("81e9442c11bc19ac1a2b826fdb671a18faf11849")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281155", ", Version Hash: ").concat("d2bfe33c5918549571749a604697c67665ed0bea")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -37939,6 +37939,7 @@
                 BLOCKED_MESSAGES: "{count, plural, one {1 Blocked Message} other {{count} Blocked Messages}}",
                 LOAD_MORE_MESSAGES: "Load more messages",
                 AKA: "AKA",
+                AKA_DISPLAY_NAME: "AKA {displayName}",
                 CHARACTER_COUNT_AT_LIMIT: "Message is at max length",
                 CHARACTER_COUNT_CLOSE_TO_LIMIT: "{count} characters remaining",
                 CHARACTER_COUNT_OVER_LIMIT: "Message is too long",
@@ -41982,8 +41983,6 @@
                 FORM_HELP_CHANNEL_PERMISSIONS: "Change privacy settings and customize how members can interact with this channel.",
                 NEW_PERMISSION: "New Permission",
                 PERMISSION_OVERRIDES: "Permission Overrides",
-                VIEW_PROFILE: "View Profile",
-                VIEW_PROFILE_USERNAME: "View Profile, !!{username}!!",
                 BUNDLE_READY_TITLE: "Augment Complete",
                 BUNDLE_READY_BODY: "Restart Discord for some improvements!",
                 BUNDLE_READY_RESTART: "Restart",
@@ -42582,6 +42581,7 @@
                 REMOVE_FRIEND: "Remove Friend",
                 YOUR_FRIENDS: "Your Friends",
                 BLOCKED: "Blocked",
+                REQUEST_SENT: "Request Sent",
                 INCOMING_FRIEND_REQUEST: "Incoming Friend Request",
                 INCOMING_FRIEND_REQUESTS: "Incoming Friend Requests",
                 INCOMING_FRIEND_REQUEST_FROM: "Incoming Friend Request from !!{name}!!",
@@ -47372,11 +47372,22 @@
                 GUILD_FOLDER_COLOR: "Folder Color",
                 GUILD_FOLDER_UNNAMED: "Unnamed Server Folder",
                 GUILD_FOLDER_UPDATED_SUCCESS: "Folder settings saved!",
+                VIEW_PROFILE: "View Profile",
+                VIEW_PROFILE_USERNAME: "View Profile, !!{username}!!",
+                VIEW_FULL_PROFILE: "View Full Profile",
+                VIEW_MAIN_PROFILE: "View Main Profile",
+                VIEW_SERVER_PROFILE: "View Server Profile",
+                EDIT_PROFILE: "Edit Profile",
+                EDIT_MAIN_PROFILE: "Edit Main Profile",
                 USER_PROFILE_MESSAGE: "Message",
                 USER_PROFILE_AUDIO: "Call",
                 USER_PROFILE_VIDEO: "Video",
+                USER_PROFILE_BIO_SEE_MORE: "see more",
+                USER_PROFILE_ADD_ROLE: "Add Role",
                 USER_PROFILE_ADD_FRIEND: "Add Friend",
                 USER_PROFILE_PENDING: "Pending",
+                USER_PROFILE_NO_MUTUAL_FRIENDS: "No Mutual Friends",
+                USER_PROFILE_NO_MUTUAL_SERVERS: "No Mutual Servers",
                 USER_PROFILE_MUTUAL_FRIENDS: "{count, plural, =0 {0 Mutual Friends} one {1 Mutual Friend} other {{count} Mutual Friends}}",
                 USER_PROFILE_MUTUAL_GUILDS: "{count, plural, =0 {0 Mutual Servers} one {1 Mutual Server} other {{count} Mutual Servers}}",
                 USER_PROFILE_MUTUAL_FRIENDS_SHORT: "{count, plural, =0 {0 Friends} one {1 Friend} other {{count} Friends}}",
@@ -49559,7 +49570,6 @@
                 PROFILE_HEADING_COPY_ID_A11Y_HINT: "double tap to copy user I.D",
                 PROFILE_CUSTOMIZATION_PREVIEW: "Preview",
                 PROFILE_CUSTOMIZATION_ACTIVITY_TIME: "$[](renderTimeHook) elapsed",
-                EDIT_PROFILE: "Edit Profile",
                 USER_SETTINGS_BANNER_A11Y_LABEL: "Change Profile Banner",
                 PROFILE_CUSTOMIZATION_GUILD_SELECT_TITLE: "Choose a Server",
                 PROFILE_CUSTOMIZATION_GUILD_SELECT_PLACEHOLDER: "Search servers",
@@ -85504,8 +85514,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281150", "281150"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281150")), t = 0), t
+                let t = parseInt((e = "281155", "281155"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281155")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107515,8 +107525,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281150",
-                    versionHash: "81e9442c11bc19ac1a2b826fdb671a18faf11849"
+                    buildNumber: "281155",
+                    versionHash: "d2bfe33c5918549571749a604697c67665ed0bea"
                 }
             }
             n.r(t), n.d(t, {
@@ -157765,8 +157775,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712159087768",
-                                    build_number: "281150"
+                                    built_at: "1712161587559",
+                                    build_number: "281155"
                                 }
                             },
                             retries: 1
@@ -231893,7 +231903,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "81e9442c11bc19ac1a2b826fdb671a18faf11849"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d2bfe33c5918549571749a604697c67665ed0bea"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257997,7 +258007,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281150"
+                                build_number: "281155"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265142,7 +265152,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281150", "281150"), 10);
+                let s = parseInt((n = "281155", "281155"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291928,4 +291938,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.55965995543da05982b1.js.map
+//# sourceMappingURL=97256.7ea50b09687fbdde787f.js.map
