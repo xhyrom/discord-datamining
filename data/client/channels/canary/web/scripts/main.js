@@ -36549,7 +36549,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281269", ", Version Hash: ").concat("1efd8f23778992f93e010edfd92ef6357ded1ed9")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281281", ", Version Hash: ").concat("73482c30b663ab24a56f7abdfc37698f94071200")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85527,8 +85527,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281269", "281269"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281269")), t = 0), t
+                let t = parseInt((e = "281281", "281281"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281281")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107538,8 +107538,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281269",
-                    versionHash: "1efd8f23778992f93e010edfd92ef6357ded1ed9"
+                    buildNumber: "281281",
+                    versionHash: "73482c30b663ab24a56f7abdfc37698f94071200"
                 }
             }
             n.r(t), n.d(t, {
@@ -157788,8 +157788,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712174352653",
-                                    build_number: "281269"
+                                    built_at: "1712175564159",
+                                    build_number: "281281"
                                 }
                             },
                             retries: 1
@@ -166849,20 +166849,21 @@
                 O = null,
                 p = [],
                 R = !1,
-                C = () => !0;
+                C = 0,
+                g = () => !0;
 
-            function g(e) {
+            function L(e) {
                 h.add(e)
             }
 
-            function L(e) {
+            function D(e) {
                 let {
                     messages: t
                 } = e;
-                t.forEach(e => D(e))
+                t.forEach(e => v(e))
             }
 
-            function D(e) {
+            function v(e) {
                 let t = e.type === o.MessageTypes.PREMIUM_REFERRAL ? e.content : null;
                 if (null == t) return !1;
                 if (!A.has(t) && !h.has(t)) {
@@ -166870,9 +166871,9 @@
                     n = t, h.add(n), u.default.wait(() => (0, _.resolveReferralTrialOffer)(t).catch(c.NOOP_NULL))
                 }
             }
-            class v extends(i = l.default.Store) {
+            class M extends(i = l.default.Store) {
                 initialize() {
-                    this.waitFor(d.default), this.syncWith([d.default], C)
+                    this.waitFor(d.default), this.syncWith([d.default], g)
                 }
                 checkAndFetchReferralsRemaining() {
                     null == E && !S && N < 5 && (null == O || O < Date.now()) && (0, _.fetchReferralsRemaining)()
@@ -166904,13 +166905,16 @@
                 getFetchingEligibleUsers() {
                     return R
                 }
+                getNextIndexOfEligibleUsers() {
+                    return C
+                }
             }
-            a = "ReferralTrialStore", (s = "displayName") in(r = v) ? Object.defineProperty(r, s, {
+            a = "ReferralTrialStore", (s = "displayName") in(r = M) ? Object.defineProperty(r, s, {
                 value: a,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : r[s] = a, t.default = new v(u.default, {
+            }) : r[s] = a, t.default = new M(u.default, {
                 BILLING_REFERRAL_TRIAL_OFFER_UPDATE: function(e) {
                     let {
                         userTrialOfferId: t,
@@ -166978,23 +166982,24 @@
                 },
                 REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: function(e) {
                     let {
-                        users: t
+                        users: t,
+                        nextIndex: n
                     } = e;
-                    R = !1, p = t
+                    R = !1, p = t, C = n
                 },
                 REFERRALS_FETCH_ELIGIBLE_USER_FAIL: function() {
                     R = !1
                 },
-                LOAD_MESSAGES_SUCCESS: L,
+                LOAD_MESSAGES_SUCCESS: D,
                 MESSAGE_CREATE: function(e) {
                     let {
                         message: t
                     } = e;
-                    D(t)
+                    v(t)
                 },
-                LOAD_MESSAGES_AROUND_SUCCESS: L,
+                LOAD_MESSAGES_AROUND_SUCCESS: D,
                 LOGOUT: function() {
-                    E = null, I = {}, T = [], f = new Set, S = !1, h = new Set, A = new Set, m = {}, N = 0, O = null, p = [], R = !1
+                    E = null, I = {}, T = [], f = new Set, S = !1, h = new Set, A = new Set, m = {}, N = 0, O = null, p = [], R = !1, C = 0
                 }
             })
         },
@@ -231893,7 +231898,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "1efd8f23778992f93e010edfd92ef6357ded1ed9"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "73482c30b663ab24a56f7abdfc37698f94071200"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257997,7 +258002,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281269"
+                                build_number: "281281"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265142,7 +265147,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281269", "281269"), 10);
+                let s = parseInt((n = "281281", "281281"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291928,4 +291933,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.569a9c353f83a1dd46b6.js.map
+//# sourceMappingURL=97256.d2a43922ff0890559dea.js.map
