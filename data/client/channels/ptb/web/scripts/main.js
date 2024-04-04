@@ -36543,7 +36543,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281773", ", Version Hash: ").concat("2c968c0c3b791f15fa842d1d2d0307cb6c32b91c")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281787", ", Version Hash: ").concat("659a1c645ddd37db9772704cadfcda3a3e9723bb")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -39461,6 +39461,8 @@
                 MEMBER_VERIFICATION_VERIFICATION_FIELD_SETTINGS_TOOLTIP: "New members will also be required to pass your verification level requirements.",
                 MEMBER_VERIFICATION_MEMBER_APPLICATION: "Member Application",
                 MEMBER_VERIFICATION_MEMBER_APPLICATIONS: "Member Applications",
+                MEMBER_VERIFICATION_MEMBER_APPLICATION_SETUP: "Application Setup",
+                MEMBER_VERIFICATION_PREVIEW_APPLICATION: "Preview Application",
                 GUILD_JOIN_REQUEST_STATUS_TOOLTIP_STARTED: "Membership Incomplete",
                 GUILD_JOIN_REQUEST_STATUS_TOOLTIP_PENDING: "Membership In Review",
                 GUILD_JOIN_REQUEST_STATUS_TOOLTIP_REJECTED: "Membership Rejected",
@@ -55252,6 +55254,9 @@
                 CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS: "!!{items}!!, and !!{last}!!",
                 CLAN_START_INTERVIEW: "Start Interview",
                 CLAN_JOIN_INTERVIEW: "Join Interview",
+                CLAN_APPLICATION_SETUP_HEADER: "Set up the member screening application for **!!{guildName}!!** here. The application must have at least one Short Answer, Paragraph, or Multiple Choice section.",
+                CLAN_APPLICATION_CANT_REMOVE_FIELD: "Clan applications must have at least one non-rules question.",
+                MEMBER_VERIFICATION_ANSWER_PLACEHOLDER: "Enter your answer",
                 SIGNUP_BUTTON_TOOLTIP_CTA: "Click to preview",
                 SIGNUP_COMPLETE_CTA: "Sign Up",
                 SIGNUP_EMAIL_PROMPT: "Confirm your email to secure your spot on the waitlist",
@@ -65826,8 +65831,7 @@
                     everLaunchedActivities: new Set,
                     seenNewActivities: {},
                     seenUpdatedActivities: {},
-                    shouldShowNewActivityIndicator: !1,
-                    usersHavePlayedByApp: new Map
+                    shouldShowNewActivityIndicator: !1
                 },
                 p = [],
                 R = new Map,
@@ -65860,13 +65864,9 @@
                     activitySessionId: c
                 } = e, I = (0, f.default)(s);
                 if (null == I) return;
-                let S = u.default.getBasicChannel(r),
-                    h = null != S && d.default.canBasicChannel(m.BasicPermissions.CONNECT, S) || (null == S ? void 0 : S.type) === m.ChannelTypes.DM || (null == S ? void 0 : S.type) === m.ChannelTypes.GROUP_DM;
-                if (function(e, t) {
-                        var n;
-                        O.usersHavePlayedByApp.set(e, new Set([...null !== (n = O.usersHavePlayedByApp.get(e)) && void 0 !== n ? n : [], ...t]))
-                    }(s, _), !h) return;
-                let A = {
+                let S = u.default.getBasicChannel(r);
+                if (!(null != S && d.default.canBasicChannel(m.BasicPermissions.CONNECT, S) || (null == S ? void 0 : S.type) === m.ChannelTypes.DM || (null == S ? void 0 : S.type) === m.ChannelTypes.GROUP_DM)) return;
+                let h = {
                         activitySessionId: null != c ? c : o,
                         applicationId: s,
                         channelId: r,
@@ -65875,26 +65875,26 @@
                         url: I,
                         userIds: new Set(_)
                     },
-                    N = l.default.getId(),
-                    p = R.get(A.applicationId);
-                _.some(e => e === N) && null != p && (R.set(p.applicationId, {
-                    ...p,
-                    ...A
+                    A = l.default.getId(),
+                    N = R.get(h.applicationId);
+                _.some(e => e === A) && null != N && (R.set(N.applicationId, {
+                    ...N,
+                    ...h
                 }), a.default.dispatch({
                     type: "EMBEDDED_ACTIVITY_INSTANCE_CHANGE",
                     channelId: r,
                     instanceId: o
-                })), null != p && r === p.channelId && !_.some(e => e === N) && Array.from(p.userIds).some(e => e === N) ? L.get(r) === s ? L.delete(r) : R.delete(s) : _.some(e => e === N) && (null == p || p.applicationId !== s || p.channelId !== r) && (null != c && c === l.default.getSessionId() || (0, T.shouldMountActivityIFrameFromGatewayUpdateWithoutSessionIdCheck)("EmbeddedActivitiesStore")) && (x({
+                })), null != N && r === N.channelId && !_.some(e => e === A) && Array.from(N.userIds).some(e => e === A) ? L.get(r) === s ? L.delete(r) : R.delete(s) : _.some(e => e === A) && (null == N || N.applicationId !== s || N.channelId !== r) && (null != c && c === l.default.getSessionId() || (0, T.shouldMountActivityIFrameFromGatewayUpdateWithoutSessionIdCheck)("EmbeddedActivitiesStore")) && (x({
                     channelId: r,
                     applicationId: s,
                     instanceId: o
                 }), E.ComponentDispatch.dispatch(m.ComponentActions.OPEN_EMBEDDED_ACTIVITY, {
                     channelId: r
                 }));
-                let D = (null !== (t = g.get(r)) && void 0 !== t ? t : []).filter(e => e.applicationId !== s),
-                    v = k(i),
-                    M = (null !== (n = C.get(v)) && void 0 !== n ? n : []).filter(e => !(e.applicationId === s && e.channelId === r));
-                0 !== _.length && (D.push(A), M.push(A)), g.set(r, D), C.set(v, M)
+                let O = (null !== (t = g.get(r)) && void 0 !== t ? t : []).filter(e => e.applicationId !== s),
+                    p = k(i),
+                    D = (null !== (n = C.get(p)) && void 0 !== n ? n : []).filter(e => !(e.applicationId === s && e.channelId === r));
+                0 !== _.length && (O.push(h), D.push(h)), g.set(r, O), C.set(p, D)
             }
 
             function F(e) {
@@ -65947,20 +65947,12 @@
             class j extends(r = s.default.PersistedStore) {
                 initialize(e) {
                     var t, n;
-                    let i = new Map;
-                    Array.isArray(null == e ? void 0 : e.usersHavePlayedByApp) && (null == e || e.usersHavePlayedByApp.forEach(e => {
-                        if (Array.isArray(e)) {
-                            let [t, n] = e;
-                            "string" == typeof t && Array.isArray(n) && i.set(t, new Set(n))
-                        }
-                    }));
-                    let r = new Set(null !== (t = null == e ? void 0 : e.seenActivities) && void 0 !== t ? t : []),
-                        s = new Set(null !== (n = null == e ? void 0 : e.everLaunchedActivities) && void 0 !== n ? n : []);
+                    let i = new Set(null !== (t = null == e ? void 0 : e.seenActivities) && void 0 !== t ? t : []),
+                        r = new Set(null !== (n = null == e ? void 0 : e.everLaunchedActivities) && void 0 !== n ? n : []);
                     null != e && (O = {
                         ...e,
-                        seenActivities: r,
-                        everLaunchedActivities: s,
-                        usersHavePlayedByApp: i
+                        seenActivities: i,
+                        everLaunchedActivities: r
                     })
                 }
                 getState() {
@@ -66029,10 +66021,6 @@
                 getLayoutModeForApp(e) {
                     return b.get(e)
                 }
-                getUsersHavePlayedByApp(e) {
-                    var t;
-                    return [...null !== (t = O.usersHavePlayedByApp.get(e)) && void 0 !== t ? t : []]
-                }
                 getConnectedActivityChannelId() {
                     return i
                 }
@@ -66089,7 +66077,9 @@
                     ...e,
                     everLaunchedActivities: n
                 }
-            }]);
+            }, e => (delete e.usersHavePlayedByApp, {
+                ...e
+            })]);
             let W = new j(a.default, {
                 ACTIVITY_LAYOUT_MODE_UPDATE: function(e) {
                     let {
@@ -85529,8 +85519,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281773", "281773"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281773")), t = 0), t
+                let t = parseInt((e = "281787", "281787"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281787")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103281,15 +103271,16 @@
                         type: "COLLECTIBLES_CATEGORIES_FETCH"
                     });
                     let t = {};
-                    null != e && (!0 === e.noCache && (t.no_cache = !0), !0 === e.includeUnpublished && (t.include_unpublished = !0), null != e.countryCode && (t.countryCode = e.countryCode));
+                    null != e && (!0 === e.noCache && (t.no_cache = !0), !0 === e.includeUnpublished && (t.include_unpublished = !0), null != e.countryCode && (t.country_code = e.countryCode));
                     try {
-                        let e = await i.HTTP.get({
+                        let n = await i.HTTP.get({
                             url: d.Endpoints.COLLECTIBLES_CATEGORIES,
                             query: t
                         });
                         r.default.dispatch({
                             type: "COLLECTIBLES_CATEGORIES_FETCH_SUCCESS",
-                            categories: e.body.map(o.default.fromServer)
+                            categories: n.body.map(o.default.fromServer),
+                            fetchedCountryCode: null == e ? void 0 : e.countryCode
                         })
                     } catch (e) {
                         throw r.default.dispatch({
@@ -103380,27 +103371,27 @@
         },
         597688: function(e, t, n) {
             "use strict";
-            let i, r;
+            let i, r, s;
             n.r(t), n("47120");
-            var s, a, o, l, u = n("392711"),
-                d = n("442837"),
-                _ = n("570140"),
-                c = n("706454"),
-                E = n("884697");
-            let I = new Map,
-                T = new Map,
-                f = I,
+            var a, o, l, u, d = n("392711"),
+                _ = n("442837"),
+                c = n("570140"),
+                E = n("706454"),
+                I = n("884697");
+            let T = new Map,
+                f = new Map,
                 S = T,
-                h = !1;
-            let A = () => {
-                f = I, S = T, r = void 0, h = !1, i = void 0
+                h = f,
+                A = !1;
+            let m = () => {
+                S = T, h = f, r = void 0, A = !1, i = void 0
             };
-            class m extends(s = d.default.Store) {
+            class N extends(a = _.default.Store) {
                 initialize() {
-                    this.syncWith([c.default], A)
+                    this.syncWith([E.default], m)
                 }
                 get isFetching() {
-                    return h
+                    return A
                 }
                 get error() {
                     return i
@@ -103408,54 +103399,58 @@
                 get lastFetched() {
                     return r
                 }
-                get categories() {
-                    return f
+                get fetchedCountryCode() {
+                    return s
                 }
-                get products() {
+                get categories() {
                     return S
                 }
+                get products() {
+                    return h
+                }
                 getCategory(e) {
-                    return null != e ? f.get(e) : void 0
+                    return null != e ? S.get(e) : void 0
                 }
                 getProduct(e) {
-                    return null != e ? S.get(e) : void 0
+                    return null != e ? h.get(e) : void 0
                 }
                 getCategoryForProduct(e) {
                     let t = this.getProduct(e);
                     return this.getCategory(null == t ? void 0 : t.categorySkuId)
                 }
             }
-            l = "CollectiblesCategoryStore", (o = "displayName") in(a = m) ? Object.defineProperty(a, o, {
-                value: l,
+            u = "CollectiblesCategoryStore", (l = "displayName") in(o = N) ? Object.defineProperty(o, l, {
+                value: u,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : a[o] = l, t.default = new m(_.default, {
+            }) : o[l] = u, t.default = new N(c.default, {
                 COLLECTIBLES_CATEGORIES_FETCH: e => {
-                    h = !0, i = void 0
+                    A = !0, i = void 0
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: e => {
-                    0 === e.categories.length ? (f = I, S = T) : !(0, u.isEqual)([...f.values()], e.categories) && (f = new Map(e.categories.map(e => [e.skuId, e])), S = new Map((0, E.getProductsFromCategories)(f).map(e => [e.skuId, e]))), r = Date.now(), h = !1, i = void 0
+                    var t;
+                    0 === e.categories.length ? (S = T, h = f) : !(0, d.isEqual)([...S.values()], e.categories) && (S = new Map(e.categories.map(e => [e.skuId, e])), h = new Map((0, I.getProductsFromCategories)(S).map(e => [e.skuId, e]))), r = Date.now(), A = !1, i = void 0, s = null !== (t = e.fetchedCountryCode) && void 0 !== t ? t : s
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_FAILURE: e => {
                     let {
                         error: t
                     } = e;
-                    f = I, S = T, h = !1, i = t
+                    S = T, h = f, A = !1, i = t
                 },
                 COLLECTIBLES_PRODUCT_FETCH: e => {
-                    h = !0, i = void 0
+                    A = !0, i = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_SUCCESS: e => {
-                    S.set(e.product.skuId, e.product), h = !1, i = void 0
+                    h.set(e.product.skuId, e.product), A = !1, i = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_FAILURE: e => {
                     let {
                         error: t
                     } = e;
-                    h = !1, i = t
+                    A = !1, i = t
                 },
-                LOGOUT: A
+                LOGOUT: m
             })
         },
         574709: function(e, t, n) {
@@ -107540,8 +107535,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281773",
-                    versionHash: "2c968c0c3b791f15fa842d1d2d0307cb6c32b91c"
+                    buildNumber: "281787",
+                    versionHash: "659a1c645ddd37db9772704cadfcda3a3e9723bb"
                 }
             }
             n.r(t), n.d(t, {
@@ -143294,7 +143289,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("58153"), n.e("25381"), n.e("79504"), n.e("33053"), n.e("51238"), n.e("56630"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("16114"), n.e("85552"), n.e("3084"), n.e("74456"), n.e("58227"), n.e("43502"), n.e("49398"), n.e("65840"), n.e("43643"), n.e("95003"), n.e("75301"), n.e("65892"), n.e("62856"), n.e("29598")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("58153"), n.e("25381"), n.e("79504"), n.e("33053"), n.e("51238"), n.e("56630"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("16114"), n.e("3084"), n.e("74456"), n.e("58227"), n.e("43502"), n.e("49398"), n.e("65840"), n.e("43643"), n.e("95003"), n.e("75301"), n.e("65892"), n.e("62856"), n.e("29598")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -157768,8 +157763,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712261250225",
-                                    build_number: "281773"
+                                    built_at: "1712262002926",
+                                    build_number: "281787"
                                 }
                             },
                             retries: 1
@@ -231988,7 +231983,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2c968c0c3b791f15fa842d1d2d0307cb6c32b91c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "659a1c645ddd37db9772704cadfcda3a3e9723bb"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258078,7 +258073,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281773"
+                                build_number: "281787"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265223,7 +265218,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281773", "281773"), 10);
+                let s = parseInt((n = "281787", "281787"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -290666,13 +290661,7 @@
                             }
                         }() > 160,
                         n = e ? "vertical" : "horizontal";
-                    if (!(t && e) && (function() {
-                            try {
-                                return window.Firebug.chrome.isInitialized
-                            } catch (e) {
-                                return !1
-                            }
-                        }() || e || t)) {
+                    if (!(t && e) && (e || t)) {
                         let e = a.open;
                         a = {
                             open: !0,
@@ -291971,4 +291960,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.fe4fde55f5f7211fb616.js.map
+//# sourceMappingURL=97256.47ab45f1beb1146e504b.js.map
