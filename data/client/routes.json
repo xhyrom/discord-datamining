@@ -1805,7 +1805,12 @@
   },
   "DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS": {
     "url": "/users/disable-server-highlight-notifications",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CHANNEL_WEBHOOKS": {
     "url": "/channels/:param/webhooks",
@@ -1914,7 +1919,11 @@
   },
   "GUILD_APPLICATIONS": {
     "url": "/guilds/:param/applications",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "APPLIED_GUILD_BOOSTS_FOR_GUILD": {
     "url": "/guilds/:param/premium/subscriptions",
@@ -1994,7 +2003,14 @@
   },
   "BILLING_PAYMENT_SOURCES_VALIDATE_BILLING_ADDRESS": {
     "url": "/users/@me/billing/payment-sources/validate-billing-address",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "POST"
+    ]
   },
   "BILLING_PAYMENT_SOURCE": {
     "url": "/users/@me/billing/payment-sources/:param",
@@ -2660,7 +2676,11 @@
   },
   "GUILD_PREVIEW": {
     "url": "/guilds/:param/preview",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_AFFINITIES": {
     "url": "/users/@me/affinities/users",
@@ -2801,7 +2821,12 @@
   },
   "ACTIVITY_TEST_MODE": {
     "url": "/activities/:param/test-mode",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "ACTIVITY_UPLOAD_ATTACHMENT": {
     "url": "/activities/:param/attachment",
@@ -3448,7 +3473,10 @@
   },
   "GUILD_PRODUCTS": {
     "url": "/guilds/:param/products",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_PRODUCT_LISTINGS": {
     "url": "/guilds/:param/products/listings/:param",
@@ -3730,7 +3758,10 @@
   },
   "JOIN_ADMIN_SERVER": {
     "url": "/guilds/:param/join-admin-server",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "AUTH_SESSIONS": {
     "url": "/auth/sessions",
@@ -4281,7 +4312,11 @@
   },
   "USER_LOOTBOX_DATA": {
     "url": "/users/@me/lootboxes",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_LOOTBOX_OPEN_ITEM": {
     "url": "/users/@me/lootboxes/open",
