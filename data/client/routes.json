@@ -462,6 +462,10 @@
     "url": "/guilds/:param/discovery-requirements",
     "allowed_methods": null
   },
+  "DISCOVERY_GAME": {
+    "url": "/discovery/games/:param",
+    "allowed_methods": null
+  },
   "GUILD_RECOMMENDATIONS": {
     "url": "/guild-recommendations",
     "allowed_methods": [
@@ -1035,7 +1039,10 @@
   },
   "FORUM_TAGS": {
     "url": "/channels/:param/tags",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "FORUM_TAG": {
     "url": "/channels/:param/tags/:param",
@@ -1765,7 +1772,10 @@
   },
   "OAUTH2_DEVICE_VERIFY": {
     "url": "/oauth2/device/verify",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "OAUTH2_DEVICE_FINISH": {
     "url": "/oauth2/device/finish",
@@ -3255,7 +3265,12 @@
   },
   "TEAMS": {
     "url": "/teams",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "APPLICATIONS": {
     "url": "/applications",
@@ -3541,7 +3556,11 @@
   },
   "SUBSCRIPTION_PLAN_GROUP_LISTING": {
     "url": "/subscription-plans/:param/subscription-group-listing",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "SUBSCRIPTION_PLAN_GUILD_ROLE_GROUP_LISTING": {
     "url": "/subscription-plans/:param/guild-role-subscription-group-listing",
