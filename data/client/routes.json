@@ -1501,7 +1501,10 @@
   },
   "VERIFY_RESEND": {
     "url": "/auth/verify/resend",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "FORGOT_PASSWORD": {
     "url": "/auth/forgot",
@@ -1572,7 +1575,12 @@
   },
   "INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS": {
     "url": "/users/@me/guilds/integration-application-ids",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_GUILD_SETTINGS_BULK": {
     "url": "/users/@me/guilds/settings",
@@ -1715,7 +1723,10 @@
   },
   "MFA_TOTP_DISABLE": {
     "url": "/users/@me/mfa/totp/disable",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MFA_SMS_ENABLE": {
     "url": "/users/@me/mfa/sms/enable",
@@ -2324,7 +2335,11 @@
   },
   "STORE_PUBLISHED_LISTINGS_SKUS": {
     "url": "/store/published-listings/skus",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "STORE_PUBLISHED_LISTINGS_SKU": {
     "url": "/store/published-listings/skus/:param",
@@ -2634,7 +2649,11 @@
   },
   "GUILD_AFFINITIES": {
     "url": "/users/@me/affinities/guilds",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CHANNEL_AFFINITIES": {
     "url": "/users/@me/affinities/channels",
@@ -3292,7 +3311,10 @@
   },
   "CREATOR_MONETIZATION_ACCEPT_TERMS_V2": {
     "url": "/guilds/:param/creator-monetization/accept-terms",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CREATOR_MONETIZATION_RESTRICTIONS": {
     "url": "/guilds/:param/creator-monetization/restrictions",
@@ -3365,7 +3387,11 @@
   },
   "MEDIA_POST_RESHARE_GET_PREVIEW": {
     "url": "/channels/:param/media-post-preview",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "UNFURL_EMBED_URLS": {
     "url": "/unfurler/embed-urls",
@@ -3452,7 +3478,10 @@
   },
   "VIDEO_FILTER_ASSET": {
     "url": "/users/@me/video-filters/assets/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "VIDEO_FILTER_ASSET_LAST_USED": {
     "url": "/users/@me/video-filters/assets/:param/last-used",
@@ -3691,7 +3720,10 @@
   },
   "CUSTOM_CALL_SOUNDS": {
     "url": "/channels/:param/custom-call-sounds",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "VOICE_CHANNEL_EFFECTS": {
     "url": "/channels/:param/voice-channel-effects",
@@ -4019,7 +4051,10 @@
   },
   "FORCE_SEND_PROMPT": {
     "url": "/:param/force-send-prompt",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "EXPLICIT_MEDIA_REPORT_FALSE_POSITIVE": {
     "url": "/attachments/report-false-positive",
