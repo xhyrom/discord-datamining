@@ -36551,7 +36551,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281893", ", Version Hash: ").concat("08fe6903a30a216a65bcfee233557d259f5c1154")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281900", ", Version Hash: ").concat("672fe6eaf42bbf1f5dc3bb914c2a37e2d3160622")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85541,8 +85541,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281893", "281893"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281893")), t = 0), t
+                let t = parseInt((e = "281900", "281900"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281900")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107557,8 +107557,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281893",
-                    versionHash: "08fe6903a30a216a65bcfee233557d259f5c1154"
+                    buildNumber: "281900",
+                    versionHash: "672fe6eaf42bbf1f5dc3bb914c2a37e2d3160622"
                 }
             }
             n.r(t), n.d(t, {
@@ -157785,8 +157785,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712270345305",
-                                    build_number: "281893"
+                                    built_at: "1712271268083",
+                                    build_number: "281900"
                                 }
                             },
                             retries: 1
@@ -174924,10 +174924,12 @@
                 E = new Set,
                 I = new Set,
                 T = new Set,
-                f = new Map,
-                S = new Map;
+                f = new Set,
+                S = new Map,
+                h = new Map,
+                A = new Map;
 
-            function h(e, t) {
+            function m(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
                         updateProgress: !1
                     },
@@ -174946,12 +174948,12 @@
                 }
             }
 
-            function A(e, t) {
-                let n = new Map(f);
-                n.set(e, t), f = n;
+            function N(e, t) {
+                let n = new Map(S);
+                n.set(e, t), S = n;
                 let i = d.get(e),
                     r = null == i ? void 0 : i.userStatus;
-                null != r && null == r.claimedAt && h(e, {
+                null != r && null == r.claimedAt && m(e, {
                     userStatus: {
                         ...r,
                         claimedAt: t.claimedAt
@@ -174959,20 +174961,20 @@
                 })
             }
 
-            function m(e) {
-                null != S.get(e) && (S = new Map(S)).delete(e)
+            function O(e) {
+                null != A.get(e) && (A = new Map(A)).delete(e)
             }
 
-            function N(e) {
+            function p(e) {
                 let t = new Set(c);
                 t.delete(e), c = t
             }
 
-            function O(e) {
-                let t = new Set(T);
-                t.delete(e), T = t
+            function R(e) {
+                let t = new Set(f);
+                t.delete(e), f = t
             }
-            class p extends(i = o.default.Store) {
+            class C extends(i = o.default.Store) {
                 get quests() {
                     return d
                 }
@@ -174988,27 +174990,33 @@
                 isClaimingRewardCode(e) {
                     return E.has(e)
                 }
-                isFetchingRewardCode(e) {
+                isClaimingReward(e) {
                     return I.has(e)
                 }
-                isDismissingContent(e) {
+                isFetchingRewardCode(e) {
                     return T.has(e)
                 }
-                getRewardCode(e) {
-                    return f.get(e)
+                isDismissingContent(e) {
+                    return f.has(e)
                 }
-                getStreamHeartbeatFailure(e) {
+                getRewardCode(e) {
                     return S.get(e)
                 }
+                getRewards(e) {
+                    return h.get(e)
+                }
+                getStreamHeartbeatFailure(e) {
+                    return A.get(e)
+                }
             }
-            a = "QuestsStore", (s = "displayName") in(r = p) ? Object.defineProperty(r, s, {
+            a = "QuestsStore", (s = "displayName") in(r = C) ? Object.defineProperty(r, s, {
                 value: a,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : r[s] = a, t.default = new p(l.default, {
+            }) : r[s] = a, t.default = new C(l.default, {
                 LOGOUT: function() {
-                    u = !1, d = new Map, _ = 0, c = new Set, S = new Map
+                    u = !1, d = new Map, _ = 0, c = new Set, A = new Map
                 },
                 QUESTS_FETCH_CURRENT_QUESTS_BEGIN: function() {
                     _ = Date.now(), u = !0
@@ -175028,18 +175036,18 @@
                         streamKey: n,
                         userStatus: i
                     } = e;
-                    h(t, {
+                    m(t, {
                         userStatus: i
                     }, {
                         updateProgress: !0
-                    }), m(n)
+                    }), O(n)
                 },
                 QUESTS_SEND_HEARTBEAT_FAILURE: function(e) {
                     let {
                         questId: t,
                         streamKey: n
                     } = e;
-                    null == S.get(n) && (S = new Map(S)).set(n, {
+                    null == A.get(n) && (A = new Map(A)).set(n, {
                         questId: t,
                         streamKey: n,
                         firstFailedAt: Date.now()
@@ -175055,34 +175063,34 @@
                     let {
                         enrolledQuestUserStatus: t
                     } = e;
-                    h(t.questId, {
+                    m(t.questId, {
                         userStatus: t
-                    }), N(t.questId)
+                    }), p(t.questId)
                 },
                 QUESTS_ENROLL_FAILURE: function(e) {
                     let {
                         questId: t
                     } = e;
-                    N(t)
+                    p(t)
                 },
                 QUESTS_FETCH_REWARD_CODE_BEGIN: function(e) {
                     let {
                         questId: t
-                    } = e, n = new Set(I);
-                    n.add(t), I = n
+                    } = e, n = new Set(T);
+                    n.add(t), T = n
                 },
                 QUESTS_FETCH_REWARD_CODE_SUCCESS: function(e) {
                     let {
                         questId: t,
                         rewardCode: n
-                    } = e, i = new Set(I);
-                    i.delete(t), I = i, A(t, n)
+                    } = e, i = new Set(T);
+                    i.delete(t), T = i, N(t, n)
                 },
                 QUESTS_FETCH_REWARD_CODE_FAILURE: function(e) {
                     let {
                         questId: t
-                    } = e, n = new Set(I);
-                    n.delete(t), I = n
+                    } = e, n = new Set(T);
+                    n.delete(t), T = n
                 },
                 QUESTS_CLAIM_REWARD_CODE_BEGIN: function(e) {
                     let {
@@ -175095,7 +175103,7 @@
                         questId: t,
                         rewardCode: n
                     } = e, i = new Set(E);
-                    i.delete(t), E = i, A(t, n)
+                    i.delete(t), E = i, N(t, n)
                 },
                 QUESTS_CLAIM_REWARD_CODE_FAILURE: function(e) {
                     let {
@@ -175103,51 +175111,81 @@
                     } = e, n = new Set(E);
                     n.delete(t), E = n
                 },
+                QUESTS_CLAIM_REWARD_BEGIN: function(e) {
+                    let {
+                        questId: t
+                    } = e, n = new Set(I);
+                    n.add(t), I = n
+                },
+                QUESTS_CLAIM_REWARD_SUCCESS: function(e) {
+                    let {
+                        questId: t,
+                        entitlements: n
+                    } = e, i = new Set(I);
+                    i.delete(t), I = i, ! function(e, t) {
+                        let n = new Map(h);
+                        n.set(e, t.items), h = n;
+                        let i = d.get(e),
+                            r = null == i ? void 0 : i.userStatus;
+                        null != r && null == r.claimedAt && m(e, {
+                            userStatus: {
+                                ...r,
+                                claimedAt: t.claimedAt
+                            }
+                        })
+                    }(t, n)
+                },
+                QUESTS_CLAIM_REWARD_FAILURE: function(e) {
+                    let {
+                        questId: t
+                    } = e, n = new Set(I);
+                    n.delete(t), I = n
+                },
                 QUESTS_DISMISS_CONTENT_BEGIN: function(e) {
                     let {
                         questId: t
-                    } = e, n = new Set(T);
-                    n.add(t), T = n
+                    } = e, n = new Set(f);
+                    n.add(t), f = n
                 },
                 QUESTS_DISMISS_CONTENT_SUCCESS: function(e) {
                     let {
                         dismissedQuestUserStatus: t
                     } = e;
-                    h(t.questId, {
+                    m(t.questId, {
                         userStatus: t
-                    }), O(t.questId)
+                    }), R(t.questId)
                 },
                 QUESTS_DISMISS_CONTENT_FAILURE: function(e) {
                     let {
                         questId: t
                     } = e;
-                    O(t)
+                    R(t)
                 },
                 STREAM_CLOSE: function(e) {
                     let {
                         streamKey: t
                     } = e;
-                    m(t)
+                    O(t)
                 },
                 QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: function(e) {
                     let {
                         streamKey: t
                     } = e;
-                    m(t)
+                    O(t)
                 },
                 QUESTS_PREVIEW_UPDATE_SUCCESS: function(e) {
                     let {
                         previewQuestUserStatus: t
                     } = e;
-                    h(t.questId, {
+                    m(t.questId, {
                         userStatus: t
-                    }), null == t.claimedAt && (f = new Map(f)).delete(t.questId)
+                    }), null == t.claimedAt && (S = new Map(S)).delete(t.questId)
                 },
                 QUESTS_OPTIMISTIC_PROGRESS_UPDATE: function(e) {
                     let {
                         userStatus: t
                     } = e;
-                    h(t.questId, {
+                    m(t.questId, {
                         userStatus: t
                     }, {
                         updateProgress: !0
@@ -232241,7 +232279,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "08fe6903a30a216a65bcfee233557d259f5c1154"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "672fe6eaf42bbf1f5dc3bb914c2a37e2d3160622"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258331,7 +258369,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281893"
+                                build_number: "281900"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265476,7 +265514,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281893", "281893"), 10);
+                let s = parseInt((n = "281900", "281900"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292218,4 +292256,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.f4a8d16c7f17ca4c64df.js.map
+//# sourceMappingURL=97256.16f436c5bdb3289b16a1.js.map
