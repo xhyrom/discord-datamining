@@ -57261,7 +57261,6 @@ html .progress__00e29 {
 .overviewSidebarContent_b8b257 {
     display: flex;
     flex-direction: column;
-    gap: 24px;
     overflow-x: hidden;
     overflow-y: auto;
     overflow: hidden auto;
@@ -57269,14 +57268,23 @@ html .progress__00e29 {
     scrollbar-width: none
 }
 
-.overviewText__01ee0 {
-    font-family: serif;
+.overviewText__01ee0,
+.overviewHeaderText__10eed {
     overflow: clip;
     text-overflow: ellipsis
 }
 
-.overviewText__01ee0 strong {
+.overviewText__01ee0 strong,
+.overviewHeaderText__10eed strong {
     color: var(--interactive-active)
+}
+
+.overviewHeaderText__10eed {
+    margin-bottom: 12px
+}
+
+.overviewText__01ee0 {
+    margin-bottom: 24px
 }
 
 .lastParagraph__7a09c {
@@ -131638,4 +131646,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.451da7fea8a4391ccacf.css.map*/
+/*# sourceMappingURL=99387.114d7c2541ed15b03788.css.map*/
