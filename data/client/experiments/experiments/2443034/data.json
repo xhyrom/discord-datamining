@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-03_clan_discovery",
+    "label": "Clan discovery",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show clan discovery"
+    ],
+    "hash": 2443034,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
