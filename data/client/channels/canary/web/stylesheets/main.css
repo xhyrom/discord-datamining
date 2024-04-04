@@ -126220,10 +126220,7 @@ div.nagbar_c731ff {
     user-select: text
 }
 
-@value responsiveWidthMobile from '../../../../../uikit/auth/WaveSplash.module.css';
-
 .root_ba16f0 {
-    box-shadow: none !important;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
@@ -126273,10 +126270,26 @@ div.nagbar_c731ff {
     margin-right: 32px
 }
 
-@media(max-width:485px) {
-    .root_ba16f0 {
-        width: 100%
-    }
+.root__8fb4a {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    max-height: none
+}
+
+.header__8447d {
+    margin-bottom: calc(-8px + .5*(var(--custom-user-profile-modal-header-avatar-size) + var(--custom-user-profile-modal-header-total-avatar-border-size)));
+    z-index: 1
+}
+
+.body__07791 {
+    flex: 0 1 385px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden
 }
 
 .container_efe6bc {
@@ -131431,4 +131444,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.78a19d7052da1f79d888.css.map*/
+/*# sourceMappingURL=99387.fec8b5d6c7e7600bb5e7.css.map*/
