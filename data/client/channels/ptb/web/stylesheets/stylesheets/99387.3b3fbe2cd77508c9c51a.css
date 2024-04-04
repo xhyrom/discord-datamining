@@ -21137,6 +21137,66 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     padding-left: 6px
 }
 
+.root_ae2ef3 {
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 2px
+}
+
+.rolesHeaderText__51e60 {
+    text-transform: capitalize
+}
+
+.rolesHeader_e507a4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.addButton_d7b605 {
+    justify-content: center;
+    color: var(--interactive-normal);
+    background-color: none
+}
+
+.addButtonIcon__04434 {
+    cursor: pointer;
+    width: 14px;
+    height: 14px
+}
+
+.container_c7606c {
+    padding: 12px 12px 0
+}
+
+.rolesText__14d7d {
+    text-transform: capitalize
+}
+
+.roles__14509 {
+    color: var(--text-normal)
+}
+
+.rolePill__10ffe {
+    border-radius: 4px;
+    border: 1px solid var(--border-faint);
+    background: var(--bg-mod-faint)
+}
+
+.addButton__2f066 {
+    color: var(--interactive-normal);
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0
+}
+
+.addButtonIcon__4c4a5 {
+    width: 20px;
+    height: 20px
+}
+
 .container_b222f4 {
     display: flex;
     justify-content: space-between;
@@ -131490,4 +131550,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c15f79b417a0db032e2f.css.map*/
+/*# sourceMappingURL=99387.3b3fbe2cd77508c9c51a.css.map*/
