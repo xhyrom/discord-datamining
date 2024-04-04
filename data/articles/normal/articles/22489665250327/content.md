@@ -1,12 +1,12 @@
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
-    <li><a href="#h_01HTG3CNMCQ6YAGAZZSKH8PP7D">What is Recently Played Games?</a></li>
-    <li><a href="#h_01HTG3CNMCGTME68RYR4N1Z5BB">How to Manage your Recently Played Games Settings</a></li>
-    <li><a href="#h_01HTG3CNMC53ASVF34YHNQ6M6A">Frequently Asked Questions</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/22489665250327#h_01HTG3CNMCQ6YAGAZZSKH8PP7D">What is Recently Played Games?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/22489665250327#h_01HTG3CNMCGTME68RYR4N1Z5BB">How to Manage your Recently Played Games Settings</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/22489665250327#h_01HTG3CNMC53ASVF34YHNQ6M6A">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01HTG3CNMCQ6YAGAZZSKH8PP7D">What is Recently Played Games?</h1>
 <h3 id="h_01HTG3CNMCPRARDA835QQX1S6F"><span style="color: #434343;" data-darkreader-inline-color="">This feature is currently an experiment and limited to a small percentage of users. </span></h3>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22514461132695" width="506" height="177"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22571944639895" width="432" height="319"></p>
 <p><strong>Recently Played Games</strong> will display a maximum of 3 tiles on a user’s profile showcasing the recent games that they played. The game, how long ago it was last played, and how much time has been spent playing the game will be displayed in these tiles.</p>
 <h1 id="h_01HTG3CNMCGTME68RYR4N1Z5BB">How to Manage your Recently Played Games Settings</h1>
 <p>If a detectable game you recently played is not showing, here is how to enable it. </p>
