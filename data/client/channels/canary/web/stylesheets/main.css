@@ -7862,10 +7862,6 @@ html .invoiceCancelRow_aa7946 {
     grid-gap: 12px
 }
 
-.recentGamesHeading_bb152b {
-    padding-bottom: 8px
-}
-
 .recentGameContainer__8231a {
     display: flex;
     align-items: center
@@ -7917,6 +7913,20 @@ html .invoiceCancelRow_aa7946 {
     align-items: center;
     -moz-column-gap: 4px;
     column-gap: 4px
+}
+
+.headerContainer_ec3f63 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px
+}
+
+.header__9af10 {
+    flex: 1
+}
+
+.viewAll__77948 {
+    cursor: pointer
 }
 
 .divider_d6f39c {
@@ -27891,8 +27901,17 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     background-image: linear-gradient(90deg, var(--premium-tier-2-pink-for-gradients)0%, var(--premium-tier-2-purple-for-gradients)50%, var(--premium-tier-2-pink-for-gradients)100%)
 }
 
+.recentGamesSwitch_c37017 {
+    margin-bottom: 0
+}
+
 .requirement_f0aa0e {
-    margin-top: 4px
+    margin-top: 4px;
+    margin-bottom: 20px
+}
+
+.dividerDefault__07e4b {
+    margin-bottom: 20px
 }
 
 .sectionsContainer__45b62 {
@@ -32729,7 +32748,8 @@ input[type=checked]:focus-visible+.label__73b15 {
 }
 
 .videoGrid__6c223 {
-    height: 100%
+    height: 100%;
+    min-width: 100px
 }
 
 .hiddenParticipants_eba0ee p {
@@ -131470,4 +131490,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.5f3470ca686082739d71.css.map*/
+/*# sourceMappingURL=99387.c15f79b417a0db032e2f.css.map*/
