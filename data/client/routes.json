@@ -602,7 +602,12 @@
   },
   "GUILD_MEMBER_VERIFICATION": {
     "url": "/guilds/:param/member-verification",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_JOIN_REQUEST_BY_ID": {
     "url": "/join-requests/:param",
@@ -651,7 +656,13 @@
   },
   "GUILD": {
     "url": "/guilds/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_PINCODE": {
     "url": "/guilds/:param/pincode",
@@ -822,7 +833,10 @@
   },
   "MESSAGE_CROSSPOST": {
     "url": "/channels/:param/messages/:param/crosspost",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MESSAGE_LOG_PRIVATE_CHANNELS": {
     "url": "/messages-log/private-channels/get",
@@ -885,7 +899,12 @@
   },
   "PINS_ACK": {
     "url": "/channels/:param/pins/ack",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "POST",
+      "PUT"
+    ]
   },
   "PINS": {
     "url": "/channels/:param/pins",
@@ -982,7 +1001,11 @@
   },
   "CHANNEL_FOLLOWER_STATS": {
     "url": "/channels/:param/follower-stats",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CHANNEL_FOLLOWER_MESSAGE_STATS": {
     "url": "/channels/:param/follower-message-stats",
@@ -1206,7 +1229,10 @@
   },
   "VERIFY_PHONE_FOR_TICKET": {
     "url": "/phone-verifications/validate-support-ticket",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "RESEND_PHONE": {
     "url": "/phone-verifications/resend",
@@ -1319,7 +1345,11 @@
   },
   "MENTIONS": {
     "url": "/users/@me/mentions",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "MENTIONS_MESSAGE_ID": {
     "url": "/users/@me/mentions/:param",
@@ -1384,7 +1414,10 @@
   },
   "REMOTE_AUTH_FINISH": {
     "url": "/users/@me/remote-auth/finish",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "LOGOUT": {
     "url": "/auth/logout",
@@ -1433,7 +1466,11 @@
   },
   "MFA_WEBAUTHN_CREDENTIAL": {
     "url": "/users/@me/mfa/webauthn/credentials/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "INVITE": {
     "url": "/invites/:param",
@@ -1673,7 +1710,11 @@
   },
   "OAUTH2_AUTHORIZE_SAMSUNG": {
     "url": "/oauth2/samsung/authorize",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "OAUTH2_AUTHORIZE_SAMSUNG_CALLBACK": {
     "url": "/oauth2/samsung/authorize/callback",
@@ -1697,7 +1738,11 @@
   },
   "OAUTH2_TOKENS": {
     "url": "/oauth2/tokens",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "OAUTH2_TOKEN": {
     "url": "/oauth2/tokens/:param",
@@ -2136,7 +2181,10 @@
   },
   "BILLING_GENERATE_APPLE_TRIAL_OFFER_SIGNATURE": {
     "url": "/users/@me/billing/apple/trial-offer-signature",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BILLING_CREATE_APPLE_IAP_JWT_TOKEN": {
     "url": "/billing/apple/jwt-token",
@@ -2231,7 +2279,11 @@
   },
   "USER_ACHIEVEMENTS": {
     "url": "/users/@me/applications/:param/achievements",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_ACHIEVEMENTS_FOR_USER": {
     "url": "/users/:param/applications/:param/achievements/:param",
@@ -2276,7 +2328,11 @@
   },
   "AUTH_LOCATION_METADATA": {
     "url": "/auth/location-metadata",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_HARVEST": {
     "url": "/users/@me/harvest",
@@ -2390,7 +2446,11 @@
   },
   "STORE_PUBLISHED_LISTINGS_SUBSCRIPTION_PLANS": {
     "url": "/store/published-listings/skus/:param/subscription-plans",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "STORE_SKU": {
     "url": "/store/skus/:param",
@@ -2645,7 +2705,12 @@
   },
   "GUILD_DISCOVERY_METADATA": {
     "url": "/guilds/:param/discovery-metadata",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_DISCOVERY_UPDATE_CATEGORY": {
     "url": "/guilds/:param/discovery-categories/:param",
@@ -3163,7 +3228,12 @@
   },
   "APPLICATIONS": {
     "url": "/applications",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "APPLICATION_OWNER_TRANSFER": {
     "url": "/applications/:param/transfer",
@@ -3327,7 +3397,11 @@
   },
   "GUILD_ROLE_SUBSCRIPTION_TRIALS": {
     "url": "/guilds/:param/role-subscriptions/trials",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_ROLE_SUBSCRIPTION_LISTING_TRIAL": {
     "url": "/guilds/:param/role-subscriptions/subscription-listings/:param/trial",
@@ -3776,7 +3850,10 @@
   },
   "AUTH_SESSIONS_LOGOUT": {
     "url": "/auth/sessions/logout",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CUSTOM_CALL_SOUNDS": {
     "url": "/channels/:param/custom-call-sounds",
@@ -3946,7 +4023,10 @@
   },
   "CREATE_REFERRAL": {
     "url": "/users/@me/referrals/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "FAMILY_CENTER_TEEN_ACTIVITY": {
     "url": "/family-center/:param/activity",
@@ -4245,7 +4325,10 @@
   },
   "QUESTS_PREVIEW_STATUS": {
     "url": "/quests/:param/preview/status",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "QUESTS_PREVIEW_DISMISSIBILITY": {
     "url": "/quests/:param/preview/dismissibility",
