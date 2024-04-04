@@ -36551,7 +36551,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281845", ", Version Hash: ").concat("cf0c02d3f262e4fb513973572135af62f8998498")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281851", ", Version Hash: ").concat("80f56491298667b5364125c5b4198bfdba82a31e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85541,8 +85541,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281845", "281845"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281845")), t = 0), t
+                let t = parseInt((e = "281851", "281851"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281851")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107557,8 +107557,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281845",
-                    versionHash: "cf0c02d3f262e4fb513973572135af62f8998498"
+                    buildNumber: "281851",
+                    versionHash: "80f56491298667b5364125c5b4198bfdba82a31e"
                 }
             }
             n.r(t), n.d(t, {
@@ -157785,8 +157785,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712266299848",
-                                    build_number: "281845"
+                                    built_at: "1712266737447",
+                                    build_number: "281851"
                                 }
                             },
                             retries: 1
@@ -195285,7 +195285,7 @@
                     return i
                 },
                 default: function() {
-                    return g
+                    return v
                 }
             }), n("653041");
             var i, r, s = n("735250");
@@ -195299,67 +195299,70 @@
                 c = n("906732"),
                 E = n("688465"),
                 I = n("246208"),
-                T = n("785717"),
-                f = n("221292"),
-                S = n("290421"),
-                h = n("318661"),
-                A = n("228168"),
-                m = n("981631"),
-                N = n("232700"),
-                O = n("689938"),
-                p = n("649570"),
-                R = n("839973"),
-                C = n("124901");
+                T = n("617136"),
+                f = n("497505"),
+                S = n("626135"),
+                h = n("785717"),
+                A = n("221292"),
+                m = n("290421"),
+                N = n("318661"),
+                O = n("228168"),
+                p = n("981631"),
+                R = n("232700"),
+                C = n("689938"),
+                g = n("649570"),
+                L = n("839973"),
+                D = n("124901");
 
-            function g(e) {
+            function v(e) {
                 var t;
                 let {
                     user: n,
                     guildId: i,
                     className: r,
                     shrinkAtCount: a,
-                    shrinkToSize: g,
-                    isTryItOutFlow: L,
-                    size: D = 0
-                } = e, v = (0, h.default)(n.id, i), {
-                    analyticsLocations: M
+                    shrinkToSize: v,
+                    isTryItOutFlow: M,
+                    size: y = 0
+                } = e, P = (0, N.default)(n.id, i), {
+                    analyticsLocations: U
                 } = (0, c.default)(_.default.BADGE), {
-                    trackUserProfileAction: y,
-                    ...P
-                } = (0, T.useUserProfileAnalyticsContext)(), {
-                    allowOpeningLootboxes: U
+                    trackUserProfileAction: b,
+                    ...G
+                } = (0, h.useUserProfileAnalyticsContext)(), {
+                    allowOpeningLootboxes: w
                 } = I.default.useExperiment({
                     location: "user_profile"
-                }), b = (0, S.default)(v).map(e => ({
+                }), B = (0, m.default)(P).map(e => ({
                     ...e,
-                    src: (0, A.getBadgeAsset)(e.icon)
-                })), G = (0, d.useWindowDispatch)();
+                    src: (0, O.getBadgeAsset)(e.icon)
+                })), k = (0, d.useWindowDispatch)();
                 if (n.isClyde()) return (0, s.jsx)("div", {
-                    className: o()(r, p.container, p.clydeBadgeList),
-                    "aria-label": O.default.Messages.PROFILE_USER_BADGES,
+                    className: o()(r, g.container, g.clydeBadgeList),
+                    "aria-label": C.default.Messages.PROFILE_USER_BADGES,
                     role: "group",
                     children: (0, s.jsx)(E.default, {})
                 });
-                L && null == b.find(e => "premium" === e.id) && b.push({
+                M && null == B.find(e => "premium" === e.id) && B.push({
                     id: "premium",
-                    src: R,
-                    description: O.default.Messages.PREMIUM_BADGE_TOOLTIP.format({
+                    src: L,
+                    description: C.default.Messages.PREMIUM_BADGE_TOOLTIP.format({
                         date: new Date
                     })
-                }), U && (null === (t = n.avatarDecoration) || void 0 === t ? void 0 : t.skuId) === N.LOOTBOX_PRIZE_SKU_ID && b.push({
+                }), w && (null === (t = n.avatarDecoration) || void 0 === t ? void 0 : t.skuId) === R.LOOTBOX_PRIZE_SKU_ID && B.push({
                     id: "lootboxes",
-                    src: C,
-                    description: O.default.Messages.PACKAGES_BADGE,
-                    link: "https://discord.com" + m.Routes.SETTINGS(m.UserSettingsSections.LOOTBOXES)
+                    src: D,
+                    description: C.default.Messages.PACKAGES_BADGE,
+                    link: "https://discord.com" + p.Routes.SETTINGS(p.UserSettingsSections.LOOTBOXES)
                 });
-                let w = null != a && null != g && b.length > a ? g : D;
+                let V = null != a && null != v && B.length > a ? v : y;
                 return (0, s.jsx)(c.AnalyticsLocationProvider, {
-                    value: M,
+                    value: U,
                     children: (0, s.jsx)("div", {
-                        className: o()(r, b.length > 0 ? p.containerWithContent : p.container),
-                        "aria-label": O.default.Messages.PROFILE_USER_BADGES,
+                        className: o()(r, B.length > 0 ? g.containerWithContent : g.container),
+                        "aria-label": C.default.Messages.PROFILE_USER_BADGES,
                         role: "group",
-                        children: b.map(e => (0, s.jsx)(l.Tooltip, {
+                        children: B.map(e => (0, s.jsx)(l.Tooltip, {
                             position: "top",
                             text: e.description,
                             spacing: 12,
@@ -195367,25 +195370,27 @@
                                 ...t,
                                 onClick: n => {
                                     var i;
-                                    y({
+                                    b({
                                         action: "PRESS_BADGE"
-                                    }), (0, f.trackUserProfileBadgePressed)({
+                                    }), (0, A.trackUserProfileBadgePressed)({
                                         badge: e.id,
-                                        analyticsLocations: M,
-                                        ...P
+                                        analyticsLocations: U,
+                                        ...G
                                     }), null === (i = t.onClick) || void 0 === i || i.call(t);
                                     let r = null != e.link ? (0, u.default)(e.link, {
-                                        analyticsLocations: M
+                                        analyticsLocations: U
                                     }) : null;
-                                    if (null != r) return G.dispatch(m.ComponentActions.POPOUT_CLOSE), r(n)
+                                    if (null != r) return k.dispatch(p.ComponentActions.POPOUT_CLOSE), r(n)
                                 },
                                 onMouseEnter: () => {
                                     var n;
-                                    e.id === S.QUEST_COMPLETED_BADGE && (0, f.trackUserProfileBadgeHovered)({
+                                    e.id === m.QUEST_COMPLETED_BADGE && (S.default.track(p.AnalyticEvents.QUEST_CONTENT_VIEWED, {
+                                        ...(0, T.getContentProperties)(f.QuestContent.QUEST_BADGE)
+                                    }), (0, A.trackUserProfileBadgeHovered)({
                                         badge: e.id,
-                                        analyticsLocations: M,
-                                        ...P
-                                    }), null === (n = t.onMouseEnter) || void 0 === n || n.call(t)
+                                        analyticsLocations: U,
+                                        ...G
+                                    })), null === (n = t.onMouseEnter) || void 0 === n || n.call(t)
                                 },
                                 href: e.link,
                                 children: (0, s.jsx)("img", {
@@ -195393,10 +195398,10 @@
                                     "aria-hidden": !0,
                                     src: e.src,
                                     className: o()({
-                                        [p.profileBadge24]: 0 === w,
-                                        [p.profileBadge22]: 1 === w,
-                                        [p.profileBadge20]: 2 === w,
-                                        [p.profileBadge18]: 3 === w
+                                        [g.profileBadge24]: 0 === V,
+                                        [g.profileBadge22]: 1 === V,
+                                        [g.profileBadge20]: 2 === V,
+                                        [g.profileBadge18]: 3 === V
                                     })
                                 })
                             })
@@ -232236,7 +232241,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "cf0c02d3f262e4fb513973572135af62f8998498"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "80f56491298667b5364125c5b4198bfdba82a31e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258326,7 +258331,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281845"
+                                build_number: "281851"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265471,7 +265476,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281845", "281845"), 10);
+                let s = parseInt((n = "281851", "281851"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291372,7 +291377,7 @@
                 QuestContent: function() {
                     return i
                 }
-            }), (r = i || (i = {}))[r.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", r[r.QUEST_BAR = 1] = "QUEST_BAR", r[r.QUEST_INVENTORY_CARD = 2] = "QUEST_INVENTORY_CARD", r[r.QUESTS_EMBED = 3] = "QUESTS_EMBED", r[r.ACTIVITY_PANEL = 4] = "ACTIVITY_PANEL", r[r.QUEST_LIVE_STREAM = 5] = "QUEST_LIVE_STREAM", r[r.MEMBERS_LIST = 6] = "MEMBERS_LIST"
+            }), (r = i || (i = {}))[r.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", r[r.QUEST_BAR = 1] = "QUEST_BAR", r[r.QUEST_INVENTORY_CARD = 2] = "QUEST_INVENTORY_CARD", r[r.QUESTS_EMBED = 3] = "QUESTS_EMBED", r[r.ACTIVITY_PANEL = 4] = "ACTIVITY_PANEL", r[r.QUEST_LIVE_STREAM = 5] = "QUEST_LIVE_STREAM", r[r.MEMBERS_LIST = 6] = "MEMBERS_LIST", r[r.QUEST_BADGE = 7] = "QUEST_BADGE"
         },
         687522: function(e, t, n) {
             "use strict";
@@ -292213,4 +292218,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.c2800ddfc2cc58062307.js.map
+//# sourceMappingURL=97256.2eba1fedfdb260e3ac50.js.map
