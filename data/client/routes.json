@@ -472,7 +472,12 @@
   },
   "GUILD_EMOJIS": {
     "url": "/guilds/:param/emojis",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_EMOJI": {
     "url": "/guilds/:param/emojis/:param",
@@ -621,7 +626,10 @@
   },
   "GUILD_JOIN_REQUEST": {
     "url": "/guilds/:param/requests/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_JOIN_REQUEST_ACK": {
     "url": "/guilds/:param/requests/:param/ack",
@@ -800,7 +808,10 @@
   },
   "UPDATE_VOICE_CHANNEL_BACKGROUND": {
     "url": "/channels/:param/voice-background",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "MESSAGE_DELETE_UPLOAD": {
     "url": "/attachments/:param",
@@ -1013,7 +1024,10 @@
   },
   "FRIEND_FINDER": {
     "url": "/friend-finder/find-friends",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "FRIEND_FINDER_VIEWED_SUGGESTIONS": {
     "url": "/friend-finder/viewed-suggestions",
@@ -1236,7 +1250,12 @@
   },
   "CONNECTIONS_CALLBACK": {
     "url": "/connections/:param/callback",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CONNECTION": {
     "url": "/users/@me/connections/:param/:param",
@@ -1468,7 +1487,11 @@
   },
   "SSO": {
     "url": "/sso",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "SSO_TOKEN": {
     "url": "/sso-token",
@@ -2996,7 +3019,13 @@
   },
   "GUILD_AUTOMOD_RULE": {
     "url": "/guilds/:param/auto-moderation/rules/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_AUTOMOD_VALIDATE_RULE": {
     "url": "/guilds/:param/auto-moderation/rules/validate",
