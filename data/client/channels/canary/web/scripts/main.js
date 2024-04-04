@@ -36543,7 +36543,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281637", ", Version Hash: ").concat("a64cfab0922e193c256b10d9123c8e03bf14af15")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281642", ", Version Hash: ").concat("675ef58a9221e25b127335c9a147cf508f4e7b03")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -54717,6 +54717,7 @@
                 QUESTS_MOBILE_EMBED_TITLE: "Quests aren’t available on mobile",
                 QUESTS_MOBILE_EMBED_BODY: "From your desktop Discord app or browser you can go to \nUser Settings > Gift Inventory and accept the Quest there.",
                 QUESTS_GET_THIS_GAME: "Get Game",
+                QUESTS_PLAY_GAME: "Play Game",
                 QUESTS_DISCLOSURE_LABEL: "Why am I seeing this?",
                 QUESTS_SHARE_LINK: "Copy Share Link",
                 QUESTS_HIDE_THIS: "Hide This",
@@ -85526,8 +85527,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281637", "281637"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281637")), t = 0), t
+                let t = parseInt((e = "281642", "281642"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281642")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107537,8 +107538,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281637",
-                    versionHash: "a64cfab0922e193c256b10d9123c8e03bf14af15"
+                    buildNumber: "281642",
+                    versionHash: "675ef58a9221e25b127335c9a147cf508f4e7b03"
                 }
             }
             n.r(t), n.d(t, {
@@ -157763,8 +157764,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712252318281",
-                                    build_number: "281637"
+                                    built_at: "1712252815340",
+                                    build_number: "281642"
                                 }
                             },
                             retries: 1
@@ -231983,7 +231984,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a64cfab0922e193c256b10d9123c8e03bf14af15"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "675ef58a9221e25b127335c9a147cf508f4e7b03"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258073,7 +258074,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281637"
+                                build_number: "281642"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265218,7 +265219,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281637", "281637"), 10);
+                let s = parseInt((n = "281642", "281642"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291966,4 +291967,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.0bfd955be9ee210db3c3.js.map
+//# sourceMappingURL=97256.e77f7eb8e9571cdf4a50.js.map
