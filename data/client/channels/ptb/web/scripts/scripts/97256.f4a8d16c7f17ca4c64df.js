@@ -36551,7 +36551,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281883", ", Version Hash: ").concat("ff841c479e623e6e262d5fbfec66fe0bcc2d000b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281893", ", Version Hash: ").concat("08fe6903a30a216a65bcfee233557d259f5c1154")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85541,8 +85541,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281883", "281883"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281883")), t = 0), t
+                let t = parseInt((e = "281893", "281893"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281893")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107557,8 +107557,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281883",
-                    versionHash: "ff841c479e623e6e262d5fbfec66fe0bcc2d000b"
+                    buildNumber: "281893",
+                    versionHash: "08fe6903a30a216a65bcfee233557d259f5c1154"
                 }
             }
             n.r(t), n.d(t, {
@@ -157785,8 +157785,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712269757930",
-                                    build_number: "281883"
+                                    built_at: "1712270345305",
+                                    build_number: "281893"
                                 }
                             },
                             retries: 1
@@ -232241,7 +232241,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ff841c479e623e6e262d5fbfec66fe0bcc2d000b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "08fe6903a30a216a65bcfee233557d259f5c1154"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258331,7 +258331,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281883"
+                                build_number: "281893"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265476,7 +265476,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281883", "281883"), 10);
+                let s = parseInt((n = "281893", "281893"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -278376,7 +278376,7 @@
                     let r = i.createReplayConnection("default", (t, r) => {
                         let s = null != i.getCodecCapabilities ? i.getCodecCapabilities : i.getSupportedVideoCodecs;
                         n.on(f.BaseConnectionEvent.Stats, n.handleStats), n.conn.setOnVideoCallback(n.handleVideo), s(t => {
-                            let i = (0, S.getExperimentCodecs)(n.experimentFlags, p.MediaEngineContextTypes.DEFAULT);
+                            let i = (0, S.getExperimentCodecs)(n.experimentFlags);
                             n.codecs = [{
                                 type: "audio",
                                 name: p.Codecs.OPUS,
@@ -278427,7 +278427,7 @@
                             port: l
                         } = s;
                         this.logger.info("Connected with local address ".concat(o, ":").concat(l, " and protocol: ").concat(a)), i(i => {
-                            let r = (0, S.getExperimentCodecs)(this.experimentFlags, this.context);
+                            let r = (0, S.getExperimentCodecs)(this.experimentFlags);
                             this.codecs = [{
                                 type: "audio",
                                 name: p.Codecs.OPUS,
@@ -280843,21 +280843,21 @@
                 }), i
             }
 
-            function a(e, t) {
-                let n = [];
-                return e.has(i.ExperimentFlags.SIGNAL_H265_SUPPORT) ? t === i.MediaEngineContextTypes.STREAM && n.unshift({
+            function a(e) {
+                let t = [];
+                return e.has(i.ExperimentFlags.SIGNAL_H265_SUPPORT) ? t.unshift({
                     name: "H265",
                     encode: !0,
                     decode: !0
-                }) : e.has(i.ExperimentFlags.SIGNAL_H265_DECODE_SUPPORT) && t === i.MediaEngineContextTypes.STREAM && n.unshift({
+                }) : e.has(i.ExperimentFlags.SIGNAL_H265_DECODE_SUPPORT) && t.unshift({
                     name: "H265",
                     encode: !1,
                     decode: !0
-                }), e.has(i.ExperimentFlags.SIGNAL_AV1_SUPPORT) && n.unshift({
+                }), e.has(i.ExperimentFlags.SIGNAL_AV1_SUPPORT) && t.unshift({
                     name: "AV1",
                     encode: !0,
                     decode: !0
-                }), n
+                }), t
             }
 
             function o(e, t) {
@@ -292218,4 +292218,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.f05cf5dea470e46a831e.js.map
+//# sourceMappingURL=97256.f4a8d16c7f17ca4c64df.js.map
