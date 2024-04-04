@@ -36543,7 +36543,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281792", ", Version Hash: ").concat("8e3ee44523154dea828a154c205c310bb8ce396a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281801", ", Version Hash: ").concat("2005489c5c5a75cc0c7c943a3537e8efd71208f2")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -60119,8 +60119,9 @@
                         s = e.fpsHistogram.getReport(r),
                         a = e.bitrateHistogram.getReport([1, 5, 10, 25, 50, 75, 99]),
                         o = e.resolutionHistogram.getReport(r),
-                        l = e.systemResources.getStats(),
-                        u = {
+                        l = e.inboundBitrateEstimateHistogram.getReport([1, 5, 10, 25, 50, 75, 99]),
+                        u = e.systemResources.getStats(),
+                        d = {
                             duration: Math.floor(n / 1e3),
                             duration_aggregation: I(i),
                             duration_stopped_receiving: I(e.videoStoppedDuration.asSeconds()),
@@ -60177,58 +60178,65 @@
                             resolution_percentile25: o.percentiles[25],
                             resolution_percentile50: o.percentiles[50],
                             resolution_percentile75: o.percentiles[75],
+                            inbound_bitrate_estimate_percentile1: l.percentiles[1],
+                            inbound_bitrate_estimate_percentile5: l.percentiles[5],
+                            inbound_bitrate_estimate_percentile10: l.percentiles[10],
+                            inbound_bitrate_estimate_percentile25: l.percentiles[25],
+                            inbound_bitrate_estimate_percentile50: l.percentiles[50],
+                            inbound_bitrate_estimate_percentile75: l.percentiles[75],
+                            inbound_bitrate_estimate_percentile99: l.percentiles[99],
                             duration_video_effect: I(this.videoEffectDuration.totalDuration() / 1e3),
                             cryptor_max_attempts: e.cryptorMaxAttempts,
-                            ...l
+                            ...u
                         },
                         {
-                            bytes: d,
-                            framesDropped: _,
-                            framesCodecError: c,
-                            framesCodec: E,
-                            framesNetwork: T,
-                            packets: f,
-                            packetsLost: S,
-                            nackCount: h,
-                            pliCount: A,
-                            qpSum: m,
-                            pauseCount: N,
-                            freezeCount: O,
-                            totalPausesDuration: p,
-                            totalFreezesDuration: R,
-                            totalFramesDuration: C,
-                            keyframes: g,
-                            passthroughCount: L,
-                            cryptorSuccessCount: D,
-                            cryptorFailureCount: v,
-                            cryptorDuration: M,
-                            cryptorAttempts: y
+                            bytes: _,
+                            framesDropped: c,
+                            framesCodecError: E,
+                            framesCodec: T,
+                            framesNetwork: f,
+                            packets: S,
+                            packetsLost: h,
+                            nackCount: A,
+                            pliCount: m,
+                            qpSum: N,
+                            pauseCount: O,
+                            freezeCount: p,
+                            totalPausesDuration: R,
+                            totalFreezesDuration: C,
+                            totalFramesDuration: g,
+                            keyframes: L,
+                            passthroughCount: D,
+                            cryptorSuccessCount: v,
+                            cryptorFailureCount: M,
+                            cryptorDuration: y,
+                            cryptorAttempts: P
                         } = e.aggregatedProperties;
                     return {
-                        ...u,
-                        avg_bitrate: i > 0 ? Math.round((null != d ? d : 0) * 8 / i) : 0,
-                        avg_fps: i > 0 ? Math.round((null != E ? E : 0) / i) : 0,
-                        num_bytes: d,
-                        num_packets_lost: S,
-                        num_packets: f,
-                        num_frames: T,
-                        num_frames_codec_error: c,
+                        ...d,
+                        avg_bitrate: i > 0 ? Math.round((null != _ ? _ : 0) * 8 / i) : 0,
+                        avg_fps: i > 0 ? Math.round((null != T ? T : 0) / i) : 0,
+                        num_bytes: _,
+                        num_packets_lost: h,
+                        num_packets: S,
+                        num_frames: f,
+                        num_frames_codec_error: E,
                         time_to_first_frame_ms: e.timeToFirstFrame,
-                        num_frames_dropped: _,
-                        num_nacks: h,
-                        num_plis: A,
-                        qp_sum: m,
-                        receiver_pause_count: N,
-                        receiver_freeze_count: O,
-                        receiver_total_pauses_duration: p,
-                        receiver_total_freezes_duration: R,
-                        receiver_total_frames_duration: C,
-                        num_keyframes: g,
-                        cryptor_passthrough_count: L,
-                        cryptor_success_count: D,
-                        cryptor_failure_count: v,
-                        cryptor_duration: M,
-                        cryptor_attempts: y
+                        num_frames_dropped: c,
+                        num_nacks: A,
+                        num_plis: m,
+                        qp_sum: N,
+                        receiver_pause_count: O,
+                        receiver_freeze_count: p,
+                        receiver_total_pauses_duration: R,
+                        receiver_total_freezes_duration: C,
+                        receiver_total_frames_duration: g,
+                        num_keyframes: L,
+                        cryptor_passthrough_count: D,
+                        cryptor_success_count: v,
+                        cryptor_failure_count: M,
+                        cryptor_duration: y,
+                        cryptor_attempts: P
                     }
                 }
                 receivedStats(e, t, n) {
@@ -60256,7 +60264,7 @@
                                 let t = this.inboundStats[n];
                                 null == t && (console.warn("Unknown inbound video stream for user: ".concat(n)), t = new c.InboundStats(this.timestampProducer), this.inboundStats[n] = t);
                                 let r = c.RawVideoStats.parseInboundStats(i, e);
-                                !this.statCollectionPausedUsers.has(n) && t.appendAndIncrementStats(r), r.packets > 0 && this.emit("fps-update", n, r.framesCodec, r.timestamp), t.decoderCodec !== c.CodecTypes.UNKNOWN && E.add(t.decoderCodec), null == t.timeToFirstFrame && i.framesDecoded > 0 && (t.timeToFirstFrame = e - t.startTime)
+                                !this.statCollectionPausedUsers.has(n) && (t.appendAndIncrementStats(r), t.appendTransportStats(l)), r.packets > 0 && this.emit("fps-update", n, r.framesCodec, r.timestamp), t.decoderCodec !== c.CodecTypes.UNKNOWN && E.add(t.decoderCodec), null == t.timeToFirstFrame && i.framesDecoded > 0 && (t.timeToFirstFrame = e - t.startTime)
                             }
                         }), 0 !== _.size && 0 !== E.size) {
                         ;
@@ -60481,6 +60489,9 @@
                 addSystemResources() {
                     this.systemResources.takeSample()
                 }
+                appendTransportStats(e) {
+                    null != e.inboundBitrateEstimate && this.inboundBitrateEstimateHistogram.addSample(e.inboundBitrateEstimate)
+                }
                 getCodecsUsed() {
                     let e = new Set;
                     for (let [t, n] of Object.entries(this.codecBuckets)) n > 0 && e.add(t);
@@ -60504,7 +60515,7 @@
                         VP9: 0,
                         AV1: 0,
                         UNKNOWN: 0
-                    }), I(this, "statsWindow", []), I(this, "fpsHistogram", new c.Histogram), I(this, "bitrateHistogram", new c.Histogram), I(this, "resolutionHistogram", new c.Histogram), I(this, "systemResources", new E.default), I(this, "decoderCodec", "UNKNOWN"), I(this, "startTime", void 0), I(this, "timeToFirstFrame", void 0), I(this, "aggregatedProperties", {
+                    }), I(this, "statsWindow", []), I(this, "fpsHistogram", new c.Histogram), I(this, "bitrateHistogram", new c.Histogram), I(this, "inboundBitrateEstimateHistogram", new c.Histogram), I(this, "resolutionHistogram", new c.Histogram), I(this, "systemResources", new E.default), I(this, "decoderCodec", "UNKNOWN"), I(this, "startTime", void 0), I(this, "timeToFirstFrame", void 0), I(this, "aggregatedProperties", {
                         framesCodec: 0,
                         framesNetwork: 0,
                         packets: 0,
@@ -85518,8 +85529,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281792", "281792"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281792")), t = 0), t
+                let t = parseInt((e = "281801", "281801"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281801")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107534,8 +107545,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281792",
-                    versionHash: "8e3ee44523154dea828a154c205c310bb8ce396a"
+                    buildNumber: "281801",
+                    versionHash: "2005489c5c5a75cc0c7c943a3537e8efd71208f2"
                 }
             }
             n.r(t), n.d(t, {
@@ -157762,8 +157773,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712262228865",
-                                    build_number: "281792"
+                                    built_at: "1712262695859",
+                                    build_number: "281801"
                                 }
                             },
                             retries: 1
@@ -232017,7 +232028,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8e3ee44523154dea828a154c205c310bb8ce396a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "2005489c5c5a75cc0c7c943a3537e8efd71208f2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258107,7 +258118,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281792"
+                                build_number: "281801"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265252,7 +265263,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281792", "281792"), 10);
+                let s = parseInt((n = "281801", "281801"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -278504,7 +278515,7 @@
                         resolution: t,
                         frameRate: n
                     } = e.quality, i = t <= 480 ? t / 3 * 4 : t / 9 * 16;
-                    !("undefined" != typeof window && ("canary" === window.GLOBAL_ENV.RELEASE_CHANNEL || "development" === window.GLOBAL_ENV.RELEASE_CHANNEL)) && (0 === t || t > 1080) && this.handleVideoEncoderFallback("H265");
+                    "undefined" != typeof window && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL && (0 === t || t > 1080) && this.handleVideoEncoderFallback("H265");
                     let r = null;
                     if (null != e.desktopDescription ? r = e.desktopDescription.id : null != e.cameraDescription && (r = "".concat(e.cameraDescription.videoDeviceGuid, ":").concat(e.cameraDescription.audioDeviceGuid)), this.goLiveSourceIdentifier === r) {
                         this.setDesktopEncodingOptions(i, t, n);
@@ -291994,4 +292005,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.b86d47fec0d9f72b3e24.js.map
+//# sourceMappingURL=97256.64d4c14db75a406222eb.js.map
