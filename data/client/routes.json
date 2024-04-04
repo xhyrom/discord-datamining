@@ -1812,7 +1812,10 @@
   },
   "MFA_CODES_VERIFICATION": {
     "url": "/users/@me/mfa/codes-verification",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MFA_SEND_VERIFICATION_KEY": {
     "url": "/auth/verify/view-backup-codes-challenge",
@@ -2363,7 +2366,11 @@
   },
   "APPLICATION_PUBLIC": {
     "url": "/applications/:param/public",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "APPLICATIONS_PUBLIC": {
     "url": "/applications/public",
@@ -3435,7 +3442,10 @@
   },
   "CREATOR_MONETIZATION_ACCEPT_TERMS": {
     "url": "/guilds/:param/creator-monetization/enable-requests/:param/accept-terms",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CREATOR_MONETIZATION_ACCEPT_TERMS_V2": {
     "url": "/guilds/:param/creator-monetization/accept-terms",
