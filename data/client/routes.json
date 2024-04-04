@@ -886,7 +886,11 @@
   },
   "PIN": {
     "url": "/channels/:param/pins/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "INSTANT_INVITES": {
     "url": "/channels/:param/invites",
@@ -1319,19 +1323,11 @@
     ]
   },
   "LOGIN_MFA": {
-    "url": "/auth/mfa/totp",
+    "url": "/auth/mfa/:param",
     "allowed_methods": [
       "OPTIONS",
       "POST"
     ]
-  },
-  "LOGIN_SMS": {
-    "url": "/auth/mfa/sms",
-    "allowed_methods": null
-  },
-  "LOGIN_WEBAUTHN": {
-    "url": "/auth/mfa/webauthn",
-    "allowed_methods": null
   },
   "LOGIN_SMS_SEND": {
     "url": "/auth/mfa/sms/send",
@@ -1432,7 +1428,12 @@
   },
   "GUILD_TEMPLATES": {
     "url": "/guilds/:param/templates",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_TEMPLATE": {
     "url": "/guilds/:param/templates/:param",
@@ -1551,7 +1552,11 @@
   },
   "INTEGRATION_SEARCH": {
     "url": "/integrations/:param/search",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS": {
     "url": "/users/@me/guilds/integration-application-ids",
@@ -1745,7 +1750,12 @@
   },
   "DISABLE_EMAIL_NOTIFICATIONS": {
     "url": "/users/disable-email-notifications",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS": {
     "url": "/users/disable-server-highlight-notifications",
@@ -2183,7 +2193,11 @@
   },
   "LIBRARY_APPLICATION_BRANCH": {
     "url": "/users/@me/library/:param/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "LIBRARY_APPLICATION_DELETE": {
     "url": "/users/@me/library/:param",
@@ -3016,7 +3030,11 @@
   },
   "DIRECTORY_CHANNEL_CATEGORY_COUNTS": {
     "url": "/channels/:param/directory-entries/counts",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "DIRECTORY_CHANNEL_LIST_BY_ID": {
     "url": "/channels/:param/directory-entries/list",
@@ -3475,7 +3493,11 @@
   },
   "APPLICATION_DIRECTORY_APPLICATION": {
     "url": "/application-directory-static/applications/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "APPLICATION_DIRECTORY_EMBED_APPLICATION": {
     "url": "/application-directory/applications/:param/embed",
@@ -3640,7 +3662,13 @@
   },
   "APPLICATION_SUBSCRIPTION_GROUP_LISTING": {
     "url": "/applications/:param/subscription-group-listings/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_ENTITLEMENTS": {
     "url": "/guilds/:param/entitlements",
@@ -3773,8 +3801,6 @@
   "GET_REFERRAL_ELIGIBLE_USERS": {
     "url": "/users/@me/referrals/eligible-users",
     "allowed_methods": [
-      "GET",
-      "HEAD",
       "OPTIONS",
       "POST"
     ]
