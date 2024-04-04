@@ -22085,6 +22085,7 @@
             e.exports = {
                 bodyCopy: "bodyCopy__72f28",
                 closeButton: "closeButton__18638",
+                confettiCanvas: "confettiCanvas_d629e2",
                 errorInput: "errorInput__33e69",
                 heading: "heading__97936",
                 modalBody: "modalBody__5062a",
