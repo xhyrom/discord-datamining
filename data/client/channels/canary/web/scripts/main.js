@@ -36543,7 +36543,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281599", ", Version Hash: ").concat("93969213af54fe19e4d02d6feddb24ae3f47ef48")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281637", ", Version Hash: ").concat("a64cfab0922e193c256b10d9123c8e03bf14af15")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -49554,6 +49554,7 @@
                 GUILD_IDENTITY_UPSELL_OVERLAY_IMAGE_ALT: "customized profile image",
                 GUILD_IDENTITY_PFX_COACHMARK_TITLE: "Elevate your profile styles",
                 GUILD_IDENTITY_PFX_COACHMARK_BODY: "You can now set server-specific avatar decorations & profile effects with Nitro.",
+                BITE_SIZE_PROFILE_BIO_SEE_MORE: "see more",
                 USER_POPOUT_ABOUT_ME: "About Me",
                 PREMIUM_PROFILE_CUSTOMIZATION_UPSELL_HEADER: "Wanna upload your own banner?",
                 PREMIUM_PROFILE_CUSTOMIZATION_UPGRADE_BODY: "Get more customization with a profile banner and join more servers by [upgrading to Discord Nitro](onLearnMore)",
@@ -85525,8 +85526,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281599", "281599"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281599")), t = 0), t
+                let t = parseInt((e = "281637", "281637"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281637")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107536,8 +107537,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281599",
-                    versionHash: "93969213af54fe19e4d02d6feddb24ae3f47ef48"
+                    buildNumber: "281637",
+                    versionHash: "a64cfab0922e193c256b10d9123c8e03bf14af15"
                 }
             }
             n.r(t), n.d(t, {
@@ -157762,8 +157763,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712249834611",
-                                    build_number: "281599"
+                                    built_at: "1712252318281",
+                                    build_number: "281637"
                                 }
                             },
                             retries: 1
@@ -194995,19 +194996,20 @@
                     className: n,
                     animateOnHover: s = !1,
                     isHovering: _ = !1,
-                    lineClamp: c = 6
-                } = e, E = r.useMemo(() => (0, l.parseBioReact)(t), [t]);
+                    lineClamp: c = 6,
+                    setLineClamp: E = !0
+                } = e, I = r.useMemo(() => (0, l.parseBioReact)(t), [t]);
                 return (0, i.jsx)("div", {
                     className: a()(n, d.markup),
                     children: (0, i.jsx)(o.Text, {
                         variant: "text-sm/normal",
-                        lineClamp: c,
+                        lineClamp: E ? c : void 0,
                         children: (0, i.jsx)(u.MessagesInteractionContext.Provider, {
                             value: {
                                 disableAnimations: s && !_,
                                 disableInteractions: !1
                             },
-                            children: E
+                            children: I
                         })
                     })
                 })
@@ -197260,57 +197262,127 @@
                 })
             }
         },
+        67152: function(e, t, n) {
+            "use strict";
+            n.r(t), n("47120");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("481060"),
+                a = n("906732"),
+                o = n("785717"),
+                l = n("588822"),
+                u = n("171368"),
+                d = n("981631"),
+                _ = n("689938"),
+                c = n("772723");
+            t.default = r.memo(function(e) {
+                let {
+                    user: t,
+                    onClose: n,
+                    bio: E,
+                    hidePersonalInformation: I
+                } = e, {
+                    guildId: T,
+                    channelId: f,
+                    messageId: S,
+                    roleId: h
+                } = (0, o.useUserProfileAnalyticsContext)(), {
+                    analyticsLocations: A
+                } = (0, a.default)(), [m, N] = r.useState(!1);
+                return I || null == E || "" === E ? null : (0, i.jsxs)("div", {
+                    className: c.container,
+                    children: [(0, i.jsx)("div", {
+                        ref: e => {
+                            null != e && N(e.scrollHeight - e.clientHeight > 1)
+                        },
+                        className: c.descriptionClamp,
+                        children: (0, i.jsx)(l.default, {
+                            userBio: E,
+                            setLineClamp: !1
+                        })
+                    }), m && (0, i.jsx)(s.Clickable, {
+                        onClick: () => {
+                            null == n || n(), (0, u.openUserProfileModal)({
+                                userId: t.id,
+                                guildId: null != T ? T : void 0,
+                                channelId: null != f ? f : void 0,
+                                messageId: null != S ? S : void 0,
+                                roleId: null != h ? h : void 0,
+                                analyticsLocation: {
+                                    section: d.AnalyticsSections.BITE_SIZE_PROFILE_POPOUT
+                                },
+                                sourceAnalyticsLocations: A
+                            })
+                        },
+                        className: c.seeMoreText,
+                        children: (0, i.jsx)(s.Text, {
+                            variant: "text-sm/normal",
+                            children: _.default.Messages.BITE_SIZE_PROFILE_BIO_SEE_MORE
+                        })
+                    })]
+                })
+            })
+        },
         958120: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return c
+                    return T
                 }
             });
             var i = n("735250");
             n("470079");
-            var r = n("5192"),
-                s = n("447452"),
-                a = n("505737"),
-                o = n("790711"),
-                l = n("901952"),
-                u = n("287612"),
-                d = n("614664"),
-                _ = n("797849");
+            var r = n("442837"),
+                s = n("246946"),
+                a = n("5192"),
+                o = n("447452"),
+                l = n("505737"),
+                u = n("790711"),
+                d = n("67152"),
+                _ = n("901952"),
+                c = n("287612"),
+                E = n("614664"),
+                I = n("797849");
 
-            function c(e) {
+            function T(e) {
                 let {
                     user: t,
                     displayProfile: n,
-                    guild: c,
-                    channelId: E
+                    onClose: T,
+                    guild: f,
+                    channelId: S
                 } = e, {
-                    moreUserDetailsEnabled: I
-                } = (0, s.useSimplifiedProfileExperiment)({
+                    moreUserDetailsEnabled: h
+                } = (0, o.useSimplifiedProfileExperiment)({
                     location: "BiteSizeProfileBody"
-                }), T = r.default.getName(null == c ? void 0 : c.id, E, t), f = (0, a.default)(t.id, null == c ? void 0 : c.id);
+                }), A = a.default.getName(null == f ? void 0 : f.id, S, t), m = (0, l.default)(t.id, null == f ? void 0 : f.id), N = (0, r.useStateFromStores)([s.default], () => s.default.hidePersonalInformation);
                 return t.isSystemUser() ? null : t.isNonUserBot() ? (0, i.jsxs)("div", {
-                    className: _.paddingBottom,
-                    children: [(0, i.jsx)(d.default, {
-                        guildId: null == c ? void 0 : c.id,
+                    className: I.paddingBottom,
+                    children: [(0, i.jsx)(E.default, {
+                        guildId: null == f ? void 0 : f.id,
                         user: t,
                         nickname: null,
                         pronouns: null
                     }), ";"]
                 }) : (0, i.jsxs)("div", {
-                    className: _.paddingBottom,
-                    children: [(0, i.jsx)(d.default, {
-                        guildId: null == c ? void 0 : c.id,
+                    className: I.paddingBottom,
+                    children: [(0, i.jsx)(E.default, {
+                        guildId: null == f ? void 0 : f.id,
                         user: t,
-                        nickname: T,
+                        nickname: A,
                         pronouns: null == n ? void 0 : n.pronouns,
-                        usernameIcon: t.hasAvatarForGuild(null == c ? void 0 : c.id) && (0, i.jsx)(o.default, {
+                        usernameIcon: t.hasAvatarForGuild(null == f ? void 0 : f.id) && (0, i.jsx)(u.default, {
                             user: t,
-                            nickname: T
+                            nickname: A
                         })
-                    }), I && (0, i.jsx)(u.default, {
+                    }), h && (0, i.jsx)(c.default, {
                         user: t
-                    }), f && (0, i.jsx)(l.default, {
+                    }), h && (0, i.jsx)(d.default, {
+                        user: t,
+                        bio: null == n ? void 0 : n.bio,
+                        hidePersonalInformation: N,
+                        onClose: T
+                    }), m && (0, i.jsx)(_.default, {
                         user: t
                     })]
                 })
@@ -197485,7 +197557,7 @@
                                     displayProfile: L,
                                     guildId: n,
                                     channelId: s,
-                                    onClose: () => null == I ? void 0 : I(),
+                                    onClose: I,
                                     disableUserProfileLink: p,
                                     isHovering: D
                                 }), (0, i.jsx)(S.default.Inner, {
@@ -197493,7 +197565,8 @@
                                         user: t,
                                         displayProfile: L,
                                         guild: v,
-                                        channelId: s
+                                        channelId: s,
+                                        onClose: I
                                     })
                                 })]
                             })
@@ -231910,7 +231983,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "93969213af54fe19e4d02d6feddb24ae3f47ef48"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a64cfab0922e193c256b10d9123c8e03bf14af15"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258000,7 +258073,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281599"
+                                build_number: "281637"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265145,7 +265218,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281599", "281599"), 10);
+                let s = parseInt((n = "281637", "281637"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291893,4 +291966,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.5630a1bb55aa7da53cd5.js.map
+//# sourceMappingURL=97256.0bfd955be9ee210db3c3.js.map
