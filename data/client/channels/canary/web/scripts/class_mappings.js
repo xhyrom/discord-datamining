@@ -24718,6 +24718,9 @@
             e.exports = {
                 addButton: "addButton_d7b605",
                 addButtonIcon: "addButtonIcon__04434",
+                overflowButton: "overflowButton_d39c60 pillBackground__5eb2d",
+                pillBackground: "pillBackground__5eb2d",
+                role: "role__17a96 pillBackground__5eb2d",
                 rolesHeader: "rolesHeader_e507a4",
                 rolesHeaderText: "rolesHeaderText__51e60",
                 root: "root_ae2ef3"
@@ -24736,12 +24739,7 @@
         633124: function(e) {
             "use strict";
             e.exports = {
-                addButton: "addButton__2f066",
-                addButtonIcon: "addButtonIcon__4c4a5",
-                container: "container_c7606c",
-                rolePill: "rolePill__10ffe",
-                roles: "roles__14509",
-                rolesText: "rolesText__14d7d"
+                container: "container_c7606c"
             }
         },
         395274: function(e) {
