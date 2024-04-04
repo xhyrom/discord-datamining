@@ -2,6 +2,12 @@
 <h2 id="h_01HR583HECRE5TSAKETV86Q05J">Introduction</h2>
 <p>Alright, so you've built an awesome app, and now wanna let folks play it, right?</p>
 <p>Currently, we are allowing limited visibility for private Activities. This means that only people specifically invited by you can see your Activity.</p>
+<h2 id="h_01HTN3K43WZMYCVX4CGXZQS67A">Table of Contents</h2>
+<p><a href="https://support-dev.discord.com/hc/en-us/articles/21204493235991#h_01HR583HEC3ZDTFBQ47687N9KD">How Can People Play My Activity?</a></p>
+<p><a href="https://support-dev.discord.com/hc/en-us/articles/21204493235991#h_01HR583HECXA5653AC2NXT62YP">Adding Members to Your Developer Team</a></p>
+<p><a href="https://support-dev.discord.com/hc/en-us/articles/21204493235991#h_01HR583HECF659272M43AWY6SW">Adding App Testers to the Application</a></p>
+<p><a href="https://support-dev.discord.com/hc/en-us/articles/21204493235991#h_01HR583HECWXA8RE8EBJ1YFXJC">Viewing Private Activities on the Activity Shelf</a></p>
+<p><a href="https://support-dev.discord.com/hc/en-us/articles/21204493235991#h_01HR583HECJG2NC0GXW1D77VHV">Where can I find my Activity’s Application ID?</a></p>
 <h2 id="h_01HR583HEC3ZDTFBQ47687N9KD">How Can People Play My Activity?</h2>
 <p class="callout">It is very important to only test activities from developers that you trust. For more information on Private Activity Safety, check out <a href="https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety">this</a> article.</p>
 <p>There are 2 ways to get visibility on your Activity until it can be released to more users in the future:</p>
