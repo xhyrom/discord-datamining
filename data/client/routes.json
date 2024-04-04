@@ -2348,7 +2348,11 @@
   },
   "APPLICATION_LIVE_BUILD": {
     "url": "/applications/:param/branches/:param/builds/live",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "APPLICATION_BUILD_SIZE": {
     "url": "/applications/:param/branches/:param/builds/:param/size",
@@ -2603,7 +2607,11 @@
   },
   "GIFT_CODE_RESOLVE": {
     "url": "/entitlements/gift-codes/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GIFT_CODE_REDEEM": {
     "url": "/entitlements/gift-codes/:param/redeem",
@@ -2909,7 +2917,10 @@
   },
   "CHANNEL_THREADS": {
     "url": "/channels/:param/threads",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CHANNEL_MESSAGE_THREADS": {
     "url": "/channels/:param/messages/:param/threads",
@@ -4393,7 +4404,10 @@
   },
   "SAFETY_WARNING_FALSE_POSITIVE": {
     "url": "/channels/:param/safety-warning/report-false-positive",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MY_CONTENT_INVENTORY": {
     "url": "/content-inventory/users/@me",
