@@ -36543,7 +36543,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281787", ", Version Hash: ").concat("659a1c645ddd37db9772704cadfcda3a3e9723bb")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281792", ", Version Hash: ").concat("8e3ee44523154dea828a154c205c310bb8ce396a")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -49556,7 +49556,6 @@
                 GUILD_IDENTITY_UPSELL_OVERLAY_IMAGE_ALT: "customized profile image",
                 GUILD_IDENTITY_PFX_COACHMARK_TITLE: "Elevate your profile styles",
                 GUILD_IDENTITY_PFX_COACHMARK_BODY: "You can now set server-specific avatar decorations & profile effects with Nitro.",
-                BITE_SIZE_PROFILE_BIO_SEE_MORE: "see more",
                 USER_POPOUT_ABOUT_ME: "About Me",
                 PREMIUM_PROFILE_CUSTOMIZATION_UPSELL_HEADER: "Wanna upload your own banner?",
                 PREMIUM_PROFILE_CUSTOMIZATION_UPGRADE_BODY: "Get more customization with a profile banner and join more servers by [upgrading to Discord Nitro](onLearnMore)",
@@ -54889,7 +54888,7 @@
                 USER_RECENT_GAMES_ON_PROFILE: "Show recent games on profile",
                 USER_RECENT_GAMES_YOU_BOTH_PLAY: "You both play this game",
                 NEW_TO_THIS_GAME: "New to this game",
-                RECENT_GAMES_SETTING_NOTE: "Display up to four recently played games on your profile. Learn more about recent games sharing [here.](onHelpArticleClick)",
+                RECENT_GAMES_SETTING_NOTE: "Display up to six recently played games on your profile. Learn more about recent games sharing [here.](onHelpArticleClick)",
                 RECENT_GAMES_SETTING_REQUIREMENT: "You must have [Activity Sharing](onSettingClick) enabled.",
                 MEMBERS_TABLE_JOINED_AT_TIMESTAMP_MINUTES: "{count} {count, plural, =1 {min} other {mins}} ago",
                 MEMBERS_TABLE_JOINED_AT_TIMESTAMP_HOURS: "{count} {count, plural, =1 {hr} other {hrs}} this week",
@@ -85519,8 +85518,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281787", "281787"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281787")), t = 0), t
+                let t = parseInt((e = "281792", "281792"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281792")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107535,8 +107534,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281787",
-                    versionHash: "659a1c645ddd37db9772704cadfcda3a3e9723bb"
+                    buildNumber: "281792",
+                    versionHash: "8e3ee44523154dea828a154c205c310bb8ce396a"
                 }
             }
             n.r(t), n.d(t, {
@@ -157763,8 +157762,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712262002926",
-                                    build_number: "281787"
+                                    built_at: "1712262228865",
+                                    build_number: "281792"
                                 }
                             },
                             retries: 1
@@ -192895,27 +192894,27 @@
             "use strict";
             n.r(t), n.d(t, {
                 TrackUserProfileProperties: function() {
-                    return c
+                    return E
                 },
                 UserProfileSections: function() {
                     return u
                 },
                 UserProfileTypes: function() {
-                    return d
+                    return _
                 },
                 getBadgeAsset: function() {
-                    return f
+                    return S
                 }
             });
-            var i, r, s, a, o, l, u, d, _, c, E, I, T = n("981631");
+            var i, r, s, a, o, l, u, d, _, c, E, I, T, f = n("981631");
 
-            function f(e) {
+            function S(e) {
                 let {
                     API_ENDPOINT: t,
                     CDN_HOST: n
                 } = window.GLOBAL_ENV;
-                return null != n ? "".concat(location.protocol, "//").concat(n, "/badge-icons/").concat(e, ".png") : "".concat(location.protocol).concat(t).concat(T.Endpoints.BADGE_ICON(e))
-            }(i = u || (u = {})).USER_INFO = "USER_INFO", i.USER_INFO_CONNECTIONS = "USER_INFO_CONNECTIONS", i.ACTIVITY = "ACTIVITY", i.MUTUAL_GUILDS = "MUTUAL_GUILDS", i.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", i.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", i.RECENT_GAMES = "RECENT_GAMES", (r = d || (d = {})).POPOUT = "POPOUT", r.MODAL = "MODAL", r.SETTINGS = "SETTINGS", r.PANEL = "PANEL", r.CARD = "CARD", r.POMELO_POPOUT = "POMELO_POPOUT", r.CANCEL_MODAL = "CANCEL_MODAL", (s = _ || (_ = {})).POPOUT = "POPOUT", s.BITE_SIZE_POPOUT = "BITE_SIZE_POPOUT", s.MODAL = "MODAL", s.SIMPLIFIED_MODAL = "SIMPLIFIED_MODAL", s.DM_PANEL = "DM_PANEL", s.ACCOUNT_POPOUT = "ACCOUNT_POPOUT", s.ACTION_SHEET = "ACTION_SHEET", (a = c || (c = {}))[a.NICKNAME = 0] = "NICKNAME", a[a.PRONOUNS = 1] = "PRONOUNS", a[a.AVATAR = 2] = "AVATAR", a[a.ANIMATED_AVATAR = 3] = "ANIMATED_AVATAR", a[a.BANNER = 4] = "BANNER", a[a.ANIMATED_BANNER = 5] = "ANIMATED_BANNER", a[a.BIO = 6] = "BIO", a[a.THEME = 7] = "THEME", a[a.AVATAR_DECORATION = 8] = "AVATAR_DECORATION", a[a.PROFILE_EFFECT = 9] = "PROFILE_EFFECT", (o = E || (E = {})).VIEW = "VIEW", o.SEND_MESSAGE = "SEND_MESSAGE", o.SEND_DIRECT_MESSAGE = "SEND_DIRECT_MESSAGE", o.SEND_FRIEND_REQUEST = "SEND_FRIEND_REQUEST", o.ACCEPT_FRIEND_REQUEST = "ACCEPT_FRIEND_REQUEST", o.IGNORE_FRIEND_REQUEST = "IGNORE_FRIEND_REQUEST", o.CANCEL_FRIEND_REQUEST = "CANCEL_FRIEND_REQUEST", o.REMOVE_FRIEND = "REMOVE_FRIEND", o.BLOCK = "BLOCK", o.UNBLOCK = "UNBLOCK", o.REPORT = "REPORT", o.COPY_USERNAME = "COPY_USERNAME", o.COPY_USER_ID = "COPY_USER_ID", o.PRESS_VIEW_PROFILE = "PRESS_VIEW_PROFILE", o.PRESS_OPTIONS = "PRESS_OPTIONS", o.PRESS_BADGE = "PRESS_BADGE", o.PRESS_SECTION = "PRESS_SECTION", o.PRESS_PRONOUNS = "PRESS_PRONOUNS", o.PRESS_PREMIUM_UPSELL = "PRESS_PREMIUM_UPSELL", o.PRESS_SET_STATUS = "PRESS_SET_STATUS", o.PRESS_SET_CUSTOM_STATUS = "PRESS_SET_CUSTOM_STATUS", o.PRESS_SWITCH_ACCOUNTS = "PRESS_SWITCH_ACCOUNTS", o.PRESS_SET_FRIEND_NICKNAME = "PRESS_SET_FRIEND_NICKNAME", o.JOIN_ACTIVITY = "JOIN_ACTIVITY", o.SET_NOTE = "SET_NOTE", o.SET_VOLUME = "SET_VOLUME", o.EDIT_PROFILE = "EDIT_PROFILE", o.EDIT_GUILD_PROFILE = "EDIT_GUILD_PROFILE", o.GIFT_PREMIUM = "GIFT_PREMIUM", o.VOICE_CALL = "VOICE_CALL", o.VIDEO_CALL = "VIDEO_CALL", o.MUTE = "MUTE", o.MUTE_SOUNDBOARD = "MUTE_SOUNDBOARD", o.DISABLE_VIDEO = "DISABLE_VIDEO", o.DEAFEN = "DEAFEN", o.DISCONNECT = "DISCONNECT", (l = I || (I = {})).VOICE = "VOICE", l.PLAYING = "PLAYING", l.STREAMING = "STREAMING", l.LISTENING = "LISTENING", l.WATCHING = "WATCHING", l.CUSTOM_STATUS = "CUSTOM_STATUS", l.COMPETING = "COMPETING", l.HANG_STATUS = "HANG_STATUS"
+                return null != n ? "".concat(location.protocol, "//").concat(n, "/badge-icons/").concat(e, ".png") : "".concat(location.protocol).concat(t).concat(f.Endpoints.BADGE_ICON(e))
+            }(i = u || (u = {})).USER_INFO = "USER_INFO", i.USER_INFO_CONNECTIONS = "USER_INFO_CONNECTIONS", i.ACTIVITY = "ACTIVITY", i.MUTUAL_GUILDS = "MUTUAL_GUILDS", i.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", i.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", (d || (d = {})).RECENT_GAMES = "RECENT_GAMES", (r = _ || (_ = {})).POPOUT = "POPOUT", r.MODAL = "MODAL", r.SETTINGS = "SETTINGS", r.PANEL = "PANEL", r.CARD = "CARD", r.POMELO_POPOUT = "POMELO_POPOUT", r.CANCEL_MODAL = "CANCEL_MODAL", (s = c || (c = {})).POPOUT = "POPOUT", s.BITE_SIZE_POPOUT = "BITE_SIZE_POPOUT", s.MODAL = "MODAL", s.SIMPLIFIED_MODAL = "SIMPLIFIED_MODAL", s.DM_PANEL = "DM_PANEL", s.ACCOUNT_POPOUT = "ACCOUNT_POPOUT", s.ACTION_SHEET = "ACTION_SHEET", (a = E || (E = {}))[a.NICKNAME = 0] = "NICKNAME", a[a.PRONOUNS = 1] = "PRONOUNS", a[a.AVATAR = 2] = "AVATAR", a[a.ANIMATED_AVATAR = 3] = "ANIMATED_AVATAR", a[a.BANNER = 4] = "BANNER", a[a.ANIMATED_BANNER = 5] = "ANIMATED_BANNER", a[a.BIO = 6] = "BIO", a[a.THEME = 7] = "THEME", a[a.AVATAR_DECORATION = 8] = "AVATAR_DECORATION", a[a.PROFILE_EFFECT = 9] = "PROFILE_EFFECT", (o = I || (I = {})).VIEW = "VIEW", o.SEND_MESSAGE = "SEND_MESSAGE", o.SEND_DIRECT_MESSAGE = "SEND_DIRECT_MESSAGE", o.SEND_FRIEND_REQUEST = "SEND_FRIEND_REQUEST", o.ACCEPT_FRIEND_REQUEST = "ACCEPT_FRIEND_REQUEST", o.IGNORE_FRIEND_REQUEST = "IGNORE_FRIEND_REQUEST", o.CANCEL_FRIEND_REQUEST = "CANCEL_FRIEND_REQUEST", o.REMOVE_FRIEND = "REMOVE_FRIEND", o.BLOCK = "BLOCK", o.UNBLOCK = "UNBLOCK", o.REPORT = "REPORT", o.COPY_USERNAME = "COPY_USERNAME", o.COPY_USER_ID = "COPY_USER_ID", o.PRESS_VIEW_PROFILE = "PRESS_VIEW_PROFILE", o.PRESS_OPTIONS = "PRESS_OPTIONS", o.PRESS_BADGE = "PRESS_BADGE", o.PRESS_SECTION = "PRESS_SECTION", o.PRESS_PRONOUNS = "PRESS_PRONOUNS", o.PRESS_PREMIUM_UPSELL = "PRESS_PREMIUM_UPSELL", o.PRESS_SET_STATUS = "PRESS_SET_STATUS", o.PRESS_SET_CUSTOM_STATUS = "PRESS_SET_CUSTOM_STATUS", o.PRESS_SWITCH_ACCOUNTS = "PRESS_SWITCH_ACCOUNTS", o.PRESS_SET_FRIEND_NICKNAME = "PRESS_SET_FRIEND_NICKNAME", o.JOIN_ACTIVITY = "JOIN_ACTIVITY", o.SET_NOTE = "SET_NOTE", o.SET_VOLUME = "SET_VOLUME", o.EDIT_PROFILE = "EDIT_PROFILE", o.EDIT_GUILD_PROFILE = "EDIT_GUILD_PROFILE", o.GIFT_PREMIUM = "GIFT_PREMIUM", o.VOICE_CALL = "VOICE_CALL", o.VIDEO_CALL = "VIDEO_CALL", o.MUTE = "MUTE", o.MUTE_SOUNDBOARD = "MUTE_SOUNDBOARD", o.DISABLE_VIDEO = "DISABLE_VIDEO", o.DEAFEN = "DEAFEN", o.DISCONNECT = "DISCONNECT", (l = T || (T = {})).VOICE = "VOICE", l.PLAYING = "PLAYING", l.STREAMING = "STREAMING", l.LISTENING = "LISTENING", l.WATCHING = "WATCHING", l.CUSTOM_STATUS = "CUSTOM_STATUS", l.COMPETING = "COMPETING", l.HANG_STATUS = "HANG_STATUS"
         },
         255564: function(e, t, n) {
             "use strict";
@@ -196017,11 +196016,14 @@
         347949: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                UserProfileRecentGamesContainer: function() {
+                    return D
+                },
                 UserProfileRecentGamesSection: function() {
-                    return g
+                    return v
                 },
                 UserProfileRecentGamesThemedSection: function() {
-                    return L
+                    return M
                 }
             }), n("47120"), n("653041");
             var i = n("735250"),
@@ -196043,10 +196045,12 @@
                 A = n("221292"),
                 m = n("747074"),
                 N = n("659101"),
-                O = n("689938"),
-                p = n("458186");
+                O = n("171368"),
+                p = n("981631"),
+                R = n("689938"),
+                C = n("458186");
 
-            function R(e) {
+            function g(e) {
                 let {
                     game: t,
                     isSharedGame: n
@@ -196061,9 +196065,9 @@
                     size: 40
                 });
                 return (0, i.jsxs)("div", {
-                    className: p.recentGameContainer,
+                    className: C.recentGameContainer,
                     children: [(0, i.jsx)("div", {
-                        className: p.recentGameIcon,
+                        className: C.recentGameIcon,
                         children: null != h && (0, i.jsx)("img", {
                             alt: "",
                             "aria-hidden": !0,
@@ -196072,9 +196076,9 @@
                             height: 40
                         })
                     }), (0, i.jsxs)("div", {
-                        className: p.recentGameDetails,
+                        className: C.recentGameDetails,
                         children: [(0, i.jsxs)("div", {
-                            className: p.recentGameTitleContainer,
+                            className: C.recentGameTitleContainer,
                             children: [(0, i.jsx)(c.Tooltip, {
                                 text: s.name,
                                 color: c.Tooltip.Colors.PRIMARY,
@@ -196082,14 +196086,14 @@
                                 children: e => (0, i.jsx)("span", {
                                     ref: u,
                                     ...e,
-                                    className: p.recentGameTitle,
+                                    className: C.recentGameTitle,
                                     children: s.name
                                 })
                             }), n && (0, i.jsx)(c.Tooltip, {
-                                text: O.default.Messages.USER_RECENT_GAMES_YOU_BOTH_PLAY,
+                                text: R.default.Messages.USER_RECENT_GAMES_YOU_BOTH_PLAY,
                                 color: c.Tooltip.Colors.PRIMARY,
                                 children: e => (0, i.jsx)("div", {
-                                    className: p.sharedGameIcon,
+                                    className: C.sharedGameIcon,
                                     ...e,
                                     children: (0, i.jsx)(d.GroupIcon, {
                                         height: 14,
@@ -196103,7 +196107,7 @@
                             color: "header-secondary",
                             children: a
                         }), t.isNew && (0, i.jsxs)("div", {
-                            className: p.newIcon,
+                            className: C.newIcon,
                             children: [(0, i.jsx)(_.NewUserIcon, {
                                 height: 12,
                                 width: 12,
@@ -196111,104 +196115,134 @@
                             }), (0, i.jsx)(c.Text, {
                                 variant: "text-xs/normal",
                                 color: "status-positive",
-                                children: O.default.Messages.NEW_TO_THIS_GAME
+                                children: R.default.Messages.NEW_TO_THIS_GAME
                             })]
                         })]
                     })]
                 })
             }
-            let C = r.memo(function(e) {
+            let L = r.memo(function(e) {
                 let {
                     userId: t,
-                    containerClassName: n,
-                    maxItems: s = 3,
-                    wrapChildren: o
+                    recentGames: n,
+                    currentUserApplicationIds: s,
+                    containerClassName: o
                 } = e, {
-                    recentGames: l,
-                    currentUserApplicationIds: d,
-                    isFetching: _,
-                    isError: c
-                } = (0, T.useUserRecentGames)(t), E = r.useMemo(() => null == l ? void 0 : l.slice(0, s), [l, s]), {
-                    trackUserProfileAction: I,
-                    ...S
-                } = (0, h.useUserProfileAnalyticsContext)(), m = _ || c || null == E || 0 === E.length, [N, O] = r.useState(!1), [C, g] = r.useState(!1);
-                if (r.useEffect(() => {
-                        if (m || N || null == d || !C) return;
-                        O(!0);
-                        let e = [],
-                            t = [],
-                            n = [];
-                        E.forEach(i => {
-                            let {
-                                applicationId: r,
-                                isNew: s
-                            } = i;
-                            e.push(r), s && t.push(r), d.has(r) && n.push(r)
-                        }), (0, A.trackUserProfileRecentGamesViewed)({
-                            ...S,
-                            applicationIds: e,
-                            newApplicationIds: t,
-                            sharedApplicationIds: n
-                        })
-                    }, [d, m, E, O, N, S, C]), m) return null;
-                let L = (0, i.jsx)(u.VisibilitySensor, {
-                    onChange: g,
+                    trackUserProfileAction: l,
+                    ...d
+                } = (0, h.useUserProfileAnalyticsContext)(), [_, c] = r.useState(!1), [E, I] = r.useState(!1);
+                return r.useEffect(() => {
+                    if (null == s || _ || !E) return;
+                    c(!0);
+                    let e = [],
+                        t = [],
+                        i = [];
+                    n.forEach(n => {
+                        let {
+                            applicationId: r,
+                            isNew: a
+                        } = n;
+                        e.push(r), a && t.push(r), s.has(r) && i.push(r)
+                    }), (0, A.trackUserProfileRecentGamesViewed)({
+                        ...d,
+                        applicationIds: e,
+                        newApplicationIds: t,
+                        sharedApplicationIds: i
+                    })
+                }, [s, n, c, _, d, E]), (0, i.jsx)(u.VisibilitySensor, {
+                    onChange: I,
                     threshold: .25,
-                    active: !N,
+                    active: !_,
                     children: (0, i.jsx)("div", {
-                        className: a()(p.recentGames, n),
-                        children: null == E ? void 0 : E.map(e => {
-                            var n, r, s;
-                            return (0, i.jsx)(R, {
+                        className: a()(C.recentGames, o),
+                        children: null == n ? void 0 : n.map(e => {
+                            var n, r, a;
+                            return (0, i.jsx)(g, {
                                 game: e,
-                                isSharedGame: (n = t, r = d, s = e.applicationId, n !== f.default.getId() && null != r && r.has(s))
+                                isSharedGame: (n = t, r = s, a = e.applicationId, n !== f.default.getId() && null != r && r.has(a))
                             }, e.lastSessionId)
                         })
                     })
-                });
-                return null != o ? (0, i.jsx)(i.Fragment, {
-                    children: o(L)
-                }) : L
+                })
             });
 
-            function g(e) {
+            function D(e) {
+                let {
+                    userId: t,
+                    maxItems: n = 3,
+                    wrapChildren: s,
+                    containerClassName: a
+                } = e, {
+                    recentGames: o,
+                    currentUserApplicationIds: l,
+                    isFetching: u
+                } = (0, T.useUserRecentGames)(t), d = r.useMemo(() => null == o ? void 0 : o.slice(0, n), [o, n]), _ = r.useMemo(() => null != o && o.length > n, [o, n]), E = r.useCallback(() => {
+                    (0, O.openUserProfileModal)({
+                        userId: t,
+                        guildId: p.ME,
+                        analyticsLocation: {
+                            section: p.AnalyticsSections.USER_PROFILE
+                        }
+                    })
+                }, [t]);
+                if (u || null == d || 0 === d.length) return null;
+                let I = (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsxs)("div", {
+                        className: C.headerContainer,
+                        children: [(0, i.jsx)(c.Heading, {
+                            className: C.header,
+                            variant: "eyebrow",
+                            children: R.default.Messages.RECENT_GAMES
+                        }), _ && (0, i.jsx)(c.Clickable, {
+                            className: C.viewAll,
+                            onClick: E,
+                            children: (0, i.jsx)(c.Heading, {
+                                variant: "eyebrow",
+                                color: "text-link",
+                                children: R.default.Messages.VIEW_ALL.toUpperCase()
+                            })
+                        })]
+                    }), (0, i.jsx)(L, {
+                        containerClassName: a,
+                        userId: t,
+                        recentGames: d,
+                        currentUserApplicationIds: l
+                    })]
+                });
+                return null != s ? (0, i.jsx)(i.Fragment, {
+                    children: s(I)
+                }) : I
+            }
+
+            function v(e) {
                 let {
                     userId: t,
                     containerClassName: n
-                } = e, s = r.useCallback(e => (0, i.jsxs)(N.default, {
-                    children: [(0, i.jsx)(c.Heading, {
-                        variant: "eyebrow",
-                        className: p.recentGamesHeading,
-                        children: O.default.Messages.RECENT_GAMES
-                    }), e]
+                } = e, s = r.useCallback(e => (0, i.jsx)(N.default, {
+                    children: e
                 }), []);
-                return (0, i.jsx)(C, {
+                return (0, i.jsx)(D, {
                     userId: t,
                     containerClassName: n,
                     wrapChildren: s
                 })
             }
 
-            function L(e) {
+            function M(e) {
                 let {
                     userId: t,
                     containerClassName: n
                 } = e, s = r.useCallback(e => (0, i.jsx)(m.default.Inner, {
-                    children: (0, i.jsxs)(N.default, {
-                        children: [(0, i.jsx)(c.Heading, {
-                            variant: "eyebrow",
-                            className: p.recentGamesHeading,
-                            children: O.default.Messages.RECENT_GAMES
-                        }), e]
+                    children: (0, i.jsx)(N.default, {
+                        children: e
                     })
                 }), []);
-                return (0, i.jsx)(C, {
+                return (0, i.jsx)(D, {
                     userId: t,
                     containerClassName: n,
                     wrapChildren: s
                 })
             }
-            t.default = C
         },
         841040: function(e, t, n) {
             "use strict";
@@ -197319,7 +197353,7 @@
                         className: c.seeMoreText,
                         children: (0, i.jsx)(s.Text, {
                             variant: "text-sm/normal",
-                            children: _.default.Messages.BITE_SIZE_PROFILE_BIO_SEE_MORE
+                            children: _.default.Messages.USER_PROFILE_BIO_SEE_MORE
                         })
                     })]
                 })
@@ -231983,7 +232017,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "659a1c645ddd37db9772704cadfcda3a3e9723bb"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8e3ee44523154dea828a154c205c310bb8ce396a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258073,7 +258107,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281787"
+                                build_number: "281792"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265218,7 +265252,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281787", "281787"), 10);
+                let s = parseInt((n = "281792", "281792"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291960,4 +291994,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.47ab45f1beb1146e504b.js.map
+//# sourceMappingURL=97256.b86d47fec0d9f72b3e24.js.map

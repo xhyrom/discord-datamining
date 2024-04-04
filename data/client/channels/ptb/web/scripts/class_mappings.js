@@ -21627,6 +21627,8 @@
         630883: function(e) {
             "use strict";
             e.exports = {
+                dividerDefault: "dividerDefault__07e4b",
+                recentGamesSwitch: "recentGamesSwitch_c37017",
                 requirement: "requirement_f0aa0e"
             }
         },
@@ -24494,6 +24496,8 @@
         458186: function(e) {
             "use strict";
             e.exports = {
+                header: "header__9af10",
+                headerContainer: "headerContainer_ec3f63",
                 newIcon: "newIcon__6568d",
                 recentGameContainer: "recentGameContainer__8231a",
                 recentGameDetails: "recentGameDetails_fa472d",
@@ -24502,8 +24506,8 @@
                 recentGameTitleContainer: "recentGameTitleContainer_bd3ae5",
                 recentGames: "recentGames_e4425b",
                 recentGamesGrid: "recentGamesGrid_d370b2",
-                recentGamesHeading: "recentGamesHeading_bb152b",
-                sharedGameIcon: "sharedGameIcon__45b1e"
+                sharedGameIcon: "sharedGameIcon__45b1e",
+                viewAll: "viewAll__77948"
             }
         },
         420867: function(e) {
