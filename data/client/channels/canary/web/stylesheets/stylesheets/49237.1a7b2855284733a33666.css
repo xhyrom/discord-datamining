@@ -27684,7 +27684,7 @@ span.button_ae40a4.disabled__1dc58 {
     width: 100%;
     height: 100%;
     max-height: 85%;
-    max-width: 68.5%;
+    max-width: 59.5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27723,6 +27723,10 @@ span.button_ae40a4.disabled__1dc58 {
     display: flex;
     flex-direction: column;
     gap: 16px
+}
+
+.description__1ee46 {
+    white-space: break-spaces
 }
 
 .wrapper_b9ff7a {
@@ -27946,13 +27950,6 @@ span.button_ae40a4.disabled__1dc58 {
     height: 24px;
     -o-object-fit: cover;
     object-fit: cover
-}
-
-.cardBenefitDesc_dcee32 {
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    display: -webkit-box;
-    overflow: hidden
 }
 
 .benefitsSummary_fa2604 {
@@ -28184,4 +28181,4 @@ span.button_ae40a4.disabled__1dc58 {
     }
 }
 
-/*# sourceMappingURL=49237.2a74568fb0406ebbd7af.css.map*/
+/*# sourceMappingURL=49237.1a7b2855284733a33666.css.map*/
