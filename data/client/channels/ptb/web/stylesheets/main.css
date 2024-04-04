@@ -21141,7 +21141,22 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     position: relative;
     flex-wrap: wrap;
     display: flex;
-    margin-top: 2px
+    margin-top: 2px;
+    color: var(--text-normal);
+    gap: 4px
+}
+
+.pillBackground__5eb2d {
+    border-radius: 4px;
+    border: 1px solid var(--border-faint);
+    background: var(--bg-mod-faint)
+}
+
+.role__17a96 {
+    margin: 0;
+    padding: 6px 4px;
+    gap: 4px;
+    height: 28px
 }
 
 .rolesHeaderText__51e60 {
@@ -21154,37 +21169,13 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     justify-content: space-between
 }
 
-.addButton_d7b605 {
-    justify-content: center;
-    color: var(--interactive-normal);
-    background-color: none
-}
-
-.addButtonIcon__04434 {
+.overflowButton_d39c60 {
     cursor: pointer;
-    width: 14px;
-    height: 14px
+    padding: 5px 8px;
+    align-items: center
 }
 
-.container_c7606c {
-    padding: 12px 12px 0
-}
-
-.rolesText__14d7d {
-    text-transform: capitalize
-}
-
-.roles__14509 {
-    color: var(--text-normal)
-}
-
-.rolePill__10ffe {
-    border-radius: 4px;
-    border: 1px solid var(--border-faint);
-    background: var(--bg-mod-faint)
-}
-
-.addButton__2f066 {
+.addButton_d7b605 {
     color: var(--interactive-normal);
     background: none;
     border: none;
@@ -21192,9 +21183,13 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     padding: 0
 }
 
-.addButtonIcon__4c4a5 {
+.addButtonIcon__04434 {
     width: 20px;
     height: 20px
+}
+
+.container_c7606c {
+    padding: 12px 12px 0
 }
 
 .container_b222f4 {
@@ -131719,4 +131714,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.a96ef4f1732ac643b972.css.map*/
+/*# sourceMappingURL=99387.556907a7938d695fb8be.css.map*/
