@@ -3134,7 +3134,10 @@
   },
   "DROPS_CLAIM_REWARD_CODE": {
     "url": "/drops/reward-code/claim",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "DROPS_USER_STATUS": {
     "url": "/drops/@me",
@@ -3373,7 +3376,12 @@
   },
   "BUG_REPORTS": {
     "url": "/private/bug-reports",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "PAYMENT_PAYOUT_GROUPS": {
     "url": "/applications/:param/payment-payout-groups",
@@ -4146,7 +4154,10 @@
   },
   "QUESTS_PREVIEW_DISMISSIBILITY": {
     "url": "/quests/:param/preview/dismissibility",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "QUESTS_PREVIEW_COMPLETE": {
     "url": "/quests/:param/preview/complete",
