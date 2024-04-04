@@ -6,8 +6,20 @@
 <p>On Android, hold down on the Message, then select “Copy Message Link.”</p>
 <p>On desktop, “right-click” on the Message, and select “Copy Message Link.”</p>
 <p>Make sure the Message Link is formatted like this:</p>
-<p><strong>From a DM: https://discordapp.com/channels/@me/xxxxxxxxxxxxxxxxxx/xxxxxxxxxxxxxxxxx</strong></p>
-<p><strong>From</strong> <strong>a server: https://discordapp.com/channels/xxxxxxxxxxxxxxxxxxx/xxxxxxxxxxxxxxxxxx/xxxxxxxxxxxxxxxxxx</strong></p>
+<ul>
+    <li>
+        <strong>From a DM: </strong>
+        <ul>
+            <li><strong>https://discordapp.com/channels/@me/xxxxxxxxxxxxxxxxxx/xxxxxxxxxxxxxxxxx</strong></li>
+        </ul>
+    </li>
+    <li>
+        <strong>From</strong> <strong>a server: </strong>
+        <ul>
+            <li><strong>https://discordapp.com/channels/xxxxxxxxxxxxxxxxxxx/xxxxxxxxxxxxxxxxxx/xxxxxxxxxxxxxxxxxx</strong></li>
+        </ul>
+    </li>
+</ul>
 <p><strong>Do not mislead Discord’s support teams</strong>. Do not make false or malicious reports to our Trust &amp; Safety or other customer support teams, send multiple reports about the same issue, or ask a group of users to report the same content or issue. Repeated violations of this guideline may result in loss of access to our reporting functions.</p>
 <h1 id="h_01HTN65XQSC67CQ0BR11XTQ8TF"><strong>What Happens After I Submit a Report?</strong></h1>
 <p>When we become aware of content that violates our <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a> or <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a>, our Safety team reviews and takes the necessary enforcement actions, including: disabling accounts, removing servers, and when appropriate, engaging with the proper authorities.</p>
