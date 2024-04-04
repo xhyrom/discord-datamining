@@ -77641,231 +77641,6 @@ input::-webkit-inner-spin-button {
     height: 20px
 }
 
-.activityImage__6bead {
-    width: 100%;
-    height: 100%;
-    min-width: 0;
-    min-height: 0;
-    flex: none;
-    -o-object-fit: cover;
-    object-fit: cover;
-    animation: fadeIn_d23ba8.7s
-}
-
-.brokenImageIconWrapper__100d2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black
-}
-
-@keyframes fadeIn_d23ba8 {
-    0% {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fadeOut__2b5a7 {
-    0% {
-        opacity: 1
-    }
-
-    to {
-        opacity: 0
-    }
-}
-
-.overlayBadge__36fa6 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 4px
-}
-
-.badgeContainer__8c355 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 3px
-}
-
-.staffBadge_c053fb {
-    background-color: var(--white-500);
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    border: 1px solid var(--black-500)
-}
-
-.activityCard_de61e4 {
-    position: relative;
-    width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: var(--background-secondary);
-    cursor: pointer;
-    transition: transform.25s
-}
-
-.activityCard_de61e4:hover,
-.activityCard_de61e4:focus {
-    transform: scale(1.025)
-}
-
-.activityCard_de61e4:hover .activityCardHoverHint__617dc,
-.activityCard_de61e4:focus .activityCardHoverHint__617dc {
-    transform: translatey(-40px)
-}
-
-.activityCard_de61e4:hover .activityCardButton__7b264,
-.activityCard_de61e4:focus .activityCardButton__7b264 {
-    background-color: var(--brand-experiment)
-}
-
-.activityCard_de61e4:hover .activityCardSocialProofContainer_c8a186,
-.activityCard_de61e4:focus .activityCardSocialProofContainer_c8a186 {
-    opacity: 0
-}
-
-.activityCard_de61e4:hover .activityCardTagContainer_b982bc,
-.activityCard_de61e4:focus .activityCardTagContainer_b982bc {
-    opacity: 0
-}
-
-.activityCardWithoutDetailPageRoute__8a4d7:hover .activityCardSocialProofContainer_c8a186,
-.activityCardWithoutDetailPageRoute__8a4d7:focus .activityCardSocialProofContainer_c8a186 {
-    opacity: 1
-}
-
-.activityCardWithoutDetailPageRoute__8a4d7:hover .activityCardTagContainer_b982bc,
-.activityCardWithoutDetailPageRoute__8a4d7:focus .activityCardTagContainer_b982bc {
-    opacity: 1
-}
-
-.activityCardReducedMotion_b6f6d4 {
-    transition: transform 0s
-}
-
-.activityCardImage__8c795 {
-    aspect-ratio: 16/9;
-    width: 100%
-}
-
-.activityCardDetails__2cf1d {
-    padding: 8px;
-    min-height: 72px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between
-}
-
-.activityCardParticipants_c211d3 {
-    margin-top: 2px;
-    color: var(--interactive-normal)
-}
-
-.activityCardUsersHavePlayedContainer__6024c {
-    display: flex;
-    align-items: center;
-    gap: 8px
-}
-
-.activityCardUsersHavePlayedText__7015e {
-    line-break: break-all
-}
-
-.activityCardSocialProofContainer_c8a186 {
-    margin-top: 16px;
-    opacity: 1;
-    transition: opacity.25s
-}
-
-.activityCardTagContainer_b982bc {
-    margin-top: 16px;
-    display: flex;
-    gap: 4px;
-    opacity: 1;
-    transition: opacity.25s
-}
-
-.activityCardTag__32ab2 {
-    padding: 2px;
-    border-radius: 4px;
-    background-color: var(--background-tertiary)
-}
-
-.activityCardHoverHint__617dc {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: calc(100% - 16px);
-    padding: 8px 8px 16px;
-    background-color: var(--background-secondary);
-    color: var(--header-secondary);
-    transition: transform.25s;
-    transform: translatey(0);
-    display: flex;
-    justify-content: space-between;
-    align-items: center
-}
-
-.activityCardHoverHintReducedMotion__9ba7a {
-    transition: transform 0s
-}
-
-.activityCardImageContainer__26b01 {
-    position: relative;
-    overflow: hidden;
-    -o-object-fit: cover;
-    object-fit: cover;
-    animation: fadeIn_d23ba8.7s;
-    aspect-ratio: 16/9
-}
-
-.video__3b9da {
-    border-radius: 0;
-    position: absolute;
-    animation: fadeIn_d23ba8.5s;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0
-}
-
-.video__3b9da.videoFadeOut__08f3a {
-    animation: fadeOut__2b5a7.5s;
-    animation-fill-mode: forwards
-}
-
-.minimalDetailsContainer__8d547 {
-    pointer-events: none;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-.minimalDetails__220b2 {
-    position: relative;
-    top: 33%;
-    padding: 4px 8px;
-    border-radius: 16px;
-    background-color: rgba(0, 0, 0, .7);
-    color: var(--white-500);
-    display: flex;
-    align-items: center;
-    gap: 4px
-}
-
 .scrollContainer__99a28 {
     position: relative;
     height: 100%
@@ -77887,10 +77662,6 @@ input::-webkit-inner-spin-button {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: var(--custom-activity-shelf-slide-activity-directory-shelf-grid-gap);
     gap: var(--custom-activity-shelf-slide-activity-directory-shelf-grid-gap)
-}
-
-.shelfBigGrid__4c334 {
-    grid-template-columns: repeat(auto-fit, minmax(226px, 1fr))
 }
 
 .scrollBackgroundContainer_e8de10 {
@@ -78024,11 +77795,6 @@ input::-webkit-inner-spin-button {
     margin-top: var(--custom-activity-shelf-modal-modal-art-height)
 }
 
-.rootBigShelf_c9bf70 {
-    width: max(var(--custom-activity-shelf-modal-modal-min-width), min(100vw - 2*var(--custom-activity-shelf-modal-modal-padding), var(--custom-activity-shelf-modal-modal-max-width)));
-    border-radius: 12px
-}
-
 .footer_ecba00 {
     justify-content: center;
     align-items: center;
@@ -78049,10 +77815,6 @@ input::-webkit-inner-spin-button {
 
 .modalHeader_b1624c {
     background-color: var(--background-primary)
-}
-
-.modalHeaderBigShelf_ef9000 {
-    border-radius: 12px 12px 0 0
 }
 
 .headerBackButton_d7e0b9 {
@@ -131669,4 +131431,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d778220d6dcc24ea7c29.css.map*/
+/*# sourceMappingURL=99387.78a19d7052da1f79d888.css.map*/
