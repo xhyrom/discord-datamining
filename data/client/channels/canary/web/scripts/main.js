@@ -17194,6 +17194,12 @@
                 MemberRole: function() {
                     return F
                 },
+                OverflowAddRolesButton: function() {
+                    return H
+                },
+                OverflowMoreRolesButton: function() {
+                    return x
+                },
                 default: function() {
                     return W
                 }
@@ -17399,8 +17405,10 @@
                     guild: t,
                     user: n,
                     handleAddRole: r,
-                    roleClassName: s
-                } = e, o = (0, d.useListItem)("overflow-add-roles-".concat(n.id)), l = (0, c.useStateFromStores)([h.default], () => h.default.roleStyle), u = C.default.getHighestRole(t), _ = p.default.getMember(t.id, n.id), E = e => (0, A.isNotEveryoneRoleId)(t.id, e.id) && !e.managed && C.default.isRoleHigher(t, u, e) && (null == _ || -1 === _.roles.indexOf(e.id));
+                    roleClassName: s,
+                    addButtonClassName: o,
+                    addButtonIconClassName: l
+                } = e, u = (0, d.useListItem)("overflow-add-roles-".concat(n.id)), _ = (0, c.useStateFromStores)([h.default], () => h.default.roleStyle), E = C.default.getHighestRole(t), T = p.default.getMember(t.id, n.id), f = e => (0, A.isNotEveryoneRoleId)(t.id, e.id) && !e.managed && C.default.isRoleHigher(t, E, e) && (null == T || -1 === T.roles.indexOf(e.id));
                 return (0, i.jsx)(I.Popout, {
                     renderPopout: e => {
                         let {
@@ -17408,8 +17416,8 @@
                         } = e;
                         return (0, i.jsx)(b.default, {
                             guild: t,
-                            roleStyle: l,
-                            roleFilter: E,
+                            roleStyle: _,
+                            roleFilter: f,
                             onSelect: r,
                             onClose: n
                         })
@@ -17419,12 +17427,12 @@
                     children: e => (0, i.jsx)(I.FocusRing, {
                         children: (0, i.jsx)("button", {
                             ...e,
-                            className: a()(B.addButton, s),
+                            className: a()(B.addButton, s, o),
                             "aria-label": w.default.Messages.GUILD_SETTINGS_MEMBERS_ADD_ROLE,
                             type: "button",
-                            ...o,
+                            ...u,
                             children: (0, i.jsx)(y.default, {
-                                className: B.addButtonIcon,
+                                className: a()(B.addButtonIcon, l),
                                 "aria-hidden": !0
                             })
                         })
@@ -36543,7 +36551,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281801", ", Version Hash: ").concat("2005489c5c5a75cc0c7c943a3537e8efd71208f2")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281808", ", Version Hash: ").concat("9523313bd329d327734c73c78f440a49ca20bb3c")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -54888,7 +54896,7 @@
                 USER_RECENT_GAMES_ON_PROFILE: "Show recent games on profile",
                 USER_RECENT_GAMES_YOU_BOTH_PLAY: "You both play this game",
                 NEW_TO_THIS_GAME: "New to this game",
-                RECENT_GAMES_SETTING_NOTE: "Display up to six recently played games on your profile. Learn more about recent games sharing [here.](onHelpArticleClick)",
+                RECENT_GAMES_SETTING_NOTE: "Display up to six recently played games on your profile. Learn more about recent games sharing [here.]({helpdeskArticle})",
                 RECENT_GAMES_SETTING_REQUIREMENT: "You must have [Activity Sharing](onSettingClick) enabled.",
                 MEMBERS_TABLE_JOINED_AT_TIMESTAMP_MINUTES: "{count} {count, plural, =1 {min} other {mins}} ago",
                 MEMBERS_TABLE_JOINED_AT_TIMESTAMP_HOURS: "{count} {count, plural, =1 {hr} other {hrs}} this week",
@@ -55278,7 +55286,11 @@
                 SIGNUP_CLAN_OPTION_HARDCORE_TITLE: "Hardcore",
                 SIGNUP_CLAN_OPTION_HARDCORE_DESCRIPTION: "We play together to win, rank up, or beat challenges.",
                 SIGNUP_CLAN_OPTION_VERY_HARDCORE_TITLE: "Very Hardcore",
-                SIGNUP_CLAN_OPTION_VERY_HARDCORE_DESCRIPTION: "We won't sleep until we win or beat the boss."
+                SIGNUP_CLAN_OPTION_VERY_HARDCORE_DESCRIPTION: "We won't sleep until we win or beat the boss.",
+                CLAN_DISCOVERY_TOP_PICKS_TITLE: "Top Picks",
+                CLAN_DISCOVERY_TOP_PICKS_SUBTITLE: "Best {playstyle} Gaming Guilds to join based on your preferences",
+                CLAN_DISCOVERY_GAME_FILTER: "{count, number} Games",
+                CLAN_DISCOVERY_PRIMETIME_FILTER_EMPTY: "Active Hour"
             })
         },
         539590: function(e) {
@@ -85529,8 +85541,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281801", "281801"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281801")), t = 0), t
+                let t = parseInt((e = "281808", "281808"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281808")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107545,8 +107557,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281801",
-                    versionHash: "2005489c5c5a75cc0c7c943a3537e8efd71208f2"
+                    buildNumber: "281808",
+                    versionHash: "9523313bd329d327734c73c78f440a49ca20bb3c"
                 }
             }
             n.r(t), n.d(t, {
@@ -157773,8 +157785,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712262695859",
-                                    build_number: "281801"
+                                    built_at: "1712263336351",
+                                    build_number: "281808"
                                 }
                             },
                             retries: 1
@@ -197374,7 +197386,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return T
+                    return f
                 }
             });
             var i = n("735250");
@@ -197388,48 +197400,52 @@
                 d = n("67152"),
                 _ = n("901952"),
                 c = n("287612"),
-                E = n("614664"),
-                I = n("797849");
+                E = n("165818"),
+                I = n("614664"),
+                T = n("797849");
 
-            function T(e) {
+            function f(e) {
                 let {
                     user: t,
                     displayProfile: n,
-                    onClose: T,
-                    guild: f,
-                    channelId: S
+                    onClose: f,
+                    guild: S,
+                    channelId: h
                 } = e, {
-                    moreUserDetailsEnabled: h
+                    moreUserDetailsEnabled: A
                 } = (0, o.useSimplifiedProfileExperiment)({
                     location: "BiteSizeProfileBody"
-                }), A = a.default.getName(null == f ? void 0 : f.id, S, t), m = (0, l.default)(t.id, null == f ? void 0 : f.id), N = (0, r.useStateFromStores)([s.default], () => s.default.hidePersonalInformation);
+                }), m = a.default.getName(null == S ? void 0 : S.id, h, t), N = (0, l.default)(t.id, null == S ? void 0 : S.id), O = (0, r.useStateFromStores)([s.default], () => s.default.hidePersonalInformation);
                 return t.isSystemUser() ? null : t.isNonUserBot() ? (0, i.jsxs)("div", {
-                    className: I.paddingBottom,
-                    children: [(0, i.jsx)(E.default, {
-                        guildId: null == f ? void 0 : f.id,
+                    className: T.paddingBottom,
+                    children: [(0, i.jsx)(I.default, {
+                        guildId: null == S ? void 0 : S.id,
                         user: t,
                         nickname: null,
                         pronouns: null
                     }), ";"]
                 }) : (0, i.jsxs)("div", {
-                    className: I.paddingBottom,
-                    children: [(0, i.jsx)(E.default, {
-                        guildId: null == f ? void 0 : f.id,
+                    className: T.paddingBottom,
+                    children: [(0, i.jsx)(I.default, {
+                        guildId: null == S ? void 0 : S.id,
                         user: t,
-                        nickname: A,
+                        nickname: m,
                         pronouns: null == n ? void 0 : n.pronouns,
-                        usernameIcon: t.hasAvatarForGuild(null == f ? void 0 : f.id) && (0, i.jsx)(u.default, {
+                        usernameIcon: t.hasAvatarForGuild(null == S ? void 0 : S.id) && (0, i.jsx)(u.default, {
                             user: t,
-                            nickname: A
+                            nickname: m
                         })
-                    }), h && (0, i.jsx)(c.default, {
+                    }), A && (0, i.jsx)(c.default, {
                         user: t
-                    }), h && (0, i.jsx)(d.default, {
+                    }), A && (0, i.jsx)(d.default, {
                         user: t,
                         bio: null == n ? void 0 : n.bio,
-                        hidePersonalInformation: N,
-                        onClose: T
-                    }), m && (0, i.jsx)(_.default, {
+                        hidePersonalInformation: O,
+                        onClose: f
+                    }), (0, i.jsx)(E.default, {
+                        user: t,
+                        guild: S
+                    }), N && (0, i.jsx)(_.default, {
                         user: t
                     })]
                 })
@@ -197468,6 +197484,164 @@
                             }), null == n || n()
                         }
                     })
+                })
+            }
+        },
+        246866: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return g
+                }
+            }), n("47120"), n("411104");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("803997"),
+                a = n.n(s),
+                o = n("512722"),
+                l = n.n(o),
+                u = n("153832"),
+                d = n("924826"),
+                _ = n("442837"),
+                c = n("481060"),
+                E = n("749210"),
+                I = n("412899"),
+                T = n("112724"),
+                f = n("434404"),
+                S = n("430824"),
+                h = n("496675"),
+                A = n("594174"),
+                m = n("700785"),
+                N = n("981631"),
+                O = n("689938"),
+                p = n("442817");
+
+            function R(e) {
+                let {
+                    user: t,
+                    guild: n,
+                    userRoles: s,
+                    wrap: o = !0,
+                    width: T,
+                    className: R,
+                    roleClassName: C,
+                    addButtonClassName: g,
+                    addButtonIconClassName: L,
+                    readOnly: D,
+                    disableBorderColor: v
+                } = e, M = r.useRef({}), y = r.useCallback(e => {
+                    var i;
+                    let r = s.filter(t => t !== e.id);
+                    (null === (i = e.tags) || void 0 === i ? void 0 : i.guild_connections) === null ? E.default.unassignGuildRoleConnection(n.id, e.id) : f.default.updateMemberRoles(n.id, t.id, r, [], [e.id])
+                }, [s, n.id, t.id]), P = r.useCallback(e => {
+                    let i = s; - 1 === i.indexOf(e) && (i = i.concat([e])), f.default.updateMemberRoles(n.id, t.id, i, [e], [])
+                }, [s, n.id, t.id]), [U, b] = r.useState(null), G = (0, _.useStateFromStores)([S.default], () => S.default.getRoles(n.id)), w = r.useMemo(() => {
+                    let e = Object.values(G).filter(e => s.includes(e.id)).sort((e, t) => {
+                        var n, i;
+                        let r = (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) !== null,
+                            s = (null === (i = t.tags) || void 0 === i ? void 0 : i.guild_connections) !== null;
+                        return r && !s ? 1 : !r && s ? -1 : 0
+                    });
+                    return null != U ? e.slice(0, U) : e
+                }, [G, U, s]), B = s.length - w.length;
+                r.useLayoutEffect(() => {
+                    if (o) return;
+                    if ("number" != typeof T) throw Error("Unexpected null width");
+                    let e = 0,
+                        t = 0,
+                        n = T - 30 - 4;
+                    for (let i = 0; i < w.length; i++) {
+                        let r = w[i],
+                            s = M.current[r.id];
+                        if (null != s) {
+                            if ((t += s.offsetWidth + 4) > n) break;
+                            e++
+                        }
+                    }
+                    b(t => e < w.length ? e : t)
+                }, [o, T, w]);
+                let k = A.default.getCurrentUser();
+                l()(null != k, "MemberRolesList: currentUser cannot be undefined");
+                let V = !D && h.default.can(N.Permissions.MANAGE_ROLES, n),
+                    F = m.getHighestRole(n, k.id),
+                    x = r.useMemo(() => "roles-".concat((0, u.v4)()), []),
+                    H = (0, d.default)({
+                        id: x,
+                        isEnabled: !0,
+                        scrollToStart: N.NOOP_PROMISE,
+                        scrollToEnd: N.NOOP_PROMISE,
+                        wrap: !0
+                    }),
+                    Y = w.map(e => {
+                        var r;
+                        return (0, i.jsx)(I.MemberRole, {
+                            className: C,
+                            role: e,
+                            canRemove: V && m.isRoleHigher(n, k.id, F, e) || (null === (r = e.tags) || void 0 === r ? void 0 : r.guild_connections) === null && t.id === k.id,
+                            onRemove: () => y(e),
+                            ref: t => {
+                                var n, i;
+                                return n = e.id, void(null != (i = t) ? M.current[n] = i : delete M.current[n])
+                            },
+                            guildId: n.id,
+                            disableBorderColor: v
+                        }, e.id)
+                    }),
+                    j = null != U && 0 !== B ? (0, i.jsx)(I.OverflowMoreRolesButton, {
+                        ...e,
+                        numRolesHidden: B
+                    }) : null;
+                return (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsxs)("div", {
+                        className: p.rolesHeader,
+                        children: [(0, i.jsx)(c.Text, {
+                            variant: "text-xs/semibold",
+                            className: p.rolesHeaderText,
+                            children: O.default.Messages.ROLES
+                        }), V && (0, i.jsx)(c.Tooltip, {
+                            text: O.default.Messages.USER_PROFILE_ADD_ROLE,
+                            children: t => (0, i.jsx)("div", {
+                                ...t,
+                                children: (0, i.jsx)(I.OverflowAddRolesButton, {
+                                    ...e,
+                                    handleAddRole: P,
+                                    addButtonClassName: g,
+                                    addButtonIconClassName: L
+                                })
+                            })
+                        })]
+                    }), (0, i.jsx)(d.ListNavigatorProvider, {
+                        navigator: H,
+                        children: (0, i.jsx)(d.ListNavigatorContainer, {
+                            children: e => {
+                                let {
+                                    ref: t,
+                                    ...n
+                                } = e;
+                                return (0, i.jsxs)("div", {
+                                    className: a()(p.root, R),
+                                    "aria-label": O.default.Messages.ROLES_LIST.format({
+                                        numRoles: s.length
+                                    }),
+                                    ref: t,
+                                    ...n,
+                                    children: [Y, j]
+                                })
+                            }
+                        })
+                    })]
+                })
+            }
+            let C = (0, T.default)(R);
+
+            function g(e) {
+                return (0, _.useStateFromStores)([h.default], () => {
+                    var t;
+                    return h.default.getGuildVersion(null === (t = e.guild) || void 0 === t ? void 0 : t.id)
+                }), !1 === e.wrap ? (0, i.jsx)(C, {
+                    ...e
+                }) : (0, i.jsx)(R, {
+                    ...e
                 })
             }
         },
@@ -197632,6 +197806,40 @@
                     ...r
                 })
             })
+        },
+        165818: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return l
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("442837"),
+                s = n("271383"),
+                a = n("246866"),
+                o = n("633124");
+
+            function l(e) {
+                let {
+                    user: t,
+                    guild: n
+                } = e, l = (0, r.useStateFromStores)([s.default], () => null != n ? s.default.getMember(n.id, t.id) : null);
+                return null == n || null == l || 0 === l.roles.length ? null : (0, i.jsx)("div", {
+                    className: o.container,
+                    children: (0, i.jsx)(a.default, {
+                        addButtonClassName: o.addButton,
+                        addButtonIconClassName: o.addButtonIcon,
+                        roleClassName: o.rolePill,
+                        className: o.roles,
+                        guild: n,
+                        user: t,
+                        userRoles: l.roles,
+                        disableBorderColor: !0
+                    })
+                })
+            }
         },
         614664: function(e, t, n) {
             "use strict";
@@ -232028,7 +232236,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2005489c5c5a75cc0c7c943a3537e8efd71208f2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9523313bd329d327734c73c78f440a49ca20bb3c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258118,7 +258326,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281801"
+                                build_number: "281808"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265263,7 +265471,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281801", "281801"), 10);
+                let s = parseInt((n = "281808", "281808"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292005,4 +292213,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.64d4c14db75a406222eb.js.map
+//# sourceMappingURL=97256.486ca79df4c5e27af379.js.map
