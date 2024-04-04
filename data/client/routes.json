@@ -1138,7 +1138,10 @@
   },
   "DEVICES_SYNC": {
     "url": "/users/@me/devices/sync",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "SETTINGS": {
     "url": "/users/@me/settings",
@@ -1269,7 +1272,10 @@
   },
   "CONNECTIONS_LINK_DISPATCH_AUTH_CALLBACK": {
     "url": "/connections/:param/link-dispatch-auth-callback",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "XBOX_HANDOFF": {
     "url": "/consoles/xbox-handoff",
@@ -1338,7 +1344,10 @@
   },
   "REMOTE_AUTH_INITIALIZE": {
     "url": "/users/@me/remote-auth",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "REMOTE_AUTH_CANCEL": {
     "url": "/users/@me/remote-auth/cancel",
@@ -1515,7 +1524,10 @@
   },
   "DEBUG_LOG": {
     "url": "/debug-logs/:param/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "DEBUG_LOGS": {
     "url": "/debug-logs/multi/:param",
@@ -1876,7 +1888,10 @@
   },
   "APPLIED_GUILD_BOOST": {
     "url": "/guilds/:param/premium/subscriptions/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "APPLIED_GUILD_BOOST_COOLDOWN": {
     "url": "/users/@me/guilds/premium/subscriptions/cooldown",
@@ -1949,7 +1964,13 @@
   },
   "BILLING_PAYMENT_SOURCE": {
     "url": "/users/@me/billing/payment-sources/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "BILLING_PAYMENTS": {
     "url": "/users/@me/billing/payments",
@@ -2531,7 +2552,10 @@
   },
   "USER_OFFER_REDEEM": {
     "url": "/users/@me/billing/user-offer/redeem",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_DISCOVERY": {
     "url": "/discoverable-guilds",
@@ -3038,7 +3062,11 @@
   },
   "DIRECTORY_CHANNEL_LIST_BY_ID": {
     "url": "/channels/:param/directory-entries/list",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "DIRECTORY_ENTRIES_BROADCAST_INFO": {
     "url": "/guilds/:param/directory-entries/broadcast",
@@ -3597,7 +3625,11 @@
   },
   "NOTIF_CENTER_ITEMS_BULK_ACK": {
     "url": "/users/@me/notification-center/items/bulk-ack",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "NOTIFICATION_SNAPSHOTS": {
     "url": "/users/@me/notification-settings/snapshots",
@@ -4129,7 +4161,10 @@
   },
   "GAME_INVITE": {
     "url": "/game-invite/@me/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "GAME_INVITES": {
     "url": "/game-invite/@me",
