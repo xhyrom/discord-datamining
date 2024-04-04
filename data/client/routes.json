@@ -1301,7 +1301,10 @@
   },
   "CONNECTION_SYNC_CONTACTS": {
     "url": "/users/@me/connections/contacts/@me/external-friend-list-entries",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "CONNECTION_ACCESS_TOKEN": {
     "url": "/users/@me/connections/:param/:param/access-token",
@@ -2169,7 +2172,13 @@
   },
   "BILLING_SUBSCRIPTIONS_PREVIEW": {
     "url": "/users/@me/billing/subscriptions/preview",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BILLING_APPLY_APPLE_RECEIPT": {
     "url": "/billing/apple/apply-receipt",
@@ -2957,7 +2966,11 @@
   },
   "GET_UNAUTHENTICATED_REPORT_MENU": {
     "url": "/reporting/unauthenticated/menu/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "SUBMIT_REPORT_MENU": {
     "url": "/reporting/:param",
@@ -3283,7 +3296,11 @@
   },
   "DROPS_ELIGIBILITY": {
     "url": "/drops/eligibility",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "DROPS_REWARD_CODE": {
     "url": "/drops/reward-code",
