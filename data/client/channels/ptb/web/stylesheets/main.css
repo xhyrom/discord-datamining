@@ -48945,6 +48945,31 @@ html .progress__00e29 {
     padding: 0 16px
 }
 
+.attachment_fd624e {
+    width: 100%
+}
+
+.attachmentContainer__3e3c4 {
+    width: 100%;
+    padding: 16px;
+    background: var(--input-background);
+    border-top-left-radius: var(--radius-md);
+    border-top-right-radius: var(--radius-md);
+    box-sizing: border-box;
+    margin-bottom: 1px
+}
+
+.shareToChannelInput_a160d6 {
+    display: flex;
+    background: var(--input-background);
+    border-radius: var(--radius-md)
+}
+
+.shareToChannelInputHasAttachments__4d1e1 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+
 .container__1ba51 {
     max-width: 320px;
     gap: 16px;
@@ -51078,8 +51103,8 @@ html .progress__00e29 {
 .errorState_c6cca2 {
     padding: 20px 20px 40px;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-align: center
 }
 
@@ -51141,7 +51166,7 @@ html .progress__00e29 {
 
 .confirmChannelName_a42e11 {
     font-weight: 500;
-    font-size: 14px;
+    font-size: .875rem;
     margin-left: 8px;
     color: var(--header-primary)
 }
@@ -51149,7 +51174,7 @@ html .progress__00e29 {
 .lastActiveTimestamp_d49b9c {
     margin-left: 8px;
     color: var(--text-muted);
-    font-size: 12px;
+    font-size: .75rem;
     margin-top: 2px
 }
 
@@ -83138,7 +83163,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 16px
+    font-size: 1rem
 }
 
 .viewAllGamesButton__34838 {
@@ -83158,7 +83183,7 @@ input::-webkit-inner-spin-button {
 
 .viewAllGames__76b00,
 .viewAllNitroGames_a65ce4 {
-    font-size: 16px;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -83215,7 +83240,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 16px
+    font-size: 1rem
 }
 
 .headerBar__3337a {
@@ -131444,4 +131469,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.fec8b5d6c7e7600bb5e7.css.map*/
+/*# sourceMappingURL=99387.0a3b12a80a2e570e729d.css.map*/
