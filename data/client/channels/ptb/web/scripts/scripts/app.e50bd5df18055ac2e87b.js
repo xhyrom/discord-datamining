@@ -5006,6 +5006,7 @@
                 mainContent: "mainContent__23e7a",
                 modal: "modal_f49d0b",
                 modalContents: "modalContents_e19dbf",
+                overviewHeaderText: "overviewHeaderText__10eed",
                 overviewSidebar: "overviewSidebar__995aa",
                 overviewSidebarContent: "overviewSidebarContent_b8b257",
                 overviewSidebarWrapper: "overviewSidebarWrapper__8ca7a",
