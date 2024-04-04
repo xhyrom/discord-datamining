@@ -63910,6 +63910,10 @@ html .progress__00e29 {
     background: var(--bg-overlay-2, var(--background-secondary))
 }
 
+.wrapperInvisible__4095f {
+    opacity: 0
+}
+
 .wrapperVisible_f00ae4 {
     z-index: 1
 }
@@ -131715,4 +131719,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.12e2ba9aeee7cd5850f5.css.map*/
+/*# sourceMappingURL=99387.a96ef4f1732ac643b972.css.map*/
