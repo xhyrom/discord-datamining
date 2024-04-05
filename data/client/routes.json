@@ -872,7 +872,13 @@
   },
   "MESSAGE": {
     "url": "/channels/:param/messages/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "MESSAGE_ACK": {
     "url": "/channels/:param/messages/:param/ack",
@@ -1065,7 +1071,11 @@
   },
   "CHANNEL_STORE_LISTING_SKU": {
     "url": "/channels/:param/store-listings/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CHANNEL_ENTITLEMENT_GRANT": {
     "url": "/channels/:param/store-listing/entitlement-grant",
@@ -1181,7 +1191,12 @@
   },
   "ME": {
     "url": "/users/@me",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "USERNAME_LOOKUP": {
     "url": "/users/username/:param",
@@ -1237,7 +1252,10 @@
   },
   "DISABLE_ACCOUNT": {
     "url": "/users/@me/disable",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "DEVICES": {
     "url": "/users/@me/devices",
@@ -2500,7 +2518,13 @@
   },
   "APPLICATIONS_PUBLIC": {
     "url": "/applications/public",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
   },
   "APPLICATIONS_TRENDING": {
     "url": "/applications/trending/global",
@@ -2922,7 +2946,11 @@
   },
   "USER_BROADCASTS": {
     "url": "/users/broadcasts/bucket",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "FUNIMATION_PROMOTION": {
     "url": "/promotions/funimation",
