@@ -6656,6 +6656,8 @@
                 cardBrandingHeader: "cardBrandingHeader__1db3b",
                 cardContent: "cardContent__3001c",
                 cardFooter: "cardFooter_ed5f2e",
+                cardFooterGame: "cardFooterGame_de9392",
+                cardFooterGames: "cardFooterGames_aebfa9",
                 cardFooterInfo: "cardFooterInfo__5a461",
                 cardFooterLanguage: "cardFooterLanguage_e24d40",
                 cardFooterLanguageIcon: "cardFooterLanguageIcon__33333",

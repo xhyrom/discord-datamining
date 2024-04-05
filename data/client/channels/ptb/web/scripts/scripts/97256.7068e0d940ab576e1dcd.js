@@ -36548,7 +36548,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("282061", ", Version Hash: ").concat("877c8bb3d59b0dff50a8491bb0b6e12e78460e62")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("282066", ", Version Hash: ").concat("c496a73cb9b15ae13926e7db72a43ea2bf018458")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55285,7 +55285,8 @@
                 CLAN_DISCOVERY_TOP_PICKS_TITLE: "Top Picks",
                 CLAN_DISCOVERY_TOP_PICKS_SUBTITLE: "Best {playstyle} Gaming Guilds to join based on your preferences",
                 CLAN_DISCOVERY_GAME_FILTER: "{count, number} Games",
-                CLAN_DISCOVERY_PRIMETIME_FILTER_EMPTY: "Active Hour"
+                CLAN_DISCOVERY_PRIMETIME_FILTER_EMPTY: "Active Hour",
+                CLAN_DISCOVERY_MEMBER_COUNT: "{count, number} Members"
             })
         },
         539590: function(e) {
@@ -85536,8 +85537,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "282061", "282061"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282061")), t = 0), t
+                let t = parseInt((e = "282066", "282066"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282066")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107552,8 +107553,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "282061",
-                    versionHash: "877c8bb3d59b0dff50a8491bb0b6e12e78460e62"
+                    buildNumber: "282066",
+                    versionHash: "c496a73cb9b15ae13926e7db72a43ea2bf018458"
                 }
             }
             n.r(t), n.d(t, {
@@ -135360,7 +135361,7 @@
                     (0, r.openModalLazy)(async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("98880")]).then(n.bind(n, "645264"));
+                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("70935")]).then(n.bind(n, "645264"));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             guildId: e,
@@ -157559,8 +157560,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712329919633",
-                                    build_number: "282061"
+                                    built_at: "1712330419122",
+                                    build_number: "282066"
                                 }
                             },
                             retries: 1
@@ -232065,7 +232066,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "877c8bb3d59b0dff50a8491bb0b6e12e78460e62"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "c496a73cb9b15ae13926e7db72a43ea2bf018458"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258155,7 +258156,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "282061"
+                                build_number: "282066"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265298,7 +265299,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "282061", "282061"), 10);
+                let s = parseInt((n = "282066", "282066"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292035,4 +292036,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.16fe7c606e50f9abe25c.js.map
+//# sourceMappingURL=97256.7068e0d940ab576e1dcd.js.map

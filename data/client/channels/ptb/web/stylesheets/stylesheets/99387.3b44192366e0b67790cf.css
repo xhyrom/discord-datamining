@@ -53489,7 +53489,7 @@ html .progress__00e29 {
 
 .traitsContainer__23f4b {
     display: flex;
-    gap: 8px;
+    gap: 4px;
     padding: 8px 0 0
 }
 
@@ -53529,6 +53529,19 @@ html .progress__00e29 {
     width: 16px;
     height: 16px;
     color: var(--text-muted)
+}
+
+.cardFooterGames_aebfa9 {
+    display: flex;
+    gap: 4px
+}
+
+.cardFooterGame_de9392 {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--border-subtle);
+    overflow: hidden
 }
 
 .container_ec1fbc {
@@ -131785,4 +131798,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.8aae2617efefc3ab2304.css.map*/
+/*# sourceMappingURL=99387.3b44192366e0b67790cf.css.map*/
