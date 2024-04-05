@@ -520,7 +520,11 @@
   },
   "GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW": {
     "url": "/guilds/:param/analytics/engagement/overview",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_ANALYTICS_MEMBER_INSIGHTS": {
     "url": "/guilds/:param/analytics/member-insights",
@@ -584,7 +588,12 @@
   },
   "GUILD_HOME_SETTINGS": {
     "url": "/guilds/:param/new-member-welcome",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "RESOURCE_CHANNEL": {
     "url": "/guilds/:param/resource-channels/:param",
@@ -816,7 +825,11 @@
   },
   "COLLECTIBLES_PURCHASES": {
     "url": "/users/@me/collectibles-purchases",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "COLLECTIBLES_PRODUCTS": {
     "url": "/collectibles-products/:param",
@@ -2168,7 +2181,10 @@
   },
   "BILLING_INVOICE_PDF": {
     "url": "/users/@me/billing/invoice",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BILLING_STRIPE_PAYMENT_INTENTS": {
     "url": "/users/@me/billing/stripe/payment-intents/payments/:param",
@@ -2655,7 +2671,11 @@
   },
   "GIFS_TRENDING": {
     "url": "/gifs/trending",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GIFS_TRENDING_GIFS": {
     "url": "/gifs/trending-gifs",
@@ -3830,7 +3850,11 @@
   },
   "APPLICATION_DIRECTORY_EMBED_APPLICATION": {
     "url": "/application-directory/applications/:param/embed",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "APPLICATION_DIRECTORY_CATEGORIES": {
     "url": "/application-directory-static/categories",
