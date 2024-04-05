@@ -2070,7 +2070,10 @@
   },
   "SEARCH_TABS_GUILD": {
     "url": "/guilds/:param/messages/search/tabs",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "SEARCH_DMS": {
     "url": "/users/@me/messages/search",
@@ -2706,7 +2709,11 @@
   },
   "HYPESQUAD_ONLINE": {
     "url": "/hypesquad/online",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "APPLICATION_STORAGE": {
     "url": "/applications/:param/branches/:param/storage",
@@ -2783,7 +2790,12 @@
   },
   "USER_GIFT_CODE_CREATE": {
     "url": "/users/@me/entitlements/gift-codes",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "USER_GIFT_CODE_REVOKE": {
     "url": "/users/@me/entitlements/gift-codes/:param",
