@@ -57503,7 +57503,7 @@ html .progress__00e29 {
 .mainContent__23e7a {
     display: flex;
     flex-direction: column;
-    padding: 80px 60px 60px;
+    padding: 80px 0 60px;
     flex: 1;
     border-right: 1px solid var(--border-subtle)
 }
@@ -57514,10 +57514,14 @@ html .progress__00e29 {
     flex: 1
 }
 
+.scroller__24eef {
+    padding: 0 60px
+}
+
 .footer_d63e9e {
     display: flex;
     flex-direction: column;
-    width: 100%
+    padding: 0 60px
 }
 
 .progressContainer__378bd {
@@ -57627,26 +57631,19 @@ html .progress__00e29 {
     padding: 100px 76px 148px 64px;
     position: relative;
     width: 380px;
-    display: flex;
-    overflow-x: hidden;
-    overflow-y: auto;
-    overflow: hidden auto
+    display: flex
 }
 
 .overviewSidebarContent_b8b257 {
     display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    overflow-y: auto;
-    overflow: hidden auto;
-    text-overflow: ellipsis;
-    scrollbar-width: none
+    flex-direction: column
 }
 
 .overviewText__01ee0,
 .overviewHeaderText__10eed {
+    text-overflow: ellipsis;
     overflow: clip;
-    text-overflow: ellipsis
+    max-width: 240px
 }
 
 .overviewText__01ee0 strong,
@@ -57765,6 +57762,11 @@ html .progress__00e29 {
 
 .fadeOut_de0df3 {
     animation: fadeOut_de0df3.2s
+}
+
+.flex__0016b {
+    display: flex;
+    flex: 1
 }
 
 @keyframes fadeIn__0663f {
@@ -64026,8 +64028,11 @@ html .progress__00e29 {
 .backgroundFallback__49ca8,
 .lottieAnimationBackgroundWrapper_cede2c {
     height: 100%;
+    left: 0;
     overflow: hidden;
     position: absolute;
+    top: 0;
+    z-index: 1;
     width: 100%
 }
 
@@ -64039,24 +64044,11 @@ html .progress__00e29 {
 .backgroundFallback__49ca8 {
     background-color: currentColor;
     border-radius: 8px 8px 0 0;
+    height: 100%;
     left: 0;
     overflow: hidden;
     top: 0;
     width: 100%
-}
-
-.lottieAnimationForeground_d34553 {
-    bottom: -10px;
-    position: absolute;
-    top: -10px;
-    left: 0;
-    right: 0;
-    transition: opacity.25s;
-    z-index: 2
-}
-
-.lottieAnimationForegroundHidden__959e2 {
-    opacity: 0
 }
 
 .contentWrapper__59dc5 {
@@ -64095,16 +64087,27 @@ html .progress__00e29 {
 .contentCollapsed__926bb {
     bottom: 0;
     box-sizing: border-box;
+    height: 100%;
     left: 0;
     padding: 8px 0 8px 8px;
     position: absolute;
-    width: 100%
+    width: 100%;
+    z-index: 2
+}
+
+.contentCollapsedWrapper__1d462 {
+    position: relative;
+    z-index: 2
 }
 
 .contentCollapsedAccepted__9d6ab {
     padding-bottom: 6px;
     padding-right: 8px;
     padding-top: 6px
+}
+
+.contentCollapsedExpanded__3258d {
+    pointer-events: none
 }
 
 .brandingWrapper__84c6a {
@@ -64230,7 +64233,8 @@ html .progress__00e29 {
     padding: 8px;
     pointer-events: none;
     position: absolute;
-    width: 100%
+    width: 100%;
+    z-index: 1
 }
 
 .contentInteractable__7fcbe {
@@ -131811,4 +131815,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.762133b256a881e3a45f.css.map*/
+/*# sourceMappingURL=99387.81b8d03739dd5adc75e6.css.map*/
