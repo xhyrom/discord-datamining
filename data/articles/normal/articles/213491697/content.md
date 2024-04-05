@@ -40,8 +40,8 @@
 </div>
 <p id="docs-internal-guid-c88138a4-7fff-f501-ccc5-5455d96e92cc">Check out these articles to learn more about support on Windows and macOS:  </p>
 <ul>
-    <li><a href="https://support.discord.com/hc/en-us/articles/20470973046295/" target="_blank" rel="noopener noreferrer"> [Known Issue] Support for Windows 7, 8, and 8.1</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/20900540446231" target="_blank" rel="noopener noreferrer"> [Known Issue] Support for macOS 10.13 and 10.14</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/20470973046295/" target="_blank" rel="noopener noreferrer">[Known Issue] Support for Windows 7, 8, and 8.1</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/20900540446231" target="_blank" rel="noopener noreferrer">[Known Issue] Support for macOS 10.13 and 10.14</a></li>
     <li><a href="https://support.discord.com/hc/en-us/articles/17997797368471" target="_blank" rel="noopener noreferrer">[Known Issue] Support for 32-bit Windows Operating Systems</a></li>
 </ul>
 <h3 id="01H7XMWB5HBM563XSP4EFVRNE1">
