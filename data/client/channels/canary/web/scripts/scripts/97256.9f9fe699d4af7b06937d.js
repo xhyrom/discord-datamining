@@ -36548,7 +36548,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282246", ", Version Hash: ").concat("0b1a16abbddb7dcb38d8329c050b8e7119181708")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282261", ", Version Hash: ").concat("54f0f91fc618dde269b6134d40018f0d327afcfa")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55286,7 +55286,9 @@
                 CLAN_DISCOVERY_TOP_PICKS_SUBTITLE: "Best {playstyle} Gaming Guilds to join based on your preferences",
                 CLAN_DISCOVERY_GAME_FILTER: "{count, number} Games",
                 CLAN_DISCOVERY_PRIMETIME_FILTER_EMPTY: "Active Hour",
-                CLAN_DISCOVERY_MEMBER_COUNT: "{count, number} Members"
+                CLAN_DISCOVERY_MEMBER_COUNT: "{count, number} Members",
+                CLAN_DISCOVERY_PROFILE_TITLE: "Answer a few questions to join!",
+                CLAN_DISCOVERY_PROFILE_SUBTITLE: "The Gaming Guild leader will get back to you shortly after you submit."
             })
         },
         539590: function(e) {
@@ -85586,8 +85588,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "282246", "282246"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282246")), t = 0), t
+                let t = parseInt((e = "282261", "282261"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282261")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107616,8 +107618,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "282246",
-                    versionHash: "0b1a16abbddb7dcb38d8329c050b8e7119181708"
+                    buildNumber: "282261",
+                    versionHash: "54f0f91fc618dde269b6134d40018f0d327afcfa"
                 }
             }
             n.r(t), n.d(t, {
@@ -157609,8 +157611,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712353969234",
-                                    build_number: "282246"
+                                    built_at: "1712354987337",
+                                    build_number: "282261"
                                 }
                             },
                             retries: 1
@@ -232151,7 +232153,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0b1a16abbddb7dcb38d8329c050b8e7119181708"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "54f0f91fc618dde269b6134d40018f0d327afcfa"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258243,7 +258245,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "282246"
+                                build_number: "282261"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265386,7 +265388,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "282246", "282246"), 10);
+                let s = parseInt((n = "282261", "282261"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292132,4 +292134,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.49b33c950a040af9ff05.js.map
+//# sourceMappingURL=97256.9f9fe699d4af7b06937d.js.map
