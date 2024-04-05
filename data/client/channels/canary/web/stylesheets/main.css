@@ -116610,6 +116610,13 @@ html .invoiceCancelRow__6ff3e {
     text-decoration: none
 }
 
+.modalTopPill_b51f25 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
 .root_de5ec7 {
     position: relative;
     width: 700px;
@@ -131815,4 +131822,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.81b8d03739dd5adc75e6.css.map*/
+/*# sourceMappingURL=99387.2c41afd7e0e46aadf80e.css.map*/
