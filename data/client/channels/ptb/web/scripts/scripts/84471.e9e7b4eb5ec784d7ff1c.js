@@ -1478,6 +1478,7 @@
                     APPLICATION_COMMAND_INDEX_CHANNEL: _ => "/channels/".concat(_, "/application-command-index"),
                     APPLICATION_COMMAND_INDEX_GUILD: _ => "/guilds/".concat(_, "/application-command-index"),
                     APPLICATION_COMMAND_INDEX_USER: "/users/@me/application-command-index",
+                    APPLICATION_COMMAND_INDEX_APPLICATION: _ => "/applications/".concat(_, "/application-command-index"),
                     GUILD_COMMANDS_FOR_APPLICATION: (_, E) => "/guilds/".concat(_, "/application-commands/").concat(E),
                     APPLICATION_DIRECTORY_APPLICATION: _ => "/application-directory-static/applications/".concat(_),
                     APPLICATION_DIRECTORY_EMBED_APPLICATION: _ => "/application-directory/applications/".concat(_, "/embed"),
@@ -2613,7 +2614,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-6e25b1c560811f53dad625805ecca3185a7e8cf4",
+                    release: "discord_web-82f10beab38e2aae20413541e5745631a102f278",
                     beforeSend: _ => {
                         var E, e;
                         return !(null != (E = _).exception && null != E.exception.values && E.exception.values.every(_ => null == _.stacktrace || null != _.stacktrace.frames && 1 === _.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || a.some(_ => window.navigator.appVersion.toLowerCase().indexOf(_) >= 0)) && !R() && !("Aborted" === (e = _).message || "cancel captcha" === e.message) && t() ? _ : null
@@ -2631,7 +2632,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), I.setTag("buildNumber", (_ = "282068", "282068")), I.setTag("builtAt", String("1712330614541"));
+                }), I.setTag("buildNumber", (_ = "282074", "282074")), I.setTag("builtAt", String("1712332315311"));
                 let E = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != E && "object" == typeof E)
                     for (let _ in E) I.setTag(_, E[_]);
@@ -14028,4 +14029,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84471.73e9319659b0302f4d99.js.map
+//# sourceMappingURL=84471.e9e7b4eb5ec784d7ff1c.js.map
