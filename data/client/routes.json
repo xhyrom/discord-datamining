@@ -793,7 +793,10 @@
   },
   "VOICE_CHANNEL_NOTIFICATIONS": {
     "url": "/channels/:param/voice-push",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "PARTNER_REQUIREMENTS": {
     "url": "/partners/:param/requirements",
@@ -944,7 +947,11 @@
   },
   "GUILD_FEED_MESSAGE_SET_PREFERENCE": {
     "url": "/guilds/:param/guild-feed/preference",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "GUILD_FEED_FEATURE_ITEM": {
     "url": "/guilds/:param/guild-feed/feature",
@@ -1040,7 +1047,13 @@
   },
   "CHANNEL_ACK": {
     "url": "/channels/:param/messages/ack",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "CHANNEL_STORE_LISTING": {
     "url": "/channels/:param/store-listing",
@@ -1905,7 +1918,12 @@
   },
   "CALL": {
     "url": "/channels/:param/call",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "CALL_RING": {
     "url": "/channels/:param/call/ring",
@@ -2170,7 +2188,10 @@
   },
   "BILLING_PAYMENTS_VOID": {
     "url": "/users/@me/billing/payments/:param/void",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BILLING_PAYMENTS_REFUND": {
     "url": "/users/@me/billing/payments/:param/refund",
@@ -3111,7 +3132,13 @@
   },
   "STAGE_INSTANCES_EXTRA": {
     "url": "/stage-instances/extra",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "STAGE_INSTANCE": {
     "url": "/stage-instances/:param",
