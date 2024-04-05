@@ -14,8 +14,7 @@
             <h2>Surprise &amp; Delight</h2>
             <p>Surprise &amp; delight comes from caring about the million little details of how a person experiences your work. Put the right emotion in when they least expect it to deliver the magic. This applies to how we show up with each other too!</p>
             <h2>Debate, Decide, Commit</h2>
-            <p>When you own a decision, involve your stakeholders, get informed through data, have constructive debates, and make a decision. When you are part of a decision or when you aren't, share your thoughts&nbsp;</p>
-            <p>respectfully. When a decision is made, regardless of whether you agree with it, commit to bringing it to life with excellence. Transparency is our goal, not consensus.</p>
+            <p>When you own a decision, involve your stakeholders, get informed through data, have constructive debates, and make a decision. When you are part of a decision or when you aren't, share your thoughts&nbsp;respectfully. When a decision is made, regardless of whether you agree with it, commit to bringing it to life with excellence. Transparency is our goal, not consensus.</p>
             <h2>Progress Over Perfection</h2>
             <p>All big things start small. Think long-term and break ideas down so you can start delivering value and learning right away. Strive for an 80/20 approach and compound from there. This is the essence of moving fast with both excellence and surprise &amp; delight.</p>
             <h2>Embrace the Brutal Facts</h2>
@@ -35,7 +34,7 @@
     <div id="heading-4" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <h3><strong>Work on something you love: Join us!</strong></h3>
-            <p>Wanna come along for the ride? Join us in our mission of building genuine friendships around play and shared experiences, where genuine human connection is a click, text chat, or voice call away. Take a peek at our jobs board by using our big blurple button below:</p>
+            <p>Wanna come along for the ride? Join us in our mission of building genuine friendships around play and shared experiences, where human connection is a click, text chat, or voice call away. Take a peek at our jobs board by using our big blurple button below:</p>
             <div class="w-embed">
                 <div class="btn-wrapper"><a data-track="https://discord.com/careers" href="https://discord.com/careers" class="btn-blog w-button" target="_blank">Work at Discord</a></div>
             </div>
