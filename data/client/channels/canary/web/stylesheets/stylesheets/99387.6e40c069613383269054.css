@@ -57663,31 +57663,6 @@ html .progress__00e29 {
     flex: 1
 }
 
-.introContainer__4ffdc {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-    padding: 40px
-}
-
-.closeIconButton_cc4258 {
-    z-index: 1;
-    position: absolute;
-    top: 24px;
-    right: 24px
-}
-
-.capitalize__50f8e {
-    text-transform: uppercase
-}
-
-.header__05198 {
-    max-width: 480px;
-    text-align: center
-}
-
 .animationContainer_af2200 {
     height: 100%;
     width: 100%;
@@ -57736,12 +57711,6 @@ html .progress__00e29 {
 
 .clickable_b41429 {
     cursor: pointer
-}
-
-.closeButton_e88b7d {
-    position: absolute;
-    top: 24px;
-    left: 24px
 }
 
 .previousButton_b43130 {
@@ -131822,4 +131791,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2c41afd7e0e46aadf80e.css.map*/
+/*# sourceMappingURL=99387.6e40c069613383269054.css.map*/
