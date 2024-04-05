@@ -38191,6 +38191,15 @@ html .progress__00e29 {
     margin-right: 4px
 }
 
+.questsCollectibleReward__3dca4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: cta-img;
+    height: 98px;
+    width: 98px
+}
+
 .outerContainer_a76fe9 {
     padding: 16px;
     display: grid;
@@ -131791,4 +131800,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.6e40c069613383269054.css.map*/
+/*# sourceMappingURL=99387.b0cdc7e616ef45fb0070.css.map*/
