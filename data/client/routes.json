@@ -630,7 +630,10 @@
   },
   "GUILD_MEMBER_ACTION_UPDATE": {
     "url": "/guilds/:param/new-member-action/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_HOME_HEADER": {
     "url": "/guilds/:param/home-headers/:param.jpg",
@@ -2662,7 +2665,13 @@
   },
   "STORE_LISTING": {
     "url": "/store/listings/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "STORE_LISTINGS_SKU": {
     "url": "/store/skus/:param/listings",
@@ -3981,7 +3990,11 @@
   },
   "APPLICATION_DIRECTORY_SEARCH": {
     "url": "/application-directory-static/search",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "APPLICATION_DIRECTORY_COLLECTIONS": {
     "url": "/application-directory-static/collections",
