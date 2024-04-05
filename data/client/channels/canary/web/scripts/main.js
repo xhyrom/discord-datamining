@@ -36548,7 +36548,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282272", ", Version Hash: ").concat("359d72afddaee2fae05e893d15473d959ceb499f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282279", ", Version Hash: ").concat("38bd1dcfdd9e82bcd9782ee1bbeb121231dfbd5f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85566,8 +85566,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "282272", "282272"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282272")), t = 0), t
+                let t = parseInt((e = "282279", "282279"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282279")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107596,8 +107596,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "282272",
-                    versionHash: "359d72afddaee2fae05e893d15473d959ceb499f"
+                    buildNumber: "282279",
+                    versionHash: "38bd1dcfdd9e82bcd9782ee1bbeb121231dfbd5f"
                 }
             }
             n.r(t), n.d(t, {
@@ -157589,8 +157589,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712356186180",
-                                    build_number: "282272"
+                                    built_at: "1712356943675",
+                                    build_number: "282279"
                                 }
                             },
                             retries: 1
@@ -195345,89 +195345,98 @@
             "use strict";
             n.r(t), n.d(t, {
                 UserProfileContext: function() {
-                    return E
+                    return f
+                },
+                useUserProfileContext: function() {
+                    return S
                 }
             }), n("627341");
-            var i = n("735250"),
-                r = n("470079"),
-                s = n("803997"),
-                a = n.n(s),
-                o = n("278074"),
-                l = n("318661"),
-                u = n("358794"),
-                d = n("228168"),
-                _ = n("862734"),
-                c = n("861475");
-            let E = r.createContext({
-                profileType: null,
-                profileTheme: null
-            });
+            var i, r = n("735250"),
+                s = n("470079"),
+                a = n("803997"),
+                o = n.n(a),
+                l = n("278074"),
+                u = n("541049"),
+                d = n("318661"),
+                _ = n("358794"),
+                c = n("228168"),
+                E = n("231338"),
+                I = n("862734"),
+                T = n("861475");
+            let f = s.createContext({
+                    profileType: null,
+                    primaryProfileColor: null,
+                    profileTheme: null !== (i = (0, u.default)()) && void 0 !== i ? i : E.ThemeTypes.DARK
+                }),
+                S = () => s.useContext(f);
 
-            function I(e) {
+            function A(e) {
                 var t, n;
                 let {
-                    user: s,
-                    guildId: I,
-                    profileType: T,
-                    className: f,
+                    user: i,
+                    guildId: a,
+                    profileType: u,
+                    className: E,
                     pendingThemeColors: S,
                     pendingProfileEffectId: A,
                     useDefaultClientTheme: h,
                     children: m,
                     forceShowPremium: N = !1,
                     showOutOfBoundaryComponents: O = !1
-                } = e, p = r.useRef(null), R = (0, l.default)(s.id, I), {
-                    profileTheme: C
-                } = (0, u.default)(s, R, {
+                } = e, p = s.useRef(null), R = (0, d.default)(i.id, a), {
+                    profileTheme: C,
+                    primaryProfileColor: g
+                } = (0, _.default)(i, R, {
                     themeElementRef: p,
                     pendingThemeColors: S,
                     isPreview: N,
                     useDefaultClientTheme: h
-                }), g = (null == R ? void 0 : R.canEditThemes) || N, L = r.useMemo(() => ({
-                    profileType: T,
-                    profileTheme: C
-                }), [T, C]);
-                return (0, i.jsx)("div", {
+                }), L = (null == R ? void 0 : R.canEditThemes) || N, D = s.useMemo(() => ({
+                    profileType: u,
+                    profileTheme: C,
+                    primaryProfileColor: g
+                }), [u, C, g]);
+                return (0, r.jsx)("div", {
                     ref: p,
-                    className: a()((t = T, (0, o.match)(t).with(d.UserProfileTypes.POPOUT, d.UserProfileTypes.SETTINGS, d.UserProfileTypes.CANCEL_MODAL, () => c.userPopoutOuter).with(d.UserProfileTypes.MODAL, () => c.userProfileModalOuter).with(d.UserProfileTypes.PANEL, () => c.userPanelOuter).with(d.UserProfileTypes.CARD, () => c.userCardOuter).exhaustive()), g ? c.userProfileOuterThemed : c.userProfileOuterUnthemed, _.profileColors, O ? c.showOutOfBoundaryComponents : void 0, "theme-".concat(C), f),
-                    children: (0, i.jsx)("div", {
-                        className: a()((n = T, (0, o.match)(n).with(d.UserProfileTypes.POPOUT, d.UserProfileTypes.SETTINGS, d.UserProfileTypes.CANCEL_MODAL, () => c.userPopoutInner).with(d.UserProfileTypes.MODAL, () => c.userProfileModalInner).with(d.UserProfileTypes.PANEL, () => c.userPanelInner).with(d.UserProfileTypes.CARD, () => c.userCardInner).exhaustive()), function() {
+                    className: o()((t = u, (0, l.match)(t).with(c.UserProfileTypes.POPOUT, c.UserProfileTypes.SETTINGS, c.UserProfileTypes.CANCEL_MODAL, () => T.userPopoutOuter).with(c.UserProfileTypes.MODAL, () => T.userProfileModalOuter).with(c.UserProfileTypes.PANEL, () => T.userPanelOuter).with(c.UserProfileTypes.CARD, () => T.userCardOuter).exhaustive()), L ? T.userProfileOuterThemed : T.userProfileOuterUnthemed, I.profileColors, O ? T.showOutOfBoundaryComponents : void 0, "theme-".concat(C), E),
+                    children: (0, r.jsx)("div", {
+                        className: o()((n = u, (0, l.match)(n).with(c.UserProfileTypes.POPOUT, c.UserProfileTypes.SETTINGS, c.UserProfileTypes.CANCEL_MODAL, () => T.userPopoutInner).with(c.UserProfileTypes.MODAL, () => T.userProfileModalInner).with(c.UserProfileTypes.PANEL, () => T.userPanelInner).with(c.UserProfileTypes.CARD, () => T.userCardInner).exhaustive()), function() {
                             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
                                 t = arguments.length > 1 ? arguments[1] : void 0,
                                 n = arguments.length > 2 ? arguments[2] : void 0;
-                            return (0, o.match)({
+                            return (0, l.match)({
                                 profileType: n,
                                 canUsePremiumProfileCustomization: e,
                                 hasBanner: t
                             }).with({
-                                profileType: d.UserProfileTypes.PANEL
-                            }, () => c.userPanelInnerThemed).with({
+                                profileType: c.UserProfileTypes.PANEL
+                            }, () => T.userPanelInnerThemed).with({
                                 canUsePremiumProfileCustomization: !0,
                                 hasBanner: !0
-                            }, () => c.userProfileInnerThemedWithBanner).with({
+                            }, () => T.userProfileInnerThemedWithBanner).with({
                                 canUsePremiumProfileCustomization: !0
-                            }, () => c.userProfileInnerThemedPremiumWithoutBanner).otherwise(() => c.userProfileInnerThemedNonPremium)
-                        }((null == R ? void 0 : R.canUsePremiumProfileCustomization) || N, null !== A && ((null == R ? void 0 : R.banner) != null || void 0 !== A), T)),
-                        children: (0, i.jsx)(E.Provider, {
-                            value: L,
+                            }, () => T.userProfileInnerThemedPremiumWithoutBanner).otherwise(() => T.userProfileInnerThemedNonPremium)
+                        }((null == R ? void 0 : R.canUsePremiumProfileCustomization) || N, null !== A && ((null == R ? void 0 : R.banner) != null || void 0 !== A), u)),
+                        children: (0, r.jsx)(f.Provider, {
+                            value: D,
                             children: m
                         })
                     })
                 })
             }
-            I.Inner = function(e) {
+            A.Inner = function(e) {
                 var t;
                 let {
                     className: n,
-                    children: s
+                    children: i
                 } = e, {
-                    profileType: l
-                } = r.useContext(E);
-                return (0, i.jsx)("div", {
-                    className: a()((t = l, (0, o.match)(t).with(d.UserProfileTypes.POPOUT, d.UserProfileTypes.SETTINGS, () => c.userPopoutOverlayBackground).with(d.UserProfileTypes.MODAL, () => c.userProfileModalOverlayBackground).with(d.UserProfileTypes.PANEL, () => c.userPanelOverlayBackground).otherwise(() => c.overlayBackground)), n),
-                    children: s
+                    profileType: a
+                } = s.useContext(f);
+                return (0, r.jsx)("div", {
+                    className: o()((t = a, (0, l.match)(t).with(c.UserProfileTypes.POPOUT, c.UserProfileTypes.SETTINGS, () => T.userPopoutOverlayBackground).with(c.UserProfileTypes.MODAL, () => T.userProfileModalOverlayBackground).with(c.UserProfileTypes.PANEL, () => T.userPanelOverlayBackground).otherwise(() => T.overlayBackground)), n),
+                    children: i
                 })
-            }, t.default = I
+            }, t.default = A
         },
         335191: function(e, t, n) {
             "use strict";
@@ -232124,7 +232133,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "359d72afddaee2fae05e893d15473d959ceb499f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "38bd1dcfdd9e82bcd9782ee1bbeb121231dfbd5f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258216,7 +258225,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "282272"
+                                build_number: "282279"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265359,7 +265368,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "282272", "282272"), 10);
+                let s = parseInt((n = "282279", "282279"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292088,4 +292097,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.2c99be16ef254610cd08.js.map
+//# sourceMappingURL=97256.b0bbb9ab2d26ec4f534b.js.map
