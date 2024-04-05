@@ -36548,7 +36548,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281942", ", Version Hash: ").concat("a5b18bb28137b689617d06e3e490d8f3e3b9f76b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281958", ", Version Hash: ").concat("61c2309e51ef8ba980526195d0595f10c06f42b5")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -44306,9 +44306,6 @@
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION: "You have chat perks and a Boost discount for **!!{price}!!** (Pending Cancellation)",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION_TAX_EXCLUSIVE: "You have chat perks and a Boost discount for **!!{price}!!** + applicable taxes (Pending Cancellation)",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION_NO_PRICE: "You have chat perks and a Boost discount (Pending Cancellation)",
-                PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE: "You have chat perks and a Boost discount for **!!{price}!!** (pausing on **{pauseDate, date, medium}**)",
-                PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE_TAX_EXCLUSIVE: "You have chat perks and a Boost discount for **!!{price}!!** + applicable taxes (pausing on **{pauseDate, date, medium}**)",
-                PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE_NO_PRICE: "You have chat perks and a Boost discount (pausing on **{pauseDate, date, medium}**)",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD: "Your chat perks and a Boost discount for **!!{price}!!** subscription is **on hold**",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_TAX_EXCLUSIVE: "Your chat perks and a Boost discount for **!!{price}!!** + applicable taxes subscription is **on hold**",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_NO_PRICE: "Your chat perks and a Boost discount subscription is **on hold**",
@@ -85538,8 +85535,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281942", "281942"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281942")), t = 0), t
+                let t = parseInt((e = "281958", "281958"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281958")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107554,8 +107551,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281942",
-                    versionHash: "a5b18bb28137b689617d06e3e490d8f3e3b9f76b"
+                    buildNumber: "281958",
+                    versionHash: "61c2309e51ef8ba980526195d0595f10c06f42b5"
                 }
             }
             n.r(t), n.d(t, {
@@ -157782,8 +157779,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712276643962",
-                                    build_number: "281942"
+                                    built_at: "1712278755968",
+                                    build_number: "281958"
                                 }
                             },
                             retries: 1
@@ -232290,7 +232287,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a5b18bb28137b689617d06e3e490d8f3e3b9f76b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "61c2309e51ef8ba980526195d0595f10c06f42b5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258380,7 +258377,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281942"
+                                build_number: "281958"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -259980,14 +259977,12 @@
                                 }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_NO_PRICE.format();
                             case L.SubscriptionStatusTypes.UNPAID:
                                 return y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAYMENT.format();
-                            case L.SubscriptionStatusTypes.CANCELED:
-                                return N ? R ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE.format({
-                                    price: E,
-                                    pauseDate: _.currentPeriodEnd
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE_TAX_EXCLUSIVE.format({
-                                    price: E,
-                                    pauseDate: _.currentPeriodEnd
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE_NO_PRICE.format({
+                            case L.SubscriptionStatusTypes.PAUSE_PENDING:
+                                let M = null != _.pauseEndsAt ? d()(_.pauseEndsAt).diff(_.currentPeriodEnd, "days") : null;
+                                return null != M ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING.format({
+                                    pauseDate: _.currentPeriodEnd,
+                                    pauseDuration: M
+                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING_NO_DURATION.format({
                                     pauseDate: _.currentPeriodEnd
                                 });
                             case L.SubscriptionStatusTypes.PAUSED:
@@ -260031,10 +260026,10 @@
                                     num: g
                                 });
                             case L.SubscriptionStatusTypes.PAUSE_PENDING:
-                                let M = null != _.pauseEndsAt ? d()(_.pauseEndsAt).diff(_.currentPeriodEnd, "days") : null;
-                                return null != M ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING.format({
+                                let P = null != _.pauseEndsAt ? d()(_.pauseEndsAt).diff(_.currentPeriodEnd, "days") : null;
+                                return null != P ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING.format({
                                     pauseDate: _.currentPeriodEnd,
-                                    pauseDuration: M
+                                    pauseDuration: P
                                 }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING_NO_DURATION.format({
                                     pauseDate: _.currentPeriodEnd
                                 });
@@ -265525,7 +265520,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281942", "281942"), 10);
+                let s = parseInt((n = "281958", "281958"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292267,4 +292262,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.7d41f3ff3ea855838803.js.map
+//# sourceMappingURL=97256.2fad1e8382d65f0dbc08.js.map
