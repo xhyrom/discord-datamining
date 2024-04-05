@@ -431,7 +431,12 @@
   },
   "GUILD_WIDGET": {
     "url": "/guilds/:param/widget",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_VANITY_URL": {
     "url": "/guilds/:param/vanity-url",
@@ -816,7 +821,11 @@
   },
   "USER_PROFILE_EFFECTS": {
     "url": "/user-profile-effects",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "COLLECTIBLES_CATEGORIES": {
     "url": "/collectibles-categories",
@@ -886,7 +895,10 @@
   },
   "MESSAGE_CREATE_ATTACHMENT_UPLOAD": {
     "url": "/channels/:param/attachments",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "UPDATE_VOICE_CHANNEL_STATUS": {
     "url": "/channels/:param/voice-status",
@@ -1003,7 +1015,12 @@
   },
   "INSTANT_INVITES": {
     "url": "/channels/:param/invites",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "TYPING": {
     "url": "/channels/:param/typing",
@@ -1325,7 +1342,10 @@
   },
   "VERIFY_PHONE": {
     "url": "/phone-verifications/verify",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "VERIFY_PHONE_FOR_TICKET": {
     "url": "/phone-verifications/validate-support-ticket",
@@ -1528,7 +1548,10 @@
   },
   "LOGOUT": {
     "url": "/auth/logout",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "REGISTER": {
     "url": "/auth/register",
@@ -2131,7 +2154,10 @@
   },
   "USER_GUILD_BOOST_SLOT_CANCEL": {
     "url": "/users/@me/guilds/premium/subscription-slots/:param/cancel",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "USER_GUILD_BOOST_SLOT_UNCANCEL": {
     "url": "/users/@me/guilds/premium/subscription-slots/:param/uncancel",
@@ -2294,7 +2320,11 @@
   },
   "BILLING_PERKS_RELEVANCE": {
     "url": "/users/@me/billing/perks-relevance",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "BILLING_NITRO_AFFINITY": {
     "url": "/users/@me/billing/nitro-affinity",
@@ -3904,6 +3934,10 @@
   "APPLICATION_COMMAND_INDEX_USER": {
     "url": "/users/@me/application-command-index",
     "allowed_methods": []
+  },
+  "APPLICATION_COMMAND_INDEX_APPLICATION": {
+    "url": "/applications/:param/application-command-index",
+    "allowed_methods": null
   },
   "GUILD_COMMANDS_FOR_APPLICATION": {
     "url": "/guilds/:param/application-commands/:param",
