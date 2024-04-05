@@ -2029,7 +2029,10 @@
   },
   "SEARCH_TABS_DMS": {
     "url": "/users/@me/messages/search/tabs",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_APPLICATIONS": {
     "url": "/guilds/:param/applications",
@@ -2595,7 +2598,11 @@
   },
   "ENTITLEMENTS_FOR_USER": {
     "url": "/users/@me/entitlements",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "ENTITLEMENT_TICKET": {
     "url": "/users/@me/applications/:param/entitlement-ticket",
@@ -2725,7 +2732,11 @@
   },
   "USER_TRIAL_OFFER": {
     "url": "/users/@me/billing/user-trial-offer",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_TRIAL_OFFER_ACKNOWLEDGED": {
     "url": "/users/@me/billing/user-trial-offer/:param/ack",
@@ -3144,7 +3155,11 @@
   },
   "GUILD_EVENT_USERS": {
     "url": "/guilds/:param/scheduled-events/:param/:param/users",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_GUILD_EVENT": {
     "url": "/guilds/:param/scheduled-events/:param/:param/users/@me",
@@ -3436,7 +3451,11 @@
   },
   "OUTBOUND_PROMOTIONS_PREVIEW": {
     "url": "/outbound-promotions/preview",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "BOGO_PROMOTIONS": {
     "url": "/bogo-promotions",
