@@ -2121,7 +2121,13 @@
   },
   "SEARCH_CHANNEL": {
     "url": "/channels/:param/messages/search",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "SEARCH_TABS_CHANNEL": {
     "url": "/channels/:param/messages/search/tabs",
