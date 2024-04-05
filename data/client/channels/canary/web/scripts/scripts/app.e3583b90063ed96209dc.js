@@ -6671,6 +6671,14 @@
                 traitsContainer: "traitsContainer__23f4b"
             }
         },
+        393810: function(e) {
+            "use strict";
+            e.exports = {
+                categoryItem: "categoryItem__44e02",
+                itemInner: "itemInner_b97671",
+                selectedCategoryItem: "selectedCategoryItem_da1090"
+            }
+        },
         912625: function(e) {
             "use strict";
             e.exports = {
