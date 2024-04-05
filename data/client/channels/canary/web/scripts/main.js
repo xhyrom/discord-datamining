@@ -36548,7 +36548,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282107", ", Version Hash: ").concat("0292831d48b51818e9a297e6db996fc219fa4436")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282116", ", Version Hash: ").concat("9060e34de5a86d5cf3516b1b29ddffb21c607189")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85586,8 +85586,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "282107", "282107"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282107")), t = 0), t
+                let t = parseInt((e = "282116", "282116"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282116")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107602,8 +107602,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "282107",
-                    versionHash: "0292831d48b51818e9a297e6db996fc219fa4436"
+                    buildNumber: "282116",
+                    versionHash: "9060e34de5a86d5cf3516b1b29ddffb21c607189"
                 }
             }
             n.r(t), n.d(t, {
@@ -157595,8 +157595,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712336400885",
-                                    build_number: "282107"
+                                    built_at: "1712337290558",
+                                    build_number: "282116"
                                 }
                             },
                             retries: 1
@@ -168395,30 +168395,28 @@
                 T = n("474936"),
                 f = n("735825");
             let S = null,
-                A = !1,
-                h = 0;
+                A = !1;
 
-            function m(e) {
+            function h(e) {
                 let t = o.default.createFromServer(e.entitlement);
-                (0, I.isPremiumTier2Entitlement)(t) ? (h = 0, N({
-                    forceRefresh: !0,
-                    retryOnFail: !0
-                })) : (0, I.isValidTenureRewardEntitlement)(t) && null != E.default.getTenureRewardStatusForRewardId(t.skuId) && s.default.dispatch({
+                (0, I.isPremiumTier2Entitlement)(t) ? m({
+                    forceRefresh: !0
+                }): (0, I.isValidTenureRewardEntitlement)(t) && null != E.default.getTenureRewardStatusForRewardId(t.skuId) && s.default.dispatch({
                     type: "USER_TENURE_REWARD_STATUS_DELETE",
                     tenureRewardIds: [t.skuId]
                 })
             }
 
-            function N() {
+            function m() {
                 let {
-                    forceRefresh: e = !1,
-                    retryOnFail: t = !1
+                    forceRefresh: e = !1
                 } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                p();
-                let n = u.default.getForApplication(T.PREMIUM_SUBSCRIPTION_APPLICATION),
-                    i = (0, I.getPremiumTier2Entitlement)(n),
+                O();
+                let t = u.default.getForApplication(T.PREMIUM_SUBSCRIPTION_APPLICATION),
+                    n = (0, I.getPremiumTier2Entitlement)(t),
+                    i = (0, I.getTenureRewardEntitlement)([f.TenureRewardSKUs.FREE_GUILD_BOOST_1_MONTH, f.TenureRewardSKUs.FREE_GUILD_BOOST_3_MONTHS], t),
                     a = l.default.getCurrentUser();
-                if (!(0, d.isPremiumExactly)(a, T.PremiumTypes.TIER_2) && null == i) {
+                if (!(0, d.isPremiumExactly)(a, T.PremiumTypes.TIER_2) && null == n) {
                     s.default.dispatch({
                         type: "USER_TENURE_REWARD_STATUS_RESET"
                     });
@@ -168427,13 +168425,14 @@
                 if (!!(0, c.isUserEligibleForNitroTenureRewardCard)({
                         location: "tenure_reward_manager"
                     }))
-                    if (E.default.getFetchState() !== E.FetchState.FETCHED || !0 === e || function() {
+                    if ((E.default.getFetchState() !== E.FetchState.FETCHED || !0 === e || function() {
                             var e;
                             let t = null !== (e = E.default.getTenureRewardStatusForRewardId(f.TenureRewardSKUs.FREE_GUILD_BOOST_1_MONTH)) && void 0 !== e ? e : E.default.getTenureRewardStatusForRewardId(f.TenureRewardSKUs.FREE_GUILD_BOOST_3_MONTHS);
                             return null != t && null != t.redeemable_at && 0 >= r()(t.redeemable_at).diff(r().utc(), "seconds")
-                        }()) O({
-                        retryOnFail: t
-                    });
+                        }() || function() {
+                            let e = E.default.getState();
+                            return null != e.lastFetchTimeMs && Date.now() - e.lastFetchTimeMs > 12096e5
+                        }()) && null == i) N();
                     else {
                         let e = u.default.getForApplication(T.PREMIUM_SUBSCRIPTION_APPLICATION);
                         if (null == e) return;
@@ -168444,57 +168443,39 @@
                         })
                     }
             }
-            async function O() {
-                let {
-                    retryOnFail: e = !1
-                } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+            async function N() {
                 !A && (A = !0, await _.syncUserTenureRewardStatus(), A = !1, s.default.wait(() => (function() {
                     var e;
-                    let {
-                        retryOnFail: t = !1
-                    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    if (p(), E.default.getFetchState() !== E.FetchState.FETCHED || A) return;
-                    let n = null !== (e = E.default.getTenureRewardStatusForRewardId(f.TenureRewardSKUs.FREE_GUILD_BOOST_1_MONTH)) && void 0 !== e ? e : E.default.getTenureRewardStatusForRewardId(f.TenureRewardSKUs.FREE_GUILD_BOOST_3_MONTHS);
-                    if ((null == n ? void 0 : n.redeemable_at) == null && !1 === t) return;
-                    let i = (null == n ? void 0 : n.redeemable_at) != null ? new Date(n.redeemable_at).getTime() - Date.now() : null;
-                    null != i && i > 0 ? S = setTimeout(N, i) : function(e) {
-                        var t;
-                        let {
-                            retryOnFail: n
-                        } = e;
-                        return null == (null !== (t = E.default.getTenureRewardStatusForRewardId(f.TenureRewardSKUs.FREE_GUILD_BOOST_1_MONTH)) && void 0 !== t ? t : E.default.getTenureRewardStatusForRewardId(f.TenureRewardSKUs.FREE_GUILD_BOOST_3_MONTHS)) && !0 === n && h < 1
-                    }({
-                        retryOnFail: t
-                    }) && (h += 1, S = setTimeout(() => N({
-                        forceRefresh: !0
-                    }), 5e3))
-                })({
-                    retryOnFail: e
-                })))
+                    if (O(), E.default.getFetchState() !== E.FetchState.FETCHED || A) return;
+                    let t = null !== (e = E.default.getTenureRewardStatusForRewardId(f.TenureRewardSKUs.FREE_GUILD_BOOST_1_MONTH)) && void 0 !== e ? e : E.default.getTenureRewardStatusForRewardId(f.TenureRewardSKUs.FREE_GUILD_BOOST_3_MONTHS);
+                    if ((null == t ? void 0 : t.redeemable_at) == null) return;
+                    let n = (null == t ? void 0 : t.redeemable_at) != null ? new Date(t.redeemable_at).getTime() - Date.now() : null;
+                    null != n && n > 0 && (S = setTimeout(m, n))
+                })()))
             }
 
-            function p() {
+            function O() {
                 clearTimeout(S), S = null
             }
 
-            function R() {
-                p()
+            function p() {
+                O()
             }
 
-            function C() {
-                N()
+            function R() {
+                m()
             }
-            class g extends a.default {
+            class C extends a.default {
                 constructor(...e) {
                     var t, n, i;
                     super(...e), t = this, n = "actions", i = {
-                        POST_CONNECTION_OPEN: C,
-                        CONNECTION_CLOSED: R,
-                        ENTITLEMENT_FETCH_APPLICATION_SUCCESS: () => N(),
-                        ENTITLEMENT_CREATE: m,
-                        ENTITLEMENT_UPDATE: () => N(),
-                        ENTITLEMENT_DELETE: () => N(),
-                        LOGOUT: p
+                        POST_CONNECTION_OPEN: R,
+                        CONNECTION_CLOSED: p,
+                        ENTITLEMENT_FETCH_APPLICATION_SUCCESS: () => m(),
+                        ENTITLEMENT_CREATE: h,
+                        ENTITLEMENT_UPDATE: () => m(),
+                        ENTITLEMENT_DELETE: () => m(),
+                        LOGOUT: O
                     }, n in t ? Object.defineProperty(t, n, {
                         value: i,
                         enumerable: !0,
@@ -168503,7 +168484,7 @@
                     }) : t[n] = i
                 }
             }
-            t.default = new g
+            t.default = new C
         },
         513785: function(e, t, n) {
             "use strict";
@@ -232119,7 +232100,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0292831d48b51818e9a297e6db996fc219fa4436"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9060e34de5a86d5cf3516b1b29ddffb21c607189"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258211,7 +258192,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "282107"
+                                build_number: "282116"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265354,7 +265335,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "282107", "282107"), 10);
+                let s = parseInt((n = "282116", "282116"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292091,4 +292072,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.35bad208452b13fa9f8b.js.map
+//# sourceMappingURL=97256.17146cd9c7ac35cacb34.js.map
