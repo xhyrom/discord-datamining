@@ -53452,6 +53452,10 @@ html .progress__00e29 {
     margin: 0 auto
 }
 
+.clickableCard__1c1e9 {
+    cursor: pointer
+}
+
 .card_d01b6d {
     border-radius: 8px;
     border: 1px solid var(--border-subtle);
@@ -89724,6 +89728,59 @@ html .tabBadge_ff691d {
     .container_f7a92d {
         width: 100%
     }
+}
+
+div:has(>div>.container__8ab05) {
+    padding: 0
+}
+
+.container__8ab05 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, .1);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    border-radius: 0;
+    border: none
+}
+
+.closeButtonContainer__7672f {
+    position: absolute;
+    top: 24px;
+    right: 24px
+}
+
+.body_ed1b36 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 64px
+}
+
+.applicationContainer_eab373 {
+    display: flex;
+    flex-direction: column
+}
+
+.verticalRule__8c737 {
+    width: 1px;
+    height: 100%;
+    background: var(--border-subtle)
+}
+
+.clanContainer__451f0 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+}
+
+.verificationForm__7b4bb {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
 }
 
 .root_a5c8ff {
@@ -131800,4 +131857,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.b0cdc7e616ef45fb0070.css.map*/
+/*# sourceMappingURL=99387.ed6f840166a64895d1d4.css.map*/
