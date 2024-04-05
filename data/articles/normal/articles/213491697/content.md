@@ -42,6 +42,7 @@
 <ul>
     <li><a href="https://support.discord.com/hc/en-us/articles/20470973046295/" target="_blank" rel="noopener noreferrer"> [Known Issue] Support for Windows 7, 8, and 8.1</a></li>
     <li><a href="https://support.discord.com/hc/en-us/articles/20900540446231" target="_blank" rel="noopener noreferrer"> [Known Issue] Support for macOS 10.13 and 10.14</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/17997797368471" target="_blank" rel="noopener noreferrer">[Known Issue] Support for 32-bit Windows Operating Systems</a></li>
 </ul>
 <h3 id="01H7XMWB5HBM563XSP4EFVRNE1">
     <strong><em><span style="color: #434343;" data-darkreader-inline-color="">For Linux</span></em></strong><span style="color: #434343;" data-darkreader-inline-color="">: Because of the variations in both software and hardware for computers running Linux, technical support for this operating system is limited. Our Linux client is based on Chromium, and so the requirements for this version of the app are based on Chrome’s requirements, found </span><a href="https://support.google.com/chrome/a/answer/7100626?hl=en" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
@@ -77,7 +78,7 @@
 <h3 id="01H7XMWB5HZK7MCB3CDX46Q69Y"><span style="color: #434343;" data-darkreader-inline-color="">For Android: Discord only supports devices that ship with Google Play Services by default. This means some devices, including Amazon Kindles, are not supported.</span></h3>
 <p>Jailbroken or Rooted devices are <strong>not supported</strong>. </p>
 <p id="docs-internal-guid-d73153cf-7fff-d004-57fc-5c487ddc9887">Beta operating systems are <strong>not supported</strong>. While Discord may install and run on a beta version of an operating system, <span id="docs-internal-guid-0f046720-7fff-33c6-8d14-f0ffc02eaeff">some features of the app may not function correctly</span>.</p>
-<h3 id="docs-internal-guid-f7ea8e91-7fff-df8a-3071-ef5c394e05a0"><span style="color: #434343;">Discord has discontinued support for Android 6 with the release of version 202. If you are running a device with Android 6, you will no longer receive updates with the latest features and bug fixes. Versions released before 202 may stop working after an unspecified amount of time.</span></h3>
+<h3 id="docs-internal-guid-f7ea8e91-7fff-df8a-3071-ef5c394e05a0"><span style="color: #434343;" data-darkreader-inline-color="">Discord has discontinued support for Android 6 with the release of version 202. If you are running a device with Android 6, you will no longer receive updates with the latest features and bug fixes. Versions released before 202 may stop working after an unspecified amount of time.</span></h3>
 <h1 id="h_01H30Q0T863H0VTGBN9BY653ZD"><strong>Browser</strong></h1>
 <div id="docs-internal-guid-c7cde2e9-7fff-56f9-a1d2-a694c6bfeec7">
     <table style="width: 100%;">
