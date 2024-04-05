@@ -20,11 +20,11 @@
 </ul>
 <p>Make sure to also regularly check our feed for any updates regarding outages, launches, known issues, and updates.</p>
 <h1 id="h_01GZCEG51YWV6Y1JS0Q4XVJ35E">Issues @discord_support cannot assist with</h1>
-<h3>
+<h3 id="h_01HTQN4B4MZSGYC5YFWN63TDHC">
     <span style="color: #434343;" data-darkreader-inline-color="">Please note that contacting us on Twitter does not replace submitting a ticket through our </span><a href="https://support.discord.com/hc/en-us/requests/new" target="_blank" rel="noopener noreferrer"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">support portal</span></a><span style="color: #434343;" data-darkreader-inline-color="">, nor does the social team directly handle any previously submitted support tickets.</span>
 </h3>
 <p>While we are able to assist with a number of issues, some inquiries still lie outside of our scope of support. Notably, @discord_support will be unable to help with anything related to Trust &amp; Safety, User Account Information, or Billing.</p>
-<h2>Examples of issues @Discord_Support cannot assist with:</h2>
+<h2 id="h_01HTQN4B4M246CF1RNHRBHK3DW">Examples of issues @Discord_Support cannot assist with:</h2>
 <ul>
     <li>2FA removal or lost account access</li>
     <li>Hacked accounts</li>
@@ -35,7 +35,7 @@
     <li>Phone verification</li>
     <li>Developer support</li>
 </ul>
-<h2>If you are experiencing any of the above issues, please submit a ticket through our support portal:</h2>
+<h2 id="h_01HTQN4B4MA5R3CHXQ3DPVKNQN">If you are experiencing any of the above issues, please submit a ticket through our support portal:</h2>
 <ul>
     <li><a href="http://dis.gd/contact" target="_blank" rel="noopener noreferrer"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">General Support</span></a></li>
     <li><a href="http://dis.gd/hackedaccount" target="_blank" rel="noopener noreferrer"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Hacked Account</span></a></li>
