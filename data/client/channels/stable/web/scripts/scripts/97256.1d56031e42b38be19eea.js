@@ -6965,7 +6965,7 @@
                 _ = n("881052"),
                 c = n("882037"),
                 E = n("710845"),
-                I = n("57132"),
+                I = n("278147"),
                 T = n("703656"),
                 f = n("314897"),
                 S = n("480294"),
@@ -9288,7 +9288,7 @@
                 r = n("780384"),
                 s = n("570140"),
                 a = n("408987"),
-                o = n("57132"),
+                o = n("278147"),
                 l = n("895886"),
                 u = n("703656"),
                 d = n("131704"),
@@ -11164,7 +11164,7 @@
                 o = n("34756"),
                 l = n("408987"),
                 u = n("280837"),
-                d = n("57132"),
+                d = n("278147"),
                 _ = n("777639"),
                 c = n("272423"),
                 E = n("869735"),
@@ -17196,9 +17196,6 @@
                 },
                 OverflowAddRolesButton: function() {
                     return H
-                },
-                OverflowMoreRolesButton: function() {
-                    return x
                 },
                 default: function() {
                     return W
@@ -36551,7 +36548,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("281809", ", Version Hash: ").concat("0d9e889ef95f4148e2dc2710572bea8eb7ef7611")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("282068", ", Version Hash: ").concat("6e25b1c560811f53dad625805ecca3185a7e8cf4")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -44309,9 +44306,6 @@
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION: "You have chat perks and a Boost discount for **!!{price}!!** (Pending Cancellation)",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION_TAX_EXCLUSIVE: "You have chat perks and a Boost discount for **!!{price}!!** + applicable taxes (Pending Cancellation)",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION_NO_PRICE: "You have chat perks and a Boost discount (Pending Cancellation)",
-                PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE: "You have chat perks and a Boost discount for **!!{price}!!** (pausing on **{pauseDate, date, medium}**)",
-                PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE_TAX_EXCLUSIVE: "You have chat perks and a Boost discount for **!!{price}!!** + applicable taxes (pausing on **{pauseDate, date, medium}**)",
-                PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE_NO_PRICE: "You have chat perks and a Boost discount (pausing on **{pauseDate, date, medium}**)",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD: "Your chat perks and a Boost discount for **!!{price}!!** subscription is **on hold**",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_TAX_EXCLUSIVE: "Your chat perks and a Boost discount for **!!{price}!!** + applicable taxes subscription is **on hold**",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_NO_PRICE: "Your chat perks and a Boost discount subscription is **on hold**",
@@ -54610,7 +54604,7 @@
                 POLL_VOTES_TOOLTIP_3: "!!{a}!!, !!{b}!!, and !!{c}!!",
                 POLL_VOTES_TOOLTIP_3_N: "!!{a}!!, !!{b}!!, !!{c}!!, and {n, plural, one {1 other} other {{n} others}}",
                 POLL_VOTES_TOOLTIP_N: "{n, plural, one {1 person} other {{n} people}}",
-                POLLS_EXPERIMENT_INFO_TEXT: "Polls are in Beta and can only be created in certain servers.",
+                POLLS_EXPERIMENT_INFO_TEXT: "Polls are in Beta and can only be created by certain users.",
                 CREATE_POLL: "Create Poll",
                 CREATE_POLL_HEADING: "Create a Poll",
                 CREATE_POLL_EXPIRATION: "Poll will be live for 24 hours",
@@ -55264,6 +55258,7 @@
                 CLAN_APPLICATION_SETUP_HEADER: "Set up the member screening application for **!!{guildName}!!** here. The application must have at least one Short Answer, Paragraph, or Multiple Choice section.",
                 CLAN_APPLICATION_CANT_REMOVE_FIELD: "Clan applications must have at least one non-rules question.",
                 MEMBER_VERIFICATION_ANSWER_PLACEHOLDER: "Enter your answer",
+                MEMBER_VERIFICATION_USERS_APPLICATION: "!!{username}!!'s application",
                 SIGNUP_BUTTON_TOOLTIP_CTA: "Click to preview",
                 SIGNUP_COMPLETE_CTA: "Sign Up",
                 SIGNUP_EMAIL_PROMPT: "Confirm your email to secure your spot on the waitlist",
@@ -55290,7 +55285,8 @@
                 CLAN_DISCOVERY_TOP_PICKS_TITLE: "Top Picks",
                 CLAN_DISCOVERY_TOP_PICKS_SUBTITLE: "Best {playstyle} Gaming Guilds to join based on your preferences",
                 CLAN_DISCOVERY_GAME_FILTER: "{count, number} Games",
-                CLAN_DISCOVERY_PRIMETIME_FILTER_EMPTY: "Active Hour"
+                CLAN_DISCOVERY_PRIMETIME_FILTER_EMPTY: "Active Hour",
+                CLAN_DISCOVERY_MEMBER_COUNT: "{count, number} Members"
             })
         },
         539590: function(e) {
@@ -85541,8 +85537,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "281809", "281809"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("281809")), t = 0), t
+                let t = parseInt((e = "282068", "282068"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282068")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103293,7 +103289,7 @@
                         type: "COLLECTIBLES_CATEGORIES_FETCH"
                     });
                     let t = {};
-                    null != e && (!0 === e.noCache && (t.no_cache = !0), !0 === e.includeUnpublished && (t.include_unpublished = !0), null != e.countryCode && (t.country_code = e.countryCode));
+                    null != e && (!0 === e.noCache && (t.no_cache = !0), !0 === e.includeUnpublished && (t.include_unpublished = !0), null != e.countryCode && (t.country_code = e.countryCode), null !== e.paymentGateway && (t.payment_gateway = e.paymentGateway));
                     try {
                         let n = await i.HTTP.get({
                             url: d.Endpoints.COLLECTIBLES_CATEGORIES,
@@ -103331,15 +103327,15 @@
                         type: "COLLECTIBLES_PRODUCT_FETCH"
                     });
                     try {
-                        let n = await i.HTTP.get({
+                        let n = {};
+                        (null == t ? void 0 : t.countryCode) !== null && (n.country_code = null == t ? void 0 : t.countryCode), (null == t ? void 0 : t.paymentGateway) !== null && (n.payment_gateway = null == t ? void 0 : t.paymentGateway);
+                        let s = await i.HTTP.get({
                             url: d.Endpoints.COLLECTIBLES_PRODUCTS(e),
-                            query: null != t ? {
-                                country_code: t
-                            } : {}
+                            query: n
                         });
                         r.default.dispatch({
                             type: "COLLECTIBLES_PRODUCT_FETCH_SUCCESS",
-                            product: l.default.fromServer(n.body)
+                            product: l.default.fromServer(s.body)
                         })
                     } catch (e) {
                         throw r.default.dispatch({
@@ -107557,8 +107553,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "281809",
-                    versionHash: "0d9e889ef95f4148e2dc2710572bea8eb7ef7611"
+                    buildNumber: "282068",
+                    versionHash: "6e25b1c560811f53dad625805ecca3185a7e8cf4"
                 }
             }
             n.r(t), n.d(t, {
@@ -108105,97 +108101,83 @@
             "use strict";
             n.r(t), n.d(t, {
                 ALLOWED_SOCIAL_LINKS_DOMAINS: function() {
-                    return p
+                    return C
                 },
                 CategoryIcons: function() {
-                    return l
-                },
-                DEFAULT_DISCOVERY_CATEGORY_ID: function() {
                     return d
                 },
-                DEFAULT_EMOJI_DISCOVERABILITY_SETTING: function() {
+                CategoryId: function() {
+                    return o
+                },
+                DEFAULT_DISCOVERY_CATEGORY_ID: function() {
                     return c
                 },
-                DISCORD_HUB_ID: function() {
+                DEFAULT_EMOJI_DISCOVERABILITY_SETTING: function() {
                     return I
                 },
-                DISCOVERY_ALL_CATEGORIES_ID: function() {
-                    return E
-                },
-                DISCOVERY_COMMUNICATOR_REQUIREMENT: function() {
-                    return O
-                },
-                DISCOVERY_PARTICIPATOR_REQUIREMENT: function() {
-                    return N
-                },
-                DISCOVERY_SIDEBAR_CATEGORIES: function() {
+                DISCORD_HUB_ID: function() {
                     return f
                 },
-                LANGUAGE_OPTIONS: function() {
-                    return m
-                },
-                MAX_ALGOLIA_PAGINATOR_RESULTS: function() {
+                DISCOVERY_ALL_CATEGORIES_ID: function() {
                     return T
                 },
-                OTHER_DISCOVERY_CATEGORY_ID: function() {
-                    return _
+                DISCOVERY_COMMUNICATOR_REQUIREMENT: function() {
+                    return R
                 },
-                SUGGESTED_TAGS_FOR_CATEGORIES: function() {
+                DISCOVERY_PARTICIPATOR_REQUIREMENT: function() {
+                    return p
+                },
+                DISCOVERY_SIDEBAR_CATEGORIES: function() {
+                    return h
+                },
+                LANGUAGE_OPTIONS: function() {
+                    return O
+                },
+                MAX_ALGOLIA_PAGINATOR_RESULTS: function() {
                     return S
                 },
-                calculateLocaleOptions: function() {
+                OTHER_DISCOVERY_CATEGORY_ID: function() {
+                    return E
+                },
+                SUGGESTED_TAGS_FOR_CATEGORIES: function() {
                     return A
+                },
+                calculateLocaleOptions: function() {
+                    return N
                 }
             });
-            var i, r, s, a, o, l, u = n("689938");
-            let d = 0,
-                _ = 13,
-                c = !0,
-                E = -1,
-                I = -2,
-                T = 1e3,
-                f = [{
-                    categoryId: -1,
-                    icon: "Discover"
-                }, {
-                    categoryId: 1,
-                    icon: "Activity"
-                }, {
-                    categoryId: 2,
-                    icon: "Music"
-                }, {
-                    categoryId: 6,
-                    icon: "Education"
-                }, {
-                    categoryId: 5,
-                    icon: "Science"
-                }, {
-                    categoryId: 3,
-                    icon: "Television"
-                }];
-            (i = a || (a = {}))[i.GENERAL_CHATTING = 14] = "GENERAL_CHATTING", i[i.GAMING = 1] = "GAMING", i[i.MUSIC = 2] = "MUSIC", i[i.ENTERTAINMENT = 3] = "ENTERTAINMENT", i[i.CREATIVE_ARTS = 4] = "CREATIVE_ARTS", i[i.SCIENCE_AND_TECH = 5] = "SCIENCE_AND_TECH", i[i.EDUCATION = 6] = "EDUCATION", i[i.SPORTS = 7] = "SPORTS", i[i.FASHION_AND_BEAUTY = 8] = "FASHION_AND_BEAUTY", i[i.RELATIONSHIPS_AND_IDENTITY = 9] = "RELATIONSHIPS_AND_IDENTITY", i[i.TRAVEL_AND_FOOD = 10] = "TRAVEL_AND_FOOD", i[i.FITNESS_AND_HEALTH = 11] = "FITNESS_AND_HEALTH", i[i.FINANCE = 12] = "FINANCE", i[i.OTHER = 13] = "OTHER", i[i.EMOJI = 43] = "EMOJI", i[i.BOTS = 49] = "BOTS";
-            let S = {
-                    14: [() => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_GAMING, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ROBLOX, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_YOUTUBE, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_TWITCH, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MINECRAFT, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_COMMUNITY, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_STREAMER, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FORTNITE, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ANIME, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ROLEPLAY],
-                    1: [() => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MINECRAFT, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ROBLOX, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_TWITCH, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_YOUTUBE, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FORTNITE, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ESPORTS, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ROLEPLAY, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_VALORANT, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_LEAGUEOFLEGENDS, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FIVEM],
-                    2: [() => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_EDM, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_RAP, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_KPOP, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_YOUTUBE, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MUSIC_PRODUCTION, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_HIPHOP, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SINGING, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_GAMING, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_BTS, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_METAL],
-                    3: [() => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ANIME, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_YOUTUBE, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_GAMING, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_TWITCH, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MANGA, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MEMES, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_STREAMER, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SOCIAL, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_REDDIT],
-                    4: [() => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ART, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ANIME, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_DESIGN, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_YOUTUBE, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ANIMATION, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_3D, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_NFT, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MANGA, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_DRAWING, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_PHOTOGRAPHY],
-                    5: [() => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_PROGRAMMING, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_TECH, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_CODING, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_GITHUB, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_OPENSOURCE, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_JAVASCRIPT, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_CRYPTOCURRENCY, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_HARDWARE, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SOFTWARE, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_LINUX],
-                    6: [() => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_STUDY, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_LANGUAGE, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SCHOOL, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ENGLISH, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_LEARNING, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_HOMEWORK, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_PROGRAMMING, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_COLLEGE, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_STOCKS, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_YOUTUBE],
-                    7: [() => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FOOTBALL, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_NBA, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_NFL, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SOCCER, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_BASKETBALL, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FORMULA1, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_PREMIER_LEAGUE, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_RACING, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_REDDIT, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FANTASY_FOOTBALL],
-                    8: [() => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FASHION, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_STREETWEAR, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SNEAKERS, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_CLOTHING, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_REDDIT, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_YEEZY, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SUPREME, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_HYPEBEAST, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_STYLE],
-                    9: [() => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_LGBTQ, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ANIME, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SOCIAL, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FRIENDS, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_COMMUNITY],
-                    10: [() => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FOOD, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_DISNEY, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_BEVERAGE, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SNACKS, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_YOUTUBE, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_TRAVEL, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_DISNEYWORLD],
-                    11: [() => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_GYM, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_BODYBUILDING, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_EXERCISE, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_CALISTHENICS, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MENTAL_HEALTH, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SELF_IMPROVEMENT, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_EDUCATION, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_CROSSFIT, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_NUTRITION, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SPORTS],
-                    12: [() => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_STOCKS, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_TRADING, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_INVESTING, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_BITCOIN, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_CRYPTOCURRENCY, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ETHEREUM, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_OPTIONS, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_DEFI, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FOREX],
-                    13: [() => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_GAMING, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_YOUTUBE, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_TWITCH, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_COMMUNITY, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ANIME, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_EVENTS, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SOCIAL, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MEMES],
-                    43: [() => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_EMOJI, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_EMOTES, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_NITRO, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ANIME, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_CUTE, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_GIVEAWAYS, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_AESTHETIC, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ART, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MEMES],
-                    49: [() => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_APPS, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_BOTS, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_DISCORD_BOT, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_GIVEAWAYS, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SUPPORT, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FUN, () => u.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MEMES]
+            var i, r, s, a, o, l, u, d, _ = n("689938");
+            let c = 0,
+                E = 13,
+                I = !0,
+                T = -1,
+                f = -2;
+            (i = o || (o = {}))[i.Clans = -3] = "Clans", i[i.Hub = f] = "Hub", i[i.Communities = T] = "Communities", i[i.Activity = 1] = "Activity", i[i.Music = 2] = "Music", i[i.Television = 3] = "Television", i[i.Science = 5] = "Science", i[i.Education = 6] = "Education";
+            let S = 1e3,
+                h = [1, 2, 3, 5, 6];
+            (r = l || (l = {}))[r.GENERAL_CHATTING = 14] = "GENERAL_CHATTING", r[r.GAMING = 1] = "GAMING", r[r.MUSIC = 2] = "MUSIC", r[r.ENTERTAINMENT = 3] = "ENTERTAINMENT", r[r.CREATIVE_ARTS = 4] = "CREATIVE_ARTS", r[r.SCIENCE_AND_TECH = 5] = "SCIENCE_AND_TECH", r[r.EDUCATION = 6] = "EDUCATION", r[r.SPORTS = 7] = "SPORTS", r[r.FASHION_AND_BEAUTY = 8] = "FASHION_AND_BEAUTY", r[r.RELATIONSHIPS_AND_IDENTITY = 9] = "RELATIONSHIPS_AND_IDENTITY", r[r.TRAVEL_AND_FOOD = 10] = "TRAVEL_AND_FOOD", r[r.FITNESS_AND_HEALTH = 11] = "FITNESS_AND_HEALTH", r[r.FINANCE = 12] = "FINANCE", r[r.OTHER = 13] = "OTHER", r[r.EMOJI = 43] = "EMOJI", r[r.BOTS = 49] = "BOTS";
+            let A = {
+                    14: [() => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_GAMING, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ROBLOX, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_YOUTUBE, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_TWITCH, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MINECRAFT, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_COMMUNITY, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_STREAMER, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FORTNITE, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ANIME, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ROLEPLAY],
+                    1: [() => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MINECRAFT, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ROBLOX, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_TWITCH, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_YOUTUBE, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FORTNITE, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ESPORTS, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ROLEPLAY, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_VALORANT, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_LEAGUEOFLEGENDS, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FIVEM],
+                    2: [() => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_EDM, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_RAP, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_KPOP, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_YOUTUBE, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MUSIC_PRODUCTION, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_HIPHOP, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SINGING, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_GAMING, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_BTS, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_METAL],
+                    3: [() => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ANIME, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_YOUTUBE, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_GAMING, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_TWITCH, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MANGA, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MEMES, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_STREAMER, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SOCIAL, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_REDDIT],
+                    4: [() => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ART, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ANIME, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_DESIGN, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_YOUTUBE, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ANIMATION, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_3D, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_NFT, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MANGA, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_DRAWING, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_PHOTOGRAPHY],
+                    5: [() => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_PROGRAMMING, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_TECH, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_CODING, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_GITHUB, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_OPENSOURCE, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_JAVASCRIPT, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_CRYPTOCURRENCY, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_HARDWARE, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SOFTWARE, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_LINUX],
+                    6: [() => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_STUDY, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_LANGUAGE, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SCHOOL, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ENGLISH, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_LEARNING, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_HOMEWORK, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_PROGRAMMING, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_COLLEGE, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_STOCKS, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_YOUTUBE],
+                    7: [() => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FOOTBALL, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_NBA, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_NFL, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SOCCER, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_BASKETBALL, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FORMULA1, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_PREMIER_LEAGUE, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_RACING, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_REDDIT, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FANTASY_FOOTBALL],
+                    8: [() => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FASHION, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_STREETWEAR, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SNEAKERS, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_CLOTHING, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_REDDIT, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_YEEZY, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SUPREME, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_HYPEBEAST, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_STYLE],
+                    9: [() => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_LGBTQ, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ANIME, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SOCIAL, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FRIENDS, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_COMMUNITY],
+                    10: [() => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FOOD, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_DISNEY, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_BEVERAGE, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SNACKS, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_YOUTUBE, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_TRAVEL, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_DISNEYWORLD],
+                    11: [() => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_GYM, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_BODYBUILDING, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_EXERCISE, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_CALISTHENICS, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MENTAL_HEALTH, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SELF_IMPROVEMENT, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_EDUCATION, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_CROSSFIT, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_NUTRITION, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SPORTS],
+                    12: [() => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_STOCKS, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_TRADING, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_INVESTING, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_BITCOIN, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_CRYPTOCURRENCY, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ETHEREUM, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_OPTIONS, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_DEFI, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FOREX],
+                    13: [() => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_GAMING, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_YOUTUBE, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_TWITCH, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_COMMUNITY, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ANIME, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_EVENTS, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SOCIAL, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MEMES],
+                    43: [() => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_EMOJI, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_EMOTES, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_NITRO, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ANIME, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_CUTE, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_GIVEAWAYS, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_AESTHETIC, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_ART, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MEMES],
+                    49: [() => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_APPS, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_BOTS, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_DISCORD_BOT, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_GIVEAWAYS, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_SUPPORT, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_FUN, () => _.default.Messages.SERVER_DISCOVERY_SUGGESTED_TAG_MEMES]
                 },
-                h = ["en-GB"];
+                m = ["en-GB"];
 
-            function A() {
-                return u.default.getAvailableLocales().map(e => {
+            function N() {
+                return _.default.getAvailableLocales().map(e => {
                     let t;
                     let {
                         value: i,
@@ -108208,24 +108190,24 @@
                     }
                     return "en-US" === i ? {
                         value: i,
-                        label: u.default.Messages.ENGLISH_LANGUAGE,
+                        label: _.default.Messages.ENGLISH_LANGUAGE,
                         image: t
                     } : {
                         value: i,
                         label: r,
                         image: t
                     }
-                }).filter(e => !h.includes(e.value))
+                }).filter(e => !m.includes(e.value))
             }
-            A();
-            let m = u.default.getLanguages().filter(e => !h.includes(e.code)).map(e => "en-US" === e.code ? {
+            N();
+            let O = _.default.getLanguages().filter(e => !m.includes(e.code)).map(e => "en-US" === e.code ? {
                     ...e,
-                    name: u.default.Messages.en
+                    name: _.default.Messages.en
                 } : e),
-                N = 40,
-                O = 20;
-            (r = o || (o = {})).GAME_RECOMMENDATIONS = "Game Recommendations", r.SERVER_RECOMMENDATIONS = "Server Recommendations", (s = l || (l = {}))[s.Activity = 0] = "Activity", s[s.Discover = 1] = "Discover", s[s.Education = 2] = "Education", s[s.Music = 3] = "Music", s[s.Science = 4] = "Science", s[s.Stage = 5] = "Stage", s[s.Television = 6] = "Television";
-            let p = {
+                p = 40,
+                R = 20;
+            (s = u || (u = {})).GAME_RECOMMENDATIONS = "Game Recommendations", s.SERVER_RECOMMENDATIONS = "Server Recommendations", (a = d || (d = {}))[a.Activity = 0] = "Activity", a[a.Discover = 1] = "Discover", a[a.Education = 2] = "Education", a[a.Music = 3] = "Music", a[a.Science = 4] = "Science", a[a.Stage = 5] = "Stage", a[a.Television = 6] = "Television", a[a.Server = 7] = "Server";
+            let C = {
                 facebook: {
                     presentation: "Facebook",
                     baseUrl: "https://facebook.com"
@@ -115249,31 +115231,6 @@
                 }
             }
         },
-        159626: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return r
-                }
-            });
-            var i = n("987170");
-
-            function r(e) {
-                let t = (0, i.default)({
-                    ...e,
-                    id: "".concat(e.id, "_existing_users"),
-                    label: "".concat(e.label, " - Existing Users")
-                });
-                return {
-                    existingUsers: t,
-                    newUsers: (0, i.default)({
-                        ...e,
-                        id: "".concat(e.id, "_new_users"),
-                        label: "".concat(e.label, " - New Users")
-                    })
-                }
-            }
-        },
         818083: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -115282,22 +115239,6 @@
                 }
             });
             var i = n("987170")
-        },
-        893638: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                getMergedExperimentConfigs: function() {
-                    return r
-                }
-            }), n("470079");
-            var i = n("392711");
-
-            function r(e, t, n, r) {
-                var s, a;
-                let o = e.getCurrentConfig(n, r),
-                    l = t.getCurrentConfig(n, r);
-                return s = o, a = l, (0, i.mergeWith)({}, s, a, (e, t) => e || t)
-            }
         },
         948561: function(e, t, n) {
             "use strict";
@@ -133952,7 +133893,7 @@
             var i = n("442837"),
                 r = n("430198"),
                 s = n("818083"),
-                a = n("57132"),
+                a = n("278147"),
                 o = n("869735"),
                 l = n("984933"),
                 u = n("430824"),
@@ -141425,7 +141366,7 @@
             "use strict";
             n.r(t), n("47120");
             var i = n("147913"),
-                r = n("57132"),
+                r = n("278147"),
                 s = n("914010"),
                 a = n("924301"),
                 o = n("482241");
@@ -143311,7 +143252,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("58153"), n.e("25381"), n.e("79504"), n.e("33053"), n.e("51238"), n.e("56630"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("16114"), n.e("3084"), n.e("74456"), n.e("58227"), n.e("43502"), n.e("49398"), n.e("65840"), n.e("43643"), n.e("95003"), n.e("75301"), n.e("65892"), n.e("62856"), n.e("29598")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("58153"), n.e("25381"), n.e("79504"), n.e("33053"), n.e("51238"), n.e("56630"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("16114"), n.e("3084"), n.e("74456"), n.e("58227"), n.e("43502"), n.e("49398"), n.e("65840"), n.e("43643"), n.e("48496"), n.e("75301"), n.e("65892"), n.e("62856"), n.e("29188")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -148749,185 +148690,29 @@
                 }
             }), (s = i || (i = {})).COZY = "cozy", s.COZY_DRAWER = "cozy-drawer", s.COZY_DRAWER_SMOL = "cozy-drawer-smol", s.COMPACT = "compact", s.MINIMAL = "minimal", (a = r || (r = {})).ALL = "all", a.UNREADS = "unreads", a.NONE = "none"
         },
-        57132: function(e, t, n) {
+        278147: function(e, t, n) {
             "use strict";
+
+            function i() {}
+
+            function r() {
+                return !1
+            }
+
+            function s() {
+                return arguments.length > 0 && void 0 !== arguments[0] && arguments[0], !1
+            }
             n.r(t), n.d(t, {
                 getRootNavigationRefIfInExperiment: function() {
-                    return d
+                    return i
                 },
                 isInMainTabsExperiment: function() {
-                    return _
+                    return r
                 },
                 useInMainTabsExperiment: function() {
-                    return c
+                    return s
                 }
-            }), n("411104"), n("470079");
-            var i, r, s = n("652874"),
-                a = n("433517");
-            n("353926"), n("695855"), n("528097");
-            var o = n("777639");
-            n("277530");
-            var l = n("721877");
-            n("146552"), n("488832"), (r = i || (i = {}))[r.EXISTING_USERS = 0] = "EXISTING_USERS", r[r.NEW_USERS = 1] = "NEW_USERS";
-            let u = "tabs-v2-experiment-key";
-
-            function d() {
-                return _() ? (0, o.getRootNavigationRef)() : void 0
-            }
-
-            function _() {
-                return (0, l.isMainTabsExperimentPlatformSupported)()
-            }
-
-            function c() {
-                return arguments.length > 0 && void 0 !== arguments[0] && arguments[0], (0, l.isMainTabsExperimentPlatformSupported)()
-            }(0, s.default)((e, t) => ({
-                _experimentCacheInitialized: !1,
-                _experimentEnabled: !1,
-                getExperimentEnabled() {
-                    if (!(0, l.isMainTabsExperimentPlatformSupported)()) return !1;
-                    let {
-                        _experimentCacheInitialized: e,
-                        _experimentEnabled: n
-                    } = t();
-                    if (!e) throw Error("MainTabsV2ExperimentStore: Experiment cache not initialized");
-                    return n
-                },
-                setExperimentEnabled: t => {
-                    e({
-                        _experimentEnabled: t
-                    }), a.Storage.set(u, t)
-                },
-                setInitialized: () => {
-                    e(e => e._experimentCacheInitialized ? e : {
-                        _experimentCacheInitialized: !0,
-                        _experimentEnabled: !0 === a.Storage.get(u)
-                    })
-                }
-            }))
-        },
-        695855: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var i = n("818083");
-            n("869735"), (0, i.createExperiment)({
-                kind: "user",
-                id: "2023-09_mobile_redesign_override_toggles",
-                label: "Tabs V2 - redesign opt-out/in for all",
-                defaultConfig: {
-                    hide: !1,
-                    ignore: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "control",
-                    config: {
-                        hide: !1,
-                        ignore: !1
-                    }
-                }, {
-                    id: 2,
-                    label: "hide toggles",
-                    config: {
-                        hide: !0,
-                        ignore: !1
-                    }
-                }, {
-                    id: 3,
-                    label: "hide & ignore toggles",
-                    config: {
-                        hide: !0,
-                        ignore: !0
-                    }
-                }]
-            }), (0, i.createExperiment)({
-                kind: "user",
-                id: "2023-09_mobile_redesign_override_toggles_t2",
-                label: "Tabs V2 - redesign opt-out for T2",
-                defaultConfig: {
-                    hide: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "show",
-                    config: {
-                        hide: !1
-                    }
-                }, {
-                    id: 2,
-                    label: "hide",
-                    config: {
-                        hide: !0
-                    }
-                }]
             })
-        },
-        528097: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                daysSinceYouBarFirstSeen: function() {
-                    return I
-                },
-                getNavYouBarExperiment: function() {
-                    return E
-                }
-            }), n("470079"), n("902704");
-            var i = n("433517"),
-                r = n("159626"),
-                s = n("893638"),
-                a = n("828695"),
-                o = n("70956"),
-                l = n("57132");
-            let u = {
-                    showYouBar: !1,
-                    showMessagesButton: !1
-                },
-                d = !1,
-                _ = u,
-                c = (0, r.default)({
-                    kind: "user",
-                    id: "2024-02_navi_bar",
-                    label: "Mobile Redesign - Nav Experiment: You Bar",
-                    defaultConfig: u,
-                    treatments: [{
-                        id: 0,
-                        label: "Control",
-                        config: {
-                            showYouBar: !1,
-                            showMessagesButton: !1
-                        }
-                    }, {
-                        id: 1,
-                        label: "You Bar (2c)",
-                        config: {
-                            showYouBar: !0,
-                            showMessagesButton: !1
-                        }
-                    }, {
-                        id: 2,
-                        label: "You Bar (2c) with messages button",
-                        config: {
-                            showYouBar: !0,
-                            showMessagesButton: !0
-                        }
-                    }]
-                });
-
-            function E(e, t) {
-                var n, r;
-                let o = !(0, l.isInMainTabsExperiment)(),
-                    E = !!o || (null == t ? void 0 : t.disable);
-                return a.default.hasLoadedExperiments || E ? (0, s.getMergedExperimentConfigs)(c.existingUsers, c.newUsers, e, {
-                    ...t,
-                    disable: E,
-                    autoTrackExposure: !o && (null === (r = null == t ? void 0 : t.autoTrackExposure) || void 0 === r || r)
-                }) : (!d && (_ = null !== (n = i.Storage.get("--you-bar-experiment-cached-config")) && void 0 !== n ? n : u, d = !0), _)
-            }
-
-            function I() {
-                let e = i.Storage.get("--you-bar-experiment-first-seen");
-                return null == e ? -1 : Math.floor((Date.now() - e) / o.default.Millis.DAY)
-            }
         },
         777639: function(e, t, n) {
             "use strict";
@@ -148938,30 +148723,6 @@
                     return i
                 }
             })
-        },
-        277530: function(e, t, n) {
-            "use strict";
-            n.r(t)
-        },
-        721877: function(e, t, n) {
-            "use strict";
-
-            function i() {
-                return !1
-            }
-            n.r(t), n.d(t, {
-                isMainTabsExperimentPlatformSupported: function() {
-                    return i
-                }
-            })
-        },
-        146552: function(e, t, n) {
-            "use strict";
-            n.r(t)
-        },
-        488832: function(e, t, n) {
-            "use strict";
-            n.r(t), n("804098"), n("20186"), n("626135"), n("960048")
         },
         272423: function(e, t, n) {
             "use strict";
@@ -157785,8 +157546,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712263407868",
-                                    build_number: "281809"
+                                    built_at: "1712330614541",
+                                    build_number: "282068"
                                 }
                             },
                             retries: 1
@@ -158574,7 +158335,7 @@
             var i, r = n("442837"),
                 s = n("570140"),
                 a = n("924301");
-            n("57132");
+            n("278147");
             var o = n("786761"),
                 l = n("23750"),
                 u = n("594174"),
@@ -162632,7 +162393,7 @@
                         applicationId: t
                     } = e;
                     return t === Y
-                })), eJ = (0, d.default)(eq), eZ = (0, l.useStateFromStores)([T.default], () => null != em ? T.default.getForSKU(em) : null, [em]), e$ = ej[null != em ? em : ""];
+                })), eJ = (0, d.default)(eq), eZ = (0, l.useStateFromStores)([T.default], () => null != em ? T.default.getForSKU(em) : null, [em]), e$ = ej[null != em ? em : ""], [e0, e1] = r.useState(null);
                 return (0, i.jsx)(b.Provider, {
                     value: {
                         stripe: W,
@@ -162701,7 +162462,9 @@
                         activitySessionId: eJ,
                         entitlementsGranted: eF,
                         setEntitlementsGranted: ex,
-                        referralCode: j
+                        referralCode: j,
+                        invoicePreview: e0,
+                        setInvoicePreview: e1
                     },
                     children: (0, i.jsx)(s.Elements, {
                         options: P.StripeElementsOptions,
@@ -164490,14 +164253,14 @@
         192616: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                CreateGDMPollsExperiment: function() {
-                    return s
-                },
                 CreateGuildPollsExperiment: function() {
                     return r
                 },
-                CreatePollsCoachmarkExperiment: function() {
+                CreatePollsGuildCoachmarkExperiment: function() {
                     return a
+                },
+                CreatePollsUserExperiment: function() {
+                    return s
                 }
             });
             var i = n("818083");
@@ -164525,7 +164288,7 @@
                     },
                     treatments: [{
                         id: 1,
-                        label: "Enables creation of polls within a GDM",
+                        label: "Enables creation of polls within a GDM or guild",
                         config: {
                             enabled: !0
                         }
@@ -164534,13 +164297,13 @@
                 a = (0, i.createExperiment)({
                     kind: "guild",
                     id: "2024-03_polls_coachmark",
-                    label: "Show coachmark for poll creation entry point",
+                    label: "Show coachmark for poll creation entry point in guild",
                     defaultConfig: {
                         enabled: !1
                     },
                     treatments: [{
                         id: 1,
-                        label: "Can show coachmark for poll creation entry point",
+                        label: "Can show coachmark for poll creation entry point in guild",
                         config: {
                             enabled: !0
                         }
@@ -164639,11 +164402,11 @@
                     }),
                     {
                         enabled: r
-                    } = f.CreateGDMPollsExperiment.useExperiment({
+                    } = f.CreatePollsUserExperiment.useExperiment({
                         location: "useCanPostPollsInChannel"
                     }, {
                         autoTrackExposure: !0,
-                        disable: !t || !(null == e ? void 0 : e.isPrivate())
+                        disable: !t
                     });
                 return i || r
             }
@@ -164651,7 +164414,7 @@
             function R(e) {
                 let {
                     enabled: t
-                } = f.CreatePollsCoachmarkExperiment.useExperiment({
+                } = f.CreatePollsGuildCoachmarkExperiment.useExperiment({
                     guildId: e,
                     location: "useCanShowPollsChatInputCoachmarkInGuild"
                 });
@@ -166302,7 +166065,8 @@
                 let {
                     paymentSourceId: t,
                     skuId: n,
-                    subscriptionPlanId: i
+                    subscriptionPlanId: i,
+                    currency: r
                 } = e;
                 s()(n, "SKU ID is missing for one time purchase gift invoice preview");
                 try {
@@ -166311,7 +166075,8 @@
                         query: {
                             gift: !0,
                             payment_source_id: t,
-                            sku_subscription_plan_id: i
+                            sku_subscription_plan_id: i,
+                            currency: r
                         },
                         oldFormErrors: !0
                     });
@@ -173071,7 +172836,7 @@
             var i = n("470079"),
                 r = n("442837"),
                 s = n("512751"),
-                a = n("57132"),
+                a = n("278147"),
                 o = n("943209"),
                 l = n("628566");
 
@@ -174924,10 +174689,12 @@
                 E = new Set,
                 I = new Set,
                 T = new Set,
-                f = new Map,
-                S = new Map;
+                f = new Set,
+                S = new Map,
+                h = new Map,
+                A = new Map;
 
-            function h(e, t) {
+            function m(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
                         updateProgress: !1
                     },
@@ -174946,12 +174713,12 @@
                 }
             }
 
-            function A(e, t) {
-                let n = new Map(f);
-                n.set(e, t), f = n;
+            function N(e, t) {
+                let n = new Map(S);
+                n.set(e, t), S = n;
                 let i = d.get(e),
                     r = null == i ? void 0 : i.userStatus;
-                null != r && null == r.claimedAt && h(e, {
+                null != r && null == r.claimedAt && m(e, {
                     userStatus: {
                         ...r,
                         claimedAt: t.claimedAt
@@ -174959,20 +174726,20 @@
                 })
             }
 
-            function m(e) {
-                null != S.get(e) && (S = new Map(S)).delete(e)
+            function O(e) {
+                null != A.get(e) && (A = new Map(A)).delete(e)
             }
 
-            function N(e) {
+            function p(e) {
                 let t = new Set(c);
                 t.delete(e), c = t
             }
 
-            function O(e) {
-                let t = new Set(T);
-                t.delete(e), T = t
+            function R(e) {
+                let t = new Set(f);
+                t.delete(e), f = t
             }
-            class p extends(i = o.default.Store) {
+            class C extends(i = o.default.Store) {
                 get quests() {
                     return d
                 }
@@ -174988,27 +174755,33 @@
                 isClaimingRewardCode(e) {
                     return E.has(e)
                 }
-                isFetchingRewardCode(e) {
+                isClaimingReward(e) {
                     return I.has(e)
                 }
-                isDismissingContent(e) {
+                isFetchingRewardCode(e) {
                     return T.has(e)
                 }
-                getRewardCode(e) {
-                    return f.get(e)
+                isDismissingContent(e) {
+                    return f.has(e)
                 }
-                getStreamHeartbeatFailure(e) {
+                getRewardCode(e) {
                     return S.get(e)
                 }
+                getRewards(e) {
+                    return h.get(e)
+                }
+                getStreamHeartbeatFailure(e) {
+                    return A.get(e)
+                }
             }
-            a = "QuestsStore", (s = "displayName") in(r = p) ? Object.defineProperty(r, s, {
+            a = "QuestsStore", (s = "displayName") in(r = C) ? Object.defineProperty(r, s, {
                 value: a,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : r[s] = a, t.default = new p(l.default, {
+            }) : r[s] = a, t.default = new C(l.default, {
                 LOGOUT: function() {
-                    u = !1, d = new Map, _ = 0, c = new Set, S = new Map
+                    u = !1, d = new Map, _ = 0, c = new Set, A = new Map
                 },
                 QUESTS_FETCH_CURRENT_QUESTS_BEGIN: function() {
                     _ = Date.now(), u = !0
@@ -175028,18 +174801,18 @@
                         streamKey: n,
                         userStatus: i
                     } = e;
-                    h(t, {
+                    m(t, {
                         userStatus: i
                     }, {
                         updateProgress: !0
-                    }), m(n)
+                    }), O(n)
                 },
                 QUESTS_SEND_HEARTBEAT_FAILURE: function(e) {
                     let {
                         questId: t,
                         streamKey: n
                     } = e;
-                    null == S.get(n) && (S = new Map(S)).set(n, {
+                    null == A.get(n) && (A = new Map(A)).set(n, {
                         questId: t,
                         streamKey: n,
                         firstFailedAt: Date.now()
@@ -175055,34 +174828,34 @@
                     let {
                         enrolledQuestUserStatus: t
                     } = e;
-                    h(t.questId, {
+                    m(t.questId, {
                         userStatus: t
-                    }), N(t.questId)
+                    }), p(t.questId)
                 },
                 QUESTS_ENROLL_FAILURE: function(e) {
                     let {
                         questId: t
                     } = e;
-                    N(t)
+                    p(t)
                 },
                 QUESTS_FETCH_REWARD_CODE_BEGIN: function(e) {
                     let {
                         questId: t
-                    } = e, n = new Set(I);
-                    n.add(t), I = n
+                    } = e, n = new Set(T);
+                    n.add(t), T = n
                 },
                 QUESTS_FETCH_REWARD_CODE_SUCCESS: function(e) {
                     let {
                         questId: t,
                         rewardCode: n
-                    } = e, i = new Set(I);
-                    i.delete(t), I = i, A(t, n)
+                    } = e, i = new Set(T);
+                    i.delete(t), T = i, N(t, n)
                 },
                 QUESTS_FETCH_REWARD_CODE_FAILURE: function(e) {
                     let {
                         questId: t
-                    } = e, n = new Set(I);
-                    n.delete(t), I = n
+                    } = e, n = new Set(T);
+                    n.delete(t), T = n
                 },
                 QUESTS_CLAIM_REWARD_CODE_BEGIN: function(e) {
                     let {
@@ -175095,7 +174868,7 @@
                         questId: t,
                         rewardCode: n
                     } = e, i = new Set(E);
-                    i.delete(t), E = i, A(t, n)
+                    i.delete(t), E = i, N(t, n)
                 },
                 QUESTS_CLAIM_REWARD_CODE_FAILURE: function(e) {
                     let {
@@ -175103,51 +174876,81 @@
                     } = e, n = new Set(E);
                     n.delete(t), E = n
                 },
+                QUESTS_CLAIM_REWARD_BEGIN: function(e) {
+                    let {
+                        questId: t
+                    } = e, n = new Set(I);
+                    n.add(t), I = n
+                },
+                QUESTS_CLAIM_REWARD_SUCCESS: function(e) {
+                    let {
+                        questId: t,
+                        entitlements: n
+                    } = e, i = new Set(I);
+                    i.delete(t), I = i, ! function(e, t) {
+                        let n = new Map(h);
+                        n.set(e, t.items), h = n;
+                        let i = d.get(e),
+                            r = null == i ? void 0 : i.userStatus;
+                        null != r && null == r.claimedAt && m(e, {
+                            userStatus: {
+                                ...r,
+                                claimedAt: t.claimedAt
+                            }
+                        })
+                    }(t, n)
+                },
+                QUESTS_CLAIM_REWARD_FAILURE: function(e) {
+                    let {
+                        questId: t
+                    } = e, n = new Set(I);
+                    n.delete(t), I = n
+                },
                 QUESTS_DISMISS_CONTENT_BEGIN: function(e) {
                     let {
                         questId: t
-                    } = e, n = new Set(T);
-                    n.add(t), T = n
+                    } = e, n = new Set(f);
+                    n.add(t), f = n
                 },
                 QUESTS_DISMISS_CONTENT_SUCCESS: function(e) {
                     let {
                         dismissedQuestUserStatus: t
                     } = e;
-                    h(t.questId, {
+                    m(t.questId, {
                         userStatus: t
-                    }), O(t.questId)
+                    }), R(t.questId)
                 },
                 QUESTS_DISMISS_CONTENT_FAILURE: function(e) {
                     let {
                         questId: t
                     } = e;
-                    O(t)
+                    R(t)
                 },
                 STREAM_CLOSE: function(e) {
                     let {
                         streamKey: t
                     } = e;
-                    m(t)
+                    O(t)
                 },
                 QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: function(e) {
                     let {
                         streamKey: t
                     } = e;
-                    m(t)
+                    O(t)
                 },
                 QUESTS_PREVIEW_UPDATE_SUCCESS: function(e) {
                     let {
                         previewQuestUserStatus: t
                     } = e;
-                    h(t.questId, {
+                    m(t.questId, {
                         userStatus: t
-                    }), null == t.claimedAt && (f = new Map(f)).delete(t.questId)
+                    }), null == t.claimedAt && (S = new Map(S)).delete(t.questId)
                 },
                 QUESTS_OPTIMISTIC_PROGRESS_UPDATE: function(e) {
                     let {
                         userStatus: t
                     } = e;
-                    h(t.questId, {
+                    m(t.questId, {
                         userStatus: t
                     }, {
                         updateProgress: !0
@@ -177650,7 +177453,7 @@
             });
             var i = n("819553"),
                 r = n("931261"),
-                s = n("57132"),
+                s = n("278147"),
                 a = n("869735"),
                 o = n("592125"),
                 l = n("984933"),
@@ -189610,7 +189413,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return _
+                    return d
                 }
             });
             var i = n("735250");
@@ -189619,25 +189422,24 @@
                 s = n("780384"),
                 a = n("607070"),
                 o = n("514361"),
-                l = n("57132"),
-                u = n("210887"),
-                d = n("231338");
+                l = n("210887"),
+                u = n("231338");
 
-            function _(e) {
+            function d(e) {
                 let {
                     children: t
-                } = e, n = (0, r.useStateFromStores)([u.default], () => u.default.theme), _ = (0, l.useInMainTabsExperiment)(), c = (0, r.useStateFromStores)([o.default], () => o.default.gradientPreset), {
-                    saturation: E,
-                    contrast: I
+                } = e, n = (0, r.useStateFromStores)([l.default], () => l.default.theme), d = (0, r.useStateFromStores)([o.default], () => o.default.gradientPreset), {
+                    saturation: _,
+                    contrast: c
                 } = (0, r.useStateFromStoresObject)([a.default], () => ({
                     saturation: a.default.saturation,
                     contrast: a.default.contrast
-                })), T = 0;
-                return _ && (T = (0, s.setThemeFlag)(T, s.ThemeContextFlags.MOBILE_REDESIGN_ENABLED)), null != c && _ && (T = c.theme === d.ThemeTypes.LIGHT ? (0, s.setThemeFlag)(T, s.ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED) : (0, s.setThemeFlag)(T, s.ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED)), 1 !== E && (T = (0, s.setThemeFlag)(T, s.ThemeContextFlags.REDUCE_SATURATION_ENABLED)), (0, i.jsx)(s.RootThemeContextProvider, {
+                })), E = 0;
+                return E = (0, s.setThemeFlag)(E, s.ThemeContextFlags.MOBILE_REDESIGN_ENABLED), null != d && (E = d.theme === u.ThemeTypes.LIGHT ? (0, s.setThemeFlag)(E, s.ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED) : (0, s.setThemeFlag)(E, s.ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED)), 1 !== _ && (E = (0, s.setThemeFlag)(E, s.ThemeContextFlags.REDUCE_SATURATION_ENABLED)), (0, i.jsx)(s.RootThemeContextProvider, {
                     theme: n,
-                    flags: T,
-                    saturation: E,
-                    contrast: I,
+                    flags: E,
+                    saturation: _,
+                    contrast: c,
                     children: t
                 })
             }
@@ -195285,7 +195087,7 @@
                     return i
                 },
                 default: function() {
-                    return g
+                    return v
                 }
             }), n("653041");
             var i, r, s = n("735250");
@@ -195299,67 +195101,70 @@
                 c = n("906732"),
                 E = n("688465"),
                 I = n("246208"),
-                T = n("785717"),
-                f = n("221292"),
-                S = n("290421"),
-                h = n("318661"),
-                A = n("228168"),
-                m = n("981631"),
-                N = n("232700"),
-                O = n("689938"),
-                p = n("649570"),
-                R = n("839973"),
-                C = n("124901");
+                T = n("617136"),
+                f = n("497505"),
+                S = n("626135"),
+                h = n("785717"),
+                A = n("221292"),
+                m = n("290421"),
+                N = n("318661"),
+                O = n("228168"),
+                p = n("981631"),
+                R = n("232700"),
+                C = n("689938"),
+                g = n("649570"),
+                L = n("839973"),
+                D = n("124901");
 
-            function g(e) {
+            function v(e) {
                 var t;
                 let {
                     user: n,
                     guildId: i,
                     className: r,
                     shrinkAtCount: a,
-                    shrinkToSize: g,
-                    isTryItOutFlow: L,
-                    size: D = 0
-                } = e, v = (0, h.default)(n.id, i), {
-                    analyticsLocations: M
+                    shrinkToSize: v,
+                    isTryItOutFlow: M,
+                    size: y = 0
+                } = e, P = (0, N.default)(n.id, i), {
+                    analyticsLocations: U
                 } = (0, c.default)(_.default.BADGE), {
-                    trackUserProfileAction: y,
-                    ...P
-                } = (0, T.useUserProfileAnalyticsContext)(), {
-                    allowOpeningLootboxes: U
+                    trackUserProfileAction: b,
+                    ...G
+                } = (0, h.useUserProfileAnalyticsContext)(), {
+                    allowOpeningLootboxes: w
                 } = I.default.useExperiment({
                     location: "user_profile"
-                }), b = (0, S.default)(v).map(e => ({
+                }), B = (0, m.default)(P).map(e => ({
                     ...e,
-                    src: (0, A.getBadgeAsset)(e.icon)
-                })), G = (0, d.useWindowDispatch)();
+                    src: (0, O.getBadgeAsset)(e.icon)
+                })), k = (0, d.useWindowDispatch)();
                 if (n.isClyde()) return (0, s.jsx)("div", {
-                    className: o()(r, p.container, p.clydeBadgeList),
-                    "aria-label": O.default.Messages.PROFILE_USER_BADGES,
+                    className: o()(r, g.container, g.clydeBadgeList),
+                    "aria-label": C.default.Messages.PROFILE_USER_BADGES,
                     role: "group",
                     children: (0, s.jsx)(E.default, {})
                 });
-                L && null == b.find(e => "premium" === e.id) && b.push({
+                M && null == B.find(e => "premium" === e.id) && B.push({
                     id: "premium",
-                    src: R,
-                    description: O.default.Messages.PREMIUM_BADGE_TOOLTIP.format({
+                    src: L,
+                    description: C.default.Messages.PREMIUM_BADGE_TOOLTIP.format({
                         date: new Date
                     })
-                }), U && (null === (t = n.avatarDecoration) || void 0 === t ? void 0 : t.skuId) === N.LOOTBOX_PRIZE_SKU_ID && b.push({
+                }), w && (null === (t = n.avatarDecoration) || void 0 === t ? void 0 : t.skuId) === R.LOOTBOX_PRIZE_SKU_ID && B.push({
                     id: "lootboxes",
-                    src: C,
-                    description: O.default.Messages.PACKAGES_BADGE,
-                    link: "https://discord.com" + m.Routes.SETTINGS(m.UserSettingsSections.LOOTBOXES)
+                    src: D,
+                    description: C.default.Messages.PACKAGES_BADGE,
+                    link: "https://discord.com" + p.Routes.SETTINGS(p.UserSettingsSections.LOOTBOXES)
                 });
-                let w = null != a && null != g && b.length > a ? g : D;
+                let V = null != a && null != v && B.length > a ? v : y;
                 return (0, s.jsx)(c.AnalyticsLocationProvider, {
-                    value: M,
+                    value: U,
                     children: (0, s.jsx)("div", {
-                        className: o()(r, b.length > 0 ? p.containerWithContent : p.container),
-                        "aria-label": O.default.Messages.PROFILE_USER_BADGES,
+                        className: o()(r, B.length > 0 ? g.containerWithContent : g.container),
+                        "aria-label": C.default.Messages.PROFILE_USER_BADGES,
                         role: "group",
-                        children: b.map(e => (0, s.jsx)(l.Tooltip, {
+                        children: B.map(e => (0, s.jsx)(l.Tooltip, {
                             position: "top",
                             text: e.description,
                             spacing: 12,
@@ -195367,25 +195172,27 @@
                                 ...t,
                                 onClick: n => {
                                     var i;
-                                    y({
+                                    b({
                                         action: "PRESS_BADGE"
-                                    }), (0, f.trackUserProfileBadgePressed)({
+                                    }), (0, A.trackUserProfileBadgePressed)({
                                         badge: e.id,
-                                        analyticsLocations: M,
-                                        ...P
+                                        analyticsLocations: U,
+                                        ...G
                                     }), null === (i = t.onClick) || void 0 === i || i.call(t);
                                     let r = null != e.link ? (0, u.default)(e.link, {
-                                        analyticsLocations: M
+                                        analyticsLocations: U
                                     }) : null;
-                                    if (null != r) return G.dispatch(m.ComponentActions.POPOUT_CLOSE), r(n)
+                                    if (null != r) return k.dispatch(p.ComponentActions.POPOUT_CLOSE), r(n)
                                 },
                                 onMouseEnter: () => {
                                     var n;
-                                    e.id === S.QUEST_COMPLETED_BADGE && (0, f.trackUserProfileBadgeHovered)({
+                                    e.id === m.QUEST_COMPLETED_BADGE && (S.default.track(p.AnalyticEvents.QUEST_CONTENT_VIEWED, {
+                                        ...(0, T.getContentProperties)(f.QuestContent.QUEST_BADGE)
+                                    }), (0, A.trackUserProfileBadgeHovered)({
                                         badge: e.id,
-                                        analyticsLocations: M,
-                                        ...P
-                                    }), null === (n = t.onMouseEnter) || void 0 === n || n.call(t)
+                                        analyticsLocations: U,
+                                        ...G
+                                    })), null === (n = t.onMouseEnter) || void 0 === n || n.call(t)
                                 },
                                 href: e.link,
                                 children: (0, s.jsx)("img", {
@@ -195393,10 +195200,10 @@
                                     "aria-hidden": !0,
                                     src: e.src,
                                     className: o()({
-                                        [p.profileBadge24]: 0 === w,
-                                        [p.profileBadge22]: 1 === w,
-                                        [p.profileBadge20]: 2 === w,
-                                        [p.profileBadge18]: 3 === w
+                                        [g.profileBadge24]: 0 === V,
+                                        [g.profileBadge22]: 1 === V,
+                                        [g.profileBadge20]: 2 === V,
+                                        [g.profileBadge18]: 3 === V
                                     })
                                 })
                             })
@@ -197496,151 +197303,170 @@
             }), n("47120"), n("411104");
             var i = n("735250"),
                 r = n("470079"),
-                s = n("803997"),
+                s = n("512722"),
                 a = n.n(s),
-                o = n("512722"),
-                l = n.n(o),
-                u = n("153832"),
-                d = n("924826"),
-                _ = n("442837"),
-                c = n("481060"),
-                E = n("749210"),
-                I = n("412899"),
-                T = n("112724"),
-                f = n("434404"),
-                S = n("430824"),
-                h = n("496675"),
-                A = n("594174"),
-                m = n("700785"),
-                N = n("981631"),
-                O = n("689938"),
-                p = n("442817");
-
-            function R(e) {
+                o = n("153832"),
+                l = n("924826"),
+                u = n("442837"),
+                d = n("481060"),
+                _ = n("749210"),
+                c = n("412899"),
+                E = n("112724"),
+                I = n("906732"),
+                T = n("434404"),
+                f = n("430824"),
+                S = n("496675"),
+                h = n("594174"),
+                A = n("700785"),
+                m = n("785717"),
+                N = n("171368"),
+                O = n("981631"),
+                p = n("689938"),
+                R = n("442817");
+            let C = (0, E.default)(function(e) {
                 let {
                     user: t,
                     guild: n,
                     userRoles: s,
-                    wrap: o = !0,
-                    width: T,
-                    className: R,
-                    roleClassName: C,
-                    addButtonClassName: g,
-                    addButtonIconClassName: L,
-                    readOnly: D,
-                    disableBorderColor: v
-                } = e, M = r.useRef({}), y = r.useCallback(e => {
+                    width: E
+                } = e, C = r.useRef({}), g = r.useCallback(e => {
                     var i;
                     let r = s.filter(t => t !== e.id);
-                    (null === (i = e.tags) || void 0 === i ? void 0 : i.guild_connections) === null ? E.default.unassignGuildRoleConnection(n.id, e.id) : f.default.updateMemberRoles(n.id, t.id, r, [], [e.id])
-                }, [s, n.id, t.id]), P = r.useCallback(e => {
-                    let i = s; - 1 === i.indexOf(e) && (i = i.concat([e])), f.default.updateMemberRoles(n.id, t.id, i, [e], [])
-                }, [s, n.id, t.id]), [U, b] = r.useState(null), G = (0, _.useStateFromStores)([S.default], () => S.default.getRoles(n.id)), w = r.useMemo(() => {
-                    let e = Object.values(G).filter(e => s.includes(e.id)).sort((e, t) => {
+                    (null === (i = e.tags) || void 0 === i ? void 0 : i.guild_connections) === null ? _.default.unassignGuildRoleConnection(n.id, e.id) : T.default.updateMemberRoles(n.id, t.id, r, [], [e.id])
+                }, [s, n.id, t.id]), L = r.useCallback(e => {
+                    let i = s; - 1 === i.indexOf(e) && (i = i.concat([e])), T.default.updateMemberRoles(n.id, t.id, i, [e], [])
+                }, [s, n.id, t.id]), [D, v] = r.useState(null), M = (0, u.useStateFromStores)([f.default], () => f.default.getRoles(n.id)), y = r.useMemo(() => {
+                    let e = Object.values(M).filter(e => s.includes(e.id)).sort((e, t) => {
                         var n, i;
                         let r = (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) !== null,
                             s = (null === (i = t.tags) || void 0 === i ? void 0 : i.guild_connections) !== null;
                         return r && !s ? 1 : !r && s ? -1 : 0
                     });
-                    return null != U ? e.slice(0, U) : e
-                }, [G, U, s]), B = s.length - w.length;
+                    return null != D ? e.slice(0, D) : e
+                }, [M, D, s]), P = s.length - y.length;
                 r.useLayoutEffect(() => {
-                    if (o) return;
-                    if ("number" != typeof T) throw Error("Unexpected null width");
+                    if ("number" != typeof E) throw Error("Unexpected null width");
                     let e = 0,
                         t = 0,
-                        n = T - 30 - 4;
-                    for (let i = 0; i < w.length; i++) {
-                        let r = w[i],
-                            s = M.current[r.id];
-                        if (null != s) {
-                            if ((t += s.offsetWidth + 4) > n) break;
-                            e++
+                        n = E - 24,
+                        i = n - 32;
+                    for (let r = 0; r < 2; r++) {
+                        t = 0;
+                        let s = 1 === r ? i : n;
+                        for (let n = e; n < y.length; n++) {
+                            let i = y[n],
+                                r = C.current[i.id];
+                            if (null != r) {
+                                if ((t += r.offsetWidth + 4) > s) break;
+                                e++
+                            }
                         }
                     }
-                    b(t => e < w.length ? e : t)
-                }, [o, T, w]);
-                let k = A.default.getCurrentUser();
-                l()(null != k, "MemberRolesList: currentUser cannot be undefined");
-                let V = !D && h.default.can(N.Permissions.MANAGE_ROLES, n),
-                    F = m.getHighestRole(n, k.id),
-                    x = r.useMemo(() => "roles-".concat((0, u.v4)()), []),
-                    H = (0, d.default)({
-                        id: x,
+                    v(t => e < y.length ? e : t)
+                }, [E, y]);
+                let U = h.default.getCurrentUser();
+                a()(null != U, "MemberRolesList: currentUser cannot be undefined");
+                let b = S.default.can(O.Permissions.MANAGE_ROLES, n),
+                    G = A.getHighestRole(n, U.id),
+                    w = r.useMemo(() => "roles-".concat((0, o.v4)()), []),
+                    B = (0, l.default)({
+                        id: w,
                         isEnabled: !0,
-                        scrollToStart: N.NOOP_PROMISE,
-                        scrollToEnd: N.NOOP_PROMISE,
+                        scrollToStart: O.NOOP_PROMISE,
+                        scrollToEnd: O.NOOP_PROMISE,
                         wrap: !0
                     }),
-                    Y = w.map(e => {
+                    k = y.map(e => {
                         var r;
-                        return (0, i.jsx)(I.MemberRole, {
-                            className: C,
+                        return (0, i.jsx)(c.MemberRole, {
+                            className: R.role,
                             role: e,
-                            canRemove: V && m.isRoleHigher(n, k.id, F, e) || (null === (r = e.tags) || void 0 === r ? void 0 : r.guild_connections) === null && t.id === k.id,
-                            onRemove: () => y(e),
+                            canRemove: b && A.isRoleHigher(n, U.id, G, e) || (null === (r = e.tags) || void 0 === r ? void 0 : r.guild_connections) === null && t.id === U.id,
+                            onRemove: () => g(e),
                             ref: t => {
                                 var n, i;
-                                return n = e.id, void(null != (i = t) ? M.current[n] = i : delete M.current[n])
+                                return n = e.id, void(null != (i = t) ? C.current[n] = i : delete C.current[n])
                             },
                             guildId: n.id,
-                            disableBorderColor: v
+                            disableBorderColor: !0
                         }, e.id)
                     }),
-                    j = null != U && 0 !== B ? (0, i.jsx)(I.OverflowMoreRolesButton, {
-                        ...e,
-                        numRolesHidden: B
+                    {
+                        guildId: V,
+                        channelId: F,
+                        messageId: x,
+                        roleId: H
+                    } = (0, m.useUserProfileAnalyticsContext)(),
+                    {
+                        analyticsLocations: Y
+                    } = (0, I.default)(),
+                    j = null != D && 0 !== P ? (0, i.jsx)(d.Clickable, {
+                        onClick: () => {
+                            (0, N.openUserProfileModal)({
+                                userId: t.id,
+                                guildId: V,
+                                channelId: F,
+                                messageId: x,
+                                roleId: H,
+                                analyticsLocation: {
+                                    section: O.AnalyticsSections.BITE_SIZE_PROFILE_POPOUT
+                                },
+                                sourceAnalyticsLocations: Y
+                            })
+                        },
+                        className: R.overflowButton,
+                        children: (0, i.jsx)(d.Text, {
+                            variant: "text-xs/medium",
+                            children: "+".concat(P)
+                        })
                     }) : null;
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
-                        className: p.rolesHeader,
-                        children: [(0, i.jsx)(c.Text, {
+                        className: R.rolesHeader,
+                        children: [(0, i.jsx)(d.Text, {
                             variant: "text-xs/semibold",
-                            className: p.rolesHeaderText,
-                            children: O.default.Messages.ROLES
-                        }), V && (0, i.jsx)(c.Tooltip, {
-                            text: O.default.Messages.USER_PROFILE_ADD_ROLE,
+                            className: R.rolesHeaderText,
+                            children: p.default.Messages.ROLES
+                        }), b && (0, i.jsx)(d.Tooltip, {
+                            text: p.default.Messages.USER_PROFILE_ADD_ROLE,
                             children: t => (0, i.jsx)("div", {
                                 ...t,
-                                children: (0, i.jsx)(I.OverflowAddRolesButton, {
+                                children: (0, i.jsx)(c.OverflowAddRolesButton, {
                                     ...e,
-                                    handleAddRole: P,
-                                    addButtonClassName: g,
-                                    addButtonIconClassName: L
+                                    handleAddRole: L,
+                                    addButtonClassName: R.addButton,
+                                    addButtonIconClassName: R.addButtonIcon
                                 })
                             })
                         })]
-                    }), (0, i.jsx)(d.ListNavigatorProvider, {
-                        navigator: H,
-                        children: (0, i.jsx)(d.ListNavigatorContainer, {
+                    }), (0, i.jsx)(l.ListNavigatorProvider, {
+                        navigator: B,
+                        children: (0, i.jsx)(l.ListNavigatorContainer, {
                             children: e => {
                                 let {
                                     ref: t,
                                     ...n
                                 } = e;
                                 return (0, i.jsxs)("div", {
-                                    className: a()(p.root, R),
-                                    "aria-label": O.default.Messages.ROLES_LIST.format({
+                                    className: R.root,
+                                    "aria-label": p.default.Messages.ROLES_LIST.format({
                                         numRoles: s.length
                                     }),
                                     ref: t,
                                     ...n,
-                                    children: [Y, j]
+                                    children: [k, j]
                                 })
                             }
                         })
                     })]
                 })
-            }
-            let C = (0, T.default)(R);
+            });
 
             function g(e) {
-                return (0, _.useStateFromStores)([h.default], () => {
+                return (0, u.useStateFromStores)([S.default], () => {
                     var t;
-                    return h.default.getGuildVersion(null === (t = e.guild) || void 0 === t ? void 0 : t.id)
-                }), !1 === e.wrap ? (0, i.jsx)(C, {
-                    ...e
-                }) : (0, i.jsx)(R, {
+                    return S.default.getGuildVersion(null === (t = e.guild) || void 0 === t ? void 0 : t.id)
+                }), (0, i.jsx)(C, {
                     ...e
                 })
             }
@@ -197829,14 +197655,9 @@
                 return null == n || null == l || 0 === l.roles.length ? null : (0, i.jsx)("div", {
                     className: o.container,
                     children: (0, i.jsx)(a.default, {
-                        addButtonClassName: o.addButton,
-                        addButtonIconClassName: o.addButtonIcon,
-                        roleClassName: o.rolePill,
-                        className: o.roles,
                         guild: n,
                         user: t,
-                        userRoles: l.roles,
-                        disableBorderColor: !0
+                        userRoles: l.roles
                     })
                 })
             }
@@ -200074,9 +199895,8 @@
                 u = n("780384"),
                 d = n("570140"),
                 _ = n("607070"),
-                c = n("47760");
-            n("57132");
-            var E = n("541049");
+                c = n("47760"),
+                E = n("541049");
             n("449934");
             var I = n("12647"),
                 T = n("358085"),
@@ -213340,9 +213160,10 @@
                 L = A.DISCOVERY_ALL_CATEGORIES_ID,
                 D = null,
                 v = [],
-                M = (0, T.makeAnalyticsID)();
+                M = (0, T.makeAnalyticsID)(),
+                y = !1;
 
-            function y(e) {
+            function P(e) {
                 return {
                     id: e.id,
                     name: e.name,
@@ -213361,7 +213182,7 @@
                     keywords: e.keywords
                 }
             }
-            class P extends(r = E.default.Store) {
+            class U extends(r = E.default.Store) {
                 initialize() {
                     this.waitFor(f.default)
                 }
@@ -213399,13 +213220,16 @@
                 getLoadId() {
                     return M
                 }
+                getIsReady() {
+                    return y
+                }
             }
-            l = "GuildDiscoveryStore", (o = "displayName") in(a = P) ? Object.defineProperty(a, o, {
+            l = "GuildDiscoveryStore", (o = "displayName") in(a = U) ? Object.defineProperty(a, o, {
                 value: l,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : a[o] = l, t.default = new P(I.default, {
+            }) : a[o] = l, t.default = new U(I.default, {
                 GUILD_DISCOVERY_SEARCH_INIT: function(e) {
                     let {
                         index: t
@@ -213433,7 +213257,7 @@
                         limit: s
                     } = e;
                     p = !1, C = Date.now(), M = (0, T.makeAnalyticsID)();
-                    let a = c().map(t, y);
+                    let a = c().map(t, P);
                     N = {
                         ...N,
                         [n]: {
@@ -213477,7 +213301,7 @@
                         guilds: n
                     } = e;
                     p = !1, C = Date.now();
-                    let i = c().map(n, y);
+                    let i = c().map(n, P);
                     N = {
                         ...N,
                         [t]: {
@@ -213533,7 +213357,7 @@
                         categoryId: l
                     } = e;
                     d()("search" === n, "This action only supports search it seems");
-                    let u = i.map(y);
+                    let u = i.map(P);
                     N = {
                         ...N,
                         [n]: {
@@ -213633,6 +213457,12 @@
                 },
                 GUILD_DISCOVERY_CLEAR_SEEN_GUILDS: function() {
                     v = []
+                },
+                GUILD_DISCOVERY_CATEGORY_FETCH_SUCCESS: function(e) {
+                    let {
+                        forClanDiscovery: t
+                    } = e;
+                    t && (g = A.CategoryId.Clans, L = A.CategoryId.Clans, y = !0)
                 }
             })
         },
@@ -214575,7 +214405,7 @@
             n.r(t), n("47120"), n("789020"), n("724458");
             var i = n("392711"),
                 r = n.n(i);
-            n("57132"), n("140155");
+            n("278147"), n("140155");
             var s = n("398758"),
                 a = n("601070"),
                 o = n("569471"),
@@ -221470,7 +221300,7 @@
                 h = n("430198"),
                 A = n("710845"),
                 m = n("924301"),
-                N = n("57132"),
+                N = n("278147"),
                 O = n("355298"),
                 p = n("869404"),
                 R = n("333984"),
@@ -223353,7 +223183,7 @@
                 f = n("442837"),
                 S = n("433517"),
                 h = n("570140"),
-                A = n("57132"),
+                A = n("278147"),
                 m = n("869735"),
                 N = n("703656"),
                 O = n("131704"),
@@ -223605,7 +223435,7 @@
             var i, r = n("442837"),
                 s = n("570140"),
                 a = n("937111");
-            n("57132");
+            n("278147");
             var o = n("703656"),
                 l = n("314897"),
                 u = n("430824"),
@@ -232236,7 +232066,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0d9e889ef95f4148e2dc2710572bea8eb7ef7611"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "6e25b1c560811f53dad625805ecca3185a7e8cf4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258326,7 +258156,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "281809"
+                                build_number: "282068"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -259926,14 +259756,12 @@
                                 }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_NO_PRICE.format();
                             case L.SubscriptionStatusTypes.UNPAID:
                                 return y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAYMENT.format();
-                            case L.SubscriptionStatusTypes.CANCELED:
-                                return N ? R ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE.format({
-                                    price: E,
-                                    pauseDate: _.currentPeriodEnd
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE_TAX_EXCLUSIVE.format({
-                                    price: E,
-                                    pauseDate: _.currentPeriodEnd
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAUSE_NO_PRICE.format({
+                            case L.SubscriptionStatusTypes.PAUSE_PENDING:
+                                let M = null != _.pauseEndsAt ? d()(_.pauseEndsAt).diff(_.currentPeriodEnd, "days") : null;
+                                return null != M ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING.format({
+                                    pauseDate: _.currentPeriodEnd,
+                                    pauseDuration: M
+                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING_NO_DURATION.format({
                                     pauseDate: _.currentPeriodEnd
                                 });
                             case L.SubscriptionStatusTypes.PAUSED:
@@ -259977,10 +259805,10 @@
                                     num: g
                                 });
                             case L.SubscriptionStatusTypes.PAUSE_PENDING:
-                                let M = null != _.pauseEndsAt ? d()(_.pauseEndsAt).diff(_.currentPeriodEnd, "days") : null;
-                                return null != M ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING.format({
+                                let P = null != _.pauseEndsAt ? d()(_.pauseEndsAt).diff(_.currentPeriodEnd, "days") : null;
+                                return null != P ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING.format({
                                     pauseDate: _.currentPeriodEnd,
-                                    pauseDuration: M
+                                    pauseDuration: P
                                 }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING_NO_DURATION.format({
                                     pauseDate: _.currentPeriodEnd
                                 });
@@ -265471,7 +265299,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "281809", "281809"), 10);
+                let s = parseInt((n = "282068", "282068"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -278371,7 +278199,7 @@
                     let r = i.createReplayConnection("default", (t, r) => {
                         let s = null != i.getCodecCapabilities ? i.getCodecCapabilities : i.getSupportedVideoCodecs;
                         n.on(f.BaseConnectionEvent.Stats, n.handleStats), n.conn.setOnVideoCallback(n.handleVideo), s(t => {
-                            let i = (0, S.getExperimentCodecs)(n.experimentFlags, p.MediaEngineContextTypes.DEFAULT);
+                            let i = (0, S.getExperimentCodecs)(n.experimentFlags);
                             n.codecs = [{
                                 type: "audio",
                                 name: p.Codecs.OPUS,
@@ -278422,7 +278250,7 @@
                             port: l
                         } = s;
                         this.logger.info("Connected with local address ".concat(o, ":").concat(l, " and protocol: ").concat(a)), i(i => {
-                            let r = (0, S.getExperimentCodecs)(this.experimentFlags, this.context);
+                            let r = (0, S.getExperimentCodecs)(this.experimentFlags);
                             this.codecs = [{
                                 type: "audio",
                                 name: p.Codecs.OPUS,
@@ -280838,21 +280666,21 @@
                 }), i
             }
 
-            function a(e, t) {
-                let n = [];
-                return e.has(i.ExperimentFlags.SIGNAL_H265_SUPPORT) ? t === i.MediaEngineContextTypes.STREAM && n.unshift({
+            function a(e) {
+                let t = [];
+                return e.has(i.ExperimentFlags.SIGNAL_H265_SUPPORT) ? t.unshift({
                     name: "H265",
                     encode: !0,
                     decode: !0
-                }) : e.has(i.ExperimentFlags.SIGNAL_H265_DECODE_SUPPORT) && t === i.MediaEngineContextTypes.STREAM && n.unshift({
+                }) : e.has(i.ExperimentFlags.SIGNAL_H265_DECODE_SUPPORT) && t.unshift({
                     name: "H265",
                     encode: !1,
                     decode: !0
-                }), e.has(i.ExperimentFlags.SIGNAL_AV1_SUPPORT) && n.unshift({
+                }), e.has(i.ExperimentFlags.SIGNAL_AV1_SUPPORT) && t.unshift({
                     name: "AV1",
                     encode: !0,
                     decode: !0
-                }), n
+                }), t
             }
 
             function o(e, t) {
@@ -291279,11 +291107,6 @@
                 NITRO_TAX_EXCLUSIVE_PHASE_2_STATES: new Set(["AL", "AR", "AZ", "CO", "CT", "DC", "HI", "IA", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "ND", "NE", "NH", "NJ", "NM", "OK", "RI", "SC", "SD", "UT", "VT", "WV", "WY"])
             }
         },
-        804098: function(e, t, n) {
-            "use strict";
-            var i, r;
-            n.r(t), (r = i || (i = {}))[r.CLASSIC_IA = 0] = "CLASSIC_IA", r[r.DESIGN_IA = 1] = "DESIGN_IA", r[r.DESIGN_TABS_IA = 2] = "DESIGN_TABS_IA", r[r.YOU_BAR_IA = 3] = "YOU_BAR_IA"
-        },
         438954: function(e, t, n) {
             "use strict";
             var i, r;
@@ -291372,7 +291195,7 @@
                 QuestContent: function() {
                     return i
                 }
-            }), (r = i || (i = {}))[r.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", r[r.QUEST_BAR = 1] = "QUEST_BAR", r[r.QUEST_INVENTORY_CARD = 2] = "QUEST_INVENTORY_CARD", r[r.QUESTS_EMBED = 3] = "QUESTS_EMBED", r[r.ACTIVITY_PANEL = 4] = "ACTIVITY_PANEL", r[r.QUEST_LIVE_STREAM = 5] = "QUEST_LIVE_STREAM", r[r.MEMBERS_LIST = 6] = "MEMBERS_LIST"
+            }), (r = i || (i = {}))[r.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", r[r.QUEST_BAR = 1] = "QUEST_BAR", r[r.QUEST_INVENTORY_CARD = 2] = "QUEST_INVENTORY_CARD", r[r.QUESTS_EMBED = 3] = "QUESTS_EMBED", r[r.ACTIVITY_PANEL = 4] = "ACTIVITY_PANEL", r[r.QUEST_LIVE_STREAM = 5] = "QUEST_LIVE_STREAM", r[r.MEMBERS_LIST = 6] = "MEMBERS_LIST", r[r.QUEST_BADGE = 7] = "QUEST_BADGE"
         },
         687522: function(e, t, n) {
             "use strict";
@@ -292213,4 +292036,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.fe8aa7e056c5c69debc1.js.map
+//# sourceMappingURL=97256.1d56031e42b38be19eea.js.map
