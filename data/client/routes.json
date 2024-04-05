@@ -423,7 +423,11 @@
   },
   "GUILD_INSTANT_INVITES": {
     "url": "/guilds/:param/invites",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_WIDGET": {
     "url": "/guilds/:param/widget",
@@ -431,7 +435,12 @@
   },
   "GUILD_VANITY_URL": {
     "url": "/guilds/:param/vanity-url",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_MFA": {
     "url": "/guilds/:param/mfa",
@@ -460,7 +469,11 @@
   },
   "GUILD_DISCOVERY_REQUIREMENTS": {
     "url": "/guilds/:param/discovery-requirements",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "DISCOVERY_GAME": {
     "url": "/discovery/games/:param",
@@ -485,7 +498,13 @@
   },
   "GUILD_EMOJI": {
     "url": "/guilds/:param/emojis/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_AUDIT_LOG": {
     "url": "/guilds/:param/audit-logs",
@@ -505,7 +524,11 @@
   },
   "GUILD_ANALYTICS_MEMBER_INSIGHTS": {
     "url": "/guilds/:param/analytics/member-insights",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW": {
     "url": "/guilds/:param/analytics/growth-activation/overview",
@@ -513,7 +536,11 @@
   },
   "GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION": {
     "url": "/guilds/:param/analytics/growth-activation/retention",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_TOP_READ_CHANNELS": {
     "url": "/guilds/:param/top-read-channels",
@@ -619,7 +646,12 @@
   },
   "GUILD_JOIN_REQUESTS": {
     "url": "/guilds/:param/requests",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "USER_JOIN_REQUEST_GUILDS": {
     "url": "/users/@me/join-request-guilds",
@@ -631,7 +663,15 @@
   },
   "GUILD_MEMBER_REQUEST_TO_JOIN": {
     "url": "/guilds/:param/requests/@me",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "POST",
+      "PUT"
+    ]
   },
   "GUILD_JOIN_REQUEST": {
     "url": "/guilds/:param/requests/:param",
@@ -656,7 +696,10 @@
   },
   "GUILDS": {
     "url": "/guilds",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD": {
     "url": "/guilds/:param",
@@ -670,7 +713,10 @@
   },
   "GUILD_PINCODE": {
     "url": "/guilds/:param/pincode",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "GUILD_DELETE": {
     "url": "/guilds/:param/delete",
@@ -711,7 +757,10 @@
   },
   "THREAD_MEMBER_SETTINGS": {
     "url": "/channels/:param/thread-members/@me/settings",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "ALL_ARCHIVED_THREADS": {
     "url": "/channels/:param/threads/archived/:param",
@@ -1334,7 +1383,11 @@
   },
   "XBOX_HANDOFF": {
     "url": "/consoles/xbox-handoff",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "NOTES": {
     "url": "/users/@me/notes",
@@ -2178,7 +2231,11 @@
   },
   "BILLING_NITRO_AFFINITY": {
     "url": "/users/@me/billing/nitro-affinity",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "BILLING_SUBSCRIPTIONS_PREVIEW": {
     "url": "/users/@me/billing/subscriptions/preview",
@@ -4372,6 +4429,10 @@
       "OPTIONS",
       "POST"
     ]
+  },
+  "QUESTS_CLAIM_REWARD": {
+    "url": "/quests/:param/claim-reward",
+    "allowed_methods": null
   },
   "QUESTS_DISMISS_CONTENT": {
     "url": "/quests/:param/dismissible-content/:param/dismiss",
