@@ -22016,6 +22016,12 @@
                 questControlsTitle: "questControlsTitle__45f0c"
             }
         },
+        959343: function(e) {
+            "use strict";
+            e.exports = {
+                questsCollectibleReward: "questsCollectibleReward__3dca4"
+            }
+        },
         682164: function(e) {
             "use strict";
             e.exports = {
