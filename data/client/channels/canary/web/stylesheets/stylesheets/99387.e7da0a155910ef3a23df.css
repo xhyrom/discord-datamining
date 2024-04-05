@@ -3133,6 +3133,18 @@
     background-image: url(/assets/2931770f80a2c54bb2fc.svg)
 }
 
+.guildBoostingSubscriptionRowPaused__222e6 {
+    background: var(--primary-500)
+}
+
+.guildBoostingSubscriptionRowPaused__222e6 .guildBoostingSubscriptionRowBackground__7373a {
+    background-image: url(/assets/b144dc3791815e7ccf3d.svg)
+}
+
+.guildBoostingSubscriptionRowPaused__222e6 .guildBoostingImage__032ca {
+    background-image: url(/assets/d3bb442f47cc2b5c709e.svg)
+}
+
 .guildBoostingSubscriptionRowCanceled__82ddd {
     background-image: linear-gradient(90deg, #f18623 0%, #f6a12a 56%, #fab930 100%);
     color: var(--black-500)
@@ -4794,14 +4806,28 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .repositioned_dae6e8 .image__51129 {
-    height: 30px;
-    width: 40px
+    width: 88px;
+    height: 68px;
+    margin-right: 16px
 }
 
 .repositioned_dae6e8 .buttons__42a1d {
     position: relative;
     top: 0;
     right: 0
+}
+
+.repositioned_dae6e8 .planInfo_c12dc8 {
+    margin: 10px 0 16px
+}
+
+.repositioned_dae6e8 .planName_f65c33 {
+    height: 28px
+}
+
+.repositioned_dae6e8.tier0_a391a7 .basicWordmark__8ef98 {
+    height: 16px;
+    background-size: contain
 }
 
 .image__51129,
@@ -4880,8 +4906,7 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .tier2__611e8 .image__51129 {
-    background-image: url(/assets/1dcaab49614cf66761f2.svg);
-    height: 68px
+    background-image: url(/assets/1dcaab49614cf66761f2.svg)
 }
 
 .tier2__611e8 .planName_f65c33 {
@@ -4911,11 +4936,11 @@ html .invoiceCancelRow_aa7946 {
 
 .paused__9d72e.banner__79cec {
     border-radius: 4px;
-    background: var(--header-secondary)
+    background: var(--primary-500)
 }
 
 .pausePending_eaf50e.banner__79cec {
-    background: var(--header-secondary)
+    background: var(--primary-500)
 }
 
 .planInfo_c12dc8 {
@@ -4970,6 +4995,10 @@ html .invoiceCancelRow_aa7946 {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column
+}
+
+.headerColumnB__89555 {
+    flex-direction: row
 }
 
 .premiumSubscriptionAccountCredit_a4f9de {
@@ -131714,4 +131743,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.556907a7938d695fb8be.css.map*/
+/*# sourceMappingURL=99387.e7da0a155910ef3a23df.css.map*/
