@@ -1340,7 +1340,11 @@
   },
   "PHONE": {
     "url": "/users/@me/phone",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "PHONE_VERIFY_NO_PASSWORD": {
     "url": "/users/@me/phone/verify",
@@ -1389,7 +1393,11 @@
   },
   "CONNECTIONS": {
     "url": "/users/@me/connections",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CONNECTIONS_AUTHORIZE": {
     "url": "/connections/:param/authorize",
@@ -3247,7 +3255,10 @@
   },
   "SUBMIT_UNAUTHENTICATED_REPORT_MENU": {
     "url": "/reporting/unauthenticated/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "SEND_UNAUTHENTICATED_REPORT_PINCODE": {
     "url": "/reporting/unauthenticated/:param/code",
@@ -4605,7 +4616,10 @@
   },
   "EXPLICIT_MEDIA_SCAN_MULTI_CHANNEL_MESSAGES": {
     "url": "/messages/explicit-media",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "POLL_ANSWERS": {
     "url": "/channels/:param/polls/:param/answers/@me",
