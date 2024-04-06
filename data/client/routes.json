@@ -1341,7 +1341,10 @@
   },
   "PHONE_VERIFY_NO_PASSWORD": {
     "url": "/users/@me/phone/verify",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "PHONE_REVERIFY": {
     "url": "/users/@me/phone/reverify",
