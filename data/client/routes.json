@@ -4394,7 +4394,11 @@
   },
   "REFERRAL_OFFER_ID_RESOLVE": {
     "url": "/referrals/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "APPLICATIONS_SHELF": {
     "url": "/applications/shelf",
