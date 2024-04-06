@@ -36548,7 +36548,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282364", ", Version Hash: ").concat("72e45f2fd0c5a8db87a5b65d8d0ca542fb5c3d23")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282368", ", Version Hash: ").concat("572d36e387aa962b0e6cac5eb9e73c8b17950ff4")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85586,8 +85586,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "282364", "282364"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282364")), t = 0), t
+                let t = parseInt((e = "282368", "282368"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282368")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107611,8 +107611,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "282364",
-                    versionHash: "72e45f2fd0c5a8db87a5b65d8d0ca542fb5c3d23"
+                    buildNumber: "282368",
+                    versionHash: "572d36e387aa962b0e6cac5eb9e73c8b17950ff4"
                 }
             }
             n.r(t), n.d(t, {
@@ -157604,8 +157604,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712384761396",
-                                    build_number: "282364"
+                                    built_at: "1712386942815",
+                                    build_number: "282368"
                                 }
                             },
                             retries: 1
@@ -232148,7 +232148,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "72e45f2fd0c5a8db87a5b65d8d0ca542fb5c3d23"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "572d36e387aa962b0e6cac5eb9e73c8b17950ff4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258240,7 +258240,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "282364"
+                                build_number: "282368"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265383,7 +265383,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "282364", "282364"), 10);
+                let s = parseInt((n = "282368", "282368"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292117,4 +292117,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.a4ef39106bd3ab08fbf9.js.map
+//# sourceMappingURL=97256.75e59565a73cba19273c.js.map
