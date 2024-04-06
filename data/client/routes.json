@@ -1106,7 +1106,10 @@
   },
   "CHANNEL_FOLLOWERS": {
     "url": "/channels/:param/followers",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CHANNEL_FOLLOWER_STATS": {
     "url": "/channels/:param/follower-stats",
@@ -1359,7 +1362,10 @@
   },
   "RESEND_PHONE": {
     "url": "/phone-verifications/resend",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CONNECTIONS": {
     "url": "/users/@me/connections",
@@ -1431,7 +1437,11 @@
   },
   "CONNECTION_ACCESS_TOKEN": {
     "url": "/users/@me/connections/:param/:param/access-token",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CONNECTIONS_CALLBACK_CONTINUATION": {
     "url": "/connections/:param/callback-continuation/:param",
@@ -1912,7 +1922,10 @@
   },
   "MFA_TOTP_ENABLE": {
     "url": "/users/@me/mfa/totp/enable",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MFA_TOTP_ENABLE_VERIFY": {
     "url": "/users/@me/mfa/totp/enable/verify",
