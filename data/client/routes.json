@@ -755,7 +755,14 @@
   },
   "CHANNEL": {
     "url": "/channels/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
   },
   "BROADCAST_CHANNELS": {
     "url": "/channels/broadcast-channels",
@@ -1666,7 +1673,10 @@
   },
   "METRICS": {
     "url": "/metrics",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "METRICS_V2": {
     "url": "/metrics/v2",
@@ -1838,7 +1848,12 @@
   },
   "APPLICATION_ASSETS": {
     "url": "/oauth2/applications/:param/assets",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "APPLICATION_EXTERNAL_ASSETS": {
     "url": "/applications/:param/external-assets",
@@ -3077,7 +3092,11 @@
   },
   "STICKER": {
     "url": "/stickers/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "STICKER_PACKS": {
     "url": "/sticker-packs",
