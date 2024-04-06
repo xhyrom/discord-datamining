@@ -1483,7 +1483,10 @@
   },
   "MENTIONS_MESSAGE_ID": {
     "url": "/users/@me/mentions/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "CAPTCHA": {
     "url": "/users/@me/captcha/verify",
@@ -3543,7 +3546,11 @@
   },
   "DROPS_USER_STATUS": {
     "url": "/drops/@me",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "DROPS_ENROLL_USER": {
     "url": "/drops/enrolled-user",
