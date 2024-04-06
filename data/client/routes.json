@@ -449,7 +449,10 @@
   },
   "GUILD_MFA": {
     "url": "/guilds/:param/mfa",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_PRUNE": {
     "url": "/guilds/:param/prune",
@@ -541,7 +544,11 @@
   },
   "GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW": {
     "url": "/guilds/:param/analytics/growth-activation/overview",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION": {
     "url": "/guilds/:param/analytics/growth-activation/retention",
@@ -1758,7 +1765,11 @@
   },
   "REPORT_OPTIONS": {
     "url": "/report/options",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "INTEGRATIONS": {
     "url": "/integrations",
@@ -3971,7 +3982,7 @@
   },
   "APPLICATION_COMMAND_INDEX_APPLICATION": {
     "url": "/applications/:param/application-command-index",
-    "allowed_methods": null
+    "allowed_methods": []
   },
   "GUILD_COMMANDS_FOR_APPLICATION": {
     "url": "/guilds/:param/application-commands/:param",
