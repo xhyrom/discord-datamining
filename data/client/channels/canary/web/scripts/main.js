@@ -35086,7 +35086,7 @@
                 I = n("374470"),
                 T = n("846519"),
                 f = n("186325"),
-                S = n("425654"),
+                S = n("426945"),
                 A = n("607070"),
                 h = n("153850"),
                 m = n("904478");
@@ -35626,18 +35626,6 @@
             var i, r;
             n.r(t), (r = i || (i = {})).CHANNEL_CHAT_RESIZABLE_SIDEBAR_RESIZE_HANDLE_WIDTH = "8px", r.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE = "485px", r.ACTIVITIES_HOME_WHATS_NEW_TILE_WIDTH = "224px", r.ACTIVITIES_HOME_WHATS_NEW_HORIZONTAL_MARGIN = "10px", r.ACTIVITIES_HOME_HAPPENING_NOW_CARD_WIDTH = "305px", r.ACTIVITIES_HOME_HAPPENING_NOW_GAP = "16px", r.ACTIVITY_BOOKMARK_EMBED_IMAGE_WIDTH = "356px", r.FOLDER_ITEM_ANIMATION_DURATION = "150ms", r.FOLDER_ITEM_GUILD_ICON_SIZE = "48px", r.GUILD_TOOLTIP_ICON_SIZE = "20px", r.GUILD_TOOLTIP_ICON_SIZE_V_2 = "16px", r.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING = "2px", r.FULL_SCREEN_LAYER_ANIMATION_DURATION = "150ms", r.GUILD_SETTINGS_PREMIUM_TIER_STATUS_PROGRESS_WITH_SUBSCRIPTIONS_MARGIN_TOP = "7px", r.STICKERS_CONSTANTS_STICKER_PURCHASE_PACK_PREVIEW_DIMENSIONS = "76px", r.STICKERS_CONSTANTS_STICKER_PURCHASE_PACK_PREVIEW_PADDING = "2px", r.STICKERS_CONSTANTS_STICKER_PURCHASE_PACK_PREVIEW_MARGIN = "0", r.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING = "8px", r.STICKERS_CONSTANTS_STICKER_CATEGORY_ICON_SIZE = "32px", r.STICKERS_CONSTANTS_STICKER_CATEGORY_ICON_MARGIN = "8px", r.STICKERS_CONSTANTS_STICKER_CATEGORY_UNICODE_ICON_SIZE = "24px", r.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_SIZE = "1px", r.STICKERS_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL = "12px", r.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL = "360px", r.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_MEDIUM = "446px", r.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_TOP = "0", r.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_TOP_SEARCH_RESULTS = "8px", r.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_RIGHT = "0", r.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_BOTTOM = "0", r.STICKERS_CONSTANTS_STICKERS_LIST_PADDING_LEFT = "8px", r.STICKERS_CONSTANTS_STICKERS_LIST_DIVIDER_HEIGHT = "30px", r.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_DIMENSIONS = "96px", r.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_DIMENSIONS_SMALL = "80px", r.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_PADDING = "2px", r.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_MARGIN = "12px", r.STICKERS_CONSTANTS_STICKERS_LIST_EMPTY_GUILD_UPSELL_HEIGHT = "54px", r.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_LIST_SECTION_HEADING_HEIGHT = "32px", r.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BAR_GRAPHIC_PRIMARY_DIMENSIONS = "28px", r.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BAR_GRAPHIC_SECONDARY_DIMENSIONS = "32px", r.STICKERS_CONSTANTS_STICKER_DIMENSION = "160px", r.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_MARGIN_SMALL = "4px", r.ASPECT_STABLE_IMAGE_CONTAINER_PADDING = "20px", r.USER_PROFILE_THEMED_CONTAINER_USER_PROFILE_THEMED_PADDING = "4px", r.USER_PROFILE_THEMED_CONTAINER_USER_POPOUT_WIDTH = "340px", r.USER_PROFILE_THEMED_CONTAINER_PROFILE_EFFECTS_USER_POPOUT_WIDTH = "280px", r.USER_BANNER_PREMIUM_BANNER_HEIGHT_POPOUT = "120px", r.USER_BANNER_PREMIUM_BANNER_HEIGHT_NO_BANNER_IMAGE_POPOUT = "90px", r.USER_BANNER_BANNER_HEIGHT_POPOUT = "60px", r.USER_BANNER_PREMIUM_BANNER_HEIGHT_PROFILE = "212px", r.USER_BANNER_BANNER_HEIGHT_PROFILE = "106px", r.USER_BANNER_BANNER_HEIGHT_POMELO = "64px", r.USER_BANNER_PREMIUM_BANNER_HEIGHT_SETTINGS = "100px", r.USER_BANNER_BANNER_HEIGHT_PANEL = "120px", r.USER_BANNER_CANCEL_MODAL_HEIGHT = "42px", r.PREMIUM_GUILD_PROGRESS_BAR_PROGRESS_BAR_WIDTH = "24px", r.PREMIUM_GUILD_PROGRESS_BAR_TIER_MARKER_SIZE = "16px", r.ACTIVITY_SHELF_MODAL_MODAL_PADDING = "80px", r.ACTIVITY_SHELF_MODAL_MODAL_WIDTH = "496px", r.ACTIVITY_SHELF_MODAL_MODAL_MIN_WIDTH = "496px", r.ACTIVITY_SHELF_MODAL_MODAL_MAX_WIDTH = "1024px", r.ACTIVITY_SHELF_MODAL_MODAL_MAX_HEIGHT = "720px", r.ACTIVITY_SHELF_MODAL_MODAL_ART_HEIGHT = "64px", r.ACTIVITY_SHELF_ITEM_ACTIVITY_ITEM_HEIGHT = "230px", r.ACTIVITY_SHELF_ITEM_LARGE_ACTIVITY_ITEM_HEIGHT = "143px", r.ACTIVITY_SHELF_SLIDE_ACTIVITY_DIRECTORY_SHELF_GRID_GAP = "16px", r.LIVE_INDICATOR_BORDER_RADIUS = "16px", r.GUILD_PRODUCT_DOWNLOAD_MODAL_HEADER_IMAGE_WIDTH = "119px", r.FOLDER_ITEM_GUILD_ICON_MARGIN = "8px", r.EMBEDDED_APPLICATION_INVITE_IMAGE_WIDTH_LARGE = "288px", r.EMBEDDED_APPLICATION_INVITE_IMAGE_WIDTH_SMALL = "225px", r.EMBEDDED_APPLICATION_INVITE_CONTENT_WIDTH = "576px", r.GUILD_ROLE_SUBSCRIPTION_CARD_BASIC_INFO_TIER_IMAGE_SIZE = "80px", r.GUILD_ROLE_SUBSCRIPTION_CARD_BASIC_INFO_TIER_IMAGE_SIZE_MOBILE = "48px", r.APPLICATION_DIRECTORY_CONTENT_MAX_WIDTH = "1024px", r.GUILD_COUNT_SMALL_ICON_SIZE = "16px", r.GUILD_COUNT_LARGE_ICON_SIZE = "20px", r.GUILD_BOOSTING_SIDEBAR_DISPLAY_CONDITIONAL_BOTTOM_MARGIN = "12px", r.USER_PREMIUM_GUILD_SUBSCRIPTION_EASTER_EGG_SIZE = "196px", r.APPLICATION_SUBSCRIPTION_CARD_LISTING_IMAGE_SIZE = "40px", r.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_HORIZONTAL = "4px", r.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT = "8px", r.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_SIZE = "32px", r.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_ICON_MARGIN_VERICAL = "8px", r.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_SIZE = "24px", r.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_MARGIN_VERTICAL = "2px", r.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_PADDING = "4px", r.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE = "1px", r.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL = "12px", r.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL = "4px", r.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE = "24px", r.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_TOP = "0", r.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_RIGHT = "0", r.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_BOTTOM = "8px", r.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_SEARCH_RESULTS_PADDING_TOP = "8px", r.EMOJI_PICKER_CONSTANTS_EMOJI_SECTION_MARGIN_BOTTOM = "12px", r.EMOJI_PICKER_CONSTANTS_EMOJI_PREMIUM_UPSELL_HEIGHT = "54px", r.EMOJI_PICKER_CONSTANTS_EMOJI_PREMIUM_UPSELL_MARGIN_TOP = "16px", r.VOICE_WIDGET_TOP_MARGIN = "var(--custom-widget-bar-height) + calc(2 * var(--custom-widget-bar-padding))", r.EXPRESSION_SUGGESTIONS_CONTAINER_PADDING = "8px", r.EXPRESSION_SUGGESTIONS_STICKER_SUGGESTION_SIZE = "48px", r.EXPRESSION_SUGGESTIONS_STICKER_SUGGESTION_MARGIN = "8px", r.COLLECTION_GALLERY_MEDIA_BREAKPOINT = "1024px", r.COLLECTION_GALLERY_COLUMN_CARD_HEIGHT = "600px", r.COLLECTION_GALLERY_ROW_CARD_HEIGHT = "283px", r.COLLECTION_LIST_CARD_GAP = "16px", r.GUILD_SETTINGS_ROLE_SUBSCRIPTIONS_OVERVIEW_SETTINGS_MAX_WIDTH = "520px", r.IMPORT_BENEFITS_MODAL_ROLE_ICON_SIZE = "40px", r.ROLE_ICON_UPLOADER_ICON_SIZE = "24px", r.GRADIENT_PROGRESS_NOTCH_WIDTH = "8px", r.GAME_LIST_ROW_MIN_HEIGHT = "62px", r.GAME_LIST_LINKED_TO_GLOW_DURATION = "2000ms", r.INTERACTION_IFRAME_MODAL_MODAL_MIN_WIDTH = "320px", r.INTERACTION_IFRAME_MODAL_MODAL_MAX_WIDTH = "1280px", r.INTERACTION_IFRAME_MODAL_MODAL_MARGIN = "80px", r.INTERACTION_IFRAME_MODAL_MODAL_HEADER_HEIGHT = "52px", r.APPLICATION_DIRECTORY_PROFILE_ICON_SIZE = "122px", t.default = i
         },
-        425654: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                TOOLTIP_SPRING_CONFIG: function() {
-                    return i
-                }
-            });
-            let i = {
-                tension: 2400,
-                friction: 52
-            }
-        },
         780384: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -35682,6 +35670,18 @@
             var a = n("801787"),
                 o = n("663002"),
                 l = n("950104")
+        },
+        426945: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                TOOLTIP_SPRING_CONFIG: function() {
+                    return i
+                }
+            });
+            let i = {
+                tension: 2400,
+                friction: 52
+            }
         },
         180035: function(e, t, n) {
             "use strict";
@@ -36548,7 +36548,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282317", ", Version Hash: ").concat("295fc92ac6121e3950469a1ef228ff262e8514cd")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282332", ", Version Hash: ").concat("0c15437a3e079738c061dc82f5a869c77580688f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85566,8 +85566,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "282317", "282317"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282317")), t = 0), t
+                let t = parseInt((e = "282332", "282332"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282332")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103308,14 +103308,13 @@
                     let t = {};
                     null != e && (!0 === e.noCache && (t.no_cache = !0), !0 === e.includeUnpublished && (t.include_unpublished = !0), null != e.countryCode && (t.country_code = e.countryCode), null !== e.paymentGateway && (t.payment_gateway = e.paymentGateway));
                     try {
-                        let n = await i.HTTP.get({
+                        let e = await i.HTTP.get({
                             url: d.Endpoints.COLLECTIBLES_CATEGORIES,
                             query: t
                         });
                         r.default.dispatch({
                             type: "COLLECTIBLES_CATEGORIES_FETCH_SUCCESS",
-                            categories: n.body.map(o.default.fromServer),
-                            fetchedCountryCode: null == e ? void 0 : e.countryCode
+                            categories: e.body.map(o.default.fromServer)
                         })
                     } catch (e) {
                         throw r.default.dispatch({
@@ -103406,27 +103405,27 @@
         },
         597688: function(e, t, n) {
             "use strict";
-            let i, r, s;
+            let i, r;
             n.r(t), n("47120");
-            var a, o, l, u, d = n("392711"),
-                _ = n("442837"),
-                c = n("570140"),
-                E = n("706454"),
-                I = n("884697");
-            let T = new Map,
-                f = new Map,
+            var s, a, o, l, u = n("392711"),
+                d = n("442837"),
+                _ = n("570140"),
+                c = n("706454"),
+                E = n("884697");
+            let I = new Map,
+                T = new Map,
+                f = I,
                 S = T,
-                A = f,
-                h = !1;
-            let m = () => {
-                S = T, A = f, r = void 0, h = !1, i = void 0
+                A = !1;
+            let h = () => {
+                f = I, S = T, r = void 0, A = !1, i = void 0
             };
-            class N extends(a = _.default.Store) {
+            class m extends(s = d.default.Store) {
                 initialize() {
-                    this.syncWith([E.default], m)
+                    this.syncWith([c.default], h)
                 }
                 get isFetching() {
-                    return h
+                    return A
                 }
                 get error() {
                     return i
@@ -103434,58 +103433,54 @@
                 get lastFetched() {
                     return r
                 }
-                get fetchedCountryCode() {
-                    return s
-                }
                 get categories() {
-                    return S
+                    return f
                 }
                 get products() {
-                    return A
+                    return S
                 }
                 getCategory(e) {
-                    return null != e ? S.get(e) : void 0
+                    return null != e ? f.get(e) : void 0
                 }
                 getProduct(e) {
-                    return null != e ? A.get(e) : void 0
+                    return null != e ? S.get(e) : void 0
                 }
                 getCategoryForProduct(e) {
                     let t = this.getProduct(e);
                     return this.getCategory(null == t ? void 0 : t.categorySkuId)
                 }
             }
-            u = "CollectiblesCategoryStore", (l = "displayName") in(o = N) ? Object.defineProperty(o, l, {
-                value: u,
+            l = "CollectiblesCategoryStore", (o = "displayName") in(a = m) ? Object.defineProperty(a, o, {
+                value: l,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : o[l] = u, t.default = new N(c.default, {
+            }) : a[o] = l, t.default = new m(_.default, {
                 COLLECTIBLES_CATEGORIES_FETCH: e => {
-                    h = !0, i = void 0
+                    A = !0, i = void 0
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: e => {
-                    var t;
-                    0 === e.categories.length ? (S = T, A = f) : !(0, d.isEqual)([...S.values()], e.categories) && (S = new Map(e.categories.map(e => [e.skuId, e])), A = new Map((0, I.getProductsFromCategories)(S).map(e => [e.skuId, e]))), r = Date.now(), h = !1, i = void 0, s = null !== (t = e.fetchedCountryCode) && void 0 !== t ? t : s
+                    0 === e.categories.length ? (f = I, S = T) : !(0, u.isEqual)([...f.values()], e.categories) && (f = new Map(e.categories.map(e => [e.skuId, e])), S = new Map((0, E.getProductsFromCategories)(f).map(e => [e.skuId, e]))), r = Date.now(), A = !1, i = void 0
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_FAILURE: e => {
                     let {
                         error: t
                     } = e;
-                    S = T, A = f, h = !1, i = t
+                    f = I, S = T, A = !1, i = t
                 },
                 COLLECTIBLES_PRODUCT_FETCH: e => {
-                    h = !0, i = void 0
+                    A = !0, i = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_SUCCESS: e => {
-                    A.set(e.product.skuId, e.product), h = !1, i = void 0
+                    S.set(e.product.skuId, e.product), A = !1, i = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_FAILURE: e => {
                     let {
                         error: t
                     } = e;
-                    h = !1, i = t
+                    A = !1, i = t
                 },
-                LOGOUT: m
+                LOGOUT: h
             })
         },
         574709: function(e, t, n) {
@@ -107596,8 +107591,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "282317",
-                    versionHash: "295fc92ac6121e3950469a1ef228ff262e8514cd"
+                    buildNumber: "282332",
+                    versionHash: "0c15437a3e079738c061dc82f5a869c77580688f"
                 }
             }
             n.r(t), n.d(t, {
@@ -157589,8 +157584,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712361754848",
-                                    build_number: "282317"
+                                    built_at: "1712365894015",
+                                    build_number: "282332"
                                 }
                             },
                             retries: 1
@@ -232133,7 +232128,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "295fc92ac6121e3950469a1ef228ff262e8514cd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "0c15437a3e079738c061dc82f5a869c77580688f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258225,7 +258220,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "282317"
+                                build_number: "282332"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265368,7 +265363,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "282317", "282317"), 10);
+                let s = parseInt((n = "282332", "282332"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292097,4 +292092,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.d834dc9fb49171dccb16.js.map
+//# sourceMappingURL=97256.e52a11609e783cefb088.js.map
