@@ -811,7 +811,10 @@
   },
   "FORUM_POSTS": {
     "url": "/channels/:param/post-data",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "VOICE_CHANNEL_NOTIFICATIONS": {
     "url": "/channels/:param/voice-push",
@@ -1665,7 +1668,12 @@
   },
   "GUILD_TEMPLATE": {
     "url": "/guilds/:param/templates/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
   },
   "TRACK": {
     "url": "/science",
@@ -4178,7 +4186,11 @@
   },
   "AUTH_SESSIONS": {
     "url": "/auth/sessions",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "AUTH_SESSION_NOTIFICATIONS_DEBUG": {
     "url": "/auth/sessions/debug/notifications",
