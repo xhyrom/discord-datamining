@@ -50756,8 +50756,8 @@ html .progress__00e29 {
     display: flex;
     justify-content: center;
     font-family: var(--font-display);
-    font-size: 12px;
-    line-height: 16px;
+    font-size: .75rem;
+    line-height: 1rem;
     text-transform: uppercase
 }
 
@@ -131908,4 +131908,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.56cf96a0c6bacaa92511.css.map*/
+/*# sourceMappingURL=99387.a1c09e7456008758003b.css.map*/
