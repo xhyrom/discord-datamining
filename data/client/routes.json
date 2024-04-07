@@ -2697,7 +2697,11 @@
   },
   "STORE_PUBLISHED_LISTINGS_SKU": {
     "url": "/store/published-listings/skus/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "STORE_PUBLISHED_LISTINGS_SKU_JOIN_GUILD": {
     "url": "/store/published-listings/skus/:param/guild/join",
