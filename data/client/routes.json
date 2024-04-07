@@ -853,7 +853,11 @@
   },
   "COLLECTIBLES_CATEGORIES": {
     "url": "/collectibles-categories",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "COLLECTIBLES_CLAIM": {
     "url": "/users/@me/claim-premium-collectibles-product",
@@ -4714,7 +4718,10 @@
   },
   "QUESTS_CLAIM_REWARD": {
     "url": "/quests/:param/claim-reward",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "QUESTS_DISMISS_CONTENT": {
     "url": "/quests/:param/dismissible-content/:param/dismiss",
