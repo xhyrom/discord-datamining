@@ -516,7 +516,11 @@
   },
   "GUILD_AUDIT_LOG": {
     "url": "/guilds/:param/audit-logs",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_ANALYTICS_OVERVIEW": {
     "url": "/guilds/:param/analytics/overview",
@@ -853,7 +857,10 @@
   },
   "COLLECTIBLES_CLAIM": {
     "url": "/users/@me/claim-premium-collectibles-product",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "COLLECTIBLES_PURCHASES": {
     "url": "/users/@me/collectibles-purchases",
