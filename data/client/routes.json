@@ -1772,7 +1772,10 @@
   },
   "RESET_PASSWORD": {
     "url": "/auth/reset",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "REGIONS": {
     "url": "/guilds/:param/regions",
