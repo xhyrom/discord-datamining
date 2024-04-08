@@ -674,7 +674,11 @@
   },
   "GUILD_JOIN_REQUEST_BY_ID": {
     "url": "/join-requests/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_JOIN_REQUESTS": {
     "url": "/guilds/:param/requests",
