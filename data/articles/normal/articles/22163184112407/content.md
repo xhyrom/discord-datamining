@@ -17,9 +17,9 @@
     </li>
     <li><a href="https://support.discord.com/hc/en-us/articles/22163184112407#h_01HSED5BPEDH4YYFVVCXQ2NKZ1">Frequently Asked Questions</a></li>
 </ul>
-<h3 id="h_01HSED5BPE69HJMFWDK6Y6X8BZ"><span style="color: #434343;" data-darkreader-inline-color="">This is currently an experiment and available to a select number of servers.</span></h3>
+<h3 id="h_01HSED5BPE69HJMFWDK6Y6X8BZ"><span style="color: #434343;" data-darkreader-inline-color="">This is currently rolling out to all users over the next couple of days.</span></h3>
 <h1 id="h_01HSED5BPEA50Y83ZT0A73ZPNC">What is Polls?</h1>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22214929953303" width="538" height="337"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22650929905047" alt="Fq6tdR6A.gif" width="575" height="575"></p>
 <p>Polls is a feature on Discord with which you can create a poll to have your friends and community members vote on anything! You can add up to 10 answers for people to vote on in each poll. This can help decide the next game you’ll play together for game night, if pineapple belongs on pizza, and so much more!</p>
 <h1 id="h_01HSED5BPEP8237V9AR1RJMJWQ">How do I create a Poll?</h1>
 <h3 id="h_01HSED5BPEKCGB8DZY5P06EQ7S"><span style="color: #434343;" data-darkreader-inline-color="">A poll can have up to 10 answers listed.</span></h3>
@@ -79,4 +79,5 @@
 <p>A: No, it is not possible to create a poll using a slash command at this time.</p>
 <p><strong>Q: Can poll choices be modified at any time?</strong></p>
 <p>A: As long as the poll is still open, you can modify your poll choice. </p>
-<p><strong>Q: Can poll results be saved and/or deleted?</strong>A: While polls behave like messages in terms of being deleted, there is no separate function to archive polls at this time. You can pin a poll to <strong>Pinned Messages.</strong></p>
+<p><strong>Q: Can poll results be saved and/or deleted?</strong></p>
+<p>A: While polls behave like messages in terms of being deleted, there is no separate function to archive polls at this time. You can pin a poll to <strong>Pinned Messages.</strong></p>
