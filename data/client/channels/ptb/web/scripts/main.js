@@ -36548,7 +36548,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282648", ", Version Hash: ").concat("7c0262f15b929e11294bdbeda3751d1348422e24")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282647", ", Version Hash: ").concat("e630c7617a1e557018e5a1abd9641143ab854772")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -44209,6 +44209,11 @@
                 GUILD_BOOSTING_USER_SETTINGS_PERK_CUSTOM_ROLE_ICONS: "custom role icons",
                 GUILD_BOOSTING_USER_SETTINGS_PERK_VANITY_URL: "a custom invite link",
                 GUILD_BOOSTING_USER_SETTINGS_BOOST_ANY_GUILD_CTA: "Don't see the server you're looking for? $[Boost any server here.](boostAnyGuildHook)",
+                GUILD_BOOSTING_DISABLED_FOR_PAUSED_SUBSCRIPTION: "Boosting is not available while your Nitro subscription is paused!",
+                GUILD_BOOSTING_DISABLED_FOR_PAUSED_SUBSCRIPTION_WITH_LINK: "You cannot boost while your subscription is paused. [Manage subscription]({onClick})",
+                GUILD_BOOSTING_DISABLED_HEADER: "You cannot manage Server Boosts while your Nitro subscription is paused.",
+                GUILD_BOOSTING_TRANSFER_DISABLED_FOR_PAUSED_SUBSCRIPTION: "Transfer is unavailable while your Nitro Subscription is paused",
+                GUILD_BOOSTING_CANCEL_DISABLED_FOR_PAUSED_SUBSCRIPTION: "You cannot cancel your boost while your Nitro Subscription is paused",
                 MONTHLY_GUILD_SUBSCRIPTION: "Monthly Subscription (!!{planName}!!)",
                 MULTI_MONTHS_GUILD_SUBSCRIPTION: "{intervalCount} Month Subscription (!!{planName}!!)",
                 YEARLY_GUILD_SUBSCRIPTION: "Yearly Subscription (!!{planName}!!)",
@@ -44312,7 +44317,7 @@
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION: "You have premium chat, **{num, number}x** Boosts, and a Boost discount for **!!{price}!!** (Pending Cancellation)",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION_TAX_EXCLUSIVE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount for **!!{price}!!** + applicable taxes (Pending Cancellation)",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION_NO_PRICE: "You have premium chat, **{num, number}x** Boosts, and a Boost discount (Pending Cancellation)",
-                PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING: "Your subscription will pause on **{pauseDate, date, medium}** for **{pauseDuration} days**. You can cancel pause now to avoid interruption to your Nitro subscription",
+                PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING: "Your subscription will pause on **{pauseDate, date, medium}** for **{pauseDuration} days**. You can cancel the pause anytime to avoid interruption to your Nitro subscription",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING_NO_DURATION: "Your subscription will pause on **{pauseDate, date, medium}**. You can cancel pause now to avoid interruption to your Nitro subscription",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED: "You have paused your Nitro subscription until **{resumeDate, date, medium}**. Once your subscription resumes you will regain access to Nitro",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD: "Your premium chat, **{num, number}x** Boosts, and a Boost discount subscription for **!!{price}!!** is **on hold**",
@@ -44638,6 +44643,7 @@
                 PREMIUM_GUILD_PERKS_MODAL_BASE_PERKS: "Boosted server perks include —",
                 PREMIUM_GUILD_PERKS_MODAL_PREVIOUS_PERKS: "Boosted servers get everything previous, and —",
                 PREMIUM_GUILD_PERKS_MODAL_MANAGE_YOUR_SUBSCRIPTIONS: "Manage Boosts",
+                PREMIUM_GUILD_PERKS_MODAL_VIEW_YOUR_SUBSCRIPTIONS: "View Boosts",
                 PREMIUM_GUILD_PERKS_MODAL_BUTTON_UPGRADE_TO_PREMIUM_EXTERNAL_ERROR: "We don't currently support upgrades to Nitro for subscriptions through !!{paymentGatewayName}!!. You can cancel your subscription through [!!{paymentGatewayName}!!'s Subscription Management]({subscriptionManagementLink}), but the subscription will remain active until its expiration date.",
                 PREMIUM_GUILD_PERKS_MODAL_BUTTON_SUBSCRIBE_THIS_SERVER: "Boost This Server",
                 PREMIUM_GUILD_PERKS_MODAL_SUBSCRIBER_PERKS_HEADER: "Get cool rewards for becoming a Booster! ",
@@ -85617,8 +85623,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "282648", "282648"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282648")), t = 0), t
+                let t = parseInt((e = "282647", "282647"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282647")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107642,8 +107648,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "282648",
-                    versionHash: "7c0262f15b929e11294bdbeda3751d1348422e24"
+                    buildNumber: "282647",
+                    versionHash: "e630c7617a1e557018e5a1abd9641143ab854772"
                 }
             }
             n.r(t), n.d(t, {
@@ -157635,8 +157641,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712608342952",
-                                    build_number: "282648"
+                                    built_at: "1712608299546",
+                                    build_number: "282647"
                                 }
                             },
                             retries: 1
@@ -232179,7 +232185,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "7c0262f15b929e11294bdbeda3751d1348422e24"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e630c7617a1e557018e5a1abd9641143ab854772"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258271,7 +258277,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "282648"
+                                build_number: "282647"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265414,7 +265420,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "282648", "282648"), 10);
+                let s = parseInt((n = "282647", "282647"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292148,4 +292154,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.85f67e563bbace39e167.js.map
+//# sourceMappingURL=97256.631d6c2d4e739dea9b51.js.map
