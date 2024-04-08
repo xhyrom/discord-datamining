@@ -588,7 +588,11 @@
   },
   "TOP_EMOJIS_FOR_GUILD": {
     "url": "/guilds/:param/top-emojis",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_SPLASH": {
     "url": "/guilds/:param/splashes/:param.jpg",
