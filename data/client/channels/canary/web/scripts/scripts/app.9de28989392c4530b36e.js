@@ -10183,6 +10183,7 @@
                 applicationIcon: "applicationIcon_f57490",
                 applicationIconContainer: "applicationIconContainer__307a7",
                 centerContent: "centerContent_ef4f7e",
+                clanGdmConsentCheckbox: "clanGdmConsentCheckbox_dee1f9",
                 closeButton: "closeButton_d09def",
                 confirmation: "confirmation__6b811",
                 confirmationButton: "confirmationButton__62279",
