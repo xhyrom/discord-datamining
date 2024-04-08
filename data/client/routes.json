@@ -1614,7 +1614,10 @@
   },
   "REGISTER": {
     "url": "/auth/register",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "REGISTER_PHONE": {
     "url": "/auth/register/phone",
