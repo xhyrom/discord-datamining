@@ -2614,7 +2614,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-24e6ff313e4dc7d79967aa54b26e4f03091ccefa",
+                    release: "discord_web-496b9054a7faee3cbe71ffe20acc810073664bfe",
                     beforeSend: _ => {
                         var E, e;
                         return !(null != (E = _).exception && null != E.exception.values && E.exception.values.every(_ => null == _.stacktrace || null != _.stacktrace.frames && 1 === _.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || a.some(_ => window.navigator.appVersion.toLowerCase().indexOf(_) >= 0)) && !R() && !("Aborted" === (e = _).message || "cancel captcha" === e.message) && t() ? _ : null
@@ -2632,7 +2632,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), I.setTag("buildNumber", (_ = "282708", "282708")), I.setTag("builtAt", String("1712613139773"));
+                }), I.setTag("buildNumber", (_ = "282721", "282721")), I.setTag("builtAt", String("1712614011275"));
                 let E = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != E && "object" == typeof E)
                     for (let _ in E) I.setTag(_, E[_]);
@@ -10765,7 +10765,7 @@
                 GREY6: "#4f545c",
                 GREY7: "#1c242b",
                 GREY9: "#202226"
-            }), (f = I || (I = {})).PRIMARY_NORMAL = "ggsans-Normal, NotoSans-Normal", f.PRIMARY_MEDIUM = "ggsans-Medium, NotoSans-Medium", f.PRIMARY_SEMIBOLD = "ggsans-Semibold, NotoSans-Semibold", f.PRIMARY_BOLD = "ggsans-Bold, NotoSans-Bold", f.DISPLAY_NORMAL = "ggsans-Normal, NotoSans-Normal", f.DISPLAY_MEDIUM = "ggsans-Medium, NotoSans-Medium", f.DISPLAY_SEMIBOLD = "ggsans-Semibold, NotoSans-Semibold", f.DISPLAY_BOLD = "ggsans-Bold, NotoSans-Bold", f.DISPLAY_EXTRABOLD = "ggsans-ExtraBold, NotoSans-ExtraBold", f.CODE_SEMIBOLD = "SourceCodePro-Semibold", (h = o || (o = {})).ONLINE = "online", h.OFFLINE = "offline", h.IDLE = "idle", h.DND = "dnd", h.INVISIBLE = "invisible", h.STREAMING = "streaming", h.UNKNOWN = "unknown", (y = a || (a = {})).CHILLING = "chilling", y.GAMING = "gaming", y.FOCUSING = "focusing", y.BRB = "brb", y.EATING = "eating", y.IN_TRANSIT = "in-transit", y.WATCHING = "watching", y.CUSTOM = "custom", (Y = R || (R = {})).DESKTOP = "desktop", Y.WEB = "web", Y.MOBILE = "mobile", Y.UNKNOWN = "unknown";
+            }), (f = I || (I = {})).PRIMARY_NORMAL = "ggsans-Normal, NotoSans-Normal", f.PRIMARY_MEDIUM = "ggsans-Medium, NotoSans-Medium", f.PRIMARY_SEMIBOLD = "ggsans-Semibold, NotoSans-Semibold", f.PRIMARY_BOLD = "ggsans-Bold, NotoSans-Bold", f.DISPLAY_NORMAL = "ggsans-Normal, NotoSans-Normal", f.DISPLAY_MEDIUM = "ggsans-Medium, NotoSans-Medium", f.DISPLAY_SEMIBOLD = "ggsans-Semibold, NotoSans-Semibold", f.DISPLAY_BOLD = "ggsans-Bold, NotoSans-Bold", f.DISPLAY_EXTRABOLD = "ggsans-ExtraBold, NotoSans-ExtraBold", f.CODE_NORMAL = "ggmono-Normal, SourceCodePro-Normal", f.CODE_BOLD = "ggmono-Bold, SourceCodePro-Bold", (h = o || (o = {})).ONLINE = "online", h.OFFLINE = "offline", h.IDLE = "idle", h.DND = "dnd", h.INVISIBLE = "invisible", h.STREAMING = "streaming", h.UNKNOWN = "unknown", (y = a || (a = {})).CHILLING = "chilling", y.GAMING = "gaming", y.FOCUSING = "focusing", y.BRB = "brb", y.EATING = "eating", y.IN_TRANSIT = "in-transit", y.WATCHING = "watching", y.CUSTOM = "custom", (Y = R || (R = {})).DESKTOP = "desktop", Y.WEB = "web", Y.MOBILE = "mobile", Y.UNKNOWN = "unknown";
             let _D = "6Lef5iQTAAAAAKeIvIY-DeexoO3gj7ryl9rLMEnn";
             (w = t || (t = {})).IDENTIFY = "identify", w.EMAIL = "email", w.CONNECTIONS = "connections", w.GUILDS = "guilds", w.GUILDS_JOIN = "guilds.join", w.GUILDS_MEMBERS_READ = "guilds.members.read", w.GDM_JOIN = "gdm.join", w.RPC = "rpc", w.RPC_NOTIFICATIONS_READ = "rpc.notifications.read", w.RPC_VOICE_READ = "rpc.voice.read", w.RPC_VOICE_WRITE = "rpc.voice.write", w.RPC_VIDEO_READ = "rpc.video.read", w.RPC_VIDEO_WRITE = "rpc.video.write", w.RPC_SCREENSHARE_READ = "rpc.screenshare.read", w.RPC_SCREENSHARE_WRITE = "rpc.screenshare.write", w.RPC_ACTIVITIES_WRITE = "rpc.activities.write", w.BOT = "bot", w.WEBHOOK_INCOMING = "webhook.incoming", w.MESSAGES_READ = "messages.read", w.APPLICATIONS_BUILDS_UPLOAD = "applications.builds.upload", w.APPLICATIONS_BUILDS_READ = "applications.builds.read", w.APPLICATIONS_COMMANDS = "applications.commands", w.APPLICATIONS_COMMANDS_UPDATE = "applications.commands.update", w.APPLICATIONS_COMMANDS_PERMISSIONS_UPDATE = "applications.commands.permissions.update", w.APPLICATIONS_STORE_UPDATE = "applications.store.update", w.APPLICATIONS_ENTITLEMENTS = "applications.entitlements", w.ACTIVITIES_READ = "activities.read", w.ACTIVITIES_WRITE = "activities.write", w.RELATIONSHIPS_READ = "relationships.read", w.VOICE = "voice", w.DM_CHANNELS_READ = "dm_channels.read", w.ROLE_CONNECTIONS_WRITE = "role_connections.write", (b = A || (A = {}))[b.STRIPE = 1] = "STRIPE", b[b.BRAINTREE = 2] = "BRAINTREE", b[b.APPLE = 3] = "APPLE", b[b.GOOGLE = 4] = "GOOGLE", b[b.ADYEN = 5] = "ADYEN", b[b.APPLE_PARTNER = 6] = "APPLE_PARTNER";
             let _S = Object.freeze({
@@ -14029,4 +14029,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84471.e285a549b65b83b74e82.js.map
+//# sourceMappingURL=84471.980d05459477276952a2.js.map

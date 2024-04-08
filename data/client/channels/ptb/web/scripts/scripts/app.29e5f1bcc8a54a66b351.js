@@ -25496,6 +25496,7 @@
                 select: "select_b6196c",
                 text: "text_efccc5",
                 textGrid: "textGrid_c0492f",
+                textSample: "textSample_c3007c",
                 theme: "theme__94206",
                 toolbar: "toolbar_c64020"
             }
