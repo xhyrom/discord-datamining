@@ -36548,7 +36548,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282635", ", Version Hash: ").concat("4bd5bb0f6bf81c52cbc843d5cce074348c227b5f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282639", ", Version Hash: ").concat("63234a037edd28c02764670a90b48d786fbf180d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55200,7 +55200,14 @@
                 CLAN_SETUP_INTRO_INFO: "Your server is exclusively invited to be listed on Discovery, where other Valorant players can find and join your server.",
                 CLAN_SETUP_INTRO_CTA: "Become a Clan",
                 CLAN_SETUP_MODAL_SAVE_AND_QUIT: "Save & Exit",
-                CLAN_SETUP_STEPS: "Step {currentStep} of {totalSteps}",
+                CLAN_SETUP_FOUNDATIONAL_INTRO_TITLE: "Tell us who you want to recruit for your Clan.",
+                CLAN_SETUP_FOUNDATIONAL_INTRO_SUBTITLE: "In this step, we will ask you about what games you play and your playstyle, so we can help you recruit similar people.",
+                CLAN_SETUP_PERSONALITY_INTRO_TITLE: "Tell us about your Clan's personality.",
+                CLAN_SETUP_PERSONALITY_INTRO_SUBTITLE: "In this step, we will ask you about what traits and characteristics that define your Clan, and set up a time where people can hang out together.",
+                CLAN_SETUP_IDENTITY_INTRO_TITLE: "Let's customize your Clan's identity.",
+                CLAN_SETUP_IDENTITY_INTRO_SUBTITLE: "In this step, we will be creating your Clan's brand by setting up your Clan's tag, badge, colors, and more!",
+                CLAN_SETUP_APPLICATION_INTRO_TITLE: "Set up Clan Applications to keep your Clan safe.",
+                CLAN_SETUP_APPLICATION_INTRO_SUBTITLE: "One last step! We will help you create rules and application questions to screen applicants and filter out bad actors.",
                 CLAN_SETUP_GAMES_TITLE: "What games does your Clan play?",
                 CLAN_SETUP_GAMES_SUBTITLE: "You can always add more games later.",
                 CLAN_SETUP_GAMES_SEARCH_PLACEHOLDER: "Search for a game...",
@@ -85610,8 +85617,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "282635", "282635"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282635")), t = 0), t
+                let t = parseInt((e = "282639", "282639"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282639")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107635,8 +107642,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "282635",
-                    versionHash: "4bd5bb0f6bf81c52cbc843d5cce074348c227b5f"
+                    buildNumber: "282639",
+                    versionHash: "63234a037edd28c02764670a90b48d786fbf180d"
                 }
             }
             n.r(t), n.d(t, {
@@ -157628,8 +157635,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712606946967",
-                                    build_number: "282635"
+                                    built_at: "1712607536808",
+                                    build_number: "282639"
                                 }
                             },
                             retries: 1
@@ -232172,7 +232179,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "4bd5bb0f6bf81c52cbc843d5cce074348c227b5f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "63234a037edd28c02764670a90b48d786fbf180d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258264,7 +258271,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "282635"
+                                build_number: "282639"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265407,7 +265414,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "282635", "282635"), 10);
+                let s = parseInt((n = "282639", "282639"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292141,4 +292148,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97256.8e8f9d85f3018a00ce8c.js.map
+//# sourceMappingURL=97256.f4861ca560ce408d1644.js.map
