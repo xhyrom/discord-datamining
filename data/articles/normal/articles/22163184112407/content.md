@@ -68,7 +68,7 @@
 <p><strong>Q: Can polls be started by any user?</strong></p>
 <p>A: Any user with permissions to <strong>View Channe</strong>l can vote in a channel. Any user with <strong>Send Messages</strong> permissions will be able to create polls in a text channel.</p>
 <p><strong>Q: Where can I start a poll? </strong></p>
-<p>A: A poll can take place in a text channel, direct message, or group message.  The only text channels you cannot start a poll in are announcement channels. </p>
+<p>A: A poll can take place in a text channel, direct message, group message, or announcement channel.  </p>
 <p><strong>Q: How can I delete a poll?</strong></p>
 <p>A: The only way to delete a poll is to delete the entire message (by tapping on the “<strong>...</strong>” next to a message). Once the poll has been deleted, it can not be restored.</p>
 <p><strong>Q: Can I vote anonymously in a poll? </strong></p>
