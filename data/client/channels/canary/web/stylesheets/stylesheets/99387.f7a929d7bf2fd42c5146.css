@@ -57555,7 +57555,9 @@ html .progress__00e29 {
     background-color: var(--interactive-muted)
 }
 
-.progressStepFilled_c8bf61 {
+.progressStepFill__47c59 {
+    height: 100%;
+    border-radius: var(--radius-sm);
     background-color: var(--brand-500)
 }
 
@@ -57790,6 +57792,11 @@ html .progress__00e29 {
     max-width: 800px
 }
 
+.stepNum_b5f2f3,
+.introTitle__6a50e {
+    margin-bottom: 24px
+}
+
 .title__20916 {
     margin-bottom: 12px
 }
@@ -57949,6 +57956,12 @@ html .progress__00e29 {
 
 .flex__7aeec {
     display: flex
+}
+
+.twoColumn_b751a1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center
 }
 
 .upsellContainer__6d38c {
@@ -131913,4 +131926,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.271de4438d6ca580a5f3.css.map*/
+/*# sourceMappingURL=99387.f7a929d7bf2fd42c5146.css.map*/
