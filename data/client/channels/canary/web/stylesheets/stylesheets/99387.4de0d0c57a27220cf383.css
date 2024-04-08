@@ -131149,8 +131149,8 @@ button {
 
 code {
     font-family: var(--font-code);
-    font-size: 14px;
-    line-height: 16px
+    font-size: .875rem;
+    line-height: 1rem
 }
 
 :root {
@@ -131948,4 +131948,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.fe22a0e234fe4a0c201d.css.map*/
+/*# sourceMappingURL=99387.4de0d0c57a27220cf383.css.map*/
