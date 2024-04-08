@@ -12,7 +12,7 @@
     <li><a href="https://support.discord.com/hc/en-us/articles/17828465914263#h_01HBVVFMX68ZV93YHYX7P3JMSK">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01HBVVFMX6PNR9Z7QH216V2WBN">What Are Profile Effects?</h1>
-<p>Profile effects are unique and snazzy animated effects that play on your profile when someone views your profile. In the <a href="https://support.discord.com/hc/en-us/articles/17162747936663" target="_blank" rel="noopener noreferrer">Shop</a>, you can buy and collect a variety of effects that’ll let you personalize and decorate your Discord profile and wow your profile admirers! Collected effects are yours to keep and apply to your profile whenever you want. </p>
+<p>Profile effects are unique and snazzy animated effects that play on your profile when someone views your profile. In the <a href="https://support.discord.com/hc/en-us/articles/17162747936663" target="_blank" rel="noopener noreferrer">Shop</a>, you can buy and collect a variety of effects that’ll let you personalize and decorate your Discord profile and wow your profile admirers! Purchased effects are yours to keep and apply to your profile whenever you want. </p>
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-134b8ff5-7fff-83e9-55c9-3743ded79262"><img src="https://support.discord.com/hc/article_attachments/21751010489367" width="345" height="447"></span></p>
 <h1 id="h_01HBVVFMX6SF10DY6CCGC7Y9MH">How Can I Collect A Profile Effect?</h1>
 <p id="docs-internal-guid-ffba87a3-7fff-3d31-13f6-e61f83885a48">You can head over to the Shop to preview and purchase profile effects! </p>
