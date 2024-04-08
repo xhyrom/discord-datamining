@@ -36556,7 +36556,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282742", ", Version Hash: ").concat("105ccafe84a1b081c0aeedb2519262cdd6ce71bb")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282745", ", Version Hash: ").concat("f14255b55f37c7a343d9be377c9de6160ec743e9")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -52630,6 +52630,48 @@
                 DISMISS_BUTTON_TEXT: "I'm not interested in this",
                 SHARE_NITRO_VIEW_ON_DESKTOP: "Open this DM on desktop to start your free trial.",
                 USER_TRIAL_OFFER_ATTRIBUTION_BANNER: "{username} has shared a free Nitro trial with you.",
+                REFERRAL_PROGRAM_SHARE_NITRO_WITH_FRIENDS: "Share Nitro with Friends",
+                REFERRAL_PROGRAM_PROGRESS_BAR_SUBHEADER: "Share a 2-week trial with up to {numFriends} friends and give the gift of Discord without limits! [Learn more]({helpdeskArticle}).",
+                REFERRAL_PROGRAM_SELECT_FRIENDS: "Select Friends",
+                REFERRAL_PROGRAM_PROGRESS_BAR_SUBHEADER_AT_LEAST_ONE_SHARED: "We have lift off! You can share trials with {numFriends} more {numFriends, plural, one {friend} other {friends}}. [Learn more]({helpdeskArticle}).",
+                REFERRAL_PROGRAM_PROGRESS_BAR_HEADER_ALL_SHARED: "Trials Shared. Nice work.",
+                REFERRAL_PROGRAM_PROGRESS_BAR_SUBHEADER_ALL_SHARED: "You get {numReferrals} trials to share every {numMonths} months. Maybe it’s time to see who’s on your nice list. [Learn more]({helpdeskArticle}).",
+                REFERRAL_PROGRAM_REMIND_FRIENDS: "Remind Friends",
+                REFERRAL_PROGRAM_PROGRESS_BAR_HEADER_COOL_DOWN: "More Trials Incoming",
+                REFERRAL_PROGRAM_PROGRESS_BAR_SUBHEADER_ALL_SHARED: "More trials are on the way dear! You get {numReferrals} trials to share every {numMonths} months. [Learn more]({helpdeskArticle}).",
+                REFERRAL_PROGRAM_FRIEND_SELECT_HEADER: "Select up to {numReferrals} friends to share a Nitro trial with. The trial will be sent in a direct message.",
+                REFERRAL_PROGRAM_SHARE_TRIAL: "Share Trial",
+                REFERRAL_PROGRAM_FRIEND_SELECT_COMPLETE_HEADER: "Lift Off! You Shared {numReferrals} {numReferrals, plural, one {Trial} other {Trials}}",
+                REFERRAL_PROGRAM_FRIEND_SELECT_COMPLETE_TOOL_TOP: "See trial in DMs",
+                REFERRAL_PROGRAM_FRIEND_SELECT_COMPLETE_SUBHEADER: "They have {days} days to accept the trial before it is returned to you. [Learn more]({helpdeskArticle}).",
+                REFERRAL_PROGRAM_HOME_BADGE_SUBHEADER: "You’ve got {numReferrals} trials to share with friends!",
+                REFERRAL_PROGRAM_FRIEND_SELECT_RESENT_HEADER: "Did your Nitro trial get lost in conversation? No worries! Resend a previously shared trial to your friends below.",
+                REFERRAL_PROGRAM_FRIEND_SELECT_RESENT_COMPLETE_HEADER: "Reminder Sent!",
+                REFERRAL_PROGRAM_PROGRESS_BAR_UNSENT_TOOLTIP: "Either you have more trials to send or this trial offer has expired. You can resend or share with another friend.",
+                REFERRAL_PROGRAM_NO_ELIGIBLE_FRIENDS_HEADER: "No Eligible Friends",
+                REFERRAL_PROGRAM_NO_ELIGIBLE_FRIENDS_SUBHEADER: "Unfortunately none of your friends are eligible for a Nitro trial at the moment. Check back later to see if their luck changes! [Learn more]({helpdeskArticle}).",
+                REFERRAL_PROGRAM_CLOSE: "Close",
+                REFERRAL_PROGRAM_FRIEND_SELECT_ERROR_HEADER: "Well This is Embarrassing",
+                REFERRAL_PROGRAM_FRIEND_SELECT_ERROR_SUBHEADER: "We can’t find your friends right now. Maybe they are having a snack break. Try again later!",
+                REFERRAL_PROGRAM_EMBED_RECIPIENT_INELIGIBLE_HEADER: "Looks like {userName} already has Nitro.",
+                REFERRAL_PROGRAM_EMBED_RECIPIENT_INELIGIBLE_SUBHEADER: "{userName} can share it with someone else.",
+                REFERRAL_PROGRAM_EMBED_TIRAL_EXPIRED: "This trial offer expired! Maybe {userName} can resend it.",
+                REFERRAL_PROGRAM_MOBILE_EMBED_HEADER_1: "{userName} SHARED A NITRO TRIAL WITH YOU!",
+                REFERRAL_PROGRAM_MOBILE_EMBED_SUBHEADER_1: "{userName}, you got a 2 week trial of Nitro.",
+                REFERRAL_PROGRAM_MOBILE_EMBED_BODY_1: "Open this DM on desktop to start your trial.",
+                REFERRAL_PROGRAM_MOBILE_EMBED_HEADER_2: "{userName} gave {receiverName} a 2-week Nitro trial!",
+                REFERRAL_PROGRAM_MOBILE_EMBED_SUBHEADER_DAYS_2: "Expires in {numDays} {numDays, plural, one {day} other {days}}",
+                REFERRAL_PROGRAM_MOBILE_EMBED_SUBHEADER_HOURS_2: "Expires in {numHours} {numHours, plural, one {hour} other {hours}}",
+                REFERRAL_PROGRAM_MOBILE_EMBED_BODY: "Open this DM on desktop to start your trial.",
+                REFERRAL_PROGRAM_SUBSCRIBER_HOMER_BANNER: "{username} has shared a 2-week Nitro trial with you!",
+                REFERRAL_PROGRAM_TWO_WEEK_TRIAL: "2-WEEK TRIAL",
+                REFERRAL_PROGRAM_START_TRIAL: "Start Trial",
+                REFERRAL_PRORAM_PAYMENT_MODAL_BANNER: "{userName} has shared a Nitro trial with you",
+                REFERRAL_PROGRAM_PAYMENT_MODAL_COPY: "Your 2-week trial will end on {endDate}. Choose a plan for after your 2-week trial ends.",
+                REFERRAL_PROGRAM_EMBED_HEADER: "{senderUserName} gave {recipientUserName} a Nitro trial!",
+                REFERRAL_PROGRAM_EMBED_BODY: "Start your 2-week trial of Nitro to try out custom profiles, animated emoji, and more!",
+                REFERRAL_PROGRAM_SELECT_FRIENDS_NO_RESULTS_HEADER: "Hmm... No Results",
+                REFERRAL_PROGRAM_SELCT_FRIENDS_NO_RESULTS_SUBHEADER: "Congratulations, you’ve found the lonely cactus. Try a different search to find your friends.",
                 EMOJI_CATEGORY_TOP_GUILD_EMOJI: "Top Emoji in !!{guildName}!!",
                 TOP_GUILD_EMOJI_BADGE: "Popular",
                 NEWLY_ADDED_GUILD_EMOJI_BADGE: "Newly Added",
@@ -85637,8 +85679,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "282742", "282742"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282742")), t = 0), t
+                let t = parseInt((e = "282745", "282745"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282745")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107662,8 +107704,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "282742",
-                    versionHash: "105ccafe84a1b081c0aeedb2519262cdd6ce71bb"
+                    buildNumber: "282745",
+                    versionHash: "f14255b55f37c7a343d9be377c9de6160ec743e9"
                 }
             }
             n.r(t), n.d(t, {
@@ -157659,8 +157701,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712616318714",
-                                    build_number: "282742"
+                                    built_at: "1712616652940",
+                                    build_number: "282745"
                                 }
                             },
                             retries: 1
@@ -232203,7 +232245,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "105ccafe84a1b081c0aeedb2519262cdd6ce71bb"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f14255b55f37c7a343d9be377c9de6160ec743e9"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258295,7 +258337,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "282742"
+                                build_number: "282745"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265438,7 +265480,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "282742", "282742"), 10);
+                let s = parseInt((n = "282745", "282745"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292172,4 +292214,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59511.01dcbe752980849e2531.js.map
+//# sourceMappingURL=59511.c33a5fe1cea6a4685857.js.map
