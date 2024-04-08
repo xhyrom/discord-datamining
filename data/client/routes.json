@@ -4323,7 +4323,11 @@
   },
   "CONSOLES_DEVICES": {
     "url": "/consoles/:param/devices",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CONSOLES_DEVICES_COMMANDS": {
     "url": "/consoles/:param/devices/:param/commands",
