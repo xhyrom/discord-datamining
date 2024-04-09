@@ -57256,7 +57256,8 @@ html .progress__00e29 {
 
 .name_e8e549 {
     z-index: 1;
-    margin-right: auto
+    margin-right: auto;
+    color: inherit
 }
 
 .favoritesIcon_d3c4b9 {
@@ -90390,6 +90391,14 @@ html .tabBadge_ff691d {
     margin-bottom: 0
 }
 
+.container__0612a {
+    margin: 12px
+}
+
+.formElement__4968e {
+    margin-bottom: 12px
+}
+
 .icon_e34fe3 {
     width: 12px;
     height: 12px;
@@ -95167,6 +95176,35 @@ div:has(>div>.container__8ab05) {
     padding-bottom: 0
 }
 
+.container_ef5900 {
+    position: relative;
+    margin-top: 8px
+}
+
+.gradientGlow_dea0cb {
+    transition: all.4s ease-in-out;
+    filter: drop-shadow(0 0 10px rgba(184, 69, 193, .50196))
+}
+
+.content__9d1c8 {
+    background: var(--background-tertiary);
+    position: relative;
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.animation_a6f573 {
+    width: 32px;
+    height: 32px
+}
+
+.message__0ec5e {
+    margin-left: 4px
+}
+
 .upsellBanner__673bb {
     display: flex;
     justify-content: space-between;
@@ -95270,8 +95308,20 @@ div:has(>div>.container__8ab05) {
     color: var(--white-500)
 }
 
+.selectorButton_ea0609.selectorButtonPerkDemo__4a1f5:hover {
+    background: var(--custom-premium-colors-premium-gradient-tier-2)
+}
+
+.selectorButton_ea0609.selectorButtonPerkDemo__4a1f5:hover .selectorText__8286b {
+    color: var(--white-500)
+}
+
 .selectorButtonSelected__707fb {
     background-color: var(--brand-experiment)
+}
+
+.selectorButtonSelectedPerkDemo__7f18f {
+    background: var(--custom-premium-colors-premium-gradient-tier-2)
 }
 
 .selectorText__8286b {
@@ -131537,4 +131587,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.96144082f34006aafc2c.css.map*/
+/*# sourceMappingURL=99387.cd0cad2f97cdd7be386f.css.map*/
