@@ -55445,7 +55445,9 @@ html .progress__00e29 {
 }
 
 .content__6bf34 {
-    display: flex
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 .clickable__17b58 {
@@ -132026,4 +132028,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1326fad431ef268fcdff.css.map*/
+/*# sourceMappingURL=99387.f035aa587a603605e77a.css.map*/
