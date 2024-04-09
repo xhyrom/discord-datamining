@@ -1,12 +1,12 @@
 <p id="docs-internal-guid-fac764f6-7fff-80ee-9ed8-2ab03ea12016">While using Discord, you might have encountered a “Verification Required” message, which is one of our safety efforts for our platform. We want users to feel secure using Discord, and we invest in features that help protect you from scams or abuse. Requiring that you verify your email address or phone number helps prove you are not a robot and helps keep spammers out.</p>
 <p id="docs-internal-guid-b1798927-7fff-aff0-2ced-fe32490d855b"><span class="wysiwyg-font-size-large"><strong>What this article covers: <br></strong></span></p>
 <ul>
-    <li style="font-weight: 400;" aria-level="1"><a href="#h_01G3CTDAACPA8E9BRFWCQNSBY4" target="_self"><span style="font-weight: 400;">Why do I need to verify my account?</span></a></li>
-    <li style="font-weight: 400;" aria-level="1"><a href="#h_01G3CTDK98QB8PPW9Q8V9ZK5AM" target="_self"><span style="font-weight: 400;">How does Discord use my phone number?</span></a></li>
+    <li style="font-weight: 400;" aria-level="1"><a href="#h_01G3CTDAACPA8E9BRFWCQNSBY4" target="_self">Why do I need to verify my account?</a></li>
+    <li style="font-weight: 400;" aria-level="1"><a href="#h_01G3CTDK98QB8PPW9Q8V9ZK5AM" target="_self">How does Discord use my phone number?</a></li>
     <li style="font-weight: 400;" aria-level="1"><a href="#docs-internal-guid-9cd047ed-7fff-8e25-e1e6-0cf5644e2255" target="_self">How to verify my account</a></li>
     <li style="font-weight: 400;" aria-level="1"><a href="#docs-internal-guid-87f6cde3-7fff-adec-3c4b-a9462532ff3a" target="_self">Having trouble verifying?</a></li>
 </ul>
-<h1 id="h_01G3CTDAACPA8E9BRFWCQNSBY4"><span style="font-weight: 400;">Why do I need to verify my account?</span></h1>
+<h1 id="h_01G3CTDAACPA8E9BRFWCQNSBY4"><strong>Why do I need to verify my account?</strong></h1>
 <p><span style="font-weight: 400;"><span id="docs-internal-guid-f011b72a-7fff-174e-1422-b7ab811f6414">The “Verification Required” message is part of our verification system to help protect both you and the communities on Discord. This means sometimes our systems detect activity that calls for extra information. This verification not only serves to help confirm to Discord that you are more likely to not be spam but also provides additional barriers of defense against malicious activity on your account.</span></span></p>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/12476192844183" alt="veri_captcha.png"></span></p>
 <p id="docs-internal-guid-2646e7f4-7fff-3272-941a-68915faf910a">So you might see this message because you want to join a server that<a href="https://support.discord.com/hc/en-us/articles/216679607" target="_blank" rel="noopener noreferrer"> requires its members</a> to have verified accounts. Some other reasons might be that you:</p>
@@ -31,45 +31,49 @@
 <p id="docs-internal-guid-14a92830-7fff-3ff9-c2a0-1626f3fca89f">3. Wait for the SMS to be sent to your mobile phone and follow the instructions to input the verification code. This should complete the phone verification process!</p>
 <h1 id="docs-internal-guid-87f6cde3-7fff-adec-3c4b-a9462532ff3a"><strong>Having trouble verifying? </strong></h1>
 <p id="docs-internal-guid-aa5cbc5b-7fff-de0d-25eb-5ef358d58e9a">When going through the motions, you may run into the following errors below: </p>
-<table style="border-collapse: collapse; width: 100%; height: 407px;" border="1">
+<table style="border-collapse: collapse;
+height: 461px;
+width: 98.9993%;">
     <tbody>
         <tr style="height: 34px;">
-            <td class="wysiwyg-text-align-center" style="width: 50%; height: 34px;"><strong><span id="docs-internal-guid-510428d7-7fff-1849-1726-2e27f494ab79">Possible Errors</span></strong></td>
-            <td style="width: 50%; height: 34px;">
-                <p class="wysiwyg-text-align-center"><strong>Steps to take</strong></p>
+            <td class="wysiwyg-text-align-center" style="width: 35.1111%; height: 34px;">
+                <h4 id="h_01HV2M6EB3FAYNJEWBAWZ5S908"><span class="wysiwyg-font-size-large"><strong><span id="docs-internal-guid-510428d7-7fff-1849-1726-2e27f494ab79">Possible Errors</span></strong></span></h4>
+            </td>
+            <td style="width: 39.5145%; height: 34px;">
+                <h4 id="h_01HV2M6EB3HBHRH1AJNK6MAXN6" class="wysiwyg-text-align-center"><span class="wysiwyg-font-size-large"><strong>Steps to Take</strong></span></h4>
             </td>
         </tr>
         <tr style="height: 148px;">
-            <td style="width: 50%; height: 148px;">
+            <td style="width: 35.1111%; height: 148px;">
                 <p id="docs-internal-guid-1f3e4f25-7fff-36ea-78c3-c824caebb225"><strong>Invalid phone number:</strong> the phone number was not entered correctly or is unusable<strong>.</strong></p>
             </td>
-            <td style="width: 50%; height: 148px;">
+            <td style="width: 39.5145%; height: 148px;">
                 <p id="docs-internal-guid-27fbe1be-7fff-0ce0-c064-babaacc0b45c">Be sure to use a valid phone number. </p>
                 <p>VOIP, Burner, or Landline numbers cannot be used. </p>
                 <p>Then, try re-entering the phone number you wish to verify. If you are still running into any issues, contact our support team <a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer">here</a>.</p>
             </td>
         </tr>
         <tr style="height: 79px;">
-            <td style="width: 50%; height: 79px;">
+            <td style="width: 35.1111%; height: 79px;">
                 <strong><span id="docs-internal-guid-182685f2-7fff-786b-ff6e-ee07e68599a6">Rate Limit/Recently Used: </span></strong>the phone number was recently used and is currently in a timeout period.
             </td>
-            <td style="width: 50%; height: 79px;">
+            <td style="width: 39.5145%; height: 79px;">
                 <p id="docs-internal-guid-d856b87e-7fff-30f5-c70f-313f08ba3281">Please wait 24-48 hrs before verifying your phone number once more. </p>
             </td>
         </tr>
         <tr style="height: 79px;">
-            <td style="width: 50%; height: 79px;">
+            <td style="width: 35.1111%; height: 79px;">
                 <strong><span id="docs-internal-guid-e2ddbc8d-7fff-97ff-bff5-15c8aea9d552">Existing account:</span></strong> the phone number may be associated with an accidental Discord account.
             </td>
-            <td style="width: 50%; height: 79px;">
+            <td style="width: 39.5145%; height: 79px;">
                 <p id="docs-internal-guid-5c8316d6-7fff-4d2e-01d0-39fb31420ae4">If you’re running into this error, you can refer to our <strong>How to Remove a Phone Number</strong> article for further steps. </p>
             </td>
         </tr>
         <tr style="height: 67px;">
-            <td style="width: 50%; height: 67px;">
+            <td style="width: 35.1111%; height: 67px;">
                 <strong><span id="docs-internal-guid-0d3de095-7fff-af91-b8c7-e492bd9d5f86">Captcha: </span></strong>this is an additional security step that you may run into while verifying
             </td>
-            <td style="width: 50%; height: 67px;">
+            <td style="width: 39.5145%; height: 67px;">
                 <p id="docs-internal-guid-31811107-7fff-5e99-7967-c62c3f09fe69">If you’re running into issues while completing the captcha, please reach out to our support team <a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer">here</a>.</p>
             </td>
         </tr>
