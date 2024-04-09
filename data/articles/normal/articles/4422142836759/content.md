@@ -1,4 +1,4 @@
-<p class="wysiwyg-text-align-left">If you’ve ever stayed up way too late playing games and watching videos with people in Voice…well, you’re probably about to again. Now announcing Activities: a way to enjoy shared experiences with friends, such as games and media, on Discord itself.</p>
+<p class="wysiwyg-text-align-left">If you’ve ever stayed up way too late playing games and watching videos with people in Voice…well, you’re probably about to again. <span id="docs-internal-guid-18fef00b-7fff-8577-020d-e05affa760e9">Activities are a way to enjoy shared experiences with friends, such as games and media, on Discord itself.</span></p>
 <p class="wysiwyg-text-align-center"><br><iframe src="//www.youtube-nocookie.com/embed/POMIDMK6WfM" width="560" height="315" frameborder="0" allowfullscreen=""></iframe></p>
 <p id="docs-internal-guid-b3e2622f-7fff-7f50-563e-ba14ad76795b"><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
@@ -46,42 +46,57 @@
     <li><a href="https://discord.gg/dhgEgZkeJx" target="_blank" rel="noopener noreferrer">Chef Showdown</a></li>
 </ol>
 <h1 id="h_01GSX5FCYNMF5PCGKNNA6XFW29">How do I start an Activity?</h1>
-<h3 id="h_01HRSVG98A0VTBC080VB83EWTE" class="wysiwyg-text-align-center">
-    <span style="color: #434343;">Activities are available in some server text channels as an experiment that is currently only available to a limited number of servers. Users in eligible servers can start in-text activities from the mobile app using the button shown below:<br></span><strong><img src="https://support.discord.com/hc/article_attachments/22015519434007" width="81" height="80"><br></strong><strong><span style="color: #666666;">Activity Launcher icon as shown in mobile app.</span></strong>
-</h3>
 <h2 id="docs-internal-guid-67d1f612-7fff-856e-6a7d-09e2618d9a7f">On Desktop/Browser</h2>
-<p>1. Navigate to your intended server and join a voice channel, or start a voice call in a direct message (DM) or group direct message (GDM).</p>
-<p>2. To start an Activity, all you need to do is press on the Activity Launcher rocket ship icon.</p>
+<p>1. Navigate to your intended server and join a voice channel, or start a voice call in a direct message (DM) or group chat.</p>
+<p>2. To start an Activity, all you need to do is press on the <strong>Activity Launcher rocket ship icon</strong>.</p>
 <p class="wysiwyg-text-align-center"><img style="height: 294px; width: 508px;" src="https://support.discord.com/hc/article_attachments/14555054376215"></p>
-<h4 id="h_01HASQ4N82009GW5YAF492DCFB" class="wysiwyg-text-align-center"><span style="color: #666666;" data-darkreader-inline-color="">The Activity Rocket ship icon appears on the bottom left-hand side, or the one that appears when in focused view, while in a voice channel.</span></h4>
+<h4 id="h_01HASQ4N82009GW5YAF492DCFB" class="wysiwyg-text-align-center"><span style="color: #666666;" data-darkreader-inline-color="">The <strong>Activity Rocket ship icon</strong> appears on the bottom left-hand side, or the one that appears when in focused view, while in a voice channel.</span></h4>
 <h4 id="h_01HASQ4N82WR7AW5JSGVM6ZKA7" class="wysiwyg-text-align-center"><span style="color: #666666;" data-darkreader-inline-color=""><img style="height: 427px; width: 624px;" src="https://support.discord.com/hc/article_attachments/14555070582679"></span></h4>
-<h4 id="h_01HASQ4N824W93A2E57WBBWYPW" class="wysiwyg-text-align-center"><span style="color: #666666;" data-darkreader-inline-color="">While in a DM or GDM the Activity Launcher rocket ship icon appears while the DM or GDM call is open.</span></h4>
+<h4 id="h_01HASQ4N824W93A2E57WBBWYPW" class="wysiwyg-text-align-center"><span style="color: #666666;" data-darkreader-inline-color="">While in a DM or group chat the <strong>Activity Launcher rocket ship icon</strong> appears while the DM or group chat call is open.</span></h4>
 <p>3. Select the Activity you want to play from the Activity Shelf menu. You will need to provide authorization if you’ve never played your chosen Activity before.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120275039511" alt="desktop-activity-shelf.png"></p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120275175831" alt="desktop-authorize-activity-window.png"></p>
-<p>4. (Optional) Have your friends join the Activity. To play, they need to be in the same Voice Channel as you and join the Activity you started. <span id="docs-internal-guid-5e8f48f2-7fff-e06a-4a49-652c4c37a84f">Each person joining the game will need to provide authorization if they’ve never played the chosen Activity before.</span></p>
+<p>4. (Optional) Have your friends join the Activity. To play, they need to be in the same voice channel as you and join the Activity you started. <span id="docs-internal-guid-5e8f48f2-7fff-e06a-4a49-652c4c37a84f">Each person joining the game will need to provide authorization if they’ve never played the chosen Activity before.</span></p>
+<p id="docs-internal-guid-d281650e-7fff-380f-0741-7b731a29e9ba"><span class="wysiwyg-font-size-large"><strong>To start an Activity in a server text channel </strong></span></p>
+<p id="docs-internal-guid-57f1c218-7fff-da45-6188-fbd54b9f639e">1. Press on the <strong>plus</strong> [<img src="https://support.discord.com/hc/article_attachments/22692374394391" width="20" height="20">] icon on the left side of the chat bar and select <strong>Start Activity</strong>. </p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-f6c6f604-7fff-ef24-32b2-3fc23e01005e"><img src="https://support.discord.com/hc/article_attachments/22692328975383" width="624" height="444"></span></p>
+<p id="docs-internal-guid-b7fe4ad0-7fff-06a2-33cf-0319a883280b">2. Select the Activity you want to play from the Activity Shelf menu. You will need to provide authorization if you’ve never played your chosen Activity before.</p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-81782da2-7fff-35c8-82cb-322e8455f2aa"><img src="https://support.discord.com/hc/article_attachments/22692328979479" width="622" height="366"></span></p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-066c9ab5-7fff-516b-07ba-a326f7376a77"><img src="https://support.discord.com/hc/article_attachments/22692328980759" width="617" height="388"></span></p>
+<p id="docs-internal-guid-5dec07f0-7fff-b0b1-e6bb-7fdc39705b30">3. (Optional) Have your friends join the Activity. For Activities launched in text channels, the Activity will appear in the chat. Other users can participate by selecting Join, but they will need to be in the same voice channel or DM as you and join the activity you started. Each person joining the game will need to provide authorization if they’ve never played the chosen Activity before.</p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-0f866146-7fff-0ae9-646a-b82ee1e7e66a"><img src="https://support.discord.com/hc/article_attachments/22692328984599" width="624" height="444"></span></p>
 <h2 id="h_01GSX69W2WZT0BK92VH98H8R5D"><span id="docs-internal-guid-5413d2d3-7fff-f501-4277-0afe4e18d5e4">On Mobile</span></h2>
-<p>1. Navigate to your intended server and join a voice channel, or start a voice call in a direct message (DM) or group direct message (GDM).</p>
-<p>2. To start an Activity, all you need to do is press on the Activity Launcher rocket ship icon</p>
-<p><br><br></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580024039959" width="321" height="692"></p>
-<h4 id="h_01HGXDC1ND0054W93GCNCPE8EK"><span style="color: #666666;" data-darkreader-inline-color="">The Activity Rocket ship icon appears on the bottom left-hand side, or the one that appears when in focused view, while in a voice channel.</span></h4>
-<p> </p>
-<h4 id="h_01HGXDC1NDNCJXG56TF9YVX0RQ" class="wysiwyg-text-align-center"><span style="color: #666666;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/19580024050583" width="354" height="766"></span></h4>
-<h4 id="h_01HGXDC1ND5DACGGSZ2RK3Z5MG"><span style="color: #666666;" data-darkreader-inline-color="">While in a DM or GDM the Activity Launcher rocket ship icon appears while the DM or GDM call is open.</span></h4>
-<p>3. Select the Activity you want to play from the Activity Shelf menu. You will need to provide authorization if you’ve never played your chosen Activity before.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580024057879" width="335" height="725"></p>
-<p>4. (Optional) Have your friends join the Activity. To play, they need to be in the same Voice Channel as you and join the Activity you started. Each person joining the game will need to provide authorization if they’ve never played the chosen Activity before.</p>
+<p id="docs-internal-guid-41c7309f-7fff-7950-0435-16e9062a133e"><span class="wysiwyg-font-size-large"><strong>To start an Activity in a Voice Call</strong></span></p>
+<p id="docs-internal-guid-500a8352-7fff-b499-85de-8b7c7db0fdce">1. Navigate to your intended server and join a voice channel, or start a voice call in a DM or group chat.</p>
+<p>2. To start an Activity, all you need to do is press on the <strong>Activity Launcher rocket ship icon</strong>.</p>
+<p class="wysiwyg-text-align-center"><span class="wysiwyg-font-size-large"><strong><span id="docs-internal-guid-521326df-7fff-7a3f-cea7-eaf5ba0d8f19"><img src="https://support.discord.com/hc/article_attachments/22692328988823" width="252" height="545"></span></strong></span></p>
+<h4 id="docs-internal-guid-e0a1fcdd-7fff-b102-a1c4-90fe01dfe4a1" class="wysiwyg-text-align-center">
+    <span style="color: #666666;">The </span><strong><span style="color: #666666;">Activity Rocket ship icon</span></strong><span style="color: #666666;"> appears on the bottom left-hand side, or the one that appears when in focused view, while in a voice channel.</span>
+</h4>
+<p class="wysiwyg-text-align-center"><span style="color: #666666;"><span id="docs-internal-guid-32a8e769-7fff-0abf-28e9-89000c1175a2" style="color: #666666;"><img src="https://support.discord.com/hc/article_attachments/22692374431895" width="264" height="571"></span></span></p>
+<h4 id="docs-internal-guid-5286b937-7fff-314a-32aa-c3bd62bed721" class="wysiwyg-text-align-center">
+    <span style="color: #666666;">While in a DM or group chat the </span><strong><span style="color: #666666;">Activity Launcher rocket ship icon</span></strong><span style="color: #666666;"> appears while the DM or group chat call is open.</span>
+</h4>
+<p id="docs-internal-guid-43dfbd0f-7fff-6d5a-0559-48e6354b6561">3. Select the Activity you want to play from the Activity Shelf menu. You will need to provide authorization if you’ve never played your chosen Activity before.</p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-54e58416-7fff-9724-599c-2d4b2376a655"><img src="https://support.discord.com/hc/article_attachments/22692328996119" width="253" height="548"></span></p>
+<p id="docs-internal-guid-2c81151f-7fff-abeb-53bd-b5d2aaefa0f8">4. (Optional) Have your friends join the Activity. To play, they need to be in the same Voice Channel as you and join the Activity you started. Each person joining the game will need to provide authorization if they’ve never played the chosen Activity before.</p>
+<p id="docs-internal-guid-6199e62d-7fff-e29a-cdeb-37af5095632d"><span class="wysiwyg-font-size-large"><strong>To start an Activity in a server text channel</strong></span></p>
+<p id="docs-internal-guid-45f04097-7fff-07b8-aeaa-d6cafb3768ed">1. Navigate to a channel where you would like to launch the Activity, and select the <strong>shapes</strong> icon to the left of the chat bar.  </p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-da4a9a1f-7fff-2eea-2a14-5b414341ca3c"><img src="https://support.discord.com/hc/article_attachments/22692374440215" width="261" height="533"></span></p>
+<p id="docs-internal-guid-ecb22c27-7fff-4334-d4e6-b6cb41651d50">2. Then, select the Activity you would like to launch. </p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-1e8d0202-7fff-8202-7b71-5dddf6d7c426"><img src="https://support.discord.com/hc/article_attachments/22692329005975" width="277" height="567"></span></p>
+<p id="docs-internal-guid-4373f479-7fff-92e7-3a3d-35765f31c410">3. Once selected, the Activity will appear in the chat. Other users can choose to participate by pressing <strong>Join.</strong> </p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-c19486ee-7fff-bdc1-bb7d-9329a96ab9af"><img src="https://support.discord.com/hc/article_attachments/22692329010839" width="238" height="517"></span></p>
 <h2 id="h_01HRSVGETCZQYBD75WWQMP4Q0E"><strong><span class="wysiwyg-font-size-large">My mobile device gets really warm while playing Activities. How do I fix it?</span></strong></h2>
 <p>If your mobile device becomes warm to the touch while you’re playing an Activity, we recommend that you try the following:</p>
 <ul>
     <li>If you have our picture-in-picture feature engaged while playing an Activity, please minimize/close the picture-in-picture feature and keep the Activity in focus.</li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580024062231" width="321" height="697"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580024062231" width="278" height="601"></p>
 <ul>
     <li>If you have your Video enabled while playing an Activity, please disable your mobile device camera by pressing on the Video camera icon and keep the Activity in focus.</li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580026697879" width="343" height="743"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580026697879" width="272" height="588"></p>
 <ul>
     <li>If you have any apps opened in the background, please close out those apps.</li>
 </ul>
@@ -93,26 +108,26 @@
 <p class="wysiwyg-text-align-left"><span id="docs-internal-guid-6027255a-7fff-ac65-2001-950a5d69f256">Fellow server members can also simply join a voice channel with an ongoing Activity and press or tap the </span><strong>Join Activity </strong>button on the Activity tile in the focused voice channel view.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120275384343" alt="desktop-join-activity-in-VC.png"></p>
 <h4 id="h_01HASQ4N82K41DEKBM79CKTY4Y" class="wysiwyg-text-align-center">Desktop/Browser App</h4>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580026701079" width="341" height="739"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580026701079" width="258" height="558"></p>
 <h4 id="h_01HASQ4N82CHW2MYD7ZSBB2CHZ" class="wysiwyg-text-align-center">Mobile App</h4>
 <p class="wysiwyg-text-align-left"><span id="docs-internal-guid-7e3dc4a7-7fff-41da-7072-351f45f43527">If you have “</span><strong>Display current activity as a status message</strong>” toggled on in your user settings, then friends who can join your current Voice Channel can also join your Activity by viewing your status or your profile.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120275538583" alt="desktop-profile-status-invite-to-activity.png" width="270" height="484"></p>
 <h4 id="h_01HASQ4N825453MPCP7637BW2V" class="wysiwyg-text-align-center">Desktop/Browser App</h4>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580026705559" width="368" height="797"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580026705559" width="271" height="586"></p>
 <h4 id="h_01HASQ4N82EXSKBVZY7TAZKE5W" class="wysiwyg-text-align-center">Mobile App</h4>
 <h2 id="h_01GSX5TN2992T3KWK0FG44QXMG">How do I end or change an Activity?</h2>
-<p><span id="docs-internal-guid-7567de62-7fff-9bff-50f5-adf0cfa86397">To leave an Activity, select the Activity exit icon in the Voice Channel controls. Leaving the Voice Channel will also do the trick!</span></p>
+<p><span id="docs-internal-guid-7567de62-7fff-9bff-50f5-adf0cfa86397">To leave an Activity, select the <strong>Activity exit icon</strong> in the Voice Channel controls. Leaving the Voice Channel will also do the trick!</span></p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120275526679" alt="desktop-leave-activity-buttons.png"></p>
 <h4 id="h_01HASQ4N82NB6DE116YXAMNX80" class="wysiwyg-text-align-center">Desktop/Browser App</h4>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580024091543" width="365" height="789"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580024091543" width="263" height="569"></p>
 <h4 id="h_01HASQ4N820RD5RTKQXRQX4MD3" class="wysiwyg-text-align-center">Mobile App</h4>
-<p><span id="docs-internal-guid-eab3f62f-7fff-bf83-66f8-74abcef4bd3b">If you want to switch to another Activity, you can just select another Activity from the Shelf by pressing the rocket ship icon. Joining a new Activity will automatically remove you from the old Activity, so you can do this while you’re still in an Activity.</span></p>
+<p><span id="docs-internal-guid-eab3f62f-7fff-bf83-66f8-74abcef4bd3b">If you want to switch to another Activity, you can just select another Activity from the Shelf by pressing the <strong>Activity rocket ship icon</strong>. Joining a new Activity will automatically remove you from the old Activity, so you can do this while you’re still in an Activity.</span></p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120306613655" alt="desktop-activities-button-in-VC.png"></p>
 <h4 id="h_01HASQ4N82647RD63H86518XAA" class="wysiwyg-text-align-center">Desktop/Browser App</h4>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580100224023" width="290" height="626"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19580100224023" width="281" height="608"></p>
 <h4 id="h_01HASQ4N820V3EVWVY3NXZCPGB" class="wysiwyg-text-align-center">Mobile App</h4>
 <h2 id="h_01GSX5TWD8JMMWBMSRZWYRJADT">Can I restrict access to Activities in my server?</h2>
-<p>Admins can revoke the ability to use Activities in their server through the “Use Activities” permission. This can be done by role, channel, or channel category. This permission is granted to everyone by default. When it is revoked, users in the selected role, channel, or category will lose the ability to start new Activities or join existing ones.</p>
+<p>Admins can revoke the ability to use Activities in their server through the <strong>Use Activities</strong> permission. This can be done by role, channel, or channel category. This permission is granted to everyone by default. When it is revoked, users in the selected role, channel, or category will lose the ability to start new Activities or join existing ones.</p>
 <ul>
     <li>User role permissions can be found under <strong>Server Settings &gt; Roles &gt; Permissions &gt; Voice Channel Permissions &gt; Use Activities.</strong>
     </li>
