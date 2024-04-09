@@ -36556,7 +36556,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282760", ", Version Hash: ").concat("e5e211eb1a2cc00ca7633a236f39fd52c52f79fb")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282780", ", Version Hash: ").concat("786f0489f262605ceca604ab7824dfb790926a04")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85717,8 +85717,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "282760", "282760"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282760")), t = 0), t
+                let t = parseInt((e = "282780", "282780"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282780")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107802,8 +107802,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "282760",
-                    versionHash: "e5e211eb1a2cc00ca7633a236f39fd52c52f79fb"
+                    buildNumber: "282780",
+                    versionHash: "786f0489f262605ceca604ab7824dfb790926a04"
                 }
             }
             n.r(t), n.d(t, {
@@ -143505,7 +143505,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("79504"), n.e("58153"), n.e("25381"), n.e("33053"), n.e("51238"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("16114"), n.e("56630"), n.e("43643"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("71697"), n.e("40866"), n.e("48496"), n.e("28216"), n.e("75301"), n.e("62856"), n.e("29188")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(h.GuildFeatures.COMMUNITY)) && (t === h.GuildSettingsSections.GUILD_AUTOMOD && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_AUTOMOD), t === h.GuildSettingsSections.MEMBER_VERIFICATION && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(h.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("79504"), n.e("58153"), n.e("25381"), n.e("33053"), n.e("51238"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("16114"), n.e("56630"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("71697"), n.e("40866"), n.e("43643"), n.e("48496"), n.e("28216"), n.e("75301"), n.e("62856"), n.e("29188")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(h.GuildFeatures.COMMUNITY)) && (t === h.GuildSettingsSections.GUILD_AUTOMOD && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_AUTOMOD), t === h.GuildSettingsSections.MEMBER_VERIFICATION && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(h.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -157799,8 +157799,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712618134383",
-                                    build_number: "282760"
+                                    built_at: "1712622375393",
+                                    build_number: "282780"
                                 }
                             },
                             retries: 1
@@ -175315,111 +175315,108 @@
             "use strict";
             n.r(t), n.d(t, {
                 calculatePercentComplete: function() {
-                    return L
-                },
-                captureQuestsException: function() {
-                    return G
-                },
-                getContextualEntrypointHeading: function() {
-                    return D
-                },
-                getGameLogotypeAssetUrl: function() {
-                    return O
-                },
-                getGameTileAssetUrl: function() {
-                    return N
-                },
-                getHeroAssetUrl: function() {
-                    return h
-                },
-                getPlatformString: function() {
                     return g
                 },
-                getQuestBarHeroAssetUrl: function() {
-                    return m
-                },
-                getQuestByApplicationId: function() {
-                    return c
-                },
-                getQuestCollectibleRewardItem: function() {
+                captureQuestsException: function() {
                     return U
                 },
-                getQuestForTargetedContent: function() {
-                    return R
+                getContextualEntrypointHeading: function() {
+                    return L
                 },
-                getQuestUrl: function() {
-                    return p
+                getGameLogotypeAssetUrl: function() {
+                    return N
                 },
-                getQuestsFromActivities: function() {
-                    return w
+                getGameTileAssetUrl: function() {
+                    return m
                 },
-                getRewardAssetUrl: function() {
+                getHeroAssetUrl: function() {
                     return A
                 },
-                getVideoAssetMimeType: function() {
-                    return V
-                },
-                hasQuestCollectibleRewards: function() {
-                    return P
-                },
-                includesTarget: function() {
-                    return b
-                },
-                isAssetAnimated: function() {
-                    return B
-                },
-                isCollectibleReward: function() {
-                    return y
-                },
-                isDismissed: function() {
-                    return M
-                },
-                isDismissible: function() {
-                    return v
-                },
-                isQuestExpired: function() {
-                    return E
-                },
-                isTargetedForContent: function() {
+                getPlatformString: function() {
                     return C
                 },
-                questUserStatusFromServer: function() {
-                    return I
+                getQuestBarHeroAssetUrl: function() {
+                    return h
                 },
-                questWithUserStatusFromServer: function() {
-                    return T
+                getQuestByApplicationId: function() {
+                    return _
                 },
-                questsEntitlementsFromServer: function() {
+                getQuestForTargetedContent: function() {
+                    return p
+                },
+                getQuestUrl: function() {
+                    return O
+                },
+                getQuestsFromActivities: function() {
+                    return b
+                },
+                getRewardAssetUrl: function() {
                     return S
                 },
-                questsRewardCodeFromServer: function() {
+                getVideoAssetMimeType: function() {
+                    return B
+                },
+                hasQuestCollectibleRewards: function() {
+                    return y
+                },
+                includesTarget: function() {
+                    return P
+                },
+                isAssetAnimated: function() {
+                    return G
+                },
+                isCollectibleReward: function() {
+                    return M
+                },
+                isDismissed: function() {
+                    return v
+                },
+                isDismissible: function() {
+                    return D
+                },
+                isQuestExpired: function() {
+                    return c
+                },
+                isTargetedForContent: function() {
+                    return R
+                },
+                questUserStatusFromServer: function() {
+                    return E
+                },
+                questWithUserStatusFromServer: function() {
+                    return I
+                },
+                questsEntitlementsFromServer: function() {
                     return f
+                },
+                questsRewardCodeFromServer: function() {
+                    return T
                 }
             }), n("47120"), n("411104");
-            var i = n("887003"),
-                r = n("597688"),
-                s = n("630388"),
-                a = n("960048"),
-                o = n("687744"),
-                l = n("497505"),
-                u = n("46140"),
-                d = n("689938");
-            let _ = "https://cdn.discordapp.com/assets/quests/";
+            var i = n("887003");
+            n("597688");
+            var r = n("630388"),
+                s = n("960048"),
+                a = n("687744"),
+                o = n("497505"),
+                l = n("46140"),
+                u = n("689938");
+            let d = "https://cdn.discordapp.com/assets/quests/";
 
-            function c(e, t) {
+            function _(e, t) {
                 let n;
                 for (let [i, r] of e)
-                    if (r.config.applicationId === t && !E(r)) {
+                    if (r.config.applicationId === t && !c(r)) {
                         n = r;
                         break
                     } return n
             }
 
-            function E(e) {
+            function c(e) {
                 return new Date(e.config.expiresAt).valueOf() <= Date.now()
             }
 
-            function I(e) {
+            function E(e) {
                 return {
                     userId: e.user_id,
                     questId: e.quest_id,
@@ -175432,7 +175429,7 @@
                 }
             }
 
-            function T(e) {
+            function I(e) {
                 var t, n, i, r;
                 return {
                     id: e.id,
@@ -175452,7 +175449,7 @@
                                 let t = {};
                                 for (let n in e) {
                                     let i = parseInt(n);
-                                    l.QUEST_REWARD_CODE_PLATFORMS_SET.has(i) && (t[i] = e[n])
+                                    o.QUEST_REWARD_CODE_PLATFORMS_SET.has(i) && (t[i] = e[n])
                                 }
                                 return t
                             }(n.reward_redemption_instructions_by_platform),
@@ -175463,9 +175460,9 @@
                             primary: (i = t.colors).primary,
                             secondary: i.secondary
                         },
-                        rewardsConfig: (0, o.questRewardsConfigFromServer)(t.rewards_config),
+                        rewardsConfig: (0, a.questRewardsConfigFromServer)(t.rewards_config),
                         rewardCodeExpiresAt: t.reward_code_expires_at,
-                        rewardCodePlatforms: t.reward_code_platforms.filter(e => l.QUEST_REWARD_CODE_PLATFORMS_SET.has(e)),
+                        rewardCodePlatforms: t.reward_code_platforms.filter(e => o.QUEST_REWARD_CODE_PLATFORMS_SET.has(e)),
                         assets: {
                             rewardTile: (r = t.assets).reward_tile,
                             hero: r.hero,
@@ -175474,12 +175471,12 @@
                             logotype: r.logotype
                         }
                     },
-                    userStatus: null == e.user_status ? null : I(e.user_status),
+                    userStatus: null == e.user_status ? null : E(e.user_status),
                     targetedContent: e.targeted_content
                 }
             }
 
-            function f(e) {
+            function T(e) {
                 return {
                     userId: e.user_id,
                     questId: e.quest_id,
@@ -175489,7 +175486,7 @@
                 }
             }
 
-            function S(e) {
+            function f(e) {
                 return {
                     claimedAt: e.claimed_at,
                     items: e.entitlements.map(e => ({
@@ -175498,38 +175495,38 @@
                     errors: e.errors
                 }
             }
-            let A = e => "".concat(_).concat(e.id, "/").concat(e.config.assets.rewardTile),
-                h = e => "".concat(_).concat(e.id, "/").concat(e.config.assets.hero),
-                m = e => "".concat(_).concat(e.id, "/").concat(e.config.assets.questBarHero),
-                N = e => "".concat(_).concat(e.id, "/").concat(e.config.assets.gameTile),
-                O = (e, t) => "".concat(_).concat(e.id, "/").concat(t, "/").concat(e.config.assets.logotype),
-                p = e => "".concat(location.protocol, "//").concat(location.host, "/quests/").concat(e);
+            let S = e => "".concat(d).concat(e.id, "/").concat(e.config.assets.rewardTile),
+                A = e => "".concat(d).concat(e.id, "/").concat(e.config.assets.hero),
+                h = e => "".concat(d).concat(e.id, "/").concat(e.config.assets.questBarHero),
+                m = e => "".concat(d).concat(e.id, "/").concat(e.config.assets.gameTile),
+                N = (e, t) => "".concat(d).concat(e.id, "/").concat(t, "/").concat(e.config.assets.logotype),
+                O = e => "".concat(location.protocol, "//").concat(location.host, "/quests/").concat(e);
 
-            function R(e, t) {
+            function p(e, t) {
                 for (let [n, i] of e)
                     if (i.targetedContent.includes(t)) return i;
                 return null
             }
 
-            function C(e, t) {
+            function R(e, t) {
                 return e.targetedContent.includes(t)
             }
-            let g = e => {
+            let C = e => {
                 switch (e) {
-                    case l.QuestRewardCodePlatforms.XBOX:
-                        return d.default.Messages.QUESTS_REWARD_CODE_PLATFORM_XBOX;
-                    case l.QuestRewardCodePlatforms.PLAYSTATION:
-                        return d.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PLAYSTATION;
-                    case l.QuestRewardCodePlatforms.SWITCH:
-                        return d.default.Messages.QUESTS_REWARD_CODE_PLATFORM_SWITCH;
-                    case l.QuestRewardCodePlatforms.PC:
-                        return d.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PC;
-                    case l.QuestRewardCodePlatforms.CROSS_PLATFORM:
-                        return d.default.Messages.QUESTS_REWARD_CODE_PLATFORM_CROSS_PLATFORM
+                    case o.QuestRewardCodePlatforms.XBOX:
+                        return u.default.Messages.QUESTS_REWARD_CODE_PLATFORM_XBOX;
+                    case o.QuestRewardCodePlatforms.PLAYSTATION:
+                        return u.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PLAYSTATION;
+                    case o.QuestRewardCodePlatforms.SWITCH:
+                        return u.default.Messages.QUESTS_REWARD_CODE_PLATFORM_SWITCH;
+                    case o.QuestRewardCodePlatforms.PC:
+                        return u.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PC;
+                    case o.QuestRewardCodePlatforms.CROSS_PLATFORM:
+                        return u.default.Messages.QUESTS_REWARD_CODE_PLATFORM_CROSS_PLATFORM
                 }
             };
 
-            function L(e) {
+            function g(e) {
                 if (null == e.userStatus) return 0;
                 let {
                     streamProgressSeconds: t,
@@ -175542,49 +175539,42 @@
                 return Math.min(t / 60 / i, 1)
             }
 
-            function D(e) {
+            function L(e) {
                 var t, n;
-                if ((null === (t = e.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return d.default.Messages.QUESTS_COMPLETION_PROGRESS_COMPLETE;
+                if ((null === (t = e.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return u.default.Messages.QUESTS_COMPLETION_PROGRESS_COMPLETE;
                 if ((null === (n = e.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null) {
-                    let t = L(e);
-                    return t >= .75 ? d.default.Messages.QUESTS_COMPLETION_PROGRESS_ALMOST_COMPLETE : t >= .45 && t <= .55 ? d.default.Messages.QUESTS_COMPLETION_PROGRESS_HALFWAY : t > 0 ? d.default.Messages.QUESTS_COMPLETION_PROGRESS_STARTED : d.default.Messages.QUESTS_COMPLETION_PROGRESS_NOT_STARTED
+                    let t = g(e);
+                    return t >= .75 ? u.default.Messages.QUESTS_COMPLETION_PROGRESS_ALMOST_COMPLETE : t >= .45 && t <= .55 ? u.default.Messages.QUESTS_COMPLETION_PROGRESS_HALFWAY : t > 0 ? u.default.Messages.QUESTS_COMPLETION_PROGRESS_STARTED : u.default.Messages.QUESTS_COMPLETION_PROGRESS_NOT_STARTED
                 }
-                return d.default.Messages.QUESTS_TITLE.format({
+                return u.default.Messages.QUESTS_TITLE.format({
                     questName: e.config.messages.questName
                 })
             }
 
-            function v(e) {
-                return Object.keys(u.DismissibleQuestContentFlags).includes(l.QuestContent[e])
+            function D(e) {
+                return Object.keys(l.DismissibleQuestContentFlags).includes(o.QuestContent[e])
             }
 
-            function M(e, t) {
-                if (!v(t)) return !1;
-                let n = l.QuestContent[t];
-                return (0, s.hasFlag)(e.dismissedQuestContent, u.DismissibleQuestContentFlags[n])
+            function v(e, t) {
+                if (!D(t)) return !1;
+                let n = o.QuestContent[t];
+                return (0, r.hasFlag)(e.dismissedQuestContent, l.DismissibleQuestContentFlags[n])
             }
 
-            function y(e) {
+            function M(e) {
                 return e.tag === i.QuestRewardTypes.COLLECTIBLE
             }
 
-            function P(e) {
-                return e.rewardsConfig.rewards.some(y)
+            function y(e) {
+                return e.rewardsConfig.rewards.some(M)
             }
 
-            function U(e) {
-                var t, n;
-                let i = null === (t = e.rewardsConfig.rewards.find(y)) || void 0 === t ? void 0 : t.skuId,
-                    s = r.default.getProduct(i);
-                return null == s ? void 0 : null === (n = s.items) || void 0 === n ? void 0 : n[0]
-            }
-
-            function b(e, t) {
+            function P(e, t) {
                 return e.targetedContent.includes(t)
             }
 
-            function G(e, t) {
-                a.default.captureException(e, {
+            function U(e, t) {
+                s.default.captureException(e, {
                     ...t,
                     tags: {
                         ...null == t ? void 0 : t.tags,
@@ -175593,24 +175583,24 @@
                 })
             }
 
-            function w(e, t) {
+            function b(e, t) {
                 if (null == t || null == e) return null;
                 for (let n of t) {
                     if (null == n.application_id) continue;
-                    let t = c(e, n.application_id);
+                    let t = _(e, n.application_id);
                     if (null != t) return t
                 }
                 return null
             }
 
-            function B(e) {
+            function G(e) {
                 return e.endsWith(".webm") || e.endsWith(".mp4")
             }
-            let k = /\.([a-zA-Z]+)$/;
+            let w = /\.([a-zA-Z]+)$/;
 
-            function V(e) {
+            function B(e) {
                 var t, n;
-                switch (null === (n = k.exec(e)) || void 0 === n ? void 0 : null === (t = n[1]) || void 0 === t ? void 0 : t.toLowerCase()) {
+                switch (null === (n = w.exec(e)) || void 0 === n ? void 0 : null === (t = n[1]) || void 0 === t ? void 0 : t.toLowerCase()) {
                     case "webm":
                         return "video/webm";
                     case "mp4":
@@ -232671,7 +232661,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e5e211eb1a2cc00ca7633a236f39fd52c52f79fb"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "786f0489f262605ceca604ab7824dfb790926a04"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258763,7 +258753,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "282760"
+                                build_number: "282780"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265906,7 +265896,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "282760", "282760"), 10);
+                let s = parseInt((n = "282780", "282780"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292650,4 +292640,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59511.88c4701c6d06ee137317.js.map
+//# sourceMappingURL=59511.fec8ffc877c3dbf24dfe.js.map

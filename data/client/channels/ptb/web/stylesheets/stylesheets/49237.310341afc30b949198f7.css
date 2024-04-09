@@ -12267,6 +12267,43 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     text-align: right
 }
 
+.avatar_fb704f {
+    flex-shrink: 0
+}
+
+.memberListItem_a082b9 {
+    padding: 4px 8px;
+    margin: 8px -8px;
+    border-radius: 4px
+}
+
+.memberListItem_a082b9:last-child {
+    margin-bottom: 4px
+}
+
+.memberListItem_a082b9:not(.popoutDisabled_a185a8):hover {
+    cursor: pointer
+}
+
+.memberListItemTag__08d04 {
+    margin-left: 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.username__80e45 {
+    font-weight: 600
+}
+
+.theme-dark .memberListItem_a082b9:not(.popoutDisabled_a185a8):hover {
+    background-color: var(--primary-700)
+}
+
+.theme-light .memberListItem_a082b9:not(.popoutDisabled_a185a8):hover {
+    background-color: var(--primary-160)
+}
+
 .shinyButton_d5e126 {
     overflow: hidden
 }
@@ -12358,41 +12395,24 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     position: relative
 }
 
-.avatar_fb704f {
-    flex-shrink: 0
+.transition_bb4a68 {
+    transition: transform.2s ease
 }
 
-.memberListItem_a082b9 {
-    padding: 4px 8px;
-    margin: 8px -8px;
-    border-radius: 4px
+.directionDown_e38a7a {
+    transform: rotate3d(0, 0, -1, 0)
 }
 
-.memberListItem_a082b9:last-child {
-    margin-bottom: 4px
+.directionRight__09c57 {
+    transform: rotate3d(0, 0, -1, 90deg)
 }
 
-.memberListItem_a082b9:not(.popoutDisabled_a185a8):hover {
-    cursor: pointer
+.directionLeft__0e2eb {
+    transform: rotate3d(0, 0, -1, 270deg)
 }
 
-.memberListItemTag__08d04 {
-    margin-left: 8px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden
-}
-
-.username__80e45 {
-    font-weight: 600
-}
-
-.theme-dark .memberListItem_a082b9:not(.popoutDisabled_a185a8):hover {
-    background-color: var(--primary-700)
-}
-
-.theme-light .memberListItem_a082b9:not(.popoutDisabled_a185a8):hover {
-    background-color: var(--primary-160)
+.directionUp_fb2196 {
+    transform: rotate3d(0, 0, -1, 180deg)
 }
 
 .gameIcon_fc710a {
@@ -13053,26 +13073,6 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .enable-forced-colors .originalLink__0d99e {
     border: 2px solid ButtonText
-}
-
-.transition_bb4a68 {
-    transition: transform.2s ease
-}
-
-.directionDown_e38a7a {
-    transform: rotate3d(0, 0, -1, 0)
-}
-
-.directionRight__09c57 {
-    transform: rotate3d(0, 0, -1, 90deg)
-}
-
-.directionLeft__0e2eb {
-    transform: rotate3d(0, 0, -1, 270deg)
-}
-
-.directionUp_fb2196 {
-    transform: rotate3d(0, 0, -1, 180deg)
 }
 
 .mediaBarInteraction_e21234,
@@ -28185,4 +28185,4 @@ span.button_ae40a4.disabled__1dc58 {
     }
 }
 
-/*# sourceMappingURL=49237.f66fe8f3c5342284b4d8.css.map*/
+/*# sourceMappingURL=49237.310341afc30b949198f7.css.map*/
