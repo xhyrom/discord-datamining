@@ -485,7 +485,11 @@
   },
   "DISCOVERY_GAME": {
     "url": "/discovery/games/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_RECOMMENDATIONS": {
     "url": "/guild-recommendations",
@@ -576,7 +580,11 @@
   },
   "EMOJI_GUILD_DATA": {
     "url": "/emojis/:param/guild",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "EMOJI_SOURCE_DATA": {
     "url": "/emojis/:param/source",
@@ -624,7 +632,10 @@
   },
   "NEW_MEMBER_ACTION": {
     "url": "/guilds/:param/new-member-actions/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_RESOURCE_CHANNELS_ICON": {
     "url": "/guilds/:param/avatars/:param.:param",
@@ -811,7 +822,11 @@
   },
   "MY_ARCHIVED_THREADS": {
     "url": "/channels/:param/users/@me/threads/archived/private",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "THREAD_SEARCH": {
     "url": "/channels/:param/threads/search",
@@ -941,7 +956,10 @@
   },
   "UPDATE_VOICE_CHANNEL_STATUS": {
     "url": "/channels/:param/voice-status",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "UPDATE_VOICE_CHANNEL_BACKGROUND": {
     "url": "/channels/:param/voice-background",
@@ -1157,7 +1175,11 @@
   },
   "CHANNEL_FOLLOWER_MESSAGE_STATS": {
     "url": "/channels/:param/follower-message-stats",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CHANNEL_INTEGRATIONS": {
     "url": "/channels/:param/integrations",
