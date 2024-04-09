@@ -36556,7 +36556,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282936", ", Version Hash: ").concat("8cb28a8fb98280c8e7c3e4725761237b5abbb00d")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282943", ", Version Hash: ").concat("607e8e6fabfcb479b1619064b25b569e883081d3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -42979,6 +42979,13 @@
                 MESSAGE_REQUESTS_SPAM_REQUEST_BOTTOMSHEET_ACCEPT: "Accept Message",
                 MESSAGE_REQUESTS_HAM_ACTIONSHEET_TOGGLE_TEXT: "Help improve our spam filter by forwarding this message to Discord",
                 MESSAGE_REQUESTS_CLEAR_ALL: "Clear All",
+                DM_SETTINGS_UPSELL_TITLE: "Turn off direct messages from this server?",
+                DM_SETTINGS_UPSELL_BODY: "You've turned down a couple message requests from **!!{guild_name}!!**. If you turn these off, you won't receive DMs from people in this server unless you're friends.",
+                DM_SETTINGS_UPSELL_SUBTITLE: "This change affects",
+                DM_SETTINGS_UPSELL_YES_BUTTON: "Yes, turn them off",
+                DM_SETTINGS_UPSELL_NO_BUTTON: "No, keep them on",
+                DM_SETTINGS_UPSELL_FOOTER: "You can change this setting any time in this [server's Privacy Settings](onClick).",
+                DM_SETTINGS_UPSELL_SUCCESS_TOAST: "Settings changed",
                 SAFETY_CONSUMER_EDUCATION_BLOCK_HEADER: "How to Block",
                 SAFETY_CONSUMER_EDUCATION_BLOCK_CONTENT: "Not a fan of annoying messages? Control your DM settings & block away.",
                 SAFETY_CONSUMER_EDUCATION_MUTE_HEADER: "How to Mute",
@@ -85723,8 +85730,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "282936", "282936"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282936")), t = 0), t
+                let t = parseInt((e = "282943", "282943"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282943")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107811,8 +107818,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "282936",
-                    versionHash: "8cb28a8fb98280c8e7c3e4725761237b5abbb00d"
+                    buildNumber: "282943",
+                    versionHash: "607e8e6fabfcb479b1619064b25b569e883081d3"
                 }
             }
             n.r(t), n.d(t, {
@@ -157789,8 +157796,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712684946114",
-                                    build_number: "282936"
+                                    built_at: "1712685970347",
+                                    build_number: "282943"
                                 }
                             },
                             retries: 1
@@ -232659,7 +232666,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8cb28a8fb98280c8e7c3e4725761237b5abbb00d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "607e8e6fabfcb479b1619064b25b569e883081d3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258751,7 +258758,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "282936"
+                                build_number: "282943"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265894,7 +265901,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "282936", "282936"), 10);
+                let s = parseInt((n = "282943", "282943"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292638,4 +292645,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59511.eb8c28157a528491f1c5.js.map
+//# sourceMappingURL=59511.b479c6dc2b18e0b0a65d.js.map
