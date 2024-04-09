@@ -3258,12 +3258,9 @@
       "POST"
     ]
   },
-  "ACTIVITY_UPLOAD_ATTACHMENT": {
-    "url": "/activities/:param/attachment",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+  "APPLICATION_UPLOAD_ATTACHMENT": {
+    "url": "/applications/:param/attachment",
+    "allowed_methods": null
   },
   "CHANNEL_THREADS": {
     "url": "/channels/:param/threads",
