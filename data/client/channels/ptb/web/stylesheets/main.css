@@ -126058,7 +126058,10 @@ div.nagbar_c731ff {
 .userInfoText_b87307 {
     margin-bottom: 16px;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 18px
+}
+
+.recentGames__2995b {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 12px
@@ -131534,4 +131537,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.17084ca834eed77e3450.css.map*/
+/*# sourceMappingURL=99387.96144082f34006aafc2c.css.map*/
