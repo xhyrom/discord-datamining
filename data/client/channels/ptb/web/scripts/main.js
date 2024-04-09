@@ -36480,7 +36480,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("283118", ", Version Hash: ").concat("22eb351c685dfd5d3dba78b3c9b1f69b6f2fffba")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("283133", ", Version Hash: ").concat("537b19463852149dea1b3d34a40e65373f44b5d0")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85622,8 +85622,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "283118", "283118"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283118")), t = 0), t
+                let t = parseInt((e = "283133", "283133"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283133")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107730,8 +107730,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "283118",
-                    versionHash: "22eb351c685dfd5d3dba78b3c9b1f69b6f2fffba"
+                    buildNumber: "283133",
+                    versionHash: "537b19463852149dea1b3d34a40e65373f44b5d0"
                 }
             }
             n.r(t), n.d(t, {
@@ -157369,8 +157369,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712700773705",
-                                    build_number: "283118"
+                                    built_at: "1712701790962",
+                                    build_number: "283133"
                                 }
                             },
                             retries: 1
@@ -165033,6 +165033,213 @@
                 CURRENT_USER_UPDATE: _,
                 CONNECTION_OPEN: _
             })
+        },
+        351742: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            let i = (0, n("818083").createExperiment)({
+                kind: "user",
+                id: "2024-03_perks_demo_hd_streaming",
+                label: "Perks Demo: HD Streaming",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "With HD Streaming Perk Demo enabled - ML predicted",
+                    config: {
+                        enabled: !0
+                    }
+                }, {
+                    id: 2,
+                    label: "With HD Streaming Perk Demo enabled - no ML prediction",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            });
+            t.default = i
+        },
+        120522: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                activatePerkDemo: function() {
+                    return d
+                },
+                fetchPerksDemos: function() {
+                    return u
+                }
+            });
+            var i = n("544891"),
+                r = n("570140"),
+                s = n("168232"),
+                a = n("594174"),
+                o = n("114064"),
+                l = n("981631");
+            async function u() {
+                let e = a.default.getCurrentUser();
+                try {
+                    let {
+                        body: t
+                    } = await i.HTTP.get({
+                        url: l.Endpoints.USER_PERKS_DEMOS
+                    });
+                    (0, s.isStaffEnv)(e) && (t = {
+                        ...t,
+                        ... function() {
+                            let e = o.default.overrides(),
+                                t = {};
+                            for (let r in e) {
+                                var n, i;
+                                t[r] = null !== (i = null === (n = e[r]) || void 0 === n ? void 0 : n.available) && void 0 !== i ? i : void 0
+                            }
+                            return t
+                        }()
+                    }), r.default.dispatch({
+                        type: "PREMIUM_PERKS_DEMOS_FETCH_SUCCESS",
+                        demos: t
+                    })
+                } catch (e) {
+                    r.default.dispatch({
+                        type: "PREMIUM_PERKS_DEMOS_FETCH_FAILURE"
+                    })
+                }
+            }
+            async function d(e) {
+                let t = a.default.getCurrentUser();
+                try {
+                    return await i.HTTP.post({
+                        url: l.Endpoints.USER_PERKS_DEMOS
+                    }), _(e), !0
+                } catch {
+                    if ((0, s.isStaffEnv)(t) && function(e) {
+                            var t;
+                            return (null === (t = o.default.overrides()[e]) || void 0 === t ? void 0 : t.activateSuccess) === !0
+                        }(e)) return _(e), !0;
+                    return r.default.dispatch({
+                        type: "PREMIUM_PERKS_DEMO_ACTIVATE_FAILURE",
+                        perkType: e
+                    }), !1
+                }
+            }
+
+            function _(e) {
+                r.default.dispatch({
+                    type: "PREMIUM_PERKS_DEMO_ACTIVATE_SUCCESS",
+                    perkType: e
+                })
+            }
+        },
+        114064: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i, r, s, a, o = n("454908"),
+                l = n("442837"),
+                u = n("570140"),
+                d = n("168232");
+            let _ = {
+                    perksDemos: null,
+                    activated: {},
+                    lastFetched: null,
+                    overrides: {}
+                },
+                c = _;
+            class E extends(a = l.default.Store) {
+                getPerksDemos() {
+                    return c.perksDemos
+                }
+                getActivated() {
+                    return c.activated
+                }
+                shouldFetch() {
+                    return null == c.lastFetched || Date.now() > c.lastFetched + 864e5
+                }
+                shouldActivate(e) {
+                    var t;
+                    return (null === (t = c.perksDemos) || void 0 === t ? void 0 : t[e]) === !0
+                }
+                overrides() {
+                    return c.overrides
+                }
+            }
+            s = "PerksDemosStore", (r = "displayName") in(i = E) ? Object.defineProperty(i, r, {
+                value: s,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0
+            }) : i[r] = s, t.default = new E(u.default, {
+                PREMIUM_PERKS_DEMOS_FETCH_SUCCESS: function(e) {
+                    let {
+                        demos: t
+                    } = e;
+                    c.perksDemos = t, c.lastFetched = Date.now()
+                },
+                PREMIUM_PERKS_DEMOS_FETCH_FAILURE: function() {
+                    c.perksDemos = _.perksDemos, c.lastFetched = null
+                },
+                PREMIUM_PERKS_DEMO_ACTIVATE_SUCCESS: function(e) {
+                    let {
+                        perkType: t
+                    } = e;
+                    c.activated[t] = !0
+                },
+                PREMIUM_PERKS_DEMO_ACTIVATE_FAILURE: function(e) {
+                    let {
+                        perkType: t
+                    } = e;
+                    c.activated[t] = !1
+                },
+                STREAM_CLOSE: function(e) {
+                    null != c.perksDemos && !0 === c.activated[o.NitroPerks.STREAM_HIGH_QUALITY] && (c.perksDemos[o.NitroPerks.STREAM_HIGH_QUALITY] = !1)
+                },
+                LOGOUT: function() {
+                    c = _
+                },
+                PREMIUM_PERKS_DEMO_OVERRIDE: function(e) {
+                    let {
+                        user: t,
+                        perkType: n,
+                        available: i,
+                        activateSuccess: r
+                    } = e;
+                    void 0 !== t && (0, d.isStaffEnv)(t) && (c.overrides[n] = {
+                        available: i,
+                        activateSuccess: r
+                    }, null == c.perksDemos && (c.perksDemos = {}), c.perksDemos[n] = i || !1, c.lastFetched = null)
+                }
+            })
+        },
+        933843: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                shouldActivatePerkDemo: function() {
+                    return d
+                },
+                shouldFetchPerksDemos: function() {
+                    return u
+                }
+            });
+            var i = n("594174"),
+                r = n("74538"),
+                s = n("351742"),
+                a = n("114064"),
+                o = n("474936");
+
+            function l() {
+                let e = i.default.getCurrentUser();
+                return null != e && !(0, r.isPremium)(e, o.PremiumTypes.TIER_1)
+            }
+            let u = () => {
+                    let {
+                        enabled: e
+                    } = s.default.getCurrentConfig({
+                        location: "shouldFetchPerksDemos"
+                    }, {
+                        autoTrackExposure: !1
+                    });
+                    return l() && a.default.shouldFetch() && e
+                },
+                d = e => l() && a.default.shouldActivate(e)
         },
         474936: function(e, t, n) {
             "use strict";
@@ -203800,7 +204007,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return T
+                    return S
                 }
             });
             var i = n("735250");
@@ -203810,35 +204017,37 @@
                 a = n("451467"),
                 o = n("174609"),
                 l = n("928518"),
-                u = n("430824"),
-                d = n("131951"),
-                _ = n("594174"),
-                c = n("358085"),
-                E = n("981631"),
-                I = n("37113");
+                u = n("120522"),
+                d = n("933843"),
+                _ = n("430824"),
+                c = n("131951"),
+                E = n("594174"),
+                I = n("358085"),
+                T = n("981631"),
+                f = n("37113");
 
-            function T(e, t, T) {
-                let f = l.default.getWindowOpen(E.PopoutWindowKeys.CHANNEL_CALL_POPOUT) ? E.PopoutWindowKeys.CHANNEL_CALL_POPOUT : null;
-                if ((0, o.default)(f), c.isPlatformEmbedded)(0, r.openModalLazy)(async () => {
+            function S(e, t, S) {
+                let h = l.default.getWindowOpen(T.PopoutWindowKeys.CHANNEL_CALL_POPOUT) ? T.PopoutWindowKeys.CHANNEL_CALL_POPOUT : null;
+                if ((0, o.default)(h), I.isPlatformEmbedded)(0, r.openModalLazy)(async () => {
                     let {
                         default: t
                     } = await Promise.all([n.e("49237"), n.e("99387"), n.e("79477"), n.e("88099")]).then(n.bind(n, "60594"));
                     return n => (0, i.jsx)(t, {
                         ...n,
                         guildId: e,
-                        analyticsLocation: T
+                        analyticsLocation: S
                     })
-                });
+                }), (0, d.shouldFetchPerksDemos)() && (0, u.fetchPerksDemos)();
                 else {
-                    var S;
-                    let n = (0, a.default)(I.ApplicationStreamPresets.PRESET_CUSTOM, I.ApplicationStreamResolutions.RESOLUTION_1080, I.ApplicationStreamFPS.FPS_30, _.default.getCurrentUser(), null === (S = u.default.getGuild(e)) || void 0 === S ? void 0 : S.premiumTier) ? {
+                    var A;
+                    let n = (0, a.default)(f.ApplicationStreamPresets.PRESET_CUSTOM, f.ApplicationStreamResolutions.RESOLUTION_1080, f.ApplicationStreamFPS.FPS_30, E.default.getCurrentUser(), null === (A = _.default.getGuild(e)) || void 0 === A ? void 0 : A.premiumTier) ? {
                         width: 1920,
                         height: 1080
                     } : {
                         width: 1280,
                         height: 720
                     };
-                    d.default.getMediaEngine().getDesktopSource(n, !0).then(n => {
+                    c.default.getMediaEngine().getDesktopSource(n, !0).then(n => {
                         (0, s.startStream)(e, t, {
                             pid: null,
                             sourceId: n,
@@ -232225,7 +232434,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "22eb351c685dfd5d3dba78b3c9b1f69b6f2fffba"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "537b19463852149dea1b3d34a40e65373f44b5d0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258317,7 +258526,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "283118"
+                                build_number: "283133"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -259353,209 +259562,211 @@
                     return r
                 },
                 castPremiumSubscriptionAsSkuId: function() {
-                    return ey
+                    return eU
                 },
                 coerceExistingItemsToNewItemInterval: function() {
-                    return eL
+                    return ev
                 },
                 experimentalGetPrices: function() {
-                    return V
-                },
-                formatIntervalDuration: function() {
-                    return eA
-                },
-                formatTrialCtaIntervalDuration: function() {
-                    return eh
-                },
-                formatTrialOfferIntervalDuration: function() {
-                    return eS
-                },
-                getBillingGracePeriodDaysAndExpiresDate: function() {
-                    return ea
-                },
-                getBillingReviewSubheader: function() {
-                    return eT
-                },
-                getDefaultPrice: function() {
-                    return B
-                },
-                getDiscountIntervalString: function() {
-                    return F
-                },
-                getDisplayName: function() {
-                    return j
-                },
-                getDisplayNameFromSku: function() {
-                    return W
-                },
-                getDisplayPremiumType: function() {
-                    return z
-                },
-                getExternalPlanDisplayName: function() {
-                    return J
-                },
-                getExternalSubscriptionMethodUrl: function() {
-                    return em
-                },
-                getFormattedPriceForPlan: function() {
-                    return ed
-                },
-                getFormattedRateForPlan: function() {
-                    return e_
-                },
-                getIntervalForInvoice: function() {
-                    return ef
-                },
-                getIntervalString: function() {
                     return x
                 },
-                getIntervalStringAsNoun: function() {
-                    return H
-                },
-                getItemsFromNewAdditionalPlans: function() {
-                    return eO
-                },
-                getItemsWithUpsertedPlanIdForGroup: function() {
-                    return eR
-                },
-                getItemsWithUpsertedPremiumGuildPlan: function() {
-                    return eg
-                },
-                getItemsWithUpsertedPremiumPlanId: function() {
-                    return eC
-                },
-                getItemsWithoutPremiumPlanItem: function() {
-                    return ep
-                },
-                getMaxFileSizeForPremiumType: function() {
-                    return eD
-                },
-                getNumPremiumGuildSubscriptions: function() {
-                    return et
-                },
-                getPlanDescriptionFromInvoice: function() {
-                    return q
-                },
-                getPremiumGuildHeaderDescription: function() {
-                    return eu
-                },
-                getPremiumPlanItem: function() {
-                    return w
-                },
-                getPremiumPlanOptions: function() {
-                    return Z
-                },
-                getPremiumSkuIdForSubscription: function() {
-                    return eM
-                },
-                getPremiumType: function() {
-                    return Y
-                },
-                getPremiumTypeDisplayName: function() {
-                    return X
-                },
-                getPrice: function() {
-                    return k
-                },
-                getTierDisplayName: function() {
-                    return K
-                },
-                hasPremiumSubscriptionToDisplay: function() {
+                formatIntervalDuration: function() {
                     return eN
                 },
-                isPremium: function() {
-                    return R.isPremium
+                formatTrialCtaIntervalDuration: function() {
+                    return em
                 },
-                isPremiumAtLeast: function() {
-                    return R.isPremiumAtLeast
+                formatTrialOfferIntervalDuration: function() {
+                    return eA
                 },
-                isPremiumBaseSubscriptionPlan: function() {
-                    return ei
-                },
-                isPremiumExactly: function() {
-                    return R.isPremiumExactly
-                },
-                isPremiumGuildSubscriptionCanceled: function() {
+                getBillingGracePeriodDaysAndExpiresDate: function() {
                     return el
                 },
-                isPremiumGuildSubscriptionPlan: function() {
-                    return er
+                getBillingReviewSubheader: function() {
+                    return eS
                 },
-                isPremiumSubscriptionPlan: function() {
+                getDefaultPrice: function() {
+                    return V
+                },
+                getDiscountIntervalString: function() {
+                    return H
+                },
+                getDisplayName: function() {
+                    return K
+                },
+                getDisplayNameFromSku: function() {
+                    return z
+                },
+                getDisplayPremiumType: function() {
+                    return Q
+                },
+                getExternalPlanDisplayName: function() {
+                    return $
+                },
+                getExternalSubscriptionMethodUrl: function() {
+                    return eO
+                },
+                getFormattedPriceForPlan: function() {
+                    return ec
+                },
+                getFormattedRateForPlan: function() {
+                    return eE
+                },
+                getIntervalForInvoice: function() {
+                    return eh
+                },
+                getIntervalString: function() {
+                    return Y
+                },
+                getIntervalStringAsNoun: function() {
+                    return j
+                },
+                getItemsFromNewAdditionalPlans: function() {
+                    return eR
+                },
+                getItemsWithUpsertedPlanIdForGroup: function() {
+                    return eg
+                },
+                getItemsWithUpsertedPremiumGuildPlan: function() {
+                    return eD
+                },
+                getItemsWithUpsertedPremiumPlanId: function() {
+                    return eL
+                },
+                getItemsWithoutPremiumPlanItem: function() {
+                    return eC
+                },
+                getMaxFileSizeForPremiumType: function() {
+                    return eM
+                },
+                getNumPremiumGuildSubscriptions: function() {
+                    return ei
+                },
+                getPlanDescriptionFromInvoice: function() {
+                    return Z
+                },
+                getPremiumGuildHeaderDescription: function() {
+                    return e_
+                },
+                getPremiumPlanItem: function() {
+                    return k
+                },
+                getPremiumPlanOptions: function() {
+                    return ee
+                },
+                getPremiumSkuIdForSubscription: function() {
+                    return eP
+                },
+                getPremiumType: function() {
+                    return W
+                },
+                getPremiumTypeDisplayName: function() {
+                    return q
+                },
+                getPrice: function() {
+                    return F
+                },
+                getTierDisplayName: function() {
+                    return X
+                },
+                hasPremiumSubscriptionToDisplay: function() {
+                    return ep
+                },
+                isPremium: function() {
+                    return g.isPremium
+                },
+                isPremiumAtLeast: function() {
+                    return g.isPremiumAtLeast
+                },
+                isPremiumBaseSubscriptionPlan: function() {
                     return es
                 },
-                isPrepaidPaymentSource: function() {
+                isPremiumExactly: function() {
+                    return g.isPremiumExactly
+                },
+                isPremiumGuildSubscriptionCanceled: function() {
+                    return ed
+                },
+                isPremiumGuildSubscriptionPlan: function() {
+                    return ea
+                },
+                isPremiumSubscriptionPlan: function() {
                     return eo
                 },
+                isPrepaidPaymentSource: function() {
+                    return eu
+                },
                 isSubscriptionStatusFailedPayment: function() {
-                    return eE
+                    return eT
                 }
             }), n("411104"), n("47120"), n("733860"), n("724458"), n("653041");
             var i, r, s, a, o = n("512722"),
                 l = n.n(o),
                 u = n("913527"),
-                d = n.n(u);
+                d = n.n(u),
+                _ = n("454908");
             n("442837");
-            var _ = n("710845"),
-                c = n("803905"),
-                E = n("439017"),
-                I = n("301766"),
-                T = n("594174"),
-                f = n("351402"),
-                S = n("853872"),
-                h = n("509545"),
-                A = n("78839"),
-                m = n("122289"),
-                N = n("424218"),
-                O = n("358085"),
-                p = n("380684"),
-                R = n("111361"),
-                C = n("74538"),
-                g = n("937615"),
-                L = n("981631"),
-                D = n("334431"),
-                v = n("474936"),
-                M = n("231338"),
-                y = n("689938");
-            let P = {
+            var c = n("710845"),
+                E = n("114064"),
+                I = n("803905"),
+                T = n("439017"),
+                f = n("301766"),
+                S = n("594174"),
+                h = n("351402"),
+                A = n("853872"),
+                m = n("509545"),
+                N = n("78839"),
+                O = n("122289"),
+                p = n("424218"),
+                R = n("358085"),
+                C = n("380684"),
+                g = n("111361"),
+                L = n("74538"),
+                D = n("937615"),
+                v = n("981631"),
+                M = n("334431"),
+                y = n("474936"),
+                P = n("231338"),
+                U = n("689938");
+            let b = {
                     PAYMENT_SOURCE_MANAGEMENT: "https://support.apple.com/HT201266",
                     BILLING_HISTORY: "https://support.apple.com/HT201266",
                     SUBSCRIPTION_MANAGEMENT: "https://support.apple.com/HT202039"
                 },
-                U = {
+                G = {
                     SUBSCRIPTION_MANAGEMENT: "https://play.google.com/store/account/subscriptions",
                     PAYMENT_SOURCE_MANAGEMENT: "https://play.google.com/store/paymentmethods",
                     BILLING_HISTORY: "https://play.google.com/store/account/orderhistory"
                 },
-                b = new _.default("PremiumUtils.tsx"),
-                G = {
-                    [v.SubscriptionPlans.NONE_MONTH]: [v.SubscriptionPlans.NONE_YEAR, v.SubscriptionPlans.PREMIUM_YEAR_TIER_2, v.SubscriptionPlans.PREMIUM_MONTH_TIER_2, v.SubscriptionPlans.PREMIUM_YEAR_TIER_1, v.SubscriptionPlans.PREMIUM_MONTH_TIER_1],
-                    [v.SubscriptionPlans.NONE_YEAR]: [v.SubscriptionPlans.PREMIUM_YEAR_TIER_2, v.SubscriptionPlans.PREMIUM_MONTH_TIER_2, v.SubscriptionPlans.PREMIUM_YEAR_TIER_1, v.SubscriptionPlans.PREMIUM_MONTH_TIER_1],
-                    [v.SubscriptionPlans.PREMIUM_MONTH_TIER_0]: [v.SubscriptionPlans.PREMIUM_YEAR_TIER_2, v.SubscriptionPlans.PREMIUM_MONTH_TIER_2, v.SubscriptionPlans.PREMIUM_YEAR_TIER_1, v.SubscriptionPlans.PREMIUM_MONTH_TIER_1, v.SubscriptionPlans.PREMIUM_YEAR_TIER_0],
-                    [v.SubscriptionPlans.PREMIUM_YEAR_TIER_0]: [v.SubscriptionPlans.PREMIUM_YEAR_TIER_2, v.SubscriptionPlans.PREMIUM_MONTH_TIER_2, v.SubscriptionPlans.PREMIUM_YEAR_TIER_1, v.SubscriptionPlans.PREMIUM_MONTH_TIER_1],
-                    [v.SubscriptionPlans.PREMIUM_MONTH_TIER_1]: [v.SubscriptionPlans.PREMIUM_YEAR_TIER_2, v.SubscriptionPlans.PREMIUM_MONTH_TIER_2, v.SubscriptionPlans.PREMIUM_YEAR_TIER_1],
-                    [v.SubscriptionPlans.PREMIUM_YEAR_TIER_1]: [v.SubscriptionPlans.PREMIUM_YEAR_TIER_2],
-                    [v.SubscriptionPlans.PREMIUM_MONTH_TIER_2]: [v.SubscriptionPlans.PREMIUM_YEAR_TIER_2],
-                    [v.SubscriptionPlans.PREMIUM_YEAR_TIER_2]: [],
-                    ALL: [v.SubscriptionPlans.NONE_MONTH, v.SubscriptionPlans.NONE_YEAR, v.SubscriptionPlans.PREMIUM_YEAR_TIER_2, v.SubscriptionPlans.PREMIUM_MONTH_TIER_2, v.SubscriptionPlans.PREMIUM_YEAR_TIER_1, v.SubscriptionPlans.PREMIUM_MONTH_TIER_1, v.SubscriptionPlans.PREMIUM_YEAR_TIER_0, v.SubscriptionPlans.PREMIUM_MONTH_TIER_0]
+                w = new c.default("PremiumUtils.tsx"),
+                B = {
+                    [y.SubscriptionPlans.NONE_MONTH]: [y.SubscriptionPlans.NONE_YEAR, y.SubscriptionPlans.PREMIUM_YEAR_TIER_2, y.SubscriptionPlans.PREMIUM_MONTH_TIER_2, y.SubscriptionPlans.PREMIUM_YEAR_TIER_1, y.SubscriptionPlans.PREMIUM_MONTH_TIER_1],
+                    [y.SubscriptionPlans.NONE_YEAR]: [y.SubscriptionPlans.PREMIUM_YEAR_TIER_2, y.SubscriptionPlans.PREMIUM_MONTH_TIER_2, y.SubscriptionPlans.PREMIUM_YEAR_TIER_1, y.SubscriptionPlans.PREMIUM_MONTH_TIER_1],
+                    [y.SubscriptionPlans.PREMIUM_MONTH_TIER_0]: [y.SubscriptionPlans.PREMIUM_YEAR_TIER_2, y.SubscriptionPlans.PREMIUM_MONTH_TIER_2, y.SubscriptionPlans.PREMIUM_YEAR_TIER_1, y.SubscriptionPlans.PREMIUM_MONTH_TIER_1, y.SubscriptionPlans.PREMIUM_YEAR_TIER_0],
+                    [y.SubscriptionPlans.PREMIUM_YEAR_TIER_0]: [y.SubscriptionPlans.PREMIUM_YEAR_TIER_2, y.SubscriptionPlans.PREMIUM_MONTH_TIER_2, y.SubscriptionPlans.PREMIUM_YEAR_TIER_1, y.SubscriptionPlans.PREMIUM_MONTH_TIER_1],
+                    [y.SubscriptionPlans.PREMIUM_MONTH_TIER_1]: [y.SubscriptionPlans.PREMIUM_YEAR_TIER_2, y.SubscriptionPlans.PREMIUM_MONTH_TIER_2, y.SubscriptionPlans.PREMIUM_YEAR_TIER_1],
+                    [y.SubscriptionPlans.PREMIUM_YEAR_TIER_1]: [y.SubscriptionPlans.PREMIUM_YEAR_TIER_2],
+                    [y.SubscriptionPlans.PREMIUM_MONTH_TIER_2]: [y.SubscriptionPlans.PREMIUM_YEAR_TIER_2],
+                    [y.SubscriptionPlans.PREMIUM_YEAR_TIER_2]: [],
+                    ALL: [y.SubscriptionPlans.NONE_MONTH, y.SubscriptionPlans.NONE_YEAR, y.SubscriptionPlans.PREMIUM_YEAR_TIER_2, y.SubscriptionPlans.PREMIUM_MONTH_TIER_2, y.SubscriptionPlans.PREMIUM_YEAR_TIER_1, y.SubscriptionPlans.PREMIUM_MONTH_TIER_1, y.SubscriptionPlans.PREMIUM_YEAR_TIER_0, y.SubscriptionPlans.PREMIUM_MONTH_TIER_0]
                 };
 
-            function w(e) {
-                return e.items.find(e => v.PREMIUM_PLANS.has(e.planId))
+            function k(e) {
+                return e.items.find(e => y.PREMIUM_PLANS.has(e.planId))
             }
 
-            function B(e) {
+            function V(e) {
                 var t;
                 let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-                    r = null !== (t = S.default.defaultPaymentSourceId) && void 0 !== t ? t : void 0,
-                    s = A.default.getPremiumTypeSubscription();
-                return null != s && null != s.paymentSourceId && (r = s.paymentSourceId), k(e, n, i, {
+                    r = null !== (t = A.default.defaultPaymentSourceId) && void 0 !== t ? t : void 0,
+                    s = N.default.getPremiumTypeSubscription();
+                return null != s && null != s.paymentSourceId && (r = s.paymentSourceId), F(e, n, i, {
                     paymentSourceId: r
                 })
             }
 
-            function k(e) {
+            function F(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                     i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {},
@@ -259563,21 +259774,21 @@
                         paymentSourceId: r,
                         currency: s
                     } = i;
-                if (null != h.default.get(e)) {
-                    let i = L.PriceSetAssignmentPurchaseTypes.DEFAULT;
-                    n ? i = L.PriceSetAssignmentPurchaseTypes.GIFT : t && (i = L.PriceSetAssignmentPurchaseTypes.PREMIUM_TIER_1);
+                if (null != m.default.get(e)) {
+                    let i = v.PriceSetAssignmentPurchaseTypes.DEFAULT;
+                    n ? i = v.PriceSetAssignmentPurchaseTypes.GIFT : t && (i = v.PriceSetAssignmentPurchaseTypes.PREMIUM_TIER_1);
                     let a = function(e) {
                         let {
                             paymentSourceId: t,
                             purchaseType: n,
                             currency: i
                         } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
-                            purchaseType: L.PriceSetAssignmentPurchaseTypes.DEFAULT
-                        }, r = V(e, {
+                            purchaseType: v.PriceSetAssignmentPurchaseTypes.DEFAULT
+                        }, r = x(e, {
                             paymentSourceId: t,
                             purchaseType: n
                         });
-                        return (0 === r.length && b.warn("No prices found for planId: ".concat(e, ", paymentSourceId: ").concat(t, ", purchaseType: ").concat(n)), null != i) ? r.find(e => e.currency === i) : r[0]
+                        return (0 === r.length && w.warn("No prices found for planId: ".concat(e, ", paymentSourceId: ").concat(t, ", purchaseType: ").concat(n)), null != i) ? r.find(e => e.currency === i) : r[0]
                     }(e, {
                         paymentSourceId: r,
                         purchaseType: i,
@@ -259585,7 +259796,7 @@
                     });
                     if (null == a) {
                         let t = Error("Couldn't find price");
-                        throw (0, m.captureBillingException)(t, {
+                        throw (0, O.captureBillingException)(t, {
                             extra: {
                                 paymentSourceId: r
                             },
@@ -259599,7 +259810,7 @@
                     return a
                 }
                 let a = Error("Plan not found");
-                throw (0, m.captureBillingException)(a, {
+                throw (0, O.captureBillingException)(a, {
                     tags: {
                         planId: e,
                         currency: null != s ? s : "unknown"
@@ -259611,17 +259822,17 @@
                 }), a
             }(s = i || (i = {})).BUNDLE = "bundle", s.TIER_0 = "tier_0", s.TIER_1 = "tier_1", s.TIER_2 = "tier_2", s.PREMIUM_GUILD = "premium_guild", (a = r || (r = {})).MID = "mid", a.HIGH = "high";
 
-            function V(e) {
+            function x(e) {
                 let {
                     paymentSourceId: t,
                     purchaseType: n
                 } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
-                    purchaseType: L.PriceSetAssignmentPurchaseTypes.DEFAULT
+                    purchaseType: v.PriceSetAssignmentPurchaseTypes.DEFAULT
                 }, i = function(e, t) {
-                    let n = h.default.get(e);
+                    let n = m.default.get(e);
                     if (null == n) {
                         let n = Error("Plan not found");
-                        throw (0, m.captureBillingException)(n, {
+                        throw (0, O.captureBillingException)(n, {
                             tags: {
                                 planId: e,
                                 purchaseType: t.toString()
@@ -259630,15 +259841,15 @@
                     }
                     if (null == n.prices) throw Error("No prices returned for ".concat(e, ", is your user in the experiment?"));
                     let i = n.prices[t];
-                    if (null == i) throw b.info("Purchase types: ".concat(JSON.stringify(Object.keys(n.prices)))), Error("No prices returned for purchase type ".concat(t, " for plan ").concat(e));
+                    if (null == i) throw w.info("Purchase types: ".concat(JSON.stringify(Object.keys(n.prices)))), Error("No prices returned for purchase type ".concat(t, " for plan ").concat(e));
                     return i
                 }(e, n);
                 if (null != t) {
                     let r = i.paymentSourcePrices[t];
                     if (null == r) {
-                        b.info("Payment sources IDs: ".concat(JSON.stringify(Object.keys(i.paymentSourcePrices)))), b.info("prices: ".concat(r));
+                        w.info("Payment sources IDs: ".concat(JSON.stringify(Object.keys(i.paymentSourcePrices)))), w.info("prices: ".concat(r));
                         let s = Error("Missing prices for payment source on subscription plan");
-                        (0, m.captureBillingException)(s, {
+                        (0, O.captureBillingException)(s, {
                             extra: {
                                 paymentSourceId: t
                             },
@@ -259650,9 +259861,9 @@
                     } else if (0 !== r.length) return r
                 }
                 if (null == i.countryPrices.prices) {
-                    b.info("countryPrices: ".concat(JSON.stringify(i.countryPrices)));
+                    w.info("countryPrices: ".concat(JSON.stringify(i.countryPrices)));
                     let t = Error("Missing prices for country");
-                    throw (0, m.captureBillingException)(t, {
+                    throw (0, O.captureBillingException)(t, {
                         tags: {
                             countryCode: i.countryPrices.countryCode,
                             planId: e
@@ -259662,342 +259873,342 @@
                 return i.countryPrices.prices
             }
 
-            function F(e) {
-                switch (e) {
-                    case v.DiscountUserUsageLimitIntervalTypes.MONTH:
-                        return y.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_MONTH;
-                    case v.DiscountUserUsageLimitIntervalTypes.YEAR:
-                        return y.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_YEAR;
-                    case v.DiscountUserUsageLimitIntervalTypes.DAY:
-                    case v.DiscountUserUsageLimitIntervalTypes.WEEK:
-                    default:
-                        throw Error("Unexpected interval")
-                }
-            }
-
-            function x(e, t, n) {
-                let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 1,
-                    r = arguments.length > 4 && void 0 !== arguments[4] && arguments[4],
-                    s = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : v.PremiumTypes.TIER_2;
-                if (t || n) switch (e) {
-                    case v.SubscriptionIntervalTypes.MONTH:
-                        let a = (s === v.PremiumTypes.TIER_0 ? y.default.Messages.BASIC_GIFT_DURATION : y.default.Messages.GIFT_DURATION).format({
-                            timeInterval: y.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_MONTH
-                        });
-                        return r ? a : y.default.Messages.PAYMENT_MODAL_ONE_MONTH;
-                    case v.SubscriptionIntervalTypes.YEAR:
-                        let o = (s === v.PremiumTypes.TIER_0 ? y.default.Messages.BASIC_GIFT_DURATION : y.default.Messages.GIFT_DURATION).format({
-                            timeInterval: y.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_YEAR
-                        });
-                        return r ? o : y.default.Messages.PAYMENT_MODAL_ONE_YEAR;
-                    default:
-                        throw Error("Unexpected interval")
-                }
-                switch (e) {
-                    case v.SubscriptionIntervalTypes.MONTH:
-                        if (1 !== i) return y.default.Messages.MULTI_MONTHS.format({
-                            intervalCount: i
-                        });
-                        return y.default.Messages.MONTHLY;
-                    case v.SubscriptionIntervalTypes.YEAR:
-                        return y.default.Messages.YEARLY;
-                    default:
-                        throw Error("Unexpected interval")
-                }
-            }
-
             function H(e) {
                 switch (e) {
-                    case v.SubscriptionIntervalTypes.MONTH:
-                        return y.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_MONTH;
-                    case v.SubscriptionIntervalTypes.YEAR:
-                        return y.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_YEAR;
+                    case y.DiscountUserUsageLimitIntervalTypes.MONTH:
+                        return U.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_MONTH;
+                    case y.DiscountUserUsageLimitIntervalTypes.YEAR:
+                        return U.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_YEAR;
+                    case y.DiscountUserUsageLimitIntervalTypes.DAY:
+                    case y.DiscountUserUsageLimitIntervalTypes.WEEK:
                     default:
                         throw Error("Unexpected interval")
                 }
             }
 
-            function Y(e) {
-                let t = v.SubscriptionPlanInfo[e];
+            function Y(e, t, n) {
+                let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 1,
+                    r = arguments.length > 4 && void 0 !== arguments[4] && arguments[4],
+                    s = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : y.PremiumTypes.TIER_2;
+                if (t || n) switch (e) {
+                    case y.SubscriptionIntervalTypes.MONTH:
+                        let a = (s === y.PremiumTypes.TIER_0 ? U.default.Messages.BASIC_GIFT_DURATION : U.default.Messages.GIFT_DURATION).format({
+                            timeInterval: U.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_MONTH
+                        });
+                        return r ? a : U.default.Messages.PAYMENT_MODAL_ONE_MONTH;
+                    case y.SubscriptionIntervalTypes.YEAR:
+                        let o = (s === y.PremiumTypes.TIER_0 ? U.default.Messages.BASIC_GIFT_DURATION : U.default.Messages.GIFT_DURATION).format({
+                            timeInterval: U.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_YEAR
+                        });
+                        return r ? o : U.default.Messages.PAYMENT_MODAL_ONE_YEAR;
+                    default:
+                        throw Error("Unexpected interval")
+                }
+                switch (e) {
+                    case y.SubscriptionIntervalTypes.MONTH:
+                        if (1 !== i) return U.default.Messages.MULTI_MONTHS.format({
+                            intervalCount: i
+                        });
+                        return U.default.Messages.MONTHLY;
+                    case y.SubscriptionIntervalTypes.YEAR:
+                        return U.default.Messages.YEARLY;
+                    default:
+                        throw Error("Unexpected interval")
+                }
+            }
+
+            function j(e) {
+                switch (e) {
+                    case y.SubscriptionIntervalTypes.MONTH:
+                        return U.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_MONTH;
+                    case y.SubscriptionIntervalTypes.YEAR:
+                        return U.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_YEAR;
+                    default:
+                        throw Error("Unexpected interval")
+                }
+            }
+
+            function W(e) {
+                let t = y.SubscriptionPlanInfo[e];
                 if (null != t) return t.premiumType;
                 let n = Error("Unsupported plan");
-                throw (0, m.captureBillingException)(n, {
+                throw (0, O.captureBillingException)(n, {
                     tags: {
                         planId: e
                     }
                 }), n
             }
 
-            function j(e) {
+            function K(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                     i = arguments.length > 3 ? arguments[3] : void 0;
                 switch (e) {
-                    case v.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
-                        return t ? y.default.Messages.PREMIUM_PLAN_MONTH_TIER_0_TRIAL_DURATION.format({
+                    case y.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
+                        return t ? U.default.Messages.PREMIUM_PLAN_MONTH_TIER_0_TRIAL_DURATION.format({
                             duration: i
-                        }) : n ? y.default.Messages.PREMIUM_PLAN_ONE_MONTH_TIER_0 : y.default.Messages.PREMIUM_PLAN_MONTH_TIER_0;
-                    case v.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
-                        return t ? y.default.Messages.PREMIUM_PLAN_YEAR_TIER_0_TRIAL_DURATION.format({
+                        }) : n ? U.default.Messages.PREMIUM_PLAN_ONE_MONTH_TIER_0 : U.default.Messages.PREMIUM_PLAN_MONTH_TIER_0;
+                    case y.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
+                        return t ? U.default.Messages.PREMIUM_PLAN_YEAR_TIER_0_TRIAL_DURATION.format({
                             duration: i
-                        }) : n ? y.default.Messages.PREMIUM_PLAN_ONE_YEAR_TIER_0 : y.default.Messages.PREMIUM_PLAN_YEAR_TIER_0;
-                    case v.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
-                        return n ? y.default.Messages.PREMIUM_PLAN_ONE_MONTH_TIER_1 : y.default.Messages.PREMIUM_PLAN_MONTH_TIER_1;
-                    case v.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
-                        return n ? y.default.Messages.PREMIUM_PLAN_ONE_YEAR_TIER_1 : y.default.Messages.PREMIUM_PLAN_YEAR_TIER_1;
-                    case v.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
-                        return t ? y.default.Messages.PREMIUM_PLAN_MONTH_TIER_2_TRIAL_DURATION.format({
+                        }) : n ? U.default.Messages.PREMIUM_PLAN_ONE_YEAR_TIER_0 : U.default.Messages.PREMIUM_PLAN_YEAR_TIER_0;
+                    case y.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
+                        return n ? U.default.Messages.PREMIUM_PLAN_ONE_MONTH_TIER_1 : U.default.Messages.PREMIUM_PLAN_MONTH_TIER_1;
+                    case y.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
+                        return n ? U.default.Messages.PREMIUM_PLAN_ONE_YEAR_TIER_1 : U.default.Messages.PREMIUM_PLAN_YEAR_TIER_1;
+                    case y.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
+                        return t ? U.default.Messages.PREMIUM_PLAN_MONTH_TIER_2_TRIAL_DURATION.format({
                             duration: i
-                        }) : n ? y.default.Messages.PREMIUM_PLAN_ONE_MONTH_TIER_2 : y.default.Messages.PREMIUM_PLAN_MONTH_TIER_2;
-                    case v.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
-                        return t ? y.default.Messages.PREMIUM_PLAN_YEAR_TIER_2_TRIAL_DURATION.format({
+                        }) : n ? U.default.Messages.PREMIUM_PLAN_ONE_MONTH_TIER_2 : U.default.Messages.PREMIUM_PLAN_MONTH_TIER_2;
+                    case y.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
+                        return t ? U.default.Messages.PREMIUM_PLAN_YEAR_TIER_2_TRIAL_DURATION.format({
                             duration: i
-                        }) : n ? y.default.Messages.PREMIUM_PLAN_ONE_YEAR_TIER_2 : y.default.Messages.PREMIUM_PLAN_YEAR_TIER_2;
-                    case v.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
-                        return y.default.Messages.PREMIUM_PLAN_3_MONTH_TIER_2;
-                    case v.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
-                        return y.default.Messages.PREMIUM_PLAN_6_MONTH_TIER_2;
-                    case v.SubscriptionPlans.PREMIUM_MONTH_GUILD:
-                        return n ? y.default.Messages.PREMIUM_GUILD_PLAN_SINGLE_MONTH : y.default.Messages.PREMIUM_GUILD_PLAN_MONTH;
-                    case v.SubscriptionPlans.PREMIUM_YEAR_GUILD:
-                        return n ? y.default.Messages.PREMIUM_GUILD_PLAN_SINGLE_YEAR : y.default.Messages.PREMIUM_GUILD_PLAN_YEAR;
-                    case v.SubscriptionPlans.PREMIUM_3_MONTH_GUILD:
-                        return y.default.Messages.PREMIUM_GUILD_PLAN_3_MONTH;
-                    case v.SubscriptionPlans.PREMIUM_6_MONTH_GUILD:
-                        return y.default.Messages.PREMIUM_GUILD_PLAN_6_MONTH;
-                    case v.SubscriptionPlans.PREMIUM_MONTH_LEGACY:
-                        return y.default.Messages.PREMIUM_PLAN_MONTH;
-                    case v.SubscriptionPlans.PREMIUM_YEAR_LEGACY:
-                        return y.default.Messages.PREMIUM_PLAN_YEAR
+                        }) : n ? U.default.Messages.PREMIUM_PLAN_ONE_YEAR_TIER_2 : U.default.Messages.PREMIUM_PLAN_YEAR_TIER_2;
+                    case y.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
+                        return U.default.Messages.PREMIUM_PLAN_3_MONTH_TIER_2;
+                    case y.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
+                        return U.default.Messages.PREMIUM_PLAN_6_MONTH_TIER_2;
+                    case y.SubscriptionPlans.PREMIUM_MONTH_GUILD:
+                        return n ? U.default.Messages.PREMIUM_GUILD_PLAN_SINGLE_MONTH : U.default.Messages.PREMIUM_GUILD_PLAN_MONTH;
+                    case y.SubscriptionPlans.PREMIUM_YEAR_GUILD:
+                        return n ? U.default.Messages.PREMIUM_GUILD_PLAN_SINGLE_YEAR : U.default.Messages.PREMIUM_GUILD_PLAN_YEAR;
+                    case y.SubscriptionPlans.PREMIUM_3_MONTH_GUILD:
+                        return U.default.Messages.PREMIUM_GUILD_PLAN_3_MONTH;
+                    case y.SubscriptionPlans.PREMIUM_6_MONTH_GUILD:
+                        return U.default.Messages.PREMIUM_GUILD_PLAN_6_MONTH;
+                    case y.SubscriptionPlans.PREMIUM_MONTH_LEGACY:
+                        return U.default.Messages.PREMIUM_PLAN_MONTH;
+                    case y.SubscriptionPlans.PREMIUM_YEAR_LEGACY:
+                        return U.default.Messages.PREMIUM_PLAN_YEAR
                 }
                 let r = Error("Unsupported plan");
-                throw (0, m.captureBillingException)(r, {
+                throw (0, O.captureBillingException)(r, {
                     tags: {
                         planId: e
                     }
                 }), r
             }
 
-            function W(e) {
+            function z(e) {
                 switch (e) {
-                    case v.PremiumSubscriptionSKUs.TIER_0:
-                        return y.default.Messages.PREMIUM_TIER_0;
-                    case v.PremiumSubscriptionSKUs.TIER_1:
-                        return y.default.Messages.PREMIUM_TIER_1;
-                    case v.PremiumSubscriptionSKUs.TIER_2:
-                        return y.default.Messages.PREMIUM_TIER_2
+                    case y.PremiumSubscriptionSKUs.TIER_0:
+                        return U.default.Messages.PREMIUM_TIER_0;
+                    case y.PremiumSubscriptionSKUs.TIER_1:
+                        return U.default.Messages.PREMIUM_TIER_1;
+                    case y.PremiumSubscriptionSKUs.TIER_2:
+                        return U.default.Messages.PREMIUM_TIER_2
                 }
                 let t = Error("Unsupported sku");
-                throw (0, m.captureBillingException)(t, {
+                throw (0, O.captureBillingException)(t, {
                     tags: {
                         skuId: e
                     }
                 }), t
             }
 
-            function K(e) {
+            function X(e) {
                 switch (e) {
-                    case v.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
-                    case v.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
-                        return y.default.Messages.PREMIUM_TIER_0;
-                    case v.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
-                    case v.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
-                        return y.default.Messages.PREMIUM_TIER_1;
-                    case v.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
-                    case v.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
-                    case v.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
-                    case v.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
-                        return y.default.Messages.PREMIUM_TIER_2
+                    case y.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
+                    case y.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
+                        return U.default.Messages.PREMIUM_TIER_0;
+                    case y.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
+                    case y.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
+                        return U.default.Messages.PREMIUM_TIER_1;
+                    case y.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
+                    case y.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
+                    case y.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
+                    case y.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
+                        return U.default.Messages.PREMIUM_TIER_2
                 }
                 let t = Error("Unsupported plan");
-                throw (0, m.captureBillingException)(t, {
+                throw (0, O.captureBillingException)(t, {
                     tags: {
                         planId: e
                     }
                 }), t
             }
 
-            function z(e) {
+            function Q(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
                 switch (e) {
-                    case v.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
-                    case v.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
+                    case y.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
+                    case y.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
                         return t ? "Basic" : "Nitro Basic";
-                    case v.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
-                    case v.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
+                    case y.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
+                    case y.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
                         return t ? "Classic" : "Nitro Classic";
-                    case v.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
-                    case v.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
-                    case v.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
-                    case v.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
+                    case y.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
+                    case y.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
+                    case y.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
+                    case y.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
                         return "Nitro"
                 }
                 let n = Error("Unsupported plan");
-                throw (0, m.captureBillingException)(n, {
+                throw (0, O.captureBillingException)(n, {
                     tags: {
                         planId: e
                     }
                 }), n
             }
 
-            function X(e) {
+            function q(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
                 switch (e) {
-                    case v.PremiumTypes.TIER_0:
-                        return t ? "Basic" : y.default.Messages.PREMIUM_TIER_0;
-                    case v.PremiumTypes.TIER_1:
-                        return t ? "Classic" : y.default.Messages.PREMIUM_TIER_1;
-                    case v.PremiumTypes.TIER_2:
-                        return y.default.Messages.PREMIUM_TIER_2
+                    case y.PremiumTypes.TIER_0:
+                        return t ? "Basic" : U.default.Messages.PREMIUM_TIER_0;
+                    case y.PremiumTypes.TIER_1:
+                        return t ? "Classic" : U.default.Messages.PREMIUM_TIER_1;
+                    case y.PremiumTypes.TIER_2:
+                        return U.default.Messages.PREMIUM_TIER_2
                 }
             }
 
-            function Q(e) {
+            function J(e) {
                 var t, n, i, r, s, a, o, l, u;
                 let {
                     subscription: _,
                     planId: c,
                     price: E,
                     includePremiumGuilds: I,
-                    hasDiscountApplied: f,
-                    activeDiscountInfo: S,
+                    hasDiscountApplied: T,
+                    activeDiscountInfo: f,
                     renewalInvoicePreview: h
-                } = e, A = C.default.formatPriceString(C.default.getDefaultPrice(v.SubscriptionPlans.PREMIUM_MONTH_TIER_2), v.SubscriptionIntervalTypes.MONTH), m = ec(_) || null == _.paymentSourceId && !_.isPurchasedExternally && !(null === (t = T.default.getCurrentUser()) || void 0 === t ? void 0 : t.hasFreePremium()), N = null != E, O = _.status === L.SubscriptionStatusTypes.UNPAID && null !== _.latestInvoice && (null === (n = _.latestInvoice) || void 0 === n ? void 0 : n.status) === L.InvoiceStatusTypes.OPEN, p = m ? L.SubscriptionStatusTypes.CANCELED : O ? L.SubscriptionStatusTypes.UNPAID : _.status, R = null === (s = null !== (r = null == h ? void 0 : h.taxInclusive) && void 0 !== r ? r : null === (i = _.latestInvoice) || void 0 === i ? void 0 : i.taxInclusive) || void 0 === s || s, g = v.NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM + (I ? et(_.additionalPlans) : 0);
+                } = e, A = L.default.formatPriceString(L.default.getDefaultPrice(y.SubscriptionPlans.PREMIUM_MONTH_TIER_2), y.SubscriptionIntervalTypes.MONTH), m = eI(_) || null == _.paymentSourceId && !_.isPurchasedExternally && !(null === (t = S.default.getCurrentUser()) || void 0 === t ? void 0 : t.hasFreePremium()), N = null != E, O = _.status === v.SubscriptionStatusTypes.UNPAID && null !== _.latestInvoice && (null === (n = _.latestInvoice) || void 0 === n ? void 0 : n.status) === v.InvoiceStatusTypes.OPEN, p = m ? v.SubscriptionStatusTypes.CANCELED : O ? v.SubscriptionStatusTypes.UNPAID : _.status, R = null === (s = null !== (r = null == h ? void 0 : h.taxInclusive) && void 0 !== r ? r : null === (i = _.latestInvoice) || void 0 === i ? void 0 : i.taxInclusive) || void 0 === s || s, C = y.NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM + (I ? ei(_.additionalPlans) : 0);
                 switch (c) {
-                    case v.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
-                    case v.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
+                    case y.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
+                    case y.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
                         switch (p) {
-                            case L.SubscriptionStatusTypes.CANCELED:
-                                return N ? R ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION.format({
+                            case v.SubscriptionStatusTypes.CANCELED:
+                                return N ? R ? U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION.format({
                                     price: E
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION_TAX_EXCLUSIVE.format({
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION_TAX_EXCLUSIVE.format({
                                     price: E
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION_NO_PRICE;
-                            case L.SubscriptionStatusTypes.ACCOUNT_HOLD:
-                                return N ? R ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD.format({
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION_NO_PRICE;
+                            case v.SubscriptionStatusTypes.ACCOUNT_HOLD:
+                                return N ? R ? U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD.format({
                                     price: E
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD_TAX_EXCLUSIVE.format({
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD_TAX_EXCLUSIVE.format({
                                     price: E
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD_NO_PRICE.format();
-                            case L.SubscriptionStatusTypes.UNPAID:
-                                return y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAYMENT.format();
-                            case L.SubscriptionStatusTypes.PAUSE_PENDING:
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD_NO_PRICE.format();
+                            case v.SubscriptionStatusTypes.UNPAID:
+                                return U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAYMENT.format();
+                            case v.SubscriptionStatusTypes.PAUSE_PENDING:
+                                let g = null != _.pauseEndsAt ? d()(_.pauseEndsAt).diff(_.currentPeriodEnd, "days") : null;
+                                return null != g ? U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING.format({
+                                    pauseDate: _.currentPeriodEnd,
+                                    pauseDuration: g
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING_NO_DURATION.format({
+                                    pauseDate: _.currentPeriodEnd
+                                });
+                            case v.SubscriptionStatusTypes.PAUSED:
+                                return U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED.format({
+                                    resumeDate: _.pauseEndsAt
+                                });
+                            default:
+                                return N ? R ? U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0.format({
+                                    price: E
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_TAX_EXCLUSIVE.format({
+                                    price: E
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_NO_PRICE
+                        }
+                    case y.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
+                    case y.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
+                        switch (p) {
+                            case v.SubscriptionStatusTypes.CANCELED:
+                                return N ? R ? U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION.format({
+                                    price: E
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION_TAX_EXCLUSIVE.format({
+                                    price: E
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION_NO_PRICE;
+                            case v.SubscriptionStatusTypes.ACCOUNT_HOLD:
+                                return N ? R ? U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD.format({
+                                    price: E
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_TAX_EXCLUSIVE.format({
+                                    price: E
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_NO_PRICE.format();
+                            case v.SubscriptionStatusTypes.UNPAID:
+                                return U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAYMENT.format();
+                            case v.SubscriptionStatusTypes.PAUSE_PENDING:
                                 let D = null != _.pauseEndsAt ? d()(_.pauseEndsAt).diff(_.currentPeriodEnd, "days") : null;
-                                return null != D ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING.format({
+                                return null != D ? U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING.format({
                                     pauseDate: _.currentPeriodEnd,
                                     pauseDuration: D
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING_NO_DURATION.format({
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING_NO_DURATION.format({
                                     pauseDate: _.currentPeriodEnd
                                 });
-                            case L.SubscriptionStatusTypes.PAUSED:
-                                return y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED.format({
+                            case v.SubscriptionStatusTypes.PAUSED:
+                                return U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED.format({
                                     resumeDate: _.pauseEndsAt
                                 });
                             default:
-                                return N ? R ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0.format({
+                                return N ? R ? U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1.format({
                                     price: E
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_TAX_EXCLUSIVE.format({
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_TAX_EXCLUSIVE.format({
                                     price: E
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_NO_PRICE
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_NO_PRICE
                         }
-                    case v.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
-                    case v.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
+                    case y.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
+                    case y.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
+                    case y.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
+                    case y.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
                         switch (p) {
-                            case L.SubscriptionStatusTypes.CANCELED:
-                                return N ? R ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION.format({
-                                    price: E
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION_TAX_EXCLUSIVE.format({
-                                    price: E
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION_NO_PRICE;
-                            case L.SubscriptionStatusTypes.ACCOUNT_HOLD:
-                                return N ? R ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD.format({
-                                    price: E
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_TAX_EXCLUSIVE.format({
-                                    price: E
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_NO_PRICE.format();
-                            case L.SubscriptionStatusTypes.UNPAID:
-                                return y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAYMENT.format();
-                            case L.SubscriptionStatusTypes.PAUSE_PENDING:
+                            case v.SubscriptionStatusTypes.CANCELED:
+                                return N ? R ? U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION.format({
+                                    price: E,
+                                    num: C
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION_TAX_EXCLUSIVE.format({
+                                    price: E,
+                                    num: C
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION_NO_PRICE.format({
+                                    num: C
+                                });
+                            case v.SubscriptionStatusTypes.ACCOUNT_HOLD:
+                                return N ? R ? U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD.format({
+                                    price: E,
+                                    num: C
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD_TAX_EXCLUSIVE.format({
+                                    price: E,
+                                    num: C
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD_NO_PRICE.format({
+                                    num: C
+                                });
+                            case v.SubscriptionStatusTypes.UNPAID:
+                                return U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAYMENT.format({
+                                    num: C
+                                });
+                            case v.SubscriptionStatusTypes.PAUSE_PENDING:
                                 let M = null != _.pauseEndsAt ? d()(_.pauseEndsAt).diff(_.currentPeriodEnd, "days") : null;
-                                return null != M ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING.format({
+                                return null != M ? U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING.format({
                                     pauseDate: _.currentPeriodEnd,
                                     pauseDuration: M
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING_NO_DURATION.format({
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING_NO_DURATION.format({
                                     pauseDate: _.currentPeriodEnd
                                 });
-                            case L.SubscriptionStatusTypes.PAUSED:
-                                return y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED.format({
+                            case v.SubscriptionStatusTypes.PAUSED:
+                                return U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED.format({
                                     resumeDate: _.pauseEndsAt
                                 });
-                            default:
-                                return N ? R ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1.format({
-                                    price: E
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_TAX_EXCLUSIVE.format({
-                                    price: E
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_NO_PRICE
-                        }
-                    case v.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
-                    case v.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
-                    case v.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
-                    case v.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
-                        switch (p) {
-                            case L.SubscriptionStatusTypes.CANCELED:
-                                return N ? R ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION.format({
-                                    price: E,
-                                    num: g
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION_TAX_EXCLUSIVE.format({
-                                    price: E,
-                                    num: g
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION_NO_PRICE.format({
-                                    num: g
-                                });
-                            case L.SubscriptionStatusTypes.ACCOUNT_HOLD:
-                                return N ? R ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD.format({
-                                    price: E,
-                                    num: g
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD_TAX_EXCLUSIVE.format({
-                                    price: E,
-                                    num: g
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD_NO_PRICE.format({
-                                    num: g
-                                });
-                            case L.SubscriptionStatusTypes.UNPAID:
-                                return y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAYMENT.format({
-                                    num: g
-                                });
-                            case L.SubscriptionStatusTypes.PAUSE_PENDING:
-                                let P = null != _.pauseEndsAt ? d()(_.pauseEndsAt).diff(_.currentPeriodEnd, "days") : null;
-                                return null != P ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING.format({
-                                    pauseDate: _.currentPeriodEnd,
-                                    pauseDuration: P
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING_NO_DURATION.format({
-                                    pauseDate: _.currentPeriodEnd
-                                });
-                            case L.SubscriptionStatusTypes.PAUSED:
-                                return y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED.format({
-                                    resumeDate: _.pauseEndsAt
-                                });
-                            case L.SubscriptionStatusTypes.BILLING_RETRY:
-                                return y.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO.format({
-                                    endDate: d()(_.currentPeriodStart).add(v.PAID_SUBSCRIPTION_MAX_BILLING_RETRY_DAYS, "days")
+                            case v.SubscriptionStatusTypes.BILLING_RETRY:
+                                return U.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO.format({
+                                    endDate: d()(_.currentPeriodStart).add(y.PAID_SUBSCRIPTION_MAX_BILLING_RETRY_DAYS, "days")
                                 });
                             default:
-                                return f ? R ? y.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC.format({
-                                    percent: null !== (a = null == S ? void 0 : S.percentage) && void 0 !== a ? a : v.DISCOUNT_PERCENTAGE_FALLBACK,
+                                return T ? R ? U.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC.format({
+                                    percent: null !== (a = null == f ? void 0 : f.percentage) && void 0 !== a ? a : y.DISCOUNT_PERCENTAGE_FALLBACK,
                                     regularPrice: A,
-                                    numMonths: null !== (o = null == S ? void 0 : S.duration) && void 0 !== o ? o : v.DISCOUNT_DURATION_FALLBACK
-                                }) : y.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC_TAX_EXCLUSIVE.format({
-                                    percent: null !== (l = null == S ? void 0 : S.percentage) && void 0 !== l ? l : v.DISCOUNT_PERCENTAGE_FALLBACK,
+                                    numMonths: null !== (o = null == f ? void 0 : f.duration) && void 0 !== o ? o : y.DISCOUNT_DURATION_FALLBACK
+                                }) : U.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC_TAX_EXCLUSIVE.format({
+                                    percent: null !== (l = null == f ? void 0 : f.percentage) && void 0 !== l ? l : y.DISCOUNT_PERCENTAGE_FALLBACK,
                                     regularPrice: A,
-                                    numMonths: null !== (u = null == S ? void 0 : S.duration) && void 0 !== u ? u : v.DISCOUNT_DURATION_FALLBACK
-                                }) : N ? R ? y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2.format({
+                                    numMonths: null !== (u = null == f ? void 0 : f.duration) && void 0 !== u ? u : y.DISCOUNT_DURATION_FALLBACK
+                                }) : N ? R ? U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2.format({
                                     price: E,
-                                    num: g
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_TAX_EXCLUSIVE.format({
+                                    num: C
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_TAX_EXCLUSIVE.format({
                                     price: E,
-                                    num: g
-                                }) : y.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_NO_PRICE.format({
-                                    num: g
+                                    num: C
+                                }) : U.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_NO_PRICE.format({
+                                    num: C
                                 })
                         }
                     default:
@@ -260005,7 +260216,7 @@
                 }
             }
 
-            function q(e) {
+            function Z(e) {
                 let {
                     renewalInvoicePreview: t,
                     subscription: n,
@@ -260013,8 +260224,8 @@
                     includePremiumGuilds: r = !1,
                     hasDiscountApplied: s = !1,
                     activeDiscountInfo: a
-                } = e, o = h.default.get(i);
-                return l()(null != o, "Missing plan"), Q({
+                } = e, o = m.default.get(i);
+                return l()(null != o, "Missing plan"), J({
                     subscription: n,
                     planId: o.id,
                     price: function(e, t, n) {
@@ -260024,11 +260235,11 @@
                                 } = e;
                                 return t === n.id
                             }),
-                            r = null == i ? k(n.id, !1, !1, {
+                            r = null == i ? F(n.id, !1, !1, {
                                 paymentSourceId: t.paymentSourceId,
                                 currency: t.currency
                             }).amount : i.amount;
-                        return (0, g.formatRate)((0, g.formatPrice)(r, e.currency), n.interval, n.intervalCount)
+                        return (0, D.formatRate)((0, D.formatPrice)(r, e.currency), n.interval, n.intervalCount)
                     }(t, n, o),
                     includePremiumGuilds: r,
                     hasDiscountApplied: s,
@@ -260037,19 +260248,19 @@
                 })
             }
 
-            function J(e) {
+            function $(e) {
                 let {
                     planId: t,
                     additionalPlans: n
-                } = e, i = (0, I.isNoneSubscription)(t) ? null : j(t), r = null == n ? void 0 : n.find(e => {
+                } = e, i = (0, f.isNoneSubscription)(t) ? null : K(t), r = null == n ? void 0 : n.find(e => {
                     let {
                         planId: t
                     } = e;
-                    return v.PREMIUM_GUILD_SUBSCRIPTION_PLANS.has(t)
-                }), s = (null == r ? void 0 : r.planId) === v.SubscriptionPlans.PREMIUM_MONTH_GUILD ? y.default.Messages.PREMIUM_GUILD_NUM_MONTH_GUILD_SUBSCRIPTIONS_UNFORMATTED : (null == r ? void 0 : r.planId) === v.SubscriptionPlans.PREMIUM_YEAR_GUILD ? y.default.Messages.PREMIUM_GUILD_NUM_MONTH_GUILD_SUBSCRIPTIONS_UNFORMATTED : null, a = null == s ? void 0 : s.format({
+                    return y.PREMIUM_GUILD_SUBSCRIPTION_PLANS.has(t)
+                }), s = (null == r ? void 0 : r.planId) === y.SubscriptionPlans.PREMIUM_MONTH_GUILD ? U.default.Messages.PREMIUM_GUILD_NUM_MONTH_GUILD_SUBSCRIPTIONS_UNFORMATTED : (null == r ? void 0 : r.planId) === y.SubscriptionPlans.PREMIUM_YEAR_GUILD ? U.default.Messages.PREMIUM_GUILD_NUM_MONTH_GUILD_SUBSCRIPTIONS_UNFORMATTED : null, a = null == s ? void 0 : s.format({
                     num: null == r ? void 0 : r.quantity
                 });
-                if (null != i && null != a) return y.default.Messages.PREMIUM_WITH_PREMIUM_GUILD_EXTERNAL_PLAN_DESCRIPTION.format({
+                if (null != i && null != a) return U.default.Messages.PREMIUM_WITH_PREMIUM_GUILD_EXTERNAL_PLAN_DESCRIPTION.format({
                     premiumDescription: i,
                     premiumGuildDescription: a
                 });
@@ -260058,7 +260269,7 @@
                 else throw Error("Subscription without premium or premium guild subscription")
             }
 
-            function Z(e) {
+            function ee(e) {
                 let {
                     skuId: t,
                     isPremium: n,
@@ -260070,31 +260281,31 @@
                     defaultToMonthlyPlan: l
                 } = e;
                 if (null == t || !n) return [];
-                let u = void 0 !== o && t === v.SubscriptionPlanInfo[o].skuId ? o : void 0;
-                void 0 === u && l && !s && (u = v.PREMIUM_SKU_TO_MONTHLY_PLAN[t]), a && !s && (void 0 === o || l && v.PREMIUM_MONTHLY_PLANS.has(o)) && E.TrialRedemptionDefaultPlanExperiment.trackExposure({
+                let u = void 0 !== o && t === y.SubscriptionPlanInfo[o].skuId ? o : void 0;
+                void 0 === u && l && !s && (u = y.PREMIUM_SKU_TO_MONTHLY_PLAN[t]), a && !s && (void 0 === o || l && y.PREMIUM_MONTHLY_PLANS.has(o)) && T.TrialRedemptionDefaultPlanExperiment.trackExposure({
                     location: "de805e_1"
                 });
                 let d = [];
                 switch (t) {
-                    case v.PremiumSubscriptionSKUs.TIER_0:
-                        d = [v.SubscriptionPlans.PREMIUM_YEAR_TIER_0, v.SubscriptionPlans.PREMIUM_MONTH_TIER_0];
+                    case y.PremiumSubscriptionSKUs.TIER_0:
+                        d = [y.SubscriptionPlans.PREMIUM_YEAR_TIER_0, y.SubscriptionPlans.PREMIUM_MONTH_TIER_0];
                         break;
-                    case v.PremiumSubscriptionSKUs.TIER_1:
-                        d = [v.SubscriptionPlans.PREMIUM_MONTH_TIER_1];
+                    case y.PremiumSubscriptionSKUs.TIER_1:
+                        d = [y.SubscriptionPlans.PREMIUM_MONTH_TIER_1];
                         break;
-                    case v.PremiumSubscriptionSKUs.TIER_2:
+                    case y.PremiumSubscriptionSKUs.TIER_2:
                         let _ = i;
                         if (null != r) {
                             let e = r.items[0].planId;
-                            if (v.MULTI_MONTH_PLANS.has(e)) {
-                                let t = v.SubscriptionPlanInfo[e];
-                                _ = [...(0, v.MULTI_MONTH_PLANS)].filter(e => {
-                                    let n = v.SubscriptionPlanInfo[e];
-                                    return n.interval === t.interval && n.intervalCount === t.intervalCount && n.skuId === v.PremiumSubscriptionSKUs.TIER_2
+                            if (y.MULTI_MONTH_PLANS.has(e)) {
+                                let t = y.SubscriptionPlanInfo[e];
+                                _ = [...(0, y.MULTI_MONTH_PLANS)].filter(e => {
+                                    let n = y.SubscriptionPlanInfo[e];
+                                    return n.interval === t.interval && n.intervalCount === t.intervalCount && n.skuId === y.PremiumSubscriptionSKUs.TIER_2
                                 })
                             } else _ = []
                         }
-                        d = [v.SubscriptionPlans.PREMIUM_YEAR_TIER_2, ..._, v.SubscriptionPlans.PREMIUM_MONTH_TIER_2];
+                        d = [y.SubscriptionPlans.PREMIUM_YEAR_TIER_2, ..._, y.SubscriptionPlans.PREMIUM_MONTH_TIER_2];
                         break;
                     default:
                         throw Error("Unexpected SKU: ".concat(t))
@@ -260106,11 +260317,11 @@
                 return d
             }
 
-            function $(e) {
-                let t = v.SubscriptionPlanInfo[e];
+            function et(e) {
+                let t = y.SubscriptionPlanInfo[e];
                 if (null == t) {
                     let t = Error("Unsupported plan");
-                    throw (0, m.captureBillingException)(t, {
+                    throw (0, O.captureBillingException)(t, {
                         tags: {
                             planId: e
                         }
@@ -260119,13 +260330,13 @@
                 return t.skuId
             }
 
-            function ee(e) {
+            function en(e) {
                 var t;
-                return null == e ? G.ALL : null !== (t = G[e]) && void 0 !== t ? t : []
+                return null == e ? B.ALL : null !== (t = B[e]) && void 0 !== t ? t : []
             }
 
-            function et(e) {
-                let t = h.default.getPlanIdsForSkus([ey(v.PremiumSubscriptionSKUs.GUILD)]);
+            function ei(e) {
+                let t = m.default.getPlanIdsForSkus([eU(y.PremiumSubscriptionSKUs.GUILD)]);
                 l()(null != t, "Missing guildSubscriptionPlanIds");
                 let n = e.find(e => {
                     let {
@@ -260135,21 +260346,21 @@
                 });
                 return null != n ? n.quantity : 0
             }
-            let en = new Set([v.SubscriptionPlans.NONE_MONTH, v.SubscriptionPlans.NONE_3_MONTH, v.SubscriptionPlans.NONE_6_MONTH, v.SubscriptionPlans.NONE_YEAR, v.SubscriptionPlans.PREMIUM_MONTH_TIER_0, v.SubscriptionPlans.PREMIUM_MONTH_TIER_1, v.SubscriptionPlans.PREMIUM_MONTH_TIER_2, v.SubscriptionPlans.PREMIUM_YEAR_TIER_0, v.SubscriptionPlans.PREMIUM_YEAR_TIER_1, v.SubscriptionPlans.PREMIUM_YEAR_TIER_2, v.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2, v.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2]);
-
-            function ei(e) {
-                return en.has(e)
-            }
-
-            function er(e) {
-                return v.PREMIUM_GUILD_SUBSCRIPTION_PLANS.has(e)
-            }
+            let er = new Set([y.SubscriptionPlans.NONE_MONTH, y.SubscriptionPlans.NONE_3_MONTH, y.SubscriptionPlans.NONE_6_MONTH, y.SubscriptionPlans.NONE_YEAR, y.SubscriptionPlans.PREMIUM_MONTH_TIER_0, y.SubscriptionPlans.PREMIUM_MONTH_TIER_1, y.SubscriptionPlans.PREMIUM_MONTH_TIER_2, y.SubscriptionPlans.PREMIUM_YEAR_TIER_0, y.SubscriptionPlans.PREMIUM_YEAR_TIER_1, y.SubscriptionPlans.PREMIUM_YEAR_TIER_2, y.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2, y.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2]);
 
             function es(e) {
-                return ei(e) || er(e)
+                return er.has(e)
             }
 
             function ea(e) {
+                return y.PREMIUM_GUILD_SUBSCRIPTION_PLANS.has(e)
+            }
+
+            function eo(e) {
+                return es(e) || ea(e)
+            }
+
+            function el(e) {
                 var t, n, i, r, s;
                 if (e.isPurchasedViaApple && (null === (t = e.metadata) || void 0 === t ? void 0 : t.apple_grace_period_expires_date) != null) {
                     let t = d()(e.metadata.apple_grace_period_expires_date);
@@ -260167,7 +260378,7 @@
                     }
                 }
                 if (e.isPurchasedExternally) {
-                    let t = e.isPurchasedViaApple ? v.DEFAULT_APPLE_GRACE_PERIOD_DAYS : v.DEFAULT_GOOGLE_GRACE_PERIOD_DAYS;
+                    let t = e.isPurchasedViaApple ? y.DEFAULT_APPLE_GRACE_PERIOD_DAYS : y.DEFAULT_GOOGLE_GRACE_PERIOD_DAYS;
                     return {
                         days: t,
                         expiresDate: d()(e.currentPeriodStart).add(t, "days")
@@ -260178,7 +260389,7 @@
                     expiresDate: d()(e.metadata.grace_period_expires_date)
                 };
                 {
-                    let t = null == e.paymentSourceId ? v.DEFAULT_MAX_GRACE_PERIOD_DAYS : v.PAID_SUBSCRIPTION_MAX_GRACE_PERIOD_DAYS;
+                    let t = null == e.paymentSourceId ? y.DEFAULT_MAX_GRACE_PERIOD_DAYS : y.PAID_SUBSCRIPTION_MAX_GRACE_PERIOD_DAYS;
                     return {
                         days: t,
                         expiresDate: d()(e.currentPeriodStart).add(t, "days")
@@ -260186,24 +260397,24 @@
                 }
             }
 
-            function eo(e) {
+            function eu(e) {
                 if (null == e) return !1;
-                let t = S.default.getPaymentSource(e);
-                return null != t && M.PREPAID_PAYMENT_SOURCES.has(t.type)
+                let t = A.default.getPaymentSource(e);
+                return null != t && P.PREPAID_PAYMENT_SOURCES.has(t.type)
             }
 
-            function el(e) {
-                return e.isPurchasedExternally ? e.status === L.SubscriptionStatusTypes.CANCELED : function(e) {
+            function ed(e) {
+                return e.isPurchasedExternally ? e.status === v.SubscriptionStatusTypes.CANCELED : function(e) {
                     let {
                         renewalMutations: t,
                         additionalPlans: n,
                         status: i
-                    } = e, r = et(n);
-                    return 0 === (null != t ? et(t.additionalPlans) : null) && 0 !== r ? L.SubscriptionStatusTypes.CANCELED : i
-                }(e) === L.SubscriptionStatusTypes.CANCELED
+                    } = e, r = ei(n);
+                    return 0 === (null != t ? ei(t.additionalPlans) : null) && 0 !== r ? v.SubscriptionStatusTypes.CANCELED : i
+                }(e) === v.SubscriptionStatusTypes.CANCELED
             }
 
-            function eu(e) {
+            function e_(e) {
                 var t, n, i;
                 let {
                     subscription: r,
@@ -260213,188 +260424,188 @@
                 } = e, {
                     planId: u,
                     additionalPlans: d
-                } = r, _ = h.default.get(u);
+                } = r, _ = m.default.get(u);
                 l()(null != _, "Missing plan");
-                let c = et(d),
-                    E = eI(r.planId, r.paymentSourceId, r.currency, s).amount * c;
+                let c = ei(d),
+                    E = ef(r.planId, r.paymentSourceId, r.currency, s).amount * c;
                 if (null != o) {
-                    let e = o.invoiceItems.find(e => v.PREMIUM_GUILD_SUBSCRIPTION_PLANS.has(e.subscriptionPlanId));
+                    let e = o.invoiceItems.find(e => y.PREMIUM_GUILD_SUBSCRIPTION_PLANS.has(e.subscriptionPlanId));
                     null != e && (E = e.amount)
                 }
-                a = null != a ? a : (0, g.formatPrice)(E, r.currency);
+                a = null != a ? a : (0, D.formatPrice)(E, r.currency);
                 let I = null === (i = null !== (n = null == o ? void 0 : o.taxInclusive) && void 0 !== n ? n : null === (t = r.latestInvoice) || void 0 === t ? void 0 : t.taxInclusive) || void 0 === i || i;
-                return el(r) ? r.isPurchasedViaGoogle ? y.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION_NO_PRICE.format({
+                return ed(r) ? r.isPurchasedViaGoogle ? U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION_NO_PRICE.format({
                     quantity: c
-                }) : I ? y.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION.format({
+                }) : I ? U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION.format({
                     quantity: c,
-                    rate: (0, g.formatRate)(a, _.interval, _.intervalCount)
-                }) : y.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION_TAX_EXCLUSIVE.format({
+                    rate: (0, D.formatRate)(a, _.interval, _.intervalCount)
+                }) : U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION_TAX_EXCLUSIVE.format({
                     quantity: c,
-                    rate: (0, g.formatRate)(a, _.interval, _.intervalCount)
-                }) : r.status === L.SubscriptionStatusTypes.ACCOUNT_HOLD ? r.isPurchasedViaGoogle ? y.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD_NO_PRICE.format({
+                    rate: (0, D.formatRate)(a, _.interval, _.intervalCount)
+                }) : r.status === v.SubscriptionStatusTypes.ACCOUNT_HOLD ? r.isPurchasedViaGoogle ? U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD_NO_PRICE.format({
                     quantity: c,
                     boostQuantity: c
-                }) : I ? y.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD.format({
+                }) : I ? U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD.format({
                     quantity: c,
                     boostQuantity: c,
-                    rate: (0, g.formatRate)(a, _.interval, _.intervalCount)
-                }) : y.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD_TAX_EXCLUSIVE.format({
+                    rate: (0, D.formatRate)(a, _.interval, _.intervalCount)
+                }) : U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD_TAX_EXCLUSIVE.format({
                     quantity: c,
                     boostQuantity: c,
-                    rate: (0, g.formatRate)(a, _.interval, _.intervalCount)
-                }) : r.isPurchasedViaGoogle ? y.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_NO_PRICE.format({
+                    rate: (0, D.formatRate)(a, _.interval, _.intervalCount)
+                }) : r.isPurchasedViaGoogle ? U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_NO_PRICE.format({
                     quantity: c
-                }) : I ? y.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO.format({
+                }) : I ? U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO.format({
                     quantity: c,
-                    rate: (0, g.formatRate)(a, _.interval, _.intervalCount)
-                }) : y.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_TAX_EXCLUSIVE.format({
+                    rate: (0, D.formatRate)(a, _.interval, _.intervalCount)
+                }) : U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_TAX_EXCLUSIVE.format({
                     quantity: c,
-                    rate: (0, g.formatRate)(a, _.interval, _.intervalCount)
+                    rate: (0, D.formatRate)(a, _.interval, _.intervalCount)
                 })
             }
 
-            function ed(e, t, n) {
+            function ec(e, t, n) {
                 let i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-                    r = null != t ? k(e.id, !1, i, t) : B(e.id, !1, i),
-                    s = (0, g.formatPrice)(r.amount, r.currency);
-                return e.currency !== M.CurrencyCodes.USD && !0 === n && (s = s.concat("*")), s
+                    r = null != t ? F(e.id, !1, i, t) : V(e.id, !1, i),
+                    s = (0, D.formatPrice)(r.amount, r.currency);
+                return e.currency !== P.CurrencyCodes.USD && !0 === n && (s = s.concat("*")), s
             }
 
-            function e_(e, t, n) {
-                let i = ed(e, t, n);
-                return (0, g.formatRate)(i, e.interval, e.intervalCount)
+            function eE(e, t, n) {
+                let i = ec(e, t, n);
+                return (0, D.formatRate)(i, e.interval, e.intervalCount)
             }
 
-            function ec(e) {
+            function eI(e) {
                 let {
                     status: t,
                     renewalMutations: n
                 } = e;
-                return t === L.SubscriptionStatusTypes.CANCELED || null != n && (0, I.isNoneSubscription)(n.planId) && !e.isPurchasedExternally
+                return t === v.SubscriptionStatusTypes.CANCELED || null != n && (0, f.isNoneSubscription)(n.planId) && !e.isPurchasedExternally
             }
 
-            function eE(e) {
-                return e === L.SubscriptionStatusTypes.PAST_DUE || e === L.SubscriptionStatusTypes.ACCOUNT_HOLD || e === L.SubscriptionStatusTypes.BILLING_RETRY
+            function eT(e) {
+                return e === v.SubscriptionStatusTypes.PAST_DUE || e === v.SubscriptionStatusTypes.ACCOUNT_HOLD || e === v.SubscriptionStatusTypes.BILLING_RETRY
             }
 
-            function eI(e, t, n, i) {
+            function ef(e, t, n, i) {
                 let r = null != t ? {
                         paymentSourceId: t,
                         currency: n
                     } : {
-                        country: f.default.ipCountryCodeWithFallback,
+                        country: h.default.ipCountryCodeWithFallback,
                         currency: n
                     },
-                    s = h.default.get(e);
+                    s = m.default.get(e);
                 if (null == s) {
                     let t = Error("Unsupported plan");
-                    throw (0, m.captureBillingException)(t, {
+                    throw (0, O.captureBillingException)(t, {
                         tags: {
                             planId: e
                         }
                     }), t
                 }
-                let a = h.default.getForSkuAndInterval(ey(v.PremiumSubscriptionSKUs.GUILD), s.interval, s.intervalCount);
+                let a = m.default.getForSkuAndInterval(eU(y.PremiumSubscriptionSKUs.GUILD), s.interval, s.intervalCount);
                 if (null == a) {
                     let t = Error("Unsupported plan");
-                    throw (0, m.captureBillingException)(t, {
+                    throw (0, O.captureBillingException)(t, {
                         tags: {
                             planId: e
                         }
                     }), t
                 }
-                return k(a.id, (0, R.isPremium)(i), !1, r)
+                return F(a.id, (0, g.isPremium)(i), !1, r)
             }
 
-            function eT(e, t, n) {
+            function eS(e, t, n) {
                 let i = t.id;
                 if (null != e) switch (i) {
-                    case v.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
-                        return y.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_MONTH_TIER_0;
-                    case v.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
-                        return y.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_YEAR_TIER_0;
-                    case v.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
-                        return y.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_MONTH_TIER_1;
-                    case v.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
-                        return y.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_YEAR_TIER_1;
-                    case v.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
-                        return y.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_MONTH_TIER_2;
-                    case v.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
-                        return y.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_YEAR_TIER_2
+                    case y.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
+                        return U.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_MONTH_TIER_0;
+                    case y.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
+                        return U.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_YEAR_TIER_0;
+                    case y.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
+                        return U.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_MONTH_TIER_1;
+                    case y.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
+                        return U.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_YEAR_TIER_1;
+                    case y.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
+                        return U.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_MONTH_TIER_2;
+                    case y.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
+                        return U.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_YEAR_TIER_2
                 }
                 switch (i) {
-                    case v.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
-                        return n ? y.default.Messages.BILLING_SELECT_PLAN : y.default.Messages.BILLING_SELECT_PLAN_PREMIUM_MONTH_TIER_0;
-                    case v.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
-                        return n ? y.default.Messages.BILLING_SELECT_PLAN : y.default.Messages.BILLING_SELECT_PLAN_PREMIUM_YEAR_TIER_0;
-                    case v.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
-                        return n ? y.default.Messages.BILLING_SELECT_PLAN : y.default.Messages.BILLING_SELECT_PLAN_PREMIUM_MONTH_TIER_1;
-                    case v.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
-                        return n ? y.default.Messages.BILLING_SELECT_PLAN : y.default.Messages.BILLING_SELECT_PLAN_PREMIUM_YEAR_TIER_1;
-                    case v.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
-                        return n ? y.default.Messages.BILLING_SELECT_PLAN : y.default.Messages.BILLING_SELECT_PLAN_PREMIUM_MONTH_TIER_2;
-                    case v.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
-                        return n ? y.default.Messages.BILLING_SELECT_PLAN : y.default.Messages.BILLING_SELECT_PLAN_PREMIUM_YEAR_TIER_2;
-                    case v.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
-                    case v.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
-                        return y.default.Messages.BILLING_SELECT_PLAN_PREMIUM_MONTHS_TIER_2.format({
+                    case y.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
+                        return n ? U.default.Messages.BILLING_SELECT_PLAN : U.default.Messages.BILLING_SELECT_PLAN_PREMIUM_MONTH_TIER_0;
+                    case y.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
+                        return n ? U.default.Messages.BILLING_SELECT_PLAN : U.default.Messages.BILLING_SELECT_PLAN_PREMIUM_YEAR_TIER_0;
+                    case y.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
+                        return n ? U.default.Messages.BILLING_SELECT_PLAN : U.default.Messages.BILLING_SELECT_PLAN_PREMIUM_MONTH_TIER_1;
+                    case y.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
+                        return n ? U.default.Messages.BILLING_SELECT_PLAN : U.default.Messages.BILLING_SELECT_PLAN_PREMIUM_YEAR_TIER_1;
+                    case y.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
+                        return n ? U.default.Messages.BILLING_SELECT_PLAN : U.default.Messages.BILLING_SELECT_PLAN_PREMIUM_MONTH_TIER_2;
+                    case y.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
+                        return n ? U.default.Messages.BILLING_SELECT_PLAN : U.default.Messages.BILLING_SELECT_PLAN_PREMIUM_YEAR_TIER_2;
+                    case y.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
+                    case y.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
+                        return U.default.Messages.BILLING_SELECT_PLAN_PREMIUM_MONTHS_TIER_2.format({
                             intervalCount: t.intervalCount
                         });
-                    case v.SubscriptionPlans.NONE_MONTH:
-                    case v.SubscriptionPlans.NONE_YEAR:
-                    case v.SubscriptionPlans.NONE_3_MONTH:
-                    case v.SubscriptionPlans.NONE_6_MONTH:
-                    case v.SubscriptionPlans.PREMIUM_MONTH_GUILD:
-                    case v.SubscriptionPlans.PREMIUM_YEAR_GUILD:
-                    case v.SubscriptionPlans.PREMIUM_3_MONTH_GUILD:
-                    case v.SubscriptionPlans.PREMIUM_6_MONTH_GUILD:
-                        return y.default.Messages.GUILD_SUBSCRIPTION_PURCHASE_MODAL_SUBMIT
+                    case y.SubscriptionPlans.NONE_MONTH:
+                    case y.SubscriptionPlans.NONE_YEAR:
+                    case y.SubscriptionPlans.NONE_3_MONTH:
+                    case y.SubscriptionPlans.NONE_6_MONTH:
+                    case y.SubscriptionPlans.PREMIUM_MONTH_GUILD:
+                    case y.SubscriptionPlans.PREMIUM_YEAR_GUILD:
+                    case y.SubscriptionPlans.PREMIUM_3_MONTH_GUILD:
+                    case y.SubscriptionPlans.PREMIUM_6_MONTH_GUILD:
+                        return U.default.Messages.GUILD_SUBSCRIPTION_PURCHASE_MODAL_SUBMIT
                 }
                 let r = Error("User is purchasing an unsupported plan");
-                throw (0, m.captureBillingException)(r, {
+                throw (0, O.captureBillingException)(r, {
                     tags: {
                         planId: i
                     }
                 }), r
             }
 
-            function ef(e) {
+            function eh(e) {
                 let t = e.invoiceItems[0].subscriptionPlanId,
-                    n = h.default.get(t);
+                    n = m.default.get(t);
                 return l()(null != n, "Missing subscriptionPlan"), {
                     intervalType: n.interval,
                     intervalCount: n.intervalCount
                 }
             }
 
-            function eS(e) {
+            function eA(e) {
                 let {
-                    intervalType: t = v.SubscriptionIntervalTypes.MONTH,
+                    intervalType: t = y.SubscriptionIntervalTypes.MONTH,
                     intervalCount: n = 1,
                     capitalize: i = !1
                 } = e;
                 switch (t) {
-                    case v.SubscriptionIntervalTypes.DAY:
-                        if (n >= 7 && n % 7 == 0) return i ? y.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_HEADING_WEEKS.format({
+                    case y.SubscriptionIntervalTypes.DAY:
+                        if (n >= 7 && n % 7 == 0) return i ? U.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_HEADING_WEEKS.format({
                             weeks: n / 7
-                        }) : y.default.Messages.PREMIUM_TRIAL_FREE_DURATION_WEEKS.format({
+                        }) : U.default.Messages.PREMIUM_TRIAL_FREE_DURATION_WEEKS.format({
                             weeks: n / 7
                         });
-                        return i ? y.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_HEADING_DAYS.format({
+                        return i ? U.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_HEADING_DAYS.format({
                             days: n
-                        }) : y.default.Messages.PREMIUM_TRIAL_FREE_DURATION_DAYS.format({
+                        }) : U.default.Messages.PREMIUM_TRIAL_FREE_DURATION_DAYS.format({
                             days: n
                         });
-                    case v.SubscriptionIntervalTypes.MONTH:
-                        return i ? y.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_HEADING_MONTHS.format({
+                    case y.SubscriptionIntervalTypes.MONTH:
+                        return i ? U.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_HEADING_MONTHS.format({
                             months: n
-                        }) : y.default.Messages.PREMIUM_TRIAL_FREE_DURATION_MONTHS.format({
+                        }) : U.default.Messages.PREMIUM_TRIAL_FREE_DURATION_MONTHS.format({
                             months: n
                         });
-                    case v.SubscriptionIntervalTypes.YEAR:
-                        return i ? y.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_HEADING_YEARS.format({
+                    case y.SubscriptionIntervalTypes.YEAR:
+                        return i ? U.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_HEADING_YEARS.format({
                             years: n
-                        }) : y.default.Messages.PREMIUM_TRIAL_FREE_DURATION_YEARS.format({
+                        }) : U.default.Messages.PREMIUM_TRIAL_FREE_DURATION_YEARS.format({
                             years: n
                         });
                     default:
@@ -260402,25 +260613,25 @@
                 }
             }
 
-            function eh(e) {
+            function em(e) {
                 let {
-                    intervalType: t = v.SubscriptionIntervalTypes.MONTH,
+                    intervalType: t = y.SubscriptionIntervalTypes.MONTH,
                     intervalCount: n = 1
                 } = e;
                 switch (t) {
-                    case v.SubscriptionIntervalTypes.DAY:
-                        if (n >= 7 && n % 7 == 0) return y.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_CTA_WEEKS.format({
+                    case y.SubscriptionIntervalTypes.DAY:
+                        if (n >= 7 && n % 7 == 0) return U.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_CTA_WEEKS.format({
                             weeks: n / 7
                         });
-                        return y.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_CTA_DAYS.format({
+                        return U.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_CTA_DAYS.format({
                             days: n
                         });
-                    case v.SubscriptionIntervalTypes.MONTH:
-                        return y.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_CTA_MONTHS.format({
+                    case y.SubscriptionIntervalTypes.MONTH:
+                        return U.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_CTA_MONTHS.format({
                             months: n
                         });
-                    case v.SubscriptionIntervalTypes.YEAR:
-                        return y.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_CTA_YEARS.format({
+                    case y.SubscriptionIntervalTypes.YEAR:
+                        return U.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_CTA_YEARS.format({
                             years: n
                         });
                     default:
@@ -260428,34 +260639,34 @@
                 }
             }
 
-            function eA(e) {
+            function eN(e) {
                 let {
-                    intervalType: t = v.SubscriptionIntervalTypes.MONTH,
+                    intervalType: t = y.SubscriptionIntervalTypes.MONTH,
                     intervalCount: n = 1,
                     capitalize: i = !1
                 } = e;
                 switch (t) {
-                    case v.SubscriptionIntervalTypes.DAY:
-                        if (n >= 7 && n % 7 == 0) return i ? y.default.Messages.DURATION_WEEKS_CAPITALIZE.format({
+                    case y.SubscriptionIntervalTypes.DAY:
+                        if (n >= 7 && n % 7 == 0) return i ? U.default.Messages.DURATION_WEEKS_CAPITALIZE.format({
                             weeks: n / 7
-                        }) : y.default.Messages.DURATION_WEEKS.format({
+                        }) : U.default.Messages.DURATION_WEEKS.format({
                             weeks: n / 7
                         });
-                        return i ? y.default.Messages.DURATION_DAYS_CAPITALIZE.format({
+                        return i ? U.default.Messages.DURATION_DAYS_CAPITALIZE.format({
                             days: n
-                        }) : y.default.Messages.DURATION_DAYS.format({
+                        }) : U.default.Messages.DURATION_DAYS.format({
                             days: n
                         });
-                    case v.SubscriptionIntervalTypes.MONTH:
-                        return i ? y.default.Messages.DURATION_MONTHS_CAPITALIZE.format({
+                    case y.SubscriptionIntervalTypes.MONTH:
+                        return i ? U.default.Messages.DURATION_MONTHS_CAPITALIZE.format({
                             months: n
-                        }) : y.default.Messages.DURATION_MONTHS.format({
+                        }) : U.default.Messages.DURATION_MONTHS.format({
                             months: n
                         });
-                    case v.SubscriptionIntervalTypes.YEAR:
-                        return i ? y.default.Messages.DURATION_YEARS_CAPITALIZE.format({
+                    case y.SubscriptionIntervalTypes.YEAR:
+                        return i ? U.default.Messages.DURATION_YEARS_CAPITALIZE.format({
                             years: n
-                        }) : y.default.Messages.DURATION_YEARS.format({
+                        }) : U.default.Messages.DURATION_YEARS.format({
                             years: n
                         });
                     default:
@@ -260463,25 +260674,25 @@
                 }
             }
 
-            function em(e, t) {
+            function eO(e, t) {
                 switch (e) {
-                    case L.PaymentGateways.APPLE_PARTNER:
-                    case L.PaymentGateways.APPLE:
-                        return P[t];
-                    case L.PaymentGateways.GOOGLE:
-                        return U[t]
+                    case v.PaymentGateways.APPLE_PARTNER:
+                    case v.PaymentGateways.APPLE:
+                        return b[t];
+                    case v.PaymentGateways.GOOGLE:
+                        return G[t]
                 }
                 throw Error("Invalid external payment gateway ".concat(e))
             }
 
-            function eN(e, t) {
-                return (0, R.isPremium)(e) || eE(null == t ? void 0 : t.status)
+            function ep(e, t) {
+                return (0, g.isPremium)(e) || eT(null == t ? void 0 : t.status)
             }
 
-            function eO(e, t) {
+            function eR(e, t) {
                 var n, i;
                 let r = [],
-                    s = (null !== (i = null === (n = e.renewalMutations) || void 0 === n ? void 0 : n.items) && void 0 !== i ? i : e.items).find(e => v.PREMIUM_PLANS.has(e.planId));
+                    s = (null !== (i = null === (n = e.renewalMutations) || void 0 === n ? void 0 : n.items) && void 0 !== i ? i : e.items).find(e => y.PREMIUM_PLANS.has(e.planId));
                 return null != s && r.push(s), r.push(...t), r.map(t => {
                     for (let n of e.items)
                         if (t.planId === n.planId) return {
@@ -260492,11 +260703,11 @@
                 })
             }
 
-            function ep(e) {
-                return e.filter(e => !v.PREMIUM_PLANS.has(e.planId))
+            function eC(e) {
+                return e.filter(e => !y.PREMIUM_PLANS.has(e.planId))
             }
 
-            function eR(e, t, n, i) {
+            function eg(e, t, n, i) {
                 var r, s;
                 l()(i.has(t), "Expected planId in group");
                 let a = !1,
@@ -260516,24 +260727,24 @@
                 return o.filter(e => 0 !== e.quantity)
             }
 
-            function eC(e, t) {
-                return eR(e, t, 1, v.PREMIUM_PLANS)
+            function eL(e, t) {
+                return eg(e, t, 1, y.PREMIUM_PLANS)
             }
 
-            function eg(e, t, n) {
-                return eR(e, n, t, v.PREMIUM_GUILD_SUBSCRIPTION_PLANS)
+            function eD(e, t, n) {
+                return eg(e, n, t, y.PREMIUM_GUILD_SUBSCRIPTION_PLANS)
             }
 
-            function eL(e) {
+            function ev(e) {
                 var t;
-                let n = null !== (t = e.find(e => !("id" in e))) && void 0 !== t ? t : e.find(e => v.PREMIUM_PLANS.has(e.planId));
+                let n = null !== (t = e.find(e => !("id" in e))) && void 0 !== t ? t : e.find(e => y.PREMIUM_PLANS.has(e.planId));
                 if (null != n) {
-                    let t = h.default.get(n.planId);
+                    let t = m.default.get(n.planId);
                     l()(null != t, "Missing plan"), e = e.map(e => {
                         if (e === n) return e;
-                        let i = h.default.get(e.planId);
+                        let i = m.default.get(e.planId);
                         l()(null != i, "Missing plan");
-                        let r = h.default.getForSkuAndInterval(i.skuId, t.interval, t.intervalCount);
+                        let r = m.default.getForSkuAndInterval(i.skuId, t.interval, t.intervalCount);
                         return l()(null != r, "Missing planForInterval"), {
                             ...e,
                             planId: r.id
@@ -260543,186 +260754,186 @@
                 return e
             }
 
-            function eD(e) {
+            function eM(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
                         useSpace: !0
                     },
-                    n = v.PremiumUserLimits[e].fileSize;
-                return (0, N.formatSize)(n / 1024, {
+                    n = y.PremiumUserLimits[e].fileSize;
+                return (0, p.formatSize)(n / 1024, {
                     useKibibytes: !0,
                     useSpace: t.useSpace
                 })
             }
 
-            function ev(e) {
-                return null == e ? null : e.items.find(e => v.PREMIUM_GUILD_SUBSCRIPTION_PLANS.has(e.planId))
-            }
-
-            function eM(e) {
-                let t = null != e ? w(e) : null;
-                return null != t ? $(t.planId) : null
-            }
-
             function ey(e) {
+                return null == e ? null : e.items.find(e => y.PREMIUM_GUILD_SUBSCRIPTION_PLANS.has(e.planId))
+            }
+
+            function eP(e) {
+                let t = null != e ? k(e) : null;
+                return null != t ? et(t.planId) : null
+            }
+
+            function eU(e) {
                 return e
             }
             t.default = Object.freeze({
                 isNewUser: e => null != e && Date.now() - e.createdAt.getTime() < 2592e6,
-                isPremiumAtLeast: R.isPremiumAtLeast,
-                isPremium: R.isPremium,
-                isPremiumExactly: R.isPremiumExactly,
-                getPrice: k,
-                getDefaultPrice: B,
+                isPremiumAtLeast: g.isPremiumAtLeast,
+                isPremium: g.isPremium,
+                isPremiumExactly: g.isPremiumExactly,
+                getPrice: F,
+                getDefaultPrice: V,
                 getInterval: function(e) {
-                    let t = v.SubscriptionPlanInfo[e];
+                    let t = y.SubscriptionPlanInfo[e];
                     if (null != t) return {
                         intervalType: t.interval,
                         intervalCount: t.intervalCount
                     };
                     let n = Error("Unsupported plan");
-                    throw (0, m.captureBillingException)(n, {
+                    throw (0, O.captureBillingException)(n, {
                         tags: {
                             planId: e
                         }
                     }), n
                 },
-                getIntervalString: x,
-                getIntervalStringAsNoun: H,
-                getPremiumType: Y,
-                getDisplayName: j,
-                getDisplayPremiumType: z,
-                getPremiumPlanOptions: Z,
-                getUpgradeEligibilities: ee,
-                getPlanDescription: Q,
+                getIntervalString: Y,
+                getIntervalStringAsNoun: j,
+                getPremiumType: W,
+                getDisplayName: K,
+                getDisplayPremiumType: Q,
+                getPremiumPlanOptions: ee,
+                getUpgradeEligibilities: en,
+                getPlanDescription: J,
                 isPremiumSku: function(e) {
-                    return e === v.PremiumSubscriptionSKUs.TIER_0 || e === v.PremiumSubscriptionSKUs.TIER_1 || e === v.PremiumSubscriptionSKUs.TIER_2
+                    return e === y.PremiumSubscriptionSKUs.TIER_0 || e === y.PremiumSubscriptionSKUs.TIER_1 || e === y.PremiumSubscriptionSKUs.TIER_2
                 },
                 getClosestUpgrade: function(e) {
-                    let t = v.SubscriptionPlanInfo[e];
+                    let t = y.SubscriptionPlanInfo[e];
                     if (null == t) throw Error("Unrecognized plan.");
                     let {
                         interval: n
-                    } = t, i = ee(e);
-                    for (let e of Object.keys(v.SubscriptionPlanInfo)) {
+                    } = t, i = en(e);
+                    for (let e of Object.keys(y.SubscriptionPlanInfo)) {
                         let {
                             interval: t
-                        } = v.SubscriptionPlanInfo[e];
+                        } = y.SubscriptionPlanInfo[e];
                         if (n === t && i.includes(e)) return e
                     }
                     return null
                 },
                 getIntervalMonths: function(e, t) {
-                    if (e === v.SubscriptionIntervalTypes.MONTH) return t;
-                    if (e === v.SubscriptionIntervalTypes.YEAR) return 12 * t;
+                    if (e === y.SubscriptionIntervalTypes.MONTH) return t;
+                    if (e === y.SubscriptionIntervalTypes.YEAR) return 12 * t;
                     throw Error("".concat(e, " interval subscription period not implemented"))
                 },
-                getUserMaxFileSize: p.getUserMaxFileSize,
-                getSkuIdForPlan: $,
+                getUserMaxFileSize: C.getUserMaxFileSize,
+                getSkuIdForPlan: et,
                 getSkuIdForPremiumType: function(e) {
                     switch (e) {
-                        case v.PremiumTypes.TIER_0:
-                            return v.PremiumSubscriptionSKUs.TIER_0;
-                        case v.PremiumTypes.TIER_1:
-                            return v.PremiumSubscriptionSKUs.TIER_1;
-                        case v.PremiumTypes.TIER_2:
-                            return v.PremiumSubscriptionSKUs.TIER_2
+                        case y.PremiumTypes.TIER_0:
+                            return y.PremiumSubscriptionSKUs.TIER_0;
+                        case y.PremiumTypes.TIER_1:
+                            return y.PremiumSubscriptionSKUs.TIER_1;
+                        case y.PremiumTypes.TIER_2:
+                            return y.PremiumSubscriptionSKUs.TIER_2
                     }
                 },
                 getNumIncludedPremiumGuildSubscriptionSlots: function(e) {
-                    if (Y(e) === v.PremiumTypes.TIER_2) return v.NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM;
+                    if (W(e) === y.PremiumTypes.TIER_2) return y.NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM;
                     return 0
                 },
                 getBillingInformationString: function(e, t) {
                     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-                        i = n ? (0, g.formatPrice)(t.invoiceItems.filter(e => v.PREMIUM_TIER_2_PLANS.has(e.subscriptionPlanId)).map(e => e.amount).reduce((e, t) => t + e, 0), t.currency) : (0, g.formatPrice)(t.total, t.currency);
-                    if (e.status === L.SubscriptionStatusTypes.CANCELED) return y.default.Messages.PREMIUM_SETTINGS_CANCELLED_INFO.format({
+                        i = n ? (0, D.formatPrice)(t.invoiceItems.filter(e => y.PREMIUM_TIER_2_PLANS.has(e.subscriptionPlanId)).map(e => e.amount).reduce((e, t) => t + e, 0), t.currency) : (0, D.formatPrice)(t.total, t.currency);
+                    if (e.status === v.SubscriptionStatusTypes.CANCELED) return U.default.Messages.PREMIUM_SETTINGS_CANCELLED_INFO.format({
                         endDate: t.subscriptionPeriodStart
                     });
-                    if (e.status === L.SubscriptionStatusTypes.PAUSE_PENDING) return y.default.Messages.PREMIUM_SETTINGS_PAUSE_PENDING_INFO.format({
+                    if (e.status === v.SubscriptionStatusTypes.PAUSE_PENDING) return U.default.Messages.PREMIUM_SETTINGS_PAUSE_PENDING_INFO.format({
                         pauseDate: e.currentPeriodEnd,
                         resumeDate: e.pauseEndsAt
                     });
-                    if (e.status === L.SubscriptionStatusTypes.PAUSED) return null == e.pauseEndsAt ? n ? y.default.Messages.PREMIUM_SETTINGS_PAUSED_INFO_WITH_PLAN.format({
-                        planName: y.default.Messages.PREMIUM,
+                    if (e.status === v.SubscriptionStatusTypes.PAUSED) return null == e.pauseEndsAt ? n ? U.default.Messages.PREMIUM_SETTINGS_PAUSED_INFO_WITH_PLAN.format({
+                        planName: U.default.Messages.PREMIUM,
                         price: i
-                    }) : y.default.Messages.PREMIUM_SETTINGS_PAUSED_INFO : n ? y.default.Messages.PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO_WITH_PLAN.format({
-                        planName: y.default.Messages.PREMIUM,
+                    }) : U.default.Messages.PREMIUM_SETTINGS_PAUSED_INFO : n ? U.default.Messages.PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO_WITH_PLAN.format({
+                        planName: U.default.Messages.PREMIUM,
                         resumeDate: e.pauseEndsAt,
                         price: i
-                    }) : y.default.Messages.PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO.format({
+                    }) : U.default.Messages.PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO.format({
                         resumeDate: e.pauseEndsAt
                     });
-                    else if (e.status === L.SubscriptionStatusTypes.PAST_DUE) {
+                    else if (e.status === v.SubscriptionStatusTypes.PAST_DUE) {
                         var r, s;
-                        let t = ea(e).expiresDate;
-                        return (e.isPurchasedViaGoogle && (null === (r = e.metadata) || void 0 === r ? void 0 : r.google_grace_period_expires_date) != null && (t = d()(e.metadata.google_grace_period_expires_date)), e.isPurchasedViaApple && (null === (s = e.metadata) || void 0 === s ? void 0 : s.apple_grace_period_expires_date) != null && (t = d()(e.metadata.apple_grace_period_expires_date)), e.isPurchasedExternally) ? y.default.Messages.PREMIUM_SETTINGS_PAST_DUE_INFO_EXTERNAL.format({
+                        let t = el(e).expiresDate;
+                        return (e.isPurchasedViaGoogle && (null === (r = e.metadata) || void 0 === r ? void 0 : r.google_grace_period_expires_date) != null && (t = d()(e.metadata.google_grace_period_expires_date)), e.isPurchasedViaApple && (null === (s = e.metadata) || void 0 === s ? void 0 : s.apple_grace_period_expires_date) != null && (t = d()(e.metadata.apple_grace_period_expires_date)), e.isPurchasedExternally) ? U.default.Messages.PREMIUM_SETTINGS_PAST_DUE_INFO_EXTERNAL.format({
                             endDate: t,
-                            paymentGatewayName: M.PaymentGatewayToFriendlyName[e.paymentGateway],
-                            paymentSourceLink: em(e.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT")
-                        }) : y.default.Messages.PREMIUM_SETTINGS_PAST_DUE_INFO.format({
+                            paymentGatewayName: P.PaymentGatewayToFriendlyName[e.paymentGateway],
+                            paymentSourceLink: eO(e.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT")
+                        }) : U.default.Messages.PREMIUM_SETTINGS_PAST_DUE_INFO.format({
                             endDate: t,
                             price: i
                         })
-                    } else return e.status === L.SubscriptionStatusTypes.BILLING_RETRY ? y.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO_PRICE.format({
-                        endDate: d()(e.currentPeriodStart).add(v.PAID_SUBSCRIPTION_MAX_BILLING_RETRY_DAYS, "days"),
+                    } else return e.status === v.SubscriptionStatusTypes.BILLING_RETRY ? U.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO_PRICE.format({
+                        endDate: d()(e.currentPeriodStart).add(y.PAID_SUBSCRIPTION_MAX_BILLING_RETRY_DAYS, "days"),
                         price: i
-                    }) : e.status === L.SubscriptionStatusTypes.ACCOUNT_HOLD ? e.isPurchasedViaGoogle && !(0, O.isAndroid)() ? y.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO_EXTERNAL.format({
-                        endDate: d()(e.currentPeriodStart).add(v.MAX_ACCOUNT_HOLD_DAYS, "days"),
-                        paymentGatewayName: M.PaymentGatewayToFriendlyName[e.paymentGateway],
-                        paymentSourceLink: em(e.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT")
-                    }) : y.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO_PRICE.format({
-                        endDate: d()(e.currentPeriodStart).add(v.MAX_ACCOUNT_HOLD_DAYS, "days"),
+                    }) : e.status === v.SubscriptionStatusTypes.ACCOUNT_HOLD ? e.isPurchasedViaGoogle && !(0, R.isAndroid)() ? U.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO_EXTERNAL.format({
+                        endDate: d()(e.currentPeriodStart).add(y.MAX_ACCOUNT_HOLD_DAYS, "days"),
+                        paymentGatewayName: P.PaymentGatewayToFriendlyName[e.paymentGateway],
+                        paymentSourceLink: eO(e.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT")
+                    }) : U.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO_PRICE.format({
+                        endDate: d()(e.currentPeriodStart).add(y.MAX_ACCOUNT_HOLD_DAYS, "days"),
                         price: i
                     }) : function(e) {
-                        return null != e.paymentSourceId && eo(e.paymentSourceId)
-                    }(e) ? y.default.Messages.PREMIUM_SETTINGS_PREPAID_THROUGH_DATE.format({
+                        return null != e.paymentSourceId && eu(e.paymentSourceId)
+                    }(e) ? U.default.Messages.PREMIUM_SETTINGS_PREPAID_THROUGH_DATE.format({
                         prepaidEndDate: e.currentPeriodEnd
-                    }) : e.status === L.SubscriptionStatusTypes.UNPAID ? y.default.Messages.PREMIUM_SETTINGS_PAYMENT_PROCESSING.format({
-                        maxProcessingTimeInDays: v.MAX_PAYMENT_PROCESSING_TIME_DAYS
-                    }) : e.isPurchasedExternally ? y.default.Messages.PREMIUM_SETTINGS_RENEWAL_INFO_EXTERNAL.format({
+                    }) : e.status === v.SubscriptionStatusTypes.UNPAID ? U.default.Messages.PREMIUM_SETTINGS_PAYMENT_PROCESSING.format({
+                        maxProcessingTimeInDays: y.MAX_PAYMENT_PROCESSING_TIME_DAYS
+                    }) : e.isPurchasedExternally ? U.default.Messages.PREMIUM_SETTINGS_RENEWAL_INFO_EXTERNAL.format({
                         renewalDate: t.subscriptionPeriodStart,
-                        paymentGatewayName: M.PaymentGatewayToFriendlyName[e.paymentGateway],
-                        subscriptionManagementLink: em(e.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
-                    }) : n ? y.default.Messages.PREMIUM_SETTINGS_RENEWAL_INFO_WITH_PLAN.format({
-                        planName: y.default.Messages.PREMIUM,
+                        paymentGatewayName: P.PaymentGatewayToFriendlyName[e.paymentGateway],
+                        subscriptionManagementLink: eO(e.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
+                    }) : n ? U.default.Messages.PREMIUM_SETTINGS_RENEWAL_INFO_WITH_PLAN.format({
+                        planName: U.default.Messages.PREMIUM,
                         renewalDate: t.subscriptionPeriodStart,
                         price: i
-                    }) : y.default.Messages.PREMIUM_SETTINGS_RENEWAL_INFO.format({
+                    }) : U.default.Messages.PREMIUM_SETTINGS_RENEWAL_INFO.format({
                         renewalDate: t.subscriptionPeriodStart,
                         price: i
                     })
                 },
-                isNoneSubscription: I.isNoneSubscription,
+                isNoneSubscription: f.isNoneSubscription,
                 getPlanIdFromInvoice: function(e, t) {
                     let {
                         planId: n
                     } = e;
-                    if (e.status === L.SubscriptionStatusTypes.CANCELED || e.status === L.SubscriptionStatusTypes.PAUSE_PENDING) return n;
+                    if (e.status === v.SubscriptionStatusTypes.CANCELED || e.status === v.SubscriptionStatusTypes.PAUSE_PENDING) return n;
                     l()(null != t, "Expected invoicePreview");
                     let i = t.invoiceItems.find(e => {
                         let {
                             subscriptionPlanId: t
                         } = e;
-                        return ei(t)
+                        return es(t)
                     });
-                    return n = null == i || (0, I.isNoneSubscription)(i.subscriptionPlanId) ? e.planId : null != e.renewalMutations && e.renewalMutations.planId !== e.planId ? e.planId : i.subscriptionPlanId
+                    return n = null == i || (0, f.isNoneSubscription)(i.subscriptionPlanId) ? e.planId : null != e.renewalMutations && e.renewalMutations.planId !== e.planId ? e.planId : i.subscriptionPlanId
                 },
                 getStatusFromInvoice: function(e, t) {
                     let {
                         status: n
                     } = e;
-                    if (e.status === L.SubscriptionStatusTypes.CANCELED || e.status === L.SubscriptionStatusTypes.PAUSE_PENDING) return n;
+                    if (e.status === v.SubscriptionStatusTypes.CANCELED || e.status === v.SubscriptionStatusTypes.PAUSE_PENDING) return n;
                     l()(null != t, "Expected invoicePreview");
                     let i = t.invoiceItems.find(e => {
                         let {
                             subscriptionPlanId: t
                         } = e;
-                        return ei(t)
+                        return es(t)
                     });
-                    return (null == i || (0, I.isNoneSubscription)(i.subscriptionPlanId)) && (n = L.SubscriptionStatusTypes.CANCELED), n
+                    return (null == i || (0, f.isNoneSubscription)(i.subscriptionPlanId)) && (n = v.SubscriptionStatusTypes.CANCELED), n
                 },
-                isBaseSubscriptionCanceled: ec,
-                getPremiumGuildIntervalPrice: eI,
+                isBaseSubscriptionCanceled: eI,
+                getPremiumGuildIntervalPrice: ef,
                 hasAccountCredit: function(e) {
                     return null != e && 0 !== e.size && Array.from(e).some(e => {
                         let {
@@ -260733,112 +260944,116 @@
                         return null != t && null != n && !i
                     })
                 },
-                getBillingReviewSubheader: eT,
-                getIntervalForInvoice: ef,
-                getPremiumPlanItem: w,
-                getGuildBoostPlanItem: ev,
+                getBillingReviewSubheader: eS,
+                getIntervalForInvoice: eh,
+                getPremiumPlanItem: k,
+                getGuildBoostPlanItem: ey,
                 isBoostOnlySubscription: function(e) {
-                    return null != e && null == w(e) && null != ev(e)
+                    return null != e && null == k(e) && null != ey(e)
                 },
-                getPremiumSkuIdForSubscription: eM,
+                getPremiumSkuIdForSubscription: eP,
                 getPremiumTypeFromSubscription: function(e) {
                     if (null != e) {
-                        let t = w(e);
-                        if (null != t) return Y(t.planId)
+                        let t = k(e);
+                        if (null != t) return W(t.planId)
                     }
                 },
                 getPremiumTypeFromSubscriptionRenewalMutations: function(e) {
                     if (null != e && null != e.renewalMutations) {
-                        let t = w(e.renewalMutations);
-                        if (null != t) return Y(t.planId)
+                        let t = k(e.renewalMutations);
+                        if (null != t) return W(t.planId)
                     }
                 },
                 getPremiumGradientColor: function(e) {
                     switch (e) {
-                        case v.PremiumTypes.TIER_0:
-                            return D.Gradients.PREMIUM_TIER_0;
-                        case v.PremiumTypes.TIER_1:
-                            return D.Gradients.PREMIUM_TIER_1;
-                        case v.PremiumTypes.TIER_2:
-                            return D.Gradients.PREMIUM_TIER_2
+                        case y.PremiumTypes.TIER_0:
+                            return M.Gradients.PREMIUM_TIER_0;
+                        case y.PremiumTypes.TIER_1:
+                            return M.Gradients.PREMIUM_TIER_1;
+                        case y.PremiumTypes.TIER_2:
+                            return M.Gradients.PREMIUM_TIER_2
                     }
                 },
-                castPremiumSubscriptionAsSkuId: ey,
+                castPremiumSubscriptionAsSkuId: eU,
                 canUseAnimatedEmojis: function(e) {
-                    return (0, c.canUserUse)(c.ANIMATED_EMOJIS, e)
+                    return (0, I.canUserUse)(I.ANIMATED_EMOJIS, e)
                 },
                 canUseEmojisEverywhere: function(e) {
-                    return (0, c.canUserUse)(c.EMOJIS_EVERYWHERE, e)
+                    return (0, I.canUserUse)(I.EMOJIS_EVERYWHERE, e)
                 },
                 canUseSoundboardEverywhere: function(e) {
-                    return (0, c.canUserUse)(c.SOUNDBOARD_EVERYWHERE, e)
+                    return (0, I.canUserUse)(I.SOUNDBOARD_EVERYWHERE, e)
                 },
                 canUseCustomCallSounds: function(e) {
-                    return (0, c.canUserUse)(c.CUSTOM_CALL_SOUNDS, e)
+                    return (0, I.canUserUse)(I.CUSTOM_CALL_SOUNDS, e)
                 },
                 canUploadLargeFiles: function(e) {
-                    return (0, c.canUserUse)(c.UPLOAD_LARGE_FILES, e)
+                    return (0, I.canUserUse)(I.UPLOAD_LARGE_FILES, e)
                 },
                 canUseBadges: function(e) {
-                    return (0, c.canUserUse)(c.PROFILE_BADGES, e)
+                    return (0, I.canUserUse)(I.PROFILE_BADGES, e)
                 },
                 canUseHighVideoUploadQuality: function(e) {
-                    return (0, c.canUserUse)(c.INCREASED_VIDEO_UPLOAD_QUALITY, e)
+                    return (0, I.canUserUse)(I.INCREASED_VIDEO_UPLOAD_QUALITY, e)
                 },
                 canEditDiscriminator: function(e) {
-                    return (0, c.canUserUse)(c.CUSTOM_DISCRIMINATOR, e)
+                    return (0, I.canUserUse)(I.CUSTOM_DISCRIMINATOR, e)
                 },
                 hasBoostDiscount: function(e) {
-                    return (0, c.canUserUse)(c.BOOST_DISCOUNT, e)
+                    return (0, I.canUserUse)(I.BOOST_DISCOUNT, e)
                 },
                 canUseAnimatedAvatar: function(e) {
-                    return (0, c.canUserUse)(c.ANIMATED_AVATAR, e)
+                    return (0, I.canUserUse)(I.ANIMATED_AVATAR, e)
                 },
                 canUseFancyVoiceChannelReactions: function(e) {
-                    return (0, c.canUserUse)(c.FANCY_VOICE_CHANNEL_REACTIONS, e)
+                    return (0, I.canUserUse)(I.FANCY_VOICE_CHANNEL_REACTIONS, e)
                 },
                 canInstallPremiumApplications: function(e) {
-                    return (0, c.canUserUse)(c.INSTALL_PREMIUM_APPLICATIONS, e)
+                    return (0, I.canUserUse)(I.INSTALL_PREMIUM_APPLICATIONS, e)
                 },
                 canUseIncreasedMessageLength: function(e) {
-                    return (0, c.canUserUse)(c.INCREASED_MESSAGE_LENGTH, e)
+                    return (0, I.canUserUse)(I.INCREASED_MESSAGE_LENGTH, e)
                 },
                 canUseIncreasedGuildCap: function(e) {
-                    return (0, c.canUserUse)(c.INCREASED_GUILD_LIMIT, e)
+                    return (0, I.canUserUse)(I.INCREASED_GUILD_LIMIT, e)
                 },
                 canRedeemPremiumPerks: function(e) {
-                    return (0, c.canUserUse)(c.REDEEM_PREMIUM_PERKS, e)
+                    return (0, I.canUserUse)(I.REDEEM_PREMIUM_PERKS, e)
                 },
                 canUsePremiumProfileCustomization: function(e) {
-                    return (0, c.canUserUse)(c.PROFILE_PREMIUM_FEATURES, e)
+                    return (0, I.canUserUse)(I.PROFILE_PREMIUM_FEATURES, e)
                 },
                 canUsePremiumAppIcons: function(e) {
-                    return (0, c.canUserUse)(c.APP_ICONS, e)
+                    return (0, I.canUserUse)(I.APP_ICONS, e)
                 },
                 canUsePremiumGuildMemberProfile: function(e) {
-                    return (0, c.canUserUse)(c.PREMIUM_GUILD_MEMBER_PROFILE, e)
+                    return (0, I.canUserUse)(I.PREMIUM_GUILD_MEMBER_PROFILE, e)
                 },
                 canUseClientThemes: function(e) {
-                    return (0, c.canUserUse)(c.CLIENT_THEMES, e)
+                    return (0, I.canUserUse)(I.CLIENT_THEMES, e)
                 },
                 canStreamQuality: function(e, t) {
-                    return "high" === e ? (0, c.canUserUse)(c.STREAM_HIGH_QUALITY, t) : "mid" === e && (0, c.canUserUse)(c.STREAM_MID_QUALITY, t)
+                    return !! function(e) {
+                        var t;
+                        let n = E.default.getPerksDemos();
+                        return null !== (t = null == n ? void 0 : n[e]) && void 0 !== t && t
+                    }(_.NitroPerks.STREAM_HIGH_QUALITY) || ("high" === e ? (0, I.canUserUse)(I.STREAM_HIGH_QUALITY, t) : "mid" === e && (0, I.canUserUse)(I.STREAM_MID_QUALITY, t))
                 },
                 hasFreeBoosts: function(e) {
-                    return (0, c.canUserUse)(c.FREE_BOOSTS, e)
+                    return (0, I.canUserUse)(I.FREE_BOOSTS, e)
                 },
                 canUseCustomStickersEverywhere: function(e) {
-                    return (0, c.canUserUse)(c.STICKERS_EVERYWHERE, e)
+                    return (0, I.canUserUse)(I.STICKERS_EVERYWHERE, e)
                 },
                 canUseCustomBackgrounds: function(e) {
-                    return (0, c.canUserUse)(c.VIDEO_FILTER_ASSETS, e)
+                    return (0, I.canUserUse)(I.VIDEO_FILTER_ASSETS, e)
                 },
                 canUseCollectibles: function(e) {
-                    return (0, c.canUserUse)(c.COLLECTIBLES, e)
+                    return (0, I.canUserUse)(I.COLLECTIBLES, e)
                 },
                 formatPriceString: function(e, t) {
-                    let n = (0, g.formatPrice)(e.amount, e.currency),
-                        i = H(t);
+                    let n = (0, D.formatPrice)(e.amount, e.currency),
+                        i = j(t);
                     return "".concat(n, "/").concat(i)
                 },
                 StreamQuality: r
@@ -265460,7 +265675,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "283118", "283118"), 10);
+                let s = parseInt((n = "283133", "283133"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291329,6 +291544,15 @@
                 }
             }), n("47120"), (r = i || (i = {})).APP_CRASHED = "app_crashed", r.SOCKET_CRASHED = "socket_crashed", r.MESSAGE_REQUEST_VIEW = "message_request_view", r.SPAM_MESSAGE_REQUEST_VIEW = "spam_message_request_view", r.SPAM_MESSAGE_REQUEST_ERROR_VIEW = "spam_message_request_error_view", r.FAMILY_CENTER_VIEW = "family_center_view", r.SAFETY_HUB_VIEW = "safety_hub_view", r.APPEAL_INGESTION_VIEW = "appeal_ingestion_view", r.MESSAGE_REQUEST_COUNT_DRIFT = "message_request_count_drift", r.FORUM_CHANNEL_GRID_AUTO_ENABLED = "forum_channel_grid_auto_enabled", r.REMIX_FONT_LOADING_ERROR = "remix_font_loading_error", r.AFK_NOT_IDLE = "afk_not_idle", r.CAPTCHA_EVENT = "captcha_event", r.SAFETY_WARNING_VIEW = "safety_warning_view", r.SAFETY_WARNING_MODAL_VIEW = "safety_warning_modal_view", r.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT = "explicit_media_scan_client_timed_out", r.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING = "explicit_media_scan_client_timing", r.EXPLICIT_MEDIA_SENDER_FP_BUTTON_VIEW = "explicit_media_sender_fp_button_view", r.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED = "explicit_media_pending_message_loaded", r.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED_V2 = "explicit_media_pending_message_loaded_v2", r.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT_DISTRIBUTION = "explicit_media_scan_client_timed_out_distribution", r.EXPLICIT_MEDIA_SCAN_CLIENT_TIMEOUT_CREATE = "explicit_media_scan_client_timeout_create", r.QUEST_CONTENT_IMPRESSION = "quest_content_impression", r.OTA_CHECK_ATTEMPT = "OtaCheckAttempt", r.OTA_ASSET_DOWNLOAD_ATTEMPT = "OtaAssetDownloadAttempt", r.OTA_UPDATE_CHECK = "ota_update_check", r.OTA_ASSET_DOWNLOAD = "ota_asset_download", r.DEBUG_OTA_200_TIMEOUT = "debug_ota_200_timeout", r.IMAGE_LOAD_ERROR = "image_load_error"
         },
+        454908: function(e, t, n) {
+            "use strict";
+            var i;
+            n.r(t), n.d(t, {
+                NitroPerks: function() {
+                    return i
+                }
+            }), (i || (i = {})).STREAM_HIGH_QUALITY = "streamHighQuality"
+        },
         214627: function(e, t, n) {
             "use strict";
             var i, r;
@@ -292204,4 +292428,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.6614f51fe0acbca203fc.js.map
+//# sourceMappingURL=65573.e88a74154bb7b1ab00d9.js.map
