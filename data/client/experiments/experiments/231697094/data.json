@@ -1,0 +1,24 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-04_content_inventory_voice_enrichments",
+    "label": "Experimental enrichments",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Treament"
+    ],
+    "hash": 231697094,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "showBadge",
+      "showJoinButton"
+    ]
+  }
+}
