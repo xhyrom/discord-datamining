@@ -18457,6 +18457,7 @@ h6.title_c2a544 {
     padding: .5em;
     border-radius: 4px;
     -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
     text-size-adjust: none;
     color: var(--text-normal);
     background: var(--background-secondary)
@@ -28185,4 +28186,4 @@ span.button_ae40a4.disabled__1dc58 {
     }
 }
 
-/*# sourceMappingURL=49237.310341afc30b949198f7.css.map*/
+/*# sourceMappingURL=49237.8f6640f802c9e91045fb.css.map*/
