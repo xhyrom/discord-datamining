@@ -188,7 +188,7 @@
 </ul>
 <h3 id="h_01HRQXRDQKFNK7VAB8GDXB1SJE"><span style="font-weight: 400;"><strong>Pro Tip:</strong> If you’re a <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Discord Nitro</a> subscriber, you can also upload gifs to use as ✨animated emoji.✨</span></h3>
 <p> </p>
-<h2 id="h_373cf88f-b19f-4455-94a5-c55ed46ca6a4"><strong>How to <a href="https://support.discord.com/hc/en-us/articles/360035491151" target="_blank" rel="noopener noreferrer">Customize Your Profile Image</a></strong></h2>
+<h2 id="h_373cf88f-b19f-4455-94a5-c55ed46ca6a4"><strong>How to <a href="https://support.discord.com/hc/en-us/articles/4403147417623" target="_blank" rel="noopener noreferrer">Customize Your Profile Image</a></strong></h2>
 <ol>
     <li style="font-weight: 400;"><span style="font-weight: 400;">To change your avatar on desktop, click the User Settings <img src="https://support.discord.com/hc/article_attachments/360060867651" alt="Vector_1.png" width="17" height="17"> cog in the lower left corner of the app, then select the Edit button under My Account, and upload an image!  </span></li>
     <li style="font-weight: 400;"><span style="font-weight: 400;">If you’re on mobile, swipe left to your channel view, and check out the tab bar at the bottom of your screen. The rightmost tab will take you to User Settings (it should look like your profile picture if you’ve added one, and a Discord logo if you haven’t!). From there, tap on your profile avatar to upload a new image!</span></li>
