@@ -25385,8 +25385,6 @@
         274430: function(e) {
             "use strict";
             e.exports = {
-                betaTagContainer: "betaTagContainer__0e9eb",
-                betaTagIcon: "betaTagIcon_d65f20",
                 card: "card__3aeb5",
                 contentPanel: "contentPanel__68d13",
                 contentPanelNagbar: "contentPanelNagbar_cd5bfd",
