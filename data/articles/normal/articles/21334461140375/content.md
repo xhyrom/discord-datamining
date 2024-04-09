@@ -4,6 +4,7 @@
     <li>
         <a href="https://support.discord.com/hc/en-us/articles/21334461140375#h_01HRQSA6C8TRHS722P1H3HW1TV">How to Use Apps</a>
         <ul>
+            <li><a href="https://support.discord.com/hc/en-us/articles/21334461140375#docs-internal-guid-817a9772-7fff-78a7-726d-2bd5151af070">Launching Apps with the Shapes Button </a></li>
             <li><a href="https://support.discord.com/hc/en-us/articles/21334461140375#h_01HRQSA6C85Z6CA9CF10DPRX1Q">Slash Commands</a></li>
             <li><a href="https://support.discord.com/hc/en-us/articles/21334461140375#h_01HRQSA6C8MGJ2F3G3GEQTQ36P">User and Message Commands</a></li>
         </ul>
@@ -19,19 +20,30 @@
     <li><a href="https://support.discord.com/hc/en-us/articles/21334461140375#h_01HRQSA6C8H2XBF34NSSQH7ZFH">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="docs-internal-guid-9d109a73-7fff-beff-25ba-562d8ae90670">What Are Apps?</h1>
-<p id="docs-internal-guid-bed8c58a-7fff-f624-1447-58d62b5a6a27">Apps are created by Discord users and can vary from games to moderation to everything else in between. If you’re an app developer and would like to learn more about apps on Discord, you can check out our <a href="https://support-dev.discord.com/hc/en-us" target="_blank" rel="noopener noreferrer">Developer Support Help Center</a>.</p>
+<p id="docs-internal-guid-f29fc1e7-7fff-20d6-4d6e-4c0654f2c5f2">Discord<strong> Apps</strong> add functionality, entertainment, and productivity tools to your servers, direct messages (<strong>DMs</strong>), group chats, and voice calls. These apps can range from bots that automate tasks, to activities that allow you to play games, collaborate on projects, or share experiences with others directly within Discord. </p>
+<p id="docs-internal-guid-1535fe26-7fff-4baf-b0cb-a3bdffa72cf6">Apps are created by Discord, third parties, or by Discord users and can vary from games to moderation to everything else in between. If you’re an app developer and would like to learn more about apps on Discord, you can check out our <a href="https://support-dev.discord.com/hc/en-us" target="_blank" rel="noopener noreferrer">Developer Support Help Center</a>.</p>
+<p id="docs-internal-guid-94c396ed-7fff-9265-8f6d-a921495c2574"><strong>Types of Discord Apps:</strong></p>
+<p>1. <strong>Bots</strong>: Automated programs that can perform a variety of tasks such as moderating chats, providing user support, playing music, or organizing games. They typically exist within a server and appear as a member of the server.</p>
+<p>2. <strong>Activities</strong>: Interactive experiences like games, quizzes, or collaborative tools such as whiteboards that you can enjoy with others in real-time in text chats or voice calls. Learn more about activities in our <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-on-Discord" target="_blank" rel="noopener noreferrer">Activities on Discord Help Center</a> article.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22010612827287" width="624" height="357"></p>
 <h1 id="h_01HRQSA6C8TRHS722P1H3HW1TV">How to Use Apps</h1>
 <p>You can interact with an app in a multitude of ways. If you have an app installed, you can use one of its commands by using slash commands, or by right-clicking on a user or message and selecting <strong>Apps</strong>.</p>
+<h2 id="docs-internal-guid-817a9772-7fff-78a7-726d-2bd5151af070">Launching Apps with the Shapes Button</h2>
+<h3 id="h_01HV2F1EHPX7EW6HVN9W10GGKD">The Shapes button is currently only available in servers on mobile.</h3>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-7958b5d4-7fff-d7c9-1510-87dbd05387ac" style="color: #434343;"><img src="https://support.discord.com/hc/article_attachments/22691366490903" width="81" height="80"></span></p>
+<p id="docs-internal-guid-bf71f92c-7fff-302f-1ae7-79f8383cf865">The easiest way to launch an app is by selecting the <strong>Shapes</strong> button in the chat bar and selecting the app you would like to start. </p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22691351902487" width="247" height="505">   <img src="https://support.discord.com/hc/article_attachments/22691366507159" width="244" height="500"></p>
+<p>It then provides an interface for selecting preset commands for the app without having to type <span id="docs-internal-guid-78ef56ef-7fff-59ed-dad9-d752548e54be">them out.</span></p>
+<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-7c61abcb-7fff-9f56-7e07-2b2319f4fcdd"><img src="https://support.discord.com/hc/article_attachments/22691366510743" width="240" height="493"></span>   <img src="https://support.discord.com/hc/article_attachments/22691351927447" width="229" height="495"></p>
 <h2 id="h_01HRQSA6C85Z6CA9CF10DPRX1Q">Slash Commands</h2>
-<p>To use an app’s slash commands, simply type <strong><span style="color: #188038;">”</span></strong><strong><span style="color: #188038;">/”</span></strong> in chat to bring up the <strong>command picker </strong>and select the command you would like to use. You can also type the entire<strong> “/ (command)”</strong> within the text box to initiate the command.</p>
+<p>To use an app’s slash commands via the chat bar, simply type <strong><span style="color: #188038;">”</span></strong><strong><span style="color: #188038;">/”</span></strong> in chat to bring up the <strong>command picker </strong>and select the command you would like to use. You can also type the entire<strong> “/ (command)”</strong> within the text box to initiate the command.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22010330446615" width="624" height="369"></p>
 <p>For more information on slash commands, check out this <a href="https://support.discord.com/hc/en-us/articles/1500000368501-Slash-Commands-FAQ" target="_blank" rel="noopener noreferrer">article</a>.</p>
 <h2 id="h_01HRQSA6C8MGJ2F3G3GEQTQ36P">User and Message Commands</h2>
 <p>You can also interact with an app by right-clicking on a user or message and bringing up the dropdown menu. Additional interactions can be found under the <strong>Apps</strong> sub-menu.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22010330473623" width="600" height="390"></p>
 <h3 id="h_01HRQSA6C84T8XD8BFM2984HH9">
-    <span style="color: #434343;">Note: Every app is different. To learn how each app functions, check out the app’s member profile or the </span><strong><span style="color: #434343;">App Directory</span></strong><span style="color: #434343;"> page. </span>
+    <span style="color: #434343;">Note: Every app is different. To learn how each app functions, check out the app’s member profile or the </span><strong><span style="color: #434343;">App Directory</span></strong><span style="color: #434343;"> page for the app. </span>
 </h3>
 <h1 id="h_01HRQSA6C89EVW06TR83E76S86">How to Discover Apps</h1>
 <p>Discord’s <strong>App Directory</strong> lets you search, browse, and explore various <a href="https://support.discord.com/hc/en-us/articles/19265818186135" target="_blank" rel="noopener noreferrer">apps</a> you can add to customize your server. </p>
