@@ -4958,16 +4958,13 @@
             e.exports = {
                 animationContainer: "animationContainer_af2200",
                 buttonsContainer: "buttonsContainer_a90621",
-                capitalize: "capitalize__50f8e",
                 clickable: "clickable_b41429",
                 closeButton: "closeButton_e88b7d",
-                closeIconButton: "closeIconButton_cc4258",
                 fadeIn: "fadeIn__0663f",
                 fadeOut: "fadeOut_de0df3",
                 finishButton: "finishButton__8590c",
+                flex: "flex__0016b",
                 footer: "footer_d63e9e",
-                header: "header__05198",
-                introContainer: "introContainer__4ffdc",
                 lastParagraph: "lastParagraph__7a09c",
                 mainContent: "mainContent__23e7a",
                 modal: "modal_f49d0b",
@@ -4980,7 +4977,7 @@
                 previousButton: "previousButton_b43130",
                 progressContainer: "progressContainer__378bd",
                 progressStep: "progressStep_dec95e",
-                progressStepFilled: "progressStepFilled_c8bf61",
+                progressStepFill: "progressStepFill__47c59",
                 scrollBg: "scrollBg_b81d25",
                 scrollBgBottom: "scrollBgBottom__10a36",
                 scrollBgTop: "scrollBgTop_e0da83",
@@ -5003,11 +5000,13 @@
                 contentLabel: "contentLabel_aa05d5",
                 contentWithMinHeight: "contentWithMinHeight__78ad4",
                 enterToSearchText: "enterToSearchText_c64e49",
+                errorText: "errorText__34a8a",
                 flex: "flex__7aeec",
                 gameImagePlaceholder: "gameImagePlaceholder__732e7",
                 icon: "icon_e8e1b2",
                 iconSmall: "iconSmall_cd3113",
                 inputContainer: "inputContainer__1e798",
+                introTitle: "introTitle__6a50e",
                 playstyleOption: "playstyleOption__67567",
                 playstyleSelect: "playstyleSelect_b7d88b",
                 playstyleTitle: "playstyleTitle__00d17",
@@ -5018,11 +5017,13 @@
                 selectedPlaystyle: "selectedPlaystyle_e4490f",
                 selectedSection: "selectedSection__5c175",
                 slideContent: "slideContent__6ae94",
+                stepNum: "stepNum_b5f2f3",
                 subtitle: "subtitle__62596",
                 tagInput: "tagInput__4fbf8",
                 timeSelection: "timeSelection_cf3393",
                 timeSelectorRow: "timeSelectorRow_d86011",
-                title: "title__20916"
+                title: "title__20916",
+                twoColumn: "twoColumn_b751a1"
             }
         },
         802212: function(e) {
@@ -5862,6 +5863,13 @@
                 selectButton: "selectButton__83238"
             }
         },
+        845169: function(e) {
+            "use strict";
+            e.exports = {
+                container: "container__9d45f",
+                label: "label__08616"
+            }
+        },
         138317: function(e) {
             "use strict";
             e.exports = {
@@ -5896,10 +5904,10 @@
                 hero: "hero_dc420c",
                 heroDetails: "heroDetails_f9bc0e",
                 inputContainerShareToChannel: "inputContainerShareToChannel__8eca3",
+                interactionsContainer: "interactionsContainer__97fe3",
+                joinPromptContainer: "joinPromptContainer_e5abcb",
                 popout: "popout_cfa8bc",
                 popoutTitle: "popoutTitle__6f44d",
-                reactionContainer: "reactionContainer__06e98",
-                reactionContainerShareToChannel: "reactionContainerShareToChannel__318bd",
                 shareToChannelInput: "shareToChannelInput_a160d6",
                 shareToChannelInputHasAttachments: "shareToChannelInputHasAttachments__4d1e1"
             }
@@ -6663,12 +6671,25 @@
                 cardFooterLanguageIcon: "cardFooterLanguageIcon__33333",
                 cardFooterLocation: "cardFooterLocation_f8cc19",
                 cardFooterLocationIcon: "cardFooterLocationIcon__2e33a",
+                clickableCard: "clickableCard__1c1e9",
                 header: "header__2b527",
                 playstyle: "playstyle__9d997",
                 primetimeContainer: "primetimeContainer__2c3ce",
                 primetimeIcon: "primetimeIcon_c4d213",
                 trait: "trait_dfdb34",
                 traitsContainer: "traitsContainer__23f4b"
+            }
+        },
+        825640: function(e) {
+            "use strict";
+            e.exports = {
+                applicationContainer: "applicationContainer_eab373",
+                body: "body_ed1b36",
+                clanContainer: "clanContainer__451f0",
+                closeButtonContainer: "closeButtonContainer__7672f",
+                container: "container__8ab05",
+                verificationForm: "verificationForm__7b4bb",
+                verticalRule: "verticalRule__8c737"
             }
         },
         393810: function(e) {
@@ -10173,6 +10194,7 @@
                 applicationIcon: "applicationIcon_f57490",
                 applicationIconContainer: "applicationIconContainer__307a7",
                 centerContent: "centerContent_ef4f7e",
+                clanGdmConsentCheckbox: "clanGdmConsentCheckbox_dee1f9",
                 closeButton: "closeButton_d09def",
                 confirmation: "confirmation__6b811",
                 confirmationButton: "confirmationButton__62279",
@@ -19744,6 +19766,7 @@
             e.exports = {
                 buttonWide: "buttonWide__6a940",
                 innerButton: "innerButton_c33030",
+                modalTopPill: "modalTopPill_b51f25",
                 nitroIconSubHeader: "nitroIconSubHeader__8c548",
                 termsApplyAnchor: "termsApplyAnchor__82440",
                 termsApplyBodyText: "termsApplyBodyText__949d3"
@@ -19783,6 +19806,14 @@
                 countdown: "countdown__183b3",
                 subscribeButton: "subscribeButton__8b8fb",
                 subscribeButtonText: "subscribeButtonText__47656"
+            }
+        },
+        809851: function(e) {
+            "use strict";
+            e.exports = {
+                headerContainer: "headerContainer_d09a13",
+                nitroWheel: "nitroWheel__28082",
+                tooltip: "tooltip_b4086a"
             }
         },
         15996: function(e) {
@@ -21917,8 +21948,6 @@
                 lottieAnimation: "lottieAnimation_ae4eab",
                 lottieAnimationBackground: "lottieAnimationBackground__5f8f8",
                 lottieAnimationBackgroundWrapper: "lottieAnimationBackgroundWrapper_cede2c",
-                lottieAnimationForeground: "lottieAnimationForeground_d34553",
-                lottieAnimationForegroundHidden: "lottieAnimationForegroundHidden__959e2",
                 wrapper: "wrapper_b1e1fe",
                 wrapperInvisible: "wrapperInvisible__4095f",
                 wrapperVisible: "wrapperVisible_f00ae4"
@@ -21931,6 +21960,8 @@
                 brandingWrapper: "brandingWrapper__84c6a",
                 contentCollapsed: "contentCollapsed__926bb",
                 contentCollapsedAccepted: "contentCollapsedAccepted__9d6ab",
+                contentCollapsedExpanded: "contentCollapsedExpanded__3258d",
+                contentCollapsedWrapper: "contentCollapsedWrapper__1d462",
                 partnerBranding: "partnerBranding__4477f",
                 questName: "questName__67a0d",
                 questProgressBar: "questProgressBar_ed436f",
@@ -22016,6 +22047,12 @@
             e.exports = {
                 questControls: "questControls__357a2",
                 questControlsTitle: "questControlsTitle__45f0c"
+            }
+        },
+        959343: function(e) {
+            "use strict";
+            e.exports = {
+                questsCollectibleReward: "questsCollectibleReward__3dca4"
             }
         },
         682164: function(e) {
@@ -22140,6 +22177,23 @@
                 title: "title__5bb81",
                 tooltip: "tooltip__5cb27",
                 tooltipText: "tooltipText__63048"
+            }
+        },
+        174415: function(e) {
+            "use strict";
+            e.exports = {
+                close: "close__85eb5",
+                confettiCanvas: "confettiCanvas_d0db40",
+                footerContainer: "footerContainer__95cd2",
+                gradient: "gradient__33001",
+                headerBackground: "headerBackground_c2cad6",
+                headerContainer: "headerContainer__81dc7",
+                headerForeground: "headerForeground_dc82b5",
+                heading: "heading__3ff72",
+                previewContainer: "previewContainer__32cb1",
+                rootContainer: "rootContainer_d251a3",
+                spinner: "spinner__2aca6",
+                text: "text__4fd4a"
             }
         },
         732553: function(e) {
@@ -24416,6 +24470,15 @@
                 userProfileOuterUnthemed: "userProfileOuterUnthemed_e14365"
             }
         },
+        46781: function(e) {
+            "use strict";
+            e.exports = {
+                button: "button_c03db1",
+                compactButton: "compactButton__87ab2",
+                compactButtonInner: "compactButtonInner_cc8cc8",
+                themeColor: "themeColor__71257"
+            }
+        },
         970903: function(e) {
             "use strict";
             e.exports = {
@@ -24573,6 +24636,13 @@
                 body: "body__07791",
                 header: "header__8447d",
                 root: "root__8fb4a"
+            }
+        },
+        262572: function(e) {
+            "use strict";
+            e.exports = {
+                avatar: "avatar__4188a",
+                inner: "inner__14185"
             }
         },
         312916: function(e) {
@@ -25459,6 +25529,7 @@
                 select: "select_b6196c",
                 text: "text_efccc5",
                 textGrid: "textGrid_c0492f",
+                textSample: "textSample_c3007c",
                 theme: "theme__94206",
                 toolbar: "toolbar_c64020"
             }
@@ -25716,12 +25787,9 @@
             "use strict";
             e.exports = {
                 joinText: "joinText__85cb3",
-                popoutProfileText: "popoutProfileText__041e4",
-                premiumProfilePreviewContent: "premiumProfilePreviewContent_e95c61",
-                premiumProfilePreviewModal: "premiumProfilePreviewModal_d2189d",
+                modalRoot: "modalRoot_db53a5",
                 premiumSubscribeButton: "premiumSubscribeButton__1f00e",
-                upsellSection: "upsellSection__9f9b6",
-                userPopoutContainer: "userPopoutContainer__19d3a"
+                upsellSection: "upsellSection__9f9b6"
             }
         },
         33408: function(e) {
