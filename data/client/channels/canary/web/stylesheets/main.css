@@ -48745,6 +48745,19 @@ html .progress__00e29 {
     height: 16px
 }
 
+.container__9d45f {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    overflow-x: hidden
+}
+
+.label__08616 {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
 .container__8d997 {
     display: flex;
     box-sizing: border-box;
@@ -48908,11 +48921,19 @@ html .progress__00e29 {
     margin-top: 6px
 }
 
-.reactionContainer__06e98 {
+.interactionsContainer__97fe3 {
     padding: 16px;
     background-color: var(--background-primary);
     border-bottom-left-radius: var(--radius-md);
-    border-bottom-right-radius: var(--radius-md)
+    border-bottom-right-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+.joinPromptContainer_e5abcb {
+    display: flex;
+    flex-direction: row
 }
 
 .emojiHotrail_cac44d {
@@ -48944,13 +48965,6 @@ html .progress__00e29 {
 
 .badgeContainer__67878 {
     padding: 2px
-}
-
-.reactionContainerShareToChannel__318bd {
-    padding-bottom: 16px;
-    background-color: var(--background-primary);
-    border-bottom-left-radius: var(--radius-md);
-    border-bottom-right-radius: var(--radius-md)
 }
 
 .emojiHotrailShareToChannel__16b9a {
@@ -132037,4 +132051,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.8846a677379a1048c47e.css.map*/
+/*# sourceMappingURL=99387.9af9af49f9f2a13267ea.css.map*/

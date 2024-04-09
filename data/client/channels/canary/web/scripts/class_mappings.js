@@ -5863,6 +5863,13 @@
                 selectButton: "selectButton__83238"
             }
         },
+        845169: function(e) {
+            "use strict";
+            e.exports = {
+                container: "container__9d45f",
+                label: "label__08616"
+            }
+        },
         138317: function(e) {
             "use strict";
             e.exports = {
@@ -5897,10 +5904,10 @@
                 hero: "hero_dc420c",
                 heroDetails: "heroDetails_f9bc0e",
                 inputContainerShareToChannel: "inputContainerShareToChannel__8eca3",
+                interactionsContainer: "interactionsContainer__97fe3",
+                joinPromptContainer: "joinPromptContainer_e5abcb",
                 popout: "popout_cfa8bc",
                 popoutTitle: "popoutTitle__6f44d",
-                reactionContainer: "reactionContainer__06e98",
-                reactionContainerShareToChannel: "reactionContainerShareToChannel__318bd",
                 shareToChannelInput: "shareToChannelInput_a160d6",
                 shareToChannelInputHasAttachments: "shareToChannelInputHasAttachments__4d1e1"
             }
