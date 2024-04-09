@@ -36556,7 +36556,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282948", ", Version Hash: ").concat("29b77f8257c3934581fb89eed792d61f0f70462a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282969", ", Version Hash: ").concat("14cda3b7bfbaa9aba84fb2a047f8c0de0e70ad82")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55342,6 +55342,7 @@
                 CLAN_SETUP_OVERVIEW_SIGN_HELP: "By signing this charter, I agree to grow and uphold the values of the clan.",
                 CLAN_OVERVIEW_LIST_TWO_ITEMS: "!!{item1}!! and !!{item2}!!",
                 CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS: "!!{items}!!, and !!{last}!!",
+                CLAN_SUBMIT_ERROR: "Something went wrong! Please fix any errors and try again.",
                 CLAN_START_INTERVIEW: "Start Interview",
                 CLAN_JOIN_INTERVIEW: "Join Interview",
                 CLAN_APPLICATION_SETUP_HEADER: "Set up the member screening application for **!!{guildName}!!** here. The application must have at least one Short Answer, Paragraph, or Multiple Choice section.",
@@ -85730,8 +85731,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "282948", "282948"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282948")), t = 0), t
+                let t = parseInt((e = "282969", "282969"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282969")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107818,8 +107819,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "282948",
-                    versionHash: "29b77f8257c3934581fb89eed792d61f0f70462a"
+                    buildNumber: "282969",
+                    versionHash: "14cda3b7bfbaa9aba84fb2a047f8c0de0e70ad82"
                 }
             }
             n.r(t), n.d(t, {
@@ -157796,8 +157797,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712686551501",
-                                    build_number: "282948"
+                                    built_at: "1712688412441",
+                                    build_number: "282969"
                                 }
                             },
                             retries: 1
@@ -164753,24 +164754,24 @@
                     let n = Math.max(0, t - e.length);
                     if (1 === e.length) return n > 0 ? h.default.Messages.POLL_VOTES_TOOLTIP_1_N.format({
                         a: e[0],
-                        n: n
+                        n: n.toLocaleString()
                     }) : e[0];
                     if (2 === e.length) return n > 0 ? h.default.Messages.POLL_VOTES_TOOLTIP_2_N.format({
                         a: e[0],
                         b: e[1],
-                        n: n
+                        n: n.toLocaleString()
                     }) : h.default.Messages.POLL_VOTES_TOOLTIP_2.format({
                         a: e[0],
                         b: e[1]
                     });
                     if (3 !== e.length) return h.default.Messages.POLL_VOTES_TOOLTIP_N.format({
-                        n: n
+                        n: n.toLocaleString()
                     });
                     else return n > 0 ? h.default.Messages.POLL_VOTES_TOOLTIP_3_N.format({
                         a: e[0],
                         b: e[1],
                         c: e[2],
-                        n: n
+                        n: n.toLocaleString()
                     }) : h.default.Messages.POLL_VOTES_TOOLTIP_3.format({
                         a: e[0],
                         b: e[1],
@@ -232666,7 +232667,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "29b77f8257c3934581fb89eed792d61f0f70462a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "14cda3b7bfbaa9aba84fb2a047f8c0de0e70ad82"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258758,7 +258759,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "282948"
+                                build_number: "282969"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265901,7 +265902,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "282948", "282948"), 10);
+                let s = parseInt((n = "282969", "282969"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292645,4 +292646,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59511.3363c1d425caa7b39ad8.js.map
+//# sourceMappingURL=59511.3d980410d795267c8dd8.js.map

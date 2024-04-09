@@ -5000,6 +5000,7 @@
                 contentLabel: "contentLabel_aa05d5",
                 contentWithMinHeight: "contentWithMinHeight__78ad4",
                 enterToSearchText: "enterToSearchText_c64e49",
+                errorText: "errorText__34a8a",
                 flex: "flex__7aeec",
                 gameImagePlaceholder: "gameImagePlaceholder__732e7",
                 icon: "icon_e8e1b2",
@@ -19798,6 +19799,14 @@
                 countdown: "countdown__183b3",
                 subscribeButton: "subscribeButton__8b8fb",
                 subscribeButtonText: "subscribeButtonText__47656"
+            }
+        },
+        809851: function(e) {
+            "use strict";
+            e.exports = {
+                headerContainer: "headerContainer_d09a13",
+                nitroWheel: "nitroWheel__28082",
+                tooltip: "tooltip_b4086a"
             }
         },
         15996: function(e) {
