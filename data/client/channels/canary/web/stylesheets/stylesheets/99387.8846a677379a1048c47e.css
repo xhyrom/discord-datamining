@@ -127445,23 +127445,13 @@ div.nagbar_c731ff {
     margin-top: 8px
 }
 
-.premiumProfilePreviewModal_d2189d {
-    width: 340px;
-    border-radius: 5px;
+.modalRoot_db53a5 {
+    width: 348px;
+    border-radius: 8px;
     overflow: hidden
 }
 
-.premiumProfilePreviewModal_d2189d .premiumProfilePreviewContent_e95c61 {
-    padding: 0;
-    background-color: var(--background-floating)
-}
-
-.userPopoutContainer__19d3a {
-    border-radius: 8px 8px 0 0
-}
-
 .upsellSection__9f9b6 {
-    background-color: var(--background-secondary);
     padding: 16px;
     display: flex;
     flex-direction: column
@@ -127474,10 +127464,6 @@ div.nagbar_c731ff {
 
 .premiumSubscribeButton__1f00e {
     margin-bottom: 8px
-}
-
-.popoutProfileText__041e4 {
-    padding: 0 16px
 }
 
 .soundboardColumn__14a40 {
@@ -132051,4 +132037,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.32f7a73e2d42369366d7.css.map*/
+/*# sourceMappingURL=99387.8846a677379a1048c47e.css.map*/
