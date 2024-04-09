@@ -59,6 +59,7 @@
         <strong><span id="docs-internal-guid-8469ce58-7fff-9f29-f26f-227d7dcb2cce">Special </span></strong><a href="https://support.discord.com/hc/en-us/articles/17162747936663" target="_blank" rel="noopener noreferrer">Shop</a><strong> Perks</strong>: Get special member pricing on all Shop purchases and Nitro exclusive items in the Shop.
     </li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;"><strong><span id="docs-internal-guid-f1768d34-7fff-bc91-0e13-762712352a41">Unlimited </span><span id="docs-internal-guid-f1768d34-7fff-bc91-0e13-762712352a41"></span></strong><a href="https://support.discord.com/hc/en-us/articles/12102061808663"><strong>Super Reactions</strong></a><strong>:</strong> Bring an extra burst of energy and hype up chat with animated reactions.</span></li>
+    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;"><a href="https://support.discord.com/hc/en-us/articles/17503907209239-Custom-App-Icon" target="_blank" rel="noopener noreferrer"><strong><span style="color: #1155cc;" data-darkreader-inline-color="">Custom App Icon</span></strong>:</a> Customize your Discord app icon on mobile and desktop to match your style.</span></li>
 </ol>
 <h2 id="h_01GFV3P6JCBPK991K73KW8C70B"><strong>Nitro Basic</strong></h2>
 <p><span style="font-weight: 400;">The Nitro Basic plan includes some of the most-loved Nitro features that help you better express yourself for a fraction of the cost.</span></p>
