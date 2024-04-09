@@ -36556,7 +36556,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282916", ", Version Hash: ").concat("5a8d95a2a6ba45c528cacc10be24954c476d23de")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("282923", ", Version Hash: ").concat("ca1c4cea875d423812aa745da451cedef554c63f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -80019,11 +80019,12 @@
                         showEmojiButton: o = !1,
                         autoCompletePosition: l,
                         renderAttachButton: u,
-                        onFocus: E
-                    } = e, [I, T] = r.useState(""), [S, A] = r.useState((0, _.toRichValue)("")), N = () => {
-                        T(""), A((0, _.toRichValue)(""))
-                    }, O = d.ChatInputTypes.ATOMIC_REACTOR_REPLY_INPUT;
-                    return o && (O.emojis = {
+                        onFocus: E,
+                        channel: I
+                    } = e, [T, S] = r.useState(""), [A, N] = r.useState((0, _.toRichValue)("")), O = () => {
+                        S(""), N((0, _.toRichValue)(""))
+                    }, [p, R] = r.useState(!1), C = d.ChatInputTypes.ATOMIC_REACTOR_REPLY_INPUT;
+                    return o && (C.emojis = {
                         button: !0
                     }), (0, i.jsx)(c.default, {
                         ref: t,
@@ -80032,13 +80033,13 @@
                         showRemainingCharsAfterCount: -1,
                         allowNewLines: !1,
                         maxCharacterCount: f.MAX_CHAR_COUNT,
-                        channel: m,
+                        channel: null != I ? I : m,
                         onChange: (e, t, n) => {
-                            T(t), A(n)
+                            S(t), N(n)
                         },
-                        type: O,
-                        textValue: I,
-                        richValue: S,
+                        type: C,
+                        textValue: T,
+                        richValue: A,
                         onSubmit: e => {
                             let {
                                 value: t
@@ -80046,14 +80047,19 @@
                             return t.length > f.MAX_CHAR_COUNT ? Promise.resolve({
                                 shouldClear: !1,
                                 shouldRefocus: !0
-                            }) : (s(t), N(), Promise.resolve({
+                            }) : (s(t), O(), Promise.resolve({
                                 shouldClear: !0,
                                 shouldRefocus: !1
                             }))
                         },
                         setEditorRef: a,
-                        focused: !1,
-                        onFocus: E,
+                        focused: p,
+                        onFocus: () => {
+                            null == E || E(), R(!0)
+                        },
+                        onBlur: () => {
+                            R(!1)
+                        },
                         disableThemedBackground: !0,
                         emojiPickerCloseOnModalOuterClick: !0,
                         disabled: !1,
@@ -85717,8 +85723,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "282916", "282916"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282916")), t = 0), t
+                let t = parseInt((e = "282923", "282923"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("282923")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -90250,6 +90256,9 @@
                         },
                         permissions: {
                             requireSendMessages: !0
+                        },
+                        users: {
+                            allowMentioning: !0
                         },
                         submit: {
                             useDisabledStylesOnSubmit: !0,
@@ -107802,8 +107811,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "282916",
-                    versionHash: "5a8d95a2a6ba45c528cacc10be24954c476d23de"
+                    buildNumber: "282923",
+                    versionHash: "ca1c4cea875d423812aa745da451cedef554c63f"
                 }
             }
             n.r(t), n.d(t, {
@@ -157780,8 +157789,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712682893077",
-                                    build_number: "282916"
+                                    built_at: "1712683289536",
+                                    build_number: "282923"
                                 }
                             },
                             retries: 1
@@ -232642,7 +232651,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5a8d95a2a6ba45c528cacc10be24954c476d23de"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ca1c4cea875d423812aa745da451cedef554c63f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258734,7 +258743,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "282916"
+                                build_number: "282923"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265877,7 +265886,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "282916", "282916"), 10);
+                let s = parseInt((n = "282923", "282923"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292621,4 +292630,4 @@
         }
     }
 ]);
-//# sourceMappingURL=59511.e0880565cd60013eb700.js.map
+//# sourceMappingURL=59511.4b3d091bb588286b8c4c.js.map
