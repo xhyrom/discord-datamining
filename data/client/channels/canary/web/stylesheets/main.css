@@ -39262,21 +39262,6 @@ html .progress__00e29 {
     overflow: hidden
 }
 
-.clipPill__3140c {
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    padding: 4px 8px;
-    background-color: var(--brand-500);
-    border-radius: var(--radius-xs);
-    z-index: 1;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px
-}
-
 .container_ae2e4c {
     width: 100%
 }
@@ -131775,4 +131760,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7c2684eb2782a5b33830.css.map*/
+/*# sourceMappingURL=99387.60d679d37e166fdc8632.css.map*/
