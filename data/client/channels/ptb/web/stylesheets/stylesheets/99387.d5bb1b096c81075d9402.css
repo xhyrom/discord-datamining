@@ -53652,7 +53652,8 @@ html .progress__00e29 {
 
 .container_ec1fbc {
     width: 100%;
-    padding: 24px
+    padding: 24px;
+    position: relative
 }
 
 .toolbar__4e903 {
@@ -53694,6 +53695,22 @@ html .progress__00e29 {
     color: var(--interactive-active)
 }
 
+.filterTooltip__5ddcd {
+    width: 200px;
+    max-width: 200px;
+    border-radius: 8px;
+    border: 1px solid var(--border-subtle);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    overflow: hidden
+}
+
+.filterTooltipContent_d1b808 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
 .preferences_d68e04,
 .actions__94a77 {
     display: flex;
@@ -53725,6 +53742,81 @@ html .progress__00e29 {
     display: flex;
     flex-direction: column;
     gap: 40px
+}
+
+.playstyleSelector_b85eff {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    -webkit-backdrop-filter: blur(80px);
+    backdrop-filter: blur(80px);
+    display: flex;
+    justify-content: center
+}
+
+.playstyleSelectorSaveContainer__605ea {
+    position: absolute;
+    top: 16px;
+    right: 16px
+}
+
+.playstyleSelectorContent__52010 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 800px;
+    justify-content: center;
+    align-items: center
+}
+
+.playstyleHeader__45372 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%
+}
+
+.playstyles__1509f {
+    display: flex;
+    gap: 8px
+}
+
+.playstyleOption_c404e8 {
+    position: relative;
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--border-subtle);
+    cursor: pointer
+}
+
+.selectedPlaystyle__5860f {
+    border-color: var(--brand-experiment)
+}
+
+.checkmark_c3e9cf {
+    color: var(--brand-experiment);
+    position: absolute;
+    right: 12px;
+    top: 12px
+}
+
+.theme-dark .filterTooltip__5ddcd,
+.theme-dark .playstyleOption_c404e8,
+.theme-dark .playstyleSelector_b85eff {
+    background-color: hsl(var(--primary-800-hsl)/.8)
+}
+
+.theme-light .filterTooltip__5ddcd,
+.theme-light .playstyleOption_c404e8,
+.theme-light .playstyleSelector_b85eff {
+    background-color: hsl(var(--white-500-hsl)/.8)
 }
 
 @value responsiveWidthMobile from '../../../../uikit/auth/WaveSplash.module.css';
@@ -131616,4 +131708,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f312895500cc79151450.css.map*/
+/*# sourceMappingURL=99387.d5bb1b096c81075d9402.css.map*/
