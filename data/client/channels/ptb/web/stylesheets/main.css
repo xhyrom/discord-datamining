@@ -116902,6 +116902,34 @@ html .invoiceCancelRow__6ff3e {
     display: flex
 }
 
+.header__10a82 {
+    display: flex;
+    flex-direction: row
+}
+
+.nitroWheel__7ee03 {
+    width: 20px;
+    height: 20px;
+    margin-left: var(--spacing-4)
+}
+
+.subheader__7fae4 {
+    margin-top: var(--spacing-8)
+}
+
+.optionsContainer__44347 {
+    margin-top: var(--spacing-24);
+    margin-bottom: var(--spacing-24)
+}
+
+.options_bde988 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: var(--spacing-8);
+    -moz-column-gap: var(--spacing-8);
+    column-gap: var(--spacing-8)
+}
+
 .header__1b8aa {
     font-size: 20px;
     margin-top: 20px
@@ -131739,4 +131767,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.3a941ac4f73b5891c9fa.css.map*/
+/*# sourceMappingURL=99387.92eabd53cbb8ff6edb91.css.map*/
