@@ -36484,7 +36484,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("283321", ", Version Hash: ").concat("8033888dcb8f3e14f6d397ab58ea9e457e76ca40")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("283328", ", Version Hash: ").concat("34c7a4d4519b38862e381ebece4153be9a34b562")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -65883,47 +65883,43 @@
                 let {
                     guildId: r,
                     channelId: s,
-                    applicationId: o,
-                    instanceId: _,
-                    participants: c,
-                    analyticsActivitySessionId: I
-                } = e, S = (0, f.default)(o);
-                if (null == S) return;
-                let h = u.default.getBasicChannel(s);
-                if (!(null != h && d.default.canBasicChannel(m.BasicPermissions.CONNECT, h) || (null == h ? void 0 : h.type) === m.ChannelTypes.DM || (null == h ? void 0 : h.type) === m.ChannelTypes.GROUP_DM)) return;
-                let A = c.map(e => e.userId),
-                    N = l.default.getId(),
-                    O = l.default.getSessionId(),
-                    p = null === (t = c.find(e => e.userId === N)) || void 0 === t ? void 0 : t.sessionId,
-                    D = null == p,
-                    v = R.get(o),
-                    M = {
-                        analyticsActivitySessionId: null != I ? I : "",
-                        applicationId: o,
+                    applicationId: a,
+                    instanceId: o,
+                    participants: _,
+                    analyticsActivitySessionId: c
+                } = e, I = (0, f.default)(a);
+                if (null == I) return;
+                let S = u.default.getBasicChannel(s);
+                if (!(null != S && d.default.canBasicChannel(m.BasicPermissions.CONNECT, S) || (null == S ? void 0 : S.type) === m.ChannelTypes.DM || (null == S ? void 0 : S.type) === m.ChannelTypes.GROUP_DM)) return;
+                let h = _.map(e => e.userId),
+                    A = l.default.getId(),
+                    N = l.default.getSessionId(),
+                    O = null === (t = _.find(e => e.userId === A)) || void 0 === t ? void 0 : t.sessionId,
+                    p = null == O,
+                    D = R.get(a),
+                    v = {
+                        analyticsActivitySessionId: null != c ? c : "",
+                        applicationId: a,
                         channelId: s,
                         guildId: r,
-                        instanceId: _,
-                        url: S,
-                        userIds: new Set(A)
+                        instanceId: o,
+                        url: I,
+                        userIds: new Set(h)
                     };
-                A.some(e => e === N) && null != v && (D || O === p) && (R.set(v.applicationId, {
-                    ...v,
-                    ...M
-                }), a.default.dispatch({
-                    type: "EMBEDDED_ACTIVITY_INSTANCE_CHANGE",
+                h.some(e => e === A) && null != D && (p || N === O) && R.set(D.applicationId, {
+                    ...D,
+                    ...v
+                }), null != D && s === D.channelId && !h.some(e => e === A) && Array.from(D.userIds).some(e => e === A) ? L.get(s) === a ? L.delete(s) : R.delete(a) : h.some(e => e === A) && (null == D || D.applicationId !== a || D.channelId !== s) && (O === l.default.getSessionId() && !p || (0, T.shouldMountActivityIFrameFromGatewayUpdateWithoutSessionIdCheck)("EmbeddedActivitiesStore")) && (x({
                     channelId: s,
-                    instanceId: _
-                })), null != v && s === v.channelId && !A.some(e => e === N) && Array.from(v.userIds).some(e => e === N) ? L.get(s) === o ? L.delete(s) : R.delete(o) : A.some(e => e === N) && (null == v || v.applicationId !== o || v.channelId !== s) && (p === l.default.getSessionId() && !D || (0, T.shouldMountActivityIFrameFromGatewayUpdateWithoutSessionIdCheck)("EmbeddedActivitiesStore")) && (x({
-                    channelId: s,
-                    applicationId: o,
-                    instanceId: _
+                    applicationId: a,
+                    instanceId: o
                 }), E.ComponentDispatch.dispatch(m.ComponentActions.OPEN_EMBEDDED_ACTIVITY, {
                     channelId: s
                 }));
-                let y = (null !== (n = g.get(s)) && void 0 !== n ? n : []).filter(e => e.applicationId !== o),
-                    P = k(r),
-                    U = (null !== (i = C.get(P)) && void 0 !== i ? i : []).filter(e => !(e.applicationId === o && e.channelId === s));
-                A.length > 0 && (y.push(M), U.push(M)), g.set(s, y), C.set(P, U)
+                let M = (null !== (n = g.get(s)) && void 0 !== n ? n : []).filter(e => e.applicationId !== a),
+                    y = k(r),
+                    P = (null !== (i = C.get(y)) && void 0 !== i ? i : []).filter(e => !(e.applicationId === a && e.channelId === s));
+                h.length > 0 && (M.push(v), P.push(v)), g.set(s, M), C.set(y, P)
             }
 
             function F(e) {
@@ -85654,8 +85650,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "283321", "283321"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283321")), t = 0), t
+                let t = parseInt((e = "283328", "283328"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283328")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107763,8 +107759,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "283321",
-                    versionHash: "8033888dcb8f3e14f6d397ab58ea9e457e76ca40"
+                    buildNumber: "283328",
+                    versionHash: "34c7a4d4519b38862e381ebece4153be9a34b562"
                 }
             }
             n.r(t), n.d(t, {
@@ -157422,8 +157418,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712769869194",
-                                    build_number: "283321"
+                                    built_at: "1712770293886",
+                                    build_number: "283328"
                                 }
                             },
                             retries: 1
@@ -232501,7 +232497,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8033888dcb8f3e14f6d397ab58ea9e457e76ca40"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "34c7a4d4519b38862e381ebece4153be9a34b562"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258594,7 +258590,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "283321"
+                                build_number: "283328"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265752,7 +265748,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "283321", "283321"), 10);
+                let s = parseInt((n = "283328", "283328"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292495,4 +292491,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.adde7d995c9be44c830d.js.map
+//# sourceMappingURL=65573.a4df64b0475426aa55c2.js.map
