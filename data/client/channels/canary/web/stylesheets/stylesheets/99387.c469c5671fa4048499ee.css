@@ -126574,8 +126574,31 @@ div.nagbar_c731ff {
     left: 22px
 }
 
+.usernameBadgeList__8847d {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px
+}
+
 .username__8af4e {
-    margin-top: 12px
+    flex-shrink: 0
+}
+
+.badgeList__27ede {
+    background-color: var(--bg-mod-faint);
+    border-radius: 8px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 2px 4px;
+    max-width: 228px;
+    box-sizing: border-box
+}
+
+.badgeList__27ede:empty {
+    visibility: hidden
 }
 
 .root__8fb4a {
@@ -131750,4 +131773,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.03706a11569040cd79e3.css.map*/
+/*# sourceMappingURL=99387.c469c5671fa4048499ee.css.map*/
