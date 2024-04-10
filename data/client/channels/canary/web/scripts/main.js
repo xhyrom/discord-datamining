@@ -36484,7 +36484,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283401", ", Version Hash: ").concat("869c3fc28c817c563c69b158841d2d19ec22babe")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283406", ", Version Hash: ").concat("fe614a60b53d7e5ce2880dcb5d81bb96b7494adf")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55247,7 +55247,7 @@
                 CLAN_START_INTERVIEW: "Start Interview",
                 CLAN_JOIN_INTERVIEW: "Join Interview",
                 CLAN_APPLICATION_SETUP_HEADER: "Set up the member screening application for **!!{guildName}!!** here. The application must have at least one Short Answer, Paragraph, or Multiple Choice section.",
-                CLAN_APPLICATION_CANT_REMOVE_FIELD: "Clan applications must have at least one non-rules question.",
+                CLAN_APPLICATION_CANT_REMOVE_FIELD: "Applications must have at least question.",
                 MEMBER_VERIFICATION_ANSWER_PLACEHOLDER: "Enter your answer",
                 MEMBER_VERIFICATION_USERS_APPLICATION: "!!{username}!!'s application",
                 CLAN_APPLICATION_GDM_CONSENT: "By applying, you give the guild admins permission to message you regarding your application.",
@@ -85656,8 +85656,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "283401", "283401"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283401")), t = 0), t
+                let t = parseInt((e = "283406", "283406"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283406")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107765,8 +107765,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "283401",
-                    versionHash: "869c3fc28c817c563c69b158841d2d19ec22babe"
+                    buildNumber: "283406",
+                    versionHash: "fe614a60b53d7e5ce2880dcb5d81bb96b7494adf"
                 }
             }
             n.r(t), n.d(t, {
@@ -135423,7 +135423,7 @@
                     (0, r.openModalLazy)(async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("98880")]).then(n.bind(n, "645264"));
+                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("70935")]).then(n.bind(n, "645264"));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             guildId: e,
@@ -157289,8 +157289,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712777067460",
-                                    build_number: "283401"
+                                    built_at: "1712777637369",
+                                    build_number: "283406"
                                 }
                             },
                             retries: 1
@@ -232267,7 +232267,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "869c3fc28c817c563c69b158841d2d19ec22babe"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "fe614a60b53d7e5ce2880dcb5d81bb96b7494adf"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258377,7 +258377,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "283401"
+                                build_number: "283406"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265553,7 +265553,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "283401", "283401"), 10);
+                let s = parseInt((n = "283406", "283406"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292305,4 +292305,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.f19783e987c7a80453bb.js.map
+//# sourceMappingURL=65573.507ad17d8fccf0f963ba.js.map
