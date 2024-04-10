@@ -1,8 +1,8 @@
 # Public Testing Beta
 
 ### Info
-Build number: 283378  
-Version hash: 1699e4f6827bfffb70cdb1d5792eb323d49de46e  
+Build number: 283379  
+Version hash: 4ababbc862eead4890cc8a3cc555ced9e1865bfe  
 Host version: 1.0.1065  
 Built at: 4/10/2024, 7:00:34 PM  
 
