@@ -36509,7 +36509,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283603", ", Version Hash: ").concat("5b549d93b44b4ec30d3d8723e1c4449574520fb4")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283611", ", Version Hash: ").concat("0b3accf33c11bb919181fe4f21a6bb07ee2f09c4")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85716,8 +85716,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "283603", "283603"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283603")), t = 0), t
+                let t = parseInt((e = "283611", "283611"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283611")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107862,8 +107862,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "283603",
-                    versionHash: "5b549d93b44b4ec30d3d8723e1c4449574520fb4"
+                    buildNumber: "283611",
+                    versionHash: "0b3accf33c11bb919181fe4f21a6bb07ee2f09c4"
                 }
             }
             n.r(t), n.d(t, {
@@ -157311,8 +157311,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712791515685",
-                                    build_number: "283603"
+                                    built_at: "1712792036005",
+                                    build_number: "283611"
                                 }
                             },
                             retries: 1
@@ -174506,28 +174506,27 @@
                 E = n("918701"),
                 I = n("46140");
 
-            function T(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-                    [n, r] = i.useState(!1),
-                    a = (0, s.useStateFromStoresArray)([_.default], () => [..._.default.quests.values()]),
+            function T() {
+                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
+                        fetchPolicy: "cache-only"
+                    },
+                    [t, n] = i.useState(!1),
+                    r = (0, s.useStateFromStoresArray)([_.default], () => [..._.default.quests.values()]),
                     {
-                        isFetchingCurrentQuests: o,
-                        lastFetchedCurrentQuests: d
+                        isFetchingCurrentQuests: a,
+                        lastFetchedCurrentQuests: o
                     } = (0, s.useStateFromStoresObject)([_.default], () => ({
                         isFetchingCurrentQuests: _.default.isFetchingCurrentQuests,
                         lastFetchedCurrentQuests: _.default.lastFetchedCurrentQuests
                     })),
-                    c = (0, u.getIsEligibleForQuests)({
+                    d = (0, u.getIsEligibleForQuests)({
                         location: I.QuestsExperimentLocations.USE_QUESTS
                     });
                 return i.useEffect(() => {
-                    !0 === t.fetch && c && !n && !o && 0 === d && (r(!0), (0, l.fetchCurrentQuests)())
-                }, [t.fetch, c, n, o, d]), {
-                    quests: i.useMemo(() => {
-                        let t = null != e ? new Set(e) : null;
-                        return a.filter(e => null == t || t.has(e.id))
-                    }, [e, a]),
-                    isFetchingCurrentQuests: o
+                    if ("cache-only" !== e.fetchPolicy)("cache-and-network" === e.fetchPolicy || "cache-or-network" === e.fetchPolicy && 0 === o) && d && !t && !a && (n(!0), (0, l.fetchCurrentQuests)())
+                }, [e.fetchPolicy, d, t, a, o]), {
+                    quests: r,
+                    isFetchingCurrentQuests: a
                 }
             }
 
@@ -174535,7 +174534,9 @@
                 let {
                     quests: e,
                     isFetchingCurrentQuests: t
-                } = T(), [n, s] = i.useState(() => new Map(e.map(e => [e.id, (0, E.isQuestExpired)(e)])));
+                } = T({
+                    fetchPolicy: "cache-only"
+                }), [n, s] = i.useState(() => new Map(e.map(e => [e.id, (0, E.isQuestExpired)(e)])));
                 return i.useEffect(() => {
                     if (t) return;
                     let n = [];
@@ -174576,8 +174577,8 @@
                 let {
                     quests: e,
                     isFetchingCurrentQuests: t
-                } = T(void 0, {
-                    fetch: !0
+                } = T({
+                    fetchPolicy: "cache-or-network"
                 }), n = f();
                 return i.useMemo(() => {
                     let i = [];
@@ -232346,7 +232347,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5b549d93b44b4ec30d3d8723e1c4449574520fb4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "0b3accf33c11bb919181fe4f21a6bb07ee2f09c4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258439,7 +258440,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "283603"
+                                build_number: "283611"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265615,7 +265616,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "283603", "283603"), 10);
+                let s = parseInt((n = "283611", "283611"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292372,4 +292373,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.05800c7894a29b83e135.js.map
+//# sourceMappingURL=65573.82bed2d3b7f6133ef8dc.js.map
