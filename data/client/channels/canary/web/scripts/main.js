@@ -6326,7 +6326,9 @@
                         token: a = null,
                         duration: o = 0,
                         closed: l = !1,
-                        exePath: u = null
+                        exePath: u = null,
+                        voiceChannelId: _ = null,
+                        mediaSessionId: c = null
                     } = e;
                     r.default.wait(() => r.default.dispatch({
                         type: "ACTIVITY_UPDATE_START",
@@ -6342,7 +6344,9 @@
                             share_activity: s,
                             distributor: n,
                             closed: l,
-                            exePath: u
+                            exePath: u,
+                            voice_channel_id: _,
+                            media_session_id: c
                         },
                         retries: 1,
                         oldFormErrors: !0
@@ -36480,7 +36484,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("283251", ", Version Hash: ").concat("2bcd0b8f560dfdc957ea61208a476dbc66505a34")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("283276", ", Version Hash: ").concat("4b06f62683cc3a248bf32a17a877aaf6c1045dcd")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -65460,10 +65464,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return j
+                    return K
                 },
                 getActiveAnalyticsSessionIDs: function() {
-                    return Y
+                    return W
                 }
             }), n("653041"), n("47120");
             var i = n("512722"),
@@ -65614,29 +65618,42 @@
             }
 
             function x(e) {
-                var t, n;
                 let {
-                    channelId: i,
-                    embeddedActivity: r,
-                    connections: a,
-                    updateCode: l
-                } = e, u = I.default.getId(), d = p.default.getEmbeddedActivitiesForChannel(i), _ = T.default.getChannel(i);
-                if (l === P.EmbeddedActivityUpdateCodes.ACTIVITY_STARTED && null !== (n = null == _ ? void 0 : _.isPrivate()) && void 0 !== n && n && d.length <= 1 && void 0 === a.find(e => e.user_id === u) && o.default.selectParticipant(i, null), !a.some(e => e.user_id === u)) return;
-                let c = f.default.getMediaSessionId(),
-                    {
-                        application_id: E
-                    } = r,
-                    S = (0, D.default)(r),
-                    h = null == c && (null == _ ? void 0 : _.isVocal()) === !0;
-                null != S && !h && (null === (t = B[E]) || void 0 === t || t.call(B, {
-                    activitySessionId: S,
-                    activityUserSessionId: (0, s.v4)(),
-                    instanceId: r.activity_id,
-                    mediaSessionIds: null != c ? [c] : []
-                }), delete B[E])
+                    channelId: t,
+                    embeddedActivity: n,
+                    connections: i,
+                    updateCode: r
+                } = e, s = I.default.getId(), a = i.find(e => e.user_id === s);
+                Y(t, n, n.application_id, n.activity_id, null == a ? void 0 : a.user_id, r === P.EmbeddedActivityUpdateCodes.ACTIVITY_STARTED)
             }
 
             function H(e) {
+                let {
+                    location: t,
+                    applicationId: n,
+                    instanceId: i,
+                    participants: r
+                } = e, s = I.default.getId(), a = p.default.getEmbeddedActivitiesForChannel(t.channel_id).find(e => e.instanceId === i), o = r.find(e => e.user_id === s);
+                null != a && Y(t.channel_id, a, n, i, null == o ? void 0 : o.user_id, !1)
+            }
+
+            function Y(e, t, n, i, r, a) {
+                var l, u;
+                let d = p.default.getEmbeddedActivitiesForChannel(e),
+                    _ = T.default.getChannel(e);
+                if (a && null !== (u = null == _ ? void 0 : _.isPrivate()) && void 0 !== u && u && d.length <= 1 && null == r && o.default.selectParticipant(e, null), null == r) return;
+                let c = f.default.getMediaSessionId(),
+                    E = (0, D.default)(t),
+                    I = null == c && (null == _ ? void 0 : _.isVocal()) === !0 && (null == _ ? void 0 : _.isPrivate()) === !1;
+                null != E && !I && (null === (l = B[n]) || void 0 === l || l.call(B, {
+                    activitySessionId: E,
+                    activityUserSessionId: (0, s.v4)(),
+                    instanceId: i,
+                    mediaSessionIds: null != c ? [c] : []
+                }), delete B[n])
+            }
+
+            function j(e) {
                 let {
                     mediaSessionId: t
                 } = e;
@@ -65661,15 +65678,15 @@
                 }
             }
 
-            function Y(e) {
+            function W(e) {
                 return w[e]
             }
-            class j extends l.default {
+            class K extends l.default {
                 _initialize() {
-                    S.default.addChangeListener(this.handleSelectedChannelUpdate), a.default.subscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), a.default.subscribe("EMBEDDED_ACTIVITY_OPEN", V), a.default.subscribe("EMBEDDED_ACTIVITY_CLOSE", F), a.default.subscribe("EMBEDDED_ACTIVITY_UPDATE", x), a.default.subscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), a.default.subscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), a.default.subscribe("MEDIA_SESSION_JOINED", H)
+                    S.default.addChangeListener(this.handleSelectedChannelUpdate), a.default.subscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), a.default.subscribe("EMBEDDED_ACTIVITY_OPEN", V), a.default.subscribe("EMBEDDED_ACTIVITY_CLOSE", F), a.default.subscribe("EMBEDDED_ACTIVITY_UPDATE", x), a.default.subscribe("EMBEDDED_ACTIVITY_UPDATE_V2", H), a.default.subscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), a.default.subscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), a.default.subscribe("MEDIA_SESSION_JOINED", j)
                 }
                 _terminate() {
-                    S.default.removeChangeListener(this.handleSelectedChannelUpdate), a.default.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), a.default.unsubscribe("EMBEDDED_ACTIVITY_OPEN", V), a.default.unsubscribe("EMBEDDED_ACTIVITY_CLOSE", F), a.default.unsubscribe("EMBEDDED_ACTIVITY_UPDATE", x), a.default.unsubscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), a.default.unsubscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), a.default.unsubscribe("MEDIA_SESSION_JOINED", H)
+                    S.default.removeChangeListener(this.handleSelectedChannelUpdate), a.default.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), a.default.unsubscribe("EMBEDDED_ACTIVITY_OPEN", V), a.default.unsubscribe("EMBEDDED_ACTIVITY_CLOSE", F), a.default.unsubscribe("EMBEDDED_ACTIVITY_UPDATE", x), a.default.unsubscribe("EMBEDDED_ACTIVITY_UPDATE_V2", H), a.default.unsubscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), a.default.unsubscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), a.default.unsubscribe("MEDIA_SESSION_JOINED", j)
                 }
                 constructor(...e) {
                     super(...e), G(this, "handleSelectedChannelUpdate", () => {
@@ -65862,47 +65879,51 @@
             }
 
             function V(e) {
-                var t, n;
+                var t, n, i;
                 let {
-                    guildId: i,
-                    channelId: r,
-                    applicationId: s,
-                    instanceId: o,
-                    userIds: _,
-                    activitySessionId: c
-                } = e, I = (0, f.default)(s);
-                if (null == I) return;
-                let S = u.default.getBasicChannel(r);
-                if (!(null != S && d.default.canBasicChannel(m.BasicPermissions.CONNECT, S) || (null == S ? void 0 : S.type) === m.ChannelTypes.DM || (null == S ? void 0 : S.type) === m.ChannelTypes.GROUP_DM)) return;
-                let h = {
-                        activitySessionId: null != c ? c : o,
-                        applicationId: s,
-                        channelId: r,
-                        guildId: i,
-                        instanceId: o,
-                        url: I,
-                        userIds: new Set(_)
-                    },
-                    A = l.default.getId(),
-                    N = R.get(h.applicationId);
-                _.some(e => e === A) && null != N && (R.set(N.applicationId, {
-                    ...N,
-                    ...h
+                    guildId: r,
+                    channelId: s,
+                    applicationId: o,
+                    instanceId: _,
+                    participants: c,
+                    analyticsActivitySessionId: I
+                } = e, S = (0, f.default)(o);
+                if (null == S) return;
+                let h = u.default.getBasicChannel(s);
+                if (!(null != h && d.default.canBasicChannel(m.BasicPermissions.CONNECT, h) || (null == h ? void 0 : h.type) === m.ChannelTypes.DM || (null == h ? void 0 : h.type) === m.ChannelTypes.GROUP_DM)) return;
+                let A = c.map(e => e.userId),
+                    N = l.default.getId(),
+                    O = l.default.getSessionId(),
+                    p = null === (t = c.find(e => e.userId === N)) || void 0 === t ? void 0 : t.sessionId,
+                    D = null == p,
+                    v = R.get(o),
+                    M = {
+                        analyticsActivitySessionId: null != I ? I : "",
+                        applicationId: o,
+                        channelId: s,
+                        guildId: r,
+                        instanceId: _,
+                        url: S,
+                        userIds: new Set(A)
+                    };
+                A.some(e => e === N) && null != v && (D || O === p) && (R.set(v.applicationId, {
+                    ...v,
+                    ...M
                 }), a.default.dispatch({
                     type: "EMBEDDED_ACTIVITY_INSTANCE_CHANGE",
-                    channelId: r,
-                    instanceId: o
-                })), null != N && r === N.channelId && !_.some(e => e === A) && Array.from(N.userIds).some(e => e === A) ? L.get(r) === s ? L.delete(r) : R.delete(s) : _.some(e => e === A) && (null == N || N.applicationId !== s || N.channelId !== r) && (null != c && c === l.default.getSessionId() || (0, T.shouldMountActivityIFrameFromGatewayUpdateWithoutSessionIdCheck)("EmbeddedActivitiesStore")) && (x({
-                    channelId: r,
-                    applicationId: s,
-                    instanceId: o
+                    channelId: s,
+                    instanceId: _
+                })), null != v && s === v.channelId && !A.some(e => e === N) && Array.from(v.userIds).some(e => e === N) ? L.get(s) === o ? L.delete(s) : R.delete(o) : A.some(e => e === N) && (null == v || v.applicationId !== o || v.channelId !== s) && (p === l.default.getSessionId() && !D || (0, T.shouldMountActivityIFrameFromGatewayUpdateWithoutSessionIdCheck)("EmbeddedActivitiesStore")) && (x({
+                    channelId: s,
+                    applicationId: o,
+                    instanceId: _
                 }), E.ComponentDispatch.dispatch(m.ComponentActions.OPEN_EMBEDDED_ACTIVITY, {
-                    channelId: r
+                    channelId: s
                 }));
-                let O = (null !== (t = g.get(r)) && void 0 !== t ? t : []).filter(e => e.applicationId !== s),
-                    p = k(i),
-                    D = (null !== (n = C.get(p)) && void 0 !== n ? n : []).filter(e => !(e.applicationId === s && e.channelId === r));
-                0 !== _.length && (O.push(h), D.push(h)), g.set(r, O), C.set(p, D)
+                let y = (null !== (n = g.get(s)) && void 0 !== n ? n : []).filter(e => e.applicationId !== o),
+                    P = k(r),
+                    U = (null !== (i = C.get(P)) && void 0 !== i ? i : []).filter(e => !(e.applicationId === o && e.channelId === s));
+                A.length > 0 && (y.push(M), U.push(M)), g.set(s, y), C.set(P, U)
             }
 
             function F(e) {
@@ -65917,7 +65938,10 @@
                         channelId: n,
                         applicationId: i.application_id,
                         instanceId: i.activity_id,
-                        userIds: r.map(e => e.user_id)
+                        participants: r.map(e => ({
+                            userId: e.user_id
+                        })),
+                        analyticsActivitySessionId: i.activity_id
                     })
                 })
             }
@@ -66125,7 +66149,10 @@
                                 channelId: t,
                                 applicationId: n.application_id,
                                 instanceId: n.activity_id,
-                                userIds: i.map(e => e.user_id)
+                                participants: i.map(e => ({
+                                    userId: e.user_id
+                                })),
+                                analyticsActivitySessionId: n.activity_id
                             })
                         })
                     }(0, n)
@@ -66188,25 +66215,28 @@
                         channelId: n,
                         applicationId: i.application_id,
                         instanceId: i.activity_id,
-                        userIds: r.map(e => e.user_id)
+                        participants: r.map(e => ({
+                            userId: e.user_id
+                        })),
+                        analyticsActivitySessionId: i.activity_id
                     })
                 },
                 EMBEDDED_ACTIVITY_UPDATE_V2: function(e) {
                     let {
-                        activitySessionId: t,
-                        applicationId: n,
-                        channelId: i,
-                        guildId: r,
-                        instanceId: s,
-                        userIds: a
+                        applicationId: t,
+                        instanceId: n,
+                        location: i,
+                        participants: r
                     } = e;
-                    V({
-                        guildId: r,
-                        channelId: i,
-                        applicationId: n,
-                        instanceId: s,
-                        userIds: a,
-                        activitySessionId: t
+                    null != u.default.getChannel(i.channel_id) && V({
+                        guildId: i.guild_id,
+                        channelId: i.channel_id,
+                        applicationId: t,
+                        instanceId: n,
+                        participants: r.map(e => ({
+                            userId: e.user_id,
+                            sessionId: e.session_id
+                        }))
                     })
                 },
                 LOCAL_ACTIVITY_UPDATE: function(e) {
@@ -67060,8 +67090,8 @@
 
             function i(e) {
                 if (null != e) {
-                    if ("activitySessionId" in e) return e.activitySessionId;
-                    if ("instanceId" in e) return e.instanceId;
+                    if ("analyticsActivitySessionId" in e && null != e.analyticsActivitySessionId && "" !== e.analyticsActivitySessionId) return e.analyticsActivitySessionId;
+                    if ("instanceId" in e && null != e.instanceId) return e.instanceId;
                     if ("activity_id" in e) return e.activity_id
                 }
             }
@@ -85624,8 +85654,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "283251", "283251"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283251")), t = 0), t
+                let t = parseInt((e = "283276", "283276"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283276")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107732,8 +107762,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "283251",
-                    versionHash: "2bcd0b8f560dfdc957ea61208a476dbc66505a34"
+                    buildNumber: "283276",
+                    versionHash: "4b06f62683cc3a248bf32a17a877aaf6c1045dcd"
                 }
             }
             n.r(t), n.d(t, {
@@ -127024,12 +127054,10 @@
             }), w(["EMBEDDED_ACTIVITY_UPDATE_V2"], e => h.ChannelLoader.loadGuildIds([e.guild_id]), e => {
                 k({
                     type: "EMBEDDED_ACTIVITY_UPDATE_V2",
-                    activitySessionId: e.activity_session_id,
                     applicationId: e.application_id,
-                    channelId: e.channel_id,
-                    guildId: e.guild_id,
                     instanceId: e.instance_id,
-                    userIds: e.user_ids
+                    location: e.location,
+                    participants: e.participants
                 })
             }), G(["AUTH_SESSION_CHANGE"], e => {
                 k({
@@ -147626,33 +147654,42 @@
             var s, a, o, l, u = n("442837"),
                 d = n("570140"),
                 _ = n("911969"),
-                c = n("592125"),
-                E = n("622449");
-            let I = {},
-                T = {},
-                f = {};
+                c = n("314897"),
+                E = n("592125"),
+                I = n("622449");
+            let T = {},
+                f = {},
+                S = {};
 
-            function S(e) {
-                delete I[e];
-                let t = f[e];
-                null != t && delete T[t], delete f[e]
+            function h(e) {
+                var t;
+                if (null == e) return !1;
+                let n = T[e];
+                if (null == n) return !1;
+                null === (t = n.onSuccess) || void 0 === t || t.call(n), A(e)
             }
-            class h extends(s = u.default.Store) {
+
+            function A(e) {
+                delete T[e];
+                let t = S[e];
+                null != t && delete f[t], delete S[e]
+            }
+            class m extends(s = u.default.Store) {
                 getInteraction(e) {
-                    let t = T[e.id];
-                    return null != t ? I[t] : null
+                    let t = f[e.id];
+                    return null != t ? T[t] : null
                 }
                 getMessageInteractionStates() {
                     let e = {};
-                    for (let [t, n] of Object.entries(I)) {
-                        let i = f[t];
+                    for (let [t, n] of Object.entries(T)) {
+                        let i = S[t];
                         null != i && (e[i] = n.state)
                     }
                     return e
                 }
                 canQueueInteraction(e, t) {
-                    let n = T[e];
-                    return (null == n || null == I[n] || I[n].state === E.InteractionState.FAILED) && (null == I[t] || I[t].state === E.InteractionState.FAILED) && !0
+                    let n = f[e];
+                    return (null == n || null == T[n] || T[n].state === I.InteractionState.FAILED) && (null == T[t] || T[t].state === I.InteractionState.FAILED) && !0
                 }
                 getIFrameModalApplicationId() {
                     return r
@@ -147661,14 +147698,14 @@
                     return i
                 }
             }
-            l = "InteractionStore", (o = "displayName") in(a = h) ? Object.defineProperty(a, o, {
+            l = "InteractionStore", (o = "displayName") in(a = m) ? Object.defineProperty(a, o, {
                 value: l,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : a[o] = l, t.default = new h(d.default, {
+            }) : a[o] = l, t.default = new m(d.default, {
                 LOGOUT: function() {
-                    I = {}, T = {}, f = {}
+                    T = {}, f = {}, S = {}
                 },
                 INTERACTION_QUEUE: function(e) {
                     let {
@@ -147680,8 +147717,8 @@
                         onSuccess: a,
                         onFailure: o
                     } = e;
-                    null != n && (T[n] = t, f[t] = n), I[t] = {
-                        state: E.InteractionState.QUEUED,
+                    null != n && (f[n] = t, S[t] = n), T[t] = {
+                        state: I.InteractionState.QUEUED,
                         data: i,
                         onCreate: r,
                         onCancel: s,
@@ -147696,19 +147733,15 @@
                         interactionId: i
                     } = e;
                     if (null == n) return !1;
-                    let r = I[n];
-                    if (null == r || r.state !== E.InteractionState.QUEUED) return !1;
-                    r.state = E.InteractionState.CREATED, null === (t = r.onCreate) || void 0 === t || t.call(r, i)
+                    let r = T[n];
+                    if (null == r || r.state !== I.InteractionState.QUEUED) return !1;
+                    r.state = I.InteractionState.CREATED, null === (t = r.onCreate) || void 0 === t || t.call(r, i)
                 },
                 INTERACTION_SUCCESS: function(e) {
-                    var t;
                     let {
-                        nonce: n
+                        nonce: t
                     } = e;
-                    if (null == n) return !1;
-                    let i = I[n];
-                    if (null == i) return !1;
-                    null === (t = i.onSuccess) || void 0 === t || t.call(i), S(n)
+                    h(t)
                 },
                 INTERACTION_FAILURE: function(e) {
                     var t;
@@ -147718,11 +147751,11 @@
                         errorMessage: r
                     } = e;
                     if (null == n) return !1;
-                    let s = I[n];
+                    let s = T[n];
                     if (null == s) return !1;
-                    null === (t = s.onFailure) || void 0 === t || t.call(s, i, r), s.data.interactionType === _.InteractionTypes.APPLICATION_COMMAND ? S(n) : I[n] = {
+                    null === (t = s.onFailure) || void 0 === t || t.call(s, i, r), s.data.interactionType === _.InteractionTypes.APPLICATION_COMMAND ? A(n) : T[n] = {
                         ...s,
-                        state: E.InteractionState.FAILED,
+                        state: I.InteractionState.FAILED,
                         errorCode: i,
                         errorMessage: r
                     }
@@ -147734,17 +147767,17 @@
                     if (null == t.nonce) return !1;
                     {
                         var n;
-                        let e = I[t.nonce];
+                        let e = T[t.nonce];
                         if (null == e) return !1;
-                        null === (n = e.onSuccess) || void 0 === n || n.call(e), S(t.nonce)
+                        null === (n = e.onSuccess) || void 0 === n || n.call(e), A(t.nonce)
                     }
                 },
                 CHANNEL_SELECT: function(e) {
                     let {
                         channelId: t
                     } = e;
-                    if (null == c.default.getChannel(t)) return !1;
-                    for (let [e, t] of Object.entries(I)) t.state === E.InteractionState.FAILED && S(e)
+                    if (null == E.default.getChannel(t)) return !1;
+                    for (let [e, t] of Object.entries(T)) t.state === I.InteractionState.FAILED && A(e)
                 },
                 INTERACTION_IFRAME_MODAL_CREATE: function(e) {
                     let {
@@ -147760,6 +147793,12 @@
                         modalKey: t
                     } = e;
                     i = t
+                },
+                EMBEDDED_ACTIVITY_UPDATE_V2: function(e) {
+                    let {
+                        participants: t
+                    } = e, n = c.default.getSessionId(), i = c.default.getId(), r = t.find(e => e.user_id === i && e.session_id === n);
+                    null != r && null != r.nonce && h(r.nonce)
                 }
             })
         },
@@ -157382,8 +157421,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712764818410",
-                                    build_number: "283251"
+                                    built_at: "1712767041041",
+                                    build_number: "283276"
                                 }
                             },
                             retries: 1
@@ -175815,18 +175854,16 @@
                         })
                     }), h(this, "handleEmbeddedActivityUpdate", e => {
                         let {
-                            channelId: t
-                        } = e, {
-                            quest: n,
-                            activity: i
-                        } = D(t), r = R(t), s = (null == i || null == n) && this.streamKeyToHeartbeatState.has(r), a = null != i && null != n && g(t) && !this.streamKeyToHeartbeatState.has(r);
-                        s ? this.terminateHeartbeat({
-                            streamKey: r,
+                            quest: t,
+                            activity: n
+                        } = D(e), i = R(e), r = (null == n || null == t) && this.streamKeyToHeartbeatState.has(i), s = null != n && null != t && g(e) && !this.streamKeyToHeartbeatState.has(i);
+                        r ? this.terminateHeartbeat({
+                            streamKey: i,
                             sendTerminalHeartbeat: !0
-                        }) : a && this.initiateHeartbeat({
-                            streamKey: r,
-                            applicationId: n.config.applicationId,
-                            questId: n.id
+                        }) : s && this.initiateHeartbeat({
+                            streamKey: i,
+                            applicationId: t.config.applicationId,
+                            questId: t.id
                         })
                     }), h(this, "handleStreamCreate", e => {
                         let {
@@ -175887,8 +175924,18 @@
                         STREAM_CLOSE: this.handleStreamClose,
                         PASSIVE_UPDATE_V1: this.handleVoiceStateChange,
                         VOICE_STATE_UPDATES: this.handleVoiceStateChange,
-                        EMBEDDED_ACTIVITY_UPDATE: this.handleEmbeddedActivityUpdate,
-                        EMBEDDED_ACTIVITY_UPDATE_V2: this.handleEmbeddedActivityUpdate
+                        EMBEDDED_ACTIVITY_UPDATE: e => {
+                            let {
+                                channelId: t
+                            } = e;
+                            return this.handleEmbeddedActivityUpdate(t)
+                        },
+                        EMBEDDED_ACTIVITY_UPDATE_V2: e => {
+                            let {
+                                location: t
+                            } = e;
+                            return this.handleEmbeddedActivityUpdate(t.channel_id)
+                        }
                     })
                 }
             }
@@ -232453,7 +232500,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2bcd0b8f560dfdc957ea61208a476dbc66505a34"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "4b06f62683cc3a248bf32a17a877aaf6c1045dcd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258546,7 +258593,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "283251"
+                                build_number: "283276"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265704,7 +265751,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "283251", "283251"), 10);
+                let s = parseInt((n = "283276", "283276"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292447,4 +292494,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.0643e2445c2e9c7656c4.js.map
+//# sourceMappingURL=65573.1a1e5dccb56acf531a4a.js.map
