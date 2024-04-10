@@ -120,35 +120,6 @@
       "POST"
     ]
   },
-  "LOBBIES": {
-    "url": "/lobbies",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
-  "LOBBY": {
-    "url": "/lobbies/:param",
-    "allowed_methods": [
-      "DELETE",
-      "OPTIONS"
-    ]
-  },
-  "LOBBY_MEMBER": {
-    "url": "/lobbies/:param/members/:param",
-    "allowed_methods": null
-  },
-  "LOBBY_SEND": {
-    "url": "/lobbies/:param/send",
-    "allowed_methods": null
-  },
-  "LOBBY_SEARCH": {
-    "url": "/lobbies/search",
-    "allowed_methods": [
-      "DELETE",
-      "OPTIONS"
-    ]
-  },
   "NETWORKING_TOKEN": {
     "url": "/networking/token",
     "allowed_methods": [
