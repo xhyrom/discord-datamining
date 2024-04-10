@@ -5225,6 +5225,14 @@
             "use strict";
             e.exports = n.p + "f6cfd7e6d7835c749f04.svg"
         },
+        495036: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "92a82ab03c22164c9326.png"
+        },
+        605098: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "88df7e6dc0a54866f178.svg"
+        },
         706264: function(e, t, n) {
             "use strict";
             e.exports = n.p + "c5962409fd59d9ed5ac5.png"
@@ -36484,7 +36492,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283406", ", Version Hash: ").concat("fe614a60b53d7e5ce2880dcb5d81bb96b7494adf")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283411", ", Version Hash: ").concat("333059a632e761dc17e6274f0855e7a14f18e6a4")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -57036,6 +57044,18 @@
                         return "https://".concat(t, "/")
                     },
                     enabled: !0
+                }, {
+                    type: o.PlatformTypes.AMAZON_MUSIC,
+                    name: "Amazon Music",
+                    icon: {
+                        lightPNG: n("495036"),
+                        darkPNG: n("495036"),
+                        whitePNG: n("495036"),
+                        lightSVG: n("605098"),
+                        darkSVG: n("605098"),
+                        whiteSVG: n("605098")
+                    },
+                    enabled: !1
                 }],
                 u = r().keyBy(l, "type"),
                 d = {};
@@ -85656,8 +85676,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "283406", "283406"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283406")), t = 0), t
+                let t = parseInt((e = "283411", "283411"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283411")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -104607,17 +104627,40 @@
                 },
                 u = new i.Environment
         },
+        930090: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                AmazonMusicConnectionExperiment: function() {
+                    return i
+                }
+            });
+            let i = (0, n("818083").createExperiment)({
+                kind: "user",
+                id: "2024-04_rollout_for_vic",
+                label: "Amazon Music Connection",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enabled",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            })
+        },
         122021: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 useLegacyPlatformType: function() {
-                    return h
+                    return m
                 },
                 usePlatformAllowed: function() {
-                    return S
+                    return A
                 },
                 usePlatforms: function() {
-                    return A
+                    return h
                 }
             }), n("47120");
             var i = n("470079"),
@@ -104629,33 +104672,38 @@
                 u = n("553795"),
                 d = n("594174"),
                 _ = n("70956"),
-                c = n("981631"),
-                E = n("420212");
-            let I = {
-                    [c.PlatformTypes.INSTAGRAM]: ["1036753656588017764"]
+                c = n("930090"),
+                E = n("981631"),
+                I = n("420212");
+            let T = {
+                    [E.PlatformTypes.INSTAGRAM]: ["1036753656588017764"]
                 },
-                T = new Map([
-                    [c.PlatformTypes.INSTAGRAM, new Date(2023, 1, 18).getTime()]
+                f = new Map([
+                    [E.PlatformTypes.INSTAGRAM, new Date(2023, 1, 18).getTime()]
                 ]),
-                f = 30 * _.default.Millis.DAY;
+                S = 30 * _.default.Millis.DAY;
 
-            function S(e) {
+            function A(e) {
                 let {
                     forUserProfile: t
                 } = e, n = (0, a.useStateFromStores)([d.default], () => d.default.getCurrentUser()), i = l.PlayStationVoiceExperiment.useExperiment({
                     location: "f2f7ef_1"
                 }, {
                     autoTrackExposure: !1
-                }).allowPlayStationStaging;
+                }).allowPlayStationStaging, {
+                    enabled: r
+                } = c.AmazonMusicConnectionExperiment.useExperiment({
+                    location: "ConnectionsHooks"
+                });
                 return e => {
-                    var r;
-                    return e.type === c.PlatformTypes.PLAYSTATION_STAGING ? i : !!(void 0 !== n && (null === (r = I[e.type]) || void 0 === r ? void 0 : r.includes(n.id))) || !!t || e.enabled
+                    var s;
+                    return e.type === E.PlatformTypes.PLAYSTATION_STAGING ? i : e.type === E.PlatformTypes.AMAZON_MUSIC ? r : !!(void 0 !== n && (null === (s = T[e.type]) || void 0 === s ? void 0 : s.includes(n.id))) || !!t || e.enabled
                 }
             }
 
-            function A() {
+            function h() {
                 let e = (0, a.useStateFromStores)([u.default], () => u.default.getAccounts()),
-                    t = S({
+                    t = A({
                         forUserProfile: !1
                     }),
                     n = i.useMemo(() => {
@@ -104664,29 +104712,29 @@
                     }, [e]);
                 return s().sortBy(o.default.filter(t), [e => {
                     var t;
-                    return !(T.has(e.type) && Date.now() < (null !== (t = T.get(e.type)) && void 0 !== t ? t : 0) + f)
-                }, e => n.has(e.type), e => e.hasMetadata, e => !c.ACTIVITY_PLATFORM_TYPES.has(e.type), e => e.name])
+                    return !(f.has(e.type) && Date.now() < (null !== (t = f.get(e.type)) && void 0 !== t ? t : 0) + S)
+                }, e => n.has(e.type), e => e.hasMetadata, e => !E.ACTIVITY_PLATFORM_TYPES.has(e.type), e => e.name])
             }
 
-            function h(e) {
+            function m(e) {
                 let [t, n] = i.useState(!1);
 
                 function r(e) {
                     let {
                         key: t
                     } = e;
-                    t === E.KeyboardKeysUpdated.SHIFT && n(!0)
+                    t === I.KeyboardKeysUpdated.SHIFT && n(!0)
                 }
 
                 function s(e) {
                     let {
                         key: t
                     } = e;
-                    t === E.KeyboardKeysUpdated.SHIFT && n(!1)
+                    t === I.KeyboardKeysUpdated.SHIFT && n(!1)
                 }
                 return (i.useEffect(() => (window.addEventListener("keydown", r), window.addEventListener("keyup", s), () => {
                     window.removeEventListener("keydown", r), window.removeEventListener("keyup", s)
-                }), []), t && e === c.PlatformTypes.TWITTER) ? c.PlatformTypes.TWITTER_LEGACY : e
+                }), []), t && e === E.PlatformTypes.TWITTER) ? E.PlatformTypes.TWITTER_LEGACY : e
             }
         },
         275759: function(e, t, n) {
@@ -107765,8 +107813,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "283406",
-                    versionHash: "fe614a60b53d7e5ce2880dcb5d81bb96b7494adf"
+                    buildNumber: "283411",
+                    versionHash: "333059a632e761dc17e6274f0855e7a14f18e6a4"
                 }
             }
             n.r(t), n.d(t, {
@@ -135423,7 +135471,7 @@
                     (0, r.openModalLazy)(async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("70935")]).then(n.bind(n, "645264"));
+                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("98880")]).then(n.bind(n, "645264"));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             guildId: e,
@@ -157289,8 +157337,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712777637369",
-                                    build_number: "283406"
+                                    built_at: "1712778355667",
+                                    build_number: "283411"
                                 }
                             },
                             retries: 1
@@ -232267,7 +232315,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "fe614a60b53d7e5ce2880dcb5d81bb96b7494adf"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "333059a632e761dc17e6274f0855e7a14f18e6a4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258377,7 +258425,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "283406"
+                                build_number: "283411"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265553,7 +265601,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "283406", "283406"), 10);
+                let s = parseInt((n = "283411", "283411"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292305,4 +292353,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.507ad17d8fccf0f963ba.js.map
+//# sourceMappingURL=65573.002639864d407a60130e.js.map
