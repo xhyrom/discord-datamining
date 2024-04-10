@@ -3001,7 +3001,11 @@
   },
   "USER_PERKS_DEMOS": {
     "url": "/users/@me/perks-demos",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_PERKS_DEMOS_ACTIVATE": {
     "url": "/users/@me/activate-perk-demo/:param",
