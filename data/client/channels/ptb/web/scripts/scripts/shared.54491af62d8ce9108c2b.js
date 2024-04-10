@@ -3448,6 +3448,33 @@
                 zalgo: "zalgo__39311"
             }
         },
+        723501: function(e) {
+            "use strict";
+            e.exports = {
+                attachmentContentItem: "attachmentContentItem__47a25",
+                clipPill: "clipPill_d273c1",
+                downloadHoverButtonIcon: "downloadHoverButtonIcon__90d38",
+                hasFooter: "hasFooter_e063b2",
+                hiddenAttachment: "hiddenAttachment_a5e57b",
+                hiddenExplicit: "hiddenExplicit_e32465",
+                hiddenSpoiler: "hiddenSpoiler_f9f57f",
+                hideOverflow: "hideOverflow_fd8e1a",
+                hoverButton: "hoverButton_be4802",
+                hoverButtonGroup: "hoverButtonGroup__304b2",
+                inline: "inline__53a77",
+                messageAttachment: "messageAttachment__5dae1",
+                messageAttachmentFullWidth: "messageAttachmentFullWidth__5227b",
+                messageAttachmentMediaMosaic: "messageAttachmentMediaMosaic__67262",
+                messageAttachmentNoJustify: "messageAttachmentNoJustify__9df5b",
+                messageAttachmentWithFooter: "messageAttachmentWithFooter__05fa9",
+                nonMediaAttachment: "nonMediaAttachment_ef83c1",
+                obscureVideoSpacing: "obscureVideoSpacing__59d03",
+                obscured: "obscured_d8e1c5",
+                removeAttachmentButton: "removeAttachmentButton__692b5",
+                removeAttachmentHoverButton: "removeAttachmentHoverButton__161a2",
+                spoilerRemoveAttachmentButton: "spoilerRemoveAttachmentButton__20197 removeAttachmentButton__692b5"
+            }
+        },
         108627: function(e) {
             "use strict";
             e.exports = {
@@ -3457,12 +3484,13 @@
         902920: function(e) {
             "use strict";
             e.exports = {
+                attachmentContentContainer: "attachmentContentContainer_e65e75",
                 hasFooter: "hasFooter_d64a32",
-                itemContentContainer: "itemContentContainer__77d7f",
                 lazyImg: "lazyImg_b510a9",
                 lazyImgContainer: "lazyImgContainer_b0a5df",
-                nonVisualMediaItem: "nonVisualMediaItem__6faf4",
-                nonVisualMediaItemContainer: "nonVisualMediaItemContainer__81ce5",
+                mediaAttachmentsContainer: "mediaAttachmentsContainer__242e2",
+                nonMediaAttachmentItem: "nonMediaAttachmentItem__80bd4",
+                nonMediaAttachmentsContainer: "nonMediaAttachmentsContainer__912df",
                 oneByOneGrid: "oneByOneGrid__36e03",
                 oneByOneGridMosaic: "oneByOneGridMosaic__91851",
                 oneByOneGridSingle: "oneByOneGridSingle__8c6ef",
@@ -3474,34 +3502,7 @@
                 threeByThreeGrid: "threeByThreeGrid__75d7e",
                 twoByOneGrid: "twoByOneGrid_fec677",
                 twoByOneGridItem: "twoByOneGridItem_e5cf1e",
-                twoByTwoGrid: "twoByTwoGrid__0e231",
-                visualMediaItemContainer: "visualMediaItemContainer__582ad"
-            }
-        },
-        914367: function(e) {
-            "use strict";
-            e.exports = {
-                downloadHoverButtonIcon: "downloadHoverButtonIcon_c189c0",
-                hasFooter: "hasFooter_da6eff",
-                hiddenExplicit: "hiddenExplicit__3780b",
-                hiddenMosaicItem: "hiddenMosaicItem_a8c89e",
-                hiddenSpoiler: "hiddenSpoiler_d872bb",
-                hideOverflow: "hideOverflow__5f669",
-                hoverButton: "hoverButton__78b6a",
-                hoverButtonGroup: "hoverButtonGroup__745e4",
-                inline: "inline__626c3",
-                mosaicItem: "mosaicItem__2e894",
-                mosaicItemContent: "mosaicItemContent__289da",
-                mosaicItemFullWidth: "mosaicItemFullWidth__8c1d9",
-                mosaicItemMediaMosaic: "mosaicItemMediaMosaic_ac9e71",
-                mosaicItemNoJustify: "mosaicItemNoJustify_ef758c",
-                mosaicItemWithFooter: "mosaicItemWithFooter__8b1de",
-                nonMediaMosaicItem: "nonMediaMosaicItem__6d1a2",
-                obscureVideoSpacing: "obscureVideoSpacing_bdb8be",
-                obscured: "obscured_d2382f",
-                removeMosaicItemButton: "removeMosaicItemButton_b3a41a",
-                removeMosaicItemHoverButton: "removeMosaicItemHoverButton__56c64",
-                spoilerRemoveMosaicItemButton: "spoilerRemoveMosaicItemButton__5c98f removeMosaicItemButton_b3a41a"
+                twoByTwoGrid: "twoByTwoGrid__0e231"
             }
         },
         744750: function(e) {
