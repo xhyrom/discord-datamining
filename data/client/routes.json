@@ -3028,6 +3028,14 @@
       "POST"
     ]
   },
+  "USER_PERKS_DEMOS": {
+    "url": "/users/@me/perks-demos",
+    "allowed_methods": null
+  },
+  "USER_PERKS_DEMOS_ACTIVATE": {
+    "url": "/users/@me/activate-perk-demo/:param",
+    "allowed_methods": null
+  },
   "GUILD_DISCOVERY": {
     "url": "/discoverable-guilds",
     "allowed_methods": [
@@ -4834,36 +4842,6 @@
   },
   "MY_CONTENT_INVENTORY": {
     "url": "/content-inventory/users/@me",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
-  "USER_LOOTBOX_DATA": {
-    "url": "/users/@me/lootboxes",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
-  "USER_LOOTBOX_OPEN_ITEM": {
-    "url": "/users/@me/lootboxes/open",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
-  "USER_LOOTBOX_REDEEM_PRIZE": {
-    "url": "/users/@me/lootboxes/redeem-prize",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
-  "LOOTBOX_COUNT": {
-    "url": "/lootboxes/count",
     "allowed_methods": [
       "GET",
       "HEAD",
