@@ -5507,8 +5507,8 @@ html .invoiceCancelRow_aa7946 {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -58054,8 +58054,11 @@ html .progress__00e29 {
     height: 168px;
     background-color: var(--background-secondary);
     border-radius: 4px;
-    cursor: pointer;
     margin-bottom: 8px
+}
+
+.removableGame_ea342b {
+    cursor: pointer
 }
 
 .selectedGame__0084c {
@@ -131721,4 +131724,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.e1f109dbe0e763fa6382.css.map*/
+/*# sourceMappingURL=99387.3519beffe9795a16c8c9.css.map*/
