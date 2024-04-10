@@ -8,7 +8,7 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13148769723287" alt="email_error.png"></p>
 <p>The system only allows for one email address to be tied to an account, this means you cannot have multiple Discord accounts that are associated with one email address.</p>
 <p>If you try to register an email address with an account and you receive the error message, “Email is Already Registered”, this means there’s another Discord account with this email address already. In that case, please try logging into the account instead of trying to register a new one!</p>
-<h3>
+<h3 id="h_01HV4V7FXAQ4BMKTY0YP3P3J2Z">
     <span style="color: #434343;" data-darkreader-inline-color="">If you suspect you might have created an accidental account you can refer to </span><a href="https://support.discord.com/hc/en-us/articles/4413460214807" target="_blank" rel="noopener noreferrer">this</a><span style="color: #434343;" data-darkreader-inline-color=""> article for further steps on how to proceed.</span>
 </h3>
 <h1 id="h_01GVP34QBSNWW8907NE9N3E45T"><a href="#h_01GVP34QBSNWW8907NE9N3E45T" target="_self"><strong><span style="color: #2e3338; background-color: #ffffff;" data-darkreader-inline-color="" data-darkreader-inline-bgcolor="">Email Does Not Exist</span></strong></a></h1>
