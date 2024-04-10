@@ -7,11 +7,11 @@
 </div>
 <div class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4416520827415" alt="timeout_1.png"></div>
 <div>
-    <br>2. Moderators and Admins then choose a time limit for the time out and provides a reason for the time out. This reason is recorded in the audit log
+    <br>2. Moderators and Admins then choose a time limit for the time out and provides a reason for the time out. This reason is recorded in the audit log<br><br>
 </div>
 <div class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4416507568151" alt="timeout_2.png"></div>
 <div>
-    <br>3. Moderators and Admins with the ability to timeout users will see an icon after the time stamp. All other server members will see the message unchanged and the timed out users messages will appear “normal”
+    <br>3. Moderators and Admins with the ability to timeout users will see an icon after the time stamp. All other server members will see the message unchanged and the timed out users messages will appear “normal”<br><br>
 </div>
 <div class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4416507635479" alt="timeout_3.png"></div>
 <div class="wysiwyg-text-align-center"> </div>
