@@ -10233,6 +10233,7 @@
                 confirmationContent: "confirmationContent__92b7b",
                 container: "container__30a2e",
                 content: "content__9b52d",
+                disclaimerFooter: "disclaimerFooter__8ae51",
                 divider: "divider_e4bcab",
                 dot: "dot__05dbb",
                 dotMembers: "dotMembers_e2cbf6 dot__05dbb",
