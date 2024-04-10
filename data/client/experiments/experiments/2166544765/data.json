@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-10_screencapturekit",
-    "label": "ScreenCaptureKit",
+    "id": "2024-04_rollout_for_vic",
+    "label": "Amazon Music Connection",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: enabled"
+      "Treatment 1: Enabled"
     ],
-    "hash": 3417823975,
+    "hash": 2166544765,
     "buckets": [
       -1,
       0,
@@ -17,7 +17,7 @@
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "allowScreenCaptureKit"
+      "enabled"
     ]
   }
 }

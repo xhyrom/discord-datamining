@@ -1,5 +1,4 @@
 id,hash,label
-2021-02_quartz_video_source,3316720711,Quartz Video Source
 2021-02_staff_qc_debugging,2847059306,Display QS scores in results. Not a real experiment
 2021-03_expiration_notice_ios,2088781100,Show expiration notice on ios invite
 2021-03_expiration_notice_ios_embed,733758152,Show expiration notice on ios invite embed
@@ -544,3 +543,4 @@ id,hash,label
 2024-04_go_live_simulcast,2353385375,Go Live Simulcast
 2024-04_hang_status_v2,1512150978,Hang Statuses - V2 experiment
 2024-04_memberlist_share_to_channel,1833197772,Memberlist Share To Channel
+2024-04_rollout_for_vic,2166544765,Amazon Music Connection
