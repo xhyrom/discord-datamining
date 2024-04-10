@@ -36492,7 +36492,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283439", ", Version Hash: ").concat("50b4b88666b3f5910a549c3f8a49b04e95b6fe3b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283449", ", Version Hash: ").concat("2a6e5d6e39102b9e1a7cddd195581a080d4e8841")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -64956,7 +64956,7 @@
                 q = ["in_development", "activities_team", "employee_release"];
             (E = i || (i = {})).FAILED_LOAD = "FAILED_LOAD", E.LAGGING = "LAGGING", E.CONFUSING = "CONFUSING", E.NOT_FUN = "NOT_FUN", E.OTHER = "OTHER", (I = r || (r = {}))[I.PLAY = 0] = "PLAY", I[I.SPECTATE = 1] = "SPECTATE", (T = s || (s = {})).DESKTOP = "desktop", T.MOBILE = "mobile", (f = a || (a = {})).BETRAYAL_MARKETING_TOOLTIP = "BETRAYAL_MARKETING_TOOLTIP", f.FISHINGTON_MARKETING_TOOLTIP = "FISHINGTON_MARKETING_TOOLTIP", f.POKER_MARKETING_TOOLTIP = "POKER_MARKETING_TOOLTIP", f.YOUTUBE_MARKETING_TOOLTIP = "YOUTUBE_MARKETING_TOOLTIP", (S = o || (o = {}))[S.NO_UPDATE = 0] = "NO_UPDATE", S[S.ACTIVITY_STATE_UPDATE = 1] = "ACTIVITY_STATE_UPDATE", S[S.ACTIVITY_STARTED = 2] = "ACTIVITY_STARTED", S[S.ACTIVITY_ENDED = 3] = "ACTIVITY_ENDED", S[S.USER_JOINED = 4] = "USER_JOINED", S[S.USER_LEFT = 5] = "USER_LEFT", S[S.ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST = 6] = "ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST", (A = l || (l = {}))[A.UNLOCKED = 1] = "UNLOCKED", A[A.PORTRAIT = 2] = "PORTRAIT", A[A.LANDSCAPE = 3] = "LANDSCAPE", (h = u || (u = {}))[h.DIRECTORY = 0] = "DIRECTORY", h[h.SELECT_CHANNEL = 1] = "SELECT_CHANNEL", h[h.DETAIL_PAGE = 2] = "DETAIL_PAGE";
             let J = "activity-shelf",
-                Z = new Set(["755600276941176913", v, M, w, "1010174316991762534", z]),
+                Z = new Set(["755600276941176913", v, M, w]),
                 $ = new Set([v, M, w]);
             (m = d || (d = {})).DISCORD_TURNS_8 = "DISCORD_TURNS_8", m.GDM_ACTIVITIES = "GDM_ACTIVITIES", m.PUTT_PARTY = "PUTT_PARTY", m.JAMSPACE_OLD = "JAMSPACE", m.JAMSPACE = "JAMSPACE2", m.POKER = "POKER", m.FREE = "FREE", (N = _ || (_ = {}))[N.PORTRAIT = 0] = "PORTRAIT", N[N.LANDSCAPE = 1] = "LANDSCAPE", (O = c || (c = {}))[O.FOCUSED = 0] = "FOCUSED", O[O.PIP = 1] = "PIP", O[O.GRID = 2] = "GRID";
             let ee = {
@@ -66911,6 +66911,23 @@
                 }, [null == n ? void 0 : n.applicationId, t.id, s, a])
             }
         },
+        963614: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                allowPopups: function() {
+                    return r
+                }
+            });
+            var i = n("701488");
+
+            function r(e) {
+                var t, n;
+                if (i.APPLICATIONS_WITH_ALLOWED_POPUPS.has(e.id)) return !0;
+                if ("embeddedActivityConfig" in e) return (null === (t = e.embeddedActivityConfig) || void 0 === t ? void 0 : t.displays_advertisements) === !0;
+                if ("embedded_activity_config" in e) return (null === (n = e.embedded_activity_config) || void 0 === n ? void 0 : n.displays_advertisements) === !0;
+                else return !1
+            }
+        },
         255621: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -67927,157 +67944,159 @@
                 d = n("475179"),
                 _ = n("925549"),
                 c = n("37234"),
-                E = n("358221"),
-                I = n("928518"),
-                T = n("703656"),
-                f = n("607187"),
-                S = n("937995"),
-                A = n("366050"),
-                h = n("944486"),
-                m = n("594174"),
-                N = n("566620"),
-                O = n("317381"),
-                p = n("917107"),
-                R = n("208156"),
-                C = n("748492"),
-                g = n("350064"),
-                L = n("701488"),
-                D = n("918559"),
-                v = n("981631"),
-                M = n("354459"),
-                y = n("622167"),
-                P = n("438249"),
-                U = n("344534");
+                E = n("835473"),
+                I = n("358221"),
+                T = n("928518"),
+                f = n("703656"),
+                S = n("607187"),
+                A = n("937995"),
+                h = n("366050"),
+                m = n("944486"),
+                N = n("594174"),
+                O = n("566620"),
+                p = n("317381"),
+                R = n("963614"),
+                C = n("917107"),
+                g = n("208156"),
+                L = n("748492"),
+                D = n("350064"),
+                v = n("701488"),
+                M = n("918559"),
+                y = n("981631"),
+                P = n("354459"),
+                U = n("622167"),
+                b = n("438249"),
+                G = n("344534");
 
-            function b(e) {
+            function w(e) {
                 let {
                     channel: t,
                     isLoading: n
-                } = e, [s, g] = r.useState(!1), b = (0, o.useStateFromStores)([O.default], () => O.default.getSelfEmbeddedActivityForChannel(t.id)), G = (0, o.useStateFromStores)([O.default], () => O.default.getActivityPanelMode()), w = null == b ? void 0 : b.instanceId, k = (0, o.useStateFromStores)([h.default], () => h.default.getChannelId() === t.id), {
-                    dockedRect: B,
-                    isHidden: V
-                } = (0, o.useStateFromStoresObject)([A.default], () => {
-                    let e = A.default.pipWindow;
+                } = e, [s, D] = r.useState(!1), w = (0, o.useStateFromStores)([p.default], () => p.default.getSelfEmbeddedActivityForChannel(t.id)), k = (0, o.useStateFromStores)([p.default], () => p.default.getActivityPanelMode()), B = (0, E.useGetOrFetchApplication)(null == w ? void 0 : w.applicationId), V = null == w ? void 0 : w.instanceId, F = (0, o.useStateFromStores)([m.default], () => m.default.getChannelId() === t.id), {
+                    dockedRect: x,
+                    isHidden: H
+                } = (0, o.useStateFromStoresObject)([h.default], () => {
+                    let e = h.default.pipWindow;
                     return {
-                        dockedRect: null != e ? A.default.getDockedRect(e.id) : null,
-                        isHidden: A.default.isEmbeddedActivityHidden()
+                        dockedRect: null != e ? h.default.getDockedRect(e.id) : null,
+                        isHidden: h.default.isEmbeddedActivityHidden()
                     }
-                }), F = (0, o.useStateFromStores)([I.default], () => I.default.getWindow(v.PopoutWindowKeys.CHANNEL_CALL_POPOUT)), {
-                    activityParticipant: x,
-                    selectedParticipant: H,
-                    participantsOpen: Y
-                } = (0, o.useStateFromStoresObject)([E.default], () => ({
-                    activityParticipant: null != b ? E.default.getParticipant(t.id, b.applicationId) : null,
-                    selectedParticipant: E.default.getSelectedParticipant(t.id),
-                    participantsOpen: E.default.getParticipantsOpen(t.id)
-                })), j = k || null != F, W = (0, p.default)(t.id), K = W && (null == H ? void 0 : H.type) !== M.ParticipantTypes.ACTIVITY, z = !W && G === D.ActivityPanelModes.PIP, X = (!j || j && (K || z) && null == B) && !V, Q = X && null != A.default.pipVideoWindow && null != A.default.pipActivityWindow;
+                }), Y = (0, o.useStateFromStores)([T.default], () => T.default.getWindow(y.PopoutWindowKeys.CHANNEL_CALL_POPOUT)), {
+                    activityParticipant: j,
+                    selectedParticipant: W,
+                    participantsOpen: K
+                } = (0, o.useStateFromStoresObject)([I.default], () => ({
+                    activityParticipant: null != w ? I.default.getParticipant(t.id, w.applicationId) : null,
+                    selectedParticipant: I.default.getSelectedParticipant(t.id),
+                    participantsOpen: I.default.getParticipantsOpen(t.id)
+                })), z = F || null != Y, X = (0, C.default)(t.id), Q = X && (null == W ? void 0 : W.type) !== P.ParticipantTypes.ACTIVITY, q = !X && k === M.ActivityPanelModes.PIP, J = (!z || z && (Q || q) && null == x) && !H, Z = J && null != h.default.pipVideoWindow && null != h.default.pipActivityWindow;
 
-                function q() {
+                function $() {
                     var e;
-                    if (null != b && d.default.selectParticipant(t.id, b.applicationId), null != F) return;
+                    if (null != w && d.default.selectParticipant(t.id, w.applicationId), null != Y) return;
                     (0, c.popAllLayers)();
-                    let n = null !== (e = t.getGuildId()) && void 0 !== e ? e : v.ME;
-                    _.default.channelListScrollTo(n, t.id), (0, T.transitionToGuild)(n, t.id)
+                    let n = null !== (e = t.getGuildId()) && void 0 !== e ? e : y.ME;
+                    _.default.channelListScrollTo(n, t.id), (0, f.transitionToGuild)(n, t.id)
                 }
 
-                function J() {
-                    g(!s)
+                function ee() {
+                    D(!s)
                 }
                 r.useEffect(() => {
-                    if ((null == b ? void 0 : b.applicationId) != null) {
-                        let e = X ? L.ActivityLayoutMode.PIP : L.ActivityLayoutMode.FOCUSED;
+                    if ((null == w ? void 0 : w.applicationId) != null) {
+                        let e = J ? v.ActivityLayoutMode.PIP : v.ActivityLayoutMode.FOCUSED;
                         u.default.dispatch({
                             type: "ACTIVITY_LAYOUT_MODE_UPDATE",
                             layoutMode: e,
-                            applicationId: b.applicationId
+                            applicationId: w.applicationId
                         })
                     }
-                }, [null == b ? void 0 : b.applicationId, X]);
-                if (null == b || null == w || null == x && (0, p.default)(t.id)) return null;
-                let Z = Array.from(b.userIds).map(e => m.default.getUser(e)).filter(e => null != e),
-                    $ = {
-                        instance_id: w,
+                }, [null == w ? void 0 : w.applicationId, J]);
+                if (null == w || null == V || null == j && (0, C.default)(t.id) || null == B) return null;
+                let et = Array.from(w.userIds).map(e => N.default.getUser(e)).filter(e => null != e),
+                    en = {
+                        instance_id: V,
                         channel_id: t.id
                     };
-                return null != t.guild_id && "" !== t.guild_id && ($.guild_id = t.guild_id), (0, i.jsx)(S.default, {
+                return null != t.guild_id && "" !== t.guild_id && (en.guild_id = t.guild_id), (0, i.jsx)(A.default, {
                     timeout: 2e3,
                     children: e => {
                         var r, o, u, d, _, c, E, I;
                         let {
                             idle: T,
-                            onActive: S,
+                            onActive: f,
                             onForceIdle: A
                         } = e;
-                        return (0, i.jsxs)(f.default, {
-                            className: a()(y.root, {
-                                [y.pipMode]: X,
-                                [U.elevationHigh]: X,
-                                [P.idle]: T && !(null === (r = b.config) || void 0 === r ? void 0 : r.useInteractivePIP),
-                                [y.pipModeShort]: X && !s,
-                                [y.pipModeTall]: X && s,
-                                [y.hidden]: V,
-                                [y.multiPIPMode]: Q
+                        return (0, i.jsxs)(S.default, {
+                            className: a()(U.root, {
+                                [U.pipMode]: J,
+                                [G.elevationHigh]: J,
+                                [b.idle]: T && !(null === (r = w.config) || void 0 === r ? void 0 : r.useInteractivePIP),
+                                [U.pipModeShort]: J && !s,
+                                [U.pipModeTall]: J && s,
+                                [U.hidden]: H,
+                                [U.multiPIPMode]: Z
                             }),
-                            noBorder: !X,
-                            children: [(u = S, d = A, _ = T, c = z, E = Z, X && null != b && ((null == x ? void 0 : x.type) === M.ParticipantTypes.ACTIVITY || c) ? (null === (I = b.config) || void 0 === I ? void 0 : I.useInteractivePIP) ? (0, i.jsx)(C.InteractivePIPHeader, {
-                                onJumpToChannel: q,
-                                applicationId: b.applicationId,
+                            noBorder: !J,
+                            children: [(u = f, d = A, _ = T, c = q, E = et, J && null != w && ((null == j ? void 0 : j.type) === P.ParticipantTypes.ACTIVITY || c) ? (null === (I = w.config) || void 0 === I ? void 0 : I.useInteractivePIP) ? (0, i.jsx)(L.InteractivePIPHeader, {
+                                onJumpToChannel: $,
+                                applicationId: w.applicationId,
                                 channel: t,
                                 showControls: !_,
                                 onMouseDown: u,
                                 onMouseMove: u,
                                 onMouseLeave: d,
-                                onToggleHeight: J,
+                                onToggleHeight: ee,
                                 isExpanded: s,
                                 hideExpandedButton: c
                             }) : c ? (0, i.jsx)(i.Fragment, {
-                                children: (0, i.jsx)(C.TextActivityPIPOverlay, {
+                                children: (0, i.jsx)(L.TextActivityPIPOverlay, {
                                     idle: _,
                                     onMouseMove: u,
                                     onMouseDown: u,
                                     onMouseLeave: d,
                                     onJumpToChannel: () => {
-                                        q(), (0, N.updateActivityPanelMode)(D.ActivityPanelModes.PANEL)
+                                        $(), (0, O.updateActivityPanelMode)(M.ActivityPanelModes.PANEL)
                                     },
                                     channel: t,
-                                    applicationId: b.applicationId,
+                                    applicationId: w.applicationId,
                                     users: E
                                 })
-                            }) : null == x ? null : (0, i.jsxs)(i.Fragment, {
+                            }) : null == j ? null : (0, i.jsxs)(i.Fragment, {
                                 children: [(0, i.jsx)("div", {
                                     onMouseMove: u,
                                     onMouseDown: u,
                                     onMouseLeave: d,
-                                    className: y.clickShield,
-                                    onDoubleClick: q
-                                }), (0, i.jsx)(C.PIPOverlay, {
+                                    className: U.clickShield,
+                                    onDoubleClick: $
+                                }), (0, i.jsx)(L.PIPOverlay, {
                                     idle: _,
                                     onMouseMove: u,
                                     onMouseDown: u,
                                     onMouseLeave: d,
-                                    onJumpToChannel: q,
+                                    onJumpToChannel: $,
                                     channel: t,
-                                    applicationId: b.applicationId,
-                                    selectedParticipant: x
+                                    applicationId: w.applicationId,
+                                    selectedParticipant: j
                                 })]
                             }) : null), n ? (0, i.jsx)(l.Spinner, {
-                                className: a()(y.iframe, {
-                                    [y.pipModeShort]: X && !s,
-                                    [y.pipModeTall]: X && s
+                                className: a()(U.iframe, {
+                                    [U.pipModeShort]: J && !s,
+                                    [U.pipModeTall]: J && s
                                 })
-                            }) : (0, i.jsx)(R.EmbedIFrameWithLoadingBackground, {
-                                allowPopups: L.APPLICATIONS_WITH_ALLOWED_POPUPS.has(b.applicationId),
-                                referrerPolicy: L.APPLICATIONS_WITH_NO_REFFERER.has(b.applicationId) ? "no-referrer" : "origin",
-                                url: b.url,
-                                queryParams: $,
-                                className: a()(y.iframe, {
-                                    [y.pipModeShort]: X && !s,
-                                    [y.pipModeTall]: X && s,
-                                    [y.pipNonInteractive]: X && !(null === (o = b.config) || void 0 === o ? void 0 : o.useInteractivePIP)
+                            }) : (0, i.jsx)(g.EmbedIFrameWithLoadingBackground, {
+                                allowPopups: (0, R.allowPopups)(B),
+                                referrerPolicy: v.APPLICATIONS_WITH_NO_REFFERER.has(w.applicationId) ? "no-referrer" : "origin",
+                                url: w.url,
+                                queryParams: en,
+                                className: a()(U.iframe, {
+                                    [U.pipModeShort]: J && !s,
+                                    [U.pipModeTall]: J && s,
+                                    [U.pipNonInteractive]: J && !(null === (o = w.config) || void 0 === o ? void 0 : o.useInteractivePIP)
                                 }),
-                                shouldRefocus: !X && k
-                            }), !X && (0, i.jsx)(C.TileOverlay, {
-                                participantsOpen: Y,
+                                shouldRefocus: !J && F
+                            }), !J && (0, i.jsx)(L.TileOverlay, {
+                                participantsOpen: K,
                                 showToggleParticipants: !1,
                                 channelId: t.id
                             })]
@@ -68091,8 +68110,8 @@
                     ...n
                 } = e, {
                     isLoading: r
-                } = (0, g.useEmbeddedActivityLifecycle)(t);
-                return (0, i.jsx)(b, {
+                } = (0, D.useEmbeddedActivityLifecycle)(t);
+                return (0, i.jsx)(w, {
                     channel: t,
                     isLoading: r,
                     ...n
@@ -85676,8 +85695,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "283439", "283439"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283439")), t = 0), t
+                let t = parseInt((e = "283449", "283449"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283449")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107813,8 +107832,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "283439",
-                    versionHash: "50b4b88666b3f5910a549c3f8a49b04e95b6fe3b"
+                    buildNumber: "283449",
+                    versionHash: "2a6e5d6e39102b9e1a7cddd195581a080d4e8841"
                 }
             }
             n.r(t), n.d(t, {
@@ -157337,8 +157356,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712780139617",
-                                    build_number: "283439"
+                                    built_at: "1712781114984",
+                                    build_number: "283449"
                                 }
                             },
                             retries: 1
@@ -232315,7 +232334,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "50b4b88666b3f5910a549c3f8a49b04e95b6fe3b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "2a6e5d6e39102b9e1a7cddd195581a080d4e8841"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258425,7 +258444,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "283439"
+                                build_number: "283449"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265601,7 +265620,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "283439", "283439"), 10);
+                let s = parseInt((n = "283449", "283449"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -277802,7 +277821,7 @@
                     "number" == typeof this.framerateReductionTimeout && (clearTimeout(this.framerateReductionTimeout), this.framerateReductionTimeout = void 0)
                 }
                 updateRemoteWantsFramerate() {
-                    this.connection.updateVideoQuality(["remoteSinkWantsMaxFramerate"])
+                    this.connection.updateVideoQuality(["remoteSinkWantsMaxFramerate", "encodingVideoFrameRate"])
                 }
                 destroy() {
                     this.destroyFramerateScaleFactorTimers()
@@ -277856,10 +277875,10 @@
                     return B
                 },
                 DESKTOP_BITRATE: function() {
-                    return $
+                    return ee
                 },
                 DESKTOP_BITRATE_ENHANCED: function() {
-                    return ee
+                    return et
                 },
                 DISABLED_DEVICE_ID: function() {
                     return Y
@@ -277880,7 +277899,7 @@
                     return O
                 },
                 MEDIA_SINK_WANTS_PROPERTIES: function() {
-                    return et
+                    return en
                 },
                 MediaEngineContextTypes: function() {
                     return m
@@ -277906,6 +277925,9 @@
                 StatsFilter: function() {
                     return R
                 },
+                VIDEO_CAPTURE_FRAMERATE: function() {
+                    return $
+                },
                 VIDEO_QUALITY_FRAMERATE: function() {
                     return q
                 },
@@ -277919,7 +277941,7 @@
                     return Q
                 },
                 VIEWERSIDE_CLIP_KFI_MS: function() {
-                    return ei
+                    return er
                 },
                 VideoQualityMode: function() {
                     return G
@@ -277928,7 +277950,7 @@
                     return C
                 },
                 defaultVideoQualityOptions: function() {
-                    return en
+                    return ei
                 }
             });
             var i, r, s, a, o, l, u, d, _, c, E, I, T, f, S, A, h, m, N, O, p, R, C, g, L, D, v, M, y, P, U, b, G, w, k = n("268146");
@@ -277948,19 +277970,20 @@
                 q = 30,
                 J = 20,
                 Z = 12,
-                $ = 4e6,
-                ee = 8e6,
-                et = ["remoteSinkWantsPixelCount", "remoteSinkWantsMaxFramerate", "encodingVideoMinBitRate", "encodingVideoMaxBitRate", "encodingVideoBitRate", "streamParameters"],
-                en = {
+                $ = 60,
+                ee = 4e6,
+                et = 8e6,
+                en = ["remoteSinkWantsPixelCount", "remoteSinkWantsMaxFramerate", "encodingVideoMinBitRate", "encodingVideoMaxBitRate", "encodingVideoBitRate", "streamParameters"],
+                ei = {
                     videoBudget: {
                         width: 1280,
                         height: 720,
-                        framerate: q
+                        framerate: 30
                     },
                     videoCapture: {
                         width: 1280,
                         height: 720,
-                        framerate: 30
+                        framerate: 60
                     },
                     videoBitrate: {
                         min: 15e4,
@@ -277973,7 +277996,7 @@
                     },
                     videoBitrateFloor: 15e4
                 },
-                ei = 6e4;
+                er = 6e4;
             (u = g || (g = {})).AUTO_ENABLE = "AUTO_ENABLE", u.ATTENUATION = "ATTENUATION", u.AUDIO_INPUT_DEVICE = "AUDIO_INPUT_DEVICE", u.AUDIO_OUTPUT_DEVICE = "AUDIO_OUTPUT_DEVICE", u.VOICE_PROCESSING = "VOICE_PROCESSING", u.QOS = "QOS", u.NATIVE_PING = "NATIVE_PING", u.LEGACY_AUDIO_SUBSYSTEM = "LEGACY_AUDIO_SUBSYSTEM", u.EXPERIMENTAL_AUDIO_SUBSYSTEM = "EXPERIMENTAL_AUDIO_SUBSYSTEM", u.DEBUG_LOGGING = "DEBUG_LOGGING", u.AUTOMATIC_VAD = "AUTOMATIC_VAD", u.VOICE_PANNING = "VOICE_PANNING", u.DIAGNOSTICS = "DIAGNOSTICS", u.VIDEO = "VIDEO", u.DESKTOP_CAPTURE = "DESKTOP_CAPTURE", u.DESKTOP_CAPTURE_FORMAT = "DESKTOP_CAPTURE_FORMAT", u.DESKTOP_CAPTURE_APPLICATIONS = "DESKTOP_CAPTURE_APPLICATIONS", u.SOUNDSHARE = "SOUNDSHARE", u.LOOPBACK = "LOOPBACK", u.VIDEO_HOOK = "VIDEO_HOOK", u.EXPERIMENTAL_SOUNDSHARE = "EXPERIMENTAL_SOUNDSHARE", u.WUMPUS_VIDEO = "WUMPUS_VIDEO", u.ELEVATED_HOOK = "ELEVATED_HOOK", u.HYBRID_VIDEO = "HYBRID_VIDEO", u.OPEN_H264 = "OPEN_H264", u.EXPERIMENTAL_ENCODERS = "EXPERIMENTAL_ENCODERS", u.REMOTE_LOCUS_NETWORK_CONTROL = "REMOTE_LOCUS_NETWORK_CONTROL", u.SCREEN_PREVIEWS = "SCREEN_PREVIEWS", u.WINDOW_PREVIEWS = "WINDOW_PREVIEWS", u.AUDIO_DEBUG_STATE = "AUDIO_DEBUG_STATE", u.AEC_DUMP = "AEC_DUMP", u.DISABLE_VIDEO = "DISABLE_VIDEO", u.CONNECTION_REPLAY = "CONNECTION_REPLAY", u.SIMULCAST = "SIMULCAST", u.RTC_REGION_RANKING = "RTC_REGION_RANKING", u.DIRECT_VIDEO = "DIRECT_VIDEO", u.ELECTRON_VIDEO = "ELECTRON_VIDEO", u.MEDIAPIPE = "MEDIAPIPE", u.FIXED_KEYFRAME_INTERVAL = "FIXED_KEYFRAME_INTERVAL", u.SAMPLE_PLAYBACK = "SAMPLE_PLAYBACK", u.FIRST_FRAME_CALLBACK = "FIRST_FRAME_CALLBACK", u.REMOTE_USER_MULTI_STREAM = "REMOTE_USER_MULTI_STREAM", u.NOISE_SUPPRESSION = "NOISE_SUPPRESSION", u.NOISE_CANCELLATION = "NOISE_CANCELLATION", u.AUTOMATIC_GAIN_CONTROL = "AUTOMATIC_GAIN_CONTROL", u.CLIPS = "CLIPS", u.SPEED_TEST = "SPEED_TEST", u.IMAGE_QUALITY_MEASUREMENT = "IMAGE_QUALITY_MEASUREMENT", u.AMD_EXPERIMENTAL_RATE_CONTROL = "AMD_EXPERIMENTAL_RATE_CONTROL", u.GO_LIVE_HARDWARE = "GO_LIVE_HARDWARE", u.SCREEN_CAPTURE_KIT = "SCREEN_CAPTURE_KIT", u.CAPTURE_TIMEOUT_EXPERIMENTS = "CAPTURE_TIMEOUT_EXPERIMENTS", u.SCREEN_SOUNDSHARE = "SCREEN_SOUNDSHARE", (d = L || (L = {})).NATIVE = "NATIVE", d.WEBRTC = "WEBRTC", d.DUMMY = "DUMMY", (_ = D || (D = {})).LEGACY = "legacy", _.STANDARD = "standard", _.EXPERIMENTAL = "experimental", (c = v || (v = {})).OPUS = "opus", c.VP8 = "VP8", c.VP9 = "VP9", c.H264 = "H264", c.RTX = "rtx", c.TEST = "TEST", (E = M || (M = {}))[E.NONE = 0] = "NONE", E[E.VOICE = 1] = "VOICE", E[E.SOUNDSHARE = 2] = "SOUNDSHARE", E[E.PRIORITY = 4] = "PRIORITY", (I = y || (y = {})).AUDIO = "audio", I.VIDEO = "video", I.SCREEN = "screen", I.TEST = "test", (T = P || (P = {})).PLAYING = "playing", T.PAUSED = "paused", (f = U || (U = {})).FIXED = "fixed", f.SOURCE = "source", (S = b || (b = {})).VIDEOTOOLBOX_RATE_CONTROL = "videotoolbox_rate_control", S.SIGNAL_H265_SUPPORT = "signal_h265_support", S.SIGNAL_H265_DECODE_SUPPORT = "signal_h265_decode_support", S.SIGNAL_AV1_SUPPORT = "signal_av1_support", S.STREAMER_CLIP = "streamer_clip", S.VIEWER_CLIP = "viewer_clip", S.MUTE_BEFORE_PROCESSING = "mute_before_processing", S.PTT_BEFORE_PROCESSING = "ptt_before_processing", S.SKIP_ENCODE = "skip_encode", (A = G || (G = {}))[A.AUTO = 1] = "AUTO", A[A.FULL = 2] = "FULL", (h = w || (w = {}))[h.CPU_OVERUSE = 1] = "CPU_OVERUSE", h[h.FAILED = 2] = "FAILED", h[h.VAD_CPU_OVERUSE = 3] = "VAD_CPU_OVERUSE", h[h.INITIALIZED = 4] = "INITIALIZED"
         },
         135670: function(e, t, n) {
@@ -278334,7 +278357,7 @@
                 }
                 applyQualityConstraints(e, t) {
                     let n = this.getQuality(t);
-                    return null != n.capture && (e.encodingVideoWidth = n.capture.width, e.encodingVideoHeight = n.capture.height, e.encodingVideoFrameRate = n.capture.framerate, e.captureVideoFrameRate = n.capture.framerate), null != n.encode && (e.remoteSinkWantsMaxFramerate = n.encode.framerate, e.remoteSinkWantsPixelCount = n.encode.pixelCount), null != n.bitrateTarget ? e.encodingVideoBitRate = n.bitrateTarget : e.encodingVideoBitRate = n.bitrateMax, e.encodingVideoMinBitRate = n.bitrateMin, e.encodingVideoMaxBitRate = n.bitrateMax, null != e.encodingVideoBitRate && null != e.encodingVideoMaxBitRate && (e.encodingVideoBitRate = Math.min(e.encodingVideoBitRate, e.encodingVideoMaxBitRate)), {
+                    return null != n.capture && (e.encodingVideoWidth = n.capture.width, e.encodingVideoHeight = n.capture.height, e.captureVideoFrameRate = n.capture.framerate), null != n.encode && (e.remoteSinkWantsMaxFramerate = n.encode.framerate, e.remoteSinkWantsPixelCount = n.encode.pixelCount, e.encodingVideoFrameRate = n.encode.framerate), null != n.bitrateTarget ? e.encodingVideoBitRate = n.bitrateTarget : e.encodingVideoBitRate = n.bitrateMax, e.encodingVideoMinBitRate = n.bitrateMin, e.encodingVideoMaxBitRate = n.bitrateMax, null != e.encodingVideoBitRate && null != e.encodingVideoMaxBitRate && (e.encodingVideoBitRate = Math.min(e.encodingVideoBitRate, e.encodingVideoMaxBitRate)), {
                         quality: n,
                         constraints: e
                     }
@@ -278367,7 +278390,7 @@
                         capture: {
                             width: 1280,
                             height: 720,
-                            framerate: r.VIDEO_QUALITY_FRAMERATE
+                            framerate: r.VIDEO_CAPTURE_FRAMERATE
                         },
                         bitrateMin: this.options.desktopBitrate.min,
                         bitrateMax: this.options.desktopBitrate.max,
@@ -278918,6 +278941,7 @@
                         },
                         s = this.videoQualityManager.getQuality();
                     (!T.VideoQuality.equals(r, s.capture) || s.bitrateMax !== i) && (this.videoQualityManager.setQuality({
+                        encode: r,
                         capture: r,
                         bitrateMax: i
                     }), this.videoStreamParameters.length > 0 && (this.videoStreamParameters[0].maxResolution = {
@@ -292353,4 +292377,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.24e3d521126dcb590067.js.map
+//# sourceMappingURL=65573.bc06bc01f2309dff6516.js.map
