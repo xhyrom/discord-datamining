@@ -3346,6 +3346,10 @@
       "POST"
     ]
   },
+  "DSA_EXPERIMENT_UNAUTHENTICATED": {
+    "url": "/reporting/unauthenticated/experiment",
+    "allowed_methods": null
+  },
   "SUBMIT_REPORT_SECOND_LOOK": {
     "url": "/reporting/review",
     "allowed_methods": [
