@@ -2619,7 +2619,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-5b541c9cdd34dfb03794edfa21fa717783b0bb44",
+                    release: "discord_web-4ababbc862eead4890cc8a3cc555ced9e1865bfe",
                     beforeSend: _ => {
                         var E, e;
                         return !(null != (E = _).exception && null != E.exception.values && E.exception.values.every(_ => null == _.stacktrace || null != _.stacktrace.frames && 1 === _.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || a.some(_ => window.navigator.appVersion.toLowerCase().indexOf(_) >= 0)) && !R() && !("Aborted" === (e = _).message || "cancel captcha" === e.message) && t() ? _ : null
@@ -2637,7 +2637,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), I.setTag("buildNumber", (_ = "283342", "283342")), I.setTag("builtAt", String("1712771403849"));
+                }), I.setTag("buildNumber", (_ = "283379", "283379")), I.setTag("builtAt", String("1712775634916"));
                 let E = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != E && "object" == typeof E)
                     for (let _ in E) I.setTag(_, E[_]);
@@ -13899,31 +13899,34 @@
             "use strict";
             e.r(E), e.d(E, {
                 getDarkness: function() {
-                    return c
+                    return O
                 },
                 hex2int: function() {
                     return t
                 },
                 hex2rgb: function() {
-                    return r
+                    return N
                 },
                 int2hex: function() {
                     return A
                 },
                 int2hsl: function() {
+                    return r
+                },
+                int2hslRaw: function() {
                     return T
                 },
                 int2rgbArray: function() {
-                    return n
+                    return L
                 },
                 int2rgba: function() {
-                    return N
+                    return i
                 },
                 isValidHex: function() {
-                    return O
+                    return n
                 },
                 rgb2int: function() {
-                    return i
+                    return c
                 }
             });
             var I = e("688619"),
@@ -13943,33 +13946,46 @@
             }
 
             function T(_) {
-                let E = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                    e = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null,
-                    I = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 1,
-                    o = _ >> 16 & 255,
-                    a = _ >> 8 & 255,
-                    R = 255 & _,
-                    t = Math.min(o /= 255, a /= 255, R /= 255),
-                    A = Math.max(o, a, R),
-                    T = A - t,
-                    r = 0,
-                    N = 0,
-                    i = 0;
-                return ((r = Math.round(60 * (r = 0 === T ? 0 : A === o ? (a - R) / T % 6 : A === a ? (R - o) / T + 2 : (o - a) / T + 4))) < 0 && (r += 360), i = (A + t) / 2, N = +(100 * (N = 0 === T ? 0 : T / (1 - Math.abs(2 * i - 1)))).toFixed(1), i = +(100 * i).toFixed(1), E) ? "hsla(".concat(r, ", calc(var(--saturation-factor, 1) * ").concat(N, "%), ").concat(i, "%, ").concat(I, ")") : null != e ? "hsla(".concat(r, ", ").concat(e * N, "%, ").concat(i, "%, ").concat(I, ")") : "hsla(".concat(r, ", ").concat(N, "%, ").concat(i, "%, ").concat(I, ")")
+                let E = _ >> 16 & 255,
+                    e = _ >> 8 & 255,
+                    I = 255 & _,
+                    o = Math.min(E /= 255, e /= 255, I /= 255),
+                    a = Math.max(E, e, I),
+                    R = a - o,
+                    t = 0,
+                    A = 0,
+                    T = 0;
+                return (t = Math.round(60 * (t = 0 === R ? 0 : a === E ? (e - I) / R % 6 : a === e ? (I - E) / R + 2 : (E - e) / R + 4))) < 0 && (t += 360), T = (a + o) / 2, A = +(100 * (A = 0 === R ? 0 : R / (1 - Math.abs(2 * T - 1)))).toFixed(1), {
+                    h: t,
+                    s: A,
+                    l: T = +(100 * T).toFixed(1)
+                }
             }
 
             function r(_) {
+                let E = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                    e = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null,
+                    I = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 1,
+                    {
+                        h: o,
+                        s: a,
+                        l: R
+                    } = T(_);
+                return E ? "hsla(".concat(o, ", calc(var(--saturation-factor, 1) * ").concat(a, "%), ").concat(R, "%, ").concat(I, ")") : null != e ? "hsla(".concat(o, ", ").concat(e * a, "%, ").concat(R, "%, ").concat(I, ")") : "hsla(".concat(o, ", ").concat(a, "%, ").concat(R, "%, ").concat(I, ")")
+            }
+
+            function N(_) {
                 let E = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
                 if (!o().valid(_)) return null;
                 let e = o()(_);
                 return e.alpha(null != E ? E : e.alpha()).css()
             }
 
-            function N(_, E) {
+            function i(_, E) {
                 return null == E && (E = (_ >> 24 & 255) / 255), "rgba(".concat(_ >> 16 & 255, ", ").concat(_ >> 8 & 255, ", ").concat(255 & _, ", ").concat(E, ")")
             }
 
-            function i(_) {
+            function c(_) {
                 let E = _.match(a),
                     e = null != E ? {
                         red: parseInt(E[1]),
@@ -13983,15 +13999,15 @@
                 return (e.red << 16) + (e.green << 8) + e.blue
             }
 
-            function c(_) {
+            function O(_) {
                 return 1 - (.299 * (_ >> 16 & 255) + .587 * (_ >> 8 & 255) + .114 * (255 & _)) / 255
             }
 
-            function O(_) {
+            function n(_) {
                 return o().valid(_)
             }
 
-            function n(_) {
+            function L(_) {
                 return [_ >> 16 & 255, _ >> 8 & 255, 255 & _]
             }
         },
@@ -14034,4 +14050,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84471.8a8045d168e9628a7c69.js.map
+//# sourceMappingURL=84471.5f5cf78bf58a1b0877a1.js.map
