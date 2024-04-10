@@ -36480,7 +36480,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("283181", ", Version Hash: ").concat("3164eb7666060cce84f84979ec5f7c00a4cf884e")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("283185", ", Version Hash: ").concat("5cee9e4e5c64b99e0092ce98f09a84ca902eff7c")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85622,8 +85622,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "283181", "283181"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283181")), t = 0), t
+                let t = parseInt((e = "283185", "283185"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283185")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107730,8 +107730,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "283181",
-                    versionHash: "3164eb7666060cce84f84979ec5f7c00a4cf884e"
+                    buildNumber: "283185",
+                    versionHash: "5cee9e4e5c64b99e0092ce98f09a84ca902eff7c"
                 }
             }
             n.r(t), n.d(t, {
@@ -130428,66 +130428,77 @@
                 r = n("470079"),
                 s = n("803997"),
                 a = n.n(s),
-                o = n("481060"),
-                l = n("40851"),
-                u = n("906732"),
-                d = n("976644"),
-                _ = n("267642"),
-                c = n("879892"),
-                E = n("981631"),
-                I = n("689938"),
-                T = n("835299");
+                o = n("824385"),
+                l = n("481060"),
+                u = n("40851"),
+                d = n("906732"),
+                _ = n("78839"),
+                c = n("976644"),
+                E = n("267642"),
+                I = n("879892"),
+                T = n("981631"),
+                f = n("689938"),
+                S = n("835299");
             t.default = e => {
                 let {
                     analyticsLocation: t,
                     analyticsSourceLocation: n,
                     guild: s,
-                    buttonText: f,
-                    targetBoostedGuildTier: S,
-                    onClose: h = () => {},
-                    closeLayer: A = () => {},
-                    pauseAnimation: m = !1,
-                    applicationId: N,
-                    handleSubscribeModalClose: O,
-                    withHighlight: p = !1,
-                    ...R
+                    buttonText: h,
+                    targetBoostedGuildTier: A,
+                    onClose: m = () => {},
+                    closeLayer: N = () => {},
+                    pauseAnimation: O = !1,
+                    applicationId: p,
+                    handleSubscribeModalClose: R,
+                    withHighlight: C = !1,
+                    ...g
                 } = e, {
-                    analyticsLocations: C
-                } = (0, u.default)(), g = (0, l.useAppContext)() === E.AppContext.POPOUT, [L, D] = r.useState(!1), v = null != S ? Math.max((0, _.getNumberOfAppliedBoostsNeededForTier)(s, S), 1) : 1, M = (0, _.generateBlockGuildSubscriptionPurchasesNode)(), y = async () => {
-                    D(!0), await (0, c.addAppliedGuildBoosts)({
-                        analyticsLocations: C,
+                    analyticsLocations: L
+                } = (0, d.default)(), D = (0, u.useAppContext)() === T.AppContext.POPOUT, [v, M] = r.useState(!1), y = null != A ? Math.max((0, E.getNumberOfAppliedBoostsNeededForTier)(s, A), 1) : 1, P = (0, E.generateBlockGuildSubscriptionPurchasesNode)(), U = async () => {
+                    M(!0), await (0, I.addAppliedGuildBoosts)({
+                        analyticsLocations: L,
                         analyticsLocation: t,
                         analyticsSourceLocation: n,
                         guild: s,
-                        numberOfBoostsToAdd: v,
-                        onClose: h,
-                        closeLayer: A,
-                        inPopout: g,
-                        applicationId: N,
-                        handleSubscribeModalClose: O
-                    }), D(!1)
-                };
-                return null != M ? (0, i.jsx)(o.Tooltip, {
-                    text: M,
+                        numberOfBoostsToAdd: y,
+                        onClose: m,
+                        closeLayer: N,
+                        inPopout: D,
+                        applicationId: p,
+                        handleSubscribeModalClose: R
+                    }), M(!1)
+                }, b = _.default.getPremiumTypeSubscription(), G = (0, i.jsx)("span", {
+                    children: null != h ? h : f.default.Messages.PREMIUM_GUILD_PERKS_MODAL_BUTTON_SUBSCRIBE_THIS_SERVER
+                });
+                return ((null == b ? void 0 : b.isPausedOrPausePending) && (G = (0, i.jsxs)("div", {
+                    className: S.pausedButton,
+                    children: [(0, i.jsx)(o.LockIcon, {
+                        className: S.lockIcon,
+                        width: 16,
+                        height: 16
+                    }), " ", G]
+                }), g.disabled = !0), null != P) ? (0, i.jsx)(l.Tooltip, {
+                    text: P,
                     "aria-label": !1,
-                    children: e => (0, i.jsx)(d.default, {
+                    children: e => (0, i.jsx)(c.default, {
                         ...e,
                         disabled: !0,
-                        size: o.Button.Sizes.SMALL,
-                        pauseAnimation: m,
-                        ...R,
-                        children: null != f ? f : I.default.Messages.PREMIUM_GUILD_PERKS_MODAL_BUTTON_SUBSCRIBE_THIS_SERVER
+                        size: l.Button.Sizes.SMALL,
+                        pauseAnimation: O,
+                        ...g,
+                        children: G
                     })
-                }) : (0, i.jsx)(d.default, {
-                    size: o.Button.Sizes.SMALL,
-                    ...R,
-                    className: a()(R.className, {
-                        [T.buttonHighlighted]: p
+                }) : (0, i.jsx)(c.default, {
+                    size: l.Button.Sizes.SMALL,
+                    ...g,
+                    className: a()(g.className, {
+                        [S.buttonHighlighted]: C
                     }),
-                    submitting: L,
-                    onClick: y,
-                    pauseAnimation: m,
-                    children: null != f ? f : I.default.Messages.PREMIUM_GUILD_PERKS_MODAL_BUTTON_SUBSCRIBE_THIS_SERVER
+                    submitting: v,
+                    onClick: U,
+                    pauseAnimation: O,
+                    children: G
                 })
             }
         },
@@ -157369,8 +157380,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712713290311",
-                                    build_number: "283181"
+                                    built_at: "1712714561511",
+                                    build_number: "283185"
                                 }
                             },
                             retries: 1
@@ -208910,6 +208921,12 @@
                 get hasPremiumNitroMonthly() {
                     return null != this.items.find(e => e.planId === d.SubscriptionPlans.PREMIUM_MONTH_TIER_2)
                 }
+                get isPausedOrPausePending() {
+                    return u.SubscriptionStatusTypesSets.ALL_PAUSE.has(this.status)
+                }
+                get isPaused() {
+                    return this.status === u.SubscriptionStatusTypes.PAUSED
+                }
                 constructor(e) {
                     super(), _(this, "id", void 0), _(this, "type", void 0), _(this, "items", void 0), _(this, "createdAt", void 0), _(this, "canceledAt", void 0), _(this, "currentPeriodStart", void 0), _(this, "currentPeriodEnd", void 0), _(this, "status", void 0), _(this, "paymentSourceId", void 0), _(this, "paymentGateway", void 0), _(this, "paymentGatewayPlanId", void 0), _(this, "paymentGatewaySubscriptionId", void 0), _(this, "trialId", void 0), _(this, "trialEndsAt", void 0), _(this, "renewalMutations", void 0), _(this, "streakStartedAt", void 0), _(this, "currency", void 0), _(this, "pauseEndsAt", void 0), _(this, "planId", void 0), _(this, "additionalPlans", void 0), _(this, "metadata", void 0), _(this, "latestInvoice", void 0), _(this, "useStorekitResubscribe", void 0), _(this, "price", void 0), _(this, "userId", void 0), this.id = e.id, this.type = e.type, this.items = e.items, this.createdAt = e.createdAt, this.canceledAt = e.canceledAt, this.currentPeriodStart = e.currentPeriodStart, this.currentPeriodEnd = e.currentPeriodEnd, this.status = e.status, this.paymentSourceId = e.paymentSourceId, this.paymentGateway = e.paymentGateway, this.paymentGatewayPlanId = e.paymentGatewayPlanId, this.paymentGatewaySubscriptionId = e.paymentGatewaySubscriptionId, this.trialId = e.trialId, this.trialEndsAt = e.trialEndsAt, this.renewalMutations = e.renewalMutations, this.currency = e.currency, this.pauseEndsAt = e.pauseEndsAt, this.metadata = e.metadata, this.latestInvoice = e.latestInvoice, this.useStorekitResubscribe = e.useStorekitResubscribe, this.price = e.price, this.userId = e.userId;
                     let t = this.renewalMutations,
@@ -232434,7 +232451,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3164eb7666060cce84f84979ec5f7c00a4cf884e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5cee9e4e5c64b99e0092ce98f09a84ca902eff7c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -256786,14 +256803,15 @@
             }
 
             function y() {
-                let e = l.default.getPremiumTypeSubscription(),
-                    {
-                        numAvailableGuildBoostSlots: t,
-                        numCanceledGuildBoostSlots: n
-                    } = Object.values(o.default.boostSlots).reduce((e, t) => (F(t) && e.numCanceledGuildBoostSlots++, t.isAvailable() && e.numAvailableGuildBoostSlots++, e), {
-                        numAvailableGuildBoostSlots: 0,
-                        numCanceledGuildBoostSlots: 0
-                    });
+                let e = l.default.getPremiumTypeSubscription();
+                if (null == e ? void 0 : e.isPausedOrPausePending) return T.default.Messages.GUILD_BOOSTING_DISABLED_FOR_PAUSED_SUBSCRIPTION;
+                let {
+                    numAvailableGuildBoostSlots: t,
+                    numCanceledGuildBoostSlots: n
+                } = Object.values(o.default.boostSlots).reduce((e, t) => (F(t) && e.numCanceledGuildBoostSlots++, t.isAvailable() && e.numAvailableGuildBoostSlots++, e), {
+                    numAvailableGuildBoostSlots: 0,
+                    numCanceledGuildBoostSlots: 0
+                });
                 if (null == e || t > 0) return null;
                 if (e.status === E.SubscriptionStatusTypes.PAST_DUE) return T.default.Messages.PREMIUM_GUILD_SUBSCRIPTION_PURCHASE_BUTTON_DISABLED_SUBSCRIPTION_PAST_DUE;
                 if (e.status === E.SubscriptionStatusTypes.ACCOUNT_HOLD) return T.default.Messages.PREMIUM_GUILD_SUBSCRIPTION_PURCHASE_BUTTON_DISABLED_SUBSCRIPTION_ACCOUNT_HOLD;
@@ -258526,7 +258544,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "283181"
+                                build_number: "283185"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -260434,7 +260452,7 @@
                 }
                 a = null != a ? a : (0, D.formatPrice)(E, r.currency);
                 let I = null === (i = null !== (n = null == o ? void 0 : o.taxInclusive) && void 0 !== n ? n : null === (t = r.latestInvoice) || void 0 === t ? void 0 : t.taxInclusive) || void 0 === i || i;
-                return ed(r) ? r.isPurchasedViaGoogle ? U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION_NO_PRICE.format({
+                if (ed(r)) return r.isPurchasedViaGoogle ? U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION_NO_PRICE.format({
                     quantity: c
                 }) : I ? U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION.format({
                     quantity: c,
@@ -260442,26 +260460,35 @@
                 }) : U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION_TAX_EXCLUSIVE.format({
                     quantity: c,
                     rate: (0, D.formatRate)(a, _.interval, _.intervalCount)
-                }) : r.status === v.SubscriptionStatusTypes.ACCOUNT_HOLD ? r.isPurchasedViaGoogle ? U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD_NO_PRICE.format({
-                    quantity: c,
-                    boostQuantity: c
-                }) : I ? U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD.format({
-                    quantity: c,
-                    boostQuantity: c,
-                    rate: (0, D.formatRate)(a, _.interval, _.intervalCount)
-                }) : U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD_TAX_EXCLUSIVE.format({
-                    quantity: c,
-                    boostQuantity: c,
-                    rate: (0, D.formatRate)(a, _.interval, _.intervalCount)
-                }) : r.isPurchasedViaGoogle ? U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_NO_PRICE.format({
-                    quantity: c
-                }) : I ? U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO.format({
-                    quantity: c,
-                    rate: (0, D.formatRate)(a, _.interval, _.intervalCount)
-                }) : U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_TAX_EXCLUSIVE.format({
-                    quantity: c,
-                    rate: (0, D.formatRate)(a, _.interval, _.intervalCount)
-                })
+                });
+                switch (r.status) {
+                    case v.SubscriptionStatusTypes.ACCOUNT_HOLD:
+                        return r.isPurchasedViaGoogle ? U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD_NO_PRICE.format({
+                            quantity: c,
+                            boostQuantity: c
+                        }) : I ? U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD.format({
+                            quantity: c,
+                            boostQuantity: c,
+                            rate: (0, D.formatRate)(a, _.interval, _.intervalCount)
+                        }) : U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD_TAX_EXCLUSIVE.format({
+                            quantity: c,
+                            boostQuantity: c,
+                            rate: (0, D.formatRate)(a, _.interval, _.intervalCount)
+                        });
+                    case v.SubscriptionStatusTypes.PAUSE_PENDING:
+                    case v.SubscriptionStatusTypes.PAUSED:
+                        return U.default.Messages.GUILD_BOOSTING_DISABLED_HEADER;
+                    default:
+                        return r.isPurchasedViaGoogle ? U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_NO_PRICE.format({
+                            quantity: c
+                        }) : I ? U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO.format({
+                            quantity: c,
+                            rate: (0, D.formatRate)(a, _.interval, _.intervalCount)
+                        }) : U.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_TAX_EXCLUSIVE.format({
+                            quantity: c,
+                            rate: (0, D.formatRate)(a, _.interval, _.intervalCount)
+                        })
+                }
             }
 
             function ec(e, t, n) {
@@ -265675,7 +265702,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "283181", "283181"), 10);
+                let s = parseInt((n = "283185", "283185"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292418,4 +292445,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.2cbd4d3d7f1e5aa1c745.js.map
+//# sourceMappingURL=65573.37cedc78d8f2d82f5fce.js.map
