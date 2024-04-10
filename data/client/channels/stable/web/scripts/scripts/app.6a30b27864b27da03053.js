@@ -4960,6 +4960,7 @@
                 buttonsContainer: "buttonsContainer_a90621",
                 clickable: "clickable_b41429",
                 closeButton: "closeButton_e88b7d",
+                currentStep: "currentStep_f2459e",
                 fadeIn: "fadeIn__0663f",
                 fadeOut: "fadeOut_de0df3",
                 finishButton: "finishButton__8590c",
@@ -4978,6 +4979,7 @@
                 progressContainer: "progressContainer__378bd",
                 progressStep: "progressStep_dec95e",
                 progressStepFill: "progressStepFill__47c59",
+                progressSubStep: "progressSubStep__177b8",
                 scrollBg: "scrollBg_b81d25",
                 scrollBgBottom: "scrollBgBottom__10a36",
                 scrollBgTop: "scrollBgTop_e0da83",
@@ -5011,6 +5013,7 @@
                 playstyleSelect: "playstyleSelect_b7d88b",
                 playstyleTitle: "playstyleTitle__00d17",
                 plusIcon: "plusIcon__22efe",
+                removableGame: "removableGame_ea342b",
                 selectedGame: "selectedGame__0084c",
                 selectedGameCheck: "selectedGameCheck__389d8",
                 selectedInterest: "selectedInterest_aa523d",
@@ -5903,8 +5906,8 @@
                 emojiSuggestionButton: "emojiSuggestionButton__6cb58",
                 hero: "hero_dc420c",
                 heroDetails: "heroDetails_f9bc0e",
-                inputContainerShareToChannel: "inputContainerShareToChannel__8eca3",
                 interactionsContainer: "interactionsContainer__97fe3",
+                interactionsContainerHeader: "interactionsContainerHeader_a937d2",
                 joinPromptContainer: "joinPromptContainer_e5abcb",
                 popout: "popout_cfa8bc",
                 popoutTitle: "popoutTitle__6f44d",
@@ -6403,6 +6406,13 @@
                 switch: "switch__0b70d"
             }
         },
+        519634: function(e) {
+            "use strict";
+            e.exports = {
+                container: "container__0612a",
+                formElement: "formElement__4968e"
+            }
+        },
         275369: function(e) {
             "use strict";
             e.exports = {
@@ -6643,13 +6653,23 @@
             "use strict";
             e.exports = {
                 actions: "actions__94a77",
+                checkmark: "checkmark_c3e9cf",
                 container: "container_ec1fbc",
                 content: "content__7833e",
                 filterPill: "filterPill__53e51",
                 filterPillContents: "filterPillContents_d6802e",
                 filterPillIcon: "filterPillIcon_ac4d6f",
                 filterPillSmall: "filterPillSmall_ba6dc1",
+                filterTooltip: "filterTooltip__5ddcd",
+                filterTooltipContent: "filterTooltipContent_d1b808",
+                playstyleHeader: "playstyleHeader__45372",
+                playstyleOption: "playstyleOption_c404e8",
+                playstyleSelector: "playstyleSelector_b85eff",
+                playstyleSelectorContent: "playstyleSelectorContent__52010",
+                playstyleSelectorSaveContainer: "playstyleSelectorSaveContainer__605ea",
+                playstyles: "playstyles__1509f",
                 preferences: "preferences_d68e04",
+                selectedPlaystyle: "selectedPlaystyle__5860f",
                 toolbar: "toolbar__4e903",
                 topPicks: "topPicks__3115d",
                 topPicksContent: "topPicksContent__7c8f8",
@@ -8536,6 +8556,16 @@
                 guildScroller: "guildScroller__0e6b9"
             }
         },
+        60687: function(e) {
+            "use strict";
+            e.exports = {
+                animation: "animation_a6f573",
+                container: "container_ef5900",
+                content: "content__9d1c8",
+                gradientGlow: "gradientGlow_dea0cb",
+                message: "message__0ec5e"
+            }
+        },
         476245: function(e) {
             "use strict";
             e.exports = {
@@ -8588,8 +8618,10 @@
                 premiumIcon: "premiumIcon_f78791 logoPrimary_f87bf9",
                 qualitySettingsContainer: "qualitySettingsContainer__8f353",
                 selectorButton: "selectorButton_ea0609",
+                selectorButtonPerkDemo: "selectorButtonPerkDemo__4a1f5",
                 selectorButtonPremiumRequired: "selectorButtonPremiumRequired__9df5b",
                 selectorButtonSelected: "selectorButtonSelected__707fb selectorButton_ea0609",
+                selectorButtonSelectedPerkDemo: "selectorButtonSelectedPerkDemo__7f18f selectorButton_ea0609",
                 selectorNitroText: "selectorNitroText__1d3e0",
                 selectorText: "selectorText__8286b",
                 selectorTextSelected: "selectorTextSelected__147ec selectorText__8286b",
@@ -9146,6 +9178,13 @@
                 invoiceTable: "invoiceTable_b792cd"
             }
         },
+        32934: function(e) {
+            "use strict";
+            e.exports = {
+                container: "container_ef12c9",
+                manageSubscription: "manageSubscription__97d64"
+            }
+        },
         573686: function(e) {
             "use strict";
             e.exports = {
@@ -9189,7 +9228,9 @@
         835299: function(e) {
             "use strict";
             e.exports = {
-                buttonHighlighted: "buttonHighlighted__821fe"
+                buttonHighlighted: "buttonHighlighted__821fe",
+                lockIcon: "lockIcon__66134",
+                pausedButton: "pausedButton_ca9327"
             }
         },
         66226: function(e) {
@@ -10203,6 +10244,7 @@
                 confirmationContent: "confirmationContent__92b7b",
                 container: "container__30a2e",
                 content: "content__9b52d",
+                disclaimerFooter: "disclaimerFooter__8ae51",
                 divider: "divider_e4bcab",
                 dot: "dot__05dbb",
                 dotMembers: "dotMembers_e2cbf6 dot__05dbb",
@@ -16508,87 +16550,6 @@
                 image: "image_c5a804",
                 subtitle: "subtitle_d2b16e",
                 title: "title_ee328a"
-            }
-        },
-        291095: function(e) {
-            "use strict";
-            e.exports = {
-                content: "content__29f02",
-                image: "image__75ad7",
-                title: "title__810af"
-            }
-        },
-        127906: function(e) {
-            "use strict";
-            e.exports = {
-                animation: "animation_ab3e4b",
-                backgroundImage: "backgroundImage__12ba0",
-                backgroundWrapper: "backgroundWrapper_bdc06e",
-                body: "body_df6446",
-                button: "button__4bf3d",
-                buttonIcon: "buttonIcon__4867b",
-                buttonWrapper: "buttonWrapper__6aa14",
-                closeButton: "closeButton_ab31cc button__4bf3d",
-                closeIcon: "closeIcon__08cd1",
-                contentWrapper: "contentWrapper_e66e14",
-                entrypoint: "entrypoint__13ed3",
-                iconButton: "iconButton_d80033 button__4bf3d",
-                video: "video_f41d06",
-                videoWrapper: "videoWrapper_fd5126",
-                wrapper: "wrapper_a2d9da",
-                wrapperHovered: "wrapperHovered__2e4bb"
-            }
-        },
-        297370: function(e) {
-            "use strict";
-            e.exports = {
-                clickable: "clickable__7c803",
-                icon: "icon__7380b"
-            }
-        },
-        632222: function(e) {
-            "use strict";
-            e.exports = {
-                audioIndicator: "audioIndicator__6a432",
-                containerOwned: "containerOwned__029da",
-                count: "count_eb8387",
-                image: "image__8f388",
-                imageContainer: "imageContainer_d66f79",
-                item: "item_bf6c07",
-                name: "name_c59f29"
-            }
-        },
-        362895: function(e) {
-            "use strict";
-            e.exports = {
-                animation: "animation__041bd",
-                animationClickable: "animationClickable__696df flexCenter__548da",
-                animationClickableOpening: "animationClickableOpening__31c7d animationClickable__696df flexCenter__548da",
-                animationClickableWaiting: "animationClickableWaiting__33256 animationClickable__696df flexCenter__548da",
-                backdrop: "backdrop_d189ef",
-                backdropClosing: "backdropClosing__68d13",
-                flexCenter: "flexCenter__548da",
-                openedItemText: "openedItemText__94692",
-                openedItemTextOpened: "openedItemTextOpened__2afcd openedItemText__94692",
-                openedItemTextUnopened: "openedItemTextUnopened__9dac7 openedItemText__94692",
-                wrapper: "wrapper__9cc87 flexCenter__548da",
-                wrapperClosing: "wrapperClosing__56091 wrapper__9cc87 flexCenter__548da"
-            }
-        },
-        430139: function(e) {
-            "use strict";
-            e.exports = {
-                content: "content__9de41",
-                image: "image_a2ee89",
-                imageBox: "imageBox__8b12e image_a2ee89",
-                imageItem: "imageItem_d3d1ca image_a2ee89",
-                text: "text__49fb6"
-            }
-        },
-        320173: function(e) {
-            "use strict";
-            e.exports = {
-                background: "background__91fa8"
             }
         },
         906611: function(e) {
@@ -24526,6 +24487,7 @@
             e.exports = {
                 infoScroller: "infoScroller__0920a",
                 note: "note__7a4f4",
+                recentGames: "recentGames__2995b",
                 userInfoSection: "userInfoSection_e816c1",
                 userInfoSectionHeader: "userInfoSectionHeader_c9f1d3",
                 userInfoText: "userInfoText_b87307"
@@ -25397,32 +25359,6 @@
                 option: "option_ae1b08"
             }
         },
-        344979: function(e) {
-            "use strict";
-            e.exports = {
-                banner: "banner__1b5aa",
-                boxSparkle: "boxSparkle__39977",
-                buttonIcon: "buttonIcon_f162dc",
-                footer: "footer_be6ca6",
-                header: "header_c9ae4a",
-                headerBackground: "headerBackground__39803",
-                headerBrand: "headerBrand_b5ce4a",
-                headerBrandBox: "headerBrandBox__5a398",
-                headerBrandBoxClickArea: "headerBrandBoxClickArea_ac7208",
-                headerButton: "headerButton__5433f",
-                headerCTA: "headerCTA_c0a44b",
-                headerContainer: "headerContainer__70a91",
-                headerEasterEgg: "headerEasterEgg__723a4",
-                innerButton: "innerButton__745ab",
-                inventoryContainer: "inventoryContainer__9ce4d",
-                inventoryHeader: "inventoryHeader__5f811",
-                inventoryHelpIcon: "inventoryHelpIcon_c2669c",
-                inventoryItems: "inventoryItems__47516",
-                stat: "stat_b3e061",
-                statText: "statText_e5c7df",
-                stats: "stats__57223"
-            }
-        },
         993510: function(e) {
             "use strict";
             e.exports = {
@@ -25472,8 +25408,6 @@
         274430: function(e) {
             "use strict";
             e.exports = {
-                betaTagContainer: "betaTagContainer__0e9eb",
-                betaTagIcon: "betaTagIcon_d65f20",
                 card: "card__3aeb5",
                 contentPanel: "contentPanel__68d13",
                 contentPanelNagbar: "contentPanelNagbar_cd5bfd",

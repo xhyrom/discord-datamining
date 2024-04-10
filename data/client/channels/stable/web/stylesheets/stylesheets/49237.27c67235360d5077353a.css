@@ -18457,6 +18457,7 @@ h6.title_c2a544 {
     padding: .5em;
     border-radius: 4px;
     -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
     text-size-adjust: none;
     color: var(--text-normal);
     background: var(--background-secondary)
@@ -23993,17 +23994,15 @@ html.disable-forced-colors * {
 
 .strangerDangerBanner_d083d3 {
     display: flex;
-    flex: 1 1 auto;
     align-items: center;
     padding: var(--spacing-8)var(--spacing-12)var(--spacing-8)var(--spacing-16);
     background: var(--background-floating);
-    position: sticky;
-    height: -moz-fit-content;
-    height: fit-content;
     box-shadow: var(--elevation-high);
     z-index: 2;
     gap: var(--spacing-16);
-    flex-wrap: nowrap
+    flex-wrap: nowrap;
+    margin: var(--spacing-16)var(--spacing-16)calc(-1*var(--spacing-8));
+    border-radius: 6px
 }
 
 .safetyShieldIcon_ce75eb {
@@ -28185,4 +28184,4 @@ span.button_ae40a4.disabled__1dc58 {
     }
 }
 
-/*# sourceMappingURL=49237.310341afc30b949198f7.css.map*/
+/*# sourceMappingURL=49237.27c67235360d5077353a.css.map*/
