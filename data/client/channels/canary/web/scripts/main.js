@@ -36492,7 +36492,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283482", ", Version Hash: ").concat("7b08e23e63c089c58086af74f85e1a1d58b2371d")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283498", ", Version Hash: ").concat("ffe985b1c85cc5eb3d4ef2eeb0033e3eb4890266")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -53090,6 +53090,8 @@
                 COLLECTIBLES_DAYS_LEFT: "{days} days left",
                 COLLECTIBLES_LAST_DAY: "Last day to buy",
                 COLLECTIBLES_SHOP_VIEW_ALL: "View all",
+                COLLECTIBLES_MOBILE_SHOP_DAYS_LEFT: "{days, number}D LEFT",
+                COLLECTIBLES_MOBILE_SHOP_HOURS_LEFT: "{hours, number}H LEFT",
                 COLLECTIBLES_SFA_TITLE: "The Shop is now open to you!",
                 COLLECTIBLES_SFA_STARTER_BANNER_DESCRIPTION: "Collect these sweet, bonus items when you join Nitro! $[Unlock with Nitro](getPremium)",
                 COLLECTIBLES_SFA_HERO_BANNER_SUBTITLE: "Charming. Fierce. Hungry. Whatever your vibe, buy and collect your favorite styles for your profile for any occasion.",
@@ -85696,8 +85698,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "283482", "283482"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283482")), t = 0), t
+                let t = parseInt((e = "283498", "283498"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283498")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103860,6 +103862,9 @@
                 getCollectiblesAssetURL: function() {
                     return N
                 },
+                getDaysRemaining: function() {
+                    return L
+                },
                 getFormattedPriceForCollectiblesProduct: function() {
                     return c
                 },
@@ -103968,7 +103973,13 @@
                     }
                 },
                 C = e => e.applicationId === u.COLLECTIBLES_APPLICATION_ID,
-                g = e => 3.8 * e
+                g = e => 3.8 * e;
+
+            function L(e) {
+                let t = new Date,
+                    n = Date.UTC(t.getFullYear(), t.getMonth(), t.getDate());
+                return Math.floor((Date.UTC(e.getFullYear(), e.getMonth(), e.getDate()) - n) / 864e5)
+            }
         },
         583434: function(e, t, n) {
             "use strict";
@@ -107833,8 +107844,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "283482",
-                    versionHash: "7b08e23e63c089c58086af74f85e1a1d58b2371d"
+                    buildNumber: "283498",
+                    versionHash: "ffe985b1c85cc5eb3d4ef2eeb0033e3eb4890266"
                 }
             }
             n.r(t), n.d(t, {
@@ -157357,8 +157368,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712782709989",
-                                    build_number: "283482"
+                                    built_at: "1712783924184",
+                                    build_number: "283498"
                                 }
                             },
                             retries: 1
@@ -195859,6 +195870,100 @@
                 })
             }, t.default = A
         },
+        530: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return d
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("803997"),
+                s = n.n(r),
+                a = n("481060"),
+                o = n("129861"),
+                l = n("5192"),
+                u = n("690612");
+
+            function d(e) {
+                let {
+                    user: t,
+                    guildId: n,
+                    channelId: r,
+                    icon: d,
+                    tags: _,
+                    className: c,
+                    nicknameVariant: E = "heading-lg/bold"
+                } = e, I = t.isNonUserBot() ? null : l.default.getName(n, r, t);
+                return (0, i.jsxs)("div", {
+                    className: s()(u.container, c),
+                    children: [null != I && (0, i.jsx)(a.Heading, {
+                        className: u.nickname,
+                        variant: E,
+                        children: I
+                    }), (0, i.jsxs)("div", {
+                        className: u.tags,
+                        children: [(0, i.jsx)(o.default, {
+                            user: t,
+                            usernameIcon: d,
+                            forceUsername: !0,
+                            className: null == I ? u.userTagNoNickname : u.userTagWithNickname,
+                            usernameClass: null == I ? u.userTagUsernameNoNickname : u.userTagUsernameBase,
+                            discriminatorClass: null == I ? u.userTagDiscriminatorNoNickname : u.discrimBase,
+                            botClass: null == I ? u.headerBotTag : u.headerBotTagWithNickname
+                        }), _]
+                    })]
+                })
+            }
+        },
+        894374: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                UserProfileBadgesTag: function() {
+                    return d
+                },
+                UserProfilePronounsTag: function() {
+                    return u
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("981729"),
+                s = n("481060"),
+                a = n("184325"),
+                o = n("689938"),
+                l = n("736379");
+
+            function u(e) {
+                let {
+                    pronouns: t,
+                    variant: n = "text-xs/medium"
+                } = e;
+                return null == t || 0 === t.length ? null : (0, i.jsx)(r.Tooltip, {
+                    text: o.default.Messages.USER_PROFILE_PRONOUNS,
+                    children: e => (0, i.jsx)(s.Text, {
+                        ...e,
+                        className: l.pronouns,
+                        variant: n,
+                        children: t
+                    })
+                })
+            }
+
+            function d(e) {
+                let {
+                    user: t,
+                    guildId: n
+                } = e;
+                return (0, i.jsx)(a.default, {
+                    className: l.badges,
+                    user: t,
+                    guildId: n,
+                    size: a.BadgeSizes.SIZE_20
+                })
+            }
+        },
         335191: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -197688,7 +197793,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return f
+                    return S
                 }
             });
             var i = n("735250");
@@ -197698,56 +197803,60 @@
                 a = n("5192"),
                 o = n("447452"),
                 l = n("505737"),
-                u = n("790711"),
-                d = n("67152"),
-                _ = n("901952"),
-                c = n("287612"),
-                E = n("165818"),
-                I = n("614664"),
-                T = n("797849");
+                u = n("530"),
+                d = n("894374"),
+                _ = n("790711"),
+                c = n("67152"),
+                E = n("901952"),
+                I = n("287612"),
+                T = n("165818"),
+                f = n("797849");
 
-            function f(e) {
+            function S(e) {
                 let {
                     user: t,
                     displayProfile: n,
-                    onClose: f,
-                    guild: S,
-                    channelId: A
+                    onClose: S,
+                    guild: A,
+                    channelId: h
                 } = e, {
-                    moreUserDetailsEnabled: h
+                    moreUserDetailsEnabled: m
                 } = (0, o.useSimplifiedProfileExperiment)({
                     location: "BiteSizeProfileBody"
-                }), m = a.default.getName(null == S ? void 0 : S.id, A, t), N = (0, l.default)(t.id, null == S ? void 0 : S.id), O = (0, r.useStateFromStores)([s.default], () => s.default.hidePersonalInformation);
-                return t.isSystemUser() ? null : t.isNonUserBot() ? (0, i.jsxs)("div", {
-                    className: T.paddingBottom,
-                    children: [(0, i.jsx)(I.default, {
-                        guildId: null == S ? void 0 : S.id,
-                        user: t,
-                        nickname: null,
-                        pronouns: null
-                    }), ";"]
+                }), N = a.default.getName(null == A ? void 0 : A.id, h, t), O = (0, l.default)(t.id, null == A ? void 0 : A.id), p = (0, r.useStateFromStores)([s.default], () => s.default.hidePersonalInformation);
+                return t.isSystemUser() ? null : t.isNonUserBot() ? (0, i.jsx)(u.default, {
+                    className: f.paddingBottom,
+                    user: t,
+                    guildId: null == A ? void 0 : A.id
                 }) : (0, i.jsxs)("div", {
-                    className: T.paddingBottom,
-                    children: [(0, i.jsx)(I.default, {
-                        guildId: null == S ? void 0 : S.id,
+                    className: f.paddingBottom,
+                    children: [(0, i.jsx)(u.default, {
+                        className: f.username,
                         user: t,
-                        nickname: m,
-                        pronouns: null == n ? void 0 : n.pronouns,
-                        usernameIcon: t.hasAvatarForGuild(null == S ? void 0 : S.id) && (0, i.jsx)(u.default, {
+                        guildId: null == A ? void 0 : A.id,
+                        icon: t.hasAvatarForGuild(null == A ? void 0 : A.id) && (0, i.jsx)(_.default, {
                             user: t,
-                            nickname: m
+                            nickname: N
+                        }),
+                        tags: (0, i.jsxs)(i.Fragment, {
+                            children: [(0, i.jsx)(d.UserProfilePronounsTag, {
+                                pronouns: null == n ? void 0 : n.pronouns
+                            }), (0, i.jsx)(d.UserProfileBadgesTag, {
+                                user: t,
+                                guildId: null == A ? void 0 : A.id
+                            })]
                         })
-                    }), h && (0, i.jsx)(c.default, {
+                    }), m && (0, i.jsx)(I.default, {
                         user: t
-                    }), h && (0, i.jsx)(d.default, {
+                    }), m && (0, i.jsx)(c.default, {
                         user: t,
                         bio: null == n ? void 0 : n.bio,
-                        hidePersonalInformation: O,
-                        onClose: f
-                    }), (0, i.jsx)(E.default, {
+                        hidePersonalInformation: p,
+                        onClose: S
+                    }), (0, i.jsx)(T.default, {
                         user: t,
-                        guild: S
-                    }), N && (0, i.jsx)(_.default, {
+                        guild: A
+                    }), O && (0, i.jsx)(E.default, {
                         user: t
                     })]
                 })
@@ -198153,66 +198262,6 @@
                         guild: n,
                         user: t,
                         userRoles: l.roles
-                    })
-                })
-            }
-        },
-        614664: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return u
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("481060"),
-                s = n("129861"),
-                a = n("184325"),
-                o = n("689938"),
-                l = n("395274");
-
-            function u(e) {
-                let {
-                    user: t,
-                    guildId: n,
-                    nickname: u,
-                    pronouns: d,
-                    usernameIcon: _
-                } = e;
-                return (0, i.jsx)("div", {
-                    className: l.container,
-                    children: (0, i.jsxs)("div", {
-                        className: l.userText,
-                        children: [null != u ? (0, i.jsx)(r.Heading, {
-                            variant: "heading-lg/semibold",
-                            className: l.nickname,
-                            children: u
-                        }) : null, (0, i.jsxs)("div", {
-                            className: l.flexRow,
-                            children: [(0, i.jsx)(s.default, {
-                                usernameIcon: _,
-                                user: t,
-                                forceUsername: !0,
-                                className: null == u ? l.userTagNoNickname : l.userTagWithNickname,
-                                usernameClass: null == u ? l.userTagUsernameNoNickname : l.userTagUsernameBase,
-                                discriminatorClass: null == u ? l.userTagDiscriminatorNoNickname : l.discrimBase,
-                                botClass: null == u ? l.headerBotTag : l.headerBotTagWithNickname
-                            }), null != d && "" !== d && (0, i.jsx)(r.Tooltip, {
-                                text: o.default.Messages.USER_PROFILE_PRONOUNS,
-                                children: e => (0, i.jsx)(r.Text, {
-                                    ...e,
-                                    variant: "text-sm/normal",
-                                    className: l.biteSizePronouns,
-                                    children: d
-                                })
-                            }), (0, i.jsx)(a.default, {
-                                className: l.badges,
-                                user: t,
-                                guildId: n,
-                                size: a.BadgeSizes.SIZE_20
-                            })]
-                        })]
                     })
                 })
             }
@@ -232335,7 +232384,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "7b08e23e63c089c58086af74f85e1a1d58b2371d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ffe985b1c85cc5eb3d4ef2eeb0033e3eb4890266"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258445,7 +258494,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "283482"
+                                build_number: "283498"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265621,7 +265670,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "283482", "283482"), 10);
+                let s = parseInt((n = "283498", "283498"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292378,4 +292427,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.3c6e9620a8d41d8b78bc.js.map
+//# sourceMappingURL=65573.99209a9098a2548193c1.js.map
