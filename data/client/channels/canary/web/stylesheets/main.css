@@ -117305,6 +117305,45 @@ html .invoiceCancelRow__6ff3e {
     padding: 0 6px
 }
 
+.nitroIconSubHeader_a41dac {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px
+}
+
+.termsApplyBodyText__7c2e1 {
+    text-align: center;
+    max-width: 500px;
+    padding-top: 8px;
+    color: var(--text-normal);
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    text-underline-offset: 2px
+}
+
+.termsApplyAnchor__80281:hover {
+    -webkit-text-decoration: none;
+    text-decoration: none
+}
+
+.buttonWide__58b5b {
+    margin-top: 7px;
+    min-height: 40px;
+    min-width: 315px
+}
+
+.innerButton_eca9c3 {
+    align-items: center;
+    display: flex
+}
+
+.modalTopPill__137c7 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
 .nitroIconSubHeader__7e261 {
     width: 16px;
     height: 16px;
@@ -132293,4 +132332,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2c26c6a821ec7cfedb2e.css.map*/
+/*# sourceMappingURL=99387.e0ed6137922665521702.css.map*/
