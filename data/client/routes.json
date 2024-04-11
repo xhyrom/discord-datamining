@@ -962,7 +962,10 @@
   },
   "MESSAGE_LOG_GUILD_CHANNELS": {
     "url": "/messages-log/guild-channels/get",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BACKGROUND_SYNC": {
     "url": "/users/@me/background-sync",
@@ -3246,7 +3249,10 @@
   },
   "APPLICATION_UPLOAD_ATTACHMENT": {
     "url": "/applications/:param/attachment",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CHANNEL_THREADS": {
     "url": "/channels/:param/threads",
@@ -3326,7 +3332,12 @@
   },
   "DSA_EXPERIMENT_UNAUTHENTICATED": {
     "url": "/reporting/unauthenticated/experiment",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "SUBMIT_REPORT_SECOND_LOOK": {
     "url": "/reporting/review",
