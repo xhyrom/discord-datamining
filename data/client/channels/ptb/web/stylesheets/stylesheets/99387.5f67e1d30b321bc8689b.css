@@ -50791,8 +50791,8 @@ html .progress__00e29 {
 .errorState_c6cca2 {
     padding: 20px 20px 40px;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-align: center
 }
 
@@ -50854,7 +50854,7 @@ html .progress__00e29 {
 
 .confirmChannelName_a42e11 {
     font-weight: 500;
-    font-size: 14px;
+    font-size: .875rem;
     margin-left: 8px;
     color: var(--header-primary)
 }
@@ -50862,7 +50862,7 @@ html .progress__00e29 {
 .lastActiveTimestamp_d49b9c {
     margin-left: 8px;
     color: var(--text-muted);
-    font-size: 12px;
+    font-size: .75rem;
     margin-top: 2px
 }
 
@@ -84470,6 +84470,319 @@ input::-webkit-inner-spin-button {
 
 .theme-dark .textContainer__2116e {
     background-image: linear-gradient(to right, var(--background-secondary-alt), hsl(var(--primary-660-hsl)/.4)90%, transparent)
+}
+
+.expandedProgressBarContainer_c2b92e,
+.expandedProgressBarContainerSettingsPage_ef61f6 {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    padding-right: 48px;
+    padding-left: 24px;
+    box-sizing: border-box
+}
+
+.expandedProgressBarContainer_c2b92e {
+    min-height: 260px;
+    margin-right: 16px;
+    margin-left: 16px
+}
+
+.expandedProgressBarContainerSettingsPage_ef61f6 {
+    min-height: 292px;
+    margin-top: 40px;
+    margin-bottom: -40px
+}
+
+.collapsedProgressBarContainer__0bf29 {
+    min-width: 800px;
+    max-width: 989px
+}
+
+.expandedProgressBarContainerSettingsPage_ef61f6,
+.collapsedProgressBarContainerSettingsPage_ca1fe5 {
+    min-width: 560px;
+    max-width: 660px
+}
+
+.collapsedProgressBarContainer__0bf29,
+.collapsedProgressBarContainerSettingsPage_ca1fe5 {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    box-sizing: border-box
+}
+
+.collapsedProgressBarContainer__0bf29 {
+    min-height: 134px;
+    margin-top: 65px;
+    margin-right: 16px;
+    margin-left: 16px
+}
+
+.collapsedProgressBarContainerSettingsPage_ca1fe5 {
+    min-height: 101px;
+    margin-top: 40px;
+    margin-bottom: -40px
+}
+
+.expandedProgressBarContainerVariant1_ea5ac3 {
+    margin-top: 65px
+}
+
+.expandedProgressBarContainerVariant2__775fe {
+    margin-top: 40px
+}
+
+.allReferralsSentBorder__67d29 {
+    border: 1px solid var(--premium-tier-2-pink-for-gradients-2)
+}
+
+.expandedProgressBarContent__17ba9 {
+    text-align: left;
+    padding-left: 24px;
+    padding-top: 24px
+}
+
+.expandedProgressBarContentVariant1__37efa {
+    max-width: 703px
+}
+
+.expandedProgressBarContentVariant2_e76181 {
+    max-width: 522px
+}
+
+.userAvatarProgressBarContainer__52b1f {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px
+}
+
+.userAvatarProgressBarUnit__6bc46 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    opacity: .7;
+    background: linear-gradient(90deg, rgba(180, 115, 245, .3)0%, rgba(226, 146, 170, .3)100%);
+    width: 32px;
+    height: 32px
+}
+
+.avatarProgressBarUnitConnectorContainer__9f6b8 {
+    width: 24px;
+    height: 4px;
+    position: relative
+}
+
+.avatarProgressBarUnitConnectorBase_a2acd4 {
+    background: linear-gradient(90deg, rgba(180, 115, 245, .3)0%, rgba(226, 146, 170, .3)100%);
+    width: 100%;
+    height: 100%
+}
+
+.fullHighlight__75564,
+.halfHighlight__81f62 {
+    position: absolute;
+    top: 0;
+    background: var(--gradients-nitro-nitro-horizontal, linear-gradient(90deg, var(--premium-tier-2-purple)0%, var(--premium-tier-2-pink)100%))
+}
+
+.fullHighlight__75564 {
+    width: 100%;
+    height: 100%
+}
+
+.halfHighlight__81f62 {
+    width: 12px;
+    height: 4px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px
+}
+
+.expandedProgressBarButtonContainer__0095b {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px
+}
+
+.expandedProgressBarGiftingCTA_a56dee {
+    flex: 1;
+    margin-right: 8px
+}
+
+.expandedProgressBarSelectFriendsCTA_e83ee0 {
+    flex: 1;
+    background: linear-gradient(101deg, var(--premium-tier-2-purple-for-gradients)25.21%, var(--premium-tier-2-purple-for-gradients-2)62.43%, var(--premium-tier-2-pink-for-gradients)95.57%);
+    color: var(--white)
+}
+
+.expandedProgressBarSelectFriendsCTAInner__2de5c {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.expandedProgressBarSelectFriendsIcon__53d09 {
+    padding-right: 4px
+}
+
+.collapseToggle__4309d {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    top: 16px;
+    right: 16px;
+    color: var(--interactive-normal)
+}
+
+.collapseToggle__4309d:hover,
+.collapseToggleInSettings__13187:hover {
+    background: rgba(255, 255, 255, .1);
+    border-radius: 4px
+}
+
+.collapseToggleInSettings__13187 {
+    top: 10px;
+    right: 10px
+}
+
+.collapsedProgressBarIconContainer__9c506 {
+    padding-left: 24px;
+    padding-right: 24px
+}
+
+.collapsedProgressBarButtons__991b4 {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    padding-right: 44px
+}
+
+.collapsedGiftButton__42821 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .25)
+}
+
+.collapsedShareReferralButton__99ce0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%
+}
+
+.collapsedGiftButton__42821:hover,
+.collapsedShareReferralButton__99ce0:hover,
+.collapseToggle__4309d:hover {
+    cursor: pointer
+}
+
+.giftIcon__38883 {
+    height: 16px;
+    width: 16px;
+    color: white
+}
+
+.expandedProgressBarHeader__27829 {
+    color: var(--header-primary)
+}
+
+.unsentTooltipContent__8a2b8 {
+    text-align: center
+}
+
+.theme-light .expandedProgressBarContainer_c2b92e,
+.theme-light .collapsedProgressBarContainer__0bf29 {
+    background: rgba(235, 237, 239, .5)
+}
+
+.theme-light .userAvatarProgressBarUnitNum__53a54 {
+    background: linear-gradient(90deg, var(--premium-tier-2-purple-for-gradients)100%, var(--premium-tier-2-purple-for-gradients-2)100%, var(--premium-tier-2-pink-for-gradients)100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent
+}
+
+.theme-light .collapsedShareReferralButton__99ce0 {
+    background: linear-gradient(90deg, rgba(180, 115, 245, .2)0%, rgba(226, 146, 170, .2)100%)
+}
+
+.theme-light .collapsedShareReferralButton__99ce0:hover {
+    background: linear-gradient(90deg, rgba(180, 115, 245, .4)0%, rgba(226, 146, 170, .4)100%)
+}
+
+.theme-light .collapsedGiftButton__42821 {
+    background: rgba(255, 255, 255, .2)
+}
+
+.theme-light .collapsedGiftButton__42821:hover {
+    background: rgba(255, 255, 255, .4)
+}
+
+.theme-light .expandedProgressBarGiftingCTA_a56dee {
+    border-color: var(--premium-tier-2-pink-for-gradients-2);
+    color: var(--premium-tier-2-pink-for-gradients-2)
+}
+
+.theme-light .expandedProgressBarContainerSettingsPage_ef61f6,
+.theme-light .collapsedProgressBarContainerSettingsPage_ca1fe5 {
+    background: var(--primary-200)
+}
+
+.theme-dark .expandedProgressBarContainer_c2b92e,
+.theme-dark .collapsedProgressBarContainer__0bf29 {
+    background: rgba(35, 36, 40, .5)
+}
+
+.theme-dark .userAvatarProgressBarUnitNum__53a54 {
+    background: var(--gradients-nitro-nitro-horizontal, linear-gradient(90deg, var(--premium-tier-2-purple)0%, var(--premium-tier-2-pink)100%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent
+}
+
+.theme-dark .collapsedShareReferralButton__99ce0 {
+    background: linear-gradient(90deg, rgba(180, 115, 245, .3)0%, rgba(226, 146, 170, .3)100%)
+}
+
+.theme-dark .collapsedShareReferralButton__99ce0:hover {
+    background: linear-gradient(90deg, rgba(180, 115, 245, .1)0%, rgba(226, 146, 170, .1)100%)
+}
+
+.theme-dark .collapsedGiftButton__42821 {
+    background: rgba(255, 255, 255, .25)
+}
+
+.theme-dark .collapsedGiftButton__42821:hover {
+    background: rgba(255, 255, 255, .1)
+}
+
+.theme-dark .expandedProgressBarGiftingCTA_a56dee {
+    border-color: var(--white);
+    color: var(--white)
+}
+
+.theme-dark .expandedProgressBarContainerSettingsPage_ef61f6,
+.theme-dark .collapsedProgressBarContainerSettingsPage_ca1fe5 {
+    background: var(--primary-700)
 }
 
 .container__66d36 {
@@ -131782,4 +132095,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.e306f5f9f5f1df2d45d4.css.map*/
+/*# sourceMappingURL=99387.5f67e1d30b321bc8689b.css.map*/
