@@ -1881,6 +1881,10 @@
       "PUT"
     ]
   },
+  "APPLICATIONS_GAMES_SUPPLEMENTAL": {
+    "url": "/applications/games-supplemental",
+    "allowed_methods": null
+  },
   "APPLICATION_ICON": {
     "url": "/applications/:param/app-icons/:param.png",
     "allowed_methods": null
