@@ -22007,9 +22007,11 @@
                 outerContainer: "outerContainer__35e1f",
                 outerContainerEmbed: "outerContainerEmbed_a99086",
                 outerContainerGiftInventory: "outerContainerGiftInventory_a773b4",
+                outerContainerXs: "outerContainerXs__707cb",
                 partnerBranding: "partnerBranding__5afb3",
                 questInfo: "questInfo__00cc0",
                 questSplash: "questSplash__427df",
+                shareButton: "shareButton__3fbb0",
                 submenuIcon: "submenuIcon__731a4",
                 submenuWrapper: "submenuWrapper_f67b74"
             }
