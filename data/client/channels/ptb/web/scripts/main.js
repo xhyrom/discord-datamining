@@ -36544,7 +36544,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283958", ", Version Hash: ").concat("ee6c5b3e8ddbc70f674de8cf14482693a9177528")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283974", ", Version Hash: ").concat("c08ca63109b19b7c262c553c8e6f583b2116163e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -47544,6 +47544,17 @@
                 MOBILE_CUSTOM_GIFT_PAID_SERVICE_TERMS_AGREEMENT: "By tapping “Buy gift”, you agree to the [Paid Services Terms.]({paidURL}) This will be a one time charge for the amount of time chosen.",
                 MOBILE_CUSTOM_GIFT_SUCCESS_HEADER: "Your gift is on its way!",
                 MOBILE_CUSTOM_GIFT_SUCCESS_BODY: "Delivered with ninja-like efficiency (and zero paper waste).",
+                PREMIUM_CUSTOM_NOTIFICATION_SOUND: "Notification Sound",
+                PREMIUM_CUSTOM_NOTIFICATION_SOUND_NOTIFICATION_SETTINGS_DESCRIPTION: "Set a unique sound for **desktop notifications** from {guildName}. Now available in Beta with Nitro.",
+                PREMIUM_CUSTOM_NOTIFICATION_SOUND_NOTIFICATION_SETTINGS_LABEL: "Choose a custom notification sound",
+                PREMIUM_CUSTOM_NOTIFICATION_SOUND_NOTIFICATION_SETTINGS_UPSELL: "Set custom notification sounds with Nitro.",
+                PREMIUM_CUSTOM_NOTIFICATION_SOUND_NOTIFICATION_SETTINGS_WARNING: "You may not hear notification sounds because you’ve muted this server!",
+                PREMIUM_CUSTOM_NOTIFICATION_SOUND_ROADBLOCK_TITLE: "Hear the difference with custom notification sounds [Beta]!",
+                PREMIUM_CUSTOM_NOTIFICATION_SOUND_ROADBLOCK_LABEL: "Try them out!",
+                PREMIUM_CUSTOM_NOTIFICATION_SOUND_ROADBLOCK_DESCRIPTION: "Access custom notification sounds, HD streaming, personalized profiles, and more with Nitro.",
+                PREMIUM_CUSTOM_NOTIFICATION_SOUND_ROADBLOCK_SECONDARY_CTA: "View all Nitro perks",
+                PREMIUM_CUSTOM_NOTIFICATION_SOUND_COACHMARK_TITLE: "Personalize your notification sounds!",
+                PREMIUM_CUSTOM_NOTIFICATION_SOUND_COACHMARK_DESCRIPTION: "Assign custom notification sounds [Beta] to the servers & direct messages that matter most to you.",
                 PAYMENT_METHOD_INFO: "Payment method",
                 PAID_SERVICE_TERMS_AGREEMENT: "By clicking “Buy gift”, you agree to the Paid Services Terms",
                 ONE_TIME_CHARGE_INFO: "This will be a one time charge for the amount of time chosen. You will not be billed yearly.",
@@ -85843,8 +85854,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "283958", "283958"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283958")), t = 0), t
+                let t = parseInt((e = "283974", "283974"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283974")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107989,8 +108000,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "283958",
-                    versionHash: "ee6c5b3e8ddbc70f674de8cf14482693a9177528"
+                    buildNumber: "283974",
+                    versionHash: "c08ca63109b19b7c262c553c8e6f583b2116163e"
                 }
             }
             n.r(t), n.d(t, {
@@ -143649,7 +143660,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("79504"), n.e("58153"), n.e("25381"), n.e("33053"), n.e("51238"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("71697"), n.e("40866"), n.e("43643"), n.e("55134"), n.e("28216"), n.e("75301"), n.e("62856"), n.e("64979")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(h.GuildFeatures.COMMUNITY)) && (t === h.GuildSettingsSections.GUILD_AUTOMOD && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_AUTOMOD), t === h.GuildSettingsSections.MEMBER_VERIFICATION && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(h.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("79504"), n.e("58153"), n.e("25381"), n.e("33053"), n.e("51238"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("71697"), n.e("40866"), n.e("43643"), n.e("15023"), n.e("28216"), n.e("75301"), n.e("62856"), n.e("64979")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(h.GuildFeatures.COMMUNITY)) && (t === h.GuildSettingsSections.GUILD_AUTOMOD && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_AUTOMOD), t === h.GuildSettingsSections.MEMBER_VERIFICATION && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(h.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -157519,8 +157530,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712873034757",
-                                    build_number: "283958"
+                                    built_at: "1712873718988",
+                                    build_number: "283974"
                                 }
                             },
                             retries: 1
@@ -232709,7 +232720,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ee6c5b3e8ddbc70f674de8cf14482693a9177528"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "c08ca63109b19b7c262c553c8e6f583b2116163e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258802,7 +258813,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "283958"
+                                build_number: "283974"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265978,7 +265989,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "283958", "283958"), 10);
+                let s = parseInt((n = "283974", "283974"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292737,4 +292748,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.ebfa0c31af06e1f1b003.js.map
+//# sourceMappingURL=65573.fd66735d2891633c3860.js.map

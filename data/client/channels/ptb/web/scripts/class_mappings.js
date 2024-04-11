@@ -19716,6 +19716,17 @@
                 title: "title__2a211"
             }
         },
+        364530: function(e) {
+            "use strict";
+            e.exports = {
+                buttonWide: "buttonWide__58b5b",
+                innerButton: "innerButton_eca9c3",
+                modalTopPill: "modalTopPill__137c7",
+                nitroIconSubHeader: "nitroIconSubHeader_a41dac",
+                termsApplyAnchor: "termsApplyAnchor__80281",
+                termsApplyBodyText: "termsApplyBodyText__7c2e1"
+            }
+        },
         320056: function(e) {
             "use strict";
             e.exports = {
@@ -19784,11 +19795,25 @@
         998799: function(e) {
             "use strict";
             e.exports = {
+                container: "container_bbc20d",
+                divider: "divider__5d410",
                 header: "header__10a82",
                 nitroWheel: "nitroWheel__7ee03",
+                option: "option__13442",
+                optionPlaying: "optionPlaying__05ded",
                 options: "options_bde988",
                 optionsContainer: "optionsContainer__44347",
                 subheader: "subheader__7fae4"
+            }
+        },
+        578808: function(e) {
+            "use strict";
+            e.exports = {
+                container: "container_d17b94",
+                nitroButton: "nitroButton_a1ac54",
+                nitroWheel: "nitroWheel_e4e6a4",
+                spacer: "spacer_e582b5",
+                text: "text_a878e2"
             }
         },
         15996: function(e) {
