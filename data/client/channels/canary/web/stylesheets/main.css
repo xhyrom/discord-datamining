@@ -58024,6 +58024,61 @@ html .progress__00e29 {
     border-radius: 16px
 }
 
+.utilityCategoryTitle__3f5ab {
+    display: flex;
+    margin-bottom: 8px;
+    gap: 8px;
+    align-items: center
+}
+
+.utilityCategory_ce38d3 {
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 8px
+}
+
+.utilityTag__2a938 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--border-subtle);
+    color: var(--interactive-normal);
+    padding: 8px 12px;
+    border-radius: 16px
+}
+
+.utilityTag__2a938:hover {
+    color: var(--interactive-hover);
+    border-color: var(--interactive-hover)
+}
+
+.utilityTag__2a938:hover .utilityTagIcon__2b2c9 {
+    color: var(--interactive-hover)
+}
+
+.utilityTag__2a938.selected__2779c {
+    color: var(--interactive-active);
+    border-color: var(--interactive-active)
+}
+
+.utilityTag__2a938.selected__2779c .utilityTagIcon__2b2c9 {
+    color: var(--interactive-active)
+}
+
+.utilityTagIcon__2b2c9 {
+    color: var(--text-muted);
+    width: 16px;
+    height: 16px
+}
+
+.utilityCategoryIcon__542af {
+    color: var(--text-muted);
+    width: 12px;
+    height: 12px
+}
+
 .tagInput__4fbf8 {
     max-width: 100px;
     text-align: center;
@@ -58033,6 +58088,11 @@ html .progress__00e29 {
 
 .tagInput__4fbf8:focus-within {
     border: 1px solid var(--brand-experiment)
+}
+
+.languageSelect__46f09 {
+    width: 400px;
+    padding-bottom: 24px
 }
 
 .playstyleSelect_b7d88b {
@@ -131719,4 +131779,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.b48520cb70c2a88c8a84.css.map*/
+/*# sourceMappingURL=99387.fce6cdb37678c1887754.css.map*/
