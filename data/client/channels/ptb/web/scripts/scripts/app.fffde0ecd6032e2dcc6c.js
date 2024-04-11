@@ -24668,6 +24668,13 @@
                 root: "root__8fb4a"
             }
         },
+        727705: function(e) {
+            "use strict";
+            e.exports = {
+                tabBar: "tabBar_bec6d3",
+                tabBarItem: "tabBarItem__736b2"
+            }
+        },
         262572: function(e) {
             "use strict";
             e.exports = {
