@@ -21110,6 +21110,42 @@
                 trialPill: "trialPill_fe4ced"
             }
         },
+        347584: function(e) {
+            "use strict";
+            e.exports = {
+                allReferralsSentBorder: "allReferralsSentBorder__67d29",
+                avatarProgressBarUnitConnectorBase: "avatarProgressBarUnitConnectorBase_a2acd4",
+                avatarProgressBarUnitConnectorContainer: "avatarProgressBarUnitConnectorContainer__9f6b8",
+                collapseToggle: "collapseToggle__4309d",
+                collapseToggleInSettings: "collapseToggleInSettings__13187",
+                collapsedGiftButton: "collapsedGiftButton__42821",
+                collapsedProgressBarButtons: "collapsedProgressBarButtons__991b4",
+                collapsedProgressBarContainer: "collapsedProgressBarContainer__0bf29",
+                collapsedProgressBarContainerSettingsPage: "collapsedProgressBarContainerSettingsPage_ca1fe5",
+                collapsedProgressBarIconContainer: "collapsedProgressBarIconContainer__9c506",
+                collapsedShareReferralButton: "collapsedShareReferralButton__99ce0",
+                expandedProgressBarButtonContainer: "expandedProgressBarButtonContainer__0095b",
+                expandedProgressBarContainer: "expandedProgressBarContainer_c2b92e",
+                expandedProgressBarContainerSettingsPage: "expandedProgressBarContainerSettingsPage_ef61f6",
+                expandedProgressBarContainerVariant1: "expandedProgressBarContainerVariant1_ea5ac3",
+                expandedProgressBarContainerVariant2: "expandedProgressBarContainerVariant2__775fe",
+                expandedProgressBarContent: "expandedProgressBarContent__17ba9",
+                expandedProgressBarContentVariant1: "expandedProgressBarContentVariant1__37efa",
+                expandedProgressBarContentVariant2: "expandedProgressBarContentVariant2_e76181",
+                expandedProgressBarGiftingCTA: "expandedProgressBarGiftingCTA_a56dee",
+                expandedProgressBarHeader: "expandedProgressBarHeader__27829",
+                expandedProgressBarSelectFriendsCTA: "expandedProgressBarSelectFriendsCTA_e83ee0",
+                expandedProgressBarSelectFriendsCTAInner: "expandedProgressBarSelectFriendsCTAInner__2de5c",
+                expandedProgressBarSelectFriendsIcon: "expandedProgressBarSelectFriendsIcon__53d09",
+                fullHighlight: "fullHighlight__75564",
+                giftIcon: "giftIcon__38883",
+                halfHighlight: "halfHighlight__81f62",
+                unsentTooltipContent: "unsentTooltipContent__8a2b8",
+                userAvatarProgressBarContainer: "userAvatarProgressBarContainer__52b1f",
+                userAvatarProgressBarUnit: "userAvatarProgressBarUnit__6bc46",
+                userAvatarProgressBarUnitNum: "userAvatarProgressBarUnitNum__53a54"
+            }
+        },
         816277: function(e) {
             "use strict";
             e.exports = {
