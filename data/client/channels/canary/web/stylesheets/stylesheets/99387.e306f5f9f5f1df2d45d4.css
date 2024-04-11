@@ -52970,58 +52970,6 @@ html .progress__00e29 {
     object-fit: contain
 }
 
-.menu__8306d {
-    width: 220px
-}
-
-.selectButton__83238 {
-    min-width: 32px;
-    max-width: 32px;
-    display: flex;
-    align-items: center;
-    cursor: pointer
-}
-
-.messageHistory__7547c {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    background: var(--background-primary);
-    position: relative;
-    height: 300px;
-    margin-bottom: 16px;
-    overflow: hidden
-}
-
-.messages_b7915b * {
-    overflow: hidden
-}
-
-.messages_b7915b ol>:last-child {
-    height: 4px
-}
-
-.headerContainer__90e92 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px;
-    position: relative;
-    overflow: visible;
-    z-index: 1;
-    box-shadow: 0 4px 4px 0 hsl(var(--black-500-hsl)/.25)
-}
-
-.header__8fe3d {
-    display: flex;
-    align-items: center;
-    gap: 6px
-}
-
-.closeIcon__622b1 {
-    cursor: pointer
-}
-
 .popout_cfa8bc {
     width: 342px;
     display: flex;
@@ -53098,6 +53046,32 @@ html .progress__00e29 {
     justify-content: space-between;
     align-items: center;
     padding: 0 12px 16px
+}
+
+.inputContainerShareToChannel__8eca3 {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.input__64b6b {
+    padding-right: 8px
+}
+
+.shareToChannelButton_ee0e50 {
+    background: var(--input-background);
+    border-radius: var(--radius-round);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px
+}
+
+.shareToChannelButton_ee0e50:hover {
+    cursor: pointer
 }
 
 .attachment_fd624e {
@@ -131808,4 +131782,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.38eb5860fc28c1c6581a.css.map*/
+/*# sourceMappingURL=99387.e306f5f9f5f1df2d45d4.css.map*/

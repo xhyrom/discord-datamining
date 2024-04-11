@@ -5865,18 +5865,6 @@
                 notes: "notes_aa436d"
             }
         },
-        535806: function(e) {
-            "use strict";
-            e.exports = {
-                closeIcon: "closeIcon__622b1",
-                header: "header__8fe3d",
-                headerContainer: "headerContainer__90e92",
-                menu: "menu__8306d",
-                messageHistory: "messageHistory__7547c",
-                messages: "messages_b7915b",
-                selectButton: "selectButton__83238"
-            }
-        },
         845169: function(e) {
             "use strict";
             e.exports = {
@@ -5917,11 +5905,14 @@
                 emojiSuggestionButton: "emojiSuggestionButton__6cb58",
                 hero: "hero_dc420c",
                 heroDetails: "heroDetails_f9bc0e",
+                input: "input__64b6b",
+                inputContainerShareToChannel: "inputContainerShareToChannel__8eca3",
                 interactionsContainer: "interactionsContainer__97fe3",
                 interactionsContainerHeader: "interactionsContainerHeader_a937d2",
                 joinPromptContainer: "joinPromptContainer_e5abcb",
                 popout: "popout_cfa8bc",
                 popoutTitle: "popoutTitle__6f44d",
+                shareToChannelButton: "shareToChannelButton_ee0e50",
                 shareToChannelInput: "shareToChannelInput_a160d6",
                 shareToChannelInputHasAttachments: "shareToChannelInputHasAttachments__4d1e1"
             }

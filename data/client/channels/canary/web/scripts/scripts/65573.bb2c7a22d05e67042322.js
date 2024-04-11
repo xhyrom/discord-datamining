@@ -36544,7 +36544,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283758", ", Version Hash: ").concat("deeba9449a6d60096b4aebad8f327672cd2a515a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283767", ", Version Hash: ").concat("44f1212e6ac937a934121f760d3228b6d6119b07")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -80054,31 +80054,32 @@
                     let {
                         placeholder: n,
                         onEnter: s,
-                        setEditorRef: a,
-                        showEmojiButton: o = !1,
-                        autoCompletePosition: l,
-                        renderAttachButton: u,
-                        onFocus: E,
-                        channel: I
-                    } = e, [T, S] = r.useState(""), [A, N] = r.useState((0, _.toRichValue)("")), O = () => {
-                        S(""), N((0, _.toRichValue)(""))
-                    }, [p, R] = r.useState(!1), C = d.ChatInputTypes.ATOMIC_REACTOR_REPLY_INPUT;
-                    return o && (C.emojis = {
+                        setEditorRef: o,
+                        showEmojiButton: l = !1,
+                        autoCompletePosition: u,
+                        renderAttachButton: E,
+                        onFocus: I,
+                        channel: T,
+                        className: S
+                    } = e, [A, N] = r.useState(""), [O, p] = r.useState((0, _.toRichValue)("")), R = () => {
+                        N(""), p((0, _.toRichValue)(""))
+                    }, [C, g] = r.useState(!1), L = d.ChatInputTypes.ATOMIC_REACTOR_REPLY_INPUT;
+                    return l && (L.emojis = {
                         button: !0
                     }), (0, i.jsx)(c.default, {
                         ref: t,
                         placeholder: n,
-                        className: h.replyInput,
+                        className: a()(h.replyInput, S),
                         showRemainingCharsAfterCount: -1,
                         allowNewLines: !1,
                         maxCharacterCount: f.MAX_CHAR_COUNT,
-                        channel: null != I ? I : m,
+                        channel: null != T ? T : m,
                         onChange: (e, t, n) => {
-                            S(t), N(n)
+                            N(t), p(n)
                         },
-                        type: C,
-                        textValue: T,
-                        richValue: A,
+                        type: L,
+                        textValue: A,
+                        richValue: O,
                         onSubmit: e => {
                             let {
                                 value: t
@@ -80086,24 +80087,24 @@
                             return t.length > f.MAX_CHAR_COUNT ? Promise.resolve({
                                 shouldClear: !1,
                                 shouldRefocus: !0
-                            }) : (s(t), O(), Promise.resolve({
+                            }) : (s(t), R(), Promise.resolve({
                                 shouldClear: !0,
                                 shouldRefocus: !1
                             }))
                         },
-                        setEditorRef: a,
-                        focused: p,
+                        setEditorRef: o,
+                        focused: C,
                         onFocus: () => {
-                            null == E || E(), R(!0)
+                            null == I || I(), g(!0)
                         },
                         onBlur: () => {
-                            R(!1)
+                            g(!1)
                         },
                         disableThemedBackground: !0,
                         emojiPickerCloseOnModalOuterClick: !0,
                         disabled: !1,
-                        autoCompletePosition: l,
-                        renderAttachButton: u
+                        autoCompletePosition: u,
+                        renderAttachButton: E
                     })
                 }),
                 p = (e, t) => {
@@ -85840,8 +85841,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "283758", "283758"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283758")), t = 0), t
+                let t = parseInt((e = "283767", "283767"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283767")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107986,8 +107987,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "283758",
-                    versionHash: "deeba9449a6d60096b4aebad8f327672cd2a515a"
+                    buildNumber: "283767",
+                    versionHash: "44f1212e6ac937a934121f760d3228b6d6119b07"
                 }
             }
             n.r(t), n.d(t, {
@@ -157515,8 +157516,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712852006794",
-                                    build_number: "283758"
+                                    built_at: "1712853014039",
+                                    build_number: "283767"
                                 }
                             },
                             retries: 1
@@ -232570,7 +232571,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "deeba9449a6d60096b4aebad8f327672cd2a515a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "44f1212e6ac937a934121f760d3228b6d6119b07"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258663,7 +258664,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "283758"
+                                build_number: "283767"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265839,7 +265840,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "283758", "283758"), 10);
+                let s = parseInt((n = "283767", "283767"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292598,4 +292599,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.6451c413f26b98771545.js.map
+//# sourceMappingURL=65573.bb2c7a22d05e67042322.js.map
