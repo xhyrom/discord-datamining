@@ -126881,6 +126881,21 @@ div.nagbar_c731ff {
     margin-right: 32px
 }
 
+.tabBar_bec6d3 {
+    display: flex;
+    gap: 32px;
+    border-bottom: 1px solid var(--profile-body-divider-color)
+}
+
+.tabBar_bec6d3 .tabBarItem__736b2 {
+    border-bottom-width: 1px
+}
+
+.tabBarItem__736b2 {
+    height: 25px;
+    box-sizing: border-box
+}
+
 .button_c03db1 {
     display: flex;
     align-items: center;
@@ -126918,7 +126933,7 @@ div.nagbar_c731ff {
 
 .inner__14185 {
     position: relative;
-    padding: 20px 16px 16px
+    padding: 20px 16px 0
 }
 
 .buttons__3345e {
@@ -126976,12 +126991,13 @@ div.nagbar_c731ff {
 }
 
 .body__07791 {
-    flex: 0 1 385px;
+    flex: 0 1 404px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     border-radius: 8px;
-    overflow: hidden
+    overflow: hidden;
+    padding: 12px
 }
 
 .container_efe6bc {
@@ -132135,4 +132151,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7247d9fe546549bd54ef.css.map*/
+/*# sourceMappingURL=99387.80a4a6c62f97e4854502.css.map*/

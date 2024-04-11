@@ -36544,7 +36544,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283844", ", Version Hash: ").concat("d106b1254ac18f43b89ff28e06f7993cb836dfaf")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283872", ", Version Hash: ").concat("cb3ce67bbcc94116f59a0405dabfc9b7e428a5e9")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -54677,7 +54677,6 @@
                 POLL_VOTES_TOOLTIP_3: "!!{a}!!, !!{b}!!, and !!{c}!!",
                 POLL_VOTES_TOOLTIP_3_N: "!!{a}!!, !!{b}!!, !!{c}!!, and {n, plural, one {1 other} other {{n} others}}",
                 POLL_VOTES_TOOLTIP_N: "{n, plural, one {1 person} other {{n} people}}",
-                POLLS_EXPERIMENT_INFO_TEXT: "Polls are in Beta and can only be created by certain users.",
                 CREATE_POLL: "Create Poll",
                 CREATE_POLL_HEADING: "Create a Poll",
                 CREATE_POLL_EXPIRATION: "Poll will be live for 24 hours",
@@ -85843,8 +85842,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "283844", "283844"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283844")), t = 0), t
+                let t = parseInt((e = "283872", "283872"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283872")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107989,8 +107988,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "283844",
-                    versionHash: "d106b1254ac18f43b89ff28e06f7993cb836dfaf"
+                    buildNumber: "283872",
+                    versionHash: "cb3ce67bbcc94116f59a0405dabfc9b7e428a5e9"
                 }
             }
             n.r(t), n.d(t, {
@@ -135722,7 +135721,7 @@
                     (0, r.openModalLazy)(async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("70935")]).then(n.bind(n, "645264"));
+                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("98880")]).then(n.bind(n, "645264"));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             guildId: e,
@@ -157519,8 +157518,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712863979354",
-                                    build_number: "283844"
+                                    built_at: "1712866064459",
+                                    build_number: "283872"
                                 }
                             },
                             retries: 1
@@ -232705,7 +232704,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d106b1254ac18f43b89ff28e06f7993cb836dfaf"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "cb3ce67bbcc94116f59a0405dabfc9b7e428a5e9"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258798,7 +258797,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "283844"
+                                build_number: "283872"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265974,7 +265973,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "283844", "283844"), 10);
+                let s = parseInt((n = "283872", "283872"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292733,4 +292732,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.12ddb0d0e2ea9cf1bb63.js.map
+//# sourceMappingURL=65573.40648109ddacb869129f.js.map
