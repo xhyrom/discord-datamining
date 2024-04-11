@@ -36544,7 +36544,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283927", ", Version Hash: ").concat("b150b9210ddf69c2879554d9bed546047b1caae4")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283944", ", Version Hash: ").concat("d363a88c2de622a81e1992f418bffcafb16dd3de")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -52666,7 +52666,7 @@
                 REFERRAL_PROGRAM_TWO_WEEK_TRIAL: "2-WEEK TRIAL",
                 REFERRAL_PROGRAM_START_TRIAL: "Start Trial",
                 REFERRAL_PRORAM_PAYMENT_MODAL_BANNER: "{userName} has shared a Nitro trial with you",
-                REFERRAL_PROGRAM_PAYMENT_MODAL_COPY: "Your 2-week trial will end on {endDate}. Choose a plan for after your 2-week trial ends.",
+                REFERRAL_PROGRAM_PAYMENT_MODAL_COPY: "Your **2-week trial** will end on {endDate, date, short}. Choose a plan for after your 2-week trial ends.",
                 REFERRAL_PROGRAM_EMBED_HEADER: "{senderUserName} gave {recipientUserName} a Nitro trial!",
                 REFERRAL_PROGRAM_EMBED_BODY: "Start your 2-week trial of Nitro to try out custom profiles, animated emoji, and more!",
                 REFERRAL_PROGRAM_SELECT_FRIENDS_NO_RESULTS_HEADER: "Hmm... No Results",
@@ -85844,8 +85844,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "283927", "283927"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283927")), t = 0), t
+                let t = parseInt((e = "283944", "283944"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283944")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107990,8 +107990,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "283927",
-                    versionHash: "b150b9210ddf69c2879554d9bed546047b1caae4"
+                    buildNumber: "283944",
+                    versionHash: "d363a88c2de622a81e1992f418bffcafb16dd3de"
                 }
             }
             n.r(t), n.d(t, {
@@ -157520,8 +157520,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712870249575",
-                                    build_number: "283927"
+                                    built_at: "1712872357236",
+                                    build_number: "283944"
                                 }
                             },
                             retries: 1
@@ -167847,14 +167847,15 @@
                 o = n("474936");
 
             function l(e) {
-                var t, n, l, u;
-                let d = (0, a.useTrialOffer)(o.PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID),
-                    _ = (0, a.useTrialOffer)(o.PREMIUM_TIER_2_REACTIVATION_TRIAL_ID),
-                    c = (0, a.useTrialOffer)(r.default.getAnyOfUserTrialOfferId([o.PREMIUM_TIER_2_HFU_ONE_WEEK_TRIAL_ID, o.PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID, o.PREMIUM_TIER_2_HFU_ONE_MONTH_TRIAL_ID, o.PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID])),
-                    E = (0, a.useTrialOffer)(o.PREMIUM_TIER_2_AUTH3_TRIAL_ID),
-                    I = (0, a.useTrialOffer)(o.PREMIUM_TIER_2_NEW_USER_CPV_TRIAL_ID),
-                    T = (0, i.useStateFromStores)([s.default], () => void 0 === e ? null : s.default.getRelevantUserTrialOffer(e));
-                return null !== (u = null !== (l = null !== (n = null !== (t = null != T ? T : d) && void 0 !== t ? t : _) && void 0 !== n ? n : c) && void 0 !== l ? l : E) && void 0 !== u ? u : I
+                var t, n, l, u, d;
+                let _ = (0, a.useTrialOffer)(o.PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID),
+                    c = (0, a.useTrialOffer)(o.PREMIUM_TIER_2_REACTIVATION_TRIAL_ID),
+                    E = (0, a.useTrialOffer)(r.default.getAnyOfUserTrialOfferId([o.PREMIUM_TIER_2_HFU_ONE_WEEK_TRIAL_ID, o.PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID, o.PREMIUM_TIER_2_HFU_ONE_MONTH_TRIAL_ID, o.PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID])),
+                    I = (0, a.useTrialOffer)(o.PREMIUM_TIER_2_AUTH3_TRIAL_ID),
+                    T = (0, a.useTrialOffer)(o.PREMIUM_TIER_2_NEW_USER_CPV_TRIAL_ID),
+                    f = (0, a.useTrialOffer)(o.PREMIUM_TIER_2_REFERRAL_TRIAL_ID),
+                    S = (0, i.useStateFromStores)([s.default], () => void 0 === e ? null : s.default.getRelevantUserTrialOffer(e));
+                return null !== (d = null !== (u = null !== (l = null !== (n = null !== (t = null != f ? f : S) && void 0 !== t ? t : _) && void 0 !== n ? n : c) && void 0 !== l ? l : E) && void 0 !== u ? u : I) && void 0 !== d ? d : T
             }
         },
         164207: function(e, t, n) {
@@ -232709,7 +232710,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b150b9210ddf69c2879554d9bed546047b1caae4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d363a88c2de622a81e1992f418bffcafb16dd3de"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258802,7 +258803,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "283927"
+                                build_number: "283944"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265978,7 +265979,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "283927", "283927"), 10);
+                let s = parseInt((n = "283944", "283944"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292737,4 +292738,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.ae43b143f2f4096eead8.js.map
+//# sourceMappingURL=65573.1009cb58b0d1318dc188.js.map
