@@ -5458,7 +5458,8 @@
         628587: function(e) {
             "use strict";
             e.exports = {
-                badge: "badge__38d19"
+                badgeDark: "badgeDark__1b20d",
+                badgeLight: "badgeLight__5fbd1"
             }
         },
         116162: function(e) {
@@ -5609,6 +5610,7 @@
                 darkText: "darkText__536f8",
                 description: "description__4281c",
                 disclaimer: "disclaimer_cc94bc",
+                disclaimerLight: "disclaimerLight__82b3e",
                 headingWithItemTypePill: "headingWithItemTypePill__3fc83",
                 lightText: "lightText__63e27",
                 mockInput: "mockInput_d3257e",
@@ -5619,6 +5621,7 @@
                 modalRoot: "modalRoot_a744d4",
                 nonPremiumContainer: "nonPremiumContainer__4535e",
                 nonPremiumPrice: "nonPremiumPrice__59e8a",
+                pfxPreviewContainer: "pfxPreviewContainer__6eda3",
                 premiumIcon: "premiumIcon__355c8",
                 premiumPriceTag: "premiumPriceTag_fb5ea7",
                 premiumPriceTagIcon: "premiumPriceTagIcon__21d57",
@@ -5628,9 +5631,13 @@
                 primaryButtons: "primaryButtons__0cd44",
                 profileCustomizationBody: "profileCustomizationBody__4bf43",
                 profileEffectPreviewsContainerInner: "profileEffectPreviewsContainerInner__79485 previewsContainerInner__71adf",
+                profilePreviewHeader: "profilePreviewHeader__15f94",
+                sampleProfileAsset: "sampleProfileAsset__4d996",
+                staticPfxPreview: "staticPfxPreview__9aa70",
                 subscribeNow: "subscribeNow__04fcf",
                 titleContainer: "titleContainer__9fc26",
                 titleImage: "titleImage_d36f3f",
+                titleImageContainer: "titleImageContainer__66fa1",
                 tooltip: "tooltip__86aed",
                 unlockDiscountButton: "unlockDiscountButton__58aa8"
             }
