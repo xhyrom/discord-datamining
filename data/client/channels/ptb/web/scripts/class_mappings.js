@@ -5912,7 +5912,6 @@
                 emojiSuggestionButton: "emojiSuggestionButton__6cb58",
                 hero: "hero_dc420c",
                 heroDetails: "heroDetails_f9bc0e",
-                input: "input__64b6b",
                 inputContainerShareToChannel: "inputContainerShareToChannel__8eca3",
                 interactionsContainer: "interactionsContainer__97fe3",
                 interactionsContainerHeader: "interactionsContainerHeader_a937d2",
