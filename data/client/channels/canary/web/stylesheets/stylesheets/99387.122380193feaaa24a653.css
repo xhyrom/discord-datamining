@@ -53462,8 +53462,12 @@ html .progress__00e29 {
 }
 
 .cardBrandingFooter__98c32 {
-    height: 8px;
-    width: 100%
+    height: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 12px;
+    box-sizing: border-box
 }
 
 .cardContent__3001c {
@@ -53479,7 +53483,7 @@ html .progress__00e29 {
 
 .primetimeContainer__2c3ce {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 4px
 }
 
@@ -53487,6 +53491,12 @@ html .progress__00e29 {
     width: 16px;
     height: 16px;
     color: var(--text-muted)
+}
+
+.primetime_fd3eea {
+    display: flex;
+    align-items: center;
+    gap: 4px
 }
 
 .traitsContainer__23f4b {
@@ -55807,8 +55817,8 @@ html .progress__00e29 {
 }
 
 .name__4eb92 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -85153,7 +85163,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 1rem
+    font-size: 16px
 }
 
 .viewAllGamesButton__34838 {
@@ -85173,7 +85183,7 @@ input::-webkit-inner-spin-button {
 
 .viewAllGames__76b00,
 .viewAllNitroGames_a65ce4 {
-    font-size: 1rem;
+    font-size: 16px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -85230,7 +85240,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 1rem
+    font-size: 16px
 }
 
 .headerBar__3337a {
@@ -132151,4 +132161,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f375bbbd556bbf1deb56.css.map*/
+/*# sourceMappingURL=99387.122380193feaaa24a653.css.map*/

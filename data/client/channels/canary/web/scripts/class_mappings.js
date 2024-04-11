@@ -6712,6 +6712,7 @@
                 clickableCard: "clickableCard__1c1e9",
                 header: "header__2b527",
                 playstyle: "playstyle__9d997",
+                primetime: "primetime_fd3eea",
                 primetimeContainer: "primetimeContainer__2c3ce",
                 primetimeIcon: "primetimeIcon_c4d213",
                 trait: "trait_dfdb34",
