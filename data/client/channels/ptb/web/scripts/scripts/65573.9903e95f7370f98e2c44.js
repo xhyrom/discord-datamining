@@ -36544,7 +36544,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283781", ", Version Hash: ").concat("a5b03cd0a83b5fe3923646b954046cbe4433cb63")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283785", ", Version Hash: ").concat("b722dd0aed2d4f6d6b3fafa648b939bf6e7d4fc5")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -42579,6 +42579,8 @@
                 INCOMING_FRIEND_REQUEST_FROM: "Incoming Friend Request from !!{name}!!",
                 INCOMING_FRIEND_REQUESTS_COUNT: "{count} incoming friend requests",
                 OUTGOING_FRIEND_REQUEST: "Outgoing Friend Request",
+                ACCEPT_FRIEND_REQUEST: "Accept Friend Request",
+                IGNORE_FRIEND_REQUEST: "Ignore Friend Request",
                 CANCEL_FRIEND_REQUEST: "Cancel Friend Request",
                 OUTGOING_FRIEND_REQUEST_DELETE_MSG: "Are you sure you want to delete your friend request to **!!{name}!!**?",
                 FRIEND_REQUESTS_COMBINED_COUNT: "{incoming, number} received  •  {outgoing, number} sent",
@@ -85841,8 +85843,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "283781", "283781"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283781")), t = 0), t
+                let t = parseInt((e = "283785", "283785"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283785")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107987,8 +107989,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "283781",
-                    versionHash: "a5b03cd0a83b5fe3923646b954046cbe4433cb63"
+                    buildNumber: "283785",
+                    versionHash: "b722dd0aed2d4f6d6b3fafa648b939bf6e7d4fc5"
                 }
             }
             n.r(t), n.d(t, {
@@ -157517,8 +157519,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712853775100",
-                                    build_number: "283781"
+                                    built_at: "1712854462757",
+                                    build_number: "283785"
                                 }
                             },
                             retries: 1
@@ -176445,6 +176447,7 @@
                             transitionState: t,
                             size: l.ModalSize.DYNAMIC,
                             className: g.rootContainer,
+                            hideShadow: !0,
                             children: y ? (0, i.jsx)(l.Spinner, {
                                 className: g.spinner,
                                 type: l.Spinner.Type.SPINNING_CIRCLE
@@ -176515,15 +176518,16 @@
                         children: (0, i.jsxs)("div", {
                             className: g.gradient,
                             style: {
-                                backgroundImage: "linear-gradient(180deg, ".concat(s, "40, ").concat(a, "40)")
+                                backgroundImage: "linear-gradient(180deg, ".concat(s, ", ").concat(a, ")")
                             },
                             children: [(0, i.jsx)(l.Heading, {
                                 variant: "heading-lg/bold",
-                                color: "header-primary",
+                                color: "always-white",
                                 className: g.heading,
                                 children: C.default.Messages.QUESTS_REWARD_AVATAR_DECORATION_HEADER
                             }), (0, i.jsx)(l.Text, {
                                 variant: "text-sm/normal",
+                                color: "always-white",
                                 className: g.text,
                                 children: C.default.Messages.QUESTS_REWARD_AVATAR_DECORATION_BODY.format({
                                     decorationName: r
@@ -232678,7 +232682,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a5b03cd0a83b5fe3923646b954046cbe4433cb63"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "b722dd0aed2d4f6d6b3fafa648b939bf6e7d4fc5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258771,7 +258775,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "283781"
+                                build_number: "283785"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265947,7 +265951,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "283781", "283781"), 10);
+                let s = parseInt((n = "283785", "283785"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292706,4 +292710,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.a96b144e1c88b28e177f.js.map
+//# sourceMappingURL=65573.9903e95f7370f98e2c44.js.map
