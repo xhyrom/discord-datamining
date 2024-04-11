@@ -36544,7 +36544,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283767", ", Version Hash: ").concat("44f1212e6ac937a934121f760d3228b6d6119b07")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("283776", ", Version Hash: ").concat("50a76cc5079529e14e49a582ccd0acb41993f63e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85841,8 +85841,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "283767", "283767"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283767")), t = 0), t
+                let t = parseInt((e = "283776", "283776"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("283776")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107987,8 +107987,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "283767",
-                    versionHash: "44f1212e6ac937a934121f760d3228b6d6119b07"
+                    buildNumber: "283776",
+                    versionHash: "50a76cc5079529e14e49a582ccd0acb41993f63e"
                 }
             }
             n.r(t), n.d(t, {
@@ -157516,8 +157516,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712853014039",
-                                    build_number: "283767"
+                                    built_at: "1712853520897",
+                                    build_number: "283776"
                                 }
                             },
                             retries: 1
@@ -194973,285 +194973,350 @@
                 return [f, null !== (o = null == T ? void 0 : T[1]) && void 0 !== o ? o : (0, i.hex2int)(I)]
             }
         },
+        78675: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return p
+                }
+            }), n("47120");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("803997"),
+                a = n.n(s),
+                o = n("866442"),
+                l = n("442837"),
+                u = n("692547"),
+                d = n("481060"),
+                _ = n("220082"),
+                c = n("583405"),
+                E = n("695346"),
+                I = n("451478"),
+                T = n("311715"),
+                f = n("768581"),
+                S = n("74538"),
+                A = n("888778"),
+                h = n("943217"),
+                m = n("793397"),
+                N = n("474936"),
+                O = n("350315");
+
+            function p(e) {
+                var t, n;
+                let {
+                    user: s,
+                    displayProfile: p,
+                    guildId: R,
+                    overrideBannerSrc: C,
+                    profileType: g,
+                    animateOnHover: L = !1,
+                    hasProfileEffect: D = !1
+                } = e, v = S.default.isPremiumAtLeast(null == p ? void 0 : p.premiumType, N.PremiumTypes.TIER_2), [M, y] = r.useState(!1), P = (0, l.useStateFromStores)([I.default], () => I.default.isFocused()), U = E.GifAutoPlay.getSetting(), {
+                    bannerSrc: b,
+                    status: G
+                } = (0, A.default)({
+                    displayProfile: p,
+                    overrideBannerSrc: C,
+                    size: (0, m.getUserBannerSize)(g),
+                    canAnimate: L || !U ? M : P
+                }), w = (0, d.useToken)(u.default.unsafe_rawColors.PRIMARY_800).hex(), k = (0, d.getAvatarSize)(d.AvatarSizes.SIZE_80), B = (0, o.hex2int)((0, _.default)(s.getAvatarURL(R, k), w, !1)), F = (0, c.default)(null !== (t = null == p ? void 0 : p.primaryColor) && void 0 !== t ? t : B).hsl;
+                return (0, i.jsx)(h.default, {
+                    isPremium: v,
+                    hasThemeColors: null !== (n = null == p ? void 0 : p.canEditThemes) && void 0 !== n && n,
+                    profileType: g,
+                    hasBanner: null != b,
+                    hasProfileEffect: D,
+                    children: (0, i.jsx)("div", {
+                        className: a()(O.banner, (0, m.getUserBannerStyles)({
+                            profileType: g,
+                            user: {
+                                hasBanner: null != b,
+                                isPremium: v,
+                                hasProfileEffect: D
+                            }
+                        })),
+                        onMouseMove: () => y(!0),
+                        onMouseLeave: () => y(!1),
+                        style: {
+                            backgroundImage: null != b ? "url(".concat(b, ")") : void 0,
+                            backgroundColor: G !== A.BannerLoadingStatus.COMPLETE ? u.default.unsafe_rawColors.PRIMARY_800.css : F
+                        },
+                        children: !U && (0, f.isAnimatedImageURL)(b) && (0, i.jsx)(T.default, {
+                            className: O.gifTag
+                        })
+                    })
+                })
+            }
+        },
         735336: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return q
+                    return Q
                 }
             }), n("47120");
-            var i, r, s = n("735250"),
-                a = n("470079"),
-                o = n("803997"),
-                l = n.n(o),
-                u = n("866442"),
-                d = n("442837"),
-                _ = n("692547"),
-                c = n("481060"),
-                E = n("230711"),
-                I = n("100527"),
-                T = n("906732"),
-                f = n("220082"),
-                S = n("583405"),
-                A = n("556084"),
-                h = n("300284"),
-                m = n("695346"),
-                N = n("314897"),
-                O = n("592125"),
-                p = n("430824"),
-                R = n("944486"),
-                C = n("594174"),
-                g = n("451478"),
-                L = n("311715"),
-                D = n("465670"),
-                v = n("937482"),
-                M = n("466111"),
-                y = n("185403"),
-                P = n("26290"),
-                U = n("626135"),
-                b = n("768581"),
-                G = n("74538"),
-                w = n("785717"),
-                k = n("621853"),
-                B = n("943217"),
-                F = n("793397"),
-                V = n("841040"),
-                x = n("228168"),
-                H = n("981631"),
-                Y = n("474936"),
-                j = n("689938"),
-                W = n("350315");
-            (r = i || (i = {}))[r.SHOULD_LOAD = 0] = "SHOULD_LOAD", r[r.LOADING = 1] = "LOADING", r[r.COMPLETE = 2] = "COMPLETE";
-            let K = {
-                    [x.UserProfileTypes.POPOUT]: 18,
-                    [x.UserProfileTypes.MODAL]: 24,
-                    [x.UserProfileTypes.SETTINGS]: 0,
-                    [x.UserProfileTypes.PANEL]: 18,
-                    [x.UserProfileTypes.POMELO_POPOUT]: 18,
-                    [x.UserProfileTypes.CANCEL_MODAL]: 0
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("803997"),
+                a = n.n(s),
+                o = n("866442"),
+                l = n("442837"),
+                u = n("692547"),
+                d = n("481060"),
+                _ = n("230711"),
+                c = n("100527"),
+                E = n("906732"),
+                I = n("220082"),
+                T = n("583405"),
+                f = n("556084"),
+                S = n("300284"),
+                A = n("695346"),
+                h = n("314897"),
+                m = n("592125"),
+                N = n("430824"),
+                O = n("944486"),
+                p = n("594174"),
+                R = n("451478"),
+                C = n("311715"),
+                g = n("465670"),
+                L = n("937482"),
+                D = n("466111"),
+                v = n("185403"),
+                M = n("26290"),
+                y = n("626135"),
+                P = n("768581"),
+                U = n("74538"),
+                b = n("785717"),
+                G = n("621853"),
+                w = n("888778"),
+                k = n("943217"),
+                B = n("793397"),
+                F = n("841040"),
+                V = n("228168"),
+                x = n("981631"),
+                H = n("474936"),
+                Y = n("689938"),
+                j = n("350315");
+            let W = {
+                    [V.UserProfileTypes.POPOUT]: 18,
+                    [V.UserProfileTypes.MODAL]: 24,
+                    [V.UserProfileTypes.SETTINGS]: 0,
+                    [V.UserProfileTypes.PANEL]: 18,
+                    [V.UserProfileTypes.POMELO_POPOUT]: 18,
+                    [V.UserProfileTypes.CANCEL_MODAL]: 0
                 },
-                z = {
-                    [x.UserProfileTypes.MODAL]: H.AnalyticsPages.USER_PROFILE,
-                    [x.UserProfileTypes.POPOUT]: H.AnalyticsPages.USER_POPOUT,
-                    [x.UserProfileTypes.SETTINGS]: H.AnalyticsPages.USER_POPOUT,
-                    [x.UserProfileTypes.PANEL]: H.AnalyticsPages.DM_CHANNEL,
-                    [x.UserProfileTypes.POMELO_POPOUT]: H.AnalyticsPages.POMELO_POPOUT,
-                    [x.UserProfileTypes.CANCEL_MODAL]: H.AnalyticsPages.USER_POPOUT
+                K = {
+                    [V.UserProfileTypes.MODAL]: x.AnalyticsPages.USER_PROFILE,
+                    [V.UserProfileTypes.POPOUT]: x.AnalyticsPages.USER_POPOUT,
+                    [V.UserProfileTypes.SETTINGS]: x.AnalyticsPages.USER_POPOUT,
+                    [V.UserProfileTypes.PANEL]: x.AnalyticsPages.DM_CHANNEL,
+                    [V.UserProfileTypes.POMELO_POPOUT]: x.AnalyticsPages.POMELO_POPOUT,
+                    [V.UserProfileTypes.CANCEL_MODAL]: x.AnalyticsPages.USER_POPOUT
                 };
 
-            function X(e) {
+            function z(e) {
                 let {
                     type: t,
-                    shown: i,
-                    onClick: r
-                } = e, o = (0, d.useStateFromStores)([C.default], () => {
-                    let e = C.default.getCurrentUser();
-                    return G.default.canUsePremiumProfileCustomization(e)
-                }), u = a.useRef(!1), {
-                    analyticsLocations: _
-                } = (0, T.default)(I.default.BADGE);
-                return a.useEffect(() => {
-                    i && !u.current && (u.current = !0, U.default.track(H.AnalyticEvents.PREMIUM_UPSELL_VIEWED, {
-                        type: Y.PremiumUpsellTypes.CUSTOM_PROFILES_PROFILE_BANNER_SOCIAL_UPSELL,
+                    shown: s,
+                    onClick: o
+                } = e, u = (0, l.useStateFromStores)([p.default], () => {
+                    let e = p.default.getCurrentUser();
+                    return U.default.canUsePremiumProfileCustomization(e)
+                }), I = r.useRef(!1), {
+                    analyticsLocations: T
+                } = (0, E.default)(c.default.BADGE);
+                return r.useEffect(() => {
+                    s && !I.current && (I.current = !0, y.default.track(x.AnalyticEvents.PREMIUM_UPSELL_VIEWED, {
+                        type: H.PremiumUpsellTypes.CUSTOM_PROFILES_PROFILE_BANNER_SOCIAL_UPSELL,
                         location: {
-                            page: z[t],
-                            section: H.AnalyticsSections.NITRO_BANNER,
-                            object: H.AnalyticsObjects.NITRO_BADGE
+                            page: K[t],
+                            section: x.AnalyticsSections.NITRO_BANNER,
+                            object: x.AnalyticsObjects.NITRO_BADGE
                         },
-                        location_stack: _
+                        location_stack: T
                     }))
-                }, [_, i, t]), (0, s.jsx)(c.Tooltip, {
-                    tooltipContentClassName: W.premiumIconTooltipContent,
-                    text: o ? j.default.Messages.PROFILE_CUSTOMIZATION_NITRO_ICON_TOOLTIP : j.default.Messages.USER_SETTINGS_PROFILE_THEMES_USER_PROFILE_ICON_TOOLTIP_UPSELL,
-                    children: e => (0, s.jsx)(c.Clickable, {
+                }, [T, s, t]), (0, i.jsx)(d.Tooltip, {
+                    tooltipContentClassName: j.premiumIconTooltipContent,
+                    text: u ? Y.default.Messages.PROFILE_CUSTOMIZATION_NITRO_ICON_TOOLTIP : Y.default.Messages.USER_SETTINGS_PROFILE_THEMES_USER_PROFILE_ICON_TOOLTIP_UPSELL,
+                    children: e => (0, i.jsx)(d.Clickable, {
                         ...e,
-                        onClick: o ? void 0 : () => {
+                        onClick: u ? void 0 : () => {
                             var e;
-                            e = _, (0, c.openModalLazy)(async () => {
+                            e = T, (0, d.openModalLazy)(async () => {
                                 let {
                                     default: t
                                 } = await Promise.all([n.e("99387"), n.e("30364")]).then(n.bind(n, "968031"));
                                 return n => {
                                     let {
-                                        onClose: i,
-                                        ...r
+                                        onClose: r,
+                                        ...s
                                     } = n;
-                                    return (0, s.jsx)(t, {
+                                    return (0, i.jsx)(t, {
                                         analyticsLocations: e,
-                                        title: j.default.Messages.USER_SETTINGS_PROFILE_THEMES_UPSELL_FROM_ICON_MODAL_TITLE,
-                                        description: j.default.Messages.USER_SETTINGS_PROFILE_THEMES_UPSELL_FROM_ICON_MODAL_DESCRIPTION.format({
+                                        title: Y.default.Messages.USER_SETTINGS_PROFILE_THEMES_UPSELL_FROM_ICON_MODAL_TITLE,
+                                        description: Y.default.Messages.USER_SETTINGS_PROFILE_THEMES_UPSELL_FROM_ICON_MODAL_DESCRIPTION.format({
                                             onAndMoreWithPremiumClick: () => {
-                                                i(), E.default.open(H.UserSettingsSections.PREMIUM, null, {
+                                                r(), _.default.open(x.UserSettingsSections.PREMIUM, null, {
                                                     analyticsLocations: e
                                                 })
                                             }
                                         }),
-                                        onClose: i,
-                                        ...r
+                                        onClose: r,
+                                        ...s
                                     })
                                 }
-                            }), null == r || r()
+                            }), null == o || o()
                         },
-                        className: l()(W.premiumIconWrapper, {
-                            [W.visible]: i,
-                            [W.clickable]: !o
+                        className: a()(j.premiumIconWrapper, {
+                            [j.visible]: s,
+                            [j.clickable]: !u
                         }),
-                        children: (0, s.jsx)(P.TextBadge, {
+                        children: (0, i.jsx)(M.TextBadge, {
                             color: "rgba(32, 34, 37, 0.8)",
-                            text: (0, s.jsx)(M.default, {
+                            text: (0, i.jsx)(D.default, {
                                 width: 16,
                                 height: 16,
-                                className: W.premiumIcon
+                                className: j.premiumIcon
                             })
+                        })
+                    })
+                })
+            }
+
+            function X(e) {
+                let {
+                    darkenOnHover: t,
+                    profileType: n,
+                    profileLabel: r,
+                    icon: s,
+                    ...a
+                } = e, o = W[n], l = "pencil" === s ? v.default : L.default;
+                return (0, i.jsx)(d.Clickable, {
+                    ...a,
+                    "aria-label": r,
+                    className: t ? j.pencilContainerDark : j.pencilContainer,
+                    children: (0, i.jsx)(d.Tooltip, {
+                        text: r,
+                        children: e => (0, i.jsx)(l, {
+                            ...e,
+                            width: o,
+                            height: o,
+                            className: j.editIcon
                         })
                     })
                 })
             }
 
             function Q(e) {
+                var t, n, s;
                 let {
-                    darkenOnHover: t,
-                    profileType: n,
-                    profileLabel: i,
-                    icon: r,
-                    ...a
-                } = e, o = K[n], l = "pencil" === r ? y.default : v.default;
-                return (0, s.jsx)(c.Clickable, {
-                    ...a,
-                    "aria-label": i,
-                    className: t ? W.pencilContainerDark : W.pencilContainer,
-                    children: (0, s.jsx)(c.Tooltip, {
-                        text: i,
-                        children: e => (0, s.jsx)(l, {
-                            ...e,
-                            width: o,
-                            height: o,
-                            className: W.editIcon
-                        })
-                    })
-                })
-            }
-
-            function q(e) {
-                var t, n, i;
-                let {
-                    user: r,
-                    displayProfile: o,
+                    user: _,
+                    displayProfile: c,
                     bannerSrc: E,
-                    onClose: I,
-                    guildId: T,
-                    profileType: C = x.UserProfileTypes.POPOUT,
+                    onClose: p,
+                    guildId: L,
+                    profileType: D,
                     isHovering: v,
                     animateOnHover: M,
                     allowEdit: y = !0,
-                    showPremiumBadgeUpsell: P = !0,
-                    hasProfileEffect: U = !1
-                } = e, [K, z] = a.useState((null == o ? void 0 : o.banner) == null ? 2 : 0), q = (0, d.useStateFromStores)([p.default], () => p.default.getGuild(T)), J = (0, d.useStateFromStores)([N.default], () => N.default.getId()) === r.id && y, Z = G.default.isPremiumAtLeast(null == o ? void 0 : o.premiumType, Y.PremiumTypes.TIER_2), {
-                    trackUserProfileAction: $
-                } = (0, w.useUserProfileAnalyticsContext)(), [ee, et] = a.useState(!1), en = (0, d.useStateFromStores)([g.default], () => g.default.isFocused()), ei = m.GifAutoPlay.getSetting(), er = (0, c.useToken)(_.default.unsafe_rawColors.PRIMARY_800).hex(), es = (0, c.getAvatarSize)(c.AvatarSizes.SIZE_80), ea = (0, u.hex2int)((0, f.default)(r.getAvatarURL(T, es), er, !1)), eo = (0, S.default)(null !== (t = null == o ? void 0 : o.primaryColor) && void 0 !== t ? t : ea).hsl, el = (0, F.getUserBannerSize)(C), eu = null != E ? E : null == o ? void 0 : o.getBannerURL({
-                    size: el,
-                    canAnimate: M || !ei ? ee : en
-                }), ed = null != eu, e_ = (0, d.useStateFromStores)([k.default], () => k.default.getUserProfile(r.id)), ec = O.default.getChannel(R.default.getChannelId()), {
-                    appsInGDMEnabled: eE,
-                    availableApplications: eI
-                } = (0, A.usePrivateChannelIntegrationState)({
-                    channelId: null !== (n = null == ec ? void 0 : ec.id) && void 0 !== n ? n : H.EMPTY_STRING_SNOWFLAKE_ID
-                }), eT = null == e_ ? void 0 : e_.application, ef = eE && null != eI.find(e => e.id === (null == eT ? void 0 : eT.id));
-                (0, a.useEffect)(() => {
-                    if (ed && 0 === K) {
-                        z(1);
-                        let e = new Image;
-                        e.src = eu, e.onload = () => z(2)
-                    }
-                }, [r, ed, eu, K]), a.useEffect(() => {
-                    if (ei || !ed) return;
-                    let e = null != E ? E : null == o ? void 0 : o.getBannerURL({
-                        size: el,
-                        canAnimate: !0
-                    });
-                    if (null != e) new Image().src = e
-                }, [ei, ed, E, o, el]);
-                let eS = (0, h.default)({
+                    showPremiumBadgeUpsell: W = !0,
+                    hasProfileEffect: K = !1
+                } = e, Q = (0, l.useStateFromStores)([N.default], () => N.default.getGuild(L)), q = (0, l.useStateFromStores)([h.default], () => h.default.getId()) === _.id && y, J = U.default.isPremiumAtLeast(null == c ? void 0 : c.premiumType, H.PremiumTypes.TIER_2), {
+                    trackUserProfileAction: Z
+                } = (0, b.useUserProfileAnalyticsContext)(), [$, ee] = r.useState(!1), et = (0, l.useStateFromStores)([R.default], () => R.default.isFocused()), en = A.GifAutoPlay.getSetting(), {
+                    bannerSrc: ei,
+                    status: er
+                } = (0, w.default)({
+                    displayProfile: c,
+                    overrideBannerSrc: E,
+                    size: (0, B.getUserBannerSize)(D),
+                    canAnimate: M || !en ? $ : et
+                }), es = (0, d.useToken)(u.default.unsafe_rawColors.PRIMARY_800).hex(), ea = (0, d.getAvatarSize)(d.AvatarSizes.SIZE_80), eo = (0, o.hex2int)((0, I.default)(_.getAvatarURL(L, ea), es, !1)), el = (0, T.default)(null !== (t = null == c ? void 0 : c.primaryColor) && void 0 !== t ? t : eo).hsl, eu = (0, l.useStateFromStores)([G.default], () => G.default.getUserProfile(_.id)), ed = m.default.getChannel(O.default.getChannelId()), {
+                    appsInGDMEnabled: e_,
+                    availableApplications: ec
+                } = (0, f.usePrivateChannelIntegrationState)({
+                    channelId: null !== (n = null == ed ? void 0 : ed.id) && void 0 !== n ? n : x.EMPTY_STRING_SNOWFLAKE_ID
+                }), eE = null == eu ? void 0 : eu.application, eI = e_ && null != ec.find(e => e.id === (null == eE ? void 0 : eE.id)), eT = (0, S.default)({
                     analyticsLocation: {
-                        page: H.AnalyticsPages.USER_POPOUT,
-                        section: H.AnalyticsSections.PROFILE_POPOUT
+                        page: x.AnalyticsPages.USER_POPOUT,
+                        section: x.AnalyticsSections.PROFILE_POPOUT
                     }
                 });
-                return (0, s.jsx)(B.default, {
-                    isPremium: Z,
-                    hasThemeColors: null !== (i = null == o ? void 0 : o.canEditThemes) && void 0 !== i && i,
-                    profileType: C,
-                    hasBanner: ed,
-                    hasProfileEffect: U,
-                    children: (0, s.jsxs)("div", {
-                        className: l()(W.banner, (0, F.getUserBannerStyles)({
-                            profileType: C,
+                return (0, i.jsx)(k.default, {
+                    isPremium: J,
+                    hasThemeColors: null !== (s = null == c ? void 0 : c.canEditThemes) && void 0 !== s && s,
+                    profileType: D,
+                    hasBanner: null != ei,
+                    hasProfileEffect: K,
+                    children: (0, i.jsxs)("div", {
+                        className: a()(j.banner, (0, B.getUserBannerStyles)({
+                            profileType: D,
                             user: {
-                                hasBanner: ed,
-                                isPremium: Z,
-                                hasProfileEffect: U
+                                hasBanner: null != ei,
+                                isPremium: J,
+                                hasProfileEffect: K
                             }
                         }), {
-                            [W.reducedMotion]: !ei
+                            [j.reducedMotion]: !en
                         }),
-                        onMouseMove: () => et(!0),
-                        onMouseLeave: () => et(!1),
+                        onMouseMove: () => ee(!0),
+                        onMouseLeave: () => ee(!1),
                         style: {
-                            backgroundImage: ed ? "url(".concat(eu, ")") : void 0,
-                            backgroundColor: 2 !== K ? _.default.unsafe_rawColors.PRIMARY_800.css : eo
+                            backgroundImage: null != ei ? "url(".concat(ei, ")") : void 0,
+                            backgroundColor: er !== w.BannerLoadingStatus.COMPLETE ? u.default.unsafe_rawColors.PRIMARY_800.css : el
                         },
-                        children: [J ? null == q ? (0, s.jsx)(Q, {
-                            darkenOnHover: U && v,
-                            profileType: C,
-                            profileLabel: j.default.Messages.EDIT_PROFILE,
+                        children: [q ? null == Q ? (0, i.jsx)(X, {
+                            darkenOnHover: K && v,
+                            profileType: D,
+                            profileLabel: Y.default.Messages.EDIT_PROFILE,
                             icon: "pencil",
                             onClick: () => {
-                                $({
+                                Z({
                                     action: "EDIT_PROFILE"
-                                }), null == I || I(), eS()
+                                }), null == p || p(), eT()
                             }
-                        }) : (0, s.jsx)(c.Popout, {
+                        }) : (0, i.jsx)(d.Popout, {
                             spacing: 6,
                             position: "bottom",
                             renderPopout: e => {
                                 let {
                                     closePopout: t
                                 } = e;
-                                return (0, s.jsx)(V.default, {
+                                return (0, i.jsx)(F.default, {
                                     onClose: t,
-                                    onSelect: I,
-                                    guild: q
+                                    onSelect: p,
+                                    guild: Q
                                 })
                             },
-                            children: e => (0, s.jsx)(Q, {
-                                darkenOnHover: U && v,
-                                profileLabel: j.default.Messages.EDIT_PROFILE,
+                            children: e => (0, i.jsx)(X, {
+                                darkenOnHover: K && v,
+                                profileLabel: Y.default.Messages.EDIT_PROFILE,
                                 icon: "pencil",
                                 ...e,
-                                profileType: C
+                                profileType: D
                             })
-                        }) : P && ed && C !== x.UserProfileTypes.SETTINGS ? (0, s.jsx)(X, {
-                            type: C,
-                            shown: void 0 === v ? ee : v,
+                        }) : W && null != ei && D !== V.UserProfileTypes.SETTINGS ? (0, i.jsx)(z, {
+                            type: D,
+                            shown: void 0 === v ? $ : v,
                             onClick: () => {
-                                $({
+                                Z({
                                     action: "PRESS_PREMIUM_UPSELL"
-                                }), null == I || I()
+                                }), null == p || p()
                             }
-                        }) : null, ef ? C !== x.UserProfileTypes.MODAL ? null : (0, s.jsx)(c.Clickable, {
-                            onClick: I,
-                            "aria-label": j.default.Messages.BACK,
-                            className: W.pencilContainer,
-                            children: (0, s.jsx)(c.Tooltip, {
-                                text: j.default.Messages.BACK,
-                                children: e => (0, s.jsx)(D.default, {
+                        }) : null, eI ? D !== V.UserProfileTypes.MODAL ? null : (0, i.jsx)(d.Clickable, {
+                            onClick: p,
+                            "aria-label": Y.default.Messages.BACK,
+                            className: j.pencilContainer,
+                            children: (0, i.jsx)(d.Tooltip, {
+                                text: Y.default.Messages.BACK,
+                                children: e => (0, i.jsx)(g.default, {
                                     ...e,
-                                    className: W.closeIcon,
+                                    className: j.closeIcon,
                                     color: "white"
                                 })
                             })
-                        }) : null, !ei && (0, b.isAnimatedImageURL)(eu) && (0, s.jsx)(L.default, {
-                            className: W.gifTag
+                        }) : null, !en && (0, P.isAnimatedImageURL)(ei) && (0, i.jsx)(C.default, {
+                            className: j.gifTag
                         })]
                     })
                 })
@@ -197568,16 +197633,16 @@
             "use strict";
             n.r(t), n.d(t, {
                 BiteSizeProfileHeader: function() {
-                    return j
+                    return W
                 },
                 UserPopoutAvatar: function() {
-                    return H
+                    return Y
                 },
                 UserPopoutBadgeList: function() {
-                    return V
+                    return x
                 },
                 default: function() {
-                    return Y
+                    return j
                 }
             }), n("627341");
             var i = n("735250"),
@@ -197605,20 +197670,21 @@
                 C = n("785717"),
                 g = n("621853"),
                 L = n("204197"),
-                D = n("735336"),
-                v = n("793397"),
-                M = n("184325"),
-                y = n("747074"),
-                P = n("171368"),
-                U = n("228168"),
-                b = n("981631"),
-                G = n("474936"),
-                w = n("689938"),
-                k = n("181390");
-            let B = d.AvatarSizes.SIZE_80,
-                F = (0, E.getDecorationSizeForAvatarSize)(B);
+                D = n("78675"),
+                v = n("735336"),
+                M = n("793397"),
+                y = n("184325"),
+                P = n("747074"),
+                U = n("171368"),
+                b = n("228168"),
+                G = n("981631"),
+                w = n("474936"),
+                k = n("689938"),
+                B = n("181390");
+            let F = d.AvatarSizes.SIZE_80,
+                V = (0, E.getDecorationSizeForAvatarSize)(F);
 
-            function V(e) {
+            function x(e) {
                 let {
                     user: t,
                     guildId: n,
@@ -197627,25 +197693,25 @@
                 } = e, a = (0, l.useStateFromStores)([g.default], () => g.default.getUserProfile(t.id), [t]), o = (0, l.useStateFromStores)([A.default], () => A.default.getGuild(n), [n]), _ = (0, I.useClydeProfilesEnabled)(o);
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(null == a ? void 0 : a.profileFetchFailed) && (!t.isClyde() || _) && (0, i.jsx)(d.Tooltip, {
-                        text: w.default.Messages.USER_PROFILE_LOAD_ERROR,
+                        text: k.default.Messages.USER_PROFILE_LOAD_ERROR,
                         spacing: 16,
                         children: e => (0, i.jsx)(m.default, {
                             ...e,
-                            className: k.warningCircleIcon,
+                            className: B.warningCircleIcon,
                             color: u.default.unsafe_rawColors.YELLOW_300.css
                         })
-                    }), (0, i.jsx)(M.default, {
-                        className: s ? k.profileBadgesCompactNoTouch : k.profileBadges,
+                    }), (0, i.jsx)(y.default, {
+                        className: s ? B.profileBadgesCompactNoTouch : B.profileBadges,
                         user: t,
                         guildId: n,
                         isTryItOutFlow: r,
-                        size: M.BadgeSizes.SIZE_22
+                        size: y.BadgeSizes.SIZE_22
                     })]
                 })
             }
-            let x = R.default.getEnableHardwareAcceleration() ? d.AnimatedAvatar : d.Avatar;
+            let H = R.default.getEnableHardwareAcceleration() ? d.AnimatedAvatar : d.Avatar;
 
-            function H(e) {
+            function Y(e) {
                 let {
                     user: t,
                     displayProfile: n,
@@ -197662,8 +197728,8 @@
                     hasProfileEffect: m
                 } = e, {
                     profileTheme: R
-                } = r.useContext(y.UserProfileContext), g = r.useContext(O.AnalyticsContext), D = t.isNonUserBot() && !t.isClyde(), M = p.default.isPremiumAtLeast(null == n ? void 0 : n.premiumType, G.PremiumTypes.TIER_2), V = r.useMemo(() => (0, T.shouldDisableUserPresenceInChannel)(t, I), [t, I]), {
-                    analyticsLocations: H
+                } = r.useContext(P.UserProfileContext), g = r.useContext(O.AnalyticsContext), D = t.isNonUserBot() && !t.isClyde(), v = p.default.isPremiumAtLeast(null == n ? void 0 : n.premiumType, w.PremiumTypes.TIER_2), y = r.useMemo(() => (0, T.shouldDisableUserPresenceInChannel)(t, I), [t, I]), {
+                    analyticsLocations: x
                 } = (0, c.default)(), {
                     trackUserProfileAction: Y,
                     messageId: j,
@@ -197675,64 +197741,64 @@
                 } = (0, L.default)({
                     user: t,
                     guildId: E,
-                    size: B,
+                    size: F,
                     animateOnHover: h
                 }), q = (0, i.jsx)("div", {
-                    className: k.avatarHoverTarget,
+                    className: B.avatarHoverTarget,
                     ...Q,
-                    children: (0, i.jsx)(x, {
+                    children: (0, i.jsx)(H, {
                         src: null != s ? s : X,
                         avatarDecoration: z,
-                        size: B,
+                        size: F,
                         "aria-label": t.username,
-                        status: V ? b.StatusTypes.UNKNOWN : u,
-                        statusBackdropColor: null != R && M && !V ? (0, d.getStatusBackdropColor)(R) : void 0,
+                        status: y ? G.StatusTypes.UNKNOWN : u,
+                        statusBackdropColor: null != R && v && !y ? (0, d.getStatusBackdropColor)(R) : void 0,
                         isMobile: _,
                         statusTooltip: !0
                     })
-                }), J = (0, o.match)(A).with(U.UserProfileTypes.POPOUT, () => (0, v.buildGetPremiumUserBannerStyles)({
-                    premiumUserWithBanner: k.avatarPositionPremiumBanner,
-                    premiumUserWithoutBanner: k.avatarPositionPremiumNoBanner,
-                    default: k.avatarPositionNormal
+                }), J = (0, o.match)(A).with(b.UserProfileTypes.POPOUT, () => (0, M.buildGetPremiumUserBannerStyles)({
+                    premiumUserWithBanner: B.avatarPositionPremiumBanner,
+                    premiumUserWithoutBanner: B.avatarPositionPremiumNoBanner,
+                    default: B.avatarPositionNormal
                 })({
-                    isPremium: M,
+                    isPremium: v,
                     hasBanner: l,
                     hasProfileEffect: m
-                })).with(U.UserProfileTypes.POMELO_POPOUT, () => k.avatarPositionPomelo).with(U.UserProfileTypes.PANEL, () => k.avatarPositionPanel).exhaustive();
+                })).with(b.UserProfileTypes.POMELO_POPOUT, () => B.avatarPositionPomelo).with(b.UserProfileTypes.PANEL, () => B.avatarPositionPanel).exhaustive();
                 return (0, i.jsx)(i.Fragment, {
                     children: (0, i.jsxs)(d.Clickable, {
                         className: a()({
-                            [k.clickable]: !K,
-                            [k.avatarWrapperNonUserBot]: D,
-                            [k.avatarWrapperNormal]: !D
+                            [B.clickable]: !K,
+                            [B.avatarWrapperNonUserBot]: D,
+                            [B.avatarWrapperNormal]: !D
                         }, J),
                         onClick: D || K ? void 0 : function() {
                             Y({
                                 action: "PRESS_VIEW_PROFILE"
-                            }), (0, P.openUserProfileModal)({
+                            }), (0, U.openUserProfileModal)({
                                 userId: t.id,
                                 guildId: E,
                                 channelId: I,
                                 messageId: j,
                                 roleId: W,
-                                sourceAnalyticsLocations: H,
+                                sourceAnalyticsLocations: x,
                                 analyticsLocation: g.location
                             }), null == f || f()
                         },
                         children: [q, !K && function() {
                             let e = null != z,
-                                t = e ? F : (0, d.getAvatarSize)(B);
+                                t = e ? V : (0, d.getAvatarSize)(F);
                             return (0, i.jsx)(N.default, {
-                                mask: null == u || u === b.StatusTypes.UNKNOWN || V ? N.default.Masks.AVATAR_DEFAULT : (0, o.match)([e, _]).with([!0, !0], () => N.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_MOBILE_SQUARE_80).with([!0, !1], () => N.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_SQUARE_80).with([!1, !0], () => N.default.Masks.AVATAR_STATUS_MOBILE_80).with([!1, !1], () => N.default.Masks.AVATAR_STATUS_ROUND_80).exhaustive(),
-                                className: e ? k.avatarDecorationHint : k.avatarHint,
+                                mask: null == u || u === G.StatusTypes.UNKNOWN || y ? N.default.Masks.AVATAR_DEFAULT : (0, o.match)([e, _]).with([!0, !0], () => N.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_MOBILE_SQUARE_80).with([!0, !1], () => N.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_SQUARE_80).with([!1, !0], () => N.default.Masks.AVATAR_STATUS_MOBILE_80).with([!1, !1], () => N.default.Masks.AVATAR_STATUS_ROUND_80).exhaustive(),
+                                className: e ? B.avatarDecorationHint : B.avatarHint,
                                 style: e ? {
                                     borderRadius: .4 * t
                                 } : void 0,
                                 width: t,
                                 height: t,
                                 children: (0, i.jsx)("div", {
-                                    className: k.avatarHintInner,
-                                    children: w.default.Messages.VIEW_PROFILE
+                                    className: B.avatarHintInner,
+                                    children: k.default.Messages.VIEW_PROFILE
                                 })
                             })
                         }()]
@@ -197740,7 +197806,7 @@
                 })
             }
 
-            function Y(e) {
+            function j(e) {
                 let {
                     user: t,
                     displayProfile: n,
@@ -197756,12 +197822,12 @@
                     upsell: E
                 } = e;
                 return (0, i.jsxs)(i.Fragment, {
-                    children: [E, (0, i.jsx)(D.default, {
+                    children: [E, (0, i.jsx)(v.default, {
                         user: t,
                         displayProfile: n,
                         onClose: a,
                         guildId: r,
-                        profileType: U.UserProfileTypes.POPOUT,
+                        profileType: b.UserProfileTypes.POPOUT,
                         showPremiumBadgeUpsell: c,
                         isHovering: _,
                         hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null
@@ -197769,10 +197835,10 @@
                         profileEffectId: null == n ? void 0 : n.profileEffectId,
                         bannerAdjustment: 0,
                         isHovering: _
-                    }), (0, i.jsx)(H, {
+                    }), (0, i.jsx)(Y, {
                         user: t,
                         displayProfile: n,
-                        status: l ? b.StatusTypes.STREAMING : u,
+                        status: l ? G.StatusTypes.STREAMING : u,
                         isMobile: o,
                         guildId: r,
                         channelId: s,
@@ -197780,15 +197846,15 @@
                         disableUserProfileLink: d,
                         hasBanner: (null == n ? void 0 : n.banner) != null,
                         hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null,
-                        profileType: U.UserProfileTypes.POPOUT
-                    }), (0, i.jsx)(V, {
+                        profileType: b.UserProfileTypes.POPOUT
+                    }), (0, i.jsx)(x, {
                         user: t,
                         guildId: r
                     })]
                 })
             }
 
-            function j(e) {
+            function W(e) {
                 let {
                     user: t,
                     displayProfile: n,
@@ -197808,30 +197874,28 @@
                             let {
                                 type: n
                             } = t;
-                            return e ? n === b.ActivityTypes.PLAYING : n !== b.ActivityTypes.CUSTOM_STATUS
+                            return e ? n === G.ActivityTypes.PLAYING : n !== G.ActivityTypes.CUSTOM_STATUS
                         }),
                         status: d ? null : h.default.getStatus(t.id),
                         isMobile: h.default.isMobileOnline(t.id)
                     }
                 });
                 return (0, i.jsxs)("div", {
-                    className: k.biteSizeHeaderContainer,
+                    className: B.biteSizeHeaderContainer,
                     children: [(0, i.jsx)(D.default, {
                         user: t,
                         displayProfile: n,
-                        onClose: a,
                         guildId: r,
-                        profileType: U.UserProfileTypes.POPOUT,
-                        isHovering: u,
+                        profileType: b.UserProfileTypes.POPOUT,
                         hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null
                     }), (null == n ? void 0 : n.profileEffectId) != null && (0, i.jsx)(f.default, {
                         profileEffectId: null == n ? void 0 : n.profileEffectId,
                         bannerAdjustment: 0,
                         isHovering: u
-                    }), (0, i.jsx)(H, {
+                    }), (0, i.jsx)(Y, {
                         user: t,
                         displayProfile: n,
-                        status: (0, _.default)(c) ? b.StatusTypes.STREAMING : E,
+                        status: (0, _.default)(c) ? G.StatusTypes.STREAMING : E,
                         isMobile: I,
                         guildId: r,
                         channelId: s,
@@ -197839,7 +197903,7 @@
                         disableUserProfileLink: o,
                         hasBanner: (null == n ? void 0 : n.banner) != null,
                         hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null,
-                        profileType: U.UserProfileTypes.POPOUT
+                        profileType: b.UserProfileTypes.POPOUT
                     })]
                 })
             }
@@ -199526,6 +199590,48 @@
                     }
                 }
             }
+        },
+        888778: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                BannerLoadingStatus: function() {
+                    return i
+                },
+                default: function() {
+                    return l
+                }
+            }), n("47120");
+            var i, r, s = n("470079"),
+                a = n("695346"),
+                o = n("768581");
+
+            function l(e) {
+                let {
+                    displayProfile: t,
+                    size: n,
+                    canAnimate: i,
+                    overrideBannerSrc: r
+                } = e, l = a.GifAutoPlay.getSetting(), u = null != r ? r : null == t ? void 0 : t.getBannerURL({
+                    size: n,
+                    canAnimate: i
+                }), [d, _] = (0, s.useState)((null == t ? void 0 : t.banner) == null ? 2 : 0);
+                return (0, s.useEffect)(() => {
+                    if (null == u || 0 !== d) return;
+                    _(1);
+                    let e = new Image;
+                    e.src = u, e.onload = () => _(2)
+                }, [u, d]), (0, s.useEffect)(() => {
+                    if (l) return;
+                    let e = null != r ? r : null == t ? void 0 : t.getBannerURL({
+                        size: n,
+                        canAnimate: !0
+                    });
+                    if (null != e && !!(0, o.isAnimatedImageURL)(e)) new Image().src = e
+                }, [l, t, n, r]), {
+                    bannerSrc: u,
+                    status: d
+                }
+            }(r = i || (i = {}))[r.SHOULD_LOAD = 0] = "SHOULD_LOAD", r[r.LOADING = 1] = "LOADING", r[r.COMPLETE = 2] = "COMPLETE"
         },
         252532: function(e, t, n) {
             "use strict";
@@ -232571,7 +232677,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "44f1212e6ac937a934121f760d3228b6d6119b07"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "50a76cc5079529e14e49a582ccd0acb41993f63e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258664,7 +258770,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "283767"
+                                build_number: "283776"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265840,7 +265946,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "283767", "283767"), 10);
+                let s = parseInt((n = "283776", "283776"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292599,4 +292705,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.bb2c7a22d05e67042322.js.map
+//# sourceMappingURL=65573.c7009cdcd538f52c08d9.js.map
