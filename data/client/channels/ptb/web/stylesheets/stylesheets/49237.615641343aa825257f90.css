@@ -26917,7 +26917,7 @@ span.button_ae40a4.disabled__1dc58 {
 
     .locale__533cd {
         padding: 10px;
-        font-size: .875rem;
+        font-size: 14px;
         opacity: .8;
         display: flex;
         position: relative
@@ -26956,7 +26956,7 @@ span.button_ae40a4.disabled__1dc58 {
     position: absolute;
     top: 30px;
     left: 0;
-    font-size: .8125rem;
+    font-size: 13px;
     box-shadow: 0 1px 3px hsl(calc(1 * 0%), 0%-hsl / 0.1);
     box-shadow: 0 1px 3px hsl(var(0, calc(0%*var(--saturation-factor, 1)), 0%-hsl)/.1);
     overflow: hidden;
@@ -28183,4 +28183,4 @@ span.button_ae40a4.disabled__1dc58 {
     }
 }
 
-/*# sourceMappingURL=49237.188888bf88a236dfd41e.css.map*/
+/*# sourceMappingURL=49237.615641343aa825257f90.css.map*/
