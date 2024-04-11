@@ -88033,9 +88033,14 @@ html .tabBadge_ff691d {
     height: 100%
 }
 
-.badge__38d19 {
+.badgeDark__1b20d {
     background-color: var(--white-500);
     color: var(--black-500)
+}
+
+.badgeLight__5fbd1 {
+    background-color: var(--black-500);
+    color: var(--white-500)
 }
 
 .banner__1f369 {
@@ -88865,10 +88870,18 @@ html .tabBadge_ff691d {
     height: 0
 }
 
-.modalCloseButton__8de52 {
+.profilePreviewHeader__15f94 {
     position: absolute;
-    right: 16px;
     top: 16px;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.modalCloseButton__8de52 {
+    right: 16px;
     opacity: 1;
     color: var(--white-500)
 }
@@ -88879,7 +88892,8 @@ html .tabBadge_ff691d {
     padding: 20px;
     flex-direction: column;
     justify-content: space-between;
-    width: 276px
+    width: 276px;
+    background-color: var(--background-floating)
 }
 
 .collectiblePreviewsContainer__729b9 {
@@ -88921,6 +88935,26 @@ html .tabBadge_ff691d {
     justify-content: center;
     align-items: center;
     margin-bottom: 64px
+}
+
+.pfxPreviewContainer__6eda3 {
+    align-self: center;
+    height: 245px;
+    width: 148px;
+    margin-bottom: 24px;
+    position: relative
+}
+
+.sampleProfileAsset__4d996 {
+    width: 100%
+}
+
+.staticPfxPreview__9aa70 {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px
 }
 
 .chatPreview__8e939 {
@@ -88973,12 +89007,14 @@ html .tabBadge_ff691d {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 64px
+    margin-bottom: 24px
+}
+
+.titleImageContainer__66fa1 {
+    margin-left: 16px
 }
 
 .titleImage_d36f3f {
-    padding-right: 6px;
-    padding-top: 4px;
     max-height: 25px;
     max-width: 120px
 }
@@ -89015,6 +89051,10 @@ html .tabBadge_ff691d {
 .disclaimer_cc94bc {
     margin-top: 8px;
     color: var(--primary-230)
+}
+
+.disclaimerLight__82b3e {
+    color: var(--text-muted)
 }
 
 .premiumIcon__355c8 {
@@ -132095,4 +132135,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.a22e2965a9e4d3da4050.css.map*/
+/*# sourceMappingURL=99387.7247d9fe546549bd54ef.css.map*/
