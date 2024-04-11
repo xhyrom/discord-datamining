@@ -10629,12 +10629,13 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     display: -webkit-inline-box !important;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
+    word-break: break-all;
     width: 100%
 }
 
 .repliedTextPreview__1a8a4 {
-    text-overflow: ellipsis;
-    display: flex
+    display: flex;
+    max-height: 1.25em
 }
 
 .repliedTextPreview__1a8a4 .emoji {
@@ -10660,12 +10661,15 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     color: inherit;
     font-size: inherit;
     line-height: inherit;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     pointer-events: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none
+}
+
+.threadMessageAccessory_ef0459 .threadMessageAccessoryPreview__58ff3 .threadMessageAccessoryContent__42312 {
+    white-space: nowrap;
+    text-overflow: ellipsis
 }
 
 .repliedMessage__636d2 .repliedTextPreview__1a8a4 .repliedTextContent_b12fe1 code,
@@ -15116,12 +15120,8 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 .markup_a7e664.inlineFormat__5222c li,
 .markup_a7e664 .inlineFormat__5222c li {
     display: inline;
-    display: -webkit-inline-box;
     margin: 0;
-    padding-right: 8px;
-    white-space: normal;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical
+    padding-right: 8px
 }
 
 .markup_a7e664.inlineFormat__5222c li:before,
@@ -15152,7 +15152,6 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 .markup_a7e664 ul.inlineFormat__5222c,
 .markup_a7e664 ol.inlineFormat__5222c {
     display: inline;
-    display: -webkit-inline-box;
     margin: 0;
     padding: 0 8px 0 0
 }
@@ -28183,4 +28182,4 @@ span.button_ae40a4.disabled__1dc58 {
     }
 }
 
-/*# sourceMappingURL=49237.de3d0e29349ad40de828.css.map*/
+/*# sourceMappingURL=49237.c9f5768fa1b1e697bfc2.css.map*/
