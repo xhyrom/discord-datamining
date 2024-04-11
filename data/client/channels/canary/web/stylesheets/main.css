@@ -50791,8 +50791,8 @@ html .progress__00e29 {
 .errorState_c6cca2 {
     padding: 20px 20px 40px;
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center
 }
 
@@ -50854,7 +50854,7 @@ html .progress__00e29 {
 
 .confirmChannelName_a42e11 {
     font-weight: 500;
-    font-size: .875rem;
+    font-size: 14px;
     margin-left: 8px;
     color: var(--header-primary)
 }
@@ -50862,7 +50862,7 @@ html .progress__00e29 {
 .lastActiveTimestamp_d49b9c {
     margin-left: 8px;
     color: var(--text-muted);
-    font-size: .75rem;
+    font-size: 12px;
     margin-top: 2px
 }
 
@@ -132095,4 +132095,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.5f67e1d30b321bc8689b.css.map*/
+/*# sourceMappingURL=99387.a22e2965a9e4d3da4050.css.map*/
