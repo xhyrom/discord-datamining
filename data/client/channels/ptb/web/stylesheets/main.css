@@ -6211,7 +6211,7 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .title__63238 {
-    font-size: 17px
+    font-size: 1.0625rem
 }
 
 .developerResources__8ef1d:hover {
@@ -6242,8 +6242,8 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .backHeader_cff6da {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     color: var(--interactive-normal)
 }
 
@@ -60499,7 +60499,7 @@ html .progress__00e29 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 16px;
     gap: 4px
 }
 
@@ -132868,4 +132868,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.06124711e9d4b4f249ca.css.map*/
+/*# sourceMappingURL=99387.00095805e931120655d0.css.map*/
