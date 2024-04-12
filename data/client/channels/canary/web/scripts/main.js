@@ -36558,7 +36558,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284150", ", Version Hash: ").concat("6cb8c53b76b232b1d44650d54c052cc3011129f4")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284151", ", Version Hash: ").concat("7ea66a7aa5942b0635945813633fd5285f19f31b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -64525,7 +64525,7 @@
                     }() && !d.default.keyboardNavigationExplainerModalSeen && 0 === A && (0, r.openModalLazy)(async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("99387"), n.e("6380"), n.e("73872")]).then(n.bind(n, "461964"));
+                        } = await Promise.all([n.e("99387"), n.e("6380"), n.e("56181")]).then(n.bind(n, "461964"));
                         return t => (0, i.jsx)(e, {
                             ...t
                         })
@@ -86424,8 +86424,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284150", "284150"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284150")), t = 0), t
+                let t = parseInt((e = "284151", "284151"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284151")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -108789,8 +108789,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284150",
-                    versionHash: "6cb8c53b76b232b1d44650d54c052cc3011129f4"
+                    buildNumber: "284151",
+                    versionHash: "7ea66a7aa5942b0635945813633fd5285f19f31b"
                 }
             }
             n.r(t), n.d(t, {
@@ -133197,7 +133197,7 @@
                 let C = await (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("14720"), n.e("63438"), n.e("62511"), n.e("61247"), n.e("58600"), n.e("8016"), n.e("22646"), n.e("54999"), n.e("57743")]).then(n.bind(n, "343649"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("14720"), n.e("63438"), n.e("62511"), n.e("61247"), n.e("58600"), n.e("8016"), n.e("22646"), n.e("80593"), n.e("87221")]).then(n.bind(n, "343649"));
                     return n => {
                         let {
                             transitionState: r,
@@ -158319,8 +158319,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712939525292",
-                                    build_number: "284150"
+                                    built_at: "1712939597736",
+                                    build_number: "284151"
                                 }
                             },
                             retries: 1
@@ -163915,7 +163915,7 @@
                 (0, s.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("6416"), n.e("14720"), n.e("63438"), n.e("62511"), n.e("61247"), n.e("58600"), n.e("32776"), n.e("57878"), n.e("8016"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("34853")]).then(n.bind(n, "7305"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("6416"), n.e("14720"), n.e("63438"), n.e("62511"), n.e("61247"), n.e("58600"), n.e("32776"), n.e("3975"), n.e("8016"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("44799")]).then(n.bind(n, "7305"));
                     return n => {
                         let {
                             onClose: r,
@@ -164017,7 +164017,7 @@
                         PaymentContextProvider: e
                     } = await Promise.resolve().then(n.bind(n, "598")), a = (await Promise.all([n.e("49237"), n.e("99387"), n.e("15972"), n.e("6416"), n.e("32776"), n.e("10993")]).then(n.bind(n, "405083"))).default, {
                         getApplicationPaymentSteps: c
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("58625"), n.e("14720"), n.e("63438"), n.e("62511"), n.e("61247"), n.e("58600"), n.e("95900"), n.e("47379")]).then(n.bind(n, "759386")), O = c({
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("58625"), n.e("14720"), n.e("63438"), n.e("62511"), n.e("61247"), n.e("58600"), n.e("3975"), n.e("95900"), n.e("52489")]).then(n.bind(n, "759386")), O = c({
                         guildId: T,
                         showBenefitsFirst: A,
                         eligibleApplicationSubscriptionGuilds: h
@@ -166198,8 +166198,11 @@
                 ACTIVE_PREMIUM_SKUS: function() {
                     return W
                 },
+                ANNUAL_DISCOUNT_IDS: function() {
+                    return ey
+                },
                 AllSeasonalGiftStyles: function() {
-                    return eW
+                    return eX
                 },
                 AnalyticsPremiumFeatureNames: function() {
                     return d
@@ -166211,13 +166214,13 @@
                     return ed
                 },
                 BoostedGuildFeatures: function() {
-                    return eG
+                    return eB
                 },
                 BoostingUpsellAction: function() {
                     return h
                 },
                 CUSTOM_GIFT_MESSAGE_MAX_LENGTH: function() {
-                    return eK
+                    return eQ
                 },
                 DEFAULT_APPLE_GRACE_PERIOD_DAYS: function() {
                     return es
@@ -166229,13 +166232,13 @@
                     return er
                 },
                 DISCOUNTS: function() {
-                    return ek
+                    return eV
                 },
                 DISCOUNT_DURATION_FALLBACK: function() {
-                    return ez
+                    return eq
                 },
                 DISCOUNT_PERCENTAGE_FALLBACK: function() {
-                    return eX
+                    return eJ
                 },
                 DiscountUserUsageLimitIntervalTypes: function() {
                     return o
@@ -166247,13 +166250,13 @@
                     return f
                 },
                 IncrementalStickerCountsByTier: function() {
-                    return eP
+                    return eG
                 },
                 LegacyPricingCountries: function() {
-                    return ex
+                    return ej
                 },
                 LegacySeasonalGiftStyles: function() {
-                    return eH
+                    return eW
                 },
                 MAX_ACCOUNT_HOLD_DAYS: function() {
                     return eu
@@ -166262,7 +166265,7 @@
                     return eE
                 },
                 MAX_PREMIUM_TIER_0_ATTACHMENT_SIZE: function() {
-                    return ey
+                    return eb
                 },
                 MULTI_MONTH_PLANS: function() {
                     return q
@@ -166271,7 +166274,7 @@
                     return ei
                 },
                 ORDERED_PREMIUM_SUBSCRIPTION_PLANS: function() {
-                    return ew
+                    return eF
                 },
                 PAID_SUBSCRIPTION_MAX_BILLING_RETRY_DAYS: function() {
                     return el
@@ -166302,6 +166305,12 @@
                 },
                 PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID: function() {
                     return eO
+                },
+                PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID: function() {
+                    return eM
+                },
+                PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID: function() {
+                    return ev
                 },
                 PREMIUM_TIER_2_AUTH3_TRIAL_ID: function() {
                     return em
@@ -166376,10 +166385,10 @@
                     return l
                 },
                 PremiumUserLimits: function() {
-                    return eV
+                    return eY
                 },
                 PromotionFlags: function() {
-                    return eF
+                    return eH
                 },
                 PurchasedFlags: function() {
                     return u
@@ -166388,22 +166397,22 @@
                     return m
                 },
                 SKU_ID_PURCHASED_FLAGS: function() {
-                    return eM
+                    return eU
                 },
                 STANDARD_GIFT_OPTIONS: function() {
-                    return eY
+                    return eK
                 },
                 STICKERS_GIFT_CODE_BATCH_ID: function() {
                     return e_
                 },
                 SeasonalGiftStyles2023: function() {
-                    return ej
+                    return ez
                 },
                 StreamQualities: function() {
                     return c
                 },
                 StreamQualitiesToPremiumType: function() {
-                    return eB
+                    return ex
                 },
                 SubscriptionIntervalTypes: function() {
                     return a
@@ -166415,13 +166424,13 @@
                     return s
                 },
                 SubscriptionTrials: function() {
-                    return ev
+                    return eP
                 },
                 TotalSoundboardSoundCountsByTier: function() {
-                    return eb
+                    return ek
                 },
                 TotalStickerCountsByTier: function() {
-                    return eU
+                    return ew
                 },
                 UNSELECTED_PREMIUM_TYPE_OVERRIDE: function() {
                     return x
@@ -166651,7 +166660,10 @@
                 eg = "1204867673024888832",
                 eL = "1215346678383509504",
                 eD = "1215366184820539392",
-                ev = Object.freeze({
+                ev = "1223319122125783040",
+                eM = "1223380890109870080",
+                ey = [ev, eM],
+                eP = Object.freeze({
                     [eI]: {
                         id: eI,
                         skus: ["521847234246082599"]
@@ -166690,32 +166702,32 @@
                     }
                 });
             (g = l || (l = {})).ANIMATED_GUILD_BANNER_TOOLTIP = "animated_guild_banner_tooltip", g.EMOJI_PICKER_SEARCH = "emoji_picker_search", g.EMOJI_PICKER_EMOJI_CLICKED = "emoji_picker_emoji_clicked", g.EMOJI_PICKER_STICKER_CLICKED = "emoji_picker_sticker_clicked", g.EMOJI_PICKER_REACTION_EMOJI_CLICKED = "emoji_picker_reaction_emoji_clicked", g.EMOJI_PICKER_SUPER_REACTION_EMOJI_CLICKED = "emoji_picker_super_reaction_emoji_clicked", g.EMOJI_PICKER_STATUS_EMOJI_CLICKED = "emoji_picker_status_emoji_clicked", g.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED = "emoji_picker_top_server_emoji_clicked", g.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED = "emoji_picker_newly_added_emoji_clicked", g.EMOJI_AUTOSUGGEST_CLICKED = "emoji_autosuggest_clicked", g.EMOJI_AUTOCOMPLETE_INLINE = "emoji_autocomplete_inline", g.EMOJI_AUTOCOMPLETE_MODAL = "emoji_autocomplete_modal", g.EMOJI_IN_MESSAGE_HOVER = "emoji_in_message_hover", g.EMOJI_IN_REACTION_HOVER = "emoji_in_reaction_hover", g.EMOJI_IN_BURST_REACTION_HOVER = "emoji_in_burst_reaction_hover", g.EMOJI_IN_BURST_REACTION_HOVER_UPSELL = "emoji_in_burst_reaction_hover_upsell", g.EMOJI_PICKER_FLOATING_UPSELL = "emoji_picker_floating_upsell", g.STICKER_IN_MESSAGE_HOVER = "sticker_in_message_hover", g.EMPTY_STICKER_PICKER_UPSELL = "empty_sticker_picker_upsell", g.STREAM_QUALITY_INDICATOR = "stream_quality_indicator", g.GIFT_STREAM_QUALITY_INDICATOR = "gift_stream_quality_indicator", g.STREAM_QUALITY_UPSELL = "stream_quality_upsell", g.MESSAGE_LENGTH_UPSELL = "message_length_upsell", g.MESSAGE_LENGTH_IN_EDITOR_UPSELL = "message_length_in_editor_upsell", g.CUSTOM_PROFILE_UPSELL = "custom profiles upsell modal", g.CUSTOM_PROFILE_TRY_OUT_UPSELL = "try out custom profile in settings upsell", g.VIDEO_BACKGROUNDS_MODAL = "video backgrounds modal", g.VIDEO_BACKGROUNDS_INLINE = "video backgrounds inline", g.GUILD_CAP_INLINE_SERVER_LIST = "guild_cap_inline_server_list", g.GUILD_PREMIUM_UPSELL_MODAL = "premium guild premium upsell modal", g.GUILD_CAP_INLINE_INVITE_MODAL = "guild_cap_inline_invite_modal", g.GUILD_CAP_MODAL_UPSELL = "guild_cap_modal_upsell", g.PREMIUM_GUILD_IDENTITY_MODAL = "premium guild identity upsell alert", g.CUSTOM_PROFILE_SETTINGS_BANNER_BUTTON = "custom profiles settings banner upsell", g.CUSTOM_PROFILES_PROFILE_BANNER_SOCIAL_UPSELL = "custom profiles profile banner social upsell", g.STICKER_PICKER_UPSELL = "sticker_picker_upsell", g.ANIMATED_AVATAR_PREVIEW_GIF_MODAL = "animated avatar preview gif modal", g.PREMIUM_PROGRESS_BAR = "premium_progress_bar_tooltip", g.INVITE_SPLASH_UPSELL = "premium_invite_splash_upsell", g.ANIMATED_USER_AVATAR_MODAL = "animated user avatar upsell modal", g.UPLOAD_ERROR_UPSELL = "upload error upsell", g.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE = "premium guild member profile upsell inline", g.CONCURRENT_ACTIVITIES = "Concurrent Activities", g.PREMIUM_UNCANCEL_WINBACK_MODAL_VIEWED = "premium_uncancel_winback_modal_viewed", g.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET = "animated_video_background_new_preset", g.LOW_PRICE_EXPERIMENT_TOOLTIP = "low_price_experiment_tooltip", g.PREMIUM_PROFILE_BADGE_UPSELL = "premium_profile_badge_upsell", g.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI = "emoji", g.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_PROFILE_CUSTOMIZATION = "profile customization", g.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_HD_STREAMING = "hd streaming", g.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_LARGER_FILE_UPLOADS = "larger file uploads", g.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_BOGO = "bogo", g.VOICE_CHANNEL_EFFECTS_UPSELL = "voice_channel_effects_upsell", g.VOICE_CHANNEL_EFFECTS_BAR_EMOJI_UPSELL = "Voice Channel Effect Bar Emoji Upsell", g.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED = "voice_channel_effects_toggle_clicked", g.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED = "voice_channel_effects_toggle_clicked_expanded", g.PROFILE_THEME_UPSELL_MODAL = "profile_theme_upsell_modal", g.PROFILE_EFFECTS_INLINE_SETTINGS = "profile_effects_inline_settings", g.PROFILE_EFFECTS_INLINE_SETTINGS_MOBILE = "profile_effects_inline_settings_mobile", g.HIGH_VIDEO_QUALITY_UPSELL = "high_video_quality_upsell", g.PREMIUM_PROFILE_TRY_IT_OUT = "premium_profile_try_it_out", g.BURST_REACTION_RAIL_UPSELL = "burst_reaction_rail_upsell", g.BURST_REACTION_UPSELL = "burst_reaction_upsell", g.BURST_REACTION_QUICK_ACTION_UPSELL = "burst_reaction_quick_action_upsell", g.BURST_REACTION_CONTEXT_MENU_UPSELL = "burst_reaction_context_menu_upsell", g.PREMIUM_CLIENT_THEME_TRY_IT_OUT = "premium_client_theme_try_it_out", g.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL = "premium_client_theme_settings_upsell", g.VIDEO_STAGE_LIMIT = "video_stage_limit", g.SOUND_PICKER_SOUND_CLICKED = "sound_picker_sound_clicked", g.APP_ICON_UPSELL = "app_icon_upsell", g.COLLECTIBLES_SHOP = "collectibles_shop", g.COLLECTIBLES_PROFILE_SETTINGS_UPSELL = "collectibles_profile_settings_upsell", g.COLLECTIBLES_PREMIUM_MARKETING_PAGE_UPSELL = "collectibles_premium_marketing_page_upsell", g.CLIPS_GUILD_SIDEBAR_COACHMARK_PREMIUM_EARLY_ACCESS_UPSELL = "clips_guild_sidebar_coachmark_premium_early_access_upsell", g.CLIPS_GO_LIVE_PREMIUM_EARLY_ACCESS_ROADBLOCK_UPSELL = "clips_go_live_premium_early_access_roadblock_upsell", (L = u || (u = {}))[L.PREMIUM_TIER_1 = 1] = "PREMIUM_TIER_1", L[L.PREMIUM_TIER_2 = 2] = "PREMIUM_TIER_2", L[L.GUILD_BOOST = 4] = "GUILD_BOOST", L[L.PREMIUM_TIER_0 = 8] = "PREMIUM_TIER_0";
-            let eM = Object.freeze({
+            let eU = Object.freeze({
                     "978380684370378762": 8,
                     "521846918637420545": 1,
                     "521847234246082599": 2,
                     "590663762298667008": 4
                 }),
-                ey = 52428800,
-                eP = {
+                eb = 52428800,
+                eG = {
                     [F.BoostedGuildTiers.NONE]: 5,
                     [F.BoostedGuildTiers.TIER_1]: 10,
                     [F.BoostedGuildTiers.TIER_2]: 15,
                     [F.BoostedGuildTiers.TIER_3]: 30
                 },
-                eU = {
-                    [F.BoostedGuildTiers.NONE]: eP[F.BoostedGuildTiers.NONE],
-                    [F.BoostedGuildTiers.TIER_1]: eP[F.BoostedGuildTiers.NONE] + eP[F.BoostedGuildTiers.TIER_1],
-                    [F.BoostedGuildTiers.TIER_2]: eP[F.BoostedGuildTiers.NONE] + eP[F.BoostedGuildTiers.TIER_1] + eP[F.BoostedGuildTiers.TIER_2],
-                    [F.BoostedGuildTiers.TIER_3]: eP[F.BoostedGuildTiers.NONE] + eP[F.BoostedGuildTiers.TIER_1] + eP[F.BoostedGuildTiers.TIER_2] + eP[F.BoostedGuildTiers.TIER_3]
+                ew = {
+                    [F.BoostedGuildTiers.NONE]: eG[F.BoostedGuildTiers.NONE],
+                    [F.BoostedGuildTiers.TIER_1]: eG[F.BoostedGuildTiers.NONE] + eG[F.BoostedGuildTiers.TIER_1],
+                    [F.BoostedGuildTiers.TIER_2]: eG[F.BoostedGuildTiers.NONE] + eG[F.BoostedGuildTiers.TIER_1] + eG[F.BoostedGuildTiers.TIER_2],
+                    [F.BoostedGuildTiers.TIER_3]: eG[F.BoostedGuildTiers.NONE] + eG[F.BoostedGuildTiers.TIER_1] + eG[F.BoostedGuildTiers.TIER_2] + eG[F.BoostedGuildTiers.TIER_3]
                 },
-                eb = {
+                ek = {
                     [F.BoostedGuildTiers.NONE]: 8,
                     [F.BoostedGuildTiers.TIER_1]: 24,
                     [F.BoostedGuildTiers.TIER_2]: 36,
                     [F.BoostedGuildTiers.TIER_3]: 48
                 },
-                eG = Object.freeze({
+                eB = Object.freeze({
                     [F.BoostedGuildTiers.NONE]: {
                         features: [],
                         limits: {
@@ -166724,9 +166736,9 @@
                             fileSize: F.MAX_ATTACHMENT_SIZE,
                             screenShareQualityFramerate: 30,
                             screenShareQualityResolution: "720p",
-                            soundboardSounds: eb[F.BoostedGuildTiers.NONE],
+                            soundboardSounds: ek[F.BoostedGuildTiers.NONE],
                             maxConcurrentActivities: 2,
-                            stickers: eU[F.BoostedGuildTiers.NONE],
+                            stickers: ew[F.BoostedGuildTiers.NONE],
                             stageVideoUsers: F.MAX_STAGE_VIDEO_USER_LIMIT_TIER01
                         }
                     },
@@ -166738,9 +166750,9 @@
                             fileSize: F.MAX_ATTACHMENT_SIZE,
                             screenShareQualityFramerate: 60,
                             screenShareQualityResolution: "720p",
-                            soundboardSounds: eb[F.BoostedGuildTiers.TIER_1],
+                            soundboardSounds: ek[F.BoostedGuildTiers.TIER_1],
                             maxConcurrentActivities: 3,
-                            stickers: eU[F.BoostedGuildTiers.TIER_1],
+                            stickers: ew[F.BoostedGuildTiers.TIER_1],
                             stageVideoUsers: F.MAX_STAGE_VIDEO_USER_LIMIT_TIER01
                         }
                     },
@@ -166752,9 +166764,9 @@
                             fileSize: 52428800,
                             screenShareQualityFramerate: 60,
                             screenShareQualityResolution: "1080p",
-                            soundboardSounds: eb[F.BoostedGuildTiers.TIER_2],
+                            soundboardSounds: ek[F.BoostedGuildTiers.TIER_2],
                             maxConcurrentActivities: 5,
-                            stickers: eU[F.BoostedGuildTiers.TIER_2],
+                            stickers: ew[F.BoostedGuildTiers.TIER_2],
                             stageVideoUsers: F.MAX_STAGE_VIDEO_USER_LIMIT_TIER2
                         }
                     },
@@ -166766,16 +166778,16 @@
                             fileSize: 104857600,
                             screenShareQualityFramerate: 60,
                             screenShareQualityResolution: "1080p",
-                            soundboardSounds: eb[F.BoostedGuildTiers.TIER_3],
+                            soundboardSounds: ek[F.BoostedGuildTiers.TIER_3],
                             maxConcurrentActivities: Number.MAX_SAFE_INTEGER,
-                            stickers: eU[F.BoostedGuildTiers.TIER_3],
+                            stickers: ew[F.BoostedGuildTiers.TIER_3],
                             stageVideoUsers: F.MAX_STAGE_VIDEO_USER_LIMIT_TIER3
                         }
                     }
                 }),
-                ew = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
+                eF = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
             (D = d || (d = {})).SOUNDBOARD_PLAY = "soundboard play", D.PROFILE_THEME_COLOR = "profile_theme_color", D.PROFILE_BANNER = "profile_banner", D.ANIMATED_AVATAR = "animated_avatar", D.AVATAR_DECORATION = "avatar_decoration", D.CLIENT_THEME = "client_theme", D.SHARED_CANVAS = "shared_canvas", D.PROFILE_EFFECT = "profile_effect", (v = _ || (_ = {})).FREE = "free", v.PREMIUM_STANDARD = "premium-standard";
-            let ek = {
+            let eV = {
                 "1024422698568122368": 16,
                 "511651876987469824": 16,
                 "511651885459963904": 16,
@@ -166783,19 +166795,19 @@
                 "642251038925127690": 5
             };
             (M = c || (c = {})).HIGH_STREAMING_QUALITY = "high_streaming_quality", M.MID_STREAMING_QUALITY = "mid_streaming_quality";
-            let eB = Object.freeze({
+            let ex = Object.freeze({
                 high_streaming_quality: 2,
                 mid_streaming_quality: 1
             });
             (y = E || (E = {}))[y.UserSettings = 0] = "UserSettings", y[y.ApplicationStoreHome = 1] = "ApplicationStoreHome", (P = I || (I = {}))[P.DEFAULT = 0] = "DEFAULT", P[P.WINTER = 1] = "WINTER", (U = T || (T = {}))[U.SNOWGLOBE = 1] = "SNOWGLOBE", U[U.BOX = 2] = "BOX", U[U.CUP = 3] = "CUP", U[U.STANDARD_BOX = 4] = "STANDARD_BOX", U[U.CAKE = 5] = "CAKE", U[U.CHEST = 6] = "CHEST", U[U.COFFEE = 7] = "COFFEE", U[U.SEASONAL_STANDARD_BOX = 8] = "SEASONAL_STANDARD_BOX", U[U.SEASONAL_CAKE = 9] = "SEASONAL_CAKE", U[U.SEASONAL_CHEST = 10] = "SEASONAL_CHEST", U[U.SEASONAL_COFFEE = 11] = "SEASONAL_COFFEE", (b = f || (f = {})).USER_NOT_VERIFIED = "user_not_verified", b.NO_CODE_BODY = "no_code_body", b.NO_PROMOTION = "no_promotion", b.CODE_CLAIMED = "code_claimed", b.EXISTING_SUBSCRIBER = "existing_subscriber", b.PREVIOUS_SUBSCRIBER = "previous_subscriber", b.BLOCKED_PAYMENT = "blocked_payment";
-            let eF = Object.freeze({
+            let eH = Object.freeze({
                     IS_BLOCKED_IOS: 32,
                     IS_OUTBOUND_REDEEMABLE_BY_TRIAL_USERS: 64,
                     SUPPRESS_NOTIFICATION: 128
                 }),
-                eV = Object.freeze({
+                eY = Object.freeze({
                     3: {
-                        fileSize: ey
+                        fileSize: eb
                     },
                     1: {
                         fileSize: 52428800
@@ -166805,14 +166817,14 @@
                     }
                 });
             (G = S || (S = {})).EXPLORE_ALL_PERKS_CLICKED = "explore_all_perks_clicked", G.HELPER_COLLAPSED = "helper_collapsed", G.HELPER_UNCOLLAPSED = "helper_uncollapsed", G.UNLOCK_EMOJI_CLICKED = "unlock_emoji_clicked", G.CUSTOM_PROFILES_CLICKED = "custom_profiles_clicked", G.SERVER_BOOSTS_CLICKED = "server_boosts_clicked", G.HELPER_DISMISSED = "premium_feature_helper_dismissed", G.HELPER_RENDERED = "premium_feature_helper_rendered", (w = A || (A = {})).EMOJI_TUTORIAL_STARTED = "emoji_tutorial_started", w.EMOJI_INTRO_VIEWED = "emoji_intro_viewed", w.EMOJI_PROMPT_VIEWED = "emoji_prompt_viewed", w.CUSTOM_PROFILE_TUTORIAL_STARTED = "custom_profile_tutorial_started", w.CUSTOM_PROFILE_AVATAR_INTRO_VIEWED = "custom_profile_avatar_intro_viewed", w.CUSTOM_PROFILE_AVATAR_DECORATIONS_VIEWED = "custom_profile_avatar_decorations_viewed", w.CUSTOM_PROFILE_BANNER_INTRO_VIEWED = "custom_profile_banner_intro_viewed", w.CUSTOM_PROFILE_THEME_INTRO_VIEWED = "custom_profile_theme_intro_viewed", w.SERVER_PROFILE_INTRO_VIEWED = "server_profile_intro_viewed", w.SERVER_BOOST_TUTORIAL_STARTED = "server_boost_tutorial_started", w.BOOST_INTRO_VIEWED = "boost_intro_viewed", w.BOOST_PROMPT_VIEWED = "boost_prompt_viewed", (k = h || (h = {})).BOOST = "boost", k.DISMISS = "dismiss", (B = m || (m = {})).BADGE_TOOLTIP_VIEWED = "share_nitro_bagde_tooltip_viewed", B.BADGE_CLICKED = "share_nitro_badge_clicked", B.FLOW_STARTED = "share_nitro_flow_started", B.FLOW_COMPLETED = "share_nitro_flow_completed";
-            let ex = new Set(["PL", "TR"]),
-                eH = [1, 2, 3],
-                eY = [4, 5, 7, 6],
-                ej = [8, 9, 11, 10],
-                eW = ej.concat(eH),
-                eK = 190,
-                ez = 3,
-                eX = 30
+            let ej = new Set(["PL", "TR"]),
+                eW = [1, 2, 3],
+                eK = [4, 5, 7, 6],
+                ez = [8, 9, 11, 10],
+                eX = ez.concat(eW),
+                eQ = 190,
+                eq = 3,
+                eJ = 30
         },
         479446: function(e, t, n) {
             "use strict";
@@ -230019,6 +230031,7 @@
             }
             let _ = {
                     userOffersLastFetchedAtDate: void 0,
+                    userAnnualOfferLastFetchedAtDate: void 0,
                     userTrialOffers: {},
                     userDiscountOffers: {},
                     userDiscounts: void 0
@@ -230026,7 +230039,7 @@
                 c = _;
 
             function E() {
-                c.userTrialOffers = {}, c.userDiscountOffers = {}, c.userOffersLastFetchedAtDate = void 0
+                c.userTrialOffers = {}, c.userDiscountOffers = {}, c.userOffersLastFetchedAtDate = void 0, c.userAnnualOfferLastFetchedAtDate = void 0
             }
             let I = () => !0;
 
@@ -230055,6 +230068,10 @@
                     let e = c.userOffersLastFetchedAtDate;
                     return null == e || Date.now() - 1728e5 > e
                 }
+                shouldFetchAnnualOffer() {
+                    let e = c.userAnnualOfferLastFetchedAtDate;
+                    return null == e || Date.now() - 1728e5 > e
+                }
                 getAlmostExpiringTrialOffers(e) {
                     let t = Object.values(u.SubscriptionTrials).map(e => e.id),
                         n = a.default.getCurrentUser();
@@ -230067,7 +230084,7 @@
                 getUnacknowledgedDiscountOffers() {
                     var e;
                     let t = a.default.getCurrentUser();
-                    return (0, o.isPremium)(t) ? [] : Object.values(null !== (e = c.userDiscountOffers) && void 0 !== e ? e : {}).filter(e => null == e.expires_at)
+                    return (0, o.isPremium)(t) ? [] : Object.values(null !== (e = c.userDiscountOffers) && void 0 !== e ? e : {}).filter(e => null == e.expires_at && !u.ANNUAL_DISCOUNT_IDS.includes(e.discount_id))
                 }
                 getUnacknowledgedOffers(e) {
                     let t = a.default.getCurrentUser();
@@ -230093,6 +230110,11 @@
                     ...e,
                     userDiscountOffers: t
                 }
+            }, e => {
+                if (null != e) return (null == e ? void 0 : e.userAnnualOfferLastFetchedAtDate) == null ? {
+                    ...e,
+                    userAnnualOfferLastFetchedAtDate: void 0
+                } : e
             }]), t.default = new f(s.default, {
                 BILLING_USER_TRIAL_OFFER_FETCH_SUCCESS: function(e) {
                     let {
@@ -230114,6 +230136,12 @@
                     } = e;
                     null == t && null == n && null == i && E(), null != t ? (c.userTrialOffers[t.trial_id] = t, c.userDiscountOffers = {}) : null != n ? (c.userDiscountOffers[n.discount_id] = n, c.userTrialOffers = {}) : null != i && (c.userDiscountOffers[i.discount_id] = i, c.userTrialOffers = {}), c.userOffersLastFetchedAtDate = Date.now()
                 },
+                BILLING_ANNUAL_USER_OFFER_FETCH_SUCCESS: function(e) {
+                    let {
+                        userDiscountOffer: t
+                    } = e;
+                    delete c.userDiscountOffers[u.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID], delete c.userDiscountOffers[u.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID], null != t && (c.userDiscountOffers[t.discount_id] = t), c.userAnnualOfferLastFetchedAtDate = Date.now()
+                },
                 BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS: function(e) {
                     let {
                         userTrialOffer: t,
@@ -230124,6 +230152,9 @@
                 },
                 BILLING_USER_OFFER_FETCH_FAIL: function() {
                     E(), c.userOffersLastFetchedAtDate = Date.now()
+                },
+                BILLING_ANNUAL_USER_OFFER_FETCH_FAIL: function() {
+                    delete c.userDiscountOffers[u.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID], delete c.userDiscountOffers[u.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID], c.userAnnualOfferLastFetchedAtDate = Date.now()
                 },
                 LOGOUT: E
             })
@@ -233546,7 +233577,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "6cb8c53b76b232b1d44650d54c052cc3011129f4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7ea66a7aa5942b0635945813633fd5285f19f31b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -259707,7 +259738,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284150"
+                                build_number: "284151"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -266883,7 +266914,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284150", "284150"), 10);
+                let s = parseInt((n = "284151", "284151"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -293677,4 +293708,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.587c9bddeb1465959e3f.js.map
+//# sourceMappingURL=65573.bee8de2efc1d963fe2e2.js.map
