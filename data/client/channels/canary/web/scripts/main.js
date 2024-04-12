@@ -36558,7 +36558,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284204", ", Version Hash: ").concat("694dd31a72984e2872773bbcde847eee8bbdff5a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284214", ", Version Hash: ").concat("5ea1e77d2b5ea9fa4ed3c2621f1b0a5a0c2ffee8")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86435,8 +86435,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284204", "284204"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284204")), t = 0), t
+                let t = parseInt((e = "284214", "284214"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284214")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -108800,8 +108800,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284204",
-                    versionHash: "694dd31a72984e2872773bbcde847eee8bbdff5a"
+                    buildNumber: "284214",
+                    versionHash: "5ea1e77d2b5ea9fa4ed3c2621f1b0a5a0c2ffee8"
                 }
             }
             n.r(t), n.d(t, {
@@ -158434,8 +158434,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712943867243",
-                                    build_number: "284204"
+                                    built_at: "1712944762120",
+                                    build_number: "284214"
                                 }
                             },
                             retries: 1
@@ -198647,17 +198647,14 @@
         131640: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                BiteSizeProfileHeader: function() {
-                    return W
-                },
                 UserPopoutAvatar: function() {
-                    return Y
+                    return F
                 },
                 UserPopoutBadgeList: function() {
-                    return x
+                    return k
                 },
                 default: function() {
-                    return j
+                    return V
                 }
             }), n("627341");
             var i = n("735250"),
@@ -198668,152 +198665,148 @@
                 l = n("442837"),
                 u = n("692547"),
                 d = n("481060"),
-                _ = n("420660"),
-                c = n("906732"),
-                E = n("1585"),
-                I = n("927723"),
-                T = n("233440"),
-                f = n("680295"),
-                S = n("199902"),
-                A = n("430824"),
-                h = n("158776"),
-                m = n("759231"),
-                N = n("806519"),
-                O = n("626135"),
-                p = n("74538"),
-                R = n("998502"),
-                C = n("785717"),
-                g = n("621853"),
-                L = n("204197"),
-                D = n("78675"),
-                v = n("735336"),
-                M = n("793397"),
-                y = n("184325"),
-                P = n("652853"),
-                U = n("171368"),
-                b = n("228168"),
-                G = n("981631"),
-                w = n("474936"),
-                k = n("689938"),
-                B = n("181390");
-            let F = d.AvatarSizes.SIZE_80,
-                V = (0, E.getDecorationSizeForAvatarSize)(F);
+                _ = n("906732"),
+                c = n("1585"),
+                E = n("927723"),
+                I = n("233440"),
+                T = n("680295"),
+                f = n("430824"),
+                S = n("759231"),
+                A = n("806519"),
+                h = n("626135"),
+                m = n("74538"),
+                N = n("998502"),
+                O = n("785717"),
+                p = n("621853"),
+                R = n("204197"),
+                C = n("735336"),
+                g = n("793397"),
+                L = n("184325"),
+                D = n("652853"),
+                v = n("171368"),
+                M = n("228168"),
+                y = n("981631"),
+                P = n("474936"),
+                U = n("689938"),
+                b = n("181390");
+            let G = d.AvatarSizes.SIZE_80,
+                w = (0, c.getDecorationSizeForAvatarSize)(G);
 
-            function x(e) {
+            function k(e) {
                 let {
                     user: t,
                     guildId: n,
                     isTryItOutFlow: r,
                     forProfileEffectModal: s
-                } = e, a = (0, l.useStateFromStores)([g.default], () => g.default.getUserProfile(t.id), [t]), o = (0, l.useStateFromStores)([A.default], () => A.default.getGuild(n), [n]), _ = (0, I.useClydeProfilesEnabled)(o);
+                } = e, a = (0, l.useStateFromStores)([p.default], () => p.default.getUserProfile(t.id), [t]), o = (0, l.useStateFromStores)([f.default], () => f.default.getGuild(n), [n]), _ = (0, E.useClydeProfilesEnabled)(o);
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(null == a ? void 0 : a.profileFetchFailed) && (!t.isClyde() || _) && (0, i.jsx)(d.Tooltip, {
-                        text: k.default.Messages.USER_PROFILE_LOAD_ERROR,
+                        text: U.default.Messages.USER_PROFILE_LOAD_ERROR,
                         spacing: 16,
-                        children: e => (0, i.jsx)(m.default, {
+                        children: e => (0, i.jsx)(S.default, {
                             ...e,
-                            className: B.warningCircleIcon,
+                            className: b.warningCircleIcon,
                             color: u.default.unsafe_rawColors.YELLOW_300.css
                         })
-                    }), (0, i.jsx)(y.default, {
-                        className: s ? B.profileBadgesCompactNoTouch : B.profileBadges,
+                    }), (0, i.jsx)(L.default, {
+                        className: s ? b.profileBadgesCompactNoTouch : b.profileBadges,
                         user: t,
                         guildId: n,
                         isTryItOutFlow: r,
-                        size: y.BadgeSizes.SIZE_22
+                        size: L.BadgeSizes.SIZE_22
                     })]
                 })
             }
-            let H = R.default.getEnableHardwareAcceleration() ? d.AnimatedAvatar : d.Avatar;
+            let B = N.default.getEnableHardwareAcceleration() ? d.AnimatedAvatar : d.Avatar;
 
-            function Y(e) {
+            function F(e) {
                 let {
                     user: t,
                     displayProfile: n,
                     avatarSrc: s,
                     hasBanner: l,
                     status: u,
-                    isMobile: _,
+                    isMobile: c,
                     guildId: E,
-                    channelId: I,
+                    channelId: T,
                     onClose: f,
                     disableUserProfileLink: S,
-                    profileType: A,
-                    animateOnHover: h,
-                    hasProfileEffect: m
+                    profileType: N,
+                    animateOnHover: p,
+                    hasProfileEffect: C
                 } = e, {
-                    profileTheme: R
-                } = (0, P.useUserProfileThemeContext)(), g = r.useContext(O.AnalyticsContext), D = t.isNonUserBot() && !t.isClyde(), v = p.default.isPremiumAtLeast(null == n ? void 0 : n.premiumType, w.PremiumTypes.TIER_2), y = r.useMemo(() => (0, T.shouldDisableUserPresenceInChannel)(t, I), [t, I]), {
-                    analyticsLocations: x
-                } = (0, c.default)(), {
+                    profileTheme: L
+                } = (0, D.useUserProfileThemeContext)(), k = r.useContext(h.AnalyticsContext), F = t.isNonUserBot() && !t.isClyde(), V = m.default.isPremiumAtLeast(null == n ? void 0 : n.premiumType, P.PremiumTypes.TIER_2), x = r.useMemo(() => (0, I.shouldDisableUserPresenceInChannel)(t, T), [t, T]), {
+                    analyticsLocations: H
+                } = (0, _.default)(), {
                     trackUserProfileAction: Y,
                     messageId: j,
                     roleId: W
-                } = (0, C.useUserProfileAnalyticsContext)(), K = S || t.isClyde(), {
+                } = (0, O.useUserProfileAnalyticsContext)(), K = S || t.isClyde(), {
                     avatarDecorationSrc: z,
                     avatarSrc: X,
                     eventHandlers: Q
-                } = (0, L.default)({
+                } = (0, R.default)({
                     user: t,
                     guildId: E,
-                    size: F,
-                    animateOnHover: h
+                    size: G,
+                    animateOnHover: p
                 }), q = (0, i.jsx)("div", {
-                    className: B.avatarHoverTarget,
+                    className: b.avatarHoverTarget,
                     ...Q,
-                    children: (0, i.jsx)(H, {
+                    children: (0, i.jsx)(B, {
                         src: null != s ? s : X,
                         avatarDecoration: z,
-                        size: F,
+                        size: G,
                         "aria-label": t.username,
-                        status: y ? G.StatusTypes.UNKNOWN : u,
-                        statusBackdropColor: null != R && v && !y ? (0, d.getStatusBackdropColor)(R) : void 0,
-                        isMobile: _,
+                        status: x ? y.StatusTypes.UNKNOWN : u,
+                        statusBackdropColor: null != L && V && !x ? (0, d.getStatusBackdropColor)(L) : void 0,
+                        isMobile: c,
                         statusTooltip: !0
                     })
-                }), J = (0, o.match)(A).with(b.UserProfileTypes.POPOUT, () => (0, M.buildGetPremiumUserBannerStyles)({
-                    premiumUserWithBanner: B.avatarPositionPremiumBanner,
-                    premiumUserWithoutBanner: B.avatarPositionPremiumNoBanner,
-                    default: B.avatarPositionNormal
+                }), J = (0, o.match)(N).with(M.UserProfileTypes.POPOUT, () => (0, g.buildGetPremiumUserBannerStyles)({
+                    premiumUserWithBanner: b.avatarPositionPremiumBanner,
+                    premiumUserWithoutBanner: b.avatarPositionPremiumNoBanner,
+                    default: b.avatarPositionNormal
                 })({
-                    isPremium: v,
+                    isPremium: V,
                     hasBanner: l,
-                    hasProfileEffect: m
-                })).with(b.UserProfileTypes.POMELO_POPOUT, () => B.avatarPositionPomelo).with(b.UserProfileTypes.PANEL, () => B.avatarPositionPanel).exhaustive();
+                    hasProfileEffect: C
+                })).with(M.UserProfileTypes.POMELO_POPOUT, () => b.avatarPositionPomelo).with(M.UserProfileTypes.PANEL, () => b.avatarPositionPanel).exhaustive();
                 return (0, i.jsx)(i.Fragment, {
                     children: (0, i.jsxs)(d.Clickable, {
                         className: a()({
-                            [B.clickable]: !K,
-                            [B.avatarWrapperNonUserBot]: D,
-                            [B.avatarWrapperNormal]: !D
+                            [b.clickable]: !K,
+                            [b.avatarWrapperNonUserBot]: F,
+                            [b.avatarWrapperNormal]: !F
                         }, J),
-                        onClick: D || K ? void 0 : function() {
+                        onClick: F || K ? void 0 : function() {
                             Y({
                                 action: "PRESS_VIEW_PROFILE"
-                            }), (0, U.openUserProfileModal)({
+                            }), (0, v.openUserProfileModal)({
                                 userId: t.id,
                                 guildId: E,
-                                channelId: I,
+                                channelId: T,
                                 messageId: j,
                                 roleId: W,
-                                sourceAnalyticsLocations: x,
-                                analyticsLocation: g.location
+                                sourceAnalyticsLocations: H,
+                                analyticsLocation: k.location
                             }), null == f || f()
                         },
                         children: [q, !K && function() {
                             let e = null != z,
-                                t = e ? V : (0, d.getAvatarSize)(F);
-                            return (0, i.jsx)(N.default, {
-                                mask: null == u || u === G.StatusTypes.UNKNOWN || y ? N.default.Masks.AVATAR_DEFAULT : (0, o.match)([e, _]).with([!0, !0], () => N.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_MOBILE_SQUARE_80).with([!0, !1], () => N.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_SQUARE_80).with([!1, !0], () => N.default.Masks.AVATAR_STATUS_MOBILE_80).with([!1, !1], () => N.default.Masks.AVATAR_STATUS_ROUND_80).exhaustive(),
-                                className: e ? B.avatarDecorationHint : B.avatarHint,
+                                t = e ? w : (0, d.getAvatarSize)(G);
+                            return (0, i.jsx)(A.default, {
+                                mask: null == u || u === y.StatusTypes.UNKNOWN || x ? A.default.Masks.AVATAR_DEFAULT : (0, o.match)([e, c]).with([!0, !0], () => A.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_MOBILE_SQUARE_80).with([!0, !1], () => A.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_SQUARE_80).with([!1, !0], () => A.default.Masks.AVATAR_STATUS_MOBILE_80).with([!1, !1], () => A.default.Masks.AVATAR_STATUS_ROUND_80).exhaustive(),
+                                className: e ? b.avatarDecorationHint : b.avatarHint,
                                 style: e ? {
                                     borderRadius: .4 * t
                                 } : void 0,
                                 width: t,
                                 height: t,
                                 children: (0, i.jsx)("div", {
-                                    className: B.avatarHintInner,
-                                    children: k.default.Messages.VIEW_PROFILE
+                                    className: b.avatarHintInner,
+                                    children: U.default.Messages.VIEW_PROFILE
                                 })
                             })
                         }()]
@@ -198821,7 +198814,7 @@
                 })
             }
 
-            function j(e) {
+            function V(e) {
                 let {
                     user: t,
                     displayProfile: n,
@@ -198837,23 +198830,23 @@
                     upsell: E
                 } = e;
                 return (0, i.jsxs)(i.Fragment, {
-                    children: [E, (0, i.jsx)(v.default, {
+                    children: [E, (0, i.jsx)(C.default, {
                         user: t,
                         displayProfile: n,
                         onClose: a,
                         guildId: r,
-                        profileType: b.UserProfileTypes.POPOUT,
+                        profileType: M.UserProfileTypes.POPOUT,
                         showPremiumBadgeUpsell: c,
                         isHovering: _,
                         hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null
-                    }), (null == n ? void 0 : n.profileEffectId) != null && (0, i.jsx)(f.default, {
+                    }), (null == n ? void 0 : n.profileEffectId) != null && (0, i.jsx)(T.default, {
                         profileEffectId: null == n ? void 0 : n.profileEffectId,
                         bannerAdjustment: 0,
                         isHovering: _
-                    }), (0, i.jsx)(Y, {
+                    }), (0, i.jsx)(F, {
                         user: t,
                         displayProfile: n,
-                        status: l ? G.StatusTypes.STREAMING : u,
+                        status: l ? y.StatusTypes.STREAMING : u,
                         isMobile: o,
                         guildId: r,
                         channelId: s,
@@ -198861,64 +198854,10 @@
                         disableUserProfileLink: d,
                         hasBanner: (null == n ? void 0 : n.banner) != null,
                         hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null,
-                        profileType: b.UserProfileTypes.POPOUT
-                    }), (0, i.jsx)(x, {
+                        profileType: M.UserProfileTypes.POPOUT
+                    }), (0, i.jsx)(k, {
                         user: t,
                         guildId: r
-                    })]
-                })
-            }
-
-            function W(e) {
-                let {
-                    user: t,
-                    displayProfile: n,
-                    guildId: r,
-                    channelId: s,
-                    onClose: a,
-                    disableUserProfileLink: o,
-                    isHovering: u
-                } = e, d = t.isNonUserBot(), {
-                    activity: c,
-                    status: E,
-                    isMobile: I
-                } = (0, l.useStateFromStoresObject)([S.default, h.default], () => {
-                    let e = null != S.default.getAnyStreamForUser(t.id);
-                    return {
-                        activity: h.default.findActivity(t.id, t => {
-                            let {
-                                type: n
-                            } = t;
-                            return e ? n === G.ActivityTypes.PLAYING : n !== G.ActivityTypes.CUSTOM_STATUS
-                        }),
-                        status: d ? null : h.default.getStatus(t.id),
-                        isMobile: h.default.isMobileOnline(t.id)
-                    }
-                });
-                return (0, i.jsxs)("div", {
-                    className: B.biteSizeHeaderContainer,
-                    children: [(0, i.jsx)(D.default, {
-                        user: t,
-                        displayProfile: n,
-                        guildId: r,
-                        profileType: b.UserProfileTypes.POPOUT,
-                        hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null
-                    }), (null == n ? void 0 : n.profileEffectId) != null && (0, i.jsx)(f.default, {
-                        profileEffectId: null == n ? void 0 : n.profileEffectId,
-                        bannerAdjustment: 0,
-                        isHovering: u
-                    }), (0, i.jsx)(Y, {
-                        user: t,
-                        displayProfile: n,
-                        status: (0, _.default)(c) ? G.StatusTypes.STREAMING : E,
-                        isMobile: I,
-                        guildId: r,
-                        channelId: s,
-                        onClose: a,
-                        disableUserProfileLink: o,
-                        hasBanner: (null == n ? void 0 : n.banner) != null,
-                        hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null,
-                        profileType: b.UserProfileTypes.POPOUT
                     })]
                 })
             }
@@ -199005,7 +198944,6 @@
                     analyticsLocations: h
                 } = (0, a.default)(), [m, N] = r.useState(!1);
                 return I || null == E || "" === E ? null : (0, i.jsxs)("div", {
-                    className: c.container,
                     children: [(0, i.jsx)("div", {
                         ref: e => {
                             null != e && N(e.scrollHeight - e.clientHeight > 1)
@@ -199065,25 +199003,20 @@
                 let {
                     user: t,
                     displayProfile: n,
-                    onClose: S,
-                    guild: A,
-                    channelId: h
+                    guild: S,
+                    channelId: A,
+                    onClose: h
                 } = e, {
                     moreUserDetailsEnabled: m
                 } = (0, o.useSimplifiedProfileExperiment)({
                     location: "BiteSizeProfileBody"
-                }), N = a.default.getName(null == A ? void 0 : A.id, h, t), O = (0, l.default)(t.id, null == A ? void 0 : A.id), p = (0, r.useStateFromStores)([s.default], () => s.default.hidePersonalInformation);
-                return t.isSystemUser() ? null : t.isNonUserBot() ? (0, i.jsx)(u.default, {
-                    className: f.paddingBottom,
-                    user: t,
-                    guildId: null == A ? void 0 : A.id
-                }) : (0, i.jsxs)("div", {
-                    className: f.paddingBottom,
+                }), N = a.default.getName(null == S ? void 0 : S.id, A, t), O = (0, l.default)(t.id, null == S ? void 0 : S.id), p = (0, r.useStateFromStores)([s.default], () => s.default.hidePersonalInformation);
+                return t.isSystemUser() ? null : (0, i.jsxs)("div", {
+                    className: f.body,
                     children: [(0, i.jsx)(u.default, {
-                        className: f.username,
                         user: t,
-                        guildId: null == A ? void 0 : A.id,
-                        icon: t.hasAvatarForGuild(null == A ? void 0 : A.id) && (0, i.jsx)(_.default, {
+                        guildId: null == S ? void 0 : S.id,
+                        icon: t.hasAvatarForGuild(null == S ? void 0 : S.id) && (0, i.jsx)(_.default, {
                             user: t,
                             nickname: N
                         }),
@@ -199092,7 +199025,7 @@
                                 pronouns: null == n ? void 0 : n.pronouns
                             }), (0, i.jsx)(d.UserProfileBadgesTag, {
                                 user: t,
-                                guildId: null == A ? void 0 : A.id
+                                guildId: null == S ? void 0 : S.id
                             })]
                         })
                     }), m && (0, i.jsx)(I.default, {
@@ -199101,10 +199034,10 @@
                         user: t,
                         bio: null == n ? void 0 : n.bio,
                         hidePersonalInformation: p,
-                        onClose: S
+                        onClose: h
                     }), (0, i.jsx)(T.default, {
                         user: t,
-                        guild: A
+                        guild: S
                     }), O && (0, i.jsx)(E.default, {
                         user: t
                     })]
@@ -199131,19 +199064,87 @@
                 } = e, {
                     trackUserProfileAction: o
                 } = (0, s.useUserProfileAnalyticsContext)();
-                return (0, i.jsx)("div", {
-                    className: a.container,
-                    children: (0, i.jsx)(r.default, {
-                        className: a.messageInputContainer,
-                        inputClassName: a.messageInput,
+                return (0, i.jsx)(r.default, {
+                    className: a.messageInputContainer,
+                    inputClassName: a.messageInput,
+                    user: t,
+                    autoFocus: !0,
+                    onSend: () => {
+                        o({
+                            action: "SEND_DIRECT_MESSAGE"
+                        }), null == n || n()
+                    }
+                })
+            }
+        },
+        23293: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return I
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("442837"),
+                s = n("420660"),
+                a = n("199902"),
+                o = n("158776"),
+                l = n("78675"),
+                u = n("131640"),
+                d = n("228168"),
+                _ = n("981631"),
+                c = n("231338"),
+                E = n("247076");
+
+            function I(e) {
+                let {
+                    user: t,
+                    displayProfile: n,
+                    disableUserProfileLink: I,
+                    guildId: T,
+                    channelId: f,
+                    onClose: S
+                } = e, {
+                    activity: A,
+                    status: h,
+                    isMobile: m
+                } = (0, r.useStateFromStoresObject)([a.default, o.default], () => {
+                    let e = null != a.default.getAnyStreamForUser(t.id);
+                    return {
+                        activity: o.default.findActivity(t.id, t => {
+                            let {
+                                type: n
+                            } = t;
+                            return e ? n === _.ActivityTypes.PLAYING : n !== _.ActivityTypes.CUSTOM_STATUS
+                        }),
+                        status: o.default.getStatus(t.id),
+                        isMobile: o.default.isMobileOnline(t.id)
+                    }
+                });
+                return (0, i.jsxs)("header", {
+                    className: E.header,
+                    children: [(0, i.jsx)(l.default, {
                         user: t,
-                        autoFocus: !0,
-                        onSend: () => {
-                            o({
-                                action: "SEND_DIRECT_MESSAGE"
-                            }), null == n || n()
-                        }
-                    })
+                        displayProfile: n,
+                        guildId: T,
+                        profileType: d.UserProfileTypes.POPOUT,
+                        hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null
+                    }), (0, i.jsx)(u.UserPopoutAvatar, {
+                        user: t,
+                        displayProfile: n,
+                        status: (0, s.default)(A) ? c.StatusTypes.STREAMING : h,
+                        isMobile: m,
+                        guildId: T,
+                        channelId: f,
+                        onClose: S,
+                        disableUserProfileLink: I,
+                        hasBanner: (null == n ? void 0 : n.banner) != null,
+                        hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null,
+                        profileType: d.UserProfileTypes.POPOUT
+                    }), (0, i.jsx)("div", {
+                        className: E.customStatus
+                    })]
                 })
             }
         },
@@ -199273,7 +199274,8 @@
                             children: "+".concat(P)
                         })
                     }) : null;
-                return (0, i.jsxs)(i.Fragment, {
+                return (0, i.jsxs)("div", {
+                    className: R.container,
                     children: [(0, i.jsxs)("div", {
                         className: R.rolesHeader,
                         children: [(0, i.jsx)(d.Text, {
@@ -199408,71 +199410,73 @@
                 u = n("727637"),
                 d = n("100527"),
                 _ = n("906732"),
-                c = n("271383"),
-                E = n("430824"),
-                I = n("594174"),
-                T = n("785717"),
-                f = n("318661"),
-                S = n("502762"),
-                A = n("131640"),
+                c = n("680295"),
+                E = n("271383"),
+                I = n("430824"),
+                T = n("594174"),
+                f = n("785717"),
+                S = n("318661"),
+                A = n("502762"),
                 h = n("958120"),
-                m = n("228168");
+                m = n("23293"),
+                N = n("228168");
 
-            function N(e) {
+            function O(e) {
                 e.stopPropagation()
             }
 
-            function O(e) {
+            function p(e) {
                 let {
                     user: t,
                     guildId: n,
                     channelId: s,
                     messageId: a,
-                    closePopout: I,
-                    setPopoutRef: O,
-                    disableUserProfileLink: p = __OVERLAY__,
-                    newAnalyticsLocations: R = []
+                    closePopout: T,
+                    setPopoutRef: p,
+                    disableUserProfileLink: R = __OVERLAY__,
+                    newAnalyticsLocations: C = []
                 } = e, {
-                    analyticsLocations: C
-                } = (0, _.default)([...R, d.default.BITE_SIZE_PROFILE_POPOUT]), g = r.useRef(null), L = (0, f.default)(t.id, n), D = (0, u.default)(g), v = (0, o.useStateFromStores)([E.default], () => null != n ? E.default.getGuild(n) : null), M = (0, o.useStateFromStores)([c.default], () => null != n ? c.default.getMember(n, t.id) : null);
+                    analyticsLocations: g
+                } = (0, _.default)([...C, d.default.BITE_SIZE_PROFILE_POPOUT]), L = r.useRef(null), D = (0, S.default)(t.id, n), v = (0, u.default)(L), M = (0, o.useStateFromStores)([I.default], () => null != n ? I.default.getGuild(n) : null), y = (0, o.useStateFromStores)([E.default], () => null != n ? E.default.getMember(n, t.id) : null);
                 return r.useEffect(() => {
-                    null == O || O(null == g ? void 0 : g.current)
-                }, [g, O]), (0, i.jsx)(_.AnalyticsLocationProvider, {
-                    value: C,
-                    children: (0, i.jsx)(T.UserProfileAnalyticsProvider, {
+                    null == p || p(null == L ? void 0 : L.current)
+                }, [L, p]), (0, i.jsx)(_.AnalyticsLocationProvider, {
+                    value: g,
+                    children: (0, i.jsx)(f.UserProfileAnalyticsProvider, {
                         layout: "BITE_SIZE_POPOUT",
                         userId: t.id,
                         guildId: n,
                         channelId: s,
                         messageId: a,
-                        shouldTrackViewOnMount: null == M || null != M.fullProfileLoadedTimestamp,
-                        children: (0, i.jsx)(l.Dialog, {
-                            ref: g,
+                        shouldTrackViewOnMount: null == y || null != y.fullProfileLoadedTimestamp,
+                        children: (0, i.jsxs)(l.Dialog, {
+                            ref: L,
                             "aria-label": t.username,
-                            onClick: N,
-                            onContextMenu: N,
-                            children: (0, i.jsxs)(S.default, {
+                            onClick: O,
+                            onContextMenu: O,
+                            children: [(0, i.jsxs)(A.default, {
                                 user: t,
                                 guildId: n,
-                                profileType: m.UserProfileTypes.POPOUT,
-                                children: [(0, i.jsx)(A.BiteSizeProfileHeader, {
+                                profileType: N.UserProfileTypes.POPOUT,
+                                children: [(0, i.jsx)(m.default, {
                                     user: t,
-                                    displayProfile: L,
+                                    displayProfile: D,
                                     guildId: n,
                                     channelId: s,
-                                    onClose: I,
-                                    disableUserProfileLink: p,
-                                    isHovering: D
-                                }), (0, i.jsx)(S.default.Inner, {
-                                    children: (0, i.jsx)(h.default, {
-                                        user: t,
-                                        displayProfile: L,
-                                        guild: v,
-                                        channelId: s,
-                                        onClose: I
-                                    })
+                                    onClose: T,
+                                    disableUserProfileLink: R
+                                }), (0, i.jsx)(h.default, {
+                                    user: t,
+                                    displayProfile: D,
+                                    guild: M,
+                                    channelId: s,
+                                    onClose: T
                                 })]
-                            })
+                            }), (null == D ? void 0 : D.profileEffectId) != null && (0, i.jsx)(c.default, {
+                                profileEffectId: null == D ? void 0 : D.profileEffectId,
+                                bannerAdjustment: 0,
+                                isHovering: v
+                            })]
                         })
                     })
                 })
@@ -199482,8 +199486,8 @@
                     userId: t,
                     user: n,
                     ...r
-                } = e, s = (0, o.useStateFromStores)([I.default], () => I.default.getUser(t), [t]), l = null != n ? n : s;
-                return a()(null != l, "Unexpected missing user"), (0, i.jsx)(O, {
+                } = e, s = (0, o.useStateFromStores)([T.default], () => T.default.getUser(t), [t]), l = null != n ? n : s;
+                return a()(null != l, "Unexpected missing user"), (0, i.jsx)(p, {
                     user: l,
                     ...r
                 })
@@ -199493,28 +199497,24 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return l
+                    return o
                 }
             });
             var i = n("735250");
             n("470079");
             var r = n("442837"),
                 s = n("271383"),
-                a = n("246866"),
-                o = n("633124");
+                a = n("246866");
 
-            function l(e) {
+            function o(e) {
                 let {
                     user: t,
                     guild: n
-                } = e, l = (0, r.useStateFromStores)([s.default], () => null != n ? s.default.getMember(n.id, t.id) : null);
-                return null == n || null == l || 0 === l.roles.length ? null : (0, i.jsx)("div", {
-                    className: o.container,
-                    children: (0, i.jsx)(a.default, {
-                        guild: n,
-                        user: t,
-                        userRoles: l.roles
-                    })
+                } = e, o = (0, r.useStateFromStores)([s.default], () => null != n ? s.default.getMember(n.id, t.id) : null);
+                return null == n || null == o || 0 === o.roles.length ? null : (0, i.jsx)(a.default, {
+                    guild: n,
+                    user: t,
+                    userRoles: o.roles
                 })
             }
         },
@@ -233714,7 +233714,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "694dd31a72984e2872773bbcde847eee8bbdff5a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5ea1e77d2b5ea9fa4ed3c2621f1b0a5a0c2ffee8"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -259875,7 +259875,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284204"
+                                build_number: "284214"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -267051,7 +267051,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284204", "284204"), 10);
+                let s = parseInt((n = "284214", "284214"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -293845,4 +293845,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.30793059bce1869e7f03.js.map
+//# sourceMappingURL=65573.51e3c7bdcdb0c9d73356.js.map
