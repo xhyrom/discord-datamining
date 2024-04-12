@@ -22233,6 +22233,7 @@
                 innerContainer: "innerContainer__62037",
                 learnMoreLink: "learnMoreLink__6cc62",
                 outerContainer: "outerContainer_a76fe9",
+                outerContainerNoProgress: "outerContainerNoProgress_b609d8",
                 outerContainerSm: "outerContainerSm__15951",
                 outerContainerXs: "outerContainerXs__59efb",
                 questCopyCta: "questCopyCta__613f6",

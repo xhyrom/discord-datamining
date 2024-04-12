@@ -38752,9 +38752,13 @@ html .progress__00e29 {
 .outerContainer_a76fe9 {
     padding: 16px;
     display: grid;
-    grid-template: "cta-img text cta-buttons" 1fr "cta-img progress-bar progress-bar" min-content/min-content 1fr auto;
+    grid-template: "cta-img text cta-buttons" min-content"cta-img progress-bar progress-bar" min-content/min-content 1fr auto;
     grid-column-gap: 16px;
     align-items: center
+}
+
+.outerContainerNoProgress_b609d8 {
+    grid-template: "cta-img text cta-buttons" min-content/min-content 1fr auto
 }
 
 .outerContainerSm__15951 {
@@ -38881,7 +38885,8 @@ html .progress__00e29 {
 .rewardTileWrapper__4d72d {
     border-radius: 8px;
     overflow: hidden;
-    position: relative
+    position: relative;
+    grid-area: cta-img
 }
 
 .rewardTileExpired__73fac {
@@ -68452,21 +68457,6 @@ input::-webkit-inner-spin-button {
     height: 64px
 }
 
-.questRewardTile__0a963:before {
-    border: 1px solid var(--white-500);
-    border-radius: inherit;
-    box-sizing: border-box;
-    content: "";
-    height: 100%;
-    left: 0;
-    -webkit-mask-image: linear-gradient(315deg, transparent 50%, black);
-    mask-image: linear-gradient(315deg, transparent 50%, black);
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1
-}
-
 .questRewardTileAsset_fa0963 {
     border-radius: inherit;
     height: 100%;
@@ -68815,7 +68805,7 @@ input::-webkit-inner-spin-button {
 }
 
 .cta_f68ce1 {
-    background-color: hsl(var(--black-500-hsl)/.2);
+    background-color: var(--custom-cta-color, hsl(var(--black-500-hsl)/.2));
     color: var(--white-500);
     flex: 0 0 auto;
     margin-top: 8px;
@@ -68826,11 +68816,11 @@ input::-webkit-inner-spin-button {
 
 .cta_f68ce1:hover,
 .cta_f68ce1:focus {
-    background-color: hsl(var(--black-500-hsl)/.25)
+    background-color: var(--custom-cta-color-hover, hsl(var(--black-500-hsl)/.3))
 }
 
 .cta_f68ce1:active {
-    background-color: hsl(var(--black-500-hsl)/.35)
+    background-color: var(--custom-cta-color-active, hsl(var(--black-500-hsl)/.35))
 }
 
 .ctaClaimReward_c270ed {
@@ -133210,4 +133200,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.b32aae4081b6bc2fa14b.css.map*/
+/*# sourceMappingURL=99387.54846bdd131b8b6beb2b.css.map*/
