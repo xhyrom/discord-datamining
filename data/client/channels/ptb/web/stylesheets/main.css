@@ -38319,7 +38319,7 @@ html .progress__00e29 {
 }
 
 .questReward__47d57 {
-    border-radius: 8px;
+    display: block;
     pointer-events: none
 }
 
@@ -38406,6 +38406,28 @@ html .progress__00e29 {
 
 .theme-dark .outerContainer_a76fe9 {
     background: var(--background-secondary)
+}
+
+.rewardTileWrapper__4d72d {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative
+}
+
+.rewardTileExpired__73fac {
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.rewardTileExpirationTooltip_e04d01 {
+    text-align: center
 }
 
 .partnerBranding__2f8d1 {
@@ -50817,8 +50839,8 @@ html .progress__00e29 {
 .errorState_c6cca2 {
     padding: 20px 20px 40px;
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center
 }
 
@@ -50880,7 +50902,7 @@ html .progress__00e29 {
 
 .confirmChannelName_a42e11 {
     font-weight: 500;
-    font-size: .875rem;
+    font-size: 14px;
     margin-left: 8px;
     color: var(--header-primary)
 }
@@ -50888,7 +50910,7 @@ html .progress__00e29 {
 .lastActiveTimestamp_d49b9c {
     margin-left: 8px;
     color: var(--text-muted);
-    font-size: .75rem;
+    font-size: 12px;
     margin-top: 2px
 }
 
@@ -132517,4 +132539,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.543d3e6843abbd59820f.css.map*/
+/*# sourceMappingURL=99387.fdfab862b434395bd0d5.css.map*/

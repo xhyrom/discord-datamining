@@ -22105,6 +22105,9 @@
                 questRewardEmbedSm: "questRewardEmbedSm__1c12e",
                 questRewardEmbedXs: "questRewardEmbedXs_a1f7c1",
                 questRewardGiftInventory: "questRewardGiftInventory__0c5f4",
+                rewardTileExpirationTooltip: "rewardTileExpirationTooltip_e04d01",
+                rewardTileExpired: "rewardTileExpired__73fac",
+                rewardTileWrapper: "rewardTileWrapper__4d72d",
                 taskDetails: "taskDetails__1754f",
                 taskInstructions: "taskInstructions__57706"
             }
