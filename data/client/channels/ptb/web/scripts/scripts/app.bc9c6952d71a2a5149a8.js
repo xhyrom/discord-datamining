@@ -4969,6 +4969,18 @@
                 upsellContainer: "upsellContainer__6d38c"
             }
         },
+        343644: function(e) {
+            "use strict";
+            e.exports = {
+                gameImage: "gameImage__8db0b",
+                gameImageBackground: "gameImageBackground__15198",
+                gameImageLoading: "gameImageLoading_ad31b1",
+                gameUnknownImage: "gameUnknownImage__080b3",
+                placeholderPulse: "placeholderPulse__8767a",
+                selectedGame: "selectedGame_a69562",
+                selectedGameCheck: "selectedGameCheck_d9d855"
+            }
+        },
         319695: function(e) {
             "use strict";
             e.exports = {
@@ -5096,24 +5108,17 @@
                 enterToSearchText: "enterToSearchText_c64e49",
                 errorText: "errorText__34a8a",
                 flex: "flex__7aeec",
-                gameImage: "gameImage__4ad7a",
-                gameImageBackground: "gameImageBackground_c5e476",
-                gameImageLoading: "gameImageLoading__108e9",
-                gameUnknownImage: "gameUnknownImage__8221f",
                 icon: "icon_e8e1b2",
                 iconSmall: "iconSmall_cd3113",
                 inputContainer: "inputContainer__1e798",
                 introTitle: "introTitle__6a50e",
                 languageSelect: "languageSelect__46f09",
-                placeholderPulse: "placeholderPulse_c13237",
                 playstyleOption: "playstyleOption__67567",
                 playstyleSelect: "playstyleSelect_b7d88b",
                 playstyleTitle: "playstyleTitle__00d17",
                 plusIcon: "plusIcon__22efe",
                 removableGame: "removableGame_ea342b",
                 selected: "selected__2779c",
-                selectedGame: "selectedGame__0084c",
-                selectedGameCheck: "selectedGameCheck__389d8",
                 selectedInterest: "selectedInterest_aa523d",
                 selectedPlaystyle: "selectedPlaystyle_e4490f",
                 selectedSection: "selectedSection__5c175",
@@ -6811,6 +6816,9 @@
             e.exports = {
                 checkmark: "checkmark__4cc30",
                 clickable: "clickable_ef7cee",
+                gameHeader: "gameHeader_ab2b55",
+                games: "games__32d4d",
+                gamesInput: "gamesInput_eaad9a",
                 languagesIcon: "languagesIcon__8ea0f",
                 languagesSelect: "languagesSelect__75c5a",
                 languagesTitle: "languagesTitle_ddbda6",
@@ -6820,8 +6828,11 @@
                 playtimeHeader: "playtimeHeader__843e5",
                 playtimes: "playtimes__348d3",
                 plusIcon: "plusIcon__4ca2d",
+                recentGames: "recentGames__6b0bd",
                 removeIcon: "removeIcon__09c1b",
+                selectedGames: "selectedGames_afc855",
                 selectedPlaystyle: "selectedPlaystyle_c3bf30",
+                selectedSection: "selectedSection__37688",
                 timeSelectorRow: "timeSelectorRow_ad7888",
                 traitCategory: "traitCategory__4fca5",
                 traitHeader: "traitHeader__11d3b",
@@ -6845,7 +6856,9 @@
                 filterPillIcon: "filterPillIcon__6e577",
                 filterPillSmall: "filterPillSmall__584a6",
                 filterTooltip: "filterTooltip_d6d060",
+                filterTooltipAutoWidth: "filterTooltipAutoWidth__2ad07",
                 filterTooltipContent: "filterTooltipContent_c64a16",
+                gamesTooltip: "gamesTooltip_cdb5ec",
                 preferences: "preferences__16c1a",
                 toolbar: "toolbar__2fcb0"
             }
