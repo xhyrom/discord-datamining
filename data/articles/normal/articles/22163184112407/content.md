@@ -17,7 +17,6 @@
     </li>
     <li><a href="https://support.discord.com/hc/en-us/articles/22163184112407#h_01HSED5BPEDH4YYFVVCXQ2NKZ1">Frequently Asked Questions</a></li>
 </ul>
-<h3 id="h_01HSED5BPE69HJMFWDK6Y6X8BZ"><span style="color: #434343;" data-darkreader-inline-color="">This is currently rolling out to all users over the next couple of days.</span></h3>
 <h1 id="h_01HSED5BPEA50Y83ZT0A73ZPNC">What is Polls?</h1>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22650929905047" alt="Fq6tdR6A.gif" width="575" height="575"></p>
 <p>Polls is a feature on Discord with which you can create a poll to have your friends and community members vote on anything! You can add up to 10 answers for people to vote on in each poll. This can help decide the next game you’ll play together for game night, if pineapple belongs on pizza, and so much more!</p>
