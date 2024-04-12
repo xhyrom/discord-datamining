@@ -18638,35 +18638,36 @@
                     channel: x,
                     guildId: H,
                     className: Y,
-                    onMouseDown: j,
-                    onKeyDown: W,
-                    onClick: K,
-                    onContextMenu: z,
-                    onClickPremiumGuildIcon: X,
-                    onFocus: Q,
-                    "aria-controls": q,
-                    "aria-expanded": J,
-                    "aria-posinset": Z,
-                    "aria-setsize": $,
-                    id: ee,
-                    tabIndex: et,
-                    itemProps: en
-                } = e, ei = O.default.useName(U), er = (null === (t = T.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === (null == U ? void 0 : U.id), [es, ea] = r.useState(!1), [eo, el] = r.useState(!1), [eu, ed] = r.useState(null), {
-                    avatarDecorationSrc: e_,
-                    avatarSrc: ec,
-                    eventHandlers: eE
+                    onClosePopout: j,
+                    onMouseDown: W,
+                    onKeyDown: K,
+                    onClick: z,
+                    onContextMenu: X,
+                    onClickPremiumGuildIcon: Q,
+                    onFocus: q,
+                    "aria-controls": J,
+                    "aria-expanded": Z,
+                    "aria-posinset": $,
+                    "aria-setsize": ee,
+                    id: et,
+                    tabIndex: en,
+                    itemProps: ei
+                } = e, er = O.default.useName(U), es = (null === (t = T.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === (null == U ? void 0 : U.id), [ea, eo] = r.useState(!1), [el, eu] = r.useState(null), {
+                    avatarDecorationSrc: ed,
+                    avatarSrc: e_,
+                    eventHandlers: ec
                 } = (0, I.default)({
                     user: U,
                     size: l.AvatarSizes.SIZE_32,
-                    animateOnHover: !(n || es),
+                    animateOnHover: !(n || ea),
                     guildId: H
-                }), eI = (0, c.useQuestFromActivities)(G), eT = null != eI && !er && !n && (es || eo), ef = () => {
-                    ea(!0)
-                }, eS = () => {
-                    ea(!1)
-                }, eA = e => {
-                    ed(e)
-                }, eh = () => {
+                }), eE = (0, c.useQuestFromActivities)(G), eI = null != eE && !es && n, eT = () => {
+                    eo(!0)
+                }, ef = () => {
+                    eo(!1)
+                }, eS = e => {
+                    eu(e)
+                }, eA = () => {
                     let e = null != G ? G.find(e => e.type === R.ActivityTypes.CUSTOM_STATUS) : null,
                         t = null != e && null != U && (0, d.default)(e, U, x);
                     return (0, i.jsx)(p.default, {
@@ -18675,112 +18676,113 @@
                         emojiClassName: D.activityEmoji,
                         activities: G,
                         applicationStream: w,
-                        animate: es,
+                        animate: ea,
                         hideEmoji: !t,
                         hideTooltip: !0,
                         user: U,
-                        hasQuest: null != eI
+                        hasQuest: null != eE
                     })
-                }, em = () => null != N && N && null == M ? (0, i.jsx)(l.Tooltip, {
+                }, eh = () => null != N && N && null == M ? (0, i.jsx)(l.Tooltip, {
                     text: null != v ? v : L.default.Messages.GUILD_OWNER,
                     children: e => (0, i.jsx)(A.default, {
                         ...e,
                         className: D.ownerIcon
                     })
-                }) : null, eN = () => null == V ? null : (0, i.jsx)(l.Tooltip, {
+                }) : null, em = () => null == V ? null : (0, i.jsx)(l.Tooltip, {
                     text: L.default.Messages.PREMIUM_GUILD_SUBSCRIPTION_TOOLTIP.format({
                         date: V
                     }),
                     children: e => (0, i.jsx)(l.Clickable, {
-                        onClick: X,
+                        onClick: Q,
                         tabIndex: -1,
                         children: (0, i.jsx)(h.default, {
                             ...e,
                             className: D.premiumIcon
                         })
                     })
-                }), eO = () => {
+                }), eN = () => {
                     let e = (null == U ? void 0 : U.isClyde()) ? C.BotTagTypes.AI : C.BotTagTypes.BOT;
                     return null != U && U.bot ? (0, i.jsx)(f.default, {
                         className: D.botTag,
                         type: e,
                         verified: U.isVerifiedBot()
                     }) : null
-                }, ep = () => (0, i.jsxs)(i.Fragment, {
-                    children: [eO(), em(), eN()]
-                }), eR = (e, t) => {
+                }, eO = () => (0, i.jsxs)(i.Fragment, {
+                    children: [eN(), eh(), em()]
+                }), ep = (e, t) => {
                     let n = B ? l.AnimatedAvatar : l.Avatar,
                         r = (0, u.default)(G) ? R.StatusTypes.STREAMING : k;
                     return r = t ? void 0 : r, (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(n, {
-                            ...eE,
+                            ...ec,
                             size: l.AvatarSizes.SIZE_32,
-                            src: ec,
+                            src: e_,
                             isMobile: F,
                             isTyping: y,
                             status: r,
                             "aria-label": e.username,
                             statusTooltip: !0,
-                            avatarDecoration: e_,
-                            typingIndicatorRef: eA
+                            avatarDecoration: ed,
+                            typingIndicatorRef: eS
                         }), (0, i.jsx)(_.default, {
-                            confettiSpawnRef: eu,
+                            confettiSpawnRef: el,
                             shouldFire: y && null != b && e.id !== b.id,
                             confettiLocation: g.ConfettiLocation.MEMBER_USER
                         })]
                     })
-                }, eC = () => (0, i.jsx)(l.NameWithRole, {
+                }, eR = () => (0, i.jsx)(l.NameWithRole, {
                     roleName: o,
                     color: null != s ? s : void 0,
-                    name: null != P ? P : ei
-                }), eg = k === R.StatusTypes.OFFLINE;
+                    name: null != P ? P : er
+                }), eC = k === R.StatusTypes.OFFLINE;
                 return null == U ? (0, i.jsx)(S.default, {
                     avatarSize: l.AvatarSizes.SIZE_32,
                     className: D.placeholder
                 }) : (0, i.jsx)(l.Popout, {
                     renderPopout: e => (0, i.jsx)(E.default, {
-                        quest: eI,
+                        quest: eE,
                         applicationStream: w,
-                        onMouseEnter: () => el(!0),
-                        onMouseLeave: () => el(!1),
+                        onClosePopout: j,
                         ...e
                     }),
-                    position: "top",
-                    shouldShow: eT,
+                    position: "bottom",
+                    shouldShow: eI,
+                    nudgeAlignIntoViewport: !1,
+                    animation: l.Popout.Animation.FADE,
                     spacing: 0,
                     children: () => (0, i.jsx)(m.default, {
                         selected: n,
                         className: a()(D.member, Y, {
-                            [D.offline]: eg && !n
+                            [D.offline]: eC && !n
                         }),
                         innerClassName: D.memberInner,
-                        onClick: K,
-                        onKeyDown: W,
-                        onMouseDown: j,
-                        onContextMenu: z,
-                        onMouseEnter: ef,
-                        onMouseLeave: eS,
+                        onClick: z,
+                        onKeyDown: K,
+                        onMouseDown: W,
+                        onContextMenu: X,
+                        onMouseEnter: eT,
+                        onMouseLeave: ef,
                         name: null == M ? (0, i.jsx)("span", {
                             className: D.username,
-                            children: eC()
+                            children: eR()
                         }) : (0, i.jsx)(l.Tooltip, {
                             text: M,
                             children: e => (0, i.jsx)("span", {
                                 ...e,
                                 className: a()(D.username, D.lostPermission),
-                                children: eC()
+                                children: eR()
                             })
                         }),
-                        avatar: eR(U, eg),
-                        subText: eh(),
-                        decorators: ep(),
-                        "aria-controls": q,
-                        "aria-expanded": J,
-                        "aria-setsize": $,
-                        "aria-posinset": Z,
-                        id: ee,
-                        tabIndex: et,
-                        onFocus: Q,
+                        avatar: ep(U, eC),
+                        subText: eA(),
+                        decorators: eO(),
+                        "aria-controls": J,
+                        "aria-expanded": Z,
+                        "aria-setsize": ee,
+                        "aria-posinset": $,
+                        id: et,
+                        tabIndex: en,
+                        onFocus: q,
                         focusProps: {
                             offset: {
                                 top: 4,
@@ -18789,7 +18791,7 @@
                                 right: 4
                             }
                         },
-                        ...en
+                        ...ei
                     })
                 })
             }
@@ -36537,7 +36539,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284126", ", Version Hash: ").concat("c718041fb64bb4543d87ec1218e4669e1a033da1")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284129", ", Version Hash: ").concat("e50fbd111c64e89ae9f77f3f0c438d2ef2eab7b7")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -54832,7 +54834,7 @@
                 QUESTS_MEMBERS_LIST_AVAILBLE: "Quest Available!",
                 QUESTS_MEMBERS_LIST_FINISH: "Finish your Quest!",
                 QUESTS_MEMBERS_LIST_CLAIM_REWARD: "You did it!",
-                QUESTS_MEMBERS_LIST_START_CTA: "Start unlocking your reward",
+                QUESTS_MEMBERS_LIST_START_CTA: "Start unlocking rewards",
                 QUESTS_MEMBERS_LIST_STREAM_CTA: "Join me and check it out",
                 QUESTS_MEMBERS_LIST_FINISH_CTA: "Check out your progress",
                 QUESTS_MEMBERS_LIST_CLAIM_REWARD_CTA: "Claim your reward",
@@ -85773,8 +85775,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284126", "284126"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284126")), t = 0), t
+                let t = parseInt((e = "284129", "284129"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284129")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107919,8 +107921,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284126",
-                    versionHash: "c718041fb64bb4543d87ec1218e4669e1a033da1"
+                    buildNumber: "284129",
+                    versionHash: "e50fbd111c64e89ae9f77f3f0c438d2ef2eab7b7"
                 }
             }
             n.r(t), n.d(t, {
@@ -157449,8 +157451,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712935894874",
-                                    build_number: "284126"
+                                    built_at: "1712936258219",
+                                    build_number: "284129"
                                 }
                             },
                             retries: 1
@@ -176116,236 +176118,174 @@
             }
             t.default = new v
         },
-        268201: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                QuestsIconWithGradient: function() {
-                    return l
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("331595"),
-                s = n("844099"),
-                a = n("44315"),
-                o = n("231338");
-            let l = e => {
-                let {
-                    height: t = 24,
-                    width: n = 24,
-                    color: l,
-                    ...u
-                } = e, d = (0, a.useColorValue)(o.Color.TEAL_160), _ = (0, a.useColorValue)(o.Color.BRAND_430);
-                return (0, i.jsxs)("svg", {
-                    ...(0, r.default)(u),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: n,
-                    height: t,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: [(0, i.jsx)("defs", {
-                        children: (0, i.jsxs)("linearGradient", {
-                            id: "gradient",
-                            x1: "0",
-                            x2: "0",
-                            y1: "0",
-                            y2: "1",
-                            children: [(0, i.jsx)("stop", {
-                                offset: "0%",
-                                stopColor: d.hex
-                            }), (0, i.jsx)("stop", {
-                                offset: "100%",
-                                stopColor: _.hex
-                            })]
-                        })
-                    }), (0, i.jsx)(s.QuestsIcon, {
-                        color: "url(#gradient)",
-                        height: "100%",
-                        width: "100%",
-                        ...u
-                    })]
-                })
-            }
-        },
         553393: function(e, t, n) {
             "use strict";
             n.r(t);
             var i = n("735250");
             n("470079");
-            var r = n("989600"),
-                s = n("946835"),
-                a = n("481060"),
-                o = n("287734"),
-                l = n("872810"),
-                u = n("230711"),
-                d = n("258609"),
-                _ = n("102172"),
-                c = n("592125"),
-                E = n("430824"),
-                I = n("496675"),
-                T = n("979651"),
-                f = n("617136"),
-                S = n("113434"),
-                A = n("497505"),
-                h = n("918701"),
-                m = n("874137"),
-                N = n("667105"),
-                O = n("268201"),
-                p = n("981631"),
-                R = n("689938"),
-                C = n("258758");
-            let g = "16px",
-                L = "12px",
-                D = "11px";
+            var r = n("946835"),
+                s = n("481060"),
+                a = n("287734"),
+                o = n("872810"),
+                l = n("230711"),
+                u = n("258609"),
+                d = n("102172"),
+                _ = n("592125"),
+                c = n("430824"),
+                E = n("496675"),
+                I = n("979651"),
+                T = n("617136"),
+                f = n("113434"),
+                S = n("497505"),
+                A = n("918701"),
+                h = n("874137"),
+                m = n("667105"),
+                N = n("981631"),
+                O = n("689938"),
+                p = n("258758");
+            let R = "11px";
 
-            function v(e) {
+            function C(e) {
                 return null != e
             }
             t.default = function(e) {
-                var t, v, M;
+                var t, C, g;
                 let {
-                    quest: y,
-                    applicationStream: P,
-                    onMouseEnter: U,
-                    onMouseLeave: b,
-                    position: G
-                } = e, w = (0, N.useHandleClaimQuestsReward)({
-                    quest: y,
-                    location: A.QuestContent.MEMBERS_LIST
-                }), k = (0, S.useIsQuestExpired)(y), B = (null == y ? void 0 : null === (t = y.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, F = (null == y ? void 0 : null === (v = y.userStatus) || void 0 === v ? void 0 : v.enrolledAt) != null, V = (null == y ? void 0 : null === (M = y.userStatus) || void 0 === M ? void 0 : M.completedAt) != null;
-                if (null == y || k || B && !(null != P)) return null;
-                let x = () => {
-                        (0, f.trackQuestContentClicked)({
-                            questId: y.id,
-                            questContent: A.QuestContent.MEMBERS_LIST,
-                            questContentCTA: f.QuestContentCTA.OPEN_DISCLOSURE,
+                    quest: L,
+                    applicationStream: D,
+                    position: v,
+                    onClosePopout: M,
+                    closePopout: y
+                } = e, P = (0, m.useHandleClaimQuestsReward)({
+                    quest: L,
+                    location: S.QuestContent.MEMBERS_LIST
+                }), U = (0, f.useIsQuestExpired)(L), b = (null == L ? void 0 : null === (t = L.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, G = (null == L ? void 0 : null === (C = L.userStatus) || void 0 === C ? void 0 : C.enrolledAt) != null, w = (null == L ? void 0 : null === (g = L.userStatus) || void 0 === g ? void 0 : g.completedAt) != null;
+                if (null == L || U || b && !(null != D)) return null;
+                let k = () => {
+                        (0, T.trackQuestContentClicked)({
+                            questId: L.id,
+                            questContent: S.QuestContent.MEMBERS_LIST,
+                            questContentCTA: T.QuestContentCTA.OPEN_DISCLOSURE,
                             trackGuildAndChannelMetadata: !0
-                        }), (0, a.openModalLazy)(async () => {
+                        }), (0, s.openModalLazy)(async () => {
                             let {
                                 default: e
                             } = await Promise.all([n.e("99387"), n.e("59286")]).then(n.bind(n, "316210"));
                             return t => (0, i.jsx)(e, {
                                 ...t,
-                                questContent: A.QuestContent.MEMBERS_LIST,
-                                questConfig: y.config
+                                questContent: S.QuestContent.MEMBERS_LIST,
+                                questConfig: L.config
                             })
                         })
                     },
-                    H = () => {
-                        (0, f.trackQuestContentClicked)({
-                            questId: y.id,
-                            questContent: A.QuestContent.MEMBERS_LIST,
-                            questContentCTA: f.QuestContentCTA.LEARN_MORE,
+                    B = () => {
+                        (0, T.trackQuestContentClicked)({
+                            questId: L.id,
+                            questContent: S.QuestContent.MEMBERS_LIST,
+                            questContentCTA: T.QuestContentCTA.LEARN_MORE,
                             trackGuildAndChannelMetadata: !0
-                        }), u.default.open(p.UserSettingsSections.INVENTORY)
+                        }), l.default.open(N.UserSettingsSections.INVENTORY)
                     },
-                    Y = e => {
-                        e.stopPropagation(), x()
+                    F = e => {
+                        e.stopPropagation(), k()
                     },
-                    j = () => {
-                        if (null != P) {
-                            let e = c.default.getChannel(P.channelId);
-                            if (null != e && (0, _.canWatchStream)(e, T.default, E.default, I.default, d.default)[0]) return (0, f.trackQuestContentClicked)({
-                                questId: y.id,
-                                questContent: A.QuestContent.MEMBERS_LIST,
-                                questContentCTA: f.QuestContentCTA.WATCH_STREAM,
+                    V = () => {
+                        if (null != D) {
+                            let e = _.default.getChannel(D.channelId);
+                            if (null != e && (0, d.canWatchStream)(e, I.default, c.default, E.default, u.default)[0]) return (0, T.trackQuestContentClicked)({
+                                questId: L.id,
+                                questContent: S.QuestContent.MEMBERS_LIST,
+                                questContentCTA: T.QuestContentCTA.WATCH_STREAM,
                                 trackGuildAndChannelMetadata: !0
-                            }), o.default.selectVoiceChannel(e.id), (0, l.watchStreamAndTransitionToStream)(P)
+                            }), a.default.selectVoiceChannel(e.id), (0, o.watchStreamAndTransitionToStream)(D)
                         }
-                        H()
+                        B()
                     },
-                    W = (() => null != P ? {
-                        headerText: R.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE,
-                        ctaText: R.default.Messages.QUESTS_MEMBERS_LIST_STREAM_CTA,
-                        tileAssetUrl: (0, h.getGameTileAssetUrl)(y),
-                        handleClickCta: j
-                    } : V && !B ? {
-                        headerText: R.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_REWARD,
-                        ctaText: R.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_REWARD_CTA,
-                        tileAssetUrl: (0, h.getRewardAssetUrl)(y),
-                        handleClickCta: w
-                    } : F ? {
-                        headerText: R.default.Messages.QUESTS_MEMBERS_LIST_FINISH,
-                        ctaText: R.default.Messages.QUESTS_MEMBERS_LIST_FINISH_CTA,
-                        tileAssetUrl: (0, h.getRewardAssetUrl)(y),
-                        handleClickCta: H
+                    x = (() => null != D ? {
+                        headerText: O.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE,
+                        ctaText: O.default.Messages.QUESTS_MEMBERS_LIST_STREAM_CTA,
+                        tileAssetUrl: (0, A.getGameTileAssetUrl)(L),
+                        handleClickCta: V
+                    } : w && !b ? {
+                        headerText: O.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_REWARD,
+                        ctaText: O.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_REWARD_CTA,
+                        tileAssetUrl: (0, A.getRewardAssetUrl)(L),
+                        handleClickCta: P
+                    } : G ? {
+                        headerText: O.default.Messages.QUESTS_MEMBERS_LIST_FINISH,
+                        ctaText: O.default.Messages.QUESTS_MEMBERS_LIST_FINISH_CTA,
+                        tileAssetUrl: (0, A.getRewardAssetUrl)(L),
+                        handleClickCta: B
                     } : {
-                        headerText: R.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE,
-                        ctaText: R.default.Messages.QUESTS_MEMBERS_LIST_START_CTA,
-                        tileAssetUrl: (0, h.getGameTileAssetUrl)(y),
-                        handleClickCta: H
+                        headerText: O.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE,
+                        ctaText: O.default.Messages.QUESTS_MEMBERS_LIST_START_CTA,
+                        tileAssetUrl: (0, A.getGameTileAssetUrl)(L),
+                        handleClickCta: B
                     })();
-                return (0, i.jsx)(m.QuestContentImpressionTracker, {
-                    questId: y.id,
-                    questContent: A.QuestContent.MEMBERS_LIST,
+                return (0, i.jsx)(h.QuestContentImpressionTracker, {
+                    questId: L.id,
+                    questContent: S.QuestContent.MEMBERS_LIST,
                     trackGuildAndChannelMetadata: !0,
                     children: e => (0, i.jsx)("div", {
                         ref: t => {
                             e.current = t
                         },
-                        style: "bottom" === G ? {
-                            paddingTop: "8px"
-                        } : {
-                            paddingBottom: "8px"
+                        className: p.wrapper,
+                        style: {
+                            translate: "top" === v ? "0 ".concat("3px") : "0 -".concat("3px")
                         },
-                        onMouseEnter: U,
-                        onMouseLeave: b,
-                        children: (0, i.jsxs)(a.Clickable, {
-                            className: C.container,
-                            onClick: () => {
-                                b(), W.handleClickCta()
+                        children: (0, i.jsxs)("div", {
+                            className: p.container,
+                            style: {
+                                borderRadius: "top" === v ? "".concat("4px", " ").concat("4px", " 0 0") : "0 0 ".concat("4px", " ").concat("4px")
                             },
                             children: [(0, i.jsxs)("div", {
-                                className: C.left,
+                                className: p.top,
                                 children: [(0, i.jsxs)("div", {
-                                    className: C.top,
-                                    children: [(0, i.jsx)(O.QuestsIconWithGradient, {
-                                        height: g,
-                                        width: g
-                                    }), (0, i.jsx)(a.Heading, {
-                                        variant: "heading-md/semibold",
-                                        children: W.headerText
+                                    className: p.left,
+                                    children: [(0, i.jsx)(s.Heading, {
+                                        variant: "heading-sm/semibold",
+                                        children: x.headerText
+                                    }), (0, i.jsxs)(s.Clickable, {
+                                        className: p.help,
+                                        onClick: e => {
+                                            y(), null == M || M(), F(e)
+                                        },
+                                        children: [(0, i.jsx)(s.Text, {
+                                            variant: "text-xs/medium",
+                                            color: "text-muted",
+                                            children: O.default.Messages.QUESTS_MEMBERS_LIST_PROMOTED_BY.format({
+                                                gamePublisher: L.config.messages.gamePublisher
+                                            })
+                                        }), (0, i.jsx)(r.CircleQuestionIcon, {
+                                            width: R,
+                                            height: R,
+                                            color: s.tokens.colors.INTERACTIVE_MUTED
+                                        })]
                                     })]
-                                }), (0, i.jsxs)("div", {
-                                    className: C.middle,
-                                    children: [(0, i.jsx)(a.Text, {
-                                        variant: "text-sm/normal",
-                                        children: W.ctaText
-                                    }), (0, i.jsx)(r.ArrowLargeRightIcon, {
-                                        width: L,
-                                        height: L
-                                    })]
-                                }), (0, i.jsxs)(a.Clickable, {
-                                    className: C.bottom,
-                                    onClick: e => {
-                                        b(), Y(e)
-                                    },
-                                    children: [(0, i.jsx)(a.Text, {
-                                        variant: "text-xs/medium",
-                                        color: "text-muted",
-                                        children: R.default.Messages.QUESTS_MEMBERS_LIST_PROMOTED_BY.format({
-                                            gamePublisher: y.config.messages.gamePublisher
-                                        })
-                                    }), (0, i.jsx)(s.CircleQuestionIcon, {
-                                        width: D,
-                                        height: D,
-                                        color: a.tokens.colors.INTERACTIVE_MUTED
-                                    })]
+                                }), (0, i.jsx)("div", {
+                                    className: p.right,
+                                    children: (0, i.jsxs)("div", {
+                                        className: p.imgWrapper,
+                                        children: [(0, i.jsx)("div", {
+                                            className: p.imgUnderlay
+                                        }), (0, i.jsx)("img", {
+                                            alt: O.default.Messages.QUESTS_MEMBERS_LIST_GAME_TILE_ALT.format({
+                                                gameTitle: L.config.messages.gameTitle,
+                                                gamePublisher: L.config.messages.gamePublisher
+                                            }),
+                                            src: x.tileAssetUrl
+                                        })]
+                                    })
                                 })]
-                            }), (0, i.jsx)("div", {
-                                className: C.right,
-                                children: (0, i.jsxs)("div", {
-                                    className: C.imgWrapper,
-                                    children: [(0, i.jsx)("div", {
-                                        className: C.imgUnderlay
-                                    }), (0, i.jsx)("img", {
-                                        alt: R.default.Messages.QUESTS_MEMBERS_LIST_GAME_TILE_ALT.format({
-                                            gameTitle: y.config.messages.gameTitle,
-                                            gamePublisher: y.config.messages.gamePublisher
-                                        }),
-                                        src: W.tileAssetUrl
-                                    })]
-                                })
+                            }), (0, i.jsx)(s.Button, {
+                                onClick: () => {
+                                    y(), null == M || M(), x.handleClickCta()
+                                },
+                                color: s.Button.Colors.CUSTOM,
+                                hover: s.Button.Hovers.PRIMARY,
+                                className: p.ctaButton,
+                                children: x.ctaText
                             })]
                         })
                     })
@@ -232634,7 +232574,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "c718041fb64bb4543d87ec1218e4669e1a033da1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e50fbd111c64e89ae9f77f3f0c438d2ef2eab7b7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258727,7 +258667,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284126"
+                                build_number: "284129"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265903,7 +265843,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284126", "284126"), 10);
+                let s = parseInt((n = "284129", "284129"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -268091,40 +268031,6 @@
                     children: (0, i.jsx)("path", {
                         fill: "string" == typeof a ? a : a.css,
                         d: "M2.3 7.3a1 1 0 0 0 0 1.4l5 5a1 1 0 0 0 1.4-1.4L5.42 9H11a7 7 0 0 1 7 7v4a1 1 0 1 0 2 0v-4a9 9 0 0 0-9-9H5.41l3.3-3.3a1 1 0 0 0-1.42-1.4l-5 5Z",
-                        className: o
-                    })
-                })
-            }
-        },
-        989600: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                ArrowLargeRightIcon: function() {
-                    return a
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("692547"),
-                s = n("331595");
-            let a = e => {
-                let {
-                    width: t = 24,
-                    height: n = 24,
-                    color: a = r.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: o = "",
-                    ...l
-                } = e;
-                return (0, i.jsx)("svg", {
-                    ...(0, s.default)(l),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: n,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, i.jsx)("path", {
-                        fill: "string" == typeof a ? a : a.css,
-                        d: "M20.7 12.7a1 1 0 0 0 0-1.4l-8-8a1 1 0 1 0-1.4 1.4l6.29 6.3H4a1 1 0 1 0 0 2h13.59l-6.3 6.3a1 1 0 0 0 1.42 1.4l8-8Z",
                         className: o
                     })
                 })
@@ -292660,4 +292566,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.b8266f8cebeeafddb052.js.map
+//# sourceMappingURL=65573.2e41b9657899f80c08ef.js.map
