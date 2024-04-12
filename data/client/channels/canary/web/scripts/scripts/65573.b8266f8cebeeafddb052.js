@@ -36537,7 +36537,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284120", ", Version Hash: ").concat("8bfb4952259b32371dc9e4c1b18f5cdfe5053cd4")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284126", ", Version Hash: ").concat("c718041fb64bb4543d87ec1218e4669e1a033da1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -85773,8 +85773,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284120", "284120"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284120")), t = 0), t
+                let t = parseInt((e = "284126", "284126"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284126")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107919,8 +107919,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284120",
-                    versionHash: "8bfb4952259b32371dc9e4c1b18f5cdfe5053cd4"
+                    buildNumber: "284126",
+                    versionHash: "c718041fb64bb4543d87ec1218e4669e1a033da1"
                 }
             }
             n.r(t), n.d(t, {
@@ -157449,8 +157449,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712935208717",
-                                    build_number: "284120"
+                                    built_at: "1712935894874",
+                                    build_number: "284126"
                                 }
                             },
                             retries: 1
@@ -196147,10 +196147,9 @@
                     pronouns: t,
                     variant: n = "text-xs/medium"
                 } = e;
-                return null == t || 0 === t.length ? null : (0, i.jsx)(r.Tooltip, {
+                return null == t || 0 === t.length ? null : (0, i.jsx)(r.TooltipContainer, {
                     text: o.default.Messages.USER_PROFILE_PRONOUNS,
-                    children: e => (0, i.jsx)(s.Text, {
-                        ...e,
+                    children: (0, i.jsx)(s.Text, {
                         className: l.pronouns,
                         variant: n,
                         children: t
@@ -198298,44 +198297,49 @@
                 I = n("689938"),
                 T = n("735619");
             t.default = r.memo(function(e) {
-                var t, n;
                 let {
-                    user: s
-                } = e, f = (0, o.useStateFromStores)([c.default], () => c.default.getCurrentUser()), S = (0, o.useStateFromStores)([E.default], () => E.default.getMutualFriends(s.id));
+                    user: t
+                } = e, n = (0, o.useStateFromStores)([c.default], () => c.default.getCurrentUser()), s = (0, o.useStateFromStores)([E.default], () => E.default.getMutualFriends(t.id));
                 r.useEffect(() => {
-                    null == S && (0, u.fetchMutualFriends)(s.id)
-                }, [S, s.id]);
-                let A = r.useMemo(() => {
+                    null == s && (0, u.fetchMutualFriends)(t.id)
+                }, [s, t.id]);
+                let f = r.useMemo(() => {
                         var e;
-                        return null !== (e = null == S ? void 0 : S.slice(0, 3).map(e => {
+                        return null !== (e = null == s ? void 0 : s.slice(0, 3).map(e => {
                             let {
                                 user: t
                             } = e;
                             return t
                         })) && void 0 !== e ? e : []
-                    }, [S]),
-                    h = (0, o.useStateFromStores)([E.default], () => E.default.getMutualGuilds(s.id)),
-                    [m, N] = (0, o.useStateFromStoresArray)([E.default], () => [E.default.isFetchingFriends(s.id), E.default.isFetchingProfile(s.id)]);
-                return s.id === (null == f ? void 0 : f.id) || (null == S ? void 0 : S.length) === 0 && (null == h ? void 0 : h.length) === 0 ? null : m || N ? (0, i.jsx)("div", {
+                    }, [s]),
+                    S = (0, o.useStateFromStores)([E.default], () => E.default.getMutualGuilds(t.id)),
+                    [A, h] = (0, o.useStateFromStoresArray)([E.default], () => [E.default.isFetchingFriends(t.id), E.default.isFetchingProfile(t.id)]);
+                if (t.id === (null == n ? void 0 : n.id) || (null == s ? void 0 : s.length) === 0 && (null == S ? void 0 : S.length) === 0) return null;
+                if (A || h) return (0, i.jsx)("div", {
                     className: a()(T.spinnerContainer),
                     children: (0, i.jsx)(l.Spinner, {
                         className: T.spinner
                     })
-                }) : (0, i.jsxs)("div", {
+                });
+                let m = null != s && s.length > 0 ? I.default.Messages.MUTUAL_FRIENDS_COUNT.format({
+                        count: s.length
+                    }) : I.default.Messages.USER_PROFILE_NO_MUTUAL_FRIENDS,
+                    N = null != S && S.length > 0 ? I.default.Messages.MUTUAL_GUILDS_COUNT.format({
+                        count: S.length
+                    }) : I.default.Messages.USER_PROFILE_NO_MUTUAL_SERVERS;
+                return (0, i.jsxs)("div", {
                     className: T.container,
                     children: [(0, i.jsx)(_.default, {
                         partySize: {
-                            knownSize: A.length,
-                            totalSize: Math.min(A.length, 3)
+                            knownSize: f.length,
+                            totalSize: Math.min(f.length, 3)
                         },
                         maxAvatarsShown: 3,
-                        members: A
+                        members: f
                     }), (0, i.jsx)(l.Text, {
-                        className: (null == S ? void 0 : S.length) === 0 ? void 0 : T.mutualFriendsText,
+                        className: (null == s ? void 0 : s.length) === 0 ? void 0 : T.mutualFriendsText,
                         variant: "text-xs/normal",
-                        children: I.default.Messages.MUTUAL_FRIENDS_COUNT.format({
-                            count: "".concat(null !== (t = null == S ? void 0 : S.length) && void 0 !== t ? t : 0)
-                        })
+                        children: m
                     }), (0, i.jsx)(d.default, {
                         height: 4,
                         width: 4,
@@ -198343,9 +198347,7 @@
                         className: T.dotSpacer
                     }), (0, i.jsx)(l.Text, {
                         variant: "text-xs/normal",
-                        children: I.default.Messages.MUTUAL_GUILDS_COUNT.format({
-                            count: "".concat(null !== (n = null == h ? void 0 : h.length) && void 0 !== n ? n : 0)
-                        })
+                        children: N
                     })]
                 })
             })
@@ -232632,7 +232634,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8bfb4952259b32371dc9e4c1b18f5cdfe5053cd4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "c718041fb64bb4543d87ec1218e4669e1a033da1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258725,7 +258727,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284120"
+                                build_number: "284126"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265901,7 +265903,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284120", "284120"), 10);
+                let s = parseInt((n = "284126", "284126"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292658,4 +292660,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.b98528fb22eb7a14ebc1.js.map
+//# sourceMappingURL=65573.b8266f8cebeeafddb052.js.map
