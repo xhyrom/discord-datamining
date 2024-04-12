@@ -22268,9 +22268,21 @@
                 tooltipText: "tooltipText__63048"
             }
         },
+        672999: function(e) {
+            "use strict";
+            e.exports = {
+                content: "content__3a428",
+                header: "header__06293",
+                headerImage: "headerImage_d5fe73",
+                modalCloseButton: "modalCloseButton_d486ef",
+                modalFooter: "modalFooter_f097e6",
+                title: "title__69ef6"
+            }
+        },
         174415: function(e) {
             "use strict";
             e.exports = {
+                claimedRootContainer: "claimedRootContainer__21952",
                 close: "close__85eb5",
                 confettiCanvas: "confettiCanvas_d0db40",
                 footerContainer: "footerContainer__95cd2",
@@ -22282,6 +22294,7 @@
                 previewContainer: "previewContainer__32cb1",
                 rootContainer: "rootContainer_d251a3",
                 spinner: "spinner__2aca6",
+                spinnerContainer: "spinnerContainer_b7aa46",
                 text: "text__4fd4a"
             }
         },
