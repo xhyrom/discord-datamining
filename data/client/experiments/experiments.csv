@@ -497,6 +497,7 @@ id,hash,label
 2024-03_airpods_mute_support,2035601025,Support for muting/unmuting via AirPods
 2024-03_ait_guild_entry_point,1979035979,Activities in Text Guild Experiment w/ new Entry Point
 2024-03_amd_vdec_tests_1,1872798231,"GPU Workarounds: AMD video decode tests 1 (1002:15d8, 1002:15dd, 1002:1636, 1002:1638, 1002:164c, 1002:1681, 1002:67ef, 1002:67df, 1002:731f, 1002:7340, 1002:73bf, 1002:73ef, 1002:73df, 1002:73ff, 1002:743f, 1002:744c, 1002:747e, 1002:7480)"
+2024-03_annual_discounts_experiment,3169402205,Test price for standard annual plan utilizing discount framework
 2024-03_clan_discovery,2443034,Clan discovery
 2024-03_clickstream_analytics,937474337,Clickstream Analytics
 2024-03_collectibles_springtoons_marketing,2818518480,Springtoons marketing experiment
