@@ -7444,125 +7444,125 @@ html .invoiceCancelRow_aa7946 {
     --profile-role-pill-border-color: var(--interactive-normal)
 }
 
-.userProfileOuter__4ac83 {
+.userProfileOuter__35e59 {
     border-radius: 8px;
     position: relative;
     overflow: hidden;
     --custom-user-popout-outside-components-height: 1px
 }
 
-.userPopoutOuter__3884e {
+.userPopoutOuter_d67f56 {
     box-shadow: var(--elevation-high);
     max-height: calc(100vh - 20px - var(--custom-user-popout-outside-components-height));
     width: var(--custom-user-profile-themed-container-user-popout-width)
 }
 
-.showOutOfBoundaryComponents__39f0e {
+.showOutOfBoundaryComponents__3e39f {
     overflow: visible
 }
 
-.userProfileModalOuter_a65559 {
+.userProfileModalOuter__90b4a {
     width: var(--custom-user-profile-themed-container-user-profile-modal-width)
 }
 
-.userPanelOuter_eb00b1 {
+.userPanelOuter_df01a5 {
     height: 100%;
     padding: 0
 }
 
-.userProfileOuterThemed__1fbd7 {
+.userProfileOuterThemed_a425f3 {
     background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-secondary-color))
 }
 
-.userProfileOuterThemed__1fbd7.userPopoutOuter__3884e,
-.userProfileOuterThemed__1fbd7.userProfileOuter__4ac83 {
+.userProfileOuterThemed_a425f3.userPopoutOuter_d67f56,
+.userProfileOuterThemed_a425f3.userProfileOuter__35e59 {
     padding: var(--custom-user-profile-themed-container-user-profile-themed-padding)
 }
 
-.userProfileOuterThemed__1fbd7.userCardOuter__69ef3 {
+.userProfileOuterThemed_a425f3.userCardOuter_eacfb3 {
     padding: 2px
 }
 
-.userProfileOuterUnthemed_e14365 {
+.userProfileOuterUnthemed__9741c {
     background-color: var(--profile-gradient-primary-color)
 }
 
-.userProfileInner__61cc1 {
+.userProfileInner__8ff35 {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     border-radius: 8px 8px 0 0
 }
 
-.userProfileInner__61cc1:before {
+.userProfileInner__8ff35:before {
     content: "";
     pointer-events: none;
     background-color: var(--profile-gradient-overlay-color);
     position: absolute
 }
 
-.userPopoutInner_e90432 {
+.userPopoutInner_ac0960 {
     max-height: calc(100vh - 28px - var(--custom-user-popout-outside-components-height))
 }
 
-.userPopoutInner_e90432:before {
+.userPopoutInner_ac0960:before {
     border-radius: 4px;
     height: calc(100% - 8px);
     width: calc(100% - 8px)
 }
 
-.userProfileModalInner__99b1e {
+.userProfileModalInner__84e47 {
     max-height: 100%
 }
 
-.userProfileModalInner__99b1e:before {
+.userProfileModalInner__84e47:before {
     border-radius: 4px;
     height: calc(100% - 8px);
     width: calc(100% - 8px)
 }
 
-.userPanelInner_f9edb8 {
+.userPanelInner__3184c {
     height: 100%
 }
 
-.userPanelInner_f9edb8:before {
+.userPanelInner__3184c:before {
     height: 100%;
     width: 100%
 }
 
-.userProfileInnerThemed__5ab6a:before {
+.userProfileInnerThemed__126d9:before {
     height: 100%;
     width: 100%
 }
 
-.userProfileInnerUnthemed__44dcf:before {
+.userProfileInnerUnthemed__4670d:before {
     height: 100%;
     width: 100%
 }
 
-.userPanelInnerThemed_c2aed9 {
+.userPanelInnerThemed__651e4 {
     background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-secondary-color))
 }
 
-.userProfileInnerThemedWithBanner__2152d {
+.userProfileInnerThemedWithBanner_e9e7c5 {
     background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-primary-color)120px, var(--profile-gradient-secondary-color))
 }
 
-.userProfileInnerThemedPremiumWithoutBanner__3705a {
+.userProfileInnerThemedPremiumWithoutBanner_ee8277 {
     background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-primary-color)90px, var(--profile-gradient-secondary-color))
 }
 
-.userProfileInnerThemedNonPremium_ed9022 {
+.userProfileInnerThemedNonPremium_b64fb4 {
     background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-primary-color)60px, var(--profile-gradient-secondary-color))
 }
 
-.userCardInner__4fd8f {
+.userCardInner_e36852 {
     flex-grow: 0;
     border-radius: 8px;
     background: var(--background-primary)
 }
 
-.overlayBackground__2666e {
+.overlayBackground__345c9 {
     position: relative;
     background-color: var(--profile-body-background-color);
     border-radius: 8px;
@@ -7571,36 +7571,36 @@ html .invoiceCancelRow_aa7946 {
     overflow: hidden
 }
 
-.overlayBackground__2666e * {
+.overlayBackground__345c9 * {
     scrollbar-color: var(--profile-body-divider-color)var(--scrollbar-thin-track)
 }
 
-.overlayBackground__2666e ::-webkit-scrollbar-thumb {
+.overlayBackground__345c9 ::-webkit-scrollbar-thumb {
     background-color: var(--profile-body-divider-color)
 }
 
-.userPopoutOverlayBackground_bf6444 {
+.userPopoutOverlayBackground__3e7e6 {
     margin: 28px 16px 16px;
     max-height: calc(100vh - 128px - var(--custom-user-popout-outside-components-height))
 }
 
-.userProfileModalOverlayBackground__7ec35 {
+.userProfileModalOverlayBackground_a5b043 {
     margin: 16px
 }
 
-.userPanelOverlayBackground__41589 {
+.userPanelOverlayBackground_a2b6ae {
     margin: 16px;
     padding: 0 12px 12px
 }
 
-.enable-forced-colors .userProfileOuter__4ac83,
-.enable-forced-colors .userPopoutInner_e90432,
-.enable-forced-colors .userProfileModalOuter_a65559 {
+.enable-forced-colors .userProfileOuter__35e59,
+.enable-forced-colors .userPopoutInner_ac0960,
+.enable-forced-colors .userProfileModalOuter__90b4a {
     border: 2px solid CanvasText
 }
 
-.enable-forced-colors .userProfileInner__61cc1:before,
-.enable-forced-colors .userPopoutOverlayBackground_bf6444 {
+.enable-forced-colors .userProfileInner__8ff35:before,
+.enable-forced-colors .userPopoutOverlayBackground__3e7e6 {
     background-color: Canvas
 }
 
@@ -132736,4 +132736,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7f702adf7cb337112374.css.map*/
+/*# sourceMappingURL=99387.b36e7e6f5315f1cfba45.css.map*/
