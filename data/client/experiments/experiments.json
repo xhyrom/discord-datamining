@@ -9353,56 +9353,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2024-02_navi_bar_existing_users",
-      "label": "Mobile Redesign - Nav Experiment: You Bar - Existing Users",
-      "description": [
-        "Not Eligible",
-        "Treatment 0: Control",
-        "Treatment 1: You Bar (2c)",
-        "Treatment 2: You Bar (2c) with messages button"
-      ],
-      "hash": 3520090265,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-02_navi_bar_new_users",
-      "label": "Mobile Redesign - Nav Experiment: You Bar - New Users",
-      "description": [
-        "Not Eligible",
-        "Treatment 0: Control",
-        "Treatment 1: You Bar (2c)",
-        "Treatment 2: You Bar (2c) with messages button"
-      ],
-      "hash": 2455953431,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2024-02_nitro_badge_on_emoji_hover",
       "label": "Nitro Badge on Emoji Hover",
       "description": [
@@ -11838,6 +11788,80 @@
       "revision": 2,
       "overrides": {},
       "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-04_merged_tabs_existing_users",
+      "label": "Mobile Redesign - Merge Tabs Last Stand Experiment - Existing Users",
+      "description": [
+        "Not Eligible",
+        "Treatment 0: Control",
+        "Treatment 1: Merged Tabs, Labels",
+        "Treatment 2: Merged Tabs, No Labels",
+        "Treatment 3: Merged Tabs, Labels, Rounded Corners",
+        "Treatment 4: Merged Tabs, No Labels, Rounded Corners",
+        "Treatment 5: Merged Tabs, Labels, Blurred Tab Bar",
+        "Treatment 6: Merged Tabs, No Labels, Blurred Tab Bar",
+        "Treatment 7: Merged Tabs, Labels, Rounded Corners, Blurred Tab Bar",
+        "Treatment 8: Merged Tabs, No Labels, Rounded Corners, Blurred Tab Bar"
+      ],
+      "hash": 4169027466,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-04_merged_tabs_new_users",
+      "label": "Mobile Redesign - Merge Tabs Last Stand Experiment - New Users",
+      "description": [
+        "Not Eligible",
+        "Treatment 0: Control",
+        "Treatment 1: Merged Tabs, Labels",
+        "Treatment 2: Merged Tabs, No Labels",
+        "Treatment 3: Merged Tabs, Labels, Rounded Corners",
+        "Treatment 4: Merged Tabs, No Labels, Rounded Corners",
+        "Treatment 5: Merged Tabs, Labels, Blurred Tab Bar",
+        "Treatment 6: Merged Tabs, No Labels, Blurred Tab Bar",
+        "Treatment 7: Merged Tabs, Labels, Rounded Corners, Blurred Tab Bar",
+        "Treatment 8: Merged Tabs, No Labels, Rounded Corners, Blurred Tab Bar"
+      ],
+      "hash": 3576355419,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
     }
   },
   {
