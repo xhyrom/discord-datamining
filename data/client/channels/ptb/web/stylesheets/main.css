@@ -91698,6 +91698,94 @@ div:has(>div>.container__8ab05) {
     margin-bottom: 8px
 }
 
+@value responsiveWidthMobile from '../../../uikit/auth/WaveSplash.module.css';
+
+.header__2e9c4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: var(--spacing-64);
+    padding-bottom: var(--spacing-12)
+}
+
+.headerImage__27e00 {
+    position: absolute;
+    top: -68px;
+    left: 38%;
+    width: 100px
+}
+
+.title__1c3ec {
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: var(--spacing-8)
+}
+
+.body_e6a385 {
+    color: var(--header-secondary);
+    text-align: center
+}
+
+.content__2bc63 {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.footer__7bd88 {
+    color: var(--header-secondary);
+    text-align: center;
+    margin-top: var(--spacing-8)
+}
+
+.modalCloseButton_f1c3a0 {
+    position: absolute;
+    top: var(--spacing-16);
+    right: var(--spacing-16)
+}
+
+.content__2bc63 {
+    padding-bottom: var(--spacing-16)
+}
+
+.subtitle_b23e9f {
+    text-transform: uppercase;
+    color: var(--header-secondary);
+    margin-bottom: var(--spacing-8)
+}
+
+.guildContainer__81844 {
+    padding: var(--spacing-12);
+    border: 1px solid var(--background-modifier-accent);
+    border-radius: var(--spacing-8);
+    background-color: var(--background-modifier-accent)
+}
+
+.guildInfo__4798f {
+    display: flex;
+    align-items: center
+}
+
+.guildName_c95322 {
+    font-weight: 600;
+    margin-left: var(--spacing-8)
+}
+
+.button__4c752 {
+    margin-top: var(--spacing-8);
+    width: 100%
+}
+
+@media(max-width:485px) {
+    .header__2e9c4 {
+        padding-top: 144px
+    }
+
+    .headerImage__27e00 {
+        top: 16px
+    }
+}
+
 .modalContent_c3cee6 {
     padding: 0 16px 16px
 }
@@ -132648,4 +132736,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.72143774c442865be07b.css.map*/
+/*# sourceMappingURL=99387.7f702adf7cb337112374.css.map*/
