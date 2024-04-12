@@ -36537,7 +36537,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284077", ", Version Hash: ").concat("ac1125fbdb2409f18d6acbb602b8cef05618cb19")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284096", ", Version Hash: ").concat("adc6cec8eda6d3e8be0165803b1b5130860cc86b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -40188,6 +40188,7 @@
                 SETTINGS_GAMES_NO_GAMES_HEADER: "No games added",
                 SETTINGS_GAMES_NOT_SEEING_GAME: "Not seeing your game?",
                 SETTINGS_GAMES_ADD_GAME: "Add it!",
+                SETTINGS_GAMES_IGDB_ATTRIBUTION: "Some information about games (such as genre or cover art) is provided by [IGDB]({igdbLink}).",
                 SETTINGS_GAMES_ADD_NEW_GAME: "Add Game",
                 SETTINGS_GAMES_VERIFIED_ICON: "Verified",
                 SETTINGS_GAMES_LAST_PLAYED: "Last played **{when}**",
@@ -54922,6 +54923,8 @@
                 CONTENT_INVENTORY_MEMBERLIST_LEARN_MORE_GOT_IT: "Got it!",
                 CONTENT_INVENTORY_MEMBERLIST_LEARN_MORE_DISCLOSURE: "Learn more about [Recent Activity]({recentActivityURL}) or manage your [Activity Privacy](handleActivityPrivacyClick)",
                 CONTENT_INVENTORY_JOIN_LIVE_CHANNEL: "Join {channelName}",
+                CONTENT_INVENTORY_SWITCH_SHARE_TO_CHANNEL: "Switch to channel message",
+                CONTENT_INVENTORY_SWITCH_SEND_MESSAGE_TO_USER: "Switch to direct message",
                 RECENT_GAMES: "Recent Games",
                 USER_RECENT_GAMES_LAST_PLAYED_WEEKS_AGO: "{count} {count, plural, =1 {week} other {weeks}} ago",
                 USER_RECENT_GAMES_LAST_PLAYED_DAYS_AGO: "{count} {count, plural, =1 {day} other {days}} ago",
@@ -85767,8 +85770,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284077", "284077"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284077")), t = 0), t
+                let t = parseInt((e = "284096", "284096"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284096")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107913,8 +107916,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284077",
-                    versionHash: "ac1125fbdb2409f18d6acbb602b8cef05618cb19"
+                    buildNumber: "284096",
+                    versionHash: "adc6cec8eda6d3e8be0165803b1b5130860cc86b"
                 }
             }
             n.r(t), n.d(t, {
@@ -157443,8 +157446,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712895578405",
-                                    build_number: "284077"
+                                    built_at: "1712925048143",
+                                    build_number: "284096"
                                 }
                             },
                             retries: 1
@@ -232616,7 +232619,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ac1125fbdb2409f18d6acbb602b8cef05618cb19"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "adc6cec8eda6d3e8be0165803b1b5130860cc86b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258709,7 +258712,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284077"
+                                build_number: "284096"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265885,7 +265888,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284077", "284077"), 10);
+                let s = parseInt((n = "284096", "284096"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292642,4 +292645,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.52504abbd9dda8a127f9.js.map
+//# sourceMappingURL=65573.72f7d1229095a832260e.js.map
