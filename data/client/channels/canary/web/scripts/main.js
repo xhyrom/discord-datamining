@@ -36558,7 +36558,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284164", ", Version Hash: ").concat("f941a6ac87131926ef49b74b88740353d8c4f6bc")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284181", ", Version Hash: ").concat("8027d35da6cd91b87ee505540123c11f68074bf2")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -73344,6 +73344,11 @@
                     inlineRequire: () => n("696287").default,
                     neverLoadBeforeConnectionOpen: !0
                 },
+                DmSettingsUpsellManager: {
+                    actions: ["DM_SETTINGS_UPSELL_SHOW"],
+                    inlineRequire: () => n("401416").default,
+                    neverLoadBeforeConnectionOpen: !0
+                },
                 TenureRewardManager: {
                     actions: ["POST_CONNECTION_OPEN", "CONNECTION_CLOSED", "ENTITLEMENT_FETCH_APPLICATION_SUCCESS", "ENTITLEMENT_CREATE", "ENTITLEMENT_UPDATE", "ENTITLEMENT_DELETE", "LOGOUT"],
                     inlineRequire: () => n("944880").default,
@@ -86424,8 +86429,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284164", "284164"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284164")), t = 0), t
+                let t = parseInt((e = "284181", "284181"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284181")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -108789,8 +108794,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284164",
-                    versionHash: "f941a6ac87131926ef49b74b88740353d8c4f6bc"
+                    buildNumber: "284181",
+                    versionHash: "8027d35da6cd91b87ee505540123c11f68074bf2"
                 }
             }
             n.r(t), n.d(t, {
@@ -110047,6 +110052,105 @@
                     })
                 })
             }
+        },
+        25733: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("735250");
+            n("470079");
+            var r = n("433517"),
+                s = n("481060"),
+                a = n("704587"),
+                o = n("338096");
+            t.default = {
+                openDmSettingsUpsellModal(e) {
+                    if (!(0, a.isEligibleForDmSettingsUpsell)({
+                            location: "DmSettingsUpsellManager"
+                        })) return;
+                    let t = r.Storage.get(o.DM_SETTINGS_UPSELL_LAST_SHOWN_KEY),
+                        l = Date.now();
+                    (null == t || l - t > o.DM_SETTINGS_UPSELL_LAST_SHOWN_MAX_TIME_MS) && (r.Storage.set(o.DM_SETTINGS_UPSELL_LAST_SHOWN_KEY, l), (0, s.openModalLazy)(async () => {
+                        let {
+                            default: t
+                        } = await Promise.all([n.e("99387"), n.e("35489")]).then(n.bind(n, "582712"));
+                        return n => (0, i.jsx)(t, {
+                            ...n,
+                            guildId: e
+                        })
+                    }))
+                }
+            }
+        },
+        338096: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                DM_SETTINGS_UPSELL_LAST_SHOWN_KEY: function() {
+                    return i
+                },
+                DM_SETTINGS_UPSELL_LAST_SHOWN_MAX_TIME_MS: function() {
+                    return r
+                }
+            });
+            let i = "dmSettingsUpsellLastShown",
+                r = 6048e5
+        },
+        704587: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                isEligibleForDmSettingsUpsell: function() {
+                    return r
+                }
+            });
+            let i = (0, n("818083").createExperiment)({
+                kind: "user",
+                id: "2024-04_dm_settings_upsell",
+                label: "DM Settings Upsell",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enable DM Settings Upsell",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            });
+
+            function r(e) {
+                let {
+                    location: t,
+                    autoTrackExposure: n = !1
+                } = e;
+                return i.getCurrentConfig({
+                    location: t
+                }, {
+                    autoTrackExposure: n
+                }).enabled
+            }
+        },
+        401416: function(e, t, n) {
+            "use strict";
+            n.r(t), n("47120");
+            var i = n("147913"),
+                r = n("25733");
+            class s extends i.default {
+                handleDmSettingsUpsellShow(e) {
+                    r.default.openDmSettingsUpsellModal(e.guildId)
+                }
+                constructor(...e) {
+                    var t, n, i;
+                    super(...e), t = this, n = "actions", i = {
+                        DM_SETTINGS_UPSELL_SHOW: this.handleDmSettingsUpsellShow
+                    }, n in t ? Object.defineProperty(t, n, {
+                        value: i,
+                        enumerable: !0,
+                        configurable: !0,
+                        writable: !0
+                    }) : t[n] = i
+                }
+            }
+            t.default = new s
         },
         149203: function(e, t, n) {
             "use strict";
@@ -128177,6 +128281,11 @@
                     type: "USER_APPLICATION_REMOVE",
                     applicationId: e.application_id
                 })
+            }), b(["DM_SETTINGS_UPSELL_SHOW"], e => {
+                k({
+                    type: "DM_SETTINGS_UPSELL_SHOW",
+                    guildId: e.guild_id
+                })
             })
         },
         985375: function(e, t, n) {
@@ -142648,7 +142757,7 @@
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("11250"), n.e("95393"), n.e("14262"), n.e("22347"), n.e("66993")]).then(n.bind(n, "697849"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("11250"), n.e("14262"), n.e("95393"), n.e("22347"), n.e("66993")]).then(n.bind(n, "697849"));
                     return n => (0, i.jsx)(e, {
                         guildScheduledEventId: t,
                         parentGuildId: s,
@@ -144449,7 +144558,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("79504"), n.e("58153"), n.e("25381"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("90508"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("71697"), n.e("40866"), n.e("43643"), n.e("19087"), n.e("13545"), n.e("75301"), n.e("62856"), n.e("20443")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(h.GuildFeatures.COMMUNITY)) && (t === h.GuildSettingsSections.GUILD_AUTOMOD && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_AUTOMOD), t === h.GuildSettingsSections.MEMBER_VERIFICATION && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(h.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("79504"), n.e("58153"), n.e("25381"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("71697"), n.e("40866"), n.e("43643"), n.e("19087"), n.e("13545"), n.e("75301"), n.e("62856"), n.e("20443")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(h.GuildFeatures.COMMUNITY)) && (t === h.GuildSettingsSections.GUILD_AUTOMOD && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_AUTOMOD), t === h.GuildSettingsSections.MEMBER_VERIFICATION && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(h.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -158319,8 +158428,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712940737610",
-                                    build_number: "284164"
+                                    built_at: "1712941760726",
+                                    build_number: "284181"
                                 }
                             },
                             retries: 1
@@ -233577,7 +233686,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "f941a6ac87131926ef49b74b88740353d8c4f6bc"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8027d35da6cd91b87ee505540123c11f68074bf2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -259738,7 +259847,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284164"
+                                build_number: "284181"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -266914,7 +267023,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284164", "284164"), 10);
+                let s = parseInt((n = "284181", "284181"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -293708,4 +293817,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.7b37e91dfe135480eca4.js.map
+//# sourceMappingURL=65573.358fa780ef2877a13c11.js.map
