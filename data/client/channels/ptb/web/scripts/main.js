@@ -36575,7 +36575,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284281", ", Version Hash: ").concat("3b716d7a6f79c0b08cb45a517c798625bb9cd340")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284290", ", Version Hash: ").concat("b5cf6f0f70e6db982a49ce9b9b04dc880f161724")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86470,8 +86470,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284281", "284281"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284281")), t = 0), t
+                let t = parseInt((e = "284290", "284290"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284290")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -109985,8 +109985,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284281",
-                    versionHash: "3b716d7a6f79c0b08cb45a517c798625bb9cd340"
+                    buildNumber: "284290",
+                    versionHash: "b5cf6f0f70e6db982a49ce9b9b04dc880f161724"
                 }
             }
             n.r(t), n.d(t, {
@@ -159626,8 +159626,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712952301383",
-                                    build_number: "284281"
+                                    built_at: "1712953042175",
+                                    build_number: "284290"
                                 }
                             },
                             retries: 1
@@ -168646,26 +168646,29 @@
                 CUSTOM_DISCRIMINATOR: function() {
                     return A
                 },
+                CUSTOM_NOTIFICATION_SOUNDS: function() {
+                    return v
+                },
                 EMOJIS_EVERYWHERE: function() {
                     return E
                 },
                 FANCY_VOICE_CHANNEL_REACTIONS: function() {
-                    return v
+                    return M
                 },
                 FREE_BOOSTS: function() {
                     return g
                 },
                 INCREASED_GUILD_LIMIT: function() {
-                    return U
-                },
-                INCREASED_MESSAGE_LENGTH: function() {
                     return b
                 },
-                INCREASED_VIDEO_UPLOAD_QUALITY: function() {
+                INCREASED_MESSAGE_LENGTH: function() {
                     return G
                 },
+                INCREASED_VIDEO_UPLOAD_QUALITY: function() {
+                    return w
+                },
                 INSTALL_PREMIUM_APPLICATIONS: function() {
-                    return M
+                    return y
                 },
                 PREMIUM_GUILD_MEMBER_PROFILE: function() {
                     return h
@@ -168677,7 +168680,7 @@
                     return N
                 },
                 REDEEM_PREMIUM_PERKS: function() {
-                    return y
+                    return P
                 },
                 SOUNDBOARD_EVERYWHERE: function() {
                     return T
@@ -168692,13 +168695,13 @@
                     return L
                 },
                 UPLOAD_LARGE_FILES: function() {
-                    return w
+                    return k
                 },
                 VIDEO_FILTER_ASSETS: function() {
-                    return P
+                    return U
                 },
                 canUserUse: function() {
-                    return B
+                    return V
                 }
             });
             var i = n("848246"),
@@ -168720,7 +168723,7 @@
                         try {
                             let n = d[t.premiumType];
                             if (null == n) return u.warn("Cannot find the corresponding SKU to the user's premium type ".concat(t.premiumType)), !1;
-                            let i = k[n];
+                            let i = B[n];
                             if (null == i) return u.warn("Cannot find the corresponding product catalog entry to the user's SKU ".concat(n, " and premium type ").concat(t.premiumType)), !1;
                             return i.skuFeatures.includes(e)
                         } catch (e) {
@@ -168748,22 +168751,23 @@
                 g = new _("freeBoosts"),
                 L = new _(i.EntitlementFeatureNames.STREAM_MID_QUALITY),
                 D = new _(i.EntitlementFeatureNames.STREAM_HIGH_QUALITY),
-                v = new _("fancyVoiceChannelReactions"),
-                M = new _("installPremiumApplications"),
-                y = new _("redeemPremiumPerks"),
-                P = new _(i.EntitlementFeatureNames.VIDEO_FILTER_ASSETS);
+                v = new _(i.EntitlementFeatureNames.CUSTOM_NOTIFICATION_SOUNDS),
+                M = new _("fancyVoiceChannelReactions"),
+                y = new _("installPremiumApplications"),
+                P = new _("redeemPremiumPerks"),
+                U = new _(i.EntitlementFeatureNames.VIDEO_FILTER_ASSETS);
             new a.default(i.EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE, s.getUserMaxFileSize);
-            let U = new _(i.EntitlementFeatureNames.INCREASED_GUILD_LIMIT),
-                b = new _(i.EntitlementFeatureNames.INCREASED_MESSAGE_LENGTH),
-                G = new _("increasedVideoUploadQuality"),
-                w = new _("uploadLargeFiles"),
-                k = Object.freeze({
-                    [l.PremiumSubscriptionSKUs.TIER_0]: new o.default(l.PremiumSubscriptionSKUs.TIER_0, [c, E, I, m, P, G, w, p]),
-                    [l.PremiumSubscriptionSKUs.TIER_1]: new o.default(l.PremiumSubscriptionSKUs.TIER_1, [c, E, S, A, m, C, L, v, G, w, p]),
-                    [l.PremiumSubscriptionSKUs.TIER_2]: new o.default(l.PremiumSubscriptionSKUs.TIER_2, [c, E, I, T, f, S, A, h, m, N, R, C, g, L, D, v, M, y, P, U, b, G, w, p, O])
+            let b = new _(i.EntitlementFeatureNames.INCREASED_GUILD_LIMIT),
+                G = new _(i.EntitlementFeatureNames.INCREASED_MESSAGE_LENGTH),
+                w = new _("increasedVideoUploadQuality"),
+                k = new _("uploadLargeFiles"),
+                B = Object.freeze({
+                    [l.PremiumSubscriptionSKUs.TIER_0]: new o.default(l.PremiumSubscriptionSKUs.TIER_0, [c, E, I, m, U, w, k, p]),
+                    [l.PremiumSubscriptionSKUs.TIER_1]: new o.default(l.PremiumSubscriptionSKUs.TIER_1, [c, E, S, A, m, C, L, M, w, k, p]),
+                    [l.PremiumSubscriptionSKUs.TIER_2]: new o.default(l.PremiumSubscriptionSKUs.TIER_2, [c, E, I, T, f, S, A, h, m, N, R, C, g, L, D, M, y, P, U, b, G, w, k, p, O, v])
                 });
 
-            function B(e, t) {
+            function V(e, t) {
                 return e.getFeatureValue(t)
             }
         },
@@ -234943,7 +234947,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3b716d7a6f79c0b08cb45a517c798625bb9cd340"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "b5cf6f0f70e6db982a49ce9b9b04dc880f161724"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -261108,7 +261112,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284281"
+                                build_number: "284290"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -263659,6 +263663,9 @@
                 },
                 canUseCollectibles: function(e) {
                     return (0, I.canUserUse)(I.COLLECTIBLES, e)
+                },
+                canUseCustomNotificationSounds: function(e) {
+                    return (0, I.canUserUse)(I.CUSTOM_NOTIFICATION_SOUNDS, e)
                 },
                 formatPriceString: function(e, t) {
                     let n = (0, D.formatPrice)(e.amount, e.currency),
@@ -268284,7 +268291,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284281", "284281"), 10);
+                let s = parseInt((n = "284290", "284290"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -294125,7 +294132,7 @@
                 EntitlementFeatureNames: function() {
                     return i
                 }
-            }), (r = i || (i = {})).ANIMATED_EMOJIS = "animatedEmojis", r.EMOJIS_EVERYWHERE = "emojisEverywhere", r.STICKERS_EVERYWHERE = "stickersEverywhere", r.SOUNDBOARD_EVERYWHERE = "soundboardEverywhere", r.ANIMATED_AVATAR = "animatedAvatar", r.CUSTOM_DISCRIMINATOR = "customDiscriminator", r.PREMIUM_GUILD_MEMBER_PROFILE = "premiumGuildMemberProfile", r.PROFILE_PREMIUM_FEATURES = "profilePremiumFeatures", r.STREAM_MID_QUALITY = "streamMidQuality", r.STREAM_HIGH_QUALITY = "streamHighQuality", r.VIDEO_FILTER_ASSETS = "videoFilterAssets", r.INCREASED_FILE_UPLOAD_SIZE = "increasedFileUploadSize", r.INCREASED_GUILD_LIMIT = "increasedGuildLimit", r.INCREASED_MESSAGE_LENGTH = "increasedMessageLength", r.NITRO_REACTION_TOGGLE = "nitroReactionToggle", r.CLIENT_THEMES = "clientThemes", r.PREMIUM_COLLECTIBLES = "premiumCollectibles", r.CUSTOM_CALL_SOUNDS = "customCallSounds"
+            }), (r = i || (i = {})).ANIMATED_EMOJIS = "animatedEmojis", r.EMOJIS_EVERYWHERE = "emojisEverywhere", r.STICKERS_EVERYWHERE = "stickersEverywhere", r.SOUNDBOARD_EVERYWHERE = "soundboardEverywhere", r.ANIMATED_AVATAR = "animatedAvatar", r.CUSTOM_DISCRIMINATOR = "customDiscriminator", r.PREMIUM_GUILD_MEMBER_PROFILE = "premiumGuildMemberProfile", r.PROFILE_PREMIUM_FEATURES = "profilePremiumFeatures", r.STREAM_MID_QUALITY = "streamMidQuality", r.STREAM_HIGH_QUALITY = "streamHighQuality", r.VIDEO_FILTER_ASSETS = "videoFilterAssets", r.INCREASED_FILE_UPLOAD_SIZE = "increasedFileUploadSize", r.INCREASED_GUILD_LIMIT = "increasedGuildLimit", r.INCREASED_MESSAGE_LENGTH = "increasedMessageLength", r.NITRO_REACTION_TOGGLE = "nitroReactionToggle", r.CLIENT_THEMES = "clientThemes", r.PREMIUM_COLLECTIBLES = "premiumCollectibles", r.CUSTOM_CALL_SOUNDS = "customCallSounds", r.CUSTOM_NOTIFICATION_SOUNDS = "customNotificationSounds"
         },
         587158: function(e, t, n) {
             "use strict";
@@ -295065,4 +295072,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.47c9cf31ff59d6493fb2.js.map
+//# sourceMappingURL=65573.3876d07de50f2dc6796d.js.map
