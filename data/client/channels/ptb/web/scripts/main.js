@@ -36537,7 +36537,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284103", ", Version Hash: ").concat("0721490ef77bb07dfdf01b28d6c75be158a50a83")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284110", ", Version Hash: ").concat("a79b90634c4c9433cf60c144c15968c3d0a1db6d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55285,7 +55285,7 @@
                 CLAN_SETUP_PRIMETIME_TITLE: "What's the best time to play games together?",
                 CLAN_SETUP_PRIMETIME_SUBTITLE: "PrimeTime is a dedicated time for the Clan to play games and hang out together.",
                 CLAN_SETUP_PRIMETIME_ADD: "Add another",
-                CLAN_SETUP_CUSTOMIZE_TITLE: "Pick a badge for your clan",
+                CLAN_SETUP_CUSTOMIZE_TITLE: "Pick a badge and tag for your clan",
                 CLAN_SETUP_CUSTOMIZE_SUBTITLE: "Choose a badge to represent your clan. This will be shown on your clan tag and your clan's profile everywhere, so choose wisely!",
                 CLAN_SETUP_CUSTOMIZE_HELP_TEXT: "Maxmimum 4 characters, alphabet (A-Z) and numbers only",
                 CLAN_SETUP_TAG_PLACEHOLDER: "GGEZ",
@@ -55333,6 +55333,9 @@
                 MEMBER_VERIFICATION_ANSWER_PLACEHOLDER: "Enter your answer",
                 MEMBER_VERIFICATION_USERS_APPLICATION: "!!{username}!!'s application",
                 CLAN_APPLICATION_GDM_CONSENT: "By applying, you give the guild admins permission to message you regarding your application.",
+                CLAN_BADGE: "Badge",
+                CLAN_BADGE_COLORS: "Badge Colors",
+                CLAN_TAG_VALIDATION_RULES: "Maximum 4 characters, alphabet (A-Z) and numbers only.",
                 SIGNUP_BUTTON_TOOLTIP_CTA: "Click to preview",
                 SIGNUP_COMPLETE_CTA: "Sign Up",
                 SIGNUP_EMAIL_PROMPT: "Confirm your email to secure your spot on the waitlist",
@@ -85770,8 +85773,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284103", "284103"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284103")), t = 0), t
+                let t = parseInt((e = "284110", "284110"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284110")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -107916,8 +107919,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284103",
-                    versionHash: "0721490ef77bb07dfdf01b28d6c75be158a50a83"
+                    buildNumber: "284110",
+                    versionHash: "a79b90634c4c9433cf60c144c15968c3d0a1db6d"
                 }
             }
             n.r(t), n.d(t, {
@@ -143576,7 +143579,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("79504"), n.e("58153"), n.e("25381"), n.e("33053"), n.e("51238"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("71697"), n.e("40866"), n.e("43643"), n.e("15023"), n.e("28216"), n.e("75301"), n.e("62856"), n.e("64979")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(h.GuildFeatures.COMMUNITY)) && (t === h.GuildSettingsSections.GUILD_AUTOMOD && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_AUTOMOD), t === h.GuildSettingsSections.MEMBER_VERIFICATION && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(h.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("79504"), n.e("58153"), n.e("25381"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("71697"), n.e("40866"), n.e("43643"), n.e("19087"), n.e("28216"), n.e("75301"), n.e("62856"), n.e("64979")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(h.GuildFeatures.COMMUNITY)) && (t === h.GuildSettingsSections.GUILD_AUTOMOD && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_AUTOMOD), t === h.GuildSettingsSections.MEMBER_VERIFICATION && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(h.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -157446,8 +157449,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712929610896",
-                                    build_number: "284103"
+                                    built_at: "1712932216504",
+                                    build_number: "284110"
                                 }
                             },
                             retries: 1
@@ -232629,7 +232632,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0721490ef77bb07dfdf01b28d6c75be158a50a83"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a79b90634c4c9433cf60c144c15968c3d0a1db6d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -258722,7 +258725,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284103"
+                                build_number: "284110"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -265898,7 +265901,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284103", "284103"), 10);
+                let s = parseInt((n = "284110", "284110"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -292655,4 +292658,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.21e4d375a3dc1cdcf6be.js.map
+//# sourceMappingURL=65573.b47096632cc42d0510d8.js.map

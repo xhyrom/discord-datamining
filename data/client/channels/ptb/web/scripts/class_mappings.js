@@ -4993,6 +4993,23 @@
                 signatureText: "signatureText_cb71b7"
             }
         },
+        996399: function(e) {
+            "use strict";
+            e.exports = {
+                badgeAssetContainer: "badgeAssetContainer__3d9d5",
+                badgeAssetContainerSelected: "badgeAssetContainerSelected__371e2",
+                badgesContainer: "badgesContainer__0f8f1",
+                colorPicker: "colorPicker__42c22",
+                container: "container__208b2",
+                customColorPickerContainer: "customColorPickerContainer__016e5",
+                customColorPickerContainerHidden: "customColorPickerContainerHidden__054e5",
+                pickerContainer: "pickerContainer__5dd4f",
+                pickerGrid: "pickerGrid__1da1d",
+                tagContainer: "tagContainer_eb01b9",
+                tagInput: "tagInput__82542",
+                tagInputWrapper: "tagInputWrapper__7b1bc"
+            }
+        },
         597338: function(e) {
             "use strict";
             e.exports = {
@@ -5028,7 +5045,6 @@
                 slideContent: "slideContent__6ae94",
                 stepNum: "stepNum_b5f2f3",
                 subtitle: "subtitle__62596",
-                tagInput: "tagInput__4fbf8",
                 timeSelection: "timeSelection_cf3393",
                 timeSelectorRow: "timeSelectorRow_d86011",
                 title: "title__20916",
