@@ -4003,6 +4003,14 @@
       "PUT"
     ]
   },
+  "GUILD_CLAN_INFO": {
+    "url": "/clan/:param",
+    "allowed_methods": null
+  },
+  "USER_SET_CLAN_IDENTITY": {
+    "url": "/users/@me/clan",
+    "allowed_methods": null
+  },
   "TENOR_ASSET_PATH": {
     "url": "/tenor",
     "allowed_methods": null
