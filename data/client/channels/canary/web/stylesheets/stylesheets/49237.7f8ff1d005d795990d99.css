@@ -18636,7 +18636,7 @@ h6.title_c2a544 {
 }
 
 .markdown__8e519 {
-    font-size: 16px;
+    font-size: 1rem;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -22204,6 +22204,98 @@ strong {
     filter: saturate(var(--saturation-factor, 1))
 }
 
+.phoneField__47dd1 {
+    border-radius: 5px;
+    padding: 2px;
+    position: relative;
+    background-color: var(--input-background);
+    border: 1px solid var(--deprecated-text-input-border)
+}
+
+.phoneField__47dd1 .countryButton_e94731 {
+    height: 32px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 3px;
+    margin: 4px
+}
+
+.phoneField__47dd1 .countryButtonInner__3a05d {
+    display: flex;
+    align-items: center
+}
+
+.phoneField__47dd1 .countryCodeContainer__670d7 {
+    padding-left: 4px;
+    padding-right: 4px
+}
+
+.phoneField__47dd1 .plusSign_ed3829 {
+    margin-right: 2px;
+    color: var(--white-500)
+}
+
+.phoneField__47dd1 .countryCode__4b71e {
+    text-align: center;
+    color: var(--white-500)
+}
+
+.phoneField__47dd1 .phoneFieldExpand_b79228 {
+    stroke: var(--white-500)
+}
+
+.phoneField__47dd1 .inputField_c0d34f {
+    background-color: var(--input-background);
+    color: var(--text-normal);
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    flex-grow: 1
+}
+
+.phoneField__47dd1 .sendButton__8b555 {
+    margin-right: 4px
+}
+
+.phoneVerificationModal_bdbc3e {
+    position: relative;
+    width: 440px;
+    min-height: 252px;
+    padding: 16px
+}
+
+.phoneVerificationModal_bdbc3e .animationContainer__208d6 {
+    position: absolute;
+    top: -150px;
+    left: 130px;
+    right: 130px
+}
+
+.phoneVerificationModal_bdbc3e .title_d77380 {
+    color: var(--header-primary);
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: auto;
+    padding-top: 80px
+}
+
+.phoneVerificationModal_bdbc3e .description__6847f {
+    color: var(--text-normal);
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px
+}
+
+.phoneVerificationModal_bdbc3e .description__6847f.error_d16d06 {
+    color: var(--status-danger)
+}
+
+.phoneVerificationModal_bdbc3e .field__50752 {
+    align-self: stretch
+}
+
 .pageActions_ccda85 {
     border-radius: 3px;
     padding: 20px 0;
@@ -23091,98 +23183,6 @@ html.disable-forced-colors * {
 
 .enable-forced-colors .colorPickerSwatch__343b4.disabled__95180 {
     border-color: GrayText
-}
-
-.phoneField__47dd1 {
-    border-radius: 5px;
-    padding: 2px;
-    position: relative;
-    background-color: var(--input-background);
-    border: 1px solid var(--deprecated-text-input-border)
-}
-
-.phoneField__47dd1 .countryButton_e94731 {
-    height: 32px;
-    padding-left: 8px;
-    padding-right: 8px;
-    border-radius: 3px;
-    margin: 4px
-}
-
-.phoneField__47dd1 .countryButtonInner__3a05d {
-    display: flex;
-    align-items: center
-}
-
-.phoneField__47dd1 .countryCodeContainer__670d7 {
-    padding-left: 4px;
-    padding-right: 4px
-}
-
-.phoneField__47dd1 .plusSign_ed3829 {
-    margin-right: 2px;
-    color: var(--white-500)
-}
-
-.phoneField__47dd1 .countryCode__4b71e {
-    text-align: center;
-    color: var(--white-500)
-}
-
-.phoneField__47dd1 .phoneFieldExpand_b79228 {
-    stroke: var(--white-500)
-}
-
-.phoneField__47dd1 .inputField_c0d34f {
-    background-color: var(--input-background);
-    color: var(--text-normal);
-    box-sizing: border-box;
-    height: 40px;
-    padding: 10px;
-    border: none;
-    font-size: 16px;
-    flex-grow: 1
-}
-
-.phoneField__47dd1 .sendButton__8b555 {
-    margin-right: 4px
-}
-
-.phoneVerificationModal_bdbc3e {
-    position: relative;
-    width: 440px;
-    min-height: 252px;
-    padding: 16px
-}
-
-.phoneVerificationModal_bdbc3e .animationContainer__208d6 {
-    position: absolute;
-    top: -150px;
-    left: 130px;
-    right: 130px
-}
-
-.phoneVerificationModal_bdbc3e .title_d77380 {
-    color: var(--header-primary);
-    font-weight: 700;
-    font-size: 20px;
-    margin-top: auto;
-    padding-top: 80px
-}
-
-.phoneVerificationModal_bdbc3e .description__6847f {
-    color: var(--text-normal);
-    font-size: 16px;
-    text-align: center;
-    line-height: 20px
-}
-
-.phoneVerificationModal_bdbc3e .description__6847f.error_d16d06 {
-    color: var(--status-danger)
-}
-
-.phoneVerificationModal_bdbc3e .field__50752 {
-    align-self: stretch
 }
 
 .card_dc88cd {
@@ -28190,4 +28190,4 @@ span.button_ae40a4.disabled__1dc58 {
     }
 }
 
-/*# sourceMappingURL=49237.9bc855a798595d96bb6b.css.map*/
+/*# sourceMappingURL=49237.7f8ff1d005d795990d99.css.map*/
