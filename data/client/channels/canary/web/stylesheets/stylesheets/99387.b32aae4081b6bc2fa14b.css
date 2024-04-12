@@ -82859,6 +82859,170 @@ input::-webkit-inner-spin-button {
     margin-bottom: 24px
 }
 
+.countDownWrapper__60b05 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    position: fixed;
+    left: calc(50% + 156px);
+    border-radius: 48px;
+    bottom: 0;
+    width: 450px;
+    height: 32px;
+    padding: 4px 32px;
+    z-index: 100;
+    font-family: var(--font-code);
+    pointer-events: none
+}
+
+.fullScreenWrapper__4d78b {
+    left: calc(50% + 20px)
+}
+
+.mobileWrapper_c50f89 {
+    left: 50%
+}
+
+.countdownIcon__7d52a {
+    height: 16px;
+    margin-right: 4px
+}
+
+.countdownLabel__2f456 {
+    margin-left: -12px;
+    text-transform: uppercase;
+    font-family: inherit;
+    color: inherit
+}
+
+.countdown_c6377a {
+    font-family: inherit;
+    color: inherit
+}
+
+.headerContainerGift_d317cf {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background-image: linear-gradient(var(--modal-background), var(--modal-background));
+    background-size: 100%calc(100% - 20px)
+}
+
+.closeButtonGift__62cda {
+    margin-left: auto
+}
+
+.previewContainer__73054 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    z-index: 0
+}
+
+.previewContainerSetHeight__1f785 {
+    height: 390px
+}
+
+.previewContainerAnimation__68771 {
+    animation: scaleIn__8a961.5s
+}
+
+.preview__01481 {
+    position: relative;
+    width: 100%;
+    height: 100%
+}
+
+.previewForCollected__5dcb1 {
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: top;
+    object-position: top
+}
+
+.purchasedEffect__2ebed {
+    opacity: .35
+}
+
+@keyframes scaleIn__8a961 {
+    0% {
+        transform: scale(.7)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.avatarDecorationPreview__08471 {
+    padding: 16px 0 32px
+}
+
+.profileEffectPreview__9177c {
+    scale: .9;
+    position: relative
+}
+
+.container_dd4c25 {
+    width: 440px;
+    height: 300px
+}
+
+.content__1db9b {
+    border-radius: 8px;
+    background-color: var(--modal-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.avatarBackground__2834d {
+    width: 221px;
+    height: 168px;
+    border-radius: 8px;
+    border: 3px solid#94d783;
+    background: linear-gradient(0deg, rgba(255, 255, 255, .7)0%, rgba(255, 255, 255, .7)100%), linear-gradient(180deg, #94d783 0%, #139968 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: -35px;
+    gap: 12px;
+    z-index: -1;
+    margin: auto;
+    margin-top: -95px
+}
+
+.avatar__8c618 {
+    margin-top: -60px
+}
+
+.rect_b84f5b {
+    width: 206px;
+    height: 24px;
+    border-radius: 4px;
+    opacity: .45;
+    background-color: var(--white-500)
+}
+
+.bottomOverlay__99d09 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 89px;
+    background: linear-gradient(180deg, rgba(49, 51, 56, 0)0%, #313338 57.5%)
+}
+
+.bodyText__8f28f {
+    text-align: center
+}
+
 .confirmation__92535 {
     align-items: center;
     display: flex;
@@ -88805,272 +88969,9 @@ html .tabBadge_ff691d {
     height: 200px
 }
 
-.countDownWrapper__60b05 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    position: fixed;
-    left: calc(50% + 156px);
-    border-radius: 48px;
-    bottom: 0;
-    width: 450px;
-    height: 32px;
-    padding: 4px 32px;
-    z-index: 100;
-    font-family: var(--font-code);
-    pointer-events: none
-}
-
-.fullScreenWrapper__4d78b {
-    left: calc(50% + 20px)
-}
-
-.mobileWrapper_c50f89 {
-    left: 50%
-}
-
-.countdownIcon__7d52a {
-    height: 16px;
-    margin-right: 4px
-}
-
-.countdownLabel__2f456 {
-    margin-left: -12px;
-    text-transform: uppercase;
-    font-family: inherit;
-    color: inherit
-}
-
-.countdown_c6377a {
-    font-family: inherit;
-    color: inherit
-}
-
-.headerContainerGift_d317cf {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 16px;
-    background-image: linear-gradient(var(--modal-background), var(--modal-background));
-    background-size: 100%calc(100% - 20px)
-}
-
-.closeButtonGift__62cda {
-    margin-left: auto
-}
-
 .banner_cc9062 {
     width: 100%;
     height: 100%
-}
-
-.badgeDark__1b20d {
-    background-color: var(--white-500);
-    color: var(--black-500)
-}
-
-.badgeLight__5fbd1 {
-    background-color: var(--black-500);
-    color: var(--white-500)
-}
-
-.banner__1f369 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-16);
-    margin-top: 40px;
-    width: 100%;
-    max-width: 1060px;
-    min-height: 240px;
-    border-radius: var(--radius-xxl);
-    outline: 2px solid transparent;
-    outline-offset: -2px
-}
-
-.shyBanner__78fa4 {
-    min-width: 700px;
-    background-color: #ff4655;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 0;
-    background-position-y: 100%;
-    background-origin: border-box;
-    justify-content: center;
-    gap: 120px;
-    box-shadow: 0 0 27.6px 0 rgba(255, 70, 85, .5)
-}
-
-.noOverflow_cde9b3 {
-    position: absolute;
-    bottom: 0;
-    overflow: hidden;
-    border-radius: inherit;
-    width: 100%;
-    height: 240px
-}
-
-.shyGrid__4bae9 {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 394px;
-    -o-object-fit: cover;
-    object-fit: cover
-}
-
-.shyBannerImage__176aa {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    border-radius: var(--radius-xxl);
-    height: 394px
-}
-
-.shyBannerLeft__52726 {
-    -o-object-position: left center;
-    object-position: left center
-}
-
-.shyBannerRight__52404 {
-    -o-object-position: right center;
-    object-position: right center
-}
-
-.attributionLogos__35ea7 {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: var(--white)
-}
-
-.attributionLogos__35ea7 img {
-    height: 16px;
-    margin: 0 4px;
-    -o-object-fit: contain;
-    object-fit: contain
-}
-
-.shyBannerLogo__8ebd1 {
-    position: absolute;
-    max-width: 55%
-}
-
-.summary__25fda {
-    z-index: 1;
-    color: var(--white-500)
-}
-
-.shopBanner_e2f915 {
-    grid-column: 1/-1;
-    margin-top: 40px;
-    position: relative;
-    width: 100%;
-    max-width: 1060px;
-    min-height: 240px;
-    border-radius: var(--radius-xxl);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-16);
-    outline: 2px solid transparent;
-    outline-offset: -2px
-}
-
-.categoryLogo_bd13ba {
-    z-index: 1;
-    max-height: 96px;
-    max-width: 55%
-}
-
-.discordLogo__76ba1 {
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    color: var(--white);
-    gap: 3px
-}
-
-.discordIcon__660a8 {
-    width: auto;
-    height: 12px
-}
-
-.discordWordmark__5e0cb {
-    width: auto;
-    height: 16px
-}
-
-.summary__55622 {
-    z-index: 1;
-    color: var(--white-500)
-}
-
-.blackSummary_e9d2b0 {
-    color: var(--black-500)
-}
-
-.limitedTimeBadge__8c0af {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    z-index: 1
-}
-
-.getPremiumHook__9a256 {
-    cursor: pointer;
-    -webkit-text-decoration: underline;
-    text-decoration: underline
-}
-
-.previewContainer__73054 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border-radius: var(--radius-md);
-    overflow: hidden;
-    z-index: 0
-}
-
-.previewContainerSetHeight__1f785 {
-    height: 390px
-}
-
-.previewContainerAnimation__68771 {
-    animation: scaleIn__8a961.5s
-}
-
-.preview__01481 {
-    position: relative;
-    width: 100%;
-    height: 100%
-}
-
-.previewForCollected__5dcb1 {
-    -o-object-fit: contain;
-    object-fit: contain;
-    -o-object-position: top;
-    object-position: top
-}
-
-.purchasedEffect__2ebed {
-    opacity: .35
-}
-
-@keyframes scaleIn__8a961 {
-    0% {
-        transform: scale(.7)
-    }
-
-    to {
-        transform: scale(1)
-    }
 }
 
 .modalRoot__1d34b {
@@ -89260,15 +89161,6 @@ html .tabBadge_ff691d {
     text-decoration-color: var(--text-link)
 }
 
-.avatarDecorationPreview__08471 {
-    padding: 16px 0 32px
-}
-
-.profileEffectPreview__9177c {
-    scale: .9;
-    position: relative
-}
-
 .container__32e01 {
     display: inline-block;
     padding: 0 6px;
@@ -89285,6 +89177,169 @@ html .tabBadge_ff691d {
 .lightText__31657 {
     color: var(--white-500);
     border-color: var(--white-500)
+}
+
+.badgeDark__1b20d {
+    background-color: var(--white-500);
+    color: var(--black-500)
+}
+
+.badgeLight__5fbd1 {
+    background-color: var(--black-500);
+    color: var(--white-500)
+}
+
+.banner__1f369 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-16);
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1060px;
+    min-height: 240px;
+    border-radius: var(--radius-xxl);
+    outline: 2px solid transparent;
+    outline-offset: -2px
+}
+
+.shyBanner__78fa4 {
+    min-width: 700px;
+    background-color: #ff4655;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 100%;
+    background-origin: border-box;
+    justify-content: center;
+    gap: 120px;
+    box-shadow: 0 0 27.6px 0 rgba(255, 70, 85, .5)
+}
+
+.noOverflow_cde9b3 {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: inherit;
+    width: 100%;
+    height: 240px
+}
+
+.shyGrid__4bae9 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 394px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.shyBannerImage__176aa {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: var(--radius-xxl);
+    height: 394px
+}
+
+.shyBannerLeft__52726 {
+    -o-object-position: left center;
+    object-position: left center
+}
+
+.shyBannerRight__52404 {
+    -o-object-position: right center;
+    object-position: right center
+}
+
+.attributionLogos__35ea7 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--white)
+}
+
+.attributionLogos__35ea7 img {
+    height: 16px;
+    margin: 0 4px;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.shyBannerLogo__8ebd1 {
+    position: absolute;
+    max-width: 55%
+}
+
+.summary__25fda {
+    z-index: 1;
+    color: var(--white-500)
+}
+
+.shopBanner_e2f915 {
+    grid-column: 1/-1;
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+    max-width: 1060px;
+    min-height: 240px;
+    border-radius: var(--radius-xxl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-16);
+    outline: 2px solid transparent;
+    outline-offset: -2px
+}
+
+.categoryLogo_bd13ba {
+    z-index: 1;
+    max-height: 96px;
+    max-width: 55%
+}
+
+.discordLogo__76ba1 {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    gap: 3px
+}
+
+.discordIcon__660a8 {
+    width: auto;
+    height: 12px
+}
+
+.discordWordmark__5e0cb {
+    width: auto;
+    height: 16px
+}
+
+.summary__55622 {
+    z-index: 1;
+    color: var(--white-500)
+}
+
+.blackSummary_e9d2b0 {
+    color: var(--black-500)
+}
+
+.limitedTimeBadge__8c0af {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 1
+}
+
+.getPremiumHook__9a256 {
+    cursor: pointer;
+    -webkit-text-decoration: underline;
+    text-decoration: underline
 }
 
 .giftButton_e9c7df {
@@ -118464,61 +118519,6 @@ html .invoiceCancelRow__6ff3e {
     background-image: url(/assets/48c4eeace7437a7753f2.svg)
 }
 
-.container_dd4c25 {
-    width: 440px;
-    height: 300px
-}
-
-.content__1db9b {
-    border-radius: 8px;
-    background-color: var(--modal-background);
-    display: flex;
-    flex-direction: column;
-    align-items: center
-}
-
-.avatarBackground__2834d {
-    width: 221px;
-    height: 168px;
-    border-radius: 8px;
-    border: 3px solid#94d783;
-    background: linear-gradient(0deg, rgba(255, 255, 255, .7)0%, rgba(255, 255, 255, .7)100%), linear-gradient(180deg, #94d783 0%, #139968 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom: -35px;
-    gap: 12px;
-    z-index: -1;
-    margin: auto;
-    margin-top: -95px
-}
-
-.avatar__8c618 {
-    margin-top: -60px
-}
-
-.rect_b84f5b {
-    width: 206px;
-    height: 24px;
-    border-radius: 4px;
-    opacity: .45;
-    background-color: var(--white-500)
-}
-
-.bottomOverlay__99d09 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 89px;
-    background: linear-gradient(180deg, rgba(49, 51, 56, 0)0%, #313338 57.5%)
-}
-
-.bodyText__8f28f {
-    text-align: center
-}
-
 .wrapper__97866,
 .activeWrapper__0e4e7 {
     height: 100%;
@@ -133210,4 +133210,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7b9243ea37d5694f64ba.css.map*/
+/*# sourceMappingURL=99387.b32aae4081b6bc2fa14b.css.map*/
