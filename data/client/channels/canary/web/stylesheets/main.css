@@ -53789,7 +53789,14 @@ html .progress__00e29 {
     position: relative
 }
 
+.clanBadge__4c045 {
+    position: absolute;
+    right: 12px;
+    top: 12px
+}
+
 .cardBrandingHeader__1db3b {
+    position: relative;
     height: 100px;
     width: 100%
 }
@@ -53810,6 +53817,21 @@ html .progress__00e29 {
     gap: 8px
 }
 
+.cardNameAndTagWrapper_d87ceb {
+    display: flex;
+    justify-content: space-between
+}
+
+.clanTagChiplet__7f357 {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px var(--border-subtle);
+    border-radius: 4px;
+    padding: 2px 6px
+}
+
 .playstyle__9d997 {
     color: var(--role-orange)
 }
@@ -53821,6 +53843,7 @@ html .progress__00e29 {
 }
 
 .primetimeIcon_c4d213 {
+    flex: 0 0 16px;
     width: 16px;
     height: 16px;
     color: var(--text-muted)
@@ -53834,6 +53857,7 @@ html .progress__00e29 {
 
 .traitsContainer__23f4b {
     display: flex;
+    flex-wrap: wrap;
     gap: 4px;
     padding: 8px 0 0
 }
@@ -58567,6 +58591,118 @@ html .progress__00e29 {
     .overviewSidebar__995aa {
         display: none
     }
+}
+
+.content__4e550 {
+    max-width: none
+}
+
+.container__0d48f {
+    display: flex;
+    gap: 64px
+}
+
+.colorsContainer__2dee9 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px
+}
+
+.colorPickerContainer__9b7d0 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.colorPickerGrid_ba6389 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 8px;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    grid-row-gap: 8px;
+    row-gap: 8px
+}
+
+.brandItemContainer_f07c0f {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 86px;
+    height: 86px;
+    border-radius: 4px;
+    border: solid 1px var(--border-subtle);
+    cursor: pointer
+}
+
+.brandItemContainerSelected__51923 {
+    border: solid 1px var(--interactive-active)
+}
+
+.brandItemCircle_d72b8c {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%
+}
+
+.bannerPickerContainer__428b6 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.bannerPickerGrid_f19fc4 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 8px;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    grid-row-gap: 8px;
+    row-gap: 8px
+}
+
+.bannerItemContainer__78c77 {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 86px;
+    height: 86px;
+    padding: 14px;
+    border-radius: 4px;
+    border: solid 1px var(--border-subtle);
+    cursor: pointer
+}
+
+.bannerItemContainerSelected_c3e66a {
+    border: solid 1px var(--interactive-active)
+}
+
+.customColorPickerContainer_e36253 {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center
+}
+
+.colorPicker_a9f8d8 {
+    flex: 1;
+    width: auto
+}
+
+.noWrap__133e4 {
+    text-wrap: nowrap
+}
+
+.clanCardWrapper__06f56 {
+    align-self: flex-start;
+    width: 262px
 }
 
 .categoryRow_b920fb {
@@ -132736,4 +132872,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.b36e7e6f5315f1cfba45.css.map*/
+/*# sourceMappingURL=99387.0fcc3b31a0dedff6987b.css.map*/
