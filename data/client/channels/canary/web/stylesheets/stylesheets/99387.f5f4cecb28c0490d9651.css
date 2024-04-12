@@ -6211,7 +6211,7 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .title__63238 {
-    font-size: 1.0625rem
+    font-size: 17px
 }
 
 .developerResources__8ef1d:hover {
@@ -6242,8 +6242,8 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .backHeader_cff6da {
-    font-size: 1.0625rem;
-    line-height: 1.5rem;
+    font-size: 17px;
+    line-height: 24px;
     color: var(--interactive-normal)
 }
 
@@ -10135,6 +10135,84 @@ html .invoiceCancelRow_aa7946 {
 .theme-light .hljs-deletion {
     color: #b31d28;
     background-color: #ffeef0
+}
+
+.tooltipContainer__7dbbb {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 4px;
+    pointer-events: all
+}
+
+.tooltipHeader__556b8 {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center
+}
+
+.tooltipHeader__556b8 .chipletContainerInner__3c2e4 {
+    background: var(--bg-mod-faint)
+}
+
+.tooltipContent__27bbf {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    min-width: 200px
+}
+
+.guildInfoContainer__83d68 {
+    display: flex;
+    flex-direction: column;
+    gap: 2px
+}
+
+.guildMemberCount__8b892 {
+    display: flex;
+    direction: row;
+    gap: 4px;
+    align-items: center
+}
+
+.dot__74f07 {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--status-offline)
+}
+
+.guildName__29a28 {
+    display: flex
+}
+
+.tooltipFooter_bd5b45 {
+    padding-top: 4px;
+    width: 100%
+}
+
+.chipletContainerInner_bfcb1e {
+    line-height: 16px !important;
+    display: inline-block;
+    padding: 0 4px;
+    background: var(--bg-mod-strong);
+    border-radius: 4px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-left: 4px
+}
+
+.text_c2b2cb {
+    line-height: 16px !important
+}
+
+.badge_d12073 {
+    margin-right: 2px;
+    margin-top: 0;
+    margin-bottom: -1px
 }
 
 @keyframes uploadIconAnimateInLeft_ba96b5 {
@@ -34552,6 +34630,75 @@ html .progress__00e29 {
     width: 0;
     height: 0;
     pointer-events: none
+}
+
+.wrapper__900d7 {
+    position: absolute;
+    bottom: 80px;
+    right: 28px;
+    border-radius: 6px;
+    background: var(--background-secondary-alt);
+    box-shadow: var(--elevation-high);
+    z-index: 1000;
+    pointer-events: all;
+    max-width: 340px
+}
+
+.toastContainerInner__971ff {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 6px;
+    background: var(--background-secondary-alt);
+    transition: background.2s ease-in-out;
+    cursor: pointer
+}
+
+.toastContainerInner__971ff.hovered__04434 {
+    background: var(--bg-mod-subtle)
+}
+
+.positionTracker__7caaf {
+    width: 100%;
+    height: 0;
+    position: relative;
+    pointer-events: none
+}
+
+.guildIconContainer_bdc1df {
+    position: relative;
+    margin-top: -24px
+}
+
+.guildIconContainer_bdc1df .avatarMask__8c292 {
+    box-shadow: var(--elevation-low)
+}
+
+.guildIconContainer_bdc1df .avatar__984cd {
+    width: 100%;
+    height: 100%
+}
+
+.guildIconContainer_bdc1df .icon__308d9 {
+    box-shadow: var(--elevation-low)
+}
+
+.guildIconContainer_bdc1df .guildTagContainer__674f4 {
+    position: absolute;
+    bottom: -4px;
+    right: -4px
+}
+
+.guildIconContainer_bdc1df .guildTagContainer__674f4 .guildClanTag__5b9c5 {
+    box-shadow: var(--elevation-low);
+    background: var(--background-primary)
+}
+
+.toastButton_b270c7 {
+    padding: 0
 }
 
 .spamBanner_b5e5bf {
@@ -87683,6 +87830,93 @@ html .tabBadge_ff691d {
     border-radius: 5px
 }
 
+.mainContainer__9d423 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px
+}
+
+.infoContainer_d6d5d7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px
+}
+
+.headerTextContainer_e5ac08 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px
+}
+
+.skeletonChatContainer__07b95 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    background: var(--background-secondary-alt);
+    border-radius: 12px;
+    width: 280px
+}
+
+.skeletonChatContainer__07b95 .chat_da0bee {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1
+}
+
+.skeletonChatContainer__07b95 .chatHeader__9dfc0 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20px;
+    gap: 4px
+}
+
+.skeletonChatContainer__07b95 .chatHeader__9dfc0 .chiplet__77325 {
+    margin: 0;
+    cursor: normal
+}
+
+.skeletonChatContainer__07b95 .chatHeader__9dfc0 .roleContainer__89192,
+.skeletonChatContainer__07b95 .chatHeader__9dfc0 .roleContainer__89192>span {
+    display: inline-block;
+    height: 20px;
+    width: 20px
+}
+
+.skeletonChatContainer__07b95 .skeletonChatBody__87e20 {
+    display: block;
+    width: 128px;
+    height: 16px;
+    border-radius: 16px;
+    background: var(--bg-mod-faint)
+}
+
+.footerTextContainer__68455 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    width: 100%
+}
+
+.footerText__55c70 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%
+}
+
 .container__21972 {
     border: 1px solid var(--primary-800);
     border-radius: var(--radius-sm);
@@ -132868,4 +133102,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.00095805e931120655d0.css.map*/
+/*# sourceMappingURL=99387.f5f4cecb28c0490d9651.css.map*/
