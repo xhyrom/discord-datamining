@@ -7203,12 +7203,12 @@ html .invoiceCancelRow_aa7946 {
 .streamerModeEnabledBtn_b696dd {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 1.8125rem;
+    line-height: 29px;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -117669,6 +117669,61 @@ html .invoiceCancelRow__6ff3e {
     background-image: url(/assets/48c4eeace7437a7753f2.svg)
 }
 
+.container_dd4c25 {
+    width: 440px;
+    height: 300px
+}
+
+.content__1db9b {
+    border-radius: 8px;
+    background-color: var(--modal-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.avatarBackground__2834d {
+    width: 221px;
+    height: 168px;
+    border-radius: 8px;
+    border: 3px solid#94d783;
+    background: linear-gradient(0deg, rgba(255, 255, 255, .7)0%, rgba(255, 255, 255, .7)100%), linear-gradient(180deg, #94d783 0%, #139968 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: -35px;
+    gap: 12px;
+    z-index: -1;
+    margin: auto;
+    margin-top: -95px
+}
+
+.avatar__8c618 {
+    margin-top: -60px
+}
+
+.rect_b84f5b {
+    width: 206px;
+    height: 24px;
+    border-radius: 4px;
+    opacity: .45;
+    background-color: var(--white-500)
+}
+
+.bottomOverlay__99d09 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 89px;
+    background: linear-gradient(180deg, rgba(49, 51, 56, 0)0%, #313338 57.5%)
+}
+
+.bodyText__8f28f {
+    text-align: center
+}
+
 .wrapper__97866,
 .activeWrapper__0e4e7 {
     height: 100%;
@@ -132360,4 +132415,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.272d92953001df7112a5.css.map*/
+/*# sourceMappingURL=99387.ea16eaefcdf18ad623bd.css.map*/
