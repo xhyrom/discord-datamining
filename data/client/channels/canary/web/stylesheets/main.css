@@ -3276,7 +3276,7 @@
 
 .grandfatheredMessage__6ab98 {
     border-radius: 3px;
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.25;
     padding: 8px 16px 8px 8px;
     display: flex;
@@ -3339,8 +3339,8 @@
     color: var(--white-500);
     display: flex;
     align-items: flex-start;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     padding: 16px;
     position: relative
 }
@@ -3400,7 +3400,7 @@
 
 .sectionDescription__051ab {
     color: var(--text-normal);
-    line-height: 1.25rem;
+    line-height: 20px;
     margin-bottom: 16px;
     margin-top: 0
 }
@@ -3491,8 +3491,8 @@
 
 .billingInformation__2331f {
     color: var(--text-normal);
-    font-size: .875rem;
-    line-height: 1.125rem
+    font-size: 14px;
+    line-height: 18px
 }
 
 .finePrint__40456 {
@@ -3506,9 +3506,9 @@
 }
 
 .noItemsCard__42af7 {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 1.25rem;
+    line-height: 20px;
     margin-top: 16px;
     padding: 16px 19px;
     border: none;
@@ -5168,8 +5168,8 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .planInfo_c12dc8 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     margin-top: 8px
 }
 
@@ -54056,6 +54056,59 @@ html .progress__00e29 {
     overflow: hidden
 }
 
+.gameImage__8db0b {
+    height: 100%;
+    width: 100%
+}
+
+.gameUnknownImage__080b3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.selectedGame_a69562 {
+    display: flex;
+    flex-direction: column;
+    width: 126px
+}
+
+.selectedGameCheck_d9d855 {
+    color: var(--brand-experiment);
+    position: absolute;
+    right: 8px;
+    top: 8px
+}
+
+@keyframes placeholderPulse__8767a {
+    0% {
+        opacity: .3
+    }
+
+    50% {
+        opacity: .8
+    }
+
+    to {
+        opacity: .3
+    }
+}
+
+.gameImageLoading_ad31b1 {
+    animation: placeholderPulse__8767a 1.3s ease-in-out infinite
+}
+
+.gameImageBackground__15198 {
+    position: relative;
+    height: 168px;
+    background-color: var(--background-secondary);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    overflow: hidden
+}
+
 .slideContent__6ae94 {
     display: flex;
     flex-direction: column;
@@ -54098,61 +54151,8 @@ html .progress__00e29 {
     gap: 12px 8px
 }
 
-@keyframes placeholderPulse_c13237 {
-    0% {
-        opacity: .3
-    }
-
-    50% {
-        opacity: .8
-    }
-
-    to {
-        opacity: .3
-    }
-}
-
-.gameImageLoading__108e9 {
-    animation: placeholderPulse_c13237 1.3s ease-in-out infinite
-}
-
-.gameImageBackground_c5e476 {
-    position: relative;
-    height: 168px;
-    background-color: var(--background-secondary);
-    border-radius: 4px;
-    margin-bottom: 8px;
-    overflow: hidden
-}
-
-.gameImage__4ad7a {
-    height: 100%;
-    width: 100%
-}
-
-.gameUnknownImage__8221f {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
 .removableGame_ea342b {
     cursor: pointer
-}
-
-.selectedGame__0084c {
-    display: flex;
-    flex-direction: column;
-    width: 126px
-}
-
-.selectedGameCheck__389d8 {
-    color: var(--brand-experiment);
-    position: absolute;
-    right: 8px;
-    top: 8px
 }
 
 .selectedInterest_aa523d {
@@ -54362,7 +54362,8 @@ html .progress__00e29 {
 
 .playstyleHeader__72e62,
 .playtimeHeader__843e5,
-.traitHeader__11d3b {
+.traitHeader__11d3b,
+.gameHeader_ab2b55 {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -54451,6 +54452,31 @@ html .progress__00e29 {
     gap: 8px
 }
 
+.games__32d4d {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%
+}
+
+.gamesInput_eaad9a {
+    position: relative;
+    width: 400px
+}
+
+.selectedGames_afc855,
+.recentGames__6b0bd {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.selectedSection__37688 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 8px
+}
+
 .theme-dark .playstyleOption__36be3 {
     background-color: hsl(var(--primary-800-hsl)/.8)
 }
@@ -54504,6 +54530,11 @@ html .progress__00e29 {
     color: var(--interactive-active)
 }
 
+.gamesTooltip_cdb5ec {
+    display: flex;
+    gap: 4px
+}
+
 .filterTooltip_d6d060 {
     width: 200px;
     max-width: 200px;
@@ -54512,6 +54543,11 @@ html .progress__00e29 {
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     overflow: hidden
+}
+
+.filterTooltipAutoWidth__2ad07 {
+    width: auto;
+    max-width: 400px
 }
 
 .filterTooltipContent_c64a16 {
@@ -133102,4 +133138,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.6413447902408c967498.css.map*/
+/*# sourceMappingURL=99387.ca28e1b6d21bddb44a14.css.map*/
