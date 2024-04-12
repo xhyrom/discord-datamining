@@ -2560,6 +2560,78 @@
     background-color: var(--background-secondary)
 }
 
+.badgeContainer_db363e {
+    position: relative;
+    margin-right: 8px
+}
+
+.newBadge_f73bc9 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    margin-left: auto;
+    padding: 4px 6px;
+    pointer-events: all;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-pink-for-gradients));
+    color: var(--white-500)
+}
+
+.star_f35e98 {
+    position: absolute;
+    color: var(--white)
+}
+
+.starLeft__53d66 {
+    bottom: -7px;
+    left: -9px
+}
+
+.starRight_f5b52f {
+    top: -9px;
+    right: -8px
+}
+
+.theme-light .starLeft__53d66 {
+    color: var(--premium-tier-2-purple-for-gradients)
+}
+
+.theme-light .starRight_f5b52f {
+    color: var(--premium-tier-2-pink-for-gradients)
+}
+
+.coachTipContainer_aec313 {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center
+}
+
+.iconContainer_fc89b3 {
+    position: relative;
+    width: 92px
+}
+
+.coachtipContent_bf52ea {
+    max-width: 160px
+}
+
+.marketingBadgeTooltip__56856 {
+    max-width: 100%;
+    margin-left: 10px;
+    position: relative
+}
+
+.icon__20d44 {
+    position: absolute;
+    top: -63px;
+    left: 0
+}
+
 .standardSidebarView__12528 {
     position: absolute;
     top: 0;
@@ -133138,4 +133210,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ca28e1b6d21bddb44a14.css.map*/
+/*# sourceMappingURL=99387.7b9243ea37d5694f64ba.css.map*/
