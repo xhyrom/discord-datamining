@@ -53469,6 +53469,121 @@ html .progress__00e29 {
     margin: 0 auto
 }
 
+.clickableCard__1c1e9 {
+    cursor: pointer
+}
+
+.card_d01b6d {
+    border-radius: 8px;
+    border: 1px solid var(--border-subtle);
+    overflow: hidden;
+    background: var(--bg-base-primary)
+}
+
+.header__2b527 {
+    position: relative
+}
+
+.cardBrandingHeader__1db3b {
+    height: 100px;
+    width: 100%
+}
+
+.cardBrandingFooter__98c32 {
+    height: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 12px;
+    box-sizing: border-box
+}
+
+.cardContent__3001c {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.playstyle__9d997 {
+    color: var(--role-orange)
+}
+
+.primetimeContainer__2c3ce {
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
+.primetimeIcon_c4d213 {
+    width: 16px;
+    height: 16px;
+    color: var(--text-muted)
+}
+
+.primetime_fd3eea {
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
+.traitsContainer__23f4b {
+    display: flex;
+    gap: 4px;
+    padding: 8px 0 0
+}
+
+.trait_dfdb34 {
+    display: flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid var(--border-strong);
+    background: var(--bg-base-secondary);
+    border-radius: 16px
+}
+
+.cardFooter_ed5f2e {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-top: 1px solid var(--border-subtle)
+}
+
+.cardFooterInfo__5a461 {
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
+.cardFooterLocation_f8cc19,
+.cardFooterLanguage_e24d40 {
+    display: flex;
+    gap: 8px
+}
+
+.cardFooterLocationIcon__2e33a,
+.cardFooterLanguageIcon__33333 {
+    width: 16px;
+    height: 16px;
+    color: var(--text-muted)
+}
+
+.cardFooterGames_aebfa9 {
+    display: flex;
+    gap: 4px
+}
+
+.cardFooterGame_de9392 {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--border-subtle);
+    overflow: hidden
+}
+
 .slideContent__6ae94 {
     display: flex;
     flex-direction: column;
@@ -53737,128 +53852,142 @@ html .progress__00e29 {
     margin-bottom: 12px
 }
 
-.clickableCard__1c1e9 {
-    cursor: pointer
+.container__299a3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    -webkit-backdrop-filter: blur(80px);
+    backdrop-filter: blur(80px);
+    display: flex;
+    justify-content: center
 }
 
-.card_d01b6d {
-    border-radius: 8px;
-    border: 1px solid var(--border-subtle);
-    overflow: hidden;
-    background: var(--bg-base-primary)
+.saveContainer__0ae21 {
+    position: absolute;
+    top: 16px;
+    right: 16px
 }
 
-.header__2b527 {
-    position: relative
+.content__9c33f {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 800px;
+    align-items: center
 }
 
-.cardBrandingHeader__1db3b {
-    height: 100px;
+.theme-dark .container__299a3 {
+    background-color: hsl(var(--primary-800-hsl)/.8)
+}
+
+.theme-light .container__299a3 {
+    background-color: hsl(var(--white-500-hsl)/.8)
+}
+
+.playstyleHeader__72e62,
+.playtimeHeader__843e5,
+.traitHeader__11d3b {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     width: 100%
 }
 
-.cardBrandingFooter__98c32 {
-    height: 12px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 12px;
-    box-sizing: border-box
-}
-
-.cardContent__3001c {
-    padding: 12px;
+.playtimes__348d3 {
     display: flex;
     flex-direction: column;
     gap: 8px
 }
 
-.playstyle__9d997 {
-    color: var(--role-orange)
-}
-
-.primetimeContainer__2c3ce {
+.timeSelectorRow_ad7888 {
+    min-width: 480px;
     display: flex;
-    flex-direction: column;
-    gap: 4px
+    gap: 8px;
+    margin-top: 12px;
+    align-items: center
 }
 
-.primetimeIcon_c4d213 {
-    width: 16px;
-    height: 16px;
-    color: var(--text-muted)
+.clickable_ef7cee {
+    cursor: pointer
 }
 
-.primetime_fd3eea {
-    display: flex;
-    align-items: center;
-    gap: 4px
+.plusIcon__4ca2d,
+.removeIcon__09c1b {
+    color: var(--text-muted);
+    width: 20px;
+    height: 20px
 }
 
-.traitsContainer__23f4b {
-    display: flex;
-    gap: 4px;
-    padding: 8px 0 0
-}
-
-.trait_dfdb34 {
-    display: flex;
-    padding: 4px 8px;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    border: 1px solid var(--border-strong);
-    background: var(--bg-base-secondary);
-    border-radius: 16px
-}
-
-.cardFooter_ed5f2e {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px;
-    border-top: 1px solid var(--border-subtle)
-}
-
-.cardFooterInfo__5a461 {
-    display: flex;
-    flex-direction: column;
-    gap: 4px
-}
-
-.cardFooterLocation_f8cc19,
-.cardFooterLanguage_e24d40 {
+.playstyles__34055 {
     display: flex;
     gap: 8px
 }
 
-.cardFooterLocationIcon__2e33a,
-.cardFooterLanguageIcon__33333 {
-    width: 16px;
-    height: 16px;
-    color: var(--text-muted)
-}
-
-.cardFooterGames_aebfa9 {
+.playstyleOption__36be3 {
+    position: relative;
     display: flex;
-    gap: 4px
-}
-
-.cardFooterGame_de9392 {
-    width: 24px;
-    height: 24px;
-    border-radius: 12px;
+    padding: 16px;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 8px;
     border: 1px solid var(--border-subtle);
-    overflow: hidden
+    cursor: pointer
 }
 
-.container_ec1fbc {
-    width: 100%;
-    padding: 24px;
-    position: relative
+.selectedPlaystyle_c3bf30 {
+    border-color: var(--brand-experiment)
 }
 
-.toolbar__4e903 {
+.checkmark__4cc30 {
+    color: var(--brand-experiment);
+    position: absolute;
+    right: 12px;
+    top: 12px
+}
+
+.traits_dff7ca {
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+.languagesTitle_ddbda6 {
+    display: flex;
+    margin-bottom: 8px;
+    gap: 8px;
+    align-items: center
+}
+
+.languagesIcon__8ea0f {
+    color: var(--text-muted);
+    width: 12px;
+    height: 12px
+}
+
+.languagesSelect__75c5a {
+    width: 400px;
+    padding-bottom: 24px
+}
+
+.traitCategory__4fca5 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.theme-dark .playstyleOption__36be3 {
+    background-color: hsl(var(--primary-800-hsl)/.8)
+}
+
+.theme-light .playstyleOption__36be3 {
+    background-color: hsl(var(--white-500-hsl)/.8)
+}
+
+.toolbar__2fcb0 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53866,7 +53995,13 @@ html .progress__00e29 {
     width: 100%
 }
 
-.filterPill__53e51 {
+.preferences__16c1a,
+.actions_a287f1 {
+    display: flex;
+    gap: 8px
+}
+
+.filterPill__53234 {
     border-radius: 16px;
     padding: 8px 12px;
     border-color: var(--interactive-active);
@@ -53875,7 +54010,7 @@ html .progress__00e29 {
     min-width: 0
 }
 
-.filterPillSmall_ba6dc1 {
+.filterPillSmall__584a6 {
     border-radius: 16px;
     padding: 8px;
     border-color: var(--interactive-active);
@@ -53884,20 +54019,20 @@ html .progress__00e29 {
     min-width: 0
 }
 
-.filterPillIcon_ac4d6f {
+.filterPillIcon__6e577 {
     width: 16px;
     height: 16px;
     color: var(--interactive-active)
 }
 
-.filterPillContents_d6802e {
+.filterPillContents__2c03a {
     display: flex;
     align-items: center;
     gap: 8px;
     color: var(--interactive-active)
 }
 
-.filterTooltip__5ddcd {
+.filterTooltip_d6d060 {
     width: 200px;
     max-width: 200px;
     border-radius: 8px;
@@ -53907,16 +54042,24 @@ html .progress__00e29 {
     overflow: hidden
 }
 
-.filterTooltipContent_d1b808 {
+.filterTooltipContent_c64a16 {
     display: flex;
     flex-direction: column;
     gap: 8px
 }
 
-.preferences_d68e04,
-.actions__94a77 {
-    display: flex;
-    gap: 8px
+.theme-dark .filterTooltip_d6d060 {
+    background-color: hsl(var(--primary-800-hsl)/.8)
+}
+
+.theme-light .filterTooltip_d6d060 {
+    background-color: hsl(var(--white-500-hsl)/.8)
+}
+
+.container_ec1fbc {
+    width: 100%;
+    padding: 24px;
+    position: relative
 }
 
 .topPicks__3115d {
@@ -53944,152 +54087,6 @@ html .progress__00e29 {
     display: flex;
     flex-direction: column;
     gap: 40px
-}
-
-.playstyleSelector_b85eff,
-.playtimeSelector_fb95c4,
-.traitSelector__134a9 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .7);
-    -webkit-backdrop-filter: blur(80px);
-    backdrop-filter: blur(80px);
-    display: flex;
-    justify-content: center
-}
-
-.playstyleSelectorSaveContainer__605ea,
-.playtimeSelectorSaveContainer__74e2f,
-.traitSelectorSaveContainer__1d1eb {
-    position: absolute;
-    top: 16px;
-    right: 16px
-}
-
-.playstyleSelectorContent__52010,
-.playtimeSelectorContent__59657 {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    max-width: 800px;
-    justify-content: center;
-    align-items: center
-}
-
-.traitSelectorContent__32877 {
-    margin-top: 120px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    max-width: 800px;
-    align-items: center
-}
-
-.traits_bdaa3b {
-    display: flex;
-    flex-direction: column;
-    gap: 12px
-}
-
-.languagesTitle__97836 {
-    display: flex;
-    margin-bottom: 8px;
-    gap: 8px;
-    align-items: center
-}
-
-.languagesIcon_cf570e {
-    color: var(--text-muted);
-    width: 12px;
-    height: 12px
-}
-
-.languagesSelect_e8341a {
-    width: 400px;
-    padding-bottom: 24px
-}
-
-.traitCategory__66878 {
-    display: flex;
-    flex-direction: column;
-    gap: 8px
-}
-
-.playstyleHeader__45372,
-.playtimeHeader_eb93e3,
-.traitHeader__19cce {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: 100%
-}
-
-.playtimes_a4f2e7 {
-    display: flex;
-    flex-direction: column;
-    gap: 8px
-}
-
-.timeSelectorRow__22996 {
-    min-width: 480px;
-    display: flex;
-    gap: 8px;
-    margin-top: 12px;
-    align-items: center
-}
-
-.clickable_b3e021 {
-    cursor: pointer
-}
-
-.plusIcon__4a72c,
-.removeIcon__6fbbc {
-    color: var(--text-muted);
-    width: 20px;
-    height: 20px
-}
-
-.playstyles__1509f {
-    display: flex;
-    gap: 8px
-}
-
-.playstyleOption_c404e8 {
-    position: relative;
-    display: flex;
-    padding: 16px;
-    flex-direction: column;
-    gap: 8px;
-    border-radius: 8px;
-    border: 1px solid var(--border-subtle);
-    cursor: pointer
-}
-
-.selectedPlaystyle__5860f {
-    border-color: var(--brand-experiment)
-}
-
-.checkmark_c3e9cf {
-    color: var(--brand-experiment);
-    position: absolute;
-    right: 12px;
-    top: 12px
-}
-
-.theme-dark .filterTooltip__5ddcd,
-.theme-dark .playstyleOption_c404e8,
-.theme-dark .playstyleSelector_b85eff {
-    background-color: hsl(var(--primary-800-hsl)/.8)
-}
-
-.theme-light .filterTooltip__5ddcd,
-.theme-light .playstyleOption_c404e8,
-.theme-light .playstyleSelector_b85eff {
-    background-color: hsl(var(--white-500-hsl)/.8)
 }
 
 @value responsiveWidthMobile from '../../../../uikit/auth/WaveSplash.module.css';
@@ -132494,4 +132491,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2f451b94087297aed8e6.css.map*/
+/*# sourceMappingURL=99387.348bab0c4294f0442c7a.css.map*/
