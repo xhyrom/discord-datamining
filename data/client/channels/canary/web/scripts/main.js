@@ -36575,7 +36575,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284260", ", Version Hash: ").concat("ac28bd1b23646822d338c839a2f807319c63ecda")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284265", ", Version Hash: ").concat("9006a4f74fc6684aa294152b59ee5b7c57826b79")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86470,8 +86470,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284260", "284260"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284260")), t = 0), t
+                let t = parseInt((e = "284265", "284265"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284265")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -109985,8 +109985,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284260",
-                    versionHash: "ac28bd1b23646822d338c839a2f807319c63ecda"
+                    buildNumber: "284265",
+                    versionHash: "9006a4f74fc6684aa294152b59ee5b7c57826b79"
                 }
             }
             n.r(t), n.d(t, {
@@ -137822,7 +137822,7 @@
                     (0, r.openModalLazy)(async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("98880")]).then(n.bind(n, "645264"));
+                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("70935")]).then(n.bind(n, "645264"));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             guildId: e,
@@ -159626,8 +159626,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712950310640",
-                                    build_number: "284260"
+                                    built_at: "1712950995316",
+                                    build_number: "284265"
                                 }
                             },
                             retries: 1
@@ -234942,7 +234942,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ac28bd1b23646822d338c839a2f807319c63ecda"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9006a4f74fc6684aa294152b59ee5b7c57826b79"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -261107,7 +261107,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284260"
+                                build_number: "284265"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -268283,7 +268283,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284260", "284260"), 10);
+                let s = parseInt((n = "284265", "284265"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -294205,7 +294205,7 @@
                 QuestContent: function() {
                     return i
                 }
-            }), (r = i || (i = {}))[r.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", r[r.QUEST_BAR = 1] = "QUEST_BAR", r[r.QUEST_INVENTORY_CARD = 2] = "QUEST_INVENTORY_CARD", r[r.QUESTS_EMBED = 3] = "QUESTS_EMBED", r[r.ACTIVITY_PANEL = 4] = "ACTIVITY_PANEL", r[r.QUEST_LIVE_STREAM = 5] = "QUEST_LIVE_STREAM", r[r.MEMBERS_LIST = 6] = "MEMBERS_LIST", r[r.QUEST_BADGE = 7] = "QUEST_BADGE"
+            }), (r = i || (i = {}))[r.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", r[r.QUEST_BAR = 1] = "QUEST_BAR", r[r.QUEST_INVENTORY_CARD = 2] = "QUEST_INVENTORY_CARD", r[r.QUESTS_EMBED = 3] = "QUESTS_EMBED", r[r.ACTIVITY_PANEL = 4] = "ACTIVITY_PANEL", r[r.QUEST_LIVE_STREAM = 5] = "QUEST_LIVE_STREAM", r[r.MEMBERS_LIST = 6] = "MEMBERS_LIST", r[r.QUEST_BADGE = 7] = "QUEST_BADGE", r[r.GIFT_INVENTORY_FOR_YOU = 8] = "GIFT_INVENTORY_FOR_YOU"
         },
         551910: function(e, t, n) {
             "use strict";
@@ -295064,4 +295064,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.b3b8d1cc1c1d3f2e1f1b.js.map
+//# sourceMappingURL=65573.87619a298d8d5d38fd6d.js.map
