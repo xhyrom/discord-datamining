@@ -1,17 +1,17 @@
 ! function() {
-    var e, t, a, d, n, c, i, r, o, f = {
+    var e, t, a, d, n, i, c, r, o, f = {
             799656: function(e, t, a) {
                 "use strict";
                 a.r(t);
                 var d = a("735250");
                 a("470079");
                 var n = a("613828"),
-                    c = a("442837"),
-                    i = a("314897"),
+                    i = a("442837"),
+                    c = a("314897"),
                     r = a("828695"),
                     o = a("981631");
-                t.default = c.default.connectStores([r.default, i.default], () => {
-                    let e = i.default.getToken();
+                t.default = i.default.connectStores([r.default, c.default], () => {
+                    let e = c.default.getToken();
                     return {
                         token: e,
                         hasLoadedExperiments: null != e || r.default.hasLoadedExperiments
@@ -33,15 +33,15 @@
                 a.r(t);
                 var d = a("735250"),
                     n = a("470079"),
-                    c = a("803997"),
-                    i = a.n(c),
+                    i = a("803997"),
+                    c = a.n(i),
                     r = a("715702"),
                     o = a("750950"),
                     f = a("605094");
                 class l extends n.Component {
                     render() {
                         return (0, d.jsx)("div", {
-                            className: i()(o.app, f.vertical),
+                            className: c()(o.app, f.vertical),
                             children: (0, d.jsx)(r.default, {})
                         })
                     }
@@ -66,8 +66,8 @@
                 }), a("47120");
                 var d = a("735250"),
                     n = a("470079"),
-                    c = a("664751"),
-                    i = a("266067"),
+                    i = a("664751"),
+                    c = a("266067"),
                     r = a("613828"),
                     o = a("990547"),
                     f = a("719711"),
@@ -293,16 +293,16 @@
                                 render: () => {
                                     var e, t, a;
                                     let d = null === (e = R.default.getSuperProperties()) || void 0 === e ? void 0 : e.os,
-                                        n = (0, c.parse)((null !== (a = window.location.search) && void 0 !== a ? a : "").substr(1)),
-                                        i = null === (t = n.referring_location) || void 0 === t ? void 0 : t.toString();
+                                        n = (0, i.parse)((null !== (a = window.location.search) && void 0 !== a ? a : "").substr(1)),
+                                        c = null === (t = n.referring_location) || void 0 === t ? void 0 : t.toString();
                                     return ("iOS" === d || "Android" === d) && R.default.track(N.AnalyticEvents.DOWNLOAD_APP, {
                                         platform: d,
                                         ptb: !1,
                                         released: !0,
                                         has_e_mail: "true" === n.has_e_mail,
-                                        referring_location: i,
+                                        referring_location: c,
                                         qr_code: !0
-                                    }), window.location.href = (0, v.getMobileDownloadLink)(null != i && "" !== i ? i : "qr_code", d), null
+                                    }), window.location.href = (0, v.getMobileDownloadLink)(null != c && "" !== c ? c : "qr_code", d), null
                                 }
                             }), (0, d.jsx)(m.default, {
                                 path: N.Routes.OPEN_APP_FROM_EMAIL,
@@ -365,7 +365,7 @@
                         let {
                             pathname: e
                         } = (0, r.useLocation)();
-                        return null != (0, i.matchPath)(e, {
+                        return null != (0, c.matchPath)(e, {
                             path: N.Routes.APPLICATION_DIRECTORY
                         })
                     }();
@@ -378,7 +378,7 @@
             650204: function(e, t, a) {
                 "use strict";
                 a.r(t), a("177593");
-                var d, n, c, i, r, o = a("735250");
+                var d, n, i, c, r, o = a("735250");
                 a("92138"), a("470079");
                 var f = a("202226"),
                     l = a("512722"),
@@ -421,8 +421,8 @@
                             throw E.default.captureCrash(e), e
                         })
                     });
-                    let e = null === (n = (c = N.default.remoteApp).getVersion) || void 0 === n ? void 0 : n.call(c),
-                        t = null === (i = (r = N.default.remoteApp).getBuildNumber) || void 0 === i ? void 0 : i.call(r),
+                    let e = null === (n = (i = N.default.remoteApp).getVersion) || void 0 === n ? void 0 : n.call(i),
+                        t = null === (c = (r = N.default.remoteApp).getBuildNumber) || void 0 === c ? void 0 : c.call(r),
                         a = {};
                     null != N.default.remoteApp.getModuleVersions && (a = N.default.remoteApp.getModuleVersions()), E.default.setExtra({
                         hostVersion: e,
@@ -456,16 +456,16 @@
                 var d = a("735250");
                 a("470079");
                 var n = a("481060"),
-                    c = a("204623"),
-                    i = a("155221");
+                    i = a("204623"),
+                    c = a("155221");
                 t.default = {
                     App: () => (0, d.jsx)(n.DnDProvider, {
-                        children: (0, d.jsx)(i.default, {})
+                        children: (0, d.jsx)(c.default, {})
                     }),
                     Overlay: () => (0, d.jsx)(n.DnDProvider, {
-                        children: (0, d.jsx)(i.Overlay, {})
+                        children: (0, d.jsx)(c.Overlay, {})
                     }),
-                    OutdatedClient: c.default
+                    OutdatedClient: i.default
                 }
             },
             44163: function(e, t, a) {
@@ -473,12 +473,12 @@
                 a.r(t);
                 var d = a("585483"),
                     n = a("5967"),
-                    c = a("933513"),
-                    i = a("981631");
+                    i = a("933513"),
+                    c = a("981631");
                 t.default = {
                     init() {
                         document.addEventListener("paste", e => {
-                            !(0, c.default)((0, n.eventOwnerDocument)(e)) && d.ComponentDispatch.dispatchToLastSubscribed(i.ComponentActions.GLOBAL_CLIPBOARD_PASTE, {
+                            !(0, i.default)((0, n.eventOwnerDocument)(e)) && d.ComponentDispatch.dispatchToLastSubscribed(c.ComponentActions.GLOBAL_CLIPBOARD_PASTE, {
                                 event: e
                             })
                         })
@@ -507,8 +507,8 @@
                 }), a("47120");
                 var d = a("735250"),
                     n = a("470079"),
-                    c = a("525654"),
-                    i = a.n(c),
+                    i = a("525654"),
+                    c = a.n(i),
                     r = a("445131"),
                     o = a("442837"),
                     f = a("946188"),
@@ -530,7 +530,7 @@
                 class R extends n.PureComponent {
                     getPlatform() {
                         var e;
-                        let t = null === (e = i().os) || void 0 === e ? void 0 : e.family;
+                        let t = null === (e = c().os) || void 0 === e ? void 0 : e.family;
                         return null != t && /^win/i.test(t) ? m.PlatformTypes.WINDOWS : null != t && /darwin|os x/i.test(t) ? m.PlatformTypes.OSX : m.PlatformTypes.LINUX
                     }
                     componentDidMount() {
@@ -596,10 +596,10 @@
                 "use strict";
                 a.r(t), a.d(t, {
                     failMigration: function() {
-                        return c
+                        return i
                     },
                     finishMigration: function() {
-                        return i
+                        return c
                     },
                     migrate: function() {
                         return n
@@ -613,13 +613,13 @@
                     }))
                 }
 
-                function c() {
+                function i() {
                     d.default.dispatch({
                         type: "DOMAIN_MIGRATION_FAILURE"
                     })
                 }
 
-                function i() {
+                function c() {
                     window.location.reload()
                 }
             },
@@ -630,7 +630,7 @@
                         return r
                     }
                 });
-                var d, n, c, i, r, o, f = a("442837"),
+                var d, n, i, c, r, o, f = a("442837"),
                     l = a("570140");
                 (d = r || (r = {}))[d.NOT_STARTED = 0] = "NOT_STARTED", d[d.IN_PROGRESS = 1] = "IN_PROGRESS", d[d.FAILED = 2] = "FAILED", d[d.SKIPPED = 3] = "SKIPPED";
                 let s = 0;
@@ -639,12 +639,12 @@
                         return s
                     }
                 }
-                i = "DomainMigrationStore", (c = "displayName") in(n = u) ? Object.defineProperty(n, c, {
-                    value: i,
+                c = "DomainMigrationStore", (i = "displayName") in(n = u) ? Object.defineProperty(n, i, {
+                    value: c,
                     enumerable: !0,
                     configurable: !0,
                     writable: !0
-                }) : n[c] = i, t.default = new u(l.default, {
+                }) : n[i] = c, t.default = new u(l.default, {
                     DOMAIN_MIGRATION_START: function() {
                         s = 1
                     },
@@ -665,8 +665,8 @@
                 });
                 var d = a("470079"),
                     n = a("719711"),
-                    c = a("433517"),
-                    i = a("579806"),
+                    i = a("433517"),
+                    c = a("579806"),
                     r = a("626135"),
                     o = a("998502"),
                     f = a("286035"),
@@ -679,7 +679,7 @@
 
                 function u() {
                     return d.useEffect(() => {
-                        window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && !0 !== c.Storage.get(n.DOMAIN_MIGRATION_SUCCESS_KEY) && o.default.supportsFeature(l.NativeFeatures.USER_DATA_CACHE) && (f.migrate(), i.default.userDataCache.getCached().then(e => {
+                        window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && !0 !== i.Storage.get(n.DOMAIN_MIGRATION_SUCCESS_KEY) && o.default.supportsFeature(l.NativeFeatures.USER_DATA_CACHE) && (f.migrate(), c.default.userDataCache.getCached().then(e => {
                             if (null == e) {
                                 f.failMigration(), r.default.track(l.AnalyticEvents.DOMAIN_MIGRATED, {
                                     success: !1,
@@ -693,11 +693,11 @@
                                 a = 0 !== t.length,
                                 d = null != e.token,
                                 o = null == e.RTCRegionStore ? null : JSON.parse(e.RTCRegionStore),
-                                u = null == o || null == s(o) || s(o) <= s(c.Storage.get("RTCRegionStore"));
-                            a && d && !u && (c.Storage.clear(), t.forEach(t => {
+                                u = null == o || null == s(o) || s(o) <= s(i.Storage.get("RTCRegionStore"));
+                            a && d && !u && (i.Storage.clear(), t.forEach(t => {
                                 let a = e[t];
                                 try {
-                                    c.Storage.set(t, JSON.parse(a))
+                                    i.Storage.set(t, JSON.parse(a))
                                 } catch (e) {}
                             })), r.default.track(l.AnalyticEvents.DOMAIN_MIGRATED, {
                                 success: !0,
@@ -705,7 +705,7 @@
                                 has_data: a
                             }, {
                                 flush: !0
-                            }), c.Storage.set(n.DOMAIN_MIGRATION_SUCCESS_KEY, !0), i.default.userDataCache.deleteCache(), f.finishMigration()
+                            }), i.Storage.set(n.DOMAIN_MIGRATION_SUCCESS_KEY, !0), c.default.userDataCache.deleteCache(), f.finishMigration()
                         }))
                     }, []), null
                 }
@@ -745,10 +745,10 @@
                 var d = a("392711");
 
                 function n(e, t, a, n) {
-                    var c, i;
+                    var i, c;
                     let r = e.getCurrentConfig(a, n),
                         o = t.getCurrentConfig(a, n);
-                    return c = r, i = o, (0, d.mergeWith)({}, c, i, (e, t) => e || t)
+                    return i = r, c = o, (0, d.mergeWith)({}, i, c, (e, t) => e || t)
                 }
             },
             585275: function(e, t, a) {
@@ -756,9 +756,9 @@
                 let d;
                 a.r(t), a("242167"), a("970173"), a("520712"), a("268111"), a("941497"), a("32026"), a("480839"), a("744285"), a("492257"), a("873817"), a("411104"), a("773603");
                 var n = a("512722"),
-                    c = a.n(n),
-                    i = a("392711"),
-                    r = a.n(i),
+                    i = a.n(n),
+                    c = a("392711"),
+                    r = a.n(c),
                     o = a("544891"),
                     f = a("992774"),
                     l = a("649754"),
@@ -801,12 +801,12 @@
                             return ((0, m.isPlatformEmbedded) ? function(e, t) {
                                 let a = (0, f.getVoiceEngine)(),
                                     n = (null == a ? void 0 : a.getNextVideoOutputFrame) != null;
-                                return new Promise((c, i) => {
+                                return new Promise((i, c) => {
                                     let r = e => {
                                         try {
-                                            null != e && t(e) && c(e)
+                                            null != e && t(e) && i(e)
                                         } catch (e) {
-                                            i(e)
+                                            c(e)
                                         }
                                     };
                                     n ? a.getNextVideoOutputFrame(e).then(r, t => {
@@ -821,13 +821,13 @@
                                 let {
                                     width: d,
                                     height: n
-                                } = a.getVideoTracks()[0].getSettings(), c = document.createElement("video"), i = document.createElement("canvas");
-                                c.width = i.width = null != d ? d : 512, c.height = i.height = null != n ? n : 288, c.srcObject = a, c.play();
-                                let r = i.getContext("2d");
+                                } = a.getVideoTracks()[0].getSettings(), i = document.createElement("video"), c = document.createElement("canvas");
+                                i.width = c.width = null != d ? d : 512, i.height = c.height = null != n ? n : 288, i.srcObject = a, i.play();
+                                let r = c.getContext("2d");
                                 return new Promise((e, a) => {
-                                    c.ontimeupdate = () => {
-                                        null == r || r.drawImage(c, 0, 0, i.width, i.height);
-                                        let d = null == r ? void 0 : r.getImageData(0, 0, i.width, i.height);
+                                    i.ontimeupdate = () => {
+                                        null == r || r.drawImage(i, 0, 0, c.width, c.height);
+                                        let d = null == r ? void 0 : r.getImageData(0, 0, c.width, c.height);
                                         try {
                                             null != d && t(d) && e(d)
                                         } catch (e) {
@@ -835,7 +835,7 @@
                                         }
                                     }
                                 }).finally(() => {
-                                    c.ontimeupdate = null, c.removeAttribute("srcObject"), c.load()
+                                    i.ontimeupdate = null, i.removeAttribute("srcObject"), i.load()
                                 })
                             })(e, e => {
                                 if (new Uint32Array(e.data.buffer).some(e => 0 !== e)) return !0;
@@ -850,12 +850,12 @@
                                 d = e.width * a,
                                 n = e.height * a;
                             w.width = d, w.height = n;
-                            let c = window.document.createElement("canvas"),
-                                i = c.getContext("2d");
-                            c.width = e.width, c.height = e.height;
+                            let i = window.document.createElement("canvas"),
+                                c = i.getContext("2d");
+                            i.width = e.width, i.height = e.height;
                             let r = new ImageData(e.data, e.width, e.height);
-                            return null == i || i.putImageData(r, 0, 0), new Promise(t => {
-                                null == S || S.drawImage(c, 0, 0, e.width, e.height, 0, 0, d, n), t()
+                            return null == c || c.putImageData(r, 0, 0), new Promise(t => {
+                                null == S || S.drawImage(i, 0, 0, e.width, e.height, 0, 0, d, n), t()
                             })
                         }(a);
                         let n = w.toDataURL("image/jpeg");
@@ -865,7 +865,7 @@
                                 previewURL: n
                             }), m.isPlatformEmbedded) {
                             let e = p.default.getToken();
-                            c()(null != e, "Auth token was null while sending screenshot."), await _.default.makeChunkedRequest(I.Endpoints.STREAM_PREVIEW(t), {
+                            i()(null != e, "Auth token was null while sending screenshot."), await _.default.makeChunkedRequest(I.Endpoints.STREAM_PREVIEW(t), {
                                 thumbnail: n
                             }, {
                                 method: "POST",
@@ -891,10 +891,10 @@
                                 guildId: t,
                                 channelId: a,
                                 userId: n,
-                                streamId: c,
-                                context: i
+                                streamId: i,
+                                context: c
                             } = e;
-                            !(null == c || i !== T.MediaEngineContextTypes.STREAM || n !== p.default.getId() || __OVERLAY__) && (A(), d = c, N(c, t, a, n))
+                            !(null == i || c !== T.MediaEngineContextTypes.STREAM || n !== p.default.getId() || __OVERLAY__) && (A(), d = i, N(i, t, a, n))
                         }), b.default.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
                             let {
                                 videoState: t
@@ -909,8 +909,8 @@
                 a.r(t), a("411104");
                 var d = a("570140"),
                     n = a("846027"),
-                    c = a("872810"),
-                    i = a("710845"),
+                    i = a("872810"),
+                    c = a("710845"),
                     r = a("252759"),
                     o = a("361291"),
                     f = a("199902"),
@@ -984,7 +984,7 @@
                             a = o.default.getState();
                         switch (e.type) {
                             case r.StreamDirectorActionType.STREAM:
-                                if (null != t && (0, c.setStreamPaused)(t, !1), e.sourceId.startsWith("camera") && null != e.audioSourceId) {
+                                if (null != t && (0, i.setStreamPaused)(t, !1), e.sourceId.startsWith("camera") && null != e.audioSourceId) {
                                     let t = e.sourceId.split(":")[1];
                                     n.default.setGoLiveSource({
                                         cameraSettings: {
@@ -1015,7 +1015,7 @@
                                 }
                                 break;
                             case r.StreamDirectorActionType.PAUSE:
-                                null != t && (0, c.setStreamPaused)(t, !0);
+                                null != t && (0, i.setStreamPaused)(t, !0);
                                 break;
                             case r.StreamDirectorActionType.STOP:
                                 null != t && (0, u.default)(t);
@@ -1026,7 +1026,7 @@
                     }
                     _onCapturePaused(e) {
                         let t = f.default.getCurrentUserActiveStream();
-                        null != t && (0, c.setStreamPaused)(t, e)
+                        null != t && (0, i.setStreamPaused)(t, e)
                     }
                     _onCaptureEnded() {
                         switch (this.mode) {
@@ -1048,7 +1048,7 @@
                                 guildId: a,
                                 channelId: d,
                                 pid: n,
-                                sourceId: c,
+                                sourceId: i,
                                 audioSourceId: r,
                                 sound: o
                             } = e, f = l.default.getId(), u = (0, s.encodeStreamKey)({
@@ -1057,7 +1057,7 @@
                                 channelId: d,
                                 ownerId: f
                             });
-                            null == n != (null == c) ? (null != n && this._onStreamApplication(u, n), null != c && this._onStreamDirectSource(u, c, r, o)) : new i.default("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(n, ", source-id: ").concat(c, ")"))
+                            null == n != (null == i) ? (null != n && this._onStreamApplication(u, n), null != i && this._onStreamDirectSource(u, i, r, o)) : new c.default("ApplicationSwitchingManager").warn("invalid start_stream: both application + display modes were specified (pid: ".concat(n, ", source-id: ").concat(i, ")"))
                         }), d.default.subscribe("STREAM_DELETE", e => {
                             let {
                                 streamKey: t
@@ -1099,9 +1099,9 @@
                 a.r(t), a("47120");
                 var d = a("213919"),
                     n = a("570140"),
-                    c = a("317770"),
-                    i = a("358085");
-                class r extends c.default {
+                    i = a("317770"),
+                    c = a("358085");
+                class r extends i.default {
                     _initialize() {
                         n.default.subscribe("CONNECTION_OPEN", this.handleConnectionOpen)
                     }
@@ -1111,7 +1111,7 @@
                     constructor(...e) {
                         var t, a, n;
                         super(...e), t = this, a = "handleConnectionOpen", n = e => {
-                            ((0, i.isWindows)() || (0, i.isMac)()) && d.encryptAndStoreTokens()
+                            ((0, c.isWindows)() || (0, c.isMac)()) && d.encryptAndStoreTokens()
                         }, a in t ? Object.defineProperty(t, a, {
                             value: n,
                             enumerable: !0,
@@ -1131,8 +1131,8 @@
                 }), a("470079"), a("902704");
                 var d = a("433517"),
                     n = a("159626"),
-                    c = a("893638"),
-                    i = a("828695"),
+                    i = a("893638"),
+                    c = a("828695"),
                     r = a("278147");
                 let o = {
                         mergeTabs: !1,
@@ -1235,7 +1235,7 @@
                     var a, n;
                     let u = !(0, r.isInMainTabsExperiment)(),
                         b = !!u || (null == t ? void 0 : t.disable);
-                    return i.default.hasLoadedExperiments || b ? (0, c.getMergedExperimentConfigs)(s.existingUsers, s.newUsers, e, {
+                    return c.default.hasLoadedExperiments || b ? (0, i.getMergedExperimentConfigs)(s.existingUsers, s.newUsers, e, {
                         ...t,
                         disable: b,
                         autoTrackExposure: !u && (null === (n = null == t ? void 0 : t.autoTrackExposure) || void 0 === n || n)
@@ -1256,8 +1256,8 @@
                     if (null != t) return [t.params.guildId, t.params.channelId];
                     let a = (0, d.coerceGuildsRoute)(e);
                     if (null != a) {
-                        var n, c;
-                        return [null === (n = a.params) || void 0 === n ? void 0 : n.guildId, null === (c = a.params) || void 0 === c ? void 0 : c.channelId]
+                        var n, i;
+                        return [null === (n = a.params) || void 0 === n ? void 0 : n.guildId, null === (i = a.params) || void 0 === i ? void 0 : i.channelId]
                     }
                     return [void 0, void 0]
                 }
@@ -1268,8 +1268,8 @@
                 var d = a("735250");
                 a("470079");
                 var n = a("525654"),
-                    c = a.n(n),
-                    i = a("481060"),
+                    i = a.n(n),
+                    c = a("481060"),
                     r = a("570140"),
                     o = a("468026"),
                     f = a("317770"),
@@ -1289,10 +1289,10 @@
                             let {
                                 kind: t,
                                 granted: a
-                            } = e, n = "Firefox" === c().name ? s.HelpdeskArticles.ENABLE_MIC_FIREFOX : s.HelpdeskArticles.ENABLE_MIC_CHROME;
+                            } = e, n = "Firefox" === i().name ? s.HelpdeskArticles.ENABLE_MIC_FIREFOX : s.HelpdeskArticles.ENABLE_MIC_CHROME;
                             if (!a) {
                                 let e = "audio" !== t;
-                                (0, i.openModal)(t => (0, d.jsx)(o.default, {
+                                (0, c.openModal)(t => (0, d.jsx)(o.default, {
                                     title: e ? u.default.Messages.NO_CAMERA_TITLE : u.default.Messages.NO_MIC_TITLE,
                                     body: e ? u.default.Messages.NO_CAMERA_BODY : u.default.Messages.NO_MIC_BODY,
                                     onConfirm: () => window.open(l.default.getArticleURL(n), "_blank"),
@@ -1315,11 +1315,11 @@
                 a.r(t);
                 var d = a("266067"),
                     n = a("652874"),
-                    c = a("981631");
+                    i = a("981631");
 
-                function i(e) {
+                function c(e) {
                     let t = (0, d.matchPath)(null != e ? e : "", {
-                        path: c.Routes.CHANNEL(":guildId", ":channelId?", ":messageId?")
+                        path: i.Routes.CHANNEL(":guildId", ":channelId?", ":messageId?")
                     });
                     if (null != t) {
                         let {
@@ -1327,12 +1327,12 @@
                             channelId: a
                         } = t.params;
                         return {
-                            guildId: e === c.ME ? null : e,
+                            guildId: e === i.ME ? null : e,
                             channelId: null != a ? a : null
                         }
                     }
                     let a = (0, d.matchPath)(null != e ? e : "", {
-                        path: c.Routes.GUILD_BOOSTING_MARKETING(":guildId")
+                        path: i.Routes.GUILD_BOOSTING_MARKETING(":guildId")
                     });
                     return null != a ? {
                         guildId: a.params.guildId,
@@ -1351,7 +1351,7 @@
                         let {
                             guildId: a,
                             channelId: d
-                        } = i(t);
+                        } = c(t);
                         e({
                             path: t,
                             guildId: a,
@@ -1362,7 +1362,7 @@
                         let {
                             guildId: a,
                             channelId: d
-                        } = i(t);
+                        } = c(t);
                         e({
                             path: null,
                             guildId: a,
@@ -1377,8 +1377,8 @@
                 a.r(t), a("47120"), a("411104");
                 var d = a("540571"),
                     n = a("266067"),
-                    c = a("38618"),
-                    i = a("278147"),
+                    i = a("38618"),
+                    c = a("278147"),
                     r = a("215355"),
                     o = a("777639"),
                     f = a("311163"),
@@ -1403,13 +1403,13 @@
                         let {
                             pathname: e
                         } = (0, h.getHistory)().location;
-                        b.default.getState().resetPath(e), this.unlistenKeyboardChange = b.default.subscribe(this.handleKeybindRouteChange), c.default.addChangeListener(this.handleConnectionChange)
+                        b.default.getState().resetPath(e), this.unlistenKeyboardChange = b.default.subscribe(this.handleKeybindRouteChange), i.default.addChangeListener(this.handleConnectionChange)
                     }
                     convertRouteToNavigation(e, t) {
-                        var a, d, c;
+                        var a, d, i;
                         let {
                             pathname: b
-                        } = e, h = (0, o.getRootNavigationRef)(), m = (0, i.isInMainTabsExperiment)(), {
+                        } = e, h = (0, o.getRootNavigationRef)(), m = (0, c.isInMainTabsExperiment)(), {
                             mergeTabs: _
                         } = (0, r.getMergedTabsExperiment)({
                             location: "convertRouteToNavigation"
@@ -1440,7 +1440,7 @@
                                 });
                             if (!m) {
                                 let e = h.getRootState();
-                                (null == e ? void 0 : null === (c = e.routes) || void 0 === c ? void 0 : null === (d = c[0]) || void 0 === d ? void 0 : d.name) !== "panels" && (0, l.resetToPanelsUI)();
+                                (null == e ? void 0 : null === (i = e.routes) || void 0 === i ? void 0 : null === (d = i[0]) || void 0 === d ? void 0 : d.name) !== "panels" && (0, l.resetToPanelsUI)();
                                 return
                             }
                             if (null != t) {
@@ -1521,20 +1521,20 @@
                         if (this.routeChangeCount += 1, this.routeChangeCount < 10)
                             for (let a of this.rewrites) {
                                 let n = (0, h.getHistory)().location.pathname,
-                                    c = a(e, t);
-                                if (null != c) return (0, d.addBreadcrumb)({
+                                    i = a(e, t);
+                                if (null != i) return (0, d.addBreadcrumb)({
                                     message: "RouteManager.handleRouteChange: A route rewrite is replacing the current route",
                                     data: {
-                                        replacePath: c.path,
+                                        replacePath: i.path,
                                         previousPath: n
                                     }
-                                }), (0, h.replaceWith)(c.path, c.state), !0
+                                }), (0, h.replaceWith)(i.path, i.state), !0
                             } else throw Error("RouteManager: Something has gone horribly wrong with rewrites");
                         return !1
                     }
                     cleanup() {
                         var e, t;
-                        null === (e = this.unlistenHistory) || void 0 === e || e.call(this), this.unlistenHistory = void 0, null === (t = this.unlistenKeyboardChange) || void 0 === t || t.call(this), this.unlistenKeyboardChange = void 0, c.default.removeChangeListener(this.handleConnectionChange)
+                        null === (e = this.unlistenHistory) || void 0 === e || e.call(this), this.unlistenHistory = void 0, null === (t = this.unlistenKeyboardChange) || void 0 === t || t.call(this), this.unlistenKeyboardChange = void 0, i.default.removeChangeListener(this.handleConnectionChange)
                     }
                     addRouteChangeListener(e) {
                         return null != this.unlistenHistory && e((0, h.getHistory)().location, "REPLACE"), this.listeners.add(e), () => this.removeRouteChangeListener(e)
@@ -1557,7 +1557,7 @@
                     }
                     constructor() {
                         m(this, "unlistenHistory", void 0), m(this, "unlistenKeyboardChange", void 0), m(this, "rewrites", new Set), m(this, "listeners", new Set), m(this, "routeChangeCount", 0), m(this, "timer", -1), m(this, "connected", !1), m(this, "handleConnectionChange", () => {
-                            let e = c.default.isConnected(),
+                            let e = i.default.isConnected(),
                                 t = e && !this.connected;
                             this.connected = e, t && (this.routeChangeCount = 0, this.executeRouteRewrites((0, h.getHistory)().location, "REPLACE"))
                         }), m(this, "handleRouteChange", (e, t) => {
@@ -1591,8 +1591,8 @@
                 });
                 var d = a("735250"),
                     n = a("470079"),
-                    c = a("445131"),
-                    i = a("613828"),
+                    i = a("445131"),
+                    c = a("613828"),
                     r = a("304445"),
                     o = a("703656");
 
@@ -1600,8 +1600,8 @@
                     let {
                         children: t
                     } = e;
-                    return n.useEffect(() => (r.default.initialize(), () => r.default.cleanup()), []), (0, d.jsx)(c.HelmetProvider, {
-                        children: (0, d.jsx)(i.Router, {
+                    return n.useEffect(() => (r.default.initialize(), () => r.default.cleanup()), []), (0, d.jsx)(i.HelmetProvider, {
+                        children: (0, d.jsx)(c.Router, {
                             history: (0, o.getHistory)(),
                             children: t
                         })
@@ -1618,9 +1618,9 @@
                         return n
                     }
                 });
-                var d, n, c = a("75834");
+                var d, n, i = a("75834");
 
-                function i(e, t, a) {
+                function c(e, t, a) {
                     return t in e ? Object.defineProperty(e, t, {
                         value: a,
                         enumerable: !0,
@@ -1630,7 +1630,7 @@
                 }(d = n || (n = {})).STREAM = "stream", d.PAUSE = "pause", d.STOP = "stop";
                 class r {
                     onStreamBegin(e, t) {
-                        let a = (0, c.getInitialStreamTarget)(e, t);
+                        let a = (0, i.getInitialStreamTarget)(e, t);
                         null == a || null == a.windowHandle ? this.callback({
                             type: "stop"
                         }) : this._stream(a)
@@ -1653,7 +1653,7 @@
                         return (null === (t = this.application) || void 0 === t ? void 0 : t.windowHandle) != null ? this.onCaptureEnd(e, this.application.windowHandle) : this._stop()
                     }
                     _update(e) {
-                        let t = (0, c.getStreamTarget)(e, this.application);
+                        let t = (0, i.getStreamTarget)(e, this.application);
                         if (null != t) return null == t.windowHandle ? this._pause() : this._stream(t);
                         this._stop()
                     }
@@ -1679,7 +1679,7 @@
                         }))
                     }
                     constructor(e) {
-                        i(this, "callback", void 0), i(this, "active", void 0), i(this, "application", void 0), this.callback = e, this.active = !1, this.application = null
+                        c(this, "callback", void 0), c(this, "active", void 0), c(this, "application", void 0), this.callback = e, this.active = !1, this.application = null
                     }
                 }
             },
@@ -1690,36 +1690,36 @@
                         return n
                     },
                     getStreamTarget: function() {
-                        return i
+                        return c
                     }
                 }), a("47120");
                 var d = a("823379");
 
                 function n(e, t) {
                     let a = e.find(e => e.processId === t);
-                    return null == a ? null : i(e, a)
+                    return null == a ? null : c(e, a)
                 }
-                let c = "356869127241072640";
+                let i = "356869127241072640";
 
-                function i(e, t) {
+                function c(e, t) {
                     var a;
                     if (null == t) return null;
-                    if (t.applicationId === c) return function(e, t) {
+                    if (t.applicationId === i) return function(e, t) {
                         let a = t.processPath.length > 1 ? t.processPath[t.processPath.length - 2] : 0,
-                            d = e.filter(e => e.applicationId === c && e.processPath.includes(a)),
+                            d = e.filter(e => e.applicationId === i && e.processPath.includes(a)),
                             n = d.find(e => "league of legends.exe" === e.executableName);
                         return void 0 !== n ? n : d.length > 0 ? d[0] : null
                     }(e, t);
                     let n = new Map(e.map(e => [e.processId, e])),
-                        i = t.processPath.map(e => n.get(e)).find(e => null != e);
-                    if (null == i) return null;
+                        c = t.processPath.map(e => n.get(e)).find(e => null != e);
+                    if (null == c) return null;
                     let o = e.map(e => {
                         let t = e.processPath.findIndex(e => n.has(e));
                         return -1 === t ? null : {
                             application: e,
                             rootedPath: e.processPath.slice(t)
                         }
-                    }).filter(d.isNotNullish).filter(e => e.rootedPath[0] === i.processId);
+                    }).filter(d.isNotNullish).filter(e => e.rootedPath[0] === c.processId);
                     o.sort((e, t) => {
                         let a = e.rootedPath.map(e => n.get(e)).filter(e => null != e && null != e.windowHandle),
                             d = r(t.rootedPath.map(e => n.get(e)).filter(e => null != e && null != e.windowHandle), a);
@@ -1738,8 +1738,8 @@
                 a.r(t), a("47120");
                 var d = a("348327"),
                     n = a.n(d),
-                    c = a("392711"),
-                    i = a.n(c),
+                    i = a("392711"),
+                    c = a.n(i),
                     r = a("570140"),
                     o = a("846027"),
                     f = a("287734"),
@@ -1788,7 +1788,7 @@
                                 return
                             }
                             this.callbackActions[e.buttonName]()
-                        }), O(this, "handleViewUpdate", i().debounce(() => {
+                        }), O(this, "handleViewUpdate", c().debounce(() => {
                             let e = _.default.getVoiceChannelId();
                             if (null == e) {
                                 this.setThumbarButtons([]);
@@ -1798,21 +1798,21 @@
                                 a = m.default.isSelfDeaf(),
                                 d = m.default.isVideoEnabled(),
                                 n = m.default.isVideoAvailable(),
-                                c = p.default.getChannel(e),
-                                i = null == c || (0, u.getVideoPermission)(c),
+                                i = p.default.getChannel(e),
+                                c = null == i || (0, u.getVideoPermission)(i),
                                 {
                                     reachedLimit: r,
                                     limit: o
-                                } = null != c ? (0, s.getChannelVideoLimit)(c) : {
+                                } = null != i ? (0, s.getChannelVideoLimit)(i) : {
                                     reachedLimit: void 0,
                                     limit: void 0
                                 },
                                 f = (0, b.getVideoButtonLabel)({
                                     enabled: d,
                                     join: !1,
-                                    channel: c,
+                                    channel: i,
                                     cameraUnavailable: !n,
-                                    hasPermission: i,
+                                    hasPermission: c,
                                     channelLimit: o,
                                     channelLimitReached: r
                                 });
@@ -1841,7 +1841,7 @@
             },
             801814: function(e, t, a) {
                 "use strict";
-                var d, n, c, i;
+                var d, n, i, c;
 
                 function r(e, t, a) {
                     return t in e ? Object.defineProperty(e, t, {
@@ -1873,7 +1873,7 @@
                     default: function() {
                         return l
                     }
-                }), (c = d || (d = {})).CHECKING_FOR_UPDATES = "checking-for-updates", c.INSTALLED_MODULE = "installed-module", c.UPDATE_CHECK_FINISHED = "update-check-finished", c.DOWNLOADING_MODULE = "downloading-module", c.DOWNLOADING_MODULE_PROGRESS = "downloading-module-progress", c.DOWNLOADING_MODULES_FINISHED = "downloading-modules-finished", c.UPDATE_MANUALLY = "update-manually", c.DOWNLOADED_MODULE = "downloaded-module", c.INSTALLING_MODULES_FINISHED = "installing-modules-finished", c.INSTALLING_MODULE = "installing-module", c.INSTALLING_MODULE_PROGRESS = "installing-module-progress", c.NO_PENDING_UPDATES = "no-pending-updates", (i = n || (n = {})).CLOUD_SYNC = "discord_cloudsync", i.DESKTOP_CORE = "discord_desktop_core", i.DISPATCH = "discord_dispatch", i.ERLPACK = "discord_erlpack", i.GAME_UTILS = "discord_game_utils", i.HOOK = "discord_hook", i.KRISP = "discord_krisp", i.MEDIA = "discord_media", i.MODULES = "discord_modules", i.OVERLAY2 = "discord_overlay2", i.RPC = "discord_rpc", i.SPELLCHECK = "discord_spellcheck", i.UPDATER_BOOTSTRAP = "discord_updater_bootstrap", i.UTILS = "discord_utils", i.VIGILANTE = "discord_vigilante", i.VOICE = "discord_voice", i.ZSTD = "discord_zstd";
+                }), (i = d || (d = {})).CHECKING_FOR_UPDATES = "checking-for-updates", i.INSTALLED_MODULE = "installed-module", i.UPDATE_CHECK_FINISHED = "update-check-finished", i.DOWNLOADING_MODULE = "downloading-module", i.DOWNLOADING_MODULE_PROGRESS = "downloading-module-progress", i.DOWNLOADING_MODULES_FINISHED = "downloading-modules-finished", i.UPDATE_MANUALLY = "update-manually", i.DOWNLOADED_MODULE = "downloaded-module", i.INSTALLING_MODULES_FINISHED = "installing-modules-finished", i.INSTALLING_MODULE = "installing-module", i.INSTALLING_MODULE_PROGRESS = "installing-module-progress", i.NO_PENDING_UPDATES = "no-pending-updates", (c = n || (n = {})).CLOUD_SYNC = "discord_cloudsync", c.DESKTOP_CORE = "discord_desktop_core", c.DISPATCH = "discord_dispatch", c.ERLPACK = "discord_erlpack", c.GAME_UTILS = "discord_game_utils", c.HOOK = "discord_hook", c.KRISP = "discord_krisp", c.MEDIA = "discord_media", c.MODULES = "discord_modules", c.OVERLAY2 = "discord_overlay2", c.RPC = "discord_rpc", c.SPELLCHECK = "discord_spellcheck", c.UPDATER_BOOTSTRAP = "discord_updater_bootstrap", c.UTILS = "discord_utils", c.VIGILANTE = "discord_vigilante", c.VOICE = "discord_voice", c.ZSTD = "discord_zstd";
                 class l {
                     handleDownloadingModule(e) {
                         if (!f(e.name)) {
@@ -1910,9 +1910,9 @@
                         let a = t.foreground ? "foreground" : "background",
                             d = "".concat(a, "_download_ms_").concat(e.name),
                             n = "".concat(a, "_bytes_").concat(e.name),
-                            c = Number((BigInt(e.now) - t.startTime + BigInt(999999)) / BigInt(1e6)),
-                            i = !1 === e.receivedBytes ? 0 : e.receivedBytes;
-                        t.foreground ? (this._report.foreground_download_ms_total += c, this._report.foreground_bytes_total += i) : (this._report.background_download_ms_total += c, this._report.background_bytes_total += i), this.incrementReportField(d, c), this.incrementReportField(n, i), delete this._downloadingModules[e.name]
+                            i = Number((BigInt(e.now) - t.startTime + BigInt(999999)) / BigInt(1e6)),
+                            c = !1 === e.receivedBytes ? 0 : e.receivedBytes;
+                        t.foreground ? (this._report.foreground_download_ms_total += i, this._report.foreground_bytes_total += c) : (this._report.background_download_ms_total += i, this._report.background_bytes_total += c), this.incrementReportField(d, i), this.incrementReportField(n, c), delete this._downloadingModules[e.name]
                     }
                     handleInstallingModule(e) {
                         if (!f(e.name)) {
@@ -1935,9 +1935,9 @@
                         let a = t.foreground ? "foreground" : "background",
                             d = "".concat(a, "_install_ms_").concat(e.name),
                             n = "min_version_".concat(e.name),
-                            c = "max_version_".concat(e.name),
-                            i = Number((BigInt(e.now) - t.startTime + BigInt(999999)) / BigInt(1e6));
-                        t.foreground ? this._report.foreground_install_ms_total += i : this._report.background_install_ms_total += i, this.incrementReportField(d, i), this.setReportFieldMinimum(n, t.oldVersion), e.succeeded ? (!0 === e.delta ? this._report.num_delta_installed++ : this._report.num_full_installed++, this.setReportFieldMaximum(c, t.newVersion)) : this._report.num_failed++, delete this._installingModules[e.name]
+                            i = "max_version_".concat(e.name),
+                            c = Number((BigInt(e.now) - t.startTime + BigInt(999999)) / BigInt(1e6));
+                        t.foreground ? this._report.foreground_install_ms_total += c : this._report.background_install_ms_total += c, this.incrementReportField(d, c), this.setReportFieldMinimum(n, t.oldVersion), e.succeeded ? (!0 === e.delta ? this._report.num_delta_installed++ : this._report.num_full_installed++, this.setReportFieldMaximum(i, t.newVersion)) : this._report.num_failed++, delete this._installingModules[e.name]
                     }
                     trackEvent(e) {
                         switch (e.type) {
@@ -1973,19 +1973,19 @@
                 a.r(t), a("47120");
                 var d = a("317770"),
                     n = a("626135"),
-                    c = a("358085"),
-                    i = a("998502"),
+                    i = a("358085"),
+                    c = a("998502"),
                     r = a("801814"),
                     o = a("981631");
                 class f extends d.default {
                     _initialize() {
-                        c.isPlatformEmbedded && (i.default.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()), i.default.on("MODULE_INSTALLED", (e, t, a) => this.processModuleEvents()), i.default.on("UPDATER_HISTORY_RESPONSE", (e, t) => {
+                        i.isPlatformEmbedded && (c.default.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()), c.default.on("MODULE_INSTALLED", (e, t, a) => this.processModuleEvents()), c.default.on("UPDATER_HISTORY_RESPONSE", (e, t) => {
                             this._handleHistoryResponse(t)
                         }), this.processModuleEvents())
                     }
                     _terminate() {}
                     processModuleEvents() {
-                        i.default.send("UPDATER_HISTORY_QUERY_AND_TRUNCATE")
+                        c.default.send("UPDATER_HISTORY_QUERY_AND_TRUNCATE")
                     }
                     _handleHistoryResponse(e) {
                         null != e && (e.forEach(e => {
@@ -2016,17 +2016,17 @@
                 });
                 var d = a("442837"),
                     n = a("430824"),
-                    c = a("938475"),
-                    i = a("981631");
+                    i = a("938475"),
+                    c = a("981631");
 
                 function r(e) {
-                    return (0, d.useStateFromStoresObject)([c.default, n.default], () => {
-                        let t = c.default.countVoiceStatesForChannel(e.id),
+                    return (0, d.useStateFromStoresObject)([i.default, n.default], () => {
+                        let t = i.default.countVoiceStatesForChannel(e.id),
                             a = n.default.getGuild(e.getGuildId());
                         return null == a ? {
                             reachedLimit: !1,
                             limit: -1
-                        } : e.type === i.ChannelTypes.GUILD_STAGE_VOICE ? {
+                        } : e.type === c.ChannelTypes.GUILD_STAGE_VOICE ? {
                             reachedLimit: t > a.maxStageVideoChannelUsers,
                             limit: a.maxStageVideoChannelUsers
                         } : {
@@ -2037,12 +2037,12 @@
                 }
 
                 function o(e) {
-                    let t = c.default.countVoiceStatesForChannel(e.id),
+                    let t = i.default.countVoiceStatesForChannel(e.id),
                         a = n.default.getGuild(e.getGuildId());
                     return null == a ? {
                         reachedLimit: !1,
                         limit: -1
-                    } : e.type === i.ChannelTypes.GUILD_STAGE_VOICE ? {
+                    } : e.type === c.ChannelTypes.GUILD_STAGE_VOICE ? {
                         reachedLimit: t > a.maxStageVideoChannelUsers,
                         limit: a.maxStageVideoChannelUsers
                     } : {
@@ -2061,11 +2061,11 @@
                 var d = a("735250");
                 a("470079");
                 var n = a("481060"),
-                    c = a("695346"),
-                    i = a("981631");
+                    i = a("695346"),
+                    c = a("981631");
 
                 function r(e, t) {
-                    c.AlwaysPreviewVideo.getSetting() ? (0, n.openModalLazy)(async () => {
+                    i.AlwaysPreviewVideo.getSetting() ? (0, n.openModalLazy)(async () => {
                         let {
                             default: t
                         } = await Promise.all([a.e("99387"), a.e("5528"), a.e("45733")]).then(a.bind(a, "601572"));
@@ -2076,7 +2076,7 @@
                         })
                     }, {
                         modalKey: "camera-preview",
-                        contextKey: t === i.AppContext.POPOUT ? n.POPOUT_MODAL_CONTEXT : n.DEFAULT_MODAL_CONTEXT
+                        contextKey: t === c.AppContext.POPOUT ? n.POPOUT_MODAL_CONTEXT : n.DEFAULT_MODAL_CONTEXT
                     }) : null == e || e()
                 }
             },
@@ -2098,8 +2098,8 @@
                 });
                 var d = a("525654"),
                     n = a.n(d),
-                    c = a("271579"),
-                    i = a("314897"),
+                    i = a("271579"),
+                    c = a("314897"),
                     r = a("981631");
                 let o = "linux";
 
@@ -2132,17 +2132,17 @@
                     let d = null != a ? a.toString() : null;
                     switch (t) {
                         case "iOS":
-                            return (0, c.default)(null != d ? d : "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746", {
+                            return (0, i.default)(null != d ? d : "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746", {
                                 utmSource: e,
-                                fingerprint: i.default.getFingerprint(),
-                                attemptId: (0, c.generateAttemptId)()
+                                fingerprint: c.default.getFingerprint(),
+                                attemptId: (0, i.generateAttemptId)()
                             });
                         case "Android":
-                            return (0, c.default)(null != d ? d : "https://play.google.com/store/apps/details", {
+                            return (0, i.default)(null != d ? d : "https://play.google.com/store/apps/details", {
                                 utmSource: e,
                                 id: "com.discord",
-                                fingerprint: i.default.getFingerprint(),
-                                attemptId: (0, c.generateAttemptId)()
+                                fingerprint: c.default.getFingerprint(),
+                                attemptId: (0, i.generateAttemptId)()
                             });
                         default:
                             return null != d ? d : "https://www.discord.com"
@@ -2154,8 +2154,8 @@
                 a.r(t);
                 var d = a("703656"),
                     n = a("556296"),
-                    c = a("358085"),
-                    i = a("998502"),
+                    i = a("358085"),
+                    c = a("998502"),
                     r = a("981631");
 
                 function o(e, t) {
@@ -2163,9 +2163,9 @@
                 }
                 t.default = new class e {
                     initialize() {
-                        (0, c.isDesktop)() && (i.default.on("NAVIGATE_BACK", (e, t) => {
+                        (0, i.isDesktop)() && (c.default.on("NAVIGATE_BACK", (e, t) => {
                             o(t, r.MouseKeyCodes.Back) && (0, d.back)()
-                        }), i.default.on("NAVIGATE_FORWARD", (e, t) => {
+                        }), c.default.on("NAVIGATE_FORWARD", (e, t) => {
                             o(t, r.MouseKeyCodes.Forward) && (0, d.forward)()
                         }))
                     }
@@ -2175,12 +2175,12 @@
                 "use strict";
                 a.r(t), a.d(t, {
                     getOpenAppFromEmailDestinations: function() {
-                        return i
+                        return c
                     }
                 }), a("315314"), a("610138"), a("216116"), a("78328"), a("815648"), a("47120");
                 var d = a("593473"),
                     n = a("591759");
-                let c = e => {
+                let i = e => {
                         if (null == e || "" === e) return null;
                         try {
                             let t = new URL(e);
@@ -2189,11 +2189,11 @@
                             return null
                         }
                     },
-                    i = e => {
+                    c = e => {
                         let t = (0, d.parse)(e);
                         return {
-                            desktop: c(t.desktop_link),
-                            mobile: c(t.mobile_link)
+                            desktop: i(t.desktop_link),
+                            mobile: i(t.mobile_link)
                         }
                     }
             },
@@ -2210,8 +2210,8 @@
                 }), a("653041"), a("47120");
                 var d = a("512722"),
                     n = a.n(d),
-                    c = a("90757"),
-                    i = a.n(c),
+                    i = a("90757"),
+                    c = a.n(i),
                     r = a("65154");
 
                 function o(e, t, a) {
@@ -2220,11 +2220,11 @@
                         width: 150,
                         height: 150
                     };
-                    let c = [];
-                    return t.includes(r.DesktopSources.SCREEN) && e.supports(r.Features.SCREEN_PREVIEWS) && (c.push(e.getScreenPreviews(a.width, a.height)), t = t.filter(e => e !== r.DesktopSources.SCREEN)), t.includes(r.DesktopSources.WINDOW) && e.supports(r.Features.WINDOW_PREVIEWS) && (c.push(e.getWindowPreviews(a.width, a.height)), t = t.filter(e => e !== r.DesktopSources.WINDOW)), 0 !== t.length && c.push(d.desktopCapture.getDesktopCaptureSources({
+                    let i = [];
+                    return t.includes(r.DesktopSources.SCREEN) && e.supports(r.Features.SCREEN_PREVIEWS) && (i.push(e.getScreenPreviews(a.width, a.height)), t = t.filter(e => e !== r.DesktopSources.SCREEN)), t.includes(r.DesktopSources.WINDOW) && e.supports(r.Features.WINDOW_PREVIEWS) && (i.push(e.getWindowPreviews(a.width, a.height)), t = t.filter(e => e !== r.DesktopSources.WINDOW)), 0 !== t.length && i.push(d.desktopCapture.getDesktopCaptureSources({
                         types: t,
                         thumbnailSize: a
-                    })), Promise.all(c).then(e => i()(e))
+                    })), Promise.all(i).then(e => c()(e))
                 }
             }
         },
@@ -2255,8 +2255,8 @@
         }), e.forEach(function(e) {
             e.r-- ? e.r++ : e()
         }))
-    }, s.a = function(n, c, i) {
-        i && ((r = []).d = -1);
+    }, s.a = function(n, i, c) {
+        c && ((r = []).d = -1);
         var r, o, f, l, s = new Set,
             u = n.exports,
             b = new Promise(function(e, t) {
@@ -2264,44 +2264,44 @@
             });
         b[t] = u, b[e] = function(e) {
             r && e(r), s.forEach(e), b.catch(function() {})
-        }, n.exports = b, c(function(n) {
+        }, n.exports = b, i(function(n) {
             o = n.map(function(n) {
                 if (null !== n && "object" == typeof n) {
                     if (n[e]) return n;
                     if (n.then) {
-                        var c = [];
-                        c.d = 0, n.then(function(e) {
-                            i[t] = e, d(c)
+                        var i = [];
+                        i.d = 0, n.then(function(e) {
+                            c[t] = e, d(i)
                         }, function(e) {
-                            i[a] = e, d(c)
+                            c[a] = e, d(i)
                         });
-                        var i = {};
-                        return i[e] = function(e) {
-                            e(c)
-                        }, i
+                        var c = {};
+                        return c[e] = function(e) {
+                            e(i)
+                        }, c
                     }
                 }
                 var r = {};
                 return r[e] = function() {}, r[t] = n, r
             });
-            var c, i = function() {
+            var i, c = function() {
                     return o.map(function(e) {
                         if (e[a]) throw e[a];
                         return e[t]
                     })
                 },
                 f = new Promise(function(t) {
-                    (c = function() {
-                        t(i)
+                    (i = function() {
+                        t(c)
                     }).r = 0;
                     var a = function(e) {
-                        e === r || s.has(e) || (s.add(e), e && !e.d && (c.r++, e.push(c)))
+                        e === r || s.has(e) || (s.add(e), e && !e.d && (i.r++, e.push(i)))
                     };
                     o.map(function(t) {
                         t[e](a)
                     })
                 });
-            return c.r ? f : i()
+            return i.r ? f : c()
         }, function(e) {
             e ? l(b[a] = e) : f(u), d(r)
         }), r && r.d < 0 && (r.d = 0)
@@ -2314,7 +2314,7 @@
         return s.d(t, {
             a: t
         }), t
-    }, c = Object.getPrototypeOf ? function(e) {
+    }, i = Object.getPrototypeOf ? function(e) {
         return Object.getPrototypeOf(e)
     } : function(e) {
         return e.__proto__
@@ -2323,9 +2323,9 @@
         var a = Object.create(null);
         s.r(a);
         var d = {};
-        n = n || [null, c({}), c([]), c(c)];
-        for (var i = 2 & t && e;
-            "object" == typeof i && !~n.indexOf(i); i = c(i)) Object.getOwnPropertyNames(i).forEach(function(t) {
+        n = n || [null, i({}), i([]), i(i)];
+        for (var c = 2 & t && e;
+            "object" == typeof c && !~n.indexOf(c); c = i(c)) Object.getOwnPropertyNames(c).forEach(function(t) {
             d[t] = function() {
                 return e[t]
             }
@@ -2657,7 +2657,7 @@
             45733: "87d722f9afbd2e2e44f6",
             45747: "18073da7551015c4107d",
             45839: "b053ab328c99b57a04fc",
-            46048: "54966e425b7f4740421f",
+            46048: "ac78da18ebeb0a6ebd4e",
             46161: "ddcc8a8e6752de1069ae",
             46369: "f7eee8828b39e32d39bc",
             46468: "0caf7d0ecfe447310e19",
@@ -2696,7 +2696,7 @@
             50987: "b103dcd35c88afa72d77",
             51199: "350ec441881d184a3212",
             51373: "cf1b5d9024aae3801ac4",
-            51400: "674099207af3df08841c",
+            51400: "9aba224c4fc6cfc865eb",
             51477: "ef9556551a4b6a72c18b",
             51529: "95691f203eb7edeb744f",
             51563: "c9df7a973bd3d8ff8bfa",
@@ -2816,7 +2816,7 @@
             63629: "ac0230129f97d1154faf",
             63676: "3a9a7f46d9c773b47085",
             6368: "c7cf824fa676d0c1ab87",
-            63731: "d94356e15fcbaee3776b",
+            63731: "dc9affe5a95117f28468",
             638: "a5a393002130c324801a",
             6380: "7354c9335b6dfa60c235",
             63958: "068d9f68badc67e9df32",
@@ -2910,7 +2910,7 @@
             74590: "a40d794304a6d272bc4f",
             74602: "52259d090a78a5b7f4fa",
             74673: "e5475b314c05095f84ab",
-            74753: "35c74c586252c9224a2d",
+            74753: "d2e73d4c734ac54541d2",
             75181: "fb5d361a4f4c11f6647f",
             75301: "f27b46b7a7167ac40bc7",
             75409: "5f882ace3736e41191c0",
@@ -3150,24 +3150,24 @@
         }), e
     }, s.o = function(e, t) {
         return Object.prototype.hasOwnProperty.call(e, t)
-    }, i = {}, r = "discord_app:", s.l = function(e, t, a, d) {
-        if (i[e]) {
-            i[e].push(t);
+    }, c = {}, r = "discord_app:", s.l = function(e, t, a, d) {
+        if (c[e]) {
+            c[e].push(t);
             return
         }
         if (void 0 !== a) {
-            for (var n, c, o = document.getElementsByTagName("script"), f = 0; f < o.length; f++) {
+            for (var n, i, o = document.getElementsByTagName("script"), f = 0; f < o.length; f++) {
                 var l = o[f];
                 if (l.getAttribute("src") == e || l.getAttribute("data-webpack") == r + a) {
                     n = l;
                     break
                 }
             }
-        }!n && (c = !0, (n = document.createElement("script")).charset = "utf-8", n.timeout = 120, s.nc && n.setAttribute("nonce", s.nc), n.setAttribute("data-webpack", r + a), n.src = e), i[e] = [t];
+        }!n && (i = !0, (n = document.createElement("script")).charset = "utf-8", n.timeout = 120, s.nc && n.setAttribute("nonce", s.nc), n.setAttribute("data-webpack", r + a), n.src = e), c[e] = [t];
         var u = function(t, a) {
                 n.onerror = n.onload = null, clearTimeout(b);
-                var d = i[e];
-                if (delete i[e], n.parentNode && n.parentNode.removeChild(n), d && d.forEach(function(e) {
+                var d = c[e];
+                if (delete c[e], n.parentNode && n.parentNode.removeChild(n), d && d.forEach(function(e) {
                         return e(a)
                     }), t) return t(a)
             },
@@ -3175,7 +3175,7 @@
                 type: "timeout",
                 target: n
             }), 12e4);
-        n.onerror = u.bind(null, n.onerror), n.onload = u.bind(null, n.onload), c && document.head.appendChild(n)
+        n.onerror = u.bind(null, n.onerror), n.onload = u.bind(null, n.onload), i && document.head.appendChild(n)
     }, s.r = function(e) {
         "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
             value: "Module"
@@ -3191,11 +3191,11 @@
             o[n] = [t, a, d];
             return
         }
-        for (var c = 1 / 0, n = 0; n < o.length; n++) {
-            for (var t = o[n][0], a = o[n][1], d = o[n][2], i = !0, r = 0; r < t.length; r++) c >= d && Object.keys(s.O).every(function(e) {
+        for (var i = 1 / 0, n = 0; n < o.length; n++) {
+            for (var t = o[n][0], a = o[n][1], d = o[n][2], c = !0, r = 0; r < t.length; r++) i >= d && Object.keys(s.O).every(function(e) {
                 return s.O[e](t[r])
-            }) ? t.splice(r--, 1) : (i = !1, d < c && (c = d));
-            if (i) {
+            }) ? t.splice(r--, 1) : (c = !1, d < i && (i = d));
+            if (c) {
                 o.splice(n--, 1);
                 var f = a();
                 void 0 !== f && (e = f)
@@ -3204,7 +3204,7 @@
         return e
     }, s.p = "/assets/", s.v = function(e, t, a, d) {
         var n = fetch(s.p + "" + a + ".module.wasm"),
-            c = function() {
+            i = function() {
                 return n.then(function(e) {
                     return e.arrayBuffer()
                 }).then(function(e) {
@@ -3217,9 +3217,9 @@
             return "function" == typeof WebAssembly.instantiateStreaming ? WebAssembly.instantiateStreaming(t, d).then(function(t) {
                 return Object.assign(e, t.instance.exports)
             }, function(e) {
-                if ("application/wasm" !== t.headers.get("Content-Type")) return console.warn("`WebAssembly.instantiateStreaming` failed because your server does not serve wasm with `application/wasm` MIME type. Falling back to `WebAssembly.instantiate` which is slower. Original error:\n", e), c();
+                if ("application/wasm" !== t.headers.get("Content-Type")) return console.warn("`WebAssembly.instantiateStreaming` failed because your server does not serve wasm with `application/wasm` MIME type. Falling back to `WebAssembly.instantiate` which is slower. Original error:\n", e), i();
                 throw e
-            }) : c()
+            }) : i()
         })
     }, ! function() {
         var e = {
@@ -3238,51 +3238,51 @@
             },
             t = "discord_app",
             a = "data-webpack-loading",
-            d = function(e, d, n, c) {
-                var i, r, o = "chunk-" + e;
-                if (!c) {
+            d = function(e, d, n, i) {
+                var c, r, o = "chunk-" + e;
+                if (!i) {
                     for (var f = document.getElementsByTagName("link"), l = 0; l < f.length; l++) {
                         var u = f[l],
                             b = u.getAttribute("href") || u.href;
                         if (b && !b.startsWith(s.p) && (b = s.p + (b.startsWith("/") ? b.slice(1) : b)), "stylesheet" == u.rel && (b && b.startsWith(d) || u.getAttribute("data-webpack") == t + ":" + o)) {
-                            i = u;
+                            c = u;
                             break
                         }
                     }
-                    if (!n) return i
-                }!i && (r = !0, (i = document.createElement("link")).setAttribute("data-webpack", t + ":" + o), i.setAttribute(a, 1), i.rel = "stylesheet", i.href = d);
+                    if (!n) return c
+                }!c && (r = !0, (c = document.createElement("link")).setAttribute("data-webpack", t + ":" + o), c.setAttribute(a, 1), c.rel = "stylesheet", c.href = d);
                 var h = function(e, t) {
-                    if (i.onerror = i.onload = null, i.removeAttribute(a), clearTimeout(p), t && "load" != t.type && i.parentNode.removeChild(i), n(t), e) return e(t)
+                    if (c.onerror = c.onload = null, c.removeAttribute(a), clearTimeout(p), t && "load" != t.type && c.parentNode.removeChild(c), n(t), e) return e(t)
                 };
-                if (i.getAttribute(a)) {
+                if (c.getAttribute(a)) {
                     var p = setTimeout(h.bind(null, void 0, {
                         type: "timeout",
-                        target: i
+                        target: c
                     }), 12e4);
-                    i.onerror = h.bind(null, i.onerror), i.onload = h.bind(null, i.onload)
+                    c.onerror = h.bind(null, c.onerror), c.onload = h.bind(null, c.onload)
                 } else h(void 0, {
                     type: "load",
-                    target: i
+                    target: c
                 });
-                return c ? c.parentNode.insertBefore(i, c) : r && document.head.appendChild(i), i
+                return i ? i.parentNode.insertBefore(c, i) : r && document.head.appendChild(c), c
             };
         s.f.css = function(t, a) {
             var n = s.o(e, t) ? e[t] : void 0;
             if (0 !== n) {
                 if (n) a.push(n[2]);
                 else if (/^(4923|9938)7$/.test(t)) {
-                    var c = new Promise(function(a, d) {
+                    var i = new Promise(function(a, d) {
                         n = e[t] = [a, d]
                     });
-                    a.push(n[2] = c);
-                    var i = s.p + s.k(t),
+                    a.push(n[2] = i);
+                    var c = s.p + s.k(t),
                         r = Error();
-                    d(t, i, function(a) {
+                    d(t, c, function(a) {
                         if (s.o(e, t) && (0 !== (n = e[t]) && (e[t] = void 0), n)) {
                             if ("load" !== a.type) {
                                 var d = a && a.type,
-                                    c = a && a.target && a.target.src;
-                                r.message = "Loading css chunk " + t + " failed.\n(" + d + ": " + c + ")", r.name = "ChunkLoadError", r.type = d, r.request = c, n[1](r)
+                                    i = a && a.target && a.target.src;
+                                r.message = "Loading css chunk " + t + " failed.\n(" + d + ": " + i + ")", r.name = "ChunkLoadError", r.type = d, r.request = i, n[1](r)
                             } else n[0]()
                         }
                     })
@@ -3294,8 +3294,8 @@
                 t && t(a);
                 for (var n = 0; n < d.length; n++) void 0 === e[d[n]] && (e[d[n]] = 0)
             },
-            c = this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || [];
-        c.forEach(n.bind(null, 0)), c.push = n.bind(null, c.push.bind(c))
+            i = this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || [];
+        i.forEach(n.bind(null, 0)), i.push = n.bind(null, i.push.bind(i))
     }(), ! function() {
         s.b = document.baseURI || self.location.href;
         var e = {
@@ -3310,13 +3310,13 @@
                         d = e[t] = [a, n]
                     });
                     a.push(d[2] = n);
-                    var c = s.p + s.u(t),
-                        i = Error();
-                    s.l(c, function(a) {
+                    var i = s.p + s.u(t),
+                        c = Error();
+                    s.l(i, function(a) {
                         if (s.o(e, t) && (0 !== (d = e[t]) && (e[t] = void 0), d)) {
                             var n = a && ("load" === a.type ? "missing" : a.type),
-                                c = a && a.target && a.target.src;
-                            i.message = "Loading chunk " + t + " failed.\n(" + n + ": " + c + ")", i.name = "ChunkLoadError", i.type = n, i.request = c, d[1](i)
+                                i = a && a.target && a.target.src;
+                            c.message = "Loading chunk " + t + " failed.\n(" + n + ": " + i + ")", c.name = "ChunkLoadError", c.type = n, c.request = i, d[1](c)
                         }
                     }, "chunk-" + t, t)
                 }
@@ -3327,13 +3327,13 @@
         var t = function(t, a) {
                 var d = a[0],
                     n = a[1],
-                    c = a[2],
-                    i, r, o = 0;
+                    i = a[2],
+                    c, r, o = 0;
                 if (d.some(function(t) {
                         return 0 !== e[t]
                     })) {
-                    for (i in n) s.o(n, i) && (s.m[i] = n[i]);
-                    if (c) var f = c(s)
+                    for (c in n) s.o(n, c) && (s.m[c] = n[c]);
+                    if (i) var f = i(s)
                 }
                 for (t && t(a); o < d.length; o++) r = d[o], s.o(e, r) && e[r] && e[r][0](), e[r] = 0;
                 return s.O(f)
@@ -3346,4 +3346,4 @@
     });
     s.O(u)
 }();
-//# sourceMappingURL=web.5a3af082bb4bb70875cf.js.map
+//# sourceMappingURL=web.6414ff2a04bbf83b534c.js.map
