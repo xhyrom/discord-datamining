@@ -36558,7 +36558,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284187", ", Version Hash: ").concat("557ee1275d47683e1079abea96921e89b347be86")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284199", ", Version Hash: ").concat("5a5424d1aa566d2213380a406446cc64dd71cccb")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86429,8 +86429,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284187", "284187"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284187")), t = 0), t
+                let t = parseInt((e = "284199", "284199"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284199")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -108794,8 +108794,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284187",
-                    versionHash: "557ee1275d47683e1079abea96921e89b347be86"
+                    buildNumber: "284199",
+                    versionHash: "5a5424d1aa566d2213380a406446cc64dd71cccb"
                 }
             }
             n.r(t), n.d(t, {
@@ -158428,8 +158428,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712942428919",
-                                    build_number: "284187"
+                                    built_at: "1712943512012",
+                                    build_number: "284199"
                                 }
                             },
                             retries: 1
@@ -196671,7 +196671,7 @@
                 _ = n("607070"),
                 c = n("605236"),
                 E = n("725790"),
-                I = n("747074"),
+                I = n("652853"),
                 T = n("228168"),
                 f = n("556777");
             let S = () => {
@@ -196680,16 +196680,16 @@
                     n = (0, u.default)(),
                     {
                         profileTheme: i
-                    } = r.useContext(I.UserProfileContext),
-                    l = (0, o.isThemeDark)(n) && (0, o.isThemeLight)(i);
-                return !e && !t && l
+                    } = (0, I.useUserProfileThemeContext)(),
+                    r = (0, o.isThemeDark)(n) && (0, o.isThemeLight)(i);
+                return !e && !t && r
             };
             t.default = e => {
                 let {
                     onTooltipClose: t
                 } = e, {
                     profileType: n
-                } = r.useContext(I.UserProfileContext), s = n === T.UserProfileTypes.POPOUT, a = S(), [o, u] = r.useState(!s && a);
+                } = (0, I.useUserProfileThemeContext)(), s = n === T.UserProfileTypes.POPOUT, a = S(), [o, u] = r.useState(!s && a);
                 return (0, d.default)(() => u(a), s ? 300 : null), (0, i.jsx)(l.Popout, {
                     shouldShow: o,
                     position: "left",
@@ -196996,102 +196996,124 @@
                 })
             }
         },
-        747074: function(e, t, n) {
+        502762: function(e, t, n) {
             "use strict";
-            n.r(t), n.d(t, {
-                UserProfileContext: function() {
-                    return f
-                },
-                useUserProfileContext: function() {
-                    return S
-                }
-            }), n("627341");
-            var i, r = n("735250"),
-                s = n("470079"),
-                a = n("803997"),
-                o = n.n(a),
-                l = n("278074"),
-                u = n("541049"),
-                d = n("318661"),
-                _ = n("358794"),
-                c = n("228168"),
-                E = n("231338"),
-                I = n("862734"),
-                T = n("861475");
-            let f = s.createContext({
-                    profileType: null,
-                    primaryProfileColor: null,
-                    profileTheme: null !== (i = (0, u.default)()) && void 0 !== i ? i : E.ThemeTypes.DARK
-                }),
-                S = () => s.useContext(f);
+            n.r(t), n("627341");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("803997"),
+                a = n.n(s),
+                o = n("278074"),
+                l = n("318661"),
+                u = n("358794"),
+                d = n("652853"),
+                _ = n("228168"),
+                c = n("862734"),
+                E = n("785494");
 
-            function A(e) {
+            function I(e) {
                 var t, n;
                 let {
-                    user: i,
-                    guildId: a,
-                    profileType: u,
-                    className: E,
+                    user: s,
+                    guildId: I,
+                    profileType: T,
+                    className: f,
                     pendingThemeColors: S,
                     pendingProfileEffectId: A,
                     useDefaultClientTheme: h,
                     children: m,
                     forceShowPremium: N = !1,
                     showOutOfBoundaryComponents: O = !1
-                } = e, p = s.useRef(null), R = (0, d.default)(i.id, a), {
+                } = e, p = r.useRef(null), R = (0, l.default)(s.id, I), {
                     profileTheme: C,
                     primaryProfileColor: g
-                } = (0, _.default)(i, R, {
+                } = (0, u.default)(s, R, {
                     themeElementRef: p,
                     pendingThemeColors: S,
                     isPreview: N,
                     useDefaultClientTheme: h
-                }), L = (null == R ? void 0 : R.canEditThemes) || N, D = s.useMemo(() => ({
-                    profileType: u,
-                    profileTheme: C,
-                    primaryProfileColor: g
-                }), [u, C, g]);
-                return (0, r.jsx)("div", {
+                }), L = (null == R ? void 0 : R.canEditThemes) || N;
+                return (0, i.jsx)("div", {
                     ref: p,
-                    className: o()((t = u, (0, l.match)(t).with(c.UserProfileTypes.POPOUT, c.UserProfileTypes.SETTINGS, c.UserProfileTypes.CANCEL_MODAL, () => T.userPopoutOuter).with(c.UserProfileTypes.MODAL, () => T.userProfileModalOuter).with(c.UserProfileTypes.PANEL, () => T.userPanelOuter).with(c.UserProfileTypes.CARD, () => T.userCardOuter).exhaustive()), L ? T.userProfileOuterThemed : T.userProfileOuterUnthemed, I.profileColors, O ? T.showOutOfBoundaryComponents : void 0, "theme-".concat(C), E),
-                    children: (0, r.jsx)("div", {
-                        className: o()((n = u, (0, l.match)(n).with(c.UserProfileTypes.POPOUT, c.UserProfileTypes.SETTINGS, c.UserProfileTypes.CANCEL_MODAL, () => T.userPopoutInner).with(c.UserProfileTypes.MODAL, () => T.userProfileModalInner).with(c.UserProfileTypes.PANEL, () => T.userPanelInner).with(c.UserProfileTypes.CARD, () => T.userCardInner).exhaustive()), function() {
+                    className: a()((t = T, (0, o.match)(t).with(_.UserProfileTypes.POPOUT, _.UserProfileTypes.SETTINGS, _.UserProfileTypes.CANCEL_MODAL, () => E.userPopoutOuter).with(_.UserProfileTypes.MODAL, () => E.userProfileModalOuter).with(_.UserProfileTypes.PANEL, () => E.userPanelOuter).with(_.UserProfileTypes.CARD, () => E.userCardOuter).exhaustive()), L ? E.userProfileOuterThemed : E.userProfileOuterUnthemed, c.profileColors, O ? E.showOutOfBoundaryComponents : void 0, "theme-".concat(C), f),
+                    children: (0, i.jsx)("div", {
+                        className: a()((n = T, (0, o.match)(n).with(_.UserProfileTypes.POPOUT, _.UserProfileTypes.SETTINGS, _.UserProfileTypes.CANCEL_MODAL, () => E.userPopoutInner).with(_.UserProfileTypes.MODAL, () => E.userProfileModalInner).with(_.UserProfileTypes.PANEL, () => E.userPanelInner).with(_.UserProfileTypes.CARD, () => E.userCardInner).exhaustive()), function() {
                             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
                                 t = arguments.length > 1 ? arguments[1] : void 0,
                                 n = arguments.length > 2 ? arguments[2] : void 0;
-                            return (0, l.match)({
+                            return (0, o.match)({
                                 profileType: n,
                                 canUsePremiumProfileCustomization: e,
                                 hasBanner: t
                             }).with({
-                                profileType: c.UserProfileTypes.PANEL
-                            }, () => T.userPanelInnerThemed).with({
+                                profileType: _.UserProfileTypes.PANEL
+                            }, () => E.userPanelInnerThemed).with({
                                 canUsePremiumProfileCustomization: !0,
                                 hasBanner: !0
-                            }, () => T.userProfileInnerThemedWithBanner).with({
+                            }, () => E.userProfileInnerThemedWithBanner).with({
                                 canUsePremiumProfileCustomization: !0
-                            }, () => T.userProfileInnerThemedPremiumWithoutBanner).otherwise(() => T.userProfileInnerThemedNonPremium)
-                        }((null == R ? void 0 : R.canUsePremiumProfileCustomization) || N, null !== A && ((null == R ? void 0 : R.banner) != null || void 0 !== A), u)),
-                        children: (0, r.jsx)(f.Provider, {
-                            value: D,
+                            }, () => E.userProfileInnerThemedPremiumWithoutBanner).otherwise(() => E.userProfileInnerThemedNonPremium)
+                        }((null == R ? void 0 : R.canUsePremiumProfileCustomization) || N, null !== A && ((null == R ? void 0 : R.banner) != null || void 0 !== A), T)),
+                        children: (0, i.jsx)(d.UserProfileThemeContextProvider, {
+                            profileType: T,
+                            profileTheme: C,
+                            primaryProfileColor: g,
                             children: m
                         })
                     })
                 })
             }
-            A.Inner = function(e) {
+            I.Inner = function(e) {
                 var t;
                 let {
                     className: n,
-                    children: i
+                    children: r
                 } = e, {
-                    profileType: a
-                } = s.useContext(f);
-                return (0, r.jsx)("div", {
-                    className: o()((t = a, (0, l.match)(t).with(c.UserProfileTypes.POPOUT, c.UserProfileTypes.SETTINGS, () => T.userPopoutOverlayBackground).with(c.UserProfileTypes.MODAL, () => T.userProfileModalOverlayBackground).with(c.UserProfileTypes.PANEL, () => T.userPanelOverlayBackground).otherwise(() => T.overlayBackground)), n),
-                    children: i
+                    profileType: s
+                } = (0, d.useUserProfileThemeContext)();
+                return (0, i.jsx)("div", {
+                    className: a()((t = s, (0, o.match)(t).with(_.UserProfileTypes.POPOUT, _.UserProfileTypes.SETTINGS, () => E.userPopoutOverlayBackground).with(_.UserProfileTypes.MODAL, () => E.userProfileModalOverlayBackground).with(_.UserProfileTypes.PANEL, () => E.userPanelOverlayBackground).otherwise(() => E.overlayBackground)), n),
+                    children: r
                 })
-            }, t.default = A
+            }, t.default = I
+        },
+        652853: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                UserProfileThemeContextProvider: function() {
+                    return u
+                },
+                useUserProfileThemeContext: function() {
+                    return d
+                }
+            });
+            var i, r = n("735250"),
+                s = n("470079"),
+                a = n("541049"),
+                o = n("231338");
+            let l = s.createContext({
+                profileType: null,
+                primaryProfileColor: null,
+                profileTheme: null !== (i = (0, a.default)()) && void 0 !== i ? i : o.ThemeTypes.DARK
+            });
+
+            function u(e) {
+                let {
+                    profileType: t,
+                    profileTheme: n,
+                    primaryProfileColor: i,
+                    children: a
+                } = e, o = s.useMemo(() => ({
+                    profileType: t,
+                    profileTheme: n,
+                    primaryProfileColor: i
+                }), [t, n, i]);
+                return (0, r.jsx)(l.Provider, {
+                    value: o,
+                    children: a
+                })
+            }
+            let d = () => s.useContext(l)
         },
         530: function(e, t, n) {
             "use strict";
@@ -197695,7 +197717,7 @@
                 S = n("768581"),
                 A = n("785717"),
                 h = n("221292"),
-                m = n("747074"),
+                m = n("502762"),
                 N = n("659101"),
                 O = n("171368"),
                 p = n("981631"),
@@ -197993,7 +198015,7 @@
                 D = n("505737"),
                 v = n("318661"),
                 M = n("484404"),
-                y = n("747074"),
+                y = n("502762"),
                 P = n("192133"),
                 U = n("240328"),
                 b = n("436478"),
@@ -198661,7 +198683,7 @@
                 v = n("735336"),
                 M = n("793397"),
                 y = n("184325"),
-                P = n("747074"),
+                P = n("652853"),
                 U = n("171368"),
                 b = n("228168"),
                 G = n("981631"),
@@ -198715,7 +198737,7 @@
                     hasProfileEffect: m
                 } = e, {
                     profileTheme: R
-                } = r.useContext(P.UserProfileContext), g = r.useContext(O.AnalyticsContext), D = t.isNonUserBot() && !t.isClyde(), v = p.default.isPremiumAtLeast(null == n ? void 0 : n.premiumType, w.PremiumTypes.TIER_2), y = r.useMemo(() => (0, T.shouldDisableUserPresenceInChannel)(t, I), [t, I]), {
+                } = (0, P.useUserProfileThemeContext)(), g = r.useContext(O.AnalyticsContext), D = t.isNonUserBot() && !t.isClyde(), v = p.default.isPremiumAtLeast(null == n ? void 0 : n.premiumType, w.PremiumTypes.TIER_2), y = r.useMemo(() => (0, T.shouldDisableUserPresenceInChannel)(t, I), [t, I]), {
                     analyticsLocations: x
                 } = (0, c.default)(), {
                     trackUserProfileAction: Y,
@@ -199385,7 +199407,7 @@
                 I = n("594174"),
                 T = n("785717"),
                 f = n("318661"),
-                S = n("747074"),
+                S = n("502762"),
                 A = n("131640"),
                 h = n("958120"),
                 m = n("228168");
@@ -233686,7 +233708,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "557ee1275d47683e1079abea96921e89b347be86"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5a5424d1aa566d2213380a406446cc64dd71cccb"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -259847,7 +259869,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284187"
+                                build_number: "284199"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -267023,7 +267045,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284187", "284187"), 10);
+                let s = parseInt((n = "284199", "284199"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -293817,4 +293839,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.886ca80ab9098ec249d8.js.map
+//# sourceMappingURL=65573.dcb707aa80a7357bb126.js.map
