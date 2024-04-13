@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-04_collectibles_lofi_vibes_marketing",
+    "label": "Lofi Vibes marketing experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables coachtip"
+    ],
+    "hash": 5008486,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
