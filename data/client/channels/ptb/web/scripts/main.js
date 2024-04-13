@@ -6927,7 +6927,7 @@
                 _ = n("881052"),
                 c = n("882037"),
                 E = n("710845"),
-                I = n("278147"),
+                I = n("57132"),
                 T = n("703656"),
                 f = n("314897"),
                 S = n("480294"),
@@ -9267,7 +9267,7 @@
                 r = n("780384"),
                 s = n("570140"),
                 a = n("408987"),
-                o = n("278147"),
+                o = n("57132"),
                 l = n("895886"),
                 u = n("703656"),
                 d = n("131704"),
@@ -11171,10 +11171,10 @@
                 o = n("34756"),
                 l = n("408987"),
                 u = n("280837"),
-                d = n("278147"),
+                d = n("57132"),
                 _ = n("777639"),
                 c = n("272423"),
-                E = n("869735"),
+                E = n("781157"),
                 I = n("895886"),
                 T = n("703656"),
                 f = n("920440"),
@@ -36584,7 +36584,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284438", ", Version Hash: ").concat("2d985089e739d17d7d89d9258f503af3eaa47362")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284444", ", Version Hash: ").concat("da39c09ab2225ca6b0795f15782c0184b8d6c272")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86479,8 +86479,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284438", "284438"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284438")), t = 0), t
+                let t = parseInt((e = "284444", "284444"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284444")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -109998,8 +109998,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284438",
-                    versionHash: "2d985089e739d17d7d89d9258f503af3eaa47362"
+                    buildNumber: "284444",
+                    versionHash: "da39c09ab2225ca6b0795f15782c0184b8d6c272"
                 }
             }
             n.r(t), n.d(t, {
@@ -117780,6 +117780,31 @@
                 }
             }
         },
+        159626: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return r
+                }
+            });
+            var i = n("987170");
+
+            function r(e) {
+                let t = (0, i.default)({
+                    ...e,
+                    id: "".concat(e.id, "_existing_users"),
+                    label: "".concat(e.label, " - Existing Users")
+                });
+                return {
+                    existingUsers: t,
+                    newUsers: (0, i.default)({
+                        ...e,
+                        id: "".concat(e.id, "_new_users"),
+                        label: "".concat(e.label, " - New Users")
+                    })
+                }
+            }
+        },
         818083: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -117788,6 +117813,22 @@
                 }
             });
             var i = n("987170")
+        },
+        893638: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getMergedExperimentConfigs: function() {
+                    return r
+                }
+            }), n("470079");
+            var i = n("392711");
+
+            function r(e, t, n, r) {
+                var s, a;
+                let o = e.getCurrentConfig(n, r),
+                    l = t.getCurrentConfig(n, r);
+                return s = o, a = l, (0, i.mergeWith)({}, s, a, (e, t) => e || t)
+            }
         },
         948561: function(e, t, n) {
             "use strict";
@@ -136362,8 +136403,8 @@
             var i = n("442837"),
                 r = n("430198"),
                 s = n("818083"),
-                a = n("278147"),
-                o = n("869735"),
+                a = n("57132"),
+                o = n("781157"),
                 l = n("984933"),
                 u = n("430824"),
                 d = n("981631");
@@ -143863,7 +143904,7 @@
             "use strict";
             n.r(t), n("47120");
             var i = n("147913"),
-                r = n("278147"),
+                r = n("57132"),
                 s = n("914010"),
                 a = n("924301"),
                 o = n("482241");
@@ -145772,7 +145813,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("79504"), n.e("58153"), n.e("25381"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("71697"), n.e("40866"), n.e("43643"), n.e("64796"), n.e("13545"), n.e("75301"), n.e("62856"), n.e("20443")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(h.GuildFeatures.COMMUNITY)) && (t === h.GuildSettingsSections.GUILD_AUTOMOD && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_AUTOMOD), t === h.GuildSettingsSections.MEMBER_VERIFICATION && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), p.init(e, t, i, r), (0, a.pushLayer)(h.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("79504"), n.e("58153"), n.e("25381"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("58227"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("40866"), n.e("43643"), n.e("64796"), n.e("13545"), n.e("75301"), n.e("62856"), n.e("20443")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(h.GuildFeatures.COMMUNITY)) && (t === h.GuildSettingsSections.GUILD_AUTOMOD && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_AUTOMOD), t === h.GuildSettingsSections.MEMBER_VERIFICATION && (t = h.GuildSettingsSections.SAFETY, r = h.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), p.init(e, t, i, r), (0, a.pushLayer)(h.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -150817,29 +150858,238 @@
                 }
             }), (s = i || (i = {})).COZY = "cozy", s.COZY_DRAWER = "cozy-drawer", s.COZY_DRAWER_SMOL = "cozy-drawer-smol", s.COMPACT = "compact", s.MINIMAL = "minimal", (a = r || (r = {})).ALL = "all", a.UNREADS = "unreads", a.NONE = "none"
         },
-        278147: function(e, t, n) {
+        57132: function(e, t, n) {
             "use strict";
-
-            function i() {}
-
-            function r() {
-                return !1
-            }
-
-            function s() {
-                return arguments.length > 0 && void 0 !== arguments[0] && arguments[0], !1
-            }
             n.r(t), n.d(t, {
                 getRootNavigationRefIfInExperiment: function() {
-                    return i
+                    return d
                 },
                 isInMainTabsExperiment: function() {
-                    return r
+                    return _
                 },
                 useInMainTabsExperiment: function() {
-                    return s
+                    return c
                 }
+            }), n("411104"), n("470079");
+            var i, r, s = n("652874"),
+                a = n("433517");
+            n("353926"), n("695855");
+            var o = n("777639");
+            n("277530");
+            var l = n("721877");
+            n("146552"), n("488832"), (r = i || (i = {}))[r.EXISTING_USERS = 0] = "EXISTING_USERS", r[r.NEW_USERS = 1] = "NEW_USERS";
+            let u = "tabs-v2-experiment-key";
+
+            function d() {
+                return _() ? (0, o.getRootNavigationRef)() : void 0
+            }
+
+            function _() {
+                return (0, l.isMainTabsExperimentPlatformSupported)()
+            }
+
+            function c() {
+                return arguments.length > 0 && void 0 !== arguments[0] && arguments[0], (0, l.isMainTabsExperimentPlatformSupported)()
+            }(0, s.default)((e, t) => ({
+                _experimentCacheInitialized: !1,
+                _experimentEnabled: !1,
+                getExperimentEnabled() {
+                    if (!(0, l.isMainTabsExperimentPlatformSupported)()) return !1;
+                    let {
+                        _experimentCacheInitialized: e,
+                        _experimentEnabled: n
+                    } = t();
+                    if (!e) throw Error("MainTabsV2ExperimentStore: Experiment cache not initialized");
+                    return n
+                },
+                setExperimentEnabled: t => {
+                    e({
+                        _experimentEnabled: t
+                    }), a.Storage.set(u, t)
+                },
+                setInitialized: () => {
+                    e(e => e._experimentCacheInitialized ? e : {
+                        _experimentCacheInitialized: !0,
+                        _experimentEnabled: !0 === a.Storage.get(u)
+                    })
+                }
+            }))
+        },
+        695855: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("818083");
+            n("781157"), (0, i.createExperiment)({
+                kind: "user",
+                id: "2023-09_mobile_redesign_override_toggles",
+                label: "Tabs V2 - redesign opt-out/in for all",
+                defaultConfig: {
+                    hide: !1,
+                    ignore: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "control",
+                    config: {
+                        hide: !1,
+                        ignore: !1
+                    }
+                }, {
+                    id: 2,
+                    label: "hide toggles",
+                    config: {
+                        hide: !0,
+                        ignore: !1
+                    }
+                }, {
+                    id: 3,
+                    label: "hide & ignore toggles",
+                    config: {
+                        hide: !0,
+                        ignore: !0
+                    }
+                }]
+            }), (0, i.createExperiment)({
+                kind: "user",
+                id: "2023-09_mobile_redesign_override_toggles_t2",
+                label: "Tabs V2 - redesign opt-out for T2",
+                defaultConfig: {
+                    hide: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "show",
+                    config: {
+                        hide: !1
+                    }
+                }, {
+                    id: 2,
+                    label: "hide",
+                    config: {
+                        hide: !0
+                    }
+                }]
             })
+        },
+        215355: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getMergedTabsExperiment: function() {
+                    return c
+                }
+            }), n("470079"), n("902704");
+            var i = n("433517"),
+                r = n("159626"),
+                s = n("893638"),
+                a = n("828695"),
+                o = n("57132");
+            let l = {
+                    mergeTabs: !1,
+                    hideLabels: !1,
+                    roundedCorners: !1,
+                    blurTabBar: !1
+                },
+                u = !1,
+                d = l,
+                _ = (0, r.default)({
+                    kind: "user",
+                    id: "2024-04_merged_tabs",
+                    label: "Mobile Redesign - Merge Tabs Last Stand Experiment",
+                    defaultConfig: l,
+                    treatments: [{
+                        id: 0,
+                        label: "Control",
+                        config: {
+                            mergeTabs: !1,
+                            hideLabels: !1,
+                            roundedCorners: !1,
+                            blurTabBar: !1
+                        }
+                    }, {
+                        id: 1,
+                        label: "Merged Tabs, Labels",
+                        config: {
+                            mergeTabs: !0,
+                            hideLabels: !1,
+                            roundedCorners: !1,
+                            blurTabBar: !1
+                        }
+                    }, {
+                        id: 2,
+                        label: "Merged Tabs, No Labels",
+                        config: {
+                            mergeTabs: !0,
+                            hideLabels: !0,
+                            roundedCorners: !1,
+                            blurTabBar: !1
+                        }
+                    }, {
+                        id: 3,
+                        label: "Merged Tabs, Labels, Rounded Corners",
+                        config: {
+                            mergeTabs: !0,
+                            hideLabels: !1,
+                            roundedCorners: !0,
+                            blurTabBar: !1
+                        }
+                    }, {
+                        id: 4,
+                        label: "Merged Tabs, No Labels, Rounded Corners",
+                        config: {
+                            mergeTabs: !0,
+                            hideLabels: !0,
+                            roundedCorners: !0,
+                            blurTabBar: !1
+                        }
+                    }, {
+                        id: 5,
+                        label: "Merged Tabs, Labels, Blurred Tab Bar",
+                        config: {
+                            mergeTabs: !0,
+                            hideLabels: !1,
+                            roundedCorners: !1,
+                            blurTabBar: !0
+                        }
+                    }, {
+                        id: 6,
+                        label: "Merged Tabs, No Labels, Blurred Tab Bar",
+                        config: {
+                            mergeTabs: !0,
+                            hideLabels: !0,
+                            roundedCorners: !1,
+                            blurTabBar: !0
+                        }
+                    }, {
+                        id: 7,
+                        label: "Merged Tabs, Labels, Rounded Corners, Blurred Tab Bar",
+                        config: {
+                            mergeTabs: !0,
+                            hideLabels: !1,
+                            roundedCorners: !0,
+                            blurTabBar: !0
+                        }
+                    }, {
+                        id: 8,
+                        label: "Merged Tabs, No Labels, Rounded Corners, Blurred Tab Bar",
+                        config: {
+                            mergeTabs: !0,
+                            hideLabels: !0,
+                            roundedCorners: !0,
+                            blurTabBar: !0
+                        }
+                    }]
+                });
+
+            function c(e, t) {
+                var n, r;
+                let c = !(0, o.isInMainTabsExperiment)(),
+                    E = !!c || (null == t ? void 0 : t.disable);
+                return a.default.hasLoadedExperiments || E ? (0, s.getMergedExperimentConfigs)(_.existingUsers, _.newUsers, e, {
+                    ...t,
+                    disable: E,
+                    autoTrackExposure: !c && (null === (r = null == t ? void 0 : t.autoTrackExposure) || void 0 === r || r)
+                }) : (!u && (d = null !== (n = i.Storage.get("--merged-tabs-experiment-cached-config")) && void 0 !== n ? n : l, u = !0), d)
+            }
         },
         777639: function(e, t, n) {
             "use strict";
@@ -150850,6 +151100,30 @@
                     return i
                 }
             })
+        },
+        277530: function(e, t, n) {
+            "use strict";
+            n.r(t)
+        },
+        721877: function(e, t, n) {
+            "use strict";
+
+            function i() {
+                return !1
+            }
+            n.r(t), n.d(t, {
+                isMainTabsExperimentPlatformSupported: function() {
+                    return i
+                }
+            })
+        },
+        146552: function(e, t, n) {
+            "use strict";
+            n.r(t)
+        },
+        488832: function(e, t, n) {
+            "use strict";
+            n.r(t), n("804098"), n("20186"), n("626135"), n("960048")
         },
         272423: function(e, t, n) {
             "use strict";
@@ -150936,38 +151210,46 @@
                 }
             })
         },
-        869735: function(e, t, n) {
+        781157: function(e, t, n) {
             "use strict";
-
-            function i() {
-                return !1
-            }
-
-            function r() {
-                return !1
-            }
-
-            function s() {
-                return !1
-            }
-
-            function a(e) {
-                return !1
-            }
             n.r(t), n.d(t, {
                 isOnNewPanels: function() {
-                    return i
+                    return o
                 },
                 isSplitMessagesTab: function() {
-                    return r
+                    return l
                 },
                 isSplitMessagesTabAndOnMessagesTab: function() {
-                    return s
+                    return u
                 },
                 shouldHandleNewPanelsRoute: function() {
-                    return a
+                    return d
                 }
-            })
+            });
+            var i = n("57132"),
+                r = n("215355"),
+                s = n("289551"),
+                a = n("981631");
+
+            function o() {
+                return (0, i.isInMainTabsExperiment)()
+            }
+
+            function l() {
+                return (0, i.isInMainTabsExperiment)() && !(0, r.getMergedTabsExperiment)({
+                    location: "isSplitMessagesTab"
+                }).mergeTabs
+            }
+
+            function u() {
+                if (!l()) return !1;
+                let e = (0, s.default)();
+                return (null == e ? void 0 : e.name) === "messages"
+            }
+
+            function d(e) {
+                return !!o() && (!l() || null != e && e !== a.ME)
+            }
         },
         808663: function(e, t, n) {
             "use strict";
@@ -150991,6 +151273,20 @@
                         writable: !0
                     }) : e[t] = n
                 }
+            }
+        },
+        289551: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return r
+                }
+            });
+            var i = n("777639");
+
+            function r() {
+                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, i.getRootNavigationRef)();
+                return (null == e ? void 0 : e.isReady()) === !0 ? null == e ? void 0 : e.getCurrentRoute() : void 0
             }
         },
         240991: function(e, t, n) {
@@ -159648,8 +159944,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1712985373197",
-                                    build_number: "284438"
+                                    built_at: "1712989271637",
+                                    build_number: "284444"
                                 }
                             },
                             retries: 1
@@ -160437,7 +160733,7 @@
             var i, r = n("442837"),
                 s = n("570140"),
                 a = n("924301");
-            n("278147");
+            n("57132");
             var o = n("786761"),
                 l = n("23750"),
                 u = n("594174"),
@@ -175160,7 +175456,7 @@
             var i = n("470079"),
                 r = n("442837"),
                 s = n("512751"),
-                a = n("278147"),
+                a = n("57132"),
                 o = n("943209"),
                 l = n("628566");
 
@@ -178828,7 +179124,7 @@
                 u = n("570140"),
                 d = n("212819"),
                 _ = n("938078"),
-                c = n("869735"),
+                c = n("781157"),
                 E = n("220444"),
                 I = n("601070"),
                 T = n("210887"),
@@ -180288,8 +180584,8 @@
             });
             var i = n("819553"),
                 r = n("931261"),
-                s = n("278147"),
-                a = n("869735"),
+                s = n("57132"),
+                a = n("781157"),
                 o = n("592125"),
                 l = n("984933"),
                 u = n("944486"),
@@ -192267,7 +192563,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return d
+                    return _
                 }
             });
             var i = n("735250");
@@ -192276,24 +192572,25 @@
                 s = n("780384"),
                 a = n("607070"),
                 o = n("514361"),
-                l = n("210887"),
-                u = n("231338");
+                l = n("57132"),
+                u = n("210887"),
+                d = n("231338");
 
-            function d(e) {
+            function _(e) {
                 let {
                     children: t
-                } = e, n = (0, r.useStateFromStores)([l.default], () => l.default.theme), d = (0, r.useStateFromStores)([o.default], () => o.default.gradientPreset), {
-                    saturation: _,
-                    contrast: c
+                } = e, n = (0, r.useStateFromStores)([u.default], () => u.default.theme), _ = (0, l.useInMainTabsExperiment)(), c = (0, r.useStateFromStores)([o.default], () => o.default.gradientPreset), {
+                    saturation: E,
+                    contrast: I
                 } = (0, r.useStateFromStoresObject)([a.default], () => ({
                     saturation: a.default.saturation,
                     contrast: a.default.contrast
-                })), E = 0;
-                return E = (0, s.setThemeFlag)(E, s.ThemeContextFlags.MOBILE_REDESIGN_ENABLED), null != d && (E = d.theme === u.ThemeTypes.LIGHT ? (0, s.setThemeFlag)(E, s.ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED) : (0, s.setThemeFlag)(E, s.ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED)), 1 !== _ && (E = (0, s.setThemeFlag)(E, s.ThemeContextFlags.REDUCE_SATURATION_ENABLED)), (0, i.jsx)(s.RootThemeContextProvider, {
+                })), T = 0;
+                return _ && (T = (0, s.setThemeFlag)(T, s.ThemeContextFlags.MOBILE_REDESIGN_ENABLED)), null != c && _ && (T = c.theme === d.ThemeTypes.LIGHT ? (0, s.setThemeFlag)(T, s.ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED) : (0, s.setThemeFlag)(T, s.ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED)), 1 !== E && (T = (0, s.setThemeFlag)(T, s.ThemeContextFlags.REDUCE_SATURATION_ENABLED)), (0, i.jsx)(s.RootThemeContextProvider, {
                     theme: n,
-                    flags: E,
-                    saturation: _,
-                    contrast: c,
+                    flags: T,
+                    saturation: E,
+                    contrast: I,
                     children: t
                 })
             }
@@ -202965,8 +203262,9 @@
                 u = n("780384"),
                 d = n("570140"),
                 _ = n("607070"),
-                c = n("47760"),
-                E = n("541049");
+                c = n("47760");
+            n("57132");
+            var E = n("541049");
             n("449934");
             var I = n("12647"),
                 T = n("358085"),
@@ -217484,7 +217782,7 @@
             n.r(t), n("47120"), n("789020"), n("724458");
             var i = n("392711"),
                 r = n.n(i);
-            n("278147"), n("140155");
+            n("57132"), n("140155");
             var s = n("398758"),
                 a = n("601070"),
                 o = n("569471"),
@@ -224173,7 +224471,7 @@
                 A = n("430198"),
                 h = n("710845"),
                 m = n("924301"),
-                N = n("278147"),
+                N = n("57132"),
                 O = n("355298"),
                 p = n("869404"),
                 R = n("333984"),
@@ -226059,8 +226357,8 @@
                 f = n("442837"),
                 S = n("433517"),
                 A = n("570140"),
-                h = n("278147"),
-                m = n("869735"),
+                h = n("57132"),
+                m = n("781157"),
                 N = n("703656"),
                 O = n("131704"),
                 p = n("823379"),
@@ -226311,7 +226609,7 @@
             var i, r = n("442837"),
                 s = n("570140"),
                 a = n("937111");
-            n("278147");
+            n("57132");
             var o = n("703656"),
                 l = n("314897"),
                 u = n("430824"),
@@ -234981,7 +235279,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2d985089e739d17d7d89d9258f503af3eaa47362"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "da39c09ab2225ca6b0795f15782c0184b8d6c272"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -261146,7 +261444,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284438"
+                                build_number: "284444"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -268325,7 +268623,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284438", "284438"), 10);
+                let s = parseInt((n = "284444", "284444"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -294150,6 +294448,11 @@
                 NITRO_TAX_EXCLUSIVE_PHASE_2_STATES: new Set(["AL", "AR", "AZ", "CO", "CT", "DC", "HI", "IA", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "ND", "NE", "NH", "NJ", "NM", "OK", "RI", "SC", "SD", "UT", "VT", "WV", "WY"])
             }
         },
+        804098: function(e, t, n) {
+            "use strict";
+            var i, r;
+            n.r(t), (r = i || (i = {}))[r.CLASSIC_IA = 0] = "CLASSIC_IA", r[r.DESIGN_IA = 1] = "DESIGN_IA", r[r.DESIGN_TABS_IA = 2] = "DESIGN_TABS_IA", r[r.YOU_BAR_IA = 3] = "YOU_BAR_IA"
+        },
         438954: function(e, t, n) {
             "use strict";
             var i, r;
@@ -295106,4 +295409,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.e27e4741ab99194785c1.js.map
+//# sourceMappingURL=65573.524675b782b297d3f8e7.js.map
