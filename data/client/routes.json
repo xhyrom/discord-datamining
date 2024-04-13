@@ -4005,7 +4005,12 @@
   },
   "GUILD_CLAN_INFO": {
     "url": "/clan/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "USER_SET_CLAN_IDENTITY": {
     "url": "/users/@me/clan",
