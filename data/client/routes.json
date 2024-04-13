@@ -4014,7 +4014,10 @@
   },
   "USER_SET_CLAN_IDENTITY": {
     "url": "/users/@me/clan",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "TENOR_ASSET_PATH": {
     "url": "/tenor",
