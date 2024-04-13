@@ -4946,11 +4946,98 @@
                 successTitle: "successTitle__15ac0"
             }
         },
+        134607: function(e) {
+            "use strict";
+            e.exports = {
+                chat: "chat_da0bee",
+                chatHeader: "chatHeader__9dfc0",
+                chiplet: "chiplet__77325",
+                footerText: "footerText__55c70",
+                footerTextContainer: "footerTextContainer__68455",
+                headerTextContainer: "headerTextContainer_e5ac08",
+                infoContainer: "infoContainer_d6d5d7",
+                mainContainer: "mainContainer__9d423",
+                roleContainer: "roleContainer__89192",
+                skeletonChatBody: "skeletonChatBody__87e20",
+                skeletonChatContainer: "skeletonChatContainer__07b95"
+            }
+        },
         290305: function(e) {
             "use strict";
             e.exports = {
                 exclusive: "exclusive__6ed26",
                 upsellContainer: "upsellContainer__6d38c"
+            }
+        },
+        343644: function(e) {
+            "use strict";
+            e.exports = {
+                gameImage: "gameImage__8db0b",
+                gameImageBackground: "gameImageBackground__15198",
+                gameImageLoading: "gameImageLoading_ad31b1",
+                gameUnknownImage: "gameUnknownImage__080b3",
+                placeholderPulse: "placeholderPulse__8767a",
+                selectedGame: "selectedGame_a69562",
+                selectedGameCheck: "selectedGameCheck_d9d855"
+            }
+        },
+        319695: function(e) {
+            "use strict";
+            e.exports = {
+                badge: "badge_d12073",
+                chipletContainerInner: "chipletContainerInner_bfcb1e",
+                text: "text_c2b2cb"
+            }
+        },
+        801303: function(e) {
+            "use strict";
+            e.exports = {
+                avatar: "avatar__984cd",
+                avatarMask: "avatarMask__8c292",
+                guildClanTag: "guildClanTag__5b9c5",
+                guildIconContainer: "guildIconContainer_bdc1df",
+                guildTagContainer: "guildTagContainer__674f4",
+                hovered: "hovered__04434",
+                icon: "icon__308d9",
+                positionTracker: "positionTracker__7caaf",
+                toastButton: "toastButton_b270c7",
+                toastContainerInner: "toastContainerInner__971ff",
+                wrapper: "wrapper__900d7"
+            }
+        },
+        221840: function(e) {
+            "use strict";
+            e.exports = {
+                chipletContainerInner: "chipletContainerInner__3c2e4",
+                dot: "dot__74f07",
+                guildInfoContainer: "guildInfoContainer__83d68",
+                guildMemberCount: "guildMemberCount__8b892",
+                guildName: "guildName__29a28",
+                tooltipContainer: "tooltipContainer__7dbbb",
+                tooltipContent: "tooltipContent__27bbf",
+                tooltipFooter: "tooltipFooter_bd5b45",
+                tooltipHeader: "tooltipHeader__556b8"
+            }
+        },
+        509741: function(e) {
+            "use strict";
+            e.exports = {
+                bannerItemContainer: "bannerItemContainer__78c77",
+                bannerItemContainerSelected: "bannerItemContainerSelected_c3e66a",
+                bannerPickerContainer: "bannerPickerContainer__428b6",
+                bannerPickerGrid: "bannerPickerGrid_f19fc4",
+                brandItemCircle: "brandItemCircle_d72b8c",
+                brandItemContainer: "brandItemContainer_f07c0f",
+                brandItemContainerSelected: "brandItemContainerSelected__51923",
+                clanCardWrapper: "clanCardWrapper__06f56",
+                colorPicker: "colorPicker_a9f8d8",
+                colorPickerContainer: "colorPickerContainer__9b7d0",
+                colorPickerGrid: "colorPickerGrid_ba6389",
+                colorsContainer: "colorsContainer__2dee9",
+                container: "container__0d48f",
+                content: "content__4e550",
+                customColorPickerContainer: "customColorPickerContainer_e36253",
+                noWrap: "noWrap__133e4"
             }
         },
         653196: function(e) {
@@ -5021,24 +5108,17 @@
                 enterToSearchText: "enterToSearchText_c64e49",
                 errorText: "errorText__34a8a",
                 flex: "flex__7aeec",
-                gameImage: "gameImage__4ad7a",
-                gameImageBackground: "gameImageBackground_c5e476",
-                gameImageLoading: "gameImageLoading__108e9",
-                gameUnknownImage: "gameUnknownImage__8221f",
                 icon: "icon_e8e1b2",
                 iconSmall: "iconSmall_cd3113",
                 inputContainer: "inputContainer__1e798",
                 introTitle: "introTitle__6a50e",
                 languageSelect: "languageSelect__46f09",
-                placeholderPulse: "placeholderPulse_c13237",
                 playstyleOption: "playstyleOption__67567",
                 playstyleSelect: "playstyleSelect_b7d88b",
                 playstyleTitle: "playstyleTitle__00d17",
                 plusIcon: "plusIcon__22efe",
                 removableGame: "removableGame_ea342b",
                 selected: "selected__2779c",
-                selectedGame: "selectedGame__0084c",
-                selectedGameCheck: "selectedGameCheck__389d8",
                 selectedInterest: "selectedInterest_aa523d",
                 selectedPlaystyle: "selectedPlaystyle_e4490f",
                 selectedSection: "selectedSection__5c175",
@@ -5476,6 +5556,13 @@
             e.exports = {
                 badgeDark: "badgeDark__1b20d",
                 badgeLight: "badgeLight__5fbd1"
+            }
+        },
+        90113: function(e) {
+            "use strict";
+            e.exports = {
+                container: "container_ebee1d",
+                pointer: "pointer__0132c"
             }
         },
         116162: function(e) {
@@ -6698,6 +6785,9 @@
                 cardFooterLanguageIcon: "cardFooterLanguageIcon__33333",
                 cardFooterLocation: "cardFooterLocation_f8cc19",
                 cardFooterLocationIcon: "cardFooterLocationIcon__2e33a",
+                cardNameAndTagWrapper: "cardNameAndTagWrapper_d87ceb",
+                clanBadge: "clanBadge__4c045",
+                clanTagChiplet: "clanTagChiplet__7f357",
                 clickableCard: "clickableCard__1c1e9",
                 header: "header__2b527",
                 playstyle: "playstyle__9d997",
@@ -6733,6 +6823,9 @@
             e.exports = {
                 checkmark: "checkmark__4cc30",
                 clickable: "clickable_ef7cee",
+                gameHeader: "gameHeader_ab2b55",
+                games: "games__32d4d",
+                gamesInput: "gamesInput_eaad9a",
                 languagesIcon: "languagesIcon__8ea0f",
                 languagesSelect: "languagesSelect__75c5a",
                 languagesTitle: "languagesTitle_ddbda6",
@@ -6742,8 +6835,11 @@
                 playtimeHeader: "playtimeHeader__843e5",
                 playtimes: "playtimes__348d3",
                 plusIcon: "plusIcon__4ca2d",
+                recentGames: "recentGames__6b0bd",
                 removeIcon: "removeIcon__09c1b",
+                selectedGames: "selectedGames_afc855",
                 selectedPlaystyle: "selectedPlaystyle_c3bf30",
+                selectedSection: "selectedSection__37688",
                 timeSelectorRow: "timeSelectorRow_ad7888",
                 traitCategory: "traitCategory__4fca5",
                 traitHeader: "traitHeader__11d3b",
@@ -6767,7 +6863,9 @@
                 filterPillIcon: "filterPillIcon__6e577",
                 filterPillSmall: "filterPillSmall__584a6",
                 filterTooltip: "filterTooltip_d6d060",
+                filterTooltipAutoWidth: "filterTooltipAutoWidth__2ad07",
                 filterTooltipContent: "filterTooltipContent_c64a16",
+                gamesTooltip: "gamesTooltip_cdb5ec",
                 preferences: "preferences__16c1a",
                 toolbar: "toolbar__2fcb0"
             }
@@ -20320,6 +20418,21 @@
                 wrapper: "wrapper__97866"
             }
         },
+        281982: function(e) {
+            "use strict";
+            e.exports = {
+                badgeContainer: "badgeContainer_db363e",
+                coachTipContainer: "coachTipContainer_aec313",
+                coachtipContent: "coachtipContent_bf52ea",
+                icon: "icon__20d44",
+                iconContainer: "iconContainer_fc89b3",
+                marketingBadgeTooltip: "marketingBadgeTooltip__56856",
+                newBadge: "newBadge_f73bc9",
+                star: "star_f35e98",
+                starLeft: "starLeft__53d66",
+                starRight: "starRight_f5b52f"
+            }
+        },
         21406: function(e) {
             "use strict";
             e.exports = {
@@ -22127,6 +22240,7 @@
                 innerContainer: "innerContainer__62037",
                 learnMoreLink: "learnMoreLink__6cc62",
                 outerContainer: "outerContainer_a76fe9",
+                outerContainerNoProgress: "outerContainerNoProgress_b609d8",
                 outerContainerSm: "outerContainerSm__15951",
                 outerContainerXs: "outerContainerXs__59efb",
                 questCopyCta: "questCopyCta__613f6",
@@ -24574,32 +24688,32 @@
                 memberSinceContainer: "memberSinceContainer__16630"
             }
         },
-        861475: function(e) {
+        785494: function(e) {
             "use strict";
             e.exports = {
-                overlayBackground: "overlayBackground__2666e",
-                showOutOfBoundaryComponents: "showOutOfBoundaryComponents__39f0e",
-                userCardInner: "userCardInner__4fd8f userProfileInner__61cc1",
-                userCardOuter: "userCardOuter__69ef3 userProfileOuter__4ac83",
-                userPanelInner: "userPanelInner_f9edb8 userProfileInner__61cc1",
-                userPanelInnerThemed: "userPanelInnerThemed_c2aed9",
-                userPanelOuter: "userPanelOuter_eb00b1",
-                userPanelOverlayBackground: "userPanelOverlayBackground__41589 overlayBackground__2666e",
-                userPopoutInner: "userPopoutInner_e90432 userProfileInner__61cc1",
-                userPopoutOuter: "userPopoutOuter__3884e userProfileOuter__4ac83",
-                userPopoutOverlayBackground: "userPopoutOverlayBackground_bf6444 overlayBackground__2666e",
-                userProfileInner: "userProfileInner__61cc1",
-                userProfileInnerThemed: "userProfileInnerThemed__5ab6a",
-                userProfileInnerThemedNonPremium: "userProfileInnerThemedNonPremium_ed9022",
-                userProfileInnerThemedPremiumWithoutBanner: "userProfileInnerThemedPremiumWithoutBanner__3705a",
-                userProfileInnerThemedWithBanner: "userProfileInnerThemedWithBanner__2152d",
-                userProfileInnerUnthemed: "userProfileInnerUnthemed__44dcf",
-                userProfileModalInner: "userProfileModalInner__99b1e userProfileInner__61cc1",
-                userProfileModalOuter: "userProfileModalOuter_a65559 userProfileOuter__4ac83",
-                userProfileModalOverlayBackground: "userProfileModalOverlayBackground__7ec35 overlayBackground__2666e",
-                userProfileOuter: "userProfileOuter__4ac83",
-                userProfileOuterThemed: "userProfileOuterThemed__1fbd7",
-                userProfileOuterUnthemed: "userProfileOuterUnthemed_e14365"
+                overlayBackground: "overlayBackground__345c9",
+                showOutOfBoundaryComponents: "showOutOfBoundaryComponents__3e39f",
+                userCardInner: "userCardInner_e36852 userProfileInner__8ff35",
+                userCardOuter: "userCardOuter_eacfb3 userProfileOuter__35e59",
+                userPanelInner: "userPanelInner__3184c userProfileInner__8ff35",
+                userPanelInnerThemed: "userPanelInnerThemed__651e4",
+                userPanelOuter: "userPanelOuter_df01a5",
+                userPanelOverlayBackground: "userPanelOverlayBackground_a2b6ae overlayBackground__345c9",
+                userPopoutInner: "userPopoutInner_ac0960 userProfileInner__8ff35",
+                userPopoutOuter: "userPopoutOuter_d67f56 userProfileOuter__35e59",
+                userPopoutOverlayBackground: "userPopoutOverlayBackground__3e7e6 overlayBackground__345c9",
+                userProfileInner: "userProfileInner__8ff35",
+                userProfileInnerThemed: "userProfileInnerThemed__126d9",
+                userProfileInnerThemedNonPremium: "userProfileInnerThemedNonPremium_b64fb4",
+                userProfileInnerThemedPremiumWithoutBanner: "userProfileInnerThemedPremiumWithoutBanner_ee8277",
+                userProfileInnerThemedWithBanner: "userProfileInnerThemedWithBanner_e9e7c5",
+                userProfileInnerUnthemed: "userProfileInnerUnthemed__4670d",
+                userProfileModalInner: "userProfileModalInner__84e47 userProfileInner__8ff35",
+                userProfileModalOuter: "userProfileModalOuter__90b4a userProfileOuter__35e59",
+                userProfileModalOverlayBackground: "userProfileModalOverlayBackground_a5b043 overlayBackground__345c9",
+                userProfileOuter: "userProfileOuter__35e59",
+                userProfileOuterThemed: "userProfileOuterThemed_a425f3",
+                userProfileOuterUnthemed: "userProfileOuterUnthemed__9741c"
             }
         },
         690612: function(e) {
@@ -24622,9 +24736,8 @@
         736379: function(e) {
             "use strict";
             e.exports = {
-                badges: "badges__89cab tag__16954",
-                pronouns: "pronouns__39452 tag__16954",
-                tag: "tag__16954"
+                badges: "badges__89cab",
+                pronouns: "pronouns__39452"
             }
         },
         46781: function(e) {
@@ -24925,7 +25038,6 @@
                 avatarWrapper: "avatarWrapper__0cd44",
                 avatarWrapperNonUserBot: "avatarWrapperNonUserBot__5ff3f avatarWrapper__0cd44",
                 avatarWrapperNormal: "avatarWrapperNormal__36eec avatarWrapper__0cd44",
-                biteSizeHeaderContainer: "biteSizeHeaderContainer_ebed71",
                 clickable: "clickable_f0c9cf",
                 profileBadges: "profileBadges__1f2ab",
                 profileBadgesCompactNoTouch: "profileBadgesCompactNoTouch__1bb8c profileBadges__1f2ab",
@@ -24950,7 +25062,6 @@
         772723: function(e) {
             "use strict";
             e.exports = {
-                container: "container_a96584",
                 descriptionClamp: "descriptionClamp__07797",
                 seeMoreText: "seeMoreText_ff3bd6"
             }
@@ -24958,17 +25069,21 @@
         797849: function(e) {
             "use strict";
             e.exports = {
-                paddingBottom: "paddingBottom__9c272",
-                username: "username_ce3892"
+                body: "body__489bc"
             }
         },
         804384: function(e) {
             "use strict";
             e.exports = {
-                container: "container_e6561b",
                 messageInput: "messageInput_c1c1c4",
-                messageInputContainer: "messageInputContainer__67b4c",
-                section: "section__7cf21"
+                messageInputContainer: "messageInputContainer__67b4c"
+            }
+        },
+        247076: function(e) {
+            "use strict";
+            e.exports = {
+                customStatus: "customStatus__55823",
+                header: "header__725f2"
             }
         },
         442817: function(e) {
@@ -24976,6 +25091,7 @@
             e.exports = {
                 addButton: "addButton_d7b605",
                 addButtonIcon: "addButtonIcon__04434",
+                container: "container__1f16a",
                 overflowButton: "overflowButton_d39c60 pillBackground__5eb2d",
                 pillBackground: "pillBackground__5eb2d",
                 role: "role__17a96 pillBackground__5eb2d",
@@ -24992,12 +25108,6 @@
                 mutualFriendsText: "mutualFriendsText__47b48",
                 spinner: "spinner__5559d",
                 spinnerContainer: "spinnerContainer__9d60e container_f63223"
-            }
-        },
-        633124: function(e) {
-            "use strict";
-            e.exports = {
-                container: "container_c7606c"
             }
         },
         27729: function(e) {

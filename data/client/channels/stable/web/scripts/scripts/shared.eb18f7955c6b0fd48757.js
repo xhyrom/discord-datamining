@@ -3385,6 +3385,7 @@
                 botTagCompact: "botTagCompact__23d18 botTag__11e95",
                 botTagCozy: "botTagCozy__85d43 botTag__11e95",
                 buttonContainer: "buttonContainer__6de7e",
+                clanTagChiplet: "clanTagChiplet__39677",
                 clickable: "clickable__09456",
                 commandIcon: "commandIcon__80c3b",
                 commandName: "commandName_fd97e7",
