@@ -4002,6 +4002,7 @@
                 avatarLarge: "avatarLarge_bd37d1",
                 avatarSmall: "avatarSmall__85dc8",
                 avatarSpeaking: "avatarSpeaking_f239de",
+                clanTag: "clanTag_c8f97c",
                 clickable: "clickable_a2c5ad",
                 content: "content__3b07e",
                 disabled: "disabled__50fd0",

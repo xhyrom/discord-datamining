@@ -10209,10 +10209,17 @@ html .invoiceCancelRow_aa7946 {
     background-color: #ffeef0
 }
 
+.guildIconImage_d3cb49 {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
 .tooltipContainer__7dbbb {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 8px;
     padding: 4px;
     pointer-events: all
 }
@@ -10274,7 +10281,8 @@ html .invoiceCancelRow_aa7946 {
     cursor: pointer;
     vertical-align: middle;
     margin-top: -2px;
-    margin-left: 4px
+    margin-left: 4px;
+    transition: background.1s ease-in-out
 }
 
 .chipletContainerInner_bfcb1e:hover {
@@ -10289,6 +10297,14 @@ html .invoiceCancelRow_aa7946 {
     margin-right: 2px;
     margin-top: 0;
     margin-bottom: -1px
+}
+
+.tooltip_a9f8fc {
+    background: var(--bg-surface-raised)
+}
+
+.chipletContainerInner_bfcb1e.noTooltip_e2f660:hover {
+    background: var(--bg-mod-strong)
 }
 
 @keyframes uploadIconAnimateInLeft_ba96b5 {
@@ -12592,7 +12608,7 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .username_ab1e31 {
-    display: block;
+    display: flex;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -12618,6 +12634,17 @@ html .invoiceCancelRow_aa7946 {
     margin-right: 4px;
     width: 14px;
     height: 14px
+}
+
+.name_c3d448 {
+    flex: 1 1 auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+span.clanTag_f4aadc {
+    margin-top: 2px
 }
 
 .roleDot__16273 {
@@ -54245,21 +54272,18 @@ html .progress__00e29 {
     border-radius: 16px
 }
 
-.utilityCategoryTitle__3f5ab {
-    display: flex;
-    margin-bottom: 8px;
-    gap: 8px;
-    align-items: center
+.interestsCategoryTitle__18aeb {
+    margin-bottom: 8px
 }
 
-.utilityCategory_ce38d3 {
+.interestsCategory__14517 {
     margin-bottom: 24px;
     display: flex;
     flex-wrap: wrap;
     gap: 12px 8px
 }
 
-.utilityTag__2a938 {
+.interestsTag__64479 {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -54270,21 +54294,21 @@ html .progress__00e29 {
     border-radius: 16px
 }
 
-.utilityTag__2a938:hover {
+.interestsTag__64479:hover {
     color: var(--interactive-hover);
     border-color: var(--interactive-hover)
 }
 
-.utilityTag__2a938:hover .utilityTagIcon__2b2c9 {
+.interestsTag__64479:hover .utilityTagIcon__2b2c9 {
     color: var(--interactive-hover)
 }
 
-.utilityTag__2a938.selected__2779c {
+.interestsTag__64479.selected__2779c {
     color: var(--interactive-active);
     border-color: var(--interactive-active)
 }
 
-.utilityTag__2a938.selected__2779c .utilityTagIcon__2b2c9 {
+.interestsTag__64479.selected__2779c .utilityTagIcon__2b2c9 {
     color: var(--interactive-active)
 }
 
@@ -54292,12 +54316,6 @@ html .progress__00e29 {
     color: var(--text-muted);
     width: 16px;
     height: 16px
-}
-
-.utilityCategoryIcon__542af {
-    color: var(--text-muted);
-    width: 12px;
-    height: 12px
 }
 
 .languageSelect__46f09 {
@@ -133223,4 +133241,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.4486d7873cc157fdab20.css.map*/
+/*# sourceMappingURL=99387.cd97e5f4b1a61fd49fdc.css.map*/
