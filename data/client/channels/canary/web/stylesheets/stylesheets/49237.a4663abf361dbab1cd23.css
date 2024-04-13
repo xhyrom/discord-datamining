@@ -21847,6 +21847,13 @@ strong {
     overflow: hidden
 }
 
+span.clanTag_c8f97c {
+    flex: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 0
+}
+
 .usernameFont__4c086 {
     font-size: 14px;
     line-height: 18px;
@@ -28213,4 +28220,4 @@ span.button_ae40a4.disabled__1dc58 {
     }
 }
 
-/*# sourceMappingURL=49237.5eec4cb936b0533da72d.css.map*/
+/*# sourceMappingURL=49237.a4663abf361dbab1cd23.css.map*/
