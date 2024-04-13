@@ -64596,6 +64596,25 @@ input::-webkit-inner-spin-button {
     margin-left: -2px
 }
 
+.container_ebee1d {
+    padding: 8px 16px;
+    background-color: var(--brand-500);
+    position: relative;
+    border-radius: 4px;
+    bottom: 8px
+}
+
+.pointer__0132c {
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top-color: var(--brand-500);
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 8px);
+    pointer-events: none
+}
+
 .container_d3241b {
     width: 285px;
     background-color: var(--brand-500);
@@ -133200,4 +133219,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.54846bdd131b8b6beb2b.css.map*/
+/*# sourceMappingURL=99387.d7651e28d9b2b599032c.css.map*/
