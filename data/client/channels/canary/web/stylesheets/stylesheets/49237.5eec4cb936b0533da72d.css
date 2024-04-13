@@ -10559,6 +10559,27 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     margin-right: 0
 }
 
+.compact_eda3c8 .clanTagChiplet__39677 {
+    line-height: 0 !important;
+    display: inline;
+    background: transparent;
+    padding: 0
+}
+
+.compact_eda3c8 .clanTagChiplet__39677>span {
+    background: var(--bg-mod-strong);
+    padding: 1px 4px;
+    border-radius: 4px
+}
+
+.compact_eda3c8 .clanTagChiplet__39677:hover {
+    background: transparent
+}
+
+.compact_eda3c8 .clanTagChiplet__39677:hover>span {
+    background: var(--bg-mod-faint)
+}
+
 .userJoinSystemMessageIcon_ccc769,
 .ticketIcon_eb4531 {
     width: 12px;
@@ -11265,9 +11286,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 .enable-forced-colors .headerText_bd68ec .username__0b0e7 {
     forced-color-adjust: none;
     background-color: Canvas;
-    color: ButtonText;
-    -webkit-text-decoration: underline;
-    text-decoration: underline
+    color: ButtonText
 }
 
 .cozy_f5c119 .pollBadgeDefault__75cf3,
@@ -28194,4 +28213,4 @@ span.button_ae40a4.disabled__1dc58 {
     }
 }
 
-/*# sourceMappingURL=49237.2d5ad8b99c9030b78bf3.css.map*/
+/*# sourceMappingURL=49237.5eec4cb936b0533da72d.css.map*/
