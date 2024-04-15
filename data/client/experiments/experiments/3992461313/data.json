@@ -6,18 +6,23 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable creation of clan guilds"
+      "Treatment 1: Enable creation of clan guilds",
+      "Treatment 2: Enable creation of clan guilds - Valorant",
+      "Treatment 3: Enable creation of clan guilds - Genshin Impact"
     ],
     "hash": 3992461313,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2,
+      3
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enableClanCreation"
+      "enableClanCreation",
+      "defaultGameId"
     ]
   }
 }
