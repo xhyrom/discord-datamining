@@ -8620,6 +8620,7 @@
                 premiumStreamIconLarge: "premiumStreamIconLarge_a6f461",
                 qualityIndicator: "qualityIndicator__36cd4",
                 qualityIndicatorBadge: "qualityIndicatorBadge_a9143a",
+                qualityIndicatorBadgePremium: "qualityIndicatorBadgePremium__18825",
                 qualityIndicatorFullQuality: "qualityIndicatorFullQuality__7441b",
                 qualityIndicatorHighlightWrapper: "qualityIndicatorHighlightWrapper__414c8",
                 qualityIndicatorLowQuality: "qualityIndicatorLowQuality_eca398",
