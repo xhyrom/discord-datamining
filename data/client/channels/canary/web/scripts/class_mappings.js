@@ -14968,6 +14968,13 @@
                 tierTooltipTitle: "tierTooltipTitle__0eadb"
             }
         },
+        515706: function(e) {
+            "use strict";
+            e.exports = {
+                newBadge: "newBadge__3db81",
+                newBadgeRow: "newBadgeRow__11609"
+            }
+        },
         880031: function(e) {
             "use strict";
             e.exports = {
@@ -19970,8 +19977,19 @@
             "use strict";
             e.exports = {
                 headerContainer: "headerContainer_d09a13",
+                newBadge: "newBadge__905d8",
                 nitroWheel: "nitroWheel__28082",
                 tooltip: "tooltip_b4086a"
+            }
+        },
+        789134: function(e) {
+            "use strict";
+            e.exports = {
+                container: "container__0d27b",
+                header: "header_e47083",
+                image: "image__510fe",
+                nitroWheel: "nitroWheel__43dd0",
+                primaryButton: "primaryButton__27b08"
             }
         },
         998799: function(e) {
@@ -19980,6 +19998,7 @@
                 container: "container_bbc20d",
                 divider: "divider__5d410",
                 header: "header__10a82",
+                newBadge: "newBadge__242e8",
                 nitroWheel: "nitroWheel__7ee03",
                 option: "option__13442",
                 optionPlaying: "optionPlaying__05ded",
