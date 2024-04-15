@@ -2332,6 +2332,12 @@
     flex-direction: row
 }
 
+.newBadge__905d8 {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: var(--spacing-4)
+}
+
 .nitroWheel__28082 {
     margin-top: 1px;
     margin-left: var(--spacing-4)
@@ -58550,6 +58556,32 @@ html .progress__00e29 {
     margin-bottom: 4px
 }
 
+.container__0d27b {
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color)
+}
+
+.container__0d27b:after {
+    border-bottom-color: var(--premium-tier-2-pink-for-gradients-2) !important
+}
+
+.image__510fe {
+    width: auto;
+    height: 180px;
+    margin: auto
+}
+
+.header_e47083 {
+    margin-top: var(--spacing-16)
+}
+
+.nitroWheel__43dd0 {
+    margin-top: -1px
+}
+
+.primaryButton__27b08 {
+    color: var(--text-brand)
+}
+
 .container__7e23c {
     display: flex;
     flex-direction: column;
@@ -107852,6 +107884,16 @@ html .invoiceCancelRow__6ff3e {
     flex: 1
 }
 
+.newBadgeRow__11609 {
+    display: flex;
+    flex-direction: row
+}
+
+.newBadge__3db81 {
+    margin-left: auto;
+    align-self: center
+}
+
 .checkboxMargin__8bef9 {
     margin-top: 16px
 }
@@ -118454,13 +118496,18 @@ html .invoiceCancelRow__6ff3e {
 
 .header__10a82 {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    align-items: center
 }
 
 .nitroWheel__7ee03 {
     width: 20px;
     height: 20px;
     margin-left: var(--spacing-4)
+}
+
+.newBadge__242e8 {
+    margin-left: var(--spacing-8)
 }
 
 .subheader__7fae4 {
@@ -133376,4 +133423,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1029fafce9e9061b6fc9.css.map*/
+/*# sourceMappingURL=99387.0ffff411fa8277bff54c.css.map*/
