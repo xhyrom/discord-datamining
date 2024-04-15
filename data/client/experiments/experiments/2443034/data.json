@@ -6,13 +6,17 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Show clan discovery"
+      "Treatment 1: Show clan discovery",
+      "Treatment 2: Show clan discovery (Valorant locked)",
+      "Treatment 3: Show clan discovery (Genshin locked)"
     ],
     "hash": 2443034,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2,
+      3
     ],
     "holdout": {},
     "aa_mode": false,
