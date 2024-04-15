@@ -21555,6 +21555,34 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     color: ButtonText
 }
 
+.noteClickable__7552c {
+    display: flex;
+    align-items: center;
+    cursor: pointer
+}
+
+.noteText__42e4e {
+    display: flex;
+    gap: 4px;
+    border-radius: 4px
+}
+
+.noteText__42e4e .noteTextArea__171ac {
+    border: none;
+    box-sizing: border-box;
+    padding: 0;
+    resize: none;
+    width: 100%;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px
+}
+
+.noteText__42e4e .noteIcon_d38cf4 {
+    flex-shrink: 0
+}
+
 .container_df7ce7 {
     -webkit-user-select: text;
     -moz-user-select: text;
@@ -21563,6 +21591,14 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .nickname__745d1 {
     word-break: break-word
+}
+
+.usernameRow__73bf0 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px
 }
 
 .tags__18aee {
@@ -133298,4 +133334,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.efae139c232fdf5e9c8a.css.map*/
+/*# sourceMappingURL=99387.d05f75179cd1a2f2e12f.css.map*/

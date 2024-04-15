@@ -25524,6 +25524,12 @@
             var i = n("658828");
             n.es(i, t)
         },
+        10683: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("515639");
+            n.es(i, t)
+        },
         596440: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -36587,7 +36593,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284532", ", Version Hash: ").concat("07aa501e1fa24b1c696f686b83987d7e13d95e96")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284536", ", Version Hash: ").concat("ecb0a21d11f41e08385811ce7003ee032b45f6d3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86417,8 +86423,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284532", "284532"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284532")), t = 0), t
+                let t = parseInt((e = "284536", "284536"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284536")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -109990,8 +109996,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284532",
-                    versionHash: "07aa501e1fa24b1c696f686b83987d7e13d95e96"
+                    buildNumber: "284536",
+                    versionHash: "ecb0a21d11f41e08385811ce7003ee032b45f6d3"
                 }
             }
             n.r(t), n.d(t, {
@@ -159936,8 +159942,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713201837016",
-                                    build_number: "284532"
+                                    built_at: "1713202198525",
+                                    build_number: "284536"
                                 }
                             },
                             retries: 1
@@ -192582,7 +192588,7 @@
                     saturation: a.default.saturation,
                     contrast: a.default.contrast
                 })), T = 0;
-                return _ && (T = (0, s.setThemeFlag)(T, s.ThemeContextFlags.MOBILE_REDESIGN_ENABLED)), null != c && _ && (T = c.theme === d.ThemeTypes.LIGHT ? (0, s.setThemeFlag)(T, s.ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED) : (0, s.setThemeFlag)(T, s.ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED)), 1 !== E && (T = (0, s.setThemeFlag)(T, s.ThemeContextFlags.REDUCE_SATURATION_ENABLED)), (0, i.jsx)(s.RootThemeContextProvider, {
+                return _ && (T = (0, s.setThemeFlag)(T, s.ThemeContextFlags.MOBILE_REDESIGN_ENABLED)), null != c && (T = c.theme === d.ThemeTypes.LIGHT ? (0, s.setThemeFlag)(T, s.ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED) : (0, s.setThemeFlag)(T, s.ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED)), 1 !== E && (T = (0, s.setThemeFlag)(T, s.ThemeContextFlags.REDUCE_SATURATION_ENABLED)), (0, i.jsx)(s.RootThemeContextProvider, {
                     theme: n,
                     flags: T,
                     saturation: E,
@@ -198526,6 +198532,54 @@
                 })
             }
         },
+        998120: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return _
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("692547"),
+                s = n("10683"),
+                a = n("955623"),
+                o = n("481060"),
+                l = n("702557"),
+                u = n("689938"),
+                d = n("222477");
+
+            function _(e) {
+                let {
+                    user: t,
+                    onClick: n
+                } = e, _ = (0, l.default)(t.id), c = null == _.note ? u.default.Messages.ADD_NOTE : (0, i.jsxs)("div", {
+                    className: d.noteText,
+                    children: [(0, i.jsx)(o.TextAreaAutosize, {
+                        className: d.noteTextArea,
+                        value: _.note
+                    }), (0, i.jsx)(a.PencilIcon, {
+                        className: d.noteIcon,
+                        height: 14,
+                        width: 14,
+                        color: r.default.colors.INTERACTIVE_MUTED
+                    })]
+                }), E = null == _.note ? u.default.Messages.ADD_NOTE : _.note;
+                return (0, i.jsx)(o.TooltipContainer, {
+                    text: c,
+                    "aria-label": E,
+                    children: (0, i.jsx)(o.Clickable, {
+                        onClick: n,
+                        className: d.noteClickable,
+                        children: (0, i.jsx)(s.PaperIcon, {
+                            height: 16,
+                            width: 16,
+                            color: r.default.colors.INTERACTIVE_MUTED
+                        })
+                    })
+                })
+            }
+        },
         502762: function(e, t, n) {
             "use strict";
             n.r(t), n("627341");
@@ -198666,27 +198720,31 @@
                     user: t,
                     guildId: n,
                     channelId: r,
-                    icon: d,
+                    usernameIcon: d,
                     tags: _,
-                    className: c,
-                    nicknameVariant: E = "heading-lg/bold"
-                } = e, I = t.isNonUserBot() ? null : l.default.getName(n, r, t);
+                    nicknameIcon: c,
+                    className: E,
+                    nicknameVariant: I = "heading-lg/bold"
+                } = e, T = t.isNonUserBot() ? null : l.default.getName(n, r, t);
                 return (0, i.jsxs)("div", {
-                    className: s()(u.container, c),
-                    children: [null != I && (0, i.jsx)(a.Heading, {
-                        className: u.nickname,
-                        variant: E,
-                        children: I
-                    }), (0, i.jsxs)("div", {
+                    className: s()(u.container, E),
+                    children: [null != T ? (0, i.jsxs)("div", {
+                        className: u.usernameRow,
+                        children: [(0, i.jsx)(a.Heading, {
+                            className: u.nickname,
+                            variant: I,
+                            children: T
+                        }), c]
+                    }) : null, (0, i.jsxs)("div", {
                         className: u.tags,
                         children: [(0, i.jsx)(o.default, {
                             user: t,
                             usernameIcon: d,
                             forceUsername: !0,
-                            className: null == I ? u.userTagNoNickname : u.userTagWithNickname,
-                            usernameClass: null == I ? u.userTagUsernameNoNickname : u.userTagUsernameBase,
-                            discriminatorClass: null == I ? u.userTagDiscriminatorNoNickname : u.discrimBase,
-                            botClass: null == I ? u.headerBotTag : u.headerBotTagWithNickname
+                            className: null == T ? u.userTagNoNickname : u.userTagWithNickname,
+                            usernameClass: null == T ? u.userTagUsernameNoNickname : u.userTagUsernameBase,
+                            discriminatorClass: null == T ? u.userTagDiscriminatorNoNickname : u.discrimBase,
+                            botClass: null == T ? u.headerBotTag : u.headerBotTagWithNickname
                         }), _]
                     })]
                 })
@@ -200504,65 +200562,91 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return S
+                    return O
                 }
             });
             var i = n("735250");
             n("470079");
             var r = n("442837"),
-                s = n("246946"),
-                a = n("5192"),
-                o = n("447452"),
-                l = n("505737"),
-                u = n("530"),
-                d = n("894374"),
-                _ = n("790711"),
-                c = n("67152"),
-                E = n("901952"),
-                I = n("287612"),
-                T = n("165818"),
-                f = n("797849");
+                s = n("906732"),
+                a = n("246946"),
+                o = n("5192"),
+                l = n("447452"),
+                u = n("785717"),
+                d = n("505737"),
+                _ = n("998120"),
+                c = n("530"),
+                E = n("894374"),
+                I = n("171368"),
+                T = n("790711"),
+                f = n("67152"),
+                S = n("901952"),
+                A = n("287612"),
+                h = n("165818"),
+                m = n("981631"),
+                N = n("797849");
 
-            function S(e) {
+            function O(e) {
                 let {
                     user: t,
                     displayProfile: n,
-                    guild: S,
-                    channelId: A,
-                    onClose: h
+                    guild: O,
+                    channelId: p,
+                    onClose: R
                 } = e, {
-                    moreUserDetailsEnabled: m
-                } = (0, o.useSimplifiedProfileExperiment)({
+                    moreUserDetailsEnabled: C
+                } = (0, l.useSimplifiedProfileExperiment)({
                     location: "BiteSizeProfileBody"
-                }), N = a.default.getName(null == S ? void 0 : S.id, A, t), O = (0, l.default)(t.id, null == S ? void 0 : S.id), p = (0, r.useStateFromStores)([s.default], () => s.default.hidePersonalInformation);
+                }), g = o.default.getName(null == O ? void 0 : O.id, p, t), L = (0, d.default)(t.id, null == O ? void 0 : O.id), D = (0, r.useStateFromStores)([a.default], () => a.default.hidePersonalInformation), {
+                    messageId: v,
+                    roleId: M
+                } = (0, u.useUserProfileAnalyticsContext)(), {
+                    analyticsLocations: y
+                } = (0, s.default)();
                 return t.isSystemUser() ? null : (0, i.jsxs)("div", {
-                    className: f.body,
-                    children: [(0, i.jsx)(u.default, {
+                    className: N.body,
+                    children: [(0, i.jsx)(c.default, {
                         user: t,
-                        guildId: null == S ? void 0 : S.id,
-                        icon: t.hasAvatarForGuild(null == S ? void 0 : S.id) && (0, i.jsx)(_.default, {
+                        guildId: null == O ? void 0 : O.id,
+                        usernameIcon: t.hasAvatarForGuild(null == O ? void 0 : O.id) && (0, i.jsx)(T.default, {
                             user: t,
-                            nickname: N
+                            nickname: g
                         }),
                         tags: (0, i.jsxs)(i.Fragment, {
-                            children: [(0, i.jsx)(d.UserProfilePronounsTag, {
+                            children: [(0, i.jsx)(E.UserProfilePronounsTag, {
                                 pronouns: null == n ? void 0 : n.pronouns
-                            }), (0, i.jsx)(d.UserProfileBadgesTag, {
+                            }), (0, i.jsx)(E.UserProfileBadgesTag, {
                                 user: t,
-                                guildId: null == S ? void 0 : S.id
+                                guildId: null == O ? void 0 : O.id
                             })]
-                        })
-                    }), m && (0, i.jsx)(I.default, {
+                        }),
+                        nicknameIcon: C && !D ? (0, i.jsx)(_.default, {
+                            user: t,
+                            onClick: () => {
+                                (0, I.openUserProfileModal)({
+                                    userId: t.id,
+                                    guildId: null == O ? void 0 : O.id,
+                                    channelId: p,
+                                    messageId: v,
+                                    roleId: M,
+                                    analyticsLocation: {
+                                        section: m.AnalyticsSections.BITE_SIZE_PROFILE_POPOUT
+                                    },
+                                    sourceAnalyticsLocations: y
+                                })
+                            }
+                        }) : null
+                    }), C && (0, i.jsx)(A.default, {
                         user: t
-                    }), m && (0, i.jsx)(c.default, {
+                    }), C && (0, i.jsx)(f.default, {
                         user: t,
                         bio: null == n ? void 0 : n.bio,
-                        hidePersonalInformation: p,
-                        onClose: h
-                    }), (0, i.jsx)(T.default, {
+                        hidePersonalInformation: D,
+                        onClose: R
+                    }), (0, i.jsx)(h.default, {
                         user: t,
-                        guild: S
-                    }), O && (0, i.jsx)(E.default, {
+                        guild: O
+                    }), L && (0, i.jsx)(S.default, {
                         user: t
                     })]
                 })
@@ -235279,7 +235363,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "07aa501e1fa24b1c696f686b83987d7e13d95e96"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ecb0a21d11f41e08385811ce7003ee032b45f6d3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -261444,7 +261528,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284532"
+                                build_number: "284536"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -268623,7 +268707,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284532", "284532"), 10);
+                let s = parseInt((n = "284536", "284536"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -273495,6 +273579,42 @@
                         d: "M16.99 12.43c-.21.2-.2.55.06.7a3 3 0 0 0 4.08-4.08c-.15-.26-.5-.27-.7-.06l-3.44 3.44Z",
                         className: o
                     })]
+                })
+            }
+        },
+        515639: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                PaperIcon: function() {
+                    return a
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("692547"),
+                s = n("331595");
+            let a = e => {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: a = r.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: o = "",
+                    ...l
+                } = e;
+                return (0, i.jsx)("svg", {
+                    ...(0, s.default)(l),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: n,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: (0, i.jsx)("path", {
+                        fill: "string" == typeof a ? a : a.css,
+                        fillRule: "evenodd",
+                        d: "M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5Zm1 4a1 1 0 0 0 0 2h5a1 1 0 1 0 0-2H6Zm-1 6a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Zm1 4a1 1 0 1 0 0 2h12a1 1 0 1 0 0-2H6Z",
+                        clipRule: "evenodd",
+                        className: o
+                    })
                 })
             }
         },
@@ -295409,4 +295529,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.7089856e37a273d82e45.js.map
+//# sourceMappingURL=65573.d052b0406bdde9f8ed2d.js.map

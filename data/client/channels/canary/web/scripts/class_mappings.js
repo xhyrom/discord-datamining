@@ -24709,6 +24709,15 @@
                 memberSinceContainer: "memberSinceContainer__16630"
             }
         },
+        222477: function(e) {
+            "use strict";
+            e.exports = {
+                noteClickable: "noteClickable__7552c",
+                noteIcon: "noteIcon_d38cf4",
+                noteText: "noteText__42e4e",
+                noteTextArea: "noteTextArea__171ac"
+            }
+        },
         785494: function(e) {
             "use strict";
             e.exports = {
@@ -24751,7 +24760,8 @@
                 userTagNoNickname: "userTagNoNickname__24253 userTag_eb9b2a",
                 userTagUsernameBase: "userTagUsernameBase_bb3e38",
                 userTagUsernameNoNickname: "userTagUsernameNoNickname__6c8c2 userTagUsernameBase_bb3e38",
-                userTagWithNickname: "userTagWithNickname_fb8bc3 userTag_eb9b2a"
+                userTagWithNickname: "userTagWithNickname_fb8bc3 userTag_eb9b2a",
+                usernameRow: "usernameRow__73bf0"
             }
         },
         736379: function(e) {
