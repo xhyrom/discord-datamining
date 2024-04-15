@@ -22193,7 +22193,9 @@
                 hideLearnMore: "hideLearnMore__10d6e",
                 questRewardTile: "questRewardTile__0a963",
                 questRewardTileAsset: "questRewardTileAsset_fa0963",
-                questRewardTileDetailsLearnMore: "questRewardTileDetailsLearnMore_e9ddee"
+                questRewardTileAssetStatic: "questRewardTileAssetStatic__47b37",
+                questRewardTileDetailsLearnMore: "questRewardTileDetailsLearnMore_e9ddee",
+                questRewardTileInteractive: "questRewardTileInteractive_c349cf"
             }
         },
         374145: function(e) {
@@ -22293,7 +22295,6 @@
                 outerContainerSm: "outerContainerSm__15951",
                 outerContainerXs: "outerContainerXs__59efb",
                 questCopyCta: "questCopyCta__613f6",
-                questReward: "questReward__47d57",
                 questRewardEmbed: "questRewardEmbed__683db",
                 questRewardEmbedSm: "questRewardEmbedSm__1c12e",
                 questRewardEmbedXs: "questRewardEmbedXs_a1f7c1",
@@ -22415,6 +22416,7 @@
         258758: function(e) {
             "use strict";
             e.exports = {
+                assetTile: "assetTile__0cf25",
                 container: "container_bad367",
                 ctaButton: "ctaButton__56c73",
                 help: "help__474cb",
@@ -22439,12 +22441,13 @@
                 modalContent: "modalContent__75af5",
                 platformSelectionOptionIcon: "platformSelectionOptionIcon__6225b",
                 platformSelectionOptionLabelContainer: "platformSelectionOptionLabelContainer__5864f",
-                reward: "reward__29972",
                 rewardHeading: "rewardHeading__6600e",
                 rewardSubheading: "rewardSubheading__52cec",
                 rewardSubheadingIcon: "rewardSubheadingIcon_f35288",
                 rewardSubheadingText: "rewardSubheadingText_a5a2b6",
-                rewardTile: "rewardTile__77515"
+                rewardTile: "rewardTile__77515",
+                rewardTileAsset: "rewardTileAsset_cb8b2b",
+                rewardTileWrapper: "rewardTileWrapper__1e38a"
             }
         },
         334644: function(e) {

@@ -10548,6 +10548,62 @@ html .invoiceCancelRow_aa7946 {
     background: var(--bg-mod-strong)
 }
 
+.questRewardTile__0a963 {
+    border-radius: 4px;
+    box-shadow: 6px 12px 32px rgba(0, 0, 0, .24);
+    position: relative;
+    width: 64px;
+    height: 64px
+}
+
+.questRewardTileInteractive_c349cf {
+    cursor: pointer
+}
+
+.questRewardTileAsset_fa0963 {
+    border-radius: inherit;
+    display: block;
+    height: 100%;
+    width: 100%
+}
+
+.questRewardTileAssetStatic__47b37 {
+    pointer-events: none
+}
+
+.questRewardTileDetailsLearnMore_e9ddee {
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: opacity.125s;
+    right: 0;
+    z-index: 0
+}
+
+.questRewardTileDetailsLearnMore_e9ddee p {
+    margin: 0;
+    flex: 0 0 auto;
+    width: 100%
+}
+
+.questRewardTile__0a963:hover .questRewardTileDetailsLearnMore_e9ddee,
+.questRewardTile__0a963:focus .questRewardTileDetailsLearnMore_e9ddee {
+    opacity: 1
+}
+
+.hideLearnMore__10d6e {
+    cursor: default
+}
+
 @keyframes uploadIconAnimateInLeft_ba96b5 {
     0% {
         transform: translatez(0)rotate(0);
@@ -12750,7 +12806,7 @@ html .invoiceCancelRow_aa7946 {
     border-radius: 50%
 }
 
-.container_bad367 .right__4d560 .imgWrapper__00a3b img {
+.assetTile__0cf25 {
     position: relative;
     height: 100%;
     width: 100%;
@@ -38985,11 +39041,6 @@ html .progress__00e29 {
     grid-area: progress-bar
 }
 
-.questReward__47d57 {
-    display: block;
-    pointer-events: none
-}
-
 .questRewardGiftInventory__0c5f4 {
     height: 98px;
     width: 98px
@@ -39076,8 +39127,6 @@ html .progress__00e29 {
 }
 
 .rewardTileWrapper__4d72d {
-    border-radius: 8px;
-    overflow: hidden;
     position: relative;
     grid-area: cta-img
 }
@@ -47951,6 +48000,7 @@ html .progress__00e29 {
 
 .rewardTile__08984 {
     border-radius: 4px;
+    flex: 0 0 auto;
     height: 58px;
     width: 58px
 }
@@ -68690,54 +68740,6 @@ input::-webkit-inner-spin-button {
     .nowPlayingColumn_b025fe {
         display: none
     }
-}
-
-.questRewardTile__0a963 {
-    border-radius: 4px;
-    box-shadow: 6px 12px 32px rgba(0, 0, 0, .24);
-    cursor: pointer;
-    position: relative;
-    width: 64px;
-    height: 64px
-}
-
-.questRewardTileAsset_fa0963 {
-    border-radius: inherit;
-    height: 100%;
-    width: 100%
-}
-
-.questRewardTileDetailsLearnMore_e9ddee {
-    align-items: center;
-    background: rgba(0, 0, 0, .5);
-    border-radius: inherit;
-    display: flex;
-    flex-direction: column;
-    bottom: 0;
-    justify-content: center;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    transition: opacity.125s;
-    right: 0;
-    z-index: 0
-}
-
-.questRewardTileDetailsLearnMore_e9ddee p {
-    margin: 0;
-    flex: 0 0 auto;
-    width: 100%
-}
-
-.questRewardTile__0a963:hover .questRewardTileDetailsLearnMore_e9ddee,
-.questRewardTile__0a963:focus .questRewardTileDetailsLearnMore_e9ddee {
-    opacity: 1
-}
-
-.hideLearnMore__10d6e {
-    cursor: default
 }
 
 .wrapper_b1e1fe {
@@ -119800,10 +119802,16 @@ html .invoiceCancelRow__6ff3e {
     box-shadow: var(--shadow-high)
 }
 
-.reward__29972 {
+.rewardTileWrapper__1e38a {
     width: 100%;
-    border-radius: 4px;
     margin-bottom: 16px
+}
+
+.rewardTileAsset_cb8b2b {
+    border: 1px solid var(--custom-reward-tile-border-color);
+    display: block;
+    height: auto;
+    width: 100%
 }
 
 .rewardSubheading__52cec {
@@ -133463,4 +133471,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.efc2b11b8bb615916377.css.map*/
+/*# sourceMappingURL=99387.02db73baca1e39231fbc.css.map*/
