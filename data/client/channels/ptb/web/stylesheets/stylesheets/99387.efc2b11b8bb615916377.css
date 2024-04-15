@@ -64826,7 +64826,7 @@ input::-webkit-inner-spin-button {
     background-color: var(--brand-500);
     position: relative;
     border-radius: 4px;
-    bottom: 8px
+    right: calc(50% - 16px)
 }
 
 .pointer__0132c {
@@ -133463,4 +133463,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.bf95a22b44b301baf531.css.map*/
+/*# sourceMappingURL=99387.efc2b11b8bb615916377.css.map*/
