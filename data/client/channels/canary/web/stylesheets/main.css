@@ -32461,6 +32461,10 @@ input[type=checked]:focus-visible+.label__73b15 {
     text-transform: none
 }
 
+.qualityIndicatorBadgePremium__18825 {
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color)
+}
+
 .streamQualityIndicator__1fe46 {
     display: flex;
     overflow: hidden;
@@ -133334,4 +133338,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d05f75179cd1a2f2e12f.css.map*/
+/*# sourceMappingURL=99387.8c5378498bb9f2c48cf4.css.map*/
