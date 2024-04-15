@@ -19885,6 +19885,18 @@
                 termsApplyBodyText: "termsApplyBodyText__667ff"
             }
         },
+        324464: function(e) {
+            "use strict";
+            e.exports = {
+                closeButton: "closeButton__461d0",
+                closeIcon: "closeIcon__8cc73",
+                demoCta: "demoCta__306cd",
+                hidden: "hidden_ae11f0",
+                nitroTextAndBadge: "nitroTextAndBadge__6ef8d",
+                textContainer: "textContainer__24ba8",
+                wumpusContainer: "wumpusContainer_e8545c"
+            }
+        },
         464765: function(e) {
             "use strict";
             e.exports = {
@@ -26612,6 +26624,7 @@
             e.exports = {
                 active: "active_ff29dc",
                 activeLight: "activeLight__4b58a",
+                buttonPremiumGlow: "buttonPremiumGlow__778ce",
                 centerButton: "centerButton__8316e colorable__4f530",
                 centerIcon: "centerIcon_e3df23",
                 colorable: "colorable__4f530",
