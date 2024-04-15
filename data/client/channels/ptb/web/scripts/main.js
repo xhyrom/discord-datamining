@@ -36596,7 +36596,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284614", ", Version Hash: ").concat("5dc1e6cfd1caecd888e2a95941585495089f7740")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284631", ", Version Hash: ").concat("e7d3e61e310e2ed1e1b72b1c0ca894453197e321")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86426,8 +86426,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284614", "284614"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284614")), t = 0), t
+                let t = parseInt((e = "284631", "284631"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284631")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -101364,7 +101364,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 BaseClanTagChiplet: function() {
-                    return A
+                    return h
                 }
             }), n("47120");
             var i = n("735250"),
@@ -101377,12 +101377,13 @@
                 d = n("481060"),
                 _ = n("110924"),
                 c = n("594174"),
-                E = n("353093"),
-                I = n("460578"),
-                T = n("277602"),
-                f = n("738103"),
-                S = n("319695");
-            let A = r.memo(function(e) {
+                E = n("963202"),
+                I = n("353093"),
+                T = n("460578"),
+                f = n("277602"),
+                S = n("738103"),
+                A = n("319695");
+            let h = r.memo(function(e) {
                 let {
                     clanTag: t,
                     className: n,
@@ -101390,23 +101391,23 @@
                     onMouseEnter: s,
                     disableTooltip: o = !0
                 } = e;
-                return (0, i.jsx)(d.Clickable, {
+                return (0, E.useIsInUserClanExperiment)() ? (0, i.jsx)(d.Clickable, {
                     tag: "span",
                     onClick: r,
                     onMouseEnter: s,
-                    className: a()(S.chipletContainerInner, o && S.noTooltip, n),
+                    className: a()(A.chipletContainerInner, o && A.noTooltip, n),
                     children: (0, i.jsxs)(d.Text, {
                         variant: "text-xs/medium",
                         color: "text-normal",
                         tag: "span",
-                        className: S.text,
-                        children: [(0, i.jsx)(f.TempBadgeIcon, {
-                            className: S.badge,
+                        className: A.text,
+                        children: [(0, i.jsx)(S.TempBadgeIcon, {
+                            className: A.badge,
                             width: 12,
                             height: 12
                         }), t]
                     })
-                })
+                }) : null
             });
             t.default = r.memo(function(e) {
                 var t, n;
@@ -101414,59 +101415,59 @@
                     clan: s,
                     userId: a,
                     className: o,
-                    disableTooltip: f = !1
-                } = e, h = (0, u.useStateFromStores)([c.default], () => c.default.getUser(a), [a]), m = null !== (t = null == h ? void 0 : h.clan) && void 0 !== t ? t : s, N = (0, E.getTagFromClan)(m), O = (0, _.default)(m), [p, R] = (0, I.useFetchClanInfo)(null !== (n = null == m ? void 0 : m.identityGuildId) && void 0 !== n ? n : null), [C, g] = r.useState(!1), [L, D] = r.useState(!1), [v, M] = r.useState(!1), y = r.useRef(null), P = r.useCallback(e => {
-                    !f && (e.stopPropagation(), e.preventDefault(), g(e => !e))
-                }, [f]), U = r.useCallback(() => {
-                    !f && R()
-                }, [R, f]);
+                    disableTooltip: S = !1
+                } = e, m = (0, u.useStateFromStores)([c.default], () => c.default.getUser(a), [a]), N = null !== (t = null == m ? void 0 : m.clan) && void 0 !== t ? t : s, O = (0, I.getTagFromClan)(N), p = (0, _.default)(N), [R, C] = (0, T.useFetchClanInfo)(null !== (n = null == N ? void 0 : N.identityGuildId) && void 0 !== n ? n : null), [g, L] = r.useState(!1), [D, v] = r.useState(!1), [M, y] = r.useState(!1), P = r.useRef(null), U = r.useCallback(e => {
+                    !S && (e.stopPropagation(), e.preventDefault(), L(e => !e))
+                }, [S]), b = r.useCallback(() => {
+                    !S && C()
+                }, [C, S]);
                 return (r.useEffect(() => {
-                    !l()(O, m) && g(!1)
-                }, [O, m]), r.useEffect(() => (!L && !v && (y.current = setTimeout(() => {
-                    g(!1)
+                    !l()(p, N) && L(!1)
+                }, [p, N]), r.useEffect(() => (!D && !M && (P.current = setTimeout(() => {
+                    L(!1)
                 }, 500)), () => {
-                    null != y.current && clearTimeout(y.current)
-                }), [L, v]), null == N) ? null : f ? (0, i.jsx)(A, {
-                    clanTag: N,
+                    null != P.current && clearTimeout(P.current)
+                }), [D, M]), (0, E.useIsInUserClanExperiment)() && null != O) ? S ? (0, i.jsx)(h, {
+                    clanTag: O,
                     className: o,
-                    onClick: P,
-                    onMouseEnter: U,
-                    disableTooltip: f
+                    onClick: U,
+                    onMouseEnter: b,
+                    disableTooltip: S
                 }) : (0, i.jsx)(d.Tooltip, {
-                    text: (0, i.jsx)(T.default, {
-                        isLoading: p,
-                        clan: m,
-                        onAdoptTag: () => g(!1),
-                        onMouseEnter: () => D(!0),
-                        onMouseLeave: () => D(!1)
+                    text: (0, i.jsx)(f.default, {
+                        isLoading: R,
+                        clan: N,
+                        onAdoptTag: () => L(!1),
+                        onMouseEnter: () => v(!0),
+                        onMouseLeave: () => v(!1)
                     }),
-                    onTooltipShow: () => R(),
+                    onTooltipShow: () => C(),
                     hideOnClick: !0,
                     disableTooltipPointerEvents: !1,
-                    tooltipClassName: S.tooltip,
-                    tooltipContentClassName: S.tooltipContainer,
+                    tooltipClassName: A.tooltip,
+                    tooltipContentClassName: A.tooltipContainer,
                     "aria-label": "Guild Profile",
-                    shouldShow: C,
-                    forceOpen: C,
+                    shouldShow: g,
+                    forceOpen: g,
                     children: e => (0, i.jsx)("span", {
                         ...e,
                         onMouseEnter: () => {
                             var t;
-                            M(!0), null === (t = e.onMouseEnter) || void 0 === t || t.call(e)
+                            y(!0), null === (t = e.onMouseEnter) || void 0 === t || t.call(e)
                         },
                         onMouseLeave: () => {
                             var t;
-                            M(!1), null === (t = e.onMouseLeave) || void 0 === t || t.call(e)
+                            y(!1), null === (t = e.onMouseLeave) || void 0 === t || t.call(e)
                         },
-                        children: (0, i.jsx)(A, {
-                            clanTag: N,
+                        children: (0, i.jsx)(h, {
+                            clanTag: O,
                             className: o,
-                            onClick: P,
-                            onMouseEnter: U,
-                            disableTooltip: f
+                            onClick: U,
+                            onMouseEnter: b,
+                            disableTooltip: S
                         })
                     })
-                })
+                }) : null
             })
         },
         277602: function(e, t, n) {
@@ -110000,8 +110001,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284614",
-                    versionHash: "5dc1e6cfd1caecd888e2a95941585495089f7740"
+                    buildNumber: "284631",
+                    versionHash: "e7d3e61e310e2ed1e1b72b1c0ca894453197e321"
                 }
             }
             n.r(t), n.d(t, {
@@ -160013,8 +160014,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713212988227",
-                                    build_number: "284614"
+                                    built_at: "1713215011197",
+                                    build_number: "284631"
                                 }
                             },
                             retries: 1
@@ -235450,7 +235451,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5dc1e6cfd1caecd888e2a95941585495089f7740"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e7d3e61e310e2ed1e1b72b1c0ca894453197e321"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -261632,7 +261633,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284614"
+                                build_number: "284631"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -268811,7 +268812,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284614", "284614"), 10);
+                let s = parseInt((n = "284631", "284631"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -295633,4 +295634,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.3609a012c2f6870ae0aa.js.map
+//# sourceMappingURL=65573.ae7d1d660a36bd7c2b99.js.map
