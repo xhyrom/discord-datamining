@@ -36587,7 +36587,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284528", ", Version Hash: ").concat("d45b881a09a3b56a54bd7d7837e009602d81c282")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284532", ", Version Hash: ").concat("07aa501e1fa24b1c696f686b83987d7e13d95e96")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86417,8 +86417,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284528", "284528"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284528")), t = 0), t
+                let t = parseInt((e = "284532", "284532"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284532")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -109990,8 +109990,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284528",
-                    versionHash: "d45b881a09a3b56a54bd7d7837e009602d81c282"
+                    buildNumber: "284532",
+                    versionHash: "07aa501e1fa24b1c696f686b83987d7e13d95e96"
                 }
             }
             n.r(t), n.d(t, {
@@ -159936,8 +159936,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713201410817",
-                                    build_number: "284528"
+                                    built_at: "1713201837016",
+                                    build_number: "284532"
                                 }
                             },
                             retries: 1
@@ -169219,20 +169219,21 @@
                 p = [],
                 R = !1,
                 C = 0,
-                g = () => !0;
+                g = !1,
+                L = () => !0;
 
-            function L(e) {
+            function D(e) {
                 A.add(e)
             }
 
-            function D(e) {
+            function v(e) {
                 let {
                     messages: t
                 } = e;
-                t.forEach(e => v(e))
+                t.forEach(e => M(e))
             }
 
-            function v(e) {
+            function M(e) {
                 let t = e.type === o.MessageTypes.PREMIUM_REFERRAL ? e.content : null;
                 if (null == t) return !1;
                 if (!h.has(t) && !A.has(t)) {
@@ -169240,9 +169241,9 @@
                     n = t, A.add(n), u.default.wait(() => (0, _.resolveReferralTrialOffer)(t).catch(c.NOOP_NULL))
                 }
             }
-            class M extends(i = l.default.Store) {
+            class y extends(i = l.default.Store) {
                 initialize() {
-                    this.waitFor(d.default), this.syncWith([d.default], g)
+                    this.waitFor(d.default), this.syncWith([d.default], L)
                 }
                 checkAndFetchReferralsRemaining() {
                     null == E && !S && N < 5 && (null == O || O < Date.now()) && (0, _.fetchReferralsRemaining)()
@@ -169277,13 +169278,16 @@
                 getNextIndexOfEligibleUsers() {
                     return C
                 }
+                getIsEligibleToSendReferrals() {
+                    return g
+                }
             }
-            a = "ReferralTrialStore", (s = "displayName") in(r = M) ? Object.defineProperty(r, s, {
+            a = "ReferralTrialStore", (s = "displayName") in(r = y) ? Object.defineProperty(r, s, {
                 value: a,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : r[s] = a, t.default = new M(u.default, {
+            }) : r[s] = a, t.default = new y(u.default, {
                 BILLING_REFERRAL_TRIAL_OFFER_UPDATE: function(e) {
                     let {
                         userTrialOfferId: t,
@@ -169296,18 +169300,18 @@
                 },
                 BILLING_REFERRALS_REMAINING_FETCH_START: function(e) {
                     let {} = e;
-                    S = !0
+                    g = !1, S = !0
                 },
                 BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: function(e) {
                     let {
                         referrals_remaining: t,
                         sent_user_ids: n
                     } = e;
-                    S = !1, E = t, T = n
+                    g = !0, S = !1, E = t, T = n
                 },
                 BILLING_REFERRALS_REMAINING_FETCH_FAIL: function(e) {
                     let {} = e;
-                    S = !1, N += 1, O = Date.now() + 1e3 * Math.pow(2, N)
+                    g = !1, S = !1, N += 1, O = Date.now() + 1e3 * Math.pow(2, N)
                 },
                 BILLING_CREATE_REFERRAL_PREVIEW_START: function(e) {
                     let {
@@ -169359,16 +169363,16 @@
                 REFERRALS_FETCH_ELIGIBLE_USER_FAIL: function() {
                     R = !1
                 },
-                LOAD_MESSAGES_SUCCESS: D,
+                LOAD_MESSAGES_SUCCESS: v,
                 MESSAGE_CREATE: function(e) {
                     let {
                         message: t
                     } = e;
-                    v(t)
+                    M(t)
                 },
-                LOAD_MESSAGES_AROUND_SUCCESS: D,
+                LOAD_MESSAGES_AROUND_SUCCESS: v,
                 LOGOUT: function() {
-                    E = null, I = {}, T = [], f = new Set, S = !1, A = new Set, h = new Set, m = {}, N = 0, O = null, p = [], R = !1, C = 0
+                    E = null, I = {}, T = [], f = new Set, S = !1, A = new Set, h = new Set, m = {}, N = 0, O = null, p = [], R = !1, C = 0, g = !1
                 }
             })
         },
@@ -207028,7 +207032,7 @@
                 if ((0, o.default)(A), I.isPlatformEmbedded)(0, r.openModalLazy)(async () => {
                     let {
                         default: t
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("79477"), n.e("88099")]).then(n.bind(n, "60594"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("79477"), n.e("95499")]).then(n.bind(n, "60594"));
                     return n => (0, i.jsx)(t, {
                         ...n,
                         guildId: e,
@@ -207571,27 +207575,31 @@
                     iconClassName: f,
                     onPopoutClick: S,
                     popoutOpen: A = !1,
-                    ...h
-                } = e, m = (0, _.default)(t, n), N = (0, o.default)("(max-width: 456px)"), O = (0, i.jsx)(I, {
-                    ...h,
+                    premiumGlow: h = !1,
+                    ...m
+                } = e, N = (0, _.default)(t, n), O = (0, o.default)("(max-width: 456px)"), p = (0, i.jsx)(I, {
+                    ...m,
                     grow: !1,
                     onContextMenu: S,
                     iconClassName: s()(f, E.centerIcon),
-                    className: s()(N ? r : null, E.staticButton, E.centerButton, T[m])
+                    className: s()(O ? r : null, E.staticButton, E.centerButton, T[N])
                 });
-                return N ? O : (0, i.jsxs)("div", {
+                return O ? p : (0, i.jsxs)("div", {
                     className: s()(r, E.contextMenuContainer),
                     children: [(0, i.jsx)(u.default, {
+                        className: s()({
+                            [E.buttonPremiumGlow]: h
+                        }),
                         mask: null == S ? null : u.MaskIDs.CHANNEL_CALL_CONTROL_BUTTON,
                         width: 56,
                         height: 56,
-                        children: O
+                        children: p
                     }), null != S ? (0, i.jsx)(d.default, {
                         children: (0, i.jsx)(a.Clickable, {
                             "aria-label": c.default.Messages.MORE_OPTIONS,
                             onClick: S,
                             onContextMenu: S,
-                            className: s()(E.contextMenuNub, T[m], {
+                            className: s()(E.contextMenuNub, T[N], {
                                 [E.active]: A
                             }),
                             children: (0, i.jsx)(l.default, {
@@ -235271,7 +235279,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d45b881a09a3b56a54bd7d7837e009602d81c282"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "07aa501e1fa24b1c696f686b83987d7e13d95e96"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -261436,7 +261444,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284528"
+                                build_number: "284532"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -268615,7 +268623,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284528", "284528"), 10);
+                let s = parseInt((n = "284532", "284532"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -295401,4 +295409,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.a8a69afa177e11770dd6.js.map
+//# sourceMappingURL=65573.7089856e37a273d82e45.js.map

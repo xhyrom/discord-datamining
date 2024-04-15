@@ -8308,6 +8308,10 @@ html .invoiceCancelRow_aa7946 {
     transition: color.15s ease-in-out
 }
 
+.buttonPremiumGlow__778ce {
+    filter: drop-shadow(0 0 12px#a944b0)drop-shadow(0 0 12px#a944b0)
+}
+
 @media(max-width:456px) {
     .centerButton__8316e {
         padding: 8px
@@ -31386,6 +31390,59 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .eventPrompt__0ac84 {
     margin-top: 8px
+}
+
+.demoCta__306cd {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: center;
+    width: 300px;
+    box-sizing: border-box;
+    border-radius: var(--spacing-8);
+    padding: var(--spacing-12);
+    opacity: 1;
+    transition: all.25s;
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+    transform: translate3d(0, -24px, 0)
+}
+
+.hidden_ae11f0 {
+    opacity: 0;
+    transform: translate3d(0, -14px, 0);
+    pointer-events: none
+}
+
+.wumpusContainer_e8545c {
+    margin-top: -40px;
+    margin-left: -12px
+}
+
+.textContainer__24ba8 {
+    padding: 0 var(--spacing-24)
+}
+
+.nitroTextAndBadge__6ef8d {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    -moz-column-gap: var(--spacing-4);
+    column-gap: var(--spacing-4);
+    margin-top: 2px;
+    margin-bottom: var(--spacing-4)
+}
+
+.closeButton__461d0 {
+    position: absolute;
+    top: var(--spacing-12);
+    right: var(--spacing-12)
+}
+
+.closeIcon__8cc73 {
+    width: var(--spacing-16);
+    height: var(--spacing-16);
+    color: var(--text-normal)
 }
 
 .brokenImageIcon_ff9fd6 {
@@ -133241,4 +133298,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.cd97e5f4b1a61fd49fdc.css.map*/
+/*# sourceMappingURL=99387.efae139c232fdf5e9c8a.css.map*/
