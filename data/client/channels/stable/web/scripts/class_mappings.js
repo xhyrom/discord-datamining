@@ -859,10 +859,12 @@
                 activityEmoji: "activityEmoji__2ca8c",
                 activityText: "activityText__31c22",
                 botTag: "botTag_a52f38",
+                clanTag: "clanTag_f4aadc",
                 icon: "icon__07c5b",
                 lostPermission: "lostPermission_ed6807",
                 member: "member_aa4760",
                 memberInner: "memberInner__4dac6",
+                name: "name_c3d448",
                 offline: "offline__55fab",
                 ownerIcon: "ownerIcon_bd8e7d icon__07c5b",
                 placeholder: "placeholder__134e3 member_aa4760",
@@ -4981,12 +4983,22 @@
                 selectedGameCheck: "selectedGameCheck_d9d855"
             }
         },
+        566434: function(e) {
+            "use strict";
+            e.exports = {
+                acronym: "acronym_f76f98",
+                guildIconImage: "guildIconImage_d3cb49"
+            }
+        },
         319695: function(e) {
             "use strict";
             e.exports = {
                 badge: "badge_d12073",
                 chipletContainerInner: "chipletContainerInner_bfcb1e",
-                text: "text_c2b2cb"
+                noTooltip: "noTooltip_e2f660",
+                text: "text_c2b2cb",
+                tooltip: "tooltip_a9f8fc",
+                tooltipContainer: "tooltipContainer_d9b1ea"
             }
         },
         801303: function(e) {
@@ -5111,6 +5123,9 @@
                 icon: "icon_e8e1b2",
                 iconSmall: "iconSmall_cd3113",
                 inputContainer: "inputContainer__1e798",
+                interestsCategory: "interestsCategory__14517",
+                interestsCategoryTitle: "interestsCategoryTitle__18aeb",
+                interestsTag: "interestsTag__64479",
                 introTitle: "introTitle__6a50e",
                 languageSelect: "languageSelect__46f09",
                 playstyleOption: "playstyleOption__67567",
@@ -5129,10 +5144,6 @@
                 timeSelectorRow: "timeSelectorRow_d86011",
                 title: "title__20916",
                 twoColumn: "twoColumn_b751a1",
-                utilityCategory: "utilityCategory_ce38d3",
-                utilityCategoryIcon: "utilityCategoryIcon__542af",
-                utilityCategoryTitle: "utilityCategoryTitle__3f5ab",
-                utilityTag: "utilityTag__2a938",
                 utilityTagIcon: "utilityTagIcon__2b2c9"
             }
         },
@@ -8611,6 +8622,7 @@
                 premiumStreamIconLarge: "premiumStreamIconLarge_a6f461",
                 qualityIndicator: "qualityIndicator__36cd4",
                 qualityIndicatorBadge: "qualityIndicatorBadge_a9143a",
+                qualityIndicatorBadgePremium: "qualityIndicatorBadgePremium__18825",
                 qualityIndicatorFullQuality: "qualityIndicatorFullQuality__7441b",
                 qualityIndicatorHighlightWrapper: "qualityIndicatorHighlightWrapper__414c8",
                 qualityIndicatorLowQuality: "qualityIndicatorLowQuality_eca398",
@@ -17016,6 +17028,12 @@
                 size: "size__69eb6"
             }
         },
+        722061: function(e) {
+            "use strict";
+            e.exports = {
+                clipPill: "clipPill__3140c"
+            }
+        },
         264558: function(e) {
             "use strict";
             e.exports = {
@@ -19874,6 +19892,18 @@
                 nitroIconSubHeader: "nitroIconSubHeader__7e261",
                 termsApplyAnchor: "termsApplyAnchor__74cb0",
                 termsApplyBodyText: "termsApplyBodyText__667ff"
+            }
+        },
+        324464: function(e) {
+            "use strict";
+            e.exports = {
+                closeButton: "closeButton__461d0",
+                closeIcon: "closeIcon__8cc73",
+                demoCta: "demoCta__306cd",
+                hidden: "hidden_ae11f0",
+                nitroTextAndBadge: "nitroTextAndBadge__6ef8d",
+                textContainer: "textContainer__24ba8",
+                wumpusContainer: "wumpusContainer_e8545c"
             }
         },
         464765: function(e) {
@@ -24688,6 +24718,15 @@
                 memberSinceContainer: "memberSinceContainer__16630"
             }
         },
+        222477: function(e) {
+            "use strict";
+            e.exports = {
+                noteClickable: "noteClickable__7552c",
+                noteIcon: "noteIcon_d38cf4",
+                noteText: "noteText__42e4e",
+                noteTextArea: "noteTextArea__171ac"
+            }
+        },
         785494: function(e) {
             "use strict";
             e.exports = {
@@ -24730,7 +24769,8 @@
                 userTagNoNickname: "userTagNoNickname__24253 userTag_eb9b2a",
                 userTagUsernameBase: "userTagUsernameBase_bb3e38",
                 userTagUsernameNoNickname: "userTagUsernameNoNickname__6c8c2 userTagUsernameBase_bb3e38",
-                userTagWithNickname: "userTagWithNickname_fb8bc3 userTag_eb9b2a"
+                userTagWithNickname: "userTagWithNickname_fb8bc3 userTag_eb9b2a",
+                usernameRow: "usernameRow__73bf0"
             }
         },
         736379: function(e) {
@@ -26603,6 +26643,7 @@
             e.exports = {
                 active: "active_ff29dc",
                 activeLight: "activeLight__4b58a",
+                buttonPremiumGlow: "buttonPremiumGlow__778ce",
                 centerButton: "centerButton__8316e colorable__4f530",
                 centerIcon: "centerIcon_e3df23",
                 colorable: "colorable__4f530",
