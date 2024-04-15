@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-04_custom_notification_sound_web",
+    "label": "Custom Notification Sound for Desktop",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable custom notificstion sounds"
+    ],
+    "hash": 1788171924,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
