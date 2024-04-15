@@ -41,6 +41,7 @@
 <p> </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22820197451543" width="226" height="748"></p>
 <h1 id="docs-internal-guid-ab67d27d-7fff-24f0-dbd7-f209276a6f4d">Gifting from the Shop</h1>
+<h3 id="docs-internal-guid-650ed8fe-7fff-b23d-cc06-e6cb2703ef20"><span style="color: #434343;">Gifting from the Shop is only available on desktop and browser. </span></h3>
 <p>Along with collecting items for yourself, you can also gift items from the Shop to your friends! </p>
 <p>1. Select the item you would like to send and press the <strong>gift</strong> <strong>icon</strong> located to the right of the <strong>Buy Decoration </strong>button. You can also select the gift icon within the main Shop page to send a gift. </p>
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-744e18a4-7fff-7f1d-093b-e2c7e113d3b7"><img src="https://support.discord.com/hc/article_attachments/19550225912983" width="624" height="452"></span></p>
