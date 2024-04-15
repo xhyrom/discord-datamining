@@ -22324,13 +22324,6 @@
                 submenuWrapper: "submenuWrapper_f67b74"
             }
         },
-        340747: function(e) {
-            "use strict";
-            e.exports = {
-                questControls: "questControls__357a2",
-                questControlsTitle: "questControlsTitle__45f0c"
-            }
-        },
         959343: function(e) {
             "use strict";
             e.exports = {
