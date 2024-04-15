@@ -2,7 +2,13 @@
 <ul>
     <li><a href="#h_01HDME17HJQ0D68ZWPQNHA9BXZ">Welcome to the Shop </a></li>
     <li><a href="#h_01HDME17HJE3D9N3DWY2QYGF07">What will I find in the Shop?</a></li>
-    <li><a href="#h_01HDME17HJX40G92JC7V3Q0WD6">How do I find the Shop?</a></li>
+    <li>
+        <a href="#h_01HDME17HJX40G92JC7V3Q0WD6">How do I find the Shop?</a>
+        <ul>
+            <li><a href="https://support.discord.com/hc/en-us/articles/17162747936663#h_01HVHE1RAM3Y86Y72M182775GF">Desktop</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/17162747936663#docs-internal-guid-a5d55ffd-7fff-5128-21cb-7acf5fea56eb">Mobile</a></li>
+        </ul>
+    </li>
     <li><a href="https://support.discord.com/hc/en-us/articles/17162747936663#docs-internal-guid-ab67d27d-7fff-24f0-dbd7-f209276a6f4d">Gifting from the Shop</a></li>
     <li><a href="#h_01HDME17HJ58CYGM3WYGQF0ZMN">Frequently Asked Questions</a></li>
 </ul>
@@ -14,8 +20,9 @@
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-cc44709e-7fff-de9d-20e9-c2ebcbe2461e"><img src="https://support.discord.com/hc/article_attachments/19612054117399" width="624" height="452"></span></p>
 <p>You can learn more about customizing your profile by heading over to our Custom Profiles article <a href="https://support.discord.com/hc/en-us/articles/4403147417623" target="_blank" rel="noopener noreferrer">here</a>. </p>
 <h1 id="h_01HDME17HJX40G92JC7V3Q0WD6">How do I find the Shop?</h1>
-<h3 id="h_01HDMK6AQ36K30F267HFT18CV1">At this time, you can only access the Shop on the desktop app or your browser.</h3>
+<h3 id="h_01HDMK6AQ36K30F267HFT18CV1">At this time, you can only access the Shop on the desktop app, your browser, or on iOS.</h3>
 <p id="docs-internal-guid-d5fed4b0-7fff-a231-7cd7-51087e31cc58">Head over to the Shop to start collecting avatar decorations and profile effects! </p>
+<h2 id="h_01HVHE1RAM3Y86Y72M182775GF"><span id="docs-internal-guid-80a013df-7fff-bf2a-521c-bff4299bcea0">Desktop</span></h2>
 <p><strong>Option 1</strong></p>
 <p>1. Navigate to your <strong>Direct Messages list </strong>by selecting the Discord app icon in the upper left corner. </p>
 <p>2. Then, press the <strong>Shop</strong> tab to enter the Shop!</p>
@@ -26,6 +33,13 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19432495562647" alt="image2.png"></p>
 <p>3. Once directed to the Shop, you can preview and buy avatar decorations and profile effects to add to your collection! </p>
 <p>Head over to the <a href="https://support.discord.com/hc/en-us/articles/13410113109911" target="_blank" rel="noopener noreferrer">Avatar Decorations</a> article and the <a href="https://support.discord.com/hc/en-us/articles/17828465914263" target="_blank" rel="noopener noreferrer">Profile Effects</a> article to find steps on how to apply your collection and customize your profile! </p>
+<h2 id="docs-internal-guid-a5d55ffd-7fff-5128-21cb-7acf5fea56eb">Mobile</h2>
+<p>1. To navigate to the Shop on your mobile device, head over to your <strong>User Profile </strong>by selecting your <strong>avatar</strong> icon in the lower right corner. </p>
+<p>2. Then, tap the <strong>Shop</strong> [<img src="https://support.discord.com/hc/article_attachments/22820221364887" width="24" height="24">] icon in the upper right corner. </p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22820197440663" width="250" height="496"></p>
+<p>3. This will direct you to the Shop where you can preview and buy avatar decorations and profile effects! </p>
+<p> </p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22820197451543" width="226" height="748"></p>
 <h1 id="docs-internal-guid-ab67d27d-7fff-24f0-dbd7-f209276a6f4d">Gifting from the Shop</h1>
 <p>Along with collecting items for yourself, you can also gift items from the Shop to your friends! </p>
 <p>1. Select the item you would like to send and press the <strong>gift</strong> <strong>icon</strong> located to the right of the <strong>Buy Decoration </strong>button. You can also select the gift icon within the main Shop page to send a gift. </p>
