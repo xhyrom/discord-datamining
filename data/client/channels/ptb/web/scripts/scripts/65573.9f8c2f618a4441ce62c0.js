@@ -36587,7 +36587,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284513", ", Version Hash: ").concat("55a92783822b7c1d4e91517f383c2b75a3e7f2aa")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284525", ", Version Hash: ").concat("1d5b6a84713bcfc7c72bbde4bb29abc866063a04")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -64806,24 +64806,23 @@
             "use strict";
             n.r(t), n.d(t, {
                 isActivitiesInTextEnabled: function() {
-                    return d
-                },
-                isActivityInTextSupportedForChannel: function() {
                     return u
                 },
-                useActivitiesInTextExperimentConfig: function() {
-                    return c
+                isActivityInTextSupportedForChannel: function() {
+                    return l
                 },
                 useIsActivitiesInTextEnabled: function() {
+                    return d
+                },
+                useShowActivitiesInOmniButtonMenu: function() {
                     return _
                 }
             });
             var i = n("106351"),
                 r = n("442837"),
-                s = n("802171"),
-                a = n("818083"),
-                o = n("592125");
-            let l = (0, a.createExperiment)({
+                s = n("818083"),
+                a = n("592125");
+            let o = (0, s.createExperiment)({
                 kind: "user",
                 id: "2023-08_activities_in_text",
                 label: "Activities in Text User",
@@ -64857,73 +64856,55 @@
                 }]
             });
 
-            function u(e) {
+            function l(e) {
                 var t;
                 if (null == e || void 0 === e) return !1;
-                let n = o.default.getChannel(e.parent_id);
+                let n = a.default.getChannel(e.parent_id);
                 if (null != n && (null == n ? void 0 : n.type) !== i.ChannelTypes.GUILD_CATEGORY) return !1;
                 return t = e.type, [i.ChannelTypes.GUILD_TEXT, i.ChannelTypes.GROUP_DM, i.ChannelTypes.DM].includes(t)
             }
 
-            function d(e, t) {
+            function u(e, t) {
                 if (null == e) return !1;
-                let n = u(e);
-                return (null == e ? void 0 : e.guild_id) != null ? s.default.getCurrentConfig({
-                    guildId: e.guild_id,
-                    location: t
-                }, {
-                    autoTrackExposure: !0
-                }).activitiesInTextEnabled && n : l.getCurrentConfig({
+                let n = l(e);
+                return (null == e ? void 0 : e.guild_id) != null ? n : o.getCurrentConfig({
                     location: t
                 }, {
                     autoTrackExposure: !0
                 }).activitiesInTextEnabled && n
             }
 
-            function _(e, t) {
+            function d(e, t) {
                 let {
                     isActivitiesInTextEnabledForChannelType: n,
                     channelGuildId: i
-                } = (0, r.useStateFromStoresObject)([o.default], () => {
-                    let t = o.default.getChannel(e);
+                } = (0, r.useStateFromStoresObject)([a.default], () => {
+                    let t = a.default.getChannel(e);
                     return {
-                        isActivitiesInTextEnabledForChannelType: u(t),
+                        isActivitiesInTextEnabledForChannelType: l(t),
                         channelGuildId: null == t ? void 0 : t.guild_id
                     }
-                }), a = null != i, d = s.default.useExperiment({
-                    guildId: i,
+                }), s = null != i, u = o.useExperiment({
                     location: t
                 }, {
-                    autoTrackExposure: a,
-                    disable: !a
-                }), _ = l.useExperiment({
-                    location: t
-                }, {
-                    autoTrackExposure: !a,
-                    disable: a
+                    autoTrackExposure: !s,
+                    disable: s
                 });
-                return a ? d.activitiesInTextEnabled && n : _.activitiesInTextEnabled && n
+                return s ? n : u.activitiesInTextEnabled && n
             }
 
-            function c(e, t) {
-                let n = (0, r.useStateFromStores)([o.default], () => o.default.getChannel(e)),
-                    i = u(n),
-                    a = null == n ? void 0 : n.guild_id,
-                    d = null != a,
-                    _ = s.default.useExperiment({
-                        guildId: a,
+            function _(e, t) {
+                let n = (0, r.useStateFromStores)([a.default], () => a.default.getChannel(e)),
+                    i = l(n),
+                    s = null == n ? void 0 : n.guild_id,
+                    u = null != s,
+                    d = o.useExperiment({
                         location: t
                     }, {
-                        autoTrackExposure: d,
-                        disable: !d
-                    }),
-                    c = l.useExperiment({
-                        location: t
-                    }, {
-                        autoTrackExposure: !d,
-                        disable: d
+                        autoTrackExposure: !u,
+                        disable: u
                     });
-                return i ? d ? _ : c : null
+                return u ? i : d.showInOmniButtonMenu && i
             }
         },
         24933: function(e, t, n) {
@@ -79282,54 +79263,6 @@
                 }]
             })
         },
-        802171: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var i = n("818083");
-            t.default = (0, i.createExperiment)({
-                kind: "guild",
-                id: "2024-03_ait_guild_entry_point",
-                label: "Activities in Text Guild Experiment w/ new Entry Point",
-                defaultConfig: {
-                    entryPointEnabled: !1,
-                    activitiesInTextEnabled: !1,
-                    desktopThrobberEnabled: !1,
-                    showInOmniButtonMenu: !1,
-                    showNewMobileLeaveUI: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enable new entry point in Chat Input and App Launcher",
-                    config: {
-                        entryPointEnabled: !0,
-                        activitiesInTextEnabled: !1,
-                        desktopThrobberEnabled: !1,
-                        showInOmniButtonMenu: !1,
-                        showNewMobileLeaveUI: !1
-                    }
-                }, {
-                    id: 2,
-                    label: "Enable new entry point in Chat Input, App Launcher, and Activities In Text",
-                    config: {
-                        entryPointEnabled: !0,
-                        activitiesInTextEnabled: !0,
-                        desktopThrobberEnabled: !1,
-                        showInOmniButtonMenu: !0,
-                        showNewMobileLeaveUI: !1
-                    }
-                }, {
-                    id: 3,
-                    label: "Enable new entry point in Chat Input, App Launcher, Activities in Text, and Desktop Throbber",
-                    config: {
-                        entryPointEnabled: !0,
-                        activitiesInTextEnabled: !0,
-                        desktopThrobberEnabled: !0,
-                        showInOmniButtonMenu: !0,
-                        showNewMobileLeaveUI: !1
-                    }
-                }]
-            })
-        },
         728345: function(e, t, n) {
             "use strict";
             n.r(t), n("789020"), n("610138"), n("216116"), n("78328"), n("815648"), n("47120");
@@ -86484,8 +86417,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284513", "284513"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284513")), t = 0), t
+                let t = parseInt((e = "284525", "284525"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284525")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110051,8 +109984,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284513",
-                    versionHash: "55a92783822b7c1d4e91517f383c2b75a3e7f2aa"
+                    buildNumber: "284525",
+                    versionHash: "1d5b6a84713bcfc7c72bbde4bb29abc866063a04"
                 }
             }
             n.r(t), n.d(t, {
@@ -159997,8 +159930,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713199975383",
-                                    build_number: "284513"
+                                    built_at: "1713200802350",
+                                    build_number: "284525"
                                 }
                             },
                             retries: 1
@@ -235332,7 +235265,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "55a92783822b7c1d4e91517f383c2b75a3e7f2aa"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "1d5b6a84713bcfc7c72bbde4bb29abc866063a04"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -261497,7 +261430,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284513"
+                                build_number: "284525"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -268676,7 +268609,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284513", "284513"), 10);
+                let s = parseInt((n = "284525", "284525"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -295462,4 +295395,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.2ba6187fe9f839049e71.js.map
+//# sourceMappingURL=65573.9f8c2f618a4441ce62c0.js.map
