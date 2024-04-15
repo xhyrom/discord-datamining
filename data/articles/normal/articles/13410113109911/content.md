@@ -14,7 +14,8 @@
 <h1 id="h_01GWJJPDWA7210GPEJB5Z4R5WC">What are avatar decorations?</h1>
 <p id="docs-internal-guid-7e1ad2f6-7fff-9866-e11f-e7ad74a22924"><span style="color: #444746; background-color: #ffffff;" data-darkreader-inline-color="" data-darkreader-inline-bgcolor="">Avatar decorations let you customize and style your avatar on Discord! You can buy and collect all kinds of decorations from the <a href="https://support.discord.com/hc/articles/17162747936663" target="_blank" rel="noopener noreferrer">Shop</a>. Purchased decorations are yours to keep so you can add all kinds of pizazz to your avatar and profile aesthetic whenever you want.</span></p>
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-f14e8659-7fff-d070-3d9f-1df3a3900235"><span id="docs-internal-guid-2006e496-7fff-4a2a-2cc9-59634efb9e22"><img src="https://support.discord.com/hc/article_attachments/21750908776855" width="472" height="429"></span></span></p>
-<h1 id="docs-internal-guid-3376417a-7fff-e38e-b0eb-3fc85a230fdb">How can I collect an avatar decoration? </h1>
+<h1 id="docs-internal-guid-3376417a-7fff-e38e-b0eb-3fc85a230fdb">How can I collect an avatar decoration?</h1>
+<h3 id="h_01HVHE4SKQ6PVZ4J2ZGQGZWVV2">At this time, you can only access the Shop on the desktop app, the browser, or on the iOS mobile app. </h3>
 <p>Avatar decorations can be found and purchased in the Shop. </p>
 <p id="docs-internal-guid-0079e285-7fff-f5d0-c3ec-04a1a55c7011"><strong>Option 1</strong></p>
 <p>1. Navigate to your <strong>Direct Messages list </strong>by selecting the Discord app icon in the upper left corner. </p>
@@ -24,7 +25,6 @@
 <p>1. Navigate into your <strong>User Settings &gt; Profiles</strong>. </p>
 <p>2. While there, you will see the banner to the Shop where you can select <strong>Check it out</strong>. You can also select <strong>Change Decoration</strong> and select the <strong>Shop</strong> icon.</p>
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-a784a5bb-7fff-cfc5-e242-19a24d09484b"><img src="https://support.discord.com/hc/article_attachments/21750877286167" width="402" height="261">   </span><img src="https://support.discord.com/hc/article_attachments/21750908790935" width="285" height="261"></p>
-<h3 id="h_01HB742VRKH0K9N1X2A85E2RY5">The Shop is only available on the desktop app or your browser.</h3>
 <p id="docs-internal-guid-3e542f33-7fff-1af5-0df0-3783196af3dd">3. Once directed to the Shop, you can preview and buy avatar decorations to add to your collection and wear whenever you’d like. <span id="docs-internal-guid-e8990bb0-7fff-a6f2-9d87-19267439ca31"></span></p>
 <h3 id="h_01HB7451TQD6GE1AR8YC9S6HWH" class="wysiwyg-text-align-left">Purchased avatar decorations are yours to keep and can be used at any time! Selections available for purchase in the Shop will change periodically.</h3>
 <h1 id="docs-internal-guid-e73a0c54-7fff-dbc0-6e07-40581ee1ea3f">How to apply an avatar decoration to my profile</h1>

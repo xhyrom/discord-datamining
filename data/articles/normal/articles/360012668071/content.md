@@ -2,29 +2,29 @@
 <p>Please note that all refund requests submitted under this Policy are reviewed by Discord on a case-by-case basis and eligibility is determined at our sole discretion.</p>
 <ul>
     <li style="font-weight: 400;" aria-level="1">
-        <a href="#h_01GK7AZGFW3ABPMGNA4NKNRTKS">Refunds by Payment Type</a>
+        <a href="https://support.discord.com/hc/en-us/articles/360012668071#h_01GK7AZGFW3ABPMGNA4NKNRTKS">Refunds by Payment Type</a>
         <ul>
-            <li style="font-weight: 400;" aria-level="1"><a href="#h_01GXCJQ8YN1D2FK8JC8Q97J6VS">iOS App Store Purchases</a></li>
-            <li style="font-weight: 400;" aria-level="1"><a href="#h_01GXCJQJ0K5KHEW9ZRF417PJTB">Paysafecards</a></li>
+            <li style="font-weight: 400;" aria-level="1"><a href="https://support.discord.com/hc/en-us/articles/360012668071#h_01GXCJQ8YN1D2FK8JC8Q97J6VS">iOS App Store Purchases</a></li>
+            <li style="font-weight: 400;" aria-level="1"><a href="https://support.discord.com/hc/en-us/articles/360012668071#h_01GXCJQJ0K5KHEW9ZRF417PJTB">Paysafecards</a></li>
         </ul>
     </li>
     <li style="font-weight: 400;" aria-level="1">
-        <a href="#h_01GK7AZN1G2Z1KFESNVJXYB654">Nitro and Server Boosts </a>
+        <a href="https://support.discord.com/hc/en-us/articles/360012668071#h_01GK7AZN1G2Z1KFESNVJXYB654">Nitro and Server Boosts </a>
         <ul>
-            <li style="font-weight: 400;" aria-level="1"><a href="#h_01HFVZATFQPKY1TMZ5N7BWGMFN">Exceptions</a></li>
+            <li style="font-weight: 400;" aria-level="1"><a href="https://support.discord.com/hc/en-us/articles/360012668071#h_01HFVZATFQPKY1TMZ5N7BWGMFN">Exceptions</a></li>
         </ul>
     </li>
-    <li style="font-weight: 400;" aria-level="1"><a href="#h_01HFVZBQKY520AFFDWY3VPS5JT">Nitro Gifts </a></li>
-    <li style="font-weight: 400;" aria-level="1"><a href="#docs-internal-guid-839a2ff5-7fff-1184-b2a3-2917c400b5c9">DLC, Profile Cosmetics and In-App</a></li>
+    <li style="font-weight: 400;" aria-level="1"><a href="https://support.discord.com/hc/en-us/articles/360012668071#h_01HFVZBQKY520AFFDWY3VPS5JT">Nitro Gifts </a></li>
+    <li style="font-weight: 400;" aria-level="1"><a href="https://support.discord.com/hc/en-us/articles/360012668071#docs-internal-guid-839a2ff5-7fff-1184-b2a3-2917c400b5c9">DLC, Profile Cosmetics and In-App</a></li>
     <li style="font-weight: 400;" aria-level="1">
-        <a href="#h_01GK7B03KHCFEWTYRE0W0HCZR5">Purchases from Users and Developers</a>
+        <a href="https://support.discord.com/hc/en-us/articles/360012668071#h_01GK7B03KHCFEWTYRE0W0HCZR5">Purchases from Users and Developers</a>
         <ul>
-            <li style="font-weight: 400;" aria-level="1"><a href="#docs-internal-guid-50354cf2-7fff-3088-9290-bc81d22b38c0">Server Subscription Refunds</a></li>
-            <li style="font-weight: 400;" aria-level="1"><a href="#docs-internal-guid-50354cf2-7fff-3088-9290-bc81d22b38c0">Server Shop Purchase Refunds</a></li>
-            <li style="font-weight: 400;" aria-level="1"><a href="#h_01GXCJT1K30JVPCNX51X4DY8EF">Premium App Subscription Refunds</a></li>
+            <li style="font-weight: 400;" aria-level="1"><a href="https://support.discord.com/hc/en-us/articles/360012668071#docs-internal-guid-50354cf2-7fff-3088-9290-bc81d22b38c0">Server Subscription Refunds</a></li>
+            <li style="font-weight: 400;" aria-level="1"><a href="https://support.discord.com/hc/en-us/articles/360012668071#docs-internal-guid-50354cf2-7fff-3088-9290-bc81d22b38c0">Server Shop Purchase Refunds</a></li>
+            <li style="font-weight: 400;" aria-level="1"><a href="https://support.discord.com/hc/en-us/articles/360012668071#h_01GXCJT1K30JVPCNX51X4DY8EF">Premium App Subscription Refunds</a></li>
         </ul>
     </li>
-    <li style="font-weight: 400;" aria-level="1"><a href="#h_01GK7B09R0VYPAT6VJWV2JR9RR">How to Submit a Refund Request</a></li>
+    <li style="font-weight: 400;" aria-level="1"><a href="https://support.discord.com/hc/en-us/articles/360012668071#h_01GK7B09R0VYPAT6VJWV2JR9RR">How to Submit a Refund Request</a></li>
 </ul>
 <h3 id="h_01HBCKWXX43JBNQ52WE2MREH8W">Important Note: Refunds for purchases described in this Refund Policy are one-time refunds only, unless we explicitly state otherwise in this Policy. This means that you are only eligible for one refund under each purchase category. <br><span id="docs-internal-guid-7bd9f8dd-7fff-4339-16b6-0a353c4861c0" style="color: #434343;" data-darkreader-inline-color="">For example, if you have previously received a refund for any Nitro subscription, you will not be eligible for any other Nitro subscription refund in the future. </span>
 </h3>
@@ -47,6 +47,7 @@
 <p>However, for <strong>unclaimed Nitro gifts </strong>purchased on Discord on <strong>desktop/web/Android</strong>, you will have<strong> 5 days</strong> from the initial purchase date to request a refund with our<a href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000118612"> <span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Support Team</span></a>. </p>
 <h1 id="docs-internal-guid-839a2ff5-7fff-1184-b2a3-2917c400b5c9"><strong>DLC, <span id="docs-internal-guid-4ab750f2-7fff-8663-d87a-05171c6853fa">Profile Cosmetics</span> and In-App Purchases</strong></h1>
 <p>We are unable to provide refunds or exchanges for purchases of downloadable content (DLC), profile cosmetics like avatar decorations and profile effects, and in-app purchases (IAP) within any Activity, including any gift purchases of these items.</p>
+<p id="docs-internal-guid-fc4b1132-7fff-cfeb-94a4-bb2caf917fc3">For profile cosmetic purchases made in the Shop on an iOS device/through the Apple App Store, please contact Apple for any purchasing issues <a href="https://support.apple.com/118223" target="_blank" rel="noopener noreferrer">here</a>. </p>
 <h1 id="h_01GK7B03KHCFEWTYRE0W0HCZR5"><strong>Purchases from Users and Developers</strong></h1>
 <p><span style="font-weight: 400;">With some Discord features, we allow you to purchase server subscriptions, premium apps, and other offerings from other users and developers on Discord. While these users and developers are responsible for these offerings, we may offer refunds in our sole discretion in the situations outlined below.     </span></p>
 <h2 id="h_01GXCJSPYGF70RVXXD32EQ4S4M"><span style="font-weight: 400;">Server Subscription Refunds</span></h2>

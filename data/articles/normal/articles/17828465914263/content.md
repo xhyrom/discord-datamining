@@ -25,7 +25,6 @@
 <p>1. Navigate to your <strong>User Settings &gt; Profiles</strong>. </p>
 <p class="wysiwyg-text-align-left">2. Once there, you will see the banner to the Shop where you can select <strong>Check it out</strong>. You can also select <strong>Change Effect </strong>and select the <strong>Shop </strong>icon. </p>
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-a0fd88e2-7fff-a499-a0dc-8ef18100a0da"><img src="https://support.discord.com/hc/article_attachments/21750978819991" width="459" height="298"></span>   <img src="https://support.discord.com/hc/article_attachments/21751010505879" width="228" height="296"></p>
-<h3 id="h_01HETN6WNE56A2QDCB2S7MDQ3J">At this time, you can only access the Shop on the desktop app or your browser. </h3>
 <p>3. Once directed to the Shop, you can preview and buy profile effects to add to your collection. </p>
 <h3 id="h_01HETN75EJ2C506TNDVJGH19JF">Purchased profile effects are yours to keep and can be used at any time! Selections available for purchase in the Shop will change periodically.</h3>
 <h1 id="h_01HBVVFMX6VDPBCGPY25WKK6TN">How Do I Apply A Profile Effect To My Profile? </h1>
