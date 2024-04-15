@@ -4986,6 +4986,7 @@
         566434: function(e) {
             "use strict";
             e.exports = {
+                acronym: "acronym_f76f98",
                 guildIconImage: "guildIconImage_d3cb49"
             }
         },
@@ -4996,7 +4997,8 @@
                 chipletContainerInner: "chipletContainerInner_bfcb1e",
                 noTooltip: "noTooltip_e2f660",
                 text: "text_c2b2cb",
-                tooltip: "tooltip_a9f8fc"
+                tooltip: "tooltip_a9f8fc",
+                tooltipContainer: "tooltipContainer_d9b1ea"
             }
         },
         801303: function(e) {
@@ -17024,6 +17026,12 @@
                 selected: "selected__52605",
                 showPulse: "showPulse__15358",
                 size: "size__69eb6"
+            }
+        },
+        722061: function(e) {
+            "use strict";
+            e.exports = {
+                clipPill: "clipPill__3140c"
             }
         },
         264558: function(e) {
