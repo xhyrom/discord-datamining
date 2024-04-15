@@ -39305,27 +39305,6 @@ html .progress__00e29 {
     margin-top: 8px
 }
 
-.questControls__357a2 {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 16px;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    max-width: 660px;
-    min-width: 280px
-}
-
-.questControlsTitle__45f0c {
-    margin-right: 4px
-}
-
-@media(max-width:960px) {
-    .questControls__357a2 {
-        display: none
-    }
-}
-
 .questsCard__20ba2 {
     width: 100%;
     max-width: 660px;
@@ -133471,4 +133450,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.02db73baca1e39231fbc.css.map*/
+/*# sourceMappingURL=99387.6d38609548acb7dc3865.css.map*/
