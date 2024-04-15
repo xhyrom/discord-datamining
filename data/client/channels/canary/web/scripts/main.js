@@ -36596,7 +36596,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let A = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284684", ", Version Hash: ").concat("1ad83950720726de332054c289cb423efbfbd975")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(A, ", Build Number: ").concat("284707", ", Version Hash: ").concat("8d5d12957b7fd590567bfa1d3df43f694ca07e26")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86429,8 +86429,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284684", "284684"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284684")), t = 0), t
+                let t = parseInt((e = "284707", "284707"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284707")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -109856,39 +109856,40 @@
             "use strict";
             n.r(t), n.d(t, {
                 uploadDebugLogFiles: function() {
-                    return E
+                    return I
                 }
             });
             var i = n("544891"),
                 r = n("552871"),
-                s = n("592125"),
-                a = n("569611"),
-                o = n("710845"),
-                l = n("705646"),
-                u = n("104639"),
-                d = n("691895"),
-                _ = n("981631");
-            let c = new o.default("DebugUploadManager");
-            async function E(e, t) {
-                await I(e), await (0, r.uploadRtcLogFiles)(14680064, t)
+                s = n("283080"),
+                a = n("592125"),
+                o = n("569611"),
+                l = n("710845"),
+                u = n("705646"),
+                d = n("104639"),
+                _ = n("691895"),
+                c = n("981631");
+            let E = new l.default("DebugUploadManager");
+            async function I(e, t) {
+                await T(e), await (0, r.uploadRtcLogFiles)(14680064, t)
             }
-            async function I(e) {
+            async function T(e) {
                 try {
-                    let t = a.stringify(),
+                    let t = o.stringify(),
                         n = "",
-                        r = await (0, l.getPushNotificationLogs)().then(e => (0, l.serializePushNotificationLogs)(e, !0)),
-                        o = t.length + n.length + r.length;
-                    if (o > 9437184) {
-                        let e = 1 - 9437184 / o;
+                        r = await (0, u.getPushNotificationLogs)().then(e => (0, u.serializePushNotificationLogs)(e, !0)),
+                        l = t.length + n.length + r.length;
+                    if (l > 9437184) {
+                        let e = 1 - 9437184 / l;
                         t = t.slice(t.length - Math.floor(t.length * e)), n = n.slice(n.length - Math.floor(n.length * e)), r = r.slice(r.length - Math.floor(r.length * e))
                     }
-                    let c = null,
-                        E = "\n    ".concat((0, d.default)(c), "\n\n    Metadata:\n    ").concat(JSON.stringify((0, u.default)(), void 0, 2), "\n\n    ChannelStore:\n    ").concat(JSON.stringify(s.default.getDebugInfo(), void 0, 2), "\n\n    Logs:\n    ").concat(t, "\n\n    System logs:\n    ").concat(n, "\n\n    Push Notifications:\n    ").concat(r, "\n    ");
-                    a.clear();
-                    let I = _.Endpoints.DEBUG_LOG(e, "discord_app_logs");
+                    let E = null,
+                        I = "\n    ".concat((0, _.default)(E), "\n\n    ").concat((0, s.serializeComponentRenderAverages)(), "\n\n    Metadata:\n    ").concat(JSON.stringify((0, d.default)(), void 0, 2), "\n\n    ChannelStore:\n    ").concat(JSON.stringify(a.default.getDebugInfo(), void 0, 2), "\n\n    Logs:\n    ").concat(t, "\n\n    System logs:\n    ").concat(n, "\n\n    Push Notifications:\n    ").concat(r, "\n    ");
+                    o.clear();
+                    let T = c.Endpoints.DEBUG_LOG(e, "discord_app_logs");
                     await i.HTTP.post({
-                        url: I,
-                        body: E,
+                        url: T,
+                        body: I,
                         retries: 3,
                         headers: {
                             "Content-Type": "text/plain"
@@ -109896,7 +109897,7 @@
                         oldFormErrors: !0
                     })
                 } catch (e) {
-                    c.error("uploadAppLogFiles: upload app log files error ".concat(e.message))
+                    E.error("uploadAppLogFiles: upload app log files error ".concat(e.message))
                 }
             }
         },
@@ -110004,8 +110005,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284684",
-                    versionHash: "1ad83950720726de332054c289cb423efbfbd975"
+                    buildNumber: "284707",
+                    versionHash: "8d5d12957b7fd590567bfa1d3df43f694ca07e26"
                 }
             }
             n.r(t), n.d(t, {
@@ -160017,8 +160018,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713217516181",
-                                    build_number: "284684"
+                                    built_at: "1713219018708",
+                                    build_number: "284707"
                                 }
                             },
                             retries: 1
@@ -176588,6 +176589,29 @@
                     id: null != a ? a : null,
                     preset: o
                 }
+            }
+        },
+        283080: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                serializeComponentRenderAverages: function() {
+                    return s
+                }
+            }), n("47120"), n("735250"), n("470079");
+            let i = {};
+
+            function r(e, t) {
+                let n = e.length > t ? t : e.length;
+                return e.substring(0, n).padEnd(t, " ")
+            }
+
+            function s() {
+                if (0 === Object.keys(i).length) return "";
+                let e = "|".concat(r("id", 20), "|").concat(r("Mounts", 8), "|").concat(r("Mount Average", 20), "|").concat(r("Updates", 8), "|").concat(r("Update Average", 20), "|").concat(r("Nested", 8), "|").concat(r("Nested Average", 20), "|\n");
+                return "Component Render Averages:\n" + e + Object.entries(i).map(e => {
+                    let [t, n] = e;
+                    return "|".concat(r(t, 20), "|").concat(r(n.mountAverage.count.toString(), 8), "|").concat(r(n.mountAverage.currentAverage.toString(), 20), "|").concat(r(n.updateAverage.count.toString(), 8), "|").concat(r(n.updateAverage.currentAverage.toString(), 20), "|").concat(r(n.nestedUpdateAverage.count.toString(), 8), "|").concat(r(n.nestedUpdateAverage.currentAverage.toString(), 20), "|\n")
+                })
             }
         },
         580189: function(e, t, n) {
@@ -235690,7 +235714,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "1ad83950720726de332054c289cb423efbfbd975"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8d5d12957b7fd590567bfa1d3df43f694ca07e26"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -261908,7 +261932,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284684"
+                                build_number: "284707"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -269087,7 +269111,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284684", "284684"), 10);
+                let s = parseInt((n = "284707", "284707"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -295909,4 +295933,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65573.9295725c805b875d5939.js.map
+//# sourceMappingURL=65573.b47dad8fa08c7f472809.js.map
