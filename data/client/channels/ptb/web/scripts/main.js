@@ -9756,23 +9756,6 @@
                     url: _.Endpoints.CONNECTION_REFRESH(e, t),
                     oldFormErrors: !0
                 }),
-                submitPinCode: (e, t) => s.HTTP.get({
-                    url: _.Endpoints.CONNECTIONS_CALLBACK_CONTINUATION(t, e),
-                    oldFormErrors: !0
-                }).then(e => {
-                    let {
-                        body: n
-                    } = e;
-                    return u.default.track(_.AnalyticEvents.ACCOUNT_LINK_STEP, {
-                        previous_step: "PIN code entry",
-                        current_step: "PIN success",
-                        session_id: n.state,
-                        platform_type: t
-                    }), E(t, {
-                        ...n,
-                        from_continuation: !0
-                    }, !0)
-                }),
                 setVisibility(e, t, n) {
                     return this.update(e, t, {
                         visibility: 1 === n
@@ -36651,7 +36634,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("284997", ", Version Hash: ").concat("a936cdb279974ffda2cf3737f132147536166c2c")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285005", ", Version Hash: ").concat("796627f83d37c7ab659207928fb3f998a7273b71")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86503,8 +86486,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284997", "284997"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284997")), t = 0), t
+                let t = parseInt((e = "285005", "285005"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285005")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110380,8 +110363,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284997",
-                    versionHash: "a936cdb279974ffda2cf3737f132147536166c2c"
+                    buildNumber: "285005",
+                    versionHash: "796627f83d37c7ab659207928fb3f998a7273b71"
                 }
             }
             n.r(t), n.d(t, {
@@ -134996,7 +134979,7 @@
                 let C = await (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("63438"), n.e("61247"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("22646"), n.e("20533"), n.e("35027")]).then(n.bind(n, "343649"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("63438"), n.e("61247"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("22646"), n.e("54999"), n.e("57743")]).then(n.bind(n, "343649"));
                     return n => {
                         let {
                             transitionState: r,
@@ -146636,7 +146619,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("56630"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("3084"), n.e("74456"), n.e("58227"), n.e("43502"), n.e("42601"), n.e("65840"), n.e("43643"), n.e("64796"), n.e("33361"), n.e("65892"), n.e("62856"), n.e("67256")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("43643"), n.e("90508"), n.e("58227"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("40866"), n.e("64796"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("67256")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -153816,7 +153799,7 @@
             }), n("411104"), n("470079");
             var i, r, s = n("652874"),
                 a = n("433517");
-            n("353926"), n("695855");
+            n("353926");
             var o = n("777639");
             n("277530");
             var l = n("721877");
@@ -153857,62 +153840,6 @@
                     })
                 }
             }))
-        },
-        695855: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var i = n("818083");
-            n("781157"), (0, i.createExperiment)({
-                kind: "user",
-                id: "2023-09_mobile_redesign_override_toggles",
-                label: "Tabs V2 - redesign opt-out/in for all",
-                defaultConfig: {
-                    hide: !1,
-                    ignore: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "control",
-                    config: {
-                        hide: !1,
-                        ignore: !1
-                    }
-                }, {
-                    id: 2,
-                    label: "hide toggles",
-                    config: {
-                        hide: !0,
-                        ignore: !1
-                    }
-                }, {
-                    id: 3,
-                    label: "hide & ignore toggles",
-                    config: {
-                        hide: !0,
-                        ignore: !0
-                    }
-                }]
-            }), (0, i.createExperiment)({
-                kind: "user",
-                id: "2023-09_mobile_redesign_override_toggles_t2",
-                label: "Tabs V2 - redesign opt-out for T2",
-                defaultConfig: {
-                    hide: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "show",
-                    config: {
-                        hide: !1
-                    }
-                }, {
-                    id: 2,
-                    label: "hide",
-                    config: {
-                        hide: !0
-                    }
-                }]
-            })
         },
         215355: function(e, t, n) {
             "use strict";
@@ -163494,8 +163421,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713293023269",
-                                    build_number: "284997"
+                                    built_at: "1713293542088",
+                                    build_number: "285005"
                                 }
                             },
                             retries: 1
@@ -169090,7 +169017,7 @@
                 (0, s.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("6416"), n.e("63438"), n.e("61247"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("57878"), n.e("32776"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("34853")]).then(n.bind(n, "7305"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("6416"), n.e("63438"), n.e("61247"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("32776"), n.e("57878"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("34853")]).then(n.bind(n, "7305"));
                     return n => {
                         let {
                             onClose: r,
@@ -240062,7 +239989,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a936cdb279974ffda2cf3737f132147536166c2c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "796627f83d37c7ab659207928fb3f998a7273b71"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268478,7 +268405,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284997"
+                                build_number: "285005"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -275657,7 +275584,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284997", "284997"), 10);
+                let s = parseInt((n = "285005", "285005"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -302669,4 +302596,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.6483e00170ca76f3e635.js.map
+//# sourceMappingURL=73050.5d311a039f66438c4c69.js.map

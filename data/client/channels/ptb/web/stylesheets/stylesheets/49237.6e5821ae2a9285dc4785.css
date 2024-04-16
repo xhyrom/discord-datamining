@@ -27220,7 +27220,7 @@ span.button_ae40a4.disabled__1dc58 {
 .header_c75fa4 {
     box-sizing: border-box;
     color: #fff;
-    font-size: 14px;
+    font-size: .875rem;
     font-weight: 400;
     height: 72px;
     padding: 8px 0;
@@ -27267,7 +27267,7 @@ span.button_ae40a4.disabled__1dc58 {
     margin-top: 1em;
     padding: 4px;
     color: #fff;
-    font-size: 16px
+    font-size: 1rem
 }
 
 @supports(color:rgba(0, 0, 0, 0))and (top:var(--f)) {
@@ -27367,7 +27367,7 @@ span.button_ae40a4.disabled__1dc58 {
     border: 2px solid hsl(var(0, calc(0%*var(--saturation-factor, 1)), 100%-hsl)/.8);
     padding: 5px 17px 7px;
     border-radius: 20px;
-    line-height: 24px;
+    line-height: 1.5rem;
     margin-right: 18px
 }
 
@@ -28201,4 +28201,4 @@ span.button_ae40a4.disabled__1dc58 {
     }
 }
 
-/*# sourceMappingURL=49237.9959c154c56c830715d5.css.map*/
+/*# sourceMappingURL=49237.6e5821ae2a9285dc4785.css.map*/
