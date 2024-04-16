@@ -36634,7 +36634,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285005", ", Version Hash: ").concat("796627f83d37c7ab659207928fb3f998a7273b71")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285016", ", Version Hash: ").concat("e227990f49be465d7cd39d6538d10802498ec93d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86486,8 +86486,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285005", "285005"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285005")), t = 0), t
+                let t = parseInt((e = "285016", "285016"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285016")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110363,8 +110363,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285005",
-                    versionHash: "796627f83d37c7ab659207928fb3f998a7273b71"
+                    buildNumber: "285016",
+                    versionHash: "e227990f49be465d7cd39d6538d10802498ec93d"
                 }
             }
             n.r(t), n.d(t, {
@@ -111700,12 +111700,18 @@
         },
         401416: function(e, t, n) {
             "use strict";
-            n.r(t), n("47120");
-            var i = n("147913"),
-                r = n("25733");
-            class s extends i.default {
+            n.r(t), n.d(t, {
+                acknowledgeDmSettingsUpsell: function() {
+                    return l
+                }
+            }), n("47120");
+            var i = n("544891"),
+                r = n("147913"),
+                s = n("25733"),
+                a = n("981631");
+            class o extends r.default {
                 handleDmSettingsUpsellShow(e) {
-                    r.default.openDmSettingsUpsellModal(e.guildId)
+                    s.default.openDmSettingsUpsellModal(e.guildId)
                 }
                 constructor(...e) {
                     var t, n, i;
@@ -111719,7 +111725,13 @@
                     }) : t[n] = i
                 }
             }
-            t.default = new s
+
+            function l(e) {
+                return i.HTTP.post({
+                    url: a.Endpoints.DM_SETTINGS_UPSELL_ACK(e)
+                })
+            }
+            t.default = new o
         },
         149203: function(e, t, n) {
             "use strict";
@@ -138691,7 +138703,7 @@
                     (0, r.openModalLazy)(async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("98880")]).then(n.bind(n, "645264"));
+                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("70935")]).then(n.bind(n, "645264"));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             guildId: e,
@@ -163421,8 +163433,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713293542088",
-                                    build_number: "285005"
+                                    built_at: "1713294801764",
+                                    build_number: "285016"
                                 }
                             },
                             retries: 1
@@ -239989,7 +240001,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "796627f83d37c7ab659207928fb3f998a7273b71"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e227990f49be465d7cd39d6538d10802498ec93d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268405,7 +268417,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285005"
+                                build_number: "285016"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -275584,7 +275596,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285005", "285005"), 10);
+                let s = parseInt((n = "285016", "285016"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -302596,4 +302608,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.5d311a039f66438c4c69.js.map
+//# sourceMappingURL=73050.ab6e9ba9fe16c80e0e89.js.map
