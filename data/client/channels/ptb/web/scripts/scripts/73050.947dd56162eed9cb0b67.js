@@ -36636,7 +36636,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285182", ", Version Hash: ").concat("3f80edd86bc85a691e0c44aad35907cd61016845")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285206", ", Version Hash: ").concat("e8088620f902b422accae9f37b4bf4b9e26258f3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86491,8 +86491,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285182", "285182"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285182")), t = 0), t
+                let t = parseInt((e = "285206", "285206"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285206")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110391,8 +110391,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285182",
-                    versionHash: "3f80edd86bc85a691e0c44aad35907cd61016845"
+                    buildNumber: "285206",
+                    versionHash: "e8088620f902b422accae9f37b4bf4b9e26258f3"
                 }
             }
             n.r(t), n.d(t, {
@@ -163510,8 +163510,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713307000925",
-                                    build_number: "285182"
+                                    built_at: "1713309037355",
+                                    build_number: "285206"
                                 }
                             },
                             retries: 1
@@ -214565,144 +214565,146 @@
             "use strict";
             n.r(t), n.d(t, {
                 ALL_CHANNEL_TYPES: function() {
-                    return A
-                },
-                CHANNEL_ELIGIBLE_FOR_UNREAD_SETTING: function() {
-                    return J
-                },
-                CREATEABLE_NON_VOCAL_CHANNEL_NAME_TYPES: function() {
-                    return X
-                },
-                ChannelRecordBase: function() {
-                    return ec
-                },
-                DMChannelRecord: function() {
-                    return eh
-                },
-                EDITABLE_CHANNEL_TYPES: function() {
-                    return j
-                },
-                EDITABLE_VOICE_SETTINGS_TYPES: function() {
-                    return q
-                },
-                GUILD_CHANNEL_TYPES: function() {
-                    return O
-                },
-                GUILD_FAVORITES_CHANNEL_TYPES: function() {
-                    return $
-                },
-                GUILD_NON_CATEGORY_CHANNEL_TYPES: function() {
-                    return Y
-                },
-                GUILD_VOCAL_CHANNEL_TYPES: function() {
-                    return C
-                },
-                GUILD_WEBHOOK_CHANNEL_TYPES: function() {
-                    return p
-                },
-                GuildTextualChannelRecord: function() {
-                    return eT
-                },
-                NSFW_CHANNEL_TYPES: function() {
-                    return z
-                },
-                PrivateChannelRecord: function() {
-                    return eS
-                },
-                SILENT_JOIN_LEAVE_CHANNEL_TYPES: function() {
-                    return L
-                },
-                SLOWMODE_CHANNEL_TYPES: function() {
-                    return Q
-                },
-                TEXT_CHANNEL_TYPES: function() {
-                    return P
-                },
-                THREADED_CHANNEL_TYPES: function() {
-                    return V
-                },
-                THREAD_CHANNEL_TYPES: function() {
-                    return k
-                },
-                TOGGLE_ANNOUNCEMENT_CHANNEL_TYPES: function() {
-                    return W
-                },
-                TOPIC_CHANNEL_TYPES: function() {
-                    return K
-                },
-                UnknownChannelRecord: function() {
-                    return eE
-                },
-                VOICE_THREAD_PARENT_CHANNEL_TYPES: function() {
-                    return Z
-                },
-                castChannelRecord: function() {
-                    return eR
-                },
-                createChannelRecord: function() {
-                    return eC
-                },
-                createChannelRecordFromInvite: function() {
-                    return ep
-                },
-                createChannelRecordFromServer: function() {
-                    return eN
-                },
-                getAccessPermissions: function() {
-                    return eo
-                },
-                getBasicAccessPermissions: function() {
-                    return el
-                },
-                isGuildChannelType: function() {
-                    return R
-                },
-                isGuildReadableType: function() {
-                    return B
-                },
-                isGuildSelectableChannelType: function() {
-                    return h
-                },
-                isGuildTextChannelType: function() {
                     return N
                 },
-                isGuildVocalChannelType: function() {
-                    return g
+                CHANNEL_ELIGIBLE_FOR_UNREAD_SETTING: function() {
+                    return ee
                 },
-                isMultiUserDM: function() {
-                    return y
+                CREATEABLE_NON_VOCAL_CHANNEL_NAME_TYPES: function() {
+                    return q
                 },
-                isPrivate: function() {
+                ChannelRecordBase: function() {
+                    return eI
+                },
+                DMChannelRecord: function() {
+                    return eO
+                },
+                EDITABLE_CHANNEL_TYPES: function() {
+                    return K
+                },
+                EDITABLE_VOICE_SETTINGS_TYPES: function() {
+                    return J
+                },
+                GUILD_CHANNEL_TYPES: function() {
+                    return C
+                },
+                GUILD_FAVORITES_CHANNEL_TYPES: function() {
+                    return et
+                },
+                GUILD_NON_CATEGORY_CHANNEL_TYPES: function() {
+                    return W
+                },
+                GUILD_VOCAL_CHANNEL_TYPES: function() {
+                    return L
+                },
+                GUILD_WEBHOOK_CHANNEL_TYPES: function() {
+                    return R
+                },
+                GuildTextualChannelRecord: function() {
+                    return eS
+                },
+                NSFW_CHANNEL_TYPES: function() {
+                    return Q
+                },
+                PrivateChannelRecord: function() {
+                    return ep
+                },
+                SILENT_JOIN_LEAVE_CHANNEL_TYPES: function() {
                     return v
                 },
-                isReadableType: function() {
-                    return H
+                SLOWMODE_CHANNEL_TYPES: function() {
+                    return Z
                 },
-                isTextChannel: function() {
-                    return U
+                TEXT_CHANNEL_TYPES: function() {
+                    return b
                 },
-                isThread: function() {
+                THREADED_CHANNEL_TYPES: function() {
+                    return x
+                },
+                THREAD_CHANNEL_TYPES: function() {
                     return F
                 },
-                isVoiceChannel: function() {
+                TOGGLE_ANNOUNCEMENT_CHANNEL_TYPES: function() {
+                    return z
+                },
+                TOPIC_CHANNEL_TYPES: function() {
+                    return X
+                },
+                UnknownChannelRecord: function() {
+                    return eT
+                },
+                VOICE_THREAD_PARENT_CHANNEL_TYPES: function() {
+                    return $
+                },
+                castChannelRecord: function() {
+                    return ev
+                },
+                createChannelRecord: function() {
+                    return eM
+                },
+                createChannelRecordFromInvite: function() {
+                    return eL
+                },
+                createChannelRecordFromServer: function() {
+                    return eg
+                },
+                getAccessPermissions: function() {
+                    return eu
+                },
+                getBasicAccessPermissions: function() {
+                    return ed
+                },
+                isGuildChannelType: function() {
+                    return g
+                },
+                isGuildReadableType: function() {
+                    return V
+                },
+                isGuildSelectableChannelType: function() {
+                    return m
+                },
+                isGuildTextChannelType: function() {
+                    return O
+                },
+                isGuildVocalChannelType: function() {
+                    return D
+                },
+                isMultiUserDM: function() {
+                    return U
+                },
+                isPrivate: function() {
+                    return y
+                },
+                isReadableType: function() {
+                    return j
+                },
+                isTextChannel: function() {
                     return G
+                },
+                isThread: function() {
+                    return H
+                },
+                isVoiceChannel: function() {
+                    return B
                 }
             }), n("47120"), n("724458"), n("411104"), n("789020");
             var i = n("392711"),
                 r = n.n(i),
-                s = n("313361"),
-                a = n("683860"),
-                o = n("149765"),
-                l = n("283693"),
-                u = n("146085"),
-                d = n("427679"),
-                _ = n("630388"),
-                c = n("709054"),
-                E = n("981631"),
-                I = n("176505"),
-                T = n("423219");
+                s = n("31775"),
+                a = n.n(s),
+                o = n("313361"),
+                l = n("683860"),
+                u = n("149765"),
+                d = n("283693"),
+                _ = n("146085"),
+                c = n("427679"),
+                E = n("630388"),
+                I = n("709054"),
+                T = n("981631"),
+                f = n("176505"),
+                S = n("423219");
 
-            function f(e, t, n) {
+            function h(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -214710,95 +214712,95 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let S = new Set([E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_ANNOUNCEMENT, E.ChannelTypes.GUILD_STORE, E.ChannelTypes.ANNOUNCEMENT_THREAD, E.ChannelTypes.PUBLIC_THREAD, E.ChannelTypes.PRIVATE_THREAD, E.ChannelTypes.GUILD_DIRECTORY, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA, E.ChannelTypes.DM, E.ChannelTypes.GROUP_DM]);
+            let A = new Set([T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_ANNOUNCEMENT, T.ChannelTypes.GUILD_STORE, T.ChannelTypes.ANNOUNCEMENT_THREAD, T.ChannelTypes.PUBLIC_THREAD, T.ChannelTypes.PRIVATE_THREAD, T.ChannelTypes.GUILD_DIRECTORY, T.ChannelTypes.GUILD_FORUM, T.ChannelTypes.GUILD_MEDIA, T.ChannelTypes.DM, T.ChannelTypes.GROUP_DM]);
 
-            function h(e) {
-                return S.has(e)
+            function m(e) {
+                return A.has(e)
             }
-            let A = new Set([E.ChannelTypes.DM, E.ChannelTypes.GROUP_DM, E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_VOICE, E.ChannelTypes.GUILD_STAGE_VOICE, E.ChannelTypes.GUILD_CATEGORY, E.ChannelTypes.GUILD_ANNOUNCEMENT, E.ChannelTypes.GUILD_STORE, E.ChannelTypes.ANNOUNCEMENT_THREAD, E.ChannelTypes.PUBLIC_THREAD, E.ChannelTypes.PRIVATE_THREAD, E.ChannelTypes.GUILD_DIRECTORY, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA]),
-                m = new Set([E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_ANNOUNCEMENT, E.ChannelTypes.ANNOUNCEMENT_THREAD, E.ChannelTypes.PUBLIC_THREAD, E.ChannelTypes.PRIVATE_THREAD]);
+            let N = new Set([T.ChannelTypes.DM, T.ChannelTypes.GROUP_DM, T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_VOICE, T.ChannelTypes.GUILD_STAGE_VOICE, T.ChannelTypes.GUILD_CATEGORY, T.ChannelTypes.GUILD_ANNOUNCEMENT, T.ChannelTypes.GUILD_STORE, T.ChannelTypes.ANNOUNCEMENT_THREAD, T.ChannelTypes.PUBLIC_THREAD, T.ChannelTypes.PRIVATE_THREAD, T.ChannelTypes.GUILD_DIRECTORY, T.ChannelTypes.GUILD_FORUM, T.ChannelTypes.GUILD_MEDIA]),
+                p = new Set([T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_ANNOUNCEMENT, T.ChannelTypes.ANNOUNCEMENT_THREAD, T.ChannelTypes.PUBLIC_THREAD, T.ChannelTypes.PRIVATE_THREAD]);
 
-            function N(e) {
-                return m.has(e)
+            function O(e) {
+                return p.has(e)
             }
-            let p = new Set([E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_ANNOUNCEMENT, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA, E.ChannelTypes.GUILD_VOICE, E.ChannelTypes.GUILD_STAGE_VOICE]),
-                O = new Set([E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_VOICE, E.ChannelTypes.GUILD_STAGE_VOICE, E.ChannelTypes.GUILD_CATEGORY, E.ChannelTypes.GUILD_ANNOUNCEMENT, E.ChannelTypes.GUILD_STORE, E.ChannelTypes.ANNOUNCEMENT_THREAD, E.ChannelTypes.PUBLIC_THREAD, E.ChannelTypes.PRIVATE_THREAD, E.ChannelTypes.GUILD_DIRECTORY, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA]);
-
-            function R(e) {
-                return O.has(e)
-            }
-            E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_ANNOUNCEMENT, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA;
-            let C = new Set([E.ChannelTypes.GUILD_VOICE, E.ChannelTypes.GUILD_STAGE_VOICE]);
+            let R = new Set([T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_ANNOUNCEMENT, T.ChannelTypes.GUILD_FORUM, T.ChannelTypes.GUILD_MEDIA, T.ChannelTypes.GUILD_VOICE, T.ChannelTypes.GUILD_STAGE_VOICE]),
+                C = new Set([T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_VOICE, T.ChannelTypes.GUILD_STAGE_VOICE, T.ChannelTypes.GUILD_CATEGORY, T.ChannelTypes.GUILD_ANNOUNCEMENT, T.ChannelTypes.GUILD_STORE, T.ChannelTypes.ANNOUNCEMENT_THREAD, T.ChannelTypes.PUBLIC_THREAD, T.ChannelTypes.PRIVATE_THREAD, T.ChannelTypes.GUILD_DIRECTORY, T.ChannelTypes.GUILD_FORUM, T.ChannelTypes.GUILD_MEDIA]);
 
             function g(e) {
-                return "SELECTABLE" !== e && C.has(e)
+                return C.has(e)
             }
-            let L = new Set([E.ChannelTypes.GUILD_STAGE_VOICE]),
-                D = new Set([E.ChannelTypes.DM, E.ChannelTypes.GROUP_DM]);
+            T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_ANNOUNCEMENT, T.ChannelTypes.GUILD_FORUM, T.ChannelTypes.GUILD_MEDIA;
+            let L = new Set([T.ChannelTypes.GUILD_VOICE, T.ChannelTypes.GUILD_STAGE_VOICE]);
 
-            function v(e) {
-                return D.has(e)
+            function D(e) {
+                return "SELECTABLE" !== e && L.has(e)
             }
-            let M = new Set([E.ChannelTypes.GROUP_DM]);
+            let v = new Set([T.ChannelTypes.GUILD_STAGE_VOICE]),
+                M = new Set([T.ChannelTypes.DM, T.ChannelTypes.GROUP_DM]);
 
             function y(e) {
                 return M.has(e)
             }
-            let P = new Set([E.ChannelTypes.DM, E.ChannelTypes.GROUP_DM, E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_ANNOUNCEMENT, E.ChannelTypes.ANNOUNCEMENT_THREAD, E.ChannelTypes.PUBLIC_THREAD, E.ChannelTypes.PRIVATE_THREAD]);
+            let P = new Set([T.ChannelTypes.GROUP_DM]);
 
             function U(e) {
                 return P.has(e)
             }
-            let b = new Set([E.ChannelTypes.DM, E.ChannelTypes.GROUP_DM, E.ChannelTypes.GUILD_VOICE, E.ChannelTypes.GUILD_STAGE_VOICE, E.ChannelTypes.PUBLIC_THREAD, E.ChannelTypes.PRIVATE_THREAD]);
+            let b = new Set([T.ChannelTypes.DM, T.ChannelTypes.GROUP_DM, T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_ANNOUNCEMENT, T.ChannelTypes.ANNOUNCEMENT_THREAD, T.ChannelTypes.PUBLIC_THREAD, T.ChannelTypes.PRIVATE_THREAD]);
 
             function G(e) {
                 return b.has(e)
             }
-            let w = new Set([E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_ANNOUNCEMENT, E.ChannelTypes.ANNOUNCEMENT_THREAD, E.ChannelTypes.PUBLIC_THREAD, E.ChannelTypes.PRIVATE_THREAD, E.ChannelTypes.GUILD_DIRECTORY, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA, E.ChannelTypes.DM, E.ChannelTypes.GROUP_DM]);
+            let w = new Set([T.ChannelTypes.DM, T.ChannelTypes.GROUP_DM, T.ChannelTypes.GUILD_VOICE, T.ChannelTypes.GUILD_STAGE_VOICE, T.ChannelTypes.PUBLIC_THREAD, T.ChannelTypes.PRIVATE_THREAD]);
 
             function B(e) {
                 return w.has(e)
             }
-            let k = new Set([E.ChannelTypes.ANNOUNCEMENT_THREAD, E.ChannelTypes.PUBLIC_THREAD, E.ChannelTypes.PRIVATE_THREAD]),
-                V = new Set([E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_ANNOUNCEMENT, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA]);
+            let k = new Set([T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_ANNOUNCEMENT, T.ChannelTypes.ANNOUNCEMENT_THREAD, T.ChannelTypes.PUBLIC_THREAD, T.ChannelTypes.PRIVATE_THREAD, T.ChannelTypes.GUILD_DIRECTORY, T.ChannelTypes.GUILD_FORUM, T.ChannelTypes.GUILD_MEDIA, T.ChannelTypes.DM, T.ChannelTypes.GROUP_DM]);
 
-            function F(e) {
+            function V(e) {
                 return k.has(e)
             }
-            let x = new Set([E.ChannelTypes.DM, E.ChannelTypes.GROUP_DM, E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_ANNOUNCEMENT, E.ChannelTypes.ANNOUNCEMENT_THREAD, E.ChannelTypes.PUBLIC_THREAD, E.ChannelTypes.PRIVATE_THREAD, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA, E.ChannelTypes.GUILD_DIRECTORY, E.ChannelTypes.GUILD_VOICE, E.ChannelTypes.GUILD_STAGE_VOICE]);
+            let F = new Set([T.ChannelTypes.ANNOUNCEMENT_THREAD, T.ChannelTypes.PUBLIC_THREAD, T.ChannelTypes.PRIVATE_THREAD]),
+                x = new Set([T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_ANNOUNCEMENT, T.ChannelTypes.GUILD_FORUM, T.ChannelTypes.GUILD_MEDIA]);
 
             function H(e) {
-                return x.has(e)
+                return F.has(e)
             }
-            let Y = new Set([E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_ANNOUNCEMENT, E.ChannelTypes.GUILD_STORE, E.ChannelTypes.GUILD_VOICE, E.ChannelTypes.GUILD_STAGE_VOICE, E.ChannelTypes.ANNOUNCEMENT_THREAD, E.ChannelTypes.PUBLIC_THREAD, E.ChannelTypes.PRIVATE_THREAD, E.ChannelTypes.GUILD_DIRECTORY, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA]),
-                j = new Set([E.ChannelTypes.GUILD_ANNOUNCEMENT, E.ChannelTypes.GUILD_CATEGORY, E.ChannelTypes.GUILD_STORE, E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_VOICE, E.ChannelTypes.GUILD_STAGE_VOICE, E.ChannelTypes.GUILD_DIRECTORY, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA]),
-                W = new Set([E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_ANNOUNCEMENT]),
-                K = new Set([E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_ANNOUNCEMENT, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA]),
-                z = new Set([E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_ANNOUNCEMENT, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA, E.ChannelTypes.GUILD_VOICE, E.ChannelTypes.GUILD_STAGE_VOICE]),
-                X = new Set([E.ChannelTypes.GUILD_ANNOUNCEMENT, E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA, E.ChannelTypes.ANNOUNCEMENT_THREAD]),
-                Q = new Set([E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA, E.ChannelTypes.ANNOUNCEMENT_THREAD, E.ChannelTypes.PUBLIC_THREAD, E.ChannelTypes.PRIVATE_THREAD, E.ChannelTypes.GUILD_VOICE, E.ChannelTypes.GUILD_STAGE_VOICE]),
-                q = new Set([E.ChannelTypes.PUBLIC_THREAD, E.ChannelTypes.PRIVATE_THREAD, E.ChannelTypes.GUILD_VOICE, E.ChannelTypes.GUILD_STAGE_VOICE]),
-                Z = new Set([E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_MEDIA]),
-                J = new Set([E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_CATEGORY, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_ANNOUNCEMENT]),
-                $ = new Set([E.ChannelTypes.GUILD_TEXT, E.ChannelTypes.GUILD_ANNOUNCEMENT, E.ChannelTypes.GUILD_FORUM, E.ChannelTypes.GUILD_VOICE]);
+            let Y = new Set([T.ChannelTypes.DM, T.ChannelTypes.GROUP_DM, T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_ANNOUNCEMENT, T.ChannelTypes.ANNOUNCEMENT_THREAD, T.ChannelTypes.PUBLIC_THREAD, T.ChannelTypes.PRIVATE_THREAD, T.ChannelTypes.GUILD_FORUM, T.ChannelTypes.GUILD_MEDIA, T.ChannelTypes.GUILD_DIRECTORY, T.ChannelTypes.GUILD_VOICE, T.ChannelTypes.GUILD_STAGE_VOICE]);
 
-            function ee(e) {
+            function j(e) {
+                return Y.has(e)
+            }
+            let W = new Set([T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_ANNOUNCEMENT, T.ChannelTypes.GUILD_STORE, T.ChannelTypes.GUILD_VOICE, T.ChannelTypes.GUILD_STAGE_VOICE, T.ChannelTypes.ANNOUNCEMENT_THREAD, T.ChannelTypes.PUBLIC_THREAD, T.ChannelTypes.PRIVATE_THREAD, T.ChannelTypes.GUILD_DIRECTORY, T.ChannelTypes.GUILD_FORUM, T.ChannelTypes.GUILD_MEDIA]),
+                K = new Set([T.ChannelTypes.GUILD_ANNOUNCEMENT, T.ChannelTypes.GUILD_CATEGORY, T.ChannelTypes.GUILD_STORE, T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_VOICE, T.ChannelTypes.GUILD_STAGE_VOICE, T.ChannelTypes.GUILD_DIRECTORY, T.ChannelTypes.GUILD_FORUM, T.ChannelTypes.GUILD_MEDIA]),
+                z = new Set([T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_ANNOUNCEMENT]),
+                X = new Set([T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_ANNOUNCEMENT, T.ChannelTypes.GUILD_FORUM, T.ChannelTypes.GUILD_MEDIA]),
+                Q = new Set([T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_ANNOUNCEMENT, T.ChannelTypes.GUILD_FORUM, T.ChannelTypes.GUILD_MEDIA, T.ChannelTypes.GUILD_VOICE, T.ChannelTypes.GUILD_STAGE_VOICE]),
+                q = new Set([T.ChannelTypes.GUILD_ANNOUNCEMENT, T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_FORUM, T.ChannelTypes.GUILD_MEDIA, T.ChannelTypes.ANNOUNCEMENT_THREAD]),
+                Z = new Set([T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_FORUM, T.ChannelTypes.GUILD_MEDIA, T.ChannelTypes.ANNOUNCEMENT_THREAD, T.ChannelTypes.PUBLIC_THREAD, T.ChannelTypes.PRIVATE_THREAD, T.ChannelTypes.GUILD_VOICE, T.ChannelTypes.GUILD_STAGE_VOICE]),
+                J = new Set([T.ChannelTypes.PUBLIC_THREAD, T.ChannelTypes.PRIVATE_THREAD, T.ChannelTypes.GUILD_VOICE, T.ChannelTypes.GUILD_STAGE_VOICE]),
+                $ = new Set([T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_FORUM, T.ChannelTypes.GUILD_MEDIA]),
+                ee = new Set([T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_CATEGORY, T.ChannelTypes.GUILD_FORUM, T.ChannelTypes.GUILD_ANNOUNCEMENT]),
+                et = new Set([T.ChannelTypes.GUILD_TEXT, T.ChannelTypes.GUILD_ANNOUNCEMENT, T.ChannelTypes.GUILD_FORUM, T.ChannelTypes.GUILD_VOICE]);
+
+            function en(e) {
                 let t = {};
                 return null == e || e.forEach(e => {
                     t[e.id] = {
                         id: e.id,
                         type: e.type,
-                        allow: o.deserialize(e.allow),
-                        deny: o.deserialize(e.deny)
+                        allow: u.deserialize(e.allow),
+                        deny: u.deserialize(e.deny)
                     }
                 }), t
             }
 
-            function et(e) {
+            function ei(e) {
                 return null == e ? {} : r().reduce(e, (e, t) => (e[t.id] = t.nick, e), {})
             }
 
-            function en(e) {
+            function er(e) {
                 return null == e ? [] : e.map(e => ({
                     id: e.id,
                     name: e.name,
@@ -214808,21 +214810,21 @@
                 }))
             }
 
-            function ei(e) {
+            function es(e) {
                 return null != e ? {
                     id: e.id,
                     name: e.name
                 } : void 0
             }
 
-            function er(e) {
+            function ea(e) {
                 if (null == e) return null;
                 switch (e.type) {
-                    case T.VoiceCallBackgroundTypes.EMPTY:
+                    case S.VoiceCallBackgroundTypes.EMPTY:
                         return {
                             type: e.type
                         };
-                    case T.VoiceCallBackgroundTypes.GRADIENT:
+                    case S.VoiceCallBackgroundTypes.GRADIENT:
                         return {
                             type: e.type, resourceId: e.resource_id
                         };
@@ -214830,31 +214832,31 @@
                         throw Error("unknown voice background display type")
                 }
             }
-            let es = o.combine(E.Permissions.CONNECT, E.Permissions.VIEW_CHANNEL),
-                ea = E.BasicPermissions.CONNECT | E.BasicPermissions.VIEW_CHANNEL;
+            let eo = u.combine(T.Permissions.CONNECT, T.Permissions.VIEW_CHANNEL),
+                el = T.BasicPermissions.CONNECT | T.BasicPermissions.VIEW_CHANNEL;
 
-            function eo(e) {
-                return g(e) ? es : E.Permissions.VIEW_CHANNEL
-            }
-
-            function el(e) {
-                return g(e) ? ea : E.BasicPermissions.VIEW_CHANNEL
-            }
-            class eu {
-                constructor(e) {
-                    var t, n, i;
-                    f(this, "id", void 0), f(this, "type", void 0), f(this, "name", void 0), f(this, "guild_id", void 0), f(this, "topic_", void 0), f(this, "position_", void 0), f(this, "permissionOverwrites_", void 0), f(this, "bitrate_", void 0), f(this, "rtcRegion", void 0), f(this, "videoQualityMode", void 0), f(this, "userLimit_", void 0), f(this, "recipients", void 0), f(this, "rawRecipients", void 0), f(this, "ownerId", void 0), f(this, "icon", void 0), f(this, "application_id", void 0), f(this, "nicks", void 0), f(this, "nsfw_", void 0), f(this, "parent_id", void 0), f(this, "memberListId", void 0), f(this, "rateLimitPerUser_", void 0), f(this, "defaultThreadRateLimitPerUser", void 0), f(this, "defaultAutoArchiveDuration", void 0), f(this, "flags_", void 0), f(this, "originChannelId", void 0), f(this, "lastMessageId", void 0), f(this, "lastPinTimestamp", void 0), f(this, "availableTags", void 0), f(this, "appliedTags", void 0), f(this, "messageCount", void 0), f(this, "memberCount", void 0), f(this, "threadMetadata", void 0), f(this, "memberIdsPreview", void 0), f(this, "member", void 0), f(this, "parentChannelThreadType", void 0), f(this, "template", void 0), f(this, "defaultReactionEmoji", void 0), f(this, "isMessageRequest", void 0), f(this, "isMessageRequestTimestamp", void 0), f(this, "isSpam", void 0), f(this, "totalMessageSent", void 0), f(this, "defaultSortOrder", void 0), f(this, "version", void 0), f(this, "defaultForumLayout", void 0), f(this, "iconEmoji", void 0), f(this, "themeColor", void 0), f(this, "safetyWarnings", void 0), f(this, "voiceBackgroundDisplay", void 0), this.id = e.id, this.type = null !== (t = e.type) && void 0 !== t ? t : E.ChannelTypes.GUILD_TEXT, this.name = null !== (n = e.name) && void 0 !== n ? n : "", this.guild_id = null !== (i = e.guild_id) && void 0 !== i ? i : null
-                }
+            function eu(e) {
+                return D(e) ? eo : T.Permissions.VIEW_CHANNEL
             }
 
             function ed(e) {
+                return D(e) ? el : T.BasicPermissions.VIEW_CHANNEL
+            }
+            class e_ {
+                constructor(e) {
+                    var t, n, i;
+                    h(this, "id", void 0), h(this, "type", void 0), h(this, "name", void 0), h(this, "guild_id", void 0), h(this, "topic_", void 0), h(this, "position_", void 0), h(this, "permissionOverwrites_", void 0), h(this, "bitrate_", void 0), h(this, "rtcRegion", void 0), h(this, "videoQualityMode", void 0), h(this, "userLimit_", void 0), h(this, "recipients", void 0), h(this, "rawRecipients", void 0), h(this, "ownerId", void 0), h(this, "icon", void 0), h(this, "application_id", void 0), h(this, "nicks", void 0), h(this, "nsfw_", void 0), h(this, "parent_id", void 0), h(this, "memberListId", void 0), h(this, "rateLimitPerUser_", void 0), h(this, "defaultThreadRateLimitPerUser", void 0), h(this, "defaultAutoArchiveDuration", void 0), h(this, "flags_", void 0), h(this, "originChannelId", void 0), h(this, "lastMessageId", void 0), h(this, "lastPinTimestamp", void 0), h(this, "availableTags", void 0), h(this, "appliedTags", void 0), h(this, "messageCount", void 0), h(this, "memberCount", void 0), h(this, "threadMetadata", void 0), h(this, "memberIdsPreview", void 0), h(this, "member", void 0), h(this, "parentChannelThreadType", void 0), h(this, "template", void 0), h(this, "defaultReactionEmoji", void 0), h(this, "isMessageRequest", void 0), h(this, "isMessageRequestTimestamp", void 0), h(this, "isSpam", void 0), h(this, "totalMessageSent", void 0), h(this, "defaultSortOrder", void 0), h(this, "version", void 0), h(this, "defaultForumLayout", void 0), h(this, "iconEmoji", void 0), h(this, "themeColor", void 0), h(this, "safetyWarnings", void 0), h(this, "voiceBackgroundDisplay", void 0), this.id = e.id, this.type = null !== (t = e.type) && void 0 !== t ? t : T.ChannelTypes.GUILD_TEXT, this.name = null !== (n = e.name) && void 0 !== n ? n : "", this.guild_id = null !== (i = e.guild_id) && void 0 !== i ? i : null
+                }
+            }
+
+            function ec(e) {
                 return "topic" in e && (e.topic_ = e.topic, delete e.topic), "position" in e && (e.position_ = e.position, delete e.position), "permissionOverwrites" in e && (e.permissionOverwrites_ = e.permissionOverwrites, delete e.permissionOverwrites), "bitrate" in e && (e.bitrate_ = e.bitrate, delete e.bitrate), "userLimit" in e && (e.userLimit_ = e.userLimit, delete e.userLimit), "nsfw" in e && (e.nsfw_ = e.nsfw, delete e.nsfw), "rateLimitPerUser" in e && (e.rateLimitPerUser_ = e.rateLimitPerUser, delete e.rateLimitPerUser), "flags" in e && (e.flags_ = e.flags, delete e.flags), e
             }
-            let e_ = Object.freeze({});
-            class ec extends eu {
+            let eE = Object.freeze({});
+            class eI extends e_ {
                 get permissionOverwrites() {
                     var e;
-                    return null !== (e = this.permissionOverwrites_) && void 0 !== e ? e : e_
+                    return null !== (e = this.permissionOverwrites_) && void 0 !== e ? e : eE
                 }
                 get topic() {
                     var e;
@@ -214866,7 +214868,7 @@
                 }
                 get bitrate() {
                     var e;
-                    return null !== (e = this.bitrate_) && void 0 !== e ? e : E.BITRATE_DEFAULT
+                    return null !== (e = this.bitrate_) && void 0 !== e ? e : T.BITRATE_DEFAULT
                 }
                 get userLimit() {
                     var e;
@@ -214890,18 +214892,18 @@
                     }
                 }
                 set(e, t) {
-                    return this.merge(ed({
+                    return this.merge(ec({
                         [e]: t
                     }))
                 }
                 merge(e) {
                     let t = null,
-                        n = ed(e);
+                        n = ec(e);
                     for (let e in n) n.hasOwnProperty(e) && this[e] !== n[e] && (null == t && (t = this.toJS()), t[e] = n[e]);
                     return null != t ? new this.constructor(t) : this
                 }
                 computeLurkerPermissionsAllowList() {
-                    if (this.isGuildStageVoice() && d.default.isPublic(this.id)) return u.LURKER_STAGE_CHANNEL_PERMISSIONS_ALLOWLIST
+                    if (this.isGuildStageVoice() && c.default.isPublic(this.id)) return _.LURKER_STAGE_CHANNEL_PERMISSIONS_ALLOWLIST
                 }
                 isNSFW() {
                     return this.nsfw
@@ -214910,16 +214912,16 @@
                     return null != this.application_id
                 }
                 isPrivate() {
-                    return v(this.type)
-                }
-                isGroupDM() {
-                    return this.type === E.ChannelTypes.GROUP_DM
-                }
-                isMultiUserDM() {
                     return y(this.type)
                 }
+                isGroupDM() {
+                    return this.type === T.ChannelTypes.GROUP_DM
+                }
+                isMultiUserDM() {
+                    return U(this.type)
+                }
                 isDM() {
-                    return this.type === E.ChannelTypes.DM
+                    return this.type === T.ChannelTypes.DM
                 }
                 isSystemDM() {
                     return !1
@@ -214933,69 +214935,69 @@
                     return this.isThread() && (null === (e = this.threadMetadata) || void 0 === e ? void 0 : e.locked) === !0
                 }
                 isScheduledForDeletion() {
-                    return this.hasFlag(I.ChannelFlags.IS_SCHEDULED_FOR_DELETION)
+                    return this.hasFlag(f.ChannelFlags.IS_SCHEDULED_FOR_DELETION)
                 }
                 isBroadcastChannel() {
-                    return this.hasFlag(I.ChannelFlags.IS_BROADCASTING)
+                    return this.hasFlag(f.ChannelFlags.IS_BROADCASTING)
                 }
                 isArchivedLockedThread() {
                     var e, t;
-                    return k.has(this.type) && (null === (e = this.threadMetadata) || void 0 === e ? void 0 : e.archived) === !0 && (null === (t = this.threadMetadata) || void 0 === t ? void 0 : t.locked) === !0
+                    return F.has(this.type) && (null === (e = this.threadMetadata) || void 0 === e ? void 0 : e.archived) === !0 && (null === (t = this.threadMetadata) || void 0 === t ? void 0 : t.locked) === !0
                 }
                 isForumPost() {
-                    return this.type === E.ChannelTypes.PUBLIC_THREAD && null != this.parentChannelThreadType && E.ChannelTypesSets.GUILD_THREADS_ONLY.has(this.parentChannelThreadType)
+                    return this.type === T.ChannelTypes.PUBLIC_THREAD && null != this.parentChannelThreadType && T.ChannelTypesSets.GUILD_THREADS_ONLY.has(this.parentChannelThreadType)
                 }
                 isCategory() {
-                    return this.type === E.ChannelTypes.GUILD_CATEGORY
+                    return this.type === T.ChannelTypes.GUILD_CATEGORY
                 }
                 isVocal() {
-                    return G(this.type)
+                    return B(this.type)
                 }
                 isGuildVocal() {
-                    return g(this.type)
+                    return D(this.type)
                 }
                 isGuildVocalOrThread() {
                     return this.isGuildVocal() || this.isVocalThread()
                 }
                 isGuildVoice() {
-                    return this.type === E.ChannelTypes.GUILD_VOICE
+                    return this.type === T.ChannelTypes.GUILD_VOICE
                 }
                 isGuildStageVoice() {
-                    return this.type === E.ChannelTypes.GUILD_STAGE_VOICE
+                    return this.type === T.ChannelTypes.GUILD_STAGE_VOICE
                 }
                 isListenModeCapable() {
                     return this.isGuildStageVoice()
                 }
                 isThread() {
-                    return F(this.type)
+                    return H(this.type)
                 }
                 isAnnouncementThread() {
-                    return this.type === E.ChannelTypes.ANNOUNCEMENT_THREAD
+                    return this.type === T.ChannelTypes.ANNOUNCEMENT_THREAD
                 }
                 isVocalThread() {
-                    return this.type === E.ChannelTypes.PUBLIC_THREAD || this.type === E.ChannelTypes.PRIVATE_THREAD
+                    return this.type === T.ChannelTypes.PUBLIC_THREAD || this.type === T.ChannelTypes.PRIVATE_THREAD
                 }
                 isActiveThread() {
                     var e;
                     return this.isThread() && (null === (e = this.threadMetadata) || void 0 === e ? void 0 : e.archived) !== !0
                 }
                 isDirectory() {
-                    return this.type === E.ChannelTypes.GUILD_DIRECTORY
+                    return this.type === T.ChannelTypes.GUILD_DIRECTORY
                 }
                 isForumLikeChannel() {
                     return this.isForumChannel() || this.isMediaChannel()
                 }
                 isForumChannel() {
-                    return this.type === E.ChannelTypes.GUILD_FORUM
+                    return this.type === T.ChannelTypes.GUILD_FORUM
                 }
                 isMediaChannel() {
-                    return this.type === E.ChannelTypes.GUILD_MEDIA
+                    return this.type === T.ChannelTypes.GUILD_MEDIA
                 }
                 isMediaPost() {
-                    return this.type === E.ChannelTypes.PUBLIC_THREAD && this.parentChannelThreadType === E.ChannelTypes.GUILD_MEDIA
+                    return this.type === T.ChannelTypes.PUBLIC_THREAD && this.parentChannelThreadType === T.ChannelTypes.GUILD_MEDIA
                 }
                 isRoleSubscriptionTemplatePreviewChannel() {
-                    return this.hasFlag(I.ChannelFlags.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL)
+                    return this.hasFlag(f.ChannelFlags.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL)
                 }
                 isOwner(e) {
                     return this.ownerId === e
@@ -215008,25 +215010,25 @@
                 }
                 getDefaultSortOrder() {
                     var e;
-                    return null !== (e = this.defaultSortOrder) && void 0 !== e ? e : a.ThreadSortOrder.LATEST_ACTIVITY
+                    return null !== (e = this.defaultSortOrder) && void 0 !== e ? e : l.ThreadSortOrder.LATEST_ACTIVITY
                 }
                 getDefaultLayout() {
-                    return this.isMediaChannel() ? s.ForumLayout.GRID : null == this.defaultForumLayout || this.defaultForumLayout === s.ForumLayout.DEFAULT ? s.ForumLayout.LIST : this.defaultForumLayout
+                    return this.isMediaChannel() ? o.ForumLayout.GRID : null == this.defaultForumLayout || this.defaultForumLayout === o.ForumLayout.DEFAULT ? o.ForumLayout.LIST : this.defaultForumLayout
                 }
                 get accessPermissions() {
-                    return eo(this.type)
+                    return eu(this.type)
                 }
                 hasFlag(e) {
-                    return (0, _.hasFlag)(this.flags, e)
+                    return (0, E.hasFlag)(this.flags, e)
                 }
             }
-            class eE extends ec {
+            class eT extends eI {
                 static fromServer(e, t) {
                     var n, i, r;
                     let s = {
                         application_id: e.application_id,
                         appliedTags: e.applied_tags,
-                        availableTags: null != e.available_tags ? en(e.available_tags) : void 0,
+                        availableTags: null != e.available_tags ? er(e.available_tags) : void 0,
                         bitrate_: e.bitrate,
                         defaultAutoArchiveDuration: e.default_auto_archive_duration,
                         defaultForumLayout: e.default_forum_layout,
@@ -215039,7 +215041,7 @@
                         flags_: e.flags,
                         guild_id: null !== (n = null != t ? t : e.guild_id) && void 0 !== n ? n : null,
                         icon: e.icon,
-                        iconEmoji: ei(e.icon_emoji),
+                        iconEmoji: es(e.icon_emoji),
                         id: e.id,
                         isMessageRequest: e.is_message_request,
                         isMessageRequestTimestamp: e.is_message_request_timestamp,
@@ -215057,13 +215059,13 @@
                         memberListId: e.member_list_id,
                         messageCount: e.message_count,
                         name: null !== (i = e.name) && void 0 !== i ? i : "",
-                        nicks: et(e.nicks),
+                        nicks: ei(e.nicks),
                         nsfw_: e.nsfw,
                         originChannelId: e.origin_channel_id,
                         ownerId: e.owner_id,
                         parent_id: e.parent_id,
                         parentChannelThreadType: void 0,
-                        permissionOverwrites_: ee(e.permission_overwrites),
+                        permissionOverwrites_: en(e.permission_overwrites),
                         position_: e.position,
                         rateLimitPerUser_: e.rate_limit_per_user,
                         rawRecipients: null != e.recipients ? e.recipients : [],
@@ -215082,27 +215084,27 @@
                         } : void 0,
                         topic_: e.topic,
                         totalMessageSent: e.total_message_sent,
-                        type: null != e.type ? e.type : E.ChannelTypes.UNKNOWN,
+                        type: null != e.type ? e.type : T.ChannelTypes.UNKNOWN,
                         userLimit_: e.user_limit,
                         version: e.version,
                         videoQualityMode: e.video_quality_mode,
-                        voiceBackgroundDisplay: er(e.voice_background_display)
+                        voiceBackgroundDisplay: ea(e.voice_background_display)
                     };
-                    return (0, l.dangerouslyCast)(s, eE)
+                    return (0, d.dangerouslyCast)(s, eT)
                 }
                 constructor(e) {
                     super(e), this.application_id = e.application_id, this.appliedTags = e.appliedTags, this.availableTags = e.availableTags, this.bitrate_ = e.bitrate_, this.defaultAutoArchiveDuration = e.defaultAutoArchiveDuration, this.defaultForumLayout = e.defaultForumLayout, this.defaultReactionEmoji = e.defaultReactionEmoji, this.defaultSortOrder = e.defaultSortOrder, this.defaultThreadRateLimitPerUser = e.defaultThreadRateLimitPerUser, this.flags_ = e.flags_, this.icon = e.icon, this.iconEmoji = e.iconEmoji, this.isMessageRequest = e.isMessageRequest, this.isMessageRequestTimestamp = e.isMessageRequestTimestamp, this.isSpam = e.isSpam, this.lastMessageId = e.lastMessageId, this.lastPinTimestamp = e.lastPinTimestamp, this.member = e.member, this.memberCount = e.memberCount, this.memberIdsPreview = e.memberIdsPreview, this.memberListId = e.memberListId, this.messageCount = e.messageCount, this.nicks = e.nicks, this.nsfw_ = e.nsfw_, this.originChannelId = e.originChannelId, this.ownerId = e.ownerId, this.parent_id = e.parent_id, this.parentChannelThreadType = e.parentChannelThreadType, this.permissionOverwrites_ = e.permissionOverwrites_, this.position_ = e.position_, this.rateLimitPerUser_ = e.rateLimitPerUser_, this.rawRecipients = e.rawRecipients, this.recipients = e.recipients, this.rtcRegion = e.rtcRegion, this.safetyWarnings = e.safetyWarnings, this.template = e.template, this.themeColor = e.themeColor, this.threadMetadata = e.threadMetadata, this.topic_ = e.topic_, this.userLimit_ = e.userLimit_, this.version = e.version, this.videoQualityMode = e.videoQualityMode, this.voiceBackgroundDisplay = e.voiceBackgroundDisplay
                 }
             }
-            class eI extends ec {
+            class ef extends eI {
                 static fromServer(e, t) {
                     var n, i, r, s;
-                    return eR({
+                    return ev({
                         application_id: e.application_id,
                         bitrate_: e.bitrate,
                         flags_: e.flags,
                         guild_id: null !== (n = null != t ? t : e.guild_id) && void 0 !== n ? n : null,
-                        iconEmoji: ei(e.icon_emoji),
+                        iconEmoji: es(e.icon_emoji),
                         id: e.id,
                         lastMessageId: e.last_message_id,
                         lastPinTimestamp: e.last_pin_timestamp,
@@ -215111,17 +215113,17 @@
                         nsfw_: null !== (r = e.nsfw) && void 0 !== r && r,
                         originChannelId: e.origin_channel_id,
                         parent_id: e.parent_id,
-                        permissionOverwrites_: ee(e.permission_overwrites),
+                        permissionOverwrites_: en(e.permission_overwrites),
                         position_: e.position,
                         rateLimitPerUser_: null !== (s = e.rate_limit_per_user) && void 0 !== s ? s : 0,
                         rtcRegion: e.rtc_region,
                         themeColor: e.theme_color,
                         topic_: e.topic,
-                        type: null != e.type ? e.type : E.ChannelTypes.GUILD_VOICE,
+                        type: null != e.type ? e.type : T.ChannelTypes.GUILD_VOICE,
                         userLimit_: e.user_limit,
                         version: e.version,
                         videoQualityMode: e.video_quality_mode,
-                        voiceBackgroundDisplay: er(e.voice_background_display)
+                        voiceBackgroundDisplay: ea(e.voice_background_display)
                     })
                 }
                 constructor(e) {
@@ -215129,16 +215131,16 @@
                     super(e), this.application_id = e.application_id, this.bitrate_ = e.bitrate_, this.flags_ = e.flags_, this.iconEmoji = e.iconEmoji, this.lastMessageId = e.lastMessageId, this.lastPinTimestamp = e.lastPinTimestamp, this.memberListId = e.memberListId, this.nsfw_ = e.nsfw_, this.originChannelId = e.originChannelId, this.parent_id = e.parent_id, this.permissionOverwrites_ = null !== (t = e.permissionOverwrites_) && void 0 !== t ? t : {}, this.position_ = e.position_, this.rateLimitPerUser_ = e.rateLimitPerUser_, this.rtcRegion = e.rtcRegion, this.themeColor = e.themeColor, this.topic_ = e.topic_, this.userLimit_ = e.userLimit_, this.version = e.version, this.videoQualityMode = e.videoQualityMode, this.voiceBackgroundDisplay = e.voiceBackgroundDisplay
                 }
             }
-            class eT extends ec {
+            class eS extends eI {
                 static fromServer(e, t) {
                     var n, i, r, s;
-                    return eR({
+                    return ev({
                         application_id: e.application_id,
                         defaultAutoArchiveDuration: e.default_auto_archive_duration,
                         defaultThreadRateLimitPerUser: e.default_thread_rate_limit_per_user,
                         flags_: e.flags,
                         guild_id: null !== (n = null != t ? t : e.guild_id) && void 0 !== n ? n : null,
-                        iconEmoji: ei(e.icon_emoji),
+                        iconEmoji: es(e.icon_emoji),
                         id: e.id,
                         lastMessageId: e.last_message_id,
                         lastPinTimestamp: e.last_pin_timestamp,
@@ -215146,12 +215148,12 @@
                         name: null !== (i = e.name) && void 0 !== i ? i : "",
                         nsfw_: null !== (r = e.nsfw) && void 0 !== r && r,
                         parent_id: e.parent_id,
-                        permissionOverwrites_: ee(e.permission_overwrites),
+                        permissionOverwrites_: en(e.permission_overwrites),
                         position_: e.position,
                         rateLimitPerUser_: null !== (s = e.rate_limit_per_user) && void 0 !== s ? s : 0,
                         themeColor: e.theme_color,
                         topic_: e.topic,
-                        type: null != e.type ? e.type : E.ChannelTypes.GUILD_TEXT,
+                        type: null != e.type ? e.type : T.ChannelTypes.GUILD_TEXT,
                         version: e.version
                     })
                 }
@@ -215160,11 +215162,11 @@
                     super(e), this.application_id = e.application_id, this.defaultAutoArchiveDuration = e.defaultAutoArchiveDuration, this.defaultThreadRateLimitPerUser = e.defaultThreadRateLimitPerUser, this.flags_ = e.flags_, this.iconEmoji = e.iconEmoji, this.lastMessageId = e.lastMessageId, this.lastPinTimestamp = e.lastPinTimestamp, this.memberListId = e.memberListId, this.nsfw_ = e.nsfw_, this.parent_id = e.parent_id, this.permissionOverwrites_ = null !== (t = e.permissionOverwrites_) && void 0 !== t ? t : {}, this.position_ = e.position_, this.rateLimitPerUser_ = e.rateLimitPerUser_, this.themeColor = e.themeColor, this.topic_ = e.topic_, this.version = e.version
                 }
             }
-            class ef extends ec {
+            class eh extends eI {
                 static fromServer(e, t) {
                     var n, i, r, s;
                     let a = {
-                        availableTags: null != e.available_tags ? en(e.available_tags) : [],
+                        availableTags: null != e.available_tags ? er(e.available_tags) : [],
                         defaultAutoArchiveDuration: e.default_auto_archive_duration,
                         defaultForumLayout: e.default_forum_layout,
                         defaultReactionEmoji: null != e.default_reaction_emoji ? {
@@ -215175,7 +215177,7 @@
                         defaultThreadRateLimitPerUser: e.default_thread_rate_limit_per_user,
                         flags_: e.flags,
                         guild_id: null !== (n = null != t ? t : e.guild_id) && void 0 !== n ? n : null,
-                        iconEmoji: ei(e.icon_emoji),
+                        iconEmoji: es(e.icon_emoji),
                         id: e.id,
                         lastMessageId: e.last_message_id,
                         lastPinTimestamp: e.last_pin_timestamp,
@@ -215183,29 +215185,48 @@
                         name: null !== (i = e.name) && void 0 !== i ? i : "",
                         nsfw_: null !== (r = e.nsfw) && void 0 !== r && r,
                         parent_id: e.parent_id,
-                        permissionOverwrites_: ee(e.permission_overwrites),
+                        permissionOverwrites_: en(e.permission_overwrites),
                         position_: e.position,
                         rateLimitPerUser_: null !== (s = e.rate_limit_per_user) && void 0 !== s ? s : 0,
                         template: e.template,
                         themeColor: e.theme_color,
                         topic_: e.topic,
-                        type: null != e.type ? e.type : E.ChannelTypes.GUILD_TEXT,
+                        type: null != e.type ? e.type : T.ChannelTypes.GUILD_TEXT,
                         version: e.version
                     };
-                    return (0, l.dangerouslyCast)(a, ef)
+                    return (0, d.dangerouslyCast)(a, eh)
                 }
                 constructor(e) {
                     var t, n;
                     super(e), this.availableTags = null !== (t = e.availableTags) && void 0 !== t ? t : [], this.defaultAutoArchiveDuration = e.defaultAutoArchiveDuration, this.defaultForumLayout = e.defaultForumLayout, this.defaultReactionEmoji = e.defaultReactionEmoji, this.defaultSortOrder = e.defaultSortOrder, this.defaultThreadRateLimitPerUser = e.defaultThreadRateLimitPerUser, this.flags_ = e.flags_, this.iconEmoji = e.iconEmoji, this.lastMessageId = e.lastMessageId, this.lastPinTimestamp = e.lastPinTimestamp, this.memberListId = e.memberListId, this.nsfw_ = e.nsfw_, this.parent_id = e.parent_id, this.permissionOverwrites_ = null !== (n = e.permissionOverwrites_) && void 0 !== n ? n : {}, this.position_ = e.position_, this.rateLimitPerUser_ = e.rateLimitPerUser_, this.template = e.template, this.themeColor = e.themeColor, this.topic_ = e.topic_, this.version = e.version
                 }
             }
-            class eS extends ec {
-                static sortRecipients(e) {
-                    return [...null != e ? e : []].sort((e, t) => c.default.compare(e.id, t.id))
+            class eA {
+                getOrCompute(e) {
+                    let t = this.cache.get(e);
+                    if (null != t) return t;
+                    {
+                        let t = parseInt(e, 10);
+                        return this.cache.set(e, t), t
+                    }
+                }
+                constructor(e = 100) {
+                    h(this, "cache", void 0), this.cache = new(a())(e)
+                }
+            }
+            let em = new eA,
+                eN = new eA;
+            class ep extends eI {
+                static sortRecipients(e, t) {
+                    let n = em.getOrCompute(t);
+                    return [...null != e ? e : []].sort((e, t) => {
+                        let i = eN.getOrCompute(e.id);
+                        return (i ^ n) - (eN.getOrCompute(t.id) ^ n)
+                    })
                 }
                 static fromServer(e) {
                     var t, n;
-                    let i = eS.sortRecipients(e.recipients),
+                    let i = ep.sortRecipients(e.recipients, e.id),
                         r = {
                             application_id: e.application_id,
                             flags_: e.flags,
@@ -215218,18 +215239,18 @@
                             lastMessageId: e.last_message_id,
                             lastPinTimestamp: e.last_pin_timestamp,
                             name: null !== (n = e.name) && void 0 !== n ? n : "",
-                            nicks: et(e.nicks),
+                            nicks: ei(e.nicks),
                             ownerId: e.owner_id,
                             rawRecipients: i,
                             recipients: i.map(e => e.id),
                             safetyWarnings: e.safety_warnings,
-                            type: null != e.type ? e.type : E.ChannelTypes.DM
+                            type: null != e.type ? e.type : T.ChannelTypes.DM
                         };
-                    return (0, l.dangerouslyCast)(r, eS)
+                    return (0, d.dangerouslyCast)(r, ep)
                 }
                 isSystemDM() {
                     let e = this.rawRecipients[0];
-                    return this.type === E.ChannelTypes.DM && null != e && !0 === e.system
+                    return this.type === T.ChannelTypes.DM && null != e && !0 === e.system
                 }
                 getRecipientId() {
                     return this.recipients[0]
@@ -215238,7 +215259,7 @@
                     if (e === n) return this;
                     {
                         var i;
-                        let n = this.set("recipients", r().uniq([...null !== (i = this.recipients) && void 0 !== i ? i : [], e]).sort(c.default.compare));
+                        let n = this.set("recipients", r().uniq([...null !== (i = this.recipients) && void 0 !== i ? i : [], e]).sort(I.default.compare));
                         return null == t ? n : n.set("nicks", {
                             ...n.nicks,
                             [e]: t
@@ -215250,11 +215271,11 @@
                 }
                 constructor(e) {
                     var t, n;
-                    super(e), this.application_id = e.application_id, this.flags_ = e.flags_, this.icon = e.icon, this.isMessageRequest = e.isMessageRequest, this.isMessageRequestTimestamp = e.isMessageRequestTimestamp, this.isSpam = e.isSpam, this.lastMessageId = e.lastMessageId, this.lastPinTimestamp = e.lastPinTimestamp, this.nicks = e.nicks, this.ownerId = e.ownerId, this.rawRecipients = eS.sortRecipients(e.rawRecipients), this.recipients = [...null !== (t = e.recipients) && void 0 !== t ? t : []].sort(c.default.compare), this.safetyWarnings = null !== (n = e.safetyWarnings) && void 0 !== n ? n : []
+                    super(e), this.application_id = e.application_id, this.flags_ = e.flags_, this.icon = e.icon, this.isMessageRequest = e.isMessageRequest, this.isMessageRequestTimestamp = e.isMessageRequestTimestamp, this.isSpam = e.isSpam, this.lastMessageId = e.lastMessageId, this.lastPinTimestamp = e.lastPinTimestamp, this.nicks = e.nicks, this.ownerId = e.ownerId, this.rawRecipients = ep.sortRecipients(e.rawRecipients, this.id), this.recipients = [...null !== (t = e.recipients) && void 0 !== t ? t : []].sort(I.default.compare), this.safetyWarnings = null !== (n = e.safetyWarnings) && void 0 !== n ? n : []
                 }
             }
-            class eh extends eS {}
-            class eA extends ec {
+            class eO extends ep {}
+            class eR extends eI {
                 static fromServer(e, t) {
                     var n, i, r, s, a;
                     let o = {
@@ -215290,68 +215311,68 @@
                             invitable: null === (a = e.thread_metadata.invitable) || void 0 === a || a
                         } : void 0,
                         totalMessageSent: e.total_message_sent,
-                        type: null != e.type ? e.type : E.ChannelTypes.PUBLIC_THREAD,
+                        type: null != e.type ? e.type : T.ChannelTypes.PUBLIC_THREAD,
                         userLimit_: e.user_limit,
                         videoQualityMode: e.video_quality_mode
                     };
-                    return (0, l.dangerouslyCast)(o, eA)
+                    return (0, d.dangerouslyCast)(o, eR)
                 }
                 constructor(e) {
                     var t;
                     super(e), this.appliedTags = null !== (t = e.appliedTags) && void 0 !== t ? t : [], this.bitrate_ = e.bitrate_, this.flags_ = e.flags_, this.lastMessageId = e.lastMessageId, this.lastPinTimestamp = e.lastPinTimestamp, this.member = e.member, this.memberCount = e.memberCount, this.memberIdsPreview = e.memberIdsPreview, this.messageCount = e.messageCount, this.nsfw_ = e.nsfw_, this.ownerId = e.ownerId, this.parent_id = e.parent_id, this.parentChannelThreadType = e.parentChannelThreadType, this.rateLimitPerUser_ = e.rateLimitPerUser_, this.rtcRegion = e.rtcRegion, this.threadMetadata = e.threadMetadata, this.userLimit_ = e.userLimit_, this.videoQualityMode = e.videoQualityMode
                 }
             }
-            let em = {
-                [E.ChannelTypes.DM]: eS.fromServer,
-                [E.ChannelTypes.GROUP_DM]: eS.fromServer,
-                [E.ChannelTypes.GUILD_TEXT]: eT.fromServer,
-                [E.ChannelTypes.GUILD_VOICE]: eI.fromServer,
-                [E.ChannelTypes.GUILD_STAGE_VOICE]: eI.fromServer,
-                [E.ChannelTypes.GUILD_CATEGORY]: eT.fromServer,
-                [E.ChannelTypes.GUILD_ANNOUNCEMENT]: eT.fromServer,
-                [E.ChannelTypes.GUILD_STORE]: eT.fromServer,
-                [E.ChannelTypes.ANNOUNCEMENT_THREAD]: eA.fromServer,
-                [E.ChannelTypes.PUBLIC_THREAD]: eA.fromServer,
-                [E.ChannelTypes.PRIVATE_THREAD]: eA.fromServer,
-                [E.ChannelTypes.GUILD_DIRECTORY]: eT.fromServer,
-                [E.ChannelTypes.GUILD_FORUM]: ef.fromServer,
-                [E.ChannelTypes.GUILD_MEDIA]: ef.fromServer
+            let eC = {
+                [T.ChannelTypes.DM]: ep.fromServer,
+                [T.ChannelTypes.GROUP_DM]: ep.fromServer,
+                [T.ChannelTypes.GUILD_TEXT]: eS.fromServer,
+                [T.ChannelTypes.GUILD_VOICE]: ef.fromServer,
+                [T.ChannelTypes.GUILD_STAGE_VOICE]: ef.fromServer,
+                [T.ChannelTypes.GUILD_CATEGORY]: eS.fromServer,
+                [T.ChannelTypes.GUILD_ANNOUNCEMENT]: eS.fromServer,
+                [T.ChannelTypes.GUILD_STORE]: eS.fromServer,
+                [T.ChannelTypes.ANNOUNCEMENT_THREAD]: eR.fromServer,
+                [T.ChannelTypes.PUBLIC_THREAD]: eR.fromServer,
+                [T.ChannelTypes.PRIVATE_THREAD]: eR.fromServer,
+                [T.ChannelTypes.GUILD_DIRECTORY]: eS.fromServer,
+                [T.ChannelTypes.GUILD_FORUM]: eh.fromServer,
+                [T.ChannelTypes.GUILD_MEDIA]: eh.fromServer
             };
 
-            function eN(e, t) {
+            function eg(e, t) {
                 var n, i;
-                return (null !== (i = em[null !== (n = e.type) && void 0 !== n ? n : E.ChannelTypes.GUILD_TEXT]) && void 0 !== i ? i : eE.fromServer)(e, t)
+                return (null !== (i = eC[null !== (n = e.type) && void 0 !== n ? n : T.ChannelTypes.GUILD_TEXT]) && void 0 !== i ? i : eT.fromServer)(e, t)
             }
 
-            function ep(e) {
-                return eC(e)
+            function eL(e) {
+                return eM(e)
             }
-            let eO = {
-                [E.ChannelTypes.DM]: eh,
-                [E.ChannelTypes.GROUP_DM]: class e extends eS {},
-                [E.ChannelTypes.GUILD_TEXT]: class e extends eT {},
-                [E.ChannelTypes.GUILD_VOICE]: class e extends eI {},
-                [E.ChannelTypes.GUILD_STAGE_VOICE]: class e extends eI {},
-                [E.ChannelTypes.GUILD_CATEGORY]: class e extends eT {},
-                [E.ChannelTypes.GUILD_ANNOUNCEMENT]: class e extends eT {},
-                [E.ChannelTypes.GUILD_STORE]: class e extends eT {},
-                [E.ChannelTypes.ANNOUNCEMENT_THREAD]: eA,
-                [E.ChannelTypes.PUBLIC_THREAD]: eA,
-                [E.ChannelTypes.PRIVATE_THREAD]: eA,
-                [E.ChannelTypes.GUILD_DIRECTORY]: class e extends eT {},
-                [E.ChannelTypes.GUILD_FORUM]: ef,
-                [E.ChannelTypes.GUILD_MEDIA]: ef
+            let eD = {
+                [T.ChannelTypes.DM]: eO,
+                [T.ChannelTypes.GROUP_DM]: class e extends ep {},
+                [T.ChannelTypes.GUILD_TEXT]: class e extends eS {},
+                [T.ChannelTypes.GUILD_VOICE]: class e extends ef {},
+                [T.ChannelTypes.GUILD_STAGE_VOICE]: class e extends ef {},
+                [T.ChannelTypes.GUILD_CATEGORY]: class e extends eS {},
+                [T.ChannelTypes.GUILD_ANNOUNCEMENT]: class e extends eS {},
+                [T.ChannelTypes.GUILD_STORE]: class e extends eS {},
+                [T.ChannelTypes.ANNOUNCEMENT_THREAD]: eR,
+                [T.ChannelTypes.PUBLIC_THREAD]: eR,
+                [T.ChannelTypes.PRIVATE_THREAD]: eR,
+                [T.ChannelTypes.GUILD_DIRECTORY]: class e extends eS {},
+                [T.ChannelTypes.GUILD_FORUM]: eh,
+                [T.ChannelTypes.GUILD_MEDIA]: eh
             };
 
-            function eR(e) {
+            function ev(e) {
                 var t, n;
-                let i = null !== (n = eO[null !== (t = e.type) && void 0 !== t ? t : E.ChannelTypes.GUILD_TEXT]) && void 0 !== n ? n : eE;
-                return (0, l.dangerouslyCast)(e, i)
+                let i = null !== (n = eD[null !== (t = e.type) && void 0 !== t ? t : T.ChannelTypes.GUILD_TEXT]) && void 0 !== n ? n : eT;
+                return (0, d.dangerouslyCast)(e, i)
             }
 
-            function eC(e) {
+            function eM(e) {
                 var t, n;
-                return new(null !== (n = eO[null !== (t = e.type) && void 0 !== t ? t : E.ChannelTypes.GUILD_TEXT]) && void 0 !== n ? n : eE)(ed(e))
+                return new(null !== (n = eD[null !== (t = e.type) && void 0 !== t ? t : T.ChannelTypes.GUILD_TEXT]) && void 0 !== n ? n : eT)(ec(e))
             }
         },
         584597: function(e, t, n) {
@@ -240298,7 +240319,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3f80edd86bc85a691e0c44aad35907cd61016845"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e8088620f902b422accae9f37b4bf4b9e26258f3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268714,7 +268735,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285182"
+                                build_number: "285206"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -275899,7 +275920,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285182", "285182"), 10);
+                let s = parseInt((n = "285206", "285206"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -302915,4 +302936,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.6f070fcba40a9414f9f6.js.map
+//# sourceMappingURL=73050.947dd56162eed9cb0b67.js.map
