@@ -36651,7 +36651,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("284789", ", Version Hash: ").concat("a0049a8f8bb59ce5e330be18d1e16bdb683038e5")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("284817", ", Version Hash: ").concat("02b0d49d059bd1bf0fae0ba3c3ba2188f3d74f61")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86484,8 +86484,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284789", "284789"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284789")), t = 0), t
+                let t = parseInt((e = "284817", "284817"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284817")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110399,8 +110399,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284789",
-                    versionHash: "a0049a8f8bb59ce5e330be18d1e16bdb683038e5"
+                    buildNumber: "284817",
+                    versionHash: "02b0d49d059bd1bf0fae0ba3c3ba2188f3d74f61"
                 }
             }
             n.r(t), n.d(t, {
@@ -163589,8 +163589,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713226701495",
-                                    build_number: "284789"
+                                    built_at: "1713230196046",
+                                    build_number: "284817"
                                 }
                             },
                             retries: 1
@@ -177420,33 +177420,34 @@
             function h(e) {
                 let {
                     premiumUpsellType: t,
-                    className: n
-                } = e, s = (0, l.useStateFromStores)([d.default], () => d.default.affinities), h = s.length > 0 && S.includes(t), A = _.default.useExperiment({
+                    className: n,
+                    forceShow: s = !1
+                } = e, h = (0, l.useStateFromStores)([d.default], () => d.default.affinities), A = h.length > 0 && S.includes(t), m = _.default.useExperiment({
                     location: "HD Streaming Upsell"
                 }, {
-                    autoTrackExposure: h,
-                    disable: !h
-                }).enabled, m = (0, l.useStateFromStores)([d.default], () => d.default.hasFetched);
+                    autoTrackExposure: A,
+                    disable: !A || s
+                }).enabled || s && A, N = (0, l.useStateFromStores)([d.default], () => d.default.hasFetched);
                 r.useEffect(() => {
-                    !m && u.getNitroAffinity()
-                }, [m]);
-                let N = s.map((e, t) => (0, i.jsx)(c.AvatarWrapper, {
+                    !N && u.getNitroAffinity()
+                }, [N]);
+                let p = h.map((e, t) => (0, i.jsx)(c.AvatarWrapper, {
                     affinity: e,
-                    applyMask: t !== s.length - 1,
+                    applyMask: t !== h.length - 1,
                     size: I.AvatarSizes.SIZE_20
                 }, e.id));
-                return A ? (0, i.jsxs)("div", {
+                return m ? (0, i.jsxs)("div", {
                     className: a()(f.container, n),
                     children: [(0, i.jsx)("div", {
                         className: f.iconContainer,
-                        children: N
+                        children: p
                     }), (0, i.jsx)("div", {
                         className: f.textContainer,
                         children: (0, i.jsx)(o.Text, {
                             variant: "text-sm/medium",
                             children: (() => {
                                 if (t === E.PremiumUpsellTypes.STREAM_QUALITY_UPSELL) return T.default.Messages.STREAM_PREMIUM_AFFINITY_UPSELL.format({
-                                    numFriends: s.length
+                                    numFriends: h.length
                                 });
                                 return null
                             })()
@@ -202984,6 +202985,75 @@
                 })
             }(r = i || (i = {}))[r.SIZE_24 = 0] = "SIZE_24", r[r.SIZE_22 = 1] = "SIZE_22", r[r.SIZE_20 = 2] = "SIZE_20", r[r.SIZE_18 = 3] = "SIZE_18"
         },
+        438163: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                UserProfileCustomStatusBubble: function() {
+                    return d
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("120356"),
+                s = n.n(r),
+                a = n("481060"),
+                o = n("596454"),
+                l = n("788307"),
+                u = n("181196");
+
+            function d(e) {
+                let {
+                    positionStyle: t,
+                    statusActivity: n,
+                    animate: r = !0,
+                    hideTooltip: d = !1
+                } = e, {
+                    emoji: _
+                } = n, c = null != _, E = null != n.state && "" !== n.state ? n.state : null, I = null != E && E.length > 0;
+                if (!c && !I) return null;
+                let T = I ? Math.floor(E.length / 30) + 1 : 1,
+                    f = s()({
+                        [u.maxLinePositioningOffset]: T >= 3
+                    }),
+                    S = s()(u.statusBubbleOutline, t, {
+                        [u.statusBubbleSingleLineShape]: 1 === T,
+                        [u.statusBubbleMultiLineShape]: T > 1,
+                        [u.statusBubbleOutlineMaxLinePadding]: T >= 3
+                    }),
+                    h = s()(u.statusBubble, {
+                        [u.statusBubbleSingleLineEmojiOnly]: c && !I,
+                        [u.statusBubbleSingleLineTextOrMixed]: 1 === T && I,
+                        [u.statusBubbleMultiLinePadding]: T > 1 && T < 3,
+                        [u.statusBubbleMaxLinePadding]: T >= 3,
+                        [u.statusBubbleSingleLineShape]: 1 === T,
+                        [u.statusBubbleMultiLineShape]: T > 1
+                    });
+                return (0, i.jsx)("div", {
+                    className: f,
+                    children: (0, i.jsx)("div", {
+                        className: S,
+                        children: (0, i.jsxs)("span", {
+                            className: h,
+                            children: [c ? I ? (0, i.jsx)(o.default, {
+                                className: u.inlineStatusEmoji,
+                                emojiId: _.id,
+                                emojiName: _.name,
+                                animated: !!_.animated
+                            }) : (0, i.jsx)(l.ActivityEmoji, {
+                                className: u.soloStatusEmoji,
+                                emoji: _,
+                                animate: r,
+                                hideTooltip: d
+                            }) : null, I ? (0, i.jsx)(a.Text, {
+                                variant: "text-sm/medium",
+                                className: u.statusText,
+                                children: E
+                            }) : null]
+                        })
+                    })
+                })
+            }
+        },
         81334: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -205381,69 +205451,82 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return I
+                    return S
                 }
             });
             var i = n("735250");
             n("470079");
-            var r = n("442837"),
-                s = n("420660"),
-                a = n("199902"),
-                o = n("158776"),
-                l = n("78675"),
-                u = n("131640"),
-                d = n("228168"),
-                _ = n("981631"),
-                c = n("231338"),
-                E = n("247076");
+            var r = n("120356"),
+                s = n.n(r),
+                a = n("442837"),
+                o = n("420660"),
+                l = n("199902"),
+                u = n("158776"),
+                d = n("78675"),
+                _ = n("438163"),
+                c = n("131640"),
+                E = n("228168"),
+                I = n("981631"),
+                T = n("231338"),
+                f = n("247076");
 
-            function I(e) {
+            function S(e) {
                 let {
                     user: t,
                     displayProfile: n,
-                    disableUserProfileLink: I,
-                    guildId: T,
-                    channelId: f,
-                    onClose: S
+                    disableUserProfileLink: r,
+                    guildId: S,
+                    channelId: h,
+                    onClose: A
                 } = e, {
-                    activity: h,
-                    status: A,
-                    isMobile: m
-                } = (0, r.useStateFromStoresObject)([a.default, o.default], () => {
-                    let e = null != a.default.getAnyStreamForUser(t.id);
+                    activity: m,
+                    customStatusActivity: N,
+                    status: p,
+                    isMobile: O
+                } = (0, a.useStateFromStoresObject)([l.default, u.default], () => {
+                    let e = null != l.default.getAnyStreamForUser(t.id);
                     return {
-                        activity: o.default.findActivity(t.id, t => {
+                        activity: u.default.findActivity(t.id, t => {
                             let {
                                 type: n
                             } = t;
-                            return e ? n === _.ActivityTypes.PLAYING : n !== _.ActivityTypes.CUSTOM_STATUS
+                            return e ? n === I.ActivityTypes.PLAYING : n !== I.ActivityTypes.CUSTOM_STATUS
                         }),
-                        status: o.default.getStatus(t.id),
-                        isMobile: o.default.isMobileOnline(t.id)
+                        customStatusActivity: u.default.findActivity(t.id, e => {
+                            let {
+                                type: t
+                            } = e;
+                            return t === I.ActivityTypes.CUSTOM_STATUS
+                        }),
+                        status: u.default.getStatus(t.id),
+                        isMobile: u.default.isMobileOnline(t.id)
                     }
+                }), R = s()(f.header, {
+                    [f.noCustomStatusMargin]: null == N
                 });
                 return (0, i.jsxs)("header", {
-                    className: E.header,
-                    children: [(0, i.jsx)(l.default, {
+                    className: R,
+                    children: [(0, i.jsx)(d.default, {
                         user: t,
                         displayProfile: n,
-                        guildId: T,
-                        profileType: d.UserProfileTypes.BITE_SIZE,
+                        guildId: S,
+                        profileType: E.UserProfileTypes.BITE_SIZE,
                         hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null
-                    }), (0, i.jsx)(u.UserPopoutAvatar, {
+                    }), (0, i.jsx)(c.UserPopoutAvatar, {
                         user: t,
                         displayProfile: n,
-                        status: (0, s.default)(h) ? c.StatusTypes.STREAMING : A,
-                        isMobile: m,
-                        guildId: T,
-                        channelId: f,
-                        onClose: S,
-                        disableUserProfileLink: I,
+                        status: (0, o.default)(m) ? T.StatusTypes.STREAMING : p,
+                        isMobile: O,
+                        guildId: S,
+                        channelId: h,
+                        onClose: A,
+                        disableUserProfileLink: r,
                         hasBanner: (null == n ? void 0 : n.banner) != null,
                         hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null,
-                        profileType: d.UserProfileTypes.BITE_SIZE
-                    }), (0, i.jsx)("div", {
-                        className: E.customStatus
+                        profileType: E.UserProfileTypes.BITE_SIZE
+                    }), null != N && (0, i.jsx)(_.UserProfileCustomStatusBubble, {
+                        positionStyle: f.statusBubblePosition,
+                        statusActivity: N
                     })]
                 })
             }
@@ -240090,7 +240173,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a0049a8f8bb59ce5e330be18d1e16bdb683038e5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "02b0d49d059bd1bf0fae0ba3c3ba2188f3d74f61"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268506,7 +268589,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284789"
+                                build_number: "284817"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -275685,7 +275768,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284789", "284789"), 10);
+                let s = parseInt((n = "284817", "284817"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -302706,4 +302789,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.2c67d1c08fbc62097bfb.js.map
+//# sourceMappingURL=73050.6725bbf1380d37bfd69c.js.map
