@@ -36651,7 +36651,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("284900", ", Version Hash: ").concat("725c06306787f216405fdfddd032dbc31b77c18e")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("284911", ", Version Hash: ").concat("31b1d09e7a6075e02515fde606928758fc6b2e65")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -37160,7 +37160,7 @@
         },
         911969: function(e, t, n) {
             "use strict";
-            var i, r, s, a, o, l, u, d, _, c, E, I, T, f, S, h, A, m, N, p, O, R, C, g, L, D, v, M;
+            var i, r, s, a, o, l, u, d, _, c, E, I, T, f, S, h, A, m, N, p, O, R, C, g, L, D, v, M, y, P;
             n.r(t), n.d(t, {
                 ApplicationCommandOptionType: function() {
                     return l
@@ -37172,7 +37172,7 @@
                     return a
                 },
                 AuthenticatorType: function() {
-                    return f
+                    return S
                 },
                 ButtonStyle: function() {
                     return c
@@ -37193,18 +37193,21 @@
                     return d
                 },
                 InvoiceDiscountTypes: function() {
-                    return I
+                    return T
                 },
                 PermissionOverwriteType: function() {
                     return i
                 },
                 PurchaseNotificationType: function() {
-                    return T
+                    return f
                 },
                 TextComponentStyle: function() {
                     return E
+                },
+                TextDisplayContentStyle: function() {
+                    return I
                 }
-            }), (S = i || (i = {}))[S.ROLE = 0] = "ROLE", S[S.MEMBER = 1] = "MEMBER", (h = r || (r = {})).IOS = "ios", h.ANDROID = "android", h.WEB = "web", (A = s || (s = {}))[A.NONE = 0] = "NONE", A[A.NEW = 1] = "NEW", A[A.UPDATED = 2] = "UPDATED", (m = a || (a = {}))[m.MEDIA_PROXY = 1] = "MEDIA_PROXY", m[m.YOUTUBE = 2] = "YOUTUBE", (N = o || (o = {}))[N.GUILD = 0] = "GUILD", N[N.BOT_DM = 1] = "BOT_DM", N[N.PRIVATE_CHANNEL = 2] = "PRIVATE_CHANNEL", (p = l || (l = {}))[p.SUB_COMMAND = 1] = "SUB_COMMAND", p[p.SUB_COMMAND_GROUP = 2] = "SUB_COMMAND_GROUP", p[p.STRING = 3] = "STRING", p[p.INTEGER = 4] = "INTEGER", p[p.BOOLEAN = 5] = "BOOLEAN", p[p.USER = 6] = "USER", p[p.CHANNEL = 7] = "CHANNEL", p[p.ROLE = 8] = "ROLE", p[p.MENTIONABLE = 9] = "MENTIONABLE", p[p.NUMBER = 10] = "NUMBER", p[p.ATTACHMENT = 11] = "ATTACHMENT", (O = u || (u = {}))[O.CHAT = 1] = "CHAT", O[O.USER = 2] = "USER", O[O.MESSAGE = 3] = "MESSAGE", O[O.PRIMARY_ENTRY_POINT = 4] = "PRIMARY_ENTRY_POINT", (R = d || (d = {}))[R.APPLICATION_COMMAND = 2] = "APPLICATION_COMMAND", R[R.MESSAGE_COMPONENT = 3] = "MESSAGE_COMPONENT", R[R.APPLICATION_COMMAND_AUTOCOMPLETE = 4] = "APPLICATION_COMMAND_AUTOCOMPLETE", R[R.MODAL_SUBMIT = 5] = "MODAL_SUBMIT", (C = _ || (_ = {}))[C.ACTION_ROW = 1] = "ACTION_ROW", C[C.BUTTON = 2] = "BUTTON", C[C.STRING_SELECT = 3] = "STRING_SELECT", C[C.INPUT_TEXT = 4] = "INPUT_TEXT", C[C.USER_SELECT = 5] = "USER_SELECT", C[C.ROLE_SELECT = 6] = "ROLE_SELECT", C[C.MENTIONABLE_SELECT = 7] = "MENTIONABLE_SELECT", C[C.CHANNEL_SELECT = 8] = "CHANNEL_SELECT", (g = c || (c = {}))[g.PRIMARY = 1] = "PRIMARY", g[g.SECONDARY = 2] = "SECONDARY", g[g.SUCCESS = 3] = "SUCCESS", g[g.DESTRUCTIVE = 4] = "DESTRUCTIVE", g[g.LINK = 5] = "LINK", (L = E || (E = {}))[L.SMALL = 1] = "SMALL", L[L.PARAGRAPH = 2] = "PARAGRAPH", (D = I || (I = {}))[D.SUBSCRIPTION_PLAN = 1] = "SUBSCRIPTION_PLAN", D[D.ENTITLEMENT = 2] = "ENTITLEMENT", D[D.PREMIUM_LEGACY_UPGRADE_PROMOTION = 3] = "PREMIUM_LEGACY_UPGRADE_PROMOTION", D[D.PREMIUM_TRIAL = 4] = "PREMIUM_TRIAL", (v = T || (T = {}))[v.GUILD_PRODUCT = 0] = "GUILD_PRODUCT", (M = f || (f = {}))[M.WEBAUTHN = 1] = "WEBAUTHN", M[M.TOTP = 2] = "TOTP", M[M.SMS = 3] = "SMS"
+            }), (h = i || (i = {}))[h.ROLE = 0] = "ROLE", h[h.MEMBER = 1] = "MEMBER", (A = r || (r = {})).IOS = "ios", A.ANDROID = "android", A.WEB = "web", (m = s || (s = {}))[m.NONE = 0] = "NONE", m[m.NEW = 1] = "NEW", m[m.UPDATED = 2] = "UPDATED", (N = a || (a = {}))[N.MEDIA_PROXY = 1] = "MEDIA_PROXY", N[N.YOUTUBE = 2] = "YOUTUBE", (p = o || (o = {}))[p.GUILD = 0] = "GUILD", p[p.BOT_DM = 1] = "BOT_DM", p[p.PRIVATE_CHANNEL = 2] = "PRIVATE_CHANNEL", (O = l || (l = {}))[O.SUB_COMMAND = 1] = "SUB_COMMAND", O[O.SUB_COMMAND_GROUP = 2] = "SUB_COMMAND_GROUP", O[O.STRING = 3] = "STRING", O[O.INTEGER = 4] = "INTEGER", O[O.BOOLEAN = 5] = "BOOLEAN", O[O.USER = 6] = "USER", O[O.CHANNEL = 7] = "CHANNEL", O[O.ROLE = 8] = "ROLE", O[O.MENTIONABLE = 9] = "MENTIONABLE", O[O.NUMBER = 10] = "NUMBER", O[O.ATTACHMENT = 11] = "ATTACHMENT", (R = u || (u = {}))[R.CHAT = 1] = "CHAT", R[R.USER = 2] = "USER", R[R.MESSAGE = 3] = "MESSAGE", R[R.PRIMARY_ENTRY_POINT = 4] = "PRIMARY_ENTRY_POINT", (C = d || (d = {}))[C.APPLICATION_COMMAND = 2] = "APPLICATION_COMMAND", C[C.MESSAGE_COMPONENT = 3] = "MESSAGE_COMPONENT", C[C.APPLICATION_COMMAND_AUTOCOMPLETE = 4] = "APPLICATION_COMMAND_AUTOCOMPLETE", C[C.MODAL_SUBMIT = 5] = "MODAL_SUBMIT", (g = _ || (_ = {}))[g.ACTION_ROW = 1] = "ACTION_ROW", g[g.BUTTON = 2] = "BUTTON", g[g.STRING_SELECT = 3] = "STRING_SELECT", g[g.INPUT_TEXT = 4] = "INPUT_TEXT", g[g.USER_SELECT = 5] = "USER_SELECT", g[g.ROLE_SELECT = 6] = "ROLE_SELECT", g[g.MENTIONABLE_SELECT = 7] = "MENTIONABLE_SELECT", g[g.CHANNEL_SELECT = 8] = "CHANNEL_SELECT", g[g.TEXT = 10] = "TEXT", (L = c || (c = {}))[L.PRIMARY = 1] = "PRIMARY", L[L.SECONDARY = 2] = "SECONDARY", L[L.SUCCESS = 3] = "SUCCESS", L[L.DESTRUCTIVE = 4] = "DESTRUCTIVE", L[L.LINK = 5] = "LINK", (D = E || (E = {}))[D.SMALL = 1] = "SMALL", D[D.PARAGRAPH = 2] = "PARAGRAPH", (v = I || (I = {}))[v.NORMAL = 1] = "NORMAL", v[v.CONTEXT = 2] = "CONTEXT", (M = T || (T = {}))[M.SUBSCRIPTION_PLAN = 1] = "SUBSCRIPTION_PLAN", M[M.ENTITLEMENT = 2] = "ENTITLEMENT", M[M.PREMIUM_LEGACY_UPGRADE_PROMOTION = 3] = "PREMIUM_LEGACY_UPGRADE_PROMOTION", M[M.PREMIUM_TRIAL = 4] = "PREMIUM_TRIAL", (y = f || (f = {}))[y.GUILD_PRODUCT = 0] = "GUILD_PRODUCT", (P = S || (S = {}))[P.WEBAUTHN = 1] = "WEBAUTHN", P[P.TOTP = 2] = "TOTP", P[P.SMS = 3] = "SMS"
         },
         2052: function(e, t, n) {
             "use strict";
@@ -86484,8 +86487,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284900", "284900"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284900")), t = 0), t
+                let t = parseInt((e = "284911", "284911"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284911")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110399,8 +110402,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284900",
-                    versionHash: "725c06306787f216405fdfddd032dbc31b77c18e"
+                    buildNumber: "284911",
+                    versionHash: "31b1d09e7a6075e02515fde606928758fc6b2e65"
                 }
             }
             n.r(t), n.d(t, {
@@ -152630,6 +152633,7 @@
                         case i.ComponentType.ROLE_SELECT:
                         case i.ComponentType.MENTIONABLE_SELECT:
                         case i.ComponentType.CHANNEL_SELECT:
+                        case i.ComponentType.TEXT:
                             return !0
                     }
                 };
@@ -152697,6 +152701,10 @@
                         case i.ComponentType.CHANNEL_SELECT:
                             return {
                                 type: i.ComponentType.CHANNEL_SELECT, id: I(r), customId: t.custom_id, disabled: t.disabled, placeholder: null !== (f = t.placeholder) && void 0 !== f ? f : l.default.Messages.MESSAGE_SELECT_COMPONENT_DEFAULT_PLACEHOLDER, minValues: t.min_values, maxValues: t.max_values, channelTypes: t.channel_types, defaultValues: t.default_values
+                            };
+                        case i.ComponentType.TEXT:
+                            return {
+                                type: i.ComponentType.TEXT, id: I(r), items: t.items
                             };
                         default:
                             return null
@@ -160576,10 +160584,16 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
+                    return _
+                },
+                getInitialParserState: function() {
+                    return d
+                },
+                getInitialParserStateFromMessage: function() {
                     return u
                 },
                 renderAutomodMessageMarkup: function() {
-                    return d
+                    return c
                 }
             }), n("47120"), n("757143"), n("865427");
             var i = n("830121"),
@@ -160589,41 +160603,63 @@
             let o = new Set([a.MessageEmbedTypes.IMAGE, a.MessageEmbedTypes.GIFV]),
                 l = new Set(["strong", "em", "u", "text", "inlineCode", "s", "spoiler"]);
 
-            function u(e) {
+            function u(e, t) {
+                let n = d({
+                        channelId: e.channel_id,
+                        messageId: e.id,
+                        renderOptions: t
+                    }),
+                    i = null != e.webhookId;
+                return {
+                    ...n,
+                    allowLinks: i || n.allowLinks,
+                    allowEmojiLinks: i,
+                    mentionChannels: e.mentionChannels
+                }
+            }
+
+            function d(e) {
+                let {
+                    channelId: t,
+                    messageId: n,
+                    renderOptions: i
+                } = e;
+                return {
+                    channelId: t,
+                    messageId: n,
+                    allowLinks: !!i.allowLinks,
+                    allowDevLinks: !!i.allowDevLinks,
+                    formatInline: !!i.formatInline,
+                    noStyleAndInteraction: !!i.noStyleAndInteraction,
+                    allowHeading: !!i.allowHeading,
+                    allowList: !!i.allowList,
+                    previewLinkTarget: !!i.previewLinkTarget,
+                    disableAnimatedEmoji: !!i.disableAnimatedEmoji,
+                    isInteracting: !!i.isInteracting,
+                    allowEmojiLinks: !1,
+                    disableAutoBlockNewlines: !0,
+                    mentionChannels: [],
+                    muted: !1
+                }
+            }
+
+            function _(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
                 return function(e, t, n) {
-                    var r, a;
                     let {
-                        toAST: u = !1,
-                        hideSimpleEmbedContent: d = !0,
-                        formatInline: E = !1,
-                        postProcessor: I
-                    } = n, T = !1;
-                    let f = e(t.content, !0, (r = t, a = n, {
-                        allowLinks: null != r.webhookId || !!a.allowLinks,
-                        allowDevLinks: !!a.allowDevLinks,
-                        allowEmojiLinks: null != r.webhookId,
-                        channelId: r.channel_id,
-                        messageId: r.id,
-                        mentionChannels: r.mentionChannels,
-                        isInteracting: !!a.isInteracting,
-                        formatInline: !!a.formatInline,
-                        noStyleAndInteraction: !!a.noStyleAndInteraction,
-                        allowHeading: !!a.allowHeading,
-                        allowList: !!a.allowList,
-                        previewLinkTarget: !!a.previewLinkTarget,
-                        disableAnimatedEmoji: !!a.disableAnimatedEmoji,
-                        disableAutoBlockNewlines: !0,
-                        muted: !1
-                    }), (e, n) => (!Array.isArray(e) && (e = [e]), d && (e = function(e, t) {
+                        toAST: r = !1,
+                        hideSimpleEmbedContent: a = !0,
+                        formatInline: d = !1,
+                        postProcessor: _
+                    } = n, c = !1, T = e(t.content, !0, u(t, n), (e, n) => (!Array.isArray(e) && (e = [e]), a && (e = function(e, t) {
                         if (1 !== e.length || 1 !== t.length) return e;
                         let n = e[0],
                             i = t[0];
                         return ("link" === n.type || "attachmentLink" === n.type) && o.has(i.type) && (0, s.isEmbedInline)(i) ? [] : e
-                    }(e, t.embeds)), !E && (e = function(e, t) {
-                        return t ? _(e) : ("paragraph" === e[0].type && e[0].content instanceof Array && (e[0].content = _(e[0].content)), e)
-                    }(e, n)), T = function(e, t) {
-                        return t ? c(e) : "paragraph" === e[0].type && e[0].content instanceof Array && c(e[0].content)
+                    }(e, t.embeds)), !d && (e = function(e, t) {
+                        return t ? E(e) : ("paragraph" === e[0].type && e[0].content instanceof Array && (e[0].content = E(e[0].content)), e)
+                    }(e, n)), c = function(e, t) {
+                        return t ? I(e) : "paragraph" === e[0].type && e[0].content instanceof Array && I(e[0].content)
                     }(e = function(e) {
                         let t = e.some(e => "link" !== e.type || !1);
                         return e.filter(e => {
@@ -160631,19 +160667,19 @@
                                 r = (0, i.parseQuestsEmbedCode)(e.target);
                             return !(n && null != r && !t)
                         })
-                    }(e), n), E && (e = function e(t) {
+                    }(e), n), d && (e = function e(t) {
                         return t.forEach(t => {
                             l.has(t.type) && null != t.content && (Array.isArray(t.content) ? e(t.content) : t.content = t.content.replace(/\n/g, " "))
                         }), t
-                    }(e)), null != I && (e = I(e, n)), e));
+                    }(e)), null != _ && (e = _(e, n)), e));
                     return {
-                        hasSpoilerEmbeds: T,
-                        content: f
+                        hasSpoilerEmbeds: c,
+                        content: T
                     }
                 }(t.formatInline ? r.default.parseInlineReply : r.default.parse, e, t)
             }
 
-            function d(e, t, n) {
+            function c(e, t, n) {
                 var i;
                 return i = r.default.parseAutoModerationSystemMessage, i(e, !0, {
                     allowLinks: !1,
@@ -160663,7 +160699,7 @@
                 }, e => (!Array.isArray(e) && (e = [e]), e))
             }
 
-            function _(e) {
+            function E(e) {
                 if (e.some(e => "emoji" !== e.type && "customEmoji" !== e.type && "soundboard" !== e.type && ("string" != typeof e.content || "" !== e.content.trim()) && !0)) return e;
                 let t = 0;
                 return (e.forEach(e => {
@@ -160673,7 +160709,7 @@
                 }), e)
             }
 
-            function c(e) {
+            function I(e) {
                 return e.some(e => "spoiler" === e.type && Array.isArray(e.content) && e.content.some(e => "link" === e.type || "attachmentLink" === e.type))
             }
         },
@@ -163425,8 +163461,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713282200580",
-                                    build_number: "284900"
+                                    built_at: "1713284104429",
+                                    build_number: "284911"
                                 }
                             },
                             retries: 1
@@ -240012,7 +240048,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "725c06306787f216405fdfddd032dbc31b77c18e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "31b1d09e7a6075e02515fde606928758fc6b2e65"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268428,7 +268464,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284900"
+                                build_number: "284911"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -275607,7 +275643,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284900", "284900"), 10);
+                let s = parseInt((n = "284911", "284911"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -302619,4 +302655,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.f4b69a29846422febf59.js.map
+//# sourceMappingURL=73050.8ac0d602090c47dc1a0c.js.map
