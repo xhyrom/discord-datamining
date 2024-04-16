@@ -7281,12 +7281,12 @@ html .invoiceCancelRow_aa7946 {
 .streamerModeEnabledBtn_b696dd {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -133925,4 +133925,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7f8be7fee2c63694e34d.css.map*/
+/*# sourceMappingURL=99387.7dbf7d5880dcad954521.css.map*/
