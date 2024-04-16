@@ -36634,7 +36634,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285018", ", Version Hash: ").concat("ae14e4b05fbfa61f3cb140ba1d17476c12ce992b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285024", ", Version Hash: ").concat("b8fb959c743a42fb81ff7b466d971e73905a84c2")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86486,8 +86486,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285018", "285018"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285018")), t = 0), t
+                let t = parseInt((e = "285024", "285024"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285024")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -105432,7 +105432,8 @@
                     }
                 }, S = async (e, t) => {
                     r.default.dispatch({
-                        type: "COLLECTIBLES_PRODUCT_FETCH"
+                        type: "COLLECTIBLES_PRODUCT_FETCH",
+                        skuId: e
                     });
                     try {
                         let n = {};
@@ -105443,13 +105444,15 @@
                         });
                         r.default.dispatch({
                             type: "COLLECTIBLES_PRODUCT_FETCH_SUCCESS",
+                            skuId: e,
                             product: l.default.fromServer(s.body)
                         })
-                    } catch (e) {
+                    } catch (t) {
                         throw r.default.dispatch({
                             type: "COLLECTIBLES_PRODUCT_FETCH_FAILURE",
-                            error: e
-                        }), new a.APIError(e)
+                            skuId: e,
+                            error: t
+                        }), new a.APIError(t)
                     }
                 }, h = async e => {
                     r.default.dispatch({
@@ -105508,16 +105511,20 @@
                 T = new Map,
                 f = I,
                 S = T,
-                h = !1;
-            let A = () => {
-                f = I, S = T, r = void 0, h = !1, i = void 0
+                h = !1,
+                A = new Set;
+            let m = () => {
+                f = I, S = T, r = void 0, h = !1, A = new Set, i = void 0
             };
-            class m extends(s = d.default.Store) {
+            class N extends(s = d.default.Store) {
                 initialize() {
-                    this.syncWith([c.default], A)
+                    this.syncWith([c.default], m)
                 }
-                get isFetching() {
+                get isFetchingCategories() {
                     return h
+                }
+                isFetchingProduct(e) {
+                    return null != e && A.has(e)
                 }
                 get error() {
                     return i
@@ -105542,12 +105549,12 @@
                     return this.getCategory(null == t ? void 0 : t.categorySkuId)
                 }
             }
-            l = "CollectiblesCategoryStore", (o = "displayName") in(a = m) ? Object.defineProperty(a, o, {
+            l = "CollectiblesCategoryStore", (o = "displayName") in(a = N) ? Object.defineProperty(a, o, {
                 value: l,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : a[o] = l, t.default = new m(_.default, {
+            }) : a[o] = l, t.default = new N(_.default, {
                 COLLECTIBLES_CATEGORIES_FETCH: e => {
                     h = !0, i = void 0
                 },
@@ -105558,21 +105565,29 @@
                     let {
                         error: t
                     } = e;
-                    f = I, S = T, h = !1, i = t
+                    f = I, S = T, h = !1, A = new Set, i = t
                 },
                 COLLECTIBLES_PRODUCT_FETCH: e => {
-                    h = !0, i = void 0
+                    let {
+                        skuId: t
+                    } = e;
+                    (A = new Set(A)).add(t), i = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_SUCCESS: e => {
-                    S.set(e.product.skuId, e.product), h = !1, i = void 0
+                    let {
+                        skuId: t,
+                        product: n
+                    } = e;
+                    S.set(t, n), (A = new Set(A)).delete(t), i = void 0
                 },
                 COLLECTIBLES_PRODUCT_FETCH_FAILURE: e => {
                     let {
-                        error: t
+                        skuId: t,
+                        error: n
                     } = e;
-                    h = !1, i = t
+                    (A = new Set(A)).delete(t), i = n
                 },
-                LOGOUT: A
+                LOGOUT: m
             })
         },
         337679: function(e, t, n) {
@@ -106129,7 +106144,7 @@
                     });
                     let [n, l, u, d] = (0, r.useStateFromStoresArray)([o.default], () => {
                         var e;
-                        return [o.default.isFetching, o.default.error, null !== (e = o.default.lastFetched) && void 0 !== e ? e : 0, o.default.categories]
+                        return [o.default.isFetchingCategories, o.default.error, null !== (e = o.default.lastFetched) && void 0 !== e ? e : 0, o.default.categories]
                     });
                     return (0, i.useEffect)(() => {
                         !(n || l || Date.now() - u < 6e5) && (0, a.fetchCollectiblesCategories)(e)
@@ -106173,7 +106188,7 @@
             function u(e) {
                 let t = (0, r.useStateFromStores)([s.default], () => null != e ? s.default.get(e) : null),
                     n = null != t && t.productLine !== l.SKUProductLines.COLLECTIBLES,
-                    [u, d] = (0, r.useStateFromStoresArray)([o.default], () => [o.default.isFetching, o.default.getProduct(e)]);
+                    [u, d] = (0, r.useStateFromStoresArray)([o.default], () => [o.default.isFetchingProduct(e), o.default.getProduct(e)]);
                 return (0, i.useEffect)(() => {
                     null != e && null == d && !n && !u && (0, a.fetchCollectiblesProduct)(e)
                 }, [e, d, n, u]), {
@@ -110363,8 +110378,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285018",
-                    versionHash: "ae14e4b05fbfa61f3cb140ba1d17476c12ce992b"
+                    buildNumber: "285024",
+                    versionHash: "b8fb959c743a42fb81ff7b466d971e73905a84c2"
                 }
             }
             n.r(t), n.d(t, {
@@ -138703,7 +138718,7 @@
                     (0, r.openModalLazy)(async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("98880")]).then(n.bind(n, "645264"));
+                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("70935")]).then(n.bind(n, "645264"));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             guildId: e,
@@ -163433,8 +163448,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713294927924",
-                                    build_number: "285018"
+                                    built_at: "1713295920591",
+                                    build_number: "285024"
                                 }
                             },
                             retries: 1
@@ -240001,7 +240016,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ae14e4b05fbfa61f3cb140ba1d17476c12ce992b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "b8fb959c743a42fb81ff7b466d971e73905a84c2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268417,7 +268432,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285018"
+                                build_number: "285024"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -275596,7 +275611,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285018", "285018"), 10);
+                let s = parseInt((n = "285024", "285024"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -302608,4 +302623,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.204dc57005d71b8f2159.js.map
+//# sourceMappingURL=73050.b20dbe7d932b6cd5cc34.js.map
