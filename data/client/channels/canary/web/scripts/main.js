@@ -36636,7 +36636,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285131", ", Version Hash: ").concat("0fa6bdf9679dc9acd6f59a8781f9aef2c1432ec1")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285135", ", Version Hash: ").concat("3b489701a0136b6a9a02ce4721a9346a3208ad35")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86491,8 +86491,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285131", "285131"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285131")), t = 0), t
+                let t = parseInt((e = "285135", "285135"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285135")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110388,8 +110388,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285131",
-                    versionHash: "0fa6bdf9679dc9acd6f59a8781f9aef2c1432ec1"
+                    buildNumber: "285135",
+                    versionHash: "3b489701a0136b6a9a02ce4721a9346a3208ad35"
                 }
             }
             n.r(t), n.d(t, {
@@ -161317,11 +161317,11 @@
                 m = n("889564"),
                 N = n("687476"),
                 p = n("761966"),
-                O = n("98278"),
-                R = n("642345"),
-                C = n("197115"),
-                g = n("703656"),
-                L = n("706454"),
+                O = n("563927"),
+                R = n("98278"),
+                C = n("642345"),
+                g = n("197115"),
+                L = n("703656"),
                 D = n("170671"),
                 v = n("944486"),
                 M = n("914010"),
@@ -161355,10 +161355,7 @@
                         emojiId: t.emojiId,
                         currentGuildId: M.default.getGuildId()
                     });
-                    let n = (0, l.useStateFromStores)([L.default], () => L.default.locale.startsWith("en-")),
-                        r = ":pizza:" === t.name && n ? z.default.Messages.POLLS_MARKETING_EASTER_EGG_PIZZA_EMOJI_DESCRIPTION.format({
-                            emojiName: t.name
-                        }) : t.name;
+                    let n = (0, O.default)(t.name);
                     return (0, i.jsx)(u.Dialog, {
                         children: (0, i.jsx)(Y.MessagePopoutContent, {
                             children: (0, i.jsxs)(P.default, {
@@ -161377,7 +161374,7 @@
                                         className: X.__invalid_emojiName,
                                         variant: "text-md/semibold",
                                         children: (0, i.jsx)(G.default, {
-                                            children: r
+                                            children: n
                                         })
                                     }), (0, i.jsx)(d.Text, {
                                         variant: "text-sm/normal",
@@ -161403,7 +161400,7 @@
                         size: 32,
                         canAnimate: !0
                     }), _ = (n = null == n || n) || t.isDiscoverable(), c = () => {
-                        t.isDiscoverable() ? (0, F.startLurking)(s, {}) : n && (0, g.transitionTo)(j.Routes.CHANNEL(s, v.default.getChannelId(s)))
+                        t.isDiscoverable() ? (0, F.startLurking)(s, {}) : n && (0, L.transitionTo)(j.Routes.CHANNEL(s, v.default.getChannelId(s)))
                     }, E = t.isDiscoverable() && null != t.presenceCount, I = () => {
                         let e = !r && !n;
                         return (0, i.jsxs)(i.Fragment, {
@@ -161519,17 +161516,17 @@
                     let {
                         node: u,
                         expressionSourceGuild: S,
-                        joinedEmojiSourceGuildRecord: g,
+                        joinedEmojiSourceGuildRecord: O,
                         closePopout: L,
                         onToggleShowMoreEmojis: v,
                         guildEmoji: U,
                         demoMode: b = !1,
                         nonce: B
-                    } = e, V = (0, l.useStateFromStores)([y.default], () => y.default.getCurrentUser()), F = (0, l.useStateFromStores)([M.default], () => M.default.getGuildId()), q = x.default.isPremium(V), J = null != F && (F === (null == S ? void 0 : S.id) || F === (null == g ? void 0 : g.id)), $ = null != g, et = null !== (t = null == S ? void 0 : S.isDiscoverable()) && void 0 !== t && t;
+                    } = e, V = (0, l.useStateFromStores)([y.default], () => y.default.getCurrentUser()), F = (0, l.useStateFromStores)([M.default], () => M.default.getGuildId()), q = x.default.isPremium(V), J = null != F && (F === (null == S ? void 0 : S.id) || F === (null == O ? void 0 : O.id)), $ = null != O, et = null !== (t = null == S ? void 0 : S.isDiscoverable()) && void 0 !== t && t;
                     b && (q = !0, et = !0, $ = !1, J = !1);
                     let {
                         enabled: en
-                    } = R.NitroBadgeOnEmojiHoverExperiment.useExperiment({
+                    } = C.NitroBadgeOnEmojiHoverExperiment.useExperiment({
                         location: "CustomGuildEmojiPopout"
                     }, {
                         autoTrackExposure: !0
@@ -161573,7 +161570,7 @@
                                 L(), k.default.track(j.AnalyticEvents.PREMIUM_PROMOTION_OPENED, {
                                     location_page: ei.page,
                                     location_section: ei.section
-                                }), (0, O.navigateToPremiumMarketingPage)()
+                                }), (0, R.navigateToPremiumMarketingPage)()
                             }
                         }),
                         e_ = $ && es && !eo && (q && er || !q),
@@ -161633,7 +161630,7 @@
                                             children: ec
                                         })]
                                     })]
-                                }), eT ? (0, i.jsx)(C.default, {
+                                }), eT ? (0, i.jsx)(g.default, {
                                     className: X.ctaButton,
                                     subscriptionTier: K.PremiumSubscriptionSKUs.TIER_2,
                                     size: d.Button.Sizes.SMALL,
@@ -161654,7 +161651,7 @@
                                     size: d.Button.Sizes.SMALL,
                                     fullWidth: !0,
                                     onClick: () => {
-                                        L(), (null == g ? void 0 : g.id) != null && _.default.transitionToGuildSync(g.id, void 0, W.StaticChannelRoute.ROLE_SUBSCRIPTIONS, [E.default.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL])
+                                        L(), (null == O ? void 0 : O.id) != null && _.default.transitionToGuildSync(O.id, void 0, W.StaticChannelRoute.ROLE_SUBSCRIPTIONS, [E.default.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL])
                                     },
                                     children: ea ? z.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_UPGRADE_UPSELL_BUTTON : z.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UPSELL_BUTTON
                                 })]
@@ -161670,7 +161667,7 @@
                                     className: X.guildTitle,
                                     children: $ ? z.default.Messages.EMOJI_POPOUT_JOINED_GUILD_EMOJI_DESCRIPTION : z.default.Messages.EMOJI_POPOUT_UNJOINED_GUILD_EMOJI_DESCRIPTION
                                 }), (0, i.jsx)(Z, {
-                                    expressionSourceGuild: null != S ? S : h.default.createFromGuildRecord(g),
+                                    expressionSourceGuild: null != S ? S : h.default.createFromGuildRecord(O),
                                     hasJoinedExpressionSourceGuild: $,
                                     isDisplayingJoinGuildButtonInPopout: eI
                                 }), e && (0, i.jsxs)(i.Fragment, {
@@ -161734,7 +161731,7 @@
                                 ...t
                             })
                         }, e.id)), !l && (_ === H.EmojiPopoutType.GET_PREMIUM ? (0, i.jsxs)(i.Fragment, {
-                            children: [(0, i.jsx)(C.default, {
+                            children: [(0, i.jsx)(g.default, {
                                 subscriptionTier: K.PremiumSubscriptionSKUs.TIER_2,
                                 buttonText: a.text,
                                 className: X.ctaButton,
@@ -163510,8 +163507,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713303782990",
-                                    build_number: "285131"
+                                    built_at: "1713304336195",
+                                    build_number: "285135"
                                 }
                             },
                             retries: 1
@@ -170504,6 +170501,24 @@
                     ...e,
                     expiry: r()(e.expiry)
                 }
+            }
+        },
+        563927: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return a
+                }
+            });
+            var i = n("442837"),
+                r = n("706454"),
+                s = n("689938");
+
+            function a(e) {
+                let t = (0, i.useStateFromStores)([r.default], () => r.default.locale.startsWith("en-"));
+                return ":pizza:" === e && t ? s.default.Messages.POLLS_MARKETING_EASTER_EGG_PIZZA_EMOJI_DESCRIPTION.format({
+                    emojiName: e
+                }) : e
             }
         },
         768232: function(e, t, n) {
@@ -240165,7 +240180,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0fa6bdf9679dc9acd6f59a8781f9aef2c1432ec1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3b489701a0136b6a9a02ce4721a9346a3208ad35"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268581,7 +268596,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285131"
+                                build_number: "285135"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -275760,7 +275775,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285131", "285131"), 10);
+                let s = parseInt((n = "285135", "285135"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -302776,4 +302791,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.c84fceaf8c8f234bec41.js.map
+//# sourceMappingURL=73050.824b29a625107541081f.js.map
