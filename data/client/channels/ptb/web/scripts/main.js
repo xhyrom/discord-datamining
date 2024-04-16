@@ -36636,7 +36636,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285130", ", Version Hash: ").concat("3fd30fdc68719a955e722e1589e57be4b77c7e82")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285131", ", Version Hash: ").concat("0fa6bdf9679dc9acd6f59a8781f9aef2c1432ec1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55403,6 +55403,8 @@
                 CLAN_SETUP_TAG_PLACEHOLDER: "GGEZ",
                 CLAN_SETUP_SIGN_TITLE: "You're almost done!",
                 CLAN_SETUP_SIGN_SUBTITLE: "One last step - sign the charter to become a Clan.",
+                CLAN_SETUP_OPTIONAL: "Optional",
+                CLAN_SETUP_WILDCARDS_SUBTITLE: "How would you describe your Guild in three words? Be creative.",
                 CLAN_PRIMETIME_PLACEHOLDER: "Day",
                 CLAN_PRIMETIME_MONDAY: "Monday",
                 CLAN_PRIMETIME_TUESDAY: "Tuesday",
@@ -86489,8 +86491,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285130", "285130"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285130")), t = 0), t
+                let t = parseInt((e = "285131", "285131"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285131")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -100597,7 +100599,8 @@
                             badge_color_secondary: t.badgeSecondaryColor,
                             banner: t.banner,
                             brand_color_primary: t.brandPrimaryColor,
-                            brand_color_secondary: t.brandSecondaryColor
+                            brand_color_secondary: t.brandSecondaryColor,
+                            wildcard_descriptors: t.wildcardDescriptors
                         }
                     }), s.default.dispatch({
                         type: "CLAN_SETUP_SUCCESS",
@@ -100646,7 +100649,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 AGE_TRAITS: function() {
-                    return D
+                    return v
                 },
                 ALL_TRAITS_SET: function() {
                     return y
@@ -100672,23 +100675,23 @@
                 ClanSetupSteps: function() {
                     return s
                 },
+                EMPTY_WILDCARD: function() {
+                    return p
+                },
                 GENSHIN_ID: function() {
-                    return g
+                    return L
                 },
                 HOISTED_SEARCH_APPLICATION_IDS_BY_PRIORITY: function() {
                     return V
                 },
                 IDENTITY_TRAITS: function() {
-                    return v
+                    return M
                 },
                 LANGUAGES_SET: function() {
                     return P
                 },
                 LOCALE_TIME_FORMAT: function() {
                     return N
-                },
-                LOCALE_TRAITS: function() {
-                    return M
                 },
                 MAX_GAME_HOURS: function() {
                     return A
@@ -100712,25 +100715,25 @@
                     return G
                 },
                 PLAYSTYLE_GROUPS: function() {
-                    return p
+                    return O
                 },
                 SUGGESTED_TRAITS_SET: function() {
                     return U
                 },
                 VALORANT_ID: function() {
-                    return C
+                    return g
                 },
                 VALORANT_TRAITS: function() {
-                    return L
+                    return D
                 },
                 ensureUserClanData: function() {
                     return B
                 },
                 getPlaystyleOptions: function() {
-                    return R
+                    return C
                 },
                 getPlaystyleTitle: function() {
-                    return O
+                    return R
                 },
                 toServerClanData: function() {
                     return k
@@ -100746,9 +100749,10 @@
                 h = 50,
                 A = 7,
                 m = c()("2024-01-01T00:00:00"),
-                N = "LT";
+                N = "LT",
+                p = "";
             (o = i || (i = {}))[o.NONE = 0] = "NONE", o[o.SOCIAL = 1] = "SOCIAL", o[o.CASUAL = 2] = "CASUAL", o[o.COMPETITIVE = 3] = "COMPETITIVE", o[o.CREATIVE = 4] = "CREATIVE", o[o.VERY_HARDCORE = 5] = "VERY_HARDCORE";
-            let p = {
+            let O = {
                 0: "NONE",
                 4: "NONE",
                 1: "CASUAL",
@@ -100757,7 +100761,7 @@
                 5: "COMPETITIVE"
             };
 
-            function O(e) {
+            function R(e) {
                 switch (e) {
                     case 1:
                         return E.default.Messages.CLAN_SETUP_PLAYSTYLE_SOCIAL_TITLE;
@@ -100772,7 +100776,7 @@
                 }
             }
 
-            function R() {
+            function C() {
                 return {
                     1: {
                         type: 1,
@@ -100800,13 +100804,12 @@
                     }
                 }
             }(l = r || (r = {}))[l.INTRO_ANIMATION = 0] = "INTRO_ANIMATION", l[l.SETUP = 1] = "SETUP", l[l.SIGN = 2] = "SIGN", (u = s || (s = {}))[u.FOUNDATIONAL_INTRO = 0] = "FOUNDATIONAL_INTRO", u[u.GAMES = 1] = "GAMES", u[u.PLAYSTYLE = 2] = "PLAYSTYLE", u[u.PERSONALITY_INTRO = 3] = "PERSONALITY_INTRO", u[u.UTILITY_TRAITS = 4] = "UTILITY_TRAITS", u[u.INTERESTS = 5] = "INTERESTS", u[u.DESCRIPTION = 6] = "DESCRIPTION", u[u.PRIMETIME = 7] = "PRIMETIME", u[u.IDENTITY_INTRO = 8] = "IDENTITY_INTRO", u[u.CUSTOMIZE_TAG_BADGE = 9] = "CUSTOMIZE_TAG_BADGE", u[u.CUSTOMIZE_BANNER = 10] = "CUSTOMIZE_BANNER", u[u.APPLICATION_INTRO = 11] = "APPLICATION_INTRO", u[u.MEMBER_APPLICATION = 12] = "MEMBER_APPLICATION";
-            let C = "700136079562375258",
-                g = "762434991303950386",
-                L = ["Unrated", "Spike Rush", "Death Match", "Swift", "TDM", "Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF"],
-                D = ["20+", "30+", "40+", "All Ages"],
-                v = ["LGBTQIA-Friendly", "All genders"],
-                M = ["NA", "LATAM", "EU West", "SEA", "OCE", "Global"],
-                y = new Set([...L, ...D, ...v, ...M]),
+            let g = "700136079562375258",
+                L = "762434991303950386",
+                D = ["Unrated", "Spike Rush", "Death Match", "Swift", "TDM", "Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF"],
+                v = ["20+", "30+", "40+", "All Ages"],
+                M = ["LGBTQIA-Friendly", "All genders"],
+                y = new Set([...D, ...v, ...M]),
                 P = new Set(E.default.getAvailableLocales().map(e => e.value)),
                 U = new Set(["Anime", "Art and Craft", "Architecture", "Baseball", "Basketball", "Beauty", "Beer", "Board Games", "Books", "Cars", "Celebrities", "Coffee", "Coding", "Craft", "Design", "F1", "Fashion", "Fitness", "Food", "Football", "Healthcare", "Home Decor", "Houseplants", "K-Pop", "Knitting", "LEGO", "MARVEL", "Motorcycles", "Movies", "Music", "Nail Art", "Pets", "Photography", "Pok\xe9mon", "Programming", "Roman History", "Science", "Skiing", "Soccer", "Star Wars", "TCG", "TEA", "Tech", "Travel", "TV Shows", "Wine"]);
             (d = a || (a = {}))[d.PIXEL_RUSH = 0] = "PIXEL_RUSH", d[d.SCANLINES = 1] = "SCANLINES", d[d.TEXTURED = 2] = "TEXTURED", d[d.MAGIC = 3] = "MAGIC", d[d.CUSTOM = 4] = "CUSTOM";
@@ -110385,8 +110388,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285130",
-                    versionHash: "3fd30fdc68719a955e722e1589e57be4b77c7e82"
+                    buildNumber: "285131",
+                    versionHash: "0fa6bdf9679dc9acd6f59a8781f9aef2c1432ec1"
                 }
             }
             n.r(t), n.d(t, {
@@ -163507,8 +163510,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713303630401",
-                                    build_number: "285130"
+                                    built_at: "1713303782990",
+                                    build_number: "285131"
                                 }
                             },
                             retries: 1
@@ -240162,7 +240165,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3fd30fdc68719a955e722e1589e57be4b77c7e82"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "0fa6bdf9679dc9acd6f59a8781f9aef2c1432ec1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268578,7 +268581,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285130"
+                                build_number: "285131"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -275757,7 +275760,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285130", "285130"), 10);
+                let s = parseInt((n = "285131", "285131"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -302773,4 +302776,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.ec14a57830c86d5bfb17.js.map
+//# sourceMappingURL=73050.c84fceaf8c8f234bec41.js.map

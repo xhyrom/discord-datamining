@@ -56516,6 +56516,30 @@ html .progress__00e29 {
     margin-bottom: 12px
 }
 
+.optionalTag__36ca8 {
+    border-radius: 4px;
+    background-color: var(--bg-mod-subtle);
+    align-self: flex-start;
+    padding: 2px 8px;
+    margin: 40px 0 8px
+}
+
+.wildcardRow__85791 {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    max-width: 400px
+}
+
+.input_e60656 {
+    border-radius: 8px;
+    border: 1px solid var(--border-subtle)
+}
+
+.wildcardInput_c66fdf {
+    text-align: center
+}
+
 .container__299a3 {
     position: absolute;
     top: 0;
@@ -60705,7 +60729,8 @@ html .progress__00e29 {
     z-index: 1;
     position: absolute;
     top: 24px;
-    left: 24px
+    left: 24px;
+    border-radius: 8px
 }
 
 .mainContent__23e7a {
@@ -60937,7 +60962,8 @@ html .progress__00e29 {
 .previousButton_b43130 {
     position: absolute;
     left: 24px;
-    bottom: 24px
+    bottom: 24px;
+    border-radius: 8px
 }
 
 .finishButton__8590c {
@@ -60948,7 +60974,8 @@ html .progress__00e29 {
     flex-direction: row;
     gap: 8px;
     align-items: center;
-    max-width: 25%
+    max-width: 25%;
+    border-radius: 8px
 }
 
 .fadeIn__0663f {
@@ -133681,4 +133708,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.8d89b62e0346a3971cca.css.map*/
+/*# sourceMappingURL=99387.42acb111b16441a24373.css.map*/
