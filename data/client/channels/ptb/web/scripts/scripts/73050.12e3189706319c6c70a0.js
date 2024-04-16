@@ -36634,7 +36634,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285035", ", Version Hash: ").concat("f04a0606f4d12afa96286a70d92b597a883cda99")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285046", ", Version Hash: ").concat("c35131c5e050e6d7dd7bfa12a48c6ae17cdd7a8f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86486,8 +86486,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285035", "285035"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285035")), t = 0), t
+                let t = parseInt((e = "285046", "285046"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285046")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110378,8 +110378,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285035",
-                    versionHash: "f04a0606f4d12afa96286a70d92b597a883cda99"
+                    buildNumber: "285046",
+                    versionHash: "c35131c5e050e6d7dd7bfa12a48c6ae17cdd7a8f"
                 }
             }
             n.r(t), n.d(t, {
@@ -135006,7 +135006,7 @@
                 let C = await (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("61247"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("22646"), n.e("54999"), n.e("57743")]).then(n.bind(n, "343649"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("63438"), n.e("61247"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("22646"), n.e("54999"), n.e("57743")]).then(n.bind(n, "343649"));
                     return n => {
                         let {
                             transitionState: r,
@@ -163448,8 +163448,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713297046589",
-                                    build_number: "285035"
+                                    built_at: "1713298167392",
+                                    build_number: "285046"
                                 }
                             },
                             retries: 1
@@ -169044,7 +169044,7 @@
                 (0, s.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("61247"), n.e("6416"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("32776"), n.e("57878"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("34853")]).then(n.bind(n, "7305"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("6416"), n.e("63438"), n.e("61247"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("32776"), n.e("57878"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("34853")]).then(n.bind(n, "7305"));
                     return n => {
                         let {
                             onClose: r,
@@ -169146,7 +169146,7 @@
                         PaymentContextProvider: e
                     } = await Promise.resolve().then(n.bind(n, "598")), a = (await Promise.all([n.e("49237"), n.e("99387"), n.e("15972"), n.e("6416"), n.e("32776"), n.e("10993")]).then(n.bind(n, "405083"))).default, {
                         getApplicationPaymentSteps: c
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("58625"), n.e("61247"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("95900"), n.e("74195")]).then(n.bind(n, "759386")), p = c({
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("58625"), n.e("63438"), n.e("61247"), n.e("62511"), n.e("58600"), n.e("95900"), n.e("74195")]).then(n.bind(n, "759386")), p = c({
                         guildId: T,
                         showBenefitsFirst: h,
                         eligibleApplicationSubscriptionGuilds: A
@@ -200231,7 +200231,7 @@
                     CDN_HOST: n
                 } = window.GLOBAL_ENV;
                 return null != n ? "".concat(location.protocol, "//").concat(n, "/badge-icons/").concat(e, ".png") : "".concat(location.protocol).concat(t).concat(f.Endpoints.BADGE_ICON(e))
-            }(i = u || (u = {})).USER_INFO = "USER_INFO", i.USER_INFO_CONNECTIONS = "USER_INFO_CONNECTIONS", i.ACTIVITY = "ACTIVITY", i.MUTUAL_GUILDS = "MUTUAL_GUILDS", i.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", i.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", (d || (d = {})).RECENT_GAMES = "RECENT_GAMES", (r = _ || (_ = {})).POPOUT = "POPOUT", r.MODAL = "MODAL", r.SETTINGS = "SETTINGS", r.PANEL = "PANEL", r.CARD = "CARD", r.POMELO_POPOUT = "POMELO_POPOUT", r.CANCEL_MODAL = "CANCEL_MODAL", r.BITE_SIZE = "BITE_SIZE", r.FULL_SIZE = "FULL_SIZE", (s = c || (c = {})).POPOUT = "POPOUT", s.BITE_SIZE_POPOUT = "BITE_SIZE_POPOUT", s.MODAL = "MODAL", s.SIMPLIFIED_MODAL = "SIMPLIFIED_MODAL", s.DM_PANEL = "DM_PANEL", s.ACCOUNT_POPOUT = "ACCOUNT_POPOUT", s.ACTION_SHEET = "ACTION_SHEET", (a = E || (E = {}))[a.NICKNAME = 0] = "NICKNAME", a[a.PRONOUNS = 1] = "PRONOUNS", a[a.AVATAR = 2] = "AVATAR", a[a.ANIMATED_AVATAR = 3] = "ANIMATED_AVATAR", a[a.BANNER = 4] = "BANNER", a[a.ANIMATED_BANNER = 5] = "ANIMATED_BANNER", a[a.BIO = 6] = "BIO", a[a.THEME = 7] = "THEME", a[a.AVATAR_DECORATION = 8] = "AVATAR_DECORATION", a[a.PROFILE_EFFECT = 9] = "PROFILE_EFFECT", (o = I || (I = {})).VIEW = "VIEW", o.SEND_MESSAGE = "SEND_MESSAGE", o.SEND_DIRECT_MESSAGE = "SEND_DIRECT_MESSAGE", o.SEND_FRIEND_REQUEST = "SEND_FRIEND_REQUEST", o.ACCEPT_FRIEND_REQUEST = "ACCEPT_FRIEND_REQUEST", o.IGNORE_FRIEND_REQUEST = "IGNORE_FRIEND_REQUEST", o.CANCEL_FRIEND_REQUEST = "CANCEL_FRIEND_REQUEST", o.REMOVE_FRIEND = "REMOVE_FRIEND", o.BLOCK = "BLOCK", o.UNBLOCK = "UNBLOCK", o.REPORT = "REPORT", o.COPY_USERNAME = "COPY_USERNAME", o.COPY_USER_ID = "COPY_USER_ID", o.PRESS_VIEW_PROFILE = "PRESS_VIEW_PROFILE", o.PRESS_VIEW_MAIN_PROFILE = "PRESS_VIEW_MAIN_PROFILE", o.PRESS_VIEW_SERVER_PROFILE = "PRESS_VIEW_SERVER_PROFILE", o.PRESS_OPTIONS = "PRESS_OPTIONS", o.PRESS_BADGE = "PRESS_BADGE", o.PRESS_SECTION = "PRESS_SECTION", o.PRESS_PRONOUNS = "PRESS_PRONOUNS", o.PRESS_PREMIUM_UPSELL = "PRESS_PREMIUM_UPSELL", o.PRESS_ADD_NOTE = "PRESS_ADD_NOTE", o.PRESS_SET_STATUS = "PRESS_SET_STATUS", o.PRESS_SET_CUSTOM_STATUS = "PRESS_SET_CUSTOM_STATUS", o.PRESS_SWITCH_ACCOUNTS = "PRESS_SWITCH_ACCOUNTS", o.PRESS_SET_FRIEND_NICKNAME = "PRESS_SET_FRIEND_NICKNAME", o.PRESS_INVITE_TO_SERVER = "PRESS_INVITE_TO_SERVER", o.PRESS_MOD_VIEW = "PRESS_MOD_VIEW", o.JOIN_ACTIVITY = "JOIN_ACTIVITY", o.SET_NOTE = "SET_NOTE", o.SET_VOLUME = "SET_VOLUME", o.EDIT_PROFILE = "EDIT_PROFILE", o.EDIT_GUILD_PROFILE = "EDIT_GUILD_PROFILE", o.GIFT_PREMIUM = "GIFT_PREMIUM", o.VOICE_CALL = "VOICE_CALL", o.VIDEO_CALL = "VIDEO_CALL", o.MUTE = "MUTE", o.MUTE_SOUNDBOARD = "MUTE_SOUNDBOARD", o.DISABLE_VIDEO = "DISABLE_VIDEO", o.DEAFEN = "DEAFEN", o.DISCONNECT = "DISCONNECT", (l = T || (T = {})).VOICE = "VOICE", l.PLAYING = "PLAYING", l.STREAMING = "STREAMING", l.LISTENING = "LISTENING", l.WATCHING = "WATCHING", l.CUSTOM_STATUS = "CUSTOM_STATUS", l.COMPETING = "COMPETING", l.HANG_STATUS = "HANG_STATUS"
+            }(i = u || (u = {})).USER_INFO = "USER_INFO", i.USER_INFO_CONNECTIONS = "USER_INFO_CONNECTIONS", i.ACTIVITY = "ACTIVITY", i.MUTUAL_GUILDS = "MUTUAL_GUILDS", i.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", i.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", (d || (d = {})).RECENT_GAMES = "RECENT_GAMES", (r = _ || (_ = {})).POPOUT = "POPOUT", r.MODAL = "MODAL", r.SETTINGS = "SETTINGS", r.PANEL = "PANEL", r.CARD = "CARD", r.POMELO_POPOUT = "POMELO_POPOUT", r.CANCEL_MODAL = "CANCEL_MODAL", r.BITE_SIZE = "BITE_SIZE", r.FULL_SIZE = "FULL_SIZE", (s = c || (c = {})).POPOUT = "POPOUT", s.BITE_SIZE_POPOUT = "BITE_SIZE_POPOUT", s.MODAL = "MODAL", s.SIMPLIFIED_MODAL = "SIMPLIFIED_MODAL", s.DM_PANEL = "DM_PANEL", s.ACCOUNT_POPOUT = "ACCOUNT_POPOUT", s.ACTION_SHEET = "ACTION_SHEET", (a = E || (E = {}))[a.NICKNAME = 0] = "NICKNAME", a[a.PRONOUNS = 1] = "PRONOUNS", a[a.AVATAR = 2] = "AVATAR", a[a.ANIMATED_AVATAR = 3] = "ANIMATED_AVATAR", a[a.BANNER = 4] = "BANNER", a[a.ANIMATED_BANNER = 5] = "ANIMATED_BANNER", a[a.BIO = 6] = "BIO", a[a.THEME = 7] = "THEME", a[a.AVATAR_DECORATION = 8] = "AVATAR_DECORATION", a[a.PROFILE_EFFECT = 9] = "PROFILE_EFFECT", (o = I || (I = {})).VIEW = "VIEW", o.SEND_MESSAGE = "SEND_MESSAGE", o.SEND_DIRECT_MESSAGE = "SEND_DIRECT_MESSAGE", o.SEND_FRIEND_REQUEST = "SEND_FRIEND_REQUEST", o.ACCEPT_FRIEND_REQUEST = "ACCEPT_FRIEND_REQUEST", o.IGNORE_FRIEND_REQUEST = "IGNORE_FRIEND_REQUEST", o.CANCEL_FRIEND_REQUEST = "CANCEL_FRIEND_REQUEST", o.REMOVE_FRIEND = "REMOVE_FRIEND", o.BLOCK = "BLOCK", o.UNBLOCK = "UNBLOCK", o.REPORT = "REPORT", o.COPY_USERNAME = "COPY_USERNAME", o.COPY_USER_ID = "COPY_USER_ID", o.PRESS_VIEW_PROFILE = "PRESS_VIEW_PROFILE", o.PRESS_VIEW_MAIN_PROFILE = "PRESS_VIEW_MAIN_PROFILE", o.PRESS_VIEW_SERVER_PROFILE = "PRESS_VIEW_SERVER_PROFILE", o.PRESS_OPTIONS = "PRESS_OPTIONS", o.PRESS_BADGE = "PRESS_BADGE", o.PRESS_SECTION = "PRESS_SECTION", o.PRESS_PRONOUNS = "PRESS_PRONOUNS", o.PRESS_PREMIUM_UPSELL = "PRESS_PREMIUM_UPSELL", o.PRESS_ADD_NOTE = "PRESS_ADD_NOTE", o.PRESS_SET_STATUS = "PRESS_SET_STATUS", o.PRESS_SET_CUSTOM_STATUS = "PRESS_SET_CUSTOM_STATUS", o.PRESS_SWITCH_ACCOUNTS = "PRESS_SWITCH_ACCOUNTS", o.PRESS_SET_FRIEND_NICKNAME = "PRESS_SET_FRIEND_NICKNAME", o.PRESS_INVITE_TO_SERVER = "PRESS_INVITE_TO_SERVER", o.PRESS_MOD_VIEW = "PRESS_MOD_VIEW", o.JOIN_ACTIVITY = "JOIN_ACTIVITY", o.SET_NOTE = "SET_NOTE", o.SET_VOLUME = "SET_VOLUME", o.EDIT_PROFILE = "EDIT_PROFILE", o.EDIT_GUILD_PROFILE = "EDIT_GUILD_PROFILE", o.GIFT_PREMIUM = "GIFT_PREMIUM", o.VOICE_CALL = "VOICE_CALL", o.VIDEO_CALL = "VIDEO_CALL", o.MUTE = "MUTE", o.MUTE_SOUNDBOARD = "MUTE_SOUNDBOARD", o.DISABLE_VIDEO = "DISABLE_VIDEO", o.DEAFEN = "DEAFEN", o.DISCONNECT = "DISCONNECT", o.ADD_ROLE = "ADD_ROLE", o.REMOVE_ROLE = "REMOVE_ROLE", (l = T || (T = {})).VOICE = "VOICE", l.PLAYING = "PLAYING", l.STREAMING = "STREAMING", l.LISTENING = "LISTENING", l.WATCHING = "WATCHING", l.CUSTOM_STATUS = "CUSTOM_STATUS", l.COMPETING = "COMPETING", l.HANG_STATUS = "HANG_STATUS"
         },
         255564: function(e, t, n) {
             "use strict";
@@ -205406,21 +205406,29 @@
                     guild: n,
                     userRoles: s,
                     width: E
-                } = e, C = r.useRef({}), g = r.useCallback(e => {
+                } = e, {
+                    trackUserProfileAction: C
+                } = (0, m.useUserProfileAnalyticsContext)(), g = r.useRef({}), L = r.useCallback(e => {
                     var i;
+                    C({
+                        action: "REMOVE_ROLE"
+                    });
                     let r = s.filter(t => t !== e.id);
                     (null === (i = e.tags) || void 0 === i ? void 0 : i.guild_connections) === null ? _.default.unassignGuildRoleConnection(n.id, e.id) : T.default.updateMemberRoles(n.id, t.id, r, [], [e.id])
-                }, [s, n.id, t.id]), L = r.useCallback(e => {
+                }, [s, n.id, t.id, C]), D = r.useCallback(e => {
+                    C({
+                        action: "ADD_ROLE"
+                    });
                     let i = s; - 1 === i.indexOf(e) && (i = i.concat([e])), T.default.updateMemberRoles(n.id, t.id, i, [e], [])
-                }, [s, n.id, t.id]), [D, v] = r.useState(null), M = (0, u.useStateFromStores)([f.default], () => f.default.getRoles(n.id)), y = r.useMemo(() => {
-                    let e = Object.values(M).filter(e => s.includes(e.id)).sort((e, t) => {
+                }, [s, n.id, t.id, C]), [v, M] = r.useState(null), y = (0, u.useStateFromStores)([f.default], () => f.default.getRoles(n.id)), P = r.useMemo(() => {
+                    let e = Object.values(y).filter(e => s.includes(e.id)).sort((e, t) => {
                         var n, i;
                         let r = (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) !== null,
                             s = (null === (i = t.tags) || void 0 === i ? void 0 : i.guild_connections) !== null;
                         return r && !s ? 1 : !r && s ? -1 : 0
                     });
-                    return null != D ? e.slice(0, D) : e
-                }, [M, D, s]), P = s.length - y.length;
+                    return null != v ? e.slice(0, v) : e
+                }, [y, v, s]), U = s.length - P.length;
                 r.useLayoutEffect(() => {
                     if ("number" != typeof E) throw Error("Unexpected null width");
                     let e = 0,
@@ -205430,71 +205438,71 @@
                     for (let r = 0; r < 2; r++) {
                         t = 0;
                         let s = 1 === r ? i : n;
-                        for (let n = e; n < y.length; n++) {
-                            let i = y[n],
-                                r = C.current[i.id];
+                        for (let n = e; n < P.length; n++) {
+                            let i = P[n],
+                                r = g.current[i.id];
                             if (null != r) {
                                 if ((t += r.offsetWidth + 4) > s) break;
                                 e++
                             }
                         }
                     }
-                    v(t => e < y.length ? e : t)
-                }, [E, y]);
-                let U = h.default.getCurrentUser();
-                a()(null != U, "MemberRolesList: currentUser cannot be undefined");
-                let b = S.default.can(p.Permissions.MANAGE_ROLES, n),
-                    G = A.getHighestRole(n, U.id),
-                    w = r.useMemo(() => "roles-".concat((0, o.v4)()), []),
-                    B = (0, l.default)({
-                        id: w,
+                    M(t => e < P.length ? e : t)
+                }, [E, P]);
+                let b = h.default.getCurrentUser();
+                a()(null != b, "MemberRolesList: currentUser cannot be undefined");
+                let G = S.default.can(p.Permissions.MANAGE_ROLES, n),
+                    w = A.getHighestRole(n, b.id),
+                    B = r.useMemo(() => "roles-".concat((0, o.v4)()), []),
+                    k = (0, l.default)({
+                        id: B,
                         isEnabled: !0,
                         scrollToStart: p.NOOP_PROMISE,
                         scrollToEnd: p.NOOP_PROMISE,
                         wrap: !0
                     }),
-                    k = y.map(e => {
+                    V = P.map(e => {
                         var r;
                         return (0, i.jsx)(c.MemberRole, {
                             className: R.role,
                             role: e,
-                            canRemove: b && A.isRoleHigher(n, U.id, G, e) || (null === (r = e.tags) || void 0 === r ? void 0 : r.guild_connections) === null && t.id === U.id,
-                            onRemove: () => g(e),
+                            canRemove: G && A.isRoleHigher(n, b.id, w, e) || (null === (r = e.tags) || void 0 === r ? void 0 : r.guild_connections) === null && t.id === b.id,
+                            onRemove: () => L(e),
                             ref: t => {
                                 var n, i;
-                                return n = e.id, void(null != (i = t) ? C.current[n] = i : delete C.current[n])
+                                return n = e.id, void(null != (i = t) ? g.current[n] = i : delete g.current[n])
                             },
                             guildId: n.id,
                             disableBorderColor: !0
                         }, e.id)
                     }),
                     {
-                        guildId: V,
-                        channelId: F,
-                        messageId: x,
-                        roleId: H
+                        guildId: F,
+                        channelId: x,
+                        messageId: H,
+                        roleId: Y
                     } = (0, m.useUserProfileAnalyticsContext)(),
                     {
-                        analyticsLocations: Y
+                        analyticsLocations: j
                     } = (0, I.default)(),
-                    j = null != D && 0 !== P ? (0, i.jsx)(d.Clickable, {
+                    W = null != v && 0 !== U ? (0, i.jsx)(d.Clickable, {
                         onClick: () => {
                             (0, N.openUserProfileModal)({
                                 userId: t.id,
-                                guildId: V,
-                                channelId: F,
-                                messageId: x,
-                                roleId: H,
+                                guildId: F,
+                                channelId: x,
+                                messageId: H,
+                                roleId: Y,
                                 analyticsLocation: {
                                     section: p.AnalyticsSections.BITE_SIZE_PROFILE_POPOUT
                                 },
-                                sourceAnalyticsLocations: Y
+                                sourceAnalyticsLocations: j
                             })
                         },
                         className: R.overflowButton,
                         children: (0, i.jsx)(d.Text, {
                             variant: "text-xs/medium",
-                            children: "+".concat(P)
+                            children: "+".concat(U)
                         })
                     }) : null;
                 return (0, i.jsxs)("div", {
@@ -205505,20 +205513,20 @@
                             variant: "text-xs/semibold",
                             className: R.rolesHeaderText,
                             children: O.default.Messages.ROLES
-                        }), b && (0, i.jsx)(d.Tooltip, {
+                        }), G && (0, i.jsx)(d.Tooltip, {
                             text: O.default.Messages.USER_PROFILE_ADD_ROLE,
                             children: t => (0, i.jsx)("div", {
                                 ...t,
                                 children: (0, i.jsx)(c.OverflowAddRolesButton, {
                                     ...e,
-                                    handleAddRole: L,
+                                    handleAddRole: D,
                                     addButtonClassName: R.addButton,
                                     addButtonIconClassName: R.addButtonIcon
                                 })
                             })
                         })]
                     }), (0, i.jsx)(l.ListNavigatorProvider, {
-                        navigator: B,
+                        navigator: k,
                         children: (0, i.jsx)(l.ListNavigatorContainer, {
                             children: e => {
                                 let {
@@ -205532,7 +205540,7 @@
                                     }),
                                     ref: t,
                                     ...n,
-                                    children: [k, j]
+                                    children: [V, W]
                                 })
                             }
                         })
@@ -240016,7 +240024,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "f04a0606f4d12afa96286a70d92b597a883cda99"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "c35131c5e050e6d7dd7bfa12a48c6ae17cdd7a8f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268432,7 +268440,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285035"
+                                build_number: "285046"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -275611,7 +275619,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285035", "285035"), 10);
+                let s = parseInt((n = "285046", "285046"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -302623,4 +302631,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.430ab3722bc154b87511.js.map
+//# sourceMappingURL=73050.12e3189706319c6c70a0.js.map
