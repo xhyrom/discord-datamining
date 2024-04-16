@@ -1364,6 +1364,7 @@
                     ACTIVITY_SHELF: "/activities/shelf",
                     ACTIVITY_CHANNEL_LAUNCH: (_, E) => "/activities/".concat(_, "/").concat(E),
                     ACTIVITY_TEST_MODE: _ => "/activities/".concat(_, "/test-mode"),
+                    ACTIVITY_LEAVE: (_, E, e) => "/applications/".concat(_, "/activities/").concat(E, "/instances/").concat(e, "/leave"),
                     APPLICATION_UPLOAD_ATTACHMENT: _ => "/applications/".concat(_, "/attachment"),
                     CHANNEL_THREADS: _ => "/channels/".concat(_, "/threads"),
                     CHANNEL_MESSAGE_THREADS: (_, E) => "/channels/".concat(_, "/messages/").concat(E, "/threads"),
@@ -2615,7 +2616,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-4095b805b0acedaa57e2275a62ac9acf14acfa7e",
+                    release: "discord_web-3e878eb2b189258aabcae4f71724ed4e63f5e57a",
                     beforeSend: _ => {
                         var E, e;
                         return !(null != (E = _).exception && null != E.exception.values && E.exception.values.every(_ => null == _.stacktrace || null != _.stacktrace.frames && 1 === _.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || a.some(_ => window.navigator.appVersion.toLowerCase().indexOf(_) >= 0)) && !R() && !("Aborted" === (e = _).message || "cancel captcha" === e.message) && t() ? _ : null
@@ -2633,7 +2634,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), I.setTag("buildNumber", (_ = "284976", "284976")), I.setTag("builtAt", String("1713291109904"));
+                }), I.setTag("buildNumber", (_ = "284986", "284986")), I.setTag("builtAt", String("1713291919496"));
                 let E = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != E && "object" == typeof E)
                     for (let _ in E) I.setTag(_, E[_]);
@@ -14056,4 +14057,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84471.4451eadeabaea9d9d6d8.js.map
+//# sourceMappingURL=84471.959b099184bdac40a232.js.map
