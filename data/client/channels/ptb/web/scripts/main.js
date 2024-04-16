@@ -36634,7 +36634,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285057", ", Version Hash: ").concat("fd019b2b65d73b2553ee1f71736b11fdabe6f9e8")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285068", ", Version Hash: ").concat("20b5ee5ec11e98c476ca4e17a7cc63e9bc6a1707")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86486,8 +86486,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285057", "285057"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285057")), t = 0), t
+                let t = parseInt((e = "285068", "285068"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285068")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110378,8 +110378,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285057",
-                    versionHash: "fd019b2b65d73b2553ee1f71736b11fdabe6f9e8"
+                    buildNumber: "285068",
+                    versionHash: "20b5ee5ec11e98c476ca4e17a7cc63e9bc6a1707"
                 }
             }
             n.r(t), n.d(t, {
@@ -128208,40 +128208,45 @@
             "use strict";
             n.r(t), n.d(t, {
                 createZstdContextWeb: function() {
-                    return l
+                    return u
                 },
                 getFastConnectZstd: function() {
-                    return a
-                },
-                setFastConnectZstd: function() {
                     return o
                 },
+                setFastConnectZstd: function() {
+                    return l
+                },
                 supportsZstd: function() {
-                    return s
+                    return a
                 }
             }), n("518263"), n("970173"), n("520712"), n("268111"), n("941497"), n("32026"), n("480839"), n("744285"), n("492257"), n("873817");
             var i = n("433517"),
                 r = n("998502");
-
-            function s() {
-                if (null == window.DiscordNative || void 0 === window.Uint8Array || void 0 === window.TextDecoder) return !1;
-                try {
-                    return r.default.requireModule("discord_zstd"), !0
-                } catch (e) {
-                    if (e.message.includes("Cannot find")) return r.default.ensureModule("discord_zstd").catch(e => {}), !1;
-                    throw e
-                }
-            }
+            let s = null;
 
             function a() {
+                return null == s && (s = function() {
+                    if (null == window.DiscordNative || void 0 === window.Uint8Array || void 0 === window.TextDecoder) return !1;
+                    let e = window.GLOBAL_ENV.RELEASE_CHANNEL;
+                    if ("ptb" === e || "stable" === e) return !1;
+                    try {
+                        return r.default.requireModule("discord_zstd"), !0
+                    } catch (e) {
+                        if (e.message.includes("Cannot find")) return r.default.ensureModule("discord_zstd").catch(e => {}), !1;
+                        throw e
+                    }
+                }()), s
+            }
+
+            function o() {
                 return "true" === i.Storage.get("zstd_fast_connect")
             }
 
-            function o(e) {
+            function l(e) {
                 e ? i.Storage.set("zstd_fast_connect", "true") : i.Storage.remove("zstd_fast_connect")
             }
 
-            function l() {
+            function u() {
                 let {
                     createContext: e
                 } = r.default.requireModule("discord_zstd");
@@ -163460,8 +163465,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713299287137",
-                                    build_number: "285057"
+                                    built_at: "1713299756251",
+                                    build_number: "285068"
                                 }
                             },
                             retries: 1
@@ -225658,24 +225663,27 @@
                             }, {
                                 autoTrackExposure: !0
                             });
-                            i && e.setExperimentFlag(eS.ExperimentFlags.SIGNAL_H265_SUPPORT, !0)
+                            if (i) {
+                                var u;
+                                (0, et.isMac)() && (null === (u = window.DiscordNative) || void 0 === u ? void 0 : u.os.arch) === "arm64" && e.setExperimentFlag(eS.ExperimentFlags.SIGNAL_H265_SUPPORT, !0)
+                            }
                         }
                         let {
-                            signalAV1Support: u
+                            signalAV1Support: d
                         } = y.default.getCurrentConfig({
                             location: "f627ab_10"
                         }, {
                             autoTrackExposure: !0
                         });
-                        u && e.setExperimentFlag(eS.ExperimentFlags.SIGNAL_AV1_SUPPORT, !0);
+                        d && e.setExperimentFlag(eS.ExperimentFlags.SIGNAL_AV1_SUPPORT, !0);
                         let {
-                            allowSettingFullbandAndroid: d
+                            allowSettingFullbandAndroid: _
                         } = F.default.getCurrentConfig({
                             location: "f627ab_14"
                         }, {
                             autoTrackExposure: !0
                         });
-                        if (d && eR.setHasFullbandPerformance((0, L.hasPerformanceForKrispFullband)()), (0, C.default)(i)) {
+                        if (_ && eR.setHasFullbandPerformance((0, L.hasPerformanceForKrispFullband)()), (0, C.default)(i)) {
                             let t = R.default.getSettings();
                             e.setExperimentFlag(eS.ExperimentFlags.STREAMER_CLIP, t.clipsEnabled);
                             let {
@@ -225732,11 +225740,11 @@
                                 type: "MEDIA_ENGINE_SOUNDSHARE_TRANSMITTING"
                             })))
                         });
-                        let _ = new A.Timeout;
+                        let c = new A.Timeout;
                         e.on(S.BaseConnectionEvent.SoundshareTrace, e => {
                             switch (e.type) {
                                 case "soundshare_attach_requested":
-                                    _.start(e4, () => {
+                                    c.start(e4, () => {
                                         m.default.dispatch({
                                             type: "MEDIA_ENGINE_SOUNDSHARE_FAILED",
                                             errorMessage: "Sound Hook Failed"
@@ -225747,14 +225755,14 @@
                                     let t = e.reason,
                                         n = e.code,
                                         i = e.retry;
-                                    (null == s ? void 0 : s.desktopSource) != null && (te(null == s ? void 0 : s.desktopSource, n, t, i), !i && (_.stop(), m.default.wait(() => m.default.dispatch({
+                                    (null == s ? void 0 : s.desktopSource) != null && (te(null == s ? void 0 : s.desktopSource, n, t, i), !i && (c.stop(), m.default.wait(() => m.default.dispatch({
                                         type: "MEDIA_ENGINE_SOUNDSHARE_FAILED",
                                         errorMessage: t,
                                         errorCode: n
                                     }))));
                                     break;
                                 case "soundshare_state_transition":
-                                    4 === e.newState && (_.stop(), m.default.wait(() => m.default.dispatch({
+                                    4 === e.newState && (c.stop(), m.default.wait(() => m.default.dispatch({
                                         type: "MEDIA_ENGINE_SOUNDSHARE_TRANSMITTING"
                                     })))
                             }
@@ -225808,7 +225816,7 @@
                                 context: e.context
                             })
                         }), e.on(S.BaseConnectionEvent.Destroy, () => {
-                            _.stop()
+                            c.stop()
                         }), e.setBitRate(ea.default.bitrate), e.applyVideoQualityMode(ec.default.mode)
                     }), eR.on(S.MediaEngineEvent.DeviceChange, (e, t, n) => {
                         m.default.dispatch({
@@ -240042,7 +240050,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "fd019b2b65d73b2553ee1f71736b11fdabe6f9e8"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "20b5ee5ec11e98c476ca4e17a7cc63e9bc6a1707"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268458,7 +268466,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285057"
+                                build_number: "285068"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -275637,7 +275645,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285057", "285057"), 10);
+                let s = parseInt((n = "285068", "285068"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -302653,4 +302661,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.8693640a0e6baa4ab040.js.map
+//# sourceMappingURL=73050.9e8049adc93b6066061f.js.map
