@@ -38190,10 +38190,6 @@ html .progress__00e29 {
     gap: 4px
 }
 
-.component_d53fb7 {
-    margin: 4px 8px 4px 0
-}
-
 .content_da5e31 {
     display: flex;
     flex-direction: row;
@@ -38234,8 +38230,7 @@ html .progress__00e29 {
 .container__60cb6 {
     width: 100%;
     display: flex;
-    align-items: center;
-    padding: .125rem 0 .25rem
+    align-items: center
 }
 
 .select_f92356 {
@@ -38280,8 +38275,7 @@ html .progress__00e29 {
 .container__3b71d {
     width: 100%;
     display: flex;
-    align-items: center;
-    padding: .125rem 0 .25rem
+    align-items: center
 }
 
 .select__9fa19 {
@@ -38452,7 +38446,9 @@ html .progress__00e29 {
 
 .children_f15443 {
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    -moz-column-gap: var(--spacing-8);
+    column-gap: var(--spacing-8)
 }
 
 .error__0e809 {
@@ -38463,7 +38459,13 @@ html .progress__00e29 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    overflow: hidden
+    overflow: hidden;
+    row-gap: 6px
+}
+
+.containerUikit_e48a15 {
+    max-width: 600px;
+    row-gap: var(--spacing-8)
 }
 
 .postPreviewContainer__7e292 {
@@ -133893,4 +133895,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7ab07049cc2364846602.css.map*/
+/*# sourceMappingURL=99387.f5e28c81936814e30718.css.map*/
