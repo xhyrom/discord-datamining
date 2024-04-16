@@ -280,6 +280,6 @@
 <p><strong>Q: Is there any limit to the amount of speakers I can have at once?<br></strong><span style="font-weight: 400;"><strong>A:</strong> No limit on the number of audio-only Speakers! However, there is a limit of 1 Go Live stream and up to 5 video participants at a time.</span></p>
 <p><strong>Q: Can I run multiple stage channels at a time?<br></strong><strong>A: </strong>Y<span style="font-weight: 400;">es, you can have multiple different active events within a server!</span></p>
 <p><strong>Q: Are there limits to the amount of Stage channels I can have?<br></strong><strong>A: </strong><span style="font-weight: 400;">There is no special limit for the amount of Stage channels you can have in one server!<br></span></p>
-<p><strong>Q: Is video or screen share in stages available?<br></strong><strong>A: </strong><span style="font-weight: 400;">Yes! Video and screen share are now available. Please refer to [insert section link] above for details.</span></p>
+<p><strong>Q: Is video or screen share in stages available?<br></strong><strong>A: </strong><span style="font-weight: 400;">Yes! Video and screen share are now available. Please refer to the <a href="https://support.discord.com/hc/en-us/articles/1500005513722#h_01GS8E8E90VZRG935WC9V8YRTD">section</a> above for details.</span></p>
 <p><strong>Q: Is text chat in stage available?<br></strong><strong>A: </strong><span style="font-weight: 400;">Yes! We now have text chat in stage available so you can chat directly in your stage channel.</span></p>
 <p> </p>
