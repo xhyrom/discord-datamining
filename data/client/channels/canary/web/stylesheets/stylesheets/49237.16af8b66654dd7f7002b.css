@@ -20170,34 +20170,6 @@ h6.title_c2a544 {
     margin-right: .25rem
 }
 
-.ephemeralMessage__24192 {
-    margin-top: 4px;
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--text-muted)
-}
-
-.userAppsBetaContent__90a33 {
-    display: inline-flex;
-    flex-direction: column;
-    line-height: 1.33
-}
-
-.userAppsBetaContent__90a33 p {
-    margin: 0
-}
-
-.icon_ed90cd {
-    margin-right: 4px;
-    vertical-align: text-bottom
-}
-
-@media all and (-webkit-max-device-pixel-ratio:1) {
-    .theme-light .ephemeralMessage__24192 {
-        font-weight: 500
-    }
-}
-
 .inline__626c3 {
     opacity: 1;
     transition: all.1s ease
@@ -20488,6 +20460,34 @@ h6.title_c2a544 {
 
 .hasFooter_d64a32 {
     max-height: none
+}
+
+.ephemeralMessage__24192 {
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-muted)
+}
+
+.userAppsBetaContent__90a33 {
+    display: inline-flex;
+    flex-direction: column;
+    line-height: 1.33
+}
+
+.userAppsBetaContent__90a33 p {
+    margin: 0
+}
+
+.icon_ed90cd {
+    margin-right: 4px;
+    vertical-align: text-bottom
+}
+
+@media all and (-webkit-max-device-pixel-ratio:1) {
+    .theme-light .ephemeralMessage__24192 {
+        font-weight: 500
+    }
 }
 
 @use postcss-pxtorem;
@@ -28205,4 +28205,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.de04a0b5a0ee75321d2c.css.map*/
+/*# sourceMappingURL=49237.16af8b66654dd7f7002b.css.map*/

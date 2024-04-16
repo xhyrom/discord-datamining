@@ -36651,7 +36651,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("284933", ", Version Hash: ").concat("7a768ec4aabee30790736f8c8daca41954a3e518")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("284934", ", Version Hash: ").concat("1b84cb704b25c1443fcd380b4304a226f83c30e9")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -37207,7 +37207,7 @@
                 TextDisplayContentStyle: function() {
                     return I
                 }
-            }), (h = i || (i = {}))[h.ROLE = 0] = "ROLE", h[h.MEMBER = 1] = "MEMBER", (A = r || (r = {})).IOS = "ios", A.ANDROID = "android", A.WEB = "web", (m = s || (s = {}))[m.NONE = 0] = "NONE", m[m.NEW = 1] = "NEW", m[m.UPDATED = 2] = "UPDATED", (N = a || (a = {}))[N.MEDIA_PROXY = 1] = "MEDIA_PROXY", N[N.YOUTUBE = 2] = "YOUTUBE", (p = o || (o = {}))[p.GUILD = 0] = "GUILD", p[p.BOT_DM = 1] = "BOT_DM", p[p.PRIVATE_CHANNEL = 2] = "PRIVATE_CHANNEL", (O = l || (l = {}))[O.SUB_COMMAND = 1] = "SUB_COMMAND", O[O.SUB_COMMAND_GROUP = 2] = "SUB_COMMAND_GROUP", O[O.STRING = 3] = "STRING", O[O.INTEGER = 4] = "INTEGER", O[O.BOOLEAN = 5] = "BOOLEAN", O[O.USER = 6] = "USER", O[O.CHANNEL = 7] = "CHANNEL", O[O.ROLE = 8] = "ROLE", O[O.MENTIONABLE = 9] = "MENTIONABLE", O[O.NUMBER = 10] = "NUMBER", O[O.ATTACHMENT = 11] = "ATTACHMENT", (R = u || (u = {}))[R.CHAT = 1] = "CHAT", R[R.USER = 2] = "USER", R[R.MESSAGE = 3] = "MESSAGE", R[R.PRIMARY_ENTRY_POINT = 4] = "PRIMARY_ENTRY_POINT", (C = d || (d = {}))[C.APPLICATION_COMMAND = 2] = "APPLICATION_COMMAND", C[C.MESSAGE_COMPONENT = 3] = "MESSAGE_COMPONENT", C[C.APPLICATION_COMMAND_AUTOCOMPLETE = 4] = "APPLICATION_COMMAND_AUTOCOMPLETE", C[C.MODAL_SUBMIT = 5] = "MODAL_SUBMIT", (g = _ || (_ = {}))[g.ACTION_ROW = 1] = "ACTION_ROW", g[g.BUTTON = 2] = "BUTTON", g[g.STRING_SELECT = 3] = "STRING_SELECT", g[g.INPUT_TEXT = 4] = "INPUT_TEXT", g[g.USER_SELECT = 5] = "USER_SELECT", g[g.ROLE_SELECT = 6] = "ROLE_SELECT", g[g.MENTIONABLE_SELECT = 7] = "MENTIONABLE_SELECT", g[g.CHANNEL_SELECT = 8] = "CHANNEL_SELECT", g[g.TEXT = 10] = "TEXT", (L = c || (c = {}))[L.PRIMARY = 1] = "PRIMARY", L[L.SECONDARY = 2] = "SECONDARY", L[L.SUCCESS = 3] = "SUCCESS", L[L.DESTRUCTIVE = 4] = "DESTRUCTIVE", L[L.LINK = 5] = "LINK", (D = E || (E = {}))[D.SMALL = 1] = "SMALL", D[D.PARAGRAPH = 2] = "PARAGRAPH", (v = I || (I = {}))[v.NORMAL = 1] = "NORMAL", v[v.CONTEXT = 2] = "CONTEXT", (M = T || (T = {}))[M.SUBSCRIPTION_PLAN = 1] = "SUBSCRIPTION_PLAN", M[M.ENTITLEMENT = 2] = "ENTITLEMENT", M[M.PREMIUM_LEGACY_UPGRADE_PROMOTION = 3] = "PREMIUM_LEGACY_UPGRADE_PROMOTION", M[M.PREMIUM_TRIAL = 4] = "PREMIUM_TRIAL", (y = f || (f = {}))[y.GUILD_PRODUCT = 0] = "GUILD_PRODUCT", (P = S || (S = {}))[P.WEBAUTHN = 1] = "WEBAUTHN", P[P.TOTP = 2] = "TOTP", P[P.SMS = 3] = "SMS"
+            }), (h = i || (i = {}))[h.ROLE = 0] = "ROLE", h[h.MEMBER = 1] = "MEMBER", (A = r || (r = {})).IOS = "ios", A.ANDROID = "android", A.WEB = "web", (m = s || (s = {}))[m.NONE = 0] = "NONE", m[m.NEW = 1] = "NEW", m[m.UPDATED = 2] = "UPDATED", (N = a || (a = {}))[N.MEDIA_PROXY = 1] = "MEDIA_PROXY", N[N.YOUTUBE = 2] = "YOUTUBE", (p = o || (o = {}))[p.GUILD = 0] = "GUILD", p[p.BOT_DM = 1] = "BOT_DM", p[p.PRIVATE_CHANNEL = 2] = "PRIVATE_CHANNEL", (O = l || (l = {}))[O.SUB_COMMAND = 1] = "SUB_COMMAND", O[O.SUB_COMMAND_GROUP = 2] = "SUB_COMMAND_GROUP", O[O.STRING = 3] = "STRING", O[O.INTEGER = 4] = "INTEGER", O[O.BOOLEAN = 5] = "BOOLEAN", O[O.USER = 6] = "USER", O[O.CHANNEL = 7] = "CHANNEL", O[O.ROLE = 8] = "ROLE", O[O.MENTIONABLE = 9] = "MENTIONABLE", O[O.NUMBER = 10] = "NUMBER", O[O.ATTACHMENT = 11] = "ATTACHMENT", (R = u || (u = {}))[R.CHAT = 1] = "CHAT", R[R.USER = 2] = "USER", R[R.MESSAGE = 3] = "MESSAGE", R[R.PRIMARY_ENTRY_POINT = 4] = "PRIMARY_ENTRY_POINT", (C = d || (d = {}))[C.APPLICATION_COMMAND = 2] = "APPLICATION_COMMAND", C[C.MESSAGE_COMPONENT = 3] = "MESSAGE_COMPONENT", C[C.APPLICATION_COMMAND_AUTOCOMPLETE = 4] = "APPLICATION_COMMAND_AUTOCOMPLETE", C[C.MODAL_SUBMIT = 5] = "MODAL_SUBMIT", (g = _ || (_ = {}))[g.ACTION_ROW = 1] = "ACTION_ROW", g[g.BUTTON = 2] = "BUTTON", g[g.STRING_SELECT = 3] = "STRING_SELECT", g[g.INPUT_TEXT = 4] = "INPUT_TEXT", g[g.USER_SELECT = 5] = "USER_SELECT", g[g.ROLE_SELECT = 6] = "ROLE_SELECT", g[g.MENTIONABLE_SELECT = 7] = "MENTIONABLE_SELECT", g[g.CHANNEL_SELECT = 8] = "CHANNEL_SELECT", g[g.TEXT = 10] = "TEXT", g[g.MEDIA_GALLERY = 12] = "MEDIA_GALLERY", (L = c || (c = {}))[L.PRIMARY = 1] = "PRIMARY", L[L.SECONDARY = 2] = "SECONDARY", L[L.SUCCESS = 3] = "SUCCESS", L[L.DESTRUCTIVE = 4] = "DESTRUCTIVE", L[L.LINK = 5] = "LINK", (D = E || (E = {}))[D.SMALL = 1] = "SMALL", D[D.PARAGRAPH = 2] = "PARAGRAPH", (v = I || (I = {}))[v.NORMAL = 1] = "NORMAL", v[v.CONTEXT = 2] = "CONTEXT", (M = T || (T = {}))[M.SUBSCRIPTION_PLAN = 1] = "SUBSCRIPTION_PLAN", M[M.ENTITLEMENT = 2] = "ENTITLEMENT", M[M.PREMIUM_LEGACY_UPGRADE_PROMOTION = 3] = "PREMIUM_LEGACY_UPGRADE_PROMOTION", M[M.PREMIUM_TRIAL = 4] = "PREMIUM_TRIAL", (y = f || (f = {}))[y.GUILD_PRODUCT = 0] = "GUILD_PRODUCT", (P = S || (S = {}))[P.WEBAUTHN = 1] = "WEBAUTHN", P[P.TOTP = 2] = "TOTP", P[P.SMS = 3] = "SMS"
         },
         2052: function(e, t, n) {
             "use strict";
@@ -86487,8 +86487,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284933", "284933"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284933")), t = 0), t
+                let t = parseInt((e = "284934", "284934"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284934")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110402,8 +110402,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284933",
-                    versionHash: "7a768ec4aabee30790736f8c8daca41954a3e518"
+                    buildNumber: "284934",
+                    versionHash: "1b84cb704b25c1443fcd380b4304a226f83c30e9"
                 }
             }
             n.r(t), n.d(t, {
@@ -118882,13 +118882,16 @@
                     return w
                 },
                 handleExplicitMediaScanTimeoutForMessage: function() {
-                    return z
+                    return X
                 },
                 isExplicitMediaBelowConstraints: function() {
-                    return X
+                    return Q
                 },
                 isMediaObscured: function() {
                     return V
+                },
+                isPendingScan: function() {
+                    return H
                 },
                 isPendingScanVersion: function() {
                     return x
@@ -118900,19 +118903,19 @@
                     return B
                 },
                 trackExplicitMediaRedactableMessagedLoaded: function() {
-                    return W
-                },
-                trackExplicitMediaScanComplete: function() {
                     return K
                 },
-                trackMediaRedactionAction: function() {
-                    return H
+                trackExplicitMediaScanComplete: function() {
+                    return z
                 },
-                trackScanTiming: function() {
+                trackMediaRedactionAction: function() {
                     return Y
                 },
-                trackScanningTimedOut: function() {
+                trackScanTiming: function() {
                     return j
+                },
+                trackScanningTimedOut: function() {
+                    return W
                 },
                 updateExplicitContentSetting: function() {
                     return k
@@ -119071,6 +119074,10 @@
             }
 
             function H(e) {
+                return !E.default.get("explicit_media_redaction_ignore_pending_scan") && null == e
+            }
+
+            function Y(e) {
                 let {
                     action: t,
                     channelId: n,
@@ -119089,7 +119096,7 @@
                 })
             }
 
-            function Y(e, t) {
+            function j(e, t) {
                 let n = Date.now() - e;
                 T.default.increment({
                     name: _.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING,
@@ -119097,7 +119104,7 @@
                 })
             }
 
-            function j(e) {
+            function W(e) {
                 var t, n, i, r;
                 let {
                     channelId: s,
@@ -119123,7 +119130,7 @@
                 }, (null !== (i = null == o ? void 0 : o.length) && void 0 !== i ? i : 0) + (null !== (r = null == l ? void 0 : l.length) && void 0 !== r ? r : 0))
             }
 
-            function W(e) {
+            function K(e) {
                 let {
                     channelId: t,
                     numOfAttachments: n,
@@ -119147,7 +119154,7 @@
                 }, o)
             }
 
-            function K(e) {
+            function z(e) {
                 let {
                     messageId: t,
                     channelId: n,
@@ -119170,12 +119177,12 @@
                 })
             }
 
-            function z(e) {
+            function X(e) {
                 let t = e.attachments.map(e => (null == e.content_scan_version && (e.content_scan_version = -1), e)),
                     n = (e = e.set("attachments", t)).embeds.map(e => (null == e.contentScanVersion && (e.contentScanVersion = -1), e));
                 return e = e.set("embeds", n)
             }(o = i || (i = {}))[o.Attachment = 0] = "Attachment", o[o.Embed = 1] = "Embed", o[o.GenericMedia = 2] = "GenericMedia", (l = r || (r = {})).EXPLICIT_MEDIA_LEARN_MORE_VIEWED = "explicit_media_learn_more_viewed", l.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS = "explicit_media_learn_more_click_settings", l.EXPLICIT_MEDIA_LEARN_MORE_CLICK_LEARN_MORE = "explicit_media_learn_more_click_learn_more", l.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS = "explicit_media_learn_more_click_dismiss", l.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE = "explicit_media_learn_more_click_false_positive", l.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED = "explicit_media_false_positive_viewed", l.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM = "explicit_media_false_positive_click_confirm", l.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL = "explicit_media_false_positive_click_cancel", l.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_CLICKED = "explicit_media_sender_false_positive_button_clicked", l.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT = "explicit_media_false_positive_clyde_message_sent", (u = s || (s = {})).EXPLICIT_MEDIA_OBSCURED_FALSE_POSITIVE_FLOW = "explicit_media_obscured_false_positive_flow", u.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW = "explicit_media_sender_false_positive_flow", u.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED = "explicit_media_message_send_blocked", u.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED = "explicit_media_add_media_to_forum_post_blocked", (d = a || (a = {})).UPDATE = "update", d.TIMEOUT = "timeout";
-            let X = (e, t) => null != e && null != t && (e <= C.EXPLICIT_MEDIA_MIN_WIDTH || t <= C.EXPLICIT_MEDIA_MIN_HEIGHT)
+            let Q = (e, t) => null != e && null != t && (e <= C.EXPLICIT_MEDIA_MIN_WIDTH || t <= C.EXPLICIT_MEDIA_MIN_HEIGHT)
         },
         735020: function(e, t, n) {
             "use strict";
@@ -152588,30 +152595,31 @@
             "use strict";
             n.r(t), n.d(t, {
                 getLayoutComponentErrorText: function() {
-                    return _
+                    return c
                 },
                 transformComponents: function() {
-                    return E
+                    return I
                 }
             }), n("47120");
             var i = n("911969"),
                 r = n("622449"),
-                s = n("768581"),
-                a = n("823379"),
-                o = n("280501"),
-                l = n("689938");
-            let u = (e, t) => ({
+                s = n("768494"),
+                a = n("768581"),
+                o = n("823379"),
+                l = n("280501"),
+                u = n("689938");
+            let d = (e, t) => ({
                     id: e.id,
                     name: e.name,
                     animated: e.animated,
-                    src: t && null != e.id ? s.default.getEmojiURL({
+                    src: t && null != e.id ? a.default.getEmojiURL({
                         id: e.id,
                         animated: e.animated || !1,
                         size: 48
                     }) : void 0
                 }),
-                d = e => (null == e ? void 0 : e.errorCode) === 429 ? l.default.Messages.INTERACTION_RATE_LIMITED : l.default.Messages.APPLICATION_COMMAND_FAILED,
-                _ = (e, t, n) => {
+                _ = e => (null == e ? void 0 : e.errorCode) === 429 ? u.default.Messages.INTERACTION_RATE_LIMITED : u.default.Messages.APPLICATION_COMMAND_FAILED,
+                c = (e, t, n) => {
                     let s = (null == e ? void 0 : e.data.interactionType) === i.InteractionTypes.MESSAGE_COMPONENT && (null == e ? void 0 : e.state) === r.InteractionState.FAILED ? e.data.componentId : null;
                     if (null != (null != s ? function(e, t) {
                             if (e.type === i.ComponentType.ACTION_ROW) {
@@ -152620,10 +152628,10 @@
                             }
                         }(n, s) : null)) {
                         var a;
-                        return null !== (a = null == t ? void 0 : t.interactionError) && void 0 !== a ? a : d(e)
+                        return null !== (a = null == t ? void 0 : t.interactionError) && void 0 !== a ? a : _(e)
                     }
                 },
-                c = e => {
+                E = e => {
                     switch (e) {
                         case i.ComponentType.ACTION_ROW:
                         case i.ComponentType.BUTTON:
@@ -152634,35 +152642,36 @@
                         case i.ComponentType.MENTIONABLE_SELECT:
                         case i.ComponentType.CHANNEL_SELECT:
                         case i.ComponentType.TEXT:
+                        case i.ComponentType.MEDIA_GALLERY:
                             return !0
                     }
                 };
 
-            function E(e) {
+            function I(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
                 return e.map((e, n) => (function e(t, n, r) {
-                    var s, d, _, E, T, f;
-                    if (!c(t.type)) return null;
+                    var a, _, c, I, f, S;
+                    if (!E(t.type)) return null;
                     let {
-                        includeEmojiSrc: S
+                        includeEmojiSrc: h
                     } = n;
                     switch (t.type) {
                         case i.ComponentType.ACTION_ROW: {
                             let s = t.components.map((t, i) => (function(t, i) {
                                 let s = e(t, n, [...r, i]);
                                 return null == s ? null : s
-                            })(t, i)).filter(a.isNotNullish);
+                            })(t, i)).filter(o.isNotNullish);
                             return {
                                 type: i.ComponentType.ACTION_ROW,
-                                id: I(r),
+                                id: T(r),
                                 components: s
                             }
                         }
                         case i.ComponentType.BUTTON: {
-                            let e = null != t.emoji ? u(t.emoji, S) : void 0;
+                            let e = null != t.emoji ? d(t.emoji, h) : void 0;
                             return {
                                 type: i.ComponentType.BUTTON,
-                                id: I(r),
+                                id: T(r),
                                 customId: t.custom_id,
                                 style: t.style,
                                 disabled: t.disabled,
@@ -152673,38 +152682,46 @@
                         }
                         case i.ComponentType.STRING_SELECT:
                             return {
-                                type: i.ComponentType.STRING_SELECT, id: I(r), customId: t.custom_id, disabled: t.disabled, options: t.options.map(e => ({
-                                    type: o.SelectOptionType.STRING,
+                                type: i.ComponentType.STRING_SELECT, id: T(r), customId: t.custom_id, disabled: t.disabled, options: t.options.map(e => ({
+                                    type: l.SelectOptionType.STRING,
                                     label: e.label,
                                     value: e.value,
                                     default: e.default,
                                     description: e.description,
-                                    emoji: null != e.emoji ? u(e.emoji, S) : void 0
-                                })), placeholder: null !== (s = t.placeholder) && void 0 !== s ? s : l.default.Messages.MESSAGE_SELECT_COMPONENT_DEFAULT_PLACEHOLDER, minValues: t.min_values, maxValues: t.max_values
+                                    emoji: null != e.emoji ? d(e.emoji, h) : void 0
+                                })), placeholder: null !== (a = t.placeholder) && void 0 !== a ? a : u.default.Messages.MESSAGE_SELECT_COMPONENT_DEFAULT_PLACEHOLDER, minValues: t.min_values, maxValues: t.max_values
                             };
                         case i.ComponentType.INPUT_TEXT:
                             return {
-                                type: t.type, id: I(r), style: t.style, customId: t.custom_id, label: t.label, value: t.value, placeholder: t.placeholder, disabled: t.disabled, required: null !== (d = t.required) && void 0 !== d && d, minLength: t.min_length, maxLength: t.max_length
+                                type: t.type, id: T(r), style: t.style, customId: t.custom_id, label: t.label, value: t.value, placeholder: t.placeholder, disabled: t.disabled, required: null !== (_ = t.required) && void 0 !== _ && _, minLength: t.min_length, maxLength: t.max_length
                             };
                         case i.ComponentType.USER_SELECT:
                             return {
-                                type: i.ComponentType.USER_SELECT, id: I(r), customId: t.custom_id, disabled: t.disabled, placeholder: null !== (_ = t.placeholder) && void 0 !== _ ? _ : l.default.Messages.MESSAGE_SELECT_COMPONENT_DEFAULT_PLACEHOLDER, minValues: t.min_values, maxValues: t.max_values, defaultValues: t.default_values
+                                type: i.ComponentType.USER_SELECT, id: T(r), customId: t.custom_id, disabled: t.disabled, placeholder: null !== (c = t.placeholder) && void 0 !== c ? c : u.default.Messages.MESSAGE_SELECT_COMPONENT_DEFAULT_PLACEHOLDER, minValues: t.min_values, maxValues: t.max_values, defaultValues: t.default_values
                             };
                         case i.ComponentType.ROLE_SELECT:
                             return {
-                                type: i.ComponentType.ROLE_SELECT, id: I(r), customId: t.custom_id, disabled: t.disabled, placeholder: null !== (E = t.placeholder) && void 0 !== E ? E : l.default.Messages.MESSAGE_SELECT_COMPONENT_DEFAULT_PLACEHOLDER, minValues: t.min_values, maxValues: t.max_values, defaultValues: t.default_values
+                                type: i.ComponentType.ROLE_SELECT, id: T(r), customId: t.custom_id, disabled: t.disabled, placeholder: null !== (I = t.placeholder) && void 0 !== I ? I : u.default.Messages.MESSAGE_SELECT_COMPONENT_DEFAULT_PLACEHOLDER, minValues: t.min_values, maxValues: t.max_values, defaultValues: t.default_values
                             };
                         case i.ComponentType.MENTIONABLE_SELECT:
                             return {
-                                type: i.ComponentType.MENTIONABLE_SELECT, id: I(r), customId: t.custom_id, disabled: t.disabled, placeholder: null !== (T = t.placeholder) && void 0 !== T ? T : l.default.Messages.MESSAGE_SELECT_COMPONENT_DEFAULT_PLACEHOLDER, minValues: t.min_values, maxValues: t.max_values, defaultValues: t.default_values
+                                type: i.ComponentType.MENTIONABLE_SELECT, id: T(r), customId: t.custom_id, disabled: t.disabled, placeholder: null !== (f = t.placeholder) && void 0 !== f ? f : u.default.Messages.MESSAGE_SELECT_COMPONENT_DEFAULT_PLACEHOLDER, minValues: t.min_values, maxValues: t.max_values, defaultValues: t.default_values
                             };
                         case i.ComponentType.CHANNEL_SELECT:
                             return {
-                                type: i.ComponentType.CHANNEL_SELECT, id: I(r), customId: t.custom_id, disabled: t.disabled, placeholder: null !== (f = t.placeholder) && void 0 !== f ? f : l.default.Messages.MESSAGE_SELECT_COMPONENT_DEFAULT_PLACEHOLDER, minValues: t.min_values, maxValues: t.max_values, channelTypes: t.channel_types, defaultValues: t.default_values
+                                type: i.ComponentType.CHANNEL_SELECT, id: T(r), customId: t.custom_id, disabled: t.disabled, placeholder: null !== (S = t.placeholder) && void 0 !== S ? S : u.default.Messages.MESSAGE_SELECT_COMPONENT_DEFAULT_PLACEHOLDER, minValues: t.min_values, maxValues: t.max_values, channelTypes: t.channel_types, defaultValues: t.default_values
                             };
                         case i.ComponentType.TEXT:
                             return {
-                                type: i.ComponentType.TEXT, id: I(r), items: t.items
+                                type: i.ComponentType.TEXT, id: T(r), items: t.items
+                            };
+                        case i.ComponentType.MEDIA_GALLERY:
+                            return {
+                                type: i.ComponentType.MEDIA_GALLERY, id: T(r), items: t.items.map(e => ({
+                                    media: (0, s.toUnfurledMediaItem)(e.media),
+                                    description: e.description,
+                                    spoiler: e.spoiler
+                                }))
                             };
                         default:
                             return null
@@ -152712,8 +152729,8 @@
                 })(e, t, [n])).filter(e => null != e)
             }
 
-            function I(e) {
-                return (0, o.asComponentId)(e.join(","))
+            function T(e) {
+                return (0, l.asComponentId)(e.join(","))
             }
         },
         189334: function(e, t, n) {
@@ -152742,7 +152759,7 @@
             async function _(e) {
                 let {
                     openInteractionModal: t
-                } = await Promise.all([n.e("99387"), n.e("8739"), n.e("30243"), n.e("50416")]).then(n.bind(n, "440934"));
+                } = await Promise.all([n.e("49237"), n.e("99387"), n.e("8739"), n.e("58286"), n.e("30243"), n.e("80621")]).then(n.bind(n, "440934"));
                 t(e), s.default.track(l.AnalyticEvents.OPEN_MODAL, {
                     type: "interaction_modal",
                     application_id: e.application.id
@@ -156552,13 +156569,34 @@
                     return i
                 },
                 messageAttachmentToUnfurledMediaItem: function() {
+                    return l
+                },
+                toUnfurledMediaItem: function() {
                     return o
                 }
             }), n("789020");
             var i, r, s = n("630388"),
                 a = n("981631");
+            (r = i || (i = {}))[r.EXPLICIT = 1] = "EXPLICIT";
 
             function o(e) {
+                var t;
+                return {
+                    url: e.url,
+                    proxyUrl: e.proxy_url,
+                    height: e.height,
+                    width: e.width,
+                    placeholder: e.placeholder,
+                    placeholderVersion: e.placeholder_version,
+                    contentType: e.content_type,
+                    contentScanMetadata: null != e.content_scan_metadata ? {
+                        version: (t = e.content_scan_metadata).version,
+                        contentScanFlags: t.content_scan_flags
+                    } : void 0
+                }
+            }
+
+            function l(e) {
                 var t, n, i, r;
                 let o = 0;
                 return (0, s.hasFlag)(null !== (t = e.flags) && void 0 !== t ? t : 0, a.MessageAttachmentFlags.CONTAINS_EXPLICIT_MEDIA) && (o += 1), {
@@ -156574,7 +156612,7 @@
                         contentScanFlags: o
                     }
                 }
-            }(r = i || (i = {}))[r.EXPLICIT = 1] = "EXPLICIT"
+            }
         },
         304809: function(e, t, n) {
             "use strict";
@@ -158757,19 +158795,22 @@
                     return i
                 },
                 getForumPostShouldObscure: function() {
-                    return m
-                },
-                getObscureReasonForAttachment: function() {
-                    return h
-                },
-                getObscureReasonForEmbed: function() {
-                    return A
-                },
-                getObscuredAlt: function() {
                     return p
                 },
-                useShouldObscure: function() {
+                getObscureReasonForAttachment: function() {
+                    return A
+                },
+                getObscureReasonForEmbed: function() {
+                    return m
+                },
+                getObscureReasonForUnfurledMediaItem: function() {
                     return N
+                },
+                getObscuredAlt: function() {
+                    return R
+                },
+                useShouldObscure: function() {
+                    return O
                 }
             }), n("789020"), n("627341");
             var i, r, s = n("278074"),
@@ -158777,17 +158818,17 @@
                 o = n("432877"),
                 l = n("163268"),
                 u = n("25610"),
-                d = n("368844");
-            n("768494");
-            var _ = n("695346"),
-                c = n("375954"),
-                E = n("496675"),
-                I = n("630388"),
-                T = n("255269"),
-                f = n("981631"),
-                S = n("689938");
+                d = n("368844"),
+                _ = n("768494"),
+                c = n("695346"),
+                E = n("375954"),
+                I = n("496675"),
+                T = n("630388"),
+                f = n("255269"),
+                S = n("981631"),
+                h = n("689938");
             (r = i || (i = {})).SPOILER = "spoiler", r.EXPLICIT_CONTENT = "explicit_content", r.POTENTIAL_EXPLICIT_CONTENT = "potential_explicit_content";
-            let h = (e, t) => {
+            let A = (e, t) => {
                     let {
                         spoiler: n,
                         flags: i = 0,
@@ -158795,24 +158836,38 @@
                     } = e;
                     if (t) {
                         if ((0, l.isPendingScanVersion)(r)) return "potential_explicit_content";
-                        if ((0, I.hasFlag)(i, f.MessageAttachmentFlags.CONTAINS_EXPLICIT_MEDIA) || o.default.get("obscure_blur_effect_enabled")) return "explicit_content"
+                        if ((0, T.hasFlag)(i, S.MessageAttachmentFlags.CONTAINS_EXPLICIT_MEDIA) || o.default.get("obscure_blur_effect_enabled")) return "explicit_content"
                     }
-                    return n || (0, I.hasFlag)(i, f.MessageAttachmentFlags.IS_SPOILER) ? "spoiler" : null
+                    return n || (0, T.hasFlag)(i, S.MessageAttachmentFlags.IS_SPOILER) ? "spoiler" : null
                 },
-                A = (e, t, n, i, r) => {
+                m = (e, t, n, i, r) => {
                     let {
                         flags: s = 0,
                         contentScanVersion: a
-                    } = e, u = c.default.getMessage(t, n);
+                    } = e, u = E.default.getMessage(t, n);
                     if (null == u) return null;
                     if (r) {
                         if (!u.author.bot && (0, l.isPendingScanVersion)(a)) return "potential_explicit_content";
-                        if ((0, I.hasFlag)(s, f.MessageEmbedFlags.CONTAINS_EXPLICIT_MEDIA) || o.default.get("obscure_blur_effect_enabled")) return "explicit_content"
+                        if ((0, T.hasFlag)(s, S.MessageEmbedFlags.CONTAINS_EXPLICIT_MEDIA) || o.default.get("obscure_blur_effect_enabled")) return "explicit_content"
                     }
                     return i ? "spoiler" : null
+                },
+                N = function(e, t) {
+                    let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+                        {
+                            contentScanMetadata: i
+                        } = e;
+                    if (t) {
+                        if ((0, l.isPendingScan)(i)) return "potential_explicit_content";
+                        let {
+                            contentScanFlags: e
+                        } = i;
+                        if ((0, T.hasFlag)(e, _.ContentScanFlags.EXPLICIT) || o.default.get("obscure_blur_effect_enabled")) return "explicit_content"
+                    }
+                    return n ? "spoiler" : null
                 };
 
-            function m(e, t, n) {
+            function p(e, t, n) {
                 if (null == e) return [!1, void 0];
                 if (n && (0, l.isPendingScanVersion)(e.contentScanVersion)) return [!0, "potential_explicit_content"];
                 let i = function(e) {
@@ -158831,14 +158886,14 @@
                 }, n) ? [!0, "explicit_content"] : e.spoiler ? [t, "spoiler"] : [!1, void 0]
             }
 
-            function N(e) {
+            function O(e) {
                 let {
                     channel: t,
                     media: n
-                } = e, i = (0, a.useStateFromStores)([E.default], () => null != t && E.default.can(f.Permissions.MANAGE_MESSAGES, t)), r = _.RenderSpoilers.useSetting(), s = (0, u.useShouldRedactExplicitContentForForum)();
-                return m(n, !(0, T.default)(r, i), s)
+                } = e, i = (0, a.useStateFromStores)([I.default], () => null != t && I.default.can(S.Permissions.MANAGE_MESSAGES, t)), r = c.RenderSpoilers.useSetting(), s = (0, u.useShouldRedactExplicitContentForForum)();
+                return p(n, !(0, f.default)(r, i), s)
             }
-            let p = e => (0, s.match)(e).with("explicit_content", () => S.default.Messages.EXPLICIT_CONTENT_ALT).with("spoiler", () => S.default.Messages.SPOILER_HIDDEN_A11Y_LABEL).otherwise(() => void 0)
+            let R = e => (0, s.match)(e).with("explicit_content", () => h.default.Messages.EXPLICIT_CONTENT_ALT).with("spoiler", () => h.default.Messages.SPOILER_HIDDEN_A11Y_LABEL).otherwise(() => void 0)
         },
         959517: function(e, t, n) {
             "use strict";
@@ -163461,8 +163516,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713286200702",
-                                    build_number: "284933"
+                                    built_at: "1713286259530",
+                                    build_number: "284934"
                                 }
                             },
                             retries: 1
@@ -240048,7 +240103,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "7a768ec4aabee30790736f8c8daca41954a3e518"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "1b84cb704b25c1443fcd380b4304a226f83c30e9"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268464,7 +268519,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284933"
+                                build_number: "284934"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -275643,7 +275698,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284933", "284933"), 10);
+                let s = parseInt((n = "284934", "284934"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -302655,4 +302710,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.76183db08b125a79869d.js.map
+//# sourceMappingURL=73050.b6a4f0b939665f5ce989.js.map
