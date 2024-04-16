@@ -36634,7 +36634,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285046", ", Version Hash: ").concat("c35131c5e050e6d7dd7bfa12a48c6ae17cdd7a8f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285050", ", Version Hash: ").concat("f430e0567781739b2fdc50667c4960045a3a861d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86486,8 +86486,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285046", "285046"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285046")), t = 0), t
+                let t = parseInt((e = "285050", "285050"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285050")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110378,8 +110378,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285046",
-                    versionHash: "c35131c5e050e6d7dd7bfa12a48c6ae17cdd7a8f"
+                    buildNumber: "285050",
+                    versionHash: "f430e0567781739b2fdc50667c4960045a3a861d"
                 }
             }
             n.r(t), n.d(t, {
@@ -153815,58 +153815,58 @@
             "use strict";
             n.r(t), n.d(t, {
                 getRootNavigationRefIfInExperiment: function() {
-                    return d
+                    return c
                 },
                 isInMainTabsExperiment: function() {
-                    return _
+                    return E
                 },
                 useInMainTabsExperiment: function() {
-                    return c
+                    return I
                 }
             }), n("411104"), n("470079");
             var i, r, s = n("652874"),
                 a = n("433517");
             n("353926");
-            var o = n("777639");
-            n("277530");
-            var l = n("721877");
-            n("146552"), n("488832"), (r = i || (i = {}))[r.EXISTING_USERS = 0] = "EXISTING_USERS", r[r.NEW_USERS = 1] = "NEW_USERS";
-            let u = "tabs-v2-experiment-key";
-
-            function d() {
-                return _() ? (0, o.getRootNavigationRef)() : void 0
-            }
-
-            function _() {
-                return (0, l.isMainTabsExperimentPlatformSupported)()
-            }
+            var o = n("777639"),
+                l = n("721877"),
+                u = n("488832");
+            (r = i || (i = {}))[r.EXISTING_USERS = 0] = "EXISTING_USERS", r[r.NEW_USERS = 1] = "NEW_USERS";
+            let d = "tabs-v2-experiment-key",
+                _ = (0, s.default)((e, t) => ({
+                    _experimentCacheInitialized: !1,
+                    _experimentEnabled: !1,
+                    getExperimentEnabled() {
+                        let {
+                            _experimentCacheInitialized: e
+                        } = t();
+                        if (!e) throw Error("MainTabsV2ExperimentStore: Experiment cache not initialized");
+                        return (0, l.isMainTabsExperimentPlatformSupported)()
+                    },
+                    setExperimentEnabled: t => {
+                        e({
+                            _experimentEnabled: t
+                        }), a.Storage.set(d, t)
+                    },
+                    setInitialized: () => {
+                        e(e => e._experimentCacheInitialized ? e : {
+                            _experimentCacheInitialized: !0,
+                            _experimentEnabled: !0 === a.Storage.get(d)
+                        })
+                    }
+                }));
 
             function c() {
-                return arguments.length > 0 && void 0 !== arguments[0] && arguments[0], (0, l.isMainTabsExperimentPlatformSupported)()
-            }(0, s.default)((e, t) => ({
-                _experimentCacheInitialized: !1,
-                _experimentEnabled: !1,
-                getExperimentEnabled() {
-                    if (!(0, l.isMainTabsExperimentPlatformSupported)()) return !1;
-                    let {
-                        _experimentCacheInitialized: e,
-                        _experimentEnabled: n
-                    } = t();
-                    if (!e) throw Error("MainTabsV2ExperimentStore: Experiment cache not initialized");
-                    return n
-                },
-                setExperimentEnabled: t => {
-                    e({
-                        _experimentEnabled: t
-                    }), a.Storage.set(u, t)
-                },
-                setInitialized: () => {
-                    e(e => e._experimentCacheInitialized ? e : {
-                        _experimentCacheInitialized: !0,
-                        _experimentEnabled: !0 === a.Storage.get(u)
-                    })
-                }
-            }))
+                return E() ? (0, o.getRootNavigationRef)() : void 0
+            }
+
+            function E() {
+                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _.getState().getExperimentEnabled();
+                return (0, u.updateIsInTabsUI)(e), e
+            }
+
+            function I() {
+                return E(_(e => e.getExperimentEnabled()))
+            }
         },
         215355: function(e, t, n) {
             "use strict";
@@ -153998,10 +153998,6 @@
                 }
             })
         },
-        277530: function(e, t, n) {
-            "use strict";
-            n.r(t)
-        },
         721877: function(e, t, n) {
             "use strict";
 
@@ -154014,13 +154010,29 @@
                 }
             })
         },
-        146552: function(e, t, n) {
-            "use strict";
-            n.r(t)
-        },
         488832: function(e, t, n) {
             "use strict";
-            n.r(t), n("804098"), n("20186"), n("626135"), n("960048")
+            let i, r;
+            n.r(t), n.d(t, {
+                updateIsInTabsUI: function() {
+                    return u
+                }
+            });
+            var s = n("804098"),
+                a = n("20186"),
+                o = n("626135"),
+                l = n("960048");
+
+            function u(e) {
+                i !== e && (i = e, r = e, ! function() {
+                    let e = i ? r ? s.DesignIds.DESIGN_TABS_IA : s.DesignIds.DESIGN_IA : s.DesignIds.CLASSIC_IA;
+                    o.default.extendSuperProperties({
+                        design_id: e
+                    }), a.addGlobalTag("design_id", e), l.default.setTags({
+                        design_id: "".concat(e)
+                    })
+                }())
+            }
         },
         272423: function(e, t, n) {
             "use strict";
@@ -163448,8 +163460,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713298167392",
-                                    build_number: "285046"
+                                    built_at: "1713298809513",
+                                    build_number: "285050"
                                 }
                             },
                             retries: 1
@@ -163469,13 +163481,20 @@
         20186: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                getGlobalTagsArray: function() {
+                addGlobalTag: function() {
                     return r
+                },
+                getGlobalTagsArray: function() {
+                    return s
                 }
             });
             let i = {};
 
-            function r() {
+            function r(e, t) {
+                i[e] = t
+            }
+
+            function s() {
                 return Object.keys(i).map(e => "".concat(e, ":").concat(i[e]))
             }
         },
@@ -208974,9 +208993,8 @@
                     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t ? t : null
                 }, e => s.Int32Value.create({
                     value: null != e ? e : 0
-                }));
-            (0, o.defineProtoSetting)("appearance", "mobileRedesignDisabled", e => null != e && e, e => e);
-            let eS = new Set([a.ChannelListLayoutTypes.COZY, a.ChannelListLayoutTypes.COMPACT]);
+                })),
+                eS = new Set([a.ChannelListLayoutTypes.COZY, a.ChannelListLayoutTypes.COMPACT]);
             (0, o.defineProtoSetting)("appearance", "channelListLayout", e => null != e && eS.has(e.value) ? e.value : a.ChannelListLayoutTypes.COZY, e => s.StringValue.create({
                 value: e
             }));
@@ -240024,7 +240042,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "c35131c5e050e6d7dd7bfa12a48c6ae17cdd7a8f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f430e0567781739b2fdc50667c4960045a3a861d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268440,7 +268458,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285046"
+                                build_number: "285050"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -275619,7 +275637,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285046", "285046"), 10);
+                let s = parseInt((n = "285050", "285050"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -301673,7 +301691,11 @@
         804098: function(e, t, n) {
             "use strict";
             var i, r;
-            n.r(t), (r = i || (i = {}))[r.CLASSIC_IA = 0] = "CLASSIC_IA", r[r.DESIGN_IA = 1] = "DESIGN_IA", r[r.DESIGN_TABS_IA = 2] = "DESIGN_TABS_IA", r[r.YOU_BAR_IA = 3] = "YOU_BAR_IA"
+            n.r(t), n.d(t, {
+                DesignIds: function() {
+                    return i
+                }
+            }), (r = i || (i = {}))[r.CLASSIC_IA = 0] = "CLASSIC_IA", r[r.DESIGN_IA = 1] = "DESIGN_IA", r[r.DESIGN_TABS_IA = 2] = "DESIGN_TABS_IA", r[r.YOU_BAR_IA = 3] = "YOU_BAR_IA"
         },
         438954: function(e, t, n) {
             "use strict";
@@ -302631,4 +302653,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.12e3189706319c6c70a0.js.map
+//# sourceMappingURL=73050.4c4e69202b34e9d2d699.js.map
