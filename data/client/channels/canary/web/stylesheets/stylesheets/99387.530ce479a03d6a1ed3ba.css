@@ -8367,20 +8367,6 @@ html .invoiceCancelRow_aa7946 {
     color: ButtonText
 }
 
-.profileColors_ac6ab4 {
-    --profile-gradient-primary-color: var(--background-secondary-alt);
-    --profile-gradient-secondary-color: var(--background-secondary-alt);
-    --profile-gradient-overlay-color: rgba(0, 0, 0, 0);
-    --profile-gradient-button-color: var(--button-secondary-background);
-    --profile-avatar-border-color: var(--background-secondary-alt);
-    --profile-message-input-border-color: var(--background-modifier-accent);
-    --profile-body-background-color: var(--background-floating);
-    --profile-body-background-hover: var(--background-modifier-hover);
-    --profile-body-divider-color: var(--background-modifier-accent);
-    --profile-role-pill-background-color: var(--background-secondary-alt);
-    --profile-role-pill-border-color: var(--interactive-normal)
-}
-
 .userProfileOuter__35e59 {
     border-radius: var(--radius-sm);
     position: relative;
@@ -133708,4 +133694,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.42acb111b16441a24373.css.map*/
+/*# sourceMappingURL=99387.530ce479a03d6a1ed3ba.css.map*/

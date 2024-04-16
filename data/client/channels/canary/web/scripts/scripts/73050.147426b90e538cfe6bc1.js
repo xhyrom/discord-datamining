@@ -36636,7 +36636,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285135", ", Version Hash: ").concat("3b489701a0136b6a9a02ce4721a9346a3208ad35")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285154", ", Version Hash: ").concat("a461e1a3d8e3ad597680d1ccbc7c583cac503ba3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86491,8 +86491,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285135", "285135"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285135")), t = 0), t
+                let t = parseInt((e = "285154", "285154"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285154")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110388,8 +110388,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285135",
-                    versionHash: "3b489701a0136b6a9a02ce4721a9346a3208ad35"
+                    buildNumber: "285154",
+                    versionHash: "a461e1a3d8e3ad597680d1ccbc7c583cac503ba3"
                 }
             }
             n.r(t), n.d(t, {
@@ -138767,7 +138767,7 @@
                     (0, r.openModalLazy)(async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("98880")]).then(n.bind(n, "645264"));
+                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("70935")]).then(n.bind(n, "645264"));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             guildId: e,
@@ -163507,8 +163507,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713304336195",
-                                    build_number: "285135"
+                                    built_at: "1713305567008",
+                                    build_number: "285154"
                                 }
                             },
                             retries: 1
@@ -201975,29 +201975,44 @@
                 }
             }
         },
-        84244: function(e, t, n) {
+        721987: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return o
+                    return _
                 }
             }), n("47120");
             var i = n("866442"),
-                r = n("220082"),
-                s = n("44315"),
-                a = n("981631");
+                r = n("442837"),
+                s = n("410030"),
+                a = n("607070"),
+                o = n("220082"),
+                l = n("44315"),
+                u = n("168631"),
+                d = n("981631");
 
-            function o(e, t) {
-                var n, o;
+            function _(e) {
+                var t, n, _;
                 let {
-                    pendingThemeColors: l,
-                    pendingAvatar: u,
-                    isPreview: d
-                } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, _ = null != u ? u : null == e ? void 0 : e.getAvatarURL(null == t ? void 0 : t.guildId, 80), c = (0, s.useColorValue)(a.Color.PRIMARY_530).hex, [E, I] = (0, r.useAvatarColors)(_, c, !1);
-                if (!(null == t ? void 0 : t.canEditThemes) && !d) return [null, null];
-                let T = null == t ? void 0 : t.getPreviewThemeColors(l),
-                    f = null !== (n = null == T ? void 0 : T[0]) && void 0 !== n ? n : (0, i.hex2int)(E);
-                return [f, null !== (o = null == T ? void 0 : T[1]) && void 0 !== o ? o : (0, i.hex2int)(I)]
+                    user: c,
+                    displayProfile: E,
+                    pendingThemeColors: I,
+                    pendingAvatar: T,
+                    isPreview: f
+                } = e, S = (0, s.default)(), h = (0, r.useStateFromStores)([a.default], () => a.default.syncProfileThemeWithUserTheme), A = null != T ? T : null == c ? void 0 : c.getAvatarURL(null == E ? void 0 : E.guildId, 80), m = (0, l.useColorValue)(d.Color.PRIMARY_530).hex, [N, p] = (0, o.useAvatarColors)(A, m, !1);
+                if (!(null == E ? void 0 : E.canEditThemes) && !f) return {
+                    theme: S,
+                    primaryColor: null,
+                    secondaryColor: null
+                };
+                let O = null == E ? void 0 : E.getPreviewThemeColors(I),
+                    R = null !== (t = null == O ? void 0 : O[0]) && void 0 !== t ? t : (0, i.hex2int)(N),
+                    C = null !== (n = null == O ? void 0 : O[1]) && void 0 !== n ? n : (0, i.hex2int)(p);
+                return {
+                    theme: h ? S : null !== (_ = (0, u.getProfileTheme)(R)) && void 0 !== _ ? _ : S,
+                    primaryColor: R,
+                    secondaryColor: C
+                }
             }
         },
         78675: function(e, t, n) {
@@ -202726,7 +202741,7 @@
                     t = (0, s.useStateFromStores)([_.default], () => _.default.syncProfileThemeWithUserTheme),
                     n = (0, u.default)(),
                     {
-                        profileTheme: i
+                        theme: i
                     } = (0, I.useUserProfileThemeContext)(),
                     r = (0, o.isThemeDark)(n) && (0, o.isThemeLight)(i);
                 return !e && !t && r
@@ -203201,72 +203216,81 @@
         502762: function(e, t, n) {
             "use strict";
             n.r(t), n("627341");
-            var i = n("735250"),
-                r = n("470079"),
-                s = n("120356"),
-                a = n.n(s),
-                o = n("278074"),
-                l = n("358794"),
+            var i = n("735250");
+            n("470079");
+            var r = n("120356"),
+                s = n.n(r),
+                a = n("278074"),
+                o = n("721987"),
+                l = n("138655"),
                 u = n("793397"),
                 d = n("652853"),
                 _ = n("228168"),
-                c = n("862734"),
-                E = n("785494");
-            let I = (e, t) => {
-                    let n = (0, o.match)(e).with(_.UserProfileTypes.MODAL, () => E.userProfileModalOuter).with(_.UserProfileTypes.PANEL, () => E.userPanelOuter).with(_.UserProfileTypes.CARD, () => E.userCardOuter).with(_.UserProfileTypes.BITE_SIZE, () => E.biteSizeOuter).with(_.UserProfileTypes.FULL_SIZE, () => E.fullSizeOuter).otherwise(() => E.userPopoutOuter),
-                        i = t ? E.userProfileOuterThemed : E.userProfileOuterUnthemed;
-                    return a()(n, i)
+                c = n("785494");
+            let E = (e, t) => {
+                    let n = (0, a.match)(e).with(_.UserProfileTypes.MODAL, () => c.userProfileModalOuter).with(_.UserProfileTypes.PANEL, () => c.userPanelOuter).with(_.UserProfileTypes.CARD, () => c.userCardOuter).with(_.UserProfileTypes.BITE_SIZE, () => c.biteSizeOuter).with(_.UserProfileTypes.FULL_SIZE, () => c.fullSizeOuter).otherwise(() => c.userPopoutOuter),
+                        i = t ? c.userProfileOuterThemed : c.userProfileOuterUnthemed;
+                    return s()(n, i)
                 },
-                T = (e, t, n) => {
-                    let i = (0, o.match)(e).with(_.UserProfileTypes.MODAL, _.UserProfileTypes.FULL_SIZE, () => E.userProfileModalInner).with(_.UserProfileTypes.PANEL, () => E.userPanelInner).with(_.UserProfileTypes.CARD, () => E.userCardInner).otherwise(() => E.userPopoutInner),
-                        r = (0, o.match)(e).with(_.UserProfileTypes.PANEL, () => E.userPanelInnerThemed).with(_.UserProfileTypes.BITE_SIZE, () => E.biteSizeInnerThemed).with(_.UserProfileTypes.FULL_SIZE, () => E.fullSizeInnerThemed).otherwise(() => (0, u.buildGetPremiumUserBannerStyles)({
-                            premiumUserWithBanner: E.userProfileInnerThemedWithBanner,
-                            premiumUserWithoutBanner: E.userProfileInnerThemedPremiumWithoutBanner,
-                            default: E.userProfileInnerThemedNonPremium
+                I = (e, t, n) => {
+                    let i = (0, a.match)(e).with(_.UserProfileTypes.MODAL, _.UserProfileTypes.FULL_SIZE, () => c.userProfileModalInner).with(_.UserProfileTypes.PANEL, () => c.userPanelInner).with(_.UserProfileTypes.CARD, () => c.userCardInner).otherwise(() => c.userPopoutInner),
+                        r = (0, a.match)(e).with(_.UserProfileTypes.PANEL, () => c.userPanelInnerThemed).with(_.UserProfileTypes.BITE_SIZE, () => c.biteSizeInnerThemed).with(_.UserProfileTypes.FULL_SIZE, () => c.fullSizeInnerThemed).otherwise(() => (0, u.buildGetPremiumUserBannerStyles)({
+                            premiumUserWithBanner: c.userProfileInnerThemedWithBanner,
+                            premiumUserWithoutBanner: c.userProfileInnerThemedPremiumWithoutBanner,
+                            default: c.userProfileInnerThemedNonPremium
                         })({
                             isPremium: t,
                             hasBanner: n
                         }));
-                    return a()(i, r)
+                    return s()(i, r)
                 };
 
-            function f(e) {
+            function T(e) {
                 let {
                     user: t,
                     displayProfile: n,
-                    profileType: s,
-                    className: o,
+                    profileType: r,
+                    className: a,
                     pendingThemeColors: u,
                     pendingProfileEffectId: _,
+                    themeOverride: T,
                     children: f,
                     forceShowPremium: S = !1,
-                    useDefaultClientTheme: h = !1,
-                    showOutOfBoundaryComponents: A = !1
-                } = e, m = r.useRef(null), {
-                    profileTheme: N,
-                    primaryProfileColor: p
-                } = (0, l.default)(t, n, {
-                    themeElementRef: m,
+                    showOutOfBoundaryComponents: h = !1
+                } = e, {
+                    theme: A,
+                    primaryColor: m,
+                    secondaryColor: N
+                } = (0, o.default)({
+                    user: t,
+                    displayProfile: n,
                     pendingThemeColors: u,
-                    useDefaultClientTheme: h,
                     isPreview: S
-                }), O = (null == n ? void 0 : n.canEditThemes) || S, R = null !== _ && ((null == n ? void 0 : n.banner) != null || void 0 !== _);
+                }), {
+                    profileThemeStyle: p,
+                    profileThemeClassName: O
+                } = (0, l.default)({
+                    theme: null != T ? T : A,
+                    primaryColor: m,
+                    secondaryColor: N
+                }), R = (null == n ? void 0 : n.canEditThemes) || S, C = null !== _ && ((null == n ? void 0 : n.banner) != null || void 0 !== _);
                 return (0, i.jsx)("div", {
-                    ref: m,
-                    className: a()(I(s, O), c.profileColors, A ? E.showOutOfBoundaryComponents : void 0, "theme-".concat(N), o),
+                    className: s()(E(r, R), h ? c.showOutOfBoundaryComponents : void 0, O, a),
+                    style: p,
                     children: (0, i.jsx)("div", {
-                        className: T(s, O, R),
+                        className: I(r, R, C),
                         children: (0, i.jsx)(d.UserProfileThemeContextProvider, {
-                            profileType: s,
-                            profileTheme: N,
-                            primaryProfileColor: p,
+                            profileType: r,
+                            theme: null != T ? T : A,
+                            primaryColor: m,
+                            secondaryColor: N,
                             children: f
                         })
                     })
                 })
             }
-            let S = e => (0, o.match)(e).with(_.UserProfileTypes.POPOUT, _.UserProfileTypes.SETTINGS, () => E.userPopoutOverlayBackground).with(_.UserProfileTypes.MODAL, _.UserProfileTypes.FULL_SIZE, () => E.userProfileModalOverlayBackground).with(_.UserProfileTypes.PANEL, () => E.userPanelOverlayBackground).with(_.UserProfileTypes.BITE_SIZE, () => E.biteSizeOverlayBackground).otherwise(() => E.overlayBackground);
-            f.Overlay = function(e) {
+            let f = e => (0, a.match)(e).with(_.UserProfileTypes.POPOUT, _.UserProfileTypes.SETTINGS, () => c.userPopoutOverlayBackground).with(_.UserProfileTypes.MODAL, _.UserProfileTypes.FULL_SIZE, () => c.userProfileModalOverlayBackground).with(_.UserProfileTypes.PANEL, () => c.userPanelOverlayBackground).with(_.UserProfileTypes.BITE_SIZE, () => c.biteSizeOverlayBackground).otherwise(() => c.overlayBackground);
+            T.Overlay = function(e) {
                 let {
                     children: t,
                     className: n
@@ -203274,10 +203298,10 @@
                     profileType: r
                 } = (0, d.useUserProfileThemeContext)();
                 return (0, i.jsx)("div", {
-                    className: a()(S(r), n),
+                    className: s()(f(r), n),
                     children: t
                 })
-            }, t.default = f
+            }, t.default = T
         },
         652853: function(e, t, n) {
             "use strict";
@@ -203295,24 +203319,27 @@
                 o = n("231338");
             let l = s.createContext({
                 profileType: null,
-                primaryProfileColor: null,
-                profileTheme: null !== (i = (0, a.default)()) && void 0 !== i ? i : o.ThemeTypes.DARK
+                theme: null !== (i = (0, a.default)()) && void 0 !== i ? i : o.ThemeTypes.DARK,
+                primaryColor: null,
+                secondaryColor: null
             });
 
             function u(e) {
                 let {
                     profileType: t,
-                    profileTheme: n,
-                    primaryProfileColor: i,
-                    children: a
-                } = e, o = s.useMemo(() => ({
+                    theme: n,
+                    primaryColor: i,
+                    secondaryColor: a,
+                    children: o
+                } = e, u = s.useMemo(() => ({
                     profileType: t,
-                    profileTheme: n,
-                    primaryProfileColor: i
-                }), [t, n, i]);
+                    theme: n,
+                    primaryColor: i,
+                    secondaryColor: a
+                }), [t, n, i, a]);
                 return (0, r.jsx)(l.Provider, {
-                    value: o,
-                    children: a
+                    value: u,
+                    children: o
                 })
             }
             let d = () => s.useContext(l)
@@ -204599,7 +204626,7 @@
                 S = n("342656"),
                 h = n("621853"),
                 A = n("895618"),
-                m = n("358794"),
+                m = n("652853"),
                 N = n("421486"),
                 p = n("347949"),
                 O = n("138394"),
@@ -204648,8 +204675,8 @@
                 }, {
                     autoTrackExposure: ea
                 }), el = (0, o.useStateFromStores)([E.default], () => E.default.getChannel(X)), {
-                    profileTheme: eu
-                } = (0, m.default)(j, W), ed = r.useRef(null), [e_, ec] = r.useState(!0), eE = r.useCallback(() => {
+                    theme: eu
+                } = (0, m.useUserProfileThemeContext)(), ed = r.useRef(null), [e_, ec] = r.useState(!0), eE = r.useCallback(() => {
                     let {
                         current: e
                     } = ed;
@@ -205093,7 +205120,7 @@
                     animateOnHover: O,
                     hasProfileEffect: C
                 } = e, {
-                    profileTheme: L
+                    theme: L
                 } = (0, D.useUserProfileThemeContext)(), B = r.useContext(A.AnalyticsContext), V = t.isNonUserBot() && !t.isClyde(), F = m.default.isPremiumAtLeast(null == n ? void 0 : n.premiumType, P.PremiumTypes.TIER_2), x = r.useMemo(() => (0, I.shouldDisableUserPresenceInChannel)(t, T), [t, T]), {
                     analyticsLocations: H
                 } = (0, _.default)(), {
@@ -205118,7 +205145,7 @@
                         size: G,
                         "aria-label": t.username,
                         status: x ? y.StatusTypes.UNKNOWN : u,
-                        statusBackdropColor: null != L && F && !x ? (0, d.getStatusBackdropColor)(L) : void 0,
+                        statusBackdropColor: F && !x ? (0, d.getStatusBackdropColor)(L) : void 0,
                         isMobile: c,
                         statusTooltip: !0
                     })
@@ -207078,6 +207105,63 @@
                 }
             }(r = i || (i = {}))[r.SHOULD_LOAD = 0] = "SHOULD_LOAD", r[r.LOADING = 1] = "LOADING", r[r.COMPLETE = 2] = "COMPLETE"
         },
+        138655: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return d
+                }
+            }), n("47120");
+            var i = n("470079"),
+                r = n("866442"),
+                s = n("442837"),
+                a = n("607070"),
+                o = n("792125"),
+                l = n("168631");
+            let u = Object.freeze({
+                "--profile-gradient-primary-color": "var(--background-secondary-alt)",
+                "--profile-gradient-secondary-color": "var(--background-secondary-alt)",
+                "--profile-gradient-overlay-color": "rgba(0, 0, 0, 0)",
+                "--profile-gradient-button-color": "var(--button-secondary-background)",
+                "--profile-avatar-border-color": "var(--background-secondary-alt)",
+                "--profile-body-background-color": "var(--background-floating)",
+                "--profile-body-background-hover": "var(--background-modifier-hover)",
+                "--profile-body-divider-color": "var(--background-modifier-accent)",
+                "--profile-message-input-border-color": "var(--background-modifier-accent)",
+                "--profile-note-background-color": "var(--background-tertiary)",
+                "--profile-role-pill-background-color": "var(--background-secondary-alt)",
+                "--profile-role-pill-border-color": "var(--interactive-normal)"
+            });
+
+            function d(e) {
+                let {
+                    theme: t,
+                    primaryColor: n,
+                    secondaryColor: d
+                } = e, [_, c] = (0, s.useStateFromStoresArray)([a.default], () => [a.default.desaturateUserColors, a.default.syncProfileThemeWithUserTheme]), E = (0, l.useProfileThemeValues)(t), I = (0, l.useAvatarBorderColor)(t, n, c), T = (0, l.useDividerColor)(t, n), f = (0, l.useMessageInputBorderColor)(t, d), S = c ? null == E ? void 0 : E.overlaySyncedWithUserTheme : null == E ? void 0 : E.overlay;
+                return {
+                    profileThemeStyle: (0, i.useMemo)(() => {
+                        if (null == n || null == d || null == E || null == I || null == T || null == f || null == S) return u;
+                        let e = (e, t) => (0, r.int2hsl)(e, _, null, t);
+                        return {
+                            "--profile-gradient-primary-color": e(n),
+                            "--profile-gradient-secondary-color": e(d),
+                            "--profile-gradient-overlay-color": S,
+                            "--profile-gradient-button-color": e((0, l.calculateButtonColor)(n)),
+                            "--profile-avatar-border-color": e(I),
+                            "--profile-body-background-color": E.sectionBox,
+                            "--profile-body-background-hover": E.profileBodyBackgroundHover,
+                            "--profile-body-divider-color": e(T, E.dividerOpacity),
+                            "--profile-message-input-border-color": e(f),
+                            "--profile-note-background-color": E.noteBackgroundColor,
+                            "--profile-role-pill-background-color": E.rolePillBackgroundColor,
+                            "--profile-role-pill-border-color": E.rolePillBorderColor
+                        }
+                    }, [n, d, I, _, T, f, S, E]),
+                    profileThemeClassName: (0, o.getThemeClass)(t)
+                }
+            }
+        },
         252532: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -207114,57 +207198,6 @@
                         onMouseEnter: N,
                         onMouseLeave: i.useCallback(() => T(!1), [])
                     }
-                }
-            }
-        },
-        358794: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return c
-                }
-            }), n("47120");
-            var i = n("470079"),
-                r = n("866442"),
-                s = n("442837"),
-                a = n("410030"),
-                o = n("607070"),
-                l = n("168631"),
-                u = n("84244");
-            let d = ["--profile-gradient-primary-color", "--profile-gradient-secondary-color", "--profile-gradient-button-color", "--profile-gradient-overlay-color", "--profile-body-background-color", "--profile-body-divider-color", "--profile-avatar-border-color", "--profile-message-input-border-color", "--profile-note-background-color", "--profile-body-background-hover", "--account-profile-modal-list-item-hover", "--profile-role-pill-background-color", "--profile-role-pill-border-color"];
-
-            function _(e, t, n) {
-                var i;
-                null == e || null === (i = e.current) || void 0 === i || i.style.setProperty(t, null != n ? n : null)
-            }
-
-            function c(e, t) {
-                let {
-                    themeElementRef: n,
-                    pendingThemeColors: c,
-                    isPreview: E,
-                    useDefaultClientTheme: I
-                } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, [T, f] = (0, u.default)(e, t, {
-                    pendingThemeColors: c,
-                    isPreview: E
-                }), [S, h, A] = (0, s.useStateFromStoresArray)([o.default], () => [o.default.desaturateUserColors, o.default.saturation, o.default.syncProfileThemeWithUserTheme]), m = (0, a.default)(), N = i.useCallback(() => A || I ? m : (0, l.getProfileTheme)(T), [I, A, m, T]), [p, O] = i.useState(N()), R = (0, l.useProfileThemeValues)(p), C = (0, l.useDividerColor)(p, T), g = (0, l.useMessageInputBorderColor)(p, f), L = i.useCallback((e, t) => (0, r.int2hsl)(e, S, null, t), [S]);
-                i.useEffect(() => {
-                    O(N())
-                }, [T, A, m, I, N]);
-                let D = (0, l.useAvatarBorderColor)(p, T, A),
-                    v = null != D ? (0, r.int2hsl)(D, !1, S ? h : null) : null,
-                    M = e => d.forEach(t => {
-                        e.style.removeProperty(t)
-                    });
-                return i.useEffect(() => {
-                    if (null != T && null != f && null != p && null != D && null != C && null != g) {
-                        let e = A && p !== m ? null == R ? void 0 : R.overlaySyncedWithUserTheme : null == R ? void 0 : R.overlay;
-                        _(n, "--profile-gradient-primary-color", L(T)), _(n, "--profile-gradient-secondary-color", L(f)), _(n, "--profile-gradient-button-color", L((0, l.calculateButtonColor)(T))), _(n, "--profile-gradient-overlay-color", e), _(n, "--profile-body-background-color", null == R ? void 0 : R.sectionBox), _(n, "--profile-body-background-hover", null == R ? void 0 : R.profileBodyBackgroundHover), _(n, "--profile-body-divider-color", L(C, null == R ? void 0 : R.dividerOpacity)), _(n, "--profile-avatar-border-color", L(D)), _(n, "--profile-message-input-border-color", L(g)), _(n, "--profile-note-background-color", null == R ? void 0 : R.noteBackgroundColor), _(n, "--profile-role-pill-background-color", null == R ? void 0 : R.rolePillBackgroundColor), _(n, "--profile-role-pill-border-color", null == R ? void 0 : R.rolePillBorderColor)
-                    } else(null == n ? void 0 : n.current) != null && M(null == n ? void 0 : n.current)
-                }, [T, f, D, p, m, n, L, A, C, null == R ? void 0 : R.overlaySyncedWithUserTheme, null == R ? void 0 : R.overlay, null == R ? void 0 : R.sectionBox, null == R ? void 0 : R.profileBodyBackgroundHover, null == R ? void 0 : R.dividerOpacity, null == R ? void 0 : R.noteBackgroundColor, null == R ? void 0 : R.rolePillBackgroundColor, null == R ? void 0 : R.rolePillBorderColor, g]), {
-                    profileTheme: null != p ? p : m,
-                    primaryProfileColor: T,
-                    avatarBorderColor: v
                 }
             }
         },
@@ -240180,7 +240213,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3b489701a0136b6a9a02ce4721a9346a3208ad35"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a461e1a3d8e3ad597680d1ccbc7c583cac503ba3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268596,7 +268629,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285135"
+                                build_number: "285154"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -275775,7 +275808,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285135", "285135"), 10);
+                let s = parseInt((n = "285154", "285154"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -302791,4 +302824,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.824b29a625107541081f.js.map
+//# sourceMappingURL=73050.147426b90e538cfe6bc1.js.map
