@@ -1118,7 +1118,6 @@
                     RESEND_PHONE: "/phone-verifications/resend",
                     CONNECTIONS: "/users/@me/connections",
                     CONNECTIONS_AUTHORIZE: _ => "/connections/".concat(_, "/authorize"),
-                    CONNECTIONS_AUTHORIZE_CONTINUATION: _ => "/connections/".concat(_, "/authorize?continuation=true"),
                     CONNECTIONS_AUTHORIZE_LINK: (_, E) => "/connections/".concat(_, "/authorize?two_way_link=true&two_way_link_type=").concat(E),
                     CONNECTIONS_AUTHORIZE_LINK_DEVICE: (_, E) => "/connections/".concat(_, "/authorize?two_way_link=true&two_way_link_type=").concat(oy.TwoWayLinkType.DEVICE_CODE, "&two_way_user_code=").concat(E),
                     CONNECTIONS_CALLBACK: _ => "/connections/".concat(_, "/callback"),
@@ -1126,10 +1125,6 @@
                     CONNECTION_REFRESH: (_, E) => "/users/@me/connections/".concat(_, "/").concat(E, "/refresh"),
                     CONNECTION_SYNC_CONTACTS: "/users/@me/connections/contacts/@me/external-friend-list-entries",
                     CONNECTION_ACCESS_TOKEN: (_, E) => "/users/@me/connections/".concat(_, "/").concat(E, "/access-token"),
-                    CONNECTIONS_CALLBACK_CONTINUATION: function(_) {
-                        let E = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
-                        return "/connections/".concat(_, "/callback-continuation").concat(null != E ? "/".concat(E) : "")
-                    },
                     CONNECTIONS_LINK_DISPATCH_AUTH_CALLBACK: _ => "/connections/".concat(_, "/link-dispatch-auth-callback"),
                     XBOX_HANDOFF: "/consoles/xbox-handoff",
                     NOTES: "/users/@me/notes",
@@ -2616,7 +2611,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-53ebf90eb6e472425df621f63386973d748cd075",
+                    release: "discord_web-f66ebbd3de0df29aa1819e46e794bdd43b046077",
                     beforeSend: _ => {
                         var E, e;
                         return !(null != (E = _).exception && null != E.exception.values && E.exception.values.every(_ => null == _.stacktrace || null != _.stacktrace.frames && 1 === _.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || a.some(_ => window.navigator.appVersion.toLowerCase().indexOf(_) >= 0)) && !R() && !("Aborted" === (e = _).message || "cancel captcha" === e.message) && t() ? _ : null
@@ -2634,7 +2629,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), I.setTag("buildNumber", (_ = "284990", "284990")), I.setTag("builtAt", String("1713292393654"));
+                }), I.setTag("buildNumber", (_ = "284998", "284998")), I.setTag("builtAt", String("1713293095989"));
                 let E = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != E && "object" == typeof E)
                     for (let _ in E) I.setTag(_, E[_]);
@@ -14057,4 +14052,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84471.163257034e6639b437ee.js.map
+//# sourceMappingURL=84471.f742323afb468d6e9377.js.map
