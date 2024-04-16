@@ -25535,10 +25535,10 @@
             var i = n("461286");
             n.es(i, t)
         },
-        420166: function(e, t, n) {
+        434559: function(e, t, n) {
             "use strict";
             n.r(t);
-            var i = n("249800");
+            var i = n("467063");
             n.es(i, t)
         },
         873706: function(e, t, n) {
@@ -36634,7 +36634,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285024", ", Version Hash: ").concat("b8fb959c743a42fb81ff7b466d971e73905a84c2")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285035", ", Version Hash: ").concat("f04a0606f4d12afa96286a70d92b597a883cda99")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86486,8 +86486,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285024", "285024"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285024")), t = 0), t
+                let t = parseInt((e = "285035", "285035"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285035")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110378,8 +110378,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285024",
-                    versionHash: "b8fb959c743a42fb81ff7b466d971e73905a84c2"
+                    buildNumber: "285035",
+                    versionHash: "f04a0606f4d12afa96286a70d92b597a883cda99"
                 }
             }
             n.r(t), n.d(t, {
@@ -135006,7 +135006,7 @@
                 let C = await (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("63438"), n.e("61247"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("22646"), n.e("54999"), n.e("57743")]).then(n.bind(n, "343649"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("61247"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("22646"), n.e("54999"), n.e("57743")]).then(n.bind(n, "343649"));
                     return n => {
                         let {
                             transitionState: r,
@@ -138718,7 +138718,7 @@
                     (0, r.openModalLazy)(async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("70935")]).then(n.bind(n, "645264"));
+                        } = await Promise.all([n.e("49237"), n.e("99387"), n.e("80026"), n.e("98880")]).then(n.bind(n, "645264"));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             guildId: e,
@@ -163448,8 +163448,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713295920591",
-                                    build_number: "285024"
+                                    built_at: "1713297046589",
+                                    build_number: "285035"
                                 }
                             },
                             retries: 1
@@ -169044,7 +169044,7 @@
                 (0, s.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("6416"), n.e("63438"), n.e("61247"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("32776"), n.e("57878"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("34853")]).then(n.bind(n, "7305"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("61247"), n.e("6416"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("32776"), n.e("57878"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("34853")]).then(n.bind(n, "7305"));
                     return n => {
                         let {
                             onClose: r,
@@ -169146,7 +169146,7 @@
                         PaymentContextProvider: e
                     } = await Promise.resolve().then(n.bind(n, "598")), a = (await Promise.all([n.e("49237"), n.e("99387"), n.e("15972"), n.e("6416"), n.e("32776"), n.e("10993")]).then(n.bind(n, "405083"))).default, {
                         getApplicationPaymentSteps: c
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("58625"), n.e("63438"), n.e("61247"), n.e("62511"), n.e("58600"), n.e("95900"), n.e("74195")]).then(n.bind(n, "759386")), p = c({
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("58625"), n.e("61247"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("95900"), n.e("74195")]).then(n.bind(n, "759386")), p = c({
                         guildId: T,
                         showBenefitsFirst: h,
                         eligibleApplicationSubscriptionGuilds: A
@@ -203918,7 +203918,7 @@
                 l = n("692547"),
                 u = n("622535"),
                 d = n("298433"),
-                _ = n("420166"),
+                _ = n("434559"),
                 c = n("481060"),
                 E = n("812206"),
                 I = n("566454"),
@@ -203992,7 +203992,7 @@
                             children: a
                         }), t.isNew && (0, i.jsxs)("div", {
                             className: C.newIcon,
-                            children: [(0, i.jsx)(_.NewUserIcon, {
+                            children: [(0, i.jsx)(_.NewUserLargeIcon, {
                                 height: 12,
                                 width: 12,
                                 color: l.default.colors.STATUS_POSITIVE
@@ -240016,7 +240016,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b8fb959c743a42fb81ff7b466d971e73905a84c2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f04a0606f4d12afa96286a70d92b597a883cda99"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -253696,7 +253696,7 @@
             var i = n("735250");
             n("470079");
             var r = n("960259"),
-                s = n("420166"),
+                s = n("434559"),
                 a = n("325767");
             t.default = (0, r.replaceIcon)(function(e) {
                 let {
@@ -254516,7 +254516,7 @@
                         fill: r
                     })]
                 })
-            }, s.NewUserIcon, void 0, {
+            }, s.NewUserLargeIcon, void 0, {
                 size: 24
             })
         },
@@ -268432,7 +268432,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285024"
+                                build_number: "285035"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -275611,7 +275611,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285024", "285024"), 10);
+                let s = parseInt((n = "285035", "285035"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -280482,10 +280482,10 @@
                 })
             }
         },
-        249800: function(e, t, n) {
+        467063: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                NewUserIcon: function() {
+                NewUserLargeIcon: function() {
                     return a
                 }
             });
@@ -302623,4 +302623,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.b20dbe7d932b6cd5cc34.js.map
+//# sourceMappingURL=73050.430ab3722bc154b87511.js.map
