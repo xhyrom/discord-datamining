@@ -36636,7 +36636,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285168", ", Version Hash: ").concat("962988c0e1dd6ae6e9403059cbb44afef43e46bd")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285174", ", Version Hash: ").concat("6a66dc6c4cfc58321ce11c19dfe52dec56f53a9d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86491,8 +86491,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285168", "285168"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285168")), t = 0), t
+                let t = parseInt((e = "285174", "285174"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285174")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -102394,6 +102394,9 @@
             n.r(t), n.d(t, {
                 CLIENT_THEMES_DATA_ATTRIBUTE: function() {
                     return a
+                },
+                CUSTOM_THEME_BACKGROUND_CLASS_NAME: function() {
+                    return o
                 }
             });
             var i = n("470079"),
@@ -110388,8 +110391,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285168",
-                    versionHash: "962988c0e1dd6ae6e9403059cbb44afef43e46bd"
+                    buildNumber: "285174",
+                    versionHash: "6a66dc6c4cfc58321ce11c19dfe52dec56f53a9d"
                 }
             }
             n.r(t), n.d(t, {
@@ -135055,7 +135058,7 @@
                 let C = await (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("63438"), n.e("61247"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("22646"), n.e("54999"), n.e("57743")]).then(n.bind(n, "343649"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("61247"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("22646"), n.e("54999"), n.e("57743")]).then(n.bind(n, "343649"));
                     return n => {
                         let {
                             transitionState: r,
@@ -163507,8 +163510,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713306038109",
-                                    build_number: "285168"
+                                    built_at: "1713306603640",
+                                    build_number: "285174"
                                 }
                             },
                             retries: 1
@@ -169110,7 +169113,7 @@
                 (0, s.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("6416"), n.e("63438"), n.e("61247"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("32776"), n.e("57878"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("34853")]).then(n.bind(n, "7305"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("58625"), n.e("61247"), n.e("6416"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("32776"), n.e("57878"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("34853")]).then(n.bind(n, "7305"));
                     return n => {
                         let {
                             onClose: r,
@@ -169212,7 +169215,7 @@
                         PaymentContextProvider: e
                     } = await Promise.resolve().then(n.bind(n, "598")), a = (await Promise.all([n.e("49237"), n.e("99387"), n.e("15972"), n.e("6416"), n.e("32776"), n.e("10993")]).then(n.bind(n, "405083"))).default, {
                         getApplicationPaymentSteps: c
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("58625"), n.e("63438"), n.e("61247"), n.e("62511"), n.e("58600"), n.e("95900"), n.e("47379")]).then(n.bind(n, "759386")), p = c({
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("58625"), n.e("61247"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("95900"), n.e("47379")]).then(n.bind(n, "759386")), p = c({
                         guildId: T,
                         showBenefitsFirst: h,
                         eligibleApplicationSubscriptionGuilds: A
@@ -203302,7 +203305,7 @@
                     })
                 })
             }
-            let f = e => (0, a.match)(e).with(_.UserProfileTypes.POPOUT, _.UserProfileTypes.SETTINGS, () => c.userPopoutOverlayBackground).with(_.UserProfileTypes.MODAL, _.UserProfileTypes.FULL_SIZE, () => c.userProfileModalOverlayBackground).with(_.UserProfileTypes.PANEL, () => c.userPanelOverlayBackground).with(_.UserProfileTypes.BITE_SIZE, () => c.biteSizeOverlayBackground).otherwise(() => c.overlayBackground);
+            let f = e => (0, a.match)(e).with(_.UserProfileTypes.POPOUT, _.UserProfileTypes.SETTINGS, () => c.userPopoutOverlayBackground).with(_.UserProfileTypes.MODAL, () => c.userProfileModalOverlayBackground).with(_.UserProfileTypes.PANEL, () => c.userPanelOverlayBackground).with(_.UserProfileTypes.BITE_SIZE, () => c.biteSizeOverlayBackground).with(_.UserProfileTypes.FULL_SIZE, () => c.fullSizeOverlayBackground).otherwise(() => c.overlayBackground);
             T.Overlay = function(e) {
                 let {
                     children: t,
@@ -207122,16 +207125,19 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return d
+                    return E
                 }
             }), n("47120");
             var i = n("470079"),
-                r = n("866442"),
-                s = n("442837"),
-                a = n("607070"),
-                o = n("792125"),
-                l = n("168631");
-            let u = Object.freeze({
+                r = n("120356"),
+                s = n.n(r),
+                a = n("866442"),
+                o = n("442837"),
+                l = n("607070"),
+                u = n("168551"),
+                d = n("792125"),
+                _ = n("168631");
+            let c = Object.freeze({
                 "--profile-gradient-primary-color": "var(--background-secondary-alt)",
                 "--profile-gradient-secondary-color": "var(--background-secondary-alt)",
                 "--profile-gradient-overlay-color": "rgba(0, 0, 0, 0)",
@@ -207140,38 +207146,43 @@
                 "--profile-body-background-color": "var(--background-floating)",
                 "--profile-body-background-hover": "var(--background-modifier-hover)",
                 "--profile-body-divider-color": "var(--background-modifier-accent)",
+                "--profile-body-border-color": "var(--border-faint)",
                 "--profile-message-input-border-color": "var(--background-modifier-accent)",
                 "--profile-note-background-color": "var(--background-tertiary)",
                 "--profile-role-pill-background-color": "var(--background-secondary-alt)",
                 "--profile-role-pill-border-color": "var(--interactive-normal)"
             });
 
-            function d(e) {
+            function E(e) {
                 let {
                     theme: t,
                     primaryColor: n,
-                    secondaryColor: d
-                } = e, [_, c] = (0, s.useStateFromStoresArray)([a.default], () => [a.default.desaturateUserColors, a.default.syncProfileThemeWithUserTheme]), E = (0, l.useProfileThemeValues)(t), I = (0, l.useAvatarBorderColor)(t, n, c), T = (0, l.useDividerColor)(t, n), f = (0, l.useMessageInputBorderColor)(t, d), S = c ? null == E ? void 0 : E.overlaySyncedWithUserTheme : null == E ? void 0 : E.overlay;
+                    secondaryColor: r
+                } = e, [E, I] = (0, o.useStateFromStoresArray)([l.default], () => [l.default.desaturateUserColors, l.default.syncProfileThemeWithUserTheme]), T = (0, _.useProfileThemeValues)(t), f = (0, _.useAvatarBorderColor)(t, n, I), S = (0, _.useDividerColor)(t, n), h = (0, _.useMessageInputBorderColor)(t, r), A = I ? null == T ? void 0 : T.overlaySyncedWithUserTheme : null == T ? void 0 : T.overlay;
                 return {
                     profileThemeStyle: (0, i.useMemo)(() => {
-                        if (null == n || null == d || null == E || null == I || null == T || null == f || null == S) return u;
-                        let e = (e, t) => (0, r.int2hsl)(e, _, null, t);
+                        if (null == n || null == r || null == T || null == f || null == S || null == h || null == A) return c;
+                        let e = (e, t) => (0, a.int2hsl)(e, E, null, t);
                         return {
                             "--profile-gradient-primary-color": e(n),
-                            "--profile-gradient-secondary-color": e(d),
-                            "--profile-gradient-overlay-color": S,
-                            "--profile-gradient-button-color": e((0, l.calculateButtonColor)(n)),
-                            "--profile-avatar-border-color": e(I),
-                            "--profile-body-background-color": E.sectionBox,
-                            "--profile-body-background-hover": E.profileBodyBackgroundHover,
-                            "--profile-body-divider-color": e(T, E.dividerOpacity),
-                            "--profile-message-input-border-color": e(f),
-                            "--profile-note-background-color": E.noteBackgroundColor,
-                            "--profile-role-pill-background-color": E.rolePillBackgroundColor,
-                            "--profile-role-pill-border-color": E.rolePillBorderColor
+                            "--profile-gradient-secondary-color": e(r),
+                            "--profile-gradient-overlay-color": A,
+                            "--profile-gradient-button-color": e((0, _.calculateButtonColor)(n)),
+                            "--profile-avatar-border-color": e(f),
+                            "--profile-body-background-color": T.sectionBox,
+                            "--profile-body-background-hover": T.profileBodyBackgroundHover,
+                            "--profile-body-divider-color": e(S, T.dividerOpacity),
+                            "--profile-body-border-color": e(S, .12),
+                            "--profile-message-input-border-color": e(h),
+                            "--profile-note-background-color": T.noteBackgroundColor,
+                            "--profile-role-pill-background-color": T.rolePillBackgroundColor,
+                            "--profile-role-pill-border-color": T.rolePillBorderColor
                         }
-                    }, [n, d, I, _, T, f, S, E]),
-                    profileThemeClassName: (0, o.getThemeClass)(t)
+                    }, [n, r, f, E, S, h, A, T]),
+                    profileThemeClassName: s()((0, d.getThemeClass)(t), {
+                        [u.CUSTOM_THEME_BACKGROUND_CLASS_NAME]: null != n,
+                        "custom-profile-theme": null != n
+                    })
                 }
             }
         },
@@ -240226,7 +240237,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "962988c0e1dd6ae6e9403059cbb44afef43e46bd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "6a66dc6c4cfc58321ce11c19dfe52dec56f53a9d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268642,7 +268653,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285168"
+                                build_number: "285174"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -275827,7 +275838,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285168", "285168"), 10);
+                let s = parseInt((n = "285174", "285174"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -302843,4 +302854,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.de9db709147285c2ea6b.js.map
+//# sourceMappingURL=73050.863c8c14de54f0875eee.js.map

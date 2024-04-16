@@ -24849,6 +24849,7 @@
                 biteSizeOverlayBackground: "biteSizeOverlayBackground__11aa7 overlayBackground__345c9",
                 fullSizeInnerThemed: "fullSizeInnerThemed_ae6977",
                 fullSizeOuter: "fullSizeOuter__64397 userProfileModalOuter__90b4a userProfileOuter__35e59",
+                fullSizeOverlayBackground: "fullSizeOverlayBackground_a28b53 overlayBackground__345c9",
                 overlayBackground: "overlayBackground__345c9",
                 showOutOfBoundaryComponents: "showOutOfBoundaryComponents__3e39f",
                 userCardInner: "userCardInner_e36852 userProfileInner__8ff35",
@@ -24901,9 +24902,9 @@
             "use strict";
             e.exports = {
                 button: "button_c03db1",
+                color: "color__75c7b",
                 compactButton: "compactButton__87ab2",
-                compactButtonInner: "compactButtonInner_cc8cc8",
-                themeColor: "themeColor__71257"
+                compactButtonInner: "compactButtonInner_cc8cc8"
             }
         },
         23812: function(e) {
