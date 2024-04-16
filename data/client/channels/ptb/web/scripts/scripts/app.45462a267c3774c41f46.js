@@ -24728,12 +24728,6 @@
                 coachmarkHeader: "coachmarkHeader__3cdda"
             }
         },
-        862734: function(e) {
-            "use strict";
-            e.exports = {
-                profileColors: "profileColors_ac6ab4"
-            }
-        },
         350315: function(e) {
             "use strict";
             e.exports = {
