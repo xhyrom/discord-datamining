@@ -36651,7 +36651,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("284756", ", Version Hash: ").concat("cd97bf72cfb515cbb6a5c893e98e6576002caf89")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("284789", ", Version Hash: ").concat("a0049a8f8bb59ce5e330be18d1e16bdb683038e5")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86484,8 +86484,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "284756", "284756"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284756")), t = 0), t
+                let t = parseInt((e = "284789", "284789"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("284789")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110399,8 +110399,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "284756",
-                    versionHash: "cd97bf72cfb515cbb6a5c893e98e6576002caf89"
+                    buildNumber: "284789",
+                    versionHash: "a0049a8f8bb59ce5e330be18d1e16bdb683038e5"
                 }
             }
             n.r(t), n.d(t, {
@@ -126545,14 +126545,17 @@
         },
         639655: function(e, t, n) {
             "use strict";
-            n.r(t), n("653041"), n("518263"), n("970173"), n("520712"), n("268111"), n("941497"), n("32026"), n("480839"), n("744285"), n("492257"), n("873817"), n("411104"), n("47120");
-            var i = n("392711"),
-                r = n.n(i),
-                s = n("710845"),
-                a = n("374023"),
-                o = n("420491");
+            n.r(t), n.d(t, {
+                getCompressionHandler: function() {
+                    return c
+                }
+            }), n("653041"), n("411104"), n("518263"), n("970173"), n("520712"), n("268111"), n("941497"), n("32026"), n("480839"), n("744285"), n("492257"), n("873817"), n("47120");
+            var i = n("710845"),
+                r = n("374023"),
+                s = n("420491"),
+                a = n("988348");
 
-            function l(e, t, n) {
+            function o(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -126561,23 +126564,42 @@
                 }) : e[t] = n, e
             }
             let {
-                NativeModules: u
-            } = {}, d = [];
-            class _ {
+                NativeModules: l
+            } = {}, u = [];
+            class d {
                 static canUse() {
                     return !1
                 }
                 bindWebSocket(e) {}
                 feed(e) {}
-                recomputeAlgorithm() {}
                 dataReady(e) {
                     this._onDataReady = e
                 }
                 constructor(e) {
-                    l(this, "_onDataReady", void 0), l(this, "_gatewayEncoding", void 0), this._onDataReady = null, this._gatewayEncoding = e
+                    o(this, "_onDataReady", void 0), o(this, "_gatewayEncoding", void 0), this._onDataReady = null, this._gatewayEncoding = e
                 }
             }
-            d.push(class extends _ {
+            u.push(class extends d {
+                static canUse() {
+                    return s.default.shouldUseZstd()
+                }
+                getAlgorithm() {
+                    return "zstd-stream"
+                }
+                usesLegacyCompression() {
+                    return !1
+                }
+                feed(e) {
+                    let t;
+                    if (null == this._stream) throw Error("Trying to decompress with zstd but did not initialize with it");
+                    if (!(e instanceof ArrayBuffer)) throw Error("Expected array buffer, but got " + typeof e);
+                    t = this._stream.decompress(e), null != this._decoder && (t = this._decoder.decode(t)), null != this._onDataReady && this._onDataReady(t)
+                }
+                close() {}
+                constructor(e) {
+                    super(e), o(this, "_decoder", null), o(this, "_stream", void 0), this._gatewayEncoding.wantsString() ? this._decoder = new TextDecoder("utf-8") : this._decoder = null, this._stream = (0, a.createZstdContextWeb)()
+                }
+            }), u.push(class extends d {
                 static canUse() {
                     return void 0 !== window.Uint8Array
                 }
@@ -126588,15 +126610,12 @@
                     return !1
                 }
                 feed(e) {
-                    let t = this._pako,
-                        n = this._inflate;
-                    if (null == n) throw Error("Trying to feed to closed compression adapter");
+                    if (null == this._inflate) throw Error("Trying to feed to closed compression adapter");
                     if (null === this._onDataReady) throw Error("Cannot feed unless a data ready callback is registered.");
-                    if (e instanceof ArrayBuffer) {
-                        let i = new DataView(e),
-                            r = i.byteLength >= 4 && 65535 === i.getUint32(i.byteLength - 4, !1);
-                        n.push(e, !!r && t.Z_SYNC_FLUSH)
-                    } else throw Error("Expected array buffer, but got " + typeof e)
+                    if (!(e instanceof ArrayBuffer)) throw Error("Expected array buffer, but got " + typeof e);
+                    let t = new DataView(e),
+                        n = t.byteLength >= 4 && 65535 === t.getUint32(t.byteLength - 4, !1);
+                    this._inflate.push(e, !!n && this._pako.Z_SYNC_FLUSH)
                 }
                 close() {
                     null != this._inflate && (this._inflate.onEnd = null, this._inflate.chunks = []), this._inflate = null
@@ -126604,38 +126623,36 @@
                 handleFlushEnd(e) {
                     let t;
                     let n = this._pako,
-                        i = this._inflate;
-                    if (null == i) {
-                        new s.default("GatewayCompressionHandler").error("flush end happened on closed compression adapter");
+                        r = this._inflate;
+                    if (null == r) {
+                        new i.default("GatewayCompressionHandler").error("flush end happened on closed compression adapter");
                         return
                     }
-                    if (e !== n.Z_OK) throw Error("zlib error, ".concat(e, ", ").concat(i.strm.msg));
+                    if (e !== n.Z_OK) throw Error("zlib error, ".concat(e, ", ").concat(r.strm.msg));
                     let {
-                        chunks: r
-                    } = i, a = r.length;
-                    if (this._gatewayEncoding.wantsString()) t = a > 1 ? r.join("") : r[0];
+                        chunks: s
+                    } = r, a = s.length;
+                    if (this._gatewayEncoding.wantsString()) t = a > 1 ? s.join("") : s[0];
                     else if (a > 1) {
                         let e = 0;
-                        for (let t = 0; t < a; t++) e += r[t].length;
+                        for (let t = 0; t < a; t++) e += s[t].length;
                         let n = new Uint8Array(e),
                             i = 0;
                         for (let e = 0; e < a; e++) {
-                            let t = r[e];
+                            let t = s[e];
                             n.set(t, i), i += t.length
                         }
                         t = n
-                    } else t = r[0];
-                    r.length = 0, null != this._onDataReady && this._onDataReady(t)
+                    } else t = s[0];
+                    s.length = 0, null != this._onDataReady && this._onDataReady(t)
                 }
                 constructor(e) {
-                    super(e), l(this, "_inflate", void 0), l(this, "_pako", n("457854"));
-                    let t = this._pako;
-                    (this._inflate = new t.Inflate({
+                    super(e), o(this, "_inflate", void 0), o(this, "_pako", n("457854")), o(this, "_usesZstd", !1), o(this, "_zstdDecoder", null), o(this, "_zstdStream", null), this._inflate = new this._pako.Inflate({
                         chunkSize: 65536,
                         to: this._gatewayEncoding.wantsString() ? "string" : ""
-                    })).onEnd = this.handleFlushEnd.bind(this)
+                    }), this._inflate.onEnd = this.handleFlushEnd.bind(this)
                 }
-            }), d.push(class extends _ {
+            }), u.push(class extends d {
                 static canUse() {
                     return !0
                 }
@@ -126654,17 +126671,14 @@
                 }
                 close() {}
                 constructor(...e) {
-                    super(...e), l(this, "_pako", n("457854"))
+                    super(...e), o(this, "_pako", n("457854"))
                 }
-            }), d.push(class extends _ {
+            }), u.push(class extends d {
                 static canUse() {
                     return !1
                 }
                 bindWebSocket(e) {
-                    this.close(), this._socketId = e._socketId, this._usesZstd ? u.DCDCompressionManager.enableZstdStreamSupport(this._socketId, 0) : u.DCDCompressionManager.enableZlibStreamSupport(this._socketId)
-                }
-                recomputeAlgorithm() {
-                    this._usesZstd = o.default.shouldUseZstd()
+                    this.close(), this._socketId = e._socketId, this._usesZstd ? l.DCDCompressionManager.enableZstdStreamSupport(this._socketId, 0) : l.DCDCompressionManager.enableZlibStreamSupport(this._socketId)
                 }
                 getAlgorithm() {
                     return this._usesZstd ? "zstd-stream" : "zlib-stream"
@@ -126678,13 +126692,13 @@
                 }
                 close() {
                     let e = this._socketId;
-                    this._socketId = null, null !== e && u.DCDCompressionManager.disableZlibStreamSupport(e)
+                    this._socketId = null, null !== e && l.DCDCompressionManager.disableZlibStreamSupport(e)
                 }
                 constructor(e) {
-                    super(e), l(this, "_socketId", void 0), l(this, "_usesZstd", void 0), this._usesZstd = !1, this._socketId = null
+                    super(e), o(this, "_socketId", void 0), o(this, "_usesZstd", void 0), this._usesZstd = s.default.shouldUseZstd(), this._socketId = null
                 }
             });
-            class c extends _ {
+            class _ extends d {
                 static canUse() {
                     return !0
                 }
@@ -126700,9 +126714,14 @@
                 }
                 close() {}
             }
-            d.push(c);
-            let E = r().find(d, e => e.canUse());
-            a.ProcessArgs.isDiscordGatewayPlaintextSet() && (E = c), t.default = E
+
+            function c(e) {
+                if (r.ProcessArgs.isDiscordGatewayPlaintextSet()) return new _(e);
+                for (var t of u)
+                    if (t.canUse()) return new t(e);
+                return new _(e)
+            }
+            u.push(_)
         },
         38618: function(e, t, n) {
             "use strict";
@@ -127155,8 +127174,6 @@
                     null != e && e.endsWith("/") && (e = e.substring(0, e.length - 1)), null !== e && w.verbose("Updating resume url to ".concat(e)), this.resumeUrl = e
                 }
                 _connect() {
-                    var e, t;
-                    let n;
                     if (!this.willReconnect()) {
                         w.verbose("Skipping _connect because willReconnect is false");
                         return
@@ -127165,18 +127182,17 @@
                         w.info("Skipping _connect because socket is paused");
                         return
                     }
-                    this.connectionState = C.default.CONNECTING, this.nextReconnectIsImmediate = !1, this.compressionHandler.recomputeAlgorithm();
-                    let i = this.compressionHandler.getAlgorithm(),
-                        r = B.getName(),
-                        s = this._getGatewayUrl(),
-                        a = window.GLOBAL_ENV.API_VERSION;
-                    o.default.mark("\uD83C\uDF10", "Socket._connect"), w.info("[CONNECT] ".concat(s, ", ") + "encoding: ".concat(r, ", ") + "version: ".concat(a, ", ") + "compression: ".concat(null != i ? i : "none")), null !== this.webSocket && (w.error("_connect called with already existing websocket"), this._cleanup(e => e.close(4e3))), this.connectionStartTime = Date.now(), this.helloTimeout = setTimeout(() => {
+                    this.connectionState = C.default.CONNECTING, this.nextReconnectIsImmediate = !1;
+                    let e = this.compressionHandler.getAlgorithm(),
+                        t = B.getName(),
+                        n = this._getGatewayUrl(),
+                        i = window.GLOBAL_ENV.API_VERSION;
+                    o.default.mark("\uD83C\uDF10", "Socket._connect"), w.info("[CONNECT] ".concat(n, ", ") + "encoding: ".concat(t, ", ") + "version: ".concat(i, ", ") + "compression: ".concat(null != e ? e : "none")), null !== this.webSocket && (w.error("_connect called with already existing websocket"), this._cleanup(e => e.close(4e3))), this.connectionStartTime = Date.now(), this.helloTimeout = setTimeout(() => {
                         let e = Date.now() - this.connectionStartTime;
                         this._handleClose(!1, 0, "The connection timed out after ".concat(e, " ms - did not receive OP_HELLO in time.")), this.setResumeUrl(null)
                     }, V);
-                    let l = new URL(s);
-                    l.searchParams.append("encoding", r), l.searchParams.append("v", a.toString()), null != i && l.searchParams.append("compress", i);
-                    ! function(e) {
+                    let r = new URL(n);
+                    r.searchParams.append("encoding", t), r.searchParams.append("v", i.toString()), null != e && r.searchParams.append("compress", e), ! function(e) {
                         let t, {
                                 gatewayURL: n,
                                 newCallback: i,
@@ -127208,16 +127224,35 @@
                         }
                         null == t && ((t = (0, U.default)(n)).binaryType = "arraybuffer"), i(t), u && r(d, c), null != _ && _.forEach(s), t.onopen = () => r(d, c), t.onmessage = s, t.onclose = o, t.onerror = a
                     }({
-                        gatewayURL: l.toString(),
+                        gatewayURL: r.toString(),
                         newCallback: e => {
                             this.webSocket = e, this.compressionHandler.bindWebSocket(e)
                         },
                         onOpen: e => {
                             o.default.mark("\uD83C\uDF10", "GatewaySocket.onOpen ".concat(e));
                             let t = Date.now() - this.connectionStartTime;
-                            w.info("[CONNECTED] ".concat(l.toString(), " in ").concat(t, " ms")), this.isFastConnect = e, e ? this._doFastConnectIdentify() : this._doResumeOrIdentify()
+                            w.info("[CONNECTED] ".concat(r.toString(), " in ").concat(t, " ms")), this.isFastConnect = e, e ? this._doFastConnectIdentify() : this._doResumeOrIdentify()
                         },
-                        onMessage: (e = this.compressionHandler, t = (e, t) => {
+                        onMessage: function(e, t, n) {
+                            let i = 0;
+                            e.dataReady(e => {
+                                try {
+                                    return n(e, i)
+                                } finally {
+                                    i = 0
+                                }
+                            });
+                            let r = !1;
+                            return n => {
+                                let s = n.data;
+                                null != n.raw_length ? i += n.raw_length : i += H(s);
+                                try {
+                                    e.feed(s)
+                                } catch (e) {
+                                    throw !r && (r = !0, t(!1, 0, "A decompression error occurred")), e
+                                }
+                            }
+                        }(this.compressionHandler, this._handleClose.bind(this), (e, t) => {
                             let n = Date.now(),
                                 {
                                     op: i,
@@ -127255,15 +127290,6 @@
                                 default:
                                     w.info("Unhandled op ".concat(i))
                             }
-                        }, n = 0, e.dataReady(e => {
-                            try {
-                                return t(e, n)
-                            } finally {
-                                n = 0
-                            }
-                        }), t => {
-                            let i = t.data;
-                            null != t.raw_length ? n += t.raw_length : n += H(i), e.feed(i)
                         }),
                         onError: () => {
                             this.setResumeUrl(null), N.default.flushDNSCache(), this._handleClose(!1, 0, "An error with the websocket occurred")
@@ -127378,7 +127404,7 @@
                 _cleanup(e) {
                     u.default.Emitter.resume(), this._stopHeartbeater(), this._clearHelloTimeout();
                     let t = this.webSocket;
-                    this.webSocket = null, null != t && (t.onopen = k, t.onmessage = k, t.onerror = k, t.onclose = k, null == e || e(t)), this.gatewayBackoff.cancel(), this.compressionHandler.close(), this.compressionHandler = new L.default(B)
+                    this.webSocket = null, null != t && (t.onopen = k, t.onmessage = k, t.onerror = k, t.onclose = k, null == e || e(t)), this.gatewayBackoff.cancel(), this.compressionHandler.close(), this.compressionHandler = (0, L.getCompressionHandler)(B)
                 }
                 _doResume() {
                     var e;
@@ -127547,7 +127573,7 @@
                         if (!n || this.isSessionEstablished()) try {
                             null != this.webSocket ? this.webSocket.send(i) : w.warn("Attempted to send without a websocket that exists. Opcode: ".concat(e))
                         } catch (e) {} else w.warn("Attempted to send while not being in a connected state opcode: ".concat(e))
-                    }), this.dispatcher = new M.default(this), this.gatewayBackoff = new a.default(1e3, 6e4), this.connectionState_ = C.default.CLOSED, this.webSocket = null, this.seq = 0, this.sessionId = null, this.token = null, this.initialHeartbeatTimeout = null, this.expeditedHeartbeatTimeout = null, this.lastHeartbeatAckTime = null, this.helloTimeout = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = !0, this.connectionStartTime = 0, this.identifyStartTime = 0, this.nextReconnectIsImmediate = !1, this.compressionHandler = new L.default(B), this.hasConnectedOnce = !1, this.isFastConnect = !1, this.identifyCount = 0, this.iosGoingAwayEventCount = 0
+                    }), this.dispatcher = new M.default(this), this.gatewayBackoff = new a.default(1e3, 6e4), this.connectionState_ = C.default.CLOSED, this.webSocket = null, this.seq = 0, this.sessionId = null, this.token = null, this.initialHeartbeatTimeout = null, this.expeditedHeartbeatTimeout = null, this.lastHeartbeatAckTime = null, this.helloTimeout = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = !0, this.connectionStartTime = 0, this.identifyStartTime = 0, this.nextReconnectIsImmediate = !1, this.compressionHandler = (0, L.getCompressionHandler)(B), this.hasConnectedOnce = !1, this.isFastConnect = !1, this.identifyCount = 0, this.iosGoingAwayEventCount = 0
                 }
             }
         },
@@ -128183,28 +128209,45 @@
         988348: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                getFastConnectZstd: function() {
-                    return s
+                createZstdContextWeb: function() {
+                    return l
                 },
-                setFastConnectZstd: function() {
+                getFastConnectZstd: function() {
                     return a
                 },
+                setFastConnectZstd: function() {
+                    return o
+                },
                 supportsZstd: function() {
-                    return r
+                    return s
                 }
-            });
-            let i = new(n("259443")).Logger("FAST CONNECT");
-
-            function r() {
-                return !1
-            }
+            }), n("518263"), n("970173"), n("520712"), n("268111"), n("941497"), n("32026"), n("480839"), n("744285"), n("492257"), n("873817");
+            var i = n("433517"),
+                r = n("998502");
 
             function s() {
-                return !1
+                if (null == window.DiscordNative || void 0 === window.Uint8Array || void 0 === window.TextDecoder) return !1;
+                try {
+                    return r.default.requireModule("discord_zstd"), !0
+                } catch (e) {
+                    if (e.message.includes("Cannot find")) return r.default.ensureModule("discord_zstd").catch(e => {}), !1;
+                    throw e
+                }
             }
 
-            function a(e) {
-                i.error("Attempting to set fast connect zstd when unsupported")
+            function a() {
+                return "true" === i.Storage.get("zstd_fast_connect")
+            }
+
+            function o(e) {
+                e ? i.Storage.set("zstd_fast_connect", "true") : i.Storage.remove("zstd_fast_connect")
+            }
+
+            function l() {
+                let {
+                    createContext: e
+                } = r.default.requireModule("discord_zstd");
+                return e()
             }
         },
         616810: function(e, t, n) {
@@ -163546,8 +163589,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713223833122",
-                                    build_number: "284756"
+                                    built_at: "1713226701495",
+                                    build_number: "284789"
                                 }
                             },
                             retries: 1
@@ -240047,7 +240090,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "cd97bf72cfb515cbb6a5c893e98e6576002caf89"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a0049a8f8bb59ce5e330be18d1e16bdb683038e5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268463,7 +268506,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "284756"
+                                build_number: "284789"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -275642,7 +275685,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "284756", "284756"), 10);
+                let s = parseInt((n = "284789", "284789"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -302663,4 +302706,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.067300416452a43df308.js.map
+//# sourceMappingURL=73050.2c67d1c08fbc62097bfb.js.map
