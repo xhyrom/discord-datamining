@@ -38439,6 +38439,36 @@ html .progress__00e29 {
     margin-bottom: 1em
 }
 
+.markdownContainer__07d2b.markdownContainer__07d2b.markdownContainer__07d2b.markdownContainer__07d2b>p:first-child {
+    margin-top: 0
+}
+
+.markdownContainer__07d2b.markdownContainer__07d2b.markdownContainer__07d2b.markdownContainer__07d2b>p:last-child {
+    margin-bottom: 0
+}
+
+.markdownContainer__07d2b.markdownContainer__07d2b.markdownContainer__07d2b.markdownContainer__07d2b h1:first-child,
+.markdownContainer__07d2b.markdownContainer__07d2b.markdownContainer__07d2b.markdownContainer__07d2b h2:first-child,
+.markdownContainer__07d2b.markdownContainer__07d2b.markdownContainer__07d2b.markdownContainer__07d2b h3:first-child {
+    margin-top: 0
+}
+
+.markdownContainer__07d2b.markdownContainer__07d2b.markdownContainer__07d2b.markdownContainer__07d2b h1:not(:has(+*)),
+.markdownContainer__07d2b.markdownContainer__07d2b.markdownContainer__07d2b.markdownContainer__07d2b h2:not(:has(+*)),
+.markdownContainer__07d2b.markdownContainer__07d2b.markdownContainer__07d2b.markdownContainer__07d2b h3:not(:has(+*)) {
+    margin-bottom: 0
+}
+
+.contextText__7ec91.contextText__7ec91.contextText__7ec91 {
+    color: var(--text-muted);
+    font-size: 85%;
+    line-height: 1.2rem;
+    --custom-emoji-size-emoji: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2px
+}
+
 .container__2dd50 {
     display: flex;
     flex-direction: column
@@ -133895,4 +133925,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f5e28c81936814e30718.css.map*/
+/*# sourceMappingURL=99387.7f8be7fee2c63694e34d.css.map*/
