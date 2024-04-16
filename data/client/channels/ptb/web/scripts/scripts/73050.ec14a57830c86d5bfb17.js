@@ -36636,7 +36636,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285124", ", Version Hash: ").concat("7691936a254a362f3cf09b8167c4beffa94558f5")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285130", ", Version Hash: ").concat("3fd30fdc68719a955e722e1589e57be4b77c7e82")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86489,8 +86489,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285124", "285124"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285124")), t = 0), t
+                let t = parseInt((e = "285130", "285130"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285130")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110385,8 +110385,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285124",
-                    versionHash: "7691936a254a362f3cf09b8167c4beffa94558f5"
+                    buildNumber: "285130",
+                    versionHash: "3fd30fdc68719a955e722e1589e57be4b77c7e82"
                 }
             }
             n.r(t), n.d(t, {
@@ -163507,8 +163507,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713302774907",
-                                    build_number: "285124"
+                                    built_at: "1713303630401",
+                                    build_number: "285130"
                                 }
                             },
                             retries: 1
@@ -173682,26 +173682,6 @@
                 }]
             })
         },
-        958589: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            let i = (0, n("818083").createExperiment)({
-                kind: "user",
-                id: "2024-04_april_marketing_moment_incentive_experiment",
-                label: "2024 April Marketing Moment Incentive",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Eligible for incentive",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            });
-            t.default = i
-        },
         911200: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -176026,44 +176006,41 @@
                 h = n("559629"),
                 A = n("466111"),
                 m = n("74538"),
-                N = n("958589"),
-                p = n("474936"),
-                O = n("981631"),
-                R = n("689938"),
-                C = n("232248");
+                N = n("474936"),
+                p = n("981631"),
+                O = n("689938"),
+                R = n("232248");
             t.default = function(e) {
                 let {
                     isGift: t,
                     subscriptionTier: r,
-                    onClick: g,
-                    size: L,
-                    className: D,
-                    trialId: v,
-                    isTrialCTA: M,
-                    buttonText: y,
-                    buttonTextClassName: P,
-                    iconClassName: U,
-                    postSuccessGuild: b,
-                    onSubscribeModalClose: G,
-                    premiumModalAnalyticsLocation: w,
-                    showIcon: B = !0,
-                    disableShine: k,
-                    applicationId: V,
-                    giftMessage: F,
-                    overrideDisabledButtonText: x,
-                    shinyButtonClassName: H,
-                    ...Y
-                } = e, j = (0, a.useStateFromStores)([I.default], () => I.default.getCurrentUser()), W = (0, a.useStateFromStores)([f.default], () => f.default.isFocused()), K = (0, a.useStateFromStores)([T.default], () => T.default.getPremiumTypeSubscription()), {
-                    analyticsLocations: z
-                } = (0, u.default)(), X = N.default.useExperiment({
-                    location: "PremiumSubscribeButton"
-                }).enabled, Q = e => {
-                    if (e.preventDefault(), null == j) {
-                        (0, c.transitionTo)(O.Routes.LOGIN);
+                    onClick: C,
+                    size: g,
+                    className: L,
+                    trialId: D,
+                    isTrialCTA: v,
+                    buttonText: M,
+                    buttonTextClassName: y,
+                    iconClassName: P,
+                    postSuccessGuild: U,
+                    onSubscribeModalClose: b,
+                    premiumModalAnalyticsLocation: G,
+                    showIcon: w = !0,
+                    disableShine: B,
+                    applicationId: k,
+                    giftMessage: V,
+                    overrideDisabledButtonText: F,
+                    shinyButtonClassName: x,
+                    ...H
+                } = e, Y = (0, a.useStateFromStores)([I.default], () => I.default.getCurrentUser()), j = (0, a.useStateFromStores)([f.default], () => f.default.isFocused()), W = (0, a.useStateFromStores)([T.default], () => T.default.getPremiumTypeSubscription()), {
+                    analyticsLocations: K
+                } = (0, u.default)(), z = e => {
+                    if (e.preventDefault(), null == Y) {
+                        (0, c.transitionTo)(p.Routes.LOGIN);
                         return
                     }
-                    if (null == g || g(e), (null == K ? void 0 : K.status) === O.SubscriptionStatusTypes.ACCOUNT_HOLD) {
-                        (0, d.trackPremiumSettingsPaneOpened)(), l.default.open(O.UserSettingsSections.PREMIUM), null == G || G(!1);
+                    if (null == C || C(e), (null == W ? void 0 : W.status) === p.SubscriptionStatusTypes.ACCOUNT_HOLD) {
+                        (0, d.trackPremiumSettingsPaneOpened)(), l.default.open(p.UserSettingsSections.PREMIUM), null == b || b(!1);
                         return
                     }! function(e) {
                         let {
@@ -176115,14 +176092,14 @@
                             });
                             return
                         }
-                        let f = O.AnalyticsObjectTypes.BUY;
-                        null != l ? f = O.AnalyticsObjectTypes.TRIAL : s && (f = O.AnalyticsObjectTypes.GIFT), (0, _.default)({
+                        let f = p.AnalyticsObjectTypes.BUY;
+                        null != l ? f = p.AnalyticsObjectTypes.TRIAL : s && (f = p.AnalyticsObjectTypes.GIFT), (0, _.default)({
                             isGift: s,
                             initialPlanId: null,
                             subscriptionTier: a,
                             analyticsLocations: c,
                             analyticsObject: {
-                                object: O.AnalyticsObjects.BUTTON_CTA,
+                                object: p.AnalyticsObjects.BUTTON_CTA,
                                 objectType: f,
                                 ...E
                             },
@@ -176133,99 +176110,99 @@
                             giftMessage: T
                         })
                     }({
-                        isClaimed: j.isClaimed(),
-                        isVerified: j.verified,
+                        isClaimed: Y.isClaimed(),
+                        isVerified: Y.verified,
                         isGift: t,
                         subscriptionTier: r,
-                        trialId: v,
-                        postSuccessGuild: b,
-                        onSubscribeModalClose: G,
-                        analyticsLocations: z,
-                        premiumModalAnalyticsLocation: w,
-                        applicationId: V,
-                        giftMessage: F
+                        trialId: D,
+                        postSuccessGuild: U,
+                        onSubscribeModalClose: b,
+                        analyticsLocations: K,
+                        premiumModalAnalyticsLocation: G,
+                        applicationId: k,
+                        giftMessage: V
                     })
                 };
-                if (M) return (0, i.jsxs)(o.Button, {
-                    size: L,
-                    className: D,
-                    innerClassName: C.premiumSubscribeButton,
+                if (v) return (0, i.jsxs)(o.Button, {
+                    size: g,
+                    className: L,
+                    innerClassName: R.premiumSubscribeButton,
                     look: o.Button.Looks.INVERTED,
-                    onClick: Q,
-                    ...Y,
-                    children: [B && (0, i.jsx)(A.default, {
-                        className: C.premiumIcon
+                    onClick: z,
+                    ...H,
+                    children: [w && (0, i.jsx)(A.default, {
+                        className: R.premiumIcon
                     }), (0, i.jsx)("span", {
-                        className: s()(C.buttonText, P),
-                        children: null != y ? y : R.default.Messages.PREMIUM_TRIAL_CTA_BUTTON_VARIANT
+                        className: s()(R.buttonText, y),
+                        children: null != M ? M : O.default.Messages.PREMIUM_TRIAL_CTA_BUTTON_VARIANT
                     })]
                 });
                 if (t) return (0, i.jsxs)(o.Button, {
-                    size: L,
-                    className: D,
-                    innerClassName: C.giftButton,
+                    size: g,
+                    className: L,
+                    innerClassName: R.giftButton,
                     color: o.Button.Colors.PRIMARY,
-                    onClick: Q,
-                    ...Y,
+                    onClick: z,
+                    ...H,
                     children: [(0, i.jsx)(h.default, {
-                        className: C.giftIcon
+                        className: R.giftIcon
                     }), (0, i.jsx)("span", {
-                        className: s()(C.buttonText, P),
-                        children: null != y ? y : R.default.Messages.PREMIUM_GIFTING_BUTTON
+                        className: s()(R.buttonText, y),
+                        children: null != M ? M : O.default.Messages.PREMIUM_GIFTING_BUTTON
                     })]
                 });
-                let q = R.default.Messages.APPLICATION_STORE_GET_PREMIUM,
-                    Z = null != K ? (0, m.getPremiumPlanItem)(K) : null,
-                    J = null != Z ? m.default.getPremiumType(Z.planId) : null == j ? void 0 : j.premiumType,
-                    $ = r === p.PremiumSubscriptionSKUs.TIER_2 && null != J && [p.PremiumTypes.TIER_0, p.PremiumTypes.TIER_1].includes(J);
-                $ ? q = R.default.Messages.BILLING_SWITCH_PLAN_UPGRADE : X && null == K && (r === p.PremiumSubscriptionSKUs.TIER_2 || null == r) && (q = R.default.Messages.PREMIUM_2024_APRIL_NITRO_OFFER_MODAL_BUTTON_CTA_NON_SUB);
-                let ee = null != K && K.status !== O.SubscriptionStatusTypes.ACCOUNT_HOLD && !(0, E.isNoneSubscription)(K.planId) && !$,
-                    et = ee ? null != x ? x : function(e) {
+                let X = O.default.Messages.APPLICATION_STORE_GET_PREMIUM,
+                    Q = null != W ? (0, m.getPremiumPlanItem)(W) : null,
+                    q = null != Q ? m.default.getPremiumType(Q.planId) : null == Y ? void 0 : Y.premiumType,
+                    Z = r === N.PremiumSubscriptionSKUs.TIER_2 && null != q && [N.PremiumTypes.TIER_0, N.PremiumTypes.TIER_1].includes(q);
+                Z && (X = O.default.Messages.BILLING_SWITCH_PLAN_UPGRADE);
+                let J = null != W && W.status !== p.SubscriptionStatusTypes.ACCOUNT_HOLD && !(0, E.isNoneSubscription)(W.planId) && !Z,
+                    $ = J ? null != F ? F : function(e) {
                         let {
                             ctaSubscriptionSkuId: t,
                             currentPremiumType: n
                         } = e, i = null, r = null;
-                        if (null != t && t !== p.PremiumSubscriptionSKUs.LEGACY && t !== p.PremiumSubscriptionSKUs.TIER_0 && t !== p.PremiumSubscriptionSKUs.TIER_1 && t !== p.PremiumSubscriptionSKUs.TIER_2) return {
+                        if (null != t && t !== N.PremiumSubscriptionSKUs.LEGACY && t !== N.PremiumSubscriptionSKUs.TIER_0 && t !== N.PremiumSubscriptionSKUs.TIER_1 && t !== N.PremiumSubscriptionSKUs.TIER_2) return {
                             disabledButtonText: i,
                             disabledButtonTooltipText: r
                         };
-                        let s = null != t ? p.PremiumSubscriptionSKUToPremiumType[(0, m.castPremiumSubscriptionAsSkuId)(t)] : null,
-                            a = null != s ? p.PremiumTypeOrder[s] : null,
-                            o = null != n ? p.PremiumTypeOrder[n] : null;
-                        return null != o && null != a && a < o ? (i = R.default.Messages.APPLICATION_STORE_GET_PREMIUM, r = R.default.Messages.PREMIUM_SUBSCRIPTION_BUTTON_DISABLED_MANAGE_PLAN_TOOLTIP) : null != s && null != n && s === n ? (i = R.default.Messages.BILLING_SWITCH_PLAN_CURRENT_PLAN, r = R.default.Messages.PREMIUM_SUBSCRIPTION_BUTTON_DISABLED_MANAGE_PLAN_TOOLTIP) : null == s && null != n && n === p.PremiumTypes.TIER_2 && (r = R.default.Messages.PREMIUM_SUBSCRIPTION_BUTTON_DISABLED_MANAGE_PLAN_TOOLTIP), {
+                        let s = null != t ? N.PremiumSubscriptionSKUToPremiumType[(0, m.castPremiumSubscriptionAsSkuId)(t)] : null,
+                            a = null != s ? N.PremiumTypeOrder[s] : null,
+                            o = null != n ? N.PremiumTypeOrder[n] : null;
+                        return null != o && null != a && a < o ? (i = O.default.Messages.APPLICATION_STORE_GET_PREMIUM, r = O.default.Messages.PREMIUM_SUBSCRIPTION_BUTTON_DISABLED_MANAGE_PLAN_TOOLTIP) : null != s && null != n && s === n ? (i = O.default.Messages.BILLING_SWITCH_PLAN_CURRENT_PLAN, r = O.default.Messages.PREMIUM_SUBSCRIPTION_BUTTON_DISABLED_MANAGE_PLAN_TOOLTIP) : null == s && null != n && n === N.PremiumTypes.TIER_2 && (r = O.default.Messages.PREMIUM_SUBSCRIPTION_BUTTON_DISABLED_MANAGE_PLAN_TOOLTIP), {
                             disabledButtonText: i,
                             disabledButtonTooltipText: r
                         }
                     }({
                         ctaSubscriptionSkuId: r,
-                        currentPremiumType: J
+                        currentPremiumType: q
                     }) : null;
 
-                function en(e) {
+                function ee(e) {
                     var t, n;
                     return (0, i.jsxs)(S.default, {
-                        disabled: ee,
-                        onClick: Q,
-                        innerClassName: C.premiumSubscribeButton,
-                        color: r === p.PremiumSubscriptionSKUs.TIER_1 ? o.Button.Colors.PRIMARY : o.Button.Colors.GREEN,
-                        size: L,
-                        className: H,
-                        wrapperClassName: D,
-                        pauseAnimation: !W || k,
-                        ...Y,
+                        disabled: J,
+                        onClick: z,
+                        innerClassName: R.premiumSubscribeButton,
+                        color: r === N.PremiumSubscriptionSKUs.TIER_1 ? o.Button.Colors.PRIMARY : o.Button.Colors.GREEN,
+                        size: g,
+                        className: x,
+                        wrapperClassName: L,
+                        pauseAnimation: !j || B,
+                        ...H,
                         ...e,
-                        children: [B && (0, i.jsx)(A.default, {
-                            className: s()(C.premiumIcon, U)
+                        children: [w && (0, i.jsx)(A.default, {
+                            className: s()(R.premiumIcon, P)
                         }), (0, i.jsx)("span", {
-                            className: s()(C.buttonText, P),
-                            children: null !== (n = null !== (t = null == et ? void 0 : et.disabledButtonText) && void 0 !== t ? t : y) && void 0 !== n ? n : q
+                            className: s()(R.buttonText, y),
+                            children: null !== (n = null !== (t = null == $ ? void 0 : $.disabledButtonText) && void 0 !== t ? t : M) && void 0 !== n ? n : X
                         })]
                     })
                 }
-                return (null == et ? void 0 : et.disabledButtonTooltipText) != null ? (0, i.jsx)(o.Tooltip, {
-                    text: et.disabledButtonTooltipText,
-                    children: en
-                }) : en()
+                return (null == $ ? void 0 : $.disabledButtonTooltipText) != null ? (0, i.jsx)(o.Tooltip, {
+                    text: $.disabledButtonTooltipText,
+                    children: ee
+                }) : ee()
             }
         },
         94027: function(e, t, n) {
@@ -240185,7 +240162,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "7691936a254a362f3cf09b8167c4beffa94558f5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3fd30fdc68719a955e722e1589e57be4b77c7e82"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268601,7 +268578,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285124"
+                                build_number: "285130"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -275780,7 +275757,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285124", "285124"), 10);
+                let s = parseInt((n = "285130", "285130"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -302796,4 +302773,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.8ae59bff36e53b5b83dc.js.map
+//# sourceMappingURL=73050.ec14a57830c86d5bfb17.js.map
