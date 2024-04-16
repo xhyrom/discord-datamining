@@ -36636,7 +36636,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285113", ", Version Hash: ").concat("985330c01cc0b56e134e609eea43cb1d576535af")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285121", ", Version Hash: ").concat("06b841f9c3ca5fd9ec45a2feb1d79481d66e4498")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -44552,6 +44552,7 @@
                 CHURN_DISCOUNT_NEVERMIND: "Nevermind",
                 CHURN_DISCOUNT_CONFIRM_DISCOUNT: "Confirm Discount",
                 CHURN_DISCOUNT_REDEMPTION_ERROR: "Something went wrong. Try again.",
+                PREMIUM_TIER_CARD_ANNUAL_DISCOUNT_HEADER: "Your **{percent, number}% discount** will end 1 year after purchase. After that you'll be charged **{regularPrice}**, + applicable taxes.",
                 PREMIUM_TIER_CARD_TRIAL_HEADER_BEFORE_REDEMPTION_NEW: "Try {planName} for {duration} on us. Then !!{price}!!.",
                 PREMIUM_TIER_CARD_TRIAL_HEADER_AFTER_REDEMPTION: "Your **free trial ends {remainingTime, plural, =0 {today} one {in # day} other {in # days}}**. After that, you’ll be charged !!{price}!!.",
                 PREMIUM_TIER_CARD_TRIAL_ACTIVATED: "free trial activated",
@@ -86488,8 +86489,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285113", "285113"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285113")), t = 0), t
+                let t = parseInt((e = "285121", "285121"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285121")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110384,8 +110385,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285113",
-                    versionHash: "985330c01cc0b56e134e609eea43cb1d576535af"
+                    buildNumber: "285121",
+                    versionHash: "06b841f9c3ca5fd9ec45a2feb1d79481d66e4498"
                 }
             }
             n.r(t), n.d(t, {
@@ -163506,8 +163507,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713302009796",
-                                    build_number: "285113"
+                                    built_at: "1713302603242",
+                                    build_number: "285121"
                                 }
                             },
                             retries: 1
@@ -169211,7 +169212,7 @@
                         PaymentContextProvider: e
                     } = await Promise.resolve().then(n.bind(n, "598")), a = (await Promise.all([n.e("49237"), n.e("99387"), n.e("15972"), n.e("6416"), n.e("32776"), n.e("10993")]).then(n.bind(n, "405083"))).default, {
                         getApplicationPaymentSteps: c
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("58625"), n.e("63438"), n.e("61247"), n.e("62511"), n.e("58600"), n.e("95900"), n.e("74195")]).then(n.bind(n, "759386")), p = c({
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("58625"), n.e("63438"), n.e("61247"), n.e("62511"), n.e("58600"), n.e("95900"), n.e("47379")]).then(n.bind(n, "759386")), p = c({
                         guildId: T,
                         showBenefitsFirst: h,
                         eligibleApplicationSubscriptionGuilds: A
@@ -173356,6 +173357,75 @@
                 }
             }
         },
+        424082: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getAnnualDiscountsExperimentConfig: function() {
+                    return s
+                },
+                useAnnualDiscountExperiment: function() {
+                    return r
+                }
+            });
+            let i = (0, n("818083").createExperiment)({
+                kind: "user",
+                id: "2024-03_annual_discounts_experiment",
+                label: "Test price for standard annual plan utilizing discount framework",
+                defaultConfig: {
+                    enabled: !1,
+                    discount_percentage: null
+                },
+                treatments: [{
+                    id: 0,
+                    label: "users receive regular standard annual price (16% discount)",
+                    config: {
+                        enabled: !0,
+                        discount_percentage: 16
+                    }
+                }, {
+                    id: 1,
+                    label: "users receive 20% discount (4% off regular standard annual price)",
+                    config: {
+                        enabled: !0,
+                        discount_percentage: 20
+                    }
+                }, {
+                    id: 2,
+                    label: "users receive 25% discount (10% off regular standard annual price)",
+                    config: {
+                        enabled: !0,
+                        discount_percentage: 25
+                    }
+                }]
+            });
+
+            function r(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                    {
+                        enabled: n
+                    } = i.useExperiment({
+                        location: e
+                    }, {
+                        autoTrackExposure: t
+                    });
+                return n
+            }
+
+            function s(e) {
+                let {
+                    enabled: t,
+                    discount_percentage: n
+                } = i.getCurrentConfig({
+                    location: e
+                }, {
+                    autoTrackExposure: !1
+                });
+                return {
+                    annualDiscountsEnabled: t,
+                    annualDiscountPercentage: n
+                }
+            }
+        },
         59561: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -173846,6 +173916,9 @@
                 hasUserDiscountExpired: function() {
                     return d
                 },
+                usePremiumAnnualDiscountOffer: function() {
+                    return I
+                },
                 usePremiumDiscountOffer: function() {
                     return E
                 }
@@ -173891,6 +173964,12 @@
                     r = c(u.PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_30_PERCENT_DISCOUNT_ID),
                     s = c(u.PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID);
                 return null !== (t = null !== (e = null != n ? n : i) && void 0 !== e ? e : r) && void 0 !== t ? t : s
+            }
+
+            function I() {
+                let e = c(u.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID),
+                    t = c(u.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID);
+                return null != e ? e : t
             }
         },
         639119: function(e, t, n) {
@@ -176931,31 +177010,46 @@
                 o = n("481060"),
                 l = n("509545"),
                 u = n("74538"),
-                d = n("474936"),
-                _ = n("13859");
+                d = n("424082"),
+                _ = n("104494"),
+                c = n("639119"),
+                E = n("474936"),
+                I = n("689938"),
+                T = n("13859");
             t.default = function(e) {
                 let {
                     subscriptionTier: t,
-                    interval: n = d.SubscriptionIntervalTypes.MONTH,
+                    interval: n = E.SubscriptionIntervalTypes.MONTH,
                     className: r,
-                    isGift: c = !1,
-                    variant: E,
-                    priceOptions: I
-                } = e;
+                    isGift: f = !1,
+                    variant: S,
+                    priceOptions: h
+                } = e, A = (0, _.usePremiumAnnualDiscountOffer)(), m = (0, c.usePremiumTrialOffer)(), {
+                    annualDiscountPercentage: N
+                } = (0, d.getAnnualDiscountsExperimentConfig)("PremiumManager");
                 if (!(0, a.useStateFromStores)([l.default], () => l.default.isLoadedForPremiumSKUs())) return (0, i.jsx)(o.Spinner, {
                     type: o.Spinner.Type.PULSING_ELLIPSIS,
-                    className: _.priceSpinner
+                    className: T.priceSpinner
                 });
-                let T = l.default.getForSkuAndInterval((0, u.castPremiumSubscriptionAsSkuId)(t), n),
-                    f = null != T ? (0, u.getFormattedPriceForPlan)(T, I, !1, c) : null;
-                return (0, i.jsxs)(o.Heading, {
+                let p = l.default.getForSkuAndInterval((0, u.castPremiumSubscriptionAsSkuId)(t), n),
+                    O = null != p ? (0, u.getFormattedPriceForPlan)(p, h, !1, f) : null,
+                    R = t !== E.PremiumSubscriptionSKUs.TIER_2 || n !== E.SubscriptionIntervalTypes.YEAR || null != m || f || null == A ? null : N;
+                return (0, i.jsx)(o.Heading, {
                     color: "always-white",
-                    variant: null != E ? E : "heading-md/medium",
-                    className: s()(_.pricePerInterval, r),
-                    children: [(0, i.jsx)("span", {
-                        className: _.price,
-                        children: f
-                    }), " / ", (0, u.getIntervalStringAsNoun)(n)]
+                    variant: null != S ? S : "heading-md/medium",
+                    className: s()(T.pricePerInterval, r),
+                    children: null != R ? (0, i.jsx)("div", {
+                        className: T.annualDiscountString,
+                        children: I.default.Messages.PREMIUM_TIER_CARD_ANNUAL_DISCOUNT_HEADER.format({
+                            percent: R,
+                            regularPrice: O
+                        })
+                    }) : (0, i.jsxs)(i.Fragment, {
+                        children: [(0, i.jsx)("span", {
+                            className: T.price,
+                            children: O
+                        }), " / ", (0, u.getIntervalStringAsNoun)(n)]
+                    })
                 })
             }
         },
@@ -240091,7 +240185,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "985330c01cc0b56e134e609eea43cb1d576535af"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "06b841f9c3ca5fd9ec45a2feb1d79481d66e4498"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268507,7 +268601,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285113"
+                                build_number: "285121"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -275686,7 +275780,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285113", "285113"), 10);
+                let s = parseInt((n = "285121", "285121"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -302702,4 +302796,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.f3ceafb0718e57d9be1a.js.map
+//# sourceMappingURL=73050.56038f5d50e7820756eb.js.map
