@@ -56403,7 +56403,8 @@ html .progress__00e29 {
     flex-direction: column;
     padding: 18px;
     margin: auto 12px auto;
-    max-width: 800px
+    max-width: 800px;
+    flex: 1 1 800px
 }
 
 .stepNum_b5f2f3,
@@ -88710,6 +88711,60 @@ html .tabBadge_ff691d {
     align-items: center;
     justify-content: space-between;
     width: 100%
+}
+
+div:has(>div>.modal__06f49) {
+    padding: 0
+}
+
+.modal__06f49 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-surface-overlay);
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    border-radius: 0;
+    border: none;
+    padding: 80px 24px
+}
+
+.closeButton__290e3 {
+    z-index: 1;
+    position: absolute;
+    top: 48px;
+    right: 48px
+}
+
+.modalContents_d4af1c {
+    position: relative;
+    display: flex;
+    max-width: 1e3px;
+    height: 100%;
+    flex: 1
+}
+
+.sidebarWrapper_c37160 {
+    display: flex;
+    padding-right: 36px;
+    border-right: 1px solid var(--border-subtle);
+    margin-right: 40px;
+    flex: 0
+}
+
+.sidebar__57865 {
+    display: flex;
+    flex: 1 0 var(--custom-standard-sidebar-view-sidebar-total-width);
+    width: var(--custom-standard-sidebar-view-sidebar-total-width)
+}
+
+.mainContent__465e0 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 800px
 }
 
 .container__21972 {
@@ -133772,4 +133827,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.017e559b32735005f1c9.css.map*/
+/*# sourceMappingURL=99387.5f65f0d88aa5f4d3f67b.css.map*/

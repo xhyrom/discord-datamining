@@ -36640,7 +36640,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285298", ", Version Hash: ").concat("8fef71055bc417b44550c472a7df68f2a6f15677")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285305", ", Version Hash: ").concat("1dd8a0606a2380e7c96a01089ff67d6f428bbec8")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55408,7 +55408,7 @@
                 CLAN_SETUP_CUSTOMIZE_HELP_TEXT: "Maxmimum 4 characters, alphabet (A-Z) and numbers only",
                 CLAN_SETUP_TAG_PLACEHOLDER: "GGEZ",
                 CLAN_SETUP_SIGN_TITLE: "You're almost done!",
-                CLAN_SETUP_SIGN_SUBTITLE: "One last step - sign the charter to become a Clan.",
+                CLAN_SETUP_SIGN_SUBTITLE: "One last step - sign the charter to become a Gaming Guild.",
                 CLAN_SETUP_OPTIONAL: "Optional",
                 CLAN_SETUP_WILDCARDS_SUBTITLE: "How would you describe your Guild in three words? Be creative.",
                 CLAN_PRIMETIME_PLACEHOLDER: "Day",
@@ -55434,18 +55434,31 @@
                 CLAN_PRIMETIME_RECURRING_LATE_NIGHT: "late nights",
                 CLAN_SETUP_OVERVIEW_TITLE: "We the people of **!!{guildName}!!**",
                 CLAN_SETUP_OVERVIEW_ESTABLISHED: "Est. {date}",
-                CLAN_SETUP_OVERVIEW_TEXT_DEFAULT: "...in order to create a space to play games, establish this charter for the Clan.",
-                CLAN_SETUP_OVERVIEW_TEXT_GAMES: "...in order to create a space to play **!!{games}!!**, establish this charter for the Clan.",
-                CLAN_SETUP_OVERVIEW_TEXT_GAMES_AND_PLAYSTYLE: "...in order to create a **{playstyle}** space to play **!!{games}!!**, establish this charter for the Clan.",
-                CLAN_SETUP_OVERVIEW_TEXT_TRAITS: "The Clan's traits shall be defined as **!!{traits}!!**.",
-                CLAN_SETUP_OVERVIEW_TEXT_GAMETIME: "The members of the Clan are committed to make an effort to play games on **{selectedTimes}**.",
-                CLAN_SETUP_OVERVIEW_TEXT_WRAP: "Everyone will work together to uphold and nurture the values of the Clan and keep it safe and welcoming to all members.",
+                CLAN_SETUP_OVERVIEW_TEXT_DEFAULT: "...in order to create a space to play games, establish this charter for the Guild.",
+                CLAN_SETUP_OVERVIEW_TEXT_GAMES: "...in order to create a space to play **!!{games}!!**, establish this charter for the Guild.",
+                CLAN_SETUP_OVERVIEW_TEXT_GAMES_AND_PLAYSTYLE: "...in order to create a **{playstyle}** space to play **!!{games}!!**, establish this charter for the Guild.",
+                CLAN_SETUP_OVERVIEW_TEXT_TRAITS: "The Guild's traits shall be defined as **!!{traits}!!**.",
+                CLAN_SETUP_OVERVIEW_TEXT_GAMETIME: "The members of the Guild are committed to make an effort to play games on **{selectedTimes}**.",
+                CLAN_SETUP_OVERVIEW_TEXT_WRAP: "Everyone will work together to uphold and nurture the values of the Guild and keep it safe and welcoming to all members.",
                 CLAN_SETUP_OVERVIEW_SIGNATURE: "sign here",
                 CLAN_SETUP_OVERVIEW_SIGN_CTA: "Click to Sign",
-                CLAN_SETUP_OVERVIEW_SIGN_HELP: "By signing this charter, I agree to grow and uphold the values of the clan.",
+                CLAN_SETUP_OVERVIEW_SIGN_HELP: "By signing this charter, I agree to grow and uphold the values of the Guild.",
                 CLAN_OVERVIEW_LIST_TWO_ITEMS: "!!{item1}!! and !!{item2}!!",
                 CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS: "!!{items}!!, and !!{last}!!",
                 CLAN_SUBMIT_ERROR: "Something went wrong! Please fix any errors and try again.",
+                CLAN_SETTINGS: "Guild Settings",
+                CLAN_SETTINGS_BASIC_INFO: "Basic Info",
+                CLAN_SETTTINGS_SELECT_GAMES: "Select Games",
+                CLAN_SETTTINGS_SELECT_PLAYSTYLE: "Select Playstyle",
+                CLAN_SETTINGS_PERSONALITY_INFO: "Personality Info",
+                CLAN_SETTINGS_SELECT_TRAITS: "Select Traits",
+                CLAN_SETTINGS_WRITE_DESCRIPTION: "Write Description",
+                CLAN_SETTINGS_SET_PRIME_TIME: "Set Primetime",
+                CLAN_SETTINGS_CUSTOMIZE_IDENTITY: "Customize Identity",
+                CLAN_SETTINGS_CLAN_BADGE: "Gaming Guild Badge",
+                CLAN_SETTINGS_CLAN_PROFILE: "Clan Profile",
+                CLAN_SETTINGS_JOIN_APPLICATION: "Join Application",
+                CLAN_SETTINGS_DISABLE_CLAN: "Disable Gaming Guild",
                 CLAN_START_INTERVIEW: "Start Interview",
                 CLAN_JOIN_INTERVIEW: "Join Interview",
                 CLAN_APPLICATION_SETUP_HEADER: "Set up the member screening application for **!!{guildName}!!** here. The application must have at least one Short Answer, Paragraph, or Multiple Choice section.",
@@ -86494,8 +86507,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285298", "285298"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285298")), t = 0), t
+                let t = parseInt((e = "285305", "285305"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285305")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -100563,10 +100576,13 @@
                 convertGuildToClan: function() {
                     return u
                 },
+                fetchClanSettings: function() {
+                    return I
+                },
                 getClanInfo: function() {
                     return d
                 },
-                updateClanSettings: function() {
+                updateClanSetup: function() {
                     return c
                 }
             }), n("47120");
@@ -100645,6 +100661,39 @@
                     type: "CLAN_SETUP_UPDATE",
                     guildId: e,
                     updates: t
+                })
+            }
+            let E = e => {
+                var t, n, i, r, s;
+                return {
+                    tag: e.tag,
+                    selectedGames: new Map,
+                    interests: new Set(null !== (i = e.search_terms) && void 0 !== i ? i : []),
+                    playstyle: e.play_style,
+                    description: e.description,
+                    wildcardDescriptors: e.wildcard_descriptors,
+                    primetime: e.prime_time.map(e => (0, o.guildEventToPrimeTimeSelection)(e)),
+                    verificationForm: {
+                        description: null !== (r = null === (t = e.verification_form) || void 0 === t ? void 0 : t.description) && void 0 !== r ? r : "",
+                        formFields: null !== (s = null === (n = e.verification_form) || void 0 === n ? void 0 : n.form_fields) && void 0 !== s ? s : [],
+                        version: ""
+                    },
+                    badgeKind: e.badge,
+                    badgePrimaryColor: e.badge_color_primary,
+                    badgeSecondaryColor: e.badge_color_secondary,
+                    banner: e.banner,
+                    brandPrimaryColor: e.brand_color_primary,
+                    brandSecondaryColor: e.brand_color_secondary
+                }
+            };
+            async function I(e) {
+                let t = await r.HTTP.get({
+                    url: l.Endpoints.CLAN_SETTINGS(e)
+                });
+                s.default.dispatch({
+                    type: "CLAN_SETTINGS_FETCH",
+                    guildId: e,
+                    settings: E(t.body)
                 })
             }
         },
@@ -100992,10 +101041,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 convertPrimeTimeSelectionToRRule: function() {
-                    return p
+                    return O
                 },
                 formatTimesForServer: function() {
-                    return m
+                    return N
                 },
                 generateTimeOptions: function() {
                     return _
@@ -101004,10 +101053,13 @@
                     return c
                 },
                 getTimeRangesInNextWeek: function() {
-                    return A
+                    return m
+                },
+                guildEventToPrimeTimeSelection: function() {
+                    return R
                 },
                 primetimeToString: function() {
-                    return N
+                    return p
                 }
             }), n("653041"), n("47120");
             var i = n("913527"),
@@ -101121,6 +101173,24 @@
                 },
                 T = e => {
                     switch (e) {
+                        case s.RRule.SU.weekday:
+                            return l.DayOptions.SUNDAY;
+                        case s.RRule.MO.weekday:
+                            return l.DayOptions.MONDAY;
+                        case s.RRule.TU.weekday:
+                            return l.DayOptions.TUESDAY;
+                        case s.RRule.WE.weekday:
+                            return l.DayOptions.WEDNESDAY;
+                        case s.RRule.TH.weekday:
+                            return l.DayOptions.THURSDAY;
+                        case s.RRule.FR.weekday:
+                            return l.DayOptions.FRIDAY;
+                        case s.RRule.SA.weekday:
+                            return l.DayOptions.SATURDAY
+                    }
+                },
+                f = e => {
+                    switch (e) {
                         case l.ExtendedTimeOptions.MORNING:
                             return d.default.Messages.CLAN_PRIMETIME_RECURRING_MORNING;
                         case l.ExtendedTimeOptions.AFTERNOON:
@@ -101133,7 +101203,7 @@
                             return null
                     }
                 },
-                f = (e, t) => {
+                S = (e, t) => {
                     let n;
                     switch (e) {
                         case l.DayOptions.WEEKDAYS:
@@ -101150,7 +101220,7 @@
                         time: t
                     })
                 },
-                S = e => {
+                h = e => {
                     let t = r()().startOf("day");
                     switch (e) {
                         case l.ExtendedTimeOptions.MORNING:
@@ -101165,7 +101235,7 @@
                             return [r()(e, u.LOCALE_TIME_FORMAT), 2]
                     }
                 },
-                h = e => {
+                A = e => {
                     if (null == e.day || null == e.time) return null;
                     let t = r()(),
                         n = t.clone().add(1, "day"),
@@ -101176,74 +101246,38 @@
                     return e.day === l.DayOptions.WEEKDAYS ? o = i ? t.isAfter(a) ? s ? a.day(n.weekday()) : a.day(1) : a.day(t.weekday()) : e.time.day(1) : e.day === l.DayOptions.WEEKENDS ? i ? o = a.day(6) : t.isAfter(a) && (o = s ? a.day(6) : a.day(n.weekday())) : o = a.day(E(e.day)), t.isAfter(o) && (o = o.add(1, "week")), o
                 };
 
-            function A(e) {
-                let t = [];
-                return e.forEach(e => {
-                    if (null == e.day || null == e.time) return null;
-                    let [n, i] = S(e.time);
-                    if (e.day === l.DayOptions.WEEKENDS) {
-                        let e = h({
-                                day: l.DayOptions.SATURDAY,
-                                time: n
-                            }),
-                            r = h({
-                                day: l.DayOptions.SUNDAY,
-                                time: n
-                            });
-                        null != e && t.push({
-                            start: e,
-                            end: e.clone().add(i, "hour")
-                        }), null != r && t.push({
-                            start: r,
-                            end: r.clone().add(i, "hour")
-                        })
-                    } else if (e.day === l.DayOptions.WEEKDAYS) {
-                        let r = h({
-                            day: e.day,
-                            time: n
-                        });
-                        null != r && t.push({
-                            start: r,
-                            end: r.clone().add(i, "hour")
-                        })
-                    } else {
-                        let r = h({
-                            day: e.day,
-                            time: n
-                        });
-                        null != r && t.push({
-                            start: r,
-                            end: r.clone().add(i, "hour")
-                        })
-                    }
-                }), t
-            }
-
             function m(e) {
                 let t = [];
                 return e.forEach(e => {
                     if (null == e.day || null == e.time) return null;
-                    let [n, i] = S(e.time);
+                    let [n, i] = h(e.time), r = A({
+                        day: e.day,
+                        time: n
+                    });
+                    null != r && t.push({
+                        start: r,
+                        end: r.clone().add(i, "hour")
+                    })
+                }), t
+            }
+
+            function N(e) {
+                let t = [];
+                return e.forEach(e => {
+                    if (null == e.day || null == e.time) return null;
+                    let [n, i] = h(e.time);
                     if (e.day === l.DayOptions.WEEKENDS) {
-                        let e = h({
-                                day: l.DayOptions.SATURDAY,
-                                time: n
-                            }),
-                            r = h({
-                                day: l.DayOptions.SUNDAY,
-                                time: n
-                            });
-                        null != e && t.push({
-                            scheduled_start_time: e.toISOString(),
-                            scheduled_end_time: e.clone().add(i, "hour").toISOString(),
-                            days: [(0, a.convertJSDayToRRuleDay)(e.toDate().getUTCDay()).weekday]
-                        }), null != r && t.push({
+                        let r = A({
+                            day: e.day,
+                            time: n
+                        });
+                        null != r && t.push({
                             scheduled_start_time: r.toISOString(),
                             scheduled_end_time: r.clone().add(i, "hour").toISOString(),
-                            days: [(0, a.convertJSDayToRRuleDay)(r.toDate().getUTCDay()).weekday]
+                            days: (0, a.getValidWeekends)(r)
                         })
                     } else if (e.day === l.DayOptions.WEEKDAYS) {
-                        let r = h({
+                        let r = A({
                             day: e.day,
                             time: n
                         });
@@ -101253,7 +101287,7 @@
                             days: (0, a.getValidWeekdays)(r)
                         })
                     } else {
-                        let r = h({
+                        let r = A({
                             day: e.day,
                             time: n
                         });
@@ -101266,24 +101300,51 @@
                 }), t
             }
 
-            function N(e) {
+            function p(e) {
                 if (null == e.day || null == e.time) return null;
                 let {
                     day: t,
                     time: n
-                } = e, i = T(n);
-                if (null != i) return f(t, i);
+                } = e, i = f(n);
+                if (null != i) return S(t, i);
                 let r = I(e.day);
                 return "".concat(r, " ").concat(n)
             }
 
-            function p(e) {
-                return m(e).map(e => ({
+            function O(e) {
+                return N(e).map(e => ({
                     start: e.scheduled_start_time,
                     frequency: e.days.length > 1 ? s.RRule.DAILY : s.RRule.WEEKLY,
                     interval: 1,
                     byWeekday: e.days
                 }))
+            }
+
+            function R(e) {
+                let t, n, {
+                        id: i,
+                        scheduled_start_time: a,
+                        scheduled_end_time: o,
+                        recurrence_rule: d
+                    } = e,
+                    _ = r()(a),
+                    c = r()(o),
+                    E = r().duration(c.diff(_)).asHours();
+                if (null == d) return {
+                    id: i,
+                    day: void 0,
+                    time: void 0
+                };
+                let {
+                    frequency: I,
+                    by_weekday: f
+                } = d;
+                I === s.RRule.DAILY ? (null == f ? void 0 : f.length) === 5 ? t = l.DayOptions.WEEKDAYS : (null == f ? void 0 : f.length) === 2 && (t = l.DayOptions.WEEKENDS) : I === s.RRule.WEEKLY && (null == f ? void 0 : f.length) === 1 && (t = T(f[0]));
+                return 2 === E ? n = _.format(u.LOCALE_TIME_FORMAT) : 8 === _.hour() && 4 === E ? n = l.ExtendedTimeOptions.MORNING : 12 === _.hour() && 6 === E ? n = l.ExtendedTimeOptions.AFTERNOON : 18 === _.hour() && 5 === E ? n = l.ExtendedTimeOptions.EVENING : 23 === _.hour() && 5 === E && (n = l.ExtendedTimeOptions.LATE_NIGHT), {
+                    id: i,
+                    day: t,
+                    time: n
+                }
             }
         },
         114487: function(e, t, n) {
@@ -110394,8 +110455,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285298",
-                    versionHash: "8fef71055bc417b44550c472a7df68f2a6f15677"
+                    buildNumber: "285305",
+                    versionHash: "1dd8a0606a2380e7c96a01089ff67d6f428bbec8"
                 }
             }
             n.r(t), n.d(t, {
@@ -146027,6 +146088,9 @@
                 getValidWeekdays: function() {
                     return F
                 },
+                getValidWeekends: function() {
+                    return x
+                },
                 hasScheduleChanges: function() {
                     return j
                 },
@@ -163513,8 +163577,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713335602167",
-                                    build_number: "285298"
+                                    built_at: "1713356101155",
+                                    build_number: "285305"
                                 }
                             },
                             retries: 1
@@ -240491,7 +240555,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8fef71055bc417b44550c472a7df68f2a6f15677"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "1dd8a0606a2380e7c96a01089ff67d6f428bbec8"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268907,7 +268971,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285298"
+                                build_number: "285305"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276092,7 +276156,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285298", "285298"), 10);
+                let s = parseInt((n = "285305", "285305"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -303108,4 +303172,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.2ba0864e9fd61bc5ea36.js.map
+//# sourceMappingURL=73050.f42918cf8cb17becca44.js.map
