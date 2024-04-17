@@ -65579,6 +65579,10 @@ input::-webkit-inner-spin-button {
     color: var(--black)
 }
 
+.icon__05aab {
+    color: var(--text-normal)
+}
+
 .progressContainer_c67fbb {
     width: 20px;
     height: 20px;
@@ -133866,4 +133870,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.a0b086f0821067a08c22.css.map*/
+/*# sourceMappingURL=99387.03de305d89693eb03e4b.css.map*/

@@ -36640,7 +36640,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285406", ", Version Hash: ").concat("26509320962296d087f1fe9889ecd8a3bdd5e460")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285425", ", Version Hash: ").concat("a76ac5eb02c53ef95172ea6a99e9ba586dffbd60")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -65966,33 +65966,34 @@
                     }), w(this, "handleActivityLaunchFail", e => {
                         let {
                             error: t,
-                            guildId: n
+                            applicationId: n,
+                            guildId: i
                         } = e;
-                        if (null == n) return;
-                        let i = G.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GENERIC;
+                        if (delete k[n], null == i) return;
+                        let r = G.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GENERIC;
                         switch (t.code) {
                             case b.AbortCodes.INVALID_ACTIVITY_LAUNCH_NO_ACCESS:
-                                i = G.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_ACCESS;
+                                r = G.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_ACCESS;
                                 break;
                             case b.AbortCodes.INVALID_ACTIVITY_LAUNCH_PREMIUM_TIER:
-                                i = G.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_PREMIUM;
+                                r = G.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_PREMIUM;
                                 break;
                             case b.AbortCodes.INVALID_ACTIVITY_LAUNCH_CONCURRENT_ACTIVITIES:
-                                i = G.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_CONCURRENT;
+                                r = G.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_CONCURRENT;
                                 break;
                             case b.AbortCodes.INVALID_PERMISSIONS:
-                                i = G.default.Messages.EMBEDDED_ACTIVITIES_INVALID_PERMISSIONS;
+                                r = G.default.Messages.EMBEDDED_ACTIVITIES_INVALID_PERMISSIONS;
                                 break;
                             case b.AbortCodes.INVALID_ACTIVITY_LAUNCH_AFK_CHANNEL:
-                                i = G.default.Messages.EMBEDDED_ACTIVITIES_INVALID_CHANNEL;
+                                r = G.default.Messages.EMBEDDED_ACTIVITIES_INVALID_CHANNEL;
                                 break;
                             case b.AbortCodes.INVALID_ACTIVITY_LAUNCH_AGE_GATED:
-                                i = G.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_AGE_GATE;
+                                r = G.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_AGE_GATE;
                                 break;
                             case b.AbortCodes.INVALID_ACTIVITY_LAUNCH_DEV_PREVIEW_GUILD_SIZE:
-                                i = G.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GUILD_SIZE
+                                r = G.default.Messages.EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GUILD_SIZE
                         }
-                        this.showLaunchErrorModal(i)
+                        this.showLaunchErrorModal(r)
                     }), w(this, "superHandleRPCDisconnect", e => {
                         let {
                             reason: t,
@@ -86508,8 +86509,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285406", "285406"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285406")), t = 0), t
+                let t = parseInt((e = "285425", "285425"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285425")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110513,8 +110514,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285406",
-                    versionHash: "26509320962296d087f1fe9889ecd8a3bdd5e460"
+                    buildNumber: "285425",
+                    versionHash: "a76ac5eb02c53ef95172ea6a99e9ba586dffbd60"
                 }
             }
             n.r(t), n.d(t, {
@@ -163635,8 +163636,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713374816734",
-                                    build_number: "285406"
+                                    built_at: "1713375788364",
+                                    build_number: "285425"
                                 }
                             },
                             retries: 1
@@ -181919,7 +181920,7 @@
                 },
                 N = e => "".concat(_).concat(e.id, "/").concat(e.config.assets.hero),
                 p = e => "".concat(_).concat(e.id, "/").concat(e.config.assets.questBarHero),
-                O = e => "".concat(_).concat(e.id, "/").concat(e.config.assets.gameTile),
+                O = (e, t) => "".concat(_).concat(e.id, "/").concat(t, "/").concat(e.config.assets.gameTile),
                 R = (e, t) => "".concat(_).concat(e.id, "/").concat(t, "/").concat(e.config.assets.logotype),
                 C = e => "".concat(location.protocol, "//").concat(location.host, "/quests/").concat(e);
 
@@ -182795,175 +182796,179 @@
             var i = n("735250");
             n("470079");
             var r = n("946835"),
-                s = n("481060"),
-                a = n("287734"),
-                o = n("872810"),
-                l = n("230711"),
-                u = n("258609"),
-                d = n("102172"),
-                _ = n("592125"),
-                c = n("430824"),
-                E = n("496675"),
-                I = n("979651"),
-                T = n("617136"),
-                f = n("113434"),
-                S = n("497505"),
-                h = n("918701"),
-                A = n("874137"),
-                m = n("644646"),
-                N = n("667105"),
-                p = n("981631"),
-                O = n("689938"),
-                R = n("258758");
-            let C = "11px";
+                s = n("442837"),
+                a = n("780384"),
+                o = n("481060"),
+                l = n("287734"),
+                u = n("872810"),
+                d = n("230711"),
+                _ = n("258609"),
+                c = n("102172"),
+                E = n("210887"),
+                I = n("592125"),
+                T = n("430824"),
+                f = n("496675"),
+                S = n("979651"),
+                h = n("617136"),
+                A = n("113434"),
+                m = n("497505"),
+                N = n("918701"),
+                p = n("874137"),
+                O = n("644646"),
+                R = n("667105"),
+                C = n("981631"),
+                g = n("231338"),
+                L = n("689938"),
+                D = n("258758");
+            let v = "11px";
 
-            function g(e) {
+            function M(e) {
                 return null != e
             }
             t.default = function(e) {
-                var t, g, L;
+                var t, M, y;
                 let {
-                    quest: D,
-                    applicationStream: v,
-                    position: M,
-                    onClosePopout: y,
-                    closePopout: P
-                } = e, U = (0, N.useHandleClaimQuestsReward)({
-                    quest: D,
-                    location: S.QuestContent.MEMBERS_LIST
-                }), b = (0, f.useIsQuestExpired)(D), G = (null == D ? void 0 : null === (t = D.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, w = (null == D ? void 0 : null === (g = D.userStatus) || void 0 === g ? void 0 : g.enrolledAt) != null, B = (null == D ? void 0 : null === (L = D.userStatus) || void 0 === L ? void 0 : L.completedAt) != null;
-                if (null == D || b || G && !(null != v)) return null;
-                let k = () => {
-                        (0, T.trackQuestContentClicked)({
-                            questId: D.id,
-                            questContent: S.QuestContent.MEMBERS_LIST,
-                            questContentCTA: T.QuestContentCTA.OPEN_DISCLOSURE,
+                    quest: P,
+                    applicationStream: U,
+                    position: b,
+                    onClosePopout: G,
+                    closePopout: w
+                } = e, B = (0, R.useHandleClaimQuestsReward)({
+                    quest: P,
+                    location: m.QuestContent.MEMBERS_LIST
+                }), k = (0, A.useIsQuestExpired)(P), V = (null == P ? void 0 : null === (t = P.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, F = (null == P ? void 0 : null === (M = P.userStatus) || void 0 === M ? void 0 : M.enrolledAt) != null, x = (null == P ? void 0 : null === (y = P.userStatus) || void 0 === y ? void 0 : y.completedAt) != null, H = (0, s.useStateFromStores)([E.default], () => E.default.getState().theme), Y = (0, a.isThemeDark)(H) ? g.ThemeTypes.DARK : g.ThemeTypes.LIGHT;
+                if (null == P || k || V && !(null != U)) return null;
+                let j = () => {
+                        (0, h.trackQuestContentClicked)({
+                            questId: P.id,
+                            questContent: m.QuestContent.MEMBERS_LIST,
+                            questContentCTA: h.QuestContentCTA.OPEN_DISCLOSURE,
                             trackGuildAndChannelMetadata: !0
-                        }), (0, s.openModalLazy)(async () => {
+                        }), (0, o.openModalLazy)(async () => {
                             let {
                                 default: e
                             } = await Promise.all([n.e("99387"), n.e("59286")]).then(n.bind(n, "316210"));
                             return t => (0, i.jsx)(e, {
                                 ...t,
-                                questContent: S.QuestContent.MEMBERS_LIST,
-                                questConfig: D.config
+                                questContent: m.QuestContent.MEMBERS_LIST,
+                                questConfig: P.config
                             })
                         })
                     },
-                    V = () => {
-                        (0, T.trackQuestContentClicked)({
-                            questId: D.id,
-                            questContent: S.QuestContent.MEMBERS_LIST,
-                            questContentCTA: T.QuestContentCTA.LEARN_MORE,
+                    W = () => {
+                        (0, h.trackQuestContentClicked)({
+                            questId: P.id,
+                            questContent: m.QuestContent.MEMBERS_LIST,
+                            questContentCTA: h.QuestContentCTA.LEARN_MORE,
                             trackGuildAndChannelMetadata: !0
-                        }), l.default.open(p.UserSettingsSections.INVENTORY)
+                        }), d.default.open(C.UserSettingsSections.INVENTORY)
                     },
-                    F = e => {
-                        e.stopPropagation(), k()
+                    K = e => {
+                        e.stopPropagation(), j()
                     },
-                    x = () => {
-                        if (null != v) {
-                            let e = _.default.getChannel(v.channelId);
-                            if (null != e && (0, d.canWatchStream)(e, I.default, c.default, E.default, u.default)[0]) return (0, T.trackQuestContentClicked)({
-                                questId: D.id,
-                                questContent: S.QuestContent.MEMBERS_LIST,
-                                questContentCTA: T.QuestContentCTA.WATCH_STREAM,
+                    z = () => {
+                        if (null != U) {
+                            let e = I.default.getChannel(U.channelId);
+                            if (null != e && (0, c.canWatchStream)(e, S.default, T.default, f.default, _.default)[0]) return (0, h.trackQuestContentClicked)({
+                                questId: P.id,
+                                questContent: m.QuestContent.MEMBERS_LIST,
+                                questContentCTA: h.QuestContentCTA.WATCH_STREAM,
                                 trackGuildAndChannelMetadata: !0
-                            }), a.default.selectVoiceChannel(e.id), (0, o.watchStreamAndTransitionToStream)(v)
+                            }), l.default.selectVoiceChannel(e.id), (0, u.watchStreamAndTransitionToStream)(U)
                         }
-                        V()
+                        W()
                     },
-                    H = (() => null != v ? {
-                        headerText: O.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE,
-                        ctaText: O.default.Messages.QUESTS_MEMBERS_LIST_STREAM_CTA,
-                        handleClickCta: x,
+                    X = (() => null != U ? {
+                        headerText: L.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE,
+                        ctaText: L.default.Messages.QUESTS_MEMBERS_LIST_STREAM_CTA,
+                        handleClickCta: z,
                         tileAssetType: "game"
-                    } : B && !G ? {
-                        headerText: O.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_REWARD,
-                        ctaText: O.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_REWARD_CTA,
-                        handleClickCta: U,
+                    } : x && !V ? {
+                        headerText: L.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_REWARD,
+                        ctaText: L.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_REWARD_CTA,
+                        handleClickCta: B,
                         tileAssetType: "reward"
-                    } : w ? {
-                        headerText: O.default.Messages.QUESTS_MEMBERS_LIST_FINISH,
-                        ctaText: O.default.Messages.QUESTS_MEMBERS_LIST_FINISH_CTA,
-                        handleClickCta: V,
+                    } : F ? {
+                        headerText: L.default.Messages.QUESTS_MEMBERS_LIST_FINISH,
+                        ctaText: L.default.Messages.QUESTS_MEMBERS_LIST_FINISH_CTA,
+                        handleClickCta: W,
                         tileAssetType: "reward"
                     } : {
-                        headerText: O.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE,
-                        ctaText: O.default.Messages.QUESTS_MEMBERS_LIST_START_CTA,
-                        handleClickCta: V,
+                        headerText: L.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE,
+                        ctaText: L.default.Messages.QUESTS_MEMBERS_LIST_START_CTA,
+                        handleClickCta: W,
                         tileAssetType: "game"
                     })();
-                return (0, i.jsx)(A.QuestContentImpressionTracker, {
-                    questId: D.id,
-                    questContent: S.QuestContent.MEMBERS_LIST,
+                return (0, i.jsx)(p.QuestContentImpressionTracker, {
+                    questId: P.id,
+                    questContent: m.QuestContent.MEMBERS_LIST,
                     trackGuildAndChannelMetadata: !0,
                     children: e => (0, i.jsx)("div", {
                         ref: t => {
                             e.current = t
                         },
-                        className: R.wrapper,
+                        className: D.wrapper,
                         style: {
-                            translate: "top" === M ? "0 ".concat("3px") : "0 -".concat("3px")
+                            translate: "top" === b ? "0 ".concat("3px") : "0 -".concat("3px")
                         },
                         children: (0, i.jsxs)("div", {
-                            className: R.container,
+                            className: D.container,
                             style: {
-                                borderRadius: "top" === M ? "".concat("4px", " ").concat("4px", " 0 0") : "0 0 ".concat("4px", " ").concat("4px")
+                                borderRadius: "top" === b ? "".concat("4px", " ").concat("4px", " 0 0") : "0 0 ".concat("4px", " ").concat("4px")
                             },
                             children: [(0, i.jsxs)("div", {
-                                className: R.top,
+                                className: D.top,
                                 children: [(0, i.jsxs)("div", {
-                                    className: R.left,
-                                    children: [(0, i.jsx)(s.Heading, {
+                                    className: D.left,
+                                    children: [(0, i.jsx)(o.Heading, {
                                         variant: "heading-sm/semibold",
-                                        children: H.headerText
-                                    }), (0, i.jsxs)(s.Clickable, {
-                                        className: R.help,
+                                        children: X.headerText
+                                    }), (0, i.jsxs)(o.Clickable, {
+                                        className: D.help,
                                         onClick: e => {
-                                            P(), null == y || y(), F(e)
+                                            w(), null == G || G(), K(e)
                                         },
-                                        children: [(0, i.jsx)(s.Text, {
+                                        children: [(0, i.jsx)(o.Text, {
                                             variant: "text-xs/medium",
                                             color: "text-muted",
-                                            children: O.default.Messages.QUESTS_MEMBERS_LIST_PROMOTED_BY.format({
-                                                gamePublisher: D.config.messages.gamePublisher
+                                            children: L.default.Messages.QUESTS_MEMBERS_LIST_PROMOTED_BY.format({
+                                                gamePublisher: P.config.messages.gamePublisher
                                             })
                                         }), (0, i.jsx)(r.CircleQuestionIcon, {
-                                            width: C,
-                                            height: C,
-                                            color: s.tokens.colors.INTERACTIVE_MUTED
+                                            width: v,
+                                            height: v,
+                                            color: o.tokens.colors.INTERACTIVE_MUTED
                                         })]
                                     })]
                                 }), (0, i.jsx)("div", {
-                                    className: R.right,
+                                    className: D.right,
                                     children: (0, i.jsxs)("div", {
-                                        className: R.imgWrapper,
+                                        className: D.imgWrapper,
                                         children: [(0, i.jsx)("div", {
-                                            className: R.imgUnderlay
-                                        }), "game" === H.tileAssetType && (0, i.jsx)("img", {
-                                            alt: O.default.Messages.QUESTS_MEMBERS_LIST_GAME_TILE_ALT.format({
-                                                gameTitle: D.config.messages.gameTitle,
-                                                gamePublisher: D.config.messages.gamePublisher
+                                            className: D.imgUnderlay
+                                        }), "game" === X.tileAssetType && (0, i.jsx)("img", {
+                                            alt: L.default.Messages.QUESTS_MEMBERS_LIST_GAME_TILE_ALT.format({
+                                                gameTitle: P.config.messages.gameTitle,
+                                                gamePublisher: P.config.messages.gamePublisher
                                             }),
-                                            className: R.assetTile,
-                                            src: (0, h.getGameTileAssetUrl)(D)
-                                        }), "reward" === H.tileAssetType && (0, i.jsx)(m.default, {
-                                            className: R.assetTile,
+                                            className: D.assetTile,
+                                            src: (0, N.getGameTileAssetUrl)(P, Y)
+                                        }), "reward" === X.tileAssetType && (0, i.jsx)(O.default, {
+                                            className: D.assetTile,
                                             learnMoreStyle: "icon",
-                                            quest: D,
-                                            questContent: S.QuestContent.MEMBERS_LIST
+                                            quest: P,
+                                            questContent: m.QuestContent.MEMBERS_LIST
                                         })]
                                     })
                                 })]
-                            }), (0, i.jsx)(s.Button, {
+                            }), (0, i.jsx)(o.Button, {
                                 onClick: () => {
-                                    P(), null == y || y(), H.handleClickCta()
+                                    w(), null == G || G(), X.handleClickCta()
                                 },
-                                color: s.Button.Colors.CUSTOM,
-                                hover: s.Button.Hovers.PRIMARY,
-                                className: R.ctaButton,
-                                children: H.ctaText
+                                color: o.Button.Colors.CUSTOM,
+                                hover: o.Button.Hovers.PRIMARY,
+                                className: D.ctaButton,
+                                children: X.ctaText
                             })]
                         })
                     })
@@ -240716,7 +240721,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "26509320962296d087f1fe9889ecd8a3bdd5e460"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a76ac5eb02c53ef95172ea6a99e9ba586dffbd60"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269132,7 +269137,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285406"
+                                build_number: "285425"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276317,7 +276322,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285406", "285406"), 10);
+                let s = parseInt((n = "285425", "285425"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -303387,4 +303392,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.763c6a273a4759c5ffd8.js.map
+//# sourceMappingURL=73050.72952cac259f9960e94e.js.map
