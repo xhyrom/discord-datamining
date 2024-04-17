@@ -3999,6 +3999,7 @@
       "GET",
       "HEAD",
       "OPTIONS",
+      "POST",
       "PUT"
     ]
   },
