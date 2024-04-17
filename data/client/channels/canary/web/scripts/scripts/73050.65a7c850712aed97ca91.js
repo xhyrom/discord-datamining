@@ -36640,7 +36640,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285305", ", Version Hash: ").concat("1dd8a0606a2380e7c96a01089ff67d6f428bbec8")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285317", ", Version Hash: ").concat("ad7377a57258d0104d04316314d7987ed2c4fd51")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86507,8 +86507,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285305", "285305"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285305")), t = 0), t
+                let t = parseInt((e = "285317", "285317"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285317")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -100608,7 +100608,7 @@
                             description: t.description,
                             play_style: t.playstyle,
                             search_terms: Array.from(null !== (d = t.interests) && void 0 !== d ? d : new Set),
-                            game_application_ids: Array.from((null !== (_ = t.selectedGames) && void 0 !== _ ? _ : new Map).keys()),
+                            game_application_ids: Array.from(null !== (_ = t.gameApplicationIds) && void 0 !== _ ? _ : new Set),
                             prime_time: I,
                             verification_form: {
                                 form_fields: null !== (c = null === (u = t.verificationForm) || void 0 === u ? void 0 : u.formFields) && void 0 !== c ? c : []
@@ -100664,18 +100664,18 @@
                 })
             }
             let E = e => {
-                var t, n, i, r, s;
+                var t, n, i, r, s, a;
                 return {
                     tag: e.tag,
-                    selectedGames: new Map,
-                    interests: new Set(null !== (i = e.search_terms) && void 0 !== i ? i : []),
+                    gameApplicationIds: new Set(null !== (i = e.game_application_ids) && void 0 !== i ? i : []),
+                    interests: new Set(null !== (r = e.search_terms) && void 0 !== r ? r : []),
                     playstyle: e.play_style,
                     description: e.description,
                     wildcardDescriptors: e.wildcard_descriptors,
                     primetime: e.prime_time.map(e => (0, o.guildEventToPrimeTimeSelection)(e)),
                     verificationForm: {
-                        description: null !== (r = null === (t = e.verification_form) || void 0 === t ? void 0 : t.description) && void 0 !== r ? r : "",
-                        formFields: null !== (s = null === (n = e.verification_form) || void 0 === n ? void 0 : n.form_fields) && void 0 !== s ? s : [],
+                        description: null !== (s = null === (t = e.verification_form) || void 0 === t ? void 0 : t.description) && void 0 !== s ? s : "",
+                        formFields: null !== (a = null === (n = e.verification_form) || void 0 === n ? void 0 : n.form_fields) && void 0 !== a ? a : [],
                         version: ""
                     },
                     badgeKind: e.badge,
@@ -101012,29 +101012,48 @@
         353093: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                getTagFromClan: function() {
-                    return r
+                formatSelectionList: function() {
+                    return l
                 },
-                isGuildAClan: function() {
+                getTagFromClan: function() {
                     return s
                 },
-                isGuildAdoptedUserClanIdentity: function() {
+                isGuildAClan: function() {
                     return a
+                },
+                isGuildAdoptedUserClanIdentity: function() {
+                    return o
                 }
             });
-            var i = n("981631");
+            var i = n("981631"),
+                r = n("689938");
 
-            function r(e) {
+            function s(e) {
                 var t;
                 return null != e && e.identityEnabled ? null !== (t = e.tag) && void 0 !== t ? t : null : null
             }
 
-            function s(e) {
+            function a(e) {
                 return null != e && e.hasFeature(i.GuildFeatures.CLAN)
             }
 
-            function a(e, t) {
+            function o(e, t) {
                 return null != e && null != t && null != t.identityGuildId && t.identityGuildId === e && !!t.identityEnabled || !1
+            }
+            let l = e => {
+                if (1 === e.length) return e[0];
+                if (2 === e.length) return r.default.Messages.CLAN_OVERVIEW_LIST_TWO_ITEMS.format({
+                    item1: e[0],
+                    item2: e[1]
+                });
+                {
+                    let t = e.slice(0, -1).join(", "),
+                        n = e[e.length - 1];
+                    return r.default.Messages.CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS.format({
+                        items: t,
+                        last: n
+                    })
+                }
             }
         },
         924801: function(e, t, n) {
@@ -110455,8 +110474,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285305",
-                    versionHash: "1dd8a0606a2380e7c96a01089ff67d6f428bbec8"
+                    buildNumber: "285317",
+                    versionHash: "ad7377a57258d0104d04316314d7987ed2c4fd51"
                 }
             }
             n.r(t), n.d(t, {
@@ -163577,8 +163596,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713356101155",
-                                    build_number: "285305"
+                                    built_at: "1713364038119",
+                                    build_number: "285317"
                                 }
                             },
                             retries: 1
@@ -240555,7 +240574,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "1dd8a0606a2380e7c96a01089ff67d6f428bbec8"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ad7377a57258d0104d04316314d7987ed2c4fd51"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268971,7 +268990,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285305"
+                                build_number: "285317"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276156,7 +276175,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285305", "285305"), 10);
+                let s = parseInt((n = "285317", "285317"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -303172,4 +303191,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.f42918cf8cb17becca44.js.map
+//# sourceMappingURL=73050.65a7c850712aed97ca91.js.map
