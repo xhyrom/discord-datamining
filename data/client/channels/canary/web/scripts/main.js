@@ -36640,7 +36640,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285340", ", Version Hash: ").concat("c70e5c38e22cd811b8247a7c0ca76c2c83bb8958")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285360", ", Version Hash: ").concat("a6be1a9062b6100116a6f24a9c3644d2f01f5cc1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -38970,7 +38970,7 @@
                 FORM_HELP_SYSTEM_CHANNEL_GUILD_REMINDERS: "Send helpful tips for server setup.",
                 FORM_LABEL_VERIFICATION_LEVEL: "Verification Level",
                 FORM_LABEL_VERIFICATION_LEVEL_CHANGE: "Change Verification Level",
-                FORM_HELP_VERIFICATION_LEVEL: "\nMembers of the server must meet the following criteria before they can send messages in text channels or initiate a\ndirect message conversation. If a member has an assigned role this does not apply.\n**We recommend setting a verification level for a Community Server.**\n",
+                FORM_HELP_VERIFICATION_LEVEL: "\nMembers of the server must meet the following criteria before they can send messages in text channels or initiate a\ndirect message conversation. If a member has an assigned role and server onboarding is not enabled, this does not apply.\n**We recommend setting a verification level for a Community Server.**\n",
                 VERIFICATION_LEVEL_NONE: "None",
                 VERIFICATION_LEVEL_NONE_CRITERIA: "Unrestricted",
                 VERIFICATION_LEVEL_LOW: "Low",
@@ -47541,6 +47541,8 @@
                 WRONG_USER_LOGOUT: "Wrong account?",
                 USER_PROFILE_HEADER_A11Y_ANIMATE: "Animate Profile Banner GIF",
                 USER_PROFILE_HEADER_A11Y_LABEL: "{username}'s User Profile Banner",
+                USER_PROFILE_FORMATTED_PLAYING_GAME: "Playing $[](renderGameNameHook)",
+                USER_PROFILE_ACTIVE_PLAYING_TIMESTAMP: "{hours, plural, =-1 {} =0 {} other {{hours}:}}{minutes, plural, =-1 {} =0 {0} other {{minutes}}}:{seconds}",
                 SERVER_INSIGHTS: "Server Insights",
                 GUILD_ANALYTICS_DESCRIPTION: "We’ve put together a bunch of helpful data to help you better run your community. Learn how active your community is, where new members are coming from, and much more. Use what you learn to make informed decisions to improve your server’s engagement!\n\nAnalytics about Announcement Channels, Server Discovery, and Welcome Screen also live here.",
                 GUILD_ANALYTICS_DEVELOPERS_CTA: "Server Insights is hosted on a separate website so that it’s easier to share links and browse cross platform.",
@@ -51602,7 +51604,7 @@
                 GUILD_SETTINGS_SAFETY_RULES_SCREENING: "Members must accept rules before they can talk or DM",
                 GUILD_SETTINGS_SAFETY_RULES_EDIT_SUBTITLE: "Set up rules that new members must explicitly agree to before they can talk, react, or DM other members. Granting a role to a new member will bypass this requirement.",
                 GUILD_SETTINGS_SAFETY_RULES_FORM_PILL: "Accept the rules",
-                GUILD_SETTINGS_SAFETY_VERIFICATION_DESCRIPTION: "Members of the server must meet the following criteria before they can send messages. If a member has an assigned role this does not apply.",
+                GUILD_SETTINGS_SAFETY_VERIFICATION_DESCRIPTION: "Members of the server must meet the following criteria before they can send messages. If a member has an assigned role and server onboarding is not enabled, this does not apply.",
                 GUILD_SETTINGS_SAFETY_NOTIFICATIONS_CHANNEL_DESCRIPTION: "Anyone with access to this text channel will be able to see the notifications.",
                 GUILD_SETTINGS_SAFETY_RAID_CAPTCHA: "CAPTCHA suspicious accounts before they are able to join",
                 GUILD_SETTINGS_SAFETY_RAID_CAPTCH_RAID: "CAPTCHA all accounts before they can join during a suspected raid",
@@ -86507,8 +86509,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285340", "285340"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285340")), t = 0), t
+                let t = parseInt((e = "285360", "285360"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285360")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -108507,6 +108509,44 @@
                 }
             })
         },
+        43205: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                ContentImage: function() {
+                    return u
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("120356"),
+                s = n.n(r),
+                a = n("410030"),
+                o = n("438071"),
+                l = n("820401");
+
+            function u(e) {
+                let {
+                    src: t,
+                    size: n,
+                    className: r,
+                    alt: u = "icon"
+                } = e, d = (0, a.default)();
+                return null == t ? (0, i.jsx)(o.default, {
+                    width: n,
+                    height: n,
+                    color: "dark" === d ? "white" : "black",
+                    className: s()(l.contentImage, r)
+                }) : (0, i.jsx)("img", {
+                    style: {
+                        width: "".concat(n, "px"),
+                        height: "".concat(n, "px")
+                    },
+                    className: s()(l.contentImage, r),
+                    src: t,
+                    alt: u
+                })
+            }
+        },
         663993: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -110474,8 +110514,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285340",
-                    versionHash: "c70e5c38e22cd811b8247a7c0ca76c2c83bb8958"
+                    buildNumber: "285360",
+                    versionHash: "a6be1a9062b6100116a6f24a9c3644d2f01f5cc1"
                 }
             }
             n.r(t), n.d(t, {
@@ -163596,8 +163636,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713369263869",
-                                    build_number: "285340"
+                                    built_at: "1713371097647",
+                                    build_number: "285360"
                                 }
                             },
                             retries: 1
@@ -203045,6 +203085,99 @@
                 })
             }
         },
+        193281: function(e, t, n) {
+            "use strict";
+            n.r(t), n("47120");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("499237"),
+                a = n("846519"),
+                o = n("692547"),
+                l = n("481060"),
+                u = n("835473"),
+                d = n("43205"),
+                _ = n("55935"),
+                c = n("506071"),
+                E = n("689938"),
+                I = n("40803");
+            let T = e => {
+                    let {
+                        startTime: t
+                    } = e, [n, s] = r.useState(Date.now()), o = (0, c.useIsWindowFocused)(), u = r.useMemo(() => {
+                        let {
+                            hours: e
+                        } = (0, _.diffAsUnits)(t, n);
+                        return e > 0 ? 3e5 : 1e3
+                    }, [t, n]);
+                    r.useEffect(() => {
+                        let e = new a.Interval;
+                        return e.start(u, () => {
+                            s(Date.now())
+                        }), !o && e.stop(), () => e.stop()
+                    }, [u, o]);
+                    let d = r.useMemo(() => f(t, n), [t, n]);
+                    return (0, i.jsx)(l.Text, {
+                        variant: "text-xs/normal",
+                        className: I.playtimeText,
+                        tabularNumbers: !0,
+                        children: d
+                    })
+                },
+                f = (e, t) => {
+                    let {
+                        seconds: n,
+                        minutes: i,
+                        hours: r
+                    } = (0, _.diffAsUnits)(e, t);
+
+                    function s(e) {
+                        return String(e).padStart(2, "0")
+                    }
+                    return E.default.Messages.USER_PROFILE_ACTIVE_PLAYING_TIMESTAMP.format({
+                        hours: r,
+                        minutes: r > 0 ? s(i) : i,
+                        seconds: s(n)
+                    })
+                };
+            t.default = r.memo(function(e) {
+                var t, n, r;
+                let {
+                    activity: a
+                } = e, _ = null === (t = (0, u.useGetOrFetchApplication)(null == a ? void 0 : a.application_id)) || void 0 === t ? void 0 : t.getIconURL(128), c = null !== (r = null === (n = a.timestamps) || void 0 === n ? void 0 : n.start) && void 0 !== r ? r : a.created_at;
+                return (0, i.jsxs)("div", {
+                    className: I.cardContainer,
+                    children: [(0, i.jsx)(d.ContentImage, {
+                        src: _,
+                        size: 40,
+                        className: I.contentImage
+                    }), (0, i.jsxs)("div", {
+                        className: I.infoContainer,
+                        children: [(0, i.jsx)(l.Heading, {
+                            variant: "heading-sm/normal",
+                            color: "text-secondary",
+                            className: I.title,
+                            children: E.default.Messages.USER_PROFILE_FORMATTED_PLAYING_GAME.format({
+                                renderGameNameHook: (e, t) => (0, i.jsx)(l.Heading, {
+                                    variant: "heading-sm/semibold",
+                                    color: "text-secondary",
+                                    className: I.activityName,
+                                    children: a.name
+                                }, t)
+                            })
+                        }), null != c && (0, i.jsxs)("div", {
+                            className: I.playtimeContainer,
+                            children: [(0, i.jsx)(s.GameControllerIcon, {
+                                width: 12,
+                                height: 12,
+                                color: o.default.colors.STATUS_POSITIVE
+                            }), (0, i.jsx)(T, {
+                                startTime: c
+                            })]
+                        })]
+                    })]
+                })
+            })
+        },
         520978: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -205690,71 +205823,76 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return h
+                    return N
                 }
             });
             var i = n("735250");
             n("470079");
             var r = n("442837"),
-                s = n("246946"),
-                a = n("5192"),
-                o = n("447452"),
-                l = n("505737"),
-                u = n("998120"),
-                d = n("530"),
-                _ = n("894374"),
-                c = n("790711"),
-                E = n("67152"),
-                I = n("901952"),
-                T = n("287612"),
-                f = n("165818"),
-                S = n("797849");
+                s = n("158776"),
+                a = n("246946"),
+                o = n("5192"),
+                l = n("447452"),
+                u = n("505737"),
+                d = n("193281"),
+                _ = n("998120"),
+                c = n("530"),
+                E = n("894374"),
+                I = n("790711"),
+                T = n("67152"),
+                f = n("901952"),
+                S = n("287612"),
+                h = n("165818"),
+                A = n("981631"),
+                m = n("797849");
 
-            function h(e) {
+            function N(e) {
                 let {
                     user: t,
                     displayProfile: n,
-                    guild: h,
-                    channelId: A,
-                    onOpenProfile: m,
-                    onClose: N
+                    guild: N,
+                    channelId: p,
+                    onOpenProfile: O,
+                    onClose: R
                 } = e, {
-                    moreUserDetailsEnabled: p
-                } = (0, o.useSimplifiedProfileExperiment)({
+                    moreUserDetailsEnabled: C
+                } = (0, l.useSimplifiedProfileExperiment)({
                     location: "BiteSizeProfileBody"
-                }), O = a.default.getName(null == h ? void 0 : h.id, A, t), R = (0, l.default)(t.id, null == h ? void 0 : h.id), C = (0, r.useStateFromStores)([s.default], () => s.default.hidePersonalInformation);
+                }), g = o.default.getName(null == N ? void 0 : N.id, p, t), L = (0, u.default)(t.id, null == N ? void 0 : N.id), D = (0, r.useStateFromStores)([a.default], () => a.default.hidePersonalInformation), v = (0, r.useStateFromStores)([s.default], () => s.default.findActivity(t.id, e => e.type === A.ActivityTypes.PLAYING), [t]);
                 return t.isSystemUser() ? null : (0, i.jsxs)("div", {
-                    className: S.body,
-                    children: [(0, i.jsx)(d.default, {
+                    className: m.body,
+                    children: [(0, i.jsx)(c.default, {
                         user: t,
-                        guildId: null == h ? void 0 : h.id,
-                        usernameIcon: t.hasAvatarForGuild(null == h ? void 0 : h.id) && (0, i.jsx)(c.default, {
+                        guildId: null == N ? void 0 : N.id,
+                        usernameIcon: t.hasAvatarForGuild(null == N ? void 0 : N.id) && (0, i.jsx)(I.default, {
                             user: t,
-                            nickname: O
+                            nickname: g
                         }),
                         tags: (0, i.jsxs)(i.Fragment, {
-                            children: [(0, i.jsx)(_.UserProfilePronounsTag, {
+                            children: [(0, i.jsx)(E.UserProfilePronounsTag, {
                                 pronouns: null == n ? void 0 : n.pronouns
-                            }), (0, i.jsx)(_.UserProfileBadgesTag, {
+                            }), (0, i.jsx)(E.UserProfileBadgesTag, {
                                 user: t,
-                                guildId: null == h ? void 0 : h.id
+                                guildId: null == N ? void 0 : N.id
                             })]
                         }),
-                        nicknameIcon: p && !C ? (0, i.jsx)(u.default, {
+                        nicknameIcon: C && !D ? (0, i.jsx)(_.default, {
                             user: t,
-                            onOpenProfile: m
+                            onOpenProfile: O
                         }) : null
-                    }), p && (0, i.jsx)(T.default, {
+                    }), C && (0, i.jsx)(S.default, {
                         user: t
-                    }), p && (0, i.jsx)(E.default, {
+                    }), C && (0, i.jsx)(T.default, {
                         user: t,
                         bio: null == n ? void 0 : n.bio,
-                        hidePersonalInformation: C,
-                        onClose: N
-                    }), (0, i.jsx)(f.default, {
+                        hidePersonalInformation: D,
+                        onClose: R
+                    }), null != v && (0, i.jsx)(d.default, {
+                        activity: v
+                    }), (0, i.jsx)(h.default, {
                         user: t,
-                        guild: h
-                    }), R && (0, i.jsx)(I.default, {
+                        guild: N
+                    }), L && (0, i.jsx)(f.default, {
                         user: t
                     })]
                 })
@@ -237009,14 +237147,16 @@
         295226: function(e, t, n) {
             "use strict";
             n.r(t), n("47120");
-            var i, r = n("442837"),
-                s = n("570140"),
-                a = n("594174"),
-                o = n("74538"),
-                l = n("78839"),
-                u = n("474936");
+            var i, r = n("906280"),
+                s = n.n(r),
+                a = n("442837"),
+                o = n("570140"),
+                l = n("594174"),
+                u = n("74538"),
+                d = n("78839"),
+                _ = n("474936");
 
-            function d(e, t, n) {
+            function c(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -237024,90 +237164,87 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let _ = {
+            let E = {
                     userOffersLastFetchedAtDate: void 0,
                     userAnnualOfferLastFetchedAtDate: void 0,
                     userTrialOffers: {},
                     userDiscountOffers: {},
                     userDiscounts: void 0
                 },
-                c = _;
-
-            function E() {
-                c.userTrialOffers = {}, c.userDiscountOffers = {}, c.userOffersLastFetchedAtDate = void 0, c.userAnnualOfferLastFetchedAtDate = void 0
-            }
-            let I = () => !0;
+                I = E;
 
             function T() {
-                if (null != l.default.getPremiumTypeSubscription()) {
-                    let e = c.userDiscountOffers[u.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID],
-                        t = c.userDiscountOffers[u.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID];
-                    return c.userDiscountOffers = {
-                        [u.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID]: e,
-                        [u.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID]: t
-                    }, c.userTrialOffers = {}, !0
+                I.userTrialOffers = {}, I.userDiscountOffers = {}, I.userOffersLastFetchedAtDate = void 0, I.userAnnualOfferLastFetchedAtDate = void 0
+            }
+            let f = () => !0;
+
+            function S() {
+                if (null != d.default.getPremiumTypeSubscription()) {
+                    let e = s()(I.userDiscountOffers[_.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID]),
+                        t = s()(I.userDiscountOffers[_.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID]);
+                    return I.userDiscountOffers = {}, null != e ? I.userDiscountOffers[_.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID] = e : null != t && (I.userDiscountOffers[_.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID] = t), I.userTrialOffers = {}, !0
                 }
                 return !1
             }
-            class f extends(i = r.default.PersistedStore) {
+            class h extends(i = a.default.PersistedStore) {
                 initialize(e) {
-                    c = null != e ? e : _, this.waitFor(a.default), this.syncWith([a.default], I), this.syncWith([l.default], T)
+                    I = null != e ? e : E, this.waitFor(l.default), this.syncWith([l.default], f), this.syncWith([d.default], S)
                 }
                 getUserTrialOffer(e) {
-                    if (null !== e) return c.userTrialOffers[e]
+                    if (null !== e) return I.userTrialOffers[e]
                 }
                 getUserDiscountOffer(e) {
-                    if (null !== e) return c.userDiscountOffers[e]
+                    if (null !== e) return I.userDiscountOffers[e]
                 }
                 getAnyOfUserTrialOfferId(e) {
                     for (let t of e)
-                        if (null != c.userTrialOffers[t]) return t;
+                        if (null != I.userTrialOffers[t]) return t;
                     return null
                 }
                 hasFetchedOffer() {
-                    return null != c.userOffersLastFetchedAtDate
+                    return null != I.userOffersLastFetchedAtDate
                 }
                 shouldFetchOffer() {
-                    let e = c.userOffersLastFetchedAtDate;
+                    let e = I.userOffersLastFetchedAtDate;
                     return null == e || Date.now() - 1728e5 > e
                 }
                 shouldFetchAnnualOffer() {
-                    let e = c.userAnnualOfferLastFetchedAtDate;
+                    let e = I.userAnnualOfferLastFetchedAtDate;
                     return null == e || Date.now() - 1728e5 > e
                 }
                 getAlmostExpiringTrialOffers(e) {
-                    let t = Object.values(u.SubscriptionTrials).map(e => e.id),
-                        n = a.default.getCurrentUser();
-                    return (0, o.isPremium)(n) ? [] : Object.values(c.userTrialOffers).filter(n => t.includes(n.trial_id) && null != n.expires_at && null != n.subscription_trial && e.includes(n.subscription_trial.sku_id) && Date.parse(n.expires_at) < Date.now() + u.USER_PREMIUM_SUBSCRIPTION_TRIAL_EXPIRES_APPROACHING_5_DAY_THRESHOLD)
+                    let t = Object.values(_.SubscriptionTrials).map(e => e.id),
+                        n = l.default.getCurrentUser();
+                    return (0, u.isPremium)(n) ? [] : Object.values(I.userTrialOffers).filter(n => t.includes(n.trial_id) && null != n.expires_at && null != n.subscription_trial && e.includes(n.subscription_trial.sku_id) && Date.parse(n.expires_at) < Date.now() + _.USER_PREMIUM_SUBSCRIPTION_TRIAL_EXPIRES_APPROACHING_5_DAY_THRESHOLD)
                 }
                 getAcknowledgedOffers(e) {
-                    let t = a.default.getCurrentUser();
-                    return (0, o.isPremium)(t) ? [] : Object.values(c.userTrialOffers).filter(t => e.includes(t.trial_id) && null != t.expires_at)
+                    let t = l.default.getCurrentUser();
+                    return (0, u.isPremium)(t) ? [] : Object.values(I.userTrialOffers).filter(t => e.includes(t.trial_id) && null != t.expires_at)
                 }
                 getUnacknowledgedDiscountOffers() {
                     var e;
-                    let t = a.default.getCurrentUser();
-                    return (0, o.isPremium)(t) ? [] : Object.values(null !== (e = c.userDiscountOffers) && void 0 !== e ? e : {}).filter(e => null == e.expires_at && !u.ANNUAL_DISCOUNT_IDS.includes(e.discount_id))
+                    let t = l.default.getCurrentUser();
+                    return (0, u.isPremium)(t) ? [] : Object.values(null !== (e = I.userDiscountOffers) && void 0 !== e ? e : {}).filter(e => null == e.expires_at && !_.ANNUAL_DISCOUNT_IDS.includes(e.discount_id))
                 }
                 getUnacknowledgedOffers(e) {
-                    let t = a.default.getCurrentUser();
-                    return (0, o.isPremium)(t) ? [] : Object.values(c.userTrialOffers).filter(t => e.includes(t.trial_id) && null == t.expires_at)
+                    let t = l.default.getCurrentUser();
+                    return (0, u.isPremium)(t) ? [] : Object.values(I.userTrialOffers).filter(t => e.includes(t.trial_id) && null == t.expires_at)
                 }
                 hasAnyUnexpiredOffer() {
-                    return Object.values(c.userTrialOffers).some(e => null == e.expires_at || Date.parse(e.expires_at) > Date.now())
+                    return Object.values(I.userTrialOffers).some(e => null == e.expires_at || Date.parse(e.expires_at) > Date.now())
                 }
                 getReferrer(e) {
                     var t;
-                    return null == e ? null : null === (t = c.userTrialOffers[e]) || void 0 === t ? void 0 : t.referrer
+                    return null == e ? null : null === (t = I.userTrialOffers[e]) || void 0 === t ? void 0 : t.referrer
                 }
                 getState() {
-                    return c
+                    return I
                 }
                 forceReset() {
-                    E()
+                    T()
                 }
             }
-            d(f, "displayName", "UserOfferStore"), d(f, "persistKey", "UserOfferStore"), d(f, "migrations", [e => {
+            c(h, "displayName", "UserOfferStore"), c(h, "persistKey", "UserOfferStore"), c(h, "migrations", [e => {
                 let t = null == e ? void 0 : e.userDiscounts;
                 if (null != t) return {
                     ...e,
@@ -237118,18 +237255,18 @@
                     ...e,
                     userAnnualOfferLastFetchedAtDate: void 0
                 } : e
-            }]), t.default = new f(s.default, {
+            }]), t.default = new h(o.default, {
                 BILLING_USER_TRIAL_OFFER_FETCH_SUCCESS: function(e) {
                     let {
                         userTrialOffer: t
                     } = e;
-                    null != t ? c.userTrialOffers[t.trial_id] = t : E(), c.userOffersLastFetchedAtDate = Date.now()
+                    null != t ? I.userTrialOffers[t.trial_id] = t : T(), I.userOffersLastFetchedAtDate = Date.now()
                 },
                 BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS: function(e) {
                     let {
                         userTrialOffer: t
                     } = e;
-                    null != t ? c.userTrialOffers[t.trial_id] = t : c.userTrialOffers = {}, c.userOffersLastFetchedAtDate = Date.now()
+                    null != t ? I.userTrialOffers[t.trial_id] = t : I.userTrialOffers = {}, I.userOffersLastFetchedAtDate = Date.now()
                 },
                 BILLING_USER_OFFER_FETCH_SUCCESS: function(e) {
                     let {
@@ -237137,13 +237274,13 @@
                         userDiscount: n,
                         userDiscountOffer: i
                     } = e;
-                    null == t && null == n && null == i && E(), null != t ? (c.userTrialOffers[t.trial_id] = t, c.userDiscountOffers = {}) : null != n ? (c.userDiscountOffers[n.discount_id] = n, c.userTrialOffers = {}) : null != i && (c.userDiscountOffers[i.discount_id] = i, c.userTrialOffers = {}), c.userOffersLastFetchedAtDate = Date.now()
+                    null == t && null == n && null == i && T(), null != t ? (I.userTrialOffers[t.trial_id] = t, I.userDiscountOffers = {}) : null != n ? (I.userDiscountOffers[n.discount_id] = n, I.userTrialOffers = {}) : null != i && (I.userDiscountOffers[i.discount_id] = i, I.userTrialOffers = {}), I.userOffersLastFetchedAtDate = Date.now()
                 },
                 BILLING_ANNUAL_USER_OFFER_FETCH_SUCCESS: function(e) {
                     let {
                         userDiscountOffer: t
                     } = e;
-                    delete c.userDiscountOffers[u.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID], delete c.userDiscountOffers[u.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID], null != t && (c.userDiscountOffers[t.discount_id] = t), c.userAnnualOfferLastFetchedAtDate = Date.now()
+                    delete I.userDiscountOffers[_.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID], delete I.userDiscountOffers[_.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID], null != t && (I.userDiscountOffers[t.discount_id] = t), I.userAnnualOfferLastFetchedAtDate = Date.now()
                 },
                 BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS: function(e) {
                     let {
@@ -237151,15 +237288,15 @@
                         userDiscount: n,
                         userDiscountOffer: i
                     } = e;
-                    null != t ? c.userTrialOffers[t.trial_id] = t : c.userTrialOffers = {}, null != n ? c.userDiscountOffers[n.discount_id] = n : null != i ? c.userDiscountOffers[i.discount_id] = i : c.userDiscountOffers = {}, c.userOffersLastFetchedAtDate = Date.now()
+                    null != t ? I.userTrialOffers[t.trial_id] = t : I.userTrialOffers = {}, null != n ? I.userDiscountOffers[n.discount_id] = n : null != i ? I.userDiscountOffers[i.discount_id] = i : I.userDiscountOffers = {}, I.userOffersLastFetchedAtDate = Date.now()
                 },
                 BILLING_USER_OFFER_FETCH_FAIL: function() {
-                    E(), c.userOffersLastFetchedAtDate = Date.now()
+                    T(), I.userOffersLastFetchedAtDate = Date.now()
                 },
                 BILLING_ANNUAL_USER_OFFER_FETCH_FAIL: function() {
-                    delete c.userDiscountOffers[u.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID], delete c.userDiscountOffers[u.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID], c.userAnnualOfferLastFetchedAtDate = Date.now()
+                    delete I.userDiscountOffers[_.PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID], delete I.userDiscountOffers[_.PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID], I.userAnnualOfferLastFetchedAtDate = Date.now()
                 },
-                LOGOUT: E
+                LOGOUT: T
             })
         },
         983620: function(e, t, n) {
@@ -240580,7 +240717,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "c70e5c38e22cd811b8247a7c0ca76c2c83bb8958"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a6be1a9062b6100116a6f24a9c3644d2f01f5cc1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268996,7 +269133,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285340"
+                                build_number: "285360"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276181,7 +276318,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285340", "285340"), 10);
+                let s = parseInt((n = "285360", "285360"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -303251,4 +303388,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.776bdb71237273dceb8a.js.map
+//# sourceMappingURL=73050.6b0b6ad108eafcb35854.js.map
