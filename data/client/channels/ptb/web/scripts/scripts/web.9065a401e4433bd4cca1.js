@@ -415,7 +415,7 @@
                         nativeBuildNumber: null == t ? void 0 : t.toString()
                     });
                     let r = Object.keys(a).filter(e => null != a[e]).map(e => "".concat(e, ": ").concat(a[e])).join(", ");
-                    new y.default().log("[NATIVE INFO] host ".concat(e, ", modules: ").concat(r, ", build: ").concat(t)), O.default.setBackgroundThrottling(!1), O.default.initializeExitHook()
+                    new y.default().log("[NATIVE INFO] host ".concat(e, ", modules: ").concat(r, ", build: ").concat(t)), O.default.initializeExitHook()
                 }
                 if ((0, S.setupWindow)(window), __OVERLAY__) x(u.default.Overlay);
                 else if (null != window.require && null == window.DiscordNative) x(u.default.OutdatedClient);
@@ -2400,7 +2400,7 @@
             37720: "7c9a4c5df3f4344a1ddd",
             37740: "35ab9c1fcbde725f98f2",
             37766: "06b024b03e67ec6e19f6",
-            37839: "01831e5ab6ba13ab18d9",
+            37839: "923142fff8e2d9a71d10",
             37880: "14bee0eb26928ca48473",
             37969: "eaf3e3a168f7d6f3942d",
             38047: "4b63602d181f5d60e59d",
@@ -2477,7 +2477,7 @@
             45576: "d3e4578f9e8ea10978d6",
             45733: "87d722f9afbd2e2e44f6",
             45747: "d49034758608b354df91",
-            46048: "7f4205ffb4820c1935fb",
+            46048: "7b53c620d87847e1110a",
             46161: "ddcc8a8e6752de1069ae",
             46369: "29d5fb4e16193c5a49b9",
             46468: "0caf7d0ecfe447310e19",
@@ -2730,7 +2730,7 @@
             74590: "5872b5336abc1a394aab",
             74602: "52259d090a78a5b7f4fa",
             74673: "e5475b314c05095f84ab",
-            74753: "ebcd8d44fe1ab112aed8",
+            74753: "e6a8a45388b892c274ef",
             74870: "fe6b3d0bef8b5dbc39bb",
             75409: "6d517ccbfd85a79680b3",
             75441: "d90cda406f0e7a585ee2",
@@ -2769,7 +2769,7 @@
             78607: "02a92c93fcf5f333dcd2",
             78650: "3a93a3e614d44167558d",
             78670: "567476d41da909bff180",
-            78690: "94debca14def045edf8f",
+            78690: "6c9b7439a673c61839c7",
             78704: "dc18fd2b5ea7c24806dc",
             78712: "98e549f912a7e836dbb9",
             78786: "ffc48004273a9c78d681",
@@ -3162,4 +3162,4 @@
     });
     s.O(u)
 }();
-//# sourceMappingURL=web.3e1ebb1413d082b24e21.js.map
+//# sourceMappingURL=web.9065a401e4433bd4cca1.js.map
