@@ -26160,6 +26160,16 @@
                 title: "title__16cde"
             }
         },
+        451304: function(e) {
+            "use strict";
+            e.exports = {
+                heading: "heading_bf2723",
+                iconTitle: "iconTitle_be1c6f",
+                tab: "tab__7d975",
+                tabBar: "tabBar_f88f31",
+                tabIcon: "tabIcon__939d8"
+            }
+        },
         233754: function(e) {
             "use strict";
             e.exports = {
