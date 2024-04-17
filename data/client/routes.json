@@ -1492,11 +1492,7 @@
   },
   "CONNECTIONS_CALLBACK_CONTINUATION": {
     "url": "/connections/:param/callback-continuation/:param",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "CONNECTIONS_LINK_DISPATCH_AUTH_CALLBACK": {
     "url": "/connections/:param/link-dispatch-auth-callback",
