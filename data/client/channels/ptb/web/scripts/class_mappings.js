@@ -24865,14 +24865,6 @@
                 noteTextArea: "noteTextArea__171ac"
             }
         },
-        555594: function(e) {
-            "use strict";
-            e.exports = {
-                faded: "faded__030cc",
-                modal: "modal_f417d0",
-                wrapper: "wrapper_e50c5b"
-            }
-        },
         785494: function(e) {
             "use strict";
             e.exports = {
@@ -24947,6 +24939,14 @@
                 button: "button_e8c966",
                 buttonInner: "buttonInner__915b1",
                 color: "color_b28e35"
+            }
+        },
+        3062: function(e) {
+            "use strict";
+            e.exports = {
+                faded: "faded__699a5",
+                modal: "modal__16963",
+                wrapper: "wrapper__3abe0"
             }
         },
         970903: function(e) {
