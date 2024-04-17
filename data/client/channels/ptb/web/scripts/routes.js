@@ -1957,7 +1957,8 @@
             });
             (IO = _K || (_K = {}))[IO.UNPAID = 0] = "UNPAID", IO[IO.ACTIVE = 1] = "ACTIVE", IO[IO.PAST_DUE = 2] = "PAST_DUE", IO[IO.CANCELED = 3] = "CANCELED", IO[IO.ENDED = 4] = "ENDED", IO[IO.ACCOUNT_HOLD = 6] = "ACCOUNT_HOLD", IO[IO.BILLING_RETRY = 7] = "BILLING_RETRY", IO[IO.PAUSED = 8] = "PAUSED", IO[IO.PAUSE_PENDING = 9] = "PAUSE_PENDING";
             let Ro = {
-                ALL_PAUSE: new Set([9, 8])
+                ALL_PAUSE: new Set([9, 8]),
+                ALL_PAUSEABLE: new Set([1, 8])
             };
             (In = _V || (_V = {}))[In.OPEN = 1] = "OPEN", In[In.PAID = 2] = "PAID", In[In.VOID = 3] = "VOID", In[In.UNCOLLECTIBLE = 4] = "UNCOLLECTIBLE";
             let Ra = "Price changed";
@@ -2613,7 +2614,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-ea2fd85f5d07c911bebef84a3011bfb48fa17b3c",
+                    release: "discord_web-0c05560c038855cef93a2f4ab6b833bc324ea3e5",
                     beforeSend: _ => {
                         var E, e;
                         return !(null != (E = _).exception && null != E.exception.values && E.exception.values.every(_ => null == _.stacktrace || null != _.stacktrace.frames && 1 === _.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || a.some(_ => window.navigator.appVersion.toLowerCase().indexOf(_) >= 0)) && !R() && !("Aborted" === (e = _).message || "cancel captcha" === e.message) && t() ? _ : null
@@ -2631,7 +2632,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), I.setTag("buildNumber", (_ = "285643", "285643")), I.setTag("builtAt", String("1713393653311"));
+                }), I.setTag("buildNumber", (_ = "285646", "285646")), I.setTag("builtAt", String("1713394096949"));
                 let E = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != E && "object" == typeof E)
                     for (let _ in E) I.setTag(_, E[_]);
@@ -14055,4 +14056,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84471.4859ce21c497ecb97d35.js.map
+//# sourceMappingURL=84471.1b247769722a565848cf.js.map
