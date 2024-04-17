@@ -36654,7 +36654,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285580", ", Version Hash: ").concat("7ba82726dd8a5f606a951dfb03a536677a350f9b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285590", ", Version Hash: ").concat("2471f0f41f9addeea47f5b70cde52ae059e66e90")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55537,7 +55537,7 @@
                 CLAN_DISCOVERY_TOP_PICKS_SUBTITLE: "Best {playstyle} Gaming Guilds to join based on your preferences",
                 CLAN_DISCOVERY_GAME_FILTER: "{count, number} Games",
                 CLAN_DISCOVERY_PRIMETIME_FILTER: "Prime Time",
-                CLAN_DISCOVERY_MEMBER_COUNT: "{count, number} Members",
+                CLAN_DISCOVERY_MEMBER_COUNT: "{count, plural, =1 {1 Member} other {{count} Members}}",
                 CLAN_DISCOVERY_PROFILE_TITLE: "Answer a few questions to join!",
                 CLAN_DISCOVERY_PROFILE_SUBTITLE: "The Gaming Guild leader will get back to you shortly after you submit.",
                 CLAN_DISCOVERY_PLAYSTYLE_TITLE: "What's your playstyle?",
@@ -55547,7 +55547,9 @@
                 CLAN_DISCOVERY_GAME_TITLE: "What games do you play?",
                 CLAN_DISCOVERY_GAME_SUBTITLE: "We'll recommend Gaming Guilds to join based on games you play.",
                 CLAN_DISCOVERY_GAMES_SEARCH_PLACEHOLDER: "Look for a Game...",
-                CLAN_DISCOVERY_GAMES_SELECTED: "Selected Games"
+                CLAN_DISCOVERY_GAMES_SELECTED: "Selected Games",
+                CLAN_DISCOVERY_TRAIT_OVERFLOW: "+ {count, number} more",
+                CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE: "Unknown"
             })
         },
         539590: function(e) {
@@ -86548,8 +86550,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285580", "285580"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285580")), t = 0), t
+                let t = parseInt((e = "285590", "285590"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285590")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -100794,6 +100796,9 @@
                 },
                 ClanBadgeKind: function() {
                     return i
+                },
+                getRandomClanBadgePreset: function() {
+                    return a
                 }
             }), (r = i || (i = {}))[r.SWORD = 0] = "SWORD", r[r.SWORD_1 = 1] = "SWORD_1", r[r.SWORD_2 = 2] = "SWORD_2", r[r.SWORD_3 = 3] = "SWORD_3", r[r.SWORD_4 = 4] = "SWORD_4", r[r.SWORD_5 = 5] = "SWORD_5", r[r.SWORD_6 = 6] = "SWORD_6", r[r.SWORD_7 = 7] = "SWORD_7", r[r.SWORD_8 = 8] = "SWORD_8", r[r.SWORD_9 = 9] = "SWORD_9", r[r.SWORD_10 = 10] = "SWORD_10", r[r.SWORD_11 = 11] = "SWORD_11", r[r.SWORD_12 = 12] = "SWORD_12", r[r.SWORD_13 = 13] = "SWORD_13", r[r.SWORD_14 = 14] = "SWORD_14", r[r.SWORD_15 = 15] = "SWORD_15", r[r.SWORD_16 = 16] = "SWORD_16", r[r.SWORD_17 = 17] = "SWORD_17", r[r.SWORD_18 = 18] = "SWORD_18", r[r.SWORD_19 = 19] = "SWORD_19", r[r.SWORD_20 = 20] = "SWORD_20";
             let s = [{
@@ -100835,7 +100840,11 @@
             }, {
                 primary: "#3f3f3f",
                 secondary: "#555555"
-            }]
+            }];
+
+            function a() {
+                return s[Math.floor(Math.random() * s.length)]
+            }
         },
         308083: function(e, t, n) {
             "use strict";
@@ -100874,7 +100883,7 @@
                     return L
                 },
                 HOISTED_SEARCH_APPLICATION_IDS_BY_PRIORITY: function() {
-                    return F
+                    return V
                 },
                 IDENTITY_TRAITS: function() {
                     return M
@@ -100901,10 +100910,10 @@
                     return I
                 },
                 PLACEHOLDER_CLAN_LANGUAGE: function() {
-                    return w
+                    return B
                 },
                 PLACEHOLDER_CLAN_LOCATION: function() {
-                    return G
+                    return w
                 },
                 PLAYSTYLE_GROUPS: function() {
                     return O
@@ -100919,7 +100928,7 @@
                     return D
                 },
                 ensureUserClanData: function() {
-                    return B
+                    return k
                 },
                 getPlaystyleOptions: function() {
                     return C
@@ -100927,8 +100936,11 @@
                 getPlaystyleTitle: function() {
                     return R
                 },
+                getRandomClanBrandPreset: function() {
+                    return G
+                },
                 toServerClanData: function() {
-                    return k
+                    return F
                 }
             }), n("47120");
             var i, r, s, a, o, l, u, d, _ = n("913527"),
@@ -101006,42 +101018,46 @@
                 U = new Set(["Anime", "Art and Craft", "Architecture", "Baseball", "Basketball", "Beauty", "Beer", "Board Games", "Books", "Cars", "Celebrities", "Coffee", "Coding", "Craft", "Design", "F1", "Fashion", "Fitness", "Food", "Football", "Healthcare", "Home Decor", "Houseplants", "K-Pop", "Knitting", "LEGO", "MARVEL", "Motorcycles", "Movies", "Music", "Nail Art", "Pets", "Photography", "Pok\xe9mon", "Programming", "Roman History", "Science", "Skiing", "Soccer", "Star Wars", "TCG", "TEA", "Tech", "Travel", "TV Shows", "Wine"]);
             (d = a || (a = {}))[d.PIXEL_RUSH = 0] = "PIXEL_RUSH", d[d.SCANLINES = 1] = "SCANLINES", d[d.TEXTURED = 2] = "TEXTURED", d[d.MAGIC = 3] = "MAGIC", d[d.CUSTOM = 4] = "CUSTOM";
             let b = [{
-                    name: "Boulder",
-                    primary: "#8c8d8d",
-                    secondary: "#d0d0d1"
-                }, {
-                    name: "Cascade",
-                    primary: "#43abe9",
-                    secondary: "#8ad3e8"
-                }, {
-                    name: "Thunder",
-                    primary: "#e8c02f",
-                    secondary: "#e8d387"
-                }, {
-                    name: "Soul",
-                    primary: "#e72282",
-                    secondary: "#e875ad"
-                }, {
-                    name: "Marsh",
-                    primary: "#e86e1d",
-                    secondary: "#e89055"
-                }, {
-                    name: "Volcano",
-                    primary: "#e81d1e",
-                    secondary: "#e86868"
-                }, {
-                    name: "Earth",
-                    primary: "#406601",
-                    secondary: "#d3e65e"
-                }, {
-                    name: "Zephyr",
-                    primary: "#4892d5",
-                    secondary: "#78b6f0"
-                }],
-                G = "United States",
-                w = "English";
+                name: "Boulder",
+                primary: "#8c8d8d",
+                secondary: "#d0d0d1"
+            }, {
+                name: "Cascade",
+                primary: "#43abe9",
+                secondary: "#8ad3e8"
+            }, {
+                name: "Thunder",
+                primary: "#e8c02f",
+                secondary: "#e8d387"
+            }, {
+                name: "Soul",
+                primary: "#e72282",
+                secondary: "#e875ad"
+            }, {
+                name: "Marsh",
+                primary: "#e86e1d",
+                secondary: "#e89055"
+            }, {
+                name: "Volcano",
+                primary: "#e81d1e",
+                secondary: "#e86868"
+            }, {
+                name: "Earth",
+                primary: "#406601",
+                secondary: "#d3e65e"
+            }, {
+                name: "Zephyr",
+                primary: "#4892d5",
+                secondary: "#78b6f0"
+            }];
 
-            function B(e) {
+            function G() {
+                return b[Math.floor(Math.random() * b.length)]
+            }
+            let w = "United States",
+                B = "English";
+
+            function k(e) {
                 return null == e ? null : "identityGuildId" in e ? e : {
                     identityGuildId: e.identity_guild_id,
                     identityEnabled: e.identity_enabled,
@@ -101049,12 +101065,12 @@
                 }
             }
 
-            function k(e) {
+            function F(e) {
                 return {
                     tag: e.tag
                 }
             }
-            let F = new Map(["432980957394370572", "363445589247131668", "356869127241072640", "700136079562375258", "356875570916753438", "1158877933042143272", "1197827812623650866", "356876176465199104", "1167674267748540516", "542075586886107149", "356875221078245376", "1149118246826561609", "356877880938070016", "356875988589740042", "762434991303950386", "356873622985506820", "356876590342340608", "1205090671527071784", "1182713227491147776", "631914894446297148", "1137125502985961543", "357607478105604096", "359509007423242240", "1121201675240210523", "643897785271189524", "742897755160313986", "356888738724446208", "1199745463918788740", "1116835216464543946", "406637848297472017", "356888961353908224", "905961880789590076", "367827983903490050", "356944273133928458", "356942674672091136", "946609449680908348", "356875762940379136", "615752773690064908", "357607133254254632", "356943499456937984", "477175586805252107", "787443973538971748", "359508713658253318", "356877880938070016", "422772752647323649", "356954277803065354", "359509387670192128", "428055627030331402", "363447565905166336", "372438022647578634", "614380482620293151", "506950362461110273", "356879032584896512", "1161772875901051042", "535371564850479134", "363413743335374859", "385538724592746496", "426526722322726912", "1174041358995042375", "1124351876033425529", "477152881196269569", "1113966530531704943", "425778010222886912", "356875890958925834", "1124358970618953818", "356888577310851072", "398632010442211348", "1124349969906815007", "770314100885422095", "1080277149623271444", "428054228511227914", "358420454764969994", "358421669603311616", "363430548028522496", "1129504162200166401", "1200228630245159032", "356889262362329098", "356887282982191114", "363409643973771264", "1164697075582238730", "940810636273795162", "982316905262120990", "359510095811444736", "363411421553360896", "359509332490059776", "1162076274622222346", "1162085521816813721", "359507724196773888", "359801269008859136", "569253958967885828", "457301824110723113", "1140238527980916757", "1124353632758939688", "542075586886107149", "512699108809637890", "653432003798106122"].map((e, t, n) => [e, n.length - t]))
+            let V = new Map(["432980957394370572", "363445589247131668", "356869127241072640", "700136079562375258", "356875570916753438", "1158877933042143272", "1197827812623650866", "356876176465199104", "1167674267748540516", "542075586886107149", "356875221078245376", "1149118246826561609", "356877880938070016", "356875988589740042", "762434991303950386", "356873622985506820", "356876590342340608", "1205090671527071784", "1182713227491147776", "631914894446297148", "1137125502985961543", "357607478105604096", "359509007423242240", "1121201675240210523", "643897785271189524", "742897755160313986", "356888738724446208", "1199745463918788740", "1116835216464543946", "406637848297472017", "356888961353908224", "905961880789590076", "367827983903490050", "356944273133928458", "356942674672091136", "946609449680908348", "356875762940379136", "615752773690064908", "357607133254254632", "356943499456937984", "477175586805252107", "787443973538971748", "359508713658253318", "356877880938070016", "422772752647323649", "356954277803065354", "359509387670192128", "428055627030331402", "363447565905166336", "372438022647578634", "614380482620293151", "506950362461110273", "356879032584896512", "1161772875901051042", "535371564850479134", "363413743335374859", "385538724592746496", "426526722322726912", "1174041358995042375", "1124351876033425529", "477152881196269569", "1113966530531704943", "425778010222886912", "356875890958925834", "1124358970618953818", "356888577310851072", "398632010442211348", "1124349969906815007", "770314100885422095", "1080277149623271444", "428054228511227914", "358420454764969994", "358421669603311616", "363430548028522496", "1129504162200166401", "1200228630245159032", "356889262362329098", "356887282982191114", "363409643973771264", "1164697075582238730", "940810636273795162", "982316905262120990", "359510095811444736", "363411421553360896", "359509332490059776", "1162076274622222346", "1162085521816813721", "359507724196773888", "359801269008859136", "569253958967885828", "457301824110723113", "1140238527980916757", "1124353632758939688", "542075586886107149", "512699108809637890", "653432003798106122"].map((e, t, n) => [e, n.length - t]))
         },
         963202: function(e, t, n) {
             "use strict";
@@ -101570,45 +101586,69 @@
         },
         114487: function(e, t, n) {
             "use strict";
-            n.r(t);
+            n.r(t), n.d(t, {
+                ClanGuildIconSimple: function() {
+                    return _
+                }
+            });
             var i = n("735250"),
                 r = n("470079"),
                 s = n("120356"),
                 a = n.n(s),
                 o = n("806519"),
                 l = n("768581"),
-                u = n("566434");
+                u = n("624138"),
+                d = n("566434");
+
+            function _(e) {
+                let {
+                    guildName: t,
+                    guildIconURL: n,
+                    iconSize: r,
+                    className: s
+                } = e;
+                if (null == n) {
+                    let e = (0, u.getAcronym)(t);
+                    return (0, i.jsx)(o.default, {
+                        mask: o.default.Masks.SQUIRCLE,
+                        width: r,
+                        height: r,
+                        className: s,
+                        children: (0, i.jsx)("div", {
+                            className: a()(d.guildIconImage, d.acronym),
+                            children: e
+                        })
+                    })
+                }
+                return (0, i.jsx)(o.default, {
+                    mask: o.default.Masks.SQUIRCLE,
+                    width: r,
+                    height: r,
+                    className: s,
+                    children: (0, i.jsx)("img", {
+                        src: n,
+                        alt: t,
+                        className: d.guildIconImage
+                    })
+                })
+            }
             t.default = r.memo(function(e) {
                 var t;
                 let {
                     guild: n,
                     iconSize: r,
                     className: s
-                } = e, d = null !== (t = l.default.getGuildIconURL({
+                } = e, a = null !== (t = l.default.getGuildIconURL({
                     id: n.id,
                     icon: n.icon,
                     size: r,
                     canAnimate: !0
                 })) && void 0 !== t ? t : void 0;
-                return null == d ? (0, i.jsx)(o.default, {
-                    mask: o.default.Masks.SQUIRCLE,
-                    width: r,
-                    height: r,
-                    className: s,
-                    children: (0, i.jsx)("div", {
-                        className: a()(u.guildIconImage, u.acronym),
-                        children: n.acronym
-                    })
-                }) : (0, i.jsx)(o.default, {
-                    mask: o.default.Masks.SQUIRCLE,
-                    width: r,
-                    height: r,
-                    className: s,
-                    children: (0, i.jsx)("img", {
-                        src: d,
-                        alt: n.name,
-                        className: u.guildIconImage
-                    })
+                return (0, i.jsx)(_, {
+                    guildName: n.name,
+                    guildIconURL: a,
+                    iconSize: r,
+                    className: s
                 })
             })
         },
@@ -101760,7 +101800,7 @@
                     null != R && (e.stopPropagation(), e.preventDefault(), null == N || N(), (0, s.openModalLazy)(async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("99387"), n.e("80026"), n.e("60330"), n.e("18482")]).then(n.bind(n, "767593"));
+                        } = await Promise.all([n.e("99387"), n.e("80026"), n.e("60330"), n.e("27233")]).then(n.bind(n, "767593"));
                         return t => (0, i.jsx)(e, {
                             ...t,
                             clan: R
@@ -110671,8 +110711,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285580",
-                    versionHash: "7ba82726dd8a5f606a951dfb03a536677a350f9b"
+                    buildNumber: "285590",
+                    versionHash: "2471f0f41f9addeea47f5b70cde52ae059e66e90"
                 }
             }
             n.r(t), n.d(t, {
@@ -111223,16 +111263,16 @@
             "use strict";
             n.r(t), n.d(t, {
                 buildClanFromServer: function() {
-                    return o
-                },
-                getClanDiscoveryAffinity: function() {
-                    return d
-                },
-                isLoadedSearchResult: function() {
                     return l
                 },
-                isUnloadedSearchResult: function() {
+                getClanDiscoveryAffinity: function() {
+                    return _
+                },
+                isLoadedSearchResult: function() {
                     return u
+                },
+                isUnloadedSearchResult: function() {
+                    return d
                 }
             }), n("536091");
             var i = n("924801"),
@@ -111240,7 +111280,13 @@
                 s = n("116175"),
                 a = n("308083");
 
-            function o(e) {
+            function o(e, t) {
+                return void 0 === e || "" === e ? t : e
+            }
+
+            function l(e) {
+                let t = (0, s.getRandomClanBadgePreset)(),
+                    n = (0, a.getRandomClanBrandPreset)();
                 return {
                     id: e.id,
                     name: e.name,
@@ -111252,29 +111298,30 @@
                     traits: e.search_terms,
                     primetime: e.primetime,
                     tag: e.tag,
+                    banner: e.banner,
                     badge: {
-                        badgeKind: s.ClanBadgeKind.SWORD,
-                        primaryColor: "#FF69B4",
-                        secondaryColor: "#FF69B4"
+                        badgeKind: e.badge,
+                        primaryColor: o(e.badge_color_primary, t.primary),
+                        secondaryColor: o(e.badge_color_secondary, t.secondary)
                     },
                     branding: {
-                        primaryColor: "#FF69B4",
-                        secondaryColor: "#FF69B4"
+                        primaryColor: o(e.brand_color_primary, n.primary),
+                        secondaryColor: o(e.brand_color_secondary, n.secondary)
                     },
                     location: a.PLACEHOLDER_CLAN_LOCATION,
                     language: a.PLACEHOLDER_CLAN_LANGUAGE
                 }
             }
 
-            function l(e) {
+            function u(e) {
                 return "loaded" === e.status
             }
 
-            function u(e) {
+            function d(e) {
                 return "unloaded" === e.status
             }
 
-            function d(e, t) {
+            function _(e, t) {
                 let n = 0;
                 if (null != t.games && (n += 2 * t.games.filter(t => e.games.includes(t)).length), null != t.playstyle && (t.playstyle === e.playstyle ? n += 2 : a.PLAYSTYLE_GROUPS[e.playstyle] === a.PLAYSTYLE_GROUPS[t.playstyle] && (n += 1)), null != t.traits && (n += 2 * Array.from(t.traits).filter(t => e.traits.includes(t)).length), null != t.primetimes) {
                     let s = e.primetime.map(e => (0, r.getRRule)(e).between(new Date, new Date(Date.now() + 6048e5))).flat();
@@ -163857,8 +163904,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713389602977",
-                                    build_number: "285580"
+                                    built_at: "1713390432510",
+                                    build_number: "285590"
                                 }
                             },
                             retries: 1
@@ -241059,7 +241106,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "7ba82726dd8a5f606a951dfb03a536677a350f9b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "2471f0f41f9addeea47f5b70cde52ae059e66e90"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269518,7 +269565,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285580"
+                                build_number: "285590"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276703,7 +276750,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285580", "285580"), 10);
+                let s = parseInt((n = "285590", "285590"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -303851,4 +303898,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.3c62a187a16d210c9688.js.map
+//# sourceMappingURL=73050.56ff1fda9e3fe5dd700d.js.map

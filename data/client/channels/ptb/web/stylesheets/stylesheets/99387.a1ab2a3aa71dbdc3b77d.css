@@ -56413,19 +56413,37 @@ html .progress__00e29 {
     margin-top: 16px
 }
 
+.container_fb01d4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
 .clickableCard__1c1e9 {
     cursor: pointer
 }
 
 .card_d01b6d {
+    min-width: 240px;
+    max-width: 360px;
+    height: 400px;
     border-radius: 8px;
     border: 1px solid var(--border-subtle);
     overflow: hidden;
-    background: var(--bg-base-primary)
+    background: var(--bg-base-primary);
+    display: flex;
+    flex-direction: column
 }
 
 .header__2b527 {
     position: relative
+}
+
+.clanIcon_d70524 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: -48px
 }
 
 .clanBadge__4c045 {
@@ -56453,12 +56471,28 @@ html .progress__00e29 {
     padding: 12px;
     display: flex;
     flex-direction: column;
-    gap: 8px
+    gap: 8px;
+    flex: 1
+}
+
+.cardContentTitleSection_dd3bf1 {
+    flex: 0 0 auto
+}
+
+.cardContentDescriptionSection__30f21 {
+    flex: 1 1 auto
 }
 
 .cardNameAndTagWrapper_d87ceb {
+    position: relative;
+    width: 100%;
+    margin-bottom: 8px
+}
+
+.clanTagChipletWrapper__734a9 {
     display: flex;
-    justify-content: space-between
+    justify-content: flex-end;
+    width: 100%
 }
 
 .clanTagChiplet__7f357 {
@@ -56495,6 +56529,8 @@ html .progress__00e29 {
 }
 
 .traitsContainer__23f4b {
+    max-height: 64px;
+    flex: 0 0 auto;
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
@@ -56509,7 +56545,8 @@ html .progress__00e29 {
     gap: 4px;
     border: 1px solid var(--border-strong);
     background: var(--bg-base-secondary);
-    border-radius: 16px
+    border-radius: 16px;
+    max-width: 200px
 }
 
 .cardFooter_ed5f2e {
@@ -57106,7 +57143,9 @@ html .progress__00e29 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 16px;
     -moz-column-gap: 16px;
-    column-gap: 16px
+    column-gap: 16px;
+    grid-row-gap: 8px;
+    row-gap: 8px
 }
 
 .content__7833e {
@@ -63104,7 +63143,7 @@ html .progress__00e29 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 16px;
     gap: 4px
 }
 
@@ -134380,4 +134419,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.b4531e10629b49d78999.css.map*/
+/*# sourceMappingURL=99387.a1ab2a3aa71dbdc3b77d.css.map*/
