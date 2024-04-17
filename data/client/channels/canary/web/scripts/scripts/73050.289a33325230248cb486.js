@@ -36654,7 +36654,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285662", ", Version Hash: ").concat("df23fbec734b1cefc8b4329bb39f906cb62ada79")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285665", ", Version Hash: ").concat("5f0579f4bf5886e8e0878b9375b90eadbdbe1fb8")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -79394,7 +79394,7 @@
             function a(e) {
                 return (0, i.useStateFromStores)([r.default, s.default], () => {
                     var t, n, i, a, o;
-                    return null !== (o = null !== (a = null === (t = r.default.getApplication(e)) || void 0 === t ? void 0 : t.storefront_available) && void 0 !== a ? a : null === (i = s.default.getUserProfile(e)) || void 0 === i ? void 0 : null === (n = i.application) || void 0 === n ? void 0 : n.store_available) && void 0 !== o && o
+                    return null !== (o = null !== (a = null === (t = r.default.getApplication(e)) || void 0 === t ? void 0 : t.storefront_available) && void 0 !== a ? a : null === (i = s.default.getUserProfile(e)) || void 0 === i ? void 0 : null === (n = i.application) || void 0 === n ? void 0 : n.storefront_available) && void 0 !== o && o
                 }, [e])
             }
         },
@@ -86551,8 +86551,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285662", "285662"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285662")), t = 0), t
+                let t = parseInt((e = "285665", "285665"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285665")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110712,8 +110712,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285662",
-                    versionHash: "df23fbec734b1cefc8b4329bb39f906cb62ada79"
+                    buildNumber: "285665",
+                    versionHash: "5f0579f4bf5886e8e0878b9375b90eadbdbe1fb8"
                 }
             }
             n.r(t), n.d(t, {
@@ -163905,8 +163905,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713395328880",
-                                    build_number: "285662"
+                                    built_at: "1713396102508",
+                                    build_number: "285665"
                                 }
                             },
                             retries: 1
@@ -201972,7 +201972,7 @@
                             integrationTypesConfig: v.integration_types_config,
                             flags: v.flags,
                             popularApplicationCommandIds: v.popular_application_command_ids,
-                            store_available: v.store_available
+                            storefront_available: v.storefront_available
                         } : null,
                         badges: e.badges
                     }, null != e.guild_member_profile) {
@@ -215274,7 +215274,7 @@
                 }
                 constructor(e) {
                     var t, n, r, s;
-                    super(), u(this, "id", void 0), u(this, "name", void 0), u(this, "icon", void 0), u(this, "splash", void 0), u(this, "overlay", void 0), u(this, "overlayWarn", void 0), u(this, "overlayCompatibilityHook", void 0), u(this, "overlayMethods", void 0), u(this, "hook", void 0), u(this, "aliases", void 0), u(this, "publishers", void 0), u(this, "developers", void 0), u(this, "primarySkuId", void 0), u(this, "storeListingSkuId", void 0), u(this, "thirdPartySkus", void 0), u(this, "guildId", void 0), u(this, "guild", void 0), u(this, "executables", void 0), u(this, "hashes", void 0), u(this, "description", void 0), u(this, "eulaId", void 0), u(this, "slug", void 0), u(this, "coverImage", void 0), u(this, "bot", void 0), u(this, "flags", void 0), u(this, "maxParticipants", void 0), u(this, "tags", void 0), u(this, "embeddedActivityConfig", void 0), u(this, "type", void 0), u(this, "team", void 0), u(this, "roleConnectionsVerificationUrl", void 0), u(this, "integrationTypesConfig", void 0), u(this, "isMonetized", void 0), u(this, "storefront_available", void 0), this.id = e.id, this.name = e.name, this.icon = e.icon || null, this.splash = e.splash || null, this.overlay = e.overlay || !1, this.overlayWarn = e.overlayWarn || !1, this.overlayCompatibilityHook = e.overlayCompatibilityHook || !1, this.overlayMethods = null !== (t = e.overlayMethods) && void 0 !== t ? t : i.ApplicationOverlayMethodFlags.DEFAULT, this.hook = null === (n = e.hook) || void 0 === n || n, this.aliases = e.aliases || [], this.publishers = e.publishers || [], this.developers = e.developers || [], this.primarySkuId = e.primarySkuId, this.storeListingSkuId = e.storeListingSkuId, this.guildId = e.guildId || null, this.guild = e.guild || null, this.thirdPartySkus = e.thirdPartySkus || [], this.executables = (e.executables || []).map(_), this.hashes = e.hashes || [], this.description = e.description || null, this.eulaId = e.eulaId || null, this.slug = e.slug || null, this.bot = e.bot || null, this.coverImage = e.coverImage || null, this.flags = null !== (r = e.flags) && void 0 !== r ? r : 0, this.tags = null !== (s = e.tags) && void 0 !== s ? s : [], this.maxParticipants = e.maxParticipants, this.embeddedActivityConfig = e.embedded_activity_config, this.type = e.type, this.team = e.team, this.roleConnectionsVerificationUrl = e.roleConnectionsVerificationUrl, this.integrationTypesConfig = e.integrationTypesConfig, this.isMonetized = e.is_monetized, this.storefront_available = e.store_available
+                    super(), u(this, "id", void 0), u(this, "name", void 0), u(this, "icon", void 0), u(this, "splash", void 0), u(this, "overlay", void 0), u(this, "overlayWarn", void 0), u(this, "overlayCompatibilityHook", void 0), u(this, "overlayMethods", void 0), u(this, "hook", void 0), u(this, "aliases", void 0), u(this, "publishers", void 0), u(this, "developers", void 0), u(this, "primarySkuId", void 0), u(this, "storeListingSkuId", void 0), u(this, "thirdPartySkus", void 0), u(this, "guildId", void 0), u(this, "guild", void 0), u(this, "executables", void 0), u(this, "hashes", void 0), u(this, "description", void 0), u(this, "eulaId", void 0), u(this, "slug", void 0), u(this, "coverImage", void 0), u(this, "bot", void 0), u(this, "flags", void 0), u(this, "maxParticipants", void 0), u(this, "tags", void 0), u(this, "embeddedActivityConfig", void 0), u(this, "type", void 0), u(this, "team", void 0), u(this, "roleConnectionsVerificationUrl", void 0), u(this, "integrationTypesConfig", void 0), u(this, "isMonetized", void 0), u(this, "storefront_available", void 0), this.id = e.id, this.name = e.name, this.icon = e.icon || null, this.splash = e.splash || null, this.overlay = e.overlay || !1, this.overlayWarn = e.overlayWarn || !1, this.overlayCompatibilityHook = e.overlayCompatibilityHook || !1, this.overlayMethods = null !== (t = e.overlayMethods) && void 0 !== t ? t : i.ApplicationOverlayMethodFlags.DEFAULT, this.hook = null === (n = e.hook) || void 0 === n || n, this.aliases = e.aliases || [], this.publishers = e.publishers || [], this.developers = e.developers || [], this.primarySkuId = e.primarySkuId, this.storeListingSkuId = e.storeListingSkuId, this.guildId = e.guildId || null, this.guild = e.guild || null, this.thirdPartySkus = e.thirdPartySkus || [], this.executables = (e.executables || []).map(_), this.hashes = e.hashes || [], this.description = e.description || null, this.eulaId = e.eulaId || null, this.slug = e.slug || null, this.bot = e.bot || null, this.coverImage = e.coverImage || null, this.flags = null !== (r = e.flags) && void 0 !== r ? r : 0, this.tags = null !== (s = e.tags) && void 0 !== s ? s : [], this.maxParticipants = e.maxParticipants, this.embeddedActivityConfig = e.embedded_activity_config, this.type = e.type, this.team = e.team, this.roleConnectionsVerificationUrl = e.roleConnectionsVerificationUrl, this.integrationTypesConfig = e.integrationTypesConfig, this.isMonetized = e.is_monetized, this.storefront_available = e.storefront_available
                 }
             }
         },
@@ -241107,7 +241107,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "df23fbec734b1cefc8b4329bb39f906cb62ada79"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5f0579f4bf5886e8e0878b9375b90eadbdbe1fb8"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269566,7 +269566,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285662"
+                                build_number: "285665"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276751,7 +276751,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285662", "285662"), 10);
+                let s = parseInt((n = "285665", "285665"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -303899,4 +303899,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.836f896a1b32a66694cb.js.map
+//# sourceMappingURL=73050.289a33325230248cb486.js.map
