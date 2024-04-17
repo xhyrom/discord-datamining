@@ -27640,7 +27640,7 @@ html.disable-forced-colors * {
     width: calc(100vw - 60px);
     max-width: 621px;
     box-sizing: border-box;
-    padding-top: 16px;
+    padding-top: 20px;
     position: relative
 }
 
@@ -27668,7 +27668,8 @@ html.disable-forced-colors * {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    margin: 0 16px
+    margin: 0 20px;
+    background-color: var(--background-tertiary)
 }
 
 .headerBackground_e490a7 {
@@ -27685,6 +27686,10 @@ html.disable-forced-colors * {
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0)
+}
+
+.theme-light .headerBackground_e490a7 {
+    --custom-overlay-color: hsl(var(--white-500-hsl) / 0.3)
 }
 
 .headerTop__294d4 {
@@ -27724,7 +27729,7 @@ html.disable-forced-colors * {
 }
 
 .scrollContent_c526a7 {
-    padding: 0 16px 32px
+    padding: 0 20px 32px
 }
 
 .details_bd2b5f {
@@ -27750,7 +27755,7 @@ html.disable-forced-colors * {
 }
 
 .wrapper_f38d07 {
-    background-color: var(--background-secondary);
+    background-color: var(--background-modifier-hover);
     border-radius: 8px;
     overflow: hidden;
     width: 320px
@@ -28163,4 +28168,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.1d2c28e898e0ec1fd042.css.map*/
+/*# sourceMappingURL=49237.505758caa68857814f2a.css.map*/
