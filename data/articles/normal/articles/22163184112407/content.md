@@ -65,7 +65,8 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22214930043415" width="391" height="427"></p>
 <h1 id="h_01HSED5BPEDH4YYFVVCXQ2NKZ1">Frequently Asked Questions</h1>
 <p><strong>Q: Can polls be started by any user?</strong></p>
-<p>A: Any user with permissions to <strong>View Channe</strong>l can vote in a channel. Any user with <strong>Send Messages</strong> permissions will be able to create polls in a text channel.</p>
+<p>A:  The server admin can set permissions for polls, both at the server and channel level. Head to <strong>Server Settings</strong> to toggle <strong>Create Polls</strong> “OFF”. This perm will be defaulted to “ON”.</p>
+<p class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/22882744740119" width="434" height="70"></strong></p>
 <p><strong>Q: Where can I start a poll? </strong></p>
 <p>A: A poll can take place in a text channel, direct message, group message, or announcement channel.  </p>
 <p><strong>Q: How can I delete a poll?</strong></p>
