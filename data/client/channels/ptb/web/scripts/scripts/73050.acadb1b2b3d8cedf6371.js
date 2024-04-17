@@ -36640,7 +36640,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285278", ", Version Hash: ").concat("9231fc9ad6824dbcdf2afcde0d2ff19c61f7864a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285292", ", Version Hash: ").concat("3e628da8e3ca84c0994b9ab1d2891c6353f7679b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86494,8 +86494,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285278", "285278"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285278")), t = 0), t
+                let t = parseInt((e = "285292", "285292"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285292")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110394,8 +110394,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285278",
-                    versionHash: "9231fc9ad6824dbcdf2afcde0d2ff19c61f7864a"
+                    buildNumber: "285292",
+                    versionHash: "3e628da8e3ca84c0994b9ab1d2891c6353f7679b"
                 }
             }
             n.r(t), n.d(t, {
@@ -163513,8 +163513,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713322090062",
-                                    build_number: "285278"
+                                    built_at: "1713331135339",
+                                    build_number: "285292"
                                 }
                             },
                             retries: 1
@@ -179782,32 +179782,34 @@
             n.r(t);
             var s, a, o, l, u = n("392711"),
                 d = n("442837"),
-                _ = n("570140");
-            let c = [],
-                E = !1;
-            let I = c,
-                T = {},
-                f = null;
-            let S = 0,
-                h = e => {
-                    I = (0, u.cloneDeep)(e);
+                _ = n("570140"),
+                c = n("358085"),
+                E = n("729436");
+            let I = [],
+                T = !1;
+            let f = I,
+                S = {},
+                h = null;
+            let A = 0,
+                m = e => {
+                    f = (0, u.cloneDeep)(e);
                     let t = {};
-                    I.forEach(e => {
-                        t[e.id] = e
-                    }), T = t
+                    f.forEach(e => {
+                        t[e.id] = (0, c.isAndroid)() ? (0, E.applyPatches)(e) : e
+                    }), S = t
                 };
-            class A extends(l = d.default.Store) {
+            class N extends(l = d.default.Store) {
                 get isFetching() {
-                    return E
+                    return T
                 }
                 get fetchError() {
                     return i
                 }
                 get profileEffects() {
-                    return I
+                    return f
                 }
                 get tryItOutId() {
-                    return f
+                    return h
                 }
                 canFetch() {
                     return null == r || Date.now() >= r
@@ -179816,38 +179818,38 @@
                     return null != r && null == i
                 }
                 getProfileEffectById(e) {
-                    return null != e ? T[e] : void 0
+                    return null != e ? S[e] : void 0
                 }
             }
-            o = "ProfileEffectStore", (a = "displayName") in(s = A) ? Object.defineProperty(s, a, {
+            o = "ProfileEffectStore", (a = "displayName") in(s = N) ? Object.defineProperty(s, a, {
                 value: o,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : s[a] = o, t.default = new A(_.default, {
+            }) : s[a] = o, t.default = new N(_.default, {
                 USER_PROFILE_EFFECTS_FETCH: () => {
-                    E = !0
+                    T = !0
                 },
                 USER_PROFILE_EFFECTS_FETCH_SUCCESS: e => {
                     let {
                         profileEffects: t
                     } = e;
-                    E = !1, i = void 0, r = Date.now() + 3e5, S = 0, h(0 === t.length ? c : t)
+                    T = !1, i = void 0, r = Date.now() + 3e5, A = 0, m(0 === t.length ? I : t)
                 },
                 USER_PROFILE_EFFECTS_FETCH_FAILURE: e => {
                     let {
                         error: t
                     } = e;
-                    E = !1, i = t, r = Date.now() + Math.min(6e4 * 2 ** S, 36e5), ++S, h(c)
+                    T = !1, i = t, r = Date.now() + Math.min(6e4 * 2 ** A, 36e5), ++A, m(I)
                 },
                 PROFILE_EFFECTS_SET_TRY_IT_OUT: e => {
                     let {
                         id: t
                     } = e;
-                    f = t
+                    h = t
                 },
                 LOGOUT: e => {
-                    E = !1, h(c), f = null
+                    T = !1, m(I), h = null
                 }
             })
         },
@@ -179974,14 +179976,24 @@
         729436: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                applyPatches: function() {
+                    return r
+                },
                 sortEffectLayers: function() {
                     return i
                 }
             });
             let i = e => e.sort((e, t) => {
-                var n, i;
-                return (null !== (n = e.zIndex) && void 0 !== n ? n : 0) - (null !== (i = t.zIndex) && void 0 !== i ? i : 0)
-            })
+                    var n, i;
+                    return (null !== (n = e.zIndex) && void 0 !== n ? n : 0) - (null !== (i = t.zIndex) && void 0 !== i ? i : 0)
+                }),
+                r = e => {
+                    if ("1228233381897179137" === e.id || "1228234629429985300" === e.id) {
+                        var t;
+                        (null === (t = e.config.effects) || void 0 === t ? void 0 : t.length) >= 2 && (e.config.effects[1].start = 2832)
+                    }
+                    return e
+                }
         },
         680295: function(e, t, n) {
             "use strict";
@@ -240479,7 +240491,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9231fc9ad6824dbcdf2afcde0d2ff19c61f7864a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3e628da8e3ca84c0994b9ab1d2891c6353f7679b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268895,7 +268907,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285278"
+                                build_number: "285292"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276080,7 +276092,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285278", "285278"), 10);
+                let s = parseInt((n = "285292", "285292"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -303096,4 +303108,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.be749147746672fbab24.js.map
+//# sourceMappingURL=73050.acadb1b2b3d8cedf6371.js.map
