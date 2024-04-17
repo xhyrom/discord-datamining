@@ -60845,6 +60845,17 @@ html .progress__00e29 {
     padding: 0 60px
 }
 
+.footerAlphaMsg_e3ec93 {
+    display: flex;
+    background-color: var(--background-secondary);
+    padding: 8px 16px;
+    border-radius: 8px
+}
+
+.footerAlphaTag__21ac5 {
+    margin-right: 8px
+}
+
 .progressContainer__378bd {
     display: flex;
     gap: 4px;
@@ -133761,4 +133772,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.e1bcbb8dc20829deed06.css.map*/
+/*# sourceMappingURL=99387.017e559b32735005f1c9.css.map*/
