@@ -15356,6 +15356,12 @@
                 geoRestrictedBadge: "geoRestrictedBadge__8f321"
             }
         },
+        109595: function(e) {
+            "use strict";
+            e.exports = {
+                icon: "icon__05aab"
+            }
+        },
         814886: function(e) {
             "use strict";
             e.exports = {
