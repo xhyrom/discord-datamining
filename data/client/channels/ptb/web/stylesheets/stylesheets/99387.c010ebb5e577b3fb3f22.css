@@ -56490,10 +56490,12 @@ html .progress__00e29 {
 }
 
 .title__20916 {
+    max-width: 480px;
     margin-bottom: 12px
 }
 
 .subtitle__62596 {
+    max-width: 480px;
     margin-bottom: 40px
 }
 
@@ -56698,8 +56700,13 @@ html .progress__00e29 {
 }
 
 .input_e60656 {
-    border-radius: 8px;
+    border-radius: 4px;
     border: 1px solid var(--border-subtle)
+}
+
+.input_e60656:focus-within,
+.input_e60656:hover {
+    border: 1px solid var(--border-strong)
 }
 
 .wildcardInput_c66fdf {
@@ -60895,8 +60902,7 @@ html .progress__00e29 {
     z-index: 1;
     position: absolute;
     top: 24px;
-    left: 24px;
-    border-radius: 8px
+    left: 24px
 }
 
 .mainContent__23e7a {
@@ -60954,10 +60960,6 @@ html .progress__00e29 {
     flex: 1;
     height: 4px;
     background-color: transparent
-}
-
-.currentStep_f2459e {
-    filter: brightness(160%)
 }
 
 .progressStepFill__47c59 {
@@ -61139,8 +61141,7 @@ html .progress__00e29 {
 .previousButton_b43130 {
     position: absolute;
     left: 24px;
-    bottom: 24px;
-    border-radius: 8px
+    bottom: 24px
 }
 
 .finishButton__8590c {
@@ -61151,8 +61152,7 @@ html .progress__00e29 {
     flex-direction: row;
     gap: 8px;
     align-items: center;
-    max-width: 25%;
-    border-radius: 8px
+    max-width: 25%
 }
 
 .fadeIn__0663f {
@@ -64918,12 +64918,13 @@ input::-webkit-inner-spin-button {
     text-align: center;
     border-radius: 8px;
     background-color: var(--bg-surface-raised);
-    border: solid 1px var(--border-strong);
+    border: 1px solid var(--border-subtle);
     padding: 12px 16px
 }
 
-.tagInputWrapper__7b1bc:focus-within {
-    border: 1px solid var(--brand-experiment)
+.tagInputWrapper__7b1bc:focus-within,
+.tagInputWrapper__7b1bc:hover {
+    border: 1px solid var(--border-strong)
 }
 
 .tagInput__82542 {
@@ -133899,4 +133900,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.9f7acc96e3cb36f8d4a8.css.map*/
+/*# sourceMappingURL=99387.c010ebb5e577b3fb3f22.css.map*/
