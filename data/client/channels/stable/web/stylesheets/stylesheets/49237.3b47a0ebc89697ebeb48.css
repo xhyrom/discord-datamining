@@ -27749,6 +27749,44 @@ html.disable-forced-colors * {
     white-space: break-spaces
 }
 
+.wrapper_b9ff7a {
+    padding: 8px;
+    min-width: 286px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: var(--radius-sm);
+    background-color: var(--background-modifier-hover);
+    cursor: pointer;
+    color: var(--text-primary);
+    text-align: left;
+    gap: 8px;
+    border: 1px solid transparent;
+    box-sizing: border-box
+}
+
+.wrapper_b9ff7a:disabled {
+    cursor: not-allowed;
+    color: var(--text-muted)
+}
+
+.selected_b1d8b3 {
+    background-color: var(--brand-500);
+    box-shadow: var(--shadow-high);
+    border-color: rgba(255, 255, 255, .15);
+    color: var(--white-500)
+}
+
+.icon_bc4f21 {
+    width: 36px;
+    height: 36px;
+    background-color: var(--background-message-hover);
+    border-radius: var(--radius-round);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
 .wrapper_f38d07 {
     background-color: var(--background-secondary);
     border-radius: 8px;
@@ -28163,4 +28201,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.1d2c28e898e0ec1fd042.css.map*/
+/*# sourceMappingURL=49237.3b47a0ebc89697ebeb48.css.map*/
