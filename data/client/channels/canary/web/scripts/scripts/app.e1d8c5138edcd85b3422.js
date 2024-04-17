@@ -5061,6 +5061,8 @@
                 finishButton: "finishButton__8590c",
                 flex: "flex__0016b",
                 footer: "footer_d63e9e",
+                footerAlphaMsg: "footerAlphaMsg_e3ec93",
+                footerAlphaTag: "footerAlphaTag__21ac5",
                 lastParagraph: "lastParagraph__7a09c",
                 mainContent: "mainContent__23e7a",
                 modal: "modal_f49d0b",
