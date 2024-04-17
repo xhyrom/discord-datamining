@@ -36654,7 +36654,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285495", ", Version Hash: ").concat("13a6f986ad4e23dc6260970156c3df9537b25e7d")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285503", ", Version Hash: ").concat("8e49d474436e22cfef27108f5520f151c9f0c35f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -47665,7 +47665,7 @@
                 MOBILE_CUSTOM_GIFT_SUCCESS_BODY: "Delivered with ninja-like efficiency (and zero paper waste).",
                 PREMIUM_ROADBLOCK_UPSELL_SECONDARY_CTA: "View all Nitro perks",
                 PREMIUM_CUSTOM_NOTIFICATION_SOUND: "Notification Sound",
-                PREMIUM_CUSTOM_NOTIFICATION_SOUND_NOTIFICATION_SETTINGS_DESCRIPTION: "Set a unique sound for **desktop notifications** from {guildName}. Now available in Beta with Nitro.",
+                PREMIUM_CUSTOM_NOTIFICATION_SOUND_NOTIFICATION_SETTINGS_DESCRIPTION_V2: "Set a unique sound for **desktop notifications** from $[](guildName). Now available in Beta with Nitro.",
                 PREMIUM_CUSTOM_NOTIFICATION_SOUND_NOTIFICATION_SETTINGS_LABEL: "Choose a custom notification sound",
                 PREMIUM_CUSTOM_NOTIFICATION_SOUND_NOTIFICATION_SETTINGS_UPSELL: "Set custom notification sounds with Nitro.",
                 PREMIUM_CUSTOM_NOTIFICATION_SOUND_NOTIFICATION_SETTINGS_WARNING: "You may not hear notification sounds because you’ve muted this server!",
@@ -86540,8 +86540,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285495", "285495"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285495")), t = 0), t
+                let t = parseInt((e = "285503", "285503"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285503")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110545,8 +110545,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285495",
-                    versionHash: "13a6f986ad4e23dc6260970156c3df9537b25e7d"
+                    buildNumber: "285503",
+                    versionHash: "8e49d474436e22cfef27108f5520f151c9f0c35f"
                 }
             }
             n.r(t), n.d(t, {
@@ -163667,8 +163667,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713382984773",
-                                    build_number: "285495"
+                                    built_at: "1713383885009",
+                                    build_number: "285503"
                                 }
                             },
                             retries: 1
@@ -240868,7 +240868,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "13a6f986ad4e23dc6260970156c3df9537b25e7d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8e49d474436e22cfef27108f5520f151c9f0c35f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269335,7 +269335,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285495"
+                                build_number: "285503"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276520,7 +276520,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285495", "285495"), 10);
+                let s = parseInt((n = "285503", "285503"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -303668,4 +303668,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.56abdb1df712c2dbb35c.js.map
+//# sourceMappingURL=73050.f13bc4d01361f6844614.js.map
