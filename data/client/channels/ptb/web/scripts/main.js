@@ -36654,7 +36654,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285503", ", Version Hash: ").concat("8e49d474436e22cfef27108f5520f151c9f0c35f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285511", ", Version Hash: ").concat("8c2a31fd6477c18a13e3cbdf091512bbf2d60cde")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -51225,6 +51225,7 @@
                 GUILD_AUTOMOD_POST_TO_CHANNEL_REASON_NICKNAME: "Nickname",
                 GUILD_AUTOMOD_POST_TO_CHANNEL_REASON_USERNAME: "Username",
                 GUILD_AUTOMOD_POST_TO_CHANNEL_REASON_GLOBAL_NAME: "Display Name",
+                GUILD_AUTOMOD_POST_TO_CHANNEL_REASON_CLAN_TAG: "Tag",
                 GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_ACTION_BLOCKED: "has blocked a message",
                 GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_ACTION_FLAGGED: "has flagged a message",
                 GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_ACTION_BLOCKED_MOBILE: "blocked a message",
@@ -51692,6 +51693,7 @@
                 GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_BLOCK_GUEST_ON_GUILD_JOIN: "blocked a guest at server join",
                 GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_QUARANTINE_USER_MESSAGE_SEND: "quarantined a member at message send",
                 GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_QUARANTINE_USERNAME_UPDATE: "quarantined a member at username update",
+                GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_QUARANTINE_CLAN_TAG_UPDATE: "quarantined a member at tag adoption",
                 GUILD_AUTOMOD_PROFILE_ERROR_QUARANTINE_USERNAME: "Your nickname contains words flagged by this community.",
                 GUILD_AUTOMOD_PROFILE_ERROR_QUARANTINE_USERNAME_IN_GUILD: "Your username contains words flagged in {guildName}.",
                 GUILD_AUTOMOD_PROFILE_ERROR_QUARANTINE_BIO: "Your bio contains words flagged by this community.",
@@ -86540,8 +86542,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285503", "285503"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285503")), t = 0), t
+                let t = parseInt((e = "285511", "285511"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285511")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110545,8 +110547,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285503",
-                    versionHash: "8e49d474436e22cfef27108f5520f151c9f0c35f"
+                    buildNumber: "285511",
+                    versionHash: "8c2a31fd6477c18a13e3cbdf091512bbf2d60cde"
                 }
             }
             n.r(t), n.d(t, {
@@ -133022,7 +133024,7 @@
                 r = n("271383"),
                 s = n("630388"),
                 a = n("372897");
-            let o = [a.GuildMemberFlags.AUTOMOD_QUARANTINED_BIO, a.GuildMemberFlags.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME];
+            let o = [a.GuildMemberFlags.AUTOMOD_QUARANTINED_BIO, a.GuildMemberFlags.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME, a.GuildMemberFlags.AUTOMOD_QUARANTINED_CLAN_TAG];
 
             function l(e) {
                 return null == e ? new Set : new Set(o.reduce((t, n) => ((0, s.hasFlag)(null != e ? e : 0, n) && t.push(n), t), []))
@@ -137813,7 +137815,7 @@
                 GuildMemberFlags: function() {
                     return i
                 }
-            }), (r = i || (i = {}))[r.DID_REJOIN = 1] = "DID_REJOIN", r[r.COMPLETED_ONBOARDING = 2] = "COMPLETED_ONBOARDING", r[r.BYPASSES_VERIFICATION = 4] = "BYPASSES_VERIFICATION", r[r.STARTED_ONBOARDING = 8] = "STARTED_ONBOARDING", r[r.IS_GUEST = 16] = "IS_GUEST", r[r.STARTED_HOME_ACTIONS = 32] = "STARTED_HOME_ACTIONS", r[r.COMPLETED_HOME_ACTIONS = 64] = "COMPLETED_HOME_ACTIONS", r[r.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME = 128] = "AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME", r[r.AUTOMOD_QUARANTINED_BIO = 256] = "AUTOMOD_QUARANTINED_BIO"
+            }), (r = i || (i = {}))[r.DID_REJOIN = 1] = "DID_REJOIN", r[r.COMPLETED_ONBOARDING = 2] = "COMPLETED_ONBOARDING", r[r.BYPASSES_VERIFICATION = 4] = "BYPASSES_VERIFICATION", r[r.STARTED_ONBOARDING = 8] = "STARTED_ONBOARDING", r[r.IS_GUEST = 16] = "IS_GUEST", r[r.STARTED_HOME_ACTIONS = 32] = "STARTED_HOME_ACTIONS", r[r.COMPLETED_HOME_ACTIONS = 64] = "COMPLETED_HOME_ACTIONS", r[r.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME = 128] = "AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME", r[r.AUTOMOD_QUARANTINED_BIO = 256] = "AUTOMOD_QUARANTINED_BIO", r[r.DM_SETTINGS_UPSELL_ACKNOWLEDGED = 512] = "DM_SETTINGS_UPSELL_ACKNOWLEDGED", r[r.AUTOMOD_QUARANTINED_CLAN_TAG = 1024] = "AUTOMOD_QUARANTINED_CLAN_TAG"
         },
         946273: function(e, t, n) {
             "use strict";
@@ -163667,8 +163669,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713383885009",
-                                    build_number: "285503"
+                                    built_at: "1713384651185",
+                                    build_number: "285511"
                                 }
                             },
                             retries: 1
@@ -240868,7 +240870,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8e49d474436e22cfef27108f5520f151c9f0c35f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8c2a31fd6477c18a13e3cbdf091512bbf2d60cde"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269335,7 +269337,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285503"
+                                build_number: "285511"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276520,7 +276522,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285503", "285503"), 10);
+                let s = parseInt((n = "285511", "285511"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -303668,4 +303670,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.f13bc4d01361f6844614.js.map
+//# sourceMappingURL=73050.c7f24b483e8847542fdb.js.map

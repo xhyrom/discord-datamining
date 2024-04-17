@@ -20096,6 +20096,14 @@
                 subheader: "subheader__7fae4"
             }
         },
+        169776: function(e) {
+            "use strict";
+            e.exports = {
+                container: "container__13e8b",
+                containerActive: "containerActive__5c3a7",
+                playButton: "playButton__84713"
+            }
+        },
         578808: function(e) {
             "use strict";
             e.exports = {
@@ -20104,6 +20112,21 @@
                 nitroWheel: "nitroWheel_e4e6a4",
                 spacer: "spacer_e582b5",
                 text: "text_a878e2"
+            }
+        },
+        677804: function(e) {
+            "use strict";
+            e.exports = {
+                bodyContainer: "bodyContainer__53600",
+                close: "close__453ad",
+                description: "description_ccffb9",
+                heading: "heading_fa1b37",
+                image: "image_eaa491",
+                nitroButton: "nitroButton__4fea5",
+                optionsContainer: "optionsContainer_de5022",
+                optionsContainerWrapper: "optionsContainerWrapper_a07768",
+                perksButton: "perksButton__44e11",
+                spacer: "spacer__01ffc"
             }
         },
         15996: function(e) {
