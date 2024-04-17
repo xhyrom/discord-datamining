@@ -5713,6 +5713,48 @@
                 strikedPrice: "strikedPrice__8a625"
             }
         },
+        498268: function(e) {
+            "use strict";
+            e.exports = {
+                avatar: "avatar_bc8ec4",
+                avatarContainer: "avatarContainer__26856",
+                avatarPurchased: "avatarPurchased__99fe0",
+                backdrop: "backdrop__0e818",
+                buttonsContainer: "buttonsContainer_ab3c1e",
+                cardBackground: "cardBackground_b66a44",
+                cardLowOpacity: "cardLowOpacity__59f18",
+                cardText: "cardText__57440",
+                cardTextBlur: "cardTextBlur__80cbb",
+                checkmark: "checkmark__057de",
+                checkmarkWrapper: "checkmarkWrapper__527e0",
+                closeButton: "closeButton_b84e85",
+                confettiCanvas: "confettiCanvas__9283c",
+                darkCardBackground: "darkCardBackground_d398da",
+                description: "description_e42a26",
+                detailsWrapper: "detailsWrapper__51cc5",
+                hoverUpsellContainer: "hoverUpsellContainer__33ac1",
+                innerBlur: "innerBlur_fbd376",
+                innerHover: "innerHover_a72c9b",
+                innerMask: "innerMask__4aec2",
+                lightCardBackground: "lightCardBackground__9e9f9",
+                lightningCheckout: "lightningCheckout__9ef9b",
+                limitedTimeBadge: "limitedTimeBadge__0841e",
+                newBadge: "newBadge__10ade",
+                overflowContainer: "overflowContainer_ed2043",
+                premiumWheel: "premiumWheel_ad29a6",
+                premiumWheelBadge: "premiumWheelBadge__7aa27",
+                premiumWheelTooltipContent: "premiumWheelTooltipContent__50313",
+                previewButton: "previewButton__77c7d",
+                previewButtonInner: "previewButtonInner_a0bca5",
+                priceTag: "priceTag__28b66",
+                productName: "productName__52b8d",
+                profileEffectShopPreview: "profileEffectShopPreview__9b28d",
+                purchaseButton: "purchaseButton_c932c7",
+                shopCard: "shopCard__9e3fe",
+                shopCardDefaultAnimation: "shopCardDefaultAnimation_bcabdf",
+                shopCardTransformationAnimation: "shopCardTransformationAnimation__05043"
+            }
+        },
         75117: function(e) {
             "use strict";
             e.exports = {
@@ -19084,6 +19126,25 @@
                 headerContainer: "headerContainer_e181dd",
                 headerImage: "headerImage_a993a3",
                 headerImageContainer: "headerImageContainer__24796"
+            }
+        },
+        980673: function(e) {
+            "use strict";
+            e.exports = {
+                cardDetails: "cardDetails__13c3e",
+                container: "container__74bbc",
+                description: "description__152b2",
+                innerBlur: "innerBlur__336c5",
+                productName: "productName_c27af5"
+            }
+        },
+        893024: function(e) {
+            "use strict";
+            e.exports = {
+                buyButton: "buyButton__38cc8",
+                legalTerms: "legalTerms_a0b526",
+                reviewButton: "reviewButton__0cd54",
+                reviewContainer: "reviewContainer__6ae3a"
             }
         },
         80308: function(e) {
