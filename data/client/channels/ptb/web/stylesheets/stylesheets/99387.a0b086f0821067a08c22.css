@@ -80984,7 +80984,7 @@ input::-webkit-inner-spin-button {
     height: calc(100vh - 60px);
     width: calc(100vw - 60px);
     max-width: 1028px;
-    background-color: var(--background-floating)
+    background-color: var(--background-secondary)
 }
 
 .modalHeader__4be2e {
@@ -81000,6 +81000,11 @@ input::-webkit-inner-spin-button {
     display: flex;
     align-items: center;
     gap: 8px
+}
+
+.modalCloseBtn_e2b38c {
+    color: var(--header-primary);
+    opacity: 1
 }
 
 .modalContent__8c9b3 {
@@ -133861,4 +133866,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.02766b4ad355c63abe2a.css.map*/
+/*# sourceMappingURL=99387.a0b086f0821067a08c22.css.map*/
