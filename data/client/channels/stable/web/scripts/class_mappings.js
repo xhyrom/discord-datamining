@@ -3645,9 +3645,8 @@
                 banner: "banner__36618",
                 footer: "footer_cf774b",
                 productList: "productList_b12dd0",
+                productSection: "productSection_d2504b",
                 subDetailsModal: "subDetailsModal_c2c023",
-                tabs: "tabs__88df8",
-                tabsText: "tabsText__00788",
                 wrapper: "wrapper__17603"
             }
         },
@@ -3655,6 +3654,7 @@
             "use strict";
             e.exports = {
                 modal: "modal_af101e",
+                modalCloseBtn: "modalCloseBtn_e2b38c",
                 modalHeader: "modalHeader__4be2e",
                 modalTitle: "modalTitle__2413c"
             }
@@ -4986,6 +4986,17 @@
                 guildIconImage: "guildIconImage_d3cb49"
             }
         },
+        225540: function(e) {
+            "use strict";
+            e.exports = {
+                closeButton: "closeButton__290e3",
+                mainContent: "mainContent__465e0",
+                modal: "modal__06f49",
+                modalContents: "modalContents_d4af1c",
+                sidebar: "sidebar__57865",
+                sidebarWrapper: "sidebarWrapper_c37160"
+            }
+        },
         319695: function(e) {
             "use strict";
             e.exports = {
@@ -5055,12 +5066,13 @@
                 buttonsContainer: "buttonsContainer_a90621",
                 clickable: "clickable_b41429",
                 closeButton: "closeButton_e88b7d",
-                currentStep: "currentStep_f2459e",
                 fadeIn: "fadeIn__0663f",
                 fadeOut: "fadeOut_de0df3",
                 finishButton: "finishButton__8590c",
                 flex: "flex__0016b",
                 footer: "footer_d63e9e",
+                footerAlphaMsg: "footerAlphaMsg_e3ec93",
+                footerAlphaTag: "footerAlphaTag__21ac5",
                 lastParagraph: "lastParagraph__7a09c",
                 mainContent: "mainContent__23e7a",
                 modal: "modal_f49d0b",
@@ -5494,7 +5506,6 @@
             "use strict";
             e.exports = {
                 avatarDecoration: "avatarDecoration_a30e58",
-                bannerBackgroundFallback: "bannerBackgroundFallback_ea4dd2",
                 bannerContainer: "bannerContainer__879e1",
                 collectedInfoContainer: "collectedInfoContainer__6617a",
                 collectedTextContainer: "collectedTextContainer_b6fcfd",
@@ -5700,6 +5711,48 @@
                 premiumIcon: "premiumIcon_a6a247",
                 priceTagsContainer: "priceTagsContainer_b12e66",
                 strikedPrice: "strikedPrice__8a625"
+            }
+        },
+        498268: function(e) {
+            "use strict";
+            e.exports = {
+                avatar: "avatar_bc8ec4",
+                avatarContainer: "avatarContainer__26856",
+                avatarPurchased: "avatarPurchased__99fe0",
+                backdrop: "backdrop__0e818",
+                buttonsContainer: "buttonsContainer_ab3c1e",
+                cardBackground: "cardBackground_b66a44",
+                cardLowOpacity: "cardLowOpacity__59f18",
+                cardText: "cardText__57440",
+                cardTextBlur: "cardTextBlur__80cbb",
+                checkmark: "checkmark__057de",
+                checkmarkWrapper: "checkmarkWrapper__527e0",
+                closeButton: "closeButton_b84e85",
+                confettiCanvas: "confettiCanvas__9283c",
+                darkCardBackground: "darkCardBackground_d398da",
+                description: "description_e42a26",
+                detailsWrapper: "detailsWrapper__51cc5",
+                hoverUpsellContainer: "hoverUpsellContainer__33ac1",
+                innerBlur: "innerBlur_fbd376",
+                innerHover: "innerHover_a72c9b",
+                innerMask: "innerMask__4aec2",
+                lightCardBackground: "lightCardBackground__9e9f9",
+                lightningCheckout: "lightningCheckout__9ef9b",
+                limitedTimeBadge: "limitedTimeBadge__0841e",
+                newBadge: "newBadge__10ade",
+                overflowContainer: "overflowContainer_ed2043",
+                premiumWheel: "premiumWheel_ad29a6",
+                premiumWheelBadge: "premiumWheelBadge__7aa27",
+                premiumWheelTooltipContent: "premiumWheelTooltipContent__50313",
+                previewButton: "previewButton__77c7d",
+                previewButtonInner: "previewButtonInner_a0bca5",
+                priceTag: "priceTag__28b66",
+                productName: "productName__52b8d",
+                profileEffectShopPreview: "profileEffectShopPreview__9b28d",
+                purchaseButton: "purchaseButton_c932c7",
+                shopCard: "shopCard__9e3fe",
+                shopCardDefaultAnimation: "shopCardDefaultAnimation_bcabdf",
+                shopCardTransformationAnimation: "shopCardTransformationAnimation__05043"
             }
         },
         75117: function(e) {
@@ -15343,6 +15396,12 @@
                 geoRestrictedBadge: "geoRestrictedBadge__8f321"
             }
         },
+        109595: function(e) {
+            "use strict";
+            e.exports = {
+                icon: "icon__05aab"
+            }
+        },
         814886: function(e) {
             "use strict";
             e.exports = {
@@ -19069,6 +19128,25 @@
                 headerImageContainer: "headerImageContainer__24796"
             }
         },
+        980673: function(e) {
+            "use strict";
+            e.exports = {
+                cardDetails: "cardDetails__13c3e",
+                container: "container__74bbc",
+                description: "description__152b2",
+                innerBlur: "innerBlur__336c5",
+                productName: "productName_c27af5"
+            }
+        },
+        893024: function(e) {
+            "use strict";
+            e.exports = {
+                buyButton: "buyButton__38cc8",
+                legalTerms: "legalTerms_a0b526",
+                reviewButton: "reviewButton__0cd54",
+                reviewContainer: "reviewContainer__6ae3a"
+            }
+        },
         80308: function(e) {
             "use strict";
             e.exports = {
@@ -19904,6 +19982,14 @@
                 termsApplyBodyText: "termsApplyBodyText__667ff"
             }
         },
+        985187: function(e) {
+            "use strict";
+            e.exports = {
+                demoEffect: "demoEffect_d38a7a",
+                demoEffectImg: "demoEffectImg_fe7de2",
+                demoEffectOverlay: "demoEffectOverlay__61603"
+            }
+        },
         324464: function(e) {
             "use strict";
             e.exports = {
@@ -20010,6 +20096,14 @@
                 subheader: "subheader__7fae4"
             }
         },
+        169776: function(e) {
+            "use strict";
+            e.exports = {
+                container: "container__13e8b",
+                containerActive: "containerActive__5c3a7",
+                playButton: "playButton__84713"
+            }
+        },
         578808: function(e) {
             "use strict";
             e.exports = {
@@ -20018,6 +20112,21 @@
                 nitroWheel: "nitroWheel_e4e6a4",
                 spacer: "spacer_e582b5",
                 text: "text_a878e2"
+            }
+        },
+        677804: function(e) {
+            "use strict";
+            e.exports = {
+                bodyContainer: "bodyContainer__53600",
+                close: "close__453ad",
+                description: "description_ccffb9",
+                heading: "heading_fa1b37",
+                image: "image_eaa491",
+                nitroButton: "nitroButton__4fea5",
+                optionsContainer: "optionsContainer_de5022",
+                optionsContainerWrapper: "optionsContainerWrapper_a07768",
+                perksButton: "perksButton__44e11",
+                spacer: "spacer__01ffc"
             }
         },
         15996: function(e) {
@@ -20952,6 +21061,7 @@
         571062: function(e) {
             "use strict";
             e.exports = {
+                annualPlanOptionDiscount: "annualPlanOptionDiscount_b32fc7",
                 discountPlanOptionSubtext: "discountPlanOptionSubtext_ee7e12",
                 optionPriceSelected: "optionPriceSelected__1287a",
                 optionSelected: "optionSelected__54637",
@@ -21115,6 +21225,7 @@
                 header: "header__0eb6b",
                 list: "list_d24b0a",
                 searchbar: "searchbar_f3ff3c",
+                separator: "separator__391be",
                 submit: "submit__78b24",
                 title: "title__47a52",
                 titleImage: "titleImage__31509"
@@ -22515,20 +22626,6 @@
                 rewardTileWrapper: "rewardTileWrapper__1e38a"
             }
         },
-        334644: function(e) {
-            "use strict";
-            e.exports = {
-                content: "content__431b3",
-                header: "header_bf63e4",
-                headerImage: "headerImage__98351",
-                infoFilledIcon: "infoFilledIcon__687a0",
-                modalCloseButton: "modalCloseButton__0d121",
-                modalFooter: "modalFooter__5a7d5",
-                title: "title__5bb81",
-                tooltip: "tooltip__5cb27",
-                tooltipText: "tooltipText__63048"
-            }
-        },
         672999: function(e) {
             "use strict";
             e.exports = {
@@ -22557,6 +22654,20 @@
                 spinner: "spinner__2aca6",
                 spinnerContainer: "spinnerContainer_b7aa46",
                 text: "text__4fd4a"
+            }
+        },
+        154309: function(e) {
+            "use strict";
+            e.exports = {
+                content: "content_a5ff24",
+                header: "header_fd6622",
+                headerImage: "headerImage__03931",
+                infoFilledIcon: "infoFilledIcon__6470d",
+                modalCloseButton: "modalCloseButton__30a78",
+                modalFooter: "modalFooter__8987b",
+                title: "title_ce2368",
+                tooltip: "tooltip__2900f",
+                tooltipText: "tooltipText_f0221f"
             }
         },
         732553: function(e) {
@@ -24775,6 +24886,18 @@
                 header: "header__608e1"
             }
         },
+        40803: function(e) {
+            "use strict";
+            e.exports = {
+                activityName: "activityName_bad7c5",
+                cardContainer: "cardContainer__84569",
+                contentImage: "contentImage__73364",
+                infoContainer: "infoContainer__07f33",
+                playtimeContainer: "playtimeContainer_d4a1f8",
+                playtimeText: "playtimeText__3a682",
+                title: "title_b0a8cb"
+            }
+        },
         681132: function(e) {
             "use strict";
             e.exports = {
@@ -24830,14 +24953,6 @@
                 noteIcon: "noteIcon_d38cf4",
                 noteText: "noteText__42e4e",
                 noteTextArea: "noteTextArea__171ac"
-            }
-        },
-        555594: function(e) {
-            "use strict";
-            e.exports = {
-                faded: "faded__030cc",
-                modal: "modal_f417d0",
-                wrapper: "wrapper_e50c5b"
             }
         },
         785494: function(e) {
@@ -24914,6 +25029,14 @@
                 button: "button_e8c966",
                 buttonInner: "buttonInner__915b1",
                 color: "color_b28e35"
+            }
+        },
+        3062: function(e) {
+            "use strict";
+            e.exports = {
+                faded: "faded__699a5",
+                modal: "modal__16963",
+                wrapper: "wrapper__3abe0"
             }
         },
         970903: function(e) {
@@ -26035,6 +26158,16 @@
                 questionMark: "questionMark__6bfbc",
                 subtitle: "subtitle__82093",
                 title: "title__16cde"
+            }
+        },
+        451304: function(e) {
+            "use strict";
+            e.exports = {
+                heading: "heading_bf2723",
+                iconTitle: "iconTitle_be1c6f",
+                tab: "tab__7d975",
+                tabBar: "tabBar_f88f31",
+                tabIcon: "tabIcon__939d8"
             }
         },
         233754: function(e) {
