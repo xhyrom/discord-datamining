@@ -36654,7 +36654,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285571", ", Version Hash: ").concat("e32e3c1c50ad323c03ff62c573570d5cffb2c719")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285580", ", Version Hash: ").concat("7ba82726dd8a5f606a951dfb03a536677a350f9b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -52367,10 +52367,6 @@
                 CHANNEL_BROWSER_DISABLED_BY_CATEGORY: "You must unfollow this category to add or remove specific channels.",
                 EDIT_ONBOARDING: "Edit Onboarding",
                 HIGHLIGHT: "Highlight",
-                CHANNEL_HIGHLIGHTS_COUNT: "{count, plural, =1 {1 Highlight} other {{count} Highlights}}",
-                CHANNEL_HIGHLIGHT_NAVIGATOR_LOCATION: "{currentHighlight} of {totalHighlights} highlights",
-                CHANNEL_HIGHLIGHT_NAVIGATOR_PREVIOUS: "Previous Highlight",
-                CHANNEL_HIGHLIGHT_NAVIGATOR_NEXT: "Next Highlight",
                 JUMP_TO_BOTTOM: "Jump to Bottom",
                 CHANNEL_BROWSER_SELECT_ALL: "Follow Category",
                 RETURN_TO_CHANNEL: "Return to $[channelName](channelNameHook)",
@@ -86552,8 +86548,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285571", "285571"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285571")), t = 0), t
+                let t = parseInt((e = "285580", "285580"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285580")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110675,8 +110671,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285571",
-                    versionHash: "e32e3c1c50ad323c03ff62c573570d5cffb2c719"
+                    buildNumber: "285580",
+                    versionHash: "7ba82726dd8a5f606a951dfb03a536677a350f9b"
                 }
             }
             n.r(t), n.d(t, {
@@ -163861,8 +163857,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713388919762",
-                                    build_number: "285571"
+                                    built_at: "1713389602977",
+                                    build_number: "285580"
                                 }
                             },
                             retries: 1
@@ -241063,7 +241059,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e32e3c1c50ad323c03ff62c573570d5cffb2c719"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7ba82726dd8a5f606a951dfb03a536677a350f9b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -263097,14 +263093,6 @@
                     throttlePeriod: 6e4,
                     throttleKeys: e => [e.type]
                 },
-                [E.AnalyticEvents.CHANNEL_HIGHLIGHTS_VIEWED]: {
-                    throttlePeriod: 36e5,
-                    throttleKeys: e => [e.guild_id, e.channel_id]
-                },
-                [E.AnalyticEvents.GUILD_CHANNEL_HIGHLIGHTS_LOADED]: {
-                    throttlePeriod: 36e5,
-                    throttleKeys: e => [e.guild_id]
-                },
                 [E.AnalyticEvents.FORUM_CHANNEL_SEARCHED]: {
                     throttlePeriod: 6e4,
                     throttleKeys: e => [e.guild_id, e.channel_id]
@@ -269530,7 +269518,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285571"
+                                build_number: "285580"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276715,7 +276703,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285571", "285571"), 10);
+                let s = parseInt((n = "285580", "285580"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -303863,4 +303851,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.884474b94baa5dee644a.js.map
+//# sourceMappingURL=73050.3c62a187a16d210c9688.js.map
