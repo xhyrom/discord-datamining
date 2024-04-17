@@ -18608,8 +18608,11 @@
                 liveIndicator: "liveIndicator_fd070e",
                 panel: "panel_bd8c76",
                 panelButtonContainer: "panelButtonContainer__0fb51",
+                perksDemoContainer: "perksDemoContainer_d174dc",
+                perksDemoText: "perksDemoText__39380",
                 sparkleContainer: "sparkleContainer__6b25a",
-                sparkles: "sparkles__88bc5"
+                sparkles: "sparkles__88bc5",
+                streamingIconGlow: "streamingIconGlow__5b7b2"
             }
         },
         815668: function(e) {

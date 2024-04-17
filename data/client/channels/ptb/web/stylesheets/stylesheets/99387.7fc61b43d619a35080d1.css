@@ -63143,7 +63143,7 @@ html .progress__00e29 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 16px;
     gap: 4px
 }
 
@@ -67854,6 +67854,15 @@ input::-webkit-inner-spin-button {
     color: var(--header-primary)
 }
 
+.gradientText_fb366a {
+    color: var(--text-brand);
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+    background-clip: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent
+}
+
 .image_d4457f {
     width: 200px;
     position: absolute;
@@ -67915,6 +67924,10 @@ input::-webkit-inner-spin-button {
 
 .gameWrapper_da7443 .liveIndicator_fd070e {
     padding: 0 4px
+}
+
+.streamingIconGlow__5b7b2 {
+    filter: drop-shadow(0 0 5px var(--premium-perk-pink))
 }
 
 .clickableGameWrapper_dc17b2 {
@@ -67987,6 +68000,17 @@ input::-webkit-inner-spin-button {
 .channel__5490c:hover {
     -webkit-text-decoration: underline;
     text-decoration: underline
+}
+
+.perksDemoContainer_d174dc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1px
+}
+
+.perksDemoText__39380 {
+    margin-left: 2px
 }
 
 .userList__36b08 {
@@ -119854,15 +119878,6 @@ html .invoiceCancelRow__6ff3e {
     max-height: 100%
 }
 
-.gradientText_fb366a {
-    color: var(--text-brand);
-    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
-    background-clip: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent
-}
-
 .image__3b2f7 {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -134419,4 +134434,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.98218033c027d77fee9b.css.map*/
+/*# sourceMappingURL=99387.7fc61b43d619a35080d1.css.map*/
