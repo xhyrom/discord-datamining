@@ -36640,7 +36640,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285360", ", Version Hash: ").concat("a6be1a9062b6100116a6f24a9c3644d2f01f5cc1")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285364", ", Version Hash: ").concat("19cd4d5f3841adcf33bbd5546309a4803fe75135")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -54977,7 +54977,6 @@
                 STOREFRONT_SUBSCRIPTION_BENEFITS: "Subscription Benefits",
                 STOREFRONT_PURCHASE_FOR: "Buy for {price}",
                 STOREFRONT_ONE_TIME_PURCHASE: "One-Time Purchase",
-                STOREFRONT_PREMIUM_ITEMS: "Premium Items",
                 STOREFRONT_DURABLE_AVAILABILITY: "1 / 1 Available",
                 STOREFRONT_MUST_LOGIN: "Login to browse store",
                 QUIET_MODE_DISABLED: "Focus Mode Disabled",
@@ -86509,8 +86508,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285360", "285360"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285360")), t = 0), t
+                let t = parseInt((e = "285364", "285364"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285364")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110514,8 +110513,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285360",
-                    versionHash: "a6be1a9062b6100116a6f24a9c3644d2f01f5cc1"
+                    buildNumber: "285364",
+                    versionHash: "19cd4d5f3841adcf33bbd5546309a4803fe75135"
                 }
             }
             n.r(t), n.d(t, {
@@ -163636,8 +163635,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713371097647",
-                                    build_number: "285360"
+                                    built_at: "1713371396166",
+                                    build_number: "285364"
                                 }
                             },
                             retries: 1
@@ -178459,7 +178458,7 @@
                     p.set(e.id, e)
                 })(n)
             }
-            class D extends(r = _.default.Store) {
+            class D extends(r = _.Store) {
                 getSubscriptionGroupListingsForApplicationFetchState(e) {
                     var t;
                     return null !== (t = R[e]) && void 0 !== t ? t : 0
@@ -237853,7 +237852,7 @@
             function g(e) {
                 return R(e.entitlement)
             }
-            class L extends(i = u.default.Store) {
+            class L extends(i = u.Store) {
                 initialize() {
                     this.syncWith([c.default], () => !0)
                 }
@@ -240717,7 +240716,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a6be1a9062b6100116a6f24a9c3644d2f01f5cc1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "19cd4d5f3841adcf33bbd5546309a4803fe75135"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269133,7 +269132,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285360"
+                                build_number: "285364"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276318,7 +276317,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285360", "285360"), 10);
+                let s = parseInt((n = "285364", "285364"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -303388,4 +303387,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.6b0b6ad108eafcb35854.js.map
+//# sourceMappingURL=73050.cda195b0445e849960f2.js.map
