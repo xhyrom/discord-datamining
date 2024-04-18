@@ -36660,7 +36660,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285938", ", Version Hash: ").concat("0884d7cc1a2ac67b3e05448e4580d16988b80bbf")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285944", ", Version Hash: ").concat("a4d42202a2af45abc1cef710a1dc6b3c3cb6a8fa")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -49037,6 +49037,7 @@
                 COUNTRY_NAME_ZW: "Zimbabwe",
                 INACCESSIBLE_CHANNEL_LINK_TITLE: "You don't have access to this link.",
                 INACCESSIBLE_CHANNEL_LINK_SUBTITLE: "This link is to a server or channel you don't have access to.",
+                INACCESSIBLE_USER_LINK_SUBTITLE: "This link is to a user you don't have access to.",
                 CREATION_INTENT_TITLE: "Tell Us More About Your Server",
                 CREATION_INTENT_DESCRIPTION: "In order to help you with your setup, is your new server for just a few friends or a larger community?",
                 CREATION_INTENT_OPTION_FRIENDS: "For me and my friends",
@@ -86623,8 +86624,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285938", "285938"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285938")), t = 0), t
+                let t = parseInt((e = "285944", "285944"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285944")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -89638,7 +89639,7 @@
                 a = n("456007"),
                 o = n("998698"),
                 l = n("541716"),
-                u = n("927723"),
+                u = n("797610"),
                 d = n("271383"),
                 _ = n("496675"),
                 c = n("246946"),
@@ -91147,7 +91148,7 @@
                 }
             }), n("47120");
             var i = n("933557"),
-                r = n("927723"),
+                r = n("797610"),
                 s = n("339085"),
                 a = n("633302"),
                 o = n("601070"),
@@ -93581,7 +93582,7 @@
                 a = n("596454"),
                 o = n("99690"),
                 l = n("607070"),
-                u = n("927723"),
+                u = n("797610"),
                 d = n("754688"),
                 _ = n("699450"),
                 c = n("763296"),
@@ -105257,7 +105258,7 @@
             });
             t.default = a
         },
-        927723: function(e, t, n) {
+        797610: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 canUseCustomClydeProfiles: function() {
@@ -110795,8 +110796,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285938",
-                    versionHash: "0884d7cc1a2ac67b3e05448e4580d16988b80bbf"
+                    buildNumber: "285944",
+                    versionHash: "a4d42202a2af45abc1cef710a1dc6b3c3cb6a8fa"
                 }
             }
             n.r(t), n.d(t, {
@@ -154104,51 +154105,70 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return c
+                    return _
+                }
+            });
+            var i = n("727429"),
+                r = n("703656"),
+                s = n("920440"),
+                a = n("592125"),
+                o = n("754688"),
+                l = n("849027"),
+                u = n("927723"),
+                d = n("981631");
+            async function _(e, t, n) {
+                let _ = (0, o.tryParseChannelPath)(e);
+                if (null != _ && !await (0, l.default)(_)) {
+                    (0, u.showInaccessibleLinkModal)({
+                        kind: "channel"
+                    });
+                    return
+                }
+                if (null == _) {
+                    (0, r.transitionTo)(e);
+                    return
+                }
+                let c = function(e) {
+                    if (null == e.channelId) return e;
+                    let t = a.default.getChannel(e.channelId);
+                    if (null == t) return e;
+                    let n = (0, i.getGuildIdForGenericRedirect)(t);
+                    return {
+                        ...e,
+                        guildId: null != n ? n : d.ME
+                    }
+                }(_);
+                if (null == c.channelId) {
+                    (0, s.transitionToGuild)(c.guildId);
+                    return
+                }
+                null != c.threadId ? (0, r.transitionTo)(d.Routes.CHANNEL_THREAD_VIEW(c.guildId, c.channelId, c.threadId, c.messageId), t, n) : (0, r.transitionTo)(d.Routes.CHANNEL(c.guildId, c.channelId, c.messageId), t, n)
+            }
+        },
+        927723: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                showInaccessibleLinkModal: function() {
+                    return s
                 }
             });
             var i = n("735250");
             n("470079");
-            var r = n("952265"),
-                s = n("727429"),
-                a = n("703656"),
-                o = n("920440"),
-                l = n("592125"),
-                u = n("754688"),
-                d = n("849027"),
-                _ = n("981631");
-            async function c(e, t, c) {
-                let E = (0, u.tryParseChannelPath)(e);
-                if (null != E && !await (0, d.default)(E)) {
-                    (0, r.openModalLazy)(async () => {
-                        let {
-                            default: e
-                        } = await Promise.all([n.e("99387"), n.e("22706")]).then(n.bind(n, "438725"));
-                        return t => (0, i.jsx)(e, {
-                            ...t
-                        })
-                    });
-                    return
-                }
-                if (null == E) {
-                    (0, a.transitionTo)(e);
-                    return
-                }
-                let I = function(e) {
-                    if (null == e.channelId) return e;
-                    let t = l.default.getChannel(e.channelId);
-                    if (null == t) return e;
-                    let n = (0, s.getGuildIdForGenericRedirect)(t);
-                    return {
-                        ...e,
-                        guildId: null != n ? n : _.ME
-                    }
-                }(E);
-                if (null == I.channelId) {
-                    (0, o.transitionToGuild)(I.guildId);
-                    return
-                }
-                null != I.threadId ? (0, a.transitionTo)(_.Routes.CHANNEL_THREAD_VIEW(I.guildId, I.channelId, I.threadId, I.messageId), t, c) : (0, a.transitionTo)(_.Routes.CHANNEL(I.guildId, I.channelId, I.messageId), t, c)
+            var r = n("481060");
+
+            function s(e) {
+                let {
+                    kind: t
+                } = e;
+                (0, r.openModalLazy)(async () => {
+                    let {
+                        default: e
+                    } = await Promise.all([n.e("99387"), n.e("7285")]).then(n.bind(n, "951269"));
+                    return n => (0, i.jsx)(e, {
+                        ...n,
+                        kind: t
+                    })
+                })
             }
         },
         287925: function(e, t, n) {
@@ -155689,7 +155709,7 @@
                 r = n.n(i),
                 s = n("302454"),
                 a = n.n(s),
-                o = n("927723"),
+                o = n("797610"),
                 l = n("633302"),
                 u = n("763296"),
                 d = n("592125"),
@@ -156982,9 +157002,10 @@
                 react(e, t, n) {
                     let {
                         userId: r,
-                        channelId: o
+                        channelId: o,
+                        roleId: l
                     } = e;
-                    return null == r ? (0, i.jsx)(s.default, {
+                    return null == r && null != l ? (0, i.jsx)(s.default, {
                         inlinePreview: n.formatInline,
                         ...e,
                         children: t(e.content, n)
@@ -161078,7 +161099,8 @@
                     allowEmojiLinks: !1,
                     disableAutoBlockNewlines: !0,
                     mentionChannels: [],
-                    muted: !1
+                    muted: !1,
+                    unknownUserMentionPlaceholder: !0
                 }
             }
 
@@ -163359,78 +163381,99 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return R
+                    return D
                 }
             });
-            var i = n("735250");
-            n("470079");
-            var r = n("512722"),
-                s = n.n(r),
-                a = n("873546"),
-                o = n("442837"),
-                l = n("481060"),
-                u = n("239091"),
-                d = n("100527"),
-                _ = n("906732"),
-                c = n("927723"),
-                E = n("484459"),
-                I = n("103575"),
-                T = n("592125"),
-                f = n("271383"),
-                S = n("430824"),
-                h = n("699516"),
-                A = n("594174"),
-                m = n("797053"),
-                N = n("5192"),
-                p = n("51144"),
-                O = n("377668");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("512722"),
+                a = n.n(s),
+                o = n("873546"),
+                l = n("442837"),
+                u = n("481060"),
+                d = n("239091"),
+                _ = n("100527"),
+                c = n("906732"),
+                E = n("797610"),
+                I = n("927723"),
+                T = n("484459"),
+                f = n("103575"),
+                S = n("592125"),
+                h = n("271383"),
+                A = n("430824"),
+                m = n("699516"),
+                N = n("594174"),
+                p = n("797053"),
+                O = n("5192"),
+                R = n("51144"),
+                C = n("377668"),
+                g = n("689938");
 
-            function R(e) {
+            function L(e) {
+                let {
+                    className: t
+                } = e, n = r.useCallback(() => {
+                    (0, I.showInaccessibleLinkModal)({
+                        kind: "user"
+                    })
+                }, []);
+                return (0, i.jsx)(p.default, {
+                    className: t,
+                    onClick: n,
+                    children: "@".concat(g.default.Messages.UNKNOWN_USER_MENTION_PLACEHOLDER)
+                })
+            }
+
+            function D(e) {
                 let {
                     className: t,
                     userId: r,
-                    channelId: R,
-                    inlinePreview: C = !1
+                    channelId: s,
+                    inlinePreview: I = !1
                 } = e, {
                     analyticsLocations: g
-                } = (0, _.default)(d.default.USER_MENTION), L = (0, o.useStateFromStores)([A.default], () => A.default.getUser(r)), D = (0, o.useStateFromStores)([T.default], () => T.default.getChannel(R)), v = null != D ? D.getGuildId() : null, M = C || null == L || null == v || null == R ? void 0 : e => {
-                    null != D && (0, u.openContextMenuLazy)(e, async () => {
+                } = (0, c.default)(_.default.USER_MENTION), D = (0, l.useStateFromStores)([N.default], () => N.default.getUser(r)), v = (0, l.useStateFromStores)([S.default], () => S.default.getChannel(s)), M = null != v ? v.getGuildId() : null, y = I || null == D || null == M || null == s ? void 0 : e => {
+                    null != v && (0, d.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
                         } = await Promise.all([n.e("99387"), n.e("79695"), n.e("1502"), n.e("70866"), n.e("12435"), n.e("6696")]).then(n.bind(n, "757387"));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            user: L,
-                            channel: D,
-                            guildId: v
+                            user: D,
+                            channel: v,
+                            guildId: M
                         })
                     })
-                }, y = p.default.useName(L), P = (0, o.useStateFromStores)([T.default, f.default, h.default], () => N.default.getNickname(v, R, L)), U = S.default.getGuild(v), b = (0, c.useClydeEnabled)(U, D) && r === O.CLYDE_AI_USER_ID ? O.CLYDE_AI_MENTION_COLOR : null, G = e => (0, i.jsx)(m.default, {
-                    className: t,
-                    onContextMenu: M,
-                    color: b,
-                    ...e,
-                    children: "@".concat(null != P ? P : y)
+                }, P = R.default.useName(D), U = (0, l.useStateFromStores)([S.default, h.default, m.default], () => O.default.getNickname(M, s, D)), b = A.default.getGuild(M), G = (0, E.useClydeEnabled)(b, v) && r === C.CLYDE_AI_USER_ID ? C.CLYDE_AI_MENTION_COLOR : null;
+                if (null == D) return (0, i.jsx)(L, {
+                    className: t
                 });
-                return C ? (0, i.jsx)(_.AnalyticsLocationProvider, {
+                let w = e => (0, i.jsx)(p.default, {
+                    className: t,
+                    onContextMenu: y,
+                    color: G,
+                    ...e,
+                    children: "@".concat(null != U ? U : P)
+                });
+                return I ? (0, i.jsx)(c.AnalyticsLocationProvider, {
                     value: g,
-                    children: G()
-                }) : (0, i.jsx)(_.AnalyticsLocationProvider, {
+                    children: w()
+                }) : (0, i.jsx)(c.AnalyticsLocationProvider, {
                     value: g,
-                    children: (0, i.jsx)(l.Popout, {
-                        preload: null == L ? void 0 : () => (0, E.default)(L.id, L.getAvatarURL(v, 80), {
-                            guildId: null != v ? v : void 0,
-                            channelId: null != R ? R : void 0
+                    children: (0, i.jsx)(u.Popout, {
+                        preload: null == D ? void 0 : () => (0, T.default)(D.id, D.getAvatarURL(M, 80), {
+                            guildId: null != M ? M : void 0,
+                            channelId: null != s ? s : void 0
                         }),
-                        renderPopout: e => (s()(null != L, "Unexpected missing user"), (0, i.jsx)(I.default, {
+                        renderPopout: e => (a()(null != D, "Unexpected missing user"), (0, i.jsx)(f.default, {
                             location: "UserMention",
-                            userId: L.id,
-                            guildId: null != v ? v : void 0,
-                            channelId: R,
+                            userId: D.id,
+                            guildId: null != M ? M : void 0,
+                            channelId: s,
                             ...e
                         })),
-                        position: a.isMobile ? "top" : "right",
-                        children: e => G(e)
+                        position: o.isMobile ? "top" : "right",
+                        children: e => w(e)
                     })
                 })
             }
@@ -163897,8 +163940,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713473076891",
-                                    build_number: "285938"
+                                    built_at: "1713473940583",
+                                    build_number: "285944"
                                 }
                             },
                             retries: 1
@@ -205890,7 +205933,7 @@
                 d = n("481060"),
                 _ = n("906732"),
                 c = n("1585"),
-                E = n("927723"),
+                E = n("797610"),
                 I = n("233440"),
                 T = n("680295"),
                 f = n("430824"),
@@ -241098,7 +241141,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0884d7cc1a2ac67b3e05448e4580d16988b80bbf"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a4d42202a2af45abc1cef710a1dc6b3c3cb6a8fa"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269557,7 +269600,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285938"
+                                build_number: "285944"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276742,7 +276785,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285938", "285938"), 10);
+                let s = parseInt((n = "285944", "285944"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -303928,4 +303971,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.6191a10665cd1ac14022.js.map
+//# sourceMappingURL=73050.c152e32bd38dada8bcd8.js.map
