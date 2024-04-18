@@ -36660,7 +36660,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285842", ", Version Hash: ").concat("d39c392f78a8f68fe91fe9633743bdb3fb8cc75e")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285845", ", Version Hash: ").concat("a8fff0df096382c030deb09f866ac255804a6dd5")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -58685,6 +58685,11 @@
                     }).enableGoLiveSimulcast && (this._goLiveQualityManager = new N.default, this._goLiveQualityManager.on(N.GoLiveQualityManagerEvent.RequestedSSRCsUpdate, (e, t, n) => {
                         var i;
                         null === (i = this._connection) || void 0 === i || i.createUser(e, t, n)
+                    }), this._goLiveQualityManager.on(N.GoLiveQualityManagerEvent.RequestedStreamsUpdate, e => {
+                        if (this.state === J.RTCConnectionStates.RTC_CONNECTED && null != this._socket) {
+                            var t;
+                            this.logger.info("Go Live Media sink wants: ".concat(JSON.stringify(e))), this._socket.mediaSinkWants(e), null === (t = this._connection) || void 0 === t || t.setLocalVideoSinkWants(e)
+                        }
                     }));
                     this._remoteVideoSinkWants = K.DEFAULT_WANTS_FULL, w.default.shouldRecordNextConnection() ? (this._recordingEnabled = !0, f.setShouldRecordNextConnection(!1)) : this._recordingEnabled = !1, this._soundshareStats = new z.default, F.default.addOnlineCallback(this._handleNetworkOnline), F.default.addOfflineCallback(this._handleNetworkOffline), (0, V.isDesktop)() && (this.powerMonitorListener = x.default.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, b.default.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
                         this._supportedBandwidthEstimationExperiments = e
@@ -86590,8 +86595,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285842", "285842"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285842")), t = 0), t
+                let t = parseInt((e = "285845", "285845"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285845")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110762,8 +110767,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285842",
-                    versionHash: "d39c392f78a8f68fe91fe9633743bdb3fb8cc75e"
+                    buildNumber: "285845",
+                    versionHash: "a8fff0df096382c030deb09f866ac255804a6dd5"
                 }
             }
             n.r(t), n.d(t, {
@@ -131586,22 +131591,22 @@
                     return i
                 },
                 default: function() {
-                    return l
+                    return u
                 }
             }), n("653041"), n("47120");
-            var i, r = n("392711"),
-                s = n.n(r),
-                a = n("47770");
+            var i, r, s = n("392711"),
+                a = n.n(s),
+                o = n("47770");
 
-            function o(e, t, n) {
+            function l(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
                     configurable: !0,
                     writable: !0
                 }) : e[t] = n, e
-            }(i || (i = {})).RequestedSSRCsUpdate = "requested-ssrcs-update";
-            class l extends a.default {
+            }(r = i || (i = {})).RequestedSSRCsUpdate = "requested-ssrcs-update", r.RequestedStreamsUpdate = "requested-streams-update";
+            class u extends o.default {
                 setUserID(e) {
                     this.userId = e
                 }
@@ -131612,20 +131617,23 @@
                     this.focused = e, this.update()
                 }
                 update() {
+                    let e = {
+                        any: 50
+                    };
                     if (null != this.userId) {
-                        let e = [];
+                        let t = [];
                         if (this.focused) {
-                            let t = s().maxBy(this.videoStreams, e => e.quality);
-                            null != t && e.push(t.ssrc)
+                            let n = a().maxBy(this.videoStreams, e => e.quality);
+                            null != n && (t.push(n.ssrc), e[n.ssrc] = 100)
                         } else {
-                            let t = s().minBy(this.videoStreams, e => e.quality);
-                            null != t && e.push(t.ssrc)
+                            let n = a().minBy(this.videoStreams, e => e.quality);
+                            null != n && (t.push(n.ssrc), e[n.ssrc] = 50)
                         }
-                        this.emit("requested-ssrcs-update", this.userId, this.audioSSRC, e)
+                        this.emit("requested-ssrcs-update", this.userId, this.audioSSRC, t), this.emit("requested-streams-update", e)
                     }
                 }
                 constructor(...e) {
-                    super(...e), o(this, "userId", void 0), o(this, "videoStreams", []), o(this, "audioSSRC", 0), o(this, "focused", !1)
+                    super(...e), l(this, "userId", void 0), l(this, "videoStreams", []), l(this, "audioSSRC", 0), l(this, "focused", !1)
                 }
             }
         },
@@ -163889,8 +163897,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713463703234",
-                                    build_number: "285842"
+                                    built_at: "1713464013915",
+                                    build_number: "285845"
                                 }
                             },
                             retries: 1
@@ -241056,7 +241064,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d39c392f78a8f68fe91fe9633743bdb3fb8cc75e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a8fff0df096382c030deb09f866ac255804a6dd5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269515,7 +269523,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285842"
+                                build_number: "285845"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276700,7 +276708,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285842", "285842"), 10);
+                let s = parseInt((n = "285845", "285845"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -303886,4 +303894,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.ee708af58a0e810eef53.js.map
+//# sourceMappingURL=73050.30fe69bc087bcc23737f.js.map
