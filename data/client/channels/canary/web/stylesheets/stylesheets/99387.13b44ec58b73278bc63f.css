@@ -23371,26 +23371,27 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     line-height: 15px
 }
 
-.pronouns__39452 {
+.tags__17646 {
     background: var(--bg-mod-faint);
-    border-radius: var(--radius-xs);
+    border-radius: var(--radius-xs)
+}
+
+.theme-dark.custom-profile-theme .tags__17646 {
+    background: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-5))
+}
+
+.theme-light.custom-profile-theme .tags__17646 {
+    background: rgb(var(--bg-overlay-color)/.4)
+}
+
+.pronouns__39452 {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
     padding: 3px 4px
 }
 
-.theme-dark.custom-profile-theme .pronouns__39452 {
-    background: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-5))
-}
-
-.theme-light.custom-profile-theme .pronouns__39452 {
-    background: rgb(var(--bg-overlay-color)/.4)
-}
-
 .badges__89cab {
-    background: var(--bg-mod-faint);
-    border-radius: var(--radius-xs);
     min-height: auto;
     padding: 1px 2px;
     gap: 1px
@@ -134488,4 +134489,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.fa696fe99844871b4c61.css.map*/
+/*# sourceMappingURL=99387.13b44ec58b73278bc63f.css.map*/
