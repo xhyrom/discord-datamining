@@ -36660,7 +36660,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285861", ", Version Hash: ").concat("136325ce9eca876e9e7c8ab8b1d3c14cb4c516b4")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285874", ", Version Hash: ").concat("05b330dda585953c03389b7875360a6ba17e194a")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86597,8 +86597,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285861", "285861"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285861")), t = 0), t
+                let t = parseInt((e = "285874", "285874"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285874")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110769,8 +110769,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285861",
-                    versionHash: "136325ce9eca876e9e7c8ab8b1d3c14cb4c516b4"
+                    buildNumber: "285874",
+                    versionHash: "05b330dda585953c03389b7875360a6ba17e194a"
                 }
             }
             n.r(t), n.d(t, {
@@ -112113,12 +112113,9 @@
                     if (!(0, a.isEligibleForDmSettingsUpsell)({
                             location: "DmSettingsUpsellManager"
                         })) return;
-                    let t = (0, a.isInStaffBypassForDmSettingsUpsell)({
-                            location: "DmSettingsUpsellManager"
-                        }),
-                        l = r.Storage.get(o.DM_SETTINGS_UPSELL_LAST_SHOWN_KEY),
-                        u = Date.now();
-                    (null == l || u - l > o.DM_SETTINGS_UPSELL_LAST_SHOWN_MAX_TIME_MS || t) && (r.Storage.set(o.DM_SETTINGS_UPSELL_LAST_SHOWN_KEY, u), (0, s.openModalLazy)(async () => {
+                    let t = r.Storage.get(o.DM_SETTINGS_UPSELL_LAST_SHOWN_KEY),
+                        l = Date.now();
+                    (null == t || l - t > o.DM_SETTINGS_UPSELL_LAST_SHOWN_MAX_TIME_MS) && (r.Storage.set(o.DM_SETTINGS_UPSELL_LAST_SHOWN_KEY, l), (0, s.openModalLazy)(async () => {
                         let {
                             default: t
                         } = await Promise.all([n.e("99387"), n.e("35489")]).then(n.bind(n, "582712"));
@@ -112147,62 +112144,37 @@
             "use strict";
             n.r(t), n.d(t, {
                 isEligibleForDmSettingsUpsell: function() {
-                    return a
-                },
-                isInStaffBypassForDmSettingsUpsell: function() {
-                    return o
+                    return r
                 }
             });
-            var i = n("818083");
-            let r = (0, i.createExperiment)({
-                    kind: "user",
-                    id: "2024-04_dm_settings_upsell",
-                    label: "DM Settings Upsell",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 1,
-                        label: "Enable DM Settings Upsell",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                }),
-                s = (0, i.createExperiment)({
-                    kind: "user",
-                    id: "2024-04_dm_settings_upsell_staff_bypass",
-                    label: "DM Settings Upsell Staff Bypass",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 1,
-                        label: "Enable DM Settings Upsell Staff Bypass to ignore cooldown",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                });
-
-            function a(e) {
-                let {
-                    location: t,
-                    autoTrackExposure: n = !1
-                } = e;
-                return r.getCurrentConfig({
-                    location: t
+            let i = (0, n("818083").createExperiment)({
+                kind: "user",
+                id: "2024-04_dm_settings_upsell",
+                label: "DM Settings Upsell",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enable DM Settings Upsell (with upsell threshold at 2 rejected MRs)",
+                    config: {
+                        enabled: !0
+                    }
                 }, {
-                    autoTrackExposure: n
-                }).enabled
-            }
+                    id: 2,
+                    label: "Enable DM Settings Upsell (with upsell threshold at 3 rejected MRs)",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            });
 
-            function o(e) {
+            function r(e) {
                 let {
                     location: t,
                     autoTrackExposure: n = !1
                 } = e;
-                return s.getCurrentConfig({
+                return i.getCurrentConfig({
                     location: t
                 }, {
                     autoTrackExposure: n
@@ -163899,8 +163871,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713466030420",
-                                    build_number: "285861"
+                                    built_at: "1713467063247",
+                                    build_number: "285874"
                                 }
                             },
                             retries: 1
@@ -241066,7 +241038,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "136325ce9eca876e9e7c8ab8b1d3c14cb4c516b4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "05b330dda585953c03389b7875360a6ba17e194a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269525,7 +269497,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285861"
+                                build_number: "285874"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276710,7 +276682,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285861", "285861"), 10);
+                let s = parseInt((n = "285874", "285874"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -303896,4 +303868,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.ed334e6069db4d729421.js.map
+//# sourceMappingURL=73050.be7aacd76ee6327e3d37.js.map
