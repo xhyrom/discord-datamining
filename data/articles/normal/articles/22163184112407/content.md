@@ -15,6 +15,13 @@
             <li><a href="https://support.discord.com/hc/en-us/articles/22163184112407#h_01HSED5BPE6P59JJ15321H9R8R">Mobile</a></li>
         </ul>
     </li>
+    <li>
+        <a href="https://support.discord.com/hc/en-us/articles/22163184112407#h_01HVSGXPCG8PK498N68J129SQH">How to manage Poll Permissions as a Server Owner/Administrator</a>
+        <ul>
+            <li><a href="https://support.discord.com/hc/en-us/articles/22163184112407#h_01HVSGXPCGB1DRTY1KD87BZM1Q">Role Permission</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/22163184112407#h_01HVSGXPCGFDEVCDY6JQY15GSY">Channel Permission</a></li>
+        </ul>
+    </li>
     <li><a href="https://support.discord.com/hc/en-us/articles/22163184112407#h_01HSED5BPEDH4YYFVVCXQ2NKZ1">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01HSED5BPEA50Y83ZT0A73ZPNC">What is Polls?</h1>
@@ -63,10 +70,22 @@
 <p>2. Next, tap on <strong>Vote</strong> to submit your answer.</p>
 <p>3. You’ll know your vote has gone through because you’ll see a check mark next to your vote.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22214930043415" width="391" height="427"></p>
+<h1 id="h_01HVSGXPCG8PK498N68J129SQH">How to manage Poll Permissions as a Server Owner/Administrator</h1>
+<p>Permissions for Polls can be managed from a server or channel level.</p>
+<h2 id="h_01HVSGXPCGB1DRTY1KD87BZM1Q">Role Permission</h2>
+<p>1. Tap on your server’s name in the top left corner and then tap on <strong>Server Settings</strong>.</p>
+<p>2. Navigate to <strong>Roles</strong> and then select which role you’d like to change the permission for.Or tap on <strong>Default Permissions </strong>to edit this role for everyone.</p>
+<p>3. Scroll down until you see <strong>Create Polls</strong>. A “check mark” means this feature is enabled and an “x” means it’s disabled.  </p>
+<p>4. Lastly, save your changes to apply them.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22908438029463" alt="polls1.gif"></p>
+<h2 id="h_01HVSGXPCGFDEVCDY6JQY15GSY">Channel Permission</h2>
+<p>1. Navigate to the channel you want to edit and tap on the <strong>cogwheel</strong> [<img src="https://support.discord.com/hc/article_attachments/22908441670679" width="23" height="24">].</p>
+<p>2. Then, tap on <strong>Permissions</strong>. </p>
+<p>3. Under this setting you can enable or disable Polls per role. To do so, tap on the role you want to edit.</p>
+<p>4. Now scroll down until you see <strong>Create Polls</strong>. A “check mark” means this feature is enabled and an “x” means it’s disabled.  </p>
+<p>5. Lastly, save your changes to apply them.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22908441701783" alt="polls2.gif"></p>
 <h1 id="h_01HSED5BPEDH4YYFVVCXQ2NKZ1">Frequently Asked Questions</h1>
-<p><strong>Q: Can polls be started by any user?</strong></p>
-<p>A:  The server admin can set permissions for polls, both at the server and channel level. Head to <strong>Server Settings</strong> to toggle <strong>Create Polls</strong> “OFF”. This perm will be defaulted to “ON”.</p>
-<p class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/22882744740119" width="434" height="70"></strong></p>
 <p><strong>Q: Where can I start a poll? </strong></p>
 <p>A: A poll can take place in a text channel, direct message, group message, or announcement channel.  </p>
 <p><strong>Q: How can I delete a poll?</strong></p>
