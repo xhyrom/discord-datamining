@@ -56420,7 +56420,19 @@ html .progress__00e29 {
 }
 
 .clickableCard__1c1e9 {
-    cursor: pointer
+    cursor: pointer;
+    box-shadow: var(--shadow-medium);
+    transition: transform.2s, box-shadow.1s
+}
+
+.clickableCard__1c1e9:hover {
+    box-shadow: var(--shadow-high);
+    transform: translatey(-1px)
+}
+
+.clickableCard__1c1e9:active {
+    box-shadow: var(--shadow-low);
+    transform: translatey(-1px)scale(.99)
 }
 
 .card_d01b6d {
@@ -56430,7 +56442,7 @@ html .progress__00e29 {
     border-radius: 8px;
     border: 1px solid var(--border-subtle);
     overflow: hidden;
-    background: var(--bg-base-primary);
+    background: var(--background-floating);
     display: flex;
     flex-direction: column
 }
@@ -56505,6 +56517,10 @@ html .progress__00e29 {
     padding: 2px 6px
 }
 
+.clanTagChiplet__7f357:hover {
+    border-color: var(--border-strong)
+}
+
 .playstyle__9d997 {
     color: var(--role-orange)
 }
@@ -56516,9 +56532,9 @@ html .progress__00e29 {
 }
 
 .primetimeIcon_c4d213 {
-    flex: 0 0 16px;
-    width: 16px;
-    height: 16px;
+    flex: 0 0 12px;
+    width: 12px;
+    height: 12px;
     color: var(--text-muted)
 }
 
@@ -56543,10 +56559,18 @@ html .progress__00e29 {
     justify-content: center;
     align-items: center;
     gap: 4px;
-    border: 1px solid var(--border-strong);
-    background: var(--bg-base-secondary);
+    border: 1px solid var(--border-subtle);
     border-radius: 16px;
     max-width: 200px
+}
+
+.trait_dfdb34:hover {
+    border-color: var(--border-strong)
+}
+
+.highlightedTrait__03953 {
+    border-color: var(--border-strong);
+    background: var(--bg-surface-raised)
 }
 
 .cardFooter_ed5f2e {
@@ -56566,13 +56590,14 @@ html .progress__00e29 {
 .cardFooterLocation_f8cc19,
 .cardFooterLanguage_e24d40 {
     display: flex;
-    gap: 8px
+    gap: 4px;
+    align-items: center
 }
 
 .cardFooterLocationIcon__2e33a,
 .cardFooterLanguageIcon__33333 {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     color: var(--text-muted)
 }
 
@@ -56584,13 +56609,19 @@ html .progress__00e29 {
 .cardFooterGame_de9392 {
     width: 24px;
     height: 24px;
-    border-radius: 12px;
+    border-radius: 4px;
     border: 1px solid var(--border-subtle);
     overflow: hidden
 }
 
 .cardFooterGameImg_a0eeb2 {
     width: 100%
+}
+
+.overflowTooltip__7c9d4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px
 }
 
 .gameImage__8db0b {
@@ -134457,4 +134488,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.476b7d7f47ebf660e135.css.map*/
+/*# sourceMappingURL=99387.fa696fe99844871b4c61.css.map*/
