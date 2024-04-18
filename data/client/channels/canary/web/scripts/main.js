@@ -18688,22 +18688,22 @@
                     id: en,
                     tabIndex: ei,
                     itemProps: er
-                } = e, es = O.default.useName(b), ea = (null === (t = f.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === (null == b ? void 0 : b.id), [eo, el] = r.useState(!1), [eu, ed] = r.useState(null), {
-                    avatarDecorationSrc: e_,
-                    avatarSrc: ec,
-                    eventHandlers: eE
+                } = e, es = O.default.useName(b), ea = (null === (t = f.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === (null == b ? void 0 : b.id), eo = r.useRef(null), [el, eu] = r.useState(!1), [ed, e_] = r.useState(null), {
+                    avatarDecorationSrc: ec,
+                    avatarSrc: eE,
+                    eventHandlers: eI
                 } = (0, T.default)({
                     user: b,
                     size: l.AvatarSizes.SIZE_32,
-                    animateOnHover: !(n || eo),
+                    animateOnHover: !(n || el),
                     guildId: Y
-                }), eI = (0, E.useQuestFromActivities)(w), eT = null != eI && !ea && n, ef = () => {
-                    el(!0)
-                }, eS = () => {
-                    el(!1)
-                }, eh = e => {
-                    ed(e)
-                }, eA = () => {
+                }), eT = (0, E.useQuestFromActivities)(w), ef = null != eT && !ea && n, eS = () => {
+                    eu(!0)
+                }, eh = () => {
+                    eu(!1)
+                }, eA = e => {
+                    e_(e)
+                }, em = () => {
                     let e = null != w ? w.find(e => e.type === C.ActivityTypes.CUSTOM_STATUS) : null,
                         t = null != e && null != b && (0, _.default)(e, b, H);
                     return (0, i.jsx)(R.default, {
@@ -18712,19 +18712,19 @@
                         emojiClassName: v.activityEmoji,
                         activities: w,
                         applicationStream: B,
-                        animate: eo,
+                        animate: el,
                         hideEmoji: !t,
                         hideTooltip: !0,
                         user: b,
-                        hasQuest: null != eI
+                        hasQuest: null != eT
                     })
-                }, em = () => null != p && p && null == y ? (0, i.jsx)(l.Tooltip, {
+                }, eN = () => null != p && p && null == y ? (0, i.jsx)(l.Tooltip, {
                     text: null != M ? M : D.default.Messages.GUILD_OWNER,
                     children: e => (0, i.jsx)(A.default, {
                         ...e,
                         className: v.ownerIcon
                     })
-                }) : null, eN = () => null == x ? null : (0, i.jsx)(l.Tooltip, {
+                }) : null, ep = () => null == x ? null : (0, i.jsx)(l.Tooltip, {
                     text: D.default.Messages.PREMIUM_GUILD_SUBSCRIPTION_TOOLTIP.format({
                         date: x
                     }),
@@ -18736,37 +18736,37 @@
                             className: v.premiumIcon
                         })
                     })
-                }), ep = () => {
+                }), eO = () => {
                     let e = (null == b ? void 0 : b.isClyde()) ? g.BotTagTypes.AI : g.BotTagTypes.BOT;
                     return null != b && b.bot ? (0, i.jsx)(S.default, {
                         className: v.botTag,
                         type: e,
                         verified: b.isVerifiedBot()
                     }) : null
-                }, eO = () => (0, i.jsxs)(i.Fragment, {
-                    children: [ep(), em(), eN()]
-                }), eR = (e, t) => {
+                }, eR = () => (0, i.jsxs)(i.Fragment, {
+                    children: [eO(), eN(), ep()]
+                }), eC = (e, t) => {
                     let n = F ? l.AnimatedAvatar : l.Avatar,
                         r = (0, u.default)(w) ? C.StatusTypes.STREAMING : k;
                     return r = t ? void 0 : r, (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(n, {
-                            ...eE,
+                            ...eI,
                             size: l.AvatarSizes.SIZE_32,
-                            src: ec,
+                            src: eE,
                             isMobile: V,
                             isTyping: P,
                             status: r,
                             "aria-label": e.username,
                             statusTooltip: !0,
-                            avatarDecoration: e_,
-                            typingIndicatorRef: eh
+                            avatarDecoration: ec,
+                            typingIndicatorRef: eA
                         }), (0, i.jsx)(c.default, {
-                            confettiSpawnRef: eu,
+                            confettiSpawnRef: ed,
                             shouldFire: P && null != G && e.id !== G.id,
                             confettiLocation: L.ConfettiLocation.MEMBER_USER
                         })]
                     })
-                }, eC = () => (0, i.jsxs)(i.Fragment, {
+                }, eg = () => (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(l.NameWithRole, {
                         roleName: o,
                         color: null != s ? s : void 0,
@@ -18778,48 +18778,53 @@
                         disableTooltip: !0,
                         className: v.clanTag
                     })]
-                }), eg = k === C.StatusTypes.OFFLINE;
+                }), eL = k === C.StatusTypes.OFFLINE;
                 return null == b ? (0, i.jsx)(h.default, {
                     avatarSize: l.AvatarSizes.SIZE_32,
                     className: v.placeholder
                 }) : (0, i.jsx)(l.Popout, {
-                    renderPopout: e => (0, i.jsx)(I.default, {
-                        quest: eI,
-                        applicationStream: B,
-                        onClosePopout: W,
-                        ...e
-                    }),
+                    renderPopout: e => {
+                        var t, n;
+                        return (0, i.jsx)(I.default, {
+                            quest: eT,
+                            applicationStream: B,
+                            width: null !== (n = null === (t = eo.current) || void 0 === t ? void 0 : t.clientWidth) && void 0 !== n ? n : 222,
+                            onClosePopout: W,
+                            ...e
+                        })
+                    },
                     position: "bottom",
-                    shouldShow: eT,
+                    shouldShow: ef,
                     nudgeAlignIntoViewport: !1,
-                    animation: l.Popout.Animation.FADE,
-                    spacing: 0,
+                    animation: l.Popout.Animation.NONE,
+                    spacing: -3,
                     children: () => (0, i.jsx)(N.default, {
+                        ref: eo,
                         selected: n,
                         className: a()(v.member, j, {
-                            [v.offline]: eg && !n
+                            [v.offline]: eL && !n
                         }),
                         innerClassName: v.memberInner,
                         onClick: X,
                         onKeyDown: z,
                         onMouseDown: K,
                         onContextMenu: Q,
-                        onMouseEnter: ef,
-                        onMouseLeave: eS,
+                        onMouseEnter: eS,
+                        onMouseLeave: eh,
                         name: null == y ? (0, i.jsx)("span", {
                             className: v.username,
-                            children: eC()
+                            children: eg()
                         }) : (0, i.jsx)(l.Tooltip, {
                             text: y,
                             children: e => (0, i.jsx)("span", {
                                 ...e,
                                 className: a()(v.username, v.lostPermission),
-                                children: eC()
+                                children: eg()
                             })
                         }),
-                        avatar: eR(b, eg),
-                        subText: eA(),
-                        decorators: eO(),
+                        avatar: eC(b, eL),
+                        subText: em(),
+                        decorators: eR(),
                         "aria-controls": J,
                         "aria-expanded": $,
                         "aria-setsize": et,
@@ -36660,7 +36665,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286008", ", Version Hash: ").concat("209646275f3cdf9300214ecd104f4abe3e9558ae")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286020", ", Version Hash: ").concat("38160dd02ff4f820c290a3120dd04754d5d26943")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86624,8 +86629,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286008", "286008"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286008")), t = 0), t
+                let t = parseInt((e = "286020", "286020"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286020")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110796,8 +110801,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286008",
-                    versionHash: "209646275f3cdf9300214ecd104f4abe3e9558ae"
+                    buildNumber: "286020",
+                    versionHash: "38160dd02ff4f820c290a3120dd04754d5d26943"
                 }
             }
             n.r(t), n.d(t, {
@@ -163940,8 +163945,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713477580756",
-                                    build_number: "286008"
+                                    built_at: "1713478385872",
+                                    build_number: "286020"
                                 }
                             },
                             retries: 1
@@ -173197,37 +173202,40 @@
         281494: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                checkRecipientEligibility: function() {
-                    return _
+                ReferralOfferStatus: function() {
+                    return i
                 },
-                createReferralTrial: function() {
+                checkRecipientEligibility: function() {
                     return E
                 },
+                createReferralTrial: function() {
+                    return T
+                },
                 createReferralTrials: function() {
-                    return c
+                    return I
                 },
                 fetchReferralEligibleUsers: function() {
-                    return u
+                    return _
                 },
                 fetchReferralsRemaining: function() {
-                    return d
+                    return c
                 },
                 resolveReferralTrialOffer: function() {
-                    return I
+                    return f
                 }
-            }), n("653041"), n("47120");
-            var i = n("544891"),
-                r = n("570140"),
-                s = n("904245"),
-                a = n("598077"),
-                o = n("944486"),
-                l = n("981631");
-            async function u(e, t) {
+            }), n("47120"), n("653041");
+            var i, r, s = n("544891"),
+                a = n("570140"),
+                o = n("904245"),
+                l = n("598077"),
+                u = n("944486"),
+                d = n("981631");
+            async function _(e, t) {
                 let {
                     users: n,
-                    next_index: r
-                } = (await i.HTTP.post({
-                    url: l.Endpoints.GET_REFERRAL_ELIGIBLE_USERS,
+                    next_index: i
+                } = (await s.HTTP.post({
+                    url: d.Endpoints.GET_REFERRAL_ELIGIBLE_USERS,
                     body: {
                         index: e,
                         limit: 30,
@@ -173236,100 +173244,107 @@
                     oldFormErrors: !0
                 })).body;
                 return {
-                    users: n.map(e => new a.default(e)),
-                    nextIndex: r
+                    users: n.map(e => new l.default(e)),
+                    nextIndex: i
                 }
-            }
-            let d = () => (r.default.dispatch({
+            }(r = i || (i = {}))[r.REDEEMED = 1] = "REDEEMED", r[r.PENDING = 2] = "PENDING";
+            let c = () => (a.default.dispatch({
                     type: "BILLING_REFERRALS_REMAINING_FETCH_START"
-                }), i.HTTP.get({
-                    url: l.Endpoints.GET_REFERRALS_REMAINING,
+                }), s.HTTP.get({
+                    url: d.Endpoints.GET_REFERRALS_REMAINING,
                     oldFormErrors: !0
                 }).then(e => {
                     var t, n;
-                    r.default.dispatch({
+                    let i = new Map;
+                    if (null != e.body && null != e.body.recipient_status)
+                        for (let t in e.body.recipient_status) {
+                            let n = e.body.recipient_status[t];
+                            i.set(t, n)
+                        }
+                    a.default.dispatch({
                         type: "BILLING_REFERRALS_REMAINING_FETCH_SUCCESS",
                         referrals_remaining: null != e.body && null != e.body.referrals_remaining ? e.body.referrals_remaining : 0,
                         sent_user_ids: null != e.body && null != e.body.sent_user_ids ? e.body.sent_user_ids : [],
-                        refresh_at: null !== (n = null === (t = e.body) || void 0 === t ? void 0 : t.refresh_at) && void 0 !== n ? n : null
+                        refresh_at: null !== (n = null === (t = e.body) || void 0 === t ? void 0 : t.refresh_at) && void 0 !== n ? n : null,
+                        recipient_status: i
                     })
                 }, () => {
-                    r.default.dispatch({
+                    a.default.dispatch({
                         type: "BILLING_REFERRALS_REMAINING_FETCH_FAIL"
                     })
                 })),
-                _ = e => (r.default.dispatch({
+                E = e => (a.default.dispatch({
                     type: "BILLING_CREATE_REFERRAL_PREVIEW_START",
                     recipientId: e
-                }), i.HTTP.post({
-                    url: l.Endpoints.CREATE_REFERRAL_PREVIEW(e),
+                }), s.HTTP.post({
+                    url: d.Endpoints.CREATE_REFERRAL_PREVIEW(e),
                     oldFormErrors: !0
                 }).then(t => {
-                    r.default.dispatch({
+                    a.default.dispatch({
                         type: "BILLING_CREATE_REFERRAL_PREVIEW_SUCCESS",
                         recipientId: e,
                         is_eligible: null != t.body && t.body.is_eligible
                     })
                 }, () => {
-                    r.default.dispatch({
+                    a.default.dispatch({
                         type: "BILLING_CREATE_REFERRAL_PREVIEW_FAIL",
                         recipientId: e
                     })
                 }));
-            async function c(e) {
+            async function I(e) {
                 let t = [];
-                for (let r of e) {
+                for (let i of e) {
                     var n;
-                    let e = null !== (n = (await i.HTTP.post({
-                        url: l.Endpoints.CREATE_REFERRAL(r),
+                    let e = null !== (n = (await s.HTTP.post({
+                        url: d.Endpoints.CREATE_REFERRAL(i),
                         oldFormErrors: !0
                     })).body) && void 0 !== n ? n : null;
                     null != e && t.push(e)
                 }
-                return r.default.dispatch({
+                return a.default.dispatch({
                     type: "CREATE_REFERRALS_SUCCESS",
                     userTrialOffers: t
                 }), t
             }
-            async function E(e) {
+            async function T(e) {
                 try {
                     var t;
-                    let n = await i.HTTP.post({
-                            url: l.Endpoints.CREATE_REFERRAL(e),
+                    let n = await s.HTTP.post({
+                            url: d.Endpoints.CREATE_REFERRAL(e),
                             oldFormErrors: !0
                         }),
-                        s = null !== (t = n.body) && void 0 !== t ? t : null;
-                    return r.default.dispatch({
+                        i = null !== (t = n.body) && void 0 !== t ? t : null;
+                    return a.default.dispatch({
                         type: "BILLING_CREATE_REFERRAL_SUCCESS",
-                        userTrialOffer: s
+                        userTrialOffer: i
                     }), {
-                        userTrialOffer: s
+                        userTrialOffer: i
                     }
                 } catch (e) {
-                    if (r.default.dispatch({
+                    if (a.default.dispatch({
                             type: "BILLING_CREATE_REFERRAL_FAIL"
-                        }), e.body.code === l.AbortCodes.INVALID_MESSAGE_SEND_USER) {
-                        let t = o.default.getCurrentlySelectedChannelId();
-                        null != t && s.default.sendClydeError(t, e.body.code)
+                        }), e.body.code === d.AbortCodes.INVALID_MESSAGE_SEND_USER) {
+                        let t = u.default.getCurrentlySelectedChannelId();
+                        null != t && o.default.sendClydeError(t, e.body.code)
                     }
                 }
             }
-            async function I(e) {
+            async function f(e) {
                 try {
                     var t;
-                    let n = await i.HTTP.get({
-                            url: l.Endpoints.REFERRAL_OFFER_ID_RESOLVE(e),
+                    let n = await s.HTTP.get({
+                            url: d.Endpoints.REFERRAL_OFFER_ID_RESOLVE(e),
                             oldFormErrors: !0
                         }),
-                        s = null !== (t = n.body) && void 0 !== t ? t : null;
-                    return r.default.dispatch({
+                        i = null !== (t = n.body) && void 0 !== t ? t : null;
+                    return a.default.dispatch({
                         type: "BILLING_REFERRAL_RESOLVE_SUCCESS",
-                        userTrialOffer: s
+                        userTrialOffer: i
                     }), {
-                        userTrialOffer: s
+                        userTrialOffer: i
                     }
                 } catch (t) {
-                    r.default.dispatch({
+                    a.default.dispatch({
                         type: "BILLING_REFERRAL_RESOLVE_FAIL",
                         userTrialOfferId: e
                     })
@@ -173348,45 +173363,46 @@
             let E = null,
                 I = {},
                 T = [],
-                f = new Set,
-                S = !1,
-                h = new Set,
+                f = new Map,
+                S = new Set,
+                h = !1,
                 A = new Set,
-                m = {},
-                N = 0,
-                p = null,
-                O = [],
-                R = !1,
-                C = 0,
-                g = !1,
-                L = null,
-                D = () => !0;
-
-            function v(e) {
-                h.add(e)
-            }
+                m = new Set,
+                N = {},
+                p = 0,
+                O = null,
+                R = [],
+                C = !1,
+                g = 0,
+                L = !1,
+                D = null,
+                v = () => !0;
 
             function M(e) {
-                let {
-                    messages: t
-                } = e;
-                t.forEach(e => y(e))
+                A.add(e)
             }
 
             function y(e) {
+                let {
+                    messages: t
+                } = e;
+                t.forEach(e => P(e))
+            }
+
+            function P(e) {
                 let t = e.type === o.MessageTypes.PREMIUM_REFERRAL ? e.content : null;
                 if (null == t) return !1;
-                if (!A.has(t) && !h.has(t)) {
+                if (!m.has(t) && !A.has(t)) {
                     var n;
-                    n = t, h.add(n), u.default.wait(() => (0, _.resolveReferralTrialOffer)(t).catch(c.NOOP_NULL))
+                    n = t, A.add(n), u.default.wait(() => (0, _.resolveReferralTrialOffer)(t).catch(c.NOOP_NULL))
                 }
             }
-            class P extends(i = l.default.Store) {
+            class U extends(i = l.default.Store) {
                 initialize() {
-                    this.waitFor(d.default), this.syncWith([d.default], D)
+                    this.waitFor(d.default), this.syncWith([d.default], v)
                 }
                 checkAndFetchReferralsRemaining() {
-                    null == E && !S && N < 5 && (null == p || p < Date.now()) && (0, _.fetchReferralsRemaining)()
+                    null == E && !h && p < 5 && (null == O || O < Date.now()) && (0, _.fetchReferralsRemaining)()
                 }
                 getReferralsRemaining() {
                     return this.checkAndFetchReferralsRemaining(), E
@@ -173395,137 +173411,141 @@
                     return this.checkAndFetchReferralsRemaining(), null == T ? [] : T
                 }
                 isFetchingReferralsRemaining() {
-                    return S
+                    return h
                 }
                 isFetchingRecipientEligibility(e) {
-                    return f.has(e)
+                    return S.has(e)
                 }
                 getRecipientEligibility(e) {
-                    return void 0 === I[e] && !f.has(e) && (0, _.checkRecipientEligibility)(e), I[e]
+                    return void 0 === I[e] && !S.has(e) && (0, _.checkRecipientEligibility)(e), I[e]
                 }
                 getRelevantUserTrialOffer(e) {
-                    return m[e]
+                    return N[e]
                 }
                 isResolving(e) {
-                    return h.has(e)
+                    return A.has(e)
                 }
                 getEligibleUsers() {
-                    return O
-                }
-                getFetchingEligibleUsers() {
                     return R
                 }
-                getNextIndexOfEligibleUsers() {
+                getFetchingEligibleUsers() {
                     return C
                 }
-                getIsEligibleToSendReferrals() {
+                getNextIndexOfEligibleUsers() {
                     return g
                 }
-                getRefreshAt() {
+                getIsEligibleToSendReferrals() {
                     return L
                 }
+                getRefreshAt() {
+                    return D
+                }
                 getRelevantReferralTrialOffers() {
-                    return m
+                    return N
+                }
+                getRecipientStatus() {
+                    return f
                 }
             }
-            a = "ReferralTrialStore", (s = "displayName") in(r = P) ? Object.defineProperty(r, s, {
+            a = "ReferralTrialStore", (s = "displayName") in(r = U) ? Object.defineProperty(r, s, {
                 value: a,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : r[s] = a, t.default = new P(u.default, {
+            }) : r[s] = a, t.default = new U(u.default, {
                 BILLING_REFERRAL_TRIAL_OFFER_UPDATE: function(e) {
                     let {
                         userTrialOfferId: t,
                         recipientId: n
                     } = e;
-                    if (!S && (0, _.fetchReferralsRemaining)(), !f.has(n) && (0, _.checkRecipientEligibility)(n), !h.has(t)) {
+                    if (!h && (0, _.fetchReferralsRemaining)(), !S.has(n) && (0, _.checkRecipientEligibility)(n), !A.has(t)) {
                         var i;
-                        i = t, h.add(i), u.default.wait(() => (0, _.resolveReferralTrialOffer)(t).catch(c.NOOP_NULL))
+                        i = t, A.add(i), u.default.wait(() => (0, _.resolveReferralTrialOffer)(t).catch(c.NOOP_NULL))
                     }
                 },
                 BILLING_REFERRALS_REMAINING_FETCH_START: function(e) {
                     let {} = e;
-                    g = !1, L = null, S = !0
+                    L = !1, D = null, h = !0
                 },
                 BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: function(e) {
                     let {
                         referrals_remaining: t,
                         sent_user_ids: n,
-                        refresh_at: i
+                        refresh_at: i,
+                        recipient_status: r
                     } = e;
-                    g = null == i, S = !1, E = t, T = n, L = i
+                    L = null == i, h = !1, E = t, T = n, D = i, f = r
                 },
                 BILLING_REFERRALS_REMAINING_FETCH_FAIL: function(e) {
                     let {} = e;
-                    g = !1, L = null, S = !1, N += 1, p = Date.now() + 1e3 * Math.pow(2, N)
+                    L = !1, D = null, h = !1, p += 1, O = Date.now() + 1e3 * Math.pow(2, p)
                 },
                 BILLING_CREATE_REFERRAL_PREVIEW_START: function(e) {
                     let {
                         recipientId: t
                     } = e;
-                    f.add(t)
+                    S.add(t)
                 },
                 BILLING_CREATE_REFERRAL_PREVIEW_SUCCESS: function(e) {
                     let {
                         recipientId: t,
                         is_eligible: n
                     } = e;
-                    I[t] = n, f.delete(t)
+                    I[t] = n, S.delete(t)
                 },
                 BILLING_CREATE_REFERRAL_PREVIEW_FAIL: function(e) {
                     let {
                         recipientId: t
                     } = e;
-                    I[t] = !1, f.delete(t)
+                    I[t] = !1, S.delete(t)
                 },
                 BILLING_CREATE_REFERRAL_SUCCESS: function(e) {
                     let {
                         userTrialOffer: t
                     } = e;
-                    (0, _.fetchReferralsRemaining)(), m[t.id] = t, T = [...T, t.user_id]
+                    (0, _.fetchReferralsRemaining)(), N[t.id] = t, T = [...T, t.user_id]
                 },
                 CREATE_REFERRALS_SUCCESS: function(e) {
                     let {
                         userTrialOffers: t
                     } = e;
-                    for (let e of ((0, _.fetchReferralsRemaining)(), t)) m[e.id] = e, T = [...T, e.user_id]
+                    for (let e of ((0, _.fetchReferralsRemaining)(), t)) N[e.id] = e, T = [...T, e.user_id]
                 },
                 BILLING_REFERRAL_RESOLVE_SUCCESS: function(e) {
                     let {
                         userTrialOffer: t
                     } = e;
-                    null != t && (h.delete(t.id), A.add(t.id), m[t.id] = t)
+                    null != t && (A.delete(t.id), m.add(t.id), N[t.id] = t)
                 },
                 BILLING_REFERRAL_RESOLVE_FAIL: function(e) {
                     let {
                         userTrialOfferId: t
                     } = e;
-                    h.delete(t), A.add(t)
+                    A.delete(t), m.add(t)
                 },
                 REFERRALS_FETCH_ELIGIBLE_USER_START: function() {
-                    R = !0
+                    C = !0
                 },
                 REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: function(e) {
                     let {
                         users: t,
                         nextIndex: n
                     } = e;
-                    R = !1, O = t, C = n
+                    C = !1, R = t, g = n
                 },
                 REFERRALS_FETCH_ELIGIBLE_USER_FAIL: function() {
-                    R = !1
+                    C = !1
                 },
-                LOAD_MESSAGES_SUCCESS: M,
+                LOAD_MESSAGES_SUCCESS: y,
                 MESSAGE_CREATE: function(e) {
                     let {
                         message: t
                     } = e;
-                    y(t)
+                    P(t)
                 },
-                LOAD_MESSAGES_AROUND_SUCCESS: M,
+                LOAD_MESSAGES_AROUND_SUCCESS: y,
                 LOGOUT: function() {
-                    E = null, I = {}, T = [], f = new Set, S = !1, h = new Set, A = new Set, m = {}, N = 0, p = null, O = [], R = !1, C = 0, g = !1, L = null
+                    E = null, I = {}, T = [], S = new Set, h = !1, A = new Set, m = new Set, N = {}, p = 0, O = null, R = [], C = !1, g = 0, L = !1, D = null, f = new Map
                 }
             })
         },
@@ -183116,183 +183136,210 @@
         },
         553393: function(e, t, n) {
             "use strict";
-            n.r(t);
-            var i = n("735250");
-            n("470079");
-            var r = n("946835"),
-                s = n("442837"),
-                a = n("780384"),
-                o = n("481060"),
-                l = n("287734"),
-                u = n("872810"),
-                d = n("230711"),
-                _ = n("258609"),
-                c = n("102172"),
-                E = n("210887"),
-                I = n("592125"),
-                T = n("430824"),
-                f = n("496675"),
-                S = n("979651"),
-                h = n("617136"),
-                A = n("113434"),
-                m = n("497505"),
-                N = n("918701"),
-                p = n("874137"),
-                O = n("644646"),
-                R = n("667105"),
-                C = n("981631"),
-                g = n("231338"),
-                L = n("689938"),
-                D = n("258758");
-            let v = "11px";
+            n.r(t), n("47120");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("718017"),
+                a = n("946835"),
+                o = n("442837"),
+                l = n("780384"),
+                u = n("481060"),
+                d = n("287734"),
+                _ = n("872810"),
+                c = n("230711"),
+                E = n("393238"),
+                I = n("607070"),
+                T = n("258609"),
+                f = n("102172"),
+                S = n("210887"),
+                h = n("592125"),
+                A = n("430824"),
+                m = n("496675"),
+                N = n("979651"),
+                p = n("617136"),
+                O = n("113434"),
+                R = n("497505"),
+                C = n("918701"),
+                g = n("874137"),
+                L = n("644646"),
+                D = n("667105"),
+                v = n("981631"),
+                M = n("231338"),
+                y = n("689938"),
+                P = n("258758");
+            let U = "11px";
 
-            function M(e) {
+            function b(e) {
                 return null != e
             }
             t.default = function(e) {
-                var t, M, y;
+                var t, b, G;
                 let {
-                    quest: P,
-                    applicationStream: U,
-                    position: b,
-                    onClosePopout: G,
-                    closePopout: w
-                } = e, B = (0, R.useHandleClaimQuestsReward)({
-                    quest: P,
-                    location: m.QuestContent.MEMBERS_LIST
-                }), k = (0, A.useIsQuestExpired)(P), F = (null == P ? void 0 : null === (t = P.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, V = (null == P ? void 0 : null === (M = P.userStatus) || void 0 === M ? void 0 : M.enrolledAt) != null, x = (null == P ? void 0 : null === (y = P.userStatus) || void 0 === y ? void 0 : y.completedAt) != null, H = (0, s.useStateFromStores)([E.default], () => E.default.getState().theme), Y = (0, a.isThemeDark)(H) ? g.ThemeTypes.DARK : g.ThemeTypes.LIGHT;
-                if (null == P || k || F && !(null != U)) return null;
-                let j = () => {
-                        (0, h.trackQuestContentClicked)({
-                            questId: P.id,
-                            questContent: m.QuestContent.MEMBERS_LIST,
-                            questContentCTA: h.QuestContentCTA.OPEN_DISCLOSURE,
+                    quest: w,
+                    width: B,
+                    applicationStream: k,
+                    position: F,
+                    onClosePopout: V,
+                    closePopout: x
+                } = e, H = (0, D.useHandleClaimQuestsReward)({
+                    quest: w,
+                    location: R.QuestContent.MEMBERS_LIST
+                }), Y = (0, O.useIsQuestExpired)(w), j = (null == w ? void 0 : null === (t = w.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, W = (null == w ? void 0 : null === (b = w.userStatus) || void 0 === b ? void 0 : b.enrolledAt) != null, K = (null == w ? void 0 : null === (G = w.userStatus) || void 0 === G ? void 0 : G.completedAt) != null, z = (0, o.useStateFromStores)([S.default], () => S.default.getState().theme), X = (0, l.isThemeDark)(z) ? M.ThemeTypes.DARK : M.ThemeTypes.LIGHT, Q = (0, o.useStateFromStores)([I.default], () => I.default.useReducedMotion), {
+                    ref: q,
+                    height: Z
+                } = (0, E.default)(), [J, $] = r.useState(Q), ee = (0, s.useSpring)({
+                    from: {
+                        height: 0,
+                        opacity: .7
+                    },
+                    height: null != Z ? Z : 0,
+                    opacity: 1,
+                    config: {
+                        mass: 1,
+                        tension: 170,
+                        friction: 26,
+                        precision: .01,
+                        velocity: 0
+                    },
+                    immediate: Q,
+                    onRest: () => $(!0)
+                });
+                if (null == w || Y || j && !(null != k)) return null;
+                let et = () => {
+                        (0, p.trackQuestContentClicked)({
+                            questId: w.id,
+                            questContent: R.QuestContent.MEMBERS_LIST,
+                            questContentCTA: p.QuestContentCTA.OPEN_DISCLOSURE,
                             trackGuildAndChannelMetadata: !0
-                        }), (0, o.openModalLazy)(async () => {
+                        }), (0, u.openModalLazy)(async () => {
                             let {
                                 default: e
                             } = await Promise.all([n.e("99387"), n.e("59286")]).then(n.bind(n, "316210"));
                             return t => (0, i.jsx)(e, {
                                 ...t,
-                                questContent: m.QuestContent.MEMBERS_LIST,
-                                questConfig: P.config
+                                questContent: R.QuestContent.MEMBERS_LIST,
+                                questConfig: w.config
                             })
                         })
                     },
-                    W = () => {
-                        (0, h.trackQuestContentClicked)({
-                            questId: P.id,
-                            questContent: m.QuestContent.MEMBERS_LIST,
-                            questContentCTA: h.QuestContentCTA.LEARN_MORE,
+                    en = () => {
+                        (0, p.trackQuestContentClicked)({
+                            questId: w.id,
+                            questContent: R.QuestContent.MEMBERS_LIST,
+                            questContentCTA: p.QuestContentCTA.LEARN_MORE,
                             trackGuildAndChannelMetadata: !0
-                        }), d.default.open(C.UserSettingsSections.INVENTORY)
+                        }), c.default.open(v.UserSettingsSections.INVENTORY)
                     },
-                    K = e => {
-                        e.stopPropagation(), j()
+                    ei = e => {
+                        e.stopPropagation(), et()
                     },
-                    z = () => {
-                        if (null != U) {
-                            let e = I.default.getChannel(U.channelId);
-                            if (null != e && (0, c.canWatchStream)(e, S.default, T.default, f.default, _.default)[0]) return (0, h.trackQuestContentClicked)({
-                                questId: P.id,
-                                questContent: m.QuestContent.MEMBERS_LIST,
-                                questContentCTA: h.QuestContentCTA.WATCH_STREAM,
+                    er = () => {
+                        if (null != k) {
+                            let e = h.default.getChannel(k.channelId);
+                            if (null != e && (0, f.canWatchStream)(e, N.default, A.default, m.default, T.default)[0]) return (0, p.trackQuestContentClicked)({
+                                questId: w.id,
+                                questContent: R.QuestContent.MEMBERS_LIST,
+                                questContentCTA: p.QuestContentCTA.WATCH_STREAM,
                                 trackGuildAndChannelMetadata: !0
-                            }), l.default.selectVoiceChannel(e.id), (0, u.watchStreamAndTransitionToStream)(U)
+                            }), d.default.selectVoiceChannel(e.id), (0, _.watchStreamAndTransitionToStream)(k)
                         }
-                        W()
+                        en()
                     },
-                    X = (() => null != U ? {
-                        headerText: L.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE,
-                        ctaText: L.default.Messages.QUESTS_MEMBERS_LIST_STREAM_CTA,
-                        handleClickCta: z,
+                    es = (() => null != k ? {
+                        headerText: y.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE,
+                        ctaText: y.default.Messages.QUESTS_MEMBERS_LIST_STREAM_CTA,
+                        handleClickCta: er,
                         tileAssetType: "game"
-                    } : x && !F ? {
-                        headerText: L.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_REWARD,
-                        ctaText: L.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_REWARD_CTA,
-                        handleClickCta: B,
+                    } : K && !j ? {
+                        headerText: y.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_REWARD,
+                        ctaText: y.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_REWARD_CTA,
+                        handleClickCta: H,
                         tileAssetType: "reward"
-                    } : V ? {
-                        headerText: L.default.Messages.QUESTS_MEMBERS_LIST_FINISH,
-                        ctaText: L.default.Messages.QUESTS_MEMBERS_LIST_FINISH_CTA,
-                        handleClickCta: W,
+                    } : W ? {
+                        headerText: y.default.Messages.QUESTS_MEMBERS_LIST_FINISH,
+                        ctaText: y.default.Messages.QUESTS_MEMBERS_LIST_FINISH_CTA,
+                        handleClickCta: en,
                         tileAssetType: "reward"
                     } : {
-                        headerText: L.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE,
-                        ctaText: L.default.Messages.QUESTS_MEMBERS_LIST_START_CTA,
-                        handleClickCta: W,
+                        headerText: y.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE,
+                        ctaText: y.default.Messages.QUESTS_MEMBERS_LIST_START_CTA,
+                        handleClickCta: en,
                         tileAssetType: "game"
                     })();
-                return (0, i.jsx)(p.QuestContentImpressionTracker, {
-                    questId: P.id,
-                    questContent: m.QuestContent.MEMBERS_LIST,
+                return (0, i.jsx)(g.QuestContentImpressionTracker, {
+                    questId: w.id,
+                    questContent: R.QuestContent.MEMBERS_LIST,
                     trackGuildAndChannelMetadata: !0,
-                    children: e => (0, i.jsx)("div", {
+                    children: e => (0, i.jsx)(s.animated.div, {
                         ref: t => {
                             e.current = t
                         },
-                        className: D.wrapper,
+                        "aria-expanded": J,
+                        className: P.wrapper,
                         style: {
-                            translate: "top" === b ? "0 ".concat("3px") : "0 -".concat("3px")
+                            width: B,
+                            height: ee.height,
+                            opacity: ee.opacity,
+                            borderRadius: "top" === F ? "".concat("4px", " ").concat("4px", " 0 0") : "0 0 ".concat("4px", " ").concat("4px")
                         },
                         children: (0, i.jsxs)("div", {
-                            className: D.container,
-                            style: {
-                                borderRadius: "top" === b ? "".concat("4px", " ").concat("4px", " 0 0") : "0 0 ".concat("4px", " ").concat("4px")
+                            ref: e => {
+                                q.current = e
                             },
+                            className: P.container,
                             children: [(0, i.jsxs)("div", {
-                                className: D.top,
+                                className: P.top,
                                 children: [(0, i.jsxs)("div", {
-                                    className: D.left,
-                                    children: [(0, i.jsx)(o.Heading, {
+                                    className: P.left,
+                                    children: [(0, i.jsx)(u.Heading, {
                                         variant: "heading-sm/semibold",
-                                        children: X.headerText
-                                    }), (0, i.jsxs)(o.Clickable, {
-                                        className: D.help,
+                                        children: es.headerText
+                                    }), (0, i.jsxs)(u.Clickable, {
+                                        className: P.help,
                                         onClick: e => {
-                                            w(), null == G || G(), K(e)
+                                            x(), null == V || V(), ei(e)
                                         },
-                                        children: [(0, i.jsx)(o.Text, {
+                                        children: [(0, i.jsx)(u.Text, {
                                             variant: "text-xs/medium",
                                             color: "text-muted",
-                                            children: L.default.Messages.QUESTS_MEMBERS_LIST_PROMOTED_BY.format({
-                                                gamePublisher: P.config.messages.gamePublisher
+                                            children: y.default.Messages.QUESTS_MEMBERS_LIST_PROMOTED_BY.format({
+                                                gamePublisher: w.config.messages.gamePublisher
                                             })
-                                        }), (0, i.jsx)(r.CircleQuestionIcon, {
-                                            width: v,
-                                            height: v,
-                                            color: o.tokens.colors.INTERACTIVE_MUTED
+                                        }), (0, i.jsx)(a.CircleQuestionIcon, {
+                                            width: U,
+                                            height: U,
+                                            color: u.tokens.colors.INTERACTIVE_MUTED
                                         })]
                                     })]
                                 }), (0, i.jsx)("div", {
-                                    className: D.right,
+                                    className: P.right,
                                     children: (0, i.jsxs)("div", {
-                                        className: D.imgWrapper,
+                                        className: P.imgWrapper,
                                         children: [(0, i.jsx)("div", {
-                                            className: D.imgUnderlay
-                                        }), "game" === X.tileAssetType && (0, i.jsx)("img", {
-                                            alt: L.default.Messages.QUESTS_MEMBERS_LIST_GAME_TILE_ALT.format({
-                                                gameTitle: P.config.messages.gameTitle,
-                                                gamePublisher: P.config.messages.gamePublisher
+                                            className: P.imgUnderlay
+                                        }), "game" === es.tileAssetType && (0, i.jsx)("img", {
+                                            alt: y.default.Messages.QUESTS_MEMBERS_LIST_GAME_TILE_ALT.format({
+                                                gameTitle: w.config.messages.gameTitle,
+                                                gamePublisher: w.config.messages.gamePublisher
                                             }),
-                                            className: D.assetTile,
-                                            src: (0, N.getGameTileAssetUrl)(P, Y)
-                                        }), "reward" === X.tileAssetType && (0, i.jsx)(O.default, {
-                                            className: D.assetTile,
-                                            quest: P,
-                                            questContent: m.QuestContent.MEMBERS_LIST,
+                                            className: P.assetTile,
+                                            src: (0, C.getGameTileAssetUrl)(w, X)
+                                        }), "reward" === es.tileAssetType && (0, i.jsx)(L.default, {
+                                            className: P.assetTile,
+                                            quest: w,
+                                            questContent: R.QuestContent.MEMBERS_LIST,
                                             learnMoreStyle: "icon"
                                         })]
                                     })
                                 })]
-                            }), (0, i.jsx)(o.Button, {
+                            }), (0, i.jsx)(u.Button, {
                                 onClick: () => {
-                                    w(), null == G || G(), X.handleClickCta()
+                                    x(), null == V || V(), es.handleClickCta()
                                 },
-                                color: o.Button.Colors.CUSTOM,
-                                hover: o.Button.Hovers.PRIMARY,
-                                className: D.ctaButton,
-                                children: X.ctaText
+                                color: u.Button.Colors.CUSTOM,
+                                hover: u.Button.Hovers.PRIMARY,
+                                className: P.ctaButton,
+                                children: es.ctaText
                             })]
                         })
                     })
@@ -241162,7 +241209,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "209646275f3cdf9300214ecd104f4abe3e9558ae"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "38160dd02ff4f820c290a3120dd04754d5d26943"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269621,7 +269668,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286008"
+                                build_number: "286020"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276806,7 +276853,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286008", "286008"), 10);
+                let s = parseInt((n = "286020", "286020"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -303992,4 +304039,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.57dcf98f46175df8f87b.js.map
+//# sourceMappingURL=73050.ae9973a452664ff920ac.js.map
