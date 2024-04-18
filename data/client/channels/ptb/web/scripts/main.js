@@ -36660,7 +36660,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285900", ", Version Hash: ").concat("e5df92f695099b71e5733ccf3da6bf20151af28d")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285919", ", Version Hash: ").concat("16940c100cfda86113253ccd25d865cf3fec1539")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -66692,6 +66692,22 @@
             });
             t.default = W
         },
+        452291: function(e, t, n) {
+            "use strict";
+
+            function i(e) {
+                if (null == e.location) {
+                    var t;
+                    return null !== (t = e.instanceId) && void 0 !== t ? t : ""
+                }
+                return "i-".concat(e.instanceId, "-").concat(e.location.id)
+            }
+            n.r(t), n.d(t, {
+                getIframeInstanceId: function() {
+                    return i
+                }
+            })
+        },
         424291: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -68258,70 +68274,71 @@
                 N = n("594174"),
                 p = n("566620"),
                 O = n("317381"),
-                R = n("963614"),
-                C = n("917107"),
-                g = n("208156"),
-                L = n("748492"),
-                D = n("350064"),
-                v = n("701488"),
-                M = n("918559"),
-                y = n("981631"),
-                P = n("354459"),
-                U = n("622167"),
-                b = n("438249"),
-                G = n("344534");
+                R = n("452291"),
+                C = n("963614"),
+                g = n("917107"),
+                L = n("208156"),
+                D = n("748492"),
+                v = n("350064"),
+                M = n("701488"),
+                y = n("918559"),
+                P = n("981631"),
+                U = n("354459"),
+                b = n("622167"),
+                G = n("438249"),
+                w = n("344534");
 
-            function w(e) {
+            function B(e) {
                 let {
                     channel: t,
                     isLoading: n
-                } = e, [s, D] = r.useState(!1), w = (0, o.useStateFromStores)([O.default], () => O.default.getSelfEmbeddedActivityForChannel(t.id)), B = (0, o.useStateFromStores)([O.default], () => O.default.getActivityPanelMode()), k = (0, E.useGetOrFetchApplication)(null == w ? void 0 : w.applicationId), F = null == w ? void 0 : w.instanceId, V = (0, o.useStateFromStores)([m.default], () => m.default.getChannelId() === t.id), {
-                    dockedRect: x,
-                    isHidden: H
+                } = e, [s, v] = r.useState(!1), B = (0, o.useStateFromStores)([O.default], () => O.default.getSelfEmbeddedActivityForChannel(t.id)), k = (0, o.useStateFromStores)([O.default], () => O.default.getActivityPanelMode()), F = (0, E.useGetOrFetchApplication)(null == B ? void 0 : B.applicationId), V = null == B ? void 0 : B.instanceId, x = (0, o.useStateFromStores)([m.default], () => m.default.getChannelId() === t.id), {
+                    dockedRect: H,
+                    isHidden: Y
                 } = (0, o.useStateFromStoresObject)([A.default], () => {
                     let e = A.default.pipWindow;
                     return {
                         dockedRect: null != e ? A.default.getDockedRect(e.id) : null,
                         isHidden: A.default.isEmbeddedActivityHidden()
                     }
-                }), Y = (0, o.useStateFromStores)([T.default], () => T.default.getWindow(y.PopoutWindowKeys.CHANNEL_CALL_POPOUT)), {
-                    activityParticipant: j,
-                    selectedParticipant: W,
-                    participantsOpen: K
+                }), j = (0, o.useStateFromStores)([T.default], () => T.default.getWindow(P.PopoutWindowKeys.CHANNEL_CALL_POPOUT)), {
+                    activityParticipant: W,
+                    selectedParticipant: K,
+                    participantsOpen: z
                 } = (0, o.useStateFromStoresObject)([I.default], () => ({
-                    activityParticipant: null != w ? I.default.getParticipant(t.id, w.applicationId) : null,
+                    activityParticipant: null != B ? I.default.getParticipant(t.id, B.applicationId) : null,
                     selectedParticipant: I.default.getSelectedParticipant(t.id),
                     participantsOpen: I.default.getParticipantsOpen(t.id)
-                })), z = V || null != Y, X = (0, C.default)(t.id), Q = X && (null == W ? void 0 : W.type) !== P.ParticipantTypes.ACTIVITY, q = !X && B === M.ActivityPanelModes.PIP, Z = (!z || z && (Q || q) && null == x) && !H, J = Z && null != A.default.pipVideoWindow && null != A.default.pipActivityWindow;
+                })), X = x || null != j, Q = (0, g.default)(t.id), q = Q && (null == K ? void 0 : K.type) !== U.ParticipantTypes.ACTIVITY, Z = !Q && k === y.ActivityPanelModes.PIP, J = (!X || X && (q || Z) && null == H) && !Y, $ = J && null != A.default.pipVideoWindow && null != A.default.pipActivityWindow;
 
-                function $() {
+                function ee() {
                     var e;
-                    if (null != w && d.default.selectParticipant(t.id, w.applicationId), null != Y) return;
+                    if (null != B && d.default.selectParticipant(t.id, B.applicationId), null != j) return;
                     (0, c.popAllLayers)();
-                    let n = null !== (e = t.getGuildId()) && void 0 !== e ? e : y.ME;
+                    let n = null !== (e = t.getGuildId()) && void 0 !== e ? e : P.ME;
                     _.default.channelListScrollTo(n, t.id), (0, f.transitionToGuild)(n, t.id)
                 }
 
-                function ee() {
-                    D(!s)
+                function et() {
+                    v(!s)
                 }
                 r.useEffect(() => {
-                    if ((null == w ? void 0 : w.applicationId) != null) {
-                        let e = Z ? v.ActivityLayoutMode.PIP : v.ActivityLayoutMode.FOCUSED;
+                    if ((null == B ? void 0 : B.applicationId) != null) {
+                        let e = J ? M.ActivityLayoutMode.PIP : M.ActivityLayoutMode.FOCUSED;
                         u.default.dispatch({
                             type: "ACTIVITY_LAYOUT_MODE_UPDATE",
                             layoutMode: e,
-                            applicationId: w.applicationId
+                            applicationId: B.applicationId
                         })
                     }
-                }, [null == w ? void 0 : w.applicationId, Z]);
-                if (null == w || null == F || null == j && (0, C.default)(t.id) || null == k) return null;
-                let et = Array.from(w.userIds).map(e => N.default.getUser(e)).filter(e => null != e),
-                    en = {
-                        instance_id: F,
+                }, [null == B ? void 0 : B.applicationId, J]);
+                if (null == B || null == V || null == W && (0, g.default)(t.id) || null == F) return null;
+                let en = Array.from(B.userIds).map(e => N.default.getUser(e)).filter(e => null != e),
+                    ei = {
+                        instance_id: (0, R.getIframeInstanceId)(B),
                         channel_id: t.id
                     };
-                return null != t.guild_id && "" !== t.guild_id && (en.guild_id = t.guild_id), (0, i.jsx)(h.default, {
+                return null != t.guild_id && "" !== t.guild_id && (ei.guild_id = t.guild_id), (0, i.jsx)(h.default, {
                     timeout: 2e3,
                     children: e => {
                         var r, o, u, d, _, c, E, I;
@@ -68331,75 +68348,75 @@
                             onForceIdle: h
                         } = e;
                         return (0, i.jsxs)(S.default, {
-                            className: a()(U.root, {
-                                [U.pipMode]: Z,
-                                [G.elevationHigh]: Z,
-                                [b.idle]: T && !(null === (r = w.config) || void 0 === r ? void 0 : r.useInteractivePIP),
-                                [U.pipModeShort]: Z && !s,
-                                [U.pipModeTall]: Z && s,
-                                [U.hidden]: H,
-                                [U.multiPIPMode]: J
+                            className: a()(b.root, {
+                                [b.pipMode]: J,
+                                [w.elevationHigh]: J,
+                                [G.idle]: T && !(null === (r = B.config) || void 0 === r ? void 0 : r.useInteractivePIP),
+                                [b.pipModeShort]: J && !s,
+                                [b.pipModeTall]: J && s,
+                                [b.hidden]: Y,
+                                [b.multiPIPMode]: $
                             }),
-                            noBorder: !Z,
-                            children: [(u = f, d = h, _ = T, c = q, E = et, Z && null != w && ((null == j ? void 0 : j.type) === P.ParticipantTypes.ACTIVITY || c) ? (null === (I = w.config) || void 0 === I ? void 0 : I.useInteractivePIP) ? (0, i.jsx)(L.InteractivePIPHeader, {
-                                onJumpToChannel: $,
-                                applicationId: w.applicationId,
+                            noBorder: !J,
+                            children: [(u = f, d = h, _ = T, c = Z, E = en, J && null != B && ((null == W ? void 0 : W.type) === U.ParticipantTypes.ACTIVITY || c) ? (null === (I = B.config) || void 0 === I ? void 0 : I.useInteractivePIP) ? (0, i.jsx)(D.InteractivePIPHeader, {
+                                onJumpToChannel: ee,
+                                applicationId: B.applicationId,
                                 channel: t,
                                 showControls: !_,
                                 onMouseDown: u,
                                 onMouseMove: u,
                                 onMouseLeave: d,
-                                onToggleHeight: ee,
+                                onToggleHeight: et,
                                 isExpanded: s,
                                 hideExpandedButton: c
                             }) : c ? (0, i.jsx)(i.Fragment, {
-                                children: (0, i.jsx)(L.TextActivityPIPOverlay, {
+                                children: (0, i.jsx)(D.TextActivityPIPOverlay, {
                                     idle: _,
                                     onMouseMove: u,
                                     onMouseDown: u,
                                     onMouseLeave: d,
                                     onJumpToChannel: () => {
-                                        $(), (0, p.updateActivityPanelMode)(M.ActivityPanelModes.PANEL)
+                                        ee(), (0, p.updateActivityPanelMode)(y.ActivityPanelModes.PANEL)
                                     },
                                     channel: t,
-                                    applicationId: w.applicationId,
+                                    applicationId: B.applicationId,
                                     users: E
                                 })
-                            }) : null == j ? null : (0, i.jsxs)(i.Fragment, {
+                            }) : null == W ? null : (0, i.jsxs)(i.Fragment, {
                                 children: [(0, i.jsx)("div", {
                                     onMouseMove: u,
                                     onMouseDown: u,
                                     onMouseLeave: d,
-                                    className: U.clickShield,
-                                    onDoubleClick: $
-                                }), (0, i.jsx)(L.PIPOverlay, {
+                                    className: b.clickShield,
+                                    onDoubleClick: ee
+                                }), (0, i.jsx)(D.PIPOverlay, {
                                     idle: _,
                                     onMouseMove: u,
                                     onMouseDown: u,
                                     onMouseLeave: d,
-                                    onJumpToChannel: $,
+                                    onJumpToChannel: ee,
                                     channel: t,
-                                    applicationId: w.applicationId,
-                                    selectedParticipant: j
+                                    applicationId: B.applicationId,
+                                    selectedParticipant: W
                                 })]
                             }) : null), n ? (0, i.jsx)(l.Spinner, {
-                                className: a()(U.iframe, {
-                                    [U.pipModeShort]: Z && !s,
-                                    [U.pipModeTall]: Z && s
+                                className: a()(b.iframe, {
+                                    [b.pipModeShort]: J && !s,
+                                    [b.pipModeTall]: J && s
                                 })
-                            }) : (0, i.jsx)(g.EmbedIFrameWithLoadingBackground, {
-                                allowPopups: (0, R.allowPopups)(k),
-                                referrerPolicy: v.APPLICATIONS_WITH_NO_REFFERER.has(w.applicationId) ? "no-referrer" : "origin",
-                                url: w.url,
-                                queryParams: en,
-                                className: a()(U.iframe, {
-                                    [U.pipModeShort]: Z && !s,
-                                    [U.pipModeTall]: Z && s,
-                                    [U.pipNonInteractive]: Z && !(null === (o = w.config) || void 0 === o ? void 0 : o.useInteractivePIP)
+                            }) : (0, i.jsx)(L.EmbedIFrameWithLoadingBackground, {
+                                allowPopups: (0, C.allowPopups)(F),
+                                referrerPolicy: M.APPLICATIONS_WITH_NO_REFFERER.has(B.applicationId) ? "no-referrer" : "origin",
+                                url: B.url,
+                                queryParams: ei,
+                                className: a()(b.iframe, {
+                                    [b.pipModeShort]: J && !s,
+                                    [b.pipModeTall]: J && s,
+                                    [b.pipNonInteractive]: J && !(null === (o = B.config) || void 0 === o ? void 0 : o.useInteractivePIP)
                                 }),
-                                shouldRefocus: !Z && V
-                            }), !Z && (0, i.jsx)(L.TileOverlay, {
-                                participantsOpen: K,
+                                shouldRefocus: !J && x
+                            }), !J && (0, i.jsx)(D.TileOverlay, {
+                                participantsOpen: z,
                                 showToggleParticipants: !1,
                                 channelId: t.id
                             })]
@@ -68413,8 +68430,8 @@
                     ...n
                 } = e, {
                     isLoading: r
-                } = (0, D.useEmbeddedActivityLifecycle)(t);
-                return (0, i.jsx)(w, {
+                } = (0, v.useEmbeddedActivityLifecycle)(t);
+                return (0, i.jsx)(B, {
                     channel: t,
                     isLoading: r,
                     ...n
@@ -86599,8 +86616,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285900", "285900"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285900")), t = 0), t
+                let t = parseInt((e = "285919", "285919"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285919")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110771,8 +110788,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285900",
-                    versionHash: "e5df92f695099b71e5733ccf3da6bf20151af28d"
+                    buildNumber: "285919",
+                    versionHash: "16940c100cfda86113253ccd25d865cf3fec1539"
                 }
             }
             n.r(t), n.d(t, {
@@ -163873,8 +163890,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713469523642",
-                                    build_number: "285900"
+                                    built_at: "1713471905424",
+                                    build_number: "285919"
                                 }
                             },
                             retries: 1
@@ -241074,7 +241091,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e5df92f695099b71e5733ccf3da6bf20151af28d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "16940c100cfda86113253ccd25d865cf3fec1539"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269533,7 +269550,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285900"
+                                build_number: "285919"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276718,7 +276735,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285900", "285900"), 10);
+                let s = parseInt((n = "285919", "285919"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -303904,4 +303921,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.2a1f965cfd216bebe93d.js.map
+//# sourceMappingURL=73050.82e42fd0835c9c60b167.js.map
