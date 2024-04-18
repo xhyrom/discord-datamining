@@ -56550,6 +56550,14 @@ html .progress__00e29 {
     padding: 8px 0 0
 }
 
+.expandedTraitsContainer__95480 {
+    flex: 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 8px 0 0
+}
+
 .trait_dfdb34 {
     display: flex;
     padding: 4px 8px;
@@ -86774,7 +86782,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 16px
+    font-size: 1rem
 }
 
 .viewAllGamesButton__34838 {
@@ -86794,7 +86802,7 @@ input::-webkit-inner-spin-button {
 
 .viewAllGames__76b00,
 .viewAllNitroGames_a65ce4 {
-    font-size: 16px;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -86851,7 +86859,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 16px
+    font-size: 1rem
 }
 
 .headerBar__3337a {
@@ -92691,12 +92699,20 @@ div:has(>div>.container__8ab05) {
     align-items: center;
     justify-content: center;
     height: 100%;
-    gap: 64px
+    gap: 80px
 }
 
 .applicationContainer_eab373 {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    justify-content: center;
+    width: 480px;
+    height: 100%
+}
+
+.scroller__46668 {
+    flex: 0 1 auto;
+    margin: 80px 0
 }
 
 .verticalRule__8c737 {
@@ -92715,6 +92731,12 @@ div:has(>div>.container__8ab05) {
     display: flex;
     flex-direction: column;
     gap: 16px
+}
+
+.card_cc96f8 {
+    min-width: 256px;
+    max-width: 256px;
+    width: 256px
 }
 
 .theme-dark .container__8ab05 {
@@ -134485,4 +134507,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c74bf0437997b743fd67.css.map*/
+/*# sourceMappingURL=99387.d03ae9313a9c51ede3d2.css.map*/
