@@ -4195,11 +4195,7 @@
   },
   "CHANNEL_HIGHLIGHTS": {
     "url": "/guilds/:param/channel-highlights",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "USER_EMAIL": {
     "url": "/users/@me/email",
