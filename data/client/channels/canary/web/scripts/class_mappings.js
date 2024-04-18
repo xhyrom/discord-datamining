@@ -6862,6 +6862,8 @@
                 clanTagChipletWrapper: "clanTagChipletWrapper__734a9",
                 clickableCard: "clickableCard__1c1e9",
                 header: "header__2b527",
+                highlightedTrait: "highlightedTrait__03953",
+                overflowTooltip: "overflowTooltip__7c9d4",
                 playstyle: "playstyle__9d997",
                 primetime: "primetime_fd3eea",
                 primetimeContainer: "primetimeContainer__2c3ce",
