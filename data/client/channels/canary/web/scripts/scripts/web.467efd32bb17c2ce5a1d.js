@@ -415,7 +415,7 @@
                         nativeBuildNumber: null == t ? void 0 : t.toString()
                     });
                     let r = Object.keys(a).filter(e => null != a[e]).map(e => "".concat(e, ": ").concat(a[e])).join(", ");
-                    new y.default().log("[NATIVE INFO] host ".concat(e, ", modules: ").concat(r, ", build: ").concat(t)), O.default.initializeExitHook()
+                    new y.default().log("[NATIVE INFO] host ".concat(e, ", modules: ").concat(r, ", build: ").concat(t)), O.default.setBackgroundThrottling(!1), O.default.initializeExitHook()
                 }
                 if ((0, S.setupWindow)(window), __OVERLAY__) x(u.default.Overlay);
                 else if (null != window.require && null == window.DiscordNative) x(u.default.OutdatedClient);
@@ -2479,7 +2479,7 @@
             45576: "7f5f04e090fa5d1332c6",
             45733: "87d722f9afbd2e2e44f6",
             45747: "2addbd58ddd956dabe0d",
-            46048: "f01ec3e464632b09c856",
+            46048: "26eda5ed5e9c5c0534e7",
             46161: "ddcc8a8e6752de1069ae",
             46369: "29d5fb4e16193c5a49b9",
             46468: "0caf7d0ecfe447310e19",
@@ -2738,7 +2738,7 @@
             74590: "5872b5336abc1a394aab",
             74602: "52259d090a78a5b7f4fa",
             74673: "e5475b314c05095f84ab",
-            74753: "8eb0d3d2787c797315c4",
+            74753: "c0b4013b2970274cbb40",
             74870: "8607e215ac2713d19f7b",
             75409: "6d517ccbfd85a79680b3",
             75441: "d90cda406f0e7a585ee2",
@@ -2936,7 +2936,7 @@
             97516: "29e91b51d4b9995f202c",
             9766: "43df9f07f4918b3cd3b6",
             97674: "2a3fc73c7ebf83928560",
-            97773: "43ff85c0f3375cf96227",
+            97773: "8b40f9caecf6161ad0e6",
             98105: "8f60eb4f9aff347dc5c3",
             98137: "f34ab319f716d97e35f1",
             98154: "77c98e47fcdea66b3fb1",
@@ -3170,4 +3170,4 @@
     });
     s.O(u)
 }();
-//# sourceMappingURL=web.a758b0d13c08b8e1acb7.js.map
+//# sourceMappingURL=web.467efd32bb17c2ce5a1d.js.map
