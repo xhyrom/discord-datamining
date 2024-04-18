@@ -6845,6 +6845,7 @@
                 cardContentTitleSection: "cardContentTitleSection_dd3bf1",
                 cardFooter: "cardFooter_ed5f2e",
                 cardFooterGame: "cardFooterGame_de9392",
+                cardFooterGameImg: "cardFooterGameImg_a0eeb2",
                 cardFooterGames: "cardFooterGames_aebfa9",
                 cardFooterInfo: "cardFooterInfo__5a461",
                 cardFooterLanguage: "cardFooterLanguage_e24d40",
