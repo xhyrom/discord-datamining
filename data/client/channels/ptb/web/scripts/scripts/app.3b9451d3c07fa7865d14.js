@@ -20140,16 +20140,9 @@
         677804: function(e) {
             "use strict";
             e.exports = {
-                bodyContainer: "bodyContainer__53600",
-                close: "close__453ad",
-                description: "description_ccffb9",
-                heading: "heading_fa1b37",
                 image: "image_eaa491",
-                nitroButton: "nitroButton__4fea5",
                 optionsContainer: "optionsContainer_de5022",
-                optionsContainerWrapper: "optionsContainerWrapper_a07768",
-                perksButton: "perksButton__44e11",
-                spacer: "spacer__01ffc"
+                optionsContainerWrapper: "optionsContainerWrapper_a07768"
             }
         },
         15996: function(e) {
@@ -20758,14 +20751,6 @@
                 upsellClose: "upsellClose__82680",
                 upsellImage: "upsellImage__29f52",
                 zoomInFromBottomRight: "zoomInFromBottomRight_d27025"
-            }
-        },
-        944411: function(e) {
-            "use strict";
-            e.exports = {
-                nitroButton: "nitroButton_fd99cd",
-                perksButton: "perksButton__84e9c",
-                spacer: "spacer_a49b59"
             }
         },
         188537: function(e) {
@@ -22607,6 +22592,8 @@
                 container: "container_bad367",
                 ctaButton: "ctaButton__56c73",
                 help: "help__474cb",
+                helpIcon: "helpIcon__0bf94",
+                helpText: "helpText__42bfb",
                 imgUnderlay: "imgUnderlay__35c23",
                 imgWrapper: "imgWrapper__00a3b",
                 left: "left_e916ef",

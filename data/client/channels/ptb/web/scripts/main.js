@@ -36665,7 +36665,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286020", ", Version Hash: ").concat("38160dd02ff4f820c290a3120dd04754d5d26943")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286029", ", Version Hash: ").concat("bea0d725d1319986cb4ada35e4ec804d485bcc9b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86629,8 +86629,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286020", "286020"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286020")), t = 0), t
+                let t = parseInt((e = "286029", "286029"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286029")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110801,8 +110801,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286020",
-                    versionHash: "38160dd02ff4f820c290a3120dd04754d5d26943"
+                    buildNumber: "286029",
+                    versionHash: "bea0d725d1319986cb4ada35e4ec804d485bcc9b"
                 }
             }
             n.r(t), n.d(t, {
@@ -163945,8 +163945,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713478385872",
-                                    build_number: "286020"
+                                    built_at: "1713479365604",
+                                    build_number: "286029"
                                 }
                             },
                             retries: 1
@@ -178113,38 +178113,39 @@
                     hideBackButton: j,
                     backButtonText: W,
                     showEnhancedUpsell: K,
-                    ...z
-                } = e, X = null != C, Q = (0, I.usePremiumTrialOffer)(), q = (0, E.usePremiumDiscountOffer)(), Z = ((null == Q ? void 0 : null === (t = Q.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === H || (0, E.discountOfferHasTier)(q, H)) && !X, {
-                    analyticsLocations: J
+                    children: z,
+                    ...X
+                } = e, Q = null != C, q = (0, I.usePremiumTrialOffer)(), Z = (0, E.usePremiumDiscountOffer)(), J = ((null == q ? void 0 : null === (t = q.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === H || (0, E.discountOfferHasTier)(Z, H)) && !Q, {
+                    analyticsLocations: $
                 } = (0, u.default)(l.default.PREMIUM_UPSELL_MODAL);
                 r.useEffect(() => {
-                    !Y && (X ? _.default.track(A.AnalyticEvents.PREMIUM_GUILD_UPSELL_VIEWED, {
+                    !Y && (Q ? _.default.track(A.AnalyticEvents.PREMIUM_GUILD_UPSELL_VIEWED, {
                         type: "".concat(R, " - Tier ").concat(C.boostedGuildTier),
                         guild_id: C.guild.id,
                         channel_id: C.channelId,
                         location: L,
-                        location_stack: J
+                        location_stack: $
                     }) : _.default.track(A.AnalyticEvents.PREMIUM_UPSELL_VIEWED, {
                         type: R,
                         source: g,
                         location: L,
-                        location_stack: J,
+                        location_stack: $,
                         sku_id: (0, c.castPremiumSubscriptionAsSkuId)(H)
                     }))
-                }, [X, H, Y]);
-                let $ = x ? a()(N.artContainer, N.artContainerBoxShadow, P) : a()(N.artContainer, P),
-                    ee = null;
-                return ee = "artURL" in z ? (0, i.jsx)("img", {
+                }, [Q, H, Y]);
+                let ee = x ? a()(N.artContainer, N.artContainerBoxShadow, P) : a()(N.artContainer, P),
+                    et = null;
+                return et = "artURL" in X ? (0, i.jsx)("img", {
                     className: N.art,
                     alt: "",
-                    src: z.artURL
-                }) : z.artElement, (0, i.jsxs)(o.ModalRoot, {
+                    src: X.artURL
+                }) : X.artElement, (0, i.jsxs)(o.ModalRoot, {
                     className: a()(N.root, y),
                     "aria-label": O,
                     transitionState: b,
                     children: [(0, i.jsxs)("div", {
-                        className: $,
-                        children: [ee, V ? (0, i.jsx)("img", {
+                        className: ee,
+                        children: [et, V ? (0, i.jsx)("img", {
                             className: N.sparkleBadge,
                             alt: "",
                             src: p
@@ -178156,16 +178157,16 @@
                         scrollbarType: "none",
                         className: N.content,
                         children: Y ? (0, i.jsx)(o.Spinner, {}) : (0, i.jsx)(i.Fragment, {
-                            children: Z ? (0, i.jsx)(i.Fragment, {
+                            children: J ? (0, i.jsx)(i.Fragment, {
                                 children: (0, i.jsx)(T.default, {
                                     onClose: G,
                                     type: R,
-                                    subscriptionTier: null !== (s = null == Q ? void 0 : null === (n = Q.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== s ? s : h.PremiumSubscriptionSKUs.TIER_2,
+                                    subscriptionTier: null !== (s = null == q ? void 0 : null === (n = q.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== s ? s : h.PremiumSubscriptionSKUs.TIER_2,
                                     headingText: O,
                                     context: v,
                                     analyticsLocationObject: L,
-                                    discountOffer: q,
-                                    trialOffer: Q,
+                                    discountOffer: Z,
+                                    trialOffer: q,
                                     children: M
                                 })
                             }) : (0, i.jsxs)(i.Fragment, {
@@ -178177,7 +178178,7 @@
                                     children: O
                                 }), (0, i.jsx)(S.default, {
                                     premiumUpsellType: R
-                                }), (0, i.jsx)(o.Text, {
+                                }), z, (0, i.jsx)(o.Text, {
                                     variant: "text-md/normal",
                                     className: a()(U, N.subHeader),
                                     children: D
@@ -178203,21 +178204,21 @@
                                 children: k
                             }) : null, (() => {
                                 let e;
-                                if (X) return (0, i.jsx)(d.default, {
+                                if (Q) return (0, i.jsx)(d.default, {
                                     analyticsLocation: L,
                                     guild: C.guild,
                                     onClose: G
                                 });
                                 let t = K ? m.default.Messages.PREMIUM_UPSELL_GET_NITRO : void 0;
-                                if (Z) {
-                                    if (null != Q) {
+                                if (J) {
+                                    if (null != q) {
                                         var n, r;
                                         t = (0, c.formatTrialCtaIntervalDuration)({
-                                            intervalType: null == Q ? void 0 : null === (n = Q.subscription_trial) || void 0 === n ? void 0 : n.interval,
-                                            intervalCount: null == Q ? void 0 : null === (r = Q.subscription_trial) || void 0 === r ? void 0 : r.interval_count
-                                        }), e = null == Q ? void 0 : Q.trial_id
-                                    } else null != q && (t = m.default.Messages.PREMIUM_DISCOUNT_CTA.format({
-                                        percent: q.discount.amount
+                                            intervalType: null == q ? void 0 : null === (n = q.subscription_trial) || void 0 === n ? void 0 : n.interval,
+                                            intervalCount: null == q ? void 0 : null === (r = q.subscription_trial) || void 0 === r ? void 0 : r.interval_count
+                                        }), e = null == q ? void 0 : q.trial_id
+                                    } else null != Z && (t = m.default.Messages.PREMIUM_DISCOUNT_CTA.format({
+                                        percent: Z.discount.amount
                                     }))
                                 }
                                 return (0, i.jsx)(f.default, {
@@ -183302,13 +183303,15 @@
                                         children: [(0, i.jsx)(u.Text, {
                                             variant: "text-xs/medium",
                                             color: "text-muted",
+                                            className: P.helpText,
                                             children: y.default.Messages.QUESTS_MEMBERS_LIST_PROMOTED_BY.format({
                                                 gamePublisher: w.config.messages.gamePublisher
                                             })
                                         }), (0, i.jsx)(a.CircleQuestionIcon, {
+                                            className: P.helpIcon,
                                             width: U,
                                             height: U,
-                                            color: u.tokens.colors.INTERACTIVE_MUTED
+                                            color: u.tokens.colors.INTERACTIVE_NORMAL
                                         })]
                                     })]
                                 }), (0, i.jsx)("div", {
@@ -241209,7 +241212,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "38160dd02ff4f820c290a3120dd04754d5d26943"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "bea0d725d1319986cb4ada35e4ec804d485bcc9b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269668,7 +269671,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286020"
+                                build_number: "286029"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276853,7 +276856,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286020", "286020"), 10);
+                let s = parseInt((n = "286029", "286029"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -304039,4 +304042,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.ae9973a452664ff920ac.js.map
+//# sourceMappingURL=73050.11717ffe54bbb941f0a0.js.map
