@@ -25205,28 +25205,33 @@
         420867: function(e) {
             "use strict";
             e.exports = {
-                body: "body__07791",
-                header: "header__8447d",
                 root: "root__8fb4a"
             }
         },
         727705: function(e) {
             "use strict";
             e.exports = {
-                tabBar: "tabBar_bec6d3",
-                tabBarItem: "tabBarItem__736b2"
+                badgeList: "badgeList__70639",
+                container: "container__020e3",
+                username: "username__7cf20",
+                usernameBadgeList: "usernameBadgeList__9a1fb"
             }
         },
         262572: function(e) {
             "use strict";
             e.exports = {
                 avatar: "avatar__4188a",
-                badgeList: "badgeList__27ede",
                 buttons: "buttons__3345e",
                 inner: "inner__14185",
-                statusBubblePosition: "statusBubblePosition_e98f49",
-                username: "username__8af4e",
-                usernameBadgeList: "usernameBadgeList__8847d"
+                statusBubblePosition: "statusBubblePosition_e98f49"
+            }
+        },
+        708432: function(e) {
+            "use strict";
+            e.exports = {
+                container: "container__8361e",
+                tabBar: "tabBar__6db53",
+                tabBarItem: "tabBarItem__7bc74"
             }
         },
         312916: function(e) {
