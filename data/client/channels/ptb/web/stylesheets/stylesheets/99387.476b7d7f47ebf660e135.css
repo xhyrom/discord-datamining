@@ -56589,6 +56589,10 @@ html .progress__00e29 {
     overflow: hidden
 }
 
+.cardFooterGameImg_a0eeb2 {
+    width: 100%
+}
+
 .gameImage__8db0b {
     height: 100%;
     width: 100%
@@ -57046,7 +57050,9 @@ html .progress__00e29 {
     justify-content: center;
     align-items: center;
     gap: 32px;
-    width: 100%
+    width: 100%;
+    padding: 12px;
+    border-bottom: 1px solid var(--border-subtle)
 }
 
 .preferences__16c1a,
@@ -57121,21 +57127,38 @@ html .progress__00e29 {
 }
 
 .container_ec1fbc {
-    width: 100%;
-    padding: 24px;
     position: relative
+}
+
+.scroller__6a588 {
+    width: 100%;
+    height: 100%
 }
 
 .topPicks__3115d {
     display: flex;
     flex-direction: column;
-    gap: 16px
+    gap: 16px;
+    padding: 24px
 }
 
 .topPicksHeader_d3b9c1 {
     display: flex;
     align-items: center;
-    gap: 8px
+    gap: 12px
+}
+
+.topPicksTitle__399da {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--header-primary)
+}
+
+.topPicksSpacer__6fc8d {
+    height: 24px;
+    width: 1px;
+    background-color: var(--bg-mod-subtle)
 }
 
 .topPicksContent__7c8f8 {
@@ -57149,7 +57172,7 @@ html .progress__00e29 {
 }
 
 .content__7833e {
-    margin-top: 40px;
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
     gap: 40px
@@ -134434,4 +134457,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7fc61b43d619a35080d1.css.map*/
+/*# sourceMappingURL=99387.476b7d7f47ebf660e135.css.map*/
