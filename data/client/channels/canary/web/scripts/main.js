@@ -36660,7 +36660,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285793", ", Version Hash: ").concat("a2b53fa789d40ca1af3cb2ca936099a22f70d174")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285795", ", Version Hash: ").concat("06e4882179b51e9f59f8820c5c9a85dcdbaa2e9b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -64936,23 +64936,25 @@
             "use strict";
             n.r(t), n.d(t, {
                 isActivitiesInTextEnabled: function() {
-                    return u
+                    return _
                 },
                 isActivityInTextSupportedForChannel: function() {
-                    return l
-                },
-                useIsActivitiesInTextEnabled: function() {
                     return d
                 },
+                useIsActivitiesInTextEnabled: function() {
+                    return c
+                },
                 useShowActivitiesInOmniButtonMenu: function() {
-                    return _
+                    return E
                 }
             });
             var i = n("106351"),
                 r = n("442837"),
                 s = n("818083"),
-                a = n("592125");
-            let o = (0, s.createExperiment)({
+                a = n("592125"),
+                o = n("496675"),
+                l = n("231338");
+            let u = (0, s.createExperiment)({
                 kind: "user",
                 id: "2023-08_activities_in_text",
                 label: "Activities in Text User",
@@ -64986,7 +64988,7 @@
                 }]
             });
 
-            function l(e) {
+            function d(e) {
                 var t;
                 if (null == e || void 0 === e) return !1;
                 let n = a.default.getChannel(e.parent_id);
@@ -64994,47 +64996,51 @@
                 return t = e.type, [i.ChannelTypes.GUILD_TEXT, i.ChannelTypes.GROUP_DM, i.ChannelTypes.DM].includes(t)
             }
 
-            function u(e, t) {
+            function _(e, t) {
                 if (null == e) return !1;
-                let n = l(e);
-                return (null == e ? void 0 : e.guild_id) != null ? n : o.getCurrentConfig({
+                let n = d(e),
+                    i = o.default.can(l.Permissions.USE_EMBEDDED_ACTIVITIES, e);
+                return (null == e ? void 0 : e.guild_id) != null ? i && n : u.getCurrentConfig({
                     location: t
                 }, {
                     autoTrackExposure: !0
                 }).activitiesInTextEnabled && n
             }
 
-            function d(e, t) {
+            function c(e, t) {
                 let {
                     isActivitiesInTextEnabledForChannelType: n,
-                    channelGuildId: i
-                } = (0, r.useStateFromStoresObject)([a.default], () => {
+                    channelGuildId: i,
+                    hasPermission: s
+                } = (0, r.useStateFromStoresObject)([a.default, o.default], () => {
                     let t = a.default.getChannel(e);
                     return {
-                        isActivitiesInTextEnabledForChannelType: l(t),
-                        channelGuildId: null == t ? void 0 : t.guild_id
+                        isActivitiesInTextEnabledForChannelType: d(t),
+                        channelGuildId: null == t ? void 0 : t.guild_id,
+                        hasPermission: o.default.can(l.Permissions.USE_EMBEDDED_ACTIVITIES, t)
                     }
-                }), s = null != i, u = o.useExperiment({
+                }), _ = null != i, c = u.useExperiment({
                     location: t
                 }, {
-                    autoTrackExposure: !s,
-                    disable: s
+                    autoTrackExposure: !_,
+                    disable: _
                 });
-                return s ? n : u.activitiesInTextEnabled && n
+                return _ ? s && n : c.activitiesInTextEnabled && n
             }
 
-            function _(e, t) {
+            function E(e, t) {
                 let n = (0, r.useStateFromStores)([a.default], () => a.default.getChannel(e)),
-                    i = l(n),
-                    s = null == n ? void 0 : n.guild_id,
-                    u = null != s,
-                    d = o.useExperiment({
+                    i = (0, r.useStateFromStores)([o.default], () => o.default.can(l.Permissions.USE_EMBEDDED_ACTIVITIES, n)),
+                    s = d(n),
+                    _ = null == n ? void 0 : n.guild_id,
+                    c = null != _,
+                    E = u.useExperiment({
                         location: t
                     }, {
-                        autoTrackExposure: !u,
-                        disable: u
+                        autoTrackExposure: !c,
+                        disable: c
                     });
-                return u ? i : d.showInOmniButtonMenu && i
+                return c ? i && s : E.showInOmniButtonMenu && s
             }
         },
         24933: function(e, t, n) {
@@ -86584,8 +86590,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285793", "285793"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285793")), t = 0), t
+                let t = parseInt((e = "285795", "285795"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285795")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110756,8 +110762,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285793",
-                    versionHash: "a2b53fa789d40ca1af3cb2ca936099a22f70d174"
+                    buildNumber: "285795",
+                    versionHash: "06e4882179b51e9f59f8820c5c9a85dcdbaa2e9b"
                 }
             }
             n.r(t), n.d(t, {
@@ -163999,8 +164005,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713458896029",
-                                    build_number: "285793"
+                                    built_at: "1713459237934",
+                                    build_number: "285795"
                                 }
                             },
                             retries: 1
@@ -241204,7 +241210,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a2b53fa789d40ca1af3cb2ca936099a22f70d174"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "06e4882179b51e9f59f8820c5c9a85dcdbaa2e9b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269663,7 +269669,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285793"
+                                build_number: "285795"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276848,7 +276854,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285793", "285793"), 10);
+                let s = parseInt((n = "285795", "285795"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -304034,4 +304040,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.138fecba80cd49f1d10c.js.map
+//# sourceMappingURL=73050.194f242e2b959e85d47b.js.map
