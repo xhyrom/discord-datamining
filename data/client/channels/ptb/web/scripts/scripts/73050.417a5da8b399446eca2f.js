@@ -36665,7 +36665,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286032", ", Version Hash: ").concat("9ee3c60a5827bfc18dbc2ebb98172e84a4229cbe")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286054", ", Version Hash: ").concat("c28888c2d0b61003f0514be89bc90fd3af266e4b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86629,8 +86629,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286032", "286032"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286032")), t = 0), t
+                let t = parseInt((e = "286054", "286054"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286054")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110801,8 +110801,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286032",
-                    versionHash: "9ee3c60a5827bfc18dbc2ebb98172e84a4229cbe"
+                    buildNumber: "286054",
+                    versionHash: "c28888c2d0b61003f0514be89bc90fd3af266e4b"
                 }
             }
             n.r(t), n.d(t, {
@@ -163945,8 +163945,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713479989697",
-                                    build_number: "286032"
+                                    built_at: "1713481732329",
+                                    build_number: "286054"
                                 }
                             },
                             retries: 1
@@ -206328,21 +206328,21 @@
                 let {
                     user: t,
                     displayProfile: n,
-                    guild: N,
-                    channelId: p,
-                    onOpenProfile: O,
+                    onOpenProfile: N,
+                    guild: p,
+                    channelId: O,
                     onClose: R
                 } = e, {
                     moreUserDetailsEnabled: C
                 } = (0, l.useSimplifiedProfileExperiment)({
                     location: "BiteSizeProfileBody"
-                }), g = o.default.getName(null == N ? void 0 : N.id, p, t), L = (0, u.default)(t.id, null == N ? void 0 : N.id), D = (0, r.useStateFromStores)([a.default], () => a.default.hidePersonalInformation), v = (0, r.useStateFromStores)([s.default], () => s.default.findActivity(t.id, e => e.type === A.ActivityTypes.PLAYING), [t]);
+                }), g = o.default.getName(null == p ? void 0 : p.id, O, t), L = (0, u.default)(t.id, null == p ? void 0 : p.id), D = (0, r.useStateFromStores)([a.default], () => a.default.hidePersonalInformation), v = (0, r.useStateFromStores)([s.default], () => s.default.findActivity(t.id, e => e.type === A.ActivityTypes.PLAYING), [t]);
                 return t.isSystemUser() ? null : (0, i.jsxs)("div", {
                     className: m.body,
                     children: [(0, i.jsx)(c.default, {
                         user: t,
-                        guildId: null == N ? void 0 : N.id,
-                        usernameIcon: t.hasAvatarForGuild(null == N ? void 0 : N.id) && (0, i.jsx)(I.default, {
+                        guildId: null == p ? void 0 : p.id,
+                        usernameIcon: t.hasAvatarForGuild(null == p ? void 0 : p.id) && (0, i.jsx)(I.default, {
                             user: t,
                             nickname: g
                         }),
@@ -206351,12 +206351,12 @@
                                 pronouns: null == n ? void 0 : n.pronouns
                             }), (0, i.jsx)(E.UserProfileBadgesTag, {
                                 user: t,
-                                guildId: null == N ? void 0 : N.id
+                                guildId: null == p ? void 0 : p.id
                             })]
                         }),
                         nicknameIcon: C && !D ? (0, i.jsx)(_.default, {
                             user: t,
-                            onOpenProfile: O
+                            onOpenProfile: N
                         }) : null
                     }), C && (0, i.jsx)(S.default, {
                         user: t
@@ -206369,7 +206369,8 @@
                         activity: v
                     }), (0, i.jsx)(h.default, {
                         user: t,
-                        guild: N
+                        guild: p,
+                        onClose: R
                     }), L && (0, i.jsx)(f.default, {
                         user: t
                     })]
@@ -206527,104 +206528,105 @@
                     user: t,
                     guild: n,
                     userRoles: s,
-                    width: E
+                    onClose: E,
+                    width: C
                 } = e, {
-                    trackUserProfileAction: C
-                } = (0, m.useUserProfileAnalyticsContext)(), g = r.useRef({}), L = r.useCallback(e => {
+                    trackUserProfileAction: g
+                } = (0, m.useUserProfileAnalyticsContext)(), L = r.useRef({}), D = r.useCallback(e => {
                     var i;
-                    C({
+                    g({
                         action: "REMOVE_ROLE"
                     });
                     let r = s.filter(t => t !== e.id);
                     (null === (i = e.tags) || void 0 === i ? void 0 : i.guild_connections) === null ? _.default.unassignGuildRoleConnection(n.id, e.id) : T.default.updateMemberRoles(n.id, t.id, r, [], [e.id])
-                }, [s, n.id, t.id, C]), D = r.useCallback(e => {
-                    C({
+                }, [s, n.id, t.id, g]), v = r.useCallback(e => {
+                    g({
                         action: "ADD_ROLE"
                     });
                     let i = s; - 1 === i.indexOf(e) && (i = i.concat([e])), T.default.updateMemberRoles(n.id, t.id, i, [e], [])
-                }, [s, n.id, t.id, C]), [v, M] = r.useState(null), y = (0, u.useStateFromStores)([f.default], () => f.default.getRoles(n.id)), P = r.useMemo(() => {
-                    let e = Object.values(y).filter(e => s.includes(e.id)).sort((e, t) => {
+                }, [s, n.id, t.id, g]), [M, y] = r.useState(null), P = (0, u.useStateFromStores)([f.default], () => f.default.getRoles(n.id)), U = r.useMemo(() => {
+                    let e = Object.values(P).filter(e => s.includes(e.id)).sort((e, t) => {
                         var n, i;
                         let r = (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) !== null,
                             s = (null === (i = t.tags) || void 0 === i ? void 0 : i.guild_connections) !== null;
                         return r && !s ? 1 : !r && s ? -1 : 0
                     });
-                    return null != v ? e.slice(0, v) : e
-                }, [y, v, s]), U = s.length - P.length;
+                    return null != M ? e.slice(0, M) : e
+                }, [P, M, s]), b = s.length - U.length;
                 r.useLayoutEffect(() => {
-                    if ("number" != typeof E) throw Error("Unexpected null width");
+                    if ("number" != typeof C) throw Error("Unexpected null width");
                     let e = 0,
                         t = 0,
-                        n = E - 32,
+                        n = C - 32,
                         i = n - 32;
                     for (let r = 0; r < 2; r++) {
                         t = 0;
                         let s = 1 === r ? i : n;
-                        for (let n = e; n < P.length; n++) {
-                            let i = P[n],
-                                r = g.current[i.id];
+                        for (let n = e; n < U.length; n++) {
+                            let i = U[n],
+                                r = L.current[i.id];
                             if (null != r) {
                                 if ((t += r.offsetWidth + 4) > s) break;
                                 e++
                             }
                         }
                     }
-                    M(t => e < P.length ? e : t)
-                }, [E, P]);
-                let b = h.default.getCurrentUser();
-                a()(null != b, "MemberRolesList: currentUser cannot be undefined");
-                let G = S.default.can(p.Permissions.MANAGE_ROLES, n),
-                    w = A.getHighestRole(n, b.id),
-                    B = r.useMemo(() => "roles-".concat((0, o.v4)()), []),
-                    k = (0, l.default)({
-                        id: B,
+                    y(t => e < U.length ? e : t)
+                }, [C, U]);
+                let G = h.default.getCurrentUser();
+                a()(null != G, "MemberRolesList: currentUser cannot be undefined");
+                let w = S.default.can(p.Permissions.MANAGE_ROLES, n),
+                    B = A.getHighestRole(n, G.id),
+                    k = r.useMemo(() => "roles-".concat((0, o.v4)()), []),
+                    F = (0, l.default)({
+                        id: k,
                         isEnabled: !0,
                         scrollToStart: p.NOOP_PROMISE,
                         scrollToEnd: p.NOOP_PROMISE,
                         wrap: !0
                     }),
-                    F = P.map(e => {
+                    V = U.map(e => {
                         var r;
                         return (0, i.jsx)(c.MemberRole, {
                             className: R.role,
                             role: e,
-                            canRemove: G && A.isRoleHigher(n, b.id, w, e) || (null === (r = e.tags) || void 0 === r ? void 0 : r.guild_connections) === null && t.id === b.id,
-                            onRemove: () => L(e),
+                            canRemove: w && A.isRoleHigher(n, G.id, B, e) || (null === (r = e.tags) || void 0 === r ? void 0 : r.guild_connections) === null && t.id === G.id,
+                            onRemove: () => D(e),
                             ref: t => {
                                 var n, i;
-                                return n = e.id, void(null != (i = t) ? g.current[n] = i : delete g.current[n])
+                                return n = e.id, void(null != (i = t) ? L.current[n] = i : delete L.current[n])
                             },
                             guildId: n.id,
                             disableBorderColor: !0
                         }, e.id)
                     }),
                     {
-                        guildId: V,
-                        channelId: x,
-                        messageId: H,
-                        roleId: Y
+                        guildId: x,
+                        channelId: H,
+                        messageId: Y,
+                        roleId: j
                     } = (0, m.useUserProfileAnalyticsContext)(),
                     {
-                        analyticsLocations: j
+                        analyticsLocations: W
                     } = (0, I.default)(),
-                    W = null != v && 0 !== U ? (0, i.jsx)(d.Clickable, {
+                    K = null != M && 0 !== b ? (0, i.jsx)(d.Clickable, {
                         onClick: () => {
-                            (0, N.openUserProfileModal)({
+                            null == E || E(), (0, N.openUserProfileModal)({
                                 userId: t.id,
-                                guildId: V,
-                                channelId: x,
-                                messageId: H,
-                                roleId: Y,
+                                guildId: x,
+                                channelId: H,
+                                messageId: Y,
+                                roleId: j,
                                 analyticsLocation: {
                                     section: p.AnalyticsSections.BITE_SIZE_PROFILE_POPOUT
                                 },
-                                sourceAnalyticsLocations: j
+                                sourceAnalyticsLocations: W
                             })
                         },
                         className: R.overflowButton,
                         children: (0, i.jsx)(d.Text, {
                             variant: "text-xs/medium",
-                            children: "+".concat(U)
+                            children: "+".concat(b)
                         })
                     }) : null;
                 return (0, i.jsxs)("div", {
@@ -206635,20 +206637,20 @@
                             variant: "text-xs/semibold",
                             className: R.rolesHeaderText,
                             children: O.default.Messages.ROLES
-                        }), G && (0, i.jsx)(d.Tooltip, {
+                        }), w && (0, i.jsx)(d.Tooltip, {
                             text: O.default.Messages.USER_PROFILE_ADD_ROLE,
                             children: t => (0, i.jsx)("div", {
                                 ...t,
                                 children: (0, i.jsx)(c.OverflowAddRolesButton, {
                                     ...e,
-                                    handleAddRole: D,
+                                    handleAddRole: v,
                                     addButtonClassName: R.addButton,
                                     addButtonIconClassName: R.addButtonIcon
                                 })
                             })
                         })]
                     }), (0, i.jsx)(l.ListNavigatorProvider, {
-                        navigator: k,
+                        navigator: F,
                         children: (0, i.jsx)(l.ListNavigatorContainer, {
                             children: e => {
                                 let {
@@ -206662,7 +206664,7 @@
                                     }),
                                     ref: t,
                                     ...n,
-                                    children: [F, W]
+                                    children: [V, K]
                                 })
                             }
                         })
@@ -206871,9 +206873,9 @@
                                 }), (0, i.jsx)(R.default, {
                                     user: t,
                                     displayProfile: w,
+                                    onOpenProfile: () => V(!0),
                                     guild: k,
                                     channelId: s,
-                                    onOpenProfile: () => V(!0),
                                     onClose: v
                                 })]
                             }), (null == w ? void 0 : w.profileEffectId) != null && (0, i.jsx)(c.default, {
@@ -206913,12 +206915,14 @@
             function o(e) {
                 let {
                     user: t,
-                    guild: n
-                } = e, o = (0, r.useStateFromStores)([s.default], () => null != n ? s.default.getMember(n.id, t.id) : null);
-                return null == n || null == o || 0 === o.roles.length ? null : (0, i.jsx)(a.default, {
+                    guild: n,
+                    onClose: o
+                } = e, l = (0, r.useStateFromStores)([s.default], () => null != n ? s.default.getMember(n.id, t.id) : null);
+                return null == n || null == l || 0 === l.roles.length ? null : (0, i.jsx)(a.default, {
                     guild: n,
                     user: t,
-                    userRoles: o.roles
+                    userRoles: l.roles,
+                    onClose: o
                 })
             }
         },
@@ -241212,7 +241216,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9ee3c60a5827bfc18dbc2ebb98172e84a4229cbe"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "c28888c2d0b61003f0514be89bc90fd3af266e4b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269671,7 +269675,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286032"
+                                build_number: "286054"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276856,7 +276860,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286032", "286032"), 10);
+                let s = parseInt((n = "286054", "286054"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -304042,4 +304046,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.48752a94e34219115703.js.map
+//# sourceMappingURL=73050.417a5da8b399446eca2f.js.map

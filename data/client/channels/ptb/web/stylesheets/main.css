@@ -120272,15 +120272,13 @@ html .invoiceCancelRow__6ff3e {
 .header__0eb6b {
     box-sizing: border-box;
     height: 174px;
-    padding-top: 24px;
-    border-bottom: 1px solid#272a2e
+    padding-top: 24px
 }
 
 .erroredHeader__8c33b {
     box-sizing: border-box;
     height: 128px;
-    padding-top: 24px;
-    border-bottom: 1px solid#272a2e
+    padding-top: 24px
 }
 
 .title__47a52 {
@@ -120333,6 +120331,22 @@ html .invoiceCancelRow__6ff3e {
     height: 40px;
     width: 100%;
     margin: 20px 16px 21px
+}
+
+.theme-dark .headerSeparator_ef7e6e {
+    box-shadow: 0 1px 0 0 hsl(var(--primary-800-hsl)/.3), 0 1px 2px 0 hsl(var(--primary-800-hsl)/.3)
+}
+
+.theme-dark .footerSeparator__64213 {
+    box-shadow: 0 -1px 0 hsl(var(--primary-630-hsl)/.6)
+}
+
+.theme-light .headerSeparator_ef7e6e {
+    box-shadow: 0 1px 0 0 hsl(var(--primary-300-hsl)/.3)
+}
+
+.theme-light .footerSeparator__64213 {
+    box-shadow: 0 -1px 0 hsl(var(--primary-100-hsl)/.6)
 }
 
 .confrimationContainer__3c695 {
@@ -134429,4 +134443,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.e44858bdb1917bad82d0.css.map*/
+/*# sourceMappingURL=99387.c6540b9d735a232b260a.css.map*/
