@@ -25565,6 +25565,12 @@
             var i = n("515639");
             n.es(i, t)
         },
+        793080: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("326325");
+            n.es(i, t)
+        },
         596440: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -36654,7 +36660,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285781", ", Version Hash: ").concat("10a8bcf38cac58d2520494073b294bdbc1f237d4")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285785", ", Version Hash: ").concat("da0e02e22a5c7b917d11260a90cb91393719dd51")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86578,8 +86584,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285781", "285781"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285781")), t = 0), t
+                let t = parseInt((e = "285785", "285785"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285785")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110750,8 +110756,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285781",
-                    versionHash: "10a8bcf38cac58d2520494073b294bdbc1f237d4"
+                    buildNumber: "285785",
+                    versionHash: "da0e02e22a5c7b917d11260a90cb91393719dd51"
                 }
             }
             n.r(t), n.d(t, {
@@ -163993,8 +163999,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713457896183",
-                                    build_number: "285781"
+                                    built_at: "1713458276481",
+                                    build_number: "285785"
                                 }
                             },
                             retries: 1
@@ -203934,7 +203940,7 @@
             n("470079");
             var r = n("692547"),
                 s = n("10683"),
-                a = n("955623"),
+                a = n("793080"),
                 o = n("481060"),
                 l = n("785717"),
                 u = n("702557"),
@@ -203947,21 +203953,19 @@
                     onOpenProfile: n
                 } = e, {
                     trackUserProfileAction: c
-                } = (0, l.useUserProfileAnalyticsContext)(), E = (0, u.default)(t.id), I = null == E.note ? d.default.Messages.ADD_NOTE : (0, i.jsxs)("div", {
+                } = (0, l.useUserProfileAnalyticsContext)(), {
+                    loading: E,
+                    note: I
+                } = (0, u.default)(t.id), T = !E && null != I && I.length > 0, f = T ? (0, i.jsx)("div", {
                     className: _.noteText,
-                    children: [(0, i.jsx)(o.TextAreaAutosize, {
+                    children: (0, i.jsx)(o.TextAreaAutosize, {
                         className: _.noteTextArea,
-                        value: E.note
-                    }), (0, i.jsx)(a.PencilIcon, {
-                        className: _.noteIcon,
-                        height: 14,
-                        width: 14,
-                        color: r.default.colors.INTERACTIVE_MUTED
-                    })]
-                }), T = null == E.note ? d.default.Messages.ADD_NOTE : E.note;
+                        value: I
+                    })
+                }) : d.default.Messages.ADD_NOTE, S = T ? I : d.default.Messages.ADD_NOTE, h = T ? s.PaperIcon : a.PaperPlusIcon;
                 return (0, i.jsx)(o.TooltipContainer, {
-                    text: I,
-                    "aria-label": T,
+                    text: f,
+                    "aria-label": S,
                     children: (0, i.jsx)(o.Clickable, {
                         onClick: () => {
                             c({
@@ -203969,10 +203973,10 @@
                             }), n()
                         },
                         className: _.noteClickable,
-                        children: (0, i.jsx)(s.PaperIcon, {
+                        children: (0, i.jsx)(h, {
                             height: 16,
                             width: 16,
-                            color: r.default.colors.INTERACTIVE_MUTED
+                            color: r.default.colors.INTERACTIVE_NORMAL
                         })
                     })
                 })
@@ -241200,7 +241204,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "10a8bcf38cac58d2520494073b294bdbc1f237d4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "da0e02e22a5c7b917d11260a90cb91393719dd51"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269659,7 +269663,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285781"
+                                build_number: "285785"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276844,7 +276848,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285781", "285781"), 10);
+                let s = parseInt((n = "285785", "285785"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -281868,6 +281872,46 @@
                         clipRule: "evenodd",
                         className: o
                     })
+                })
+            }
+        },
+        326325: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                PaperPlusIcon: function() {
+                    return a
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("692547"),
+                s = n("331595");
+            let a = e => {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: a = r.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: o = "",
+                    ...l
+                } = e;
+                return (0, i.jsxs)("svg", {
+                    ...(0, s.default)(l),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: n,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: [(0, i.jsx)("path", {
+                        fill: "string" == typeof a ? a : a.css,
+                        fillRule: "evenodd",
+                        d: "M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h9c.1 0 .12-.11.04-.15a3 3 0 0 1-2.03-3.16c.04-.34-.2-.69-.55-.69H6a1 1 0 1 1 0-2h9.5a.5.5 0 0 0 .5-.5V15a3 3 0 0 1 .19-1.05c.15-.4-.11-.95-.54-.95H6a1 1 0 1 1 0-2h12a1 1 0 0 1 .88.52c.13.24.35.48.62.52A3 3 0 0 1 21.83 14v.02c.02.06.17.05.17-.02V5a3 3 0 0 0-3-3H5Zm1 4a1 1 0 1 0 0 2h5a1 1 0 1 0 0-2H6Z",
+                        clipRule: "evenodd",
+                        className: o
+                    }), (0, i.jsx)("path", {
+                        fill: "string" == typeof a ? a : a.css,
+                        d: "M19 14a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3h-3a1 1 0 1 1 0-2h3v-3a1 1 0 0 1 1-1Z",
+                        className: o
+                    })]
                 })
             }
         },
@@ -303990,4 +304034,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.2648821b595a6af1eeb8.js.map
+//# sourceMappingURL=73050.d5cb3714fc2e7fcc2d7b.js.map
