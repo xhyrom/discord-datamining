@@ -63202,7 +63202,7 @@ html .progress__00e29 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 16px;
     gap: 4px
 }
 
@@ -110324,34 +110324,34 @@ html .invoiceCancelRow__6ff3e {
     justify-content: center
 }
 
-.closeButton__446ec {
+.closeButton_f4b87a {
     position: absolute;
     box-sizing: content-box;
     top: 12px;
     right: 4px
 }
 
-.content__15651 {
+.content_bc1e8c {
     text-align: center
 }
 
-.image_c5a804 {
+.image__295b1 {
     margin-top: 24px;
     height: 90px;
     width: auto
 }
 
-.title_ee328a {
+.title_adab2b {
     margin-top: 16px;
     font-weight: 700
 }
 
-.subtitle_d2b16e {
+.subtitle__6ce6d {
     margin-top: 8px;
     margin-bottom: 32px
 }
 
-.button_a15e26 {
+.button__3d802 {
     width: 100%
 }
 
@@ -134460,4 +134460,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f3277e3d00bb4e572490.css.map*/
+/*# sourceMappingURL=99387.87f60ede7891da5862e7.css.map*/
