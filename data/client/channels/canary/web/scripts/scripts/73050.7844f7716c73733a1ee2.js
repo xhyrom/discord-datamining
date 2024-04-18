@@ -36660,7 +36660,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285849", ", Version Hash: ").concat("21d3ac78ab626c1072d7f86669a01dcd4b2b6fa9")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("285851", ", Version Hash: ").concat("8efb9c8a0264ceb309223638a45869421b2b405b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -82130,13 +82130,13 @@
                     purchase: U
                 } = (0, c.default)(null == M ? void 0 : M.skuId), b = A.default.canUseCollectibles(t), G = r.useRef(null), w = (0, I.default)(a), B = (0, m.isEqualAvatarDecoration)(M, void 0 === L ? v : L), k = () => {
                     D(M), u()
-                }, F = r.useCallback(() => {
+                }, F = r.useCallback(e => {
                     u(), (0, d.openCollectiblesShop)({
                         analyticsLocations: a,
                         analyticsSource: l.default.EDIT_AVATAR_DECORATION_MODAL,
-                        initialProductSkuId: null != M ? M.skuId : void 0
+                        initialProductSkuId: e
                     })
-                }, [a, u, M]);
+                }, [a, u]);
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)(o.ModalHeader, {
                         separator: !1,
@@ -82174,7 +82174,7 @@
                             children: C.default.Messages.AVATAR_DECORATION_MODAL_APPLY
                         }) : null == U && (b || !(0, _.isPremiumCollectiblesProduct)(P)) ? (0, i.jsx)(o.Button, {
                             className: g.modalFooterShopButton,
-                            onClick: F,
+                            onClick: () => F(null == P ? void 0 : P.skuId),
                             children: C.default.Messages.COLLECTIBLES_CTA_GO_TO_SHOP
                         }) : (0, i.jsx)(T.default, {
                             subscriptionTier: R.PremiumSubscriptionSKUs.TIER_2,
@@ -82507,16 +82507,18 @@
                 let {
                     user: t,
                     guild: n,
-                    pendingAvatarDecoration: r,
-                    selectedAvatarDecorationRef: s,
-                    onSelect: a,
-                    onOpenShop: l
-                } = e, u = (0, p.default)();
+                    pendingAvatarDecoration: s,
+                    selectedAvatarDecorationRef: a,
+                    onSelect: l,
+                    onOpenShop: u
+                } = e, _ = (0, p.default)(), c = r.useCallback(() => {
+                    u(void 0)
+                }, [u]);
                 return (0, i.jsx)(d.MasonryList, {
                     fade: !0,
                     className: C.list,
                     columns: 3,
-                    sections: u.map(e => {
+                    sections: _.map(e => {
                         let {
                             items: t
                         } = e;
@@ -82527,17 +82529,17 @@
                     paddingHorizontal: 12,
                     paddingVertical: 0,
                     removeEdgeItemGutters: !0,
-                    renderItem: (e, _, c, E) => {
+                    renderItem: (e, r, u, E) => {
                         let {
                             section: I,
                             items: f
-                        } = u[e];
-                        return (0, o.match)(f[_]).with(p.NONE_ITEM, () => (0, i.jsxs)(L, {
+                        } = _[e];
+                        return (0, o.match)(f[r]).with(p.NONE_ITEM, () => (0, i.jsxs)(L, {
                             style: {
-                                ...c
+                                ...u
                             },
-                            isSelected: null === r,
-                            onSelect: () => a(null),
+                            isSelected: null === s,
+                            onSelect: () => l(null),
                             children: [(0, i.jsx)(S.default, {
                                 className: C.notAllowedIcon
                             }), (0, i.jsx)(d.Text, {
@@ -82546,8 +82548,8 @@
                                 children: (0, N.hasGlobalDefaultAvatarDecoration)(t, n) ? R.default.Messages.USER_SETTINGS_REMOVE_PER_GUILD_AVATAR_DECORATION : R.default.Messages.NONE
                             })]
                         }, E)).with(p.SHOP_ITEM, () => (0, i.jsxs)(L, {
-                            style: c,
-                            onSelect: l,
+                            style: u,
+                            onSelect: c,
                             children: [(0, i.jsx)(T.default, {
                                 className: C.shopIcon
                             }), (0, i.jsx)(d.Text, {
@@ -82556,24 +82558,24 @@
                                 children: R.default.Messages.COLLECTIBLES_SHOP
                             })]
                         }, E)).otherwise(e => {
-                            let n = (null == r ? void 0 : r.id) === e.id;
+                            let n = (null == s ? void 0 : s.id) === e.id;
                             return (0, i.jsx)(D, {
                                 style: {
-                                    ...c
+                                    ...u
                                 },
                                 user: t,
                                 avatarDecoration: e,
                                 section: I,
-                                innerRef: n ? s : void 0,
+                                innerRef: n ? a : void 0,
                                 isSelected: n,
-                                onSelect: () => a(e)
+                                onSelect: () => l(e)
                             }, E)
                         })
                     },
                     renderSection: e => {
                         let {
                             header: t
-                        } = u[e];
+                        } = _[e];
                         return (0, i.jsx)("div", {
                             className: C.headings,
                             children: (0, i.jsx)(d.HeadingLevel, {
@@ -82586,8 +82588,8 @@
                             })
                         })
                     },
-                    getSectionHeight: e => u[e].height,
-                    getItemKey: (e, t) => u[e].items[t].id,
+                    getSectionHeight: e => _[e].height,
+                    getItemKey: (e, t) => _[e].items[t].id,
                     getItemHeight: g
                 })
             }
@@ -86595,8 +86597,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "285849", "285849"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285849")), t = 0), t
+                let t = parseInt((e = "285851", "285851"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("285851")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110767,8 +110769,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "285849",
-                    versionHash: "21d3ac78ab626c1072d7f86669a01dcd4b2b6fa9"
+                    buildNumber: "285851",
+                    versionHash: "8efb9c8a0264ceb309223638a45869421b2b405b"
                 }
             }
             n.r(t), n.d(t, {
@@ -163897,8 +163899,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713465025034",
-                                    build_number: "285849"
+                                    built_at: "1713465191975",
+                                    build_number: "285851"
                                 }
                             },
                             retries: 1
@@ -241064,7 +241066,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "21d3ac78ab626c1072d7f86669a01dcd4b2b6fa9"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8efb9c8a0264ceb309223638a45869421b2b405b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269523,7 +269525,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "285849"
+                                build_number: "285851"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276708,7 +276710,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "285849", "285849"), 10);
+                let s = parseInt((n = "285851", "285851"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -303894,4 +303896,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.a7d6f3cace36dd153013.js.map
+//# sourceMappingURL=73050.7844f7716c73733a1ee2.js.map
