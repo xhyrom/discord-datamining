@@ -22623,6 +22623,8 @@
                 rewardSubheadingText: "rewardSubheadingText_a5a2b6",
                 rewardTile: "rewardTile__77515",
                 rewardTileAsset: "rewardTileAsset_cb8b2b",
+                rewardTileAssetLoading: "rewardTileAssetLoading__3e9fa",
+                rewardTileAssetStatusIcon: "rewardTileAssetStatusIcon_a0b95b",
                 rewardTileWrapper: "rewardTileWrapper__1e38a"
             }
         },
