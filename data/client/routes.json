@@ -1074,7 +1074,11 @@
   },
   "CHANNEL_RECIPIENT": {
     "url": "/channels/:param/recipients/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "CHANNEL_RECIPIENT_CONSENT": {
     "url": "/channels/:param/recipients/@me",
