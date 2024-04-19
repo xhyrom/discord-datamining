@@ -2204,8 +2204,7 @@
 
 .headerFailure_fd6cde {
     width: 92px;
-    height: 92px;
-    background: url(/assets/d80ea6acc8c8983ffead.svg)no-repeat
+    height: 92px
 }
 
 .closeButton__7f3d6 {
@@ -2226,6 +2225,14 @@
 
 .button__5844b+.button__5844b {
     margin-top: 12px
+}
+
+.theme-dark .headerFailure_fd6cde {
+    background: url(/assets/2a7b631c3aa52c285458.svg)no-repeat
+}
+
+.theme-light .headerFailure_fd6cde {
+    background: url(/assets/05f4517ecb1769c0f02c.svg)no-repeat
 }
 
 @value responsiveWidthMobile from '../../../uikit/auth/WaveSplash.module.css';
@@ -134622,4 +134629,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7c7892b8dad2a34eccf7.css.map*/
+/*# sourceMappingURL=99387.1f09ded1bbdb3eb507fb.css.map*/
