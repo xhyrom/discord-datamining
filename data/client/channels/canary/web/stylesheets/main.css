@@ -21673,12 +21673,16 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     border-right-color: var(--bg-mod-faint)
 }
 
-.memberSinceContainer__16630 {
+.memberSinceWrapper__03059 {
     display: flex;
-    flex-direction: row;
-    -moz-column-gap: 8px;
-    column-gap: 8px;
-    align-items: center
+    align-items: center;
+    gap: 8px
+}
+
+.memberSince__2eba7 {
+    display: flex;
+    align-items: center;
+    gap: 4px
 }
 
 .discordIcon__1e1be {
@@ -23513,24 +23517,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     align-items: center
 }
 
-.spinnerContainer__9d60e {
-    justify-content: center
-}
-
-.spinner__5559d {
-    height: 16px
-}
-
-.dotSpacer__33c55 {
-    justify-content: center;
-    padding: 6px;
-    color: var(--background-modifier-accent)
-}
-
-.mutualFriendsText__47b48 {
-    padding-left: 6px
-}
-
 .container__1f16a {
     display: flex;
     flex-direction: column;
@@ -23541,31 +23527,26 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     position: relative;
     flex-wrap: wrap;
     display: flex;
-    margin-top: 2px;
     color: var(--text-normal);
     gap: 4px
 }
 
-.pillBackground__5eb2d {
+.pill__35c94 {
     border-radius: var(--radius-xs);
     background: var(--bg-mod-faint);
     border: 1px solid var(--border-faint)
 }
 
-.custom-profile-theme .pillBackground__5eb2d {
+.custom-profile-theme .pill__35c94 {
     background: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-6));
     border-color: var(--profile-body-border-color)
 }
 
 .role__17a96 {
     margin: 0;
-    padding: 6px 4px;
-    gap: 4px;
+    padding: 6px 8px;
+    gap: 8px;
     height: 28px
-}
-
-.rolesHeaderText__51e60 {
-    text-transform: capitalize
 }
 
 .rolesHeader_e507a4 {
@@ -129440,19 +129421,101 @@ div.nagbar_c731ff {
     margin-right: 32px
 }
 
+.root__12006 {
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    color: var(--text-normal);
+    gap: 4px
+}
+
+.pill_b76003 {
+    height: 30px;
+    margin: 0;
+    border-radius: var(--radius-xs);
+    border: 1px solid var(--border-subtle)
+}
+
+.custom-profile-theme .pill_b76003 {
+    background: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-6));
+    border-color: var(--profile-body-border-color)
+}
+
+.role__5eb73 {
+    padding: 7px 8px;
+    gap: 8px
+}
+
+.addButton_bfade1 {
+    color: var(--interactive-normal);
+    padding: 4px
+}
+
+.addButtonIcon__3b4b8 {
+    width: 20px;
+    height: 20px
+}
+
+.scroller__2f4b4 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 12px
+}
+
+.section_d2e3ea {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.recentGames_c8fe3b {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px
+}
+
+.connections__84e31 {
+    margin-top: -16px
+}
+
+.note_a92d50 {
+    margin: -4px
+}
+
+.note_a92d50 textarea {
+    border-radius: 3px;
+    padding: 4px;
+    font-size: 14px;
+    line-height: 18px
+}
+
+.note_a92d50 textarea:focus {
+    background-color: var(--profile-note-background-color)
+}
+
+.note_a92d50 textarea:focus::-moz-placeholder {
+    color: transparent
+}
+
+.note_a92d50 textarea:focus::placeholder {
+    color: transparent
+}
+
 .container__8361e {
     flex: 0 1 404px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     border-radius: var(--radius-sm);
-    overflow: hidden;
-    padding: 12px
+    overflow: hidden
 }
 
 .tabBar__6db53 {
     display: flex;
     gap: 32px;
+    margin: 12px 12px 0;
     border-bottom: 1px solid var(--profile-body-divider-color)
 }
 
@@ -129463,6 +129526,10 @@ div.nagbar_c731ff {
 .tabBarItem__7bc74 {
     height: 25px;
     box-sizing: border-box
+}
+
+.infoTab__29f80 {
+    padding-top: 16px
 }
 
 .container__020e3 {
@@ -134537,4 +134604,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.8f42a1a482aecf0adc01.css.map*/
+/*# sourceMappingURL=99387.753dc6d36a5062d21a3b.css.map*/
