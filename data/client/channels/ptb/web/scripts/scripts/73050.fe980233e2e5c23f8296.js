@@ -36653,7 +36653,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286376", ", Version Hash: ").concat("f9e303a814e8fd4526e9f7f54832dc3f3b59570b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286380", ", Version Hash: ").concat("461a6a326d01a257decfc5e37dd5565200555b6f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86623,8 +86623,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286376", "286376"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286376")), t = 0), t
+                let t = parseInt((e = "286380", "286380"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286380")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111168,8 +111168,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286376",
-                    versionHash: "f9e303a814e8fd4526e9f7f54832dc3f3b59570b"
+                    buildNumber: "286380",
+                    versionHash: "461a6a326d01a257decfc5e37dd5565200555b6f"
                 }
             }
             n.r(t), n.d(t, {
@@ -164453,8 +164453,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713553731377",
-                                    build_number: "286376"
+                                    built_at: "1713553935036",
+                                    build_number: "286380"
                                 }
                             },
                             retries: 1
@@ -202835,10 +202835,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return T
+                    return f
                 },
                 maybeFetchUserProfileForPopout: function() {
-                    return I
+                    return T
                 }
             }), n("411104");
             var i = n("570140"),
@@ -202850,10 +202850,11 @@
                 u = n("592125"),
                 d = n("271383"),
                 _ = n("342656"),
-                c = n("621853"),
-                E = n("120569");
+                c = n("447452"),
+                E = n("621853"),
+                I = n("120569");
 
-            function I() {
+            function T() {
                 let e, t, n;
                 for (var i, r, s = arguments.length, a = Array(s), o = 0; o < s; o++) a[o] = arguments[o];
                 let u = a[0],
@@ -202862,16 +202863,19 @@
                 else if (u instanceof l.default && ("object" == typeof d || null == d)) e = u.id, t = u.getAvatarURL(void 0, 80), n = d;
                 else throw Error("Invalid arguments");
                 if (null == e) return Promise.resolve();
-                let c = (0, _.isInProfileMutualsExperiment)().enabled;
-                return T(e, t, {
-                    withMutualFriends: null !== (i = null == n ? void 0 : n.withMutualFriends) && void 0 !== i ? i : c,
-                    withMutualGuilds: null !== (r = null == n ? void 0 : n.withMutualGuilds) && void 0 !== r ? r : c,
+                let E = (0, _.isInProfileMutualsExperiment)().enabled || (0, c.getSimplifiedProfileExperimentConfig)({
+                    location: "maybeFetchUserProfileForPopout",
+                    autoTrackExposure: !1
+                }).basicsEnabled;
+                return f(e, t, {
+                    withMutualFriends: null !== (i = null == n ? void 0 : n.withMutualFriends) && void 0 !== i ? i : E,
+                    withMutualGuilds: null !== (r = null == n ? void 0 : n.withMutualGuilds) && void 0 !== r ? r : E,
                     ...n
                 })
             }
-            async function T(e, t) {
+            async function f(e, t) {
                 var n, l, _;
-                let I, {
+                let c, {
                     withMutualGuilds: T = !1,
                     withMutualFriendsCount: f = !1,
                     withMutualFriends: S = !1,
@@ -202882,35 +202886,35 @@
                     channelId: p
                 } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
                 if ("" === e) return;
-                (0, o.fetchUserProfileEffects)(), null != t && (0, s.maybeFetchColors)(t), null != N && !T && (T = !0), null != N && (I = null !== (l = null === (n = (0, a.getVisibleConnectionsRole)({
+                (0, o.fetchUserProfileEffects)(), null != t && (0, s.maybeFetchColors)(t), null != N && !T && (T = !0), null != N && (c = null !== (l = null === (n = (0, a.getVisibleConnectionsRole)({
                     guildMember: d.default.getMember(N, e),
                     channel: u.default.getChannel(p)
                 })) || void 0 === n ? void 0 : n.id) && void 0 !== l ? l : void 0);
-                let O = c.default.getUserProfile(e),
-                    R = c.default.getMutualGuilds(e),
-                    C = c.default.getMutualFriends(e),
-                    g = c.default.getMutualFriendsCount(e),
-                    L = c.default.isFetchingProfile(e),
+                let O = E.default.getUserProfile(e),
+                    R = E.default.getMutualGuilds(e),
+                    C = E.default.getMutualFriends(e),
+                    g = E.default.getMutualFriendsCount(e),
+                    L = E.default.isFetchingProfile(e),
                     D = !Array.isArray(R) && T,
                     v = null == C && S,
                     M = null == g && f,
                     y = (null == O ? void 0 : O.profileFetchFailed) || !L && (D || v || M),
-                    P = A ? E.default : void 0,
+                    P = A ? I.default : void 0,
                     U = !1;
-                null != N && (U = null == c.default.getGuildMemberProfile(e, N)), !(!y && !U && (L || Date.now() - (null !== (_ = null == O ? void 0 : O.lastFetched) && void 0 !== _ ? _ : 0) < 6e4)) && (m ? await i.default.wait(() => (0, r.fetchProfile)(e, {
+                null != N && (U = null == E.default.getGuildMemberProfile(e, N)), !(!y && !U && (L || Date.now() - (null !== (_ = null == O ? void 0 : O.lastFetched) && void 0 !== _ ? _ : 0) < 6e4)) && (m ? await i.default.wait(() => (0, r.fetchProfile)(e, {
                     withMutualGuilds: T,
                     withMutualFriends: S,
                     withMutualFriendsCount: f,
                     friendToken: h,
                     guildId: N,
-                    connectionsRoleId: I
+                    connectionsRoleId: c
                 }, P)) : await (0, r.fetchProfile)(e, {
                     withMutualGuilds: T,
                     withMutualFriends: S,
                     withMutualFriendsCount: f,
                     friendToken: h,
                     guildId: N,
-                    connectionsRoleId: I
+                    connectionsRoleId: c
                 }, P))
             }
         },
@@ -206942,7 +206946,7 @@
                             user: t,
                             onOpenProfile: N
                         }) : null
-                    }), C && (0, i.jsx)(S.default, {
+                    }), (0, i.jsx)(S.default, {
                         user: t,
                         onClose: R
                     }), C && (0, i.jsx)(T.default, {
@@ -241725,7 +241729,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "f9e303a814e8fd4526e9f7f54832dc3f3b59570b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "461a6a326d01a257decfc5e37dd5565200555b6f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270186,7 +270190,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286376"
+                                build_number: "286380"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -277371,7 +277375,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286376", "286376"), 10);
+                let s = parseInt((n = "286380", "286380"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -304557,4 +304561,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.fd9763fefc7d79b28be0.js.map
+//# sourceMappingURL=73050.fe980233e2e5c23f8296.js.map
