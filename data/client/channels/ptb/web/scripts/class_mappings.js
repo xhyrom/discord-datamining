@@ -7167,7 +7167,7 @@
                 guildName: "guildName_c95322",
                 header: "header__2e9c4",
                 headerImage: "headerImage__27e00",
-                modalCloseButton: "modalCloseButton_f1c3a0",
+                modal: "modal__21798",
                 subtitle: "subtitle_b23e9f",
                 title: "title__1c3ec"
             }
