@@ -25035,6 +25035,7 @@
             e.exports = {
                 container: "container_df7ce7",
                 nickname: "nickname__745d1",
+                nicknameIcon: "nicknameIcon__13099",
                 tags: "tags__18aee",
                 userTag: "userTag_eb9b2a",
                 userTagDiscriminator: "userTagDiscriminator_dd0ae5",
@@ -25450,6 +25451,7 @@
                 addButton: "addButton_d7b605",
                 addButtonIcon: "addButtonIcon__04434",
                 container: "container__1f16a",
+                hiddenTooltip: "hiddenTooltip__10c79",
                 overflowButton: "overflowButton_d39c60 pill__35c94",
                 pill: "pill__35c94",
                 role: "role__17a96 pill__35c94",
