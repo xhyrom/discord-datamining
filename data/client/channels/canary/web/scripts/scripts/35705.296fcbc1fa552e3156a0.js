@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["73050"], {
+    ["35705"], {
         290034: function(e, t, n) {
             var i = {
                     "./bg.jsona": function() {
@@ -4872,9 +4872,13 @@
             "use strict";
             e.exports = n.p + "149536fc0fe57c89fa23.png"
         },
-        281332: function(e, t, n) {
+        324806: function(e, t, n) {
             "use strict";
-            e.exports = n.p + "d80ea6acc8c8983ffead.svg"
+            e.exports = n.p + "2a7b631c3aa52c285458.svg"
+        },
+        388424: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "05f4517ecb1769c0f02c.svg"
         },
         321161: function(e, t, n) {
             "use strict";
@@ -36653,7 +36657,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286380", ", Version Hash: ").concat("461a6a326d01a257decfc5e37dd5565200555b6f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286395", ", Version Hash: ").concat("292d6b65a2964999c153efdf121d2cfb4e8a77bb")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -42511,6 +42515,11 @@
                 SCOPE_ACTIVITIES_READ: "Access your Active Now activities",
                 SCOPE_ACTIVITIES_WRITE: "Update your current activity",
                 SCOPE_RELATIONSHIPS_READ: "See who your friends are",
+                SCOPE_RELATIONSHIPS_WRITE: "Manage your friends and blocked users",
+                SCOPE_PRESENCES_READ: "See who is online",
+                SCOPE_PRESENCES_WRITE: "Set your online status and current activity",
+                SCOPE_DM_CHANNELS_MESSAGES_READ: "Read your direct messages",
+                SCOPE_DM_CHANNELS_MESSAGES_WRITE: "Send messages in your DMs",
                 AUTHORIZE: "Authorize",
                 AUTHORIZED: "Authorized",
                 AUTHORIZED_SUCCESS: "Success!",
@@ -86623,8 +86632,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286380", "286380"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286380")), t = 0), t
+                let t = parseInt((e = "286395", "286395"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286395")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111168,8 +111177,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286380",
-                    versionHash: "461a6a326d01a257decfc5e37dd5565200555b6f"
+                    buildNumber: "286395",
+                    versionHash: "292d6b65a2964999c153efdf121d2cfb4e8a77bb"
                 }
             }
             n.r(t), n.d(t, {
@@ -129382,6 +129391,8 @@
                 r.default.isConnectedOrOverlay() ? a(e) : s.push(e)
             }
             i.default.subscribe("CONNECTION_OPEN", () => {
+                s.forEach(e => a(e)), s = []
+            }), i.default.subscribe("CONNECTION_RESUMED", () => {
                 s.forEach(e => a(e)), s = []
             })
         },
@@ -164453,8 +164464,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713553935036",
-                                    build_number: "286380"
+                                    built_at: "1713555337187",
+                                    build_number: "286395"
                                 }
                             },
                             retries: 1
@@ -167181,7 +167192,7 @@
             var i = n("981631"),
                 r = n("689938");
             let s = [() => r.default.Messages.OAUTH2_FAKE_SCOPE_1, () => r.default.Messages.OAUTH2_FAKE_SCOPE_2, () => r.default.Messages.OAUTH2_FAKE_SCOPE_3, () => r.default.Messages.OAUTH2_FAKE_SCOPE_4, () => r.default.Messages.OAUTH2_FAKE_SCOPE_5, () => r.default.Messages.OAUTH2_FAKE_SCOPE_6, () => r.default.Messages.OAUTH2_FAKE_SCOPE_7, () => r.default.Messages.OAUTH2_FAKE_SCOPE_8],
-                a = [i.OAuth2Scopes.BOT, i.OAuth2Scopes.OPENID, i.OAuth2Scopes.IDENTIFY, i.OAuth2Scopes.EMAIL, i.OAuth2Scopes.CONNECTIONS, i.OAuth2Scopes.MESSAGES_READ, i.OAuth2Scopes.GUILDS, i.OAuth2Scopes.GUILDS_JOIN, i.OAuth2Scopes.GUILDS_MEMBERS_READ, i.OAuth2Scopes.GDM_JOIN, i.OAuth2Scopes.RPC, i.OAuth2Scopes.RPC_NOTIFICATIONS_READ, i.OAuth2Scopes.RPC_VOICE_READ, i.OAuth2Scopes.RPC_VOICE_WRITE, i.OAuth2Scopes.RPC_VIDEO_READ, i.OAuth2Scopes.RPC_VIDEO_WRITE, i.OAuth2Scopes.RPC_SCREENSHARE_READ, i.OAuth2Scopes.RPC_SCREENSHARE_WRITE, i.OAuth2Scopes.RPC_ACTIVITIES_WRITE, i.OAuth2Scopes.APPLICATIONS_BUILDS_UPLOAD, i.OAuth2Scopes.APPLICATIONS_BUILDS_READ, i.OAuth2Scopes.APPLICATIONS_COMMANDS, i.OAuth2Scopes.APPLICATIONS_COMMANDS_UPDATE, i.OAuth2Scopes.APPLICATIONS_COMMANDS_PERMISSIONS_UPDATE, i.OAuth2Scopes.APPLICATIONS_STORE_UPDATE, i.OAuth2Scopes.APPLICATIONS_ENTITLEMENTS, i.OAuth2Scopes.ACTIVITIES_READ, i.OAuth2Scopes.ACTIVITIES_WRITE, i.OAuth2Scopes.RELATIONSHIPS_READ, i.OAuth2Scopes.VOICE, i.OAuth2Scopes.DM_CHANNELS_READ, i.OAuth2Scopes.ROLE_CONNECTIONS_WRITE],
+                a = [i.OAuth2Scopes.BOT, i.OAuth2Scopes.OPENID, i.OAuth2Scopes.IDENTIFY, i.OAuth2Scopes.EMAIL, i.OAuth2Scopes.CONNECTIONS, i.OAuth2Scopes.MESSAGES_READ, i.OAuth2Scopes.GUILDS, i.OAuth2Scopes.GUILDS_JOIN, i.OAuth2Scopes.GUILDS_MEMBERS_READ, i.OAuth2Scopes.GDM_JOIN, i.OAuth2Scopes.RPC, i.OAuth2Scopes.RPC_NOTIFICATIONS_READ, i.OAuth2Scopes.RPC_VOICE_READ, i.OAuth2Scopes.RPC_VOICE_WRITE, i.OAuth2Scopes.RPC_VIDEO_READ, i.OAuth2Scopes.RPC_VIDEO_WRITE, i.OAuth2Scopes.RPC_SCREENSHARE_READ, i.OAuth2Scopes.RPC_SCREENSHARE_WRITE, i.OAuth2Scopes.RPC_ACTIVITIES_WRITE, i.OAuth2Scopes.APPLICATIONS_BUILDS_UPLOAD, i.OAuth2Scopes.APPLICATIONS_BUILDS_READ, i.OAuth2Scopes.APPLICATIONS_COMMANDS, i.OAuth2Scopes.APPLICATIONS_COMMANDS_UPDATE, i.OAuth2Scopes.APPLICATIONS_COMMANDS_PERMISSIONS_UPDATE, i.OAuth2Scopes.APPLICATIONS_STORE_UPDATE, i.OAuth2Scopes.APPLICATIONS_ENTITLEMENTS, i.OAuth2Scopes.ACTIVITIES_READ, i.OAuth2Scopes.ACTIVITIES_WRITE, i.OAuth2Scopes.RELATIONSHIPS_READ, i.OAuth2Scopes.RELATIONSHIPS_WRITE, i.OAuth2Scopes.VOICE, i.OAuth2Scopes.DM_CHANNELS_READ, i.OAuth2Scopes.DM_CHANNELS_MESSAGES_READ, i.OAuth2Scopes.DM_CHANNELS_MESSAGES_WRITE, i.OAuth2Scopes.ROLE_CONNECTIONS_WRITE, i.OAuth2Scopes.PRESENCES_READ, i.OAuth2Scopes.PRESENCES_WRITE],
                 o = a.concat([i.OAuth2Scopes.WEBHOOK_INCOMING, i.OAuth2Scopes.BOT]),
                 l = ["rpc.api"];
 
@@ -241729,7 +241740,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "461a6a326d01a257decfc5e37dd5565200555b6f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "292d6b65a2964999c153efdf121d2cfb4e8a77bb"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270190,7 +270201,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286380"
+                                build_number: "286395"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -277375,7 +277386,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286380", "286380"), 10);
+                let s = parseInt((n = "286395", "286395"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -304561,4 +304572,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.fe980233e2e5c23f8296.js.map
+//# sourceMappingURL=35705.296fcbc1fa552e3156a0.js.map
