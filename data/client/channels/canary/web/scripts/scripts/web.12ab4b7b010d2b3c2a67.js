@@ -415,7 +415,7 @@
                         nativeBuildNumber: null == t ? void 0 : t.toString()
                     });
                     let r = Object.keys(a).filter(e => null != a[e]).map(e => "".concat(e, ": ").concat(a[e])).join(", ");
-                    new y.default().log("[NATIVE INFO] host ".concat(e, ", modules: ").concat(r, ", build: ").concat(t)), O.default.setBackgroundThrottling(!1), O.default.initializeExitHook()
+                    new y.default().log("[NATIVE INFO] host ".concat(e, ", modules: ").concat(r, ", build: ").concat(t)), O.default.initializeExitHook()
                 }
                 if ((0, S.setupWindow)(window), __OVERLAY__) x(u.default.Overlay);
                 else if (null != window.require && null == window.DiscordNative) x(u.default.OutdatedClient);
@@ -2483,7 +2483,7 @@
             45576: "7f5f04e090fa5d1332c6",
             45733: "87d722f9afbd2e2e44f6",
             45747: "2addbd58ddd956dabe0d",
-            46048: "5b3dcce1b13134cd942a",
+            46048: "b8e1af679670fda2aba7",
             46161: "ddcc8a8e6752de1069ae",
             46369: "936ae4c319e060ef5d32",
             46468: "0caf7d0ecfe447310e19",
@@ -2738,7 +2738,7 @@
             74590: "5872b5336abc1a394aab",
             74602: "52259d090a78a5b7f4fa",
             74673: "e5475b314c05095f84ab",
-            74753: "ec1b7c10cbf7ccbfda7b",
+            74753: "b216a777385eca201a5a",
             74870: "148c4825212af5cd350f",
             75409: "6d517ccbfd85a79680b3",
             75441: "d90cda406f0e7a585ee2",
@@ -2776,7 +2776,7 @@
             78607: "02a92c93fcf5f333dcd2",
             78650: "3a93a3e614d44167558d",
             78670: "908f8ec324663e8d2046",
-            78690: "5069065ca6389e35e158",
+            78690: "5da9ee4fcfb685c2ae08",
             78704: "dc18fd2b5ea7c24806dc",
             78712: "98e549f912a7e836dbb9",
             78786: "ffc48004273a9c78d681",
@@ -2940,7 +2940,7 @@
             98154: "77c98e47fcdea66b3fb1",
             98335: "3a4c10402d3dbf4f8d95",
             98466: "dfc306d25b4e665a70e2",
-            98538: "5fc60ca9571764662f79",
+            98538: "e802186794a1a050f4d8",
             98570: "5e12e957c96ce3d3d76d",
             98920: "6ac5f894da0f81653346",
             98952: "8ee42374cb4350864e1d",
@@ -3169,4 +3169,4 @@
     });
     s.O(u)
 }();
-//# sourceMappingURL=web.2ee3436131dffb7aadd6.js.map
+//# sourceMappingURL=web.12ab4b7b010d2b3c2a67.js.map

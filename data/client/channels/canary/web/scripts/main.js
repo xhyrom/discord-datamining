@@ -36661,7 +36661,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286442", ", Version Hash: ").concat("da35df3c2fb632cbd1591f7038b215a0595960cf")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286450", ", Version Hash: ").concat("46d538fdc1bd41ef14753598dde4fab1d3732793")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55017,6 +55017,8 @@
                 STOREFRONT_DURABLE_AVAILABILITY: "1 / 1 Available",
                 STOREFRONT_DURABLE_AVAILABILITY_NONE: "0 / 1 Available",
                 STOREFRONT_MUST_LOGIN: "Login to browse store",
+                STOREFRONT_VIEW_TOS_PP: "View [Terms of Service]({tosUrl}) and [Privacy Policy]({ppUrl})",
+                STOREFRONT_NO_TOS_PP: "This developer has not setup terms of service and privacy policy.",
                 QUIET_MODE_DISABLED: "Focus Mode Disabled",
                 QUIET_MODE_ENABLED: "Focus Mode Enabled",
                 QUIET_MODE_DND: "Focus Mode (DND) Enabled",
@@ -86643,8 +86645,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286442", "286442"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286442")), t = 0), t
+                let t = parseInt((e = "286450", "286450"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286450")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111188,8 +111190,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286442",
-                    versionHash: "da35df3c2fb632cbd1591f7038b215a0595960cf"
+                    buildNumber: "286450",
+                    versionHash: "46d538fdc1bd41ef14753598dde4fab1d3732793"
                 }
             }
             n.r(t), n.d(t, {
@@ -128207,6 +128209,7 @@
                                 default:
                                     B.info("Unhandled op ".concat(i))
                             }
+                            this._sendHeartbeatIfDue()
                         }),
                         onError: () => {
                             this.setResumeUrl(null), N.default.flushDNSCache(), this._handleClose(!1, 0, "An error with the websocket occurred")
@@ -128299,6 +128302,11 @@
                         code: t,
                         reason: n
                     })
+                }
+                _sendHeartbeatIfDue() {
+                    if (null == this.heartbeatInterval || null == this.heartbeater) return;
+                    let e = this.lastHeartbeatTime;
+                    null != e && Date.now() - e > this.heartbeatInterval + 5e3 && this._sendHeartbeat()
                 }
                 _startHeartbeater() {
                     let {
@@ -128394,7 +128402,7 @@
                     this.lastHeartbeatAckTime = Date.now()
                 }
                 _sendHeartbeat() {
-                    this.send(y.Opcode.HEARTBEAT, this.seq, !1)
+                    this.send(y.Opcode.HEARTBEAT, this.seq, !1), this.lastHeartbeatTime = Date.now()
                 }
                 getLogger() {
                     return B
@@ -128481,7 +128489,7 @@
                     B.verbose("Connection has reset backoff".concat(null != e && "" !== e ? " for reason: " + e : "")), this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0, this.nextReconnectIsImmediate = !0, this.willReconnect() ? this._connect() : t && this.connectionState !== C.default.SESSION_ESTABLISHED && this._handleClose(!0, 0, e)
                 }
                 constructor() {
-                    super(), w(this, "gatewayBackoff", void 0), w(this, "handleIdentify", void 0), w(this, "dispatchExceptionBackoff", new a.default(1e3, H)), w(this, "dispatchSuccessTimer", 0), w(this, "connectionState_", void 0), w(this, "webSocket", void 0), w(this, "seq", void 0), w(this, "sessionId", void 0), w(this, "token", void 0), w(this, "initialHeartbeatTimeout", void 0), w(this, "expeditedHeartbeatTimeout", void 0), w(this, "heartbeatInterval", void 0), w(this, "helloTimeout", void 0), w(this, "heartbeater", void 0), w(this, "lastHeartbeatAckTime", void 0), w(this, "heartbeatAck", void 0), w(this, "connectionStartTime", void 0), w(this, "identifyStartTime", void 0), w(this, "nextReconnectIsImmediate", void 0), w(this, "compressionHandler", void 0), w(this, "hasConnectedOnce", void 0), w(this, "isFastConnect", void 0), w(this, "didForceClearGuildHashes", !1), w(this, "identifyUncompressedByteSize", 0), w(this, "identifyCompressedByteSize", 0), w(this, "analytics", {}), w(this, "identifyCount", 0), w(this, "resumeUrl", null), w(this, "iosGoingAwayEventCount", 0), w(this, "dispatcher", void 0), w(this, "send", (e, t, n) => {
+                    super(), w(this, "gatewayBackoff", void 0), w(this, "handleIdentify", void 0), w(this, "dispatchExceptionBackoff", new a.default(1e3, H)), w(this, "dispatchSuccessTimer", 0), w(this, "connectionState_", void 0), w(this, "webSocket", void 0), w(this, "seq", void 0), w(this, "sessionId", void 0), w(this, "token", void 0), w(this, "initialHeartbeatTimeout", void 0), w(this, "expeditedHeartbeatTimeout", void 0), w(this, "heartbeatInterval", void 0), w(this, "helloTimeout", void 0), w(this, "heartbeater", void 0), w(this, "lastHeartbeatTime", void 0), w(this, "lastHeartbeatAckTime", void 0), w(this, "heartbeatAck", void 0), w(this, "connectionStartTime", void 0), w(this, "identifyStartTime", void 0), w(this, "nextReconnectIsImmediate", void 0), w(this, "compressionHandler", void 0), w(this, "hasConnectedOnce", void 0), w(this, "isFastConnect", void 0), w(this, "didForceClearGuildHashes", !1), w(this, "identifyUncompressedByteSize", 0), w(this, "identifyCompressedByteSize", 0), w(this, "analytics", {}), w(this, "identifyCount", 0), w(this, "resumeUrl", null), w(this, "iosGoingAwayEventCount", 0), w(this, "dispatcher", void 0), w(this, "send", (e, t, n) => {
                         A.default.isLoggingGatewayEvents && B.verboseDangerously("~>", e, t);
                         let i = k.pack({
                             op: e,
@@ -128490,7 +128498,7 @@
                         if (!n || this.isSessionEstablished()) try {
                             null != this.webSocket ? this.webSocket.send(i) : B.warn("Attempted to send without a websocket that exists. Opcode: ".concat(e))
                         } catch (e) {} else B.warn("Attempted to send while not being in a connected state opcode: ".concat(e))
-                    }), this.dispatcher = new M.default(this), this.gatewayBackoff = new a.default(1e3, 6e4), this.connectionState_ = C.default.CLOSED, this.webSocket = null, this.seq = 0, this.sessionId = null, this.token = null, this.initialHeartbeatTimeout = null, this.expeditedHeartbeatTimeout = null, this.lastHeartbeatAckTime = null, this.helloTimeout = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = !0, this.connectionStartTime = 0, this.identifyStartTime = 0, this.nextReconnectIsImmediate = !1, this.compressionHandler = (0, L.getCompressionHandler)(k), this.hasConnectedOnce = !1, this.isFastConnect = !1, this.identifyCount = 0, this.iosGoingAwayEventCount = 0
+                    }), this.dispatcher = new M.default(this), this.gatewayBackoff = new a.default(1e3, 6e4), this.connectionState_ = C.default.CLOSED, this.webSocket = null, this.seq = 0, this.sessionId = null, this.token = null, this.initialHeartbeatTimeout = null, this.expeditedHeartbeatTimeout = null, this.lastHeartbeatTime = null, this.lastHeartbeatAckTime = null, this.helloTimeout = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = !0, this.connectionStartTime = 0, this.identifyStartTime = 0, this.nextReconnectIsImmediate = !1, this.compressionHandler = (0, L.getCompressionHandler)(k), this.hasConnectedOnce = !1, this.isFastConnect = !1, this.identifyCount = 0, this.iosGoingAwayEventCount = 0
                 }
             }
         },
@@ -164475,8 +164483,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713558971400",
-                                    build_number: "286442"
+                                    built_at: "1713559589530",
+                                    build_number: "286450"
                                 }
                             },
                             retries: 1
@@ -216006,7 +216014,9 @@
                             return [t, {
                                 oauth2InstallParams: (null != n ? n : {}).oauth2_install_params
                             }]
-                        })) : null
+                        })) : null,
+                        termsOfServiceUrl: e.terms_of_service_url,
+                        privacyPolicyUrl: e.privacy_policy_url
                     })
                 }
                 getIconURL(e, t) {
@@ -216062,7 +216072,7 @@
                 }
                 constructor(e) {
                     var t, n, r, s;
-                    super(), u(this, "id", void 0), u(this, "name", void 0), u(this, "icon", void 0), u(this, "splash", void 0), u(this, "overlay", void 0), u(this, "overlayWarn", void 0), u(this, "overlayCompatibilityHook", void 0), u(this, "overlayMethods", void 0), u(this, "hook", void 0), u(this, "aliases", void 0), u(this, "publishers", void 0), u(this, "developers", void 0), u(this, "primarySkuId", void 0), u(this, "storeListingSkuId", void 0), u(this, "thirdPartySkus", void 0), u(this, "guildId", void 0), u(this, "guild", void 0), u(this, "executables", void 0), u(this, "hashes", void 0), u(this, "description", void 0), u(this, "eulaId", void 0), u(this, "slug", void 0), u(this, "coverImage", void 0), u(this, "bot", void 0), u(this, "flags", void 0), u(this, "maxParticipants", void 0), u(this, "tags", void 0), u(this, "embeddedActivityConfig", void 0), u(this, "type", void 0), u(this, "team", void 0), u(this, "roleConnectionsVerificationUrl", void 0), u(this, "integrationTypesConfig", void 0), u(this, "isMonetized", void 0), u(this, "storefront_available", void 0), this.id = e.id, this.name = e.name, this.icon = e.icon || null, this.splash = e.splash || null, this.overlay = e.overlay || !1, this.overlayWarn = e.overlayWarn || !1, this.overlayCompatibilityHook = e.overlayCompatibilityHook || !1, this.overlayMethods = null !== (t = e.overlayMethods) && void 0 !== t ? t : i.ApplicationOverlayMethodFlags.DEFAULT, this.hook = null === (n = e.hook) || void 0 === n || n, this.aliases = e.aliases || [], this.publishers = e.publishers || [], this.developers = e.developers || [], this.primarySkuId = e.primarySkuId, this.storeListingSkuId = e.storeListingSkuId, this.guildId = e.guildId || null, this.guild = e.guild || null, this.thirdPartySkus = e.thirdPartySkus || [], this.executables = (e.executables || []).map(_), this.hashes = e.hashes || [], this.description = e.description || null, this.eulaId = e.eulaId || null, this.slug = e.slug || null, this.bot = e.bot || null, this.coverImage = e.coverImage || null, this.flags = null !== (r = e.flags) && void 0 !== r ? r : 0, this.tags = null !== (s = e.tags) && void 0 !== s ? s : [], this.maxParticipants = e.maxParticipants, this.embeddedActivityConfig = e.embedded_activity_config, this.type = e.type, this.team = e.team, this.roleConnectionsVerificationUrl = e.roleConnectionsVerificationUrl, this.integrationTypesConfig = e.integrationTypesConfig, this.isMonetized = e.is_monetized, this.storefront_available = e.storefront_available
+                    super(), u(this, "id", void 0), u(this, "name", void 0), u(this, "icon", void 0), u(this, "splash", void 0), u(this, "overlay", void 0), u(this, "overlayWarn", void 0), u(this, "overlayCompatibilityHook", void 0), u(this, "overlayMethods", void 0), u(this, "hook", void 0), u(this, "aliases", void 0), u(this, "publishers", void 0), u(this, "developers", void 0), u(this, "primarySkuId", void 0), u(this, "storeListingSkuId", void 0), u(this, "thirdPartySkus", void 0), u(this, "guildId", void 0), u(this, "guild", void 0), u(this, "executables", void 0), u(this, "hashes", void 0), u(this, "description", void 0), u(this, "eulaId", void 0), u(this, "slug", void 0), u(this, "coverImage", void 0), u(this, "bot", void 0), u(this, "flags", void 0), u(this, "maxParticipants", void 0), u(this, "tags", void 0), u(this, "embeddedActivityConfig", void 0), u(this, "type", void 0), u(this, "team", void 0), u(this, "roleConnectionsVerificationUrl", void 0), u(this, "integrationTypesConfig", void 0), u(this, "isMonetized", void 0), u(this, "storefront_available", void 0), u(this, "termsOfServiceUrl", void 0), u(this, "privacyPolicyUrl", void 0), this.id = e.id, this.name = e.name, this.icon = e.icon || null, this.splash = e.splash || null, this.overlay = e.overlay || !1, this.overlayWarn = e.overlayWarn || !1, this.overlayCompatibilityHook = e.overlayCompatibilityHook || !1, this.overlayMethods = null !== (t = e.overlayMethods) && void 0 !== t ? t : i.ApplicationOverlayMethodFlags.DEFAULT, this.hook = null === (n = e.hook) || void 0 === n || n, this.aliases = e.aliases || [], this.publishers = e.publishers || [], this.developers = e.developers || [], this.primarySkuId = e.primarySkuId, this.storeListingSkuId = e.storeListingSkuId, this.guildId = e.guildId || null, this.guild = e.guild || null, this.thirdPartySkus = e.thirdPartySkus || [], this.executables = (e.executables || []).map(_), this.hashes = e.hashes || [], this.description = e.description || null, this.eulaId = e.eulaId || null, this.slug = e.slug || null, this.bot = e.bot || null, this.coverImage = e.coverImage || null, this.flags = null !== (r = e.flags) && void 0 !== r ? r : 0, this.tags = null !== (s = e.tags) && void 0 !== s ? s : [], this.maxParticipants = e.maxParticipants, this.embeddedActivityConfig = e.embedded_activity_config, this.type = e.type, this.team = e.team, this.roleConnectionsVerificationUrl = e.roleConnectionsVerificationUrl, this.integrationTypesConfig = e.integrationTypesConfig, this.isMonetized = e.is_monetized, this.storefront_available = e.storefront_available, this.termsOfServiceUrl = e.termsOfServiceUrl, this.privacyPolicyUrl = e.privacyPolicyUrl
                 }
             }
         },
@@ -241470,7 +241480,7 @@
                                 }
                         })
                     }
-                    X.delete(e), J.info("pid=".concat(e, " status transition ").concat(null != i ? i : "DISCONNECTED", " -> ").concat(null != t ? t : "DISCONNECTED"), F), V = Array.from(F.values()).some(e => "READY" === e)
+                    X.delete(e), J.info("pid=".concat(e, " status transition ").concat(null != i ? i : "DISCONNECTED", " -> ").concat(null != t ? t : "DISCONNECTED"), F), V !== (V = Array.from(F.values()).some(e => "READY" === e)) && b.default.setBackgroundThrottling(!V)
                 }
             }
             async function ei(e) {
@@ -241888,7 +241898,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "da35df3c2fb632cbd1591f7038b215a0595960cf"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "46d538fdc1bd41ef14753598dde4fab1d3732793"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270349,7 +270359,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286442"
+                                build_number: "286450"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -277534,7 +277544,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286442", "286442"), 10);
+                let s = parseInt((n = "286450", "286450"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -304720,4 +304730,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.6356e690f15d700f61e8.js.map
+//# sourceMappingURL=35705.3a33e40ca341a767a137.js.map
