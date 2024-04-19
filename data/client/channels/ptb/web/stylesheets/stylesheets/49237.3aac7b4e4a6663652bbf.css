@@ -27635,17 +27635,8 @@ html.disable-forced-colors * {
     --custom-overlay-color: hsl(var(--white-500-hsl) / 0.3)
 }
 
-.container__37170 {
-    background: var(--background-secondary);
-    width: calc(100vw - 60px);
-    max-width: 621px;
-    box-sizing: border-box;
-    padding-top: 20px;
-    position: relative
-}
-
-.containerScrollGradient__8c8dd {
-    background: linear-gradient(0deg, var(--background-secondary-alt)-3.62%, rgba(0, 0, 0, 0)96.84%);
+.containerScrollGradient__92923 {
+    background: linear-gradient(0deg, var(--background-primary)0%, rgba(0, 0, 0, 0)100%);
     bottom: 0;
     left: 0;
     height: 52px;
@@ -27656,8 +27647,17 @@ html.disable-forced-colors * {
     transition: opacity ease-in-out.12s
 }
 
-.containerScrollGradient__8c8dd[data-shown=true] {
+.containerScrollGradient__92923[data-shown=true] {
     opacity: 1
+}
+
+.container__37170 {
+    background: var(--background-secondary);
+    width: calc(100vw - 60px);
+    max-width: 621px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    position: relative
 }
 
 .header_d9d642 {
@@ -27755,7 +27755,7 @@ html.disable-forced-colors * {
 }
 
 .wrapper_f38d07 {
-    background-color: var(--background-modifier-hover);
+    background-color: var(--background-secondary-alt);
     border-radius: 8px;
     overflow: hidden;
     width: 320px
@@ -27826,7 +27826,7 @@ html.disable-forced-colors * {
 
 .container_cf8411 {
     align-items: center;
-    background: var(--background-floating);
+    background: var(--background-nested-floating);
     border-radius: 12px;
     display: inline-flex;
     gap: 4px;
@@ -27842,7 +27842,8 @@ html.disable-forced-colors * {
     user-select: none;
     height: -moz-fit-content;
     height: fit-content;
-    background-color: var(--background-modifier-hover)
+    background-color: var(--background-modifier-hover);
+    border: 1px solid var(--background-modifier-accent)
 }
 
 .image__654ad {
@@ -27872,7 +27873,7 @@ html.disable-forced-colors * {
 
 .card__3135c {
     align-items: center;
-    background-color: var(--background-modifier-active);
+    background-color: var(--background-secondary-alt);
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -27892,6 +27893,7 @@ html.disable-forced-colors * {
 }
 
 .benefits_bed5d2 {
+    background-color: var(--background-secondary);
     padding: 16px
 }
 
@@ -28168,4 +28170,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.005341e6e40081fa0b4d.css.map*/
+/*# sourceMappingURL=49237.3aac7b4e4a6663652bbf.css.map*/
