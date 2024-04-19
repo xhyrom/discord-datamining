@@ -36653,7 +36653,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286317", ", Version Hash: ").concat("c874c8ff4234dc518cf91f99fbce3d89e32e72b1")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286350", ", Version Hash: ").concat("11ff56af3cd059b8b62b29c2da213bf495ce8b55")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86616,8 +86616,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286317", "286317"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286317")), t = 0), t
+                let t = parseInt((e = "286350", "286350"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286350")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111161,8 +111161,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286317",
-                    versionHash: "c874c8ff4234dc518cf91f99fbce3d89e32e72b1"
+                    buildNumber: "286350",
+                    versionHash: "11ff56af3cd059b8b62b29c2da213bf495ce8b55"
                 }
             }
             n.r(t), n.d(t, {
@@ -157465,9 +157465,10 @@
                     let {
                         userId: r,
                         channelId: o,
-                        roleId: l
+                        roleId: l,
+                        roleName: u
                     } = e;
-                    return null == r && null != l ? (0, i.jsx)(s.default, {
+                    return null == r && (null != l || "@everyone" === u || "@here" === u) ? (0, i.jsx)(s.default, {
                         inlinePreview: n.formatInline,
                         ...e,
                         children: t(e.content, n)
@@ -164402,8 +164403,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713550780614",
-                                    build_number: "286317"
+                                    built_at: "1713551931364",
+                                    build_number: "286350"
                                 }
                             },
                             retries: 1
@@ -205323,7 +205324,11 @@
         },
         421486: function(e, t, n) {
             "use strict";
-            n.r(t), n("47120");
+            n.r(t), n.d(t, {
+                SmallMutualFriendsAndGuilds: function() {
+                    return R
+                }
+            }), n("47120");
             var i, r, s = n("735250"),
                 a = n("470079"),
                 o = n("120356"),
@@ -205352,15 +205357,16 @@
                     mutualGuilds: i,
                     onClose: r,
                     analyticsLocation: o,
-                    maxIcons: u = 3
+                    maxIcons: u = 3,
+                    showNoMutuals: I = !1
                 } = e, {
-                    analyticsLocations: I
+                    analyticsLocations: f
                 } = (0, _.default)(), {
-                    guildId: f,
-                    channelId: h,
-                    messageId: A,
-                    roleId: R
-                } = (0, S.useUserProfileAnalyticsContext)(), C = a.useMemo(() => {
+                    guildId: h,
+                    channelId: A,
+                    messageId: R,
+                    roleId: C
+                } = (0, S.useUserProfileAnalyticsContext)(), g = a.useMemo(() => {
                     var e;
                     return null !== (e = null == n ? void 0 : n.map(e => {
                         let {
@@ -205368,7 +205374,7 @@
                         } = e;
                         return t
                     })) && void 0 !== e ? e : []
-                }, [n]), g = a.useMemo(() => {
+                }, [n]), L = a.useMemo(() => {
                     var e;
                     return null !== (e = null == i ? void 0 : i.map(e => {
                         let {
@@ -205376,46 +205382,46 @@
                         } = e;
                         return t
                     })) && void 0 !== e ? e : []
-                }, [i]), L = a.useMemo(() => p.default.Messages.USER_PROFILE_MUTUAL_FRIENDS_SHORT.format({
-                    count: C.length
-                }), [C]), D = a.useMemo(() => p.default.Messages.USER_PROFILE_MUTUAL_GUILDS_SHORT.format({
+                }, [i]), D = a.useMemo(() => p.default.Messages.USER_PROFILE_MUTUAL_FRIENDS_SHORT.format({
                     count: g.length
-                }), [g]), v = a.useRef(null), [M, y] = a.useState(!1), [P, U] = a.useState(!1), b = a.useCallback(() => {
-                    if (null != v.current) {
+                }), [g]), v = a.useMemo(() => p.default.Messages.USER_PROFILE_MUTUAL_GUILDS_SHORT.format({
+                    count: L.length
+                }), [L]), M = a.useRef(null), [y, P] = a.useState(!1), [U, b] = a.useState(!1), G = a.useCallback(() => {
+                    if (null != M.current) {
                         var e;
-                        U((null === (e = v.current) || void 0 === e ? void 0 : e.clientHeight) > 19), y(!0)
+                        b((null === (e = M.current) || void 0 === e ? void 0 : e.clientHeight) > 19), P(!0)
                     }
-                }, []), G = a.useCallback(e => () => {
+                }, []), w = a.useCallback(e => () => {
                     (0, m.openUserProfileModal)({
                         userId: t.id,
-                        sourceAnalyticsLocations: I,
-                        guildId: f,
-                        channelId: h,
-                        messageId: A,
-                        roleId: R,
+                        sourceAnalyticsLocations: f,
+                        guildId: h,
+                        channelId: A,
+                        messageId: R,
+                        roleId: C,
                         section: e,
                         analyticsLocation: o
                     }), null == r || r()
-                }, [o, I, r, t.id, f, h, A, R]);
+                }, [o, f, r, t.id, h, A, R, C]);
                 a.useEffect(() => {
-                    b()
-                }, [b, L]);
-                let w = C.length > 0,
-                    B = g.length > 0;
+                    G()
+                }, [G, D]);
+                let B = g.length > 0,
+                    k = L.length > 0;
                 return (0, s.jsxs)("div", {
-                    className: l()(O.compactItemContainer, !M && O.hideElement),
-                    ref: v,
-                    children: [w && (0, s.jsx)(d.Tooltip, {
+                    className: l()(O.compactItemContainer, !y && O.hideElement),
+                    ref: M,
+                    children: [B && (0, s.jsx)(d.Tooltip, {
                         text: p.default.Messages.USER_PROFILE_MUTUAL_FRIENDS_TOOLTIP,
                         children: e => (0, s.jsxs)(d.Clickable, {
                             ...e,
-                            onClick: G(N.UserProfileSections.MUTUAL_FRIENDS),
+                            onClick: w(N.UserProfileSections.MUTUAL_FRIENDS),
                             className: l()(O.avatarAndTextContainer, O.__invalid_friendsContainer),
                             children: [(0, s.jsx)("div", {
                                 className: O.__invalid_avatars,
                                 children: (0, s.jsx)(c.default, {
                                     maxUsers: u,
-                                    users: C,
+                                    users: g,
                                     size: d.AvatarSizes.SIZE_16,
                                     hideOverflowCount: !0,
                                     disableUsernameTooltip: !0
@@ -205424,23 +205430,26 @@
                                 className: O.itemizedListText,
                                 variant: "text-sm/normal",
                                 color: "interactive-normal",
-                                children: L
+                                children: D
                             })]
                         })
-                    }), w && B && (0, s.jsx)("div", {
+                    }), I && !B && (0, s.jsx)(d.Text, {
+                        variant: "text-xs/normal",
+                        children: p.default.Messages.USER_PROFILE_NO_MUTUAL_FRIENDS
+                    }), (B && k || I) && (0, s.jsx)("div", {
                         "aria-hidden": "true",
                         className: O.dotSpacer
-                    }), B && (0, s.jsx)(d.Tooltip, {
+                    }), k && (0, s.jsx)(d.Tooltip, {
                         text: p.default.Messages.USER_PROFILE_MUTUAL_GUILDS_TOOLTIP,
                         children: e => (0, s.jsxs)(d.Clickable, {
                             ...e,
-                            onClick: G(N.UserProfileSections.MUTUAL_GUILDS),
+                            onClick: w(N.UserProfileSections.MUTUAL_GUILDS),
                             className: l()(O.avatarAndTextContainer, O.serverContainer),
-                            children: [!P && (0, s.jsx)("div", {
+                            children: [!U && (0, s.jsx)("div", {
                                 className: O.__invalid_avatars,
                                 children: (0, s.jsx)(E.default, {
                                     maxGuilds: u,
-                                    guilds: g,
+                                    guilds: L,
                                     size: T.default.Sizes.SMOL,
                                     hideOverflowCount: !0,
                                     disableGuildNameTooltip: !0
@@ -205449,9 +205458,12 @@
                                 className: O.itemizedListText,
                                 variant: "text-sm/normal",
                                 color: "interactive-normal",
-                                children: D
+                                children: v
                             })]
                         })
+                    }), I && !k && (0, s.jsx)(d.Text, {
+                        variant: "text-xs/normal",
+                        children: p.default.Messages.USER_PROFILE_NO_MUTUAL_FRIENDS
                     })]
                 })
             });
@@ -206826,7 +206838,8 @@
                             onOpenProfile: N
                         }) : null
                     }), C && (0, i.jsx)(S.default, {
-                        user: t
+                        user: t,
+                        onClose: R
                     }), C && (0, i.jsx)(T.default, {
                         user: t,
                         bio: null == n ? void 0 : n.bio,
@@ -207150,73 +207163,29 @@
         },
         287612: function(e, t, n) {
             "use strict";
-            n.r(t), n("47120");
+            n.r(t);
             var i = n("735250"),
                 r = n("470079"),
-                s = n("120356"),
-                a = n.n(s),
-                o = n("442837"),
-                l = n("481060"),
-                u = n("232567"),
-                d = n("79712"),
-                _ = n("478758"),
-                c = n("594174"),
-                E = n("621853"),
-                I = n("689938"),
-                T = n("735619");
+                s = n("442837"),
+                a = n("314897"),
+                o = n("706327"),
+                l = n("285470"),
+                u = n("421486"),
+                d = n("735619");
             t.default = r.memo(function(e) {
                 let {
-                    user: t
-                } = e, n = (0, o.useStateFromStores)([c.default], () => c.default.getCurrentUser()), s = (0, o.useStateFromStores)([E.default], () => E.default.getMutualFriends(t.id));
-                r.useEffect(() => {
-                    null == s && (0, u.fetchMutualFriends)(t.id)
-                }, [s, t.id]);
-                let f = r.useMemo(() => {
-                        var e;
-                        return null !== (e = null == s ? void 0 : s.slice(0, 3).map(e => {
-                            let {
-                                user: t
-                            } = e;
-                            return t
-                        })) && void 0 !== e ? e : []
-                    }, [s]),
-                    S = (0, o.useStateFromStores)([E.default], () => E.default.getMutualGuilds(t.id)),
-                    [h, A] = (0, o.useStateFromStoresArray)([E.default], () => [E.default.isFetchingFriends(t.id), E.default.isFetchingProfile(t.id)]);
-                if (t.id === (null == n ? void 0 : n.id) || (null == s ? void 0 : s.length) === 0 && (null == S ? void 0 : S.length) === 0) return null;
-                if (h || A) return (0, i.jsx)("div", {
-                    className: a()(T.spinnerContainer),
-                    children: (0, i.jsx)(l.Spinner, {
-                        className: T.spinner
+                    user: t,
+                    onClose: n
+                } = e, r = (0, s.useStateFromStores)([a.default], () => a.default.getId()), _ = t.id === r, c = (0, l.useMutualGuilds)(t), E = (0, o.useMutualFriends)(t);
+                return _ ? null : (0, i.jsx)("div", {
+                    className: d.container,
+                    children: (0, i.jsx)(u.SmallMutualFriendsAndGuilds, {
+                        user: t,
+                        mutualFriends: E,
+                        mutualGuilds: c,
+                        onClose: n,
+                        showNoMutuals: !0
                     })
-                });
-                let m = null != s && s.length > 0 ? I.default.Messages.MUTUAL_FRIENDS_COUNT.format({
-                        count: s.length
-                    }) : I.default.Messages.USER_PROFILE_NO_MUTUAL_FRIENDS,
-                    N = null != S && S.length > 0 ? I.default.Messages.MUTUAL_GUILDS_COUNT.format({
-                        count: S.length
-                    }) : I.default.Messages.USER_PROFILE_NO_MUTUAL_SERVERS;
-                return (0, i.jsxs)("div", {
-                    className: T.container,
-                    children: [(0, i.jsx)(_.default, {
-                        partySize: {
-                            knownSize: f.length,
-                            totalSize: Math.min(f.length, 3)
-                        },
-                        maxAvatarsShown: 3,
-                        members: f
-                    }), (0, i.jsx)(l.Text, {
-                        className: (null == s ? void 0 : s.length) === 0 ? void 0 : T.mutualFriendsText,
-                        variant: "text-xs/normal",
-                        children: m
-                    }), (0, i.jsx)(d.default, {
-                        height: 4,
-                        width: 4,
-                        "aria-hidden": "true",
-                        className: T.dotSpacer
-                    }), (0, i.jsx)(l.Text, {
-                        variant: "text-xs/normal",
-                        children: N
-                    })]
                 })
             })
         },
@@ -241654,7 +241623,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "c874c8ff4234dc518cf91f99fbce3d89e32e72b1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "11ff56af3cd059b8b62b29c2da213bf495ce8b55"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270115,7 +270084,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286317"
+                                build_number: "286350"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -277300,7 +277269,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286317", "286317"), 10);
+                let s = parseInt((n = "286350", "286350"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -304486,4 +304455,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.17f20be6f7f74bcd3cb6.js.map
+//# sourceMappingURL=73050.d77430cceac4dfa7d8d1.js.map
