@@ -121258,15 +121258,39 @@ html .invoiceCancelRow__6ff3e {
 }
 
 .rewardTileWrapper__1e38a {
-    width: 100%;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    position: relative;
+    width: 100%
+}
+
+.rewardTileWrapper__1e38a:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%
 }
 
 .rewardTileAsset_cb8b2b {
     border: 1px solid var(--custom-reward-tile-border-color);
     display: block;
     height: auto;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    transition: opacity.25s;
     width: 100%
+}
+
+.rewardTileAssetLoading__3e9fa {
+    opacity: 0;
+    visibility: hidden
+}
+
+.rewardTileAssetStatusIcon_a0b95b {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%)
 }
 
 .rewardSubheading__52cec {
@@ -134444,4 +134468,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d883f2203b286f105e26.css.map*/
+/*# sourceMappingURL=99387.940bec9f7d4927dcc05e.css.map*/
