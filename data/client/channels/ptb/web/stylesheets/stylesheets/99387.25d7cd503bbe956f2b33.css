@@ -81180,9 +81180,8 @@ input::-webkit-inner-spin-button {
     padding: 16px 0
 }
 
-.banner__36618,
 .productSection_d2504b {
-    padding-bottom: 40px
+    margin-top: 40px
 }
 
 @value gridSize: 320px;
@@ -81211,6 +81210,12 @@ input::-webkit-inner-spin-button {
 .subDetailsModal_c2c023 {
     border-radius: 12px;
     overflow: hidden
+}
+
+.legalText__3817f {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--background-modifier-accent)
 }
 
 .footer_cf774b {
@@ -134517,4 +134522,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.fec283cc9cf0b9d95638.css.map*/
+/*# sourceMappingURL=99387.25d7cd503bbe956f2b33.css.map*/
