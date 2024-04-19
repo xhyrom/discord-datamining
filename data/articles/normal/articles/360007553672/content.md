@@ -1,12 +1,12 @@
 <p>Welcome HypeSquad or potential HypeSquad member. You must have recently heard that we have fine tuned some things at HQ and are now introducing houses to our program. What houses are there to pick from, you might ask? Well worry not new adventurer, for this article will prepare you for the battle that is ahead, but first, let us introduce the HypeSquad Houses:</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360009331331" alt="Screen_Shot_2018-08-16_at_2.28.06_PM.png" width="655" height="217"></p>
-<h1 class="wysiwyg-text-align-left"><strong><span class="wysiwyg-font-size-x-large" style="color: #9c92e7;" data-darkreader-inline-color="">House of Bravery<br></span></strong></h1>
+<h1 id="h_01HVVT14T8VNQFV4XYHJ565106" class="wysiwyg-text-align-left"><strong><span class="wysiwyg-font-size-x-large" style="color: #9c92e7;" data-darkreader-inline-color="">House of Bravery<br></span></strong></h1>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360042402651" alt="Bravery.png"></p>
 <p class="wysiwyg-text-align-left"><span style="font-weight: 400;">The universe needs people to lead the charge with confident optimism and tenacity. Without the brave, the HypeSquad would descend into chaos.</span></p>
-<h1 class="wysiwyg-text-align-left"><strong><span class="wysiwyg-color-red70">House of Brilliance</span></strong></h1>
+<h1 id="h_01HVVT14T8WX3MSV7BK6QDRM6S" class="wysiwyg-text-align-left"><strong><span class="wysiwyg-color-red70">House of Brilliance</span></strong></h1>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360042402691" alt="Brilliance.png"></p>
 <p><span style="font-weight: 400;">It takes patience and discipline to become a vital member of the universe. Without brilliance, the HypeSquad would descend into chaos.</span></p>
-<h1><span class="wysiwyg-color-cyan110"><strong><span class="wysiwyg-font-size-x-large">House of Balance</span></strong></span></h1>
+<h1 id="h_01HVVT14T8FRZ1BTP3E8E1BEVH"><span class="wysiwyg-color-cyan110"><strong><span class="wysiwyg-font-size-x-large">House of Balance</span></strong></span></h1>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360042402631" alt="Balance.png"></p>
 <p><span style="font-weight: 400;">Harmony and poise are necessary to create equilibrium in the universe. Without balance, the HypeSquad would descend into chaos.</span></p>
 <h2 id="this-sound-rad-how-can-i-join-a-hype-squad-house"><strong>This sounds rad! How can I join a HypeSquad House?</strong></h2>
@@ -17,8 +17,4 @@
 <p>All existing HypeSquad Online members have been automagically assigned a house. If you think you’d be better suited for a different house, or you just really wanna take that test, you can head on over to User Settings in the desktop or web app, and select the shiny new “HypeSquad” tab!</p>
 <h2 id="im-not-quite-a-fan-of-my-house-can-i-join-another"><strong>I'm not quite a fan of my House. Can I join another? </strong></h2>
 <p>You're welcome to retake the HypeSquad House placement test in User Settings &gt; HypeSquad! While you can't directly select a particular House, you can see which House you'd be placed in if you were to answer a bit differently!</p>
-<h2 id="i-wanna-take-my-hype-to-the-next-level-what-else-can-i-do-to-help"><strong>I wanna take my Hype to the NEXT LEVEL! What else can I do to help?</strong></h2>
-<p>I’m stoked that you asked! If you wanna go the extra mile, you may be interested in becoming a HypeSquad Event Attendee or an Event Coordinator!</p>
-<p>Event Attendees help rep Discord in the real world, and we’ll even send them some free swag to wear and give away at events! Event Coordinators help run gaming events for their local organizations, schools or universities and qualify to receive a HUGE box of free Discord swag to give away, ranging from stickers, buttons and even free shirts!</p>
-<p>You can learn more about what we look for in Event Attendees and Hosts over at our <a class="ql-link" href="https://support.discord.com/hc/en-us/articles/360003343812-HypeSquad-Event-Application-Requirements-" target="_blank" rel="noopener">HypeSquad Event Application Requirements</a> page. If you think you fit the bill, head on over to <a href="https://discordapp.com/hypesquad">discord.com/hypesquad</a> and apply!</p>
 <p><span style="font-weight: 400;"> </span></p>
