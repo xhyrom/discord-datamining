@@ -36661,7 +36661,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286476", ", Version Hash: ").concat("30a8acdc15ccb936132c68ce8a104eb437861888")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286482", ", Version Hash: ").concat("d23bb5901cc8cf78191ce59fc10bc5463e65aebf")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86645,8 +86645,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286476", "286476"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286476")), t = 0), t
+                let t = parseInt((e = "286482", "286482"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286482")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -100979,7 +100979,7 @@
                     return L
                 },
                 HOISTED_SEARCH_APPLICATION_IDS_BY_PRIORITY: function() {
-                    return V
+                    return k
                 },
                 IDENTITY_TRAITS: function() {
                     return M
@@ -101005,12 +101005,6 @@
                 MAX_TAG_LENGTH: function() {
                     return I
                 },
-                PLACEHOLDER_CLAN_LANGUAGE: function() {
-                    return B
-                },
-                PLACEHOLDER_CLAN_LOCATION: function() {
-                    return w
-                },
                 PLAYSTYLE_GROUPS: function() {
                     return O
                 },
@@ -101024,7 +101018,7 @@
                     return D
                 },
                 ensureUserClanData: function() {
-                    return k
+                    return w
                 },
                 getPlaystyleOptions: function() {
                     return C
@@ -101046,7 +101040,7 @@
                     }
                 },
                 toServerClanData: function() {
-                    return F
+                    return B
                 }
             }), n("47120"), n("653041");
             var i, r, s, a, o, l, u, d, _ = n("913527"),
@@ -101160,10 +101154,8 @@
             function G() {
                 return b[Math.floor(Math.random() * b.length)]
             }
-            let w = "United States",
-                B = "English";
 
-            function k(e) {
+            function w(e) {
                 return null == e ? null : "identityGuildId" in e ? e : {
                     identityGuildId: e.identity_guild_id,
                     identityEnabled: e.identity_enabled,
@@ -101171,12 +101163,12 @@
                 }
             }
 
-            function F(e) {
+            function B(e) {
                 return {
                     tag: e.tag
                 }
             }
-            let V = new Map(["432980957394370572", "363445589247131668", "356869127241072640", "700136079562375258", "356875570916753438", "1158877933042143272", "1197827812623650866", "356876176465199104", "1167674267748540516", "542075586886107149", "356875221078245376", "1149118246826561609", "356877880938070016", "356875988589740042", "762434991303950386", "356873622985506820", "356876590342340608", "1205090671527071784", "1182713227491147776", "631914894446297148", "1137125502985961543", "357607478105604096", "359509007423242240", "1121201675240210523", "643897785271189524", "742897755160313986", "356888738724446208", "1199745463918788740", "1116835216464543946", "406637848297472017", "356888961353908224", "905961880789590076", "367827983903490050", "356944273133928458", "356942674672091136", "946609449680908348", "356875762940379136", "615752773690064908", "357607133254254632", "356943499456937984", "477175586805252107", "787443973538971748", "359508713658253318", "356877880938070016", "422772752647323649", "356954277803065354", "359509387670192128", "428055627030331402", "363447565905166336", "372438022647578634", "614380482620293151", "506950362461110273", "356879032584896512", "1161772875901051042", "535371564850479134", "363413743335374859", "385538724592746496", "426526722322726912", "1174041358995042375", "1124351876033425529", "477152881196269569", "1113966530531704943", "425778010222886912", "356875890958925834", "1124358970618953818", "356888577310851072", "398632010442211348", "1124349969906815007", "770314100885422095", "1080277149623271444", "428054228511227914", "358420454764969994", "358421669603311616", "363430548028522496", "1129504162200166401", "1200228630245159032", "356889262362329098", "356887282982191114", "363409643973771264", "1164697075582238730", "940810636273795162", "982316905262120990", "359510095811444736", "363411421553360896", "359509332490059776", "1162076274622222346", "1162085521816813721", "359507724196773888", "359801269008859136", "569253958967885828", "457301824110723113", "1140238527980916757", "1124353632758939688", "542075586886107149", "512699108809637890", "653432003798106122"].map((e, t, n) => [e, n.length - t]))
+            let k = new Map(["432980957394370572", "363445589247131668", "356869127241072640", "700136079562375258", "356875570916753438", "1158877933042143272", "1197827812623650866", "356876176465199104", "1167674267748540516", "542075586886107149", "356875221078245376", "1149118246826561609", "356877880938070016", "356875988589740042", "762434991303950386", "356873622985506820", "356876590342340608", "1205090671527071784", "1182713227491147776", "631914894446297148", "1137125502985961543", "357607478105604096", "359509007423242240", "1121201675240210523", "643897785271189524", "742897755160313986", "356888738724446208", "1199745463918788740", "1116835216464543946", "406637848297472017", "356888961353908224", "905961880789590076", "367827983903490050", "356944273133928458", "356942674672091136", "946609449680908348", "356875762940379136", "615752773690064908", "357607133254254632", "356943499456937984", "477175586805252107", "787443973538971748", "359508713658253318", "356877880938070016", "422772752647323649", "356954277803065354", "359509387670192128", "428055627030331402", "363447565905166336", "372438022647578634", "614380482620293151", "506950362461110273", "356879032584896512", "1161772875901051042", "535371564850479134", "363413743335374859", "385538724592746496", "426526722322726912", "1174041358995042375", "1124351876033425529", "477152881196269569", "1113966530531704943", "425778010222886912", "356875890958925834", "1124358970618953818", "356888577310851072", "398632010442211348", "1124349969906815007", "770314100885422095", "1080277149623271444", "428054228511227914", "358420454764969994", "358421669603311616", "363430548028522496", "1129504162200166401", "1200228630245159032", "356889262362329098", "356887282982191114", "363409643973771264", "1164697075582238730", "940810636273795162", "982316905262120990", "359510095811444736", "363411421553360896", "359509332490059776", "1162076274622222346", "1162085521816813721", "359507724196773888", "359801269008859136", "569253958967885828", "457301824110723113", "1140238527980916757", "1124353632758939688", "542075586886107149", "512699108809637890", "653432003798106122"].map((e, t, n) => [e, n.length - t]))
         },
         963202: function(e, t, n) {
             "use strict";
@@ -111160,8 +111152,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286476",
-                    versionHash: "30a8acdc15ccb936132c68ce8a104eb437861888"
+                    buildNumber: "286482",
+                    versionHash: "d23bb5901cc8cf78191ce59fc10bc5463e65aebf"
                 }
             }
             n.r(t), n.d(t, {
@@ -111754,8 +111746,7 @@
                         primaryColor: s(e.brand_color_primary, n.primary),
                         secondaryColor: s(e.brand_color_secondary, n.secondary)
                     },
-                    location: r.PLACEHOLDER_CLAN_LOCATION,
-                    language: r.PLACEHOLDER_CLAN_LANGUAGE
+                    wildcardDescriptors: e.wildcard_descriptors
                 }
             }
 
@@ -164446,8 +164437,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713562972082",
-                                    build_number: "286476"
+                                    built_at: "1713563461134",
+                                    build_number: "286482"
                                 }
                             },
                             retries: 1
@@ -241861,7 +241852,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "30a8acdc15ccb936132c68ce8a104eb437861888"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d23bb5901cc8cf78191ce59fc10bc5463e65aebf"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270322,7 +270313,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286476"
+                                build_number: "286482"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -277507,7 +277498,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286476", "286476"), 10);
+                let s = parseInt((n = "286482", "286482"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -304693,4 +304684,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.22a60a4235aa5639bcfb.js.map
+//# sourceMappingURL=35705.6f06dcb4c991fffef392.js.map
