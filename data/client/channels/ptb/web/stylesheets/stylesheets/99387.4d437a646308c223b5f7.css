@@ -13569,8 +13569,7 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .wrapper__38bac {
-    background-color: var(--background-secondary);
-    overflow: hidden
+    background: var(--bg-overlay-chat, var(--background-secondary))
 }
 
 .container_bad367 {
@@ -134629,4 +134628,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1f09ded1bbdb3eb507fb.css.map*/
+/*# sourceMappingURL=99387.4d437a646308c223b5f7.css.map*/
