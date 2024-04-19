@@ -36653,7 +36653,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286359", ", Version Hash: ").concat("1b4d3dc8976f7d30dd96e3c8cb7d9aee32072dd2")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286373", ", Version Hash: ").concat("875928ad93735288f4c4c0049cddd92d92e00bab")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -53275,6 +53275,12 @@
                 COLLECTIBLES_MOBILE_SHOP_MARKETING_COACHTIP_DESCRIPTION: "Personalize your profile with Anime, Cyberpunk, Fantasy decorations and more.",
                 COLLECTIBLES_MOBILE_SHOP_MARKETING_SHEET_USER_DESCRIPTION_1: "Super Smash Toads Champ 2024",
                 COLLECTIBLES_MOBILE_SHOP_MARKETING_SHEET_USER_DESCRIPTION_2: "GM, protector of the Enchanted Lake",
+                COLLECTIBLES_CATEGORY_BANNER_A11Y_LABEL: "Category: {category}, view all",
+                COLLECTIBLES_LIMITED_TIME_BADGE_A11Y_LABEL: "{daysLeft} days remaining",
+                COLLECTIBLES_ITEM_ORIGINAL_PRICE_A11Y_LABEL: "Original price: {price}",
+                COLLECTIBLES_ITEM_NITRO_PRICE_A11Y_LABEL: "{price} with Nitro",
+                COLLECTIBLES_AVATAR_DECORATION_PREVIEW_A11Y_LABEL: "Avatar decoration preview: {avatarDecoration}",
+                COLLECTIBLES_PROFILE_EFFECT_PREVIEW_A11Y_LABEL: "Profile effect preview: {profileEffect}",
                 COLLECTIBLES_DAYS_LEFT_IN_SHOP: "{days} days left in Shop",
                 COLLECTIBLES_DAYS_LEFT: "{days} days left",
                 COLLECTIBLES_LAST_DAY: "Last day to buy",
@@ -86617,8 +86623,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286359", "286359"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286359")), t = 0), t
+                let t = parseInt((e = "286373", "286373"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286373")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111162,8 +111168,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286359",
-                    versionHash: "1b4d3dc8976f7d30dd96e3c8cb7d9aee32072dd2"
+                    buildNumber: "286373",
+                    versionHash: "875928ad93735288f4c4c0049cddd92d92e00bab"
                 }
             }
             n.r(t), n.d(t, {
@@ -112500,15 +112506,16 @@
             var r = n("433517"),
                 s = n("481060"),
                 a = n("704587"),
-                o = n("338096");
+                o = n("920133"),
+                l = n("338096");
             t.default = {
                 openDmSettingsUpsellModal(e) {
                     if (!(0, a.isEligibleForDmSettingsUpsell)({
                             location: "DmSettingsUpsellManager"
                         })) return;
-                    let t = r.Storage.get(o.DM_SETTINGS_UPSELL_LAST_SHOWN_KEY),
-                        l = Date.now();
-                    (null == t || l - t > o.DM_SETTINGS_UPSELL_LAST_SHOWN_MAX_TIME_MS) && (r.Storage.set(o.DM_SETTINGS_UPSELL_LAST_SHOWN_KEY, l), (0, s.openModalLazy)(async () => {
+                    let t = r.Storage.get(l.DM_SETTINGS_UPSELL_LAST_SHOWN_KEY),
+                        u = Date.now();
+                    null == t || u - t > l.DM_SETTINGS_UPSELL_LAST_SHOWN_MAX_TIME_MS ? (r.Storage.set(l.DM_SETTINGS_UPSELL_LAST_SHOWN_KEY, u), (0, s.openModalLazy)(async () => {
                         let {
                             default: t
                         } = await Promise.all([n.e("99387"), n.e("35489")]).then(n.bind(n, "582712"));
@@ -112516,7 +112523,7 @@
                             ...n,
                             guildId: e
                         })
-                    }))
+                    })) : (0, o.trackEvent)(o.DmUpsellActionTypes.SUPPRESSED_BY_COOLDOWN, e)
                 }
             }
         },
@@ -112536,6 +112543,9 @@
         704587: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                DmSettingsUpsellExperiment: function() {
+                    return i
+                },
                 isEligibleForDmSettingsUpsell: function() {
                     return r
                 }
@@ -112578,14 +112588,22 @@
             "use strict";
             n.r(t), n.d(t, {
                 acknowledgeDmSettingsUpsell: function() {
-                    return l
+                    return u
                 }
             }), n("47120");
             var i = n("544891"),
                 r = n("147913"),
                 s = n("25733"),
-                a = n("981631");
-            class o extends r.default {
+                a = n("704587"),
+                o = n("981631");
+            class l extends r.default {
+                intialize() {
+                    a.DmSettingsUpsellExperiment.getCurrentConfig({
+                        location: "initializer"
+                    }, {
+                        autoTrackExposure: !1
+                    })
+                }
                 handleDmSettingsUpsellShow(e) {
                     s.default.openDmSettingsUpsellModal(e.guildId)
                 }
@@ -112602,12 +112620,32 @@
                 }
             }
 
-            function l(e) {
+            function u(e) {
                 return i.HTTP.post({
-                    url: a.Endpoints.DM_SETTINGS_UPSELL_ACK(e)
+                    url: o.Endpoints.DM_SETTINGS_UPSELL_ACK(e)
                 })
             }
-            t.default = new o
+            t.default = new l
+        },
+        920133: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                DmUpsellActionTypes: function() {
+                    return r
+                },
+                trackEvent: function() {
+                    return o
+                }
+            });
+            var i, r, s = n("626135"),
+                a = n("981631");
+
+            function o(e, t) {
+                s.default.track(a.AnalyticEvents.DM_SETTINGS_UPSELL_ACTION, {
+                    action: e,
+                    guild_id: t
+                })
+            }(i = r || (r = {})).MODAL_VIEWED = "modal_viewed", i.MODAL_DISMISSED = "modal_dismissed", i.MODAL_GUILD_SETTINGS_CLICKED = "modal_guild_settings_clicked", i.SUPPRESSED_BY_COOLDOWN = "suppressed_by_cooldown", i.MODAL_DISABLED_DMS = "modal_disabled_dms"
         },
         149203: function(e, t, n) {
             "use strict";
@@ -158239,22 +158277,6 @@
                         canSupportMls: !1
                     },
                     treatments: [{
-                        id: 3,
-                        label: "Can support secure frames above protocol version 8",
-                        config: {
-                            protocolVersionFloor: 8,
-                            canSupportSecureFrames: !0,
-                            canSupportMls: !1
-                        }
-                    }, {
-                        id: 5,
-                        label: "Can support secure frames above protocol version 109 (MLS)",
-                        config: {
-                            protocolVersionFloor: 9,
-                            canSupportSecureFrames: !0,
-                            canSupportMls: !0
-                        }
-                    }, {
                         id: 6,
                         label: "Can support secure frames above protocol version 10",
                         config: {
@@ -158267,6 +158289,22 @@
                         label: "Can support secure frames above protocol version 110 (MLS)",
                         config: {
                             protocolVersionFloor: 10,
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !0
+                        }
+                    }, {
+                        id: 8,
+                        label: "Can support secure frames above protocol version 11",
+                        config: {
+                            protocolVersionFloor: 11,
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !1
+                        }
+                    }, {
+                        id: 9,
+                        label: "Can support secure frames above protocol version 111 (MLS)",
+                        config: {
+                            protocolVersionFloor: 11,
                             canSupportSecureFrames: !0,
                             canSupportMls: !0
                         }
@@ -158282,22 +158320,6 @@
                         canSupportMls: !1
                     },
                     treatments: [{
-                        id: 3,
-                        label: "Can support secure frames above protocol version 8",
-                        config: {
-                            protocolVersionFloor: 8,
-                            canSupportSecureFrames: !0,
-                            canSupportMls: !1
-                        }
-                    }, {
-                        id: 5,
-                        label: "Can support secure frames above protocol version 109 (MLS)",
-                        config: {
-                            protocolVersionFloor: 9,
-                            canSupportSecureFrames: !0,
-                            canSupportMls: !0
-                        }
-                    }, {
                         id: 6,
                         label: "Can support secure frames above protocol version 10",
                         config: {
@@ -158310,6 +158332,22 @@
                         label: "Can support secure frames above protocol version 110 (MLS)",
                         config: {
                             protocolVersionFloor: 10,
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !0
+                        }
+                    }, {
+                        id: 8,
+                        label: "Can support secure frames above protocol version 11",
+                        config: {
+                            protocolVersionFloor: 11,
+                            canSupportSecureFrames: !0,
+                            canSupportMls: !1
+                        }
+                    }, {
+                        id: 9,
+                        label: "Can support secure frames above protocol version 111 (MLS)",
+                        config: {
+                            protocolVersionFloor: 11,
                             canSupportSecureFrames: !0,
                             canSupportMls: !0
                         }
@@ -164415,8 +164453,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713552294253",
-                                    build_number: "286359"
+                                    built_at: "1713553384667",
+                                    build_number: "286373"
                                 }
                             },
                             retries: 1
@@ -241686,7 +241724,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "1b4d3dc8976f7d30dd96e3c8cb7d9aee32072dd2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "875928ad93735288f4c4c0049cddd92d92e00bab"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270147,7 +270185,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286359"
+                                build_number: "286373"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -277332,7 +277370,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286359", "286359"), 10);
+                let s = parseInt((n = "286373", "286373"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -304518,4 +304556,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.276c595f04e504ef61ae.js.map
+//# sourceMappingURL=73050.4df8bf6ec963c81d8336.js.map
