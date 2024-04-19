@@ -86278,7 +86278,6 @@ input::-webkit-inner-spin-button {
     align-items: center;
     border-radius: 32px;
     opacity: .7;
-    background: linear-gradient(90deg, rgba(180, 115, 245, .3)0%, rgba(226, 146, 170, .3)100%);
     width: 32px;
     height: 32px
 }
@@ -86316,7 +86315,8 @@ input::-webkit-inner-spin-button {
 
 .expandedProgressBarButtonContainer__0095b {
     display: flex;
-    margin-top: 16px
+    margin-top: 16px;
+    padding-bottom: 16px
 }
 
 .expandedProgressBarButtonContainerLayout_e10665 {
@@ -86371,14 +86371,18 @@ input::-webkit-inner-spin-button {
 }
 
 .theme-light .expandedProgressBarContainer_c2b92e {
-    background: rgba(235, 237, 239, .5)
+    background: rgba(235, 237, 239, .7)
 }
 
 .theme-light .userAvatarProgressBarUnitNum__53a54 {
-    background: linear-gradient(90deg, var(--premium-tier-2-purple-for-gradients)100%, var(--premium-tier-2-purple-for-gradients-2)100%, var(--premium-tier-2-pink-for-gradients)100%);
+    background: #860091;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent
+}
+
+.theme-light .userAvatarProgressBarUnit__6bc46 {
+    background: linear-gradient(90deg, rgba(180, 115, 245, .6)0%, rgba(226, 146, 170, .6)100%)
 }
 
 .theme-light .expandedProgressBarGiftingCTA_a56dee {
@@ -86399,6 +86403,10 @@ input::-webkit-inner-spin-button {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent
+}
+
+.theme-dark .userAvatarProgressBarUnit__6bc46 {
+    background: linear-gradient(90deg, rgba(180, 115, 245, .3)0%, rgba(226, 146, 170, .3)100%)
 }
 
 .theme-dark .expandedProgressBarGiftingCTA_a56dee {
@@ -134540,4 +134548,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.59f2aa785666b4fb9f74.css.map*/
+/*# sourceMappingURL=99387.370beb3c55ee382fae60.css.map*/
