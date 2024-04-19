@@ -36653,7 +36653,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286350", ", Version Hash: ").concat("11ff56af3cd059b8b62b29c2da213bf495ce8b55")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286359", ", Version Hash: ").concat("1b4d3dc8976f7d30dd96e3c8cb7d9aee32072dd2")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55077,6 +55077,7 @@
                 USER_RECENT_GAMES_ON_PROFILE: "Show recent games on profile",
                 USER_RECENT_GAMES_YOU_BOTH_PLAY: "You both play this game",
                 NEW_TO_THIS_GAME: "New to this game",
+                LAST_PLAYED_GAMES: "Last played games",
                 RECENT_GAMES_SETTING_NOTE: "Display up to six recently played games on your profile. Learn more about recent games sharing [here.]({helpdeskArticle})",
                 RECENT_GAMES_SETTING_REQUIREMENT: "You must have [Activity Sharing](onSettingClick) enabled.",
                 MEMBERS_TABLE_JOINED_AT_TIMESTAMP_MINUTES: "{count} {count, plural, =1 {min} other {mins}} ago",
@@ -86616,8 +86617,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286350", "286350"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286350")), t = 0), t
+                let t = parseInt((e = "286359", "286359"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286359")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111161,8 +111162,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286350",
-                    versionHash: "11ff56af3cd059b8b62b29c2da213bf495ce8b55"
+                    buildNumber: "286359",
+                    versionHash: "1b4d3dc8976f7d30dd96e3c8cb7d9aee32072dd2"
                 }
             }
             n.r(t), n.d(t, {
@@ -127958,7 +127959,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return j
+                    return W
                 }
             }), n("315314"), n("610138"), n("216116"), n("78328"), n("815648"), n("47120"), n("177593");
             var i = n("512722"),
@@ -127990,11 +127991,12 @@
                 v = n("91247"),
                 M = n("508569"),
                 y = n("183139"),
-                P = n("645436"),
-                U = n("833508"),
-                b = n("981631");
+                P = n("420491"),
+                U = n("645436"),
+                b = n("833508"),
+                G = n("981631");
 
-            function G(e, t, n) {
+            function w(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -128002,25 +128004,24 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            n("420491");
-            let w = new f.default("GatewaySocket"),
-                B = new D.default;
+            let B = new f.default("GatewaySocket"),
+                k = new D.default;
 
-            function k() {}
-            let F = 30 * p.default.Millis.SECOND,
-                V = 3 * p.default.Millis.MINUTE,
-                x = 1 * p.default.Millis.MINUTE;
+            function F() {}
+            let V = 30 * p.default.Millis.SECOND,
+                x = 3 * p.default.Millis.MINUTE,
+                H = 1 * p.default.Millis.MINUTE;
 
-            function H(e) {
+            function Y(e) {
                 return null == e ? 0 : "string" == typeof e ? e.length : e.byteLength
             }
-            let Y = window.GLOBAL_ENV.GATEWAY_ENDPOINT;
-            class j extends y.default {
+            let j = window.GLOBAL_ENV.GATEWAY_ENDPOINT;
+            class W extends y.default {
                 get connectionState() {
                     return this.connectionState_
                 }
                 set connectionState(e) {
-                    w.verbose("Setting connection state to ".concat(e)), this.connectionState_ = e
+                    B.verbose("Setting connection state to ".concat(e)), this.connectionState_ = e
                 }
                 addAnalytics(e) {
                     this.analytics = {
@@ -128029,26 +128030,26 @@
                     }
                 }
                 setResumeUrl(e) {
-                    null != e && e.endsWith("/") && (e = e.substring(0, e.length - 1)), null !== e && w.verbose("Updating resume url to ".concat(e)), this.resumeUrl = e
+                    null != e && e.endsWith("/") && (e = e.substring(0, e.length - 1)), null !== e && B.verbose("Updating resume url to ".concat(e)), this.resumeUrl = e
                 }
                 _connect() {
                     if (!this.willReconnect()) {
-                        w.verbose("Skipping _connect because willReconnect is false");
+                        B.verbose("Skipping _connect because willReconnect is false");
                         return
                     }
-                    if (P.getIsPaused()) {
-                        w.info("Skipping _connect because socket is paused");
+                    if (U.getIsPaused()) {
+                        B.info("Skipping _connect because socket is paused");
                         return
                     }
-                    this.connectionState = C.default.CONNECTING, this.nextReconnectIsImmediate = !1;
+                    this.connectionState = C.default.CONNECTING, this.nextReconnectIsImmediate = !1, P.default.disableFailureTracking();
                     let e = this.compressionHandler.getAlgorithm(),
-                        t = B.getName(),
+                        t = k.getName(),
                         n = this._getGatewayUrl(),
                         i = window.GLOBAL_ENV.API_VERSION;
-                    o.default.mark("\uD83C\uDF10", "Socket._connect"), w.info("[CONNECT] ".concat(n, ", ") + "encoding: ".concat(t, ", ") + "version: ".concat(i, ", ") + "compression: ".concat(null != e ? e : "none")), null !== this.webSocket && (w.error("_connect called with already existing websocket"), this._cleanup(e => e.close(4e3))), this.connectionStartTime = Date.now(), this.helloTimeout = setTimeout(() => {
+                    o.default.mark("\uD83C\uDF10", "Socket._connect"), B.info("[CONNECT] ".concat(n, ", ") + "encoding: ".concat(t, ", ") + "version: ".concat(i, ", ") + "compression: ".concat(null != e ? e : "none")), null !== this.webSocket && (B.error("_connect called with already existing websocket"), this._cleanup(e => e.close(4e3))), this.connectionStartTime = Date.now(), this.helloTimeout = setTimeout(() => {
                         let e = Date.now() - this.connectionStartTime;
                         this._handleClose(!1, 0, "The connection timed out after ".concat(e, " ms - did not receive OP_HELLO in time.")), this.setResumeUrl(null)
-                    }, F);
+                    }, V);
                     let r = new URL(n);
                     r.searchParams.append("encoding", t), r.searchParams.append("v", i.toString()), null != e && r.searchParams.append("compress", e), ! function(e) {
                         let t, {
@@ -128065,7 +128066,7 @@
                             _ = null,
                             c = null;
                         if (window._ws = null, null != l) {
-                            if (t = l.ws, l.state.gateway !== n) w.verbose("[FAST CONNECT] gatewayURL mismatch: ".concat(l.state.gateway, " !== ").concat(n)), t.close(1e3), t = null;
+                            if (t = l.ws, l.state.gateway !== n) B.verbose("[FAST CONNECT] gatewayURL mismatch: ".concat(l.state.gateway, " !== ").concat(n)), t.close(1e3), t = null;
                             else {
                                 var E;
                                 let e = {
@@ -128074,22 +128075,22 @@
                                 null != e.messages && (e.messages = e.messages.map(e => null != e.data && "string" == typeof e.data ? {
                                     ...e,
                                     data: e.data.substring(0, 100)
-                                } : e)), w.log("[FAST CONNECT] successfully took over websocket, state:", {
+                                } : e)), B.log("[FAST CONNECT] successfully took over websocket, state:", {
                                     ...e,
                                     messages: null === (E = e.messages) || void 0 === E ? void 0 : E.length
                                 }), u = l.state.open, d = l.state.identify, _ = l.state.messages, c = l.state.clientState
                             }
                         }
-                        null == t && ((t = (0, U.default)(n)).binaryType = "arraybuffer"), i(t), u && r(d, c), null != _ && _.forEach(s), t.onopen = () => r(d, c), t.onmessage = s, t.onclose = o, t.onerror = a
+                        null == t && ((t = (0, b.default)(n)).binaryType = "arraybuffer"), i(t), u && r(d, c), null != _ && _.forEach(s), t.onopen = () => r(d, c), t.onmessage = s, t.onclose = o, t.onerror = a
                     }({
                         gatewayURL: r.toString(),
                         newCallback: e => {
                             this.webSocket = e, this.compressionHandler.bindWebSocket(e)
                         },
                         onOpen: e => {
-                            o.default.mark("\uD83C\uDF10", "GatewaySocket.onOpen ".concat(e));
+                            o.default.mark("\uD83C\uDF10", "GatewaySocket.onOpen ".concat(e)), P.default.enableFailureTracking();
                             let t = Date.now() - this.connectionStartTime;
-                            w.info("[CONNECTED] ".concat(r.toString(), " in ").concat(t, " ms")), this.isFastConnect = e, e ? this._doFastConnectIdentify() : this._doResumeOrIdentify()
+                            B.info("[CONNECTED] ".concat(r.toString(), " in ").concat(t, " ms")), this.isFastConnect = e, e ? this._doFastConnectIdentify() : this._doResumeOrIdentify()
                         },
                         onMessage: function(e, t, n) {
                             let i = 0;
@@ -128103,7 +128104,7 @@
                             let r = !1;
                             return n => {
                                 let s = n.data;
-                                null != n.raw_length ? i += n.raw_length : i += H(s);
+                                null != n.raw_length ? i += n.raw_length : i += Y(s);
                                 try {
                                     e.feed(s)
                                 } catch (e) {
@@ -128117,7 +128118,7 @@
                                     s: r,
                                     t: s,
                                     d: a
-                                } = B.unpack(e);
+                                } = k.unpack(e);
                             i !== y.Opcode.DISPATCH && o.default.mark("\uD83C\uDF10", "GatewaySocket.onMessage ".concat(i, " ").concat(y.Opcode[i]));
                             let l = Date.now() - n;
                             switch ("READY" === s ? h.default.parseReady.set(n, l) : "READY_SUPPLEMENTAL" === s ? h.default.parseReadySupplemental.set(n, l) : l > 10 && o.default.mark("\uD83C\uDF10", "Parse " + s, l), null != r && (this.seq = r), i) {
@@ -128139,14 +128140,14 @@
                                 case y.Opcode.DISPATCH:
                                     this._handleDispatch(a, s, "READY" === s ? {
                                         compressed_byte_size: t,
-                                        uncompressed_byte_size: H(e),
+                                        uncompressed_byte_size: Y(e),
                                         compression_algorithm: this.compressionHandler.getAlgorithm(),
-                                        packing_algorithm: B.getName(),
+                                        packing_algorithm: k.getName(),
                                         unpack_duration_ms: l
                                     } : null);
                                     break;
                                 default:
-                                    w.info("Unhandled op ".concat(i))
+                                    B.info("Unhandled op ".concat(i))
                             }
                         }),
                         onError: () => {
@@ -128165,13 +128166,13 @@
                 _handleHello(e) {
                     let t = this.heartbeatInterval = e.heartbeat_interval,
                         n = Date.now() - this.connectionStartTime;
-                    w.verbose("[HELLO] via ".concat((0, v.getConnectionPath)(e), ", ") + "heartbeat interval: ".concat(t, ", ") + "took ".concat(n, " ms")), this._startHeartbeater()
+                    B.verbose("[HELLO] via ".concat((0, v.getConnectionPath)(e), ", ") + "heartbeat interval: ".concat(t, ", ") + "took ".concat(n, " ms")), this._startHeartbeater()
                 }
                 _handleReconnect() {
-                    w.verbose("[RECONNECT] gateway requested I reconnect."), this._cleanup(e => e.close(4e3)), this.connectionState = C.default.WILL_RECONNECT, this._connect()
+                    B.verbose("[RECONNECT] gateway requested I reconnect."), this._cleanup(e => e.close(4e3)), this.connectionState = C.default.WILL_RECONNECT, this._connect()
                 }
                 _handleInvalidSession(e) {
-                    w.info("[INVALID_SESSION]".concat(e ? " can resume)" : "")), e ? this._doResumeOrIdentify() : this._doIdentify()
+                    B.info("[INVALID_SESSION]".concat(e ? " can resume)" : "")), e ? this._doResumeOrIdentify() : this._doIdentify()
                 }
                 _handleDispatch(e, t, n) {
                     let i = Date.now() - this.connectionStartTime;
@@ -128179,42 +128180,42 @@
                         let t = e.session_id;
                         this.sessionId = t;
                         let n = (0, v.getConnectionPath)(e);
-                        o.default.setServerTrace(n), w.info("[READY] took ".concat(i, "ms, as ").concat(t)), w.verbose("".concat(n)), this.connectionState = C.default.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0, this.setResumeUrl(e.resume_gateway_url)
-                    } else "READY_SUPPLEMENTAL" === t ? (w.info("[READY_SUPPLEMENTAL] took ".concat(i, "ms")), this.connectionState = C.default.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0) : "RESUMED" === t && (w.verbose((0, v.getConnectionPath)(e)), this.connectionState = C.default.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0);
+                        o.default.setServerTrace(n), B.info("[READY] took ".concat(i, "ms, as ").concat(t)), B.verbose("".concat(n)), this.connectionState = C.default.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0, this.setResumeUrl(e.resume_gateway_url)
+                    } else "READY_SUPPLEMENTAL" === t ? (B.info("[READY_SUPPLEMENTAL] took ".concat(i, "ms")), this.connectionState = C.default.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0) : "RESUMED" === t && (B.verbose((0, v.getConnectionPath)(e)), this.connectionState = C.default.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0);
                     this.dispatcher.receiveDispatch(e, t, n)
                 }
                 handleResumeDispatched() {
                     let e = Date.now() - this.connectionStartTime;
-                    w.info("[RESUMED] took ".concat(e, "ms, replayed ").concat(this.dispatcher.resumeAnalytics.numEvents, " events, new seq: ").concat(this.seq))
+                    B.info("[RESUMED] took ".concat(e, "ms, replayed ").concat(this.dispatcher.resumeAnalytics.numEvents, " events, new seq: ").concat(this.seq))
                 }
                 handleReadyDispatched() {
                     this.didForceClearGuildHashes = !1, this.hasConnectedOnce = !0
                 }
                 _getGatewayUrl() {
-                    return null != this.resumeUrl ? this.resumeUrl : Y
+                    return null != this.resumeUrl ? this.resumeUrl : j
                 }
                 _handleHeartbeatAck(e) {
-                    this.lastHeartbeatAckTime = Date.now(), this.heartbeatAck = !0, null !== this.expeditedHeartbeatTimeout && (clearTimeout(this.expeditedHeartbeatTimeout), this.expeditedHeartbeatTimeout = null, w.verbose("Expedited heartbeat succeeded"))
+                    this.lastHeartbeatAckTime = Date.now(), this.heartbeatAck = !0, null !== this.expeditedHeartbeatTimeout && (clearTimeout(this.expeditedHeartbeatTimeout), this.expeditedHeartbeatTimeout = null, B.verbose("Expedited heartbeat succeeded"))
                 }
                 _handleHeartbeatTimeout() {
                     this._cleanup(e => e.close(4e3)), this.connectionState = C.default.WILL_RECONNECT;
                     let e = this.gatewayBackoff.fail(() => this._connect());
-                    w.warn("[ACK TIMEOUT] reconnecting in ".concat((e / 1e3).toFixed(2), " seconds."))
+                    B.warn("[ACK TIMEOUT] reconnecting in ".concat((e / 1e3).toFixed(2), " seconds."))
                 }
                 _handleClose(e, t, n) {
                     if (e = e || !1, this._cleanup(), this.emit("close", {
                             code: t,
                             reason: n
-                        }), 4004 === t) return this.connectionState = C.default.CLOSED, w.warn("[WS CLOSED] because of authentication failure, marking as closed."), this._reset(e, t, n);
-                    if (this._tryDetectInvalidIOSToken(t, n, e), this.connectionState = C.default.WILL_RECONNECT, this.nextReconnectIsImmediate) w.info("[WS CLOSED] (".concat(e.toString(), ", ").concat(t, ", ").concat(n, ") retrying immediately.")), this._connect();
+                        }), 4004 === t) return this.connectionState = C.default.CLOSED, B.warn("[WS CLOSED] because of authentication failure, marking as closed."), this._reset(e, t, n);
+                    if (this._tryDetectInvalidIOSToken(t, n, e), this.connectionState = C.default.WILL_RECONNECT, this.nextReconnectIsImmediate) B.info("[WS CLOSED] (".concat(e.toString(), ", ").concat(t, ", ").concat(n, ") retrying immediately.")), this._connect();
                     else {
                         let i = this.gatewayBackoff.fail(() => this._connect());
-                        w.info("[WS CLOSED] (".concat(e.toString(), ", ").concat(t, ", ").concat(n, ") retrying in ").concat((i / 1e3).toFixed(2), " seconds.")), this.gatewayBackoff.fails > 4 && this._reset(e, t, n)
+                        B.info("[WS CLOSED] (".concat(e.toString(), ", ").concat(t, ", ").concat(n, ") retrying in ").concat((i / 1e3).toFixed(2), " seconds.")), this.gatewayBackoff.fails > 4 && this._reset(e, t, n)
                     }
                 }
                 _tryDetectInvalidIOSToken(e, t, n) {
                     (0, O.isIOS)() && null != this.token && 1001 === e && "Stream end encountered" === t && (this.iosGoingAwayEventCount += 1, 3 === this.iosGoingAwayEventCount && d.HTTP.get({
-                        url: b.Endpoints.ME,
+                        url: G.Endpoints.ME,
                         headers: {
                             authorization: this.token
                         }
@@ -128222,20 +128223,20 @@
                         let {
                             status: t
                         } = e;
-                        m.default.track(b.AnalyticEvents.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
+                        m.default.track(G.AnalyticEvents.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
                             api_status_code: t
                         })
                     }, e => {
                         let {
                             status: t
                         } = e;
-                        401 === t && (this.connectionState = C.default.CLOSED, w.warn("[WS CLOSED] because of manual authentication failure, marking as closed."), this._reset(n, 4004, "invalid token manually detected")), m.default.track(b.AnalyticEvents.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
+                        401 === t && (this.connectionState = C.default.CLOSED, B.warn("[WS CLOSED] because of manual authentication failure, marking as closed."), this._reset(n, 4004, "invalid token manually detected")), m.default.track(G.AnalyticEvents.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
                             api_status_code: t
                         })
                     }))
                 }
                 _reset(e, t, n) {
-                    this.sessionId = null, this.seq = 0, w.warn("[RESET] (".concat(e.toString(), ", ").concat(t, ", ").concat(n, ")")), this.emit("disconnect", {
+                    this.sessionId = null, this.seq = 0, B.warn("[RESET] (".concat(e.toString(), ", ").concat(t, ", ").concat(n, ")")), this.emit("disconnect", {
                         wasClean: e,
                         code: t,
                         reason: n
@@ -128262,11 +128263,11 @@
                 _cleanup(e) {
                     u.default.Emitter.resume(), this._stopHeartbeater(), this._clearHelloTimeout();
                     let t = this.webSocket;
-                    this.webSocket = null, null != t && (t.onopen = k, t.onmessage = k, t.onerror = k, t.onclose = k, null == e || e(t)), this.gatewayBackoff.cancel(), this.compressionHandler.close(), this.compressionHandler = (0, L.getCompressionHandler)(B)
+                    this.webSocket = null, null != t && (t.onopen = F, t.onmessage = F, t.onerror = F, t.onclose = F, null == e || e(t)), this.gatewayBackoff.cancel(), this.compressionHandler.close(), this.compressionHandler = (0, L.getCompressionHandler)(k)
                 }
                 _doResume() {
                     var e;
-                    this.connectionState = C.default.RESUMING, this.dispatcher.resumeAnalytics = (0, v.createResumeAnalytics)(Date.now() - this.connectionStartTime), w.info("[RESUME] resuming session ".concat(null !== (e = this.sessionId) && void 0 !== e ? e : "", ", seq: ").concat(this.seq)), this.send(y.Opcode.RESUME, {
+                    this.connectionState = C.default.RESUMING, this.dispatcher.resumeAnalytics = (0, v.createResumeAnalytics)(Date.now() - this.connectionStartTime), B.info("[RESUME] resuming session ".concat(null !== (e = this.sessionId) && void 0 !== e ? e : "", ", seq: ").concat(this.seq)), this.send(y.Opcode.RESUME, {
                         token: this.token,
                         session_id: this.sessionId,
                         seq: this.seq
@@ -128295,7 +128296,7 @@
                         guild_versions: {}
                     };
                     if (this.connectionState !== C.default.IDENTIFYING || this.identifyStartTime !== t) {
-                        w.warn("Skipping identify because connectionState or identifyStartTime has changed");
+                        B.warn("Skipping identify because connectionState or identifyStartTime has changed");
                         return
                     }
                     let {
@@ -128303,7 +128304,7 @@
                         properties: l = {},
                         presence: u
                     } = e;
-                    this.token = o, w.verbose("[IDENTIFY]");
+                    this.token = o, B.verbose("[IDENTIFY]");
                     let d = {
                             token: o,
                             capabilities: g.default,
@@ -128325,11 +128326,11 @@
                     let {
                         token: t
                     } = e;
-                    this.token = t, this.connectionState = C.default.IDENTIFYING, this.identifyStartTime = Date.now(), this.identifyCount += 1, w.verbose("[IDENTIFY, fast-connect]"), this._updateLastHeartbeatAckTime()
+                    this.token = t, this.connectionState = C.default.IDENTIFYING, this.identifyStartTime = Date.now(), this.identifyCount += 1, B.verbose("[IDENTIFY, fast-connect]"), this._updateLastHeartbeatAckTime()
                 }
                 _doResumeOrIdentify() {
                     let e = Date.now();
-                    null !== this.sessionId && (null == this.lastHeartbeatAckTime || e - this.lastHeartbeatAckTime <= V) ? this._doResume() : this._doIdentify(), this._updateLastHeartbeatAckTime()
+                    null !== this.sessionId && (null == this.lastHeartbeatAckTime || e - this.lastHeartbeatAckTime <= x) ? this._doResume() : this._doIdentify(), this._updateLastHeartbeatAckTime()
                 }
                 _updateLastHeartbeatAckTime() {
                     this.lastHeartbeatAckTime = Date.now()
@@ -128338,7 +128339,7 @@
                     this.send(y.Opcode.HEARTBEAT, this.seq, !1)
                 }
                 getLogger() {
-                    return w
+                    return B
                 }
                 willReconnect() {
                     return this.connectionState === C.default.WILL_RECONNECT
@@ -128353,30 +128354,30 @@
                     return this.connectionState === C.default.IDENTIFYING || this.connectionState === C.default.RESUMING || this.connectionState === C.default.SESSION_ESTABLISHED
                 }
                 connect() {
-                    return this.isClosed() ? (w.verbose(".connect() called, new state is WILL_RECONNECT"), this.connectionState = C.default.WILL_RECONNECT, this._connect(), !0) : (w.error("Cannot start a new connection, connection state is not closed"), !1)
+                    return this.isClosed() ? (B.verbose(".connect() called, new state is WILL_RECONNECT"), this.connectionState = C.default.WILL_RECONNECT, this._connect(), !0) : (B.error("Cannot start a new connection, connection state is not closed"), !1)
                 }
                 resetSocketOnError(e) {
                     let {
                         action: t,
                         error: n
                     } = e;
-                    w.error("resetSocketOnError during ".concat(t, ": ").concat(n.message), n.stack), S.default.increment({
+                    B.error("resetSocketOnError during ".concat(t, ": ").concat(n.message), n.stack), S.default.increment({
                         name: l.MetricEvents.SOCKET_CRASHED,
                         tags: ["action:".concat(t)]
                     }, !0), !1 !== e.sentry && R.default.captureException(n, {
                         tags: {
                             socketCrashedAction: t
                         }
-                    }), m.default.track(b.AnalyticEvents.GATEWAY_SOCKET_RESET, {
+                    }), m.default.track(G.AnalyticEvents.GATEWAY_SOCKET_RESET, {
                         error_message: n.message,
                         error_stack: n.stack,
                         action: t
                     }), this._cleanup(e => e.close()), this._reset(!0, 1e3, "Resetting socket due to error."), this.dispatcher.clear(), this.connectionState = C.default.WILL_RECONNECT, this.dispatchExceptionBackoff.cancel();
                     let i = e.clearCache || this.dispatchExceptionBackoff._fails > 0;
-                    0 === this.dispatchExceptionBackoff._fails ? (w.verbose("Triggering fast reconnect"), this.dispatchExceptionBackoff.fail(() => {}), setTimeout(() => this._connect(), 0)) : this.dispatchExceptionBackoff.fail(() => this._connect()), i && (this.didForceClearGuildHashes = !0, _.default.dispatch({
+                    0 === this.dispatchExceptionBackoff._fails ? (B.verbose("Triggering fast reconnect"), this.dispatchExceptionBackoff.fail(() => {}), setTimeout(() => this._connect(), 0)) : this.dispatchExceptionBackoff.fail(() => this._connect()), i && (this.didForceClearGuildHashes = !0, _.default.dispatch({
                         type: "CLEAR_CACHES",
                         reason: "Socket reset during ".concat(t)
-                    })), clearTimeout(this.dispatchSuccessTimer), this.dispatchSuccessTimer = setTimeout(() => this.dispatchExceptionBackoff.succeed(), 2 * x)
+                    })), clearTimeout(this.dispatchSuccessTimer), this.dispatchSuccessTimer = setTimeout(() => this.dispatchExceptionBackoff.succeed(), 2 * H)
                 }
                 resetSocketOnDispatchError(e) {
                     let t = null != e.error.message && e.error.message.indexOf("Guild data was missing from store") >= 0;
@@ -128389,10 +128390,10 @@
                 close() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
                     if (this.isClosed()) {
-                        w.verbose("close() called, but socket is already closed.");
+                        B.verbose("close() called, but socket is already closed.");
                         return
                     }
-                    w.info("Closing connection, current state is ".concat(this.connectionState));
+                    B.info("Closing connection, current state is ".concat(this.connectionState));
                     let t = e ? 4e3 : void 0;
                     this._cleanup(e => e.close(t)), this.connectionState = C.default.CLOSED, !e && setImmediate(() => {
                         this._reset(!0, 1e3, "Disconnect requested by user")
@@ -128408,30 +128409,30 @@
                         i = !(arguments.length > 3) || void 0 === arguments[3] || arguments[3];
                     if (!this.isClosed()) {
                         if (this.isConnected()) {
-                            w.verbose("Performing an expedited heartbeat ".concat(null != t && "" !== t ? "reason: " + t : "")), this.heartbeatAck = !1, this._sendHeartbeat(), null !== this.expeditedHeartbeatTimeout && clearTimeout(this.expeditedHeartbeatTimeout), this.expeditedHeartbeatTimeout = setTimeout(() => {
+                            B.verbose("Performing an expedited heartbeat ".concat(null != t && "" !== t ? "reason: " + t : "")), this.heartbeatAck = !1, this._sendHeartbeat(), null !== this.expeditedHeartbeatTimeout && clearTimeout(this.expeditedHeartbeatTimeout), this.expeditedHeartbeatTimeout = setTimeout(() => {
                                 this.expeditedHeartbeatTimeout = null, !1 === this.heartbeatAck && this._handleHeartbeatTimeout()
                             }, e);
                             return
                         }
-                        n ? this.resetBackoff(t, i) : w.verbose("Expedited heartbeat requested, but, connection state is ".concat(this.connectionState, " and reconnectImmediately was not requested ").concat(null != t && "" !== t ? "reason: " + t : ""))
+                        n ? this.resetBackoff(t, i) : B.verbose("Expedited heartbeat requested, but, connection state is ".concat(this.connectionState, " and reconnectImmediately was not requested ").concat(null != t && "" !== t ? "reason: " + t : ""))
                     }
                 }
                 resetBackoff() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
                         t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-                    w.verbose("Connection has reset backoff".concat(null != e && "" !== e ? " for reason: " + e : "")), this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0, this.nextReconnectIsImmediate = !0, this.willReconnect() ? this._connect() : t && this.connectionState !== C.default.SESSION_ESTABLISHED && this._handleClose(!0, 0, e)
+                    B.verbose("Connection has reset backoff".concat(null != e && "" !== e ? " for reason: " + e : "")), this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0, this.nextReconnectIsImmediate = !0, this.willReconnect() ? this._connect() : t && this.connectionState !== C.default.SESSION_ESTABLISHED && this._handleClose(!0, 0, e)
                 }
                 constructor() {
-                    super(), G(this, "gatewayBackoff", void 0), G(this, "handleIdentify", void 0), G(this, "dispatchExceptionBackoff", new a.default(1e3, x)), G(this, "dispatchSuccessTimer", 0), G(this, "connectionState_", void 0), G(this, "webSocket", void 0), G(this, "seq", void 0), G(this, "sessionId", void 0), G(this, "token", void 0), G(this, "initialHeartbeatTimeout", void 0), G(this, "expeditedHeartbeatTimeout", void 0), G(this, "heartbeatInterval", void 0), G(this, "helloTimeout", void 0), G(this, "heartbeater", void 0), G(this, "lastHeartbeatAckTime", void 0), G(this, "heartbeatAck", void 0), G(this, "connectionStartTime", void 0), G(this, "identifyStartTime", void 0), G(this, "nextReconnectIsImmediate", void 0), G(this, "compressionHandler", void 0), G(this, "hasConnectedOnce", void 0), G(this, "isFastConnect", void 0), G(this, "didForceClearGuildHashes", !1), G(this, "identifyUncompressedByteSize", 0), G(this, "identifyCompressedByteSize", 0), G(this, "analytics", {}), G(this, "identifyCount", 0), G(this, "resumeUrl", null), G(this, "iosGoingAwayEventCount", 0), G(this, "dispatcher", void 0), G(this, "send", (e, t, n) => {
-                        A.default.isLoggingGatewayEvents && w.verboseDangerously("~>", e, t);
-                        let i = B.pack({
+                    super(), w(this, "gatewayBackoff", void 0), w(this, "handleIdentify", void 0), w(this, "dispatchExceptionBackoff", new a.default(1e3, H)), w(this, "dispatchSuccessTimer", 0), w(this, "connectionState_", void 0), w(this, "webSocket", void 0), w(this, "seq", void 0), w(this, "sessionId", void 0), w(this, "token", void 0), w(this, "initialHeartbeatTimeout", void 0), w(this, "expeditedHeartbeatTimeout", void 0), w(this, "heartbeatInterval", void 0), w(this, "helloTimeout", void 0), w(this, "heartbeater", void 0), w(this, "lastHeartbeatAckTime", void 0), w(this, "heartbeatAck", void 0), w(this, "connectionStartTime", void 0), w(this, "identifyStartTime", void 0), w(this, "nextReconnectIsImmediate", void 0), w(this, "compressionHandler", void 0), w(this, "hasConnectedOnce", void 0), w(this, "isFastConnect", void 0), w(this, "didForceClearGuildHashes", !1), w(this, "identifyUncompressedByteSize", 0), w(this, "identifyCompressedByteSize", 0), w(this, "analytics", {}), w(this, "identifyCount", 0), w(this, "resumeUrl", null), w(this, "iosGoingAwayEventCount", 0), w(this, "dispatcher", void 0), w(this, "send", (e, t, n) => {
+                        A.default.isLoggingGatewayEvents && B.verboseDangerously("~>", e, t);
+                        let i = k.pack({
                             op: e,
                             d: t
                         });
                         if (!n || this.isSessionEstablished()) try {
-                            null != this.webSocket ? this.webSocket.send(i) : w.warn("Attempted to send without a websocket that exists. Opcode: ".concat(e))
-                        } catch (e) {} else w.warn("Attempted to send while not being in a connected state opcode: ".concat(e))
-                    }), this.dispatcher = new M.default(this), this.gatewayBackoff = new a.default(1e3, 6e4), this.connectionState_ = C.default.CLOSED, this.webSocket = null, this.seq = 0, this.sessionId = null, this.token = null, this.initialHeartbeatTimeout = null, this.expeditedHeartbeatTimeout = null, this.lastHeartbeatAckTime = null, this.helloTimeout = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = !0, this.connectionStartTime = 0, this.identifyStartTime = 0, this.nextReconnectIsImmediate = !1, this.compressionHandler = (0, L.getCompressionHandler)(B), this.hasConnectedOnce = !1, this.isFastConnect = !1, this.identifyCount = 0, this.iosGoingAwayEventCount = 0
+                            null != this.webSocket ? this.webSocket.send(i) : B.warn("Attempted to send without a websocket that exists. Opcode: ".concat(e))
+                        } catch (e) {} else B.warn("Attempted to send while not being in a connected state opcode: ".concat(e))
+                    }), this.dispatcher = new M.default(this), this.gatewayBackoff = new a.default(1e3, 6e4), this.connectionState_ = C.default.CLOSED, this.webSocket = null, this.seq = 0, this.sessionId = null, this.token = null, this.initialHeartbeatTimeout = null, this.expeditedHeartbeatTimeout = null, this.lastHeartbeatAckTime = null, this.helloTimeout = null, this.heartbeatInterval = null, this.heartbeater = null, this.heartbeatAck = !0, this.connectionStartTime = 0, this.identifyStartTime = 0, this.nextReconnectIsImmediate = !1, this.compressionHandler = (0, L.getCompressionHandler)(k), this.hasConnectedOnce = !1, this.isFastConnect = !1, this.identifyCount = 0, this.iosGoingAwayEventCount = 0
                 }
             }
         },
@@ -129001,14 +129002,15 @@
         },
         420491: function(e, t, n) {
             "use strict";
+            let i;
             n.r(t);
-            var i, r, s, a, o = n("259443"),
-                l = n("442837"),
-                u = n("570140"),
-                d = n("818083"),
-                _ = n("353926"),
-                c = n("988348");
-            let E = (0, d.createExperiment)({
+            var r, s, a, o, l = n("259443"),
+                u = n("442837"),
+                d = n("570140"),
+                _ = n("818083"),
+                c = n("353926"),
+                E = n("988348");
+            let I = (0, _.createExperiment)({
                     id: "2024-03_gateway_zstd",
                     label: "Gateway Zstd compression",
                     kind: "user",
@@ -129023,44 +129025,54 @@
                         }
                     }]
                 }),
-                I = new o.Logger("GatewayZstdStore"),
-                T = !1,
-                f = !1,
-                S = 0;
+                T = new l.Logger("GatewayZstdStore");
+            let f = !1,
+                S = 0,
+                h = !0;
 
-            function h(e) {
-                if (e && !(0, c.supportsZstd)()) {
-                    I.warn("Attempting to enable zstd but it is not supported");
-                    return
-                }(0, c.setFastConnectZstd)(e), e !== T && I.info("Setting Zstd to ".concat(e)), T = e
+            function A() {
+                return null == i && (i = (0, E.supportsZstd)() && (0, E.getFastConnectZstd)()), i
             }
-            class A extends(a = l.default.Store) {
+
+            function m(e) {
+                if (e && !(0, E.supportsZstd)()) {
+                    T.warn("Attempting to enable zstd but it is not supported");
+                    return
+                }(0, E.setFastConnectZstd)(e), e !== i && T.info("Setting Zstd to ".concat(e)), i = e
+            }
+            class N extends(o = u.default.Store) {
                 initialize() {
-                    this.waitFor(_.default), T = (0, c.supportsZstd)() && (0, c.getFastConnectZstd)()
+                    this.waitFor(c.default)
                 }
                 shouldUseZstd() {
-                    return T
+                    return A()
+                }
+                enableFailureTracking() {
+                    h = !0
+                }
+                disableFailureTracking() {
+                    h = !1
                 }
             }
-            s = "GatewayZstdStore", (r = "displayName") in(i = A) ? Object.defineProperty(i, r, {
-                value: s,
+            a = "GatewayZstdStore", (s = "displayName") in(r = N) ? Object.defineProperty(r, s, {
+                value: a,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : i[r] = s, t.default = new A(u.default, {
+            }) : r[s] = a, t.default = new N(d.default, {
                 CONNECTION_OPEN: function() {
                     if (f) {
-                        I.info("Ignoring zstd experiment config because we fell back to zlib");
+                        T.info("Ignoring zstd experiment config because we fell back to zlib");
                         return
                     }
-                    h(E.getCurrentConfig({
+                    m(I.getCurrentConfig({
                         location: "GatewayZstdStore"
                     }, {
-                        autoTrackExposure: (0, c.supportsZstd)()
+                        autoTrackExposure: (0, E.supportsZstd)()
                     }).useZstd), S = 0
                 },
                 CONNECTION_INTERRUPTED: function() {
-                    T && (S += 1) > 3 && (I.error("Disabling zstd due to consecutive errors"), h(!1), f = !0)
+                    A() && h && (S += 1) > 3 && (T.error("Disabling zstd due to consecutive errors"), m(!1), f = !0)
                 }
             })
         },
@@ -164403,8 +164415,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713551931364",
-                                    build_number: "286350"
+                                    built_at: "1713552294253",
+                                    build_number: "286359"
                                 }
                             },
                             retries: 1
@@ -173664,22 +173676,22 @@
                     return i
                 },
                 checkRecipientEligibility: function() {
-                    return E
-                },
-                createReferralTrial: function() {
                     return T
                 },
+                createReferralTrial: function() {
+                    return S
+                },
                 createReferralTrials: function() {
-                    return I
+                    return f
                 },
                 fetchReferralEligibleUsers: function() {
-                    return _
+                    return E
                 },
                 fetchReferralsRemaining: function() {
-                    return c
+                    return I
                 },
                 resolveReferralTrialOffer: function() {
-                    return f
+                    return h
                 }
             }), n("47120"), n("653041");
             var i, r, s = n("544891"),
@@ -173688,10 +173700,41 @@
                 l = n("598077"),
                 u = n("944486"),
                 d = n("981631");
-            async function _(e, t) {
+
+            function _(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }(r = i || (i = {}))[r.REDEEMED = 1] = "REDEEMED", r[r.PENDING = 2] = "PENDING";
+            let c = new class e {
+                set(e, t) {
+                    this.cache.set(e, t)
+                }
+                get(e) {
+                    return this._checkExpiration(), this.cache.get(e)
+                }
+                has(e) {
+                    return this._checkExpiration(), this.cache.has(e)
+                }
+                _checkExpiration() {
+                    this.expiration < Date.now() && this.cache.clear()
+                }
+                constructor() {
+                    _(this, "cache", void 0), _(this, "expiration", void 0), this.cache = new Map, this.expiration = Date.now() + 6e5
+                }
+            };
+            async function E(e, t) {
+                let n = JSON.stringify({
+                    index: e,
+                    searchQuery: t
+                });
+                if (c.has(n)) return c.get(n);
                 let {
-                    users: n,
-                    next_index: i
+                    users: i,
+                    next_index: r
                 } = (await s.HTTP.post({
                     url: d.Endpoints.GET_REFERRAL_ELIGIBLE_USERS,
                     body: {
@@ -173700,13 +173743,13 @@
                         search_query: t
                     },
                     oldFormErrors: !0
-                })).body;
-                return {
-                    users: n.map(e => new l.default(e)),
-                    nextIndex: i
-                }
-            }(r = i || (i = {}))[r.REDEEMED = 1] = "REDEEMED", r[r.PENDING = 2] = "PENDING";
-            let c = () => (a.default.dispatch({
+                })).body, a = {
+                    users: i.map(e => new l.default(e)),
+                    nextIndex: r
+                };
+                return c.set(n, a), a
+            }
+            let I = () => (a.default.dispatch({
                     type: "BILLING_REFERRALS_REMAINING_FETCH_START"
                 }), s.HTTP.get({
                     url: d.Endpoints.GET_REFERRALS_REMAINING,
@@ -173731,7 +173774,7 @@
                         type: "BILLING_REFERRALS_REMAINING_FETCH_FAIL"
                     })
                 })),
-                E = e => (a.default.dispatch({
+                T = e => (a.default.dispatch({
                     type: "BILLING_CREATE_REFERRAL_PREVIEW_START",
                     recipientId: e
                 }), s.HTTP.post({
@@ -173749,7 +173792,7 @@
                         recipientId: e
                     })
                 }));
-            async function I(e) {
+            async function f(e) {
                 let t = [];
                 for (let i of e) {
                     var n;
@@ -173764,7 +173807,7 @@
                     userTrialOffers: t
                 }), t
             }
-            async function T(e) {
+            async function S(e) {
                 try {
                     var t;
                     let n = await s.HTTP.post({
@@ -173787,7 +173830,7 @@
                     }
                 }
             }
-            async function f(e) {
+            async function h(e) {
                 try {
                     var t;
                     let n = await s.HTTP.get({
@@ -204339,7 +204382,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
+                    return T
                 }
             });
             var i = n("735250");
@@ -204348,51 +204391,70 @@
                 s = n("481060"),
                 a = n("275759"),
                 o = n("706454"),
-                l = n("346656"),
-                u = n("68972"),
-                d = n("709054"),
-                _ = n("689938"),
-                c = n("590354");
+                l = n("271383"),
+                u = n("430824"),
+                d = n("346656"),
+                _ = n("68972"),
+                c = n("709054"),
+                E = n("689938"),
+                I = n("590354");
 
-            function E(e) {
+            function T(e) {
                 let {
                     userId: t,
-                    headingClassName: n,
-                    textClassName: E,
-                    guild: I,
-                    guildMember: T
-                } = e, f = (0, r.useStateFromStores)([o.default], () => o.default.locale), S = null != I && null != T;
-                return (0, i.jsxs)(i.Fragment, {
+                    guildId: n,
+                    className: T,
+                    headingClassName: f,
+                    textClassName: S,
+                    headingVariant: h = "eyebrow"
+                } = e, A = (0, r.useStateFromStores)([o.default], () => o.default.locale), m = (0, r.useStateFromStores)([u.default], () => null != n ? u.default.getGuild(n) : null), N = (0, r.useStateFromStores)([l.default], () => null != n ? l.default.getMember(n, t) : null), p = (0, a.getCreatedAtDate)(c.default.extractTimestamp(t), A), O = (0, a.getCreatedAtDate)(null == N ? void 0 : N.joinedAt, A);
+                return null == m || null == N ? (0, i.jsxs)("div", {
+                    className: T,
                     children: [(0, i.jsx)(s.Heading, {
-                        variant: "eyebrow",
-                        className: n,
-                        children: S ? _.default.Messages.USER_PROFILE_MEMBER_SINCE : _.default.Messages.USER_PROFILE_DISCORD_MEMBER_SINCE
+                        variant: h,
+                        className: f,
+                        children: E.default.Messages.USER_PROFILE_DISCORD_MEMBER_SINCE
+                    }), (0, i.jsx)(s.Text, {
+                        variant: "text-sm/normal",
+                        className: S,
+                        children: p
+                    })]
+                }) : (0, i.jsxs)("div", {
+                    className: T,
+                    children: [(0, i.jsx)(s.Heading, {
+                        variant: h,
+                        className: f,
+                        children: E.default.Messages.USER_PROFILE_MEMBER_SINCE
                     }), (0, i.jsxs)("div", {
-                        className: c.memberSinceContainer,
-                        children: [S && (0, i.jsx)(s.Tooltip, {
-                            text: _.default.Messages.DISCORD_NAME,
-                            children: e => (0, i.jsx)(u.default, {
-                                ...e,
-                                className: c.discordIcon
-                            })
-                        }), (0, i.jsx)(s.Text, {
-                            className: E,
-                            variant: "text-sm/normal",
-                            children: (0, a.getCreatedAtDate)(d.default.extractTimestamp(t), f)
-                        }), null != I && null != T && (0, i.jsxs)(i.Fragment, {
-                            children: [(0, i.jsx)("div", {
-                                className: c.divider
-                            }), (0, i.jsx)(s.Tooltip, {
-                                text: I.name,
-                                children: e => (0, i.jsx)(l.default, {
+                        className: I.memberSinceWrapper,
+                        children: [(0, i.jsxs)("div", {
+                            className: I.memberSince,
+                            children: [(0, i.jsx)(s.Tooltip, {
+                                text: E.default.Messages.DISCORD_NAME,
+                                children: e => (0, i.jsx)(_.default, {
                                     ...e,
-                                    guild: I,
-                                    size: l.default.Sizes.SMOL
+                                    className: I.discordIcon
                                 })
                             }), (0, i.jsx)(s.Text, {
-                                className: E,
                                 variant: "text-sm/normal",
-                                children: (0, a.getCreatedAtDate)(T.joinedAt, f)
+                                className: S,
+                                children: p
+                            })]
+                        }), (0, i.jsx)("div", {
+                            className: I.divider
+                        }), (0, i.jsxs)("div", {
+                            className: I.memberSince,
+                            children: [(0, i.jsx)(s.Tooltip, {
+                                text: m.name,
+                                children: e => (0, i.jsx)(d.default, {
+                                    ...e,
+                                    guild: m,
+                                    size: d.default.Sizes.SMOL
+                                })
+                            }), (0, i.jsx)(s.Text, {
+                                variant: "text-sm/normal",
+                                className: S,
+                                children: O
                             })]
                         })]
                     })]
@@ -205501,6 +205563,9 @@
         347949: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                UserProfileRecentGames: function() {
+                    return L
+                },
                 UserProfileRecentGamesContainer: function() {
                     return D
                 },
@@ -206172,8 +206237,7 @@
                                 onClose: Z
                             }), (0, i.jsx)(b.default, {
                                 userId: K.id,
-                                guild: X,
-                                guildMember: Q
+                                guildId: null == X ? void 0 : X.id
                             }), eu && el && (0, i.jsx)(V.default, {
                                 voiceChannel: ea.voiceChannel,
                                 voiceGuild: ea.voiceGuild,
@@ -206808,20 +206872,20 @@
                     user: t,
                     displayProfile: n,
                     onOpenProfile: N,
-                    guild: p,
+                    guildId: p,
                     channelId: O,
                     onClose: R
                 } = e, {
                     moreUserDetailsEnabled: C
                 } = (0, l.useSimplifiedProfileExperiment)({
                     location: "BiteSizeProfileBody"
-                }), g = o.default.getName(null == p ? void 0 : p.id, O, t), L = (0, u.default)(t.id, null == p ? void 0 : p.id), D = (0, r.useStateFromStores)([a.default], () => a.default.hidePersonalInformation), v = (0, r.useStateFromStores)([s.default], () => s.default.findActivity(t.id, e => e.type === A.ActivityTypes.PLAYING), [t]);
+                }), g = o.default.getName(p, O, t), L = (0, u.default)(t.id, p), D = (0, r.useStateFromStores)([a.default], () => a.default.hidePersonalInformation), v = (0, r.useStateFromStores)([s.default], () => s.default.findActivity(t.id, e => e.type === A.ActivityTypes.PLAYING), [t]);
                 return (0, i.jsxs)("div", {
                     className: m.body,
                     children: [(0, i.jsx)(c.default, {
                         user: t,
-                        guildId: null == p ? void 0 : p.id,
-                        usernameIcon: t.hasAvatarForGuild(null == p ? void 0 : p.id) && (0, i.jsx)(I.default, {
+                        guildId: p,
+                        usernameIcon: t.hasAvatarForGuild(p) && (0, i.jsx)(I.default, {
                             user: t,
                             nickname: g
                         }),
@@ -206830,7 +206894,7 @@
                                 pronouns: null == n ? void 0 : n.pronouns
                             }), (0, i.jsx)(E.UserProfileBadgesTag, {
                                 user: t,
-                                guildId: null == p ? void 0 : p.id
+                                guildId: p
                             })]
                         }),
                         nicknameIcon: C && !D ? (0, i.jsx)(_.default, {
@@ -206849,7 +206913,7 @@
                         activity: v
                     }), (0, i.jsx)(h.default, {
                         user: t,
-                        guild: p,
+                        guildId: p,
                         onClose: R
                     }), L && (0, i.jsx)(f.default, {
                         user: t
@@ -207113,9 +207177,8 @@
                     className: R.container,
                     children: [(0, i.jsxs)("div", {
                         className: R.rolesHeader,
-                        children: [(0, i.jsx)(d.Text, {
+                        children: [(0, i.jsx)(d.Heading, {
                             variant: "text-xs/semibold",
-                            className: R.rolesHeaderText,
                             children: O.default.Messages.ROLES
                         }), w && (0, i.jsx)(d.Tooltip, {
                             text: O.default.Messages.USER_PROFILE_ADD_ROLE,
@@ -207193,7 +207256,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return g
+                    return C
                 }
             }), n("47120");
             var i = n("735250"),
@@ -207205,120 +207268,119 @@
                 u = n("906732"),
                 d = n("680295"),
                 _ = n("271383"),
-                c = n("430824"),
-                E = n("785717"),
-                I = n("318661"),
-                T = n("502762"),
-                f = n("705556"),
-                S = n("301984"),
-                h = n("664794"),
-                A = n("980768"),
-                m = n("171368"),
-                N = n("958120"),
-                p = n("23293"),
-                O = n("228168"),
-                R = n("689938");
+                c = n("785717"),
+                E = n("318661"),
+                I = n("502762"),
+                T = n("705556"),
+                f = n("301984"),
+                S = n("664794"),
+                h = n("980768"),
+                A = n("171368"),
+                m = n("958120"),
+                N = n("23293"),
+                p = n("228168"),
+                O = n("689938");
 
-            function C(e) {
+            function R(e) {
                 e.stopPropagation()
             }
 
-            function g(e) {
+            function C(e) {
                 let {
                     user: t,
                     guildId: n,
-                    channelId: g,
-                    messageId: L,
-                    roleId: D,
-                    closePopout: v,
-                    setPopoutRef: M,
-                    disableUserProfileLink: y = __OVERLAY__,
-                    newAnalyticsLocations: P = []
+                    channelId: C,
+                    messageId: g,
+                    roleId: L,
+                    closePopout: D,
+                    setPopoutRef: v,
+                    disableUserProfileLink: M = __OVERLAY__,
+                    newAnalyticsLocations: y = []
                 } = e, {
-                    analyticsLocations: U
-                } = (0, u.default)([...P, l.default.BITE_SIZE_PROFILE_POPOUT]), b = (0, E.useTrackUserProfileAction)({
+                    analyticsLocations: P
+                } = (0, u.default)([...y, l.default.BITE_SIZE_PROFILE_POPOUT]), U = (0, c.useTrackUserProfileAction)({
                     layout: "BITE_SIZE_POPOUT",
                     userId: t.id,
                     guildId: n,
-                    channelId: g,
-                    messageId: L,
-                    roleId: D
-                }), G = r.useRef(null), w = (0, I.default)(t.id, n), B = (0, o.default)(G), k = (0, s.useStateFromStores)([c.default], () => null != n ? c.default.getGuild(n) : null), F = (0, s.useStateFromStores)([_.default], () => null != n ? _.default.getMember(n, t.id) : null);
+                    channelId: C,
+                    messageId: g,
+                    roleId: L
+                }), b = r.useRef(null), G = (0, E.default)(t.id, n), w = (0, o.default)(b), B = (0, s.useStateFromStores)([_.default], () => null != n ? _.default.getMember(n, t.id) : null);
                 r.useEffect(() => {
-                    null == M || M(null == G ? void 0 : G.current)
-                }, [G, M]);
-                let V = e => {
-                    null == v || v(), (0, m.openUserProfileModal)({
-                        sourceAnalyticsLocations: U,
+                    null == v || v(null == b ? void 0 : b.current)
+                }, [b, v]);
+                let k = e => {
+                    null == D || D(), (0, A.openUserProfileModal)({
+                        sourceAnalyticsLocations: P,
                         userId: t.id,
                         guildId: n,
-                        channelId: g,
-                        messageId: L,
-                        roleId: D,
+                        channelId: C,
+                        messageId: g,
+                        roleId: L,
                         autoFocusNote: e
                     })
                 };
                 return (0, i.jsx)(u.AnalyticsLocationProvider, {
-                    value: U,
-                    children: (0, i.jsx)(E.UserProfileAnalyticsProvider, {
+                    value: P,
+                    children: (0, i.jsx)(c.UserProfileAnalyticsProvider, {
                         layout: "BITE_SIZE_POPOUT",
                         userId: t.id,
                         guildId: n,
-                        channelId: g,
-                        messageId: L,
-                        roleId: D,
-                        shouldTrackViewOnMount: null == F || null != F.fullProfileLoadedTimestamp,
+                        channelId: C,
+                        messageId: g,
+                        roleId: L,
+                        shouldTrackViewOnMount: null == B || null != B.fullProfileLoadedTimestamp,
                         children: (0, i.jsxs)(a.Dialog, {
-                            ref: G,
+                            ref: b,
                             "aria-label": t.username,
-                            onClick: C,
-                            onContextMenu: C,
-                            children: [(0, i.jsxs)(T.default, {
+                            onClick: R,
+                            onContextMenu: R,
+                            children: [(0, i.jsxs)(I.default, {
                                 user: t,
-                                displayProfile: w,
-                                profileType: O.UserProfileTypes.BITE_SIZE,
-                                children: [(0, i.jsxs)(A.default, {
-                                    isFaded: (null == w ? void 0 : w.profileEffectId) != null && !B,
-                                    children: [(0, i.jsx)(S.default, {
+                                displayProfile: G,
+                                profileType: p.UserProfileTypes.BITE_SIZE,
+                                children: [(0, i.jsxs)(h.default, {
+                                    isFaded: (null == G ? void 0 : G.profileEffectId) != null && !w,
+                                    children: [(0, i.jsx)(f.default, {
                                         user: t
-                                    }), (0, i.jsx)(f.default, {
+                                    }), (0, i.jsx)(T.default, {
                                         user: t,
                                         guildId: n,
-                                        onClose: v
-                                    }), (0, i.jsx)(h.default, {
+                                        onClose: D
+                                    }), (0, i.jsx)(S.default, {
                                         user: t,
                                         guildId: n,
-                                        onClose: v,
+                                        onClose: D,
                                         viewProfileItem: (0, i.jsx)(a.MenuItem, {
                                             id: "view-profile",
-                                            label: R.default.Messages.VIEW_FULL_PROFILE,
+                                            label: O.default.Messages.VIEW_FULL_PROFILE,
                                             action: () => {
-                                                b({
+                                                U({
                                                     action: "PRESS_VIEW_PROFILE",
-                                                    analyticsLocations: U
-                                                }), V()
+                                                    analyticsLocations: P
+                                                }), k()
                                             }
                                         })
                                     })]
-                                }), (0, i.jsx)(p.default, {
-                                    user: t,
-                                    displayProfile: w,
-                                    guildId: n,
-                                    channelId: g,
-                                    onClose: v,
-                                    disableUserProfileLink: y
                                 }), (0, i.jsx)(N.default, {
                                     user: t,
-                                    displayProfile: w,
-                                    onOpenProfile: () => V(!0),
-                                    guild: k,
-                                    channelId: g,
-                                    onClose: v
+                                    displayProfile: G,
+                                    guildId: n,
+                                    channelId: C,
+                                    onClose: D,
+                                    disableUserProfileLink: M
+                                }), (0, i.jsx)(m.default, {
+                                    user: t,
+                                    displayProfile: G,
+                                    onOpenProfile: () => k(!0),
+                                    guildId: n,
+                                    channelId: C,
+                                    onClose: D
                                 })]
-                            }), (null == w ? void 0 : w.profileEffectId) != null && (0, i.jsx)(d.default, {
-                                profileEffectId: null == w ? void 0 : w.profileEffectId,
+                            }), (null == G ? void 0 : G.profileEffectId) != null && (0, i.jsx)(d.default, {
+                                profileEffectId: null == G ? void 0 : G.profileEffectId,
                                 bannerAdjustment: 0,
-                                isHovering: B
+                                isHovering: w
                             })]
                         })
                     })
@@ -207329,26 +207391,27 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return o
+                    return l
                 }
             });
             var i = n("735250");
             n("470079");
             var r = n("442837"),
                 s = n("271383"),
-                a = n("246866");
+                a = n("430824"),
+                o = n("246866");
 
-            function o(e) {
+            function l(e) {
                 let {
                     user: t,
-                    guild: n,
-                    onClose: o
-                } = e, l = (0, r.useStateFromStores)([s.default], () => null != n ? s.default.getMember(n.id, t.id) : null);
-                return null == n || null == l || 0 === l.roles.length ? null : (0, i.jsx)(a.default, {
-                    guild: n,
+                    guildId: n,
+                    onClose: l
+                } = e, u = (0, r.useStateFromStores)([a.default], () => null != n ? a.default.getGuild(n) : null), d = (0, r.useStateFromStores)([s.default], () => null != u ? s.default.getMember(u.id, t.id) : null);
+                return null == u || null == d || 0 === d.roles.length ? null : (0, i.jsx)(o.default, {
+                    guild: u,
                     user: t,
-                    userRoles: l.roles,
-                    onClose: o
+                    userRoles: d.roles,
+                    onClose: l
                 })
             }
         },
@@ -207931,14 +207994,12 @@
             function o(e) {
                 let {
                     userId: t,
-                    guild: n,
-                    guildMember: o
+                    guildId: n
                 } = e;
                 return (0, i.jsx)(s.default, {
                     children: (0, i.jsx)(r.default, {
                         userId: t,
-                        guild: n,
-                        guildMember: o,
+                        guildId: n,
                         headingClassName: a.title,
                         textClassName: a.body
                     })
@@ -208772,16 +208833,6 @@
                 isError(e) {
                     return S.has(e)
                 }
-                getCurrentUserApplicationIds() {
-                    let e = c.default.getId(),
-                        t = T.get(e);
-                    return null == t ? null : new Set(t.recentGames.map(e => {
-                        let {
-                            applicationId: t
-                        } = e;
-                        return t
-                    }))
-                }
             }
             a = "UserRecentGamesStore", (s = "displayName") in(r = h) ? Object.defineProperty(r, s, {
                 value: a,
@@ -208976,49 +209027,61 @@
             "use strict";
             n.r(t), n.d(t, {
                 useUserRecentGames: function() {
-                    return l
+                    return u
                 }
-            });
+            }), n("47120");
             var i = n("470079"),
                 r = n("442837"),
-                s = n("454175"),
-                a = n("385845"),
-                o = n("761174");
+                s = n("314897"),
+                a = n("454175"),
+                o = n("385845"),
+                l = n("761174");
 
-            function l(e) {
-                let t = (0, o.useIsUserRecentGamesEnabled)({
+            function u(e) {
+                let t = (0, l.useIsUserRecentGamesEnabled)({
                         userId: e,
                         location: "28tk0bf_4"
                     }),
                     n = i.useRef(new AbortController),
+                    u = (0, r.useStateFromStores)([s.default], () => s.default.getId()),
                     {
-                        currentUserApplicationIds: l,
-                        recentGames: u,
-                        isFetching: d,
-                        isError: _
-                    } = (0, r.useStateFromStoresObject)([a.default], () => ({
-                        currentUserApplicationIds: a.default.getCurrentUserApplicationIds(),
-                        recentGames: a.default.getRecentGames(e),
-                        isFetching: a.default.isFetching(e),
-                        isError: a.default.isError(e)
+                        recentGames: d,
+                        currentUserRecentGames: _,
+                        isFetching: c,
+                        isError: E
+                    } = (0, r.useStateFromStoresObject)([o.default], () => ({
+                        recentGames: o.default.getRecentGames(e),
+                        currentUserRecentGames: o.default.getRecentGames(u),
+                        isFetching: o.default.isFetching(e),
+                        isError: o.default.isError(e)
                     })),
-                    c = i.useCallback(async () => {
-                        if (t && !d && !_) try {
-                            await s.default.fetchUserRecentGames(e, n.current.signal, !0)
+                    I = i.useMemo(() => {
+                        var e;
+                        let t = null !== (e = null == _ ? void 0 : _.map(e => {
+                            let {
+                                applicationId: t
+                            } = e;
+                            return t
+                        })) && void 0 !== e ? e : [];
+                        return 0 === t.length ? null : new Set(t)
+                    }, [_]),
+                    T = i.useCallback(async () => {
+                        if (t && !c && !E) try {
+                            await a.default.fetchUserRecentGames(e, n.current.signal, !0)
                         } catch (e) {}
-                    }, [_, t, d, e]);
+                    }, [E, t, c, e]);
                 return i.useEffect(() => {
-                    c()
-                }, [c]), i.useEffect(() => {
+                    T()
+                }, [T]), i.useEffect(() => {
                     let e = n.current;
                     return () => {
                         null == e || e.abort()
                     }
                 }, []), {
-                    isFetching: d,
-                    isError: _,
-                    recentGames: u,
-                    currentUserApplicationIds: l
+                    isFetching: c,
+                    isError: E,
+                    recentGames: d,
+                    currentUserApplicationIds: I
                 }
             }
         },
@@ -241623,7 +241686,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "11ff56af3cd059b8b62b29c2da213bf495ce8b55"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "1b4d3dc8976f7d30dd96e3c8cb7d9aee32072dd2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270084,7 +270147,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286350"
+                                build_number: "286359"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -277269,7 +277332,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286350", "286350"), 10);
+                let s = parseInt((n = "286359", "286359"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -304455,4 +304518,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.d77430cceac4dfa7d8d1.js.map
+//# sourceMappingURL=73050.276c595f04e504ef61ae.js.map

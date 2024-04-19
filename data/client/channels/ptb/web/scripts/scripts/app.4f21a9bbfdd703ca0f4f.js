@@ -24985,7 +24985,8 @@
             e.exports = {
                 discordIcon: "discordIcon__1e1be",
                 divider: "divider__979dc",
-                memberSinceContainer: "memberSinceContainer__16630"
+                memberSince: "memberSince__2eba7",
+                memberSinceWrapper: "memberSinceWrapper__03059"
             }
         },
         222477: function(e) {
@@ -25252,10 +25253,31 @@
                 statusBubblePosition: "statusBubblePosition_e98f49"
             }
         },
+        516264: function(e) {
+            "use strict";
+            e.exports = {
+                connections: "connections__84e31",
+                note: "note_a92d50",
+                recentGames: "recentGames_c8fe3b",
+                scroller: "scroller__2f4b4",
+                section: "section_d2e3ea"
+            }
+        },
+        198515: function(e) {
+            "use strict";
+            e.exports = {
+                addButton: "addButton_bfade1 pill_b76003",
+                addButtonIcon: "addButtonIcon__3b4b8",
+                pill: "pill_b76003",
+                role: "role__5eb73 pill_b76003",
+                root: "root__12006"
+            }
+        },
         708432: function(e) {
             "use strict";
             e.exports = {
                 container: "container__8361e",
+                infoTab: "infoTab__29f80",
                 tabBar: "tabBar__6db53",
                 tabBarItem: "tabBarItem__7bc74"
             }
@@ -25428,11 +25450,10 @@
                 addButton: "addButton_d7b605",
                 addButtonIcon: "addButtonIcon__04434",
                 container: "container__1f16a",
-                overflowButton: "overflowButton_d39c60 pillBackground__5eb2d",
-                pillBackground: "pillBackground__5eb2d",
-                role: "role__17a96 pillBackground__5eb2d",
+                overflowButton: "overflowButton_d39c60 pill__35c94",
+                pill: "pill__35c94",
+                role: "role__17a96 pill__35c94",
                 rolesHeader: "rolesHeader_e507a4",
-                rolesHeaderText: "rolesHeaderText__51e60",
                 root: "root_ae2ef3"
             }
         },
