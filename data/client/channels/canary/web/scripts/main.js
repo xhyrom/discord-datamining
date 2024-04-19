@@ -36653,7 +36653,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286203", ", Version Hash: ").concat("bc7bd05da56006947fe5b34cdf8d70f4bc8f340a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286207", ", Version Hash: ").concat("604123924dcf32e0628d97bc3e3dd36869339762")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86613,8 +86613,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286203", "286203"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286203")), t = 0), t
+                let t = parseInt((e = "286207", "286207"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286207")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110841,8 +110841,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286203",
-                    versionHash: "bc7bd05da56006947fe5b34cdf8d70f4bc8f340a"
+                    buildNumber: "286207",
+                    versionHash: "604123924dcf32e0628d97bc3e3dd36869339762"
                 }
             }
             n.r(t), n.d(t, {
@@ -148806,14 +148806,97 @@
                 }
             }
         },
+        59688: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                useCanShowNewGuildTooltip: function() {
+                    return r
+                }
+            });
+            let i = (0, n("818083").createExperiment)({
+                kind: "user",
+                id: "2024-04_server_peek",
+                label: "Change the guild badge and tooltip",
+                defaultConfig: {
+                    showNewGuildActivityBadge: !1,
+                    showNewGuildTooltip: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "With the current guild badges and new tooltip",
+                    config: {
+                        showNewGuildActivityBadge: !1,
+                        showNewGuildTooltip: !0
+                    }
+                }, {
+                    id: 2,
+                    label: "With the new guild badge and new tooltip",
+                    config: {
+                        showNewGuildActivityBadge: !0,
+                        showNewGuildTooltip: !0
+                    }
+                }]
+            });
+
+            function r() {
+                let {
+                    showNewGuildTooltip: e
+                } = i.useExperiment({
+                    location: "useCanShowNewGuildTooltip"
+                }, {
+                    autoTrackExposure: !0
+                });
+                return e
+            }
+        },
+        456774: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return u
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("481060"),
+                s = n("666188"),
+                a = n("940627"),
+                o = n("705600"),
+                l = n("764864");
+
+            function u(e) {
+                let {
+                    guild: t
+                } = e, n = (0, s.default)(t);
+                return (0, i.jsx)("div", {
+                    className: l.container,
+                    children: (0, i.jsxs)("div", {
+                        className: l.header,
+                        children: [n ? (0, i.jsx)(o.default, {
+                            guild: t,
+                            size: 16,
+                            className: l.rowIconV2
+                        }) : (0, i.jsx)(a.default, {
+                            guild: t,
+                            size: 20,
+                            className: l.rowIcon
+                        }), (0, i.jsx)(r.Text, {
+                            variant: "text-md/bold",
+                            color: "header-primary",
+                            children: t.name
+                        })]
+                    })
+                })
+            }
+        },
         593618: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 GuildTooltipText: function() {
-                    return Z
+                    return $
                 },
                 default: function() {
-                    return J
+                    return ee
                 }
             }), n("390547"), n("47120");
             var i = n("735250"),
@@ -148854,18 +148937,20 @@
                 k = n("602623"),
                 F = n("624138"),
                 V = n("510601"),
-                x = n("981631"),
-                H = n("689938"),
-                Y = n("499890"),
-                j = n("337341");
-            let W = (0, F.cssValueToNumber)(d.default.GUILD_TOOLTIP_ICON_SIZE),
-                K = (0, F.cssValueToNumber)(d.default.GUILD_TOOLTIP_ICON_SIZE_V_2);
+                x = n("59688"),
+                H = n("456774"),
+                Y = n("981631"),
+                j = n("689938"),
+                W = n("499890"),
+                K = n("337341");
+            let z = (0, F.cssValueToNumber)(d.default.GUILD_TOOLTIP_ICON_SIZE),
+                X = (0, F.cssValueToNumber)(d.default.GUILD_TOOLTIP_ICON_SIZE_V_2);
 
-            function z(e, t, n) {
+            function Q(e, t, n) {
                 return 0 === t.length ? null : (0, i.jsxs)("div", {
-                    className: Y.row,
+                    className: W.row,
                     children: [(0, i.jsx)(e, {
-                        className: Y.activityIcon
+                        className: W.activityIcon
                     }), (0, i.jsx)(k.default, {
                         guildId: n,
                         users: t,
@@ -148874,7 +148959,7 @@
                 })
             }
 
-            function X(e) {
+            function q(e) {
                 let {
                     muteConfig: t,
                     className: n
@@ -148883,14 +148968,14 @@
                     variant: "text-xs/normal",
                     color: "text-muted",
                     className: n,
-                    children: H.default.Messages.FORM_LABEL_MUTED
+                    children: j.default.Messages.FORM_LABEL_MUTED
                 }) : (0, i.jsx)(h.default, {
                     muteConfig: t,
                     className: n
                 })
             }
 
-            function Q(e) {
+            function Z(e) {
                 var t, n, s;
                 let {
                     guild: o
@@ -148899,7 +148984,7 @@
                         let {
                             channel: t
                         } = e;
-                        return t.type === x.ChannelTypes.GUILD_VOICE
+                        return t.type === Y.ChannelTypes.GUILD_VOICE
                     }).map(e => {
                         let {
                             channel: t
@@ -148924,30 +149009,30 @@
                     let e = 0;
                     for (let t of T) e += A.default.getParticipantCount(t, m.StageChannelParticipantNamedIndex.AUDIENCE);
                     return e
-                }), y = (0, u.useStateFromStoresArray)([O.default], () => O.default.getAllApplicationStreams().filter(e => e.guildId === d).map(e => e.ownerId), [d]), F = (0, V.useIsGamingVoiceActivityEnabled)("Guild Tooltip", !1), H = (0, u.useStateFromStoresArray)([g.default, R.default], () => S.filter(e => g.default.getActivities(e.id, d).some(e => (null == e ? void 0 : e.application_id) != null && null != R.default.getDetectableGame(null == e ? void 0 : e.application_id)))), j = z(P.default, H, d), W = F ? H.map(e => e.id) : [], K = (0, u.useStateFromStoresArray)([c.default], () => c.default.getEmbeddedActivitiesForGuild(d).flatMap(e => Array.from(e.userIds)), [d]), Q = (0, u.useStateFromStoresArray)([D.default], () => K.map(e => D.default.getUser(e)), [K]), q = (0, u.useStateFromStoresArray)([D.default], () => y.map(e => D.default.getUser(e)), [y]), Z = z(G.default, S.filter(e => !y.includes(e.id) && !K.includes(e.id) && !W.includes(e.id)), d);
+                }), y = (0, u.useStateFromStoresArray)([O.default], () => O.default.getAllApplicationStreams().filter(e => e.guildId === d).map(e => e.ownerId), [d]), F = (0, V.useIsGamingVoiceActivityEnabled)("Guild Tooltip", !1), x = (0, u.useStateFromStoresArray)([g.default, R.default], () => S.filter(e => g.default.getActivities(e.id, d).some(e => (null == e ? void 0 : e.application_id) != null && null != R.default.getDetectableGame(null == e ? void 0 : e.application_id)))), H = Q(P.default, x, d), j = F ? x.map(e => e.id) : [], K = (0, u.useStateFromStoresArray)([c.default], () => c.default.getEmbeddedActivitiesForGuild(d).flatMap(e => Array.from(e.userIds)), [d]), z = (0, u.useStateFromStoresArray)([D.default], () => K.map(e => D.default.getUser(e)), [K]), X = (0, u.useStateFromStoresArray)([D.default], () => y.map(e => D.default.getUser(e)), [y]), Z = Q(G.default, S.filter(e => !y.includes(e.id) && !K.includes(e.id) && !j.includes(e.id)), d);
                 let J = (t = d, n = h, s = M, 0 === n.length ? null : (0, i.jsxs)("div", {
-                        className: Y.row,
+                        className: W.row,
                         children: [(0, i.jsx)(w.default, {
-                            className: Y.activityIcon
+                            className: W.activityIcon
                         }), (0, i.jsx)(k.default, {
                             guildId: t,
                             users: n,
                             max: 3
                         }), (0, i.jsxs)("div", {
-                            className: Y.stageListenerPill,
+                            className: W.stageListenerPill,
                             children: [(0, i.jsx)(U.default, {
                                 width: 16,
                                 height: 16
                             }), (0, i.jsx)(_.Text, {
-                                className: Y.stageListenerCount,
+                                className: W.stageListenerCount,
                                 color: "text-normal",
                                 variant: "text-xs/normal",
                                 children: s
                             })]
                         })]
                     })),
-                    $ = z(B.default, q.filter(e => null != e && !K.includes(e.id)), d),
-                    ee = z(b.default, Q, d),
+                    $ = Q(B.default, X.filter(e => null != e && !K.includes(e.id)), d),
+                    ee = Q(b.default, z, d),
                     {
                         isMuted: et,
                         muteConfig: en
@@ -148955,99 +149040,111 @@
                         isMuted: L.default.isMuted(d),
                         muteConfig: L.default.getMuteConfig(d)
                     }), [d]);
-                return null != j && V.default.trackExposure({
+                return null != H && V.default.trackExposure({
                     location: "Guild Tooltip"
                 }), (0, i.jsxs)(i.Fragment, {
-                    children: [J, Z, $, F && j, ee, et ? (0, i.jsx)(X, {
+                    children: [J, Z, $, F && H, ee, et ? (0, i.jsx)(q, {
                         muteConfig: en,
-                        className: a()(Y.muteText, {
-                            [Y.muteTextWithActivity]: null != Z || null != $
+                        className: a()(W.muteText, {
+                            [W.muteTextWithActivity]: null != Z || null != $
                         })
                     }) : null]
                 })
             }
 
-            function q(e) {
+            function J(e) {
                 let {
                     guildJoinRequestStatus: t
                 } = e;
                 return (0, i.jsx)(_.Text, {
-                    className: Y.viewAsRolesWarning,
+                    className: W.viewAsRolesWarning,
                     color: "text-normal",
                     variant: "text-xs/normal",
                     children: function(e) {
                         switch (e) {
                             case I.GuildJoinRequestApplicationStatuses.SUBMITTED:
-                                return H.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_PENDING;
+                                return j.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_PENDING;
                             case I.GuildJoinRequestApplicationStatuses.REJECTED:
-                                return H.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_REJECTED;
+                                return j.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_REJECTED;
                             case I.GuildJoinRequestApplicationStatuses.APPROVED:
-                                return H.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_APPROVED;
+                                return j.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_APPROVED;
                             default:
-                                return H.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_STARTED
+                                return j.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_STARTED
                         }
                     }(t)
                 })
             }
 
-            function Z(e) {
+            function $(e) {
                 let {
                     guild: t,
                     includeActivity: n = !0
-                } = e, r = (0, E.default)(t), s = (0, T.useCurrentUserGuildBadgeStatus)(t.id), o = null != s ? (0, i.jsx)(q, {
+                } = e, r = (0, E.default)(t), s = (0, T.useCurrentUserGuildBadgeStatus)(t.id), o = null != s ? (0, i.jsx)(J, {
                     guildJoinRequestStatus: s
-                }) : null, l = n ? (0, i.jsx)(Q, {
+                }) : null, l = n ? (0, i.jsx)(Z, {
                     guild: t
                 }) : null, d = (0, u.useStateFromStores)([S.default], () => S.default.isViewingRoles(t.id)), c = (0, f.useShouldShowInvitesDisabledNotif)(t);
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
-                        className: a()(Y.row, Y.rowGuildName),
+                        className: a()(W.row, W.rowGuildName),
                         children: [r ? (0, i.jsx)(y.default, {
                             guild: t,
-                            size: K,
-                            className: Y.rowIconV2
+                            size: X,
+                            className: W.rowIconV2
                         }) : (0, i.jsx)(M.default, {
                             guild: t,
-                            size: W,
-                            className: Y.rowIcon
+                            size: z,
+                            className: W.rowIcon
                         }), (0, i.jsx)("span", {
-                            className: a()(Y.guildNameText, {
-                                [Y.guildNameTextLimitedSize]: null != l
+                            className: a()(W.guildNameText, {
+                                [W.guildNameTextLimitedSize]: null != l
                             }),
                             children: t.toString()
                         })]
                     }), c ? (0, i.jsx)(_.Text, {
-                        className: Y.invitesDisabledTooltip,
+                        className: W.invitesDisabledTooltip,
                         color: "header-secondary",
                         variant: "text-sm/medium",
-                        children: H.default.Messages.INVITES_DISABLED_TOOLTIP
+                        children: j.default.Messages.INVITES_DISABLED_TOOLTIP
                     }) : null, d ? (0, i.jsx)(_.Text, {
-                        className: Y.viewAsRolesWarning,
+                        className: W.viewAsRolesWarning,
                         color: "text-normal",
                         variant: "text-xs/normal",
-                        children: H.default.Messages.VIEW_AS_ROLES_MENTIONS_WARNING
+                        children: j.default.Messages.VIEW_AS_ROLES_MENTIONS_WARNING
                     }) : null != o ? o : l]
                 })
             }
 
-            function J(e) {
+            function ee(e) {
                 let {
                     guild: t,
                     disabled: n = !1,
                     "aria-label": s = !1,
                     children: a,
-                    includeActivity: o
+                    includeActivity: o,
+                    isHovered: l
                 } = e;
-                return (0, i.jsx)(_.Tooltip, {
+                return (0, x.useCanShowNewGuildTooltip)() ? (0, i.jsx)(_.Popout, {
+                    position: "right",
+                    renderPopout: () => (0, i.jsx)(H.default, {
+                        guild: t
+                    }),
+                    spacing: 20,
+                    shouldShow: l,
+                    children: e => (0, i.jsx)("div", {
+                        ...e,
+                        children: a
+                    })
+                }) : (0, i.jsx)(_.Tooltip, {
                     hideOnClick: !0,
                     spacing: 20,
                     position: "right",
-                    text: n ? null : (0, i.jsx)(Z, {
+                    text: n ? null : (0, i.jsx)($, {
                         guild: t,
                         includeActivity: o
                     }),
                     "aria-label": s,
-                    tooltipClassName: j.listItemTooltip,
+                    tooltipClassName: K.listItemTooltip,
                     children: e => {
                         let {
                             onFocus: t,
@@ -163985,8 +164082,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713536168642",
-                                    build_number: "286203"
+                                    built_at: "1713537264730",
+                                    build_number: "286207"
                                 }
                             },
                             retries: 1
@@ -241245,7 +241342,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "bc7bd05da56006947fe5b34cdf8d70f4bc8f340a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "604123924dcf32e0628d97bc3e3dd36869339762"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269706,7 +269803,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286203"
+                                build_number: "286207"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276891,7 +276988,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286203", "286203"), 10);
+                let s = parseInt((n = "286207", "286207"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -304077,4 +304174,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.18c8e80b51f19e3c7b75.js.map
+//# sourceMappingURL=73050.839654ae09ccc62b6af1.js.map
