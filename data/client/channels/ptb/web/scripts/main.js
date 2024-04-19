@@ -36653,7 +36653,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286172", ", Version Hash: ").concat("afe220e038427932e32e73f052e7ff2c5fdde24f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286184", ", Version Hash: ").concat("77b664b3fa20044d57ca5220bc91ca55d520429e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -73544,7 +73544,7 @@
                     neverLoadBeforeConnectionOpen: !0
                 },
                 ContentInventoryManager: {
-                    actions: ["POST_CONNECTION_OPEN", "CONNECTION_CLOSED", "IDLE", "WINDOW_FOCUS", "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN"],
+                    actions: ["POST_CONNECTION_OPEN", "CONNECTION_CLOSED", "IDLE", "WINDOW_FOCUS", "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN", "SPOTIFY_NEW_TRACK"],
                     inlineRequire: () => n("342879").default,
                     neverLoadBeforeConnectionOpen: !0
                 },
@@ -86613,8 +86613,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286172", "286172"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286172")), t = 0), t
+                let t = parseInt((e = "286184", "286184"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286184")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -108523,10 +108523,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 VoiceEnrichmentsExperiment: function() {
-                    return u
+                    return _
                 },
                 isEligibleForContentInventoryV1: function() {
                     return a
+                },
+                isEligibleForListenedMediaInventory: function() {
+                    return d
                 }
             });
             var i = n("818083");
@@ -108616,27 +108619,56 @@
                 }),
                 u = (0, i.createExperiment)({
                     kind: "user",
-                    id: "2024-04_content_inventory_voice_enrichments",
-                    label: "Experimental enrichments",
+                    id: "2024-04_content_inventory_listened_media",
+                    label: "Content Inventory: LISTENED_MEDIA",
                     defaultConfig: {
-                        showBadge: !1,
-                        showJoinButton: !1
+                        enabled: !1
                     },
                     treatments: [{
                         id: 1,
-                        label: "Treament",
+                        label: "Enabled",
                         config: {
-                            showBadge: !0,
-                            showJoinButton: !0
+                            enabled: !0
                         }
                     }]
-                })
+                });
+
+            function d(e) {
+                let {
+                    enabled: t
+                } = u.getCurrentConfig({
+                    location: e
+                }, {
+                    autoTrackExposure: !0
+                });
+                return t
+            }
+            let _ = (0, i.createExperiment)({
+                kind: "user",
+                id: "2024-04_content_inventory_voice_enrichments",
+                label: "Experimental enrichments",
+                defaultConfig: {
+                    showBadge: !1,
+                    showJoinButton: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Treament",
+                    config: {
+                        showBadge: !0,
+                        showJoinButton: !0
+                    }
+                }]
+            })
         },
         564990: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 getMyContentInventory: function() {
                     return a
+                },
+                postTrackToContentInventory: function() {
+                    return o
                 }
             });
             var i = n("544891"),
@@ -108653,6 +108685,19 @@
                         e.expired_at = n.toISOString()
                     }
                     return e
+                } catch (e) {
+                    throw new r.APIError(e)
+                }
+            };
+            async function o(e, t) {
+                try {
+                    await i.HTTP.post({
+                        url: s.Endpoints.MY_SPOTIFY_CONTENT_INVENTORY,
+                        body: {
+                            connection_id: e,
+                            tracks: [t]
+                        }
+                    })
                 } catch (e) {
                     throw new r.APIError(e)
                 }
@@ -108715,7 +108760,15 @@
             function N() {
                 A()
             }
-            class p extends r.default {
+
+            function p(e) {
+                let {
+                    connectionId: t,
+                    track: n
+                } = e;
+                if (null != t)(0, l.isEligibleForListenedMediaInventory)("ContentInventoryManager.handleSpotifyNewTrack") && (0, u.postTrackToContentInventory)(t, n)
+            }
+            class O extends r.default {
                 constructor(...e) {
                     var t, n, i;
                     super(...e), t = this, n = "actions", i = {
@@ -108723,7 +108776,8 @@
                         CONNECTION_CLOSED: f,
                         WINDOW_FOCUS: N,
                         IDLE: N,
-                        CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: N
+                        CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: N,
+                        SPOTIFY_NEW_TRACK: p
                     }, n in t ? Object.defineProperty(t, n, {
                         value: i,
                         enumerable: !0,
@@ -108732,7 +108786,7 @@
                     }) : t[n] = i
                 }
             }
-            t.default = new p
+            t.default = new O
         },
         146282: function(e, t, n) {
             "use strict";
@@ -110787,8 +110841,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286172",
-                    versionHash: "afe220e038427932e32e73f052e7ff2c5fdde24f"
+                    buildNumber: "286184",
+                    versionHash: "77b664b3fa20044d57ca5220bc91ca55d520429e"
                 }
             }
             n.r(t), n.d(t, {
@@ -163931,8 +163985,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713505402189",
-                                    build_number: "286172"
+                                    built_at: "1713512296299",
+                                    build_number: "286184"
                                 }
                             },
                             retries: 1
@@ -190227,50 +190281,52 @@
             }
 
             function eT(e, t, n) {
-                var i, r, s, a, o, l, u, d, _, c, E;
-                let I, f, {
-                    device: S,
-                    progress_ms: h,
-                    is_playing: A,
-                    repeat_state: m,
-                    item: N,
-                    context: p
+                var i, r, s, a, o, l, u, d, _, c, E, I, f, S, h;
+                let A, m, {
+                    device: N,
+                    progress_ms: p,
+                    is_playing: O,
+                    repeat_state: R,
+                    item: C,
+                    context: g
                 } = n;
-                if (null != N && N.type === y.SpotifyResourceTypes.TRACK) {
-                    let e = N.id;
-                    null != N.linked_from && null != N.linked_from.id && (e = N.linked_from.id), I = {
+                if (null != C && C.type === y.SpotifyResourceTypes.TRACK) {
+                    let e = C.id;
+                    null != C.linked_from && null != C.linked_from.id && (e = C.linked_from.id), A = {
                         id: e,
-                        name: N.name,
-                        duration: N.duration_ms,
+                        name: C.name,
+                        duration: C.duration_ms,
                         type: y.SpotifyResourceTypes.TRACK,
                         album: {
-                            id: null !== (a = null === (i = N.album) || void 0 === i ? void 0 : i.id) && void 0 !== a ? a : "",
-                            name: null !== (o = null === (r = N.album) || void 0 === r ? void 0 : r.name) && void 0 !== o ? o : "",
-                            image: null === (s = N.album) || void 0 === s ? void 0 : s.images[0]
+                            id: null !== (o = null === (i = C.album) || void 0 === i ? void 0 : i.id) && void 0 !== o ? o : "",
+                            name: null !== (l = null === (r = C.album) || void 0 === r ? void 0 : r.name) && void 0 !== l ? l : "",
+                            image: null === (s = C.album) || void 0 === s ? void 0 : s.images[0],
+                            type: null !== (u = null === (a = C.album) || void 0 === a ? void 0 : a.type) && void 0 !== u ? u : y.SpotifyResourceTypes.ALBUM
                         },
-                        artists: null !== (l = N.artists) && void 0 !== l ? l : [],
-                        isLocal: N.is_local || !1
+                        artists: null !== (d = C.artists) && void 0 !== d ? d : [],
+                        isLocal: C.is_local || !1
                     }
-                } else null != N && N.type === y.SpotifyResourceTypes.EPISODE && (I = {
-                    id: N.id,
-                    name: N.name,
-                    duration: N.duration_ms,
+                } else null != C && C.type === y.SpotifyResourceTypes.EPISODE && (A = {
+                    id: C.id,
+                    name: C.name,
+                    duration: C.duration_ms,
                     type: y.SpotifyResourceTypes.EPISODE,
                     album: {
-                        id: null !== (c = null === (u = N.show) || void 0 === u ? void 0 : u.id) && void 0 !== c ? c : "",
-                        name: null !== (E = null === (d = N.show) || void 0 === d ? void 0 : d.name) && void 0 !== E ? E : "",
-                        image: null === (_ = N.show) || void 0 === _ ? void 0 : _.images[0]
+                        id: null !== (f = null === (_ = C.show) || void 0 === _ ? void 0 : _.id) && void 0 !== f ? f : "",
+                        name: null !== (S = null === (c = C.show) || void 0 === c ? void 0 : c.name) && void 0 !== S ? S : "",
+                        image: null === (E = C.show) || void 0 === E ? void 0 : E.images[0],
+                        type: null !== (h = null === (I = C.album) || void 0 === I ? void 0 : I.type) && void 0 !== h ? h : y.SpotifyResourceTypes.SHOW
                     },
                     artists: [],
                     isLocal: !1
                 });
-                if (null != S && !0 !== S.is_active && (S = {
-                        ...S,
+                if (null != N && !0 !== N.is_active && (N = {
+                        ...N,
                         is_active: !0
-                    }), null != p && [y.SpotifyResourceTypes.PLAYLIST, y.SpotifyResourceTypes.ALBUM].includes(p.type)) {
+                    }), null != g && [y.SpotifyResourceTypes.PLAYLIST, y.SpotifyResourceTypes.ALBUM].includes(g.type)) {
                     let n = eh.getPlayerState(e);
-                    f = null != n && null != n.context && n.context.uri === p.uri ? Promise.resolve(n.context) : p.type === y.SpotifyResourceTypes.ALBUM ? Promise.resolve(p) : M.SpotifyAPI.get(e, t, {
-                        url: p.href
+                    m = null != n && null != n.context && n.context.uri === g.uri ? Promise.resolve(n.context) : g.type === y.SpotifyResourceTypes.ALBUM ? Promise.resolve(g) : M.SpotifyAPI.get(e, t, {
+                        url: g.href
                     }).then(e => {
                         let {
                             body: t
@@ -190280,18 +190336,18 @@
                         if (e && 404 === e.status) return null;
                         throw e
                     })
-                } else f = Promise.resolve(void 0);
-                return f.then(t => {
+                } else m = Promise.resolve(void 0);
+                return m.then(t => {
                     null != t && t.type === y.SpotifyResourceTypes.PLAYLIST && !t.public && (t = null), T.default.dispatch({
                         type: "SPOTIFY_PLAYER_STATE",
                         accountId: e,
-                        track: I,
-                        volumePercent: null != S ? S.volume_percent : 0,
-                        isPlaying: A,
-                        repeat: "off" !== m,
-                        position: h,
+                        track: A,
+                        volumePercent: null != N ? N.volume_percent : 0,
+                        isPlaying: O,
+                        repeat: "off" !== R,
+                        position: p,
                         context: t,
-                        device: S
+                        device: N
                     })
                 })
             }
@@ -190398,6 +190454,18 @@
                     null != a.image && null != f && (T.large_image = f), "single" !== a.type && (T.large_text = a.name), null != E && (t = E.uri), n = null != r && null != r.partyId ? r.partyId : "".concat(y.SPOTIFY_PARTY_PREFIX).concat(N.default.getId());
                     let S = o.length > 128 ? o.substring(0, 125) + "..." : o,
                         h = {
+                            context_uri: t,
+                            album_id: a.id,
+                            artist_ids: I.map(e => {
+                                let {
+                                    id: t
+                                } = e;
+                                return t
+                            }),
+                            type: _,
+                            button_urls: []
+                        },
+                        A = {
                             name: b.name,
                             assets: T,
                             details: S,
@@ -190410,17 +190478,7 @@
                                 id: n
                             }
                         };
-                    return !d && (h.sync_id = l, h.flags = P.ActivityFlags.PLAY | P.ActivityFlags.SYNC, h.metadata = {
-                        context_uri: t,
-                        album_id: a.id,
-                        artist_ids: I.map(e => {
-                            let {
-                                id: t
-                            } = e;
-                            return t
-                        }),
-                        type: _
-                    }), h
+                    return !d && (A.sync_id = l, A.flags = P.ActivityFlags.PLAY | P.ActivityFlags.SYNC, A.metadata = h), A
                 }
             }
             U(eS, "displayName", "SpotifyStore");
@@ -190473,7 +190531,7 @@
                     let c = p.default.getAccount(t, P.PlatformTypes.SPOTIFY);
                     if (null == c) return _;
                     let I = $[t],
-                        T = null != a ? {
+                        f = null != a ? {
                             account: c,
                             track: a,
                             startTime: function(e, t) {
@@ -190485,13 +190543,17 @@
                             context: u,
                             repeat: s
                         } : null,
-                        f = null != l && null != r && 0 === o && !n;
-                    !f && ($[t] = T);
-                    let S = i;
-                    if (i = d().values($).find(e => null != e), eI(N.default.getId()), null == a || f ? Q.stop() : Q.start(a.duration - o + F, () => ei(c.id)), null != r && (!n && o > 0 || null == l || null != T && r.trackId !== T.track.id) ? (W.info("Listen along active but playback stopped or track changed. Stopping listen along in ".concat(F, "ms")), q.start(F, () => {
+                        S = null != l && null != r && 0 === o && !n;
+                    !S && ($[t] = f);
+                    let A = i;
+                    if (i = d().values($).find(e => null != e), eI(N.default.getId()), null == a || S ? Q.stop() : Q.start(a.duration - o + F, () => ei(c.id)), null != r && (!n && o > 0 || null == l || null != f && r.trackId !== f.track.id) ? (W.info("Listen along active but playback stopped or track changed. Stopping listen along in ".concat(F, "ms")), q.start(F, () => {
                             W.info("Stopping listening along"), (0, h.default)(), ei(c.id)
-                        })) : q.isStarted() && (W.info("Listen along stop cancelled as playback of track resumed"), q.stop()), S === i || null == I && null == T || null != I && null != T && I.track.id === T.track.id && I.startTime === T.startTime) return _;
-                    null != a && L.default.track(P.AnalyticEvents.ACTIVITY_UPDATED, {
+                        })) : q.isStarted() && (W.info("Listen along stop cancelled as playback of track resumed"), q.stop()), A === i || null == I && null == f || null != I && null != f && I.track.id === f.track.id && I.startTime === f.startTime) return _;
+                    null != a && (T.default.dispatch({
+                        type: "SPOTIFY_NEW_TRACK",
+                        track: a,
+                        connectionId: t
+                    }), L.default.track(P.AnalyticEvents.ACTIVITY_UPDATED, {
                         party_platform: P.PlatformTypes.SPOTIFY,
                         track_id: a.id,
                         has_images: !0,
@@ -190500,7 +190562,7 @@
                         album_id: a.album.id,
                         author_ids: a.artists.map(e => e.id),
                         author_names: a.artists.map(e => e.name)
-                    })
+                    }))
                 },
                 SPOTIFY_PLAYER_PLAY: function(e) {
                     let {
@@ -190686,7 +190748,7 @@
                     album_id: S(r.album_id),
                     artist_ids: Array.isArray(r.artist_ids) ? r.artist_ids.map(S) : [],
                     type: s,
-                    button_urls: Array.isArray(r.button_url) ? r.button_url.map(S) : []
+                    button_urls: Array.isArray(r.button_urls) ? r.button_urls.map(S) : []
                 }
             }
         },
@@ -241183,7 +241245,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "afe220e038427932e32e73f052e7ff2c5fdde24f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "77b664b3fa20044d57ca5220bc91ca55d520429e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269644,7 +269706,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286172"
+                                build_number: "286184"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276829,7 +276891,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286172", "286172"), 10);
+                let s = parseInt((n = "286184", "286184"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -304015,4 +304077,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.1c67c5831bc5d6a2d73e.js.map
+//# sourceMappingURL=73050.71790ee7cfd8200ed9a8.js.map
