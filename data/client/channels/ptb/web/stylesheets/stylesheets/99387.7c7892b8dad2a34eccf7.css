@@ -23416,6 +23416,15 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     gap: 4px
 }
 
+.usernameRow__73bf0 .nicknameIcon__13099 {
+    visibility: hidden
+}
+
+.usernameRow__73bf0:hover .nicknameIcon__13099,
+.usernameRow__73bf0:focus-within .nicknameIcon__13099 {
+    visibility: visible
+}
+
 .tags__18aee {
     display: flex;
     flex-direction: row;
@@ -23521,6 +23530,15 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     display: flex;
     flex-direction: column;
     gap: 8px
+}
+
+.container__1f16a .hiddenTooltip__10c79 {
+    visibility: hidden
+}
+
+.container__1f16a:hover .hiddenTooltip__10c79,
+.container__1f16a:focus-within .hiddenTooltip__10c79 {
+    visibility: visible
 }
 
 .root_ae2ef3 {
@@ -134604,4 +134622,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.753dc6d36a5062d21a3b.css.map*/
+/*# sourceMappingURL=99387.7c7892b8dad2a34eccf7.css.map*/
