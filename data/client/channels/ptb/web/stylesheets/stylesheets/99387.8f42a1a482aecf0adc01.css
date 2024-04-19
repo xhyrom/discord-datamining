@@ -121306,7 +121306,10 @@ html .invoiceCancelRow__6ff3e {
 }
 
 .bodyCopy__72f28 {
-    margin-bottom: 24px
+    margin-bottom: 24px;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text
 }
 
 .errorInput__33e69 {
@@ -134534,4 +134537,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.6da4a28301653c0d520e.css.map*/
+/*# sourceMappingURL=99387.8f42a1a482aecf0adc01.css.map*/
