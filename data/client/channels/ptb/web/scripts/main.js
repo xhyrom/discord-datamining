@@ -6907,18 +6907,6 @@
                         enabled: e
                     })
                 },
-                setAV1Enabled(e) {
-                    !S() && i.default.dispatch({
-                        type: "MEDIA_ENGINE_SET_AV1",
-                        enabled: e
-                    })
-                },
-                setH265Enabled(e) {
-                    !S() && i.default.dispatch({
-                        type: "MEDIA_ENGINE_SET_H265",
-                        enabled: e
-                    })
-                },
                 setAecDump(e) {
                     !S() && i.default.dispatch({
                         type: "MEDIA_ENGINE_SET_AEC_DUMP",
@@ -36665,7 +36653,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286082", ", Version Hash: ").concat("edcb34439f765629b7a7d7b928b96f3aefe519a0")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286113", ", Version Hash: ").concat("47810ade3b4ab6cf881db3fc5ef44ce637c8b040")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -41514,7 +41502,6 @@
                 FORM_HELP_AUTOMATIC_VAD: "If the indicator is solid green then Discord is transmitting your beautiful voice.",
                 FORM_LABEL_SHORTCUT: "Shortcut",
                 FORM_LABEL_VOICE_PROCESSING: "Voice Processing",
-                FORM_LABEL_VIDEO_CODECS: "Video Codecs",
                 FORM_LABEL_VOICE_DIAGNOSTICS: "Voice Diagnostics",
                 FORM_LABEL_QOS: "Quality Of Service",
                 FORM_LABEL_VOLUME: "Volume",
@@ -41529,7 +41516,6 @@
                 TEST_VIDEO: "Test Video",
                 FORM_WARNING_VIDEO_PREVIEW: "\nYou must grant Discord [access to your camera](onEnableClick) in order to be able to preview.\n  ",
                 ECHO_CANCELLATION: "Echo Cancellation",
-                ENABLE_H265: "Enable H265",
                 NOISE_SUPPRESSION: "Noise Suppression",
                 AUTOMATIC_GAIN_CONTROL: "Automatic Gain Control",
                 ADVANCED_VOICE_ACTIVITY: "Advanced Voice Activity",
@@ -45692,11 +45678,9 @@
                 USER_SETTINGS_VOICE_VIDEO_CODEC_TITLE: "Video Codec",
                 USER_SETTINGS_VOICE_OPEN_H264: "OpenH264 Video Codec provided by Cisco Systems, Inc.",
                 USER_SETTINGS_VOICE_HARDWARE_H264: "Hardware Acceleration",
-                USER_SETTINGS_VOICE_AV1: "AV1 video codec",
                 USER_SETTINGS_VOICE_EXPERIMENTAL_SOUNDSHARE_LABEL: "Use an experimental method to capture audio from applications",
                 FORM_HELP_OPEN_H264: "Disabling OpenH264 also disables hardware accelerated video encoding, if available.",
                 FORM_HELP_HARDWARE_H264: "Hardware acceleration uses your GPU for efficient video encoding and decoding, if available.",
-                FORM_HELP_HARDWARE_AV1: "Disabled if hardware acceleration is disabled.",
                 FORM_HELP_VIDEO_HOOK: "Our signed DLL is injected into the application to capture frames.",
                 USERNAME: "Username",
                 USERNAME_AND_TAG: "Username and Tag",
@@ -86629,8 +86613,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286082", "286082"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286082")), t = 0), t
+                let t = parseInt((e = "286113", "286113"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286113")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110803,8 +110787,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286082",
-                    versionHash: "edcb34439f765629b7a7d7b928b96f3aefe519a0"
+                    buildNumber: "286113",
+                    versionHash: "47810ade3b4ab6cf881db3fc5ef44ce637c8b040"
                 }
             }
             n.r(t), n.d(t, {
@@ -163947,8 +163931,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713484363849",
-                                    build_number: "286082"
+                                    built_at: "1713487211024",
+                                    build_number: "286113"
                                 }
                             },
                             retries: 1
@@ -226359,7 +226343,6 @@
                     vadUseKrispSettingVersion: 0,
                     ncUseKrispSettingVersion: 0,
                     ncUseKrispjsSettingVersion: 0,
-                    av1EnabledSettingVersion: 0,
                     mute: !1,
                     deaf: !1,
                     echoCancellation: !0,
@@ -226388,7 +226371,6 @@
                     videoHook: eO.supports(eT.Features.VIDEO_HOOK),
                     experimentalSoundshare2: null,
                     openH264: !0,
-                    av1Enabled: !0,
                     h265Enabled: !0,
                     vadThrehsoldMigrated: !1,
                     aecDumpEnabled: !1
@@ -226791,25 +226773,25 @@
                             }, {
                                 autoTrackExposure: !0
                             });
-                            t && e.setExperimentFlag(eT.ExperimentFlags.SIGNAL_H265_SUPPORT, !0);
+                            t && n.hardwareH264 && e.setExperimentFlag(eT.ExperimentFlags.SIGNAL_H265_SUPPORT, !0);
                             let {
-                                signalH265SupportAMD: n
+                                signalH265SupportAMD: i
                             } = B.default.getCurrentConfig({
                                 location: "f627ab_9"
                             }, {
                                 autoTrackExposure: !0
                             });
-                            n && e.setExperimentFlag(eT.ExperimentFlags.SIGNAL_H265_SUPPORT, !0);
+                            i && n.hardwareH264 && e.setExperimentFlag(eT.ExperimentFlags.SIGNAL_H265_SUPPORT, !0);
                             let {
-                                signalH265SupportMacOS: i
+                                signalH265SupportMacOS: r
                             } = w.default.getCurrentConfig({
                                 location: "f627ab_8"
                             }, {
                                 autoTrackExposure: !0
                             });
-                            if (i) {
+                            if (r) {
                                 var u;
-                                (0, $.isMac)() && (null === (u = window.DiscordNative) || void 0 === u ? void 0 : u.os.arch) === "arm64" && e.setExperimentFlag(eT.ExperimentFlags.SIGNAL_H265_SUPPORT, !0)
+                                (0, $.isMac)() && (null === (u = window.DiscordNative) || void 0 === u ? void 0 : u.os.arch) === "arm64" && (n.hardwareH264 ? e.setExperimentFlag(eT.ExperimentFlags.SIGNAL_H265_SUPPORT, !0) : e.setExperimentFlag(eT.ExperimentFlags.SIGNAL_H265_DECODE_SUPPORT, !0))
                             }
                         }
                         let {
@@ -227037,11 +227019,11 @@
                                 if (E().defaultsDeep(e, ep()), null != e.modeOptions && "string" == typeof e.modeOptions.shortcut && (e.modeOptions.shortcut = (0, en.toCombo)(e.modeOptions.shortcut)), null != e.modeOptions && 4 !== e.vadUseKrispSettingVersion && (e.vadUseKrispSettingVersion = 4, e.modeOptions.vadUseKrisp = !0), !e.qosMigrated && (e.qosMigrated = !0, e.qos = !1), !e.vadThrehsoldMigrated) {
                                     var t;
                                     e.vadThrehsoldMigrated = !0, (null === (t = e.modeOptions) || void 0 === t ? void 0 : t.threshold) === -40 && (e.modeOptions.threshold = -60)
-                                }(0, $.isWeb)() ? 1 !== e.ncUseKrispjsSettingVersion && (e.ncUseKrispjsSettingVersion = 1, e.noiseSuppression = !1, e.noiseCancellation = !0): 1 !== e.ncUseKrispSettingVersion && (e.ncUseKrispSettingVersion = 1, e.noiseSuppression = !1, e.noiseCancellation = !0), 1 !== e.av1EnabledSettingVersion && (e.av1EnabledSettingVersion = 1, e.av1Enabled = !0), 1 !== e.hardwareEnabledVersion && (e.hardwareH264 = !0, e.hardwareEnabledVersion = 1)
+                                }(0, $.isWeb)() ? 1 !== e.ncUseKrispjsSettingVersion && (e.ncUseKrispjsSettingVersion = 1, e.noiseSuppression = !1, e.noiseCancellation = !0): 1 !== e.ncUseKrispSettingVersion && (e.ncUseKrispSettingVersion = 1, e.noiseSuppression = !1, e.noiseCancellation = !0), 1 !== e.hardwareEnabledVersion && (e.hardwareH264 = !0, e.hardwareEnabledVersion = 1)
                             }),
                             function() {
                                 let e = e4();
-                                eO.setAudioInputDevice(e.inputDeviceId), eO.setAudioOutputDevice(e.outputDeviceId), e8(), eO.setInputVolume(e.inputVolume), eO.setOutputVolume(e.outputVolume), eO.setH264Enabled(e.openH264), eO.setAv1Enabled(e.av1Enabled), eO.setAecDump(e.aecDumpEnabled)
+                                eO.setAudioInputDevice(e.inputDeviceId), eO.setAudioOutputDevice(e.outputDeviceId), e8(), eO.setInputVolume(e.inputVolume), eO.setOutputVolume(e.outputVolume), eO.setH264Enabled(e.openH264), eO.setAv1Enabled(e.hardwareH264), eO.setH265Enabled(e.hardwareH264), eO.setAecDump(e.aecDumpEnabled)
                             }()
                     }(), !(0, $.isDesktop)() || __OVERLAY__ || eK || ez ? (0, $.isWeb)() && eO.supports(eT.Features.NOISE_CANCELLATION) ? (ez = !0, i.emitChange()) : (0, $.isWeb)() && tr({
                         noiseCancellation: !1
@@ -227343,9 +227325,6 @@
                 getOpenH264() {
                     return e4().openH264
                 }
-                getAv1Enabled() {
-                    return e4().av1Enabled
-                }
                 getEverSpeakingWhileMuted() {
                     return eF
                 }
@@ -227618,12 +227597,6 @@
                     });
                     eO.eachConnection(e => e.setEchoCancellation(t.echoCancellation)), tI(), tE(e.location)
                 },
-                MEDIA_ENGINE_SET_H265: function(e) {
-                    let t = tr({
-                        h265Enabled: e.enabled
-                    });
-                    eO.setH265Enabled(t.h265Enabled)
-                },
                 AUDIO_SET_LOOPBACK: function(e) {
                     let {
                         enabled: t
@@ -227875,15 +227848,7 @@
                     } = e, n = tr({
                         hardwareH264: t
                     });
-                    eO.eachConnection(e => e.setHardwareH264(n.hardwareH264))
-                },
-                MEDIA_ENGINE_SET_AV1: function(e) {
-                    let {
-                        enabled: t
-                    } = e, n = tr({
-                        av1Enabled: t
-                    });
-                    eO.setAv1Enabled(n.av1Enabled)
+                    eO.eachConnection(e => e.setHardwareH264(n.hardwareH264)), eO.setAv1Enabled(n.hardwareH264), eO.setH265Enabled(n.hardwareH264)
                 },
                 APP_STATE_UPDATE: function(e) {
                     let {
@@ -241218,7 +241183,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "edcb34439f765629b7a7d7b928b96f3aefe519a0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "47810ade3b4ab6cf881db3fc5ef44ce637c8b040"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269679,7 +269644,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286082"
+                                build_number: "286113"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -276864,7 +276829,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286082", "286082"), 10);
+                let s = parseInt((n = "286113", "286113"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -290199,7 +290164,7 @@
                                     encode: e.encode,
                                     decode: e.decode
                                 }
-                            })], this.logger.info("Video codecs: ".concat(this.codecs.map(e => e.name))), t.getEncryptionModes(i => {
+                            })], this.logger.info("Audio codecs: ".concat(this.codecs.filter(e => "audio" === e.type).map(e => e.name))), this.logger.info("Video codecs: ".concat(this.codecs.filter(e => "video" === e.type).map(e => e.name + "[encode: " + e.encode + ", decode: " + e.decode + "]"))), t.getEncryptionModes(i => {
                                 var r, s, u, d, _, c, E, I, T, S, h;
                                 this.logger.info("Encryption modes: ".concat(i)), t.setTransportOptions(this.getConnectionTransportOptions()), t.setSelfMute(this.selfMute || this.context === O.MediaEngineContextTypes.STREAM), t.setSelfDeafen(this.selfDeaf), t.setOnSpeakingCallback(this.handleSpeakingNative), null === (r = t.setOnNativeMuteToggleCallback) || void 0 === r || r.call(t, this.handleNativeMuteToggled), null === (s = t.setOnNativeMuteChangedCallback) || void 0 === s || s.call(t, this.handleNativeMuteChanged), null === (u = t.setOnSpeakingWhileMutedCallback) || void 0 === u || u.call(t, this.handleSpeakingWhileMuted), null === (d = t.setPingInterval) || void 0 === d || d.call(t, O.PING_INTERVAL), t.setPingCallback(this.handlePing), null === (_ = t.setPingTimeoutCallback) || void 0 === _ || _.call(t, this.handlePingTimeout), null === (c = t.setOnVideoEncoderFallbackCallback) || void 0 === c || c.call(t, this.handleVideoEncoderFallback), n.setTransportOptions({
                                     builtInEchoCancellation: !0,
@@ -304050,4 +304015,4 @@
         }
     }
 ]);
-//# sourceMappingURL=73050.41a11b17f6aadc11f4f8.js.map
+//# sourceMappingURL=73050.76b34b6f428a0112992c.js.map

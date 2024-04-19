@@ -21232,6 +21232,8 @@
                 header: "header__0eb6b",
                 headerSeparator: "headerSeparator_ef7e6e",
                 list: "list_d24b0a",
+                remindContainer: "remindContainer__81257",
+                remindHeader: "remindHeader__63284",
                 searchbar: "searchbar_f3ff3c",
                 separator: "separator__391be",
                 submit: "submit__78b24",
