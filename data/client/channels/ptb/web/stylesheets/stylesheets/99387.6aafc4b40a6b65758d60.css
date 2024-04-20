@@ -68014,15 +68014,6 @@ input::-webkit-inner-spin-button {
     color: var(--header-primary)
 }
 
-.gradientText_fb366a {
-    color: var(--text-brand);
-    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
-    background-clip: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent
-}
-
 .image_d4457f {
     width: 200px;
     position: absolute;
@@ -68087,7 +68078,7 @@ input::-webkit-inner-spin-button {
 }
 
 .streamingIconGlow__5b7b2 {
-    filter: drop-shadow(0 0 5px var(--premium-perk-pink))
+    filter: drop-shadow(0 0 10px#b845c1)
 }
 
 .clickableGameWrapper_dc17b2 {
@@ -68153,8 +68144,16 @@ input::-webkit-inner-spin-button {
     background: var(--bg-overlay-1, var(--background-secondary-alt))
 }
 
+.theme-dark .perksDemoText__39380 {
+    color: #c269c3
+}
+
 .theme-light .panel_bd8c76 {
     background: var(--bg-overlay-3, var(--background-secondary-alt))
+}
+
+.theme-light .perksDemoText__39380 {
+    color: #b449b6
 }
 
 .channel__5490c:hover {
@@ -119798,26 +119797,6 @@ html .invoiceCancelRow__6ff3e {
     display: flex
 }
 
-.container__13e8b {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: var(--background-secondary-alt);
-    border-radius: var(--radius-sm);
-    padding: var(--spacing-12);
-    border-width: 1px;
-    border-style: solid;
-    border-color: transparent
-}
-
-.containerActive__5c3a7 {
-    border-color: var(--text-positive)
-}
-
-.playButton__84713 {
-    margin-right: var(--spacing-8)
-}
-
 .container_d17b94 {
     display: flex;
     flex-direction: row;
@@ -119895,26 +119874,6 @@ html .invoiceCancelRow__6ff3e {
 
 .divider__5d410 {
     margin-top: var(--spacing-24)
-}
-
-.image_eaa491 {
-    margin-bottom: var(--spacing-8)
-}
-
-.optionsContainerWrapper_a07768 {
-    margin: var(--spacing-16)0 var(--spacing-16);
-    padding: 0 var(--spacing-8);
-    text-align: left
-}
-
-.optionsContainer_de5022 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: var(--spacing-8);
-    -moz-column-gap: var(--spacing-8);
-    column-gap: var(--spacing-8);
-    grid-row-gap: var(--spacing-8);
-    row-gap: var(--spacing-8)
 }
 
 .header__1b8aa {
@@ -120027,6 +119986,55 @@ html .invoiceCancelRow__6ff3e {
 .modal_a32edf {
     z-index: 0;
     max-height: 100%
+}
+
+.gradientText_fb366a {
+    color: var(--text-brand);
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+    background-clip: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent
+}
+
+.container__13e8b {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--radius-sm);
+    padding: var(--spacing-12);
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent
+}
+
+.containerActive__5c3a7 {
+    border-color: var(--text-positive)
+}
+
+.playButton__84713 {
+    margin-right: var(--spacing-8)
+}
+
+.image_eaa491 {
+    margin-bottom: var(--spacing-8)
+}
+
+.optionsContainerWrapper_a07768 {
+    margin: var(--spacing-16)0 var(--spacing-16);
+    padding: 0 var(--spacing-8);
+    text-align: left
+}
+
+.optionsContainer_de5022 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: var(--spacing-8);
+    -moz-column-gap: var(--spacing-8);
+    column-gap: var(--spacing-8);
+    grid-row-gap: var(--spacing-8);
+    row-gap: var(--spacing-8)
 }
 
 .image__3b2f7 {
@@ -134586,4 +134594,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2e1e89df48e2345b4ff0.css.map*/
+/*# sourceMappingURL=99387.6aafc4b40a6b65758d60.css.map*/
