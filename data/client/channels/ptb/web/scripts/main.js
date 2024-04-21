@@ -11180,8 +11180,8 @@
                 c = n("272423"),
                 E = n("781157"),
                 I = n("895886"),
-                T = n("703656"),
-                f = n("920440"),
+                T = n("35225"),
+                f = n("703656"),
                 S = n("314897"),
                 h = n("592125"),
                 A = n("664915"),
@@ -11228,8 +11228,8 @@
                         lurkLocation: c
                     } = u,
                     E = null !== (t = u.lurker) && void 0 !== t && t,
-                    f = R.default.getCurrentUser();
-                if (null !== (i = null == f ? void 0 : f.hasFlag(M.UserFlags.QUARANTINED)) && void 0 !== i && i) return (0, I.default)(), new Promise((e, t) => t(Error()));
+                    T = R.default.getCurrentUser();
+                if (null !== (i = null == T ? void 0 : T.hasFlag(M.UserFlags.QUARANTINED)) && void 0 !== i && i) return (0, I.default)(), new Promise((e, t) => t(Error()));
                 a.default.wait(() => a.default.dispatch({
                     type: "GUILD_JOIN",
                     guildId: e,
@@ -11258,7 +11258,7 @@
                             type: "USER_GUILD_JOIN_REQUEST_UPDATE",
                             guildId: e,
                             request: r.body.join_request
-                        }), null == N.default.getGuild(e) && r.body.show_verification_form) return (0, T.transitionTo)(M.Routes.GUILD_MEMBER_VERIFICATION(e)), r;
+                        }), null == N.default.getGuild(e) && r.body.show_verification_form) return (0, f.transitionTo)(M.Routes.GUILD_MEMBER_VERIFICATION(e)), r;
                     if (null != r.body.welcome_screen && a.default.dispatch({
                             type: "WELCOME_SCREEN_UPDATE",
                             guildId: r.body.id,
@@ -11297,12 +11297,12 @@
                 waitForGuild: w,
                 async transitionToGuildSync(e, t, n, i) {
                     var r, s;
-                    let a = (r = (await w(e)).id, null != (s = n) ? s : !(0, d.isInMainTabsExperiment)() || (0, E.isOnNewPanels)() ? (0, f.getChannelIdForGuildTransition)(r) : void 0),
+                    let a = (r = (await w(e)).id, null != (s = n) ? s : !(0, d.isInMainTabsExperiment)() || (0, E.isOnNewPanels)() ? (0, T.getChannelIdForGuildTransition)(r) : void 0),
                         o = t;
                     (null == t ? void 0 : t.hasOwnProperty("welcomeModalChannelId")) && null == t.welcomeModalChannelId && (o = {
                         ...t,
                         welcomeModalChannelId: a
-                    }), (0, T.transitionTo)(M.Routes.CHANNEL(e, a), o, void 0, i), await new Promise(setImmediate)
+                    }), (0, f.transitionTo)(M.Routes.CHANNEL(e, a), o, void 0, i), await new Promise(setImmediate)
                 },
                 deleteGuild: U,
                 selectGuild(e) {
@@ -11586,15 +11586,15 @@
                         return
                     }
                     if (null == e) {
-                        (0, T.transitionTo)(M.Routes.FRIENDS);
+                        (0, f.transitionTo)(M.Routes.FRIENDS);
                         return
                     }
                     let t = m.default.getDefaultChannel(e);
-                    null == t || t.isNSFW() ? (0, T.transitionTo)(M.Routes.FRIENDS) : (0, T.transitionTo)(M.Routes.CHANNEL(e, t.id))
+                    null == t || t.isNSFW() ? (0, f.transitionTo)(M.Routes.FRIENDS) : (0, f.transitionTo)(M.Routes.CHANNEL(e, t.id))
                 },
                 escapeToDefaultChannel(e) {
                     let t = m.default.getDefaultChannel(e);
-                    null != t ? (0, T.transitionTo)(M.Routes.CHANNEL(e, t.id)) : (0, T.transitionTo)(M.Routes.FRIENDS)
+                    null != t ? (0, f.transitionTo)(M.Routes.CHANNEL(e, t.id)) : (0, f.transitionTo)(M.Routes.FRIENDS)
                 },
                 async fetchApplications(e, t) {
                     let n = {
@@ -36661,7 +36661,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286586", ", Version Hash: ").concat("3e7af05db8269ea8a36312360ef30224e1975987")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286605", ", Version Hash: ").concat("4d4fe7ccccffe5ca397d94a022b7adc973d2f4ce")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55775,7 +55775,7 @@
             var i = n("853856"),
                 r = n("706590"),
                 s = n("703656"),
-                a = n("920440"),
+                a = n("769654"),
                 o = n("592125"),
                 l = n("496675"),
                 u = n("914010"),
@@ -86651,8 +86651,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286586", "286586"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286586")), t = 0), t
+                let t = parseInt((e = "286605", "286605"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286605")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -86926,7 +86926,7 @@
                 r = n("287734"),
                 s = n("147913"),
                 a = n("703656"),
-                o = n("920440"),
+                o = n("769654"),
                 l = n("131951"),
                 u = n("944486"),
                 d = n("914010"),
@@ -111158,8 +111158,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286586",
-                    versionHash: "3e7af05db8269ea8a36312360ef30224e1975987"
+                    buildNumber: "286605",
+                    versionHash: "4d4fe7ccccffe5ca397d94a022b7adc973d2f4ce"
                 }
             }
             n.r(t), n.d(t, {
@@ -154612,7 +154612,7 @@
             });
             var i = n("727429"),
                 r = n("703656"),
-                s = n("920440"),
+                s = n("769654"),
                 a = n("592125"),
                 o = n("754688"),
                 l = n("849027"),
@@ -164448,8 +164448,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713578818925",
-                                    build_number: "286586"
+                                    built_at: "1713739887290",
+                                    build_number: "286605"
                                 }
                             },
                             retries: 1
@@ -168431,7 +168431,7 @@
                 E = n("481060"),
                 I = n("252618"),
                 T = n("703656"),
-                f = n("920440"),
+                f = n("769654"),
                 S = n("626135"),
                 h = n("787025"),
                 A = n("981631"),
@@ -185784,6 +185784,27 @@
             (i || (i = {})).INVITE_ACCEPT = "invite_accept", t.default = i;
             let s = new Set([r.OpenThreadAnalyticsLocations.EMBED, r.OpenThreadAnalyticsLocations.FORUM])
         },
+        35225: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getChannelIdForGuildTransition: function() {
+                    return u
+                }
+            });
+            var i = n("819553"),
+                r = n("931261"),
+                s = n("592125"),
+                a = n("984933"),
+                o = n("944486"),
+                l = n("176505");
+
+            function u(e) {
+                var t;
+                let n = o.default.getChannelId(e),
+                    u = null === (t = a.default.getDefaultChannel(e)) || void 0 === t ? void 0 : t.id;
+                return (n !== l.StaticChannelRoute.GUILD_ONBOARDING || i.default.shouldShowOnboarding(e)) && (n !== l.StaticChannelRoute.GUILD_HOME || (0, r.canSeeOnboardingHome)(e)) && null != s.default.getChannel(n) ? n : u
+            }
+        },
         703656: function(e, t, n) {
             "use strict";
             let i, r, s;
@@ -185974,40 +185995,19 @@
                 (0, l.transitionTo)(u.Routes.CHANNEL(s, r.id, t), n, i)
             }
         },
-        920440: function(e, t, n) {
+        769654: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                getChannelIdForGuildTransition: function() {
-                    return E
-                },
                 transitionToGuild: function() {
-                    return I
+                    return a
                 }
             });
-            var i = n("819553"),
-                r = n("931261"),
-                s = n("57132"),
-                a = n("781157"),
-                o = n("592125"),
-                l = n("984933"),
-                u = n("944486"),
-                d = n("703656"),
-                _ = n("981631"),
-                c = n("176505");
+            var i = n("35225"),
+                r = n("703656"),
+                s = n("981631");
 
-            function E(e) {
-                var t;
-                let n = u.default.getChannelId(e),
-                    s = null === (t = l.default.getDefaultChannel(e)) || void 0 === t ? void 0 : t.id;
-                return (n !== c.StaticChannelRoute.GUILD_ONBOARDING || i.default.shouldShowOnboarding(e)) && (n !== c.StaticChannelRoute.GUILD_HOME || (0, r.canSeeOnboardingHome)(e)) && null != o.default.getChannel(n) ? n : s
-            }
-
-            function I(e, t) {
-                let n = !(0, s.isInMainTabsExperiment)() || (0, a.shouldHandleNewPanelsRoute)(e) ? E(e) : void 0;
-                (0, d.transitionTo)(_.Routes.CHANNEL(e, n), {
-                    navigationReplace: (0, a.shouldHandleNewPanelsRoute)(e),
-                    ...t
-                })
+            function a(e, t) {
+                (0, r.transitionTo)(s.Routes.CHANNEL(e, (0, i.getChannelIdForGuildTransition)(e)), t)
             }
         },
         186901: function(e, t, n) {
@@ -241865,7 +241865,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3e7af05db8269ea8a36312360ef30224e1975987"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "4d4fe7ccccffe5ca397d94a022b7adc973d2f4ce"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -249552,7 +249552,7 @@
                 O = n("471445"),
                 R = n("833858"),
                 C = n("223135"),
-                g = n("920440"),
+                g = n("769654"),
                 L = n("750154"),
                 D = n("768581"),
                 v = n("630388"),
@@ -268712,7 +268712,7 @@
                 o = n("749210"),
                 l = n("41776"),
                 u = n("703656"),
-                d = n("920440"),
+                d = n("769654"),
                 _ = n("650774"),
                 c = n("430824"),
                 E = n("626135"),
@@ -270326,7 +270326,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286586"
+                                build_number: "286605"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -277511,7 +277511,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286586", "286586"), 10);
+                let s = parseInt((n = "286605", "286605"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -304697,4 +304697,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.4955bd218a2dfe2f0c92.js.map
+//# sourceMappingURL=35705.d9c60f2a454d420c43cb.js.map
