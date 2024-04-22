@@ -36682,7 +36682,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286759", ", Version Hash: ").concat("ae29a341a22fb8d6ae05fccd1d06a46146ccba3b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286762", ", Version Hash: ").concat("875687479bd8f82babffe2dd97df19c92a359cd0")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -52838,6 +52838,9 @@
                 REFERRAL_PROGRAM_EMBED_BODY: "Start your 2-week trial of Nitro to try out custom profiles, animated emoji, and more!",
                 REFERRAL_PROGRAM_SELECT_FRIENDS_NO_RESULTS_HEADER: "Hmm... No Results",
                 REFERRAL_PROGRAM_SELCT_FRIENDS_NO_RESULTS_SUBHEADER: "Congratulations, you’ve found the lonely cactus. Try a different search to find your friends.",
+                REFERRAL_PROGRAM_SELECT_ONE_MORE_FRIEND: "You can select 1 more friend.",
+                REFERRAL_PROGRAM_SELECT_MORE_FRIEND: "You can select {numFriends} more friends.",
+                REFERRAL_PROGRAM_FRIEND_SELECTION_HIT_LIMIT: "You've hit the {numReferrals} friend limit for this offer.",
                 EMOJI_CATEGORY_TOP_GUILD_EMOJI: "Top Emoji in !!{guildName}!!",
                 TOP_GUILD_EMOJI_BADGE: "Popular",
                 NEWLY_ADDED_GUILD_EMOJI_BADGE: "Newly Added",
@@ -86718,8 +86721,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286759", "286759"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286759")), t = 0), t
+                let t = parseInt((e = "286762", "286762"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286762")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111225,8 +111228,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286759",
-                    versionHash: "ae29a341a22fb8d6ae05fccd1d06a46146ccba3b"
+                    buildNumber: "286762",
+                    versionHash: "875687479bd8f82babffe2dd97df19c92a359cd0"
                 }
             }
             n.r(t), n.d(t, {
@@ -164701,8 +164704,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713815357797",
-                                    build_number: "286759"
+                                    built_at: "1713816339821",
+                                    build_number: "286762"
                                 }
                             },
                             retries: 1
@@ -242158,7 +242161,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ae29a341a22fb8d6ae05fccd1d06a46146ccba3b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "875687479bd8f82babffe2dd97df19c92a359cd0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270682,7 +270685,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286759"
+                                build_number: "286762"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -277867,7 +277870,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286759", "286759"), 10);
+                let s = parseInt((n = "286762", "286762"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -305292,4 +305295,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.02bf911caa93ef73b396.js.map
+//# sourceMappingURL=35705.a4cb6f83b057e4bc243f.js.map
