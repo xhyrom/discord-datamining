@@ -22509,7 +22509,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .avatarPositionBiteSize_edf897 {
-    top: 66px
+    top: 76px
 }
 
 .avatarHoverTarget__9b4a9 {
@@ -23512,6 +23512,46 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     gap: 1px
 }
 
+.button_c03db1 {
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
+.compactButton__87ab2 {
+    width: var(--custom-button-button-md-height);
+    height: var(--custom-button-button-md-height)
+}
+
+.compactButtonInner_cc8cc8 {
+    min-width: 16px;
+    min-height: 16px;
+    max-width: 16px;
+    max-height: 16px
+}
+
+.custom-profile-theme .color__75c7b {
+    background-color: var(--profile-gradient-button-color);
+    color: var(--white-500);
+    transition: opacity.2s ease-in-out
+}
+
+.custom-profile-theme .color__75c7b:hover {
+    background-color: var(--profile-gradient-button-color);
+    opacity: .8
+}
+
+.custom-profile-theme .color__75c7b:active {
+    background-color: var(--profile-gradient-button-color);
+    opacity: .9
+}
+
+.custom-profile-theme .color__75c7b:disabled,
+.custom-profile-theme .color__75c7b[aria-disabled=true] {
+    background-color: var(--profile-gradient-button-color);
+    opacity: .5
+}
+
 .seeMoreText_ff3bd6 {
     width: -moz-fit-content;
     width: fit-content
@@ -23639,6 +23679,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 .statusBubble__1a4c3 {
     position: relative;
     background-color: var(--bg-surface-raised);
+    box-shadow: var(--shadow-low);
     word-wrap: break-word;
     max-width: 220px;
     -webkit-line-clamp: 3;
@@ -23683,7 +23724,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 .statusBubbleOutline__07846 {
     position: relative;
     background-color: var(--bg-surface-raised);
-    border: 1px solid var(--border-faint);
+    box-shadow: var(--shadow-low);
     width: -moz-fit-content;
     width: fit-content;
     max-width: 220px
@@ -23696,10 +23737,10 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     left: 10px;
     display: block;
     background-color: var(--bg-surface-raised);
+    box-shadow: var(--shadow-low);
     border-radius: 50%;
     width: 20px;
-    height: 20px;
-    border: 1px solid var(--border-faint)
+    height: 20px
 }
 
 .statusBubbleOutline__07846:after {
@@ -23709,10 +23750,17 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     left: 1px;
     display: block;
     background-color: var(--bg-surface-raised);
+    box-shadow: var(--shadow-low);
     border-radius: 50%;
     width: 11px;
-    height: 11px;
-    border: 1px solid var(--border-faint)
+    height: 11px
+}
+
+.custom-profile-theme .statusBubble__1a4c3,
+.custom-profile-theme .statusBubbleOutline__07846,
+.custom-profile-theme .statusBubbleOutline__07846:before,
+.custom-profile-theme .statusBubbleOutline__07846:after {
+    background-color: var(--bg-surface-overlay)
 }
 
 .statusText__32d26 {
@@ -129556,46 +129604,6 @@ div.nagbar_c731ff {
     visibility: hidden
 }
 
-.button_c03db1 {
-    display: flex;
-    align-items: center;
-    gap: 4px
-}
-
-.compactButton__87ab2 {
-    width: var(--custom-button-button-md-height);
-    height: var(--custom-button-button-md-height)
-}
-
-.compactButtonInner_cc8cc8 {
-    min-width: 16px;
-    min-height: 16px;
-    max-width: 16px;
-    max-height: 16px
-}
-
-.custom-profile-theme .color__75c7b {
-    background-color: var(--profile-gradient-button-color);
-    color: var(--white-500);
-    transition: opacity.2s ease-in-out
-}
-
-.custom-profile-theme .color__75c7b:hover {
-    background-color: var(--profile-gradient-button-color);
-    opacity: .8
-}
-
-.custom-profile-theme .color__75c7b:active {
-    background-color: var(--profile-gradient-button-color);
-    opacity: .9
-}
-
-.custom-profile-theme .color__75c7b:disabled,
-.custom-profile-theme .color__75c7b[aria-disabled=true] {
-    background-color: var(--profile-gradient-button-color);
-    opacity: .5
-}
-
 .inner__14185 {
     position: relative;
     padding: 20px 16px 0
@@ -133908,7 +133916,7 @@ code {
     --custom-user-banner-banner-height-profile: 106px;
     --custom-user-banner-banner-height-panel: 120px;
     --custom-user-banner-cancel-modal-height: 42px;
-    --custom-user-banner-height-bite-size: 110px;
+    --custom-user-banner-height-bite-size: 120px;
     --custom-user-banner-height-full-size: 210px;
     --custom-user-profile-themed-container-user-popout-width: 340px;
     --custom-user-profile-themed-container-user-profile-modal-width: 600px;
@@ -134594,4 +134602,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.6aafc4b40a6b65758d60.css.map*/
+/*# sourceMappingURL=99387.2772ad2f7f2d443c2da3.css.map*/
