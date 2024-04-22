@@ -23617,13 +23617,17 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .seeMoreText_ff3bd6 {
     width: -moz-fit-content;
-    width: fit-content
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4px
 }
 
 .seeMoreText_ff3bd6:hover {
     -webkit-text-decoration: underline;
     text-decoration: underline;
-    color: var(--interactive-active);
+    color: var(--text-normal);
     cursor: pointer
 }
 
@@ -53222,7 +53226,7 @@ html .progress__00e29 {
     margin-top: 16px;
     font-weight: 600;
     color: var(--interactive-active);
-    font-size: 1.5rem
+    font-size: 24px
 }
 
 .tierPeriod_f6d7e1 {
@@ -134792,4 +134796,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.816aaaa453f17a64edf7.css.map*/
+/*# sourceMappingURL=99387.6a142bb9cbeaf0e57992.css.map*/
