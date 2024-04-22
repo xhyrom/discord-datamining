@@ -84891,11 +84891,6 @@ input::-webkit-inner-spin-button {
     left: 0
 }
 
-.baseProgressCircle_c68b2b {
-    fill: transparent;
-    stroke: var(--background-primary)
-}
-
 .theme-light .baseProgressCircle_c68b2b {
     stroke: var(--white-500)
 }
@@ -84904,30 +84899,30 @@ input::-webkit-inner-spin-button {
     overflow: visible
 }
 
-.nitroGemAnimation__3660d {
-    animation: gemGlow__784ce 5s infinite ease-in-out
+.nitroGemAnimation_fe0ce5 {
+    animation: gemGlow_e7051d 5s infinite ease-in-out
 }
 
-.nitroGemContainer__20d11 {
+.nitroGemContainer__65e04 {
     overflow: visible
 }
 
-.gemBackgroundFill_c2a679 {
+.gemBackgroundFill__12cf5 {
     fill: var(--background-primary)
 }
 
-.theme-light .gemBackgroundFill_c2a679 {
+.theme-light .gemBackgroundFill__12cf5 {
     fill: var(--white-500)
 }
 
-.gemProgressCircle__0d832 {
+.gemProgressCircle__4a3db {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px
 }
 
-@keyframes gemGlow__784ce {
+@keyframes gemGlow_e7051d {
 
     0%,
     50%,
@@ -84941,18 +84936,18 @@ input::-webkit-inner-spin-button {
     }
 }
 
-.activeProgressCircle__46a90 {
+.activeProgressCircle__8e494 {
     fill: transparent;
     transform: rotate(270deg);
     transform-origin: center
 }
 
-.activeProgressCircleAnimation__36591 {
-    animation: glow_c871dc 5s infinite ease-in-out, pulse_c5fe4d 5s infinite ease-in-out;
+.activeProgressCircleAnimation__30698 {
+    animation: glow_b03664 5s infinite ease-in-out, pulse__17942 5s infinite ease-in-out;
     transition: stroke-dashoffset.5s ease-out
 }
 
-@keyframes glow_c871dc {
+@keyframes glow_b03664 {
 
     0%,
     50%,
@@ -84966,7 +84961,7 @@ input::-webkit-inner-spin-button {
     }
 }
 
-@keyframes pulse_c5fe4d {
+@keyframes pulse__17942 {
 
     0%,
     50%,
@@ -134807,4 +134802,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.e7a5ab670d24a522e08b.css.map*/
+/*# sourceMappingURL=99387.253c7148773d0f9992e5.css.map*/
