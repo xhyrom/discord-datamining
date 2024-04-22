@@ -36682,7 +36682,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286876", ", Version Hash: ").concat("66e5c9ffb1967699de851490c93de14a9ea7896d")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286881", ", Version Hash: ").concat("02d630ece7060e137ade67ce71c328671e354993")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86725,8 +86725,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286876", "286876"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286876")), t = 0), t
+                let t = parseInt((e = "286881", "286881"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286881")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111232,8 +111232,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286876",
-                    versionHash: "66e5c9ffb1967699de851490c93de14a9ea7896d"
+                    buildNumber: "286881",
+                    versionHash: "02d630ece7060e137ade67ce71c328671e354993"
                 }
             }
             n.r(t), n.d(t, {
@@ -164708,8 +164708,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713827295532",
-                                    build_number: "286876"
+                                    built_at: "1713828130609",
+                                    build_number: "286881"
                                 }
                             },
                             retries: 1
@@ -172303,6 +172303,35 @@
                 null != n && !n.closed && (i.isPlatformEmbedded ? r.default.focus(e, t) : n.focus())
             }
         },
+        736871: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            let i = (0, n("818083").createExperiment)({
+                kind: "user",
+                id: "2024-04_hd_streaming_parent",
+                label: "HD Streaming Parent",
+                defaultConfig: {
+                    inPerksDemosExperiment: !1,
+                    inCallExperienceExperiment: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "In Experiment 1",
+                    config: {
+                        inPerksDemosExperiment: !0,
+                        inCallExperienceExperiment: !1
+                    }
+                }, {
+                    id: 2,
+                    label: "In Experiment 2",
+                    config: {
+                        inPerksDemosExperiment: !1,
+                        inCallExperienceExperiment: !0
+                    }
+                }]
+            });
+            t.default = i
+        },
         519143: function(e, t, n) {
             "use strict";
             n.r(t), n("47120");
@@ -172668,38 +172697,45 @@
             "use strict";
             n.r(t), n.d(t, {
                 ineligibleQualitySetting: function() {
-                    return c
+                    return E
                 },
                 shouldActivatePerkDemo: function() {
-                    return _
+                    return c
                 },
                 shouldFetchPerksDemos: function() {
-                    return d
+                    return _
                 }
             });
             var i = n("594174"),
                 r = n("74538"),
-                s = n("351742"),
-                a = n("114064"),
-                o = n("474936"),
-                l = n("37113");
+                s = n("736871"),
+                a = n("351742"),
+                o = n("114064"),
+                l = n("474936"),
+                u = n("37113");
 
-            function u() {
+            function d() {
                 let e = i.default.getCurrentUser();
-                return null != e && !(0, r.isPremium)(e, o.PremiumTypes.TIER_1)
+                return null != e && !(0, r.isPremium)(e, l.PremiumTypes.TIER_1)
             }
-            let d = () => {
+            let _ = () => {
                     let {
-                        enabled: e
+                        inPerksDemosExperiment: e
                     } = s.default.getCurrentConfig({
                         location: "shouldFetchPerksDemos"
                     }, {
                         autoTrackExposure: !1
+                    }), {
+                        enabled: t
+                    } = a.default.getCurrentConfig({
+                        location: "shouldFetchPerksDemos"
+                    }, {
+                        autoTrackExposure: !1
                     });
-                    return u() && a.default.shouldFetch() && e
+                    return d() && o.default.shouldFetch() && e && t
                 },
-                _ = e => u() && a.default.shouldActivate(e),
-                c = (e, t) => e === l.ApplicationStreamResolutions.RESOLUTION_720 && t !== l.ApplicationStreamFPS.FPS_60
+                c = e => d() && o.default.shouldActivate(e),
+                E = (e, t) => e === u.ApplicationStreamResolutions.RESOLUTION_720 && t !== u.ApplicationStreamFPS.FPS_60
         },
         474936: function(e, t, n) {
             "use strict";
@@ -242225,7 +242261,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "66e5c9ffb1967699de851490c93de14a9ea7896d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "02d630ece7060e137ade67ce71c328671e354993"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270749,7 +270785,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286876"
+                                build_number: "286881"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -277934,7 +277970,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286876", "286876"), 10);
+                let s = parseInt((n = "286881", "286881"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -305359,4 +305395,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.a14378a9610aa656adde.js.map
+//# sourceMappingURL=35705.7b8b84ef139818d4607b.js.map
