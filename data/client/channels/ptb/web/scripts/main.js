@@ -36682,7 +36682,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286814", ", Version Hash: ").concat("df7dcc79a9b1c23e600abd3e85f3c2dacbf8bc3e")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286824", ", Version Hash: ").concat("63c20dffbeb9a09c0c03c609f44de6a5a8c49847")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -47553,7 +47553,7 @@
                 USER_PROFILE_MESSAGE: "Message",
                 USER_PROFILE_AUDIO: "Call",
                 USER_PROFILE_VIDEO: "Video",
-                USER_PROFILE_BIO_SEE_MORE: "see more",
+                USER_PROFILE_VIEW_FULL_BIO: "View Full Bio",
                 USER_PROFILE_ADD_ROLE: "Add Role",
                 USER_PROFILE_ADD_FRIEND: "Add Friend",
                 USER_PROFILE_PENDING: "Pending",
@@ -86724,8 +86724,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286814", "286814"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286814")), t = 0), t
+                let t = parseInt((e = "286824", "286824"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286824")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111231,8 +111231,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286814",
-                    versionHash: "df7dcc79a9b1c23e600abd3e85f3c2dacbf8bc3e"
+                    buildNumber: "286824",
+                    versionHash: "63c20dffbeb9a09c0c03c609f44de6a5a8c49847"
                 }
             }
             n.r(t), n.d(t, {
@@ -164707,8 +164707,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713821780678",
-                                    build_number: "286814"
+                                    built_at: "1713822365753",
+                                    build_number: "286824"
                                 }
                             },
                             retries: 1
@@ -207316,55 +207316,60 @@
                 r = n("470079"),
                 s = n("481060"),
                 a = n("906732"),
-                o = n("785717"),
-                l = n("588822"),
-                u = n("171368"),
-                d = n("981631"),
-                _ = n("689938"),
-                c = n("772723");
+                o = n("692437"),
+                l = n("785717"),
+                u = n("588822"),
+                d = n("171368"),
+                _ = n("981631"),
+                c = n("689938"),
+                E = n("772723");
             t.default = r.memo(function(e) {
                 let {
                     user: t,
                     onClose: n,
-                    bio: E,
-                    hidePersonalInformation: I
+                    bio: I,
+                    hidePersonalInformation: T
                 } = e, {
-                    guildId: T,
-                    channelId: f,
-                    messageId: S,
-                    roleId: h
-                } = (0, o.useUserProfileAnalyticsContext)(), {
-                    analyticsLocations: A
-                } = (0, a.default)(), [m, N] = r.useState(!1);
-                return I || null == E || "" === E ? null : (0, i.jsxs)("div", {
+                    guildId: f,
+                    channelId: S,
+                    messageId: h,
+                    roleId: A
+                } = (0, l.useUserProfileAnalyticsContext)(), {
+                    analyticsLocations: m
+                } = (0, a.default)(), [N, p] = r.useState(!1);
+                return T || null == I || "" === I ? null : (0, i.jsxs)("div", {
                     children: [(0, i.jsx)("div", {
                         ref: e => {
-                            null != e && N(e.scrollHeight - e.clientHeight > 1)
+                            null != e && p(e.scrollHeight - e.clientHeight > 1)
                         },
-                        className: c.descriptionClamp,
-                        children: (0, i.jsx)(l.default, {
-                            userBio: E,
+                        className: E.descriptionClamp,
+                        children: (0, i.jsx)(u.default, {
+                            userBio: I,
                             setLineClamp: !1
                         })
-                    }), m && (0, i.jsx)(s.Clickable, {
+                    }), N && (0, i.jsxs)(s.Clickable, {
                         onClick: () => {
-                            null == n || n(), (0, u.openUserProfileModal)({
+                            null == n || n(), (0, d.openUserProfileModal)({
                                 userId: t.id,
-                                guildId: null != T ? T : void 0,
-                                channelId: null != f ? f : void 0,
-                                messageId: null != S ? S : void 0,
-                                roleId: null != h ? h : void 0,
+                                guildId: null != f ? f : void 0,
+                                channelId: null != S ? S : void 0,
+                                messageId: null != h ? h : void 0,
+                                roleId: null != A ? A : void 0,
                                 analyticsLocation: {
-                                    section: d.AnalyticsSections.BITE_SIZE_PROFILE_POPOUT
+                                    section: _.AnalyticsSections.BITE_SIZE_PROFILE_POPOUT
                                 },
-                                sourceAnalyticsLocations: A
+                                sourceAnalyticsLocations: m
                             })
                         },
-                        className: c.seeMoreText,
-                        children: (0, i.jsx)(s.Text, {
-                            variant: "text-sm/normal",
-                            children: _.default.Messages.USER_PROFILE_BIO_SEE_MORE
-                        })
+                        className: E.seeMoreText,
+                        children: [(0, i.jsx)(s.Text, {
+                            variant: "text-xs/normal",
+                            children: c.default.Messages.USER_PROFILE_VIEW_FULL_BIO
+                        }), (0, i.jsx)(o.default, {
+                            width: 16,
+                            height: 16,
+                            color: "var(--interactive-normal)"
+                        })]
                     })]
                 })
             })
@@ -242219,7 +242224,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "df7dcc79a9b1c23e600abd3e85f3c2dacbf8bc3e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "63c20dffbeb9a09c0c03c609f44de6a5a8c49847"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270743,7 +270748,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286814"
+                                build_number: "286824"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -277928,7 +277933,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286814", "286814"), 10);
+                let s = parseInt((n = "286824", "286824"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -305353,4 +305358,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.98a75dadc4f6f9001f3c.js.map
+//# sourceMappingURL=35705.1875c04fa1caaaca524d.js.map
