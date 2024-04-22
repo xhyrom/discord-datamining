@@ -538,12 +538,7 @@
 }
 
 .modalHeader__4621b {
-    justify-content: center;
     margin-top: var(--spacing-16)
-}
-
-.modalFooter__45970 {
-    justify-content: space-between
 }
 
 .footerLink__08439 {
@@ -9615,7 +9610,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 .authBox__6f336 {
     width: 480px;
     padding: var(--custom-auth-box-auth-box-padding);
-    font-size: 1.125rem;
+    font-size: 18px;
     box-shadow: var(--legacy-elevation-high);
     border-radius: 5px;
     box-sizing: border-box;
@@ -9759,14 +9754,14 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 }
 
 .pillMessage_dbb0d4 {
-    font-size: .875rem;
+    font-size: 14px;
     white-space: nowrap;
     color: var(--header-secondary)
 }
 
 @media(min-height:640px) {
     .pillMessage_dbb0d4 {
-        font-size: 1rem
+        font-size: 16px
     }
 }
 
@@ -9829,8 +9824,8 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 }
 
 .button__5573c {
-    font-size: 1rem;
-    line-height: 1.5rem
+    font-size: 16px;
+    line-height: 24px
 }
 
 .linkButton__8dff8 {
@@ -9868,7 +9863,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .description__8735f {
     margin-top: 8px;
-    font-size: .75rem
+    font-size: 12px
 }
 
 .logo__7f9c8 {
@@ -28170,4 +28165,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.1e45ca19e896ae969cad.css.map*/
+/*# sourceMappingURL=49237.e5f32e8a30cce6512f0e.css.map*/
