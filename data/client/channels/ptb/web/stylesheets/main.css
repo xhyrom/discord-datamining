@@ -55870,7 +55870,6 @@ html .progress__00e29 {
 }
 
 .userSection__9a4c1 {
-    gap: 6px;
     display: flex;
     align-items: center
 }
@@ -55926,6 +55925,26 @@ html .progress__00e29 {
 .container__8d997 .badgeContainer__5607c {
     margin-top: 2px;
     margin-bottom: -2px
+}
+
+.facePile__28ee7 {
+    display: flex;
+    margin-right: 6px
+}
+
+.facePileItem__560b8:not(:first-child) {
+    margin-left: -3px
+}
+
+.additionalParticipantBadge__23702 {
+    padding: 2.25px 4.4px 2.5px 4.2px;
+    background-color: var(--background-accent);
+    border-radius: 8px;
+    margin-left: 4px
+}
+
+.additionalParticipantBadgeText__1e49a {
+    line-height: 10px
 }
 
 .popout_cfa8bc {
@@ -134602,4 +134621,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2772ad2f7f2d443c2da3.css.map*/
+/*# sourceMappingURL=99387.c17c512bb141334ece9c.css.map*/
