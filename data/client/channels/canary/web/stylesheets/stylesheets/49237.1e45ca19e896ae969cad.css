@@ -9615,7 +9615,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 .authBox__6f336 {
     width: 480px;
     padding: var(--custom-auth-box-auth-box-padding);
-    font-size: 18px;
+    font-size: 1.125rem;
     box-shadow: var(--legacy-elevation-high);
     border-radius: 5px;
     box-sizing: border-box;
@@ -9759,14 +9759,14 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 }
 
 .pillMessage_dbb0d4 {
-    font-size: 14px;
+    font-size: .875rem;
     white-space: nowrap;
     color: var(--header-secondary)
 }
 
 @media(min-height:640px) {
     .pillMessage_dbb0d4 {
-        font-size: 16px
+        font-size: 1rem
     }
 }
 
@@ -9829,8 +9829,8 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 }
 
 .button__5573c {
-    font-size: 16px;
-    line-height: 24px
+    font-size: 1rem;
+    line-height: 1.5rem
 }
 
 .linkButton__8dff8 {
@@ -9868,7 +9868,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .description__8735f {
     margin-top: 8px;
-    font-size: 12px
+    font-size: .75rem
 }
 
 .logo__7f9c8 {
@@ -28170,4 +28170,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.3aac7b4e4a6663652bbf.css.map*/
+/*# sourceMappingURL=49237.1e45ca19e896ae969cad.css.map*/
