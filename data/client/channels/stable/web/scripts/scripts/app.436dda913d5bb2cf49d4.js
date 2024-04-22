@@ -3642,8 +3642,8 @@
             "use strict";
             e.exports = {
                 backButton: "backButton__91fb9",
-                banner: "banner__36618",
                 footer: "footer_cf774b",
+                legalText: "legalText__3817f",
                 productList: "productList_b12dd0",
                 productSection: "productSection_d2504b",
                 subDetailsModal: "subDetailsModal_c2c023",
@@ -3653,6 +3653,7 @@
         1931: function(e) {
             "use strict";
             e.exports = {
+                containerScrollGradient: "containerScrollGradient__1e7d9",
                 modal: "modal_af101e",
                 modalCloseBtn: "modalCloseBtn_e2b38c",
                 modalHeader: "modalHeader__4be2e",
@@ -6882,13 +6883,13 @@
                 cardFooterGameImg: "cardFooterGameImg_a0eeb2",
                 cardFooterGames: "cardFooterGames_aebfa9",
                 cardFooterInfo: "cardFooterInfo__5a461",
-                cardFooterLanguage: "cardFooterLanguage_e24d40",
-                cardFooterLanguageIcon: "cardFooterLanguageIcon__33333",
-                cardFooterLocation: "cardFooterLocation_f8cc19",
-                cardFooterLocationIcon: "cardFooterLocationIcon__2e33a",
+                cardFooterMembers: "cardFooterMembers__5eb8a",
+                cardFooterMembersIcon: "cardFooterMembersIcon__1c10d",
                 cardNameAndTagWrapper: "cardNameAndTagWrapper_d87ceb",
                 clanBadge: "clanBadge__4c045",
                 clanIcon: "clanIcon_d70524",
+                clanInfoItem: "clanInfoItem__65fdd",
+                clanInfoRow: "clanInfoRow__15925",
                 clanTagChiplet: "clanTagChiplet__7f357",
                 clanTagChipletWrapper: "clanTagChipletWrapper__734a9",
                 clickableCard: "clickableCard__1c1e9",
@@ -6901,7 +6902,9 @@
                 primetimeContainer: "primetimeContainer__2c3ce",
                 primetimeIcon: "primetimeIcon_c4d213",
                 trait: "trait_dfdb34",
-                traitsContainer: "traitsContainer__23f4b"
+                traitsContainer: "traitsContainer__23f4b",
+                wildcards: "wildcards__62f49",
+                wildcardsOverride: "wildcardsOverride__26026"
             }
         },
         825640: function(e) {
@@ -20337,6 +20340,9 @@
         429939: function(e) {
             "use strict";
             e.exports = {
+                annualDiscountValues: "annualDiscountValues__11c76",
+                annualPlanDiscountPriceSection: "annualPlanDiscountPriceSection__1c366",
+                annualPlanOptionDiscount: "annualPlanOptionDiscount__142c5",
                 divider: "divider__9ba6d",
                 dividerExtended: "dividerExtended__0bd82",
                 entitlementDiscountRow: "entitlementDiscountRow__28d44 rowBase_f0c7a6",
@@ -21617,15 +21623,9 @@
                 allReferralsSentBorder: "allReferralsSentBorder__67d29",
                 avatarProgressBarUnitConnectorBase: "avatarProgressBarUnitConnectorBase_a2acd4",
                 avatarProgressBarUnitConnectorContainer: "avatarProgressBarUnitConnectorContainer__9f6b8",
-                collapseToggle: "collapseToggle__4309d",
-                collapseToggleInSettings: "collapseToggleInSettings__13187",
-                collapsedGiftButton: "collapsedGiftButton__42821",
-                collapsedProgressBarButtons: "collapsedProgressBarButtons__991b4",
-                collapsedProgressBarContainer: "collapsedProgressBarContainer__0bf29",
-                collapsedProgressBarContainerSettingsPage: "collapsedProgressBarContainerSettingsPage_ca1fe5",
-                collapsedProgressBarIconContainer: "collapsedProgressBarIconContainer__9c506",
-                collapsedShareReferralButton: "collapsedShareReferralButton__99ce0",
                 expandedProgressBarButtonContainer: "expandedProgressBarButtonContainer__0095b",
+                expandedProgressBarButtonContainerLayout: "expandedProgressBarButtonContainerLayout_e10665",
+                expandedProgressBarButtonContainerMinLayout: "expandedProgressBarButtonContainerMinLayout_b9b54b",
                 expandedProgressBarContainer: "expandedProgressBarContainer_c2b92e",
                 expandedProgressBarContainerSettingsPage: "expandedProgressBarContainerSettingsPage_ef61f6",
                 expandedProgressBarContainerVariant1: "expandedProgressBarContainerVariant1_ea5ac3",
@@ -21634,6 +21634,8 @@
                 expandedProgressBarContentVariant1: "expandedProgressBarContentVariant1__37efa",
                 expandedProgressBarContentVariant2: "expandedProgressBarContentVariant2_e76181",
                 expandedProgressBarGiftingCTA: "expandedProgressBarGiftingCTA_a56dee",
+                expandedProgressBarGiftingCTALayout: "expandedProgressBarGiftingCTALayout__376c3",
+                expandedProgressBarGiftingCTAMinLayout: "expandedProgressBarGiftingCTAMinLayout_dbec98",
                 expandedProgressBarHeader: "expandedProgressBarHeader__27829",
                 expandedProgressBarSelectFriendsCTA: "expandedProgressBarSelectFriendsCTA_e83ee0",
                 expandedProgressBarSelectFriendsCTAInner: "expandedProgressBarSelectFriendsCTAInner__2de5c",
@@ -24985,7 +24987,8 @@
             e.exports = {
                 discordIcon: "discordIcon__1e1be",
                 divider: "divider__979dc",
-                memberSinceContainer: "memberSinceContainer__16630"
+                memberSince: "memberSince__2eba7",
+                memberSinceWrapper: "memberSinceWrapper__03059"
             }
         },
         222477: function(e) {
@@ -25034,6 +25037,7 @@
             e.exports = {
                 container: "container_df7ce7",
                 nickname: "nickname__745d1",
+                nicknameIcon: "nicknameIcon__13099",
                 tags: "tags__18aee",
                 userTag: "userTag_eb9b2a",
                 userTagDiscriminator: "userTagDiscriminator_dd0ae5",
@@ -25252,10 +25256,31 @@
                 statusBubblePosition: "statusBubblePosition_e98f49"
             }
         },
+        516264: function(e) {
+            "use strict";
+            e.exports = {
+                connections: "connections__84e31",
+                note: "note_a92d50",
+                recentGames: "recentGames_c8fe3b",
+                scroller: "scroller__2f4b4",
+                section: "section_d2e3ea"
+            }
+        },
+        198515: function(e) {
+            "use strict";
+            e.exports = {
+                addButton: "addButton_bfade1 pill_b76003",
+                addButtonIcon: "addButtonIcon__3b4b8",
+                pill: "pill_b76003",
+                role: "role__5eb73 pill_b76003",
+                root: "root__12006"
+            }
+        },
         708432: function(e) {
             "use strict";
             e.exports = {
                 container: "container__8361e",
+                infoTab: "infoTab__29f80",
                 tabBar: "tabBar__6db53",
                 tabBarItem: "tabBarItem__7bc74"
             }
@@ -25428,11 +25453,11 @@
                 addButton: "addButton_d7b605",
                 addButtonIcon: "addButtonIcon__04434",
                 container: "container__1f16a",
-                overflowButton: "overflowButton_d39c60 pillBackground__5eb2d",
-                pillBackground: "pillBackground__5eb2d",
-                role: "role__17a96 pillBackground__5eb2d",
+                hiddenTooltip: "hiddenTooltip__10c79",
+                overflowButton: "overflowButton_d39c60 pill__35c94",
+                pill: "pill__35c94",
+                role: "role__17a96 pill__35c94",
                 rolesHeader: "rolesHeader_e507a4",
-                rolesHeaderText: "rolesHeaderText__51e60",
                 root: "root_ae2ef3"
             }
         },
