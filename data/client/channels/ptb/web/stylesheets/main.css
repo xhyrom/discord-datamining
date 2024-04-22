@@ -2363,6 +2363,18 @@
     margin-left: 50px
 }
 
+.labelContainer_b37d4d {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+.playButton_a7f035 {
+    width: 20px;
+    height: 20px
+}
+
 .widthForAddPack__6a170 {
     width: 600px
 }
@@ -8763,7 +8775,7 @@ html .invoiceCancelRow_aa7946 {
     padding: 8px;
     border-radius: 8px;
     overflow: hidden;
-    background-color: var(--bg-surface-overlay)
+    background-color: var(--card-secondary-bg)
 }
 
 .icon_c1e831 {
@@ -53806,8 +53818,8 @@ html .progress__00e29 {
 .errorState_c6cca2 {
     padding: 20px 20px 40px;
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center
 }
 
@@ -53869,7 +53881,7 @@ html .progress__00e29 {
 
 .confirmChannelName_a42e11 {
     font-weight: 500;
-    font-size: .875rem;
+    font-size: 14px;
     margin-left: 8px;
     color: var(--header-primary)
 }
@@ -53877,7 +53889,7 @@ html .progress__00e29 {
 .lastActiveTimestamp_d49b9c {
     margin-left: 8px;
     color: var(--text-muted);
-    font-size: .75rem;
+    font-size: 12px;
     margin-top: 2px
 }
 
@@ -83975,6 +83987,41 @@ input::-webkit-inner-spin-button {
     margin-bottom: 24px
 }
 
+.headerContainerGift_d317cf {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background-image: linear-gradient(var(--modal-background), var(--modal-background));
+    background-size: 100%calc(100% - 20px)
+}
+
+.closeButtonGift__62cda {
+    margin-left: auto
+}
+
+.reviewContainer__6ae3a {
+    color: var(--primary-100);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 8px
+}
+
+.legalTerms_a0b526 p {
+    color: var(--channels-default);
+    font-size: 12px;
+    margin: 0
+}
+
+.buyButton__38cc8 {
+    margin-top: auto
+}
+
+.reviewButton__0cd54 {
+    margin-bottom: -8px
+}
+
 .countDownWrapper__60b05 {
     display: flex;
     align-items: center;
@@ -84015,19 +84062,6 @@ input::-webkit-inner-spin-button {
 .countdown_c6377a {
     font-family: inherit;
     color: inherit
-}
-
-.headerContainerGift_d317cf {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 16px;
-    background-image: linear-gradient(var(--modal-background), var(--modal-background));
-    background-size: 100%calc(100% - 20px)
-}
-
-.closeButtonGift__62cda {
-    margin-left: auto
 }
 
 .previewContainer__73054 {
@@ -116903,28 +116937,6 @@ html .invoiceCancelRow__6ff3e {
     opacity: 0
 }
 
-.reviewContainer__6ae3a {
-    color: var(--primary-100);
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 8px
-}
-
-.legalTerms_a0b526 p {
-    color: var(--channels-default);
-    font-size: 12px;
-    margin: 0
-}
-
-.buyButton__38cc8 {
-    margin-top: auto
-}
-
-.reviewButton__0cd54 {
-    margin-bottom: -8px
-}
-
 .container__74bbc {
     position: relative;
     display: flex;
@@ -120567,8 +120579,7 @@ html .invoiceCancelRow__6ff3e {
 }
 
 .searchbar_f3ff3c {
-    margin: 0 16px 16px;
-    height: 32px
+    margin: 0 16px 16px
 }
 
 .list_d24b0a {
@@ -134796,4 +134807,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2248f5b056104e6eb511.css.map*/
+/*# sourceMappingURL=99387.e7a5ab670d24a522e08b.css.map*/
