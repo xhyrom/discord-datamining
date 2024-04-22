@@ -36682,7 +36682,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286824", ", Version Hash: ").concat("63c20dffbeb9a09c0c03c609f44de6a5a8c49847")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286831", ", Version Hash: ").concat("be92abeeb8311228d146c6a7617adfc66cd5f6be")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -40117,7 +40117,7 @@
                 INTEGRATIONS_APPLICATION_SECTION: "Bots and Apps",
                 INTEGRATIONS_APPLICATION_BUTTON: "Manage",
                 INTEGRATIONS_APPLICATION_BOT: "Bot",
-                INTEGRATIONS_APPLICATION_VERIFIED_BOT: "Verified Bot",
+                INTEGRATIONS_APPLICATION_VERIFIED_BOT: "Verified App",
                 INTEGRATIONS_APPLICATION_BOT_NAME: "!!{user}!!",
                 INTEGRATIONS_APPLICATION_NO_BOT: "This application does not have a bot in this server.",
                 INTEGRATIONS_APPLICATION_REMOVE: "Remove App",
@@ -42404,7 +42404,7 @@
                 NO_MUTUAL_GUILDS: "No servers in common",
                 NO_MUTUAL_FRIENDS: "No friends in common",
                 SHARING_SCREEN: "Sharing their screen",
-                VERIFIED_BOT_TOOLTIP: "Verified Bot",
+                VERIFIED_BOT_TOOLTIP: "Verified App",
                 USER_PROFILE_ABOUT_ME: "About Me",
                 USER_PROFILE_LOAD_ERROR: "Unable to load profile banner, badges, and about me.",
                 USER_PROFILE_ACTION_MENU_A11Y_LABEL: "Open User Action menu",
@@ -86724,8 +86724,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286824", "286824"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286824")), t = 0), t
+                let t = parseInt((e = "286831", "286831"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286831")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111231,8 +111231,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286824",
-                    versionHash: "63c20dffbeb9a09c0c03c609f44de6a5a8c49847"
+                    buildNumber: "286831",
+                    versionHash: "be92abeeb8311228d146c6a7617adfc66cd5f6be"
                 }
             }
             n.r(t), n.d(t, {
@@ -164707,8 +164707,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713822365753",
-                                    build_number: "286824"
+                                    built_at: "1713822901883",
+                                    build_number: "286831"
                                 }
                             },
                             retries: 1
@@ -242224,7 +242224,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "63c20dffbeb9a09c0c03c609f44de6a5a8c49847"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "be92abeeb8311228d146c6a7617adfc66cd5f6be"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270748,7 +270748,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286824"
+                                build_number: "286831"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -277933,7 +277933,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286824", "286824"), 10);
+                let s = parseInt((n = "286831", "286831"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -305358,4 +305358,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.1875c04fa1caaaca524d.js.map
+//# sourceMappingURL=35705.15f0d544040109674b5f.js.map
