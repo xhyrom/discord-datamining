@@ -25509,6 +25509,12 @@
             var i = n("632140");
             n.es(i, t)
         },
+        486512: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("26468");
+            n.es(i, t)
+        },
         824385: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -36676,7 +36682,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286744", ", Version Hash: ").concat("e17b1b8f69ec62d445b47c42e0a236c911b72f17")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("286746", ", Version Hash: ").concat("10cb7b7e6c1c90d018404b27dbb5e34f80174478")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55593,7 +55599,10 @@
                 CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL: "Playstyle",
                 CLANS: "Clans",
                 CLAN_USER_PROFILE_PRIMARY_CLAN: "Primary Clan",
-                MESSAGE_ACTION_FORWARD: "Forward"
+                MESSAGE_ACTION_FORWARD: "Forward",
+                GUILD_POPOUT_ACTIVITY_EVENT_LOCATION: "Event in",
+                GUILD_POPOUT_ACTIVITY_EVENT_LOCATION_A11Y: "Event in {location}",
+                GUILD_POPOUT_ACTIVITY_EVENT_CREATED_BY: "Created by {creatorName}"
             })
         },
         539590: function(e) {
@@ -86706,8 +86715,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "286744", "286744"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286744")), t = 0), t
+                let t = parseInt((e = "286746", "286746"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("286746")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111213,8 +111222,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "286744",
-                    versionHash: "e17b1b8f69ec62d445b47c42e0a236c911b72f17"
+                    buildNumber: "286746",
+                    versionHash: "10cb7b7e6c1c90d018404b27dbb5e34f80174478"
                 }
             }
             n.r(t), n.d(t, {
@@ -145857,7 +145866,7 @@
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("11250"), n.e("95393"), n.e("14262"), n.e("22347"), n.e("66993")]).then(n.bind(n, "697849"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("48375"), n.e("95393"), n.e("14262"), n.e("22347"), n.e("66993")]).then(n.bind(n, "697849"));
                     return n => (0, i.jsx)(e, {
                         guildScheduledEventId: t,
                         parentGuildId: s,
@@ -146609,6 +146618,37 @@
             let a = s.Permissions.VIEW_CHANNEL,
                 o = i.combine(a, s.Permissions.CONNECT),
                 l = i.combine(a, r.MODERATE_STAGE_CHANNEL_PERMISSIONS)
+        },
+        725436: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                guildEventDetailsParser: function() {
+                    return l
+                }
+            });
+            var i = n("454585"),
+                r = n("551452"),
+                s = n("532901");
+            let a = {
+                    ...i.default.guildEventRules.link,
+                    react: (0, s.default)({
+                        enableBuildOverrides: !1,
+                        mustConfirmExternalLink: !0
+                    }).react
+                },
+                o = {
+                    ...i.default.guildEventRules.channelMention,
+                    react: (0, r.default)({
+                        enableBuildOverrides: !1,
+                        shouldCloseDefaultModals: !0,
+                        shouldStopPropagation: !0
+                    }).react
+                },
+                l = i.default.reactParserFor({
+                    ...i.default.guildEventRules,
+                    link: a,
+                    channelMention: o
+                })
         },
         894017: function(e, t, n) {
             "use strict";
@@ -147416,6 +147456,32 @@
                 } = {}) {
                     if (a(this, "intervalInMinutes", void 0), a(this, "labelFormat", void 0), a(this, "options", []), a(this, "_index", {}), e <= 0) throw Error("intervalInMinutes should be positive number, got ".concat(e));
                     this.intervalInMinutes = e, this.labelFormat = t, this._generateTimeOptions()
+                }
+            }
+        },
+        217804: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getLocationDataForEvent: function() {
+                    return a
+                }
+            });
+            var i = n("471445"),
+                r = n("393112"),
+                s = n("230900");
+
+            function a(e, t) {
+                let n, a;
+                if (null == e) return null;
+                let o = (0, s.getLocationFromEvent)(e);
+                if (null != o) n = r.default, a = o;
+                else {
+                    if (null == t) return null;
+                    n = (0, i.getSimpleChannelIconComponent)(t.type), a = t.name
+                }
+                return {
+                    IconComponent: n,
+                    locationName: a
                 }
             }
         },
@@ -149268,39 +149334,159 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return u
+                    return g
                 }
             });
-            var i = n("735250");
-            n("470079");
-            var r = n("481060"),
-                s = n("666188"),
-                a = n("940627"),
-                o = n("705600"),
-                l = n("764864");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("442837"),
+                a = n("481060"),
+                o = n("666188"),
+                l = n("15274"),
+                u = n("924301"),
+                d = n("725436"),
+                _ = n("217804"),
+                c = n("703656"),
+                E = n("592125"),
+                I = n("271383"),
+                T = n("594174"),
+                f = n("940627"),
+                S = n("705600"),
+                h = n("305878"),
+                A = n("806519"),
+                m = n("51144"),
+                N = n("765305"),
+                p = n("689938"),
+                O = n("764864");
 
-            function u(e) {
+            function R(e) {
+                var t;
+                let {
+                    event: n
+                } = e, o = (0, s.useStateFromStores)([E.default], () => E.default.getChannel(n.channel_id)), u = (0, s.useStateFromStores)([T.default], () => T.default.getUser(n.creator_id)), f = (0, s.useStateFromStores)([I.default], () => null != u ? I.default.getMember(n.guild_id, u.id) : null, [u, n.guild_id]), S = n.name, R = null !== (t = null == f ? void 0 : f.nick) && void 0 !== t ? t : m.default.getName(u), C = (0, _.getLocationDataForEvent)(n, o), g = null == C ? void 0 : C.IconComponent, L = null == C ? void 0 : C.locationName, D = r.useCallback(() => {
+                    (n.entity_type === N.GuildScheduledEventEntityTypes.STAGE_INSTANCE || n.entity_type === N.GuildScheduledEventEntityTypes.VOICE) && (0, c.transitionToGuild)(n.guild_id, n.channel_id), (0, l.openGuildEventDetails)({
+                        eventId: n.id
+                    })
+                }, [n]);
+                return (0, i.jsxs)("div", {
+                    className: O.activityCardContainer,
+                    children: [(0, i.jsxs)("div", {
+                        className: O.activityCardImageContainer,
+                        children: [(0, i.jsx)("svg", {
+                            width: 48,
+                            height: 48,
+                            viewBox: "0 0 48 48",
+                            "aria-hidden": !0,
+                            children: (0, i.jsx)("foreignObject", {
+                                x: 0,
+                                y: 0,
+                                width: 48,
+                                height: 48,
+                                mask: "url(#".concat(A.MaskIDs.GUILD_POPOUT_ACTIVITY_ICON, ")"),
+                                children: (0, i.jsx)("div", {
+                                    className: O.activityCardImage
+                                })
+                            })
+                        }), (0, i.jsx)("div", {
+                            className: O.mask,
+                            children: (0, i.jsx)("div", {
+                                className: O.activityCardActivityIcon,
+                                children: (0, i.jsx)(h.default, {
+                                    width: 12,
+                                    height: 12,
+                                    color: "white"
+                                })
+                            })
+                        })]
+                    }), (0, i.jsxs)("div", {
+                        className: O.activityCardDetailsContainer,
+                        children: [(0, i.jsx)(a.Text, {
+                            color: "text-muted",
+                            variant: "text-xs/medium",
+                            lineClamp: 1,
+                            children: p.default.Messages.GUILD_POPOUT_ACTIVITY_EVENT_CREATED_BY.format({
+                                creatorName: R
+                            })
+                        }), (0, i.jsx)(a.Heading, {
+                            color: "text-normal",
+                            variant: "heading-sm/semibold",
+                            lineClamp: 1,
+                            children: S
+                        }), (0, i.jsxs)("div", {
+                            className: O.location,
+                            "aria-label": "".concat(p.default.Messages.GUILD_POPOUT_ACTIVITY_EVENT_LOCATION_A11Y.format({
+                                location: L
+                            })),
+                            children: [(0, i.jsx)(a.Text, {
+                                variant: "text-xs/normal",
+                                color: "text-muted",
+                                children: p.default.Messages.GUILD_POPOUT_ACTIVITY_EVENT_LOCATION
+                            }), null != g && (0, i.jsx)(g, {
+                                width: 24,
+                                height: 24,
+                                className: O.channelIcon
+                            }), (0, i.jsx)(a.Text, {
+                                variant: "text-xs/normal",
+                                color: "text-muted",
+                                lineClamp: 1,
+                                children: (0, d.guildEventDetailsParser)(L, !0)
+                            })]
+                        })]
+                    }), (0, i.jsx)(a.Button, {
+                        size: a.Button.Sizes.TINY,
+                        color: a.Button.Colors.PRIMARY,
+                        onClick: D,
+                        children: p.default.Messages.JOIN
+                    })]
+                })
+            }
+
+            function C(e) {
                 let {
                     guild: t
-                } = e, n = (0, s.default)(t);
-                return (0, i.jsx)("div", {
-                    className: l.container,
-                    children: (0, i.jsxs)("div", {
-                        className: l.header,
-                        children: [n ? (0, i.jsx)(o.default, {
+                } = e, {
+                    event: n
+                } = function(e) {
+                    let t = e.id;
+                    return {
+                        hangout: [],
+                        gaming: [],
+                        activity: [],
+                        event: (0, s.useStateFromStoresArray)([u.default], () => u.default.getGuildScheduledEventsForGuild(t).filter(e => (0, u.isGuildScheduledEventActive)(e)), [t])
+                    }
+                }(t), r = n.length > 0 ? n[0] : null;
+                return (0, i.jsx)(i.Fragment, {
+                    children: null !== r && (0, i.jsx)(R, {
+                        event: r
+                    })
+                })
+            }
+
+            function g(e) {
+                let {
+                    guild: t
+                } = e, n = (0, o.default)(t);
+                return (0, i.jsxs)("div", {
+                    className: O.container,
+                    children: [(0, i.jsxs)("div", {
+                        className: O.header,
+                        children: [n ? (0, i.jsx)(S.default, {
                             guild: t,
                             size: 16,
-                            className: l.rowIconV2
-                        }) : (0, i.jsx)(a.default, {
+                            className: O.rowIconV2
+                        }) : (0, i.jsx)(f.default, {
                             guild: t,
                             size: 20,
-                            className: l.rowIcon
-                        }), (0, i.jsx)(r.Text, {
+                            className: O.rowIcon
+                        }), (0, i.jsx)(a.Text, {
                             variant: "text-md/bold",
                             color: "header-primary",
+                            lineClamp: 1,
                             children: t.name
                         })]
-                    })
+                    }), (0, i.jsx)(C, {
+                        guild: t
+                    })]
                 })
             }
         },
@@ -149308,10 +149494,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 GuildTooltipText: function() {
-                    return $
+                    return ee
                 },
                 default: function() {
-                    return ee
+                    return et
                 }
             }), n("390547"), n("47120");
             var i = n("735250"),
@@ -149321,52 +149507,53 @@
                 o = n("392711"),
                 l = n.n(o),
                 u = n("442837"),
-                d = n("477690"),
-                _ = n("481060"),
-                c = n("317381"),
-                E = n("666188"),
-                I = n("246364"),
-                T = n("746916"),
-                f = n("965638"),
-                S = n("160404"),
-                h = n("777861"),
-                A = n("565799"),
-                m = n("501655"),
-                N = n("517334"),
-                p = n("344185"),
-                O = n("199902"),
-                R = n("77498"),
-                C = n("984933"),
-                g = n("158776"),
-                L = n("9156"),
-                D = n("594174"),
-                v = n("938475"),
-                M = n("940627"),
-                y = n("705600"),
-                P = n("737688"),
-                U = n("242315"),
-                b = n("944581"),
-                G = n("632184"),
-                w = n("170039"),
-                k = n("761374"),
-                B = n("602623"),
-                F = n("624138"),
-                V = n("510601"),
-                x = n("59688"),
-                H = n("456774"),
-                Y = n("981631"),
-                j = n("689938"),
-                W = n("499890"),
-                K = n("337341");
-            let z = (0, F.cssValueToNumber)(d.default.GUILD_TOOLTIP_ICON_SIZE),
-                X = (0, F.cssValueToNumber)(d.default.GUILD_TOOLTIP_ICON_SIZE_V_2);
+                d = n("846519"),
+                _ = n("477690"),
+                c = n("481060"),
+                E = n("317381"),
+                I = n("666188"),
+                T = n("246364"),
+                f = n("746916"),
+                S = n("965638"),
+                h = n("160404"),
+                A = n("777861"),
+                m = n("565799"),
+                N = n("501655"),
+                p = n("517334"),
+                O = n("344185"),
+                R = n("199902"),
+                C = n("77498"),
+                g = n("984933"),
+                L = n("158776"),
+                D = n("9156"),
+                v = n("594174"),
+                M = n("938475"),
+                y = n("940627"),
+                P = n("705600"),
+                U = n("737688"),
+                b = n("242315"),
+                G = n("944581"),
+                w = n("632184"),
+                k = n("170039"),
+                B = n("761374"),
+                F = n("602623"),
+                V = n("624138"),
+                x = n("510601"),
+                H = n("59688"),
+                Y = n("456774"),
+                j = n("981631"),
+                W = n("689938"),
+                K = n("499890"),
+                z = n("337341");
+            let X = (0, V.cssValueToNumber)(_.default.GUILD_TOOLTIP_ICON_SIZE),
+                Q = (0, V.cssValueToNumber)(_.default.GUILD_TOOLTIP_ICON_SIZE_V_2);
 
-            function Q(e, t, n) {
+            function q(e, t, n) {
                 return 0 === t.length ? null : (0, i.jsxs)("div", {
-                    className: W.row,
+                    className: K.row,
                     children: [(0, i.jsx)(e, {
-                        className: W.activityIcon
-                    }), (0, i.jsx)(B.default, {
+                        className: K.activityIcon
+                    }), (0, i.jsx)(F.default, {
                         guildId: n,
                         users: t,
                         max: 6
@@ -149374,40 +149561,40 @@
                 })
             }
 
-            function q(e) {
+            function Z(e) {
                 let {
                     muteConfig: t,
                     className: n
                 } = e;
-                return (null == t ? void 0 : t.end_time) == null ? (0, i.jsx)(_.Text, {
+                return (null == t ? void 0 : t.end_time) == null ? (0, i.jsx)(c.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",
                     className: n,
-                    children: j.default.Messages.FORM_LABEL_MUTED
-                }) : (0, i.jsx)(h.default, {
+                    children: W.default.Messages.FORM_LABEL_MUTED
+                }) : (0, i.jsx)(A.default, {
                     muteConfig: t,
                     className: n
                 })
             }
 
-            function Z(e) {
+            function J(e) {
                 var t, n, s;
                 let {
                     guild: o
-                } = e, d = o.id, E = (0, u.useStateFromStoresArray)([C.default, p.default], () => {
-                    let e = C.default.getChannels(d)[C.GUILD_VOCAL_CHANNELS_KEY].filter(e => {
+                } = e, d = o.id, _ = (0, u.useStateFromStoresArray)([g.default, O.default], () => {
+                    let e = g.default.getChannels(d)[g.GUILD_VOCAL_CHANNELS_KEY].filter(e => {
                         let {
                             channel: t
                         } = e;
-                        return t.type === Y.ChannelTypes.GUILD_VOICE
+                        return t.type === j.ChannelTypes.GUILD_VOICE
                     }).map(e => {
                         let {
                             channel: t
                         } = e;
                         return t.id
                     });
-                    return [...e, ...Object.values(p.default.getThreadsForGuild(d)).flatMap(e => Object.keys(e))]
-                }, [d]), I = (0, N.default)(d), T = r.useMemo(() => I.map(e => e.id), [I]), f = (0, u.useStateFromStores)([v.default], () => v.default.getVoiceStates(d), [d]), S = l().flatMap(E, e => {
+                    return [...e, ...Object.values(O.default.getThreadsForGuild(d)).flatMap(e => Object.keys(e))]
+                }, [d]), I = (0, p.default)(d), T = r.useMemo(() => I.map(e => e.id), [I]), f = (0, u.useStateFromStores)([M.default], () => M.default.getVoiceStates(d), [d]), S = l().flatMap(_, e => {
                     var t;
                     return e === o.afkChannelId ? [] : (null !== (t = f[e]) && void 0 !== t ? t : []).map(e => {
                         let {
@@ -149415,122 +149602,122 @@
                         } = e;
                         return t
                     })
-                }), h = (0, u.useStateFromStoresArray)([A.default], () => l().flatMap(T, e => e === o.afkChannelId ? [] : A.default.getMutableParticipants(e, m.StageChannelParticipantNamedIndex.SPEAKER).filter(e => e.type === m.StageChannelParticipantTypes.VOICE).map(e => {
+                }), h = (0, u.useStateFromStoresArray)([m.default], () => l().flatMap(T, e => e === o.afkChannelId ? [] : m.default.getMutableParticipants(e, N.StageChannelParticipantNamedIndex.SPEAKER).filter(e => e.type === N.StageChannelParticipantTypes.VOICE).map(e => {
                     let {
                         user: t
                     } = e;
                     return t
-                }))), M = (0, u.useStateFromStores)([A.default], () => {
+                }))), A = (0, u.useStateFromStores)([m.default], () => {
                     let e = 0;
-                    for (let t of T) e += A.default.getParticipantCount(t, m.StageChannelParticipantNamedIndex.AUDIENCE);
+                    for (let t of T) e += m.default.getParticipantCount(t, N.StageChannelParticipantNamedIndex.AUDIENCE);
                     return e
-                }), y = (0, u.useStateFromStoresArray)([O.default], () => O.default.getAllApplicationStreams().filter(e => e.guildId === d).map(e => e.ownerId), [d]), F = (0, V.useIsGamingVoiceActivityEnabled)("Guild Tooltip", !1), x = (0, u.useStateFromStoresArray)([g.default, R.default], () => S.filter(e => g.default.getActivities(e.id, d).some(e => (null == e ? void 0 : e.application_id) != null && null != R.default.getDetectableGame(null == e ? void 0 : e.application_id)))), H = Q(P.default, x, d), j = F ? x.map(e => e.id) : [], K = (0, u.useStateFromStoresArray)([c.default], () => c.default.getEmbeddedActivitiesForGuild(d).flatMap(e => Array.from(e.userIds)), [d]), z = (0, u.useStateFromStoresArray)([D.default], () => K.map(e => D.default.getUser(e)), [K]), X = (0, u.useStateFromStoresArray)([D.default], () => y.map(e => D.default.getUser(e)), [y]), Z = Q(G.default, S.filter(e => !y.includes(e.id) && !K.includes(e.id) && !j.includes(e.id)), d);
-                let J = (t = d, n = h, s = M, 0 === n.length ? null : (0, i.jsxs)("div", {
-                        className: W.row,
-                        children: [(0, i.jsx)(w.default, {
-                            className: W.activityIcon
-                        }), (0, i.jsx)(B.default, {
+                }), y = (0, u.useStateFromStoresArray)([R.default], () => R.default.getAllApplicationStreams().filter(e => e.guildId === d).map(e => e.ownerId), [d]), P = (0, x.useIsGamingVoiceActivityEnabled)("Guild Tooltip", !1), V = (0, u.useStateFromStoresArray)([L.default, C.default], () => S.filter(e => L.default.getActivities(e.id, d).some(e => (null == e ? void 0 : e.application_id) != null && null != C.default.getDetectableGame(null == e ? void 0 : e.application_id)))), H = q(U.default, V, d), Y = P ? V.map(e => e.id) : [], W = (0, u.useStateFromStoresArray)([E.default], () => E.default.getEmbeddedActivitiesForGuild(d).flatMap(e => Array.from(e.userIds)), [d]), z = (0, u.useStateFromStoresArray)([v.default], () => W.map(e => v.default.getUser(e)), [W]), X = (0, u.useStateFromStoresArray)([v.default], () => y.map(e => v.default.getUser(e)), [y]), Q = q(w.default, S.filter(e => !y.includes(e.id) && !W.includes(e.id) && !Y.includes(e.id)), d);
+                let J = (t = d, n = h, s = A, 0 === n.length ? null : (0, i.jsxs)("div", {
+                        className: K.row,
+                        children: [(0, i.jsx)(k.default, {
+                            className: K.activityIcon
+                        }), (0, i.jsx)(F.default, {
                             guildId: t,
                             users: n,
                             max: 3
                         }), (0, i.jsxs)("div", {
-                            className: W.stageListenerPill,
-                            children: [(0, i.jsx)(U.default, {
+                            className: K.stageListenerPill,
+                            children: [(0, i.jsx)(b.default, {
                                 width: 16,
                                 height: 16
-                            }), (0, i.jsx)(_.Text, {
-                                className: W.stageListenerCount,
+                            }), (0, i.jsx)(c.Text, {
+                                className: K.stageListenerCount,
                                 color: "text-normal",
                                 variant: "text-xs/normal",
                                 children: s
                             })]
                         })]
                     })),
-                    $ = Q(k.default, X.filter(e => null != e && !K.includes(e.id)), d),
-                    ee = Q(b.default, z, d),
+                    $ = q(B.default, X.filter(e => null != e && !W.includes(e.id)), d),
+                    ee = q(G.default, z, d),
                     {
                         isMuted: et,
                         muteConfig: en
-                    } = (0, u.useStateFromStoresObject)([L.default], () => ({
-                        isMuted: L.default.isMuted(d),
-                        muteConfig: L.default.getMuteConfig(d)
+                    } = (0, u.useStateFromStoresObject)([D.default], () => ({
+                        isMuted: D.default.isMuted(d),
+                        muteConfig: D.default.getMuteConfig(d)
                     }), [d]);
-                return null != H && V.default.trackExposure({
+                return null != H && x.default.trackExposure({
                     location: "Guild Tooltip"
                 }), (0, i.jsxs)(i.Fragment, {
-                    children: [J, Z, $, F && H, ee, et ? (0, i.jsx)(q, {
+                    children: [J, Q, $, P && H, ee, et ? (0, i.jsx)(Z, {
                         muteConfig: en,
-                        className: a()(W.muteText, {
-                            [W.muteTextWithActivity]: null != Z || null != $
+                        className: a()(K.muteText, {
+                            [K.muteTextWithActivity]: null != Q || null != $
                         })
                     }) : null]
                 })
             }
 
-            function J(e) {
+            function $(e) {
                 let {
                     guildJoinRequestStatus: t
                 } = e;
-                return (0, i.jsx)(_.Text, {
-                    className: W.viewAsRolesWarning,
+                return (0, i.jsx)(c.Text, {
+                    className: K.viewAsRolesWarning,
                     color: "text-normal",
                     variant: "text-xs/normal",
                     children: function(e) {
                         switch (e) {
-                            case I.GuildJoinRequestApplicationStatuses.SUBMITTED:
-                                return j.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_PENDING;
-                            case I.GuildJoinRequestApplicationStatuses.REJECTED:
-                                return j.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_REJECTED;
-                            case I.GuildJoinRequestApplicationStatuses.APPROVED:
-                                return j.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_APPROVED;
+                            case T.GuildJoinRequestApplicationStatuses.SUBMITTED:
+                                return W.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_PENDING;
+                            case T.GuildJoinRequestApplicationStatuses.REJECTED:
+                                return W.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_REJECTED;
+                            case T.GuildJoinRequestApplicationStatuses.APPROVED:
+                                return W.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_APPROVED;
                             default:
-                                return j.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_STARTED
+                                return W.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_STARTED
                         }
                     }(t)
                 })
             }
 
-            function $(e) {
+            function ee(e) {
                 let {
                     guild: t,
                     includeActivity: n = !0
-                } = e, r = (0, E.default)(t), s = (0, T.useCurrentUserGuildBadgeStatus)(t.id), o = null != s ? (0, i.jsx)(J, {
+                } = e, r = (0, I.default)(t), s = (0, f.useCurrentUserGuildBadgeStatus)(t.id), o = null != s ? (0, i.jsx)($, {
                     guildJoinRequestStatus: s
-                }) : null, l = n ? (0, i.jsx)(Z, {
+                }) : null, l = n ? (0, i.jsx)(J, {
                     guild: t
-                }) : null, d = (0, u.useStateFromStores)([S.default], () => S.default.isViewingRoles(t.id)), c = (0, f.useShouldShowInvitesDisabledNotif)(t);
+                }) : null, d = (0, u.useStateFromStores)([h.default], () => h.default.isViewingRoles(t.id)), _ = (0, S.useShouldShowInvitesDisabledNotif)(t);
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
-                        className: a()(W.row, W.rowGuildName),
-                        children: [r ? (0, i.jsx)(y.default, {
+                        className: a()(K.row, K.rowGuildName),
+                        children: [r ? (0, i.jsx)(P.default, {
+                            guild: t,
+                            size: Q,
+                            className: K.rowIconV2
+                        }) : (0, i.jsx)(y.default, {
                             guild: t,
                             size: X,
-                            className: W.rowIconV2
-                        }) : (0, i.jsx)(M.default, {
-                            guild: t,
-                            size: z,
-                            className: W.rowIcon
+                            className: K.rowIcon
                         }), (0, i.jsx)("span", {
-                            className: a()(W.guildNameText, {
-                                [W.guildNameTextLimitedSize]: null != l
+                            className: a()(K.guildNameText, {
+                                [K.guildNameTextLimitedSize]: null != l
                             }),
                             children: t.toString()
                         })]
-                    }), c ? (0, i.jsx)(_.Text, {
-                        className: W.invitesDisabledTooltip,
+                    }), _ ? (0, i.jsx)(c.Text, {
+                        className: K.invitesDisabledTooltip,
                         color: "header-secondary",
                         variant: "text-sm/medium",
-                        children: j.default.Messages.INVITES_DISABLED_TOOLTIP
-                    }) : null, d ? (0, i.jsx)(_.Text, {
-                        className: W.viewAsRolesWarning,
+                        children: W.default.Messages.INVITES_DISABLED_TOOLTIP
+                    }) : null, d ? (0, i.jsx)(c.Text, {
+                        className: K.viewAsRolesWarning,
                         color: "text-normal",
                         variant: "text-xs/normal",
-                        children: j.default.Messages.VIEW_AS_ROLES_MENTIONS_WARNING
+                        children: W.default.Messages.VIEW_AS_ROLES_MENTIONS_WARNING
                     }) : null != o ? o : l]
                 })
             }
 
-            function ee(e) {
+            function et(e) {
                 let {
                     guild: t,
                     disabled: n = !1,
@@ -149538,28 +149725,36 @@
                     children: a,
                     includeActivity: o,
                     isHovered: l
-                } = e;
-                return (0, x.useCanShowNewGuildTooltip)() ? (0, i.jsx)(_.Popout, {
-                    position: "right",
-                    renderPopout: () => (0, i.jsx)(H.default, {
-                        guild: t
-                    }),
-                    spacing: 20,
-                    shouldShow: l,
-                    children: e => (0, i.jsx)("div", {
-                        ...e,
-                        children: a
+                } = e, u = (0, H.useCanShowNewGuildTooltip)(), [_, E] = r.useState(!1), I = r.useRef(new d.DelayedCall(150, () => E(!1))), T = r.useCallback(() => {
+                    I.current.cancel(), E(!0)
+                }, []), f = r.useCallback(() => {
+                    I.current.delay()
+                }, []);
+                return u ? (0, i.jsx)("div", {
+                    onMouseEnter: T,
+                    onMouseLeave: f,
+                    children: (0, i.jsx)(c.Popout, {
+                        position: "right",
+                        renderPopout: () => (0, i.jsx)(Y.default, {
+                            guild: t
+                        }),
+                        spacing: 20,
+                        shouldShow: l || _,
+                        children: e => (0, i.jsx)("div", {
+                            ...e,
+                            children: a
+                        })
                     })
-                }) : (0, i.jsx)(_.Tooltip, {
+                }) : (0, i.jsx)(c.Tooltip, {
                     hideOnClick: !0,
                     spacing: 20,
                     position: "right",
-                    text: n ? null : (0, i.jsx)($, {
+                    text: n ? null : (0, i.jsx)(ee, {
                         guild: t,
                         includeActivity: o
                     }),
                     "aria-label": s,
-                    tooltipClassName: K.listItemTooltip,
+                    tooltipClassName: z.listItemTooltip,
                     children: e => {
                         let {
                             onFocus: t,
@@ -164503,8 +164698,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713813211038",
-                                    build_number: "286744"
+                                    built_at: "1713813518402",
+                                    build_number: "286746"
                                 }
                             },
                             retries: 1
@@ -241960,7 +242155,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e17b1b8f69ec62d445b47c42e0a236c911b72f17"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "10cb7b7e6c1c90d018404b27dbb5e34f80174478"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -255159,6 +255354,39 @@
                 size: 24
             })
         },
+        393112: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("735250");
+            n("470079");
+            var r = n("960259"),
+                s = n("486512"),
+                a = n("325767");
+            t.default = (0, r.replaceIcon)(function(e) {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: r = "currentColor",
+                    ...s
+                } = e;
+                return (0, i.jsxs)("svg", {
+                    ...(0, a.default)(s),
+                    width: t,
+                    height: n,
+                    viewBox: "0 0 24 24",
+                    fill: "none",
+                    children: [(0, i.jsx)("path", {
+                        d: "M17 15.54V17.44C18.828 17.807 20 18.368 20 19C20 20.106 16.419 21 12 21C7.581 21 4 20.106 4 19C4 18.368 5.173 17.807 7 17.44V15.54C4.014 16.231 2 17.52 2 19C2 21.21 6.477 23 12 23C17.523 23 22 21.21 22 19C22 17.52 19.986 16.231 17 15.54Z",
+                        fill: r
+                    }), (0, i.jsx)("path", {
+                        d: "M18 9C18 5.687 15.314 3 12 3C8.686 3 6 5.687 6 9C6 13 12 20 12 20C12 20 18 13 18 9ZM10 9C10 7.896 10.896 7 12 7C13.104 7 14 7.896 14 9C14 10.104 13.104 11 12 11C10.896 11 10 10.104 10 9Z",
+                        fill: r
+                    })]
+                })
+            }, s.LocationIcon, void 0, {
+                size: 24
+            })
+        },
         630641: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -262548,7 +262776,7 @@
                 d = n("419061"),
                 _ = n("525049"),
                 c = n("880305");
-            (i = r || (r = {})).SQUIRCLE = "svg-mask-squircle", i.HEADER_BAR_BADGE = "svg-mask-header-bar-badge", i.VOICE_USER_SUMMARY_ITEM = "svg-mask-voice-user-summary-item", i.DIAGONAL_FACEPILE_BACK_AVATAR_CUTOUT = "svg-diagonal-facepile-back-avatar-cutout", i.DIAGONAL_FACEPILE_STATUS_CUTOUT = "svg-diagonal-facepile-status-cutout", i.DIAGONAL_FACEPILE_TYPING_CUTOUT = "svg-diagonal-facepile-typing-cutout", i.VERTICAL_FADE = "svg-mask-vertical-fade", i.PANEL_BUTTON = "svg-mask-panel-button", i.CHANNEL_CALL_CONTROL_BUTTON = "svg-mask-channel-call-control-button", i.CHANNEL_CALL_CONTROL_BUTTON_BADGE_16 = "svg-mask-channel-call-control-button-badge-16", i.CHANNEL_CALL_CONTROL_BUTTON_BADGE_22 = "svg-mask-channel-call-control-button-badge-22", i.CHANNEL_CALL_CONTROL_BUTTON_BADGE_29 = "svg-mask-channel-call-control-button-badge-29", i.AVATAR_DEFAULT = "svg-mask-avatar-default", i.AVATAR_STATUS_ROUND_16 = "svg-mask-avatar-status-round-16", i.AVATAR_STATUS_ROUND_20 = "svg-mask-avatar-status-round-20", i.AVATAR_STATUS_ROUND_24 = "svg-mask-avatar-status-round-24", i.AVATAR_STATUS_ROUND_32 = "svg-mask-avatar-status-round-32", i.AVATAR_STATUS_ROUND_40 = "svg-mask-avatar-status-round-40", i.AVATAR_STATUS_ROUND_48 = "svg-mask-avatar-status-round-48", i.AVATAR_STATUS_ROUND_56 = "svg-mask-avatar-status-round-56", i.AVATAR_STATUS_ROUND_80 = "svg-mask-avatar-status-round-80", i.AVATAR_STATUS_ROUND_100 = "svg-mask-avatar-status-round-100", i.AVATAR_STATUS_ROUND_120 = "svg-mask-avatar-status-round-120", i.AVATAR_STATUS_MOBILE_16 = "svg-mask-avatar-status-mobile-16", i.AVATAR_STATUS_MOBILE_20 = "svg-mask-avatar-status-mobile-20", i.AVATAR_STATUS_MOBILE_24 = "svg-mask-avatar-status-mobile-24", i.AVATAR_STATUS_MOBILE_32 = "svg-mask-avatar-status-mobile-32", i.AVATAR_STATUS_MOBILE_40 = "svg-mask-avatar-status-mobile-40", i.AVATAR_STATUS_MOBILE_48 = "svg-mask-avatar-status-mobile-48", i.AVATAR_STATUS_MOBILE_56 = "svg-mask-avatar-status-mobile-56", i.AVATAR_STATUS_MOBILE_80 = "svg-mask-avatar-status-mobile-80", i.AVATAR_STATUS_MOBILE_100 = "svg-mask-avatar-status-mobile-100", i.AVATAR_STATUS_MOBILE_120 = "svg-mask-avatar-status-mobile-120", i.AVATAR_STATUS_TYPING_16 = "svg-mask-avatar-status-typing-16", i.AVATAR_STATUS_TYPING_20 = "svg-mask-avatar-status-typing-20", i.AVATAR_STATUS_TYPING_24 = "svg-mask-avatar-status-typing-24", i.AVATAR_STATUS_TYPING_32 = "svg-mask-avatar-status-typing-32", i.AVATAR_STATUS_TYPING_40 = "svg-mask-avatar-status-typing-40", i.AVATAR_STATUS_TYPING_48 = "svg-mask-avatar-status-typing-48", i.AVATAR_STATUS_TYPING_56 = "svg-mask-avatar-status-typing-56", i.AVATAR_STATUS_TYPING_80 = "svg-mask-avatar-status-typing-80", i.AVATAR_STATUS_TYPING_100 = "svg-mask-avatar-status-typing-100", i.AVATAR_STATUS_TYPING_120 = "svg-mask-avatar-status-typing-120", i.AVATAR_DECORATION_STATUS_ROUND_16 = "svg-mask-avatar-decoration-status-round-16", i.AVATAR_DECORATION_STATUS_ROUND_20 = "svg-mask-avatar-decoration-status-round-20", i.AVATAR_DECORATION_STATUS_ROUND_24 = "svg-mask-avatar-decoration-status-round-24", i.AVATAR_DECORATION_STATUS_ROUND_32 = "svg-mask-avatar-decoration-status-round-32", i.AVATAR_DECORATION_STATUS_ROUND_40 = "svg-mask-avatar-decoration-status-round-40", i.AVATAR_DECORATION_STATUS_ROUND_48 = "svg-mask-avatar-decoration-status-round-48", i.AVATAR_DECORATION_STATUS_ROUND_56 = "svg-mask-avatar-decoration-status-round-56", i.AVATAR_DECORATION_STATUS_ROUND_80 = "svg-mask-avatar-decoration-status-round-80", i.AVATAR_DECORATION_STATUS_ROUND_120 = "svg-mask-avatar-decoration-status-round-120", i.AVATAR_DECORATION_STATUS_MOBILE_16 = "svg-mask-avatar-decoration-status-mobile-16", i.AVATAR_DECORATION_STATUS_MOBILE_20 = "svg-mask-avatar-decoration-status-mobile-20", i.AVATAR_DECORATION_STATUS_MOBILE_24 = "svg-mask-avatar-decoration-status-mobile-24", i.AVATAR_DECORATION_STATUS_MOBILE_32 = "svg-mask-avatar-decoration-status-mobile-32", i.AVATAR_DECORATION_STATUS_MOBILE_40 = "svg-mask-avatar-decoration-status-mobile-40", i.AVATAR_DECORATION_STATUS_MOBILE_48 = "svg-mask-avatar-decoration-status-mobile-48", i.AVATAR_DECORATION_STATUS_MOBILE_56 = "svg-mask-avatar-decoration-status-mobile-56", i.AVATAR_DECORATION_STATUS_MOBILE_80 = "svg-mask-avatar-decoration-status-mobile-80", i.AVATAR_DECORATION_STATUS_MOBILE_100 = "svg-mask-avatar-decoration-status-mobile-100", i.AVATAR_DECORATION_STATUS_MOBILE_120 = "svg-mask-avatar-decoration-status-mobile-120", i.AVATAR_DECORATION_STATUS_TYPING_16 = "svg-mask-avatar-decoration-status-typing-16", i.AVATAR_DECORATION_STATUS_TYPING_20 = "svg-mask-avatar-decoration-status-typing-20", i.AVATAR_DECORATION_STATUS_TYPING_24 = "svg-mask-avatar-decoration-status-typing-24", i.AVATAR_DECORATION_STATUS_TYPING_32 = "svg-mask-avatar-decoration-status-typing-32", i.AVATAR_DECORATION_STATUS_TYPING_40 = "svg-mask-avatar-decoration-status-typing-40", i.AVATAR_DECORATION_STATUS_TYPING_48 = "svg-mask-avatar-decoration-status-typing-48", i.AVATAR_DECORATION_STATUS_TYPING_56 = "svg-mask-avatar-decoration-status-typing-56", i.AVATAR_DECORATION_STATUS_TYPING_80 = "svg-mask-avatar-decoration-status-typing-80", i.AVATAR_DECORATION_STATUS_TYPING_100 = "svg-mask-avatar-decoration-status-typing-100", i.AVATAR_DECORATION_STATUS_TYPING_120 = "svg-mask-avatar-decoration-status-typing-120", i.AVATAR_DECORATION_PROFILE_STATUS_SQUARE_80 = "svg-mask-avatar-decoration-profile-status-square-80", i.AVATAR_DECORATION_PROFILE_STATUS_MOBILE_SQUARE_80 = "svg-mask-avatar-decoration-profile-status-mobile-square-80", i.AVATAR_VOICE_CALL_80 = "svg-mask-avatar-voice-call-80", i.AVATAR_CALL_ICON = "svg-mask-avatar-call-icon", i.AVATAR_CALL_ICON_32 = "svg-mask-avatar-call-icon-32", i.STATUS_ONLINE_MOBILE = "svg-mask-status-online-mobile", i.STATUS_ONLINE = "svg-mask-status-online", i.STATUS_IDLE = "svg-mask-status-idle", i.STATUS_DND = "svg-mask-status-dnd", i.STATUS_OFFLINE = "svg-mask-status-offline", i.STATUS_STREAMING = "svg-mask-status-streaming", i.STATUS_TYPING = "svg-mask-status-typing", i.STATUS_SCREENSHARE = "svg-mask-status-screenshare", i.STICKER_ROUNDED_RECT = "svg-mask-sticker-rounded-rect", i.STICKER_SHOP_NOTIFICATION = "svg-mask-sticker-shop-notification", i.GUILD_ICON_WITH_CHANNEL_TYPE = "svg-mask-guild-icon-with-channel-type", i.CHAT_INPUT_BUTTON_NOTIFICATION = "svg-mask-chat-input-button-notification", i.AUTOCOMPLETE_EMOJI_UPSELL_EMOJI = "svg-mask-autocomplete-emoji-upsell-emoji", i.EVENT_TICKET = "svg-mask-event-ticket", i.CONTENT_INVENTORY_CARD_FACE_PILE_AVATAR = "svg-mask-content-inventory-card-face-pile-avatar";
+            (i = r || (r = {})).SQUIRCLE = "svg-mask-squircle", i.HEADER_BAR_BADGE = "svg-mask-header-bar-badge", i.VOICE_USER_SUMMARY_ITEM = "svg-mask-voice-user-summary-item", i.DIAGONAL_FACEPILE_BACK_AVATAR_CUTOUT = "svg-diagonal-facepile-back-avatar-cutout", i.DIAGONAL_FACEPILE_STATUS_CUTOUT = "svg-diagonal-facepile-status-cutout", i.DIAGONAL_FACEPILE_TYPING_CUTOUT = "svg-diagonal-facepile-typing-cutout", i.VERTICAL_FADE = "svg-mask-vertical-fade", i.PANEL_BUTTON = "svg-mask-panel-button", i.CHANNEL_CALL_CONTROL_BUTTON = "svg-mask-channel-call-control-button", i.CHANNEL_CALL_CONTROL_BUTTON_BADGE_16 = "svg-mask-channel-call-control-button-badge-16", i.CHANNEL_CALL_CONTROL_BUTTON_BADGE_22 = "svg-mask-channel-call-control-button-badge-22", i.CHANNEL_CALL_CONTROL_BUTTON_BADGE_29 = "svg-mask-channel-call-control-button-badge-29", i.AVATAR_DEFAULT = "svg-mask-avatar-default", i.AVATAR_STATUS_ROUND_16 = "svg-mask-avatar-status-round-16", i.AVATAR_STATUS_ROUND_20 = "svg-mask-avatar-status-round-20", i.AVATAR_STATUS_ROUND_24 = "svg-mask-avatar-status-round-24", i.AVATAR_STATUS_ROUND_32 = "svg-mask-avatar-status-round-32", i.AVATAR_STATUS_ROUND_40 = "svg-mask-avatar-status-round-40", i.AVATAR_STATUS_ROUND_48 = "svg-mask-avatar-status-round-48", i.AVATAR_STATUS_ROUND_56 = "svg-mask-avatar-status-round-56", i.AVATAR_STATUS_ROUND_80 = "svg-mask-avatar-status-round-80", i.AVATAR_STATUS_ROUND_100 = "svg-mask-avatar-status-round-100", i.AVATAR_STATUS_ROUND_120 = "svg-mask-avatar-status-round-120", i.AVATAR_STATUS_MOBILE_16 = "svg-mask-avatar-status-mobile-16", i.AVATAR_STATUS_MOBILE_20 = "svg-mask-avatar-status-mobile-20", i.AVATAR_STATUS_MOBILE_24 = "svg-mask-avatar-status-mobile-24", i.AVATAR_STATUS_MOBILE_32 = "svg-mask-avatar-status-mobile-32", i.AVATAR_STATUS_MOBILE_40 = "svg-mask-avatar-status-mobile-40", i.AVATAR_STATUS_MOBILE_48 = "svg-mask-avatar-status-mobile-48", i.AVATAR_STATUS_MOBILE_56 = "svg-mask-avatar-status-mobile-56", i.AVATAR_STATUS_MOBILE_80 = "svg-mask-avatar-status-mobile-80", i.AVATAR_STATUS_MOBILE_100 = "svg-mask-avatar-status-mobile-100", i.AVATAR_STATUS_MOBILE_120 = "svg-mask-avatar-status-mobile-120", i.AVATAR_STATUS_TYPING_16 = "svg-mask-avatar-status-typing-16", i.AVATAR_STATUS_TYPING_20 = "svg-mask-avatar-status-typing-20", i.AVATAR_STATUS_TYPING_24 = "svg-mask-avatar-status-typing-24", i.AVATAR_STATUS_TYPING_32 = "svg-mask-avatar-status-typing-32", i.AVATAR_STATUS_TYPING_40 = "svg-mask-avatar-status-typing-40", i.AVATAR_STATUS_TYPING_48 = "svg-mask-avatar-status-typing-48", i.AVATAR_STATUS_TYPING_56 = "svg-mask-avatar-status-typing-56", i.AVATAR_STATUS_TYPING_80 = "svg-mask-avatar-status-typing-80", i.AVATAR_STATUS_TYPING_100 = "svg-mask-avatar-status-typing-100", i.AVATAR_STATUS_TYPING_120 = "svg-mask-avatar-status-typing-120", i.AVATAR_DECORATION_STATUS_ROUND_16 = "svg-mask-avatar-decoration-status-round-16", i.AVATAR_DECORATION_STATUS_ROUND_20 = "svg-mask-avatar-decoration-status-round-20", i.AVATAR_DECORATION_STATUS_ROUND_24 = "svg-mask-avatar-decoration-status-round-24", i.AVATAR_DECORATION_STATUS_ROUND_32 = "svg-mask-avatar-decoration-status-round-32", i.AVATAR_DECORATION_STATUS_ROUND_40 = "svg-mask-avatar-decoration-status-round-40", i.AVATAR_DECORATION_STATUS_ROUND_48 = "svg-mask-avatar-decoration-status-round-48", i.AVATAR_DECORATION_STATUS_ROUND_56 = "svg-mask-avatar-decoration-status-round-56", i.AVATAR_DECORATION_STATUS_ROUND_80 = "svg-mask-avatar-decoration-status-round-80", i.AVATAR_DECORATION_STATUS_ROUND_120 = "svg-mask-avatar-decoration-status-round-120", i.AVATAR_DECORATION_STATUS_MOBILE_16 = "svg-mask-avatar-decoration-status-mobile-16", i.AVATAR_DECORATION_STATUS_MOBILE_20 = "svg-mask-avatar-decoration-status-mobile-20", i.AVATAR_DECORATION_STATUS_MOBILE_24 = "svg-mask-avatar-decoration-status-mobile-24", i.AVATAR_DECORATION_STATUS_MOBILE_32 = "svg-mask-avatar-decoration-status-mobile-32", i.AVATAR_DECORATION_STATUS_MOBILE_40 = "svg-mask-avatar-decoration-status-mobile-40", i.AVATAR_DECORATION_STATUS_MOBILE_48 = "svg-mask-avatar-decoration-status-mobile-48", i.AVATAR_DECORATION_STATUS_MOBILE_56 = "svg-mask-avatar-decoration-status-mobile-56", i.AVATAR_DECORATION_STATUS_MOBILE_80 = "svg-mask-avatar-decoration-status-mobile-80", i.AVATAR_DECORATION_STATUS_MOBILE_100 = "svg-mask-avatar-decoration-status-mobile-100", i.AVATAR_DECORATION_STATUS_MOBILE_120 = "svg-mask-avatar-decoration-status-mobile-120", i.AVATAR_DECORATION_STATUS_TYPING_16 = "svg-mask-avatar-decoration-status-typing-16", i.AVATAR_DECORATION_STATUS_TYPING_20 = "svg-mask-avatar-decoration-status-typing-20", i.AVATAR_DECORATION_STATUS_TYPING_24 = "svg-mask-avatar-decoration-status-typing-24", i.AVATAR_DECORATION_STATUS_TYPING_32 = "svg-mask-avatar-decoration-status-typing-32", i.AVATAR_DECORATION_STATUS_TYPING_40 = "svg-mask-avatar-decoration-status-typing-40", i.AVATAR_DECORATION_STATUS_TYPING_48 = "svg-mask-avatar-decoration-status-typing-48", i.AVATAR_DECORATION_STATUS_TYPING_56 = "svg-mask-avatar-decoration-status-typing-56", i.AVATAR_DECORATION_STATUS_TYPING_80 = "svg-mask-avatar-decoration-status-typing-80", i.AVATAR_DECORATION_STATUS_TYPING_100 = "svg-mask-avatar-decoration-status-typing-100", i.AVATAR_DECORATION_STATUS_TYPING_120 = "svg-mask-avatar-decoration-status-typing-120", i.AVATAR_DECORATION_PROFILE_STATUS_SQUARE_80 = "svg-mask-avatar-decoration-profile-status-square-80", i.AVATAR_DECORATION_PROFILE_STATUS_MOBILE_SQUARE_80 = "svg-mask-avatar-decoration-profile-status-mobile-square-80", i.AVATAR_VOICE_CALL_80 = "svg-mask-avatar-voice-call-80", i.AVATAR_CALL_ICON = "svg-mask-avatar-call-icon", i.AVATAR_CALL_ICON_32 = "svg-mask-avatar-call-icon-32", i.STATUS_ONLINE_MOBILE = "svg-mask-status-online-mobile", i.STATUS_ONLINE = "svg-mask-status-online", i.STATUS_IDLE = "svg-mask-status-idle", i.STATUS_DND = "svg-mask-status-dnd", i.STATUS_OFFLINE = "svg-mask-status-offline", i.STATUS_STREAMING = "svg-mask-status-streaming", i.STATUS_TYPING = "svg-mask-status-typing", i.STATUS_SCREENSHARE = "svg-mask-status-screenshare", i.STICKER_ROUNDED_RECT = "svg-mask-sticker-rounded-rect", i.STICKER_SHOP_NOTIFICATION = "svg-mask-sticker-shop-notification", i.GUILD_ICON_WITH_CHANNEL_TYPE = "svg-mask-guild-icon-with-channel-type", i.GUILD_POPOUT_ACTIVITY_ICON = "svg-mask-guild-popout-activity-icon", i.CHAT_INPUT_BUTTON_NOTIFICATION = "svg-mask-chat-input-button-notification", i.AUTOCOMPLETE_EMOJI_UPSELL_EMOJI = "svg-mask-autocomplete-emoji-upsell-emoji", i.EVENT_TICKET = "svg-mask-event-ticket", i.CONTENT_INVENTORY_CARD_FACE_PILE_AVATAR = "svg-mask-content-inventory-card-face-pile-avatar";
 
             function E(e, t) {
                 return (e - .5) / (null != t ? t : d.DECORATION_TO_AVATAR_RATIO) + .5
@@ -262800,7 +263028,7 @@
             }
             O.Masks = r, t.default = O;
             let R = a.memo(function() {
-                var e, t, n, i, r, a, o, l, c, O, R, C, g, L, D, v, M, y, P, U, b;
+                var e, t, n, i, r, a, o, l, c, O, R, C, g, L, D, v, M, y, P, U, b, G;
                 return (0, s.jsxs)("svg", {
                     viewBox: "0 0 1 1",
                     style: {
@@ -263226,6 +263454,22 @@
                             cx: 1.33,
                             cy: .5,
                             r: .65
+                        })]
+                    })), (G = "svg-mask-guild-popout-activity-icon", (0, s.jsxs)("mask", {
+                        id: G,
+                        maskContentUnits: "objectBoundingBox",
+                        viewBox: "0 0 1 1",
+                        children: [(0, s.jsx)("rect", {
+                            fill: "white",
+                            x: 0,
+                            y: 0,
+                            width: "100%",
+                            height: "100%"
+                        }), (0, s.jsx)("circle", {
+                            fill: "black",
+                            cx: "0.8",
+                            cy: "0.85",
+                            r: "0.28"
                         })]
                     }))]
                 })
@@ -270435,7 +270679,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "286744"
+                                build_number: "286746"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -277620,7 +277864,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "286744", "286744"), 10);
+                let s = parseInt((n = "286746", "286746"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -282209,6 +282453,42 @@
                         d: "M14.7 10.7a1 1 0 1 0-1.4-1.4l-4 4a1 1 0 0 0 1.4 1.4l4-4Z",
                         className: o
                     })]
+                })
+            }
+        },
+        26468: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                LocationIcon: function() {
+                    return a
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("692547"),
+                s = n("331595");
+            let a = e => {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: a = r.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: o = "",
+                    ...l
+                } = e;
+                return (0, i.jsx)("svg", {
+                    ...(0, s.default)(l),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: n,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: (0, i.jsx)("path", {
+                        fill: "string" == typeof a ? a : a.css,
+                        fillRule: "evenodd",
+                        d: "M12 23c3 0 9-8.03 9-13a9 9 0 1 0-18 0c0 4.97 6 13 9 13Zm0-10a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z",
+                        clipRule: "evenodd",
+                        className: o
+                    })
                 })
             }
         },
@@ -305009,4 +305289,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.3f8580e86d647734d385.js.map
+//# sourceMappingURL=35705.ce9f7bf40ffd51b54907.js.map

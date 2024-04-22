@@ -15842,7 +15842,8 @@ span.clanTag_f4aadc {
 .container_a88e31 {
     background-color: var(--background-floating);
     padding: 8px;
-    border-radius: 4px
+    border-radius: var(--radius-xs);
+    max-width: 304px
 }
 
 .header__3a32b {
@@ -15858,6 +15859,59 @@ span.clanTag_f4aadc {
 
 .rowIconV2_fe06d9 {
     margin-top: 2px
+}
+
+.activityCardContainer__6615c {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-tertiary);
+    border-radius: var(--radius-sm);
+    padding: 10px
+}
+
+.activityCardImageContainer_c34fee {
+    position: relative
+}
+
+.activityCardImage__960a6 {
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--redesign-button-active-background);
+    border-radius: var(--radius-sm)
+}
+
+.mask_beff87 {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.activityCardActivityIcon_ffae8f {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--status-positive-background);
+    border-radius: 50%;
+    padding: 4px
+}
+
+.activityCardDetailsContainer__32ad7 {
+    width: 162px
+}
+
+.location__73d84 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap
+}
+
+.channelIcon__3faf0 {
+    color: var(--text-muted);
+    margin-left: 4px;
+    margin-right: 4px
 }
 
 .row_f694ee {
@@ -134621,4 +134675,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.e93c2f5d015c28a347b2.css.map*/
+/*# sourceMappingURL=99387.e75bd4a83e7ffddc56b0.css.map*/
