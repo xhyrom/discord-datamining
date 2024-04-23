@@ -2156,6 +2156,7 @@
     min-height: var(--custom-o-auth-2-page-oauth-2-min-height);
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
     border-radius: 5px;
     box-shadow: var(--elevation-high);
@@ -19829,6 +19830,126 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     opacity: .6
 }
 
+.container__8d997 {
+    display: flex;
+    box-sizing: border-box;
+    margin-left: 8px;
+    margin-top: 8px;
+    max-width: 224px;
+    height: 64px;
+    padding: 8px;
+    background: var(--bg-overlay-3, var(--background-primary));
+    border-radius: var(--radius-md);
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between
+}
+
+.container__8d997:hover {
+    background: var(--bg-overlay-5, var(--background-modifier-hover));
+    cursor: pointer
+}
+
+.container__8d997:hover .contentDescription_e07aa0 {
+    color: var(--interactive-hover)
+}
+
+.selected__31bdc {
+    background-color: var(--background-modifier-selected)
+}
+
+.selected__31bdc:hover {
+    background-color: var(--background-modifier-selected)
+}
+
+.selected__31bdc .contentDescription_e07aa0 {
+    color: var(--interactive-hover)
+}
+
+.infoSection__07f39 {
+    display: flex;
+    flex-direction: column;
+    min-width: 0
+}
+
+.userSection__9a4c1 {
+    display: flex;
+    align-items: center
+}
+
+.userName__23133 {
+    color: var(--channels-default);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 85%;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    line-height: 1.2857142857142858;
+    font-weight: 500
+}
+
+.userName__23133.fontScaling__42daa {
+    font-size: .875rem
+}
+
+.contentDescription_e07aa0 {
+    color: var(--text-secondary)
+}
+
+.badgeRow__474f5 {
+    display: flex;
+    gap: 8px;
+    align-items: center
+}
+
+.badgeContainer__5607c {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    overflow: hidden;
+    flex-shrink: 0
+}
+
+.badgeContainer__5607c svg {
+    flex-shrink: 0
+}
+
+.badgeContainer__5607c div {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.badgeContainer__5607c:last-child {
+    flex-shrink: 1
+}
+
+.container__8d997 .badgeContainer__5607c {
+    margin-top: 2px;
+    margin-bottom: -2px
+}
+
+.facePile__28ee7 {
+    display: flex;
+    margin-right: 6px
+}
+
+.facePileItem__560b8:not(:first-child) {
+    margin-left: -3px
+}
+
+.additionalParticipantBadge__23702 {
+    padding: 2.25px 4.4px 2.5px 4.2px;
+    background-color: var(--background-accent);
+    border-radius: 8px;
+    margin-left: 4px
+}
+
+.additionalParticipantBadgeText__1e49a {
+    line-height: 10px
+}
+
 .contentImage__1c893 {
     border-radius: var(--radius-xs);
     -o-object-fit: contain;
@@ -19855,40 +19976,11 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     border-color: var(--profile-body-border-color)
 }
 
-.contentImage__73364 {
-    flex-shrink: 0;
-    border-radius: 4px;
-    border: 2px solid var(--status-positive)
-}
-
-.infoContainer__07f33 {
-    min-width: 0
-}
-
-.title_b0a8cb {
-    display: flex;
-    flex-direction: row;
-    color: var(--text-secondary);
-    gap: 3px;
-    margin-bottom: 2px
-}
-
-.activityName_bad7c5 {
-    text-transform: uppercase;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden
-}
-
 .playtimeContainer_d4a1f8 {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 4px
-}
-
-.playtimeText__3a682 {
-    color: var(--status-positive)
 }
 
 .noteClickable__7552c {
@@ -53240,126 +53332,6 @@ html .progress__00e29 {
     overflow-x: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
-}
-
-.container__8d997 {
-    display: flex;
-    box-sizing: border-box;
-    margin-left: 8px;
-    margin-top: 8px;
-    max-width: 224px;
-    height: 64px;
-    padding: 8px;
-    background: var(--bg-overlay-3, var(--background-primary));
-    border-radius: var(--radius-md);
-    gap: 8px;
-    align-items: center;
-    justify-content: space-between
-}
-
-.container__8d997:hover {
-    background: var(--bg-overlay-5, var(--background-modifier-hover));
-    cursor: pointer
-}
-
-.container__8d997:hover .contentDescription_e07aa0 {
-    color: var(--interactive-hover)
-}
-
-.selected__31bdc {
-    background-color: var(--background-modifier-selected)
-}
-
-.selected__31bdc:hover {
-    background-color: var(--background-modifier-selected)
-}
-
-.selected__31bdc .contentDescription_e07aa0 {
-    color: var(--interactive-hover)
-}
-
-.infoSection__07f39 {
-    display: flex;
-    flex-direction: column;
-    min-width: 0
-}
-
-.userSection__9a4c1 {
-    display: flex;
-    align-items: center
-}
-
-.userName__23133 {
-    color: var(--channels-default);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 85%;
-    font-family: var(--font-primary);
-    font-size: 14px;
-    line-height: 1.2857142857142858;
-    font-weight: 500
-}
-
-.userName__23133.fontScaling__42daa {
-    font-size: .875rem
-}
-
-.contentDescription_e07aa0 {
-    color: var(--text-secondary)
-}
-
-.badgeRow__474f5 {
-    display: flex;
-    gap: 8px;
-    align-items: center
-}
-
-.badgeContainer__5607c {
-    display: flex;
-    gap: 4px;
-    align-items: center;
-    overflow: hidden;
-    flex-shrink: 0
-}
-
-.badgeContainer__5607c svg {
-    flex-shrink: 0
-}
-
-.badgeContainer__5607c div {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden
-}
-
-.badgeContainer__5607c:last-child {
-    flex-shrink: 1
-}
-
-.container__8d997 .badgeContainer__5607c {
-    margin-top: 2px;
-    margin-bottom: -2px
-}
-
-.facePile__28ee7 {
-    display: flex;
-    margin-right: 6px
-}
-
-.facePileItem__560b8:not(:first-child) {
-    margin-left: -3px
-}
-
-.additionalParticipantBadge__23702 {
-    padding: 2.25px 4.4px 2.5px 4.2px;
-    background-color: var(--background-accent);
-    border-radius: 8px;
-    margin-left: 4px
-}
-
-.additionalParticipantBadgeText__1e49a {
-    line-height: 10px
 }
 
 .loadingSpinner_a6884b {
@@ -135186,4 +135158,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.51776b1d7ef5720beaec.css.map*/
+/*# sourceMappingURL=99387.853caf63da9628c5ade5.css.map*/
