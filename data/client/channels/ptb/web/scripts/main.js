@@ -36736,7 +36736,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287228", ", Version Hash: ").concat("46053f9cee6083baddcf69b49fe744b270b63c11")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287234", ", Version Hash: ").concat("361047464aacc214ecfcaab21790ef787ede988e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86801,8 +86801,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287228", "287228"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287228")), t = 0), t
+                let t = parseInt((e = "287234", "287234"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287234")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111409,8 +111409,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287228",
-                    versionHash: "46053f9cee6083baddcf69b49fe744b270b63c11"
+                    buildNumber: "287234",
+                    versionHash: "361047464aacc214ecfcaab21790ef787ede988e"
                 }
             }
             n.r(t), n.d(t, {
@@ -146247,7 +146247,7 @@
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("48375"), n.e("14262"), n.e("95393"), n.e("22347"), n.e("66993")]).then(n.bind(n, "697849"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("48375"), n.e("95393"), n.e("14262"), n.e("22347"), n.e("66993")]).then(n.bind(n, "697849"));
                     return n => (0, i.jsx)(e, {
                         guildScheduledEventId: t,
                         parentGuildId: s,
@@ -165261,8 +165261,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713903198296",
-                                    build_number: "287228"
+                                    built_at: "1713903951465",
+                                    build_number: "287234"
                                 }
                             },
                             retries: 1
@@ -242918,7 +242918,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "46053f9cee6083baddcf69b49fe744b270b63c11"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "361047464aacc214ecfcaab21790ef787ede988e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -271442,7 +271442,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287228"
+                                build_number: "287234"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -278628,7 +278628,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287228", "287228"), 10);
+                let s = parseInt((n = "287234", "287234"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -305029,7 +305029,7 @@
                 CollectiblesCategorySkuId: function() {
                     return i
                 }
-            }), n("47120"), (r = i || (i = {})).FANTASY = "1144003461608906824", r.ANIME = "1144302037593497701", r.BREAKFAST = "1144054000099012659", r.DISXCORE = "1144058340327047249", r.HALLOWEEN = "1157410718711304313", r.FALL = "1157406994873991284", r.WINTER = "1174459301239197856", r.MONSTERS = "1179493515038818325", r.CYBERPUNK = "1197342727608746044", r.LUNAR_NEW_YEAR = "1202069709281828935", r.ELEMENTS = "1207046915880124426", r.ANIME_V2 = "1212565175790473246", r.SPECIAL_EVENTS = "1217175518781243583", r.SPRINGTOONS = "1217622942175727736", r.SHY = "1220513972189663413", r.LOFI_VIBES = "1228243842684162121"
+            }), n("47120"), (r = i || (i = {})).FANTASY = "1144003461608906824", r.ANIME = "1144302037593497701", r.BREAKFAST = "1144054000099012659", r.DISXCORE = "1144058340327047249", r.HALLOWEEN = "1157410718711304313", r.FALL = "1157406994873991284", r.WINTER = "1174459301239197856", r.MONSTERS = "1179493515038818325", r.CYBERPUNK = "1197342727608746044", r.LUNAR_NEW_YEAR = "1202069709281828935", r.ELEMENTS = "1207046915880124426", r.ANIME_V2 = "1212565175790473246", r.SPECIAL_EVENTS = "1217175518781243583", r.SPRINGTOONS = "1217622942175727736", r.SHY = "1220513972189663413", r.LOFI_VIBES = "1228243842684162121", r.GALAXY = "1232029045928099922"
         },
         979554: function(e, t, n) {
             "use strict";
@@ -306053,4 +306053,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.ccc19cc7b4a060a6fdc7.js.map
+//# sourceMappingURL=35705.6f016d3d8c713e261a2d.js.map
