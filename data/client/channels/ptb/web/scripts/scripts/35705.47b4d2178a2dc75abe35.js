@@ -17602,16 +17602,17 @@
                 c = n("442917"),
                 E = n("592125"),
                 I = n("366050"),
-                T = n("451478"),
-                f = n("518774"),
-                S = n("823379"),
-                h = n("981631"),
-                A = n("918559");
-            let m = {
-                [h.PictureInPictureComponents.VIDEO]: c.default,
-                [h.PictureInPictureComponents.EMBED_IFRAME]: u.default
+                T = n("944486"),
+                f = n("451478"),
+                S = n("518774"),
+                h = n("823379"),
+                A = n("981631"),
+                m = n("918559");
+            let N = {
+                [A.PictureInPictureComponents.VIDEO]: c.default,
+                [A.PictureInPictureComponents.EMBED_IFRAME]: u.default
             };
-            class N extends r.PureComponent {
+            class p extends r.PureComponent {
                 render() {
                     let {
                         selectedPIPWindow: e,
@@ -17623,8 +17624,8 @@
                         appContext: o,
                         roundCorners: l
                     } = this.props;
-                    return (0, i.jsx)(f.default, {
-                        pictureInPictureComponents: m,
+                    return (0, i.jsx)(S.default, {
+                        pictureInPictureComponents: N,
                         selectedPIPWindow: e,
                         pipWindows: t,
                         maxX: n,
@@ -17648,39 +17649,39 @@
                     }) : t[n] = i
                 }
             }
-            t.default = s.default.connectStores([d.default, o.default, T.default, _.default, E.default, I.default], e => {
+            t.default = s.default.connectStores([d.default, o.default, f.default, _.default, E.default, I.default, T.default], e => {
                 var t, n, i;
                 let r;
                 let s, {
                         showInPopoutWindow: a = !1,
                         disallowTextActivity: u = !1
                     } = e,
-                    c = d.default.getWindowOpen(h.PopoutWindowKeys.CHANNEL_CALL_POPOUT),
-                    f = o.default.getCurrentEmbeddedActivity(),
-                    m = null != f && !(0, l.default)(f.channelId, E.default),
-                    N = o.default.getActivityPanelMode(),
-                    p = null != f && m && N === A.ActivityPanelModes.PANEL,
-                    O = T.default.windowSize();
-                if (c && (u && p || !p)) {
-                    let e = d.default.getWindow(h.PopoutWindowKeys.CHANNEL_CALL_POPOUT);
-                    O = null == e ? O : {
+                    c = d.default.getWindowOpen(A.PopoutWindowKeys.CHANNEL_CALL_POPOUT),
+                    S = o.default.getCurrentEmbeddedActivity(),
+                    N = null != S && !(0, l.default)(S.channelId, E.default, T.default),
+                    p = o.default.getActivityPanelMode(),
+                    O = null != S && N && p === m.ActivityPanelModes.PANEL,
+                    R = f.default.windowSize();
+                if (c && (u && O || !O)) {
+                    let e = d.default.getWindow(A.PopoutWindowKeys.CHANNEL_CALL_POPOUT);
+                    R = null == e ? R : {
                         width: e.innerWidth,
                         height: e.innerHeight
                     }
-                }!u && p ? r = h.AppContext.APP : a && (r = h.AppContext.POPOUT), s = u && m ? null : m || !c || a ? null != f && N === A.ActivityPanelModes.PANEL && m ? null !== (t = I.default.pipActivityWindow) && void 0 !== t ? t : I.default.pipVideoWindow : null !== (n = I.default.pipVideoWindow) && void 0 !== n ? n : I.default.pipActivityWindow : null;
-                let R = Array.from(I.default.pipWindows.values()),
-                    C = R.find(e => e.component === h.PictureInPictureComponents.VIDEO);
+                }!u && O ? r = A.AppContext.APP : a && (r = A.AppContext.POPOUT), s = u && N ? null : N || !c || a ? null != S && p === m.ActivityPanelModes.PANEL && N ? null !== (t = I.default.pipActivityWindow) && void 0 !== t ? t : I.default.pipVideoWindow : null !== (n = I.default.pipVideoWindow) && void 0 !== n ? n : I.default.pipActivityWindow : null;
+                let C = Array.from(I.default.pipWindows.values()),
+                    g = C.find(e => e.component === A.PictureInPictureComponents.VIDEO);
                 return {
                     selectedPIPWindow: s,
-                    pipWindows: [C, R.find(e => e.component === h.PictureInPictureComponents.EMBED_IFRAME)].filter(S.isNotNullish),
-                    maxX: O.width,
-                    maxY: O.height,
+                    pipWindows: [g, C.find(e => e.component === A.PictureInPictureComponents.EMBED_IFRAME)].filter(h.isNotNullish),
+                    maxX: R.width,
+                    maxY: R.height,
                     theme: _.default.theme,
                     dockedRect: I.default.getDockedRect(null !== (i = null == s ? void 0 : s.id) && void 0 !== i ? i : ""),
                     appContext: r,
                     roundCorners: !0
                 }
-            })(N)
+            })(p)
         },
         788307: function(e, t, n) {
             "use strict";
@@ -36735,7 +36736,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287153", ", Version Hash: ").concat("63ed10d4545e200c9853e2f9d1ba646d852d17eb")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287159", ", Version Hash: ").concat("48128498768b8129a7f496a40145d7827fa7e7c6")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -67966,13 +67967,14 @@
             });
             var i = n("106351"),
                 r = n("592125"),
-                s = n("867176");
+                s = n("944486");
 
             function a(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.default,
-                    n = t.getChannel(e),
-                    a = (0, s.isActivitiesInTextEnabled)(n, "isVoiceActivityChannel");
-                return null != n && (n.type === i.ChannelTypes.GUILD_VOICE || n.isPrivate() && !a)
+                    n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.default,
+                    a = t.getChannel(e),
+                    o = n.getVoiceChannelId();
+                return null != a && (a.type === i.ChannelTypes.GUILD_VOICE || a.isPrivate() && a.id === o)
             }
         },
         74433: function(e, t, n) {
@@ -86794,8 +86796,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287153", "287153"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287153")), t = 0), t
+                let t = parseInt((e = "287159", "287159"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287159")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111402,8 +111404,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287153",
-                    versionHash: "63ed10d4545e200c9853e2f9d1ba646d852d17eb"
+                    buildNumber: "287159",
+                    versionHash: "48128498768b8129a7f496a40145d7827fa7e7c6"
                 }
             }
             n.r(t), n.d(t, {
@@ -165248,8 +165250,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713896701883",
-                                    build_number: "287153"
+                                    built_at: "1713897218693",
+                                    build_number: "287159"
                                 }
                             },
                             retries: 1
@@ -242797,7 +242799,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "63ed10d4545e200c9853e2f9d1ba646d852d17eb"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "48128498768b8129a7f496a40145d7827fa7e7c6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -271321,7 +271323,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287153"
+                                build_number: "287159"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -278507,7 +278509,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287153", "287153"), 10);
+                let s = parseInt((n = "287159", "287159"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -305932,4 +305934,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.e57bbd26067821e7bee8.js.map
+//# sourceMappingURL=35705.47b4d2178a2dc75abe35.js.map
