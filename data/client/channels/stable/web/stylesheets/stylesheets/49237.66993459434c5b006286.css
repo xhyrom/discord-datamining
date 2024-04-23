@@ -538,12 +538,7 @@
 }
 
 .modalHeader__4621b {
-    justify-content: center;
     margin-top: var(--spacing-16)
-}
-
-.modalFooter__45970 {
-    justify-content: space-between
 }
 
 .footerLink__08439 {
@@ -22171,6 +22166,15 @@ span.clanTag_c8f97c {
     margin-top: 0
 }
 
+div.clanTagBadgeContainer_fb8c5b {
+    margin-left: 0
+}
+
+.clanTagBadge_e7c198 {
+    height: 16px;
+    width: 16px
+}
+
 .usernameFont__4c086 {
     font-size: 14px;
     line-height: 18px;
@@ -28170,4 +28174,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.3aac7b4e4a6663652bbf.css.map*/
+/*# sourceMappingURL=49237.66993459434c5b006286.css.map*/

@@ -1128,7 +1128,6 @@
             "use strict";
             e.exports = {
                 footerLink: "footerLink__08439",
-                modalFooter: "modalFooter__45970",
                 modalHeader: "modalHeader__4621b"
             }
         },
@@ -4001,6 +4000,8 @@
                 avatarSmall: "avatarSmall__85dc8",
                 avatarSpeaking: "avatarSpeaking_f239de",
                 clanTag: "clanTag_c8f97c",
+                clanTagBadge: "clanTagBadge_e7c198",
+                clanTagBadgeContainer: "clanTagBadgeContainer_fb8c5b",
                 clickable: "clickable_a2c5ad",
                 content: "content__3b07e",
                 disabled: "disabled__50fd0",
