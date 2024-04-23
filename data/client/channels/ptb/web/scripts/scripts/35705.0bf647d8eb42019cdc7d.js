@@ -36736,7 +36736,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287159", ", Version Hash: ").concat("48128498768b8129a7f496a40145d7827fa7e7c6")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287163", ", Version Hash: ").concat("466e22ad8666ee86e5af01675a397168711b2fb2")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -44662,7 +44662,8 @@
                 CHURN_DISCOUNT_REDEMPTION_ERROR: "Something went wrong. Try again.",
                 PREMIUM_TIER_CARD_ANNUAL_DISCOUNT_HEADER: "Your **{percent, number}% discount** will end 1 year after purchase. After that you'll be charged **{regularPrice}**, + applicable taxes.",
                 BILLING_ANNUAL_DISCOUNT_PAYMENT_MODAL_INFO: "Your first year of Nitro is **{discountedPrice}**. After that it will be **{regularPrice}, billed yearly.**",
-                BILLING_ANNUAL_DISCOUNT_YEARLY_PRICE: "{discountedPrice} / year\n\n{regularPrice}/year after first year",
+                BILLING_ANNUAL_DISCOUNT_TIER_CARD_YEARLY_PRICE: "**{discountedPrice}/ first year**",
+                BILLING_ANNUAL_DISCOUNT_TIER_CARD_YEARLY_PRICE_SUBTEXT: "After that {regularPrice} / year",
                 BILLING_ANNUAL_DISCOUNT_YEARLY_PRICE_SUBTEXT: "{regularPrice}/year after first year",
                 PREMIUM_TIER_CARD_TRIAL_HEADER_BEFORE_REDEMPTION_NEW: "Try {planName} for {duration} on us. Then !!{price}!!.",
                 PREMIUM_TIER_CARD_TRIAL_HEADER_AFTER_REDEMPTION: "Your **free trial ends {remainingTime, plural, =0 {today} one {in # day} other {in # days}}**. After that, you’ll be charged !!{price}!!.",
@@ -86796,8 +86797,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287159", "287159"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287159")), t = 0), t
+                let t = parseInt((e = "287163", "287163"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287163")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111404,8 +111405,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287159",
-                    versionHash: "48128498768b8129a7f496a40145d7827fa7e7c6"
+                    buildNumber: "287163",
+                    versionHash: "466e22ad8666ee86e5af01675a397168711b2fb2"
                 }
             }
             n.r(t), n.d(t, {
@@ -165250,8 +165251,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713897218693",
-                                    build_number: "287159"
+                                    built_at: "1713897664587",
+                                    build_number: "287163"
                                 }
                             },
                             retries: 1
@@ -179019,47 +179020,60 @@
                 s = n.n(r),
                 a = n("442837"),
                 o = n("481060"),
-                l = n("509545"),
-                u = n("74538"),
-                d = n("424082"),
-                _ = n("104494"),
-                c = n("639119"),
-                E = n("474936"),
-                I = n("689938"),
-                T = n("13859");
+                l = n("911969"),
+                u = n("509545"),
+                d = n("78839"),
+                _ = n("74538"),
+                c = n("937615"),
+                E = n("104494"),
+                I = n("639119"),
+                T = n("230927"),
+                f = n("474936"),
+                S = n("689938"),
+                h = n("13859");
             t.default = function(e) {
+                var t, n, r, A;
                 let {
-                    subscriptionTier: t,
-                    interval: n = E.SubscriptionIntervalTypes.MONTH,
-                    className: r,
-                    isGift: f = !1,
-                    variant: S,
-                    priceOptions: h
-                } = e, A = (0, _.usePremiumAnnualDiscountOffer)(), m = (0, c.usePremiumTrialOffer)(), {
-                    annualDiscountPercentage: N
-                } = (0, d.getAnnualDiscountsExperimentConfig)("PremiumManager");
-                if (!(0, a.useStateFromStores)([l.default], () => l.default.isLoadedForPremiumSKUs())) return (0, i.jsx)(o.Spinner, {
+                    subscriptionTier: m,
+                    interval: N = f.SubscriptionIntervalTypes.MONTH,
+                    className: p,
+                    isGift: O = !1,
+                    variant: R,
+                    priceOptions: C
+                } = e, g = (0, E.usePremiumAnnualDiscountOffer)(), L = (0, I.usePremiumTrialOffer)(), D = (0, a.useStateFromStores)([u.default], () => u.default.isLoadedForPremiumSKUs()), v = (0, a.useStateFromStores)([d.default], () => d.default.getPremiumTypeSubscription()), {
+                    annualInvoicePreview: M
+                } = (0, T.useGetAnnualDiscountInvoicePreview)({
+                    priceOptions: null != C ? C : {
+                        currency: "null"
+                    },
+                    preventFetch: null == g || null == C || null != L || m !== f.PremiumSubscriptionSKUs.TIER_2 || N !== f.SubscriptionIntervalTypes.YEAR,
+                    selectedSkuId: f.PremiumSubscriptionSKUs.TIER_2,
+                    planGroup: f.ORDERED_PREMIUM_SUBSCRIPTION_PLANS,
+                    activeSubscription: v
+                }), y = null == M ? void 0 : null === (A = M.invoiceItems) || void 0 === A ? void 0 : null === (r = A.find(e => e.subscriptionPlanId === f.SubscriptionPlans.PREMIUM_YEAR_TIER_2)) || void 0 === r ? void 0 : null === (n = r.discounts) || void 0 === n ? void 0 : null === (t = n.find(e => e.type === l.InvoiceDiscountTypes.SUBSCRIPTION_PLAN)) || void 0 === t ? void 0 : t.amount;
+                if (!D) return (0, i.jsx)(o.Spinner, {
                     type: o.Spinner.Type.PULSING_ELLIPSIS,
-                    className: T.priceSpinner
+                    className: h.priceSpinner
                 });
-                let p = l.default.getForSkuAndInterval((0, u.castPremiumSubscriptionAsSkuId)(t), n),
-                    O = null != p ? (0, u.getFormattedPriceForPlan)(p, h, !1, f) : null,
-                    R = t !== E.PremiumSubscriptionSKUs.TIER_2 || n !== E.SubscriptionIntervalTypes.YEAR || null != m || f || null == A ? null : N;
+                let P = u.default.getForSkuAndInterval((0, _.castPremiumSubscriptionAsSkuId)(m), N),
+                    U = null != y ? (0, _.getPrice)(f.SubscriptionPlans.PREMIUM_YEAR_TIER_2, !1, O, C) : null,
+                    b = null != P ? (0, _.getFormattedPriceForPlan)(P, C, !1, O) : null;
                 return (0, i.jsx)(o.Heading, {
                     color: "always-white",
-                    variant: null != S ? S : "heading-md/medium",
-                    className: s()(T.pricePerInterval, r),
-                    children: null != R ? (0, i.jsx)("div", {
-                        className: T.annualDiscountString,
-                        children: I.default.Messages.PREMIUM_TIER_CARD_ANNUAL_DISCOUNT_HEADER.format({
-                            percent: R,
-                            regularPrice: O
-                        })
+                    variant: null != R ? R : "heading-md/medium",
+                    className: s()(h.pricePerInterval, p),
+                    children: null != U && null != y ? (0, i.jsxs)("div", {
+                        className: h.annualDiscountString,
+                        children: [S.default.Messages.BILLING_ANNUAL_DISCOUNT_TIER_CARD_YEARLY_PRICE.format({
+                            discountedPrice: (0, c.formatPrice)(U.amount - y, U.currency)
+                        }), S.default.Messages.BILLING_ANNUAL_DISCOUNT_TIER_CARD_YEARLY_PRICE_SUBTEXT.format({
+                            regularPrice: b
+                        })]
                     }) : (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)("span", {
-                            className: T.price,
-                            children: O
-                        }), " / ", (0, u.getIntervalStringAsNoun)(n)]
+                            className: h.price,
+                            children: b
+                        }), " / ", (0, _.getIntervalStringAsNoun)(N)]
                     })
                 })
             }
@@ -179753,6 +179767,63 @@
                         })]
                     })]
                 })
+            }
+        },
+        230927: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                useGetAnnualDiscountInvoicePreview: function() {
+                    return u
+                }
+            }), n("47120");
+            var i = n("442837"),
+                r = n("509545"),
+                s = n("74538"),
+                a = n("374649"),
+                o = n("104494"),
+                l = n("474936");
+
+            function u(e) {
+                var t, n;
+                let {
+                    priceOptions: u,
+                    preventFetch: d,
+                    selectedSkuId: _,
+                    isGift: c = !1,
+                    planGroup: E,
+                    activeSubscription: I
+                } = e, T = (0, o.usePremiumAnnualDiscountOffer)(), f = (0, i.useStateFromStores)([r.default], () => r.default.get(l.SubscriptionPlans.PREMIUM_YEAR_TIER_2)), S = null == T ? void 0 : null === (t = T.discount) || void 0 === t ? void 0 : t.plan_ids.some(e => l.SubscriptionPlanInfo[e].skuId === _), h = null != I && null != f ? (0, s.getItemsWithUpsertedPlanIdForGroup)(I, f.id, 1, new Set(E)) : null, A = !c && null != T && null != _ && S, [m, N] = (0, a.useSubscriptionInvoicePreview)({
+                    subscriptionId: null !== (n = null == I ? void 0 : I.id) && void 0 !== n ? n : "null",
+                    items: h,
+                    renewal: !1,
+                    applyEntitlements: !0,
+                    paymentSourceId: u.paymentSourceId,
+                    currency: u.currency,
+                    preventFetch: !A || null == I || d
+                }), [p, O] = (0, a.useSubscriptionInvoicePreview)({
+                    items: [{
+                        planId: l.SubscriptionPlans.PREMIUM_YEAR_TIER_2,
+                        quantity: 1
+                    }],
+                    renewal: !1,
+                    applyEntitlements: !0,
+                    paymentSourceId: u.paymentSourceId,
+                    currency: u.currency,
+                    preventFetch: !A || null != I || d
+                });
+                return null != m ? {
+                    annualInvoicePreview: m,
+                    annualInvoicePreviewError: N,
+                    isEligibleForAnnualDiscount: A
+                } : null != p ? {
+                    annualInvoicePreview: p,
+                    annualInvoicePreviewError: O,
+                    isEligibleForAnnualDiscount: A
+                } : {
+                    annualInvoicePreview: null,
+                    annualInvoicePreviewError: null,
+                    isEligibleForAnnualDiscount: A
+                }
             }
         },
         801249: function(e, t, n) {
@@ -242799,7 +242870,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "48128498768b8129a7f496a40145d7827fa7e7c6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "466e22ad8666ee86e5af01675a397168711b2fb2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -271323,7 +271394,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287159"
+                                build_number: "287163"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -278509,7 +278580,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287159", "287159"), 10);
+                let s = parseInt((n = "287163", "287163"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -305934,4 +306005,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.47b4d2178a2dc75abe35.js.map
+//# sourceMappingURL=35705.0bf647d8eb42019cdc7d.js.map

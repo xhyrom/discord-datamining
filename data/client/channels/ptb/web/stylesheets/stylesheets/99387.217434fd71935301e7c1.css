@@ -7557,7 +7557,8 @@
 }
 
 .annualDiscountString__242a5 {
-    max-width: 180px
+    display: flex;
+    flex-direction: column
 }
 
 .container__19ab8 {
@@ -135039,4 +135040,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.8fba552b6b6f056ca2a9.css.map*/
+/*# sourceMappingURL=99387.217434fd71935301e7c1.css.map*/
