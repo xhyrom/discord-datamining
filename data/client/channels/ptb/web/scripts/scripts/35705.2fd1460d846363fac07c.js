@@ -18807,6 +18807,7 @@
                     position: "bottom",
                     shouldShow: eS,
                     nudgeAlignIntoViewport: !1,
+                    useRawTargetDimensions: !0,
                     animation: l.Popout.Animation.NONE,
                     spacing: -3,
                     children: () => (0, i.jsx)(N.default, {
@@ -26247,6 +26248,9 @@
                 return n
             }
             class R extends(i = s.Component) {
+                formatDimension(e) {
+                    return this.props.useRawTargetDimensions ? e : Math.ceil(e)
+                }
                 nudgeLeftAlignment(e, t, n) {
                     let {
                         nudgeAlignIntoViewport: i
@@ -26262,8 +26266,8 @@
                     } = this.props;
                     switch (r) {
                         case "left": {
-                            let r = Math.ceil(this.nudgeLeftAlignment(e.left, t, n)),
-                                s = Math.ceil(e.left) - r;
+                            let r = this.formatDimension(this.nudgeLeftAlignment(e.left, t, n)),
+                                s = this.formatDimension(e.left) - r;
                             return {
                                 style: {
                                     ...i,
@@ -26273,7 +26277,7 @@
                             }
                         }
                         case "right": {
-                            let t = Math.ceil(n.offsetWidth - e.right);
+                            let t = this.formatDimension(n.offsetWidth - e.right);
                             return {
                                 style: {
                                     ...i,
@@ -26284,8 +26288,8 @@
                         }
                         case "center": {
                             let r = e.left + (e.width - t.offsetWidth) / 2,
-                                s = Math.ceil(this.nudgeLeftAlignment(r, t, n)),
-                                a = Math.ceil(r) - s;
+                                s = this.formatDimension(this.nudgeLeftAlignment(r, t, n)),
+                                a = this.formatDimension(r) - s;
                             return {
                                 style: {
                                     ...i,
@@ -26323,8 +26327,8 @@
                     } = this.props;
                     switch (r) {
                         case "top": {
-                            let r = Math.ceil(this.nudgeTopAlignment(e.top, t, n)),
-                                s = Math.ceil(e.top) - r;
+                            let r = this.formatDimension(this.nudgeTopAlignment(e.top, t, n)),
+                                s = this.formatDimension(e.top) - r;
                             return {
                                 style: {
                                     ...i,
@@ -26334,8 +26338,8 @@
                             }
                         }
                         case "bottom": {
-                            let r = Math.ceil(this.nudgeBottomAlignment(e.bottom, t, n)),
-                                s = Math.ceil(e.bottom) - r;
+                            let r = this.formatDimension(this.nudgeBottomAlignment(e.bottom, t, n)),
+                                s = this.formatDimension(e.bottom) - r;
                             return {
                                 style: {
                                     ...i,
@@ -26346,8 +26350,8 @@
                         }
                         case "center": {
                             let r = e.top + (e.height - t.offsetHeight) / 2,
-                                s = Math.ceil(this.nudgeTopAlignment(r, t, n)),
-                                a = Math.ceil(r) - s;
+                                s = this.formatDimension(this.nudgeTopAlignment(r, t, n)),
+                                a = this.formatDimension(r) - s;
                             return {
                                 style: {
                                     ...i,
@@ -29775,19 +29779,20 @@
                         position: e,
                         align: t,
                         nudgeAlignIntoViewport: n,
-                        spacing: i,
-                        autoInvert: s,
-                        fixed: a,
-                        positionKey: o,
-                        disablePointerEvents: l,
-                        layerContext: u
+                        useRawTargetDimensions: i,
+                        spacing: s,
+                        autoInvert: a,
+                        fixed: o,
+                        positionKey: l,
+                        disablePointerEvents: u,
+                        layerContext: d
                     } = this.props, {
-                        resizeKey: d,
-                        isLoading: _,
-                        shouldShowLoadingState: c
+                        resizeKey: _,
+                        isLoading: c,
+                        shouldShowLoadingState: T
                     } = this.state;
-                    return _ && !c ? null : (0, r.jsx)(E.Layer, {
-                        layerContext: null != u ? u : h.appLayerContext,
+                    return c && !T ? null : (0, r.jsx)(E.Layer, {
+                        layerContext: null != d ? d : h.appLayerContext,
                         children: (0, r.jsx)(I.ReferencePositionLayer, {
                             ref: this.layerRef,
                             onMount: this.handlePopoutShow,
@@ -29797,11 +29802,12 @@
                             position: e,
                             align: t,
                             nudgeAlignIntoViewport: n,
-                            spacing: i,
-                            autoInvert: s,
-                            fixed: a,
-                            positionKey: null != o ? o : String(d),
-                            disablePointerEvents: l,
+                            useRawTargetDimensions: i,
+                            spacing: s,
+                            autoInvert: a,
+                            fixed: o,
+                            positionKey: null != l ? l : String(_),
+                            disablePointerEvents: u,
                             onPositionChange: this.handlePopoutPositionChange,
                             children: this.renderPopout
                         })
@@ -29984,20 +29990,21 @@
                         autoInvert: o,
                         fixed: l,
                         nudgeAlignIntoViewport: d,
-                        spacing: _,
-                        onShiftClick: c,
-                        positionKey: E,
-                        preload: I,
-                        disablePointerEvents: T,
-                        ignoreModalClicks: f,
-                        closeOnScroll: S,
-                        useMouseEnter: h,
-                        renderPopout: A,
-                        layerContext: m
+                        useRawTargetDimensions: _,
+                        spacing: c,
+                        onShiftClick: E,
+                        positionKey: I,
+                        preload: T,
+                        disablePointerEvents: f,
+                        ignoreModalClicks: S,
+                        closeOnScroll: h,
+                        useMouseEnter: A,
+                        renderPopout: m,
+                        layerContext: N
                     } = this.props;
                     return (0, a.jsx)(u.BasePopout, {
                         ref: this.ref,
-                        preload: I,
+                        preload: T,
                         position: n,
                         align: null != s ? s : function(e) {
                             switch (e) {
@@ -30016,18 +30023,19 @@
                         autoInvert: o,
                         fixed: l,
                         nudgeAlignIntoViewport: d,
+                        useRawTargetDimensions: _,
                         renderPopout: this.renderPopout,
-                        spacing: _,
-                        shouldShow: null != A && t,
+                        spacing: c,
+                        shouldShow: null != m && t,
                         onRequestOpen: i,
                         onRequestClose: r,
-                        onShiftClick: c,
-                        positionKey: E,
-                        disablePointerEvents: T,
-                        ignoreModalClicks: f,
-                        closeOnScroll: S,
-                        useMouseEnter: h,
-                        layerContext: m,
+                        onShiftClick: E,
+                        positionKey: I,
+                        disablePointerEvents: f,
+                        ignoreModalClicks: S,
+                        closeOnScroll: h,
+                        useMouseEnter: A,
+                        layerContext: N,
                         children: e
                     })
                 }
@@ -36682,7 +36690,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287008", ", Version Hash: ").concat("0ada3267f0e8f368151acd530516c55c303ae420")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287013", ", Version Hash: ").concat("09a828990443fa98a69cf354de484ce7923fc931")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86725,8 +86733,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287008", "287008"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287008")), t = 0), t
+                let t = parseInt((e = "287013", "287013"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287013")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111297,8 +111305,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287008",
-                    versionHash: "0ada3267f0e8f368151acd530516c55c303ae420"
+                    buildNumber: "287013",
+                    versionHash: "09a828990443fa98a69cf354de484ce7923fc931"
                 }
             }
             n.r(t), n.d(t, {
@@ -164773,8 +164781,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713884172016",
-                                    build_number: "287008"
+                                    built_at: "1713885099716",
+                                    build_number: "287013"
                                 }
                             },
                             retries: 1
@@ -242324,7 +242332,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0ada3267f0e8f368151acd530516c55c303ae420"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "09a828990443fa98a69cf354de484ce7923fc931"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270848,7 +270856,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287008"
+                                build_number: "287013"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -278033,7 +278041,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287008", "287008"), 10);
+                let s = parseInt((n = "287013", "287013"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -305458,4 +305466,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.6a62d68d728eeb5dcb8d.js.map
+//# sourceMappingURL=35705.2fd1460d846363fac07c.js.map
