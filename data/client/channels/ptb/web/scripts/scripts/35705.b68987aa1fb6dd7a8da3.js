@@ -36736,7 +36736,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287315", ", Version Hash: ").concat("b7cd16a605636985fe193c3eb5d149421b0abaad")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287325", ", Version Hash: ").concat("cd5f31e0ce3a2548b1e41d85a9214af6328e1d45")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86804,8 +86804,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287315", "287315"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287315")), t = 0), t
+                let t = parseInt((e = "287325", "287325"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287325")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111797,8 +111797,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287315",
-                    versionHash: "b7cd16a605636985fe193c3eb5d149421b0abaad"
+                    buildNumber: "287325",
+                    versionHash: "cd5f31e0ce3a2548b1e41d85a9214af6328e1d45"
                 }
             }
             n.r(t), n.d(t, {
@@ -165689,8 +165689,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713910933182",
-                                    build_number: "287315"
+                                    built_at: "1713911653235",
+                                    build_number: "287325"
                                 }
                             },
                             retries: 1
@@ -203151,7 +203151,7 @@
                     CDN_HOST: n
                 } = window.GLOBAL_ENV;
                 return null != n ? "".concat(location.protocol, "//").concat(n, "/badge-icons/").concat(e, ".png") : "".concat(location.protocol).concat(t).concat(f.Endpoints.BADGE_ICON(e))
-            }(i = u || (u = {})).USER_INFO = "USER_INFO", i.USER_INFO_CONNECTIONS = "USER_INFO_CONNECTIONS", i.ACTIVITY = "ACTIVITY", i.MUTUAL_GUILDS = "MUTUAL_GUILDS", i.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", i.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", (d || (d = {})).RECENT_GAMES = "RECENT_GAMES", (r = _ || (_ = {})).POPOUT = "POPOUT", r.MODAL = "MODAL", r.SETTINGS = "SETTINGS", r.PANEL = "PANEL", r.CARD = "CARD", r.POMELO_POPOUT = "POMELO_POPOUT", r.CANCEL_MODAL = "CANCEL_MODAL", r.BITE_SIZE = "BITE_SIZE", r.FULL_SIZE = "FULL_SIZE", (s = c || (c = {})).POPOUT = "POPOUT", s.BITE_SIZE_POPOUT = "BITE_SIZE_POPOUT", s.MODAL = "MODAL", s.SIMPLIFIED_MODAL = "SIMPLIFIED_MODAL", s.DM_PANEL = "DM_PANEL", s.ACCOUNT_POPOUT = "ACCOUNT_POPOUT", s.ACTION_SHEET = "ACTION_SHEET", (a = E || (E = {}))[a.NICKNAME = 0] = "NICKNAME", a[a.PRONOUNS = 1] = "PRONOUNS", a[a.AVATAR = 2] = "AVATAR", a[a.ANIMATED_AVATAR = 3] = "ANIMATED_AVATAR", a[a.BANNER = 4] = "BANNER", a[a.ANIMATED_BANNER = 5] = "ANIMATED_BANNER", a[a.BIO = 6] = "BIO", a[a.THEME = 7] = "THEME", a[a.AVATAR_DECORATION = 8] = "AVATAR_DECORATION", a[a.PROFILE_EFFECT = 9] = "PROFILE_EFFECT", (o = I || (I = {})).VIEW = "VIEW", o.SEND_MESSAGE = "SEND_MESSAGE", o.SEND_DIRECT_MESSAGE = "SEND_DIRECT_MESSAGE", o.SEND_FRIEND_REQUEST = "SEND_FRIEND_REQUEST", o.ACCEPT_FRIEND_REQUEST = "ACCEPT_FRIEND_REQUEST", o.IGNORE_FRIEND_REQUEST = "IGNORE_FRIEND_REQUEST", o.CANCEL_FRIEND_REQUEST = "CANCEL_FRIEND_REQUEST", o.REMOVE_FRIEND = "REMOVE_FRIEND", o.BLOCK = "BLOCK", o.UNBLOCK = "UNBLOCK", o.REPORT = "REPORT", o.COPY_USERNAME = "COPY_USERNAME", o.COPY_USER_ID = "COPY_USER_ID", o.PRESS_VIEW_PROFILE = "PRESS_VIEW_PROFILE", o.PRESS_VIEW_MAIN_PROFILE = "PRESS_VIEW_MAIN_PROFILE", o.PRESS_VIEW_SERVER_PROFILE = "PRESS_VIEW_SERVER_PROFILE", o.PRESS_OPTIONS = "PRESS_OPTIONS", o.PRESS_BADGE = "PRESS_BADGE", o.PRESS_SECTION = "PRESS_SECTION", o.PRESS_PRONOUNS = "PRESS_PRONOUNS", o.PRESS_PREMIUM_UPSELL = "PRESS_PREMIUM_UPSELL", o.PRESS_ADD_NOTE = "PRESS_ADD_NOTE", o.PRESS_SET_STATUS = "PRESS_SET_STATUS", o.PRESS_SET_CUSTOM_STATUS = "PRESS_SET_CUSTOM_STATUS", o.PRESS_SWITCH_ACCOUNTS = "PRESS_SWITCH_ACCOUNTS", o.PRESS_SET_FRIEND_NICKNAME = "PRESS_SET_FRIEND_NICKNAME", o.PRESS_INVITE_TO_SERVER = "PRESS_INVITE_TO_SERVER", o.PRESS_MOD_VIEW = "PRESS_MOD_VIEW", o.JOIN_ACTIVITY = "JOIN_ACTIVITY", o.SET_NOTE = "SET_NOTE", o.SET_VOLUME = "SET_VOLUME", o.EDIT_PROFILE = "EDIT_PROFILE", o.EDIT_GUILD_PROFILE = "EDIT_GUILD_PROFILE", o.GIFT_PREMIUM = "GIFT_PREMIUM", o.VOICE_CALL = "VOICE_CALL", o.VIDEO_CALL = "VIDEO_CALL", o.MUTE = "MUTE", o.MUTE_SOUNDBOARD = "MUTE_SOUNDBOARD", o.DISABLE_VIDEO = "DISABLE_VIDEO", o.DEAFEN = "DEAFEN", o.DISCONNECT = "DISCONNECT", o.ADD_ROLE = "ADD_ROLE", o.REMOVE_ROLE = "REMOVE_ROLE", (l = T || (T = {})).VOICE = "VOICE", l.PLAYING = "PLAYING", l.STREAMING = "STREAMING", l.LISTENING = "LISTENING", l.WATCHING = "WATCHING", l.CUSTOM_STATUS = "CUSTOM_STATUS", l.COMPETING = "COMPETING", l.HANG_STATUS = "HANG_STATUS"
+            }(i = u || (u = {})).USER_INFO = "USER_INFO", i.USER_INFO_CONNECTIONS = "USER_INFO_CONNECTIONS", i.ACTIVITY = "ACTIVITY", i.MUTUAL_GUILDS = "MUTUAL_GUILDS", i.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", i.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", (d || (d = {})).RECENT_GAMES = "RECENT_GAMES", (r = _ || (_ = {})).POPOUT = "POPOUT", r.MODAL = "MODAL", r.SETTINGS = "SETTINGS", r.PANEL = "PANEL", r.CARD = "CARD", r.POMELO_POPOUT = "POMELO_POPOUT", r.CANCEL_MODAL = "CANCEL_MODAL", r.BITE_SIZE = "BITE_SIZE", r.FULL_SIZE = "FULL_SIZE", (s = c || (c = {})).POPOUT = "POPOUT", s.BITE_SIZE_POPOUT = "BITE_SIZE_POPOUT", s.MODAL = "MODAL", s.SIMPLIFIED_MODAL = "SIMPLIFIED_MODAL", s.DM_PANEL = "DM_PANEL", s.ACCOUNT_POPOUT = "ACCOUNT_POPOUT", s.ACTION_SHEET = "ACTION_SHEET", (a = E || (E = {}))[a.NICKNAME = 0] = "NICKNAME", a[a.PRONOUNS = 1] = "PRONOUNS", a[a.AVATAR = 2] = "AVATAR", a[a.ANIMATED_AVATAR = 3] = "ANIMATED_AVATAR", a[a.BANNER = 4] = "BANNER", a[a.ANIMATED_BANNER = 5] = "ANIMATED_BANNER", a[a.BIO = 6] = "BIO", a[a.THEME = 7] = "THEME", a[a.AVATAR_DECORATION = 8] = "AVATAR_DECORATION", a[a.PROFILE_EFFECT = 9] = "PROFILE_EFFECT", (o = I || (I = {})).VIEW = "VIEW", o.SEND_MESSAGE = "SEND_MESSAGE", o.SEND_DIRECT_MESSAGE = "SEND_DIRECT_MESSAGE", o.SEND_FRIEND_REQUEST = "SEND_FRIEND_REQUEST", o.ACCEPT_FRIEND_REQUEST = "ACCEPT_FRIEND_REQUEST", o.IGNORE_FRIEND_REQUEST = "IGNORE_FRIEND_REQUEST", o.CANCEL_FRIEND_REQUEST = "CANCEL_FRIEND_REQUEST", o.REMOVE_FRIEND = "REMOVE_FRIEND", o.BLOCK = "BLOCK", o.UNBLOCK = "UNBLOCK", o.REPORT = "REPORT", o.COPY_USERNAME = "COPY_USERNAME", o.COPY_USER_ID = "COPY_USER_ID", o.PRESS_VIEW_PROFILE = "PRESS_VIEW_PROFILE", o.PRESS_VIEW_MAIN_PROFILE = "PRESS_VIEW_MAIN_PROFILE", o.PRESS_VIEW_SERVER_PROFILE = "PRESS_VIEW_SERVER_PROFILE", o.PRESS_OPTIONS = "PRESS_OPTIONS", o.HOVER_BADGE = "HOVER_BADGE", o.PRESS_BADGE = "PRESS_BADGE", o.PRESS_SECTION = "PRESS_SECTION", o.PRESS_PRONOUNS = "PRESS_PRONOUNS", o.PRESS_PREMIUM_UPSELL = "PRESS_PREMIUM_UPSELL", o.PRESS_ADD_NOTE = "PRESS_ADD_NOTE", o.PRESS_SET_STATUS = "PRESS_SET_STATUS", o.PRESS_SET_CUSTOM_STATUS = "PRESS_SET_CUSTOM_STATUS", o.PRESS_SWITCH_ACCOUNTS = "PRESS_SWITCH_ACCOUNTS", o.PRESS_SET_FRIEND_NICKNAME = "PRESS_SET_FRIEND_NICKNAME", o.PRESS_INVITE_TO_SERVER = "PRESS_INVITE_TO_SERVER", o.PRESS_MOD_VIEW = "PRESS_MOD_VIEW", o.JOIN_ACTIVITY = "JOIN_ACTIVITY", o.SET_NOTE = "SET_NOTE", o.SET_VOLUME = "SET_VOLUME", o.EDIT_PROFILE = "EDIT_PROFILE", o.EDIT_GUILD_PROFILE = "EDIT_GUILD_PROFILE", o.GIFT_PREMIUM = "GIFT_PREMIUM", o.VOICE_CALL = "VOICE_CALL", o.VIDEO_CALL = "VIDEO_CALL", o.MUTE = "MUTE", o.MUTE_SOUNDBOARD = "MUTE_SOUNDBOARD", o.DISABLE_VIDEO = "DISABLE_VIDEO", o.DEAFEN = "DEAFEN", o.DISCONNECT = "DISCONNECT", o.ADD_ROLE = "ADD_ROLE", o.REMOVE_ROLE = "REMOVE_ROLE", (l = T || (T = {})).VOICE = "VOICE", l.PLAYING = "PLAYING", l.STREAMING = "STREAMING", l.LISTENING = "LISTENING", l.WATCHING = "WATCHING", l.CUSTOM_STATUS = "CUSTOM_STATUS", l.COMPETING = "COMPETING", l.HANG_STATUS = "HANG_STATUS"
         },
         255564: function(e, t, n) {
             "use strict";
@@ -204891,6 +204891,87 @@
                 })
             }
         },
+        80132: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return N
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("120356"),
+                s = n.n(r),
+                a = n("481060"),
+                o = n("315263"),
+                l = n("40851"),
+                u = n("100527"),
+                d = n("906732"),
+                _ = n("617136"),
+                c = n("497505"),
+                E = n("626135"),
+                I = n("785717"),
+                T = n("221292"),
+                f = n("290421"),
+                S = n("228168"),
+                h = n("981631"),
+                A = n("689938"),
+                m = n("104018");
+
+            function N(e) {
+                let {
+                    badges: t,
+                    className: n,
+                    badgeClassName: r
+                } = e, {
+                    analyticsLocations: N
+                } = (0, d.default)(u.default.BADGE), {
+                    trackUserProfileAction: p,
+                    ...O
+                } = (0, I.useUserProfileAnalyticsContext)(), R = (0, l.useWindowDispatch)();
+                return (0, i.jsx)("div", {
+                    className: s()(m.container, n),
+                    "aria-label": A.default.Messages.PROFILE_USER_BADGES,
+                    role: "group",
+                    children: t.map(e => (0, i.jsx)(a.TooltipContainer, {
+                        text: e.description,
+                        children: (0, i.jsx)(a.Anchor, {
+                            onClick: t => {
+                                p({
+                                    action: "PRESS_BADGE"
+                                }), (0, T.trackUserProfileBadgePressed)({
+                                    badge: e.id,
+                                    analyticsLocations: N,
+                                    ...O
+                                });
+                                let n = null != e.link ? (0, o.default)(e.link, {
+                                    analyticsLocations: N
+                                }) : null;
+                                if (null != n) return R.dispatch(h.ComponentActions.POPOUT_CLOSE), n(t)
+                            },
+                            onMouseEnter: () => {
+                                e.id === f.QUEST_COMPLETED_BADGE && E.default.track(h.AnalyticEvents.QUEST_CONTENT_VIEWED, {
+                                    ...(0, _.getContentProperties)(c.QuestContent.QUEST_BADGE)
+                                }), p({
+                                    action: "HOVER_BADGE"
+                                }), (0, T.trackUserProfileBadgeHovered)({
+                                    badge: e.id,
+                                    analyticsLocations: N,
+                                    ...O
+                                })
+                            },
+                            href: e.link,
+                            children: (0, i.jsx)("img", {
+                                alt: " ",
+                                "aria-hidden": !0,
+                                src: (0, S.getBadgeAsset)(e.icon),
+                                className: s()(m.badge, r)
+                            })
+                        })
+                    }, e.id))
+                })
+            }
+        },
         735336: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -206262,24 +206343,26 @@
             "use strict";
             n.r(t), n.d(t, {
                 UserProfileBadgesTag: function() {
-                    return a
+                    return l
                 }
             });
             var i = n("735250");
             n("470079");
-            var r = n("184325"),
-                s = n("736379");
+            var r = n("392711"),
+                s = n("290421"),
+                a = n("80132"),
+                o = n("736379");
 
-            function a(e) {
+            function l(e) {
                 let {
-                    user: t,
-                    guildId: n
-                } = e;
-                return (0, i.jsx)(r.default, {
-                    className: s.badges,
-                    user: t,
-                    guildId: n,
-                    size: r.BadgeSizes.SIZE_20
+                    displayProfile: t
+                } = e, n = (0, s.default)(t);
+                return 0 === n.length ? null : (0, i.jsx)(i.Fragment, {
+                    children: (0, r.chunk)(n, 12).map(e => (0, i.jsx)(a.default, {
+                        badges: e,
+                        className: o.badgeList,
+                        badgeClassName: o.badge
+                    }, e[0].id))
                 })
             }
         },
@@ -208536,8 +208619,7 @@
                         }),
                         pronouns: null == p ? void 0 : p.pronouns,
                         tags: (0, i.jsx)(E.UserProfileBadgesTag, {
-                            user: t,
-                            guildId: null == O ? void 0 : O.id
+                            displayProfile: p
                         }),
                         nicknameIcon: L && !M ? (0, i.jsx)(_.default, {
                             user: t,
@@ -243306,7 +243388,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b7cd16a605636985fe193c3eb5d149421b0abaad"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "cd5f31e0ce3a2548b1e41d85a9214af6328e1d45"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -271830,7 +271912,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287315"
+                                build_number: "287325"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -279016,7 +279098,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287315", "287315"), 10);
+                let s = parseInt((n = "287325", "287325"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -306459,4 +306541,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.c98629daadc8df28d160.js.map
+//# sourceMappingURL=35705.b68987aa1fb6dd7a8da3.js.map

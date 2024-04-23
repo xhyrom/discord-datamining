@@ -24990,6 +24990,13 @@
                 coachmarkHeader: "coachmarkHeader__3cdda"
             }
         },
+        104018: function(e) {
+            "use strict";
+            e.exports = {
+                badge: "badge__908e2",
+                container: "container__665d0"
+            }
+        },
         350315: function(e) {
             "use strict";
             e.exports = {
@@ -25151,8 +25158,8 @@
         736379: function(e) {
             "use strict";
             e.exports = {
-                badges: "badges__89cab tags__17646",
-                tags: "tags__17646"
+                badge: "badge__26d6e",
+                badgeList: "badgeList_b6652b"
             }
         },
         46781: function(e) {
