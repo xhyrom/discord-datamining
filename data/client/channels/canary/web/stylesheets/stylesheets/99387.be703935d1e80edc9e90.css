@@ -54211,11 +54211,23 @@ html .progress__00e29 {
     width: 126px
 }
 
-.selectedGameCheck_d9d855 {
-    color: var(--brand-experiment);
+.checkBackground_dfb47b {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
     position: absolute;
     right: 8px;
     top: 8px
+}
+
+.selectedGameCheck_d9d855 {
+    color: var(--brand-experiment);
+    width: 24px;
+    height: 24px
 }
 
 @keyframes placeholderPulse__8767a {
@@ -54243,6 +54255,12 @@ html .progress__00e29 {
     border-radius: 4px;
     margin-bottom: 8px;
     overflow: hidden
+}
+
+.gameName_be13e2 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
 }
 
 .slideContent__6ae94 {
@@ -54290,8 +54308,16 @@ html .progress__00e29 {
     gap: 12px 8px
 }
 
-.removableGame_ea342b {
+.clickableGame__38602 {
     cursor: pointer
+}
+
+.clickableGame__38602:hover {
+    transform: translatey(-2px)
+}
+
+.clickableGame__38602:active {
+    transform: translatey(2px)scale(.98)
 }
 
 .selectedInterest_aa523d {
@@ -54327,11 +54353,16 @@ html .progress__00e29 {
 
 .interestsTag__64479:hover {
     color: var(--interactive-hover);
-    border-color: var(--interactive-hover)
+    border-color: var(--border-strong)
 }
 
 .interestsTag__64479:hover .utilityTagIcon__2b2c9 {
     color: var(--interactive-hover)
+}
+
+.interestsTag__64479:active {
+    border-color: var(--border-strong);
+    transform: translatey(2px)scale(.98)
 }
 
 .interestsTag__64479.selected__2779c {
@@ -54372,7 +54403,21 @@ html .progress__00e29 {
     width: 25%
 }
 
+.playstyleOption__67567:hover {
+    border-color: var(--border-strong)
+}
+
+.playstyleOption__67567:active {
+    border-color: var(--border-strong);
+    transform: translatey(2px)scale(.98)
+}
+
 .selectedPlaystyle_e4490f {
+    border-color: var(--brand-experiment)
+}
+
+.selectedPlaystyle_e4490f:hover,
+.selectedPlaystyle_e4490f:active {
     border-color: var(--brand-experiment)
 }
 
@@ -54381,6 +54426,11 @@ html .progress__00e29 {
     position: absolute;
     right: 12px;
     top: 12px
+}
+
+.divider_b5fb95 {
+    border-top: 1px solid var(--border-subtle);
+    margin-bottom: 40px
 }
 
 .playstyleTitle__00d17 {
@@ -54471,7 +54521,8 @@ html .progress__00e29 {
 
 .input_e60656 {
     border-radius: 4px;
-    border: 1px solid var(--border-subtle)
+    border: 1px solid var(--border-subtle);
+    color: var(--interactive-normal)
 }
 
 .input_e60656:focus-within,
@@ -134923,4 +134974,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c44adef0501863cf0b10.css.map*/
+/*# sourceMappingURL=99387.be703935d1e80edc9e90.css.map*/
