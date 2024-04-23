@@ -12238,8 +12238,7 @@ span.clanTag_f4aadc {
 
 .header__3a32b {
     display: flex;
-    flex-direction: row;
-    padding-bottom: 8px
+    flex-direction: row
 }
 
 .rowIcon__45dc2 {
@@ -12258,7 +12257,8 @@ span.clanTag_f4aadc {
     justify-content: space-between;
     background-color: var(--background-tertiary);
     border-radius: var(--radius-sm);
-    padding: 10px
+    padding: 10px;
+    margin-top: 8px
 }
 
 .activityCardImageContainer_c34fee {
@@ -12270,6 +12270,31 @@ span.clanTag_f4aadc {
     height: 40px;
     border: 4px solid var(--redesign-button-active-background);
     border-radius: var(--radius-sm)
+}
+
+.activityCardImageOneAvatar_c5282e {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.activityCardImageAvatar1_e99d8e {
+    position: absolute;
+    left: 6px;
+    bottom: 6px
+}
+
+.activityCardImageAvatar2__9e698 {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    border-radius: 50%
+}
+
+.activityCardImageAvatar3__28db3 {
+    position: absolute;
+    left: 5px;
+    top: 5px
 }
 
 .mask_beff87 {
@@ -12288,7 +12313,8 @@ span.clanTag_f4aadc {
 }
 
 .activityCardDetailsContainer__32ad7 {
-    width: 162px
+    max-width: 162px;
+    margin: 0 8px
 }
 
 .location__73d84 {
@@ -134974,4 +135000,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.be703935d1e80edc9e90.css.map*/
+/*# sourceMappingURL=99387.c3c1571eb353ea87a2ea.css.map*/
