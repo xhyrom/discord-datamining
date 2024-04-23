@@ -99858,11 +99858,11 @@ div:has(>div>.container__8ab05) {
 
 .container_ef5900 {
     position: relative;
-    margin-top: 8px
+    margin-top: 8px;
+    transition: all.4s ease-in-out
 }
 
 .gradientGlow_dea0cb {
-    transition: all.4s ease-in-out;
     filter: drop-shadow(0 0 10px rgba(184, 69, 193, .50196))
 }
 
@@ -99908,11 +99908,11 @@ div:has(>div>.container__8ab05) {
     background: var(--background-secondary-alt);
     flex-direction: column;
     align-items: flex-start;
-    padding: 12px
+    padding: 12px;
+    transition: all.4s ease-in-out
 }
 
 .gradientGlow__4d469 {
-    transition: all.4s ease-in-out;
     filter: drop-shadow(0 0 10px rgba(184, 69, 193, .50196))
 }
 
@@ -99981,45 +99981,60 @@ div:has(>div>.container__8ab05) {
     color: var(--text-normal)
 }
 
+.selectorButtonWrapper__1ddd2 {
+    --custom-transition-duration: 0
+}
+
 .selectorButton_ea0609 {
+    position: relative;
+    overflow: hidden;
     min-width: 36px;
-    padding: 6px 0;
     flex: 1 1 auto;
     background: var(--background-secondary)
 }
 
-.selectorButton_ea0609:not(.selectorButtonPremiumRequired__9df5b):hover {
-    background-color: var(--brand-experiment)
+.selectorButton_ea0609:before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--brand-experiment);
+    transition: opacity var(--custom-transition-duration)ease-in-out;
+    opacity: 0
 }
 
-.selectorButton_ea0609:not(.selectorButtonPremiumRequired__9df5b):hover .selectorText__8286b {
+.selectorButton_ea0609:hover:before,
+.selectorButton_ea0609.selectorButtonSelected__707fb:before {
+    opacity: 1
+}
+
+.selectorButton_ea0609:hover .selectorText__8286b,
+.selectorButton_ea0609.selectorButtonSelected__707fb .selectorText__8286b {
     color: var(--white-500)
 }
 
-.selectorButton_ea0609.selectorButtonPerkDemo__4a1f5:hover {
+.selectorButton_ea0609.premiumUpsell__248b1:before {
+    background: transparent
+}
+
+.selectorButton_ea0609.perksDemo_f59d26:before {
     background: var(--custom-premium-colors-premium-gradient-tier-2)
 }
 
-.selectorButton_ea0609.selectorButtonPerkDemo__4a1f5:hover .selectorText__8286b {
-    color: var(--white-500)
+.selectorButton_ea0609>* {
+    z-index: 1;
+    flex-grow: 1
 }
 
-.selectorButtonSelected__707fb {
-    background-color: var(--brand-experiment)
-}
-
-.selectorButtonSelectedPerkDemo__7f18f {
-    background: var(--custom-premium-colors-premium-gradient-tier-2)
+.textContainer_f9e961 {
+    padding: 6px 0
 }
 
 .selectorText__8286b {
     text-transform: uppercase;
     font-weight: 700;
-    color: var(--interactive-normal)
-}
-
-.selectorTextSelected__147ec {
-    color: var(--white-500)
+    color: var(--interactive-normal);
+    transition: color var(--custom-transition-duration)ease-in-out
 }
 
 .selectorNitroText__1d3e0 {
@@ -135328,4 +135343,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.50f9d6c60285615b10d1.css.map*/
+/*# sourceMappingURL=99387.c35016b70fd6f5266c59.css.map*/
