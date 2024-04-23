@@ -54746,12 +54746,15 @@ html .progress__00e29 {
 
 .toolbar__2fcb0 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 32px;
-    width: 100%;
-    padding: 12px;
+    padding: 12px 16px;
     border-bottom: 1px solid var(--border-subtle)
+}
+
+.toolbarSpacer_bc0349 {
+    width: 90px;
+    height: 20px
 }
 
 .preferences__16c1a,
@@ -54763,25 +54766,47 @@ html .progress__00e29 {
 .filterPill__53234 {
     border-radius: 16px;
     padding: 8px 12px;
-    border-color: var(--interactive-active);
     height: 32px;
     min-height: 32px;
-    min-width: 0
+    min-width: 0;
+    transition: transform.1s ease-in-out;
+    border: var(--border-subtle)1px solid;
+    box-sizing: border-box
 }
 
-.filterPillSmall__584a6 {
-    border-radius: 16px;
-    padding: 8px;
-    border-color: var(--interactive-active);
-    height: 32px;
-    min-height: 32px;
-    min-width: 0
+.filterPill__53234:hover,
+.filterPill__53234:active {
+    border-color: var(--border-strong)
+}
+
+.filterPill__53234:active {
+    transform: translatey(2px)scale(.98)
+}
+
+.filterPillActive__0fdb1 {
+    border-color: var(--interactive-active)
+}
+
+.filterPillActive__0fdb1:hover,
+.filterPillActive__0fdb1:active {
+    border-color: var(--interactive-active)
 }
 
 .filterPillIcon__6e577 {
     width: 16px;
     height: 16px;
     color: var(--interactive-active)
+}
+
+.filterPillText_ecce4e {
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
+.chevron_d7e08c {
+    width: 12px;
+    height: 12px
 }
 
 .filterPillContents__2c03a {
@@ -54817,10 +54842,31 @@ html .progress__00e29 {
     gap: 8px
 }
 
+.traitsTooltip__02c2a {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px
+}
+
+.trait__847e0 {
+    display: flex;
+    padding: 8px 12px;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid var(--interactive-active);
+    border-radius: 16px;
+    max-width: 200px
+}
+
+.theme-dark .filterPill__53234 {
+    background-color: hsl(var(--primary-900-hsl)/.8)
+}
+
 .theme-dark .filterTooltip_d6d060 {
     background-color: hsl(var(--primary-800-hsl)/.8)
 }
 
+.theme-light .filterPill__53234,
 .theme-light .filterTooltip_d6d060 {
     background-color: hsl(var(--white-500-hsl)/.8)
 }
@@ -134869,4 +134915,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.5238472c0beef7b866b9.css.map*/
+/*# sourceMappingURL=99387.b919e4cf6e2fde6934cb.css.map*/
