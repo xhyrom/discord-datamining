@@ -36736,7 +36736,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287225", ", Version Hash: ").concat("0d22fa74b6003e97501489463778db6397bdff76")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287228", ", Version Hash: ").concat("46053f9cee6083baddcf69b49fe744b270b63c11")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55156,6 +55156,7 @@
                 MEMBER_LIST_CONTENT_FEED_WATCH_SEASON_EPISODE: "S{seasonNum}E{episodeNum}",
                 MEMBER_LIST_CONTENT_FEED_RESURRECTED: "Returning",
                 MEMBER_LIST_CONTENT_FEED_MARATHON: "Marathon",
+                MEMBER_LIST_CONTENT_FEED_PLAYED_FOR_HOURS: "Played for {hours}h",
                 MEMBER_LIST_CONTENT_FEED_STREAK_DAYS: "{days}x Streak",
                 CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity",
                 CONTENT_INVENTORY_MEMBERLIST_SETTINGS_HIDE: "Hide Activity Cards",
@@ -55609,6 +55610,7 @@
                 CLAN_LOOK_BANNER: "Banner",
                 CLAN_LOOK_PRESET_BADGE: "Badge",
                 CLAN_LOOK_PRESET_CUSTOM: "Custom",
+                CLAN_PALETTE_PICKER_CUSTOM_COLORS: "Custom Colors",
                 CLAN_OVERVIEW_LABEL_CLAN_TAG: "Guild Tag",
                 CLAN_ADOPT_CLAN_IDENTITY: "Adopt Guild Identity",
                 CLAN_CLEAR_CLAN_IDENTITY: "Clear Guild Identity",
@@ -86799,8 +86801,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287225", "287225"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287225")), t = 0), t
+                let t = parseInt((e = "287228", "287228"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287228")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111407,8 +111409,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287225",
-                    versionHash: "0d22fa74b6003e97501489463778db6397bdff76"
+                    buildNumber: "287228",
+                    versionHash: "46053f9cee6083baddcf69b49fe744b270b63c11"
                 }
             }
             n.r(t), n.d(t, {
@@ -146245,7 +146247,7 @@
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("48375"), n.e("95393"), n.e("14262"), n.e("22347"), n.e("66993")]).then(n.bind(n, "697849"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("48375"), n.e("14262"), n.e("95393"), n.e("22347"), n.e("66993")]).then(n.bind(n, "697849"));
                     return n => (0, i.jsx)(e, {
                         guildScheduledEventId: t,
                         parentGuildId: s,
@@ -165259,8 +165261,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713902740041",
-                                    build_number: "287225"
+                                    built_at: "1713903198296",
+                                    build_number: "287228"
                                 }
                             },
                             retries: 1
@@ -242916,7 +242918,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0d22fa74b6003e97501489463778db6397bdff76"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "46053f9cee6083baddcf69b49fe744b270b63c11"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -271440,7 +271442,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287225"
+                                build_number: "287228"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -278626,7 +278628,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287225", "287225"), 10);
+                let s = parseInt((n = "287228", "287228"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -306051,4 +306053,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.cd688921fabad0a6a91d.js.map
+//# sourceMappingURL=35705.ccc19cc7b4a060a6fdc7.js.map
