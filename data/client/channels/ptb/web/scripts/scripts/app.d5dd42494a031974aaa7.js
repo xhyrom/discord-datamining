@@ -4971,9 +4971,11 @@
         343644: function(e) {
             "use strict";
             e.exports = {
+                checkBackground: "checkBackground_dfb47b",
                 gameImage: "gameImage__8db0b",
                 gameImageBackground: "gameImageBackground__15198",
                 gameImageLoading: "gameImageLoading_ad31b1",
+                gameName: "gameName_be13e2",
                 gameUnknownImage: "gameUnknownImage__080b3",
                 placeholderPulse: "placeholderPulse__8767a",
                 selectedGame: "selectedGame_a69562",
@@ -5132,8 +5134,10 @@
                 addText: "addText__8f18c",
                 checkmark: "checkmark_c7b206",
                 clickable: "clickable_a588cd",
+                clickableGame: "clickableGame__38602",
                 contentLabel: "contentLabel_aa05d5",
                 contentWithMinHeight: "contentWithMinHeight__78ad4",
+                divider: "divider_b5fb95",
                 enterToSearchText: "enterToSearchText_c64e49",
                 errorText: "errorText__34a8a",
                 flex: "flex__7aeec",
@@ -5151,7 +5155,6 @@
                 playstyleSelect: "playstyleSelect_b7d88b",
                 playstyleTitle: "playstyleTitle__00d17",
                 plusIcon: "plusIcon__22efe",
-                removableGame: "removableGame_ea342b",
                 selected: "selected__2779c",
                 selectedInterest: "selectedInterest_aa523d",
                 selectedPlaystyle: "selectedPlaystyle_e4490f",
