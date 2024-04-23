@@ -59187,14 +59187,15 @@ html .progress__00e29 {
     background: var(--bg-overlay-2, var(--background-secondary))
 }
 
+@value screenTopSpacing 20px;
+
 .modal_f49d0b {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--bg-surface-overlay);
     height: 100%;
-    box-sizing: border-box;
-    padding-top: 20px
+    box-sizing: border-box
 }
 
 .modalContents_e19dbf {
@@ -59210,7 +59211,8 @@ html .progress__00e29 {
     z-index: 1;
     position: absolute;
     top: 24px;
-    left: 24px
+    left: 24px;
+    margin-top: 20px
 }
 
 .mainContent__23e7a {
@@ -59218,7 +59220,14 @@ html .progress__00e29 {
     flex-direction: column;
     padding: 80px 0 60px;
     flex: 1;
-    border-right: 1px solid var(--border-subtle)
+    border-right: 1px solid var(--border-subtle);
+    margin-top: 20px
+}
+
+.divider_ef3200 {
+    height: 100%;
+    width: 1px;
+    background-color: var(--border-subtle)
 }
 
 .scroller__24eef,
@@ -59286,7 +59295,8 @@ html .progress__00e29 {
     box-sizing: border-box;
     width: 380px;
     flex-shrink: 0;
-    position: relative
+    position: relative;
+    margin-top: 20px
 }
 
 .scrollBg_b81d25 {
@@ -59347,12 +59357,15 @@ html .progress__00e29 {
 }
 
 .signatureBlock__543fd {
-    border-bottom: 1px solid var(--border-strong);
+    flex: 1;
     display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--border-strong);
     flex-direction: row;
     gap: 8px;
     color: var(--border-strong);
-    padding: 0 8px
+    padding: 0 8px;
+    margin-bottom: 4px
 }
 
 .signatureText_cb71b7 {
@@ -59361,10 +59374,11 @@ html .progress__00e29 {
 }
 
 .overviewSidebarWrapper__8ca7a {
-    padding: 100px 76px 148px 64px;
+    padding: 104px 76px 148px 64px;
     position: relative;
     width: 380px;
-    display: flex
+    display: flex;
+    flex-direction: column
 }
 
 .overviewSidebarContent_b8b257 {
@@ -59372,28 +59386,18 @@ html .progress__00e29 {
     flex-direction: column
 }
 
-.overviewText__01ee0,
-.overviewHeaderText__10eed {
-    text-overflow: ellipsis;
-    overflow: clip;
-    max-width: 240px
-}
-
-.overviewText__01ee0 strong,
-.overviewHeaderText__10eed strong {
-    color: var(--interactive-active)
-}
-
-.overviewHeaderText__10eed {
-    margin-bottom: 12px
-}
-
 .overviewText__01ee0 {
+    text-overflow: ellipsis;
+    max-width: 240px;
     margin-bottom: 24px
 }
 
-.lastParagraph__7a09c {
-    flex: 1
+.overviewHeaderPrelude_a62bba {
+    margin-bottom: 0
+}
+
+.overviewGuildName_da4828 {
+    margin-bottom: 12px
 }
 
 .animationContainer_af2200 {
@@ -59500,6 +59504,28 @@ html .progress__00e29 {
     .overviewSidebar__995aa {
         display: none
     }
+}
+
+.placeholderIcon__8db19 {
+    color: var(--interactive-normal);
+    margin-bottom: 24px
+}
+
+.charterClanTag_bb407f {
+    border: 1px solid var(--border-subtle);
+    background-color: var(--card-primary-bg);
+    box-shadow: var(--shadow-low);
+    padding: 8px 12px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    display: flex;
+    align-self: flex-start;
+    margin-top: 0
+}
+
+.charterClanTag_bb407f>span {
+    display: flex;
+    align-items: center
 }
 
 .content__4e550 {
@@ -135013,4 +135039,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.e1ad8ae1fc234392064e.css.map*/
+/*# sourceMappingURL=99387.8fba552b6b6f056ca2a9.css.map*/
