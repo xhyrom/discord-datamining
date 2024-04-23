@@ -20041,12 +20041,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     background: var(--input-background)
 }
 
-.theme-dark.custom-profile-theme .messageInputContainer__67b4c {
-    background: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-6))
-}
-
-.theme-light.custom-profile-theme .messageInputContainer__67b4c {
-    background: rgb(var(--bg-overlay-color)/.1)
+.custom-profile-theme .messageInputContainer__67b4c {
+    background: rgb(var(--bg-overlay-color-inverse)/.1)
 }
 
 .messageInput_c1c1c4 {
@@ -134793,4 +134789,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.3a2fb2c09f558c2c6d4f.css.map*/
+/*# sourceMappingURL=99387.26312d79b06277273c43.css.map*/
