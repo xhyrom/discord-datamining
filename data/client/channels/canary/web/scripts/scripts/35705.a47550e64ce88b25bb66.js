@@ -36710,7 +36710,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287045", ", Version Hash: ").concat("abd0307eb97fda60ad829f1c9e1eb77fa4efb4d7")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287052", ", Version Hash: ").concat("6c0fc448e245337be0ded98d55a1a5e9c053288f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55593,6 +55593,7 @@
                 CLAN_USER_ADOPT_TAG_MODAL_CANCEL: "Not Now",
                 CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA: "Don The Tag",
                 CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA: "Apply To Join",
+                CLAN_USER_APPLICATION_EXISTS_TAG_GUILD_PROFILE_CTA: "View Application",
                 CLAN_USER_PROFILE_USE_CLAN_TAG: "Would you like to adopt the {guildName} guild tag as part of your identity?",
                 SIGNUP_BUTTON_TOOLTIP_CTA: "Click to preview",
                 SIGNUP_COMPLETE_CTA: "Sign Up",
@@ -86758,8 +86759,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287045", "287045"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287045")), t = 0), t
+                let t = parseInt((e = "287052", "287052"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287052")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -102152,99 +102153,113 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return m
+                    return O
                 }
             });
             var i = n("735250"),
                 r = n("470079"),
                 s = n("481060"),
                 a = n("442837"),
-                o = n("601964"),
-                l = n("314897"),
-                u = n("271383"),
-                d = n("594174"),
-                _ = n("963202"),
-                c = n("645896"),
-                E = n("905362"),
-                I = n("353093"),
-                T = n("114487"),
-                f = n("219039"),
-                S = n("979264"),
-                h = n("689938"),
-                A = n("221840");
+                o = n("741606"),
+                l = n("703656"),
+                u = n("601964"),
+                d = n("314897"),
+                _ = n("271383"),
+                c = n("594174"),
+                E = n("963202"),
+                I = n("645896"),
+                T = n("905362"),
+                f = n("353093"),
+                S = n("114487"),
+                h = n("219039"),
+                A = n("979264"),
+                m = n("981631"),
+                N = n("689938"),
+                p = n("221840");
 
-            function m(e) {
+            function O(e) {
                 var t;
                 let {
-                    clan: m,
-                    isLoading: N,
-                    onClose: p,
-                    onMouseEnter: O,
-                    onMouseLeave: R
-                } = e, C = (0, c.useClanInfo)(null !== (t = null == m ? void 0 : m.identityGuildId) && void 0 !== t ? t : null), g = null == m ? void 0 : m.tag, L = (0, _.useIsInUserClanExperiment)(), D = null == m ? void 0 : m.identityGuildId, v = (0, a.useStateFromStores)([l.default], () => l.default.getId()), M = (0, a.useStateFromStores)([u.default], () => null != D ? u.default.getMember(D, v) : null, [D, v]), y = (0, a.useStateFromStores)([d.default], () => d.default.getUser(v), [v]), P = (null == M ? void 0 : M.joinedAt) != null, U = (0, I.isGuildAdoptedUserClanIdentity)(D, null == y ? void 0 : y.clan), b = r.useCallback(e => {
-                    null != D && (e.stopPropagation(), e.preventDefault(), null == p || p(), (0, E.openAdoptClanIdentityModal)(D))
-                }, [D, p]), G = r.useCallback(e => {
-                    null != C && (e.stopPropagation(), e.preventDefault(), null == p || p(), (0, s.openModalLazy)(async () => {
+                    clan: O,
+                    isLoading: R,
+                    onClose: C,
+                    onMouseEnter: g,
+                    onMouseLeave: L
+                } = e, D = (0, I.useClanInfo)(null !== (t = null == O ? void 0 : O.identityGuildId) && void 0 !== t ? t : null), v = null == O ? void 0 : O.tag, M = (0, E.useIsInUserClanExperiment)(), y = null == O ? void 0 : O.identityGuildId, P = (0, a.useStateFromStores)([d.default], () => d.default.getId()), U = (0, a.useStateFromStores)([_.default], () => null != y ? _.default.getMember(y, P) : null, [y, P]), b = (0, a.useStateFromStores)([c.default], () => c.default.getUser(P), [P]), G = (null == U ? void 0 : U.joinedAt) != null, w = (0, f.isGuildAdoptedUserClanIdentity)(y, null == b ? void 0 : b.clan), k = null != (0, o.default)(y), B = r.useCallback(e => {
+                    null != y && (e.stopPropagation(), e.preventDefault(), null == C || C(), (0, T.openAdoptClanIdentityModal)(y))
+                }, [y, C]), F = r.useCallback(e => {
+                    if (null != D) e.stopPropagation(), e.preventDefault(), null == C || C(), !k && (0, s.openModalLazy)(async () => {
                         let {
                             default: e
                         } = await Promise.all([n.e("99387"), n.e("80026"), n.e("60330"), n.e("27233")]).then(n.bind(n, "767593"));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            clan: C
+                            clan: D
                         })
-                    }))
-                }, [C, p]);
-                return null == g || null == C || null == D || N ? (0, i.jsx)(s.Spinner, {}) : (0, i.jsxs)("div", {
-                    className: A.tooltipContainer,
-                    onMouseLeave: R,
-                    onMouseEnter: O,
+                    })
+                }, [D, k, C]), V = r.useCallback(() => {
+                    null != y && (0, l.transitionTo)(m.Routes.GUILD_MEMBER_VERIFICATION(y))
+                }, [y]);
+                return null == v || null == D || null == y || R ? (0, i.jsx)(s.Spinner, {}) : (0, i.jsxs)("div", {
+                    className: p.tooltipContainer,
+                    onMouseLeave: L,
+                    onMouseEnter: g,
                     children: [(0, i.jsxs)("div", {
-                        className: A.tooltipHeader,
+                        className: p.tooltipHeader,
                         children: [(0, i.jsx)(s.Text, {
                             tag: "span",
                             variant: "text-xs/medium",
                             color: "text-muted",
-                            children: h.default.Messages.CLAN_TAG_GUILD_PROFILE_MEMBERSHIP
-                        }), (0, i.jsx)(S.BaseClanTagChiplet, {
-                            clanTag: g
+                            children: N.default.Messages.CLAN_TAG_GUILD_PROFILE_MEMBERSHIP
+                        }), (0, i.jsx)(A.BaseClanTagChiplet, {
+                            clanTag: v
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: A.tooltipContent,
+                        className: p.tooltipContent,
                         children: [(0, i.jsx)("div", {
-                            children: (0, i.jsx)(T.default, {
-                                guild: new o.default(C),
+                            children: (0, i.jsx)(S.default, {
+                                guild: new u.default(D),
                                 iconSize: 40
                             })
                         }), (0, i.jsxs)("div", {
-                            className: A.guildInfoContainer,
+                            className: p.guildInfoContainer,
                             children: [(0, i.jsx)("div", {
-                                className: A.guildName,
+                                className: p.guildName,
                                 children: (0, i.jsx)(s.Heading, {
                                     variant: "heading-md/semibold",
                                     color: "header-primary",
-                                    children: C.name
+                                    children: D.name
                                 })
-                            }), (0, i.jsx)(f.default, {
-                                count: C.memberCount
+                            }), (0, i.jsx)(h.default, {
+                                count: D.memberCount
                             })]
                         })]
-                    }), P && !U && L && (0, i.jsx)("div", {
-                        className: A.tooltipFooter,
+                    }), G && !w && M && (0, i.jsx)("div", {
+                        className: p.tooltipFooter,
                         children: (0, i.jsx)(s.Button, {
-                            onClick: b,
+                            onClick: B,
                             color: s.Button.Colors.BRAND,
                             size: s.Button.Sizes.SMALL,
                             fullWidth: !0,
-                            children: h.default.Messages.CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA
+                            children: N.default.Messages.CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA
                         })
-                    }), !P && L && (0, i.jsx)("div", {
-                        className: A.tooltipFooter,
+                    }), !G && M && !k && (0, i.jsx)("div", {
+                        className: p.tooltipFooter,
                         children: (0, i.jsx)(s.Button, {
-                            onClick: G,
+                            onClick: F,
                             color: s.Button.Colors.BRAND,
                             size: s.Button.Sizes.SMALL,
                             fullWidth: !0,
-                            children: h.default.Messages.CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA
+                            children: N.default.Messages.CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA
+                        })
+                    }), !G && M && k && (0, i.jsx)("div", {
+                        className: p.tooltipFooter,
+                        children: (0, i.jsx)(s.Button, {
+                            onClick: V,
+                            color: s.Button.Colors.PRIMARY,
+                            size: s.Button.Sizes.SMALL,
+                            fullWidth: !0,
+                            children: N.default.Messages.CLAN_USER_APPLICATION_EXISTS_TAG_GUILD_PROFILE_CTA
                         })
                     })]
                 })
@@ -111330,8 +111345,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287045",
-                    versionHash: "abd0307eb97fda60ad829f1c9e1eb77fa4efb4d7"
+                    buildNumber: "287052",
+                    versionHash: "6c0fc448e245337be0ded98d55a1a5e9c053288f"
                 }
             }
             n.r(t), n.d(t, {
@@ -139103,6 +139118,182 @@
                 return i && o
             }
         },
+        693546: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("544891"),
+                r = n("570140"),
+                s = n("287734"),
+                a = n("131704"),
+                o = n("246364"),
+                l = n("937111"),
+                u = n("981631");
+            let d = async e => {
+                let t = await i.HTTP.get({
+                        url: u.Endpoints.GUILD_JOIN_REQUEST_BY_ID(e)
+                    }),
+                    n = (0, l.joinRequestFromServer)(t.body);
+                return r.default.dispatch({
+                    type: "GUILD_JOIN_REQUEST_BY_ID_FETCH_SUCCESS",
+                    joinRequest: n
+                }), t
+            }, _ = async e => {
+                let {
+                    guildId: t,
+                    status: n = o.GuildJoinRequestApplicationStatuses.SUBMITTED,
+                    before: s,
+                    after: a,
+                    limit: d = o.MAX_RESULTS_PER_PAGE
+                } = e;
+                r.default.dispatch({
+                    type: "GUILD_JOIN_REQUESTS_FETCH_START"
+                });
+                try {
+                    var _;
+                    let e = await i.HTTP.get({
+                            url: u.Endpoints.GUILD_JOIN_REQUESTS(t),
+                            query: {
+                                status: n,
+                                limit: d,
+                                before: s,
+                                after: a
+                            }
+                        }),
+                        o = e.body.total,
+                        c = (null !== (_ = e.body.guild_join_requests) && void 0 !== _ ? _ : []).map(l.joinRequestFromServer);
+                    return r.default.dispatch({
+                        type: "GUILD_JOIN_REQUESTS_FETCH_SUCCESS",
+                        status: n,
+                        requests: c,
+                        total: o,
+                        limit: d,
+                        guildId: t
+                    }), e
+                } catch (e) {
+                    throw r.default.dispatch({
+                        type: "GUILD_JOIN_REQUESTS_FETCH_FAILURE"
+                    }), e
+                }
+            }, c = async e => {
+                try {
+                    let t = await i.HTTP.del({
+                        url: u.Endpoints.GUILD_MEMBER_REQUEST_TO_JOIN(e)
+                    });
+                    return r.default.dispatch({
+                        type: "USER_GUILD_JOIN_REQUEST_UPDATE",
+                        guildId: e,
+                        request: null
+                    }), t
+                } catch (e) {
+                    throw e
+                }
+            }, E = async (e, t) => {
+                try {
+                    return await i.HTTP.post({
+                        url: u.Endpoints.GUILD_JOIN_REQUEST_ACK(e, t)
+                    })
+                } catch (e) {} finally {
+                    r.default.dispatch({
+                        type: "ACK_APPROVED_GUILD_JOIN_REQUEST",
+                        id: t,
+                        guildId: e
+                    })
+                }
+            }, I = async function(e, t) {
+                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : o.GuildJoinRequestApplicationStatuses.APPROVED,
+                    s = arguments.length > 3 ? arguments[3] : void 0,
+                    a = await i.HTTP.patch({
+                        url: u.Endpoints.GUILD_JOIN_REQUEST(e, t),
+                        body: {
+                            action: n,
+                            rejection_reason: s
+                        }
+                    });
+                r.default.dispatch({
+                    type: "GUILD_JOIN_REQUEST_UPDATE",
+                    guildId: e,
+                    status: a.body.application_status,
+                    request: a.body
+                })
+            }, T = async (e, t) => {
+                let n = await i.HTTP.patch({
+                    url: u.Endpoints.GUILD_JOIN_REQUESTS(e),
+                    body: {
+                        action: t
+                    }
+                });
+                return r.default.dispatch({
+                    type: "GUILD_JOIN_REQUESTS_BULK_ACTION",
+                    guildId: e,
+                    action: t
+                }), n.body
+            }, f = async e => {
+                try {
+                    let {
+                        body: t
+                    } = await i.HTTP.post({
+                        url: u.Endpoints.GUILD_MEMBER_REQUEST_TO_JOIN(e)
+                    });
+                    return r.default.dispatch({
+                        type: "USER_GUILD_JOIN_REQUEST_UPDATE",
+                        guildId: e,
+                        request: t
+                    }), t
+                } catch (e) {
+                    throw e
+                }
+            }, S = async () => {
+                let e = await i.HTTP.get({
+                    url: u.Endpoints.USER_JOIN_REQUEST_GUILDS
+                });
+                r.default.dispatch({
+                    type: "USER_JOIN_REQUEST_GUILDS_FETCH",
+                    guilds: e.body
+                })
+            }, h = async function(e) {
+                let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
+                    n = await i.HTTP.post({
+                        url: u.Endpoints.GUILD_JOIN_REQUEST_INTERVIEW(e)
+                    }),
+                    o = (0, a.createChannelRecordFromServer)(n.body);
+                return r.default.dispatch({
+                    type: "CHANNEL_CREATE",
+                    channel: o
+                }), t && s.default.selectPrivateChannel(o.id), o.id
+            };
+            t.default = {
+                fetchGuildJoinRequest: d,
+                fetchGuildJoinRequests: _,
+                ackUserGuildJoinRequest: E,
+                removeGuildJoinRequest: c,
+                updateGuildJoinRequest: I,
+                actionAllPendingJoinRequests: T,
+                resetGuildJoinRequest: f,
+                fetchRequestToJoinGuilds: S,
+                setSelectedApplicationTab: (e, t) => {
+                    r.default.dispatch({
+                        type: "GUILD_JOIN_REQUESTS_SET_APPLICATION_TAB",
+                        guildId: e,
+                        applicationTab: t
+                    })
+                },
+                setSelectedSortOrder: (e, t) => {
+                    r.default.dispatch({
+                        type: "GUILD_JOIN_REQUESTS_SET_SORT_ORDER",
+                        guildId: e,
+                        sortOrder: t
+                    })
+                },
+                setSelectedGuildJoinRequest: (e, t) => {
+                    r.default.dispatch({
+                        type: "GUILD_JOIN_REQUESTS_SET_SELECTED",
+                        guildId: e,
+                        request: t
+                    })
+                },
+                createOrEnterJoinRequestInterview: h
+            }
+        },
         881952: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -139747,6 +139938,26 @@
                         if (!(null != i && !i.isPending) || (0, a.isActionedAndNotAcked)(t)) return t.applicationStatus
                     }, [e]);
                 return t ? n : void 0
+            }
+        },
+        741606: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return o
+                }
+            });
+            var i = n("470079"),
+                r = n("442837"),
+                s = n("693546"),
+                a = n("937111");
+
+            function o(e) {
+                let t = (0, r.useStateFromStores)([a.default], () => null == e ? null : a.default.getRequest(e)),
+                    n = (0, r.useStateFromStores)([a.default], () => a.default.hasFetchedRequestToJoinGuilds);
+                return i.useEffect(() => {
+                    !n && s.default.fetchRequestToJoinGuilds()
+                }, [n]), t
             }
         },
         281956: function(e, t, n) {
@@ -164806,8 +165017,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713890084648",
-                                    build_number: "287045"
+                                    built_at: "1713890440090",
+                                    build_number: "287052"
                                 }
                             },
                             retries: 1
@@ -242396,7 +242607,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "abd0307eb97fda60ad829f1c9e1eb77fa4efb4d7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "6c0fc448e245337be0ded98d55a1a5e9c053288f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270920,7 +271131,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287045"
+                                build_number: "287052"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -278106,7 +278317,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287045", "287045"), 10);
+                let s = parseInt((n = "287052", "287052"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -305531,4 +305742,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.88740a4c092981f7d1a0.js.map
+//# sourceMappingURL=35705.a47550e64ce88b25bb66.js.map
