@@ -18442,7 +18442,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .roleIcon_aa2eb3 {
-    margin-right: 4px
+    margin-right: 4px;
+    vertical-align: middle
 }
 
 .enable-forced-colors .role_d81130 {
@@ -20076,27 +20077,22 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     height: 44px
 }
 
-.container_f63223 {
-    display: flex;
-    align-items: center
-}
-
-.container__1f16a {
+.container_badb01 {
     display: flex;
     flex-direction: column;
     gap: 8px
 }
 
-.container__1f16a .hiddenTooltip__10c79 {
+.container_badb01 .hiddenTooltip__4ec90 {
     visibility: hidden
 }
 
-.container__1f16a:hover .hiddenTooltip__10c79,
-.container__1f16a:focus-within .hiddenTooltip__10c79 {
+.container_badb01:hover .hiddenTooltip__4ec90,
+.container_badb01:focus-within .hiddenTooltip__4ec90 {
     visibility: visible
 }
 
-.root_ae2ef3 {
+.root__076be {
     position: relative;
     flex-wrap: wrap;
     display: flex;
@@ -20104,47 +20100,57 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     gap: 4px
 }
 
-.pill__35c94 {
+.pill__54982 {
     border-radius: var(--radius-xs);
     background: var(--bg-mod-faint);
     border: 1px solid var(--border-faint)
 }
 
-.custom-profile-theme .pill__35c94 {
+.custom-profile-theme .pill__54982 {
     background: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-6));
     border-color: var(--profile-body-border-color)
 }
 
-.role__17a96 {
+.role_a3571c {
     margin: 0;
-    padding: 6px 8px;
-    gap: 8px;
+    padding: 6px;
     height: 28px
 }
 
-.rolesHeader_e507a4 {
+.role_a3571c>:first-child {
+    margin-right: 4px
+}
+
+.rolesHeader__23273 {
     display: flex;
     align-items: center;
     justify-content: space-between
 }
 
-.overflowButton_d39c60 {
+.overflowButton_dcc4c2 {
     cursor: pointer;
     padding: 5px 8px;
     align-items: center
 }
 
-.addButton_d7b605 {
+.addButton_e81447 {
     color: var(--interactive-normal);
     background: none;
     border: none;
+    width: 20px;
+    height: 20px;
     margin: 0;
     padding: 0
 }
 
-.addButtonIcon__04434 {
-    width: 20px;
-    height: 20px
+.addButtonIcon_a40605 {
+    width: 100%;
+    height: 100%
+}
+
+.container_f63223 {
+    display: flex;
+    align-items: center
 }
 
 .body__489bc {
@@ -25850,12 +25856,12 @@ html .invoiceCancelRow_aa7946 {
 .streamerModeEnabledBtn_b696dd {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 1.8125rem;
+    line-height: 29px;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -83161,7 +83167,7 @@ input::-webkit-inner-spin-button {
 }
 
 .banner__1680d {
-    background: url(/assets/d024c6725b4db6387f33.svg)no-repeat, url(/assets/0e1a3352cfd04470f16e.svg)no-repeat, linear-gradient(270deg, #dc95ee 0%, #fd78b7 100%);
+    background: url(/assets/ca77b2ffeca1b021f7da.svg)no-repeat, url(/assets/f2997c4a18a1125071e6.svg)no-repeat, linear-gradient(270deg, #dc95ee 0%, #fd78b7 100%);
     background-position: left center, right bottom, center center;
     background-size: auto auto, auto auto, 100%100%;
     box-sizing: border-box;
@@ -129869,7 +129875,7 @@ div.nagbar_c731ff {
 }
 
 .pill_b76003 {
-    height: 30px;
+    height: 28px;
     margin: 0;
     border-radius: var(--radius-xs);
     border: 1px solid var(--border-subtle)
@@ -129881,13 +129887,16 @@ div.nagbar_c731ff {
 }
 
 .role__5eb73 {
-    padding: 7px 8px;
-    gap: 8px
+    padding: 6px
+}
+
+.role__5eb73>:first-child {
+    margin-right: 4px
 }
 
 .addButton_bfade1 {
     color: var(--interactive-normal);
-    padding: 4px
+    padding: 3px
 }
 
 .addButtonIcon__3b4b8 {
@@ -135004,4 +135013,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2981ab5d82def6d6fa06.css.map*/
+/*# sourceMappingURL=99387.8ba19b60937c1994815e.css.map*/
