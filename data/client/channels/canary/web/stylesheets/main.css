@@ -39586,9 +39586,12 @@ html .progress__00e29 {
     width: 100%;
     max-width: 660px;
     min-width: 280px;
-    margin-bottom: 16px;
     border-radius: 8px;
     overflow: hidden
+}
+
+.questsCard__20ba2+.questsCard__20ba2 {
+    margin-top: 16px
 }
 
 .container__76281 {
@@ -57359,8 +57362,8 @@ html .progress__00e29 {
 }
 
 .name__4eb92 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -77250,6 +77253,168 @@ input::-webkit-inner-spin-button {
     margin: 2px -10px
 }
 
+.heading__2adc1 {
+    margin-bottom: 12px
+}
+
+.subheading__50893 {
+    margin-bottom: 8px
+}
+
+.componentPreviews_e6adca {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 16px
+}
+
+.componentPreviewWrapper__6e4d4 {
+    border-width: 0
+}
+
+.componentPreviewWrapperBordered_c68846 {
+    border-width: 1px;
+    padding: 24px
+}
+
+.componentPreview__21783 {
+    isolation: isolate;
+    position: relative
+}
+
+.questBarPreviewWrapper__9be26 {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    align-content: flex-end;
+    justify-content: flex-end;
+    place-content: flex-end;
+    position: relative;
+    width: 240px
+}
+
+.questBarPreview_e90e97 {
+    position: relative;
+    width: 240px
+}
+
+.fields_e540ed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    margin-bottom: 24px
+}
+
+.fieldsVertical_c3133b {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 100%
+}
+
+.swatchContainer_bf7226 {
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    place-content: center;
+    align-items: center;
+    justify-items: center;
+    place-items: center;
+    height: 48px;
+    width: 48px
+}
+
+.swatchIcon_c203b3 {
+    color: var(--white-500);
+    opacity: .5;
+    transition: opacity.125s
+}
+
+.swatchContainer_bf7226:hover .swatchIcon_c203b3 {
+    opacity: .75
+}
+
+.errorBoundary__9383e {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-content: center;
+    justify-content: center;
+    place-content: center;
+    align-items: center;
+    justify-items: center;
+    place-items: center
+}
+
+.errorBoundaryIcon__18c44 {
+    color: var(--text-primary);
+    height: 24px;
+    width: 24px
+}
+
+.headingWithTooltip__3f120 {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-items: center;
+    place-items: center
+}
+
+.errorMessageWrapper_b1e5ac {
+    background-color: var(--background-secondary) !important;
+    margin-top: 12px;
+    padding: 12px
+}
+
+.errorMessage_ddd4c1 {
+    color: var(--text-normal);
+    text-align: left;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text
+}
+
+.section__0baeb {
+    margin-bottom: 16px
+}
+
+.emojiInput_db0b67 {
+    position: relative
+}
+
+.emojiButton__67969 {
+    position: absolute;
+    height: 100%;
+    margin: 0 10px
+}
+
+.emojiText_ad5888 {
+    padding-left: 40px;
+    cursor: pointer
+}
+
+.removeButton__001d3 {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 0;
+    right: 0;
+    margin: 10px
+}
+
+.fileUploadButton__693d6 {
+    margin: 6px;
+    padding: 4px 8px
+}
+
+.fileUpload_c3f56a {
+    display: flex
+}
+
+.fileUploadInput_b7422d {
+    cursor: default
+}
+
 .info__755e1 {
     padding: 8px 10px;
     text-transform: capitalize;
@@ -93080,34 +93245,6 @@ div:has(>div>.container__8ab05) {
     background-size: 12px
 }
 
-.section__0baeb {
-    margin-bottom: 16px
-}
-
-.emojiInput_db0b67 {
-    position: relative
-}
-
-.emojiButton__67969 {
-    position: absolute;
-    height: 100%;
-    margin: 0 10px
-}
-
-.emojiText_ad5888 {
-    padding-left: 40px;
-    cursor: pointer
-}
-
-.removeButton__001d3 {
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    top: 0;
-    right: 0;
-    margin: 10px
-}
-
 .headerImg_f6e9a5 {
     width: 85px;
     height: 100px
@@ -93364,19 +93501,6 @@ div:has(>div>.container__8ab05) {
 
 .title__5dbaf {
     margin: 0
-}
-
-.fileUploadButton__693d6 {
-    margin: 6px;
-    padding: 4px 8px
-}
-
-.fileUpload_c3f56a {
-    display: flex
-}
-
-.fileUploadInput_b7422d {
-    cursor: default
 }
 
 .modalRoot_c0c89e {
@@ -124051,6 +124175,10 @@ html .invoiceCancelRow__6ff3e {
     margin-top: 40px
 }
 
+.questCards__2c9ba {
+    margin-bottom: 16px
+}
+
 .codeRedemptionInput__32577 {
     flex-grow: 1;
     margin-right: 20px
@@ -135041,4 +135169,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.4b4ccbb300b5f08a8fe7.css.map*/
+/*# sourceMappingURL=99387.edbb1adc3660b5272d31.css.map*/
