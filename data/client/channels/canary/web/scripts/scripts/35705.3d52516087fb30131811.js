@@ -36735,7 +36735,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287131", ", Version Hash: ").concat("fd3b5fadbfda4dfb2047d38ce2408fe43fbc3db7")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287147", ", Version Hash: ").concat("0e1262db53c3eb4ab195a00805bb9eceedf9bd55")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86794,8 +86794,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287131", "287131"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287131")), t = 0), t
+                let t = parseInt((e = "287147", "287147"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287147")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111401,8 +111401,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287131",
-                    versionHash: "fd3b5fadbfda4dfb2047d38ce2408fe43fbc3db7"
+                    buildNumber: "287147",
+                    versionHash: "0e1262db53c3eb4ab195a00805bb9eceedf9bd55"
                 }
             }
             n.r(t), n.d(t, {
@@ -129368,8 +129368,6 @@
             function a() {
                 return null == s && (s = function() {
                     if (null == window.DiscordNative || void 0 === window.Uint8Array || void 0 === window.TextDecoder) return !1;
-                    let e = window.GLOBAL_ENV.RELEASE_CHANNEL;
-                    if ("ptb" === e || "stable" === e) return !1;
                     try {
                         return r.default.requireModule("discord_zstd"), !0
                     } catch (e) {
@@ -165249,8 +165247,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713895259903",
-                                    build_number: "287131"
+                                    built_at: "1713896295276",
+                                    build_number: "287147"
                                 }
                             },
                             retries: 1
@@ -205686,7 +205684,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return d
+                    return _
                 }
             });
             var i = n("735250");
@@ -205696,41 +205694,56 @@
                 a = n("481060"),
                 o = n("129861"),
                 l = n("5192"),
-                u = n("690612");
+                u = n("689938"),
+                d = n("690612");
 
-            function d(e) {
+            function _(e) {
                 let {
                     user: t,
                     guildId: n,
                     channelId: r,
-                    usernameIcon: d,
-                    tags: _,
-                    nicknameIcon: c,
-                    className: E,
-                    nicknameVariant: I = "heading-lg/bold"
+                    usernameIcon: _,
+                    tags: c,
+                    nicknameIcon: E,
+                    pronouns: I,
+                    className: T,
+                    nicknameVariant: f = "heading-lg/bold",
+                    pronounsVariant: S = "text-sm/medium"
                 } = e;
                 return (0, i.jsxs)("div", {
-                    className: s()(u.container, E),
+                    className: s()(d.container, T),
                     children: [(0, i.jsxs)("div", {
-                        className: u.usernameRow,
+                        className: d.usernameRow,
                         children: [(0, i.jsx)(a.Heading, {
-                            className: u.nickname,
-                            variant: I,
+                            className: d.nickname,
+                            variant: f,
                             children: l.default.getName(n, r, t)
                         }), (0, i.jsx)("div", {
-                            className: u.nicknameIcon,
-                            children: c
+                            className: d.nicknameIcon,
+                            children: E
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: u.tags,
+                        className: d.tags,
                         children: [(0, i.jsx)(o.default, {
                             user: t,
-                            usernameIcon: d,
+                            usernameIcon: _,
                             forceUsername: !0,
-                            className: u.userTag,
-                            usernameClass: u.userTagUsername,
-                            discriminatorClass: u.userTagDiscriminator
-                        }), _]
+                            className: d.userTag,
+                            usernameClass: d.userTagUsername,
+                            discriminatorClass: d.userTagDiscriminator
+                        }), null != I && I.length > 0 && (0, i.jsxs)(i.Fragment, {
+                            children: [(0, i.jsx)("div", {
+                                "aria-hidden": "true",
+                                className: d.dotSpacer
+                            }), (0, i.jsx)(a.TooltipContainer, {
+                                text: u.default.Messages.USER_PROFILE_PRONOUNS,
+                                children: (0, i.jsx)(a.Text, {
+                                    variant: S,
+                                    className: d.userTag,
+                                    children: I
+                                })
+                            })]
+                        }), c]
                     })]
                 })
             }
@@ -205739,45 +205752,24 @@
             "use strict";
             n.r(t), n.d(t, {
                 UserProfileBadgesTag: function() {
-                    return d
-                },
-                UserProfilePronounsTag: function() {
-                    return u
+                    return a
                 }
             });
             var i = n("735250");
             n("470079");
-            var r = n("981729"),
-                s = n("481060"),
-                a = n("184325"),
-                o = n("689938"),
-                l = n("736379");
+            var r = n("184325"),
+                s = n("736379");
 
-            function u(e) {
-                let {
-                    pronouns: t,
-                    variant: n = "text-xs/medium"
-                } = e;
-                return null == t || 0 === t.length ? null : (0, i.jsx)(r.TooltipContainer, {
-                    text: o.default.Messages.USER_PROFILE_PRONOUNS,
-                    children: (0, i.jsx)(s.Text, {
-                        className: l.pronouns,
-                        variant: n,
-                        children: t
-                    })
-                })
-            }
-
-            function d(e) {
+            function a(e) {
                 let {
                     user: t,
                     guildId: n
                 } = e;
-                return (0, i.jsx)(a.default, {
-                    className: l.badges,
+                return (0, i.jsx)(r.default, {
+                    className: s.badges,
                     user: t,
                     guildId: n,
-                    size: a.BadgeSizes.SIZE_20
+                    size: r.BadgeSizes.SIZE_20
                 })
             }
         },
@@ -208032,13 +208024,10 @@
                             user: t,
                             nickname: D
                         }),
-                        tags: (0, i.jsxs)(i.Fragment, {
-                            children: [(0, i.jsx)(E.UserProfilePronounsTag, {
-                                pronouns: null == p ? void 0 : p.pronouns
-                            }), (0, i.jsx)(E.UserProfileBadgesTag, {
-                                user: t,
-                                guildId: null == O ? void 0 : O.id
-                            })]
+                        pronouns: null == p ? void 0 : p.pronouns,
+                        tags: (0, i.jsx)(E.UserProfileBadgesTag, {
+                            user: t,
+                            guildId: null == O ? void 0 : O.id
                         }),
                         nicknameIcon: L && !M ? (0, i.jsx)(_.default, {
                             user: t,
@@ -242807,7 +242796,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "fd3b5fadbfda4dfb2047d38ce2408fe43fbc3db7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "0e1262db53c3eb4ab195a00805bb9eceedf9bd55"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -271331,7 +271320,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287131"
+                                build_number: "287147"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -278517,7 +278506,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287131", "287131"), 10);
+                let s = parseInt((n = "287147", "287147"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -305942,4 +305931,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.22f3650abe051947d913.js.map
+//# sourceMappingURL=35705.3d52516087fb30131811.js.map
