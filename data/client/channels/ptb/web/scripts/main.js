@@ -19545,6 +19545,31 @@
                 }) : null
             }
         },
+        700582: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("481060"),
+                a = n("372900");
+            t.default = r.memo(function(e) {
+                var t, n, o, l;
+                let {
+                    user: u,
+                    size: d = s.AvatarSizes.SIZE_32,
+                    animate: _ = !1,
+                    "aria-hidden": c = !1,
+                    ...E
+                } = e, I = r.useContext(a.default);
+                return (0, i.jsx)(s.Avatar, {
+                    src: (t = u, n = (0, s.getAvatarSize)(d), o = _, l = I, t.getAvatarURL(l, n, o)),
+                    size: d,
+                    "aria-label": c ? void 0 : u.username,
+                    "aria-hidden": c,
+                    ...E
+                })
+            })
+        },
         468026: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -36710,7 +36735,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287081", ", Version Hash: ").concat("8c351b3c8febcf6bf3f6636bd90c407c72f1de83")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287088", ", Version Hash: ").concat("6142f7dc106bf4e5b1fa09383e2fe3b55c3b8340")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55649,7 +55674,14 @@
                 MESSAGE_ACTION_FORWARD: "Forward",
                 GUILD_POPOUT_ACTIVITY_EVENT_LOCATION: "Event in",
                 GUILD_POPOUT_ACTIVITY_EVENT_LOCATION_A11Y: "Event in {location}",
-                GUILD_POPOUT_ACTIVITY_EVENT_CREATED_BY: "Created by {creatorName}"
+                GUILD_POPOUT_ACTIVITY_EVENT_CREATED_BY: "Created by {creatorName}",
+                GUILD_POPOUT_ACTIVITY_USERS_1_N: "!!{a}!! and {n, plural, one {{n} other} other {{n} others}}",
+                GUILD_POPOUT_ACTIVITY_USERS_2: "!!{a}!! and !!{b}!!",
+                GUILD_POPOUT_ACTIVITY_USERS_2_N: "!!{a}!!, !!{b}!!, and {n, plural, one {{n} other} other {{n} others}}",
+                GUILD_POPOUT_ACTIVITY_USERS_3: "!!{a}!!, !!{b}!!, and !!{c}!!",
+                GUILD_POPOUT_ACTIVITY_USERS_3_N: "!!{a}!!, !!{b}!!, !!{c}!!, and {n, plural, one {{n} other} other {{n} others}}",
+                GUILD_POPOUT_ACTIVITY_USERS_N: "{n, plural, one {1 person} other {{n} people}}",
+                GUILD_POPOUT_ACTIVITY_VOICE: "In voice"
             })
         },
         539590: function(e) {
@@ -86762,8 +86794,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287081", "287081"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287081")), t = 0), t
+                let t = parseInt((e = "287088", "287088"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287088")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -93320,7 +93352,7 @@
                             l(!1), (0, I.openModalLazy)(async () => {
                                 let {
                                     default: e
-                                } = await Promise.all([n.e("99387"), n.e("23755"), n.e("90508"), n.e("41947"), n.e("86302")]).then(n.bind(n, "273602"));
+                                } = await Promise.all([n.e("99387"), n.e("23755"), n.e("90508"), n.e("41947"), n.e("95258")]).then(n.bind(n, "273602"));
                                 return t => (0, i.jsx)(e, {
                                     ...t,
                                     threadId: a,
@@ -111369,8 +111401,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287081",
-                    versionHash: "8c351b3c8febcf6bf3f6636bd90c407c72f1de83"
+                    buildNumber: "287088",
+                    versionHash: "6142f7dc106bf4e5b1fa09383e2fe3b55c3b8340"
                 }
             }
             n.r(t), n.d(t, {
@@ -148071,7 +148103,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("43643"), n.e("58227"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("40866"), n.e("74870"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("67256")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("43643"), n.e("58227"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("74870"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("67256")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -149677,44 +149709,121 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return g
+                    return B
                 }
-            });
+            }), n("390547"), n("47120");
             var i = n("735250"),
                 r = n("470079"),
-                s = n("442837"),
-                a = n("481060"),
-                o = n("666188"),
-                l = n("15274"),
-                u = n("924301"),
-                d = n("725436"),
-                _ = n("217804"),
-                c = n("703656"),
-                E = n("592125"),
-                I = n("271383"),
-                T = n("594174"),
-                f = n("940627"),
-                S = n("705600"),
-                h = n("305878"),
-                A = n("806519"),
-                m = n("51144"),
-                N = n("765305"),
-                p = n("689938"),
-                O = n("764864");
+                s = n("120356"),
+                a = n.n(s),
+                o = n("442837"),
+                l = n("481060"),
+                u = n("700582"),
+                d = n("666188"),
+                _ = n("15274"),
+                c = n("924301"),
+                E = n("725436"),
+                I = n("217804"),
+                T = n("703656"),
+                f = n("344185"),
+                S = n("592125"),
+                h = n("984933"),
+                A = n("271383"),
+                m = n("594174"),
+                N = n("938475"),
+                p = n("940627"),
+                O = n("705600"),
+                R = n("305878"),
+                C = n("632184"),
+                g = n("806519"),
+                L = n("823379"),
+                D = n("5192"),
+                v = n("51144"),
+                M = n("981631"),
+                y = n("765305"),
+                P = n("689938"),
+                U = n("764864");
 
-            function R(e) {
-                var t;
+            function b(e) {
                 let {
-                    event: n
-                } = e, o = (0, s.useStateFromStores)([E.default], () => E.default.getChannel(n.channel_id)), u = (0, s.useStateFromStores)([T.default], () => T.default.getUser(n.creator_id)), f = (0, s.useStateFromStores)([I.default], () => null != u ? I.default.getMember(n.guild_id, u.id) : null, [u, n.guild_id]), S = n.name, R = null !== (t = null == f ? void 0 : f.nick) && void 0 !== t ? t : m.default.getName(u), C = (0, _.getLocationDataForEvent)(n, o), g = null == C ? void 0 : C.IconComponent, L = null == C ? void 0 : C.locationName, D = r.useCallback(() => {
-                    (n.entity_type === N.GuildScheduledEventEntityTypes.STAGE_INSTANCE || n.entity_type === N.GuildScheduledEventEntityTypes.VOICE) && (0, c.transitionToGuild)(n.guild_id, n.channel_id), (0, l.openGuildEventDetails)({
-                        eventId: n.id
-                    })
-                }, [n]);
+                    users: t,
+                    othersCount: n
+                } = e, r = e => {
+                    if (1 !== t.length) return 0 === e ? U.activityCardImageAvatar1 : n > 0 || 2 === e ? U.activityCardImageAvatar3 : U.activityCardImageAvatar2
+                };
                 return (0, i.jsxs)("div", {
-                    className: O.activityCardContainer,
+                    className: a()(U.activityCardImage, 1 === t.length && U.activityCardImageOneAvatar),
+                    children: [t.map((e, t) => {
+                        let n = r(t);
+                        return (0, i.jsx)(u.default, {
+                            user: e,
+                            size: l.AvatarSizes.SIZE_16,
+                            className: n
+                        }, e.id)
+                    }), n > 0 && (0, i.jsxs)(l.Text, {
+                        color: "text-normal",
+                        variant: "text-xxs/semibold",
+                        className: U.activityCardImageAvatar2,
+                        children: ["+", n]
+                    })]
+                })
+            }
+
+            function G(e) {
+                let {
+                    hangoutActivity: t,
+                    guildId: n
+                } = e, {
+                    channelId: s,
+                    userIds: a
+                } = t, u = (0, o.useStateFromStores)([S.default], () => S.default.getChannel(s)), {
+                    usersToShow: d,
+                    othersCount: _,
+                    usersText: c
+                } = function(e, t, n) {
+                    let i = (0, o.useStateFromStoresArray)([m.default], () => e.map(e => m.default.getUser(e))).filter(L.isNotNullish),
+                        r = i.length > 3 ? i.slice(0, 2) : i.slice(0, 3),
+                        s = r.map(e => D.default.getName(t, n, e)),
+                        a = Math.max(0, i.length - r.length),
+                        l = function(e, t) {
+                            if (1 === e.length) return t > 0 ? P.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_1_N.format({
+                                a: e[0],
+                                n: t.toLocaleString()
+                            }) : e[0];
+                            if (2 === e.length) return t > 0 ? P.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_2_N.format({
+                                a: e[0],
+                                b: e[1],
+                                n: t.toLocaleString()
+                            }) : P.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_2.format({
+                                a: e[0],
+                                b: e[1]
+                            });
+                            if (3 !== e.length) return P.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_N.format({
+                                n: t.toLocaleString()
+                            });
+                            else return t > 0 ? P.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_3_N.format({
+                                a: e[0],
+                                b: e[1],
+                                c: e[2],
+                                n: t.toLocaleString()
+                            }) : P.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_3.format({
+                                a: e[0],
+                                b: e[1],
+                                c: e[2]
+                            })
+                        }(s, a);
+                    return {
+                        usersToShow: r,
+                        othersCount: a,
+                        usersText: l
+                    }
+                }(a, n, s), E = r.useCallback(() => {
+                    (0, T.transitionToGuild)(n, s)
+                }, [s, n]);
+                return (0, i.jsxs)("div", {
+                    className: U.activityCardContainer,
                     children: [(0, i.jsxs)("div", {
-                        className: O.activityCardImageContainer,
+                        className: U.activityCardImageContainer,
                         children: [(0, i.jsx)("svg", {
                             width: 48,
                             height: 48,
@@ -149725,16 +149834,17 @@
                                 y: 0,
                                 width: 48,
                                 height: 48,
-                                mask: "url(#".concat(A.MaskIDs.GUILD_POPOUT_ACTIVITY_ICON, ")"),
-                                children: (0, i.jsx)("div", {
-                                    className: O.activityCardImage
+                                mask: "url(#".concat(g.MaskIDs.GUILD_POPOUT_ACTIVITY_ICON, ")"),
+                                children: (0, i.jsx)(b, {
+                                    users: d,
+                                    othersCount: _
                                 })
                             })
                         }), (0, i.jsx)("div", {
-                            className: O.mask,
+                            className: U.mask,
                             children: (0, i.jsx)("div", {
-                                className: O.activityCardActivityIcon,
-                                children: (0, i.jsx)(h.default, {
+                                className: U.activityCardActivityIcon,
+                                children: (0, i.jsx)(C.default, {
                                     width: 12,
                                     height: 12,
                                     color: "white"
@@ -149742,92 +149852,190 @@
                             })
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: O.activityCardDetailsContainer,
-                        children: [(0, i.jsx)(a.Text, {
+                        className: U.activityCardDetailsContainer,
+                        children: [(0, i.jsx)(l.Text, {
                             color: "text-muted",
                             variant: "text-xs/medium",
                             lineClamp: 1,
-                            children: p.default.Messages.GUILD_POPOUT_ACTIVITY_EVENT_CREATED_BY.format({
-                                creatorName: R
-                            })
-                        }), (0, i.jsx)(a.Heading, {
+                            children: c
+                        }), (0, i.jsx)(l.Heading, {
                             color: "text-normal",
                             variant: "heading-sm/semibold",
                             lineClamp: 1,
-                            children: S
-                        }), (0, i.jsxs)("div", {
-                            className: O.location,
-                            "aria-label": "".concat(p.default.Messages.GUILD_POPOUT_ACTIVITY_EVENT_LOCATION_A11Y.format({
-                                location: L
-                            })),
-                            children: [(0, i.jsx)(a.Text, {
-                                variant: "text-xs/normal",
-                                color: "text-muted",
-                                children: p.default.Messages.GUILD_POPOUT_ACTIVITY_EVENT_LOCATION
-                            }), null != g && (0, i.jsx)(g, {
-                                width: 24,
-                                height: 24,
-                                className: O.channelIcon
-                            }), (0, i.jsx)(a.Text, {
-                                variant: "text-xs/normal",
-                                color: "text-muted",
-                                lineClamp: 1,
-                                children: (0, d.guildEventDetailsParser)(L, !0)
-                            })]
+                            children: P.default.Messages.GUILD_POPOUT_ACTIVITY_VOICE
+                        }), (0, i.jsx)(l.Text, {
+                            variant: "text-xs/normal",
+                            color: "text-muted",
+                            lineClamp: 1,
+                            children: null == u ? void 0 : u.name
                         })]
-                    }), (0, i.jsx)(a.Button, {
-                        size: a.Button.Sizes.TINY,
-                        color: a.Button.Colors.PRIMARY,
-                        onClick: D,
-                        children: p.default.Messages.JOIN
+                    }), (0, i.jsx)(l.Button, {
+                        size: l.Button.Sizes.TINY,
+                        color: l.Button.Colors.PRIMARY,
+                        onClick: E,
+                        children: P.default.Messages.JOIN
                     })]
                 })
             }
 
-            function C(e) {
+            function w(e) {
+                var t;
                 let {
-                    guild: t
-                } = e, {
                     event: n
-                } = function(e) {
-                    let t = e.id;
-                    return {
-                        hangout: [],
-                        gaming: [],
-                        activity: [],
-                        event: (0, s.useStateFromStoresArray)([u.default], () => u.default.getGuildScheduledEventsForGuild(t).filter(e => (0, u.isGuildScheduledEventActive)(e)), [t])
-                    }
-                }(t), r = n.length > 0 ? n[0] : null;
-                return (0, i.jsx)(i.Fragment, {
-                    children: null !== r && (0, i.jsx)(R, {
-                        event: r
+                } = e, s = (0, o.useStateFromStores)([S.default], () => S.default.getChannel(n.channel_id)), a = (0, o.useStateFromStores)([m.default], () => m.default.getUser(n.creator_id)), u = (0, o.useStateFromStores)([A.default], () => null != a ? A.default.getMember(n.guild_id, a.id) : null, [a, n.guild_id]), d = n.name, c = null !== (t = null == u ? void 0 : u.nick) && void 0 !== t ? t : v.default.getName(a), f = (0, I.getLocationDataForEvent)(n, s), h = null == f ? void 0 : f.IconComponent, N = null == f ? void 0 : f.locationName, p = r.useCallback(() => {
+                    (n.entity_type === y.GuildScheduledEventEntityTypes.STAGE_INSTANCE || n.entity_type === y.GuildScheduledEventEntityTypes.VOICE) && (0, T.transitionToGuild)(n.guild_id, n.channel_id), (0, _.openGuildEventDetails)({
+                        eventId: n.id
                     })
+                }, [n]);
+                return (0, i.jsxs)("div", {
+                    className: U.activityCardContainer,
+                    children: [(0, i.jsxs)("div", {
+                        className: U.activityCardImageContainer,
+                        children: [(0, i.jsx)("svg", {
+                            width: 48,
+                            height: 48,
+                            viewBox: "0 0 48 48",
+                            "aria-hidden": !0,
+                            children: (0, i.jsx)("foreignObject", {
+                                x: 0,
+                                y: 0,
+                                width: 48,
+                                height: 48,
+                                mask: "url(#".concat(g.MaskIDs.GUILD_POPOUT_ACTIVITY_ICON, ")"),
+                                children: (0, i.jsx)("div", {
+                                    className: U.activityCardImage
+                                })
+                            })
+                        }), (0, i.jsx)("div", {
+                            className: U.mask,
+                            children: (0, i.jsx)("div", {
+                                className: U.activityCardActivityIcon,
+                                children: (0, i.jsx)(R.default, {
+                                    width: 12,
+                                    height: 12,
+                                    color: "white"
+                                })
+                            })
+                        })]
+                    }), (0, i.jsxs)("div", {
+                        className: U.activityCardDetailsContainer,
+                        children: [(0, i.jsx)(l.Text, {
+                            color: "text-muted",
+                            variant: "text-xs/medium",
+                            lineClamp: 1,
+                            children: P.default.Messages.GUILD_POPOUT_ACTIVITY_EVENT_CREATED_BY.format({
+                                creatorName: c
+                            })
+                        }), (0, i.jsx)(l.Heading, {
+                            color: "text-normal",
+                            variant: "heading-sm/semibold",
+                            lineClamp: 1,
+                            children: d
+                        }), (0, i.jsxs)("div", {
+                            className: U.location,
+                            "aria-label": "".concat(P.default.Messages.GUILD_POPOUT_ACTIVITY_EVENT_LOCATION_A11Y.format({
+                                location: N
+                            })),
+                            children: [(0, i.jsx)(l.Text, {
+                                variant: "text-xs/normal",
+                                color: "text-muted",
+                                children: P.default.Messages.GUILD_POPOUT_ACTIVITY_EVENT_LOCATION
+                            }), null != h && (0, i.jsx)(h, {
+                                width: 24,
+                                height: 24,
+                                className: U.channelIcon
+                            }), (0, i.jsx)(l.Text, {
+                                variant: "text-xs/normal",
+                                color: "text-muted",
+                                lineClamp: 1,
+                                children: (0, E.guildEventDetailsParser)(N, !0)
+                            })]
+                        })]
+                    }), (0, i.jsx)(l.Button, {
+                        size: l.Button.Sizes.TINY,
+                        color: l.Button.Colors.PRIMARY,
+                        onClick: p,
+                        children: P.default.Messages.JOIN
+                    })]
                 })
             }
 
-            function g(e) {
+            function k(e) {
                 let {
                     guild: t
-                } = e, n = (0, o.default)(t);
+                } = e, {
+                    hangout: n,
+                    event: r
+                } = function(e) {
+                    let t = e.id,
+                        n = (0, o.useStateFromStoresArray)([h.default, f.default], () => {
+                            let e = h.default.getChannels(t)[h.GUILD_VOCAL_CHANNELS_KEY].filter(e => {
+                                let {
+                                    channel: t
+                                } = e;
+                                return t.type === M.ChannelTypes.GUILD_VOICE
+                            }).map(e => {
+                                let {
+                                    channel: t
+                                } = e;
+                                return t.id
+                            });
+                            return [...e, ...Object.values(f.default.getThreadsForGuild(t)).flatMap(e => Object.keys(e))]
+                        }, [t]),
+                        i = (0, o.useStateFromStores)([N.default], () => N.default.getVoiceStates(t), [t]),
+                        r = Object.keys(i).filter(t => t !== e.afkChannelId && n.includes(t)).map(e => {
+                            var t;
+                            let n = (null !== (t = i[e]) && void 0 !== t ? t : []).map(e => {
+                                let {
+                                    user: t
+                                } = e;
+                                return t.id
+                            });
+                            return {
+                                channelId: e,
+                                userIds: n
+                            }
+                        });
+                    return {
+                        hangout: r,
+                        gaming: [],
+                        activity: [],
+                        event: (0, o.useStateFromStoresArray)([c.default], () => c.default.getGuildScheduledEventsForGuild(t).filter(e => (0, c.isGuildScheduledEventActive)(e)), [t])
+                    }
+                }(t), s = r.length > 0 ? r[0] : null, a = n.length > 0 ? n[0] : null;
+                return (0, i.jsxs)(i.Fragment, {
+                    children: [null !== s && (0, i.jsx)(w, {
+                        event: s
+                    }), null !== a && (0, i.jsx)(G, {
+                        hangoutActivity: a,
+                        guildId: t.id
+                    })]
+                })
+            }
+
+            function B(e) {
+                let {
+                    guild: t
+                } = e, n = (0, d.default)(t);
                 return (0, i.jsxs)("div", {
-                    className: O.container,
+                    className: U.container,
                     children: [(0, i.jsxs)("div", {
-                        className: O.header,
-                        children: [n ? (0, i.jsx)(S.default, {
+                        className: U.header,
+                        children: [n ? (0, i.jsx)(O.default, {
                             guild: t,
                             size: 16,
-                            className: O.rowIconV2
-                        }) : (0, i.jsx)(f.default, {
+                            className: U.rowIconV2
+                        }) : (0, i.jsx)(p.default, {
                             guild: t,
                             size: 20,
-                            className: O.rowIcon
-                        }), (0, i.jsx)(a.Text, {
+                            className: U.rowIcon
+                        }), (0, i.jsx)(l.Text, {
                             variant: "text-md/bold",
                             color: "header-primary",
                             lineClamp: 1,
                             children: t.name
                         })]
-                    }), (0, i.jsx)(C, {
+                    }), (0, i.jsx)(k, {
                         guild: t
                     })]
                 })
@@ -165041,8 +165249,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713892591102",
-                                    build_number: "287081"
+                                    built_at: "1713893129766",
+                                    build_number: "287088"
                                 }
                             },
                             retries: 1
@@ -170666,7 +170874,7 @@
                 (0, s.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("6416"), n.e("440"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("32776"), n.e("57878"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("47238")]).then(n.bind(n, "7305"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("6416"), n.e("440"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("32776"), n.e("57878"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("40146")]).then(n.bind(n, "7305"));
                     return n => {
                         let {
                             onClose: r,
@@ -170768,7 +170976,7 @@
                         PaymentContextProvider: e
                     } = await Promise.resolve().then(n.bind(n, "598")), a = (await Promise.all([n.e("49237"), n.e("99387"), n.e("15972"), n.e("6416"), n.e("32776"), n.e("10993")]).then(n.bind(n, "405083"))).default, {
                         getApplicationPaymentSteps: c
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("440"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("95900"), n.e("85262")]).then(n.bind(n, "759386")), p = c({
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("440"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("95900"), n.e("62498")]).then(n.bind(n, "759386")), p = c({
                         guildId: T,
                         showBenefitsFirst: h,
                         eligibleApplicationSubscriptionGuilds: A
@@ -242628,7 +242836,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8c351b3c8febcf6bf3f6636bd90c407c72f1de83"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "6142f7dc106bf4e5b1fa09383e2fe3b55c3b8340"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -271152,7 +271360,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287081"
+                                build_number: "287088"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -278338,7 +278546,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287081", "287081"), 10);
+                let s = parseInt((n = "287088", "287088"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -305763,4 +305971,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.250f9135e408680be67f.js.map
+//# sourceMappingURL=35705.bd09576aafdd0e7aa071.js.map
