@@ -2432,33 +2432,6 @@
     align-items: center
 }
 
-.verifyConnectedAccount_d644ab .logos_c4aea3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 95px
-}
-
-.verifyConnectedAccount_d644ab .logos_c4aea3 .logosDivider__15033 {
-    width: 28px;
-    height: 28px;
-    margin: 0 37px;
-    background-size: 28px 28px;
-    background-image: url(/assets/932a8ef58e8c04ca16d3.svg);
-    content: " ";
-    display: inline-block
-}
-
-.verifyConnectedAccount_d644ab .logos_c4aea3 .logo__3038d {
-    width: 88px;
-    height: 88px;
-    background-size: 88px 88px
-}
-
-.verifyConnectedAccount_d644ab .logos_c4aea3 .logoDiscord__80660 {
-    background-image: url(/assets/8d1136c96067edd6cc01.svg)
-}
-
 .verifyConnectedAccount_d644ab .message_a3932d {
     text-align: center;
     font-size: 18px
@@ -2494,6 +2467,33 @@
     background-color: transparent;
     opacity: 1;
     padding: 28px
+}
+
+.logos_c4aea3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 95px
+}
+
+.logos_c4aea3 .logosDivider__15033 {
+    width: 28px;
+    height: 28px;
+    margin: 0 37px;
+    background-size: 28px 28px;
+    background-image: url(/assets/932a8ef58e8c04ca16d3.svg);
+    content: " ";
+    display: inline-block
+}
+
+.logos_c4aea3 .logo__3038d {
+    width: 88px;
+    height: 88px;
+    background-size: 88px 88px
+}
+
+.logos_c4aea3 .logoDiscord__80660 {
+    background-image: url(/assets/8d1136c96067edd6cc01.svg)
 }
 
 .phoneFieldPopout_a20b2f {
@@ -92942,6 +92942,35 @@ div:has(>div>.modal__06f49) {
     color: var(--black-500)
 }
 
+.root__436bf {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-24)
+}
+
+.wrapper__48ec7 {
+    min-height: auto
+}
+
+.header__4ce56 {
+    margin-bottom: var(--spacing-12)
+}
+
+.body__9e909,
+.logos_d6e878 {
+    margin-bottom: var(--spacing-24)
+}
+
+.error_f0e854 {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
 .container_c44a75 {
     width: 472px;
     min-height: 184px
@@ -135299,4 +135328,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ecdcf0c97977c80cafbc.css.map*/
+/*# sourceMappingURL=99387.50f9d6c60285615b10d1.css.map*/

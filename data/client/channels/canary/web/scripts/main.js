@@ -9697,65 +9697,69 @@
         },
         457330: function(e, t, n) {
             "use strict";
-            n.r(t);
+            n.r(t), n("610138"), n("216116"), n("78328"), n("815648"), n("47120");
             var i = n("990547"),
-                r = n("478677"),
-                s = n("544891"),
-                a = n("570140"),
-                o = n("275759"),
-                l = n("710845"),
-                u = n("626135"),
-                d = n("573261"),
-                _ = n("981631");
-            let c = new l.default("ConnectedAccounts");
+                r = n("544891"),
+                s = n("570140"),
+                a = n("275759"),
+                o = n("710845"),
+                l = n("626135"),
+                u = n("573261"),
+                d = n("981631");
+            let _ = new o.default("ConnectedAccounts");
 
-            function E(e, t) {
+            function c(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-                return s.HTTP.post({
-                    url: _.Endpoints.CONNECTIONS_CALLBACK(e),
+                return r.HTTP.post({
+                    url: d.Endpoints.CONNECTIONS_CALLBACK(e),
                     body: {
                         ...t,
                         insecure: n,
-                        friend_sync: _.FRIEND_SYNC_PLATFORM_TYPES.has(e)
+                        friend_sync: d.FRIEND_SYNC_PLATFORM_TYPES.has(e)
                     },
                     oldFormErrors: !0
                 })
             }
             t.default = {
-                fetch: () => s.HTTP.get({
-                    url: _.Endpoints.CONNECTIONS,
+                fetch: () => r.HTTP.get({
+                    url: d.Endpoints.CONNECTIONS,
                     oldFormErrors: !0
-                }).then(e => a.default.dispatch({
+                }).then(e => s.default.dispatch({
                     type: "USER_CONNECTIONS_UPDATE",
                     local: !0,
                     accounts: e.body
-                }), () => a.default.dispatch({
+                }), () => s.default.dispatch({
                     type: "USER_CONNECTIONS_UPDATE",
                     local: !0,
                     accounts: []
                 })),
                 authorize(e) {
-                    let t, {
-                        location: n,
-                        twoWayLinkType: i,
-                        userCode: a
+                    let {
+                        location: t,
+                        twoWayLinkType: n,
+                        userCode: i,
+                        twoWayLink: s,
+                        successRedirect: a
                     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-                    return u.default.track(_.AnalyticEvents.CONNECTED_ACCOUNT_INITIATED, {
+                    l.default.track(d.AnalyticEvents.CONNECTED_ACCOUNT_INITIATED, {
                         platform_type: e,
-                        location: n
-                    }), t = i === r.TwoWayLinkType.DEVICE_CODE && null != a ? _.Endpoints.CONNECTIONS_AUTHORIZE_LINK_DEVICE(e, a) : null != i ? _.Endpoints.CONNECTIONS_AUTHORIZE_LINK(e, i) : _.Endpoints.CONNECTIONS_AUTHORIZE(e), s.HTTP.get({
-                        url: t,
+                        location: t
+                    });
+                    let o = d.Endpoints.CONNECTIONS_AUTHORIZE(e),
+                        u = new URLSearchParams;
+                    return null != i && u.append("two_way_user_code", i), null != a && u.append("success_redirect", a), null != n ? (u.append("two_way_link_type", n), u.append("two_way_link", "true")) : null != s && u.append("two_way_link", String(s)), o = o + "?" + u.toString(), r.HTTP.get({
+                        url: o,
                         oldFormErrors: !0
                     })
                 },
-                callback: E,
+                callback: c,
                 connect(e, t, n, r, s) {
                     var a;
-                    return d.default.put({
-                        url: _.Endpoints.CONNECTION(e, t),
+                    return u.default.put({
+                        url: d.Endpoints.CONNECTION(e, t),
                         body: {
                             name: n,
-                            friend_sync: null !== (a = null == s ? void 0 : s.friend_sync) && void 0 !== a ? a : _.FRIEND_SYNC_PLATFORM_TYPES.has(e)
+                            friend_sync: null !== (a = null == s ? void 0 : s.friend_sync) && void 0 !== a ? a : d.FRIEND_SYNC_PLATFORM_TYPES.has(e)
                         },
                         context: {
                             location: r
@@ -9765,17 +9769,17 @@
                             event: i.NetworkActionNames.USER_CONNECTIONS_UPDATE,
                             properties: {
                                 name: n,
-                                friend_sync: _.FRIEND_SYNC_PLATFORM_TYPES.has(e)
+                                friend_sync: d.FRIEND_SYNC_PLATFORM_TYPES.has(e)
                             }
                         }
                     })
                 },
-                disconnect: (e, t) => s.HTTP.del({
-                    url: _.Endpoints.CONNECTION(e, t),
+                disconnect: (e, t) => r.HTTP.del({
+                    url: d.Endpoints.CONNECTION(e, t),
                     oldFormErrors: !0
                 }),
-                refresh: (e, t) => s.HTTP.post({
-                    url: _.Endpoints.CONNECTION_REFRESH(e, t),
+                refresh: (e, t) => r.HTTP.post({
+                    url: d.Endpoints.CONNECTION_REFRESH(e, t),
                     oldFormErrors: !0
                 }),
                 setVisibility(e, t, n) {
@@ -9798,8 +9802,8 @@
                         show_activity: n
                     })
                 },
-                update: (e, t, n) => d.default.patch({
-                    url: _.Endpoints.CONNECTION(e, t),
+                update: (e, t, n) => u.default.patch({
+                    url: d.Endpoints.CONNECTION(e, t),
                     body: n,
                     oldFormErrors: !0,
                     trackedActionData: {
@@ -9810,19 +9814,19 @@
                     }
                 }),
                 joinServer(e, t) {
-                    a.default.dispatch({
+                    s.default.dispatch({
                         type: "USER_CONNECTIONS_INTEGRATION_JOINING",
                         integrationId: e,
                         joining: !0
-                    }), s.HTTP.post({
-                        url: _.Endpoints.INTEGRATION_JOIN(e),
+                    }), r.HTTP.post({
+                        url: d.Endpoints.INTEGRATION_JOIN(e),
                         oldFormErrors: !0
                     }, n => {
-                        a.default.dispatch({
+                        s.default.dispatch({
                             type: "USER_CONNECTIONS_INTEGRATION_JOINING",
                             integrationId: e,
                             joining: !1
-                        }), !n.ok && (a.default.dispatch({
+                        }), !n.ok && (s.default.dispatch({
                             type: "USER_CONNECTIONS_INTEGRATION_JOINING_ERROR",
                             integrationId: e,
                             error: n.hasErr ? void 0 : n.body.message
@@ -9835,18 +9839,18 @@
                             body: {
                                 access_token: n
                             }
-                        } = await s.HTTP.get({
-                            url: _.Endpoints.CONNECTION_ACCESS_TOKEN(e, t),
+                        } = await r.HTTP.get({
+                            url: d.Endpoints.CONNECTION_ACCESS_TOKEN(e, t),
                             oldFormErrors: !0
                         });
-                        return a.default.dispatch({
+                        return s.default.dispatch({
                             type: "USER_CONNECTION_UPDATE",
                             platformType: e,
                             id: t,
                             accessToken: n
                         }), n
                     } catch (n) {
-                        throw n.body.code === _.AbortCodes.CONNECTION_REVOKED && a.default.dispatch({
+                        throw n.body.code === d.AbortCodes.CONNECTION_REVOKED && s.default.dispatch({
                             type: "USER_CONNECTION_UPDATE",
                             platformType: e,
                             id: t,
@@ -9854,8 +9858,8 @@
                         }), n
                     }
                 },
-                linkDispatchAuthCallback: (e, t) => s.HTTP.post({
-                    url: _.Endpoints.CONNECTIONS_LINK_DISPATCH_AUTH_CALLBACK(e),
+                linkDispatchAuthCallback: (e, t) => r.HTTP.post({
+                    url: d.Endpoints.CONNECTIONS_LINK_DISPATCH_AUTH_CALLBACK(e),
                     body: {
                         ...t
                     },
@@ -9863,22 +9867,22 @@
                 }),
                 async completeTwoWayLink(e, t, n, i, r) {
                     if (null == t) {
-                        c.error("Two-way link: missing authorize location");
+                        _.error("Two-way link: missing authorize location");
                         return
                     }
                     let {
                         code: s,
-                        error: a,
+                        error: o,
                         errorDescription: l
-                    } = (0, o.getCallbackParamsFromURL)(t);
-                    if (null != a) {
-                        c.error("Two-way link: missing authorize code", {
-                            error: a,
+                    } = (0, a.getCallbackParamsFromURL)(t);
+                    if (null != o) {
+                        _.error("Two-way link: missing authorize code", {
+                            error: o,
                             errorDescription: l
                         });
                         return
                     }
-                    return await E(e, {
+                    return await c(e, {
                         code: n,
                         state: i,
                         two_way_link_code: s,
@@ -36736,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287337", ", Version Hash: ").concat("11304deb4ffbfbed6ce425c6c0f3dc2b1e94144b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287340", ", Version Hash: ").concat("214ee78573ffabe413052308ffd0c58985af9b55")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -40411,6 +40415,10 @@
                 DISCONNECT_ACCOUNT_TITLE: "Disconnect !!{name}!!",
                 DISCONNECT_ACCOUNT_BODY: "Disconnecting your account might remove you from servers you joined via this account.",
                 CONNECTED_ACCOUNT_COPY_USERNAME: "Copy username for !!{name}!!",
+                CONNECTED_ACCOUNT_AUTHORIZATION_CONTINUE_HEADER: "Continue linking to !!{provider}!!",
+                CONNECTED_ACCOUNT_AUTHORIZATION_CONTINUE_DESCRIPTION: "Almost done! Let's take you to !!{provider}!! to finish linking your account.",
+                CONNECTED_ACCOUNT_AUTHORIZATION_CONTINUE_BUTTON: "Continue",
+                CONNECTED_ACCOUNT_AUTHORIZATION_PLATFORM_UNKNOWN: "Unknown Platform",
                 EVERYONE_POPOUT_BODY: "By using **{role}**, you are about to mention {count}+ people. Are you sure?",
                 EVERYONE_POPOUT_BODY_THREAD: "By using **{role}**, you are about to mention {count}+ people in this thread. Are you sure?",
                 EVERYONE_POPOUT_BODY_FORUM_POST: "By using **{role}**, you are about to mention {count}+ people in this post. Are you sure?",
@@ -86804,8 +86812,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287337", "287337"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287337")), t = 0), t
+                let t = parseInt((e = "287340", "287340"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287340")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111797,8 +111805,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287337",
-                    versionHash: "11304deb4ffbfbed6ce425c6c0f3dc2b1e94144b"
+                    buildNumber: "287340",
+                    versionHash: "214ee78573ffabe413052308ffd0c58985af9b55"
                 }
             }
             n.r(t), n.d(t, {
@@ -148537,7 +148545,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("43643"), n.e("90508"), n.e("58227"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("74870"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("67256")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("43643"), n.e("58227"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("74870"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("67256")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -165689,8 +165697,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713912641271",
-                                    build_number: "287337"
+                                    built_at: "1713912927407",
+                                    build_number: "287340"
                                 }
                             },
                             retries: 1
@@ -243393,7 +243401,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "11304deb4ffbfbed6ce425c6c0f3dc2b1e94144b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "214ee78573ffabe413052308ffd0c58985af9b55"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -271917,7 +271925,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287337"
+                                build_number: "287340"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -279103,7 +279111,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287337", "287337"), 10);
+                let s = parseInt((n = "287340", "287340"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -306546,4 +306554,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.f1b9e4845f5985053e9f.js.map
+//# sourceMappingURL=35705.47fa1345143d6045657d.js.map
