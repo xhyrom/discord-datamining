@@ -36736,7 +36736,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287163", ", Version Hash: ").concat("466e22ad8666ee86e5af01675a397168711b2fb2")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287167", ", Version Hash: ").concat("63e802d7b0aa5651f669c4f5109dabd18ba80841")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -41308,6 +41308,7 @@
                 USER_SETTINGS_KEYBIND_SWITCH_SERVER_SETTINGS_SECTION: "Select the voice channel to join or switch to",
                 USER_SETTINGS_KEYBIND_ENABLE_DISABLE: "Enable or disable keybind",
                 USER_SETTINGS_KEYBIND_VOICE_CHANNEL_RESULTS: "Results",
+                USER_SETTINGS_KEYBIND_VIBE_WITH_WUMPUS_DESCRIPTION: "Listen to Lofi Beats with Wumpus",
                 SHOW_CURRENT_ACTIVITY: "Share your detected activities with others",
                 SHOW_CURRENT_ACTIVITY_DESC: "Discord will automatically update your status if you're attending a public Stage.",
                 SHOW_CURRENT_ACTIVITY_DESC_EMBEDDED: "When you play a detectable game or other application that supports Rich Presence, Discord can display information about those activities, including when and how you engaged.",
@@ -86797,8 +86798,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287163", "287163"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287163")), t = 0), t
+                let t = parseInt((e = "287167", "287167"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287167")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111405,8 +111406,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287163",
-                    versionHash: "466e22ad8666ee86e5af01675a397168711b2fb2"
+                    buildNumber: "287167",
+                    versionHash: "63e802d7b0aa5651f669c4f5109dabd18ba80841"
                 }
             }
             n.r(t), n.d(t, {
@@ -165251,8 +165252,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713897664587",
-                                    build_number: "287163"
+                                    built_at: "1713897864216",
+                                    build_number: "287167"
                                 }
                             },
                             retries: 1
@@ -242870,7 +242871,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "466e22ad8666ee86e5af01675a397168711b2fb2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "63e802d7b0aa5651f669c4f5109dabd18ba80841"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -271394,7 +271395,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287163"
+                                build_number: "287167"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -278580,7 +278581,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287163", "287163"), 10);
+                let s = parseInt((n = "287167", "287167"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -306005,4 +306006,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.0bf647d8eb42019cdc7d.js.map
+//# sourceMappingURL=35705.312f00b0c808a1beb671.js.map
