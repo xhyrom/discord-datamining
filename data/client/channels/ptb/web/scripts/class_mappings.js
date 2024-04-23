@@ -21690,6 +21690,8 @@
                 fullHighlight: "fullHighlight__75564",
                 giftIcon: "giftIcon__38883",
                 halfHighlight: "halfHighlight__81f62",
+                referralProgressBarIcon: "referralProgressBarIcon__98c1d",
+                referralProgressBarIconSettings: "referralProgressBarIconSettings__2bce3",
                 unsentTooltipContent: "unsentTooltipContent__8a2b8",
                 userAvatarProgressBarContainer: "userAvatarProgressBarContainer__52b1f",
                 userAvatarProgressBarUnit: "userAvatarProgressBarUnit__6bc46",
