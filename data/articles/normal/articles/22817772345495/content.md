@@ -13,7 +13,7 @@
 <p class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/22873832143383" width="433" height="419"></strong></p>
 <p><strong>Who is Eligible: </strong><span style="background-color: #ffffff;">Reward available to eligible players on all platforms and regions where Lost Ark is available. </span></p>
 <p><span style="background-color: #ffffff;">Discord’s premium services are restricted in some regions. If you are unable to access the Gift Inventory, you are not eligible for this Quest or reward.</span></p>
-<p><strong>Availability Period: </strong>The <strong>Mokoko Quest</strong> can be accepted on Discord from <strong>April 17, 2024</strong> to <strong>April 23, 2024 (11:59pm UTC)</strong>. </p>
+<p><strong>Availability Period: </strong>The <strong>Mokoko Quest</strong> can be accepted on Discord from <strong>April 17, 2024</strong> to <strong>April 23, 2024 (11:59pm PT)</strong>. </p>
 <p>Quest requirements must be completed during this period to receive the reward. </p>
 <p><strong>Other Terms:</strong> </p>
 <p>Limit of one reward redemption per account.</p>
