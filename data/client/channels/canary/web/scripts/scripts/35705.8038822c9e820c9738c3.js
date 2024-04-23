@@ -36690,7 +36690,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287032", ", Version Hash: ").concat("2bf43205120ec65bb7f9843b915dd5c1eaa58ef7")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287034", ", Version Hash: ").concat("3dead7988696b989e2515423a2752e1d86de1185")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -54942,6 +54942,9 @@
                 QUESTS_ACCEPT_TOOLTIP: "Accept the Quest and complete the task to unlock the reward",
                 QUESTS_IN_PROGRESS_TOOLTIP: "Complete the task to unlock the reward",
                 QUESTS_STREAM_TASK: "Stream {gameTitle} to a friend for {minutes} minutes",
+                QUESTS_UNLOCK_REWARDS: "Unlock Rewards",
+                QUESTS_CHECK_PROGRESS: "Check Progress",
+                QUESTS_JOIN_ME: "Join Me",
                 QUESTS_REWARD_VERIFICATION_TITLE: "Verify your account to claim rewards!",
                 QUESTS_REWARD_VERIFICATION_BODY: "We have sent a verification email to: [{emailAddress}]({emailAddressLink})",
                 QUESTS_REWARD_VERIFICATION_ERROR: "Uh oh! We failed to send you a verification email.",
@@ -54964,7 +54967,6 @@
                 QUESTS_REWARD_CODE_TRY_AGAIN: "Try Again",
                 QUESTS_REWARD_CODE_UNCLAIMED_REWARD_TILE_SUBHEADER: "Claim This",
                 QUESTS_REWARD_CODE_CLAIMED_REWARD_TILE_SUBHEADER: "You Claimed This",
-                QUESTS_REWARD_CODE_UNCLAIMED_REWARD_TILE_SUBHEADER_V2: "Claim Reward",
                 QUESTS_REWARD_CODE_PLATFORM_CROSS_PLATFORM: "Cross-platform",
                 QUESTS_REWARD_CODE_PLATFORM_PC: "PC",
                 QUESTS_REWARD_CODE_PLATFORM_PLAYSTATION: "PlayStation",
@@ -55044,8 +55046,8 @@
                 STOREFRONT_TITLE: "{appName} Store",
                 STOREFRONT_APP_SUBSCRIPTIONS: "Subscriptions",
                 STOREFRONT_APP_SUBSCRIPTIONS_BODY: "Purchase subscriptions from {appName}",
-                STOREFRONT_APP_PRODUCTS: "Products",
-                STOREFRONT_APP_PRODUCTS_BODY: "Purchase products from {appName}",
+                STOREFRONT_APP_PRODUCTS: "Items",
+                STOREFRONT_APP_PRODUCTS_BODY: "Purchase items from {appName}",
                 STOREFRONT_SUBSCRIPTION: "Subscription",
                 STOREFRONT_SUBSCRIBE_FOR: "Subscribe for {rate}",
                 STOREFRONT_SUBSCRIPTION_BENEFITS: "Subscription Benefits",
@@ -86736,8 +86738,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287032", "287032"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287032")), t = 0), t
+                let t = parseInt((e = "287034", "287034"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287034")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111308,8 +111310,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287032",
-                    versionHash: "2bf43205120ec65bb7f9843b915dd5c1eaa58ef7"
+                    buildNumber: "287034",
+                    versionHash: "3dead7988696b989e2515423a2752e1d86de1185"
                 }
             }
             n.r(t), n.d(t, {
@@ -164784,8 +164786,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713888776425",
-                                    build_number: "287032"
+                                    built_at: "1713889197814",
+                                    build_number: "287034"
                                 }
                             },
                             retries: 1
@@ -184366,7 +184368,7 @@
                     },
                     el = j && !H ? {
                         headerText: U.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_REWARD,
-                        ctaText: U.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_CTA,
+                        ctaText: U.default.Messages.QUESTS_CLAIM_REWARD,
                         handleClickCta: V,
                         tileAssetType: "reward"
                     } : Y ? {
@@ -242335,7 +242337,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2bf43205120ec65bb7f9843b915dd5c1eaa58ef7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3dead7988696b989e2515423a2752e1d86de1185"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270859,7 +270861,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287032"
+                                build_number: "287034"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -278044,7 +278046,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287032", "287032"), 10);
+                let s = parseInt((n = "287034", "287034"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -305469,4 +305471,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.f93dbb42a2f5855d80b9.js.map
+//# sourceMappingURL=35705.8038822c9e820c9738c3.js.map
