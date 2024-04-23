@@ -36710,7 +36710,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287052", ", Version Hash: ").concat("6c0fc448e245337be0ded98d55a1a5e9c053288f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287059", ", Version Hash: ").concat("52a046394f7002851bb6078a6b4f755e8b8a76b1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86759,8 +86759,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287052", "287052"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287052")), t = 0), t
+                let t = parseInt((e = "287059", "287059"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287059")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111345,8 +111345,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287052",
-                    versionHash: "6c0fc448e245337be0ded98d55a1a5e9c053288f"
+                    buildNumber: "287059",
+                    versionHash: "52a046394f7002851bb6078a6b4f755e8b8a76b1"
                 }
             }
             n.r(t), n.d(t, {
@@ -165017,8 +165017,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713890440090",
-                                    build_number: "287052"
+                                    built_at: "1713890879319",
+                                    build_number: "287059"
                                 }
                             },
                             retries: 1
@@ -202252,47 +202252,6 @@
                 })
             }
         },
-        813872: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return f
-                }
-            });
-            var i = n("735250"),
-                r = n("470079"),
-                s = n("442837"),
-                a = n("481060"),
-                o = n("40851"),
-                l = n("189432"),
-                u = n("189357"),
-                d = n("944486"),
-                _ = n("626135"),
-                c = n("981631"),
-                E = n("176505"),
-                I = n("50493"),
-                T = n("689938");
-
-            function f(e) {
-                let {
-                    userId: t,
-                    guildId: n,
-                    channelId: f,
-                    location: S,
-                    onAction: h
-                } = e, A = r.useContext(_.AnalyticsContext), m = (0, o.useWindowDispatch)(), N = (0, s.useStateFromStores)([d.default], () => null != f ? f : d.default.getChannelId(n, !0), [f, n]), p = (0, u.useCanAccessGuildMemberModView)(n, !0);
-                return null != n && p ? (0, i.jsx)(a.MenuItem, {
-                    id: "mod-view",
-                    label: T.default.Messages.GUILD_MEMBER_MOD_VIEW_TITLE,
-                    action: () => {
-                        null == h || h(), (0, l.openGuildMemberModViewSidebar)(n, t, null != N ? N : E.StaticChannelRoute.MEMBER_SAFETY, {
-                            modViewPanel: I.ModViewPanel.INFO,
-                            sourceLocation: null != S ? S : A.location
-                        }), m.dispatch(c.ComponentActions.POPOUT_CLOSE)
-                    }
-                }) : null
-            }
-        },
         297047: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -205794,11 +205753,58 @@
                 })
             }
         },
+        94918: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return f
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("442837"),
+                s = n("914576"),
+                a = n("906732"),
+                o = n("189432"),
+                l = n("189357"),
+                u = n("314897"),
+                d = n("944486"),
+                _ = n("785717"),
+                c = n("537387"),
+                E = n("176505"),
+                I = n("50493"),
+                T = n("689938");
+
+            function f(e) {
+                let {
+                    user: t,
+                    guildId: n,
+                    channelId: f,
+                    onClose: S
+                } = e, {
+                    trackUserProfileAction: h
+                } = (0, _.useUserProfileAnalyticsContext)(), {
+                    newestAnalyticsLocation: A
+                } = (0, a.default)(), m = (0, r.useStateFromStores)([u.default], () => u.default.getId() === (null == t ? void 0 : t.id)), N = (0, l.useCanAccessGuildMemberModView)(null != n ? n : null, !0), p = (0, r.useStateFromStores)([d.default], () => null != f ? f : d.default.getChannelId(n, !0), [f, n]);
+                return null == n || !N || m ? null : (0, i.jsx)(c.default, {
+                    icon: s.ShieldIcon,
+                    text: T.default.Messages.GUILD_MEMBER_MOD_VIEW_TITLE,
+                    onClick: () => {
+                        h({
+                            action: "PRESS_MOD_VIEW"
+                        }), (0, o.openGuildMemberModViewSidebar)(n, t.id, null != p ? p : E.StaticChannelRoute.MEMBER_SAFETY, {
+                            modViewPanel: I.ModViewPanel.INFO,
+                            sourceLocation: A
+                        }), null == S || S()
+                    }
+                })
+            }
+        },
         664794: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return S
+                    return f
                 }
             });
             var i = n("735250");
@@ -205809,67 +205815,53 @@
                 o = n("906732"),
                 l = n("858488"),
                 u = n("389052"),
-                d = n("813872"),
-                _ = n("622724"),
-                c = n("314897"),
-                E = n("808268"),
-                I = n("785717"),
-                T = n("537387"),
-                f = n("689938");
+                d = n("622724"),
+                _ = n("314897"),
+                c = n("808268"),
+                E = n("785717"),
+                I = n("537387"),
+                T = n("689938");
 
-            function S(e) {
+            function f(e) {
                 let {
                     user: t,
                     guildId: n,
-                    channelId: S,
-                    viewProfileItem: h,
-                    onClose: A
-                } = e, m = (0, r.useStateFromStores)([c.default], () => c.default.getId() === t.id), {
-                    trackUserProfileAction: N
-                } = (0, I.useUserProfileAnalyticsContext)(), {
-                    analyticsLocations: p,
-                    newestAnalyticsLocation: O
-                } = (0, o.default)(a.default.USER_PROFILE_OVERFLOW_MENU), R = (0, l.default)({
+                    viewProfileItem: f
+                } = e, S = (0, r.useStateFromStores)([_.default], () => _.default.getId() === t.id), {
+                    trackUserProfileAction: h
+                } = (0, E.useUserProfileAnalyticsContext)(), {
+                    analyticsLocations: A,
+                    newestAnalyticsLocation: m
+                } = (0, o.default)(a.default.USER_PROFILE_OVERFLOW_MENU), N = (0, l.default)({
                     user: t,
-                    onAction: () => N({
+                    onAction: () => h({
                         action: "PRESS_SET_FRIEND_NICKNAME",
-                        analyticsLocations: p
+                        analyticsLocations: A
                     })
-                }), C = (0, d.default)({
-                    userId: t.id,
-                    guildId: null != n ? n : null,
-                    channelId: S,
-                    location: O,
-                    onAction: () => {
-                        N({
-                            action: "PRESS_MOD_VIEW",
-                            analyticsLocations: p
-                        }), null == A || A()
-                    }
-                }), g = (0, u.default)({
+                }), p = (0, u.default)({
                     user: t,
                     color: "danger",
-                    location: O,
-                    onBlock: () => N({
+                    location: m,
+                    onBlock: () => h({
                         action: "BLOCK",
-                        analyticsLocations: p
+                        analyticsLocations: A
                     }),
-                    onUnblock: () => N({
+                    onUnblock: () => h({
                         action: "UNBLOCK",
-                        analyticsLocations: p
+                        analyticsLocations: A
                     })
-                }), L = (0, _.default)({
+                }), O = (0, d.default)({
                     user: t,
                     guildId: n,
                     color: "danger",
-                    location: O,
-                    onAction: () => N({
+                    location: m,
+                    onAction: () => h({
                         action: "REPORT",
-                        analyticsLocations: p
+                        analyticsLocations: A
                     })
                 });
-                return m ? null : (0, i.jsx)(o.AnalyticsLocationProvider, {
-                    value: p,
+                return S ? null : (0, i.jsx)(o.AnalyticsLocationProvider, {
+                    value: A,
                     children: (0, i.jsx)(s.Popout, {
                         renderPopout: e => {
                             let {
@@ -205879,16 +205871,16 @@
                                 navId: "user-profile-overflow-menu",
                                 onSelect: void 0,
                                 onClose: t,
-                                "aria-label": f.default.Messages.PROFILE_ACTIONS_MENU_LABEL,
+                                "aria-label": T.default.Messages.PROFILE_ACTIONS_MENU_LABEL,
                                 children: [(0, i.jsxs)(s.MenuGroup, {
-                                    children: [h, R, C]
+                                    children: [f, N]
                                 }), (0, i.jsxs)(s.MenuGroup, {
-                                    children: [g, L]
+                                    children: [p, O]
                                 })]
                             })
                         },
-                        children: e => (0, i.jsx)(T.default, {
-                            icon: E.default,
+                        children: e => (0, i.jsx)(I.default, {
+                            icon: c.default,
                             ...e
                         })
                     })
@@ -208177,7 +208169,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return R
+                    return C
                 }
             }), n("47120");
             var i = n("735250"),
@@ -208193,110 +208185,115 @@
                 E = n("318661"),
                 I = n("502762"),
                 T = n("301984"),
-                f = n("664794"),
-                S = n("980768"),
-                h = n("171368"),
-                A = n("958120"),
-                m = n("23293"),
-                N = n("228168"),
-                p = n("689938");
+                f = n("94918"),
+                S = n("664794"),
+                h = n("980768"),
+                A = n("171368"),
+                m = n("958120"),
+                N = n("23293"),
+                p = n("228168"),
+                O = n("689938");
 
-            function O(e) {
+            function R(e) {
                 e.stopPropagation()
             }
 
-            function R(e) {
+            function C(e) {
                 let {
                     user: t,
                     guildId: n,
-                    channelId: R,
-                    messageId: C,
-                    roleId: g,
-                    closePopout: L,
-                    setPopoutRef: D,
-                    disableUserProfileLink: v = __OVERLAY__,
-                    newAnalyticsLocations: M = []
+                    channelId: C,
+                    messageId: g,
+                    roleId: L,
+                    closePopout: D,
+                    setPopoutRef: v,
+                    disableUserProfileLink: M = __OVERLAY__,
+                    newAnalyticsLocations: y = []
                 } = e, {
-                    analyticsLocations: y
-                } = (0, u.default)([...M, l.default.BITE_SIZE_PROFILE_POPOUT]), P = (0, c.useTrackUserProfileAction)({
+                    analyticsLocations: P
+                } = (0, u.default)([...y, l.default.BITE_SIZE_PROFILE_POPOUT]), U = (0, c.useTrackUserProfileAction)({
                     layout: "BITE_SIZE_POPOUT",
                     userId: t.id,
                     guildId: n,
-                    channelId: R,
-                    messageId: C,
-                    roleId: g
-                }), U = r.useRef(null), b = (0, E.default)(t.id, n), G = (0, o.default)(U), w = (0, s.useStateFromStores)([_.default], () => null != n ? _.default.getMember(n, t.id) : null);
+                    channelId: C,
+                    messageId: g,
+                    roleId: L
+                }), b = r.useRef(null), G = (0, E.default)(t.id, n), w = (0, o.default)(b), k = (0, s.useStateFromStores)([_.default], () => null != n ? _.default.getMember(n, t.id) : null);
                 r.useEffect(() => {
-                    null == D || D(null == U ? void 0 : U.current)
-                }, [U, D]);
-                let k = e => {
-                    null == L || L(), (0, h.openUserProfileModal)({
-                        sourceAnalyticsLocations: y,
+                    null == v || v(null == b ? void 0 : b.current)
+                }, [b, v]);
+                let B = e => {
+                    null == D || D(), (0, A.openUserProfileModal)({
+                        sourceAnalyticsLocations: P,
                         userId: t.id,
                         guildId: n,
-                        channelId: R,
-                        messageId: C,
-                        roleId: g,
+                        channelId: C,
+                        messageId: g,
+                        roleId: L,
                         autoFocusNote: e
                     })
                 };
                 return (0, i.jsx)(u.AnalyticsLocationProvider, {
-                    value: y,
+                    value: P,
                     children: (0, i.jsx)(c.UserProfileAnalyticsProvider, {
                         layout: "BITE_SIZE_POPOUT",
                         userId: t.id,
                         guildId: n,
-                        channelId: R,
-                        messageId: C,
-                        roleId: g,
-                        shouldTrackViewOnMount: null == w || null != w.fullProfileLoadedTimestamp,
+                        channelId: C,
+                        messageId: g,
+                        roleId: L,
+                        shouldTrackViewOnMount: null == k || null != k.fullProfileLoadedTimestamp,
                         children: (0, i.jsxs)(a.Dialog, {
-                            ref: U,
+                            ref: b,
                             "aria-label": t.username,
-                            onClick: O,
-                            onContextMenu: O,
+                            onClick: R,
+                            onContextMenu: R,
                             children: [(0, i.jsxs)(I.default, {
                                 user: t,
-                                displayProfile: b,
-                                profileType: N.UserProfileTypes.BITE_SIZE,
-                                children: [(0, i.jsxs)(S.default, {
-                                    isFaded: (null == b ? void 0 : b.profileEffectId) != null && !G,
-                                    children: [(0, i.jsx)(T.default, {
-                                        user: t
-                                    }), (0, i.jsx)(f.default, {
+                                displayProfile: G,
+                                profileType: p.UserProfileTypes.BITE_SIZE,
+                                children: [(0, i.jsxs)(h.default, {
+                                    isFaded: (null == G ? void 0 : G.profileEffectId) != null && !w,
+                                    children: [(0, i.jsx)(f.default, {
                                         user: t,
                                         guildId: n,
-                                        onClose: L,
+                                        channelId: C,
+                                        onClose: D
+                                    }), (0, i.jsx)(T.default, {
+                                        user: t
+                                    }), (0, i.jsx)(S.default, {
+                                        user: t,
+                                        guildId: n,
                                         viewProfileItem: (0, i.jsx)(a.MenuItem, {
                                             id: "view-profile",
-                                            label: p.default.Messages.VIEW_FULL_PROFILE,
+                                            label: O.default.Messages.VIEW_FULL_PROFILE,
                                             action: () => {
-                                                P({
+                                                U({
                                                     action: "PRESS_VIEW_PROFILE",
-                                                    analyticsLocations: y
-                                                }), k()
+                                                    analyticsLocations: P
+                                                }), B()
                                             }
                                         })
                                     })]
+                                }), (0, i.jsx)(N.default, {
+                                    user: t,
+                                    displayProfile: G,
+                                    guildId: n,
+                                    channelId: C,
+                                    onClose: D,
+                                    disableUserProfileLink: M
                                 }), (0, i.jsx)(m.default, {
                                     user: t,
-                                    displayProfile: b,
+                                    displayProfile: G,
+                                    onOpenProfile: () => B(!0),
                                     guildId: n,
-                                    channelId: R,
-                                    onClose: L,
-                                    disableUserProfileLink: v
-                                }), (0, i.jsx)(A.default, {
-                                    user: t,
-                                    displayProfile: b,
-                                    onOpenProfile: () => k(!0),
-                                    guildId: n,
-                                    channelId: R,
-                                    onClose: L
+                                    channelId: C,
+                                    onClose: D
                                 })]
-                            }), (null == b ? void 0 : b.profileEffectId) != null && (0, i.jsx)(d.default, {
-                                profileEffectId: null == b ? void 0 : b.profileEffectId,
+                            }), (null == G ? void 0 : G.profileEffectId) != null && (0, i.jsx)(d.default, {
+                                profileEffectId: null == G ? void 0 : G.profileEffectId,
                                 bannerAdjustment: 0,
-                                isHovering: G
+                                isHovering: w
                             })]
                         })
                     })
@@ -242607,7 +242604,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "6c0fc448e245337be0ded98d55a1a5e9c053288f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "52a046394f7002851bb6078a6b4f755e8b8a76b1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -271131,7 +271128,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287052"
+                                build_number: "287059"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -278317,7 +278314,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287052", "287052"), 10);
+                let s = parseInt((n = "287059", "287059"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -305742,4 +305739,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.a47550e64ce88b25bb66.js.map
+//# sourceMappingURL=35705.48dae127b0981da1ba70.js.map
