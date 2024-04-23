@@ -248,6 +248,8 @@
                 "./activity_launch.mp3": "12790",
                 "./activity_user_join.mp3": "9907",
                 "./activity_user_left.mp3": "852674",
+                "./bit_message1.mp3": "383471",
+                "./bop_message1.mp3": "447995",
                 "./call_calling.mp3": "646188",
                 "./call_ringing.mp3": "563705",
                 "./call_ringing_beat.mp3": "271527",
@@ -280,10 +282,12 @@
                 "./detune_user_moved.mp3": "488303",
                 "./discodo.mp3": "361510",
                 "./disconnect.mp3": "554771",
+                "./ducky_message1.mp3": "514266",
                 "./hang_status_select.mp3": "685673",
                 "./highfive_clap.mp3": "696730",
                 "./highfive_whistle.mp3": "656602",
                 "./human_man.mp3": "129538",
+                "./lofi_message1.mp3": "560091",
                 "./mention1.mp3": "76795",
                 "./mention2.mp3": "512911",
                 "./mention3.mp3": "169601",
@@ -5836,6 +5840,14 @@
             "use strict";
             e.exports = n.p + "2a976d4aa96c20cba146.mp3"
         },
+        383471: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "5fad01b76a3526a8700c.mp3"
+        },
+        447995: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "1ad73583a60b6459e9c6.mp3"
+        },
         646188: function(e, t, n) {
             "use strict";
             e.exports = n.p + "e03bc05df96aa880c69c.mp3"
@@ -5964,6 +5976,10 @@
             "use strict";
             e.exports = n.p + "6d583d28e8ff1d3bddc5.mp3"
         },
+        514266: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "826e2f3cd3e420d00f55.mp3"
+        },
         685673: function(e, t, n) {
             "use strict";
             e.exports = n.p + "6e46a06a76f2ee93c9c6.mp3"
@@ -5979,6 +5995,10 @@
         129538: function(e, t, n) {
             "use strict";
             e.exports = n.p + "15b3f08cc5f644b472b3.mp3"
+        },
+        560091: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "10fe101dd35a3909ca2d.mp3"
         },
         76795: function(e, t, n) {
             "use strict";
@@ -36690,7 +36710,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287034", ", Version Hash: ").concat("3dead7988696b989e2515423a2752e1d86de1185")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287045", ", Version Hash: ").concat("abd0307eb97fda60ad829f1c9e1eb77fa4efb4d7")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86738,8 +86758,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287034", "287034"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287034")), t = 0), t
+                let t = parseInt((e = "287045", "287045"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287045")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111310,8 +111330,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287034",
-                    versionHash: "3dead7988696b989e2515423a2752e1d86de1185"
+                    buildNumber: "287045",
+                    versionHash: "abd0307eb97fda60ad829f1c9e1eb77fa4efb4d7"
                 }
             }
             n.r(t), n.d(t, {
@@ -164786,8 +164806,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713889197814",
-                                    build_number: "287034"
+                                    built_at: "1713890084648",
+                                    build_number: "287045"
                                 }
                             },
                             retries: 1
@@ -190572,8 +190592,11 @@
                 Soundpacks: function() {
                     return r
                 },
-                getSoundpackOptionsAprilFools2023: function() {
+                getCustomNotificationSoundpackOptions: function() {
                     return a
+                },
+                getSoundpackOptionsAprilFools2023: function() {
+                    return o
                 }
             });
             var i, r, s = n("689938");
@@ -190581,12 +190604,36 @@
             function a() {
                 return [{
                     value: "classic",
+                    label: "Discord Default",
+                    description: "Wumpus' Favorite"
+                }, {
+                    value: "retro",
+                    label: "Power up!",
+                    description: "Retro"
+                }, {
+                    value: "bop",
+                    label: "*hey you*",
+                    description: "BOP"
+                }, {
+                    value: "ducky",
+                    label: "Quack quack",
+                    description: "Ducky"
+                }, {
+                    value: "lofi",
+                    label: "Twinkle",
+                    description: "Lofi"
+                }]
+            }
+
+            function o() {
+                return [{
+                    value: "classic",
                     label: s.default.Messages.SOUNDPACK_CLASSIC_LABEL
                 }, {
                     value: "detune",
                     label: s.default.Messages.SOUNDPACK_DETUNE_LABEL
                 }]
-            }(i = r || (r = {})).CLASSIC = "classic", i.DETUNE = "detune"
+            }(i = r || (r = {})).CLASSIC = "classic", i.DETUNE = "detune", i.RETRO = "retro", i.BOP = "bop", i.DUCKY = "ducky", i.LOFI = "lofi"
         },
         474873: function(e, t, n) {
             "use strict";
@@ -190691,6 +190738,18 @@
                     stream_ended: "detune_stream_ended",
                     stream_user_joined: "detune_stream_user_joined",
                     stream_user_left: "detune_stream_user_left"
+                },
+                [i.Soundpacks.RETRO]: {
+                    message1: "bit_message1"
+                },
+                [i.Soundpacks.BOP]: {
+                    message1: "bop_message1"
+                },
+                [i.Soundpacks.DUCKY]: {
+                    message1: "ducky_message1"
+                },
+                [i.Soundpacks.LOFI]: {
+                    message1: "lofi_message1"
                 }
             };
 
@@ -242337,7 +242396,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3dead7988696b989e2515423a2752e1d86de1185"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "abd0307eb97fda60ad829f1c9e1eb77fa4efb4d7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270861,7 +270920,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287034"
+                                build_number: "287045"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -274666,12 +274725,13 @@
             function d(e) {
                 var t;
                 let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
-                    i = arguments.length > 2 ? arguments[2] : void 0;
+                    i = arguments.length > 2 ? arguments[2] : void 0,
+                    r = arguments.length > 3 ? arguments[3] : void 0;
                 if (o.default.disableSounds) return;
-                let r = u(null !== (t = (0, a.default)(s.default.getSoundpack())[e]) && void 0 !== t ? t : e, e, n);
-                return null != i ? r.playWithListener().then(e => {
+                let l = u(null !== (t = (0, a.default)(null != r ? r : s.default.getSoundpack())[e]) && void 0 !== t ? t : e, e, n);
+                return null != i ? l.playWithListener().then(e => {
                     e && i()
-                }) : r.play(), r
+                }) : l.play(), l
             }
         },
         601993: function(e, t, n) {
@@ -278046,7 +278106,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287034", "287034"), 10);
+                let s = parseInt((n = "287045", "287045"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -305471,4 +305531,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.8038822c9e820c9738c3.js.map
+//# sourceMappingURL=35705.88740a4c092981f7d1a0.js.map
