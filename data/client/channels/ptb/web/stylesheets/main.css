@@ -2156,6 +2156,7 @@
     min-height: var(--custom-o-auth-2-page-oauth-2-min-height);
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
     border-radius: 5px;
     box-shadow: var(--elevation-high);
@@ -135157,4 +135158,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.35af90eed693347d9f24.css.map*/
+/*# sourceMappingURL=99387.853caf63da9628c5ade5.css.map*/
