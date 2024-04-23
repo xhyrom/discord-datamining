@@ -20361,12 +20361,6 @@
                 tooltipTextContainer: "tooltipTextContainer__7ff1e"
             }
         },
-        335178: function(e) {
-            "use strict";
-            e.exports = {
-                gradientText: "gradientText_fb366a"
-            }
-        },
         443393: function(e) {
             "use strict";
             e.exports = {
@@ -20699,6 +20693,12 @@
                 star: "star_f35e98",
                 starLeft: "starLeft__53d66",
                 starRight: "starRight_f5b52f"
+            }
+        },
+        217717: function(e) {
+            "use strict";
+            e.exports = {
+                text: "text__81c86"
             }
         },
         21406: function(e) {

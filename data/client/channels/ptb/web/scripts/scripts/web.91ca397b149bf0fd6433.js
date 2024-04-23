@@ -1850,9 +1850,11 @@
                         i.default.send("UPDATER_HISTORY_QUERY_AND_TRUNCATE")
                     }
                     _handleHistoryResponse(e) {
-                        null != e && (e.forEach(e => {
-                            "analytics" === e.type ? e.name === r.AnalyticEvents.UPDATER_METRICS_DOWNLOAD || e.name === r.AnalyticEvents.UPDATER_METRICS_INSTALL || e.name === r.AnalyticEvents.UPDATER_METRICS_COMBINED || e.name === r.AnalyticEvents.UPDATER_METRICS_TRANSITION_STATUS ? n.default.track(e.name, e.data) : console.warn("Unknown updater analytic event ".concat(e.name)) : this._tracker.trackEvent(e)
-                        }), this._tracker.submissionReady() && (n.default.track(r.AnalyticEvents.APP_MODULES_UPDATED, this._tracker.getStats()), this._tracker.reset()))
+                        if (null == e) return;
+                        let t = 0 === Math.floor(1e3 * Math.random());
+                        e.forEach(e => {
+                            "analytics" === e.type ? e.name === r.AnalyticEvents.UPDATER_METRICS_DOWNLOAD || e.name === r.AnalyticEvents.UPDATER_METRICS_INSTALL || e.name === r.AnalyticEvents.UPDATER_METRICS_COMBINED || e.name === r.AnalyticEvents.UPDATER_METRICS_TRANSITION_STATUS ? t && n.default.track(e.name, e.data) : console.warn("Unknown updater analytic event ".concat(e.name)) : this._tracker.trackEvent(e)
+                        }), this._tracker.submissionReady() && (n.default.track(r.AnalyticEvents.APP_MODULES_UPDATED, this._tracker.getStats()), this._tracker.reset())
                     }
                     constructor(...e) {
                         var t, a, d;
@@ -2337,7 +2339,7 @@
             25220: "186d07f8989791a99be9",
             2535: "2a44be830b60c563f895",
             2538: "de2ed893299f3424c407",
-            25421: "cdad6919026bbeb38582",
+            25421: "a1ac7a7e3103308cf69b",
             25443: "24db192a6249ee652c91",
             25464: "c6807166a83d8b64d61b",
             25507: "7cd5d119c9a7be1353fb",
@@ -2380,7 +2382,8 @@
             31093: "c6820f46e2cc1f3bc055",
             31177: "ae110c08cf6c0bd668d0",
             31270: "c898111f9be214006ea1",
-            31625: "6b36bd9fd3cc621b4653",
+            31271: "3755e0295edcb3a66300",
+            31625: "5dacd2ddb6ee7e0113a9",
             31835: "0c62fbfed3088ae23f6c",
             3190: "c19808b118261ab302e7",
             32157: "9443fc0019c26cb5915f",
@@ -2394,7 +2397,7 @@
             33065: "debf54c8ad7eb03010df",
             33156: "2af4f5e8e8c5ccbb5f8a",
             33184: "3fc0ddb4b5f762eb682a",
-            33213: "bed2ed245b4ae4f6139b",
+            33213: "3877a6026f610fe107b3",
             33238: "5feea0632edad2d25f33",
             33273: "440fb5eea6b6bf249f3a",
             33352: "89b1b747f97147a373d2",
@@ -2403,7 +2406,6 @@
             3378: "18fe8e5aa62823795f89",
             34049: "2cb8ff8dfae1a8e68c06",
             34191: "d273c0e5a213d1048840",
-            34309: "8771aa0428ebff24abb4",
             34424: "ea9dcc6a8ca6813bc9e0",
             34627: "c9975dc9fd8f6e2347a4",
             34842: "39de6a81f8cbd28d09d9",
@@ -2444,9 +2446,8 @@
             37720: "7c9a4c5df3f4344a1ddd",
             37740: "35ab9c1fcbde725f98f2",
             37766: "06b024b03e67ec6e19f6",
-            37839: "c7e7bebc4f7066e292c8",
+            37839: "4d051a8d770cdda86b39",
             37880: "14bee0eb26928ca48473",
-            37918: "b7ddb1f796a0458efcb7",
             37969: "eaf3e3a168f7d6f3942d",
             38047: "4b63602d181f5d60e59d",
             38062: "83b13372c031891ac7d9",
@@ -2515,13 +2516,14 @@
             44808: "c810ca8ef10ddf59e807",
             44827: "75017f4569c7b2e179ad",
             44878: "e2bf78a9302badfa751a",
+            45003: "58434bfd7fb612620e33",
             45094: "735d9f2565fb6c958f2d",
             45130: "bd2765b565f0f62ef2d1",
             4530: "d1d0e1ecea8fbc1a3df1",
             45576: "b00a18c10e1de6c41578",
             45733: "87d722f9afbd2e2e44f6",
             45747: "17cfdaaac79c19dab39f",
-            46048: "ffc8756ba626abe6b46a",
+            46048: "3718398549f173e38add",
             46161: "ddcc8a8e6752de1069ae",
             46369: "936ae4c319e060ef5d32",
             46468: "0caf7d0ecfe447310e19",
@@ -2611,7 +2613,7 @@
             56446: "a253ef12cbe03ff9b46a",
             56496: "45aa10c7f04686b7c656",
             56630: "daeb83f90c776ffd5ed4",
-            56826: "ebffae7d480214d96059",
+            56826: "e19ef794f88f6280e15b",
             56944: "bacf69a28b8bd347cd29",
             57372: "c4dd67236dec09289234",
             57387: "fa6c50f94a5ab73d1d00",
@@ -2676,6 +2678,7 @@
             62903: "a9a56d321e4c94e1537f",
             62985: "bf31b8539c55265b8779",
             63007: "96d48307af88cfcec649",
+            63097: "b793eaf3b9b8e8a63a10",
             6310: "b9394892ddff9122404f",
             63629: "ac0230129f97d1154faf",
             63676: "6070a1c1911f4e0daa63",
@@ -2770,12 +2773,12 @@
             74294: "f9d7091f118c4240c2c8",
             74300: "3a49554d629c189ef213",
             74459: "975c4e511656c08d4121",
-            74526: "d5210592576447e3a7db",
+            74526: "ef6894b7a84faf27b967",
             74543: "962b2b6c9f44f464ac35",
             74590: "5872b5336abc1a394aab",
             74602: "52259d090a78a5b7f4fa",
             74673: "e5475b314c05095f84ab",
-            74753: "13ca786ebaafe41270a9",
+            74753: "21772577cc451ae426bc",
             74870: "148c4825212af5cd350f",
             75409: "6d517ccbfd85a79680b3",
             75441: "d90cda406f0e7a585ee2",
@@ -2814,7 +2817,7 @@
             78607: "02a92c93fcf5f333dcd2",
             78650: "3a93a3e614d44167558d",
             78670: "947ff3664d605e77f8d5",
-            78690: "ba2a793ecf401e76c167",
+            78690: "6fb5f0e1bce9a5ea7538",
             78704: "dc18fd2b5ea7c24806dc",
             78712: "98e549f912a7e836dbb9",
             78786: "ffc48004273a9c78d681",
@@ -2889,7 +2892,7 @@
             86060: "4767c4cafd860c7be0a3",
             86200: "0bda52e7b32a476cadac",
             86248: "0c66eb64b7759f1b8a45",
-            86302: "b57aaf916a33272f103a",
+            86302: "0760cbdf8ede79c5f7fe",
             8631: "7ada097d4ac85091b0a2",
             87200: "ccbaaed5ca508c0e9188",
             87233: "189a926a2ac852dcb50f",
@@ -2899,7 +2902,7 @@
             8790: "0849aa769826dc2b0922",
             87983: "6ee81809817b782681e2",
             88358: "7e6c709e43dc9a3577bb",
-            88396: "9a98c2faaea0e54015ad",
+            88396: "c7c88320037777a2dc15",
             88408: "827663ee40120d013265",
             88571: "eee9ab4ea9e06ce5a51e",
             88870: "63339525a25c9dc6d7aa",
@@ -2989,7 +2992,6 @@
             99339: "072c19ab988175e5d3bf",
             99414: "14f564f265dc4ba92c72",
             99450: "3ea5357d2efe050c392e",
-            99526: "3518400a3281679cfbba",
             99617: "a6e0749f5bd5477a6f9e",
             99694: "0b1d52616caba9c4b2c0",
             99809: "a9dc04cfa95d544dd387",
@@ -3210,4 +3212,4 @@
     });
     s.O(u)
 }();
-//# sourceMappingURL=web.ab913acf398e9e5a4f77.js.map
+//# sourceMappingURL=web.91ca397b149bf0fd6433.js.map
