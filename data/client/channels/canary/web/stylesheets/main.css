@@ -57362,8 +57362,8 @@ html .progress__00e29 {
 }
 
 .name__4eb92 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -59533,6 +59533,51 @@ html .progress__00e29 {
     align-items: center
 }
 
+.popoutContainer__629b8 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: var(--bg-surface-raised);
+    padding: 12px;
+    border-radius: 8px;
+    border: solid 1px var(--border-strong)
+}
+
+.customColorsHeader_a9ec82 {
+    text-transform: uppercase
+}
+
+.colorSwatch__53ee4 {
+    border-radius: 3px;
+    width: 100%;
+    height: 50px
+}
+
+.colorPickersContainer_d5c0cb {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    align-items: center
+}
+
+.colorColumn__14c9d {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center
+}
+
+.colorPicker__60283 {
+    flex: 1;
+    width: 150px;
+    box-shadow: none;
+    border: medium none currentColor;
+    border: initial;
+    padding: 0
+}
+
 .content__4e550 {
     max-width: none
 }
@@ -59622,18 +59667,6 @@ html .progress__00e29 {
 
 .bannerItemContainerSelected_c3e66a {
     border: solid 1px var(--interactive-active)
-}
-
-.customColorPickerContainer_e36253 {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    align-items: center
-}
-
-.colorPicker_a9f8d8 {
-    flex: 1;
-    width: auto
 }
 
 .noWrap__133e4 {
@@ -63271,22 +63304,6 @@ input::-webkit-inner-spin-button {
     font-size: 32px;
     background-color: transparent;
     background-color: initial
-}
-
-.customColorPickerContainer__016e5 {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    align-items: center
-}
-
-.customColorPickerContainerHidden__054e5 {
-    visibility: hidden
-}
-
-.colorPicker__42c22 {
-    flex: 1;
-    width: auto
 }
 
 .upsellContainer__6d38c {
@@ -135169,4 +135186,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.edbb1adc3660b5272d31.css.map*/
+/*# sourceMappingURL=99387.51776b1d7ef5720beaec.css.map*/

@@ -5049,6 +5049,17 @@
                 tooltipHeader: "tooltipHeader__556b8"
             }
         },
+        598029: function(e) {
+            "use strict";
+            e.exports = {
+                colorColumn: "colorColumn__14c9d",
+                colorPicker: "colorPicker__60283",
+                colorPickersContainer: "colorPickersContainer_d5c0cb",
+                colorSwatch: "colorSwatch__53ee4",
+                customColorsHeader: "customColorsHeader_a9ec82",
+                popoutContainer: "popoutContainer__629b8"
+            }
+        },
         509741: function(e) {
             "use strict";
             e.exports = {
@@ -5060,13 +5071,11 @@
                 brandItemContainer: "brandItemContainer_f07c0f",
                 brandItemContainerSelected: "brandItemContainerSelected__51923",
                 clanCardWrapper: "clanCardWrapper__06f56",
-                colorPicker: "colorPicker_a9f8d8",
                 colorPickerContainer: "colorPickerContainer__9b7d0",
                 colorPickerGrid: "colorPickerGrid_ba6389",
                 colorsContainer: "colorsContainer__2dee9",
                 container: "container__0d48f",
                 content: "content__4e550",
-                customColorPickerContainer: "customColorPickerContainer_e36253",
                 noWrap: "noWrap__133e4"
             }
         },
@@ -5120,10 +5129,7 @@
                 badgeAssetContainer: "badgeAssetContainer__3d9d5",
                 badgeAssetContainerSelected: "badgeAssetContainerSelected__371e2",
                 badgesContainer: "badgesContainer__0f8f1",
-                colorPicker: "colorPicker__42c22",
                 container: "container__208b2",
-                customColorPickerContainer: "customColorPickerContainer__016e5",
-                customColorPickerContainerHidden: "customColorPickerContainerHidden__054e5",
                 pickerContainer: "pickerContainer__5dd4f",
                 pickerGrid: "pickerGrid__1da1d",
                 tagContainer: "tagContainer_eb01b9",
