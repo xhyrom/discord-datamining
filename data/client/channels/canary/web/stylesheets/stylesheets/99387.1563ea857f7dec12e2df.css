@@ -20139,14 +20139,15 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .statusBubble__1a4c3 {
     position: relative;
+    color: var(--text-normal);
     background-color: var(--bg-surface-raised);
-    box-shadow: var(--shadow-low);
     word-wrap: break-word;
     max-width: 220px;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    display: box;
-    overflow: hidden
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis
 }
 
 .statusBubble__1a4c3:hover {
@@ -20158,16 +20159,14 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px 16px;
-    gap: 8px
+    padding: 8px 16px
 }
 
 .statusBubbleSingleLineTextOrMixed__0f1dc {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 15px;
-    gap: 8px
+    padding: 12px 15px
 }
 
 .statusBubbleMultiLinePadding__0ac14 {
@@ -20178,11 +20177,16 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     padding: 10px 12px 0
 }
 
-.statusBubbleOutlineMaxLinePadding__258c9 {
+.statusBubbleOuterMaxLinePadding__9b4d6 {
     padding-bottom: 10px
 }
 
-.statusBubbleOutline__07846 {
+.statusBubbleOuterMaxLinePositioningOffset_f5dd84 {
+    position: relative;
+    top: -8px
+}
+
+.statusBubbleOuter__7e51b {
     position: relative;
     background-color: var(--bg-surface-raised);
     box-shadow: var(--shadow-low);
@@ -20191,24 +20195,24 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     max-width: 220px
 }
 
-.statusBubbleOutline__07846:before {
+.statusBubbleOuter__7e51b:before {
     content: "";
     position: absolute;
-    top: -10px;
-    left: 10px;
+    top: -8px;
+    left: 11px;
     display: block;
     background-color: var(--bg-surface-raised);
     box-shadow: var(--shadow-low);
     border-radius: 50%;
-    width: 20px;
-    height: 20px
+    width: 18px;
+    height: 18px
 }
 
-.statusBubbleOutline__07846:after {
+.statusBubbleOuter__7e51b:after {
     content: "";
     position: absolute;
-    top: -25px;
-    left: 1px;
+    top: -20px;
+    left: 3px;
     display: block;
     background-color: var(--bg-surface-raised);
     box-shadow: var(--shadow-low);
@@ -20218,9 +20222,9 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .custom-profile-theme .statusBubble__1a4c3,
-.custom-profile-theme .statusBubbleOutline__07846,
-.custom-profile-theme .statusBubbleOutline__07846:before,
-.custom-profile-theme .statusBubbleOutline__07846:after {
+.custom-profile-theme .statusBubbleOuter__7e51b,
+.custom-profile-theme .statusBubbleOuter__7e51b:before,
+.custom-profile-theme .statusBubbleOuter__7e51b:after {
     background-color: var(--bg-surface-overlay)
 }
 
@@ -20241,13 +20245,9 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     display: inline
 }
 
-.maxLinePositioningOffset__1791e {
-    position: relative;
-    top: -8px
-}
-
 .header__725f2 {
-    z-index: 1
+    z-index: 1;
+    margin-bottom: 16px
 }
 
 .customStatus__55823 {
@@ -20256,6 +20256,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .statusBubblePosition_d09a7d {
+    position: relative;
     top: 2px;
     left: 110px
 }
@@ -129812,6 +129813,7 @@ div.nagbar_c731ff {
 }
 
 .statusBubblePosition_e98f49 {
+    position: relative;
     top: -18px;
     left: 140px
 }
@@ -134789,4 +134791,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.26312d79b06277273c43.css.map*/
+/*# sourceMappingURL=99387.1563ea857f7dec12e2df.css.map*/
