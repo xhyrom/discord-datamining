@@ -36682,7 +36682,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287002", ", Version Hash: ").concat("2658f5f53fad1ddb161a0665c6d428f8f3942909")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287008", ", Version Hash: ").concat("0ada3267f0e8f368151acd530516c55c303ae420")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86725,8 +86725,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287002", "287002"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287002")), t = 0), t
+                let t = parseInt((e = "287008", "287008"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287008")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111297,8 +111297,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287002",
-                    versionHash: "2658f5f53fad1ddb161a0665c6d428f8f3942909"
+                    buildNumber: "287008",
+                    versionHash: "0ada3267f0e8f368151acd530516c55c303ae420"
                 }
             }
             n.r(t), n.d(t, {
@@ -164773,8 +164773,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713883412724",
-                                    build_number: "287002"
+                                    built_at: "1713884172016",
+                                    build_number: "287008"
                                 }
                             },
                             retries: 1
@@ -242324,7 +242324,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2658f5f53fad1ddb161a0665c6d428f8f3942909"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "0ada3267f0e8f368151acd530516c55c303ae420"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270848,7 +270848,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287002"
+                                build_number: "287008"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -278033,7 +278033,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287002", "287002"), 10);
+                let s = parseInt((n = "287008", "287008"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -304572,7 +304572,7 @@
                 MetricEvents: function() {
                     return i
                 }
-            }), n("47120"), (r = i || (i = {})).APP_CRASHED = "app_crashed", r.SOCKET_CRASHED = "socket_crashed", r.MESSAGE_REQUEST_VIEW = "message_request_view", r.SPAM_MESSAGE_REQUEST_VIEW = "spam_message_request_view", r.SPAM_MESSAGE_REQUEST_ERROR_VIEW = "spam_message_request_error_view", r.FAMILY_CENTER_VIEW = "family_center_view", r.SAFETY_HUB_VIEW = "safety_hub_view", r.APPEAL_INGESTION_VIEW = "appeal_ingestion_view", r.MESSAGE_REQUEST_COUNT_DRIFT = "message_request_count_drift", r.FORUM_CHANNEL_GRID_AUTO_ENABLED = "forum_channel_grid_auto_enabled", r.REMIX_FONT_LOADING_ERROR = "remix_font_loading_error", r.AFK_NOT_IDLE = "afk_not_idle", r.CAPTCHA_EVENT = "captcha_event", r.SAFETY_WARNING_VIEW = "safety_warning_view", r.SAFETY_WARNING_MODAL_VIEW = "safety_warning_modal_view", r.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT = "explicit_media_scan_client_timed_out", r.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING = "explicit_media_scan_client_timing", r.EXPLICIT_MEDIA_SENDER_FP_BUTTON_VIEW = "explicit_media_sender_fp_button_view", r.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED = "explicit_media_pending_message_loaded", r.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED_V2 = "explicit_media_pending_message_loaded_v2", r.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT_DISTRIBUTION = "explicit_media_scan_client_timed_out_distribution", r.EXPLICIT_MEDIA_SCAN_CLIENT_TIMEOUT_CREATE = "explicit_media_scan_client_timeout_create", r.QUEST_CONTENT_IMPRESSION = "quest_content_impression", r.OTA_CHECK_ATTEMPT = "OtaCheckAttempt", r.OTA_ASSET_DOWNLOAD_ATTEMPT = "OtaAssetDownloadAttempt", r.OTA_UPDATE_CHECK = "ota_update_check", r.OTA_ASSET_DOWNLOAD = "ota_asset_download", r.DEBUG_OTA_200_TIMEOUT = "debug_ota_200_timeout", r.IMAGE_LOAD_ERROR = "image_load_error"
+            }), n("47120"), (r = i || (i = {})).APP_CRASHED = "app_crashed", r.SOCKET_CRASHED = "socket_crashed", r.MESSAGE_REQUEST_VIEW = "message_request_view", r.SPAM_MESSAGE_REQUEST_VIEW = "spam_message_request_view", r.SPAM_MESSAGE_REQUEST_ERROR_VIEW = "spam_message_request_error_view", r.FAMILY_CENTER_VIEW = "family_center_view", r.SAFETY_HUB_VIEW = "safety_hub_view", r.APPEAL_INGESTION_VIEW = "appeal_ingestion_view", r.MESSAGE_REQUEST_COUNT_DRIFT = "message_request_count_drift", r.FORUM_CHANNEL_GRID_AUTO_ENABLED = "forum_channel_grid_auto_enabled", r.REMIX_FONT_LOADING_ERROR = "remix_font_loading_error", r.AFK_NOT_IDLE = "afk_not_idle", r.CAPTCHA_EVENT = "captcha_event", r.SAFETY_WARNING_VIEW = "safety_warning_view", r.SAFETY_WARNING_MODAL_VIEW = "safety_warning_modal_view", r.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT = "explicit_media_scan_client_timed_out", r.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING = "explicit_media_scan_client_timing", r.EXPLICIT_MEDIA_SENDER_FP_BUTTON_VIEW = "explicit_media_sender_fp_button_view", r.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED = "explicit_media_pending_message_loaded", r.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED_V2 = "explicit_media_pending_message_loaded_v2", r.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT_DISTRIBUTION = "explicit_media_scan_client_timed_out_distribution", r.EXPLICIT_MEDIA_SCAN_CLIENT_TIMEOUT_CREATE = "explicit_media_scan_client_timeout_create", r.QUEST_CONTENT_IMPRESSION = "quest_content_impression", r.OTA_CHECK_ATTEMPT = "OtaCheckAttempt", r.OTA_ASSET_DOWNLOAD_ATTEMPT = "OtaAssetDownloadAttempt", r.OTA_UPDATE_CHECK = "ota_update_check", r.OTA_ASSET_DOWNLOAD = "ota_asset_download", r.DEBUG_OTA_200_TIMEOUT = "debug_ota_200_timeout", r.IMAGE_LOAD_ERROR = "image_load_error", r.DM_SETTINGS_UPSELL_VIEW = "dm_settings_upsell_view"
         },
         214627: function(e, t, n) {
             "use strict";
@@ -305458,4 +305458,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.ca2a784b8998fd9e4d74.js.map
+//# sourceMappingURL=35705.6a62d68d728eeb5dcb8d.js.map
