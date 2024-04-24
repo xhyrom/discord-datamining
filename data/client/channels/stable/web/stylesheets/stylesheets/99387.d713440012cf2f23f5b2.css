@@ -2432,33 +2432,6 @@
     align-items: center
 }
 
-.verifyConnectedAccount_d644ab .logos_c4aea3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 95px
-}
-
-.verifyConnectedAccount_d644ab .logos_c4aea3 .logosDivider__15033 {
-    width: 28px;
-    height: 28px;
-    margin: 0 37px;
-    background-size: 28px 28px;
-    background-image: url(/assets/932a8ef58e8c04ca16d3.svg);
-    content: " ";
-    display: inline-block
-}
-
-.verifyConnectedAccount_d644ab .logos_c4aea3 .logo__3038d {
-    width: 88px;
-    height: 88px;
-    background-size: 88px 88px
-}
-
-.verifyConnectedAccount_d644ab .logos_c4aea3 .logoDiscord__80660 {
-    background-image: url(/assets/8d1136c96067edd6cc01.svg)
-}
-
 .verifyConnectedAccount_d644ab .message_a3932d {
     text-align: center;
     font-size: 18px
@@ -2494,6 +2467,33 @@
     background-color: transparent;
     opacity: 1;
     padding: 28px
+}
+
+.logos_c4aea3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 95px
+}
+
+.logos_c4aea3 .logosDivider__15033 {
+    width: 28px;
+    height: 28px;
+    margin: 0 37px;
+    background-size: 28px 28px;
+    background-image: url(/assets/932a8ef58e8c04ca16d3.svg);
+    content: " ";
+    display: inline-block
+}
+
+.logos_c4aea3 .logo__3038d {
+    width: 88px;
+    height: 88px;
+    background-size: 88px 88px
+}
+
+.logos_c4aea3 .logoDiscord__80660 {
+    background-image: url(/assets/8d1136c96067edd6cc01.svg)
 }
 
 .phoneFieldPopout_a20b2f {
@@ -34383,12 +34383,12 @@ span.clanTag_f4aadc {
 
 .clickableCard__1c1e9:hover {
     box-shadow: var(--shadow-high);
-    transform: translatey(-1px)
+    transform: translatey(-2px)
 }
 
 .clickableCard__1c1e9:active {
     box-shadow: var(--shadow-low);
-    transform: translatey(-1px)scale(.99)
+    transform: translatey(-2px)scale(.99)
 }
 
 .card_d01b6d {
@@ -35182,9 +35182,7 @@ span.clanTag_f4aadc {
     bottom: 0;
     background-color: rgba(0, 0, 0, .7);
     -webkit-backdrop-filter: blur(80px);
-    backdrop-filter: blur(80px);
-    display: flex;
-    justify-content: center
+    backdrop-filter: blur(80px)
 }
 
 .saveContainer__0ae21 {
@@ -35193,13 +35191,23 @@ span.clanTag_f4aadc {
     right: 16px
 }
 
+.contentWrapper__44dc6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%
+}
+
 .content__9c33f {
-    margin-top: 120px;
+    flex: 0 1 auto;
     display: flex;
     flex-direction: column;
     gap: 40px;
     max-width: 800px;
-    align-items: center
+    align-items: center;
+    margin: 40px
 }
 
 .theme-dark .container__299a3 {
@@ -35380,7 +35388,7 @@ span.clanTag_f4aadc {
     column-gap: 16px;
     grid-row-gap: 16px;
     row-gap: 16px;
-    grid-template-columns: repeat(1, 1fr)
+    grid-template-columns: repeat(1, minmax(0, 1fr))
 }
 
 .card__56b24 {
@@ -35390,7 +35398,7 @@ span.clanTag_f4aadc {
 
 @media(min-width:940px) {
     .topPicksContent__7c8f8 {
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns: repeat(2, minmax(0, 1fr))
     }
 
     .card__56b24 {
@@ -35401,7 +35409,7 @@ span.clanTag_f4aadc {
 
 @media(min-width:1096px) {
     .topPicksContent__7c8f8 {
-        grid-template-columns: repeat(3, 1fr)
+        grid-template-columns: repeat(3, minmax(0, 1fr))
     }
 
     .card__56b24 {
@@ -35412,7 +35420,7 @@ span.clanTag_f4aadc {
 
 @media(min-width:1352px) {
     .topPicksContent__7c8f8 {
-        grid-template-columns: repeat(4, 1fr)
+        grid-template-columns: repeat(4, minmax(0, 1fr))
     }
 
     .card__56b24 {
@@ -35423,7 +35431,7 @@ span.clanTag_f4aadc {
 
 @media(min-width:1608px) {
     .topPicksContent__7c8f8 {
-        grid-template-columns: repeat(5, 1fr)
+        grid-template-columns: repeat(5, minmax(0, 1fr))
     }
 
     .card__56b24 {
@@ -35434,7 +35442,7 @@ span.clanTag_f4aadc {
 
 @media(min-width:1864px) {
     .topPicksContent__7c8f8 {
-        grid-template-columns: repeat(6, 1fr)
+        grid-template-columns: repeat(6, minmax(0, 1fr))
     }
 
     .card__56b24 {
@@ -35450,7 +35458,7 @@ span.clanTag_f4aadc {
     }
 
     .topPicksContent__7c8f8 {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(6, minmax(0, 1fr));
         width: auto;
         align-self: center
     }
@@ -79063,7 +79071,7 @@ html .invoiceCancelRow_aa7946 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 1rem;
     gap: 4px
 }
 
@@ -92942,6 +92950,35 @@ div:has(>div>.modal__06f49) {
     color: var(--black-500)
 }
 
+.root__436bf {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-24)
+}
+
+.wrapper__48ec7 {
+    min-height: auto
+}
+
+.header__4ce56 {
+    margin-bottom: var(--spacing-12)
+}
+
+.body__9e909,
+.logos_d6e878 {
+    margin-bottom: var(--spacing-24)
+}
+
+.error_f0e854 {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
 .container_c44a75 {
     width: 472px;
     min-height: 184px
@@ -99829,11 +99866,11 @@ div:has(>div>.container__8ab05) {
 
 .container_ef5900 {
     position: relative;
-    margin-top: 8px
+    margin-top: 8px;
+    transition: all.4s ease-in-out
 }
 
 .gradientGlow_dea0cb {
-    transition: all.4s ease-in-out;
     filter: drop-shadow(0 0 10px rgba(184, 69, 193, .50196))
 }
 
@@ -99879,11 +99916,11 @@ div:has(>div>.container__8ab05) {
     background: var(--background-secondary-alt);
     flex-direction: column;
     align-items: flex-start;
-    padding: 12px
+    padding: 12px;
+    transition: all.4s ease-in-out
 }
 
 .gradientGlow__4d469 {
-    transition: all.4s ease-in-out;
     filter: drop-shadow(0 0 10px rgba(184, 69, 193, .50196))
 }
 
@@ -99952,45 +99989,60 @@ div:has(>div>.container__8ab05) {
     color: var(--text-normal)
 }
 
+.selectorButtonWrapper__1ddd2 {
+    --custom-transition-duration: 0
+}
+
 .selectorButton_ea0609 {
+    position: relative;
+    overflow: hidden;
     min-width: 36px;
-    padding: 6px 0;
     flex: 1 1 auto;
     background: var(--background-secondary)
 }
 
-.selectorButton_ea0609:not(.selectorButtonPremiumRequired__9df5b):hover {
-    background-color: var(--brand-experiment)
+.selectorButton_ea0609:before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--brand-experiment);
+    transition: opacity var(--custom-transition-duration)ease-in-out;
+    opacity: 0
 }
 
-.selectorButton_ea0609:not(.selectorButtonPremiumRequired__9df5b):hover .selectorText__8286b {
+.selectorButton_ea0609:hover:before,
+.selectorButton_ea0609.selectorButtonSelected__707fb:before {
+    opacity: 1
+}
+
+.selectorButton_ea0609:hover .selectorText__8286b,
+.selectorButton_ea0609.selectorButtonSelected__707fb .selectorText__8286b {
     color: var(--white-500)
 }
 
-.selectorButton_ea0609.selectorButtonPerkDemo__4a1f5:hover {
+.selectorButton_ea0609.premiumUpsell__248b1:before {
+    background: transparent
+}
+
+.selectorButton_ea0609.perksDemo_f59d26:before {
     background: var(--custom-premium-colors-premium-gradient-tier-2)
 }
 
-.selectorButton_ea0609.selectorButtonPerkDemo__4a1f5:hover .selectorText__8286b {
-    color: var(--white-500)
+.selectorButton_ea0609>* {
+    z-index: 1;
+    flex-grow: 1
 }
 
-.selectorButtonSelected__707fb {
-    background-color: var(--brand-experiment)
-}
-
-.selectorButtonSelectedPerkDemo__7f18f {
-    background: var(--custom-premium-colors-premium-gradient-tier-2)
+.textContainer_f9e961 {
+    padding: 6px 0
 }
 
 .selectorText__8286b {
     text-transform: uppercase;
     font-weight: 700;
-    color: var(--interactive-normal)
-}
-
-.selectorTextSelected__147ec {
-    color: var(--white-500)
+    color: var(--interactive-normal);
+    transition: color var(--custom-transition-duration)ease-in-out
 }
 
 .selectorNitroText__1d3e0 {
@@ -135299,4 +135351,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ecdcf0c97977c80cafbc.css.map*/
+/*# sourceMappingURL=99387.d713440012cf2f23f5b2.css.map*/
