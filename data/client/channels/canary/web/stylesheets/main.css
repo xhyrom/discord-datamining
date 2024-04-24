@@ -47639,12 +47639,12 @@ span.clanTag_f4aadc {
 .streamerModeEnabledBtn_b696dd {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 1.8125rem;
+    line-height: 29px;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -135347,4 +135347,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.adcd9c036491bc90e81f.css.map*/
+/*# sourceMappingURL=99387.5f4ccd7296448bdd44bf.css.map*/

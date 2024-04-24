@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287487", ", Version Hash: ").concat("d5b852a50b5994a96cd18528dcf553c5b5c0f391")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287491", ", Version Hash: ").concat("44bf1f448f6cbf04e9d9caa62344f62bc81f5106")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -52906,6 +52906,7 @@
                 REFERRAL_PROGRAM_SELECT_MORE_FRIEND: "You can select {numFriends} more friends.",
                 REFERRAL_PROGRAM_FRIEND_SELECTION_HIT_LIMIT: "You've hit the {numReferrals} friend limit for this offer.",
                 REFERRAL_PROGRAM_SEARCH_FRIENDS: "Search friends",
+                REFERRAL_PROGRAM_LEARN_MORE_ABOUT_SHARING: "[Learn more]({helpdeskArticle}) about sharing Nitro trials.",
                 EMOJI_CATEGORY_TOP_GUILD_EMOJI: "Top Emoji in !!{guildName}!!",
                 TOP_GUILD_EMOJI_BADGE: "Popular",
                 NEWLY_ADDED_GUILD_EMOJI_BADGE: "Newly Added",
@@ -86813,8 +86814,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287487", "287487"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287487")), t = 0), t
+                let t = parseInt((e = "287491", "287491"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287491")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111806,8 +111807,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287487",
-                    versionHash: "d5b852a50b5994a96cd18528dcf553c5b5c0f391"
+                    buildNumber: "287491",
+                    versionHash: "44bf1f448f6cbf04e9d9caa62344f62bc81f5106"
                 }
             }
             n.r(t), n.d(t, {
@@ -165666,8 +165667,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713976751366",
-                                    build_number: "287487"
+                                    built_at: "1713977088052",
+                                    build_number: "287491"
                                 }
                             },
                             retries: 1
@@ -240826,29 +240827,22 @@
 
             function N(e) {
                 let {
-                    storeListings: t
-                } = e;
-                for (let e of t) m(e)
-            }
-
-            function p(e) {
-                let {
                     entitlements: t
                 } = e;
                 for (let e of t) null != e.sku && h(e.sku)
             }
 
-            function O() {
+            function p() {
                 E = new Set, I = new Set, T = new Map, f = new Map, S = new Map
             }
 
-            function R() {
+            function O() {
                 if (i === d.default.locale) return !1;
-                i = d.default.locale, O()
+                i = d.default.locale, p()
             }
-            class C extends(r = l.Store) {
+            class R extends(r = l.Store) {
                 initialize() {
-                    this.waitFor(d.default, c.default), this.syncWith([d.default], R), i = d.default.locale
+                    this.waitFor(d.default, c.default), this.syncWith([d.default], O), i = d.default.locale
                 }
                 get(e) {
                     return T.get(e)
@@ -240867,14 +240861,18 @@
                     return I.has(e)
                 }
             }
-            o = "SKUStore", (a = "displayName") in(s = C) ? Object.defineProperty(s, a, {
+            o = "SKUStore", (a = "displayName") in(s = R) ? Object.defineProperty(s, a, {
                 value: o,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : s[a] = o, t.default = new C(u.default, {
-                STORE_LISTINGS_FETCH_SUCCESS: N,
-                APPLICATION_STORE_DIRECTORY_FETCH_SUCCESS: N,
+            }) : s[a] = o, t.default = new R(u.default, {
+                STORE_LISTINGS_FETCH_SUCCESS: function(e) {
+                    let {
+                        storeListings: t
+                    } = e;
+                    for (let e of t) m(e)
+                },
                 STORE_LISTING_FETCH_SUCCESS: function(e) {
                     let {
                         storeListing: t
@@ -240914,10 +240912,10 @@
                     for (let e of n) A(e);
                     null != t && S.set(t, new Set(n.map(e => e.id)))
                 },
-                ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: p,
-                APPLICATION_STORE_CLEAR_DATA: O,
-                APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: p,
-                ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: p
+                ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: N,
+                APPLICATION_STORE_CLEAR_DATA: p,
+                APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: N,
+                ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: N
             })
         },
         551428: function(e, t, n) {
@@ -240946,24 +240944,17 @@
                 return "".concat(e, ":").concat(t)
             }
 
-            function A(e) {
-                let {
-                    storeListings: t
-                } = e;
-                for (let e of t) S(e)
-            }
-
-            function m() {
+            function A() {
                 E = {}, f = {}, T = {}, I = {}
             }
 
-            function N() {
+            function m() {
                 if (i === d.default.locale) return !1;
-                m(), i = d.default.locale
+                A(), i = d.default.locale
             }
-            class p extends(r = l.default.Store) {
+            class N extends(r = l.default.Store) {
                 initialize() {
-                    this.waitFor(d.default), this.syncWith([d.default], N), i = d.default.locale
+                    this.waitFor(d.default), this.syncWith([d.default], m), i = d.default.locale
                 }
                 get(e) {
                     return E[e]
@@ -240999,14 +240990,18 @@
                     return null
                 }
             }
-            o = "StoreListingStore", (a = "displayName") in(s = p) ? Object.defineProperty(s, a, {
+            o = "StoreListingStore", (a = "displayName") in(s = N) ? Object.defineProperty(s, a, {
                 value: o,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : s[a] = o, t.default = new p(u.default, {
-                STORE_LISTINGS_FETCH_SUCCESS: A,
-                APPLICATION_STORE_DIRECTORY_FETCH_SUCCESS: A,
+            }) : s[a] = o, t.default = new N(u.default, {
+                STORE_LISTINGS_FETCH_SUCCESS: function(e) {
+                    let {
+                        storeListings: t
+                    } = e;
+                    for (let e of t) S(e)
+                },
                 STORE_LISTING_FETCH_SUCCESS: function(e) {
                     let {
                         storeListing: t,
@@ -241017,8 +241012,8 @@
                         I[h(n, e.skuId)] = e, f[e.skuId] = e.id
                     } else S(t)
                 },
-                USER_SETTINGS_PROTO_UPDATE: N,
-                APPLICATION_STORE_CLEAR_DATA: m,
+                USER_SETTINGS_PROTO_UPDATE: m,
+                APPLICATION_STORE_CLEAR_DATA: A,
                 GIFT_CODE_RESOLVE_SUCCESS: function(e) {
                     let {
                         giftCode: t
@@ -243370,7 +243365,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d5b852a50b5994a96cd18528dcf553c5b5c0f391"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "44bf1f448f6cbf04e9d9caa62344f62bc81f5106"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -271894,7 +271889,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287487"
+                                build_number: "287491"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -279084,7 +279079,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287487", "287487"), 10);
+                let s = parseInt((n = "287491", "287491"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -306527,4 +306522,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.8ad8d161faafb31fd5fd.js.map
+//# sourceMappingURL=35705.99e1666327ea21fcc6f3.js.map
