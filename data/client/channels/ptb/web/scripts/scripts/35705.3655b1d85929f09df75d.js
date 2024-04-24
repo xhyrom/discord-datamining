@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287435", ", Version Hash: ").concat("600f2bcc46f72cbeda306dd21954e75176efbe35")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287443", ", Version Hash: ").concat("c0b9c426d724be68becb8e07f432e3a7a6ab3060")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56521,7 +56521,8 @@
             }
             class s {
                 addSample(e) {
-                    this.mean = (e + this.mean * this.samples) / (this.samples + 1), this.samples++, this.digest.push(e)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1;
+                    this.total += e * t, this.totalWeight += t, this.samples++, i.TDigest.prototype.push.call(this.digest, e, t), this.digest.check_continuous()
                 }
                 getReport() {
                     var e, t, n, i;
@@ -56533,12 +56534,12 @@
                         max: null !== (n = this.digest.percentile(1)) && void 0 !== n ? n : 0,
                         count: null !== (i = this.digest.size()) && void 0 !== i ? i : 0,
                         percentiles: s,
-                        mean: this.mean,
+                        mean: this.totalWeight > 0 ? this.total / this.totalWeight : 0,
                         samples: this.samples
                     }
                 }
                 constructor() {
-                    r(this, "digest", new i.Digest), r(this, "mean", 0), r(this, "samples", 0)
+                    r(this, "digest", new i.Digest), r(this, "total", 0), r(this, "samples", 0), r(this, "totalWeight", 0)
                 }
             }
         },
@@ -60202,14 +60203,16 @@
             class a {
                 getStats() {
                     let e = this.cpuHistogram.getReport(),
-                        t = this.memoryHistogram.getReport();
+                        t = this.memoryHistogram.getReport(),
+                        n = i.default.getCumulativeCPUUsage(),
+                        r = null == this.startCPU || null == n ? void 0 : (n.usage - this.startCPU.usage) * 100 / ((n.sampleTime - this.startCPU.sampleTime) / 1e3);
                     return {
                         client_performance_cpu_percentile25: e.percentiles[25],
                         client_performance_cpu_percentile50: e.percentiles[50],
                         client_performance_cpu_percentile75: e.percentiles[75],
                         client_performance_cpu_percentile90: e.percentiles[90],
                         client_performance_cpu_percentile95: e.percentiles[95],
-                        client_performance_cpu_mean: e.mean,
+                        client_performance_cpu_mean: null != r ? r : e.mean,
                         client_performance_memory_percentile25: t.percentiles[25],
                         client_performance_memory_percentile50: t.percentiles[50],
                         client_performance_memory_percentile75: t.percentiles[75],
@@ -60221,12 +60224,26 @@
                     }
                 }
                 takeSample() {
-                    let e = i.default.getCurrentCPUUsagePercent(),
+                    let e = i.default.getCumulativeCPUUsage(),
                         t = i.default.getCurrentMemoryUsageKB();
-                    null != e && this.cpuHistogram.addSample(e), null != t && this.memoryHistogram.addSample(t)
+                    if (null != e) {
+                        let t = !0;
+                        if (null != this.lastCPU) {
+                            let n = e.sampleTime - this.lastCPU.sampleTime;
+                            if (n >= 1) {
+                                let t = e.usage - this.lastCPU.usage;
+                                this.cpuHistogram.addSample(t / (n / 1e3) * 100, n)
+                            } else t = !1
+                        }
+                        t && (this.lastCPU = e)
+                    } else {
+                        let e = i.default.getCurrentCPUUsagePercent();
+                        null != e && this.cpuHistogram.addSample(e)
+                    }
+                    null != t && this.memoryHistogram.addSample(t)
                 }
                 constructor() {
-                    s(this, "cpuHistogram", new r.Histogram), s(this, "memoryHistogram", new r.Histogram)
+                    s(this, "cpuHistogram", new r.Histogram), s(this, "memoryHistogram", new r.Histogram), s(this, "startCPU", i.default.getCumulativeCPUUsage()), s(this, "lastCPU", this.startCPU)
                 }
             }
         },
@@ -86796,8 +86813,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287435", "287435"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287435")), t = 0), t
+                let t = parseInt((e = "287443", "287443"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287443")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111789,8 +111806,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287435",
-                    versionHash: "600f2bcc46f72cbeda306dd21954e75176efbe35"
+                    buildNumber: "287443",
+                    versionHash: "c0b9c426d724be68becb8e07f432e3a7a6ab3060"
                 }
             }
             n.r(t), n.d(t, {
@@ -165649,8 +165666,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713939182697",
-                                    build_number: "287435"
+                                    built_at: "1713942388322",
+                                    build_number: "287443"
                                 }
                             },
                             retries: 1
@@ -243353,7 +243370,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "600f2bcc46f72cbeda306dd21954e75176efbe35"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "c0b9c426d724be68becb8e07f432e3a7a6ab3060"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -271877,7 +271894,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287435"
+                                build_number: "287443"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -274659,6 +274676,10 @@
                 getCurrentCPUUsagePercent() {
                     var e, t;
                     return null === r.default || void 0 === r.default ? void 0 : null === (t = r.default.processUtils) || void 0 === t ? void 0 : null === (e = t.getCurrentCPUUsagePercent) || void 0 === e ? void 0 : e.call(t)
+                }
+                getCumulativeCPUUsage() {
+                    var e, t;
+                    return null === r.default || void 0 === r.default ? void 0 : null === (t = r.default.processUtils) || void 0 === t ? void 0 : null === (e = t.getCumulativeCPUUsage) || void 0 === e ? void 0 : e.call(t)
                 }
                 getCurrentMemoryUsageKB() {
                     let e = l.getCurrentMemoryUsageKBCore();
@@ -279063,7 +279084,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287435", "287435"), 10);
+                let s = parseInt((n = "287443", "287443"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -306506,4 +306527,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.ef93d5a69ea9a297ef12.js.map
+//# sourceMappingURL=35705.3655b1d85929f09df75d.js.map
