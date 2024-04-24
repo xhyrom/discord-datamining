@@ -34173,16 +34173,9 @@ span.clanTag_f4aadc {
 }
 
 .hero_dc420c {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 32px 32px 16px;
+    padding: 16px;
     border-top-left-radius: var(--radius-md);
     border-top-right-radius: var(--radius-md)
-}
-
-.popoutTitle__6f44d {
-    margin-top: 6px
 }
 
 .interactionsContainerHeader_a937d2 {
@@ -34233,23 +34226,8 @@ span.clanTag_f4aadc {
 }
 
 .badgeContainer__67878 {
-    padding: 2px;
-    overflow: hidden;
-    flex-shrink: 0
-}
-
-.badgeContainer__67878 svg {
-    flex-shrink: 0
-}
-
-.badgeContainer__67878 div {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden
-}
-
-.badgeContainer__67878:last-child {
-    flex-shrink: 1
+    flex-wrap: wrap;
+    row-gap: 4px
 }
 
 .toastContainer__40273 {
@@ -34314,6 +34292,31 @@ span.clanTag_f4aadc {
 .shareToChannelInputHasAttachments__4d1e1 {
     border-top-left-radius: 0;
     border-top-right-radius: 0
+}
+
+.popoutContentHeader_daecb8 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.popoutContentBody_f9fe14 {
+    display: flex;
+    align-items: center
+}
+
+.popoutThumbnailContainer_b66fac {
+    width: 72px;
+    text-align: center
+}
+
+.popoutUserContainer__5ed24 {
+    display: flex;
+    align-items: center
+}
+
+.popoutUsername__8e4a7 {
+    display: inline
 }
 
 .container__16e95 {
@@ -57748,6 +57751,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 .infoSection__07f39 {
     display: flex;
     flex-direction: column;
+    flex: 1;
     min-width: 0
 }
 
@@ -57827,6 +57831,12 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .additionalParticipantBadgeText__1e49a {
     line-height: 10px
+}
+
+.thumbnail__18ece {
+    width: 48px;
+    -o-object-fit: cover;
+    object-fit: cover
 }
 
 .contentImage__1c893 {
@@ -135399,4 +135409,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f402f52af98909770d9a.css.map*/
+/*# sourceMappingURL=99387.dd13111c8366c9d20728.css.map*/

@@ -6146,6 +6146,7 @@
                 fontScaling: "fontScaling__42daa",
                 infoSection: "infoSection__07f39",
                 selected: "selected__31bdc",
+                thumbnail: "thumbnail__18ece",
                 userName: "userName__23133",
                 userSection: "userSection__9a4c1"
             }
@@ -6174,7 +6175,11 @@
                 interactionsContainerHeader: "interactionsContainerHeader_a937d2",
                 joinPromptContainer: "joinPromptContainer_e5abcb",
                 popout: "popout_cfa8bc",
-                popoutTitle: "popoutTitle__6f44d",
+                popoutContentBody: "popoutContentBody_f9fe14",
+                popoutContentHeader: "popoutContentHeader_daecb8",
+                popoutThumbnailContainer: "popoutThumbnailContainer_b66fac",
+                popoutUserContainer: "popoutUserContainer__5ed24",
+                popoutUsername: "popoutUsername__8e4a7",
                 shareToChannelButton: "shareToChannelButton_ee0e50",
                 shareToChannelInput: "shareToChannelInput_a160d6",
                 shareToChannelInputHasAttachments: "shareToChannelInputHasAttachments__4d1e1",
