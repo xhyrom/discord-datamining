@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287695", ", Version Hash: ").concat("290088dfc8f6a1c5a10360405985e6c8a0c17d69")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287712", ", Version Hash: ").concat("00cd4782684d37ce81fc8a973fcebd60ba01554c")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55191,7 +55191,6 @@
                 MEMBER_LIST_CONTENT_FEED_WATCH_SEASON_EPISODE: "S{seasonNum}E{episodeNum}",
                 MEMBER_LIST_CONTENT_FEED_RESURRECTED: "Returning",
                 MEMBER_LIST_CONTENT_FEED_MARATHON: "Marathon",
-                MEMBER_LIST_CONTENT_FEED_PLAYED_FOR_HOURS: "Played for {hours}h",
                 MEMBER_LIST_CONTENT_FEED_STREAK_DAYS: "{days}x Streak",
                 MEMBER_LIST_CONTENT_POPOUT_USER_PLAYING: "$[{username}](nameHook) is playing",
                 MEMBER_LIST_CONTENT_POPOUT_USER_PLAYED: "$[{username}](nameHook) played",
@@ -86896,8 +86895,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287695", "287695"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287695")), t = 0), t
+                let t = parseInt((e = "287712", "287712"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287712")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110687,9 +110686,6 @@
                 getEntryDuration: function() {
                     return A
                 },
-                getFullMarathonDescription: function() {
-                    return C
-                },
                 getStreakCount: function() {
                     return R
                 },
@@ -110823,16 +110819,6 @@
             function R(e) {
                 let t = e.traits.find(e => e.type === s.ContentInventoryTraitType.STREAK_DAYS);
                 return null == t ? void 0 : t.streak_count_days
-            }
-
-            function C(e) {
-                let t = A(e);
-                if (null == t) return u.default.Messages.MEMBER_LIST_CONTENT_FEED_MARATHON;
-                let n = Math.round(t / o.default.Seconds.HOUR),
-                    i = u.default.Messages.MEMBER_LIST_CONTENT_FEED_PLAYED_FOR_HOURS.format({
-                        hours: n
-                    });
-                return "".concat(u.default.Messages.MEMBER_LIST_CONTENT_FEED_MARATHON, " — ").concat(i)
             }
         },
         663993: function(e, t, n) {
@@ -112804,8 +112790,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287695",
-                    versionHash: "290088dfc8f6a1c5a10360405985e6c8a0c17d69"
+                    buildNumber: "287712",
+                    versionHash: "00cd4782684d37ce81fc8a973fcebd60ba01554c"
                 }
             }
             n.r(t), n.d(t, {
@@ -153488,6 +153474,11 @@
 
             function h(e) {
                 var t;
+                let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+                if (n) {
+                    let t = c.filter(t => t <= e).pop();
+                    if (null != t && e / t <= 1.25) return t
+                }
                 return null !== (t = c.find(t => e <= t)) && void 0 !== t ? t : c[c.length - 1]
             }
 
@@ -167114,8 +167105,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713992236397",
-                                    build_number: "287695"
+                                    built_at: "1713993367853",
+                                    build_number: "287712"
                                 }
                             },
                             retries: 1
@@ -244877,7 +244868,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "290088dfc8f6a1c5a10360405985e6c8a0c17d69"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "00cd4782684d37ce81fc8a973fcebd60ba01554c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268241,7 +268232,7 @@
                     size: i,
                     forcePNG: r = !1
                 } = e, s = f && !r ? "webp" : "png", a = f && !S ? "&quality=lossless" : "";
-                return null != window.GLOBAL_ENV.CDN_HOST ? "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/emojis/").concat(t, ".").concat(n ? "gif" : s, "?size=").concat((0, l.getBestMediaProxySize)(i * (0, l.getDevicePixelRatio)())).concat(a) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + c.Endpoints.EMOJI(t, n ? "gif" : s)
+                return null != window.GLOBAL_ENV.CDN_HOST ? "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/emojis/").concat(t, ".").concat(n ? "gif" : s, "?size=").concat((0, l.getBestMediaProxySize)(i * (0, l.getDevicePixelRatio)(), S)).concat(a) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + c.Endpoints.EMOJI(t, n ? "gif" : s)
             }
 
             function m(e, t) {
@@ -273401,7 +273392,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287695"
+                                build_number: "287712"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280635,7 +280626,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287695", "287695"), 10);
+                let s = parseInt((n = "287712", "287712"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308126,4 +308117,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.d3e79ab83739b699caf1.js.map
+//# sourceMappingURL=35705.57b4dba094b140221ea0.js.map
