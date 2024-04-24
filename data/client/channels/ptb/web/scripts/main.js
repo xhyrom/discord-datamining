@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287710", ", Version Hash: ").concat("7dfa3dfb98fcf8b5495149c8186ca9ab48dd1e47")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287714", ", Version Hash: ").concat("bcce8abe6b86ee082c8a9eb27caff422d851336f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86895,8 +86895,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287710", "287710"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287710")), t = 0), t
+                let t = parseInt((e = "287714", "287714"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287714")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -91009,7 +91009,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 ChatInputTypes: function() {
-                    return m
+                    return N
                 },
                 SlateToolbarTypes: function() {
                     return r
@@ -91308,6 +91308,26 @@
                     }
                 },
                 f = {
+                    analyticsName: "user_profile",
+                    drafts: {
+                        type: a.DraftType.ChannelMessage
+                    },
+                    emojis: {
+                        button: !0
+                    },
+                    permissions: {
+                        requireSendMessages: !1
+                    },
+                    users: {
+                        allowMentioning: !0
+                    },
+                    submit: {
+                        useDisabledStylesOnSubmit: !0,
+                        clearOnSubmit: !0
+                    },
+                    disableAutoFocus: !0
+                },
+                S = {
                     analyticsName: "profile_bio_input",
                     drafts: {
                         type: a.DraftType.ChannelMessage
@@ -91325,7 +91345,7 @@
                     disableAutoFocus: !0,
                     showCharacterCount: !0
                 },
-                S = {
+                h = {
                     analyticsName: "custom_gift_type",
                     drafts: {
                         type: a.DraftType.ChannelMessage
@@ -91341,7 +91361,7 @@
                     disableAutoFocus: !0,
                     showCharacterCount: !0
                 },
-                h = {
+                A = {
                     analyticsName: "rules_input",
                     drafts: {
                         type: a.DraftType.ChannelMessage
@@ -91355,7 +91375,7 @@
                     },
                     showCharacterCount: !0
                 },
-                A = {
+                m = {
                     analyticsName: "forum_channel_guidelines",
                     drafts: {
                         type: a.DraftType.ChannelMessage
@@ -91374,7 +91394,7 @@
                     showCharacterCount: !0,
                     toolbarType: 1
                 },
-                m = {
+                N = {
                     NORMAL: o,
                     OVERLAY: l,
                     SIDEBAR: u,
@@ -91382,12 +91402,13 @@
                     FORM: _,
                     VOICE_CHANNEL_STATUS: c,
                     THREAD_CREATION: E,
-                    PROFILE_BIO_INPUT: f,
-                    CUSTOM_GIFT: S,
-                    RULES_INPUT: h,
+                    USER_PROFILE: f,
+                    PROFILE_BIO_INPUT: S,
+                    CUSTOM_GIFT: h,
+                    RULES_INPUT: A,
                     CREATE_FORUM_POST: I,
                     CREATE_POLL: T,
-                    FORUM_CHANNEL_GUIDELINES: A,
+                    FORUM_CHANNEL_GUIDELINES: m,
                     ATOMIC_REACTOR_REPLY_INPUT: {
                         analyticsName: "atomic_reator_reply_input",
                         drafts: {
@@ -112790,8 +112811,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287710",
-                    versionHash: "7dfa3dfb98fcf8b5495149c8186ca9ab48dd1e47"
+                    buildNumber: "287714",
+                    versionHash: "bcce8abe6b86ee082c8a9eb27caff422d851336f"
                 }
             }
             n.r(t), n.d(t, {
@@ -167105,8 +167126,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713993291836",
-                                    build_number: "287710"
+                                    built_at: "1713993424648",
+                                    build_number: "287714"
                                 }
                             },
                             retries: 1
@@ -207428,7 +207449,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 UserProfileCustomStatusBubble: function() {
-                    return d
+                    return _
                 }
             });
             var i = n("735250");
@@ -207438,54 +207459,80 @@
                 a = n("481060"),
                 o = n("596454"),
                 l = n("788307"),
-                u = n("181196");
+                u = n("228168"),
+                d = n("181196");
 
-            function d(e) {
+            function _(e) {
                 let {
-                    positionStyle: t,
-                    statusActivity: n,
+                    statusActivity: t,
+                    profileType: n,
                     animate: r = !0,
-                    hideTooltip: d = !1
+                    hideTooltip: _ = !1
                 } = e, {
-                    emoji: _
-                } = n, c = null != _, E = null != n.state && "" !== n.state ? n.state : null, I = null != E && E.length > 0;
-                if (!c && !I) return null;
-                let T = I ? Math.floor(E.length / 30) + 1 : 1,
-                    f = s()(u.statusBubbleOuter, {
-                        [u.statusBubbleSingleLineShape]: 1 === T,
-                        [u.statusBubbleMultiLineShape]: T > 1,
-                        [u.statusBubbleOuterMaxLinePadding]: T >= 3,
-                        [u.statusBubbleOuterMaxLinePositioningOffset]: T >= 3
+                    emoji: c
+                } = t, E = null != c, I = null != t.state && "" !== t.state ? t.state : null, T = null != I && I.length > 0;
+                if (!E && !T) return null;
+                let f = T ? Math.floor(I.length / 34) + 1 : 1,
+                    S = () => E ? !T || T && 1 === f ? (0, i.jsx)(l.ActivityEmoji, {
+                        className: d.singleLineStatusEmoji,
+                        emoji: c,
+                        animate: r,
+                        hideTooltip: _
+                    }) : (0, i.jsx)(o.default, {
+                        className: d.multiLineStatusEmoji,
+                        emojiId: c.id,
+                        emojiName: c.name,
+                        animated: !!c.animated
+                    }) : null,
+                    h = () => T ? (0, i.jsx)(a.Text, {
+                        variant: "text-sm/medium",
+                        className: d.statusText,
+                        children: I
+                    }) : null,
+                    A = s()(d.positionStyle, {
+                        [d.biteSize]: n === u.UserProfileTypes.BITE_SIZE,
+                        [d.fullSize]: n === u.UserProfileTypes.FULL_SIZE
                     }),
-                    S = s()(u.statusBubble, {
-                        [u.statusBubbleSingleLineEmojiOnly]: c && !I,
-                        [u.statusBubbleSingleLineTextOrMixed]: 1 === T && I,
-                        [u.statusBubbleMultiLinePadding]: T > 1 && T < 3,
-                        [u.statusBubbleMaxLinePadding]: T >= 3,
-                        [u.statusBubbleSingleLineShape]: 1 === T,
-                        [u.statusBubbleMultiLineShape]: T > 1
+                    m = s()(d.statusBubbleOuter, {
+                        [d.statusBubbleSingleLineWithEmojiShape]: 1 === f && E,
+                        [d.statusBubbleSingleLineTextOnlyShape]: 1 === f && !E,
+                        [d.statusBubbleMultiLineShape]: f > 1,
+                        [d.statusBubbleOuterMaxLine]: f >= 3
+                    }),
+                    N = s()(d.statusBubble, {
+                        [d.statusBubbleSingleLineWithEmojiShape]: 1 === f && E,
+                        [d.statusBubbleSingleLineTextOnlyShape]: 1 === f && !E,
+                        [d.statusBubbleMultiLineShape]: f > 1,
+                        [d.statusBubbleSingleLineWithEmoji]: 1 === f && E,
+                        [d.statusBubbleSingleLineTextOnly]: 1 === f && !E,
+                        [d.statusBubbleMultiLinePadding]: f > 1 && f < 3,
+                        [d.statusBubbleMaxLinePadding]: f >= 3
                     });
-                return (0, i.jsx)("div", {
-                    className: t,
+                if (n === u.UserProfileTypes.FULL_SIZE) return (0, i.jsx)("div", {
+                    className: A,
                     children: (0, i.jsx)("div", {
-                        className: f,
+                        className: m,
                         children: (0, i.jsxs)("span", {
-                            className: S,
-                            children: [c ? I ? (0, i.jsx)(o.default, {
-                                className: u.inlineStatusEmoji,
-                                emojiId: _.id,
-                                emojiName: _.name,
-                                animated: !!_.animated
-                            }) : (0, i.jsx)(l.ActivityEmoji, {
-                                className: u.soloStatusEmoji,
-                                emoji: _,
-                                animate: r,
-                                hideTooltip: d
-                            }) : null, I ? (0, i.jsx)(a.Text, {
-                                variant: "text-sm/medium",
-                                className: u.statusText,
-                                children: E
-                            }) : null]
+                            className: N,
+                            children: [S(), h()]
+                        })
+                    })
+                });
+                let p = s()({
+                    [d.statusBubbleSingleLineWithEmojiBottomMargin]: 1 === f && E,
+                    [d.statusBubbleSingleLineTextOnlyBottomMargin]: 1 === f && !E,
+                    [d.statusBubbleMultiLineMaxLineBottomMargin]: f > 1
+                });
+                return (0, i.jsx)("div", {
+                    className: p,
+                    children: (0, i.jsx)("div", {
+                        className: A,
+                        children: (0, i.jsx)("div", {
+                            className: m,
+                            children: (0, i.jsxs)("span", {
+                                className: N,
+                                children: [S(), h()]
+                            })
                         })
                     })
                 })
@@ -210127,7 +210174,9 @@
                         guild: p,
                         onOpenProfile: () => O(!1)
                     }), D && (0, i.jsx)(S.default, {
-                        user: t
+                        user: t,
+                        channelId: R,
+                        onClose: C
                     }), (0, i.jsx)(I.default, {
                         type: "action",
                         user: t,
@@ -210141,31 +210190,97 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return o
+                    return m
                 }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("648996"),
-                s = n("785717"),
-                a = n("804384");
+            }), n("411104"), n("47120");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("442837"),
+                a = n("493683"),
+                o = n("904245"),
+                l = n("906732"),
+                u = n("541716"),
+                d = n("752305"),
+                _ = n("893718"),
+                c = n("957730"),
+                E = n("592125"),
+                I = n("51144"),
+                T = n("838440"),
+                f = n("785717"),
+                S = n("689938"),
+                h = n("804384");
+            let A = async e => {
+                let {
+                    userId: t,
+                    content: n,
+                    location: i
+                } = e, {
+                    valid: r,
+                    failureReason: s
+                } = await (0, T.applyChatRestrictions)({
+                    type: u.ChatInputTypes.NORMAL,
+                    content: n,
+                    channel: null
+                });
+                if (!r) throw Error(s);
+                let l = await a.default.openPrivateChannel(t, !1, !1, i),
+                    d = E.default.getChannel(l);
+                if (null == d) throw Error("Failed to open private channel");
+                let _ = c.default.parse(d, n);
+                return o.default.sendMessage(d.id, _)
+            };
 
-            function o(e) {
+            function m(e) {
                 let {
                     user: t,
-                    onClose: n
+                    channelId: n,
+                    onClose: a
                 } = e, {
-                    trackUserProfileAction: o
-                } = (0, s.useUserProfileAnalyticsContext)();
-                return (0, i.jsx)(r.default, {
-                    className: a.messageInputContainer,
-                    inputClassName: a.messageInput,
-                    user: t,
-                    autoFocus: !0,
-                    onSend: () => {
-                        o({
-                            action: "SEND_DIRECT_MESSAGE"
-                        }), null == n || n()
+                    newestAnalyticsLocation: o
+                } = (0, l.default)(), {
+                    trackUserProfileAction: c
+                } = (0, f.useUserProfileAnalyticsContext)(), T = (0, s.useStateFromStores)([E.default], () => E.default.getChannel(n)), [m, N] = r.useState(""), [p, O] = r.useState((0, d.toRichValue)(m)), R = r.useRef(!1);
+                return null == T ? null : (0, i.jsx)(_.default, {
+                    innerClassName: h.inner,
+                    editorClassName: h.editor,
+                    type: u.ChatInputTypes.USER_PROFILE,
+                    placeholder: S.default.Messages.QUICK_DM_USER.format({
+                        name: I.default.getName(t)
+                    }),
+                    channel: T,
+                    textValue: m,
+                    richValue: p,
+                    onChange: (e, t, n) => {
+                        t !== m && (N(t), O(n))
+                    },
+                    focused: R.current,
+                    onFocus: () => {
+                        R.current = !0
+                    },
+                    onBlur: () => {
+                        R.current = !1
+                    },
+                    onSubmit: async e => {
+                        let {
+                            value: n
+                        } = e;
+                        try {
+                            return c({
+                                action: "SEND_DIRECT_MESSAGE"
+                            }), await A({
+                                userId: t.id,
+                                content: n.trim(),
+                                location: o
+                            }), null == a || a(), {
+                                shouldClear: !0,
+                                shouldRefocus: !1
+                            }
+                        } catch {
+                            return {
+                                shouldClear: !1,
+                                shouldRefocus: !1
+                            }
+                        }
                     }
                 })
             }
@@ -210248,8 +210363,8 @@
                         hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null,
                         profileType: E.UserProfileTypes.BITE_SIZE
                     }), null != N && (0, i.jsx)(_.UserProfileCustomStatusBubble, {
-                        positionStyle: f.statusBubblePosition,
-                        statusActivity: N
+                        statusActivity: N,
+                        profileType: E.UserProfileTypes.BITE_SIZE
                     })]
                 })
             }
@@ -244868,7 +244983,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "7dfa3dfb98fcf8b5495149c8186ca9ab48dd1e47"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "bcce8abe6b86ee082c8a9eb27caff422d851336f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273392,7 +273507,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287710"
+                                build_number: "287714"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280626,7 +280741,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287710", "287710"), 10);
+                let s = parseInt((n = "287714", "287714"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308117,4 +308232,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.f4006d5d9352aa06559b.js.map
+//# sourceMappingURL=35705.b8075bbd1d90210ac125.js.map
