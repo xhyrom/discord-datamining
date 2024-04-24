@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287392", ", Version Hash: ").concat("0bbba1867a399cd40ac61e7f2c710ff4eea996e9")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287499", ", Version Hash: ").concat("32f40c7b1d0c7605ac0efe938ff857260d5a01a9")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -52906,6 +52906,7 @@
                 REFERRAL_PROGRAM_SELECT_MORE_FRIEND: "You can select {numFriends} more friends.",
                 REFERRAL_PROGRAM_FRIEND_SELECTION_HIT_LIMIT: "You've hit the {numReferrals} friend limit for this offer.",
                 REFERRAL_PROGRAM_SEARCH_FRIENDS: "Search friends",
+                REFERRAL_PROGRAM_LEARN_MORE_ABOUT_SHARING: "[Learn more]({helpdeskArticle}) about sharing Nitro trials.",
                 EMOJI_CATEGORY_TOP_GUILD_EMOJI: "Top Emoji in !!{guildName}!!",
                 TOP_GUILD_EMOJI_BADGE: "Popular",
                 NEWLY_ADDED_GUILD_EMOJI_BADGE: "Newly Added",
@@ -53430,15 +53431,6 @@
                 COMBINED_STARTER_COLLECTIBLES_SOCIAL_UPSELL_NITRO: "Like this profile customization? $[Get your own from the Shop](openShop).",
                 COLLECTIBLES_BANNER_TITLE_2024: "Give your profile a fresh look",
                 COLLECTIBLES_BANNER_DESCRIPTION_2024: "Check out the latest avatar decorations and profile effects and collect your favorite styles.",
-                COLLECTIBLES_LUNAR_NEW_YEAR_TOOLTIP_TEXT: "Explore Lunar New Year styles",
-                COLLECTIBLES_ELEMENTS_TOOLTIP_TITLE: "Check out new Element styles",
-                COLLECTIBLES_ELEMENTS_TOOLTIP_TITLE_ALT: "Element styles are here - which will you unleash?",
-                COLLECTIBLES_ELEMENTS_COACHTIP_TITLE: "Harness the Elements",
-                COLLECTIBLES_ELEMENTS_COACHTIP_DISCRIPTION: "Fire. Wind. Water. Earth. Which will you unleash?",
-                COLLECTIBLES_ANIME_V2_COACHTIP_TITLE: "Anime: New styles",
-                COLLECTIBLES_ANIME_V2_COACHTIP_DISCRIPTION: "Senpai will definitely notice you now.",
-                COLLECTIBLES_SPRINGTOONS_COACHTIP_TITLE: "NEW: Springtoons",
-                COLLECTIBLES_SPRINGTOONS_COACHTIP_DESCRIPTION: "In the hush of night, a curious magic enchants the air and...",
                 COLLECTIBLES_SHY_FOR_A_LIMITED_TIME: "For a limited time",
                 COLLECTIBLES_SHY_COACHTIP_TITLE: "Lock in. Stand out.",
                 COLLECTIBLES_SHY_COACHTIP_DESCRIPTION: "New VALORANT looks for styling on your enemies.",
@@ -56530,7 +56522,8 @@
             }
             class s {
                 addSample(e) {
-                    this.mean = (e + this.mean * this.samples) / (this.samples + 1), this.samples++, this.digest.push(e)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1;
+                    this.total += e * t, this.totalWeight += t, this.samples++, i.TDigest.prototype.push.call(this.digest, e, t), this.digest.check_continuous()
                 }
                 getReport() {
                     var e, t, n, i;
@@ -56542,12 +56535,12 @@
                         max: null !== (n = this.digest.percentile(1)) && void 0 !== n ? n : 0,
                         count: null !== (i = this.digest.size()) && void 0 !== i ? i : 0,
                         percentiles: s,
-                        mean: this.mean,
+                        mean: this.totalWeight > 0 ? this.total / this.totalWeight : 0,
                         samples: this.samples
                     }
                 }
                 constructor() {
-                    r(this, "digest", new i.Digest), r(this, "mean", 0), r(this, "samples", 0)
+                    r(this, "digest", new i.Digest), r(this, "total", 0), r(this, "samples", 0), r(this, "totalWeight", 0)
                 }
             }
         },
@@ -57873,7 +57866,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return ei
+                    return en
                 }
             }), n("411104"), n("724458"), n("653041"), n("47120");
             var i, r = n("654861"),
@@ -57902,33 +57895,32 @@
                 L = n("583215"),
                 D = n("576574"),
                 v = n("307320"),
-                M = n("420363"),
-                y = n("794269");
+                M = n("420363");
             n("527702");
-            var P = n("214890"),
-                U = n("592125"),
-                b = n("131951"),
-                G = n("19780"),
-                w = n("226961"),
-                k = n("936349"),
-                B = n("626135"),
-                F = n("931619"),
-                V = n("358085"),
-                x = n("579806"),
-                H = n("859401"),
-                Y = n("437263"),
-                j = n("423343"),
-                W = n("685756"),
-                K = n("655306"),
-                z = n("583794"),
-                X = n("824096"),
-                Q = n("53114"),
-                q = n("174532"),
-                Z = n("895066"),
-                J = n("981631"),
-                $ = n("65154");
+            var y = n("214890"),
+                P = n("592125"),
+                U = n("131951"),
+                b = n("19780"),
+                G = n("226961"),
+                w = n("936349"),
+                k = n("626135"),
+                B = n("931619"),
+                F = n("358085"),
+                V = n("579806"),
+                x = n("859401"),
+                H = n("437263"),
+                Y = n("423343"),
+                j = n("685756"),
+                W = n("655306"),
+                K = n("583794"),
+                z = n("824096"),
+                X = n("53114"),
+                Q = n("174532"),
+                q = n("895066"),
+                Z = n("981631"),
+                J = n("65154");
 
-            function ee(e, t, n) {
+            function $(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -57936,18 +57928,18 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let et = /^https/.test((i = "https:", "https:")) ? "wss:" : "ws:";
+            let ee = /^https/.test((i = "https:", "https:")) ? "wss:" : "ws:";
 
-            function en(e) {
+            function et(e) {
                 return e
             }
-            class ei extends _.default {
+            class en extends _.default {
                 get quality() {
                     let e = this.getLastPing();
-                    if (this.state !== J.RTCConnectionStates.RTC_CONNECTED || void 0 === e) return J.RTCConnectionQuality.UNKNOWN;
-                    if (e > 500 || null != this._outboundLossRate && this._outboundLossRate > 10) return J.RTCConnectionQuality.BAD;
-                    if (e > 250 || null != this._outboundLossRate && this._outboundLossRate > 5) return J.RTCConnectionQuality.AVERAGE;
-                    else return J.RTCConnectionQuality.FINE
+                    if (this.state !== Z.RTCConnectionStates.RTC_CONNECTED || void 0 === e) return Z.RTCConnectionQuality.UNKNOWN;
+                    if (e > 500 || null != this._outboundLossRate && this._outboundLossRate > 10) return Z.RTCConnectionQuality.BAD;
+                    if (e > 250 || null != this._outboundLossRate && this._outboundLossRate > 5) return Z.RTCConnectionQuality.AVERAGE;
+                    else return Z.RTCConnectionQuality.FINE
                 }
                 get endpoint() {
                     return this._endpoint
@@ -57955,12 +57947,12 @@
                 set endpoint(e) {
                     if (null == e) this._endpoint = null, this.hostname = null;
                     else {
-                        e = "".concat(et, "//").concat(e);
+                        e = "".concat(ee, "//").concat(e);
                         let {
                             hostname: t,
                             port: n
                         } = l.parse(e), i = null != n ? parseInt(n) : NaN;
-                        null != t && (80 === i || 443 === i) && (e = "".concat(et, "//").concat(t)), this._endpoint = e + "/", this.hostname = t
+                        null != t && (80 === i || 443 === i) && (e = "".concat(ee, "//").concat(t)), this._endpoint = e + "/", this.hostname = t
                     }
                 }
                 connect(e, t) {
@@ -57974,15 +57966,15 @@
                             type: "RTC_CONNECTION_UPDATE_ID",
                             connection: this
                         }))), null == this.endpoint) {
-                        this.setState(J.RTCConnectionStates.AWAITING_ENDPOINT);
+                        this.setState(Z.RTCConnectionStates.AWAITING_ENDPOINT);
                         return
                     }
                     let r = this._socket;
-                    null != r && this._cleanupSocket(), (r = this._socket = new W.default(this.endpoint)).on(W.SocketEvent.Connecting, this._handleConnecting.bind(this, r)), r.on(W.SocketEvent.Connect, this._handleConnect.bind(this, r)), r.on(W.SocketEvent.Disconnect, this._handleDisconnect.bind(this, r)), r.on(W.SocketEvent.Resuming, this._handleResuming.bind(this, r)), r.on(W.SocketEvent.Ready, this._handleReady.bind(this, r)), r.on(W.SocketEvent.Speaking, this._handleSpeaking.bind(this, r)), r.on(W.SocketEvent.Video, this._handleVideo.bind(this, r)), r.on(W.SocketEvent.Ping, this._handleControlPing.bind(this)), r.on(W.SocketEvent.ClientDisconnect, this._handleClientDisconnect.bind(this)), r.on(W.SocketEvent.Codecs, this._handleCodecs.bind(this)), r.on(W.SocketEvent.MediaSessionId, this._handleMediaSessionId.bind(this)), r.on(W.SocketEvent.MediaSinkWants, this._handleMediaSinkWants.bind(this)), r.on(W.SocketEvent.VoiceBackendVersion, this._handleCodeVersion.bind(this)), r.on(W.SocketEvent.KeyframeInterval, this._handleKeyframeInterval.bind(this)), r.on(W.SocketEvent.Flags, this.handleFlags.bind(this)), r.on(W.SocketEvent.Platform, this.handlePlatform.bind(this)), r.on(W.SocketEvent.BandwidthEstimationExperiment, this._handleBandwidthEstimationExperiment.bind(this)), r.on(W.SocketEvent.SecureFramesInit, this._handleSecureFramesInit.bind(this)), r.on(W.SocketEvent.SecureFramesPrepareTransition, this._handleSecureFramesPrepareTransition.bind(this)), r.on(W.SocketEvent.SecureFramesPrepareEpoch, this._handleSecureFramesPrepareEpoch.bind(this)), r.on(W.SocketEvent.SecureFramesExecuteTransition, this._handleSecureFramesExecuteTransition.bind(this)), r.on(W.SocketEvent.MLSExternalSenderPackage, this._handleMLSExternalSenderPackage.bind(this)), r.on(W.SocketEvent.MLSProposals, this._handleMLSProposals.bind(this, r)), r.on(W.SocketEvent.MLSPrepareCommitTransition, this._handleMLSPrepareCommitTransition.bind(this)), r.on(W.SocketEvent.MLSWelcome, this._handleMLSWelcome.bind(this)), this._connectStartTime = (0, E.now)(), this._connectCount++, this._connecting = !0, null != r && this._socket === r && (this._trackVoiceConnectionConnecting(), this._encountered_socket_failure = !1, r.connect())
+                    null != r && this._cleanupSocket(), (r = this._socket = new j.default(this.endpoint)).on(j.SocketEvent.Connecting, this._handleConnecting.bind(this, r)), r.on(j.SocketEvent.Connect, this._handleConnect.bind(this, r)), r.on(j.SocketEvent.Disconnect, this._handleDisconnect.bind(this, r)), r.on(j.SocketEvent.Resuming, this._handleResuming.bind(this, r)), r.on(j.SocketEvent.Ready, this._handleReady.bind(this, r)), r.on(j.SocketEvent.Speaking, this._handleSpeaking.bind(this, r)), r.on(j.SocketEvent.Video, this._handleVideo.bind(this, r)), r.on(j.SocketEvent.Ping, this._handleControlPing.bind(this)), r.on(j.SocketEvent.ClientDisconnect, this._handleClientDisconnect.bind(this)), r.on(j.SocketEvent.Codecs, this._handleCodecs.bind(this)), r.on(j.SocketEvent.MediaSessionId, this._handleMediaSessionId.bind(this)), r.on(j.SocketEvent.MediaSinkWants, this._handleMediaSinkWants.bind(this)), r.on(j.SocketEvent.VoiceBackendVersion, this._handleCodeVersion.bind(this)), r.on(j.SocketEvent.KeyframeInterval, this._handleKeyframeInterval.bind(this)), r.on(j.SocketEvent.Flags, this.handleFlags.bind(this)), r.on(j.SocketEvent.Platform, this.handlePlatform.bind(this)), r.on(j.SocketEvent.BandwidthEstimationExperiment, this._handleBandwidthEstimationExperiment.bind(this)), r.on(j.SocketEvent.SecureFramesInit, this._handleSecureFramesInit.bind(this)), r.on(j.SocketEvent.SecureFramesPrepareTransition, this._handleSecureFramesPrepareTransition.bind(this)), r.on(j.SocketEvent.SecureFramesPrepareEpoch, this._handleSecureFramesPrepareEpoch.bind(this)), r.on(j.SocketEvent.SecureFramesExecuteTransition, this._handleSecureFramesExecuteTransition.bind(this)), r.on(j.SocketEvent.MLSExternalSenderPackage, this._handleMLSExternalSenderPackage.bind(this)), r.on(j.SocketEvent.MLSProposals, this._handleMLSProposals.bind(this, r)), r.on(j.SocketEvent.MLSPrepareCommitTransition, this._handleMLSPrepareCommitTransition.bind(this)), r.on(j.SocketEvent.MLSWelcome, this._handleMLSWelcome.bind(this)), this._connectStartTime = (0, E.now)(), this._connectCount++, this._connecting = !0, null != r && this._socket === r && (this._trackVoiceConnectionConnecting(), this._encountered_socket_failure = !1, r.connect())
                 }
                 destroy() {
                     var e, t, n, i, r;
-                    if (this.logger.info("Destroy RTCConnection"), F.default.removeOnlineCallback(this._handleNetworkOnline), F.default.removeOfflineCallback(this._handleNetworkOffline), (0, V.isDesktop)() && (null === (r = this.powerMonitorListener) || void 0 === r || r.call(this)), this._backoff.cancel(), this._cleanupSocket(), null === (e = this._voiceQuality) || void 0 === e || e.stop(), this._voiceQuality = null, clearInterval(this._voiceQualityPeriodicStatsInterval), this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._noiseCancellationError = 0, null === (t = this._voiceDuration) || void 0 === t || t.stop(), this._voiceDuration = null, null === (n = this._videoQuality) || void 0 === n || n.stop(), this._videoQuality = null, this._videoHealthManager = null, null === (i = this._localMediaSinkWantsManager) || void 0 === i || i.reset(), null != this._connection) {
+                    if (this.logger.info("Destroy RTCConnection"), B.default.removeOnlineCallback(this._handleNetworkOnline), B.default.removeOfflineCallback(this._handleNetworkOffline), (0, F.isDesktop)() && (null === (r = this.powerMonitorListener) || void 0 === r || r.call(this)), this._backoff.cancel(), this._cleanupSocket(), null === (e = this._voiceQuality) || void 0 === e || e.stop(), this._voiceQuality = null, clearInterval(this._voiceQualityPeriodicStatsInterval), this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._noiseCancellationError = 0, null === (t = this._voiceDuration) || void 0 === t || t.stop(), this._voiceDuration = null, null === (n = this._videoQuality) || void 0 === n || n.stop(), this._videoQuality = null, this._videoHealthManager = null, null === (i = this._localMediaSinkWantsManager) || void 0 === i || i.reset(), null != this._connection) {
                         let e = this._connection;
                         this._connection = null, e.destroy()
                     }
@@ -57991,7 +57983,7 @@
                 sendSpeaking(e, t) {
                     let n = this._socket;
                     if (null != n) {
-                        let i = b.default.getPacketDelay();
+                        let i = U.default.getPacketDelay();
                         n.speaking(e, i, t)
                     }
                 }
@@ -58052,7 +58044,7 @@
                 }
                 setState(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-                    this.logger.info("RTC connection state: ".concat(this.state, " => ").concat(e)), this.state = e, this.stateHistory.update(this.state), this.emit(Y.RTCConnectionEvent.State, e, {
+                    this.logger.info("RTC connection state: ".concat(this.state, " => ").concat(e)), this.state = e, this.stateHistory.update(this.state), this.emit(H.RTCConnectionEvent.State, e, {
                         hostname: this.hostname,
                         channelId: this.trueChannelId,
                         context: this.context
@@ -58116,7 +58108,7 @@
                         });
                         e && (n ? t.push("force_krisp_enabled") : t.push("force_krisp_disabled"))
                     }
-                    if (b.default.supports($.Features.FIXED_KEYFRAME_INTERVAL) && t.push("fixed_keyframe_interval"), 0 !== this._supportedBandwidthEstimationExperiments.length) {
+                    if (U.default.supports(J.Features.FIXED_KEYFRAME_INTERVAL) && t.push("fixed_keyframe_interval"), 0 !== this._supportedBandwidthEstimationExperiments.length) {
                         let {
                             enabled: e,
                             fullname: n
@@ -58126,7 +58118,7 @@
                     this._selectedExperiments = t
                 }
                 _handleConnecting(e) {
-                    null != this.endpoint && this.logger.info("Connecting to RTC server ".concat(this.endpoint, ", rtc-connection-id: ").concat(this.getRTCConnectionId())), this.setState(J.RTCConnectionStates.CONNECTING)
+                    null != this.endpoint && this.logger.info("Connecting to RTC server ".concat(this.endpoint, ", rtc-connection-id: ").concat(this.getRTCConnectionId())), this.setState(Z.RTCConnectionStates.CONNECTING)
                 }
                 _handleConnect(e) {
                     var t, n;
@@ -58137,38 +58129,38 @@
                         userId: this.userId,
                         sessionId: this.sessionId,
                         token: i,
-                        maxSecureFramesVersion: b.default.getSupportedSecureFramesProtocolVersion(this.guildId),
-                        video: b.default.supports($.Features.VIDEO),
-                        streamParameters: b.default.getVideoStreamParameters(this.context)
-                    }), this.setState(J.RTCConnectionStates.AUTHENTICATING)
+                        maxSecureFramesVersion: U.default.getSupportedSecureFramesProtocolVersion(this.guildId),
+                        video: U.default.supports(J.Features.VIDEO),
+                        streamParameters: U.default.getVideoStreamParameters(this.context)
+                    }), this.setState(Z.RTCConnectionStates.AUTHENTICATING)
                 }
                 _handleDisconnect(e, t, n, i) {
                     var r, s, a, o, l, u;
-                    this.logger.info("Disconnected from RTC server, clean: ".concat(t, ", code: ").concat(n, ", reason: ").concat(i, ", state: ").concat(this.state)), !t && this._connecting && !this._encountered_socket_failure && (B.default.track(J.AnalyticEvents.VOICE_CONNECTION_SOCKET_FAILURE, {
+                    this.logger.info("Disconnected from RTC server, clean: ".concat(t, ", code: ").concat(n, ", reason: ").concat(i, ", state: ").concat(this.state)), !t && this._connecting && !this._encountered_socket_failure && (k.default.track(Z.AnalyticEvents.VOICE_CONNECTION_SOCKET_FAILURE, {
                         ...this._getAnalyticsProperties(),
                         hostname: this.hostname,
                         connect_count: this._connectCount,
                         code: n,
                         reason: i
-                    }), this._encountered_socket_failure = !0), G.default.getRemoteDisconnectVoiceChannelId() === this.channelId && (null === (l = this._connection) || void 0 === l || l.wasRemoteDisconnected());
+                    }), this._encountered_socket_failure = !0), b.default.getRemoteDisconnectVoiceChannelId() === this.channelId && (null === (l = this._connection) || void 0 === l || l.wasRemoteDisconnected());
                     let d = "Force Close" !== i;
                     if (d) {
                         let e = this._backoff.fail(this.reconnect);
                         this.logger.warn("Disconnect was not clean! reason=".concat(i, ". Reconnecting in ").concat((e / 1e3).toFixed(2), " seconds."))
                     }
-                    if (this.state !== J.RTCConnectionStates.DISCONNECTED) {
+                    if (this.state !== Z.RTCConnectionStates.DISCONNECTED) {
                         let e = this._videoQuality;
-                        null != e && this.context === $.MediaEngineContextTypes.DEFAULT && (e.stop(), this._sentVideo && e.getOutboundStats().forEach(t => {
+                        null != e && this.context === J.MediaEngineContextTypes.DEFAULT && (e.stop(), this._sentVideo && e.getOutboundStats().forEach(t => {
                             var n;
-                            (null !== (n = t.num_frames) && void 0 !== n ? n : 0) > 0 && B.default.track(J.AnalyticEvents.VIDEO_STREAM_ENDED, {
+                            (null !== (n = t.num_frames) && void 0 !== n ? n : 0) > 0 && k.default.track(Z.AnalyticEvents.VIDEO_STREAM_ENDED, {
                                 ...this._getAnalyticsProperties(),
                                 media_session_id: this.getMediaSessionId(),
                                 sender_user_id: this.userId,
                                 reason: i,
                                 participant_type: "sender",
-                                guild_region: k.default.getRegion(this.hostname),
+                                guild_region: w.default.getRegion(this.hostname),
                                 hostname: this.hostname,
-                                hardware_enabled: b.default.getHardwareH264(),
+                                hardware_enabled: U.default.getHardwareH264(),
                                 ...t,
                                 ...e.getNetworkStats(),
                                 ...e.getCodecUsageStats("sender", this.userId),
@@ -58178,24 +58170,24 @@
                         }), e.getInboundParticipants().forEach(t => {
                             var n;
                             let r = e.getInboundStats(t);
-                            (null !== (n = null == r ? void 0 : r.num_frames) && void 0 !== n ? n : 0) > 0 && B.default.track(J.AnalyticEvents.VIDEO_STREAM_ENDED, {
+                            (null !== (n = null == r ? void 0 : r.num_frames) && void 0 !== n ? n : 0) > 0 && k.default.track(Z.AnalyticEvents.VIDEO_STREAM_ENDED, {
                                 ...this._getAnalyticsProperties(),
                                 media_session_id: this.getMediaSessionId(),
                                 sender_user_id: t,
                                 reason: i,
                                 participant_type: "receiver",
-                                guild_region: k.default.getRegion(this.hostname),
+                                guild_region: w.default.getRegion(this.hostname),
                                 hostname: this.hostname,
-                                hardware_enabled: b.default.getHardwareH264(),
+                                hardware_enabled: U.default.getHardwareH264(),
                                 ...r,
                                 ...e.getNetworkStats(),
                                 ...e.getCodecUsageStats("receiver", t)
                             })
                         }));
-                        let t = k.default.shouldIncludePreferredRegion() ? k.default.getPreferredRegion() : null,
-                            n = b.default.getSettings(),
-                            r = U.default.getChannel(this.channelId);
-                        B.default.track(J.AnalyticEvents.VOICE_DISCONNECT, {
+                        let t = w.default.shouldIncludePreferredRegion() ? w.default.getPreferredRegion() : null,
+                            n = U.default.getSettings(),
+                            r = P.default.getChannel(this.channelId);
+                        k.default.track(Z.AnalyticEvents.VOICE_DISCONNECT, {
                             ...this._getAnalyticsProperties(),
                             hostname: this.hostname,
                             port: this.port,
@@ -58222,7 +58214,7 @@
                             ping_bad_count: this._pingBadCount,
                             ping_timeout: this._pingTimeouts.length,
                             input_detected: this._inputDetected,
-                            no_input_detected_notice: b.default.getNoInputDetectedNotice(),
+                            no_input_detected_notice: U.default.getNoInputDetectedNotice(),
                             audio_input_mode: n.mode,
                             automatic_audio_input_sensitivity_enabled: n.modeOptions.autoThreshold,
                             audio_input_sensitivity: n.modeOptions.threshold,
@@ -58241,10 +58233,10 @@
                             parent_media_session_id: this.parentMediaSessionId
                         });
                         let s = this.getMediaSessionId();
-                        b.default.getMediaEngine().getCodecSurvey().then(e => {
+                        U.default.getMediaEngine().getCodecSurvey().then(e => {
                             let t = JSON.parse(e);
                             if (null == t || null == t.available_video_encoders || null == t.available_video_decoders) throw Error("codec survey is not available");
-                            B.default.track(J.AnalyticEvents.VOICE_CODEC_DETECTED, {
+                            k.default.track(Z.AnalyticEvents.VOICE_CODEC_DETECTED, {
                                 ...t,
                                 rtc_connection_id: this.getRTCConnectionId(),
                                 media_session_id: s
@@ -58257,7 +58249,7 @@
                         let e = this._connection;
                         this._connection = null, e.destroy()
                     }
-                    this.setState(J.RTCConnectionStates.DISCONNECTED, {
+                    this.setState(Z.RTCConnectionStates.DISCONNECTED, {
                         willReconnect: d
                     })
                 }
@@ -58266,15 +58258,15 @@
                     null === (t = this._connection) || void 0 === t || t.fastUdpReconnect(), null === (n = this._connection) || void 0 === n || n.clearAllSpeaking()
                 }
                 _handleReady(e, t, n, i, r, s, a) {
-                    this.setState(J.RTCConnectionStates.RTC_CONNECTING), this.port = n, null != a && this._chooseExperiments(a), 0 === s.length && s.push({
-                        type: $.MediaTypes.VIDEO,
+                    this.setState(Z.RTCConnectionStates.RTC_CONNECTING), this.port = n, null != a && this._chooseExperiments(a), 0 === s.length && s.push({
+                        type: J.MediaTypes.VIDEO,
                         rid: "100",
                         ssrc: r + 1,
                         rtxSsrc: r + 2,
                         quality: 100,
                         active: !1
                     });
-                    let o = b.default.getMediaEngine(),
+                    let o = U.default.getMediaEngine(),
                         l = o.connect(this.context, this.userId, {
                             ssrc: r,
                             address: t,
@@ -58282,24 +58274,18 @@
                             modes: i,
                             experiments: this._selectedExperiments,
                             streamParameters: s,
-                            qosEnabled: b.default.getQoS(),
+                            qosEnabled: U.default.getQoS(),
                             ...this._getExtraConnectionOptions()
                         });
-                    if (l.setUseElectronVideo(o.supports($.Features.ELECTRON_VIDEO)), b.default.supports($.Features.IMAGE_QUALITY_MEASUREMENT)) {
+                    if (l.setUseElectronVideo(o.supports(J.Features.ELECTRON_VIDEO)), U.default.supports(J.Features.IMAGE_QUALITY_MEASUREMENT)) {
                         let {
                             enabled: e,
                             measurement: t
-                        } = M.default.getConfig(!0), {
-                            extraOptions: n
-                        } = y.default.getCurrentConfig({
-                            location: "handleReady"
-                        }, {
-                            autoTrackExposure: !0
-                        });
-                        e && l.setVideoQualityMeasurement(t + n)
+                        } = M.default.getConfig(!0);
+                        e && l.setVideoQualityMeasurement(t + ",hwdec")
                     }
                     let u = ["unk"];
-                    if (b.default.supports($.Features.AMD_EXPERIMENTAL_RATE_CONTROL) && u.push("amdRelaxRc"), this.context === $.MediaEngineContextTypes.STREAM) {
+                    if (U.default.supports(J.Features.AMD_EXPERIMENTAL_RATE_CONTROL) && u.push("amdRelaxRc"), this.context === J.MediaEngineContextTypes.STREAM) {
                         let {
                             nvMediumVbvSizeMs: e
                         } = D.default.getCurrentConfig({
@@ -58331,7 +58317,7 @@
                         }
                     }
                     l.setVideoEncoderExperiments(u.join(",")), l.on(c.BaseConnectionEvent.Speaking, (e, t, n) => {
-                        this.userId === e && this.sendSpeaking(t, n), this.emit(Y.RTCConnectionEvent.Speaking, e, t)
+                        this.userId === e && this.sendSpeaking(t, n), this.emit(H.RTCConnectionEvent.Speaking, e, t)
                     }), l.on(c.BaseConnectionEvent.ToggleMuteFromNative, () => {
                         let {
                             airpodsMuteSupported: e
@@ -58340,7 +58326,7 @@
                         }, {
                             autoTrackExposure: !0
                         });
-                        e && this.context === $.MediaEngineContextTypes.DEFAULT && T.default.toggleSelfMute({
+                        e && this.context === J.MediaEngineContextTypes.DEFAULT && T.default.toggleSelfMute({
                             playSoundEffect: !1
                         })
                     }), l.on(c.BaseConnectionEvent.NativeMuteChanged, e => {
@@ -58354,10 +58340,10 @@
                             rtxSsrc: r,
                             videoStreamParameters: s
                         }), this.userId === e && (this.sendVideo(null != n ? n : 0, null != i ? i : 0, null != r ? r : 0, s), null == s || s.forEach(t => {
-                            if (100 === t.quality) this.emit(Y.RTCConnectionEvent.VideoSourceQualityChanged, this.guildId, this.channelId, e, t.maxResolution, t.maxFrameRate, this.context)
+                            if (100 === t.quality) this.emit(H.RTCConnectionEvent.VideoSourceQualityChanged, this.guildId, this.channelId, e, t.maxResolution, t.maxFrameRate, this.context)
                         }))
                     }), l.on(c.BaseConnectionEvent.FirstFrame, (e, t, n) => {
-                        if (null != this._localMediaSinkWantsManager) this._localMediaSinkWantsManager.setFirstFrameReceived(t), this.emit(Y.RTCConnectionEvent.Video, this.guildId, this.channelId, e, n, this.rtcServerId)
+                        if (null != this._localMediaSinkWantsManager) this._localMediaSinkWantsManager.setFirstFrameReceived(t), this.emit(H.RTCConnectionEvent.Video, this.guildId, this.channelId, e, n, this.rtcServerId)
                     }), l.on(c.BaseConnectionEvent.Silence, e => {
                         this._inputDetected = this._inputDetected || !e
                     }), l.on(c.BaseConnectionEvent.Connected, (i, r) => {
@@ -58365,14 +58351,14 @@
                             this.logger.warn("Socket mismatch, disconnecting");
                             return
                         }
-                        switch (this._voiceQuality = new Z.default(l), this._voiceQuality.start(), this._voiceQualityPeriodicStatsSequenceId = 0, this._voiceQualityPeriodicStatsInterval = setInterval(this._handleVoiceQualityPeriodicsStats, 3e5), this._noiseCancellationError = 0, this._voiceDuration = new q.default(this.userId, l), this._voiceDuration.start(), this.protocol = i, i) {
+                        switch (this._voiceQuality = new q.default(l), this._voiceQuality.start(), this._voiceQualityPeriodicStatsSequenceId = 0, this._voiceQualityPeriodicStatsInterval = setInterval(this._handleVoiceQualityPeriodicsStats, 3e5), this._noiseCancellationError = 0, this._voiceDuration = new Q.default(this.userId, l), this._voiceDuration.start(), this.protocol = i, i) {
                             case "udp":
-                                this.logger.info("Sending UDP info to RTC server.", r, this._selectedExperiments), e.once(W.SocketEvent.Encryption, (e, t) => {
+                                this.logger.info("Sending UDP info to RTC server.", r, this._selectedExperiments), e.once(j.SocketEvent.Encryption, (e, t) => {
                                     l === this._connection && (l.setEncryption(e, t), this._encryptionMode = e)
                                 }), e.selectProtocol(i, this.getRTCConnectionId(), r, this._selectedExperiments);
                                 break;
                             case "webrtc":
-                                this.logger.info("Sending local SDP to RTC server."), e.once(W.SocketEvent.SDP, this._handleSDP.bind(this)), e.selectProtocol(i, this.getRTCConnectionId(), r);
+                                this.logger.info("Sending local SDP to RTC server."), e.once(j.SocketEvent.SDP, this._handleSDP.bind(this)), e.selectProtocol(i, this.getRTCConnectionId(), r);
                                 break;
                             default:
                                 this.logger.error("Unable to determine protocol.");
@@ -58386,8 +58372,8 @@
                         })
                     }), l.on(c.BaseConnectionEvent.Error, t => {
                         if (e !== this._socket) return;
-                        let n = k.default.shouldIncludePreferredRegion() ? k.default.getPreferredRegion() : null;
-                        this.logger.error("Error occurred while connecting to RTC server: ".concat(t)), B.default.track(J.AnalyticEvents.VOICE_CONNECTION_FAILURE, {
+                        let n = w.default.shouldIncludePreferredRegion() ? w.default.getPreferredRegion() : null;
+                        this.logger.error("Error occurred while connecting to RTC server: ".concat(t)), k.default.track(Z.AnalyticEvents.VOICE_CONNECTION_FAILURE, {
                             ...this._getAnalyticsProperties(),
                             hostname: this.hostname,
                             port: this.port,
@@ -58400,28 +58386,28 @@
                         if (this.logger.info("RTC media connection state change: ".concat(this.state, " => ").concat(t)), e !== this._socket) return;
                         let n = this.state;
                         switch (t) {
-                            case $.ConnectionStates.DISCONNECTED:
-                                this.setState(J.RTCConnectionStates.RTC_DISCONNECTED);
+                            case J.ConnectionStates.DISCONNECTED:
+                                this.setState(Z.RTCConnectionStates.RTC_DISCONNECTED);
                                 break;
-                            case $.ConnectionStates.CONNECTING:
-                                this.setState(J.RTCConnectionStates.RTC_CONNECTING);
+                            case J.ConnectionStates.CONNECTING:
+                                this.setState(Z.RTCConnectionStates.RTC_CONNECTING);
                                 break;
-                            case $.ConnectionStates.CONNECTED:
-                                this.setState(J.RTCConnectionStates.RTC_CONNECTED);
+                            case J.ConnectionStates.CONNECTED:
+                                this.setState(Z.RTCConnectionStates.RTC_CONNECTED);
                                 break;
-                            case $.ConnectionStates.NO_ROUTE:
-                                this.setState(J.RTCConnectionStates.NO_ROUTE);
+                            case J.ConnectionStates.NO_ROUTE:
+                                this.setState(Z.RTCConnectionStates.NO_ROUTE);
                                 break;
-                            case $.ConnectionStates.ICE_CHECKING:
-                                this.setState(J.RTCConnectionStates.ICE_CHECKING);
+                            case J.ConnectionStates.ICE_CHECKING:
+                                this.setState(Z.RTCConnectionStates.ICE_CHECKING);
                                 break;
-                            case $.ConnectionStates.DTLS_CONNECTING:
-                                this.setState(J.RTCConnectionStates.DTLS_CONNECTING)
+                            case J.ConnectionStates.DTLS_CONNECTING:
+                                this.setState(Z.RTCConnectionStates.DTLS_CONNECTING)
                         }
-                        if (n === J.RTCConnectionStates.RTC_CONNECTING && this.state === J.RTCConnectionStates.RTC_DISCONNECTED ? this.reconnect() : this.state === J.RTCConnectionStates.NO_ROUTE && this._backoff.fail(this.reconnect), this.state === J.RTCConnectionStates.RTC_CONNECTED) {
+                        if (n === Z.RTCConnectionStates.RTC_CONNECTING && this.state === Z.RTCConnectionStates.RTC_DISCONNECTED ? this.reconnect() : this.state === Z.RTCConnectionStates.NO_ROUTE && this._backoff.fail(this.reconnect), this.state === Z.RTCConnectionStates.RTC_CONNECTED) {
                             var i;
-                            let e = k.default.shouldIncludePreferredRegion() ? k.default.getPreferredRegion() : null;
-                            this._connecting && B.default.track(J.AnalyticEvents.VOICE_CONNECTION_SUCCESS, {
+                            let e = w.default.shouldIncludePreferredRegion() ? w.default.getPreferredRegion() : null;
+                            this._connecting && k.default.track(Z.AnalyticEvents.VOICE_CONNECTION_SUCCESS, {
                                 ...this._getAnalyticsProperties(),
                                 hostname: this.hostname,
                                 port: this.port,
@@ -58429,13 +58415,13 @@
                                 cloudflare_best_region: e,
                                 connect_time: (0, E.now)() - (this._connected ? this._connectStartTime : this._createdTime),
                                 connect_count: this._connectCount,
-                                audio_subsystem: b.default.getMediaEngine().getAudioSubsystem(),
-                                audio_layer: b.default.getMediaEngine().getAudioLayer(),
+                                audio_subsystem: U.default.getMediaEngine().getAudioSubsystem(),
+                                audio_layer: U.default.getMediaEngine().getAudioLayer(),
                                 media_session_id: this.getMediaSessionId(),
                                 ...this.stateHistory.getVoiceConnectionSuccessStats()
                             }), null === (i = this._localMediaSinkWantsManager) || void 0 === i || i.setConnection(l), this._connectCompletedTime = (0, E.now)(), this._connected = !0, this._connecting = !1, this._encountered_socket_failure = !1
-                        } else n === J.RTCConnectionStates.RTC_CONNECTED && this.stateHistory.reset(this.state)
-                    }), l.on(c.BaseConnectionEvent.Ping, this._handlePing.bind(this)), l.on(c.BaseConnectionEvent.PingTimeout, this._handlePingTimeout.bind(this)), l.on(c.BaseConnectionEvent.OutboundLossRate, this._handleOutboundLossRate.bind(this)), l.on(c.BaseConnectionEvent.SoundshareTrace, this._handleSoundshareTrace.bind(this)), l.on(c.BaseConnectionEvent.LocalVideoDisabled, this._handleLocalVideoDisabled.bind(this)), l.on(c.BaseConnectionEvent.Stats, H.default.create()), l.on(c.BaseConnectionEvent.RemoteStreamsReady, this._handleRemoteStreamsReady.bind(this)), l.on(c.BaseConnectionEvent.NoiseCancellationError, e => {
+                        } else n === Z.RTCConnectionStates.RTC_CONNECTED && this.stateHistory.reset(this.state)
+                    }), l.on(c.BaseConnectionEvent.Ping, this._handlePing.bind(this)), l.on(c.BaseConnectionEvent.PingTimeout, this._handlePingTimeout.bind(this)), l.on(c.BaseConnectionEvent.OutboundLossRate, this._handleOutboundLossRate.bind(this)), l.on(c.BaseConnectionEvent.SoundshareTrace, this._handleSoundshareTrace.bind(this)), l.on(c.BaseConnectionEvent.LocalVideoDisabled, this._handleLocalVideoDisabled.bind(this)), l.on(c.BaseConnectionEvent.Stats, x.default.create()), l.on(c.BaseConnectionEvent.RemoteStreamsReady, this._handleRemoteStreamsReady.bind(this)), l.on(c.BaseConnectionEvent.NoiseCancellationError, e => {
                         this._noiseCancellationError = e
                     }), l.setRemoteVideoSinkWants(this._remoteVideoSinkWants), this._connection = l
                 }
@@ -58443,7 +58429,7 @@
                     let r = this._connection;
                     if (null != r && this.userId !== t) {
                         var s;
-                        i !== $.SpeakingFlags.NONE && (r.createUser(t, n), I.default.dispatch({
+                        i !== J.SpeakingFlags.NONE && (r.createUser(t, n), I.default.dispatch({
                             type: "RTC_CONNECTION_USER_CREATE",
                             userId: t,
                             context: this.context
@@ -58451,14 +58437,14 @@
                     }
                 }
                 handleFlags(e, t) {
-                    this.emit(Y.RTCConnectionEvent.Flags, e, t)
+                    this.emit(H.RTCConnectionEvent.Flags, e, t)
                 }
                 handlePlatform(e, t) {
-                    this.emit(Y.RTCConnectionEvent.Platform, e, t, this.channelId)
+                    this.emit(H.RTCConnectionEvent.Platform, e, t, this.channelId)
                 }
                 getOrCreateVideoQuality() {
                     if (null != this._connection && null == this._videoQuality) {
-                        this._videoQuality = new Q.VideoQuality(this._connection), this._videoQuality.start();
+                        this._videoQuality = new X.VideoQuality(this._connection), this._videoQuality.start();
                         let {
                             featureEnabled: e,
                             windowLength: t,
@@ -58467,8 +58453,8 @@
                             backoffTimeSec: r
                         } = v.default.getConfig(!0);
                         if (e) {
-                            this._videoHealthManager = new X.VideoHealthManager(t, n, i, r), null != this._localMediaSinkWantsManager && (this._localMediaSinkWantsManager.videoHealthManager = this._videoHealthManager);
-                            this._videoQuality.on(Q.VideoQualityEvent.FpsUpdate, (e, t, n) => {
+                            this._videoHealthManager = new z.VideoHealthManager(t, n, i, r), null != this._localMediaSinkWantsManager && (this._localMediaSinkWantsManager.videoHealthManager = this._videoHealthManager);
+                            this._videoQuality.on(X.VideoQualityEvent.FpsUpdate, (e, t, n) => {
                                 var i, r;
                                 (null === (i = this._localMediaSinkWantsManager) || void 0 === i ? void 0 : i.shouldReceiveFromUser(e)) && (null === (r = this._videoHealthManager) || void 0 === r || r.updateFps(e, t, n))
                             })
@@ -58484,7 +58470,7 @@
                         videoSsrc: o,
                         videoStreamParameters: l
                     } = e;
-                    if (this.emit(Y.RTCConnectionEvent.Video, this.guildId, this.channelId, s, a, this.rtcServerId), null != a && null == this.getOrCreateVideoQuality() && this.logger.error("_handleVideoStreamId: Unable to create videoQuality."), null != this._videoQuality && this.userId === s && l.forEach(e => {
+                    if (this.emit(H.RTCConnectionEvent.Video, this.guildId, this.channelId, s, a, this.rtcServerId), null != a && null == this.getOrCreateVideoQuality() && this.logger.error("_handleVideoStreamId: Unable to create videoQuality."), null != this._videoQuality && this.userId === s && l.forEach(e => {
                             var t, n;
                             let i = null !== (t = e.ssrc) && void 0 !== t ? t : 0;
                             i > 0 && !0 === e.active && (null === (n = this._videoQuality) || void 0 === n || n.setOutboundSsrc(i))
@@ -58506,7 +58492,7 @@
                 }
                 _handleRemoteStreamsReady(e) {
                     let t = (0, E.now)() - this._connectStartTime;
-                    B.default.track(J.AnalyticEvents.VOICE_CONNECTION_REMOTE_STREAMS_CREATED, {
+                    k.default.track(Z.AnalyticEvents.VOICE_CONNECTION_REMOTE_STREAMS_CREATED, {
                         ...this._getAnalyticsProperties(),
                         number_of_users: e,
                         duration_ms: t
@@ -58518,7 +58504,7 @@
                         if (null != this._localMediaSinkWantsManager) {
                             this._localMediaSinkWantsManager.setAudioSSRC(t, n);
                             let e = r.map(e => ({
-                                type: $.MediaTypes.VIDEO,
+                                type: J.MediaTypes.VIDEO,
                                 rid: e.rid,
                                 ssrc: e.ssrc,
                                 rtxSsrc: e.rtxSsrc,
@@ -58526,7 +58512,7 @@
                                 active: i > 0
                             }));
                             0 === e.length && e.push({
-                                type: $.MediaTypes.VIDEO,
+                                type: J.MediaTypes.VIDEO,
                                 rid: "100",
                                 ssrc: i,
                                 rtxSsrc: i + 1,
@@ -58543,12 +58529,12 @@
                             null === (a = this._goLiveQualityManager) || void 0 === a || a.setUserID(t), null === (o = this._goLiveQualityManager) || void 0 === o || o.updateAudioAndVideoStreamInfo(n, e)
                         } else s.createUser(t, n, [i]);
                         null == r || r.forEach(e => {
-                            100 === e.quality && this.emit(Y.RTCConnectionEvent.VideoSourceQualityChanged, this.guildId, this.channelId, t, e.maxResolution, e.maxFrameRate, this.context)
+                            100 === e.quality && this.emit(H.RTCConnectionEvent.VideoSourceQualityChanged, this.guildId, this.channelId, t, e.maxResolution, e.maxFrameRate, this.context)
                         })
                     }
                 }
                 _handleControlPing(e) {
-                    !b.default.supports($.Features.NATIVE_PING) && this._handlePing(e)
+                    !U.default.supports(J.Features.NATIVE_PING) && this._handlePing(e)
                 }
                 _handlePing(e) {
                     if (void 0 !== e) {
@@ -58556,7 +58542,7 @@
                                 time: Date.now(),
                                 value: e
                             }); this._pings.length >= 200;) this._pings.shift();
-                        e > 500 && this._pingBadCount++, this.emit(Y.RTCConnectionEvent.Ping, this._pings, this.quality)
+                        e > 500 && this._pingBadCount++, this.emit(H.RTCConnectionEvent.Ping, this._pings, this.quality)
                     }
                 }
                 _handlePingTimeout(e, t) {
@@ -58565,13 +58551,13 @@
                     n >= 3 && this._pingTimeouts[n - 1] === this._pingTimeouts[n - 2] + 1 && this._pingTimeouts[n - 2] === this._pingTimeouts[n - 3] + 1 && this._handlePing(t)
                 }
                 _handleOutboundLossRate(e) {
-                    this._outboundLossRate = e, this.emit(Y.RTCConnectionEvent.OutboundLossRate, e)
+                    this._outboundLossRate = e, this.emit(H.RTCConnectionEvent.OutboundLossRate, e)
                 }
                 _handleSoundshareTrace(e) {
                     this._soundshareStats.traceEvent(void 0, e)
                 }
                 _getAnalyticsProperties() {
-                    let e = U.default.getChannel(this.channelId),
+                    let e = P.default.getChannel(this.channelId),
                         t = null != e ? e.type : null;
                     return {
                         guild_id: this.guildId,
@@ -58586,18 +58572,18 @@
                 _handleClientDisconnect(e) {
                     var t, n, i;
                     let r = this._videoQuality;
-                    if (null != r && this.context === $.MediaEngineContextTypes.DEFAULT) {
+                    if (null != r && this.context === J.MediaEngineContextTypes.DEFAULT) {
                         let t = r.getInboundStats(e),
                             s = null !== (n = null == t ? void 0 : t.num_frames) && void 0 !== n ? n : 0;
-                        null != t && s > 0 && (B.default.track(J.AnalyticEvents.VIDEO_STREAM_ENDED, {
+                        null != t && s > 0 && (k.default.track(Z.AnalyticEvents.VIDEO_STREAM_ENDED, {
                             ...this._getAnalyticsProperties(),
                             media_session_id: this.getMediaSessionId(),
                             sender_user_id: e,
                             reason: "User disconnected",
                             participant_type: "receiver",
-                            guild_region: k.default.getRegion(this.hostname),
+                            guild_region: w.default.getRegion(this.hostname),
                             hostname: this.hostname,
-                            hardware_enabled: b.default.getHardwareH264(),
+                            hardware_enabled: U.default.getHardwareH264(),
                             ...t,
                             ...r.getNetworkStats(),
                             ...r.getCodecUsageStats("receiver", e)
@@ -58608,7 +58594,7 @@
                 }
                 _handleCodecs(e, t) {
                     let n = this._connection;
-                    null != n && null != this.protocol ? n.setCodecs(null != e && "" !== e ? e : $.Codecs.OPUS, null != t && "" !== t ? t : $.Codecs.H264, this.context) : this.logger.warn("Cannot set codecs on connection with protocol:", this.protocol)
+                    null != n && null != this.protocol ? n.setCodecs(null != e && "" !== e ? e : J.Codecs.OPUS, null != t && "" !== t ? t : J.Codecs.H264, this.context) : this.logger.warn("Cannot set codecs on connection with protocol:", this.protocol)
                 }
                 _handleSDP(e) {
                     let t = this._connection;
@@ -58617,7 +58603,7 @@
                 async _handleMediaSessionId(e) {
                     this._mediaSessionId = e, this.logger.info("Setting media-session-id: ".concat(e, " for rtc-connection-id: ").concat(this.getRTCConnectionId()));
                     let t = await (0, m.default)();
-                    B.default.track(J.AnalyticEvents.MEDIA_SESSION_JOINED, {
+                    k.default.track(Z.AnalyticEvents.MEDIA_SESSION_JOINED, {
                         ...this._getAnalyticsProperties(),
                         media_session_id: this.getMediaSessionId(),
                         parent_media_session_id: this.parentMediaSessionId,
@@ -58648,7 +58634,7 @@
                     }
                 }
                 _trackSecureFrameTransition(e, t) {
-                    B.default.track(J.AnalyticEvents.SECURE_FRAMES_TRANSITION, {
+                    k.default.track(Z.AnalyticEvents.SECURE_FRAMES_TRANSITION, {
                         ...this._getAnalyticsProperties(),
                         media_session_id: this.getMediaSessionId(),
                         parent_media_session_id: this.parentMediaSessionId,
@@ -58723,7 +58709,7 @@
                     let {
                         enableSendingVoiceStats: t,
                         percentageOfCalls: n
-                    } = P.default.getCurrentConfig({
+                    } = y.default.getCurrentConfig({
                         location: "104dee_3"
                     }, {
                         autoTrackExposure: !1
@@ -58734,41 +58720,41 @@
                 }
                 getInputDeviceName() {
                     var e;
-                    let t = b.default.getInputDeviceId();
-                    return null === (e = b.default.getInputDevices()[t]) || void 0 === e ? void 0 : e.name
+                    let t = U.default.getInputDeviceId();
+                    return null === (e = U.default.getInputDevices()[t]) || void 0 === e ? void 0 : e.name
                 }
                 getOutputDeviceName() {
                     var e;
-                    let t = b.default.getOutputDeviceId();
-                    return null === (e = b.default.getOutputDevices()[t]) || void 0 === e ? void 0 : e.name
+                    let t = U.default.getOutputDeviceId();
+                    return null === (e = U.default.getOutputDevices()[t]) || void 0 === e ? void 0 : e.name
                 }
                 getGoLiveSource() {
-                    return b.default.getGoLiveSource()
+                    return U.default.getGoLiveSource()
                 }
                 constructor({
                     userId: e,
                     sessionId: t,
                     guildId: n,
                     channelId: i,
-                    context: r = $.MediaEngineContextTypes.DEFAULT,
+                    context: r = J.MediaEngineContextTypes.DEFAULT,
                     rtcServerId: s,
                     parentMediaSessionId: a
                 }) {
                     var o, l;
-                    if (super(), ee(this, "context", void 0), ee(this, "userId", void 0), ee(this, "sessionId", void 0), ee(this, "guildId", void 0), ee(this, "parentMediaSessionId", void 0), ee(this, "hostname", void 0), ee(this, "state", void 0), ee(this, "_videoQuality", void 0), ee(this, "_soundshareStats", void 0), ee(this, "logger", void 0), ee(this, "rtcServerId", void 0), ee(this, "_channelId", void 0), ee(this, "channelIds", void 0), ee(this, "_endpoint", void 0), ee(this, "port", void 0), ee(this, "token", void 0), ee(this, "protocol", void 0), ee(this, "voiceVersion", void 0), ee(this, "rtcWorkerVersion", void 0), ee(this, "_socket", void 0), ee(this, "_backoff", void 0), ee(this, "_destroyed", void 0), ee(this, "_pings", void 0), ee(this, "_pingBadCount", void 0), ee(this, "_pingTimeouts", void 0), ee(this, "_mediaSessionId", void 0), ee(this, "_voiceQuality", void 0), ee(this, "_voiceQualityPeriodicStatsInterval", void 0), ee(this, "_voiceQualityPeriodicStatsSequenceId", void 0), ee(this, "_noiseCancellationError", void 0), ee(this, "_voiceDuration", void 0), ee(this, "_videoHealthManager", void 0), ee(this, "_sentVideo", void 0), ee(this, "_outboundLossRate", void 0), ee(this, "_recordingEnabled", void 0), ee(this, "_selectedExperiments", void 0), ee(this, "_localMediaSinkWantsManager", void 0), ee(this, "_goLiveQualityManager", void 0), ee(this, "_remoteVideoSinkWants", void 0), ee(this, "_connection", void 0), ee(this, "_createdTime", void 0), ee(this, "_connectStartTime", void 0), ee(this, "_connectCompletedTime", void 0), ee(this, "_rtcConnectionId", void 0), ee(this, "_connectCount", void 0), ee(this, "_connected", void 0), ee(this, "_connecting", void 0), ee(this, "_encountered_socket_failure", void 0), ee(this, "_inputDetected", void 0), ee(this, "_encryptionMode", void 0), ee(this, "stateHistory", void 0), ee(this, "_supportedBandwidthEstimationExperiments", void 0), ee(this, "_bandwidthEstimationExperiment", void 0), ee(this, "powerMonitorListener", void 0), ee(this, "reconnect", () => {
+                    if (super(), $(this, "context", void 0), $(this, "userId", void 0), $(this, "sessionId", void 0), $(this, "guildId", void 0), $(this, "parentMediaSessionId", void 0), $(this, "hostname", void 0), $(this, "state", void 0), $(this, "_videoQuality", void 0), $(this, "_soundshareStats", void 0), $(this, "logger", void 0), $(this, "rtcServerId", void 0), $(this, "_channelId", void 0), $(this, "channelIds", void 0), $(this, "_endpoint", void 0), $(this, "port", void 0), $(this, "token", void 0), $(this, "protocol", void 0), $(this, "voiceVersion", void 0), $(this, "rtcWorkerVersion", void 0), $(this, "_socket", void 0), $(this, "_backoff", void 0), $(this, "_destroyed", void 0), $(this, "_pings", void 0), $(this, "_pingBadCount", void 0), $(this, "_pingTimeouts", void 0), $(this, "_mediaSessionId", void 0), $(this, "_voiceQuality", void 0), $(this, "_voiceQualityPeriodicStatsInterval", void 0), $(this, "_voiceQualityPeriodicStatsSequenceId", void 0), $(this, "_noiseCancellationError", void 0), $(this, "_voiceDuration", void 0), $(this, "_videoHealthManager", void 0), $(this, "_sentVideo", void 0), $(this, "_outboundLossRate", void 0), $(this, "_recordingEnabled", void 0), $(this, "_selectedExperiments", void 0), $(this, "_localMediaSinkWantsManager", void 0), $(this, "_goLiveQualityManager", void 0), $(this, "_remoteVideoSinkWants", void 0), $(this, "_connection", void 0), $(this, "_createdTime", void 0), $(this, "_connectStartTime", void 0), $(this, "_connectCompletedTime", void 0), $(this, "_rtcConnectionId", void 0), $(this, "_connectCount", void 0), $(this, "_connected", void 0), $(this, "_connecting", void 0), $(this, "_encountered_socket_failure", void 0), $(this, "_inputDetected", void 0), $(this, "_encryptionMode", void 0), $(this, "stateHistory", void 0), $(this, "_supportedBandwidthEstimationExperiments", void 0), $(this, "_bandwidthEstimationExperiment", void 0), $(this, "powerMonitorListener", void 0), $(this, "reconnect", () => {
                             let e = this._socket;
                             null != e && (this._connected && (this._connectStartTime = (0, E.now)()), !this._connecting && (this._trackVoiceConnectionConnecting(), this._connecting = !0, this._encountered_socket_failure = !1), this._connectCount++, e.close(), e.connect())
-                        }), ee(this, "_handleNetworkOnline", () => {
+                        }), $(this, "_handleNetworkOnline", () => {
                             this.expeditedHeartbeat(5e3, "network detected online.")
-                        }), ee(this, "_handleNetworkOffline", () => {
+                        }), $(this, "_handleNetworkOffline", () => {
                             this.expeditedHeartbeat(15e3, "network detected offline.", !1)
-                        }), ee(this, "_handlePowerResume", () => {
+                        }), $(this, "_handlePowerResume", () => {
                             this.expeditedHeartbeat(5e3, "power monitor resumed")
-                        }), ee(this, "_handleVoiceQualityPeriodicsStats", () => {
+                        }), $(this, "_handleVoiceQualityPeriodicsStats", () => {
                             if (null != this._voiceQuality) {
                                 let e = this._voiceQuality.getPeriodicStats();
                                 if (this.shouldReportPeriodicStats(e))
-                                    for (let t of e) B.default.track(J.AnalyticEvents.VOICE_QUALITY_PERIODIC_STATS, {
+                                    for (let t of e) k.default.track(Z.AnalyticEvents.VOICE_QUALITY_PERIODIC_STATS, {
                                         ...this._getAnalyticsProperties(),
                                         media_session_id: this.getMediaSessionId(),
                                         sender_user_id: t.userId,
@@ -58794,10 +58780,10 @@
                                     });
                                 this._voiceQualityPeriodicStatsSequenceId++
                             }
-                        }), ee(this, "_trackVoiceConnectionConnecting", () => {
-                            let e = U.default.getChannel(this.channelId),
+                        }), $(this, "_trackVoiceConnectionConnecting", () => {
+                            let e = P.default.getChannel(this.channelId),
                                 t = null != e ? e.type : null;
-                            B.default.track(J.AnalyticEvents.VOICE_CONNECTION_CONNECTING, {
+                            k.default.track(Z.AnalyticEvents.VOICE_CONNECTION_CONNECTING, {
                                 guild_id: this.guildId,
                                 channel_id: this.channelId,
                                 rtc_connection_id: this.getRTCConnectionId(),
@@ -58806,19 +58792,19 @@
                                 context: this.context,
                                 channel_type: t
                             })
-                        }), this.context = r, this.logger = new h.default("RTCConnection(".concat(null !== (o = null != s ? s : n) && void 0 !== o ? o : i, ", ").concat(this.context, ")")), this.userId = e, this.sessionId = t, this.guildId = n, this._channelId = i, this.channelIds = new Set([i]), this.rtcServerId = s, this.parentMediaSessionId = a, this._endpoint = null, this.hostname = null, this.port = null, this.token = null, this.voiceVersion = null, this.rtcWorkerVersion = null, this.state = J.RTCConnectionStates.AWAITING_ENDPOINT, this.stateHistory = new j.StateHistory(this.state), this._socket = null, this._backoff = new d.default(1e3, 1e4), this._destroyed = !1, this._pings = [], this._pingBadCount = 0, this._pingTimeouts = [], this._mediaSessionId = null, this._voiceQuality = null, this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._noiseCancellationError = 0, this._voiceDuration = null, this._videoQuality = null, this._videoHealthManager = null, this._sentVideo = !1, this._outboundLossRate = null, this._createdTime = (0, E.now)(), this._connectStartTime = 0, this._connectCompletedTime = 0, this._rtcConnectionId = (0, u.v4)(), this._connectCount = 0, this._connected = !1, this._connecting = !1, this._encountered_socket_failure = !1, this._inputDetected = !1, this._selectedExperiments = [], r === $.MediaEngineContextTypes.DEFAULT) {
-                        let t = b.default.supports($.Features.FIRST_FRAME_CALLBACK) && b.default.supports($.Features.REMOTE_USER_MULTI_STREAM),
-                            n = (null === (l = U.default.getChannel(this.channelId)) || void 0 === l ? void 0 : l.type) === J.ChannelTypes.GUILD_STAGE_VOICE;
-                        this._localMediaSinkWantsManager = new K.default(e, n, t), this._localMediaSinkWantsManager.on(K.RTCMediaSinkWantsManagerEvent.Update, e => {
-                            if (this.state === J.RTCConnectionStates.RTC_CONNECTED && null != this._socket) {
+                        }), this.context = r, this.logger = new h.default("RTCConnection(".concat(null !== (o = null != s ? s : n) && void 0 !== o ? o : i, ", ").concat(this.context, ")")), this.userId = e, this.sessionId = t, this.guildId = n, this._channelId = i, this.channelIds = new Set([i]), this.rtcServerId = s, this.parentMediaSessionId = a, this._endpoint = null, this.hostname = null, this.port = null, this.token = null, this.voiceVersion = null, this.rtcWorkerVersion = null, this.state = Z.RTCConnectionStates.AWAITING_ENDPOINT, this.stateHistory = new Y.StateHistory(this.state), this._socket = null, this._backoff = new d.default(1e3, 1e4), this._destroyed = !1, this._pings = [], this._pingBadCount = 0, this._pingTimeouts = [], this._mediaSessionId = null, this._voiceQuality = null, this._voiceQualityPeriodicStatsInterval = null, this._voiceQualityPeriodicStatsSequenceId = 0, this._noiseCancellationError = 0, this._voiceDuration = null, this._videoQuality = null, this._videoHealthManager = null, this._sentVideo = !1, this._outboundLossRate = null, this._createdTime = (0, E.now)(), this._connectStartTime = 0, this._connectCompletedTime = 0, this._rtcConnectionId = (0, u.v4)(), this._connectCount = 0, this._connected = !1, this._connecting = !1, this._encountered_socket_failure = !1, this._inputDetected = !1, this._selectedExperiments = [], r === J.MediaEngineContextTypes.DEFAULT) {
+                        let t = U.default.supports(J.Features.FIRST_FRAME_CALLBACK) && U.default.supports(J.Features.REMOTE_USER_MULTI_STREAM),
+                            n = (null === (l = P.default.getChannel(this.channelId)) || void 0 === l ? void 0 : l.type) === Z.ChannelTypes.GUILD_STAGE_VOICE;
+                        this._localMediaSinkWantsManager = new W.default(e, n, t), this._localMediaSinkWantsManager.on(W.RTCMediaSinkWantsManagerEvent.Update, e => {
+                            if (this.state === Z.RTCConnectionStates.RTC_CONNECTED && null != this._socket) {
                                 var t;
                                 this.logger.info("Media sink wants: ".concat(JSON.stringify(e))), this._socket.mediaSinkWants(e), null === (t = this._connection) || void 0 === t || t.setLocalVideoSinkWants(e)
                             }
-                        }), this._localMediaSinkWantsManager.on(K.RTCMediaSinkWantsManagerEvent.UserSSRCUpdate, (e, t, n) => {
+                        }), this._localMediaSinkWantsManager.on(W.RTCMediaSinkWantsManagerEvent.UserSSRCUpdate, (e, t, n) => {
                             var i;
                             null === (i = this._connection) || void 0 === i || i.createUser(e, t, n)
                         })
-                    } else r === $.MediaEngineContextTypes.STREAM && R.default.getCurrentConfig({
+                    } else r === J.MediaEngineContextTypes.STREAM && R.default.getCurrentConfig({
                         location: "RTCConnection"
                     }, {
                         autoTrackExposure: !1
@@ -58826,12 +58812,12 @@
                         var i;
                         null === (i = this._connection) || void 0 === i || i.createUser(e, t, n)
                     }), this._goLiveQualityManager.on(N.GoLiveQualityManagerEvent.RequestedStreamsUpdate, e => {
-                        if (this.state === J.RTCConnectionStates.RTC_CONNECTED && null != this._socket) {
+                        if (this.state === Z.RTCConnectionStates.RTC_CONNECTED && null != this._socket) {
                             var t;
                             this.logger.info("Go Live Media sink wants: ".concat(JSON.stringify(e))), this._socket.mediaSinkWants(e), null === (t = this._connection) || void 0 === t || t.setLocalVideoSinkWants(e)
                         }
                     }));
-                    this._remoteVideoSinkWants = K.DEFAULT_WANTS_FULL, w.default.shouldRecordNextConnection() ? (this._recordingEnabled = !0, f.setShouldRecordNextConnection(!1)) : this._recordingEnabled = !1, this._soundshareStats = new z.default, F.default.addOnlineCallback(this._handleNetworkOnline), F.default.addOfflineCallback(this._handleNetworkOffline), (0, V.isDesktop)() && (this.powerMonitorListener = x.default.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, b.default.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
+                    this._remoteVideoSinkWants = W.DEFAULT_WANTS_FULL, G.default.shouldRecordNextConnection() ? (this._recordingEnabled = !0, f.setShouldRecordNextConnection(!1)) : this._recordingEnabled = !1, this._soundshareStats = new K.default, B.default.addOnlineCallback(this._handleNetworkOnline), B.default.addOfflineCallback(this._handleNetworkOffline), (0, F.isDesktop)() && (this.powerMonitorListener = V.default.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, U.default.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
                         this._supportedBandwidthEstimationExperiments = e
                     })
                 }
@@ -60218,14 +60204,16 @@
             class a {
                 getStats() {
                     let e = this.cpuHistogram.getReport(),
-                        t = this.memoryHistogram.getReport();
+                        t = this.memoryHistogram.getReport(),
+                        n = i.default.getCumulativeCPUUsage(),
+                        r = null == this.startCPU || null == n ? void 0 : (n.usage - this.startCPU.usage) * 100 / ((n.sampleTime - this.startCPU.sampleTime) / 1e3);
                     return {
                         client_performance_cpu_percentile25: e.percentiles[25],
                         client_performance_cpu_percentile50: e.percentiles[50],
                         client_performance_cpu_percentile75: e.percentiles[75],
                         client_performance_cpu_percentile90: e.percentiles[90],
                         client_performance_cpu_percentile95: e.percentiles[95],
-                        client_performance_cpu_mean: e.mean,
+                        client_performance_cpu_mean: null != r ? r : e.mean,
                         client_performance_memory_percentile25: t.percentiles[25],
                         client_performance_memory_percentile50: t.percentiles[50],
                         client_performance_memory_percentile75: t.percentiles[75],
@@ -60237,12 +60225,26 @@
                     }
                 }
                 takeSample() {
-                    let e = i.default.getCurrentCPUUsagePercent(),
+                    let e = i.default.getCumulativeCPUUsage(),
                         t = i.default.getCurrentMemoryUsageKB();
-                    null != e && this.cpuHistogram.addSample(e), null != t && this.memoryHistogram.addSample(t)
+                    if (null != e) {
+                        let t = !0;
+                        if (null != this.lastCPU) {
+                            let n = e.sampleTime - this.lastCPU.sampleTime;
+                            if (n >= 1) {
+                                let t = e.usage - this.lastCPU.usage;
+                                this.cpuHistogram.addSample(t / (n / 1e3) * 100, n)
+                            } else t = !1
+                        }
+                        t && (this.lastCPU = e)
+                    } else {
+                        let e = i.default.getCurrentCPUUsagePercent();
+                        null != e && this.cpuHistogram.addSample(e)
+                    }
+                    null != t && this.memoryHistogram.addSample(t)
                 }
                 constructor() {
-                    s(this, "cpuHistogram", new r.Histogram), s(this, "memoryHistogram", new r.Histogram)
+                    s(this, "cpuHistogram", new r.Histogram), s(this, "memoryHistogram", new r.Histogram), s(this, "startCPU", i.default.getCumulativeCPUUsage()), s(this, "lastCPU", this.startCPU)
                 }
             }
         },
@@ -61584,9 +61586,10 @@
                     path: A,
                     hostname: p = "",
                     host: g,
-                    query: v
-                } = i.parse(e), M = R.default.isDiscordHostname(p) || R.default.isDiscordLocalhost(g, p);
-                if (M && (null == A ? void 0 : A.startsWith("/application-directory"))) {
+                    query: v,
+                    hash: M
+                } = i.parse(e), y = R.default.isDiscordHostname(p) || R.default.isDiscordLocalhost(g, p);
+                if (y && (null == A ? void 0 : A.startsWith("/application-directory"))) {
                     let [, , e, t] = A.split("/"), i = null != e && (0, l.isSnowflake)(e) ? e : void 0;
                     return s => {
                         var a;
@@ -61617,30 +61620,28 @@
                         }), !0
                     }
                 }
-                if (null != A && M && R.default.isAppRoute(A)) {
-                    let e = null != v ? {
-                        search: v
-                    } : null;
-                    return t => (null == t || t.preventDefault(), (0, f.default)(A, e), !0)
+                if (null != A && y && R.default.isAppRoute(A)) {
+                    let e = {};
+                    return null != v && (e.search = v), null != M && (e.hash = M), t => (null == t || t.preventDefault(), (0, f.default)(A, Object.keys(e).length > 0 ? e : null), !0)
                 }
-                if (null != A && M) {
+                if (null != A && y) {
                     let {
                         getOAuth2AuthorizeProps: t,
                         openOAuth2ModalWithCreateGuildModal: i
                     } = n("69580"), r = t(e);
                     if (null != r) return e => (null == e || e.preventDefault(), i(r), !0)
                 }
-                let y = (0, T.tryParseEventDetailsPath)(A);
-                if (null != A && M && null != y) return e => {
+                let P = (0, T.tryParseEventDetailsPath)(A);
+                if (null != A && y && null != P) return e => {
                     null == e || e.preventDefault();
                     let t = N.default.getGuildId();
-                    null != y.guildId && "" !== y.guildId && y.guildId !== t && (0, f.default)(C.Routes.CHANNEL(y.guildId));
-                    let n = E.default.getGuildScheduledEvent(y.guildEventId);
+                    null != P.guildId && "" !== P.guildId && P.guildId !== t && (0, f.default)(C.Routes.CHANNEL(P.guildId));
+                    let n = E.default.getGuildScheduledEvent(P.guildEventId);
                     return null != n && (0, c.openGuildEventDetails)({
                         eventId: n.id
                     }), !0
                 };
-                if (M && (null == A ? void 0 : A.startsWith("/settings/"))) {
+                if (y && (null == A ? void 0 : A.startsWith("/settings/"))) {
                     let {
                         default: e
                     } = n("357269"), t = e(A);
@@ -86812,8 +86813,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287392", "287392"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287392")), t = 0), t
+                let t = parseInt((e = "287499", "287499"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287499")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111805,8 +111806,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287392",
-                    versionHash: "0bbba1867a399cd40ac61e7f2c710ff4eea996e9"
+                    buildNumber: "287499",
+                    versionHash: "32f40c7b1d0c7605ac0efe938ff857260d5a01a9"
                 }
             }
             n.r(t), n.d(t, {
@@ -155870,7 +155871,7 @@
                     return
                 }
                 if (null == _) {
-                    (0, r.transitionTo)(e);
+                    (0, r.transitionTo)(e, t, n);
                     return
                 }
                 let c = function(e) {
@@ -159785,56 +159786,6 @@
                     return !this.isFeatureSupportedOnPlatform() && (t.enabled = !1), t
                 }
             }
-        },
-        794269: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var i = n("818083");
-            t.default = (0, i.createExperiment)({
-                kind: "user",
-                id: "2023-11_video_quality_measurement_hwdec",
-                label: "Video Quality Measurement Hardware Decoding",
-                defaultConfig: {
-                    extraOptions: ""
-                },
-                treatments: [{
-                    id: 0,
-                    label: "Control",
-                    config: {
-                        extraOptions: ""
-                    }
-                }, {
-                    id: 1,
-                    label: "Enabled, default 500ms buffer",
-                    config: {
-                        extraOptions: ",hwdec"
-                    }
-                }, {
-                    id: 2,
-                    label: "Enabled, 750ms buffer",
-                    config: {
-                        extraOptions: ",hwdec,staleFrameThresholdMs:750"
-                    }
-                }, {
-                    id: 3,
-                    label: "Enabled, 1s buffer",
-                    config: {
-                        extraOptions: ",hwdec,staleFrameThresholdMs:1000"
-                    }
-                }, {
-                    id: 4,
-                    label: "Disabled, 750ms buffer",
-                    config: {
-                        extraOptions: ",staleFrameThresholdMs:750"
-                    }
-                }, {
-                    id: 5,
-                    label: "Disabled, 1s buffer",
-                    config: {
-                        extraOptions: ",staleFrameThresholdMs:1000"
-                    }
-                }]
-            })
         },
         636458: function(e, t, n) {
             "use strict";
@@ -165715,8 +165666,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713919338476",
-                                    build_number: "287392"
+                                    built_at: "1713977953002",
+                                    build_number: "287499"
                                 }
                             },
                             retries: 1
@@ -240875,29 +240826,22 @@
 
             function N(e) {
                 let {
-                    storeListings: t
-                } = e;
-                for (let e of t) m(e)
-            }
-
-            function p(e) {
-                let {
                     entitlements: t
                 } = e;
                 for (let e of t) null != e.sku && h(e.sku)
             }
 
-            function O() {
+            function p() {
                 E = new Set, I = new Set, T = new Map, f = new Map, S = new Map
             }
 
-            function R() {
+            function O() {
                 if (i === d.default.locale) return !1;
-                i = d.default.locale, O()
+                i = d.default.locale, p()
             }
-            class C extends(r = l.Store) {
+            class R extends(r = l.Store) {
                 initialize() {
-                    this.waitFor(d.default, c.default), this.syncWith([d.default], R), i = d.default.locale
+                    this.waitFor(d.default, c.default), this.syncWith([d.default], O), i = d.default.locale
                 }
                 get(e) {
                     return T.get(e)
@@ -240916,14 +240860,18 @@
                     return I.has(e)
                 }
             }
-            o = "SKUStore", (a = "displayName") in(s = C) ? Object.defineProperty(s, a, {
+            o = "SKUStore", (a = "displayName") in(s = R) ? Object.defineProperty(s, a, {
                 value: o,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : s[a] = o, t.default = new C(u.default, {
-                STORE_LISTINGS_FETCH_SUCCESS: N,
-                APPLICATION_STORE_DIRECTORY_FETCH_SUCCESS: N,
+            }) : s[a] = o, t.default = new R(u.default, {
+                STORE_LISTINGS_FETCH_SUCCESS: function(e) {
+                    let {
+                        storeListings: t
+                    } = e;
+                    for (let e of t) m(e)
+                },
                 STORE_LISTING_FETCH_SUCCESS: function(e) {
                     let {
                         storeListing: t
@@ -240963,10 +240911,10 @@
                     for (let e of n) A(e);
                     null != t && S.set(t, new Set(n.map(e => e.id)))
                 },
-                ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: p,
-                APPLICATION_STORE_CLEAR_DATA: O,
-                APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: p,
-                ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: p
+                ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: N,
+                APPLICATION_STORE_CLEAR_DATA: p,
+                APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: N,
+                ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: N
             })
         },
         551428: function(e, t, n) {
@@ -240995,24 +240943,17 @@
                 return "".concat(e, ":").concat(t)
             }
 
-            function A(e) {
-                let {
-                    storeListings: t
-                } = e;
-                for (let e of t) S(e)
-            }
-
-            function m() {
+            function A() {
                 E = {}, f = {}, T = {}, I = {}
             }
 
-            function N() {
+            function m() {
                 if (i === d.default.locale) return !1;
-                m(), i = d.default.locale
+                A(), i = d.default.locale
             }
-            class p extends(r = l.default.Store) {
+            class N extends(r = l.default.Store) {
                 initialize() {
-                    this.waitFor(d.default), this.syncWith([d.default], N), i = d.default.locale
+                    this.waitFor(d.default), this.syncWith([d.default], m), i = d.default.locale
                 }
                 get(e) {
                     return E[e]
@@ -241048,14 +240989,18 @@
                     return null
                 }
             }
-            o = "StoreListingStore", (a = "displayName") in(s = p) ? Object.defineProperty(s, a, {
+            o = "StoreListingStore", (a = "displayName") in(s = N) ? Object.defineProperty(s, a, {
                 value: o,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : s[a] = o, t.default = new p(u.default, {
-                STORE_LISTINGS_FETCH_SUCCESS: A,
-                APPLICATION_STORE_DIRECTORY_FETCH_SUCCESS: A,
+            }) : s[a] = o, t.default = new N(u.default, {
+                STORE_LISTINGS_FETCH_SUCCESS: function(e) {
+                    let {
+                        storeListings: t
+                    } = e;
+                    for (let e of t) S(e)
+                },
                 STORE_LISTING_FETCH_SUCCESS: function(e) {
                     let {
                         storeListing: t,
@@ -241066,8 +241011,8 @@
                         I[h(n, e.skuId)] = e, f[e.skuId] = e.id
                     } else S(t)
                 },
-                USER_SETTINGS_PROTO_UPDATE: N,
-                APPLICATION_STORE_CLEAR_DATA: m,
+                USER_SETTINGS_PROTO_UPDATE: m,
+                APPLICATION_STORE_CLEAR_DATA: A,
                 GIFT_CODE_RESOLVE_SUCCESS: function(e) {
                     let {
                         giftCode: t
@@ -243419,7 +243364,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0bbba1867a399cd40ac61e7f2c710ff4eea996e9"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "32f40c7b1d0c7605ac0efe938ff857260d5a01a9"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -271943,7 +271888,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287392"
+                                build_number: "287499"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -274725,6 +274670,10 @@
                 getCurrentCPUUsagePercent() {
                     var e, t;
                     return null === r.default || void 0 === r.default ? void 0 : null === (t = r.default.processUtils) || void 0 === t ? void 0 : null === (e = t.getCurrentCPUUsagePercent) || void 0 === e ? void 0 : e.call(t)
+                }
+                getCumulativeCPUUsage() {
+                    var e, t;
+                    return null === r.default || void 0 === r.default ? void 0 : null === (t = r.default.processUtils) || void 0 === t ? void 0 : null === (e = t.getCumulativeCPUUsage) || void 0 === e ? void 0 : e.call(t)
                 }
                 getCurrentMemoryUsageKB() {
                     let e = l.getCurrentMemoryUsageKBCore();
@@ -279129,7 +279078,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287392", "287392"), 10);
+                let s = parseInt((n = "287499", "287499"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -299259,7 +299208,7 @@
                 g = n("381499"),
                 L = n("835913"),
                 D = n("397696");
-            (I = i || (i = {}))[I.UNSPECIFIED = 0] = "UNSPECIFIED", I[I.MENTIONS = 1] = "MENTIONS", I[I.UNREADS = 2] = "UNREADS", I[I.TODOS = 3] = "TODOS", I[I.FOR_YOU = 4] = "FOR_YOU", I[I.GAME_INVITES = 5] = "GAME_INVITES", (T = r || (r = {}))[T.NO_PROGRESS = 0] = "NO_PROGRESS", T[T.JOIN_GUILD = 1] = "JOIN_GUILD", T[T.INVITE_USER = 2] = "INVITE_USER", T[T.CONTACT_SYNC = 4] = "CONTACT_SYNC", (f = s || (s = {}))[f.NO_GUILD_ONBOARDING = 0] = "NO_GUILD_ONBOARDING", f[f.GUILD_NOTICE_SHOWN = 1] = "GUILD_NOTICE_SHOWN", f[f.GUILD_NOTICE_CLEARED = 2] = "GUILD_NOTICE_CLEARED", (S = a || (a = {}))[S.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = 0] = "DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE", S[S.CLYDE_GUILD_NOTICE_NUX = 1] = "CLYDE_GUILD_NOTICE_NUX", S[S.SUMMARIES_NOTICE = 2] = "SUMMARIES_NOTICE", S[S.SUMMARIES_ENABLED_NOTICE = 3] = "SUMMARIES_ENABLED_NOTICE", S[S.ADOPT_CLAN_IDENTITY_NOTICE = 4] = "ADOPT_CLAN_IDENTITY_NOTICE", (h = o || (o = {}))[h.HUB_WAITLIST_UPSELL = 0] = "HUB_WAITLIST_UPSELL", h[h.APPLICATION_COMMAND_TOOLTIP = 1] = "APPLICATION_COMMAND_TOOLTIP", h[h.HUB_EVENT_HEADER_UPSELL = 2] = "HUB_EVENT_HEADER_UPSELL", h[h.CHANNELINFO_CHANNELBANNER_NOTICE = 3] = "CHANNELINFO_CHANNELBANNER_NOTICE", h[h.ACCOUNT_MULTIACCOUNT_TOOLTIP = 4] = "ACCOUNT_MULTIACCOUNT_TOOLTIP", h[h.SEASONALGIFTING_CHANNELBUTTON_POPUP = 5] = "SEASONALGIFTING_CHANNELBUTTON_POPUP", h[h.CHANNEL_NOTICE_INVITE = 6] = "CHANNEL_NOTICE_INVITE", h[h.CHANNEL_NOTICE_HUBLINK = 7] = "CHANNEL_NOTICE_HUBLINK", h[h.CHANNEL_NOTICE_QUICKSWITCHER = 8] = "CHANNEL_NOTICE_QUICKSWITCHER", h[h.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION = 9] = "CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION", h[h.CHANNEL_NOTICE_GUILD_BANNER = 11] = "CHANNEL_NOTICE_GUILD_BANNER", h[h.GUILD_HEADER_EVENT_UPSELL = 12] = "GUILD_HEADER_EVENT_UPSELL", h[h.GUILD_HEADER_PREMIUM_GUILD_PROGRESS = 14] = "GUILD_HEADER_PREMIUM_GUILD_PROGRESS", h[h.GUILD_HEADER_ANIMATED_GUILD_BANNER = 15] = "GUILD_HEADER_ANIMATED_GUILD_BANNER", h[h.NAGBAR_NOTICE_DOWNLOAD = 16] = "NAGBAR_NOTICE_DOWNLOAD", h[h.NAGBAR_NOTICE_CONNECT_SPOTIFY = 17] = "NAGBAR_NOTICE_CONNECT_SPOTIFY", h[h.NAGBAR_NOTICE_CONNECT_PLAYSTATION = 18] = "NAGBAR_NOTICE_CONNECT_PLAYSTATION", h[h.NAGBAR_NOTICE_MFA_SMS_BACKUP = 19] = "NAGBAR_NOTICE_MFA_SMS_BACKUP", h[h.ACTIVITIES_SUNSET_COACH_MARK = 20] = "ACTIVITIES_SUNSET_COACH_MARK", h[h.NAGBAR_NOTICE_PREMIUM_PROMO = 21] = "NAGBAR_NOTICE_PREMIUM_PROMO", h[h.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING = 22] = "NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING", h[h.NAGBAR_NOTICE_PREMIUM_REACTIVATE = 23] = "NAGBAR_NOTICE_PREMIUM_REACTIVATE", h[h.PREMIUM_5TH_ANNIVERSARY_MODAL = 24] = "PREMIUM_5TH_ANNIVERSARY_MODAL", h[h.GUILD_JOIN_FEEDBACK_MODAL = 25] = "GUILD_JOIN_FEEDBACK_MODAL", h[h.VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP = 26] = "VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP", h[h.ACTIVITIES_EARLY_USER_COACH_MARK = 27] = "ACTIVITIES_EARLY_USER_COACH_MARK", h[h.GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP = 28] = "GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP", h[h.ACTIVITIES_TUTORIAL_COACH_MARK = 29] = "ACTIVITIES_TUTORIAL_COACH_MARK", h[h.GUILD_HEADER_INVITE_SPLASH = 31] = "GUILD_HEADER_INVITE_SPLASH", h[h.NAGBAR_NOTICE_LOCALIZED_PRICING = 33] = "NAGBAR_NOTICE_LOCALIZED_PRICING", h[h.SOUNDBOARD_EDUCATION = 35] = "SOUNDBOARD_EDUCATION", h[h.GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK = 36] = "GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK", h[h.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL = 37] = "GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL", h[h.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK = 38] = "CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK", h[h.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL = 39] = "GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL", h[h.GUILD_INSIGHTS_ACCESS_RATE_NEW = 40] = "GUILD_INSIGHTS_ACCESS_RATE_NEW", h[h.NOW_PLAYING_CONSENT_CARD = 41] = "NOW_PLAYING_CONSENT_CARD", h[h.GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP = 42] = "GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP", h[h.FORUM_CHANNEL_UPSELL_MODAL = 44] = "FORUM_CHANNEL_UPSELL_MODAL", h[h.POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP = 46] = "POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP", h[h.MWEB_APP_DOWNLOAD_HALFSHEET = 47] = "MWEB_APP_DOWNLOAD_HALFSHEET", h[h.MWEB_APP_DOWNLOAD_NAGBAR_THEMED = 48] = "MWEB_APP_DOWNLOAD_NAGBAR_THEMED", h[h.MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE = 49] = "MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE", h[h.GUILD_FEED_NUX_CARD = 50] = "GUILD_FEED_NUX_CARD", h[h.GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP = 52] = "GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP", h[h.ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2 = 53] = "ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2", h[h.ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES = 55] = "ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES", h[h.GUILD_DELETE_FEEDBACK = 56] = "GUILD_DELETE_FEEDBACK", h[h.GUILD_LEAVE_FEEDBACK = 57] = "GUILD_LEAVE_FEEDBACK", h[h.AUTH_SESSIONS_NEW = 63] = "AUTH_SESSIONS_NEW", h[h.DONUT_MOBILE_NUX = 65] = "DONUT_MOBILE_NUX", h[h.GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL = 66] = "GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL", h[h.FORUM_CHANNEL_HELPER_CARD = 67] = "FORUM_CHANNEL_HELPER_CARD", h[h.PASSPORT_USER_SETTINGS = 70] = "PASSPORT_USER_SETTINGS", h[h.SUMMER_BOGO_ANNOUNCEMENT = 71] = "SUMMER_BOGO_ANNOUNCEMENT", h[h.COMMANDS_MIGRATION_UPSELL_MODAL = 72] = "COMMANDS_MIGRATION_UPSELL_MODAL", h[h.FILE_LIMIT_UPLOAD_COACH_MARK = 73] = "FILE_LIMIT_UPLOAD_COACH_MARK", h[h.DONUT_DESKTOP_NUX = 77] = "DONUT_DESKTOP_NUX", h[h.GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL = 79] = "GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL", h[h.PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST = 80] = "PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST", h[h.STAGE_RAISED_HAND_MOVED = 81] = "STAGE_RAISED_HAND_MOVED", h[h.XBOX_ONE_WAY_RECONNECT = 82] = "XBOX_ONE_WAY_RECONNECT", h[h.XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT = 84] = "XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT", h[h.HUB_BACK_TO_SCHOOL_UPSELL = 85] = "HUB_BACK_TO_SCHOOL_UPSELL", h[h.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP = 86] = "STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP", h[h.ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX = 89] = "ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX", h[h.PROFILE_THEMES_SETTINGS_VIEWED_V2 = 92] = "PROFILE_THEMES_SETTINGS_VIEWED_V2", h[h.GUILD_HEADER_ACTIVE_THREADS_NOTICE = 93] = "GUILD_HEADER_ACTIVE_THREADS_NOTICE", h[h.CHANNEL_LIST_OPT_IN_NUX = 94] = "CHANNEL_LIST_OPT_IN_NUX", h[h.ACTIVITIES_MOBILE_NUX = 95] = "ACTIVITIES_MOBILE_NUX", h[h.PROFILE_THEMES_NEW_BADGE = 96] = "PROFILE_THEMES_NEW_BADGE", h[h.GUILD_AUTOMOD_DEFAULT_ON_UPSELL = 97] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL", h[h.CHANNEL_BROWSER_NUX = 98] = "CHANNEL_BROWSER_NUX", h[h.RNA_CHANGELOG_HC_NOTICE = 99] = "RNA_CHANGELOG_HC_NOTICE", h[h.MESSAGE_REQUEST_SETTINGS_COACH_MARK = 100] = "MESSAGE_REQUEST_SETTINGS_COACH_MARK", h[h.GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2 = 101] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2", h[h.GUILD_AUTOMOD_REGEX_UPSELL = 102] = "GUILD_AUTOMOD_REGEX_UPSELL", h[h.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP = 103] = "VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP", h[h.CONNECTIONS_NUX = 108] = "CONNECTIONS_NUX", h[h.XBOX_VOICE_SURVEY_NAGBAR = 110] = "XBOX_VOICE_SURVEY_NAGBAR", h[h.PS_ONE_WAY_RECONNECT = 112] = "PS_ONE_WAY_RECONNECT", h[h.HALLOWEEN_2022_ACTIVITIES_COACH_MARK = 115] = "HALLOWEEN_2022_ACTIVITIES_COACH_MARK", h[h.NITRODUCTION_STEP_PROFILE_CUSTOMIZATION = 116] = "NITRODUCTION_STEP_PROFILE_CUSTOMIZATION", h[h.NITRODUCTION_STEP_BOOSTING = 117] = "NITRODUCTION_STEP_BOOSTING", h[h.NITRODUCTION_STEP_CUSTOM_EMOJI = 118] = "NITRODUCTION_STEP_CUSTOM_EMOJI", h[h.NEW_CRUNCHYROLL_CONNECTION = 119] = "NEW_CRUNCHYROLL_CONNECTION", h[h.APP_DIRECTORY_UPSELL_MODAL = 121] = "APP_DIRECTORY_UPSELL_MODAL", h[h.BASH_OUT_COACH_MARK = 123] = "BASH_OUT_COACH_MARK", h[h.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL = 124] = "GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL", h[h.COMMUNITY_ONBOARDING_NEW_BADGE = 125] = "COMMUNITY_ONBOARDING_NEW_BADGE", h[h.CHURRO_LINK_UPSELL = 126] = "CHURRO_LINK_UPSELL", h[h.VERIFIED_ROLES_COACH_MARK = 127] = "VERIFIED_ROLES_COACH_MARK", h[h.PROFILE_THEMES_ACCESSIBILITY_TOOLTIP = 129] = "PROFILE_THEMES_ACCESSIBILITY_TOOLTIP", h[h.BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL = 130] = "BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL", h[h.USER_SAFETY_SAFE_DIRECT_MESSAGING = 131] = "USER_SAFETY_SAFE_DIRECT_MESSAGING", h[h.GG_ANNOUNCEMENT = 132] = "GG_ANNOUNCEMENT", h[h.CHANNEL_BROWSER_NEW_BADGE_NUX = 133] = "CHANNEL_BROWSER_NEW_BADGE_NUX", h[h.CREATOR_PROMO_PAGE_COACH_MARK = 134] = "CREATOR_PROMO_PAGE_COACH_MARK", h[h.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL = 136] = "CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL", h[h.GUILD_ONBOARDING_UPSELL_MODAL = 137] = "GUILD_ONBOARDING_UPSELL_MODAL", h[h.NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE = 138] = "NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE", h[h.DROPS_GO_LIVE_BANNER_NOTICE_HALO = 139] = "DROPS_GO_LIVE_BANNER_NOTICE_HALO", h[h.DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO = 140] = "DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO", h[h.DROPS_QUEST_COMPLETION_TOOLTIP_HALO = 141] = "DROPS_QUEST_COMPLETION_TOOLTIP_HALO", h[h.SEASONAL_GIFTING_COACHMARK_2022 = 146] = "SEASONAL_GIFTING_COACHMARK_2022", h[h.NAGBAR_BOUNCED_EMAIL_NOTICE = 147] = "NAGBAR_BOUNCED_EMAIL_NOTICE", h[h.GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE = 151] = "GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE", h[h.CONSOLE_PTT_DISABLE_ALERT = 152] = "CONSOLE_PTT_DISABLE_ALERT", h[h.ACTIVITIES_MINI_SHELF_SPARKLES = 153] = "ACTIVITIES_MINI_SHELF_SPARKLES", h[h.DROPS_ENDED_INCOMPLETE_HALO = 154] = "DROPS_ENDED_INCOMPLETE_HALO", h[h.GDM_INVITE_REMINDER = 157] = "GDM_INVITE_REMINDER", h[h.USER_SAFETY_CONSUMER_EDUCATION_BLOCK = 161] = "USER_SAFETY_CONSUMER_EDUCATION_BLOCK", h[h.USER_SAFETY_CONSUMER_EDUCATION_MUTE = 162] = "USER_SAFETY_CONSUMER_EDUCATION_MUTE", h[h.LINKED_ROLE_ADMIN_GUILD = 163] = "LINKED_ROLE_ADMIN_GUILD", h[h.NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION = 164] = "NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION", h[h.BURST_REACTION_BUTTON_SPARKLE = 165] = "BURST_REACTION_BUTTON_SPARKLE", h[h.NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING = 166] = "NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING", h[h.VC_TILE_ACTIVITIES_ENTRY_POINT = 167] = "VC_TILE_ACTIVITIES_ENTRY_POINT", h[h.BURST_REACTION_COACHMARK = 169] = "BURST_REACTION_COACHMARK", h[h.BURST_REACTIONS_REMOVE_MODAL = 170] = "BURST_REACTIONS_REMOVE_MODAL", h[h.BURST_REACTION_NITRO_TOOLTIP = 171] = "BURST_REACTION_NITRO_TOOLTIP", h[h.CLIENT_THEMES_SETTINGS_BADGE = 173] = "CLIENT_THEMES_SETTINGS_BADGE", h[h.CLIENT_THEMES_COACHMARK = 174] = "CLIENT_THEMES_COACHMARK", h[h.CLIENT_THEMES_SPARKLE_PREVIEW = 175] = "CLIENT_THEMES_SPARKLE_PREVIEW", h[h.STAGE_V2_UPSELL = 176] = "STAGE_V2_UPSELL", h[h.QUEST_1_ENROLLMENT_TOOLTIP = 177] = "QUEST_1_ENROLLMENT_TOOLTIP", h[h.QUEST_1_COMPLETION_TOOLTIP = 178] = "QUEST_1_COMPLETION_TOOLTIP", h[h.QUEST_1_GO_LIVE_BANNER = 179] = "QUEST_1_GO_LIVE_BANNER", h[h.QUEST_1_ENDED_INCOMPLETE = 180] = "QUEST_1_ENDED_INCOMPLETE", h[h.PREMIUM_TUTORIAL_EXPERIENCE = 181] = "PREMIUM_TUTORIAL_EXPERIENCE", h[h.APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL = 182] = "APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL", h[h.PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP = 183] = "PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP", h[h.PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP = 184] = "PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP", h[h.PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP = 185] = "PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP", h[h.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP = 186] = "PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP", h[h.TABS_V2_ANNOUNCEMENT_SHEET = 188] = "TABS_V2_ANNOUNCEMENT_SHEET", h[h.VOICE_MESSAGE_UPSELL_DM = 189] = "VOICE_MESSAGE_UPSELL_DM", h[h.SUPER_REACTIONS_NITRO_MARKETING = 190] = "SUPER_REACTIONS_NITRO_MARKETING", h[h.NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL = 191] = "NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL", h[h.CLYDE_GUILD_HEADER_NUX = 193] = "CLYDE_GUILD_HEADER_NUX", h[h.CLYDE_CHAT_BAR_NUX = 194] = "CLYDE_CHAT_BAR_NUX", h[h.VOICE_MESSAGE_UPSELL_GUILD = 195] = "VOICE_MESSAGE_UPSELL_GUILD", h[h.ACTIVITY_GDM_CALL_TOOLTIP = 196] = "ACTIVITY_GDM_CALL_TOOLTIP", h[h.ACTIVITY_GDM_ROCKET_SPARKLE = 197] = "ACTIVITY_GDM_ROCKET_SPARKLE", h[h.NITRO_DROP_2023_04_NITRO_TAB_BADGE = 205] = "NITRO_DROP_2023_04_NITRO_TAB_BADGE", h[h.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL = 206] = "GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL", h[h.ACTIVITIES_MOBILE_PIP_FAB_NUX = 208] = "ACTIVITIES_MOBILE_PIP_FAB_NUX", h[h.GUILD_HEADER_SOUNDBOARD_PERMISSION = 209] = "GUILD_HEADER_SOUNDBOARD_PERMISSION", h[h.GUILD_ONBOARDING_UPSELL_HEADER = 210] = "GUILD_ONBOARDING_UPSELL_HEADER", h[h.ACTIVITIES_COACH_MARK_GAME_NIGHT = 211] = "ACTIVITIES_COACH_MARK_GAME_NIGHT", h[h.GUILD_ONBOARDING_UPSELL_NAGBAR = 212] = "GUILD_ONBOARDING_UPSELL_NAGBAR", h[h.GUILD_ONBOARDING_UPSELL_MODAL_V2 = 213] = "GUILD_ONBOARDING_UPSELL_MODAL_V2", h[h.SUPER_REACTIONS_FREE_USER_FIRST_SENT = 214] = "SUPER_REACTIONS_FREE_USER_FIRST_SENT", h[h.SUPER_REACTIONS_TOOLTIP_COACHMARK = 215] = "SUPER_REACTIONS_TOOLTIP_COACHMARK", h[h.SOUNDBOARD_VOLUME_EDUCATION = 216] = "SOUNDBOARD_VOLUME_EDUCATION", h[h.NAGBAR_NOTICE_POMELO = 217] = "NAGBAR_NOTICE_POMELO", h[h.APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR = 218] = "APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR", h[h.APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR = 219] = "APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR", h[h.SUPER_REACTIONS_TAB_SPARKLE = 220] = "SUPER_REACTIONS_TAB_SPARKLE", h[h.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES = 221] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES", h[h.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES = 222] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES", h[h.MJ_NEW_USER_CHAT_BAR = 223] = "MJ_NEW_USER_CHAT_BAR", h[h.CHANNEL_NOTICE_CLYDE_NUX = 224] = "CHANNEL_NOTICE_CLYDE_NUX", h[h.USER_SAFETY_CONSUMER_EDUCATION_REPORTING = 225] = "USER_SAFETY_CONSUMER_EDUCATION_REPORTING", h[h.SUPER_REACTIONS_FIRST_SENT = 227] = "SUPER_REACTIONS_FIRST_SENT", h[h.COMMUNITY_GUILD_SETTINGS_SAFETY = 228] = "COMMUNITY_GUILD_SETTINGS_SAFETY", h[h.FRIEND_FINDER_FIRST_TIME_BADGE = 229] = "FRIEND_FINDER_FIRST_TIME_BADGE", h[h.SHARE_NITRO_BUTTON_SPARKLES = 230] = "SHARE_NITRO_BUTTON_SPARKLES", h[h.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE = 231] = "PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE", h[h.SOUNDBOARD_KEYBIND_TIP = 232] = "SOUNDBOARD_KEYBIND_TIP", h[h.QUEST_2_ENROLLMENT_TOOLTIP = 234] = "QUEST_2_ENROLLMENT_TOOLTIP", h[h.QUEST_2_COMPLETION_TOOLTIP = 235] = "QUEST_2_COMPLETION_TOOLTIP", h[h.QUEST_2_GO_LIVE_BANNER = 236] = "QUEST_2_GO_LIVE_BANNER", h[h.QUEST_2_ENDED_INCOMPLETE = 237] = "QUEST_2_ENDED_INCOMPLETE", h[h.GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES = 238] = "GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES", h[h.MEDIA_CHANNEL_UPSELL = 243] = "MEDIA_CHANNEL_UPSELL", h[h.ADD_FRIENDS_WIDGET = 244] = "ADD_FRIENDS_WIDGET", h[h.YOU_TAB_AVATAR_ONBOARDING = 245] = "YOU_TAB_AVATAR_ONBOARDING", h[h.YOU_TAB_ABOUT_ME_ONBOARDING = 246] = "YOU_TAB_ABOUT_ME_ONBOARDING", h[h.GUILD_HEADER_SUMMARIES_UPSELL = 247] = "GUILD_HEADER_SUMMARIES_UPSELL", h[h.SUPER_REACTIONS_COACHMARK_MOBILE = 250] = "SUPER_REACTIONS_COACHMARK_MOBILE", h[h.SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE = 251] = "SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE", h[h.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL = 252] = "SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL", h[h.EMOJI_PICKER_FAVORITE_EMOJIS_TIP = 253] = "EMOJI_PICKER_FAVORITE_EMOJIS_TIP", h[h.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE = 254] = "SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE", h[h.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS = 255] = "SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS", h[h.FAMILY_CENTER_NEW_BADGE = 256] = "FAMILY_CENTER_NEW_BADGE", h[h.CONSOLE_LOCAL_DETECT_CTA = 257] = "CONSOLE_LOCAL_DETECT_CTA", h[h.REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE = 263] = "REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE", h[h.GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE = 264] = "GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE", h[h.REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE = 265] = "REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE", h[h.GUILD_MEMBER_SAFETY_BANNER_NOTICE = 266] = "GUILD_MEMBER_SAFETY_BANNER_NOTICE", h[h.SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL = 270] = "SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL", h[h.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK = 271] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK", h[h.CUSTOM_CALL_SOUNDS_PICKER_UPSELL = 272] = "CUSTOM_CALL_SOUNDS_PICKER_UPSELL", h[h.CUSTOM_CALL_SOUNDS_SPARKLES = 274] = "CUSTOM_CALL_SOUNDS_SPARKLES", h[h.SOUNDBOARD_MOBILE_FLOATING_CTA = 275] = "SOUNDBOARD_MOBILE_FLOATING_CTA", h[h.SOUNDBOARD_MOBILE_NEW_BADGE = 276] = "SOUNDBOARD_MOBILE_NEW_BADGE", h[h.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2 = 277] = "PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2", h[h.VOICE_PANEL_BAD_CONNECTION_CTA = 278] = "VOICE_PANEL_BAD_CONNECTION_CTA", h[h.PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET = 279] = "PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET", h[h.MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE = 280] = "MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE", h[h.CLIPS_ONBOARDING_GO_LIVE_COACHMARK = 281] = "CLIPS_ONBOARDING_GO_LIVE_COACHMARK", h[h.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK = 282] = "CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK", h[h.CUSTOM_APP_ICONS_COACHMARK = 283] = "CUSTOM_APP_ICONS_COACHMARK", h[h.CUSTOM_APP_ICONS_NEW_BADGE = 284] = "CUSTOM_APP_ICONS_NEW_BADGE", h[h.BROADCASTING_BROADCASTER_TOOLTIP = 285] = "BROADCASTING_BROADCASTER_TOOLTIP", h[h.BROADCASTING_VIEWER_TOOLTIP = 286] = "BROADCASTING_VIEWER_TOOLTIP", h[h.SERVER_SHOP_UPSELL = 288] = "SERVER_SHOP_UPSELL", h[h.LAUNCH_PAD_PULL_TAB_NUX = 289] = "LAUNCH_PAD_PULL_TAB_NUX", h[h.CLIPS_SETTINGS_BETA_TAG = 290] = "CLIPS_SETTINGS_BETA_TAG", h[h.WHATS_NEW_AVATAR_DECOS_FLIP = 292] = "WHATS_NEW_AVATAR_DECOS_FLIP", h[h.WHATS_NEW_PROFILE_EFFECTS_FLIP = 293] = "WHATS_NEW_PROFILE_EFFECTS_FLIP", h[h.MEMBERS_LAUNCH_UPSELL = 294] = "MEMBERS_LAUNCH_UPSELL", h[h.SERVER_SHOP_PHANTOM_PREVIEW = 295] = "SERVER_SHOP_PHANTOM_PREVIEW", h[h.RECURRING_CONTACT_SYNC_PROMPT = 297] = "RECURRING_CONTACT_SYNC_PROMPT", h[h.INVENTORY_TRY_PACKS_MODAL = 302] = "INVENTORY_TRY_PACKS_MODAL", h[h.DEPRECATE_WIN32_MESSAGE = 305] = "DEPRECATE_WIN32_MESSAGE", h[h.DEKSTOP_CUSTOM_APP_ICON_COACHMARK = 306] = "DEKSTOP_CUSTOM_APP_ICON_COACHMARK", h[h.DEKSTOP_CUSTOM_APP_ICON_BADGE = 307] = "DEKSTOP_CUSTOM_APP_ICON_BADGE", h[h.WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE = 309] = "WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE", h[h.WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE = 310] = "WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE", h[h.CLYDE_AI_PERSONALITIES_NUX_MODAL = 312] = "CLYDE_AI_PERSONALITIES_NUX_MODAL", h[h.NUX_GUILD_CHANNEL_EXPLAINER = 313] = "NUX_GUILD_CHANNEL_EXPLAINER", h[h.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP = 316] = "SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP", h[h.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE = 317] = "SUPER_REACTION_TOGGLE_EDUCATION_MOBILE", h[h.SEEN_LAUNCH_WELCOME_OR_REDESIGN = 325] = "SEEN_LAUNCH_WELCOME_OR_REDESIGN", h[h.SEEN_OLD_DESIGN = 326] = "SEEN_OLD_DESIGN", h[h.SEASONAL_GIFTING_COACHMARK_2023 = 328] = "SEASONAL_GIFTING_COACHMARK_2023", h[h.SHOP_FOR_ALL_USER_POPOUT_UPSELL = 329] = "SHOP_FOR_ALL_USER_POPOUT_UPSELL", h[h.COLLECTIBLES_GIFTING_COACHMARK = 334] = "COLLECTIBLES_GIFTING_COACHMARK", h[h.SEEN_LAUNCH_WELCOME = 335] = "SEEN_LAUNCH_WELCOME", h[h.FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK = 336] = "FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK", h[h.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK = 337] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK", h[h.FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS = 338] = "FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS", h[h.OVERLAY_KEYBIND_NOTIFICATION = 340] = "OVERLAY_KEYBIND_NOTIFICATION", h[h.CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX = 343] = "CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX", h[h.COLLECTIBLES_SHOP_LUNARNEWYEAR_NEW_BADGE = 344] = "COLLECTIBLES_SHOP_LUNARNEWYEAR_NEW_BADGE", h[h.UU_MIGRATION_NOTICE = 345] = "UU_MIGRATION_NOTICE", h[h.HANG_STATUS_NEW_BADGE = 346] = "HANG_STATUS_NEW_BADGE", h[h.VOICE_CALL_BG_PICKER_TOOLTIP = 347] = "VOICE_CALL_BG_PICKER_TOOLTIP", h[h.VOICE_CALL_BG_PICKER_NEW_BADGE = 348] = "VOICE_CALL_BG_PICKER_NEW_BADGE", h[h.SWIPE_TO_REPLY_COACHMARK = 349] = "SWIPE_TO_REPLY_COACHMARK", h[h.MOBILE_ACCESSIBILITY_COLOR_SETTINGS = 350] = "MOBILE_ACCESSIBILITY_COLOR_SETTINGS", h[h.COLLECTIBLES_SHOP_ELEMENTS_TOOLTIP = 351] = "COLLECTIBLES_SHOP_ELEMENTS_TOOLTIP", h[h.COLLECTIBLES_SHOP_ELEMENTS_COACHTIP = 352] = "COLLECTIBLES_SHOP_ELEMENTS_COACHTIP", h[h.COLLECTIBLES_SHOP_ANIME_V2_COACHTIP = 353] = "COLLECTIBLES_SHOP_ANIME_V2_COACHTIP", h[h.POLLS_CHAT_INPUT_COACHMARK = 354] = "POLLS_CHAT_INPUT_COACHMARK", h[h.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK = 355] = "PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK", h[h.LOOTBOXES_ENTRYPOINT = 358] = "LOOTBOXES_ENTRYPOINT", h[h.TENURE_REWARD_PENDING = 360] = "TENURE_REWARD_PENDING", h[h.TENURE_REWARD_REDEEMABLE = 361] = "TENURE_REWARD_REDEEMABLE", h[h.COLLECTIBLES_SHOP_SPRINGTOONS_COACHTIP = 362] = "COLLECTIBLES_SHOP_SPRINGTOONS_COACHTIP", h[h.TENURE_REWARD_REDEEMABLE_CONFETTI = 363] = "TENURE_REWARD_REDEEMABLE_CONFETTI", h[h.GAME_ONE_USER_SIGNUPS = 364] = "GAME_ONE_USER_SIGNUPS", h[h.COLLECTIBLES_SHOP_SHY_COACHTIP = 365] = "COLLECTIBLES_SHOP_SHY_COACHTIP", h[h.APP_LAUNCHER_ONBOARDING_BOTS_BANNER = 366] = "APP_LAUNCHER_ONBOARDING_BOTS_BANNER", h[h.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER = 367] = "APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER", h[h.APP_LAUNCHER_ONBOARDING_APPS_BANNER = 368] = "APP_LAUNCHER_ONBOARDING_APPS_BANNER", h[h.COLLECTIBLES_MOBILE_SHOP_MARKETING = 369] = "COLLECTIBLES_MOBILE_SHOP_MARKETING", h[h.COLLECTIBLES_MOBILE_SHOP_HALF_SHEET = 370] = "COLLECTIBLES_MOBILE_SHOP_HALF_SHEET", h[h.GENSHIN_USER_SIGNUPS = 371] = "GENSHIN_USER_SIGNUPS", h[h.ACTIVITIES_CHAT_BUTTON_NUX_V2 = 372] = "ACTIVITIES_CHAT_BUTTON_NUX_V2", h[h.ACTIVITIES_CHAT_MENU_NEW_BADGE = 373] = "ACTIVITIES_CHAT_MENU_NEW_BADGE", h[h.PREMIUM_2024_APRIL_MARKETING_MODAL = 374] = "PREMIUM_2024_APRIL_MARKETING_MODAL", h[h.PREMIUM_2024_APRIL_MARKETING_BADGE = 375] = "PREMIUM_2024_APRIL_MARKETING_BADGE", h[h.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK = 376] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK", h[h.REFERRAL_PROGRAM_PROGRESS_BAR_TOGGLE = 377] = "REFERRAL_PROGRAM_PROGRESS_BAR_TOGGLE", h[h.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE = 378] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE", h[h.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE = 379] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE", h[h.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE = 380] = "REFERRAL_PROGRAM_PREMIUM_TAB_BADGE", h[h.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP = 381] = "PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP", h[h.COLLECTIBLES_SHOP_LOFI_VIBES_COACHTIP = 382] = "COLLECTIBLES_SHOP_LOFI_VIBES_COACHTIP", h[h.COLLECTIBLES_SHOP_GALAXY_COACHTIP = 383] = "COLLECTIBLES_SHOP_GALAXY_COACHTIP", (A = l || (l = {}))[A.UNSET_EXPLICIT_CONTENT_REDACTION = 0] = "UNSET_EXPLICIT_CONTENT_REDACTION", A[A.SHOW = 1] = "SHOW", A[A.BLUR = 2] = "BLUR", A[A.BLOCK = 3] = "BLOCK", (m = u || (u = {}))[m.DEFAULT_UNSET = 0] = "DEFAULT_UNSET", m[m.DISABLED = 1] = "DISABLED", m[m.NON_FRIENDS = 2] = "NON_FRIENDS", m[m.FRIENDS_AND_NON_FRIENDS = 3] = "FRIENDS_AND_NON_FRIENDS", (N = d || (d = {}))[N.OFF = 0] = "OFF", N[N.ON_FOR_LARGE_GUILDS = 1] = "ON_FOR_LARGE_GUILDS", (p = _ || (_ = {}))[p.UNSET = 0] = "UNSET", p[p.DARK = 1] = "DARK", p[p.LIGHT = 2] = "LIGHT", (O = c || (c = {}))[O.MINT_APPLE = 0] = "MINT_APPLE", O[O.CITRUS_SHERBERT = 1] = "CITRUS_SHERBERT", O[O.RETRO_RAINCLOUD = 2] = "RETRO_RAINCLOUD", O[O.HANAMI = 3] = "HANAMI", O[O.SUNRISE = 4] = "SUNRISE", O[O.COTTON_CANDY = 5] = "COTTON_CANDY", O[O.LOFI_VIBES = 6] = "LOFI_VIBES", O[O.DESERT_KHAKI = 7] = "DESERT_KHAKI", O[O.SUNSET = 8] = "SUNSET", O[O.CHROMA_GLOW = 9] = "CHROMA_GLOW", O[O.FOREST = 10] = "FOREST", O[O.CRIMSON_MOON = 11] = "CRIMSON_MOON", O[O.MIDNIGHT_BLURPLE = 12] = "MIDNIGHT_BLURPLE", O[O.MARS = 13] = "MARS", O[O.DUSK = 14] = "DUSK", O[O.UNDER_THE_SEA = 15] = "UNDER_THE_SEA", O[O.EASTER_EGG = 16] = "EASTER_EGG", O[O.RETRO_STORM = 17] = "RETRO_STORM", O[O.NEON_NIGHTS = 18] = "NEON_NIGHTS", O[O.SEPIA = 19] = "SEPIA", O[O.STRAWBERRY_LEMONADE = 20] = "STRAWBERRY_LEMONADE", O[O.AURORA = 21] = "AURORA", (R = E || (E = {}))[R.UNSET_FAVORITE_CHANNEL_TYPE = 0] = "UNSET_FAVORITE_CHANNEL_TYPE", R[R.REFERENCE_ORIGINAL = 1] = "REFERENCE_ORIGINAL", R[R.CATEGORY = 2] = "CATEGORY";
+            (I = i || (i = {}))[I.UNSPECIFIED = 0] = "UNSPECIFIED", I[I.MENTIONS = 1] = "MENTIONS", I[I.UNREADS = 2] = "UNREADS", I[I.TODOS = 3] = "TODOS", I[I.FOR_YOU = 4] = "FOR_YOU", I[I.GAME_INVITES = 5] = "GAME_INVITES", (T = r || (r = {}))[T.NO_PROGRESS = 0] = "NO_PROGRESS", T[T.JOIN_GUILD = 1] = "JOIN_GUILD", T[T.INVITE_USER = 2] = "INVITE_USER", T[T.CONTACT_SYNC = 4] = "CONTACT_SYNC", (f = s || (s = {}))[f.NO_GUILD_ONBOARDING = 0] = "NO_GUILD_ONBOARDING", f[f.GUILD_NOTICE_SHOWN = 1] = "GUILD_NOTICE_SHOWN", f[f.GUILD_NOTICE_CLEARED = 2] = "GUILD_NOTICE_CLEARED", (S = a || (a = {}))[S.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = 0] = "DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE", S[S.CLYDE_GUILD_NOTICE_NUX = 1] = "CLYDE_GUILD_NOTICE_NUX", S[S.SUMMARIES_NOTICE = 2] = "SUMMARIES_NOTICE", S[S.SUMMARIES_ENABLED_NOTICE = 3] = "SUMMARIES_ENABLED_NOTICE", S[S.ADOPT_CLAN_IDENTITY_NOTICE = 4] = "ADOPT_CLAN_IDENTITY_NOTICE", (h = o || (o = {}))[h.HUB_WAITLIST_UPSELL = 0] = "HUB_WAITLIST_UPSELL", h[h.APPLICATION_COMMAND_TOOLTIP = 1] = "APPLICATION_COMMAND_TOOLTIP", h[h.HUB_EVENT_HEADER_UPSELL = 2] = "HUB_EVENT_HEADER_UPSELL", h[h.CHANNELINFO_CHANNELBANNER_NOTICE = 3] = "CHANNELINFO_CHANNELBANNER_NOTICE", h[h.ACCOUNT_MULTIACCOUNT_TOOLTIP = 4] = "ACCOUNT_MULTIACCOUNT_TOOLTIP", h[h.SEASONALGIFTING_CHANNELBUTTON_POPUP = 5] = "SEASONALGIFTING_CHANNELBUTTON_POPUP", h[h.CHANNEL_NOTICE_INVITE = 6] = "CHANNEL_NOTICE_INVITE", h[h.CHANNEL_NOTICE_HUBLINK = 7] = "CHANNEL_NOTICE_HUBLINK", h[h.CHANNEL_NOTICE_QUICKSWITCHER = 8] = "CHANNEL_NOTICE_QUICKSWITCHER", h[h.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION = 9] = "CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION", h[h.CHANNEL_NOTICE_GUILD_BANNER = 11] = "CHANNEL_NOTICE_GUILD_BANNER", h[h.GUILD_HEADER_EVENT_UPSELL = 12] = "GUILD_HEADER_EVENT_UPSELL", h[h.GUILD_HEADER_PREMIUM_GUILD_PROGRESS = 14] = "GUILD_HEADER_PREMIUM_GUILD_PROGRESS", h[h.GUILD_HEADER_ANIMATED_GUILD_BANNER = 15] = "GUILD_HEADER_ANIMATED_GUILD_BANNER", h[h.NAGBAR_NOTICE_DOWNLOAD = 16] = "NAGBAR_NOTICE_DOWNLOAD", h[h.NAGBAR_NOTICE_CONNECT_SPOTIFY = 17] = "NAGBAR_NOTICE_CONNECT_SPOTIFY", h[h.NAGBAR_NOTICE_CONNECT_PLAYSTATION = 18] = "NAGBAR_NOTICE_CONNECT_PLAYSTATION", h[h.NAGBAR_NOTICE_MFA_SMS_BACKUP = 19] = "NAGBAR_NOTICE_MFA_SMS_BACKUP", h[h.ACTIVITIES_SUNSET_COACH_MARK = 20] = "ACTIVITIES_SUNSET_COACH_MARK", h[h.NAGBAR_NOTICE_PREMIUM_PROMO = 21] = "NAGBAR_NOTICE_PREMIUM_PROMO", h[h.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING = 22] = "NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING", h[h.NAGBAR_NOTICE_PREMIUM_REACTIVATE = 23] = "NAGBAR_NOTICE_PREMIUM_REACTIVATE", h[h.PREMIUM_5TH_ANNIVERSARY_MODAL = 24] = "PREMIUM_5TH_ANNIVERSARY_MODAL", h[h.GUILD_JOIN_FEEDBACK_MODAL = 25] = "GUILD_JOIN_FEEDBACK_MODAL", h[h.VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP = 26] = "VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP", h[h.ACTIVITIES_EARLY_USER_COACH_MARK = 27] = "ACTIVITIES_EARLY_USER_COACH_MARK", h[h.GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP = 28] = "GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP", h[h.ACTIVITIES_TUTORIAL_COACH_MARK = 29] = "ACTIVITIES_TUTORIAL_COACH_MARK", h[h.GUILD_HEADER_INVITE_SPLASH = 31] = "GUILD_HEADER_INVITE_SPLASH", h[h.NAGBAR_NOTICE_LOCALIZED_PRICING = 33] = "NAGBAR_NOTICE_LOCALIZED_PRICING", h[h.SOUNDBOARD_EDUCATION = 35] = "SOUNDBOARD_EDUCATION", h[h.GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK = 36] = "GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK", h[h.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL = 37] = "GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL", h[h.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK = 38] = "CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK", h[h.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL = 39] = "GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL", h[h.GUILD_INSIGHTS_ACCESS_RATE_NEW = 40] = "GUILD_INSIGHTS_ACCESS_RATE_NEW", h[h.NOW_PLAYING_CONSENT_CARD = 41] = "NOW_PLAYING_CONSENT_CARD", h[h.GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP = 42] = "GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP", h[h.FORUM_CHANNEL_UPSELL_MODAL = 44] = "FORUM_CHANNEL_UPSELL_MODAL", h[h.POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP = 46] = "POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP", h[h.MWEB_APP_DOWNLOAD_HALFSHEET = 47] = "MWEB_APP_DOWNLOAD_HALFSHEET", h[h.MWEB_APP_DOWNLOAD_NAGBAR_THEMED = 48] = "MWEB_APP_DOWNLOAD_NAGBAR_THEMED", h[h.MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE = 49] = "MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE", h[h.GUILD_FEED_NUX_CARD = 50] = "GUILD_FEED_NUX_CARD", h[h.GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP = 52] = "GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP", h[h.ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2 = 53] = "ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2", h[h.ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES = 55] = "ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES", h[h.GUILD_DELETE_FEEDBACK = 56] = "GUILD_DELETE_FEEDBACK", h[h.GUILD_LEAVE_FEEDBACK = 57] = "GUILD_LEAVE_FEEDBACK", h[h.AUTH_SESSIONS_NEW = 63] = "AUTH_SESSIONS_NEW", h[h.DONUT_MOBILE_NUX = 65] = "DONUT_MOBILE_NUX", h[h.GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL = 66] = "GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL", h[h.FORUM_CHANNEL_HELPER_CARD = 67] = "FORUM_CHANNEL_HELPER_CARD", h[h.PASSPORT_USER_SETTINGS = 70] = "PASSPORT_USER_SETTINGS", h[h.SUMMER_BOGO_ANNOUNCEMENT = 71] = "SUMMER_BOGO_ANNOUNCEMENT", h[h.COMMANDS_MIGRATION_UPSELL_MODAL = 72] = "COMMANDS_MIGRATION_UPSELL_MODAL", h[h.FILE_LIMIT_UPLOAD_COACH_MARK = 73] = "FILE_LIMIT_UPLOAD_COACH_MARK", h[h.DONUT_DESKTOP_NUX = 77] = "DONUT_DESKTOP_NUX", h[h.GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL = 79] = "GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL", h[h.PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST = 80] = "PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST", h[h.STAGE_RAISED_HAND_MOVED = 81] = "STAGE_RAISED_HAND_MOVED", h[h.XBOX_ONE_WAY_RECONNECT = 82] = "XBOX_ONE_WAY_RECONNECT", h[h.XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT = 84] = "XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT", h[h.HUB_BACK_TO_SCHOOL_UPSELL = 85] = "HUB_BACK_TO_SCHOOL_UPSELL", h[h.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP = 86] = "STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP", h[h.ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX = 89] = "ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX", h[h.PROFILE_THEMES_SETTINGS_VIEWED_V2 = 92] = "PROFILE_THEMES_SETTINGS_VIEWED_V2", h[h.GUILD_HEADER_ACTIVE_THREADS_NOTICE = 93] = "GUILD_HEADER_ACTIVE_THREADS_NOTICE", h[h.CHANNEL_LIST_OPT_IN_NUX = 94] = "CHANNEL_LIST_OPT_IN_NUX", h[h.ACTIVITIES_MOBILE_NUX = 95] = "ACTIVITIES_MOBILE_NUX", h[h.PROFILE_THEMES_NEW_BADGE = 96] = "PROFILE_THEMES_NEW_BADGE", h[h.GUILD_AUTOMOD_DEFAULT_ON_UPSELL = 97] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL", h[h.CHANNEL_BROWSER_NUX = 98] = "CHANNEL_BROWSER_NUX", h[h.RNA_CHANGELOG_HC_NOTICE = 99] = "RNA_CHANGELOG_HC_NOTICE", h[h.MESSAGE_REQUEST_SETTINGS_COACH_MARK = 100] = "MESSAGE_REQUEST_SETTINGS_COACH_MARK", h[h.GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2 = 101] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2", h[h.GUILD_AUTOMOD_REGEX_UPSELL = 102] = "GUILD_AUTOMOD_REGEX_UPSELL", h[h.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP = 103] = "VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP", h[h.CONNECTIONS_NUX = 108] = "CONNECTIONS_NUX", h[h.XBOX_VOICE_SURVEY_NAGBAR = 110] = "XBOX_VOICE_SURVEY_NAGBAR", h[h.PS_ONE_WAY_RECONNECT = 112] = "PS_ONE_WAY_RECONNECT", h[h.HALLOWEEN_2022_ACTIVITIES_COACH_MARK = 115] = "HALLOWEEN_2022_ACTIVITIES_COACH_MARK", h[h.NITRODUCTION_STEP_PROFILE_CUSTOMIZATION = 116] = "NITRODUCTION_STEP_PROFILE_CUSTOMIZATION", h[h.NITRODUCTION_STEP_BOOSTING = 117] = "NITRODUCTION_STEP_BOOSTING", h[h.NITRODUCTION_STEP_CUSTOM_EMOJI = 118] = "NITRODUCTION_STEP_CUSTOM_EMOJI", h[h.NEW_CRUNCHYROLL_CONNECTION = 119] = "NEW_CRUNCHYROLL_CONNECTION", h[h.APP_DIRECTORY_UPSELL_MODAL = 121] = "APP_DIRECTORY_UPSELL_MODAL", h[h.BASH_OUT_COACH_MARK = 123] = "BASH_OUT_COACH_MARK", h[h.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL = 124] = "GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL", h[h.COMMUNITY_ONBOARDING_NEW_BADGE = 125] = "COMMUNITY_ONBOARDING_NEW_BADGE", h[h.CHURRO_LINK_UPSELL = 126] = "CHURRO_LINK_UPSELL", h[h.VERIFIED_ROLES_COACH_MARK = 127] = "VERIFIED_ROLES_COACH_MARK", h[h.PROFILE_THEMES_ACCESSIBILITY_TOOLTIP = 129] = "PROFILE_THEMES_ACCESSIBILITY_TOOLTIP", h[h.BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL = 130] = "BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL", h[h.USER_SAFETY_SAFE_DIRECT_MESSAGING = 131] = "USER_SAFETY_SAFE_DIRECT_MESSAGING", h[h.GG_ANNOUNCEMENT = 132] = "GG_ANNOUNCEMENT", h[h.CHANNEL_BROWSER_NEW_BADGE_NUX = 133] = "CHANNEL_BROWSER_NEW_BADGE_NUX", h[h.CREATOR_PROMO_PAGE_COACH_MARK = 134] = "CREATOR_PROMO_PAGE_COACH_MARK", h[h.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL = 136] = "CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL", h[h.GUILD_ONBOARDING_UPSELL_MODAL = 137] = "GUILD_ONBOARDING_UPSELL_MODAL", h[h.NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE = 138] = "NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE", h[h.DROPS_GO_LIVE_BANNER_NOTICE_HALO = 139] = "DROPS_GO_LIVE_BANNER_NOTICE_HALO", h[h.DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO = 140] = "DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO", h[h.DROPS_QUEST_COMPLETION_TOOLTIP_HALO = 141] = "DROPS_QUEST_COMPLETION_TOOLTIP_HALO", h[h.SEASONAL_GIFTING_COACHMARK_2022 = 146] = "SEASONAL_GIFTING_COACHMARK_2022", h[h.NAGBAR_BOUNCED_EMAIL_NOTICE = 147] = "NAGBAR_BOUNCED_EMAIL_NOTICE", h[h.GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE = 151] = "GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE", h[h.CONSOLE_PTT_DISABLE_ALERT = 152] = "CONSOLE_PTT_DISABLE_ALERT", h[h.ACTIVITIES_MINI_SHELF_SPARKLES = 153] = "ACTIVITIES_MINI_SHELF_SPARKLES", h[h.DROPS_ENDED_INCOMPLETE_HALO = 154] = "DROPS_ENDED_INCOMPLETE_HALO", h[h.GDM_INVITE_REMINDER = 157] = "GDM_INVITE_REMINDER", h[h.USER_SAFETY_CONSUMER_EDUCATION_BLOCK = 161] = "USER_SAFETY_CONSUMER_EDUCATION_BLOCK", h[h.USER_SAFETY_CONSUMER_EDUCATION_MUTE = 162] = "USER_SAFETY_CONSUMER_EDUCATION_MUTE", h[h.LINKED_ROLE_ADMIN_GUILD = 163] = "LINKED_ROLE_ADMIN_GUILD", h[h.NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION = 164] = "NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION", h[h.BURST_REACTION_BUTTON_SPARKLE = 165] = "BURST_REACTION_BUTTON_SPARKLE", h[h.NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING = 166] = "NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING", h[h.VC_TILE_ACTIVITIES_ENTRY_POINT = 167] = "VC_TILE_ACTIVITIES_ENTRY_POINT", h[h.BURST_REACTION_COACHMARK = 169] = "BURST_REACTION_COACHMARK", h[h.BURST_REACTIONS_REMOVE_MODAL = 170] = "BURST_REACTIONS_REMOVE_MODAL", h[h.BURST_REACTION_NITRO_TOOLTIP = 171] = "BURST_REACTION_NITRO_TOOLTIP", h[h.CLIENT_THEMES_SETTINGS_BADGE = 173] = "CLIENT_THEMES_SETTINGS_BADGE", h[h.CLIENT_THEMES_COACHMARK = 174] = "CLIENT_THEMES_COACHMARK", h[h.CLIENT_THEMES_SPARKLE_PREVIEW = 175] = "CLIENT_THEMES_SPARKLE_PREVIEW", h[h.STAGE_V2_UPSELL = 176] = "STAGE_V2_UPSELL", h[h.QUEST_1_ENROLLMENT_TOOLTIP = 177] = "QUEST_1_ENROLLMENT_TOOLTIP", h[h.QUEST_1_COMPLETION_TOOLTIP = 178] = "QUEST_1_COMPLETION_TOOLTIP", h[h.QUEST_1_GO_LIVE_BANNER = 179] = "QUEST_1_GO_LIVE_BANNER", h[h.QUEST_1_ENDED_INCOMPLETE = 180] = "QUEST_1_ENDED_INCOMPLETE", h[h.PREMIUM_TUTORIAL_EXPERIENCE = 181] = "PREMIUM_TUTORIAL_EXPERIENCE", h[h.APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL = 182] = "APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL", h[h.PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP = 183] = "PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP", h[h.PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP = 184] = "PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP", h[h.PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP = 185] = "PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP", h[h.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP = 186] = "PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP", h[h.TABS_V2_ANNOUNCEMENT_SHEET = 188] = "TABS_V2_ANNOUNCEMENT_SHEET", h[h.VOICE_MESSAGE_UPSELL_DM = 189] = "VOICE_MESSAGE_UPSELL_DM", h[h.SUPER_REACTIONS_NITRO_MARKETING = 190] = "SUPER_REACTIONS_NITRO_MARKETING", h[h.NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL = 191] = "NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL", h[h.CLYDE_GUILD_HEADER_NUX = 193] = "CLYDE_GUILD_HEADER_NUX", h[h.CLYDE_CHAT_BAR_NUX = 194] = "CLYDE_CHAT_BAR_NUX", h[h.VOICE_MESSAGE_UPSELL_GUILD = 195] = "VOICE_MESSAGE_UPSELL_GUILD", h[h.ACTIVITY_GDM_CALL_TOOLTIP = 196] = "ACTIVITY_GDM_CALL_TOOLTIP", h[h.ACTIVITY_GDM_ROCKET_SPARKLE = 197] = "ACTIVITY_GDM_ROCKET_SPARKLE", h[h.NITRO_DROP_2023_04_NITRO_TAB_BADGE = 205] = "NITRO_DROP_2023_04_NITRO_TAB_BADGE", h[h.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL = 206] = "GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL", h[h.ACTIVITIES_MOBILE_PIP_FAB_NUX = 208] = "ACTIVITIES_MOBILE_PIP_FAB_NUX", h[h.GUILD_HEADER_SOUNDBOARD_PERMISSION = 209] = "GUILD_HEADER_SOUNDBOARD_PERMISSION", h[h.GUILD_ONBOARDING_UPSELL_HEADER = 210] = "GUILD_ONBOARDING_UPSELL_HEADER", h[h.ACTIVITIES_COACH_MARK_GAME_NIGHT = 211] = "ACTIVITIES_COACH_MARK_GAME_NIGHT", h[h.GUILD_ONBOARDING_UPSELL_NAGBAR = 212] = "GUILD_ONBOARDING_UPSELL_NAGBAR", h[h.GUILD_ONBOARDING_UPSELL_MODAL_V2 = 213] = "GUILD_ONBOARDING_UPSELL_MODAL_V2", h[h.SUPER_REACTIONS_FREE_USER_FIRST_SENT = 214] = "SUPER_REACTIONS_FREE_USER_FIRST_SENT", h[h.SUPER_REACTIONS_TOOLTIP_COACHMARK = 215] = "SUPER_REACTIONS_TOOLTIP_COACHMARK", h[h.SOUNDBOARD_VOLUME_EDUCATION = 216] = "SOUNDBOARD_VOLUME_EDUCATION", h[h.NAGBAR_NOTICE_POMELO = 217] = "NAGBAR_NOTICE_POMELO", h[h.APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR = 218] = "APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR", h[h.APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR = 219] = "APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR", h[h.SUPER_REACTIONS_TAB_SPARKLE = 220] = "SUPER_REACTIONS_TAB_SPARKLE", h[h.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES = 221] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES", h[h.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES = 222] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES", h[h.MJ_NEW_USER_CHAT_BAR = 223] = "MJ_NEW_USER_CHAT_BAR", h[h.CHANNEL_NOTICE_CLYDE_NUX = 224] = "CHANNEL_NOTICE_CLYDE_NUX", h[h.USER_SAFETY_CONSUMER_EDUCATION_REPORTING = 225] = "USER_SAFETY_CONSUMER_EDUCATION_REPORTING", h[h.SUPER_REACTIONS_FIRST_SENT = 227] = "SUPER_REACTIONS_FIRST_SENT", h[h.COMMUNITY_GUILD_SETTINGS_SAFETY = 228] = "COMMUNITY_GUILD_SETTINGS_SAFETY", h[h.FRIEND_FINDER_FIRST_TIME_BADGE = 229] = "FRIEND_FINDER_FIRST_TIME_BADGE", h[h.SHARE_NITRO_BUTTON_SPARKLES = 230] = "SHARE_NITRO_BUTTON_SPARKLES", h[h.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE = 231] = "PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE", h[h.SOUNDBOARD_KEYBIND_TIP = 232] = "SOUNDBOARD_KEYBIND_TIP", h[h.QUEST_2_ENROLLMENT_TOOLTIP = 234] = "QUEST_2_ENROLLMENT_TOOLTIP", h[h.QUEST_2_COMPLETION_TOOLTIP = 235] = "QUEST_2_COMPLETION_TOOLTIP", h[h.QUEST_2_GO_LIVE_BANNER = 236] = "QUEST_2_GO_LIVE_BANNER", h[h.QUEST_2_ENDED_INCOMPLETE = 237] = "QUEST_2_ENDED_INCOMPLETE", h[h.GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES = 238] = "GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES", h[h.MEDIA_CHANNEL_UPSELL = 243] = "MEDIA_CHANNEL_UPSELL", h[h.ADD_FRIENDS_WIDGET = 244] = "ADD_FRIENDS_WIDGET", h[h.YOU_TAB_AVATAR_ONBOARDING = 245] = "YOU_TAB_AVATAR_ONBOARDING", h[h.YOU_TAB_ABOUT_ME_ONBOARDING = 246] = "YOU_TAB_ABOUT_ME_ONBOARDING", h[h.GUILD_HEADER_SUMMARIES_UPSELL = 247] = "GUILD_HEADER_SUMMARIES_UPSELL", h[h.SUPER_REACTIONS_COACHMARK_MOBILE = 250] = "SUPER_REACTIONS_COACHMARK_MOBILE", h[h.SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE = 251] = "SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE", h[h.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL = 252] = "SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL", h[h.EMOJI_PICKER_FAVORITE_EMOJIS_TIP = 253] = "EMOJI_PICKER_FAVORITE_EMOJIS_TIP", h[h.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE = 254] = "SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE", h[h.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS = 255] = "SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS", h[h.FAMILY_CENTER_NEW_BADGE = 256] = "FAMILY_CENTER_NEW_BADGE", h[h.CONSOLE_LOCAL_DETECT_CTA = 257] = "CONSOLE_LOCAL_DETECT_CTA", h[h.REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE = 263] = "REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE", h[h.GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE = 264] = "GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE", h[h.REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE = 265] = "REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE", h[h.GUILD_MEMBER_SAFETY_BANNER_NOTICE = 266] = "GUILD_MEMBER_SAFETY_BANNER_NOTICE", h[h.SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL = 270] = "SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL", h[h.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK = 271] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK", h[h.CUSTOM_CALL_SOUNDS_PICKER_UPSELL = 272] = "CUSTOM_CALL_SOUNDS_PICKER_UPSELL", h[h.CUSTOM_CALL_SOUNDS_SPARKLES = 274] = "CUSTOM_CALL_SOUNDS_SPARKLES", h[h.SOUNDBOARD_MOBILE_FLOATING_CTA = 275] = "SOUNDBOARD_MOBILE_FLOATING_CTA", h[h.SOUNDBOARD_MOBILE_NEW_BADGE = 276] = "SOUNDBOARD_MOBILE_NEW_BADGE", h[h.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2 = 277] = "PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2", h[h.VOICE_PANEL_BAD_CONNECTION_CTA = 278] = "VOICE_PANEL_BAD_CONNECTION_CTA", h[h.PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET = 279] = "PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET", h[h.MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE = 280] = "MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE", h[h.CLIPS_ONBOARDING_GO_LIVE_COACHMARK = 281] = "CLIPS_ONBOARDING_GO_LIVE_COACHMARK", h[h.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK = 282] = "CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK", h[h.CUSTOM_APP_ICONS_COACHMARK = 283] = "CUSTOM_APP_ICONS_COACHMARK", h[h.CUSTOM_APP_ICONS_NEW_BADGE = 284] = "CUSTOM_APP_ICONS_NEW_BADGE", h[h.BROADCASTING_BROADCASTER_TOOLTIP = 285] = "BROADCASTING_BROADCASTER_TOOLTIP", h[h.BROADCASTING_VIEWER_TOOLTIP = 286] = "BROADCASTING_VIEWER_TOOLTIP", h[h.SERVER_SHOP_UPSELL = 288] = "SERVER_SHOP_UPSELL", h[h.LAUNCH_PAD_PULL_TAB_NUX = 289] = "LAUNCH_PAD_PULL_TAB_NUX", h[h.CLIPS_SETTINGS_BETA_TAG = 290] = "CLIPS_SETTINGS_BETA_TAG", h[h.WHATS_NEW_AVATAR_DECOS_FLIP = 292] = "WHATS_NEW_AVATAR_DECOS_FLIP", h[h.WHATS_NEW_PROFILE_EFFECTS_FLIP = 293] = "WHATS_NEW_PROFILE_EFFECTS_FLIP", h[h.MEMBERS_LAUNCH_UPSELL = 294] = "MEMBERS_LAUNCH_UPSELL", h[h.SERVER_SHOP_PHANTOM_PREVIEW = 295] = "SERVER_SHOP_PHANTOM_PREVIEW", h[h.RECURRING_CONTACT_SYNC_PROMPT = 297] = "RECURRING_CONTACT_SYNC_PROMPT", h[h.INVENTORY_TRY_PACKS_MODAL = 302] = "INVENTORY_TRY_PACKS_MODAL", h[h.DEPRECATE_WIN32_MESSAGE = 305] = "DEPRECATE_WIN32_MESSAGE", h[h.DEKSTOP_CUSTOM_APP_ICON_COACHMARK = 306] = "DEKSTOP_CUSTOM_APP_ICON_COACHMARK", h[h.DEKSTOP_CUSTOM_APP_ICON_BADGE = 307] = "DEKSTOP_CUSTOM_APP_ICON_BADGE", h[h.WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE = 309] = "WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE", h[h.WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE = 310] = "WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE", h[h.CLYDE_AI_PERSONALITIES_NUX_MODAL = 312] = "CLYDE_AI_PERSONALITIES_NUX_MODAL", h[h.NUX_GUILD_CHANNEL_EXPLAINER = 313] = "NUX_GUILD_CHANNEL_EXPLAINER", h[h.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP = 316] = "SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP", h[h.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE = 317] = "SUPER_REACTION_TOGGLE_EDUCATION_MOBILE", h[h.SEEN_LAUNCH_WELCOME_OR_REDESIGN = 325] = "SEEN_LAUNCH_WELCOME_OR_REDESIGN", h[h.SEEN_OLD_DESIGN = 326] = "SEEN_OLD_DESIGN", h[h.SEASONAL_GIFTING_COACHMARK_2023 = 328] = "SEASONAL_GIFTING_COACHMARK_2023", h[h.SHOP_FOR_ALL_USER_POPOUT_UPSELL = 329] = "SHOP_FOR_ALL_USER_POPOUT_UPSELL", h[h.COLLECTIBLES_GIFTING_COACHMARK = 334] = "COLLECTIBLES_GIFTING_COACHMARK", h[h.SEEN_LAUNCH_WELCOME = 335] = "SEEN_LAUNCH_WELCOME", h[h.FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK = 336] = "FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK", h[h.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK = 337] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK", h[h.FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS = 338] = "FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS", h[h.OVERLAY_KEYBIND_NOTIFICATION = 340] = "OVERLAY_KEYBIND_NOTIFICATION", h[h.CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX = 343] = "CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX", h[h.UU_MIGRATION_NOTICE = 345] = "UU_MIGRATION_NOTICE", h[h.HANG_STATUS_NEW_BADGE = 346] = "HANG_STATUS_NEW_BADGE", h[h.VOICE_CALL_BG_PICKER_TOOLTIP = 347] = "VOICE_CALL_BG_PICKER_TOOLTIP", h[h.VOICE_CALL_BG_PICKER_NEW_BADGE = 348] = "VOICE_CALL_BG_PICKER_NEW_BADGE", h[h.SWIPE_TO_REPLY_COACHMARK = 349] = "SWIPE_TO_REPLY_COACHMARK", h[h.MOBILE_ACCESSIBILITY_COLOR_SETTINGS = 350] = "MOBILE_ACCESSIBILITY_COLOR_SETTINGS", h[h.POLLS_CHAT_INPUT_COACHMARK = 354] = "POLLS_CHAT_INPUT_COACHMARK", h[h.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK = 355] = "PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK", h[h.LOOTBOXES_ENTRYPOINT = 358] = "LOOTBOXES_ENTRYPOINT", h[h.TENURE_REWARD_PENDING = 360] = "TENURE_REWARD_PENDING", h[h.TENURE_REWARD_REDEEMABLE = 361] = "TENURE_REWARD_REDEEMABLE", h[h.TENURE_REWARD_REDEEMABLE_CONFETTI = 363] = "TENURE_REWARD_REDEEMABLE_CONFETTI", h[h.GAME_ONE_USER_SIGNUPS = 364] = "GAME_ONE_USER_SIGNUPS", h[h.COLLECTIBLES_SHOP_SHY_COACHTIP = 365] = "COLLECTIBLES_SHOP_SHY_COACHTIP", h[h.APP_LAUNCHER_ONBOARDING_BOTS_BANNER = 366] = "APP_LAUNCHER_ONBOARDING_BOTS_BANNER", h[h.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER = 367] = "APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER", h[h.APP_LAUNCHER_ONBOARDING_APPS_BANNER = 368] = "APP_LAUNCHER_ONBOARDING_APPS_BANNER", h[h.COLLECTIBLES_MOBILE_SHOP_MARKETING = 369] = "COLLECTIBLES_MOBILE_SHOP_MARKETING", h[h.COLLECTIBLES_MOBILE_SHOP_HALF_SHEET = 370] = "COLLECTIBLES_MOBILE_SHOP_HALF_SHEET", h[h.GENSHIN_USER_SIGNUPS = 371] = "GENSHIN_USER_SIGNUPS", h[h.ACTIVITIES_CHAT_BUTTON_NUX_V2 = 372] = "ACTIVITIES_CHAT_BUTTON_NUX_V2", h[h.ACTIVITIES_CHAT_MENU_NEW_BADGE = 373] = "ACTIVITIES_CHAT_MENU_NEW_BADGE", h[h.PREMIUM_2024_APRIL_MARKETING_MODAL = 374] = "PREMIUM_2024_APRIL_MARKETING_MODAL", h[h.PREMIUM_2024_APRIL_MARKETING_BADGE = 375] = "PREMIUM_2024_APRIL_MARKETING_BADGE", h[h.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK = 376] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK", h[h.REFERRAL_PROGRAM_PROGRESS_BAR_TOGGLE = 377] = "REFERRAL_PROGRAM_PROGRESS_BAR_TOGGLE", h[h.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE = 378] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE", h[h.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE = 379] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE", h[h.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE = 380] = "REFERRAL_PROGRAM_PREMIUM_TAB_BADGE", h[h.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP = 381] = "PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP", h[h.COLLECTIBLES_SHOP_LOFI_VIBES_COACHTIP = 382] = "COLLECTIBLES_SHOP_LOFI_VIBES_COACHTIP", h[h.COLLECTIBLES_SHOP_GALAXY_COACHTIP = 383] = "COLLECTIBLES_SHOP_GALAXY_COACHTIP", (A = l || (l = {}))[A.UNSET_EXPLICIT_CONTENT_REDACTION = 0] = "UNSET_EXPLICIT_CONTENT_REDACTION", A[A.SHOW = 1] = "SHOW", A[A.BLUR = 2] = "BLUR", A[A.BLOCK = 3] = "BLOCK", (m = u || (u = {}))[m.DEFAULT_UNSET = 0] = "DEFAULT_UNSET", m[m.DISABLED = 1] = "DISABLED", m[m.NON_FRIENDS = 2] = "NON_FRIENDS", m[m.FRIENDS_AND_NON_FRIENDS = 3] = "FRIENDS_AND_NON_FRIENDS", (N = d || (d = {}))[N.OFF = 0] = "OFF", N[N.ON_FOR_LARGE_GUILDS = 1] = "ON_FOR_LARGE_GUILDS", (p = _ || (_ = {}))[p.UNSET = 0] = "UNSET", p[p.DARK = 1] = "DARK", p[p.LIGHT = 2] = "LIGHT", (O = c || (c = {}))[O.MINT_APPLE = 0] = "MINT_APPLE", O[O.CITRUS_SHERBERT = 1] = "CITRUS_SHERBERT", O[O.RETRO_RAINCLOUD = 2] = "RETRO_RAINCLOUD", O[O.HANAMI = 3] = "HANAMI", O[O.SUNRISE = 4] = "SUNRISE", O[O.COTTON_CANDY = 5] = "COTTON_CANDY", O[O.LOFI_VIBES = 6] = "LOFI_VIBES", O[O.DESERT_KHAKI = 7] = "DESERT_KHAKI", O[O.SUNSET = 8] = "SUNSET", O[O.CHROMA_GLOW = 9] = "CHROMA_GLOW", O[O.FOREST = 10] = "FOREST", O[O.CRIMSON_MOON = 11] = "CRIMSON_MOON", O[O.MIDNIGHT_BLURPLE = 12] = "MIDNIGHT_BLURPLE", O[O.MARS = 13] = "MARS", O[O.DUSK = 14] = "DUSK", O[O.UNDER_THE_SEA = 15] = "UNDER_THE_SEA", O[O.EASTER_EGG = 16] = "EASTER_EGG", O[O.RETRO_STORM = 17] = "RETRO_STORM", O[O.NEON_NIGHTS = 18] = "NEON_NIGHTS", O[O.SEPIA = 19] = "SEPIA", O[O.STRAWBERRY_LEMONADE = 20] = "STRAWBERRY_LEMONADE", O[O.AURORA = 21] = "AURORA", (R = E || (E = {}))[R.UNSET_FAVORITE_CHANNEL_TYPE = 0] = "UNSET_FAVORITE_CHANNEL_TYPE", R[R.REFERENCE_ORIGINAL = 1] = "REFERENCE_ORIGINAL", R[R.CATEGORY = 2] = "CATEGORY";
             class v extends C.MessageType {
                 create(e) {
                     let t = {};
@@ -306572,4 +306521,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.441da03782968321e8b7.js.map
+//# sourceMappingURL=35705.b4972278edf06c022d61.js.map
