@@ -28868,24 +28868,248 @@ html .progress__00e29 {
     align-items: center
 }
 
-.countContainer__99c76 {
+.container_fb01d4 {
     display: flex;
-    direction: row;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
+.clickableCard__1c1e9 {
+    cursor: pointer;
+    box-shadow: var(--shadow-medium);
+    transition: transform.2s, box-shadow.1s
+}
+
+.clickableCard__1c1e9:hover {
+    box-shadow: var(--shadow-high);
+    transform: translatey(-2px)
+}
+
+.clickableCard__1c1e9:active {
+    box-shadow: var(--shadow-low);
+    transform: translatey(-2px)scale(.99)
+}
+
+.card_d01b6d {
+    min-width: 240px;
+    max-width: 360px;
+    height: 400px;
+    border-radius: 8px;
+    border: 1px solid var(--border-subtle);
+    overflow: hidden;
+    background: var(--background-floating);
+    display: flex;
+    flex-direction: column
+}
+
+.header__2b527 {
+    position: relative
+}
+
+.clanIcon_d70524 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: -48px
+}
+
+.clanBadge__4c045 {
+    position: absolute;
+    right: 12px;
+    top: 12px
+}
+
+.cardBrandingHeader__1db3b {
+    position: relative;
+    height: 100px;
+    width: 100%
+}
+
+.cardBrandingFooter__98c32 {
+    height: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 12px;
+    box-sizing: border-box
+}
+
+.cardContent__3001c {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1
+}
+
+.cardContentTitleSection_dd3bf1 {
+    flex: 0 0 auto
+}
+
+.cardContentDescriptionSection__30f21 {
+    flex: 1 1 auto
+}
+
+.cardNameAndTagWrapper_d87ceb {
+    position: relative;
+    width: 100%;
+    margin-bottom: 8px
+}
+
+.clanTagChipletWrapper__734a9 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%
+}
+
+.clanTagChiplet__7f357 {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px var(--border-subtle);
+    border-radius: 4px;
+    padding: 2px 6px;
+    transition: border-color.2s ease-in-out
+}
+
+.clanTagChiplet__7f357:hover {
+    border-color: var(--border-strong)
+}
+
+.playstyle__9d997 {
+    color: var(--role-orange)
+}
+
+.primetimeContainer__2c3ce {
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
+.primetimeIcon_c4d213 {
+    flex: 0 0 12px;
+    width: 12px;
+    height: 12px;
+    color: var(--text-muted)
+}
+
+.primetime_fd3eea {
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
+.traitsContainer__23f4b {
+    max-height: 64px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 8px 0 0
+}
+
+.expandedTraitsContainer__95480 {
+    flex: 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 8px 0 0
+}
+
+.trait_dfdb34 {
+    display: flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    max-width: 200px
+}
+
+.trait_dfdb34:hover {
+    border-color: var(--border-strong)
+}
+
+.highlightedTrait__03953 {
+    border-color: var(--border-strong);
+    background: var(--bg-surface-raised)
+}
+
+.cardFooter_ed5f2e {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-top: 1px solid var(--border-subtle)
+}
+
+.cardFooterInfo__5a461 {
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
+.cardFooterMembers__5eb8a {
+    display: flex;
     gap: 4px;
     align-items: center
 }
 
-.dot__3f9fc {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: var(--status-offline)
+.cardFooterMembersIcon__1c10d {
+    width: 12px;
+    height: 12px;
+    color: var(--text-muted)
+}
+
+.cardFooterGames_aebfa9 {
+    display: flex;
+    gap: 4px
+}
+
+.cardFooterGame_de9392 {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid var(--border-subtle);
+    overflow: hidden
+}
+
+.cardFooterGameImg_a0eeb2 {
+    width: 100%
+}
+
+.overflowTooltip__7c9d4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px
+}
+
+.clanInfoRow__15925 {
+    display: flex;
+    gap: 4px;
+    align-items: center
+}
+
+.clanInfoItem__65fdd {
+    flex: 0 0 auto
+}
+
+.wildcards__62f49 {
+    display: inline-flex;
+    flex: 1 1 auto;
+    overflow: hidden
+}
+
+.wildcardsOverride__26026 {
+    color: var(--text-normal)
 }
 
 .tooltipContainer__7dbbb {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0;
     padding: 4px 0;
     pointer-events: all
 }
@@ -28936,6 +29160,18 @@ html .progress__00e29 {
     text-overflow: ellipsis
 }
 
+.buttonContainer_ccb346 {
+    padding: 12px;
+    padding-top: 0
+}
+
+div.cardContainer__9bde4 {
+    border-radius: 8px 8px 0 0;
+    height: auto;
+    border: 0;
+    background: var(--bg-surface-overlay)
+}
+
 .tooltipFooter_bd5b45 {
     width: 100%
 }
@@ -28972,11 +29208,14 @@ html .progress__00e29 {
 
 .tooltip_a9f8fc {
     background: var(--bg-surface-overlay);
-    max-width: 300px
+    max-width: 360px;
+    padding: 0;
+    border-radius: 8px
 }
 
 .tooltipContainer_d9b1ea {
-    max-width: 300px
+    max-width: 360px;
+    padding: 0
 }
 
 .chipletContainerInner_bfcb1e.noTooltip_e2f660:hover {
@@ -31988,6 +32227,20 @@ span.clanTag_f4aadc {
     padding-bottom: 12px
 }
 
+.countContainer__99c76 {
+    display: flex;
+    direction: row;
+    gap: 4px;
+    align-items: center
+}
+
+.dot__3f9fc {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--status-offline)
+}
+
 .container__12eae {
     display: flex;
     flex: 1;
@@ -34367,244 +34620,6 @@ span.clanTag_f4aadc {
     height: 100%;
     max-width: var(--custom-hub-discovery-page-max-page-width);
     margin: 0 auto
-}
-
-.container_fb01d4 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap
-}
-
-.clickableCard__1c1e9 {
-    cursor: pointer;
-    box-shadow: var(--shadow-medium);
-    transition: transform.2s, box-shadow.1s
-}
-
-.clickableCard__1c1e9:hover {
-    box-shadow: var(--shadow-high);
-    transform: translatey(-2px)
-}
-
-.clickableCard__1c1e9:active {
-    box-shadow: var(--shadow-low);
-    transform: translatey(-2px)scale(.99)
-}
-
-.card_d01b6d {
-    min-width: 240px;
-    max-width: 360px;
-    height: 400px;
-    border-radius: 8px;
-    border: 1px solid var(--border-subtle);
-    overflow: hidden;
-    background: var(--background-floating);
-    display: flex;
-    flex-direction: column
-}
-
-.header__2b527 {
-    position: relative
-}
-
-.clanIcon_d70524 {
-    position: absolute;
-    width: 64px;
-    height: 64px;
-    top: -48px
-}
-
-.clanBadge__4c045 {
-    position: absolute;
-    right: 12px;
-    top: 12px
-}
-
-.cardBrandingHeader__1db3b {
-    position: relative;
-    height: 100px;
-    width: 100%
-}
-
-.cardBrandingFooter__98c32 {
-    height: 12px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 12px;
-    box-sizing: border-box
-}
-
-.cardContent__3001c {
-    padding: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    flex: 1
-}
-
-.cardContentTitleSection_dd3bf1 {
-    flex: 0 0 auto
-}
-
-.cardContentDescriptionSection__30f21 {
-    flex: 1 1 auto
-}
-
-.cardNameAndTagWrapper_d87ceb {
-    position: relative;
-    width: 100%;
-    margin-bottom: 8px
-}
-
-.clanTagChipletWrapper__734a9 {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%
-}
-
-.clanTagChiplet__7f357 {
-    display: flex;
-    gap: 4px;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px var(--border-subtle);
-    border-radius: 4px;
-    padding: 2px 6px;
-    transition: border-color.2s ease-in-out
-}
-
-.clanTagChiplet__7f357:hover {
-    border-color: var(--border-strong)
-}
-
-.playstyle__9d997 {
-    color: var(--role-orange)
-}
-
-.primetimeContainer__2c3ce {
-    display: flex;
-    flex-direction: column;
-    gap: 4px
-}
-
-.primetimeIcon_c4d213 {
-    flex: 0 0 12px;
-    width: 12px;
-    height: 12px;
-    color: var(--text-muted)
-}
-
-.primetime_fd3eea {
-    display: flex;
-    align-items: center;
-    gap: 4px
-}
-
-.traitsContainer__23f4b {
-    max-height: 64px;
-    flex: 0 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-    padding: 8px 0 0
-}
-
-.expandedTraitsContainer__95480 {
-    flex: 0 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-    padding: 8px 0 0
-}
-
-.trait_dfdb34 {
-    display: flex;
-    padding: 4px 8px;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    border: 1px solid var(--border-subtle);
-    border-radius: 16px;
-    max-width: 200px
-}
-
-.trait_dfdb34:hover {
-    border-color: var(--border-strong)
-}
-
-.highlightedTrait__03953 {
-    border-color: var(--border-strong);
-    background: var(--bg-surface-raised)
-}
-
-.cardFooter_ed5f2e {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px;
-    border-top: 1px solid var(--border-subtle)
-}
-
-.cardFooterInfo__5a461 {
-    display: flex;
-    flex-direction: column;
-    gap: 4px
-}
-
-.cardFooterMembers__5eb8a {
-    display: flex;
-    gap: 4px;
-    align-items: center
-}
-
-.cardFooterMembersIcon__1c10d {
-    width: 12px;
-    height: 12px;
-    color: var(--text-muted)
-}
-
-.cardFooterGames_aebfa9 {
-    display: flex;
-    gap: 4px
-}
-
-.cardFooterGame_de9392 {
-    width: 24px;
-    height: 24px;
-    border-radius: 4px;
-    border: 1px solid var(--border-subtle);
-    overflow: hidden
-}
-
-.cardFooterGameImg_a0eeb2 {
-    width: 100%
-}
-
-.overflowTooltip__7c9d4 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px
-}
-
-.clanInfoRow__15925 {
-    display: flex;
-    gap: 4px;
-    align-items: center
-}
-
-.clanInfoItem__65fdd {
-    flex: 0 0 auto
-}
-
-.wildcards__62f49 {
-    display: inline-flex;
-    flex: 1 1 auto;
-    overflow: hidden
-}
-
-.wildcardsOverride__26026 {
-    color: var(--text-normal)
 }
 
 .gameImage__8db0b {
@@ -135347,4 +135362,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2f31cdaf0930cde927a4.css.map*/
+/*# sourceMappingURL=99387.240438745dac2fbc6fb7.css.map*/
