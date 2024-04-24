@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287556", ", Version Hash: ").concat("1efea7e7e4f11282115f3f7b58f59bc06a037658")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287577", ", Version Hash: ").concat("c4ee747101c0305efd8aa6d5879eca592eb7ae4a")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86848,8 +86848,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287556", "287556"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287556")), t = 0), t
+                let t = parseInt((e = "287577", "287577"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287577")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112998,8 +112998,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287556",
-                    versionHash: "1efea7e7e4f11282115f3f7b58f59bc06a037658"
+                    buildNumber: "287577",
+                    versionHash: "c4ee747101c0305efd8aa6d5879eca592eb7ae4a"
                 }
             }
             n.r(t), n.d(t, {
@@ -115042,8 +115042,9 @@
                 s = n("278074"),
                 a = n("442837"),
                 o = n("367907"),
-                l = n("339085"),
-                u = n("558217"),
+                l = n("339085");
+            n("353842");
+            var u = n("558217"),
                 d = n("675478"),
                 _ = n("430824"),
                 c = n("771845"),
@@ -119483,7 +119484,7 @@
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "unknown";
                 if (null == i.default.getCurrentUser()) return;
                 let {
-                    isEmojiCaptionsEnabled: t
+                    isEmojiTextMatchSuggestionsEnabled: t
                 } = a.default.getCurrentConfig({
                     location: e
                 });
@@ -119501,25 +119502,25 @@
             n.r(t);
             let i = (0, n("818083").createExperiment)({
                 kind: "user",
-                id: "2024-02_emoji_suggestions",
+                id: "2024-04_emoji_suggestions",
                 label: "Emoji Suggestions Experiment",
                 defaultConfig: {
                     isEmojiSuggestionsEnabled: !1,
-                    isEmojiCaptionsEnabled: !1
+                    isEmojiTextMatchSuggestionsEnabled: !1
                 },
                 treatments: [{
                     id: 1,
-                    label: "Enables Emoji Suggestions without Captions",
+                    label: "Enables static emoji suggestions",
                     config: {
                         isEmojiSuggestionsEnabled: !0,
-                        isEmojiCaptionsEnabled: !1
+                        isEmojiTextMatchSuggestionsEnabled: !1
                     }
                 }, {
                     id: 2,
-                    label: "Enables Emoji Suggestions with Captions",
+                    label: "Enables Emoji Suggestions using text content and emoji captions",
                     config: {
                         isEmojiSuggestionsEnabled: !0,
-                        isEmojiCaptionsEnabled: !0
+                        isEmojiTextMatchSuggestionsEnabled: !0
                     }
                 }]
             });
@@ -167237,8 +167238,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713983124783",
-                                    build_number: "287556"
+                                    built_at: "1713983690759",
+                                    build_number: "287577"
                                 }
                             },
                             retries: 1
@@ -244965,7 +244966,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "1efea7e7e4f11282115f3f7b58f59bc06a037658"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "c4ee747101c0305efd8aa6d5879eca592eb7ae4a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273489,7 +273490,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287556"
+                                build_number: "287577"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280723,7 +280724,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287556", "287556"), 10);
+                let s = parseInt((n = "287577", "287577"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308166,4 +308167,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.138a54a669553cde0a18.js.map
+//# sourceMappingURL=35705.30109b76d512ff4de013.js.map
