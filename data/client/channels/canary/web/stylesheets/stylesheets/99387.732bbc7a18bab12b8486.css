@@ -59765,6 +59765,14 @@ div:has(>div>.modal__06f49) {
     align-items: flex-start
 }
 
+.negative48pxMarginTop_fc5de9 {
+    margin-top: -48px
+}
+
+.negative24pxMarginTop__1769a {
+    margin-top: -24px
+}
+
 .bannerContent__29dfd a {
     color: var(--white) !important;
     -webkit-text-decoration: underline;
@@ -135409,4 +135417,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.dd13111c8366c9d20728.css.map*/
+/*# sourceMappingURL=99387.732bbc7a18bab12b8486.css.map*/
