@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287365", ", Version Hash: ").concat("161b82ae9188d4850f71e25ab2477106508ce97b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287394", ", Version Hash: ").concat("468c5c511fc405f5a29c13d3cc368fd1b9774998")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -69723,7 +69723,7 @@
         100527: function(e, t, n) {
             "use strict";
             var i, r;
-            n.r(t), (r = i || (i = {})).POPOUT_WINDOW = "popout window", r.OVERLAY = "overlay", r.NOTICE = "notice", r.PREMIUM_UPSELL_TOOLTIP = "premium upsell tooltip", r.BADGE = "badge", r.USER_SETTINGS = "user settings", r.USER_SETTINGS_MENU = "user settings menu", r.USER_SETTINGS_GIFT_INVENTORY = "user settings gift inventory", r.ACCOUNT = "account", r.TEXT_AND_IMAGES = "text and images", r.GUILD_SETTINGS = "guild settings", r.OVERVIEW = "overview", r.STICKERS = "stickers", r.VANITY_URL = "vanity url", r.URI_SCHEME = "uri scheme", r.AKA = "aka", r.MESSAGES = "messages", r.NEW_MESSAGE_COMPOSER = "new message composer", r.NOTIFICATIONS = "notifications", r.NOTIFICATION_CENTER = "notification center", r.PUSH_NOTIFICATION = "push notification", r.FAMILY_CENTER = "family center", r.FRIENDS_LIST = "friends list", r.EXPANDED_FRIENDS_LIST = "expanded friends list", r.CONTACTS_LIST = "contacts list", r.ADD_FRIENDS = "add friends", r.FRIEND_REQUESTS = "friend requests", r.SUGGESTED_FRIENDS = "suggested friends", r.BLOCKED_USERS = "blocked users", r.PREMIUM_MARKETING = "premium marketing", r.PREMIUM_MARKETING_PLAN_COMPARISON = "premium marketing plan comparison", r.PREMIUM_PAYMENT_MODAL = "premium payment modal", r.PREMIUM_UPSELL_ALERT = "premium upsell alert", r.PREMIUM_UPSELL_MODAL = "premium upsell modal", r.PREMIUM_SETTINGS = "premium settings", r.PAYMENT_FLOW_TEST_PAGE = "payment flow test page", r.PREMIUM_PAYMENT_ACTION_SHEET = "premium payment action sheet", r.CHANNEL_CALL = "channel call", r.CHANNEL_CALL_CONNECTING_SCREEN = "channel call connecting screen", r.CHANNEL_DETAILS = "channel details", r.RTC_PANEL = "rtc panel", r.SOUNDBOARD_BUTTON = "soundboard button", r.SOUNDBOARD_POPOUT = "soundboard popout", r.SOUNDBOARD_WHEEL = "soundboard wheel", r.SOUNDBOARD_ACTION_SHEET = "soundboard action sheet", r.GIFT_BUTTON = "gift button", r.EXPRESSION_SUGGESTIONS = "expression suggestions", r.EMOJI_PICKER = "emoji picker", r.STICKER_PICKER = "sticker picker", r.STICKER_POPOUT = "sticker popout", r.PREMIUM_UPSELL = "premium upsell", r.EMPTY_STATE = "empty state", r.SUBSCRIPTION_DETAILS = "subscription details", r.SUBSCRIPTION_HEADER = "subscription header", r.ACCOUNT_CREDIT_BANNER = "account credit banner", r.PREMIUM_UNCANCEL_MODAL = "premium uncancel modal", r.PAST_DUE_ONE_TIME_PAYMENT_METHOD_BANNER = "past due one time payment method banner", r.STREAM_QUALITY_INDICATOR = "stream quality indicator", r.PREMIUM_TIER_0_TRIAL_ENDING_NOTICE = "premium tier 0 trial ending notice", r.PREMIUM_TIER_2_TRIAL_ENDING_NOTICE = "premium tier 2 trial ending notice", r.BOOSTED_GUILD_PERKS_MODAL = "boosted guild perks modal", r.GUILD_BOOSTING_PREMIUM_UPSELL = "guild boosting premium upsell", r.RPC = "rpc", r.BILLING_STANDALONE = "billing standalone", r.GUILD_CHANNEL_LIST = "guild channel list", r.GUILD_CHANNEL_LIST_FOOTER = "guild channel list footer", r.STICKER_MESSAGE = "sticker message", r.CHANNEL_TEXT_AREA = "channel text area", r.HEADER_BAR = "header bar", r.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL = "guild role subscription cancellation modal", r.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE = "guild role subscription purchase system message", r.GUILD_ROLE_SUBSCRIPTION_EMOJI_PICKER_UPSELL = "guild role subscription emoji picker upsell", r.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL = "guild role subscription emoji text popover upsell", r.PREMIUM_SUBSCRIPTION_CANCELLATION_MODAL = "premium subscription cancellation modal", r.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL = "application subscription cancellation modal", r.PENDING_PLAN_CHANGE_NOTICE = "pending plan change notice", r.SUBSCRIPTION_CANCEL_DOWNGRADE_MODAL = "subscription cancel downgrade modal", r.GUILD_HEADER = "guild header", r.GUILD_BANNER = "guild banner", r.GUILD_BANNER_NOTICE = "guild banner notice", r.GUILD_BOOST_PURCHASE_MODAL = "guild boost purchase modal", r.GUILD_BOOST_CANCELLATION_MODAL = "guild boost cancellation modal", r.GUILD_BOOST_UNCANCELLATION_MODAL = "guild boost uncancellation modal", r.GUILD_BOOSTING_PROGRESS_BAR = "guild boosting progress bar", r.GUILD_BOOSTING_TIER_NONE = "guild boosting tier none", r.GUILD_BOOSTING_TIER_1 = "guild boosting tier 1", r.GUILD_BOOSTING_TIER_2 = "guild boosting tier 2", r.GUILD_BOOSTING_TIER_3 = "guild boosting tier 3", r.GUILD_BOOSTING_UPSELL_BANNER = "guild boosting upsell banner", r.GUILD_BOOSTING_SIDEBAR_DISPLAY = "guild boosting sidebar display", r.GUILDS_LIST = "guilds list", r.ACTIVITY_CHANNEL_SELECTOR = "activity channel selector", r.ACTIVITY_DIRECTORY = "activity directory", r.ACTIVITY_TILE = "activity tile", r.ACTIVITY_UPSELL = "activity upsell", r.ACTIVITY_VOICE_CONTROLS_TOGGLE = "activity voice controls toggle", r.INSTANT_INVITE_MODAL = "instant invite modal", r.IMAGE_CROPPING_MODAL = "image cropping modal", r.GIF_PICKER = "gif picker", r.EXTERNAL_INVITE_LINK_MODAL = "external invite link modal", r.INVITE_MODAL = "invite modal", r.INVITE_EMBED = "invite embed", r.NEW_GUILD_BUTTON = "new guild button", r.CHARACTER_COUNT = "character count", r.DM_CHANNEL = "dm channel", r.GUILD_CHANNEL = "guild channel", r.FORUM_CHANNEL = "forum channel", r.FILE_UPLOAD_POPOUT = "file upload popout", r.VOICE_USER = "voice user", r.USER_LIST_ITEM = "user list item", r.EXECUTED_COMMAND = "executed command", r.EMOJI = "emoji", r.AVATAR = "avatar", r.USERNAME = "username", r.MEMBER_LIST = "member list", r.USER_MENTION = "user mention", r.ROLE_MENTION = "role mention", r.CONNECTIONS_ROLE_POPOUT = "connections role popout", r.PROFILE = "profile", r.PROFILE_MODAL = "profile modal", r.SIMPLIFIED_PROFILE_MODAL = "simplified profile modal", r.PROFILE_POPOUT = "profile popout", r.BITE_SIZE_PROFILE_POPOUT = "bite size profile popout", r.PROFILE_PANEL = "profile panel", r.GUILD_PROFILE = "guild profile", r.EDIT_AVATAR = "edit avatar", r.EDIT_BANNER = "edit banner", r.CHAT_INPUT = "chat input", r.CHAT_SIDEBAR = "chat sidebar", r.CREATE_THREAD = "create thread", r.PREMIUM_PREVIEW_UPSELL_HEADER = "premium preview upsell header", r.PREMIUM_UPSELL_OVERLAY = "premium upsell overlay", r.SELECT_IMAGE_MODAL = "select image modal", r.VIDEO_BACKGROUND_OPTIONS = "video background options", r.VIDEO_BACKGROUND_IMAGE_OPTION = "video background image option", r.VIDEO_BACKGROUND_CUSTOM_UPSELL = "video background custom upsell", r.CAMERA_PREVIEW = "camera preview", r.HOME_PAGE_PREMIUM_TAB = "home page premium tab", r.HOME_PAGE_SHOP_TAB = "home page shop tab", r.PREMIUM_MARKETING_SURFACE = "premium marketing surface", r.PREMIUM_MARKETING_HERO_CTA = "premium marketing hero cta", r.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR = "premium marketing referral program progress bar", r.PREMIUM_MARKETING_TIER_1_CTA = "premium marketing tier 1 cta", r.PREMIUM_MARKETING_TIER_2_CTA = "premium marketing tier 2 cta", r.PREMIUM_MARKETING_LOCALIZED_PRICING_TIER_2_CTA = "premium marketing localized pricing tier 2 cta", r.PREMIUM_MARKETING_SURFACE_HERO_CTA = "premium marketing surface hero cta", r.PREMIUM_MARKETING_SURFACE_TIER_2_CTA = "premium marketing surface tier 2 cta", r.PREMIUM_MARKETING_SURFACE_TIER_1_CTA = "premium marketing surface tier 1 cta", r.PREMIUM_MARKETING_TIER_CARD = "premium marketing tier card", r.PREMIUM_MARKETING_PERK_CARD = "premium marketing perk card", r.PREMIUM_MARKETING_FEATURE = "premium marketing feature", r.PREMIUM_MARKETING_COMPARISON_TABLE = "premium marketing comparison table", r.PREMIUM_MARKETING_FOOTER = "premium marketing footer", r.PREMIUM_MARKETING_GIFT_SECTION = "premium marketing gift section", r.CHANNEL_CALL_ACTION_BAR = "channel call action bar", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI = "aggregate premium upsell modal emoji", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_PROFILE_CUSTOMIZATION = "aggregate premium upsell modal profile customization", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_HD_STREAMING = "aggregate premium upsell modal hd streaming", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_LARGER_FILE_UPLOADS = "aggregate premium upsell modal larger file uploads", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_BOGO = "aggregate premium upsell modal bogo", r.CHANNEL_EXPANDED_CONTROLS = "channel expanded controls", r.VOICE_CONTROL_TRAY = "voice control tray", r.ACTIVE_NOW_COLUMN = "active now column", r.CONTEXT_MENU = "context menu", r.CHANNEL_ACTIVITY_FEED_VOICE_MENU = "channel activity feed voice menu", r.CHANNEL_AUDIT_LOG_MENU = "channel audit log menu", r.CHANNEL_CATEGORY_MENU = "channel category menu", r.CHANNEL_LIST_DIRECTORY_CHANNEL_MENU = "channel list menu", r.CHANNEL_LIST_STORE_CHANNEL_MENU = "channel list store channel menu", r.CHANNEL_LIST_TEXT_CHANNEL_MENU = "channel list text channel menu", r.CHANNEL_LIST_THREAD_MENU = "channel list thread menu", r.CHANNEL_LIST_VOICE_CHANNEL_MENU = "channel list voice channel menu", r.CHANNEL_TITLE_MENU = "channel title menu", r.GROUP_DM_MENU = "group dm menu", r.AUDIT_LOG_USER_MENU = "audit log user menu", r.BANNED_USER_MENU = "banned user menu", r.DM_USER_MENU = "dm user menu", r.GROUP_DM_USER_MENU = "group dm user menu", r.GUILD_CHANNEL_USER_MENU = "guild channel user menu", r.GUILD_MODERATION_USER_MENU = "guild moderation user menu", r.GUILD_MODERATION_RAID_MENU = "guild moderation raid menu", r.GUILD_SETTINGS_USER_MENU = "guild settings user menu", r.GUILD_USER_MENU = "guild user menu", r.THREAD_USER_MENU = "thread user menu", r.USER_GENERIC_MENU = "user generic menu", r.USER_PROFILE_ACTIONS_MENU = "user profile actions menu", r.USER_PROFILE_OVERFLOW_MENU = "user profile overflow menu", r.VOICE_ACTION_SHEET = "voice action sheet", r.FOCUSED_VOICE_CONTROLS = "focused voice controls", r.MASKED_LINK = "masked link", r.LAST_NITRO_HOST_ACTION_SHEET = "last nitro host action sheet", r.LAST_NITRO_HOST_LEFT_ACTION_SHEET = "last nitro host left action sheet", r.PREMIUM_TIER_0_ANNOUNCEMENT_ACTION_SHEET = "premium tier 0 announcement action sheet", r.PS_VOICE_CONNECT_UPSELL = "ps voice connect upsell", r.PROFILE_THEME_UPSELL_MODAL = "profile theme upsell modal", r.EDIT_AVATAR_DECORATION_MODAL = "edit avatar decoration modal", r.EDIT_AVATAR_DECORATION_SHEET = "edit avatar decoration sheet", r.EDIT_PROFILE_EFFECT_MODAL = "edit profile effect modal", r.EDIT_PROFILE_EFFECT_ACTION_SHEET = "edit profile effect action sheet", r.COLLECTIBLES_MOBILE_SHOP_MARKETING_SHEET = "collectibles mobile shop marketing sheet", r.ACCOUNT_PROFILE_POPOUT = "account profile popout", r.CHANNEL_CALL_OVERFLOW_ACTION_SHEET = "channel_call_overflow_action_sheet", r.USER_SETTINGS_TRY_OUT_PREMIUM = "user settings try out premium", r.ACTIVITY_COACH_MARK_NITRO = "activity coach mark nitro", r.ACTIVITY_COACH_MARK_BOOSTING = "activity coach mark boosting", r.ACTIVITY_COACH_MARK_HALLOWEEN_2022 = "activity coach mark halloween 2022", r.PREMIUM_TRIAL_TUTORIAL_COACHMARK = "premium trial tutorial coachmark", r.PREMIUM_TRIAL_TUTORIAL_TOOLTIP = "premium trial tutorial tooltip", r.ACTIVITY_COACH_MARK_BASH_OUT = "activity coach mark bash out", r.ACTIVITY_COACH_MARK_POKER = "activity coach mark poker", r.ACTIVITIES_COACH_MARK_GAME_NIGHT = "activities coach mark game night", r.STAGE_CHANNEL_CALL = "stage channel call", r.REQUEST_TO_SPEAK = "request to speak", r.STAGE_VIDEO_LIMIT = "stage video limit", r.ACTIVITIES_MINI_SHELF = "activities mini shelf", r.ACTIVITIES_MINI_SHELF_BANNER = "activities mini shelf banner", r.APP_LAUNCHER = "app launcher", r.APP_DETAIL = "app detail", r.VC_TILE_ACTIVITY_INVITE = "vc tile activity invite", r.VC_TILE_ACTIVITY_SUGGESTION = "vc tile activity suggestion", r.VC_TILE_ACTIVITY_SHELF_BUTTON = "vc tile activity shelf button", r.BURST_REACTION_TUTORIAL_COACHMARK = "super reaction tutorial coachmark", r.MESSAGE_REACTIONS = "message reactions", r.MESSAGE_PREVIEW_REACTIONS = "message preview reactions", r.APP_ICON_EDITOR = "app icon editor", r.CLIENT_THEMES_EDITOR = "client themes editor", r.CLIENT_THEMES_THEME_SELECTOR = "client themes theme selector", r.AUTOMOD_PROFILE_QUARANTINE_ALERT = "automod profile quarantine alert", r.SHARE_NITRO_EMBED = "share nitro embed", r.EMBEDDED_ACTIVITY_MESSAGE = "embedded activity message", r.REFERRAL_TRIALS_COMPOSER_BUTTON = "referral trials composer button", r.REFERRAL_TRIALS_POPOUT = "referral trials popout", r.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL = "premium marketing announcement modal", r.PREMIUM_MARKETING_PAGE_BANNER = "premium marketing page banner", r.ACTIVITY_BOOKMARK = "activity bookmark", r.ACTIVITY_BOOKMARK_LAUNCHER = "activity bookmark launcher", r.ACTIVITY_INSTANCE_EMBED = "activity instance embed", r.ACTIVITY_DETAIL_PAGE = "activity detail page", r.ACTIVITIES_PAGE = "activities page", r.ACTIVITIES_PAGE_NOTIFICATION_DOT = "activities page cta", r.ACTIVITIES_PAGE_WHATS_NEW_TILE = "activities page whats new tile", r.VOICE_PANEL = "voice panel", r.VOICE_PANEL_PRE_JOIN = "voice panel pre-join content", r.ACTIVITIES_IM_FEELING_LUCKY = "activities im feeling lucky", r.ACTIVITIES_HAPPENING_NOW = "activities happening now", r.MEDIA_VIEWER = "media viewer", r.MESSAGE_LONG_PRESS_MENU = "message long press menu", r.CHANNEL_LONG_PRESS_MENU = "channel long press menu", r.COLLECTIBLES_SHOP = "collectibles shop", r.COLLECTIBLES_SHOP_FULLSCREEN = "collectibles shop fullscreen", r.COLLECTIBLES_SHOP_INDEX_PAGE = "collectibles shop index page", r.COLLECTIBLES_SHOP_CARD = "collectibles shop card", r.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON = "collectibles shop card preview button", r.COLLECTIBLES_SHOP_DETAILS_MODAL = "collectibles shop details modal", r.COLLECTIBLES_SHOP_PROFILE_PREVIEW = "collectibles shop long form profile preview", r.COLLECTIBLES_PROFILE_SETTINGS_UPSELL = "collectibles profile settings upsell", r.COLLECTIBLES_PAYMENT_MODAL = "collectibles payment modal", r.COLLECTIBLES_COLLECTED_MODAL = "collectibles collected modal", r.COLLECTIBLES_USER_POPOUT_UPSELL = "collectibles user popout upsell", r.COLLECTIBLES_FEATURE_EDUCATION_TOOLTIP = "collectibles feature education tooltip", r.PREMIUM_SUBSCRIPTION_APRIL_CAMPAIGN_MODAL = "premium subscription april campaign modal", r.PREMIUM_BILLING_INFO = "premium billing info", r.PREMIUM_SUBSCRIPTION_DETAILS = "premium subscription details", r.APP_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "application subscription payment source with invoice", r.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW = "guild boost slot cancellation modal current invoice preview", r.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW = "guild boost slot cancellation modal renewal invoice preview", r.GUILD_BOOSTING_REVIEW_PRORATED = "guild boosting review prorated", r.GUILD_BOOSTING_REVIEW_RENEWAL = "guild boosting review renewal", r.GUILD_ROLE_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "guild role subscription payment source with invoice", r.PREMIUM_PLAN_SELECT = "premium_plan_select", r.CANCEL_INVOICE_PREVIEW = "cancel_invoice_preview", r.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT = "premium subscription fine print content", r.SUBSCRIPTION_INVOICE_FOOTER = "subscription invoice footer", r.BILLING_SWITCH_PLAN_IMMEDIATE_PRORATED_INVOICE_PREVIEW = "billing switch plan immediate prorated invoice preview", r.BILLING_SWITCH_PLAN_IMMEDIATE_RENEWAL_INVOICE_PREVIEW = "billing switch plan immediate renewal invoice preview", r.GUILD_BOOSTING_PLAN_SELECT = "GUILD_BOOSTING_PLAN_SELECT", r.MEMBER_SAFETY_PAGE = "member safety page", r.GUILD_SETTINGS_MEMBERS_PAGE = "guild settings members page", r.GUILD_MEMBER_MOD_VIEW = "guild member mod view", r.GUILD_MEMBER_APPLICATION_REVIEW = "guild member application review", r.GUILD_PRODUCT_EMBED_CARD = "guild product embed card", r.GUILD_PRODUCT_INFO_MODAL = "guild product info modal", r.GUILD_PRODUCT_PAYMENT_MODAL = "guild product payment modal", r.GUILD_SHOP_PAGE = "guild shop page", r.ACTIVITY_SHELF_ACTIVITY_DETAILS = "activity shelf activty details", r.MESSAGE_REMIX_TAG = "message remix tag", r.MESSAGE_REMIX_BUTTON = "message remix button", r.HAPPENING_NOW_EMBEDDED_ACTIVITY = "happening now embedded activity", r.CLIPS_SETTINGS = "clips settings", r.CLIPS_GALLERY = "clips gallery", r.CLIPS_GALLERY_ITEM = "clips gallery item", r.CLIPS_EDITOR = "clips editor", r.CLIPS_SHARE_MODAL = "clips share modal", r.CHANNEL_ATTACH_BUTTON = "channel attach button", r.PREMIUM_TRIAL_OFFER_ACTION_SHEET = "premium trial offer action sheet", r.PREMIUM_SUBSCRIBER_NITRO_HOME = "premium subscriber nitro home", r.CLYDE_PROFILE_SHARE_MODAL = "clyde profile share modal", r.GUILD_EVENT_MODAL = "guild event modal", r.GUILD_EVENT_CARD = "guild event card", r.EVENT_SETTINGS = "event settings", r.GUILD_EVENT_RSVP_BUTTON = "guild event rsvp button", r.GIFT_CODE_MODAL = "gift code modal", r.APP_STOREFRONT = "app storefront", r.SHOP_PRODUCT_DETAILS = "shop product details", r.SEARCH_MEMBERS = "search members", r.POLL_VOTES = "poll votes", r.YOU_SCREEN = "you screen", r.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RESUME_PREVIEW = "billing payment modal paused subscription resume invoice preview", r.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RENEWAL_PREVIEW = "billing payment modal paused subscription renewal invoice preview", t.default = i
+            n.r(t), (r = i || (i = {})).POPOUT_WINDOW = "popout window", r.OVERLAY = "overlay", r.NOTICE = "notice", r.PREMIUM_UPSELL_TOOLTIP = "premium upsell tooltip", r.BADGE = "badge", r.USER_SETTINGS = "user settings", r.USER_SETTINGS_MENU = "user settings menu", r.USER_SETTINGS_GIFT_INVENTORY = "user settings gift inventory", r.ACCOUNT = "account", r.TEXT_AND_IMAGES = "text and images", r.GUILD_SETTINGS = "guild settings", r.OVERVIEW = "overview", r.STICKERS = "stickers", r.VANITY_URL = "vanity url", r.URI_SCHEME = "uri scheme", r.AKA = "aka", r.MESSAGES = "messages", r.NEW_MESSAGE_COMPOSER = "new message composer", r.NOTIFICATIONS = "notifications", r.NOTIFICATION_CENTER = "notification center", r.PUSH_NOTIFICATION = "push notification", r.FAMILY_CENTER = "family center", r.FRIENDS_LIST = "friends list", r.EXPANDED_FRIENDS_LIST = "expanded friends list", r.CONTACTS_LIST = "contacts list", r.ADD_FRIENDS = "add friends", r.FRIEND_REQUESTS = "friend requests", r.SUGGESTED_FRIENDS = "suggested friends", r.BLOCKED_USERS = "blocked users", r.PREMIUM_MARKETING = "premium marketing", r.PREMIUM_MARKETING_PLAN_COMPARISON = "premium marketing plan comparison", r.PREMIUM_PAYMENT_MODAL = "premium payment modal", r.PREMIUM_UPSELL_ALERT = "premium upsell alert", r.PREMIUM_UPSELL_MODAL = "premium upsell modal", r.PREMIUM_SETTINGS = "premium settings", r.PAYMENT_FLOW_TEST_PAGE = "payment flow test page", r.PREMIUM_PAYMENT_ACTION_SHEET = "premium payment action sheet", r.CHANNEL_CALL = "channel call", r.CHANNEL_CALL_CONNECTING_SCREEN = "channel call connecting screen", r.CHANNEL_DETAILS = "channel details", r.RTC_PANEL = "rtc panel", r.SOUNDBOARD_BUTTON = "soundboard button", r.SOUNDBOARD_POPOUT = "soundboard popout", r.SOUNDBOARD_WHEEL = "soundboard wheel", r.SOUNDBOARD_ACTION_SHEET = "soundboard action sheet", r.GIFT_BUTTON = "gift button", r.EXPRESSION_SUGGESTIONS = "expression suggestions", r.EMOJI_PICKER = "emoji picker", r.STICKER_PICKER = "sticker picker", r.STICKER_POPOUT = "sticker popout", r.PREMIUM_UPSELL = "premium upsell", r.EMPTY_STATE = "empty state", r.SUBSCRIPTION_DETAILS = "subscription details", r.SUBSCRIPTION_HEADER = "subscription header", r.ACCOUNT_CREDIT_BANNER = "account credit banner", r.PREMIUM_UNCANCEL_MODAL = "premium uncancel modal", r.PAST_DUE_ONE_TIME_PAYMENT_METHOD_BANNER = "past due one time payment method banner", r.STREAM_QUALITY_INDICATOR = "stream quality indicator", r.PREMIUM_TIER_0_TRIAL_ENDING_NOTICE = "premium tier 0 trial ending notice", r.PREMIUM_TIER_2_TRIAL_ENDING_NOTICE = "premium tier 2 trial ending notice", r.BOOSTED_GUILD_PERKS_MODAL = "boosted guild perks modal", r.GUILD_BOOSTING_PREMIUM_UPSELL = "guild boosting premium upsell", r.RPC = "rpc", r.BILLING_STANDALONE = "billing standalone", r.GUILD_CHANNEL_LIST = "guild channel list", r.GUILD_CHANNEL_LIST_FOOTER = "guild channel list footer", r.STICKER_MESSAGE = "sticker message", r.CHANNEL_TEXT_AREA = "channel text area", r.HEADER_BAR = "header bar", r.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL = "guild role subscription cancellation modal", r.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE = "guild role subscription purchase system message", r.GUILD_ROLE_SUBSCRIPTION_EMOJI_PICKER_UPSELL = "guild role subscription emoji picker upsell", r.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL = "guild role subscription emoji text popover upsell", r.PREMIUM_SUBSCRIPTION_CANCELLATION_MODAL = "premium subscription cancellation modal", r.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL = "application subscription cancellation modal", r.PENDING_PLAN_CHANGE_NOTICE = "pending plan change notice", r.SUBSCRIPTION_CANCEL_DOWNGRADE_MODAL = "subscription cancel downgrade modal", r.GUILD_HEADER = "guild header", r.GUILD_BANNER = "guild banner", r.GUILD_BANNER_NOTICE = "guild banner notice", r.GUILD_BOOST_PURCHASE_MODAL = "guild boost purchase modal", r.GUILD_BOOST_CANCELLATION_MODAL = "guild boost cancellation modal", r.GUILD_BOOST_UNCANCELLATION_MODAL = "guild boost uncancellation modal", r.GUILD_BOOSTING_PROGRESS_BAR = "guild boosting progress bar", r.GUILD_BOOSTING_TIER_NONE = "guild boosting tier none", r.GUILD_BOOSTING_TIER_1 = "guild boosting tier 1", r.GUILD_BOOSTING_TIER_2 = "guild boosting tier 2", r.GUILD_BOOSTING_TIER_3 = "guild boosting tier 3", r.GUILD_BOOSTING_UPSELL_BANNER = "guild boosting upsell banner", r.GUILD_BOOSTING_SIDEBAR_DISPLAY = "guild boosting sidebar display", r.GUILDS_LIST = "guilds list", r.ACTIVITY_CHANNEL_SELECTOR = "activity channel selector", r.ACTIVITY_DIRECTORY = "activity directory", r.ACTIVITY_TILE = "activity tile", r.ACTIVITY_UPSELL = "activity upsell", r.ACTIVITY_VOICE_CONTROLS_TOGGLE = "activity voice controls toggle", r.INSTANT_INVITE_MODAL = "instant invite modal", r.IMAGE_CROPPING_MODAL = "image cropping modal", r.GIF_PICKER = "gif picker", r.EXTERNAL_INVITE_LINK_MODAL = "external invite link modal", r.INVITE_MODAL = "invite modal", r.INVITE_EMBED = "invite embed", r.NEW_GUILD_BUTTON = "new guild button", r.CHARACTER_COUNT = "character count", r.DM_CHANNEL = "dm channel", r.GUILD_CHANNEL = "guild channel", r.FORUM_CHANNEL = "forum channel", r.FILE_UPLOAD_POPOUT = "file upload popout", r.VOICE_USER = "voice user", r.USER_LIST_ITEM = "user list item", r.EXECUTED_COMMAND = "executed command", r.EMOJI = "emoji", r.AVATAR = "avatar", r.USERNAME = "username", r.MEMBER_LIST = "member list", r.USER_MENTION = "user mention", r.ROLE_MENTION = "role mention", r.CONNECTIONS_ROLE_POPOUT = "connections role popout", r.PROFILE = "profile", r.PROFILE_MODAL = "profile modal", r.SIMPLIFIED_PROFILE_MODAL = "simplified profile modal", r.PROFILE_POPOUT = "profile popout", r.BITE_SIZE_PROFILE_POPOUT = "bite size profile popout", r.PROFILE_PANEL = "profile panel", r.GUILD_PROFILE = "guild profile", r.EDIT_AVATAR = "edit avatar", r.EDIT_BANNER = "edit banner", r.CHAT_INPUT = "chat input", r.CHAT_SIDEBAR = "chat sidebar", r.CREATE_THREAD = "create thread", r.PREMIUM_PREVIEW_UPSELL_HEADER = "premium preview upsell header", r.PREMIUM_UPSELL_OVERLAY = "premium upsell overlay", r.SELECT_IMAGE_MODAL = "select image modal", r.VIDEO_BACKGROUND_OPTIONS = "video background options", r.VIDEO_BACKGROUND_IMAGE_OPTION = "video background image option", r.VIDEO_BACKGROUND_CUSTOM_UPSELL = "video background custom upsell", r.CAMERA_PREVIEW = "camera preview", r.HOME_PAGE_PREMIUM_TAB = "home page premium tab", r.HOME_PAGE_SHOP_TAB = "home page shop tab", r.PREMIUM_MARKETING_SURFACE = "premium marketing surface", r.PREMIUM_MARKETING_HERO_CTA = "premium marketing hero cta", r.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR = "premium marketing referral program progress bar", r.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL = "premium marketing referral program share modal", r.PREMIUM_MARKETING_TIER_1_CTA = "premium marketing tier 1 cta", r.PREMIUM_MARKETING_TIER_2_CTA = "premium marketing tier 2 cta", r.PREMIUM_MARKETING_LOCALIZED_PRICING_TIER_2_CTA = "premium marketing localized pricing tier 2 cta", r.PREMIUM_MARKETING_SURFACE_HERO_CTA = "premium marketing surface hero cta", r.PREMIUM_MARKETING_SURFACE_TIER_2_CTA = "premium marketing surface tier 2 cta", r.PREMIUM_MARKETING_SURFACE_TIER_1_CTA = "premium marketing surface tier 1 cta", r.PREMIUM_MARKETING_TIER_CARD = "premium marketing tier card", r.PREMIUM_MARKETING_PERK_CARD = "premium marketing perk card", r.PREMIUM_MARKETING_FEATURE = "premium marketing feature", r.PREMIUM_MARKETING_COMPARISON_TABLE = "premium marketing comparison table", r.PREMIUM_MARKETING_FOOTER = "premium marketing footer", r.PREMIUM_MARKETING_GIFT_SECTION = "premium marketing gift section", r.CHANNEL_CALL_ACTION_BAR = "channel call action bar", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI = "aggregate premium upsell modal emoji", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_PROFILE_CUSTOMIZATION = "aggregate premium upsell modal profile customization", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_HD_STREAMING = "aggregate premium upsell modal hd streaming", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_LARGER_FILE_UPLOADS = "aggregate premium upsell modal larger file uploads", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_BOGO = "aggregate premium upsell modal bogo", r.CHANNEL_EXPANDED_CONTROLS = "channel expanded controls", r.VOICE_CONTROL_TRAY = "voice control tray", r.ACTIVE_NOW_COLUMN = "active now column", r.CONTEXT_MENU = "context menu", r.CHANNEL_ACTIVITY_FEED_VOICE_MENU = "channel activity feed voice menu", r.CHANNEL_AUDIT_LOG_MENU = "channel audit log menu", r.CHANNEL_CATEGORY_MENU = "channel category menu", r.CHANNEL_LIST_DIRECTORY_CHANNEL_MENU = "channel list menu", r.CHANNEL_LIST_STORE_CHANNEL_MENU = "channel list store channel menu", r.CHANNEL_LIST_TEXT_CHANNEL_MENU = "channel list text channel menu", r.CHANNEL_LIST_THREAD_MENU = "channel list thread menu", r.CHANNEL_LIST_VOICE_CHANNEL_MENU = "channel list voice channel menu", r.CHANNEL_TITLE_MENU = "channel title menu", r.GROUP_DM_MENU = "group dm menu", r.AUDIT_LOG_USER_MENU = "audit log user menu", r.BANNED_USER_MENU = "banned user menu", r.DM_USER_MENU = "dm user menu", r.GROUP_DM_USER_MENU = "group dm user menu", r.GUILD_CHANNEL_USER_MENU = "guild channel user menu", r.GUILD_MODERATION_USER_MENU = "guild moderation user menu", r.GUILD_MODERATION_RAID_MENU = "guild moderation raid menu", r.GUILD_SETTINGS_USER_MENU = "guild settings user menu", r.GUILD_USER_MENU = "guild user menu", r.UNKNOWN_USER_MENU = "unknown user menu", r.THREAD_USER_MENU = "thread user menu", r.USER_GENERIC_MENU = "user generic menu", r.USER_PROFILE_ACTIONS_MENU = "user profile actions menu", r.USER_PROFILE_OVERFLOW_MENU = "user profile overflow menu", r.VOICE_ACTION_SHEET = "voice action sheet", r.FOCUSED_VOICE_CONTROLS = "focused voice controls", r.MASKED_LINK = "masked link", r.LAST_NITRO_HOST_ACTION_SHEET = "last nitro host action sheet", r.LAST_NITRO_HOST_LEFT_ACTION_SHEET = "last nitro host left action sheet", r.PREMIUM_TIER_0_ANNOUNCEMENT_ACTION_SHEET = "premium tier 0 announcement action sheet", r.PS_VOICE_CONNECT_UPSELL = "ps voice connect upsell", r.PROFILE_THEME_UPSELL_MODAL = "profile theme upsell modal", r.EDIT_AVATAR_DECORATION_MODAL = "edit avatar decoration modal", r.EDIT_AVATAR_DECORATION_SHEET = "edit avatar decoration sheet", r.EDIT_PROFILE_EFFECT_MODAL = "edit profile effect modal", r.EDIT_PROFILE_EFFECT_ACTION_SHEET = "edit profile effect action sheet", r.COLLECTIBLES_MOBILE_SHOP_MARKETING_SHEET = "collectibles mobile shop marketing sheet", r.ACCOUNT_PROFILE_POPOUT = "account profile popout", r.CHANNEL_CALL_OVERFLOW_ACTION_SHEET = "channel_call_overflow_action_sheet", r.USER_SETTINGS_TRY_OUT_PREMIUM = "user settings try out premium", r.ACTIVITY_COACH_MARK_NITRO = "activity coach mark nitro", r.ACTIVITY_COACH_MARK_BOOSTING = "activity coach mark boosting", r.ACTIVITY_COACH_MARK_HALLOWEEN_2022 = "activity coach mark halloween 2022", r.PREMIUM_TRIAL_TUTORIAL_COACHMARK = "premium trial tutorial coachmark", r.PREMIUM_TRIAL_TUTORIAL_TOOLTIP = "premium trial tutorial tooltip", r.ACTIVITY_COACH_MARK_BASH_OUT = "activity coach mark bash out", r.ACTIVITY_COACH_MARK_POKER = "activity coach mark poker", r.ACTIVITIES_COACH_MARK_GAME_NIGHT = "activities coach mark game night", r.STAGE_CHANNEL_CALL = "stage channel call", r.REQUEST_TO_SPEAK = "request to speak", r.STAGE_VIDEO_LIMIT = "stage video limit", r.ACTIVITIES_MINI_SHELF = "activities mini shelf", r.ACTIVITIES_MINI_SHELF_BANNER = "activities mini shelf banner", r.APP_LAUNCHER = "app launcher", r.APP_DETAIL = "app detail", r.VC_TILE_ACTIVITY_INVITE = "vc tile activity invite", r.VC_TILE_ACTIVITY_SUGGESTION = "vc tile activity suggestion", r.VC_TILE_ACTIVITY_SHELF_BUTTON = "vc tile activity shelf button", r.BURST_REACTION_TUTORIAL_COACHMARK = "super reaction tutorial coachmark", r.MESSAGE_REACTIONS = "message reactions", r.MESSAGE_PREVIEW_REACTIONS = "message preview reactions", r.APP_ICON_EDITOR = "app icon editor", r.CLIENT_THEMES_EDITOR = "client themes editor", r.CLIENT_THEMES_THEME_SELECTOR = "client themes theme selector", r.AUTOMOD_PROFILE_QUARANTINE_ALERT = "automod profile quarantine alert", r.SHARE_NITRO_EMBED = "share nitro embed", r.EMBEDDED_ACTIVITY_MESSAGE = "embedded activity message", r.REFERRAL_TRIALS_COMPOSER_BUTTON = "referral trials composer button", r.REFERRAL_TRIALS_POPOUT = "referral trials popout", r.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL = "premium marketing announcement modal", r.PREMIUM_MARKETING_PAGE_BANNER = "premium marketing page banner", r.ACTIVITY_BOOKMARK = "activity bookmark", r.ACTIVITY_BOOKMARK_LAUNCHER = "activity bookmark launcher", r.ACTIVITY_INSTANCE_EMBED = "activity instance embed", r.ACTIVITY_DETAIL_PAGE = "activity detail page", r.ACTIVITIES_PAGE = "activities page", r.ACTIVITIES_PAGE_NOTIFICATION_DOT = "activities page cta", r.ACTIVITIES_PAGE_WHATS_NEW_TILE = "activities page whats new tile", r.VOICE_PANEL = "voice panel", r.VOICE_PANEL_PRE_JOIN = "voice panel pre-join content", r.ACTIVITIES_IM_FEELING_LUCKY = "activities im feeling lucky", r.ACTIVITIES_HAPPENING_NOW = "activities happening now", r.MEDIA_VIEWER = "media viewer", r.MESSAGE_LONG_PRESS_MENU = "message long press menu", r.CHANNEL_LONG_PRESS_MENU = "channel long press menu", r.COLLECTIBLES_SHOP = "collectibles shop", r.COLLECTIBLES_SHOP_FULLSCREEN = "collectibles shop fullscreen", r.COLLECTIBLES_SHOP_INDEX_PAGE = "collectibles shop index page", r.COLLECTIBLES_SHOP_CARD = "collectibles shop card", r.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON = "collectibles shop card preview button", r.COLLECTIBLES_SHOP_DETAILS_MODAL = "collectibles shop details modal", r.COLLECTIBLES_SHOP_PROFILE_PREVIEW = "collectibles shop long form profile preview", r.COLLECTIBLES_PROFILE_SETTINGS_UPSELL = "collectibles profile settings upsell", r.COLLECTIBLES_PAYMENT_MODAL = "collectibles payment modal", r.COLLECTIBLES_COLLECTED_MODAL = "collectibles collected modal", r.COLLECTIBLES_USER_POPOUT_UPSELL = "collectibles user popout upsell", r.COLLECTIBLES_FEATURE_EDUCATION_TOOLTIP = "collectibles feature education tooltip", r.PREMIUM_SUBSCRIPTION_APRIL_CAMPAIGN_MODAL = "premium subscription april campaign modal", r.PREMIUM_BILLING_INFO = "premium billing info", r.PREMIUM_SUBSCRIPTION_DETAILS = "premium subscription details", r.APP_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "application subscription payment source with invoice", r.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW = "guild boost slot cancellation modal current invoice preview", r.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW = "guild boost slot cancellation modal renewal invoice preview", r.GUILD_BOOSTING_REVIEW_PRORATED = "guild boosting review prorated", r.GUILD_BOOSTING_REVIEW_RENEWAL = "guild boosting review renewal", r.GUILD_ROLE_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "guild role subscription payment source with invoice", r.PREMIUM_PLAN_SELECT = "premium_plan_select", r.CANCEL_INVOICE_PREVIEW = "cancel_invoice_preview", r.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT = "premium subscription fine print content", r.SUBSCRIPTION_INVOICE_FOOTER = "subscription invoice footer", r.BILLING_SWITCH_PLAN_IMMEDIATE_PRORATED_INVOICE_PREVIEW = "billing switch plan immediate prorated invoice preview", r.BILLING_SWITCH_PLAN_IMMEDIATE_RENEWAL_INVOICE_PREVIEW = "billing switch plan immediate renewal invoice preview", r.GUILD_BOOSTING_PLAN_SELECT = "GUILD_BOOSTING_PLAN_SELECT", r.MEMBER_SAFETY_PAGE = "member safety page", r.GUILD_SETTINGS_MEMBERS_PAGE = "guild settings members page", r.GUILD_MEMBER_MOD_VIEW = "guild member mod view", r.GUILD_MEMBER_APPLICATION_REVIEW = "guild member application review", r.GUILD_PRODUCT_EMBED_CARD = "guild product embed card", r.GUILD_PRODUCT_INFO_MODAL = "guild product info modal", r.GUILD_PRODUCT_PAYMENT_MODAL = "guild product payment modal", r.GUILD_SHOP_PAGE = "guild shop page", r.ACTIVITY_SHELF_ACTIVITY_DETAILS = "activity shelf activty details", r.MESSAGE_REMIX_TAG = "message remix tag", r.MESSAGE_REMIX_BUTTON = "message remix button", r.HAPPENING_NOW_EMBEDDED_ACTIVITY = "happening now embedded activity", r.CLIPS_SETTINGS = "clips settings", r.CLIPS_GALLERY = "clips gallery", r.CLIPS_GALLERY_ITEM = "clips gallery item", r.CLIPS_EDITOR = "clips editor", r.CLIPS_SHARE_MODAL = "clips share modal", r.CHANNEL_ATTACH_BUTTON = "channel attach button", r.PREMIUM_TRIAL_OFFER_ACTION_SHEET = "premium trial offer action sheet", r.PREMIUM_SUBSCRIBER_NITRO_HOME = "premium subscriber nitro home", r.CLYDE_PROFILE_SHARE_MODAL = "clyde profile share modal", r.GUILD_EVENT_MODAL = "guild event modal", r.GUILD_EVENT_CARD = "guild event card", r.EVENT_SETTINGS = "event settings", r.GUILD_EVENT_RSVP_BUTTON = "guild event rsvp button", r.GIFT_CODE_MODAL = "gift code modal", r.APP_STOREFRONT = "app storefront", r.SHOP_PRODUCT_DETAILS = "shop product details", r.SEARCH_MEMBERS = "search members", r.POLL_VOTES = "poll votes", r.YOU_SCREEN = "you screen", r.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RESUME_PREVIEW = "billing payment modal paused subscription resume invoice preview", r.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RENEWAL_PREVIEW = "billing payment modal paused subscription renewal invoice preview", t.default = i
         },
         98302: function(e, t, n) {
             "use strict";
@@ -86812,8 +86812,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287365", "287365"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287365")), t = 0), t
+                let t = parseInt((e = "287394", "287394"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287394")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111805,8 +111805,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287365",
-                    versionHash: "161b82ae9188d4850f71e25ab2477106508ce97b"
+                    buildNumber: "287394",
+                    versionHash: "468c5c511fc405f5a29c13d3cc368fd1b9774998"
                 }
             }
             n.r(t), n.d(t, {
@@ -148545,7 +148545,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("43643"), n.e("58227"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("74870"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("67256")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("43643"), n.e("90508"), n.e("58227"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("74870"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("67256")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -157667,15 +157667,17 @@
                             }
                             null == s && "@Clyde" === e[0] && (0, o.getClydeEnabled)(b(n), a) && (r = g.CLYDE_AI_USER_ID);
                             let u = e[1],
-                                _ = null != u && R.ID_REGEX.test(u.trim()) && n.unknownUserMentionPlaceholder ? "@".concat(L.default.Messages.UNKNOWN_USER_MENTION_PLACEHOLDER) : e[0];
+                                _ = null != u && R.ID_REGEX.test(u.trim()),
+                                T = _ && n.unknownUserMentionPlaceholder ? "@".concat(L.default.Messages.UNKNOWN_USER_MENTION_PLACEHOLDER) : e[0];
                             return {
                                 userId: r,
                                 channelId: n.channelId,
                                 guildId: null == a ? void 0 : a.getGuildId(),
+                                parsedUserId: _ ? u : null,
                                 roleName: e[2],
                                 content: [{
                                     type: "text",
-                                    content: null != i ? "@".concat(i) : _
+                                    content: null != i ? "@".concat(i) : T
                                 }]
                             }
                         }
@@ -158759,10 +158761,11 @@
                     let {
                         userId: r,
                         channelId: o,
-                        roleId: l,
-                        roleName: u
+                        parsedUserId: l,
+                        roleId: u,
+                        roleName: d
                     } = e;
-                    return null == r && (null != l || "@everyone" === u || "@here" === u) ? (0, i.jsx)(s.default, {
+                    return null == r && (null != u || "@everyone" === d || "@here" === d) ? (0, i.jsx)(s.default, {
                         inlinePreview: n.formatInline,
                         ...e,
                         children: t(e.content, n)
@@ -158770,6 +158773,7 @@
                         className: "mention",
                         userId: r,
                         channelId: o,
+                        parsedUserId: l,
                         inlinePreview: n.noStyleAndInteraction
                     }, n.key)
                 }
@@ -165168,15 +165172,27 @@
 
             function L(e) {
                 let {
-                    className: t
-                } = e, n = r.useCallback(() => {
+                    userId: t,
+                    className: s
+                } = e, a = r.useCallback(() => {
                     (0, I.showInaccessibleLinkModal)({
                         kind: "user"
                     })
-                }, []);
+                }, []), o = r.useCallback(e => {
+                    null != t && (0, d.openContextMenuLazy)(e, async () => {
+                        let {
+                            default: e
+                        } = await n.e("25073").then(n.bind(n, "80742"));
+                        return n => (0, i.jsx)(e, {
+                            ...n,
+                            userId: t
+                        })
+                    })
+                }, [t]);
                 return (0, i.jsx)(p.default, {
-                    className: t,
-                    onClick: n,
+                    className: s,
+                    onClick: a,
+                    onContextMenu: o,
                     children: "@".concat(g.default.Messages.UNKNOWN_USER_MENTION_PLACEHOLDER)
                 })
             }
@@ -165186,51 +165202,53 @@
                     className: t,
                     userId: r,
                     channelId: s,
-                    inlinePreview: I = !1
+                    parsedUserId: I,
+                    inlinePreview: g = !1
                 } = e, {
-                    analyticsLocations: g
-                } = (0, c.default)(_.default.USER_MENTION), D = (0, l.useStateFromStores)([N.default], () => N.default.getUser(r)), v = (0, l.useStateFromStores)([S.default], () => S.default.getChannel(s)), M = null != v ? v.getGuildId() : null, y = I || null == D || null == M || null == s ? void 0 : e => {
-                    null != v && (0, d.openContextMenuLazy)(e, async () => {
+                    analyticsLocations: D
+                } = (0, c.default)(_.default.USER_MENTION), v = (0, l.useStateFromStores)([N.default], () => N.default.getUser(r)), M = (0, l.useStateFromStores)([S.default], () => S.default.getChannel(s)), y = null != M ? M.getGuildId() : null, P = g || null == v || null == y || null == s ? void 0 : e => {
+                    null != M && (0, d.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
                         } = await Promise.all([n.e("99387"), n.e("79695"), n.e("1502"), n.e("70866"), n.e("12435"), n.e("6696")]).then(n.bind(n, "757387"));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            user: D,
-                            channel: v,
-                            guildId: M
+                            user: v,
+                            channel: M,
+                            guildId: y
                         })
                     })
-                }, P = R.default.useName(D), U = (0, l.useStateFromStores)([S.default, h.default, m.default], () => O.default.getNickname(M, s, D)), b = A.default.getGuild(M), G = (0, E.useClydeEnabled)(b, v) && r === C.CLYDE_AI_USER_ID ? C.CLYDE_AI_MENTION_COLOR : null;
-                if (null == D) return (0, i.jsx)(L, {
+                }, U = R.default.useName(v), b = (0, l.useStateFromStores)([S.default, h.default, m.default], () => O.default.getNickname(y, s, v)), G = A.default.getGuild(y), w = (0, E.useClydeEnabled)(G, M) && r === C.CLYDE_AI_USER_ID ? C.CLYDE_AI_MENTION_COLOR : null;
+                if (null == v) return (0, i.jsx)(L, {
+                    userId: I,
                     className: t
                 });
-                let w = e => (0, i.jsx)(p.default, {
+                let k = e => (0, i.jsx)(p.default, {
                     className: t,
-                    onContextMenu: y,
-                    color: G,
+                    onContextMenu: P,
+                    color: w,
                     ...e,
-                    children: "@".concat(null != U ? U : P)
+                    children: "@".concat(null != b ? b : U)
                 });
-                return I ? (0, i.jsx)(c.AnalyticsLocationProvider, {
-                    value: g,
-                    children: w()
+                return g ? (0, i.jsx)(c.AnalyticsLocationProvider, {
+                    value: D,
+                    children: k()
                 }) : (0, i.jsx)(c.AnalyticsLocationProvider, {
-                    value: g,
+                    value: D,
                     children: (0, i.jsx)(u.Popout, {
-                        preload: null == D ? void 0 : () => (0, T.default)(D.id, D.getAvatarURL(M, 80), {
-                            guildId: null != M ? M : void 0,
+                        preload: null == v ? void 0 : () => (0, T.default)(v.id, v.getAvatarURL(y, 80), {
+                            guildId: null != y ? y : void 0,
                             channelId: null != s ? s : void 0
                         }),
-                        renderPopout: e => (a()(null != D, "Unexpected missing user"), (0, i.jsx)(f.default, {
+                        renderPopout: e => (a()(null != v, "Unexpected missing user"), (0, i.jsx)(f.default, {
                             location: "UserMention",
-                            userId: D.id,
-                            guildId: null != M ? M : void 0,
+                            userId: v.id,
+                            guildId: null != y ? y : void 0,
                             channelId: s,
                             ...e
                         })),
                         position: o.isMobile ? "top" : "right",
-                        children: e => w(e)
+                        children: e => k(e)
                     })
                 })
             }
@@ -165697,8 +165715,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713915923538",
-                                    build_number: "287365"
+                                    built_at: "1713919820947",
+                                    build_number: "287394"
                                 }
                             },
                             retries: 1
@@ -243401,7 +243419,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "161b82ae9188d4850f71e25ab2477106508ce97b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "468c5c511fc405f5a29c13d3cc368fd1b9774998"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -271925,7 +271943,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287365"
+                                build_number: "287394"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -279111,7 +279129,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287365", "287365"), 10);
+                let s = parseInt((n = "287394", "287394"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -306554,4 +306572,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.089fefb7859cd90d48bd.js.map
+//# sourceMappingURL=35705.4e35914b1bf13a888625.js.map
