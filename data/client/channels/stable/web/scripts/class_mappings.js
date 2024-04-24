@@ -6969,9 +6969,6 @@
                 highlightedTrait: "highlightedTrait__03953",
                 overflowTooltip: "overflowTooltip__7c9d4",
                 playstyle: "playstyle__9d997",
-                primetime: "primetime_fd3eea",
-                primetimeContainer: "primetimeContainer__2c3ce",
-                primetimeIcon: "primetimeIcon_c4d213",
                 trait: "trait_dfdb34",
                 traitsContainer: "traitsContainer__23f4b",
                 wildcards: "wildcards__62f49",
@@ -20194,6 +20191,8 @@
                 bannerContent: "bannerContent__29dfd",
                 bannerSubheader: "bannerSubheader__35171",
                 countdown: "countdown__57589",
+                negative24pxMarginTop: "negative24pxMarginTop__1769a",
+                negative48pxMarginTop: "negative48pxMarginTop_fc5de9",
                 subscribeButton: "subscribeButton__4835d",
                 subscribeButtonText: "subscribeButtonText__4e08a"
             }
