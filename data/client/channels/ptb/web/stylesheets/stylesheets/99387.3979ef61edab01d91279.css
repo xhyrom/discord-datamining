@@ -34123,6 +34123,42 @@ span.clanTag_f4aadc {
     white-space: nowrap
 }
 
+.coachtip__2693f {
+    min-width: 330px;
+    max-width: 330px;
+    min-height: 92px;
+    max-height: 92px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    filter: drop-shadow(0 8px 8px hsl(var(--black-500-hsl)/.32))
+}
+
+.coachtipContent__6d5d7 {
+    display: flex
+}
+
+.coachtipInner_f8dfc2 {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    position: relative
+}
+
+.coachtipAsset_d14e01 {
+    width: 130px;
+    height: 117px;
+    position: relative
+}
+
+.coachtipTextContainer_d66684 {
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
 .loadingSpinner_a6884b {
     margin-right: 8px;
     width: 24px;
@@ -135362,4 +135398,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.4a647a3698f51bae8403.css.map*/
+/*# sourceMappingURL=99387.3979ef61edab01d91279.css.map*/
