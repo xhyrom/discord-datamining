@@ -15,20 +15,20 @@
 <p>There are 4 types of SKUs supported by Premium Apps at this time:</p>
 <h3 id="h_01HW8KWQJX9QCRHV5820DKSCEB">Subscriptions<strong>:</strong>
 </h3>
-<h4 id="h_01HW8KWY52F93JCQD6NMWQXEPG">Personal Subscription</h4>
+<h4 id="h_01HW8KWY52F93JCQD6NMWQXEPG"><strong>Personal Subscription</strong></h4>
 <ul>
     <li>A recurring subscription that allows a user to purchase access to an app’s premium features across all servers they are in with that app.</li>
 </ul>
-<h4 id="h_01HW8KX0XGS8K4DGQ3WTEV8NHS">Guild Subscription</h4>
+<h4 id="h_01HW8KX0XGS8K4DGQ3WTEV8NHS"><strong>Guild Subscription</strong></h4>
 <ul>
     <li>A recurring subscription that allows a server owner to purchase access to your app’s premium features that can be offered to all members on that server.</li>
 </ul>
 <h3 id="h_01HW8KX42M4R8JJ24FVT6C780W">One Time Purchases (OTP):</h3>
-<h4 id="h_01HW8KX6F5KR26JEEYYADVPRFE">Durable OTPs</h4>
+<h4 id="h_01HW8KX6F5KR26JEEYYADVPRFE"><strong>Durable OTPs</strong></h4>
 <ul>
     <li>A one-time purchase that is permanent and is not subject to either renewal or consumption, such as lifetime access to an app's premium features.</li>
 </ul>
-<h4 id="h_01HW8KX9CT9BSMES8BQHMNBAED">Consumable OTPs</h4>
+<h4 id="h_01HW8KX9CT9BSMES8BQHMNBAED"><strong>Consumable OTPs</strong></h4>
 <ul>
     <li>A one-time, non-renewable purchase that provides access, such as a temporary power-up or boost in a game.</li>
 </ul>
@@ -63,7 +63,7 @@
 <p>This action makes a SKU Unavailable. Note: it won’t cancel all subscribers right away, but when they reach their renewel period, it will not renew them. Does not delete a SKU.</p>
 <h3 id="h_01HW8RFERKKYDVZGD3JWRHGV3S">Delete</h3>
 <p>Deletes a SKU in the UI, but keep in mind this doesn’t fully delete. Deleted SKUs would still be listed from the endpoint. When deleting SKUs, keep in mind that this will unsubscribe everyone from it. If you are having any trouble removing SKUs,<span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;"><!-- notionvc: fdb8e1ef-4f2d-437f-bd2e-c0d76940e52c --> please </span><a style="background-color: #282929; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;" href="https://dis.gd/developer-support/premium-apps" data-darkreader-inline-bgcolor="">reach out to Developer Support</a><span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">.</span></p>
-<h3 id="h_01HW884JH9DEREEPTV4E436DZT">Editing</h3>
+<h3 id="h_01HW884JH9DEREEPTV4E436DZT">Editing SKUs</h3>
 <p>If you wish to change the SKU that is published, you can do so at any time by first unpublishing the currently published one. Keep in mind that when you unpublish a SKU, it is no longer available for sale, but users who have already subscribed will remain subscribed and you must continue to make the premium offering available to them until the end of their subscription.</p>
 <h3 id="h_01HW884JH9SA7GR08SWGGB3ZJT">Integrating SKUs</h3>
 <p>Once SKUs have been created, you can begin to integrate them into your App via the API. Visit the <a href="https://discord.com/developers/docs/monetization/overview">Monetization overview</a> in the API documentation, for guidance on how to accomplish this. When a SKU has been published and successfully integrated it will then be available in the App’s Store view.</p>
@@ -73,17 +73,18 @@
 <h3 id="h_01HW88MZ09ZJZCZNH7S6RWMEDD">Setting Up Your Store</h3>
 <p>Developers now have the ability to set up a Store page in the Developer Portal, when managing SKUs. To set up your Premium App’s Store view take the following steps:</p>
 <ul>
-    <li>Create a SKU [LINK TO SECTION]</li>
-    <li>Add a SKU icon, banner and benefits</li>
-    <li>Integrate the SKU into your app [LINK TO SECTION]</li>
-    <li>Publish a SKU to your store view with the click of a button <img src="https://support-dev.discord.com/hc/article_attachments/23036712613911" alt="premium_app_store.png" width="20" height="20">
+    <li>
+        <a href="https://support-dev.discord.com/hc/en-us/articles/17298449675927#h_01HAWGE42AV48E0ACGK0YG046K">Create a SKU</a> 
     </li>
+    <li>Add a SKU icon, banner and benefits</li>
+    <li><a href="https://support-dev.discord.com/hc/en-us/articles/17298449675927#h_01HW884JH9SA7GR08SWGGB3ZJT">Integrate the SKU into your app</a></li>
+    <li>Publish a SKU to your Store</li>
 </ul>
 <p>Managing SKUs has been improved with the addition of icons and banners to bring life to your offerings and Store, along with easy to use buttons to publish/unpublish and edit a store listing. A preview of the store page is also available to view how it would look to end users and edits to your Store view can be published in real-time.</p>
-<p><img src="https://support-dev.discord.com/hc/article_attachments/23036712619415" alt="Premium App Store Editing.png"></p>
+<p><img src="https://support-dev.discord.com/hc/article_attachments/23036712619415" alt="Premium App Store Editing.png" width="424" height="523"></p>
 <h3 id="h_01HW88SCJ487EWSKTS8P7F5894">Accessing the Store</h3>
 <p>Users can now access an App’s store page from the Bot’s profile in a server. This allows users to view available subscription and one time purchases, select a subscription to view its perks, benefits and details, and even make purchases directly from an App’s Store page!</p>
-<p><img src="https://support-dev.discord.com/hc/article_attachments/23036712625815" alt="App Store OTP listings.png"></p>
+<p><img src="https://support-dev.discord.com/hc/article_attachments/23036712625815" alt="App Store OTP listings.png" width="423" height="338"></p>
 <p><!-- notionvc: ceb12802-967f-477a-b64f-bd1336741d90 --></p>
 <p><!-- notionvc: 29b0863f-c452-49c7-8f35-3ed8827ce87a --></p>
 <h2 id="h_01HW890AK0WWNZ3WZWV5GN4T14">Analytics</h2>
@@ -95,6 +96,6 @@
 <p>If after reviewing the analytics, it appears the data is inaccurate and the 24 hour period has been taken into account, keep in mind that only subscribers who have <code>Use data to improve Discord</code> enabled will be represented. Users that do not have this setting enabled will not reflect in a Premium App’s subscription analytics. However, this only applies to user data and does not apply to revenue data. Any representation of revenue data will be accurate based on the above mentioned availability period. <!-- notionvc: 54c2d93b-75e1-42a5-b98c-73abdcc3133c --></p>
 <h3 id="h_01HW891E1BGHPKY7Z2ANJSZ1Y5">Exporting Data</h3>
 <p>If you are interested in exporting your Premium App’s Analytics data for your own use, you can do so in the form of a CSV at the bottom of the Analytics page.</p>
-<p><img src="https://support-dev.discord.com/hc/article_attachments/23036692482967" alt="aggregated_analytics.png"></p>
+<p><img src="https://support-dev.discord.com/hc/article_attachments/23036692482967" alt="aggregated_analytics.png" width="403" height="141"></p>
 <p class="undefined"><!-- notionvc: 6657bd49-3873-4f34-8914-96eea14c632e --></p>
 <p>After reviewing this and other linked articles, if you have any questions about Premium Apps SKU setup, please <a href="https://dis.gd/developer-support/premium-apps">reach out to our Developer Support team</a>!</p>
