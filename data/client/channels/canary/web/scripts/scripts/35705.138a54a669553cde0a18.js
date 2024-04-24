@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287539", ", Version Hash: ").concat("0f21a550b26ebf2e0270d88993c0f01b85d8895c")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287556", ", Version Hash: ").concat("1efea7e7e4f11282115f3f7b58f59bc06a037658")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -38709,6 +38709,7 @@
                 EMBEDDED_ACTIVITIES_BOOSTING_BADGE_TOOLTIP: "Activities below require a LVL {tier} Boost",
                 EMBEDDED_ACTIVITIES_MOBILE_ACTIVITIES_SOON_HEADER: "More activities coming soon to mobile",
                 EMBEDDED_ACTIVITIES_MOBILE_ACTIVITIES_SOON_SUBHEADER: "All Activities are available on Desktop!",
+                EMBEDDED_ACTIVITIES_ACTIVITIES_AVAILABLE_IN_TEXT: "Activities now available in text channels",
                 USE_EMBEDDED_ACTIVITIES: "Use Activities",
                 EMBEDDED_ACTIVITIES_INVALID_PERMISSIONS: "You do not have permissions to use Activities in this channel.",
                 EMBEDDED_ACTIVITIES_INVALID_CHANNEL: "You cannot launch Activities in this channel.",
@@ -86847,8 +86848,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287539", "287539"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287539")), t = 0), t
+                let t = parseInt((e = "287556", "287556"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287556")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112997,8 +112998,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287539",
-                    versionHash: "0f21a550b26ebf2e0270d88993c0f01b85d8895c"
+                    buildNumber: "287556",
+                    versionHash: "1efea7e7e4f11282115f3f7b58f59bc06a037658"
                 }
             }
             n.r(t), n.d(t, {
@@ -167236,8 +167237,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713982325760",
-                                    build_number: "287539"
+                                    built_at: "1713983124783",
+                                    build_number: "287556"
                                 }
                             },
                             retries: 1
@@ -184933,19 +184934,25 @@
         57655: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                QuestBarExperiment: function() {
+                    return c
+                },
+                QuestBarExperimentVariants: function() {
+                    return r
+                },
                 getIsEligibleForQuests: function() {
-                    return a
+                    return l
                 },
                 isQuestPreviewToolEnabled: function() {
-                    return u
+                    return _
                 },
                 useIsEligibleForQuests: function() {
-                    return o
+                    return u
                 }
             });
-            var i = n("211242"),
-                r = n("818083");
-            let s = (0, r.createExperiment)({
+            var i, r, s = n("211242"),
+                a = n("818083");
+            let o = (0, a.createExperiment)({
                     id: "2023-12_quests",
                     kind: "user",
                     label: "Quests",
@@ -184966,35 +184973,35 @@
                         }
                     }]
                 }),
-                a = e => {
+                l = e => {
                     let {
                         location: t
-                    } = e, n = s.getCurrentConfig({
+                    } = e, n = o.getCurrentConfig({
                         location: t
                     }, {
                         autoTrackExposure: !1
-                    }), r = i.default.getCurrentConfig({
+                    }), i = s.default.getCurrentConfig({
                         location: t
                     }, {
                         autoTrackExposure: !1
                     });
-                    return n.enabled && !r.paymentsBlocked
+                    return n.enabled && !i.paymentsBlocked
                 },
-                o = e => {
+                u = e => {
                     let {
                         location: t
-                    } = e, n = s.useExperiment({
+                    } = e, n = o.useExperiment({
                         location: t
                     }, {
                         autoTrackExposure: !1
-                    }), r = i.default.useExperiment({
+                    }), i = s.default.useExperiment({
                         location: t
                     }, {
                         autoTrackExposure: !1
                     });
-                    return n.enabled && !r.paymentsBlocked
+                    return n.enabled && !i.paymentsBlocked
                 },
-                l = (0, r.createExperiment)({
+                d = (0, a.createExperiment)({
                     id: "2024-04_quest_preview_tool",
                     kind: "user",
                     label: "Quest Preview Tool",
@@ -185010,16 +185017,40 @@
                     }]
                 });
 
-            function u(e) {
+            function _(e) {
                 let {
                     location: t
                 } = e;
-                return l.getCurrentConfig({
+                return d.getCurrentConfig({
                     location: t
                 }, {
                     autoTrackExposure: !1
                 }).enabled
-            }
+            }(i = r || (r = {}))[i.V1 = 0] = "V1", i[i.V2 = 1] = "V2";
+            let c = (0, a.createExperiment)({
+                id: "2024-05_quest_bar",
+                kind: "user",
+                label: "Quest Bar",
+                defaultConfig: {
+                    primaryVariant: 0,
+                    progressVariant: 0
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Quest Bar V2 with V1 Progress",
+                    config: {
+                        primaryVariant: 1,
+                        progressVariant: 0
+                    }
+                }, {
+                    id: 2,
+                    label: "Quest Bar V2",
+                    config: {
+                        primaryVariant: 1,
+                        progressVariant: 1
+                    }
+                }]
+            })
         },
         113434: function(e, t, n) {
             "use strict";
@@ -208249,6 +208280,7 @@
                             })
                         },
                         children: e => (0, i.jsx)(I.default, {
+                            text: T.default.Messages.MORE,
                             icon: c.default,
                             ...e
                         })
@@ -208282,16 +208314,15 @@
                     height: 16,
                     color: "currentColor"
                 });
-                return null != n ? (0, i.jsx)(a.Tooltip, {
+                return null != n ? (0, i.jsx)(a.TooltipContainer, {
                     text: n,
-                    children: e => (0, i.jsx)(a.Button, {
+                    children: (0, i.jsx)(a.Button, {
                         className: s()(o.button, r),
                         innerClassName: s()(o.buttonInner, l),
                         color: o.color,
                         look: a.Button.Looks.FILLED,
                         size: a.Button.Sizes.NONE,
                         grow: !1,
-                        ...e,
                         ...u,
                         children: d
                     })
@@ -244934,7 +244965,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0f21a550b26ebf2e0270d88993c0f01b85d8895c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "1efea7e7e4f11282115f3f7b58f59bc06a037658"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273458,7 +273489,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287539"
+                                build_number: "287556"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280692,7 +280723,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287539", "287539"), 10);
+                let s = parseInt((n = "287556", "287556"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308135,4 +308166,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.ba6495cf75ad00c6c991.js.map
+//# sourceMappingURL=35705.138a54a669553cde0a18.js.map
