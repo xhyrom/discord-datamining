@@ -1,4 +1,4 @@
-<p class="callout">⚠️ Note that currently, only one Subscription SKU can be published at a time and as many One Time Purchase SKUs can be published as desired.</p>
+<p class="callout">⚠️ Note that currently, only one Subscription SKU can be published at a time and as many One-Time Purchase SKUs can be published as desired.</p>
 <p>If your App and Team are eligible for <a href="https://support-dev.discord.com/hc/en-us/articles/17709085688727" target="_blank" rel="noopener noreferrer">Premium Apps</a> and you have completed the Onboarding step, <span class="discussion-id-12855f64-d37a-4de3-ad0b-4acc6020918c notion-enable-hover" data-token-index="1">you</span> are ready to start adding SKUs and creating your App’s Store view. If the Team Owner hasn’t yet completed the Onboarding flow, review the <!-- notionvc: ef715c4f-cd0b-4696-85c1-6b7b1fdaf6c9 --> <a href="https://support-dev.discord.com/hc/en-us/articles/17708927296663" target="_blank" rel="noopener noreferrer">Premium Apps Onboarding</a> article for guidance.</p>
 <h2 id="h_01HW87RGTTFT2HX2VHY6FBXHW2">Table of Contents</h2>
 <ul>
@@ -23,7 +23,7 @@
 <ul>
     <li>A recurring subscription that allows a server owner to purchase access to your app’s premium features that can be offered to all members on that server.</li>
 </ul>
-<h3 id="h_01HW8KX42M4R8JJ24FVT6C780W">One Time Purchases (OTP):</h3>
+<h3 id="h_01HW8KX42M4R8JJ24FVT6C780W">One-Time Purchases (OTP):</h3>
 <h4 id="h_01HW8KX6F5KR26JEEYYADVPRFE"><strong>Durable OTPs</strong></h4>
 <ul>
     <li>A one-time purchase that is permanent and is not subject to either renewal or consumption, such as lifetime access to an app's premium features.</li>
@@ -83,7 +83,7 @@
 <p>Managing SKUs has been improved with the addition of icons and banners to bring life to your offerings and Store, along with easy to use buttons to publish/unpublish and edit a store listing. A preview of the store page is also available to view how it would look to end users and edits to your Store view can be published in real-time.</p>
 <p><img src="https://support-dev.discord.com/hc/article_attachments/23036712619415" alt="Premium App Store Editing.png" width="424" height="523"></p>
 <h3 id="h_01HW88SCJ487EWSKTS8P7F5894">Accessing the Store</h3>
-<p>Users can now access an App’s store page from the Bot’s profile in a server. This allows users to view available subscription and one time purchases, select a subscription to view its perks, benefits and details, and even make purchases directly from an App’s Store page!</p>
+<p>Users can now access an App’s store page from the Bot’s profile in a server. This allows users to view available subscription and one-time purchases, select a subscription to view its perks, benefits and details, and even make purchases directly from an App’s Store page!</p>
 <p><img src="https://support-dev.discord.com/hc/article_attachments/23036712625815" alt="App Store OTP listings.png" width="423" height="338"></p>
 <p><!-- notionvc: ceb12802-967f-477a-b64f-bd1336741d90 --></p>
 <p><!-- notionvc: 29b0863f-c452-49c7-8f35-3ed8827ce87a --></p>

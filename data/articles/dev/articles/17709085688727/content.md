@@ -42,7 +42,7 @@
 </ul>
 <p>For more information on the Onboarding process visit the <a href="https://support-dev.discord.com/hc/en-us/articles/17708927296663" target="_blank" rel="noopener noreferrer">Premium App Onboarding</a> article.</p>
 <h2 id="h_01HB8WP0GBE0P7X6P16ZVVRHBW">Step 2 - SKUs and Monetization</h2>
-<p>After successful onboarding, SKUs can be added to the app. There are 4 types of SKUs you can add to your apps: Personal and Guild (Server) Subscriptions as well as Durable and Consumable Items, also known as One Time Purchases (OTPs). NOTE: Currently, an app can only publish 1 Subscription SKU at a time but as many OTP SKUs can be published, as desired.<!-- notionvc: 67f93f38-41ab-4ed5-bd4d-24272b606142 --></p>
+<p>After successful onboarding, SKUs can be added to the app. There are 4 types of SKUs you can add to your apps: Personal and Guild (Server) Subscriptions as well as Durable and Consumable Items, also known as One-Time Purchases (OTPs). NOTE: Currently, an app can only publish 1 Subscription SKU at a time but as many OTP SKUs can be published, as desired.<!-- notionvc: 67f93f38-41ab-4ed5-bd4d-24272b606142 --></p>
 <p>These SKUs will then be featured on an App's Store page, more information about the Premium App Store can be found in the <a href="https://support-dev.discord.com/hc/en-us/articles/17298449675927#h_01HW88K5RF2PGFJVKECHN6X2HP" target="_blank" rel="noopener noreferrer">Premium Apps SKU and Store Setup</a> article.<!-- notionvc: 10212178-d364-4fa3-b9e6-7bb5a42cdb47 --><br><!-- notionvc: e05e950c-bd59-4358-b0d9-4037a6f59f14 --></p>
 <h3 id="h_01HB8WP0GB5883T28K8SCJB02E">Types of SKUs</h3>
 <h4 id="h_01HW8T8M8GHYZJVDSSSXNP1229"><strong><span class="wysiwyg-underline">Subscriptions:</span></strong></h4>
@@ -54,7 +54,7 @@
 <ul>
     <li>A recurring subscription that allows a server owner to purchase access to your app’s premium features that can be offered to all members on that server.</li>
 </ul>
-<h4 id="h_01HW8T8SYT2R3E7EPTTRZPSK2E"><strong><span class="wysiwyg-underline">One Time Purchases (OTP):</span></strong></h4>
+<h4 id="h_01HW8T8SYT2R3E7EPTTRZPSK2E"><strong><span class="wysiwyg-underline">One-Time Purchases (OTP):</span></strong></h4>
 <p>Durable OTPs</p>
 <ul>
     <li>A one-time purchase that is permanent and is not subject to either renewal or consumption, such as lifetime access to an app's premium features.</li>
