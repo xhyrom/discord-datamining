@@ -1,0 +1,32 @@
+{
+  "id": 4408877527703,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/4408877527703.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/4408877527703-Accessible-Drag-and-Drop-FAQ",
+  "author_id": 424992137214,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 104,
+  "section_id": 115000457731,
+  "created_at": "2021-09-17T22:34:35Z",
+  "name": "Accessible Drag and Drop FAQ",
+  "title": "Accessible Drag and Drop FAQ",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-07-14T01:35:28Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "Accessibility",
+    "screen reader",
+    "server list",
+    "arranging",
+    "channels list",
+    "keyboard navigation",
+    "JAWS"
+  ]
+}
