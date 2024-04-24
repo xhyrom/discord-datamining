@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287491", ", Version Hash: ").concat("44bf1f448f6cbf04e9d9caa62344f62bc81f5106")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287501", ", Version Hash: ").concat("ba677673f264add0e8b728b8bb571b57ebaeb6fc")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -61586,9 +61586,10 @@
                     path: A,
                     hostname: p = "",
                     host: g,
-                    query: v
-                } = i.parse(e), M = R.default.isDiscordHostname(p) || R.default.isDiscordLocalhost(g, p);
-                if (M && (null == A ? void 0 : A.startsWith("/application-directory"))) {
+                    query: v,
+                    hash: M
+                } = i.parse(e), y = R.default.isDiscordHostname(p) || R.default.isDiscordLocalhost(g, p);
+                if (y && (null == A ? void 0 : A.startsWith("/application-directory"))) {
                     let [, , e, t] = A.split("/"), i = null != e && (0, l.isSnowflake)(e) ? e : void 0;
                     return s => {
                         var a;
@@ -61619,30 +61620,28 @@
                         }), !0
                     }
                 }
-                if (null != A && M && R.default.isAppRoute(A)) {
-                    let e = null != v ? {
-                        search: v
-                    } : null;
-                    return t => (null == t || t.preventDefault(), (0, f.default)(A, e), !0)
+                if (null != A && y && R.default.isAppRoute(A)) {
+                    let e = {};
+                    return null != v && (e.search = v), null != M && (e.hash = M), t => (null == t || t.preventDefault(), (0, f.default)(A, Object.keys(e).length > 0 ? e : null), !0)
                 }
-                if (null != A && M) {
+                if (null != A && y) {
                     let {
                         getOAuth2AuthorizeProps: t,
                         openOAuth2ModalWithCreateGuildModal: i
                     } = n("69580"), r = t(e);
                     if (null != r) return e => (null == e || e.preventDefault(), i(r), !0)
                 }
-                let y = (0, T.tryParseEventDetailsPath)(A);
-                if (null != A && M && null != y) return e => {
+                let P = (0, T.tryParseEventDetailsPath)(A);
+                if (null != A && y && null != P) return e => {
                     null == e || e.preventDefault();
                     let t = N.default.getGuildId();
-                    null != y.guildId && "" !== y.guildId && y.guildId !== t && (0, f.default)(C.Routes.CHANNEL(y.guildId));
-                    let n = E.default.getGuildScheduledEvent(y.guildEventId);
+                    null != P.guildId && "" !== P.guildId && P.guildId !== t && (0, f.default)(C.Routes.CHANNEL(P.guildId));
+                    let n = E.default.getGuildScheduledEvent(P.guildEventId);
                     return null != n && (0, c.openGuildEventDetails)({
                         eventId: n.id
                     }), !0
                 };
-                if (M && (null == A ? void 0 : A.startsWith("/settings/"))) {
+                if (y && (null == A ? void 0 : A.startsWith("/settings/"))) {
                     let {
                         default: e
                     } = n("357269"), t = e(A);
@@ -86814,8 +86813,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287491", "287491"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287491")), t = 0), t
+                let t = parseInt((e = "287501", "287501"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287501")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111807,8 +111806,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287491",
-                    versionHash: "44bf1f448f6cbf04e9d9caa62344f62bc81f5106"
+                    buildNumber: "287501",
+                    versionHash: "ba677673f264add0e8b728b8bb571b57ebaeb6fc"
                 }
             }
             n.r(t), n.d(t, {
@@ -155872,7 +155871,7 @@
                     return
                 }
                 if (null == _) {
-                    (0, r.transitionTo)(e);
+                    (0, r.transitionTo)(e, t, n);
                     return
                 }
                 let c = function(e) {
@@ -165667,8 +165666,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713977088052",
-                                    build_number: "287491"
+                                    built_at: "1713978303362",
+                                    build_number: "287501"
                                 }
                             },
                             retries: 1
@@ -243365,7 +243364,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "44bf1f448f6cbf04e9d9caa62344f62bc81f5106"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ba677673f264add0e8b728b8bb571b57ebaeb6fc"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -271889,7 +271888,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287491"
+                                build_number: "287501"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -279079,7 +279078,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287491", "287491"), 10);
+                let s = parseInt((n = "287501", "287501"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -306522,4 +306521,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.99e1666327ea21fcc6f3.js.map
+//# sourceMappingURL=35705.1ba0c65940592b0f40a9.js.map
