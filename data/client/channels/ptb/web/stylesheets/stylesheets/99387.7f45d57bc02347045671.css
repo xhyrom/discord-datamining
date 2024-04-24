@@ -5059,7 +5059,7 @@
 }
 
 .title__63238 {
-    font-size: 17px
+    font-size: 1.0625rem
 }
 
 .developerResources__8ef1d:hover {
@@ -5090,8 +5090,8 @@
 }
 
 .backHeader_cff6da {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     color: var(--interactive-normal)
 }
 
@@ -34383,12 +34383,12 @@ span.clanTag_f4aadc {
 
 .clickableCard__1c1e9:hover {
     box-shadow: var(--shadow-high);
-    transform: translatey(-1px)
+    transform: translatey(-2px)
 }
 
 .clickableCard__1c1e9:active {
     box-shadow: var(--shadow-low);
-    transform: translatey(-1px)scale(.99)
+    transform: translatey(-2px)scale(.99)
 }
 
 .card_d01b6d {
@@ -35182,9 +35182,7 @@ span.clanTag_f4aadc {
     bottom: 0;
     background-color: rgba(0, 0, 0, .7);
     -webkit-backdrop-filter: blur(80px);
-    backdrop-filter: blur(80px);
-    display: flex;
-    justify-content: center
+    backdrop-filter: blur(80px)
 }
 
 .saveContainer__0ae21 {
@@ -35193,13 +35191,23 @@ span.clanTag_f4aadc {
     right: 16px
 }
 
+.contentWrapper__44dc6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%
+}
+
 .content__9c33f {
-    margin-top: 120px;
+    flex: 0 1 auto;
     display: flex;
     flex-direction: column;
     gap: 40px;
     max-width: 800px;
-    align-items: center
+    align-items: center;
+    margin: 40px
 }
 
 .theme-dark .container__299a3 {
@@ -35380,7 +35388,7 @@ span.clanTag_f4aadc {
     column-gap: 16px;
     grid-row-gap: 16px;
     row-gap: 16px;
-    grid-template-columns: repeat(1, 1fr)
+    grid-template-columns: repeat(1, minmax(0, 1fr))
 }
 
 .card__56b24 {
@@ -35390,7 +35398,7 @@ span.clanTag_f4aadc {
 
 @media(min-width:940px) {
     .topPicksContent__7c8f8 {
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns: repeat(2, minmax(0, 1fr))
     }
 
     .card__56b24 {
@@ -35401,7 +35409,7 @@ span.clanTag_f4aadc {
 
 @media(min-width:1096px) {
     .topPicksContent__7c8f8 {
-        grid-template-columns: repeat(3, 1fr)
+        grid-template-columns: repeat(3, minmax(0, 1fr))
     }
 
     .card__56b24 {
@@ -35412,7 +35420,7 @@ span.clanTag_f4aadc {
 
 @media(min-width:1352px) {
     .topPicksContent__7c8f8 {
-        grid-template-columns: repeat(4, 1fr)
+        grid-template-columns: repeat(4, minmax(0, 1fr))
     }
 
     .card__56b24 {
@@ -35423,7 +35431,7 @@ span.clanTag_f4aadc {
 
 @media(min-width:1608px) {
     .topPicksContent__7c8f8 {
-        grid-template-columns: repeat(5, 1fr)
+        grid-template-columns: repeat(5, minmax(0, 1fr))
     }
 
     .card__56b24 {
@@ -35434,7 +35442,7 @@ span.clanTag_f4aadc {
 
 @media(min-width:1864px) {
     .topPicksContent__7c8f8 {
-        grid-template-columns: repeat(6, 1fr)
+        grid-template-columns: repeat(6, minmax(0, 1fr))
     }
 
     .card__56b24 {
@@ -35450,7 +35458,7 @@ span.clanTag_f4aadc {
     }
 
     .topPicksContent__7c8f8 {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(6, minmax(0, 1fr));
         width: auto;
         align-self: center
     }
@@ -79063,7 +79071,7 @@ html .invoiceCancelRow_aa7946 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 1rem;
     gap: 4px
 }
 
@@ -135343,4 +135351,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c35016b70fd6f5266c59.css.map*/
+/*# sourceMappingURL=99387.7f45d57bc02347045671.css.map*/
