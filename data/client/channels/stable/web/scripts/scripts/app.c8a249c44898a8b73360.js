@@ -5038,6 +5038,8 @@
         221840: function(e) {
             "use strict";
             e.exports = {
+                buttonContainer: "buttonContainer_ccb346",
+                cardContainer: "cardContainer__9bde4",
                 chipletContainerInner: "chipletContainerInner__3c2e4",
                 dot: "dot__74f07",
                 guildInfoContainer: "guildInfoContainer__83d68",
@@ -6113,6 +6115,16 @@
                 notes: "notes_aa436d"
             }
         },
+        349019: function(e) {
+            "use strict";
+            e.exports = {
+                coachtip: "coachtip__2693f",
+                coachtipAsset: "coachtipAsset_d14e01",
+                coachtipContent: "coachtipContent__6d5d7",
+                coachtipInner: "coachtipInner_f8dfc2",
+                coachtipTextContainer: "coachtipTextContainer_d66684"
+            }
+        },
         845169: function(e) {
             "use strict";
             e.exports = {
@@ -6134,6 +6146,7 @@
                 fontScaling: "fontScaling__42daa",
                 infoSection: "infoSection__07f39",
                 selected: "selected__31bdc",
+                thumbnail: "thumbnail__18ece",
                 userName: "userName__23133",
                 userSection: "userSection__9a4c1"
             }
@@ -6162,7 +6175,11 @@
                 interactionsContainerHeader: "interactionsContainerHeader_a937d2",
                 joinPromptContainer: "joinPromptContainer_e5abcb",
                 popout: "popout_cfa8bc",
-                popoutTitle: "popoutTitle__6f44d",
+                popoutContentBody: "popoutContentBody_f9fe14",
+                popoutContentHeader: "popoutContentHeader_daecb8",
+                popoutThumbnailContainer: "popoutThumbnailContainer_b66fac",
+                popoutUserContainer: "popoutUserContainer__5ed24",
+                popoutUsername: "popoutUsername__8e4a7",
                 shareToChannelButton: "shareToChannelButton_ee0e50",
                 shareToChannelInput: "shareToChannelInput_a160d6",
                 shareToChannelInputHasAttachments: "shareToChannelInputHasAttachments__4d1e1",
@@ -22095,7 +22112,7 @@
                 title: "title__430b9"
             }
         },
-        704100: function(e) {
+        633361: function(e) {
             "use strict";
             e.exports = {
                 arrowIcon: "arrowIcon__36dc4",
@@ -22481,6 +22498,69 @@
                 modalHeader: "modalHeader__0ede9"
             }
         },
+        602365: function(e) {
+            "use strict";
+            e.exports = {
+                content: "content__4f323",
+                contentWrapper: "contentWrapper__17cb6",
+                contentWrapperAccepted: "contentWrapperAccepted__76610",
+                contentWrapperExpanded: "contentWrapperExpanded_dec0bd",
+                wrapper: "wrapper__78610",
+                wrapperInvisible: "wrapperInvisible__68df3",
+                wrapperVisible: "wrapperVisible__4b5cb"
+            }
+        },
+        328877: function(e) {
+            "use strict";
+            e.exports = {
+                backgroundFallback: "backgroundFallback_ed8795",
+                lottieAnimation: "lottieAnimation__95349",
+                lottieAnimationBackground: "lottieAnimationBackground__1ece2",
+                lottieAnimationBackgroundWrapper: "lottieAnimationBackgroundWrapper__91661"
+            }
+        },
+        36813: function(e) {
+            "use strict";
+            e.exports = {
+                Shine: "Shine_af0e48",
+                brandingWrapper: "brandingWrapper_bdbe01",
+                contentCollapsed: "contentCollapsed__9ac9a",
+                contentCollapsedAccepted: "contentCollapsedAccepted__3b716",
+                contentCollapsedExpanded: "contentCollapsedExpanded_a07949",
+                contentCollapsedWrapper: "contentCollapsedWrapper__5bff7",
+                partnerBranding: "partnerBranding__8955d",
+                questName: "questName__8e8ba",
+                questProgressBar: "questProgressBar_ad1009",
+                questProgressHint: "questProgressHint_bf7394",
+                questProgressRewardTile: "questProgressRewardTile__41fff",
+                questProgressWrapper: "questProgressWrapper__45b8f",
+                shine: "shine__8b615"
+            }
+        },
+        396030: function(e) {
+            "use strict";
+            e.exports = {
+                contentExpanded: "contentExpanded__56788",
+                contentInteractable: "contentInteractable__76b14",
+                cta: "cta__3a999",
+                ctaClaimReward: "ctaClaimReward__60dad",
+                description: "description__9d6c2",
+                details: "details__8ced7",
+                heroAsset: "heroAsset__04a69",
+                heroAssetWrapper: "heroAssetWrapper__25526",
+                questAcceptedContent: "questAcceptedContent__74f2a",
+                questAcceptedContentCopySubheading: "questAcceptedContentCopySubheading__3f4fd",
+                questAcceptedContentHeading: "questAcceptedContentHeading__46da5",
+                questProgressRewardTile: "questProgressRewardTile__46cc9",
+                questPromoContent: "questPromoContent_f8a83c",
+                questUnacceptedContent: "questUnacceptedContent_dba3ea",
+                rewardTile: "rewardTile_d4b430",
+                submenuIcon: "submenuIcon__89d1a",
+                submenuWrapper: "submenuWrapper__71f75",
+                title: "title__6819c",
+                utils: "utils__4dc05"
+            }
+        },
         922809: function(e) {
             "use strict";
             e.exports = {
@@ -22556,64 +22636,6 @@
                 utils: "utils__9923a",
                 wrapper: "wrapper__6f800",
                 wrapperQuestAccepted: "wrapperQuestAccepted_a974bb"
-            }
-        },
-        311676: function(e) {
-            "use strict";
-            e.exports = {
-                backgroundFallback: "backgroundFallback__49ca8",
-                content: "content__25588",
-                contentWrapper: "contentWrapper__59dc5",
-                contentWrapperAccepted: "contentWrapperAccepted__51d66",
-                contentWrapperExpanded: "contentWrapperExpanded__2b468",
-                lottieAnimation: "lottieAnimation_ae4eab",
-                lottieAnimationBackground: "lottieAnimationBackground__5f8f8",
-                lottieAnimationBackgroundWrapper: "lottieAnimationBackgroundWrapper_cede2c",
-                wrapper: "wrapper_b1e1fe",
-                wrapperInvisible: "wrapperInvisible__4095f",
-                wrapperVisible: "wrapperVisible_f00ae4"
-            }
-        },
-        603961: function(e) {
-            "use strict";
-            e.exports = {
-                Shine: "Shine_e6e299",
-                brandingWrapper: "brandingWrapper__84c6a",
-                contentCollapsed: "contentCollapsed__926bb",
-                contentCollapsedAccepted: "contentCollapsedAccepted__9d6ab",
-                contentCollapsedExpanded: "contentCollapsedExpanded__3258d",
-                contentCollapsedWrapper: "contentCollapsedWrapper__1d462",
-                partnerBranding: "partnerBranding__4477f",
-                questName: "questName__67a0d",
-                questProgressBar: "questProgressBar_ed436f",
-                questProgressHint: "questProgressHint__4e117",
-                questProgressRewardTile: "questProgressRewardTile_c8545c",
-                questProgressWrapper: "questProgressWrapper_ab783f",
-                shine: "shine_ddcd6f"
-            }
-        },
-        881521: function(e) {
-            "use strict";
-            e.exports = {
-                contentExpanded: "contentExpanded_e260d1",
-                contentInteractable: "contentInteractable__7fcbe",
-                cta: "cta_f68ce1",
-                ctaClaimReward: "ctaClaimReward_c270ed",
-                description: "description__1e87a",
-                details: "details__6dee9",
-                heroAsset: "heroAsset__7f31f",
-                heroAssetWrapper: "heroAssetWrapper__5208a",
-                questAcceptedContent: "questAcceptedContent__6e04c",
-                questAcceptedContentCopySubheading: "questAcceptedContentCopySubheading__005f7",
-                questAcceptedContentHeading: "questAcceptedContentHeading__7d19d",
-                questProgressRewardTile: "questProgressRewardTile__80d38",
-                questPromoContent: "questPromoContent_c3cad8",
-                questUnacceptedContent: "questUnacceptedContent_bbaf94",
-                rewardTile: "rewardTile__0e11f",
-                submenuIcon: "submenuIcon_f30720",
-                submenuWrapper: "submenuWrapper__8c833",
-                title: "title_b6262d",
-                utils: "utils_db260c"
             }
         },
         25269: function(e) {
