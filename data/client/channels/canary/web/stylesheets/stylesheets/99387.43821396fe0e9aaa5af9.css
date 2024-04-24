@@ -58342,6 +58342,10 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     flex-direction: row
 }
 
+.text__3eeb0 {
+    color: currentColor
+}
+
 .newBadge__905d8 {
     width: -moz-fit-content;
     width: fit-content;
@@ -121776,7 +121780,8 @@ html .invoiceCancelRow__6ff3e {
     padding: var(--spacing-12);
     border-width: 1px;
     border-style: solid;
-    border-color: transparent
+    border-color: transparent;
+    cursor: pointer
 }
 
 .containerActive__5c3a7 {
@@ -135429,4 +135434,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.71fce457c80dbcdec7e9.css.map*/
+/*# sourceMappingURL=99387.43821396fe0e9aaa5af9.css.map*/
