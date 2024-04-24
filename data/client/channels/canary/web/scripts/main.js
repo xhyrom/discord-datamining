@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287748", ", Version Hash: ").concat("505e213522bffc19b4224c56abc0865f249f2898")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287762", ", Version Hash: ").concat("92be64f9c4d00a6d8a34bd4b2079468a3dd731df")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86895,8 +86895,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287748", "287748"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287748")), t = 0), t
+                let t = parseInt((e = "287762", "287762"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287762")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112811,8 +112811,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287748",
-                    versionHash: "505e213522bffc19b4224c56abc0865f249f2898"
+                    buildNumber: "287762",
+                    versionHash: "92be64f9c4d00a6d8a34bd4b2079468a3dd731df"
                 }
             }
             n.r(t), n.d(t, {
@@ -167126,8 +167126,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713998013772",
-                                    build_number: "287748"
+                                    built_at: "1714000131690",
+                                    build_number: "287762"
                                 }
                             },
                             retries: 1
@@ -206367,7 +206367,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return N
+                    return m
                 }
             });
             var i = n("735250");
@@ -206376,34 +206376,34 @@
                 s = n.n(r),
                 a = n("481060"),
                 o = n("315263"),
-                l = n("40851"),
-                u = n("100527"),
-                d = n("906732"),
-                _ = n("617136"),
-                c = n("497505"),
-                E = n("626135"),
-                I = n("785717"),
-                T = n("221292"),
-                f = n("290421"),
-                S = n("228168"),
-                h = n("981631"),
-                A = n("689938"),
-                m = n("104018");
+                l = n("100527"),
+                u = n("906732"),
+                d = n("617136"),
+                _ = n("497505"),
+                c = n("626135"),
+                E = n("785717"),
+                I = n("221292"),
+                T = n("290421"),
+                f = n("228168"),
+                S = n("981631"),
+                h = n("689938"),
+                A = n("104018");
 
-            function N(e) {
+            function m(e) {
                 let {
                     badges: t,
                     className: n,
-                    badgeClassName: r
+                    badgeClassName: r,
+                    onClose: m
                 } = e, {
                     analyticsLocations: N
-                } = (0, d.default)(u.default.BADGE), {
+                } = (0, u.default)(l.default.BADGE), {
                     trackUserProfileAction: p,
                     ...O
-                } = (0, I.useUserProfileAnalyticsContext)(), R = (0, l.useWindowDispatch)();
+                } = (0, E.useUserProfileAnalyticsContext)();
                 return (0, i.jsx)("div", {
-                    className: s()(m.container, n),
-                    "aria-label": A.default.Messages.PROFILE_USER_BADGES,
+                    className: s()(A.container, n),
+                    "aria-label": h.default.Messages.PROFILE_USER_BADGES,
                     role: "group",
                     children: t.map(e => (0, i.jsx)(a.TooltipContainer, {
                         text: e.description,
@@ -206411,7 +206411,7 @@
                             onClick: t => {
                                 p({
                                     action: "PRESS_BADGE"
-                                }), (0, T.trackUserProfileBadgePressed)({
+                                }), (0, I.trackUserProfileBadgePressed)({
                                     badge: e.id,
                                     analyticsLocations: N,
                                     ...O
@@ -206419,14 +206419,14 @@
                                 let n = null != e.link ? (0, o.default)(e.link, {
                                     analyticsLocations: N
                                 }) : null;
-                                if (null != n) return R.dispatch(h.ComponentActions.POPOUT_CLOSE), n(t)
+                                if (null != n) return null == m || m(), n(t)
                             },
                             onMouseEnter: () => {
-                                e.id === f.QUEST_COMPLETED_BADGE && E.default.track(h.AnalyticEvents.QUEST_CONTENT_VIEWED, {
-                                    ...(0, _.getContentProperties)(c.QuestContent.QUEST_BADGE)
+                                e.id === T.QUEST_COMPLETED_BADGE && c.default.track(S.AnalyticEvents.QUEST_CONTENT_VIEWED, {
+                                    ...(0, d.getContentProperties)(_.QuestContent.QUEST_BADGE)
                                 }), p({
                                     action: "HOVER_BADGE"
-                                }), (0, T.trackUserProfileBadgeHovered)({
+                                }), (0, I.trackUserProfileBadgeHovered)({
                                     badge: e.id,
                                     analyticsLocations: N,
                                     ...O
@@ -206436,8 +206436,8 @@
                             children: (0, i.jsx)("img", {
                                 alt: " ",
                                 "aria-hidden": !0,
-                                src: (0, S.getBadgeAsset)(e.icon),
-                                className: s()(m.badge, r)
+                                src: (0, f.getBadgeAsset)(e.icon),
+                                className: s()(A.badge, r)
                             })
                         })
                     }, e.id))
@@ -207889,13 +207889,15 @@
 
             function l(e) {
                 let {
-                    displayProfile: t
-                } = e, n = (0, s.default)(t);
-                return 0 === n.length ? null : (0, i.jsx)(i.Fragment, {
-                    children: (0, r.chunk)(n, 12).map(e => (0, i.jsx)(a.default, {
+                    displayProfile: t,
+                    onClose: n
+                } = e, l = (0, s.default)(t);
+                return 0 === l.length ? null : (0, i.jsx)(i.Fragment, {
+                    children: (0, r.chunk)(l, 12).map(e => (0, i.jsx)(a.default, {
                         badges: e,
                         className: o.badgeList,
-                        badgeClassName: o.badge
+                        badgeClassName: o.badge,
+                        onClose: n
                     }, e[0].id))
                 })
             }
@@ -210152,7 +210154,8 @@
                         }),
                         pronouns: null == N ? void 0 : N.pronouns,
                         tags: (0, i.jsx)(E.UserProfileBadgesTag, {
-                            displayProfile: N
+                            displayProfile: N,
+                            onClose: C
                         }),
                         nicknameIcon: g && !v ? (0, i.jsx)(_.default, {
                             user: t,
@@ -244983,7 +244986,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "505e213522bffc19b4224c56abc0865f249f2898"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "92be64f9c4d00a6d8a34bd4b2079468a3dd731df"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273507,7 +273510,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287748"
+                                build_number: "287762"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280741,7 +280744,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287748", "287748"), 10);
+                let s = parseInt((n = "287762", "287762"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308232,4 +308235,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.e20a32b8df3cae64c512.js.map
+//# sourceMappingURL=35705.7d4f49a3a460cb613f12.js.map
