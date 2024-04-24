@@ -5059,7 +5059,7 @@
 }
 
 .title__63238 {
-    font-size: 1.0625rem
+    font-size: 17px
 }
 
 .developerResources__8ef1d:hover {
@@ -5090,8 +5090,8 @@
 }
 
 .backHeader_cff6da {
-    font-size: 1.0625rem;
-    line-height: 1.5rem;
+    font-size: 17px;
+    line-height: 24px;
     color: var(--interactive-normal)
 }
 
@@ -79071,7 +79071,7 @@ html .invoiceCancelRow_aa7946 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 16px;
     gap: 4px
 }
 
@@ -99987,10 +99987,6 @@ div:has(>div>.container__8ab05) {
 
 .enhancedUpsellText__411a3 {
     color: var(--text-normal)
-}
-
-.selectorButtonWrapper__1ddd2 {
-    --custom-transition-duration: 0
 }
 
 .selectorButton_ea0609 {
@@ -135351,4 +135347,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7f45d57bc02347045671.css.map*/
+/*# sourceMappingURL=99387.5f4ccd7296448bdd44bf.css.map*/

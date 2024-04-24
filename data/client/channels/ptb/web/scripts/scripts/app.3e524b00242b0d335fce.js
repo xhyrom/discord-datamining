@@ -8970,7 +8970,6 @@
                 qualitySettingsContainer: "qualitySettingsContainer__8f353",
                 selectorButton: "selectorButton_ea0609",
                 selectorButtonSelected: "selectorButtonSelected__707fb",
-                selectorButtonWrapper: "selectorButtonWrapper__1ddd2",
                 selectorNitroText: "selectorNitroText__1d3e0",
                 selectorText: "selectorText__8286b",
                 settingsGroup: "settingsGroup_f1f968",
