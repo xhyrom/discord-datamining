@@ -32112,7 +32112,11 @@ span.clanTag_f4aadc {
     background: linear-gradient(var(--profile-gradient-primary-color), var(--profile-gradient-primary-color)var(--custom-user-banner-banner-height-popout), var(--profile-gradient-secondary-color))
 }
 
-.biteSizeInnerThemed__5cdaf,
+.biteSizeInnerThemed__5cdaf {
+    gap: 8px;
+    background: var(--bg-surface-overlay)
+}
+
 .fullSizeInnerThemed_ae6977 {
     background: var(--bg-surface-overlay)
 }
@@ -47674,12 +47678,12 @@ span.clanTag_f4aadc {
 .streamerModeEnabledBtn_b696dd {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -54066,6 +54070,10 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     background-color: hsl(var(--primary-500-hsl)/.9)
 }
 
+.webkit__8d35a {
+    scrollbar-width: auto
+}
+
 .webkit__8d35a::-webkit-scrollbar {
     width: 12px;
     height: 12px
@@ -58062,18 +58070,16 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     overflow: hidden
 }
 
-.messageInputContainer__67b4c {
-    border-radius: var(--radius-sm);
+.inner_e8ffd7 {
     background: var(--input-background)
 }
 
-.custom-profile-theme .messageInputContainer__67b4c {
+.custom-profile-theme .inner_e8ffd7 {
     background: rgb(var(--bg-overlay-color-inverse)/.1)
 }
 
-.messageInput_c1c1c4 {
-    background-color: transparent;
-    height: 44px
+.editor_f63872 {
+    --channel-text-area-placeholder: var(--text-muted)
 }
 
 .container_badb01 {
@@ -58160,15 +58166,38 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     gap: 16px
 }
 
-.statusBubbleSingleLineShape_b8e8ac {
-    border-radius: 24px
+.custom-profile-theme .statusBubble__1a4c3,
+.custom-profile-theme .statusBubbleOuter__7e51b,
+.custom-profile-theme .statusBubbleOuter__7e51b:before,
+.custom-profile-theme .statusBubbleOuter__7e51b:after {
+    background-color: var(--bg-surface-overlay)
 }
 
-.statusBubbleMultiLineShape_e94b9b {
-    border-radius: 16px
+.theme-dark .statusBubbleOuter__7e51b,
+.theme-dark .statusBubbleOuter__7e51b:before,
+.theme-dark .statusBubbleOuter__7e51b:after {
+    border: 1px solid var(--border-subtle)
+}
+
+.positionStyle_bf57a1 {
+    position: fixed;
+    width: 100%
+}
+
+.positionStyle_bf57a1.biteSize__4396a {
+    top: calc(6px + var(--custom-user-banner-height-bite-size) + var(--custom-user-profile-themed-container-user-profile-themed-padding));
+    left: 112px
+}
+
+.positionStyle_bf57a1.fullSize_b0d012 {
+    top: calc(6px + var(--custom-user-banner-height-full-size) + var(--custom-user-profile-themed-container-user-profile-themed-padding));
+    left: 158px
 }
 
 .statusBubble__1a4c3 {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text;
     position: relative;
     color: var(--text-normal);
     background-color: var(--bg-surface-raised);
@@ -58186,18 +58215,69 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     -webkit-line-clamp: unset
 }
 
-.statusBubbleSingleLineEmojiOnly_d07ae7 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 16px
+.statusBubbleOuter__7e51b {
+    position: relative;
+    background-color: var(--bg-surface-raised);
+    box-shadow: var(--shadow-low);
+    border: 1px solid var(--border-faint);
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 220px
 }
 
-.statusBubbleSingleLineTextOrMixed__0f1dc {
+.statusBubbleOuter__7e51b:before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: 10px;
+    display: block;
+    background-color: var(--bg-surface-raised);
+    box-shadow: var(--shadow-low);
+    border: 1px solid var(--border-faint);
+    border-radius: 50%;
+    width: 19px;
+    height: 19px
+}
+
+.statusBubbleOuter__7e51b:after {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: 1px;
+    display: block;
+    background-color: var(--bg-surface-raised);
+    box-shadow: var(--shadow-low);
+    border: 1px solid var(--border-faint);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px
+}
+
+.statusBubbleSingleLineWithEmojiShape_ba5ce7 {
+    border-radius: 16px
+}
+
+.statusBubbleSingleLineTextOnlyShape__997bc {
+    border-radius: 12px
+}
+
+.statusBubbleMultiLineShape_e94b9b {
+    border-radius: 16px
+}
+
+.statusBubbleSingleLineWithEmoji_eba004 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 15px
+    padding: 8px 12px;
+    gap: 8px
+}
+
+.statusBubbleSingleLineTextOnly__2584c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12px
 }
 
 .statusBubbleMultiLinePadding__0ac14 {
@@ -58208,55 +58288,23 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     padding: 10px 12px 0
 }
 
-.statusBubbleOuterMaxLinePadding__9b4d6 {
+.statusBubbleOuterMaxLine__97110 {
+    cursor: pointer;
+    position: relative;
+    top: -18px;
     padding-bottom: 10px
 }
 
-.statusBubbleOuterMaxLinePositioningOffset_f5dd84 {
-    position: relative;
-    top: -8px
+.statusBubbleSingleLineWithEmojiBottomMargin_cf7aa5 {
+    margin-bottom: 54px
 }
 
-.statusBubbleOuter__7e51b {
-    position: relative;
-    background-color: var(--bg-surface-raised);
-    box-shadow: var(--shadow-low);
-    width: -moz-fit-content;
-    width: fit-content;
-    max-width: 220px
+.statusBubbleSingleLineTextOnlyBottomMargin_f442ab {
+    margin-bottom: 39px
 }
 
-.statusBubbleOuter__7e51b:before {
-    content: "";
-    position: absolute;
-    top: -8px;
-    left: 11px;
-    display: block;
-    background-color: var(--bg-surface-raised);
-    box-shadow: var(--shadow-low);
-    border-radius: 50%;
-    width: 18px;
-    height: 18px
-}
-
-.statusBubbleOuter__7e51b:after {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: 3px;
-    display: block;
-    background-color: var(--bg-surface-raised);
-    box-shadow: var(--shadow-low);
-    border-radius: 50%;
-    width: 11px;
-    height: 11px
-}
-
-.custom-profile-theme .statusBubble__1a4c3,
-.custom-profile-theme .statusBubbleOuter__7e51b,
-.custom-profile-theme .statusBubbleOuter__7e51b:before,
-.custom-profile-theme .statusBubbleOuter__7e51b:after {
-    background-color: var(--bg-surface-overlay)
+.statusBubbleMultiLineMaxLineBottomMargin_f9c97c {
+    margin-bottom: 55px
 }
 
 .statusText__32d26 {
@@ -58264,12 +58312,12 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     display: inline
 }
 
-.soloStatusEmoji_e1c611 {
+.singleLineStatusEmoji__39816 {
     height: 32px;
     width: 32px
 }
 
-.inlineStatusEmoji__28a56 {
+.multiLineStatusEmoji__4fd93 {
     height: 16px;
     width: 16px;
     margin-right: 4px;
@@ -58277,19 +58325,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .header__725f2 {
-    z-index: 1;
-    margin-bottom: 16px
-}
-
-.customStatus__55823 {
-    padding: 8px 0;
-    height: 48px
-}
-
-.statusBubblePosition_d09a7d {
-    position: relative;
-    top: 2px;
-    left: 110px
+    z-index: 2
 }
 
 .noCustomStatusMargin_ece046 {
@@ -130401,7 +130437,8 @@ div.nagbar_c731ff {
 
 .inner__14185 {
     position: relative;
-    padding: 20px 16px 0
+    padding: 20px 16px 0;
+    z-index: 2
 }
 
 .buttons__3345e {
@@ -130417,12 +130454,6 @@ div.nagbar_c731ff {
     position: absolute;
     top: calc(-.5*(var(--custom-user-profile-modal-header-avatar-size) + var(--custom-user-profile-modal-header-total-avatar-border-size)));
     left: 22px
-}
-
-.statusBubblePosition_e98f49 {
-    position: relative;
-    top: -18px;
-    left: 140px
 }
 
 .root__8fb4a {
@@ -135398,4 +135429,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.41fde5f567766bb5e410.css.map*/
+/*# sourceMappingURL=99387.a428786479712a379766.css.map*/

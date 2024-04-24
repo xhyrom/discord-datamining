@@ -25112,18 +25112,24 @@
         181196: function(e) {
             "use strict";
             e.exports = {
-                inlineStatusEmoji: "inlineStatusEmoji__28a56",
-                soloStatusEmoji: "soloStatusEmoji_e1c611",
+                biteSize: "biteSize__4396a",
+                fullSize: "fullSize_b0d012",
+                multiLineStatusEmoji: "multiLineStatusEmoji__4fd93",
+                positionStyle: "positionStyle_bf57a1",
+                singleLineStatusEmoji: "singleLineStatusEmoji__39816",
                 statusBubble: "statusBubble__1a4c3",
                 statusBubbleMaxLinePadding: "statusBubbleMaxLinePadding__8edbc",
+                statusBubbleMultiLineMaxLineBottomMargin: "statusBubbleMultiLineMaxLineBottomMargin_f9c97c",
                 statusBubbleMultiLinePadding: "statusBubbleMultiLinePadding__0ac14",
                 statusBubbleMultiLineShape: "statusBubbleMultiLineShape_e94b9b",
                 statusBubbleOuter: "statusBubbleOuter__7e51b",
-                statusBubbleOuterMaxLinePadding: "statusBubbleOuterMaxLinePadding__9b4d6",
-                statusBubbleOuterMaxLinePositioningOffset: "statusBubbleOuterMaxLinePositioningOffset_f5dd84",
-                statusBubbleSingleLineEmojiOnly: "statusBubbleSingleLineEmojiOnly_d07ae7",
-                statusBubbleSingleLineShape: "statusBubbleSingleLineShape_b8e8ac",
-                statusBubbleSingleLineTextOrMixed: "statusBubbleSingleLineTextOrMixed__0f1dc",
+                statusBubbleOuterMaxLine: "statusBubbleOuterMaxLine__97110",
+                statusBubbleSingleLineTextOnly: "statusBubbleSingleLineTextOnly__2584c",
+                statusBubbleSingleLineTextOnlyBottomMargin: "statusBubbleSingleLineTextOnlyBottomMargin_f442ab",
+                statusBubbleSingleLineTextOnlyShape: "statusBubbleSingleLineTextOnlyShape__997bc",
+                statusBubbleSingleLineWithEmoji: "statusBubbleSingleLineWithEmoji_eba004",
+                statusBubbleSingleLineWithEmojiBottomMargin: "statusBubbleSingleLineWithEmojiBottomMargin_cf7aa5",
+                statusBubbleSingleLineWithEmojiShape: "statusBubbleSingleLineWithEmojiShape_ba5ce7",
                 statusText: "statusText__32d26"
             }
         },
@@ -25397,8 +25403,7 @@
             e.exports = {
                 avatar: "avatar__4188a",
                 buttons: "buttons__3345e",
-                inner: "inner__14185",
-                statusBubblePosition: "statusBubblePosition_e98f49"
+                inner: "inner__14185"
             }
         },
         516264: function(e) {
@@ -25579,17 +25584,15 @@
         804384: function(e) {
             "use strict";
             e.exports = {
-                messageInput: "messageInput_c1c1c4",
-                messageInputContainer: "messageInputContainer__67b4c"
+                editor: "editor_f63872",
+                inner: "inner_e8ffd7"
             }
         },
         247076: function(e) {
             "use strict";
             e.exports = {
-                customStatus: "customStatus__55823",
                 header: "header__725f2",
-                noCustomStatusMargin: "noCustomStatusMargin_ece046",
-                statusBubblePosition: "statusBubblePosition_d09a7d"
+                noCustomStatusMargin: "noCustomStatusMargin_ece046"
             }
         },
         548646: function(e) {
