@@ -4,6 +4,9 @@
     <li>
         <a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
         <ul>
+            <li>
+                <a href="https://support.discord.com/hc/en-us/articles/22225719947543#docs-internal-guid-4952a335-7fff-8091-7e1e-cd54a0ef17db">Genshin Impact</a>
+            </li>
             <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5F3SVJYBVSVPN4HQZ6">Lost Ark </a></li>
             <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5FKTMK7STY97AE7YHC">THE FINALS</a></li>
         </ul>
@@ -21,6 +24,8 @@
     <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5FBM7QBFR9KDBASXP5">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests </h1>
+<h2 id="docs-internal-guid-4952a335-7fff-8091-7e1e-cd54a0ef17db"><a href="https://support.discord.com/hc/articles/22908324765591" target="_blank" rel="noopener noreferrer">Genshin Impact - V4.6 Quest</a></h2>
+<p>The <strong>V4.6 Quest</strong> can be accepted on Discord from <strong>April 24, 2024 </strong>to<strong> May 7, 2024 (11:59pm UTC)</strong>. Quest requirements must be completed during this period to receive the reward. Reward gift codes expire <strong>May 22, 2024 (4:00pm UTC)</strong>.</p>
 <h2 id="h_01HVPBZR5F3SVJYBVSVPN4HQZ6"><a href="https://support.discord.com/hc/en-us/articles/22817772345495" target="_blank" rel="noopener noreferrer">Lost Ark - Mokoko Quest</a></h2>
 <p>The <strong>Mokoko Quest</strong> can be accepted on Discord from <strong>April 17, 2024</strong> to <strong>April 23, 2024 (11:59pm UTC)</strong>. Quest requirements must be completed during this period to receive the reward. </p>
 <h2 id="h_01HVPBZR5FKTMK7STY97AE7YHC"><a href="https://support.discord.com/hc/en-us/articles/22817411763095" target="_blank" rel="noopener noreferrer">THE FINALS - Skill Issue Set Quest</a></h2>
