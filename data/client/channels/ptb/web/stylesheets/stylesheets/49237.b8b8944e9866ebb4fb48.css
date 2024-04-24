@@ -4413,7 +4413,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-sm-normal_acaf90 {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 400
 }
@@ -4424,7 +4424,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-sm-medium__33323 {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 500
 }
@@ -4435,7 +4435,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-sm-semibold__1a90b {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 600
 }
@@ -4446,7 +4446,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-sm-bold__730b9 {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 700
 }
@@ -4457,7 +4457,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-sm-extrabold__49dbb {
     font-family: var(--font-display);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 800
 }
@@ -4468,7 +4468,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-md-normal_b488c4 {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 400
 }
@@ -4479,7 +4479,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-md-medium__1d336 {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 500
 }
@@ -4490,7 +4490,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-md-semibold_f2ad5c {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 600
 }
@@ -4501,7 +4501,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-md-bold__1f03c {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 700
 }
@@ -4512,7 +4512,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-md-extrabold__53630 {
     font-family: var(--font-display);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 800
 }
@@ -4523,7 +4523,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-lg-normal__46722 {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 400
 }
@@ -4534,7 +4534,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-lg-medium_ed9db6 {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 500
 }
@@ -4545,7 +4545,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-lg-semibold_a571df {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 600
 }
@@ -4556,7 +4556,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-lg-bold_bc96e6 {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 700
 }
@@ -4567,7 +4567,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-lg-extrabold__67e7c {
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 800
 }
@@ -4578,7 +4578,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xl-normal__80826 {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 400
 }
@@ -4589,7 +4589,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xl-medium__638df {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 500
 }
@@ -4600,7 +4600,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xl-semibold__233e3 {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 600
 }
@@ -4611,7 +4611,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xl-bold_af1426 {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 700
 }
@@ -4622,7 +4622,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xl-extrabold__61960 {
     font-family: var(--font-display);
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-weight: 800
 }
@@ -4633,7 +4633,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xxl-normal__2abbd {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 400
 }
@@ -4644,7 +4644,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xxl-medium_ae2337 {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 500
 }
@@ -4655,7 +4655,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xxl-semibold__94997 {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 600
 }
@@ -4666,7 +4666,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xxl-bold__69db2 {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 700
 }
@@ -4677,7 +4677,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xxl-extrabold__22423 {
     font-family: var(--font-display);
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.25;
     font-weight: 800
 }
@@ -4688,7 +4688,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .eyebrow__4e5bb {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 700;
     text-transform: uppercase;
@@ -4701,7 +4701,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-deprecated-12-normal_a3fe71 {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 400
 }
@@ -4712,7 +4712,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-deprecated-12-medium__0a6cb {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 500
 }
@@ -4723,7 +4723,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-deprecated-12-semibold__8ae63 {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 600
 }
@@ -4734,7 +4734,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-deprecated-12-bold__4ffdb {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -4745,7 +4745,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-deprecated-12-extrabold__93f7c {
     font-family: var(--font-display);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 800
 }
@@ -4756,7 +4756,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .redesign-heading-18-bold_a1561b {
     font-family: var(--font-display);
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -4767,7 +4767,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-xxs-normal_a63062 {
     font-family: var(--font-primary);
-    font-size: 10px;
+    font-size: .625rem;
     line-height: 1.2;
     font-weight: 400
 }
@@ -4778,7 +4778,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-xxs-medium_a2185f {
     font-family: var(--font-primary);
-    font-size: 10px;
+    font-size: .625rem;
     line-height: 1.2;
     font-weight: 500
 }
@@ -4789,7 +4789,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-xxs-semibold__3bb16 {
     font-family: var(--font-primary);
-    font-size: 10px;
+    font-size: .625rem;
     line-height: 1.2;
     font-weight: 600
 }
@@ -4800,7 +4800,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-xxs-bold_af03a4 {
     font-family: var(--font-primary);
-    font-size: 10px;
+    font-size: .625rem;
     line-height: 1.2;
     font-weight: 700
 }
@@ -4811,7 +4811,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-xs-normal_c67a02 {
     font-family: var(--font-primary);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 400
 }
@@ -4822,7 +4822,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-xs-medium__8db0b {
     font-family: var(--font-primary);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 500
 }
@@ -4833,7 +4833,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-xs-semibold__013e7 {
     font-family: var(--font-primary);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 600
 }
@@ -4844,7 +4844,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-xs-bold__32109 {
     font-family: var(--font-primary);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -4855,7 +4855,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-sm-normal__2ed3c {
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 400
 }
@@ -4866,7 +4866,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-sm-medium_a6eb5e {
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 500
 }
@@ -4877,7 +4877,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-sm-semibold__3bdce {
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 600
 }
@@ -4888,7 +4888,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-sm-bold__0bf27 {
     font-family: var(--font-primary);
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 1.2857142857142858;
     font-weight: 700
 }
@@ -4899,7 +4899,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-md-normal__7856f {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 400
 }
@@ -4910,7 +4910,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-md-medium__6f10d {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 500
 }
@@ -4921,7 +4921,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-md-semibold__1341e {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 600
 }
@@ -4932,7 +4932,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-md-bold__9b23a {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.25;
     font-weight: 700
 }
@@ -4943,7 +4943,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-lg-normal__36413 {
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 400
 }
@@ -4954,7 +4954,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-lg-medium__85778 {
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 500
 }
@@ -4965,7 +4965,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-lg-semibold__2df27 {
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 600
 }
@@ -4976,7 +4976,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-lg-bold__20c07 {
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.2;
     font-weight: 700
 }
@@ -4987,7 +4987,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .redesign-message-preview-normal__38491 {
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: .9375rem;
     line-height: 1.3333333333333333;
     font-weight: 400
 }
@@ -4998,7 +4998,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .redesign-message-preview-medium__9c7d9 {
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: .9375rem;
     line-height: 1.3333333333333333;
     font-weight: 500
 }
@@ -5009,7 +5009,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .redesign-message-preview-semibold__67127 {
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: .9375rem;
     line-height: 1.3333333333333333;
     font-weight: 600
 }
@@ -5020,7 +5020,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .redesign-message-preview-bold_afb185 {
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: .9375rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -5031,7 +5031,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .redesign-channel-title-normal_a6d7d5 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.375;
     font-weight: 400
 }
@@ -5042,7 +5042,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .redesign-channel-title-medium_d2f248 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.375;
     font-weight: 500
 }
@@ -5053,7 +5053,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .redesign-channel-title-semibold_b52fd7 {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.375;
     font-weight: 600
 }
@@ -5064,7 +5064,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .redesign-channel-title-bold_f7496f {
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.375;
     font-weight: 700
 }
@@ -5075,7 +5075,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .display-sm__1aa28 {
     font-family: var(--font-headline);
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1;
     font-weight: 800
 }
@@ -5086,7 +5086,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .display-md_b2238f {
     font-family: var(--font-headline);
-    font-size: 34px;
+    font-size: 2.125rem;
     line-height: 1.0588235294117647;
     font-weight: 800
 }
@@ -5097,7 +5097,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .display-lg__74e8d {
     font-family: var(--font-headline);
-    font-size: 44px;
+    font-size: 2.75rem;
     line-height: .9545454545454546;
     font-weight: 800
 }
@@ -5108,7 +5108,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .code_a0e885 {
     font-family: var(--font-code);
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -5124,29 +5124,29 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 }
 
 .h1_dc86b3 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
     font-weight: 600
 }
 
 .h2_da4766 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 600;
     text-transform: uppercase
 }
 
 .h3__1f119 {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     font-weight: 500
 }
 
 .h4__2a89d {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 600;
-    letter-spacing: .3px;
+    letter-spacing: .01875rem;
     text-transform: uppercase
 }
 
@@ -5178,7 +5178,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 }
 
 .errorMessage_a5e469 {
-    font-size: 12px;
+    font-size: .75rem;
     font-weight: 500;
     font-style: italic;
     text-transform: none
@@ -5302,7 +5302,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-sm-normal__35769 {
     font-family: var(--font-display);
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2857142857142858;
     font-weight: 400
 }
@@ -5313,7 +5313,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-sm-medium__00a0f {
     font-family: var(--font-display);
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2857142857142858;
     font-weight: 500
 }
@@ -5324,7 +5324,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-sm-semibold_d8cc91 {
     font-family: var(--font-display);
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2857142857142858;
     font-weight: 600
 }
@@ -5335,7 +5335,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-sm-bold__9d8bf {
     font-family: var(--font-display);
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2857142857142858;
     font-weight: 700
 }
@@ -5346,7 +5346,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-sm-extrabold__5f84d {
     font-family: var(--font-display);
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2857142857142858;
     font-weight: 800
 }
@@ -5357,7 +5357,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-md-normal__13dae {
     font-family: var(--font-display);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 400
 }
@@ -5368,7 +5368,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-md-medium__49331 {
     font-family: var(--font-display);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 500
 }
@@ -5379,7 +5379,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-md-semibold__3f566 {
     font-family: var(--font-display);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 600
 }
@@ -5390,7 +5390,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-md-bold_ff115a {
     font-family: var(--font-display);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 700
 }
@@ -5401,7 +5401,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-md-extrabold__29f21 {
     font-family: var(--font-display);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 800
 }
@@ -5412,7 +5412,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-lg-normal_ca5243 {
     font-family: var(--font-display);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 400
 }
@@ -5423,7 +5423,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-lg-medium__2a729 {
     font-family: var(--font-display);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 500
 }
@@ -5434,7 +5434,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-lg-semibold__4af10 {
     font-family: var(--font-display);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 600
 }
@@ -5445,7 +5445,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-lg-bold_ccecf8 {
     font-family: var(--font-display);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 700
 }
@@ -5456,7 +5456,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-lg-extrabold__8e32b {
     font-family: var(--font-display);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 800
 }
@@ -5467,7 +5467,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xl-normal__7ee17 {
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: 24px;
     line-height: 1.25;
     font-weight: 400
 }
@@ -5478,7 +5478,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xl-medium__161e6 {
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: 24px;
     line-height: 1.25;
     font-weight: 500
 }
@@ -5489,7 +5489,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xl-semibold__8745d {
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: 24px;
     line-height: 1.25;
     font-weight: 600
 }
@@ -5500,7 +5500,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xl-bold_f1bc79 {
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: 24px;
     line-height: 1.25;
     font-weight: 700
 }
@@ -5511,7 +5511,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xl-extrabold_c783be {
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: 24px;
     line-height: 1.25;
     font-weight: 800
 }
@@ -5522,7 +5522,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xxl-normal__45e0b {
     font-family: var(--font-display);
-    font-size: 2rem;
+    font-size: 32px;
     line-height: 1.25;
     font-weight: 400
 }
@@ -5533,7 +5533,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xxl-medium__3da58 {
     font-family: var(--font-display);
-    font-size: 2rem;
+    font-size: 32px;
     line-height: 1.25;
     font-weight: 500
 }
@@ -5544,7 +5544,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xxl-semibold_eebd9b {
     font-family: var(--font-display);
-    font-size: 2rem;
+    font-size: 32px;
     line-height: 1.25;
     font-weight: 600
 }
@@ -5555,7 +5555,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xxl-bold__98128 {
     font-family: var(--font-display);
-    font-size: 2rem;
+    font-size: 32px;
     line-height: 1.25;
     font-weight: 700
 }
@@ -5566,7 +5566,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-xxl-extrabold_e3351d {
     font-family: var(--font-display);
-    font-size: 2rem;
+    font-size: 32px;
     line-height: 1.25;
     font-weight: 800
 }
@@ -5577,7 +5577,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .eyebrow_c15ff6 {
     font-family: var(--font-display);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 700;
     text-transform: uppercase;
@@ -5590,7 +5590,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-deprecated-12-normal_aa376f {
     font-family: var(--font-display);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 400
 }
@@ -5601,7 +5601,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-deprecated-12-medium__48462 {
     font-family: var(--font-display);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 500
 }
@@ -5612,7 +5612,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-deprecated-12-semibold_f839bf {
     font-family: var(--font-display);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 600
 }
@@ -5623,7 +5623,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-deprecated-12-bold__2b4ab {
     font-family: var(--font-display);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -5634,7 +5634,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .heading-deprecated-12-extrabold__1054b {
     font-family: var(--font-display);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 800
 }
@@ -5645,7 +5645,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .redesign-heading-18-bold__5a86b {
     font-family: var(--font-display);
-    font-size: 1.125rem;
+    font-size: 18px;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -5656,7 +5656,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-xxs-normal__9f154 {
     font-family: var(--font-primary);
-    font-size: .625rem;
+    font-size: 10px;
     line-height: 1.2;
     font-weight: 400
 }
@@ -5667,7 +5667,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-xxs-medium__56120 {
     font-family: var(--font-primary);
-    font-size: .625rem;
+    font-size: 10px;
     line-height: 1.2;
     font-weight: 500
 }
@@ -5678,7 +5678,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-xxs-semibold__68df9 {
     font-family: var(--font-primary);
-    font-size: .625rem;
+    font-size: 10px;
     line-height: 1.2;
     font-weight: 600
 }
@@ -5689,7 +5689,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-xxs-bold__709fd {
     font-family: var(--font-primary);
-    font-size: .625rem;
+    font-size: 10px;
     line-height: 1.2;
     font-weight: 700
 }
@@ -5700,7 +5700,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-xs-normal__633ba {
     font-family: var(--font-primary);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 400
 }
@@ -5711,7 +5711,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-xs-medium__63349 {
     font-family: var(--font-primary);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 500
 }
@@ -5722,7 +5722,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-xs-semibold__650ee {
     font-family: var(--font-primary);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 600
 }
@@ -5733,7 +5733,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-xs-bold_ce5f75 {
     font-family: var(--font-primary);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -5744,7 +5744,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-sm-normal__65112 {
     font-family: var(--font-primary);
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2857142857142858;
     font-weight: 400
 }
@@ -5755,7 +5755,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-sm-medium__9b7ca {
     font-family: var(--font-primary);
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2857142857142858;
     font-weight: 500
 }
@@ -5766,7 +5766,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-sm-semibold_df9ed3 {
     font-family: var(--font-primary);
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2857142857142858;
     font-weight: 600
 }
@@ -5777,7 +5777,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-sm-bold_f5b921 {
     font-family: var(--font-primary);
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 1.2857142857142858;
     font-weight: 700
 }
@@ -5788,7 +5788,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-md-normal_ad1b49 {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 400
 }
@@ -5799,7 +5799,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-md-medium__968d6 {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 500
 }
@@ -5810,7 +5810,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-md-semibold__9a24f {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 600
 }
@@ -5821,7 +5821,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-md-bold__5ebfe {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.25;
     font-weight: 700
 }
@@ -5832,7 +5832,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-lg-normal__31715 {
     font-family: var(--font-primary);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 400
 }
@@ -5843,7 +5843,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-lg-medium__753a1 {
     font-family: var(--font-primary);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 500
 }
@@ -5854,7 +5854,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-lg-semibold_c13b37 {
     font-family: var(--font-primary);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 600
 }
@@ -5865,7 +5865,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .text-lg-bold_f58303 {
     font-family: var(--font-primary);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 700
 }
@@ -5876,7 +5876,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .redesign-message-preview-normal_def23c {
     font-family: var(--font-primary);
-    font-size: .9375rem;
+    font-size: 15px;
     line-height: 1.3333333333333333;
     font-weight: 400
 }
@@ -5887,7 +5887,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .redesign-message-preview-medium_d9efdf {
     font-family: var(--font-primary);
-    font-size: .9375rem;
+    font-size: 15px;
     line-height: 1.3333333333333333;
     font-weight: 500
 }
@@ -5898,7 +5898,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .redesign-message-preview-semibold__16a4e {
     font-family: var(--font-primary);
-    font-size: .9375rem;
+    font-size: 15px;
     line-height: 1.3333333333333333;
     font-weight: 600
 }
@@ -5909,7 +5909,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .redesign-message-preview-bold__59de9 {
     font-family: var(--font-primary);
-    font-size: .9375rem;
+    font-size: 15px;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -5920,7 +5920,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .redesign-channel-title-normal_b299b7 {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.375;
     font-weight: 400
 }
@@ -5931,7 +5931,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .redesign-channel-title-medium__6c8cb {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.375;
     font-weight: 500
 }
@@ -5942,7 +5942,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .redesign-channel-title-semibold_d0caaa {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.375;
     font-weight: 600
 }
@@ -5953,7 +5953,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .redesign-channel-title-bold__5dc74 {
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.375;
     font-weight: 700
 }
@@ -5964,7 +5964,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .display-sm__4a408 {
     font-family: var(--font-headline);
-    font-size: 1.25rem;
+    font-size: 20px;
     line-height: 1;
     font-weight: 800
 }
@@ -5975,7 +5975,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .display-md_e6613b {
     font-family: var(--font-headline);
-    font-size: 2.125rem;
+    font-size: 34px;
     line-height: 1.0588235294117647;
     font-weight: 800
 }
@@ -5986,7 +5986,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .display-lg_c667bf {
     font-family: var(--font-headline);
-    font-size: 2.75rem;
+    font-size: 44px;
     line-height: .9545454545454546;
     font-weight: 800
 }
@@ -5997,7 +5997,7 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .code__6cca3 {
     font-family: var(--font-code);
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.3333333333333333;
     font-weight: 700
 }
@@ -28175,4 +28175,4 @@ span.button_ae40a4.disabled__1dc58 {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.12d8ee469c2d362b1fe0.css.map*/
+/*# sourceMappingURL=49237.b8b8944e9866ebb4fb48.css.map*/

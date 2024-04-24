@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287594", ", Version Hash: ").concat("3fa5773c57ab1897653c3791091acf6115d680d1")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287610", ", Version Hash: ").concat("bf44d0f3d90dfad04af12c63a45086bde2d884d3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55140,7 +55140,7 @@
                 STOREFRONT_DURABLE_AVAILABILITY: "1 / 1 Available",
                 STOREFRONT_DURABLE_AVAILABILITY_NONE: "0 / 1 Available",
                 STOREFRONT_MUST_LOGIN: "Login to browse store",
-                STOREFRONT_VIEW_TOS_PP: "View [Terms of Service]({tosUrl}) and [Privacy Policy]({ppUrl})",
+                STOREFRONT_VIEW_TOS_PP: "View the app's [Terms of Service]({tosUrl}) and [Privacy Policy]({ppUrl})",
                 STOREFRONT_NO_TOS_PP: "This developer has not setup terms of service and privacy policy.",
                 QUIET_MODE_DISABLED: "Focus Mode Disabled",
                 QUIET_MODE_ENABLED: "Focus Mode Enabled",
@@ -55192,6 +55192,10 @@
                 MEMBER_LIST_CONTENT_FEED_MARATHON: "Marathon",
                 MEMBER_LIST_CONTENT_FEED_PLAYED_FOR_HOURS: "Played for {hours}h",
                 MEMBER_LIST_CONTENT_FEED_STREAK_DAYS: "{days}x Streak",
+                MEMBER_LIST_CONTENT_POPOUT_USER_PLAYING: "$[{username}](nameHook) is playing",
+                MEMBER_LIST_CONTENT_POPOUT_USER_PLAYED: "$[{username}](nameHook) played",
+                MEMBER_LIST_CONTENT_POPOUT_USER_WATCHING: "$[{username}](nameHook) is watching",
+                MEMBER_LIST_CONTENT_POPOUT_USER_WATCHED: "$[{username}](nameHook) watched",
                 CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity",
                 CONTENT_INVENTORY_MEMBERLIST_SETTINGS_HIDE: "Hide Activity Cards",
                 CONTENT_INVENTORY_MEMBERLIST_SETTINGS_ABOUT: "About Recent Activity",
@@ -73740,6 +73744,11 @@
                     inlineRequire: () => n("342879").default,
                     neverLoadBeforeConnectionOpen: !0
                 },
+                RunningGameDetectionManager: {
+                    actions: ["RUNNING_GAME_DELETE_ENTRY", "RUNNING_GAME_TOGGLE_DETECTION"],
+                    inlineRequire: () => n("611184").default,
+                    neverLoadBeforeConnectionOpen: !0
+                },
                 RunningGameHeartbeatManager: {
                     actions: ["RUNNING_GAMES_CHANGE", "LOGOUT", "CONNECTION_CLOSED", "POST_CONNECTION_OPEN"],
                     inlineRequire: () => n("696287").default,
@@ -86852,8 +86861,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287594", "287594"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287594")), t = 0), t
+                let t = parseInt((e = "287610", "287610"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287610")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103605,12 +103614,12 @@
                 getTransformedBadgeColors: function() {
                     return a
                 }
-            }), n("411104");
+            });
             var i = n("688619"),
                 r = n.n(i);
 
             function s(e, t, n) {
-                if (!r().valid(t)) throw Error("Invalid badge tint color ".concat(t));
+                if (!r().valid(t)) return e.map(() => "#000000");
                 let i = r()(t),
                     s = i.luminance();
                 return e.map((e, t) => i.luminance((e * n[t].base + s * n[t].tint) / (n[t].base + n[t].tint)).hex())
@@ -110616,6 +110625,77 @@
                 }
             })
         },
+        454293: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                setApplicationSharing: function() {
+                    return s
+                }
+            });
+            var i = n("960048"),
+                r = n("536150");
+            async function s(e, t) {
+                try {
+                    await (0, r.patchContentInventoryApplication)(e, {
+                        is_sharing: t
+                    })
+                } catch (e) {
+                    i.default.captureException(e)
+                }
+            }
+        },
+        536150: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                patchContentInventoryApplication: function() {
+                    return a
+                }
+            });
+            var i = n("544891"),
+                r = n("881052"),
+                s = n("981631");
+            async function a(e, t) {
+                try {
+                    await i.HTTP.post({
+                        url: s.Endpoints.MY_CONTENT_INVENTORY_APPLICATION(e),
+                        body: t
+                    })
+                } catch (e) {
+                    throw new r.APIError(e)
+                }
+            }
+        },
+        611184: function(e, t, n) {
+            "use strict";
+            n.r(t), n("47120");
+            var i = n("147913"),
+                r = n("594190"),
+                s = n("77498"),
+                a = n("454293");
+
+            function o(e) {
+                var t, n;
+                let {
+                    game: i
+                } = e, o = r.default.isDetectionEnabled(i), l = null !== (n = i.id) && void 0 !== n ? n : null === (t = s.default.getGameByName(i.name)) || void 0 === t ? void 0 : t.id;
+                null != l && (0, a.setApplicationSharing)(l, o)
+            }
+            class l extends i.default {
+                constructor(...e) {
+                    var t, n, i;
+                    super(...e), t = this, n = "actions", i = {
+                        RUNNING_GAME_TOGGLE_DETECTION: o,
+                        RUNNING_GAME_DELETE_ENTRY: o
+                    }, n in t ? Object.defineProperty(t, n, {
+                        value: i,
+                        enumerable: !0,
+                        configurable: !0,
+                        writable: !0
+                    }) : t[n] = i
+                }
+            }
+            t.default = new l
+        },
         443487: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -110772,7 +110852,7 @@
                     className: s()(l.contentImage, r)
                 }) : (0, i.jsx)("img", {
                     style: {
-                        width: "".concat(n, "px"),
+                        maxWidth: "".concat(n, "px"),
                         height: "".concat(n, "px")
                     },
                     className: s()(l.contentImage, r),
@@ -113002,8 +113082,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287594",
-                    versionHash: "3fa5773c57ab1897653c3791091acf6115d680d1"
+                    buildNumber: "287610",
+                    versionHash: "bf44d0f3d90dfad04af12c63a45086bde2d884d3"
                 }
             }
             n.r(t), n.d(t, {
@@ -128537,6 +128617,9 @@
                 }
                 get canShowAdminWarning() {
                     return B
+                }
+                isDetectionEnabled(e) {
+                    return es(e)
                 }
             }
             o = "RunningGameStore", (a = "displayName") in(s = eE) ? Object.defineProperty(s, a, {
@@ -167242,8 +167325,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713984090907",
-                                    build_number: "287594"
+                                    built_at: "1713985195880",
+                                    build_number: "287610"
                                 }
                             },
                             retries: 1
@@ -245005,7 +245088,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3fa5773c57ab1897653c3791091acf6115d680d1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "bf44d0f3d90dfad04af12c63a45086bde2d884d3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273529,7 +273612,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287594"
+                                build_number: "287610"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280763,7 +280846,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287594", "287594"), 10);
+                let s = parseInt((n = "287610", "287610"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308246,4 +308329,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.dd8706594b192f7e35e1.js.map
+//# sourceMappingURL=35705.5224f271f9ecf81c0d6b.js.map
