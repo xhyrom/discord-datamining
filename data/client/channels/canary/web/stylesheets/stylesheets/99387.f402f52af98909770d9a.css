@@ -76188,7 +76188,6 @@ html .invoiceCancelRow_aa7946 {
 .expandedProgressBarContainerSettingsPage_ef61f6 {
     display: flex;
     align-items: center;
-    border-radius: 8px;
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     padding-right: 48px;
@@ -76199,7 +76198,8 @@ html .invoiceCancelRow_aa7946 {
 .expandedProgressBarContainer_c2b92e {
     min-height: 260px;
     margin-right: 16px;
-    margin-left: 16px
+    margin-left: 16px;
+    border-radius: 8px
 }
 
 .expandedProgressBarContainerSettingsPage_ef61f6,
@@ -76211,7 +76211,8 @@ html .invoiceCancelRow_aa7946 {
     min-height: 292px;
     margin-top: 40px;
     margin-bottom: -40px;
-    max-width: 660px
+    max-width: 660px;
+    border-radius: 16px
 }
 
 .expandedProgressBarContainerVariant1_ea5ac3 {
@@ -135398,4 +135399,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.3979ef61edab01d91279.css.map*/
+/*# sourceMappingURL=99387.f402f52af98909770d9a.css.map*/
