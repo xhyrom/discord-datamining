@@ -14441,6 +14441,7 @@ html .progress__00e29 {
     width: 100%;
     max-width: 660px;
     min-width: 280px;
+    margin-bottom: 16px;
     border-radius: 8px;
     overflow: hidden
 }
@@ -124703,6 +124704,14 @@ html .invoiceCancelRow__6ff3e {
     margin-top: 32px
 }
 
+.questsListContainer_fa12cd>div:last-child {
+    margin-bottom: 24px
+}
+
+.sectionHeader__2fa0c {
+    margin-bottom: 8px
+}
+
 .questsHeading__8d16b {
     display: flex;
     align-items: center
@@ -124713,7 +124722,7 @@ html .invoiceCancelRow__6ff3e {
 }
 
 .questsIcon_b904f6 {
-    margin-right: 4px
+    margin-right: 5px
 }
 
 .divider__1ed5b {
@@ -135704,4 +135713,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c7c1370ac78710c413e8.css.map*/
+/*# sourceMappingURL=99387.342fc417295ea517d831.css.map*/
