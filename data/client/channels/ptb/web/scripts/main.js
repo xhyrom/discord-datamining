@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287970", ", Version Hash: ").concat("da90daa2047ebf940b964b53c5ec5f4f7e874521")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287972", ", Version Hash: ").concat("56750a12b5dd4b74955752b1d1782bbbac57f4ab")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86959,8 +86959,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287970", "287970"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287970")), t = 0), t
+                let t = parseInt((e = "287972", "287972"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287972")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112759,8 +112759,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287970",
-                    versionHash: "da90daa2047ebf940b964b53c5ec5f4f7e874521"
+                    buildNumber: "287972",
+                    versionHash: "56750a12b5dd4b74955752b1d1782bbbac57f4ab"
                 }
             }
             n.r(t), n.d(t, {
@@ -160174,6 +160174,7 @@
                         userId: r,
                         channelId: o,
                         parsedUserId: l,
+                        content: t(e.content, n),
                         inlinePreview: n.noStyleAndInteraction
                     }, n.key)
                 }
@@ -166640,7 +166641,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return D
+                    return L
                 }
             });
             var i = n("735250"),
@@ -166665,18 +166666,18 @@
                 p = n("797053"),
                 O = n("5192"),
                 R = n("51144"),
-                C = n("377668"),
-                g = n("689938");
+                C = n("377668");
 
-            function L(e) {
+            function g(e) {
                 let {
                     userId: t,
-                    className: s
-                } = e, a = r.useCallback(() => {
+                    className: s,
+                    children: a
+                } = e, o = r.useCallback(() => {
                     (0, I.showInaccessibleLinkModal)({
                         kind: "user"
                     })
-                }, []), o = r.useCallback(e => {
+                }, []), l = r.useCallback(e => {
                     null != t && (0, d.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
@@ -166689,64 +166690,66 @@
                 }, [t]);
                 return (0, i.jsx)(p.default, {
                     className: s,
-                    onClick: a,
-                    onContextMenu: o,
-                    children: "@".concat(g.default.Messages.UNKNOWN_USER_MENTION_PLACEHOLDER)
+                    onClick: o,
+                    onContextMenu: l,
+                    children: a
                 })
             }
 
-            function D(e) {
+            function L(e) {
                 let {
                     className: t,
                     userId: r,
                     channelId: s,
                     parsedUserId: I,
-                    inlinePreview: g = !1
+                    content: L,
+                    inlinePreview: D = !1
                 } = e, {
-                    analyticsLocations: D
-                } = (0, c.default)(_.default.USER_MENTION), v = (0, l.useStateFromStores)([N.default], () => N.default.getUser(r)), M = (0, l.useStateFromStores)([S.default], () => S.default.getChannel(s)), y = null != M ? M.getGuildId() : null, P = g || null == v || null == y || null == s ? void 0 : e => {
-                    null != M && (0, d.openContextMenuLazy)(e, async () => {
+                    analyticsLocations: v
+                } = (0, c.default)(_.default.USER_MENTION), M = (0, l.useStateFromStores)([N.default], () => N.default.getUser(r)), y = (0, l.useStateFromStores)([S.default], () => S.default.getChannel(s)), P = null != y ? y.getGuildId() : null, U = D || null == M || null == P || null == s ? void 0 : e => {
+                    null != y && (0, d.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
                         } = await Promise.all([n.e("99387"), n.e("79695"), n.e("1502"), n.e("70866"), n.e("12435"), n.e("6696")]).then(n.bind(n, "757387"));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            user: v,
-                            channel: M,
-                            guildId: y
+                            user: M,
+                            channel: y,
+                            guildId: P
                         })
                     })
-                }, U = R.default.useName(v), b = (0, l.useStateFromStores)([S.default, h.default, m.default], () => O.default.getNickname(y, s, v)), G = A.default.getGuild(y), w = (0, E.useClydeEnabled)(G, M) && r === C.CLYDE_AI_USER_ID ? C.CLYDE_AI_MENTION_COLOR : null;
-                if (null == v) return (0, i.jsx)(L, {
+                }, b = R.default.useName(M), G = (0, l.useStateFromStores)([S.default, h.default, m.default], () => O.default.getNickname(P, s, M)), w = A.default.getGuild(P), B = (0, E.useClydeEnabled)(w, y) && r === C.CLYDE_AI_USER_ID ? C.CLYDE_AI_MENTION_COLOR : null;
+                if (null == M) return (0, i.jsx)(g, {
                     userId: I,
-                    className: t
-                });
-                let B = e => (0, i.jsx)(p.default, {
                     className: t,
-                    onContextMenu: P,
-                    color: w,
-                    ...e,
-                    children: "@".concat(null != b ? b : U)
+                    children: L
                 });
-                return g ? (0, i.jsx)(c.AnalyticsLocationProvider, {
-                    value: D,
-                    children: B()
+                let k = e => (0, i.jsx)(p.default, {
+                    className: t,
+                    onContextMenu: U,
+                    color: B,
+                    ...e,
+                    children: "@".concat(null != G ? G : b)
+                });
+                return D ? (0, i.jsx)(c.AnalyticsLocationProvider, {
+                    value: v,
+                    children: k()
                 }) : (0, i.jsx)(c.AnalyticsLocationProvider, {
-                    value: D,
+                    value: v,
                     children: (0, i.jsx)(u.Popout, {
-                        preload: null == v ? void 0 : () => (0, T.default)(v.id, v.getAvatarURL(y, 80), {
-                            guildId: null != y ? y : void 0,
+                        preload: null == M ? void 0 : () => (0, T.default)(M.id, M.getAvatarURL(P, 80), {
+                            guildId: null != P ? P : void 0,
                             channelId: null != s ? s : void 0
                         }),
-                        renderPopout: e => (a()(null != v, "Unexpected missing user"), (0, i.jsx)(f.default, {
+                        renderPopout: e => (a()(null != M, "Unexpected missing user"), (0, i.jsx)(f.default, {
                             location: "UserMention",
-                            userId: v.id,
-                            guildId: null != y ? y : void 0,
+                            userId: M.id,
+                            guildId: null != P ? P : void 0,
                             channelId: s,
                             ...e
                         })),
                         position: o.isMobile ? "top" : "right",
-                        children: e => B(e)
+                        children: e => k(e)
                     })
                 })
             }
@@ -167213,8 +167216,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714073548315",
-                                    build_number: "287970"
+                                    built_at: "1714073932174",
+                                    build_number: "287972"
                                 }
                             },
                             retries: 1
@@ -245098,7 +245101,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "da90daa2047ebf940b964b53c5ec5f4f7e874521"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "56750a12b5dd4b74955752b1d1782bbbac57f4ab"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273622,7 +273625,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287970"
+                                build_number: "287972"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -273873,7 +273876,7 @@
 
             function d(e, t, n) {
                 var i;
-                return null == n ? l.default.Messages.UNKNOWN_USER : null !== (i = u(e, t, n)) && void 0 !== i ? i : o.default.getName(n)
+                return null == n ? l.default.Messages.UNKNOWN_USER_MENTION_PLACEHOLDER : null !== (i = u(e, t, n)) && void 0 !== i ? i : o.default.getName(n)
             }
 
             function _(e, t, n) {
@@ -278511,7 +278514,7 @@
             }
 
             function m(e, t, n) {
-                if (null == e) return o.default.Messages.UNKNOWN_USER;
+                if (null == e) return o.default.Messages.UNKNOWN_USER_MENTION_PLACEHOLDER;
                 if (!_(e.username)) return "???";
                 let i = n;
                 if ("always" === t.identifiable ? i = !1 : "never" === t.identifiable && (i = !0), "0" !== e.discriminator && e.discriminator !== a.NON_USER_BOT_DISCRIMINATOR && !t.forcePomelo) return "username" === t.mode ? e.username : i ? e.username : "".concat(e.username, "#").concat(e.discriminator);
@@ -280856,7 +280859,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287970", "287970"), 10);
+                let s = parseInt((n = "287972", "287972"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308333,4 +308336,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.e224cb3384169bc85fd6.js.map
+//# sourceMappingURL=35705.8cc565188f4db38ac768.js.map
