@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287832", ", Version Hash: ").concat("8b6a044cec0c92e2ac0c4642b9c7031194c4635e")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287845", ", Version Hash: ").concat("efd5abc2682e986093ac0400745509279eef3576")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86902,8 +86902,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287832", "287832"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287832")), t = 0), t
+                let t = parseInt((e = "287845", "287845"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287845")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112828,8 +112828,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287832",
-                    versionHash: "8b6a044cec0c92e2ac0c4642b9c7031194c4635e"
+                    buildNumber: "287845",
+                    versionHash: "efd5abc2682e986093ac0400745509279eef3576"
                 }
             }
             n.r(t), n.d(t, {
@@ -167215,8 +167215,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714049096240",
-                                    build_number: "287832"
+                                    built_at: "1714056960596",
+                                    build_number: "287845"
                                 }
                             },
                             retries: 1
@@ -184820,80 +184820,6 @@
                 })
             }
         },
-        718514: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                getIsEligibleForActivityQuest: function() {
-                    return r
-                }
-            });
-            let i = (0, n("818083").createExperiment)({
-                    id: "2024-03_quests_activity_quest",
-                    kind: "user",
-                    label: "Activity Quest",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 0,
-                        label: "Control",
-                        config: {
-                            enabled: !1
-                        }
-                    }, {
-                        id: 1,
-                        label: "Activity Quest enabled",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                }),
-                r = e => {
-                    let {
-                        location: t,
-                        autoTrackExposure: n
-                    } = e;
-                    return i.getCurrentConfig({
-                        location: t
-                    }, {
-                        autoTrackExposure: n
-                    }).enabled
-                }
-        },
-        145460: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                isEligibleForQuestsClientMonitoring: function() {
-                    return r
-                }
-            });
-            let i = (0, n("818083").createExperiment)({
-                    id: "2024-03_quests_client_monitoring",
-                    kind: "user",
-                    label: "Quests client monitoring experiment",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 0,
-                        label: "disabled",
-                        config: {
-                            enabled: !1
-                        }
-                    }, {
-                        id: 1,
-                        label: "enabled",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                }),
-                r = e => i.getCurrentConfig({
-                    location: e
-                }, {
-                    autoTrackExposure: !1
-                }).enabled
-        },
         46140: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -184912,127 +184838,6 @@
                 o = n("438954");
             (i = r || (r = {})).ACTIVITY_PANEL = "quests_bar_activity_panel", i.QUESTS_MANAGER = "quests_manager", i.USER_SETTINGS_GIFT_INVENTORY = "user_settings_gift_inventory", i.USE_QUESTS = "use_quests", i.STREAM_SOURCE_SELECT = "stream_source_select", i.MEMBERS_LIST = "members_list", i.QUESTS_BAR = "quests_bar", i.REWARD_CODE_MODAL = "reward_code_modal", i.QUEST_PREVIEW_TOOL = "quest_preview_tool";
             let l = a.default.Millis.MINUTE * s.Quests.ConsecutiveHeartbeatPeriodMinutes
-        },
-        57655: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                QuestBarExperiment: function() {
-                    return c
-                },
-                QuestBarExperimentVariants: function() {
-                    return r
-                },
-                getIsEligibleForQuests: function() {
-                    return l
-                },
-                isQuestPreviewToolEnabled: function() {
-                    return _
-                },
-                useIsEligibleForQuests: function() {
-                    return u
-                }
-            });
-            var i, r, s = n("211242"),
-                a = n("818083");
-            let o = (0, a.createExperiment)({
-                    id: "2023-12_quests",
-                    kind: "user",
-                    label: "Quests",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 0,
-                        label: "Control",
-                        config: {
-                            enabled: !1
-                        }
-                    }, {
-                        id: 1,
-                        label: "Quests enabled",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                }),
-                l = e => {
-                    let {
-                        location: t
-                    } = e, n = o.getCurrentConfig({
-                        location: t
-                    }, {
-                        autoTrackExposure: !1
-                    }), i = s.default.getCurrentConfig({
-                        location: t
-                    }, {
-                        autoTrackExposure: !1
-                    });
-                    return n.enabled && !i.paymentsBlocked
-                },
-                u = e => {
-                    let {
-                        location: t
-                    } = e, n = o.useExperiment({
-                        location: t
-                    }, {
-                        autoTrackExposure: !1
-                    }), i = s.default.useExperiment({
-                        location: t
-                    }, {
-                        autoTrackExposure: !1
-                    });
-                    return n.enabled && !i.paymentsBlocked
-                },
-                d = (0, a.createExperiment)({
-                    id: "2024-04_quest_preview_tool",
-                    kind: "user",
-                    label: "Quest Preview Tool",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 1,
-                        label: "Preview tool enabled",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                });
-
-            function _(e) {
-                let {
-                    location: t
-                } = e;
-                return d.getCurrentConfig({
-                    location: t
-                }, {
-                    autoTrackExposure: !1
-                }).enabled
-            }(i = r || (r = {}))[i.V1 = 0] = "V1", i[i.V2 = 1] = "V2";
-            let c = (0, a.createExperiment)({
-                id: "2024-05_quest_bar",
-                kind: "user",
-                label: "Quest Bar",
-                defaultConfig: {
-                    primaryVariant: 0,
-                    progressVariant: 0
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Quest Bar V2 with V1 Progress",
-                    config: {
-                        primaryVariant: 1,
-                        progressVariant: 0
-                    }
-                }, {
-                    id: 2,
-                    label: "Quest Bar V2",
-                    config: {
-                        primaryVariant: 1,
-                        progressVariant: 1
-                    }
-                }]
-            })
         },
         113434: function(e, t, n) {
             "use strict";
@@ -185068,11 +184873,11 @@
                 a = n("583434"),
                 o = n("706454"),
                 l = n("272008"),
-                u = n("57655"),
-                d = n("309562"),
-                _ = n("569984"),
-                c = n("497505"),
-                E = n("918701"),
+                u = n("569984"),
+                d = n("497505"),
+                _ = n("918701"),
+                c = n("977156"),
+                E = n("31055"),
                 I = n("46140");
 
             function T() {
@@ -185080,15 +184885,15 @@
                         fetchPolicy: "cache-only"
                     },
                     [t, n] = i.useState(!1),
-                    r = (0, s.useStateFromStoresArray)([_.default], () => [..._.default.quests.values()]),
+                    r = (0, s.useStateFromStoresArray)([u.default], () => [...u.default.quests.values()]),
                     {
                         isFetchingCurrentQuests: a,
                         lastFetchedCurrentQuests: o
-                    } = (0, s.useStateFromStoresObject)([_.default], () => ({
-                        isFetchingCurrentQuests: _.default.isFetchingCurrentQuests,
-                        lastFetchedCurrentQuests: _.default.lastFetchedCurrentQuests
+                    } = (0, s.useStateFromStoresObject)([u.default], () => ({
+                        isFetchingCurrentQuests: u.default.isFetchingCurrentQuests,
+                        lastFetchedCurrentQuests: u.default.lastFetchedCurrentQuests
                     })),
-                    d = (0, u.getIsEligibleForQuests)({
+                    d = (0, c.getIsEligibleForQuests)({
                         location: I.QuestsExperimentLocations.USE_QUESTS
                     });
                 return i.useEffect(() => {
@@ -185105,18 +184910,18 @@
                     isFetchingCurrentQuests: t
                 } = T({
                     fetchPolicy: "cache-only"
-                }), [n, s] = i.useState(() => new Map(e.map(e => [e.id, (0, E.isQuestExpired)(e)])));
+                }), [n, s] = i.useState(() => new Map(e.map(e => [e.id, (0, _.isQuestExpired)(e)])));
                 return i.useEffect(() => {
                     if (t) return;
                     let n = [];
                     for (let t of e)
-                        if (null == t || (0, E.isQuestExpired)(t)) null != t && (0, E.isQuestExpired)(t) && s(e => e.has(t.id) ? e : new Map(e).set(t.id, !0));
+                        if (null == t || (0, _.isQuestExpired)(t)) null != t && (0, _.isQuestExpired)(t) && s(e => e.has(t.id) ? e : new Map(e).set(t.id, !0));
                         else {
                             let e = new r.Timeout,
                                 i = () => {
                                     let r = Date.parse(t.config.expiresAt) - Date.now();
                                     e.start(r, () => {
-                                        (0, E.isQuestExpired)(t) ? s(e => new Map(e).set(t.id, !0)): i()
+                                        (0, _.isQuestExpired)(t) ? s(e => new Map(e).set(t.id, !0)): i()
                                     }), n.push(e)
                                 };
                             i()
@@ -185154,13 +184959,13 @@
                     if (t || 0 === e.length) return i;
                     for (let t of e) {
                         var r;
-                        if (!(0, E.includesTarget)(t, c.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE) || null !== (r = n.get(t.id)) && void 0 !== r && r) continue;
+                        if (!(0, _.includesTarget)(t, d.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE) || null !== (r = n.get(t.id)) && void 0 !== r && r) continue;
                         if ((null == t ? void 0 : t.userStatus) == null) {
                             i.push(t);
                             continue
                         }
                         let e = null != t.userStatus.claimedAt,
-                            s = (0, E.isDismissed)(t.userStatus, c.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE);
+                            s = (0, _.isDismissed)(t.userStatus, d.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE);
                         if (!e && !s) {
                             i.push(t);
                             continue
@@ -185173,22 +184978,22 @@
             function m() {
                 let e = A();
                 i.useEffect(() => {
-                    for (let t of e)(0, l.dismissQuestContent)(t.id, c.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE)
+                    for (let t of e)(0, l.dismissQuestContent)(t.id, d.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE)
                 }, [e])
             }
 
             function N(e) {
-                let t = (0, d.useIsEligibleForMembersListQuestEntrypoint)({
+                let t = (0, E.useIsEligibleForMembersListQuestEntrypoint)({
                         location: I.QuestsExperimentLocations.MEMBERS_LIST
                     }),
-                    n = (0, s.useStateFromStores)([_.default], () => t ? _.default.quests : null),
-                    r = i.useMemo(() => (0, E.getQuestsFromActivities)(n, e), [e, n]);
+                    n = (0, s.useStateFromStores)([u.default], () => t ? u.default.quests : null),
+                    r = i.useMemo(() => (0, _.getQuestsFromActivities)(n, e), [e, n]);
                 return S(r) ? null : r
             }
 
             function p(e) {
                 var t;
-                let n = (0, E.hasQuestCollectibleRewards)(e),
+                let n = (0, _.hasQuestCollectibleRewards)(e),
                     {
                         product: i,
                         isFetching: r
@@ -185199,52 +185004,6 @@
                     isFetching: r
                 }
             }
-        },
-        309562: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                useIsEligibleForMembersListQuestEntrypoint: function() {
-                    return a
-                }
-            });
-            var i = n("818083"),
-                r = n("57655");
-            let s = (0, i.createExperiment)({
-                    id: "2024-03_quests_members_list_entrypoint",
-                    kind: "user",
-                    label: "Quests Members List Entrypoint",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 0,
-                        label: "Control",
-                        config: {
-                            enabled: !1
-                        }
-                    }, {
-                        id: 1,
-                        label: "Quests Members List Entrypoint enabled",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                }),
-                a = e => {
-                    let {
-                        location: t,
-                        autoTrackExposure: n = !1
-                    } = e, i = (0, r.useIsEligibleForQuests)({
-                        location: t
-                    }), {
-                        enabled: a
-                    } = s.useExperiment({
-                        location: t
-                    }, {
-                        autoTrackExposure: n
-                    });
-                    return i && a
-                }
         },
         687744: function(e, t, n) {
             "use strict";
@@ -186076,6 +185835,247 @@
                 })
             }
         },
+        432945: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getIsEligibleForActivityQuest: function() {
+                    return r
+                }
+            });
+            let i = (0, n("818083").createExperiment)({
+                    id: "2024-03_quests_activity_quest",
+                    kind: "user",
+                    label: "Activity Quest",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 0,
+                        label: "Control",
+                        config: {
+                            enabled: !1
+                        }
+                    }, {
+                        id: 1,
+                        label: "Activity Quest enabled",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                }),
+                r = e => {
+                    let {
+                        location: t,
+                        autoTrackExposure: n
+                    } = e;
+                    return i.getCurrentConfig({
+                        location: t
+                    }, {
+                        autoTrackExposure: n
+                    }).enabled
+                }
+        },
+        184309: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                isEligibleForQuestsClientMonitoring: function() {
+                    return r
+                }
+            });
+            let i = (0, n("818083").createExperiment)({
+                    id: "2024-03_quests_client_monitoring",
+                    kind: "user",
+                    label: "Quests client monitoring experiment",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 0,
+                        label: "disabled",
+                        config: {
+                            enabled: !1
+                        }
+                    }, {
+                        id: 1,
+                        label: "enabled",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                }),
+                r = e => i.getCurrentConfig({
+                    location: e
+                }, {
+                    autoTrackExposure: !1
+                }).enabled
+        },
+        977156: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                QuestBarExperiment: function() {
+                    return c
+                },
+                QuestBarExperimentVariants: function() {
+                    return r
+                },
+                getIsEligibleForQuests: function() {
+                    return l
+                },
+                isQuestPreviewToolEnabled: function() {
+                    return _
+                },
+                useIsEligibleForQuests: function() {
+                    return u
+                }
+            });
+            var i, r, s = n("211242"),
+                a = n("818083");
+            let o = (0, a.createExperiment)({
+                    id: "2023-12_quests",
+                    kind: "user",
+                    label: "Quests",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 0,
+                        label: "Control",
+                        config: {
+                            enabled: !1
+                        }
+                    }, {
+                        id: 1,
+                        label: "Quests enabled",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                }),
+                l = e => {
+                    let {
+                        location: t
+                    } = e, n = o.getCurrentConfig({
+                        location: t
+                    }, {
+                        autoTrackExposure: !1
+                    }), i = s.default.getCurrentConfig({
+                        location: t
+                    }, {
+                        autoTrackExposure: !1
+                    });
+                    return n.enabled && !i.paymentsBlocked
+                },
+                u = e => {
+                    let {
+                        location: t
+                    } = e, n = o.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: !1
+                    }), i = s.default.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: !1
+                    });
+                    return n.enabled && !i.paymentsBlocked
+                },
+                d = (0, a.createExperiment)({
+                    id: "2024-04_quest_preview_tool",
+                    kind: "user",
+                    label: "Quest Preview Tool",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Preview tool enabled",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                });
+
+            function _(e) {
+                let {
+                    location: t
+                } = e;
+                return d.getCurrentConfig({
+                    location: t
+                }, {
+                    autoTrackExposure: !1
+                }).enabled
+            }(i = r || (r = {}))[i.V1 = 0] = "V1", i[i.V2 = 1] = "V2";
+            let c = (0, a.createExperiment)({
+                id: "2024-05_quest_bar",
+                kind: "user",
+                label: "Quest Bar",
+                defaultConfig: {
+                    primaryVariant: 0,
+                    progressVariant: 0
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Quest Bar V2 with V1 Progress",
+                    config: {
+                        primaryVariant: 1,
+                        progressVariant: 0
+                    }
+                }, {
+                    id: 2,
+                    label: "Quest Bar V2",
+                    config: {
+                        primaryVariant: 1,
+                        progressVariant: 1
+                    }
+                }]
+            })
+        },
+        31055: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                useIsEligibleForMembersListQuestEntrypoint: function() {
+                    return a
+                }
+            });
+            var i = n("818083"),
+                r = n("977156");
+            let s = (0, i.createExperiment)({
+                    id: "2024-03_quests_members_list_entrypoint",
+                    kind: "user",
+                    label: "Quests Members List Entrypoint",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 0,
+                        label: "Control",
+                        config: {
+                            enabled: !1
+                        }
+                    }, {
+                        id: 1,
+                        label: "Quests Members List Entrypoint enabled",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                }),
+                a = e => {
+                    let {
+                        location: t,
+                        autoTrackExposure: n = !1
+                    } = e, i = (0, r.useIsEligibleForQuests)({
+                        location: t
+                    }), {
+                        enabled: a
+                    } = s.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: n
+                    });
+                    return i && a
+                }
+        },
         874137: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -186093,7 +186093,7 @@
                 d = n("797614"),
                 _ = n("451478"),
                 c = n("617136"),
-                E = n("145460"),
+                E = n("184309"),
                 I = n("981631");
 
             function T(e, t, n) {
@@ -186455,10 +186455,10 @@
                 u = n("938475"),
                 d = n("70956"),
                 _ = n("272008"),
-                c = n("718514"),
-                E = n("57655"),
-                I = n("569984"),
-                T = n("918701"),
+                c = n("569984"),
+                E = n("918701"),
+                I = n("432945"),
+                T = n("977156"),
                 f = n("46140"),
                 S = n("70722");
 
@@ -186489,7 +186489,7 @@
                 if ((null == n ? void 0 : n.id) == null) return null;
                 let i = l.default.getGameById(n.id);
                 if ((null == i ? void 0 : i.id) == null) return null;
-                let r = (0, T.getQuestByApplicationId)(I.default.quests, i.id);
+                let r = (0, E.getQuestByApplicationId)(c.default.quests, i.id);
                 return (null == r ? void 0 : null === (e = r.userStatus) || void 0 === e ? void 0 : e.enrolledAt) == null || (null == r ? void 0 : null === (t = r.userStatus) || void 0 === t ? void 0 : t.completedAt) != null ? null : r
             }
 
@@ -186505,11 +186505,11 @@
                     applicationId: r
                 } = e, {
                     channelId: o
-                } = (0, s.decodeStreamKey)(i), l = D(o), u = I.default.quests.get(n), d = null != a.default.getRTCStream(i) && (null === (t = L()) || void 0 === t ? void 0 : t.config.applicationId) === r && l && null != u && !(0, T.isQuestExpired)(u), {
+                } = (0, s.decodeStreamKey)(i), l = D(o), u = c.default.quests.get(n), d = null != a.default.getRTCStream(i) && (null === (t = L()) || void 0 === t ? void 0 : t.config.applicationId) === r && l && null != u && !(0, E.isQuestExpired)(u), {
                     quest: _,
-                    activity: c
-                } = M(), E = (null == _ ? void 0 : _.id) === n && (null == _ ? void 0 : _.config.applicationId) === r && l && (null == c ? void 0 : c.channelId) === o && !(0, T.isQuestExpired)(_);
-                return d || E
+                    activity: I
+                } = M(), T = (null == _ ? void 0 : _.id) === n && (null == _ ? void 0 : _.config.applicationId) === r && l && (null == I ? void 0 : I.channelId) === o && !(0, E.isQuestExpired)(_);
+                return d || T
             }
 
             function M(e) {
@@ -186517,14 +186517,14 @@
                     quest: null,
                     activity: null
                 };
-                if (!(0, c.getIsEligibleForActivityQuest)({
+                if (!(0, I.getIsEligibleForActivityQuest)({
                         location: f.QuestsExperimentLocations.QUESTS_MANAGER,
                         autoTrackExposure: !1
                     })) return t;
                 for (let a of r.default.getSelfEmbeddedActivities().values()) {
                     var n, i, s;
                     if (null != e && a.channelId !== e) continue;
-                    let r = null !== (s = (0, T.getQuestByApplicationId)(I.default.quests, a.applicationId)) && void 0 !== s ? s : null;
+                    let r = null !== (s = (0, E.getQuestByApplicationId)(c.default.quests, a.applicationId)) && void 0 !== s ? s : null;
                     if (null != r && (null == r ? void 0 : null === (n = r.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null && (null == r ? void 0 : null === (i = r.userStatus) || void 0 === i ? void 0 : i.completedAt) == null) return {
                         quest: r,
                         activity: a
@@ -186538,9 +186538,9 @@
             }
             class y extends i.default {
                 maybeFetchCurrentQuests() {
-                    (0, E.getIsEligibleForQuests)({
+                    (0, T.getIsEligibleForQuests)({
                         location: f.QuestsExperimentLocations.QUESTS_MANAGER
-                    }) && !I.default.isFetchingCurrentQuests && (0, _.fetchCurrentQuests)()
+                    }) && !c.default.isFetchingCurrentQuests && (0, _.fetchCurrentQuests)()
                 }
                 constructor(...e) {
                     super(...e), h(this, "instantiatedAt", Date.now()), h(this, "streamKeyToHeartbeatState", new Map), h(this, "optimisticProgressUpdateIntervalIds", new Map), h(this, "lastOptimisticallyUpdatedProgressMap", new Map), h(this, "questsInitialFetchTimerId", null), h(this, "questsRecurringFetchTimerId", null), h(this, "questsLastFetchAttemptedAt", 0), h(this, "initiateHeartbeat", e => {
@@ -186573,7 +186573,7 @@
                         };
                         r()
                     }), h(this, "calculateHeartbeatDurationMs", e => {
-                        let t = I.default.quests.get(e);
+                        let t = c.default.quests.get(e);
                         if (null == t || null == t.config || null == t.userStatus) return m;
                         let {
                             streamProgressSeconds: n
@@ -186669,7 +186669,7 @@
                         window.clearTimeout(this.questsInitialFetchTimerId), window.clearTimeout(this.questsRecurringFetchTimerId), this.questsRecurringFetchTimerId = window.setInterval(() => {
                             Date.now() - this.questsLastFetchAttemptedAt > R && (this.questsLastFetchAttemptedAt = Date.now(), this.maybeFetchCurrentQuests())
                         }, C), this.questsInitialFetchTimerId = window.setTimeout(() => {
-                            0 === I.default.lastFetchedCurrentQuests && this.maybeFetchCurrentQuests()
+                            0 === c.default.lastFetchedCurrentQuests && this.maybeFetchCurrentQuests()
                         }, Math.floor(Math.random() * p))
                     }), h(this, "handleSendHeartbeatSuccess", e => {
                         let {
@@ -186686,7 +186686,7 @@
                         } = e;
                         this.terminateOptimisticProgressUpdateInterval(t)
                     }), h(this, "handleRunningGamesChange", () => {
-                        !(this.instantiatedAt + A > Date.now() || I.default.lastFetchedCurrentQuests + A > Date.now()) && this.maybeFetchCurrentQuests()
+                        !(this.instantiatedAt + A > Date.now() || c.default.lastFetchedCurrentQuests + A > Date.now()) && this.maybeFetchCurrentQuests()
                     }), h(this, "handleVoiceStateChange", () => {
                         let e = a.default.getCurrentUserActiveStream(),
                             t = L();
@@ -245084,7 +245084,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8b6a044cec0c92e2ac0c4642b9c7031194c4635e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "efd5abc2682e986093ac0400745509279eef3576"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273608,7 +273608,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287832"
+                                build_number: "287845"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280842,7 +280842,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287832", "287832"), 10);
+                let s = parseInt((n = "287845", "287845"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308310,4 +308310,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.f4fae1898e6b650b26bb.js.map
+//# sourceMappingURL=35705.e3bc31e541b9e7bd7064.js.map
