@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288010", ", Version Hash: ").concat("199cdb10c964cc4f1f58d05bb347a2c5ae1fcb36")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288017", ", Version Hash: ").concat("a93ee95e891054c98118c03c328b8228b5775c7a")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -42463,6 +42463,7 @@
                 PROGRESS_BAR_ACTIONS_MENU_LABEL: "Progress Bar Actions",
                 HOME_ACTIONS_MENU_LABEL: "Home Actions",
                 ACTIVITY_SHELF_ITEM_ACTIONS_MENU_LABEL: "Activity Shelf Item Actions",
+                FRIEND_ACTIONS_MENU_LABEL: "Friend Actions",
                 MORE_OPTIONS: "More Options",
                 SWITCH_TO_COZY_MODE: "Switch to Cozy Mode",
                 SWITCH_TO_COMPACT_MODE: "Switch to Compact Mode",
@@ -86971,8 +86972,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "288010", "288010"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288010")), t = 0), t
+                let t = parseInt((e = "288017", "288017"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288017")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112771,8 +112772,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "288010",
-                    versionHash: "199cdb10c964cc4f1f58d05bb347a2c5ae1fcb36"
+                    buildNumber: "288017",
+                    versionHash: "a93ee95e891054c98118c03c328b8228b5775c7a"
                 }
             }
             n.r(t), n.d(t, {
@@ -148037,7 +148038,7 @@
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("48375"), n.e("14262"), n.e("95393"), n.e("22347"), n.e("66993")]).then(n.bind(n, "697849"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("48375"), n.e("95393"), n.e("14262"), n.e("22347"), n.e("66993")]).then(n.bind(n, "697849"));
                     return n => (0, i.jsx)(e, {
                         guildScheduledEventId: t,
                         parentGuildId: s,
@@ -149890,7 +149891,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("43643"), n.e("90508"), n.e("58227"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("74870"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("67256")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("43643"), n.e("58227"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("74870"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("67256")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -167228,8 +167229,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714076590454",
-                                    build_number: "288010"
+                                    built_at: "1714077260797",
+                                    build_number: "288017"
                                 }
                             },
                             retries: 1
@@ -204677,6 +204678,56 @@
                 })
             }
         },
+        822972: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return u
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("442837"),
+                s = n("481060"),
+                a = n("194359"),
+                o = n("699516"),
+                l = n("689938");
+
+            function u(e) {
+                let {
+                    user: t,
+                    color: n,
+                    location: u,
+                    onAction: d
+                } = e;
+                return !(0, r.useStateFromStores)([o.default], () => o.default.isFriend(t.id)) || t.isNonUserBot() ? null : (0, i.jsx)(s.MenuItem, {
+                    id: "remove-friend",
+                    color: n,
+                    label: l.default.Messages.REMOVE_FRIEND,
+                    action: () => {
+                        (0, s.openModal)(e => (0, i.jsx)(s.ConfirmModal, {
+                            header: l.default.Messages.REMOVE_FRIEND_TITLE.format({
+                                name: t.username
+                            }),
+                            confirmText: l.default.Messages.REMOVE_FRIEND,
+                            cancelText: l.default.Messages.CANCEL,
+                            onConfirm: () => {
+                                null == d || d(), a.default.removeFriend(t.id, null != u ? {
+                                    location: u
+                                } : void 0)
+                            },
+                            ...e,
+                            children: (0, i.jsx)(s.Text, {
+                                variant: "text-md/normal",
+                                children: l.default.Messages.REMOVE_FRIEND_BODY.format({
+                                    name: t.username
+                                })
+                            })
+                        }))
+                    }
+                })
+            }
+        },
         622724: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -208138,7 +208189,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return h
+                    return m
                 }
             });
             var i = n("735250");
@@ -208149,81 +208200,90 @@
                 o = n("97910"),
                 l = n("481060"),
                 u = n("194359"),
-                d = n("314897"),
-                _ = n("699516"),
-                c = n("465670"),
-                E = n("782089"),
-                I = n("785717"),
-                T = n("537387"),
-                f = n("981631"),
-                S = n("689938");
+                d = n("906732"),
+                _ = n("822972"),
+                c = n("314897"),
+                E = n("699516"),
+                I = n("465670"),
+                T = n("782089"),
+                f = n("785717"),
+                S = n("537387"),
+                h = n("981631"),
+                A = n("689938");
 
-            function h(e) {
+            function m(e) {
                 let {
                     user: t,
-                    friendToken: h
+                    friendToken: n
                 } = e, {
-                    trackUserProfileAction: A
-                } = (0, I.useUserProfileAnalyticsContext)(), m = (0, r.useStateFromStores)([d.default], () => d.default.getId() === (null == t ? void 0 : t.id)), N = (0, r.useStateFromStores)([_.default], () => null != t ? _.default.getRelationshipType(t.id) : f.RelationshipTypes.NONE);
-                return null == t || t.bot || m || N === f.RelationshipTypes.BLOCKED ? null : N === f.RelationshipTypes.FRIEND ? (0, i.jsx)(T.default, {
-                    icon: a.UserCheckIcon,
-                    text: S.default.Messages.FRIENDS,
-                    onClick: () => (function(e) {
-                        let t = () => {
-                            A({
-                                action: "REMOVE_FRIEND"
-                            }), u.default.removeFriend(e.id, {
-                                location: "UserProfileFriendRequestButtons"
-                            })
-                        };
-                        (0, l.openModalLazy)(async () => {
-                            let {
-                                default: r
-                            } = await n.e("69938").then(n.bind(n, "637697"));
-                            return n => (0, i.jsx)(r, {
-                                user: e,
-                                onConfirmRemoveFriend: t,
-                                ...n
-                            })
+                    trackUserProfileAction: m
+                } = (0, f.useUserProfileAnalyticsContext)(), N = (0, r.useStateFromStores)([c.default], () => c.default.getId() === (null == t ? void 0 : t.id)), p = (0, r.useStateFromStores)([E.default], () => null != t ? E.default.getRelationshipType(t.id) : h.RelationshipTypes.NONE), {
+                    analyticsLocations: O,
+                    newestAnalyticsLocation: R
+                } = (0, d.default)(), C = (0, _.default)({
+                    user: t,
+                    color: "danger",
+                    location: R,
+                    onAction: () => m({
+                        action: "REMOVE_FRIEND",
+                        analyticsLocations: O
+                    })
+                });
+                return null == t || t.bot || N || p === h.RelationshipTypes.BLOCKED ? null : p === h.RelationshipTypes.FRIEND ? (0, i.jsx)(l.Popout, {
+                    renderPopout: e => {
+                        let {
+                            closePopout: t
+                        } = e;
+                        return (0, i.jsx)(l.Menu, {
+                            navId: "user-profile-friend-request-buttons",
+                            onSelect: void 0,
+                            onClose: t,
+                            "aria-label": A.default.Messages.FRIEND_ACTIONS_MENU_LABEL,
+                            children: C
                         })
-                    })(t)
-                }) : N === f.RelationshipTypes.PENDING_INCOMING ? (0, i.jsxs)(i.Fragment, {
-                    children: [(0, i.jsx)(T.default, {
+                    },
+                    children: e => (0, i.jsx)(S.default, {
+                        icon: a.UserCheckIcon,
+                        text: A.default.Messages.FRIENDS,
+                        ...e
+                    })
+                }) : p === h.RelationshipTypes.PENDING_INCOMING ? (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)(S.default, {
                         icon: e => (0, i.jsx)(s.CheckmarkLargeIcon, {
                             ...e,
                             color: l.tokens.colors.TEXT_BRAND
                         }),
-                        text: S.default.Messages.ACCEPT_FRIEND_REQUEST,
+                        text: A.default.Messages.ACCEPT_FRIEND_REQUEST,
                         onClick: () => {
-                            A({
+                            m({
                                 action: "ACCEPT_FRIEND_REQUEST"
                             }), u.default.addRelationship({
                                 userId: t.id,
-                                friendToken: h
+                                friendToken: n
                             })
                         }
-                    }), (0, i.jsx)(T.default, {
-                        icon: c.default,
-                        text: S.default.Messages.IGNORE_FRIEND_REQUEST,
+                    }), (0, i.jsx)(S.default, {
+                        icon: I.default,
+                        text: A.default.Messages.IGNORE_FRIEND_REQUEST,
                         onClick: () => {
-                            A({
+                            m({
                                 action: "IGNORE_FRIEND_REQUEST"
                             }), u.default.cancelFriendRequest(t.id)
                         }
                     })]
-                }) : N === f.RelationshipTypes.PENDING_OUTGOING ? (0, i.jsx)(T.default, {
+                }) : p === h.RelationshipTypes.PENDING_OUTGOING ? (0, i.jsx)(S.default, {
                     icon: o.UserClockIcon,
-                    text: S.default.Messages.REQUEST_SENT,
+                    text: A.default.Messages.REQUEST_SENT,
                     disabled: !0
-                }) : (0, i.jsx)(T.default, {
-                    icon: E.default,
-                    text: S.default.Messages.ADD_FRIEND,
+                }) : (0, i.jsx)(S.default, {
+                    icon: T.default,
+                    text: A.default.Messages.ADD_FRIEND,
                     onClick: () => {
-                        A({
+                        m({
                             action: "SEND_FRIEND_REQUEST"
                         }), u.default.addRelationship({
                             userId: t.id,
-                            friendToken: h
+                            friendToken: n
                         })
                     }
                 })
@@ -245113,7 +245173,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "199cdb10c964cc4f1f58d05bb347a2c5ae1fcb36"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a93ee95e891054c98118c03c328b8228b5775c7a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273637,7 +273697,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "288010"
+                                build_number: "288017"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280871,7 +280931,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "288010", "288010"), 10);
+                let s = parseInt((n = "288017", "288017"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308348,4 +308408,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.97b86281841b02ca590a.js.map
+//# sourceMappingURL=35705.accd7c617e388e3b22a0.js.map
