@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287864", ", Version Hash: ").concat("b9f42a00c8f2be42f5c24890332240d0d7b902cb")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287865", ", Version Hash: ").concat("7c450d4f8266be0c689ab3c9f795daa6bd4ce873")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -65724,8 +65724,8 @@
                 h = n("594174"),
                 A = n("823379"),
                 m = n("573261"),
-                N = n("867176"),
-                p = n("317381"),
+                N = n("317381"),
+                p = n("844797"),
                 O = n("672181"),
                 R = n("917107"),
                 C = n("981631"),
@@ -65733,8 +65733,8 @@
 
             function L(e, t, n) {
                 let i = T.default.getId(),
-                    r = p.default.getSelfEmbeddedActivityForChannel(e),
-                    a = p.default.getEmbeddedActivitiesForChannel(e).find(e => e.applicationId === t && e.userIds.has(i));
+                    r = N.default.getSelfEmbeddedActivityForChannel(e),
+                    a = N.default.getEmbeddedActivitiesForChannel(e).find(e => e.applicationId === t && e.userIds.has(i));
                 null != r ? v({
                     channelId: e,
                     applicationId: r.applicationId,
@@ -65751,44 +65751,38 @@
                 let r = f.default.getChannel(e),
                     a = null !== (t = null == r ? void 0 : r.getGuildId()) && void 0 !== t ? t : void 0;
                 if (null == a && !(null !== (n = null == r ? void 0 : r.isPrivate()) && void 0 !== n && n)) return;
-                let o = p.default.getSelfEmbeddedActivityForChannel(e);
+                let o = N.default.getSelfEmbeddedActivityForChannel(e);
                 if (null === o) return;
                 let l = T.default.getSessionId();
                 try {
                     s.default.dispatch({
-                            type: "EMBEDDED_ACTIVITY_LAUNCH_START",
-                            embeddedActivity: o
-                        }),
-                        function(e, t) {
-                            let n = f.default.getChannel(e);
-                            if (p.default.getEmbeddedActivitiesForChannel(e).some(e => e.applicationId === t)) return !1;
-                            let i = (0, N.isActivitiesInTextEnabled)(n, "EmbeddedActivitiesActionCreators#isActivityInTextStart");
-                            return !!((null == n ? void 0 : n.type) === C.ChannelTypes.GUILD_TEXT && i || null != n && n.isPrivate() && i && null == S.default.getVoiceChannelId()) || !1
-                        }(e, o.applicationId) ? await (0, E.executePrimaryEntryPointInteraction)({
-                            applicationId: o.applicationId,
-                            channelId: e,
-                            guildId: a
-                        }) : await m.default.post({
-                            url: C.Endpoints.ACTIVITY_CHANNEL_LAUNCH(e, o.applicationId),
-                            body: {
-                                session_id: l,
-                                guild_id: null != a ? a : void 0
-                            },
-                            trackedActionData: {
-                                event: i.NetworkActionNames.EMBEDDED_ACTIVITIES_LAUNCH,
-                                properties: {
-                                    guild_id: a,
-                                    channel_id: e,
-                                    application_id: o.applicationId,
-                                    session_id: l
-                                }
-                            },
-                            retries: 3,
-                            oldFormErrors: !0
-                        }), s.default.dispatch({
-                            type: "EMBEDDED_ACTIVITY_LAUNCH_SUCCESS",
-                            applicationId: o.applicationId
-                        })
+                        type: "EMBEDDED_ACTIVITY_LAUNCH_START",
+                        embeddedActivity: o
+                    }), (0, p.isActivityInTextStart)(e, o.applicationId, S.default, f.default) ? await (0, E.executePrimaryEntryPointInteraction)({
+                        applicationId: o.applicationId,
+                        channelId: e,
+                        guildId: a
+                    }) : await m.default.post({
+                        url: C.Endpoints.ACTIVITY_CHANNEL_LAUNCH(e, o.applicationId),
+                        body: {
+                            session_id: l,
+                            guild_id: null != a ? a : void 0
+                        },
+                        trackedActionData: {
+                            event: i.NetworkActionNames.EMBEDDED_ACTIVITIES_LAUNCH,
+                            properties: {
+                                guild_id: a,
+                                channel_id: e,
+                                application_id: o.applicationId,
+                                session_id: l
+                            }
+                        },
+                        retries: 3,
+                        oldFormErrors: !0
+                    }), s.default.dispatch({
+                        type: "EMBEDDED_ACTIVITY_LAUNCH_SUCCESS",
+                        applicationId: o.applicationId
+                    })
                 } catch (t) {
                     s.default.dispatch({
                         type: "EMBEDDED_ACTIVITY_LAUNCH_FAIL",
@@ -65809,7 +65803,7 @@
                     channelId: i,
                     applicationId: r,
                     showFeedback: a = !0
-                } = e, l = p.default.getSelfEmbeddedActivityForChannel(i);
+                } = e, l = N.default.getSelfEmbeddedActivityForChannel(i);
                 s.default.dispatch({
                     type: "EMBEDDED_ACTIVITY_CLOSE",
                     channelId: i,
@@ -65820,7 +65814,7 @@
                 });
                 let u = c.default.getSelectedParticipantId(i),
                     d = null === (n = h.default.getCurrentUser()) || void 0 === n ? void 0 : n.id;
-                null != p.default.getEmbeddedActivitiesForChannel(i).find(e => e.applicationId === r) && null != d && "" !== d && u === r && o.default.selectParticipant(i, null)
+                null != N.default.getEmbeddedActivitiesForChannel(i).find(e => e.applicationId === r) && null != d && "" !== d && u === r && o.default.selectParticipant(i, null)
             }
 
             function M(e, t) {
@@ -65890,9 +65884,9 @@
                 let {
                     guildId: o,
                     force: l = !1
-                } = e, u = p.default.getShelfActivities(o), d = u.map(e => _.default.getApplication(e.application_id)).filter(A.isNotNullish);
-                if (!l && !p.default.shouldFetchShelf(o)) {
-                    if (null === (t = p.default.getShelfFetchStatus(o)) || void 0 === t ? void 0 : t.isFetching) {
+                } = e, u = N.default.getShelfActivities(o), d = u.map(e => _.default.getApplication(e.application_id)).filter(A.isNotNullish);
+                if (!l && !N.default.shouldFetchShelf(o)) {
+                    if (null === (t = N.default.getShelfFetchStatus(o)) || void 0 === t ? void 0 : t.isFetching) {
                         let e, t;
                         let n = new Promise(t => {
                                 e = U.bind(null, o, t), s.default.subscribe("EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS", e)
@@ -67327,6 +67321,48 @@
                     locationObject: O,
                     analyticsLocations: L
                 }), _.markActivityUsed(t.application.id), !0
+            }
+        },
+        844797: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                isActivityInTextStart: function() {
+                    return _
+                },
+                useIsActivityInTextChannel: function() {
+                    return d
+                }
+            });
+            var i = n("442837"),
+                r = n("592125"),
+                s = n("944486"),
+                a = n("867176"),
+                o = n("317381"),
+                l = n("981631");
+
+            function u(e) {
+                let {
+                    channelId: t,
+                    SelectedChannelStore: n,
+                    ChannelStore: i
+                } = e, r = i.getChannel(t), s = (0, a.isActivitiesInTextEnabled)(r, "isActivityInTextChannel");
+                return !!((null == r ? void 0 : r.type) === l.ChannelTypes.GUILD_TEXT && s || null != r && r.isPrivate() && s && null == n.getVoiceChannelId()) || !1
+            }
+
+            function d(e) {
+                return (0, i.useStateFromStores)([r.default, s.default], () => u({
+                    channelId: null == e ? void 0 : e.id,
+                    ChannelStore: r.default,
+                    SelectedChannelStore: s.default
+                }))
+            }
+
+            function _(e, t, n, i) {
+                return !o.default.getEmbeddedActivitiesForChannel(e).some(e => e.applicationId === t) && u({
+                    channelId: e,
+                    SelectedChannelStore: n,
+                    ChannelStore: i
+                })
             }
         },
         918559: function(e, t, n) {
@@ -86921,8 +86957,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287864", "287864"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287864")), t = 0), t
+                let t = parseInt((e = "287865", "287865"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287865")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112847,8 +112883,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287864",
-                    versionHash: "b9f42a00c8f2be42f5c24890332240d0d7b902cb"
+                    buildNumber: "287865",
+                    versionHash: "7c450d4f8266be0c689ab3c9f795daa6bd4ce873"
                 }
             }
             n.r(t), n.d(t, {
@@ -167296,8 +167332,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714060035448",
-                                    build_number: "287864"
+                                    built_at: "1714060242465",
+                                    build_number: "287865"
                                 }
                             },
                             retries: 1
@@ -245165,7 +245201,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b9f42a00c8f2be42f5c24890332240d0d7b902cb"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7c450d4f8266be0c689ab3c9f795daa6bd4ce873"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273689,7 +273725,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287864"
+                                build_number: "287865"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280923,7 +280959,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287864", "287864"), 10);
+                let s = parseInt((n = "287865", "287865"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308391,4 +308427,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.a988cbc669b3cc1b1988.js.map
+//# sourceMappingURL=35705.df68e21a3cb40a1905d9.js.map
