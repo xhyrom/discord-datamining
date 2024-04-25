@@ -74,7 +74,7 @@
 <p>Permissions for Polls can be managed from a server or channel level.</p>
 <h2 id="h_01HVSGXPCGB1DRTY1KD87BZM1Q">Role Permission</h2>
 <p>1. Tap on your server’s name in the top left corner and then tap on <strong>Server Settings</strong>.</p>
-<p>2. Navigate to <strong>Roles</strong> and then select which role you’d like to change the permission for.Or tap on <strong>Default Permissions </strong>to edit this role for everyone.</p>
+<p>2. Navigate to <strong>Roles</strong> and then select which role you’d like to change the permission for, or tap on <strong>Default Permissions </strong>to edit this role for everyone.</p>
 <p>3. Scroll down until you see <strong>Create Polls</strong>. A “check mark” means this feature is enabled and an “x” means it’s disabled.  </p>
 <p>4. Lastly, save your changes to apply them.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/22908438029463" alt="polls1.gif"></p>
