@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287993", ", Version Hash: ").concat("ff65e15df2ea58013eb27a394283c72609a27798")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288006", ", Version Hash: ").concat("e2f40e638dd9ca264829901d4fad89a1ea6e4b56")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -47826,6 +47826,16 @@
                 PREMIUM_CUSTOM_NOTIFICATION_SOUND_ROADBLOCK_DESCRIPTION: "Access custom notification sounds, HD streaming, personalized profiles, and more with Nitro.",
                 PREMIUM_CUSTOM_NOTIFICATION_SOUND_COACHMARK_TITLE: "Personalize your notification sounds!",
                 PREMIUM_CUSTOM_NOTIFICATION_SOUND_COACHMARK_DESCRIPTION: "Assign custom notification sounds [Beta] to the servers & direct messages that matter most to you.",
+                SOUNDPACK_DEFAULT_LABEL: "Discord Default",
+                SOUNDPACK_DEFAULT_DESCRIPTION: "Wumpus' Favorite",
+                SOUNDPACK_RETRO_LABEL: "Power up!",
+                SOUNDPACK_RETRO_DESCRIPTION: "Retro",
+                SOUNDPACK_LOFI_LABEL: "Twinkle",
+                SOUNDPACK_LOFI_DESCRIPTION: "Lofi",
+                SOUNDPACK_DUCKY_LABEL: "Quack",
+                SOUNDPACK_DUCKY_DESCRIPTION: "Ducky",
+                SOUNDPACK_BUBBLE_LABEL: "Bloop",
+                SOUNDPACK_BUBBLE_DESCRIPTION: "Bubble",
                 PAYMENT_METHOD_INFO: "Payment method",
                 PAID_SERVICE_TERMS_AGREEMENT: "By clicking “Buy gift”, you agree to the Paid Services Terms",
                 ONE_TIME_CHARGE_INFO: "This will be a one time charge for the amount of time chosen. You will not be billed yearly.",
@@ -86961,8 +86971,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287993", "287993"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287993")), t = 0), t
+                let t = parseInt((e = "288006", "288006"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288006")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112761,8 +112771,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287993",
-                    versionHash: "ff65e15df2ea58013eb27a394283c72609a27798"
+                    buildNumber: "288006",
+                    versionHash: "e2f40e638dd9ca264829901d4fad89a1ea6e4b56"
                 }
             }
             n.r(t), n.d(t, {
@@ -167218,8 +167228,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714075673437",
-                                    build_number: "287993"
+                                    built_at: "1714076371616",
+                                    build_number: "288006"
                                 }
                             },
                             retries: 1
@@ -193175,28 +193185,28 @@
             function a() {
                 return [{
                     value: "classic",
-                    label: "Discord Default",
-                    description: "Wumpus' Favorite",
+                    label: s.default.Messages.SOUNDPACK_DEFAULT_LABEL,
+                    description: s.default.Messages.SOUNDPACK_DEFAULT_DESCRIPTION,
                     requirePremium: !1
                 }, {
                     value: "retro",
-                    label: "Power up!",
-                    description: "Retro",
-                    requirePremium: !0
-                }, {
-                    value: "bop",
-                    label: "*hey you*",
-                    description: "BOP",
-                    requirePremium: !0
-                }, {
-                    value: "ducky",
-                    label: "Quack quack",
-                    description: "Ducky",
+                    label: s.default.Messages.SOUNDPACK_RETRO_LABEL,
+                    description: s.default.Messages.SOUNDPACK_RETRO_DESCRIPTION,
                     requirePremium: !0
                 }, {
                     value: "lofi",
-                    label: "Twinkle",
-                    description: "Lofi",
+                    label: s.default.Messages.SOUNDPACK_LOFI_LABEL,
+                    description: s.default.Messages.SOUNDPACK_LOFI_DESCRIPTION,
+                    requirePremium: !0
+                }, {
+                    value: "ducky",
+                    label: s.default.Messages.SOUNDPACK_DUCKY_LABEL,
+                    description: s.default.Messages.SOUNDPACK_DUCKY_DESCRIPTION,
+                    requirePremium: !0
+                }, {
+                    value: "bop",
+                    label: s.default.Messages.SOUNDPACK_BUBBLE_LABEL,
+                    description: s.default.Messages.SOUNDPACK_BUBBLE_DESCRIPTION,
                     requirePremium: !0
                 }]
             }
@@ -193209,7 +193219,7 @@
                     value: "detune",
                     label: s.default.Messages.SOUNDPACK_DETUNE_LABEL
                 }]
-            }(i = r || (r = {})).CLASSIC = "classic", i.DETUNE = "detune", i.RETRO = "retro", i.BOP = "bop", i.DUCKY = "ducky", i.LOFI = "lofi"
+            }(i = r || (r = {})).CLASSIC = "classic", i.DETUNE = "detune", i.RETRO = "retro", i.BUBBLE = "bop", i.DUCKY = "ducky", i.LOFI = "lofi"
         },
         474873: function(e, t, n) {
             "use strict";
@@ -193318,7 +193328,7 @@
                 [i.Soundpacks.RETRO]: {
                     message1: "bit_message1"
                 },
-                [i.Soundpacks.BOP]: {
+                [i.Soundpacks.BUBBLE]: {
                     message1: "bop_message1"
                 },
                 [i.Soundpacks.DUCKY]: {
@@ -245103,7 +245113,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ff65e15df2ea58013eb27a394283c72609a27798"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e2f40e638dd9ca264829901d4fad89a1ea6e4b56"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273627,7 +273637,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287993"
+                                build_number: "288006"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280861,7 +280871,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287993", "287993"), 10);
+                let s = parseInt((n = "288006", "288006"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308338,4 +308348,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.d6b15400e8f347548f97.js.map
+//# sourceMappingURL=35705.da342450a7e5e71faa3f.js.map
