@@ -17971,7 +17971,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return N
+                    return m
                 }
             }), n("47120");
             var i = n("735250"),
@@ -17987,10 +17987,9 @@
                 E = n("574254"),
                 I = n("153850"),
                 T = n("585483"),
-                f = n("632120"),
-                S = n("981631");
+                f = n("981631");
 
-            function h(e, t, n) {
+            function S(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -17998,24 +17997,27 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let A = e => {
+            let h = e => {
                 let {
                     children: t,
                     close: n,
                     onUnmount: o,
-                    rect: u,
-                    position: c,
-                    align: E,
-                    impressionName: T,
-                    impressionProperties: f
-                } = e, h = r.useRef(null);
+                    target: u,
+                    rect: c,
+                    position: E,
+                    align: T,
+                    impressionName: S,
+                    impressionProperties: h
+                } = e, A = r.useRef(null), m = r.useMemo(() => ({
+                    current: u
+                }), [u]);
                 r.useEffect(() => {
                     var e, t;
-                    let i = (0, s.findDOMNode)(h.current);
+                    let i = (0, s.findDOMNode)(A.current);
                     if (null == i) return;
                     let r = e => {
                         let t = e.target,
-                            i = (0, s.findDOMNode)(h.current);
+                            i = (0, s.findDOMNode)(A.current);
                         !(null != i && (0, l.referencePortalAwareContains)(i, t)) && (window.getSelection().removeAllRanges(), n())
                     };
                     return null === (e = i.ownerDocument) || void 0 === e || e.addEventListener("click", r, !0), null === (t = i.ownerDocument) || void 0 === t || t.addEventListener("contextmenu", r, !0), () => {
@@ -18023,44 +18025,45 @@
                         null === (e = i.ownerDocument) || void 0 === e || e.removeEventListener("click", r, !0), null === (t = i.ownerDocument) || void 0 === t || t.removeEventListener("contextmenu", r, !0)
                     }
                 }, [n]);
-                let A = r.useRef(o);
-                r.useEffect(() => void(A.current = o)), r.useEffect(() => () => {
+                let N = r.useRef(o);
+                r.useEffect(() => void(N.current = o)), r.useEffect(() => () => {
                     var e;
-                    return null === (e = A.current) || void 0 === e ? void 0 : e.call(A)
+                    return null === (e = N.current) || void 0 === e ? void 0 : e.call(N)
                 }, []), r.useLayoutEffect(() => {
                     var e;
-                    null === (e = h.current) || void 0 === e || e.updatePosition()
+                    null === (e = A.current) || void 0 === e || e.updatePosition()
                 }), (0, _.default)({
                     type: a.ImpressionTypes.MENU,
-                    name: T,
-                    properties: f
+                    name: S,
+                    properties: h
                 });
-                let m = (0, d.useWindowDispatch)(),
-                    N = r.useCallback(() => {
-                        m.dispatch(S.ComponentActions.POPOUT_SHOW)
-                    }, [m]),
-                    p = r.useCallback(() => {
-                        m.dispatch(S.ComponentActions.POPOUT_HIDE)
-                    }, [m]);
+                let p = (0, d.useWindowDispatch)(),
+                    O = r.useCallback(() => {
+                        p.dispatch(f.ComponentActions.POPOUT_SHOW)
+                    }, [p]),
+                    R = r.useCallback(() => {
+                        p.dispatch(f.ComponentActions.POPOUT_HIDE)
+                    }, [p]);
                 return (0, i.jsx)(I.AppReferencePositionLayer, {
-                    onMount: N,
-                    onUnmount: p,
-                    reference: () => u,
-                    position: null != c ? c : "right",
-                    align: null != E ? E : "top",
+                    onMount: O,
+                    onUnmount: R,
+                    targetRef: m,
+                    overrideTargetRect: c,
+                    position: null != E ? E : "right",
+                    align: null != T ? T : "top",
                     autoInvert: !0,
-                    ref: h,
+                    ref: A,
                     nudgeAlignIntoViewport: !0,
                     children: t
                 })
             };
-            class m extends r.PureComponent {
+            class A extends r.PureComponent {
                 componentDidMount() {
                     let {
                         renderLazy: e,
                         renderWindow: t
                     } = this.props;
-                    if (t.addEventListener("resize", this.closeResize, !0), T.ComponentDispatch.subscribe(S.ComponentActions.CONTEXT_MENU_CLOSE, this.props.closeContextMenu), null != e) {
+                    if (t.addEventListener("resize", this.closeResize, !0), T.ComponentDispatch.subscribe(f.ComponentActions.CONTEXT_MENU_CLOSE, this.props.closeContextMenu), null != e) {
                         let t = setTimeout(() => {
                             this.setState({
                                 render: () => (0, i.jsx)(l.MenuSpinner, {})
@@ -18086,7 +18089,7 @@
                     let {
                         renderWindow: e
                     } = this.props;
-                    e.removeEventListener("resize", this.closeResize, !0), T.ComponentDispatch.unsubscribe(S.ComponentActions.CONTEXT_MENU_CLOSE, this.props.closeContextMenu)
+                    e.removeEventListener("resize", this.closeResize, !0), T.ComponentDispatch.unsubscribe(f.ComponentActions.CONTEXT_MENU_CLOSE, this.props.closeContextMenu)
                 }
                 render() {
                     var e;
@@ -18098,7 +18101,8 @@
                         config: a,
                         rect: o
                     } = this.props, l = null !== (e = this.state.render) && void 0 !== e ? e : this.props.render;
-                    return r && null != o && null != a && null != n && null != l && a.context === t ? (0, i.jsx)(A, {
+                    return r && null != o && null != a && null != n && null != l && a.context === t ? (0, i.jsx)(h, {
+                        target: n,
                         rect: o,
                         close: this.close,
                         onUnmount: a.onClose,
@@ -18111,7 +18115,6 @@
                                 position: r
                             } = e;
                             return l({
-                                className: f.ContextMenuClassName,
                                 position: r,
                                 theme: s,
                                 onHeightUpdate: i,
@@ -18123,14 +18126,14 @@
                     }) : null
                 }
                 constructor(...e) {
-                    super(...e), h(this, "state", {
+                    super(...e), S(this, "state", {
                         render: void 0
-                    }), h(this, "closeResize", e => {
+                    }), S(this, "closeResize", e => {
                         let {
                             renderWindow: t
                         } = this.props;
                         e.target === t && this.close()
-                    }), h(this, "close", () => {
+                    }), S(this, "close", () => {
                         let {
                             isOpen: e,
                             closeContextMenu: t
@@ -18140,7 +18143,7 @@
                 }
             }
 
-            function N() {
+            function m() {
                 let {
                     contextMenu: e,
                     version: t,
@@ -18153,7 +18156,7 @@
                     appContext: a,
                     renderWindow: l
                 } = r.useContext(d.default);
-                return (0, i.jsx)(m, {
+                return (0, i.jsx)(A, {
                     appContext: a,
                     renderWindow: l,
                     ...e,
@@ -18162,15 +18165,6 @@
                     closeContextMenu: u.closeContextMenu
                 }, t)
             }
-        },
-        632120: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                ContextMenuClassName: function() {
-                    return i
-                }
-            });
-            let i = "context-menu"
         },
         129861: function(e, t, n) {
             "use strict";
@@ -26213,7 +26207,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 ReferencePositionLayer: function() {
-                    return R
+                    return C
                 },
                 referencePortalAwareContains: function() {
                     return m
@@ -26297,7 +26291,15 @@
                 }
                 return n
             }
-            class R extends(i = s.Component) {
+
+            function R(e) {
+                let {
+                    targetRef: t,
+                    overrideTargetRect: n
+                } = e;
+                return null != n ? n : (u()(null != t.current, "Invalid ref"), t.current.getBoundingClientRect())
+            }
+            class C extends(i = s.Component) {
                 formatDimension(e) {
                     return this.props.useRawTargetDimensions ? e : Math.ceil(e)
                 }
@@ -26415,44 +26417,41 @@
                     }
                 }
                 calculatePositionStyle(e, t, n) {
-                    var i, r, s, a;
+                    var i, r, s;
                     let {
-                        reference: o,
-                        spacing: l = 0
-                    } = this.props;
-                    let d = "function" == typeof(i = o) ? i() : (u()(null != i.current, "Invalid ref"), i.current.getBoundingClientRect()),
-                        _ = n.getBoundingClientRect();
-                    let c = (r = d, s = _.left, a = _.top, {
-                        top: r.top - a,
-                        left: r.left - s,
-                        bottom: r.bottom - a,
-                        right: r.right - s,
-                        width: r.width,
-                        height: r.height
+                        spacing: a = 0
+                    } = this.props, o = R(this.props), l = n.getBoundingClientRect();
+                    let u = (i = o, r = l.left, s = l.top, {
+                        top: i.top - s,
+                        left: i.left - r,
+                        bottom: i.bottom - s,
+                        right: i.right - r,
+                        width: i.width,
+                        height: i.height
                     });
                     switch (e) {
                         case "top":
-                            return this.getHorizontalAlignmentStyle(c, t, n, {
-                                bottom: n.offsetHeight - c.top + l
+                            return this.getHorizontalAlignmentStyle(u, t, n, {
+                                bottom: n.offsetHeight - u.top + a
                             });
                         case "bottom":
-                            return this.getHorizontalAlignmentStyle(c, t, n, {
-                                top: c.bottom + l
+                            return this.getHorizontalAlignmentStyle(u, t, n, {
+                                top: u.bottom + a
                             });
                         case "left":
-                            return this.getVerticalAlignmentStyle(c, t, n, {
-                                right: n.offsetWidth - c.left + l
+                            return this.getVerticalAlignmentStyle(u, t, n, {
+                                right: n.offsetWidth - u.left + a
                             });
                         case "right":
-                            return this.getVerticalAlignmentStyle(c, t, n, {
-                                left: c.right + l
+                            return this.getVerticalAlignmentStyle(u, t, n, {
+                                left: u.right + a
                             });
                         case "center":
-                            return this.getVerticalAlignmentStyle(c, t, n, {
-                                left: c.left + c.width / 2 - t.offsetWidth / 2 + l
+                            return this.getVerticalAlignmentStyle(u, t, n, {
+                                left: u.left + u.width / 2 - t.offsetWidth / 2 + a
                             });
                         case "window_center":
-                            return this.getVerticalAlignmentStyle(c, t, n, {
+                            return this.getVerticalAlignmentStyle(u, t, n, {
                                 left: Math.max((window.innerWidth - t.offsetWidth) / 2, 0)
                             });
                         default:
@@ -26510,7 +26509,7 @@
                 componentDidMount() {
                     var e, t;
                     let {
-                        reference: n,
+                        targetRef: n,
                         onMount: i
                     } = this.props;
                     this.setState({
@@ -26518,17 +26517,14 @@
                         ...this.calculateState()
                     });
                     let r = this.elementRef.current;
-                    u()(null != r, "Missing elementRef"), "function" != typeof n && null != n.current && A.set(r, n.current), c.ComponentDispatch.subscribe(f.ComponentActions.LAYER_POP_START, this.handleLayerPopStart), c.ComponentDispatch.subscribe(f.ComponentActions.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == r || null === (t = r.ownerDocument) || void 0 === t || null === (e = t.defaultView) || void 0 === e || e.addEventListener("resize", this.handleLayerPopComplete), null == i || i()
+                    u()(null != r, "Missing elementRef"), null != n.current && A.set(r, n.current), c.ComponentDispatch.subscribe(f.ComponentActions.LAYER_POP_START, this.handleLayerPopStart), c.ComponentDispatch.subscribe(f.ComponentActions.LAYER_POP_COMPLETE, this.handleLayerPopComplete), null == r || null === (t = r.ownerDocument) || void 0 === t || null === (e = t.defaultView) || void 0 === e || e.addEventListener("resize", this.handleLayerPopComplete), null == i || i()
                 }
                 componentDidUpdate(e, t) {
-                    if (N(e) !== N(this.props) ? this.updatePosition() : ! function(e, t) {
-                            if ("function" == typeof e && "function" == typeof t) {
-                                let n = e(),
-                                    i = t();
-                                return n.top === i.top && n.left === i.left
-                            }
-                            return e === t
-                        }(e.reference, this.props.reference) && this.updatePosition(), t.position !== this.state.position) {
+                    if ((N(e) !== N(this.props) || ! function(e, t) {
+                            let n = R(e),
+                                i = R(t);
+                            return n.top === i.top && n.left === i.left
+                        }(e, this.props)) && this.updatePosition(), t.position !== this.state.position) {
                         var n, i;
                         null === (n = (i = this.props).onPositionChange) || void 0 === n || n.call(i, this.state.position)
                     }
@@ -26602,7 +26598,7 @@
                     })
                 }
             }
-            h(R, "defaultProps", {
+            h(C, "defaultProps", {
                 nudgeAlignIntoViewport: !1,
                 spacing: 0,
                 autoInvert: !1,
@@ -28575,7 +28571,7 @@
                     children: [(0, i.jsx)("div", {
                         ref: S
                     }), n, s ? (0, i.jsx)(o.ReferencePositionLayer, {
-                        reference: S,
+                        targetRef: S,
                         autoInvert: !0,
                         nudgeAlignIntoViewport: !0,
                         fixed: !0,
@@ -28642,7 +28638,7 @@
                     children: [(0, i.jsx)("div", {
                         ref: T
                     }), t, n ? (0, i.jsx)(s.ReferencePositionLayer, {
-                        reference: T,
+                        targetRef: T,
                         autoInvert: !0,
                         nudgeAlignIntoViewport: !0,
                         fixed: !0,
@@ -29735,7 +29731,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 BasePopout: function() {
-                    return O
+                    return p
                 }
             }), n("47120"), n("411104");
             var i, r = n("735250"),
@@ -29750,13 +29746,12 @@
                 E = n("302901"),
                 I = n("539907"),
                 T = n("952265"),
-                f = n("632120"),
-                S = n("40851"),
-                h = n("153850"),
-                A = n("920676"),
-                m = n("981631");
+                f = n("40851"),
+                S = n("153850"),
+                h = n("920676"),
+                A = n("981631");
 
-            function N(e, t, n) {
+            function m(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -29764,8 +29759,8 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let p = new Set(["Spacebar", " ", "Enter"]);
-            class O extends(i = s.Component) {
+            let N = new Set(["Spacebar", " ", "Enter"]);
+            class p extends(i = s.Component) {
                 shouldShowPopout(e, t) {
                     return null != e.shouldShow ? e.shouldShow : t.shouldShowPopout
                 }
@@ -29789,12 +29784,12 @@
                 setupShowPopout() {
                     var e, t, n;
                     let i = this.getDomElement();
-                    null === (e = i.ownerDocument) || void 0 === e || e.addEventListener("mousedown", this.handleDocumentMouseDown, !0), null === (t = i.ownerDocument) || void 0 === t || t.addEventListener("mouseup", this.handleDocumentMouseUp, !0), this.props.closeOnScroll && (null === (n = i.ownerDocument) || void 0 === n || n.addEventListener("scroll", this.close, !0)), this.context.windowDispatch.subscribe(m.ComponentActions.POPOUT_CLOSE, this.close), this.domElementRef.current = i, this.isValidClickStart = !1, this.forceUpdate()
+                    null === (e = i.ownerDocument) || void 0 === e || e.addEventListener("mousedown", this.handleDocumentMouseDown, !0), null === (t = i.ownerDocument) || void 0 === t || t.addEventListener("mouseup", this.handleDocumentMouseUp, !0), this.props.closeOnScroll && (null === (n = i.ownerDocument) || void 0 === n || n.addEventListener("scroll", this.close, !0)), this.context.windowDispatch.subscribe(A.ComponentActions.POPOUT_CLOSE, this.close), this.domElementRef.current = i, this.isValidClickStart = !1, this.forceUpdate()
                 }
                 unsubscribe() {
                     var e, t, n, i;
                     let r = this.domElementRef.current;
-                    null != r && (null === (t = r.ownerDocument) || void 0 === t || t.removeEventListener("mousedown", this.handleDocumentMouseDown, !0), null === (n = r.ownerDocument) || void 0 === n || n.removeEventListener("mouseup", this.handleDocumentMouseUp, !0), null === (i = r.ownerDocument) || void 0 === i || i.removeEventListener("scroll", this.close, !0)), this.context.windowDispatch.unsubscribe(m.ComponentActions.POPOUT_CLOSE, this.close), null === (e = this.resizeObserver) || void 0 === e || e.disconnect()
+                    null != r && (null === (t = r.ownerDocument) || void 0 === t || t.removeEventListener("mousedown", this.handleDocumentMouseDown, !0), null === (n = r.ownerDocument) || void 0 === n || n.removeEventListener("mouseup", this.handleDocumentMouseUp, !0), null === (i = r.ownerDocument) || void 0 === i || i.removeEventListener("scroll", this.close, !0)), this.context.windowDispatch.unsubscribe(A.ComponentActions.POPOUT_CLOSE, this.close), null === (e = this.resizeObserver) || void 0 === e || e.disconnect()
                 }
                 componentWillUnmount() {
                     this.unsubscribe(), this.domElementRef.current = null, this.loadingTimeout.stop(), this.validClickTimeout.stop()
@@ -29842,13 +29837,13 @@
                         shouldShowLoadingState: T
                     } = this.state;
                     return c && !T ? null : (0, r.jsx)(E.Layer, {
-                        layerContext: null != d ? d : h.appLayerContext,
+                        layerContext: null != d ? d : S.appLayerContext,
                         children: (0, r.jsx)(I.ReferencePositionLayer, {
                             ref: this.layerRef,
                             onMount: this.handlePopoutShow,
                             onUnmount: this.handlePopoutHide,
                             id: this.popoutId,
-                            reference: this.domElementRef,
+                            targetRef: this.domElementRef,
                             position: e,
                             align: t,
                             nudgeAlignIntoViewport: n,
@@ -29869,17 +29864,17 @@
                     })
                 }
                 constructor(...e) {
-                    super(...e), N(this, "domElementRef", s.createRef()), N(this, "layerRef", s.createRef()), N(this, "popoutRef", s.createRef()), N(this, "resizeObserver", void 0), N(this, "popoutId", "popout_".concat(o()())), N(this, "loadingTimeout", new _.Timeout), N(this, "validClickTimeout", new _.Timeout), N(this, "isValidClickStart", !1), N(this, "state", {
+                    super(...e), m(this, "domElementRef", s.createRef()), m(this, "layerRef", s.createRef()), m(this, "popoutRef", s.createRef()), m(this, "resizeObserver", void 0), m(this, "popoutId", "popout_".concat(o()())), m(this, "loadingTimeout", new _.Timeout), m(this, "validClickTimeout", new _.Timeout), m(this, "isValidClickStart", !1), m(this, "state", {
                         renderedPosition: this.props.position,
                         shouldShowPopout: !1,
                         shouldShowLoadingState: !1,
                         isLoading: !1,
                         resizeKey: 0
-                    }), N(this, "handlePopoutShow", () => {
-                        this.context.windowDispatch.dispatch(m.ComponentActions.POPOUT_SHOW)
-                    }), N(this, "handlePopoutHide", () => {
-                        this.context.windowDispatch.dispatch(m.ComponentActions.POPOUT_HIDE)
-                    }), N(this, "handleSetPopoutRef", e => {
+                    }), m(this, "handlePopoutShow", () => {
+                        this.context.windowDispatch.dispatch(A.ComponentActions.POPOUT_SHOW)
+                    }), m(this, "handlePopoutHide", () => {
+                        this.context.windowDispatch.dispatch(A.ComponentActions.POPOUT_HIDE)
+                    }), m(this, "handleSetPopoutRef", e => {
                         var t;
                         let n = null == e ? void 0 : e.ownerDocument.defaultView;
                         null != e && null != n && (this.popoutRef.current = e, null === (t = this.resizeObserver) || void 0 === t || t.disconnect(), this.resizeObserver = new n.ResizeObserver(() => {
@@ -29889,7 +29884,7 @@
                                 })
                             })
                         }), this.resizeObserver.observe(e))
-                    }), N(this, "renderPopout", (e, t) => {
+                    }), m(this, "renderPopout", (e, t) => {
                         let {
                             renderPopout: n
                         } = this.props;
@@ -29899,13 +29894,13 @@
                             closePopout: this.close,
                             setPopoutRef: this.handleSetPopoutRef
                         })
-                    }), N(this, "close", () => {
+                    }), m(this, "close", () => {
                         let {
                             onRequestClose: e,
                             shouldShow: t
                         } = this.props;
                         null == e || e(), null == t && this.toggleShow(!1)
-                    }), N(this, "handleClick", e => {
+                    }), m(this, "handleClick", e => {
                         let {
                             onShiftClick: t,
                             shouldShow: n,
@@ -29925,14 +29920,14 @@
                                 shouldShowPopout: !t
                             }
                         })
-                    }), N(this, "handleMouseEnter", () => {
+                    }), m(this, "handleMouseEnter", () => {
                         let {
                             onRequestOpen: e
                         } = this.props;
                         null == e || e(), this.setState({
                             shouldShowPopout: !0
                         })
-                    }), N(this, "handlePreload", async () => {
+                    }), m(this, "handlePreload", async () => {
                         let {
                             preload: e
                         } = this.props;
@@ -29950,31 +29945,31 @@
                                 })
                             }
                         }
-                    }), N(this, "handleKeyboardPreload", e => {
-                        p.has(e.key) && this.handlePreload()
-                    }), N(this, "handleDocumentMouseDown", e => {
+                    }), m(this, "handleKeyboardPreload", e => {
+                        N.has(e.key) && this.handlePreload()
+                    }), m(this, "handleDocumentMouseDown", e => {
                         let {
                             ignoreModalClicks: t
                         } = this.props, n = e.target, i = this.domElementRef.current;
                         if (null != i) {
-                            if ((0, I.referencePortalAwareContains)(i, n) || null != n.closest("." + f.ContextMenuClassName) || t && (0, T.hasAnyModalOpen)()) return;
+                            if ((0, I.referencePortalAwareContains)(i, n) || t && (0, T.hasAnyModalOpen)()) return;
                             this.isValidClickStart = !0
                         }
-                    }), N(this, "handleDocumentMouseUp", () => {
+                    }), m(this, "handleDocumentMouseUp", () => {
                         this.isValidClickStart && (this.isValidClickStart = !1, this.close())
-                    }), N(this, "handlePopoutPositionChange", e => {
+                    }), m(this, "handlePopoutPositionChange", e => {
                         this.setState({
                             renderedPosition: e
                         })
                     })
                 }
             }
-            N(O, "defaultProps", {
+            m(p, "defaultProps", {
                 autoInvert: !1,
                 nudgeAlignIntoViewport: !1,
                 spacing: 0,
-                loadingComponent: (0, r.jsx)(A.LoadingPopout, {})
-            }), N(O, "contextType", S.default)
+                loadingComponent: (0, r.jsx)(h.LoadingPopout, {})
+            }), m(p, "contextType", f.default)
         },
         920676: function(e, t, n) {
             "use strict";
@@ -35326,7 +35321,7 @@
                     } = e, f = "".concat("string" == typeof s ? s : "", ":").concat(i);
                     return (0, a.jsx)(A.AppReferencePositionLayer, {
                         disablePointerEvents: I,
-                        reference: t,
+                        targetRef: t,
                         position: i,
                         autoInvert: !0,
                         align: n,
@@ -36740,7 +36735,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288085", ", Version Hash: ").concat("12a4557beebd5b496ce87bc6fd54f16fe854d951")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288094", ", Version Hash: ").concat("aec83ed44a42440d953731cbb067677ab508fb6f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -73056,7 +73051,7 @@
                     section: m.AnalyticsSections.EXPRESSION_PICKER,
                     children: (0, i.jsx)(E.AppReferencePositionLayer, {
                         className: p.positionLayer,
-                        reference: t,
+                        targetRef: t,
                         position: "top",
                         align: "left",
                         spacing: 8,
@@ -86975,8 +86970,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "288085", "288085"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288085")), t = 0), t
+                let t = parseInt((e = "288094", "288094"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288094")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -87990,7 +87985,8 @@
                 });
                 return null != B ? (0, i.jsx)(b, {
                     children: (0, i.jsx)(u.ReferencePositionLayer, {
-                        reference: () => B,
+                        targetRef: e.targetRef,
+                        overrideTargetRect: B,
                         positionKey: k,
                         position: null !== (O = e.position) && void 0 !== O ? O : "top",
                         align: "left",
@@ -91401,6 +91397,10 @@
                     users: {
                         allowMentioning: !0
                     },
+                    autocomplete: {
+                        alwaysUseLayer: !0,
+                        small: !0
+                    },
                     submit: {
                         useDisabledStylesOnSubmit: !0,
                         clearOnSubmit: !0
@@ -93863,6 +93863,7 @@
                                 focused: eU,
                                 expressionPickerView: tG,
                                 type: eP,
+                                targetRef: e5,
                                 editorRef: e9,
                                 onSendMessage: tm,
                                 onSendSticker: tL,
@@ -112756,8 +112757,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "288085",
-                    versionHash: "12a4557beebd5b496ce87bc6fd54f16fe854d951"
+                    buildNumber: "288094",
+                    versionHash: "aec83ed44a42440d953731cbb067677ab508fb6f"
                 }
             }
             n.r(t), n.d(t, {
@@ -122549,7 +122550,7 @@
                     section: P.AnalyticsSections.EXPRESSION_PICKER,
                     children: (0, i.jsx)(L.AppReferencePositionLayer, {
                         className: a()(B.positionLayer, eS),
-                        reference: o,
+                        targetRef: o,
                         position: K,
                         align: z,
                         spacing: 8,
@@ -167213,8 +167214,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714083011351",
-                                    build_number: "288085"
+                                    built_at: "1714083514879",
+                                    build_number: "288094"
                                 }
                             },
                             retries: 1
@@ -198144,7 +198145,7 @@
                         fixed: !0,
                         align: "center",
                         position: "center",
-                        reference: o,
+                        targetRef: o,
                         children: () => (0, i.jsxs)("div", {
                             className: p.overlayWrapper,
                             children: [(0, i.jsx)(u.animated.div, {
@@ -208462,30 +208463,29 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return u
+                    return l
                 }
             });
             var i = n("735250");
             n("470079");
             var r = n("120356"),
                 s = n.n(r),
-                a = n("652853"),
-                o = n("228168"),
-                l = n("3062");
+                a = n("228168"),
+                o = n("3062");
 
-            function u(e) {
+            function l(e) {
                 let {
-                    children: t,
-                    isFaded: n
-                } = e, {
-                    profileType: r
-                } = (0, a.useUserProfileThemeContext)();
+                    profileType: t,
+                    children: n,
+                    isFaded: r
+                } = e;
                 return (0, i.jsx)("div", {
-                    className: s()(l.wrapper, {
-                        [l.faded]: n,
-                        [l.modal]: r === o.UserProfileTypes.MODAL
+                    className: s()(o.wrapper, {
+                        [o.biteSize]: t === a.UserProfileTypes.BITE_SIZE,
+                        [o.fullSize]: t === a.UserProfileTypes.FULL_SIZE,
+                        [o.faded]: r
                     }),
-                    children: t
+                    children: n
                 })
             }
         },
@@ -210832,6 +210832,7 @@
                                 displayProfile: x,
                                 profileType: R.UserProfileTypes.BITE_SIZE,
                                 children: [(0, i.jsxs)(m.default, {
+                                    profileType: R.UserProfileTypes.BITE_SIZE,
                                     isFaded: (null == x ? void 0 : x.profileEffectId) != null && !F,
                                     children: [(0, i.jsx)(h.default, {
                                         user: t,
@@ -245157,7 +245158,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "12a4557beebd5b496ce87bc6fd54f16fe854d951"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "aec83ed44a42440d953731cbb067677ab508fb6f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273681,7 +273682,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "288085"
+                                build_number: "288094"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280915,7 +280916,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "288085", "288085"), 10);
+                let s = parseInt((n = "288094", "288094"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308392,4 +308393,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.319b2ab7318b47e890f3.js.map
+//# sourceMappingURL=35705.956f5d57383df004a259.js.map
