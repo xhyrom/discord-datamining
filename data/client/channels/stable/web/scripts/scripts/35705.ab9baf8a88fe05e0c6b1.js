@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287665", ", Version Hash: ").concat("c843e820d559e1442507cb1fc1f89517be35d345")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288065", ", Version Hash: ").concat("2e640e855e21ac942db3822fa04e47db4870f10d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -37336,38 +37336,57 @@
             n.r(t), n.d(t, {
                 default: function() {
                     return r
+                },
+                useDimensionsEffect: function() {
+                    return s
                 }
             }), n("47120");
             var i = n("470079");
 
             function r() {
                 for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-                let [r, s] = i.useState(void 0), [a, o] = i.useState(void 0), l = i.useRef(null);
-                return i.useLayoutEffect(() => {
-                    let e = l.current,
-                        t = null == e ? void 0 : e.ownerDocument.defaultView;
-                    if (null != e && null != t) {
-                        let n = new t.ResizeObserver(e => {
-                            var t, n, i, r, a, u;
-                            let d = e[0],
-                                _ = null == d ? void 0 : null === (n = d.borderBoxSize) || void 0 === n ? void 0 : null === (t = n[0]) || void 0 === t ? void 0 : t.inlineSize,
-                                c = null == d ? void 0 : null === (r = d.borderBoxSize) || void 0 === r ? void 0 : null === (i = r[0]) || void 0 === i ? void 0 : i.blockSize;
-                            if (null == _ || null == c) {
-                                let e = l.current;
-                                if (null != e) {
-                                    let t = window.getComputedStyle(e);
-                                    null == _ && (_ = parseFloat(null !== (a = t.width) && void 0 !== a ? a : "0")), null == c && (c = parseFloat(null !== (u = t.height) && void 0 !== u ? u : "0"))
+                let [r, a] = i.useState(void 0), [o, l] = i.useState(void 0), u = i.useRef(null);
+                return s(u, e => {
+                    let {
+                        width: t,
+                        height: n
+                    } = e;
+                    l(n), a(t)
+                }, t), {
+                    ref: u,
+                    width: r,
+                    height: o
+                }
+            }
+
+            function s(e, t) {
+                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
+                i.useLayoutEffect(() => {
+                    let n = e.current,
+                        i = null == n ? void 0 : n.ownerDocument.defaultView;
+                    if (null != n && null != i) {
+                        let r = new i.ResizeObserver(n => {
+                            var i, r, s, a, o, l;
+                            let u = n[0],
+                                d = null == u ? void 0 : null === (r = u.borderBoxSize) || void 0 === r ? void 0 : null === (i = r[0]) || void 0 === i ? void 0 : i.inlineSize,
+                                _ = null == u ? void 0 : null === (a = u.borderBoxSize) || void 0 === a ? void 0 : null === (s = a[0]) || void 0 === s ? void 0 : s.blockSize;
+                            if (null == d || null == _) {
+                                let t = e.current;
+                                if (null != t) {
+                                    let e = window.getComputedStyle(t);
+                                    null == d && (d = parseFloat(null !== (o = e.width) && void 0 !== o ? o : "0")), null == _ && (_ = parseFloat(null !== (l = e.height) && void 0 !== l ? l : "0"))
                                 }
                             }
-                            s(_), o(c)
+                            t({
+                                width: d,
+                                height: _,
+                                scrollHeight: u.target.scrollHeight,
+                                scrollWidth: u.target.scrollWidth
+                            })
                         });
-                        return n.observe(e), () => n.disconnect()
+                        return r.observe(n), () => r.disconnect()
                     }
-                }, [l.current, ...t]), {
-                    ref: l,
-                    width: r,
-                    height: a
-                }
+                }, [e.current, ...n])
             }
         },
         206678: function(e, t, n) {
@@ -42444,6 +42463,7 @@
                 PROGRESS_BAR_ACTIONS_MENU_LABEL: "Progress Bar Actions",
                 HOME_ACTIONS_MENU_LABEL: "Home Actions",
                 ACTIVITY_SHELF_ITEM_ACTIONS_MENU_LABEL: "Activity Shelf Item Actions",
+                FRIEND_ACTIONS_MENU_LABEL: "Friend Actions",
                 MORE_OPTIONS: "More Options",
                 SWITCH_TO_COZY_MODE: "Switch to Cozy Mode",
                 SWITCH_TO_COMPACT_MODE: "Switch to Compact Mode",
@@ -47807,6 +47827,16 @@
                 PREMIUM_CUSTOM_NOTIFICATION_SOUND_ROADBLOCK_DESCRIPTION: "Access custom notification sounds, HD streaming, personalized profiles, and more with Nitro.",
                 PREMIUM_CUSTOM_NOTIFICATION_SOUND_COACHMARK_TITLE: "Personalize your notification sounds!",
                 PREMIUM_CUSTOM_NOTIFICATION_SOUND_COACHMARK_DESCRIPTION: "Assign custom notification sounds [Beta] to the servers & direct messages that matter most to you.",
+                SOUNDPACK_DEFAULT_LABEL: "Discord Default",
+                SOUNDPACK_DEFAULT_DESCRIPTION: "Wumpus' Favorite",
+                SOUNDPACK_RETRO_LABEL: "Power up!",
+                SOUNDPACK_RETRO_DESCRIPTION: "Retro",
+                SOUNDPACK_LOFI_LABEL: "Twinkle",
+                SOUNDPACK_LOFI_DESCRIPTION: "Lofi",
+                SOUNDPACK_DUCKY_LABEL: "Quack",
+                SOUNDPACK_DUCKY_DESCRIPTION: "Ducky",
+                SOUNDPACK_BUBBLE_LABEL: "Bloop",
+                SOUNDPACK_BUBBLE_DESCRIPTION: "Bubble",
                 PAYMENT_METHOD_INFO: "Payment method",
                 PAID_SERVICE_TERMS_AGREEMENT: "By clicking “Buy gift”, you agree to the Paid Services Terms",
                 ONE_TIME_CHARGE_INFO: "This will be a one time charge for the amount of time chosen. You will not be billed yearly.",
@@ -54940,6 +54970,7 @@
                 POLL_NO_VOTES_FOR_ANSWER_TITLE: "Nothing to see here",
                 POLL_NO_VOTES_FOR_ANSWER_BODY: "There are no votes for this answer.",
                 POLL_ANSWER_VOTES_MODAL_TITLE: "Votes",
+                POLL_ANSWER_VOTES_MODAL_TAB_GROUP_LABEL: "Poll answers",
                 POLL_ANSWER_VOTES_MODAL_VOTE_TAB: "{numVotes, plural, =0 {0 votes} =1 {{numVotes} vote} other {{numVotes} votes}} for {option}",
                 POLL_TAP_FOR_VOTERS_A11Y_ANDROID: "Reveal voters",
                 POLL_TAP_FOR_VOTERS_A11Y_IOS: "Reveals voters",
@@ -55029,6 +55060,8 @@
                 QUESTS_UNLOCK_REWARDS: "Unlock Rewards",
                 QUESTS_CHECK_PROGRESS: "Check Progress",
                 QUESTS_JOIN_ME: "Join Me",
+                QUESTS_FOR_YOU: "QUESTS FOR YOU",
+                QUESTS_OTHER: "OTHER QUESTS",
                 QUESTS_REWARD_VERIFICATION_TITLE: "Verify your account to claim rewards!",
                 QUESTS_REWARD_VERIFICATION_BODY: "We have sent a verification email to: [{emailAddress}]({emailAddressLink})",
                 QUESTS_REWARD_VERIFICATION_ERROR: "Uh oh! We failed to send you a verification email.",
@@ -55190,7 +55223,6 @@
                 MEMBER_LIST_CONTENT_FEED_WATCH_SEASON_EPISODE: "S{seasonNum}E{episodeNum}",
                 MEMBER_LIST_CONTENT_FEED_RESURRECTED: "Returning",
                 MEMBER_LIST_CONTENT_FEED_MARATHON: "Marathon",
-                MEMBER_LIST_CONTENT_FEED_PLAYED_FOR_HOURS: "Played for {hours}h",
                 MEMBER_LIST_CONTENT_FEED_STREAK_DAYS: "{days}x Streak",
                 MEMBER_LIST_CONTENT_POPOUT_USER_PLAYING: "$[{username}](nameHook) is playing",
                 MEMBER_LIST_CONTENT_POPOUT_USER_PLAYED: "$[{username}](nameHook) played",
@@ -55712,13 +55744,22 @@
                 CLAN_DISCOVERY_TRAIT_OVERFLOW: "+ {count, number} more",
                 CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE: "Unknown",
                 CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL: "Playstyle",
-                CLAN_DISCOVERY_GET_STARTED_TITLE: "Just a few clicks to find your Valorant clique.",
-                CLAN_DISCOVERY_GET_STARTED_SUBTITLE: "Answer a few questions to discover Valorant Gaming Guilds on Discord based on your interests and playstyle.",
-                CLAN_DISCOVERY_GET_STARTED_BUTTON: "Get Started",
                 CLANS: "Clans",
                 CLAN_USER_PROFILE_PRIMARY_CLAN: "Primary Clan",
                 CLAN_DISCOVERY_SAVED_FILTER: "{count, number} Saved",
                 CLAN_DISCOVERY_CARD_TAG_TOOLTIP: "Become a member to unlock this tag",
+                CLAN_DISCOVERY_UPSELL_CTA_GUILD_INVITE: "You’re invited to become a Guild!",
+                CLAN_DISCOVERY_UPSELL_CTA_RECRUIT_VALORANT: "Recruit more Valorant players for your server",
+                CLAN_DISCOVERY_UPSELL_CTA_RECRUIT_GENSHIN: "Recruit more Genshin players for your server",
+                CLAN_DISCOVERY_UPSELL_VIBES_OR_SKILL: "Discover players with similar vibes or skill.",
+                CLAN_DISCOVERY_UPSELL_APPLICATIONS: "Approve new members and keep it exclusive",
+                CLAN_DISCOVERY_UPSELL_MAX_SIZE: "Guilds are max 200 people in size.",
+                CLAN_DISCOVERY_UPSELL_RESERVE: "Reserve Your Spot",
+                CLAN_DISCOVERY_UPSELL_VALORANT_TITLE: "Just a few clicks to find your Valorant clique.",
+                CLAN_DISCOVERY_UPSELL_VALORANT_SUBTITLE: "Answer a few questions to discover Valorant Gaming Guilds on Discord based on your interests and playstyle.",
+                CLAN_DISCOVERY_UPSELL_GENSHIN_TITLE: "Just a few clicks to find your Genshin clique.",
+                CLAN_DISCOVERY_UPSELL_GENSHIN_SUBTITLE: "Answer a few questions to discover Genshin Gaming Guilds on Discord based on your interests and playstyle.",
+                CLAN_DISCOVERY_UPSELL_GET_STARTED: "Get Started",
                 MESSAGE_ACTION_FORWARD: "Forward",
                 GUILD_POPOUT_ACTIVITY_EVENT_LOCATION: "Event in",
                 GUILD_POPOUT_ACTIVITY_EVENT_LOCATION_A11Y: "Event in {location}",
@@ -65698,8 +65739,8 @@
                 h = n("594174"),
                 A = n("823379"),
                 m = n("573261"),
-                N = n("867176"),
-                p = n("317381"),
+                N = n("317381"),
+                p = n("844797"),
                 O = n("672181"),
                 R = n("917107"),
                 C = n("981631"),
@@ -65707,8 +65748,8 @@
 
             function L(e, t, n) {
                 let i = T.default.getId(),
-                    r = p.default.getSelfEmbeddedActivityForChannel(e),
-                    a = p.default.getEmbeddedActivitiesForChannel(e).find(e => e.applicationId === t && e.userIds.has(i));
+                    r = N.default.getSelfEmbeddedActivityForChannel(e),
+                    a = N.default.getEmbeddedActivitiesForChannel(e).find(e => e.applicationId === t && e.userIds.has(i));
                 null != r ? v({
                     channelId: e,
                     applicationId: r.applicationId,
@@ -65725,44 +65766,38 @@
                 let r = f.default.getChannel(e),
                     a = null !== (t = null == r ? void 0 : r.getGuildId()) && void 0 !== t ? t : void 0;
                 if (null == a && !(null !== (n = null == r ? void 0 : r.isPrivate()) && void 0 !== n && n)) return;
-                let o = p.default.getSelfEmbeddedActivityForChannel(e);
+                let o = N.default.getSelfEmbeddedActivityForChannel(e);
                 if (null === o) return;
                 let l = T.default.getSessionId();
                 try {
                     s.default.dispatch({
-                            type: "EMBEDDED_ACTIVITY_LAUNCH_START",
-                            embeddedActivity: o
-                        }),
-                        function(e, t) {
-                            let n = f.default.getChannel(e);
-                            if (p.default.getEmbeddedActivitiesForChannel(e).some(e => e.applicationId === t)) return !1;
-                            let i = (0, N.isActivitiesInTextEnabled)(n, "EmbeddedActivitiesActionCreators#isActivityInTextStart");
-                            return !!((null == n ? void 0 : n.type) === C.ChannelTypes.GUILD_TEXT && i || null != n && n.isPrivate() && i && null == S.default.getVoiceChannelId()) || !1
-                        }(e, o.applicationId) ? await (0, E.executePrimaryEntryPointInteraction)({
-                            applicationId: o.applicationId,
-                            channelId: e,
-                            guildId: a
-                        }) : await m.default.post({
-                            url: C.Endpoints.ACTIVITY_CHANNEL_LAUNCH(e, o.applicationId),
-                            body: {
-                                session_id: l,
-                                guild_id: null != a ? a : void 0
-                            },
-                            trackedActionData: {
-                                event: i.NetworkActionNames.EMBEDDED_ACTIVITIES_LAUNCH,
-                                properties: {
-                                    guild_id: a,
-                                    channel_id: e,
-                                    application_id: o.applicationId,
-                                    session_id: l
-                                }
-                            },
-                            retries: 3,
-                            oldFormErrors: !0
-                        }), s.default.dispatch({
-                            type: "EMBEDDED_ACTIVITY_LAUNCH_SUCCESS",
-                            applicationId: o.applicationId
-                        })
+                        type: "EMBEDDED_ACTIVITY_LAUNCH_START",
+                        embeddedActivity: o
+                    }), (0, p.isActivityInTextStart)(e, o.applicationId, S.default, f.default) ? await (0, E.executePrimaryEntryPointInteraction)({
+                        applicationId: o.applicationId,
+                        channelId: e,
+                        guildId: a
+                    }) : await m.default.post({
+                        url: C.Endpoints.ACTIVITY_CHANNEL_LAUNCH(e, o.applicationId),
+                        body: {
+                            session_id: l,
+                            guild_id: null != a ? a : void 0
+                        },
+                        trackedActionData: {
+                            event: i.NetworkActionNames.EMBEDDED_ACTIVITIES_LAUNCH,
+                            properties: {
+                                guild_id: a,
+                                channel_id: e,
+                                application_id: o.applicationId,
+                                session_id: l
+                            }
+                        },
+                        retries: 3,
+                        oldFormErrors: !0
+                    }), s.default.dispatch({
+                        type: "EMBEDDED_ACTIVITY_LAUNCH_SUCCESS",
+                        applicationId: o.applicationId
+                    })
                 } catch (t) {
                     s.default.dispatch({
                         type: "EMBEDDED_ACTIVITY_LAUNCH_FAIL",
@@ -65783,7 +65818,7 @@
                     channelId: i,
                     applicationId: r,
                     showFeedback: a = !0
-                } = e, l = p.default.getSelfEmbeddedActivityForChannel(i);
+                } = e, l = N.default.getSelfEmbeddedActivityForChannel(i);
                 s.default.dispatch({
                     type: "EMBEDDED_ACTIVITY_CLOSE",
                     channelId: i,
@@ -65794,7 +65829,7 @@
                 });
                 let u = c.default.getSelectedParticipantId(i),
                     d = null === (n = h.default.getCurrentUser()) || void 0 === n ? void 0 : n.id;
-                null != p.default.getEmbeddedActivitiesForChannel(i).find(e => e.applicationId === r) && null != d && "" !== d && u === r && o.default.selectParticipant(i, null)
+                null != N.default.getEmbeddedActivitiesForChannel(i).find(e => e.applicationId === r) && null != d && "" !== d && u === r && o.default.selectParticipant(i, null)
             }
 
             function M(e, t) {
@@ -65864,9 +65899,9 @@
                 let {
                     guildId: o,
                     force: l = !1
-                } = e, u = p.default.getShelfActivities(o), d = u.map(e => _.default.getApplication(e.application_id)).filter(A.isNotNullish);
-                if (!l && !p.default.shouldFetchShelf(o)) {
-                    if (null === (t = p.default.getShelfFetchStatus(o)) || void 0 === t ? void 0 : t.isFetching) {
+                } = e, u = N.default.getShelfActivities(o), d = u.map(e => _.default.getApplication(e.application_id)).filter(A.isNotNullish);
+                if (!l && !N.default.shouldFetchShelf(o)) {
+                    if (null === (t = N.default.getShelfFetchStatus(o)) || void 0 === t ? void 0 : t.isFetching) {
                         let e, t;
                         let n = new Promise(t => {
                                 e = U.bind(null, o, t), s.default.subscribe("EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS", e)
@@ -67301,6 +67336,48 @@
                     locationObject: O,
                     analyticsLocations: L
                 }), _.markActivityUsed(t.application.id), !0
+            }
+        },
+        844797: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                isActivityInTextStart: function() {
+                    return _
+                },
+                useIsActivityInTextChannel: function() {
+                    return d
+                }
+            });
+            var i = n("442837"),
+                r = n("592125"),
+                s = n("944486"),
+                a = n("867176"),
+                o = n("317381"),
+                l = n("981631");
+
+            function u(e) {
+                let {
+                    channelId: t,
+                    SelectedChannelStore: n,
+                    ChannelStore: i
+                } = e, r = i.getChannel(t), s = (0, a.isActivitiesInTextEnabled)(r, "isActivityInTextChannel");
+                return !!((null == r ? void 0 : r.type) === l.ChannelTypes.GUILD_TEXT && s || null != r && r.isPrivate() && s && null == n.getVoiceChannelId()) || !1
+            }
+
+            function d(e) {
+                return (0, i.useStateFromStores)([r.default, s.default], () => u({
+                    channelId: null == e ? void 0 : e.id,
+                    ChannelStore: r.default,
+                    SelectedChannelStore: s.default
+                }))
+            }
+
+            function _(e, t, n, i) {
+                return !o.default.getEmbeddedActivitiesForChannel(e).some(e => e.applicationId === t) && u({
+                    channelId: e,
+                    SelectedChannelStore: n,
+                    ChannelStore: i
+                })
             }
         },
         918559: function(e, t, n) {
@@ -77406,13 +77483,13 @@
                         }
                         if (e.type === u.ApplicationCommandOptionType.ATTACHMENT) {
                             if (null != v.autocomplete) continue;
-                            let i = N.default.getUpload(v.channel.id, e.name, Y);
-                            if (null == i) continue;
-                            let r = N.default.getUploads(v.channel.id, Y).findIndex(e => i.id === e.id);
-                            F.push(i), n = r, V.push({
+                            let n = N.default.getUpload(v.channel.id, e.name, Y);
+                            if (null == n) continue;
+                            let i = F.length;
+                            F.push(n), V.push({
                                 type: e.type,
                                 name: e.name,
-                                value: n,
+                                value: i,
                                 focused: t
                             });
                             continue
@@ -80484,6 +80561,9 @@
         220779: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                ReactionPickerButton: function() {
+                    return R
+                },
                 ReplyInput: function() {
                     return p
                 }
@@ -86895,8 +86975,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287665", "287665"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287665")), t = 0), t
+                let t = parseInt((e = "288065", "288065"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288065")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -91009,7 +91089,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 ChatInputTypes: function() {
-                    return m
+                    return N
                 },
                 SlateToolbarTypes: function() {
                     return r
@@ -91308,6 +91388,25 @@
                     }
                 },
                 f = {
+                    analyticsName: "user_profile",
+                    drafts: {
+                        type: a.DraftType.ChannelMessage
+                    },
+                    emojis: {
+                        button: !0
+                    },
+                    permissions: {
+                        requireSendMessages: !1
+                    },
+                    users: {
+                        allowMentioning: !0
+                    },
+                    submit: {
+                        useDisabledStylesOnSubmit: !0,
+                        clearOnSubmit: !0
+                    }
+                },
+                S = {
                     analyticsName: "profile_bio_input",
                     drafts: {
                         type: a.DraftType.ChannelMessage
@@ -91325,7 +91424,7 @@
                     disableAutoFocus: !0,
                     showCharacterCount: !0
                 },
-                S = {
+                h = {
                     analyticsName: "custom_gift_type",
                     drafts: {
                         type: a.DraftType.ChannelMessage
@@ -91341,7 +91440,7 @@
                     disableAutoFocus: !0,
                     showCharacterCount: !0
                 },
-                h = {
+                A = {
                     analyticsName: "rules_input",
                     drafts: {
                         type: a.DraftType.ChannelMessage
@@ -91355,7 +91454,7 @@
                     },
                     showCharacterCount: !0
                 },
-                A = {
+                m = {
                     analyticsName: "forum_channel_guidelines",
                     drafts: {
                         type: a.DraftType.ChannelMessage
@@ -91374,7 +91473,7 @@
                     showCharacterCount: !0,
                     toolbarType: 1
                 },
-                m = {
+                N = {
                     NORMAL: o,
                     OVERLAY: l,
                     SIDEBAR: u,
@@ -91382,12 +91481,13 @@
                     FORM: _,
                     VOICE_CHANNEL_STATUS: c,
                     THREAD_CREATION: E,
-                    PROFILE_BIO_INPUT: f,
-                    CUSTOM_GIFT: S,
-                    RULES_INPUT: h,
+                    USER_PROFILE: f,
+                    PROFILE_BIO_INPUT: S,
+                    CUSTOM_GIFT: h,
+                    RULES_INPUT: A,
                     CREATE_FORUM_POST: I,
                     CREATE_POLL: T,
-                    FORUM_CHANNEL_GUIDELINES: A,
+                    FORUM_CHANNEL_GUIDELINES: m,
                     ATOMIC_REACTOR_REPLY_INPUT: {
                         analyticsName: "atomic_reator_reply_input",
                         drafts: {
@@ -101122,7 +101222,8 @@
                         banner: t.banner,
                         brand_color_primary: t.brandPrimaryColor,
                         brand_color_secondary: t.brandSecondaryColor,
-                        wildcard_descriptors: t.wildcardDescriptors
+                        wildcard_descriptors: t.wildcardDescriptors,
+                        badge_image: t.badgeImage
                     }
                 })
             }
@@ -101216,22 +101317,28 @@
             "use strict";
             n.r(t), n.d(t, {
                 AGE_TRAITS: function() {
-                    return v
+                    return U
                 },
                 ALL_TRAITS_SET: function() {
-                    return y
+                    return G
                 },
                 CLAN_BRAND_PALETTE_PRESETS: function() {
-                    return b
+                    return k
+                },
+                CLAN_BRAND_PALETTE_PRESETS_BY_NAME: function() {
+                    return V
                 },
                 CLAN_SETTINGS_MODAL_LAYER_KEY: function() {
-                    return f
+                    return m
                 },
                 CLAN_SETUP_MODAL_LAYER_KEY: function() {
-                    return T
+                    return A
                 },
                 ClanBannerKind: function() {
                     return a
+                },
+                ClanBrandPresets: function() {
+                    return o
                 },
                 ClanPlaystyles: function() {
                     return i
@@ -101242,92 +101349,95 @@
                 ClanSetupSteps: function() {
                     return s
                 },
+                ClanTagBadgeSize: function() {
+                    return l
+                },
                 EMPTY_WILDCARD: function() {
-                    return p
-                },
-                GENSHIN_ID: function() {
-                    return L
-                },
-                HOISTED_SEARCH_APPLICATION_IDS_BY_PRIORITY: function() {
-                    return k
-                },
-                IDENTITY_TRAITS: function() {
-                    return M
-                },
-                LANGUAGES_SET: function() {
-                    return P
-                },
-                MAX_GAMES_TO_DISPLAY: function() {
-                    return m
-                },
-                MAX_INTEREST_LENGTH: function() {
-                    return A
-                },
-                MAX_NUM_INTERESTS: function() {
-                    return h
-                },
-                MAX_NUM_SELECTED_GAMES: function() {
-                    return S
-                },
-                MAX_TAG_LENGTH: function() {
-                    return I
-                },
-                MAX_TRAITS_TO_DISPLAY: function() {
-                    return N
-                },
-                PLAYSTYLE_GROUPS: function() {
-                    return O
-                },
-                SUGGESTED_TRAITS_SET: function() {
-                    return U
-                },
-                VALORANT_ID: function() {
                     return g
                 },
-                VALORANT_TRAITS: function() {
-                    return D
+                GENSHIN_ID: function() {
+                    return y
                 },
-                ensureUserClanData: function() {
+                HOISTED_SEARCH_APPLICATION_IDS_BY_PRIORITY: function() {
+                    return Y
+                },
+                IDENTITY_TRAITS: function() {
+                    return b
+                },
+                LANGUAGES_SET: function() {
                     return w
                 },
-                getPlaystyleOptions: function() {
-                    return C
-                },
-                getPlaystyleTitle: function() {
+                MAX_GAMES_TO_DISPLAY: function() {
                     return R
                 },
+                MAX_INTEREST_LENGTH: function() {
+                    return O
+                },
+                MAX_NUM_INTERESTS: function() {
+                    return p
+                },
+                MAX_NUM_SELECTED_GAMES: function() {
+                    return N
+                },
+                MAX_TAG_LENGTH: function() {
+                    return h
+                },
+                MAX_TRAITS_TO_DISPLAY: function() {
+                    return C
+                },
+                PLAYSTYLE_GROUPS: function() {
+                    return L
+                },
+                SUGGESTED_TRAITS_SET: function() {
+                    return B
+                },
+                VALORANT_ID: function() {
+                    return M
+                },
+                VALORANT_TRAITS: function() {
+                    return P
+                },
+                ensureUserClanData: function() {
+                    return F
+                },
+                getPlaystyleOptions: function() {
+                    return v
+                },
+                getPlaystyleTitle: function() {
+                    return D
+                },
                 getRandomClanBrandPreset: function() {
-                    return G
+                    return x
                 },
                 getSortedTraits: function() {
                     return function e(t, n) {
                         let i = null != n ? e(t.filter(e => null == n ? void 0 : n.includes(e))) : [];
-                        for (let e of D) !i.includes(e) && t.includes(e) && i.push(e);
-                        for (let e of v) !i.includes(e) && t.includes(e) && i.push(e);
-                        for (let e of M) !i.includes(e) && t.includes(e) && i.push(e);
+                        for (let e of P) !i.includes(e) && t.includes(e) && i.push(e);
+                        for (let e of U) !i.includes(e) && t.includes(e) && i.push(e);
+                        for (let e of b) !i.includes(e) && t.includes(e) && i.push(e);
                         for (let e of t) !i.includes(e) && i.push(e);
                         return i
                     }
                 },
                 toServerClanData: function() {
-                    return B
+                    return H
                 }
             }), n("47120"), n("653041");
-            var i, r, s, a, o, l, u, d, _ = n("913527"),
-                c = n.n(_),
-                E = n("689938");
-            let I = 4,
-                T = "ClanSetupModal",
-                f = "ClanSettingsModal",
-                S = 20,
-                h = 50,
-                A = 50,
-                m = 3,
-                N = 5;
-            c()("2024-01-01T00:00:00");
-            let p = "";
-            (o = i || (i = {}))[o.NONE = 0] = "NONE", o[o.SOCIAL = 1] = "SOCIAL", o[o.CASUAL = 2] = "CASUAL", o[o.COMPETITIVE = 3] = "COMPETITIVE", o[o.CREATIVE = 4] = "CREATIVE", o[o.VERY_HARDCORE = 5] = "VERY_HARDCORE";
-            let O = {
+            var i, r, s, a, o, l, u, d, _, c, E, I, T = n("913527"),
+                f = n.n(T),
+                S = n("689938");
+            let h = 4,
+                A = "ClanSetupModal",
+                m = "ClanSettingsModal",
+                N = 20,
+                p = 50,
+                O = 50,
+                R = 3,
+                C = 5;
+            f()("2024-01-01T00:00:00");
+            let g = "";
+            (u = i || (i = {}))[u.NONE = 0] = "NONE", u[u.SOCIAL = 1] = "SOCIAL", u[u.CASUAL = 2] = "CASUAL", u[u.COMPETITIVE = 3] = "COMPETITIVE", u[u.CREATIVE = 4] = "CREATIVE", u[u.VERY_HARDCORE = 5] = "VERY_HARDCORE";
+            let L = {
                 0: "NONE",
                 4: "NONE",
                 1: "CASUAL",
@@ -101336,110 +101446,116 @@
                 5: "COMPETITIVE"
             };
 
-            function R(e) {
+            function D(e) {
                 switch (e) {
                     case 1:
-                        return E.default.Messages.CLAN_SETUP_PLAYSTYLE_SOCIAL_TITLE;
+                        return S.default.Messages.CLAN_SETUP_PLAYSTYLE_SOCIAL_TITLE;
                     case 2:
-                        return E.default.Messages.CLAN_SETUP_PLAYSTYLE_CASUAL_TITLE;
+                        return S.default.Messages.CLAN_SETUP_PLAYSTYLE_CASUAL_TITLE;
                     case 3:
-                        return E.default.Messages.CLAN_SETUP_PLAYSTYLE_COMPETITIVE_TITLE;
+                        return S.default.Messages.CLAN_SETUP_PLAYSTYLE_COMPETITIVE_TITLE;
                     case 5:
-                        return E.default.Messages.CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_TITLE;
+                        return S.default.Messages.CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_TITLE;
                     default:
                         return null
                 }
             }
 
-            function C() {
+            function v() {
                 return {
                     1: {
                         type: 1,
                         emoji: "\uD83D\uDC4B",
-                        title: E.default.Messages.CLAN_SETUP_PLAYSTYLE_SOCIAL_TITLE,
-                        subtitle: E.default.Messages.CLAN_SETUP_PLAYSTYLE_SOCIAL_SUBTITLE
+                        title: S.default.Messages.CLAN_SETUP_PLAYSTYLE_SOCIAL_TITLE,
+                        subtitle: S.default.Messages.CLAN_SETUP_PLAYSTYLE_SOCIAL_SUBTITLE
                     },
                     2: {
                         type: 2,
                         emoji: "\uD83C\uDFAE",
-                        title: E.default.Messages.CLAN_SETUP_PLAYSTYLE_CASUAL_TITLE,
-                        subtitle: E.default.Messages.CLAN_SETUP_PLAYSTYLE_CASUAL_SUBTITLE
+                        title: S.default.Messages.CLAN_SETUP_PLAYSTYLE_CASUAL_TITLE,
+                        subtitle: S.default.Messages.CLAN_SETUP_PLAYSTYLE_CASUAL_SUBTITLE
                     },
                     3: {
                         type: 3,
                         emoji: "⚔️",
-                        title: E.default.Messages.CLAN_SETUP_PLAYSTYLE_COMPETITIVE_TITLE,
-                        subtitle: E.default.Messages.CLAN_SETUP_PLAYSTYLE_COMPETITIVE_SUBTITLE
+                        title: S.default.Messages.CLAN_SETUP_PLAYSTYLE_COMPETITIVE_TITLE,
+                        subtitle: S.default.Messages.CLAN_SETUP_PLAYSTYLE_COMPETITIVE_SUBTITLE
                     },
                     5: {
                         type: 5,
                         emoji: "\uD83D\uDC80",
-                        title: E.default.Messages.CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_TITLE,
-                        subtitle: E.default.Messages.CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_SUBTITLE
+                        title: S.default.Messages.CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_TITLE,
+                        subtitle: S.default.Messages.CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_SUBTITLE
                     }
                 }
-            }(l = r || (r = {}))[l.INTRO_ANIMATION = 0] = "INTRO_ANIMATION", l[l.SETUP = 1] = "SETUP", l[l.SIGN = 2] = "SIGN", (u = s || (s = {}))[u.FOUNDATIONAL_INTRO = 0] = "FOUNDATIONAL_INTRO", u[u.GAMES = 1] = "GAMES", u[u.PLAYSTYLE = 2] = "PLAYSTYLE", u[u.PERSONALITY_INTRO = 3] = "PERSONALITY_INTRO", u[u.UTILITY_TRAITS = 4] = "UTILITY_TRAITS", u[u.INTERESTS = 5] = "INTERESTS", u[u.DESCRIPTION = 6] = "DESCRIPTION", u[u.IDENTITY_INTRO = 7] = "IDENTITY_INTRO", u[u.CUSTOMIZE_TAG_BADGE = 8] = "CUSTOMIZE_TAG_BADGE", u[u.CUSTOMIZE_BANNER = 9] = "CUSTOMIZE_BANNER", u[u.APPLICATION_INTRO = 10] = "APPLICATION_INTRO", u[u.MEMBER_APPLICATION = 11] = "MEMBER_APPLICATION";
-            let g = "700136079562375258",
-                L = "762434991303950386",
-                D = ["Unrated", "Spike Rush", "Death Match", "Swift", "TDM", "Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF"],
-                v = ["20+", "30+", "40+", "All Ages"],
-                M = ["LGBTQIA-Friendly", "All genders"],
-                y = new Set([...D, ...v, ...M]),
-                P = new Set(E.default.getAvailableLocales().map(e => e.value)),
-                U = new Set(["Anime", "Art and Craft", "Architecture", "Baseball", "Basketball", "Beauty", "Beer", "Board Games", "Books", "Cars", "Celebrities", "Coffee", "Coding", "Craft", "Design", "F1", "Fashion", "Fitness", "Food", "Football", "Healthcare", "Home Decor", "Houseplants", "K-Pop", "Knitting", "LEGO", "MARVEL", "Motorcycles", "Movies", "Music", "Nail Art", "Pets", "Photography", "Pok\xe9mon", "Programming", "Roman History", "Science", "Skiing", "Soccer", "Star Wars", "TCG", "TEA", "Tech", "Travel", "TV Shows", "Wine"]);
-            (d = a || (a = {}))[d.PIXEL_RUSH = 0] = "PIXEL_RUSH", d[d.SCANLINES = 1] = "SCANLINES", d[d.TEXTURED = 2] = "TEXTURED", d[d.MAGIC = 3] = "MAGIC", d[d.CUSTOM = 4] = "CUSTOM";
-            let b = [{
-                name: "Boulder",
-                primary: "#8c8d8d",
-                secondary: "#d0d0d1"
-            }, {
-                name: "Cascade",
-                primary: "#43abe9",
-                secondary: "#8ad3e8"
-            }, {
-                name: "Thunder",
-                primary: "#e8c02f",
-                secondary: "#e8d387"
-            }, {
-                name: "Soul",
-                primary: "#e72282",
-                secondary: "#e875ad"
-            }, {
-                name: "Marsh",
-                primary: "#e86e1d",
-                secondary: "#e89055"
-            }, {
-                name: "Volcano",
-                primary: "#e81d1e",
-                secondary: "#e86868"
-            }, {
-                name: "Earth",
-                primary: "#406601",
-                secondary: "#d3e65e"
-            }, {
-                name: "Zephyr",
-                primary: "#4892d5",
-                secondary: "#78b6f0"
-            }];
+            }(d = r || (r = {}))[d.INTRO_ANIMATION = 0] = "INTRO_ANIMATION", d[d.SETUP = 1] = "SETUP", d[d.SIGN = 2] = "SIGN", (_ = s || (s = {}))[_.FOUNDATIONAL_INTRO = 0] = "FOUNDATIONAL_INTRO", _[_.GAMES = 1] = "GAMES", _[_.PLAYSTYLE = 2] = "PLAYSTYLE", _[_.PERSONALITY_INTRO = 3] = "PERSONALITY_INTRO", _[_.UTILITY_TRAITS = 4] = "UTILITY_TRAITS", _[_.INTERESTS = 5] = "INTERESTS", _[_.DESCRIPTION = 6] = "DESCRIPTION", _[_.IDENTITY_INTRO = 7] = "IDENTITY_INTRO", _[_.CUSTOMIZE_TAG_BADGE = 8] = "CUSTOMIZE_TAG_BADGE", _[_.CUSTOMIZE_BANNER = 9] = "CUSTOMIZE_BANNER", _[_.APPLICATION_INTRO = 10] = "APPLICATION_INTRO", _[_.MEMBER_APPLICATION = 11] = "MEMBER_APPLICATION";
+            let M = "700136079562375258",
+                y = "762434991303950386",
+                P = ["Unrated", "Spike Rush", "Death Match", "Swift", "TDM", "Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF"],
+                U = ["20+", "30+", "40+", "All Ages"],
+                b = ["LGBTQIA-Friendly", "All genders"],
+                G = new Set([...P, ...U, ...b]),
+                w = new Set(S.default.getAvailableLocales().map(e => e.value)),
+                B = new Set(["Anime", "Art and Craft", "Architecture", "Baseball", "Basketball", "Beauty", "Beer", "Board Games", "Books", "Cars", "Celebrities", "Coffee", "Coding", "Craft", "Design", "F1", "Fashion", "Fitness", "Food", "Football", "Healthcare", "Home Decor", "Houseplants", "K-Pop", "Knitting", "LEGO", "MARVEL", "Motorcycles", "Movies", "Music", "Nail Art", "Pets", "Photography", "Pok\xe9mon", "Programming", "Roman History", "Science", "Skiing", "Soccer", "Star Wars", "TCG", "TEA", "Tech", "Travel", "TV Shows", "Wine"]);
+            (c = a || (a = {}))[c.PIXEL_RUSH = 0] = "PIXEL_RUSH", c[c.SCANLINES = 1] = "SCANLINES", c[c.TEXTURED = 2] = "TEXTURED", c[c.MAGIC = 3] = "MAGIC", c[c.CUSTOM = 4] = "CUSTOM", (E = o || (o = {})).BOULDER = "boulder", E.CASCADE = "cascade", E.THUNDER = "thunder", E.SOUL = "soul", E.MARSH = "marsh", E.VOLCANO = "volcano", E.EARTH = "earth", E.ZEPHYR = "zephyr";
+            let k = [{
+                    name: "boulder",
+                    primary: "#8c8d8d",
+                    secondary: "#d0d0d1"
+                }, {
+                    name: "cascade",
+                    primary: "#43abe9",
+                    secondary: "#8ad3e8"
+                }, {
+                    name: "thunder",
+                    primary: "#e8c02f",
+                    secondary: "#e8d387"
+                }, {
+                    name: "soul",
+                    primary: "#e72282",
+                    secondary: "#e875ad"
+                }, {
+                    name: "marsh",
+                    primary: "#e86e1d",
+                    secondary: "#e89055"
+                }, {
+                    name: "volcano",
+                    primary: "#e81d1e",
+                    secondary: "#e86868"
+                }, {
+                    name: "earth",
+                    primary: "#406601",
+                    secondary: "#d3e65e"
+                }, {
+                    name: "zephyr",
+                    primary: "#4892d5",
+                    secondary: "#78b6f0"
+                }],
+                V = Object.fromEntries(k.map(e => [e.name, {
+                    primary: e.primary,
+                    secondary: e.secondary
+                }]));
 
-            function G() {
-                return b[Math.floor(Math.random() * b.length)]
+            function x() {
+                return k[Math.floor(Math.random() * k.length)]
             }
 
-            function w(e) {
+            function F(e) {
                 return null == e ? null : "identityGuildId" in e ? e : {
                     identityGuildId: e.identity_guild_id,
                     identityEnabled: e.identity_enabled,
-                    tag: e.tag
+                    tag: e.tag,
+                    badge: e.badge
                 }
             }
 
-            function B(e) {
+            function H(e) {
                 return {
                     tag: e.tag
                 }
             }
-            let k = new Map(["432980957394370572", "363445589247131668", "356869127241072640", "700136079562375258", "356875570916753438", "1158877933042143272", "1197827812623650866", "356876176465199104", "1167674267748540516", "542075586886107149", "356875221078245376", "1149118246826561609", "356877880938070016", "356875988589740042", "762434991303950386", "356873622985506820", "356876590342340608", "1205090671527071784", "1182713227491147776", "631914894446297148", "1137125502985961543", "357607478105604096", "359509007423242240", "1121201675240210523", "643897785271189524", "742897755160313986", "356888738724446208", "1199745463918788740", "1116835216464543946", "406637848297472017", "356888961353908224", "905961880789590076", "367827983903490050", "356944273133928458", "356942674672091136", "946609449680908348", "356875762940379136", "615752773690064908", "357607133254254632", "356943499456937984", "477175586805252107", "787443973538971748", "359508713658253318", "356877880938070016", "422772752647323649", "356954277803065354", "359509387670192128", "428055627030331402", "363447565905166336", "372438022647578634", "614380482620293151", "506950362461110273", "356879032584896512", "1161772875901051042", "535371564850479134", "363413743335374859", "385538724592746496", "426526722322726912", "1174041358995042375", "1124351876033425529", "477152881196269569", "1113966530531704943", "425778010222886912", "356875890958925834", "1124358970618953818", "356888577310851072", "398632010442211348", "1124349969906815007", "770314100885422095", "1080277149623271444", "428054228511227914", "358420454764969994", "358421669603311616", "363430548028522496", "1129504162200166401", "1200228630245159032", "356889262362329098", "356887282982191114", "363409643973771264", "1164697075582238730", "940810636273795162", "982316905262120990", "359510095811444736", "363411421553360896", "359509332490059776", "1162076274622222346", "1162085521816813721", "359507724196773888", "359801269008859136", "569253958967885828", "457301824110723113", "1140238527980916757", "1124353632758939688", "542075586886107149", "512699108809637890", "653432003798106122"].map((e, t, n) => [e, n.length - t]))
+            let Y = new Map(["432980957394370572", "363445589247131668", "356869127241072640", "700136079562375258", "356875570916753438", "1158877933042143272", "1197827812623650866", "356876176465199104", "1167674267748540516", "542075586886107149", "356875221078245376", "1149118246826561609", "356877880938070016", "356875988589740042", "762434991303950386", "356873622985506820", "356876590342340608", "1205090671527071784", "1182713227491147776", "631914894446297148", "1137125502985961543", "357607478105604096", "359509007423242240", "1121201675240210523", "643897785271189524", "742897755160313986", "356888738724446208", "1199745463918788740", "1116835216464543946", "406637848297472017", "356888961353908224", "905961880789590076", "367827983903490050", "356944273133928458", "356942674672091136", "946609449680908348", "356875762940379136", "615752773690064908", "357607133254254632", "356943499456937984", "477175586805252107", "787443973538971748", "359508713658253318", "356877880938070016", "422772752647323649", "356954277803065354", "359509387670192128", "428055627030331402", "363447565905166336", "372438022647578634", "614380482620293151", "506950362461110273", "356879032584896512", "1161772875901051042", "535371564850479134", "363413743335374859", "385538724592746496", "426526722322726912", "1174041358995042375", "1124351876033425529", "477152881196269569", "1113966530531704943", "425778010222886912", "356875890958925834", "1124358970618953818", "356888577310851072", "398632010442211348", "1124349969906815007", "770314100885422095", "1080277149623271444", "428054228511227914", "358420454764969994", "358421669603311616", "363430548028522496", "1129504162200166401", "1200228630245159032", "356889262362329098", "356887282982191114", "363409643973771264", "1164697075582238730", "940810636273795162", "982316905262120990", "359510095811444736", "363411421553360896", "359509332490059776", "1162076274622222346", "1162085521816813721", "359507724196773888", "359801269008859136", "569253958967885828", "457301824110723113", "1140238527980916757", "1124353632758939688", "542075586886107149", "512699108809637890", "653432003798106122"].map((e, t, n) => [e, n.length - t]));
+            (I = l || (l = {}))[I.SIZE_12 = 12] = "SIZE_12", I[I.SIZE_16 = 16] = "SIZE_16", I[I.SIZE_24 = 24] = "SIZE_24", I[I.SIZE_36 = 36] = "SIZE_36"
         },
         963202: function(e, t, n) {
             "use strict";
@@ -101604,82 +101720,78 @@
             "use strict";
             n.r(t), n.d(t, {
                 formatSelectionList: function() {
-                    return c
+                    return _
                 },
                 getAccessibleTextColor: function() {
-                    return E
+                    return c
                 },
-                getGuildIdFromUserClan: function() {
-                    return l
+                getClanBadgeUrl: function() {
+                    return I
                 },
-                getTagFromUserClan: function() {
+                getUserClanData: function() {
                     return o
                 },
                 isGuildAClan: function() {
-                    return u
+                    return l
                 },
                 isGuildAdoptedUserClanIdentity: function() {
-                    return _
+                    return d
                 },
                 userHasAdoptedAnyClanIdentity: function() {
-                    return d
+                    return u
                 }
             });
             var i = n("481060"),
-                r = n("981631"),
-                s = n("689938");
-
-            function a(e, t) {
-                var n;
-                return null != e && e.identityEnabled ? null !== (n = e[t]) && void 0 !== n ? n : null : null
-            }
+                r = n("308083"),
+                s = n("981631"),
+                a = n("689938");
 
             function o(e) {
-                return a(e, "tag")
+                return null != e && e.identityEnabled ? {
+                    guildId: e.identityGuildId,
+                    tag: e.tag,
+                    badge: e.badge
+                } : {}
             }
 
             function l(e) {
-                return a(e, "identityGuildId")
+                return null != e && e.hasFeature(s.GuildFeatures.CLAN)
             }
 
             function u(e) {
-                return null != e && e.hasFeature(r.GuildFeatures.CLAN)
-            }
-
-            function d(e) {
                 return null != e && !!e.identityEnabled
             }
 
-            function _(e, t) {
+            function d(e, t) {
                 return null != e && null != t && null != t.identityGuildId && t.identityGuildId === e && !!t.identityEnabled || !1
             }
-            let c = (e, t) => {
+            let _ = (e, t) => {
                 if (0 === e.length) return null;
                 if (1 === e.length) return e[1];
-                if (2 === e.length) return s.default.Messages.CLAN_OVERVIEW_LIST_TWO_ITEMS.format({
+                if (2 === e.length) return a.default.Messages.CLAN_OVERVIEW_LIST_TWO_ITEMS.format({
                     item1: e[0],
                     item2: e[1]
                 });
                 if (null != t && e.length > t) {
                     let n = e.slice(0, t).join(", "),
-                        i = s.default.Messages.CLAN_OVERVIEW_LIST_OTHERS_COUNT.format({
+                        i = a.default.Messages.CLAN_OVERVIEW_LIST_OTHERS_COUNT.format({
                             n: e.length - t
                         });
-                    return s.default.Messages.CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS.format({
+                    return a.default.Messages.CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS.format({
                         items: n,
                         last: i
                     })
                 } {
                     let t = e.slice(0, -1).join(", "),
                         n = e[e.length - 1];
-                    return s.default.Messages.CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS.format({
+                    return a.default.Messages.CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS.format({
                         items: t,
                         last: n
                     })
                 }
             };
 
-            function E(e) {
+            function c(e) {
                 let t = parseInt(e.substr(1, 2), 16),
                     n = parseInt(e.substr(3, 2), 16),
                     r = parseInt(e.substr(5, 2), 16);
@@ -101690,6 +101802,21 @@
                     theme: "light",
                     saturation: 1
                 })
+            }
+            let E = {
+                [r.ClanTagBadgeSize.SIZE_12]: 16,
+                [r.ClanTagBadgeSize.SIZE_16]: 16,
+                [r.ClanTagBadgeSize.SIZE_24]: 24,
+                [r.ClanTagBadgeSize.SIZE_36]: 40
+            };
+
+            function I(e, t) {
+                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : r.ClanTagBadgeSize.SIZE_12;
+                if (null == t) return;
+                let {
+                    CDN_HOST: i
+                } = window.GLOBAL_ENV;
+                if (null != i) return "".concat(location.protocol, "//").concat(i, "/clan-badges/").concat(e, "/").concat(t, ".png?size=").concat(E[n])
             }
         },
         891728: function(e, t, n) {
@@ -101751,18 +101878,23 @@
                 } = e, d = (0, r.useStateFromStores)([a.default], () => {
                     var e;
                     return null === (e = a.default.getUser(u)) || void 0 === e ? void 0 : e.clan
-                }), _ = (0, l.getGuildIdFromUserClan)(d);
+                }), {
+                    tag: _,
+                    badge: c,
+                    guildId: E
+                } = (0, l.getUserClanData)(d);
                 i.useEffect(() => {
-                    (0, o.fetchClanInfo)(_)
-                }, [_]);
-                let c = (0, o.useClanInfo)(null == d ? void 0 : d.identityGuildId),
-                    E = (0, r.useStateFromStores)([s.default], () => s.default.getGuild(null == d ? void 0 : d.identityGuildId));
+                    (0, o.fetchClanInfo)(E)
+                }, [E]);
+                let I = (0, o.useClanInfo)(null == d ? void 0 : d.identityGuildId),
+                    T = (0, r.useStateFromStores)([s.default], () => s.default.getGuild(null == d ? void 0 : d.identityGuildId));
                 return {
-                    userClanTag: (0, l.getTagFromUserClan)(d),
-                    guildId: _,
-                    guildName: null !== (t = null == E ? void 0 : E.name) && void 0 !== t ? t : null == c ? void 0 : c.name,
-                    guildIcon: null !== (n = null == E ? void 0 : E.icon) && void 0 !== n ? n : null == c ? void 0 : c.icon,
-                    clan: c
+                    userClanTag: _,
+                    userClanBadge: c,
+                    guildId: E,
+                    guildName: null !== (t = null == T ? void 0 : T.name) && void 0 !== t ? t : null == I ? void 0 : I.name,
+                    guildIcon: null !== (n = null == T ? void 0 : T.icon) && void 0 !== n ? n : null == I ? void 0 : I.icon,
+                    clan: I
                 }
             }
         },
@@ -101856,6 +101988,105 @@
                 })
             })
         },
+        426964: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return m
+                }
+            });
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("481060"),
+                a = n("442837"),
+                o = n("231467"),
+                l = n("741606"),
+                u = n("703656"),
+                d = n("314897"),
+                _ = n("271383"),
+                c = n("594174"),
+                E = n("963202"),
+                I = n("645896"),
+                T = n("905362"),
+                f = n("353093"),
+                S = n("981631"),
+                h = n("689938"),
+                A = n("810200");
+
+            function m(e) {
+                var t;
+                let {
+                    clan: m,
+                    isLoading: N,
+                    onClose: p
+                } = e, O = (0, I.useClanInfo)(null !== (t = null == m ? void 0 : m.identityGuildId) && void 0 !== t ? t : null), R = null == m ? void 0 : m.tag, C = (0, E.useIsInUserClanExperiment)(), g = null == m ? void 0 : m.identityGuildId, L = (0, a.useStateFromStores)([d.default], () => d.default.getId()), D = (0, a.useStateFromStores)([_.default], () => null != g ? _.default.getMember(g, L) : null, [g, L]), v = (0, a.useStateFromStores)([c.default], () => c.default.getUser(L), [L]), M = (null == D ? void 0 : D.joinedAt) != null, y = (0, f.isGuildAdoptedUserClanIdentity)(g, null == v ? void 0 : v.clan), P = null != (0, l.default)(g), U = r.useCallback(e => {
+                    null != g && (e.stopPropagation(), e.preventDefault(), null == p || p(), (0, T.openAdoptClanIdentityModal)(g))
+                }, [g, p]), b = r.useCallback(e => {
+                    if (null != O) e.stopPropagation(), e.preventDefault(), null == p || p(), !P && (0, s.openModalLazy)(async () => {
+                        let {
+                            default: e
+                        } = await Promise.all([n.e("99387"), n.e("80026"), n.e("18482")]).then(n.bind(n, "767593"));
+                        return t => (0, i.jsx)(e, {
+                            ...t,
+                            clan: O
+                        })
+                    })
+                }, [O, P, p]), G = r.useCallback(() => {
+                    null != g && (0, u.transitionTo)(S.Routes.GUILD_MEMBER_VERIFICATION(g))
+                }, [g]), w = r.useMemo(() => {
+                    var e, t;
+                    let n = null !== (t = null == O ? void 0 : null === (e = O.branding) || void 0 === e ? void 0 : e.primaryColor) && void 0 !== t ? t : null,
+                        i = {
+                            color: null != n ? s.Button.Colors.CUSTOM : s.Button.Colors.BRAND,
+                            size: s.Button.Sizes.SMALL,
+                            fullWidth: !0,
+                            className: A.button
+                        };
+                    return null != n && (i = {
+                        ...i,
+                        style: {
+                            backgroundColor: n,
+                            color: (0, f.getAccessibleTextColor)(n).hex()
+                        }
+                    }), i
+                }, [O]), B = r.useMemo(() => {
+                    switch (!0) {
+                        case !C:
+                            return null;
+                        case !M && P:
+                            return (0, i.jsx)(s.Button, {
+                                onClick: G,
+                                ...w,
+                                children: h.default.Messages.CLAN_USER_APPLICATION_EXISTS_TAG_GUILD_PROFILE_CTA
+                            });
+                        case !M:
+                            return (0, i.jsx)(s.Button, {
+                                onClick: b,
+                                ...w,
+                                children: h.default.Messages.CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA
+                            });
+                        case M && !y:
+                            return (0, i.jsx)(s.Button, {
+                                onClick: U,
+                                ...w,
+                                children: h.default.Messages.CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA
+                            });
+                        default:
+                            return null
+                    }
+                }, [w, U, b, G, P, y, M, C]);
+                return null == R || null == O || null == g || N ? (0, i.jsx)(s.Spinner, {}) : (0, i.jsxs)("div", {
+                    className: A.container,
+                    children: [(0, i.jsx)(o.ClanDiscoveryCardView, {
+                        clan: O,
+                        className: A.cardContainer
+                    }), null != B && (0, i.jsx)("div", {
+                        className: A.buttonContainer,
+                        children: B
+                    })]
+                })
+            }
+        },
         219039: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -101891,459 +102122,185 @@
             "use strict";
             n.r(t), n.d(t, {
                 BaseClanTagChiplet: function() {
-                    return p
+                    return h
                 },
                 ClanBadgeWithTooltip: function() {
-                    return O
-                },
-                ClanTagBadgeSize: function() {
-                    return i
+                    return A
                 }
             }), n("47120");
-            var i, r, s = n("735250"),
-                a = n("470079"),
-                o = n("120356"),
-                l = n.n(o),
-                u = n("348327"),
-                d = n.n(u),
-                _ = n("442837"),
-                c = n("481060"),
-                E = n("110924"),
-                I = n("594174"),
-                T = n("963202"),
-                f = n("645896"),
-                S = n("353093"),
-                h = n("277602"),
-                A = n("738103"),
-                m = n("319695");
-            (r = i || (i = {}))[r.SIZE_12 = 12] = "SIZE_12", r[r.SIZE_16 = 16] = "SIZE_16", r[r.SIZE_24 = 24] = "SIZE_24", r[r.SIZE_36 = 36] = "SIZE_36";
-            let N = a.memo(function(e) {
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("120356"),
+                a = n.n(s),
+                o = n("442837"),
+                l = n("481060"),
+                u = n("594174"),
+                d = n("963202"),
+                _ = n("645896"),
+                c = n("353093"),
+                E = n("426964"),
+                I = n("308083"),
+                T = n("689938"),
+                f = n("319695");
+            let S = r.memo(function(e) {
                     let {
-                        className: t,
-                        size: n = 16
+                        src: t,
+                        className: n,
+                        size: r = I.ClanTagBadgeSize.SIZE_16
                     } = e;
-                    return (0, s.jsx)(A.TempBadgeIcon, {
-                        className: l()(m.badge, t),
-                        width: n,
-                        height: n
+                    return null == t ? null : (0, i.jsx)("img", {
+                        src: t,
+                        alt: T.default.Messages.CLAN_BADGE,
+                        className: a()(f.badge, n),
+                        width: r,
+                        height: r
                     })
                 }),
-                p = a.memo(function(e) {
+                h = r.memo(function(e) {
                     let {
                         clanTag: t,
-                        className: n,
-                        textClassName: i,
-                        onClick: r,
-                        onMouseEnter: a,
-                        textVariant: o = "text-xs/medium",
-                        textColor: u = "text-normal",
-                        badgeSize: d = 12
+                        clanBadge: n,
+                        className: r,
+                        textClassName: s,
+                        onClick: o,
+                        onMouseEnter: u,
+                        textVariant: _ = "text-xs/medium",
+                        textColor: c = "text-normal",
+                        badgeSize: E = I.ClanTagBadgeSize.SIZE_12
                     } = e;
-                    return (0, T.useIsInUserClanExperiment)() ? (0, s.jsx)(c.Clickable, {
+                    return (0, d.useIsInUserClanExperiment)() ? (0, i.jsx)(l.Clickable, {
                         tag: "span",
-                        onClick: r,
-                        onMouseEnter: a,
-                        className: l()(m.chipletContainerInner, null != r && m.clickable, n),
-                        children: (0, s.jsxs)(c.Text, {
-                            variant: o,
-                            color: u,
+                        onClick: o,
+                        onMouseEnter: u,
+                        className: a()(f.chipletContainerInner, null != o && f.clickable, r),
+                        children: (0, i.jsxs)(l.Text, {
+                            variant: _,
+                            color: c,
                             tag: "span",
-                            className: l()(m.text, i),
-                            children: [(0, s.jsx)(N, {
-                                size: d
-                            }), t]
+                            className: a()(f.text, s),
+                            children: [null != n && "string" == typeof n ? (0, i.jsx)(S, {
+                                src: n,
+                                size: E
+                            }) : n, t]
                         })
                     }) : null
                 });
 
-            function O(e) {
-                var t, n, i;
+            function A(e) {
+                var t, n, s;
                 let {
-                    clan: r,
-                    size: o = 16,
-                    userId: l,
-                    className: u
-                } = e, d = (0, _.useStateFromStores)([I.default], () => I.default.getUser(l), [l]), E = null !== (t = null == d ? void 0 : d.clan) && void 0 !== t ? t : r, T = (0, S.getTagFromUserClan)(E), [h, A] = (0, f.useFetchClanInfo)(null !== (n = null == E ? void 0 : E.identityGuildId) && void 0 !== n ? n : null), m = (0, f.useClanInfo)(null !== (i = null == E ? void 0 : E.identityGuildId) && void 0 !== i ? i : null), [p, O] = a.useState(!1);
-                return null == T ? null : (0, s.jsx)(c.Tooltip, {
-                    text: h ? (0, s.jsx)(c.Spinner, {}) : null == m ? void 0 : m.name,
-                    onTooltipShow: () => A(),
+                    clan: a,
+                    size: d = I.ClanTagBadgeSize.SIZE_16,
+                    userId: E,
+                    className: T
+                } = e, f = (0, o.useStateFromStores)([u.default], () => u.default.getUser(E), [E]), h = null !== (t = null == f ? void 0 : f.clan) && void 0 !== t ? t : a, {
+                    tag: A,
+                    badge: m,
+                    guildId: N
+                } = (0, c.getUserClanData)(h), [p, O] = (0, _.useFetchClanInfo)(null !== (n = null == h ? void 0 : h.identityGuildId) && void 0 !== n ? n : null), R = (0, _.useClanInfo)(null !== (s = null == h ? void 0 : h.identityGuildId) && void 0 !== s ? s : null), [C, g] = r.useState(!1);
+                if (null == N || null == A || null == m) return null;
+                let L = (0, c.getClanBadgeUrl)(N, m, d);
+                return (0, i.jsx)(l.Tooltip, {
+                    text: p ? (0, i.jsx)(l.Spinner, {}) : null == R ? void 0 : R.name,
+                    onTooltipShow: () => O(),
                     hideOnClick: !0,
-                    shouldShow: p,
-                    forceOpen: p,
-                    children: e => (0, s.jsx)(c.Clickable, {
+                    shouldShow: C,
+                    forceOpen: C,
+                    children: e => (0, i.jsx)(l.Clickable, {
                         tag: "span",
-                        className: u,
+                        className: T,
                         ...e,
                         onMouseEnter: () => {
                             var t;
-                            O(!0), null === (t = e.onMouseEnter) || void 0 === t || t.call(e)
-                        },
-                        onMouseLeave: () => {
-                            var t;
-                            O(!1), null === (t = e.onMouseLeave) || void 0 === t || t.call(e)
-                        },
-                        children: (0, s.jsx)(N, {
-                            size: o
-                        })
-                    })
-                })
-            }
-
-            function R(e) {
-                var t, n;
-                let {
-                    clan: i,
-                    userId: r,
-                    children: o
-                } = e, l = (0, _.useStateFromStores)([I.default], () => I.default.getUser(r), [r]), u = null !== (t = null == l ? void 0 : l.clan) && void 0 !== t ? t : i, T = (0, E.default)(u), [S, A] = (0, f.useFetchClanInfo)(null !== (n = null == u ? void 0 : u.identityGuildId) && void 0 !== n ? n : null), [N, p] = a.useState(!1), [O, R] = a.useState(!1), [C, g] = a.useState(!1), L = a.useRef(null), D = a.useCallback(() => {
-                    A()
-                }, [A]);
-                return a.useEffect(() => {
-                    !d()(T, u) && p(!1)
-                }, [T, u]), a.useEffect(() => (!O && !C && (L.current = setTimeout(() => {
-                    p(!1)
-                }, 500)), () => {
-                    null != L.current && clearTimeout(L.current)
-                }), [O, C]), (0, s.jsx)(c.Tooltip, {
-                    text: (0, s.jsx)(h.default, {
-                        isLoading: S,
-                        clan: u,
-                        onClose: () => p(!1),
-                        onMouseEnter: () => R(!0),
-                        onMouseLeave: () => R(!1)
-                    }),
-                    onTooltipShow: () => A(),
-                    hideOnClick: !0,
-                    disableTooltipPointerEvents: !1,
-                    tooltipClassName: m.tooltip,
-                    tooltipContentClassName: m.tooltipContainer,
-                    "aria-label": "Guild Profile",
-                    shouldShow: N,
-                    forceOpen: N,
-                    children: e => (0, s.jsx)(c.Clickable, {
-                        tag: "span",
-                        ...e,
-                        onClick: t => {
-                            var n;
-                            p(e => !e), null === (n = e.onClick) || void 0 === n || n.call(e), t.preventDefault(), t.stopPropagation()
-                        },
-                        onMouseEnter: () => {
-                            var t;
-                            g(!0), D(), null === (t = e.onMouseEnter) || void 0 === t || t.call(e)
+                            g(!0), null === (t = e.onMouseEnter) || void 0 === t || t.call(e)
                         },
                         onMouseLeave: () => {
                             var t;
                             g(!1), null === (t = e.onMouseLeave) || void 0 === t || t.call(e)
                         },
-                        children: o
+                        children: (0, i.jsx)(S, {
+                            src: L,
+                            size: d
+                        })
                     })
                 })
             }
-            t.default = a.memo(function(e) {
+
+            function m(e) {
+                var t, n;
+                let {
+                    clan: s,
+                    userId: a,
+                    children: d
+                } = e, c = (0, o.useStateFromStores)([u.default], () => u.default.getUser(a), [a]), I = null !== (t = null == c ? void 0 : c.clan) && void 0 !== t ? t : s, [T, f] = (0, _.useFetchClanInfo)(null !== (n = null == I ? void 0 : I.identityGuildId) && void 0 !== n ? n : null), S = r.useCallback(() => {
+                    f()
+                }, [f]);
+                return (0, i.jsx)(l.Popout, {
+                    renderPopout: e => {
+                        let {
+                            closePopout: t
+                        } = e;
+                        return (0, i.jsx)(E.default, {
+                            isLoading: T,
+                            clan: I,
+                            onClose: t
+                        })
+                    },
+                    position: "top",
+                    animationPosition: "top",
+                    spacing: 16,
+                    children: e => (0, i.jsx)(l.Clickable, {
+                        tag: "span",
+                        ...e,
+                        onClick: t => {
+                            var n;
+                            null === (n = e.onClick) || void 0 === n || n.call(e, t), t.preventDefault(), t.stopPropagation()
+                        },
+                        onMouseEnter: () => {
+                            var t;
+                            S(), null === (t = e.onMouseEnter) || void 0 === t || t.call(e)
+                        },
+                        children: d
+                    })
+                })
+            }
+            t.default = r.memo(function(e) {
                 var t;
                 let {
                     clan: n,
-                    userId: i,
-                    className: r,
-                    textVariant: a,
-                    textColor: o,
-                    badgeSize: u,
-                    disableTooltip: d = !1
-                } = e, c = (0, _.useStateFromStores)([I.default], () => I.default.getUser(i), [i]), E = null !== (t = null == c ? void 0 : c.clan) && void 0 !== t ? t : n, f = (0, S.getTagFromUserClan)(E);
-                return (0, T.useIsInUserClanExperiment)() && null != f ? d ? (0, s.jsx)(p, {
-                    clanTag: f,
-                    className: l()(m.noTooltip, r),
-                    textVariant: a,
-                    textColor: o,
-                    badgeSize: u
-                }) : (0, s.jsx)(R, {
-                    clan: E,
-                    userId: i,
-                    children: (0, s.jsx)(p, {
-                        clanTag: f,
-                        className: r,
-                        textVariant: a,
-                        textColor: o,
-                        badgeSize: u
+                    userId: r,
+                    className: s,
+                    textVariant: l,
+                    textColor: _,
+                    badgeSize: E,
+                    disableTooltip: I = !1
+                } = e, T = (0, o.useStateFromStores)([u.default], () => u.default.getUser(r), [r]), S = null !== (t = null == T ? void 0 : T.clan) && void 0 !== t ? t : n, {
+                    tag: A,
+                    badge: N,
+                    guildId: p
+                } = (0, c.getUserClanData)(S);
+                if (!(0, d.useIsInUserClanExperiment)() || null == p || null == A) return null;
+                let O = (0, c.getClanBadgeUrl)(p, N, E);
+                return I ? (0, i.jsx)(h, {
+                    clanTag: A,
+                    clanBadge: O,
+                    className: a()(f.noTooltip, s),
+                    textVariant: l,
+                    textColor: _,
+                    badgeSize: E
+                }) : (0, i.jsx)(m, {
+                    clan: S,
+                    userId: r,
+                    children: (0, i.jsx)(h, {
+                        clanTag: A,
+                        clanBadge: O,
+                        className: s,
+                        textVariant: l,
+                        textColor: _,
+                        badgeSize: E
                     })
-                }) : null
+                })
             })
-        },
-        277602: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return m
-                }
-            });
-            var i = n("735250"),
-                r = n("470079"),
-                s = n("481060"),
-                a = n("442837"),
-                o = n("231467"),
-                l = n("741606"),
-                u = n("703656"),
-                d = n("314897"),
-                _ = n("271383"),
-                c = n("594174"),
-                E = n("963202"),
-                I = n("645896"),
-                T = n("905362"),
-                f = n("353093"),
-                S = n("981631"),
-                h = n("689938"),
-                A = n("221840");
-
-            function m(e) {
-                var t;
-                let {
-                    clan: m,
-                    isLoading: N,
-                    onClose: p,
-                    onMouseEnter: O,
-                    onMouseLeave: R
-                } = e, C = (0, I.useClanInfo)(null !== (t = null == m ? void 0 : m.identityGuildId) && void 0 !== t ? t : null), g = null == m ? void 0 : m.tag, L = (0, E.useIsInUserClanExperiment)(), D = null == m ? void 0 : m.identityGuildId, v = (0, a.useStateFromStores)([d.default], () => d.default.getId()), M = (0, a.useStateFromStores)([_.default], () => null != D ? _.default.getMember(D, v) : null, [D, v]), y = (0, a.useStateFromStores)([c.default], () => c.default.getUser(v), [v]), P = (null == M ? void 0 : M.joinedAt) != null, U = (0, f.isGuildAdoptedUserClanIdentity)(D, null == y ? void 0 : y.clan), b = null != (0, l.default)(D), G = r.useCallback(e => {
-                    null != D && (e.stopPropagation(), e.preventDefault(), null == p || p(), (0, T.openAdoptClanIdentityModal)(D))
-                }, [D, p]), w = r.useCallback(e => {
-                    if (null != C) e.stopPropagation(), e.preventDefault(), null == p || p(), !b && (0, s.openModalLazy)(async () => {
-                        let {
-                            default: e
-                        } = await Promise.all([n.e("99387"), n.e("80026"), n.e("18482")]).then(n.bind(n, "767593"));
-                        return t => (0, i.jsx)(e, {
-                            ...t,
-                            clan: C
-                        })
-                    })
-                }, [C, b, p]), B = r.useCallback(() => {
-                    null != D && (0, u.transitionTo)(S.Routes.GUILD_MEMBER_VERIFICATION(D))
-                }, [D]), k = r.useMemo(() => {
-                    var e, t;
-                    let n = null !== (t = null == C ? void 0 : null === (e = C.branding) || void 0 === e ? void 0 : e.primaryColor) && void 0 !== t ? t : null,
-                        i = {
-                            color: null != n ? s.Button.Colors.CUSTOM : s.Button.Colors.BRAND,
-                            size: s.Button.Sizes.SMALL,
-                            fullWidth: !0
-                        };
-                    return null != n && (i = {
-                        ...i,
-                        style: {
-                            backgroundColor: n,
-                            color: (0, f.getAccessibleTextColor)(n).hex()
-                        }
-                    }), i
-                }, [C]), V = r.useMemo(() => {
-                    switch (!0) {
-                        case !L:
-                            return null;
-                        case !P && b:
-                            return (0, i.jsx)(s.Button, {
-                                onClick: B,
-                                ...k,
-                                children: h.default.Messages.CLAN_USER_APPLICATION_EXISTS_TAG_GUILD_PROFILE_CTA
-                            });
-                        case !P:
-                            return (0, i.jsx)(s.Button, {
-                                onClick: w,
-                                ...k,
-                                children: h.default.Messages.CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA
-                            });
-                        case P && !U:
-                            return (0, i.jsx)(s.Button, {
-                                onClick: G,
-                                ...k,
-                                children: h.default.Messages.CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA
-                            });
-                        default:
-                            return null
-                    }
-                }, [k, G, w, B, b, U, P, L]);
-                return null == g || null == C || null == D || N ? (0, i.jsx)(s.Spinner, {}) : (0, i.jsxs)("div", {
-                    className: A.tooltipContainer,
-                    onMouseLeave: R,
-                    onMouseEnter: O,
-                    children: [(0, i.jsx)(o.ClanDiscoveryCardView, {
-                        clan: C,
-                        className: A.cardContainer
-                    }), null != V && (0, i.jsx)("div", {
-                        className: A.buttonContainer,
-                        children: V
-                    })]
-                })
-            }
-        },
-        738103: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                TempBadgeIcon: function() {
-                    return a
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("325767"),
-                s = n("981631");
-            let a = e => {
-                let {
-                    width: t = 16,
-                    height: n = 16,
-                    color: a = s.HEXColors.YELLOW_260,
-                    ...o
-                } = e, l = "string" == typeof a ? a : a.css;
-                return (0, i.jsxs)("svg", {
-                    ...(0, r.default)(o),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: n,
-                    fill: "none",
-                    viewBox: "0 0 16 16",
-                    children: [(0, i.jsxs)("g", {
-                        "clip-path": "url(#clip0_6091_3330)",
-                        children: [(0, i.jsx)("path", {
-                            d: "M11 1V2H10V3H9V4H8V5H7V7H6V8H8V10H9V9H11V8H12V7H13V6H14V5H15V1H11Z",
-                            fill: "#847D8B"
-                        }), (0, i.jsx)("path", {
-                            d: "M3 9H4V10H6V12H7V13H9V14H11V12H9V11H8V10H7V9H6V8H5V7H4V5H2V7H3V9Z",
-                            fill: l
-                        }), (0, i.jsx)("path", {
-                            d: "M5 11H3V13H5V11Z",
-                            fill: l
-                        }), (0, i.jsx)("path", {
-                            d: "M3 13H1V15H3V13Z",
-                            fill: l
-                        }), (0, i.jsx)("path", {
-                            d: "M11 1H10V2H11V1Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M10 2H9V3H10V2Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M9 3H8V4H9V3Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M8 4H7V5H8V4Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M7 5H6V7H7V5Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M5 5H4V7H5V5Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M2 5H1V7H2V5Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M3 7H2V9H3V7Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M11 9H9V10H11V9Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M11 11H9V12H11V11Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M12 12H11V14H12V12Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M1 13H0V15H1V13Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M11 14H9V15H11V14Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M9 13H7V14H9V13Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M3 14V15H4V14H5V13H3V14Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M6 12V10H5H4V9H3V11H4H5V12V13H7V12H6Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M3 12V11H2V12H1V13H3V12Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M3 15H1V16H3V15Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M4 4H2V5H4V4Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M7 9V10H8V9V8H7H6V9H7Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M13 3H12V4H13V3Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M12 4H11V5H12V4Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M11 5H10V6H11V5Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M10 6H9V7H10V6Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M9 7H8V8H9V7Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M9 10H8V11H9V10Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M6 7H5V8H6V7Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M15 5H14V6H15V5Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M14 6H13V7H14V6Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M13 7H12V8H13V7Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M12 8H11V9H12V8Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M11 0V1H15V5H16V0H11Z",
-                            fill: "#1E1F22"
-                        }), (0, i.jsx)("path", {
-                            d: "M11 12H10V13H11V12Z",
-                            fill: "white"
-                        }), (0, i.jsx)("path", {
-                            opacity: "0.5",
-                            d: "M12 1H11V2H10V3H9V4H8V5H7V6V7H6V8H8V7H9V6H10V5H11V4H12V3H13V2H14V1H12Z",
-                            fill: "white"
-                        }), (0, i.jsx)("path", {
-                            d: "M8 5H7V6H10V5H9V4H8V5Z",
-                            fill: "white"
-                        }), (0, i.jsx)("path", {
-                            d: "M10 2V3H9V4H12V3H11V2H10Z",
-                            fill: "white"
-                        }), (0, i.jsx)("path", {
-                            d: "M12 1H11V2H12V1Z",
-                            fill: "white"
-                        }), (0, i.jsx)("path", {
-                            d: "M4 5H3V6H4V5Z",
-                            fill: "white"
-                        }), (0, i.jsx)("path", {
-                            d: "M4 11H3V12H4V11Z",
-                            fill: "white"
-                        }), (0, i.jsx)("path", {
-                            d: "M2 13H1V14H2V13Z",
-                            fill: "white"
-                        })]
-                    }), (0, i.jsx)("defs", {
-                        children: (0, i.jsx)("clipPath", {
-                            id: "clip0_6091_3330",
-                            children: (0, i.jsx)("rect", {
-                                width: "16",
-                                height: "16",
-                                fill: "white"
-                            })
-                        })
-                    })]
-                })
-            }
         },
         550271: function(e, t, n) {
             "use strict";
@@ -103451,13 +103408,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 UserProfileClanContainer: function() {
-                    return O
+                    return R
                 },
                 UserProfileClanRow: function() {
-                    return N
+                    return p
                 },
                 UserProfileClanSection: function() {
-                    return R
+                    return C
                 }
             }), n("47120");
             var i = n("735250"),
@@ -103477,57 +103434,62 @@
                 f = n("114487"),
                 S = n("219039"),
                 h = n("979264"),
-                A = n("689938"),
-                m = n("88725");
+                A = n("308083"),
+                m = n("689938"),
+                N = n("88725");
 
-            function N(e) {
+            function p(e) {
                 let {
                     className: t,
                     userClanTag: n,
-                    onTagClick: s,
-                    guildId: o,
-                    guildName: u,
-                    guildIcon: d,
-                    guildIconSize: c,
-                    memberCount: E
-                } = e, I = r.useMemo(() => _.default.getGuildIconURL({
-                    id: o,
-                    icon: d,
-                    size: c,
+                    userClanBadge: s,
+                    onTagClick: o,
+                    guildId: u,
+                    guildName: d,
+                    guildIcon: c,
+                    guildIconSize: I,
+                    memberCount: T
+                } = e, m = r.useMemo(() => _.default.getGuildIconURL({
+                    id: u,
+                    icon: c,
+                    size: I,
                     canAnimate: !0
-                }), [o, d, c]), T = r.useRef(null), [A, N] = r.useState(!1);
-                return r.useEffect(() => {
-                    let e = T.current;
-                    null != e && null != e.offsetWidth && null != e.scrollWidth && N(e.offsetWidth < e.scrollWidth)
-                }, []), (0, i.jsxs)("div", {
-                    className: a()(m.container, t),
+                }), [u, c, I]), p = r.useRef(null), [O, R] = r.useState(!1);
+                r.useEffect(() => {
+                    let e = p.current;
+                    null != e && null != e.offsetWidth && null != e.scrollWidth && R(e.offsetWidth < e.scrollWidth)
+                }, []);
+                let C = (0, E.getClanBadgeUrl)(u, s, A.ClanTagBadgeSize.SIZE_16);
+                return (0, i.jsxs)("div", {
+                    className: a()(N.container, t),
                     children: [(0, i.jsx)(f.ClanGuildIconSimple, {
-                        className: m.icon,
-                        guildName: u,
-                        guildIconURL: I,
-                        iconSize: c
+                        className: N.icon,
+                        guildName: d,
+                        guildIconURL: m,
+                        iconSize: I
                     }), (0, i.jsxs)("div", {
-                        className: m.details,
+                        className: N.details,
                         children: [(0, i.jsx)(l.Tooltip, {
-                            text: u,
+                            text: d,
                             color: l.Tooltip.Colors.PRIMARY,
-                            shouldShow: A,
+                            shouldShow: O,
                             children: e => (0, i.jsx)("span", {
-                                ref: T,
+                                ref: p,
                                 ...e,
-                                className: m.guildName,
-                                children: u
+                                className: N.guildName,
+                                children: d
                             })
-                        }), null != E && (0, i.jsx)(S.default, {
-                            count: E
+                        }), null != T && (0, i.jsx)(S.default, {
+                            count: T
                         })]
                     }), (0, i.jsx)("div", {
-                        className: m.tagContainer,
+                        className: N.tagContainer,
                         children: (0, i.jsx)(h.BaseClanTagChiplet, {
-                            className: m.tag,
+                            className: N.tag,
                             clanTag: n,
-                            onClick: s,
-                            badgeSize: h.ClanTagBadgeSize.SIZE_16,
+                            clanBadge: C,
+                            onClick: o,
+                            badgeSize: A.ClanTagBadgeSize.SIZE_16,
                             textColor: "interactive-normal",
                             textVariant: "text-sm/medium"
                         })
@@ -103535,98 +103497,102 @@
                 })
             }
 
-            function p(e) {
+            function O(e) {
                 let {
                     userClanTag: t,
-                    guildId: s,
-                    guildName: a,
-                    guildIcon: u,
-                    clan: _
-                } = e, T = (0, I.useCurrentUserAvailableClanIds)(), f = (0, o.useStateFromStores)([d.default], () => {
+                    userClanBadge: s,
+                    guildId: a,
+                    guildName: u,
+                    guildIcon: _,
+                    clan: T
+                } = e, f = (0, I.useCurrentUserAvailableClanIds)(), S = (0, o.useStateFromStores)([d.default], () => {
                     var e;
-                    return (0, E.getGuildIdFromUserClan)(null === (e = d.default.getCurrentUser()) || void 0 === e ? void 0 : e.clan)
-                }), S = r.useMemo(() => {
-                    if (s !== f) {
-                        if (T.has(s)) return () => {
+                    return (0, E.getUserClanData)(null === (e = d.default.getCurrentUser()) || void 0 === e ? void 0 : e.clan).guildId
+                }), h = r.useMemo(() => {
+                    if (a !== S) {
+                        if (f.has(a)) return () => {
                             (0, l.openModal)(e => (0, i.jsx)(l.ConfirmModal, {
                                 ...e,
-                                header: A.default.Messages.CLAN_USER_ADOPT_TAG_MODAL_CTA,
-                                confirmText: A.default.Messages.CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA,
+                                header: m.default.Messages.CLAN_USER_ADOPT_TAG_MODAL_CTA,
+                                confirmText: m.default.Messages.CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA,
                                 confirmButtonColor: l.Button.Colors.BRAND,
-                                cancelText: A.default.Messages.CLAN_USER_ADOPT_TAG_MODAL_CANCEL,
+                                cancelText: m.default.Messages.CLAN_USER_ADOPT_TAG_MODAL_CANCEL,
                                 onConfirm: async () => {
-                                    await (0, c.adoptClanIdentity)(s, !0)
+                                    await (0, c.adoptClanIdentity)(a, !0)
                                 },
                                 children: (0, i.jsx)(l.Text, {
                                     variant: "text-sm/normal",
-                                    children: A.default.Messages.CLAN_USER_PROFILE_USE_CLAN_TAG.format({
-                                        guildName: a
+                                    children: m.default.Messages.CLAN_USER_PROFILE_USE_CLAN_TAG.format({
+                                        guildName: u
                                     })
                                 })
                             }))
                         };
-                        if (null != _) return () => (0, l.openModalLazy)(async () => {
+                        if (null != T) return () => (0, l.openModalLazy)(async () => {
                             let {
                                 default: e
                             } = await Promise.all([n.e("99387"), n.e("80026"), n.e("18482")]).then(n.bind(n, "767593"));
                             return t => (0, i.jsx)(e, {
                                 ...t,
-                                clan: _
+                                clan: T
                             })
                         })
                     }
-                }, [T, _, f, s, a]);
+                }, [f, T, S, a, u]);
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(l.Heading, {
-                        className: m.header,
+                        className: N.header,
                         variant: "eyebrow",
-                        children: A.default.Messages.CLAN_USER_PROFILE_PRIMARY_CLAN
-                    }), (0, i.jsx)(N, {
-                        className: m.profileContainer,
+                        children: m.default.Messages.CLAN_USER_PROFILE_PRIMARY_CLAN
+                    }), (0, i.jsx)(p, {
+                        className: N.profileContainer,
                         userClanTag: t,
-                        onTagClick: S,
-                        guildName: a,
-                        guildId: s,
-                        guildIcon: u,
+                        userClanBadge: s,
+                        onTagClick: h,
+                        guildName: u,
+                        guildId: a,
+                        guildIcon: _,
                         guildIconSize: 40,
-                        memberCount: null == _ ? void 0 : _.memberCount
+                        memberCount: null == T ? void 0 : T.memberCount
                     })]
                 })
             }
 
-            function O(e) {
+            function R(e) {
                 let {
                     userId: t,
                     wrapChildren: n
                 } = e, {
                     userClanTag: r,
-                    guildId: s,
-                    guildName: a,
-                    guildIcon: o,
-                    clan: l
+                    userClanBadge: s,
+                    guildId: a,
+                    guildName: o,
+                    guildIcon: l,
+                    clan: u
                 } = (0, T.useUserSelectedClan)({
                     userId: t
                 });
-                if (null == r || null == s || null == a) return null;
-                let u = (0, i.jsx)(p, {
+                if (null == r || null == a || null == o) return null;
+                let d = (0, i.jsx)(O, {
                     userClanTag: r,
-                    guildId: s,
-                    guildName: a,
-                    guildIcon: o,
-                    clan: l
+                    userClanBadge: s,
+                    guildId: a,
+                    guildName: o,
+                    guildIcon: l,
+                    clan: u
                 });
                 return null != n ? (0, i.jsx)(i.Fragment, {
-                    children: n(u)
-                }) : u
+                    children: n(d)
+                }) : d
             }
 
-            function R(e) {
+            function C(e) {
                 let {
                     userId: t
                 } = e, n = r.useCallback(e => (0, i.jsx)(u.default, {
                     children: e
                 }), []);
-                return (0, i.jsx)(O, {
+                return (0, i.jsx)(R, {
                     userId: t,
                     wrapChildren: n
                 })
@@ -110029,7 +109995,7 @@
                 ContentInventorySurfaceTypes: function() {
                     return r
                 }
-            }), (i || (i = {})).GLOBAL_FEED = "global feed", (a = r || (r = {}))[a.GUILD_MEMBER_LIST = 1] = "GUILD_MEMBER_LIST", (o = s || (s = {}))[o.CARD_HOVER = 1] = "CARD_HOVER", o[o.CARD_CLICK = 2] = "CARD_CLICK", o[o.REACTION_EMOJI_REACT_SENT = 3] = "REACTION_EMOJI_REACT_SENT", o[o.DM_REACTION_MESSAGE_SENT = 4] = "DM_REACTION_MESSAGE_SENT", o[o.CHANNEL_REACTION_MESSAGE_SENT = 5] = "CHANNEL_REACTION_MESSAGE_SENT"
+            }), (i || (i = {})).GLOBAL_FEED = "global feed", (a = r || (r = {}))[a.GUILD_MEMBER_LIST = 1] = "GUILD_MEMBER_LIST", (o = s || (s = {}))[o.CARD_HOVER = 1] = "CARD_HOVER", o[o.CARD_CLICK = 2] = "CARD_CLICK", o[o.REACTION_EMOJI_REACT_SENT = 3] = "REACTION_EMOJI_REACT_SENT", o[o.DM_REACTION_MESSAGE_SENT = 4] = "DM_REACTION_MESSAGE_SENT", o[o.CHANNEL_REACTION_MESSAGE_SENT = 5] = "CHANNEL_REACTION_MESSAGE_SENT", o[o.VOICE_CHANNEL_JOINED = 6] = "VOICE_CHANNEL_JOINED"
         },
         162461: function(e, t, n) {
             "use strict";
@@ -110686,9 +110652,6 @@
                 getEntryDuration: function() {
                     return A
                 },
-                getFullMarathonDescription: function() {
-                    return C
-                },
                 getStreakCount: function() {
                     return R
                 },
@@ -110822,16 +110785,6 @@
             function R(e) {
                 let t = e.traits.find(e => e.type === s.ContentInventoryTraitType.STREAK_DAYS);
                 return null == t ? void 0 : t.streak_count_days
-            }
-
-            function C(e) {
-                let t = A(e);
-                if (null == t) return u.default.Messages.MEMBER_LIST_CONTENT_FEED_MARATHON;
-                let n = Math.round(t / o.default.Seconds.HOUR),
-                    i = u.default.Messages.MEMBER_LIST_CONTENT_FEED_PLAYED_FOR_HOURS.format({
-                        hours: n
-                    });
-                return "".concat(u.default.Messages.MEMBER_LIST_CONTENT_FEED_MARATHON, " — ").concat(i)
             }
         },
         663993: function(e, t, n) {
@@ -112803,8 +112756,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287665",
-                    versionHash: "c843e820d559e1442507cb1fc1f89517be35d345"
+                    buildNumber: "288065",
+                    versionHash: "2e640e855e21ac942db3822fa04e47db4870f10d"
                 }
             }
             n.r(t), n.d(t, {
@@ -113174,7 +113127,7 @@
                     configurable: !0,
                     writable: !0
                 }) : e[t] = n, e
-            }(s = i || (i = {}))[s.MESSAGING = 0] = "MESSAGING", s[s.OVERLAYS = 1] = "OVERLAYS";
+            }(s = i || (i = {}))[s.MESSAGING = 0] = "MESSAGING", s[s.OVERLAYS = 1] = "OVERLAYS", s[s.PREMIUM = 2] = "PREMIUM";
             let u = {
                     visual_effect_view_overrides: {
                         label: "Blur view overrides for designers to test with",
@@ -113195,6 +113148,10 @@
                     send_fail_100: {
                         label: "Send: Fail with 500 status",
                         category: 0
+                    },
+                    premium_roadblocks: {
+                        label: "Enable all new premium roadblocks",
+                        category: 2
                     }
                 },
                 d = {};
@@ -113391,7 +113348,8 @@
                     badge: {
                         badgeKind: e.badge,
                         primaryColor: s(e.badge_color_primary, t.primary),
-                        secondaryColor: s(e.badge_color_secondary, t.secondary)
+                        secondaryColor: s(e.badge_color_secondary, t.secondary),
+                        imageHash: e.badge_hash
                     },
                     branding: {
                         primaryColor: s(e.brand_color_primary, n.primary),
@@ -148064,7 +148022,7 @@
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("48375"), n.e("14262"), n.e("95393"), n.e("22347"), n.e("66993")]).then(n.bind(n, "697849"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("48375"), n.e("95393"), n.e("14262"), n.e("22347"), n.e("66993")]).then(n.bind(n, "697849"));
                     return n => (0, i.jsx)(e, {
                         guildScheduledEventId: t,
                         parentGuildId: s,
@@ -149917,7 +149875,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("90508"), n.e("58227"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("43643"), n.e("74870"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("67256")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("43643"), n.e("58227"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("74870"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("67256")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -151522,281 +151480,256 @@
         456774: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                ActivityCategory: function() {
+                    return i
+                },
                 default: function() {
-                    return k
+                    return Y
                 }
             }), n("390547"), n("47120");
-            var i = n("735250"),
-                r = n("470079"),
-                s = n("120356"),
-                a = n.n(s),
-                o = n("442837"),
-                l = n("481060"),
-                u = n("700582"),
-                d = n("666188"),
-                _ = n("15274"),
-                c = n("924301"),
-                E = n("725436"),
-                I = n("217804"),
-                T = n("703656"),
-                f = n("344185"),
-                S = n("592125"),
-                h = n("984933"),
-                A = n("271383"),
-                m = n("594174"),
-                N = n("938475"),
-                p = n("940627"),
-                O = n("705600"),
-                R = n("305878"),
-                C = n("632184"),
-                g = n("806519"),
-                L = n("823379"),
-                D = n("5192"),
-                v = n("51144"),
-                M = n("981631"),
-                y = n("765305"),
-                P = n("689938"),
-                U = n("764864");
+            var i, r, s = n("735250"),
+                a = n("470079"),
+                o = n("120356"),
+                l = n.n(o),
+                u = n("442837"),
+                d = n("481060"),
+                _ = n("700582"),
+                c = n("557135"),
+                E = n("666188"),
+                I = n("66999"),
+                T = n("15274"),
+                f = n("924301"),
+                S = n("725436"),
+                h = n("217804"),
+                A = n("703656"),
+                m = n("344185"),
+                N = n("592125"),
+                p = n("984933"),
+                O = n("271383"),
+                R = n("496675"),
+                C = n("594174"),
+                g = n("979651"),
+                L = n("938475"),
+                D = n("940627"),
+                v = n("705600"),
+                M = n("305878"),
+                y = n("632184"),
+                P = n("806519"),
+                U = n("51144"),
+                b = n("718582"),
+                G = n("981631"),
+                w = n("765305"),
+                B = n("689938"),
+                k = n("764864");
+            (r = i || (i = {})).HANGOUT = "hangout", r.EMBEDDED_ACTIVITY = "embedded-activity", r.EVENT = "event";
 
-            function b(e) {
+            function V(e) {
                 let {
                     users: t,
                     othersCount: n
-                } = e, r = e => {
-                    if (1 !== t.length) return 0 === e ? U.activityCardImageAvatar1 : n > 0 || 2 === e ? U.activityCardImageAvatar3 : U.activityCardImageAvatar2
+                } = e, i = e => {
+                    if (1 !== t.length) return 0 === e ? k.activityCardImageAvatar1 : n > 0 || 2 === e ? k.activityCardImageAvatar3 : k.activityCardImageAvatar2
                 };
-                return (0, i.jsxs)("div", {
-                    className: a()(U.activityCardImage, 1 === t.length && U.activityCardImageOneAvatar),
+                return (0, s.jsxs)("div", {
+                    className: l()(k.activityCardImage, 1 === t.length && k.activityCardImageOneAvatar),
                     children: [t.map((e, t) => {
-                        let n = r(t);
-                        return (0, i.jsx)(u.default, {
+                        let n = i(t);
+                        return (0, s.jsx)(_.default, {
                             user: e,
-                            size: l.AvatarSizes.SIZE_16,
+                            size: d.AvatarSizes.SIZE_16,
                             className: n
                         }, e.id)
-                    }), n > 0 && (0, i.jsxs)(l.Text, {
+                    }), n > 0 && (0, s.jsxs)(d.Text, {
                         color: "text-normal",
                         variant: "text-xxs/semibold",
-                        className: U.activityCardImageAvatar2,
+                        className: k.activityCardImageAvatar2,
                         children: ["+", n]
                     })]
                 })
             }
 
-            function G(e) {
+            function x(e) {
+                var t;
                 let {
-                    hangoutActivity: t,
-                    guildId: n
+                    hangoutActivity: n,
+                    guildId: i
                 } = e, {
-                    channelId: s,
-                    userIds: a
-                } = t, u = (0, o.useStateFromStores)([S.default], () => S.default.getChannel(s)), {
-                    usersToShow: d,
-                    othersCount: _,
-                    usersText: c
-                } = function(e, t, n) {
-                    let i = (0, o.useStateFromStoresArray)([m.default], () => e.map(e => m.default.getUser(e))).filter(L.isNotNullish),
-                        r = i.length > 3 ? i.slice(0, 2) : i.slice(0, 3),
-                        s = r.map(e => D.default.getName(t, n, e)),
-                        a = Math.max(0, i.length - r.length),
-                        l = function(e, t) {
-                            if (1 === e.length) return t > 0 ? P.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_1_N.format({
-                                a: e[0],
-                                n: t.toLocaleString()
-                            }) : e[0];
-                            if (2 === e.length) return t > 0 ? P.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_2_N.format({
-                                a: e[0],
-                                b: e[1],
-                                n: t.toLocaleString()
-                            }) : P.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_2.format({
-                                a: e[0],
-                                b: e[1]
-                            });
-                            if (3 !== e.length) return P.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_N.format({
-                                n: t.toLocaleString()
-                            });
-                            else return t > 0 ? P.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_3_N.format({
-                                a: e[0],
-                                b: e[1],
-                                c: e[2],
-                                n: t.toLocaleString()
-                            }) : P.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_3.format({
-                                a: e[0],
-                                b: e[1],
-                                c: e[2]
-                            })
-                        }(s, a);
-                    return {
-                        usersToShow: r,
-                        othersCount: a,
-                        usersText: l
-                    }
-                }(a, n, s), E = r.useCallback(() => {
-                    (0, T.transitionToGuild)(n, s)
-                }, [s, n]);
-                return (0, i.jsxs)("div", {
-                    className: U.activityCardContainer,
-                    children: [(0, i.jsxs)("div", {
-                        className: U.activityCardImageContainer,
-                        children: [(0, i.jsx)("svg", {
+                    channelId: r,
+                    userIds: o
+                } = n, l = (0, u.useStateFromStores)([N.default], () => N.default.getChannel(r)), {
+                    needSubscriptionToAccess: _
+                } = (0, I.default)(null !== (t = null == l ? void 0 : l.id) && void 0 !== t ? t : void 0), E = (0, u.useStateFromStores)([R.default], () => !R.default.can(G.Permissions.CONNECT, l)), T = (0, u.useStateFromStores)([g.default], () => g.default.isInChannel(r)), {
+                    usersToShow: f,
+                    othersCount: S,
+                    usersText: h
+                } = (0, b.useGetActivityUsers)(o, i, r), A = a.useCallback(() => {
+                    null != l && c.default.handleVoiceConnect({
+                        channel: l,
+                        connected: T,
+                        needSubscriptionToAccess: _,
+                        locked: E
+                    })
+                }, [l, T, E, _]);
+                return (0, s.jsxs)("div", {
+                    className: k.activityCardContainer,
+                    children: [(0, s.jsxs)("div", {
+                        className: k.activityCardImageContainer,
+                        children: [(0, s.jsx)("svg", {
                             width: 48,
                             height: 48,
                             viewBox: "0 0 48 48",
                             "aria-hidden": !0,
-                            children: (0, i.jsx)("foreignObject", {
+                            children: (0, s.jsx)("foreignObject", {
                                 x: 0,
                                 y: 0,
                                 width: 48,
                                 height: 48,
-                                mask: "url(#".concat(g.MaskIDs.GUILD_POPOUT_ACTIVITY_ICON, ")"),
-                                children: (0, i.jsx)(b, {
-                                    users: d,
-                                    othersCount: _
+                                mask: "url(#".concat(P.MaskIDs.GUILD_POPOUT_ACTIVITY_ICON, ")"),
+                                children: (0, s.jsx)(V, {
+                                    users: f,
+                                    othersCount: S
                                 })
                             })
-                        }), (0, i.jsx)("div", {
-                            className: U.mask,
-                            children: (0, i.jsx)("div", {
-                                className: U.activityCardActivityIcon,
-                                children: (0, i.jsx)(C.default, {
+                        }), (0, s.jsx)("div", {
+                            className: k.mask,
+                            children: (0, s.jsx)("div", {
+                                className: k.activityCardActivityIcon,
+                                children: (0, s.jsx)(y.default, {
                                     width: 12,
                                     height: 12,
                                     color: "white"
                                 })
                             })
                         })]
-                    }), (0, i.jsxs)("div", {
-                        className: U.activityCardDetailsContainer,
-                        children: [(0, i.jsx)(l.Text, {
+                    }), (0, s.jsxs)("div", {
+                        className: k.activityCardDetailsContainer,
+                        children: [(0, s.jsx)(d.Text, {
                             color: "text-muted",
                             variant: "text-xs/medium",
                             lineClamp: 1,
-                            children: c
-                        }), (0, i.jsx)(l.Heading, {
+                            children: h
+                        }), (0, s.jsx)(d.Heading, {
                             color: "text-normal",
                             variant: "heading-sm/semibold",
                             lineClamp: 1,
-                            children: P.default.Messages.GUILD_POPOUT_ACTIVITY_VOICE
-                        }), (0, i.jsx)(l.Text, {
+                            children: B.default.Messages.GUILD_POPOUT_ACTIVITY_VOICE
+                        }), (0, s.jsx)(d.Text, {
                             variant: "text-xs/normal",
                             color: "text-muted",
                             lineClamp: 1,
-                            children: null == u ? void 0 : u.name
+                            children: null == l ? void 0 : l.name
                         })]
-                    }), (0, i.jsx)(l.Button, {
-                        size: l.Button.Sizes.TINY,
-                        color: l.Button.Colors.PRIMARY,
-                        onClick: E,
-                        children: P.default.Messages.JOIN
+                    }), (0, s.jsx)(d.Button, {
+                        size: d.Button.Sizes.TINY,
+                        color: d.Button.Colors.PRIMARY,
+                        onClick: A,
+                        children: B.default.Messages.JOIN
                     })]
                 })
             }
 
-            function w(e) {
+            function F(e) {
                 var t;
                 let {
                     event: n
-                } = e, s = (0, o.useStateFromStores)([S.default], () => S.default.getChannel(n.channel_id)), a = (0, o.useStateFromStores)([m.default], () => m.default.getUser(n.creator_id)), u = (0, o.useStateFromStores)([A.default], () => null != a ? A.default.getMember(n.guild_id, a.id) : null, [a, n.guild_id]), d = n.name, c = null !== (t = null == u ? void 0 : u.nick) && void 0 !== t ? t : v.default.getName(a), f = (0, I.getLocationDataForEvent)(n, s), h = null == f ? void 0 : f.IconComponent, N = null == f ? void 0 : f.locationName, p = r.useCallback(() => {
-                    (n.entity_type === y.GuildScheduledEventEntityTypes.STAGE_INSTANCE || n.entity_type === y.GuildScheduledEventEntityTypes.VOICE) && (0, T.transitionToGuild)(n.guild_id, n.channel_id), (0, _.openGuildEventDetails)({
+                } = e, i = (0, u.useStateFromStores)([N.default], () => N.default.getChannel(n.channel_id)), r = (0, u.useStateFromStores)([C.default], () => C.default.getUser(n.creator_id)), o = (0, u.useStateFromStores)([O.default], () => null != r ? O.default.getMember(n.guild_id, r.id) : null, [r, n.guild_id]), l = n.name, _ = null !== (t = null == o ? void 0 : o.nick) && void 0 !== t ? t : U.default.getName(r), c = (0, h.getLocationDataForEvent)(n, i), E = null == c ? void 0 : c.IconComponent, I = null == c ? void 0 : c.locationName, f = a.useCallback(() => {
+                    (n.entity_type === w.GuildScheduledEventEntityTypes.STAGE_INSTANCE || n.entity_type === w.GuildScheduledEventEntityTypes.VOICE) && (0, A.transitionToGuild)(n.guild_id, n.channel_id), (0, T.openGuildEventDetails)({
                         eventId: n.id
                     })
                 }, [n]);
-                return (0, i.jsxs)("div", {
-                    className: U.activityCardContainer,
-                    children: [(0, i.jsxs)("div", {
-                        className: U.activityCardImageContainer,
-                        children: [(0, i.jsx)("svg", {
+                return (0, s.jsxs)("div", {
+                    className: k.activityCardContainer,
+                    children: [(0, s.jsxs)("div", {
+                        className: k.activityCardImageContainer,
+                        children: [(0, s.jsx)("svg", {
                             width: 48,
                             height: 48,
                             viewBox: "0 0 48 48",
                             "aria-hidden": !0,
-                            children: (0, i.jsx)("foreignObject", {
+                            children: (0, s.jsx)("foreignObject", {
                                 x: 0,
                                 y: 0,
                                 width: 48,
                                 height: 48,
-                                mask: "url(#".concat(g.MaskIDs.GUILD_POPOUT_ACTIVITY_ICON, ")"),
-                                children: (0, i.jsx)("div", {
-                                    className: U.activityCardImage
+                                mask: "url(#".concat(P.MaskIDs.GUILD_POPOUT_ACTIVITY_ICON, ")"),
+                                children: (0, s.jsx)("div", {
+                                    className: k.activityCardImage
                                 })
                             })
-                        }), (0, i.jsx)("div", {
-                            className: U.mask,
-                            children: (0, i.jsx)("div", {
-                                className: U.activityCardActivityIcon,
-                                children: (0, i.jsx)(R.default, {
+                        }), (0, s.jsx)("div", {
+                            className: k.mask,
+                            children: (0, s.jsx)("div", {
+                                className: k.activityCardActivityIcon,
+                                children: (0, s.jsx)(M.default, {
                                     width: 12,
                                     height: 12,
                                     color: "white"
                                 })
                             })
                         })]
-                    }), (0, i.jsxs)("div", {
-                        className: U.activityCardDetailsContainer,
-                        children: [(0, i.jsx)(l.Text, {
+                    }), (0, s.jsxs)("div", {
+                        className: k.activityCardDetailsContainer,
+                        children: [(0, s.jsx)(d.Text, {
                             color: "text-muted",
                             variant: "text-xs/medium",
                             lineClamp: 1,
-                            children: P.default.Messages.GUILD_POPOUT_ACTIVITY_EVENT_CREATED_BY.format({
-                                creatorName: c
+                            children: B.default.Messages.GUILD_POPOUT_ACTIVITY_EVENT_CREATED_BY.format({
+                                creatorName: _
                             })
-                        }), (0, i.jsx)(l.Heading, {
+                        }), (0, s.jsx)(d.Heading, {
                             color: "text-normal",
                             variant: "heading-sm/semibold",
                             lineClamp: 1,
-                            children: d
-                        }), (0, i.jsxs)("div", {
-                            className: U.location,
-                            "aria-label": "".concat(P.default.Messages.GUILD_POPOUT_ACTIVITY_EVENT_LOCATION_A11Y.format({
-                                location: N
+                            children: l
+                        }), (0, s.jsxs)("div", {
+                            className: k.location,
+                            "aria-label": "".concat(B.default.Messages.GUILD_POPOUT_ACTIVITY_EVENT_LOCATION_A11Y.format({
+                                location: I
                             })),
-                            children: [(0, i.jsx)(l.Text, {
+                            children: [(0, s.jsx)(d.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-muted",
-                                children: P.default.Messages.GUILD_POPOUT_ACTIVITY_EVENT_LOCATION
-                            }), null != h && (0, i.jsx)(h, {
+                                children: B.default.Messages.GUILD_POPOUT_ACTIVITY_EVENT_LOCATION
+                            }), null != E && (0, s.jsx)(E, {
                                 width: 24,
                                 height: 24,
-                                className: U.channelIcon
-                            }), (0, i.jsx)(l.Text, {
+                                className: k.channelIcon
+                            }), (0, s.jsx)(d.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-muted",
                                 lineClamp: 1,
-                                children: (0, E.guildEventDetailsParser)(N, !0)
+                                children: (0, S.guildEventDetailsParser)(I, !0)
                             })]
                         })]
-                    }), (0, i.jsx)(l.Button, {
-                        size: l.Button.Sizes.TINY,
-                        color: l.Button.Colors.PRIMARY,
-                        onClick: p,
-                        children: P.default.Messages.JOIN
+                    }), (0, s.jsx)(d.Button, {
+                        size: d.Button.Sizes.TINY,
+                        color: d.Button.Colors.PRIMARY,
+                        onClick: f,
+                        children: B.default.Messages.JOIN
                     })]
                 })
             }
 
-            function B(e) {
+            function H(e) {
                 let {
                     guild: t
-                } = e, {
-                    hangout: n,
-                    event: r
-                } = function(e) {
+                } = e, n = function(e) {
                     let t = e.id,
-                        n = (0, o.useStateFromStoresArray)([h.default, f.default], () => {
-                            let e = h.default.getChannels(t)[h.GUILD_VOCAL_CHANNELS_KEY].filter(e => {
+                        n = (0, u.useStateFromStoresArray)([p.default, m.default], () => {
+                            let e = p.default.getChannels(t)[p.GUILD_VOCAL_CHANNELS_KEY].filter(e => {
                                 let {
                                     channel: t
                                 } = e;
-                                return t.type === M.ChannelTypes.GUILD_VOICE
+                                return t.type === G.ChannelTypes.GUILD_VOICE
                             }).map(e => {
                                 let {
                                     channel: t
                                 } = e;
                                 return t.id
                             });
-                            return [...e, ...Object.values(f.default.getThreadsForGuild(t)).flatMap(e => Object.keys(e))]
+                            return [...e, ...Object.values(m.default.getThreadsForGuild(t)).flatMap(e => Object.keys(e))]
                         }, [t]),
-                        i = (0, o.useStateFromStores)([N.default], () => N.default.getVoiceStates(t), [t]),
+                        i = (0, u.useStateFromStores)([L.default], () => L.default.getVoiceStates(t), [t]),
                         r = Object.keys(i).filter(t => t !== e.afkChannelId && n.includes(t)).map(e => {
                             var t;
                             let n = (null !== (t = i[e]) && void 0 !== t ? t : []).map(e => {
@@ -151806,53 +151739,140 @@
                                 return t.id
                             });
                             return {
+                                category: "hangout",
                                 channelId: e,
                                 userIds: n
                             }
                         });
-                    return {
-                        hangout: r,
-                        gaming: [],
-                        activity: [],
-                        event: (0, o.useStateFromStoresArray)([c.default], () => c.default.getGuildScheduledEventsForGuild(t).filter(e => (0, c.isGuildScheduledEventActive)(e)), [t])
-                    }
-                }(t), s = r.length > 0 ? r[0] : null, a = n.length > 0 ? n[0] : null;
-                return (0, i.jsxs)(i.Fragment, {
-                    children: [null !== s && (0, i.jsx)(w, {
-                        event: s
-                    }), null !== a && (0, i.jsx)(G, {
-                        hangoutActivity: a,
-                        guildId: t.id
-                    })]
+                    return [...r, ...(0, u.useStateFromStoresArray)([f.default], () => f.default.getGuildScheduledEventsForGuild(t).filter(e => (0, f.isGuildScheduledEventActive)(e)).map(e => ({
+                        category: "event",
+                        event: e
+                    })), [t])]
+                }(t), i = (0, b.activityCardsSortedByAffinity)(n), r = a.useMemo(() => i.slice(0, 3), [i]), o = a.useMemo(() => r.map(e => "hangout" === e.category ? (0, s.jsx)(x, {
+                    hangoutActivity: e,
+                    guildId: t.id
+                }, "".concat(e.category, "-").concat(e.channelId)) : "event" === e.category ? (0, s.jsx)(F, {
+                    event: e.event
+                }, "".concat(e.category, "-").concat(e.event.id)) : void 0), [r, t.id]);
+                return (0, s.jsx)(s.Fragment, {
+                    children: o
                 })
             }
 
-            function k(e) {
+            function Y(e) {
                 let {
                     guild: t
-                } = e, n = (0, d.default)(t);
-                return (0, i.jsxs)("div", {
-                    className: U.container,
-                    children: [(0, i.jsxs)("div", {
-                        className: U.header,
-                        children: [n ? (0, i.jsx)(O.default, {
+                } = e, n = (0, E.default)(t);
+                return (0, s.jsxs)("div", {
+                    className: k.container,
+                    children: [(0, s.jsxs)("div", {
+                        className: k.header,
+                        children: [n ? (0, s.jsx)(v.default, {
                             guild: t,
                             size: 16,
-                            className: U.rowIconV2
-                        }) : (0, i.jsx)(p.default, {
+                            className: k.rowIconV2
+                        }) : (0, s.jsx)(D.default, {
                             guild: t,
                             size: 20,
-                            className: U.rowIcon
-                        }), (0, i.jsx)(l.Text, {
+                            className: k.rowIcon
+                        }), (0, s.jsx)(d.Text, {
                             variant: "text-md/bold",
                             color: "header-primary",
                             lineClamp: 1,
                             children: t.name
                         })]
-                    }), (0, i.jsx)(B, {
+                    }), (0, s.jsx)(H, {
                         guild: t
                     })]
                 })
+            }
+        },
+        718582: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                activityCardsSortedByAffinity: function() {
+                    return I
+                },
+                useGetActivityUsers: function() {
+                    return T
+                }
+            }), n("627341"), n("47120");
+            var i = n("392711"),
+                r = n.n(i),
+                s = n("278074"),
+                a = n("442837"),
+                o = n("800599"),
+                l = n("594174"),
+                u = n("823379"),
+                d = n("5192"),
+                _ = n("456774"),
+                c = n("689938");
+            let E = {
+                Event: 4,
+                Voice: 3,
+                EmbeddedActivity: 2,
+                Base: 1
+            };
+
+            function I(e) {
+                return (0, i.orderBy)(e, [e => (function(e) {
+                    let t = e => e > 0 ? Math.log(e + 1) : 0,
+                        n = e => e.map(e => {
+                            var t, n;
+                            return null !== (n = null === (t = o.default.getUserAffinity(e)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
+                        }).map(t),
+                        i = (0, s.match)(e).with({
+                            category: _.ActivityCategory.EVENT
+                        }, () => 4).with({
+                            category: _.ActivityCategory.HANGOUT
+                        }, () => 3).with({
+                            category: _.ActivityCategory.EMBEDDED_ACTIVITY
+                        }, () => 2).otherwise(() => 1),
+                        r = 0;
+                    return "userIds" in e && (r += Math.max(...n(e.userIds))), "embeddedActivity" in e && (r += Math.max(...n([...e.embeddedActivity.userIds]))), r = r > 0 ? r * i : 1e-5 * i
+                })(e)], ["desc"])
+            }
+
+            function T(e, t, n) {
+                let i = (0, a.useStateFromStoresArray)([l.default, o.default], () => r()(e).map(e => l.default.getUser(e)).filter(u.isNotNullish).orderBy([e => {
+                        var t, n;
+                        return null !== (n = null === (t = o.default.getUserAffinity(e.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
+                    }], ["desc"]).value()),
+                    s = i.length > 3 ? i.slice(0, 2) : i.slice(0, 3),
+                    _ = s.map(e => d.default.getName(t, n, e)),
+                    E = Math.max(0, i.length - s.length),
+                    I = function(e, t) {
+                        if (1 === e.length) return t > 0 ? c.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_1_N.format({
+                            a: e[0],
+                            n: t.toLocaleString()
+                        }) : e[0];
+                        if (2 === e.length) return t > 0 ? c.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_2_N.format({
+                            a: e[0],
+                            b: e[1],
+                            n: t.toLocaleString()
+                        }) : c.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_2.format({
+                            a: e[0],
+                            b: e[1]
+                        });
+                        if (3 !== e.length) return c.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_N.format({
+                            n: t.toLocaleString()
+                        });
+                        else return t > 0 ? c.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_3_N.format({
+                            a: e[0],
+                            b: e[1],
+                            c: e[2],
+                            n: t.toLocaleString()
+                        }) : c.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_3.format({
+                            a: e[0],
+                            b: e[1],
+                            c: e[2]
+                        })
+                    }(_, E);
+                return {
+                    usersToShow: s,
+                    othersCount: E,
+                    usersText: I
+                }
             }
         },
         593618: function(e, t, n) {
@@ -153487,6 +153507,11 @@
 
             function h(e) {
                 var t;
+                let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+                if (n) {
+                    let t = c.filter(t => t <= e).pop();
+                    if (null != t && e / t <= 1.25) return t
+                }
                 return null !== (t = c.find(t => e <= t)) && void 0 !== t ? t : c[c.length - 1]
             }
 
@@ -160146,6 +160171,7 @@
                         userId: r,
                         channelId: o,
                         parsedUserId: l,
+                        content: t(e.content, n),
                         inlinePreview: n.noStyleAndInteraction
                     }, n.key)
                 }
@@ -160488,6 +160514,78 @@
                 kind: "user",
                 id: "2024-02_audio_short_circuit",
                 label: "Audio processing short circuiting",
+                defaultConfig: {
+                    muteBeforeProcessing: !1,
+                    pttBeforeProcessing: !1,
+                    skipEncode: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Mute before processing",
+                    config: {
+                        muteBeforeProcessing: !0,
+                        pttBeforeProcessing: !1,
+                        skipEncode: !1
+                    }
+                }, {
+                    id: 2,
+                    label: "PTT before processing",
+                    config: {
+                        muteBeforeProcessing: !1,
+                        pttBeforeProcessing: !0,
+                        skipEncode: !1
+                    }
+                }, {
+                    id: 3,
+                    label: "Mute + PTT before processing",
+                    config: {
+                        muteBeforeProcessing: !0,
+                        pttBeforeProcessing: !0,
+                        skipEncode: !1
+                    }
+                }, {
+                    id: 4,
+                    label: "Skip encode",
+                    config: {
+                        muteBeforeProcessing: !1,
+                        pttBeforeProcessing: !1,
+                        skipEncode: !0
+                    }
+                }, {
+                    id: 5,
+                    label: "Mute before processing, skip encode",
+                    config: {
+                        muteBeforeProcessing: !0,
+                        pttBeforeProcessing: !1,
+                        skipEncode: !0
+                    }
+                }, {
+                    id: 6,
+                    label: "PTT before processing, skip encode",
+                    config: {
+                        muteBeforeProcessing: !1,
+                        pttBeforeProcessing: !0,
+                        skipEncode: !0
+                    }
+                }, {
+                    id: 7,
+                    label: "Mute + PTT before processing, skip encode",
+                    config: {
+                        muteBeforeProcessing: !0,
+                        pttBeforeProcessing: !0,
+                        skipEncode: !0
+                    }
+                }]
+            })
+        },
+        706629: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("818083");
+            t.default = (0, i.createExperiment)({
+                kind: "guild",
+                id: "2024-04_audio_short_circuit_guild",
+                label: "Audio processing short circuiting (guild)",
                 defaultConfig: {
                     muteBeforeProcessing: !1,
                     pttBeforeProcessing: !1,
@@ -166540,7 +166638,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return D
+                    return L
                 }
             });
             var i = n("735250"),
@@ -166565,18 +166663,18 @@
                 p = n("797053"),
                 O = n("5192"),
                 R = n("51144"),
-                C = n("377668"),
-                g = n("689938");
+                C = n("377668");
 
-            function L(e) {
+            function g(e) {
                 let {
                     userId: t,
-                    className: s
-                } = e, a = r.useCallback(() => {
+                    className: s,
+                    children: a
+                } = e, o = r.useCallback(() => {
                     (0, I.showInaccessibleLinkModal)({
                         kind: "user"
                     })
-                }, []), o = r.useCallback(e => {
+                }, []), l = r.useCallback(e => {
                     null != t && (0, d.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
@@ -166589,64 +166687,66 @@
                 }, [t]);
                 return (0, i.jsx)(p.default, {
                     className: s,
-                    onClick: a,
-                    onContextMenu: o,
-                    children: "@".concat(g.default.Messages.UNKNOWN_USER_MENTION_PLACEHOLDER)
+                    onClick: o,
+                    onContextMenu: l,
+                    children: a
                 })
             }
 
-            function D(e) {
+            function L(e) {
                 let {
                     className: t,
                     userId: r,
                     channelId: s,
                     parsedUserId: I,
-                    inlinePreview: g = !1
+                    content: L,
+                    inlinePreview: D = !1
                 } = e, {
-                    analyticsLocations: D
-                } = (0, c.default)(_.default.USER_MENTION), v = (0, l.useStateFromStores)([N.default], () => N.default.getUser(r)), M = (0, l.useStateFromStores)([S.default], () => S.default.getChannel(s)), y = null != M ? M.getGuildId() : null, P = g || null == v || null == y || null == s ? void 0 : e => {
-                    null != M && (0, d.openContextMenuLazy)(e, async () => {
+                    analyticsLocations: v
+                } = (0, c.default)(_.default.USER_MENTION), M = (0, l.useStateFromStores)([N.default], () => N.default.getUser(r)), y = (0, l.useStateFromStores)([S.default], () => S.default.getChannel(s)), P = null != y ? y.getGuildId() : null, U = D || null == M || null == P || null == s ? void 0 : e => {
+                    null != y && (0, d.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
                         } = await Promise.all([n.e("99387"), n.e("79695"), n.e("1502"), n.e("70866"), n.e("12435"), n.e("6696")]).then(n.bind(n, "757387"));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            user: v,
-                            channel: M,
-                            guildId: y
+                            user: M,
+                            channel: y,
+                            guildId: P
                         })
                     })
-                }, U = R.default.useName(v), b = (0, l.useStateFromStores)([S.default, h.default, m.default], () => O.default.getNickname(y, s, v)), G = A.default.getGuild(y), w = (0, E.useClydeEnabled)(G, M) && r === C.CLYDE_AI_USER_ID ? C.CLYDE_AI_MENTION_COLOR : null;
-                if (null == v) return (0, i.jsx)(L, {
+                }, b = R.default.useName(M), G = (0, l.useStateFromStores)([S.default, h.default, m.default], () => O.default.getNickname(P, s, M)), w = A.default.getGuild(P), B = (0, E.useClydeEnabled)(w, y) && r === C.CLYDE_AI_USER_ID ? C.CLYDE_AI_MENTION_COLOR : null;
+                if (null == M) return (0, i.jsx)(g, {
                     userId: I,
-                    className: t
-                });
-                let B = e => (0, i.jsx)(p.default, {
                     className: t,
-                    onContextMenu: P,
-                    color: w,
-                    ...e,
-                    children: "@".concat(null != b ? b : U)
+                    children: L
                 });
-                return g ? (0, i.jsx)(c.AnalyticsLocationProvider, {
-                    value: D,
-                    children: B()
+                let k = e => (0, i.jsx)(p.default, {
+                    className: t,
+                    onContextMenu: U,
+                    color: B,
+                    ...e,
+                    children: "@".concat(null != G ? G : b)
+                });
+                return D ? (0, i.jsx)(c.AnalyticsLocationProvider, {
+                    value: v,
+                    children: k()
                 }) : (0, i.jsx)(c.AnalyticsLocationProvider, {
-                    value: D,
+                    value: v,
                     children: (0, i.jsx)(u.Popout, {
-                        preload: null == v ? void 0 : () => (0, T.default)(v.id, v.getAvatarURL(y, 80), {
-                            guildId: null != y ? y : void 0,
+                        preload: null == M ? void 0 : () => (0, T.default)(M.id, M.getAvatarURL(P, 80), {
+                            guildId: null != P ? P : void 0,
                             channelId: null != s ? s : void 0
                         }),
-                        renderPopout: e => (a()(null != v, "Unexpected missing user"), (0, i.jsx)(f.default, {
+                        renderPopout: e => (a()(null != M, "Unexpected missing user"), (0, i.jsx)(f.default, {
                             location: "UserMention",
-                            userId: v.id,
-                            guildId: null != y ? y : void 0,
+                            userId: M.id,
+                            guildId: null != P ? P : void 0,
                             channelId: s,
                             ...e
                         })),
                         position: o.isMobile ? "top" : "right",
-                        children: e => B(e)
+                        children: e => k(e)
                     })
                 })
             }
@@ -167113,8 +167213,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1713990000611",
-                                    build_number: "287665"
+                                    built_at: "1714080576575",
+                                    build_number: "288065"
                                 }
                             },
                             retries: 1
@@ -170240,17 +170340,28 @@
                                 allAcked: t
                             } = await (0, O.getDisclosures)(W);
                             e0(!t), eJ(e)
-                        } catch (t) {
+                        } catch (n) {
                             let {
-                                body: e
-                            } = t;
-                            ev(Error(null != e.message ? e.message : "".concat(Object.keys(e)[0], ": ").concat(Object.values(e)[0])))
+                                status: e,
+                                body: t
+                            } = n;
+                            if (401 === e) {
+                                (0, b.logoutWithRedirect)(eN);
+                                return
+                            }
+                            ev(Error(null != t.message ? t.message : "".concat(Object.keys(t)[0], ": ").concat(Object.values(t)[0])))
                         } finally {
                             eq.current = !1
                         }
                     };
-                    null == em && e()
-                }, [W, em, eJ, e0, ev, eL]);
+                    if (null == em) {
+                        if (!v.default.isAuthenticated()) {
+                            (0, b.logoutWithRedirect)(eN);
+                            return
+                        }
+                        e()
+                    }
+                }, [W, eN, em, eJ, ev, e0, eL]);
                 let e1 = a.useCallback(async e => {
                         if (null != eh) {
                             eh(e);
@@ -183912,7 +184023,11 @@
         },
         680295: function(e, t, n) {
             "use strict";
-            n.r(t), n("47120");
+            n.r(t), n.d(t, {
+                ProfileEffect: function() {
+                    return h
+                }
+            }), n("47120");
             var i = n("735250"),
                 r = n("470079"),
                 s = n("120356"),
@@ -184714,88 +184829,17 @@
                 })
             }
         },
-        718514: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                getIsEligibleForActivityQuest: function() {
-                    return r
-                }
-            });
-            let i = (0, n("818083").createExperiment)({
-                    id: "2024-03_quests_activity_quest",
-                    kind: "user",
-                    label: "Activity Quest",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 0,
-                        label: "Control",
-                        config: {
-                            enabled: !1
-                        }
-                    }, {
-                        id: 1,
-                        label: "Activity Quest enabled",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                }),
-                r = e => {
-                    let {
-                        location: t,
-                        autoTrackExposure: n
-                    } = e;
-                    return i.getCurrentConfig({
-                        location: t
-                    }, {
-                        autoTrackExposure: n
-                    }).enabled
-                }
-        },
-        145460: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                isEligibleForQuestsClientMonitoring: function() {
-                    return r
-                }
-            });
-            let i = (0, n("818083").createExperiment)({
-                    id: "2024-03_quests_client_monitoring",
-                    kind: "user",
-                    label: "Quests client monitoring experiment",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 0,
-                        label: "disabled",
-                        config: {
-                            enabled: !1
-                        }
-                    }, {
-                        id: 1,
-                        label: "enabled",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                }),
-                r = e => i.getCurrentConfig({
-                    location: e
-                }, {
-                    autoTrackExposure: !1
-                }).enabled
-        },
         46140: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 CONSECUTIVE_HEARTBEAT_PERIOD_MS: function() {
-                    return l
+                    return u
                 },
                 DismissibleQuestContentFlags: function() {
                     return o.DismissibleQuestContentFlags
+                },
+                QuestVariants: function() {
+                    return l.QuestVariants
                 },
                 QuestsExperimentLocations: function() {
                     return r
@@ -184803,130 +184847,10 @@
             });
             var i, r, s = n("758846"),
                 a = n("70956"),
-                o = n("438954");
-            (i = r || (r = {})).ACTIVITY_PANEL = "quests_bar_activity_panel", i.QUESTS_MANAGER = "quests_manager", i.USER_SETTINGS_GIFT_INVENTORY = "user_settings_gift_inventory", i.USE_QUESTS = "use_quests", i.STREAM_SOURCE_SELECT = "stream_source_select", i.MEMBERS_LIST = "members_list", i.QUESTS_BAR = "quests_bar", i.REWARD_CODE_MODAL = "reward_code_modal", i.QUEST_PREVIEW_TOOL = "quest_preview_tool";
-            let l = a.default.Millis.MINUTE * s.Quests.ConsecutiveHeartbeatPeriodMinutes
-        },
-        57655: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                QuestBarExperiment: function() {
-                    return c
-                },
-                QuestBarExperimentVariants: function() {
-                    return r
-                },
-                getIsEligibleForQuests: function() {
-                    return l
-                },
-                isQuestPreviewToolEnabled: function() {
-                    return _
-                },
-                useIsEligibleForQuests: function() {
-                    return u
-                }
-            });
-            var i, r, s = n("211242"),
-                a = n("818083");
-            let o = (0, a.createExperiment)({
-                    id: "2023-12_quests",
-                    kind: "user",
-                    label: "Quests",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 0,
-                        label: "Control",
-                        config: {
-                            enabled: !1
-                        }
-                    }, {
-                        id: 1,
-                        label: "Quests enabled",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                }),
-                l = e => {
-                    let {
-                        location: t
-                    } = e, n = o.getCurrentConfig({
-                        location: t
-                    }, {
-                        autoTrackExposure: !1
-                    }), i = s.default.getCurrentConfig({
-                        location: t
-                    }, {
-                        autoTrackExposure: !1
-                    });
-                    return n.enabled && !i.paymentsBlocked
-                },
-                u = e => {
-                    let {
-                        location: t
-                    } = e, n = o.useExperiment({
-                        location: t
-                    }, {
-                        autoTrackExposure: !1
-                    }), i = s.default.useExperiment({
-                        location: t
-                    }, {
-                        autoTrackExposure: !1
-                    });
-                    return n.enabled && !i.paymentsBlocked
-                },
-                d = (0, a.createExperiment)({
-                    id: "2024-04_quest_preview_tool",
-                    kind: "user",
-                    label: "Quest Preview Tool",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 1,
-                        label: "Preview tool enabled",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                });
-
-            function _(e) {
-                let {
-                    location: t
-                } = e;
-                return d.getCurrentConfig({
-                    location: t
-                }, {
-                    autoTrackExposure: !1
-                }).enabled
-            }(i = r || (r = {}))[i.V1 = 0] = "V1", i[i.V2 = 1] = "V2";
-            let c = (0, a.createExperiment)({
-                id: "2024-05_quest_bar",
-                kind: "user",
-                label: "Quest Bar",
-                defaultConfig: {
-                    primaryVariant: 0,
-                    progressVariant: 0
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Quest Bar V2 with V1 Progress",
-                    config: {
-                        primaryVariant: 1,
-                        progressVariant: 0
-                    }
-                }, {
-                    id: 2,
-                    label: "Quest Bar V2",
-                    config: {
-                        primaryVariant: 1,
-                        progressVariant: 1
-                    }
-                }]
-            })
+                o = n("438954"),
+                l = n("670081");
+            (i = r || (r = {})).ACTIVITY_PANEL = "quests_bar_activity_panel", i.QUESTS_MANAGER = "quests_manager", i.USER_SETTINGS_GIFT_INVENTORY = "user_settings_gift_inventory", i.USE_QUESTS = "use_quests", i.STREAM_SOURCE_SELECT = "stream_source_select", i.MEMBERS_LIST = "members_list", i.QUESTS_BAR = "quests_bar", i.REWARD_CODE_MODAL = "reward_code_modal", i.QUEST_PREVIEW_TOOL = "quest_preview_tool", i.QUESTS_CARD = "quests_card";
+            let u = a.default.Millis.MINUTE * s.Quests.ConsecutiveHeartbeatPeriodMinutes
         },
         113434: function(e, t, n) {
             "use strict";
@@ -184962,11 +184886,11 @@
                 a = n("583434"),
                 o = n("706454"),
                 l = n("272008"),
-                u = n("57655"),
-                d = n("309562"),
-                _ = n("569984"),
-                c = n("497505"),
-                E = n("918701"),
+                u = n("569984"),
+                d = n("497505"),
+                _ = n("918701"),
+                c = n("977156"),
+                E = n("31055"),
                 I = n("46140");
 
             function T() {
@@ -184974,15 +184898,15 @@
                         fetchPolicy: "cache-only"
                     },
                     [t, n] = i.useState(!1),
-                    r = (0, s.useStateFromStoresArray)([_.default], () => [..._.default.quests.values()]),
+                    r = (0, s.useStateFromStoresArray)([u.default], () => [...u.default.quests.values()]),
                     {
                         isFetchingCurrentQuests: a,
                         lastFetchedCurrentQuests: o
-                    } = (0, s.useStateFromStoresObject)([_.default], () => ({
-                        isFetchingCurrentQuests: _.default.isFetchingCurrentQuests,
-                        lastFetchedCurrentQuests: _.default.lastFetchedCurrentQuests
+                    } = (0, s.useStateFromStoresObject)([u.default], () => ({
+                        isFetchingCurrentQuests: u.default.isFetchingCurrentQuests,
+                        lastFetchedCurrentQuests: u.default.lastFetchedCurrentQuests
                     })),
-                    d = (0, u.getIsEligibleForQuests)({
+                    d = (0, c.getIsEligibleForQuests)({
                         location: I.QuestsExperimentLocations.USE_QUESTS
                     });
                 return i.useEffect(() => {
@@ -184999,18 +184923,18 @@
                     isFetchingCurrentQuests: t
                 } = T({
                     fetchPolicy: "cache-only"
-                }), [n, s] = i.useState(() => new Map(e.map(e => [e.id, (0, E.isQuestExpired)(e)])));
+                }), [n, s] = i.useState(() => new Map(e.map(e => [e.id, (0, _.isQuestExpired)(e)])));
                 return i.useEffect(() => {
                     if (t) return;
                     let n = [];
                     for (let t of e)
-                        if (null == t || (0, E.isQuestExpired)(t)) null != t && (0, E.isQuestExpired)(t) && s(e => e.has(t.id) ? e : new Map(e).set(t.id, !0));
+                        if (null == t || (0, _.isQuestExpired)(t)) null != t && (0, _.isQuestExpired)(t) && s(e => e.has(t.id) ? e : new Map(e).set(t.id, !0));
                         else {
                             let e = new r.Timeout,
                                 i = () => {
                                     let r = Date.parse(t.config.expiresAt) - Date.now();
                                     e.start(r, () => {
-                                        (0, E.isQuestExpired)(t) ? s(e => new Map(e).set(t.id, !0)): i()
+                                        (0, _.isQuestExpired)(t) ? s(e => new Map(e).set(t.id, !0)): i()
                                     }), n.push(e)
                                 };
                             i()
@@ -185048,13 +184972,13 @@
                     if (t || 0 === e.length) return i;
                     for (let t of e) {
                         var r;
-                        if (!(0, E.includesTarget)(t, c.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE) || null !== (r = n.get(t.id)) && void 0 !== r && r) continue;
+                        if (!(0, _.includesTarget)(t, d.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE) || null !== (r = n.get(t.id)) && void 0 !== r && r) continue;
                         if ((null == t ? void 0 : t.userStatus) == null) {
                             i.push(t);
                             continue
                         }
                         let e = null != t.userStatus.claimedAt,
-                            s = (0, E.isDismissed)(t.userStatus, c.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE);
+                            s = (0, _.isDismissed)(t.userStatus, d.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE);
                         if (!e && !s) {
                             i.push(t);
                             continue
@@ -185067,22 +184991,22 @@
             function m() {
                 let e = A();
                 i.useEffect(() => {
-                    for (let t of e)(0, l.dismissQuestContent)(t.id, c.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE)
+                    for (let t of e)(0, l.dismissQuestContent)(t.id, d.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE)
                 }, [e])
             }
 
             function N(e) {
-                let t = (0, d.useIsEligibleForMembersListQuestEntrypoint)({
+                let t = (0, E.useIsEligibleForMembersListQuestEntrypoint)({
                         location: I.QuestsExperimentLocations.MEMBERS_LIST
                     }),
-                    n = (0, s.useStateFromStores)([_.default], () => t ? _.default.quests : null),
-                    r = i.useMemo(() => (0, E.getQuestsFromActivities)(n, e), [e, n]);
+                    n = (0, s.useStateFromStores)([u.default], () => t ? u.default.quests : null),
+                    r = i.useMemo(() => (0, _.getQuestsFromActivities)(n, e), [e, n]);
                 return S(r) ? null : r
             }
 
             function p(e) {
                 var t;
-                let n = (0, E.hasQuestCollectibleRewards)(e),
+                let n = (0, _.hasQuestCollectibleRewards)(e),
                     {
                         product: i,
                         isFetching: r
@@ -185093,52 +185017,6 @@
                     isFetching: r
                 }
             }
-        },
-        309562: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                useIsEligibleForMembersListQuestEntrypoint: function() {
-                    return a
-                }
-            });
-            var i = n("818083"),
-                r = n("57655");
-            let s = (0, i.createExperiment)({
-                    id: "2024-03_quests_members_list_entrypoint",
-                    kind: "user",
-                    label: "Quests Members List Entrypoint",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 0,
-                        label: "Control",
-                        config: {
-                            enabled: !1
-                        }
-                    }, {
-                        id: 1,
-                        label: "Quests Members List Entrypoint enabled",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                }),
-                a = e => {
-                    let {
-                        location: t,
-                        autoTrackExposure: n = !1
-                    } = e, i = (0, r.useIsEligibleForQuests)({
-                        location: t
-                    }), {
-                        enabled: a
-                    } = s.useExperiment({
-                        location: t
-                    }, {
-                        autoTrackExposure: n
-                    });
-                    return i && a
-                }
         },
         687744: function(e, t, n) {
             "use strict";
@@ -185713,7 +185591,8 @@
                                 gameTile: i.game_tile,
                                 logotype: i.logotype
                             },
-                            inGameQuestConfig: null
+                            inGameQuestConfig: null,
+                            variants: e.variants
                         }
                     }).with({
                         config_version: 2
@@ -185723,6 +185602,7 @@
                         getGameLink: e.get_game_link,
                         applicationId: e.application_id,
                         applicationName: e.application_name,
+                        variants: e.variants,
                         streamDurationRequirementMinutes: 0,
                         rewardCodeExpiresAt: "",
                         gameTitle: "",
@@ -185970,6 +185850,247 @@
                 })
             }
         },
+        432945: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getIsEligibleForActivityQuest: function() {
+                    return r
+                }
+            });
+            let i = (0, n("818083").createExperiment)({
+                    id: "2024-03_quests_activity_quest",
+                    kind: "user",
+                    label: "Activity Quest",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 0,
+                        label: "Control",
+                        config: {
+                            enabled: !1
+                        }
+                    }, {
+                        id: 1,
+                        label: "Activity Quest enabled",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                }),
+                r = e => {
+                    let {
+                        location: t,
+                        autoTrackExposure: n
+                    } = e;
+                    return i.getCurrentConfig({
+                        location: t
+                    }, {
+                        autoTrackExposure: n
+                    }).enabled
+                }
+        },
+        184309: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                isEligibleForQuestsClientMonitoring: function() {
+                    return r
+                }
+            });
+            let i = (0, n("818083").createExperiment)({
+                    id: "2024-03_quests_client_monitoring",
+                    kind: "user",
+                    label: "Quests client monitoring experiment",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 0,
+                        label: "disabled",
+                        config: {
+                            enabled: !1
+                        }
+                    }, {
+                        id: 1,
+                        label: "enabled",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                }),
+                r = e => i.getCurrentConfig({
+                    location: e
+                }, {
+                    autoTrackExposure: !1
+                }).enabled
+        },
+        977156: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                QuestBarExperiment: function() {
+                    return c
+                },
+                QuestBarExperimentVariants: function() {
+                    return r
+                },
+                getIsEligibleForQuests: function() {
+                    return l
+                },
+                isQuestPreviewToolEnabled: function() {
+                    return _
+                },
+                useIsEligibleForQuests: function() {
+                    return u
+                }
+            });
+            var i, r, s = n("211242"),
+                a = n("818083");
+            let o = (0, a.createExperiment)({
+                    id: "2023-12_quests",
+                    kind: "user",
+                    label: "Quests",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 0,
+                        label: "Control",
+                        config: {
+                            enabled: !1
+                        }
+                    }, {
+                        id: 1,
+                        label: "Quests enabled",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                }),
+                l = e => {
+                    let {
+                        location: t
+                    } = e, n = o.getCurrentConfig({
+                        location: t
+                    }, {
+                        autoTrackExposure: !1
+                    }), i = s.default.getCurrentConfig({
+                        location: t
+                    }, {
+                        autoTrackExposure: !1
+                    });
+                    return n.enabled && !i.paymentsBlocked
+                },
+                u = e => {
+                    let {
+                        location: t
+                    } = e, n = o.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: !1
+                    }), i = s.default.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: !1
+                    });
+                    return n.enabled && !i.paymentsBlocked
+                },
+                d = (0, a.createExperiment)({
+                    id: "2024-04_quest_preview_tool",
+                    kind: "user",
+                    label: "Quest Preview Tool",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Preview tool enabled",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                });
+
+            function _(e) {
+                let {
+                    location: t
+                } = e;
+                return d.getCurrentConfig({
+                    location: t
+                }, {
+                    autoTrackExposure: !1
+                }).enabled
+            }(i = r || (r = {}))[i.V1 = 0] = "V1", i[i.V2 = 1] = "V2";
+            let c = (0, a.createExperiment)({
+                id: "2024-05_quest_bar",
+                kind: "user",
+                label: "Quest Bar",
+                defaultConfig: {
+                    primaryVariant: 0,
+                    progressVariant: 0
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Quest Bar V2 with V1 Progress",
+                    config: {
+                        primaryVariant: 1,
+                        progressVariant: 0
+                    }
+                }, {
+                    id: 2,
+                    label: "Quest Bar V2",
+                    config: {
+                        primaryVariant: 1,
+                        progressVariant: 1
+                    }
+                }]
+            })
+        },
+        31055: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                useIsEligibleForMembersListQuestEntrypoint: function() {
+                    return a
+                }
+            });
+            var i = n("818083"),
+                r = n("977156");
+            let s = (0, i.createExperiment)({
+                    id: "2024-03_quests_members_list_entrypoint",
+                    kind: "user",
+                    label: "Quests Members List Entrypoint",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 0,
+                        label: "Control",
+                        config: {
+                            enabled: !1
+                        }
+                    }, {
+                        id: 1,
+                        label: "Quests Members List Entrypoint enabled",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                }),
+                a = e => {
+                    let {
+                        location: t,
+                        autoTrackExposure: n = !1
+                    } = e, i = (0, r.useIsEligibleForQuests)({
+                        location: t
+                    }), {
+                        enabled: a
+                    } = s.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: n
+                    });
+                    return i && a
+                }
+        },
         874137: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -185987,7 +186108,7 @@
                 d = n("797614"),
                 _ = n("451478"),
                 c = n("617136"),
-                E = n("145460"),
+                E = n("184309"),
                 I = n("981631");
 
             function T(e, t, n) {
@@ -186349,10 +186470,10 @@
                 u = n("938475"),
                 d = n("70956"),
                 _ = n("272008"),
-                c = n("718514"),
-                E = n("57655"),
-                I = n("569984"),
-                T = n("918701"),
+                c = n("569984"),
+                E = n("918701"),
+                I = n("432945"),
+                T = n("977156"),
                 f = n("46140"),
                 S = n("70722");
 
@@ -186383,7 +186504,7 @@
                 if ((null == n ? void 0 : n.id) == null) return null;
                 let i = l.default.getGameById(n.id);
                 if ((null == i ? void 0 : i.id) == null) return null;
-                let r = (0, T.getQuestByApplicationId)(I.default.quests, i.id);
+                let r = (0, E.getQuestByApplicationId)(c.default.quests, i.id);
                 return (null == r ? void 0 : null === (e = r.userStatus) || void 0 === e ? void 0 : e.enrolledAt) == null || (null == r ? void 0 : null === (t = r.userStatus) || void 0 === t ? void 0 : t.completedAt) != null ? null : r
             }
 
@@ -186399,11 +186520,11 @@
                     applicationId: r
                 } = e, {
                     channelId: o
-                } = (0, s.decodeStreamKey)(i), l = D(o), u = I.default.quests.get(n), d = null != a.default.getRTCStream(i) && (null === (t = L()) || void 0 === t ? void 0 : t.config.applicationId) === r && l && null != u && !(0, T.isQuestExpired)(u), {
+                } = (0, s.decodeStreamKey)(i), l = D(o), u = c.default.quests.get(n), d = null != a.default.getRTCStream(i) && (null === (t = L()) || void 0 === t ? void 0 : t.config.applicationId) === r && l && null != u && !(0, E.isQuestExpired)(u), {
                     quest: _,
-                    activity: c
-                } = M(), E = (null == _ ? void 0 : _.id) === n && (null == _ ? void 0 : _.config.applicationId) === r && l && (null == c ? void 0 : c.channelId) === o && !(0, T.isQuestExpired)(_);
-                return d || E
+                    activity: I
+                } = M(), T = (null == _ ? void 0 : _.id) === n && (null == _ ? void 0 : _.config.applicationId) === r && l && (null == I ? void 0 : I.channelId) === o && !(0, E.isQuestExpired)(_);
+                return d || T
             }
 
             function M(e) {
@@ -186411,14 +186532,14 @@
                     quest: null,
                     activity: null
                 };
-                if (!(0, c.getIsEligibleForActivityQuest)({
+                if (!(0, I.getIsEligibleForActivityQuest)({
                         location: f.QuestsExperimentLocations.QUESTS_MANAGER,
                         autoTrackExposure: !1
                     })) return t;
                 for (let a of r.default.getSelfEmbeddedActivities().values()) {
                     var n, i, s;
                     if (null != e && a.channelId !== e) continue;
-                    let r = null !== (s = (0, T.getQuestByApplicationId)(I.default.quests, a.applicationId)) && void 0 !== s ? s : null;
+                    let r = null !== (s = (0, E.getQuestByApplicationId)(c.default.quests, a.applicationId)) && void 0 !== s ? s : null;
                     if (null != r && (null == r ? void 0 : null === (n = r.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null && (null == r ? void 0 : null === (i = r.userStatus) || void 0 === i ? void 0 : i.completedAt) == null) return {
                         quest: r,
                         activity: a
@@ -186432,9 +186553,9 @@
             }
             class y extends i.default {
                 maybeFetchCurrentQuests() {
-                    (0, E.getIsEligibleForQuests)({
+                    (0, T.getIsEligibleForQuests)({
                         location: f.QuestsExperimentLocations.QUESTS_MANAGER
-                    }) && !I.default.isFetchingCurrentQuests && (0, _.fetchCurrentQuests)()
+                    }) && !c.default.isFetchingCurrentQuests && (0, _.fetchCurrentQuests)()
                 }
                 constructor(...e) {
                     super(...e), h(this, "instantiatedAt", Date.now()), h(this, "streamKeyToHeartbeatState", new Map), h(this, "optimisticProgressUpdateIntervalIds", new Map), h(this, "lastOptimisticallyUpdatedProgressMap", new Map), h(this, "questsInitialFetchTimerId", null), h(this, "questsRecurringFetchTimerId", null), h(this, "questsLastFetchAttemptedAt", 0), h(this, "initiateHeartbeat", e => {
@@ -186467,7 +186588,7 @@
                         };
                         r()
                     }), h(this, "calculateHeartbeatDurationMs", e => {
-                        let t = I.default.quests.get(e);
+                        let t = c.default.quests.get(e);
                         if (null == t || null == t.config || null == t.userStatus) return m;
                         let {
                             streamProgressSeconds: n
@@ -186563,7 +186684,7 @@
                         window.clearTimeout(this.questsInitialFetchTimerId), window.clearTimeout(this.questsRecurringFetchTimerId), this.questsRecurringFetchTimerId = window.setInterval(() => {
                             Date.now() - this.questsLastFetchAttemptedAt > R && (this.questsLastFetchAttemptedAt = Date.now(), this.maybeFetchCurrentQuests())
                         }, C), this.questsInitialFetchTimerId = window.setTimeout(() => {
-                            0 === I.default.lastFetchedCurrentQuests && this.maybeFetchCurrentQuests()
+                            0 === c.default.lastFetchedCurrentQuests && this.maybeFetchCurrentQuests()
                         }, Math.floor(Math.random() * p))
                     }), h(this, "handleSendHeartbeatSuccess", e => {
                         let {
@@ -186580,7 +186701,7 @@
                         } = e;
                         this.terminateOptimisticProgressUpdateInterval(t)
                     }), h(this, "handleRunningGamesChange", () => {
-                        !(this.instantiatedAt + A > Date.now() || I.default.lastFetchedCurrentQuests + A > Date.now()) && this.maybeFetchCurrentQuests()
+                        !(this.instantiatedAt + A > Date.now() || c.default.lastFetchedCurrentQuests + A > Date.now()) && this.maybeFetchCurrentQuests()
                     }), h(this, "handleVoiceStateChange", () => {
                         let e = a.default.getCurrentUserActiveStream(),
                             t = L();
@@ -193049,28 +193170,28 @@
             function a() {
                 return [{
                     value: "classic",
-                    label: "Discord Default",
-                    description: "Wumpus' Favorite",
+                    label: s.default.Messages.SOUNDPACK_DEFAULT_LABEL,
+                    description: s.default.Messages.SOUNDPACK_DEFAULT_DESCRIPTION,
                     requirePremium: !1
                 }, {
                     value: "retro",
-                    label: "Power up!",
-                    description: "Retro",
-                    requirePremium: !0
-                }, {
-                    value: "bop",
-                    label: "*hey you*",
-                    description: "BOP",
-                    requirePremium: !0
-                }, {
-                    value: "ducky",
-                    label: "Quack quack",
-                    description: "Ducky",
+                    label: s.default.Messages.SOUNDPACK_RETRO_LABEL,
+                    description: s.default.Messages.SOUNDPACK_RETRO_DESCRIPTION,
                     requirePremium: !0
                 }, {
                     value: "lofi",
-                    label: "Twinkle",
-                    description: "Lofi",
+                    label: s.default.Messages.SOUNDPACK_LOFI_LABEL,
+                    description: s.default.Messages.SOUNDPACK_LOFI_DESCRIPTION,
+                    requirePremium: !0
+                }, {
+                    value: "ducky",
+                    label: s.default.Messages.SOUNDPACK_DUCKY_LABEL,
+                    description: s.default.Messages.SOUNDPACK_DUCKY_DESCRIPTION,
+                    requirePremium: !0
+                }, {
+                    value: "bop",
+                    label: s.default.Messages.SOUNDPACK_BUBBLE_LABEL,
+                    description: s.default.Messages.SOUNDPACK_BUBBLE_DESCRIPTION,
                     requirePremium: !0
                 }]
             }
@@ -193083,7 +193204,7 @@
                     value: "detune",
                     label: s.default.Messages.SOUNDPACK_DETUNE_LABEL
                 }]
-            }(i = r || (r = {})).CLASSIC = "classic", i.DETUNE = "detune", i.RETRO = "retro", i.BOP = "bop", i.DUCKY = "ducky", i.LOFI = "lofi"
+            }(i = r || (r = {})).CLASSIC = "classic", i.DETUNE = "detune", i.RETRO = "retro", i.BUBBLE = "bop", i.DUCKY = "ducky", i.LOFI = "lofi"
         },
         474873: function(e, t, n) {
             "use strict";
@@ -193192,7 +193313,7 @@
                 [i.Soundpacks.RETRO]: {
                     message1: "bit_message1"
                 },
-                [i.Soundpacks.BOP]: {
+                [i.Soundpacks.BUBBLE]: {
                     message1: "bop_message1"
                 },
                 [i.Soundpacks.DUCKY]: {
@@ -204541,6 +204662,56 @@
                 })
             }
         },
+        822972: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return u
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("442837"),
+                s = n("481060"),
+                a = n("194359"),
+                o = n("699516"),
+                l = n("689938");
+
+            function u(e) {
+                let {
+                    user: t,
+                    color: n,
+                    location: u,
+                    onAction: d
+                } = e;
+                return !(0, r.useStateFromStores)([o.default], () => o.default.isFriend(t.id)) || t.isNonUserBot() ? null : (0, i.jsx)(s.MenuItem, {
+                    id: "remove-friend",
+                    color: n,
+                    label: l.default.Messages.REMOVE_FRIEND,
+                    action: () => {
+                        (0, s.openModal)(e => (0, i.jsx)(s.ConfirmModal, {
+                            header: l.default.Messages.REMOVE_FRIEND_TITLE.format({
+                                name: t.username
+                            }),
+                            confirmText: l.default.Messages.REMOVE_FRIEND,
+                            cancelText: l.default.Messages.CANCEL,
+                            onConfirm: () => {
+                                null == d || d(), a.default.removeFriend(t.id, null != u ? {
+                                    location: u
+                                } : void 0)
+                            },
+                            ...e,
+                            children: (0, i.jsx)(s.Text, {
+                                variant: "text-md/normal",
+                                children: l.default.Messages.REMOVE_FRIEND_BODY.format({
+                                    name: t.username
+                                })
+                            })
+                        }))
+                    }
+                })
+            }
+        },
         622724: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -206354,7 +206525,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return N
+                    return m
                 }
             });
             var i = n("735250");
@@ -206363,34 +206534,34 @@
                 s = n.n(r),
                 a = n("481060"),
                 o = n("315263"),
-                l = n("40851"),
-                u = n("100527"),
-                d = n("906732"),
-                _ = n("617136"),
-                c = n("497505"),
-                E = n("626135"),
-                I = n("785717"),
-                T = n("221292"),
-                f = n("290421"),
-                S = n("228168"),
-                h = n("981631"),
-                A = n("689938"),
-                m = n("104018");
+                l = n("100527"),
+                u = n("906732"),
+                d = n("617136"),
+                _ = n("497505"),
+                c = n("626135"),
+                E = n("785717"),
+                I = n("221292"),
+                T = n("290421"),
+                f = n("228168"),
+                S = n("981631"),
+                h = n("689938"),
+                A = n("104018");
 
-            function N(e) {
+            function m(e) {
                 let {
                     badges: t,
                     className: n,
-                    badgeClassName: r
+                    badgeClassName: r,
+                    onClose: m
                 } = e, {
                     analyticsLocations: N
-                } = (0, d.default)(u.default.BADGE), {
+                } = (0, u.default)(l.default.BADGE), {
                     trackUserProfileAction: p,
                     ...O
-                } = (0, I.useUserProfileAnalyticsContext)(), R = (0, l.useWindowDispatch)();
+                } = (0, E.useUserProfileAnalyticsContext)();
                 return (0, i.jsx)("div", {
-                    className: s()(m.container, n),
-                    "aria-label": A.default.Messages.PROFILE_USER_BADGES,
+                    className: s()(A.container, n),
+                    "aria-label": h.default.Messages.PROFILE_USER_BADGES,
                     role: "group",
                     children: t.map(e => (0, i.jsx)(a.TooltipContainer, {
                         text: e.description,
@@ -206398,7 +206569,7 @@
                             onClick: t => {
                                 p({
                                     action: "PRESS_BADGE"
-                                }), (0, T.trackUserProfileBadgePressed)({
+                                }), (0, I.trackUserProfileBadgePressed)({
                                     badge: e.id,
                                     analyticsLocations: N,
                                     ...O
@@ -206406,14 +206577,14 @@
                                 let n = null != e.link ? (0, o.default)(e.link, {
                                     analyticsLocations: N
                                 }) : null;
-                                if (null != n) return R.dispatch(h.ComponentActions.POPOUT_CLOSE), n(t)
+                                if (null != n) return null == m || m(), n(t)
                             },
                             onMouseEnter: () => {
-                                e.id === f.QUEST_COMPLETED_BADGE && E.default.track(h.AnalyticEvents.QUEST_CONTENT_VIEWED, {
-                                    ...(0, _.getContentProperties)(c.QuestContent.QUEST_BADGE)
+                                e.id === T.QUEST_COMPLETED_BADGE && c.default.track(S.AnalyticEvents.QUEST_CONTENT_VIEWED, {
+                                    ...(0, d.getContentProperties)(_.QuestContent.QUEST_BADGE)
                                 }), p({
                                     action: "HOVER_BADGE"
-                                }), (0, T.trackUserProfileBadgeHovered)({
+                                }), (0, I.trackUserProfileBadgeHovered)({
                                     badge: e.id,
                                     analyticsLocations: N,
                                     ...O
@@ -206423,8 +206594,8 @@
                             children: (0, i.jsx)("img", {
                                 alt: " ",
                                 "aria-hidden": !0,
-                                src: (0, S.getBadgeAsset)(e.icon),
-                                className: s()(m.badge, r)
+                                src: (0, f.getBadgeAsset)(e.icon),
+                                className: s()(A.badge, r)
                             })
                         })
                     }, e.id))
@@ -207436,7 +207607,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 UserProfileCustomStatusBubble: function() {
-                    return d
+                    return _
                 }
             });
             var i = n("735250");
@@ -207446,54 +207617,80 @@
                 a = n("481060"),
                 o = n("596454"),
                 l = n("788307"),
-                u = n("181196");
+                u = n("228168"),
+                d = n("181196");
 
-            function d(e) {
+            function _(e) {
                 let {
-                    positionStyle: t,
-                    statusActivity: n,
+                    statusActivity: t,
+                    profileType: n,
                     animate: r = !0,
-                    hideTooltip: d = !1
+                    hideTooltip: _ = !1
                 } = e, {
-                    emoji: _
-                } = n, c = null != _, E = null != n.state && "" !== n.state ? n.state : null, I = null != E && E.length > 0;
-                if (!c && !I) return null;
-                let T = I ? Math.floor(E.length / 30) + 1 : 1,
-                    f = s()(u.statusBubbleOuter, {
-                        [u.statusBubbleSingleLineShape]: 1 === T,
-                        [u.statusBubbleMultiLineShape]: T > 1,
-                        [u.statusBubbleOuterMaxLinePadding]: T >= 3,
-                        [u.statusBubbleOuterMaxLinePositioningOffset]: T >= 3
+                    emoji: c
+                } = t, E = null != c, I = null != t.state && "" !== t.state ? t.state : null, T = null != I && I.length > 0;
+                if (!E && !T) return null;
+                let f = T ? Math.floor(I.length / 34) + 1 : 1,
+                    S = () => E ? !T || T && 1 === f ? (0, i.jsx)(l.ActivityEmoji, {
+                        className: d.singleLineStatusEmoji,
+                        emoji: c,
+                        animate: r,
+                        hideTooltip: _
+                    }) : (0, i.jsx)(o.default, {
+                        className: d.multiLineStatusEmoji,
+                        emojiId: c.id,
+                        emojiName: c.name,
+                        animated: !!c.animated
+                    }) : null,
+                    h = () => T ? (0, i.jsx)(a.Text, {
+                        variant: "text-sm/medium",
+                        className: d.statusText,
+                        children: I
+                    }) : null,
+                    A = s()(d.positionStyle, {
+                        [d.biteSize]: n === u.UserProfileTypes.BITE_SIZE,
+                        [d.fullSize]: n === u.UserProfileTypes.FULL_SIZE
                     }),
-                    S = s()(u.statusBubble, {
-                        [u.statusBubbleSingleLineEmojiOnly]: c && !I,
-                        [u.statusBubbleSingleLineTextOrMixed]: 1 === T && I,
-                        [u.statusBubbleMultiLinePadding]: T > 1 && T < 3,
-                        [u.statusBubbleMaxLinePadding]: T >= 3,
-                        [u.statusBubbleSingleLineShape]: 1 === T,
-                        [u.statusBubbleMultiLineShape]: T > 1
+                    m = s()(d.statusBubbleOuter, {
+                        [d.statusBubbleSingleLineWithEmojiShape]: 1 === f && E,
+                        [d.statusBubbleSingleLineTextOnlyShape]: 1 === f && !E,
+                        [d.statusBubbleMultiLineShape]: f > 1,
+                        [d.statusBubbleOuterMaxLine]: f >= 3
+                    }),
+                    N = s()(d.statusBubble, {
+                        [d.statusBubbleSingleLineWithEmojiShape]: 1 === f && E,
+                        [d.statusBubbleSingleLineTextOnlyShape]: 1 === f && !E,
+                        [d.statusBubbleMultiLineShape]: f > 1,
+                        [d.statusBubbleSingleLineWithEmoji]: 1 === f && E,
+                        [d.statusBubbleSingleLineTextOnly]: 1 === f && !E,
+                        [d.statusBubbleMultiLinePadding]: f > 1 && f < 3,
+                        [d.statusBubbleMaxLinePadding]: f >= 3
                     });
-                return (0, i.jsx)("div", {
-                    className: t,
+                if (n === u.UserProfileTypes.FULL_SIZE) return (0, i.jsx)("div", {
+                    className: A,
                     children: (0, i.jsx)("div", {
-                        className: f,
+                        className: m,
                         children: (0, i.jsxs)("span", {
-                            className: S,
-                            children: [c ? I ? (0, i.jsx)(o.default, {
-                                className: u.inlineStatusEmoji,
-                                emojiId: _.id,
-                                emojiName: _.name,
-                                animated: !!_.animated
-                            }) : (0, i.jsx)(l.ActivityEmoji, {
-                                className: u.soloStatusEmoji,
-                                emoji: _,
-                                animate: r,
-                                hideTooltip: d
-                            }) : null, I ? (0, i.jsx)(a.Text, {
-                                variant: "text-sm/medium",
-                                className: u.statusText,
-                                children: E
-                            }) : null]
+                            className: N,
+                            children: [S(), h()]
+                        })
+                    })
+                });
+                let p = s()({
+                    [d.statusBubbleSingleLineWithEmojiBottomMargin]: 1 === f && E,
+                    [d.statusBubbleSingleLineTextOnlyBottomMargin]: 1 === f && !E,
+                    [d.statusBubbleMultiLineMaxLineBottomMargin]: f > 1
+                });
+                return (0, i.jsx)("div", {
+                    className: p,
+                    children: (0, i.jsx)("div", {
+                        className: A,
+                        children: (0, i.jsx)("div", {
+                            className: m,
+                            children: (0, i.jsxs)("span", {
+                                className: N,
+                                children: [S(), h()]
+                            })
                         })
                     })
                 })
@@ -207850,13 +208047,15 @@
 
             function l(e) {
                 let {
-                    displayProfile: t
-                } = e, n = (0, s.default)(t);
-                return 0 === n.length ? null : (0, i.jsx)(i.Fragment, {
-                    children: (0, r.chunk)(n, 12).map(e => (0, i.jsx)(a.default, {
+                    displayProfile: t,
+                    onClose: n
+                } = e, l = (0, s.default)(t);
+                return 0 === l.length ? null : (0, i.jsx)(i.Fragment, {
+                    children: (0, r.chunk)(l, 12).map(e => (0, i.jsx)(a.default, {
                         badges: e,
                         className: o.badgeList,
-                        badgeClassName: o.badge
+                        badgeClassName: o.badge,
+                        onClose: n
                     }, e[0].id))
                 })
             }
@@ -207974,7 +208173,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return h
+                    return m
                 }
             });
             var i = n("735250");
@@ -207985,81 +208184,90 @@
                 o = n("97910"),
                 l = n("481060"),
                 u = n("194359"),
-                d = n("314897"),
-                _ = n("699516"),
-                c = n("465670"),
-                E = n("782089"),
-                I = n("785717"),
-                T = n("537387"),
-                f = n("981631"),
-                S = n("689938");
+                d = n("906732"),
+                _ = n("822972"),
+                c = n("314897"),
+                E = n("699516"),
+                I = n("465670"),
+                T = n("782089"),
+                f = n("785717"),
+                S = n("537387"),
+                h = n("981631"),
+                A = n("689938");
 
-            function h(e) {
+            function m(e) {
                 let {
                     user: t,
-                    friendToken: h
+                    friendToken: n
                 } = e, {
-                    trackUserProfileAction: A
-                } = (0, I.useUserProfileAnalyticsContext)(), m = (0, r.useStateFromStores)([d.default], () => d.default.getId() === (null == t ? void 0 : t.id)), N = (0, r.useStateFromStores)([_.default], () => null != t ? _.default.getRelationshipType(t.id) : f.RelationshipTypes.NONE);
-                return null == t || t.bot || m || N === f.RelationshipTypes.BLOCKED ? null : N === f.RelationshipTypes.FRIEND ? (0, i.jsx)(T.default, {
-                    icon: a.UserCheckIcon,
-                    text: S.default.Messages.FRIENDS,
-                    onClick: () => (function(e) {
-                        let t = () => {
-                            A({
-                                action: "REMOVE_FRIEND"
-                            }), u.default.removeFriend(e.id, {
-                                location: "UserProfileFriendRequestButtons"
-                            })
-                        };
-                        (0, l.openModalLazy)(async () => {
-                            let {
-                                default: r
-                            } = await n.e("69938").then(n.bind(n, "637697"));
-                            return n => (0, i.jsx)(r, {
-                                user: e,
-                                onConfirmRemoveFriend: t,
-                                ...n
-                            })
+                    trackUserProfileAction: m
+                } = (0, f.useUserProfileAnalyticsContext)(), N = (0, r.useStateFromStores)([c.default], () => c.default.getId() === (null == t ? void 0 : t.id)), p = (0, r.useStateFromStores)([E.default], () => null != t ? E.default.getRelationshipType(t.id) : h.RelationshipTypes.NONE), {
+                    analyticsLocations: O,
+                    newestAnalyticsLocation: R
+                } = (0, d.default)(), C = (0, _.default)({
+                    user: t,
+                    color: "danger",
+                    location: R,
+                    onAction: () => m({
+                        action: "REMOVE_FRIEND",
+                        analyticsLocations: O
+                    })
+                });
+                return null == t || t.bot || N || p === h.RelationshipTypes.BLOCKED ? null : p === h.RelationshipTypes.FRIEND ? (0, i.jsx)(l.Popout, {
+                    renderPopout: e => {
+                        let {
+                            closePopout: t
+                        } = e;
+                        return (0, i.jsx)(l.Menu, {
+                            navId: "user-profile-friend-request-buttons",
+                            onSelect: void 0,
+                            onClose: t,
+                            "aria-label": A.default.Messages.FRIEND_ACTIONS_MENU_LABEL,
+                            children: C
                         })
-                    })(t)
-                }) : N === f.RelationshipTypes.PENDING_INCOMING ? (0, i.jsxs)(i.Fragment, {
-                    children: [(0, i.jsx)(T.default, {
+                    },
+                    children: e => (0, i.jsx)(S.default, {
+                        icon: a.UserCheckIcon,
+                        text: A.default.Messages.FRIENDS,
+                        ...e
+                    })
+                }) : p === h.RelationshipTypes.PENDING_INCOMING ? (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)(S.default, {
                         icon: e => (0, i.jsx)(s.CheckmarkLargeIcon, {
                             ...e,
                             color: l.tokens.colors.TEXT_BRAND
                         }),
-                        text: S.default.Messages.ACCEPT_FRIEND_REQUEST,
+                        text: A.default.Messages.ACCEPT_FRIEND_REQUEST,
                         onClick: () => {
-                            A({
+                            m({
                                 action: "ACCEPT_FRIEND_REQUEST"
                             }), u.default.addRelationship({
                                 userId: t.id,
-                                friendToken: h
+                                friendToken: n
                             })
                         }
-                    }), (0, i.jsx)(T.default, {
-                        icon: c.default,
-                        text: S.default.Messages.IGNORE_FRIEND_REQUEST,
+                    }), (0, i.jsx)(S.default, {
+                        icon: I.default,
+                        text: A.default.Messages.IGNORE_FRIEND_REQUEST,
                         onClick: () => {
-                            A({
+                            m({
                                 action: "IGNORE_FRIEND_REQUEST"
                             }), u.default.cancelFriendRequest(t.id)
                         }
                     })]
-                }) : N === f.RelationshipTypes.PENDING_OUTGOING ? (0, i.jsx)(T.default, {
+                }) : p === h.RelationshipTypes.PENDING_OUTGOING ? (0, i.jsx)(S.default, {
                     icon: o.UserClockIcon,
-                    text: S.default.Messages.REQUEST_SENT,
+                    text: A.default.Messages.REQUEST_SENT,
                     disabled: !0
-                }) : (0, i.jsx)(T.default, {
-                    icon: E.default,
-                    text: S.default.Messages.ADD_FRIEND,
+                }) : (0, i.jsx)(S.default, {
+                    icon: T.default,
+                    text: A.default.Messages.ADD_FRIEND,
                     onClick: () => {
-                        A({
+                        m({
                             action: "SEND_FRIEND_REQUEST"
                         }), u.default.addRelationship({
                             userId: t.id,
-                            friendToken: h
+                            friendToken: n
                         })
                     }
                 })
@@ -210113,7 +210321,8 @@
                         }),
                         pronouns: null == N ? void 0 : N.pronouns,
                         tags: (0, i.jsx)(E.UserProfileBadgesTag, {
-                            displayProfile: N
+                            displayProfile: N,
+                            onClose: C
                         }),
                         nicknameIcon: g && !v ? (0, i.jsx)(_.default, {
                             user: t,
@@ -210135,7 +210344,9 @@
                         guild: p,
                         onOpenProfile: () => O(!1)
                     }), D && (0, i.jsx)(S.default, {
-                        user: t
+                        user: t,
+                        channelId: R,
+                        onClose: C
                     }), (0, i.jsx)(I.default, {
                         type: "action",
                         user: t,
@@ -210149,31 +210360,97 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return o
+                    return m
                 }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("648996"),
-                s = n("785717"),
-                a = n("804384");
+            }), n("411104"), n("47120");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("442837"),
+                a = n("493683"),
+                o = n("904245"),
+                l = n("906732"),
+                u = n("541716"),
+                d = n("752305"),
+                _ = n("893718"),
+                c = n("957730"),
+                E = n("592125"),
+                I = n("51144"),
+                T = n("838440"),
+                f = n("785717"),
+                S = n("689938"),
+                h = n("804384");
+            let A = async e => {
+                let {
+                    userId: t,
+                    content: n,
+                    location: i
+                } = e, {
+                    valid: r,
+                    failureReason: s
+                } = await (0, T.applyChatRestrictions)({
+                    type: u.ChatInputTypes.NORMAL,
+                    content: n,
+                    channel: null
+                });
+                if (!r) throw Error(s);
+                let l = await a.default.openPrivateChannel(t, !1, !1, i),
+                    d = E.default.getChannel(l);
+                if (null == d) throw Error("Failed to open private channel");
+                let _ = c.default.parse(d, n);
+                return o.default.sendMessage(d.id, _)
+            };
 
-            function o(e) {
+            function m(e) {
                 let {
                     user: t,
-                    onClose: n
+                    channelId: n,
+                    onClose: a
                 } = e, {
-                    trackUserProfileAction: o
-                } = (0, s.useUserProfileAnalyticsContext)();
-                return (0, i.jsx)(r.default, {
-                    className: a.messageInputContainer,
-                    inputClassName: a.messageInput,
-                    user: t,
-                    autoFocus: !0,
-                    onSend: () => {
-                        o({
-                            action: "SEND_DIRECT_MESSAGE"
-                        }), null == n || n()
+                    newestAnalyticsLocation: o
+                } = (0, l.default)(), {
+                    trackUserProfileAction: c
+                } = (0, f.useUserProfileAnalyticsContext)(), T = (0, s.useStateFromStores)([E.default], () => E.default.getChannel(n)), [m, N] = r.useState(""), [p, O] = r.useState((0, d.toRichValue)(m)), R = r.useRef(!1);
+                return null == T ? null : (0, i.jsx)(_.default, {
+                    innerClassName: h.inner,
+                    editorClassName: h.editor,
+                    type: u.ChatInputTypes.USER_PROFILE,
+                    placeholder: S.default.Messages.QUICK_DM_USER.format({
+                        name: I.default.getName(t)
+                    }),
+                    channel: T,
+                    textValue: m,
+                    richValue: p,
+                    onChange: (e, t, n) => {
+                        t !== m && (N(t), O(n))
+                    },
+                    focused: R.current,
+                    onFocus: () => {
+                        R.current = !0
+                    },
+                    onBlur: () => {
+                        R.current = !1
+                    },
+                    onSubmit: async e => {
+                        let {
+                            value: n
+                        } = e;
+                        try {
+                            return c({
+                                action: "SEND_DIRECT_MESSAGE"
+                            }), await A({
+                                userId: t.id,
+                                content: n.trim(),
+                                location: o
+                            }), null == a || a(), {
+                                shouldClear: !0,
+                                shouldRefocus: !1
+                            }
+                        } catch {
+                            return {
+                                shouldClear: !1,
+                                shouldRefocus: !1
+                            }
+                        }
                     }
                 })
             }
@@ -210256,8 +210533,8 @@
                         hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null,
                         profileType: E.UserProfileTypes.BITE_SIZE
                     }), null != N && (0, i.jsx)(_.UserProfileCustomStatusBubble, {
-                        positionStyle: f.statusBubblePosition,
-                        statusActivity: N
+                        statusActivity: N,
+                        profileType: E.UserProfileTypes.BITE_SIZE
                     })]
                 })
             }
@@ -210310,17 +210587,16 @@
                     if ("number" != typeof E) throw Error("Unexpected null width");
                     let e = 0,
                         t = 0,
-                        n = E - 32,
-                        i = n - 32;
-                    for (let r = 0; r < 2; r++) {
+                        n = E - 32;
+                    for (let i = 0; i < 2; i++) {
                         t = 0;
-                        let s = 1 === r ? i : n;
+                        let r = 1 === i ? n : E;
                         for (let n = e; n < g.length; n++) {
                             let i = g[n],
-                                r = p.current[i.id];
-                            if (null != r) {
-                                if ((t += r.offsetWidth + 4) > s) break;
-                                e++
+                                s = p.current[i.id];
+                            if (null != s) {
+                                if ((t += s.offsetWidth) > r) break;
+                                t += 4, e++
                             }
                         }
                     }
@@ -229968,45 +230244,46 @@
                 y = n("248062"),
                 P = n("227196"),
                 U = n("294473"),
-                b = n("836157"),
-                G = n("166884"),
-                w = n("924371"),
-                B = n("894180"),
-                k = n("86614"),
-                V = n("498600"),
-                x = n("631610"),
-                F = n("951958"),
-                H = n("529558"),
-                Y = n("636458"),
-                j = n("441167"),
-                W = n("338336"),
-                K = n("751571"),
-                z = n("815016"),
-                X = n("725380"),
-                Q = n("581883"),
-                q = n("626135"),
-                Z = n("12647"),
-                J = n("70956"),
-                $ = n("358085"),
-                ee = n("960048"),
-                et = n("998502"),
-                en = n("13140"),
-                ei = n("314897"),
-                er = n("967368"),
-                es = n("463395"),
-                ea = n("592125"),
-                eo = n("828695"),
-                el = n("858340"),
-                eu = n("19780"),
-                ed = n("631768"),
-                e_ = n("981631"),
-                ec = n("70722"),
-                eE = n("761274"),
-                eI = n("526761"),
-                eT = n("65154"),
-                ef = n("689938");
+                b = n("706629"),
+                G = n("836157"),
+                w = n("166884"),
+                B = n("924371"),
+                k = n("894180"),
+                V = n("86614"),
+                x = n("498600"),
+                F = n("631610"),
+                H = n("951958"),
+                Y = n("529558"),
+                j = n("636458"),
+                W = n("441167"),
+                K = n("338336"),
+                z = n("751571"),
+                X = n("815016"),
+                Q = n("725380"),
+                q = n("581883"),
+                Z = n("626135"),
+                J = n("12647"),
+                $ = n("70956"),
+                ee = n("358085"),
+                et = n("960048"),
+                en = n("998502"),
+                ei = n("13140"),
+                er = n("314897"),
+                es = n("967368"),
+                ea = n("463395"),
+                eo = n("592125"),
+                el = n("828695"),
+                eu = n("858340"),
+                ed = n("19780"),
+                e_ = n("631768"),
+                ec = n("981631"),
+                eE = n("70722"),
+                eI = n("761274"),
+                eT = n("526761"),
+                ef = n("65154"),
+                eS = n("689938");
 
-            function eS(e, t, n) {
+            function eh(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -230014,21 +230291,21 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let eh = new g.default("MediaEngineStore");
+            let eA = new g.default("MediaEngineStore");
             (u = o || (o = {}))[u.DETACHED = 0] = "DETACHED", u[u.WAITING = 1] = "WAITING", u[u.ATTACHED = 2] = "ATTACHED", u[u.STARTED = 3] = "STARTED", u[u.PLAYING = 4] = "PLAYING", u[u.SILENCE = 5] = "SILENCE";
-            let eA = "MediaEngineStore",
-                em = {
+            let em = "MediaEngineStore",
+                eN = {
                     left: 1,
                     right: 1
                 },
-                eN = 5 * J.default.Millis.SECOND;
+                ep = 5 * $.default.Millis.SECOND;
 
-            function ep() {
+            function eO() {
                 return {
-                    mode: e_.InputModes.VOICE_ACTIVITY,
+                    mode: ec.InputModes.VOICE_ACTIVITY,
                     modeOptions: {
                         threshold: -60,
-                        autoThreshold: $.isPlatformEmbedded || __OVERLAY__,
+                        autoThreshold: ee.isPlatformEmbedded || __OVERLAY__,
                         vadUseKrisp: !0,
                         vadLeading: 5,
                         vadTrailing: 25,
@@ -230056,14 +230333,14 @@
                     videoToggleStateMap: {},
                     localVolumes: {},
                     localPans: {},
-                    inputVolume: eT.DEFAULT_VOLUME,
-                    outputVolume: eT.DEFAULT_VOLUME,
-                    inputDeviceId: eT.DEFAULT_DEVICE_ID,
-                    outputDeviceId: eT.DEFAULT_DEVICE_ID,
-                    videoDeviceId: eT.DEFAULT_DEVICE_ID,
+                    inputVolume: ef.DEFAULT_VOLUME,
+                    outputVolume: ef.DEFAULT_VOLUME,
+                    inputDeviceId: ef.DEFAULT_DEVICE_ID,
+                    outputDeviceId: ef.DEFAULT_DEVICE_ID,
+                    videoDeviceId: ef.DEFAULT_DEVICE_ID,
                     qos: !1,
                     qosMigrated: !1,
-                    videoHook: eO.supports(eT.Features.VIDEO_HOOK),
+                    videoHook: eR.supports(ef.Features.VIDEO_HOOK),
                     experimentalSoundshare2: null,
                     openH264: !0,
                     h265Enabled: !0,
@@ -230071,66 +230348,66 @@
                     aecDumpEnabled: !1
                 }
             }
-            let eO = (0, S.initializeMediaEngine)((0, S.determineMediaEngine)()),
-                eR = {},
-                eC = new Set([eT.MediaEngineContextTypes.DEFAULT]),
-                eg = eO.supports(eT.Features.AUTO_ENABLE),
-                eL = !1,
-                eD = eT.MediaEngineContextTypes.STREAM,
-                ev = {
-                    [eT.DEFAULT_DEVICE_ID]: ta(ef.default.Messages.NO_INPUT_DEVICES)
-                },
+            let eR = (0, S.initializeMediaEngine)((0, S.determineMediaEngine)()),
+                eC = {},
+                eg = new Set([ef.MediaEngineContextTypes.DEFAULT]),
+                eL = eR.supports(ef.Features.AUTO_ENABLE),
+                eD = !1,
+                ev = ef.MediaEngineContextTypes.STREAM,
                 eM = {
-                    [eT.DEFAULT_DEVICE_ID]: ta(ef.default.Messages.NO_OUTPUT_DEVICES)
+                    [ef.DEFAULT_DEVICE_ID]: to(eS.default.Messages.NO_INPUT_DEVICES)
                 },
                 ey = {
-                    [eT.DEFAULT_DEVICE_ID]: ta(ef.default.Messages.NO_VIDEO_DEVICES)
+                    [ef.DEFAULT_DEVICE_ID]: to(eS.default.Messages.NO_OUTPUT_DEVICES)
                 },
-                eP = !1,
+                eP = {
+                    [ef.DEFAULT_DEVICE_ID]: to(eS.default.Messages.NO_VIDEO_DEVICES)
+                },
                 eU = !1,
                 eb = !1,
                 eG = !1,
                 ew = !1,
-                eB = eT.DISABLED_DEVICE_ID,
-                ek = !1,
+                eB = !1,
+                ek = ef.DISABLED_DEVICE_ID,
                 eV = !1,
                 ex = !1,
                 eF = !1,
-                eH = null,
-                eY = !1,
+                eH = !1,
+                eY = null,
                 ej = !1,
                 eW = !1,
                 eK = !1,
                 ez = !1,
-                eX = null,
-                eQ = !1,
+                eX = !1,
+                eQ = null,
                 eq = !1,
-                eZ = !1;
-            K.default.hasPermission(eE.NativePermissionTypes.AUDIO, {
+                eZ = !1,
+                eJ = !1;
+            z.default.hasPermission(eI.NativePermissionTypes.AUDIO, {
                 showAuthorizationError: !1
-            }), K.default.hasPermission(eE.NativePermissionTypes.CAMERA, {
+            }), z.default.hasPermission(eI.NativePermissionTypes.CAMERA, {
                 showAuthorizationError: !1
             });
-            let eJ = new Set,
-                e$ = !1,
+            let e$ = new Set,
                 e0 = !1,
-                e1 = {},
+                e1 = !1,
                 e2 = {},
-                e3 = 5 * J.default.Millis.SECOND;
+                e3 = {},
+                e4 = 5 * $.default.Millis.SECOND;
 
-            function e4() {
-                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eT.MediaEngineContextTypes.DEFAULT,
-                    t = eR[e];
-                return null == t && (t = ep(), eR[e] = t), t
+            function e6() {
+                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ef.MediaEngineContextTypes.DEFAULT,
+                    t = eC[e];
+                return null == t && (t = eO(), eC[e] = t), t
             }
 
-            function e6(e) {
-                let t = e4(e.context);
+            function e7(e) {
+                let t = e6(e.context);
                 e.setInputMode(t.mode, {
                     vadThreshold: t.modeOptions.threshold,
                     vadAutoThreshold: t.modeOptions.autoThreshold,
                     vadUseKrisp: t.modeOptions.vadUseKrisp && function() {
-                        return ez || !1
+                        return eX || !1
                     }(),
                     vadLeading: t.modeOptions.vadLeading,
                     vadTrailing: t.modeOptions.vadTrailing,
@@ -230138,15 +230415,15 @@
                 })
             }
 
-            function e7(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eT.DEFAULT_VOLUME;
+            function e5(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : ef.DEFAULT_VOLUME;
                 return E().clamp(e, 0, t)
             }
 
-            function e5(e) {
-                let t = e4(e.context),
-                    i = !eg || t.mute || t.deaf;
-                e.context === eT.MediaEngineContextTypes.DEFAULT ? i = i || eP || eU || eb || !K.default.didHavePermission(eE.NativePermissionTypes.AUDIO) : e.context === eT.MediaEngineContextTypes.STREAM && (i = !0), e.setSelfMute(i), e.setSelfDeaf(t.deaf),
+            function e8(e) {
+                let t = e6(e.context),
+                    i = !eL || t.mute || t.deaf;
+                e.context === ef.MediaEngineContextTypes.DEFAULT ? i = i || eU || eb || eG || !z.default.didHavePermission(eI.NativePermissionTypes.AUDIO) : e.context === ef.MediaEngineContextTypes.STREAM && (i = !0), e.setSelfMute(i), e.setSelfDeaf(t.deaf),
                     function(e) {
                         Promise.resolve().then(n.bind(n, "44744")).then(t => {
                             let {
@@ -230157,12 +230434,12 @@
                     }(e.context)
             }
 
-            function e8() {
+            function e9() {
                 var e, t, n;
-                let r = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ew,
+                let r = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eB,
                     a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s,
                     o = s;
-                if ((null == o ? void 0 : o.desktopSource) != null && o.desktopSource.id !== (null == a ? void 0 : null === (e = a.desktopSource) || void 0 === e ? void 0 : e.id) && (null != o.desktopSource.soundshareId && (0, $.isWindows)() && p.cancelAttachToProcess(o.desktopSource.soundshareId), eO.setGoLiveSource(null, eD)), (null == o ? void 0 : o.cameraSource) != null && (o.cameraSource.videoDeviceGuid !== (null == a ? void 0 : null === (t = a.cameraSource) || void 0 === t ? void 0 : t.videoDeviceGuid) || o.cameraSource.audioDeviceGuid !== (null == a ? void 0 : null === (n = a.cameraSource) || void 0 === n ? void 0 : n.audioDeviceGuid)) && eO.setGoLiveSource(null, eD), (ew || r) && (eB = (ew = r) ? tl(ey, e4().videoDeviceId) : eT.DISABLED_DEVICE_ID, eO.setVideoInputDevice(eB)), s = a, null != a) {
+                if ((null == o ? void 0 : o.desktopSource) != null && o.desktopSource.id !== (null == a ? void 0 : null === (e = a.desktopSource) || void 0 === e ? void 0 : e.id) && (null != o.desktopSource.soundshareId && (0, ee.isWindows)() && p.cancelAttachToProcess(o.desktopSource.soundshareId), eR.setGoLiveSource(null, ev)), (null == o ? void 0 : o.cameraSource) != null && (o.cameraSource.videoDeviceGuid !== (null == a ? void 0 : null === (t = a.cameraSource) || void 0 === t ? void 0 : t.videoDeviceGuid) || o.cameraSource.audioDeviceGuid !== (null == a ? void 0 : null === (n = a.cameraSource) || void 0 === n ? void 0 : n.audioDeviceGuid)) && eR.setGoLiveSource(null, ev), (eB || r) && (ek = (eB = r) ? tu(eP, e6().videoDeviceId) : ef.DISABLED_DEVICE_ID, eR.setVideoInputDevice(ek)), s = a, null != a) {
                     let e = {
                         resolution: a.quality.resolution,
                         frameRate: a.quality.frameRate
@@ -230170,43 +230447,43 @@
                     if (null != a.desktopSource) {
                         let {
                             hdrCaptureMode: t
-                        } = V.default.getCurrentConfig({
+                        } = x.default.getCurrentConfig({
                             location: "f627ab_2"
                         }, {
                             autoTrackExposure: !1
-                        }), n = e4().videoHook;
-                        eO.setGoLiveSource({
+                        }), n = e6().videoHook;
+                        eR.setGoLiveSource({
                             desktopDescription: {
                                 id: a.desktopSource.id,
                                 soundshareId: a.desktopSource.soundshareId,
                                 useVideoHook: n,
-                                useGraphicsCapture: tt(),
+                                useGraphicsCapture: tn(),
                                 useLoopback: i.getExperimentalSoundshare(),
                                 useQuartzCapturer: !0,
-                                allowScreenCaptureKit: tn(),
+                                allowScreenCaptureKit: ti(),
                                 videoHookStaleFrameTimeoutMs: 500,
-                                graphicsCaptureStaleFrameTimeoutMs: eN,
+                                graphicsCaptureStaleFrameTimeoutMs: ep,
                                 hdrCaptureMode: t
                             },
                             quality: e
-                        }, eD)
+                        }, ev)
                     }
-                    null != a.cameraSource && eO.setGoLiveSource({
+                    null != a.cameraSource && eR.setGoLiveSource({
                         cameraDescription: {
                             videoDeviceGuid: a.cameraSource.videoDeviceGuid,
                             audioDeviceGuid: a.cameraSource.audioDeviceGuid
                         },
                         quality: e
-                    }, eD)
+                    }, ev)
                 }
             }
 
-            function e9(e, t, n, i) {
+            function te(e, t, n, i) {
                 var r;
                 let s = null !== (r = null == e ? void 0 : e.soundshareSession) && void 0 !== r ? r : "";
-                null == e2[s] && (e2[s] = new Set);
-                let a = null != t && !e2[s].has(t);
-                a && e2[s].add(t), (null == t || a) && q.default.track(e_.AnalyticEvents.SOUNDSHARE_FAILED, {
+                null == e3[s] && (e3[s] = new Set);
+                let a = null != t && !e3[s].has(t);
+                a && e3[s].add(t), (null == t || a) && Z.default.track(ec.AnalyticEvents.SOUNDSHARE_FAILED, {
                     soundshare_failure_code: t,
                     soundshare_failure_reason: n,
                     soundshare_failure_will_retry: i,
@@ -230214,79 +230491,79 @@
                 })
             }
 
-            function te(e) {
-                let t = e4(),
+            function tt(e) {
+                let t = e6(),
                     n = t.inputDeviceId;
-                if (e.setEchoCancellation(es.default.hasEchoCancellation(n) || t.echoCancellation), e.setNoiseSuppression(es.default.hasNoiseSuppression(n) || t.noiseSuppression), e.setAutomaticGainControl(es.default.hasAutomaticGainControl(n) || t.automaticGainControl), e.setNoiseCancellation(t.noiseCancellation), (0, $.isWeb)()) {
+                if (e.setEchoCancellation(ea.default.hasEchoCancellation(n) || t.echoCancellation), e.setNoiseSuppression(ea.default.hasNoiseSuppression(n) || t.noiseSuppression), e.setAutomaticGainControl(ea.default.hasAutomaticGainControl(n) || t.automaticGainControl), e.setNoiseCancellation(t.noiseCancellation), (0, ee.isWeb)()) {
                     let n = t.noiseCancellation ? -150 : -100;
                     e.setSilenceThreshold(n)
                 }
             }
 
-            function tt() {
-                return (0, $.isWindows)() && T().satisfies(null === N.default || void 0 === N.default ? void 0 : N.default.os.release, ec.WINDOWS_GRAPHICS_CAPTURE_VERSION)
+            function tn() {
+                return (0, ee.isWindows)() && T().satisfies(null === N.default || void 0 === N.default ? void 0 : N.default.os.release, eE.WINDOWS_GRAPHICS_CAPTURE_VERSION)
             }
 
-            function tn() {
-                return (0, $.isMac)() && eO.supports(eT.Features.SCREEN_CAPTURE_KIT) && T().satisfies(null === N.default || void 0 === N.default ? void 0 : N.default.os.release, ec.DARWIN_SCKIT_VERSION)
+            function ti() {
+                return (0, ee.isMac)() && eR.supports(ef.Features.SCREEN_CAPTURE_KIT) && T().satisfies(null === N.default || void 0 === N.default ? void 0 : N.default.os.release, eE.DARWIN_SCKIT_VERSION)
             }
-            let ti = new class {
+            let tr = new class {
                 start() {
-                    !this.started && (this.started = !0, eO.on(S.MediaEngineEvent.Silence, this.handleSilence))
+                    !this.started && (this.started = !0, eR.on(S.MediaEngineEvent.Silence, this.handleSilence))
                 }
                 stop() {
-                    this.started && (this.started = !1, null != this.stateChangeTimeout && (clearTimeout(this.stateChangeTimeout), this.stateChangeTimeout = null), eO.removeListener(S.MediaEngineEvent.Silence, this.handleSilence), m.default.dispatch({
+                    this.started && (this.started = !1, null != this.stateChangeTimeout && (clearTimeout(this.stateChangeTimeout), this.stateChangeTimeout = null), eR.removeListener(S.MediaEngineEvent.Silence, this.handleSilence), m.default.dispatch({
                         type: "AUDIO_INPUT_DETECTED",
                         inputDetected: null
                     }))
                 }
                 update() {
-                    let e = e4();
-                    !eY && eu.default.getState() === e_.RTCConnectionStates.RTC_CONNECTED && e.mode === e_.InputModes.VOICE_ACTIVITY && e.silenceWarning ? this.start() : this.stop()
+                    let e = e6();
+                    !ej && ed.default.getState() === ec.RTCConnectionStates.RTC_CONNECTED && e.mode === ec.InputModes.VOICE_ACTIVITY && e.silenceWarning ? this.start() : this.stop()
                 }
                 reset() {
                     this.stop(), this.update()
                 }
                 constructor() {
-                    eS(this, "stateChangeTimeout", void 0), eS(this, "noVoiceTimeout", 5e3), eS(this, "voiceTimeout", 1500), eS(this, "started", !1), eS(this, "handleSilence", e => {
+                    eh(this, "stateChangeTimeout", void 0), eh(this, "noVoiceTimeout", 5e3), eh(this, "voiceTimeout", 1500), eh(this, "started", !1), eh(this, "handleSilence", e => {
                         let t = !e;
                         null != this.stateChangeTimeout && clearTimeout(this.stateChangeTimeout), this.stateChangeTimeout = setTimeout(() => {
                             this.stateChangeTimeout = null, this.started && (m.default.dispatch({
                                 type: "AUDIO_INPUT_DETECTED",
                                 inputDetected: t
-                            }), e && (ej = !0))
+                            }), e && (eW = !0))
                         }, t ? this.voiceTimeout : this.noVoiceTimeout)
                     })
                 }
             };
 
-            function tr(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eT.MediaEngineContextTypes.DEFAULT,
+            function ts(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : ef.MediaEngineContextTypes.DEFAULT,
                     n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-                    i = e4(t);
-                return Object.assign(i, e), !__OVERLAY__ && n && h.Storage.set(eA, eR), i
+                    i = e6(t);
+                return Object.assign(i, e), !__OVERLAY__ && n && h.Storage.set(em, eC), i
             }
 
-            function ts() {
-                !eg && eO.enable().then(() => m.default.dispatch({
+            function ta() {
+                !eL && eR.enable().then(() => m.default.dispatch({
                     type: "MEDIA_ENGINE_SET_AUDIO_ENABLED",
                     enabled: !0,
                     unmute: !1
                 }))
             }
 
-            function ta(e) {
+            function to(e) {
                 return {
-                    id: eT.DEFAULT_DEVICE_ID,
+                    id: ef.DEFAULT_DEVICE_ID,
                     index: 0,
                     name: e,
                     disabled: !0
                 }
             }
 
-            function to(e, t) {
+            function tl(e, t) {
                 if (0 === e.length) {
-                    let e = ta(t);
+                    let e = to(t);
                     return {
                         [e.id]: e
                     }
@@ -230299,58 +230576,58 @@
                 })).keyBy("id").value()
             }
 
-            function tl(e, t) {
+            function tu(e, t) {
                 var n;
                 let i = null !== (n = e[t]) && void 0 !== n ? n : E()(e).values().first();
                 return null != i ? i.id : t
             }
 
-            function tu() {
+            function td() {
                 var e, t;
                 let n = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
-                    i = null !== (e = Q.default.settings.audioContextSettings) && void 0 !== e ? e : {
+                    i = null !== (e = q.default.settings.audioContextSettings) && void 0 !== e ? e : {
                         user: {},
                         stream: {}
                     };
                 for (let e of Object.keys(i)) {
-                    let r = e === eI.ProtoAudioSettingsContextTypes.USER ? eT.MediaEngineContextTypes.DEFAULT : eT.MediaEngineContextTypes.STREAM,
-                        s = r === eT.MediaEngineContextTypes.STREAM ? eT.DEFAULT_STREAM_VOLUME : eT.DEFAULT_VOLUME,
+                    let r = e === eT.ProtoAudioSettingsContextTypes.USER ? ef.MediaEngineContextTypes.DEFAULT : ef.MediaEngineContextTypes.STREAM,
+                        s = r === ef.MediaEngineContextTypes.STREAM ? ef.DEFAULT_STREAM_VOLUME : ef.DEFAULT_VOLUME,
                         a = null !== (t = i[e]) && void 0 !== t ? t : {},
                         {
                             localMutes: o,
                             localVolumes: l
-                        } = e4(r);
-                    for (let [e, t] of Object.entries(a)) null == (0, X.getPendingAudioSettings)(r, e) && (t.muted ? o[e] = !0 : delete o[e], t.volume !== s ? l[e] = t.volume : delete l[e], eO.eachConnection(n => {
+                        } = e6(r);
+                    for (let [e, t] of Object.entries(a)) null == (0, Q.getPendingAudioSettings)(r, e) && (t.muted ? o[e] = !0 : delete o[e], t.volume !== s ? l[e] = t.volume : delete l[e], eR.eachConnection(n => {
                         n.setLocalVolume(e, t.volume), n.setLocalMute(e, t.muted)
                     }, r));
                     if (n)
-                        for (let e of new Set([...Object.keys(o), ...Object.keys(l)])) null == a[e] && (delete o[e], delete l[e], eO.eachConnection(t => {
+                        for (let e of new Set([...Object.keys(o), ...Object.keys(l)])) null == a[e] && (delete o[e], delete l[e], eR.eachConnection(t => {
                             t.setLocalVolume(e, s), t.setLocalMute(e, !1)
                         }, r));
-                    tr({
+                    ts({
                         localMutes: o,
                         localVolumes: l
                     }, r)
                 }
             }
 
-            function td(e) {
-                if (null == i) return eh.info("Error: trying to get soundshare id before MediaEngineStore is instantiated."), {
+            function t_(e) {
+                if (null == i) return eA.info("Error: trying to get soundshare id before MediaEngineStore is instantiated."), {
                     soundshareId: null,
                     soundshareSession: ""
                 };
                 {
-                    let t = i.getExperimentalSoundshare() ? e : Z.default.getAudioPid(e),
+                    let t = i.getExperimentalSoundshare() ? e : J.default.getAudioPid(e),
                         n = "";
-                    return null != t && (n = Z.default.generateSessionFromPid(t)), {
+                    return null != t && (n = J.default.generateSessionFromPid(t)), {
                         soundshareId: t,
                         soundshareSession: n
                     }
                 }
             }
 
-            function t_(e, t) {
-                (0, $.isWindows)() && p.attachToProcess(e, {
+            function tc(e, t) {
+                (0, ee.isWindows)() && p.attachToProcess(e, {
                     soundshare_session: t
                 }).then(t => {
                     null != t && !v.default.shouldContinueWithoutElevatedProcessForPID(e) && m.default.wait(() => {
@@ -230362,20 +230639,20 @@
                 })
             }
 
-            function tc() {
-                let e = eT.MediaEngineContextTypes.DEFAULT,
+            function tE() {
+                let e = ef.MediaEngineContextTypes.DEFAULT,
                     {
                         videoToggleStateMap: t
-                    } = e4(e);
-                for (let [e, n] of Object.entries(t)) n === e_.VideoToggleState.AUTO_PROBING && delete t[e];
-                tr({
+                    } = e6(e);
+                for (let [e, n] of Object.entries(t)) n === ec.VideoToggleState.AUTO_PROBING && delete t[e];
+                ts({
                     videoToggleStateMap: t
                 }, e, !1)
             }
 
-            function tE(e) {
-                let t = e4();
-                q.default.track(e_.AnalyticEvents.VOICE_PROCESSING, {
+            function tI(e) {
+                let t = e6();
+                Z.default.track(ec.AnalyticEvents.VOICE_PROCESSING, {
                     echo_cancellation: t.echoCancellation,
                     noise_cancellation: t.noiseCancellation,
                     noise_suppression: t.noiseSuppression,
@@ -230384,14 +230661,14 @@
                 })
             }
 
-            function tI() {
-                let e = e4(),
+            function tT() {
+                let e = e6(),
                     t = e.inputDeviceId,
-                    n = es.default.hasEchoCancellation(t) || e.echoCancellation,
-                    i = es.default.hasNoiseSuppression(t) || e.noiseSuppression,
-                    r = es.default.hasAutomaticGainControl(t) || e.automaticGainControl,
+                    n = ea.default.hasEchoCancellation(t) || e.echoCancellation,
+                    i = ea.default.hasNoiseSuppression(t) || e.noiseSuppression,
+                    r = ea.default.hasAutomaticGainControl(t) || e.automaticGainControl,
                     s = e.noiseCancellation;
-                eO.setLoopback(e0, {
+                eR.setLoopback(e1, {
                     echoCancellation: n,
                     noiseSuppression: i,
                     automaticGainControl: r,
@@ -230399,122 +230676,126 @@
                 })
             }
 
-            function tT() {
-                return ez || !1
+            function tf() {
+                return eX || !1
             }
-            async function tf() {
+            async function tS() {
                 try {
-                    await et.default.ensureModule("discord_krisp"), et.default.requireModule("discord_krisp"), ez = !0, i.emitChange()
+                    await en.default.ensureModule("discord_krisp"), en.default.requireModule("discord_krisp"), eX = !0, i.emitChange()
                 } catch (t) {
-                    eh.warn("Failed to load Krisp module: ".concat(t.message)), ee.default.captureException(t);
-                    let e = eT.NoiseCancellerError.INITIALIZED;
+                    eA.warn("Failed to load Krisp module: ".concat(t.message)), et.default.captureException(t);
+                    let e = ef.NoiseCancellerError.INITIALIZED;
                     if (t.message.includes(": ")) {
                         let n = parseInt(t.message.substring(t.message.indexOf(": ") + 1));
-                        e = isNaN(n) || 0 === n ? eT.NoiseCancellerError.INITIALIZED : n
+                        e = isNaN(n) || 0 === n ? ef.NoiseCancellerError.INITIALIZED : n
                     }
-                    q.default.track(e_.AnalyticEvents.VOICE_PROCESSING, {
+                    Z.default.track(ec.AnalyticEvents.VOICE_PROCESSING, {
                         noise_canceller_error: e
-                    }), tr({
+                    }), ts({
                         noiseCancellation: !1
                     })
                 } finally {
-                    eK = !1
+                    ez = !1
                 }
             }
 
-            function tS(e) {
+            function th(e) {
                 let {
                     section: t
                 } = e;
-                return t === e_.UserSettingsSections.VOICE && ts(), !1
+                return t === ec.UserSettingsSections.VOICE && ta(), !1
             }
-            class th extends(l = f.default.Store) {
+            class tA extends(l = f.default.Store) {
                 initialize() {
-                    eO.on(S.MediaEngineEvent.Connection, e => {
+                    eR.on(S.MediaEngineEvent.Connection, e => {
                         let {
                             maxSyncDelayOverride: t
-                        } = F.default.getCurrentConfig({
+                        } = H.default.getCurrentConfig({
                             location: "f627ab_3"
                         }, {
                             autoTrackExposure: !1
                         });
-                        t > 0 && eO.setMaxSyncDelayOverride(t), e6(e), e5(e), te(e);
-                        let n = e4();
+                        t > 0 && eR.setMaxSyncDelayOverride(t), e7(e), e8(e), tt(e);
+                        let n = e6();
                         e.setAttenuation(n.attenuation, n.attenuateWhileSpeakingSelf, n.attenuateWhileSpeakingOthers), e.setQoS(n.qos), e.setExperimentalEncoders(n.experimentalEncoders), e.setHardwareH264(n.hardwareH264);
                         let {
                             useExperimentalRateControl: r
-                        } = Y.default.getCurrentConfig({
+                        } = j.default.getCurrentConfig({
                             location: "f627ab_4"
                         }, {
                             autoTrackExposure: !1
                         });
-                        r && e.setExperimentFlag(eT.ExperimentFlags.VIDEOTOOLBOX_RATE_CONTROL, !0);
-                        let {
-                            muteBeforeProcessing: a,
-                            pttBeforeProcessing: o,
-                            skipEncode: l
-                        } = U.default.getCurrentConfig({
-                            location: "setupMediaEngine"
-                        }, {
-                            autoTrackExposure: !0
-                        });
-                        a && e.setExperimentFlag(eT.ExperimentFlags.MUTE_BEFORE_PROCESSING, !0), o && e.setExperimentFlag(eT.ExperimentFlags.PTT_BEFORE_PROCESSING, !0), l && e.setExperimentFlag(eT.ExperimentFlags.SKIP_ENCODE, !0);
+                        r && e.setExperimentFlag(ef.ExperimentFlags.VIDEOTOOLBOX_RATE_CONTROL, !0);
+                        let a = ed.default.getGuildId(),
+                            {
+                                muteBeforeProcessing: o,
+                                pttBeforeProcessing: l,
+                                skipEncode: u
+                            } = (null != a ? b.default : U.default).getCurrentConfig({
+                                location: "setupMediaEngine",
+                                ...null != a && {
+                                    guildId: a
+                                }
+                            }, {
+                                autoTrackExposure: !0
+                            });
+                        o && e.setExperimentFlag(ef.ExperimentFlags.MUTE_BEFORE_PROCESSING, !0), l && e.setExperimentFlag(ef.ExperimentFlags.PTT_BEFORE_PROCESSING, !0), u && e.setExperimentFlag(ef.ExperimentFlags.SKIP_ENCODE, !0);
                         {
-                            (0, $.isWindows)() && e.setExperimentFlag(eT.ExperimentFlags.SIGNAL_H265_DECODE_SUPPORT, !0);
+                            (0, ee.isWindows)() && e.setExperimentFlag(ef.ExperimentFlags.SIGNAL_H265_DECODE_SUPPORT, !0);
                             let {
                                 signalH265SupportNvenc: t
+                            } = V.default.getCurrentConfig({
+                                location: "f627ab_9"
+                            }, {
+                                autoTrackExposure: !0
+                            });
+                            t && n.hardwareH264 && e.setExperimentFlag(ef.ExperimentFlags.SIGNAL_H265_SUPPORT, !0);
+                            let {
+                                signalH265SupportAMD: i
                             } = k.default.getCurrentConfig({
                                 location: "f627ab_9"
                             }, {
                                 autoTrackExposure: !0
                             });
-                            t && n.hardwareH264 && e.setExperimentFlag(eT.ExperimentFlags.SIGNAL_H265_SUPPORT, !0);
-                            let {
-                                signalH265SupportAMD: i
-                            } = B.default.getCurrentConfig({
-                                location: "f627ab_9"
-                            }, {
-                                autoTrackExposure: !0
-                            });
-                            i && n.hardwareH264 && e.setExperimentFlag(eT.ExperimentFlags.SIGNAL_H265_SUPPORT, !0);
+                            i && n.hardwareH264 && e.setExperimentFlag(ef.ExperimentFlags.SIGNAL_H265_SUPPORT, !0);
                             let {
                                 signalH265SupportMacOS: r
-                            } = w.default.getCurrentConfig({
+                            } = B.default.getCurrentConfig({
                                 location: "f627ab_8"
                             }, {
                                 autoTrackExposure: !0
                             });
                             if (r) {
-                                var u;
-                                (0, $.isMac)() && (null === (u = window.DiscordNative) || void 0 === u ? void 0 : u.os.arch) === "arm64" && (n.hardwareH264 ? e.setExperimentFlag(eT.ExperimentFlags.SIGNAL_H265_SUPPORT, !0) : e.setExperimentFlag(eT.ExperimentFlags.SIGNAL_H265_DECODE_SUPPORT, !0))
+                                var d;
+                                (0, ee.isMac)() && (null === (d = window.DiscordNative) || void 0 === d ? void 0 : d.os.arch) === "arm64" && (n.hardwareH264 ? e.setExperimentFlag(ef.ExperimentFlags.SIGNAL_H265_SUPPORT, !0) : e.setExperimentFlag(ef.ExperimentFlags.SIGNAL_H265_DECODE_SUPPORT, !0))
                             }
                         }
                         let {
-                            signalAV1Support: d
+                            signalAV1Support: _
                         } = y.default.getCurrentConfig({
                             location: "f627ab_10"
                         }, {
                             autoTrackExposure: !0
                         });
-                        d && e.setExperimentFlag(eT.ExperimentFlags.SIGNAL_AV1_SUPPORT, !0);
+                        _ && e.setExperimentFlag(ef.ExperimentFlags.SIGNAL_AV1_SUPPORT, !0);
                         let {
-                            allowSettingFullbandAndroid: _
-                        } = x.default.getCurrentConfig({
+                            allowSettingFullbandAndroid: c
+                        } = F.default.getCurrentConfig({
                             location: "f627ab_14"
                         }, {
                             autoTrackExposure: !0
                         });
-                        if (_ && eO.setHasFullbandPerformance((0, L.hasPerformanceForKrispFullband)()), (0, C.default)(i)) {
+                        if (c && eR.setHasFullbandPerformance((0, L.hasPerformanceForKrispFullband)()), (0, C.default)(i)) {
                             let t = R.default.getSettings();
-                            e.setExperimentFlag(eT.ExperimentFlags.STREAMER_CLIP, t.clipsEnabled);
+                            e.setExperimentFlag(ef.ExperimentFlags.STREAMER_CLIP, t.clipsEnabled);
                             let {
                                 enableViewerClipping: n
-                            } = j.default.getCurrentConfig({
+                            } = W.default.getCurrentConfig({
                                 location: "f627ab_15"
                             }, {
                                 autoTrackExposure: !1
                             });
-                            e.setViewerSideClip(n), e.setClipsKeyFrameInterval(eT.VIEWERSIDE_CLIP_KFI_MS);
+                            e.setViewerSideClip(n), e.setClipsKeyFrameInterval(ef.VIEWERSIDE_CLIP_KFI_MS);
                             let {
                                 allowQualityDecoupling: i
                             } = O.default.getCurrentConfig({
@@ -230524,8 +230805,8 @@
                             });
                             e.setQualityDecoupling(i)
                         }
-                        for (let t of (n = e4(e.context), e.setPostponeDecodeLevel(100), Object.keys(n.localMutes))) t !== ei.default.getId() && e.setLocalMute(t, n.localMutes[t]);
-                        for (let t of Object.keys(n.localVolumes)) t !== ei.default.getId() && e.setLocalVolume(t, n.localVolumes[t]);
+                        for (let t of (n = e6(e.context), e.setPostponeDecodeLevel(100), Object.keys(n.localMutes))) t !== er.default.getId() && e.setLocalMute(t, n.localMutes[t]);
+                        for (let t of Object.keys(n.localVolumes)) t !== er.default.getId() && e.setLocalVolume(t, n.localVolumes[t]);
                         for (let t of Object.keys(n.localPans)) {
                             let i = n.localPans[t];
                             e.setLocalPan(t, i.left, i.right)
@@ -230538,8 +230819,8 @@
                                 userId: t,
                                 speakingFlags: n
                             })
-                        }), e.context === eT.MediaEngineContextTypes.DEFAULT && (eV = !1, e.on(S.BaseConnectionEvent.SpeakingWhileMuted, () => {
-                            eV = !0, i.emitChange()
+                        }), e.context === ef.MediaEngineContextTypes.DEFAULT && (ex = !1, e.on(S.BaseConnectionEvent.SpeakingWhileMuted, () => {
+                            ex = !0, i.emitChange()
                         })), e.on(S.BaseConnectionEvent.DesktopSourceEnd, () => {
                             m.default.dispatch({
                                 type: "MEDIA_ENGINE_SET_GO_LIVE_SOURCE",
@@ -230548,24 +230829,24 @@
                                 }
                             })
                         }), e.on(S.BaseConnectionEvent.SoundshareAttached, () => {
-                            (null == s ? void 0 : s.desktopSource) != null && q.default.track(e_.AnalyticEvents.SOUNDSHARE_ATTACHED, (0, M.default)(null == s ? void 0 : s.desktopSource))
+                            (null == s ? void 0 : s.desktopSource) != null && Z.default.track(ec.AnalyticEvents.SOUNDSHARE_ATTACHED, (0, M.default)(null == s ? void 0 : s.desktopSource))
                         }), e.on(S.BaseConnectionEvent.SoundshareFailed, e => {
                             let {
                                 failureCode: t,
                                 failureReason: n,
                                 willRetry: i
                             } = e;
-                            e9(null == s ? void 0 : s.desktopSource, t, n, i)
+                            te(null == s ? void 0 : s.desktopSource, t, n, i)
                         }), e.on(S.BaseConnectionEvent.SoundshareSpeaking, () => {
-                            (null == s ? void 0 : s.desktopSource) != null && (q.default.track(e_.AnalyticEvents.SOUNDSHARE_TRANSMITTING, (0, M.default)(null == s ? void 0 : s.desktopSource)), null != el.default.getHookError(e_.MediaEngineHookTypes.SOUND) && m.default.wait(() => m.default.dispatch({
+                            (null == s ? void 0 : s.desktopSource) != null && (Z.default.track(ec.AnalyticEvents.SOUNDSHARE_TRANSMITTING, (0, M.default)(null == s ? void 0 : s.desktopSource)), null != eu.default.getHookError(ec.MediaEngineHookTypes.SOUND) && m.default.wait(() => m.default.dispatch({
                                 type: "MEDIA_ENGINE_SOUNDSHARE_TRANSMITTING"
                             })))
                         });
-                        let c = new A.Timeout;
+                        let E = new A.Timeout;
                         e.on(S.BaseConnectionEvent.SoundshareTrace, e => {
                             switch (e.type) {
                                 case "soundshare_attach_requested":
-                                    c.start(e3, () => {
+                                    E.start(e4, () => {
                                         m.default.dispatch({
                                             type: "MEDIA_ENGINE_SOUNDSHARE_FAILED",
                                             errorMessage: "Sound Hook Failed"
@@ -230576,14 +230857,14 @@
                                     let t = e.reason,
                                         n = e.code,
                                         i = e.retry;
-                                    (null == s ? void 0 : s.desktopSource) != null && (e9(null == s ? void 0 : s.desktopSource, n, t, i), !i && (c.stop(), m.default.wait(() => m.default.dispatch({
+                                    (null == s ? void 0 : s.desktopSource) != null && (te(null == s ? void 0 : s.desktopSource, n, t, i), !i && (E.stop(), m.default.wait(() => m.default.dispatch({
                                         type: "MEDIA_ENGINE_SOUNDSHARE_FAILED",
                                         errorMessage: t,
                                         errorCode: n
                                     }))));
                                     break;
                                 case "soundshare_state_transition":
-                                    4 === e.newState && (c.stop(), m.default.wait(() => m.default.dispatch({
+                                    4 === e.newState && (E.stop(), m.default.wait(() => m.default.dispatch({
                                         type: "MEDIA_ENGINE_SOUNDSHARE_TRANSMITTING"
                                     })))
                             }
@@ -230593,7 +230874,7 @@
                                 required: e
                             })
                         }), e.on(S.BaseConnectionEvent.VideoHookInitialize, (e, t, n, i, r, a) => {
-                            (null == s ? void 0 : s.desktopSource) != null && q.default.track(e_.AnalyticEvents.VIDEOHOOK_INITIALIZED, {
+                            (null == s ? void 0 : s.desktopSource) != null && Z.default.track(ec.AnalyticEvents.VIDEOHOOK_INITIALIZED, {
                                 backend: e,
                                 format: t,
                                 framebuffer_format: n,
@@ -230603,7 +230884,7 @@
                                 ...(0, M.default)(null == s ? void 0 : s.desktopSource)
                             })
                         }), e.on(S.BaseConnectionEvent.NoiseCancellationError, e => {
-                            eh.warn("noisecancellererror event: ".concat(e)), eQ = !0, q.default.track(e_.AnalyticEvents.VOICE_PROCESSING, {
+                            eA.warn("noisecancellererror event: ".concat(e)), eq = !0, Z.default.track(ec.AnalyticEvents.VOICE_PROCESSING, {
                                 noise_canceller_error: e
                             }), m.default.dispatch({
                                 type: "AUDIO_SET_NOISE_SUPPRESSION",
@@ -230616,14 +230897,14 @@
                                 code: e
                             })
                         }), e.on(S.BaseConnectionEvent.VoiceActivityDetectorError, e => {
-                            eh.warn("voiceactivitydetectorerror event: ".concat(e)), q.default.track(e_.AnalyticEvents.VOICE_PROCESSING, {
+                            eA.warn("voiceactivitydetectorerror event: ".concat(e)), Z.default.track(ec.AnalyticEvents.VOICE_PROCESSING, {
                                 noise_canceller_error: e
                             }), m.default.dispatch({
                                 type: "AUDIO_SET_MODE",
-                                context: eT.MediaEngineContextTypes.DEFAULT,
-                                mode: e_.InputModes.VOICE_ACTIVITY,
+                                context: ef.MediaEngineContextTypes.DEFAULT,
+                                mode: ec.InputModes.VOICE_ACTIVITY,
                                 options: {
-                                    ...e4(eT.MediaEngineContextTypes.DEFAULT).modeOptions,
+                                    ...e6(ef.MediaEngineContextTypes.DEFAULT).modeOptions,
                                     vadUseKrisp: !1
                                 }
                             }), m.default.dispatch({
@@ -230637,42 +230918,42 @@
                                 context: e.context
                             })
                         }), e.on(S.BaseConnectionEvent.Destroy, () => {
-                            c.stop()
-                        }), e.setBitRate(er.default.bitrate), e.applyVideoQualityMode(ed.default.mode)
-                    }), eO.on(S.MediaEngineEvent.DeviceChange, (e, t, n) => {
+                            E.stop()
+                        }), e.setBitRate(es.default.bitrate), e.applyVideoQualityMode(e_.default.mode)
+                    }), eR.on(S.MediaEngineEvent.DeviceChange, (e, t, n) => {
                         m.default.dispatch({
                             type: "MEDIA_ENGINE_DEVICES",
                             inputDevices: e,
                             outputDevices: t,
                             videoDevices: n
                         })
-                    }), eO.on(S.MediaEngineEvent.VolumeChange, (e, t) => {
+                    }), eR.on(S.MediaEngineEvent.VolumeChange, (e, t) => {
                         m.default.dispatch({
                             type: "AUDIO_VOLUME_CHANGE",
                             inputVolume: e,
                             outputVolume: t
                         })
-                    }), eO.on(S.MediaEngineEvent.DesktopSourceEnd, () => {
+                    }), eR.on(S.MediaEngineEvent.DesktopSourceEnd, () => {
                         m.default.dispatch({
                             type: "MEDIA_ENGINE_SET_GO_LIVE_SOURCE",
                             settings: null
                         })
-                    }), eO.on(S.MediaEngineEvent.AudioPermission, e => {
-                        eZ = !0, m.default.dispatch({
+                    }), eR.on(S.MediaEngineEvent.AudioPermission, e => {
+                        eJ = !0, m.default.dispatch({
                             type: "MEDIA_ENGINE_PERMISSION",
                             kind: "audio",
                             granted: e
                         })
-                    }), eO.on(S.MediaEngineEvent.VideoPermission, e => {
+                    }), eR.on(S.MediaEngineEvent.VideoPermission, e => {
                         m.default.dispatch({
                             type: "MEDIA_ENGINE_PERMISSION",
                             kind: "video",
                             granted: e
                         })
-                    }), eO.on(S.MediaEngineEvent.WatchdogTimeout, async () => {
+                    }), eR.on(S.MediaEngineEvent.WatchdogTimeout, async () => {
                         let e;
                         try {
-                            await Z.default.submitLiveCrashReport({
+                            await J.default.submitLiveCrashReport({
                                 message: {
                                     message: "Voice Watchdog Timeout"
                                 }
@@ -230680,21 +230961,21 @@
                         } catch (t) {
                             "number" == typeof t.status && (e = t.status)
                         }
-                        eh.warn("Watchdog timeout, report submission status: ".concat(null != e ? e : 200)), q.default.track(e_.AnalyticEvents.VOICE_WATCHDOG_TIMEOUT, {
+                        eA.warn("Watchdog timeout, report submission status: ".concat(null != e ? e : 200)), Z.default.track(ec.AnalyticEvents.VOICE_WATCHDOG_TIMEOUT, {
                             minidump_submission_error: e
                         })
-                    }), eO.on(S.MediaEngineEvent.VideoInputInitialized, e => {
-                        q.default.track(e_.AnalyticEvents.VIDEO_INPUT_INITIALIZED, {
+                    }), eR.on(S.MediaEngineEvent.VideoInputInitialized, e => {
+                        Z.default.track(ec.AnalyticEvents.VIDEO_INPUT_INITIALIZED, {
                             device_name: e.description.name,
-                            time_to_first_frame_ms: e.initializationTimerExpired ? null : Math.round(e.timeToFirstFrame * J.default.Millis.SECOND),
+                            time_to_first_frame_ms: e.initializationTimerExpired ? null : Math.round(e.timeToFirstFrame * $.default.Millis.SECOND),
                             timed_out: e.initializationTimerExpired,
                             activity: e.entropy
                         })
-                    }), eO.on(S.MediaEngineEvent.ClipsRecordingRestartNeeded, () => {
+                    }), eR.on(S.MediaEngineEvent.ClipsRecordingRestartNeeded, () => {
                         m.default.dispatch({
                             type: "CLIPS_RESTART"
                         })
-                    }), eO.on(S.MediaEngineEvent.ClipsInitFailure, (e, t) => {
+                    }), eR.on(S.MediaEngineEvent.ClipsInitFailure, (e, t) => {
                         m.default.wait(() => {
                             m.default.dispatch({
                                 type: "CLIPS_INIT_FAILURE",
@@ -230702,96 +230983,96 @@
                                 applicationName: t
                             })
                         })
-                    }), eO.on(S.MediaEngineEvent.ClipsRecordingEnded, (e, t) => {
+                    }), eR.on(S.MediaEngineEvent.ClipsRecordingEnded, (e, t) => {
                         var n, i;
                         (null == a ? void 0 : null === (n = a.desktopSource) || void 0 === n ? void 0 : n.id) === e && (null != t && (null == s ? void 0 : null === (i = s.desktopSource) || void 0 === i ? void 0 : i.soundshareId) !== t && p.cancelAttachToProcess(t), a = null)
-                    }), ti.reset(), ! function() {
+                    }), tr.reset(), ! function() {
                         var e;
                         let t = h.Storage.get("audio");
-                        null != t && (h.Storage.set(eA, {
-                                [eT.MediaEngineContextTypes.DEFAULT]: t
-                            }), h.Storage.remove("audio")), eR = null !== (e = h.Storage.get(eA)) && void 0 !== e ? e : {}, E().each(eR, e => {
-                                if (E().defaultsDeep(e, ep()), null != e.modeOptions && "string" == typeof e.modeOptions.shortcut && (e.modeOptions.shortcut = (0, en.toCombo)(e.modeOptions.shortcut)), null != e.modeOptions && 4 !== e.vadUseKrispSettingVersion && (e.vadUseKrispSettingVersion = 4, e.modeOptions.vadUseKrisp = !0), !e.qosMigrated && (e.qosMigrated = !0, e.qos = !1), !e.vadThrehsoldMigrated) {
+                        null != t && (h.Storage.set(em, {
+                                [ef.MediaEngineContextTypes.DEFAULT]: t
+                            }), h.Storage.remove("audio")), eC = null !== (e = h.Storage.get(em)) && void 0 !== e ? e : {}, E().each(eC, e => {
+                                if (E().defaultsDeep(e, eO()), null != e.modeOptions && "string" == typeof e.modeOptions.shortcut && (e.modeOptions.shortcut = (0, ei.toCombo)(e.modeOptions.shortcut)), null != e.modeOptions && 4 !== e.vadUseKrispSettingVersion && (e.vadUseKrispSettingVersion = 4, e.modeOptions.vadUseKrisp = !0), !e.qosMigrated && (e.qosMigrated = !0, e.qos = !1), !e.vadThrehsoldMigrated) {
                                     var t;
                                     e.vadThrehsoldMigrated = !0, (null === (t = e.modeOptions) || void 0 === t ? void 0 : t.threshold) === -40 && (e.modeOptions.threshold = -60)
-                                }(0, $.isWeb)() ? 1 !== e.ncUseKrispjsSettingVersion && (e.ncUseKrispjsSettingVersion = 1, e.noiseSuppression = !1, e.noiseCancellation = !0): 1 !== e.ncUseKrispSettingVersion && (e.ncUseKrispSettingVersion = 1, e.noiseSuppression = !1, e.noiseCancellation = !0), 1 !== e.hardwareEnabledVersion && (e.hardwareH264 = !0, e.hardwareEnabledVersion = 1)
+                                }(0, ee.isWeb)() ? 1 !== e.ncUseKrispjsSettingVersion && (e.ncUseKrispjsSettingVersion = 1, e.noiseSuppression = !1, e.noiseCancellation = !0): 1 !== e.ncUseKrispSettingVersion && (e.ncUseKrispSettingVersion = 1, e.noiseSuppression = !1, e.noiseCancellation = !0), 1 !== e.hardwareEnabledVersion && (e.hardwareH264 = !0, e.hardwareEnabledVersion = 1)
                             }),
                             function() {
-                                let e = e4();
-                                eO.setAudioInputDevice(e.inputDeviceId), eO.setAudioOutputDevice(e.outputDeviceId), e8(), eO.setInputVolume(e.inputVolume), eO.setOutputVolume(e.outputVolume), eO.setH264Enabled(e.openH264), eO.setAv1Enabled(e.hardwareH264), eO.setH265Enabled(e.hardwareH264), eO.setAecDump(e.aecDumpEnabled)
+                                let e = e6();
+                                eR.setAudioInputDevice(e.inputDeviceId), eR.setAudioOutputDevice(e.outputDeviceId), e9(), eR.setInputVolume(e.inputVolume), eR.setOutputVolume(e.outputVolume), eR.setH264Enabled(e.openH264), eR.setAv1Enabled(e.hardwareH264), eR.setH265Enabled(e.hardwareH264), eR.setAecDump(e.aecDumpEnabled)
                             }()
-                    }(), !(0, $.isDesktop)() || __OVERLAY__ || eK || ez ? (0, $.isWeb)() && eO.supports(eT.Features.NOISE_CANCELLATION) ? (ez = !0, i.emitChange()) : (0, $.isWeb)() && tr({
+                    }(), !(0, ee.isDesktop)() || __OVERLAY__ || ez || eX ? (0, ee.isWeb)() && eR.supports(ef.Features.NOISE_CANCELLATION) ? (eX = !0, i.emitChange()) : (0, ee.isWeb)() && ts({
                         noiseCancellation: !1
-                    }) : (eK = !0, tf()), tc(), e1 = {
-                        [eT.Features.VIDEO]: eO.supports(eT.Features.VIDEO),
-                        [eT.Features.DESKTOP_CAPTURE]: eO.supports(eT.Features.DESKTOP_CAPTURE),
-                        [eT.Features.HYBRID_VIDEO]: eO.supports(eT.Features.HYBRID_VIDEO)
-                    }, this.waitFor(ei.default, es.default, ea.default, el.default, eu.default, v.default, K.default.storage, Q.default, eo.default, R.default)
+                    }) : (ez = !0, tS()), tE(), e2 = {
+                        [ef.Features.VIDEO]: eR.supports(ef.Features.VIDEO),
+                        [ef.Features.DESKTOP_CAPTURE]: eR.supports(ef.Features.DESKTOP_CAPTURE),
+                        [ef.Features.HYBRID_VIDEO]: eR.supports(ef.Features.HYBRID_VIDEO)
+                    }, this.waitFor(er.default, ea.default, eo.default, eu.default, ed.default, v.default, z.default.storage, q.default, el.default, R.default)
                 }
                 supports(e) {
-                    return eO.supports(e)
+                    return eR.supports(e)
                 }
                 supportsInApp(e) {
-                    return e1[e] || eO.supports(e)
+                    return e2[e] || eR.supports(e)
                 }
                 isSupported() {
-                    return eO.supported()
+                    return eR.supported()
                 }
                 isExperimentalEncodersSupported() {
-                    return eO.supports(eT.Features.EXPERIMENTAL_ENCODERS)
+                    return eR.supports(ef.Features.EXPERIMENTAL_ENCODERS)
                 }
                 isNoiseSuppressionSupported() {
-                    return eO.supports(eT.Features.NOISE_SUPPRESSION)
+                    return eR.supports(ef.Features.NOISE_SUPPRESSION)
                 }
                 isNoiseCancellationSupported() {
-                    return ez || !1
+                    return eX || !1
                 }
                 isNoiseCancellationError() {
-                    return eQ
+                    return eq
                 }
                 isAutomaticGainControlSupported() {
-                    return eO.supports(eT.Features.AUTOMATIC_GAIN_CONTROL)
+                    return eR.supports(ef.Features.AUTOMATIC_GAIN_CONTROL)
                 }
                 isAdvancedVoiceActivitySupported() {
-                    return ez || !1
+                    return eX || !1
                 }
                 isAecDumpSupported() {
-                    return eO.supports(eT.Features.AEC_DUMP)
+                    return eR.supports(ef.Features.AEC_DUMP)
                 }
                 isSimulcastSupported() {
-                    return eO.supports(eT.Features.VIDEO) && eO.supports(eT.Features.SIMULCAST)
+                    return eR.supports(ef.Features.VIDEO) && eR.supports(ef.Features.SIMULCAST)
                 }
                 getAecDump() {
-                    return e4().aecDumpEnabled
+                    return e6().aecDumpEnabled
                 }
                 getMediaEngine() {
-                    return eO
+                    return eR
                 }
                 getVideoComponent() {
-                    return eO.supports(eT.Features.DIRECT_VIDEO) && eO.setUseDirectVideo(!0), eO.Video
+                    return eR.supports(ef.Features.DIRECT_VIDEO) && eR.setUseDirectVideo(!0), eR.Video
                 }
                 getCameraComponent() {
-                    return eO.supports(eT.Features.DIRECT_VIDEO) && eO.setUseDirectVideo(!0), eO.Camera
+                    return eR.supports(ef.Features.DIRECT_VIDEO) && eR.setUseDirectVideo(!0), eR.Camera
                 }
                 isEnabled() {
-                    return eg
+                    return eL
                 }
                 isMute() {
-                    return this.isSelfMute() || eP
+                    return this.isSelfMute() || eU
                 }
                 isDeaf() {
-                    return this.isSelfDeaf() || eG
+                    return this.isSelfDeaf() || ew
                 }
                 hasContext(e) {
-                    return null != eR[e]
+                    return null != eC[e]
                 }
                 isSelfMutedTemporarily() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eT.MediaEngineContextTypes.DEFAULT;
-                    return e === eT.MediaEngineContextTypes.DEFAULT && eU
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ef.MediaEngineContextTypes.DEFAULT;
+                    return e === ef.MediaEngineContextTypes.DEFAULT && eb
                 }
                 isSelfMute() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eT.MediaEngineContextTypes.DEFAULT;
-                    return !this.isEnabled() || e4(e).mute || !K.default.didHavePermission(eE.NativePermissionTypes.AUDIO) || this.isSelfDeaf(e) || e === eT.MediaEngineContextTypes.DEFAULT && eb
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ef.MediaEngineContextTypes.DEFAULT;
+                    return !this.isEnabled() || e6(e).mute || !z.default.didHavePermission(eI.NativePermissionTypes.AUDIO) || this.isSelfDeaf(e) || e === ef.MediaEngineContextTypes.DEFAULT && eG
                 }
                 shouldSkipMuteUnmuteSound() {
                     let {
@@ -230801,24 +231082,24 @@
                     }, {
                         autoTrackExposure: !0
                     });
-                    return !!e && ek
+                    return !!e && eV
                 }
                 notifyMuteUnmuteSoundWasSkipped() {
-                    ek = !1
+                    eV = !1
                 }
                 isHardwareMute() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eT.MediaEngineContextTypes.DEFAULT;
-                    return !this.isMute() && !this.isSelfMutedTemporarily(e) && es.default.isHardwareMute(this.getInputDeviceId())
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ef.MediaEngineContextTypes.DEFAULT;
+                    return !this.isMute() && !this.isSelfMutedTemporarily(e) && ea.default.isHardwareMute(this.getInputDeviceId())
                 }
                 isSelfDeaf() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eT.MediaEngineContextTypes.DEFAULT;
-                    return !this.isSupported() || e4(e).deaf
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ef.MediaEngineContextTypes.DEFAULT;
+                    return !this.isSupported() || e6(e).deaf
                 }
                 isVideoEnabled() {
-                    return ew && eF
+                    return eB && eH
                 }
                 isVideoAvailable() {
-                    return Object.values(ey).some(e => {
+                    return Object.values(eP).some(e => {
                         let {
                             disabled: t
                         } = e;
@@ -230826,232 +231107,232 @@
                     })
                 }
                 isScreenSharing() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eT.MediaEngineContextTypes.STREAM;
-                    return eD === e && null != s
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ef.MediaEngineContextTypes.STREAM;
+                    return ev === e && null != s
                 }
                 isSoundSharing() {
                     var e;
-                    let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eT.MediaEngineContextTypes.STREAM;
-                    return eD === t && null != s && (null === (e = s.desktopSource) || void 0 === e ? void 0 : e.soundshareId) != null
+                    let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ef.MediaEngineContextTypes.STREAM;
+                    return ev === t && null != s && (null === (e = s.desktopSource) || void 0 === e ? void 0 : e.soundshareId) != null
                 }
                 isLocalMute(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eT.MediaEngineContextTypes.DEFAULT;
-                    return e !== ei.default.getId() && (e4(t).localMutes[e] || !1)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : ef.MediaEngineContextTypes.DEFAULT;
+                    return e !== er.default.getId() && (e6(t).localMutes[e] || !1)
                 }
                 supportsDisableLocalVideo() {
-                    return eO.supports(eT.Features.DISABLE_VIDEO)
+                    return eR.supports(ef.Features.DISABLE_VIDEO)
                 }
                 isLocalVideoDisabled(e) {
                     var t;
-                    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eT.MediaEngineContextTypes.DEFAULT;
-                    return null !== (t = e4(n).disabledLocalVideos[e]) && void 0 !== t && t
+                    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : ef.MediaEngineContextTypes.DEFAULT;
+                    return null !== (t = e6(n).disabledLocalVideos[e]) && void 0 !== t && t
                 }
                 getVideoToggleState(e) {
                     var t;
-                    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eT.MediaEngineContextTypes.DEFAULT;
-                    return null !== (t = e4(n).videoToggleStateMap[e]) && void 0 !== t ? t : e_.VideoToggleState.NONE
+                    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : ef.MediaEngineContextTypes.DEFAULT;
+                    return null !== (t = e6(n).videoToggleStateMap[e]) && void 0 !== t ? t : ec.VideoToggleState.NONE
                 }
                 isLocalVideoAutoDisabled(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eT.MediaEngineContextTypes.DEFAULT;
-                    return t === eT.MediaEngineContextTypes.DEFAULT && eJ.has(e)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : ef.MediaEngineContextTypes.DEFAULT;
+                    return t === ef.MediaEngineContextTypes.DEFAULT && e$.has(e)
                 }
                 isAnyLocalVideoAutoDisabled() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eT.MediaEngineContextTypes.DEFAULT;
-                    return e === eT.MediaEngineContextTypes.DEFAULT && eJ.size > 0
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ef.MediaEngineContextTypes.DEFAULT;
+                    return e === ef.MediaEngineContextTypes.DEFAULT && e$.size > 0
                 }
                 isMediaFilterSettingLoading() {
-                    return eq
+                    return eZ
                 }
                 isNativeAudioPermissionReady() {
-                    return eZ
+                    return eJ
                 }
                 getGoLiveSource() {
                     return s
                 }
                 getGoLiveContext() {
-                    return eD
+                    return ev
                 }
                 getLocalPan(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eT.MediaEngineContextTypes.DEFAULT,
-                        n = e4(t).localPans[e];
-                    return null != n ? n : em
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : ef.MediaEngineContextTypes.DEFAULT,
+                        n = e6(t).localPans[e];
+                    return null != n ? n : eN
                 }
                 getLocalVolume(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eT.MediaEngineContextTypes.DEFAULT,
-                        n = t === eT.MediaEngineContextTypes.STREAM ? eT.DEFAULT_STREAM_VOLUME : eT.DEFAULT_VOLUME,
-                        i = e4(t).localVolumes[e];
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : ef.MediaEngineContextTypes.DEFAULT,
+                        n = t === ef.MediaEngineContextTypes.STREAM ? ef.DEFAULT_STREAM_VOLUME : ef.DEFAULT_VOLUME,
+                        i = e6(t).localVolumes[e];
                     return null != i ? i : n
                 }
                 getInputVolume() {
-                    return e4().inputVolume
+                    return e6().inputVolume
                 }
                 getOutputVolume() {
-                    return e4().outputVolume
+                    return e6().outputVolume
                 }
                 getMode() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eT.MediaEngineContextTypes.DEFAULT;
-                    return e4(e).mode
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ef.MediaEngineContextTypes.DEFAULT;
+                    return e6(e).mode
                 }
                 getModeOptions() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eT.MediaEngineContextTypes.DEFAULT;
-                    return e4(e).modeOptions
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ef.MediaEngineContextTypes.DEFAULT;
+                    return e6(e).modeOptions
                 }
                 getShortcuts() {
                     let e = {};
-                    return E().each(eR, (t, n) => {
+                    return E().each(eC, (t, n) => {
                         let {
                             mode: i,
                             modeOptions: {
                                 shortcut: r
                             }
                         } = t;
-                        i === e_.InputModes.PUSH_TO_TALK && eC.has(n) && (e[n] = r)
+                        i === ec.InputModes.PUSH_TO_TALK && eg.has(n) && (e[n] = r)
                     }), e
                 }
                 getInputDeviceId() {
-                    return tl(ev, e4().inputDeviceId)
+                    return tu(eM, e6().inputDeviceId)
                 }
                 getOutputDeviceId() {
-                    return tl(eM, e4().outputDeviceId)
+                    return tu(ey, e6().outputDeviceId)
                 }
                 getVideoDeviceId() {
-                    return tl(ey, e4().videoDeviceId)
+                    return tu(eP, e6().videoDeviceId)
                 }
                 getInputDevices() {
-                    return ev
-                }
-                getOutputDevices() {
                     return eM
                 }
-                getVideoDevices() {
+                getOutputDevices() {
                     return ey
                 }
+                getVideoDevices() {
+                    return eP
+                }
                 getEchoCancellation() {
-                    let e = e4();
-                    return es.default.hasEchoCancellation(e.inputDeviceId) || e.echoCancellation
+                    let e = e6();
+                    return ea.default.hasEchoCancellation(e.inputDeviceId) || e.echoCancellation
                 }
                 getH265Enabled() {
-                    return e4().h265Enabled
+                    return e6().h265Enabled
                 }
                 getLoopback() {
-                    return eO.getLoopback()
+                    return eR.getLoopback()
                 }
                 getNoiseSuppression() {
-                    let e = e4();
-                    return es.default.hasNoiseSuppression(e.inputDeviceId) || e.noiseSuppression
+                    let e = e6();
+                    return ea.default.hasNoiseSuppression(e.inputDeviceId) || e.noiseSuppression
                 }
                 getAutomaticGainControl() {
-                    let e = e4();
-                    return es.default.hasAutomaticGainControl(e.inputDeviceId) || e.automaticGainControl
+                    let e = e6();
+                    return ea.default.hasAutomaticGainControl(e.inputDeviceId) || e.automaticGainControl
                 }
                 getNoiseCancellation() {
-                    return e4().noiseCancellation
+                    return e6().noiseCancellation
                 }
                 getExperimentalEncoders() {
-                    return e4().experimentalEncoders
+                    return e6().experimentalEncoders
                 }
                 getHardwareH264() {
-                    return e4().hardwareH264
+                    return e6().hardwareH264
                 }
                 getEnableSilenceWarning() {
-                    return e4().silenceWarning
+                    return e6().silenceWarning
                 }
                 getDebugLogging() {
-                    return eO.getDebugLogging()
+                    return eR.getDebugLogging()
                 }
                 getQoS() {
-                    return e4().qos
+                    return e6().qos
                 }
                 getAttenuation() {
-                    return e4().attenuation
+                    return e6().attenuation
                 }
                 getAttenuateWhileSpeakingSelf() {
-                    return e4().attenuateWhileSpeakingSelf
+                    return e6().attenuateWhileSpeakingSelf
                 }
                 getAttenuateWhileSpeakingOthers() {
-                    return e4().attenuateWhileSpeakingOthers
+                    return e6().attenuateWhileSpeakingOthers
                 }
                 getAudioSubsystem() {
-                    return eO.getAudioSubsystem()
+                    return eR.getAudioSubsystem()
                 }
                 getSettings() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eT.MediaEngineContextTypes.DEFAULT;
-                    return e4(e)
+                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ef.MediaEngineContextTypes.DEFAULT;
+                    return e6(e)
                 }
                 getState() {
                     return {
-                        settingsByContext: eR,
-                        inputDevices: ev,
-                        outputDevices: eM,
-                        appSupported: e1,
-                        krispModuleLoaded: ez,
+                        settingsByContext: eC,
+                        inputDevices: eM,
+                        outputDevices: ey,
+                        appSupported: e2,
+                        krispModuleLoaded: eX,
                         goLiveSource: s,
-                        goLiveContext: eD
+                        goLiveContext: ev
                     }
                 }
                 getInputDetected() {
-                    return eH
+                    return eY
                 }
                 getNoInputDetectedNotice() {
-                    return ej
+                    return eW
                 }
                 getPacketDelay() {
-                    return $.isPlatformEmbedded || this.getMode() !== e_.InputModes.VOICE_ACTIVITY ? 0 : this.getModeOptions().vadLeading
+                    return ee.isPlatformEmbedded || this.getMode() !== ec.InputModes.VOICE_ACTIVITY ? 0 : this.getModeOptions().vadLeading
                 }
                 setCanHavePriority(e, t) {
-                    eO.eachConnection(n => n.setCanHavePriority(e, t))
+                    eR.eachConnection(n => n.setCanHavePriority(e, t))
                 }
                 isInteractionRequired() {
-                    return eL
+                    return eD
                 }
                 getVideoHook() {
-                    return e4().videoHook
+                    return e6().videoHook
                 }
                 supportsVideoHook() {
-                    return eO.supports(eT.Features.VIDEO_HOOK)
+                    return eR.supports(ef.Features.VIDEO_HOOK)
                 }
                 getExperimentalSoundshare() {
-                    let e = e4().experimentalSoundshare2;
+                    let e = e6().experimentalSoundshare2;
                     return this.supportsExperimentalSoundshare() && (null == e || e)
                 }
                 supportsExperimentalSoundshare() {
-                    return eO.supports(eT.Features.EXPERIMENTAL_SOUNDSHARE) && T().satisfies(null === N.default || void 0 === N.default ? void 0 : N.default.os.release, ec.WINDOWS_SOUNDSHARE_VERSION)
+                    return eR.supports(ef.Features.EXPERIMENTAL_SOUNDSHARE) && T().satisfies(null === N.default || void 0 === N.default ? void 0 : N.default.os.release, eE.WINDOWS_SOUNDSHARE_VERSION)
                 }
                 getOpenH264() {
-                    return e4().openH264
+                    return e6().openH264
                 }
                 getEverSpeakingWhileMuted() {
-                    return eV
+                    return ex
                 }
                 supportsScreenSoundshare() {
-                    return (0, $.isMac)() && eO.supports(eT.Features.SOUNDSHARE) && T().satisfies(null === N.default || void 0 === N.default ? void 0 : N.default.os.release, ec.DARWIN_SCKIT_AUDIO_VERSION) && tn() || (0, $.isWindows)() && eO.supports(eT.Features.SCREEN_SOUNDSHARE) && this.getExperimentalSoundshare()
+                    return (0, ee.isMac)() && eR.supports(ef.Features.SOUNDSHARE) && T().satisfies(null === N.default || void 0 === N.default ? void 0 : N.default.os.release, eE.DARWIN_SCKIT_AUDIO_VERSION) && ti() || (0, ee.isWindows)() && eR.supports(ef.Features.SCREEN_SOUNDSHARE) && this.getExperimentalSoundshare()
                 }
                 getVideoStreamParameters() {
                     var e;
-                    let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eT.MediaEngineContextTypes.DEFAULT,
-                        n = this.supports(eT.Features.VIDEO) ? [{
+                    let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ef.MediaEngineContextTypes.DEFAULT,
+                        n = this.supports(ef.Features.VIDEO) ? [{
                             rid: "100",
-                            type: t === eT.MediaEngineContextTypes.DEFAULT ? eT.MediaTypes.VIDEO : eT.MediaTypes.SCREEN,
+                            type: t === ef.MediaEngineContextTypes.DEFAULT ? ef.MediaTypes.VIDEO : ef.MediaTypes.SCREEN,
                             quality: 100
                         }] : [];
-                    if (this.isSimulcastSupported() && (t === eT.MediaEngineContextTypes.DEFAULT || (e = !1, G.default.getCurrentConfig({
+                    if (this.isSimulcastSupported() && (t === ef.MediaEngineContextTypes.DEFAULT || (e = !1, w.default.getCurrentConfig({
                             location: "GoLiveSimulcastEnabled"
                         }, {
                             autoTrackExposure: e
                         }).enableGoLiveSimulcast))) n.push({
                         rid: "50",
-                        type: eT.MediaTypes.VIDEO,
+                        type: ef.MediaTypes.VIDEO,
                         quality: 50
                     });
                     return n
                 }
                 getSupportedSecureFramesProtocolVersion(e) {
                     var t;
-                    let n = eO.getSupportedSecureFramesProtocolVersion(),
-                        i = H.SecureFramesUserExperiment.getCurrentConfig({
+                    let n = eR.getSupportedSecureFramesProtocolVersion(),
+                        i = Y.SecureFramesUserExperiment.getCurrentConfig({
                             location: "MediaEngineStore"
                         }),
-                        r = null != e ? H.SecureFramesGuildExperiment.getCurrentConfig({
+                        r = null != e ? Y.SecureFramesGuildExperiment.getCurrentConfig({
                             guildId: e,
                             location: "MediaEngineStore"
                         }) : null,
@@ -231064,7 +231345,7 @@
                     return null != a
                 }
             }
-            eS(th, "displayName", "MediaEngineStore"), i = new th(m.default, {
+            eh(tA, "displayName", "MediaEngineStore"), i = new tA(m.default, {
                 VOICE_CHANNEL_SELECT: function(e) {
                     let {
                         guildId: t,
@@ -231072,62 +231353,62 @@
                         currentVoiceChannelId: i,
                         video: r
                     } = e;
-                    if (i !== n && e8(r, null), null != t || null == n) {
-                        eW = !1;
+                    if (i !== n && e9(r, null), null != t || null == n) {
+                        eK = !1;
                         return
                     }
-                    if (eW) return;
-                    eW = !0;
-                    let s = e4();
-                    (s.mute || s.deaf) && (tr({
+                    if (eK) return;
+                    eK = !0;
+                    let s = e6();
+                    (s.mute || s.deaf) && (ts({
                         deaf: !1,
                         mute: !1
-                    }), eO.eachConnection(e5))
+                    }), eR.eachConnection(e8))
                 },
                 VOICE_STATE_UPDATES: function(e) {
                     let {
                         voiceStates: t
                     } = e;
-                    return t.reduce((e, t) => r === t.sessionId ? (eP = t.mute || t.suppress, eG = t.deaf, eO.eachConnection(e5), e8(!(null != t.guildId && null != t.channelId && null != eX && eX !== t.channelId) && ew), eX = t.channelId, !0) : (!__OVERLAY__ && t.userId === ei.default.getId() && null == eu.default.getChannelId() && e8(!1, null), e), !1)
+                    return t.reduce((e, t) => r === t.sessionId ? (eU = t.mute || t.suppress, ew = t.deaf, eR.eachConnection(e8), e9(!(null != t.guildId && null != t.channelId && null != eQ && eQ !== t.channelId) && eB), eQ = t.channelId, !0) : (!__OVERLAY__ && t.userId === er.default.getId() && null == ed.default.getChannelId() && e9(!1, null), e), !1)
                 },
                 CONNECTION_OPEN: function(e) {
-                    r = e.sessionId, eP = !1, eG = !1, (0, z.shouldReadWriteAudioSettings)() && tu()
+                    r = e.sessionId, eU = !1, ew = !1, (0, X.shouldReadWriteAudioSettings)() && td()
                 },
                 CONNECTION_CLOSED: function() {
                     r = null
                 },
                 RTC_CONNECTION_STATE: function(e) {
                     switch (e.state) {
-                        case e_.RTCConnectionStates.CONNECTING:
-                            ts();
+                        case ec.RTCConnectionStates.CONNECTING:
+                            ta();
                             break;
-                        case e_.RTCConnectionStates.RTC_CONNECTING:
-                            eY = !1, ej = !1;
+                        case ec.RTCConnectionStates.RTC_CONNECTING:
+                            ej = !1, eW = !1;
                             break;
-                        case e_.RTCConnectionStates.RTC_CONNECTED:
-                            e8();
+                        case ec.RTCConnectionStates.RTC_CONNECTED:
+                            e9();
                             break;
-                        case e_.RTCConnectionStates.DISCONNECTED:
+                        case ec.RTCConnectionStates.DISCONNECTED:
                             (function() {
-                                if (0 === eJ.size) return;
-                                let e = eT.MediaEngineContextTypes.DEFAULT,
+                                if (0 === e$.size) return;
+                                let e = ef.MediaEngineContextTypes.DEFAULT,
                                     {
                                         disabledLocalVideos: t
-                                    } = e4(e);
-                                eJ.forEach(n => {
-                                    _()(t[n], "If you are auto-disabled, then you are also disabled."), delete t[n], eO.eachConnection(e => e.setLocalVideoDisabled(n, !1), e)
-                                }), eJ.clear(), tr({
+                                    } = e6(e);
+                                e$.forEach(n => {
+                                    _()(t[n], "If you are auto-disabled, then you are also disabled."), delete t[n], eR.eachConnection(e => e.setLocalVideoDisabled(n, !1), e)
+                                }), e$.clear(), ts({
                                     disabledLocalVideos: t
                                 }, e, !1)
-                            })(), tc()
+                            })(), tE()
                     }
-                    ti.update()
+                    tr.update()
                 },
                 AUDIO_SET_TEMPORARY_SELF_MUTE: function(e) {
                     let {
                         mute: t
                     } = e;
-                    eU = t, eO.eachConnection(e5)
+                    eb = t, eR.eachConnection(e8)
                 },
                 AUDIO_TOGGLE_SELF_MUTE: function(e) {
                     let {
@@ -231136,42 +231417,42 @@
                     } = e, {
                         mute: i,
                         deaf: r
-                    } = e4(t);
-                    if (t === eT.MediaEngineContextTypes.DEFAULT && (K.default.requestPermission(eE.NativePermissionTypes.AUDIO), eb)) return !1;
-                    !(i = !r && !i) && (r = !1), n && (ek = !0), tr({
+                    } = e6(t);
+                    if (t === ef.MediaEngineContextTypes.DEFAULT && (z.default.requestPermission(eI.NativePermissionTypes.AUDIO), eG)) return !1;
+                    !(i = !r && !i) && (r = !1), n && (eV = !0), ts({
                         mute: i,
                         deaf: r
-                    }, t), eO.eachConnection(e5)
+                    }, t), eR.eachConnection(e8)
                 },
                 AUDIO_SET_SELF_MUTE: function(e) {
                     let {
                         context: t,
                         mute: n
                     } = e;
-                    tr({
+                    ts({
                         mute: n
-                    }, t), eO.eachConnection(e5)
+                    }, t), eR.eachConnection(e8)
                 },
                 AUDIO_TOGGLE_SELF_DEAF: function(e) {
                     let {
                         context: t
                     } = e;
-                    tr({
-                        deaf: !e4(t).deaf
-                    }, t), eO.eachConnection(e5)
+                    ts({
+                        deaf: !e6(t).deaf
+                    }, t), eR.eachConnection(e8)
                 },
                 AUDIO_TOGGLE_LOCAL_MUTE: function(e) {
                     let {
                         context: t,
                         userId: n
                     } = e;
-                    if (n === ei.default.getId()) return;
+                    if (n === er.default.getId()) return;
                     let {
                         localMutes: i
-                    } = e4(t);
-                    i[n] ? delete i[n] : i[n] = !0, tr({
+                    } = e6(t);
+                    i[n] ? delete i[n] : i[n] = !0, ts({
                         localMutes: i
-                    }, t), eO.eachConnection(e => e.setLocalMute(n, i[n] || !1), t)
+                    }, t), eR.eachConnection(e => e.setLocalMute(n, i[n] || !1), t)
                 },
                 AUDIO_SET_LOCAL_VIDEO_DISABLED: function(e) {
                     var t, n, i, r, s, a, o;
@@ -231183,31 +231464,31 @@
                         isAutomatic: E
                     } = e;
                     _()(!(c && E), "These are not allowed to both be true.");
-                    let I = d === e_.VideoToggleState.DISABLED,
+                    let I = d === ec.VideoToggleState.DISABLED,
                         {
                             disabledLocalVideos: T
-                        } = e4(l),
+                        } = e6(l),
                         f = null !== (t = T[u]) && void 0 !== t && t,
-                        S = eJ.has(u),
-                        h = d === e_.VideoToggleState.AUTO_ENABLED || d === e_.VideoToggleState.MANUAL_ENABLED;
-                    eh.info("disableVideo=".concat(I, " currentlyDisabled=").concat(f, " currentlyAutoDisabled=").concat(S, ", isVideoShown=").concat(h)), _()(!(S && !f), "If you are auto-disabled, then you are also disabled.");
+                        S = e$.has(u),
+                        h = d === ec.VideoToggleState.AUTO_ENABLED || d === ec.VideoToggleState.MANUAL_ENABLED;
+                    eA.info("disableVideo=".concat(I, " currentlyDisabled=").concat(f, " currentlyAutoDisabled=").concat(S, ", isVideoShown=").concat(h)), _()(!(S && !f), "If you are auto-disabled, then you are also disabled.");
                     let A = I !== f,
-                        m = l === eT.MediaEngineContextTypes.DEFAULT,
+                        m = l === ef.MediaEngineContextTypes.DEFAULT,
                         N = E && A && m,
                         p = c && A && m;
-                    eh.info("changed=".concat(A, " isDefaultContext=").concat(m, " isUpdateCausedByVideoHealthManager=").concat(N, " isManualToggleByUser=").concat(p));
+                    eA.info("changed=".concat(A, " isDefaultContext=").concat(m, " isUpdateCausedByVideoHealthManager=").concat(N, " isManualToggleByUser=").concat(p));
                     let {
                         videoToggleStateMap: O
-                    } = e4(l);
-                    if (O[u] === e_.VideoToggleState.AUTO_PROBING && d === e_.VideoToggleState.AUTO_ENABLED && (0, W.default)(u, I ? eT.VideoToggleReason.AUTO_DISABLE : eT.VideoToggleReason.AUTO_ENABLE, h), O[u] = d, tr({
+                    } = e6(l);
+                    if (O[u] === ec.VideoToggleState.AUTO_PROBING && d === ec.VideoToggleState.AUTO_ENABLED && (0, K.default)(u, I ? ef.VideoToggleReason.AUTO_DISABLE : ef.VideoToggleReason.AUTO_ENABLE, h), O[u] = d, ts({
                             videoToggleStateMap: O
-                        }, l, c), d === e_.VideoToggleState.AUTO_PROBING ? null === (n = eu.default.getRTCConnection()) || void 0 === n || n.pauseStatsCollectionForUser(u, !0) : null === (i = eu.default.getRTCConnection()) || void 0 === i || i.pauseStatsCollectionForUser(u, !1), !e$ && (eh.info("isAutoDisableAllowed=".concat(e$, " - disabling VideoHealthManager")), null === (s = eu.default.getRTCConnection()) || void 0 === s || null === (r = s.getVideoHealthManager()) || void 0 === r || r.disable()), N) {
-                        if (!I && !S || I && !e$) return;
-                        (0, W.default)(u, I ? eT.VideoToggleReason.AUTO_DISABLE : eT.VideoToggleReason.AUTO_ENABLE, h), I ? eJ.add(u) : eJ.delete(u)
-                    } else p && (S && !I ? (eh.info("disallowing auto-disable for this session because of manual override by user"), e$ = !1, null === (o = eu.default.getRTCConnection()) || void 0 === o || null === (a = o.getVideoHealthManager()) || void 0 === a || a.disable(), (0, W.default)(u, eT.VideoToggleReason.MANUAL_REENABLE, h)) : (0, W.default)(u, I ? eT.VideoToggleReason.MANUAL_DISABLE : eT.VideoToggleReason.MANUAL_ENABLE, h));
-                    m && !I && eJ.delete(u), I ? T[u] = !0 : delete T[u], tr({
+                        }, l, c), d === ec.VideoToggleState.AUTO_PROBING ? null === (n = ed.default.getRTCConnection()) || void 0 === n || n.pauseStatsCollectionForUser(u, !0) : null === (i = ed.default.getRTCConnection()) || void 0 === i || i.pauseStatsCollectionForUser(u, !1), !e0 && (eA.info("isAutoDisableAllowed=".concat(e0, " - disabling VideoHealthManager")), null === (s = ed.default.getRTCConnection()) || void 0 === s || null === (r = s.getVideoHealthManager()) || void 0 === r || r.disable()), N) {
+                        if (!I && !S || I && !e0) return;
+                        (0, K.default)(u, I ? ef.VideoToggleReason.AUTO_DISABLE : ef.VideoToggleReason.AUTO_ENABLE, h), I ? e$.add(u) : e$.delete(u)
+                    } else p && (S && !I ? (eA.info("disallowing auto-disable for this session because of manual override by user"), e0 = !1, null === (o = ed.default.getRTCConnection()) || void 0 === o || null === (a = o.getVideoHealthManager()) || void 0 === a || a.disable(), (0, K.default)(u, ef.VideoToggleReason.MANUAL_REENABLE, h)) : (0, K.default)(u, I ? ef.VideoToggleReason.MANUAL_DISABLE : ef.VideoToggleReason.MANUAL_ENABLE, h));
+                    m && !I && e$.delete(u), I ? T[u] = !0 : delete T[u], ts({
                         disabledLocalVideos: T
-                    }, l, c), eO.eachConnection(e => {
+                    }, l, c), eR.eachConnection(e => {
                         var t;
                         return e.setLocalVideoDisabled(u, null !== (t = T[u]) && void 0 !== t && t)
                     }, l)
@@ -231218,14 +231499,14 @@
                         userId: n,
                         volume: i
                     } = e;
-                    if (n === ei.default.getId()) return;
-                    let r = t === eT.MediaEngineContextTypes.STREAM ? eT.DEFAULT_STREAM_VOLUME : eT.DEFAULT_VOLUME,
+                    if (n === er.default.getId()) return;
+                    let r = t === ef.MediaEngineContextTypes.STREAM ? ef.DEFAULT_STREAM_VOLUME : ef.DEFAULT_VOLUME,
                         {
                             localVolumes: s
-                        } = e4(t);
-                    i === r ? delete s[n] : s[n] = i, tr({
+                        } = e6(t);
+                    i === r ? delete s[n] : s[n] = i, ts({
                         localVolumes: s
-                    }, t), eO.eachConnection(e => e.setLocalVolume(n, i), t)
+                    }, t), eR.eachConnection(e => e.setLocalVolume(n, i), t)
                 },
                 AUDIO_SET_LOCAL_PAN: function(e) {
                     let {
@@ -231235,13 +231516,13 @@
                         right: r
                     } = e, {
                         localPans: s
-                    } = e4(t);
+                    } = e6(t);
                     s[n] = {
                         left: i,
                         right: r
-                    }, tr({
+                    }, ts({
                         localPans: s
-                    }, t), eO.eachConnection(e => e.setLocalPan(n, i, r), t)
+                    }, t), eR.eachConnection(e => e.setLocalPan(n, i, r), t)
                 },
                 AUDIO_SET_MODE: function(e) {
                     let {
@@ -231249,88 +231530,88 @@
                         mode: n,
                         options: i
                     } = e;
-                    tr({
+                    ts({
                         mode: n,
                         modeOptions: i
-                    }, t), eO.eachConnection(e6), ti.update()
+                    }, t), eR.eachConnection(e7), tr.update()
                 },
                 AUDIO_SET_INPUT_VOLUME: function(e) {
                     let {
                         volume: t
                     } = e;
-                    tr({
-                        inputVolume: e7(t)
-                    }), eO.setInputVolume(t)
+                    ts({
+                        inputVolume: e5(t)
+                    }), eR.setInputVolume(t)
                 },
                 AUDIO_SET_OUTPUT_VOLUME: function(e) {
                     let {
                         volume: t
                     } = e;
-                    tr({
+                    ts({
                         outputVolume: t
-                    }), eO.setOutputVolume(t)
+                    }), eR.setOutputVolume(t)
                 },
                 AUDIO_SET_INPUT_DEVICE: function(e) {
                     let {
                         id: t
                     } = e;
-                    tr({
-                        inputDeviceId: t = tl(ev, t)
-                    }), eO.setAudioInputDevice(t)
+                    ts({
+                        inputDeviceId: t = tu(eM, t)
+                    }), eR.setAudioInputDevice(t)
                 },
                 AUDIO_SET_OUTPUT_DEVICE: function(e) {
                     let {
                         id: t
                     } = e;
-                    tr({
-                        outputDeviceId: t = tl(eM, t)
-                    }), eO.setAudioOutputDevice(t)
+                    ts({
+                        outputDeviceId: t = tu(ey, t)
+                    }), eR.setAudioOutputDevice(t)
                 },
                 AUDIO_SET_ECHO_CANCELLATION: function(e) {
-                    let t = tr({
+                    let t = ts({
                         echoCancellation: e.enabled
                     });
-                    eO.eachConnection(e => e.setEchoCancellation(t.echoCancellation)), tI(), tE(e.location)
+                    eR.eachConnection(e => e.setEchoCancellation(t.echoCancellation)), tT(), tI(e.location)
                 },
                 AUDIO_SET_LOOPBACK: function(e) {
                     let {
                         enabled: t
                     } = e;
-                    return e0 = t, tI()
+                    return e1 = t, tT()
                 },
                 AUDIO_SET_NOISE_SUPPRESSION: function(e) {
-                    let t = tr({
+                    let t = ts({
                         noiseSuppression: e.enabled
                     });
-                    eO.eachConnection(e => e.setNoiseSuppression(t.noiseSuppression)), tI(), tE(e.location)
+                    eR.eachConnection(e => e.setNoiseSuppression(t.noiseSuppression)), tT(), tI(e.location)
                 },
                 AUDIO_SET_AUTOMATIC_GAIN_CONTROL: function(e) {
-                    let t = tr({
+                    let t = ts({
                         automaticGainControl: e.enabled
                     });
-                    eO.eachConnection(e => e.setAutomaticGainControl(t.automaticGainControl)), tI(), tE(e.location)
+                    eR.eachConnection(e => e.setAutomaticGainControl(t.automaticGainControl)), tT(), tI(e.location)
                 },
                 AUDIO_SET_NOISE_CANCELLATION: function(e) {
-                    let t = tr({
+                    let t = ts({
                         noiseCancellation: e.enabled
                     });
-                    eO.eachConnection(e => e.setNoiseCancellation(t.noiseCancellation)), tI(), tE(e.location)
+                    eR.eachConnection(e => e.setNoiseCancellation(t.noiseCancellation)), tT(), tI(e.location)
                 },
                 AUDIO_SET_DISPLAY_SILENCE_WARNING: function(e) {
-                    tr({
+                    ts({
                         silenceWarning: e.enabled
-                    }), ti.update()
+                    }), tr.update()
                 },
                 AUDIO_SET_DEBUG_LOGGING: function(e) {
-                    eO.setDebugLogging(e.enabled)
+                    eR.setDebugLogging(e.enabled)
                 },
                 MEDIA_ENGINE_SET_VIDEO_HOOK: function(e) {
-                    tr({
+                    ts({
                         videoHook: e.enabled
                     })
                 },
                 MEDIA_ENGINE_SET_EXPERIMENTAL_SOUNDSHARE: function(e) {
-                    tr({
+                    ts({
                         experimentalSoundshare2: e.enabled
                     })
                 },
@@ -231339,20 +231620,20 @@
                         attenuation: t,
                         attenuateWhileSpeakingSelf: n,
                         attenuateWhileSpeakingOthers: i
-                    } = e, r = tr({
+                    } = e, r = ts({
                         attenuation: t,
                         attenuateWhileSpeakingSelf: n,
                         attenuateWhileSpeakingOthers: i
                     });
-                    eO.eachConnection(e => e.setAttenuation(r.attenuation, r.attenuateWhileSpeakingSelf, r.attenuateWhileSpeakingOthers))
+                    eR.eachConnection(e => e.setAttenuation(r.attenuation, r.attenuateWhileSpeakingSelf, r.attenuateWhileSpeakingOthers))
                 },
                 AUDIO_SET_QOS: function(e) {
                     let {
                         enabled: t
                     } = e;
-                    tr({
+                    ts({
                         qos: t
-                    }), eO.eachConnection(e => e.setQoS(t))
+                    }), eR.eachConnection(e => e.setQoS(t))
                 },
                 MEDIA_ENGINE_DEVICES: function(e) {
                     let {
@@ -231361,27 +231642,27 @@
                         videoDevices: i
                     } = e;
                     ! function(e) {
-                        let t = ev;
-                        if (ev = to(e, ef.default.Messages.NO_INPUT_DEVICES), !E().isEqual(ev, t)) {
-                            let e = e4(),
-                                t = tl(ev, e.inputDeviceId);
-                            eO.setAudioInputDevice(t)
+                        let t = eM;
+                        if (eM = tl(e, eS.default.Messages.NO_INPUT_DEVICES), !E().isEqual(eM, t)) {
+                            let e = e6(),
+                                t = tu(eM, e.inputDeviceId);
+                            eR.setAudioInputDevice(t)
                         }
                     }(t), ! function(e) {
-                        let t = eM;
-                        if (eM = to(e, ef.default.Messages.NO_OUTPUT_DEVICES), !E().isEqual(eM, t)) {
-                            let e = e4(),
-                                t = tl(eM, e.outputDeviceId);
-                            eO.setAudioOutputDevice(t)
+                        let t = ey;
+                        if (ey = tl(e, eS.default.Messages.NO_OUTPUT_DEVICES), !E().isEqual(ey, t)) {
+                            let e = e6(),
+                                t = tu(ey, e.outputDeviceId);
+                            eR.setAudioOutputDevice(t)
                         }
                     }(n), ! function(e) {
-                        eF = e.length > 0;
-                        let t = ey;
-                        if (ey = to(e, ef.default.Messages.NO_VIDEO_DEVICES), ew && !E().isEqual(ey, t)) {
+                        eH = e.length > 0;
+                        let t = eP;
+                        if (eP = tl(e, eS.default.Messages.NO_VIDEO_DEVICES), eB && !E().isEqual(eP, t)) {
                             var n;
-                            let e = void 0 !== ey[eB],
-                                i = eB === eT.DEFAULT_DEVICE_ID && (null === (n = t[eT.DEFAULT_DEVICE_ID]) || void 0 === n ? void 0 : n.disabled);
-                            e8(e || i)
+                            let e = void 0 !== eP[ek],
+                                i = ek === ef.DEFAULT_DEVICE_ID && (null === (n = t[ef.DEFAULT_DEVICE_ID]) || void 0 === n ? void 0 : n.disabled);
+                            e9(e || i)
                         }
                     }(i)
                 },
@@ -231390,34 +231671,34 @@
                         inputVolume: t,
                         outputVolume: n
                     } = e;
-                    tr({
-                        inputVolume: e7(t),
+                    ts({
+                        inputVolume: e5(t),
                         outputVolume: n
                     })
                 },
                 AUDIO_RESET: function() {
-                    h.Storage.remove(eA), location.reload()
+                    h.Storage.remove(em), location.reload()
                 },
                 AUDIO_INPUT_DETECTED: function(e) {
                     let {
                         inputDetected: t
                     } = e;
-                    eH = t, !eY && eH && (eY = !0, ti.update())
+                    eY = t, !ej && eY && (ej = !0, tr.update())
                 },
                 AUDIO_SET_SUBSYSTEM: function(e) {
-                    eO.setAudioSubsystem(e.subsystem)
+                    eR.setAudioSubsystem(e.subsystem)
                 },
                 MEDIA_ENGINE_SET_AUDIO_ENABLED: function(e) {
-                    eg = e.enabled, e.unmute && tr({
+                    eL = e.enabled, e.unmute && ts({
                         mute: !1,
                         deaf: !1
-                    }), eO.eachConnection(e5)
+                    }), eR.eachConnection(e8)
                 },
                 MEDIA_ENGINE_SET_VIDEO_ENABLED: function(e) {
                     let {
                         enabled: t
                     } = e;
-                    K.default.requestPermission(eE.NativePermissionTypes.CAMERA), e8(t)
+                    z.default.requestPermission(eI.NativePermissionTypes.CAMERA), e9(t)
                 },
                 MEDIA_ENGINE_PERMISSION: function(e) {
                     let {
@@ -231426,10 +231707,10 @@
                     } = e;
                     if (!n) switch (t) {
                         case "audio":
-                            eg = !1, eO.eachConnection(e5);
+                            eL = !1, eR.eachConnection(e8);
                             break;
                         case "video":
-                            e8(!1)
+                            e9(!1)
                     }
                 },
                 MEDIA_ENGINE_SET_GO_LIVE_SOURCE: function(e) {
@@ -231445,16 +231726,16 @@
                                 sourceId: r,
                                 sound: l
                             } = o.desktopSettings,
-                            u = null !== (t = o.context) && void 0 !== t ? t : eT.MediaEngineContextTypes.DEFAULT,
+                            u = null !== (t = o.context) && void 0 !== t ? t : ef.MediaEngineContextTypes.DEFAULT,
                             d = null !== (n = o.qualityOptions) && void 0 !== n ? n : {
                                 resolution: 720,
                                 frameRate: 30
                             },
-                            _ = Z.default.getPidFromDesktopSource(r);
-                        $.isPlatformEmbedded && !0 === l && ({
+                            _ = J.default.getPidFromDesktopSource(r);
+                        ee.isPlatformEmbedded && !0 === l && ({
                             soundshareId: e,
                             soundshareSession: i
-                        } = td(_), null != e && t_(e, i)), (a = u) !== eD && (null != s && eO.setGoLiveSource(null, eD), eD = a), e8(u === eT.MediaEngineContextTypes.STREAM && ew, {
+                        } = t_(_), null != e && tc(e, i)), (a = u) !== ev && (null != s && eR.setGoLiveSource(null, ev), ev = a), e9(u === ef.MediaEngineContextTypes.STREAM && eB, {
                             desktopSource: {
                                 id: r,
                                 sourcePid: _,
@@ -231467,17 +231748,17 @@
                             }
                         })
                     } else if ((null == o ? void 0 : o.cameraSettings) != null) {
-                        let e = null !== (i = o.context) && void 0 !== i ? i : eT.MediaEngineContextTypes.DEFAULT,
+                        let e = null !== (i = o.context) && void 0 !== i ? i : ef.MediaEngineContextTypes.DEFAULT,
                             {
                                 videoDeviceGuid: t,
                                 audioDeviceGuid: n
                             } = o.cameraSettings,
-                            s = e === eT.MediaEngineContextTypes.STREAM && ew,
+                            s = e === ef.MediaEngineContextTypes.STREAM && eB,
                             a = null !== (r = o.qualityOptions) && void 0 !== r ? r : {
                                 resolution: 720,
                                 frameRate: 30
                             };
-                        e8(s, {
+                        e9(s, {
                             cameraSource: {
                                 videoDeviceGuid: t,
                                 audioDeviceGuid: n
@@ -231487,132 +231768,132 @@
                                 frameRate: a.frameRate
                             }
                         })
-                    } else e8(ew, null)
+                    } else e9(eB, null)
                 },
                 MEDIA_ENGINE_SET_VIDEO_DEVICE: function(e) {
                     let {
                         id: t
                     } = e;
-                    tr({
-                        videoDeviceId: t = tl(ey, t)
-                    }), e8()
+                    ts({
+                        videoDeviceId: t = tu(eP, t)
+                    }), e9()
                 },
                 MEDIA_ENGINE_SET_EXPERIMENTAL_ENCODERS: function(e) {
-                    let t = tr({
+                    let t = ts({
                         experimentalEncoders: e.enabled
                     });
-                    eO.eachConnection(e => e.setExperimentalEncoders(t.experimentalEncoders))
+                    eR.eachConnection(e => e.setExperimentalEncoders(t.experimentalEncoders))
                 },
                 MEDIA_ENGINE_INTERACTION_REQUIRED: function(e) {
-                    return eL !== e.required && (eL = e.required, !e.required && eO.interact(), !0)
+                    return eD !== e.required && (eD = e.required, !e.required && eR.interact(), !0)
                 },
-                USER_SETTINGS_MODAL_INIT: tS,
-                USER_SETTINGS_MODAL_SET_SECTION: tS,
+                USER_SETTINGS_MODAL_INIT: th,
+                USER_SETTINGS_MODAL_SET_SECTION: th,
                 CERTIFIED_DEVICES_SET: function() {
-                    return eO.eachConnection(te), !1
+                    return eR.eachConnection(tt), !1
                 },
                 RPC_APP_CONNECTED: function(e) {
                     let {
                         application: t
                     } = e;
-                    eC.add(t.id)
+                    eg.add(t.id)
                 },
                 RPC_APP_DISCONNECTED: function(e) {
                     let {
                         application: t
                     } = e;
-                    eC.delete(t.id)
+                    eg.delete(t.id)
                 },
                 OVERLAY_INITIALIZE: function(e) {
                     let {
                         mediaEngineState: t
                     } = e;
-                    eR = t.settingsByContext, ev = t.inputDevices, eM = t.outputDevices, e1 = t.appSupported, ez = t.krispModuleLoaded, eD = t.goLiveContext
+                    eC = t.settingsByContext, eM = t.inputDevices, ey = t.outputDevices, e2 = t.appSupported, eX = t.krispModuleLoaded, ev = t.goLiveContext
                 },
                 MEDIA_ENGINE_SET_OPEN_H264: function(e) {
                     let {
                         enabled: t
-                    } = e, n = tr({
+                    } = e, n = ts({
                         openH264: t
                     });
-                    eO.setH264Enabled(n.openH264)
+                    eR.setH264Enabled(n.openH264)
                 },
                 MEDIA_ENGINE_SET_HARDWARE_H264: function(e) {
                     let {
                         enabled: t
-                    } = e, n = tr({
+                    } = e, n = ts({
                         hardwareH264: t
                     });
-                    eO.eachConnection(e => e.setHardwareH264(n.hardwareH264)), eO.setAv1Enabled(n.hardwareH264), eO.setH265Enabled(n.hardwareH264)
+                    eR.eachConnection(e => e.setHardwareH264(n.hardwareH264)), eR.setAv1Enabled(n.hardwareH264), eR.setH265Enabled(n.hardwareH264)
                 },
                 APP_STATE_UPDATE: function(e) {
                     let {
                         state: t
                     } = e, n = D.default.isEnabled();
-                    if (t === e_.AppStates.BACKGROUND && ew && !n) ex = !0, e8(!1);
+                    if (t === ec.AppStates.BACKGROUND && eB && !n) eF = !0, e9(!1);
                     else {
-                        if (t !== e_.AppStates.ACTIVE || !ex) return !1;
-                        ex = !1, e8(!0)
+                        if (t !== ec.AppStates.ACTIVE || !eF) return !1;
+                        eF = !1, e9(!0)
                     }
                     return !0
                 },
                 SET_CHANNEL_BITRATE: function(e) {
-                    eO.eachConnection(t => t.setBitRate(e.bitrate))
+                    eR.eachConnection(t => t.setBitRate(e.bitrate))
                 },
                 SET_VAD_PERMISSION: function(e) {
                     let {
                         hasPermission: t
                     } = e, n = !t;
-                    if (n === eb) return !1;
-                    eb = n, eO.eachConnection(e5)
+                    if (n === eG) return !1;
+                    eG = n, eR.eachConnection(e8)
                 },
                 SET_NATIVE_PERMISSION: function(e) {
                     let {
                         state: t,
                         permissionType: n
-                    } = e, i = t === eE.NativePermissionStates.ACCEPTED;
+                    } = e, i = t === eI.NativePermissionStates.ACCEPTED;
                     switch (n) {
-                        case eE.NativePermissionTypes.AUDIO:
-                            eZ = !0, eO.eachConnection(e5);
+                        case eI.NativePermissionTypes.AUDIO:
+                            eJ = !0, eR.eachConnection(e8);
                             break;
-                        case eE.NativePermissionTypes.CAMERA:
-                            !i && ew && e8(!1);
+                        case eI.NativePermissionTypes.CAMERA:
+                            !i && eB && e9(!1);
                             break;
                         default:
                             return !1
                     }
                 },
                 SET_CHANNEL_VIDEO_QUALITY_MODE: function(e) {
-                    eO.eachConnection(t => t.applyVideoQualityMode(e.mode))
+                    eR.eachConnection(t => t.applyVideoQualityMode(e.mode))
                 },
                 MEDIA_ENGINE_SET_AEC_DUMP: function(e) {
                     let {
                         enabled: t
-                    } = e, n = tr({
+                    } = e, n = ts({
                         aecDumpEnabled: t
                     });
-                    eO.setAecDump(n.aecDumpEnabled)
+                    eR.setAecDump(n.aecDumpEnabled)
                 },
                 CHANNEL_DELETE: function() {
-                    if (!ew && null == s || null != eu.default.getRTCConnectionId()) return !1;
-                    e8(!1, null)
+                    if (!eB && null == s || null != ed.default.getRTCConnectionId()) return !1;
+                    e9(!1, null)
                 },
                 MEDIA_ENGINE_NOISE_CANCELLATION_ERROR_RESET: function() {
-                    return !!eQ && (eQ = !1, !0)
+                    return !!eq && (eq = !1, !0)
                 },
                 MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: function(e) {
                     let {
                         settings: t
                     } = e;
-                    eO.applyMediaFilterSettings(t).finally(() => {
-                        eq = !1, i.emitChange()
+                    eR.applyMediaFilterSettings(t).finally(() => {
+                        eZ = !1, i.emitChange()
                     })
                 },
                 MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_START: function() {
-                    eq = !0
+                    eZ = !0
                 },
                 MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_ERROR: function() {
-                    eq = !1
+                    eZ = !1
                 },
                 USER_SETTINGS_PROTO_UPDATE: function(e) {
                     let {
@@ -231622,8 +231903,8 @@
                         local: n,
                         wasSaved: i
                     } = e;
-                    if (!(0, z.shouldReadWriteAudioSettings)() || t !== eI.UserSettingsTypes.PRELOADED_USER_SETTINGS || n || null != i) return !1;
-                    tu(!0)
+                    if (!(0, X.shouldReadWriteAudioSettings)() || t !== eT.UserSettingsTypes.PRELOADED_USER_SETTINGS || n || null != i) return !1;
+                    td(!0)
                 },
                 CLIPS_INIT: function(e) {
                     let {
@@ -231632,7 +231913,7 @@
                         quality: r
                     } = e, {
                         enableDecoupledGameClipping: s
-                    } = b.default.getCurrentConfig({
+                    } = G.default.getCurrentConfig({
                         location: "handleClipsInit"
                     }, {
                         autoTrackExposure: !0
@@ -231640,11 +231921,11 @@
                     if (!s || !o || null == N.default) return;
                     let l = null,
                         u = null,
-                        d = Z.default.getPidFromDesktopSource(t);
+                        d = J.default.getPidFromDesktopSource(t);
                     ({
                         soundshareId: l,
                         soundshareSession: u
-                    } = td(d));
+                    } = t_(d));
                     let _ = {
                         desktopSource: {
                             id: t,
@@ -231654,25 +231935,25 @@
                         },
                         quality: r
                     };
-                    null != a && a.desktopSource.id !== _.desktopSource.id && (eO.setClipsSource(null), (0, $.isWindows)() && null != a.desktopSource.soundshareId && p.cancelAttachToProcess(a.desktopSource.soundshareId)), null != l && t_(l, u), a = _;
+                    null != a && a.desktopSource.id !== _.desktopSource.id && (eR.setClipsSource(null), (0, ee.isWindows)() && null != a.desktopSource.soundshareId && p.cancelAttachToProcess(a.desktopSource.soundshareId)), null != l && tc(l, u), a = _;
                     let {
                         hdrCaptureMode: c
-                    } = V.default.getCurrentConfig({
+                    } = x.default.getCurrentConfig({
                         location: "f627ab_12"
                     }, {
                         autoTrackExposure: !1
-                    }), E = e4().videoHook;
-                    eO.setClipsSource({
+                    }), E = e6().videoHook;
+                    eR.setClipsSource({
                         desktopDescription: {
                             id: a.desktopSource.id,
                             soundshareId: a.desktopSource.soundshareId,
                             useVideoHook: E,
-                            useGraphicsCapture: tt(),
+                            useGraphicsCapture: tn(),
                             useLoopback: i.getExperimentalSoundshare(),
                             useQuartzCapturer: !0,
-                            allowScreenCaptureKit: tn(),
+                            allowScreenCaptureKit: ti(),
                             videoHookStaleFrameTimeoutMs: 500,
-                            graphicsCaptureStaleFrameTimeoutMs: eN,
+                            graphicsCaptureStaleFrameTimeoutMs: ep,
                             hdrCaptureMode: c
                         },
                         quality: r,
@@ -231683,7 +231964,7 @@
                     let {
                         settings: t
                     } = e;
-                    !1 === t.decoupledClipsEnabled && (a = null, eO.setClipsSource(null))
+                    !1 === t.decoupledClipsEnabled && (a = null, eR.setClipsSource(null))
                 }
             }), t.default = i
         },
@@ -244876,7 +245157,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "c843e820d559e1442507cb1fc1f89517be35d345"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "2e640e855e21ac942db3822fa04e47db4870f10d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -268240,7 +268521,7 @@
                     size: i,
                     forcePNG: r = !1
                 } = e, s = f && !r ? "webp" : "png", a = f && !S ? "&quality=lossless" : "";
-                return null != window.GLOBAL_ENV.CDN_HOST ? "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/emojis/").concat(t, ".").concat(n ? "gif" : s, "?size=").concat((0, l.getBestMediaProxySize)(i * (0, l.getDevicePixelRatio)())).concat(a) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + c.Endpoints.EMOJI(t, n ? "gif" : s)
+                return null != window.GLOBAL_ENV.CDN_HOST ? "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/emojis/").concat(t, ".").concat(n ? "gif" : s, "?size=").concat((0, l.getBestMediaProxySize)(i * (0, l.getDevicePixelRatio)(), S)).concat(a) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + c.Endpoints.EMOJI(t, n ? "gif" : s)
             }
 
             function m(e, t) {
@@ -273400,7 +273681,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287665"
+                                build_number: "288065"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -273651,7 +273932,7 @@
 
             function d(e, t, n) {
                 var i;
-                return null == n ? l.default.Messages.UNKNOWN_USER : null !== (i = u(e, t, n)) && void 0 !== i ? i : o.default.getName(n)
+                return null == n ? l.default.Messages.UNKNOWN_USER_MENTION_PLACEHOLDER : null !== (i = u(e, t, n)) && void 0 !== i ? i : o.default.getName(n)
             }
 
             function _(e, t, n) {
@@ -278289,7 +278570,7 @@
             }
 
             function m(e, t, n) {
-                if (null == e) return o.default.Messages.UNKNOWN_USER;
+                if (null == e) return o.default.Messages.UNKNOWN_USER_MENTION_PLACEHOLDER;
                 if (!_(e.username)) return "???";
                 let i = n;
                 if ("always" === t.identifiable ? i = !1 : "never" === t.identifiable && (i = !0), "0" !== e.discriminator && e.discriminator !== a.NON_USER_BOT_DISCRIMINATOR && !t.forcePomelo) return "username" === t.mode ? e.username : i ? e.username : "".concat(e.username, "#").concat(e.discriminator);
@@ -280634,7 +280915,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287665", "287665"), 10);
+                let s = parseInt((n = "288065", "288065"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -294434,27 +294715,6 @@
                     }
                     this.localVideoSinkWants = e
                 }
-                startSamplesPlayback(e, t, n) {
-                    if (e.numberOfChannels > 2) {
-                        n(1, "Too many channels");
-                        return
-                    }
-                    for (var i = [], r = 0; r < e.numberOfChannels; r++) {
-                        var s = e.getChannelData(r);
-                        i.push(s)
-                    }
-                    try {
-                        this.conn.startSamplesPlayback({
-                            sampleRate: e.sampleRate,
-                            volume: t
-                        }, i, n)
-                    } catch (t) {
-                        this.conn.startSamplesPlayback(e.sampleRate, i, n)
-                    }
-                }
-                stopSamplesPlayback() {
-                    this.conn.stopSamplesPlayback()
-                }
                 startSamplesLocalPlayback(e, t, n, i) {
                     if (t.numberOfChannels > 2) {
                         i(1, "Too many channels");
@@ -296918,8 +297178,6 @@
                 setPostponeDecodeLevel(e) {}
                 setReconnectInterval(e) {}
                 setKeyframeInterval(e) {}
-                startSamplesPlayback(e, t, n) {}
-                stopSamplesPlayback() {}
                 startSamplesLocalPlayback(e, t, n, i) {}
                 stopSamplesLocalPlayback(e) {}
                 stopAllSamplesLocalPlayback() {}
@@ -307295,6 +307553,15 @@
                 }
             }), (r = i || (i = {}))[r.REWARD_CODE = 1] = "REWARD_CODE", r[r.IN_GAME = 2] = "IN_GAME", r[r.COLLECTIBLE = 3] = "COLLECTIBLE"
         },
+        670081: function(e, t, n) {
+            "use strict";
+            var i, r;
+            n.r(t), n.d(t, {
+                QuestVariants: function() {
+                    return i
+                }
+            }), (r = i || (i = {}))[r.POST_ENROLLMENT_CTA = 1] = "POST_ENROLLMENT_CTA", r[r.PLAYTIME_CRITERIA = 2] = "PLAYTIME_CRITERIA", r[r.QUEST_BAR_V2 = 3] = "QUEST_BAR_V2"
+        },
         758846: function(e, t, n) {
             "use strict";
             var i, r;
@@ -308125,4 +308392,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.d2524f57ea1b37d89cea.js.map
+//# sourceMappingURL=35705.ab9baf8a88fe05e0c6b1.js.map
