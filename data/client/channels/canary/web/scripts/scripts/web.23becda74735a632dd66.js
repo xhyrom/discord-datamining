@@ -2098,6 +2098,12 @@
                         thumbnailSize: a
                     })), Promise.all(c).then(e => i()(e))
                 }
+            },
+            596973: function(e) {
+                e.exports = "https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Genshin_Background.png"
+            },
+            553341: function(e) {
+                e.exports = "https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Valorant_Background.png"
             }
         },
         l = {};
@@ -2532,7 +2538,7 @@
             45576: "03762758000eef0bd21a",
             45733: "87d722f9afbd2e2e44f6",
             45747: "f39bee61de7c54c74a7e",
-            46048: "8fb879bd9f42c49b8ef2",
+            46048: "ac28173500acd9a91e43",
             46161: "ddcc8a8e6752de1069ae",
             46369: "936ae4c319e060ef5d32",
             46468: "0caf7d0ecfe447310e19",
@@ -2787,7 +2793,7 @@
             74590: "e0203724740f15d7a20a",
             74602: "52259d090a78a5b7f4fa",
             74673: "e5475b314c05095f84ab",
-            74753: "cb9996e509bcb561c3f2",
+            74753: "4c0190b2743865ffcf26",
             74870: "148c4825212af5cd350f",
             75409: "6d517ccbfd85a79680b3",
             75441: "d90cda406f0e7a585ee2",
@@ -2825,7 +2831,7 @@
             78607: "02a92c93fcf5f333dcd2",
             78650: "3a93a3e614d44167558d",
             78670: "57de4d152fd09f43df04",
-            78690: "4ab45fd1943c4ff9428d",
+            78690: "b88511309b2bd57fb9e9",
             78704: "dc18fd2b5ea7c24806dc",
             78712: "98e549f912a7e836dbb9",
             78786: "ffc48004273a9c78d681",
@@ -3218,4 +3224,4 @@
     });
     s.O(u)
 }();
-//# sourceMappingURL=web.0fe3084f7f8a33700536.js.map
+//# sourceMappingURL=web.23becda74735a632dd66.js.map

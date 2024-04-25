@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287978", ", Version Hash: ").concat("1b50b607db51c9809397086afc937f1d363aab5a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287993", ", Version Hash: ").concat("ff65e15df2ea58013eb27a394283c72609a27798")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55733,9 +55733,6 @@
                 CLAN_DISCOVERY_TRAIT_OVERFLOW: "+ {count, number} more",
                 CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE: "Unknown",
                 CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL: "Playstyle",
-                CLAN_DISCOVERY_GET_STARTED_TITLE: "Just a few clicks to find your Valorant clique.",
-                CLAN_DISCOVERY_GET_STARTED_SUBTITLE: "Answer a few questions to discover Valorant Gaming Guilds on Discord based on your interests and playstyle.",
-                CLAN_DISCOVERY_GET_STARTED_BUTTON: "Get Started",
                 CLANS: "Clans",
                 CLAN_USER_PROFILE_PRIMARY_CLAN: "Primary Clan",
                 CLAN_DISCOVERY_SAVED_FILTER: "{count, number} Saved",
@@ -55747,6 +55744,11 @@
                 CLAN_DISCOVERY_UPSELL_APPLICATIONS: "Approve new members and keep it exclusive",
                 CLAN_DISCOVERY_UPSELL_MAX_SIZE: "Guilds are max 200 people in size.",
                 CLAN_DISCOVERY_UPSELL_RESERVE: "Reserve Your Spot",
+                CLAN_DISCOVERY_UPSELL_VALORANT_TITLE: "Just a few clicks to find your Valorant clique.",
+                CLAN_DISCOVERY_UPSELL_VALORANT_SUBTITLE: "Answer a few questions to discover Valorant Gaming Guilds on Discord based on your interests and playstyle.",
+                CLAN_DISCOVERY_UPSELL_GENSHIN_TITLE: "Just a few clicks to find your Genshin clique.",
+                CLAN_DISCOVERY_UPSELL_GENSHIN_SUBTITLE: "Answer a few questions to discover Genshin Gaming Guilds on Discord based on your interests and playstyle.",
+                CLAN_DISCOVERY_UPSELL_GET_STARTED: "Get Started",
                 MESSAGE_ACTION_FORWARD: "Forward",
                 GUILD_POPOUT_ACTIVITY_EVENT_LOCATION: "Event in",
                 GUILD_POPOUT_ACTIVITY_EVENT_LOCATION_A11Y: "Event in {location}",
@@ -86959,8 +86961,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287978", "287978"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287978")), t = 0), t
+                let t = parseInt((e = "287993", "287993"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287993")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112759,8 +112761,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287978",
-                    versionHash: "1b50b607db51c9809397086afc937f1d363aab5a"
+                    buildNumber: "287993",
+                    versionHash: "ff65e15df2ea58013eb27a394283c72609a27798"
                 }
             }
             n.r(t), n.d(t, {
@@ -167216,8 +167218,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714074476656",
-                                    build_number: "287978"
+                                    built_at: "1714075673437",
+                                    build_number: "287993"
                                 }
                             },
                             retries: 1
@@ -245101,7 +245103,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "1b50b607db51c9809397086afc937f1d363aab5a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ff65e15df2ea58013eb27a394283c72609a27798"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273625,7 +273627,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287978"
+                                build_number: "287993"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280859,7 +280861,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287978", "287978"), 10);
+                let s = parseInt((n = "287993", "287993"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308336,4 +308338,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.724b84465f5195daec29.js.map
+//# sourceMappingURL=35705.d6b15400e8f347548f97.js.map
