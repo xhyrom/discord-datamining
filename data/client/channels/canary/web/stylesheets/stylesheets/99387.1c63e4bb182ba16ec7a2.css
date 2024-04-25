@@ -57179,13 +57179,13 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .color_b28e35 {
-    background-color: var(--redesign-button-secondary-overlay-background);
+    background-color: hsl(var(--black-500-hsl)/.7);
     color: var(--white-500)
 }
 
 .color_b28e35:hover,
-.color_b28e35.active_a8e6aa {
-    background-color: var(--redesign-button-secondary-overlay-pressed-background)
+.color_b28e35:active {
+    background-color: hsl(var(--black-500-hsl)/.85)
 }
 
 .color_b28e35:disabled,
@@ -57963,8 +57963,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .wrapper__3abe0 {
     position: absolute;
-    top: 12px;
-    right: 12px;
     display: flex;
     gap: 8px;
     z-index: 3;
@@ -57975,7 +57973,12 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     display: none
 }
 
-.wrapper__3abe0.modal__16963 {
+.wrapper__3abe0.biteSize_b43281 {
+    top: 12px;
+    right: 12px
+}
+
+.wrapper__3abe0.fullSize_c7ae09 {
     top: 12px;
     right: 16px
 }
@@ -135776,4 +135779,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.0ea916ae7055cf8994a0.css.map*/
+/*# sourceMappingURL=99387.1c63e4bb182ba16ec7a2.css.map*/
