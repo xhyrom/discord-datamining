@@ -36608,38 +36608,29 @@ span.clanTag_f4aadc {
     background-color: initial
 }
 
-@value baseClanCardWidth 240px;
+.buttonWrapper_f57f6c {
+    box-shadow: var(--shadow-high)
+}
+
+.button_cbc314 {
+    width: 240px;
+    border-radius: 8px
+}
+
+@value baseClanCardWidth 242px;
 @value baseClanCardHeight 400px;
-@value envelopeWidth calc(240px + 2px);
+@value envelopeWidth calc(242px + 2px);
 @value envelopeCardHeight 344px;
 @value centerClanScale 0.8666;
 @value innerClanScale 0.75;
 @value outerClanScale 0.6666;
-
-.upsell__8a612 {
-    position: relative;
-    height: 840px
-}
-
-.backgroundImage__43a82 {
-    width: auto;
-    background-color: var(--black-500);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover
-}
-
-.genshinBackgroundImage_f11d6a,
-.valorantBackgroundImage__169fa {
-    background-image: linear-gradient(180deg, rgba(17, 18, 20, .64)0%, #111214 64.1%)
-}
 
 .clanEnvelope__0b99c {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 242px;
+    width: 244px;
     height: 400px;
     overflow: hidden
 }
@@ -36647,7 +36638,7 @@ span.clanTag_f4aadc {
 .clanEnvelopeTop_bf09a8 {
     position: absolute;
     z-index: 25;
-    width: 242px;
+    width: 244px;
     height: 240px;
     top: 104.64px
 }
@@ -36655,7 +36646,7 @@ span.clanTag_f4aadc {
 .clanEnvelopeBottom_e5cdee {
     position: absolute;
     z-index: 35;
-    width: 240px;
+    width: 242px;
     height: 160px;
     top: 186.64px
 }
@@ -36687,7 +36678,7 @@ span.clanTag_f4aadc {
 
 .clanCardInnerContainer_ce1024 {
     position: relative;
-    width: 180px;
+    width: 181.5px;
     z-index: 20
 }
 
@@ -36712,7 +36703,7 @@ span.clanTag_f4aadc {
 
 .clanCardOuterContainer__338bc {
     position: relative;
-    width: 159.984px;
+    width: 161.3172px;
     z-index: 15
 }
 
@@ -36762,66 +36753,114 @@ span.clanTag_f4aadc {
     margin-bottom: 8px
 }
 
-.buttonWrapper_e5593f {
-    box-shadow: var(--shadow-high)
-}
+@value baseClanCardWidth 240px;
+@value baseClanCardHeight 400px;
+@value baseClanCardBorderWidth 1px;
+@value centerClanScale 1;
+@value innerClanScale 0.833;
+@value outerClanScale 0.68;
 
-.button__7ec24 {
-    width: 240px;
-    border-radius: 8px
-}
-
-.container__1650f {
+.upsellContainer_aae5af {
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
     align-items: center;
-    gap: 40px;
-    overflow: hidden
+    justify-content: center
+}
+
+.cardsContainer__43887 {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center
 }
 
 .cards__2e3a6 {
-    height: 400px;
-    width: 100%;
-    position: relative
-}
-
-.card80_f68557 {
     position: absolute;
-    transform: scale(.8)
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px
 }
 
-.card90_e78aac {
+.clanCard__50538 {
     position: absolute;
-    transform: scale(.9)
+    box-shadow: var(--shadow-high)
 }
 
-.card100__09fa7 {
-    position: absolute
-}
-
-.content_d17041 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 40px;
-    max-width: 400px
-}
-
-.title_da1746 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 16px;
-    text-align: center
-}
-
-.button_e8011a {
+.clanCardCenterContainer_f08e39 {
+    position: relative;
     width: 240px
+}
+
+.clanCardCenter__39685 {
+    top: 0;
+    right: -1px;
+    transform: scale(1)
+}
+
+.clanCardInnerContainer__297eb {
+    position: relative;
+    width: 199.92px
+}
+
+.clanCardInner__7b291 {
+    transform: scale(.833)
+}
+
+.clanCardInnerLeft_d1e982 {
+    right: -19.04px
+}
+
+.clanCardInnerRight_a70df2 {
+    left: -19.04px
+}
+
+.clanCardOuterContainer__05636 {
+    position: relative;
+    width: 163.2px
+}
+
+.clanCardOuter__79a32 {
+    transform: scale(.68)
+}
+
+.clanCardOuterLeft_a7787d {
+    right: -37.4px
+}
+
+.clanCardOuterRight__19d1a {
+    left: -37.4px
+}
+
+.upsellDetails_fe7ec8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px
+}
+
+.upsellCtaTitle_f32e4e {
+    margin-bottom: 16px
+}
+
+.upsellCtaSubtitle__43db3 {
+    margin-bottom: 40px
+}
+
+.sequencer__03419 {
+    display: flex;
+    flex-direction: column;
+    flex: 1
+}
+
+.scroller_cc96df {
+    flex: 0 0 auto;
+    margin-top: 120px;
+    width: 800px
 }
 
 .wizard__29f91 {
@@ -36831,37 +36870,11 @@ span.clanTag_f4aadc {
     align-items: center;
     height: 100%;
     width: 100%;
-    gap: 40px;
     position: relative
-}
-
-.scroller_cc96df {
-    flex: 0 0 auto;
-    margin-top: 120px;
-    width: 800px
 }
 
 .footer__64d74 {
     width: 100%
-}
-
-.progressContainer__6e55f {
-    display: flex;
-    justify-content: stretch;
-    align-items: center;
-    gap: 8px;
-    margin: 24px
-}
-
-.progressStep__250ee {
-    height: 2px;
-    width: 100%;
-    border-radius: 50%;
-    background-color: var(--text-muted)
-}
-
-.progressStepCompleted__6222d {
-    background-color: var(--text-brand)
 }
 
 .footerActions_f527fe {
@@ -36871,9 +36884,52 @@ span.clanTag_f4aadc {
     gap: 16px
 }
 
+.scrollerContainer__4b6bd {
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
+.scroller_a9e72f {
+    display: flex;
+    flex-direction: column;
+    flex: 1
+}
+
+.adminUpsell_a0161a {
+    position: relative;
+    height: 840px
+}
+
+.userUpsell__2b410 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1
+}
+
+.backgroundImage__778b2 {
+    flex: 1;
+    width: auto;
+    background-color: var(--black-500);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 50
+}
+
+.genshinBackgroundImage__21a5c {
+    background-image: linear-gradient(180deg, rgba(17, 18, 20, .64)0%, #111214 64.1%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Genshin_Background.png)
+}
+
+.valorantBackgroundImage_d382a2 {
+    background-image: linear-gradient(180deg, rgba(17, 18, 20, .64)0%, #111214 64.1%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Valorant_Background.png)
+}
+
 .container_ec1fbc {
     position: relative;
-    flex: 1 1 auto
+    flex: 1
 }
 
 .scroller__6a588 {
@@ -135717,4 +135773,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7ea7f74512076591596c.css.map*/
+/*# sourceMappingURL=99387.3338edef5e9a68b5e386.css.map*/
