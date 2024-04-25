@@ -27077,6 +27077,11 @@ div.profileThemedContainer__6e645 {
     color: Highlight
 }
 
+.buttonMask_acf06c {
+    width: inherit;
+    height: inherit
+}
+
 @value responsiveWidthMobile from '../../uikit/auth/WaveSplash.module.css';
 
 .modal_d2e7a7 {
@@ -135779,4 +135784,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1c63e4bb182ba16ec7a2.css.map*/
+/*# sourceMappingURL=99387.038f27ffb4626ecf1035.css.map*/
