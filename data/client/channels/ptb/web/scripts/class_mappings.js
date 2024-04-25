@@ -21361,10 +21361,11 @@
                 activeProgressCircleAnimation: "activeProgressCircleAnimation__30698",
                 gemBackgroundFill: "gemBackgroundFill__12cf5",
                 gemGlow: "gemGlow_e7051d",
-                gemProgressCircle: "gemProgressCircle__4a3db",
                 glow: "glow_b03664",
                 nitroGemAnimation: "nitroGemAnimation_fe0ce5",
                 nitroGemContainer: "nitroGemContainer__65e04",
+                progressCircle: "progressCircle_c0865b",
+                progressCricleBottomMargin: "progressCricleBottomMargin_c213df",
                 pulse: "pulse__17942"
             }
         },
@@ -21788,8 +21789,6 @@
                 expandedProgressBarContainerVariant1: "expandedProgressBarContainerVariant1_ea5ac3",
                 expandedProgressBarContainerVariant2: "expandedProgressBarContainerVariant2__775fe",
                 expandedProgressBarContent: "expandedProgressBarContent__17ba9",
-                expandedProgressBarContentVariant1: "expandedProgressBarContentVariant1__37efa",
-                expandedProgressBarContentVariant2: "expandedProgressBarContentVariant2_e76181",
                 expandedProgressBarGiftingCTA: "expandedProgressBarGiftingCTA_a56dee",
                 expandedProgressBarGiftingCTALayout: "expandedProgressBarGiftingCTALayout__376c3",
                 expandedProgressBarGiftingCTAMinLayout: "expandedProgressBarGiftingCTAMinLayout_dbec98",
