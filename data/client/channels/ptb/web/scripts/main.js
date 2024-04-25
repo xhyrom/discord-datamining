@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288034", ", Version Hash: ").concat("46f5c3e16a8bb98ae344fe2cbb030c55214dfa44")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288061", ", Version Hash: ").concat("033161d021f29e07808a598aadb266a12a2df9b6")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86975,8 +86975,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "288034", "288034"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288034")), t = 0), t
+                let t = parseInt((e = "288061", "288061"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288061")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -101989,6 +101989,105 @@
                 })
             })
         },
+        426964: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return m
+                }
+            });
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("481060"),
+                a = n("442837"),
+                o = n("231467"),
+                l = n("741606"),
+                u = n("703656"),
+                d = n("314897"),
+                _ = n("271383"),
+                c = n("594174"),
+                E = n("963202"),
+                I = n("645896"),
+                T = n("905362"),
+                f = n("353093"),
+                S = n("981631"),
+                h = n("689938"),
+                A = n("810200");
+
+            function m(e) {
+                var t;
+                let {
+                    clan: m,
+                    isLoading: N,
+                    onClose: p
+                } = e, O = (0, I.useClanInfo)(null !== (t = null == m ? void 0 : m.identityGuildId) && void 0 !== t ? t : null), R = null == m ? void 0 : m.tag, C = (0, E.useIsInUserClanExperiment)(), g = null == m ? void 0 : m.identityGuildId, L = (0, a.useStateFromStores)([d.default], () => d.default.getId()), D = (0, a.useStateFromStores)([_.default], () => null != g ? _.default.getMember(g, L) : null, [g, L]), v = (0, a.useStateFromStores)([c.default], () => c.default.getUser(L), [L]), M = (null == D ? void 0 : D.joinedAt) != null, y = (0, f.isGuildAdoptedUserClanIdentity)(g, null == v ? void 0 : v.clan), P = null != (0, l.default)(g), U = r.useCallback(e => {
+                    null != g && (e.stopPropagation(), e.preventDefault(), null == p || p(), (0, T.openAdoptClanIdentityModal)(g))
+                }, [g, p]), b = r.useCallback(e => {
+                    if (null != O) e.stopPropagation(), e.preventDefault(), null == p || p(), !P && (0, s.openModalLazy)(async () => {
+                        let {
+                            default: e
+                        } = await Promise.all([n.e("99387"), n.e("80026"), n.e("18482")]).then(n.bind(n, "767593"));
+                        return t => (0, i.jsx)(e, {
+                            ...t,
+                            clan: O
+                        })
+                    })
+                }, [O, P, p]), G = r.useCallback(() => {
+                    null != g && (0, u.transitionTo)(S.Routes.GUILD_MEMBER_VERIFICATION(g))
+                }, [g]), w = r.useMemo(() => {
+                    var e, t;
+                    let n = null !== (t = null == O ? void 0 : null === (e = O.branding) || void 0 === e ? void 0 : e.primaryColor) && void 0 !== t ? t : null,
+                        i = {
+                            color: null != n ? s.Button.Colors.CUSTOM : s.Button.Colors.BRAND,
+                            size: s.Button.Sizes.SMALL,
+                            fullWidth: !0,
+                            className: A.button
+                        };
+                    return null != n && (i = {
+                        ...i,
+                        style: {
+                            backgroundColor: n,
+                            color: (0, f.getAccessibleTextColor)(n).hex()
+                        }
+                    }), i
+                }, [O]), B = r.useMemo(() => {
+                    switch (!0) {
+                        case !C:
+                            return null;
+                        case !M && P:
+                            return (0, i.jsx)(s.Button, {
+                                onClick: G,
+                                ...w,
+                                children: h.default.Messages.CLAN_USER_APPLICATION_EXISTS_TAG_GUILD_PROFILE_CTA
+                            });
+                        case !M:
+                            return (0, i.jsx)(s.Button, {
+                                onClick: b,
+                                ...w,
+                                children: h.default.Messages.CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA
+                            });
+                        case M && !y:
+                            return (0, i.jsx)(s.Button, {
+                                onClick: U,
+                                ...w,
+                                children: h.default.Messages.CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA
+                            });
+                        default:
+                            return null
+                    }
+                }, [w, U, b, G, P, y, M, C]);
+                return null == R || null == O || null == g || N ? (0, i.jsx)(s.Spinner, {}) : (0, i.jsxs)("div", {
+                    className: A.container,
+                    children: [(0, i.jsx)(o.ClanDiscoveryCardView, {
+                        clan: O,
+                        className: A.cardContainer
+                    }), null != B && (0, i.jsx)("div", {
+                        className: A.buttonContainer,
+                        children: B
+                    })]
+                })
+            }
+        },
         219039: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -102024,96 +102123,93 @@
             "use strict";
             n.r(t), n.d(t, {
                 BaseClanTagChiplet: function() {
-                    return N
+                    return h
                 },
                 ClanBadgeWithTooltip: function() {
-                    return p
+                    return A
                 }
             }), n("47120");
             var i = n("735250"),
                 r = n("470079"),
                 s = n("120356"),
                 a = n.n(s),
-                o = n("348327"),
-                l = n.n(o),
-                u = n("442837"),
-                d = n("481060"),
-                _ = n("110924"),
-                c = n("594174"),
-                E = n("963202"),
-                I = n("645896"),
-                T = n("353093"),
-                f = n("277602"),
-                S = n("308083"),
-                h = n("689938"),
-                A = n("319695");
-            let m = r.memo(function(e) {
+                o = n("442837"),
+                l = n("481060"),
+                u = n("594174"),
+                d = n("963202"),
+                _ = n("645896"),
+                c = n("353093"),
+                E = n("426964"),
+                I = n("308083"),
+                T = n("689938"),
+                f = n("319695");
+            let S = r.memo(function(e) {
                     let {
                         src: t,
                         className: n,
-                        size: r = S.ClanTagBadgeSize.SIZE_16
+                        size: r = I.ClanTagBadgeSize.SIZE_16
                     } = e;
                     return null == t ? null : (0, i.jsx)("img", {
                         src: t,
-                        alt: h.default.Messages.CLAN_BADGE,
-                        className: a()(A.badge, n),
+                        alt: T.default.Messages.CLAN_BADGE,
+                        className: a()(f.badge, n),
                         width: r,
                         height: r
                     })
                 }),
-                N = r.memo(function(e) {
+                h = r.memo(function(e) {
                     let {
                         clanTag: t,
                         clanBadge: n,
                         className: r,
                         textClassName: s,
                         onClick: o,
-                        onMouseEnter: l,
-                        textVariant: u = "text-xs/medium",
-                        textColor: _ = "text-normal",
-                        badgeSize: c = S.ClanTagBadgeSize.SIZE_12
+                        onMouseEnter: u,
+                        textVariant: _ = "text-xs/medium",
+                        textColor: c = "text-normal",
+                        badgeSize: E = I.ClanTagBadgeSize.SIZE_12
                     } = e;
-                    return (0, E.useIsInUserClanExperiment)() ? (0, i.jsx)(d.Clickable, {
+                    return (0, d.useIsInUserClanExperiment)() ? (0, i.jsx)(l.Clickable, {
                         tag: "span",
                         onClick: o,
-                        onMouseEnter: l,
-                        className: a()(A.chipletContainerInner, null != o && A.clickable, r),
-                        children: (0, i.jsxs)(d.Text, {
-                            variant: u,
-                            color: _,
+                        onMouseEnter: u,
+                        className: a()(f.chipletContainerInner, null != o && f.clickable, r),
+                        children: (0, i.jsxs)(l.Text, {
+                            variant: _,
+                            color: c,
                             tag: "span",
-                            className: a()(A.text, s),
-                            children: [null != n && "string" == typeof n ? (0, i.jsx)(m, {
+                            className: a()(f.text, s),
+                            children: [null != n && "string" == typeof n ? (0, i.jsx)(S, {
                                 src: n,
-                                size: c
+                                size: E
                             }) : n, t]
                         })
                     }) : null
                 });
 
-            function p(e) {
+            function A(e) {
                 var t, n, s;
                 let {
                     clan: a,
-                    size: o = S.ClanTagBadgeSize.SIZE_16,
-                    userId: l,
-                    className: _
-                } = e, E = (0, u.useStateFromStores)([c.default], () => c.default.getUser(l), [l]), f = null !== (t = null == E ? void 0 : E.clan) && void 0 !== t ? t : a, {
-                    tag: h,
-                    badge: A,
+                    size: d = I.ClanTagBadgeSize.SIZE_16,
+                    userId: E,
+                    className: T
+                } = e, f = (0, o.useStateFromStores)([u.default], () => u.default.getUser(E), [E]), h = null !== (t = null == f ? void 0 : f.clan) && void 0 !== t ? t : a, {
+                    tag: A,
+                    badge: m,
                     guildId: N
-                } = (0, T.getUserClanData)(f), [p, O] = (0, I.useFetchClanInfo)(null !== (n = null == f ? void 0 : f.identityGuildId) && void 0 !== n ? n : null), R = (0, I.useClanInfo)(null !== (s = null == f ? void 0 : f.identityGuildId) && void 0 !== s ? s : null), [C, g] = r.useState(!1);
-                if (null == N || null == h || null == A) return null;
-                let L = (0, T.getClanBadgeUrl)(N, A, o);
-                return (0, i.jsx)(d.Tooltip, {
-                    text: p ? (0, i.jsx)(d.Spinner, {}) : null == R ? void 0 : R.name,
+                } = (0, c.getUserClanData)(h), [p, O] = (0, _.useFetchClanInfo)(null !== (n = null == h ? void 0 : h.identityGuildId) && void 0 !== n ? n : null), R = (0, _.useClanInfo)(null !== (s = null == h ? void 0 : h.identityGuildId) && void 0 !== s ? s : null), [C, g] = r.useState(!1);
+                if (null == N || null == A || null == m) return null;
+                let L = (0, c.getClanBadgeUrl)(N, m, d);
+                return (0, i.jsx)(l.Tooltip, {
+                    text: p ? (0, i.jsx)(l.Spinner, {}) : null == R ? void 0 : R.name,
                     onTooltipShow: () => O(),
                     hideOnClick: !0,
                     shouldShow: C,
                     forceOpen: C,
-                    children: e => (0, i.jsx)(d.Clickable, {
+                    children: e => (0, i.jsx)(l.Clickable, {
                         tag: "span",
-                        className: _,
+                        className: T,
                         ...e,
                         onMouseEnter: () => {
                             var t;
@@ -102123,61 +102219,49 @@
                             var t;
                             g(!1), null === (t = e.onMouseLeave) || void 0 === t || t.call(e)
                         },
-                        children: (0, i.jsx)(m, {
+                        children: (0, i.jsx)(S, {
                             src: L,
-                            size: o
+                            size: d
                         })
                     })
                 })
             }
 
-            function O(e) {
+            function m(e) {
                 var t, n;
                 let {
                     clan: s,
                     userId: a,
-                    children: o
-                } = e, E = (0, u.useStateFromStores)([c.default], () => c.default.getUser(a), [a]), T = null !== (t = null == E ? void 0 : E.clan) && void 0 !== t ? t : s, S = (0, _.default)(T), [h, m] = (0, I.useFetchClanInfo)(null !== (n = null == T ? void 0 : T.identityGuildId) && void 0 !== n ? n : null), [N, p] = r.useState(!1), [O, R] = r.useState(!1), [C, g] = r.useState(!1), L = r.useRef(null), D = r.useCallback(() => {
-                    m()
-                }, [m]);
-                return r.useEffect(() => {
-                    !l()(S, T) && p(!1)
-                }, [S, T]), r.useEffect(() => (!O && !C && (L.current = setTimeout(() => {
-                    p(!1)
-                }, 500)), () => {
-                    null != L.current && clearTimeout(L.current)
-                }), [O, C]), (0, i.jsx)(d.Tooltip, {
-                    text: (0, i.jsx)(f.default, {
-                        isLoading: h,
-                        clan: T,
-                        onClose: () => p(!1),
-                        onMouseEnter: () => R(!0),
-                        onMouseLeave: () => R(!1)
-                    }),
-                    onTooltipShow: () => m(),
-                    hideOnClick: !0,
-                    disableTooltipPointerEvents: !1,
-                    tooltipClassName: A.tooltip,
-                    tooltipContentClassName: A.tooltipContainer,
-                    "aria-label": "Guild Profile",
-                    shouldShow: N,
-                    forceOpen: N,
-                    children: e => (0, i.jsx)(d.Clickable, {
+                    children: d
+                } = e, c = (0, o.useStateFromStores)([u.default], () => u.default.getUser(a), [a]), I = null !== (t = null == c ? void 0 : c.clan) && void 0 !== t ? t : s, [T, f] = (0, _.useFetchClanInfo)(null !== (n = null == I ? void 0 : I.identityGuildId) && void 0 !== n ? n : null), S = r.useCallback(() => {
+                    f()
+                }, [f]);
+                return (0, i.jsx)(l.Popout, {
+                    renderPopout: e => {
+                        let {
+                            closePopout: t
+                        } = e;
+                        return (0, i.jsx)(E.default, {
+                            isLoading: T,
+                            clan: I,
+                            onClose: t
+                        })
+                    },
+                    position: "top",
+                    animationPosition: "top",
+                    spacing: 16,
+                    children: e => (0, i.jsx)(l.Clickable, {
                         tag: "span",
                         ...e,
                         onClick: t => {
                             var n;
-                            p(e => !e), null === (n = e.onClick) || void 0 === n || n.call(e), t.preventDefault(), t.stopPropagation()
+                            null === (n = e.onClick) || void 0 === n || n.call(e, t), t.preventDefault(), t.stopPropagation()
                         },
                         onMouseEnter: () => {
                             var t;
-                            g(!0), D(), null === (t = e.onMouseEnter) || void 0 === t || t.call(e)
+                            S(), null === (t = e.onMouseEnter) || void 0 === t || t.call(e)
                         },
-                        onMouseLeave: () => {
-                            var t;
-                            g(!1), null === (t = e.onMouseLeave) || void 0 === t || t.call(e)
-                        },
-                        children: o
+                        children: d
                     })
                 })
             }
@@ -102187,139 +102271,37 @@
                     clan: n,
                     userId: r,
                     className: s,
-                    textVariant: o,
-                    textColor: l,
-                    badgeSize: d,
-                    disableTooltip: _ = !1
-                } = e, I = (0, u.useStateFromStores)([c.default], () => c.default.getUser(r), [r]), f = null !== (t = null == I ? void 0 : I.clan) && void 0 !== t ? t : n, {
-                    tag: S,
-                    badge: h,
-                    guildId: m
-                } = (0, T.getUserClanData)(f);
-                if (!(0, E.useIsInUserClanExperiment)() || null == m || null == S) return null;
-                let p = (0, T.getClanBadgeUrl)(m, h, d);
-                return _ ? (0, i.jsx)(N, {
-                    clanTag: S,
-                    clanBadge: p,
-                    className: a()(A.noTooltip, s),
-                    textVariant: o,
-                    textColor: l,
-                    badgeSize: d
-                }) : (0, i.jsx)(O, {
-                    clan: f,
+                    textVariant: l,
+                    textColor: _,
+                    badgeSize: E,
+                    disableTooltip: I = !1
+                } = e, T = (0, o.useStateFromStores)([u.default], () => u.default.getUser(r), [r]), S = null !== (t = null == T ? void 0 : T.clan) && void 0 !== t ? t : n, {
+                    tag: A,
+                    badge: N,
+                    guildId: p
+                } = (0, c.getUserClanData)(S);
+                if (!(0, d.useIsInUserClanExperiment)() || null == p || null == A) return null;
+                let O = (0, c.getClanBadgeUrl)(p, N, E);
+                return I ? (0, i.jsx)(h, {
+                    clanTag: A,
+                    clanBadge: O,
+                    className: a()(f.noTooltip, s),
+                    textVariant: l,
+                    textColor: _,
+                    badgeSize: E
+                }) : (0, i.jsx)(m, {
+                    clan: S,
                     userId: r,
-                    children: (0, i.jsx)(N, {
-                        clanTag: S,
-                        clanBadge: p,
+                    children: (0, i.jsx)(h, {
+                        clanTag: A,
+                        clanBadge: O,
                         className: s,
-                        textVariant: o,
-                        textColor: l,
-                        badgeSize: d
+                        textVariant: l,
+                        textColor: _,
+                        badgeSize: E
                     })
                 })
             })
-        },
-        277602: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return m
-                }
-            });
-            var i = n("735250"),
-                r = n("470079"),
-                s = n("481060"),
-                a = n("442837"),
-                o = n("231467"),
-                l = n("741606"),
-                u = n("703656"),
-                d = n("314897"),
-                _ = n("271383"),
-                c = n("594174"),
-                E = n("963202"),
-                I = n("645896"),
-                T = n("905362"),
-                f = n("353093"),
-                S = n("981631"),
-                h = n("689938"),
-                A = n("221840");
-
-            function m(e) {
-                var t;
-                let {
-                    clan: m,
-                    isLoading: N,
-                    onClose: p,
-                    onMouseEnter: O,
-                    onMouseLeave: R
-                } = e, C = (0, I.useClanInfo)(null !== (t = null == m ? void 0 : m.identityGuildId) && void 0 !== t ? t : null), g = null == m ? void 0 : m.tag, L = (0, E.useIsInUserClanExperiment)(), D = null == m ? void 0 : m.identityGuildId, v = (0, a.useStateFromStores)([d.default], () => d.default.getId()), M = (0, a.useStateFromStores)([_.default], () => null != D ? _.default.getMember(D, v) : null, [D, v]), y = (0, a.useStateFromStores)([c.default], () => c.default.getUser(v), [v]), P = (null == M ? void 0 : M.joinedAt) != null, U = (0, f.isGuildAdoptedUserClanIdentity)(D, null == y ? void 0 : y.clan), b = null != (0, l.default)(D), G = r.useCallback(e => {
-                    null != D && (e.stopPropagation(), e.preventDefault(), null == p || p(), (0, T.openAdoptClanIdentityModal)(D))
-                }, [D, p]), w = r.useCallback(e => {
-                    if (null != C) e.stopPropagation(), e.preventDefault(), null == p || p(), !b && (0, s.openModalLazy)(async () => {
-                        let {
-                            default: e
-                        } = await Promise.all([n.e("99387"), n.e("80026"), n.e("18482")]).then(n.bind(n, "767593"));
-                        return t => (0, i.jsx)(e, {
-                            ...t,
-                            clan: C
-                        })
-                    })
-                }, [C, b, p]), B = r.useCallback(() => {
-                    null != D && (0, u.transitionTo)(S.Routes.GUILD_MEMBER_VERIFICATION(D))
-                }, [D]), k = r.useMemo(() => {
-                    var e, t;
-                    let n = null !== (t = null == C ? void 0 : null === (e = C.branding) || void 0 === e ? void 0 : e.primaryColor) && void 0 !== t ? t : null,
-                        i = {
-                            color: null != n ? s.Button.Colors.CUSTOM : s.Button.Colors.BRAND,
-                            size: s.Button.Sizes.SMALL,
-                            fullWidth: !0
-                        };
-                    return null != n && (i = {
-                        ...i,
-                        style: {
-                            backgroundColor: n,
-                            color: (0, f.getAccessibleTextColor)(n).hex()
-                        }
-                    }), i
-                }, [C]), V = r.useMemo(() => {
-                    switch (!0) {
-                        case !L:
-                            return null;
-                        case !P && b:
-                            return (0, i.jsx)(s.Button, {
-                                onClick: B,
-                                ...k,
-                                children: h.default.Messages.CLAN_USER_APPLICATION_EXISTS_TAG_GUILD_PROFILE_CTA
-                            });
-                        case !P:
-                            return (0, i.jsx)(s.Button, {
-                                onClick: w,
-                                ...k,
-                                children: h.default.Messages.CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA
-                            });
-                        case P && !U:
-                            return (0, i.jsx)(s.Button, {
-                                onClick: G,
-                                ...k,
-                                children: h.default.Messages.CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA
-                            });
-                        default:
-                            return null
-                    }
-                }, [k, G, w, B, b, U, P, L]);
-                return null == g || null == C || null == D || N ? (0, i.jsx)(s.Spinner, {}) : (0, i.jsxs)("div", {
-                    className: A.tooltipContainer,
-                    onMouseLeave: R,
-                    onMouseEnter: O,
-                    children: [(0, i.jsx)(o.ClanDiscoveryCardView, {
-                        clan: C,
-                        className: A.cardContainer
-                    }), null != V && (0, i.jsx)("div", {
-                        className: A.buttonContainer,
-                        children: V
-                    })]
-                })
-            }
         },
         550271: function(e, t, n) {
             "use strict";
@@ -112775,8 +112757,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "288034",
-                    versionHash: "46f5c3e16a8bb98ae344fe2cbb030c55214dfa44"
+                    buildNumber: "288061",
+                    versionHash: "033161d021f29e07808a598aadb266a12a2df9b6"
                 }
             }
             n.r(t), n.d(t, {
@@ -167232,8 +167214,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714078415131",
-                                    build_number: "288034"
+                                    built_at: "1714080061008",
+                                    build_number: "288061"
                                 }
                             },
                             retries: 1
@@ -245176,7 +245158,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "46f5c3e16a8bb98ae344fe2cbb030c55214dfa44"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "033161d021f29e07808a598aadb266a12a2df9b6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273700,7 +273682,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "288034"
+                                build_number: "288061"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280934,7 +280916,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "288034", "288034"), 10);
+                let s = parseInt((n = "288061", "288061"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308411,4 +308393,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.2176d9122a1fa98e5a4d.js.map
+//# sourceMappingURL=35705.0b68d08dbe69357457e8.js.map

@@ -29152,74 +29152,39 @@ div.profileThemedContainer__6e645 {
     color: var(--text-normal)
 }
 
-.tooltipContainer__7dbbb {
+.container__86b23 {
     display: flex;
     flex-direction: column;
-    gap: 0;
-    padding: 4px 0;
-    pointer-events: all
-}
-
-.tooltipHeader__556b8 {
-    display: flex;
-    flex-direction: row;
-    gap: 2px;
-    align-items: center
-}
-
-.tooltipHeader__556b8 .chipletContainerInner__3c2e4 {
-    background: var(--bg-mod-faint)
-}
-
-.tooltipContent__27bbf {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    min-width: 200px
-}
-
-.guildInfoContainer__83d68 {
-    display: flex;
-    flex-direction: column;
-    gap: 2px
-}
-
-.guildMemberCount__8b892 {
-    display: flex;
-    direction: row;
-    gap: 4px;
-    align-items: center
-}
-
-.dot__74f07 {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: var(--status-offline)
-}
-
-.guildName__29a28 {
-    display: flex;
+    pointer-events: all;
+    border-radius: var(--radius-md);
+    background: var(--bg-surface-overlay);
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis
+    box-shadow: var(--elevation-high)
 }
 
-.buttonContainer_ccb346 {
+.buttonContainer_de2133 {
     padding: 12px;
     padding-top: 0
 }
 
-div.cardContainer__9bde4 {
-    border-radius: 8px 8px 0 0;
+div.cardContainer__94a1c {
+    border-radius: 0;
     height: auto;
     border: 0;
     background: var(--bg-surface-overlay)
 }
 
-.tooltipFooter_bd5b45 {
+.tooltipFooter__11121 {
     width: 100%
+}
+
+.button__96098 {
+    opacity: 1;
+    transition: opacity.1s ease-in-out
+}
+
+.button__96098:hover {
+    opacity: .9
 }
 
 .chipletContainerInner_bfcb1e {
@@ -34216,7 +34181,7 @@ span.clanTag_f4aadc {
 }
 
 .popout_cfa8bc {
-    width: 342px;
+    width: 348px;
     display: flex;
     flex-direction: column;
     filter: drop-shadow(0 8px 8px hsl(var(--black-500-hsl)/.32))
@@ -34367,6 +34332,40 @@ span.clanTag_f4aadc {
 
 .popoutUsername__8e4a7 {
     display: inline
+}
+
+.contentRow__98fc8 {
+    position: relative
+}
+
+.reply__94440 {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 75ms linear;
+    height: 24px;
+    width: 24px;
+    background: var(--background-primary);
+    border: 1px solid var(--background-secondary);
+    border-radius: var(--radius-xs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none
+}
+
+.hovered_f9e6de {
+    opacity: 1
+}
+
+.icon__130a3 {
+    height: 16px;
+    display: block;
+    color: var(--interactive-normal);
+    -o-object-fit: contain;
+    object-fit: contain
 }
 
 .container__16e95 {
@@ -135773,4 +135772,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.3338edef5e9a68b5e386.css.map*/
+/*# sourceMappingURL=99387.d04a326d7c884c5df822.css.map*/
