@@ -18836,8 +18836,7 @@
                 perksDemoContainer: "perksDemoContainer_d174dc",
                 perksDemoText: "perksDemoText__39380",
                 sparkleContainer: "sparkleContainer__6b25a",
-                sparkles: "sparkles__88bc5",
-                streamingIconGlow: "streamingIconGlow__5b7b2"
+                sparkles: "sparkles__88bc5"
             }
         },
         815668: function(e) {
@@ -19958,6 +19957,7 @@
                 header: "header_b4bd8d",
                 name: "name__991e3",
                 nickname: "nickname__1d9af",
+                panel: "panel__21993",
                 question: "question__6ebd5",
                 remove: "remove__5ed5e",
                 scroller: "scroller_b7f6d8",
@@ -26458,6 +26458,7 @@
         451304: function(e) {
             "use strict";
             e.exports = {
+                body: "body_a614ef",
                 heading: "heading_bf2723",
                 iconTitle: "iconTitle_be1c6f",
                 tab: "tab__7d975",

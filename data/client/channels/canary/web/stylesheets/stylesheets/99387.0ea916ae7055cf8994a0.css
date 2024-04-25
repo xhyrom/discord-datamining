@@ -44399,10 +44399,6 @@ span.clanTag_f4aadc {
     padding: 0 4px
 }
 
-.streamingIconGlow__5b7b2 {
-    filter: drop-shadow(0 0 10px#b845c1)
-}
-
 .clickableGameWrapper_dc17b2 {
     cursor: pointer
 }
@@ -120267,6 +120263,10 @@ html .invoiceCancelRow__6ff3e {
     padding-left: 0
 }
 
+.panel__21993 {
+    flex-grow: 1
+}
+
 .scroller_b7f6d8 {
     padding: 16px 8px;
     width: 202px;
@@ -131345,6 +131345,10 @@ div.nagbar_c731ff {
     white-space: nowrap
 }
 
+.body_a614ef {
+    margin-top: 16px
+}
+
 @media(max-width:960px) {
     .tabBar_f88f31 {
         gap: 32px
@@ -135772,4 +135776,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d04a326d7c884c5df822.css.map*/
+/*# sourceMappingURL=99387.0ea916ae7055cf8994a0.css.map*/
