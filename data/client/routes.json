@@ -4003,8 +4003,7 @@
       "GET",
       "HEAD",
       "OPTIONS",
-      "POST",
-      "PUT"
+      "POST"
     ]
   },
   "GUILD_CLAN_INFO": {
