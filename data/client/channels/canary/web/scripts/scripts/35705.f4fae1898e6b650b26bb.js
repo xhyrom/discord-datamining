@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287826", ", Version Hash: ").concat("b318406e3fe11939e6612cdca547900c13023b40")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287832", ", Version Hash: ").concat("8b6a044cec0c92e2ac0c4642b9c7031194c4635e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55719,6 +55719,13 @@
                 CLAN_USER_PROFILE_PRIMARY_CLAN: "Primary Clan",
                 CLAN_DISCOVERY_SAVED_FILTER: "{count, number} Saved",
                 CLAN_DISCOVERY_CARD_TAG_TOOLTIP: "Become a member to unlock this tag",
+                CLAN_DISCOVERY_UPSELL_CTA_GUILD_INVITE: "You’re invited to become a Guild!",
+                CLAN_DISCOVERY_UPSELL_CTA_RECRUIT_VALORANT: "Recruit more Valorant players for your server",
+                CLAN_DISCOVERY_UPSELL_CTA_RECRUIT_GENSHIN: "Recruit more Genshin players for your server",
+                CLAN_DISCOVERY_UPSELL_VIBES_OR_SKILL: "Discover players with similar vibes or skill.",
+                CLAN_DISCOVERY_UPSELL_APPLICATIONS: "Approve new members and keep it exclusive",
+                CLAN_DISCOVERY_UPSELL_MAX_SIZE: "Guilds are max 200 people in size.",
+                CLAN_DISCOVERY_UPSELL_RESERVE: "Reserve Your Spot",
                 MESSAGE_ACTION_FORWARD: "Forward",
                 GUILD_POPOUT_ACTIVITY_EVENT_LOCATION: "Event in",
                 GUILD_POPOUT_ACTIVITY_EVENT_LOCATION_A11Y: "Event in {location}",
@@ -86895,8 +86902,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287826", "287826"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287826")), t = 0), t
+                let t = parseInt((e = "287832", "287832"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287832")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -101237,22 +101244,28 @@
             "use strict";
             n.r(t), n.d(t, {
                 AGE_TRAITS: function() {
-                    return v
-                },
-                ALL_TRAITS_SET: function() {
                     return y
                 },
+                ALL_TRAITS_SET: function() {
+                    return U
+                },
                 CLAN_BRAND_PALETTE_PRESETS: function() {
-                    return b
+                    return w
+                },
+                CLAN_BRAND_PALETTE_PRESETS_BY_NAME: function() {
+                    return B
                 },
                 CLAN_SETTINGS_MODAL_LAYER_KEY: function() {
-                    return f
+                    return h
                 },
                 CLAN_SETUP_MODAL_LAYER_KEY: function() {
-                    return T
+                    return S
                 },
                 ClanBannerKind: function() {
                     return a
+                },
+                ClanBrandPresets: function() {
+                    return o
                 },
                 ClanPlaystyles: function() {
                     return i
@@ -101264,91 +101277,91 @@
                     return s
                 },
                 EMPTY_WILDCARD: function() {
-                    return p
-                },
-                GENSHIN_ID: function() {
-                    return L
-                },
-                HOISTED_SEARCH_APPLICATION_IDS_BY_PRIORITY: function() {
-                    return k
-                },
-                IDENTITY_TRAITS: function() {
-                    return M
-                },
-                LANGUAGES_SET: function() {
-                    return P
-                },
-                MAX_GAMES_TO_DISPLAY: function() {
-                    return m
-                },
-                MAX_INTEREST_LENGTH: function() {
-                    return A
-                },
-                MAX_NUM_INTERESTS: function() {
-                    return h
-                },
-                MAX_NUM_SELECTED_GAMES: function() {
-                    return S
-                },
-                MAX_TAG_LENGTH: function() {
-                    return I
-                },
-                MAX_TRAITS_TO_DISPLAY: function() {
-                    return N
-                },
-                PLAYSTYLE_GROUPS: function() {
-                    return O
-                },
-                SUGGESTED_TRAITS_SET: function() {
-                    return U
-                },
-                VALORANT_ID: function() {
-                    return g
-                },
-                VALORANT_TRAITS: function() {
-                    return D
-                },
-                ensureUserClanData: function() {
-                    return w
-                },
-                getPlaystyleOptions: function() {
-                    return C
-                },
-                getPlaystyleTitle: function() {
                     return R
                 },
-                getRandomClanBrandPreset: function() {
+                GENSHIN_ID: function() {
+                    return v
+                },
+                HOISTED_SEARCH_APPLICATION_IDS_BY_PRIORITY: function() {
+                    return F
+                },
+                IDENTITY_TRAITS: function() {
+                    return P
+                },
+                LANGUAGES_SET: function() {
+                    return b
+                },
+                MAX_GAMES_TO_DISPLAY: function() {
+                    return p
+                },
+                MAX_INTEREST_LENGTH: function() {
+                    return N
+                },
+                MAX_NUM_INTERESTS: function() {
+                    return m
+                },
+                MAX_NUM_SELECTED_GAMES: function() {
+                    return A
+                },
+                MAX_TAG_LENGTH: function() {
+                    return f
+                },
+                MAX_TRAITS_TO_DISPLAY: function() {
+                    return O
+                },
+                PLAYSTYLE_GROUPS: function() {
+                    return C
+                },
+                SUGGESTED_TRAITS_SET: function() {
                     return G
+                },
+                VALORANT_ID: function() {
+                    return D
+                },
+                VALORANT_TRAITS: function() {
+                    return M
+                },
+                ensureUserClanData: function() {
+                    return V
+                },
+                getPlaystyleOptions: function() {
+                    return L
+                },
+                getPlaystyleTitle: function() {
+                    return g
+                },
+                getRandomClanBrandPreset: function() {
+                    return k
                 },
                 getSortedTraits: function() {
                     return function e(t, n) {
                         let i = null != n ? e(t.filter(e => null == n ? void 0 : n.includes(e))) : [];
-                        for (let e of D) !i.includes(e) && t.includes(e) && i.push(e);
-                        for (let e of v) !i.includes(e) && t.includes(e) && i.push(e);
                         for (let e of M) !i.includes(e) && t.includes(e) && i.push(e);
+                        for (let e of y) !i.includes(e) && t.includes(e) && i.push(e);
+                        for (let e of P) !i.includes(e) && t.includes(e) && i.push(e);
                         for (let e of t) !i.includes(e) && i.push(e);
                         return i
                     }
                 },
                 toServerClanData: function() {
-                    return B
+                    return x
                 }
             }), n("47120"), n("653041");
-            var i, r, s, a, o, l, u, d, _ = n("913527"),
-                c = n.n(_),
-                E = n("689938");
-            let I = 4,
-                T = "ClanSetupModal",
-                f = "ClanSettingsModal",
-                S = 20,
-                h = 50,
-                A = 50,
-                m = 3,
-                N = 5;
-            c()("2024-01-01T00:00:00");
-            let p = "";
-            (o = i || (i = {}))[o.NONE = 0] = "NONE", o[o.SOCIAL = 1] = "SOCIAL", o[o.CASUAL = 2] = "CASUAL", o[o.COMPETITIVE = 3] = "COMPETITIVE", o[o.CREATIVE = 4] = "CREATIVE", o[o.VERY_HARDCORE = 5] = "VERY_HARDCORE";
-            let O = {
+            var i, r, s, a, o, l, u, d, _, c, E = n("913527"),
+                I = n.n(E),
+                T = n("689938");
+            let f = 4,
+                S = "ClanSetupModal",
+                h = "ClanSettingsModal",
+                A = 20,
+                m = 50,
+                N = 50,
+                p = 3,
+                O = 5;
+            I()("2024-01-01T00:00:00");
+            let R = "";
+            (l = i || (i = {}))[l.NONE = 0] = "NONE", l[l.SOCIAL = 1] = "SOCIAL", l[l.CASUAL = 2] = "CASUAL", l[l.COMPETITIVE = 3] = "COMPETITIVE", l[l.CREATIVE = 4] = "CREATIVE", l[l.VERY_HARDCORE = 5] = "VERY_HARDCORE";
+            let C = {
                 0: "NONE",
                 4: "NONE",
                 1: "CASUAL",
@@ -101357,97 +101370,101 @@
                 5: "COMPETITIVE"
             };
 
-            function R(e) {
+            function g(e) {
                 switch (e) {
                     case 1:
-                        return E.default.Messages.CLAN_SETUP_PLAYSTYLE_SOCIAL_TITLE;
+                        return T.default.Messages.CLAN_SETUP_PLAYSTYLE_SOCIAL_TITLE;
                     case 2:
-                        return E.default.Messages.CLAN_SETUP_PLAYSTYLE_CASUAL_TITLE;
+                        return T.default.Messages.CLAN_SETUP_PLAYSTYLE_CASUAL_TITLE;
                     case 3:
-                        return E.default.Messages.CLAN_SETUP_PLAYSTYLE_COMPETITIVE_TITLE;
+                        return T.default.Messages.CLAN_SETUP_PLAYSTYLE_COMPETITIVE_TITLE;
                     case 5:
-                        return E.default.Messages.CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_TITLE;
+                        return T.default.Messages.CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_TITLE;
                     default:
                         return null
                 }
             }
 
-            function C() {
+            function L() {
                 return {
                     1: {
                         type: 1,
                         emoji: "\uD83D\uDC4B",
-                        title: E.default.Messages.CLAN_SETUP_PLAYSTYLE_SOCIAL_TITLE,
-                        subtitle: E.default.Messages.CLAN_SETUP_PLAYSTYLE_SOCIAL_SUBTITLE
+                        title: T.default.Messages.CLAN_SETUP_PLAYSTYLE_SOCIAL_TITLE,
+                        subtitle: T.default.Messages.CLAN_SETUP_PLAYSTYLE_SOCIAL_SUBTITLE
                     },
                     2: {
                         type: 2,
                         emoji: "\uD83C\uDFAE",
-                        title: E.default.Messages.CLAN_SETUP_PLAYSTYLE_CASUAL_TITLE,
-                        subtitle: E.default.Messages.CLAN_SETUP_PLAYSTYLE_CASUAL_SUBTITLE
+                        title: T.default.Messages.CLAN_SETUP_PLAYSTYLE_CASUAL_TITLE,
+                        subtitle: T.default.Messages.CLAN_SETUP_PLAYSTYLE_CASUAL_SUBTITLE
                     },
                     3: {
                         type: 3,
                         emoji: "⚔️",
-                        title: E.default.Messages.CLAN_SETUP_PLAYSTYLE_COMPETITIVE_TITLE,
-                        subtitle: E.default.Messages.CLAN_SETUP_PLAYSTYLE_COMPETITIVE_SUBTITLE
+                        title: T.default.Messages.CLAN_SETUP_PLAYSTYLE_COMPETITIVE_TITLE,
+                        subtitle: T.default.Messages.CLAN_SETUP_PLAYSTYLE_COMPETITIVE_SUBTITLE
                     },
                     5: {
                         type: 5,
                         emoji: "\uD83D\uDC80",
-                        title: E.default.Messages.CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_TITLE,
-                        subtitle: E.default.Messages.CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_SUBTITLE
+                        title: T.default.Messages.CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_TITLE,
+                        subtitle: T.default.Messages.CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_SUBTITLE
                     }
                 }
-            }(l = r || (r = {}))[l.INTRO_ANIMATION = 0] = "INTRO_ANIMATION", l[l.SETUP = 1] = "SETUP", l[l.SIGN = 2] = "SIGN", (u = s || (s = {}))[u.FOUNDATIONAL_INTRO = 0] = "FOUNDATIONAL_INTRO", u[u.GAMES = 1] = "GAMES", u[u.PLAYSTYLE = 2] = "PLAYSTYLE", u[u.PERSONALITY_INTRO = 3] = "PERSONALITY_INTRO", u[u.UTILITY_TRAITS = 4] = "UTILITY_TRAITS", u[u.INTERESTS = 5] = "INTERESTS", u[u.DESCRIPTION = 6] = "DESCRIPTION", u[u.IDENTITY_INTRO = 7] = "IDENTITY_INTRO", u[u.CUSTOMIZE_TAG_BADGE = 8] = "CUSTOMIZE_TAG_BADGE", u[u.CUSTOMIZE_BANNER = 9] = "CUSTOMIZE_BANNER", u[u.APPLICATION_INTRO = 10] = "APPLICATION_INTRO", u[u.MEMBER_APPLICATION = 11] = "MEMBER_APPLICATION";
-            let g = "700136079562375258",
-                L = "762434991303950386",
-                D = ["Unrated", "Spike Rush", "Death Match", "Swift", "TDM", "Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF"],
-                v = ["20+", "30+", "40+", "All Ages"],
-                M = ["LGBTQIA-Friendly", "All genders"],
-                y = new Set([...D, ...v, ...M]),
-                P = new Set(E.default.getAvailableLocales().map(e => e.value)),
-                U = new Set(["Anime", "Art and Craft", "Architecture", "Baseball", "Basketball", "Beauty", "Beer", "Board Games", "Books", "Cars", "Celebrities", "Coffee", "Coding", "Craft", "Design", "F1", "Fashion", "Fitness", "Food", "Football", "Healthcare", "Home Decor", "Houseplants", "K-Pop", "Knitting", "LEGO", "MARVEL", "Motorcycles", "Movies", "Music", "Nail Art", "Pets", "Photography", "Pok\xe9mon", "Programming", "Roman History", "Science", "Skiing", "Soccer", "Star Wars", "TCG", "TEA", "Tech", "Travel", "TV Shows", "Wine"]);
-            (d = a || (a = {}))[d.PIXEL_RUSH = 0] = "PIXEL_RUSH", d[d.SCANLINES = 1] = "SCANLINES", d[d.TEXTURED = 2] = "TEXTURED", d[d.MAGIC = 3] = "MAGIC", d[d.CUSTOM = 4] = "CUSTOM";
-            let b = [{
-                name: "Boulder",
-                primary: "#8c8d8d",
-                secondary: "#d0d0d1"
-            }, {
-                name: "Cascade",
-                primary: "#43abe9",
-                secondary: "#8ad3e8"
-            }, {
-                name: "Thunder",
-                primary: "#e8c02f",
-                secondary: "#e8d387"
-            }, {
-                name: "Soul",
-                primary: "#e72282",
-                secondary: "#e875ad"
-            }, {
-                name: "Marsh",
-                primary: "#e86e1d",
-                secondary: "#e89055"
-            }, {
-                name: "Volcano",
-                primary: "#e81d1e",
-                secondary: "#e86868"
-            }, {
-                name: "Earth",
-                primary: "#406601",
-                secondary: "#d3e65e"
-            }, {
-                name: "Zephyr",
-                primary: "#4892d5",
-                secondary: "#78b6f0"
-            }];
+            }(u = r || (r = {}))[u.INTRO_ANIMATION = 0] = "INTRO_ANIMATION", u[u.SETUP = 1] = "SETUP", u[u.SIGN = 2] = "SIGN", (d = s || (s = {}))[d.FOUNDATIONAL_INTRO = 0] = "FOUNDATIONAL_INTRO", d[d.GAMES = 1] = "GAMES", d[d.PLAYSTYLE = 2] = "PLAYSTYLE", d[d.PERSONALITY_INTRO = 3] = "PERSONALITY_INTRO", d[d.UTILITY_TRAITS = 4] = "UTILITY_TRAITS", d[d.INTERESTS = 5] = "INTERESTS", d[d.DESCRIPTION = 6] = "DESCRIPTION", d[d.IDENTITY_INTRO = 7] = "IDENTITY_INTRO", d[d.CUSTOMIZE_TAG_BADGE = 8] = "CUSTOMIZE_TAG_BADGE", d[d.CUSTOMIZE_BANNER = 9] = "CUSTOMIZE_BANNER", d[d.APPLICATION_INTRO = 10] = "APPLICATION_INTRO", d[d.MEMBER_APPLICATION = 11] = "MEMBER_APPLICATION";
+            let D = "700136079562375258",
+                v = "762434991303950386",
+                M = ["Unrated", "Spike Rush", "Death Match", "Swift", "TDM", "Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF"],
+                y = ["20+", "30+", "40+", "All Ages"],
+                P = ["LGBTQIA-Friendly", "All genders"],
+                U = new Set([...M, ...y, ...P]),
+                b = new Set(T.default.getAvailableLocales().map(e => e.value)),
+                G = new Set(["Anime", "Art and Craft", "Architecture", "Baseball", "Basketball", "Beauty", "Beer", "Board Games", "Books", "Cars", "Celebrities", "Coffee", "Coding", "Craft", "Design", "F1", "Fashion", "Fitness", "Food", "Football", "Healthcare", "Home Decor", "Houseplants", "K-Pop", "Knitting", "LEGO", "MARVEL", "Motorcycles", "Movies", "Music", "Nail Art", "Pets", "Photography", "Pok\xe9mon", "Programming", "Roman History", "Science", "Skiing", "Soccer", "Star Wars", "TCG", "TEA", "Tech", "Travel", "TV Shows", "Wine"]);
+            (_ = a || (a = {}))[_.PIXEL_RUSH = 0] = "PIXEL_RUSH", _[_.SCANLINES = 1] = "SCANLINES", _[_.TEXTURED = 2] = "TEXTURED", _[_.MAGIC = 3] = "MAGIC", _[_.CUSTOM = 4] = "CUSTOM", (c = o || (o = {})).BOULDER = "boulder", c.CASCADE = "cascade", c.THUNDER = "thunder", c.SOUL = "soul", c.MARSH = "marsh", c.VOLCANO = "volcano", c.EARTH = "earth", c.ZEPHYR = "zephyr";
+            let w = [{
+                    name: "boulder",
+                    primary: "#8c8d8d",
+                    secondary: "#d0d0d1"
+                }, {
+                    name: "cascade",
+                    primary: "#43abe9",
+                    secondary: "#8ad3e8"
+                }, {
+                    name: "thunder",
+                    primary: "#e8c02f",
+                    secondary: "#e8d387"
+                }, {
+                    name: "soul",
+                    primary: "#e72282",
+                    secondary: "#e875ad"
+                }, {
+                    name: "marsh",
+                    primary: "#e86e1d",
+                    secondary: "#e89055"
+                }, {
+                    name: "volcano",
+                    primary: "#e81d1e",
+                    secondary: "#e86868"
+                }, {
+                    name: "earth",
+                    primary: "#406601",
+                    secondary: "#d3e65e"
+                }, {
+                    name: "zephyr",
+                    primary: "#4892d5",
+                    secondary: "#78b6f0"
+                }],
+                B = Object.fromEntries(w.map(e => [e.name, {
+                    primary: e.primary,
+                    secondary: e.secondary
+                }]));
 
-            function G() {
-                return b[Math.floor(Math.random() * b.length)]
+            function k() {
+                return w[Math.floor(Math.random() * w.length)]
             }
 
-            function w(e) {
+            function V(e) {
                 return null == e ? null : "identityGuildId" in e ? e : {
                     identityGuildId: e.identity_guild_id,
                     identityEnabled: e.identity_enabled,
@@ -101455,12 +101472,12 @@
                 }
             }
 
-            function B(e) {
+            function x(e) {
                 return {
                     tag: e.tag
                 }
             }
-            let k = new Map(["432980957394370572", "363445589247131668", "356869127241072640", "700136079562375258", "356875570916753438", "1158877933042143272", "1197827812623650866", "356876176465199104", "1167674267748540516", "542075586886107149", "356875221078245376", "1149118246826561609", "356877880938070016", "356875988589740042", "762434991303950386", "356873622985506820", "356876590342340608", "1205090671527071784", "1182713227491147776", "631914894446297148", "1137125502985961543", "357607478105604096", "359509007423242240", "1121201675240210523", "643897785271189524", "742897755160313986", "356888738724446208", "1199745463918788740", "1116835216464543946", "406637848297472017", "356888961353908224", "905961880789590076", "367827983903490050", "356944273133928458", "356942674672091136", "946609449680908348", "356875762940379136", "615752773690064908", "357607133254254632", "356943499456937984", "477175586805252107", "787443973538971748", "359508713658253318", "356877880938070016", "422772752647323649", "356954277803065354", "359509387670192128", "428055627030331402", "363447565905166336", "372438022647578634", "614380482620293151", "506950362461110273", "356879032584896512", "1161772875901051042", "535371564850479134", "363413743335374859", "385538724592746496", "426526722322726912", "1174041358995042375", "1124351876033425529", "477152881196269569", "1113966530531704943", "425778010222886912", "356875890958925834", "1124358970618953818", "356888577310851072", "398632010442211348", "1124349969906815007", "770314100885422095", "1080277149623271444", "428054228511227914", "358420454764969994", "358421669603311616", "363430548028522496", "1129504162200166401", "1200228630245159032", "356889262362329098", "356887282982191114", "363409643973771264", "1164697075582238730", "940810636273795162", "982316905262120990", "359510095811444736", "363411421553360896", "359509332490059776", "1162076274622222346", "1162085521816813721", "359507724196773888", "359801269008859136", "569253958967885828", "457301824110723113", "1140238527980916757", "1124353632758939688", "542075586886107149", "512699108809637890", "653432003798106122"].map((e, t, n) => [e, n.length - t]))
+            let F = new Map(["432980957394370572", "363445589247131668", "356869127241072640", "700136079562375258", "356875570916753438", "1158877933042143272", "1197827812623650866", "356876176465199104", "1167674267748540516", "542075586886107149", "356875221078245376", "1149118246826561609", "356877880938070016", "356875988589740042", "762434991303950386", "356873622985506820", "356876590342340608", "1205090671527071784", "1182713227491147776", "631914894446297148", "1137125502985961543", "357607478105604096", "359509007423242240", "1121201675240210523", "643897785271189524", "742897755160313986", "356888738724446208", "1199745463918788740", "1116835216464543946", "406637848297472017", "356888961353908224", "905961880789590076", "367827983903490050", "356944273133928458", "356942674672091136", "946609449680908348", "356875762940379136", "615752773690064908", "357607133254254632", "356943499456937984", "477175586805252107", "787443973538971748", "359508713658253318", "356877880938070016", "422772752647323649", "356954277803065354", "359509387670192128", "428055627030331402", "363447565905166336", "372438022647578634", "614380482620293151", "506950362461110273", "356879032584896512", "1161772875901051042", "535371564850479134", "363413743335374859", "385538724592746496", "426526722322726912", "1174041358995042375", "1124351876033425529", "477152881196269569", "1113966530531704943", "425778010222886912", "356875890958925834", "1124358970618953818", "356888577310851072", "398632010442211348", "1124349969906815007", "770314100885422095", "1080277149623271444", "428054228511227914", "358420454764969994", "358421669603311616", "363430548028522496", "1129504162200166401", "1200228630245159032", "356889262362329098", "356887282982191114", "363409643973771264", "1164697075582238730", "940810636273795162", "982316905262120990", "359510095811444736", "363411421553360896", "359509332490059776", "1162076274622222346", "1162085521816813721", "359507724196773888", "359801269008859136", "569253958967885828", "457301824110723113", "1140238527980916757", "1124353632758939688", "542075586886107149", "512699108809637890", "653432003798106122"].map((e, t, n) => [e, n.length - t]))
         },
         963202: function(e, t, n) {
             "use strict";
@@ -112811,8 +112828,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287826",
-                    versionHash: "b318406e3fe11939e6612cdca547900c13023b40"
+                    buildNumber: "287832",
+                    versionHash: "8b6a044cec0c92e2ac0c4642b9c7031194c4635e"
                 }
             }
             n.r(t), n.d(t, {
@@ -149925,7 +149942,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("90508"), n.e("58227"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("43643"), n.e("74870"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("67256")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("85093"), n.e("85552"), n.e("56630"), n.e("43643"), n.e("90508"), n.e("58227"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("74870"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("67256")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -167198,8 +167215,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714034819414",
-                                    build_number: "287826"
+                                    built_at: "1714049096240",
+                                    build_number: "287832"
                                 }
                             },
                             retries: 1
@@ -245067,7 +245084,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b318406e3fe11939e6612cdca547900c13023b40"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8b6a044cec0c92e2ac0c4642b9c7031194c4635e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273591,7 +273608,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287826"
+                                build_number: "287832"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280825,7 +280842,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287826", "287826"), 10);
+                let s = parseInt((n = "287832", "287832"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308293,4 +308310,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.d770d57d76925d00eab6.js.map
+//# sourceMappingURL=35705.f4fae1898e6b650b26bb.js.map
