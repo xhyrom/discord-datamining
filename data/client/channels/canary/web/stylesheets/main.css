@@ -74892,10 +74892,13 @@ html .invoiceCancelRow_aa7946 {
     fill: var(--white-500)
 }
 
-.gemProgressCircle__4a3db {
+.progressCircle_c0865b {
     width: 80%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
+}
+
+.progressCricleBottomMargin_c213df {
     margin-bottom: 15px
 }
 
@@ -76508,9 +76511,12 @@ html .invoiceCancelRow_aa7946 {
     align-items: center;
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
+    box-sizing: border-box;
+    min-width: 560px;
+    padding-top: 24px;
+    padding-bottom: 16px;
     padding-right: 48px;
-    padding-left: 24px;
-    box-sizing: border-box
+    padding-left: 24px
 }
 
 .expandedProgressBarContainer_c2b92e {
@@ -76518,11 +76524,6 @@ html .invoiceCancelRow_aa7946 {
     margin-right: 16px;
     margin-left: 16px;
     border-radius: 8px
-}
-
-.expandedProgressBarContainerSettingsPage_ef61f6,
-.expandedProgressBarContainer_c2b92e {
-    min-width: 560px
 }
 
 .expandedProgressBarContainerSettingsPage_ef61f6 {
@@ -76547,24 +76548,16 @@ html .invoiceCancelRow_aa7946 {
 
 .expandedProgressBarContent__17ba9 {
     text-align: left;
-    padding-left: 24px;
-    padding-top: 24px
-}
-
-.expandedProgressBarContentVariant1__37efa {
-    max-width: 703px
-}
-
-.expandedProgressBarContentVariant2_e76181 {
-    max-width: 522px
+    margin-left: 24px;
+    max-width: 989px
 }
 
 .userAvatarProgressBarContainer__52b1f {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 8px;
-    padding-bottom: 8px
+    margin-top: 8px;
+    margin-bottom: 8px
 }
 
 .userAvatarProgressBarUnit__6bc46 {
@@ -76572,7 +76565,6 @@ html .invoiceCancelRow_aa7946 {
     justify-content: center;
     align-items: center;
     border-radius: 32px;
-    opacity: .7;
     width: 32px;
     height: 32px
 }
@@ -76610,8 +76602,7 @@ html .invoiceCancelRow_aa7946 {
 
 .expandedProgressBarButtonContainer__0095b {
     display: flex;
-    margin-top: 16px;
-    padding-bottom: 16px
+    margin-top: 16px
 }
 
 .expandedProgressBarButtonContainerLayout_e10665 {
@@ -76648,7 +76639,7 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .expandedProgressBarSelectFriendsIcon__53d09 {
-    padding-right: 4px
+    margin-right: 4px
 }
 
 .giftIcon__38883 {
@@ -135713,4 +135704,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.0a2d7d762dbe82ebc1a3.css.map*/
+/*# sourceMappingURL=99387.c7c1370ac78710c413e8.css.map*/
