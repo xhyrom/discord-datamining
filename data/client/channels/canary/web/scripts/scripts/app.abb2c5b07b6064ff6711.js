@@ -5086,6 +5086,7 @@
             e.exports = {
                 animationContainer: "animationContainer_af2200",
                 buttonsContainer: "buttonsContainer_a90621",
+                charterClanBadge: "charterClanBadge__6db2b",
                 charterClanTag: "charterClanTag_bb407f",
                 clickable: "clickable_b41429",
                 closeButton: "closeButton_e88b7d",
