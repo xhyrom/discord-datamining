@@ -36740,7 +36740,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287907", ", Version Hash: ").concat("120500478dcfcd1cee82a4ed22c276871773ad15")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("287909", ", Version Hash: ").concat("a1db1c7c078912e7851ee544ee5d303fd1c3965e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86957,8 +86957,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "287907", "287907"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287907")), t = 0), t
+                let t = parseInt((e = "287909", "287909"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("287909")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112883,8 +112883,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "287907",
-                    versionHash: "120500478dcfcd1cee82a4ed22c276871773ad15"
+                    buildNumber: "287909",
+                    versionHash: "a1db1c7c078912e7851ee544ee5d303fd1c3965e"
                 }
             }
             n.r(t), n.d(t, {
@@ -167332,8 +167332,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714066273218",
-                                    build_number: "287907"
+                                    built_at: "1714066896329",
+                                    build_number: "287909"
                                 }
                             },
                             retries: 1
@@ -184941,10 +184941,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 CONSECUTIVE_HEARTBEAT_PERIOD_MS: function() {
-                    return l
+                    return u
                 },
                 DismissibleQuestContentFlags: function() {
                     return o.DismissibleQuestContentFlags
+                },
+                QuestVariants: function() {
+                    return l.QuestVariants
                 },
                 QuestsExperimentLocations: function() {
                     return r
@@ -184952,9 +184955,10 @@
             });
             var i, r, s = n("758846"),
                 a = n("70956"),
-                o = n("438954");
+                o = n("438954"),
+                l = n("670081");
             (i = r || (r = {})).ACTIVITY_PANEL = "quests_bar_activity_panel", i.QUESTS_MANAGER = "quests_manager", i.USER_SETTINGS_GIFT_INVENTORY = "user_settings_gift_inventory", i.USE_QUESTS = "use_quests", i.STREAM_SOURCE_SELECT = "stream_source_select", i.MEMBERS_LIST = "members_list", i.QUESTS_BAR = "quests_bar", i.REWARD_CODE_MODAL = "reward_code_modal", i.QUEST_PREVIEW_TOOL = "quest_preview_tool", i.QUESTS_CARD = "quests_card";
-            let l = a.default.Millis.MINUTE * s.Quests.ConsecutiveHeartbeatPeriodMinutes
+            let u = a.default.Millis.MINUTE * s.Quests.ConsecutiveHeartbeatPeriodMinutes
         },
         113434: function(e, t, n) {
             "use strict";
@@ -185695,7 +185699,8 @@
                                 gameTile: i.game_tile,
                                 logotype: i.logotype
                             },
-                            inGameQuestConfig: null
+                            inGameQuestConfig: null,
+                            variants: e.variants
                         }
                     }).with({
                         config_version: 2
@@ -185705,6 +185710,7 @@
                         getGameLink: e.get_game_link,
                         applicationId: e.application_id,
                         applicationName: e.application_name,
+                        variants: e.variants,
                         streamDurationRequirementMinutes: 0,
                         rewardCodeExpiresAt: "",
                         gameTitle: "",
@@ -245200,7 +245206,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "120500478dcfcd1cee82a4ed22c276871773ad15"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a1db1c7c078912e7851ee544ee5d303fd1c3965e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273724,7 +273730,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "287907"
+                                build_number: "287909"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280958,7 +280964,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "287907", "287907"), 10);
+                let s = parseInt((n = "287909", "287909"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -307596,6 +307602,15 @@
                 }
             }), (r = i || (i = {}))[r.REWARD_CODE = 1] = "REWARD_CODE", r[r.IN_GAME = 2] = "IN_GAME", r[r.COLLECTIBLE = 3] = "COLLECTIBLE"
         },
+        670081: function(e, t, n) {
+            "use strict";
+            var i, r;
+            n.r(t), n.d(t, {
+                QuestVariants: function() {
+                    return i
+                }
+            }), (r = i || (i = {}))[r.POST_ENROLLMENT_CTA = 1] = "POST_ENROLLMENT_CTA", r[r.PLAYTIME_CRITERIA = 2] = "PLAYTIME_CRITERIA", r[r.QUEST_BAR_V2 = 3] = "QUEST_BAR_V2"
+        },
         758846: function(e, t, n) {
             "use strict";
             var i, r;
@@ -308426,4 +308441,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.07359ddd22201880895a.js.map
+//# sourceMappingURL=35705.82a049f7207291f37d82.js.map

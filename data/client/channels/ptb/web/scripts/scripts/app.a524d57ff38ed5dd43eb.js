@@ -22630,6 +22630,7 @@
                 errorMessageWrapper: "errorMessageWrapper_b1e5ac",
                 fields: "fields_e540ed",
                 fieldsVertical: "fieldsVertical_c3133b",
+                fullWidthField: "fullWidthField_d2f4b3",
                 heading: "heading__2adc1",
                 headingWithTooltip: "headingWithTooltip__3f120",
                 questBarPreview: "questBarPreview_e90e97",
