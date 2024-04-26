@@ -1,2 +1,0 @@
-<p>The most effective place to share your feature request and ideas for improving Discord is at <a href="https://support.discord.com/hc/en-us/community/topics" target="_blank" rel="noopener">feedback.discord.com</a>. The Discord team regularly review the ideas and incorporate them into future product planning and discussions. </p>
-<p>Make sure to vote on your favorite features! Don't see your game-changing idea on the list? Make sure to add it and get your friends, colleagues, and communities to chime in and make it a reality.</p>

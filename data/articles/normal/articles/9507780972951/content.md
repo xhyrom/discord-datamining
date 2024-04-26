@@ -1,9 +1,0 @@
-<h1><span style="font-weight: 400;">gg sans: Discord’s New, Custom Font</span></h1>
-<p><span style="font-weight: 400;">Starting <strong>December 1, 2022</strong>, Discord will begin updating the font across all of its surfaces to our new, custom font, gg sans. Everything from the Discord mobile and desktop apps to our website and blog will use gg sans as their typeface. This change gives Discord the flexibility to customize our font going forward so that we can continuously provide you with the best experience on Discord. </span></p>
-<h2><strong>The meaning behind gg sans</strong></h2>
-<p><span style="font-weight: 400;"><strong>gg sans</strong> highlights one of our favorite characters in our new typeface, the lowercase “g”, and is an ode to our gaming origins. ‘gg’ is an abbreviation for ‘good game’ and is frequently used on our platform. It’s also baked into the foundation of our company, using discord.gg in any of our shared links.</span></p>
-<h1><strong>FAQ</strong></h1>
-<p><strong>Q: What do I need to do to get the new font?</strong></p>
-<p><strong>A: </strong><span style="font-weight: 400;">Discord will start to change the font across its surfaces on <strong>December 1, 2022</strong>. You should see the new font across Discord in the weeks following this date. For the Discord desktop and mobile apps, you may need to refresh the app or make sure your app is updated to the latest version to see the change. For the website, no action is required on your part.</span></p>
-<p><strong>Q: Can I use the custom font for my own projects?</strong></p>
-<p><strong>A: gg sans</strong><span style="font-weight: 400;"> is not currently an open-source font, so you are not able to use it at this time.</span></p>
