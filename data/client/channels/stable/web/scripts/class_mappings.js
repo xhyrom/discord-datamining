@@ -5010,11 +5010,13 @@
             "use strict";
             e.exports = {
                 closeButton: "closeButton__290e3",
+                deleteItem: "deleteItem__6d453",
                 mainContent: "mainContent__465e0",
                 modal: "modal__06f49",
                 modalContents: "modalContents_d4af1c",
                 sidebar: "sidebar__57865",
-                sidebarWrapper: "sidebarWrapper_c37160"
+                sidebarWrapper: "sidebarWrapper_c37160",
+                statusDanger: "statusDanger__3c2dd"
             }
         },
         319695: function(e) {
@@ -5092,6 +5094,7 @@
                 footer: "footer_d63e9e",
                 footerAlphaMsg: "footerAlphaMsg_e3ec93",
                 footerAlphaTag: "footerAlphaTag__21ac5",
+                footerButtons: "footerButtons__6d962",
                 mainContent: "mainContent__23e7a",
                 modal: "modal_f49d0b",
                 modalContents: "modalContents_e19dbf",
@@ -7265,10 +7268,11 @@
                 clanEnvelopeBottom: "clanEnvelopeBottom_e5cdee",
                 clanEnvelopeTop: "clanEnvelopeTop_bf09a8",
                 upsellCtaContainer: "upsellCtaContainer__5221e",
-                upsellCtaDetail: "upsellCtaDetail_a69e4c",
-                upsellCtaDetails: "upsellCtaDetails__8d79f",
-                upsellCtaTitle: "upsellCtaTitle_e8cbe3",
-                upsellIcon: "upsellIcon__05e46"
+                upsellDetail: "upsellDetail__401db",
+                upsellDetailText: "upsellDetailText__886b7",
+                upsellDetails: "upsellDetails_dbe31a",
+                upsellIcon: "upsellIcon__05e46",
+                upsellTitle: "upsellTitle__75ee7"
             }
         },
         809562: function(e) {
@@ -7308,13 +7312,14 @@
                 clanCardOuterRight: "clanCardOuterRight__19d1a clanCardOuter__79a32 clanCard__50538",
                 footer: "footer__64d74",
                 footerActions: "footerActions_f527fe",
+                footerButtons: "footerButtons__8396f",
                 scroller: "scroller_cc96df",
                 sequencer: "sequencer__03419",
+                stepsContainer: "stepsContainer__70c41",
                 upsellContainer: "upsellContainer_aae5af",
-                upsellCtaSubtitle: "upsellCtaSubtitle__43db3",
-                upsellCtaTitle: "upsellCtaTitle_f32e4e",
                 upsellDetails: "upsellDetails_fe7ec8",
-                wizard: "wizard__29f91"
+                upsellSubtitle: "upsellSubtitle__06626",
+                upsellTitle: "upsellTitle__25132"
             }
         },
         190500: function(e) {
@@ -18836,8 +18841,7 @@
                 perksDemoContainer: "perksDemoContainer_d174dc",
                 perksDemoText: "perksDemoText__39380",
                 sparkleContainer: "sparkleContainer__6b25a",
-                sparkles: "sparkles__88bc5",
-                streamingIconGlow: "streamingIconGlow__5b7b2"
+                sparkles: "sparkles__88bc5"
             }
         },
         815668: function(e) {
@@ -19958,6 +19962,7 @@
                 header: "header_b4bd8d",
                 name: "name__991e3",
                 nickname: "nickname__1d9af",
+                panel: "panel__21993",
                 question: "question__6ebd5",
                 remove: "remove__5ed5e",
                 scroller: "scroller_b7f6d8",
@@ -25300,7 +25305,6 @@
         23812: function(e) {
             "use strict";
             e.exports = {
-                active: "active_a8e6aa",
                 button: "button_e8c966",
                 buttonInner: "buttonInner__915b1",
                 color: "color_b28e35"
@@ -25309,8 +25313,9 @@
         3062: function(e) {
             "use strict";
             e.exports = {
+                biteSize: "biteSize_b43281",
                 faded: "faded__699a5",
-                modal: "modal__16963",
+                fullSize: "fullSize_c7ae09",
                 wrapper: "wrapper__3abe0"
             }
         },
@@ -26458,6 +26463,7 @@
         451304: function(e) {
             "use strict";
             e.exports = {
+                body: "body_a614ef",
                 heading: "heading_bf2723",
                 iconTitle: "iconTitle_be1c6f",
                 tab: "tab__7d975",
@@ -27202,6 +27208,7 @@
             e.exports = {
                 active: "active_ff29dc",
                 activeLight: "activeLight__4b58a",
+                buttonMask: "buttonMask_acf06c",
                 buttonPremiumGlow: "buttonPremiumGlow__778ce",
                 centerButton: "centerButton__8316e colorable__4f530",
                 centerIcon: "centerIcon_e3df23",

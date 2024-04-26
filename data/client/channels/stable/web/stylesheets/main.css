@@ -27077,6 +27077,11 @@ div.profileThemedContainer__6e645 {
     color: Highlight
 }
 
+.buttonMask_acf06c {
+    width: inherit;
+    height: inherit
+}
+
 @value responsiveWidthMobile from '../../uikit/auth/WaveSplash.module.css';
 
 .modal_d2e7a7 {
@@ -35407,6 +35412,10 @@ span.clanTag_f4aadc {
     padding: 0 60px
 }
 
+.footerButtons__6d962 {
+    margin-top: 12px
+}
+
 .footerAlphaMsg_e3ec93 {
     display: flex;
     background-color: var(--background-secondary);
@@ -35447,8 +35456,7 @@ span.clanTag_f4aadc {
 .buttonsContainer_a90621 {
     display: flex;
     align-items: end;
-    justify-content: space-between;
-    margin-top: 12px
+    justify-content: space-between
 }
 
 .overviewSidebar__995aa {
@@ -36731,11 +36739,12 @@ span.clanTag_f4aadc {
     z-index: 5
 }
 
-.upsellCtaTitle_e8cbe3 {
-    margin-bottom: 24px
+.upsellTitle__75ee7 {
+    margin-bottom: 24px;
+    color: var(--primary-130)
 }
 
-.upsellCtaDetails__8d79f {
+.upsellDetails_dbe31a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
@@ -36743,13 +36752,17 @@ span.clanTag_f4aadc {
     margin-bottom: 24px
 }
 
-.upsellCtaDetail_a69e4c {
+.upsellDetail__401db {
     max-width: 186px
 }
 
+.upsellDetailText__886b7 {
+    color: var(--primary-330)
+}
+
 .upsellIcon__05e46 {
-    color: var(--header-secondary);
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    fill: var(--primary-330)
 }
 
 @value baseClanCardWidth 240px;
@@ -36758,6 +36771,16 @@ span.clanTag_f4aadc {
 @value centerClanScale 1;
 @value innerClanScale 0.833;
 @value outerClanScale 0.68;
+
+.stepsContainer__70c41 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative
+}
 
 .upsellContainer_aae5af {
     padding-top: 80px;
@@ -36842,11 +36865,13 @@ span.clanTag_f4aadc {
     margin-bottom: 40px
 }
 
-.upsellCtaTitle_f32e4e {
+.upsellTitle__25132 {
+    color: var(--primary-130);
     margin-bottom: 16px
 }
 
-.upsellCtaSubtitle__43db3 {
+.upsellSubtitle__06626 {
+    color: var(--primary-330);
     margin-bottom: 40px
 }
 
@@ -36862,25 +36887,20 @@ span.clanTag_f4aadc {
     width: 800px
 }
 
-.wizard__29f91 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    position: relative
-}
-
 .footer__64d74 {
+    display: flex;
     width: 100%
 }
 
 .footerActions_f527fe {
-    margin: 24px;
-    display: flex;
+    flex: 1;
     justify-content: space-between;
-    gap: 16px
+    gap: 16px;
+    margin: 24px
+}
+
+.footerButtons__8396f {
+    margin-top: 12px
 }
 
 .scrollerContainer__4b6bd {
@@ -36911,11 +36931,9 @@ span.clanTag_f4aadc {
 .backgroundImage__778b2 {
     flex: 1;
     width: auto;
-    background-color: var(--black-500);
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 50
+    background-size: cover
 }
 
 .genshinBackgroundImage__21a5c {
@@ -44397,10 +44415,6 @@ span.clanTag_f4aadc {
 
 .gameWrapper_da7443 .liveIndicator_fd070e {
     padding: 0 4px
-}
-
-.streamingIconGlow__5b7b2 {
-    filter: drop-shadow(0 0 10px#b845c1)
 }
 
 .clickableGameWrapper_dc17b2 {
@@ -57183,13 +57197,13 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .color_b28e35 {
-    background-color: var(--redesign-button-secondary-overlay-background);
+    background-color: hsl(var(--black-500-hsl)/.7);
     color: var(--white-500)
 }
 
 .color_b28e35:hover,
-.color_b28e35.active_a8e6aa {
-    background-color: var(--redesign-button-secondary-overlay-pressed-background)
+.color_b28e35:active {
+    background-color: hsl(var(--black-500-hsl)/.85)
 }
 
 .color_b28e35:disabled,
@@ -57967,8 +57981,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .wrapper__3abe0 {
     position: absolute;
-    top: 12px;
-    right: 12px;
     display: flex;
     gap: 8px;
     z-index: 3;
@@ -57979,7 +57991,12 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     display: none
 }
 
-.wrapper__3abe0.modal__16963 {
+.wrapper__3abe0.biteSize_b43281 {
+    top: 12px;
+    right: 12px
+}
+
+.wrapper__3abe0.fullSize_c7ae09 {
     top: 12px;
     right: 16px
 }
@@ -59115,7 +59132,7 @@ div:has(>div>.modal__06f49) {
 .modalContents_d4af1c {
     position: relative;
     display: flex;
-    max-width: 1e3px;
+    max-width: 1200px;
     height: 100%;
     flex: 1
 }
@@ -59138,6 +59155,17 @@ div:has(>div>.modal__06f49) {
     display: flex;
     flex-direction: column;
     flex: 1 1 800px
+}
+
+.deleteItem__6d453 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px
+}
+
+.statusDanger__3c2dd {
+    color: var(--status-danger)
 }
 
 .widthForAddPack__6a170 {
@@ -76583,7 +76611,8 @@ html .invoiceCancelRow_aa7946 {
     min-height: 260px;
     margin-right: 16px;
     margin-left: 16px;
-    border-radius: 8px
+    border-radius: 8px;
+    max-width: 989px
 }
 
 .expandedProgressBarContainerSettingsPage_ef61f6 {
@@ -76608,8 +76637,7 @@ html .invoiceCancelRow_aa7946 {
 
 .expandedProgressBarContent__17ba9 {
     text-align: left;
-    margin-left: 24px;
-    max-width: 989px
+    margin-left: 24px
 }
 
 .userAvatarProgressBarContainer__52b1f {
@@ -120267,6 +120295,10 @@ html .invoiceCancelRow__6ff3e {
     padding-left: 0
 }
 
+.panel__21993 {
+    flex-grow: 1
+}
+
 .scroller_b7f6d8 {
     padding: 16px 8px;
     width: 202px;
@@ -131345,6 +131377,10 @@ div.nagbar_c731ff {
     white-space: nowrap
 }
 
+.body_a614ef {
+    margin-top: 16px
+}
+
 @media(max-width:960px) {
     .tabBar_f88f31 {
         gap: 32px
@@ -135772,4 +135808,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d04a326d7c884c5df822.css.map*/
+/*# sourceMappingURL=99387.37e3f76035b01369cfa8.css.map*/
