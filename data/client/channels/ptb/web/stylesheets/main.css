@@ -20881,19 +20881,19 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     gap: 4px
 }
 
-.noteClickable__7552c {
+.noteClickable__153b6 {
     display: flex;
     align-items: center;
     cursor: pointer
 }
 
-.noteText__42e4e {
+.noteText__9421a {
     display: flex;
     gap: 4px;
     border-radius: 4px
 }
 
-.noteText__42e4e .noteTextArea__171ac {
+.noteText__9421a .noteTextArea__9e075 {
     border: none;
     box-sizing: border-box;
     padding: 0;
@@ -20921,15 +20921,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     flex-wrap: wrap;
     align-items: center;
     gap: 4px
-}
-
-.usernameRow__73bf0 .nicknameIcon__13099 {
-    visibility: hidden
-}
-
-.usernameRow__73bf0:hover .nicknameIcon__13099,
-.usernameRow__73bf0:focus-within .nicknameIcon__13099 {
-    visibility: visible
 }
 
 .tags__18aee {
@@ -21191,6 +21182,16 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     display: flex;
     flex-direction: column;
     gap: 16px
+}
+
+.noteIcon_d4555f {
+    opacity: 0;
+    transition: opacity.6s ease
+}
+
+.noteIcon_d4555f.visible__24dad,
+.noteIcon_d4555f:focus-visible {
+    opacity: 1
 }
 
 .custom-profile-theme .statusBubble__1a4c3,
@@ -135839,4 +135840,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.dd11828f7c1334a49b00.css.map*/
+/*# sourceMappingURL=99387.3df6db899d9a6fdc15d4.css.map*/

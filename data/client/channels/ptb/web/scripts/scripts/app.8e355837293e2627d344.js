@@ -25233,12 +25233,12 @@
                 memberSinceWrapper: "memberSinceWrapper__03059"
             }
         },
-        222477: function(e) {
+        518655: function(e) {
             "use strict";
             e.exports = {
-                noteClickable: "noteClickable__7552c",
-                noteText: "noteText__42e4e",
-                noteTextArea: "noteTextArea__171ac"
+                noteClickable: "noteClickable__153b6",
+                noteText: "noteText__9421a",
+                noteTextArea: "noteTextArea__9e075"
             }
         },
         785494: function(e) {
@@ -25280,7 +25280,6 @@
                 container: "container_df7ce7",
                 dotSpacer: "dotSpacer__0412c",
                 nickname: "nickname__745d1",
-                nicknameIcon: "nicknameIcon__13099",
                 tags: "tags__18aee",
                 userTag: "userTag_eb9b2a",
                 userTagDiscriminator: "userTagDiscriminator_dd0ae5",
@@ -25669,7 +25668,9 @@
         797849: function(e) {
             "use strict";
             e.exports = {
-                body: "body__489bc"
+                body: "body__489bc",
+                noteIcon: "noteIcon_d4555f",
+                visible: "visible__24dad"
             }
         },
         804384: function(e) {
