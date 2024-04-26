@@ -76587,7 +76587,8 @@ html .invoiceCancelRow_aa7946 {
     min-height: 260px;
     margin-right: 16px;
     margin-left: 16px;
-    border-radius: 8px
+    border-radius: 8px;
+    max-width: 989px
 }
 
 .expandedProgressBarContainerSettingsPage_ef61f6 {
@@ -76612,8 +76613,7 @@ html .invoiceCancelRow_aa7946 {
 
 .expandedProgressBarContent__17ba9 {
     text-align: left;
-    margin-left: 24px;
-    max-width: 989px
+    margin-left: 24px
 }
 
 .userAvatarProgressBarContainer__52b1f {
@@ -135784,4 +135784,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.038f27ffb4626ecf1035.css.map*/
+/*# sourceMappingURL=99387.016d9900f7b75dcfec0e.css.map*/
