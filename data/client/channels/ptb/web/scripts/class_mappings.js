@@ -5023,6 +5023,7 @@
             "use strict";
             e.exports = {
                 badge: "badge_d12073",
+                chipletContainerInline: "chipletContainerInline_fe40ef",
                 chipletContainerInner: "chipletContainerInner_bfcb1e",
                 clickable: "clickable__8131d",
                 noTooltip: "noTooltip_e2f660",
@@ -5045,6 +5046,16 @@
                 toastButton: "toastButton_b270c7",
                 toastContainerInner: "toastContainerInner__971ff",
                 wrapper: "wrapper__900d7"
+            }
+        },
+        224351: function(e) {
+            "use strict";
+            e.exports = {
+                chipletContainer: "chipletContainer__2aa46",
+                chipletParent: "chipletParent_db23c1",
+                container: "container__43fce",
+                overflowingFade: "overflowingFade__5f025",
+                usernameContainer: "usernameContainer__60276"
             }
         },
         598029: function(e) {
@@ -25811,6 +25822,7 @@
         674582: function(e) {
             "use strict";
             e.exports = {
+                clanTag: "clanTag__900e0",
                 container: "container__1c2eb",
                 copiableField: "copiableField__5eae7",
                 copiableNameTag: "copiableNameTag_e76019",
