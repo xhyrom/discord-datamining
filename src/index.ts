@@ -42,7 +42,7 @@ if (process.env.SCRAPE_DOMAINS === "true")
 // Scrape all github data - organisation and repositories
 if (process.env.SCRAPE_GITHUB === "true") await new Github().run();
 
-if (process.env.SCRAPE_POSTS === "true") await new Posts().run();
+//if (process.env.SCRAPE_POSTS === "true") await new Posts().run();
 
 if (process.env.SCRAPE_CLIENT_ROUTES === "true") await new Routes().run();
 
