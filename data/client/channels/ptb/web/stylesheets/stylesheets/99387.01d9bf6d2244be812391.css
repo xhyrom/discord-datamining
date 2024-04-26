@@ -5059,7 +5059,7 @@
 }
 
 .title__63238 {
-    font-size: 17px
+    font-size: 1.0625rem
 }
 
 .developerResources__8ef1d:hover {
@@ -5090,8 +5090,8 @@
 }
 
 .backHeader_cff6da {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     color: var(--interactive-normal)
 }
 
@@ -50449,6 +50449,11 @@ span.clanTag_f4aadc {
     border-radius: var(--radius-sm)
 }
 
+.eventImage_f9c259 {
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
 .activityCardImageOneAvatar_c5282e {
     display: flex;
     align-items: center;
@@ -73857,8 +73862,8 @@ html .invoiceCancelRow_aa7946 {
 
 .bodyText_fa331b {
     color: var(--interactive-normal);
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -73905,8 +73910,8 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .trialCheckboxLabel__7d1e0 {
-    font-size: 14px;
-    line-height: 18px
+    font-size: .875rem;
+    line-height: 1.125rem
 }
 
 .loader_acb69b {
@@ -77167,7 +77172,7 @@ html .invoiceCancelRow_aa7946 {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 1rem
+    font-size: 16px
 }
 
 .viewAllGamesButton__34838 {
@@ -77187,7 +77192,7 @@ html .invoiceCancelRow_aa7946 {
 
 .viewAllGames__76b00,
 .viewAllNitroGames_a65ce4 {
-    font-size: 1rem;
+    font-size: 16px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -77244,7 +77249,7 @@ html .invoiceCancelRow_aa7946 {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 1rem
+    font-size: 16px
 }
 
 .headerBar__3337a {
@@ -135807,4 +135812,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.61d96f6c14ed936cf7c0.css.map*/
+/*# sourceMappingURL=99387.01d9bf6d2244be812391.css.map*/
