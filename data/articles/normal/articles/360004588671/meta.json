@@ -1,0 +1,25 @@
+{
+  "id": 360004588671,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/360004588671.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/360004588671-Discord-Certified-Device-Integrations",
+  "author_id": 114628872252,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 201110537,
+  "created_at": "2018-06-05T22:24:25Z",
+  "name": "Discord Certified Device Integrations",
+  "title": "Discord Certified Device Integrations",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2020-06-19T03:15:34Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": 115002787571,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/115002787571.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/115002787571--Mobile-Video-Calls",
+  "author_id": 361945854972,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 201110537,
+  "created_at": "2017-11-15T21:38:40Z",
+  "name": "[Mobile] Video Calls",
+  "title": "[Mobile] Video Calls",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-05-31T16:15:27Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot"
+  ]
+}

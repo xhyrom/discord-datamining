@@ -1,0 +1,29 @@
+{
+  "id": 360001556852,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/360001556852.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/360001556852-Invalid-Invite-Links",
+  "author_id": 2921470028,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 200613688,
+  "created_at": "2018-03-08T19:29:03Z",
+  "name": "Invalid Invite Links",
+  "title": "Invalid Invite Links",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-08-22T19:01:29Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "invite",
+    "server invite",
+    "expired",
+    "answer-bot",
+    "invalid invite"
+  ]
+}

@@ -1,0 +1,6 @@
+<p><span class="wysiwyg-font-size-large"><a href="https://support.discord.com/hc/articles/4410339349655" target="_blank" rel="noopener noreferrer"><strong>Copyright Policy</strong></a></span></p>
+<p><span class="wysiwyg-font-size-large"><a href="https://support.discord.com/hc/articles/4410339366295" target="_blank" rel="noopener noreferrer"><strong>Paid Services Terms</strong></a></span></p>
+<p><span class="wysiwyg-font-size-large"><a href="https://support.discord.com/hc/articles/4410339387671" target="_blank" rel="noopener noreferrer"><strong>CCPA Reporting Metrics</strong></a></span></p>
+<p><span class="wysiwyg-font-size-large"><a href="https://support.discord.com/hc/articles/4410339409047" target="_blank" rel="noopener noreferrer"><strong>Related Companies</strong></a></span></p>
+<p><span class="wysiwyg-font-size-large"><a href="https://support.discord.com/hc/articles/360012668071-Refund-Policy" target="_blank" rel="noopener noreferrer"><strong>Refund Policy</strong></a></span></p>
+<p><span class="wysiwyg-font-size-large"><strong><a href="https://support.discord.com/hc/en-us/articles/5431812448791" target="_blank" rel="noopener">How long Discord keeps your information</a></strong></span></p>

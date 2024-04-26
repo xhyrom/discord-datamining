@@ -1,0 +1,30 @@
+<p><span style="font-weight: 400;">Our </span><a href="https://discord.com/guidelines" target="_blank" rel="noopener">Community Guidelines</a><span style="font-weight: 400;"> require that all adult content posted to Discord be kept behind an age-restricted gate. Server owners can designate </span><a href="https://support.discord.com/hc/en-us/articles/115000084051" target="_blank" rel="noopener">specific channels as being 18+</a><span style="font-weight: 400;"> by adding an age-restricted gate. Entire servers can now be classified as 18+ through the use of an </span><strong>age-restricted server designation</strong><span style="font-weight: 400;">.</span></p>
+<h1><span style="font-weight: 400;">What is classified as an age-restricted server? </span></h1>
+<p><span style="font-weight: 400;">Servers must be classified as age-restricted if the community is</span><strong> organized around age-restricted themes or if the majority of the server’s content is focused on 18+ content</strong><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">Discord will mark servers meeting these criteria as age-restricted if they are not appropriately designated. We will notify server owners letting them know if their server has been impacted through a system message.</span></p>
+<h3><strong>Note: The ability to self-designate a server as age-restricted will be available to server owners soon!</strong></h3>
+<h2><span style="font-weight: 400;">What does this mean for age-restricted server members? </span></h2>
+<p><span style="font-weight: 400;">No users between the ages of 13 and 17 will be able to join or view the content in age-restricted servers. </span></p>
+<p><span style="font-weight: 400;">18+ users attempting to join or access new age-restricted servers on iOS will be required to opt-in to viewing age-restricted content on desktop before being allowed into these spaces.</span></p>
+<p><span style="font-weight: 400;">Additionally, a subset of age-restricted servers that are </span><strong>specifically focused on explicit pornographic content</strong><span style="font-weight: 400;"> will be blocked entirely on iOS. iOS users aged 18+ will only be able to join and access these dedicated pornography servers on the desktop and web versions of Discord.</span></p>
+<h2><span style="font-weight: 400;">What about age-restricted Channels? </span></h2>
+<p><span style="font-weight: 400;">All Discord server owners must still apply age-restricted gates to channels with mature content. </span></p>
+<p><span style="font-weight: 400;">Having age-restricted channels in a server does not, however, automatically mean that an entire server should be designated age-restricted. An age-restricted designation is only necessary if the majority of the server’s content is focused on 18+ content.</span></p>
+<h1><span style="font-weight: 400;">Appealing an age-restricted server designation</span></h1>
+<p><span style="font-weight: 400;">Owners of communities designated age-restricted by Discord will have to submit an appeal if they wish to have the age-restricted server-level designation removed. </span></p>
+<p><span style="font-weight: 400;">Server owners can write in to Trust &amp; Safety’s support queue </span><a href="https://support.discord.com/hc/requests/new?ticket_form_id=1500000547262" target="_blank" rel="noopener">here</a><span style="font-weight: 400;">:</span></p>
+<ul>
+    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Select “Appeal my server’s age-restricted designation”</span></li>
+    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Enter the required details of the server</span></li>
+</ul>
+<p><span style="font-weight: 400;">Server owners should provide their server’s ID as well as an explanation why their community should be considered safe-for-work (SFW). </span><strong>We cannot accept server-level appeals from anyone besides the server owner.</strong><span style="font-weight: 400;"> Communities determined to be SFW will have the age-restricted designation removed — at which time users between the ages of 13 and 17 will be allowed to rejoin.</span></p>
+<h1><span style="font-weight: 400;">Updating user’s age information</span></h1>
+<p><span style="font-weight: 400;">Users who identified as being between the ages of 13 and 17 during the age-verification process will not be allowed to join age-restricted servers. 18+ users who have mistakenly identified as being between 13 and 17 can write in to Trust &amp; Safety to have their age information updated. </span></p>
+<p><span style="font-weight: 400;">Users should submit requests through this form: </span><a href="https://dis.gd/request"><span style="font-weight: 400;">https://dis.gd/request</span></a><span style="font-weight: 400;"> </span></p>
+<ul>
+    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Select “Appeals, age update, other questions”</span></li>
+    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Choose the subcategory “Update my age information”</span></li>
+    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Enter date of birth and submit the requested materials</span></li>
+</ul>
+<p><span style="font-weight: 400;">Trust &amp; Safety will not be able to update a user’s age without </span><em><span style="font-weight: 400;">all</span></em><span style="font-weight: 400;"> the requested pieces of information. Additional details on updating age information can be found </span><a href="https://support.discord.com/hc/en-us/articles/360041820932-Help-I-m-old-enough-to-use-Discord-in-my-country-but-I-got-locked-out-"><span style="font-weight: 400;">here</span></a><span style="font-weight: 400;">.</span></p>
+<h3><strong>Please note: All users looking to appeal an action at both the account and server levels must have a verified email in order to correspond with our support teams.</strong></h3>

@@ -1,0 +1,4 @@
+<h3 id="h_01HQBWJ8CGG7TV8C9VR5A21YGR"><span style="color: #434343;" data-darkreader-inline-color="">Users on older macOS versions are encouraged to upgrade their OS to 13+, if possible. </span></h3>
+<p>Sharing audio from applications and games is supported on macOS 13 and above. We strongly recommend that macOS users update their operating systems to version 13 or later to take advantage of audio-sharing capabilities. </p>
+<h1 id="h_01HQBWJ8CG0Q5GDAJEZCDPPV7T">Need More Support? </h1>
+<p>If you're running macOS 13+ and still have trouble sharing sound with your streams, please reach out to our team over at <a href="https://dis.gd/contact"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">https://dis.gd/contact</span></a>.</p>

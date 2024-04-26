@@ -1,0 +1,4 @@
+<p>On <strong>March 29, 2021</strong>, Discord released <strong>Hindi</strong> as a new supported language on the desktop/browser version of our app. </p>
+<p>However, on the iOS version of the Discord app, the<strong> Hindi</strong> option is selectable in the <em>Language </em>settings in the User Settings, but the text in the mobile app is not showing as translated into Hindi. </p>
+<p>Additionally, the language option is slowly rolling out to all users on the Android version as well, so if you're on the Android app, you may not see the Hindi language option immediately. </p>
+<p>Our team is currently working on an update to the mobile app to address this issue as soon as possible. We apologize for the confusion and inconvenience in the meantime!</p>

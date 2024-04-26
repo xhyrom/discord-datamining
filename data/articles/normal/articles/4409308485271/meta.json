@@ -1,0 +1,28 @@
+{
+  "id": 4409308485271,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/4409308485271.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/4409308485271-Discovery-Guidelines",
+  "author_id": 387656824112,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 115000344951,
+  "created_at": "2021-09-23T18:47:12Z",
+  "name": "Discovery Guidelines",
+  "title": "Discovery Guidelines",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-07-28T01:27:47Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "servers",
+    "discovery",
+    "discovery guidelines",
+    "server discovery"
+  ]
+}

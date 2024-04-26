@@ -1,0 +1,27 @@
+{
+  "id": 360017693772,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/360017693772.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/360017693772-Payments-and-Billing-FAQ",
+  "author_id": 360253590871,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 1,
+  "section_id": 360002436411,
+  "created_at": "2018-10-11T20:08:14Z",
+  "name": "Payments and Billing FAQ",
+  "title": "Payments and Billing FAQ",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-02-13T23:29:42Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "payment",
+    "billing",
+    "purchase"
+  ]
+}
