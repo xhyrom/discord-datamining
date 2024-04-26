@@ -47971,12 +47971,12 @@ span.clanTag_f4aadc {
 .streamerModeEnabledBtn_b696dd {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 1.8125rem;
+    line-height: 29px;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -59147,6 +59147,17 @@ div:has(>div>.modal__06f49) {
     display: flex;
     flex-direction: column;
     flex: 1 1 800px
+}
+
+.deleteItem__6d453 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px
+}
+
+.statusDanger__3c2dd {
+    color: var(--status-danger)
 }
 
 .widthForAddPack__6a170 {
@@ -135789,4 +135800,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.6510f69f54c953331ef2.css.map*/
+/*# sourceMappingURL=99387.ae6ded94d21295eedb3f.css.map*/
