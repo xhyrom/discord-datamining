@@ -36736,11 +36736,12 @@ span.clanTag_f4aadc {
     z-index: 5
 }
 
-.upsellCtaTitle_e8cbe3 {
-    margin-bottom: 24px
+.upsellTitle__75ee7 {
+    margin-bottom: 24px;
+    color: var(--primary-130)
 }
 
-.upsellCtaDetails__8d79f {
+.upsellDetails_dbe31a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
@@ -36748,13 +36749,17 @@ span.clanTag_f4aadc {
     margin-bottom: 24px
 }
 
-.upsellCtaDetail_a69e4c {
+.upsellDetail__401db {
     max-width: 186px
 }
 
+.upsellDetailText__886b7 {
+    color: var(--primary-330)
+}
+
 .upsellIcon__05e46 {
-    color: var(--header-secondary);
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    fill: var(--primary-330)
 }
 
 @value baseClanCardWidth 240px;
@@ -36847,11 +36852,13 @@ span.clanTag_f4aadc {
     margin-bottom: 40px
 }
 
-.upsellCtaTitle_f32e4e {
+.upsellTitle__25132 {
+    color: var(--primary-130);
     margin-bottom: 16px
 }
 
-.upsellCtaSubtitle__43db3 {
+.upsellSubtitle__06626 {
+    color: var(--primary-330);
     margin-bottom: 40px
 }
 
@@ -36916,11 +36923,9 @@ span.clanTag_f4aadc {
 .backgroundImage__778b2 {
     flex: 1;
     width: auto;
-    background-color: var(--black-500);
     background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 50
+    background-size: cover
 }
 
 .genshinBackgroundImage__21a5c {
@@ -47966,12 +47971,12 @@ span.clanTag_f4aadc {
 .streamerModeEnabledBtn_b696dd {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -135784,4 +135789,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.016d9900f7b75dcfec0e.css.map*/
+/*# sourceMappingURL=99387.6510f69f54c953331ef2.css.map*/

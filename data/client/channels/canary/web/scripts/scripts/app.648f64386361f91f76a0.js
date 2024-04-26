@@ -7265,10 +7265,11 @@
                 clanEnvelopeBottom: "clanEnvelopeBottom_e5cdee",
                 clanEnvelopeTop: "clanEnvelopeTop_bf09a8",
                 upsellCtaContainer: "upsellCtaContainer__5221e",
-                upsellCtaDetail: "upsellCtaDetail_a69e4c",
-                upsellCtaDetails: "upsellCtaDetails__8d79f",
-                upsellCtaTitle: "upsellCtaTitle_e8cbe3",
-                upsellIcon: "upsellIcon__05e46"
+                upsellDetail: "upsellDetail__401db",
+                upsellDetailText: "upsellDetailText__886b7",
+                upsellDetails: "upsellDetails_dbe31a",
+                upsellIcon: "upsellIcon__05e46",
+                upsellTitle: "upsellTitle__75ee7"
             }
         },
         809562: function(e) {
@@ -7311,9 +7312,9 @@
                 scroller: "scroller_cc96df",
                 sequencer: "sequencer__03419",
                 upsellContainer: "upsellContainer_aae5af",
-                upsellCtaSubtitle: "upsellCtaSubtitle__43db3",
-                upsellCtaTitle: "upsellCtaTitle_f32e4e",
                 upsellDetails: "upsellDetails_fe7ec8",
+                upsellSubtitle: "upsellSubtitle__06626",
+                upsellTitle: "upsellTitle__25132",
                 wizard: "wizard__29f91"
             }
         },
