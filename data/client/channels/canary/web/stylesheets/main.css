@@ -35412,6 +35412,10 @@ span.clanTag_f4aadc {
     padding: 0 60px
 }
 
+.footerButtons__6d962 {
+    margin-top: 12px
+}
+
 .footerAlphaMsg_e3ec93 {
     display: flex;
     background-color: var(--background-secondary);
@@ -35452,8 +35456,7 @@ span.clanTag_f4aadc {
 .buttonsContainer_a90621 {
     display: flex;
     align-items: end;
-    justify-content: space-between;
-    margin-top: 12px
+    justify-content: space-between
 }
 
 .overviewSidebar__995aa {
@@ -36769,6 +36772,16 @@ span.clanTag_f4aadc {
 @value innerClanScale 0.833;
 @value outerClanScale 0.68;
 
+.stepsContainer__70c41 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative
+}
+
 .upsellContainer_aae5af {
     padding-top: 80px;
     display: flex;
@@ -36874,25 +36887,20 @@ span.clanTag_f4aadc {
     width: 800px
 }
 
-.wizard__29f91 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    position: relative
-}
-
 .footer__64d74 {
+    display: flex;
     width: 100%
 }
 
 .footerActions_f527fe {
-    margin: 24px;
-    display: flex;
+    flex: 1;
     justify-content: space-between;
-    gap: 16px
+    gap: 16px;
+    margin: 24px
+}
+
+.footerButtons__8396f {
+    margin-top: 12px
 }
 
 .scrollerContainer__4b6bd {
@@ -135800,4 +135808,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.452cb2fd682639826ab6.css.map*/
+/*# sourceMappingURL=99387.37e3f76035b01369cfa8.css.map*/

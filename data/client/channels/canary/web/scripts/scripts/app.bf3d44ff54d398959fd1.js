@@ -5094,6 +5094,7 @@
                 footer: "footer_d63e9e",
                 footerAlphaMsg: "footerAlphaMsg_e3ec93",
                 footerAlphaTag: "footerAlphaTag__21ac5",
+                footerButtons: "footerButtons__6d962",
                 mainContent: "mainContent__23e7a",
                 modal: "modal_f49d0b",
                 modalContents: "modalContents_e19dbf",
@@ -7311,13 +7312,14 @@
                 clanCardOuterRight: "clanCardOuterRight__19d1a clanCardOuter__79a32 clanCard__50538",
                 footer: "footer__64d74",
                 footerActions: "footerActions_f527fe",
+                footerButtons: "footerButtons__8396f",
                 scroller: "scroller_cc96df",
                 sequencer: "sequencer__03419",
+                stepsContainer: "stepsContainer__70c41",
                 upsellContainer: "upsellContainer_aae5af",
                 upsellDetails: "upsellDetails_fe7ec8",
                 upsellSubtitle: "upsellSubtitle__06626",
-                upsellTitle: "upsellTitle__25132",
-                wizard: "wizard__29f91"
+                upsellTitle: "upsellTitle__25132"
             }
         },
         190500: function(e) {
