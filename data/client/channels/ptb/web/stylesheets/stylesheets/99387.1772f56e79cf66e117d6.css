@@ -5059,7 +5059,7 @@
 }
 
 .title__63238 {
-    font-size: 1.0625rem
+    font-size: 17px
 }
 
 .developerResources__8ef1d:hover {
@@ -5090,8 +5090,8 @@
 }
 
 .backHeader_cff6da {
-    font-size: 1.0625rem;
-    line-height: 1.5rem;
+    font-size: 17px;
+    line-height: 24px;
     color: var(--interactive-normal)
 }
 
@@ -29164,7 +29164,8 @@ div.profileThemedContainer__6e645 {
     border-radius: var(--radius-md);
     background: var(--bg-surface-overlay);
     overflow: hidden;
-    box-shadow: var(--elevation-high)
+    box-shadow: var(--elevation-high);
+    width: 256px
 }
 
 .buttonContainer_de2133 {
@@ -73862,8 +73863,8 @@ html .invoiceCancelRow_aa7946 {
 
 .bodyText_fa331b {
     color: var(--interactive-normal);
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -73910,8 +73911,8 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .trialCheckboxLabel__7d1e0 {
-    font-size: .875rem;
-    line-height: 1.125rem
+    font-size: 14px;
+    line-height: 18px
 }
 
 .loader_acb69b {
@@ -135812,4 +135813,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.01d9bf6d2244be812391.css.map*/
+/*# sourceMappingURL=99387.1772f56e79cf66e117d6.css.map*/
