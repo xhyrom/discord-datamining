@@ -39689,39 +39689,6 @@ html .progress__00e29 {
     flex-shrink: 0
 }
 
-.container__43fce {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    white-space: nowrap;
-    vertical-align: middle
-}
-
-.chipletContainer__2aa46 {
-    overflow: hidden;
-    display: inline-block
-}
-
-.chipletParent_db23c1 {
-    position: relative;
-    overflow: hidden;
-    display: inline
-}
-
-.usernameContainer__60276 {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap
-}
-
-.overflowingFade__5f025 {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0), var(--background-secondary))
-}
-
 .body_f9b7dd {
     padding: 10px
 }
@@ -135872,4 +135839,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.3f3eab157baf6e3e05bb.css.map*/
+/*# sourceMappingURL=99387.dd11828f7c1334a49b00.css.map*/
