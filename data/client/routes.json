@@ -4012,8 +4012,7 @@
       "GET",
       "HEAD",
       "OPTIONS",
-      "POST",
-      "PUT"
+      "POST"
     ]
   },
   "USER_SET_CLAN_IDENTITY": {
