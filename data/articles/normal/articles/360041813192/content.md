@@ -1,1 +1,0 @@
-<p>We are experiencing higher than normal volume of requests due to recent events, and unfortunately, you may experience a delayed response from our team! Rest assured that we're doing our best to respond to each and every person.</p>
