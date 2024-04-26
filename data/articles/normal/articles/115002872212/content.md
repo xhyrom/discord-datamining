@@ -1,6 +1,0 @@
-<p>Oh no! Spotify keeps pausing while you're listening, but why?!</p>
-<p>If you are transmitting with your mic in voice chat for 30 seconds while Spotify is playing, <strong>Spotify will stop playing</strong>, and you'll get this error bar at the top of your app: </p>
-<p><img src="https://support.discord.com/hc/article_attachments/360000253872/mceclip0.png"></p>
-<p><strong>This autopause error may also appear when using the following features with Spotify:<br>- Voice Chat<br>- Screenshare<br>- Go Live</strong></p>
-<h3>Because Spotify is intended for personal and private use, the auto pause function allows us to stay in compliance with Spotify's Terms &amp; Conditions outlined at <a href="https://www.spotify.com/legal/end-user-agreement/" target="_blank" rel="noopener">https://www.spotify.com/legal/end-user-agreement/</a>. </h3>
-<p>To avoid this try using Push-To-Talk or adjusting your voice activity sensitivity so that your mic is not activating while you listen. For more info on how to do that, check out <a href="https://support.discord.com/hc/en-us/articles/211376518" target="_blank" rel="noopener noreferrer">this article</a>!</p>
