@@ -50411,7 +50411,7 @@ span.clanTag_f4aadc {
     background-color: var(--background-floating);
     padding: 8px;
     border-radius: var(--radius-xs);
-    max-width: 304px
+    width: 312px
 }
 
 .header__3a32b {
@@ -50432,7 +50432,6 @@ span.clanTag_f4aadc {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     background-color: var(--background-tertiary);
     border-radius: var(--radius-sm);
     padding: 10px;
@@ -50491,7 +50490,7 @@ span.clanTag_f4aadc {
 }
 
 .activityCardDetailsContainer__32ad7 {
-    max-width: 162px;
+    width: 162px;
     margin: 0 8px
 }
 
@@ -135808,4 +135807,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.37e3f76035b01369cfa8.css.map*/
+/*# sourceMappingURL=99387.2a942476e0ff76d53cbf.css.map*/
