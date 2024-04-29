@@ -36729,7 +36729,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288779", ", Version Hash: ").concat("cd964343d7141d844c334f6288f31f2766274db3")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288785", ", Version Hash: ").concat("1203fa487894ac5281e072d9ada314212634f071")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -44584,6 +44584,8 @@
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD_NO_PRICE: "Your premium chat, **{num, number}x** Boosts, and a Boost discount subscription is **on hold**",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAYMENT: "You will have premium chat, **{num, number}** Boosts, and a Boost discount **as soon as your payment processes.** We will send you an email as soon as it does",
                 PREMIUM_SUBSCRIPTION_DESCRIPTION_DISCOUNT_APPLIED: "Your first **3 months** are **{discountedPrice}**. After that you'll be charged {price}/month",
+                PREMIUM_SUBSCRIPTION_DESCRIPTION_PAST_DUE_WITH_HC_LINK: "Your subscription is **past due** and will **end on {endDate}**. [Learn more](onClick).",
+                PREMIUM_SUBSCRIPTION_DESCRIPTION_PAST_DUE: "Your subscription is **past due** and will **end on {endDate}**.",
                 PREMIUM_WITH_PREMIUM_GUILD_EXTERNAL_PLAN_DESCRIPTION: "{premiumDescription} with {premiumGuildDescription}",
                 PREMIUM_GUILD_USER_FEATURES_HEADER: "Boost a server and get:",
                 PREMIUM_GUILD_USER_FEATURE_MEMBER_BADGE: "A member list icon next to your name",
@@ -87042,8 +87044,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "288779", "288779"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288779")), t = 0), t
+                let t = parseInt((e = "288785", "288785"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288785")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112108,8 +112110,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "288779",
-                    versionHash: "cd964343d7141d844c334f6288f31f2766274db3"
+                    buildNumber: "288785",
+                    versionHash: "1203fa487894ac5281e072d9ada314212634f071"
                 }
             }
             n.r(t), n.d(t, {
@@ -166810,8 +166812,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714422133868",
-                                    build_number: "288779"
+                                    built_at: "1714422781792",
+                                    build_number: "288785"
                                 }
                             },
                             retries: 1
@@ -244683,7 +244685,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "cd964343d7141d844c334f6288f31f2766274db3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "1203fa487894ac5281e072d9ada314212634f071"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273193,7 +273195,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "288779"
+                                build_number: "288785"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280410,7 +280412,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "288779", "288779"), 10);
+                let s = parseInt((n = "288785", "288785"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -307795,4 +307797,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.783fc56e455de4307251.js.map
+//# sourceMappingURL=35705.b062dbe4245d469c8fb3.js.map
