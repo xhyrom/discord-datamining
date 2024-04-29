@@ -36729,7 +36729,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288809", ", Version Hash: ").concat("b8f501ec9e8e8deea4d6376282252e5f7cc17e09")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288815", ", Version Hash: ").concat("40b0dd0e9bf27e0eb0ff7047490e3991b0d396e1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -65348,13 +65348,19 @@
                     return C
                 },
                 ACTIVITY_SHELF_WEB_MODAL_KEY: function() {
-                    return Z
+                    return $
+                },
+                AM_HARMONY_PRD_APPLICATION_ID: function() {
+                    return Q
+                },
+                AM_HARMONY_STG_APPLICATION_ID: function() {
+                    return X
                 },
                 APPLICATIONS_WITH_ALLOWED_POPUPS: function() {
-                    return J
+                    return ee
                 },
                 APPLICATIONS_WITH_NO_REFFERER: function() {
-                    return $
+                    return et
                 },
                 ActivityFeedbackReasons: function() {
                     return i
@@ -65399,10 +65405,10 @@
                     return U
                 },
                 DEFAULT_EMBEDDED_ACTIVITY_CONFIG: function() {
-                    return et
+                    return ei
                 },
                 EMBEDDED_ACTIVITY_SURVEY_URL: function() {
-                    return X
+                    return q
                 },
                 END_GAME_APPLICATION_ID: function() {
                     return D
@@ -65414,7 +65420,7 @@
                     return P
                 },
                 ImageSizes: function() {
-                    return Q
+                    return Z
                 },
                 JAM_SPACE_APPLICATION_ID: function() {
                     return y
@@ -65435,7 +65441,7 @@
                     return H
                 },
                 PRIVATE_APPS_HELP_ARTICLE: function() {
-                    return ei
+                    return es
                 },
                 PUTT_PARTY_APPLICATION_ID: function() {
                     return K
@@ -65444,10 +65450,10 @@
                     return b
                 },
                 STAFF_RELEASE_PHASES: function() {
-                    return q
+                    return J
                 },
                 SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES: function() {
-                    return en
+                    return er
                 },
                 WATCH_YOUTUBE_PROD_APP_ID: function() {
                     return w
@@ -65487,38 +65493,40 @@
                 W = "1037680572660727838",
                 K = "945737671223947305",
                 z = "1011683823555199066",
-                X = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
-                Q = {
+                X = "1234546995360694434",
+                Q = "1214629548377768066",
+                q = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
+                Z = {
                     SMALL: 64,
                     LARGE: 160
                 },
-                q = ["in_development", "activities_team", "employee_release"];
+                J = ["in_development", "activities_team", "employee_release"];
             (E = i || (i = {})).ADS = "ADS", E.FAILED_LOAD = "FAILED_LOAD", E.LAGGING = "LAGGING", E.CONFUSING = "CONFUSING", E.NOT_FUN = "NOT_FUN", E.OTHER = "OTHER", (I = r || (r = {}))[I.PLAY = 0] = "PLAY", I[I.SPECTATE = 1] = "SPECTATE", (T = s || (s = {})).DESKTOP = "desktop", T.MOBILE = "mobile", (f = a || (a = {})).BETRAYAL_MARKETING_TOOLTIP = "BETRAYAL_MARKETING_TOOLTIP", f.FISHINGTON_MARKETING_TOOLTIP = "FISHINGTON_MARKETING_TOOLTIP", f.POKER_MARKETING_TOOLTIP = "POKER_MARKETING_TOOLTIP", f.YOUTUBE_MARKETING_TOOLTIP = "YOUTUBE_MARKETING_TOOLTIP", (S = o || (o = {}))[S.NO_UPDATE = 0] = "NO_UPDATE", S[S.ACTIVITY_STATE_UPDATE = 1] = "ACTIVITY_STATE_UPDATE", S[S.ACTIVITY_STARTED = 2] = "ACTIVITY_STARTED", S[S.ACTIVITY_ENDED = 3] = "ACTIVITY_ENDED", S[S.USER_JOINED = 4] = "USER_JOINED", S[S.USER_LEFT = 5] = "USER_LEFT", S[S.ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST = 6] = "ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST", (h = l || (l = {}))[h.UNLOCKED = 1] = "UNLOCKED", h[h.PORTRAIT = 2] = "PORTRAIT", h[h.LANDSCAPE = 3] = "LANDSCAPE", (A = u || (u = {}))[A.DIRECTORY = 0] = "DIRECTORY", A[A.SELECT_CHANNEL = 1] = "SELECT_CHANNEL", A[A.DETAIL_PAGE = 2] = "DETAIL_PAGE";
-            let Z = "activity-shelf",
-                J = new Set(["755600276941176913", v, M, w]),
-                $ = new Set([v, M, w]);
+            let $ = "activity-shelf",
+                ee = new Set(["755600276941176913", v, M, w]),
+                et = new Set([v, M, w]);
             (m = d || (d = {})).DISCORD_TURNS_8 = "DISCORD_TURNS_8", m.GDM_ACTIVITIES = "GDM_ACTIVITIES", m.PUTT_PARTY = "PUTT_PARTY", m.JAMSPACE_OLD = "JAMSPACE", m.JAMSPACE = "JAMSPACE2", m.POKER = "POKER", m.FREE = "FREE", (N = _ || (_ = {}))[N.PORTRAIT = 0] = "PORTRAIT", N[N.LANDSCAPE = 1] = "LANDSCAPE", (p = c || (c = {}))[p.FOCUSED = 0] = "FOCUSED", p[p.PIP = 1] = "PIP", p[p.GRID = 2] = "GRID";
-            let ee = {
+            let en = {
                     label_type: O.EmbeddedActivityLabelTypes.NONE,
                     release_phase: "",
                     label_until: null
                 },
-                et = {
+                ei = {
                     application_id: "",
                     requires_age_gate: !1,
                     default_orientation_lock_state: 1,
                     tablet_default_orientation_lock_state: 1,
                     supported_platforms: [O.EmbeddedActivitySupportedPlatforms.WEB],
                     client_platform_config: {
-                        [O.EmbeddedActivitySupportedPlatforms.WEB]: ee,
-                        [O.EmbeddedActivitySupportedPlatforms.IOS]: ee,
-                        [O.EmbeddedActivitySupportedPlatforms.ANDROID]: ee
+                        [O.EmbeddedActivitySupportedPlatforms.WEB]: en,
+                        [O.EmbeddedActivitySupportedPlatforms.IOS]: en,
+                        [O.EmbeddedActivitySupportedPlatforms.ANDROID]: en
                     },
                     has_csp_exception: !1,
                     displays_advertisements: !1
                 },
-                en = [R.ChannelTypes.GUILD_TEXT, R.ChannelTypes.DM, R.ChannelTypes.GROUP_DM],
-                ei = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety"
+                er = [R.ChannelTypes.GUILD_TEXT, R.ChannelTypes.DM, R.ChannelTypes.GROUP_DM],
+                es = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety"
         },
         337682: function(e, t, n) {
             "use strict";
@@ -87044,8 +87052,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "288809", "288809"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288809")), t = 0), t
+                let t = parseInt((e = "288815", "288815"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288815")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112110,8 +112118,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "288809",
-                    versionHash: "b8f501ec9e8e8deea4d6376282252e5f7cc17e09"
+                    buildNumber: "288815",
+                    versionHash: "40b0dd0e9bf27e0eb0ff7047490e3991b0d396e1"
                 }
             }
             n.r(t), n.d(t, {
@@ -166812,8 +166820,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714424253511",
-                                    build_number: "288809"
+                                    built_at: "1714424625262",
+                                    build_number: "288815"
                                 }
                             },
                             retries: 1
@@ -244685,7 +244693,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b8f501ec9e8e8deea4d6376282252e5f7cc17e09"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "40b0dd0e9bf27e0eb0ff7047490e3991b0d396e1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273195,7 +273203,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "288809"
+                                build_number: "288815"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280412,7 +280420,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "288809", "288809"), 10);
+                let s = parseInt((n = "288815", "288815"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -307797,4 +307805,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.34e0adc0fa9a028f3cbc.js.map
+//# sourceMappingURL=35705.f984c24bbc3aed1cb7e4.js.map
