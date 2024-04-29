@@ -87472,7 +87472,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 16px
+    font-size: 1rem
 }
 
 .viewAllGamesButton__34838 {
@@ -87492,7 +87492,7 @@ input::-webkit-inner-spin-button {
 
 .viewAllGames__76b00,
 .viewAllNitroGames_a65ce4 {
-    font-size: 16px;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -87549,7 +87549,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 16px
+    font-size: 1rem
 }
 
 .headerBar__3337a {
@@ -135885,4 +135885,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7d5247904032c1af3f7c.css.map*/
+/*# sourceMappingURL=99387.90fe5ac4ec802bd62994.css.map*/
