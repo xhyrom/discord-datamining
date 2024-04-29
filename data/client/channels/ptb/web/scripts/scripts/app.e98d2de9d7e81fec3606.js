@@ -15546,6 +15546,7 @@
                 container: "container_a88e31",
                 eventImage: "eventImage_f9c259",
                 header: "header__3a32b",
+                joinButton: "joinButton_f6f9af",
                 location: "location__73d84",
                 mask: "mask_beff87",
                 rowIcon: "rowIcon__45dc2",
