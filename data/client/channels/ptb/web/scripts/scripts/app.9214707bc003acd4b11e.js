@@ -7292,9 +7292,10 @@
             e.exports = {
                 adminUpsell: "adminUpsell_a0161a",
                 backgroundImage: "backgroundImage__778b2",
+                container: "container_c12432",
                 genshinBackgroundImage: "genshinBackgroundImage__21a5c backgroundImage__778b2",
-                scroller: "scroller_a9e72f",
-                scrollerContainer: "scrollerContainer__4b6bd",
+                upsellScroller: "upsellScroller__0225a",
+                userOnboarding: "userOnboarding__753ed",
                 userUpsell: "userUpsell__2b410",
                 valorantBackgroundImage: "valorantBackgroundImage_d382a2 backgroundImage__778b2"
             }
@@ -7304,6 +7305,16 @@
             e.exports = {
                 button: "button_cbc314",
                 buttonWrapper: "buttonWrapper_f57f6c"
+            }
+        },
+        297344: function(e) {
+            "use strict";
+            e.exports = {
+                container: "container__5c0c5",
+                footer: "footer__259a2",
+                scroller: "scroller_bf9c9a",
+                sequencer: "sequencer__7fa68",
+                stepsContainer: "stepsContainer_fd80f9"
             }
         },
         531612: function(e) {
@@ -7322,12 +7333,6 @@
                 clanCardOuterContainer: "clanCardOuterContainer__05636",
                 clanCardOuterLeft: "clanCardOuterLeft_a7787d clanCardOuter__79a32 clanCard__50538",
                 clanCardOuterRight: "clanCardOuterRight__19d1a clanCardOuter__79a32 clanCard__50538",
-                footer: "footer__64d74",
-                footerActions: "footerActions_f527fe",
-                footerButtons: "footerButtons__8396f",
-                scroller: "scroller_cc96df",
-                sequencer: "sequencer__03419",
-                stepsContainer: "stepsContainer__70c41",
                 upsellContainer: "upsellContainer_aae5af",
                 upsellDetails: "upsellDetails_fe7ec8",
                 upsellSubtitle: "upsellSubtitle__06626",
