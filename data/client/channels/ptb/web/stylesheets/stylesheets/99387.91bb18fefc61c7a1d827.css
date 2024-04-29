@@ -55301,15 +55301,10 @@ div.profileThemedContainer__6e645 {
 
 .toolbar__2fcb0 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 12px 16px;
     border-bottom: 1px solid var(--border-subtle)
-}
-
-.toolbarSpacer_bc0349 {
-    width: 90px;
-    height: 20px
 }
 
 .preferences__16c1a,
@@ -135878,4 +135873,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.fb23f677dc0c4e94e7bb.css.map*/
+/*# sourceMappingURL=99387.91bb18fefc61c7a1d827.css.map*/
