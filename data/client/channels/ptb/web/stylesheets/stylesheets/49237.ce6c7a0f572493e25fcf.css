@@ -12051,13 +12051,15 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .assetsLargeMaskActivityFeed__66dd6,
 .assetsLargeMaskProfile_f273d6,
-.assetsLargeMaskProfileV2__4c908 {
+.assetsLargeMaskProfileV2__4c908,
+.assetsLargeMaskSimplifiedProfile_e2b3c6 {
     -webkit-mask: url(/assets/c391830f3f2142c3d91c.svg);
     mask: url(/assets/c391830f3f2142c3d91c.svg)
 }
 
 .assetsProfile_fad2d5,
-.assetsProfileV2__05dff {
+.assetsProfileV2__05dff,
+.assetsSimplifiedProfile_c52b81 {
     max-height: 144px
 }
 
@@ -12086,7 +12088,8 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 .assetsLargeImageActivityFeed__56b16,
 .assetsLargeImageActivityFeedXbox_a24562,
 .assetsLargeImageProfile__8a5b1,
-.assetsLargeImageProfileV2__0f48c {
+.assetsLargeImageProfileV2__0f48c,
+.assetsLargeImageSimplifiedProfile__119f0 {
     width: 90px;
     height: 90px
 }
@@ -12105,13 +12108,15 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 }
 
 .assetsLargeImageProfileXbox__698a0,
-.assetsLargeImageProfileV2Xbox__057f6 {
+.assetsLargeImageProfileV2Xbox__057f6,
+.assetsLargeImageSimplifiedProfileXbox__56502 {
     width: 60px;
     height: 60px
 }
 
 .assetsLargeImageProfileTwitch__786e1,
-.assetsLargeImageProfileV2Twitch__09391 {
+.assetsLargeImageProfileV2Twitch__09391,
+.assetsLargeImageSimplifiedProfileTwitch_c7407a {
     width: 162px;
     height: 90px
 }
@@ -12134,7 +12139,8 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .assetsSmallImageActivityFeed__8cb1d,
 .assetsSmallImageProfile_e6f46b,
-.assetsSmallImageProfileV2__48f59 {
+.assetsSmallImageProfileV2__48f59,
+.assetsSmallImageSimplifiedProfile__2707d {
     width: 30px;
     height: 30px
 }
@@ -12145,7 +12151,8 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 .assetsSmallImageVoiceChannelWithoutLargeImage__4a826,
 .assetsSmallImageActivityFeedWithoutLargeImage__17e4c,
 .assetsSmallImageProfileWithoutLargeImage__0457b,
-.assetsSmallImageProfileV2WithoutLargeImage_e74736 {
+.assetsSmallImageProfileV2WithoutLargeImage_e74736,
+.assetsSmallImageSimplifiedProfileWithoutLargeImage_b6670a {
     width: 40px;
     height: 40px
 }
@@ -12170,13 +12177,15 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 .contentImagesVoiceChannel__06486,
 .contentImagesActivityFeed__7b53b,
 .contentImagesProfile_a073ca,
-.contentImagesProfileV2__5afe1 {
+.contentImagesProfileV2__5afe1,
+.contentImagesSimplifiedProfile__3e414 {
     margin-left: 10px
 }
 
 .contentNoImagesActivityFeed__3d960,
 .contentNoImagesProfile_d09309,
-.contentNoImagesProfileV2__00326 {
+.contentNoImagesProfileV2__00326,
+.contentNoImagesSimplifiedProfile__8499c {
     margin-bottom: -4px
 }
 
@@ -12189,7 +12198,8 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 }
 
 .contentGameImageProfile_f9e39f,
-.contentGameImageProfileV2__3cfb3 {
+.contentGameImageProfileV2__3cfb3,
+.contentGameImageSimplifiedProfile__11d2a {
     margin-bottom: -2px;
     margin-left: 10px
 }
@@ -12224,7 +12234,8 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .timeBarActivityFeed__2e61f,
 .timeBarProfile_eaa94c,
-.timeBarProfileV2_d92d85 {
+.timeBarProfileV2_d92d85,
+.timeBarSimplifiedProfile__29715 {
     margin-top: 10px
 }
 
@@ -12360,6 +12371,12 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 .theme-dark .activityProfileV2_f5335f .activityName_a7b7de,
 .theme-dark .activityProfileV2_f5335f .nameNormal_cb5c2b,
 .theme-dark .activityProfileV2_f5335f .nameWrap_b61c4b,
+.theme-dark .activitySimplifiedProfile_a543ff .content__7246b,
+.theme-dark .activitySimplifiedProfile_a543ff .name__0ac4b,
+.theme-dark .activitySimplifiedProfile_a543ff .details_e26997,
+.theme-dark .activitySimplifiedProfile_a543ff .activityName_a7b7de,
+.theme-dark .activitySimplifiedProfile_a543ff .nameNormal_cb5c2b,
+.theme-dark .activitySimplifiedProfile_a543ff .nameWrap_b61c4b,
 .theme-dark .activityUserPopoutV2__89098 .content__7246b,
 .theme-dark .activityUserPopoutV2__89098 .name__0ac4b,
 .theme-dark .activityUserPopoutV2__89098 .details_e26997,
@@ -12384,6 +12401,12 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 .theme-light .activityProfileV2_f5335f .activityName_a7b7de,
 .theme-light .activityProfileV2_f5335f .nameNormal_cb5c2b,
 .theme-light .activityProfileV2_f5335f .nameWrap_b61c4b,
+.theme-light .activitySimplifiedProfile_a543ff .content__7246b,
+.theme-light .activitySimplifiedProfile_a543ff .name__0ac4b,
+.theme-light .activitySimplifiedProfile_a543ff .details_e26997,
+.theme-light .activitySimplifiedProfile_a543ff .activityName_a7b7de,
+.theme-light .activitySimplifiedProfile_a543ff .nameNormal_cb5c2b,
+.theme-light .activitySimplifiedProfile_a543ff .nameWrap_b61c4b,
 .theme-light .activityUserPopoutV2__89098 .content__7246b,
 .theme-light .activityUserPopoutV2__89098 .name__0ac4b,
 .theme-light .activityUserPopoutV2__89098 .details_e26997,
@@ -12396,9 +12419,11 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 .theme-dark .activityUserPopout_eceeb9 .headerText_c0138d,
 .theme-dark .activityProfile__5d0ec .headerText_c0138d,
 .theme-dark .activityProfileV2_f5335f .headerText_c0138d,
+.theme-dark .activitySimplifiedProfile_a543ff .headerText_c0138d,
 .theme-light .activityUserPopout_eceeb9 .headerText_c0138d,
 .theme-light .activityProfile__5d0ec .headerText_c0138d,
-.theme-light .activityProfileV2_f5335f .headerText_c0138d {
+.theme-light .activityProfileV2_f5335f .headerText_c0138d,
+.theme-light .activitySimplifiedProfile_a543ff .headerText_c0138d {
     color: var(--header-secondary)
 }
 
@@ -12415,6 +12440,14 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     position: absolute;
     top: 0;
     right: 0
+}
+
+.theme-dark .activitySimplifiedProfile_a543ff .platformIcon_a2d873,
+.theme-light .activitySimplifiedProfile_a543ff .platformIcon_a2d873 {
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px
 }
 
 .theme-dark .activityProfile__5d0ec .platformIcon_a2d873,
@@ -28174,4 +28207,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.cf8b81ff66d722417fd2.css.map*/
+/*# sourceMappingURL=49237.ce6c7a0f572493e25fcf.css.map*/

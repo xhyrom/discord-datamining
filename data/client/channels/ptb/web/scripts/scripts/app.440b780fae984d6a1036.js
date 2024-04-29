@@ -1132,6 +1132,7 @@
                 actionsActivityFeed: "actionsActivityFeed__39f06",
                 actionsProfile: "actionsProfile_e93ceb",
                 actionsProfileV2: "actionsProfileV2_eea61b",
+                actionsSimplifiedProfile: "actionsSimplifiedProfile__448de",
                 actionsStreamPreview: "actionsStreamPreview_ed74d4",
                 actionsUserPopout: "actionsUserPopout__36bfb",
                 actionsUserPopoutV2: "actionsUserPopoutV2__46596",
@@ -25170,13 +25171,6 @@
                 header: "header__608e1"
             }
         },
-        948e3: function(e) {
-            "use strict";
-            e.exports = {
-                cardContainer: "cardContainer__84569",
-                playtimeContainer: "playtimeContainer_d4a1f8"
-            }
-        },
         963140: function(e) {
             "use strict";
             e.exports = {
@@ -25477,6 +25471,15 @@
                 recentGamesGrid: "recentGamesGrid_d370b2",
                 sharedGameIcon: "sharedGameIcon__45b1e",
                 viewAll: "viewAll__77948"
+            }
+        },
+        181530: function(e) {
+            "use strict";
+            e.exports = {
+                actionColor: "actionColor__7fa9c",
+                activityContainer: "activityContainer__5fb2b",
+                userProfileActivity: "userProfileActivity__7cd2c",
+                voiceActivity: "voiceActivity_d654ad"
             }
         },
         750721: function(e) {

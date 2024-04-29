@@ -16333,6 +16333,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     margin-top: 10px
 }
 
+.actionsSimplifiedProfile__448de,
 .actionsProfile_e93ceb,
 .actionsProfileV2_eea61b {
     margin-left: 20px;
@@ -16356,6 +16357,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     width: 100%
 }
 
+.actionsWrapper__81885 .actionsSimplifiedProfile__448de,
 .actionsWrapper__81885 .actionsProfile_e93ceb,
 .actionsWrapper__81885 .actionsProfileV2_eea61b {
     margin-left: 0;
@@ -117758,7 +117760,8 @@ html .invoiceCancelRow__6ff3e {
     --custom-backdrop-z-index: 1000;
     --custom-card-z-index: 1001;
     --custom-confetti-canvas-z-index: 1002;
-    --custom-close-button-z-index: 1004
+    --custom-close-button-z-index: 1004;
+    --custom-lightning-checkout-z-index: 1003
 }
 
 .shopCard__9e3fe {
@@ -118049,6 +118052,12 @@ html .invoiceCancelRow__6ff3e {
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none
+}
+
+.lightningCheckout__9ef9b {
+    border-radius: 16px;
+    z-index: 1003;
+    z-index: var(--custom-lightning-checkout-z-index)
 }
 
 .lightningCheckout__9ef9b .shopCard__9e3fe {
@@ -130677,31 +130686,35 @@ div.nagbar_c731ff {
     margin-right: 32px
 }
 
-.cardContainer__84569 {
-    display: flex;
-    align-items: center;
-    padding: 8px;
-    gap: 8px;
+.activityContainer__5fb2b {
+    overflow: scroll;
+    max-height: 110px
+}
+
+.userProfileActivity__7cd2c {
+    position: relative;
+    padding: 8px 12px 8px 8px;
     border-radius: 8px;
-    border: 1px solid var(--border-faint);
-    background: var(--bg-mod-faint)
+    border: 1px solid var(--border-subtle);
+    background: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-5))
 }
 
-.theme-dark.custom-profile-theme .cardContainer__84569 {
-    background: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-5));
-    border-color: var(--profile-body-border-color)
+.voiceActivity_d654ad {
+    padding: 0 16px 16px
 }
 
-.theme-light.custom-profile-theme .cardContainer__84569 {
-    background: rgb(var(--bg-overlay-color)/.4);
-    border-color: var(--profile-body-border-color)
+.actionColor__7fa9c {
+    background-color: var(--profile-gradient-button-color);
+    color: var(--white-500);
+    transition: opacity var(--custom-button-transition-duration)ease
 }
 
-.playtimeContainer_d4a1f8 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4px
+.actionColor__7fa9c:hover {
+    opacity: .8
+}
+
+.actionColor__7fa9c:active {
+    opacity: .9
 }
 
 .root__12006 {
@@ -135840,4 +135853,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.e77189e91becea864a77.css.map*/
+/*# sourceMappingURL=99387.3e69b0b61142c4859c29.css.map*/
