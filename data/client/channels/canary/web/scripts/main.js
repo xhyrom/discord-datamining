@@ -36729,7 +36729,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288715", ", Version Hash: ").concat("40fedfa4ea04e054edafa7d213f65ca8718408a8")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288728", ", Version Hash: ").concat("81cb12fcab772c13e0e2a6395ef5394c8d9d6c10")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87039,8 +87039,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "288715", "288715"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288715")), t = 0), t
+                let t = parseInt((e = "288728", "288728"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288728")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110136,440 +110136,6 @@
             }
             t.default = new l
         },
-        443487: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                Card: function() {
-                    return f
-                },
-                CardInfoSection: function() {
-                    return S
-                },
-                CardParticipants: function() {
-                    return A
-                },
-                CardTitle: function() {
-                    return m
-                }
-            }), n("47120");
-            var i = n("735250"),
-                r = n("470079"),
-                s = n("120356"),
-                a = n.n(s),
-                o = n("442837"),
-                l = n("481060"),
-                u = n("271383"),
-                d = n("430824"),
-                _ = n("594174"),
-                c = n("806519"),
-                E = n("823379"),
-                I = n("5192"),
-                T = n("288564");
-
-            function f(e) {
-                let {
-                    children: t,
-                    selected: n
-                } = e;
-                return (0, i.jsx)("div", {
-                    className: a()(T.container, {
-                        [T.selected]: n
-                    }),
-                    children: t
-                })
-            }
-
-            function S(e) {
-                let {
-                    children: t
-                } = e;
-                return (0, i.jsx)("div", {
-                    className: T.infoSection,
-                    children: t
-                })
-            }
-
-            function h(e) {
-                let {
-                    users: t,
-                    guildId: n
-                } = e;
-                return (0, i.jsx)("div", {
-                    className: T.facePile,
-                    children: t.map((e, r) => {
-                        let s = (0, i.jsx)(l.Avatar, {
-                            src: e.getAvatarURL(n, 80),
-                            size: l.AvatarSizes.SIZE_16,
-                            "aria-label": "avatar"
-                        });
-                        return r === t.length - 1 ? (0, i.jsx)("div", {
-                            className: T.facePileItem,
-                            children: s
-                        }, e.id) : (0, i.jsx)(c.default, {
-                            width: 16,
-                            height: 16,
-                            className: T.facePileItem,
-                            mask: c.default.Masks.CONTENT_INVENTORY_CARD_FACE_PILE_AVATAR,
-                            children: s
-                        }, e.id)
-                    })
-                })
-            }
-
-            function A(e) {
-                let {
-                    guildId: t,
-                    channelId: n,
-                    entry: s,
-                    maxAvatars: a = 3
-                } = e, c = s.author_id, f = (0, o.useStateFromStores)([_.default], () => _.default.getUser(c)), S = (0, o.useStateFromStoresArray)([_.default], () => s.participants.map(e => _.default.getUser(e)).filter(E.isNotNullish), [s.participants]), A = r.useMemo(() => null == f ? [] : [...S.filter(e => e.id !== f.id), f].slice(-a), [a, S, f]), m = S.length - 1, N = (0, o.useStateFromStores)([u.default], () => u.default.getMember(t, c)), p = (0, o.useStateFromStores)([d.default], () => {
-                    var e;
-                    return (null == N ? void 0 : N.colorRoleId) != null ? null === (e = d.default.getRole(t, N.colorRoleId)) || void 0 === e ? void 0 : e.name : void 0
-                }, [t, N]);
-                if (null == f) return null;
-                let O = null == N ? void 0 : N.colorString,
-                    R = I.default.getName(t, n, f);
-                return (0, i.jsxs)("div", {
-                    className: T.userSection,
-                    children: [(0, i.jsx)(h, {
-                        users: A,
-                        guildId: t
-                    }), (0, i.jsx)(l.NameWithRole, {
-                        color: null != O ? O : void 0,
-                        roleName: p,
-                        name: R,
-                        className: T.userName
-                    }), m > 0 ? (0, i.jsx)("div", {
-                        className: T.additionalParticipantBadge,
-                        children: (0, i.jsxs)(l.Text, {
-                            variant: "text-xxs/medium",
-                            color: "text-normal",
-                            className: T.additionalParticipantBadgeText,
-                            children: ["+", m]
-                        })
-                    }) : null]
-                })
-            }
-
-            function m(e) {
-                let {
-                    children: t
-                } = e;
-                return (0, i.jsx)(l.Heading, {
-                    variant: "heading-sm/normal",
-                    className: T.contentDescription,
-                    lineClamp: 1,
-                    children: t
-                })
-            }
-        },
-        43205: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                ContentImage: function() {
-                    return u
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("120356"),
-                s = n.n(r),
-                a = n("410030"),
-                o = n("438071"),
-                l = n("92661");
-
-            function u(e) {
-                let {
-                    src: t,
-                    size: n,
-                    className: r,
-                    alt: u = "icon"
-                } = e, d = (0, a.default)();
-                return null == t ? (0, i.jsx)(o.default, {
-                    width: n,
-                    height: n,
-                    color: "dark" === d ? "white" : "black",
-                    className: s()(l.contentImage, r)
-                }) : (0, i.jsx)("img", {
-                    style: {
-                        maxWidth: "".concat(n, "px"),
-                        height: "".concat(n, "px")
-                    },
-                    className: s()(l.contentImage, r),
-                    src: t,
-                    alt: u
-                })
-            }
-        },
-        371991: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                ActiveTimestampFromDuration: function() {
-                    return E
-                }
-            }), n("47120");
-            var i = n("735250"),
-                r = n("470079"),
-                s = n("442837"),
-                a = n("846519"),
-                o = n("481060"),
-                l = n("706454"),
-                u = n("709054"),
-                d = n("506071"),
-                _ = n("561308");
-            let c = e => {
-                    let {
-                        entry: t,
-                        textColor: n
-                    } = e, s = u.default.extractTimestamp(t.id), [a, o] = r.useState(Date.now()), {
-                        seconds: l,
-                        minutes: d,
-                        hours: c
-                    } = (0, _.calculateActiveTimestampDurations)(t, a);
-                    return (0, i.jsx)(E, {
-                        textColor: n,
-                        startTime: s,
-                        seconds: l,
-                        minutes: d,
-                        hours: c,
-                        now: a,
-                        setNow: o
-                    })
-                },
-                E = e => {
-                    let {
-                        startTime: t,
-                        seconds: n,
-                        minutes: s,
-                        hours: l,
-                        now: u,
-                        setNow: c,
-                        textColor: E
-                    } = e, I = (0, d.useIsWindowFocused)(), T = r.useMemo(() => {
-                        let {
-                            hours: e
-                        } = (0, _.calculateActiveTimestampDurationsFromStart)(t, u);
-                        return e > 0 ? 3e5 : 1e3
-                    }, [t, u]);
-                    r.useEffect(() => {
-                        let e = new a.Interval;
-                        return e.start(T, () => {
-                            c(Date.now())
-                        }), !I && e.stop(), () => e.stop()
-                    }, [T, I, c]);
-                    let f = r.useMemo(() => (0, _.formatActiveTimestampFromUnits)(n, s, l), [n, s, l]);
-                    return (0, i.jsx)(o.Text, {
-                        variant: "text-xs/normal",
-                        tabularNumbers: !0,
-                        color: E,
-                        children: f
-                    })
-                };
-            t.default = e => {
-                let {
-                    entry: t,
-                    textColor: n
-                } = e, r = (0, _.isEntryActive)(t), a = (0, s.useStateFromStores)([l.default], () => l.default.locale);
-                return r ? (0, i.jsx)(c, {
-                    entry: t,
-                    textColor: n
-                }) : (0, i.jsx)(o.Text, {
-                    variant: "text-xs/normal",
-                    color: n,
-                    lineClamp: 1,
-                    children: (0, _.formatEndedTimestamp)(t, a)
-                })
-            }
-        },
-        561308: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                calculateActiveTimestampDurations: function() {
-                    return d
-                },
-                calculateActiveTimestampDurationsFromStart: function() {
-                    return _
-                },
-                formatActiveTimestampFromUnits: function() {
-                    return E
-                },
-                formatEndedTimestamp: function() {
-                    return I
-                },
-                formatEntryTimestamp: function() {
-                    return T
-                },
-                getAggregateRange: function() {
-                    return m
-                },
-                getEntryDuration: function() {
-                    return A
-                },
-                getFullMarathonDescription: function() {
-                    return L
-                },
-                getMarathonDurationStr: function() {
-                    return C
-                },
-                getMarathonName: function() {
-                    return g
-                },
-                getStreakCount: function() {
-                    return R
-                },
-                isEntryActive: function() {
-                    return f
-                },
-                isEntryExpired: function() {
-                    return h
-                },
-                isEntryMarathon: function() {
-                    return N
-                },
-                isEntryNew: function() {
-                    return S
-                },
-                isEntryResurrected: function() {
-                    return p
-                },
-                isEntryTopGame: function() {
-                    return O
-                }
-            });
-            var i = n("913527"),
-                r = n.n(i),
-                s = n("884439"),
-                a = n("876215"),
-                o = n("70956"),
-                l = n("709054"),
-                u = n("689938");
-            let d = (e, t) => _(l.default.extractTimestamp(e.id), t),
-                _ = (e, t) => {
-                    let n = Math.abs((t - e) / o.default.Millis.SECOND),
-                        i = Math.floor(n) % o.default.Seconds.MINUTE,
-                        r = Math.floor(n / o.default.Seconds.MINUTE) % o.default.Seconds.MINUTE,
-                        s = Math.floor(n / o.default.Seconds.HOUR);
-                    return {
-                        seconds: i,
-                        minutes: r,
-                        hours: s,
-                        days: Math.floor(n / o.default.Seconds.DAY)
-                    }
-                },
-                c = (e, t) => {
-                    let {
-                        seconds: n,
-                        minutes: i,
-                        hours: r
-                    } = d(e, t);
-                    return E(n, i, r)
-                },
-                E = (e, t, n) => {
-                    function i(e) {
-                        return String(e).padStart(2, "0")
-                    }
-                    return u.default.Messages.MEMBER_LIST_CONTENT_FEED_TIMESTAMP_ACTIVE.format({
-                        hours: n,
-                        minutes: n > 0 ? i(t) : t,
-                        seconds: i(e)
-                    })
-                },
-                I = (e, t) => {
-                    let n = r()(l.default.extractTimestamp(e.id)),
-                        i = n.isSame(r()(), "day"),
-                        s = r()().diff(n, "s");
-                    if (s < o.default.Seconds.MINUTE) return u.default.Messages.MEMBER_LIST_CONTENT_FEED_TIMESTAMP_SECONDS_AGO.format({
-                        count: s
-                    });
-                    if (s < o.default.Seconds.HOUR) {
-                        let e = Math.round(s / o.default.Seconds.MINUTE);
-                        return u.default.Messages.MEMBER_LIST_CONTENT_FEED_TIMESTAMP_MINUTES_AGO.format({
-                            count: e
-                        })
-                    }
-                    if (s < 6 * o.default.Seconds.HOUR) {
-                        let e = Math.round(s / o.default.Seconds.HOUR);
-                        return u.default.Messages.MEMBER_LIST_CONTENT_FEED_TIMESTAMP_HOURS_AGO.format({
-                            count: e
-                        })
-                    } else if (s < o.default.Seconds.WEEK && i) return n.toDate().toLocaleTimeString(t, {
-                        hour: "numeric"
-                    });
-                    else if (s < o.default.Seconds.WEEK && !i) return n.toDate().toLocaleTimeString(t, {
-                        weekday: "short",
-                        hour: "numeric"
-                    });
-                    let a = Math.round(s / (7 * o.default.Seconds.DAY));
-                    return u.default.Messages.MEMBER_LIST_CONTENT_FEED_TIMESTAMP_WEEKS_AGO.format({
-                        count: a
-                    })
-                },
-                T = (e, t) => f(e) ? c(e, Date.now()) : I(e, t);
-
-            function f(e) {
-                let t = e.traits.find(e => e.type === s.ContentInventoryTraitType.IS_LIVE);
-                return null != t && t.is_live
-            }
-
-            function S(e) {
-                let t = e.traits.find(e => e.type === s.ContentInventoryTraitType.FIRST_TIME);
-                return null != t && t.first_time
-            }
-
-            function h(e) {
-                return null != e.expires_at && new Date(e.expires_at) < new Date
-            }
-
-            function A(e) {
-                let t = e.traits.find(e => e.type === s.ContentInventoryTraitType.DURATION_SECONDS);
-                return null == t ? void 0 : t.duration_seconds
-            }
-
-            function m(e) {
-                let t = e.traits.find(e => e.type === s.ContentInventoryTraitType.AGGREGATE_RANGE);
-                return null == t ? void 0 : t.range
-            }
-
-            function N(e) {
-                let t = e.traits.find(e => e.type === s.ContentInventoryTraitType.MARATHON);
-                return null == t ? void 0 : t.marathon
-            }
-
-            function p(e) {
-                let t = e.traits.find(e => e.type === s.ContentInventoryTraitType.RESURRECTED);
-                return (null == t ? void 0 : t.resurrected_last_played) != null
-            }
-
-            function O(e) {
-                return e.content_type === a.ContentInventoryEntryType.TOP_GAME
-            }
-
-            function R(e) {
-                let t = e.traits.find(e => e.type === s.ContentInventoryTraitType.STREAK_DAYS);
-                return null == t ? void 0 : t.streak_count_days
-            }
-
-            function C(e) {
-                let t = A(e);
-                if (null == t) return null;
-                let n = Math.round(t / o.default.Seconds.HOUR);
-                return u.default.Messages.MEMBER_LIST_CONTENT_FEED_PLAYED_FOR_HOURS.format({
-                    hours: n
-                })
-            }
-
-            function g(e) {
-                var t;
-                let n = null !== (t = A(e)) && void 0 !== t ? t : 0;
-                return n > 10 * o.default.Seconds.HOUR ? u.default.Messages.MEMBER_LIST_CONTENT_FEED_EPIC_MARATHON : n > 5 * o.default.Seconds.HOUR ? u.default.Messages.MEMBER_LIST_CONTENT_FEED_ULTRA_MARATHON : u.default.Messages.MEMBER_LIST_CONTENT_FEED_MARATHON
-            }
-
-            function L(e) {
-                let t = C(e),
-                    n = g(e);
-                return null == t ? n : "".concat(n, " — ").concat(t)
-            }
-        },
         663993: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -112539,8 +112105,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "288715",
-                    versionHash: "40fedfa4ea04e054edafa7d213f65ca8718408a8"
+                    buildNumber: "288728",
+                    versionHash: "81cb12fcab772c13e0e2a6395ef5394c8d9d6c10"
                 }
             }
             n.r(t), n.d(t, {
@@ -167238,8 +166804,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714417553336",
-                                    build_number: "288715"
+                                    built_at: "1714418317875",
+                                    build_number: "288728"
                                 }
                             },
                             retries: 1
@@ -207267,95 +206833,6 @@
                 })
             }
         },
-        193281: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                SUPPORTED_ACTIVITY_TYPES: function() {
-                    return S
-                }
-            }), n("47120");
-            var i = n("735250"),
-                r = n("470079"),
-                s = n("499237"),
-                a = n("1385"),
-                o = n("692547"),
-                l = n("835473"),
-                u = n("443487"),
-                d = n("43205"),
-                _ = n("371991"),
-                c = n("81063"),
-                E = n("55935"),
-                I = n("981631"),
-                T = n("689938"),
-                f = n("948000");
-            let S = new Set([I.ActivityTypes.PLAYING, I.ActivityTypes.LISTENING]);
-            t.default = r.memo(function(e) {
-                var t, n, S, h;
-                let {
-                    activity: A
-                } = e, {
-                    assets: m,
-                    application_id: N
-                } = A, p = null === (t = (0, l.useGetOrFetchApplication)(N)) || void 0 === t ? void 0 : t.getIconURL(128), O = (0, c.getAssetImage)(N, null == m ? void 0 : m.large_image, 128), R = null !== (h = null !== (S = null === (n = A.timestamps) || void 0 === n ? void 0 : n.start) && void 0 !== S ? S : A.created_at) && void 0 !== h ? h : 0, [C, g] = r.useState(Date.now()), {
-                    seconds: L,
-                    minutes: D,
-                    hours: v
-                } = (0, E.diffAsUnits)(R, C), {
-                    Icon: M,
-                    title: y,
-                    iconColor: P,
-                    textColor: U
-                } = function(e) {
-                    switch (e.type) {
-                        case I.ActivityTypes.PLAYING:
-                            return {
-                                Icon: s.GameControllerIcon, title: T.default.Messages.MEMBER_LIST_CONTENT_FEED_PLAYING_GAME.format({
-                                    gameName: e.name
-                                }), iconColor: o.default.colors.STATUS_POSITIVE, textColor: "status-positive"
-                            };
-                        case I.ActivityTypes.LISTENING:
-                            var t;
-                            return {
-                                Icon: a.RecordPlayerIcon, title: T.default.Messages.USER_PROFILE_ACTIVITY_LISTENING_TO.format({
-                                    name: null !== (t = e.state) && void 0 !== t ? t : e.name
-                                }), iconColor: o.default.colors.TEXT_SECONDARY, textColor: "text-secondary"
-                            };
-                        default:
-                            return {
-                                Icon: s.GameControllerIcon, title: T.default.Messages.MEMBER_LIST_CONTENT_FEED_PLAYING_GAME.format({
-                                    gameName: e.name
-                                }), iconColor: o.default.colors.STATUS_POSITIVE, textColor: "status-positive"
-                            }
-                    }
-                }(A);
-                return (0, i.jsxs)("div", {
-                    className: f.cardContainer,
-                    children: [(0, i.jsx)(d.ContentImage, {
-                        src: null != p ? p : O,
-                        size: 48
-                    }), (0, i.jsxs)(u.CardInfoSection, {
-                        children: [(0, i.jsx)(u.CardTitle, {
-                            children: y
-                        }), null != R && (0, i.jsxs)("div", {
-                            className: f.playtimeContainer,
-                            children: [(0, i.jsx)(M, {
-                                width: 12,
-                                height: 12,
-                                color: P
-                            }), (0, i.jsx)(_.ActiveTimestampFromDuration, {
-                                startTime: R,
-                                seconds: L,
-                                minutes: D,
-                                hours: v,
-                                now: C,
-                                setNow: g,
-                                textColor: U
-                            })]
-                        })]
-                    })]
-                })
-            })
-        },
         520978: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -210174,6 +209651,60 @@
                 })
             }
         },
+        580512: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return c
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("442837"),
+                s = n("717881"),
+                a = n("906732"),
+                o = n("158776"),
+                l = n("785717"),
+                u = n("221292"),
+                d = n("981631"),
+                _ = n("810480");
+
+            function c(e) {
+                let {
+                    user: t,
+                    guild: n,
+                    channelId: c,
+                    onClose: E
+                } = e, {
+                    analyticsLocations: I,
+                    newestAnalyticsLocation: T
+                } = (0, a.default)(), {
+                    trackUserProfileAction: f,
+                    ...S
+                } = (0, l.useUserProfileAnalyticsContext)(), h = (0, r.useStateFromStores)([o.default], () => o.default.findActivity(t.id, e => null != e.type && e.type !== d.ActivityTypes.CUSTOM_STATUS), [t]);
+                return (0, i.jsx)(s.default, {
+                    type: s.UserActivityTypes.USER_POPOUT_V2,
+                    activity: h,
+                    className: _.activity,
+                    source: T,
+                    user: t,
+                    guildId: null == n ? void 0 : n.id,
+                    channelId: c,
+                    onOpenGameProfile: E,
+                    onAction: () => {
+                        f({
+                            action: "JOIN_ACTIVITY"
+                        }), (0, u.trackUserProfileActivityJoined)({
+                            activity: h,
+                            analyticsLocations: I,
+                            ...S
+                        }), null == E || E()
+                    },
+                    actionColor: _.buttonColor,
+                    hideHeader: !0
+                })
+            }
+        },
         67152: function(e, t, n) {
             "use strict";
             n.r(t), n("47120");
@@ -210243,7 +209774,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return O
+                    return p
                 }
             });
             var i = n("735250");
@@ -210251,84 +209782,86 @@
             var r = n("120356"),
                 s = n.n(r),
                 a = n("442837"),
-                o = n("158776"),
-                l = n("246946"),
-                u = n("5192"),
-                d = n("447452"),
-                _ = n("505737"),
-                c = n("193281"),
-                E = n("724593"),
-                I = n("530"),
-                T = n("894374"),
-                f = n("705556"),
-                S = n("790711"),
-                h = n("67152"),
-                A = n("901952"),
-                m = n("579285"),
-                N = n("287612"),
-                p = n("108997");
+                o = n("246946"),
+                l = n("5192"),
+                u = n("447452"),
+                d = n("505737"),
+                _ = n("724593"),
+                c = n("530"),
+                E = n("894374"),
+                I = n("705556"),
+                T = n("790711"),
+                f = n("580512"),
+                S = n("67152"),
+                h = n("901952"),
+                A = n("579285"),
+                m = n("287612"),
+                N = n("108997");
 
-            function O(e) {
+            function p(e) {
                 let {
                     user: t,
                     currentUser: n,
                     displayProfile: r,
-                    guild: O,
-                    isHovering: R,
-                    onOpenProfile: C,
-                    channelId: g,
-                    onClose: L
+                    guild: p,
+                    isHovering: O,
+                    onOpenProfile: R,
+                    channelId: C,
+                    onClose: g
                 } = e, {
-                    moreUserDetailsEnabled: D
-                } = (0, d.useSimplifiedProfileExperiment)({
+                    moreUserDetailsEnabled: L
+                } = (0, u.useSimplifiedProfileExperiment)({
                     location: "BiteSizeProfileBody"
-                }), v = u.default.getName(null == O ? void 0 : O.id, g, t), M = (0, _.default)(t.id, null == O ? void 0 : O.id), y = (0, a.useStateFromStores)([l.default], () => l.default.hidePersonalInformation), P = (0, a.useStateFromStores)([o.default], () => o.default.findActivity(t.id, e => null != e.type && c.SUPPORTED_ACTIVITY_TYPES.has(e.type)), [t]);
+                }), D = l.default.getName(null == p ? void 0 : p.id, C, t), v = (0, d.default)(t.id, null == p ? void 0 : p.id), M = (0, a.useStateFromStores)([o.default], () => o.default.hidePersonalInformation);
                 return (0, i.jsxs)("div", {
-                    className: p.body,
-                    children: [(0, i.jsx)(I.default, {
+                    className: N.body,
+                    children: [(0, i.jsx)(c.default, {
                         user: t,
-                        onOpenProfile: () => C(!1),
-                        guildId: null == O ? void 0 : O.id,
-                        usernameIcon: t.hasAvatarForGuild(null == O ? void 0 : O.id) && (0, i.jsx)(S.default, {
+                        onOpenProfile: () => R(!1),
+                        guildId: null == p ? void 0 : p.id,
+                        usernameIcon: t.hasAvatarForGuild(null == p ? void 0 : p.id) && (0, i.jsx)(T.default, {
                             user: t,
-                            nickname: v
+                            nickname: D
                         }),
                         pronouns: null == r ? void 0 : r.pronouns,
-                        tags: (0, i.jsx)(T.UserProfileBadgesTag, {
+                        tags: (0, i.jsx)(E.UserProfileBadgesTag, {
                             displayProfile: r,
-                            onClose: L
+                            onClose: g
                         }),
-                        nicknameIcon: D && !y ? (0, i.jsx)(E.default, {
-                            className: s()(p.noteIcon, {
-                                [p.visible]: R
+                        nicknameIcon: L && !M ? (0, i.jsx)(_.default, {
+                            className: s()(N.noteIcon, {
+                                [N.visible]: O
                             }),
                             user: t,
-                            onOpenProfile: () => C(!0)
+                            onOpenProfile: () => R(!0)
                         }) : null
-                    }), (0, i.jsx)(N.default, {
+                    }), (0, i.jsx)(m.default, {
                         user: t,
-                        onClose: L
-                    }), D && (0, i.jsx)(h.default, {
+                        onClose: g
+                    }), L && (0, i.jsx)(S.default, {
                         user: t,
                         bio: null == r ? void 0 : r.bio,
-                        hidePersonalInformation: y,
-                        onClose: L
-                    }), null != P && (0, i.jsx)(c.default, {
-                        activity: P
-                    }), null != O && (0, i.jsx)(m.default, {
+                        hidePersonalInformation: M,
+                        onClose: g
+                    }), (0, i.jsx)(f.default, {
+                        user: t,
+                        guild: p,
+                        channelId: C,
+                        onClose: g
+                    }), null != p && (0, i.jsx)(A.default, {
                         user: t,
                         currentUser: n,
-                        guild: O,
-                        onOpenProfile: () => C(!1)
-                    }), M && (0, i.jsx)(A.default, {
+                        guild: p,
+                        onOpenProfile: () => R(!1)
+                    }), v && (0, i.jsx)(h.default, {
                         user: t,
-                        channelId: g,
-                        onClose: L
-                    }), (0, i.jsx)(f.default, {
+                        channelId: C,
+                        onClose: g
+                    }), (0, i.jsx)(I.default, {
                         type: "action",
                         user: t,
-                        guildId: null == O ? void 0 : O.id,
-                        onClose: L
+                        guildId: null == p ? void 0 : p.id,
+                        onClose: g
                     })]
                 })
             }
@@ -245144,7 +244677,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "40fedfa4ea04e054edafa7d213f65ca8718408a8"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "81cb12fcab772c13e0e2a6395ef5394c8d9d6c10"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273654,7 +273187,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "288715"
+                                build_number: "288728"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280871,7 +280404,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "288715", "288715"), 10);
+                let s = parseInt((n = "288728", "288728"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -286218,46 +285751,6 @@
                         clipRule: "evenodd",
                         className: o
                     })
-                })
-            }
-        },
-        1385: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                RecordPlayerIcon: function() {
-                    return a
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("692547"),
-                s = n("331595");
-            let a = e => {
-                let {
-                    width: t = 24,
-                    height: n = 24,
-                    color: a = r.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: o = "",
-                    ...l
-                } = e;
-                return (0, i.jsxs)("svg", {
-                    ...(0, s.default)(l),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: n,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: [(0, i.jsx)("path", {
-                        fill: "string" == typeof a ? a : a.css,
-                        d: "M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z",
-                        className: o
-                    }), (0, i.jsx)("path", {
-                        fill: "string" == typeof a ? a : a.css,
-                        fillRule: "evenodd",
-                        d: "M18.03 2.8a11 11 0 1 0 2.52 2.28c-.28-.34-.8-.13-.8.31v7.37c0 1-.4 1.95-1.1 2.65l-.78.78a.6.6 0 0 0-.14.53c.08.53-.08 1.1-.5 1.52l-1 1a1.75 1.75 0 1 1-2.47-2.48l1-1c.42-.41.99-.57 1.52-.49.2.03.4 0 .53-.14l.78-.78c.42-.42.66-1 .66-1.6V3.22a.49.49 0 0 0-.22-.41ZM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-7-2a1 1 0 0 0 1-1 6 6 0 0 1 6-6 1 1 0 1 0 0-2 8 8 0 0 0-8 8 1 1 0 0 0 1 1Z",
-                        clipRule: "evenodd",
-                        className: o
-                    })]
                 })
             }
         },
@@ -307292,24 +306785,6 @@
                 }
             }), n("47120"), (r = i || (i = {})).TRANSFER_EXISTING_CALL = "TRANSFER_EXISTING_CALL", r.CREATE_NEW_CALL = "CREATE_NEW_CALL"
         },
-        876215: function(e, t, n) {
-            "use strict";
-            var i, r;
-            n.r(t), n.d(t, {
-                ContentInventoryEntryType: function() {
-                    return i
-                }
-            }), (r = i || (i = {}))[r.CONTENT_TYPE_UNSPECIFIED = 0] = "CONTENT_TYPE_UNSPECIFIED", r[r.PLAYED_GAME = 1] = "PLAYED_GAME", r[r.WATCHED_MEDIA = 2] = "WATCHED_MEDIA", r[r.TOP_GAME = 3] = "TOP_GAME", r[r.LISTENED_MEDIA = 4] = "LISTENED_MEDIA"
-        },
-        884439: function(e, t, n) {
-            "use strict";
-            var i, r;
-            n.r(t), n.d(t, {
-                ContentInventoryTraitType: function() {
-                    return i
-                }
-            }), (r = i || (i = {}))[r.TRAIT_TYPE_UNSPECIFIED = 0] = "TRAIT_TYPE_UNSPECIFIED", r[r.FIRST_TIME = 1] = "FIRST_TIME", r[r.DURATION_SECONDS = 2] = "DURATION_SECONDS", r[r.IS_LIVE = 3] = "IS_LIVE", r[r.AGGREGATE_RANGE = 4] = "AGGREGATE_RANGE", r[r.RESURRECTED = 5] = "RESURRECTED", r[r.MARATHON = 6] = "MARATHON", r[r.NEW_RELEASE = 7] = "NEW_RELEASE", r[r.STREAK_DAYS = 8] = "STREAK_DAYS"
-        },
         742280: function(e, t, n) {
             "use strict";
             var i, r;
@@ -308314,4 +307789,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.d1c4572a8c3eefd2f17c.js.map
+//# sourceMappingURL=35705.242e7eaa0c60f190fd86.js.map
