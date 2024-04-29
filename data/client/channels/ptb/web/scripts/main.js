@@ -36729,7 +36729,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288642", ", Version Hash: ").concat("977578f6d8fb146611d0f1cd2a5df91a8719a1b4")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288648", ", Version Hash: ").concat("38c09cd5d785eaf9f0e65da7f840a61c0382c43b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55691,6 +55691,7 @@
                 CLAN_USER_ADOPT_TAG_MODAL_CANCEL: "Not Now",
                 CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA: "Don The Tag",
                 CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA: "Apply To Join",
+                CLAN_USER_GO_TO_CLAN_CTA: "Go to Guild",
                 CLAN_USER_APPLICATION_EXISTS_TAG_GUILD_PROFILE_CTA: "View Application",
                 CLAN_USER_PROFILE_USE_CLAN_TAG: "Would you like to adopt the {guildName} guild tag as part of your identity?",
                 SIGNUP_BUTTON_TOOLTIP_CTA: "Click to preview",
@@ -87036,8 +87037,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "288642", "288642"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288642")), t = 0), t
+                let t = parseInt((e = "288648", "288648"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288648")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -101575,7 +101576,7 @@
                 b = ["LGBTQIA-Friendly", "All genders"],
                 G = new Set([...P, ...U, ...b]),
                 w = new Set(S.default.getAvailableLocales().map(e => e.value)),
-                B = new Set(["Anime", "Art and Craft", "Architecture", "Baseball", "Basketball", "Beauty", "Beer", "Board Games", "Books", "Cars", "Celebrities", "Coffee", "Coding", "Craft", "Design", "F1", "Fashion", "Fitness", "Food", "Football", "Healthcare", "Home Decor", "Houseplants", "K-Pop", "Knitting", "LEGO", "MARVEL", "Motorcycles", "Movies", "Music", "Nail Art", "Pets", "Photography", "Pok\xe9mon", "Programming", "Roman History", "Science", "Skiing", "Soccer", "Star Wars", "TCG", "TEA", "Tech", "Travel", "TV Shows", "Wine"]);
+                B = new Set(["Anime", "Arts and Crafts", "Architecture", "Baseball", "Basketball", "Beauty", "Beer", "Board Games", "Books", "Cars", "Celebrities", "Coffee", "Coding", "Craft", "Design", "F1", "Fashion", "Fitness", "Food", "Football", "Healthcare", "Home Decor", "Houseplants", "K-Pop", "Knitting", "LEGO", "MARVEL", "Motorcycles", "Movies", "Music", "Nail Art", "Pets", "Photography", "Pok\xe9mon", "Programming", "Roman History", "Science", "Skiing", "Soccer", "Star Wars", "TCG", "TEA", "Tech", "Travel", "TV Shows", "Wine"]);
             (c = a || (a = {}))[c.PIXEL_RUSH = 0] = "PIXEL_RUSH", c[c.SCANLINES = 1] = "SCANLINES", c[c.TEXTURED = 2] = "TEXTURED", c[c.MAGIC = 3] = "MAGIC", c[c.CUSTOM = 4] = "CUSTOM", (E = o || (o = {})).BOULDER = "boulder", E.CASCADE = "cascade", E.THUNDER = "thunder", E.SOUL = "soul", E.MARSH = "marsh", E.VOLCANO = "volcano", E.EARTH = "earth", E.ZEPHYR = "zephyr";
             let k = [{
                     name: "boulder",
@@ -102027,7 +102028,9 @@
                     })
                 }, [R, U, O]), w = r.useCallback(() => {
                     null != L && (0, u.transitionTo)(S.Routes.GUILD_MEMBER_VERIFICATION(L))
-                }, [L]), B = r.useMemo(() => {
+                }, [L]), B = r.useCallback(() => {
+                    null != L && (0, u.transitionToGuild)(L)
+                }, [L]), k = r.useMemo(() => {
                     var e, t;
                     let n = null !== (t = null == R ? void 0 : null === (e = R.branding) || void 0 === e ? void 0 : e.primaryColor) && void 0 !== t ? t : null,
                         i = {
@@ -102043,46 +102046,54 @@
                             color: (0, f.getAccessibleTextColor)(n).hex()
                         }
                     }), i
-                }, [R]), k = r.useMemo(() => {
+                }, [R]), V = r.useMemo(() => {
                     switch (!0) {
                         case !g:
                             return null;
                         case !y && U:
                             return (0, i.jsx)(s.Button, {
                                 onClick: w,
-                                ...B,
+                                ...k,
                                 children: h.default.Messages.CLAN_USER_APPLICATION_EXISTS_TAG_GUILD_PROFILE_CTA
                             });
                         case !y:
                             return (0, i.jsx)(s.Button, {
                                 onClick: G,
-                                ...B,
+                                ...k,
                                 children: h.default.Messages.CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA
                             });
                         case y && !P:
                             return (0, i.jsx)(s.Button, {
                                 onClick: b,
-                                ...B,
+                                ...k,
                                 children: h.default.Messages.CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA
+                            });
+                        case y && P:
+                            return (0, i.jsx)(s.Button, {
+                                onClick: B,
+                                ...k,
+                                children: h.default.Messages.CLAN_USER_GO_TO_CLAN_CTA
                             });
                         default:
                             return null
                     }
-                }, [B, b, G, w, U, P, y, g]), V = r.useMemo(() => ({
+                }, [k, b, G, w, B, U, P, y, g]), x = r.useMemo(() => ({
                     className: A.container,
                     onClick: m
                 }), []);
                 return null == C || null == R || null == L || p ? (0, i.jsx)("div", {
-                    ...V,
+                    ...x,
                     children: (0, i.jsx)(s.Spinner, {})
                 }) : (0, i.jsxs)("div", {
-                    ...V,
+                    ...x,
                     children: [(0, i.jsx)(o.ClanDiscoveryCardView, {
                         clan: R,
-                        className: A.cardContainer
-                    }), null != k && (0, i.jsx)("div", {
+                        className: A.cardContainer,
+                        isMember: y,
+                        expanded: !0
+                    }), null != V && (0, i.jsx)("div", {
                         className: A.buttonContainer,
-                        children: k
+                        children: V
                     })]
                 })
             }
@@ -112526,8 +112537,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "288642",
-                    versionHash: "977578f6d8fb146611d0f1cd2a5df91a8719a1b4"
+                    buildNumber: "288648",
+                    versionHash: "38c09cd5d785eaf9f0e65da7f840a61c0382c43b"
                 }
             }
             n.r(t), n.d(t, {
@@ -113491,6 +113502,7 @@
                                     children: (0, i.jsx)(o.Tooltip, {
                                         text: A.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
                                         position: "top",
+                                        shouldShow: !d,
                                         children: e => (0, i.jsxs)("div", {
                                             ...e,
                                             className: m.clanTagChiplet,
@@ -167230,8 +167242,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714409387929",
-                                    build_number: "288642"
+                                    built_at: "1714410242387",
+                                    build_number: "288648"
                                 }
                             },
                             retries: 1
@@ -245136,7 +245148,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "977578f6d8fb146611d0f1cd2a5df91a8719a1b4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "38c09cd5d785eaf9f0e65da7f840a61c0382c43b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273646,7 +273658,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "288642"
+                                build_number: "288648"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280863,7 +280875,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "288642", "288642"), 10);
+                let s = parseInt((n = "288648", "288648"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308306,4 +308318,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.b22e6abeaf0866033b22.js.map
+//# sourceMappingURL=35705.9efdef2c3c45e1c92c5c.js.map
