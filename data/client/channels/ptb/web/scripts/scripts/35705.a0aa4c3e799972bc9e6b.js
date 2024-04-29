@@ -36729,7 +36729,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288815", ", Version Hash: ").concat("40b0dd0e9bf27e0eb0ff7047490e3991b0d396e1")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288835", ", Version Hash: ").concat("09d37f4aa9c47265b2a850e93d1a636d7a7b4735")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87052,8 +87052,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "288815", "288815"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288815")), t = 0), t
+                let t = parseInt((e = "288835", "288835"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288835")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -100129,18 +100129,22 @@
 
             function N(e, t, n, i) {
                 let r = t[1],
-                    s = !1;
-                for (let a of [...i.entries].reverse()) {
-                    let o;
-                    switch (a.attributes[0]) {
+                    s = !1,
+                    a = [...i.entries].reverse();
+                for (let o = 0; o < a.length; o++) {
+                    let l;
+                    let d = a[o],
+                        c = a[o + 1];
+                    if (null != c && c.text.endsWith("\\") && d.start === c.start + c.text.length) continue;
+                    switch (d.attributes[0]) {
                         case "emoji":
-                            o = {
+                            l = {
                                 type: "emoji",
                                 emoji: {
-                                    name: a.data.name,
-                                    src: a.data.src,
-                                    surrogate: a.data.surrogate,
-                                    jumboable: !0 === a.data.jumboable
+                                    name: d.data.name,
+                                    src: d.data.src,
+                                    surrogate: d.data.surrogate,
+                                    jumboable: !0 === d.data.jumboable
                                 },
                                 children: [{
                                     text: ""
@@ -100148,13 +100152,13 @@
                             };
                             break;
                         case "customEmoji":
-                            o = {
+                            l = {
                                 type: "customEmoji",
                                 emoji: {
-                                    emojiId: a.data.emojiId,
-                                    name: a.data.name,
-                                    animated: a.data.animated,
-                                    jumboable: !0 === a.data.jumboable
+                                    emojiId: d.data.emojiId,
+                                    name: d.data.name,
+                                    animated: d.data.animated,
+                                    jumboable: !0 === d.data.jumboable
                                 },
                                 children: [{
                                     text: ""
@@ -100162,63 +100166,63 @@
                             };
                             break;
                         case "textMention":
-                            o = {
+                            l = {
                                 type: "textMention",
-                                name: a.data.text,
+                                name: d.data.text,
                                 children: [{
                                     text: ""
                                 }]
                             };
                             break;
                         case "mention":
-                            o = {
+                            l = {
                                 type: "userMention",
-                                userId: a.data.id,
+                                userId: d.data.id,
                                 children: [{
                                     text: ""
                                 }]
                             };
                             break;
                         case "roleMention":
-                            o = {
+                            l = {
                                 type: "roleMention",
-                                roleId: a.data.id,
+                                roleId: d.data.id,
                                 children: [{
                                     text: ""
                                 }]
                             };
                             break;
                         case "channelMention":
-                            o = {
+                            l = {
                                 type: "channelMention",
-                                channelId: a.data.id,
+                                channelId: d.data.id,
                                 children: [{
                                     text: ""
                                 }]
                             };
                             break;
                         case "staticRouteLink":
-                            o = {
+                            l = {
                                 type: "staticRouteLink",
-                                channelId: a.data.id,
+                                channelId: d.data.id,
                                 children: [{
                                     text: ""
                                 }]
                             };
                             break;
                         case "soundboard":
-                            o = {
+                            l = {
                                 type: "soundboard",
-                                soundId: a.data.id,
+                                soundId: d.data.id,
                                 children: [{
                                     text: ""
                                 }]
                             };
                             break;
                         case "timestamp":
-                            o = {
+                            l = {
                                 type: "timestamp",
-                                parsed: a.data,
+                                parsed: d.data,
                                 children: [{
                                     text: ""
                                 }]
@@ -100227,12 +100231,12 @@
                         default:
                             continue
                     }
-                    if (!O(n, t[0], o)) continue;
-                    let l = (0, u.getPointFromPosition)(e, r, i.serializedChildren, a.start),
-                        d = (0, u.getPointFromPosition)(e, r, i.serializedChildren, a.start + a.text.length);
-                    _.SlateTransforms.textToVoid(e, o, {
-                        anchor: l,
-                        focus: d
+                    if (!O(n, t[0], l)) continue;
+                    let E = (0, u.getPointFromPosition)(e, r, i.serializedChildren, d.start),
+                        I = (0, u.getPointFromPosition)(e, r, i.serializedChildren, d.start + d.text.length);
+                    _.SlateTransforms.textToVoid(e, l, {
+                        anchor: E,
+                        focus: I
                     }), s = !0
                 }
                 return s
@@ -112118,8 +112122,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "288815",
-                    versionHash: "40b0dd0e9bf27e0eb0ff7047490e3991b0d396e1"
+                    buildNumber: "288835",
+                    versionHash: "09d37f4aa9c47265b2a850e93d1a636d7a7b4735"
                 }
             }
             n.r(t), n.d(t, {
@@ -166820,8 +166824,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714424625262",
-                                    build_number: "288815"
+                                    built_at: "1714426804758",
+                                    build_number: "288835"
                                 }
                             },
                             retries: 1
@@ -244693,7 +244697,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "40b0dd0e9bf27e0eb0ff7047490e3991b0d396e1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "09d37f4aa9c47265b2a850e93d1a636d7a7b4735"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273203,7 +273207,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "288815"
+                                build_number: "288835"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280420,7 +280424,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "288815", "288815"), 10);
+                let s = parseInt((n = "288835", "288835"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -307805,4 +307809,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.f984c24bbc3aed1cb7e4.js.map
+//# sourceMappingURL=35705.a0aa4c3e799972bc9e6b.js.map
