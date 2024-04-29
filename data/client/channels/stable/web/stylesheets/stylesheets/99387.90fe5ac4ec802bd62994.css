@@ -10992,7 +10992,7 @@ span.clanTag_f4aadc {
     background-color: var(--background-floating);
     padding: 8px;
     border-radius: var(--radius-xs);
-    width: 312px
+    max-width: 312px
 }
 
 .header__3a32b {
@@ -11016,7 +11016,12 @@ span.clanTag_f4aadc {
     background-color: var(--background-tertiary);
     border-radius: var(--radius-sm);
     padding: 10px;
-    margin-top: 8px
+    margin-top: 8px;
+    width: 290px
+}
+
+.activityCardContainer__6615c:hover .joinButton_f6f9af {
+    display: block
 }
 
 .activityCardImageContainer_c34fee {
@@ -11091,6 +11096,10 @@ span.clanTag_f4aadc {
     color: var(--text-muted);
     margin-left: 4px;
     margin-right: 4px
+}
+
+.joinButton_f6f9af {
+    display: none
 }
 
 .row_f694ee {
@@ -18381,32 +18390,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     margin-right: 3px
 }
 
-.badge_b37eda {
-    padding: 0 .5rem;
-    background-color: var(--background-accent);
-    color: var(--interactive-active)
-}
-
-.theme-light .badge_b37eda {
-    background-color: var(--background-secondary)
-}
-
-.theme-light.custom-theme-background .badge_b37eda {
-    background-color: var(--background-tertiary)
-}
-
-.innerBadge_e4c245 {
-    display: flex;
-    gap: 4px;
-    align-items: center;
-    justify-content: center
-}
-
-.icon_c4aa3c {
-    width: 12px;
-    height: 12px
-}
-
 .badge__0a797 {
     display: inline-block;
     overflow: hidden;
@@ -18663,39 +18646,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     color: var(--text-secondary)
 }
 
-.badgeRow__474f5 {
-    display: flex;
-    gap: 8px;
-    align-items: center
-}
-
-.badgeContainer__5607c {
-    display: flex;
-    gap: 4px;
-    align-items: center;
-    overflow: hidden;
-    flex-shrink: 0
-}
-
-.badgeContainer__5607c svg {
-    flex-shrink: 0
-}
-
-.badgeContainer__5607c div {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden
-}
-
-.badgeContainer__5607c:last-child {
-    flex-shrink: 1
-}
-
-.container__8d997 .badgeContainer__5607c {
-    margin-top: 2px;
-    margin-bottom: -2px
-}
-
 .facePile__28ee7 {
     display: flex;
     margin-right: 6px
@@ -18716,7 +18666,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     line-height: 10px
 }
 
-.thumbnail__18ece {
+img.thumbnail__18ece {
     width: 48px;
     -o-object-fit: cover;
     object-fit: cover
@@ -18783,6 +18733,18 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
+}
+
+.clickableUsername_f267b3 {
+    cursor: pointer
+}
+
+.clickableUsername_f267b3:hover .nickname__745d1,
+.clickableUsername_f267b3:hover .userTagUsername__88953,
+.clickableUsername_f267b3:focus-visible .nickname__745d1,
+.clickableUsername_f267b3:focus-visible .userTagUsername__88953 {
+    -webkit-text-decoration: underline;
+    text-decoration: underline
 }
 
 .nickname__745d1 {
@@ -54220,17 +54182,52 @@ div.profileThemedContainer__6e645 {
     height: 16px
 }
 
-.container__9d45f {
+.badgeContainer__678ec {
     display: flex;
     gap: 4px;
     align-items: center;
-    overflow-x: hidden
+    overflow: hidden;
+    flex-shrink: 0
 }
 
-.label__08616 {
+.badgeContainer__678ec svg {
+    flex-shrink: 0
+}
+
+.badgeContainer__678ec div {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.badgeLabel_fa3c15 {
     overflow-x: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
+}
+
+.badgesContainer_d4777f {
+    display: flex;
+    gap: 8px;
+    align-items: center
+}
+
+.badgesContainerCard__3a532 {
+    margin-bottom: -2px;
+    margin-top: 2px
+}
+
+.badgesContainerCard__3a532>:nth-child(n+3) {
+    display: none
+}
+
+.badgesContainerCard__3a532>:nth-child(2) {
+    flex-shrink: 1
+}
+
+.badgesContainerPopout__6f71a {
+    flex-wrap: wrap;
+    row-gap: 4px
 }
 
 .coachtip__2693f {
@@ -54333,11 +54330,6 @@ div.profileThemedContainer__6e645 {
     justify-content: space-between;
     gap: 8px;
     min-width: 0
-}
-
-.badgeContainer__67878 {
-    flex-wrap: wrap;
-    row-gap: 4px
 }
 
 .toastContainer__40273 {
@@ -55318,15 +55310,10 @@ div.profileThemedContainer__6e645 {
 
 .toolbar__2fcb0 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 12px 16px;
     border-bottom: 1px solid var(--border-subtle)
-}
-
-.toolbarSpacer_bc0349 {
-    width: 90px;
-    height: 20px
 }
 
 .preferences__16c1a,
@@ -56825,22 +56812,50 @@ div.profileThemedContainer__6e645 {
     fill: var(--primary-330)
 }
 
+.container__5c0c5 {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    height: 100%;
+    box-sizing: border-box
+}
+
+.stepsContainer_fd80f9 {
+    display: flex;
+    padding: 80px 120px 40px;
+    flex: 1;
+    height: 100%;
+    box-sizing: border-box
+}
+
+.footer__259a2 {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    margin: 24px;
+    gap: 16px
+}
+
+.scroller_bf9c9a,
+.sequencer__7fa68 {
+    display: flex;
+    flex: 1
+}
+
+.scroller_bf9c9a {
+    flex: 1
+}
+
+. .footerButtons {
+    margin-top: 12px
+}
+
 @value baseClanCardWidth 240px;
 @value baseClanCardHeight 400px;
 @value baseClanCardBorderWidth 1px;
 @value centerClanScale 1;
 @value innerClanScale 0.833;
 @value outerClanScale 0.68;
-
-.stepsContainer__70c41 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    position: relative
-}
 
 .upsellContainer_aae5af {
     padding-top: 80px;
@@ -56935,44 +56950,10 @@ div.profileThemedContainer__6e645 {
     margin-bottom: 40px
 }
 
-.sequencer__03419 {
-    display: flex;
-    flex-direction: column;
-    flex: 1
-}
-
-.scroller_cc96df {
-    flex: 0 0 auto;
-    margin-top: 120px;
-    width: 800px
-}
-
-.footer__64d74 {
-    display: flex;
-    width: 100%
-}
-
-.footerActions_f527fe {
-    flex: 1;
-    justify-content: space-between;
-    gap: 16px;
-    margin: 24px
-}
-
-.footerButtons__8396f {
-    margin-top: 12px
-}
-
-.scrollerContainer__4b6bd {
+.container_c12432 {
     display: flex;
     flex-direction: column;
     height: 100%
-}
-
-.scroller_a9e72f {
-    display: flex;
-    flex-direction: column;
-    flex: 1
 }
 
 .adminUpsell_a0161a {
@@ -56988,10 +56969,21 @@ div.profileThemedContainer__6e645 {
     flex: 1
 }
 
+.userOnboarding__753ed {
+    height: 100%
+}
+
+.upsellScroller__0225a {
+    display: flex;
+    flex-direction: column;
+    flex: 1
+}
+
 .backgroundImage__778b2 {
     flex: 1;
     width: auto;
-    background-position: top;
+    background-color: var(--black-500);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover
 }
@@ -87480,7 +87472,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 16px
+    font-size: 1rem
 }
 
 .viewAllGamesButton__34838 {
@@ -87500,7 +87492,7 @@ input::-webkit-inner-spin-button {
 
 .viewAllGames__76b00,
 .viewAllNitroGames_a65ce4 {
-    font-size: 16px;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -87557,7 +87549,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 16px
+    font-size: 1rem
 }
 
 .headerBar__3337a {
@@ -117825,7 +117817,8 @@ html .invoiceCancelRow__6ff3e {
 :root {
     --custom-backdrop-z-index: 1000;
     --custom-card-z-index: 1001;
-    --custom-confetti-canvas-z-index: 1002
+    --custom-confetti-canvas-z-index: 1002;
+    --custom-close-button-z-index: 1004
 }
 
 .shopCard__9e3fe {
@@ -117914,7 +117907,9 @@ html .invoiceCancelRow__6ff3e {
 .closeButton_b84e85 {
     position: absolute;
     top: 16px;
-    right: 16px
+    right: 16px;
+    z-index: 1004;
+    z-index: var(--custom-close-button-z-index)
 }
 
 .darkCardBackground_d398da {
@@ -135890,4 +135885,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.e5c8a8faa875253a1ce9.css.map*/
+/*# sourceMappingURL=99387.90fe5ac4ec802bd62994.css.map*/
