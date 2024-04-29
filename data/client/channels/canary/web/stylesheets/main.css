@@ -56799,22 +56799,50 @@ div.profileThemedContainer__6e645 {
     fill: var(--primary-330)
 }
 
+.container__5c0c5 {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    height: 100%;
+    box-sizing: border-box
+}
+
+.stepsContainer_fd80f9 {
+    display: flex;
+    padding: 80px 120px 40px;
+    flex: 1;
+    height: 100%;
+    box-sizing: border-box
+}
+
+.footer__259a2 {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    margin: 24px;
+    gap: 16px
+}
+
+.scroller_bf9c9a,
+.sequencer__7fa68 {
+    display: flex;
+    flex: 1
+}
+
+.scroller_bf9c9a {
+    flex: 1
+}
+
+. .footerButtons {
+    margin-top: 12px
+}
+
 @value baseClanCardWidth 240px;
 @value baseClanCardHeight 400px;
 @value baseClanCardBorderWidth 1px;
 @value centerClanScale 1;
 @value innerClanScale 0.833;
 @value outerClanScale 0.68;
-
-.stepsContainer__70c41 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    position: relative
-}
 
 .upsellContainer_aae5af {
     padding-top: 80px;
@@ -56909,44 +56937,10 @@ div.profileThemedContainer__6e645 {
     margin-bottom: 40px
 }
 
-.sequencer__03419 {
-    display: flex;
-    flex-direction: column;
-    flex: 1
-}
-
-.scroller_cc96df {
-    flex: 0 0 auto;
-    margin-top: 120px;
-    width: 800px
-}
-
-.footer__64d74 {
-    display: flex;
-    width: 100%
-}
-
-.footerActions_f527fe {
-    flex: 1;
-    justify-content: space-between;
-    gap: 16px;
-    margin: 24px
-}
-
-.footerButtons__8396f {
-    margin-top: 12px
-}
-
-.scrollerContainer__4b6bd {
+.container_c12432 {
     display: flex;
     flex-direction: column;
     height: 100%
-}
-
-.scroller_a9e72f {
-    display: flex;
-    flex-direction: column;
-    flex: 1
 }
 
 .adminUpsell_a0161a {
@@ -56962,10 +56956,21 @@ div.profileThemedContainer__6e645 {
     flex: 1
 }
 
+.userOnboarding__753ed {
+    height: 100%
+}
+
+.upsellScroller__0225a {
+    display: flex;
+    flex-direction: column;
+    flex: 1
+}
+
 .backgroundImage__778b2 {
     flex: 1;
     width: auto;
-    background-position: top;
+    background-color: var(--black-500);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover
 }
@@ -135864,4 +135869,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1e2e1726e923a3d76e21.css.map*/
+/*# sourceMappingURL=99387.c2843e6200743a67aaf2.css.map*/
