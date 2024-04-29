@@ -25644,6 +25644,13 @@
                 section: "section__62b44"
             }
         },
+        810480: function(e) {
+            "use strict";
+            e.exports = {
+                activity: "activity__47d03",
+                buttonColor: "buttonColor_b3c4e5"
+            }
+        },
         884317: function(e) {
             "use strict";
             e.exports = {
