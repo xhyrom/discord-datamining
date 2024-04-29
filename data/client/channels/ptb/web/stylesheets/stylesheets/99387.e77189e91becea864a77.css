@@ -5260,6 +5260,9 @@
 }
 
 .cardBrandingHeader__1db3b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     height: 100px;
     width: 100%
@@ -55832,7 +55835,11 @@ img.thumbnail__18ece {
 
 .clanCardWrapper__06f56 {
     align-self: flex-start;
-    width: 262px
+    width: 264px
+}
+
+.clanBannerPreview__228bd {
+    width: 100%
 }
 
 .formTitle__4d78b {
@@ -87405,7 +87412,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 1rem
+    font-size: 16px
 }
 
 .viewAllGamesButton__34838 {
@@ -87425,7 +87432,7 @@ input::-webkit-inner-spin-button {
 
 .viewAllGames__76b00,
 .viewAllNitroGames_a65ce4 {
-    font-size: 1rem;
+    font-size: 16px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -87482,7 +87489,7 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     margin: 32px 0 20px;
     font-weight: 500;
-    font-size: 1rem
+    font-size: 16px
 }
 
 .headerBar__3337a {
@@ -135833,4 +135840,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.eeeb4d6499f63b543e3d.css.map*/
+/*# sourceMappingURL=99387.e77189e91becea864a77.css.map*/
