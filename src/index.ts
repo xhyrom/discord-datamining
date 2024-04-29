@@ -21,7 +21,7 @@ import "dotenv/config";
 import { Github } from "./modules/Github.ts";
 import { Domains } from "./modules/Domains.ts";
 import { Client } from "./modules/client/index.ts";
-import { Posts } from "./modules/posts/index.ts";
+//import { Posts } from "./modules/posts/index.ts";
 import { Applications } from "./modules/client/applications/index.ts";
 import { Routes } from "./modules/client/routes/index.ts";
 
