@@ -36729,7 +36729,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288671", ", Version Hash: ").concat("08eb80cb496fdaf04949e7afc1ab92365c6be639")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288684", ", Version Hash: ").concat("4ec6567719c5735daab8d8a009976ca5b609d4a7")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55741,6 +55741,7 @@
                 CLAN_USER_PROFILE_PRIMARY_CLAN: "Primary Guild",
                 CLAN_DISCOVERY_SAVED_FILTER: "{count, number} Saved",
                 CLAN_DISCOVERY_CARD_TAG_TOOLTIP: "Become a member to unlock this tag",
+                CLAN_DISCOVERY_MAX_GAMES_SELECTED: "Only a maximum of three games can be selected at a time.",
                 CLAN_DISCOVERY_UPSELL_CTA_GUILD_INVITE: "You’re invited to become a Guild!",
                 CLAN_DISCOVERY_UPSELL_CTA_RECRUIT_VALORANT: "Recruit more Valorant players for your server",
                 CLAN_DISCOVERY_UPSELL_CTA_RECRUIT_GENSHIN: "Recruit more Genshin players for your server",
@@ -87038,8 +87039,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "288671", "288671"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288671")), t = 0), t
+                let t = parseInt((e = "288684", "288684"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288684")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112538,8 +112539,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "288671",
-                    versionHash: "08eb80cb496fdaf04949e7afc1ab92365c6be639"
+                    buildNumber: "288684",
+                    versionHash: "4ec6567719c5735daab8d8a009976ca5b609d4a7"
                 }
             }
             n.r(t), n.d(t, {
@@ -113097,13 +113098,10 @@
                     return a
                 },
                 getClanDiscoveryAffinity: function() {
-                    return u
+                    return l
                 },
                 isLoadedSearchResult: function() {
                     return o
-                },
-                isUnloadedSearchResult: function() {
-                    return l
                 }
             });
             var i = n("116175"),
@@ -113145,11 +113143,7 @@
                 return "loaded" === e.status
             }
 
-            function l(e) {
-                return "unloaded" === e.status
-            }
-
-            function u(e, t) {
+            function l(e, t) {
                 let n = 0;
                 return null != t.games && (n += 2 * t.games.filter(t => e.games.includes(t)).length), null != t.playstyle && (t.playstyle === e.playstyle ? n += 2 : r.PLAYSTYLE_GROUPS[e.playstyle] === r.PLAYSTYLE_GROUPS[t.playstyle] && (n += 1)), null != t.traits && (n += 2 * Array.from(t.traits).filter(t => e.traits.includes(t)).length), n
             }
@@ -131298,32 +131292,33 @@
             }
 
             function x(e, t, n) {
+                var i, s, a;
                 let {
-                    roles: i,
-                    nick: s,
-                    avatar: a,
-                    avatar_decoration_data: o,
-                    flags: l,
-                    premium_since: u,
-                    pending: d,
-                    joined_at: _,
-                    communication_disabled_until: c,
-                    unusual_dm_activity_until: E
-                } = n, I = m.default.getMember(e, t.id);
-                (!(null != I && I.nick === s && I.avatar === a && r().isEqual(I.roles, i) && r().isEqual(I.avatarDecoration, o)) || I.premiumSince !== u || I.isPending !== d || I.joinedAt !== _ || I.communicationDisabledUntil !== c || I.flags !== l || I.unusualDMActivityUntil !== E) && V({
+                    roles: o,
+                    nick: l,
+                    avatar: u,
+                    avatar_decoration_data: d,
+                    flags: _,
+                    premium_since: c,
+                    pending: E,
+                    joined_at: I,
+                    communication_disabled_until: T,
+                    unusual_dm_activity_until: f
+                } = n, S = m.default.getMember(e, t.id);
+                (!(null != S && S.nick === l && S.avatar === u && r().isEqual(S.roles, o)) || (null === (i = S.avatarDecoration) || void 0 === i ? void 0 : i.asset) !== (null == d ? void 0 : d.asset) || (null === (s = S.avatarDecoration) || void 0 === s ? void 0 : s.skuId) !== (null == d ? void 0 : d.sku_id) || S.premiumSince !== c || S.isPending !== E || S.joinedAt !== I || S.communicationDisabledUntil !== T || S.flags !== _ || (null !== (a = S.unusualDMActivityUntil) && void 0 !== a ? a : null) !== (null != f ? f : null)) && V({
                     type: "GUILD_MEMBER_ADD",
                     guildId: e,
                     user: t,
-                    roles: i,
-                    nick: s,
-                    avatar: a,
-                    avatarDecoration: o,
-                    premiumSince: u,
-                    isPending: d,
-                    joinedAt: _,
-                    communicationDisabledUntil: c,
-                    unusualDMActivityUntil: E,
-                    flags: l
+                    roles: o,
+                    nick: l,
+                    avatar: u,
+                    avatarDecoration: d,
+                    premiumSince: c,
+                    isPending: E,
+                    joinedAt: I,
+                    communicationDisabledUntil: T,
+                    unusualDMActivityUntil: f,
+                    flags: _
                 })
             }
 
@@ -167243,8 +167238,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714412778606",
-                                    build_number: "288671"
+                                    built_at: "1714414826511",
+                                    build_number: "288684"
                                 }
                             },
                             retries: 1
@@ -245149,7 +245144,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "08eb80cb496fdaf04949e7afc1ab92365c6be639"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "4ec6567719c5735daab8d8a009976ca5b609d4a7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273659,7 +273654,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "288671"
+                                build_number: "288684"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280876,7 +280871,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "288671", "288671"), 10);
+                let s = parseInt((n = "288684", "288684"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308319,4 +308314,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.3b067cffcc3226f543ff.js.map
+//# sourceMappingURL=35705.087da1b6913bc2350943.js.map
