@@ -36729,7 +36729,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288602", ", Version Hash: ").concat("b25ba9c35b894b496fbed98e951bb88f14d3f658")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288606", ", Version Hash: ").concat("da5fec486f692b0bfbf44c985285b6393cacb198")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55760,8 +55760,11 @@
                 GUILD_POPOUT_ACTIVITY_USERS_2_N: "!!{a}!!, !!{b}!!, and {n, plural, one {{n} other} other {{n} others}}",
                 GUILD_POPOUT_ACTIVITY_USERS_3: "!!{a}!!, !!{b}!!, and !!{c}!!",
                 GUILD_POPOUT_ACTIVITY_USERS_3_N: "!!{a}!!, !!{b}!!, !!{c}!!, and {n, plural, one {{n} other} other {{n} others}}",
-                GUILD_POPOUT_ACTIVITY_USERS_N: "{n, plural, one {1 person} other {{n} people}}",
-                GUILD_POPOUT_ACTIVITY_VOICE: "In voice"
+                GUILD_POPOUT_ACTIVITY_USERS_N: "{n, plural, one {{n} person} other {{n} people}}",
+                GUILD_POPOUT_ACTIVITY_VOICE: "In voice",
+                GUILD_POPOUT_ACTIVITY_HANGOUT_CARD_ARIA: "{users, plural, one {{users} person is} other {{users} people are}} hanging out in !!{channelName}!!",
+                GUILD_POPOUT_ACTIVITY_EMBEDDED_ACTIVITY_CARD_ARIA: "{users, plural, one {{users} person is} other {{users} people are}} playing !!{gameName}!! in !!{channelName}!!",
+                GUILD_POPOUT_ACTIVITY_EVENT_CARD_ARIA: "!!{eventName}!! is happening now"
             })
         },
         539590: function(e) {
@@ -87042,8 +87045,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "288602", "288602"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288602")), t = 0), t
+                let t = parseInt((e = "288606", "288606"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288606")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112532,8 +112535,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "288602",
-                    versionHash: "b25ba9c35b894b496fbed98e951bb88f14d3f658"
+                    buildNumber: "288606",
+                    versionHash: "da5fec486f692b0bfbf44c985285b6393cacb198"
                 }
             }
             n.r(t), n.d(t, {
@@ -151432,25 +151435,44 @@
                     color: d.Button.Colors.PRIMARY,
                     disabled: n,
                     onClick: t,
+                    className: K.joinButton,
                     children: W.default.Messages.JOIN
                 })
             }
 
             function q(e) {
+                var t;
                 let {
-                    embeddedActivity: t,
-                    guildId: n,
-                    isUserLurking: i,
-                    isUnverifiedAccount: r
-                } = e, o = (0, u.useStateFromStores)([g.default], () => g.default.getChannel(t.channelId)), l = (0, u.useStateFromStores)([M.default], () => !M.default.can(Y.Permissions.CONNECT, o)), _ = Array.from(t.userIds), {
-                    usersText: c
-                } = (0, H.useGetActivityUsers)(_, n, t.channelId), I = (0, E.useGetOrFetchApplication)(t.applicationId), f = a.useMemo(() => {
-                    let e = (null == o ? void 0 : o.type) != null ? (0, T.getSimpleChannelIconComponent)(o.type) : null;
+                    embeddedActivity: n,
+                    guildId: i,
+                    isUserLurking: r,
+                    isUnverifiedAccount: o
+                } = e, l = (0, u.useStateFromStores)([g.default], () => g.default.getChannel(n.channelId)), _ = (0, u.useStateFromStores)([M.default], () => !M.default.can(Y.Permissions.CONNECT, l)), c = Array.from(n.userIds), {
+                    totalUsers: f,
+                    usersText: h
+                } = (0, H.useGetActivityUsers)(c, i, n.channelId), A = (0, E.useGetOrFetchApplication)(n.applicationId), {
+                    needSubscriptionToAccess: m
+                } = (0, S.default)(null !== (t = n.channelId) && void 0 !== t ? t : void 0), N = (0, u.useStateFromStores)([U.default], () => U.default.isInChannel(n.channelId)), p = a.useMemo(() => {
+                    let e = (null == l ? void 0 : l.type) != null ? (0, T.getSimpleChannelIconComponent)(l.type) : null;
                     return null != e ? e : V.default
-                }, [o]), S = a.useCallback(() => {
-                    null != t.channelId && (0, R.transitionToGuild)(n, t.channelId)
-                }, [t.channelId, n]);
-                return null == I ? null : (0, s.jsxs)("div", {
+                }, [l]), O = a.useCallback(() => {
+                    (0, R.transitionToGuild)(i, n.channelId)
+                }, [n.channelId, i]), C = a.useCallback(() => {
+                    null != l && (l.type === Y.ChannelTypes.GUILD_VOICE && I.default.handleVoiceConnect({
+                        channel: l,
+                        connected: N,
+                        needSubscriptionToAccess: m,
+                        locked: _
+                    }), (0, R.transitionToGuild)(i, n.channelId))
+                }, [l, n.channelId, i, N, _, m]);
+                return null == A ? null : (0, s.jsxs)(d.ClickableContainer, {
+                    onClick: O,
+                    tag: "div",
+                    "aria-label": W.default.Messages.GUILD_POPOUT_ACTIVITY_EMBEDDED_ACTIVITY_CARD_ARIA.format({
+                        users: f,
+                        gameName: A.name,
+                        channelName: null == l ? void 0 : l.name
+                    }),
                     className: K.activityCardContainer,
                     children: [(0, s.jsxs)("div", {
                         className: K.activityCardImageContainer,
@@ -151466,7 +151488,7 @@
                                 height: 48,
                                 mask: "url(#".concat(x.MaskIDs.GUILD_POPOUT_ACTIVITY_ICON, ")"),
                                 children: (0, s.jsx)(G.default, {
-                                    game: I,
+                                    game: A,
                                     className: K.activityCardImage
                                 })
                             })
@@ -151474,7 +151496,7 @@
                             className: K.mask,
                             children: (0, s.jsx)("div", {
                                 className: K.activityCardActivityIcon,
-                                children: (0, s.jsx)(f, {
+                                children: (0, s.jsx)(p, {
                                     width: 12,
                                     height: 12,
                                     color: "white"
@@ -151482,17 +151504,17 @@
                             })
                         })]
                     }), (0, s.jsx)(X, {
-                        who: c,
-                        what: I.name,
+                        who: h,
+                        what: A.name,
                         where: (0, s.jsx)(d.Text, {
                             variant: "text-xs/normal",
                             color: "text-muted",
                             lineClamp: 1,
-                            children: null == o ? void 0 : o.name
+                            children: null == l ? void 0 : l.name
                         })
                     }), (0, s.jsx)(Q, {
-                        onClick: S,
-                        disabled: l || i || r
+                        onClick: C,
+                        disabled: _ || r || o
                     })]
                 })
             }
@@ -151510,10 +151532,13 @@
                 } = n, c = (0, u.useStateFromStores)([g.default], () => g.default.getChannel(l)), {
                     needSubscriptionToAccess: E
                 } = (0, S.default)(null !== (t = null == c ? void 0 : c.id) && void 0 !== t ? t : void 0), T = (0, u.useStateFromStores)([M.default], () => !M.default.can(Y.Permissions.CONNECT, c)), f = (0, u.useStateFromStores)([U.default], () => U.default.isInChannel(l)), {
-                    usersToShow: h,
-                    othersCount: A,
-                    usersText: m
-                } = (0, H.useGetActivityUsers)(_, i, l), N = a.useCallback(() => {
+                    totalUsers: h,
+                    usersToShow: A,
+                    othersCount: m,
+                    usersText: N
+                } = (0, H.useGetActivityUsers)(_, i, l), p = a.useCallback(() => {
+                    (0, R.transitionToGuild)(i, l)
+                }, [l, i]), O = a.useCallback(() => {
                     null != c && I.default.handleVoiceConnect({
                         channel: c,
                         connected: f,
@@ -151521,7 +151546,13 @@
                         locked: T
                     })
                 }, [c, f, T, E]);
-                return (0, s.jsxs)("div", {
+                return (0, s.jsxs)(d.ClickableContainer, {
+                    onClick: p,
+                    tag: "div",
+                    "aria-label": W.default.Messages.GUILD_POPOUT_ACTIVITY_HANGOUT_CARD_ARIA.format({
+                        users: h,
+                        channelName: null == c ? void 0 : c.name
+                    }),
                     className: K.activityCardContainer,
                     children: [(0, s.jsxs)("div", {
                         className: K.activityCardImageContainer,
@@ -151537,8 +151568,8 @@
                                 height: 48,
                                 mask: "url(#".concat(x.MaskIDs.GUILD_POPOUT_ACTIVITY_ICON, ")"),
                                 children: (0, s.jsx)(z, {
-                                    users: h,
-                                    othersCount: A
+                                    users: A,
+                                    othersCount: m
                                 })
                             })
                         }), (0, s.jsx)("div", {
@@ -151553,7 +151584,7 @@
                             })
                         })]
                     }), (0, s.jsx)(X, {
-                        who: m,
+                        who: N,
                         what: W.default.Messages.GUILD_POPOUT_ACTIVITY_VOICE,
                         where: (0, s.jsx)(d.Text, {
                             variant: "text-xs/normal",
@@ -151562,7 +151593,7 @@
                             children: null == c ? void 0 : c.name
                         })
                     }), (0, s.jsx)(Q, {
-                        onClick: N,
+                        onClick: O,
                         disabled: T || r || o
                     })]
                 })
@@ -151574,11 +151605,20 @@
                     event: n,
                     isUserLurking: i
                 } = e, r = (0, u.useStateFromStores)([g.default], () => g.default.getChannel(n.channel_id)), o = (0, u.useStateFromStores)([P.default], () => P.default.getUser(n.creator_id)), _ = (0, u.useStateFromStores)([D.default], () => null != o ? D.default.getMember(n.guild_id, o.id) : null, [o, n.guild_id]), c = null !== (t = null == _ ? void 0 : _.nick) && void 0 !== t ? t : F.default.getName(o), E = (0, p.getLocationDataForEvent)(n, r), I = null == E ? void 0 : E.IconComponent, T = null == E ? void 0 : E.locationName, f = (0, N.default)(n), S = a.useCallback(() => {
+                    !i && (0, h.openGuildEventDetails)({
+                        eventId: n.id
+                    })
+                }, [n.id, i]), A = a.useCallback(() => {
                     n.entity_type === j.GuildScheduledEventEntityTypes.STAGE_INSTANCE || n.entity_type === j.GuildScheduledEventEntityTypes.VOICE ? (0, R.transitionToGuild)(n.guild_id, n.channel_id) : (0, h.openGuildEventDetails)({
                         eventId: n.id
                     })
                 }, [n]);
-                return (0, s.jsxs)("div", {
+                return (0, s.jsxs)(d.ClickableContainer, {
+                    onClick: S,
+                    tag: "div",
+                    "aria-label": W.default.Messages.GUILD_POPOUT_ACTIVITY_EVENT_CARD_ARIA.format({
+                        eventName: n.name
+                    }),
                     className: K.activityCardContainer,
                     children: [(0, s.jsxs)("div", {
                         className: K.activityCardImageContainer,
@@ -151640,7 +151680,7 @@
                             })]
                         })
                     }), (0, s.jsx)(Q, {
-                        onClick: S,
+                        onClick: A,
                         disabled: i
                     })]
                 })
@@ -151846,6 +151886,7 @@
                         })
                     }(_, E);
                 return {
+                    totalUsers: i.length,
                     usersToShow: s,
                     othersCount: E,
                     usersText: I
@@ -167197,8 +167238,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714403658864",
-                                    build_number: "288602"
+                                    built_at: "1714404057467",
+                                    build_number: "288606"
                                 }
                             },
                             retries: 1
@@ -245097,7 +245138,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b25ba9c35b894b496fbed98e951bb88f14d3f658"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "da5fec486f692b0bfbf44c985285b6393cacb198"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273607,7 +273648,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "288602"
+                                build_number: "288606"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280824,7 +280865,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "288602", "288602"), 10);
+                let s = parseInt((n = "288606", "288606"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308267,4 +308308,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.2a1dd8a141d79e65265b.js.map
+//# sourceMappingURL=35705.69a65cb8e49043ba5160.js.map
