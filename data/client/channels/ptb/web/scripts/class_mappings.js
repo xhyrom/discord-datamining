@@ -6156,11 +6156,14 @@
                 coachtipTextContainer: "coachtipTextContainer_d66684"
             }
         },
-        419949: function(e) {
+        106940: function(e) {
             "use strict";
             e.exports = {
-                container: "container__9d45f",
-                label: "label__08616"
+                badgeContainer: "badgeContainer__678ec",
+                badgeLabel: "badgeLabel_fa3c15",
+                badgesContainer: "badgesContainer_d4777f",
+                badgesContainerCard: "badgesContainerCard__3a532",
+                badgesContainerPopout: "badgesContainerPopout__6f71a"
             }
         },
         571425: function(e) {
@@ -6168,8 +6171,6 @@
             e.exports = {
                 additionalParticipantBadge: "additionalParticipantBadge__23702",
                 additionalParticipantBadgeText: "additionalParticipantBadgeText__1e49a",
-                badgeContainer: "badgeContainer__5607c",
-                badgeRow: "badgeRow__474f5",
                 container: "container__8d997",
                 contentDescription: "contentDescription_e07aa0",
                 facePile: "facePile__28ee7",
@@ -6193,7 +6194,6 @@
             e.exports = {
                 attachment: "attachment_fd624e",
                 attachmentContainer: "attachmentContainer__3e3c4",
-                badgeContainer: "badgeContainer__67878",
                 contentImage: "contentImage__749b6",
                 emoji: "emoji__3bd00",
                 emojiHotrail: "emojiHotrail_cac44d",

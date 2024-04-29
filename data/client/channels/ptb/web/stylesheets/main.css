@@ -18646,39 +18646,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     color: var(--text-secondary)
 }
 
-.badgeRow__474f5 {
-    display: flex;
-    gap: 8px;
-    align-items: center
-}
-
-.badgeContainer__5607c {
-    display: flex;
-    gap: 4px;
-    align-items: center;
-    overflow: hidden;
-    flex-shrink: 0
-}
-
-.badgeContainer__5607c svg {
-    flex-shrink: 0
-}
-
-.badgeContainer__5607c div {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden
-}
-
-.badgeContainer__5607c:last-child {
-    flex-shrink: 1
-}
-
-.container__8d997 .badgeContainer__5607c {
-    margin-top: 2px;
-    margin-bottom: -2px
-}
-
 .facePile__28ee7 {
     display: flex;
     margin-right: 6px
@@ -18699,7 +18666,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     line-height: 10px
 }
 
-.thumbnail__18ece {
+img.thumbnail__18ece {
     width: 48px;
     -o-object-fit: cover;
     object-fit: cover
@@ -54215,17 +54182,52 @@ div.profileThemedContainer__6e645 {
     height: 16px
 }
 
-.container__9d45f {
+.badgeContainer__678ec {
     display: flex;
     gap: 4px;
     align-items: center;
-    overflow-x: hidden
+    overflow: hidden;
+    flex-shrink: 0
 }
 
-.label__08616 {
+.badgeContainer__678ec svg {
+    flex-shrink: 0
+}
+
+.badgeContainer__678ec div {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.badgeLabel_fa3c15 {
     overflow-x: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
+}
+
+.badgesContainer_d4777f {
+    display: flex;
+    gap: 8px;
+    align-items: center
+}
+
+.badgesContainerCard__3a532 {
+    margin-bottom: -2px;
+    margin-top: 2px
+}
+
+.badgesContainerCard__3a532>:nth-child(n+3) {
+    display: none
+}
+
+.badgesContainerCard__3a532>:nth-child(2) {
+    flex-shrink: 1
+}
+
+.badgesContainerPopout__6f71a {
+    flex-wrap: wrap;
+    row-gap: 4px
 }
 
 .coachtip__2693f {
@@ -54328,11 +54330,6 @@ div.profileThemedContainer__6e645 {
     justify-content: space-between;
     gap: 8px;
     min-width: 0
-}
-
-.badgeContainer__67878 {
-    flex-wrap: wrap;
-    row-gap: 4px
 }
 
 .toastContainer__40273 {
@@ -135888,4 +135885,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.55464e7700b2b42c52b8.css.map*/
+/*# sourceMappingURL=99387.7d5247904032c1af3f7c.css.map*/
