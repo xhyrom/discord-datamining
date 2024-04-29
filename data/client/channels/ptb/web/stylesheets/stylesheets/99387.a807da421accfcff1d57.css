@@ -19573,10 +19573,14 @@ div:has(>div>.modal__06f49) {
     align-items: center
 }
 
+.nitroWheelContainer_f37c90 {
+    margin-left: var(--spacing-4);
+    cursor: pointer
+}
+
 .nitroWheel__7ee03 {
     width: 20px;
     height: 20px;
-    margin-left: var(--spacing-4);
     color: var(--text-normal)
 }
 
@@ -135834,4 +135838,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.a4dce14cc5c80972e3b8.css.map*/
+/*# sourceMappingURL=99387.a807da421accfcff1d57.css.map*/

@@ -20332,6 +20332,7 @@
                 header: "header__10a82",
                 newBadge: "newBadge__242e8",
                 nitroWheel: "nitroWheel__7ee03",
+                nitroWheelContainer: "nitroWheelContainer_f37c90",
                 option: "option__13442",
                 optionPlaying: "optionPlaying__05ded",
                 optionRedesign: "optionRedesign__328b0",
