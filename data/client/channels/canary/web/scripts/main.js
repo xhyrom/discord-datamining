@@ -36734,7 +36734,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288883", ", Version Hash: ").concat("276aa4d7b7f9700bff8472ac4dca8ed941ae9fa0")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288887", ", Version Hash: ").concat("e5b2b869d1771d20213d60c63ecc868d239fc632")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87057,8 +87057,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "288883", "288883"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288883")), t = 0), t
+                let t = parseInt((e = "288887", "288887"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288887")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -101601,7 +101601,7 @@
                 G = new Set([...P, ...U, ...b]),
                 w = new Set(S.default.getAvailableLocales().map(e => e.value)),
                 B = new Set(["anime", "fanart", "venting", "movie nights", "gacha games", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pictures", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "desk setups", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1"]);
-            (c = a || (a = {}))[c.PIXEL_RUSH = 0] = "PIXEL_RUSH", c[c.SCANLINES = 1] = "SCANLINES", c[c.TEXTURED = 2] = "TEXTURED", c[c.MAGIC = 3] = "MAGIC", c[c.CUSTOM = 4] = "CUSTOM", (E = o || (o = {})).BOULDER = "boulder", E.CASCADE = "cascade", E.THUNDER = "thunder", E.SOUL = "soul", E.MARSH = "marsh", E.VOLCANO = "volcano", E.EARTH = "earth", E.ZEPHYR = "zephyr";
+            (c = a || (a = {}))[c.NIGHT_SKY = 0] = "NIGHT_SKY", c[c.CASTLE = 1] = "CASTLE", c[c.WORLD_MAP = 2] = "WORLD_MAP", c[c.SEA_FOAM = 3] = "SEA_FOAM", c[c.WARP_TUNNEL = 4] = "WARP_TUNNEL", c[c.HOUSE = 5] = "HOUSE", c[c.HEIGHTMAP = 6] = "HEIGHTMAP", c[c.MESH = 7] = "MESH", c[c.SPATTER = 8] = "SPATTER", (E = o || (o = {})).BOULDER = "boulder", E.CASCADE = "cascade", E.THUNDER = "thunder", E.SOUL = "soul", E.MARSH = "marsh", E.VOLCANO = "volcano", E.EARTH = "earth", E.ZEPHYR = "zephyr";
             let k = [{
                     name: "boulder",
                     primary: "#8c8d8d",
@@ -112127,8 +112127,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "288883",
-                    versionHash: "276aa4d7b7f9700bff8472ac4dca8ed941ae9fa0"
+                    buildNumber: "288887",
+                    versionHash: "e5b2b869d1771d20213d60c63ecc868d239fc632"
                 }
             }
             n.r(t), n.d(t, {
@@ -113034,41 +113034,42 @@
                 var t, n;
                 let {
                     clan: r,
-                    expanded: s,
-                    affinity: l,
-                    isMember: d,
-                    traitsToHighlight: E,
-                    className: I
+                    banner: s,
+                    expanded: l,
+                    affinity: d,
+                    isMember: E,
+                    traitsToHighlight: I,
+                    className: T
                 } = e, {
-                    tag: T,
-                    badge: S,
+                    tag: S,
+                    badge: O,
                     branding: {
-                        primaryColor: O,
-                        secondaryColor: R
+                        primaryColor: R,
+                        secondaryColor: C
                     }
-                } = r, C = (0, u.default)(r.games), g = A.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
+                } = r, g = (0, u.default)(r.games), L = A.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
                     count: r.memberCount
-                }), L = null !== (t = f.default.getGuildIconURL({
+                }), D = null !== (t = f.default.getGuildIconURL({
                     id: r.id,
                     icon: r.icon,
                     size: 64,
                     canAnimate: !0
                 })) && void 0 !== t ? t : void 0;
                 return (0, i.jsxs)("div", {
-                    className: a()(m.card, I),
-                    children: [(0, i.jsx)("div", {
+                    className: a()(m.card, T),
+                    children: [(0, i.jsxs)("div", {
                         className: m.cardBrandingHeader,
                         style: {
-                            background: "linear-gradient(90deg, ".concat(O, ", ").concat(R, ")")
+                            background: "linear-gradient(90deg, ".concat(R, ", ").concat(C, ")")
                         },
-                        children: (0, i.jsx)(c.ClanBadge, {
+                        children: [s, (0, i.jsx)(c.ClanBadge, {
                             width: 32,
                             height: 32,
                             className: m.clanBadge,
-                            badge: S.badgeKind,
-                            primaryTintColor: S.primaryColor,
-                            secondaryTintColor: S.secondaryColor
-                        })
+                            badge: O.badgeKind,
+                            primaryTintColor: O.primaryColor,
+                            secondaryTintColor: O.secondaryColor
+                        })]
                     }), (0, i.jsxs)("div", {
                         className: m.cardContent,
                         children: [(0, i.jsxs)("div", {
@@ -113077,7 +113078,7 @@
                                 className: m.cardNameAndTagWrapper,
                                 children: [(0, i.jsx)(_.ClanGuildIconSimple, {
                                     guildName: r.name,
-                                    guildIconURL: L,
+                                    guildIconURL: D,
                                     iconSize: 64,
                                     className: m.clanIcon
                                 }), (0, i.jsx)("div", {
@@ -113085,20 +113086,20 @@
                                     children: (0, i.jsx)(o.Tooltip, {
                                         text: A.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
                                         position: "top",
-                                        shouldShow: !d,
+                                        shouldShow: !E,
                                         children: e => (0, i.jsxs)("div", {
                                             ...e,
                                             className: m.clanTagChiplet,
                                             children: [(0, i.jsx)(c.ClanBadge, {
                                                 width: 16,
                                                 height: 16,
-                                                badge: S.badgeKind,
-                                                primaryTintColor: S.primaryColor,
-                                                secondaryTintColor: S.secondaryColor
+                                                badge: O.badgeKind,
+                                                primaryTintColor: O.primaryColor,
+                                                secondaryTintColor: O.secondaryColor
                                             }), (0, i.jsx)(o.Text, {
                                                 variant: "text-xs/medium",
                                                 color: "text-primary",
-                                                children: T
+                                                children: S
                                             })]
                                         })
                                     })
@@ -113135,9 +113136,9 @@
                                 children: r.description
                             })
                         }), (0, i.jsx)(p, {
-                            traits: (0, h.getSortedTraits)(r.traits, E),
-                            expanded: s,
-                            traitsToHighlight: E
+                            traits: (0, h.getSortedTraits)(r.traits, I),
+                            expanded: l,
+                            traitsToHighlight: I
                         })]
                     }), (0, i.jsxs)("div", {
                         className: m.cardFooter,
@@ -113148,12 +113149,12 @@
                                 children: (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: g
+                                    children: L
                                 })
                             })
                         }), (0, i.jsx)("div", {
                             className: m.cardFooterGames,
-                            children: C.map(e => {
+                            children: g.map(e => {
                                 if (null == e) return null;
                                 let t = e.getIconURL(24);
                                 return null == t ? null : (0, i.jsx)(o.Tooltip, {
@@ -113171,17 +113172,17 @@
                                 }, e.id)
                             })
                         })]
-                    }), null != l ? (0, i.jsxs)("div", {
+                    }), null != d ? (0, i.jsxs)("div", {
                         className: m.cardBrandingFooter,
                         style: {
-                            background: "linear-gradient(90deg, ".concat(O, ", ").concat(R, ")")
+                            background: "linear-gradient(90deg, ".concat(R, ", ").concat(C, ")")
                         },
                         children: [(0, i.jsx)(o.Text, {
                             variant: "text-xxs/normal",
-                            children: l
+                            children: d
                         }), (0, i.jsx)(o.Text, {
                             variant: "text-xxs/normal",
-                            children: d ? ", Joined" : ", Not Joined"
+                            children: E ? ", Joined" : ", Not Joined"
                         })]
                     }) : null]
                 })
@@ -166829,8 +166830,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714430954906",
-                                    build_number: "288883"
+                                    built_at: "1714431353167",
+                                    build_number: "288887"
                                 }
                             },
                             retries: 1
@@ -244774,7 +244775,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "276aa4d7b7f9700bff8472ac4dca8ed941ae9fa0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e5b2b869d1771d20213d60c63ecc868d239fc632"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273284,7 +273285,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "288883"
+                                build_number: "288887"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280501,7 +280502,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "288883", "288883"), 10);
+                let s = parseInt((n = "288887", "288887"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -307886,4 +307887,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.0d32b82073e35efcc3c1.js.map
+//# sourceMappingURL=35705.09d415c7f873c91c8621.js.map
