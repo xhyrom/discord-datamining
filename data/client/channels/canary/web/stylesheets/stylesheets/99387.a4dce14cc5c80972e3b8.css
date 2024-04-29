@@ -42419,6 +42419,39 @@ html .progress__00e29 {
     margin-left: 16px
 }
 
+.embed__26f68 {
+    margin-top: 8px
+}
+
+.container_e8183e {
+    display: grid;
+    grid-template: "emoji title       button" auto"emoji description button" auto/max-content 1fr max-content;
+    padding: 8px;
+    padding-right: 16px;
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    max-width: 376px
+}
+
+.emoji__496e3 {
+    grid-area: emoji;
+    align-self: center;
+    margin-right: 8px
+}
+
+.title_eb3605 {
+    grid-area: title
+}
+
+.description_c2c202 {
+    grid-area: description
+}
+
+.button__2268e {
+    grid-area: button;
+    align-self: center
+}
+
 .ticketIcon_c730df {
     width: 1rem;
     height: 1rem;
@@ -77118,7 +77151,7 @@ img.thumbnail__18ece {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 16px;
     gap: 4px
 }
 
@@ -135801,4 +135834,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.0bc7bb9293c4bfacb92a.css.map*/
+/*# sourceMappingURL=99387.a4dce14cc5c80972e3b8.css.map*/
