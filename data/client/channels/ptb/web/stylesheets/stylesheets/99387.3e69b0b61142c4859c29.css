@@ -117760,7 +117760,8 @@ html .invoiceCancelRow__6ff3e {
     --custom-backdrop-z-index: 1000;
     --custom-card-z-index: 1001;
     --custom-confetti-canvas-z-index: 1002;
-    --custom-close-button-z-index: 1004
+    --custom-close-button-z-index: 1004;
+    --custom-lightning-checkout-z-index: 1003
 }
 
 .shopCard__9e3fe {
@@ -118051,6 +118052,12 @@ html .invoiceCancelRow__6ff3e {
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none
+}
+
+.lightningCheckout__9ef9b {
+    border-radius: 16px;
+    z-index: 1003;
+    z-index: var(--custom-lightning-checkout-z-index)
 }
 
 .lightningCheckout__9ef9b .shopCard__9e3fe {
@@ -135846,4 +135853,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.4ea3978f7d0f2448eb61.css.map*/
+/*# sourceMappingURL=99387.3e69b0b61142c4859c29.css.map*/
