@@ -36729,7 +36729,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288785", ", Version Hash: ").concat("1203fa487894ac5281e072d9ada314212634f071")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288809", ", Version Hash: ").concat("b8f501ec9e8e8deea4d6376282252e5f7cc17e09")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87044,8 +87044,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "288785", "288785"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288785")), t = 0), t
+                let t = parseInt((e = "288809", "288809"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288809")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -101578,12 +101578,12 @@
             }(d = r || (r = {}))[d.INTRO_ANIMATION = 0] = "INTRO_ANIMATION", d[d.SETUP = 1] = "SETUP", d[d.SIGN = 2] = "SIGN", (_ = s || (s = {}))[_.FOUNDATIONAL_INTRO = 0] = "FOUNDATIONAL_INTRO", _[_.GAMES = 1] = "GAMES", _[_.PLAYSTYLE = 2] = "PLAYSTYLE", _[_.PERSONALITY_INTRO = 3] = "PERSONALITY_INTRO", _[_.UTILITY_TRAITS = 4] = "UTILITY_TRAITS", _[_.INTERESTS = 5] = "INTERESTS", _[_.DESCRIPTION = 6] = "DESCRIPTION", _[_.IDENTITY_INTRO = 7] = "IDENTITY_INTRO", _[_.CUSTOMIZE_TAG_BADGE = 8] = "CUSTOMIZE_TAG_BADGE", _[_.CUSTOMIZE_BANNER = 9] = "CUSTOMIZE_BANNER", _[_.APPLICATION_INTRO = 10] = "APPLICATION_INTRO", _[_.MEMBER_APPLICATION = 11] = "MEMBER_APPLICATION";
             let M = "700136079562375258",
                 y = "762434991303950386",
-                P = ["Unrated", "Spike Rush", "Death Match", "Swift", "TDM", "Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF"],
+                P = ["Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF", "Unrated", "All Ranks", "Bronze+", "Silver+", "Gold+", "Platinum+", "Diamond+"],
                 U = ["20+", "30+", "40+", "All Ages"],
-                b = ["LGBTQIA-Friendly", "All genders"],
+                b = ["Beginner Friendly", "PUGs", "LGBTQIA+", "Parent Friendly", "Work-life Balance", "Streamers"],
                 G = new Set([...P, ...U, ...b]),
                 w = new Set(S.default.getAvailableLocales().map(e => e.value)),
-                B = new Set(["Anime", "Arts and Crafts", "Architecture", "Baseball", "Basketball", "Beauty", "Beer", "Board Games", "Books", "Cars", "Celebrities", "Coffee", "Coding", "Craft", "Design", "F1", "Fashion", "Fitness", "Food", "Football", "Healthcare", "Home Decor", "Houseplants", "K-Pop", "Knitting", "LEGO", "MARVEL", "Motorcycles", "Movies", "Music", "Nail Art", "Pets", "Photography", "Pok\xe9mon", "Programming", "Roman History", "Science", "Skiing", "Soccer", "Star Wars", "TCG", "TEA", "Tech", "Travel", "TV Shows", "Wine"]);
+                B = new Set(["anime", "fanart", "venting", "movie nights", "gacha games", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pictures", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "desk setups", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1"]);
             (c = a || (a = {}))[c.PIXEL_RUSH = 0] = "PIXEL_RUSH", c[c.SCANLINES = 1] = "SCANLINES", c[c.TEXTURED = 2] = "TEXTURED", c[c.MAGIC = 3] = "MAGIC", c[c.CUSTOM = 4] = "CUSTOM", (E = o || (o = {})).BOULDER = "boulder", E.CASCADE = "cascade", E.THUNDER = "thunder", E.SOUL = "soul", E.MARSH = "marsh", E.VOLCANO = "volcano", E.EARTH = "earth", E.ZEPHYR = "zephyr";
             let k = [{
                     name: "boulder",
@@ -112110,8 +112110,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "288785",
-                    versionHash: "1203fa487894ac5281e072d9ada314212634f071"
+                    buildNumber: "288809",
+                    versionHash: "b8f501ec9e8e8deea4d6376282252e5f7cc17e09"
                 }
             }
             n.r(t), n.d(t, {
@@ -166812,8 +166812,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714422781792",
-                                    build_number: "288785"
+                                    built_at: "1714424253511",
+                                    build_number: "288809"
                                 }
                             },
                             retries: 1
@@ -244685,7 +244685,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "1203fa487894ac5281e072d9ada314212634f071"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "b8f501ec9e8e8deea4d6376282252e5f7cc17e09"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273195,7 +273195,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "288785"
+                                build_number: "288809"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280412,7 +280412,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "288785", "288785"), 10);
+                let s = parseInt((n = "288809", "288809"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -307797,4 +307797,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.b062dbe4245d469c8fb3.js.map
+//# sourceMappingURL=35705.34e0adc0fa9a028f3cbc.js.map
