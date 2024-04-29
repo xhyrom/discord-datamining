@@ -7029,34 +7029,6 @@
                 saveContainer: "saveContainer__0ae21"
             }
         },
-        625360: function(e) {
-            "use strict";
-            e.exports = {
-                checkmark: "checkmark__4cc30",
-                clickable: "clickable_ef7cee",
-                gameHeader: "gameHeader_ab2b55",
-                games: "games__32d4d",
-                gamesInput: "gamesInput_eaad9a",
-                languagesIcon: "languagesIcon__8ea0f",
-                languagesSelect: "languagesSelect__75c5a",
-                languagesTitle: "languagesTitle_ddbda6",
-                playstyleHeader: "playstyleHeader__72e62",
-                playstyleOption: "playstyleOption__36be3",
-                playstyles: "playstyles__34055",
-                playtimeHeader: "playtimeHeader__843e5",
-                playtimes: "playtimes__348d3",
-                plusIcon: "plusIcon__4ca2d",
-                recentGames: "recentGames__6b0bd",
-                removeIcon: "removeIcon__09c1b",
-                selectedGames: "selectedGames_afc855",
-                selectedPlaystyle: "selectedPlaystyle_c3bf30",
-                selectedSection: "selectedSection__37688",
-                timeSelectorRow: "timeSelectorRow_ad7888",
-                traitCategory: "traitCategory__4fca5",
-                traitHeader: "traitHeader__11d3b",
-                traits: "traits_dff7ca"
-            }
-        },
         157552: function(e) {
             "use strict";
             e.exports = {
@@ -7263,6 +7235,7 @@
         18712: function(e) {
             "use strict";
             e.exports = {
+                buttonWithSelect: "buttonWithSelect_eaaa35",
                 cardsContainer: "cardsContainer__59327",
                 clanCard: "clanCard_ea2802",
                 clanCardCenter: "clanCardCenter__00094",
@@ -7278,11 +7251,14 @@
                 clanEnvelope: "clanEnvelope__0b99c",
                 clanEnvelopeBottom: "clanEnvelopeBottom_e5cdee",
                 clanEnvelopeTop: "clanEnvelopeTop_bf09a8",
+                upsellButton: "upsellButton__6cfb7",
                 upsellCtaContainer: "upsellCtaContainer__5221e",
                 upsellDetail: "upsellDetail__401db",
                 upsellDetailText: "upsellDetailText__886b7",
                 upsellDetails: "upsellDetails_dbe31a",
                 upsellIcon: "upsellIcon__05e46",
+                upsellSelect: "upsellSelect_e29580",
+                upsellSelectWrapper: "upsellSelectWrapper__63bb4",
                 upsellTitle: "upsellTitle__75ee7"
             }
         },
