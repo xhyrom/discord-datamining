@@ -36729,7 +36729,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288591", ", Version Hash: ").concat("8cab72b7574813131a89cb1109d71892924f766b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("288602", ", Version Hash: ").concat("b25ba9c35b894b496fbed98e951bb88f14d3f658")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87042,8 +87042,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "288591", "288591"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288591")), t = 0), t
+                let t = parseInt((e = "288602", "288602"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("288602")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -106578,7 +106578,7 @@
                 CodedLinkType: function() {
                     return i
                 }
-            }), (r = i || (i = {})).INVITE = "INVITE", r.TEMPLATE = "TEMPLATE", r.BUILD_OVERRIDE = "BUILD_OVERRIDE", r.MANUAL_BUILD_OVERRIDE = "MANUAL_BUILD_OVERRIDE", r.EVENT = "EVENT", r.CHANNEL_LINK = "CHANNEL_LINK", r.APP_DIRECTORY_PROFILE = "APP_DIRECTORY_PROFILE", r.ACTIVITY_BOOKMARK = "ACTIVITY_BOOKMARK", r.EMBEDDED_ACTIVITY_INVITE = "EMBEDDED_ACTIVITY_INVITE", r.GUILD_PRODUCT = "GUILD_PRODUCT", r.SERVER_SHOP = "SERVER_SHOP", r.CLYDE_PROFILE = "CLYDE_PROFILE", r.QUESTS_EMBED = "QUESTS_EMBED"
+            }), (r = i || (i = {})).INVITE = "INVITE", r.TEMPLATE = "TEMPLATE", r.BUILD_OVERRIDE = "BUILD_OVERRIDE", r.MANUAL_BUILD_OVERRIDE = "MANUAL_BUILD_OVERRIDE", r.EVENT = "EVENT", r.CHANNEL_LINK = "CHANNEL_LINK", r.APP_DIRECTORY_PROFILE = "APP_DIRECTORY_PROFILE", r.ACTIVITY_BOOKMARK = "ACTIVITY_BOOKMARK", r.EMBEDDED_ACTIVITY_INVITE = "EMBEDDED_ACTIVITY_INVITE", r.GUILD_PRODUCT = "GUILD_PRODUCT", r.SERVER_SHOP = "SERVER_SHOP", r.QUESTS_EMBED = "QUESTS_EMBED"
         },
         891274: function(e, t, n) {
             "use strict";
@@ -106612,7 +106612,6 @@
                     else if (t === o.CodedLinkType.EMBEDDED_ACTIVITY_INVITE);
                     else if (t === o.CodedLinkType.GUILD_PRODUCT);
                     else if (t === o.CodedLinkType.SERVER_SHOP);
-                    else if (t === o.CodedLinkType.CLYDE_PROFILE);
                     else if (t === o.CodedLinkType.QUESTS_EMBED);
                     else throw Error("Unknown coded link type: ".concat(t))
                 })
@@ -106697,22 +106696,22 @@
             "use strict";
             n.r(t), n.d(t, {
                 DEVLINK_REGEX: function() {
-                    return g
+                    return C
                 },
                 default: function() {
-                    return x
+                    return V
                 },
                 findCodedLink: function() {
-                    return Y
-                },
-                parseQuestsEmbedCode: function() {
-                    return F
-                },
-                parseURLSafely: function() {
                     return H
                 },
+                parseQuestsEmbedCode: function() {
+                    return x
+                },
+                parseURLSafely: function() {
+                    return F
+                },
                 remainingPathFromDiscordHostMatch: function() {
-                    return k
+                    return B
                 }
             }), n("757143"), n("47120"), n("653041");
             var i, r, s, a, o, l, u = n("729594");
@@ -106732,20 +106731,19 @@
                 N = /^\/activities\/([0-9-]+)\/?$/,
                 p = /^\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
                 O = /^\/channels\/([0-9]+)\/shop$/,
-                R = /^\/clyde-profiles\/([0-9-]+)\/?$/,
-                C = /^\/quests\/([0-9-]+)\/?$/,
-                g = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
-                L = w(window.GLOBAL_ENV.INVITE_HOST),
-                D = w(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
-                v = w(null !== (i = window.GLOBAL_ENV.WEBAPP_ENDPOINT) && void 0 !== i ? i : "//canary.".concat(T.PRIMARY_DOMAIN)),
-                M = w("//canary.".concat(T.PRIMARY_DOMAIN)),
-                y = w("//ptb.".concat(T.PRIMARY_DOMAIN)),
-                P = w("discordapp.com"),
-                U = w("discord.com"),
-                b = [c.default.escape(null !== (r = L.host) && void 0 !== r ? r : ""), c.default.escape(null !== (s = D.host) && void 0 !== s ? s : ""), c.default.escape(null !== (a = v.host) && void 0 !== a ? a : ""), c.default.escape(null !== (o = P.host) && void 0 !== o ? o : ""), c.default.escape(null !== (l = U.host) && void 0 !== l ? l : "")].filter(Boolean),
-                G = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(b.join("|"), ")"), "g");
+                R = /^\/quests\/([0-9-]+)\/?$/,
+                C = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
+                g = G(window.GLOBAL_ENV.INVITE_HOST),
+                L = G(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
+                D = G(null !== (i = window.GLOBAL_ENV.WEBAPP_ENDPOINT) && void 0 !== i ? i : "//canary.".concat(T.PRIMARY_DOMAIN)),
+                v = G("//canary.".concat(T.PRIMARY_DOMAIN)),
+                M = G("//ptb.".concat(T.PRIMARY_DOMAIN)),
+                y = G("discordapp.com"),
+                P = G("discord.com"),
+                U = [c.default.escape(null !== (r = g.host) && void 0 !== r ? r : ""), c.default.escape(null !== (s = L.host) && void 0 !== s ? s : ""), c.default.escape(null !== (a = D.host) && void 0 !== a ? a : ""), c.default.escape(null !== (o = y.host) && void 0 !== o ? o : ""), c.default.escape(null !== (l = P.host) && void 0 !== l ? l : "")].filter(Boolean),
+                b = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(U.join("|"), ")"), "g");
 
-            function w(e) {
+            function G(e) {
                 if (null == e) return {
                     host: null,
                     pathPrefix: null
@@ -106763,7 +106761,7 @@
                 }
             }
 
-            function B(e, t) {
+            function w(e, t) {
                 var n, i, r;
                 if ((null === (n = t.host) || void 0 === n ? void 0 : n.replace(/^www[.]/i, "")) !== e.host) return null;
                 let s = null !== (i = t.pathname) && void 0 !== i ? i : "",
@@ -106773,23 +106771,23 @@
                 return "" === o ? null : o
             }
 
-            function k(e) {
+            function B(e) {
                 var t, n, i, r;
-                return null !== (r = null !== (i = null !== (n = null !== (t = B(v, e)) && void 0 !== t ? t : B(M, e)) && void 0 !== n ? n : B(y, e)) && void 0 !== i ? i : B(P, e)) && void 0 !== r ? r : B(U, e)
+                return null !== (r = null !== (i = null !== (n = null !== (t = w(D, e)) && void 0 !== t ? t : w(v, e)) && void 0 !== n ? n : w(M, e)) && void 0 !== i ? i : w(y, e)) && void 0 !== r ? r : w(P, e)
             }
 
-            function V(e) {
+            function k(e) {
                 var t, n, i, r;
-                let s = H(e);
+                let s = F(e);
                 if (null == s || null == s.pathname) return {
                     url: null,
                     inviteHostRemainingPath: null,
                     templateHostRemainingPath: null,
                     primaryHostRemainingPath: null
                 };
-                let a = B(L, s),
-                    o = B(D, s),
-                    l = null !== (r = null !== (i = null !== (n = null !== (t = B(v, s)) && void 0 !== t ? t : B(M, s)) && void 0 !== n ? n : B(y, s)) && void 0 !== i ? i : B(P, s)) && void 0 !== r ? r : B(U, s);
+                let a = w(g, s),
+                    o = w(L, s),
+                    l = null !== (r = null !== (i = null !== (n = null !== (t = w(D, s)) && void 0 !== t ? t : w(v, s)) && void 0 !== n ? n : w(M, s)) && void 0 !== i ? i : w(y, s)) && void 0 !== r ? r : w(P, s);
                 return {
                     url: s,
                     inviteHostRemainingPath: a,
@@ -106798,12 +106796,12 @@
                 }
             }
 
-            function x(e) {
+            function V(e) {
                 if (null == e) return [];
                 let t = new Set,
                     n = [],
-                    i = (e = e.replace(G, (e, t, n, i) => null == n ? "".concat(t, "http://").concat(i) : e)).match(E.default.URL_REGEX),
-                    r = e.match(g);
+                    i = (e = e.replace(b, (e, t, n, i) => null == n ? "".concat(t, "http://").concat(i) : e)).match(E.default.URL_REGEX),
+                    r = e.match(C);
                 if (null == (i = (null != i ? i : []).concat(null != r ? r : [])) || 0 === i.length) return [];
                 for (let e of i) {
                     if (n.length >= 10) break;
@@ -106812,7 +106810,7 @@
                         inviteHostRemainingPath: r,
                         templateHostRemainingPath: s,
                         primaryHostRemainingPath: a
-                    } = V(e);
+                    } = k(e);
                     if (null == i || null == i.pathname) continue;
                     let o = (e, i) => {
                         !t.has(i) && (t.add(i), n.push({
@@ -106847,34 +106845,29 @@
                         let e = c[1];
                         o(I.CodedLinkType.APP_DIRECTORY_PROFILE, e)
                     }
-                    let E = null == a ? void 0 : a.match(R);
+                    let E = null == a ? void 0 : a.match(N);
                     if (null != E) {
                         let e = E[1];
-                        o(I.CodedLinkType.CLYDE_PROFILE, e)
-                    }
-                    let T = null == a ? void 0 : a.match(N);
-                    if (null != T) {
-                        let e = T[1];
                         o(I.CodedLinkType.ACTIVITY_BOOKMARK, e)
                     }
-                    let C = null == a ? void 0 : a.match(p);
-                    null != C && o(I.CodedLinkType.GUILD_PRODUCT, "".concat(C[1], "-").concat(C[2]));
-                    let g = null == a ? void 0 : a.match(O);
-                    null != g && o(I.CodedLinkType.SERVER_SHOP, g[1]);
-                    let L = F(e);
-                    null != L && o(I.CodedLinkType.QUESTS_EMBED, L)
+                    let T = null == a ? void 0 : a.match(p);
+                    null != T && o(I.CodedLinkType.GUILD_PRODUCT, "".concat(T[1], "-").concat(T[2]));
+                    let R = null == a ? void 0 : a.match(O);
+                    null != R && o(I.CodedLinkType.SERVER_SHOP, R[1]);
+                    let C = x(e);
+                    null != C && o(I.CodedLinkType.QUESTS_EMBED, C)
                 }
                 return n
             }
 
-            function F(e) {
+            function x(e) {
                 var t, n;
-                let i = V(e),
-                    r = null == i ? void 0 : null === (t = i.primaryHostRemainingPath) || void 0 === t ? void 0 : t.match(C);
+                let i = k(e),
+                    r = null == i ? void 0 : null === (t = i.primaryHostRemainingPath) || void 0 === t ? void 0 : t.match(R);
                 return null !== (n = null == r ? void 0 : r[1]) && void 0 !== n ? n : null
             }
 
-            function H(e) {
+            function F(e) {
                 try {
                     return (0, u.parse)(e)
                 } catch (e) {
@@ -106882,8 +106875,8 @@
                 }
             }
 
-            function Y(e) {
-                return x(e)[0]
+            function H(e) {
+                return V(e)[0]
             }
         },
         625128: function(e, t, n) {
@@ -112539,8 +112532,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "288591",
-                    versionHash: "8cab72b7574813131a89cb1109d71892924f766b"
+                    buildNumber: "288602",
+                    versionHash: "b25ba9c35b894b496fbed98e951bb88f14d3f658"
                 }
             }
             n.r(t), n.d(t, {
@@ -167204,8 +167197,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714394432579",
-                                    build_number: "288591"
+                                    built_at: "1714403658864",
+                                    build_number: "288602"
                                 }
                             },
                             retries: 1
@@ -245104,7 +245097,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8cab72b7574813131a89cb1109d71892924f766b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "b25ba9c35b894b496fbed98e951bb88f14d3f658"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273614,7 +273607,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "288591"
+                                build_number: "288602"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280831,7 +280824,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "288591", "288591"), 10);
+                let s = parseInt((n = "288602", "288602"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308274,4 +308267,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.018e6ca95f7f7f101009.js.map
+//# sourceMappingURL=35705.2a1dd8a141d79e65265b.js.map
