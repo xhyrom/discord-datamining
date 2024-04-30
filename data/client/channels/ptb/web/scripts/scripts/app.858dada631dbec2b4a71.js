@@ -15114,6 +15114,7 @@
             "use strict";
             e.exports = {
                 acronym: "acronym__02df1",
+                basicChannelRowLink: "basicChannelRowLink__3b042",
                 channelGuildIcon: "channelGuildIcon__17b87",
                 children: "children__563f2",
                 favoritesSuggestion: "favoritesSuggestion__5ecd4",
@@ -15257,7 +15258,6 @@
         988918: function(e) {
             "use strict";
             e.exports = {
-                channelLabel: "channelLabel__86693",
                 closeButton: "closeButton__5a65e",
                 gifSection: "gifSection__63d19",
                 money: "money_daa704",
@@ -15908,15 +15908,6 @@
                 formHeaderContainer: "formHeaderContainer__4b8b7",
                 formImage: "formImage_c9a4f6",
                 formSubHeader: "formSubHeader_c747ee"
-            }
-        },
-        79391: function(e) {
-            "use strict";
-            e.exports = {
-                avatar: "avatar__30fd0",
-                icon: "icon_ec85ca",
-                itemInner: "itemInner__2abad",
-                optionItem: "optionItem__7394f"
             }
         },
         387024: function(e) {
