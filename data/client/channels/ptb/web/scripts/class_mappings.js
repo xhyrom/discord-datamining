@@ -7251,6 +7251,7 @@
                 buttonWithSelect: "buttonWithSelect_eaaa35",
                 cardsContainer: "cardsContainer__59327",
                 clanCard: "clanCard_ea2802",
+                clanCardCenter: "clanCardCenter__00094",
                 clanCardCenterContainer: "clanCardCenterContainer__3c574",
                 clanCardInner: "clanCardInner_d227d8 clanCard_ea2802",
                 clanCardInnerContainer: "clanCardInnerContainer_ce1024",
@@ -25310,6 +25311,14 @@
                 compactButtonInner: "compactButtonInner_cc8cc8"
             }
         },
+        236219: function(e) {
+            "use strict";
+            e.exports = {
+                button: "button__6d63b",
+                buttonInner: "buttonInner_e7cd38",
+                color: "color__67b07"
+            }
+        },
         142354: function(e) {
             "use strict";
             e.exports = {
@@ -25713,10 +25722,8 @@
         705444: function(e) {
             "use strict";
             e.exports = {
-                addButton: "addButton_e81447",
-                addButtonIcon: "addButtonIcon_a40605",
+                addRoleButton: "addRoleButton__3dbb8",
                 container: "container_badb01",
-                hiddenTooltip: "hiddenTooltip__4ec90",
                 overflowButton: "overflowButton_dcc4c2 pill__54982",
                 pill: "pill__54982",
                 role: "role_a3571c pill__54982",

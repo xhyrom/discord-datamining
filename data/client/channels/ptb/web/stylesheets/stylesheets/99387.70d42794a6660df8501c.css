@@ -18853,19 +18853,34 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     --channel-text-area-placeholder: var(--text-muted)
 }
 
+.button__6d63b {
+    width: 20px;
+    height: 20px
+}
+
+.buttonInner_e7cd38 {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%
+}
+
+.color__67b07 {
+    color: var(--interactive-normal)
+}
+
+.color__67b07:hover {
+    color: var(--interactive-hover)
+}
+
+.color__67b07:active {
+    color: var(--interactive-active)
+}
+
 .container_badb01 {
     display: flex;
     flex-direction: column;
     gap: 8px
-}
-
-.container_badb01 .hiddenTooltip__4ec90 {
-    visibility: hidden
-}
-
-.container_badb01:hover .hiddenTooltip__4ec90,
-.container_badb01:focus-within .hiddenTooltip__4ec90 {
-    visibility: visible
 }
 
 .root__076be {
@@ -18909,19 +18924,14 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     align-items: center
 }
 
-.addButton_e81447 {
-    color: var(--interactive-normal);
-    background: none;
-    border: none;
-    width: 20px;
-    height: 20px;
-    margin: 0;
-    padding: 0
+.addRoleButton__3dbb8 {
+    opacity: 0;
+    transition: opacity var(--custom-button-transition-duration)ease
 }
 
-.addButtonIcon_a40605 {
-    width: 100%;
-    height: 100%
+.container_badb01:hover .addRoleButton__3dbb8,
+.container_badb01:focus-within .addRoleButton__3dbb8 {
+    opacity: 1
 }
 
 .container_f63223 {
@@ -18939,7 +18949,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .noteIcon_d4555f {
     opacity: 0;
-    transition: opacity.6s ease
+    transition: opacity var(--custom-button-transition-duration)ease
 }
 
 .noteIcon_d4555f.visible__24dad,
@@ -56637,16 +56647,17 @@ img.thumbnail__18ece {
 @value baseClanCardHeight 400px;
 @value envelopeWidth calc(242px + 2px);
 @value envelopeCardHeight 344px;
-@value clanScale 0.8666;
+@value centerClanScale 0.8666;
+@value innerClanScale 0.75;
+@value outerClanScale 0.6666;
 
 .clanEnvelope__0b99c {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 244px;
-    height: 400px;
-    overflow: hidden
+    height: 400px
 }
 
 .clanEnvelopeTop_bf09a8 {
@@ -56671,6 +56682,7 @@ img.thumbnail__18ece {
     justify-content: center;
     padding-top: 80px;
     height: 344px;
+    width: 100%;
     z-index: 5
 }
 
@@ -56678,16 +56690,22 @@ img.thumbnail__18ece {
     overflow: hidden;
     position: absolute;
     z-index: 30;
-    bottom: 26.68px;
+    height: 400px;
+    bottom: 53.36px
+}
+
+.clanCardCenter__00094 {
+    position: relative;
     transform: scale(.8666);
     box-shadow: var(--shadow-high);
     height: 397px;
-    margin-bottom: 1px
+    margin-bottom: 1px;
+    top: 26.68px
 }
 
 .clanCardInnerContainer_ce1024 {
-    position: absolute;
-    width: 209.7172px;
+    position: relative;
+    width: 181.5px;
     z-index: 20
 }
 
@@ -56697,27 +56715,37 @@ img.thumbnail__18ece {
 }
 
 .clanCardInner_d227d8 {
-    top: -6.68px
+    top: -30px
 }
 
-.clanCardInnerLeft__611c8,
+.clanCardInnerLeft__611c8 {
+    transform: rotate(-2deg)scale(.75);
+    left: 0
+}
+
 .clanCardInnerRight__3caa2 {
-    transform: scale(.8666)
+    transform: rotate(2deg)scale(.75);
+    right: 0
 }
 
 .clanCardOuterContainer__338bc {
-    position: absolute;
-    width: 209.7172px;
+    position: relative;
+    width: 161.3172px;
     z-index: 15
 }
 
 .clanCardOuter__8f0b1 {
-    top: 18.32px
+    top: -21.68px
 }
 
-.clanCardOuterLeft__86cf6,
+.clanCardOuterLeft__86cf6 {
+    transform: rotate(-8deg)scale(.6666);
+    left: 16px
+}
+
 .clanCardOuterRight__761b5 {
-    transform: scale(.8666)
+    transform: rotate(8deg)scale(.6666);
+    right: 16px
 }
 
 .upsellCtaContainer__5221e {
@@ -135823,4 +135851,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.15d77a6a8b8acc66dcea.css.map*/
+/*# sourceMappingURL=99387.70d42794a6660df8501c.css.map*/
