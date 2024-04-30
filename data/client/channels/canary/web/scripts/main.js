@@ -36821,7 +36821,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289353", ", Version Hash: ").concat("dbcbb72ecae0ef791f5fa01b3b881a53a0eb3b22")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289367", ", Version Hash: ").concat("242a6ac772e7bb78ad0c2d234af41510df004ef6")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55183,7 +55183,9 @@
                 QUESTS_ACCEPT_QUEST: "Accept Quest",
                 QUESTS_INSTRUCTIONS_TO_WIN_REWARD: "Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win {questReward}.",
                 QUESTS_PLAY_INSTRUCTIONS_TO_WIN_REWARD: "Play {gameTitle} for {streamingDurationRequirement, number} minutes with your Discord client open and win {questReward}.",
+                QUESTS_INSTRUCTIONS_TO_WIN_REWARD_V2: "Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win **{questReward}**.",
                 QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED: "Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win in-game rewards.",
+                QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED_V2: "Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win **in-game rewards**.",
                 QUESTS_ACCEPTED_INSTRUCTIONS_TO_WIN_REWARD: "**Quest accepted!** Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win {questReward}.",
                 QUESTS_ACCEPTED_INSTRUCTIONS_TO_WIN_REWARD_TIERED: "**Quest accepted!** Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win in-game rewards.",
                 QUESTS_TRACK_YOUR_PROGRESS: "Track Your Progress",
@@ -55236,6 +55238,7 @@
                 QUESTS_REWARD_AVATAR_DECORATION_HEADER: "Congratulations!",
                 QUESTS_REWARD_AVATAR_DECORATION_BODY: "{decorationName} is now yours FOR-EV-ERRRR! You can use it anytime on your profile page.",
                 QUESTS_VIEW_COLLECTIBLE: "View Deco",
+                QUEST_AVAILABLE: "Quest Available",
                 FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE: "Prompt members to chat after this channel has been inactive for a while.",
                 PROMPT_CAMERA_LOADING_TITLE: "What are you looking at?",
                 PROMPT_CAMERA_ERROR: "There was an issue taking a photo, try again",
@@ -87173,8 +87176,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289353", "289353"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289353")), t = 0), t
+                let t = parseInt((e = "289367", "289367"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289367")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -113695,8 +113698,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289353",
-                    versionHash: "dbcbb72ecae0ef791f5fa01b3b881a53a0eb3b22"
+                    buildNumber: "289367",
+                    versionHash: "242a6ac772e7bb78ad0c2d234af41510df004ef6"
                 }
             }
             n.r(t), n.d(t, {
@@ -168930,8 +168933,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714515484663",
-                                    build_number: "289353"
+                                    built_at: "1714516400863",
+                                    build_number: "289367"
                                 }
                             },
                             retries: 1
@@ -187521,12 +187524,20 @@
 
             function K(e) {
                 let {
-                    quest: t
+                    quest: t,
+                    useV2Variants: n = !1
                 } = e;
                 return j({
                     quest: t
-                }) ? _.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED.format({
+                }) ? n ? _.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED_V2.format({
                     gameTitle: t.config.messages.gameTitle,
+                    streamingDurationRequirement: t.config.streamDurationRequirementMinutes
+                }) : _.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED.format({
+                    gameTitle: t.config.messages.gameTitle,
+                    streamingDurationRequirement: t.config.streamDurationRequirementMinutes
+                }) : n ? _.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_V2.format({
+                    gameTitle: t.config.messages.gameTitle,
+                    questReward: t.config.messages.rewardNameWithArticle,
                     streamingDurationRequirement: t.config.streamDurationRequirementMinutes
                 }) : _.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD.format({
                     gameTitle: t.config.messages.gameTitle,
@@ -247049,7 +247060,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "dbcbb72ecae0ef791f5fa01b3b881a53a0eb3b22"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "242a6ac772e7bb78ad0c2d234af41510df004ef6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -275577,7 +275588,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289353"
+                                build_number: "289367"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282794,7 +282805,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289353", "289353"), 10);
+                let s = parseInt((n = "289367", "289367"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -310179,4 +310190,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.7116a51015c14c585df4.js.map
+//# sourceMappingURL=35705.1d2678c16645e037e43e.js.map
