@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-04_marketing_page_non_sub_perk_tile_order",
+    "label": "Changes the order of the non-subscriber perk tiles",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: Default",
+      "Treatment 1: Variant 1",
+      "Treatment 2: Variant 2"
+    ],
+    "hash": 3078306920,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
