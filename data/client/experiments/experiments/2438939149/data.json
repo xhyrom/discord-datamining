@@ -2,12 +2,12 @@
   "data": {
     "kind": "user",
     "id": "2024-04_server_peek",
-    "label": "Change the guild badge and tooltip",
+    "label": "Change the guild tooltip",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: With the current guild badges and new tooltip",
-      "Treatment 2: With the new guild badge and new tooltip"
+      "Treatment 1: With the new tooltip and without the activity empty state",
+      "Treatment 2: With the new tooltip and activity empty state"
     ],
     "hash": 2438939149,
     "buckets": [
