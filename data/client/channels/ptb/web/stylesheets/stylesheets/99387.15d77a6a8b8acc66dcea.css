@@ -54982,6 +54982,26 @@ img.thumbnail__18ece {
     flex: 1 1 800px
 }
 
+.slideContentWithSidebar__251be {
+    max-width: none
+}
+
+.content_c05082 {
+    display: flex;
+    flex-direction: row;
+    gap: 64px
+}
+
+.mainPanelContainer__54930 {
+    flex: 1;
+    display: flex;
+    flex-direction: column
+}
+
+.fixedWidthSidebar__39d7a {
+    flex: 0 0 262px
+}
+
 .stepNum_b5f2f3,
 .introTitle__6a50e {
     margin-bottom: 24px
@@ -55028,15 +55048,6 @@ img.thumbnail__18ece {
 
 .clickableGame__38602:active {
     transform: translatey(2px)scale(.98)
-}
-
-.selectedInterest_aa523d {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    border: 1px solid var(--border-strong);
-    padding: 4px 12px;
-    border-radius: 16px
 }
 
 .interestsCategoryTitle__18aeb {
@@ -55242,6 +55253,26 @@ img.thumbnail__18ece {
 
 .wildcardInput_c66fdf {
     text-align: center
+}
+
+.traitsContainer__01c4b {
+    padding: 16px 12px;
+    -o-border-image: linear-gradient(180deg, rgba(255, 255, 255, 0)0%, rgba(255, 255, 255, .16)100%)1;
+    border-image: linear-gradient(180deg, rgba(255, 255, 255, 0)0%, rgba(255, 255, 255, .16)100%)1;
+    border-width: 1px;
+    border-style: solid
+}
+
+.tagsCount_f1c2de {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px
+}
+
+.tags_ec9b5d {
+    fill: var(--text-muted)
 }
 
 .toolbar__2fcb0 {
@@ -55757,15 +55788,6 @@ img.thumbnail__18ece {
     border: medium none currentColor;
     border: initial;
     padding: 0
-}
-
-.content__4e550 {
-    max-width: none
-}
-
-.container__0d48f {
-    display: flex;
-    gap: 64px
 }
 
 .colorsContainer__2dee9 {
@@ -135801,4 +135823,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c4e42aa2a8678810fd8e.css.map*/
+/*# sourceMappingURL=99387.15d77a6a8b8acc66dcea.css.map*/

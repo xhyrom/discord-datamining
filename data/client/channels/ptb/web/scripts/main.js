@@ -36737,7 +36737,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289077", ", Version Hash: ").concat("f0395b6d3f7daeb0038eb638a766530d051698e0")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289091", ", Version Hash: ").concat("23474e7110602008bf14daa05ef40363189e6e8e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55661,6 +55661,7 @@
                 CLAN_OVERVIEW_LIST_TWO_ITEMS: "!!{item1}!! and !!{item2}!!",
                 CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS: "!!{items}!!, and !!{last}!!",
                 CLAN_OVERVIEW_LIST_OTHERS_COUNT: "{n, plural, one {1 other} other {{n} others}}",
+                CLAN_SETUP_NUM_TRAITS: "{n, plural, one {1 Trait} other {{n} Traits}}",
                 CLAN_SUBMIT_ERROR: "Something went wrong! Please fix any errors and try again.",
                 CLAN_SUCCESS_TITLE: "is now a Gaming Guild!",
                 CLAN_SUCCESS_SUBTITLE: "Before you join the fun, you can choose to represent your guild tag next to your username whenever you chat.",
@@ -87068,8 +87069,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289077", "289077"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289077")), t = 0), t
+                let t = parseInt((e = "289091", "289091"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289091")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112197,8 +112198,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289077",
-                    versionHash: "f0395b6d3f7daeb0038eb638a766530d051698e0"
+                    buildNumber: "289091",
+                    versionHash: "23474e7110602008bf14daa05ef40363189e6e8e"
                 }
             }
             n.r(t), n.d(t, {
@@ -112987,10 +112988,13 @@
         231467: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                ClanDiscoveryCardView: function() {
+                ClanDiscoveryCardTraits: function() {
                     return O
+                },
+                ClanDiscoveryCardView: function() {
+                    return R
                 }
-            });
+            }), n("47120");
             var i = n("735250"),
                 r = n("470079"),
                 s = n("120356"),
@@ -113044,35 +113048,39 @@
 
             function p(e) {
                 let {
+                    trait: t,
+                    isHighlighted: n
+                } = e;
+                return (0, i.jsx)("div", {
+                    className: a()(m.trait, {
+                        [m.highlightedTrait]: n
+                    }),
+                    children: (0, i.jsx)(o.Text, {
+                        variant: "text-xs/normal",
+                        color: "text-normal",
+                        lineClamp: 1,
+                        children: t
+                    })
+                })
+            }
+
+            function O(e) {
+                let {
                     traits: t,
                     traitsToHighlight: n,
-                    expanded: r
-                } = e;
-                return r ? (0, i.jsx)("div", {
+                    expanded: s
+                } = e, a = r.useMemo(() => new Set(n), [n]);
+                return s ? (0, i.jsx)("div", {
                     className: m.expandedTraitsContainer,
-                    children: t.map(e => (0, i.jsx)("div", {
-                        className: a()(m.trait, {
-                            [m.highlightedTrait]: (null != n ? n : []).includes(e)
-                        }),
-                        children: (0, i.jsx)(o.Text, {
-                            variant: "text-xs/normal",
-                            color: "text-normal",
-                            lineClamp: 1,
-                            children: e
-                        })
+                    children: t.map(e => (0, i.jsx)(p, {
+                        trait: e,
+                        isHighlighted: a.has(e)
                     }, e))
                 }) : (0, i.jsx)(S.default, {
                     items: t,
-                    renderItem: e => (0, i.jsx)("div", {
-                        className: a()(m.trait, {
-                            [m.highlightedTrait]: (null != n ? n : []).includes(e)
-                        }),
-                        children: (0, i.jsx)(o.Text, {
-                            variant: "text-xs/normal",
-                            color: "text-normal",
-                            lineClamp: 1,
-                            children: e
-                        })
+                    renderItem: e => (0, i.jsx)(p, {
+                        trait: e,
+                        isHighlighted: a.has(e)
                     }, e),
                     renderOverflow: e => (0, i.jsx)(o.Tooltip, {
                         text: (0, i.jsx)("div", {
@@ -113100,7 +113108,7 @@
                 })
             }
 
-            function O(e) {
+            function R(e) {
                 var t, n;
                 let {
                     clan: r,
@@ -113112,7 +113120,7 @@
                     className: T
                 } = e, {
                     tag: S,
-                    badge: O,
+                    badge: p,
                     branding: {
                         primaryColor: R,
                         secondaryColor: C
@@ -113136,9 +113144,9 @@
                             width: 32,
                             height: 32,
                             className: m.clanBadge,
-                            badge: O.badgeKind,
-                            primaryTintColor: O.primaryColor,
-                            secondaryTintColor: O.secondaryColor
+                            badge: p.badgeKind,
+                            primaryTintColor: p.primaryColor,
+                            secondaryTintColor: p.secondaryColor
                         })]
                     }), (0, i.jsxs)("div", {
                         className: m.cardContent,
@@ -113163,9 +113171,9 @@
                                             children: [(0, i.jsx)(c.ClanBadge, {
                                                 width: 16,
                                                 height: 16,
-                                                badge: O.badgeKind,
-                                                primaryTintColor: O.primaryColor,
-                                                secondaryTintColor: O.secondaryColor
+                                                badge: p.badgeKind,
+                                                primaryTintColor: p.primaryColor,
+                                                secondaryTintColor: p.secondaryColor
                                             }), (0, i.jsx)(o.Text, {
                                                 variant: "text-xs/medium",
                                                 color: "text-primary",
@@ -113205,7 +113213,7 @@
                                 color: "text-muted",
                                 children: r.description
                             })
-                        }), (0, i.jsx)(p, {
+                        }), (0, i.jsx)(O, {
                             traits: (0, h.getSortedTraits)(r.traits, I),
                             expanded: l,
                             traitsToHighlight: I
@@ -113277,7 +113285,7 @@
                 return (0, i.jsx)(o.Clickable, {
                     onClick: u,
                     className: m.clickableCard,
-                    children: (0, i.jsx)(O, {
+                    children: (0, i.jsx)(R, {
                         ...e,
                         isMember: a
                     })
@@ -167058,8 +167066,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714495125494",
-                                    build_number: "289077"
+                                    built_at: "1714496488810",
+                                    build_number: "289091"
                                 }
                             },
                             retries: 1
@@ -245102,7 +245110,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "f0395b6d3f7daeb0038eb638a766530d051698e0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "23474e7110602008bf14daa05ef40363189e6e8e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273621,7 +273629,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289077"
+                                build_number: "289091"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280838,7 +280846,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289077", "289077"), 10);
+                let s = parseInt((n = "289091", "289091"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308223,4 +308231,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.41cfeaa05da984f3765e.js.map
+//# sourceMappingURL=35705.93894b23937b828843d4.js.map
