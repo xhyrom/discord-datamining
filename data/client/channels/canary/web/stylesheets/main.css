@@ -54982,6 +54982,26 @@ img.thumbnail__18ece {
     flex: 1 1 800px
 }
 
+.slideContentWithSidebar__251be {
+    max-width: none
+}
+
+.content_c05082 {
+    display: flex;
+    flex-direction: row;
+    gap: 64px
+}
+
+.mainPanelContainer__54930 {
+    flex: 1;
+    display: flex;
+    flex-direction: column
+}
+
+.fixedWidthSidebar__39d7a {
+    flex: 0 0 262px
+}
+
 .stepNum_b5f2f3,
 .introTitle__6a50e {
     margin-bottom: 24px
@@ -55028,15 +55048,6 @@ img.thumbnail__18ece {
 
 .clickableGame__38602:active {
     transform: translatey(2px)scale(.98)
-}
-
-.selectedInterest_aa523d {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    border: 1px solid var(--border-strong);
-    padding: 4px 12px;
-    border-radius: 16px
 }
 
 .interestsCategoryTitle__18aeb {
@@ -55242,6 +55253,26 @@ img.thumbnail__18ece {
 
 .wildcardInput_c66fdf {
     text-align: center
+}
+
+.traitsContainer__01c4b {
+    padding: 16px 12px;
+    -o-border-image: linear-gradient(180deg, rgba(255, 255, 255, 0)0%, rgba(255, 255, 255, .16)100%)1;
+    border-image: linear-gradient(180deg, rgba(255, 255, 255, 0)0%, rgba(255, 255, 255, .16)100%)1;
+    border-width: 1px;
+    border-style: solid
+}
+
+.tagsCount_f1c2de {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px
+}
+
+.tags_ec9b5d {
+    fill: var(--text-muted)
 }
 
 .toolbar__2fcb0 {
@@ -55757,15 +55788,6 @@ img.thumbnail__18ece {
     border: medium none currentColor;
     border: initial;
     padding: 0
-}
-
-.content__4e550 {
-    max-width: none
-}
-
-.container__0d48f {
-    display: flex;
-    gap: 64px
 }
 
 .colorsContainer__2dee9 {
@@ -56615,16 +56637,17 @@ img.thumbnail__18ece {
 @value baseClanCardHeight 400px;
 @value envelopeWidth calc(242px + 2px);
 @value envelopeCardHeight 344px;
-@value clanScale 0.8666;
+@value centerClanScale 0.8666;
+@value innerClanScale 0.75;
+@value outerClanScale 0.6666;
 
 .clanEnvelope__0b99c {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 244px;
-    height: 400px;
-    overflow: hidden
+    height: 400px
 }
 
 .clanEnvelopeTop_bf09a8 {
@@ -56649,6 +56672,7 @@ img.thumbnail__18ece {
     justify-content: center;
     padding-top: 80px;
     height: 344px;
+    width: 100%;
     z-index: 5
 }
 
@@ -56656,16 +56680,22 @@ img.thumbnail__18ece {
     overflow: hidden;
     position: absolute;
     z-index: 30;
-    bottom: 26.68px;
+    height: 400px;
+    bottom: 53.36px
+}
+
+.clanCardCenter__00094 {
+    position: relative;
     transform: scale(.8666);
     box-shadow: var(--shadow-high);
     height: 397px;
-    margin-bottom: 1px
+    margin-bottom: 1px;
+    top: 26.68px
 }
 
 .clanCardInnerContainer_ce1024 {
-    position: absolute;
-    width: 209.7172px;
+    position: relative;
+    width: 181.5px;
     z-index: 20
 }
 
@@ -56675,27 +56705,37 @@ img.thumbnail__18ece {
 }
 
 .clanCardInner_d227d8 {
-    top: -6.68px
+    top: -30px
 }
 
-.clanCardInnerLeft__611c8,
+.clanCardInnerLeft__611c8 {
+    transform: rotate(-2deg)scale(.75);
+    left: 0
+}
+
 .clanCardInnerRight__3caa2 {
-    transform: scale(.8666)
+    transform: rotate(2deg)scale(.75);
+    right: 0
 }
 
 .clanCardOuterContainer__338bc {
-    position: absolute;
-    width: 209.7172px;
+    position: relative;
+    width: 161.3172px;
     z-index: 15
 }
 
 .clanCardOuter__8f0b1 {
-    top: 18.32px
+    top: -21.68px
 }
 
-.clanCardOuterLeft__86cf6,
+.clanCardOuterLeft__86cf6 {
+    transform: rotate(-8deg)scale(.6666);
+    left: 16px
+}
+
 .clanCardOuterRight__761b5 {
-    transform: scale(.8666)
+    transform: rotate(8deg)scale(.6666);
+    right: 16px
 }
 
 .upsellCtaContainer__5221e {
@@ -58977,8 +59017,8 @@ img.thumbnail__18ece {
 }
 
 .name__4eb92 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -135801,4 +135841,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c4e42aa2a8678810fd8e.css.map*/
+/*# sourceMappingURL=99387.37576471a8f20d923896.css.map*/

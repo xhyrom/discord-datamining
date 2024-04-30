@@ -5088,8 +5088,6 @@
                 colorPickerContainer: "colorPickerContainer__9b7d0",
                 colorPickerGrid: "colorPickerGrid_ba6389",
                 colorsContainer: "colorsContainer__2dee9",
-                container: "container__0d48f",
-                content: "content__4e550",
                 noWrap: "noWrap__133e4"
             }
         },
@@ -5171,6 +5169,14 @@
                 tagInputWrapper: "tagInputWrapper__7b1bc"
             }
         },
+        599666: function(e) {
+            "use strict";
+            e.exports = {
+                tags: "tags_ec9b5d",
+                tagsCount: "tagsCount_f1c2de",
+                traitsContainer: "traitsContainer__01c4b"
+            }
+        },
         418571: function(e) {
             "use strict";
             e.exports = {
@@ -5178,11 +5184,13 @@
                 checkmark: "checkmark_c7b206",
                 clickable: "clickable_a588cd",
                 clickableGame: "clickableGame__38602",
+                content: "content_c05082",
                 contentLabel: "contentLabel_aa05d5",
                 contentWithMinHeight: "contentWithMinHeight__78ad4",
                 divider: "divider_b5fb95",
                 enterToSearchText: "enterToSearchText_c64e49",
                 errorText: "errorText__34a8a",
+                fixedWidthSidebar: "fixedWidthSidebar__39d7a",
                 flex: "flex__7aeec",
                 icon: "icon_e8e1b2",
                 iconSmall: "iconSmall_cd3113",
@@ -5193,16 +5201,17 @@
                 interestsTag: "interestsTag__64479",
                 introTitle: "introTitle__6a50e",
                 languageSelect: "languageSelect__46f09",
+                mainPanelContainer: "mainPanelContainer__54930",
                 optionalTag: "optionalTag__36ca8",
                 playstyleOption: "playstyleOption__67567",
                 playstyleSelect: "playstyleSelect_b7d88b",
                 playstyleTitle: "playstyleTitle__00d17",
                 plusIcon: "plusIcon__22efe",
                 selected: "selected__2779c",
-                selectedInterest: "selectedInterest_aa523d",
                 selectedPlaystyle: "selectedPlaystyle_e4490f",
                 selectedSection: "selectedSection__5c175",
                 slideContent: "slideContent__6ae94",
+                slideContentWithSidebar: "slideContentWithSidebar__251be slideContent__6ae94",
                 stepNum: "stepNum_b5f2f3",
                 subtitle: "subtitle__62596",
                 timeSelection: "timeSelection_cf3393",
