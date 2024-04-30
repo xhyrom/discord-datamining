@@ -36821,7 +36821,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289152", ", Version Hash: ").concat("756c93823aa698bd4b65f976ee86f436944243a4")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289179", ", Version Hash: ").concat("67f9feb3bc94c5298ea6adc82ef8657efbc14b31")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -45617,7 +45617,7 @@
                 BILLING_PAYMENT_TABLE_HEADER_DESCRIPTION: "Description",
                 BILLING_PAYMENT_TABLE_HEADER_AMOUNT: "Amount",
                 BILLING_PURCHASE_DETAILS_HEADER: "Purchase Details",
-                BILLING_DOWNLOAD_INVOICE_VAT: "Download VAT Invoice",
+                BILLING_DOWNLOAD_INVOICE_VAT: "Download Tax Invoice",
                 BILLING_DOWNLOAD_REFUND_INVOICE: "Download VAT Credit Note",
                 BILLING_DOWNLOAD_INVOICE: "Download extended purchase receipt",
                 BILLING_DOWNLOAD_INVOICE_ADDRESS_OVERRIDE_TOGGLE: "Override Billing Address (Optional)",
@@ -66149,10 +66149,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return X
+                    return Q
                 },
                 getActiveAnalyticsSessionIDs: function() {
-                    return z
+                    return X
                 }
             }), n("653041"), n("47120");
             var i = n("512722"),
@@ -66382,14 +66382,24 @@
             }
 
             function z(e) {
+                if (e.state !== b.RTCConnectionStates.DISCONNECTED) return;
+                let t = e.channelId,
+                    n = R.default.getSelfEmbeddedActivityForChannel(t);
+                null != n && (0, O.stopEmbeddedActivity)({
+                    channelId: t,
+                    applicationId: n.applicationId
+                })
+            }
+
+            function X(e) {
                 return B[e]
             }
-            class X extends u.default {
+            class Q extends u.default {
                 _initialize() {
-                    h.default.addChangeListener(this.handleSelectedChannelUpdate), o.default.subscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), o.default.subscribe("EMBEDDED_ACTIVITY_OPEN", x), o.default.subscribe("EMBEDDED_ACTIVITY_CLOSE", F), o.default.subscribe("EMBEDDED_ACTIVITY_UPDATE", H), o.default.subscribe("EMBEDDED_ACTIVITY_UPDATE_V2", Y), o.default.subscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), o.default.subscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), o.default.subscribe("MEDIA_SESSION_JOINED", W), o.default.subscribe("CALL_DELETE", K)
+                    h.default.addChangeListener(this.handleSelectedChannelUpdate), o.default.subscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), o.default.subscribe("EMBEDDED_ACTIVITY_OPEN", x), o.default.subscribe("EMBEDDED_ACTIVITY_CLOSE", F), o.default.subscribe("EMBEDDED_ACTIVITY_UPDATE", H), o.default.subscribe("EMBEDDED_ACTIVITY_UPDATE_V2", Y), o.default.subscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), o.default.subscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), o.default.subscribe("MEDIA_SESSION_JOINED", W), o.default.subscribe("CALL_DELETE", K), o.default.subscribe("RTC_CONNECTION_STATE", z)
                 }
                 _terminate() {
-                    h.default.removeChangeListener(this.handleSelectedChannelUpdate), o.default.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), o.default.unsubscribe("EMBEDDED_ACTIVITY_OPEN", x), o.default.unsubscribe("EMBEDDED_ACTIVITY_CLOSE", F), o.default.unsubscribe("EMBEDDED_ACTIVITY_UPDATE", H), o.default.unsubscribe("EMBEDDED_ACTIVITY_UPDATE_V2", Y), o.default.unsubscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), o.default.unsubscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), o.default.unsubscribe("MEDIA_SESSION_JOINED", W), o.default.unsubscribe("CALL_DELETE", K)
+                    h.default.removeChangeListener(this.handleSelectedChannelUpdate), o.default.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), o.default.unsubscribe("EMBEDDED_ACTIVITY_OPEN", x), o.default.unsubscribe("EMBEDDED_ACTIVITY_CLOSE", F), o.default.unsubscribe("EMBEDDED_ACTIVITY_UPDATE", H), o.default.unsubscribe("EMBEDDED_ACTIVITY_UPDATE_V2", Y), o.default.unsubscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), o.default.unsubscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), o.default.unsubscribe("MEDIA_SESSION_JOINED", W), o.default.unsubscribe("CALL_DELETE", K), o.default.unsubscribe("RTC_CONNECTION_STATE", z)
                 }
                 constructor(...e) {
                     super(...e), w(this, "handleSelectedChannelUpdate", () => {
@@ -87156,8 +87166,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289152", "289152"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289152")), t = 0), t
+                let t = parseInt((e = "289179", "289179"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289179")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112285,8 +112295,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289152",
-                    versionHash: "756c93823aa698bd4b65f976ee86f436944243a4"
+                    buildNumber: "289179",
+                    versionHash: "67f9feb3bc94c5298ea6adc82ef8657efbc14b31"
                 }
             }
             n.r(t), n.d(t, {
@@ -117397,13 +117407,13 @@
                         allowAnimatedEmoji: o,
                         "aria-label": l,
                         isLocked: d
-                    } = e, I = (() => {
+                    } = e, f = (() => {
                         if (!t.useSpriteSheet) {
                             var e;
                             let r = null == t.id ? t.url : E.default.getEmojiURL({
                                 id: t.id,
                                 animated: o && t.animated,
-                                size: 48
+                                size: I.EMOJI_URL_BASE_SIZE
                             });
                             return null != r ? (0, i.jsx)(_.default, {
                                 className: T.lockedEmoji,
@@ -117424,7 +117434,7 @@
                         })
                     })();
                     return (0, i.jsxs)(r.Fragment, {
-                        children: [I, d ? (0, i.jsx)("div", {
+                        children: [f, d ? (0, i.jsx)("div", {
                             className: T.emojiLockIconContainer,
                             children: (0, i.jsx)(c.default, {
                                 width: 16,
@@ -167619,8 +167629,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714500530083",
-                                    build_number: "289152"
+                                    built_at: "1714502277343",
+                                    build_number: "289179"
                                 }
                             },
                             retries: 1
@@ -245695,7 +245705,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "756c93823aa698bd4b65f976ee86f436944243a4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "67f9feb3bc94c5298ea6adc82ef8657efbc14b31"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -274214,7 +274224,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289152"
+                                build_number: "289179"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -281431,7 +281441,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289152", "289152"), 10);
+                let s = parseInt((n = "289179", "289179"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308816,4 +308826,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.3b36233ad2ac60d88b2b.js.map
+//# sourceMappingURL=35705.b7003cb6b83a787fa8a4.js.map
