@@ -36821,7 +36821,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289313", ", Version Hash: ").concat("ffa9053c5e6b613c5b0342b50df8e1ad0d3369db")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289320", ", Version Hash: ").concat("b20fa7ca8e8dcb9782e746f9557d1b3d95fc5acd")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87173,8 +87173,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289313", "289313"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289313")), t = 0), t
+                let t = parseInt((e = "289320", "289320"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289320")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -113695,8 +113695,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289313",
-                    versionHash: "ffa9053c5e6b613c5b0342b50df8e1ad0d3369db"
+                    buildNumber: "289320",
+                    versionHash: "b20fa7ca8e8dcb9782e746f9557d1b3d95fc5acd"
                 }
             }
             n.r(t), n.d(t, {
@@ -168930,8 +168930,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714512429409",
-                                    build_number: "289313"
+                                    built_at: "1714513051447",
+                                    build_number: "289320"
                                 }
                             },
                             retries: 1
@@ -209290,89 +209290,101 @@
             "use strict";
             n.r(t), n.d(t, {
                 UserProfileCustomStatusBubble: function() {
-                    return _
+                    return E
                 }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("120356"),
-                s = n.n(r),
-                a = n("481060"),
-                o = n("596454"),
-                l = n("788307"),
-                u = n("228168"),
-                d = n("336428");
+            }), n("47120");
+            var i = n("735250"),
+                r = n("470079"),
+                s = n("120356"),
+                a = n.n(s),
+                o = n("481060"),
+                l = n("596454"),
+                u = n("788307"),
+                d = n("393903"),
+                _ = n("228168"),
+                c = n("336428");
 
-            function _(e) {
+            function E(e) {
                 let {
                     statusActivity: t,
                     profileType: n,
-                    animate: r = !0,
-                    hideTooltip: _ = !1
-                } = e, {
-                    emoji: c
-                } = t, E = null != c, I = null != t.state && "" !== t.state ? t.state : null, T = null != I && I.length > 0;
-                if (!E && !T) return null;
-                let f = T ? Math.floor(I.length / 34) + 1 : 1,
-                    S = () => E ? !T || T && 1 === f ? (0, i.jsx)(l.ActivityEmoji, {
-                        className: d.singleLineStatusEmoji,
-                        emoji: c,
-                        animate: r,
-                        hideTooltip: _
-                    }) : (0, i.jsx)(o.default, {
-                        className: d.multiLineStatusEmoji,
-                        emojiId: c.id,
-                        emojiName: c.name,
-                        animated: !!c.animated
+                    animate: s = !0,
+                    hideTooltip: E = !1
+                } = e, [I, T] = r.useState(1), f = r.useCallback(e => {
+                    var t;
+                    if (null == e) return;
+                    let n = e.getBoundingClientRect(),
+                        i = parseFloat(null !== (t = window.getComputedStyle(e).getPropertyValue("line-height")) && void 0 !== t ? t : "0");
+                    T(Math.floor(n.height / i))
+                }, []), S = (0, d.useResizeObserver)(f), {
+                    emoji: h
+                } = t, A = null != h, m = null != t.state && "" !== t.state ? t.state : null, N = null != m && m.length > 0;
+                if (!A && !N) return null;
+                let p = () => A ? N ? (0, i.jsx)(l.default, {
+                        className: c.statusEmojiInline,
+                        emojiId: h.id,
+                        emojiName: h.name,
+                        animated: !!h.animated
+                    }) : (0, i.jsx)(u.ActivityEmoji, {
+                        className: c.statusEmojiOnly,
+                        emoji: h,
+                        animate: s,
+                        hideTooltip: E
                     }) : null,
-                    h = () => T ? (0, i.jsx)(a.Text, {
+                    O = () => N ? (0, i.jsx)(o.Text, {
                         variant: "text-sm/medium",
-                        className: d.statusText,
-                        children: I
+                        className: c.statusText,
+                        children: m
                     }) : null,
-                    A = s()(d.positionStyle, {
-                        [d.biteSize]: n === u.UserProfileTypes.BITE_SIZE,
-                        [d.fullSize]: n === u.UserProfileTypes.FULL_SIZE
+                    R = a()(c.positionStyle, {
+                        [c.biteSize]: n === _.UserProfileTypes.BITE_SIZE,
+                        [c.fullSize]: n === _.UserProfileTypes.FULL_SIZE
                     }),
-                    m = s()(d.statusBubbleOuter, {
-                        [d.statusBubbleSingleLineWithEmojiShape]: 1 === f && E,
-                        [d.statusBubbleSingleLineTextOnlyShape]: 1 === f && !E,
-                        [d.statusBubbleMultiLineShape]: f > 1,
-                        [d.statusBubbleOuterMaxLine]: f >= 3
+                    C = a()(c.statusBubbleOuter, {
+                        [c.statusBubbleSingleLineEmojiOnlyShape]: 1 === I && !N,
+                        [c.statusBubbleSingleLineWithTextShape]: 1 === I && N,
+                        [c.statusBubbleMultiLineShape]: I > 1,
+                        [c.statusBubbleOuterMaxLine]: I >= 3
                     }),
-                    N = s()(d.statusBubble, {
-                        [d.statusBubbleSingleLineWithEmojiShape]: 1 === f && E,
-                        [d.statusBubbleSingleLineTextOnlyShape]: 1 === f && !E,
-                        [d.statusBubbleMultiLineShape]: f > 1,
-                        [d.statusBubbleSingleLineWithEmoji]: 1 === f && E,
-                        [d.statusBubbleSingleLineTextOnly]: 1 === f && !E,
-                        [d.statusBubbleMultiLinePadding]: f > 1 && f < 3,
-                        [d.statusBubbleMaxLinePadding]: f >= 3
+                    g = a()(c.statusBubble, {
+                        [c.statusBubbleSingleLineEmojiOnlyShape]: 1 === I && !N,
+                        [c.statusBubbleSingleLineWithTextShape]: 1 === I && N,
+                        [c.statusBubbleMultiLineShape]: I > 1,
+                        [c.statusBubbleSingleLineEmojiOnly]: 1 === I && !N,
+                        [c.statusBubbleSingleLineWithText]: 1 === I && N,
+                        [c.statusBubbleMultiLinePadding]: I > 1 && I < 3,
+                        [c.statusBubbleMaxLinePadding]: I >= 3
                     });
-                if (n === u.UserProfileTypes.FULL_SIZE) return (0, i.jsx)("div", {
-                    className: A,
+                if (n === _.UserProfileTypes.FULL_SIZE) return (0, i.jsx)("div", {
+                    className: R,
                     children: (0, i.jsx)("div", {
-                        className: m,
-                        children: (0, i.jsxs)("span", {
-                            className: N,
-                            children: [S(), h()]
+                        className: C,
+                        children: (0, i.jsx)("span", {
+                            className: g,
+                            children: (0, i.jsxs)("div", {
+                                ref: S,
+                                children: [p(), O()]
+                            })
                         })
                     })
                 });
-                let p = s()({
-                    [d.statusBubbleSingleLineWithEmojiBottomMargin]: 1 === f && E,
-                    [d.statusBubbleSingleLineTextOnlyBottomMargin]: 1 === f && !E,
-                    [d.statusBubbleMultiLineMaxLineBottomMargin]: f > 1
+                let L = a()({
+                    [c.statusBubbleSingleLineEmojiOnlyBottomMargin]: 1 === I && !N,
+                    [c.statusBubbleSingleLineWithTextBottomMargin]: 1 === I && N,
+                    [c.statusBubbleMultiLineMaxLineBottomMargin]: I > 1
                 });
                 return (0, i.jsx)("div", {
-                    className: p,
+                    className: L,
                     children: (0, i.jsx)("div", {
-                        className: A,
+                        className: R,
                         children: (0, i.jsx)("div", {
-                            className: m,
-                            children: (0, i.jsxs)("span", {
-                                className: N,
-                                children: [S(), h()]
+                            className: C,
+                            children: (0, i.jsx)("span", {
+                                className: g,
+                                children: (0, i.jsxs)("div", {
+                                    ref: S,
+                                    children: [p(), O()]
+                                })
                             })
                         })
                     })
@@ -247006,7 +247018,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ffa9053c5e6b613c5b0342b50df8e1ad0d3369db"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "b20fa7ca8e8dcb9782e746f9557d1b3d95fc5acd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -275534,7 +275546,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289313"
+                                build_number: "289320"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282751,7 +282763,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289313", "289313"), 10);
+                let s = parseInt((n = "289320", "289320"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -310136,4 +310148,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.0e032b6dfbda9871aeb5.js.map
+//# sourceMappingURL=35705.d4983d960c8ccb4f4959.js.map
