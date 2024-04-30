@@ -36737,7 +36737,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289091", ", Version Hash: ").concat("23474e7110602008bf14daa05ef40363189e6e8e")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289108", ", Version Hash: ").concat("7902551bdcdf9baaa7feacbb88d7971c4a3d6730")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87069,8 +87069,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289091", "289091"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289091")), t = 0), t
+                let t = parseInt((e = "289108", "289108"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289108")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112198,8 +112198,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289091",
-                    versionHash: "23474e7110602008bf14daa05ef40363189e6e8e"
+                    buildNumber: "289108",
+                    versionHash: "7902551bdcdf9baaa7feacbb88d7971c4a3d6730"
                 }
             }
             n.r(t), n.d(t, {
@@ -112989,10 +112989,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 ClanDiscoveryCardTraits: function() {
-                    return O
+                    return g
                 },
                 ClanDiscoveryCardView: function() {
-                    return R
+                    return L
                 }
             }), n("47120");
             var i = n("735250"),
@@ -113005,16 +113005,19 @@
                 d = n("728257"),
                 _ = n("114487"),
                 c = n("550271"),
-                E = n("703656"),
-                I = n("271383"),
-                T = n("594174"),
-                f = n("768581"),
-                S = n("524989"),
-                h = n("308083"),
-                A = n("689938"),
-                m = n("228706");
+                E = n("937111"),
+                I = n("703656"),
+                T = n("271383"),
+                f = n("594174"),
+                S = n("626135"),
+                h = n("768581"),
+                A = n("524989"),
+                m = n("981631"),
+                N = n("308083"),
+                p = n("689938"),
+                O = n("228706");
 
-            function N(e) {
+            function R(e) {
                 let {
                     clan: t
                 } = e, {
@@ -113022,15 +113025,15 @@
                     branding: {
                         primaryColor: r
                     }
-                } = t, s = n.filter(e => e !== h.EMPTY_WILDCARD).join(", "), l = (0, d.useColorIsLowContrastAgainstClientBackground)(r);
+                } = t, s = n.filter(e => e !== N.EMPTY_WILDCARD).join(", "), l = (0, d.useColorIsLowContrastAgainstClientBackground)(r);
                 return 0 === s.length ? null : (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-xs/normal",
                         color: "text-secondary",
-                        className: m.clanInfoItem,
+                        className: O.clanInfoItem,
                         children: "\xb7"
                     }), (0, i.jsx)("div", {
-                        className: m.wildcards,
+                        className: O.wildcards,
                         children: (0, i.jsx)(o.Text, {
                             variant: "text-xs/semibold",
                             style: l ? {} : {
@@ -113038,7 +113041,7 @@
                             },
                             lineClamp: 1,
                             className: a()({
-                                [m.wildcardsOverride]: l
+                                [O.wildcardsOverride]: l
                             }),
                             children: s
                         })
@@ -113046,14 +113049,14 @@
                 })
             }
 
-            function p(e) {
+            function C(e) {
                 let {
                     trait: t,
                     isHighlighted: n
                 } = e;
                 return (0, i.jsx)("div", {
-                    className: a()(m.trait, {
-                        [m.highlightedTrait]: n
+                    className: a()(O.trait, {
+                        [O.highlightedTrait]: n
                     }),
                     children: (0, i.jsx)(o.Text, {
                         variant: "text-xs/normal",
@@ -113064,51 +113067,51 @@
                 })
             }
 
-            function O(e) {
+            function g(e) {
                 let {
                     traits: t,
                     traitsToHighlight: n,
                     expanded: s
                 } = e, a = r.useMemo(() => new Set(n), [n]);
                 return s ? (0, i.jsx)("div", {
-                    className: m.expandedTraitsContainer,
-                    children: t.map(e => (0, i.jsx)(p, {
+                    className: O.expandedTraitsContainer,
+                    children: t.map(e => (0, i.jsx)(C, {
                         trait: e,
                         isHighlighted: a.has(e)
                     }, e))
-                }) : (0, i.jsx)(S.default, {
+                }) : (0, i.jsx)(A.default, {
                     items: t,
-                    renderItem: e => (0, i.jsx)(p, {
+                    renderItem: e => (0, i.jsx)(C, {
                         trait: e,
                         isHighlighted: a.has(e)
                     }, e),
                     renderOverflow: e => (0, i.jsx)(o.Tooltip, {
                         text: (0, i.jsx)("div", {
-                            className: m.overflowTooltip,
+                            className: O.overflowTooltip,
                             children: e.map(e => (0, i.jsx)("div", {
-                                className: m.trait,
+                                className: O.trait,
                                 children: e
                             }, e))
                         }),
                         "aria-label": "overflow",
                         children: t => (0, i.jsx)("div", {
                             ...t,
-                            className: m.trait,
+                            className: O.trait,
                             children: (0, i.jsx)(o.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-normal",
-                                children: A.default.Messages.CLAN_DISCOVERY_TRAIT_OVERFLOW.format({
+                                children: p.default.Messages.CLAN_DISCOVERY_TRAIT_OVERFLOW.format({
                                     count: e.length
                                 })
                             })
                         })
                     }),
                     maxLines: 2,
-                    className: m.traitsContainer
+                    className: O.traitsContainer
                 })
             }
 
-            function R(e) {
+            function L(e) {
                 var t, n;
                 let {
                     clan: r,
@@ -113119,65 +113122,65 @@
                     traitsToHighlight: I,
                     className: T
                 } = e, {
-                    tag: S,
-                    badge: p,
+                    tag: f,
+                    badge: S,
                     branding: {
-                        primaryColor: R,
-                        secondaryColor: C
+                        primaryColor: A,
+                        secondaryColor: m
                     }
-                } = r, g = (0, u.default)(r.games), L = A.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
+                } = r, C = (0, u.default)(r.games), L = p.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
                     count: r.memberCount
-                }), D = null !== (t = f.default.getGuildIconURL({
+                }), D = null !== (t = h.default.getGuildIconURL({
                     id: r.id,
                     icon: r.icon,
                     size: 64,
                     canAnimate: !0
                 })) && void 0 !== t ? t : void 0;
                 return (0, i.jsxs)("div", {
-                    className: a()(m.card, T),
+                    className: a()(O.card, T),
                     children: [(0, i.jsxs)("div", {
-                        className: m.cardBrandingHeader,
+                        className: O.cardBrandingHeader,
                         style: {
-                            background: "linear-gradient(90deg, ".concat(R, ", ").concat(C, ")")
+                            background: "linear-gradient(90deg, ".concat(A, ", ").concat(m, ")")
                         },
                         children: [s, (0, i.jsx)(c.ClanBadge, {
                             width: 32,
                             height: 32,
-                            className: m.clanBadge,
-                            badge: p.badgeKind,
-                            primaryTintColor: p.primaryColor,
-                            secondaryTintColor: p.secondaryColor
+                            className: O.clanBadge,
+                            badge: S.badgeKind,
+                            primaryTintColor: S.primaryColor,
+                            secondaryTintColor: S.secondaryColor
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: m.cardContent,
+                        className: O.cardContent,
                         children: [(0, i.jsxs)("div", {
-                            className: m.cardContentTitleSection,
+                            className: O.cardContentTitleSection,
                             children: [(0, i.jsxs)("div", {
-                                className: m.cardNameAndTagWrapper,
+                                className: O.cardNameAndTagWrapper,
                                 children: [(0, i.jsx)(_.ClanGuildIconSimple, {
                                     guildName: r.name,
                                     guildIconURL: D,
                                     iconSize: 64,
-                                    className: m.clanIcon
+                                    className: O.clanIcon
                                 }), (0, i.jsx)("div", {
-                                    className: m.clanTagChipletWrapper,
+                                    className: O.clanTagChipletWrapper,
                                     children: (0, i.jsx)(o.Tooltip, {
-                                        text: A.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
+                                        text: p.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
                                         position: "top",
                                         shouldShow: !E,
                                         children: e => (0, i.jsxs)("div", {
                                             ...e,
-                                            className: m.clanTagChiplet,
+                                            className: O.clanTagChiplet,
                                             children: [(0, i.jsx)(c.ClanBadge, {
                                                 width: 16,
                                                 height: 16,
-                                                badge: p.badgeKind,
-                                                primaryTintColor: p.primaryColor,
-                                                secondaryTintColor: p.secondaryColor
+                                                badge: S.badgeKind,
+                                                primaryTintColor: S.primaryColor,
+                                                secondaryTintColor: S.secondaryColor
                                             }), (0, i.jsx)(o.Text, {
                                                 variant: "text-xs/medium",
                                                 color: "text-primary",
-                                                children: S
+                                                children: f
                                             })]
                                         })
                                     })
@@ -113188,42 +113191,42 @@
                                 lineClamp: 1,
                                 children: r.name
                             }), (0, i.jsxs)("div", {
-                                className: m.clanInfoRow,
+                                className: O.clanInfoRow,
                                 children: [(0, i.jsx)(o.Text, {
                                     variant: "text-xxs/normal",
-                                    className: m.clanInfoItem,
+                                    className: O.clanInfoItem,
                                     children: (0, i.jsx)("span", {
                                         role: "img",
-                                        "aria-label": A.default.Messages.CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL,
+                                        "aria-label": p.default.Messages.CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL,
                                         children: "\uD83C\uDFAE"
                                     })
                                 }), (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-secondary",
-                                    className: m.clanInfoItem,
-                                    children: null !== (n = (0, h.getPlaystyleTitle)(r.playstyle)) && void 0 !== n ? n : A.default.Messages.CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE
-                                }), (0, i.jsx)(N, {
+                                    className: O.clanInfoItem,
+                                    children: null !== (n = (0, N.getPlaystyleTitle)(r.playstyle)) && void 0 !== n ? n : p.default.Messages.CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE
+                                }), (0, i.jsx)(R, {
                                     clan: r
                                 })]
                             })]
                         }), (0, i.jsx)("div", {
-                            className: m.cardContentDescriptionSection,
+                            className: O.cardContentDescriptionSection,
                             children: (0, i.jsx)(o.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-muted",
                                 children: r.description
                             })
-                        }), (0, i.jsx)(O, {
-                            traits: (0, h.getSortedTraits)(r.traits, I),
+                        }), (0, i.jsx)(g, {
+                            traits: (0, N.getSortedTraits)(r.traits, I),
                             expanded: l,
                             traitsToHighlight: I
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: m.cardFooter,
+                        className: O.cardFooter,
                         children: [(0, i.jsx)("div", {
-                            className: m.cardFooterInfo,
+                            className: O.cardFooterInfo,
                             children: (0, i.jsx)("div", {
-                                className: m.cardFooterMembers,
+                                className: O.cardFooterMembers,
                                 children: (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
@@ -113231,8 +113234,8 @@
                                 })
                             })
                         }), (0, i.jsx)("div", {
-                            className: m.cardFooterGames,
-                            children: g.map(e => {
+                            className: O.cardFooterGames,
+                            children: C.map(e => {
                                 if (null == e) return null;
                                 let t = e.getIconURL(24);
                                 return null == t ? null : (0, i.jsx)(o.Tooltip, {
@@ -113240,20 +113243,20 @@
                                     position: "bottom",
                                     children: n => (0, i.jsx)("div", {
                                         ...n,
-                                        className: m.cardFooterGame,
+                                        className: O.cardFooterGame,
                                         children: (0, i.jsx)("img", {
                                             src: t,
                                             alt: e.name,
-                                            className: m.cardFooterGameImg
+                                            className: O.cardFooterGameImg
                                         })
                                     })
                                 }, e.id)
                             })
                         })]
                     }), null != d ? (0, i.jsxs)("div", {
-                        className: m.cardBrandingFooter,
+                        className: O.cardBrandingFooter,
                         style: {
-                            background: "linear-gradient(90deg, ".concat(R, ", ").concat(C, ")")
+                            background: "linear-gradient(90deg, ".concat(A, ", ").concat(m, ")")
                         },
                         children: [(0, i.jsx)(o.Text, {
                             variant: "text-xxs/normal",
@@ -113267,10 +113270,23 @@
             }
             t.default = function(e) {
                 let {
-                    clan: t
-                } = e, s = (0, l.useStateFromStores)([T.default], () => T.default.getCurrentUser()), a = (0, l.useStateFromStores)([I.default], () => I.default.isMember(t.id, null == s ? void 0 : s.id), [t, s]), u = r.useCallback(() => {
-                    if (a) {
-                        (0, E.transitionToGuild)(t.id);
+                    clan: t,
+                    affinity: s,
+                    index: a
+                } = e, u = (0, l.useStateFromStores)([f.default], () => f.default.getCurrentUser()), d = (0, l.useStateFromStores)([T.default], () => T.default.isMember(t.id, null == u ? void 0 : u.id), [t, u]), _ = r.useCallback(() => {
+                    let e = null != E.default.getRequest(t.id);
+                    if (S.default.track(m.AnalyticEvents.CLAN_DISCOVERY_CARD_CLICKED, {
+                            guild_id: t.id,
+                            is_member: d,
+                            has_join_request: e,
+                            affinity: s,
+                            index: a
+                        }), d) {
+                        (0, I.transitionToGuild)(t.id);
+                        return
+                    }
+                    if (e) {
+                        (0, I.transitionTo)(m.Routes.GUILD_MEMBER_VERIFICATION(t.id));
                         return
                     }(0, o.openModalLazy)(async () => {
                         let {
@@ -113281,13 +113297,13 @@
                             clan: t
                         })
                     })
-                }, [t, a]);
+                }, [t, d, s, a]);
                 return (0, i.jsx)(o.Clickable, {
-                    onClick: u,
-                    className: m.clickableCard,
-                    children: (0, i.jsx)(R, {
+                    onClick: _,
+                    className: O.clickableCard,
+                    children: (0, i.jsx)(L, {
                         ...e,
-                        isMember: a
+                        isMember: d
                     })
                 })
             }
@@ -137398,7 +137414,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return E
+                    return I
                 }
             }), n("47120");
             var i = n("735250");
@@ -137412,34 +137428,35 @@
                 d = n("74538"),
                 _ = n("981631"),
                 c = n("689938");
-            async function E(e) {
+            let E = "guild-boost-purchase-modal";
+            async function I(e) {
                 let {
                     analyticsLocations: t,
-                    analyticsLocation: E,
-                    analyticsSourceLocation: I,
-                    guildId: T,
-                    closeLayer: f,
-                    onCloseModal: S,
-                    totalNumberOfSlotsToAssign: h = 1,
-                    disablePremiumUpsell: A,
-                    onSubscriptionConfirmation: m,
-                    inPopout: N,
-                    applicationId: p
-                } = e, O = N ? r.POPOUT_MODAL_CONTEXT : r.DEFAULT_MODAL_CONTEXT, R = l.default.getPremiumTypeSubscription();
-                if (null != R && R.isPurchasedExternally && null != R.paymentGateway) {
-                    null != f && f(), s.default.show({
+                    analyticsLocation: I,
+                    analyticsSourceLocation: T,
+                    guildId: f,
+                    closeLayer: S,
+                    onCloseModal: h,
+                    totalNumberOfSlotsToAssign: A = 1,
+                    disablePremiumUpsell: m,
+                    onSubscriptionConfirmation: N,
+                    inPopout: p,
+                    applicationId: O
+                } = e, R = p ? r.POPOUT_MODAL_CONTEXT : r.DEFAULT_MODAL_CONTEXT, C = l.default.getPremiumTypeSubscription();
+                if (null != C && C.isPurchasedExternally && null != C.paymentGateway) {
+                    null != S && S(), s.default.show({
                         title: c.default.Messages.BILLING_MANAGED_BY_PAYMENT_GATEWAY.format({
-                            paymentGatewayName: _.PaymentGatewayToFriendlyName[R.paymentGateway]
+                            paymentGatewayName: _.PaymentGatewayToFriendlyName[C.paymentGateway]
                         }),
                         body: c.default.Messages.PREMIUM_GUILD_PERKS_MODAL_BUTTON_UPGRADE_TO_PREMIUM_EXTERNAL_ERROR.format({
-                            paymentGatewayName: _.PaymentGatewayToFriendlyName[R.paymentGateway],
-                            subscriptionManagementLink: (0, d.getExternalSubscriptionMethodUrl)(R.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
+                            paymentGatewayName: _.PaymentGatewayToFriendlyName[C.paymentGateway],
+                            subscriptionManagementLink: (0, d.getExternalSubscriptionMethodUrl)(C.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
                         })
                     });
                     return
                 }
                 Promise.all([(0, a.fetchPaymentSources)(), (0, o.fetchPremiumSubscriptionPlans)()]);
-                let C = await (0, r.openModalLazy)(async () => {
+                await (0, r.openModalLazy)(async () => {
                     let {
                         default: e
                     } = await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("440"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("22646"), n.e("54999"), n.e("99873")]).then(n.bind(n, "343649"));
@@ -137451,30 +137468,31 @@
                         return (0, i.jsx)(e, {
                             transitionState: r,
                             onClose: e => {
-                                s(), null == S || S(e)
+                                s(), null == h || h(e)
                             },
                             analyticsLocations: t,
-                            analyticsLocation: E,
-                            analyticsSourceLocation: null != I ? I : E,
-                            guildId: T,
-                            totalNumberOfSlotsToAssign: h,
-                            closeGuildPerksModal: f,
-                            disablePremiumUpsell: A,
-                            onSubscriptionConfirmation: m,
-                            applicationId: p
+                            analyticsLocation: I,
+                            analyticsSourceLocation: null != T ? T : I,
+                            guildId: f,
+                            totalNumberOfSlotsToAssign: A,
+                            closeGuildPerksModal: S,
+                            disablePremiumUpsell: m,
+                            onSubscriptionConfirmation: N,
+                            applicationId: O
                         })
                     }
                 }, {
+                    modalKey: E,
                     onCloseCallback: () => {
                         u.default.track(_.AnalyticEvents.MODAL_DISMISSED, {
                             type: _.AnalyticsSections.PREMIUM_GUILD_PURCHASE_MODAL,
-                            location: E
+                            location: I
                         })
                     },
                     onCloseRequest: () => {
-                        null != C && (0, r.closeModal)(C), null == S || S(!1)
+                        (0, r.closeModal)(E), null == h || h(!1)
                     },
-                    contextKey: O
+                    contextKey: R
                 })
             }
         },
@@ -167066,8 +167084,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714496488810",
-                                    build_number: "289091"
+                                    built_at: "1714497323530",
+                                    build_number: "289108"
                                 }
                             },
                             retries: 1
@@ -207979,6 +207997,68 @@
                 })
             }
         },
+        314172: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return S
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("120356"),
+                s = n.n(r),
+                a = n("442837"),
+                o = n("693789"),
+                l = n("235874"),
+                u = n("944613"),
+                d = n("607070"),
+                _ = n("605436"),
+                c = n("496675"),
+                E = n("729285"),
+                I = n("537387"),
+                T = n("689938"),
+                f = n("236219");
+
+            function S(e) {
+                let {
+                    guild: t,
+                    guildMember: n,
+                    highestRole: r,
+                    onAddRole: S,
+                    className: h
+                } = e, A = (0, a.useStateFromStores)([d.default], () => d.default.roleStyle), m = e => (0, _.isNotEveryoneRoleId)(t.id, e.id) && !e.managed && c.default.isRoleHigher(t, r, e) && -1 === n.roles.indexOf(e.id);
+                return (0, i.jsx)(l.Popout, {
+                    position: "bottom",
+                    align: "center",
+                    renderPopout: e => {
+                        let {
+                            closePopout: n
+                        } = e;
+                        return (0, i.jsx)(u.default, {
+                            guild: t,
+                            roleStyle: A,
+                            roleFilter: m,
+                            onSelect: S,
+                            onClose: n
+                        })
+                    },
+                    children: e => (0, i.jsx)(I.default, {
+                        ...e,
+                        className: s()(f.button, h),
+                        innerClassName: f.buttonInner,
+                        text: T.default.Messages.USER_PROFILE_ADD_ROLE,
+                        icon: e => (0, i.jsx)(E.default, {
+                            ...e,
+                            width: 20,
+                            height: 20
+                        }),
+                        color: f.color,
+                        look: o.Button.Looks.BLANK
+                    })
+                })
+            }
+        },
         705556: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -208297,12 +208377,8 @@
                     className: r,
                     innerClassName: l,
                     ...u
-                } = e, d = (0, i.jsx)(t, {
-                    width: 16,
-                    height: 16,
-                    color: "currentColor"
-                });
-                return null != n ? (0, i.jsx)(a.TooltipContainer, {
+                } = e;
+                return (0, i.jsx)(a.TooltipContainer, {
                     text: n,
                     children: (0, i.jsx)(a.Button, {
                         className: s()(o.button, r),
@@ -208311,18 +208387,14 @@
                         look: a.Button.Looks.FILLED,
                         size: a.Button.Sizes.NONE,
                         grow: !1,
+                        "aria-label": n,
                         ...u,
-                        children: d
+                        children: (0, i.jsx)(t, {
+                            width: 16,
+                            height: 16,
+                            color: "currentColor"
+                        })
                     })
-                }) : (0, i.jsx)(a.Button, {
-                    className: s()(o.button, r),
-                    innerClassName: s()(o.buttonInner, l),
-                    color: o.color,
-                    look: a.Button.Looks.FILLED,
-                    size: a.Button.Sizes.NONE,
-                    grow: !1,
-                    ...u,
-                    children: d
                 })
             }
         },
@@ -210473,7 +210545,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return p
+                    return O
                 }
             }), n("47120"), n("411104");
             var i = n("735250"),
@@ -210491,20 +210563,22 @@
                 T = n("496675"),
                 f = n("700785"),
                 S = n("785717"),
-                h = n("981631"),
-                A = n("689938"),
-                m = n("705444");
-            let N = (0, _.default)(function(e) {
+                h = n("314172"),
+                A = n("981631"),
+                m = n("689938"),
+                N = n("705444");
+            let p = (0, _.default)(function(e) {
                 let {
                     user: t,
                     currentUser: n,
                     guild: u,
                     userRoles: _,
-                    canManageRoles: c,
-                    width: E,
-                    onRemoveRole: T,
-                    onOpenProfile: S
-                } = e, N = f.getHighestRole(u, n.id), p = r.useRef({}), [O, R] = r.useState(null), C = (0, o.useStateFromStores)([I.default], () => I.default.getRoles(u.id)), g = r.useMemo(() => {
+                    highestRole: c,
+                    canManageRoles: E,
+                    width: T,
+                    onRemoveRole: S,
+                    onOpenProfile: h
+                } = e, p = r.useRef({}), [O, R] = r.useState(null), C = (0, o.useStateFromStores)([I.default], () => I.default.getRoles(u.id)), g = r.useMemo(() => {
                     let e = Object.values(C).filter(e => _.includes(e.id)).sort((e, t) => {
                         var n, i;
                         let r = (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) !== null,
@@ -210514,13 +210588,13 @@
                     return null != O ? e.slice(0, O) : e
                 }, [C, O, _]), L = _.length - g.length;
                 r.useLayoutEffect(() => {
-                    if ("number" != typeof E) throw Error("Unexpected null width");
+                    if ("number" != typeof T) throw Error("Unexpected null width");
                     let e = 0,
                         t = 0,
-                        n = E - 32;
+                        n = T - 32;
                     for (let i = 0; i < 2; i++) {
                         t = 0;
-                        let r = 1 === i ? n : E;
+                        let r = 1 === i ? n : T;
                         for (let n = e; n < g.length; n++) {
                             let i = g[n],
                                 s = p.current[i.id];
@@ -210531,22 +210605,22 @@
                         }
                     }
                     R(t => e < g.length ? e : t)
-                }, [E, g]);
+                }, [T, g]);
                 let D = r.useMemo(() => "roles-".concat((0, s.v4)()), []),
                     v = (0, a.default)({
                         id: D,
                         isEnabled: !0,
-                        scrollToStart: h.NOOP_PROMISE,
-                        scrollToEnd: h.NOOP_PROMISE,
+                        scrollToStart: A.NOOP_PROMISE,
+                        scrollToEnd: A.NOOP_PROMISE,
                         wrap: !0
                     }),
                     M = g.map(e => {
                         var r;
                         return (0, i.jsx)(d.MemberRole, {
-                            className: m.role,
+                            className: N.role,
                             role: e,
-                            canRemove: c ? f.isRoleHigher(u, n.id, N, e) : (null === (r = e.tags) || void 0 === r ? void 0 : r.guild_connections) === null && t.id === n.id,
-                            onRemove: () => T(e),
+                            canRemove: E ? f.isRoleHigher(u, n.id, c, e) : (null === (r = e.tags) || void 0 === r ? void 0 : r.guild_connections) === null && t.id === n.id,
+                            onRemove: () => S(e),
                             ref: t => {
                                 var n, i;
                                 return n = e.id, void(null != (i = t) ? p.current[n] = i : delete p.current[n])
@@ -210564,15 +210638,15 @@
                                 ...n
                             } = e;
                             return (0, i.jsxs)("div", {
-                                className: m.root,
-                                "aria-label": 0 === _.length ? A.default.Messages.ROLE_LIST_EMPTY : A.default.Messages.ROLES_LIST.format({
+                                className: N.root,
+                                "aria-label": 0 === _.length ? m.default.Messages.ROLE_LIST_EMPTY : m.default.Messages.ROLES_LIST.format({
                                     numRoles: _.length
                                 }),
                                 ref: t,
                                 ...n,
                                 children: [M, null != O && 0 !== L && (0, i.jsx)(l.Clickable, {
-                                    onClick: S,
-                                    className: m.overflowButton,
+                                    onClick: h,
+                                    className: N.overflowButton,
                                     children: (0, i.jsx)(l.Text, {
                                         variant: "text-xs/medium",
                                         children: "+".concat(L)
@@ -210584,60 +210658,53 @@
                 })
             });
 
-            function p(e) {
+            function O(e) {
                 let {
                     user: t,
                     currentUser: n,
                     guild: s,
                     onOpenProfile: a
                 } = e, {
-                    trackUserProfileAction: _
-                } = (0, S.useUserProfileAnalyticsContext)(), I = (0, o.useStateFromStores)([E.default], () => {
-                    var e;
-                    return null === (e = E.default.getMember(s.id, t.id)) || void 0 === e ? void 0 : e.roles
-                }), [f] = (0, o.useStateFromStoresArray)([T.default], () => [T.default.can(h.Permissions.MANAGE_ROLES, s), null != s ? T.default.getGuildVersion(s.id) : null]), p = r.useCallback(e => {
+                    trackUserProfileAction: d
+                } = (0, S.useUserProfileAnalyticsContext)(), _ = (0, o.useStateFromStores)([E.default], () => E.default.getMember(s.id, t.id)), I = null == _ ? void 0 : _.roles, O = f.getHighestRole(s, n.id), [R] = (0, o.useStateFromStoresArray)([T.default], () => [T.default.can(A.Permissions.MANAGE_ROLES, s), null != s ? T.default.getGuildVersion(s.id) : null]), C = r.useCallback(e => {
                     var n, i;
-                    _({
+                    d({
                         action: "REMOVE_ROLE"
                     });
                     let r = null !== (i = null == I ? void 0 : I.filter(t => t !== e.id)) && void 0 !== i ? i : [];
                     (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) === null ? u.default.unassignGuildRoleConnection(s.id, e.id) : c.default.updateMemberRoles(s.id, t.id, r, [], [e.id])
-                }, [I, s.id, t.id, _]), O = r.useCallback(e => {
-                    _({
+                }, [I, s.id, t.id, d]), g = r.useCallback(e => {
+                    d({
                         action: "ADD_ROLE"
                     });
                     let n = null != I ? I : []; - 1 === n.indexOf(e) && (n = n.concat([e])), c.default.updateMemberRoles(s.id, t.id, n, [e], [])
-                }, [I, s.id, t.id, _]);
+                }, [I, s.id, t.id, d]);
                 return (0, i.jsxs)("div", {
-                    className: m.container,
+                    className: N.container,
                     children: [(0, i.jsxs)("div", {
-                        className: m.rolesHeader,
+                        className: N.rolesHeader,
                         children: [(0, i.jsx)(l.Heading, {
                             variant: "text-xs/semibold",
-                            children: A.default.Messages.ROLES
-                        }), f && (0, i.jsx)(l.TooltipContainer, {
-                            className: m.hiddenTooltip,
-                            text: A.default.Messages.USER_PROFILE_ADD_ROLE,
-                            children: (0, i.jsx)(d.OverflowAddRolesButton, {
-                                user: t,
-                                guild: s,
-                                userRoles: null != I ? I : [],
-                                handleAddRole: O,
-                                addButtonClassName: m.addButton,
-                                addButtonIconClassName: m.addButtonIcon
-                            })
+                            children: m.default.Messages.ROLES
+                        }), R && null != _ && (0, i.jsx)(h.default, {
+                            guild: s,
+                            guildMember: _,
+                            highestRole: O,
+                            onAddRole: g,
+                            className: N.addRoleButton
                         })]
                     }), null == I || 0 === I.length ? (0, i.jsx)(l.Text, {
                         variant: "text-sm/normal",
-                        children: A.default.Messages.ROLE_LIST_EMPTY
+                        children: m.default.Messages.ROLE_LIST_EMPTY
                     }) : (0, i.jsx)("div", {
-                        children: (0, i.jsx)(N, {
+                        children: (0, i.jsx)(p, {
                             user: t,
                             currentUser: n,
                             guild: s,
                             userRoles: I,
-                            canManageRoles: f,
-                            onRemoveRole: p,
+                            highestRole: O,
+                            canManageRoles: R,
+                            onRemoveRole: C,
                             onOpenProfile: a
                         })
                     })]
@@ -245110,7 +245177,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "23474e7110602008bf14daa05ef40363189e6e8e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7902551bdcdf9baaa7feacbb88d7971c4a3d6730"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273629,7 +273696,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289091"
+                                build_number: "289108"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280433,7 +280500,7 @@
                 NetworkActionNames: function() {
                     return r
                 }
-            }), (s = i || (i = {})).ACTIVITIES = "impression_activities", s.ACTIVITIES_HAPPENING_NOW = "impression_activities_happening_now", s.ACTIVITY_BOOKMARK_SHARE_MODAL = "impression_activity_bookmark_share_modal", s.ACTIVITY_BOOSTING_UPSELL = "impression_activity_boosting_upsell", s.ACTIVITY_DETAILS = "impression_activity_details", s.ACTIVITY_NITRO_UPSELL = "impression_activity_nitro_upsell", s.ACTIVITY_SHARE_MOMENT_MODAL = "impression_activity_share_moment_modal", s.ACTIVITY_SHELF = "impression_activity_shelf", s.ACTIVITY_SHELF_SELECT_CHANNEL = "impression_activity_shelf_select_channel", s.APP_LAUNCHER_HOME_ACTIVITY_ITEM = "impression_app_launcher_home_activity_item", s.APPLICATION_LIBRARY = "impression_application_library", s.APPLICATION_STORE = "impression_application_store", s.APRIL_PREMIUM_MARKETING_DECO_CLAIMED_MODAL = "impression_april_premium_marketing_deco_claimed_modal", s.AVATAR_UPLOAD = "impression_avatar_upload", s.CHANNEL_ADD_INFO = "impression_channel_add_info", s.CHANNEL_ADD_MEMBERS = "impression_channel_add_members", s.CHANNEL_CALL_VIDEO_GRID = "impression_channel_call_video_grid", s.CHANNEL_CALL_VIDEO_GRID_VIEW = "impression_channel_call_video_grid_view", s.CHANNEL_VIEWED = "impression_channel_viewed", s.CLIP_EDITOR_VIEWED = "impression_clip_editor_viewed", s.CLIP_GALLERY_VIEWED = "impression_clip_gallery_viewed", s.CLYDE_AI_PROFILE_EMBED_VIEWED = "impression_clyde_ai_profile_embed_viewed", s.CONTACT_SYNC_CONTACT_INVITES = "impression_contact_sync_contact_invites", s.CONTACT_SYNC_INPUT_NAME = "impression_contact_sync_input_name", s.CONTACT_SYNC_START = "impression_contact_sync_start", s.CONTACT_SYNC_SUGGESTIONS = "impression_contact_sync_suggestions", s.CREATOR_PROMO_PAGE_GUILD_HEADER_UPSELL = "impression_creator_promo_page_guild_header_upsell", s.DIRECTORY_ADD_GUILD_CONFIRMATION = "impression_directory_add_guild_confirmation", s.DISCOVERABILITY = "impression_discoverability", s.DROPS_QUEST_COMPLETION = "impression_drops_quest_completion", s.DROPS_QUEST_ENROLLMENT = "impression_drops_quest_enrollment", s.EMBEDDED_ACTIVITY_HAPPENING_NOW = "impression_embedded_activity_happening_now", s.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING = "impression_enable_creator_monetization_accept_terms_landing", s.ENABLE_CREATOR_MONETIZATION_CREATE_REQUEST_LANDING = "impression_enable_creator_monetization_create_request_landing", s.ENABLE_CREATOR_MONETIZATION_GUILD_HEADER_UPSELL = "impression_enable_creator_monetization_guild_header_upsell", s.ENABLE_CREATOR_MONETIZATION_WAITLIST_LANDING = "impression_enable_creator_monetization_waitlist_landing", s.FRIENDS = "impression_friends", s.GAME_CONSOLE_DEVICE_LIST = "impression_game_console_device_list", s.GDM_SETTINGS_INVITES = "impression_gdm_settings_invites", s.GUILD_ADD_ACCEPT_INVITE = "impression_guild_add_accept_invite", s.GUILD_ADD_CHANNEL_PROMPT = "impression_guild_add_channel_prompt", s.GUILD_ADD_CUSTOMIZE = "impression_guild_add_customize", s.GUILD_ADD_GUILD_INVITE = "impression_guild_add_guild_invite", s.GUILD_ADD_INTENT_SELECTION = "impression_guild_add_intent_selection", s.GUILD_ADD_JOIN = "impression_guild_add_join", s.GUILD_CREATE_MODAL_JOIN = "impression_guild_create_modal_join", s.GUILD_ADD_LANDING = "impression_guild_add_landing", s.GUILD_CHANNEL = "impression_guild_channel", s.GUILD_DISCOVERY = "impression_guild_discovery", s.GUILD_INVITE = "impression_guild_invite", s.GUILD_INVITE_LINK_SETTINGS = "impression_guild_invite_link_settings", s.GUILD_INVITE_SEARCH = "impression_guild_invite_search", s.GUILD_MEMBER_VERIFICATION = "impression_guild_member_verification", s.GUILD_PERMANENT_LINKS_UPSELL = "impression_guild_permanent_links_upsell", s.GUILD_PRODUCT_LISTING_EMBED = "impression_guild_product_listing_embed", s.GUILD_PRODUCT_LISTING_INFO_MODAL = "impression_guild_product_listing_info_modal", s.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS = "impression_guild_role_subscription_store_page_guild_settings", s.GUILD_SETTINGS_ANALYTICS = "impression_guild_settings_analytics", s.GUILD_SETTINGS_AUDIT_LOG = "impression_guild_settings_audit_log", s.GUILD_SETTINGS_AUDIT_LOG_V2 = "impression_guild_settings_audit_log_v2", s.GUILD_SETTINGS_BANS = "impression_guild_settings_bans", s.GUILD_SETTINGS_BOOST_STATUS = "impression_guild_settings_boost_status", s.GUILD_SETTINGS_CHANNELS = "impression_guild_settings_channels", s.GUILD_SETTINGS_CLYDE = "impression_guild_settings_clyde", s.GUILD_SETTINGS_COMMUNITY_OVERVIEW = "impression_guild_settings_community_overview", s.GUILD_SETTINGS_COMMUNITY_WELCOME = "impression_guild_settings_community_welcome", s.GUILD_SETTINGS_DISCOVERY = "impression_guild_settings_discovery", s.GUILD_SETTINGS_DISCOVERY_LANDING_PAGE = "impression_guild_settings_discovery_landing_page", s.GUILD_SETTINGS_EMOJI = "impression_guild_settings_emoji", s.GUILD_SETTINGS_ENABLE_COMMUNITY = "impression_guild_settings_enable_community", s.GUILD_SETTINGS_INTEGRATION = "impression_guild_settings_integration", s.GUILD_SETTINGS_INVITES = "impression_guild_settings_invites", s.GUILD_SETTINGS_LANDING = "impression_guild_settings_landing", s.GUILD_SETTINGS_MEMBER_VERIFICATION = "impression_guild_settings_member_verification", s.GUILD_SETTINGS_MEMBERS = "impression_guild_settings_members", s.GUILD_SETTINGS_MODERATION = "impression_guild_settings_moderation", s.GUILD_SETTINGS_OVERVIEW = "impression_guild_settings_overview", s.GUILD_SETTINGS_PARTNER = "impression_guild_settings_partner", s.GUILD_SETTINGS_ROLES = "impression_guild_settings_roles", s.GUILD_SETTINGS_SAFETY = "impression_guild_settings_safety", s.GUILD_SETTINGS_SECURITY = "impression_guild_settings_security", s.GUILD_SETTINGS_SOUNDBOARD = "impression_guild_settings_soundboard", s.GUILD_SETTINGS_STICKERS = "impression_guild_settings_stickers", s.GUILD_SETTINGS_TEMPLATE = "impression_guild_settings_template", s.GUILD_SETTINGS_VANITY_URL = "impression_guild_settings_vanity_url", s.GUILD_SETTINGS_WEBHOOKS = "impression_guild_settings_webhooks", s.GUILD_SETTINGS_WIDGET = "impression_guild_settings_widget", s.GUILD_SHOP_EMBED = "impression_guild_shop_embed", s.GUILD_SHOP_PAGE = "impression_guild_shop_page", s.GUILD_SHOP_UPSELL = "impression_guild_shop_upsell", s.GUILD_TRANSFER_OWNERSHIP = "impression_guild_transfer_ownership", s.GUILD_TRANSFER_OWNERSHIP_CONFIRM_EMAIL_CODE = "impression_guild_transfer_ownership_confirm_email_code", s.GUILD_TRANSFER_OWNERSHIP_CONFIRM_SMS_CODE = "impression_guild_transfer_ownership_confirm_sms_code", s.GUILDS_EMPTY_NUX = "impression_guilds_empty_nux", s.HOTSPOT = "impression_hotspot", s.HUB_CREATE_GUILD_CUSTOMIZE = "impression_hub_create_guild_customize", s.HUB_CREATE_GUILD_TEMPLATE = "impression_hub_create_guild_template", s.HUB_EMAIL_SIGNUP = "impression_hub_email_signup", s.HUB_EMAIL_VERIFICATION_PAGE = "impression_hub_email_verification_page", s.HUB_EXISTING_GUILD_CHOOSE = "impression_hub_existing_guild_choose", s.HUB_EXISTING_GUILD_CUSTOMIZE = "impression_hub_existing_guild_customize", s.HUB_WAITLIST_SIGNUP = "impression_hub_waitlist_signup", s.INVITE_ACCEPT = "impression_invite_accept", s.LOCALIZED_PRICING_UPSELL_VIEWED = "impression_localized_pricing_upsell_viewed", s.MESSAGES_EMPTY_NUX = "impression_messages_empty_nux", s.MULTI_ACCOUNT_SWITCH_LANDING = "impression_multi_account_switch_landing", s.NEW_USER_INTENT_START = "impression_new_user_intent_start", s.NITRO_TAB = "impression_nitro_tab", s.NOTIFICATION_CENTER_LANDING = "impression_notification_center_landing", s.NOTIFICATION_SETTING_UNREAD_NUDGE = "impression_notification_setting_unread_nudge", s.POLL_EDITOR_VIEWED = "impression_poll_editor_viewed", s.POMELO_LANDING = "impression_pomelo_landing", s.PREMIUM_GUILD_SUBSCRIPTION_MARKETING_PAGE = "impression_premium_guild_subscription_marketing_page", s.PREMIUM_MARKETING_BANNER = "impression_premium_marketing_banner", s.PREMIUM_MARKETING_SURFACE = "impression_premium_marketing_surface", s.PREMIUM_MARKETING_TENURE_REWARD_CARD = "impression_premium_marketing_tenure_reward_card", s.PUSH_NOTIFICATION_PREPROMPT = "impression_push_notification_preprompt", s.PUSH_NOTIFICATION_REACTIVATION_PROMPT = "impression_push_notification_reactivation_prompt", s.QUESTS_LANDING_PAGE = "impression_quests_landing_page", s.REQUEST_REVIEW_MODAL = "impression_request_review_modal", s.ROLE_CREATE_ADD_MEMBERS = "impression_role_create_add_members", s.ROLE_CREATE_DISPLAY = "impression_role_create_display", s.ROLE_CREATE_PERMISSIONS = "impression_role_create_permissions", s.ROLE_SUBSCRIPTION_EMOJI_UPSELL = "impression_role_subscription_emoji_upsell", s.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_LANDING = "impression_role_subscription_initial_setup_modal_landing", s.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_TIER_STEP = "impression_role_subscription_initial_setup_modal_tier_step", s.ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR = "impression_role_subscription_listing_template_selector", s.ROLE_SUBSCRIPTION_LISTING_UPSELL_ERROR_PAGE = "impression_role_subscription_listing_upsell_error_page", s.SHELF_ACTIVITY_DETAILS = "impression_shelf_activity_details", s.SNOWSGIVING = "impression_snowsgiving", s.SOUNDBOARD_POPOUT = "impression_soundboard_popout", s.STAGE_DISCOVERY = "impression_stage_discovery", s.URF_CONFIRM_EMAIL_CODE = "impression_urf_confirm_email_code", s.URF_ENTER_EMAIL = "impression_urf_enter_email", s.USER_ACCOUNT_EMAIL_CHANGE_COMPLETE = "impression_user_account_email_change_complete", s.USER_ACCOUNT_EMAIL_CHANGE_ENTER_EMAIL = "impression_user_account_email_change_enter_email", s.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE = "impression_user_account_email_change_send_code", s.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE = "impression_user_account_email_change_verify_code", s.USER_ACCOUNT_EMAIL_RESEND_VERIFICATION_EMAIL = "impression_user_account_email_resend_verification_email", s.USER_ACCOUNT_PASSWORD_VERIFY = "impression_user_account_password_verify", s.USER_ACTION_REQUIRED = "impression_user_action_required", s.USER_ADD_PHONE = "impression_user_add_phone", s.USER_AGE_GATE = "impression_user_age_gate", s.USER_AGE_GATE_UNDERAGE = "impression_user_age_gate_underage", s.USER_AGREEMENTS = "impression_user_agreements", s.USER_CLYDE_AI_CONSENT_MODAL = "impression_user_clyde_ai_consent_modal", s.USER_LOGIN = "impression_user_login", s.USER_PASSWORDLESS_CODE_ENTRY = "impression_user_passwordless_code_entry", s.USER_PASSWORDLESS_INTRO = "impression_user_passwordless_intro", s.USER_REGISTER_ACCOUNT_INFORMATION = "impression_user_register_account_information", s.USER_REGISTER_IDENTITY = "impression_user_register_identity", s.USER_REGISTRATION = "impression_user_registration", s.USER_SETTINGS_CONNECTIONS = "impression_user_settings_connections", s.USER_VERIFICATION_MODAL = "impression_user_verification_modal", s.USER_VERIFY_PASSWORD = "impression_user_verify_password", s.USER_VERIFY_PHONE = "impression_user_verify_phone", s.USER_WELCOME = "impression_user_welcome", s.USER_YOU_SCREEN = "impression_user_you_screen", s.VIEW_PANEL_DEVTOOLS = "impression_view_panel_devtools", (a = r || (r = {})).APPLE_JWT_TOKEN_CREATE = "network_action_apple_jwt_token_create", a.AUTH_SESSIONS_LOGGED_OUT = "network_action_auth_sessions_logged_out", a.AUTHORIZE_IP = "network_action_authorize_ip", a.AUTHORIZE_PAYMENT = "network_action_authorize_payment", a.BUG_REPORT_SUBMIT = "network_action_bug_report_submit", a.CHANNEL_CREATE = "network_action_channel_create", a.DIRECTORY_GUILD_ENTRY_CREATE = "network_action_directory_guild_entry_create", a.DIRECTORY_GUILD_ENTRY_DELETE = "network_action_directory_guild_entry_delete", a.EMAIL_SETTINGS_FETCH = "network_action_email_settings_fetch", a.EMAIL_SETTINGS_UPDATE = "network_action_email_settings_update", a.EMBEDDED_ACTIVITIES_FETCH_SHELF = "network_action_embedded_activities_fetch_shelf", a.EMBEDDED_ACTIVITIES_LAUNCH = "network_action_embedded_activities_launch", a.FORGOT_PASSWORD = "network_action_forgot_password", a.GUILD_CREATE = "network_action_guild_create", a.GUILD_TRANSFER_OWNERSHIP = "network_action_guild_transfer_ownership", a.GUILD_TRANSFER_OWNERSHIP_SEND_CODE = "network_action_guild_transfer_ownership_send_code", a.HUB_EMAIL_VERIFY = "network_action_hub_email_verify", a.HUB_EMAIL_VERIFY_SEND = "network_action_hub_email_verify_send", a.HUB_WAITLIST_SIGNUP = "network_action_hub_waitlist_signup", a.INVITE_RESOLVE = "network_action_invite_resolve", a.INVITE_REVOKE = "network_action_invite_revoke", a.LOGIN_REQUEST_SMS_TOKEN = "network_action_login_request_sms_token", a.NCMEC_REPORT_CLOSE = "network_action_ncmec_report_close", a.NCMEC_REPORTABLE_CONTENT_CREATE = "network_action_ncmec_reportable_content_create", a.NOTIFICATION_CENTER_ITEM_DELETE = "network_action_notification_center_item_delete", a.NOTIFICATION_CENTER_PAGE_FETCH = "network_action_notification_center_page_fetch", a.POMELO_ATTEMPT = "network_action_pomelo_attempt", a.POMELO_CREATE = "network_action_pomelo_create", a.STREAM_NOTIFY = "network_action_stream_notify", a.USER_ACCEPT_AGREEMENTS = "network_action_user_accept_agreements", a.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE = "network_action_user_account_email_change_send_code", a.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE = "network_action_user_account_email_change_verify_code", a.USER_BULK_RELATIONSHIPS_UPDATE = "network_action_user_bulk_relationships_update", a.USER_CLYDE_AI_CONSENT_UPDATED = "network_action_user_clyde_ai_consent_updated", a.USER_COMMUNICATION_DISABLED_UPDATE = "network_action_user_communication_disabled_update", a.USER_CONNECTIONS_UPDATE = "network_action_user_connections_update", a.USER_CONTACTS_SYNC = "network_action_user_contacts_sync", a.USER_LOGIN = "network_action_user_login", a.USER_LOGIN_MFA = "network_action_user_login_mfa", a.USER_LOGIN_MFA_SMS = "network_action_user_login_mfa_sms", a.USER_LOGOUT = "network_action_user_logout", a.USER_PASSWORDLESS_INFO_FETCH = "network_action_user_passwordless_info_fetch", a.USER_PASSWORDLESS_LOGIN_CODE = "network_action_user_passwordless_login_code", a.USER_REGISTER = "network_action_user_register", a.USER_REGISTER_DEVICE_TOKEN = "network_action_user_register_device_token", a.USER_REGISTER_PHONE = "network_action_user_register_phone", a.USER_RESET_PASSWORD = "network_action_user_reset_password", a.USER_SETTINGS_UPDATE = "network_action_user_settings_update", a.USER_SURVEY_FETCH = "network_action_user_survey_fetch", a.USER_SURVEY_SEEN = "network_action_user_survey_seen", a.USER_UNREGISTER_DEVICE_TOKEN = "network_action_user_unregister_device_token", a.USER_VERIFY = "network_action_user_verify", a.USER_VERIFY_PHONE = "network_action_user_verify_phone", a.USER_VERIFY_RESEND = "network_action_user_verify_resend"
+            }), (s = i || (i = {})).ACTIVITIES = "impression_activities", s.ACTIVITIES_HAPPENING_NOW = "impression_activities_happening_now", s.ACTIVITY_BOOKMARK_SHARE_MODAL = "impression_activity_bookmark_share_modal", s.ACTIVITY_BOOSTING_UPSELL = "impression_activity_boosting_upsell", s.ACTIVITY_DETAILS = "impression_activity_details", s.ACTIVITY_NITRO_UPSELL = "impression_activity_nitro_upsell", s.ACTIVITY_SHARE_MOMENT_MODAL = "impression_activity_share_moment_modal", s.ACTIVITY_SHELF = "impression_activity_shelf", s.ACTIVITY_SHELF_SELECT_CHANNEL = "impression_activity_shelf_select_channel", s.APP_LAUNCHER_HOME_ACTIVITY_ITEM = "impression_app_launcher_home_activity_item", s.APPLICATION_LIBRARY = "impression_application_library", s.APPLICATION_STORE = "impression_application_store", s.APRIL_PREMIUM_MARKETING_DECO_CLAIMED_MODAL = "impression_april_premium_marketing_deco_claimed_modal", s.AVATAR_UPLOAD = "impression_avatar_upload", s.CHANNEL_ADD_INFO = "impression_channel_add_info", s.CHANNEL_ADD_MEMBERS = "impression_channel_add_members", s.CHANNEL_CALL_VIDEO_GRID = "impression_channel_call_video_grid", s.CHANNEL_CALL_VIDEO_GRID_VIEW = "impression_channel_call_video_grid_view", s.CHANNEL_VIEWED = "impression_channel_viewed", s.CLIP_EDITOR_VIEWED = "impression_clip_editor_viewed", s.CLIP_GALLERY_VIEWED = "impression_clip_gallery_viewed", s.CLYDE_AI_PROFILE_EMBED_VIEWED = "impression_clyde_ai_profile_embed_viewed", s.CONTACT_SYNC_CONTACT_INVITES = "impression_contact_sync_contact_invites", s.CONTACT_SYNC_INPUT_NAME = "impression_contact_sync_input_name", s.CONTACT_SYNC_START = "impression_contact_sync_start", s.CONTACT_SYNC_SUGGESTIONS = "impression_contact_sync_suggestions", s.CREATOR_PROMO_PAGE_GUILD_HEADER_UPSELL = "impression_creator_promo_page_guild_header_upsell", s.DIRECTORY_ADD_GUILD_CONFIRMATION = "impression_directory_add_guild_confirmation", s.DISCOVERABILITY = "impression_discoverability", s.DROPS_QUEST_COMPLETION = "impression_drops_quest_completion", s.DROPS_QUEST_ENROLLMENT = "impression_drops_quest_enrollment", s.EMBEDDED_ACTIVITY_HAPPENING_NOW = "impression_embedded_activity_happening_now", s.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING = "impression_enable_creator_monetization_accept_terms_landing", s.ENABLE_CREATOR_MONETIZATION_CREATE_REQUEST_LANDING = "impression_enable_creator_monetization_create_request_landing", s.ENABLE_CREATOR_MONETIZATION_GUILD_HEADER_UPSELL = "impression_enable_creator_monetization_guild_header_upsell", s.ENABLE_CREATOR_MONETIZATION_WAITLIST_LANDING = "impression_enable_creator_monetization_waitlist_landing", s.FRIENDS = "impression_friends", s.GAME_CONSOLE_DEVICE_LIST = "impression_game_console_device_list", s.GDM_SETTINGS_INVITES = "impression_gdm_settings_invites", s.GUILD_ADD_ACCEPT_INVITE = "impression_guild_add_accept_invite", s.GUILD_ADD_CHANNEL_PROMPT = "impression_guild_add_channel_prompt", s.GUILD_ADD_CUSTOMIZE = "impression_guild_add_customize", s.GUILD_ADD_GUILD_INVITE = "impression_guild_add_guild_invite", s.GUILD_ADD_INTENT_SELECTION = "impression_guild_add_intent_selection", s.GUILD_ADD_JOIN = "impression_guild_add_join", s.GUILD_CREATE_MODAL_JOIN = "impression_guild_create_modal_join", s.GUILD_ADD_LANDING = "impression_guild_add_landing", s.GUILD_CHANNEL = "impression_guild_channel", s.GUILD_DISCOVERY = "impression_guild_discovery", s.GUILD_INVITE = "impression_guild_invite", s.GUILD_INVITE_LINK_SETTINGS = "impression_guild_invite_link_settings", s.GUILD_INVITE_SEARCH = "impression_guild_invite_search", s.GUILD_MEMBER_VERIFICATION = "impression_guild_member_verification", s.GUILD_PERMANENT_LINKS_UPSELL = "impression_guild_permanent_links_upsell", s.GUILD_PRODUCT_LISTING_EMBED = "impression_guild_product_listing_embed", s.GUILD_PRODUCT_LISTING_INFO_MODAL = "impression_guild_product_listing_info_modal", s.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS = "impression_guild_role_subscription_store_page_guild_settings", s.GUILD_SETTINGS_ANALYTICS = "impression_guild_settings_analytics", s.GUILD_SETTINGS_AUDIT_LOG = "impression_guild_settings_audit_log", s.GUILD_SETTINGS_AUDIT_LOG_V2 = "impression_guild_settings_audit_log_v2", s.GUILD_SETTINGS_BANS = "impression_guild_settings_bans", s.GUILD_SETTINGS_BOOST_STATUS = "impression_guild_settings_boost_status", s.GUILD_SETTINGS_CHANNELS = "impression_guild_settings_channels", s.GUILD_SETTINGS_CLYDE = "impression_guild_settings_clyde", s.GUILD_SETTINGS_COMMUNITY_OVERVIEW = "impression_guild_settings_community_overview", s.GUILD_SETTINGS_COMMUNITY_WELCOME = "impression_guild_settings_community_welcome", s.GUILD_SETTINGS_DISCOVERY = "impression_guild_settings_discovery", s.GUILD_SETTINGS_DISCOVERY_LANDING_PAGE = "impression_guild_settings_discovery_landing_page", s.GUILD_SETTINGS_EMOJI = "impression_guild_settings_emoji", s.GUILD_SETTINGS_ENABLE_COMMUNITY = "impression_guild_settings_enable_community", s.GUILD_SETTINGS_INTEGRATION = "impression_guild_settings_integration", s.GUILD_SETTINGS_INVITES = "impression_guild_settings_invites", s.GUILD_SETTINGS_LANDING = "impression_guild_settings_landing", s.GUILD_SETTINGS_MEMBER_VERIFICATION = "impression_guild_settings_member_verification", s.GUILD_SETTINGS_MEMBERS = "impression_guild_settings_members", s.GUILD_SETTINGS_MODERATION = "impression_guild_settings_moderation", s.GUILD_SETTINGS_OVERVIEW = "impression_guild_settings_overview", s.GUILD_SETTINGS_PARTNER = "impression_guild_settings_partner", s.GUILD_SETTINGS_ROLES = "impression_guild_settings_roles", s.GUILD_SETTINGS_SAFETY = "impression_guild_settings_safety", s.GUILD_SETTINGS_SECURITY = "impression_guild_settings_security", s.GUILD_SETTINGS_SOUNDBOARD = "impression_guild_settings_soundboard", s.GUILD_SETTINGS_STICKERS = "impression_guild_settings_stickers", s.GUILD_SETTINGS_TEMPLATE = "impression_guild_settings_template", s.GUILD_SETTINGS_VANITY_URL = "impression_guild_settings_vanity_url", s.GUILD_SETTINGS_WEBHOOKS = "impression_guild_settings_webhooks", s.GUILD_SETTINGS_WIDGET = "impression_guild_settings_widget", s.GUILD_SHOP_EMBED = "impression_guild_shop_embed", s.GUILD_SHOP_PAGE = "impression_guild_shop_page", s.GUILD_SHOP_UPSELL = "impression_guild_shop_upsell", s.GUILD_TRANSFER_OWNERSHIP = "impression_guild_transfer_ownership", s.GUILD_TRANSFER_OWNERSHIP_CONFIRM_EMAIL_CODE = "impression_guild_transfer_ownership_confirm_email_code", s.GUILD_TRANSFER_OWNERSHIP_CONFIRM_SMS_CODE = "impression_guild_transfer_ownership_confirm_sms_code", s.GUILDS_EMPTY_NUX = "impression_guilds_empty_nux", s.HOTSPOT = "impression_hotspot", s.HUB_CREATE_GUILD_CUSTOMIZE = "impression_hub_create_guild_customize", s.HUB_CREATE_GUILD_TEMPLATE = "impression_hub_create_guild_template", s.HUB_EMAIL_SIGNUP = "impression_hub_email_signup", s.HUB_EMAIL_VERIFICATION_PAGE = "impression_hub_email_verification_page", s.HUB_EXISTING_GUILD_CHOOSE = "impression_hub_existing_guild_choose", s.HUB_EXISTING_GUILD_CUSTOMIZE = "impression_hub_existing_guild_customize", s.HUB_WAITLIST_SIGNUP = "impression_hub_waitlist_signup", s.INVITE_ACCEPT = "impression_invite_accept", s.LOCALIZED_PRICING_UPSELL_VIEWED = "impression_localized_pricing_upsell_viewed", s.MESSAGES_EMPTY_NUX = "impression_messages_empty_nux", s.MULTI_ACCOUNT_SWITCH_LANDING = "impression_multi_account_switch_landing", s.NEW_USER_INTENT_START = "impression_new_user_intent_start", s.NOTIFICATION_CENTER_LANDING = "impression_notification_center_landing", s.NOTIFICATION_SETTING_UNREAD_NUDGE = "impression_notification_setting_unread_nudge", s.POLL_EDITOR_VIEWED = "impression_poll_editor_viewed", s.POMELO_LANDING = "impression_pomelo_landing", s.PREMIUM_GUILD_SUBSCRIPTION_MARKETING_PAGE = "impression_premium_guild_subscription_marketing_page", s.PREMIUM_MARKETING_BANNER = "impression_premium_marketing_banner", s.PREMIUM_MARKETING_SURFACE = "impression_premium_marketing_surface", s.PREMIUM_MARKETING_TENURE_REWARD_CARD = "impression_premium_marketing_tenure_reward_card", s.PUSH_NOTIFICATION_PREPROMPT = "impression_push_notification_preprompt", s.PUSH_NOTIFICATION_REACTIVATION_PROMPT = "impression_push_notification_reactivation_prompt", s.QUESTS_LANDING_PAGE = "impression_quests_landing_page", s.REQUEST_REVIEW_MODAL = "impression_request_review_modal", s.ROLE_CREATE_ADD_MEMBERS = "impression_role_create_add_members", s.ROLE_CREATE_DISPLAY = "impression_role_create_display", s.ROLE_CREATE_PERMISSIONS = "impression_role_create_permissions", s.ROLE_SUBSCRIPTION_EMOJI_UPSELL = "impression_role_subscription_emoji_upsell", s.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_LANDING = "impression_role_subscription_initial_setup_modal_landing", s.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_TIER_STEP = "impression_role_subscription_initial_setup_modal_tier_step", s.ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR = "impression_role_subscription_listing_template_selector", s.ROLE_SUBSCRIPTION_LISTING_UPSELL_ERROR_PAGE = "impression_role_subscription_listing_upsell_error_page", s.SHELF_ACTIVITY_DETAILS = "impression_shelf_activity_details", s.SNOWSGIVING = "impression_snowsgiving", s.SOUNDBOARD_POPOUT = "impression_soundboard_popout", s.STAGE_DISCOVERY = "impression_stage_discovery", s.URF_CONFIRM_EMAIL_CODE = "impression_urf_confirm_email_code", s.URF_ENTER_EMAIL = "impression_urf_enter_email", s.USER_ACCOUNT_EMAIL_CHANGE_COMPLETE = "impression_user_account_email_change_complete", s.USER_ACCOUNT_EMAIL_CHANGE_ENTER_EMAIL = "impression_user_account_email_change_enter_email", s.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE = "impression_user_account_email_change_send_code", s.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE = "impression_user_account_email_change_verify_code", s.USER_ACCOUNT_EMAIL_RESEND_VERIFICATION_EMAIL = "impression_user_account_email_resend_verification_email", s.USER_ACCOUNT_PASSWORD_VERIFY = "impression_user_account_password_verify", s.USER_ACTION_REQUIRED = "impression_user_action_required", s.USER_ADD_PHONE = "impression_user_add_phone", s.USER_AGE_GATE = "impression_user_age_gate", s.USER_AGE_GATE_UNDERAGE = "impression_user_age_gate_underage", s.USER_AGREEMENTS = "impression_user_agreements", s.USER_CLYDE_AI_CONSENT_MODAL = "impression_user_clyde_ai_consent_modal", s.USER_LOGIN = "impression_user_login", s.USER_PASSWORDLESS_CODE_ENTRY = "impression_user_passwordless_code_entry", s.USER_PASSWORDLESS_INTRO = "impression_user_passwordless_intro", s.USER_REGISTER_ACCOUNT_INFORMATION = "impression_user_register_account_information", s.USER_REGISTER_IDENTITY = "impression_user_register_identity", s.USER_REGISTRATION = "impression_user_registration", s.USER_SETTINGS_CONNECTIONS = "impression_user_settings_connections", s.USER_VERIFICATION_MODAL = "impression_user_verification_modal", s.USER_VERIFY_PASSWORD = "impression_user_verify_password", s.USER_VERIFY_PHONE = "impression_user_verify_phone", s.USER_WELCOME = "impression_user_welcome", s.USER_YOU_SCREEN = "impression_user_you_screen", s.VIEW_PANEL_DEVTOOLS = "impression_view_panel_devtools", (a = r || (r = {})).APPLE_JWT_TOKEN_CREATE = "network_action_apple_jwt_token_create", a.AUTH_SESSIONS_LOGGED_OUT = "network_action_auth_sessions_logged_out", a.AUTHORIZE_IP = "network_action_authorize_ip", a.AUTHORIZE_PAYMENT = "network_action_authorize_payment", a.BUG_REPORT_SUBMIT = "network_action_bug_report_submit", a.CHANNEL_CREATE = "network_action_channel_create", a.DIRECTORY_GUILD_ENTRY_CREATE = "network_action_directory_guild_entry_create", a.DIRECTORY_GUILD_ENTRY_DELETE = "network_action_directory_guild_entry_delete", a.EMAIL_SETTINGS_FETCH = "network_action_email_settings_fetch", a.EMAIL_SETTINGS_UPDATE = "network_action_email_settings_update", a.EMBEDDED_ACTIVITIES_FETCH_SHELF = "network_action_embedded_activities_fetch_shelf", a.EMBEDDED_ACTIVITIES_LAUNCH = "network_action_embedded_activities_launch", a.FORGOT_PASSWORD = "network_action_forgot_password", a.GUILD_CREATE = "network_action_guild_create", a.GUILD_TRANSFER_OWNERSHIP = "network_action_guild_transfer_ownership", a.GUILD_TRANSFER_OWNERSHIP_SEND_CODE = "network_action_guild_transfer_ownership_send_code", a.HUB_EMAIL_VERIFY = "network_action_hub_email_verify", a.HUB_EMAIL_VERIFY_SEND = "network_action_hub_email_verify_send", a.HUB_WAITLIST_SIGNUP = "network_action_hub_waitlist_signup", a.INVITE_RESOLVE = "network_action_invite_resolve", a.INVITE_REVOKE = "network_action_invite_revoke", a.LOGIN_REQUEST_SMS_TOKEN = "network_action_login_request_sms_token", a.NCMEC_REPORT_CLOSE = "network_action_ncmec_report_close", a.NCMEC_REPORTABLE_CONTENT_CREATE = "network_action_ncmec_reportable_content_create", a.NOTIFICATION_CENTER_ITEM_DELETE = "network_action_notification_center_item_delete", a.NOTIFICATION_CENTER_PAGE_FETCH = "network_action_notification_center_page_fetch", a.POMELO_ATTEMPT = "network_action_pomelo_attempt", a.POMELO_CREATE = "network_action_pomelo_create", a.STREAM_NOTIFY = "network_action_stream_notify", a.USER_ACCEPT_AGREEMENTS = "network_action_user_accept_agreements", a.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE = "network_action_user_account_email_change_send_code", a.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE = "network_action_user_account_email_change_verify_code", a.USER_BULK_RELATIONSHIPS_UPDATE = "network_action_user_bulk_relationships_update", a.USER_CLYDE_AI_CONSENT_UPDATED = "network_action_user_clyde_ai_consent_updated", a.USER_COMMUNICATION_DISABLED_UPDATE = "network_action_user_communication_disabled_update", a.USER_CONNECTIONS_UPDATE = "network_action_user_connections_update", a.USER_CONTACTS_SYNC = "network_action_user_contacts_sync", a.USER_LOGIN = "network_action_user_login", a.USER_LOGIN_MFA = "network_action_user_login_mfa", a.USER_LOGIN_MFA_SMS = "network_action_user_login_mfa_sms", a.USER_LOGOUT = "network_action_user_logout", a.USER_PASSWORDLESS_INFO_FETCH = "network_action_user_passwordless_info_fetch", a.USER_PASSWORDLESS_LOGIN_CODE = "network_action_user_passwordless_login_code", a.USER_REGISTER = "network_action_user_register", a.USER_REGISTER_DEVICE_TOKEN = "network_action_user_register_device_token", a.USER_REGISTER_PHONE = "network_action_user_register_phone", a.USER_RESET_PASSWORD = "network_action_user_reset_password", a.USER_SETTINGS_UPDATE = "network_action_user_settings_update", a.USER_SURVEY_FETCH = "network_action_user_survey_fetch", a.USER_SURVEY_SEEN = "network_action_user_survey_seen", a.USER_UNREGISTER_DEVICE_TOKEN = "network_action_user_unregister_device_token", a.USER_VERIFY = "network_action_user_verify", a.USER_VERIFY_PHONE = "network_action_user_verify_phone", a.USER_VERIFY_RESEND = "network_action_user_verify_resend"
         },
         979675: function(e, t, n) {
             "use strict";
@@ -280846,7 +280913,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289091", "289091"), 10);
+                let s = parseInt((n = "289108", "289108"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308231,4 +308298,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.93894b23937b828843d4.js.map
+//# sourceMappingURL=35705.0388142ecd0660763b7a.js.map
