@@ -524,6 +524,7 @@ id,hash,label
 2024-03_polls_coachmark,1325121101,Show coachmark for poll creation entry point in guild
 2024-03_premium_offer_generic_endpoint,3577879213,Premium Offer Generic Endpoint
 2024-03_profile_mutuals,3478646609,Profile Mutuals
+2024-03_quest_bar_progress_cta,1001340284,Quest Bar Progress CTA
 2024-03_quests_activity_quest,1874994306,Activity Quest
 2024-03_quests_client_monitoring,2848826960,Quests client monitoring experiment
 2024-03_quests_members_list_entrypoint,950109088,Quests Members List Entrypoint

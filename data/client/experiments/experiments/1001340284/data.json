@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-03_quest_bar_progress_cta",
+    "label": "Quest Bar Progress CTA",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: Control",
+      "Treatment 1: Quest Bar Progress CTA enabled"
+    ],
+    "hash": 1001340284,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
