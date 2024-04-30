@@ -36821,7 +36821,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289191", ", Version Hash: ").concat("1c86bf6b27f2c40b91949a5f048dd502faf045c2")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289193", ", Version Hash: ").concat("192aec85cc3f62a690c747c680306b7445d3033c")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87172,8 +87172,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289191", "289191"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289191")), t = 0), t
+                let t = parseInt((e = "289193", "289193"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289193")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112301,8 +112301,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289191",
-                    versionHash: "1c86bf6b27f2c40b91949a5f048dd502faf045c2"
+                    buildNumber: "289193",
+                    versionHash: "192aec85cc3f62a690c747c680306b7445d3033c"
                 }
             }
             n.r(t), n.d(t, {
@@ -135954,7 +135954,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 addAppliedGuildBoosts: function() {
-                    return T
+                    return f
                 }
             }), n("653041"), n("998459"), n("47120");
             var i = n("735250");
@@ -135970,23 +135970,24 @@
                 c = n("267642"),
                 E = n("852679"),
                 I = n("981631");
-            async function T(e) {
+            let T = "apply-guild-boost-modal";
+            async function f(e) {
                 let {
                     analyticsLocations: t,
-                    analyticsLocation: T,
-                    analyticsSourceLocation: f,
-                    numberOfBoostsToAdd: S,
-                    onClose: h,
-                    closeLayer: A,
-                    onSubscriptionConfirmation: m,
-                    guild: N,
-                    handleSubscribeModalClose: p,
-                    disablePremiumUpsell: O,
-                    inPopout: R,
-                    applicationId: C
-                } = e, g = R ? r.POPOUT_MODAL_CONTEXT : r.DEFAULT_MODAL_CONTEXT, L = l.default.getCurrentUser();
-                if (null == L) return;
-                if (!L.verified) {
+                    analyticsLocation: f,
+                    analyticsSourceLocation: S,
+                    numberOfBoostsToAdd: h,
+                    onClose: A,
+                    closeLayer: m,
+                    onSubscriptionConfirmation: N,
+                    guild: p,
+                    handleSubscribeModalClose: O,
+                    disablePremiumUpsell: R,
+                    inPopout: C,
+                    applicationId: g
+                } = e, L = C ? r.POPOUT_MODAL_CONTEXT : r.DEFAULT_MODAL_CONTEXT, D = l.default.getCurrentUser();
+                if (null == D) return;
+                if (!D.verified) {
                     (0, r.openModalLazy)(async () => {
                         let {
                             default: e
@@ -136002,21 +136003,20 @@
                             })
                         }
                     }, {
-                        contextKey: g
+                        contextKey: L
                     });
                     return
                 }
-                let D = [];
-                !d.default.isLoadedForPremiumSKUs() && D.push((0, o.fetchPremiumSubscriptionPlans)()), !u.default.hasFetched && (D.push(s.fetchSubscriptions()), D.push((0, a.fetchGuildBoostSlots)())), D.length > 0 && await Promise.allSettled(D);
-                let v = (0, c.getAvailableGuildBoostSlots)(u.default.boostSlots),
-                    M = v.length,
-                    y = e => {
-                        null == h || h(), null == p || p(e)
+                let v = [];
+                !d.default.isLoadedForPremiumSKUs() && v.push((0, o.fetchPremiumSubscriptionPlans)()), !u.default.hasFetched && (v.push(s.fetchSubscriptions()), v.push((0, a.fetchGuildBoostSlots)())), v.length > 0 && await Promise.allSettled(v);
+                let M = (0, c.getAvailableGuildBoostSlots)(u.default.boostSlots),
+                    y = M.length,
+                    P = e => {
+                        null == A || A(), null == O || O(e)
                     };
-                if (M > 0 && (null == S || M >= S)) {
+                if (y > 0 && (null == h || y >= h)) {
                     let e;
-                    1 === M ? e = v.slice(0, 1) : null != S && (e = v.slice(0, S));
-                    let t = await (0, r.openModalLazy)(async () => {
+                    1 === y ? e = M.slice(0, 1) : null != h && (e = M.slice(0, h)), await (0, r.openModalLazy)(async () => {
                         let {
                             default: t
                         } = await Promise.all([n.e("49237"), n.e("99387"), n.e("15972"), n.e("63438"), n.e("62511"), n.e("8016"), n.e("22646"), n.e("68451"), n.e("25220")]).then(n.bind(n, "760558"));
@@ -136028,36 +136028,37 @@
                             return (0, i.jsx)(t, {
                                 ...s,
                                 onClose: e => {
-                                    r(), y(e)
+                                    r(), P(e)
                                 },
-                                selectedGuild: N,
+                                selectedGuild: p,
                                 locationSection: I.AnalyticsPages.PREMIUM_GUILD_USER_MODAL,
                                 guildBoostSlots: e
                             })
                         }
                     }, {
+                        modalKey: T,
                         onCloseRequest: () => {
-                            null != t && (0, r.closeModal)(t), y(!1)
+                            (0, r.closeModal)(T), P(!1)
                         },
-                        contextKey: g
+                        contextKey: L
                     })
                 } else(0, E.default)({
                     analyticsLocations: t,
-                    analyticsLocation: T,
-                    analyticsSourceLocation: f,
-                    guildId: N.id,
+                    analyticsLocation: f,
+                    analyticsSourceLocation: S,
+                    guildId: p.id,
                     closeLayer: () => {
-                        null == h || h(), null == A || A(), _.default.track(I.AnalyticEvents.MODAL_DISMISSED, {
+                        null == A || A(), null == m || m(), _.default.track(I.AnalyticEvents.MODAL_DISMISSED, {
                             type: I.AnalyticsPages.PREMIUM_GUILD_USER_MODAL,
-                            location_section: T.section
+                            location_section: f.section
                         })
                     },
-                    totalNumberOfSlotsToAssign: null != S ? S : 1,
-                    onCloseModal: y,
-                    disablePremiumUpsell: O,
-                    onSubscriptionConfirmation: m,
-                    inPopout: R,
-                    applicationId: C
+                    totalNumberOfSlotsToAssign: null != h ? h : 1,
+                    onCloseModal: P,
+                    disablePremiumUpsell: R,
+                    onSubscriptionConfirmation: N,
+                    inPopout: C,
+                    applicationId: g
                 })
             }
         },
@@ -167635,8 +167636,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714503216438",
-                                    build_number: "289191"
+                                    built_at: "1714503270651",
+                                    build_number: "289193"
                                 }
                             },
                             retries: 1
@@ -245711,7 +245712,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "1c86bf6b27f2c40b91949a5f048dd502faf045c2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "192aec85cc3f62a690c747c680306b7445d3033c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -274230,7 +274231,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289191"
+                                build_number: "289193"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -281447,7 +281448,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289191", "289191"), 10);
+                let s = parseInt((n = "289193", "289193"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308832,4 +308833,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.0cb5f471fd54e80632cf.js.map
+//# sourceMappingURL=35705.c8dc1d0f33d3f021c282.js.map
