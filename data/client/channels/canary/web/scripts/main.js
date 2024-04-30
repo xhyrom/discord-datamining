@@ -36825,7 +36825,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289399", ", Version Hash: ").concat("ea928b904022dac598d2fb4134ea3fc74a15f98e")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289402", ", Version Hash: ").concat("444978573fe8c480df736170b085c48d6f81c627")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87200,8 +87200,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289399", "289399"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289399")), t = 0), t
+                let t = parseInt((e = "289402", "289402"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289402")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -113722,8 +113722,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289399",
-                    versionHash: "ea928b904022dac598d2fb4134ea3fc74a15f98e"
+                    buildNumber: "289402",
+                    versionHash: "444978573fe8c480df736170b085c48d6f81c627"
                 }
             }
             n.r(t), n.d(t, {
@@ -169046,8 +169046,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714519851923",
-                                    build_number: "289399"
+                                    built_at: "1714520097437",
+                                    build_number: "289402"
                                 }
                             },
                             retries: 1
@@ -209329,7 +209329,7 @@
                     return i
                 },
                 default: function() {
-                    return g
+                    return C
                 }
             }), n("653041");
             var i, r, s = n("735250");
@@ -209338,60 +209338,60 @@
                 o = n.n(a),
                 l = n("481060"),
                 u = n("315263"),
-                d = n("40851"),
-                _ = n("100527"),
-                c = n("906732"),
-                E = n("688465"),
-                I = n("617136"),
-                T = n("497505"),
-                f = n("626135"),
-                S = n("785717"),
-                h = n("221292"),
-                A = n("290421"),
-                m = n("318661"),
-                N = n("228168"),
-                p = n("981631"),
-                O = n("689938"),
-                R = n("845713"),
-                C = n("839973");
+                d = n("100527"),
+                _ = n("906732"),
+                c = n("688465"),
+                E = n("617136"),
+                I = n("497505"),
+                T = n("626135"),
+                f = n("785717"),
+                S = n("221292"),
+                h = n("290421"),
+                A = n("318661"),
+                m = n("228168"),
+                N = n("981631"),
+                p = n("689938"),
+                O = n("845713"),
+                R = n("839973");
 
-            function g(e) {
+            function C(e) {
                 let {
                     user: t,
                     guildId: n,
                     className: i,
                     shrinkAtCount: r,
                     shrinkToSize: a,
-                    isTryItOutFlow: g,
+                    isTryItOutFlow: C,
+                    onBadgeClick: g,
                     size: L = 0
-                } = e, v = (0, m.default)(t.id, n), {
+                } = e, v = (0, A.default)(t.id, n), {
                     analyticsLocations: D
-                } = (0, c.default)(_.default.BADGE), {
+                } = (0, _.default)(d.default.BADGE), {
                     trackUserProfileAction: M,
                     ...y
-                } = (0, S.useUserProfileAnalyticsContext)(), P = (0, A.default)(v).map(e => ({
+                } = (0, f.useUserProfileAnalyticsContext)(), P = (0, h.default)(v).map(e => ({
                     ...e,
-                    src: (0, N.getBadgeAsset)(e.icon)
-                })), U = (0, d.useWindowDispatch)();
+                    src: (0, m.getBadgeAsset)(e.icon)
+                }));
                 if (t.isClyde()) return (0, s.jsx)("div", {
-                    className: o()(i, R.container, R.clydeBadgeList),
-                    "aria-label": O.default.Messages.PROFILE_USER_BADGES,
+                    className: o()(i, O.container, O.clydeBadgeList),
+                    "aria-label": p.default.Messages.PROFILE_USER_BADGES,
                     role: "group",
-                    children: (0, s.jsx)(E.default, {})
+                    children: (0, s.jsx)(c.default, {})
                 });
-                g && null == P.find(e => "premium" === e.id) && P.push({
+                C && null == P.find(e => "premium" === e.id) && P.push({
                     id: "premium",
-                    src: C,
-                    description: O.default.Messages.PREMIUM_BADGE_TOOLTIP.format({
+                    src: R,
+                    description: p.default.Messages.PREMIUM_BADGE_TOOLTIP.format({
                         date: new Date
                     })
                 });
-                let b = null != r && null != a && P.length > r ? a : L;
-                return (0, s.jsx)(c.AnalyticsLocationProvider, {
+                let U = null != r && null != a && P.length > r ? a : L;
+                return (0, s.jsx)(_.AnalyticsLocationProvider, {
                     value: D,
                     children: (0, s.jsx)("div", {
-                        className: o()(i, P.length > 0 ? R.containerWithContent : R.container),
-                        "aria-label": O.default.Messages.PROFILE_USER_BADGES,
+                        className: o()(i, P.length > 0 ? O.containerWithContent : O.container),
+                        "aria-label": p.default.Messages.PROFILE_USER_BADGES,
                         role: "group",
                         children: P.map(e => (0, s.jsx)(l.Tooltip, {
                             position: "top",
@@ -209403,7 +209403,7 @@
                                     var i;
                                     M({
                                         action: "PRESS_BADGE"
-                                    }), (0, h.trackUserProfileBadgePressed)({
+                                    }), (0, S.trackUserProfileBadgePressed)({
                                         badge: e.id,
                                         analyticsLocations: D,
                                         ...y
@@ -209411,13 +209411,13 @@
                                     let r = null != e.link ? (0, u.default)(e.link, {
                                         analyticsLocations: D
                                     }) : null;
-                                    if (null != r) return U.dispatch(p.ComponentActions.POPOUT_CLOSE), r(n)
+                                    if (null != r) return null == g || g(), r(n)
                                 },
                                 onMouseEnter: () => {
                                     var n;
-                                    e.id === A.QUEST_COMPLETED_BADGE && (f.default.track(p.AnalyticEvents.QUEST_CONTENT_VIEWED, {
-                                        ...(0, I.getContentProperties)(T.QuestContent.QUEST_BADGE)
-                                    }), (0, h.trackUserProfileBadgeHovered)({
+                                    e.id === h.QUEST_COMPLETED_BADGE && (T.default.track(N.AnalyticEvents.QUEST_CONTENT_VIEWED, {
+                                        ...(0, E.getContentProperties)(I.QuestContent.QUEST_BADGE)
+                                    }), (0, S.trackUserProfileBadgeHovered)({
                                         badge: e.id,
                                         analyticsLocations: D,
                                         ...y
@@ -209429,10 +209429,10 @@
                                     "aria-hidden": !0,
                                     src: e.src,
                                     className: o()({
-                                        [R.profileBadge24]: 0 === b,
-                                        [R.profileBadge22]: 1 === b,
-                                        [R.profileBadge20]: 2 === b,
-                                        [R.profileBadge18]: 3 === b
+                                        [O.profileBadge24]: 0 === U,
+                                        [O.profileBadge22]: 1 === U,
+                                        [O.profileBadge20]: 2 === U,
+                                        [O.profileBadge18]: 3 === U
                                     })
                                 })
                             })
@@ -211923,10 +211923,11 @@
                     user: t,
                     guildId: n,
                     isTryItOutFlow: r,
-                    forProfileEffectModal: s
-                } = e, a = (0, l.useStateFromStores)([O.default], () => O.default.getUserProfile(t.id), [t]), o = (0, l.useStateFromStores)([f.default], () => f.default.getGuild(n), [n]), _ = (0, E.useClydeProfilesEnabled)(o);
+                    forProfileEffectModal: s,
+                    onClick: a
+                } = e, o = (0, l.useStateFromStores)([O.default], () => O.default.getUserProfile(t.id), [t]), _ = (0, l.useStateFromStores)([f.default], () => f.default.getGuild(n), [n]), c = (0, E.useClydeProfilesEnabled)(_);
                 return (0, i.jsxs)(i.Fragment, {
-                    children: [(null == a ? void 0 : a.profileFetchFailed) && (!t.isClyde() || _) && (0, i.jsx)(d.Tooltip, {
+                    children: [(null == o ? void 0 : o.profileFetchFailed) && (!t.isClyde() || c) && (0, i.jsx)(d.Tooltip, {
                         text: U.default.Messages.USER_PROFILE_LOAD_ERROR,
                         spacing: 16,
                         children: e => (0, i.jsx)(S.default, {
@@ -211939,7 +211940,8 @@
                         user: t,
                         guildId: n,
                         isTryItOutFlow: r,
-                        size: L.BadgeSizes.SIZE_22
+                        size: L.BadgeSizes.SIZE_22,
+                        onBadgeClick: a
                     })]
                 })
             }
@@ -212083,7 +212085,8 @@
                         profileType: M.UserProfileTypes.POPOUT
                     }), (0, i.jsx)(B, {
                         user: t,
-                        guildId: r
+                        guildId: r,
+                        onClick: a
                     })]
                 })
             }
@@ -247173,7 +247176,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ea928b904022dac598d2fb4134ea3fc74a15f98e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "444978573fe8c480df736170b085c48d6f81c627"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -275701,7 +275704,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289399"
+                                build_number: "289402"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282918,7 +282921,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289399", "289399"), 10);
+                let s = parseInt((n = "289402", "289402"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -310303,4 +310306,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.e00ce26058a2e3d15338.js.map
+//# sourceMappingURL=35705.28ac2c0be29a7f797402.js.map
