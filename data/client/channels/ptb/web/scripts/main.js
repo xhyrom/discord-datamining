@@ -36821,7 +36821,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289320", ", Version Hash: ").concat("b20fa7ca8e8dcb9782e746f9557d1b3d95fc5acd")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289339", ", Version Hash: ").concat("07096a1499dd9cb90835ebdfe0c3919df3547da0")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87173,8 +87173,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289320", "289320"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289320")), t = 0), t
+                let t = parseInt((e = "289339", "289339"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289339")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -113695,8 +113695,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289320",
-                    versionHash: "b20fa7ca8e8dcb9782e746f9557d1b3d95fc5acd"
+                    buildNumber: "289339",
+                    versionHash: "07096a1499dd9cb90835ebdfe0c3919df3547da0"
                 }
             }
             n.r(t), n.d(t, {
@@ -168930,8 +168930,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714513051447",
-                                    build_number: "289320"
+                                    built_at: "1714514539365",
+                                    build_number: "289339"
                                 }
                             },
                             retries: 1
@@ -186196,7 +186196,7 @@
                     },
                     trackGuildAndChannelMetadata: r
                 })
-            }(i = r || (r = {})).LEARN_MORE = "LEARN_MORE", i.SHOW_REWARD = "SHOW_REWARD", i.CLAIM_REWARD = "CLAIM_REWARD", i.GET_REWARD_CODE = "GET_REWARD_CODE", i.COPY_REWARD_CODE = "COPY_REWARD_CODE", i.ACCEPT_QUEST = "ACCEPT_QUEST", i.COPY_QUEST_URL = "COPY_QUEST_URL", i.TRACK_PROGRESS = "TRACK_PROGRESS", i.OPEN_DISCLOSURE = "OPEN_DISCLOSURE", i.WATCH_STREAM = "WATCH_STREAM", i.REWARD_LEARN_MORE = "REWARD_LEARN_MORE", i.OPEN_CONTEXT_MENU = "OPEN_CONTEXT_MENU", i.CONTEXT_MENU_COPY_LINK = "CONTEXT_MENU.COPY_LINK", i.CONTEXT_MENU_HIDE_CONTENT = "CONTEXT_MENU.HIDE_CONTENT", i.CONTEXT_MENU_OPEN_GAME_LINK = "CONTEXT_MENU.OPEN_GAME_LINK", i.CONTEXT_MENU_OPEN_DISCLOSURE = "CONTEXT_MENU.OPEN_DISCLOSURE", i.CONTEXT_MENU_LEARN_MORE = "CONTEXT_MENU.LEARN_MORE"
+            }(i = r || (r = {})).LEARN_MORE = "LEARN_MORE", i.SHOW_REWARD = "SHOW_REWARD", i.CLAIM_REWARD = "CLAIM_REWARD", i.GET_REWARD_CODE = "GET_REWARD_CODE", i.COPY_REWARD_CODE = "COPY_REWARD_CODE", i.ACCEPT_QUEST = "ACCEPT_QUEST", i.COPY_QUEST_URL = "COPY_QUEST_URL", i.TRACK_PROGRESS = "TRACK_PROGRESS", i.OPEN_DISCLOSURE = "OPEN_DISCLOSURE", i.WATCH_STREAM = "WATCH_STREAM", i.REWARD_LEARN_MORE = "REWARD_LEARN_MORE", i.OPEN_GAME_LINK = "OPEN_GAME_LINK", i.OPEN_CONTEXT_MENU = "OPEN_CONTEXT_MENU", i.CONTEXT_MENU_COPY_LINK = "CONTEXT_MENU.COPY_LINK", i.CONTEXT_MENU_HIDE_CONTENT = "CONTEXT_MENU.HIDE_CONTENT", i.CONTEXT_MENU_OPEN_GAME_LINK = "CONTEXT_MENU.OPEN_GAME_LINK", i.CONTEXT_MENU_OPEN_DISCLOSURE = "CONTEXT_MENU.OPEN_DISCLOSURE", i.CONTEXT_MENU_LEARN_MORE = "CONTEXT_MENU.LEARN_MORE"
         },
         272008: function(e, t, n) {
             "use strict";
@@ -188176,36 +188176,48 @@
             "use strict";
             n.r(t), n.d(t, {
                 useHandleClaimQuestsReward: function() {
-                    return _
+                    return c
+                },
+                useHasLaunchedGame: function() {
+                    return E
                 }
             });
             var i = n("470079"),
                 r = n("442837"),
-                s = n("594174"),
-                a = n("617136"),
-                o = n("918701"),
-                l = n("920916"),
-                u = n("669041"),
-                d = n("341907");
+                s = n("594190"),
+                a = n("594174"),
+                o = n("617136"),
+                l = n("918701"),
+                u = n("920916"),
+                d = n("669041"),
+                _ = n("341907");
 
-            function _(e) {
+            function c(e) {
                 let {
                     quest: t,
                     location: n
-                } = e, _ = (0, r.useStateFromStores)([s.default], () => {
+                } = e, s = (0, r.useStateFromStores)([a.default], () => {
                     var e;
-                    return null === (e = s.default.getCurrentUser()) || void 0 === e ? void 0 : e.verified
+                    return null === (e = a.default.getCurrentUser()) || void 0 === e ? void 0 : e.verified
                 });
                 return i.useCallback(() => {
-                    null != t && ((0, a.trackQuestContentClicked)({
+                    null != t && ((0, o.trackQuestContentClicked)({
                         questId: t.id,
                         questContent: n,
-                        questContentCTA: a.QuestContentCTA.CLAIM_REWARD
-                    }), _ ? (0, o.hasQuestCollectibleRewards)(t.config) ? (0, l.openCollectibleRewardModal)(t, n) : (0, d.openQuestsRewardCodeModal)({
+                        questContentCTA: o.QuestContentCTA.CLAIM_REWARD
+                    }), s ? (0, l.hasQuestCollectibleRewards)(t.config) ? (0, u.openCollectibleRewardModal)(t, n) : (0, _.openQuestsRewardCodeModal)({
                         questId: t.id,
                         location: n
-                    }) : (0, u.openRewardModalUnverified)())
-                }, [t, n, _])
+                    }) : (0, d.openRewardModalUnverified)())
+                }, [t, n, s])
+            }
+
+            function E(e) {
+                var t;
+                let n = (0, r.useStateFromStoresArray)([s.default], () => s.default.getGamesSeen(!1)).find(t => (null == t ? void 0 : t.id) === e);
+                if (null == n) return !1;
+                let i = Date.now() - 2592e7;
+                return i <= (null !== (t = n.lastLaunched) && void 0 !== t ? t : 0)
             }
         },
         313122: function(e, t, n) {
@@ -189209,15 +189221,21 @@
         341907: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                openGameLink: function() {
+                    return u
+                },
                 openQuestsRewardCodeModal: function() {
-                    return s
+                    return l
                 }
             });
             var i = n("735250");
             n("470079");
-            var r = n("481060");
+            var r = n("481060"),
+                s = n("782568"),
+                a = n("49012"),
+                o = n("617136");
 
-            function s(e) {
+            function l(e) {
                 let {
                     questId: t,
                     location: s
@@ -189231,6 +189249,19 @@
                         questId: t,
                         location: s
                     })
+                })
+            }
+
+            function u(e, t) {
+                (0, a.handleClick)({
+                    href: e.config.getGameLink,
+                    onConfirm: () => {
+                        (0, o.trackQuestContentClicked)({
+                            questId: e.id,
+                            questContent: t.content,
+                            questContentCTA: t.ctaContent
+                        }), (0, s.default)(e.config.getGameLink)
+                    }
                 })
             }
         },
@@ -247018,7 +247049,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b20fa7ca8e8dcb9782e746f9557d1b3d95fc5acd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "07096a1499dd9cb90835ebdfe0c3919df3547da0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -275546,7 +275577,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289320"
+                                build_number: "289339"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282763,7 +282794,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289320", "289320"), 10);
+                let s = parseInt((n = "289339", "289339"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -310148,4 +310179,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.d4983d960c8ccb4f4959.js.map
+//# sourceMappingURL=35705.db9b739d31007d77677e.js.map
