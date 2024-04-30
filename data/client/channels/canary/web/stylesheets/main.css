@@ -56598,7 +56598,8 @@ html .invoiceCancelRow_aa7946 {
     align-items: center;
     justify-content: center;
     width: 244px;
-    height: 400px
+    height: 400px;
+    z-index: 25
 }
 
 .clanEnvelopeTop_bf09a8 {
@@ -56660,12 +56661,12 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .clanCardInnerLeft__611c8 {
-    transform: rotate(-2deg)scale(.75);
+    transform: rotate(-4deg)scale(.75);
     left: 0
 }
 
 .clanCardInnerRight__3caa2 {
-    transform: rotate(2deg)scale(.75);
+    transform: rotate(4deg)scale(.75);
     right: 0
 }
 
@@ -135879,4 +135880,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.076a4e64546ae09f6513.css.map*/
+/*# sourceMappingURL=99387.ae60aa97b2f0314539ca.css.map*/
