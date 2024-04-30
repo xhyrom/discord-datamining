@@ -3616,6 +3616,10 @@
       "POST"
     ]
   },
+  "APPLICATIONS_WITH_ASSETS": {
+    "url": "/applications-with-assets",
+    "allowed_methods": null
+  },
   "APPLICATION_OWNER_TRANSFER": {
     "url": "/applications/:param/transfer",
     "allowed_methods": [
@@ -3995,7 +3999,12 @@
   },
   "CLAN_SETTINGS": {
     "url": "/clan/:param/settings",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "DISABLE_CLAN": {
     "url": "/clan/:param/disable",
