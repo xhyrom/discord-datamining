@@ -56588,7 +56588,7 @@ img.thumbnail__18ece {
 }
 
 .button_cbc314 {
-    width: 240px;
+    min-width: 240px;
     border-radius: 8px
 }
 
@@ -56724,12 +56724,12 @@ img.thumbnail__18ece {
 }
 
 .upsellDetailText__886b7 {
-    color: var(--primary-330)
+    color: var(--header-secondary)
 }
 
 .upsellIcon__05e46 {
     margin-bottom: 8px;
-    fill: var(--primary-330)
+    fill: var(--header-secondary)
 }
 
 .upsellButton__6cfb7 {
@@ -56739,20 +56739,15 @@ img.thumbnail__18ece {
 }
 
 .buttonWithSelect_eaaa35 {
-    width: 152px;
+    min-width: 152px;
     height: auto
 }
 
 .upsellSelect_e29580 {
-    border: 1px solid var(--primary-330) !important;
-    background-color: #1e1f22 !important;
+    border: 1px solid var(--border-subtle) !important;
     width: 288px;
     border-radius: 8px;
-    color: var(--primary-330)
-}
-
-.upsellSelectWrapper__63bb4 svg {
-    color: var(--primary-330) !important
+    color: var(--header-secondary)
 }
 
 .container__5c0c5 {
@@ -135853,4 +135848,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.3e69b0b61142c4859c29.css.map*/
+/*# sourceMappingURL=99387.e3a6b669937d471fa159.css.map*/
