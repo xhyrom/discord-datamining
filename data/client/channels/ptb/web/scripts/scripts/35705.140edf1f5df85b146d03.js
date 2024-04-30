@@ -36737,7 +36737,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289031", ", Version Hash: ").concat("ca8ee72b2949476ddc227a83f0a8bd82b00c09c7")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289032", ", Version Hash: ").concat("81b2422e85c6b64b1d1fff063f8ad81685a2b111")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87067,8 +87067,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289031", "289031"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289031")), t = 0), t
+                let t = parseInt((e = "289032", "289032"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289032")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -88676,10 +88676,12 @@
                 a = n("508688"),
                 o = n("806519"),
                 l = n("626135"),
-                u = n("981631"),
-                d = n("474936"),
-                _ = n("689938"),
-                c = n("129235");
+                u = n("768581"),
+                d = n("981631"),
+                _ = n("185923"),
+                c = n("474936"),
+                E = n("689938"),
+                I = n("129235");
             t.default = e => {
                 let {
                     emojis: t
@@ -88687,40 +88689,44 @@
                     analyticsLocations: n
                 } = (0, s.default)();
                 r.useEffect(() => {
-                    l.default.track(u.AnalyticEvents.PREMIUM_UPSELL_VIEWED, {
-                        type: d.PremiumUpsellTypes.EMOJI_AUTOCOMPLETE_INLINE,
+                    l.default.track(d.AnalyticEvents.PREMIUM_UPSELL_VIEWED, {
+                        type: c.PremiumUpsellTypes.EMOJI_AUTOCOMPLETE_INLINE,
                         location_stack: n
                     })
                 }, [n]);
-                let E = (0, i.jsx)("div", {
-                    className: c.emojis,
+                let T = (0, i.jsx)("div", {
+                    className: I.emojis,
                     children: t.slice(0, 3).map((e, t) => {
-                        if ("" === e.url) return null;
+                        if (null == e.id) return null;
                         let n = (0, i.jsx)("div", {
-                            className: c.emojiBackground,
+                            className: I.emojiBackground,
                             children: (0, i.jsx)("img", {
                                 alt: e.name,
-                                className: c.emoji,
-                                src: e.url
+                                className: I.emoji,
+                                src: u.default.getEmojiURL({
+                                    id: e.id,
+                                    animated: e.animated,
+                                    size: _.EMOJI_URL_BASE_SIZE
+                                })
                             })
                         }, e.id);
                         return 2 === t ? n : (0, i.jsx)(o.default, {
-                            className: c.emojiMask,
+                            className: I.emojiMask,
                             mask: o.default.Masks.AUTOCOMPLETE_EMOJI_UPSELL_EMOJI,
                             children: n
                         }, e.id)
                     })
                 });
                 return (0, i.jsxs)(a.AutocompleteRowContent, {
-                    className: c.upsell,
+                    className: I.upsell,
                     children: [(0, i.jsx)(a.AutocompleteRowContentPrimary, {
                         children: (0, i.jsx)(a.AutocompleteRowHeading, {
-                            children: _.default.Messages.AUTOCOMPLETE_EMOJI_UPSELL.format({
+                            children: E.default.Messages.AUTOCOMPLETE_EMOJI_UPSELL.format({
                                 count: t.length
                             })
                         })
                     }), (0, i.jsx)(a.AutocompleteRowContentSecondary, {
-                        children: E
+                        children: T
                     })]
                 })
             }
@@ -112190,8 +112196,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289031",
-                    versionHash: "ca8ee72b2949476ddc227a83f0a8bd82b00c09c7"
+                    buildNumber: "289032",
+                    versionHash: "81b2422e85c6b64b1d1fff063f8ad81685a2b111"
                 }
             }
             n.r(t), n.d(t, {
@@ -117654,6 +117660,9 @@
                 EMOJI_RE: function() {
                     return E
                 },
+                EMOJI_URL_BASE_SIZE: function() {
+                    return f
+                },
                 EmojiDisabledReasons: function() {
                     return r
                 },
@@ -117667,19 +117676,20 @@
                     return i
                 },
                 isExternalEmojiAllowedForIntention: function() {
-                    return S
+                    return h
                 }
             }), n("47120");
             let _ = 50,
                 c = 32,
                 E = /[^a-zA-Z0-9_]/g,
                 I = 256,
-                T = 262144;
+                T = 262144,
+                f = 48;
             (o = i || (i = {}))[o.NonDiversityPerRow = 42] = "NonDiversityPerRow", o[o.DiversityPerRow = 10] = "DiversityPerRow", o[o.PickerPerRow = 11] = "PickerPerRow", o[o.PickerCount = 50] = "PickerCount", (l = r || (r = {}))[l.DISALLOW_EXTERNAL = 0] = "DISALLOW_EXTERNAL", l[l.GUILD_SUBSCRIPTION_UNAVAILABLE = 1] = "GUILD_SUBSCRIPTION_UNAVAILABLE", l[l.PREMIUM_LOCKED = 2] = "PREMIUM_LOCKED", l[l.ONLY_GUILD_EMOJIS_ALLOWED = 3] = "ONLY_GUILD_EMOJIS_ALLOWED", l[l.ROLE_SUBSCRIPTION_LOCKED = 4] = "ROLE_SUBSCRIPTION_LOCKED", l[l.ROLE_SUBSCRIPTION_UNAVAILABLE = 5] = "ROLE_SUBSCRIPTION_UNAVAILABLE", (u = s || (s = {}))[u.REACTION = 0] = "REACTION", u[u.STATUS = 1] = "STATUS", u[u.COMMUNITY_CONTENT = 2] = "COMMUNITY_CONTENT", u[u.CHAT = 3] = "CHAT", u[u.GUILD_STICKER_RELATED_EMOJI = 4] = "GUILD_STICKER_RELATED_EMOJI", u[u.GUILD_ROLE_BENEFIT_EMOJI = 5] = "GUILD_ROLE_BENEFIT_EMOJI", u[u.COMMUNITY_CONTENT_ONLY = 6] = "COMMUNITY_CONTENT_ONLY", u[u.SOUNDBOARD = 7] = "SOUNDBOARD", u[u.VOICE_CHANNEL_TOPIC = 8] = "VOICE_CHANNEL_TOPIC", u[u.GIFT = 9] = "GIFT", u[u.AUTO_SUGGESTION = 10] = "AUTO_SUGGESTION", u[u.POLLS = 11] = "POLLS";
-            let f = new Set([2, 6, 4, 5, 7, 9]);
+            let S = new Set([2, 6, 4, 5, 7, 9]);
 
-            function S(e) {
-                return !f.has(e)
+            function h(e) {
+                return !S.has(e)
             }(d = a || (a = {})).EmojiButtonMouseEntered = "EMOJI_BUTTON_MOUSE_ENTERED", d.EmojiButtonFocused = "EMOJI_BUTTON_FOCUSED", d.ChatInputExpressionPressed = "CHAT_INPUT_EXPRESSION_PRESSED", d.ChatInputSuggestionsShown = "CHAT_INPUT_SUGGESTIONS_SHOWN", d.SearchEmojiKeybindPressed = "SEARCH_EMOJI_KEYBIND_PRESSED", d.AutocompleteTyped = "AUTOCOMPLETE_TYPED", d.AutocompleteWrapperShown = "AUTOCOMPLETE_WRAPPER_SHOWN", d.GuildLeaveModalShown = "GUILD_LEAVE_MODAL_SHOWN", d.AddReactionPopoutMouseEntered = "ADD_REACTION_POPOUT_MOUSE_ENTERED", d.AddReactionPopoutFocused = "ADD_REACTION_POPOUT_FOCUSED", d.MessageContextMenuMouseEntered = "MESSAGE_CONTEXT_MENU_MOUSE_ENTERED", d.EmojiPickerActionSheetOpened = "EMOJI_PICKER_ACTION_SHEET_OPENED", d.TrackOpenPopoutUsed = "TRACK_OPEN_POPOUT_USED", d.CustomEmojiTooltipShown = "CUSTOM_EMOJI_TOOLTIP_SHOWN"
         },
         339085: function(e, t, n) {
@@ -167002,8 +167012,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714489874268",
-                                    build_number: "289031"
+                                    built_at: "1714490376431",
+                                    build_number: "289032"
                                 }
                             },
                             retries: 1
@@ -244960,7 +244970,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ca8ee72b2949476ddc227a83f0a8bd82b00c09c7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "81b2422e85c6b64b1d1fff063f8ad81685a2b111"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -245799,10 +245809,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 getAutocompleteRowId: function() {
-                    return P
+                    return b
                 },
                 getAutocompleteTitleId: function() {
-                    return U
+                    return G
                 }
             }), n("411104"), n("47120");
             var i, r = n("735250"),
@@ -245825,15 +245835,17 @@
                 N = n("430824"),
                 p = n("699516"),
                 O = n("594174"),
-                R = n("51144"),
-                C = n("508688"),
-                g = n("286908"),
-                L = n("377087"),
-                D = n("981631"),
-                v = n("689938"),
-                M = n("580384");
+                R = n("768581"),
+                C = n("51144"),
+                g = n("508688"),
+                L = n("286908"),
+                D = n("377087"),
+                v = n("981631"),
+                M = n("185923"),
+                y = n("689938"),
+                P = n("580384");
 
-            function y(e, t, n) {
+            function U(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -245842,15 +245854,15 @@
                 }) : e[t] = n, e
             }
 
-            function P(e) {
+            function b(e) {
                 return null != e ? "autocomplete-".concat(e) : null
             }
 
-            function U(e) {
+            function G(e) {
                 return "autocomplete-".concat(e, "-title")
             }
-            let b = s.createContext(null);
-            class G extends s.PureComponent {
+            let w = s.createContext(null);
+            class B extends s.PureComponent {
                 isSelectable() {
                     return this.selectable
                 }
@@ -245869,8 +245881,8 @@
                     } = this, l = this.isSelectable();
                     return (0, r.jsx)(_.Clickable, {
                         ...e,
-                        className: o()(M.clickable, i, n),
-                        id: null !== (t = P(s)) && void 0 !== t ? t : void 0,
+                        className: o()(P.clickable, i, n),
+                        id: null !== (t = b(s)) && void 0 !== t ? t : void 0,
                         onClick: l ? this.handleClick : void 0,
                         onMouseMove: l ? () => {
                             this.setState({
@@ -245884,7 +245896,7 @@
                         "aria-disabled": !l,
                         "aria-selected": l && a,
                         children: (0, r.jsx)("div", {
-                            className: M.base,
+                            className: P.base,
                             children: this.renderContent()
                         })
                     })
@@ -245899,14 +245911,14 @@
                     }) : this.renderClickable()
                 }
                 constructor(e) {
-                    super(e), y(this, "selectable", !0), y(this, "layoutClass", M.autocompleteRowVertical), y(this, "handleMouseEnter", () => {
+                    super(e), U(this, "selectable", !0), U(this, "layoutClass", P.autocompleteRowVertical), U(this, "handleMouseEnter", () => {
                         let {
                             onHover: e,
                             index: t,
                             selected: n
                         } = this.props;
                         null == e || n || "number" != typeof t || e(t)
-                    }), y(this, "handleClick", e => {
+                    }), U(this, "handleClick", e => {
                         let {
                             onClick: t,
                             index: n
@@ -245917,7 +245929,7 @@
                     }
                 }
             }
-            class w extends(i = s.PureComponent) {
+            class k extends(i = s.PureComponent) {
                 render() {
                     let {
                         children: e,
@@ -245926,14 +245938,14 @@
                         id: i,
                         ...a
                     } = this.props;
-                    return s.Children.count(e) > 0 ? (0, r.jsx)(b.Provider, {
+                    return s.Children.count(e) > 0 ? (0, r.jsx)(w.Provider, {
                         value: {
                             id: null != i ? i : ""
                         },
                         children: (0, r.jsx)("div", {
-                            className: o()(M.autocomplete, t),
+                            className: o()(P.autocomplete, t),
                             children: (0, r.jsx)("div", {
-                                className: o()(M.autocompleteInner, n),
+                                className: o()(P.autocompleteInner, n),
                                 ...a,
                                 children: e
                             })
@@ -245941,32 +245953,32 @@
                     }) : null
                 }
             }
-            y(w, "Generic", class e extends G {
+            U(k, "Generic", class e extends B {
                 renderContent() {
                     let {
                         text: e,
                         description: t
                     } = this.props;
-                    return (0, r.jsxs)(C.AutocompleteRowContent, {
-                        children: [(0, r.jsx)(C.AutocompleteRowContentPrimary, {
-                            children: (0, r.jsx)(C.AutocompleteRowHeading, {
+                    return (0, r.jsxs)(g.AutocompleteRowContent, {
+                        children: [(0, r.jsx)(g.AutocompleteRowContentPrimary, {
+                            children: (0, r.jsx)(g.AutocompleteRowHeading, {
                                 children: e
                             })
-                        }), null != t ? (0, r.jsx)(C.AutocompleteRowContentSecondary, {
+                        }), null != t ? (0, r.jsx)(g.AutocompleteRowContentSecondary, {
                             children: t
                         }) : null]
                     })
                 }
-            }), y(w, "Loading", function(e) {
+            }), U(k, "Loading", function(e) {
                 let t = s.useMemo(() => u().random(60, 120), []);
                 return (0, r.jsx)("div", {
-                    className: M.base,
+                    className: P.base,
                     "aria-busy": !0,
-                    children: (0, r.jsx)(C.AutocompleteRowContent, {
-                        children: (0, r.jsx)(C.AutocompleteRowContentPrimary, {
-                            children: (0, r.jsx)(C.AutocompleteRowHeading, {
+                    children: (0, r.jsx)(g.AutocompleteRowContent, {
+                        children: (0, r.jsx)(g.AutocompleteRowContentPrimary, {
+                            children: (0, r.jsx)(g.AutocompleteRowHeading, {
                                 children: (0, r.jsx)("div", {
-                                    className: M.autocompletePlaceholder,
+                                    className: P.autocompletePlaceholder,
                                     style: {
                                         width: t
                                     }
@@ -245975,34 +245987,34 @@
                         })
                     })
                 })
-            }), y(w, "Title", function(e) {
+            }), U(k, "Title", function(e) {
                 let {
                     title: t,
                     className: n,
                     children: i
-                } = e, a = s.useContext(b);
+                } = e, a = s.useContext(w);
                 return (0, r.jsx)("div", {
-                    className: M.base,
+                    className: P.base,
                     children: (0, r.jsxs)(_.Heading, {
-                        id: U(a.id),
-                        className: o()(M.contentTitle, n),
+                        id: G(a.id),
+                        className: o()(P.contentTitle, n),
                         variant: "heading-deprecated-12/semibold",
                         children: [t, i]
                     })
                 })
-            }), y(w, "Divider", class e extends G {
+            }), U(k, "Divider", class e extends B {
                 renderContent() {
                     let {
                         className: e
                     } = this.props;
                     return (0, r.jsx)("div", {
-                        className: o()(e, M.divider)
+                        className: o()(e, P.divider)
                     })
                 }
                 constructor(...e) {
-                    super(...e), y(this, "layoutClass", M.dividerContainer), y(this, "selectable", !1)
+                    super(...e), U(this, "layoutClass", P.dividerContainer), U(this, "selectable", !1)
                 }
-            }), y(w, "User", class e extends G {
+            }), U(k, "User", class e extends B {
                 renderContent() {
                     let {
                         user: e,
@@ -246011,33 +246023,33 @@
                         hidePersonalInformation: i,
                         guildId: s
                     } = this.props;
-                    return (0, r.jsxs)(C.AutocompleteRowContent, {
-                        children: [(0, r.jsx)(C.AutocompleteRowIcon, {
+                    return (0, r.jsxs)(g.AutocompleteRowContent, {
+                        children: [(0, r.jsx)(g.AutocompleteRowIcon, {
                             children: (0, r.jsx)(_.Avatar, {
                                 size: _.AvatarSizes.SIZE_24,
                                 src: e.getAvatarURL(s, 24),
                                 "aria-hidden": !0,
                                 status: n
                             })
-                        }), (0, r.jsx)(C.AutocompleteRowContentPrimary, {
-                            children: (0, r.jsx)(C.AutocompleteRowHeading, {
-                                children: null != t ? t : R.default.getName(e)
+                        }), (0, r.jsx)(g.AutocompleteRowContentPrimary, {
+                            children: (0, r.jsx)(g.AutocompleteRowHeading, {
+                                children: null != t ? t : C.default.getName(e)
                             })
-                        }), (0, r.jsxs)(C.AutocompleteRowContentSecondary, {
+                        }), (0, r.jsxs)(g.AutocompleteRowContentSecondary, {
                             children: [(0, r.jsx)("span", {
-                                className: M.__invalid_descriptionUsername,
-                                children: R.default.getUserTag(e, {
+                                className: P.__invalid_descriptionUsername,
+                                children: C.default.getUserTag(e, {
                                     mode: "username",
                                     identifiable: i ? "never" : "always"
                                 })
                             }), i || e.isPomelo() ? null : (0, r.jsxs)("span", {
-                                className: M.descriptionDiscriminator,
+                                className: P.descriptionDiscriminator,
                                 children: ["#", e.discriminator]
                             })]
                         })]
                     })
                 }
-            }), y(w, "Role", class e extends G {
+            }), U(k, "Role", class e extends B {
                 renderContent() {
                     let {
                         role: e,
@@ -246047,11 +246059,11 @@
                     } = e, i = "dot" === c.default.roleStyle, s = "username" === c.default.roleStyle && null != n ? {
                         color: n
                     } : void 0;
-                    return (0, r.jsxs)(C.AutocompleteRowContent, {
-                        children: [(0, r.jsx)(C.AutocompleteRowContentPrimary, {
-                            children: (0, r.jsxs)(C.AutocompleteRowHeading, {
+                    return (0, r.jsxs)(g.AutocompleteRowContent, {
+                        children: [(0, r.jsx)(g.AutocompleteRowContentPrimary, {
+                            children: (0, r.jsxs)(g.AutocompleteRowHeading, {
                                 children: [i && (0, r.jsx)(_.RoleDot, {
-                                    className: M.roleDot,
+                                    className: P.roleDot,
                                     color: n,
                                     tooltip: !1
                                 }), (0, r.jsxs)("span", {
@@ -246059,52 +246071,52 @@
                                     children: ["@", e.name]
                                 })]
                             })
-                        }), t ? null : (0, r.jsx)(C.AutocompleteRowContentSecondary, {
-                            children: v.default.Messages.MENTION_USERS_WITH_ROLE
+                        }), t ? null : (0, r.jsx)(g.AutocompleteRowContentSecondary, {
+                            children: y.default.Messages.MENTION_USERS_WITH_ROLE
                         })]
                     })
                 }
-            }), y(w, "Channel", class e extends G {
+            }), U(k, "Channel", class e extends B {
                 renderContent() {
                     let {
                         channel: e,
                         category: t
-                    } = this.props, n = e.type === D.ChannelTypes.GUILD_CATEGORY ? g.default : (0, S.getChannelIconComponent)(e);
-                    return (0, r.jsxs)(C.AutocompleteRowContent, {
-                        children: [null != n && (0, r.jsx)(C.AutocompleteRowIcon, {
+                    } = this.props, n = e.type === v.ChannelTypes.GUILD_CATEGORY ? L.default : (0, S.getChannelIconComponent)(e);
+                    return (0, r.jsxs)(g.AutocompleteRowContent, {
+                        children: [null != n && (0, r.jsx)(g.AutocompleteRowIcon, {
                             children: (0, r.jsx)(n, {
-                                className: M.icon
+                                className: P.icon
                             })
-                        }), (0, r.jsx)(C.AutocompleteRowContentPrimary, {
-                            children: (0, r.jsx)(C.AutocompleteRowHeading, {
+                        }), (0, r.jsx)(g.AutocompleteRowContentPrimary, {
+                            children: (0, r.jsx)(g.AutocompleteRowHeading, {
                                 children: (0, f.computeChannelName)(e, O.default, p.default)
                             })
-                        }), null != t ? (0, r.jsx)(C.AutocompleteRowContentSecondary, {
+                        }), null != t ? (0, r.jsx)(g.AutocompleteRowContentSecondary, {
                             children: t.name
                         }) : null]
                     })
                 }
-            }), y(w, "Command", class e extends G {
+            }), U(k, "Command", class e extends B {
                 renderContent() {
                     let {
                         command: e
                     } = this.props;
-                    return (0, r.jsxs)(C.AutocompleteRowContent, {
-                        children: [(0, r.jsx)(C.AutocompleteRowIcon, {
-                            children: (0, r.jsx)(L.default, {
-                                className: M.icon,
-                                foreground: M.iconForeground
+                    return (0, r.jsxs)(g.AutocompleteRowContent, {
+                        children: [(0, r.jsx)(g.AutocompleteRowIcon, {
+                            children: (0, r.jsx)(D.default, {
+                                className: P.icon,
+                                foreground: P.iconForeground
                             })
-                        }), (0, r.jsx)(C.AutocompleteRowContentPrimary, {
-                            children: (0, r.jsx)(C.AutocompleteRowHeading, {
+                        }), (0, r.jsx)(g.AutocompleteRowContentPrimary, {
+                            children: (0, r.jsx)(g.AutocompleteRowHeading, {
                                 children: e.name
                             })
-                        }), (0, r.jsx)(C.AutocompleteRowContentSecondary, {
+                        }), (0, r.jsx)(g.AutocompleteRowContentSecondary, {
                             children: e.description
                         })]
                     })
                 }
-            }), y(w, "NewCommand", class e extends G {
+            }), U(k, "NewCommand", class e extends B {
                 isSelectable() {
                     return this.props.command.inputType !== E.ApplicationCommandInputType.PLACEHOLDER
                 }
@@ -246127,36 +246139,40 @@
                         isSelectable: o
                     })
                 }
-            }), y(w, "Emoji", class e extends G {
+            }), U(k, "Emoji", class e extends B {
                 renderContent() {
                     let {
                         emoji: e,
                         sentinel: t,
                         guild: n
-                    } = this.props, i = null != e.url && "" !== e.url ? (0, r.jsx)("img", {
+                    } = this.props, i = null != e.id ? (0, r.jsx)("img", {
                         alt: "",
-                        className: M.emojiImage,
-                        src: e.url
+                        className: P.emojiImage,
+                        src: R.default.getEmojiURL({
+                            id: e.id,
+                            animated: e.animated,
+                            size: M.EMOJI_URL_BASE_SIZE
+                        })
                     }) : (0, r.jsx)("span", {
-                        className: M.emojiRaw,
+                        className: P.emojiRaw,
                         children: e.surrogates
-                    }), s = null != n ? (0, r.jsx)(C.AutocompleteRowContentSecondary, {
+                    }), s = null != n ? (0, r.jsx)(g.AutocompleteRowContentSecondary, {
                         children: n.name
                     }) : null;
-                    return (0, r.jsxs)(C.AutocompleteRowContent, {
-                        children: [(0, r.jsx)(C.AutocompleteRowIcon, {
+                    return (0, r.jsxs)(g.AutocompleteRowContent, {
+                        children: [(0, r.jsx)(g.AutocompleteRowIcon, {
                             children: i
-                        }), (0, r.jsx)(C.AutocompleteRowContentPrimary, {
-                            children: (0, r.jsxs)(C.AutocompleteRowHeading, {
+                        }), (0, r.jsx)(g.AutocompleteRowContentPrimary, {
+                            children: (0, r.jsxs)(g.AutocompleteRowHeading, {
                                 children: [t, e.name, t]
                             })
                         }), s]
                     })
                 }
                 constructor(...e) {
-                    super(...e), y(this, "layoutClass", o()(M.autocompleteRowVertical, M.autocompleteRowVerticalSmall))
+                    super(...e), U(this, "layoutClass", o()(P.autocompleteRowVertical, P.autocompleteRowVerticalSmall))
                 }
-            }), y(w, "GIFIntegration", class e extends G {
+            }), U(k, "GIFIntegration", class e extends B {
                 renderContent() {
                     let {
                         width: e,
@@ -246171,9 +246187,9 @@
                     })
                 }
                 constructor(...e) {
-                    super(...e), y(this, "layoutClass", M.autocompleteRowHorizontal)
+                    super(...e), U(this, "layoutClass", P.autocompleteRowHorizontal)
                 }
-            }), y(w, "Sticker", class e extends G {
+            }), U(k, "Sticker", class e extends B {
                 renderContent() {
                     var e, t;
                     let n;
@@ -246185,33 +246201,33 @@
                     } = this.props, {
                         hovered: l
                     } = this.state;
-                    return (0, m.isStandardSticker)(o) ? n = null === (e = A.default.getStickerPack(o.pack_id)) || void 0 === e ? void 0 : e.name : (0, m.isGuildSticker)(o) && (n = null === (t = N.default.getGuild(o.guild_id)) || void 0 === t ? void 0 : t.name), (0, r.jsxs)(C.AutocompleteRowContent, {
-                        children: [(0, r.jsx)(C.AutocompleteRowIcon, {
+                    return (0, m.isStandardSticker)(o) ? n = null === (e = A.default.getStickerPack(o.pack_id)) || void 0 === e ? void 0 : e.name : (0, m.isGuildSticker)(o) && (n = null === (t = N.default.getGuild(o.guild_id)) || void 0 === t ? void 0 : t.name), (0, r.jsxs)(g.AutocompleteRowContent, {
+                        children: [(0, r.jsx)(g.AutocompleteRowIcon, {
                             children: s(o, l || !0 === a)
-                        }), (0, r.jsxs)(C.AutocompleteRowContentPrimary, {
-                            children: [(0, r.jsx)(C.AutocompleteRowHeading, {
-                                className: M.__invalid_stickerName,
+                        }), (0, r.jsxs)(g.AutocompleteRowContentPrimary, {
+                            children: [(0, r.jsx)(g.AutocompleteRowHeading, {
+                                className: P.__invalid_stickerName,
                                 children: o.name
-                            }), null != i && (0, r.jsx)(C.AutocompleteRowSubheading, {
-                                children: v.default.Messages.AUTOCOMPLETE_STICKERS_QUERY_MATCH.format({
+                            }), null != i && (0, r.jsx)(g.AutocompleteRowSubheading, {
+                                children: y.default.Messages.AUTOCOMPLETE_STICKERS_QUERY_MATCH.format({
                                     queryMatch: i
                                 })
                             })]
-                        }), null != n && (0, r.jsx)(C.AutocompleteRowContentSecondary, {
+                        }), null != n && (0, r.jsx)(g.AutocompleteRowContentSecondary, {
                             children: n
                         })]
                     })
                 }
                 constructor(...e) {
-                    super(...e), y(this, "layoutClass", o()(M.autocompleteRowVertical, M.autocompleteRowVerticalSmall))
+                    super(...e), U(this, "layoutClass", o()(P.autocompleteRowVertical, P.autocompleteRowVerticalSmall))
                 }
-            }), y(w, "EmojiUpsell", class e extends G {
+            }), U(k, "EmojiUpsell", class e extends B {
                 renderContent() {
                     return (0, r.jsx)(h.default, {
                         emojis: this.props.emojis
                     })
                 }
-            }), t.default = w
+            }), t.default = k
         },
         508688: function(e, t, n) {
             "use strict";
@@ -273473,7 +273489,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289031"
+                                build_number: "289032"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280690,7 +280706,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289031", "289031"), 10);
+                let s = parseInt((n = "289032", "289032"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308075,4 +308091,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.cbe8e57067ceda1355a1.js.map
+//# sourceMappingURL=35705.140edf1f5df85b146d03.js.map
