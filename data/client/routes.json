@@ -164,6 +164,13 @@
       "POST"
     ]
   },
+  "DM_SETTINGS_UPSELL_ACK": {
+    "url": "/users/@me/guilds/:param/member/ack-dm-upsell-settings",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "GUILD_CHANNELS": {
     "url": "/guilds/:param/channels",
     "allowed_methods": [
@@ -1430,30 +1437,6 @@
       "OPTIONS"
     ]
   },
-  "CONNECTIONS_AUTHORIZE_CONTINUATION": {
-    "url": "/connections/:param/authorize?continuation=true",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
-  "CONNECTIONS_AUTHORIZE_LINK": {
-    "url": "/connections/:param/authorize?two_way_link=true&two_way_link_type=:param",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
-  "CONNECTIONS_AUTHORIZE_LINK_DEVICE": {
-    "url": "/connections/:param/authorize?two_way_link=true&two_way_link_type=device_code&two_way_user_code=:param",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "CONNECTIONS_CALLBACK": {
     "url": "/connections/:param/callback",
     "allowed_methods": [
@@ -1493,10 +1476,6 @@
       "HEAD",
       "OPTIONS"
     ]
-  },
-  "CONNECTIONS_CALLBACK_CONTINUATION": {
-    "url": "/connections/:param/callback-continuation/:param",
-    "allowed_methods": null
   },
   "CONNECTIONS_LINK_DISPATCH_AUTH_CALLBACK": {
     "url": "/connections/:param/link-dispatch-auth-callback",
@@ -2875,6 +2854,10 @@
     "url": "/applications/:param/branches/:param/storage",
     "allowed_methods": null
   },
+  "APPLICATION_DISCLOSURES": {
+    "url": "/applications/:param/disclosures",
+    "allowed_methods": null
+  },
   "GIFS_SEARCH": {
     "url": "/gifs/search",
     "allowed_methods": [
@@ -3263,6 +3246,10 @@
       "OPTIONS",
       "POST"
     ]
+  },
+  "ACTIVITY_LEAVE": {
+    "url": "/applications/:param/activities/:param/instances/:param/leave",
+    "allowed_methods": null
   },
   "APPLICATION_UPLOAD_ATTACHMENT": {
     "url": "/applications/:param/attachment",
@@ -4006,14 +3993,9 @@
       "POST"
     ]
   },
-  "GUILD_CLAN_INFO": {
-    "url": "/clan/:param",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "POST"
-    ]
+  "GUILD_CLAN_DISCOVERY_INFO": {
+    "url": "/discovery/:param/clan",
+    "allowed_methods": null
   },
   "USER_SET_CLAN_IDENTITY": {
     "url": "/users/@me/clan",
@@ -4021,6 +4003,14 @@
       "OPTIONS",
       "PUT"
     ]
+  },
+  "CLAN_SETTINGS": {
+    "url": "/clan/:param/settings",
+    "allowed_methods": null
+  },
+  "DISABLE_CLAN": {
+    "url": "/clan/:param/disable",
+    "allowed_methods": null
   },
   "TENOR_ASSET_PATH": {
     "url": "/tenor",
@@ -4194,10 +4184,6 @@
       "HEAD",
       "OPTIONS"
     ]
-  },
-  "CHANNEL_HIGHLIGHTS": {
-    "url": "/guilds/:param/channel-highlights",
-    "allowed_methods": null
   },
   "USER_EMAIL": {
     "url": "/users/@me/email",
@@ -4870,6 +4856,17 @@
       "OPTIONS"
     ]
   },
+  "MY_SPOTIFY_CONTENT_INVENTORY": {
+    "url": "/content-inventory/users/@me/spotify",
+    "allowed_methods": null
+  },
+  "MY_CONTENT_INVENTORY_APPLICATION": {
+    "url": "/content-inventory/users/@me/applications/:param",
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
+  },
   "TENURE_REWARD_SYNC": {
     "url": "/users/@me/tenure-reward/sync",
     "allowed_methods": [
@@ -4884,5 +4881,9 @@
       "HEAD",
       "OPTIONS"
     ]
+  },
+  "STORE_LAYOUT": {
+    "url": "/applications/:param/store-layout",
+    "allowed_methods": null
   }
 }
