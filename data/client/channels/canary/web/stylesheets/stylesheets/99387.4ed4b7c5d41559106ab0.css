@@ -14654,7 +14654,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .bold__6aad0 {
-    font-weight: 600
+    font-weight: 700
 }
 
 .italics__8ed1c {
@@ -14726,6 +14726,17 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     -webkit-text-decoration: none;
     text-decoration: none;
     display: inherit
+}
+
+.before_subtext__52a3c {
+    font-weight: 700
+}
+
+.before_subtext__52a3c,
+.subtext__5b116 {
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 17.875px
 }
 
 .inlineElement__6b273 {
@@ -56604,12 +56615,10 @@ img.thumbnail__18ece {
 @value baseClanCardHeight 400px;
 @value envelopeWidth calc(242px + 2px);
 @value envelopeCardHeight 344px;
-@value centerClanScale 0.8666;
-@value innerClanScale 0.75;
-@value outerClanScale 0.6666;
+@value clanScale 0.8666;
 
 .clanEnvelope__0b99c {
-    position: relative;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56640,7 +56649,6 @@ img.thumbnail__18ece {
     justify-content: center;
     padding-top: 80px;
     height: 344px;
-    width: 100%;
     z-index: 5
 }
 
@@ -56648,11 +56656,7 @@ img.thumbnail__18ece {
     overflow: hidden;
     position: absolute;
     z-index: 30;
-    height: 400px;
-    bottom: 26.68px
-}
-
-.clanCardCenter__00094 {
+    bottom: 26.68px;
     transform: scale(.8666);
     box-shadow: var(--shadow-high);
     height: 397px;
@@ -56660,8 +56664,8 @@ img.thumbnail__18ece {
 }
 
 .clanCardInnerContainer_ce1024 {
-    position: relative;
-    width: 181.5px;
+    position: absolute;
+    width: 209.7172px;
     z-index: 20
 }
 
@@ -56671,37 +56675,27 @@ img.thumbnail__18ece {
 }
 
 .clanCardInner_d227d8 {
-    top: -30px
+    top: -6.68px
 }
 
-.clanCardInnerLeft__611c8 {
-    transform: rotate(-2deg)scale(.75);
-    left: 0
-}
-
+.clanCardInnerLeft__611c8,
 .clanCardInnerRight__3caa2 {
-    transform: rotate(2deg)scale(.75);
-    right: 0
+    transform: scale(.8666)
 }
 
 .clanCardOuterContainer__338bc {
-    position: relative;
-    width: 161.3172px;
+    position: absolute;
+    width: 209.7172px;
     z-index: 15
 }
 
 .clanCardOuter__8f0b1 {
-    top: -21.68px
+    top: 18.32px
 }
 
-.clanCardOuterLeft__86cf6 {
-    transform: rotate(-8deg)scale(.6666);
-    left: 16px
-}
-
+.clanCardOuterLeft__86cf6,
 .clanCardOuterRight__761b5 {
-    transform: rotate(8deg)scale(.6666);
-    right: 16px
+    transform: scale(.8666)
 }
 
 .upsellCtaContainer__5221e {
@@ -135856,4 +135850,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.9941974480d0bd0fcb75.css.map*/
+/*# sourceMappingURL=99387.4ed4b7c5d41559106ab0.css.map*/

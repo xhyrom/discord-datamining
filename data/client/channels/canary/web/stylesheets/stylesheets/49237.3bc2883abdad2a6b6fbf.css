@@ -12806,6 +12806,17 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     max-width: 100%
 }
 
+.markup_a7e664 small:not(.inlineFormat__5222c) {
+    display: block;
+    color: var(--text-muted);
+    font-size: .8125rem;
+    line-height: 1.11719rem
+}
+
+.markup_a7e664 small.inlineFormat__5222c:after {
+    content: " "
+}
+
 .markup_a7e664 code {
     font-size: .875rem;
     line-height: 1.125rem;
@@ -28207,4 +28218,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.ce6c7a0f572493e25fcf.css.map*/
+/*# sourceMappingURL=49237.3bc2883abdad2a6b6fbf.css.map*/
