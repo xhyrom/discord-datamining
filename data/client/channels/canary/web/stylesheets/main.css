@@ -26529,8 +26529,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .positionStyle_bf57a1 {
-    position: fixed;
-    width: 100%
+    position: absolute
 }
 
 .positionStyle_bf57a1.biteSize__4396a {
@@ -26539,7 +26538,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .positionStyle_bf57a1.fullSize_b0d012 {
-    top: calc(6px + var(--custom-user-banner-height-full-size) + var(--custom-user-profile-themed-container-user-profile-themed-padding));
+    top: 4px;
     left: 158px
 }
 
@@ -26551,7 +26550,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     color: var(--text-normal);
     background-color: var(--bg-surface-raised);
     word-wrap: break-word;
-    max-width: 220px;
+    max-width: 184px;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     display: -webkit-box;
@@ -26569,9 +26568,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     background-color: var(--bg-surface-raised);
     box-shadow: var(--shadow-low);
     border: 1px solid var(--border-faint);
-    width: -moz-fit-content;
-    width: fit-content;
-    max-width: 220px
+    max-width: 184px
 }
 
 .statusBubbleOuter__7e51b:before {
@@ -26602,11 +26599,11 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     height: 10px
 }
 
-.statusBubbleSingleLineWithEmojiShape_ba5ce7 {
+.statusBubbleSingleLineEmojiOnlyShape_ffeca9 {
     border-radius: 16px
 }
 
-.statusBubbleSingleLineTextOnlyShape__997bc {
+.statusBubbleSingleLineWithTextShape__4c016 {
     border-radius: 12px
 }
 
@@ -26614,15 +26611,14 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     border-radius: 16px
 }
 
-.statusBubbleSingleLineWithEmoji_eba004 {
+.statusBubbleSingleLineEmojiOnly_d07ae7 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px 12px;
-    gap: 8px
+    padding: 8px 12px
 }
 
-.statusBubbleSingleLineTextOnly__2584c {
+.statusBubbleSingleLineWithText_df155b {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26644,11 +26640,11 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     padding-bottom: 10px
 }
 
-.statusBubbleSingleLineWithEmojiBottomMargin_cf7aa5 {
-    margin-bottom: 54px
+.statusBubbleSingleLineEmojiOnlyBottomMargin__1251a {
+    margin-bottom: 50px
 }
 
-.statusBubbleSingleLineTextOnlyBottomMargin_f442ab {
+.statusBubbleSingleLineWithTextBottomMargin__3e972 {
     margin-bottom: 39px
 }
 
@@ -26661,16 +26657,16 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     display: inline
 }
 
-.singleLineStatusEmoji__39816 {
-    height: 32px;
-    width: 32px
-}
-
-.multiLineStatusEmoji__4fd93 {
+.statusEmojiInline__099a8 {
+    display: inline;
     height: 16px;
     width: 16px;
-    margin-right: 4px;
-    display: inline
+    margin-right: 4px
+}
+
+.statusEmojiOnly__3469b {
+    height: 32px;
+    width: 32px
 }
 
 .header__725f2 {
@@ -26678,7 +26674,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .noCustomStatusMargin_ece046 {
-    margin-bottom: 48px
+    margin-bottom: 40px
 }
 
 .roleDot__16273 {
@@ -135861,4 +135857,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2f393195c14d6e494fe8.css.map*/
+/*# sourceMappingURL=99387.33cefa282fb59e0ff2b7.css.map*/
