@@ -36821,7 +36821,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289235", ", Version Hash: ").concat("51c58001c47221fbe5ab6539d66afd00ab86a68f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289258", ", Version Hash: ").concat("cad8bc82ad3e74acbcabda19378b5a6d8d1aa3b2")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -37330,7 +37330,7 @@
         },
         911969: function(e, t, n) {
             "use strict";
-            var i, r, s, a, o, l, u, d, _, c, E, I, T, f, S, h, A, m, N, p, O, R, C, g, L, v, D, M, y, P, U, b, G, w;
+            var i, r, s, a, o, l, u, d, _, c, E, I, T, f, S, h, A, m, N, p, O, R, C, g, L, v, D, M, y, P, U, b;
             n.r(t), n.d(t, {
                 ApplicationCommandOptionType: function() {
                     return u
@@ -37342,7 +37342,7 @@
                     return a
                 },
                 AuthenticatorType: function() {
-                    return A
+                    return h
                 },
                 ButtonStyle: function() {
                     return E
@@ -37363,24 +37363,21 @@
                     return _
                 },
                 InvoiceDiscountTypes: function() {
-                    return S
+                    return f
                 },
                 PermissionOverwriteType: function() {
                     return i
                 },
                 PurchaseNotificationType: function() {
-                    return h
+                    return S
                 },
                 SeparatorSpacingSize: function() {
-                    return f
+                    return T
                 },
                 TextComponentStyle: function() {
                     return I
-                },
-                TextDisplayContentStyle: function() {
-                    return T
                 }
-            }), (m = i || (i = {}))[m.ROLE = 0] = "ROLE", m[m.MEMBER = 1] = "MEMBER", (N = r || (r = {})).IOS = "ios", N.ANDROID = "android", N.WEB = "web", (p = s || (s = {}))[p.NONE = 0] = "NONE", p[p.NEW = 1] = "NEW", p[p.UPDATED = 2] = "UPDATED", (O = a || (a = {}))[O.MEDIA_PROXY = 1] = "MEDIA_PROXY", O[O.YOUTUBE = 2] = "YOUTUBE", (R = o || (o = {}))[R.GUILD = 0] = "GUILD", R[R.BOT_DM = 1] = "BOT_DM", R[R.PRIVATE_CHANNEL = 2] = "PRIVATE_CHANNEL", (C = l || (l = {}))[C.NO_INTERCEPT = 1] = "NO_INTERCEPT", C[C.LAUNCH_ACTIVITY_INTERCEPT = 2] = "LAUNCH_ACTIVITY_INTERCEPT", (g = u || (u = {}))[g.SUB_COMMAND = 1] = "SUB_COMMAND", g[g.SUB_COMMAND_GROUP = 2] = "SUB_COMMAND_GROUP", g[g.STRING = 3] = "STRING", g[g.INTEGER = 4] = "INTEGER", g[g.BOOLEAN = 5] = "BOOLEAN", g[g.USER = 6] = "USER", g[g.CHANNEL = 7] = "CHANNEL", g[g.ROLE = 8] = "ROLE", g[g.MENTIONABLE = 9] = "MENTIONABLE", g[g.NUMBER = 10] = "NUMBER", g[g.ATTACHMENT = 11] = "ATTACHMENT", (L = d || (d = {}))[L.CHAT = 1] = "CHAT", L[L.USER = 2] = "USER", L[L.MESSAGE = 3] = "MESSAGE", L[L.PRIMARY_ENTRY_POINT = 4] = "PRIMARY_ENTRY_POINT", (v = _ || (_ = {}))[v.APPLICATION_COMMAND = 2] = "APPLICATION_COMMAND", v[v.MESSAGE_COMPONENT = 3] = "MESSAGE_COMPONENT", v[v.APPLICATION_COMMAND_AUTOCOMPLETE = 4] = "APPLICATION_COMMAND_AUTOCOMPLETE", v[v.MODAL_SUBMIT = 5] = "MODAL_SUBMIT", (D = c || (c = {}))[D.ACTION_ROW = 1] = "ACTION_ROW", D[D.BUTTON = 2] = "BUTTON", D[D.STRING_SELECT = 3] = "STRING_SELECT", D[D.INPUT_TEXT = 4] = "INPUT_TEXT", D[D.USER_SELECT = 5] = "USER_SELECT", D[D.ROLE_SELECT = 6] = "ROLE_SELECT", D[D.MENTIONABLE_SELECT = 7] = "MENTIONABLE_SELECT", D[D.CHANNEL_SELECT = 8] = "CHANNEL_SELECT", D[D.TEXT = 10] = "TEXT", D[D.MEDIA_GALLERY = 12] = "MEDIA_GALLERY", D[D.SEPARATOR = 14] = "SEPARATOR", (M = E || (E = {}))[M.PRIMARY = 1] = "PRIMARY", M[M.SECONDARY = 2] = "SECONDARY", M[M.SUCCESS = 3] = "SUCCESS", M[M.DESTRUCTIVE = 4] = "DESTRUCTIVE", M[M.LINK = 5] = "LINK", (y = I || (I = {}))[y.SMALL = 1] = "SMALL", y[y.PARAGRAPH = 2] = "PARAGRAPH", (P = T || (T = {}))[P.NORMAL = 1] = "NORMAL", P[P.CONTEXT = 2] = "CONTEXT", (U = f || (f = {}))[U.SMALL = 1] = "SMALL", U[U.LARGE = 2] = "LARGE", (b = S || (S = {}))[b.SUBSCRIPTION_PLAN = 1] = "SUBSCRIPTION_PLAN", b[b.ENTITLEMENT = 2] = "ENTITLEMENT", b[b.PREMIUM_LEGACY_UPGRADE_PROMOTION = 3] = "PREMIUM_LEGACY_UPGRADE_PROMOTION", b[b.PREMIUM_TRIAL = 4] = "PREMIUM_TRIAL", (G = h || (h = {}))[G.GUILD_PRODUCT = 0] = "GUILD_PRODUCT", (w = A || (A = {}))[w.WEBAUTHN = 1] = "WEBAUTHN", w[w.TOTP = 2] = "TOTP", w[w.SMS = 3] = "SMS"
+            }), (A = i || (i = {}))[A.ROLE = 0] = "ROLE", A[A.MEMBER = 1] = "MEMBER", (m = r || (r = {})).IOS = "ios", m.ANDROID = "android", m.WEB = "web", (N = s || (s = {}))[N.NONE = 0] = "NONE", N[N.NEW = 1] = "NEW", N[N.UPDATED = 2] = "UPDATED", (p = a || (a = {}))[p.MEDIA_PROXY = 1] = "MEDIA_PROXY", p[p.YOUTUBE = 2] = "YOUTUBE", (O = o || (o = {}))[O.GUILD = 0] = "GUILD", O[O.BOT_DM = 1] = "BOT_DM", O[O.PRIVATE_CHANNEL = 2] = "PRIVATE_CHANNEL", (R = l || (l = {}))[R.NO_INTERCEPT = 1] = "NO_INTERCEPT", R[R.LAUNCH_ACTIVITY_INTERCEPT = 2] = "LAUNCH_ACTIVITY_INTERCEPT", (C = u || (u = {}))[C.SUB_COMMAND = 1] = "SUB_COMMAND", C[C.SUB_COMMAND_GROUP = 2] = "SUB_COMMAND_GROUP", C[C.STRING = 3] = "STRING", C[C.INTEGER = 4] = "INTEGER", C[C.BOOLEAN = 5] = "BOOLEAN", C[C.USER = 6] = "USER", C[C.CHANNEL = 7] = "CHANNEL", C[C.ROLE = 8] = "ROLE", C[C.MENTIONABLE = 9] = "MENTIONABLE", C[C.NUMBER = 10] = "NUMBER", C[C.ATTACHMENT = 11] = "ATTACHMENT", (g = d || (d = {}))[g.CHAT = 1] = "CHAT", g[g.USER = 2] = "USER", g[g.MESSAGE = 3] = "MESSAGE", g[g.PRIMARY_ENTRY_POINT = 4] = "PRIMARY_ENTRY_POINT", (L = _ || (_ = {}))[L.APPLICATION_COMMAND = 2] = "APPLICATION_COMMAND", L[L.MESSAGE_COMPONENT = 3] = "MESSAGE_COMPONENT", L[L.APPLICATION_COMMAND_AUTOCOMPLETE = 4] = "APPLICATION_COMMAND_AUTOCOMPLETE", L[L.MODAL_SUBMIT = 5] = "MODAL_SUBMIT", (v = c || (c = {}))[v.ACTION_ROW = 1] = "ACTION_ROW", v[v.BUTTON = 2] = "BUTTON", v[v.STRING_SELECT = 3] = "STRING_SELECT", v[v.INPUT_TEXT = 4] = "INPUT_TEXT", v[v.USER_SELECT = 5] = "USER_SELECT", v[v.ROLE_SELECT = 6] = "ROLE_SELECT", v[v.MENTIONABLE_SELECT = 7] = "MENTIONABLE_SELECT", v[v.CHANNEL_SELECT = 8] = "CHANNEL_SELECT", v[v.TEXT = 10] = "TEXT", v[v.MEDIA_GALLERY = 12] = "MEDIA_GALLERY", v[v.SEPARATOR = 14] = "SEPARATOR", (D = E || (E = {}))[D.PRIMARY = 1] = "PRIMARY", D[D.SECONDARY = 2] = "SECONDARY", D[D.SUCCESS = 3] = "SUCCESS", D[D.DESTRUCTIVE = 4] = "DESTRUCTIVE", D[D.LINK = 5] = "LINK", (M = I || (I = {}))[M.SMALL = 1] = "SMALL", M[M.PARAGRAPH = 2] = "PARAGRAPH", (y = T || (T = {}))[y.SMALL = 1] = "SMALL", y[y.LARGE = 2] = "LARGE", (P = f || (f = {}))[P.SUBSCRIPTION_PLAN = 1] = "SUBSCRIPTION_PLAN", P[P.ENTITLEMENT = 2] = "ENTITLEMENT", P[P.PREMIUM_LEGACY_UPGRADE_PROMOTION = 3] = "PREMIUM_LEGACY_UPGRADE_PROMOTION", P[P.PREMIUM_TRIAL = 4] = "PREMIUM_TRIAL", (U = S || (S = {}))[U.GUILD_PRODUCT = 0] = "GUILD_PRODUCT", (b = h || (h = {}))[b.WEBAUTHN = 1] = "WEBAUTHN", b[b.TOTP = 2] = "TOTP", b[b.SMS = 3] = "SMS"
         },
         2052: function(e, t, n) {
             "use strict";
@@ -87174,8 +87171,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289235", "289235"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289235")), t = 0), t
+                let t = parseInt((e = "289258", "289258"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289258")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -113555,8 +113552,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289235",
-                    versionHash: "51c58001c47221fbe5ab6539d66afd00ab86a68f"
+                    buildNumber: "289258",
+                    versionHash: "cad8bc82ad3e74acbcabda19378b5a6d8d1aa3b2"
                 }
             }
             n.r(t), n.d(t, {
@@ -157856,7 +157853,7 @@
                             };
                         case i.ComponentType.TEXT:
                             return {
-                                type: i.ComponentType.TEXT, id: T(r), items: t.items
+                                type: i.ComponentType.TEXT, id: T(r), content: t.content
                             };
                         case i.ComponentType.MEDIA_GALLERY:
                             return {
@@ -168790,8 +168787,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714507347073",
-                                    build_number: "289235"
+                                    built_at: "1714508641849",
+                                    build_number: "289258"
                                 }
                             },
                             retries: 1
@@ -246866,7 +246863,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "51c58001c47221fbe5ab6539d66afd00ab86a68f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "cad8bc82ad3e74acbcabda19378b5a6d8d1aa3b2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -275385,7 +275382,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289235"
+                                build_number: "289258"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282602,7 +282599,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289235", "289235"), 10);
+                let s = parseInt((n = "289258", "289258"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -309987,4 +309984,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.d0ac2599cde310837e5c.js.map
+//# sourceMappingURL=35705.34fa42c2606d9541ff66.js.map
