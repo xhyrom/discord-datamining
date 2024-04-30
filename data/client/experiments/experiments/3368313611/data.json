@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-04_quest_preview_tool",
+    "label": "Quest Preview Tool",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Preview tool enabled"
+    ],
+    "hash": 3368313611,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

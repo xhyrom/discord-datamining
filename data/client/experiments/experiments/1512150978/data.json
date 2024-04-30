@@ -33,10 +33,70 @@
     "populations": [
       {
         "buckets": {
-          "none": {
+          "3": {
             "rollout": [
               {
                 "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "INTERNAL_EMPLOYEE_ONLY"
+            ]
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 100,
+                "end": 200
+              },
+              {
+                "start": 700,
+                "end": 1100
+              },
+              {
+                "start": 2500,
+                "end": 3500
+              },
+              {
+                "start": 6300,
+                "end": 8100
+              }
+            ]
+          },
+          "2": {
+            "rollout": [
+              {
+                "start": 200,
+                "end": 300
+              },
+              {
+                "start": 1100,
+                "end": 1500
+              },
+              {
+                "start": 3500,
+                "end": 4500
+              },
+              {
+                "start": 8100,
+                "end": 9900
+              }
+            ]
+          },
+          "none": {
+            "rollout": [
+              {
+                "start": 9900,
                 "end": 10000
               }
             ]

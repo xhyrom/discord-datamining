@@ -5,14 +5,18 @@
     "label": "Gateway Zstd compression",
     "description": [
       "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Use Zstd"
+      "Treatment 0: Control (verification)",
+      "Treatment 1: Use Zstd",
+      "Treatment 2: No Zstd, no verification",
+      "Treatment 3: Use Zstd (2)"
     ],
     "hash": 3940464351,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2,
+      3
     ],
     "holdout": {},
     "aa_mode": false,

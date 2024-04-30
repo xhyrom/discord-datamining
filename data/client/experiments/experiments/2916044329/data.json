@@ -6,19 +6,19 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 3: Can support secure frames above protocol version 8",
-      "Treatment 5: Can support secure frames above protocol version 109 (MLS)",
       "Treatment 6: Can support secure frames above protocol version 10",
-      "Treatment 7: Can support secure frames above protocol version 110 (MLS)"
+      "Treatment 7: Can support secure frames above protocol version 110 (MLS)",
+      "Treatment 8: Can support secure frames above protocol version 11",
+      "Treatment 9: Can support secure frames above protocol version 111 (MLS)"
     ],
     "hash": 2916044329,
     "buckets": [
       -1,
       0,
-      3,
-      5,
       6,
-      7
+      7,
+      8,
+      9
     ],
     "holdout": {
       "name": null,
@@ -35,7 +35,7 @@
     "populations": [
       {
         "buckets": {
-          "7": {
+          "9": {
             "rollout": [
               {
                 "start": 0,
@@ -48,7 +48,7 @@
       },
       {
         "buckets": {
-          "6": {
+          "8": {
             "rollout": [
               {
                 "start": 0,
@@ -62,11 +62,11 @@
     ],
     "revision": 0,
     "overrides": {
-      "6": [
+      "8": [
         "175987125626339328",
         "125309031647674368"
       ],
-      "7": [
+      "9": [
         "674359793908973569",
         "546126472792768512",
         "564926287152545803",

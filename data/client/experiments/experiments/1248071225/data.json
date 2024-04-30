@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-04_game_settings_merge",
+    "label": "Game Settings Merge",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Merge Game Settings"
+    ],
+    "hash": 1248071225,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "shouldMergeGameSettings"
+    ]
+  }
+}

@@ -326,6 +326,7 @@ id,hash,label
 2023-09_guild_events_improvements,2181787089,Experiments with various improvements to our events system
 2023-09_guild_polls,2254848082,Create Guild Polls
 2023-09_iar_dsa_webform,1438986391,Safety Experience Unauthenticated Report Form
+2023-09_iar_user_reporting,2180379513,Safety Experience IAR User Reporting
 2023-09_limited_time_custom_app_icons,4133484951,Limited-time icons
 2023-09_member_safety_release_coachmark,1865413295,Members Safety Release Coachmark Experiment
 2023-09_mobile_redesign_hfu,3033100557,Tabs V2 - HFU Iteration
@@ -539,15 +540,32 @@ id,hash,label
 2024-03_web_audio_api_rollout,542528704,Web Audio API Rollout
 2024-04_april_marketing_moment_experiment,2205050281,2024 April Marketing Moment
 2024-04_april_marketing_moment_incentive_experiment,1762417097,2024 April Marketing Moment Incentive
+2024-04_audio_short_circuit_guild,2830925563,Audio processing short circuiting (guild)
+2024-04_call_experience,2176811020,call experience
+2024-04_call_experience_enhanced,3729462820,call experience enhanced
+2024-04_clan_guilds,3402440853,Clans guild experiment
 2024-04_collectibles_lofi_vibes_marketing,5008486,Lofi Vibes marketing experiment
+2024-04_concurrent_quests,3093464864,Concurrent Quests
+2024-04_content_inventory_listened_media,1355948205,Content Inventory: LISTENED_MEDIA
 2024-04_content_inventory_voice_enrichments,231697094,Experimental enrichments
 2024-04_custom_notification_sound_web,1788171924,Custom Notification Sound for Desktop
+2024-04_emoji_suggestions,2981535631,Emoji Suggestions Experiment
+2024-04_game_settings_merge,1248071225,Game Settings Merge
+2024-04_gateway_zstd_verification,3817568922,Gateway Zstd Verification
 2024-04_gdm_presence,2244369299,Group DM Presence
 2024-04_genshin_admin_signup,1087745567,Genshin Admin Signup
 2024-04_genshin_user_signup,472742731,Genshin User Signup
 2024-04_go_live_simulcast,2353385375,Go Live Simulcast
 2024-04_hang_status_v2,1512150978,Hang Statuses - V2 experiment
+2024-04_hd_streaming_parent,3775594731,HD Streaming Parent
+2024-04_memberlist_hover_interactions,387275798,Memberlist Hover Interactions
+2024-04_memberlist_one_click_reply,2979926240,Memberlist One Click Reply
 2024-04_memberlist_share_to_channel,1833197772,Memberlist Share To Channel
 2024-04_merged_tabs_existing_users,4169027466,Mobile Redesign - Merge Tabs Last Stand Experiment - Existing Users
 2024-04_merged_tabs_new_users,3576355419,Mobile Redesign - Merge Tabs Last Stand Experiment - New Users
+2024-04_quest_preview_tool,3368313611,Quest Preview Tool
 2024-04_rollout_for_vic,2166544765,Amazon Music Connection
+2024-04_server_peek,2438939149,Change the guild badge and tooltip
+2024-04_shop_marketing_badge,3087218047,Shop Marketing New Badge Design Experiment
+2024-04_video_decoder_reset_fallback,3988058566,Video decoder reset/fallback on errors
+2024-05_quest_bar,4231678187,Quest Bar

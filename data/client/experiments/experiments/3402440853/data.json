@@ -1,0 +1,56 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2024-04_clan_guilds",
+    "label": "Clans guild experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show Guild Creation entrypoint - Generic",
+      "Treatment 2: Show Guild Creation entrypoint - Valorant",
+      "Treatment 3: Show Guild Creation entrypoint - Genshin Impact"
+    ],
+    "hash": 3402440853,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "holdout": {
+      "name": null,
+      "bucket": null
+    },
+    "aa_mode": false,
+    "config_keys": [
+      "enableClanCreation",
+      "defaultGameId"
+    ]
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 0,
+    "overrides": {
+      "1": [
+        "651595875897835540",
+        "1069697996767371355"
+      ]
+    },
+    "overrides_formatted": []
+  }
+}
