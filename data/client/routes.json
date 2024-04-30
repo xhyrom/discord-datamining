@@ -1210,17 +1210,6 @@
       "POST"
     ]
   },
-  "FRIEND_FINDER_VIEWED_SUGGESTIONS": {
-    "url": "/friend-finder/viewed-suggestions",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
-  "FRIEND_FINDER_HIDE_INVITE_SUGGESTION": {
-    "url": "/friend-finder/hide-invite-suggestion",
-    "allowed_methods": null
-  },
   "FRIEND_SUGGESTIONS": {
     "url": "/friend-suggestions",
     "allowed_methods": [
@@ -4884,6 +4873,11 @@
   },
   "STORE_LAYOUT": {
     "url": "/applications/:param/store-layout",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   }
 }
