@@ -66816,6 +66816,8 @@ html .invoiceCancelRow_aa7946 {
 
 .backgroundFallback_ed8795,
 .lottieAnimationBackgroundWrapper__91661 {
+    background-color: currentColor;
+    border-radius: 8px 8px 0 0;
     height: 100%;
     left: 0;
     overflow: hidden;
@@ -66831,8 +66833,6 @@ html .invoiceCancelRow_aa7946 {
 
 .lottieAnimationBackground__1ece2,
 .backgroundFallback_ed8795 {
-    background-color: currentColor;
-    border-radius: 8px 8px 0 0;
     height: 100%;
     left: 0;
     overflow: hidden;
@@ -67119,6 +67119,319 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .content__4f323 {
+    overflow: hidden
+}
+
+.contentCollapsed__82666 {
+    bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    left: 0;
+    padding: 8px 12px;
+    align-items: center;
+    justify-items: center;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 2
+}
+
+.contentCollapsedWrapper_b3396f {
+    flex: 1 1 auto;
+    position: relative;
+    z-index: 2
+}
+
+.contentCollapsedAccepted__3a865 {
+    padding-bottom: 6px;
+    padding-right: 8px;
+    padding-top: 6px
+}
+
+.contentCollapsedExpanded__6173a {
+    pointer-events: none
+}
+
+.preEnrollmentWrapper_de7def {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+}
+
+.partnerBranding__46b3f {
+    margin-right: 8px
+}
+
+.questAvailable_d9e1f5 {
+    flex: 1 1 auto;
+    opacity: .7;
+    text-align: right;
+    white-space: nowrap
+}
+
+.background__70795 {
+    background-color: var(--background-secondary-alt)
+}
+
+.backgroundAnimation_c42d48 {
+    opacity: .5
+}
+
+.wreathIcon__15dfd {
+    height: 24px;
+    margin-right: 4px;
+    width: 24px
+}
+
+.questProgressWrapper__88aa7 {
+    align-items: center;
+    display: flex
+}
+
+.questProgressRewardTile_ce3d11 {
+    border-radius: 4px;
+    box-shadow: var(--shadow-high);
+    display: block;
+    flex: 0 0 auto;
+    margin-right: 8px;
+    height: 28px;
+    width: 28px
+}
+
+.questProgressBar__3d3fa,
+.questProgressHint__75b1c {
+    flex: 1 1 auto
+}
+
+.contentExpanded__9eb0c {
+    bottom: 0;
+    box-sizing: border-box;
+    height: 100%;
+    left: 0;
+    padding: 8px;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1
+}
+
+.contentInteractable__2acd1 {
+    pointer-events: all
+}
+
+.questPromoContent_f910bc {
+    align-items: stretch;
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    position: relative;
+    z-index: 2
+}
+
+.utils_ab6626 {
+    align-items: center;
+    -webkit-backdrop-filter: blur(10px)brightness(.9);
+    backdrop-filter: blur(10px)brightness(.9);
+    border-radius: 8px;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    padding: 4px 8px
+}
+
+.partnerBranding__96958 {
+    flex: 1 0 auto
+}
+
+.questUnacceptedContent_c91b61 {
+    height: 254px
+}
+
+.questAcceptedContent_dc6593 .utils_ab6626 {
+    align-items: flex-start;
+    margin-bottom: 6px
+}
+
+.details_ac38e4 {
+    justify-content: flex-end;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    margin-bottom: 2px
+}
+
+.submenuWrapper__19139 {
+    cursor: pointer;
+    flex: 0 0 auto;
+    height: 20px;
+    opacity: .9;
+    position: relative;
+    transition: opacity.125s;
+    width: 20px
+}
+
+.submenuWrapper__19139:focus,
+.submenuWrapper__19139:hover {
+    opacity: 1
+}
+
+.submenuWrapper__19139:active {
+    opacity: .7
+}
+
+.questAcceptedContent_dc6593 .submenuWrapper__19139 {
+    height: 24px;
+    width: 24px
+}
+
+.submenuIcon__4f60b {
+    color: var(--white-500);
+    height: 16px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    width: 16px
+}
+
+.questAcceptedContent_dc6593 .submenuIcon__4f60b {
+    left: 0;
+    top: 0
+}
+
+.heroAssetWrapper__954c7 {
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1
+}
+
+.heroAssetWrapper__954c7:after {
+    background: var(--background-secondary-alt);
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    -webkit-mask-image: linear-gradient(180deg, transparent, black);
+    mask-image: linear-gradient(180deg, transparent, black);
+    position: absolute;
+    width: 100%;
+    z-index: 1
+}
+
+.heroAsset__8e1c6 {
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 270px;
+    position: absolute;
+    width: 240px;
+    z-index: 0
+}
+
+.cta_f1dfa0 {
+    flex: 0 0 auto;
+    margin-top: 8px
+}
+
+.ctaClaimReward__68e9b {
+    margin-bottom: 4px
+}
+
+.title_de2774,
+.description_b0850b {
+    text-shadow: 0 0 6px rgba(0, 0, 0, .3)
+}
+
+.title_de2774 {
+    margin-bottom: 2px
+}
+
+.description_b0850b {
+    color: hsl(var(--white-500-hsl)/.7) !important
+}
+
+.description_b0850b strong {
+    color: var(--white-500) !important
+}
+
+.rewardTile__66594 {
+    margin-bottom: 8px
+}
+
+.questAcceptedContentHeading_a32b86 {
+    align-items: center;
+    display: flex
+}
+
+.questProgressRewardTile_c72c7a {
+    border-radius: 4px;
+    box-shadow: var(--shadow-high);
+    display: block;
+    flex: 0 0 auto;
+    margin-right: 8px;
+    height: 28px;
+    width: 28px
+}
+
+.questAcceptedContentHeading_a32b86 .questProgressRewardTile_c72c7a {
+    height: 32px;
+    width: 32px
+}
+
+.questAcceptedContentCopySubheading__7fba0 {
+    opacity: .7
+}
+
+.questAcceptedContent_dc6593 .description_b0850b {
+    margin-bottom: 2px;
+    text-shadow: none
+}
+
+.promotedBadgeWrapper__130d9 {
+    flex: 0 0 auto;
+    margin-right: 4px;
+    padding-right: 8px;
+    position: relative
+}
+
+.promotedBadge__73648 {
+    cursor: pointer;
+    display: flex;
+    gap: 3px;
+    opacity: .8;
+    align-items: center;
+    justify-items: center;
+    place-items: center;
+    transition: opacity.125s
+}
+
+.promotedBadge__73648:hover {
+    opacity: 1
+}
+
+.promotedBadgeWrapper__130d9:after {
+    background-color: hsl(var(--white-500-hsl)/.4);
+    content: "";
+    height: 12px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translatey(-50%);
+    width: 1px
+}
+
+.promotedBadgeIcon__07043 {
+    flex: 0 0 auto;
+    height: 12px;
+    width: 12px
+}
+
+.content_acf450 {
     overflow: hidden
 }
 
@@ -135857,4 +136170,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.33cefa282fb59e0ff2b7.css.map*/
+/*# sourceMappingURL=99387.87c9105a96ea354486cd.css.map*/
