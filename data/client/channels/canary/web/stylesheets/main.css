@@ -11113,6 +11113,20 @@ span.clanTag_f4aadc {
     display: none
 }
 
+.footer_b64a8c {
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.infoIcon__6e0d9 {
+    width: 12px;
+    height: 12px;
+    color: var(--interactive-normal);
+    margin-right: 8px
+}
+
 .row_f694ee {
     display: flex;
     align-items: center
@@ -135851,4 +135865,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.70d42794a6660df8501c.css.map*/
+/*# sourceMappingURL=99387.31b9c3f10c35aeb83db7.css.map*/
