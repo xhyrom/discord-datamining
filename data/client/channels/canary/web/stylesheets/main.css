@@ -13025,7 +13025,12 @@ div.cardContainer__94a1c {
     padding: 0 4px;
     background: var(--bg-mod-strong);
     border-radius: 4px;
-    vertical-align: middle
+    vertical-align: middle;
+    transition: background.1s ease-in-out
+}
+
+.chipletContainerInner_bfcb1e:hover {
+    background: var(--bg-mod-faint)
 }
 
 .chipletContainerInline_fe40ef {
@@ -13034,12 +13039,7 @@ div.cardContainer__94a1c {
 }
 
 .clickable__8131d {
-    cursor: pointer;
-    transition: background.1s ease-in-out
-}
-
-.clickable__8131d:hover {
-    background: var(--bg-mod-faint)
+    cursor: pointer
 }
 
 .text_c2b2cb {
@@ -38493,10 +38493,10 @@ div:has(>div>.modal__06f49) {
 .overflowingFade__5f025 {
     position: absolute;
     right: 0;
-    top: 0;
-    bottom: 0;
+    top: -1px;
     max-width: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0), var(--background-secondary))
+    background: linear-gradient(to right, transparent, var(--background-secondary));
+    border: 0 0 4px 4px
 }
 
 .body_f9b7dd {
@@ -135861,4 +135861,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.0593edba45c9e3e7e560.css.map*/
+/*# sourceMappingURL=99387.2f393195c14d6e494fe8.css.map*/

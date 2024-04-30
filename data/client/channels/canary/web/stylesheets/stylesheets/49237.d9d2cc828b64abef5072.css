@@ -22005,12 +22005,6 @@ strong {
     overflow: hidden
 }
 
-span.clanTag_c8f97c {
-    flex: 0;
-    white-space: nowrap;
-    text-overflow: ellipsis
-}
-
 div.clanTagBadgeContainer_fb8c5b {
     margin-left: 0
 }
@@ -22119,6 +22113,31 @@ div.clanTagBadgeContainer_fb8c5b {
 
 .listDefault__4e3fa .clickable_a2c5ad:hover .username_a42504 {
     color: var(--interactive-hover)
+}
+
+span.clanTag_c8f97c {
+    flex: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: var(--bg-mod-subtle)
+}
+
+.listDefault__4e3fa .clickable_a2c5ad:hover .fade__3c6be {
+    background: linear-gradient(to right, transparent, var(--background-primary))
+}
+
+.listDefault__4e3fa .clickable_a2c5ad:hover .fade__3c6be:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right, transparent, var(--bg-mod-faint))
+}
+
+.listDefault__4e3fa .clickable_a2c5ad:hover .clanTag_c8f97c {
+    background: var(--background-accent)
 }
 
 .usernameSpeaking__22f2f,
@@ -28218,4 +28237,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.3bc2883abdad2a6b6fbf.css.map*/
+/*# sourceMappingURL=49237.d9d2cc828b64abef5072.css.map*/

@@ -36821,7 +36821,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289258", ", Version Hash: ").concat("cad8bc82ad3e74acbcabda19378b5a6d8d1aa3b2")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289267", ", Version Hash: ").concat("c4fb0e1585e6e833e986964b4aa6e7bd698c0aad")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87171,8 +87171,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289258", "289258"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289258")), t = 0), t
+                let t = parseInt((e = "289267", "289267"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289267")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -101500,7 +101500,7 @@
                 getRandomClanBadgePreset: function() {
                     return a
                 }
-            }), (r = i || (i = {}))[r.SWORD = 0] = "SWORD", r[r.WATER_DROP = 1] = "WATER_DROP", r[r.SKULL = 2] = "SKULL", r[r.TOADSTOOL = 3] = "TOADSTOOL", r[r.MOON = 4] = "MOON", r[r.LIGHTNING = 5] = "LIGHTNING", r[r.LEAF = 6] = "LEAF", r[r.HEART = 7] = "HEART", r[r.FIRE = 8] = "FIRE", r[r.COMPASS = 9] = "COMPASS", r[r.CROSSHAIRS = 10] = "CROSSHAIRS", r[r.FLOWER = 11] = "FLOWER", r[r.FORCE = 12] = "FORCE", r[r.GEM = 13] = "GEM", r[r.LAVA = 14] = "LAVA", r[r.PSYCHIC = 15] = "PSYCHIC", r[r.SMOKE = 16] = "SMOKE", r[r.SNOW = 17] = "SNOW", r[r.SOUND = 18] = "SOUND", r[r.SUN = 19] = "SUN", r[r.SWORD_20 = 20] = "SWORD_20";
+            }), (r = i || (i = {}))[r.SWORD = 0] = "SWORD", r[r.WATER_DROP = 1] = "WATER_DROP", r[r.SKULL = 2] = "SKULL", r[r.TOADSTOOL = 3] = "TOADSTOOL", r[r.MOON = 4] = "MOON", r[r.LIGHTNING = 5] = "LIGHTNING", r[r.LEAF = 6] = "LEAF", r[r.HEART = 7] = "HEART", r[r.FIRE = 8] = "FIRE", r[r.COMPASS = 9] = "COMPASS", r[r.CROSSHAIRS = 10] = "CROSSHAIRS", r[r.FLOWER = 11] = "FLOWER", r[r.FORCE = 12] = "FORCE", r[r.GEM = 13] = "GEM", r[r.LAVA = 14] = "LAVA", r[r.PSYCHIC = 15] = "PSYCHIC", r[r.SMOKE = 16] = "SMOKE", r[r.SNOW = 17] = "SNOW", r[r.SOUND = 18] = "SOUND", r[r.SUN = 19] = "SUN", r[r.WIND = 20] = "WIND";
             let s = [{
                 primary: "#ff1c90",
                 secondary: "#ff7fc0"
@@ -102457,7 +102457,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 ClanBadge: function() {
-                    return C
+                    return g
                 }
             });
             var i = n("735250");
@@ -102482,128 +102482,134 @@
                 N = n("718572"),
                 p = n("496223"),
                 O = n("846262"),
-                R = n("116175");
-            let C = e => {
+                R = n("926372"),
+                C = n("116175");
+            let g = e => {
                 let {
                     badge: t,
                     primaryTintColor: n,
-                    secondaryTintColor: C,
-                    ...g
+                    secondaryTintColor: g,
+                    ...L
                 } = e;
                 switch (t) {
-                    case R.ClanBadgeKind.SWORD:
-                    case R.ClanBadgeKind.SWORD_20:
+                    case C.ClanBadgeKind.SWORD:
                         return (0, i.jsx)(N.ClanBadgeSword, {
                             primaryTintColor: n,
-                            secondaryTintColor: C,
-                            ...g
+                            secondaryTintColor: g,
+                            ...L
                         });
-                    case R.ClanBadgeKind.WATER_DROP:
+                    case C.ClanBadgeKind.WATER_DROP:
                         return (0, i.jsx)(O.ClanBadgeWaterDrop, {
                             primaryTintColor: n,
-                            ...g
+                            ...L
                         });
-                    case R.ClanBadgeKind.SKULL:
+                    case C.ClanBadgeKind.SKULL:
                         return (0, i.jsx)(f.ClanBadgeSkull, {
                             primaryTintColor: n,
-                            ...g
+                            ...L
                         });
-                    case R.ClanBadgeKind.TOADSTOOL:
+                    case C.ClanBadgeKind.TOADSTOOL:
                         return (0, i.jsx)(p.ClanBadgeToadstool, {
                             primaryTintColor: n,
-                            secondaryTintColor: C,
-                            ...g
+                            secondaryTintColor: g,
+                            ...L
                         });
-                    case R.ClanBadgeKind.MOON:
+                    case C.ClanBadgeKind.MOON:
                         return (0, i.jsx)(I.ClanBadgeMoon, {
                             primaryTintColor: n,
-                            ...g
+                            ...L
                         });
-                    case R.ClanBadgeKind.LIGHTNING:
+                    case C.ClanBadgeKind.LIGHTNING:
                         return (0, i.jsx)(E.ClanBadgeLightning, {
                             primaryTintColor: n,
-                            ...g
+                            ...L
                         });
-                    case R.ClanBadgeKind.LEAF:
+                    case C.ClanBadgeKind.LEAF:
                         return (0, i.jsx)(c.ClanBadgeLeaf, {
                             primaryTintColor: n,
-                            ...g
+                            ...L
                         });
-                    case R.ClanBadgeKind.HEART:
+                    case C.ClanBadgeKind.HEART:
                         return (0, i.jsx)(d.ClanBadgeHeart, {
                             primaryTintColor: n,
-                            ...g
+                            ...L
                         });
-                    case R.ClanBadgeKind.FIRE:
+                    case C.ClanBadgeKind.FIRE:
                         return (0, i.jsx)(a.ClanBadgeFire, {
                             primaryTintColor: n,
-                            ...g
+                            ...L
                         });
-                    case R.ClanBadgeKind.COMPASS:
+                    case C.ClanBadgeKind.COMPASS:
                         return (0, i.jsx)(r.ClanBadgeCompass, {
                             primaryTintColor: n,
-                            secondaryTintColor: C,
-                            ...g
+                            secondaryTintColor: g,
+                            ...L
                         });
-                    case R.ClanBadgeKind.CROSSHAIRS:
+                    case C.ClanBadgeKind.CROSSHAIRS:
                         return (0, i.jsx)(s.ClanBadgeCrosshairs, {
                             primaryTintColor: n,
-                            secondaryTintColor: C,
-                            ...g
+                            secondaryTintColor: g,
+                            ...L
                         });
-                    case R.ClanBadgeKind.FLOWER:
+                    case C.ClanBadgeKind.FLOWER:
                         return (0, i.jsx)(o.ClanBadgeFlower, {
                             primaryTintColor: n,
-                            secondaryTintColor: C,
-                            ...g
+                            secondaryTintColor: g,
+                            ...L
                         });
-                    case R.ClanBadgeKind.FORCE:
+                    case C.ClanBadgeKind.FORCE:
                         return (0, i.jsx)(l.ClanBadgeForce, {
                             primaryTintColor: n,
-                            secondaryTintColor: C,
-                            ...g
+                            secondaryTintColor: g,
+                            ...L
                         });
-                    case R.ClanBadgeKind.GEM:
+                    case C.ClanBadgeKind.GEM:
                         return (0, i.jsx)(u.ClanBadgeGem, {
                             primaryTintColor: n,
-                            secondaryTintColor: C,
-                            ...g
+                            secondaryTintColor: g,
+                            ...L
                         });
-                    case R.ClanBadgeKind.LAVA:
+                    case C.ClanBadgeKind.LAVA:
                         return (0, i.jsx)(_.ClanBadgeLava, {
                             primaryTintColor: n,
-                            secondaryTintColor: C,
-                            ...g
+                            secondaryTintColor: g,
+                            ...L
                         });
-                    case R.ClanBadgeKind.PSYCHIC:
+                    case C.ClanBadgeKind.PSYCHIC:
                         return (0, i.jsx)(T.ClanBadgePsychic, {
                             primaryTintColor: n,
-                            secondaryTintColor: C,
-                            ...g
+                            secondaryTintColor: g,
+                            ...L
                         });
-                    case R.ClanBadgeKind.SMOKE:
+                    case C.ClanBadgeKind.SMOKE:
                         return (0, i.jsx)(S.ClanBadgeSmoke, {
                             primaryTintColor: n,
-                            secondaryTintColor: C,
-                            ...g
+                            secondaryTintColor: g,
+                            ...L
                         });
-                    case R.ClanBadgeKind.SNOW:
+                    case C.ClanBadgeKind.SNOW:
                         return (0, i.jsx)(h.ClanBadgeSnow, {
                             primaryTintColor: n,
-                            secondaryTintColor: C,
-                            ...g
+                            secondaryTintColor: g,
+                            ...L
                         });
-                    case R.ClanBadgeKind.SOUND:
+                    case C.ClanBadgeKind.SOUND:
                         return (0, i.jsx)(A.ClanBadgeSound, {
                             primaryTintColor: n,
-                            secondaryTintColor: C,
-                            ...g
+                            secondaryTintColor: g,
+                            ...L
                         });
-                    case R.ClanBadgeKind.SUN:
+                    case C.ClanBadgeKind.SUN:
                         return (0, i.jsx)(m.ClanBadgeSun, {
                             primaryTintColor: n,
-                            secondaryTintColor: C,
-                            ...g
+                            secondaryTintColor: g,
+                            ...L
+                        });
+                    case C.ClanBadgeKind.WIND:
+                        return (0, i.jsx)(R.ClanBadgeWind, {
+                            primaryTintColor: n,
+                            secondaryTintColor: g,
+                            ...L
                         })
                 }
                 return null
@@ -104803,6 +104809,141 @@
                         }), (0, i.jsx)("path", {
                             d: "M12 5v1h1V5h-1ZM13 6v2h1V6h-1ZM14 8v4h-1v1h-1v1h2v-1h1V8h-1ZM2 14h2v-1H2v1Z",
                             fill: _[0]
+                        })]
+                    })
+                }
+        },
+        926372: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                ClanBadgeWind: function() {
+                    return c
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("331595"),
+                s = n("249849");
+            let a = ["#816bee", "#b79cf8", "#f0f0f0"],
+                o = ["#6c9ca6", "#9af4dc", "#f0f0f0"],
+                l = [.07, .35, 1],
+                u = [{
+                    base: 4,
+                    tint: 1
+                }, {
+                    base: 1,
+                    tint: 1
+                }, {
+                    base: 8,
+                    tint: 1
+                }, {
+                    base: 6,
+                    tint: 1
+                }],
+                d = [.2, .75, 1],
+                _ = [{
+                    base: 2,
+                    tint: 1
+                }, {
+                    base: 1,
+                    tint: 1
+                }, {
+                    base: 6,
+                    tint: 1
+                }],
+                c = e => {
+                    let {
+                        width: t = 24,
+                        height: n = 24,
+                        primaryTintColor: c,
+                        secondaryTintColor: E,
+                        ...I
+                    } = e, {
+                        primaryColorsTransformed: T,
+                        secondaryColorsTransformed: f
+                    } = (0, s.getTransformedBadgeColors)({
+                        primaryBaseColors: a,
+                        primaryTintColor: c,
+                        primaryTintLuminances: l,
+                        primaryLuminanceWeights: u,
+                        secondaryBaseColors: o,
+                        secondaryTintColor: E,
+                        secondaryTintLuminances: d,
+                        secondaryLuminanceWeights: _
+                    });
+                    return (0, i.jsxs)("svg", {
+                        ...(0, r.default)(I),
+                        width: t,
+                        height: n,
+                        viewBox: "0 0 16 16",
+                        fill: "none",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        children: [(0, i.jsx)("path", {
+                            d: "M14 4V3h-2V1H8v1H7v1H6V2H3v1H2v4H1v3h1V9h1V8h5V6h1V5h5v1h1V4h-1Z",
+                            fill: T[1]
+                        }), (0, i.jsx)("path", {
+                            d: "M9 6v1H8v2h1v2h2v1h3v-1h1V6H9Z",
+                            fill: f[1]
+                        }), (0, i.jsx)("path", {
+                            d: "M4 10v4h1v1h3v-1h1v-4H4Z",
+                            fill: f[1]
+                        }), (0, i.jsx)("path", {
+                            d: "M8 14H5v1h3v-1ZM14 11h-3v1h3v-1ZM15 10h-1v1h1v-1ZM9 13H8v1h1v-1Z",
+                            fill: f[0]
+                        }), (0, i.jsx)("path", {
+                            d: "M9 7H8v1h1V7ZM11 8h-1v1h1V8ZM14 6H9v1h5V6Z",
+                            fill: f[2]
+                        }), (0, i.jsx)("path", {
+                            d: "M8 1H7v1h1V1ZM15 3h-1v1h1V3ZM14 8h-1v2h1V8ZM9 6H8v1h1V6Z",
+                            fill: "#000"
+                        }), (0, i.jsx)("path", {
+                            d: "M9 5H8v1h1V5Z",
+                            fill: T[0]
+                        }), (0, i.jsx)("path", {
+                            d: "M3 9H2v1h1V9ZM7 13H6v1h1v-1ZM6 12H5v1h1v-1Z",
+                            fill: "#000"
+                        }), (0, i.jsx)("path", {
+                            d: "M6 12H5v1h1v-1ZM13 10h-1v1h1v-1ZM12 9h-1v1h1V9ZM5 14H4v1h1v-1ZM9 14H8v1h1v-1ZM2 10H1v1h1v-1ZM3 14H2v1h1v-1ZM2 15H1v1h1v-1ZM15 4v2h-1v1h1v4h1V4h-1ZM13 2V1h-1v2h2V2h-1ZM6 1H3v1h3V1ZM13 7h-3v1h3V7ZM7 10H4v1h3v-1ZM8 15H5v1h3v-1ZM7 2H6v1h1V2ZM3 2H2v1h1V2Z",
+                            fill: "#000"
+                        }), (0, i.jsx)("path", {
+                            d: "M6 2H3v1h3V2ZM7 3H6v1h1V3ZM4 5H3v1h1V5ZM2 7H1v1h1V7ZM3 3H2v1h1V3Z",
+                            fill: T[2]
+                        }), (0, i.jsx)("path", {
+                            d: "M14 12h-3v1h3v-1ZM10 11V8H9v1H8v1h1v4h1v-2h1v-1h-1ZM15 11h-1v1h1v-1ZM2 3H1v4h1V3ZM1 7H0v3h1V7ZM4 11H3v3h1v-3ZM8 11H7v2h1v-2ZM1 11H0v4h1v-4ZM12 0H8v1h4V0Z",
+                            fill: "#000"
+                        }), (0, i.jsx)("path", {
+                            d: "M8 2H7v1h1V2ZM12 1H8v1h4V1Z",
+                            fill: T[2]
+                        }), (0, i.jsx)("path", {
+                            d: "M14 5H9v1h5V5Z",
+                            fill: "#000"
+                        }), (0, i.jsx)("path", {
+                            d: "M14 4V3h-1v1H9v1h5v1h1V4h-1Z",
+                            fill: T[0]
+                        }), (0, i.jsx)("path", {
+                            d: "M5 11H4v1h1v-1Z",
+                            fill: f[2]
+                        }), (0, i.jsx)("path", {
+                            d: "M7 6v1H3v1h5V6H7Z",
+                            fill: T[0]
+                        }), (0, i.jsx)("path", {
+                            d: "M7 7v1H3v1h5V7H7Z",
+                            fill: "#000"
+                        }), (0, i.jsx)("path", {
+                            d: "M3 8H2v1h1V8ZM2 9H1v1h1V9Z",
+                            fill: T[0]
+                        }), (0, i.jsx)("path", {
+                            d: "M3 9v1H2v1H1v4h1v-1h1v-3h1v-1h4V9H3Z",
+                            fill: f[1]
+                        }), (0, i.jsx)("path", {
+                            d: "M3 10H2v1h1v-1ZM2 11H1v1h1v-1Z",
+                            fill: f[2]
+                        }), (0, i.jsx)("path", {
+                            d: "M3 13H2v1h1v-1ZM2 14H1v1h1v-1Z",
+                            fill: f[0]
+                        }), (0, i.jsx)("path", {
+                            d: "M8 9H3v1h5V9Z",
+                            fill: f[2]
                         })]
                     })
                 }
@@ -113552,8 +113693,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289258",
-                    versionHash: "cad8bc82ad3e74acbcabda19378b5a6d8d1aa3b2"
+                    buildNumber: "289267",
+                    versionHash: "c4fb0e1585e6e833e986964b4aa6e7bd698c0aad"
                 }
             }
             n.r(t), n.d(t, {
@@ -168787,8 +168928,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714508641849",
-                                    build_number: "289258"
+                                    built_at: "1714509182508",
+                                    build_number: "289267"
                                 }
                             },
                             retries: 1
@@ -246863,7 +247004,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "cad8bc82ad3e74acbcabda19378b5a6d8d1aa3b2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "c4fb0e1585e6e833e986964b4aa6e7bd698c0aad"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -267063,32 +267204,35 @@
                     {
                         analyticsLocations: b
                     } = (0, I.default)(E.default.USERNAME),
+                    G = m ? "@" : "",
                     {
-                        nick: G,
-                        colorString: w,
-                        colorRoleName: B
+                        nick: w,
+                        colorString: B,
+                        colorRoleName: k
                     } = n,
-                    k = null != i.messageReference && null != i.webhookId,
-                    V = (0, d.useStateFromStores)([c.default], () => c.default.roleStyle),
-                    x = (0, h.useCanSeeRemixBadge)(),
-                    F = {
+                    V = null != i.messageReference && null != i.webhookId,
+                    x = (0, d.useStateFromStores)([c.default], () => c.default.roleStyle),
+                    F = (0, h.useCanSeeRemixBadge)(),
+                    H = {
                         className: O.username,
-                        style: "username" === V && null != w ? {
-                            color: w
+                        style: "username" === x && null != B ? {
+                            color: B
                         } : void 0,
                         onClick: L,
                         onContextMenu: v,
-                        children: (0, s.jsxs)(s.Fragment, {
-                            children: [(m ? "@" : "") + G, (0, s.jsx)(T.default, {
+                        children: o ? (0, s.jsxs)(s.Fragment, {
+                            children: [G + w, (0, s.jsx)(T.default, {
                                 clan: n.clan,
                                 userId: i.author.id,
                                 className: O.clanTagChiplet,
                                 source: p.AnalyticsSections.CHANNEL
                             })]
+                        }) : (0, s.jsx)(s.Fragment, {
+                            children: G + w
                         })
                     };
                 t = null != M && null != C ? (0, s.jsx)(_.Popout, {
-                    preload: k ? void 0 : function() {
+                    preload: V ? void 0 : function() {
                         let e = null != r ? r : i.author;
                         return (0, A.maybeFetchUserProfileForPopout)(e.id, null != n.guildMemberAvatar && null != U ? (0, N.getGuildMemberAvatarURLSimple)({
                             guildId: U,
@@ -267112,27 +267256,32 @@
                         return (0, s.jsx)(_.Clickable, {
                             tag: "span",
                             ...n,
-                            ...F,
-                            className: l()(F.className, O.clickable, g)
+                            ...H,
+                            className: l()(H.className, O.clickable, g)
                         })
                     }
                 }) : (0, s.jsx)(_.Clickable, {
-                    ...F,
-                    className: l()(F.className, g)
+                    ...H,
+                    className: l()(H.className, g)
                 });
-                let H = null != P ? P[0] : null,
-                    Y = null != P ? P[1] : null;
+                let Y = null != P ? P[0] : null,
+                    j = null != P ? P[1] : null;
                 return (0, s.jsxs)(I.AnalyticsLocationProvider, {
                     value: b,
-                    children: [null != H && o ? (0, s.jsxs)(s.Fragment, {
-                        children: [" ", H, " "]
-                    }) : null, "dot" === V ? (0, s.jsx)(_.RoleDot, {
-                        color: w,
-                        name: B,
+                    children: [null != Y && o ? (0, s.jsxs)(s.Fragment, {
+                        children: [" ", Y, " "]
+                    }) : null, "dot" === x ? (0, s.jsx)(_.RoleDot, {
+                        color: B,
+                        name: k,
                         className: O.roleDot
-                    }) : null, t, null != Y ? (0, s.jsx)(s.Fragment, {
-                        children: Y
-                    }) : null, null == H || o ? null : H, null != i && (0, S.default)(i) && x && y ? (0, s.jsx)(R, {}) : null]
+                    }) : null, t, !o && (0, s.jsx)(T.default, {
+                        clan: n.clan,
+                        userId: i.author.id,
+                        className: O.clanTagChiplet,
+                        source: p.AnalyticsSections.CHANNEL
+                    }), null != j ? (0, s.jsx)(s.Fragment, {
+                        children: j
+                    }) : null, null == Y || o ? null : Y, null != i && (0, S.default)(i) && F && y ? (0, s.jsx)(R, {}) : null]
                 })
             }(i = r || (r = {}))[i.SYSTEM_TAG = 0] = "SYSTEM_TAG", i[i.BADGES = 1] = "BADGES"
         },
@@ -275382,7 +275531,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289258"
+                                build_number: "289267"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282599,7 +282748,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289258", "289258"), 10);
+                let s = parseInt((n = "289267", "289267"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -309984,4 +310133,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.34fa42c2606d9541ff66.js.map
+//# sourceMappingURL=35705.57c4086d34d6b1f66fc8.js.map
