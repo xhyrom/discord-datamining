@@ -36737,7 +36737,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289019", ", Version Hash: ").concat("c45ad7a2492781c42a21550bb2540733385a0c6e")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289021", ", Version Hash: ").concat("55419bc87e423dac9233c665b9873fa21fc2f15f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87067,8 +87067,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289019", "289019"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289019")), t = 0), t
+                let t = parseInt((e = "289021", "289021"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289021")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -96058,6 +96058,11 @@
                     },
                     timestamp: {
                         type: "inlineObject"
+                    },
+                    subtext: {
+                        type: "inlineStyle",
+                        before: "-# ",
+                        after: ""
                     }
                 },
                 h = new Set(["*", "_", "\\"]),
@@ -96164,7 +96169,7 @@
                                         0: ""
                                     },
                                     type: "paragraph",
-                                    content: (n ? g : C)(a, !1, {
+                                    content: (n ? g : C)(a, !0, {
                                         returnMentionIds: !0,
                                         disableAutoBlockNewlines: !0,
                                         guildId: t
@@ -96278,7 +96283,8 @@
                     case "codeBlockLang":
                     case "spoiler":
                     case "url":
-                    case "link": {
+                    case "link":
+                    case "subtext": {
                         i = G(t, i);
                         let {
                             before: n,
@@ -96535,7 +96541,7 @@
                     return a
                 }
             }), n("411104"), n("47120");
-            var i = n("136035");
+            var i = n("207470");
             let r = !1;
             {
                 i.ReactEditor.toSlateRange = (e, t, n) => {
@@ -96645,7 +96651,7 @@
                 r = n("470079"),
                 s = n("120356"),
                 a = n.n(s),
-                o = n("136035"),
+                o = n("207470"),
                 l = n("239091"),
                 u = n("358085"),
                 d = n("960048"),
@@ -97407,7 +97413,7 @@
                 r = n("470079"),
                 s = n("120356"),
                 a = n.n(s),
-                o = n("136035"),
+                o = n("207470"),
                 l = n("481060"),
                 u = n("40851"),
                 d = n("489465"),
@@ -97934,7 +97940,7 @@
             var i = n("512722"),
                 r = n.n(i),
                 s = n("327432"),
-                a = n("136035"),
+                a = n("207470"),
                 o = n("339227"),
                 l = n("42530");
             n("789952");
@@ -98112,7 +98118,10 @@
                     markdown(e, t, n) {
                         var i;
                         let r = "line" === e.type && (null === (i = e.codeBlockState) || void 0 === i ? void 0 : i.wasInCodeBlock) === !0,
-                            s = e.children.map(e => E.isText(e) ? e.text : " "),
+                            s = e.children.map(e => {
+                                var t;
+                                return E.isText(e) ? e.text : "((element:".concat(null !== (t = e.type) && void 0 !== t ? t : "unknown", "))")
+                            }),
                             a = s.join("");
                         return {
                             entries: o.parse(a, null != t ? t : null, r, n),
@@ -98470,14 +98479,13 @@
                             else if ("syntaxAfter" === e && null != s)
                             for (let e of s.attributes) I["after_".concat(e)] = !0;
                         for (let [t, n] of E) {
-                            if (r.EditorUtils.isVoid(e, t)) continue;
-                            let i = {
+                            let t = {
                                 anchor: r.EditorUtils.start(e, n),
                                 focus: r.EditorUtils.end(e, n)
                             };
-                            r.PointUtils.isBefore(i.anchor, c.anchor) && (i.anchor = c.anchor), r.PointUtils.isAfter(i.focus, c.focus) && (i.focus = c.focus), _.push({
+                            r.PointUtils.isBefore(t.anchor, c.anchor) && (t.anchor = c.anchor), r.PointUtils.isAfter(t.focus, c.focus) && (t.focus = c.focus), _.push({
                                 ...I,
-                                ...i
+                                ...t
                             })
                         }
                     }
@@ -98579,7 +98587,7 @@
                 }
             }), n("47120"), n("757143");
             var i = n("470079"),
-                r = n("136035"),
+                r = n("207470"),
                 s = n("911969"),
                 a = n("998698"),
                 o = n("91313"),
@@ -98847,7 +98855,7 @@
                 }
             });
             var i = n("470079"),
-                r = n("136035"),
+                r = n("207470"),
                 s = n("887490");
 
             function a(e, t, n) {
@@ -100535,7 +100543,7 @@
                     return a
                 }
             });
-            var i = n("136035"),
+            var i = n("207470"),
                 r = n("436660"),
                 s = n("887490");
             let a = (e, t) => {
@@ -100681,7 +100689,7 @@
                 r = n("470079"),
                 s = n("120356"),
                 a = n.n(s),
-                o = n("136035"),
+                o = n("207470"),
                 l = n("442837"),
                 u = n("911969"),
                 d = n("998698"),
@@ -100832,136 +100840,156 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return d
+                    return _
                 }
-            });
+            }), n("47120");
             var i = n("735250");
             n("470079");
             var r = n("120356"),
                 s = n.n(r),
                 a = n("845537"),
-                o = n("891414"),
-                l = n("3500"),
-                u = n("990291");
+                o = n("653309"),
+                l = n("891414"),
+                u = n("3500"),
+                d = n("990291");
 
-            function d(e, t, n) {
+            function _(e, t, n) {
+                var r, u;
                 let {
-                    attributes: r,
-                    children: l,
-                    element: d
-                } = e;
-                switch (d.type) {
+                    attributes: _,
+                    children: E,
+                    element: I,
+                    decorations: T
+                } = e, f = function(e) {
+                    return Object.entries(e).filter(e => {
+                        let [t] = e;
+                        return "anchor" !== t && "focus" !== t
+                    }).map(e => {
+                        let [t, n] = e;
+                        return !0 === n && t in o.cssClasses ? o.cssClasses[t] : null
+                    }).filter(e => null != e).join(" ")
+                }(null !== (r = T[0]) && void 0 !== r ? r : {});
+                switch (I.type) {
                     case "line":
-                        var c;
-                        if (null === (c = d.codeBlockState) || void 0 === c ? void 0 : c.isInCodeBlock) return (0, i.jsx)("div", {
-                            className: o.codeLine,
-                            spellCheck: null == d.codeBlockState || null == d.codeBlockState.lang,
-                            ...r,
-                            children: l
+                        if (null === (u = I.codeBlockState) || void 0 === u ? void 0 : u.isInCodeBlock) return (0, i.jsx)("div", {
+                            className: l.codeLine,
+                            spellCheck: null == I.codeBlockState || null == I.codeBlockState.lang,
+                            ..._,
+                            children: E
                         });
                         return (0, i.jsx)("div", {
-                            ...r,
-                            children: l
+                            ..._,
+                            children: E
                         });
                     case "blockQuote": {
-                        let e = s()(u.blockquoteContainer, u.slateBlockquoteContainer);
+                        let e = s()(d.blockquoteContainer, d.slateBlockquoteContainer);
                         return (0, i.jsxs)("div", {
-                            ...r,
+                            ..._,
                             className: e,
                             children: [(0, i.jsx)("span", {
                                 contentEditable: !1,
-                                className: u.blockquoteDivider
+                                className: d.blockquoteDivider
                             }), (0, i.jsx)("blockquote", {
-                                children: l
+                                children: E
                             })]
                         })
                     }
                     case "emoji":
-                        return (0, i.jsxs)(_, {
-                            attributes: r,
+                        return (0, i.jsxs)(c, {
+                            attributes: _,
+                            className: f,
                             children: [(0, i.jsx)(a.Emoji, {
-                                emoji: d.emoji
-                            }), l]
+                                emoji: I.emoji
+                            }), E]
                         });
                     case "customEmoji":
-                        return (0, i.jsxs)(_, {
-                            attributes: r,
+                        return (0, i.jsxs)(c, {
+                            attributes: _,
+                            className: f,
                             children: [(0, i.jsx)(a.CustomEmoji, {
-                                emoji: d.emoji
-                            }), l]
+                                emoji: I.emoji
+                            }), E]
                         });
                     case "textMention":
-                        return (0, i.jsxs)(_, {
-                            attributes: r,
+                        return (0, i.jsxs)(c, {
+                            attributes: _,
+                            className: f,
                             children: [(0, i.jsx)(a.TextMention, {
-                                text: d.name,
+                                text: I.name,
                                 channelId: n,
                                 guildId: t
-                            }), l]
+                            }), E]
                         });
                     case "userMention":
-                        return (0, i.jsxs)(_, {
-                            attributes: r,
+                        return (0, i.jsxs)(c, {
+                            attributes: _,
+                            className: f,
                             children: [(0, i.jsx)(a.UserMention, {
-                                id: d.userId,
+                                id: I.userId,
                                 channelId: n,
                                 guildId: t
-                            }), l]
+                            }), E]
                         });
                     case "roleMention":
-                        return (0, i.jsxs)(_, {
-                            attributes: r,
+                        return (0, i.jsxs)(c, {
+                            attributes: _,
+                            className: f,
                             children: [(0, i.jsx)(a.RoleMention, {
-                                id: d.roleId,
+                                id: I.roleId,
                                 guildId: t
-                            }), l]
+                            }), E]
                         });
                     case "channelMention":
-                        return (0, i.jsxs)(_, {
-                            attributes: r,
+                        return (0, i.jsxs)(c, {
+                            attributes: _,
+                            className: f,
                             children: [(0, i.jsx)(a.ChannelMention, {
-                                id: d.channelId
-                            }), l]
+                                id: I.channelId
+                            }), E]
                         });
                     case "staticRouteLink":
-                        return (0, i.jsxs)(_, {
-                            attributes: r,
+                        return (0, i.jsxs)(c, {
+                            attributes: _,
+                            className: f,
                             children: [(0, i.jsx)(a.StaticRouteMention, {
-                                id: d.channelId
-                            }), l]
+                                id: I.channelId
+                            }), E]
                         });
                     case "soundboard":
-                        return (0, i.jsxs)(_, {
-                            attributes: r,
+                        return (0, i.jsxs)(c, {
+                            attributes: _,
+                            className: f,
                             children: [(0, i.jsx)(a.SoundboardMention, {
-                                id: d.soundId
-                            }), l]
+                                id: I.soundId
+                            }), E]
                         });
                     case "commandMention":
-                        return (0, i.jsxs)(_, {
-                            attributes: r,
+                        return (0, i.jsxs)(c, {
+                            attributes: _,
+                            className: f,
                             children: [(0, i.jsx)(a.CommandMention, {
-                                text: d.commandName,
-                                id: d.commandId
-                            }), l]
+                                text: I.commandName,
+                                id: I.commandId
+                            }), E]
                         });
                     case "timestamp":
-                        return (0, i.jsxs)(_, {
-                            attributes: r,
+                        return (0, i.jsxs)(c, {
+                            attributes: _,
+                            className: f,
                             children: [(0, i.jsx)(a.Timestamp, {
-                                timestamp: d.parsed
-                            }), l]
+                                timestamp: I.parsed
+                            }), E]
                         });
                     default:
                         return null
                 }
             }
-            let _ = e => {
+            let c = e => {
                 let {
                     className: t,
                     attributes: n,
                     children: r
-                } = e, a = s()(l.inlineElement, l.inlineVoid, t);
+                } = e, a = s()(u.inlineElement, u.inlineVoid, t);
                 return (0, i.jsx)("span", {
                     ...n,
                     className: a,
@@ -100973,6 +101001,9 @@
         653309: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                cssClasses: function() {
+                    return d
+                },
                 default: function() {
                     return _
                 }
@@ -101000,7 +101031,8 @@
                 syntaxAfter: o.syntaxAfter,
                 codeBlockText: o.codeBlockText,
                 codeBlockSyntax: o.codeBlockSyntax,
-                codeBlockLang: o.codeBlockLang
+                codeBlockLang: o.codeBlockLang,
+                subtext: o.subtext
             };
 
             function _(e, t) {
@@ -112158,8 +112190,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289019",
-                    versionHash: "c45ad7a2492781c42a21550bb2540733385a0c6e"
+                    buildNumber: "289021",
+                    versionHash: "55419bc87e423dac9233c665b9873fa21fc2f15f"
                 }
             }
             n.r(t), n.d(t, {
@@ -157615,6 +157647,29 @@
                 return (0, i.isGuildSelectableChannelType)(e) || (0, i.isGuildVocalChannelType)(e)
             }
         },
+        777547: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                SubtextMarkdownUserExperiment: function() {
+                    return i
+                }
+            });
+            let i = (0, n("818083").createExperiment)({
+                kind: "user",
+                id: "2024-04_markdown_subtext",
+                label: "Subtext Markdown",
+                defaultConfig: {
+                    showSubtextMarkdown: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Show subtext markdown",
+                    config: {
+                        showSubtextMarkdown: !0
+                    }
+                }]
+            })
+        },
         369780: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -157991,9 +158046,9 @@
             let T = ["http:", "https:", "discord:"],
                 f = [_.AST_KEY.TEXT, _.AST_KEY.UNDERLINE, _.AST_KEY.STRONG, _.AST_KEY.ITALICS, _.AST_KEY.STRIKETHROUGH, _.AST_KEY.INLINE_CODE, _.AST_KEY.SPOILER, _.AST_KEY.LINE_BREAK, _.AST_KEY.TIMESTAMP],
                 S = [...f, _.AST_KEY.EMOJI, _.AST_KEY.CUSTOM_EMOJI],
-                h = [_.AST_KEY.LIST, _.AST_KEY.HEADING, _.AST_KEY.BLOCK_QUOTE],
+                h = [_.AST_KEY.LIST, _.AST_KEY.HEADING, _.AST_KEY.BLOCK_QUOTE, _.AST_KEY.SUBTEXT],
                 A = [_.AST_KEY.TEXT],
-                m = [_.AST_KEY.UNDERLINE, _.AST_KEY.STRONG, _.AST_KEY.ITALICS, _.AST_KEY.STRIKETHROUGH, _.AST_KEY.INLINE_CODE, _.AST_KEY.SPOILER, _.AST_KEY.LINE_BREAK, _.AST_KEY.TIMESTAMP, _.AST_KEY.EMOJI, _.AST_KEY.CUSTOM_EMOJI, _.AST_KEY.LIST, _.AST_KEY.HEADING, _.AST_KEY.BLOCK_QUOTE];
+                m = [_.AST_KEY.UNDERLINE, _.AST_KEY.STRONG, _.AST_KEY.ITALICS, _.AST_KEY.STRIKETHROUGH, _.AST_KEY.INLINE_CODE, _.AST_KEY.SPOILER, _.AST_KEY.LINE_BREAK, _.AST_KEY.TIMESTAMP, _.AST_KEY.EMOJI, _.AST_KEY.CUSTOM_EMOJI, _.AST_KEY.LIST, _.AST_KEY.HEADING, _.AST_KEY.BLOCK_QUOTE, _.AST_KEY.SUBTEXT];
 
             function N(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
@@ -158077,6 +158132,7 @@
                                 case _.AST_KEY.BLOCK_QUOTE:
                                 case _.AST_KEY.LIST:
                                 case _.AST_KEY.HEADING:
+                                case _.AST_KEY.SUBTEXT:
                                     n += "<".concat(i.type, "Content>");
                                     break;
                                 default:
@@ -158435,6 +158491,12 @@
                 },
                 message: {
                     react: (e, t, n) => (0, i.jsx)(N.default, {}, n.key)
+                },
+                subtext: {
+                    react: (e, t, n) => (0, o.reactElement)("small", (null == n ? void 0 : n.key) != null ? "".concat(n.key) : null, {
+                        children: t(e.content, n),
+                        className: n.formatInline ? w.inlineFormat : null
+                    })
                 }
             };
 
@@ -158517,20 +158579,21 @@
                 S = n("723454"),
                 h = n("772096"),
                 A = n("800927"),
-                m = n("594199"),
-                N = n("97734"),
-                p = n("660199"),
-                O = n("364458"),
-                R = n("981631"),
-                C = n("689079"),
-                g = n("377668"),
-                L = n("689938");
-            let D = /^( *>>> +([\s\S]*))|^( *>(?!>>) +[^\n]*(\n *>(?!>>) +[^\n]*)*\n?)/,
-                v = /^$|\n *$/,
-                M = /^ *>>> ?/,
-                y = /^ *> ?/gm;
+                m = n("945884"),
+                N = n("594199"),
+                p = n("97734"),
+                O = n("660199"),
+                R = n("364458"),
+                C = n("981631"),
+                g = n("689079"),
+                L = n("377668"),
+                D = n("689938");
+            let v = /^( *>>> +([\s\S]*))|^( *>(?!>>) +[^\n]*(\n *>(?!>>) +[^\n]*)*\n?)/,
+                M = /^$|\n *$/,
+                y = /^ *>>> ?/,
+                P = /^ *> ?/gm;
 
-            function P(e) {
+            function U(e) {
                 let t = (0, h.punycodeLink)(e[1]);
                 if (null == t) return {
                     type: "text",
@@ -158550,12 +158613,12 @@
                     title: void 0
                 }
             }
-            let U = e => {
+            let b = e => {
                     let t = d.default.getChannel(e);
                     return null == t ? void 0 : t.getGuildId()
                 },
-                b = e => null != e.guildId ? _.default.getGuild(e.guildId) : null != e.channelId ? _.default.getGuild(U(e.channelId)) : null,
-                G = {
+                G = e => null != e.guildId ? _.default.getGuild(e.guildId) : null != e.channelId ? _.default.getGuild(b(e.channelId)) : null,
+                w = {
                     newline: a().defaultRules.newline,
                     paragraph: a().defaultRules.paragraph,
                     escape: {
@@ -158572,14 +158635,14 @@
                                 nested: r
                             } = t;
                             if (i || r) return null;
-                            if (null == n) return D.exec(e);
+                            if (null == n) return v.exec(e);
                             let s = n[0];
-                            return v.test(s) ? D.exec(e) : null
+                            return M.test(s) ? v.exec(e) : null
                         },
                         parse(e, t, n) {
                             let i = e[0],
-                                r = !!M.exec(i),
-                                s = i.replace(r ? M : y, ""),
+                                r = !!y.exec(i),
+                                s = i.replace(r ? y : P, ""),
                                 a = n.inQuote || !1,
                                 o = n.inline || !1;
                             n.inQuote = !0, !r && (n.inline = !0);
@@ -158596,7 +158659,7 @@
                     link: h.default,
                     autolink: {
                         ...a().defaultRules.autolink,
-                        parse: P
+                        parse: U
                     },
                     url: {
                         ...a().defaultRules.url,
@@ -158619,13 +158682,13 @@
                             }
                             return n
                         },
-                        parse: P
+                        parse: U
                     },
                     strong: a().defaultRules.strong,
                     em: a().defaultRules.em,
                     u: a().defaultRules.u,
                     br: a().defaultRules.br,
-                    text: m.default,
+                    text: N.default,
                     inlineCode: {
                         ...a().defaultRules.inlineCode,
                         parse(e, t, n) {
@@ -158637,7 +158700,7 @@
                         }
                     },
                     emoticon: {
-                        order: m.default.order,
+                        order: N.default.order,
                         requiredFirstCharacters: ["\xaf"],
                         match: e => /^(¯\\_\(ツ\)_\/¯)/.exec(e),
                         parse: e => ({
@@ -158659,7 +158722,7 @@
                         }
                     },
                     roleMention: {
-                        order: m.default.order,
+                        order: N.default.order,
                         requiredFirstCharacters: ["<"],
                         match: e => /^<@&(\d+)>/.exec(e),
                         parse(e, t, n) {
@@ -158668,11 +158731,11 @@
                                 type: "roleMention",
                                 id: r
                             };
-                            let s = b(n),
+                            let s = G(n),
                                 a = null != s ? _.default.getRole(s.id, r) : null;
                             return null == a ? {
                                 type: "text",
-                                content: "@".concat(L.default.Messages.DELETED_ROLE_PLACEHOLDER)
+                                content: "@".concat(D.default.Messages.DELETED_ROLE_PLACEHOLDER)
                             } : {
                                 type: "mention",
                                 channelId: n.channelId,
@@ -158689,11 +158752,11 @@
                         }
                     },
                     mention: {
-                        order: m.default.order,
+                        order: N.default.order,
                         requiredFirstCharacters: ["<", "@"],
                         match(e, t) {
                             let n = /^<@!?(\d+)>|^(@(?:everyone|here|Clyde))/.exec(e);
-                            return null != n && ("@Clyde" !== n[0] || (0, o.getClydeEnabled)(b(t), d.default.getChannel(t.channelId))) ? n : null
+                            return null != n && ("@Clyde" !== n[0] || (0, o.getClydeEnabled)(G(t), d.default.getChannel(t.channelId))) ? n : null
                         },
                         parse(e, t, n) {
                             let i, r;
@@ -158710,10 +158773,10 @@
                                 var l;
                                 i = null !== (l = E.default.getNickname(a.getGuildId(), n.channelId, s)) && void 0 !== l ? l : I.default.getName(s)
                             }
-                            null == s && "@Clyde" === e[0] && (0, o.getClydeEnabled)(b(n), a) && (r = g.CLYDE_AI_USER_ID);
+                            null == s && "@Clyde" === e[0] && (0, o.getClydeEnabled)(G(n), a) && (r = L.CLYDE_AI_USER_ID);
                             let u = e[1],
-                                _ = null != u && R.ID_REGEX.test(u.trim()),
-                                T = _ && n.unknownUserMentionPlaceholder ? "@".concat(L.default.Messages.UNKNOWN_USER_MENTION_PLACEHOLDER) : e[0];
+                                _ = null != u && C.ID_REGEX.test(u.trim()),
+                                T = _ && n.unknownUserMentionPlaceholder ? "@".concat(D.default.Messages.UNKNOWN_USER_MENTION_PLACEHOLDER) : e[0];
                             return {
                                 userId: r,
                                 channelId: n.channelId,
@@ -158740,7 +158803,7 @@
                                 type: "commandMention",
                                 id: e[2]
                             };
-                            let [, ...i] = e[1].split(" "), r = "".concat(e[2]).concat([...i].map(e => "".concat(C.SUB_COMMAND_KEY_SEPARATOR).concat(e)).join(""));
+                            let [, ...i] = e[1].split(" "), r = "".concat(e[2]).concat([...i].map(e => "".concat(g.SUB_COMMAND_KEY_SEPARATOR).concat(e)).join(""));
                             return {
                                 channelId: n.channelId,
                                 commandId: e[2],
@@ -158754,7 +158817,7 @@
                         }
                     },
                     emoji: {
-                        order: m.default.order,
+                        order: N.default.order,
                         requiredFirstCharacters: [":"],
                         match(e) {
                             let t = l.default.EMOJI_NAME_RE.exec(e);
@@ -158769,7 +158832,7 @@
                         }
                     },
                     soundboard: {
-                        order: m.default.order,
+                        order: N.default.order,
                         requiredFirstCharacters: ["<"],
                         match: e => /^<sound:(\d+)>/.exec(e),
                         parse(e, t, n) {
@@ -158787,7 +158850,7 @@
                         }
                     },
                     customEmoji: {
-                        order: m.default.order,
+                        order: N.default.order,
                         requiredFirstCharacters: ["<"],
                         match: e => /^<a?:(\w+):(\d+)>/.exec(e),
                         parse: e => ({
@@ -158796,11 +158859,11 @@
                         })
                     },
                     timestamp: {
-                        order: m.default.order - 1,
+                        order: N.default.order - 1,
                         requiredFirstCharacters: ["<"],
-                        match: e => p.TIMESTAMP_REGEX.exec(e),
+                        match: e => O.TIMESTAMP_REGEX.exec(e),
                         parse(e) {
-                            let [t, n, i] = e, r = (0, p.parseTimestamp)(n, i);
+                            let [t, n, i] = e, r = (0, O.parseTimestamp)(n, i);
                             return null == r ? {
                                 type: "text",
                                 content: t
@@ -158814,68 +158877,69 @@
                         parse: a().defaultRules.u.parse
                     },
                     spoiler: {
-                        order: m.default.order,
+                        order: N.default.order,
                         requiredFirstCharacters: ["|"],
-                        match: e => R.MARKDOWN_SPOILER_REGEXP.exec(e),
+                        match: e => C.MARKDOWN_SPOILER_REGEXP.exec(e),
                         parse: (e, t, n) => ({
                             content: t(e[1], n),
                             channelId: n.channelId
                         })
                     },
                     staticRouteLink: {
-                        order: m.default.order,
+                        order: N.default.order,
                         requiredFirstCharacters: ["<"],
-                        match: e => R.MARKDOWN_STATIC_ROUTE_NAME_REGEXP.exec(e),
+                        match: e => C.MARKDOWN_STATIC_ROUTE_NAME_REGEXP.exec(e),
                         parse: (e, t, n) => ({
                             content: [{
                                 type: "text",
                                 content: {
-                                    home: L.default.Messages.SERVER_GUIDE,
-                                    guide: L.default.Messages.SERVER_GUIDE,
-                                    browse: L.default.Messages.CHANNEL_BROWSER_TITLE,
-                                    customize: L.default.Messages.CHANNELS_AND_ROLES
+                                    home: D.default.Messages.SERVER_GUIDE,
+                                    guide: D.default.Messages.SERVER_GUIDE,
+                                    browse: D.default.Messages.CHANNEL_BROWSER_TITLE,
+                                    customize: D.default.Messages.CHANNELS_AND_ROLES
                                 } [e[1]]
                             }],
                             channelId: e[1],
-                            guildId: U(n.channelId),
+                            guildId: b(n.channelId),
                             id: e[1]
                         })
                     },
                     heading: S.default,
-                    list: A.default
+                    list: A.default,
+                    subtext: m.default
                 },
-                w = (0, O.default)([G, N.default]),
-                B = r().omit(w, ["inlineCode", "codeBlock", "br", "blockQuote"]),
-                k = r().omit(w, ["inlineCode", "codeBlock", "br", "blockQuote", "url", "attachmentLink", "mention", "roleMention", "channelMention", "channelOrMessageUrl", "mediaPostLink"]),
-                V = r().omit(w, ["codeBlock", "br", "mention", "channel", "roleMention", "attachmentLink"]),
-                x = r().omit((0, O.default)([w, {
+                B = (0, R.default)([w, p.default]),
+                k = r().omit(B, ["inlineCode", "codeBlock", "br", "blockQuote", "subtext"]),
+                V = r().omit(B, ["inlineCode", "codeBlock", "br", "blockQuote", "url", "attachmentLink", "mention", "roleMention", "channelMention", "channelOrMessageUrl", "mediaPostLink", "subtext"]),
+                x = r().omit(B, ["codeBlock", "br", "mention", "channel", "roleMention", "attachmentLink", "subtext"]),
+                F = r().omit((0, R.default)([B, {
                     inlineCode: {
                         match(e, t, n) {
-                            let i = w.codeBlock.match(e, t, n);
+                            let i = B.codeBlock.match(e, t, n);
                             if (null != i) return i;
-                            let r = w.inlineCode.match(e, t, n);
+                            let r = B.inlineCode.match(e, t, n);
                             if (null != r) return r
                         }
                     }
                 }]), ["blockQuote", "codeBlock", "br"]),
-                F = r().omit(w, ["codeBlock", "br", "blockQuote"]),
-                H = r().omit(w, ["codeBlock", "br", "attachmentLink", "mention", "roleMention", "channel", "paragraph", "newline"]),
-                Y = r().omit(w, ["codeBlock", "blockQuote", "br"]),
-                j = r().omit(w, ["codeBlock", "br", "inlineCode"]);
+                H = r().omit(B, ["codeBlock", "br", "blockQuote"]),
+                Y = r().omit(B, ["codeBlock", "br", "attachmentLink", "mention", "roleMention", "channel", "paragraph", "newline", "subtext"]),
+                j = r().omit(B, ["codeBlock", "blockQuote", "br"]),
+                W = r().omit(B, ["codeBlock", "br", "inlineCode"]);
 
-            function W(e, t) {
+            function K(e, t) {
                 return 0 === e.length || 0 === t || "" === e.charAt(t - 1).trim()
             }
-            let K = (0, O.default)([{
+            let z = (0, R.default)([{
                 highlightWord: {
                     order: -1,
                     match(e, t) {
                         if (null != t.parseDepth && t.parseDepth > 10 || null == t.highlightWord || 0 === t.highlightWord.length) return null;
                         let n = e.indexOf(t.highlightWord);
                         if (-1 === n) return null;
-                        let i = !W(e, n);
+                        let i = !K(e, n);
                         if (i)
-                            do n = e.indexOf(t.highlightWord, n + 1), i = !W(e, n); while (i && -1 !== n);
+                            do n = e.indexOf(t.highlightWord, n + 1), i = !K(e, n); while (i && -1 !== n);
                         if (-1 === n) return null;
                         let r = e.substring(0, n),
                             s = e.substring(n + t.highlightWord.length);
@@ -158896,18 +158960,18 @@
                         }, ...o]
                     }
                 }
-            }, r().omit(w, ["url"])]);
+            }, r().omit(B, ["url"])]);
             t.default = {
-                RULES: w,
-                CHANNEL_TOPIC_RULES: B,
-                VOICE_CHANNEL_STATUS_RULES: k,
-                EMBED_TITLE_RULES: V,
-                INLINE_REPLY_RULES: x,
-                GUILD_VERIFICATION_FORM_RULES: F,
-                GUILD_EVENT_RULES: Y,
-                PROFILE_BIO_RULES: H,
-                AUTO_MODERATION_SYSTEM_MESSAGE_RULES: K,
-                NATIVE_SEARCH_RESULT_LINK_RULES: j
+                RULES: B,
+                CHANNEL_TOPIC_RULES: k,
+                VOICE_CHANNEL_STATUS_RULES: V,
+                EMBED_TITLE_RULES: x,
+                INLINE_REPLY_RULES: F,
+                GUILD_VERIFICATION_FORM_RULES: H,
+                GUILD_EVENT_RULES: j,
+                PROFILE_BIO_RULES: Y,
+                AUTO_MODERATION_SYSTEM_MESSAGE_RULES: z,
+                NATIVE_SEARCH_RESULT_LINK_RULES: W
             }
         },
         746878: function(e, t, n) {
@@ -158928,6 +158992,33 @@
                     return i
                 }
             })
+        },
+        945884: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("302454"),
+                r = n.n(i),
+                s = n("777547");
+            let a = /\n$/,
+                o = /^ *-# +((?!(-#)+)[^\n]+?) *(?:\n|$)/,
+                l = {
+                    order: r().defaultRules.heading.order,
+                    requiredFirstCharacters: ["-"],
+                    match: (e, t, n) => {
+                        let {
+                            showSubtextMarkdown: r
+                        } = s.SubtextMarkdownUserExperiment.getCurrentConfig({
+                            location: "MarkupSubtextRule"
+                        });
+                        return r ? null == n || "" === n || null != n.match(a) ? (0, i.anyScopeRegex)(o)(e, t, n) : null : null
+                    },
+                    parse: function(e, t, n) {
+                        return {
+                            content: (0, i.parseInline)(t, e[1].trim(), n)
+                        }
+                    }
+                };
+            t.default = l
         },
         594199: function(e, t, n) {
             "use strict";
@@ -158952,7 +159043,7 @@
                 AST_KEY: function() {
                     return i
                 }
-            }), (r = i || (i = {})).TEXT = "text", r.STRIKETHROUGH = "s", r.UNDERLINE = "u", r.STRONG = "strong", r.ITALICS = "em", r.IMAGE = "image", r.EMOJI = "emoji", r.CUSTOM_EMOJI = "customEmoji", r.LINK = "link", r.URL = "url", r.AUTOLINK = "autolink", r.HIGHLIGHT = "highlight", r.PARAGRAPH = "paragraph", r.LINE_BREAK = "br", r.NEWLINE = "newline", r.ESCAPE = "escape", r.SPOILER = "spoiler", r.BLOCK_QUOTE = "blockQuote", r.INLINE_CODE = "inlineCode", r.CODE_BLOCK = "codeBlock", r.MENTION = "mention", r.CHANNEL_MENTION = "channelMention", r.CHANNEL = "channel", r.GUILD = "guild", r.ATTACHMENT_LINK = "attachmentLink", r.SOUNDBOARD = "soundboard", r.STATIC_ROUTE_LINK = "staticRouteLink", r.ROLE_MENTION = "roleMention", r.COMMAND_MENTION = "commandMention", r.TIMESTAMP = "timestamp", r.LIST = "list", r.HEADING = "heading"
+            }), (r = i || (i = {})).TEXT = "text", r.STRIKETHROUGH = "s", r.UNDERLINE = "u", r.STRONG = "strong", r.ITALICS = "em", r.IMAGE = "image", r.EMOJI = "emoji", r.CUSTOM_EMOJI = "customEmoji", r.LINK = "link", r.URL = "url", r.AUTOLINK = "autolink", r.HIGHLIGHT = "highlight", r.PARAGRAPH = "paragraph", r.LINE_BREAK = "br", r.NEWLINE = "newline", r.ESCAPE = "escape", r.SPOILER = "spoiler", r.BLOCK_QUOTE = "blockQuote", r.INLINE_CODE = "inlineCode", r.CODE_BLOCK = "codeBlock", r.MENTION = "mention", r.CHANNEL_MENTION = "channelMention", r.CHANNEL = "channel", r.GUILD = "guild", r.ATTACHMENT_LINK = "attachmentLink", r.SOUNDBOARD = "soundboard", r.STATIC_ROUTE_LINK = "staticRouteLink", r.ROLE_MENTION = "roleMention", r.COMMAND_MENTION = "commandMention", r.TIMESTAMP = "timestamp", r.LIST = "list", r.HEADING = "heading", r.SUBTEXT = "subtext"
         },
         454585: function(e, t, n) {
             "use strict";
@@ -159011,7 +159102,7 @@
                         height: 14,
                         width: 14
                     }
-                })]), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "link", "url", "autolink", "list", "heading"),
+                })]), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "link", "url", "autolink", "list", "heading", "subtext"),
                 O = {
                     text: o.default.RULES.text
                 };
@@ -166639,7 +166730,8 @@
                     allowList: _ = !1,
                     allowLinks: c = !1,
                     allowDevLinks: E = !1,
-                    previewLinkTarget: I = !1
+                    allowSubtext: I = !1,
+                    previewLinkTarget: T = !1
                 } = t;
                 return i.useMemo(() => null != e.customRenderedContent ? e.customRenderedContent : e.isCommandType() && 0 === e.content.length || e.hasFlag(a.MessageFlags.LOADING) ? (0, s.default)(e) : (0, r.default)(e, {
                     hideSimpleEmbedContent: n,
@@ -166649,9 +166741,10 @@
                     allowHeading: d,
                     allowList: _,
                     allowLinks: c,
+                    allowSubtext: I,
                     allowDevLinks: E,
-                    previewLinkTarget: I
-                }), [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, n, o, l, u, d, _, c, I])
+                    previewLinkTarget: T
+                }), [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, n, o, l, u, d, _, c, T, I])
             }
         },
         761910: function(e, t, n) {
@@ -166909,8 +167002,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714488123460",
-                                    build_number: "289019"
+                                    built_at: "1714488523082",
+                                    build_number: "289021"
                                 }
                             },
                             retries: 1
@@ -244867,7 +244960,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "c45ad7a2492781c42a21550bb2540733385a0c6e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "55419bc87e423dac9233c665b9873fa21fc2f15f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -273380,7 +273473,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289019"
+                                build_number: "289021"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280597,7 +280690,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289019", "289019"), 10);
+                let s = parseInt((n = "289021", "289021"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -307982,4 +308075,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.e90a36f085a492630c40.js.map
+//# sourceMappingURL=35705.cb3849a27cc750716f40.js.map

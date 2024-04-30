@@ -14654,7 +14654,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .bold__6aad0 {
-    font-weight: 600
+    font-weight: 700
 }
 
 .italics__8ed1c {
@@ -14726,6 +14726,17 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     -webkit-text-decoration: none;
     text-decoration: none;
     display: inherit
+}
+
+.before_subtext__52a3c {
+    font-weight: 700
+}
+
+.before_subtext__52a3c,
+.subtext__5b116 {
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 17.875px
 }
 
 .inlineElement__6b273 {
@@ -135839,4 +135850,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.adde56fdc4b7c66e02ac.css.map*/
+/*# sourceMappingURL=99387.4ed4b7c5d41559106ab0.css.map*/
