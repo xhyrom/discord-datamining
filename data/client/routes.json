@@ -2845,7 +2845,12 @@
   },
   "APPLICATION_DISCLOSURES": {
     "url": "/applications/:param/disclosures",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GIFS_SEARCH": {
     "url": "/gifs/search",
