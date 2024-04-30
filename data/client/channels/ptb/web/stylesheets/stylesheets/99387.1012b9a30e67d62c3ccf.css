@@ -5393,11 +5393,26 @@
 }
 
 .cardFooterGame_de9392 {
+    position: relative;
     width: 24px;
     height: 24px;
     border-radius: 4px;
     border: 1px solid var(--border-subtle);
     overflow: hidden
+}
+
+.cardFooterOtherCount_a26e63 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: var(--bg-backdrop);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 .cardFooterGameImg_a0eeb2 {
@@ -135865,4 +135880,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.31b9c3f10c35aeb83db7.css.map*/
+/*# sourceMappingURL=99387.1012b9a30e67d62c3ccf.css.map*/
