@@ -41961,8 +41961,8 @@ div.profileThemedContainer__6e645 {
 .errorState_c6cca2 {
     padding: 20px 20px 40px;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-align: center
 }
 
@@ -42024,7 +42024,7 @@ div.profileThemedContainer__6e645 {
 
 .confirmChannelName_a42e11 {
     font-weight: 500;
-    font-size: 14px;
+    font-size: .875rem;
     margin-left: 8px;
     color: var(--header-primary)
 }
@@ -42032,7 +42032,7 @@ div.profileThemedContainer__6e645 {
 .lastActiveTimestamp_d49b9c {
     margin-left: 8px;
     color: var(--text-muted);
-    font-size: 12px;
+    font-size: .75rem;
     margin-top: 2px
 }
 
@@ -50245,8 +50245,8 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .planInfo_c12dc8 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     margin-top: 8px
 }
 
@@ -135880,4 +135880,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.219e532eb6445d2b8f7a.css.map*/
+/*# sourceMappingURL=99387.d4dcfedbfe2d08f5e02d.css.map*/
