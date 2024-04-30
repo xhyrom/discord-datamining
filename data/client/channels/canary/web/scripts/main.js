@@ -36821,7 +36821,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289179", ", Version Hash: ").concat("67f9feb3bc94c5298ea6adc82ef8657efbc14b31")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289184", ", Version Hash: ").concat("601be0223a71926a64d770382571b78e93f7ddec")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55857,8 +55857,9 @@
                 CLAN_DISCOVERY_TRAIT_OVERFLOW: "+ {count, number} more",
                 CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE: "Unknown",
                 CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL: "Playstyle",
-                CLANS: "Clans",
+                CLANS: "Guilds",
                 CLAN_USER_PROFILE_PRIMARY_CLAN: "Primary Guild",
+                CLAN_USER_PROFILE_PRIMARY_CLAN_SUBTITLE: "Choose your primary Guild and wear the Guild Tag next to your name",
                 CLAN_DISCOVERY_SAVED_FILTER: "{count, number} Saved",
                 CLAN_DISCOVERY_CARD_TAG_TOOLTIP: "Become a member to unlock this tag",
                 CLAN_DISCOVERY_MAX_GAMES_SELECTED: "Only a maximum of three games can be selected at a time.",
@@ -65769,7 +65770,7 @@
                 },
                 DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: function(e) {
                     let {
-                        items: t
+                        applications: t
                     } = e;
                     c = "loaded", E = t.filter(e => null != e.flags && (0, o.hasFlag)(e.flags, l.ApplicationFlags.EMBEDDED))
                 },
@@ -65971,16 +65972,18 @@
                     s.default.dispatch({
                         type: "DEVELOPER_ACTIVITY_SHELF_FETCH_START"
                     });
-                    let e = (await r.HTTP.get({
-                        url: g.Endpoints.APPLICATIONS,
-                        query: {
-                            with_team_applications: !0
-                        },
-                        oldFormErrors: !0
-                    })).body.map(e => T.default.createFromServer(e));
+                    let e = await r.HTTP.get({
+                            url: g.Endpoints.APPLICATIONS_WITH_ASSETS,
+                            query: {
+                                with_team_applications: !0
+                            },
+                            oldFormErrors: !0
+                        }),
+                        t = e.body.applications.map(e => T.default.createFromServer(e));
                     s.default.dispatch({
                         type: "DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS",
-                        items: e
+                        applications: t,
+                        assets: e.body.assets
                     })
                 } catch (e) {
                     s.default.dispatch({
@@ -80081,7 +80084,24 @@
             (s = i || (i = {}))[s.NOT_FETCHED = 0] = "NOT_FETCHED", s[s.FETCHING = 1] = "FETCHING", s[s.FETCH_SUCCESS = 2] = "FETCH_SUCCESS";
             let E = {},
                 I = {};
-            class T extends(r = _.default.Store) {
+
+            function T(e) {
+                let {
+                    assets: t
+                } = e, n = {
+                    ...E
+                };
+                for (let e in t) {
+                    var i;
+                    let r = t[e];
+                    n[e] = 2, I[e] = {
+                        assets: null !== (i = d().keyBy(r, "name")) && void 0 !== i ? i : {},
+                        lastUpdated: Date.now()
+                    }
+                }
+                E = n
+            }
+            class f extends(r = _.default.Store) {
                 getApplicationAssetFetchState(e) {
                     var t;
                     return null !== (t = E[e]) && void 0 !== t ? t : 0
@@ -80099,12 +80119,12 @@
                     return I[e]
                 }
             }
-            l = "ApplicationAssetsStore", (o = "displayName") in(a = T) ? Object.defineProperty(a, o, {
+            l = "ApplicationAssetsStore", (o = "displayName") in(a = f) ? Object.defineProperty(a, o, {
                 value: l,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : a[o] = l, t.default = new T(c.default, {
+            }) : a[o] = l, t.default = new f(c.default, {
                 APPLICATION_ASSETS_FETCH: function(e) {
                     let {
                         applicationId: t
@@ -80136,22 +80156,8 @@
                         }
                     } else delete I[t]
                 },
-                EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS: function(e) {
-                    let {
-                        assets: t
-                    } = e, n = {
-                        ...E
-                    };
-                    for (let e in t) {
-                        var i;
-                        let r = t[e];
-                        n[e] = 2, I[e] = {
-                            assets: null !== (i = d().keyBy(r, "name")) && void 0 !== i ? i : {},
-                            lastUpdated: Date.now()
-                        }
-                    }
-                    E = n
-                }
+                EMBEDDED_ACTIVITY_FETCH_SHELF_SUCCESS: T,
+                DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: T
             })
         },
         674563: function(e, t, n) {
@@ -87166,8 +87172,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289179", "289179"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289179")), t = 0), t
+                let t = parseInt((e = "289184", "289184"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289184")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112295,8 +112301,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289179",
-                    versionHash: "67f9feb3bc94c5298ea6adc82ef8657efbc14b31"
+                    buildNumber: "289184",
+                    versionHash: "601be0223a71926a64d770382571b78e93f7ddec"
                 }
             }
             n.r(t), n.d(t, {
@@ -167629,8 +167635,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714502277343",
-                                    build_number: "289179"
+                                    built_at: "1714502625490",
+                                    build_number: "289184"
                                 }
                             },
                             retries: 1
@@ -245705,7 +245711,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "67f9feb3bc94c5298ea6adc82ef8657efbc14b31"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "601be0223a71926a64d770382571b78e93f7ddec"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -274224,7 +274230,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289179"
+                                build_number: "289184"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -281441,7 +281447,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289179", "289179"), 10);
+                let s = parseInt((n = "289184", "289184"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -308826,4 +308832,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.b7003cb6b83a787fa8a4.js.map
+//# sourceMappingURL=35705.ebc83a37847add76e63f.js.map
