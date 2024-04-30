@@ -36821,7 +36821,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289302", ", Version Hash: ").concat("b350b0cbf5b69dd61d9f1ae89e2e0da14f27416c")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289303", ", Version Hash: ").concat("8d9ddf35b91eb40fd84644e8b96728f9800cf22d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -69202,14 +69202,15 @@
                     }),
                     j = V === h.Types.PROFILE || V === h.Types.PROFILE_V2 || V === h.Types.SIMPLIFIED_PROFILE,
                     W = V === h.Types.STREAM_PREVIEW || null != a,
-                    K = (0, A.default)(n),
-                    z = (0, E.isStageActivity)(n),
-                    Z = j ? S.default.Align.END : S.default.Align.STRETCH,
-                    X = K || W ? S.default.Direction.HORIZONTAL : S.default.Direction.VERTICAL,
-                    Q = (null == n ? void 0 : n.type) === P.ActivityTypes.HANG_STATUS,
-                    q = (0, u.useStateFromStores)([f.default, I.default], () => {
+                    K = V === h.Types.SIMPLIFIED_PROFILE || V === h.Types.BITE_SIZE_POPOUT,
+                    z = (0, A.default)(n),
+                    Z = (0, E.isStageActivity)(n),
+                    X = j ? S.default.Align.END : S.default.Align.STRETCH,
+                    Q = z || W ? S.default.Direction.HORIZONTAL : S.default.Direction.VERTICAL,
+                    q = (null == n ? void 0 : n.type) === P.ActivityTypes.HANG_STATUS,
+                    J = (0, u.useStateFromStores)([f.default, I.default], () => {
                         var e;
-                        return Q ? I.default.getChannel(null === (e = f.default.getVoiceStateForUser(r.id)) || void 0 === e ? void 0 : e.channelId) : null
+                        return q ? I.default.getChannel(null === (e = f.default.getVoiceStateForUser(r.id)) || void 0 === e ? void 0 : e.channelId) : null
                     });
                 if ((0, m.default)(n)) t = [(0, i.jsx)(p.default, {
                     look: k,
@@ -69221,26 +69222,27 @@
                     color: B,
                     platform: c.default.get(P.PlatformTypes.PLAYSTATION)
                 }, "ConnectPlatformActivityButton")];
-                else if (K) {
+                else if (z) {
                     let e = (0, i.jsx)(D.default, {
-                        activity: n,
-                        user: r,
-                        color: B,
-                        look: k,
-                        guildId: b,
-                        channelId: G,
-                        source: w
-                    }, "spotify-activity-sync-button");
-                    t = [(0, i.jsx)(v.default, {
-                        activity: n,
-                        user: r,
-                        color: B,
-                        look: k,
-                        guildId: b,
-                        channelId: G,
-                        source: w
-                    }, "spotify-activity-play-button"), e]
-                } else if (z) {
+                            activity: n,
+                            user: r,
+                            color: B,
+                            look: k,
+                            guildId: b,
+                            channelId: G,
+                            source: w
+                        }, "spotify-activity-sync-button"),
+                        s = (0, i.jsx)(v.default, {
+                            activity: n,
+                            user: r,
+                            color: B,
+                            look: k,
+                            guildId: b,
+                            channelId: G,
+                            source: w
+                        }, "spotify-activity-play-button");
+                    t = K ? [e, s] : [s, e]
+                } else if (Z) {
                     let e = (0, E.unpackStageChannelParty)(n);
                     null != e && (t = [(0, i.jsx)(g.default, {
                         guildId: e.guildId,
@@ -69255,10 +69257,10 @@
                     look: k,
                     applicationStream: a
                 }, "watch-button")];
-                else if (Q && null != q) t = [(0, i.jsx)(C.default, {
+                else if (q && null != J) t = [(0, i.jsx)(C.default, {
                     color: B,
                     look: k,
-                    hangStatusChannel: q
+                    hangStatusChannel: J
                 }, "hang-status-button")];
                 else {
                     let e = (0, i.jsx)(M.default, {
@@ -69290,13 +69292,13 @@
                     if (null == s && null == a && null == e && null == o) return null;
                     t = [s, a, e, o]
                 }
-                let J = X === S.default.Direction.VERTICAL;
+                let $ = Q === S.default.Direction.VERTICAL;
                 return (0, i.jsx)(S.default, {
                     grow: 0,
-                    align: Z,
-                    direction: X,
-                    wrap: J ? S.default.Wrap.WRAP : S.default.Wrap.NO_WRAP,
-                    className: s()(_, U.buttonsWrapper, J ? U.vertical : U.horizontal),
+                    align: X,
+                    direction: Q,
+                    wrap: $ ? S.default.Wrap.WRAP : S.default.Wrap.NO_WRAP,
+                    className: s()(_, U.buttonsWrapper, $ ? U.vertical : U.horizontal),
                     onClick: function(e) {
                         (0, l.isElement)(e.target) && "BUTTON" === e.target.nodeName && (null == x || x())
                     },
@@ -87171,8 +87173,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289302", "289302"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289302")), t = 0), t
+                let t = parseInt((e = "289303", "289303"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289303")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -113693,8 +113695,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289302",
-                    versionHash: "b350b0cbf5b69dd61d9f1ae89e2e0da14f27416c"
+                    buildNumber: "289303",
+                    versionHash: "8d9ddf35b91eb40fd84644e8b96728f9800cf22d"
                 }
             }
             n.r(t), n.d(t, {
@@ -168928,8 +168930,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714511968847",
-                                    build_number: "289302"
+                                    built_at: "1714512050537",
+                                    build_number: "289303"
                                 }
                             },
                             retries: 1
@@ -212005,7 +212007,7 @@
                     ...S
                 } = (0, l.useUserProfileAnalyticsContext)(), h = (0, r.useStateFromStores)([o.default], () => o.default.findActivity(t.id, e => null != e.type && e.type !== d.ActivityTypes.CUSTOM_STATUS), [t]);
                 return (0, i.jsx)(s.default, {
-                    type: s.UserActivityTypes.USER_POPOUT_V2,
+                    type: s.UserActivityTypes.BITE_SIZE_POPOUT,
                     activity: h,
                     className: _.activity,
                     source: T,
@@ -247004,7 +247006,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b350b0cbf5b69dd61d9f1ae89e2e0da14f27416c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8d9ddf35b91eb40fd84644e8b96728f9800cf22d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -254713,11 +254715,12 @@
                     configurable: !0,
                     writable: !0
                 }) : e[t] = n, e
-            }(s = i || (i = {})).USER_POPOUT = "UserPopout", s.USER_POPOUT_V2 = "UserPopoutV2", s.ACTIVITY_FEED = "ActivityFeed", s.PROFILE = "Profile", s.PROFILE_V2 = "ProfileV2", s.STREAM_PREVIEW = "StreamPreview", s.VOICE_CHANNEL = "VoiceChannel", s.SIMPLIFIED_PROFILE = "SimplifiedProfile";
+            }(s = i || (i = {})).USER_POPOUT = "UserPopout", s.USER_POPOUT_V2 = "UserPopoutV2", s.ACTIVITY_FEED = "ActivityFeed", s.PROFILE = "Profile", s.PROFILE_V2 = "ProfileV2", s.STREAM_PREVIEW = "StreamPreview", s.VOICE_CHANNEL = "VoiceChannel", s.SIMPLIFIED_PROFILE = "SimplifiedProfile", s.BITE_SIZE_POPOUT = "BiteSizePopout";
             let Y = {
                     StreamPreview: [108, 60],
                     UserPopout: [108, 60],
                     UserPopoutV2: [108, 60],
+                    BiteSizePopout: [108, 60],
                     VoiceChannel: [108, 60],
                     Profile: [162, 90],
                     ProfileV2: [162, 90],
@@ -255058,7 +255061,7 @@
                         start: n,
                         end: i,
                         className: this.getTypeClass("timeBar"),
-                        themed: "VoiceChannel" === this.props.type || "UserPopout" === this.props.type || "UserPopoutV2" === this.props.type || "ProfileV2" === this.props.type
+                        themed: "VoiceChannel" === this.props.type || "UserPopout" === this.props.type || "UserPopoutV2" === this.props.type || "ProfileV2" === this.props.type || "SimplifiedProfile" === this.props.type || "BiteSizePopout" === this.props.type
                     })
                 }
                 renderState(e, t) {
@@ -255105,7 +255108,7 @@
                         showReactions: s
                     } = this.props, o = this.activity;
                     if (null == o || o.type === k.ActivityTypes.CUSTOM_STATUS) return null;
-                    let l = "UserPopout" === t || "UserPopoutV2" === t,
+                    let l = "UserPopout" === t || "UserPopoutV2" === t || "BiteSizePopout" === t,
                         d = "Profile" === t || "ProfileV2" === t || "SimplifiedProfile" === t,
                         _ = "ActivityFeed" === t,
                         c = "StreamPreview" === t,
@@ -275531,7 +275534,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289302"
+                                build_number: "289303"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282748,7 +282751,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289302", "289302"), 10);
+                let s = parseInt((n = "289303", "289303"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -310133,4 +310136,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.59aa7d9856039dbbf325.js.map
+//# sourceMappingURL=35705.54de908ce430b35cf930.js.map
