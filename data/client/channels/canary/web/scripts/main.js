@@ -36826,7 +36826,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289599", ", Version Hash: ").concat("d04c51bd067a756a2e1aca09b6ccfb83958fbf66")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289606", ", Version Hash: ").concat("e319b34f8f5826e6e627038f1cd8d99daa7ef2ce")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87221,8 +87221,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289599", "289599"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289599")), t = 0), t
+                let t = parseInt((e = "289606", "289606"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289606")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -101623,16 +101623,16 @@
             "use strict";
             n.r(t), n.d(t, {
                 AGE_TRAITS: function() {
-                    return U
+                    return b
                 },
                 ALL_TRAITS_SET: function() {
-                    return G
+                    return w
                 },
                 CLAN_BRAND_PALETTE_PRESETS: function() {
-                    return k
+                    return V
                 },
                 CLAN_BRAND_PALETTE_PRESETS_BY_NAME: function() {
-                    return V
+                    return x
                 },
                 CLAN_SETTINGS_MODAL_LAYER_KEY: function() {
                     return m
@@ -101659,22 +101659,22 @@
                     return l
                 },
                 EMPTY_WILDCARD: function() {
-                    return g
+                    return L
                 },
                 GENSHIN_ID: function() {
-                    return y
+                    return P
                 },
                 HOISTED_SEARCH_APPLICATION_IDS_BY_PRIORITY: function() {
-                    return Y
+                    return j
                 },
                 IDENTITY_TRAITS: function() {
-                    return b
+                    return G
                 },
                 LANGUAGES_SET: function() {
-                    return w
+                    return B
                 },
                 MAX_GAMES_TO_DISPLAY: function() {
-                    return R
+                    return C
                 },
                 MAX_INTEREST_LENGTH: function() {
                     return O
@@ -101689,44 +101689,47 @@
                     return h
                 },
                 MAX_TRAITS_TO_DISPLAY: function() {
-                    return C
+                    return g
+                },
+                MAX_WILDCARD_LENGTH: function() {
+                    return R
                 },
                 PLAYSTYLE_GROUPS: function() {
-                    return L
-                },
-                SUGGESTED_TRAITS_SET: function() {
-                    return B
-                },
-                VALORANT_ID: function() {
-                    return M
-                },
-                VALORANT_TRAITS: function() {
-                    return P
-                },
-                ensureUserClanData: function() {
-                    return F
-                },
-                getPlaystyleOptions: function() {
-                    return D
-                },
-                getPlaystyleTitle: function() {
                     return v
                 },
+                SUGGESTED_TRAITS_SET: function() {
+                    return k
+                },
+                VALORANT_ID: function() {
+                    return y
+                },
+                VALORANT_TRAITS: function() {
+                    return U
+                },
+                ensureUserClanData: function() {
+                    return H
+                },
+                getPlaystyleOptions: function() {
+                    return M
+                },
+                getPlaystyleTitle: function() {
+                    return D
+                },
                 getRandomClanBrandPreset: function() {
-                    return x
+                    return F
                 },
                 getSortedTraits: function() {
                     return function e(t, n) {
                         let i = null != n ? e(t.filter(e => null == n ? void 0 : n.includes(e))) : [];
-                        for (let e of P) !i.includes(e) && t.includes(e) && i.push(e);
                         for (let e of U) !i.includes(e) && t.includes(e) && i.push(e);
                         for (let e of b) !i.includes(e) && t.includes(e) && i.push(e);
+                        for (let e of G) !i.includes(e) && t.includes(e) && i.push(e);
                         for (let e of t) !i.includes(e) && i.push(e);
                         return i
                     }
                 },
                 toServerClanData: function() {
-                    return H
+                    return Y
                 }
             }), n("47120"), n("653041");
             var i, r, s, a, o, l, u, d, _, c, E, I, T = n("913527"),
@@ -101738,12 +101741,13 @@
                 N = 20,
                 p = 50,
                 O = 50,
-                R = 3,
-                C = 5;
+                R = 12,
+                C = 3,
+                g = 5;
             f()("2024-01-01T00:00:00");
-            let g = "";
+            let L = "";
             (u = i || (i = {}))[u.NONE = 0] = "NONE", u[u.SOCIAL = 1] = "SOCIAL", u[u.CASUAL = 2] = "CASUAL", u[u.COMPETITIVE = 3] = "COMPETITIVE", u[u.CREATIVE = 4] = "CREATIVE", u[u.VERY_HARDCORE = 5] = "VERY_HARDCORE";
-            let L = {
+            let v = {
                 0: "NONE",
                 4: "NONE",
                 1: "CASUAL",
@@ -101752,7 +101756,7 @@
                 5: "COMPETITIVE"
             };
 
-            function v(e) {
+            function D(e) {
                 switch (e) {
                     case 1:
                         return S.default.Messages.CLAN_SETUP_PLAYSTYLE_SOCIAL_TITLE;
@@ -101767,7 +101771,7 @@
                 }
             }
 
-            function D() {
+            function M() {
                 return {
                     1: {
                         type: 1,
@@ -101795,16 +101799,16 @@
                     }
                 }
             }(d = r || (r = {}))[d.INTRO_ANIMATION = 0] = "INTRO_ANIMATION", d[d.SETUP = 1] = "SETUP", d[d.SIGN = 2] = "SIGN", (_ = s || (s = {}))[_.GAMES = 0] = "GAMES", _[_.PLAYSTYLE = 1] = "PLAYSTYLE", _[_.UTILITY_TRAITS = 2] = "UTILITY_TRAITS", _[_.INTERESTS = 3] = "INTERESTS", _[_.DESCRIPTION = 4] = "DESCRIPTION", _[_.CUSTOMIZE_TAG_BADGE = 5] = "CUSTOMIZE_TAG_BADGE", _[_.CUSTOMIZE_BANNER = 6] = "CUSTOMIZE_BANNER", _[_.MEMBER_APPLICATION = 7] = "MEMBER_APPLICATION";
-            let M = "700136079562375258",
-                y = "762434991303950386",
-                P = ["Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF", "Unrated", "All Ranks", "Bronze+", "Silver+", "Gold+", "Platinum+", "Diamond+"],
-                U = ["20+", "30+", "40+", "All Ages"],
-                b = ["Beginner Friendly", "PUGs", "LGBTQIA+", "Parent Friendly", "Work-life Balance", "Streamers"],
-                G = new Set([...P, ...U, ...b]),
-                w = new Set(S.default.getAvailableLocales().map(e => e.value)),
-                B = new Set(["anime", "fanart", "venting", "movie nights", "gacha games", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pictures", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "desk setups", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1"]);
+            let y = "700136079562375258",
+                P = "762434991303950386",
+                U = ["Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF", "Unrated", "All Ranks", "Bronze+", "Silver+", "Gold+", "Platinum+", "Diamond+"],
+                b = ["20+", "30+", "40+", "All Ages"],
+                G = ["Beginner Friendly", "PUGs", "LGBTQIA+", "Parent Friendly", "Work-life Balance", "Streamers"],
+                w = new Set([...U, ...b, ...G]),
+                B = new Set(S.default.getAvailableLocales().map(e => e.value)),
+                k = new Set(["anime", "fanart", "venting", "movie nights", "gacha games", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pictures", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "desk setups", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1"]);
             (c = a || (a = {}))[c.NIGHT_SKY = 0] = "NIGHT_SKY", c[c.CASTLE = 1] = "CASTLE", c[c.WORLD_MAP = 2] = "WORLD_MAP", c[c.SEA_FOAM = 3] = "SEA_FOAM", c[c.WARP_TUNNEL = 4] = "WARP_TUNNEL", c[c.HOUSE = 5] = "HOUSE", c[c.HEIGHTMAP = 6] = "HEIGHTMAP", c[c.MESH = 7] = "MESH", c[c.SPATTER = 8] = "SPATTER", (E = o || (o = {})).BOULDER = "boulder", E.CASCADE = "cascade", E.THUNDER = "thunder", E.SOUL = "soul", E.MARSH = "marsh", E.VOLCANO = "volcano", E.EARTH = "earth", E.ZEPHYR = "zephyr";
-            let k = [{
+            let V = [{
                     name: "boulder",
                     primary: "#8c8d8d",
                     secondary: "#d0d0d1"
@@ -101837,16 +101841,16 @@
                     primary: "#4892d5",
                     secondary: "#78b6f0"
                 }],
-                V = Object.fromEntries(k.map(e => [e.name, {
+                x = Object.fromEntries(V.map(e => [e.name, {
                     primary: e.primary,
                     secondary: e.secondary
                 }]));
 
-            function x() {
-                return k[Math.floor(Math.random() * k.length)]
+            function F() {
+                return V[Math.floor(Math.random() * V.length)]
             }
 
-            function F(e) {
+            function H(e) {
                 return null == e ? null : "identityGuildId" in e ? e : {
                     identityGuildId: e.identity_guild_id,
                     identityEnabled: e.identity_enabled,
@@ -101855,12 +101859,12 @@
                 }
             }
 
-            function H(e) {
+            function Y(e) {
                 return {
                     tag: e.tag
                 }
             }
-            let Y = new Map(["432980957394370572", "363445589247131668", "356869127241072640", "700136079562375258", "356875570916753438", "1158877933042143272", "1197827812623650866", "356876176465199104", "1167674267748540516", "542075586886107149", "356875221078245376", "1149118246826561609", "356877880938070016", "356875988589740042", "762434991303950386", "356873622985506820", "356876590342340608", "1205090671527071784", "1182713227491147776", "631914894446297148", "1137125502985961543", "357607478105604096", "359509007423242240", "1121201675240210523", "643897785271189524", "742897755160313986", "356888738724446208", "1199745463918788740", "1116835216464543946", "406637848297472017", "356888961353908224", "905961880789590076", "367827983903490050", "356944273133928458", "356942674672091136", "946609449680908348", "356875762940379136", "615752773690064908", "357607133254254632", "356943499456937984", "477175586805252107", "787443973538971748", "359508713658253318", "356877880938070016", "422772752647323649", "356954277803065354", "359509387670192128", "428055627030331402", "363447565905166336", "372438022647578634", "614380482620293151", "506950362461110273", "356879032584896512", "1161772875901051042", "535371564850479134", "363413743335374859", "385538724592746496", "426526722322726912", "1174041358995042375", "1124351876033425529", "477152881196269569", "1113966530531704943", "425778010222886912", "356875890958925834", "1124358970618953818", "356888577310851072", "398632010442211348", "1124349969906815007", "770314100885422095", "1080277149623271444", "428054228511227914", "358420454764969994", "358421669603311616", "363430548028522496", "1129504162200166401", "1200228630245159032", "356889262362329098", "356887282982191114", "363409643973771264", "1164697075582238730", "940810636273795162", "982316905262120990", "359510095811444736", "363411421553360896", "359509332490059776", "1162076274622222346", "1162085521816813721", "359507724196773888", "359801269008859136", "569253958967885828", "457301824110723113", "1140238527980916757", "1124353632758939688", "542075586886107149", "512699108809637890", "653432003798106122"].map((e, t, n) => [e, n.length - t]));
+            let j = new Map(["432980957394370572", "363445589247131668", "356869127241072640", "700136079562375258", "356875570916753438", "1158877933042143272", "1197827812623650866", "356876176465199104", "1167674267748540516", "542075586886107149", "356875221078245376", "1149118246826561609", "356877880938070016", "356875988589740042", "762434991303950386", "356873622985506820", "356876590342340608", "1205090671527071784", "1182713227491147776", "631914894446297148", "1137125502985961543", "357607478105604096", "359509007423242240", "1121201675240210523", "643897785271189524", "742897755160313986", "356888738724446208", "1199745463918788740", "1116835216464543946", "406637848297472017", "356888961353908224", "905961880789590076", "367827983903490050", "356944273133928458", "356942674672091136", "946609449680908348", "356875762940379136", "615752773690064908", "357607133254254632", "356943499456937984", "477175586805252107", "787443973538971748", "359508713658253318", "356877880938070016", "422772752647323649", "356954277803065354", "359509387670192128", "428055627030331402", "363447565905166336", "372438022647578634", "614380482620293151", "506950362461110273", "356879032584896512", "1161772875901051042", "535371564850479134", "363413743335374859", "385538724592746496", "426526722322726912", "1174041358995042375", "1124351876033425529", "477152881196269569", "1113966530531704943", "425778010222886912", "356875890958925834", "1124358970618953818", "356888577310851072", "398632010442211348", "1124349969906815007", "770314100885422095", "1080277149623271444", "428054228511227914", "358420454764969994", "358421669603311616", "363430548028522496", "1129504162200166401", "1200228630245159032", "356889262362329098", "356887282982191114", "363409643973771264", "1164697075582238730", "940810636273795162", "982316905262120990", "359510095811444736", "363411421553360896", "359509332490059776", "1162076274622222346", "1162085521816813721", "359507724196773888", "359801269008859136", "569253958967885828", "457301824110723113", "1140238527980916757", "1124353632758939688", "542075586886107149", "512699108809637890", "653432003798106122"].map((e, t, n) => [e, n.length - t]));
             (I = l || (l = {}))[I.SIZE_12 = 12] = "SIZE_12", I[I.SIZE_16 = 16] = "SIZE_16", I[I.SIZE_24 = 24] = "SIZE_24", I[I.SIZE_36 = 36] = "SIZE_36"
         },
         963202: function(e, t, n) {
@@ -102332,8 +102336,7 @@
                     children: [(0, i.jsx)(o.ClanDiscoveryCardView, {
                         clan: g,
                         className: m.cardContainer,
-                        isMember: U,
-                        expanded: !0
+                        isMember: U
                     }), null != F && (0, i.jsx)("div", {
                         className: m.buttonContainer,
                         children: F
@@ -113726,8 +113729,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289599",
-                    versionHash: "d04c51bd067a756a2e1aca09b6ccfb83958fbf66"
+                    buildNumber: "289606",
+                    versionHash: "e319b34f8f5826e6e627038f1cd8d99daa7ef2ce"
                 }
             }
             n.r(t), n.d(t, {
@@ -114552,27 +114555,32 @@
                 } = e, {
                     wildcardDescriptors: n,
                     branding: {
-                        primaryColor: r
+                        primaryColor: s
                     }
-                } = t, s = n.filter(e => e !== p.EMPTY_WILDCARD).join(", "), l = (0, _.useColorIsLowContrastAgainstClientBackground)(r);
-                return 0 === s.length ? null : (0, i.jsxs)(i.Fragment, {
+                } = t, a = n.filter(e => e !== p.EMPTY_WILDCARD).join(", "), l = (0, _.useColorIsLowContrastAgainstClientBackground)(s), u = r.useRef(null), [d, c] = r.useState(!1);
+                if (r.useEffect(() => {
+                        let e = u.current;
+                        null != e && null != e.offsetWidth && null != e.scrollWidth && c(e.offsetWidth < e.scrollWidth)
+                    }, []), 0 === a.length) return null;
+                let E = {
+                    color: l ? "var(--text-normal)" : s
+                };
+                return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-xs/normal",
                         color: "text-secondary",
                         className: R.clanInfoItem,
                         children: "\xb7"
-                    }), (0, i.jsx)("div", {
-                        className: R.wildcards,
-                        children: (0, i.jsx)(o.Text, {
-                            variant: "text-xs/semibold",
-                            style: l ? {} : {
-                                color: r
-                            },
-                            lineClamp: 1,
-                            className: a()({
-                                [R.wildcardsOverride]: l
-                            }),
-                            children: s
+                    }), (0, i.jsx)(o.Tooltip, {
+                        text: a,
+                        color: o.Tooltip.Colors.PRIMARY,
+                        shouldShow: d,
+                        children: e => (0, i.jsx)("span", {
+                            ...e,
+                            style: E,
+                            className: R.wildCardText,
+                            ref: u,
+                            children: a
                         })
                     })]
                 })
@@ -169058,8 +169066,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714587128276",
-                                    build_number: "289599"
+                                    built_at: "1714587743849",
+                                    build_number: "289606"
                                 }
                             },
                             retries: 1
@@ -247045,7 +247053,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d04c51bd067a756a2e1aca09b6ccfb83958fbf66"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e319b34f8f5826e6e627038f1cd8d99daa7ef2ce"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -275602,7 +275610,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289599"
+                                build_number: "289606"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282819,7 +282827,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289599", "289599"), 10);
+                let s = parseInt((n = "289606", "289606"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -310216,4 +310224,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.083aa66448d2a55184e8.js.map
+//# sourceMappingURL=35705.cfb0fa42c543e0b8ce17.js.map

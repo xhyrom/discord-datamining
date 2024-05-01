@@ -7022,8 +7022,7 @@
                 playstyle: "playstyle__9d997",
                 trait: "trait_dfdb34",
                 traitsContainer: "traitsContainer__23f4b",
-                wildcards: "wildcards__62f49",
-                wildcardsOverride: "wildcardsOverride__26026"
+                wildCardText: "wildCardText_ed09a2"
             }
         },
         461456: function(e) {
