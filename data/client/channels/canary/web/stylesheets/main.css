@@ -24938,45 +24938,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     margin-top: 2px
 }
 
-.voiceDisplayContainer__7d1df {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: var(--spacing-8)0 var(--spacing-8)
-}
-
-.voiceChannelInfo_b83d5d {
-    margin-left: var(--spacing-8)
-}
-
-.iconContainer__17acc {
-    position: relative
-}
-
-.speakerIconContainer_a3dbfd {
-    position: absolute;
-    bottom: -2px;
-    right: -2px;
-    width: 16px;
-    height: 16px;
-    background-color: var(--primary-500);
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
-.speakerIcon_be90f6 {
-    width: 12px;
-    height: 12px;
-    color: var(--white-500)
-}
-
-.mask__3b970 {
-    position: relative;
-    overflow: visible
-}
-
 .usernameSection_dd6196,
 .customStatusSection_c9f9ba {
     padding-top: 12px;
@@ -74294,10 +74255,6 @@ html .invoiceCancelRow_aa7946 {
 .userProfileActivity__0988f {
     position: relative;
     padding: 16px
-}
-
-.voiceActivity__2aa0b {
-    padding: 0 16px 16px
 }
 
 .actionColor_db400e {
@@ -136183,4 +136140,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.548cba0c8f7f736c1491.css.map*/
+/*# sourceMappingURL=99387.33b603beec8dd889b679.css.map*/
