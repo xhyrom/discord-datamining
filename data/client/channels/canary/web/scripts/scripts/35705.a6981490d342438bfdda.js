@@ -36827,7 +36827,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289728", ", Version Hash: ").concat("9cf4221e0c52015c1dde75eddff05c6682eb0158")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289737", ", Version Hash: ").concat("c87dc98538b15cb8d61814f49727f01f50274c38")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87232,8 +87232,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289728", "289728"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289728")), t = 0), t
+                let t = parseInt((e = "289737", "289737"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289737")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -113742,8 +113742,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289728",
-                    versionHash: "9cf4221e0c52015c1dde75eddff05c6682eb0158"
+                    buildNumber: "289737",
+                    versionHash: "c87dc98538b15cb8d61814f49727f01f50274c38"
                 }
             }
             n.r(t), n.d(t, {
@@ -169037,8 +169037,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714602327943",
-                                    build_number: "289728"
+                                    built_at: "1714603135673",
+                                    build_number: "289737"
                                 }
                             },
                             retries: 1
@@ -246923,7 +246923,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9cf4221e0c52015c1dde75eddff05c6682eb0158"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "c87dc98538b15cb8d61814f49727f01f50274c38"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -275480,7 +275480,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289728"
+                                build_number: "289737"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282697,7 +282697,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289728", "289728"), 10);
+                let s = parseInt((n = "289737", "289737"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -296736,10 +296736,11 @@
                                 let a = e.rtp.outbound.filter(e => "audio" === e.type)[0],
                                     o = this.stats.rtp.outbound.filter(e => "audio" === e.type)[0];
                                 if (null != a && null != o && null != a.framesCaptured && null != o.framesCaptured) {
-                                    let e = a.framesCaptured - o.framesCaptured;
-                                    if (this.noiseCancellation && e > 50 && null != a.noiseCancellerProcessTime && null != o.noiseCancellerProcessTime) {
-                                        let t = a.noiseCancellerProcessTime - o.noiseCancellerProcessTime;
-                                        t / e > 8 ? this.emit(f.BaseConnectionEvent.NoiseCancellationError, O.NoiseCancellerError.CPU_OVERUSE) : 0 === t && this.emit(f.BaseConnectionEvent.NoiseCancellationError, O.NoiseCancellerError.FAILED)
+                                    let e = a.framesCaptured - o.framesCaptured,
+                                        t = null != a.noiseCancellerFrames ? null != o.noiseCancellerFrames ? a.noiseCancellerFrames - o.noiseCancellerFrames : 0 : e;
+                                    if (this.noiseCancellation && t > 50 && null != a.noiseCancellerProcessTime && null != o.noiseCancellerProcessTime) {
+                                        let e = a.noiseCancellerProcessTime - o.noiseCancellerProcessTime;
+                                        e / t > 8 ? this.emit(f.BaseConnectionEvent.NoiseCancellationError, O.NoiseCancellerError.CPU_OVERUSE) : 0 === e && this.emit(f.BaseConnectionEvent.NoiseCancellationError, O.NoiseCancellerError.FAILED)
                                     }
                                     this.inputMode === O.InputModes.VOICE_ACTIVITY && this.vadAutoThreshold && this.vadUseKrisp && e > 50 && null != a.voiceActivityDetectorProcessTime && null != o.voiceActivityDetectorProcessTime && (a.voiceActivityDetectorProcessTime - o.voiceActivityDetectorProcessTime) / e > 4 && this.emit(f.BaseConnectionEvent.VoiceActivityDetectorError, O.NoiseCancellerError.VAD_CPU_OVERUSE)
                                 }
@@ -297963,6 +297964,7 @@
                         audioDetected: e.speaking,
                         framesCaptured: e.framesCaptured,
                         framesRendered: e.framesRendered,
+                        noiseCancellerFrames: e.noiseCancellerFrames,
                         noiseCancellerProcessTime: e.noiseCancellerProcessTime,
                         voiceActivityDetectorProcessTime: e.voiceActivityDetectorProcessTime,
                         passthroughCount: e.passthroughCount,
@@ -310095,4 +310097,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.ebbbd7d538b907cc1d0e.js.map
+//# sourceMappingURL=35705.a6981490d342438bfdda.js.map
