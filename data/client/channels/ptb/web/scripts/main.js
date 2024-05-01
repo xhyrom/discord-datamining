@@ -36826,7 +36826,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289572", ", Version Hash: ").concat("e5e71373fbbed6ad1b97fab5de6aebb158385f4f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289579", ", Version Hash: ").concat("b76b08ad4421bae52c1b5304a163c34e0596eb77")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55700,14 +55700,6 @@
                 CLAN_UPSELL_CONTENT_VALORANT: "Want to recruit more people to play Valorant in your server?",
                 CLAN_UPSELL_CONTENT_GENSHIN: "Want to recruit more people to play Genshin Impact in your server?",
                 CLAN_SETUP_MODAL_SAVE_AND_QUIT: "Save & Exit",
-                CLAN_SETUP_FOUNDATIONAL_INTRO_TITLE: "Tell us who you want to recruit for your Guild.",
-                CLAN_SETUP_FOUNDATIONAL_INTRO_SUBTITLE: "In this step, we'll ask about your server's games and playstyle, so we can help you recruit similar people.",
-                CLAN_SETUP_PERSONALITY_INTRO_TITLE: "Tell us about your Guild's personality.",
-                CLAN_SETUP_PERSONALITY_INTRO_SUBTITLE: "In this step, we'll ask about the traits that set your Guild apart, and what time your members tend to game.",
-                CLAN_SETUP_IDENTITY_INTRO_TITLE: "Now let's make your Guild a signature brand.",
-                CLAN_SETUP_IDENTITY_INTRO_SUBTITLE: "In this step, we'll set up your Guild's tag, badge, colors, and more!",
-                CLAN_SETUP_APPLICATION_INTRO_TITLE: "Set up Clan Applications to keep your Clan safe.",
-                CLAN_SETUP_APPLICATION_INTRO_SUBTITLE: "One last step! We will help you create rules and application questions to screen applicants and filter out bad actors.",
                 CLAN_SETUP_APPLICATION_TITLE: "Add questions for prospective members to answer.",
                 CLAN_SETUP_APPLICATION_SUBTITLE: "You'll be able to review applications for each applicant and approve, deny, or interview them before they join.",
                 CLAN_SETUP_GAMES_TITLE: "What games does your Guild play?",
@@ -55751,6 +55743,15 @@
                 CLAN_SETUP_SIGN_SUBTITLE: "One last step - sign the charter to become a Gaming Guild.",
                 CLAN_SETUP_OPTIONAL: "Optional",
                 CLAN_SETUP_WILDCARDS_SUBTITLE: "How would you describe your Guild in three words? Be creative.",
+                CLAN_SETUP_NUM_TRAITS: "{n, plural, one {1 Trait} other {{n} Traits}}",
+                CLAN_SETUP_GAMES_STEP: "Games",
+                CLAN_SETUP_PLAYSTYLE_STEP: "Playstyle",
+                CLAN_SETUP_UTILITY_TRAITS_STEP: "Traits",
+                CLAN_SETUP_INTERESTS_STEP: "Interests",
+                CLAN_SETUP_DESCRIPTION_STEP: "Description",
+                CLAN_SETUP_TAG_STEP: "Badge",
+                CLAN_SETUP_BANNER_STEP: "Banner",
+                CLAN_SETUP_APPLICATIONS_STEP: "Member Applications",
                 CLAN_PRIMETIME_PLACEHOLDER: "Day",
                 CLAN_PRIMETIME_MONDAY: "Monday",
                 CLAN_PRIMETIME_TUESDAY: "Tuesday",
@@ -55786,7 +55787,6 @@
                 CLAN_OVERVIEW_LIST_TWO_ITEMS: "!!{item1}!! and !!{item2}!!",
                 CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS: "!!{items}!!, and !!{last}!!",
                 CLAN_OVERVIEW_LIST_OTHERS_COUNT: "{n, plural, one {1 other} other {{n} others}}",
-                CLAN_SETUP_NUM_TRAITS: "{n, plural, one {1 Trait} other {{n} Traits}}",
                 CLAN_SUBMIT_ERROR: "Something went wrong! Please fix any errors and try again.",
                 CLAN_SUCCESS_TITLE: "is now a Gaming Guild!",
                 CLAN_SUCCESS_SUBTITLE: "Before you join the fun, you can choose to represent your guild tag next to your username whenever you chat.",
@@ -87221,8 +87221,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289572", "289572"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289572")), t = 0), t
+                let t = parseInt((e = "289579", "289579"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289579")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -101794,7 +101794,7 @@
                         subtitle: S.default.Messages.CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_SUBTITLE
                     }
                 }
-            }(d = r || (r = {}))[d.INTRO_ANIMATION = 0] = "INTRO_ANIMATION", d[d.SETUP = 1] = "SETUP", d[d.SIGN = 2] = "SIGN", (_ = s || (s = {}))[_.FOUNDATIONAL_INTRO = 0] = "FOUNDATIONAL_INTRO", _[_.GAMES = 1] = "GAMES", _[_.PLAYSTYLE = 2] = "PLAYSTYLE", _[_.PERSONALITY_INTRO = 3] = "PERSONALITY_INTRO", _[_.UTILITY_TRAITS = 4] = "UTILITY_TRAITS", _[_.INTERESTS = 5] = "INTERESTS", _[_.DESCRIPTION = 6] = "DESCRIPTION", _[_.IDENTITY_INTRO = 7] = "IDENTITY_INTRO", _[_.CUSTOMIZE_TAG_BADGE = 8] = "CUSTOMIZE_TAG_BADGE", _[_.CUSTOMIZE_BANNER = 9] = "CUSTOMIZE_BANNER", _[_.APPLICATION_INTRO = 10] = "APPLICATION_INTRO", _[_.MEMBER_APPLICATION = 11] = "MEMBER_APPLICATION";
+            }(d = r || (r = {}))[d.INTRO_ANIMATION = 0] = "INTRO_ANIMATION", d[d.SETUP = 1] = "SETUP", d[d.SIGN = 2] = "SIGN", (_ = s || (s = {}))[_.GAMES = 0] = "GAMES", _[_.PLAYSTYLE = 1] = "PLAYSTYLE", _[_.UTILITY_TRAITS = 2] = "UTILITY_TRAITS", _[_.INTERESTS = 3] = "INTERESTS", _[_.DESCRIPTION = 4] = "DESCRIPTION", _[_.CUSTOMIZE_TAG_BADGE = 5] = "CUSTOMIZE_TAG_BADGE", _[_.CUSTOMIZE_BANNER = 6] = "CUSTOMIZE_BANNER", _[_.MEMBER_APPLICATION = 7] = "MEMBER_APPLICATION";
             let M = "700136079562375258",
                 y = "762434991303950386",
                 P = ["Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF", "Unrated", "All Ranks", "Bronze+", "Silver+", "Gold+", "Platinum+", "Diamond+"],
@@ -113726,8 +113726,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289572",
-                    versionHash: "e5e71373fbbed6ad1b97fab5de6aebb158385f4f"
+                    buildNumber: "289579",
+                    versionHash: "b76b08ad4421bae52c1b5304a163c34e0596eb77"
                 }
             }
             n.r(t), n.d(t, {
@@ -169058,8 +169058,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714584323433",
-                                    build_number: "289572"
+                                    built_at: "1714584821241",
+                                    build_number: "289579"
                                 }
                             },
                             retries: 1
@@ -247045,7 +247045,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e5e71373fbbed6ad1b97fab5de6aebb158385f4f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "b76b08ad4421bae52c1b5304a163c34e0596eb77"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -275602,7 +275602,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289572"
+                                build_number: "289579"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282819,7 +282819,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289572", "289572"), 10);
+                let s = parseInt((n = "289579", "289579"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -291649,6 +291649,9 @@
                             lineClamp: c,
                             WebkitLineClamp: c
                         })), void 0 !== E) switch (E) {
+                        case "currentColor":
+                            t = "currentColor";
+                            break;
                         case "none":
                             t = void 0;
                             break;
@@ -310213,4 +310216,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.e0ce5d98cb890394d7e4.js.map
+//# sourceMappingURL=35705.d44978636f3f3359ca25.js.map

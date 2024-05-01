@@ -45376,7 +45376,7 @@ img.thumbnail__18ece {
 }
 
 .footerButtons__6d962 {
-    margin-top: 12px
+    margin-top: 4px
 }
 
 .footerAlphaMsg_e3ec93 {
@@ -45396,23 +45396,30 @@ img.thumbnail__18ece {
     width: 100%
 }
 
-.progressStep_dec95e {
+.progressStepContainer__76950 {
     display: flex;
     flex-direction: row;
     flex: 1;
     height: 4px;
-    border-radius: var(--radius-sm);
-    background-color: var(--interactive-muted);
-    overflow: hidden
+    padding: 8px 0
 }
 
-.progressSubStep__177b8 {
+.progressStepTooltip_defee0 {
+    margin-bottom: -4px
+}
+
+.progressStep_dec95e {
     flex: 1;
-    height: 4px;
-    background-color: transparent
+    border-radius: var(--radius-sm);
+    background-color: var(--interactive-muted);
+    overflow: hidden;
+    position: relative
 }
 
 .progressStepFill__47c59 {
+    position: absolute;
+    width: 100%;
+    height: 4px;
     background-color: var(--brand-500)
 }
 
@@ -136216,4 +136223,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2ae367aeb3865355dcbd.css.map*/
+/*# sourceMappingURL=99387.507c4b3e885fceced9b9.css.map*/
