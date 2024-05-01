@@ -11630,14 +11630,6 @@ html .progress__00e29 {
     width: 100%
 }
 
-.tooltipPremiumContent_e6a30a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    -moz-column-gap: 2px;
-    column-gap: 2px
-}
-
 .imageContent__0fe2a {
     display: flex;
     flex-flow: column nowrap;
@@ -12322,19 +12314,6 @@ html .progress__00e29 {
 
 .nitroWheel__8190b {
     margin-right: 8px
-}
-
-.nitroTextAndBadge__6db36 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    -moz-column-gap: 2px;
-    column-gap: 2px;
-    margin-top: 4px
-}
-
-.nitroText_bfbcea {
-    color: var(--premium-tier-2-pink-for-gradients)
 }
 
 .emojiContainer__8da7f {
@@ -136243,4 +136222,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f430322eefe38d9fa751.css.map*/
+/*# sourceMappingURL=99387.1ef02bd96b43bea93421.css.map*/
