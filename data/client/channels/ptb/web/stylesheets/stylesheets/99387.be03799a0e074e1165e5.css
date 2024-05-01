@@ -118141,6 +118141,10 @@ html .invoiceCancelRow__6ff3e {
     flex-grow: 1
 }
 
+.container__74bbc :focus {
+    box-shadow: 0 0 0 4px var(--blue-345)
+}
+
 .cardDetails__13c3e {
     display: flex;
     flex-direction: column;
@@ -136239,4 +136243,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.90ebb6108276d317ff9b.css.map*/
+/*# sourceMappingURL=99387.be03799a0e074e1165e5.css.map*/
