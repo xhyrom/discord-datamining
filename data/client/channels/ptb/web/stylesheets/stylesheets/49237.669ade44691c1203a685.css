@@ -13752,6 +13752,10 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     border-color: var(--background-floating)
 }
 
+.clanBadgeContainer_c2e41c img {
+    margin: 0
+}
+
 .container__43554 {
     box-sizing: border-box;
     text-overflow: ellipsis;
@@ -28267,4 +28271,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.194ab21d95aa9638d77d.css.map*/
+/*# sourceMappingURL=49237.669ade44691c1203a685.css.map*/
