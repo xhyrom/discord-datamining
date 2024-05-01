@@ -9223,9 +9223,10 @@
             var i = n("544891"),
                 r = n("570140"),
                 s = n("802098"),
-                a = n("596401");
+                a = n("695346"),
+                o = n("596401");
 
-            function o() {
+            function l() {
                 let e = new Date().getMinutes();
                 return "x=".concat(Math.floor(e / 5))
             }
@@ -9247,7 +9248,7 @@
                         type: "CHANGE_LOG_MARK_SEEN",
                         changelogId: e,
                         changelogDate: t
-                    })
+                    }), a.LastReceivedChangelogId.updateSetting(e)
                 },
                 setChangelogOverride(e) {
                     r.default.dispatch({
@@ -9256,17 +9257,17 @@
                     })
                 },
                 fetchChangelogConfig() {
-                    let e = a.ChangelogPlatforms.DESKTOP;
+                    let e = o.ChangelogPlatforms.DESKTOP;
                     return i.HTTP.get({
-                        url: "https://cdn.discordapp.com/changelogs/config_".concat(e, ".json?").concat(o())
+                        url: "https://cdn.discordapp.com/changelogs/config_".concat(e, ".json?").concat(l())
                     })
                 },
                 async fetchChangelog(e, t) {
                     if (null != s.default.getChangelog(e, t)) return null;
-                    let n = a.ChangelogPlatforms.DESKTOP;
+                    let n = o.ChangelogPlatforms.DESKTOP;
                     try {
                         let s = await i.HTTP.get({
-                            url: "https://cdn.discordapp.com/changelogs/".concat(n, "/").concat(e, "/").concat(t, ".json?").concat(o())
+                            url: "https://cdn.discordapp.com/changelogs/".concat(n, "/").concat(e, "/").concat(t, ".json?").concat(l())
                         });
                         return r.default.dispatch({
                             type: "CHANGE_LOG_FETCH_SUCCESS",
@@ -36825,7 +36826,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289517", ", Version Hash: ").concat("23727ec62248e5e08814876dcc72a05420b033fd")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289521", ", Version Hash: ").concat("a93b006a0790fbde06c27bec5dff210f47d20ac3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87076,127 +87077,130 @@
                 l = n("433517"),
                 u = n("570140"),
                 d = n("706454"),
-                _ = n("596401");
-            let c = {},
-                E = {},
-                I = null,
-                T = null,
+                _ = n("695346"),
+                c = n("581883"),
+                E = n("596401");
+            let I = {},
+                T = {},
                 f = null,
-                S = "lastChangeLogId",
-                h = "lastChangeLogDate",
-                A = null,
+                S = null,
+                h = null,
+                A = "lastChangeLogDate",
                 m = null,
-                N = new Set;
-            class p extends(i = o.default.Store) {
+                N = null,
+                p = new Set;
+
+            function O() {
+                m = _.LastReceivedChangelogId.getSetting()
+            }
+            class R extends(i = o.default.Store) {
                 initialize() {
-                    var e;
-                    this.waitFor(d.default), this.syncWith([d.default], () => !0), A = null !== (e = l.Storage.get(S)) && void 0 !== e ? e : null;
-                    let t = l.Storage.get(h);
-                    if (null != t) try {
-                        m = new Date(t)
+                    this.waitFor(d.default, c.default), this.syncWith([d.default], () => !0), this.syncWith([c.default], O);
+                    let e = l.Storage.get(A);
+                    if (null != e) try {
+                        N = new Date(e)
                     } catch {
-                        l.Storage.remove(h)
+                        l.Storage.remove(A)
                     }
                 }
                 getChangelog(e, t) {
                     var n, i;
-                    return null !== (i = null === (n = c[e]) || void 0 === n ? void 0 : n[t]) && void 0 !== i ? i : null
+                    return null !== (i = null === (n = I[e]) || void 0 === n ? void 0 : n[t]) && void 0 !== i ? i : null
                 }
                 latestChangelogId() {
-                    return I
+                    return f
                 }
                 getChangelogLoadStatus(e, t) {
                     var n, i;
-                    return null !== (i = null === (n = E[e]) || void 0 === n ? void 0 : n[t]) && void 0 !== i ? i : _.ChangelogLoadState.NOT_LOADED
+                    return null !== (i = null === (n = T[e]) || void 0 === n ? void 0 : n[t]) && void 0 !== i ? i : E.ChangelogLoadState.NOT_LOADED
                 }
                 hasLoadedConfig() {
-                    return null != f
+                    return null != h
                 }
                 getConfig() {
-                    return f
+                    return h
                 }
                 overrideId() {
-                    return T
+                    return S
                 }
                 lastSeenChangelogId() {
-                    return A
+                    return m
                 }
                 lastSeenChangelogDate() {
-                    return m
+                    return N
                 }
                 getStateForDebugging() {
                     return {
-                        changelogConfig: f,
-                        loadedChangelogs: E,
-                        lastSeenChangelogId: A,
-                        lastSeenChangelogDate: m
+                        changelogConfig: h,
+                        loadedChangelogs: T,
+                        lastSeenChangelogId: m,
+                        lastSeenChangelogDate: N
                     }
                 }
                 isLocked() {
-                    return N.size > 0
+                    return p.size > 0
                 }
             }
-            a = "ChangelogStore", (s = "displayName") in(r = p) ? Object.defineProperty(r, s, {
+            a = "ChangelogStore", (s = "displayName") in(r = R) ? Object.defineProperty(r, s, {
                 value: a,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : r[s] = a, t.default = new p(u.default, {
+            }) : r[s] = a, t.default = new R(u.default, {
                 CHANGE_LOG_LOCK: function(e) {
                     let {
                         key: t
                     } = e;
-                    if (N.has(t)) return !1;
-                    (N = new Set(N)).add(t)
+                    if (p.has(t)) return !1;
+                    (p = new Set(p)).add(t)
                 },
                 CHANGE_LOG_UNLOCK: function(e) {
                     let {
                         key: t
                     } = e;
-                    if (!N.has(t)) return !1;
-                    (N = new Set(N)).delete(t)
+                    if (!p.has(t)) return !1;
+                    (p = new Set(p)).delete(t)
                 },
                 CHANGE_LOG_SET_CONFIG: function(e) {
                     let {
                         config: t,
                         latestChangelogId: n
                     } = e;
-                    I = n, f = t
+                    f = n, h = t
                 },
                 CHANGE_LOG_FETCH_SUCCESS: function(e) {
                     let {
                         id: t,
                         changelog: n
                     } = e;
-                    null == c[t] && (c[t] = {}), c[t][n.locale] = {
+                    null == I[t] && (I[t] = {}), I[t][n.locale] = {
                         id: t,
                         date: n.date,
                         body: n.content,
                         revision: 1,
                         locale: n.locale,
-                        [n.asset_type === _.AssetType.YOUTUBE_VIDEO_ID ? "youtube_video_id" : "image"]: n.asset
-                    }, null == E[t] && (E[t] = {}), E[t][n.locale] = _.ChangelogLoadState.LOADED_SUCCESS
+                        [n.asset_type === E.AssetType.YOUTUBE_VIDEO_ID ? "youtube_video_id" : "image"]: n.asset
+                    }, null == T[t] && (T[t] = {}), T[t][n.locale] = E.ChangelogLoadState.LOADED_SUCCESS
                 },
                 CHANGE_LOG_FETCH_FAILED: function(e) {
                     let {
                         id: t,
                         locale: n
                     } = e;
-                    if (null != c[t] && null != c[t][n]) return !1;
-                    null == E[t] && (E[t] = {}), E[t][n] = _.ChangelogLoadState.LOADED_FAILURE
+                    if (null != I[t] && null != I[t][n]) return !1;
+                    null == T[t] && (T[t] = {}), T[t][n] = E.ChangelogLoadState.LOADED_FAILURE
                 },
                 CHANGE_LOG_SET_OVERRIDE: function(e) {
                     let {
                         id: t
                     } = e;
-                    T = t
+                    S = t
                 },
                 CHANGE_LOG_MARK_SEEN: function(e) {
                     let {
-                        changelogId: t,
-                        changelogDate: n
+                        changelogDate: t
                     } = e;
-                    A = null != t ? t : null, m = new Date(n), l.Storage.set(S, t), l.Storage.set(h, n)
+                    N = new Date(t), l.Storage.set(A, t)
                 }
             })
         },
@@ -87211,8 +87215,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289517", "289517"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289517")), t = 0), t
+                let t = parseInt((e = "289521", "289521"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289521")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -113736,8 +113740,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289517",
-                    versionHash: "23727ec62248e5e08814876dcc72a05420b033fd"
+                    buildNumber: "289521",
+                    versionHash: "a93b006a0790fbde06c27bec5dff210f47d20ac3"
                 }
             }
             n.r(t), n.d(t, {
@@ -169068,8 +169072,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714576926151",
-                                    build_number: "289517"
+                                    built_at: "1714578177043",
+                                    build_number: "289521"
                                 }
                             },
                             retries: 1
@@ -215585,6 +215589,9 @@
                 InstallShortcutStartMenu: function() {
                     return y
                 },
+                LastReceivedChangelogId: function() {
+                    return eU
+                },
                 LegacyUsernameDisabled: function() {
                     return ey
                 },
@@ -216074,7 +216081,8 @@
                 return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
             }, e => s.BoolValue.create({
                 value: e
-            }))
+            }));
+            let eU = (0, o.defineProtoSetting)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e)
         },
         516373: function(e, t, n) {
             "use strict";
@@ -247051,7 +247059,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "23727ec62248e5e08814876dcc72a05420b033fd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a93b006a0790fbde06c27bec5dff210f47d20ac3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -275608,7 +275616,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289517"
+                                build_number: "289521"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282825,7 +282833,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289517", "289517"), 10);
+                let s = parseInt((n = "289521", "289521"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -303508,7 +303516,8 @@
             class Y extends C.MessageType {
                 create(e) {
                     let t = {
-                        dismissedContents: new Uint8Array(0)
+                        dismissedContents: new Uint8Array(0),
+                        lastReceivedChangelogId: "0"
                     };
                     return globalThis.Object.defineProperty(t, C.MESSAGE_TYPE, {
                         enumerable: !1,
@@ -303536,6 +303545,9 @@
                             case 5:
                                 r.safetyUserSentimentNoticeDismissedAt = L.Timestamp.internalBinaryRead(e, e.uint32(), n, r.safetyUserSentimentNoticeDismissedAt);
                                 break;
+                            case 6:
+                                r.lastReceivedChangelogId = e.fixed64().toString();
+                                break;
                             default:
                                 let s = n.readUnknownField;
                                 if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
@@ -303546,7 +303558,7 @@
                     return r
                 }
                 internalBinaryWrite(e, t, n) {
-                    e.dismissedContents.length && t.tag(1, C.WireType.LengthDelimited).bytes(e.dismissedContents), e.lastDismissedOutboundPromotionStartDate && g.StringValue.internalBinaryWrite(e.lastDismissedOutboundPromotionStartDate, t.tag(2, C.WireType.LengthDelimited).fork(), n).join(), e.premiumTier0ModalDismissedAt && L.Timestamp.internalBinaryWrite(e.premiumTier0ModalDismissedAt, t.tag(3, C.WireType.LengthDelimited).fork(), n).join(), e.guildOnboardingUpsellDismissedAt && L.Timestamp.internalBinaryWrite(e.guildOnboardingUpsellDismissedAt, t.tag(4, C.WireType.LengthDelimited).fork(), n).join(), e.safetyUserSentimentNoticeDismissedAt && L.Timestamp.internalBinaryWrite(e.safetyUserSentimentNoticeDismissedAt, t.tag(5, C.WireType.LengthDelimited).fork(), n).join();
+                    e.dismissedContents.length && t.tag(1, C.WireType.LengthDelimited).bytes(e.dismissedContents), e.lastDismissedOutboundPromotionStartDate && g.StringValue.internalBinaryWrite(e.lastDismissedOutboundPromotionStartDate, t.tag(2, C.WireType.LengthDelimited).fork(), n).join(), e.premiumTier0ModalDismissedAt && L.Timestamp.internalBinaryWrite(e.premiumTier0ModalDismissedAt, t.tag(3, C.WireType.LengthDelimited).fork(), n).join(), e.guildOnboardingUpsellDismissedAt && L.Timestamp.internalBinaryWrite(e.guildOnboardingUpsellDismissedAt, t.tag(4, C.WireType.LengthDelimited).fork(), n).join(), e.safetyUserSentimentNoticeDismissedAt && L.Timestamp.internalBinaryWrite(e.safetyUserSentimentNoticeDismissedAt, t.tag(5, C.WireType.LengthDelimited).fork(), n).join(), "0" !== e.lastReceivedChangelogId && t.tag(6, C.WireType.Bit64).fixed64(e.lastReceivedChangelogId);
                     let i = n.writeUnknownFields;
                     return !1 !== i && (!0 == i ? C.UnknownFieldHandler.onWrite : i)(this.typeName, e, t), t
                 }
@@ -303576,6 +303588,11 @@
                         name: "safety_user_sentiment_notice_dismissed_at",
                         kind: "message",
                         T: () => L.Timestamp
+                    }, {
+                        no: 6,
+                        name: "last_received_changelog_id",
+                        kind: "scalar",
+                        T: 6
                     }])
                 }
             }
@@ -310210,4 +310227,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.5c861f6d0f1dab215943.js.map
+//# sourceMappingURL=35705.3f522b21732ab1566ec6.js.map
