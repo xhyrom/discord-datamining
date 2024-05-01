@@ -26336,7 +26336,18 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     position: relative;
     padding: 8px;
     border-radius: 8px;
-    background: var(--bg-mod-faint)
+    background: var(--bg-mod-faint);
+    border: 1px solid var(--border-faint)
+}
+
+.theme-dark.custom-profile-theme .activity__47d03 {
+    background: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-5));
+    border: 1px solid var(--profile-gradient-role-pill-border-color)
+}
+
+.theme-light.custom-profile-theme .activity__47d03 {
+    background: rgb(var(--bg-overlay-color)/.4);
+    border: 1px solid var(--profile-gradient-role-pill-border-color)
 }
 
 .buttonColor_b3c4e5 {
@@ -131065,8 +131076,18 @@ div.nagbar_c731ff {
     position: relative;
     padding: 8px 12px 8px 8px;
     border-radius: 8px;
-    border: 1px solid var(--border-subtle);
-    background: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-5))
+    background-color: var(--bg-mod-faint);
+    border: 1px solid var(--border-faint)
+}
+
+.theme-dark.custom-profile-theme .userProfileActivity__7cd2c {
+    background: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-5));
+    border: 1px solid var(--profile-gradient-role-pill-border-color)
+}
+
+.theme-light.custom-profile-theme .userProfileActivity__7cd2c {
+    background: rgb(var(--bg-overlay-color)/.4);
+    border: 1px solid var(--profile-gradient-role-pill-border-color)
 }
 
 .voiceActivity_d654ad {
@@ -136223,4 +136244,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.507c4b3e885fceced9b9.css.map*/
+/*# sourceMappingURL=99387.45b70f8ca1f1e6874780.css.map*/
