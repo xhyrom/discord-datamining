@@ -26197,8 +26197,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    -moz-column-gap: 4px;
-    column-gap: 4px;
+    -moz-column-gap: 6px;
+    column-gap: 6px;
     row-gap: 2px;
     margin-top: 2px
 }
@@ -26207,9 +26207,12 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     font-size: 14px;
     font-weight: 500;
     display: block;
-    margin-right: 2px;
     font-family: var(--font-primary);
     line-height: 18px
+}
+
+.pronouns__1266d {
+    margin-right: 2px
 }
 
 .userTagUsername__88953 {
@@ -26281,7 +26284,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .badgeList_b6652b {
     gap: 1px;
-    padding: 1px 2px
+    padding: 2px
 }
 
 .badge__26d6e {
@@ -136140,4 +136143,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.33b603beec8dd889b679.css.map*/
+/*# sourceMappingURL=99387.9a620ed3a66c616f30d2.css.map*/
