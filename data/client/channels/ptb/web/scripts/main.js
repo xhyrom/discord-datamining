@@ -36826,7 +36826,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289621", ", Version Hash: ").concat("98fa2fa1c1c484f5eb05469950f741afbb4f500a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289625", ", Version Hash: ").concat("c0734e82bfc2c2c87c5f100f6cd745c4b70dbd81")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -48350,9 +48350,7 @@
                 EMOJI_POPOUT_UNJOINED_GUILD_EMOJI_DESCRIPTION: "Get this emoji from",
                 EMOJI_POPOUT_JOINED_GUILD_EMOJI_DESCRIPTION: "This emoji is from",
                 EMOJI_POPOUT_PREMIUM_CURRENT_GUILD_DESCRIPTION: "This emoji is from this server. You can use it everywhere.",
-                EMOJI_POPOUT_PREMIUM_CURRENT_GUILD_DESCRIPTION_V2: "This emoji is from this server. Use it anywhere with Nitro.",
                 EMOJI_POPOUT_PREMIUM_JOINED_GUILD_DESCRIPTION: "This emoji is from one of your servers. Type its name in the chat bar to use it.",
-                EMOJI_POPOUT_PREMIUM_JOINED_GUILD_DESCRIPTION_V2: "This emoji is from one of your servers. You can use it anywhere with Nitro.",
                 EMOJI_POPOUT_PREMIUM_UNJOINED_DISCOVERABLE_GUILD_DESCRIPTION: "Want to use this emoji everywhere? Join the server.",
                 EMOJI_POPOUT_PREMIUM_UNJOINED_PRIVATE_GUILD_DESCRIPTION: "This emoji is from a server that is either invite-only or unavailable.",
                 EMOJI_POPOUT_CURRENT_GUILD_DESCRIPTION: "This emoji is from this server. Get Nitro to use it everywhere.",
@@ -48360,7 +48358,6 @@
                 EMOJI_POPOUT_ADDED_PACK_DESCRIPTION: "This emoji is from one of your packs. Type its name in the chat bar to use it.",
                 EMOJI_POPOUT_UNJOINED_DISCOVERABLE_GUILD_DESCRIPTION: "Want to use this emoji everywhere? Get Nitro and join the server.",
                 EMOJI_POPOUT_UNJOINED_PRIVATE_GUILD_DESCRIPTION: "This emoji is from a server that is either invite-only or unavailable. [Learn more](openPremiumSettings) about using custom emoji.",
-                EMOJI_POPOUT_UNJOINED_PRIVATE_GUILD_DESCRIPTION_V2: "This custom emoji is from a server that is invite-only. Use custom emojis from any joined servers with Nitro.",
                 STICKER_POPOUT_UNJOINED_GUILD_EMOJI_DESCRIPTION: "Get this sticker from",
                 STICKER_POPOUT_JOINED_GUILD_EMOJI_DESCRIPTION: "This sticker is from",
                 STICKER_POPOUT_PREMIUM_CURRENT_GUILD_DESCRIPTION: "This sticker is from this server. You can use it everywhere.",
@@ -87221,8 +87218,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289621", "289621"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289621")), t = 0), t
+                let t = parseInt((e = "289625", "289625"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289625")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -113729,8 +113726,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289621",
-                    versionHash: "98fa2fa1c1c484f5eb05469950f741afbb4f500a"
+                    buildNumber: "289625",
+                    versionHash: "c0734e82bfc2c2c87c5f100f6cd745c4b70dbd81"
                 }
             }
             n.r(t), n.d(t, {
@@ -151332,7 +151329,7 @@
                     },
                     async open(e, t, i, r) {
                         var s;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("56630"), n.e("58227"), n.e("43643"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("48226"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("67256")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("56630"), n.e("58227"), n.e("43643"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("48226"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("18811")]).then(n.bind(n, "994763")), (null === (s = T.default.getGuild(e)) || void 0 === s ? void 0 : s.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, a.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         s.default.dispatch({
@@ -165890,13 +165887,12 @@
                     return a
                 },
                 getEmojiPopoutData: function() {
-                    return c
+                    return _
                 }
             });
-            var i, r, s, a, o = n("642345"),
-                l = n("689938");
+            var i, r, s, a, o = n("689938");
             (i = s || (s = {})).DEFAULT = "Custom Emoji Popout", i.CROSS_SERVER = "Custom Emoji Popout (Cross-Server)", i.UPSELL_CURRENT_SERVER_JOINED = "Custom Emoji Popout (Upsell Joined Current-Server)", i.UPSELL_CROSS_SERVER_JOINED = "Custom Emoji Popout (Upsell Joined Cross-Server)", i.UPSELL_CROSS_SERVER_JOINABLE = "Custom Emoji Popout (Upsell Not-Joined Cross-Server)", i.UPSELL_CROSS_SERVER_UNJOINABLE = "Custom Emoji Popout (Soft Upsell)", (r = a || (a = {})).GET_PREMIUM = "GET_PREMIUM", r.JOIN_GUILD = "JOIN_GUILD", r.UNAVAILABLE = "UNAVAILABLE";
-            let u = e => {
+            let l = e => {
                     let {
                         isPremium: t,
                         hasJoinedEmojiSourceGuild: n,
@@ -165906,7 +165902,7 @@
                     } = e, a = "Custom Emoji Popout";
                     return t && !n && s ? a = "Custom Emoji Popout (Cross-Server)" : t || !n || i ? !t && !n && (a = s ? "Custom Emoji Popout (Upsell Not-Joined Cross-Server)" : "Custom Emoji Popout (Soft Upsell)") : a = r ? "Custom Emoji Popout (Upsell Joined Current-Server)" : "Custom Emoji Popout (Upsell Joined Cross-Server)", a
                 },
-                d = e => {
+                u = e => {
                     let {
                         isPremium: t,
                         hasJoinedEmojiSourceGuild: n,
@@ -165914,60 +165910,28 @@
                         isDiscoverable: r,
                         emojiComesFromCurrentGuild: s,
                         userIsRoleSubscriber: a,
-                        isRoleSubscriptionEmoji: u,
-                        shouldHideRoleSubscriptionCTA: d,
-                        onOpenPremiumSettings: _
-                    } = e, c = null;
-                    if (t) {
-                        if (n) {
-                            if (u) c = d && i ? l.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UNAVAILABLE_DESCRIPTION : i ? a ? l.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_UPGRADE_UPSELL_DESCRIPTION : l.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UPSELL_DESCRIPTION : l.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_SUBSCRIBED_DESCRIPTION;
-                            else {
-                                let {
-                                    enabled: e
-                                } = o.NitroBadgeOnEmojiHoverExperiment.getCurrentConfig({
-                                    location: "_getEmojiPopoutDescription_1"
-                                });
-                                c = e ? s ? l.default.Messages.EMOJI_POPOUT_PREMIUM_CURRENT_GUILD_DESCRIPTION_V2 : l.default.Messages.EMOJI_POPOUT_PREMIUM_JOINED_GUILD_DESCRIPTION_V2 : s ? l.default.Messages.EMOJI_POPOUT_PREMIUM_CURRENT_GUILD_DESCRIPTION : l.default.Messages.EMOJI_POPOUT_PREMIUM_JOINED_GUILD_DESCRIPTION
-                            }
-                        } else {
-                            let e = o.NitroBadgeOnEmojiHoverExperiment.getCurrentConfig({
-                                location: "_getEmojiPopoutDescription_2"
-                            }, {
-                                disable: r,
-                                autoTrackExposure: !r
-                            }).enabled ? l.default.Messages.EMOJI_POPOUT_UNJOINED_PRIVATE_GUILD_DESCRIPTION_V2 : l.default.Messages.EMOJI_POPOUT_PREMIUM_UNJOINED_PRIVATE_GUILD_DESCRIPTION;
-                            c = r ? l.default.Messages.EMOJI_POPOUT_PREMIUM_UNJOINED_DISCOVERABLE_GUILD_DESCRIPTION : e
-                        }
-                    } else if (n) c = d && i ? l.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UNAVAILABLE_DESCRIPTION : i ? a ? l.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_UPGRADE_UPSELL_DESCRIPTION : l.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UPSELL_DESCRIPTION : s ? l.default.Messages.EMOJI_POPOUT_CURRENT_GUILD_DESCRIPTION : l.default.Messages.EMOJI_POPOUT_JOINED_GUILD_DESCRIPTION;
-                    else {
-                        let e = o.NitroBadgeOnEmojiHoverExperiment.getCurrentConfig({
-                            location: "_getEmojiPopoutDescription_3"
-                        }, {
-                            disable: r,
-                            autoTrackExposure: !r
-                        }).enabled ? l.default.Messages.EMOJI_POPOUT_UNJOINED_PRIVATE_GUILD_DESCRIPTION_V2 : l.default.Messages.EMOJI_POPOUT_UNJOINED_PRIVATE_GUILD_DESCRIPTION.format({
-                            openPremiumSettings: _
-                        });
-                        c = r ? l.default.Messages.EMOJI_POPOUT_UNJOINED_DISCOVERABLE_GUILD_DESCRIPTION : e
-                    }
-                    return c
+                        isRoleSubscriptionEmoji: l,
+                        shouldHideRoleSubscriptionCTA: u,
+                        onOpenPremiumSettings: d
+                    } = e, _ = null;
+                    return _ = t ? n ? l ? u && i ? o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UNAVAILABLE_DESCRIPTION : i ? a ? o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_UPGRADE_UPSELL_DESCRIPTION : o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UPSELL_DESCRIPTION : o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_SUBSCRIBED_DESCRIPTION : s ? o.default.Messages.EMOJI_POPOUT_PREMIUM_CURRENT_GUILD_DESCRIPTION : o.default.Messages.EMOJI_POPOUT_PREMIUM_JOINED_GUILD_DESCRIPTION : r ? o.default.Messages.EMOJI_POPOUT_PREMIUM_UNJOINED_DISCOVERABLE_GUILD_DESCRIPTION : o.default.Messages.EMOJI_POPOUT_PREMIUM_UNJOINED_PRIVATE_GUILD_DESCRIPTION : n ? u && i ? o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UNAVAILABLE_DESCRIPTION : i ? a ? o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_UPGRADE_UPSELL_DESCRIPTION : o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UPSELL_DESCRIPTION : s ? o.default.Messages.EMOJI_POPOUT_CURRENT_GUILD_DESCRIPTION : o.default.Messages.EMOJI_POPOUT_JOINED_GUILD_DESCRIPTION : r ? o.default.Messages.EMOJI_POPOUT_UNJOINED_DISCOVERABLE_GUILD_DESCRIPTION : o.default.Messages.EMOJI_POPOUT_UNJOINED_PRIVATE_GUILD_DESCRIPTION.format({
+                        openPremiumSettings: d
+                    })
                 },
-                _ = e => {
+                d = e => {
                     let {
                         isPremium: t,
                         hasJoinedEmojiSourceGuild: n,
                         isUnusableRoleSubscriptionEmoji: i,
                         isDiscoverable: r
-                    } = e, s = !n && r, a = !t && (n && !i || o.NitroBadgeOnEmojiHoverExperiment.getCurrentConfig({
-                        location: "_getTypeTextDescription"
-                    }).enabled || s);
+                    } = e, s = !n && r;
                     return t && s ? {
                         type: "JOIN_GUILD",
-                        text: l.default.Messages.GUILD_PROFILE_JOIN_SERVER_BUTTON,
+                        text: o.default.Messages.GUILD_PROFILE_JOIN_SERVER_BUTTON,
                         description: null
-                    } : a ? {
+                    } : !t && (n && !i || s) ? {
                         type: "GET_PREMIUM",
-                        text: l.default.Messages.EMOJI_POPOUT_PREMIUM_CTA,
+                        text: o.default.Messages.EMOJI_POPOUT_PREMIUM_CTA,
                         description: null
                     } : {
                         type: "UNAVAILABLE",
@@ -165975,11 +165939,11 @@
                         description: null
                     }
                 },
-                c = e => {
-                    let t = d(e),
-                        n = u(e);
+                _ = e => {
+                    let t = u(e),
+                        n = l(e);
                     return {
-                        ..._(e),
+                        ...d(e),
                         emojiDescription: t,
                         analyticsType: n
                     }
@@ -166629,10 +166593,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 MessageCustomEmoji: function() {
-                    return N
+                    return m
                 },
                 MessageStandardEmoji: function() {
-                    return m
+                    return A
                 }
             }), n("47120");
             var i = n("735250"),
@@ -166644,21 +166608,20 @@
                 u = n("596454"),
                 d = n("367907"),
                 _ = n("130402"),
-                c = n("642345"),
-                E = n("626135"),
-                I = n("183023"),
-                T = n("524444"),
-                f = n("981631"),
-                S = n("185923"),
-                h = n("474936"),
-                A = n("824939");
-            let m = e => {
+                c = n("626135"),
+                E = n("183023"),
+                I = n("524444"),
+                T = n("981631"),
+                f = n("185923"),
+                S = n("474936"),
+                h = n("824939");
+            let A = e => {
                     var t;
                     let {
                         node: n,
-                        tooltipPosition: s = T.EXPRESSION_TOOLTIP_PROPS.position,
+                        tooltipPosition: s = I.EXPRESSION_TOOLTIP_PROPS.position,
                         enableClick: o = !0
-                    } = e, d = null === (t = n.originalMatch) || void 0 === t ? void 0 : t[0], _ = null != d ? d : n.name, [c, E] = r.useState(!1), f = e => (0, i.jsx)(u.default, {
+                    } = e, d = null === (t = n.originalMatch) || void 0 === t ? void 0 : t[0], _ = null != d ? d : n.name, [c, T] = r.useState(!1), f = e => (0, i.jsx)(u.default, {
                         ...e,
                         emojiName: n.name,
                         size: n.jumboable ? "jumbo" : "default",
@@ -166666,13 +166629,13 @@
                         alt: d,
                         animated: !1
                     }), S = e => (0, i.jsx)(l.Tooltip, {
-                        text: (0, T.renderClickableTooltipNode)(n.name, o),
+                        text: (0, I.renderClickableTooltipNode)(n.name, o),
                         "aria-label": _,
-                        ...T.EXPRESSION_TOOLTIP_PROPS,
+                        ...I.EXPRESSION_TOOLTIP_PROPS,
                         position: s,
                         shouldShow: !c,
                         onTooltipShow: () => {
-                            o && p({
+                            o && N({
                                 emojiNode: n,
                                 isCustomEmoji: !1
                             })
@@ -166682,10 +166645,10 @@
                             tag: "span",
                             onClick: t => {
                                 var n;
-                                E(!0), null == e || null === (n = e.onClick) || void 0 === n || n.call(e, t)
+                                T(!0), null == e || null === (n = e.onClick) || void 0 === n || n.call(e, t)
                             },
-                            className: a()(A.emojiContainer, {
-                                [A.emojiContainerClickable]: o
+                            className: a()(h.emojiContainer, {
+                                [h.emojiContainerClickable]: o
                             }),
                             children: f(t)
                         })
@@ -166697,26 +166660,22 @@
                         nudgeAlignIntoViewport: !0,
                         position: "right",
                         onRequestClose: () => {
-                            E(!1)
+                            T(!1)
                         },
-                        renderPopout: e => (0, i.jsx)(I.MessageStandardEmojiPopout, {
+                        renderPopout: e => (0, i.jsx)(E.MessageStandardEmojiPopout, {
                             ...e,
                             node: n
                         }),
                         children: S
                     }) : S()
                 },
-                N = e => {
+                m = e => {
                     let {
                         node: t,
                         isInteracting: n,
-                        tooltipPosition: s = T.EXPRESSION_TOOLTIP_PROPS.position,
+                        tooltipPosition: s = I.EXPRESSION_TOOLTIP_PROPS.position,
                         enableClick: d = !0
-                    } = e, [h, m] = r.useState(String(Date.now())), [N, O] = r.useState(!1), [R, C] = r.useState(!1), {
-                        enabled: g
-                    } = c.NitroBadgeOnEmojiHoverExperiment.useExperiment({
-                        location: "MessageCustomEmoji"
-                    }), L = function() {
+                    } = e, [S, A] = r.useState(String(Date.now())), [m, p] = r.useState(!1), [O, R] = r.useState(!1), C = function() {
                         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
                         return (0, i.jsx)(u.default, {
                             ...e,
@@ -166726,18 +166685,18 @@
                             animated: t.animated,
                             isInteracting: n
                         })
-                    }, v = (0, o.v4)(), D = e => (0, i.jsx)(l.Tooltip, {
-                        text: (0, T.renderClickableTooltipNode)(t.name, d, g),
+                    }, g = (0, o.v4)(), L = e => (0, i.jsx)(l.Tooltip, {
+                        text: (0, I.renderClickableTooltipNode)(t.name, d),
                         "aria-label": t.name,
-                        ...T.EXPRESSION_TOOLTIP_PROPS,
+                        ...I.EXPRESSION_TOOLTIP_PROPS,
                         position: s,
-                        shouldShow: !R,
+                        shouldShow: !O,
                         onTooltipShow: () => {
-                            O(!0), d && (p({
+                            p(!0), d && (N({
                                 emojiNode: t,
                                 isCustomEmoji: !0,
-                                nonce: v
-                            }), (0, _.initiateEmojiInteraction)(S.EmojiInteractionPoint.CustomEmojiTooltipShown))
+                                nonce: g
+                            }), (0, _.initiateEmojiInteraction)(f.EmojiInteractionPoint.CustomEmojiTooltipShown))
                         },
                         children: t => (0, i.jsx)(l.Clickable, {
                             ...e,
@@ -166747,49 +166706,49 @@
                             },
                             onClick: t => {
                                 var n;
-                                O(!1), C(!0), null == e || null === (n = e.onClick) || void 0 === n || n.call(e, t)
+                                p(!1), R(!0), null == e || null === (n = e.onClick) || void 0 === n || n.call(e, t)
                             },
                             onMouseLeave: () => {
-                                N && (E.default.track(f.AnalyticEvents.CLOSE_POPOUT, {
-                                    nonce: v
-                                }), O(!1))
+                                m && (c.default.track(T.AnalyticEvents.CLOSE_POPOUT, {
+                                    nonce: g
+                                }), p(!1))
                             },
                             tag: "span",
-                            className: a()(A.emojiContainer, {
-                                [A.emojiContainerClickable]: d
+                            className: a()(h.emojiContainer, {
+                                [h.emojiContainerClickable]: d
                             }),
-                            children: L(t)
+                            children: C(t)
                         })
                     });
                     return d ? (0, i.jsx)(l.Popout, {
                         animation: l.Popout.Animation.FADE,
                         align: "center",
                         onRequestClose: () => {
-                            E.default.track(f.AnalyticEvents.CLOSE_POPOUT, {
-                                nonce: v
-                            }), O(!1), C(!1)
+                            c.default.track(T.AnalyticEvents.CLOSE_POPOUT, {
+                                nonce: g
+                            }), p(!1), R(!1)
                         },
                         autoInvert: !0,
                         nudgeAlignIntoViewport: !0,
                         position: "right",
-                        renderPopout: e => (0, i.jsx)(I.MessageCustomEmojiPopout, {
+                        renderPopout: e => (0, i.jsx)(E.MessageCustomEmojiPopout, {
                             ...e,
                             node: t,
-                            refreshPositionKey: () => m(String(Date.now())),
-                            nonce: v
+                            refreshPositionKey: () => A(String(Date.now())),
+                            nonce: g
                         }),
-                        positionKey: h,
-                        children: D
-                    }) : D()
+                        positionKey: S,
+                        children: L
+                    }) : L()
                 },
-                p = e => {
+                N = e => {
                     let {
                         emojiNode: t,
                         isCustomEmoji: n,
                         nonce: i
                     } = e;
-                    d.default.trackWithMetadata(f.AnalyticEvents.EXPRESSION_TOOLTIP_VIEWED, {
-                        type: h.PremiumUpsellTypes.EMOJI_IN_MESSAGE_HOVER,
+                    d.default.trackWithMetadata(T.AnalyticEvents.EXPRESSION_TOOLTIP_VIEWED, {
+                        type: S.PremiumUpsellTypes.EMOJI_IN_MESSAGE_HOVER,
                         expression_id: t.emojiId,
                         expression_name: t.name,
                         is_animated: t.animated,
@@ -166802,19 +166761,19 @@
             "use strict";
             n.r(t), n.d(t, {
                 CustomGuildEmojiPopout: function() {
-                    return $
-                },
-                EmojiPopoutList: function() {
-                    return ee
-                },
-                GuildDetails: function() {
                     return q
                 },
-                MessageCustomEmojiPopout: function() {
+                EmojiPopoutList: function() {
                     return J
                 },
-                MessageStandardEmojiPopout: function() {
+                GuildDetails: function() {
+                    return X
+                },
+                MessageCustomEmojiPopout: function() {
                     return Q
+                },
+                MessageStandardEmojiPopout: function() {
+                    return Z
                 }
             }), n("47120");
             var i = n("735250"),
@@ -166839,73 +166798,71 @@
                 p = n("761966"),
                 O = n("563927"),
                 R = n("98278"),
-                C = n("642345"),
-                g = n("197115"),
-                L = n("703656"),
-                v = n("170671"),
-                D = n("944486"),
-                M = n("914010"),
-                y = n("594174"),
-                P = n("285952"),
-                U = n("940627"),
-                b = n("346656"),
-                G = n("514342"),
-                w = n("605403"),
-                B = n("806519"),
-                k = n("626135"),
-                V = n("768581"),
-                x = n("900849"),
-                F = n("74538"),
-                H = n("886132"),
-                Y = n("524444"),
-                j = n("981631"),
-                W = n("176505"),
-                K = n("474936"),
-                z = n("689938"),
-                Z = n("180848");
-            let X = () => ({
-                    page: null != (0, l.useStateFromStores)([M.default], () => M.default.getGuildId()) ? j.AnalyticsPages.GUILD_CHANNEL : j.AnalyticsPages.DM_CHANNEL,
-                    section: j.AnalyticsSections.EMOJI_UPSELL_POPOUT
+                C = n("197115"),
+                g = n("703656"),
+                L = n("944486"),
+                v = n("914010"),
+                D = n("594174"),
+                M = n("285952"),
+                y = n("940627"),
+                P = n("346656"),
+                U = n("514342"),
+                b = n("605403"),
+                G = n("806519"),
+                w = n("626135"),
+                B = n("768581"),
+                k = n("900849"),
+                V = n("74538"),
+                x = n("886132"),
+                F = n("524444"),
+                H = n("981631"),
+                Y = n("176505"),
+                j = n("474936"),
+                W = n("689938"),
+                K = n("180848");
+            let z = () => ({
+                    page: null != (0, l.useStateFromStores)([v.default], () => v.default.getGuildId()) ? H.AnalyticsPages.GUILD_CHANNEL : H.AnalyticsPages.DM_CHANNEL,
+                    section: H.AnalyticsSections.EMOJI_UPSELL_POPOUT
                 }),
-                Q = e => {
+                Z = e => {
                     let {
                         node: t
                     } = e;
                     (0, A.useTrackOpenPopout)({
                         emojiId: t.emojiId,
-                        currentGuildId: M.default.getGuildId()
+                        currentGuildId: v.default.getGuildId()
                     });
                     let n = (0, O.default)(t.name);
                     return (0, i.jsx)(u.Dialog, {
-                        children: (0, i.jsx)(Y.MessagePopoutContent, {
-                            children: (0, i.jsxs)(P.default, {
-                                className: Z.emojiSection,
+                        children: (0, i.jsx)(F.MessagePopoutContent, {
+                            children: (0, i.jsxs)(M.default, {
+                                className: K.emojiSection,
                                 children: [(0, i.jsx)(c.default, {
                                     emojiName: t.name,
-                                    className: Z.primaryEmoji,
+                                    className: K.primaryEmoji,
                                     src: t.src,
                                     animated: !1,
                                     size: "jumbo"
-                                }), (0, i.jsxs)(P.default, {
-                                    direction: P.default.Direction.VERTICAL,
-                                    justify: P.default.Justify.CENTER,
-                                    className: Z.truncatingText,
+                                }), (0, i.jsxs)(M.default, {
+                                    direction: M.default.Direction.VERTICAL,
+                                    justify: M.default.Justify.CENTER,
+                                    className: K.truncatingText,
                                     children: [(0, i.jsx)(d.Text, {
-                                        className: Z.__invalid_emojiName,
+                                        className: K.__invalid_emojiName,
                                         variant: "text-md/semibold",
-                                        children: (0, i.jsx)(G.default, {
+                                        children: (0, i.jsx)(U.default, {
                                             children: n
                                         })
                                     }), (0, i.jsx)(d.Text, {
                                         variant: "text-sm/normal",
-                                        children: z.default.Messages.EMOJI_POPOUT_STANDARD_EMOJI_DESCRIPTION
+                                        children: W.default.Messages.EMOJI_POPOUT_STANDARD_EMOJI_DESCRIPTION
                                     })]
                                 })]
                             })
                         })
                     })
                 },
-                q = e => {
+                X = e => {
                     let {
                         expressionSourceGuild: t,
                         hasJoinedExpressionSourceGuild: n,
@@ -166914,95 +166871,95 @@
                         id: s,
                         icon: o,
                         name: l
-                    } = t, u = V.default.getGuildIconURL({
+                    } = t, u = B.default.getGuildIconURL({
                         id: s,
                         icon: o,
                         size: 32,
                         canAnimate: !0
                     }), _ = (n = null == n || n) || t.isDiscoverable(), c = () => {
-                        t.isDiscoverable() ? (0, x.startLurking)(s, {}) : n && (0, L.transitionTo)(j.Routes.CHANNEL(s, D.default.getChannelId(s)))
+                        t.isDiscoverable() ? (0, k.startLurking)(s, {}) : n && (0, g.transitionTo)(H.Routes.CHANNEL(s, L.default.getChannelId(s)))
                     }, E = t.isDiscoverable() && null != t.presenceCount, I = () => {
                         let e = !r && !n;
                         return (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)(d.Text, {
                                 variant: "text-xs/normal",
                                 color: "header-secondary",
-                                children: z.default.Messages.INSTANT_INVITE_GUILD_MEMBERS_ONLINE.format({
+                                children: W.default.Messages.INSTANT_INVITE_GUILD_MEMBERS_ONLINE.format({
                                     membersOnline: t.presenceCount
                                 })
                             }), (0, i.jsx)("div", {
-                                className: Z.dotSeparator
+                                className: K.dotSeparator
                             }), e ? (0, i.jsx)(d.Clickable, {
-                                className: Z.joinGuildLink,
+                                className: K.joinGuildLink,
                                 onClick: c,
                                 children: (0, i.jsx)(d.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-link",
-                                    children: z.default.Messages.GUILD_PROFILE_JOIN_SERVER_BUTTON
+                                    children: W.default.Messages.GUILD_PROFILE_JOIN_SERVER_BUTTON
                                 })
                             }) : (0, i.jsx)(d.Text, {
                                 variant: "text-xs/normal",
                                 color: "header-secondary",
-                                children: z.default.Messages.EMOJI_POPOUT_PUBLIC_SERVER
+                                children: W.default.Messages.EMOJI_POPOUT_PUBLIC_SERVER
                             })]
                         })
                     };
-                    return (0, i.jsxs)(P.default, {
-                        align: P.default.Align.CENTER,
-                        children: [(0, i.jsx)(B.default, {
-                            mask: B.default.Masks.SQUIRCLE,
+                    return (0, i.jsxs)(M.default, {
+                        align: M.default.Align.CENTER,
+                        children: [(0, i.jsx)(G.default, {
+                            mask: G.default.Masks.SQUIRCLE,
                             width: 32,
                             height: 32,
-                            className: Z.__invalid_guildIconContainer,
+                            className: K.__invalid_guildIconContainer,
                             children: null != u && _ ? (0, i.jsxs)(d.Clickable, {
                                 "aria-label": l,
                                 onClick: c,
                                 children: [(0, i.jsx)("img", {
                                     src: u,
                                     alt: "",
-                                    className: Z.guildIcon
+                                    className: K.guildIcon
                                 }), " :"]
-                            }) : (0, i.jsx)(b.default, {
-                                size: b.default.Sizes.SMALL,
-                                className: Z.guildIconNotClickable,
+                            }) : (0, i.jsx)(P.default, {
+                                size: P.default.Sizes.SMALL,
+                                className: K.guildIconNotClickable,
                                 guild: t
                             })
-                        }), (0, i.jsxs)(P.default, {
-                            direction: P.default.Direction.VERTICAL,
-                            className: a()(Z.__invalid_guildInformation, Z.truncatingText),
-                            children: [(0, i.jsxs)(P.default, {
-                                align: P.default.Align.CENTER,
-                                children: [(0, i.jsx)(U.default, {
+                        }), (0, i.jsxs)(M.default, {
+                            direction: M.default.Direction.VERTICAL,
+                            className: a()(K.__invalid_guildInformation, K.truncatingText),
+                            children: [(0, i.jsxs)(M.default, {
+                                align: M.default.Align.CENTER,
+                                children: [(0, i.jsx)(y.default, {
                                     guild: t,
-                                    className: Z.guildBadge
+                                    className: K.guildBadge
                                 }), _ ? (0, i.jsx)(d.Clickable, {
                                     onClick: c,
-                                    className: Z.truncatingText,
+                                    className: K.truncatingText,
                                     children: (0, i.jsx)(d.Heading, {
-                                        className: Z.guildName,
+                                        className: K.guildName,
                                         variant: "heading-md/semibold",
-                                        children: (0, i.jsx)(G.default, {
+                                        children: (0, i.jsx)(U.default, {
                                             children: l
                                         })
                                     })
                                 }) : (0, i.jsx)(d.Heading, {
                                     variant: "heading-md/semibold",
-                                    children: (0, i.jsx)(G.default, {
+                                    children: (0, i.jsx)(U.default, {
                                         children: l
                                     })
                                 })]
-                            }), (0, i.jsx)(P.default, {
-                                align: P.default.Align.CENTER,
+                            }), (0, i.jsx)(M.default, {
+                                align: M.default.Align.CENTER,
                                 children: E ? I() : (0, i.jsx)(d.Text, {
                                     variant: "text-xs/normal",
                                     color: "header-secondary",
-                                    children: z.default.Messages.EMOJI_POPOUT_PRIVATE_SERVER
+                                    children: W.default.Messages.EMOJI_POPOUT_PRIVATE_SERVER
                                 })
                             })]
                         })]
                     })
                 },
-                J = e => {
+                Q = e => {
                     let {
                         node: t,
                         closePopout: n,
@@ -167017,9 +166974,9 @@
                         emojiId: t.emojiId,
                         refreshPositionKey: r
                     });
-                    return d ? (0, i.jsx)(Y.PopoutLoadingAnimation, {}) : (0, i.jsx)(u.Dialog, {
+                    return d ? (0, i.jsx)(F.PopoutLoadingAnimation, {}) : (0, i.jsx)(u.Dialog, {
                         "aria-label": t.name,
-                        children: (0, i.jsx)($, {
+                        children: (0, i.jsx)(q, {
                             node: t,
                             guildEmoji: null != l ? l : void 0,
                             expressionSourceGuild: a,
@@ -167031,199 +166988,187 @@
                         })
                     })
                 },
-                $ = e => {
+                q = e => {
                     var t, n, s;
                     let {
                         node: u,
                         expressionSourceGuild: S,
                         joinedEmojiSourceGuildRecord: O,
-                        closePopout: L,
-                        onToggleShowMoreEmojis: D,
-                        guildEmoji: U,
-                        demoMode: b = !1,
-                        nonce: B
-                    } = e, V = (0, l.useStateFromStores)([y.default], () => y.default.getCurrentUser()), x = (0, l.useStateFromStores)([M.default], () => M.default.getGuildId()), Q = F.default.isPremium(V), J = null != x && (x === (null == S ? void 0 : S.id) || x === (null == O ? void 0 : O.id)), $ = null != O, et = null !== (t = null == S ? void 0 : S.isDiscoverable()) && void 0 !== t && t;
-                    b && (Q = !0, et = !0, $ = !1, J = !1);
-                    let {
-                        enabled: en
-                    } = C.NitroBadgeOnEmojiHoverExperiment.useExperiment({
-                        location: "CustomGuildEmojiPopout"
-                    }, {
-                        autoTrackExposure: !0
-                    }), ei = X(), {
-                        isRoleSubscriptionEmoji: er,
-                        isUnusableRoleSubscriptionEmoji: es,
-                        userIsRoleSubscriber: ea
-                    } = r.useMemo(() => null == U ? {
-                        isRoleSubscriptionEmoji: !1,
-                        isUnusableRoleSubscriptionEmoji: !1,
-                        userIsRoleSubscriber: !1
-                    } : {
-                        isRoleSubscriptionEmoji: m.isPurchasableRoleSubscriptionEmoji(U),
-                        isUnusableRoleSubscriptionEmoji: m.isUnusableRoleSubscriptionEmoji(U, null != x ? x : void 0),
-                        userIsRoleSubscriber: N.default.getUserSubscriptionRoles(U.guildId).size > 0
-                    }, [U, x]), eo = !!es && (0, f.shouldHideGuildPurchaseEntryPoints)(null == U ? void 0 : U.guildId), {
-                        analyticsLocations: el
-                    } = (0, I.default)(E.default.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL);
+                        closePopout: g,
+                        onToggleShowMoreEmojis: L,
+                        guildEmoji: y,
+                        demoMode: P = !1,
+                        nonce: G
+                    } = e, B = (0, l.useStateFromStores)([D.default], () => D.default.getCurrentUser()), k = (0, l.useStateFromStores)([v.default], () => v.default.getGuildId()), Z = V.default.isPremium(B), Q = null != k && (k === (null == S ? void 0 : S.id) || k === (null == O ? void 0 : O.id)), q = null != O, $ = null !== (t = null == S ? void 0 : S.isDiscoverable()) && void 0 !== t && t;
+                    P && (Z = !0, $ = !0, q = !1, Q = !1);
+                    let ee = z(),
+                        {
+                            isRoleSubscriptionEmoji: et,
+                            isUnusableRoleSubscriptionEmoji: en,
+                            userIsRoleSubscriber: ei
+                        } = r.useMemo(() => null == y ? {
+                            isRoleSubscriptionEmoji: !1,
+                            isUnusableRoleSubscriptionEmoji: !1,
+                            userIsRoleSubscriber: !1
+                        } : {
+                            isRoleSubscriptionEmoji: m.isPurchasableRoleSubscriptionEmoji(y),
+                            isUnusableRoleSubscriptionEmoji: m.isUnusableRoleSubscriptionEmoji(y, null != k ? k : void 0),
+                            userIsRoleSubscriber: N.default.getUserSubscriptionRoles(y.guildId).size > 0
+                        }, [y, k]),
+                        er = !!en && (0, f.shouldHideGuildPurchaseEntryPoints)(null == y ? void 0 : y.guildId),
+                        {
+                            analyticsLocations: es
+                        } = (0, I.default)(E.default.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL);
                     (0, T.default)({
                         type: o.ImpressionTypes.MODAL,
                         name: o.ImpressionNames.ROLE_SUBSCRIPTION_EMOJI_UPSELL,
                         properties: {
-                            location_stack: el,
-                            emoji_guild_id: null !== (n = null == U ? void 0 : U.guildId) && void 0 !== n ? n : null,
-                            emoji_id: null !== (s = null == U ? void 0 : U.id) && void 0 !== s ? s : null
+                            location_stack: es,
+                            emoji_guild_id: null !== (n = null == y ? void 0 : y.guildId) && void 0 !== n ? n : null,
+                            emoji_id: null !== (s = null == y ? void 0 : y.id) && void 0 !== s ? s : null
                         }
                     }, {
-                        disableTrack: !er
+                        disableTrack: !et
                     });
-                    let eu = M.default.getGuildId(),
-                        ed = (0, H.getEmojiPopoutData)({
-                            isPremium: Q,
-                            hasJoinedEmojiSourceGuild: $,
-                            isRoleSubscriptionEmoji: er,
-                            isUnusableRoleSubscriptionEmoji: es,
-                            userIsRoleSubscriber: ea,
-                            emojiComesFromCurrentGuild: J,
-                            isDiscoverable: et,
-                            shouldHideRoleSubscriptionCTA: eo,
+                    let ea = v.default.getGuildId(),
+                        eo = (0, x.getEmojiPopoutData)({
+                            isPremium: Z,
+                            hasJoinedEmojiSourceGuild: q,
+                            isRoleSubscriptionEmoji: et,
+                            isUnusableRoleSubscriptionEmoji: en,
+                            userIsRoleSubscriber: ei,
+                            emojiComesFromCurrentGuild: Q,
+                            isDiscoverable: $,
+                            shouldHideRoleSubscriptionCTA: er,
                             onOpenPremiumSettings: () => {
-                                L(), k.default.track(j.AnalyticEvents.PREMIUM_PROMOTION_OPENED, {
-                                    location_page: ei.page,
-                                    location_section: ei.section
+                                g(), w.default.track(H.AnalyticEvents.PREMIUM_PROMOTION_OPENED, {
+                                    location_page: ee.page,
+                                    location_section: ee.section
                                 }), (0, R.navigateToPremiumMarketingPage)()
                             }
                         }),
-                        e_ = $ && es && !eo && (Q && er || !Q),
-                        ec = ed.emojiDescription,
-                        eE = (0, A.useTrackOpenPopout)({
+                        el = q && en && !er && (Z && et || !Z),
+                        eu = eo.emojiDescription,
+                        ed = (0, A.useTrackOpenPopout)({
                             emojiId: u.emojiId,
-                            currentGuildId: eu,
-                            popoutData: ed,
+                            currentGuildId: ea,
+                            popoutData: eo,
                             emojiSourceGuildId: null == S ? void 0 : S.id,
-                            nonce: B,
-                            demoMode: b
+                            nonce: G,
+                            demoMode: P
                         }),
-                        eI = ed.type === H.EmojiPopoutType.JOIN_GUILD,
-                        eT = ed.type === H.EmojiPopoutType.GET_PREMIUM,
-                        [ef, eS] = r.useState(!1),
-                        eh = et || $ && !J || null != S;
-                    return (0, i.jsxs)(Y.MessagePopoutContent, {
-                        className: Z.popoutContent,
+                        e_ = eo.type === x.EmojiPopoutType.JOIN_GUILD,
+                        ec = eo.type === x.EmojiPopoutType.GET_PREMIUM,
+                        [eE, eI] = r.useState(!1),
+                        eT = $ || q && !Q || null != S;
+                    return (0, i.jsxs)(F.MessagePopoutContent, {
+                        className: K.popoutContent,
                         children: [(() => {
                             let e = async () => {
-                                if (b || null == S || $) return;
-                                L();
+                                if (P || null == S || q) return;
+                                g();
                                 let e = S.id;
                                 try {
                                     await _.default.joinGuild(e), _.default.transitionToGuildSync(e)
                                 } catch {}
-                            }, t = !$ && et;
+                            }, t = !q && $;
                             return (0, i.jsxs)("div", {
-                                className: Z.emojiSection,
-                                children: [(0, i.jsxs)(P.default, {
+                                className: K.emojiSection,
+                                children: [(0, i.jsxs)(M.default, {
                                     children: [(0, i.jsx)(c.default, {
-                                        className: Z.primaryEmoji,
+                                        className: K.primaryEmoji,
                                         emojiId: u.emojiId,
                                         emojiName: u.name,
                                         animated: u.animated,
                                         size: "jumbo"
-                                    }), (0, i.jsxs)(P.default, {
-                                        direction: P.default.Direction.VERTICAL,
-                                        justify: P.default.Justify.CENTER,
-                                        className: Z.truncatingText,
+                                    }), (0, i.jsxs)(M.default, {
+                                        direction: M.default.Direction.VERTICAL,
+                                        justify: M.default.Justify.CENTER,
+                                        className: K.truncatingText,
                                         children: [(0, i.jsx)(d.Text, {
                                             variant: "text-md/semibold",
-                                            children: (0, i.jsx)(G.default, {
+                                            children: (0, i.jsx)(U.default, {
                                                 children: u.name
                                             })
-                                        }), en && (0, i.jsxs)("div", {
-                                            className: Z.nitroTextAndBadge,
-                                            children: [(0, i.jsx)(v.default, {
-                                                isSelected: !1
-                                            }), (0, i.jsx)(d.Text, {
-                                                className: Z.nitroText,
-                                                variant: "text-sm/semibold",
-                                                children: z.default.Messages.POWERED_BY_NITRO
-                                            })]
-                                        }), null != ec && (0, i.jsx)(d.Text, {
+                                        }), null != eu && (0, i.jsx)(d.Text, {
                                             variant: "text-sm/normal",
-                                            children: ec
+                                            children: eu
                                         })]
                                     })]
-                                }), eT ? (0, i.jsx)(g.default, {
-                                    className: Z.ctaButton,
-                                    subscriptionTier: K.PremiumSubscriptionSKUs.TIER_2,
+                                }), ec ? (0, i.jsx)(C.default, {
+                                    className: K.ctaButton,
+                                    subscriptionTier: j.PremiumSubscriptionSKUs.TIER_2,
                                     size: d.Button.Sizes.SMALL,
                                     fullWidth: !0,
-                                    buttonText: ed.text,
-                                    onSubscribeModalClose: t => t ? e() : L(),
+                                    buttonText: eo.text,
+                                    onSubscribeModalClose: t => t ? e() : g(),
                                     postSuccessGuild: t && null != S ? S : void 0,
-                                    premiumModalAnalyticsLocation: ei
-                                }) : eI ? (0, i.jsx)(d.Button, {
+                                    premiumModalAnalyticsLocation: ee
+                                }) : e_ ? (0, i.jsx)(d.Button, {
                                     size: d.Button.Sizes.SMALL,
-                                    className: Z.ctaButton,
+                                    className: K.ctaButton,
                                     color: d.ButtonColors.BRAND,
                                     fullWidth: !0,
                                     onClick: e,
-                                    children: ed.text
-                                }) : void 0, e_ && (0, i.jsx)(p.default, {
-                                    className: Z.ctaButton,
+                                    children: eo.text
+                                }) : void 0, el && (0, i.jsx)(p.default, {
+                                    className: K.ctaButton,
                                     size: d.Button.Sizes.SMALL,
                                     fullWidth: !0,
                                     onClick: () => {
-                                        L(), (null == O ? void 0 : O.id) != null && _.default.transitionToGuildSync(O.id, void 0, W.StaticChannelRoute.ROLE_SUBSCRIPTIONS, [E.default.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL])
+                                        g(), (null == O ? void 0 : O.id) != null && _.default.transitionToGuildSync(O.id, void 0, Y.StaticChannelRoute.ROLE_SUBSCRIPTIONS, [E.default.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL])
                                     },
-                                    children: ea ? z.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_UPGRADE_UPSELL_BUTTON : z.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UPSELL_BUTTON
+                                    children: ei ? W.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_UPGRADE_UPSELL_BUTTON : W.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UPSELL_BUTTON
                                 })]
                             })
-                        })(), eh && (() => {
-                            let e = null != S && !$ && et,
+                        })(), eT && (() => {
+                            let e = null != S && !q && $,
                                 t = () => {
-                                    e && (null == D || D(), !ef && !b && k.default.track(j.AnalyticEvents.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, eE), eS(!ef))
+                                    e && (null == L || L(), !eE && !P && w.default.track(H.AnalyticEvents.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ed), eI(!eE))
                                 };
                             return (0, i.jsxs)("div", {
-                                className: Z.guildSection,
+                                className: K.guildSection,
                                 children: [(0, i.jsx)(d.FormTitle, {
-                                    className: Z.guildTitle,
-                                    children: $ ? z.default.Messages.EMOJI_POPOUT_JOINED_GUILD_EMOJI_DESCRIPTION : z.default.Messages.EMOJI_POPOUT_UNJOINED_GUILD_EMOJI_DESCRIPTION
-                                }), (0, i.jsx)(q, {
+                                    className: K.guildTitle,
+                                    children: q ? W.default.Messages.EMOJI_POPOUT_JOINED_GUILD_EMOJI_DESCRIPTION : W.default.Messages.EMOJI_POPOUT_UNJOINED_GUILD_EMOJI_DESCRIPTION
+                                }), (0, i.jsx)(X, {
                                     expressionSourceGuild: null != S ? S : h.default.createFromGuildRecord(O),
-                                    hasJoinedExpressionSourceGuild: $,
-                                    isDisplayingJoinGuildButtonInPopout: eI
+                                    hasJoinedExpressionSourceGuild: q,
+                                    isDisplayingJoinGuildButtonInPopout: e_
                                 }), e && (0, i.jsxs)(i.Fragment, {
                                     children: [(() => {
-                                        let e = z.default.Messages.EMOJI_POPOUT_SHOW_MORE_EMOJIS;
+                                        let e = W.default.Messages.EMOJI_POPOUT_SHOW_MORE_EMOJIS;
                                         return (0, i.jsx)(d.Clickable, {
                                             onClick: t,
-                                            className: Z.showMoreEmojis,
-                                            children: (0, i.jsxs)(P.default, {
+                                            className: K.showMoreEmojis,
+                                            children: (0, i.jsxs)(M.default, {
                                                 children: [(0, i.jsx)(d.Text, {
-                                                    className: Z.__invalid_showMoreEmojisLabel,
+                                                    className: K.__invalid_showMoreEmojisLabel,
                                                     "aria-label": e,
                                                     variant: "text-xs/normal",
                                                     color: "none",
                                                     children: e
-                                                }), (0, i.jsx)(w.default, {
-                                                    className: a()(Z.showMoreEmojisArrow, {
-                                                        [Z.showMoreEmojisArrowCollapsed]: !ef
+                                                }), (0, i.jsx)(b.default, {
+                                                    className: a()(K.showMoreEmojisArrow, {
+                                                        [K.showMoreEmojisArrowCollapsed]: !eE
                                                     })
                                                 })]
                                             })
                                         })
-                                    })(), null != u.emojiId && ef && (0, i.jsx)(ee, {
+                                    })(), null != u.emojiId && eE && (0, i.jsx)(J, {
                                         emojiId: u.emojiId,
                                         expressionSourceGuild: S,
-                                        popoutData: ed,
-                                        onClose: L,
-                                        hasJoinedEmojiSourceGuild: $,
-                                        isDisplayingButtonInTopSection: eI || eT
+                                        popoutData: eo,
+                                        onClose: g,
+                                        hasJoinedEmojiSourceGuild: q,
+                                        isDisplayingButtonInTopSection: e_ || ec
                                     })]
                                 })]
                             })
                         })()]
                     })
                 },
-                ee = e => {
+                J = e => {
                     var t;
                     let {
                         emojiId: n,
@@ -167236,42 +167181,42 @@
                         type: _,
                         description: E
                     } = a;
-                    return (0, i.jsxs)(P.default, {
-                        wrap: P.default.Wrap.WRAP,
-                        align: P.default.Align.CENTER,
-                        justify: P.default.Justify.CENTER,
-                        className: Z.otherEmojisContainer,
+                    return (0, i.jsxs)(M.default, {
+                        wrap: M.default.Wrap.WRAP,
+                        align: M.default.Align.CENTER,
+                        justify: M.default.Justify.CENTER,
+                        className: K.otherEmojisContainer,
                         children: [s ? null : u.map(e => (0, i.jsx)(d.Tooltip, {
                             text: e.require_colons ? ":".concat(e.name, ":") : e.name,
-                            ...Y.EXPRESSION_TOOLTIP_PROPS,
+                            ...F.EXPRESSION_TOOLTIP_PROPS,
                             children: t => (0, i.jsx)(c.default, {
-                                className: Z.otherEmoji,
+                                className: K.otherEmoji,
                                 emojiId: e.id,
                                 animated: e.animated,
                                 ...t
                             })
-                        }, e.id)), !l && (_ === H.EmojiPopoutType.GET_PREMIUM ? (0, i.jsxs)(i.Fragment, {
-                            children: [(0, i.jsx)(g.default, {
-                                subscriptionTier: K.PremiumSubscriptionSKUs.TIER_2,
+                        }, e.id)), !l && (_ === x.EmojiPopoutType.GET_PREMIUM ? (0, i.jsxs)(i.Fragment, {
+                            children: [(0, i.jsx)(C.default, {
+                                subscriptionTier: j.PremiumSubscriptionSKUs.TIER_2,
                                 buttonText: a.text,
-                                className: Z.ctaButton,
+                                className: K.ctaButton,
                                 fullWidth: !0,
                                 onClick: () => o()
                             }), null != E && (0, i.jsx)("div", {
-                                className: Z.ctaDescription,
+                                className: K.ctaDescription,
                                 children: (0, i.jsx)(d.Text, {
                                     variant: "text-sm/medium",
                                     "aria-label": E,
                                     children: E
                                 })
                             })]
-                        }) : _ === H.EmojiPopoutType.JOIN_GUILD ? (0, i.jsx)(d.Button, {
+                        }) : _ === x.EmojiPopoutType.JOIN_GUILD ? (0, i.jsx)(d.Button, {
                             size: d.Button.Sizes.SMALL,
-                            className: Z.ctaButton,
+                            className: K.ctaButton,
                             color: d.ButtonColors.BRAND,
                             fullWidth: !0,
                             onClick: () => {
-                                (0, x.startLurking)(r.id, {})
+                                (0, k.startLurking)(r.id, {})
                             },
                             children: a.text
                         }) : null)]
@@ -167282,55 +167227,55 @@
             "use strict";
             n.r(t), n.d(t, {
                 EXPRESSION_TOOLTIP_PROPS: function() {
-                    return X
+                    return Z
                 },
                 ErrorLoadingBar: function() {
-                    return ea
+                    return es
                 },
                 JumpBarType: function() {
                     return i
                 },
                 JumpToPresentBar: function() {
-                    return es
-                },
-                MessagePopoutContent: function() {
-                    return ec
-                },
-                NewMessagesBar: function() {
-                    return eo
-                },
-                NewTopicsBar: function() {
-                    return el
-                },
-                PopoutLoadingAnimation: function() {
-                    return eE
-                },
-                TopicsPill: function() {
-                    return ed
-                },
-                renderAudioComponent: function() {
-                    return $
-                },
-                renderClickableTooltipNode: function() {
-                    return e_
-                },
-                renderGenericFileComponent: function() {
                     return er
                 },
-                renderImageComponent: function() {
-                    return et
+                MessagePopoutContent: function() {
+                    return e_
                 },
-                renderMaskedLinkComponent: function() {
-                    return en
+                NewMessagesBar: function() {
+                    return ea
                 },
-                renderPlaintextFilePreview: function() {
-                    return ei
+                NewTopicsBar: function() {
+                    return eo
                 },
-                renderVideoComponent: function() {
+                PopoutLoadingAnimation: function() {
+                    return ec
+                },
+                TopicsPill: function() {
+                    return eu
+                },
+                renderAudioComponent: function() {
                     return J
                 },
-                renderVoiceMessageAudioComponent: function() {
+                renderClickableTooltipNode: function() {
+                    return ed
+                },
+                renderGenericFileComponent: function() {
+                    return ei
+                },
+                renderImageComponent: function() {
                     return ee
+                },
+                renderMaskedLinkComponent: function() {
+                    return et
+                },
+                renderPlaintextFilePreview: function() {
+                    return en
+                },
+                renderVideoComponent: function() {
+                    return q
+                },
+                renderVoiceMessageAudioComponent: function() {
+                    return $
                 }
             }), n("47120");
             var i, r, s = n("735250"),
@@ -167353,42 +167298,41 @@
                 p = n("765104"),
                 O = n("505953"),
                 R = n("695346"),
-                C = n("170671"),
-                g = n("201542"),
-                L = n("306680"),
-                v = n("594174"),
-                D = n("130208"),
-                M = n("992665"),
-                y = n("133910"),
-                P = n("145196"),
-                U = n("153124"),
-                b = n("278297"),
-                G = n("259580"),
-                w = n("386103"),
-                B = n("465670"),
-                k = n("839523"),
-                V = n("626135"),
-                x = n("823379"),
-                F = n("589530"),
-                H = n("709054"),
-                Y = n("981631"),
-                j = n("420212"),
-                W = n("814249"),
-                K = n("768760"),
-                z = n("689938"),
-                Z = n("529695");
-            let X = {
+                C = n("201542"),
+                g = n("306680"),
+                L = n("594174"),
+                v = n("130208"),
+                D = n("992665"),
+                M = n("133910"),
+                y = n("145196"),
+                P = n("153124"),
+                U = n("278297"),
+                b = n("259580"),
+                G = n("386103"),
+                w = n("465670"),
+                B = n("839523"),
+                k = n("626135"),
+                V = n("823379"),
+                x = n("589530"),
+                F = n("709054"),
+                H = n("981631"),
+                Y = n("420212"),
+                j = n("814249"),
+                W = n("768760"),
+                K = n("689938"),
+                z = n("529695");
+            let Z = {
                     delay: 300,
                     position: "top"
                 },
-                Q = e => t => {
-                    null == e || e(t), (0, F.setVolume)(t)
+                X = e => t => {
+                    null == e || e(t), (0, x.setVolume)(t)
                 },
-                q = e => t => {
-                    null == e || e(t), (0, F.setMuted)(t)
+                Q = e => t => {
+                    null == e || e(t), (0, x.setMuted)(t)
                 };
 
-            function J(e) {
+            function q(e) {
                 let {
                     onVolumeChange: t,
                     onMute: n,
@@ -167398,17 +167342,41 @@
                     renderAdjacentContent: l,
                     renderOverlayContent: u,
                     ...d
-                } = e, _ = Q(t), c = q(n);
-                return i = null == i ? F.getVolume : i, r = null == r ? F.getMuted : r, (0, s.jsxs)(a.Fragment, {
-                    children: [(0, s.jsx)(y.default, {
+                } = e, _ = X(t), c = Q(n);
+                return i = null == i ? x.getVolume : i, r = null == r ? x.getMuted : r, (0, s.jsxs)(a.Fragment, {
+                    children: [(0, s.jsx)(M.default, {
                         ...d,
                         alt: o,
                         volume: i,
                         autoMute: r,
                         onVolumeChange: _,
                         onMute: c,
-                        renderLinkComponent: en,
+                        renderLinkComponent: et,
                         renderOverlayContent: u
+                    }), null != l && l()]
+                })
+            }
+
+            function J(e) {
+                let {
+                    onVolumeChange: t,
+                    volume: n,
+                    onMute: i,
+                    onVolumeShow: r,
+                    onVolumeHide: o,
+                    renderAdjacentContent: l,
+                    ...u
+                } = e, d = X(t), _ = Q(i);
+                return n = null == n ? x.getVolume : n, (0, s.jsxs)(a.Fragment, {
+                    children: [(0, s.jsx)(D.default, {
+                        ...u,
+                        onVolumeChange: d,
+                        onMute: _,
+                        onVolumeShow: r,
+                        onVolumeHide: o,
+                        volume: n,
+                        autoMute: () => !1,
+                        renderLinkComponent: et
                     }), null != l && l()]
                 })
             }
@@ -167418,33 +167386,9 @@
                     onVolumeChange: t,
                     volume: n,
                     onMute: i,
-                    onVolumeShow: r,
-                    onVolumeHide: o,
-                    renderAdjacentContent: l,
-                    ...u
-                } = e, d = Q(t), _ = q(i);
-                return n = null == n ? F.getVolume : n, (0, s.jsxs)(a.Fragment, {
-                    children: [(0, s.jsx)(M.default, {
-                        ...u,
-                        onVolumeChange: d,
-                        onMute: _,
-                        onVolumeShow: r,
-                        onVolumeHide: o,
-                        volume: n,
-                        autoMute: () => !1,
-                        renderLinkComponent: en
-                    }), null != l && l()]
-                })
-            }
-
-            function ee(e) {
-                let {
-                    onVolumeChange: t,
-                    volume: n,
-                    onMute: i,
                     ...r
-                } = e, a = Q(t), o = q(i);
-                return n = null == n ? F.getVolume : n, (0, s.jsx)(g.default, {
+                } = e, a = X(t), o = Q(i);
+                return n = null == n ? x.getVolume : n, (0, s.jsx)(C.default, {
                     ...r,
                     onVolumeChange: a,
                     onMute: o,
@@ -167452,7 +167396,7 @@
                 })
             }
 
-            function et(e) {
+            function ee(e) {
                 let {
                     alt: t,
                     hiddenSpoilers: n,
@@ -167462,39 +167406,39 @@
                     disableAltTextDisplay: u = !1,
                     mediaLayoutType: d,
                     imageContainerStyle: _
-                } = e, c = d === K.MediaLayoutType.MOSAIC, I = !u && R.ViewImageDescriptions.getSetting() && null != t && "" !== t && !0 !== n, T = e => {
+                } = e, c = d === W.MediaLayoutType.MOSAIC, I = !u && R.ViewImageDescriptions.getSetting() && null != t && "" !== t && !0 !== n, T = e => {
                     let {
                         altText: t
                     } = e;
                     return (0, s.jsxs)(E.Dialog, {
-                        "aria-label": z.default.Messages.MEDIA_MOSAIC_ALT_TEXT_POPOUT_TITLE,
-                        className: Z.mediaMosaicAltTextPopout,
+                        "aria-label": K.default.Messages.MEDIA_MOSAIC_ALT_TEXT_POPOUT_TITLE,
+                        className: z.mediaMosaicAltTextPopout,
                         onKeyDown: e => {
-                            e.key === j.KeyboardEventKey.Escape && setTimeout(() => {
+                            e.key === Y.KeyboardEventKey.Escape && setTimeout(() => {
                                 var e;
                                 return null === (e = S.current) || void 0 === e ? void 0 : e.focus()
                             }, 0)
                         },
                         children: [(0, s.jsx)("span", {
-                            className: Z.mediaMosaicAltTextPopoutTitle,
-                            children: z.default.Messages.MEDIA_MOSAIC_ALT_TEXT_POPOUT_TITLE
+                            className: z.mediaMosaicAltTextPopoutTitle,
+                            children: K.default.Messages.MEDIA_MOSAIC_ALT_TEXT_POPOUT_TITLE
                         }), (0, s.jsx)("span", {
-                            className: Z.mediaMosaicAltTextPopoutDescription,
+                            className: z.mediaMosaicAltTextPopoutDescription,
                             children: t
                         })]
                     })
                 }, S = a.createRef();
                 return (0, s.jsxs)("div", {
-                    className: l()(Z.imageContent, r),
+                    className: l()(z.imageContent, r),
                     children: [(0, s.jsxs)("div", {
-                        className: l()(Z.imageContainer, o),
+                        className: l()(z.imageContainer, o),
                         style: _,
                         children: [(0, s.jsx)(f.default, {
                             ...e,
-                            renderLinkComponent: en
+                            renderLinkComponent: et
                         }), null != i && i()]
                     }), c && I && (0, s.jsx)("div", {
-                        className: Z.mediaMosaicAltTextContainer,
+                        className: z.mediaMosaicAltTextContainer,
                         children: (0, s.jsx)(E.Popout, {
                             animation: E.Popout.Animation.FADE,
                             renderPopout: () => (0, s.jsx)(T, {
@@ -167506,64 +167450,64 @@
                                     ...e,
                                     type: "button",
                                     ref: S,
-                                    "aria-label": z.default.Messages.MEDIA_MOSAIC_ALT_TEXT_POPOUT_TITLE,
-                                    className: Z.mediaMosaicAltText,
-                                    children: z.default.Messages.MEDIA_MOSAIC_ALT_TEXT_CTA
+                                    "aria-label": K.default.Messages.MEDIA_MOSAIC_ALT_TEXT_POPOUT_TITLE,
+                                    className: z.mediaMosaicAltText,
+                                    children: K.default.Messages.MEDIA_MOSAIC_ALT_TEXT_CTA
                                 })
                             })
                         })
                     }), !c && I && (0, s.jsx)("span", {
-                        className: Z.altText,
+                        className: z.altText,
                         children: t
                     })]
                 })
             }
 
-            function en(e) {
+            function et(e) {
                 return (0, s.jsx)(S.default, {
                     ...e
                 })
             }
 
-            function ei(e) {
+            function en(e) {
                 let {
                     renderAdjacentContent: t,
                     ...n
                 } = e;
                 return (0, s.jsxs)(a.Fragment, {
-                    children: [(0, s.jsx)(P.default, {
+                    children: [(0, s.jsx)(y.default, {
                         ...n
                     }), null != t && t()]
                 })
             }
 
-            function er(e) {
-                return (0, s.jsx)(D.default, {
+            function ei(e) {
+                return (0, s.jsx)(v.default, {
                     ...e
                 })
             }(r = i || (i = {}))[r.OLD_MESSAGES = 0] = "OLD_MESSAGES", r[r.REPLY = 1] = "REPLY";
-            let es = e => {
+            let er = e => {
                     let {
                         type: t = 0,
                         onClick: n
                     } = e;
-                    return (0, s.jsx)(b.MessagesInteractionContext.Consumer, {
+                    return (0, s.jsx)(U.MessagesInteractionContext.Consumer, {
                         children: e => e.disableInteractions ? null : (0, s.jsxs)("div", {
-                            className: Z.jumpToPresentBar,
+                            className: z.jumpToPresentBar,
                             children: [(0, s.jsx)(E.FocusRing, {
                                 offset: 4,
                                 children: (0, s.jsx)("button", {
                                     type: "button",
                                     onClick: n,
-                                    className: Z.barButtonMain,
+                                    className: z.barButtonMain,
                                     children: function(e) {
                                         switch (e) {
                                             case 0:
-                                                return z.default.Messages.YOURE_VIEWING_OLDER_MESSAGES;
+                                                return K.default.Messages.YOURE_VIEWING_OLDER_MESSAGES;
                                             case 1:
-                                                return z.default.Messages.JUMP_BAR_VIEWING_REPLY;
+                                                return K.default.Messages.JUMP_BAR_VIEWING_REPLY;
                                             default:
-                                                return (0, x.assertNever)(e)
+                                                return (0, V.assertNever)(e)
                                         }
                                     }(t)
                                 })
@@ -167572,36 +167516,36 @@
                                 children: (0, s.jsxs)("button", {
                                     type: "button",
                                     onClick: n,
-                                    className: Z.barButtonAlt,
+                                    className: z.barButtonAlt,
                                     children: [function(e) {
                                         switch (e) {
                                             case 0:
-                                                return z.default.Messages.JUMP_TO_PRESENT;
+                                                return K.default.Messages.JUMP_TO_PRESENT;
                                             case 1:
-                                                return z.default.Messages.JUMP_TO_ORIGINAL_MESSAGE;
+                                                return K.default.Messages.JUMP_TO_ORIGINAL_MESSAGE;
                                             default:
-                                                return (0, x.assertNever)(e)
+                                                return (0, V.assertNever)(e)
                                         }
-                                    }(t), (0, s.jsx)(G.default, {
-                                        className: Z.barButtonIcon
+                                    }(t), (0, s.jsx)(b.default, {
+                                        className: z.barButtonIcon
                                     })]
                                 })
                             }) : (0, s.jsx)(E.Spinner, {
                                 type: E.Spinner.Type.PULSING_ELLIPSIS,
-                                className: Z.spinner,
-                                itemClassName: Z.spinnerItem
+                                className: z.spinner,
+                                itemClassName: z.spinnerItem
                             })]
                         })
                     })
                 },
-                ea = e => {
+                es = e => {
                     let {
                         onClick: t,
                         loading: n
                     } = e;
-                    return (0, s.jsx)(b.MessagesInteractionContext.Consumer, {
+                    return (0, s.jsx)(U.MessagesInteractionContext.Consumer, {
                         children: e => e.disableInteractions ? null : (0, s.jsxs)(E.Clickable, {
-                            className: Z.messagesErrorBar,
+                            className: z.messagesErrorBar,
                             onClick: t,
                             focusProps: {
                                 offset: {
@@ -167612,26 +167556,26 @@
                                 }
                             },
                             children: [(0, s.jsx)("div", {
-                                className: Z.barButtonMain,
-                                children: z.default.Messages.MESSAGES_FAILED_TO_LOAD
+                                className: z.barButtonMain,
+                                children: K.default.Messages.MESSAGES_FAILED_TO_LOAD
                             }), n ? (0, s.jsx)(E.Spinner, {
                                 type: E.Spinner.Type.PULSING_ELLIPSIS,
-                                className: Z.spinner,
-                                itemClassName: Z.spinnerItem
+                                className: z.spinner,
+                                itemClassName: z.spinnerItem
                             }) : (0, s.jsx)("div", {
-                                className: Z.barButtonAlt,
-                                children: z.default.Messages.MESSAGES_FAILED_TO_LOAD_TRY_AGAIN
+                                className: z.barButtonAlt,
+                                children: K.default.Messages.MESSAGES_FAILED_TO_LOAD_TRY_AGAIN
                             })]
                         })
                     })
                 };
 
-            function eo(e) {
+            function ea(e) {
                 let {
                     content: t,
                     channelId: n
-                } = e, [i] = a.useState(() => (0, U.uid)("NewMessagesBarJumpToNewMessages_")), r = a.useCallback(() => {
-                    let e = L.default.ackMessageId(n);
+                } = e, [i] = a.useState(() => (0, P.uid)("NewMessagesBarJumpToNewMessages_")), r = a.useCallback(() => {
+                    let e = g.default.ackMessageId(n);
                     null != e ? I.default.jumpToMessage({
                         channelId: n,
                         messageId: e,
@@ -167639,7 +167583,7 @@
                         context: "Mark As Read"
                     }) : I.default.jumpToMessage({
                         channelId: n,
-                        messageId: H.default.castChannelIdAsMessageId(n),
+                        messageId: F.default.castChannelIdAsMessageId(n),
                         offset: 1,
                         context: "Mark As Read"
                     })
@@ -167647,22 +167591,22 @@
                     (0, T.ack)(n)
                 }, [n]), {
                     disableInteractions: u
-                } = a.useContext(b.MessagesInteractionContext);
+                } = a.useContext(U.MessagesInteractionContext);
                 return u ? null : (0, s.jsxs)("div", {
-                    className: l()(Z.newMessagesBar, {
-                        [Z.disableInteractions]: u
+                    className: l()(z.newMessagesBar, {
+                        [z.disableInteractions]: u
                     }),
                     children: [(0, s.jsx)(E.FocusRing, {
                         offset: 4,
                         children: (0, s.jsx)("button", {
                             type: "button",
-                            className: Z.barButtonMain,
+                            className: z.barButtonMain,
                             onClick: r,
-                            "aria-label": z.default.Messages.JUMP_TO_LAST_UNREAD_MESSAGE,
+                            "aria-label": K.default.Messages.JUMP_TO_LAST_UNREAD_MESSAGE,
                             "aria-describedby": i,
                             children: (0, s.jsx)("span", {
                                 id: i,
-                                className: Z.span,
+                                className: z.span,
                                 children: t
                             })
                         })
@@ -167671,16 +167615,16 @@
                         children: (0, s.jsxs)("button", {
                             type: "button",
                             onClick: o,
-                            className: Z.barButtonAlt,
-                            children: [z.default.Messages.MARK_AS_READ, (0, s.jsx)(w.default, {
-                                className: Z.barButtonIcon
+                            className: z.barButtonAlt,
+                            children: [K.default.Messages.MARK_AS_READ, (0, s.jsx)(G.default, {
+                                className: z.barButtonIcon
                             })]
                         })
                     })]
                 })
             }
 
-            function el(e) {
+            function eo(e) {
                 var t, n, i;
                 let {
                     channel: r,
@@ -167688,12 +167632,12 @@
                     scrollManager: u
                 } = e, {
                     disableInteractions: f
-                } = a.useContext(b.MessagesInteractionContext), [S, R] = a.useState(null), C = a.useRef(null), [g, D] = a.useState(null), M = a.useRef(null), y = (0, c.useStateFromStoresArray)([p.default], () => {
+                } = a.useContext(U.MessagesInteractionContext), [S, R] = a.useState(null), C = a.useRef(null), [v, D] = a.useState(null), M = a.useRef(null), y = (0, c.useStateFromStoresArray)([p.default], () => {
                     var e;
                     return null !== (e = p.default.summaries(r.id)) && void 0 !== e ? e : []
                 }, [r]), P = (0, A.default)(y);
                 a.useEffect(() => {
-                    !d().isEqual(P, y) && V.default.track(Y.AnalyticEvents.SUMMARIES_TOPICS_PILL_VIEWED, {
+                    !d().isEqual(P, y) && k.default.track(H.AnalyticEvents.SUMMARIES_TOPICS_PILL_VIEWED, {
                         num_summaries: y.length,
                         message_counts: y.map(e => e.count),
                         start_message_ids: y.map(e => e.startId),
@@ -167704,20 +167648,20 @@
                         channel_type: r.type
                     })
                 }, [y, P, r.guild_id, r.id, r.type]);
-                let U = (0, c.useStateFromStores)([v.default], () => {
+                let x = (0, c.useStateFromStores)([L.default], () => {
                         var e;
                         return null !== (e = null == y ? void 0 : y.map(e => {
                             var t;
                             return null === (t = e.people) || void 0 === t ? void 0 : t.map(e => {
                                 var t;
-                                return null !== (t = v.default.getUser(e)) && void 0 !== t ? t : null
-                            }).filter(x.isNotNullish)
+                                return null !== (t = L.default.getUser(e)) && void 0 !== t ? t : null
+                            }).filter(V.isNotNullish)
                         })) && void 0 !== e ? e : []
-                    }, [y], eu),
-                    F = null !== (n = (0, c.useStateFromStores)([p.default], () => p.default.visibleSummaryIndex())) && void 0 !== n ? n : -1,
-                    j = null == y ? void 0 : null === (t = y[F]) || void 0 === t ? void 0 : t.topic;
-                null == j && null == S && (null == y ? void 0 : y.length) >= 1 && (j = null === (i = y[0]) || void 0 === i ? void 0 : i.topic);
-                let K = a.useMemo(() => d().debounce(e => {
+                    }, [y], el),
+                    Y = null !== (n = (0, c.useStateFromStores)([p.default], () => p.default.visibleSummaryIndex())) && void 0 !== n ? n : -1,
+                    W = null == y ? void 0 : null === (t = y[Y]) || void 0 === t ? void 0 : t.topic;
+                null == W && null == S && (null == y ? void 0 : y.length) >= 1 && (W = null === (i = y[0]) || void 0 === i ? void 0 : i.topic);
+                let Z = a.useMemo(() => d().debounce(e => {
                         var t;
                         R(null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : null)
                     }, 64), [R]),
@@ -167727,11 +167671,11 @@
                         trailing: !1
                     }), []),
                     Q = a.useCallback(e => {
-                        X(), K(e)
-                    }, [K, X]),
+                        X(), Z(e)
+                    }, [Z, X]),
                     [q, J] = a.useState(!1),
                     $ = a.useCallback(() => {
-                        V.default.track(Y.AnalyticEvents.SUMMARIES_TOPICS_PILL_TOGGLED, {
+                        k.default.track(H.AnalyticEvents.SUMMARIES_TOPICS_PILL_TOGGLED, {
                             topics_dropdown_open: !q,
                             num_summaries: y.length,
                             message_counts: y.map(e => e.count),
@@ -167744,7 +167688,7 @@
                         }), J(!q)
                     }, [q, y, J, r]),
                     ee = a.useCallback(function(e) {
-                        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : W.SummariesTopicClickedSource.PILL_DROPDOWN,
+                        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : j.SummariesTopicClickedSource.PILL_DROPDOWN,
                             n = y[e];
                         if (null == n) return;
                         (0, N.setSelectedSummary)(r.id, n.id), (0, N.setHighlightedSummary)(r.id, n.id);
@@ -167753,7 +167697,7 @@
                                 u.addAutomaticAnchorCallback(Q, !1)
                             }, 100)
                         };
-                        u.removeAutomaticAnchorCallback(Q), u.addScrollCompleteCallback(i), V.default.track(Y.AnalyticEvents.SUMMARIES_TOPIC_CLICKED, {
+                        u.removeAutomaticAnchorCallback(Q), u.addScrollCompleteCallback(i), k.default.track(H.AnalyticEvents.SUMMARIES_TOPIC_CLICKED, {
                             source: t,
                             message_id: n.startId,
                             guild_id: r.guild_id,
@@ -167775,16 +167719,16 @@
                         null != n && D(n)
                     }, []);
                 a.useEffect(() => {
-                    if (null != g && q) {
+                    if (null != v && q) {
                         var e;
                         null === (e = M.current) || void 0 === e || e.scrollTo({
-                            top: g
+                            top: v
                         })
                     }
-                }, [g, q]);
+                }, [v, q]);
                 let en = a.useCallback(e => {
                     var t;
-                    !((0, _.isElement)(e.target) && (null === (t = C.current) || void 0 === t ? void 0 : t.contains(e.target))) && (q && V.default.track(Y.AnalyticEvents.SUMMARIES_TOPICS_PILL_TOGGLED, {
+                    !((0, _.isElement)(e.target) && (null === (t = C.current) || void 0 === t ? void 0 : t.contains(e.target))) && (q && k.default.track(H.AnalyticEvents.SUMMARIES_TOPICS_PILL_TOGGLED, {
                         topics_dropdown_open: !1,
                         num_summaries: y.length,
                         message_counts: y.map(e => e.count),
@@ -167806,12 +167750,12 @@
                 let ei = a.useMemo(() => (0, s.jsx)(O.default, {
                         channel: r,
                         summaries: y,
-                        summariesMembers: U,
+                        summariesMembers: x,
                         selectTopic: ee,
                         setOpen: et
-                    }), [y, U, ee, et, r]),
+                    }), [y, x, ee, et, r]),
                     er = a.useCallback(() => {
-                        let e = L.default.ackMessageId(r.id);
+                        let e = g.default.ackMessageId(r.id);
                         null != e ? I.default.jumpToMessage({
                             channelId: r.id,
                             messageId: e,
@@ -167819,7 +167763,7 @@
                             context: "Mark As Read"
                         }) : I.default.jumpToMessage({
                             channelId: r.id,
-                            messageId: H.default.castChannelIdAsMessageId(r.id),
+                            messageId: F.default.castChannelIdAsMessageId(r.id),
                             offset: 1,
                             context: "Mark As Read"
                         })
@@ -167827,77 +167771,77 @@
                     es = a.useCallback(() => {
                         (0, T.ack)(r.id)
                     }, [r.id]),
-                    ea = z.default.Messages.SUMMARIES_NO_SUMMARIES;
-                return y.length > 0 && (ea = "" === j || null == j ? z.default.Messages.SUMMARIES_VIEW_ALL : j), f ? null : (0, s.jsxs)("div", {
+                    ea = K.default.Messages.SUMMARIES_NO_SUMMARIES;
+                return y.length > 0 && (ea = "" === W || null == W ? K.default.Messages.SUMMARIES_VIEW_ALL : W), f ? null : (0, s.jsxs)("div", {
                     ref: C,
-                    className: l()(Z.newTopicsBarContainer, Z.containerMarginTop),
+                    className: l()(z.newTopicsBarContainer, z.containerMarginTop),
                     children: [(0, s.jsx)("div", {
-                        className: l()(Z.newTopicsBarTopicSection),
+                        className: l()(z.newTopicsBarTopicSection),
                         children: (0, s.jsx)(E.Clickable, {
-                            className: Z.newTopicsBarTextClickable,
-                            "aria-label": z.default.Messages.SUMMARY_PILL,
+                            className: z.newTopicsBarTextClickable,
+                            "aria-label": K.default.Messages.SUMMARY_PILL,
                             onClick: $,
                             children: (0, s.jsxs)("div", {
                                 className: l()({
-                                    [Z.newTopicsBarTextUnselected]: !q,
-                                    [Z.newTopicsBarTextSelected]: q
+                                    [z.newTopicsBarTextUnselected]: !q,
+                                    [z.newTopicsBarTextSelected]: q
                                 }),
-                                children: [(0, s.jsx)(k.default, {
-                                    className: Z.newTopicsBarIcon,
+                                children: [(0, s.jsx)(B.default, {
+                                    className: z.newTopicsBarIcon,
                                     width: 16,
                                     height: 16
                                 }), (0, s.jsx)(E.Text, {
                                     variant: "text-sm/medium",
-                                    className: l()(Z.newTopicsBarCompact, Z.newTopicsBarText),
+                                    className: l()(z.newTopicsBarCompact, z.newTopicsBarText),
                                     children: ea
-                                }), (0, s.jsx)(G.default, {
+                                }), (0, s.jsx)(b.default, {
                                     width: 16,
                                     height: 16,
-                                    direction: G.default.Directions.DOWN,
-                                    className: Z.newTopicsBarCaret
+                                    direction: b.default.Directions.DOWN,
+                                    className: z.newTopicsBarCaret
                                 })]
                             })
                         })
                     }), (0, s.jsx)(E.Clickable, {
                         onClick: er,
-                        className: l()(Z.barButtonMain, Z.newTopicsBarInitial),
+                        className: l()(z.barButtonMain, z.newTopicsBarInitial),
                         children: o
                     }), (0, s.jsxs)(E.Clickable, {
                         onClick: es,
-                        className: l()(Z.barButtonAlt, Z.flexEnd),
+                        className: l()(z.barButtonAlt, z.flexEnd),
                         children: [(0, s.jsx)("div", {
-                            className: Z.newTopicsBarCompact,
-                            children: z.default.Messages.MARK_AS_READ
-                        }), (0, s.jsx)(w.default, {
-                            className: Z.barButtonIcon
+                            className: z.newTopicsBarCompact,
+                            children: K.default.Messages.MARK_AS_READ
+                        }), (0, s.jsx)(G.default, {
+                            className: z.barButtonIcon
                         })]
                     }), q && (0, s.jsxs)("div", {
-                        className: Z.topicsDropdown,
+                        className: z.topicsDropdown,
                         children: [(0, s.jsxs)("div", {
-                            className: Z.topicsDropdownHeading,
+                            className: z.topicsDropdownHeading,
                             children: [(0, s.jsxs)("div", {
-                                className: Z.topicsDropdownHeadingText,
-                                children: [(0, s.jsx)(k.default, {
-                                    className: Z.topicsPillHeadingIcon,
+                                className: z.topicsDropdownHeadingText,
+                                children: [(0, s.jsx)(B.default, {
+                                    className: z.topicsPillHeadingIcon,
                                     width: 18,
                                     height: 20
                                 }), (0, s.jsx)(E.Heading, {
                                     variant: "heading-md/bold",
                                     color: "header-primary",
                                     lineClamp: 1,
-                                    children: z.default.Messages.SUMMARIES
+                                    children: K.default.Messages.SUMMARIES
                                 }), (0, s.jsx)(m.default, {
-                                    className: Z.summariesBetaTag
+                                    className: z.summariesBetaTag
                                 })]
                             }), (0, s.jsx)(E.Clickable, {
-                                "aria-label": z.default.Messages.CLOSE,
+                                "aria-label": K.default.Messages.CLOSE,
                                 onClick: $,
-                                className: Z.topicsDropdownClose,
-                                children: (0, s.jsx)(B.default, {})
+                                className: z.topicsDropdownClose,
+                                children: (0, s.jsx)(w.default, {})
                             })]
                         }), (0, s.jsx)(E.Scroller, {
                             ref: M,
-                            className: Z.topicsScroller,
+                            className: z.topicsScroller,
                             fade: !0,
                             children: ei
                         })]
@@ -167905,88 +167849,88 @@
                 })
             }
 
-            function eu(e, t) {
+            function el(e, t) {
                 return null != t && e.length === t.length && !e.some((e, n) => {
                     var i, r;
                     return i = e, null == (r = t[n]) || i.length !== r.length || !!i.some((e, t) => r[t] !== e)
                 })
             }
 
-            function ed(e) {
+            function eu(e) {
                 var t, n, i;
                 let {
                     channel: r,
                     scrollManager: o
                 } = e, {
                     disableInteractions: u
-                } = a.useContext(b.MessagesInteractionContext), [T, f] = a.useState(null), S = a.useRef(null), [R, C] = a.useState(null), g = a.useRef(null), L = (0, c.useStateFromStoresArray)([p.default], () => {
+                } = a.useContext(U.MessagesInteractionContext), [T, f] = a.useState(null), S = a.useRef(null), [R, C] = a.useState(null), g = a.useRef(null), v = (0, c.useStateFromStoresArray)([p.default], () => {
                     var e;
                     return null !== (e = p.default.summaries(r.id)) && void 0 !== e ? e : []
-                }, [r]), D = (0, A.default)(L);
+                }, [r]), D = (0, A.default)(v);
                 a.useEffect(() => {
-                    !d().isEqual(D, L) && V.default.track(Y.AnalyticEvents.SUMMARIES_TOPICS_PILL_VIEWED, {
-                        num_summaries: L.length,
-                        message_counts: L.map(e => e.count),
-                        start_message_ids: L.map(e => e.startId),
-                        end_message_ids: L.map(e => e.endId),
-                        num_participants: L.map(e => e.people.length),
+                    !d().isEqual(D, v) && k.default.track(H.AnalyticEvents.SUMMARIES_TOPICS_PILL_VIEWED, {
+                        num_summaries: v.length,
+                        message_counts: v.map(e => e.count),
+                        start_message_ids: v.map(e => e.startId),
+                        end_message_ids: v.map(e => e.endId),
+                        num_participants: v.map(e => e.people.length),
                         guild_id: r.guild_id,
                         channel_id: r.id,
                         channel_type: r.type
                     })
-                }, [L, D, r.guild_id, r.id, r.type]);
-                let M = (0, c.useStateFromStores)([v.default], () => {
+                }, [v, D, r.guild_id, r.id, r.type]);
+                let M = (0, c.useStateFromStores)([L.default], () => {
                         var e;
-                        return null !== (e = null == L ? void 0 : L.map(e => {
+                        return null !== (e = null == v ? void 0 : v.map(e => {
                             var t;
                             return null === (t = e.people) || void 0 === t ? void 0 : t.map(e => {
                                 var t;
-                                return null !== (t = v.default.getUser(e)) && void 0 !== t ? t : null
-                            }).filter(x.isNotNullish)
+                                return null !== (t = L.default.getUser(e)) && void 0 !== t ? t : null
+                            }).filter(V.isNotNullish)
                         })) && void 0 !== e ? e : []
-                    }, [L], eu),
+                    }, [v], el),
                     y = null !== (n = (0, c.useStateFromStores)([p.default], () => p.default.visibleSummaryIndex())) && void 0 !== n ? n : -1,
-                    P = null == L ? void 0 : null === (t = L[y]) || void 0 === t ? void 0 : t.topic;
-                null == P && null == T && (null == L ? void 0 : L.length) >= 1 && (P = null === (i = L[0]) || void 0 === i ? void 0 : i.topic);
-                let U = a.useMemo(() => d().get(L, y - 1), [y, L]),
-                    w = a.useMemo(() => d().get(L, y + 1), [y, L]),
+                    P = null == v ? void 0 : null === (t = v[y]) || void 0 === t ? void 0 : t.topic;
+                null == P && null == T && (null == v ? void 0 : v.length) >= 1 && (P = null === (i = v[0]) || void 0 === i ? void 0 : i.topic);
+                let G = a.useMemo(() => d().get(v, y - 1), [y, v]),
+                    x = a.useMemo(() => d().get(v, y + 1), [y, v]),
                     F = a.useMemo(() => d().debounce(e => {
                         var t;
                         f(null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : null)
                     }, 64), [f]),
-                    H = a.useMemo(() => d().throttle(() => {
+                    Y = a.useMemo(() => d().throttle(() => {
                         (0, N.setHighlightedSummary)(null)
                     }, 1200, {
                         trailing: !1
                     }), []),
-                    j = a.useCallback(e => {
-                        H(), F(e)
-                    }, [F, H]),
-                    [K, X] = a.useState(!1),
+                    W = a.useCallback(e => {
+                        Y(), F(e)
+                    }, [F, Y]),
+                    [Z, X] = a.useState(!1),
                     Q = a.useCallback(() => {
-                        V.default.track(Y.AnalyticEvents.SUMMARIES_TOPICS_PILL_TOGGLED, {
-                            topics_dropdown_open: !K,
-                            num_summaries: L.length,
-                            message_counts: L.map(e => e.count),
-                            start_message_ids: L.map(e => e.startId),
-                            end_message_ids: L.map(e => e.endId),
-                            num_participants: L.map(e => e.people.length),
+                        k.default.track(H.AnalyticEvents.SUMMARIES_TOPICS_PILL_TOGGLED, {
+                            topics_dropdown_open: !Z,
+                            num_summaries: v.length,
+                            message_counts: v.map(e => e.count),
+                            start_message_ids: v.map(e => e.startId),
+                            end_message_ids: v.map(e => e.endId),
+                            num_participants: v.map(e => e.people.length),
                             guild_id: r.guild_id,
                             channel_id: r.id,
                             channel_type: r.type
-                        }), X(!K)
-                    }, [K, L, X, r]),
+                        }), X(!Z)
+                    }, [Z, v, X, r]),
                     q = a.useCallback(function(e) {
-                        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : W.SummariesTopicClickedSource.PILL_DROPDOWN,
-                            n = L[e];
+                        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : j.SummariesTopicClickedSource.PILL_DROPDOWN,
+                            n = v[e];
                         if (null == n) return;
                         (0, N.setSelectedSummary)(r.id, n.id), (0, N.setHighlightedSummary)(r.id, n.id);
                         let i = () => {
                             o.removeScrollCompleteCallback(i), setTimeout(() => {
-                                o.addAutomaticAnchorCallback(j, !1)
+                                o.addAutomaticAnchorCallback(W, !1)
                             }, 100)
                         };
-                        o.removeAutomaticAnchorCallback(j), o.addScrollCompleteCallback(i), V.default.track(Y.AnalyticEvents.SUMMARIES_TOPIC_CLICKED, {
+                        o.removeAutomaticAnchorCallback(W), o.addScrollCompleteCallback(i), k.default.track(H.AnalyticEvents.SUMMARIES_TOPIC_CLICKED, {
                             source: t,
                             message_id: n.startId,
                             guild_id: r.guild_id,
@@ -168000,12 +167944,12 @@
                             jumpType: h.JumpTypes.ANIMATED,
                             context: "Summary Jump"
                         })
-                    }, [L, r, j, o]),
+                    }, [v, r, W, o]),
                     J = a.useCallback(() => {
-                        q(y - 1, W.SummariesTopicClickedSource.PILL_NEXT_ARROW)
+                        q(y - 1, j.SummariesTopicClickedSource.PILL_NEXT_ARROW)
                     }, [q, y]),
                     $ = a.useCallback(() => {
-                        q(y + 1, W.SummariesTopicClickedSource.PILL_PREVIOUS_ARROW)
+                        q(y + 1, j.SummariesTopicClickedSource.PILL_PREVIOUS_ARROW)
                     }, [y, q]),
                     ee = a.useCallback(e => {
                         var t;
@@ -168014,180 +167958,169 @@
                         null != n && C(n)
                     }, []);
                 a.useEffect(() => {
-                    if (null != R && K) {
+                    if (null != R && Z) {
                         var e;
                         null === (e = g.current) || void 0 === e || e.scrollTo({
                             top: R
                         })
                     }
-                }, [R, K]);
+                }, [R, Z]);
                 let et = a.useCallback(e => {
                     var t;
-                    !((0, _.isElement)(e.target) && (null === (t = S.current) || void 0 === t ? void 0 : t.contains(e.target))) && (K && V.default.track(Y.AnalyticEvents.SUMMARIES_TOPICS_PILL_TOGGLED, {
+                    !((0, _.isElement)(e.target) && (null === (t = S.current) || void 0 === t ? void 0 : t.contains(e.target))) && (Z && k.default.track(H.AnalyticEvents.SUMMARIES_TOPICS_PILL_TOGGLED, {
                         topics_dropdown_open: !1,
-                        num_summaries: L.length,
-                        message_counts: L.map(e => e.count),
-                        start_message_ids: L.map(e => e.startId),
-                        end_message_ids: L.map(e => e.endId),
-                        num_participants: L.map(e => e.people.length),
+                        num_summaries: v.length,
+                        message_counts: v.map(e => e.count),
+                        start_message_ids: v.map(e => e.startId),
+                        end_message_ids: v.map(e => e.endId),
+                        num_participants: v.map(e => e.people.length),
                         guild_id: r.guild_id,
                         channel_id: r.id,
                         channel_type: r.type
                     }), ee(!1))
-                }, [K, L, r, ee]);
-                a.useEffect(() => (o.addAutomaticAnchorCallback(j), () => {
-                    o.removeAutomaticAnchorCallback(j)
-                }), [o, j]), a.useEffect(() => {
+                }, [Z, v, r, ee]);
+                a.useEffect(() => (o.addAutomaticAnchorCallback(W), () => {
+                    o.removeAutomaticAnchorCallback(W)
+                }), [o, W]), a.useEffect(() => {
                     (0, N.fetchSummaries)(r.id)
                 }, [r.id]), a.useEffect(() => (document.addEventListener("mousedown", et), () => {
                     document.removeEventListener("mousedown", et)
                 }), [et]);
                 let en = a.useMemo(() => (0, s.jsx)(O.default, {
                     channel: r,
-                    summaries: L,
+                    summaries: v,
                     summariesMembers: M,
                     selectTopic: q,
                     setOpen: ee
-                }), [L, M, q, ee, r]);
+                }), [v, M, q, ee, r]);
                 if (!(0, c.useStateFromStores)([p.default], () => p.default.shouldShowTopicsBar())) return null;
-                let ei = z.default.Messages.SUMMARIES_NO_SUMMARIES;
-                return L.length > 0 && (ei = "" === P || null == P ? z.default.Messages.SUMMARIES_VIEW_ALL : P), u ? null : (0, s.jsxs)("div", {
+                let ei = K.default.Messages.SUMMARIES_NO_SUMMARIES;
+                return v.length > 0 && (ei = "" === P || null == P ? K.default.Messages.SUMMARIES_VIEW_ALL : P), u ? null : (0, s.jsxs)("div", {
                     ref: S,
-                    className: l()(Z.topicsPillContainer, Z.containerMarginTop),
+                    className: l()(z.topicsPillContainer, z.containerMarginTop),
                     children: [(0, s.jsxs)("div", {
-                        className: Z.topicsPill,
+                        className: z.topicsPill,
                         children: [(0, s.jsx)(E.Clickable, {
-                            className: Z.topicsPillText,
-                            "aria-label": z.default.Messages.SUMMARY_PILL,
+                            className: z.topicsPillText,
+                            "aria-label": K.default.Messages.SUMMARY_PILL,
                             onClick: Q,
                             children: (0, s.jsxs)("div", {
                                 className: l()({
-                                    [Z.topicsPillTextUnselected]: !K,
-                                    [Z.topicsPillTextSelected]: K
+                                    [z.topicsPillTextUnselected]: !Z,
+                                    [z.topicsPillTextSelected]: Z
                                 }),
-                                children: [(0, s.jsx)(k.default, {
-                                    className: Z.topicsPillSummaryIcon,
+                                children: [(0, s.jsx)(B.default, {
+                                    className: z.topicsPillSummaryIcon,
                                     width: 16,
                                     height: 16
                                 }), (0, s.jsx)(E.Text, {
-                                    className: Z.topicsPillTextTitle,
+                                    className: z.topicsPillTextTitle,
                                     variant: "text-sm/medium",
                                     children: ei
-                                }), (0, s.jsx)(G.default, {
+                                }), (0, s.jsx)(b.default, {
                                     width: 16,
                                     height: 16,
-                                    direction: G.default.Directions.DOWN,
-                                    className: Z.topicsPillDropdownCaret
+                                    direction: b.default.Directions.DOWN,
+                                    className: z.topicsPillDropdownCaret
                                 })]
                             })
                         }), (0, s.jsxs)("div", {
-                            className: Z.topicsPillCarets,
+                            className: z.topicsPillCarets,
                             children: [(0, s.jsx)(E.Clickable, {
-                                "aria-label": z.default.Messages.SUMMARY_PILL_NEXT,
+                                "aria-label": K.default.Messages.SUMMARY_PILL_NEXT,
                                 onClick: $,
-                                className: l()(Z.topicsPillCaret, Z.topicsCaretLeft, {
-                                    [Z.topicsPillCaretDisabled]: null == w
+                                className: l()(z.topicsPillCaret, z.topicsCaretLeft, {
+                                    [z.topicsPillCaretDisabled]: null == x
                                 }),
-                                children: (0, s.jsx)(G.default, {
+                                children: (0, s.jsx)(b.default, {
                                     width: 16,
                                     height: 16,
-                                    direction: G.default.Directions.UP
+                                    direction: b.default.Directions.UP
                                 })
                             }), (0, s.jsx)(E.Clickable, {
-                                "aria-label": z.default.Messages.SUMMARY_PILL_PREVIOUS,
+                                "aria-label": K.default.Messages.SUMMARY_PILL_PREVIOUS,
                                 onClick: J,
-                                className: l()(Z.topicsPillCaret, Z.topicsCaretRight, {
-                                    [Z.topicsPillCaretDisabled]: null == U
+                                className: l()(z.topicsPillCaret, z.topicsCaretRight, {
+                                    [z.topicsPillCaretDisabled]: null == G
                                 }),
-                                children: (0, s.jsx)(G.default, {
+                                children: (0, s.jsx)(b.default, {
                                     width: 16,
                                     height: 16,
-                                    direction: G.default.Directions.DOWN
+                                    direction: b.default.Directions.DOWN
                                 })
                             })]
                         })]
-                    }), K && (0, s.jsxs)("div", {
-                        className: Z.topicsDropdown,
+                    }), Z && (0, s.jsxs)("div", {
+                        className: z.topicsDropdown,
                         children: [(0, s.jsxs)("div", {
-                            className: Z.topicsDropdownHeading,
+                            className: z.topicsDropdownHeading,
                             children: [(0, s.jsxs)("div", {
-                                className: Z.topicsDropdownHeadingText,
-                                children: [(0, s.jsx)(k.default, {
-                                    className: Z.topicsPillHeadingIcon,
+                                className: z.topicsDropdownHeadingText,
+                                children: [(0, s.jsx)(B.default, {
+                                    className: z.topicsPillHeadingIcon,
                                     width: 18,
                                     height: 20
                                 }), (0, s.jsx)(E.Heading, {
                                     variant: "heading-md/bold",
                                     color: "header-primary",
                                     lineClamp: 1,
-                                    children: z.default.Messages.SUMMARIES
+                                    children: K.default.Messages.SUMMARIES
                                 }), (0, s.jsx)(m.default, {
-                                    className: Z.summariesBetaTag
+                                    className: z.summariesBetaTag
                                 })]
                             }), (0, s.jsx)(E.Clickable, {
-                                "aria-label": z.default.Messages.CLOSE,
+                                "aria-label": K.default.Messages.CLOSE,
                                 onClick: Q,
-                                className: Z.topicsDropdownClose,
-                                children: (0, s.jsx)(B.default, {})
+                                className: z.topicsDropdownClose,
+                                children: (0, s.jsx)(w.default, {})
                             })]
                         }), (0, s.jsx)(E.Scroller, {
                             ref: g,
-                            className: Z.topicsScroller,
+                            className: z.topicsScroller,
                             fade: !0,
                             children: en
                         })]
                     })]
                 })
             }
-            let e_ = function(e) {
-                    let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-                        n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+            let ed = function(e) {
+                    let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
                     return (0, s.jsxs)("div", {
-                        className: Z.tooltip,
+                        className: z.tooltip,
                         children: [(0, s.jsx)(E.Text, {
                             color: "none",
                             variant: "text-sm/semibold",
                             lineClamp: 1,
-                            className: Z.tooltipEmojiName,
+                            className: z.tooltipEmojiName,
                             children: e
-                        }), n && (0, s.jsxs)("div", {
-                            className: Z.tooltipPremiumContent,
-                            children: [(0, s.jsx)(C.default, {
-                                isSelected: !1
-                            }), (0, s.jsx)(E.Text, {
-                                className: Z.clickCTA,
-                                color: "text-muted",
-                                variant: "text-sm/normal",
-                                children: z.default.Messages.EMBEDDED_ACTIVITIES_PREMIUM_TIER_CUSTOM_EMOJI
-                            })]
                         }), t && (0, s.jsx)(E.Text, {
-                            className: Z.clickCTA,
+                            className: z.clickCTA,
                             color: "text-muted",
                             variant: "text-sm/normal",
-                            children: z.default.Messages.EMOJI_TOOLTIP_CLICK_CTA
+                            children: K.default.Messages.EMOJI_TOOLTIP_CLICK_CTA
                         })]
                     })
                 },
-                ec = e => {
+                e_ = e => {
                     let {
                         children: t,
                         className: n
                     } = e;
                     return (0, s.jsx)("div", {
-                        className: l()(Z.popoutContainer, n),
+                        className: l()(z.popoutContainer, n),
                         children: t
                     })
                 },
-                eE = e => {
+                ec = e => {
                     let {
                         className: t
                     } = e;
-                    return (0, s.jsx)(ec, {
+                    return (0, s.jsx)(e_, {
                         className: t,
                         children: (0, s.jsx)("div", {
-                            className: Z.popoutLoadingBackground,
+                            className: z.popoutLoadingBackground,
                             children: (0, s.jsx)("div", {
-                                className: Z.popoutLoadingForeground
+                                className: z.popoutLoadingForeground
                             })
                         })
                     })
@@ -169066,8 +168999,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714589934404",
-                                    build_number: "289621"
+                                    built_at: "1714590358979",
+                                    build_number: "289625"
                                 }
                             },
                             retries: 1
@@ -179425,29 +179358,6 @@
                 treatments: [{
                     id: 1,
                     label: "Enable Localized Pricing Promo Manager",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            })
-        },
-        642345: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                NitroBadgeOnEmojiHoverExperiment: function() {
-                    return i
-                }
-            });
-            let i = (0, n("818083").createExperiment)({
-                kind: "user",
-                id: "2024-02_nitro_badge_on_emoji_hover",
-                label: "Nitro Badge on Emoji Hover",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Users see Nitro badge when hovering the cursor on a custom emoji and clicking a custom emoji",
                     config: {
                         enabled: !0
                     }
@@ -216923,63 +216833,6 @@
                 }, [e, t, _, u, n, l])
             }
         },
-        170671: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return a
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("692547"),
-                s = n("153124");
-
-            function a(e) {
-                let {
-                    isSelected: t,
-                    ...n
-                } = e, a = (0, s.useUID)();
-                return (0, i.jsxs)("svg", {
-                    ...n,
-                    width: "16",
-                    height: "16",
-                    viewBox: "0 0 16 16",
-                    xmlns: "http://www.w3.org/2000/svg",
-                    fill: "url(#".concat(a, ")"),
-                    children: [(0, i.jsx)("path", {
-                        d: "M10 9.33332C10.7364 9.33332 11.3334 8.73637 11.3334 7.99999C11.3334 7.26361 10.7364 6.66666 10 6.66666C9.26364 6.66666 8.66669 7.26361 8.66669 7.99999C8.66669 8.73637 9.26364 9.33332 10 9.33332Z",
-                        fill: "url(#paint0_linear_6413_12612)"
-                    }), (0, i.jsx)("path", {
-                        fillRule: "evenodd",
-                        clipRule: "evenodd",
-                        d: "M4.66669 2.66666C4.2985 2.66666 4.00002 2.96513 4.00002 3.33332C4.00002 3.70151 4.2985 3.99999 4.66669 3.99999H6.66669C7.03488 3.99999 7.33335 4.29847 7.33335 4.66666C7.33335 5.03485 7.03488 5.33332 6.66669 5.33332L3.66669 5.33332C3.2985 5.33332 3.00002 5.6318 3.00002 5.99999C3.00002 6.36818 3.2985 6.66666 3.66669 6.66666L5.33335 6.66666C5.70154 6.66666 6.00002 6.96513 6.00002 7.33332C6.00002 7.70151 5.70154 7.99999 5.33335 7.99999H4.00002C3.63183 7.99999 3.33335 8.29847 3.33335 8.66666C3.33335 9.03485 3.63183 9.33332 4.00002 9.33332H4.83471C5.42677 11.6336 7.5149 13.3333 10 13.3333C12.9455 13.3333 15.3334 10.9455 15.3334 7.99999C15.3334 5.05447 12.9455 2.66666 10 2.66666H4.66669ZM10 10.6667C11.4728 10.6667 12.6667 9.47275 12.6667 7.99999C12.6667 6.52723 11.4728 5.33332 10 5.33332C8.52726 5.33332 7.33335 6.52723 7.33335 7.99999C7.33335 9.47275 8.52726 10.6667 10 10.6667Z",
-                        fill: "url(#paint0_linear_6413_12612)"
-                    }), (0, i.jsx)("path", {
-                        d: "M1.66669 6.66666C2.03488 6.66666 2.33335 6.36818 2.33335 5.99999C2.33335 5.6318 2.03488 5.33332 1.66669 5.33332H1.33335C0.965164 5.33332 0.666687 5.6318 0.666687 5.99999C0.666687 6.36818 0.965164 6.66666 1.33335 6.66666H1.66669Z",
-                        fill: "url(#paint0_linear_6413_12612)"
-                    }), (0, i.jsx)("defs", {
-                        children: (0, i.jsxs)("linearGradient", {
-                            id: "paint0_linear_6413_12612",
-                            x1: "0.666992",
-                            y1: "0.127441",
-                            x2: "15.3271",
-                            y2: "0.127441",
-                            gradientUnits: "userSpaceOnUse",
-                            children: [(0, i.jsx)("stop", {
-                                stopColor: t ? r.default.unsafe_rawColors.WHITE_500.css : r.default.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS.css
-                            }), (0, i.jsx)("stop", {
-                                offset: "0.502368",
-                                stopColor: t ? r.default.unsafe_rawColors.WHITE_500.css : r.default.unsafe_rawColors.PREMIUM_TIER_2_PURPLE_FOR_GRADIENTS_2.css
-                            }), (0, i.jsx)("stop", {
-                                offset: "1",
-                                stopColor: t ? r.default.unsafe_rawColors.WHITE_500.css : r.default.unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS.css
-                            })]
-                        })
-                    })]
-                })
-            }
-        },
         357269: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -247053,7 +246906,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "98fa2fa1c1c484f5eb05469950f741afbb4f500a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "c0734e82bfc2c2c87c5f100f6cd745c4b70dbd81"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -275610,7 +275463,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289621"
+                                build_number: "289625"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282827,7 +282680,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289621", "289621"), 10);
+                let s = parseInt((n = "289625", "289625"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -310224,4 +310077,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.276121e2947ee7a866c0.js.map
+//# sourceMappingURL=35705.27ade12984b9ac73c074.js.map
