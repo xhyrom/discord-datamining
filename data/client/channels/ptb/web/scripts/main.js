@@ -36826,7 +36826,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289548", ", Version Hash: ").concat("1665dda0280b4c497a4844bb0b11b601be4afac8")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289572", ", Version Hash: ").concat("e5e71373fbbed6ad1b97fab5de6aebb158385f4f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55342,6 +55342,7 @@
                 MEMBER_LIST_CONTENT_POPOUT_USER_PLAYED: "$[{username}](nameHook) played",
                 MEMBER_LIST_CONTENT_POPOUT_USER_WATCHING: "$[{username}](nameHook) is watching",
                 MEMBER_LIST_CONTENT_POPOUT_USER_WATCHED: "$[{username}](nameHook) watched",
+                MEMBER_LIST_CONTENT_POPOUT_USER_STREAMING: "$[{username}](nameHook) is streaming",
                 CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity",
                 CONTENT_INVENTORY_MEMBERLIST_SETTINGS_HIDE: "Hide Activity Cards",
                 CONTENT_INVENTORY_MEMBERLIST_SETTINGS_ABOUT: "About Recent Activity",
@@ -80862,60 +80863,65 @@
                         }),
                         children: () => d
                     })
-                }),
-                p = r.forwardRef(function(e, t) {
-                    let {
-                        placeholder: n,
-                        onEnter: s,
-                        setEditorRef: o,
-                        showEmojiButton: l = !1,
-                        autoCompletePosition: u,
-                        renderAttachButton: E,
-                        onFocus: I,
-                        channel: T,
-                        className: S
-                    } = e, [h, N] = r.useState(""), [p, O] = r.useState((0, _.toRichValue)("")), R = () => {
-                        N(""), O((0, _.toRichValue)(""))
-                    }, C = d.ChatInputTypes.ATOMIC_REACTOR_REPLY_INPUT;
-                    return l && (C.emojis = {
-                        button: !0
-                    }), (0, i.jsx)(c.default, {
-                        ref: t,
-                        placeholder: n,
-                        className: a()(A.replyInput, S),
-                        showRemainingCharsAfterCount: -1,
-                        allowNewLines: !1,
-                        maxCharacterCount: f.MAX_CHAR_COUNT,
-                        channel: null != T ? T : m,
-                        onChange: (e, t, n) => {
-                            N(t), O(n)
-                        },
-                        type: C,
-                        textValue: h,
-                        richValue: p,
-                        onSubmit: e => {
-                            let {
-                                value: t
-                            } = e;
-                            return t.length > f.MAX_CHAR_COUNT ? Promise.resolve({
-                                shouldClear: !1,
-                                shouldRefocus: !0
-                            }) : (s(t), R(), Promise.resolve({
-                                shouldClear: !0,
-                                shouldRefocus: !1
-                            }))
-                        },
-                        setEditorRef: o,
-                        focused: !0,
-                        onFocus: I,
-                        disableThemedBackground: !0,
-                        emojiPickerCloseOnModalOuterClick: !0,
-                        disabled: !1,
-                        autoCompletePosition: u,
-                        renderAttachButton: E
-                    })
-                }),
-                O = (e, t) => {
+                });
+
+            function p(e) {
+                let {
+                    placeholder: t,
+                    onEnter: n,
+                    setEditorRef: s,
+                    showEmojiButton: o = !1,
+                    renderAttachButton: l,
+                    onFocus: u,
+                    channel: E,
+                    className: I
+                } = e, [T, S] = r.useState(""), [h, N] = r.useState((0, _.toRichValue)("")), p = () => {
+                    S(""), N((0, _.toRichValue)(""))
+                }, O = d.ChatInputTypes.ATOMIC_REACTOR_REPLY_INPUT, R = r.useRef(null);
+                return o && (O.emojis = {
+                    button: !0
+                }), (0, i.jsx)(c.default, {
+                    ref: R,
+                    placeholder: t,
+                    className: a()(A.replyInput, I),
+                    showRemainingCharsAfterCount: -1,
+                    allowNewLines: !1,
+                    maxCharacterCount: f.MAX_CHAR_COUNT,
+                    channel: null != E ? E : m,
+                    onChange: (e, t, n) => {
+                        S(t), N(n)
+                    },
+                    type: O,
+                    textValue: T,
+                    richValue: h,
+                    onSubmit: e => {
+                        let {
+                            value: t
+                        } = e;
+                        return t.length > f.MAX_CHAR_COUNT ? Promise.resolve({
+                            shouldClear: !1,
+                            shouldRefocus: !0
+                        }) : (n(t), p(), Promise.resolve({
+                            shouldClear: !0,
+                            shouldRefocus: !1
+                        }))
+                    },
+                    setEditorRef: s,
+                    focused: !0,
+                    onFocus: u,
+                    disableThemedBackground: !0,
+                    emojiPickerCloseOnModalOuterClick: !0,
+                    disabled: !1,
+                    autoCompletePosition: (() => {
+                        if (null == R.current) return "top";
+                        let e = R.current.getBoundingClientRect(),
+                            t = window.innerHeight;
+                        return e.top < t / 2 ? "bottom" : "top"
+                    })(),
+                    renderAttachButton: l
+                })
+            }
+            let O = (e, t) => {
                     r.useEffect(() => {
                         let n = t => {
                                 "Escape" === t.key && e()
@@ -87215,8 +87221,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289548", "289548"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289548")), t = 0), t
+                let t = parseInt((e = "289572", "289572"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289572")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111383,14 +111389,11 @@
                 ContentInventorySurfaceTypes: function() {
                     return r
                 }
-            }), (i || (i = {})).GLOBAL_FEED = "global feed", (a = r || (r = {}))[a.GUILD_MEMBER_LIST = 1] = "GUILD_MEMBER_LIST", (o = s || (s = {}))[o.CARD_HOVER = 1] = "CARD_HOVER", o[o.CARD_CLICK = 2] = "CARD_CLICK", o[o.REACTION_EMOJI_REACT_SENT = 3] = "REACTION_EMOJI_REACT_SENT", o[o.DM_REACTION_MESSAGE_SENT = 4] = "DM_REACTION_MESSAGE_SENT", o[o.CHANNEL_REACTION_MESSAGE_SENT = 5] = "CHANNEL_REACTION_MESSAGE_SENT", o[o.VOICE_CHANNEL_JOINED = 6] = "VOICE_CHANNEL_JOINED"
+            }), (i || (i = {})).GLOBAL_FEED = "global feed", (a = r || (r = {}))[a.GUILD_MEMBER_LIST = 1] = "GUILD_MEMBER_LIST", (o = s || (s = {}))[o.CARD_HOVER = 1] = "CARD_HOVER", o[o.CARD_CLICK = 2] = "CARD_CLICK", o[o.REACTION_EMOJI_REACT_SENT = 3] = "REACTION_EMOJI_REACT_SENT", o[o.DM_REACTION_MESSAGE_SENT = 4] = "DM_REACTION_MESSAGE_SENT", o[o.CHANNEL_REACTION_MESSAGE_SENT = 5] = "CHANNEL_REACTION_MESSAGE_SENT", o[o.VOICE_CHANNEL_JOINED = 6] = "VOICE_CHANNEL_JOINED", o[o.VOICE_CHANNEL_PREVIEWED = 7] = "VOICE_CHANNEL_PREVIEWED"
         },
         162461: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                VoiceEnrichmentsExperiment: function() {
-                    return _
-                },
                 isEligibleForContentInventoryV1: function() {
                     return a
                 },
@@ -111509,23 +111512,6 @@
                 });
                 return t
             }
-            let _ = (0, i.createExperiment)({
-                kind: "user",
-                id: "2024-04_content_inventory_voice_enrichments",
-                label: "Experimental enrichments",
-                defaultConfig: {
-                    showBadge: !1,
-                    showJoinButton: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Treament",
-                    config: {
-                        showBadge: !0,
-                        showJoinButton: !0
-                    }
-                }]
-            })
         },
         564990: function(e, t, n) {
             "use strict";
@@ -113740,8 +113726,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289548",
-                    versionHash: "1665dda0280b4c497a4844bb0b11b601be4afac8"
+                    buildNumber: "289572",
+                    versionHash: "e5e71373fbbed6ad1b97fab5de6aebb158385f4f"
                 }
             }
             n.r(t), n.d(t, {
@@ -169072,8 +169058,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714582400177",
-                                    build_number: "289548"
+                                    built_at: "1714584323433",
+                                    build_number: "289572"
                                 }
                             },
                             retries: 1
@@ -247059,7 +247045,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "1665dda0280b4c497a4844bb0b11b601be4afac8"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e5e71373fbbed6ad1b97fab5de6aebb158385f4f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -275616,7 +275602,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289548"
+                                build_number: "289572"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282833,7 +282819,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289548", "289548"), 10);
+                let s = parseInt((n = "289572", "289572"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -310227,4 +310213,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.831ce93a99ed410d12ed.js.map
+//# sourceMappingURL=35705.e0ce5d98cb890394d7e4.js.map

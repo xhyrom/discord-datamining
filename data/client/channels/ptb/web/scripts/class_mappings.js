@@ -6151,15 +6151,6 @@
                 notes: "notes_aa436d"
             }
         },
-        472771: function(e) {
-            "use strict";
-            e.exports = {
-                contentRow: "contentRow__98fc8",
-                hovered: "hovered_f9e6de",
-                icon: "icon__130a3",
-                reply: "reply__94440"
-            }
-        },
         965945: function(e) {
             "use strict";
             e.exports = {
@@ -6190,7 +6181,9 @@
                 facePile: "facePile__28ee7",
                 facePileItem: "facePileItem__560b8",
                 fontScaling: "fontScaling__42daa",
+                icon: "icon_c888a7",
                 infoSection: "infoSection__07f39",
+                reply: "reply_d4ce98",
                 selected: "selected__31bdc",
                 thumbnail: "thumbnail__18ece",
                 userName: "userName__23133",
@@ -6215,6 +6208,7 @@
                 emojiSuggestionButton: "emojiSuggestionButton__6cb58",
                 hero: "hero_dc420c",
                 heroDetails: "heroDetails_f9bc0e",
+                iconButton: "iconButton__4bb00",
                 inputContainerShareToChannel: "inputContainerShareToChannel__8eca3",
                 interactionsContainer: "interactionsContainer__97fe3",
                 interactionsContainerHeader: "interactionsContainerHeader_a937d2",
@@ -6222,13 +6216,23 @@
                 popout: "popout_cfa8bc",
                 popoutContentBody: "popoutContentBody_f9fe14",
                 popoutContentHeader: "popoutContentHeader_daecb8",
+                popoutStreamImg: "popoutStreamImg_a5f0ae",
                 popoutThumbnailContainer: "popoutThumbnailContainer_b66fac",
                 popoutUserContainer: "popoutUserContainer__5ed24",
                 popoutUsername: "popoutUsername__8e4a7",
+                secondaryButton: "secondaryButton_fc9605",
+                secondaryText: "secondaryText__7a32f",
                 shareToChannelButton: "shareToChannelButton_ee0e50",
                 shareToChannelInput: "shareToChannelInput_a160d6",
                 shareToChannelInputHasAttachments: "shareToChannelInputHasAttachments__4d1e1",
-                toastContainer: "toastContainer__40273"
+                toastContainer: "toastContainer__40273",
+                voiceChannelAdditionalParticipants: "voiceChannelAdditionalParticipants__03b6f",
+                voiceChannelGuildIcon: "voiceChannelGuildIcon__1cbcc",
+                voiceChannelPopoutReactorChannel: "voiceChannelPopoutReactorChannel__15248",
+                voiceChannelPopoutReactorHeader: "voiceChannelPopoutReactorHeader_f7332b",
+                voicePopoutActionButtons: "voicePopoutActionButtons_dc92e3",
+                voicePopoutDivider: "voicePopoutDivider_a3a4c4",
+                voicePopoutMessageCloseIcon: "voicePopoutMessageCloseIcon__9e357"
             }
         },
         530691: function(e) {
