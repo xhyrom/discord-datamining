@@ -38454,15 +38454,6 @@ div:has(>div>.modal__06f49) {
     margin-top: 2px
 }
 
-.overflowingFade__5f025 {
-    position: absolute;
-    right: 0;
-    top: -1px;
-    max-width: 100%;
-    background: linear-gradient(to right, transparent, var(--background-secondary));
-    border: 0 0 4px 4px
-}
-
 .body_f9b7dd {
     padding: 10px
 }
@@ -58997,8 +58988,8 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .name__4eb92 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -60794,7 +60785,7 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .primaryButton__27b08 {
-    color: var(--text-brand)
+    color: var(--brand-500)
 }
 
 .container__7e23c {
@@ -136243,4 +136234,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f27b0a362442f0652d63.css.map*/
+/*# sourceMappingURL=99387.0f63002f43040f29f1e0.css.map*/
