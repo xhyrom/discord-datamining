@@ -29822,7 +29822,7 @@ div:has(>div>.modal__06f49) {
     align-items: center;
     justify-content: center;
     align-self: flex-start;
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .4);
     border-radius: 16px;
     cursor: pointer;
     opacity: .9;
@@ -29834,7 +29834,7 @@ div:has(>div>.modal__06f49) {
 
 .iconWrapper__75528:focus,
 .iconWrapper__75528:hover {
-    background-color: rgba(0, 0, 0, .3)
+    background-color: rgba(0, 0, 0, .5)
 }
 
 .iconWrapper__75528:active {
@@ -67023,7 +67023,7 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .submenuWrapper__71f75 {
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .4);
     border-radius: 16px;
     cursor: pointer;
     flex: 0 0 auto;
@@ -67036,7 +67036,7 @@ html .invoiceCancelRow_aa7946 {
 
 .submenuWrapper__71f75:focus,
 .submenuWrapper__71f75:hover {
-    background-color: rgba(0, 0, 0, .3)
+    background-color: rgba(0, 0, 0, .5)
 }
 
 .submenuWrapper__71f75:active {
@@ -136243,4 +136243,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.be03799a0e074e1165e5.css.map*/
+/*# sourceMappingURL=99387.94f01a492e5a3ade72be.css.map*/
