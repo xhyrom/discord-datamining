@@ -1,10 +1,10 @@
 # Public Testing Beta
 
 ### Info
-Build number: 289512  
-Version hash: dba150d97896351c62c9eae8257c741379943d63  
+Build number: 289517  
+Version hash: 23727ec62248e5e08814876dcc72a05420b033fd  
 Host version: 1.0.1068  
-Built at: 5/1/2024, 2:58:00 PM  
+Built at: 5/1/2024, 3:22:06 PM  
 
 ### Modules
 | Module               | Version | Package sha256                                                   | URL                                                                                              |
