@@ -4717,8 +4717,7 @@
                 textAreaSlate: "textAreaSlate__8578d",
                 textAreaThreadCreation: "textAreaThreadCreation_f5ecc4",
                 textAreaWithoutAttachmentButton: "textAreaWithoutAttachmentButton__8a454",
-                themedBackground: "themedBackground__3a4c0",
-                webkit: "webkit__8d35a"
+                themedBackground: "themedBackground__3a4c0"
             }
         },
         611831: function(e) {
