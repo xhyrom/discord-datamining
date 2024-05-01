@@ -4190,6 +4190,10 @@
     "url": "/application-directory/collection-items/:param/:param.:param",
     "allowed_methods": null
   },
+  "APP_RECOMMENDATIONS": {
+    "url": "/app-recommendations",
+    "allowed_methods": null
+  },
   "GUILD_FEED": {
     "url": "/guilds/:param/guild-feed",
     "allowed_methods": [
