@@ -15989,12 +15989,12 @@ span.clanTag_f4aadc {
     overflow: hidden
 }
 
-.overlayBackground__345c9 * {
-    scrollbar-color: var(--profile-body-divider-color)var(--scrollbar-thin-track)
-}
-
 .overlayBackground__345c9 ::-webkit-scrollbar-thumb {
     background-color: var(--profile-body-divider-color)
+}
+
+.no-webkit-scrollbar .overlayBackground__345c9 * {
+    scrollbar-color: var(--profile-body-divider-color)var(--scrollbar-thin-track)
 }
 
 .userPopoutOverlayBackground__3e7e6 {
@@ -17312,8 +17312,11 @@ span.clanTag_f4aadc {
 .horizontalAutocompletes__864f5 {
     margin-bottom: -4px;
     padding: 0 8px;
-    scrollbar-width: thin;
     overflow-x: auto
+}
+
+.no-webkit-scrollbar .horizontalAutocompletes__864f5 {
+    scrollbar-width: thin
 }
 
 .horizontalAutocomplete__42abc {
@@ -22496,7 +22499,10 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     overflow-y: scroll;
     max-height: 50vh;
     border-radius: 8px;
-    backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.no-webkit-scrollbar .scrollableContainer_ff917f {
     scrollbar-width: none
 }
 
@@ -22536,29 +22542,25 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     background-color: hsl(var(--primary-500-hsl)/.9)
 }
 
-.webkit__8d35a {
-    scrollbar-width: auto
-}
-
-.webkit__8d35a::-webkit-scrollbar {
+.scrollableContainer_ff917f::-webkit-scrollbar {
     width: 12px;
     height: 12px
 }
 
-.webkit__8d35a::-webkit-scrollbar-thumb,
-.webkit__8d35a::-webkit-scrollbar-track {
+.scrollableContainer_ff917f::-webkit-scrollbar-thumb,
+.scrollableContainer_ff917f::-webkit-scrollbar-track {
     border-width: 4px;
     background-clip: padding-box;
     border-style: solid;
     border-color: transparent
 }
 
-.webkit__8d35a::-webkit-scrollbar-track {
+.scrollableContainer_ff917f::-webkit-scrollbar-track {
     border-width: medium;
     border-width: initial
 }
 
-.webkit__8d35a::-webkit-scrollbar-thumb {
+.scrollableContainer_ff917f::-webkit-scrollbar-thumb {
     background-color: hsl(var(--primary-800-hsl)/.6);
     border-radius: 8px
 }
@@ -22684,7 +22686,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     margin-right: 6px
 }
 
-.buttons__7ecff:not(.platform-web .buttons__7ecff) {
+.has-webkit-scrollbar .buttons__7ecff {
     margin-right: -6px
 }
 
@@ -22814,20 +22816,20 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     padding-right: 12px
 }
 
-.enable-forced-colors .webkit__8d35a::-webkit-scrollbar {
+.enable-forced-colors .scrollableContainer_ff917f::-webkit-scrollbar {
     width: 8px
 }
 
-.enable-forced-colors .webkit__8d35a::-webkit-scrollbar-track {
+.enable-forced-colors .scrollableContainer_ff917f::-webkit-scrollbar-track {
     border-radius: 0 8px 8px 0
 }
 
-.enable-forced-colors .webkit__8d35a::-webkit-scrollbar-thumb,
-.enable-forced-colors .webkit__8d35a::-webkit-scrollbar-track {
+.enable-forced-colors .scrollableContainer_ff917f::-webkit-scrollbar-thumb,
+.enable-forced-colors .scrollableContainer_ff917f::-webkit-scrollbar-track {
     border-width: 1px
 }
 
-.enable-forced-colors .webkit__8d35a::-webkit-scrollbar-thumb {
+.enable-forced-colors .scrollableContainer_ff917f::-webkit-scrollbar-thumb {
     background-color: CanvasText
 }
 
@@ -42724,12 +42726,12 @@ div.profileThemedContainer__6e645 {
     flex: 1 1 auto
 }
 
-.auto_cf9d15 {
+.no-webkit-scrollbar .auto_cf9d15 {
     scrollbar-width: auto;
     scrollbar-color: var(--black-500)var(--background-modifier-accent)
 }
 
-.auto_cf9d15.fade_ca1f6c:hover {
+.no-webkit-scrollbar .auto_cf9d15.fade_ca1f6c:hover {
     scrollbar-color: var(--black-500)var(--background-modifier-accent)
 }
 
@@ -42757,7 +42759,7 @@ div.profileThemedContainer__6e645 {
     background-color: var(--black-500)
 }
 
-.fade_ca1f6c {
+.no-webkit-scrollbar .fade_ca1f6c {
     scrollbar-color: var(--black-500)var(--background-modifier-accent)
 }
 
@@ -55586,7 +55588,10 @@ html .invoiceCancelRow_aa7946 {
     padding: 24px;
     height: 100%;
     width: 100%;
-    overflow: auto;
+    overflow: auto
+}
+
+.no-webkit-scrollbar .guildCard_ba5634 {
     scrollbar-width: none
 }
 
@@ -77333,7 +77338,7 @@ html .invoiceCancelRow_aa7946 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 16px;
     gap: 4px
 }
 
@@ -91290,7 +91295,10 @@ html .tabBadge_ff691d {
 .modalContent__4d9c6 {
     display: flex;
     padding: 0;
-    border-radius: inherit;
+    border-radius: inherit
+}
+
+.no-webkit-scrollbar .modalContent__4d9c6 {
     scrollbar-width: none
 }
 
@@ -107744,8 +107752,11 @@ html .invoiceCancelRow__6ff3e {
     flex-direction: row;
     background-color: var(--background-primary);
     padding: 0;
-    scrollbar-width: none;
     border-radius: 12px
+}
+
+.no-webkit-scrollbar .modalContent__36f08 {
+    scrollbar-width: none
 }
 
 .modalContent__36f08::-webkit-scrollbar {
@@ -113257,12 +113268,15 @@ html .invoiceCancelRow__6ff3e {
     cursor: pointer;
     white-space: pre;
     word-wrap: normal;
-    overflow-x: scroll;
-    scrollbar-width: none
+    overflow-x: scroll
 }
 
 .collapsed__55a23 .title__20d69::-webkit-scrollbar {
     display: none
+}
+
+.no-webkit-scrollbar .collapsed__55a23 .title__20d69 {
+    scrollbar-width: none
 }
 
 .bodyContainer__61b9e {
@@ -113294,12 +113308,15 @@ html .invoiceCancelRow__6ff3e {
     min-height: 80px
 }
 
+.no-webkit-scrollbar .previewTextArea_efd760 {
+    scrollbar-width: none
+}
+
 .previewTextArea_efd760 {
     overflow-x: hidden;
     overflow-y: scroll;
     border-radius: 8px;
-    backface-visibility: hidden;
-    scrollbar-width: none
+    backface-visibility: hidden
 }
 
 .previewTextArea_efd760::-webkit-scrollbar {
@@ -136222,4 +136239,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.460266cc87ace191b595.css.map*/
+/*# sourceMappingURL=99387.90ebb6108276d317ff9b.css.map*/
