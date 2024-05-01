@@ -25396,8 +25396,7 @@
             "use strict";
             e.exports = {
                 actionColor: "actionColor_db400e",
-                userProfileActivity: "userProfileActivity__0988f",
-                voiceActivity: "voiceActivity__2aa0b"
+                userProfileActivity: "userProfileActivity__0988f"
             }
         },
         677592: function(e) {
@@ -25916,17 +25915,6 @@
                 userTagUsernameNoNickname: "userTagUsernameNoNickname__0513b userTagUsernameBase__2bd24",
                 userTagWithNickname: "userTagWithNickname__0a777 userTag__45349",
                 userText: "userText_c26b46"
-            }
-        },
-        466451: function(e) {
-            "use strict";
-            e.exports = {
-                iconContainer: "iconContainer__17acc",
-                mask: "mask__3b970",
-                speakerIcon: "speakerIcon_be90f6",
-                speakerIconContainer: "speakerIconContainer_a3dbfd",
-                voiceChannelInfo: "voiceChannelInfo_b83d5d",
-                voiceDisplayContainer: "voiceDisplayContainer__7d1df"
             }
         },
         239628: function(e) {
