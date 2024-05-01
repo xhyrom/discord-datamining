@@ -22162,22 +22162,12 @@ span.clanTag_c8f97c {
     background: var(--bg-mod-subtle)
 }
 
-.listDefault__4e3fa .clickable_a2c5ad:hover .fade__3c6be {
-    background: linear-gradient(to right, transparent, var(--background-primary))
-}
-
-.listDefault__4e3fa .clickable_a2c5ad:hover .fade__3c6be:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    background: linear-gradient(to right, transparent, var(--bg-mod-faint))
-}
-
 .listDefault__4e3fa .clickable_a2c5ad:hover .clanTag_c8f97c {
     background: var(--background-accent)
+}
+
+.theme-light .listDefault__4e3fa .clickable_a2c5ad:hover .clanTag_c8f97c {
+    background: var(--bg-mod-strong)
 }
 
 .usernameSpeaking__22f2f,
@@ -28280,4 +28270,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.c595997ae2e6900bafef.css.map*/
+/*# sourceMappingURL=49237.a3833821305a44d0e2bf.css.map*/
