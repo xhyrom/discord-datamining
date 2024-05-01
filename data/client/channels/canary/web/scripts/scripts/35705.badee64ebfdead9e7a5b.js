@@ -36825,7 +36825,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289498", ", Version Hash: ").concat("8dae21faa81832e2872c718861c70cc8bb38e4ce")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289507", ", Version Hash: ").concat("95f0b56b5512d7fb6f3f8a8bdae9bf4dbc56aa3d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87209,8 +87209,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289498", "289498"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289498")), t = 0), t
+                let t = parseInt((e = "289507", "289507"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289507")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -113731,8 +113731,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289498",
-                    versionHash: "8dae21faa81832e2872c718861c70cc8bb38e4ce"
+                    buildNumber: "289507",
+                    versionHash: "95f0b56b5512d7fb6f3f8a8bdae9bf4dbc56aa3d"
                 }
             }
             n.r(t), n.d(t, {
@@ -114935,7 +114935,7 @@
                     renderOverflow: s,
                     className: d,
                     maxLines: _,
-                    overflowWidth: c = 65,
+                    initialOverflowWidth: c = 65,
                     spacing: E = 8
                 } = e, [I, T] = r.useState(() => ({
                     parentWidth: 0,
@@ -114957,14 +114957,18 @@
                 });
                 return r.useLayoutEffect(() => {
                     T(e => {
-                        var n;
-                        let i = [...e.widths];
-                        return null === (n = S.current) || void 0 === n || n.childNodes.forEach((e, t) => {
+                        var n, i, r;
+                        let s = [...e.widths],
+                            a = null !== (r = null === (n = S.current) || void 0 === n ? void 0 : n.childNodes.length) && void 0 !== r ? r : 0,
+                            o = e.overflow.length > 0,
+                            l = e.overflowWidth;
+                        return null === (i = S.current) || void 0 === i || i.childNodes.forEach((e, t) => {
                             let n = e.offsetWidth;
-                            i[t] = n
+                            o && t === a - 1 ? l = n : s[t] = n
                         }), u(t, {
                             ...e,
-                            widths: i
+                            widths: s,
+                            overflowWidth: l
                         })
                     })
                 }, [S, t, T]), (0, i.jsxs)("div", {
@@ -169058,8 +169062,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714572274636",
-                                    build_number: "289498"
+                                    built_at: "1714574426588",
+                                    build_number: "289507"
                                 }
                             },
                             retries: 1
@@ -247041,7 +247045,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8dae21faa81832e2872c718861c70cc8bb38e4ce"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "95f0b56b5512d7fb6f3f8a8bdae9bf4dbc56aa3d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -275569,7 +275573,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289498"
+                                build_number: "289507"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282786,7 +282790,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289498", "289498"), 10);
+                let s = parseInt((n = "289507", "289507"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -310171,4 +310175,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.0c4cc0a1d10b43aa1e32.js.map
+//# sourceMappingURL=35705.badee64ebfdead9e7a5b.js.map
