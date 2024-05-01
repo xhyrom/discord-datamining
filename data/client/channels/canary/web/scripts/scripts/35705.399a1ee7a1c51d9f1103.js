@@ -36826,7 +36826,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289671", ", Version Hash: ").concat("4984176af1c81efc7bd920a9f3e622620e98c190")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289684", ", Version Hash: ").concat("3d0211a6fc0971ef26fab17c9277619f026a053d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -42266,6 +42266,7 @@
                 DELETE_FAVORITES_CATEGORY_CONFIRM: "Remove Category",
                 SERVERS: "Servers",
                 USERS: "Users",
+                HOW_YOU_SIGN_IN: "How you sign into your account",
                 USER: "User",
                 COPY_TEXT: "Copy Text",
                 COPIED_TEXT: "Copied to clipboard.",
@@ -42841,6 +42842,7 @@
                 TWO_FA_WEBAUTHN_ACTION: "Use security key",
                 TWO_FA_WEBAUTHN_SWITCH_TOTP: "Enter a 2FA code instead",
                 TWO_FA_WEBAUTHN_TITLE: "Security Keys",
+                NUM_SECURITY_KEYS: "{count} added",
                 TWO_FA_WEBAUTHN_VIEW_KEYS_TITLE: "Your Keys",
                 TWO_FA_WEBAUTHN_REGISTER_KEY_PLACEHOLDER_NAME: "My Key",
                 TWO_FA_WEBAUTHN_DESCRIPTION: "Add an additional layer of protection to your account with a Security Key.",
@@ -87229,8 +87231,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289671", "289671"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289671")), t = 0), t
+                let t = parseInt((e = "289684", "289684"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289684")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -113737,8 +113739,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289671",
-                    versionHash: "4984176af1c81efc7bd920a9f3e622620e98c190"
+                    buildNumber: "289684",
+                    versionHash: "3d0211a6fc0971ef26fab17c9277619f026a053d"
                 }
             }
             n.r(t), n.d(t, {
@@ -169032,8 +169034,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714594902665",
-                                    build_number: "289671"
+                                    built_at: "1714596374612",
+                                    build_number: "289684"
                                 }
                             },
                             retries: 1
@@ -246939,7 +246941,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "4984176af1c81efc7bd920a9f3e622620e98c190"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3d0211a6fc0971ef26fab17c9277619f026a053d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -275496,7 +275498,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289671"
+                                build_number: "289684"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282713,7 +282715,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "289671", "289671"), 10);
+                let s = parseInt((n = "289684", "289684"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -310110,4 +310112,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.4bcf5be21314ca92f73d.js.map
+//# sourceMappingURL=35705.399a1ee7a1c51d9f1103.js.map
