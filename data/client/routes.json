@@ -3626,7 +3626,11 @@
   },
   "APPLICATIONS_WITH_ASSETS": {
     "url": "/applications-with-assets",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "APPLICATION_OWNER_TRANSFER": {
     "url": "/applications/:param/transfer",
