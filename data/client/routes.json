@@ -3243,7 +3243,10 @@
   },
   "ACTIVITY_LEAVE": {
     "url": "/applications/:param/activities/:param/instances/:param/leave",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "APPLICATION_UPLOAD_ATTACHMENT": {
     "url": "/applications/:param/attachment",
@@ -3993,7 +3996,11 @@
   },
   "GUILD_CLAN_DISCOVERY_INFO": {
     "url": "/discovery/:param/clan",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_SET_CLAN_IDENTITY": {
     "url": "/users/@me/clan",
@@ -4013,7 +4020,10 @@
   },
   "DISABLE_CLAN": {
     "url": "/clan/:param/disable",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "TENOR_ASSET_PATH": {
     "url": "/tenor",
