@@ -36827,7 +36827,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289805", ", Version Hash: ").concat("b809db6ae3e5d4fc686387f2a366a67d3dc7ca48")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289814", ", Version Hash: ").concat("608b92292fc39c268053832e993a4aa7fadd4fc3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87235,8 +87235,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289805", "289805"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289805")), t = 0), t
+                let t = parseInt((e = "289814", "289814"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289814")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -101883,56 +101883,202 @@
         963202: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                isClanGuildExperimentEnabled: function() {
+                    return _
+                },
+                useAnyClanGuildExperimentEnabled: function() {
+                    return c
+                },
+                useClanGuildExperiment: function() {
+                    return d
+                },
+                useClanGuildExperimentDefaultGameId: function() {
+                    return E
+                },
                 useIsInUserClanExperiment: function() {
-                    return s
+                    return u
                 }
             });
             var i = n("818083"),
-                r = n("308083");
-            let a = (0, i.createExperiment)({
-                kind: "user",
-                id: "2024-02_clans",
-                label: "Clans",
-                defaultConfig: {
-                    enableClanCreation: !1,
-                    defaultGameId: null
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enable creation of clan guilds",
-                    config: {
-                        enableClanCreation: !0,
+                r = n("308083"),
+                a = n("981631");
+            let s = (0, i.createExperiment)({
+                    kind: "user",
+                    id: "2024-02_clans",
+                    label: "Clans",
+                    defaultConfig: {
+                        enableClanCreation: !1,
                         defaultGameId: null
-                    }
-                }, {
-                    id: 2,
-                    label: "Enable creation of clan guilds - Valorant",
-                    config: {
-                        enableClanCreation: !0,
-                        defaultGameId: r.VALORANT_ID
-                    }
-                }, {
-                    id: 3,
-                    label: "Enable creation of clan guilds - Genshin Impact",
-                    config: {
-                        enableClanCreation: !0,
-                        defaultGameId: r.GENSHIN_ID
-                    }
-                }]
-            });
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Enable creation of clan guilds",
+                        config: {
+                            enableClanCreation: !0,
+                            defaultGameId: null
+                        }
+                    }, {
+                        id: 2,
+                        label: "Enable creation of clan guilds - Valorant",
+                        config: {
+                            enableClanCreation: !0,
+                            defaultGameId: r.VALORANT_ID
+                        }
+                    }, {
+                        id: 3,
+                        label: "Enable creation of clan guilds - Genshin Impact",
+                        config: {
+                            enableClanCreation: !0,
+                            defaultGameId: r.GENSHIN_ID
+                        }
+                    }]
+                }),
+                o = (0, i.createExperiment)({
+                    kind: "user",
+                    id: "2024-05_clans_valorant_prepilot",
+                    label: "Clans Valorant Prepilot",
+                    defaultConfig: {
+                        enableClanCreation: !1,
+                        defaultGameId: null
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Enable creation of clan guilds - Valorant",
+                        config: {
+                            enableClanCreation: !0,
+                            defaultGameId: r.VALORANT_ID
+                        }
+                    }]
+                }),
+                l = (0, i.createExperiment)({
+                    kind: "user",
+                    id: "2024-05_clans_genshin_prepilot",
+                    label: "Clans Genshin Prepilot",
+                    defaultConfig: {
+                        enableClanCreation: !1,
+                        defaultGameId: null
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Enable creation of clan guilds - Genshin",
+                        config: {
+                            enableClanCreation: !0,
+                            defaultGameId: r.GENSHIN_ID
+                        }
+                    }]
+                });
 
-            function s() {
+            function u() {
                 let {
                     autoTrackExposure: e = !1,
                     disable: t = !1,
                     location: n
-                } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                return a.useExperiment({
+                } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, i = o.useExperiment({
                     location: n
                 }, {
                     autoTrackExposure: e,
                     disable: t
-                }).enableClanCreation
+                }).enableClanCreation, r = l.useExperiment({
+                    location: n
+                }, {
+                    autoTrackExposure: e,
+                    disable: t
+                }).enableClanCreation, a = s.useExperiment({
+                    location: n
+                }, {
+                    autoTrackExposure: e,
+                    disable: t
+                }).enableClanCreation;
+                return i || r || a
+            }
+
+            function d(e, t) {
+                var n, i, r, u, d, _;
+                let c = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
+                    E = o.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: c
+                    }),
+                    I = l.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: c
+                    }),
+                    T = s.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: c
+                    }),
+                    f = null !== (n = null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN_PILOT_GENSHIN)) && void 0 !== n && n && I.enableClanCreation;
+                return {
+                    enableClanCreation: null !== (i = null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN_PILOT_VALORANT)) && void 0 !== i && i && E.enableClanCreation || f || null !== (r = T.enableClanCreation) && void 0 !== r && r,
+                    defaultGameId: null !== (_ = null !== (d = null !== (u = E.defaultGameId) && void 0 !== u ? u : I.defaultGameId) && void 0 !== d ? d : T.defaultGameId) && void 0 !== _ ? _ : null
+                }
+            }
+
+            function _(e, t) {
+                var n, i, r;
+                let u = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
+                    d = o.getCurrentConfig({
+                        location: t
+                    }, {
+                        autoTrackExposure: u
+                    }),
+                    _ = l.getCurrentConfig({
+                        location: t
+                    }, {
+                        autoTrackExposure: u
+                    }),
+                    c = s.getCurrentConfig({
+                        location: t
+                    }, {
+                        autoTrackExposure: u
+                    }),
+                    E = null !== (n = null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN_PILOT_GENSHIN)) && void 0 !== n && n && _.enableClanCreation;
+                return null !== (i = null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN_PILOT_VALORANT)) && void 0 !== i && i && d.enableClanCreation || E || null !== (r = c.enableClanCreation) && void 0 !== r && r
+            }
+
+            function c(e, t) {
+                let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
+                    i = o.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: n
+                    }),
+                    r = l.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: n
+                    }),
+                    u = s.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: n
+                    }),
+                    d = e.some(e => e.hasFeature(a.GuildFeatures.CLAN_PILOT_GENSHIN)) && r.enableClanCreation;
+                return e.some(e => e.hasFeature(a.GuildFeatures.CLAN_PILOT_VALORANT)) && i.enableClanCreation || d || u.enableClanCreation
+            }
+
+            function E(e) {
+                var t, n, i;
+                let r = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
+                    a = o.useExperiment({
+                        location: e
+                    }, {
+                        autoTrackExposure: r
+                    }),
+                    u = l.useExperiment({
+                        location: e
+                    }, {
+                        autoTrackExposure: r
+                    }),
+                    d = s.useExperiment({
+                        location: e
+                    }, {
+                        autoTrackExposure: r
+                    });
+                return null !== (i = null !== (n = null !== (t = a.defaultGameId) && void 0 !== t ? t : u.defaultGameId) && void 0 !== n ? n : d.defaultGameId) && void 0 !== i ? i : null
             }
         },
         645896: function(e, t, n) {
@@ -113745,8 +113891,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289805",
-                    versionHash: "b809db6ae3e5d4fc686387f2a366a67d3dc7ca48"
+                    buildNumber: "289814",
+                    versionHash: "608b92292fc39c268053832e993a4aa7fadd4fc3"
                 }
             }
             n.r(t), n.d(t, {
@@ -169040,8 +169186,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714611049495",
-                                    build_number: "289805"
+                                    built_at: "1714612805341",
+                                    build_number: "289814"
                                 }
                             },
                             retries: 1
@@ -246928,7 +247074,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b809db6ae3e5d4fc686387f2a366a67d3dc7ca48"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "608b92292fc39c268053832e993a4aa7fadd4fc3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -275485,7 +275631,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289805"
+                                build_number: "289814"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282702,7 +282848,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "289805", "289805"), 10);
+                let a = parseInt((n = "289814", "289814"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -310102,4 +310248,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.b97d63cafd02142b1f54.js.map
+//# sourceMappingURL=35705.9268b50332a57d7f5057.js.map
