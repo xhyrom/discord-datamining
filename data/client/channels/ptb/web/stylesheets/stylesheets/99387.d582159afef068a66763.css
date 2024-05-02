@@ -45052,6 +45052,7 @@ img.thumbnail__18ece {
 
 .popoutThumbnailContainer_b66fac {
     width: 72px;
+    height: 72px;
     text-align: center
 }
 
@@ -45136,6 +45137,10 @@ img.thumbnail__18ece {
     align-items: center;
     margin: 0 -4px;
     cursor: pointer
+}
+
+.popoutStackedAvatar__339c9 {
+    margin-left: -6px
 }
 
 .container__16e95 {
@@ -136651,4 +136656,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c0e205b4b4a7e2aaf76c.css.map*/
+/*# sourceMappingURL=99387.d582159afef068a66763.css.map*/
