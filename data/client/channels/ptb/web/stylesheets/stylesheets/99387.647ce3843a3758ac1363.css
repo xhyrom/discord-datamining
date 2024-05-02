@@ -35064,13 +35064,33 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     position: absolute;
     width: 100%;
     height: 4px;
-    background-color: var(--brand-500)
+    background-color: var(--brand-500);
+    transition: background-color.25s
+}
+
+.customProgressStepFill_e1a0a9 {
+    background-color: var(--custom-clan-bg)
 }
 
 .buttonsContainer_a90621 {
     display: flex;
     align-items: end;
     justify-content: space-between
+}
+
+.customButton__03f9e {
+    background-color: var(--custom-clan-bg);
+    color: var(--custom-clan-text);
+    transition: background-color.25s
+}
+
+.customButton__03f9e:hover,
+.customButton__03f9e:focus {
+    background-color: var(--custom-clan-hover-bg, hsl(var(--black-500-hsl)/.3))
+}
+
+.customButton__03f9e:active {
+    background-color: var(--custom-clan-active-bg, hsl(var(--black-500-hsl)/.35))
 }
 
 .overviewSidebar__995aa {
@@ -136573,4 +136593,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7a5bc6aa315f00ee26b9.css.map*/
+/*# sourceMappingURL=99387.647ce3843a3758ac1363.css.map*/
