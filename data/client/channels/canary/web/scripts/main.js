@@ -9389,9 +9389,10 @@
                 r = n("570140"),
                 a = n("802098"),
                 s = n("695346"),
-                o = n("596401");
+                o = n("981631"),
+                l = n("596401");
 
-            function l() {
+            function u() {
                 let e = new Date().getMinutes();
                 return "x=".concat(Math.floor(e / 5))
             }
@@ -9419,20 +9420,28 @@
                     r.default.dispatch({
                         type: "CHANGE_LOG_SET_OVERRIDE",
                         id: e
+                    }), null != e && this.sendChangelogMessage(e)
+                },
+                sendChangelogMessage(e) {
+                    i.HTTP.post({
+                        url: o.Endpoints.CHANGELOG_MESSAGES,
+                        body: {
+                            changelog_id: e
+                        }
                     })
                 },
                 fetchChangelogConfig() {
-                    let e = o.ChangelogPlatforms.DESKTOP;
+                    let e = l.ChangelogPlatforms.DESKTOP;
                     return i.HTTP.get({
-                        url: "https://cdn.discordapp.com/changelogs/config_".concat(e, ".json?").concat(l())
+                        url: "https://cdn.discordapp.com/changelogs/config_".concat(e, ".json?").concat(u())
                     })
                 },
                 async fetchChangelog(e, t) {
                     if (null != a.default.getChangelog(e, t)) return null;
-                    let n = o.ChangelogPlatforms.DESKTOP;
+                    let n = l.ChangelogPlatforms.DESKTOP;
                     try {
                         let a = await i.HTTP.get({
-                            url: "https://cdn.discordapp.com/changelogs/".concat(n, "/").concat(e, "/").concat(t, ".json?").concat(l())
+                            url: "https://cdn.discordapp.com/changelogs/".concat(n, "/").concat(e, "/").concat(t, ".json?").concat(u())
                         });
                         return r.default.dispatch({
                             type: "CHANGE_LOG_FETCH_SUCCESS",
@@ -36992,7 +37001,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290121", ", Version Hash: ").concat("a5ccc2407ae9d4e1d6eabc83db72fa5398b720b1")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290131", ", Version Hash: ").concat("313ee29da7dddad472eedc09777f85236fed65ec")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55460,8 +55469,8 @@
                 MEMBER_LIST_CONTENT_FEED_NEW_PLAYER: "New Player",
                 MEMBER_LIST_CONTENT_FEED_WATCHED_MEDIA: "Watched **{mediaTitle}**",
                 MEMBER_LIST_CONTENT_FEED_USER_WATCHED_MEDIA: "{userName} watched **{mediaTitle}**: {episodeDescription}",
-                MEMBER_LIST_CONTENT_FEED_TOP_GAME: "Top game",
-                MEMBER_LIST_CONTENT_FEED_TOP_GAME_WEEK_POPOUT: "{userName}'s top game this week: **{gameName}**",
+                MEMBER_LIST_CONTENT_FEED_TOP_GAME: "Most played",
+                MEMBER_LIST_CONTENT_FEED_TOP_GAME_WEEK_POPOUT: "{userName}'s most played this week: **{gameName}**",
                 MEMBER_LIST_CONTENT_FEED_WATCH_SEASON_EPISODE: "S{seasonNum}E{episodeNum}",
                 MEMBER_LIST_CONTENT_FEED_RESURRECTED: "Returning",
                 MEMBER_LIST_CONTENT_FEED_RESURRECTED_AFTER: "Returning after {months, plural, =-1 {} =0 {} other {{months} months}}{weeks, plural, =-1 {} =0 {} other {{weeks} weeks}}{days, plural, =-1 {} =0 {} other {{days} days}}",
@@ -87181,6 +87190,26 @@
             let _ = "CHANGELOG_MODAL";
             (o = i || (i = {}))[o.DESKTOP = 0] = "DESKTOP", o[o.MOBILE = 1] = "MOBILE", (l = r || (r = {}))[l.YOUTUBE_VIDEO_ID = 0] = "YOUTUBE_VIDEO_ID", l[l.IMAGE = 1] = "IMAGE", (u = a || (a = {}))[u.NOT_LOADED = 0] = "NOT_LOADED", u[u.LOADED_SUCCESS = 1] = "LOADED_SUCCESS", u[u.LOADED_FAILURE = 2] = "LOADED_FAILURE", (d = s || (s = {})).SPECIAL = "special", d.STANDARD = "standard"
         },
+        839627: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            let i = (0, n("818083").createExperiment)({
+                kind: "user",
+                id: "2024-04_changelog",
+                label: "New Changelog Messages",
+                defaultConfig: {
+                    canReceiveMessage: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Receive changelog updates as messages",
+                    config: {
+                        canReceiveMessage: !0
+                    }
+                }]
+            });
+            t.default = i
+        },
         688798: function(e, t, n) {
             "use strict";
             n.r(t), n("47120");
@@ -87189,11 +87218,12 @@
                 a = n("147913"),
                 s = n("706454"),
                 o = n("709054"),
-                l = n("802098"),
-                u = n("128014"),
-                d = n("163379");
+                l = n("839627"),
+                u = n("802098"),
+                d = n("128014"),
+                _ = n("163379");
 
-            function _(e, t, n) {
+            function c(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -87201,40 +87231,48 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            class c extends a.default {
+            class E extends a.default {
                 constructor(...e) {
-                    super(...e), _(this, "actions", {
+                    super(...e), c(this, "actions", {
                         POST_CONNECTION_OPEN: e => this.handleConnectionOpen(e)
-                    }), _(this, "handleConnectionOpen", async e => {
-                        let t = await r.default.fetchChangelogConfig(),
-                            n = t.body,
-                            a = function(e, t) {
+                    }), c(this, "handleConnectionOpen", async e => {
+                        let {
+                            canReceiveMessage: t
+                        } = l.default.getCurrentConfig({
+                            location: "changelog_manager"
+                        }, {
+                            autoTrackExposure: !1
+                        });
+                        if (t) return;
+                        let n = await r.default.fetchChangelogConfig(),
+                            a = n.body,
+                            c = function(e, t) {
                                 let n = 0,
                                     i = null;
                                 for (var [r, {
                                         min_version: a
                                     }] of Object.entries(e)) a <= t && a > n && (n = a, i = r);
                                 return i
-                            }(n, (0, u.getClientVersionForChangelog)());
+                            }(a, (0, d.getClientVersionForChangelog)());
                         if (i.default.dispatch({
                                 type: "CHANGE_LOG_SET_CONFIG",
-                                config: t.body,
-                                latestChangelogId: a
-                            }), null == a || !0 !== n[a].show_on_startup) return;
-                        let _ = l.default.lastSeenChangelogId(),
-                            c = l.default.lastSeenChangelogDate();
-                        if (null != _ && 0 >= o.default.compare(a, _)) return;
-                        let E = await r.default.fetchChangelog(a, s.default.locale);
-                        if (null != E) {
-                            if (null == c || null == l.default.lastSeenChangelogDate()) {
-                                r.default.markChangelogAsSeen(a, E.date);
+                                config: n.body,
+                                latestChangelogId: c
+                            }), null == c || !0 !== a[c].show_on_startup) return;
+                        let E = u.default.lastSeenChangelogId(),
+                            I = u.default.lastSeenChangelogDate();
+                        if (null != E && 0 >= o.default.compare(c, E)) return;
+                        let T = await r.default.fetchChangelog(c, s.default.locale);
+                        if (null != T) {
+                            if (null == I || null == u.default.lastSeenChangelogDate()) {
+                                r.default.markChangelogAsSeen(c, T.date);
                                 return
-                            }!l.default.isLocked() && new Date(E.date) > new Date(c) && (0, d.openChangelog)()
+                            }!u.default.isLocked() && new Date(T.date) > new Date(I) && (0, _.openChangelog)()
                         }
                     })
                 }
             }
-            t.default = new c
+            t.default = new E
         },
         802098: function(e, t, n) {
             "use strict";
@@ -87381,8 +87419,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290121", "290121"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290121")), t = 0), t
+                let t = parseInt((e = "290131", "290131"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290131")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115091,8 +115129,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290121",
-                    versionHash: "a5ccc2407ae9d4e1d6eabc83db72fa5398b720b1"
+                    buildNumber: "290131",
+                    versionHash: "313ee29da7dddad472eedc09777f85236fed65ec"
                 }
             }
             n.r(t), n.d(t, {
@@ -170289,8 +170327,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714684202328",
-                                    build_number: "290121"
+                                    built_at: "1714685360076",
+                                    build_number: "290131"
                                 }
                             },
                             retries: 1
@@ -248268,7 +248306,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a5ccc2407ae9d4e1d6eabc83db72fa5398b720b1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "313ee29da7dddad472eedc09777f85236fed65ec"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276927,7 +276965,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290121"
+                                build_number: "290131"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284254,7 +284292,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290121", "290121"), 10);
+                let a = parseInt((n = "290131", "290131"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -311719,4 +311757,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.7eb12eaa583b4ebe5478.js.map
+//# sourceMappingURL=35705.93b4e330564c2435ecc0.js.map
