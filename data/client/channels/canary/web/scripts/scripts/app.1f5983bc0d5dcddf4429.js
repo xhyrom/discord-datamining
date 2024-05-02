@@ -7119,6 +7119,8 @@
             "use strict";
             e.exports = {
                 actions: "actions_a287f1",
+                addClan: "addClan__3be76",
+                buttonPill: "buttonPill__8d5fb",
                 chevron: "chevron_d7e08c",
                 filterPill: "filterPill__53234",
                 filterPillActive: "filterPillActive__0fdb1",
@@ -7313,6 +7315,7 @@
         258036: function(e) {
             "use strict";
             e.exports = {
+                browseButton: "browseButton__17d35",
                 buttonWithSelect: "buttonWithSelect_eaaa35",
                 cardsContainer: "cardsContainer__59327",
                 clanCard: "clanCard_ea2802",
@@ -7329,6 +7332,9 @@
                 clanEnvelope: "clanEnvelope__0b99c",
                 clanEnvelopeBottom: "clanEnvelopeBottom_e5cdee",
                 clanEnvelopeTop: "clanEnvelopeTop_bf09a8",
+                reserveButton: "reserveButton_c5765e",
+                spacer: "spacer__960c0",
+                upsellBackButton: "upsellBackButton__339ae",
                 upsellButton: "upsellButton__6cfb7",
                 upsellCtaContainer: "upsellCtaContainer__5221e",
                 upsellDetail: "upsellDetail__401db",
@@ -7336,6 +7342,7 @@
                 upsellDetails: "upsellDetails_dbe31a",
                 upsellIcon: "upsellIcon__05e46",
                 upsellSelect: "upsellSelect_e29580",
+                upsellStaticHeader: "upsellStaticHeader__04b50",
                 upsellTitle: "upsellTitle__75ee7"
             }
         },

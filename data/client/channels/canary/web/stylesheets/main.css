@@ -46114,19 +46114,31 @@ img.thumbnail__18ece {
 
 .toolbar__2fcb0 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 12px 16px;
     border-bottom: 1px solid var(--border-subtle)
 }
 
-.preferences__16c1a,
-.actions_a287f1 {
+.preferences__16c1a {
     display: flex;
     gap: 8px
 }
 
-.filterPill__53234 {
+.actions_a287f1 {
+    display: flex;
+    flex: 0 0 40px;
+    gap: 8px
+}
+
+.addClan__3be76 {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+.filterPill__53234,
+.buttonPill__8d5fb {
     border-radius: 16px;
     padding: 8px 12px;
     height: 32px;
@@ -46138,12 +46150,23 @@ img.thumbnail__18ece {
 }
 
 .filterPill__53234:hover,
-.filterPill__53234:active {
+.filterPill__53234:active,
+.buttonPill__8d5fb:hover,
+.buttonPill__8d5fb:active {
     border-color: var(--border-strong)
 }
 
-.filterPill__53234:active {
+.filterPill__53234:active,
+.buttonPill__8d5fb:active {
     transform: translatey(2px)scale(.98)
+}
+
+.buttonPill__8d5fb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--interactive-active);
+    cursor: pointer
 }
 
 .filterPillActive__0fdb1 {
@@ -46221,7 +46244,8 @@ img.thumbnail__18ece {
     max-width: 200px
 }
 
-.theme-dark .filterPill__53234 {
+.theme-dark .filterPill__53234,
+.theme-dark .buttonPill__8d5fb {
     background-color: hsl(var(--primary-900-hsl)/.8)
 }
 
@@ -46230,6 +46254,7 @@ img.thumbnail__18ece {
 }
 
 .theme-light .filterPill__53234,
+.theme-light .buttonPill__8d5fb,
 .theme-light .filterTooltip_d6d060 {
     background-color: hsl(var(--white-500-hsl)/.8)
 }
@@ -47068,15 +47093,6 @@ div:has(>div>.modal__06f49) {
     color: var(--status-danger)
 }
 
-.buttonWrapper_f57f6c {
-    box-shadow: var(--shadow-high)
-}
-
-.button_cbc314 {
-    min-width: 240px;
-    border-radius: 8px
-}
-
 @value baseClanCardWidth 242px;
 @value baseClanCardHeight 400px;
 @value envelopeWidth calc(242px + 2px);
@@ -47222,7 +47238,8 @@ div:has(>div>.modal__06f49) {
 .upsellButton__6cfb7 {
     display: flex;
     gap: 16px;
-    z-index: 1000
+    z-index: 1000;
+    align-items: center
 }
 
 .buttonWithSelect_eaaa35 {
@@ -47235,6 +47252,46 @@ div:has(>div>.modal__06f49) {
     width: 288px;
     border-radius: 8px;
     color: var(--header-secondary)
+}
+
+.upsellStaticHeader__04b50 {
+    position: absolute;
+    top: 0;
+    padding: 16px;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-subtle)
+}
+
+.upsellBackButton__339ae {
+    color: var(--interactive-normal);
+    cursor: pointer;
+    margin: 0 16px
+}
+
+.upsellBackButton__339ae:hover {
+    color: var(--interactive-hover)
+}
+
+.reserveButton_c5765e {
+    background-color: var(--yellow-230);
+    box-shadow: var(--shadow-high);
+    border-radius: 8px
+}
+
+.browseButton__17d35 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--interactive-active);
+    cursor: pointer;
+    height: auto;
+    border-radius: 8px
+}
+
+.spacer__960c0 {
+    display: flex;
+    color: var(--text-normal)
 }
 
 .container__5c0c5 {
@@ -47273,6 +47330,15 @@ div:has(>div>.modal__06f49) {
 
 . .footerButtons {
     margin-top: 12px
+}
+
+.buttonWrapper_f57f6c {
+    box-shadow: var(--shadow-high)
+}
+
+.button_cbc314 {
+    min-width: 240px;
+    border-radius: 8px
 }
 
 @value baseClanCardWidth 240px;
@@ -136600,4 +136666,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7dec26c9c26929cf2093.css.map*/
+/*# sourceMappingURL=99387.ae8292dbf2a88ad63fad.css.map*/
