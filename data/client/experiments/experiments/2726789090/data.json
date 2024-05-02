@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-05_clans_general",
+    "label": "Clans General",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show clan tags"
+    ],
+    "hash": 2726789090,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

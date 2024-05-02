@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-05_clans_valorant_pilot",
+    "label": "Clans Valorant Pilot",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show clan discovery (Valorant)"
+    ],
+    "hash": 3272697562,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
