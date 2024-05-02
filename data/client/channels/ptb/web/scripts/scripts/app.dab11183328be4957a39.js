@@ -6753,6 +6753,12 @@
                 triggersEnable: "triggersEnable__7ab80"
             }
         },
+        696310: function(e) {
+            "use strict";
+            e.exports = {
+                panel: "panel_fc65ac"
+            }
+        },
         867952: function(e) {
             "use strict";
             e.exports = {
