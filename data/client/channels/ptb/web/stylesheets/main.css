@@ -18580,7 +18580,7 @@ span.clanTag_f4aadc {
 }
 
 .activityCardContainer__6615c:hover {
-    border: 1px solid var(--border-subtle);
+    outline: 1px solid var(--border-subtle);
     box-shadow: var(--shadow-low-hover)
 }
 
@@ -23895,10 +23895,15 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     margin-top: 10px
 }
 
-.actionsSimplifiedProfile__448de,
 .actionsProfile_e93ceb,
 .actionsProfileV2_eea61b {
     margin-left: 20px;
+    margin-top: 0;
+    flex: 1 1 auto
+}
+
+.actionsSimplifiedProfile__448de {
+    margin-left: 10px;
     margin-top: 0;
     flex: 1 1 auto
 }
@@ -93690,96 +93695,6 @@ div.content_aac020 {
     margin-bottom: 16px
 }
 
-.buttonsContainer__4ae02 {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-left: 12px;
-    margin-top: 12px
-}
-
-.panel_afebc2 {
-    display: flex;
-    flex-direction: column
-}
-
-.toolbar__6cbc9 {
-    border-bottom: 1px solid var(--background-tertiary);
-    height: 34px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0 4px
-}
-
-.searchBar__8f54c {
-    flex: 1
-}
-
-.tableContainer_f6af3f {
-    flex: 1;
-    min-height: 0
-}
-
-.storeNameColumn_bb14ce {
-    flex: 1
-}
-
-.subPanel_bac3d4 {
-    display: flex;
-    flex-direction: column
-}
-
-.subPanelHeaderBar__128d9 {
-    flex: 0 0 auto
-}
-
-.inspectorContainer__0ef82 {
-    background: var(--background-secondary);
-    padding: 8px;
-    flex: 1
-}
-
-.container__85c4f {
-    background: var(--background-primary);
-    color: var(--text-normal);
-    position: relative
-}
-
-.resizeHandle__85b1a {
-    position: absolute;
-    left: 0;
-    cursor: ew-resize;
-    height: 100%;
-    width: 8px;
-    z-index: 1
-}
-
-.sidebarContent__21fbc {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    border-left: 1px solid var(--background-tertiary)
-}
-
-.mobileHeaderCollapsed__2fd63 {
-    cursor: pointer
-}
-
-.mobileContainerExpanded__4a499 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 9999999999999
-}
-
-.layerContainer__5e342 {
-    right: 0
-}
-
 .header_b730a7 {
     padding: 16px 24px 0;
     flex-grow: 0
@@ -125039,6 +124954,111 @@ html .invoiceCancelRow__6ff3e {
     top: 16px
 }
 
+.datePicker_c069af {
+    border-radius: 5px;
+    background-color: var(--input-background);
+    color: var(--text-muted);
+    fill: var(--text-muted);
+    padding: 10px;
+    font-size: inherit;
+    font-weight: inherit;
+    border: 0
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(.6)
+}
+
+.buttonsContainer__4ae02 {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-left: 12px;
+    margin-top: 12px
+}
+
+.panel_afebc2 {
+    display: flex;
+    flex-direction: column
+}
+
+.toolbar__6cbc9 {
+    border-bottom: 1px solid var(--background-tertiary);
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 4px
+}
+
+.searchBar__8f54c {
+    flex: 1
+}
+
+.tableContainer_f6af3f {
+    flex: 1;
+    min-height: 0
+}
+
+.storeNameColumn_bb14ce {
+    flex: 1
+}
+
+.subPanel_bac3d4 {
+    display: flex;
+    flex-direction: column
+}
+
+.subPanelHeaderBar__128d9 {
+    flex: 0 0 auto
+}
+
+.inspectorContainer__0ef82 {
+    background: var(--background-secondary);
+    padding: 8px;
+    flex: 1
+}
+
+.container__85c4f {
+    background: var(--background-primary);
+    color: var(--text-normal);
+    position: relative
+}
+
+.resizeHandle__85b1a {
+    position: absolute;
+    left: 0;
+    cursor: ew-resize;
+    height: 100%;
+    width: 8px;
+    z-index: 1
+}
+
+.sidebarContent__21fbc {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-left: 1px solid var(--background-tertiary)
+}
+
+.mobileHeaderCollapsed__2fd63 {
+    cursor: pointer
+}
+
+.mobileContainerExpanded__4a499 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999999999999
+}
+
+.layerContainer__5e342 {
+    right: 0
+}
+
 .item_aac02a {
     position: relative
 }
@@ -136666,4 +136686,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ae8292dbf2a88ad63fad.css.map*/
+/*# sourceMappingURL=99387.5894369edca28996bf29.css.map*/

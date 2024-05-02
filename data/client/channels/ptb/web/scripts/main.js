@@ -36827,7 +36827,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289872", ", Version Hash: ").concat("07edfd4429187efd736977373cbb2c029936a0bb")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289888", ", Version Hash: ").concat("e3f77a8f711978379665f143090f40a5889373d5")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55395,14 +55395,8 @@
                 GUILD_POPOUT_ACTIVITY_EVENT_LOCATION: "Event in",
                 GUILD_POPOUT_ACTIVITY_EVENT_LOCATION_A11Y: "Event in {location}",
                 GUILD_POPOUT_ACTIVITY_EVENT_CREATED_BY: "Created by {creatorName}",
-                GUILD_POPOUT_ACTIVITY_USERS_1: "!!{username}!! is live",
-                GUILD_POPOUT_ACTIVITY_USERS_1_N: "!!{a}!! and {n, plural, one {{n} other} other {{n} others}} are live",
-                GUILD_POPOUT_ACTIVITY_USERS_2: "!!{a}!! and !!{b}!! are live",
-                GUILD_POPOUT_ACTIVITY_USERS_2_N: "!!{a}!!, !!{b}!!, and {n, plural, one {{n} other} other {{n} others}} are live",
-                GUILD_POPOUT_ACTIVITY_USERS_3: "!!{a}!!, !!{b}!!, and !!{c}!! are live",
-                GUILD_POPOUT_ACTIVITY_USERS_3_N: "!!{a}!!, !!{b}!!, !!{c}!!, and {n, plural, one {{n} other} other {{n} others}} are live",
-                GUILD_POPOUT_ACTIVITY_USERS_N: "{n, plural, one {{n} person} other {{n} people}} are live",
-                GUILD_POPOUT_ACTIVITY_VOICE: "In voice",
+                GUILD_POPOUT_ACTIVITY_STREAMER: "!!{username}!! is streaming",
+                GUILD_POPOUT_ACTIVITY_STREAMERS: "{streamerCount} people are streaming",
                 GUILD_POPOUT_ACTIVITY_HANGOUT_CARD_ARIA: "{users, plural, one {{users} person is} other {{users} people are}} hanging out in !!{channelName}!!",
                 GUILD_POPOUT_ACTIVITY_EMBEDDED_ACTIVITY_CARD_ARIA: "{users, plural, one {{users} person is} other {{users} people are}} playing !!{gameName}!! in !!{channelName}!!",
                 GUILD_POPOUT_ACTIVITY_EVENT_CARD_ARIA: "!!{eventName}!! is happening now",
@@ -55410,7 +55404,8 @@
                 GUILD_POPOUT_VIEWING_AS_ROLES: "You are viewing as roles. Notifications may be in channels you can’t see. [View role settings](onClick)",
                 GUILD_POPOUT_JOINED: "Joined",
                 GUILD_POPOUT_EMPTY_PROMPT_HEADER: "No one's in voice yet",
-                GUILD_POPOUT_EMPTY_PROMPT_BODY: "Voice channels are for hanging out. When you're ready to talk, just hop in."
+                GUILD_POPOUT_EMPTY_PROMPT_BODY: "Voice channels are for hanging out. When you're ready to talk, just hop in.",
+                GUILD_POPOUT_EMPTY_PROMPT_ARIA: "Hang out in !!{channelName}!!"
             })
         },
         924658: function(e) {
@@ -65390,36 +65385,39 @@
                 return t = e.type, [i.ChannelTypes.GUILD_TEXT, i.ChannelTypes.GROUP_DM, i.ChannelTypes.DM].includes(t)
             }
 
-            function _(e, t) {
+            function _(e, t, n) {
                 if (null == e) return !1;
-                let n = d(e),
-                    i = o.default.can(l.Permissions.USE_EMBEDDED_ACTIVITIES, e);
-                return (null == e ? void 0 : e.guild_id) != null ? i && n : u.getCurrentConfig({
-                    location: t
+                let i = d(e),
+                    r = o.default.can(l.Permissions.USE_EMBEDDED_ACTIVITIES, e),
+                    a = r && o.default.can(l.Permissions.SEND_MESSAGES | l.Permissions.USE_APPLICATION_COMMANDS, e);
+                return (null == e ? void 0 : e.guild_id) == null ? u.getCurrentConfig({
+                    location: n
                 }, {
                     autoTrackExposure: !0
-                }).activitiesInTextEnabled && n
+                }).activitiesInTextEnabled && i : t ? a && i : r && i
             }
 
-            function c(e, t) {
+            function c(e, t, n) {
                 let {
-                    isActivitiesInTextEnabledForChannelType: n,
-                    channelGuildId: i,
-                    hasPermission: a
+                    isActivitiesInTextEnabledForChannelType: i,
+                    channelGuildId: a,
+                    hasPermission: _
                 } = (0, r.useStateFromStoresObject)([s.default, o.default], () => {
-                    let t = s.default.getChannel(e);
+                    let n = s.default.getChannel(e),
+                        i = o.default.can(l.Permissions.USE_EMBEDDED_ACTIVITIES, n),
+                        r = i && o.default.can(l.Permissions.SEND_MESSAGES | l.Permissions.USE_APPLICATION_COMMANDS, n);
                     return {
-                        isActivitiesInTextEnabledForChannelType: d(t),
-                        channelGuildId: null == t ? void 0 : t.guild_id,
-                        hasPermission: o.default.can(l.Permissions.USE_EMBEDDED_ACTIVITIES, t)
+                        isActivitiesInTextEnabledForChannelType: d(n),
+                        channelGuildId: null == n ? void 0 : n.guild_id,
+                        hasPermission: t ? r : i
                     }
-                }), _ = null != i, c = u.useExperiment({
-                    location: t
+                }), c = null != a, E = u.useExperiment({
+                    location: n
                 }, {
-                    autoTrackExposure: !_,
-                    disable: _
+                    autoTrackExposure: !c,
+                    disable: c
                 });
-                return _ ? a && n : c.activitiesInTextEnabled && n
+                return c ? _ && i : E.activitiesInTextEnabled && i
             }
 
             function E(e, t) {
@@ -67298,7 +67296,7 @@
                             channelId: m.id,
                             bypassChangeModal: null != n
                         })) return !1
-                } else if (!(0, o.isActivitiesInTextEnabled)(m, "joinEmbeddedActivity") || !C) return !1;
+                } else if (!(0, o.isActivitiesInTextEnabled)(m, !1, "joinEmbeddedActivity") || !C) return !1;
                 return (0, E.default)(N, f), (0, l.startEmbeddedActivity)(f, t, A), (0, c.default)({
                     type: T.AnalyticsGameOpenTypes.JOIN,
                     userId: O.id,
@@ -67493,7 +67491,7 @@
                             channelId: L,
                             bypassChangeModal: null != C
                         })) return !1
-                } else if (!(0, _.isActivitiesInTextEnabled)(b, "handleStartEmbeddedActivity") || !B) return !1;
+                } else if (!(0, _.isActivitiesInTextEnabled)(b, !0, "handleStartEmbeddedActivity") || !B) return !1;
                 return E.startEmbeddedActivity(L, U.id, M), (0, m.default)(v, L), (0, A.default)({
                     type: O.AnalyticsGameOpenTypes.LAUNCH,
                     userId: P.id,
@@ -67525,7 +67523,7 @@
                     channelId: t,
                     SelectedChannelStore: n,
                     ChannelStore: i
-                } = e, r = i.getChannel(t), a = (0, s.isActivitiesInTextEnabled)(r, "isActivityInTextChannel");
+                } = e, r = i.getChannel(t), a = (0, s.isActivitiesInTextEnabled)(r, !1, "isActivityInTextChannel");
                 return !!((null == r ? void 0 : r.type) === l.ChannelTypes.GUILD_TEXT && a || null != r && r.isPrivate() && a && null == n.getVoiceChannelId()) || !1
             }
 
@@ -87238,8 +87236,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289872", "289872"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289872")), t = 0), t
+                let t = parseInt((e = "289888", "289888"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289888")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -113937,8 +113935,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289872",
-                    versionHash: "07edfd4429187efd736977373cbb2c029936a0bb"
+                    buildNumber: "289888",
+                    versionHash: "e3f77a8f711978379665f143090f40a5889373d5"
                 }
             }
             n.r(t), n.d(t, {
@@ -151540,7 +151538,7 @@
                     },
                     async open(e, t, i, r) {
                         var a;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("85093"), n.e("56630"), n.e("58227"), n.e("43643"), n.e("85552"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("67582"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("6085")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("56630"), n.e("58227"), n.e("43643"), n.e("85093"), n.e("85552"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("67582"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("6085")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         a.default.dispatch({
@@ -153271,12 +153269,14 @@
                     onClick: t,
                     disabled: n,
                     inCall: i
-                } = e, r = i ? Z.default.Messages.GUILD_POPOUT_JOINED : Z.default.Messages.JOIN;
+                } = e, r = i ? Z.default.Messages.GUILD_POPOUT_JOINED : Z.default.Messages.JOIN, o = s.useCallback(e => {
+                    e.stopPropagation(), t()
+                }, [t]);
                 return (0, a.jsx)(d.Button, {
                     size: d.Button.Sizes.SMALL,
                     color: d.Button.Colors.GREEN,
                     disabled: n,
-                    onClick: t,
+                    onClick: o,
                     className: X.joinButton,
                     children: r
                 })
@@ -153294,7 +153294,7 @@
                     totalUsers: T,
                     usersToShow: f,
                     othersCount: S
-                } = (0, W.useGetActivityUsers)(n, r, t), h = (0, c.useGetOrFetchApplication)(i), {
+                } = (0, W.useGetCardUsers)(n, r, t), h = (0, c.useGetOrFetchApplication)(i), {
                     needSubscriptionToAccess: m
                 } = (0, A.default)(null != t ? t : void 0), N = (0, u.useStateFromStores)([b.default], () => b.default.isInChannel(t)), p = s.useCallback(() => {
                     (0, v.transitionToGuild)(r, t)
@@ -153351,7 +153351,7 @@
                     othersCount: N,
                     streamUserIds: p,
                     streamerUsersText: O
-                } = (0, W.useGetActivityUsers)(c, r, _), R = s.useCallback(() => {
+                } = (0, W.useGetCardUsers)(c, r, _), R = s.useCallback(() => {
                     (0, v.transitionToGuild)(r, _)
                 }, [_, r]), C = s.useCallback(() => {
                     null != I && E.default.handleVoiceConnect({
@@ -153462,7 +153462,9 @@
                 return (0, a.jsxs)(d.ClickableContainer, {
                     onClick: T,
                     tag: "div",
-                    "aria-label": "",
+                    "aria-label": Z.default.Messages.GUILD_POPOUT_EMPTY_PROMPT_ARIA.format({
+                        channelName: null == _ ? void 0 : _.name
+                    }),
                     className: l()(X.emptyActivityCardContainer, X.activityCardContainer),
                     children: [(0, a.jsx)(F.default, {
                         width: 12,
@@ -153494,7 +153496,7 @@
                         isUserLurking: e,
                         isUnverifiedAccount: !y.default.getCheck(t.id).canChat
                     }
-                }), l = (0, W.useGuildActivity)(t), _ = s.useMemo(() => l.map(e => {
+                }), l = (0, W.useGuildPopoutCards)(t), _ = s.useMemo(() => l.map(e => {
                     if ("hangout" === e.category) return (0, a.jsx)(ee, {
                         hangoutActivity: e,
                         guildId: t.id,
@@ -153637,10 +153639,10 @@
         718582: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                useGetActivityUsers: function() {
+                useGetCardUsers: function() {
                     return D
                 },
-                useGuildActivity: function() {
+                useGuildPopoutCards: function() {
                     return L
                 }
             }), n("390547"), n("47120"), n("627341");
@@ -153746,7 +153748,7 @@
                     }, [n, e.afkChannelId, t]),
                     N = (0, s.useStateFromStores)([c.default], () => c.default.hasConsented(R.Consents.PERSONALIZATION)),
                     C = (0, s.useStateFromStores)([f.default], () => f.default.getUserAffinities());
-                if (0 === S.length && 0 === r.length) return 0 === n.length ? [] : n.slice(0, 3).map(e => ({
+                if (0 === S.length && 0 === r.length) return 0 === n.length ? [] : n.slice(0, 1).map(e => ({
                     category: O.CardCategory.EMPTY,
                     channelId: e
                 }));
@@ -153789,50 +153791,31 @@
             let v = e => t => [R.ActivityTypes.PLAYING, R.ActivityTypes.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId);
 
             function D(e, t, n) {
-                let i = (0, s.useStateFromStoresArray)([_.default], () => _.default.getAllApplicationStreamsForChannel(n).map(e => e.ownerId), [n]),
-                    a = (0, s.useStateFromStoresArray)([S.default, f.default], () => r()(e).map(e => S.default.getUser(e)).filter(m.isNotNullish).orderBy([e => {
-                        var t, n;
-                        return null !== (n = null === (t = f.default.getUserAffinity(e.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
-                    }], ["desc"]).value()),
-                    o = a.length > 3 ? a.slice(0, 6) : a.slice(0, 7),
-                    l = Math.max(0, a.length - o.length),
-                    u = i.length > 2 ? i.slice(0, 2) : i.slice(0, 3),
-                    d = u.map(e => N.default.getName(t, n, S.default.getUser(e))),
-                    c = function(e, t) {
-                        if (1 === e.length) return t > 0 ? C.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_1_N.format({
-                            a: e[0],
-                            n: t.toLocaleString()
-                        }) : C.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_1.format({
-                            username: e[0]
-                        });
-                        if (2 === e.length) return t > 0 ? C.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_2_N.format({
-                            a: e[0],
-                            b: e[1],
-                            n: t.toLocaleString()
-                        }) : C.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_2.format({
-                            a: e[0],
-                            b: e[1]
-                        });
-                        if (3 !== e.length) return C.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_N.format({
-                            n: t.toLocaleString()
-                        });
-                        else return t > 0 ? C.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_3_N.format({
-                            a: e[0],
-                            b: e[1],
-                            c: e[2],
-                            n: t.toLocaleString()
-                        }) : C.default.Messages.GUILD_POPOUT_ACTIVITY_USERS_3.format({
-                            a: e[0],
-                            b: e[1],
-                            c: e[2]
-                        })
-                    }(d, Math.max(0, i.length - u.length));
+                let a = (0, s.useStateFromStoresArray)([_.default], () => _.default.getAllApplicationStreamsForChannel(n).map(e => e.ownerId), [n]),
+                    o = (0, s.useStateFromStoresArray)([c.default, f.default, S.default], () => {
+                        let t = c.default.hasConsented(R.Consents.PERSONALIZATION),
+                            n = f.default.getUserAffinities(),
+                            a = r()(e).map(e => S.default.getUser(e)).filter(m.isNotNullish).value();
+                        return t && n.length > 0 ? (0, i.orderBy)(a, [e => {
+                            var t, n;
+                            return null !== (n = null === (t = f.default.getUserAffinity(e.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
+                        }], ["desc"]) : a
+                    }),
+                    l = o.length > 3 ? o.slice(0, 6) : o.slice(0, 7),
+                    u = Math.max(0, o.length - l.length),
+                    d = 1 === a.length ? a[0] : null,
+                    E = N.default.getName(t, n, S.default.getUser(d)),
+                    I = null != d ? C.default.Messages.GUILD_POPOUT_ACTIVITY_STREAMER.format({
+                        username: E
+                    }) : C.default.Messages.GUILD_POPOUT_ACTIVITY_STREAMERS.format({
+                        streamerCount: a.length
+                    });
                 return {
-                    totalUsers: a.length,
-                    usersToShow: o,
-                    othersCount: l,
-                    streamUserIds: i,
-                    streamerUsersText: c
+                    totalUsers: o.length,
+                    usersToShow: l,
+                    othersCount: u,
+                    streamUserIds: a,
+                    streamerUsersText: I
                 }
             }
         },
@@ -154070,8 +154053,8 @@
                     "aria-label": a = !1,
                     children: s,
                     includeActivity: o = !0,
-                    isHovered: l
-                } = e, u = (0, H.useCanShowNewGuildTooltip)(), [_, E] = r.useState(!1), I = r.useRef(new d.DelayedCall(150, () => E(!1))), T = r.useCallback(() => {
+                    isDragging: l
+                } = e, u = (0, H.useCanShowNewGuildTooltip)(), [_, E] = r.useState(!1), I = r.useRef(new d.DelayedCall(50, () => E(!1))), T = r.useCallback(() => {
                     I.current.cancel(), E(!0)
                 }, []), f = r.useCallback(() => {
                     I.current.delay()
@@ -154085,8 +154068,8 @@
                             guild: t,
                             closePopout: f
                         }),
-                        spacing: 20,
-                        shouldShow: l || _,
+                        spacing: 15,
+                        shouldShow: !l && _,
                         children: e => (0, i.jsx)("div", {
                             ...e,
                             children: s
@@ -169232,8 +169215,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714665404556",
-                                    build_number: "289872"
+                                    built_at: "1714666654132",
+                                    build_number: "289888"
                                 }
                             },
                             retries: 1
@@ -176944,7 +176927,8 @@
             let u = "OverridePremiumTypeStore",
                 d = {
                     premiumTypeOverride: o.UNSELECTED_PREMIUM_TYPE_OVERRIDE,
-                    premiumTypeActual: o.UNSELECTED_PREMIUM_TYPE_OVERRIDE
+                    premiumTypeActual: o.UNSELECTED_PREMIUM_TYPE_OVERRIDE,
+                    createdAtOverride: o.UNSELECTED_CREATED_AT_DATE
                 };
 
             function _(e) {
@@ -176956,16 +176940,19 @@
             class c extends(i = r.default.PersistedStore) {
                 initialize(e) {
                     if (null != e) {
-                        d = e;
+                        d.premiumTypeActual = null == e ? void 0 : e.premiumTypeActual, d.premiumTypeOverride = null == e ? void 0 : e.premiumTypeOverride, null != e.createdAtOverride ? d.createdAtOverride = new Date(e.createdAtOverride) : d.createdAtOverride = o.UNSELECTED_CREATED_AT_DATE;
                         return
                     }
-                    d.premiumTypeOverride = o.UNSELECTED_PREMIUM_TYPE_OVERRIDE
+                    d.premiumTypeOverride = o.UNSELECTED_PREMIUM_TYPE_OVERRIDE, d.createdAtOverride = o.UNSELECTED_CREATED_AT_DATE
                 }
                 getPremiumTypeOverride() {
                     return d.premiumTypeOverride
                 }
                 getPremiumTypeActual() {
                     return d.premiumTypeActual
+                }
+                getCreatedAtOverride() {
+                    return d.createdAtOverride
                 }
                 getState() {
                     return d
@@ -176974,12 +176961,23 @@
                     return d.premiumTypeOverride
                 }
             }
-            l(c, "displayName", u), l(c, "persistKey", u), t.default = new c(a.default, {
+            l(c, "displayName", u), l(c, "persistKey", u), l(c, "migrations", [e => {
+                if ((null == e ? void 0 : e.createdAtOverride) == null) return {
+                    ...e,
+                    createdAtOverride: o.UNSELECTED_CREATED_AT_DATE
+                }
+            }]), t.default = new c(a.default, {
                 SET_PREMIUM_TYPE_OVERRIDE: function(e) {
                     let {
                         premiumType: t
                     } = e;
                     d.premiumTypeOverride = t
+                },
+                SET_CREATED_AT_OVERRIDE: function(e) {
+                    let {
+                        createdAt: t
+                    } = e;
+                    d.createdAtOverride = t
                 },
                 CURRENT_USER_UPDATE: _,
                 CONNECTION_OPEN: _
@@ -177238,16 +177236,16 @@
             "use strict";
             n.r(t), n.d(t, {
                 ACTIVE_PREMIUM_SKUS: function() {
-                    return W
+                    return K
                 },
                 ANNUAL_DISCOUNT_IDS: function() {
-                    return ey
-                },
-                ANNUAL_DISCOUNT_IDS_TO_PERCENTAGES: function() {
                     return eP
                 },
+                ANNUAL_DISCOUNT_IDS_TO_PERCENTAGES: function() {
+                    return eU
+                },
                 AllSeasonalGiftStyles: function() {
-                    return eX
+                    return eQ
                 },
                 AnalyticsPremiumFeatureNames: function() {
                     return d
@@ -177256,154 +177254,154 @@
                     return _
                 },
                 BLACK_FRIDAY_2020_GIFT_CODE_BATCH_ID: function() {
-                    return ed
+                    return e_
                 },
                 BoostedGuildFeatures: function() {
-                    return eV
+                    return ex
                 },
                 BoostingUpsellAction: function() {
                     return A
                 },
                 CUSTOM_GIFT_MESSAGE_MAX_LENGTH: function() {
-                    return eQ
-                },
-                DEFAULT_APPLE_GRACE_PERIOD_DAYS: function() {
-                    return ea
-                },
-                DEFAULT_GOOGLE_GRACE_PERIOD_DAYS: function() {
-                    return es
-                },
-                DEFAULT_MAX_GRACE_PERIOD_DAYS: function() {
-                    return er
-                },
-                DISCOUNTS: function() {
-                    return eF
-                },
-                DISCOUNT_DURATION_FALLBACK: function() {
                     return eq
                 },
-                DISCOUNT_PERCENTAGE_FALLBACK: function() {
+                DEFAULT_APPLE_GRACE_PERIOD_DAYS: function() {
+                    return es
+                },
+                DEFAULT_GOOGLE_GRACE_PERIOD_DAYS: function() {
+                    return eo
+                },
+                DEFAULT_MAX_GRACE_PERIOD_DAYS: function() {
+                    return ea
+                },
+                DISCOUNTS: function() {
+                    return eH
+                },
+                DISCOUNT_DURATION_FALLBACK: function() {
                     return eJ
+                },
+                DISCOUNT_PERCENTAGE_FALLBACK: function() {
+                    return e$
                 },
                 DiscountUserUsageLimitIntervalTypes: function() {
                     return o
                 },
                 GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: function() {
-                    return en
+                    return ei
                 },
                 InboundPromotionErrorCodes: function() {
                     return f
                 },
                 IncrementalStickerCountsByTier: function() {
-                    return ew
+                    return eB
                 },
                 LegacyPricingCountries: function() {
-                    return eW
-                },
-                LegacySeasonalGiftStyles: function() {
                     return eK
                 },
+                LegacySeasonalGiftStyles: function() {
+                    return ez
+                },
                 MAX_ACCOUNT_HOLD_DAYS: function() {
-                    return eu
+                    return ed
                 },
                 MAX_PAYMENT_PROCESSING_TIME_DAYS: function() {
-                    return eE
-                },
-                MAX_PREMIUM_TIER_0_ATTACHMENT_SIZE: function() {
-                    return eG
-                },
-                MULTI_MONTH_PLANS: function() {
-                    return Q
-                },
-                NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: function() {
-                    return ei
-                },
-                ORDERED_PREMIUM_SUBSCRIPTION_PLANS: function() {
-                    return ex
-                },
-                PAID_SUBSCRIPTION_MAX_BILLING_RETRY_DAYS: function() {
-                    return el
-                },
-                PAID_SUBSCRIPTION_MAX_GRACE_PERIOD_DAYS: function() {
-                    return eo
-                },
-                PAUSE_ELIGIBLE_PLANS: function() {
-                    return et
-                },
-                PREMIUM_GUILD_SUBSCRIPTION_PLANS: function() {
-                    return X
-                },
-                PREMIUM_MONTHLY_PLANS: function() {
-                    return q
-                },
-                PREMIUM_PLANS: function() {
-                    return z
-                },
-                PREMIUM_SKU_TO_MONTHLY_PLAN: function() {
-                    return J
-                },
-                PREMIUM_SKU_TO_YEARLY_PLAN: function() {
-                    return $
-                },
-                PREMIUM_SUBSCRIPTION_APPLICATION: function() {
-                    return j
-                },
-                PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID: function() {
-                    return ep
-                },
-                PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID: function() {
-                    return eM
-                },
-                PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID: function() {
-                    return eD
-                },
-                PREMIUM_TIER_2_AUTH3_TRIAL_ID: function() {
-                    return em
-                },
-                PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: function() {
-                    return eC
-                },
-                PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: function() {
-                    return eg
-                },
-                PREMIUM_TIER_2_HFU_ONE_MONTH_TRIAL_ID: function() {
-                    return eh
-                },
-                PREMIUM_TIER_2_HFU_ONE_WEEK_TRIAL_ID: function() {
-                    return ef
-                },
-                PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID: function() {
-                    return eS
-                },
-                PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_30_PERCENT_DISCOUNT_ID: function() {
-                    return eL
-                },
-                PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: function() {
-                    return ev
-                },
-                PREMIUM_TIER_2_LIKELIHOOD_DISCOUNT_ID: function() {
-                    return eO
-                },
-                PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID: function() {
                     return eI
                 },
-                PREMIUM_TIER_2_NEW_USER_CPV_TRIAL_ID: function() {
-                    return eA
+                MAX_PREMIUM_TIER_0_ATTACHMENT_SIZE: function() {
+                    return ew
                 },
-                PREMIUM_TIER_2_PLANS: function() {
+                MULTI_MONTH_PLANS: function() {
+                    return q
+                },
+                NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: function() {
+                    return er
+                },
+                ORDERED_PREMIUM_SUBSCRIPTION_PLANS: function() {
+                    return eF
+                },
+                PAID_SUBSCRIPTION_MAX_BILLING_RETRY_DAYS: function() {
+                    return eu
+                },
+                PAID_SUBSCRIPTION_MAX_GRACE_PERIOD_DAYS: function() {
+                    return el
+                },
+                PAUSE_ELIGIBLE_PLANS: function() {
+                    return en
+                },
+                PREMIUM_GUILD_SUBSCRIPTION_PLANS: function() {
+                    return Q
+                },
+                PREMIUM_MONTHLY_PLANS: function() {
+                    return J
+                },
+                PREMIUM_PLANS: function() {
                     return Z
                 },
-                PREMIUM_TIER_2_REACTIVATION_DISCOUNT_ID: function() {
-                    return eR
+                PREMIUM_SKU_TO_MONTHLY_PLAN: function() {
+                    return $
                 },
-                PREMIUM_TIER_2_REACTIVATION_TRIAL_ID: function() {
-                    return eT
+                PREMIUM_SKU_TO_YEARLY_PLAN: function() {
+                    return ee
                 },
-                PREMIUM_TIER_2_REFERRAL_TRIAL_ID: function() {
+                PREMIUM_SUBSCRIPTION_APPLICATION: function() {
+                    return W
+                },
+                PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID: function() {
+                    return eO
+                },
+                PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID: function() {
+                    return ey
+                },
+                PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID: function() {
+                    return eM
+                },
+                PREMIUM_TIER_2_AUTH3_TRIAL_ID: function() {
                     return eN
                 },
+                PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: function() {
+                    return eg
+                },
+                PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: function() {
+                    return eL
+                },
+                PREMIUM_TIER_2_HFU_ONE_MONTH_TRIAL_ID: function() {
+                    return eA
+                },
+                PREMIUM_TIER_2_HFU_ONE_WEEK_TRIAL_ID: function() {
+                    return eS
+                },
+                PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID: function() {
+                    return eh
+                },
+                PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_30_PERCENT_DISCOUNT_ID: function() {
+                    return ev
+                },
+                PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: function() {
+                    return eD
+                },
+                PREMIUM_TIER_2_LIKELIHOOD_DISCOUNT_ID: function() {
+                    return eR
+                },
+                PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID: function() {
+                    return eT
+                },
+                PREMIUM_TIER_2_NEW_USER_CPV_TRIAL_ID: function() {
+                    return em
+                },
+                PREMIUM_TIER_2_PLANS: function() {
+                    return X
+                },
+                PREMIUM_TIER_2_REACTIVATION_DISCOUNT_ID: function() {
+                    return eC
+                },
+                PREMIUM_TIER_2_REACTIVATION_TRIAL_ID: function() {
+                    return ef
+                },
+                PREMIUM_TIER_2_REFERRAL_TRIAL_ID: function() {
+                    return ep
+                },
                 PREMIUM_TYPE_OVERRIDE_OPTIONS: function() {
-                    return H
+                    return Y
                 },
                 PremiumGiftStyles: function() {
                     return T
@@ -177415,13 +177413,13 @@
                     return E
                 },
                 PremiumSubscriptionSKUToPremiumType: function() {
-                    return K
+                    return z
                 },
                 PremiumSubscriptionSKUs: function() {
                     return r
                 },
                 PremiumTypeOrder: function() {
-                    return Y
+                    return j
                 },
                 PremiumTypes: function() {
                     return i
@@ -177430,10 +177428,10 @@
                     return l
                 },
                 PremiumUserLimits: function() {
-                    return ej
+                    return eW
                 },
                 PromotionFlags: function() {
-                    return eY
+                    return ej
                 },
                 PurchasedFlags: function() {
                     return u
@@ -177442,53 +177440,57 @@
                     return m
                 },
                 SKU_ID_PURCHASED_FLAGS: function() {
-                    return eb
+                    return eG
                 },
                 STANDARD_GIFT_OPTIONS: function() {
-                    return ez
+                    return eZ
                 },
                 STICKERS_GIFT_CODE_BATCH_ID: function() {
-                    return e_
+                    return ec
                 },
                 SeasonalGiftStyles2023: function() {
-                    return eZ
+                    return eX
                 },
                 StreamQualities: function() {
                     return c
                 },
                 StreamQualitiesToPremiumType: function() {
-                    return eH
+                    return eY
                 },
                 SubscriptionIntervalTypes: function() {
                     return s
                 },
                 SubscriptionPlanInfo: function() {
-                    return ee
+                    return et
                 },
                 SubscriptionPlans: function() {
                     return a
                 },
                 SubscriptionTrials: function() {
-                    return eU
+                    return eb
                 },
                 TotalSoundboardSoundCountsByTier: function() {
-                    return ek
+                    return eV
                 },
                 TotalStickerCountsByTier: function() {
-                    return eB
+                    return ek
+                },
+                UNSELECTED_CREATED_AT_DATE: function() {
+                    return H
                 },
                 UNSELECTED_PREMIUM_TYPE_OVERRIDE: function() {
                     return F
                 },
                 USER_PREMIUM_SUBSCRIPTION_TRIAL_EXPIRES_APPROACHING_5_DAY_THRESHOLD: function() {
-                    return ec
+                    return eE
                 }
             }), n("47120");
             var i, r, a, s, o, l, u, d, _, c, E, I, T, f, S, h, A, m, N, p, O, R, C, g, L, v, D, M, y, P, U, b, G, w, B, k, V = n("981631"),
                 x = n("185923");
             (N = i || (i = {}))[N.TIER_1 = 1] = "TIER_1", N[N.TIER_2 = 2] = "TIER_2", N[N.TIER_0 = 3] = "TIER_0";
             let F = void 0,
-                H = [{
+                H = void 0,
+                Y = [{
                     value: null,
                     label: "Non-Nitro"
                 }, {
@@ -177501,15 +177503,15 @@
                     value: 2,
                     label: "Standard"
                 }],
-                Y = Object.freeze({
+                j = Object.freeze({
                     3: 0,
                     1: 1,
                     2: 2
                 }),
-                j = "521842831262875670";
+                W = "521842831262875670";
             (p = r || (r = {})).NONE = "628379670982688768", p.TIER_0 = "978380684370378762", p.TIER_1 = "521846918637420545", p.TIER_2 = "521847234246082599", p.GUILD = "590663762298667008", p.LEGACY = "521842865731534868";
-            let W = ["628379670982688768", "978380684370378762", "521846918637420545", "521847234246082599", "590663762298667008"],
-                K = Object.freeze({
+            let K = ["628379670982688768", "978380684370378762", "521846918637420545", "521847234246082599", "590663762298667008"],
+                z = Object.freeze({
                     "978380684370378762": 3,
                     "521846918637420545": 1,
                     "521847234246082599": 2,
@@ -177517,12 +177519,12 @@
                     "521842865731534868": 2
                 });
             (O = a || (a = {})).NONE_MONTH = "628379151761408000", O.NONE_YEAR = "628381571568631808", O.PREMIUM_MONTH_TIER_0 = "978380692553465866", O.PREMIUM_YEAR_TIER_0 = "1024422698568122368", O.PREMIUM_MONTH_TIER_1 = "511651871736201216", O.PREMIUM_YEAR_TIER_1 = "511651876987469824", O.PREMIUM_MONTH_TIER_2 = "511651880837840896", O.PREMIUM_YEAR_TIER_2 = "511651885459963904", O.PREMIUM_MONTH_GUILD = "590665532894740483", O.PREMIUM_YEAR_GUILD = "590665538238152709", O.NONE_3_MONTH = "944265614527037440", O.NONE_6_MONTH = "944265636643602432", O.PREMIUM_3_MONTH_TIER_2 = "642251038925127690", O.PREMIUM_6_MONTH_TIER_2 = "944037208325619722", O.PREMIUM_3_MONTH_GUILD = "944037355453415424", O.PREMIUM_6_MONTH_GUILD = "944037391444738048", O.PREMIUM_MONTH_LEGACY = "511651856145973248", O.PREMIUM_YEAR_LEGACY = "511651860671627264";
-            let z = new Set(["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904", "511651856145973248", "511651860671627264"]),
-                Z = new Set(["511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"]),
-                X = new Set(["590665532894740483", "944037355453415424", "944037391444738048", "590665538238152709"]),
-                Q = new Set(["642251038925127690", "944037208325619722", "944037355453415424", "944037391444738048"]),
-                q = new Set(["978380692553465866", "511651871736201216", "511651880837840896"]),
-                J = Object.freeze({
+            let Z = new Set(["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904", "511651856145973248", "511651860671627264"]),
+                X = new Set(["511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"]),
+                Q = new Set(["590665532894740483", "944037355453415424", "944037391444738048", "590665538238152709"]),
+                q = new Set(["642251038925127690", "944037208325619722", "944037355453415424", "944037391444738048"]),
+                J = new Set(["978380692553465866", "511651871736201216", "511651880837840896"]),
+                $ = Object.freeze({
                     "978380684370378762": "978380692553465866",
                     "521846918637420545": "511651871736201216",
                     "521847234246082599": "511651880837840896",
@@ -177530,7 +177532,7 @@
                     "590663762298667008": void 0,
                     "521842865731534868": void 0
                 }),
-                $ = Object.freeze({
+                ee = Object.freeze({
                     "978380684370378762": "1024422698568122368",
                     "521846918637420545": "511651876987469824",
                     "521847234246082599": "511651885459963904",
@@ -177539,7 +177541,7 @@
                     "521842865731534868": void 0
                 });
             (R = s || (s = {}))[R.MONTH = 1] = "MONTH", R[R.YEAR = 2] = "YEAR", R[R.DAY = 3] = "DAY", (C = o || (o = {}))[C.DAY = 1] = "DAY", C[C.WEEK = 2] = "WEEK", C[C.MONTH = 3] = "MONTH", C[C.YEAR = 4] = "YEAR";
-            let ee = Object.freeze({
+            let et = Object.freeze({
                     "628379151761408000": {
                         id: "628379151761408000",
                         name: "None Monthly",
@@ -177677,47 +177679,43 @@
                         intervalCount: 1
                     }
                 }),
-                et = new Set(["511651880837840896"]),
-                en = 30,
-                ei = 2,
-                er = 3,
-                ea = 28,
-                es = 30,
-                eo = 7,
+                en = new Set(["511651880837840896"]),
+                ei = 30,
+                er = 2,
+                ea = 3,
+                es = 28,
+                eo = 30,
                 el = 7,
-                eu = 30,
-                ed = "775514091874680832",
-                e_ = "845031178288889946",
-                ec = 432e6,
-                eE = 14,
-                eI = "520373071933079552",
-                eT = "902329034132684800",
-                ef = "983601860436819968",
-                eS = "983601860436819969",
-                eh = "984244797441048577",
-                eA = "1215818925846036480",
-                em = "1004850445463584768",
-                eN = "1073698058383917056",
-                ep = "1070132870233980928",
-                eO = "1150904354090532864",
-                eR = "1199128659810582528",
-                eC = "1204865493622587392",
-                eg = "1204867673024888832",
-                eL = "1215346678383509504",
-                ev = "1215366184820539392",
-                eD = "1223319122125783040",
-                eM = "1223380890109870080",
-                ey = [eD, eM],
-                eP = Object.freeze({
-                    [eM]: .2,
-                    [eD]: .25,
+                eu = 7,
+                ed = 30,
+                e_ = "775514091874680832",
+                ec = "845031178288889946",
+                eE = 432e6,
+                eI = 14,
+                eT = "520373071933079552",
+                ef = "902329034132684800",
+                eS = "983601860436819968",
+                eh = "983601860436819969",
+                eA = "984244797441048577",
+                em = "1215818925846036480",
+                eN = "1004850445463584768",
+                ep = "1073698058383917056",
+                eO = "1070132870233980928",
+                eR = "1150904354090532864",
+                eC = "1199128659810582528",
+                eg = "1204865493622587392",
+                eL = "1204867673024888832",
+                ev = "1215346678383509504",
+                eD = "1215366184820539392",
+                eM = "1223319122125783040",
+                ey = "1223380890109870080",
+                eP = [eM, ey],
+                eU = Object.freeze({
+                    [ey]: .2,
+                    [eM]: .25,
                     DEFAULT: .16
                 }),
-                eU = Object.freeze({
-                    [eI]: {
-                        id: eI,
-                        skus: ["521847234246082599"]
-                    },
+                eb = Object.freeze({
                     [eT]: {
                         id: eT,
                         skus: ["521847234246082599"]
@@ -177734,50 +177732,54 @@
                         id: eh,
                         skus: ["521847234246082599"]
                     },
-                    [em]: {
-                        id: em,
+                    [eA]: {
+                        id: eA,
                         skus: ["521847234246082599"]
-                    },
-                    [ep]: {
-                        id: ep,
-                        skus: ["978380684370378762"]
                     },
                     [eN]: {
                         id: eN,
                         skus: ["521847234246082599"]
                     },
-                    [eA]: {
-                        id: eA,
+                    [eO]: {
+                        id: eO,
+                        skus: ["978380684370378762"]
+                    },
+                    [ep]: {
+                        id: ep,
+                        skus: ["521847234246082599"]
+                    },
+                    [em]: {
+                        id: em,
                         skus: ["521847234246082599"]
                     }
                 });
             (g = l || (l = {})).ANIMATED_GUILD_BANNER_TOOLTIP = "animated_guild_banner_tooltip", g.EMOJI_PICKER_SEARCH = "emoji_picker_search", g.EMOJI_PICKER_EMOJI_CLICKED = "emoji_picker_emoji_clicked", g.EMOJI_PICKER_STICKER_CLICKED = "emoji_picker_sticker_clicked", g.EMOJI_PICKER_REACTION_EMOJI_CLICKED = "emoji_picker_reaction_emoji_clicked", g.EMOJI_PICKER_SUPER_REACTION_EMOJI_CLICKED = "emoji_picker_super_reaction_emoji_clicked", g.EMOJI_PICKER_STATUS_EMOJI_CLICKED = "emoji_picker_status_emoji_clicked", g.EMOJI_PICKER_TOP_SERVER_EMOJI_CLICKED = "emoji_picker_top_server_emoji_clicked", g.EMOJI_PICKER_NEWLY_ADDED_EMOJI_CLICKED = "emoji_picker_newly_added_emoji_clicked", g.EMOJI_AUTOSUGGEST_CLICKED = "emoji_autosuggest_clicked", g.EMOJI_AUTOCOMPLETE_INLINE = "emoji_autocomplete_inline", g.EMOJI_AUTOCOMPLETE_MODAL = "emoji_autocomplete_modal", g.EMOJI_IN_MESSAGE_HOVER = "emoji_in_message_hover", g.EMOJI_IN_REACTION_HOVER = "emoji_in_reaction_hover", g.EMOJI_IN_BURST_REACTION_HOVER = "emoji_in_burst_reaction_hover", g.EMOJI_IN_BURST_REACTION_HOVER_UPSELL = "emoji_in_burst_reaction_hover_upsell", g.EMOJI_PICKER_FLOATING_UPSELL = "emoji_picker_floating_upsell", g.STICKER_IN_MESSAGE_HOVER = "sticker_in_message_hover", g.EMPTY_STICKER_PICKER_UPSELL = "empty_sticker_picker_upsell", g.STREAM_QUALITY_INDICATOR = "stream_quality_indicator", g.GIFT_STREAM_QUALITY_INDICATOR = "gift_stream_quality_indicator", g.STREAM_QUALITY_UPSELL = "stream_quality_upsell", g.MESSAGE_LENGTH_UPSELL = "message_length_upsell", g.MESSAGE_LENGTH_IN_EDITOR_UPSELL = "message_length_in_editor_upsell", g.CUSTOM_PROFILE_UPSELL = "custom profiles upsell modal", g.CUSTOM_PROFILE_TRY_OUT_UPSELL = "try out custom profile in settings upsell", g.VIDEO_BACKGROUNDS_MODAL = "video backgrounds modal", g.VIDEO_BACKGROUNDS_INLINE = "video backgrounds inline", g.GUILD_CAP_INLINE_SERVER_LIST = "guild_cap_inline_server_list", g.GUILD_PREMIUM_UPSELL_MODAL = "premium guild premium upsell modal", g.GUILD_CAP_INLINE_INVITE_MODAL = "guild_cap_inline_invite_modal", g.GUILD_CAP_MODAL_UPSELL = "guild_cap_modal_upsell", g.PREMIUM_GUILD_IDENTITY_MODAL = "premium guild identity upsell alert", g.CUSTOM_PROFILE_SETTINGS_BANNER_BUTTON = "custom profiles settings banner upsell", g.CUSTOM_PROFILES_PROFILE_BANNER_SOCIAL_UPSELL = "custom profiles profile banner social upsell", g.STICKER_PICKER_UPSELL = "sticker_picker_upsell", g.ANIMATED_AVATAR_PREVIEW_GIF_MODAL = "animated avatar preview gif modal", g.PREMIUM_PROGRESS_BAR = "premium_progress_bar_tooltip", g.INVITE_SPLASH_UPSELL = "premium_invite_splash_upsell", g.ANIMATED_USER_AVATAR_MODAL = "animated user avatar upsell modal", g.UPLOAD_ERROR_UPSELL = "upload error upsell", g.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE = "premium guild member profile upsell inline", g.CONCURRENT_ACTIVITIES = "Concurrent Activities", g.PREMIUM_UNCANCEL_WINBACK_MODAL_VIEWED = "premium_uncancel_winback_modal_viewed", g.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET = "animated_video_background_new_preset", g.LOW_PRICE_EXPERIMENT_TOOLTIP = "low_price_experiment_tooltip", g.PREMIUM_PROFILE_BADGE_UPSELL = "premium_profile_badge_upsell", g.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI = "emoji", g.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_PROFILE_CUSTOMIZATION = "profile customization", g.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_HD_STREAMING = "hd streaming", g.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_LARGER_FILE_UPLOADS = "larger file uploads", g.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_BOGO = "bogo", g.VOICE_CHANNEL_EFFECTS_UPSELL = "voice_channel_effects_upsell", g.VOICE_CHANNEL_EFFECTS_BAR_EMOJI_UPSELL = "Voice Channel Effect Bar Emoji Upsell", g.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED = "voice_channel_effects_toggle_clicked", g.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED = "voice_channel_effects_toggle_clicked_expanded", g.PROFILE_THEME_UPSELL_MODAL = "profile_theme_upsell_modal", g.PROFILE_EFFECTS_INLINE_SETTINGS = "profile_effects_inline_settings", g.PROFILE_EFFECTS_INLINE_SETTINGS_MOBILE = "profile_effects_inline_settings_mobile", g.HIGH_VIDEO_QUALITY_UPSELL = "high_video_quality_upsell", g.PREMIUM_PROFILE_TRY_IT_OUT = "premium_profile_try_it_out", g.BURST_REACTION_RAIL_UPSELL = "burst_reaction_rail_upsell", g.BURST_REACTION_UPSELL = "burst_reaction_upsell", g.BURST_REACTION_QUICK_ACTION_UPSELL = "burst_reaction_quick_action_upsell", g.BURST_REACTION_CONTEXT_MENU_UPSELL = "burst_reaction_context_menu_upsell", g.PREMIUM_CLIENT_THEME_TRY_IT_OUT = "premium_client_theme_try_it_out", g.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL = "premium_client_theme_settings_upsell", g.VIDEO_STAGE_LIMIT = "video_stage_limit", g.SOUND_PICKER_SOUND_CLICKED = "sound_picker_sound_clicked", g.APP_ICON_UPSELL = "app_icon_upsell", g.COLLECTIBLES_SHOP = "collectibles_shop", g.COLLECTIBLES_PROFILE_SETTINGS_UPSELL = "collectibles_profile_settings_upsell", g.COLLECTIBLES_PREMIUM_MARKETING_PAGE_UPSELL = "collectibles_premium_marketing_page_upsell", g.CLIPS_GUILD_SIDEBAR_COACHMARK_PREMIUM_EARLY_ACCESS_UPSELL = "clips_guild_sidebar_coachmark_premium_early_access_upsell", g.CLIPS_GO_LIVE_PREMIUM_EARLY_ACCESS_ROADBLOCK_UPSELL = "clips_go_live_premium_early_access_roadblock_upsell", g.CUSTOM_NOTIFICATION_SOUNDS_UPSELL = "custom_notification_sounds_upsell", g.CUSTOM_NOTIFICATION_SOUNDS_SETTINGS_UPSELL = "custom_notification_sounds_settings_inline_upsell", (L = u || (u = {}))[L.PREMIUM_TIER_1 = 1] = "PREMIUM_TIER_1", L[L.PREMIUM_TIER_2 = 2] = "PREMIUM_TIER_2", L[L.GUILD_BOOST = 4] = "GUILD_BOOST", L[L.PREMIUM_TIER_0 = 8] = "PREMIUM_TIER_0";
-            let eb = Object.freeze({
+            let eG = Object.freeze({
                     "978380684370378762": 8,
                     "521846918637420545": 1,
                     "521847234246082599": 2,
                     "590663762298667008": 4
                 }),
-                eG = 52428800,
-                ew = {
+                ew = 52428800,
+                eB = {
                     [V.BoostedGuildTiers.NONE]: 5,
                     [V.BoostedGuildTiers.TIER_1]: 10,
                     [V.BoostedGuildTiers.TIER_2]: 15,
                     [V.BoostedGuildTiers.TIER_3]: 30
                 },
-                eB = {
-                    [V.BoostedGuildTiers.NONE]: ew[V.BoostedGuildTiers.NONE],
-                    [V.BoostedGuildTiers.TIER_1]: ew[V.BoostedGuildTiers.NONE] + ew[V.BoostedGuildTiers.TIER_1],
-                    [V.BoostedGuildTiers.TIER_2]: ew[V.BoostedGuildTiers.NONE] + ew[V.BoostedGuildTiers.TIER_1] + ew[V.BoostedGuildTiers.TIER_2],
-                    [V.BoostedGuildTiers.TIER_3]: ew[V.BoostedGuildTiers.NONE] + ew[V.BoostedGuildTiers.TIER_1] + ew[V.BoostedGuildTiers.TIER_2] + ew[V.BoostedGuildTiers.TIER_3]
-                },
                 ek = {
+                    [V.BoostedGuildTiers.NONE]: eB[V.BoostedGuildTiers.NONE],
+                    [V.BoostedGuildTiers.TIER_1]: eB[V.BoostedGuildTiers.NONE] + eB[V.BoostedGuildTiers.TIER_1],
+                    [V.BoostedGuildTiers.TIER_2]: eB[V.BoostedGuildTiers.NONE] + eB[V.BoostedGuildTiers.TIER_1] + eB[V.BoostedGuildTiers.TIER_2],
+                    [V.BoostedGuildTiers.TIER_3]: eB[V.BoostedGuildTiers.NONE] + eB[V.BoostedGuildTiers.TIER_1] + eB[V.BoostedGuildTiers.TIER_2] + eB[V.BoostedGuildTiers.TIER_3]
+                },
+                eV = {
                     [V.BoostedGuildTiers.NONE]: 8,
                     [V.BoostedGuildTiers.TIER_1]: 24,
                     [V.BoostedGuildTiers.TIER_2]: 36,
                     [V.BoostedGuildTiers.TIER_3]: 48
                 },
-                eV = Object.freeze({
+                ex = Object.freeze({
                     [V.BoostedGuildTiers.NONE]: {
                         features: [],
                         limits: {
@@ -177786,9 +177788,9 @@
                             fileSize: V.MAX_ATTACHMENT_SIZE,
                             screenShareQualityFramerate: 30,
                             screenShareQualityResolution: "720p",
-                            soundboardSounds: ek[V.BoostedGuildTiers.NONE],
+                            soundboardSounds: eV[V.BoostedGuildTiers.NONE],
                             maxConcurrentActivities: 2,
-                            stickers: eB[V.BoostedGuildTiers.NONE],
+                            stickers: ek[V.BoostedGuildTiers.NONE],
                             stageVideoUsers: V.MAX_STAGE_VIDEO_USER_LIMIT_TIER01
                         }
                     },
@@ -177800,9 +177802,9 @@
                             fileSize: V.MAX_ATTACHMENT_SIZE,
                             screenShareQualityFramerate: 60,
                             screenShareQualityResolution: "720p",
-                            soundboardSounds: ek[V.BoostedGuildTiers.TIER_1],
+                            soundboardSounds: eV[V.BoostedGuildTiers.TIER_1],
                             maxConcurrentActivities: 3,
-                            stickers: eB[V.BoostedGuildTiers.TIER_1],
+                            stickers: ek[V.BoostedGuildTiers.TIER_1],
                             stageVideoUsers: V.MAX_STAGE_VIDEO_USER_LIMIT_TIER01
                         }
                     },
@@ -177814,9 +177816,9 @@
                             fileSize: 52428800,
                             screenShareQualityFramerate: 60,
                             screenShareQualityResolution: "1080p",
-                            soundboardSounds: ek[V.BoostedGuildTiers.TIER_2],
+                            soundboardSounds: eV[V.BoostedGuildTiers.TIER_2],
                             maxConcurrentActivities: 5,
-                            stickers: eB[V.BoostedGuildTiers.TIER_2],
+                            stickers: ek[V.BoostedGuildTiers.TIER_2],
                             stageVideoUsers: V.MAX_STAGE_VIDEO_USER_LIMIT_TIER2
                         }
                     },
@@ -177828,16 +177830,16 @@
                             fileSize: 104857600,
                             screenShareQualityFramerate: 60,
                             screenShareQualityResolution: "1080p",
-                            soundboardSounds: ek[V.BoostedGuildTiers.TIER_3],
+                            soundboardSounds: eV[V.BoostedGuildTiers.TIER_3],
                             maxConcurrentActivities: Number.MAX_SAFE_INTEGER,
-                            stickers: eB[V.BoostedGuildTiers.TIER_3],
+                            stickers: ek[V.BoostedGuildTiers.TIER_3],
                             stageVideoUsers: V.MAX_STAGE_VIDEO_USER_LIMIT_TIER3
                         }
                     }
                 }),
-                ex = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
+                eF = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904"];
             (v = d || (d = {})).SOUNDBOARD_PLAY = "soundboard play", v.PROFILE_THEME_COLOR = "profile_theme_color", v.PROFILE_BANNER = "profile_banner", v.ANIMATED_AVATAR = "animated_avatar", v.AVATAR_DECORATION = "avatar_decoration", v.CLIENT_THEME = "client_theme", v.SHARED_CANVAS = "shared_canvas", v.PROFILE_EFFECT = "profile_effect", (D = _ || (_ = {})).FREE = "free", D.PREMIUM_STANDARD = "premium-standard";
-            let eF = {
+            let eH = {
                 "1024422698568122368": 16,
                 "511651876987469824": 16,
                 "511651885459963904": 16,
@@ -177845,19 +177847,19 @@
                 "642251038925127690": 5
             };
             (M = c || (c = {})).HIGH_STREAMING_QUALITY = "high_streaming_quality", M.MID_STREAMING_QUALITY = "mid_streaming_quality";
-            let eH = Object.freeze({
+            let eY = Object.freeze({
                 high_streaming_quality: 2,
                 mid_streaming_quality: 1
             });
             (y = E || (E = {}))[y.UserSettings = 0] = "UserSettings", y[y.ApplicationStoreHome = 1] = "ApplicationStoreHome", (P = I || (I = {}))[P.DEFAULT = 0] = "DEFAULT", P[P.WINTER = 1] = "WINTER", (U = T || (T = {}))[U.SNOWGLOBE = 1] = "SNOWGLOBE", U[U.BOX = 2] = "BOX", U[U.CUP = 3] = "CUP", U[U.STANDARD_BOX = 4] = "STANDARD_BOX", U[U.CAKE = 5] = "CAKE", U[U.CHEST = 6] = "CHEST", U[U.COFFEE = 7] = "COFFEE", U[U.SEASONAL_STANDARD_BOX = 8] = "SEASONAL_STANDARD_BOX", U[U.SEASONAL_CAKE = 9] = "SEASONAL_CAKE", U[U.SEASONAL_CHEST = 10] = "SEASONAL_CHEST", U[U.SEASONAL_COFFEE = 11] = "SEASONAL_COFFEE", (b = f || (f = {})).USER_NOT_VERIFIED = "user_not_verified", b.NO_CODE_BODY = "no_code_body", b.NO_PROMOTION = "no_promotion", b.CODE_CLAIMED = "code_claimed", b.EXISTING_SUBSCRIBER = "existing_subscriber", b.PREVIOUS_SUBSCRIBER = "previous_subscriber", b.BLOCKED_PAYMENT = "blocked_payment";
-            let eY = Object.freeze({
+            let ej = Object.freeze({
                     IS_BLOCKED_IOS: 32,
                     IS_OUTBOUND_REDEEMABLE_BY_TRIAL_USERS: 64,
                     SUPPRESS_NOTIFICATION: 128
                 }),
-                ej = Object.freeze({
+                eW = Object.freeze({
                     3: {
-                        fileSize: eG
+                        fileSize: ew
                     },
                     1: {
                         fileSize: 52428800
@@ -177867,14 +177869,14 @@
                     }
                 });
             (G = S || (S = {})).EXPLORE_ALL_PERKS_CLICKED = "explore_all_perks_clicked", G.HELPER_COLLAPSED = "helper_collapsed", G.HELPER_UNCOLLAPSED = "helper_uncollapsed", G.UNLOCK_EMOJI_CLICKED = "unlock_emoji_clicked", G.CUSTOM_PROFILES_CLICKED = "custom_profiles_clicked", G.SERVER_BOOSTS_CLICKED = "server_boosts_clicked", G.HELPER_DISMISSED = "premium_feature_helper_dismissed", G.HELPER_RENDERED = "premium_feature_helper_rendered", (w = h || (h = {})).EMOJI_TUTORIAL_STARTED = "emoji_tutorial_started", w.EMOJI_INTRO_VIEWED = "emoji_intro_viewed", w.EMOJI_PROMPT_VIEWED = "emoji_prompt_viewed", w.CUSTOM_PROFILE_TUTORIAL_STARTED = "custom_profile_tutorial_started", w.CUSTOM_PROFILE_AVATAR_INTRO_VIEWED = "custom_profile_avatar_intro_viewed", w.CUSTOM_PROFILE_AVATAR_DECORATIONS_VIEWED = "custom_profile_avatar_decorations_viewed", w.CUSTOM_PROFILE_BANNER_INTRO_VIEWED = "custom_profile_banner_intro_viewed", w.CUSTOM_PROFILE_THEME_INTRO_VIEWED = "custom_profile_theme_intro_viewed", w.SERVER_PROFILE_INTRO_VIEWED = "server_profile_intro_viewed", w.SERVER_BOOST_TUTORIAL_STARTED = "server_boost_tutorial_started", w.BOOST_INTRO_VIEWED = "boost_intro_viewed", w.BOOST_PROMPT_VIEWED = "boost_prompt_viewed", (B = A || (A = {})).BOOST = "boost", B.DISMISS = "dismiss", (k = m || (m = {})).BADGE_TOOLTIP_VIEWED = "share_nitro_bagde_tooltip_viewed", k.BADGE_CLICKED = "share_nitro_badge_clicked", k.FLOW_STARTED = "share_nitro_flow_started", k.FLOW_COMPLETED = "share_nitro_flow_completed";
-            let eW = new Set(["PL", "TR"]),
-                eK = [1, 2, 3],
-                ez = [4, 5, 7, 6],
-                eZ = [8, 9, 11, 10],
-                eX = eZ.concat(eK),
-                eQ = 190,
-                eq = 3,
-                eJ = 30
+            let eK = new Set(["PL", "TR"]),
+                ez = [1, 2, 3],
+                eZ = [4, 5, 7, 6],
+                eX = [8, 9, 11, 10],
+                eQ = eX.concat(ez),
+                eq = 190,
+                eJ = 3,
+                e$ = 30
         },
         479446: function(e, t, n) {
             "use strict";
@@ -247120,7 +247122,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "07edfd4429187efd736977373cbb2c029936a0bb"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e3f77a8f711978379665f143090f40a5889373d5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -255266,15 +255268,18 @@
                         m = ![e, I, T, f, S, A, h].some(e => null != e);
                     return (0, s.jsxs)("div", {
                         className: u()(this.getTypeClass("activity"), i),
-                        children: [this.renderHeader(m), (0, s.jsxs)("div", {
+                        children: [this.renderHeader(m), (0, s.jsx)("div", {
                             className: u()(E ? F.bodyAlignCenter : F.bodyNormal, a && !l && !c && F.wrap),
-                            children: [(0, s.jsxs)("div", {
+                            children: (0, s.jsxs)("div", {
                                 className: F.activityDetails,
                                 children: [e, this.isStreamerOnTypeActivityFeed() ? null : (0, s.jsxs)(P.default.Child, {
                                     className: u()((0, M.getClass)(F, "content", E ? "GameImage" : null != e ? "Images" : "NoImages", t)),
                                     children: [I, T, f, S, l || c ? null : A, _ ? h : null]
-                                })]
-                            }), d ? h : null]
+                                }), d ? (0, s.jsx)("div", {
+                                    className: F.actions,
+                                    children: h
+                                }) : null]
+                            })
                         }), l ? A : null, l || c ? h : null, (0, s.jsx)(K, {
                             activity: o
                         })]
@@ -275677,7 +275682,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289872"
+                                build_number: "289888"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282894,7 +282899,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "289872", "289872"), 10);
+                let a = parseInt((n = "289888", "289888"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -310294,4 +310299,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.420b982779deaff00f6f.js.map
+//# sourceMappingURL=35705.5fd2062f5996933267a6.js.map
