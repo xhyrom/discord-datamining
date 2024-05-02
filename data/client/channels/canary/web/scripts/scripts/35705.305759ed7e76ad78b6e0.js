@@ -36956,7 +36956,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289955", ", Version Hash: ").concat("84a7bde0ac56c14d0401c25d92d0cb607c40b84b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289960", ", Version Hash: ").concat("8112a661c33625184043c289a7c13b1729de9b89")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55468,11 +55468,11 @@
                 MEMBER_LIST_CONTENT_FEED_EPIC_MARATHON: "Epic-Marathon",
                 MEMBER_LIST_CONTENT_FEED_PLAYED_FOR_HOURS: "Played for {hours}h",
                 MEMBER_LIST_CONTENT_FEED_STREAK_DAYS: "{days}x Streak",
-                MEMBER_LIST_CONTENT_POPOUT_USER_PLAYING: "$[{username}](nameHook) is playing",
-                MEMBER_LIST_CONTENT_POPOUT_USER_PLAYED: "$[{username}](nameHook) played",
-                MEMBER_LIST_CONTENT_POPOUT_USER_WATCHING: "$[{username}](nameHook) is watching",
-                MEMBER_LIST_CONTENT_POPOUT_USER_WATCHED: "$[{username}](nameHook) watched",
-                MEMBER_LIST_CONTENT_POPOUT_USER_STREAMING: "$[{username}](nameHook) is streaming",
+                MEMBER_LIST_CONTENT_POPOUT_USER_PLAYING: "$[{countOthers, plural, =0 {{user1} is} =1 {{user1} and {user2} are} other {{user1} and {countOthers} others are}}](nameHook) playing",
+                MEMBER_LIST_CONTENT_POPOUT_USER_PLAYED: "$[{countOthers, plural, =0 {{user1}} =1 {{user1} and {user2}} other {{user1} and {countOthers} others}}](nameHook) played",
+                MEMBER_LIST_CONTENT_POPOUT_USER_WATCHING: "$[{countOthers, plural, =0 {{user1} is} =1 {{user1} and {user2} are} other {{user1} and {countOthers} others are}}](nameHook) watching",
+                MEMBER_LIST_CONTENT_POPOUT_USER_WATCHED: "$[{countOthers, plural, =0 {{user1}} =1 {{user1} and {user2}} other {{user1} and {countOthers} others}}](nameHook) watched",
+                MEMBER_LIST_CONTENT_POPOUT_USER_STREAMING: "$[{countOthers, plural, =0 {{user1} is} =1 {{user1} and {user2} are} other {{user1} and {countOthers} others are}}](nameHook) streaming",
                 CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity",
                 CONTENT_INVENTORY_MEMBERLIST_SETTINGS_HIDE: "Hide Activity Cards",
                 CONTENT_INVENTORY_MEMBERLIST_SETTINGS_ABOUT: "About Recent Activity",
@@ -87375,8 +87375,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289955", "289955"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289955")), t = 0), t
+                let t = parseInt((e = "289960", "289960"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289960")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -114150,8 +114150,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289955",
-                    versionHash: "84a7bde0ac56c14d0401c25d92d0cb607c40b84b"
+                    buildNumber: "289960",
+                    versionHash: "8112a661c33625184043c289a7c13b1729de9b89"
                 }
             }
             n.r(t), n.d(t, {
@@ -121352,22 +121352,23 @@
             function I(e) {
                 let {
                     className: t,
-                    maxUsers: a,
-                    users: o,
-                    guildId: I,
-                    onFocus: T,
-                    size: f = u.AvatarSizes.SIZE_24,
-                    hideOverflowCount: S = !1,
-                    disableUsernameTooltip: h = !1
-                } = e, [A, m] = r.useState(!1);
+                    avatarClassName: a,
+                    maxUsers: o,
+                    users: I,
+                    guildId: T,
+                    onFocus: f,
+                    size: S = u.AvatarSizes.SIZE_24,
+                    hideOverflowCount: h = !1,
+                    disableUsernameTooltip: A = !1
+                } = e, [m, N] = r.useState(!1);
 
-                function N() {
+                function p() {
                     return (0, i.jsx)(u.Dialog, {
                         className: E.popoutWrapper,
                         children: (0, i.jsx)(u.Scroller, {
                             className: E.scroller,
-                            children: o.map(e => (0, i.jsx)(_.default, {
-                                guildId: I,
+                            children: I.map(e => (0, i.jsx)(_.default, {
+                                guildId: T,
                                 user: e,
                                 nick: c.default.getName(e),
                                 onContextMenu: t => (0, d.openContextMenuLazy)(t, async () => {
@@ -121379,44 +121380,44 @@
                                         user: e
                                     })
                                 }, {
-                                    onClose: () => m(!1)
+                                    onClose: () => N(!1)
                                 })
                             }, e.id))
                         })
                     })
                 }
-                return o.length <= 0 ? null : (0, i.jsx)("div", {
+                return I.length <= 0 ? null : (0, i.jsx)("div", {
                     className: s()(t, E.avatars),
                     children: function() {
-                        let e = l()(o).take(a).map(e => {
+                        let e = l()(I).take(o).map(e => {
                                 let t = c.default.getName(e);
-                                return h ? (0, i.jsx)("div", {
-                                    className: E.avatar,
+                                return A ? (0, i.jsx)("div", {
+                                    className: s()(E.avatar, a),
                                     children: (0, i.jsx)(u.Avatar, {
-                                        src: e.getAvatarURL(I, 24),
+                                        src: e.getAvatarURL(T, 24),
                                         "aria-label": t,
-                                        size: f
+                                        size: S
                                     })
                                 }) : (0, i.jsx)(u.TooltipContainer, {
                                     text: t,
-                                    className: E.avatar,
+                                    className: s()(E.avatar, a),
                                     children: (0, i.jsx)(u.Avatar, {
-                                        src: e.getAvatarURL(I, 24),
+                                        src: e.getAvatarURL(T, 24),
                                         "aria-label": t,
-                                        size: f
+                                        size: S
                                     })
                                 }, e.id)
                             }).value(),
-                            t = o.length - a;
-                        return t > 0 && !S && (e[e.length - 1] = (0, i.jsx)(u.Popout, {
-                            renderPopout: N,
-                            shouldShow: A,
+                            t = I.length - o;
+                        return t > 0 && !h && (e[e.length - 1] = (0, i.jsx)(u.Popout, {
+                            renderPopout: p,
+                            shouldShow: m,
                             position: "bottom",
-                            onRequestClose: () => m(!1),
+                            onRequestClose: () => N(!1),
                             children: () => (0, i.jsxs)(u.Button, {
                                 className: s()(E.avatar, E.overflow),
-                                onFocus: T,
-                                onClick: () => m(!0),
+                                onFocus: f,
+                                onClick: () => N(!0),
                                 look: u.Button.Looks.BLANK,
                                 size: u.Button.Sizes.NONE,
                                 children: ["+", t + 1]
@@ -169442,8 +169443,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714671894693",
-                                    build_number: "289955"
+                                    built_at: "1714672241708",
+                                    build_number: "289960"
                                 }
                             },
                             retries: 1
@@ -247367,7 +247368,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "84a7bde0ac56c14d0401c25d92d0cb607c40b84b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8112a661c33625184043c289a7c13b1729de9b89"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276026,7 +276027,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289955"
+                                build_number: "289960"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -283353,7 +283354,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "289955", "289955"), 10);
+                let a = parseInt((n = "289960", "289960"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -310753,4 +310754,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.3298fbe6a1741d9b487e.js.map
+//# sourceMappingURL=35705.305759ed7e76ad78b6e0.js.map
