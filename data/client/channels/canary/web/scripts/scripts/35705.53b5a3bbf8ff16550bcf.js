@@ -37001,7 +37001,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290207", ", Version Hash: ").concat("9097626b12c424822738a58b14f87551707e646a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290222", ", Version Hash: ").concat("38b74c1c900aae709cbfecb8c133878ee4cfa6de")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -63649,7 +63649,7 @@
             (r = i || (i = {})).NOT_STARTED = "NOT_STARTED", r.STARTED = "STARTED", r.UPLOADING = "UPLOADING", r.ERROR = "ERROR", r.COMPLETED = "COMPLETED", r.CANCELED = "CANCELED";
             class C {
                 constructor() {
-                    p(this, "numChunks", void 0), p(this, "totalRequestCount", void 0), p(this, "timing", {}), p(this, "compressAndExtractDisabled", void 0), p(this, "fileAlreadyPrepped", void 0), p(this, "imageCompressionQuality", void 0), p(this, "videoCompressionQuality", void 0), p(this, "convertedMimeType", void 0)
+                    p(this, "numChunks", void 0), p(this, "totalRequestCount", void 0), p(this, "timing", {}), p(this, "compressAndExtractDisabled", void 0), p(this, "fileAlreadyPrepped", void 0), p(this, "imageCompressionQuality", void 0), p(this, "videoCompressionQuality", void 0), p(this, "convertedMimeType", void 0), p(this, "sourceMediaWidth", void 0), p(this, "sourceMediaHeight", void 0), p(this, "sourceMediaFormat", void 0), p(this, "sourceVideoBitrate", void 0)
                 }
             }
             class g extends A.default {
@@ -63864,7 +63864,7 @@
                     let n = t.uri,
                         i = t.file.name,
                         r = t.file.type;
-                    if ((0, A.isResolvedUpload)(t.file) && (this.uploadAnalytics.imageCompressionQuality = t.file.imageCompressionQuality, this.uploadAnalytics.videoCompressionQuality = t.file.videoCompressionQuality, this.uploadAnalytics.convertedMimeType = t.file.type), this.filename = i, null == i || null == n || null == r) throw O.error("Insufficient file data: ".concat({
+                    if ((0, A.isResolvedUpload)(t.file) && (this.uploadAnalytics.imageCompressionQuality = t.file.imageCompressionQuality, this.uploadAnalytics.videoCompressionQuality = t.file.videoCompressionQuality, this.uploadAnalytics.convertedMimeType = t.file.type, void 0 !== t.file.videoMetadata && (this.uploadAnalytics.sourceMediaWidth = t.file.videoMetadata.width, this.uploadAnalytics.sourceMediaHeight = t.file.videoMetadata.height, this.uploadAnalytics.sourceMediaFormat = t.file.videoMetadata.format, this.uploadAnalytics.sourceVideoBitrate = t.file.videoMetadata.bitrate)), this.filename = i, null == i || null == n || null == r) throw O.error("Insufficient file data: ".concat({
                         filename: i,
                         uri: n,
                         mimeType: r
@@ -63954,6 +63954,10 @@
                         video_compression_quality: null !== (a = this.uploadAnalytics.videoCompressionQuality) && void 0 !== a ? a : "unknown",
                         was_converted: this.mimeType !== this.uploadAnalytics.convertedMimeType,
                         was_compressed: this.currentSize < this.preCompressionSize,
+                        source_media_width: this.uploadAnalytics.sourceMediaWidth,
+                        source_media_height: this.uploadAnalytics.sourceMediaHeight,
+                        source_media_format: this.uploadAnalytics.sourceMediaFormat,
+                        source_video_bitrate: this.uploadAnalytics.sourceVideoBitrate,
                         connection_type: E.default.getType(),
                         effective_connection_speed: E.default.getEffectiveConnectionSpeed(),
                         service_provider: E.default.getServiceProvider()
@@ -87420,8 +87424,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290207", "290207"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290207")), t = 0), t
+                let t = parseInt((e = "290222", "290222"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290222")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115148,8 +115152,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290207",
-                    versionHash: "9097626b12c424822738a58b14f87551707e646a"
+                    buildNumber: "290222",
+                    versionHash: "38b74c1c900aae709cbfecb8c133878ee4cfa6de"
                 }
             }
             n.r(t), n.d(t, {
@@ -170346,8 +170350,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714691625362",
-                                    build_number: "290207"
+                                    built_at: "1714692558439",
+                                    build_number: "290222"
                                 }
                             },
                             retries: 1
@@ -210700,166 +210704,109 @@
             "use strict";
             n.r(t), n.d(t, {
                 UserProfileCustomStatusBubble: function() {
-                    return N
+                    return E
                 }
             }), n("47120");
             var i = n("735250"),
                 r = n("470079"),
                 a = n("120356"),
                 s = n.n(a),
-                o = n("442837"),
-                l = n("264539"),
-                u = n("955623"),
-                d = n("481060"),
-                _ = n("596454"),
-                c = n("788307"),
-                E = n("393903"),
-                I = n("594174"),
-                T = n("221292"),
-                f = n("228168"),
-                S = n("981631"),
-                h = n("689938"),
-                A = n("336428");
-            let m = "text-sm/medium";
+                o = n("481060"),
+                l = n("596454"),
+                u = n("788307"),
+                d = n("393903"),
+                _ = n("228168"),
+                c = n("336428");
 
-            function N(e) {
+            function E(e) {
                 let {
                     statusActivity: t,
-                    profileType: a,
-                    user: N,
-                    onClose: p,
-                    animate: O = !0,
-                    hideTooltip: R = !1
-                } = e, C = {
-                    location: {
-                        page: S.AnalyticsPages.USER_PROFILE,
-                        section: a === f.UserProfileTypes.BITE_SIZE ? S.AnalyticsSections.PROFILE_POPOUT : S.AnalyticsSections.PROFILE_MODAL
-                    }
-                }, g = (0, o.useStateFromStores)([I.default], () => I.default.getCurrentUser()), L = (null == N ? void 0 : N.id) === (null == g ? void 0 : g.id), [v, D] = r.useState(1), {
-                    emoji: M
-                } = null != t ? t : {}, y = null != M, P = (null == t ? void 0 : t.state) != null && "" !== t.state ? t.state : null, U = null != P && P.length > 0, b = y || U, G = !b && L, w = r.useCallback(e => {
+                    profileType: n,
+                    animate: a = !0,
+                    hideTooltip: E = !1
+                } = e, [I, T] = r.useState(1), {
+                    emoji: f
+                } = null != t ? t : {}, S = null != f, h = (null == t ? void 0 : t.state) != null && "" !== t.state ? t.state : null, A = null != h && h.length > 0, m = S || A, N = r.useCallback(e => {
                     var t;
                     if (null == e) return;
                     let n = e.getBoundingClientRect(),
                         i = parseFloat(null !== (t = window.getComputedStyle(e).getPropertyValue("line-height")) && void 0 !== t ? t : "0"),
                         r = n.height;
-                    i > 0 && r > 0 && D(Math.floor(r / i))
-                }, []), B = (0, E.useResizeObserver)(w);
+                    i > 0 && r > 0 && T(Math.floor(r / i))
+                }, []), p = (0, d.useResizeObserver)(N);
                 if (r.useLayoutEffect(() => {
                         setTimeout(() => {
-                            w(B.current)
+                            N(p.current)
                         }, 200)
-                    }, [B, w]), !L && !b) return null;
-                let k = () => y ? U ? (0, i.jsx)(_.default, {
-                        className: A.statusEmojiInline,
-                        emojiId: M.id,
-                        emojiName: M.name,
-                        animated: !!M.animated
-                    }) : (0, i.jsx)(c.ActivityEmoji, {
-                        className: A.statusEmojiOnly,
-                        emoji: M,
-                        animate: O,
-                        hideTooltip: R
+                    }, [p, N]), !m) return null;
+                let O = () => S ? A ? (0, i.jsx)(l.default, {
+                        className: c.statusEmojiInline,
+                        emojiId: f.id,
+                        emojiName: f.name,
+                        animated: !!f.animated
+                    }) : (0, i.jsx)(u.ActivityEmoji, {
+                        className: c.statusEmojiOnly,
+                        emoji: f,
+                        animate: a,
+                        hideTooltip: E
                     }) : null,
-                    V = () => U ? (0, i.jsx)(d.Text, {
-                        variant: m,
-                        className: A.statusText,
-                        children: P
+                    R = () => A ? (0, i.jsx)(o.Text, {
+                        variant: "text-sm/medium",
+                        className: c.statusText,
+                        children: h
                     }) : null,
-                    x = () => {
-                        if (!b || !L) return null;
-                        let e = y && !U;
-                        return (0, i.jsxs)(i.Fragment, {
-                            children: [(0, i.jsx)("div", {
-                                className: s()(A.editGradient, e && A.editGradientEmojiOnly)
-                            }), (0, i.jsx)(d.Clickable, {
-                                className: s()(A.editClickable, e && A.editClickableEmojiOnly),
-                                onClick: F,
-                                children: (0, i.jsx)(u.PencilIcon, {
-                                    width: 16,
-                                    height: 16
-                                })
-                            })]
-                        })
-                    },
-                    F = () => {
-                        (0, T.trackUserProfileAction)({
-                            action: "PRESS_SET_CUSTOM_STATUS"
-                        }), null == p || p(), (0, d.openModalLazy)(async () => {
-                            let {
-                                default: e
-                            } = await Promise.all([n.e("99387"), n.e("47484")]).then(n.bind(n, "211065"));
-                            return t => (0, i.jsx)(e, {
-                                ...t,
-                                sourceAnalyticsContext: C
-                            })
-                        })
-                    },
-                    H = () => b || !L ? null : (0, i.jsxs)(d.Clickable, {
-                        onClick: F,
-                        className: A.content,
-                        children: [(0, i.jsx)(l.CirclePlusIcon, {
-                            className: A.addStatusIcon,
-                            colorClass: A.addStatusIconColor
-                        }), (0, i.jsx)(d.Text, {
-                            variant: m,
-                            className: A.addStatusPrompt,
-                            children: h.default.Messages.USER_SETTINGS_ADD_STATUS
-                        })]
-                    }),
-                    Y = () => {
+                    C = () => {
                         let e = s()({
-                            [A.content]: y && !U || v < 2,
-                            [A.contentOverflow]: v >= 2
+                            [c.content]: S && !A || I < 2,
+                            [c.contentOverflow]: I >= 2
                         });
                         return (0, i.jsxs)("div", {
                             className: e,
-                            ref: B,
-                            children: [x(), k(), V()]
+                            ref: p,
+                            children: [O(), R()]
                         })
                     },
-                    j = s()(A.positionStyle, {
-                        [A.biteSize]: a === f.UserProfileTypes.BITE_SIZE,
-                        [A.fullSize]: a === f.UserProfileTypes.FULL_SIZE
+                    g = s()(c.positionStyle, {
+                        [c.biteSize]: n === _.UserProfileTypes.BITE_SIZE,
+                        [c.fullSize]: n === _.UserProfileTypes.FULL_SIZE
                     }),
-                    W = s()(A.statusBubbleOuter, {
-                        [A.statusBubbleShape]: 1 === v && !U && y || v > 1,
-                        [A.statusBubbleSingleLineWithTextShape]: 1 === v && U || G,
-                        [A.biteSize]: a === f.UserProfileTypes.BITE_SIZE,
-                        [A.fullSize]: a === f.UserProfileTypes.FULL_SIZE
+                    L = s()(c.statusBubbleOuter, {
+                        [c.statusBubbleShape]: I <= 1 && !A && S || I > 1,
+                        [c.statusBubbleSingleLineWithTextShape]: 1 === I && A,
+                        [c.biteSize]: n === _.UserProfileTypes.BITE_SIZE,
+                        [c.fullSize]: n === _.UserProfileTypes.FULL_SIZE
                     }),
-                    K = s()(A.statusBubble, {
-                        [A.statusBubbleShape]: 1 === v && !U && y || v > 1,
-                        [A.statusBubbleSingleLineWithTextShape]: 1 === v && U || G,
-                        [A.statusBubbleEmojiOnlyPadding]: y && !U,
-                        [A.statusBubbleWithTextPadding]: U || G,
-                        [A.statusBubbleWithTextMinWidth]: U,
-                        [A.statusBubbleCopyStatusCursor]: b,
-                        [A.statusBubbleAddStatusCursor]: G
+                    v = s()(c.statusBubble, {
+                        [c.statusBubbleShape]: I <= 1 && !A && S || I > 1,
+                        [c.statusBubbleSingleLineWithTextShape]: I <= 1 && A,
+                        [c.statusBubbleEmojiOnlyPadding]: S && !A,
+                        [c.statusBubbleWithTextPadding]: A,
+                        [c.statusBubbleWithTextMinWidth]: A,
+                        [c.statusBubbleCopyStatusCursor]: m
                     });
-                if (a === f.UserProfileTypes.FULL_SIZE) return (0, i.jsx)("div", {
-                    className: j,
+                if (n === _.UserProfileTypes.FULL_SIZE) return (0, i.jsx)("div", {
+                    className: g,
                     children: (0, i.jsx)("div", {
-                        className: W,
-                        children: (0, i.jsxs)("span", {
-                            className: K,
-                            children: [H(), Y()]
+                        className: L,
+                        children: (0, i.jsx)("span", {
+                            className: v,
+                            children: C()
                         })
                     })
                 });
-                let z = s()({
-                    [A.statusBubbleEmojiOnlyBottomMargin]: y && !U,
-                    [A.statusBubbleMultiLineBottomMargin]: v > 1 && U
+                let D = s()({
+                    [c.statusBubbleEmojiOnlyBottomMargin]: S && !A,
+                    [c.statusBubbleMultiLineBottomMargin]: I > 1 && A
                 });
                 return (0, i.jsx)("div", {
-                    className: z,
+                    className: D,
                     children: (0, i.jsx)("div", {
-                        className: j,
+                        className: g,
                         children: (0, i.jsx)("div", {
-                            className: W,
-                            children: (0, i.jsxs)("span", {
-                                className: K,
-                                children: [H(), Y()]
+                            className: L,
+                            children: (0, i.jsx)("span", {
+                                className: v,
+                                children: C()
                             })
                         })
                     })
@@ -213850,10 +213797,8 @@
                         hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null,
                         profileType: _.UserProfileTypes.BITE_SIZE
                     }), (0, i.jsx)(u.UserProfileCustomStatusBubble, {
-                        user: t,
                         statusActivity: m,
-                        profileType: _.UserProfileTypes.BITE_SIZE,
-                        onClose: h
+                        profileType: _.UserProfileTypes.BITE_SIZE
                     })]
                 })
             }
@@ -248325,7 +248270,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9097626b12c424822738a58b14f87551707e646a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "38b74c1c900aae709cbfecb8c133878ee4cfa6de"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276984,7 +276929,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290207"
+                                build_number: "290222"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284311,7 +284256,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290207", "290207"), 10);
+                let a = parseInt((n = "290222", "290222"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -311776,4 +311721,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.a0e971f68affde53a5d1.js.map
+//# sourceMappingURL=35705.53b5a3bbf8ff16550bcf.js.map

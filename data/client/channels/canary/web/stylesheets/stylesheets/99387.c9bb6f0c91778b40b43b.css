@@ -26531,10 +26531,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     word-wrap: break-word
 }
 
-.statusBubbleAddStatusCursor__31830 {
-    cursor: pointer
-}
-
 .statusBubbleCopyStatusCursor_d67753 {
     cursor: text;
     -webkit-user-select: text;
@@ -26635,27 +26631,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     -webkit-line-clamp: unset
 }
 
-.content_faa8bf:hover .addStatusPrompt__07506 {
-    color: var(--text-normal)
-}
-
-.content_faa8bf:hover .addStatusIconColor__5979c {
-    fill: var(--interactive-hover)
-}
-
-.addStatusPrompt__07506 {
-    display: inline;
-    color: var(--text-muted)
-}
-
-.addStatusIcon__7d961 {
-    display: inline;
-    height: 18px;
-    width: 18px;
-    margin-right: 4px;
-    fill: var(--interactive-normal)
-}
-
 .statusText__32d26 {
     display: inline;
     color: var(--text-normal)
@@ -26672,32 +26647,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 .statusEmojiOnly__3469b {
     height: 32px;
     width: 32px
-}
-
-.editGradient__9944c {
-    background: linear-gradient(90deg, rgba(49, 51, 56, 0)0%, var(--bg-surface-overlay)100%);
-    position: absolute;
-    top: 10px;
-    right: 28px;
-    width: 44px;
-    height: 16px
-}
-
-.editGradientEmojiOnly_fff8b9 {
-    height: 32px
-}
-
-.editClickable__86536 {
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    opacity: 1;
-    background: var(--bg-surface-overlay);
-    cursor: pointer
-}
-
-.editClickableEmojiOnly__74b19 {
-    height: 32px
 }
 
 .header__725f2 {
@@ -84801,6 +84750,7 @@ input::-webkit-inner-spin-button {
 .legalTerms_a0b526 p {
     color: var(--channels-default);
     font-size: 12px;
+    line-height: 16px;
     margin: 0
 }
 
@@ -136194,4 +136144,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.10a9d688ae8075cd6b38.css.map*/
+/*# sourceMappingURL=99387.c9bb6f0c91778b40b43b.css.map*/

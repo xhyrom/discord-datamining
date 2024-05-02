@@ -25256,20 +25256,12 @@
         336428: function(e) {
             "use strict";
             e.exports = {
-                addStatusIcon: "addStatusIcon__7d961",
-                addStatusIconColor: "addStatusIconColor__5979c",
-                addStatusPrompt: "addStatusPrompt__07506",
                 biteSize: "biteSize__4396a",
                 content: "content_faa8bf",
                 contentOverflow: "contentOverflow__4ab1c",
-                editClickable: "editClickable__86536",
-                editClickableEmojiOnly: "editClickableEmojiOnly__74b19",
-                editGradient: "editGradient__9944c",
-                editGradientEmojiOnly: "editGradientEmojiOnly_fff8b9",
                 fullSize: "fullSize_b0d012",
                 positionStyle: "positionStyle_bf57a1",
                 statusBubble: "statusBubble__1a4c3",
-                statusBubbleAddStatusCursor: "statusBubbleAddStatusCursor__31830",
                 statusBubbleCopyStatusCursor: "statusBubbleCopyStatusCursor_d67753",
                 statusBubbleEmojiOnlyBottomMargin: "statusBubbleEmojiOnlyBottomMargin_eada36",
                 statusBubbleEmojiOnlyPadding: "statusBubbleEmojiOnlyPadding_ff949e",
