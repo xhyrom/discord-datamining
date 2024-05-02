@@ -84809,7 +84809,8 @@ input::-webkit-inner-spin-button {
 }
 
 .reviewButton__0cd54 {
-    margin-bottom: -8px
+    margin-bottom: -8px;
+    color: var(--interactive-active)
 }
 
 .countDownWrapper__60b05 {
@@ -136193,4 +136194,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.300854b9109294ba467a.css.map*/
+/*# sourceMappingURL=99387.10a9d688ae8075cd6b38.css.map*/
