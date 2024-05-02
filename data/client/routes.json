@@ -2183,6 +2183,10 @@
       "POST"
     ]
   },
+  "CHANGELOG_MESSAGES": {
+    "url": "/changelogs/@me/messages",
+    "allowed_methods": null
+  },
   "GUILD_APPLICATIONS": {
     "url": "/guilds/:param/applications",
     "allowed_methods": [
