@@ -145,6 +145,47 @@
                 return Object.keys(r)
             }, a.id = "290034", e.exports = a
         },
+        866483: function(e, t, n) {
+            var i = {
+                "./2017-11-16.mp4": "221825",
+                "./2019-12-17.mp4": "666940",
+                "./channel-following.png": "247815",
+                "./discovery.jpg": "778608",
+                "./discriminator.mp4": "990860",
+                "./g250k-cl.mp4": "909851",
+                "./header.mp4": "568621",
+                "./hypesquad-hack-week/header.png": "819091",
+                "./hypesquad-hack-week/paladins-loot.png": "742305",
+                "./ko-new-year.jpg": "265921",
+                "./league-rp-cl.mp4": "566584",
+                "./polish-week.png": "560437",
+                "./special-template/desktop-cta.png": "846033",
+                "./special-template/update-badge.svg": "623904",
+                "./stickers-launch/2020_PMM_STICKERS_Mrkt_BlogHdr_2500x1000.png": "928400",
+                "./stickers-launch/2020_PMM_STICKERS_Mrkt_DesktopHero_Left_180x220.png": "148821",
+                "./stickers-launch/2020_PMM_STICKERS_Mrkt_DesktopHero_Right_180x220.png": "982563",
+                "./stickers-launch/2020_PMM_STICKERS_Mrkt_Desktop_Changelog_658X220.png": "331628",
+                "./stickers-launch/2020_PMM_STICKERS_Mrkt_Desktop_FooterCTA_238x220.png": "765198",
+                "./stickers-launch/2020_PMM_STICKERS_Mrkt_MobileHero_375x190.png": "199469",
+                "./stickers-launch/2020_PMM_STICKERS_Mrkt_Mobile_FooterCTA_343x78.png": "199612",
+                "./store.jpg": "926213"
+            };
+
+            function r(e) {
+                return n(a(e))
+            }
+
+            function a(e) {
+                if (!n.o(i, e)) {
+                    var t = Error("Cannot find module '" + e + "'");
+                    throw t.code = "MODULE_NOT_FOUND", t
+                }
+                return i[e]
+            }
+            r.id = '"866483"', r.keys = function() {
+                return Object.keys(i)
+            }, r.resolve = a, e.exports = r
+        },
         435362: function(e, t, n) {
             var i = {
                 "./icon-file-acrobat.svg": "621680",
@@ -4596,6 +4637,94 @@
         726519: function(e, t, n) {
             "use strict";
             e.exports = n.p + "316fdae8ca10ec899a1c.svg"
+        },
+        221825: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "654f6b10a3c750818e45.mp4"
+        },
+        666940: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "141d5b664cbfca663df8.mp4"
+        },
+        247815: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "9f762d3a6cd9fc67475a.png"
+        },
+        778608: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "85ec550ca7bb90136473.jpg"
+        },
+        990860: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "04c05b42b2df22d928b5.mp4"
+        },
+        909851: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "4ad6da1474cbb03c9d6d.mp4"
+        },
+        568621: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "42ff20a9536a6003783b.mp4"
+        },
+        819091: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "da6d219c26aa860ea582.png"
+        },
+        742305: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "1ae3bb40e597a7c24db3.png"
+        },
+        265921: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "e6575a3c6da5b0ca3999.jpg"
+        },
+        566584: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "d7949cc88aad4a1adda5.mp4"
+        },
+        560437: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "37d1f1df4c39c86b29a3.png"
+        },
+        846033: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "e725ab096d484c134c88.png"
+        },
+        623904: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "c6d3ba9f3e7ec55bcda4.svg"
+        },
+        928400: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "d24db00734d3e5a18f8b.png"
+        },
+        148821: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "584da24318670f0043a0.png"
+        },
+        982563: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "b6d67e236de5dbba9881.png"
+        },
+        331628: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "1ba051b29d9571d8c437.png"
+        },
+        765198: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "8244e044b4d7423d1b34.png"
+        },
+        199469: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "a81defa90930ea5b1ea8.png"
+        },
+        199612: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "8cc6ed572dc6e39317c3.png"
+        },
+        926213: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "ddc95e15e7c28aa86a0d.jpg"
         },
         743134: function(e, t, n) {
             "use strict";
@@ -36827,7 +36956,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289888", ", Version Hash: ").concat("e3f77a8f711978379665f143090f40a5889373d5")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289893", ", Version Hash: ").concat("05cac3203387155b204c34703eb408eebc3e359a")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87236,8 +87365,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289888", "289888"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289888")), t = 0), t
+                let t = parseInt((e = "289893", "289893"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289893")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -113935,8 +114064,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289888",
-                    versionHash: "e3f77a8f711978379665f143090f40a5889373d5"
+                    buildNumber: "289893",
+                    versionHash: "05cac3203387155b204c34703eb408eebc3e359a"
                 }
             }
             n.r(t), n.d(t, {
@@ -166332,27 +166461,31 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return _
+                    return E
                 },
                 getInitialParserState: function() {
-                    return d
+                    return _
                 },
                 getInitialParserStateFromMessage: function() {
-                    return u
+                    return d
                 },
                 renderAutomodMessageMarkup: function() {
+                    return I
+                },
+                renderChangelogMessageMarkup: function() {
                     return c
                 }
             }), n("47120"), n("757143"), n("865427");
             var i = n("830121"),
                 r = n("454585"),
-                a = n("408433"),
-                s = n("981631");
-            let o = new Set([s.MessageEmbedTypes.IMAGE, s.MessageEmbedTypes.GIFV]),
-                l = new Set(["strong", "em", "u", "text", "inlineCode", "s", "spoiler"]);
+                a = n("55406"),
+                s = n("408433"),
+                o = n("981631");
+            let l = new Set([o.MessageEmbedTypes.IMAGE, o.MessageEmbedTypes.GIFV]),
+                u = new Set(["strong", "em", "u", "text", "inlineCode", "s", "spoiler"]);
 
-            function u(e, t) {
-                let n = d({
+            function d(e, t) {
+                let n = _({
                         channelId: e.channel_id,
                         messageId: e.id,
                         renderOptions: t
@@ -166366,7 +166499,7 @@
                 }
             }
 
-            function d(e) {
+            function _(e) {
                 let {
                     channelId: t,
                     messageId: n,
@@ -166392,23 +166525,30 @@
                 }
             }
 
-            function _(e) {
+            function c(e, t) {
+                return {
+                    hasSpoilerEmbeds: !1,
+                    content: r.default.reactParserFor(a.default.getDefaultRules(t))(e.content, !1, {})
+                }
+            }
+
+            function E(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
                 return function(e, t, n) {
                     let {
                         toAST: r = !1,
-                        hideSimpleEmbedContent: s = !0,
-                        formatInline: d = !1,
+                        hideSimpleEmbedContent: a = !0,
+                        formatInline: o = !1,
                         postProcessor: _
-                    } = n, c = !1, T = e(t.content, !0, u(t, n), (e, n) => (!Array.isArray(e) && (e = [e]), s && (e = function(e, t) {
+                    } = n, c = !1, E = e(t.content, !0, d(t, n), (e, n) => (!Array.isArray(e) && (e = [e]), a && (e = function(e, t) {
                         if (1 !== e.length || 1 !== t.length) return e;
                         let n = e[0],
                             i = t[0];
-                        return ("link" === n.type || "attachmentLink" === n.type) && o.has(i.type) && (0, a.isEmbedInline)(i) ? [] : e
-                    }(e, t.embeds)), !d && (e = function(e, t) {
-                        return t ? E(e) : ("paragraph" === e[0].type && e[0].content instanceof Array && (e[0].content = E(e[0].content)), e)
+                        return ("link" === n.type || "attachmentLink" === n.type) && l.has(i.type) && (0, s.isEmbedInline)(i) ? [] : e
+                    }(e, t.embeds)), !o && (e = function(e, t) {
+                        return t ? T(e) : ("paragraph" === e[0].type && e[0].content instanceof Array && (e[0].content = T(e[0].content)), e)
                     }(e, n)), c = function(e, t) {
-                        return t ? I(e) : "paragraph" === e[0].type && e[0].content instanceof Array && I(e[0].content)
+                        return t ? f(e) : "paragraph" === e[0].type && e[0].content instanceof Array && f(e[0].content)
                     }(e = function(e) {
                         let t = e.some(e => "link" !== e.type || !1);
                         return e.filter(e => {
@@ -166416,19 +166556,19 @@
                                 r = (0, i.parseQuestsEmbedCode)(e.target);
                             return !(n && null != r && !t)
                         })
-                    }(e), n), d && (e = function e(t) {
+                    }(e), n), o && (e = function e(t) {
                         return t.forEach(t => {
-                            l.has(t.type) && null != t.content && (Array.isArray(t.content) ? e(t.content) : t.content = t.content.replace(/\n/g, " "))
+                            u.has(t.type) && null != t.content && (Array.isArray(t.content) ? e(t.content) : t.content = t.content.replace(/\n/g, " "))
                         }), t
                     }(e)), null != _ && (e = _(e, n)), e));
                     return {
                         hasSpoilerEmbeds: c,
-                        content: T
+                        content: E
                     }
                 }(t.formatInline ? r.default.parseInlineReply : r.default.parse, e, t)
             }
 
-            function c(e, t, n) {
+            function I(e, t, n) {
                 var i;
                 return i = r.default.parseAutoModerationSystemMessage, i(e, !0, {
                     allowLinks: !1,
@@ -166448,7 +166588,7 @@
                 }, e => (!Array.isArray(e) && (e = [e]), e))
             }
 
-            function E(e) {
+            function T(e) {
                 if (e.some(e => "emoji" !== e.type && "customEmoji" !== e.type && "soundboard" !== e.type && ("string" != typeof e.content || "" !== e.content.trim()) && !0)) return e;
                 let t = 0;
                 return (e.forEach(e => {
@@ -166458,7 +166598,7 @@
                 }), e)
             }
 
-            function I(e) {
+            function f(e) {
                 return e.some(e => "spoiler" === e.type && Array.isArray(e.content) && e.content.some(e => "link" === e.type || "attachmentLink" === e.type))
             }
         },
@@ -168925,39 +169065,40 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return o
+                    return l
                 }
             });
             var i = n("470079"),
                 r = n("937889"),
                 a = n("761910"),
-                s = n("981631");
+                s = n("981631"),
+                o = n("126798");
 
-            function o(e, t) {
+            function l(e, t) {
                 let {
                     hideSimpleEmbedContent: n,
-                    formatInline: o = !1,
-                    noStyleAndInteraction: l = !1,
-                    isInteracting: u = !1,
-                    allowHeading: d = !1,
-                    allowList: _ = !1,
-                    allowLinks: c = !1,
-                    allowDevLinks: E = !1,
-                    allowSubtext: I = !1,
-                    previewLinkTarget: T = !1
+                    formatInline: l = !1,
+                    noStyleAndInteraction: u = !1,
+                    isInteracting: d = !1,
+                    allowHeading: _ = !1,
+                    allowList: c = !1,
+                    allowLinks: E = !1,
+                    allowDevLinks: I = !1,
+                    allowSubtext: T = !1,
+                    previewLinkTarget: f = !1
                 } = t;
-                return i.useMemo(() => null != e.customRenderedContent ? e.customRenderedContent : e.isCommandType() && 0 === e.content.length || e.hasFlag(s.MessageFlags.LOADING) ? (0, a.default)(e) : (0, r.default)(e, {
+                return i.useMemo(() => null != e.customRenderedContent ? e.customRenderedContent : e.isCommandType() && 0 === e.content.length || e.hasFlag(s.MessageFlags.LOADING) ? (0, a.default)(e) : e.type === s.MessageTypes.CHANGELOG ? (0, r.renderChangelogMessageMarkup)(e, o) : (0, r.default)(e, {
                     hideSimpleEmbedContent: n,
-                    formatInline: o,
-                    noStyleAndInteraction: l,
-                    isInteracting: u,
-                    allowHeading: d,
-                    allowList: _,
-                    allowLinks: c,
-                    allowSubtext: I,
-                    allowDevLinks: E,
-                    previewLinkTarget: T
-                }), [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, n, o, l, u, d, _, c, T, I])
+                    formatInline: l,
+                    noStyleAndInteraction: u,
+                    isInteracting: d,
+                    allowHeading: _,
+                    allowList: c,
+                    allowLinks: E,
+                    allowSubtext: T,
+                    allowDevLinks: I,
+                    previewLinkTarget: f
+                }), [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, n, l, u, d, _, c, E, f, T])
             }
         },
         761910: function(e, t, n) {
@@ -169215,8 +169356,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714666654132",
-                                    build_number: "289888"
+                                    built_at: "1714667354292",
+                                    build_number: "289893"
                                 }
                             },
                             retries: 1
@@ -247122,7 +247263,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e3f77a8f711978379665f143090f40a5889373d5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "05cac3203387155b204c34703eb408eebc3e359a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -271085,6 +271226,105 @@
                 return -1 !== n.indexOf("safari") && !(-1 !== n.indexOf("chrome")) && -1 !== n.indexOf("version/") && i
             }
         },
+        55406: function(e, t, n) {
+            "use strict";
+            let i;
+            n.r(t), n("757143");
+            var r = n("302454"),
+                a = n.n(r),
+                s = n("594199");
+            let o = a().defaultRules.lheading,
+                l = a().defaultRules.heading,
+                u = a().defaultRules.link,
+                d = a().defaultRules.image,
+                _ = a().defaultRules.list,
+                c = a().defaultRules.blockQuote,
+                E = a().defaultRules.paragraph,
+                I = /\{(.+?)}/,
+                T = /^\$(\w+?)\$/;
+            i = n("235375");
+            let f = e => {
+                    let {
+                        transformUpperCase: t = !1
+                    } = e;
+                    return (e, n, i) => {
+                        let r = I.exec(e[1]),
+                            s = e[1].replace(I, "");
+                        return t && (s = s.toUpperCase()), {
+                            className: null != r ? r[1] : null,
+                            level: "=" === e[2] ? 1 : 2,
+                            content: a().parseInline(n, s, i)
+                        }
+                    }
+                },
+                S = e => ({
+                    ...i.baseRules,
+                    image: {
+                        ...d,
+                        ..."function" == typeof i.customRules.image ? i.customRules.image(e) : i.customRules.image
+                    },
+                    link: {
+                        ...u,
+                        ..."function" == typeof i.customRules.link ? i.customRules.link(e) : i.customRules.link
+                    },
+                    list: {
+                        ..._,
+                        ..."function" == typeof i.customRules.list ? i.customRules.list(e) : i.customRules.list
+                    },
+                    interpolation: {
+                        order: s.default.order,
+                        match: e => T.exec(e),
+                        parse(e, t, n) {
+                            let i = n.interpolations[e[1]];
+                            return null == i ? {
+                                type: "text",
+                                content: e[0]
+                            } : {
+                                type: "interpolation",
+                                renderer: i
+                            }
+                        },
+                        react: e => e.renderer()
+                    },
+                    lheading: {
+                        ...o,
+                        parse: f({
+                            transformUpperCase: !0
+                        }),
+                        ..."function" == typeof i.customRules.lheading ? i.customRules.lheading(e) : i.customRules.lheading
+                    },
+                    heading: {
+                        ...l,
+                        ..."function" == typeof i.customRules.heading ? i.customRules.heading(e) : i.customRules.heading
+                    },
+                    blockQuote: {
+                        ...c,
+                        ..."function" == typeof i.customRules.blockQuote ? i.customRules.blockQuote(e) : i.customRules.blockQuote
+                    },
+                    paragraph: {
+                        ...E,
+                        ..."function" == typeof i.customRules.paragraph ? i.customRules.paragraph(e) : i.customRules.paragraph
+                    }
+                }),
+                h = e => ({
+                    lheading: {
+                        ...o,
+                        parse: f({
+                            transformUpperCase: !1
+                        }),
+                        ..."function" == typeof i.customRules.lheading ? i.customRules.lheading(e) : i.customRules.lheading
+                    }
+                });
+            t.default = {
+                getDefaultRules: e => ({
+                    ...S(e)
+                }),
+                getSpecialRules: e => ({
+                    ...S(e),
+                    ...h(e)
+                })
+            }
+        },
         934415: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -275682,7 +275922,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289888"
+                                build_number: "289893"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -280836,6 +281076,116 @@
                 }
             }
         },
+        235375: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                baseRules: function() {
+                    return m
+                },
+                customRules: function() {
+                    return N
+                }
+            }), n("47120");
+            var i = n("735250"),
+                r = n("470079"),
+                a = n("120356"),
+                s = n.n(a),
+                o = n("302454"),
+                l = n.n(o),
+                u = n("481060"),
+                d = n("37234"),
+                _ = n("230711"),
+                c = n("454585"),
+                E = n("703656"),
+                I = n("626135"),
+                T = n("981631"),
+                f = n("596401");
+            let S = l().defaultRules.link,
+                h = {
+                    section: T.AnalyticsSections.SETTINGS_CHANGELOG
+                },
+                A = e => {
+                    var t, n;
+                    let {
+                        level: i,
+                        children: a,
+                        className: o = null,
+                        styleSheet: l = {}
+                    } = e, d = (0, u.usePrivateHeadingLevel)(), _ = parseInt(i, 10), c = isNaN(_) ? 1 : _;
+                    return r.createElement("h".concat(d + c - 1), {
+                        className: s()(...(t = l, null == (n = o) ? [] : n.split(" ").map(e => t[e])))
+                    }, a)
+                },
+                m = c.default.defaultRules,
+                N = {
+                    link: {
+                        parse(e, t, n) {
+                            let i;
+                            let r = e[2],
+                                a = r.startsWith("https://discordapp.com/nitro") || r.startsWith("https://discord.com/nitro"),
+                                s = r.startsWith("https://discordapp.com/hypesquad") || r.startsWith("https://discord.com/hypesquad"),
+                                o = r.startsWith("/shop/fullscreen?source=1") || r.startsWith("/activities");
+                            return i = a || s ? e => {
+                                I.default.track(T.AnalyticEvents.PREMIUM_PROMOTION_OPENED, {
+                                    location: h
+                                }), a ? _.default.open(T.UserSettingsSections.PREMIUM) : s && _.default.open(T.UserSettingsSections.HYPESQUAD_ONLINE), n.changeLog.track(T.AnalyticEvents.CHANGE_LOG_CTA_CLICKED, {
+                                    cta_type: "nitro"
+                                }), (0, u.closeModal)(f.CHANGELOG_MODAL_KEY), e.preventDefault()
+                            } : o ? e => {
+                                (0, E.transitionTo)(r), n.changeLog.track(T.AnalyticEvents.CHANGE_LOG_CTA_CLICKED, {
+                                    ...I.default.getCampaignParams(r)
+                                }), (0, d.popAllLayers)(), (0, u.closeModal)(f.CHANGELOG_MODAL_KEY), e.preventDefault()
+                            } : () => {
+                                n && "function" == typeof n.onLinkClick && n.onLinkClick(r), n.changeLog.track(T.AnalyticEvents.CHANGE_LOG_CTA_CLICKED, {
+                                    ...I.default.getCampaignParams(r)
+                                })
+                            }, {
+                                ...S.parse(e, t, n),
+                                callToAction: i
+                            }
+                        },
+                        react: (e, t, n) => (0, i.jsx)(u.Anchor, {
+                            href: l().sanitizeUrl(e.target),
+                            title: e.title,
+                            onClick: e.callToAction,
+                            target: "_blank",
+                            className: e.callToAction ? "cta" : void 0,
+                            children: t(e.content, n)
+                        }, n.key)
+                    },
+                    lheading: e => ({
+                        react: (t, n, r) => (0, i.jsx)(A, {
+                            level: t.level,
+                            className: t.className,
+                            styleSheet: e,
+                            children: n(t.content, r)
+                        }, r.key)
+                    }),
+                    heading: {
+                        react: (e, t, n) => (0, i.jsx)(A, {
+                            level: e.level,
+                            children: t(e.content, n)
+                        }, n.key)
+                    },
+                    image: {
+                        react(e, t, r) {
+                            let a = n("866483")("../../images/change-log/".concat(e.target).replace("../../images/change-log/", "./"));
+                            return (0, i.jsx)("img", {
+                                alt: e.alt,
+                                src: a
+                            }, r.key)
+                        }
+                    },
+                    blockQuote: {
+                        react: m.blockQuote.react
+                    },
+                    paragraph: {
+                        react: (e, t, n) => (0, i.jsx)("p", {
+                            children: t(e.content, n)
+                        }, n.key)
+                    }
+                }
+        },
         838440: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -282899,7 +283249,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "289888", "289888"), 10);
+                let a = parseInt((n = "289893", "289893"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -310299,4 +310649,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.5fd2062f5996933267a6.js.map
+//# sourceMappingURL=35705.6ab76d25df9ff2472600.js.map
