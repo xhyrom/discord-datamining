@@ -36827,7 +36827,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289851", ", Version Hash: ").concat("f238f11f174e5ec8b98801ee9aaa4569bb3817ad")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289858", ", Version Hash: ").concat("7dc2b0fa0020e8059820f78b644cb284339b4b03")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87236,8 +87236,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289851", "289851"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289851")), t = 0), t
+                let t = parseInt((e = "289858", "289858"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289858")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -101553,63 +101553,71 @@
             var i, r;
             n.r(t), n.d(t, {
                 CLAN_BADGE_NUM_CUSTOMIZABLE_COLORS: function() {
-                    return o
+                    return u
                 },
                 CLAN_BADGE_PALETTE_PRESETS: function() {
                     return a
+                },
+                CLAN_BADGE_PRIMARY_DEFAULT: function() {
+                    return s
+                },
+                CLAN_BADGE_SECONDARY_DEFAULT: function() {
+                    return o
                 },
                 ClanBadgeKind: function() {
                     return i
                 },
                 getRandomClanBadgePreset: function() {
-                    return s
+                    return l
                 }
             }), (r = i || (i = {}))[r.SWORD = 0] = "SWORD", r[r.WATER_DROP = 1] = "WATER_DROP", r[r.SKULL = 2] = "SKULL", r[r.TOADSTOOL = 3] = "TOADSTOOL", r[r.MOON = 4] = "MOON", r[r.LIGHTNING = 5] = "LIGHTNING", r[r.LEAF = 6] = "LEAF", r[r.HEART = 7] = "HEART", r[r.FIRE = 8] = "FIRE", r[r.COMPASS = 9] = "COMPASS", r[r.CROSSHAIRS = 10] = "CROSSHAIRS", r[r.FLOWER = 11] = "FLOWER", r[r.FORCE = 12] = "FORCE", r[r.GEM = 13] = "GEM", r[r.LAVA = 14] = "LAVA", r[r.PSYCHIC = 15] = "PSYCHIC", r[r.SMOKE = 16] = "SMOKE", r[r.SNOW = 17] = "SNOW", r[r.SOUND = 18] = "SOUND", r[r.SUN = 19] = "SUN", r[r.WIND = 20] = "WIND";
             let a = [{
-                primary: "#ff1c90",
-                secondary: "#ff7fc0"
-            }, {
-                primary: "#32839a",
-                secondary: "#71c2d9"
-            }, {
-                primary: "#568d00",
-                secondary: "#94cf38"
-            }, {
-                primary: "#8a43ff",
-                secondary: "#bd95ff"
-            }, {
-                primary: "#9b3fe5",
-                secondary: "#cc8dff"
-            }, {
-                primary: "#c03f7d",
-                secondary: "#ff80bd"
-            }, {
-                primary: "#d14242",
-                secondary: "#ff8989"
-            }, {
-                primary: "#ff8f1c",
-                secondary: "#ffae77"
-            }, {
-                primary: "#eebe1a",
-                secondary: "#fffc7f"
-            }, {
-                primary: "#92ff7f",
-                secondary: "#27e772"
-            }, {
-                primary: "#32a070",
-                secondary: "#57b59e"
-            }, {
-                primary: "#6d6d6d",
-                secondary: "#737373"
-            }, {
-                primary: "#3f3f3f",
-                secondary: "#555555"
-            }];
+                    primary: "#ff1c90",
+                    secondary: "#ff7fc0"
+                }, {
+                    primary: "#32839a",
+                    secondary: "#71c2d9"
+                }, {
+                    primary: "#568d00",
+                    secondary: "#94cf38"
+                }, {
+                    primary: "#8a43ff",
+                    secondary: "#bd95ff"
+                }, {
+                    primary: "#9b3fe5",
+                    secondary: "#cc8dff"
+                }, {
+                    primary: "#c03f7d",
+                    secondary: "#ff80bd"
+                }, {
+                    primary: "#d14242",
+                    secondary: "#ff8989"
+                }, {
+                    primary: "#ff8f1c",
+                    secondary: "#ffae77"
+                }, {
+                    primary: "#eebe1a",
+                    secondary: "#fffc7f"
+                }, {
+                    primary: "#92ff7f",
+                    secondary: "#27e772"
+                }, {
+                    primary: "#32a070",
+                    secondary: "#57b59e"
+                }, {
+                    primary: "#6d6d6d",
+                    secondary: "#737373"
+                }, {
+                    primary: "#3f3f3f",
+                    secondary: "#555555"
+                }],
+                s = a[0].primary,
+                o = a[0].secondary;
 
-            function s() {
+            function l() {
                 return a[Math.floor(Math.random() * a.length)]
             }
-            let o = {
+            let u = {
                 0: 2,
                 1: 1,
                 2: 1,
@@ -101646,7 +101654,13 @@
                     return V
                 },
                 CLAN_BRAND_PALETTE_PRESETS_BY_NAME: function() {
+                    return H
+                },
+                CLAN_BRAND_PRIMARY_DEFAULT: function() {
                     return x
+                },
+                CLAN_BRAND_SECONDARY_DEFAULT: function() {
+                    return F
                 },
                 CLAN_SETTINGS_MODAL_LAYER_KEY: function() {
                     return m
@@ -101679,7 +101693,7 @@
                     return P
                 },
                 HOISTED_SEARCH_APPLICATION_IDS_BY_PRIORITY: function() {
-                    return j
+                    return K
                 },
                 IDENTITY_TRAITS: function() {
                     return G
@@ -101721,7 +101735,7 @@
                     return U
                 },
                 ensureUserClanData: function() {
-                    return H
+                    return j
                 },
                 getPlaystyleOptions: function() {
                     return M
@@ -101730,7 +101744,7 @@
                     return D
                 },
                 getRandomClanBrandPreset: function() {
-                    return F
+                    return Y
                 },
                 getSortedTraits: function() {
                     return function e(t, n) {
@@ -101743,7 +101757,7 @@
                     }
                 },
                 toServerClanData: function() {
-                    return Y
+                    return W
                 }
             }), n("47120"), n("653041");
             var i, r, a, s, o, l, u, d, _, c, E, I, T = n("913527"),
@@ -101855,16 +101869,18 @@
                     primary: "#4892d5",
                     secondary: "#78b6f0"
                 }],
-                x = Object.fromEntries(V.map(e => [e.name, {
+                x = V[0].primary,
+                F = V[0].secondary,
+                H = Object.fromEntries(V.map(e => [e.name, {
                     primary: e.primary,
                     secondary: e.secondary
                 }]));
 
-            function F() {
+            function Y() {
                 return V[Math.floor(Math.random() * V.length)]
             }
 
-            function H(e) {
+            function j(e) {
                 return null == e ? null : "identityGuildId" in e ? e : {
                     identityGuildId: e.identity_guild_id,
                     identityEnabled: e.identity_enabled,
@@ -101873,12 +101889,12 @@
                 }
             }
 
-            function Y(e) {
+            function W(e) {
                 return {
                     tag: e.tag
                 }
             }
-            let j = new Map(["432980957394370572", "363445589247131668", "356869127241072640", "700136079562375258", "356875570916753438", "1158877933042143272", "1197827812623650866", "356876176465199104", "1167674267748540516", "542075586886107149", "356875221078245376", "1149118246826561609", "356877880938070016", "356875988589740042", "762434991303950386", "356873622985506820", "356876590342340608", "1205090671527071784", "1182713227491147776", "631914894446297148", "1137125502985961543", "357607478105604096", "359509007423242240", "1121201675240210523", "643897785271189524", "742897755160313986", "356888738724446208", "1199745463918788740", "1116835216464543946", "406637848297472017", "356888961353908224", "905961880789590076", "367827983903490050", "356944273133928458", "356942674672091136", "946609449680908348", "356875762940379136", "615752773690064908", "357607133254254632", "356943499456937984", "477175586805252107", "787443973538971748", "359508713658253318", "356877880938070016", "422772752647323649", "356954277803065354", "359509387670192128", "428055627030331402", "363447565905166336", "372438022647578634", "614380482620293151", "506950362461110273", "356879032584896512", "1161772875901051042", "535371564850479134", "363413743335374859", "385538724592746496", "426526722322726912", "1174041358995042375", "1124351876033425529", "477152881196269569", "1113966530531704943", "425778010222886912", "356875890958925834", "1124358970618953818", "356888577310851072", "398632010442211348", "1124349969906815007", "770314100885422095", "1080277149623271444", "428054228511227914", "358420454764969994", "358421669603311616", "363430548028522496", "1129504162200166401", "1200228630245159032", "356889262362329098", "356887282982191114", "363409643973771264", "1164697075582238730", "940810636273795162", "982316905262120990", "359510095811444736", "363411421553360896", "359509332490059776", "1162076274622222346", "1162085521816813721", "359507724196773888", "359801269008859136", "569253958967885828", "457301824110723113", "1140238527980916757", "1124353632758939688", "542075586886107149", "512699108809637890", "653432003798106122"].map((e, t, n) => [e, n.length - t]));
+            let K = new Map(["432980957394370572", "363445589247131668", "356869127241072640", "700136079562375258", "356875570916753438", "1158877933042143272", "1197827812623650866", "356876176465199104", "1167674267748540516", "542075586886107149", "356875221078245376", "1149118246826561609", "356877880938070016", "356875988589740042", "762434991303950386", "356873622985506820", "356876590342340608", "1205090671527071784", "1182713227491147776", "631914894446297148", "1137125502985961543", "357607478105604096", "359509007423242240", "1121201675240210523", "643897785271189524", "742897755160313986", "356888738724446208", "1199745463918788740", "1116835216464543946", "406637848297472017", "356888961353908224", "905961880789590076", "367827983903490050", "356944273133928458", "356942674672091136", "946609449680908348", "356875762940379136", "615752773690064908", "357607133254254632", "356943499456937984", "477175586805252107", "787443973538971748", "359508713658253318", "356877880938070016", "422772752647323649", "356954277803065354", "359509387670192128", "428055627030331402", "363447565905166336", "372438022647578634", "614380482620293151", "506950362461110273", "356879032584896512", "1161772875901051042", "535371564850479134", "363413743335374859", "385538724592746496", "426526722322726912", "1174041358995042375", "1124351876033425529", "477152881196269569", "1113966530531704943", "425778010222886912", "356875890958925834", "1124358970618953818", "356888577310851072", "398632010442211348", "1124349969906815007", "770314100885422095", "1080277149623271444", "428054228511227914", "358420454764969994", "358421669603311616", "363430548028522496", "1129504162200166401", "1200228630245159032", "356889262362329098", "356887282982191114", "363409643973771264", "1164697075582238730", "940810636273795162", "982316905262120990", "359510095811444736", "363411421553360896", "359509332490059776", "1162076274622222346", "1162085521816813721", "359507724196773888", "359801269008859136", "569253958967885828", "457301824110723113", "1140238527980916757", "1124353632758939688", "542075586886107149", "512699108809637890", "653432003798106122"].map((e, t, n) => [e, n.length - t]));
             (I = l || (l = {}))[I.SIZE_12 = 12] = "SIZE_12", I[I.SIZE_16 = 16] = "SIZE_16", I[I.SIZE_24 = 24] = "SIZE_24", I[I.SIZE_36 = 36] = "SIZE_36"
         },
         963202: function(e, t, n) {
@@ -113892,8 +113908,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289851",
-                    versionHash: "f238f11f174e5ec8b98801ee9aaa4569bb3817ad"
+                    buildNumber: "289858",
+                    versionHash: "7dc2b0fa0020e8059820f78b644cb284339b4b03"
                 }
             }
             n.r(t), n.d(t, {
@@ -169187,8 +169203,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714656229019",
-                                    build_number: "289851"
+                                    built_at: "1714660477211",
+                                    build_number: "289858"
                                 }
                             },
                             retries: 1
@@ -247075,7 +247091,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "f238f11f174e5ec8b98801ee9aaa4569bb3817ad"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7dc2b0fa0020e8059820f78b644cb284339b4b03"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -275632,7 +275648,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289851"
+                                build_number: "289858"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282849,7 +282865,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "289851", "289851"), 10);
+                let a = parseInt((n = "289858", "289858"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -310249,4 +310265,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.1bf0a2593794145aff09.js.map
+//# sourceMappingURL=35705.ceb0635d90c475ab9b87.js.map
