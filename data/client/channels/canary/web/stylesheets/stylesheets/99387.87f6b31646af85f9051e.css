@@ -29654,7 +29654,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    position: relative
+    position: relative;
+    max-height: 185px
 }
 
 .outerContainerGiftInventory_a773b4 {
@@ -29709,6 +29710,10 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     padding: 20px 16px
 }
 
+.headerExpandedWrapper__7cc6d {
+    width: 100%
+}
+
 .headerCollapsedContent_de6d39 {
     height: 100px;
     width: 100%
@@ -29760,7 +29765,14 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .questInfo__00cc0 {
-    margin-top: 4px
+    margin-top: 4px;
+    overflow: hidden
+}
+
+.heading__506a4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
 }
 
 .outerContainer__35e1f:after {
@@ -136131,4 +136143,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.a1d18835826b3c25bee2.css.map*/
+/*# sourceMappingURL=99387.87f6b31646af85f9051e.css.map*/
