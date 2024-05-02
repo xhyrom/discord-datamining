@@ -1212,6 +1212,7 @@
                     SEARCH_TABS_GUILD: _ => "/guilds/".concat(_, "/messages/search/tabs"),
                     SEARCH_DMS: "/users/@me/messages/search",
                     SEARCH_TABS_DMS: "/users/@me/messages/search/tabs",
+                    CHANGELOG_MESSAGES: "/changelogs/@me/messages",
                     GUILD_APPLICATIONS: _ => "/guilds/".concat(_, "/applications"),
                     APPLIED_GUILD_BOOSTS_FOR_GUILD: _ => "/guilds/".concat(_, "/premium/subscriptions"),
                     APPLIED_GUILD_BOOST: (_, E) => "/guilds/".concat(_, "/premium/subscriptions/").concat(E),
@@ -2616,7 +2617,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-a5ccc2407ae9d4e1d6eabc83db72fa5398b720b1",
+                    release: "discord_web-313ee29da7dddad472eedc09777f85236fed65ec",
                     beforeSend: _ => {
                         var E, e;
                         return !(null != (E = _).exception && null != E.exception.values && E.exception.values.every(_ => null == _.stacktrace || null != _.stacktrace.frames && 1 === _.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || a.some(_ => window.navigator.appVersion.toLowerCase().indexOf(_) >= 0)) && !R() && !("Aborted" === (e = _).message || "cancel captcha" === e.message) && t() ? _ : null
@@ -2634,7 +2635,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), I.setTag("buildNumber", (_ = "290121", "290121")), I.setTag("builtAt", String("1714684202328"));
+                }), I.setTag("buildNumber", (_ = "290131", "290131")), I.setTag("builtAt", String("1714685360076"));
                 let E = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != E && "object" == typeof E)
                     for (let _ in E) I.setTag(_, E[_]);
@@ -14050,4 +14051,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84471.cff9b96cfdb234314e80.js.map
+//# sourceMappingURL=84471.4031f6dd24b1b4e60bc3.js.map
