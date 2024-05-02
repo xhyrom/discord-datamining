@@ -1919,6 +1919,7 @@
         187885: function(e) {
             "use strict";
             e.exports = {
+                clanBadgeContainer: "clanBadgeContainer_c2e41c",
                 gemIcon: "gemIcon__1ad95",
                 premiumTooltipFooterBackground: "premiumTooltipFooterBackground_a2a9fd",
                 tooltipBodyContainer: "tooltipBodyContainer_cf18cf",
@@ -4027,7 +4028,6 @@
                 clickable: "clickable_a2c5ad",
                 content: "content__3b07e",
                 disabled: "disabled__50fd0",
-                fade: "fade__3c6be",
                 flipped: "flipped__45ed5",
                 guestSuffix: "guestSuffix_e55f97",
                 hangStatusIcon: "hangStatusIcon__367ef",
