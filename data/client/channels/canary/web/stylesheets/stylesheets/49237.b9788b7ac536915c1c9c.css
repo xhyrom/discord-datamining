@@ -12184,7 +12184,14 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 .contentImagesUserPopoutV2_cbfb04,
 .contentImagesBiteSizePopout_f9ea3c,
 .contentImagesStreamPreview__2ac27,
-.contentImagesVoiceChannel__06486,
+.contentImagesVoiceChannel__06486 {
+    margin-left: 10px
+}
+
+.contentImagesBiteSizePopout_f9ea3c {
+    margin-right: 10px
+}
+
 .contentImagesActivityFeed__7b53b,
 .contentImagesProfile_a073ca,
 .contentImagesProfileV2__5afe1,
@@ -12498,6 +12505,11 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     display: flex;
     flex-direction: row;
     width: 100%
+}
+
+.actions__8fd6d {
+    align-items: center;
+    display: flex
 }
 
 .nowrap_ae4857 {
@@ -28270,4 +28282,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.bbcfeb7797aa6fe6a2ae.css.map*/
+/*# sourceMappingURL=49237.b9788b7ac536915c1c9c.css.map*/
