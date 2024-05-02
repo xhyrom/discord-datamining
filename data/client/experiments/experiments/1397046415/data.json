@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-05_clans_valorant_prepilot",
+    "label": "Clans Valorant Prepilot",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable creation of clan guilds - Valorant"
+    ],
+    "hash": 1397046415,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
