@@ -26675,6 +26675,32 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     width: 32px
 }
 
+.editGradient__9944c {
+    background: linear-gradient(90deg, rgba(49, 51, 56, 0)0%, var(--bg-surface-overlay)100%);
+    position: absolute;
+    top: 10px;
+    right: 28px;
+    width: 44px;
+    height: 16px
+}
+
+.editGradientEmojiOnly_fff8b9 {
+    height: 32px
+}
+
+.editClickable__86536 {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    opacity: 1;
+    background: var(--bg-surface-overlay);
+    cursor: pointer
+}
+
+.editClickableEmojiOnly__74b19 {
+    height: 32px
+}
+
 .header__725f2 {
     z-index: 2;
     min-height: calc(45px + var(--custom-user-banner-height-bite-size))
@@ -35067,24 +35093,22 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .progressContainer__378bd {
     display: flex;
+    flex-direction: row;
+    align-items: flex-end;
     gap: 4px;
     width: 100%
 }
 
-.progressStepContainer__76950 {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    height: 4px;
-    padding: 8px 0
-}
-
 .progressStepTooltip_defee0 {
-    margin-bottom: -4px
+    margin-bottom: -4px;
+    text-align: center;
+    display: flex;
+    flex: 1
 }
 
 .progressStep_dec95e {
-    flex: 1;
+    flex-shrink: 0;
+    height: 4px;
     border-radius: var(--radius-sm);
     background-color: var(--interactive-muted);
     overflow: hidden;
@@ -35101,6 +35125,22 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .customProgressStepFill_e1a0a9 {
     background-color: var(--custom-clan-bg)
+}
+
+.progressStepWrapper__6113c {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    padding: 8px 0
+}
+
+.errorIcon__11e5e {
+    align-self: center;
+    height: 12px;
+    width: 12px;
+    color: var(--status-danger)
 }
 
 .buttonsContainer_a90621 {
@@ -35368,6 +35408,17 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .charterClanBadge__6db2b {
     margin-right: 4px
+}
+
+.errorText_e99eec {
+    text-align: right;
+    margin-right: 16px
+}
+
+.errorLink_e96e0d {
+    color: var(--status-danger);
+    -webkit-text-decoration: underline;
+    text-decoration: underline
 }
 
 .modal_a2e1b0 {
@@ -136143,4 +136194,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.87f6b31646af85f9051e.css.map*/
+/*# sourceMappingURL=99387.d7cc2a8bf22639628cdc.css.map*/
