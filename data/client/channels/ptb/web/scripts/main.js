@@ -36956,7 +36956,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289960", ", Version Hash: ").concat("8112a661c33625184043c289a7c13b1729de9b89")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289971", ", Version Hash: ").concat("1e12be95ba16817c220d9236dade6315e6862e02")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -47806,6 +47806,7 @@
                 ELEVATED_PERMISSIONS_SOUND_NO_SOUND_BUTTON: "Stream Without Sound",
                 ELEVATED_PERMISSIONS_SOUND_REQUEST_ACCESS_BUTTON: "Grant Access",
                 CUSTOM_STATUS: "Custom Status",
+                CUSTOM_STATUS_ADD_STATUS: "Add Status",
                 CUSTOM_STATUS_SET_CUSTOM_STATUS: "Set a custom status",
                 CUSTOM_STATUS_SET_CUSTOM_STATUS_CTA: "Set Custom Status",
                 CUSTOM_STATUS_CHANGE_CUSTOM_STATUS_A11Y_LABEL: "Change custom status",
@@ -87375,8 +87376,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289960", "289960"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289960")), t = 0), t
+                let t = parseInt((e = "289971", "289971"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289971")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -114150,8 +114151,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289960",
-                    versionHash: "8112a661c33625184043c289a7c13b1729de9b89"
+                    buildNumber: "289971",
+                    versionHash: "1e12be95ba16817c220d9236dade6315e6862e02"
                 }
             }
             n.r(t), n.d(t, {
@@ -151754,7 +151755,7 @@
                     },
                     async open(e, t, i, r) {
                         var a;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("56630"), n.e("58227"), n.e("43643"), n.e("85093"), n.e("85552"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("67582"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("6085")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("56630"), n.e("58227"), n.e("43643"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("67582"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("6085")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         a.default.dispatch({
@@ -169443,8 +169444,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714672241708",
-                                    build_number: "289960"
+                                    built_at: "1714673533839",
+                                    build_number: "289971"
                                 }
                             },
                             retries: 1
@@ -209806,101 +209807,144 @@
             "use strict";
             n.r(t), n.d(t, {
                 UserProfileCustomStatusBubble: function() {
-                    return E
+                    return m
                 }
             }), n("47120");
             var i = n("735250"),
                 r = n("470079"),
                 a = n("120356"),
                 s = n.n(a),
-                o = n("481060"),
-                l = n("596454"),
-                u = n("788307"),
-                d = n("393903"),
-                _ = n("228168"),
-                c = n("336428");
+                o = n("442837"),
+                l = n("264539"),
+                u = n("481060"),
+                d = n("596454"),
+                _ = n("788307"),
+                c = n("393903"),
+                E = n("594174"),
+                I = n("221292"),
+                T = n("228168"),
+                f = n("981631"),
+                S = n("689938"),
+                h = n("336428");
+            let A = "text-sm/medium";
 
-            function E(e) {
+            function m(e) {
                 let {
                     statusActivity: t,
-                    profileType: n,
-                    animate: a = !0,
-                    hideTooltip: E = !1
-                } = e, [I, T] = r.useState(1), f = r.useCallback(e => {
+                    profileType: a,
+                    user: m,
+                    onClose: N,
+                    animate: p = !0,
+                    hideTooltip: O = !1
+                } = e, R = {
+                    location: {
+                        page: f.AnalyticsPages.USER_PROFILE,
+                        section: a === T.UserProfileTypes.BITE_SIZE ? f.AnalyticsSections.PROFILE_POPOUT : f.AnalyticsSections.PROFILE_MODAL
+                    }
+                }, C = (0, o.useStateFromStores)([E.default], () => E.default.getCurrentUser()), g = (null == m ? void 0 : m.id) === (null == C ? void 0 : C.id), [L, v] = r.useState(1), {
+                    emoji: D
+                } = null != t ? t : {}, M = null != D, y = (null == t ? void 0 : t.state) != null && "" !== t.state ? t.state : null, P = null != y && y.length > 0, U = M || P, b = !U && g, G = r.useCallback(e => {
                     var t;
                     if (null == e) return;
                     let n = e.getBoundingClientRect(),
                         i = parseFloat(null !== (t = window.getComputedStyle(e).getPropertyValue("line-height")) && void 0 !== t ? t : "0");
-                    T(Math.floor(n.height / i))
-                }, []), S = (0, d.useResizeObserver)(f), {
-                    emoji: h
-                } = t, A = null != h, m = null != t.state && "" !== t.state ? t.state : null, N = null != m && m.length > 0;
-                if (!A && !N) return null;
-                let p = () => A ? N ? (0, i.jsx)(l.default, {
-                        className: c.statusEmojiInline,
-                        emojiId: h.id,
-                        emojiName: h.name,
-                        animated: !!h.animated
-                    }) : (0, i.jsx)(u.ActivityEmoji, {
-                        className: c.statusEmojiOnly,
-                        emoji: h,
-                        animate: a,
-                        hideTooltip: E
+                    v(Math.floor(n.height / i))
+                }, []), w = (0, c.useResizeObserver)(G);
+                if (!g && !U) return null;
+                let B = () => M ? P ? (0, i.jsx)(d.default, {
+                        className: h.statusEmojiInline,
+                        emojiId: D.id,
+                        emojiName: D.name,
+                        animated: !!D.animated
+                    }) : (0, i.jsx)(_.ActivityEmoji, {
+                        className: h.statusEmojiOnly,
+                        emoji: D,
+                        animate: p,
+                        hideTooltip: O
                     }) : null,
-                    O = () => N ? (0, i.jsx)(o.Text, {
-                        variant: "text-sm/medium",
-                        className: c.statusText,
-                        children: m
+                    k = () => P ? (0, i.jsx)(u.Text, {
+                        variant: A,
+                        className: h.statusText,
+                        children: y
                     }) : null,
-                    R = s()(c.positionStyle, {
-                        [c.biteSize]: n === _.UserProfileTypes.BITE_SIZE,
-                        [c.fullSize]: n === _.UserProfileTypes.FULL_SIZE
-                    }),
-                    C = s()(c.statusBubbleOuter, {
-                        [c.statusBubbleSingleLineEmojiOnlyShape]: 1 === I && !N,
-                        [c.statusBubbleSingleLineWithTextShape]: 1 === I && N,
-                        [c.statusBubbleMultiLineShape]: I > 1,
-                        [c.statusBubbleOuterMaxLine]: I >= 3
-                    }),
-                    g = s()(c.statusBubble, {
-                        [c.statusBubbleSingleLineEmojiOnlyShape]: 1 === I && !N,
-                        [c.statusBubbleSingleLineWithTextShape]: 1 === I && N,
-                        [c.statusBubbleMultiLineShape]: I > 1,
-                        [c.statusBubbleSingleLineEmojiOnly]: 1 === I && !N,
-                        [c.statusBubbleSingleLineWithText]: 1 === I && N,
-                        [c.statusBubbleMultiLinePadding]: I > 1 && I < 3,
-                        [c.statusBubbleMaxLinePadding]: I >= 3
-                    });
-                if (n === _.UserProfileTypes.FULL_SIZE) return (0, i.jsx)("div", {
-                    className: R,
-                    children: (0, i.jsx)("div", {
-                        className: C,
-                        children: (0, i.jsx)("span", {
-                            className: g,
-                            children: (0, i.jsxs)("div", {
-                                ref: S,
-                                children: [p(), O()]
+                    V = () => {
+                        (0, I.trackUserProfileAction)({
+                            action: "PRESS_SET_CUSTOM_STATUS"
+                        }), null == N || N(), (0, u.openModalLazy)(async () => {
+                            let {
+                                default: e
+                            } = await Promise.all([n.e("99387"), n.e("47484")]).then(n.bind(n, "211065"));
+                            return t => (0, i.jsx)(e, {
+                                ...t,
+                                sourceAnalyticsContext: R
                             })
+                        })
+                    },
+                    x = () => U || !g ? null : (0, i.jsxs)(u.Clickable, {
+                        onClick: V,
+                        className: h.content,
+                        children: [(0, i.jsx)(l.CirclePlusIcon, {
+                            className: h.addStatusIcon,
+                            colorClass: h.addStatusIconColor
+                        }), (0, i.jsx)(u.Text, {
+                            variant: A,
+                            className: h.addStatusPrompt,
+                            children: S.default.Messages.USER_SETTINGS_ADD_STATUS
+                        })]
+                    }),
+                    F = () => {
+                        let e = s()({
+                            [h.content]: M && !P || L < 2,
+                            [h.contentOverflow]: L >= 2
+                        });
+                        return (0, i.jsxs)("div", {
+                            className: e,
+                            ref: w,
+                            children: [B(), k()]
+                        })
+                    },
+                    H = s()(h.positionStyle, {
+                        [h.biteSize]: a === T.UserProfileTypes.BITE_SIZE,
+                        [h.fullSize]: a === T.UserProfileTypes.FULL_SIZE
+                    }),
+                    Y = s()(h.statusBubbleOuter, {
+                        [h.statusBubbleShape]: 1 === L && !P && M || L > 1,
+                        [h.statusBubbleSingleLineWithTextShape]: 1 === L && P || b,
+                        [h.biteSize]: a === T.UserProfileTypes.BITE_SIZE,
+                        [h.fullSize]: a === T.UserProfileTypes.FULL_SIZE
+                    }),
+                    j = s()(h.statusBubble, {
+                        [h.statusBubbleShape]: 1 === L && !P && M || L > 1,
+                        [h.statusBubbleSingleLineWithTextShape]: 1 === L && P || b,
+                        [h.statusBubbleEmojiOnlyPadding]: M && !P,
+                        [h.statusBubbleWithTextPadding]: P || b,
+                        [h.statusBubbleWithTextMinWidth]: P,
+                        [h.statusBubbleCopyStatusCursor]: U,
+                        [h.statusBubbleAddStatusCursor]: b
+                    });
+                if (a === T.UserProfileTypes.FULL_SIZE) return (0, i.jsx)("div", {
+                    className: H,
+                    children: (0, i.jsx)("div", {
+                        className: Y,
+                        children: (0, i.jsxs)("span", {
+                            className: j,
+                            children: [x(), F()]
                         })
                     })
                 });
-                let L = s()({
-                    [c.statusBubbleSingleLineEmojiOnlyBottomMargin]: 1 === I && !N,
-                    [c.statusBubbleSingleLineWithTextBottomMargin]: 1 === I && N,
-                    [c.statusBubbleMultiLineMaxLineBottomMargin]: I > 1
+                let W = s()({
+                    [h.statusBubbleEmojiOnlyBottomMargin]: M && !P,
+                    [h.statusBubbleMultiLineBottomMargin]: L > 1 && P
                 });
                 return (0, i.jsx)("div", {
-                    className: L,
+                    className: W,
                     children: (0, i.jsx)("div", {
-                        className: R,
+                        className: H,
                         children: (0, i.jsx)("div", {
-                            className: C,
-                            children: (0, i.jsx)("span", {
-                                className: g,
-                                children: (0, i.jsxs)("div", {
-                                    ref: S,
-                                    children: [p(), O()]
-                                })
+                            className: Y,
+                            children: (0, i.jsxs)("span", {
+                                className: j,
+                                children: [x(), F()]
                             })
                         })
                     })
@@ -212821,82 +212865,80 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return S
+                    return T
                 }
             });
             var i = n("735250");
             n("470079");
-            var r = n("120356"),
-                a = n.n(r),
-                s = n("442837"),
-                o = n("420660"),
-                l = n("199902"),
-                u = n("158776"),
-                d = n("78675"),
-                _ = n("438163"),
-                c = n("131640"),
-                E = n("228168"),
-                I = n("981631"),
-                T = n("231338"),
-                f = n("821301");
+            var r = n("442837"),
+                a = n("420660"),
+                s = n("199902"),
+                o = n("158776"),
+                l = n("78675"),
+                u = n("438163"),
+                d = n("131640"),
+                _ = n("228168"),
+                c = n("981631"),
+                E = n("231338"),
+                I = n("821301");
 
-            function S(e) {
+            function T(e) {
                 let {
                     user: t,
                     displayProfile: n,
-                    disableUserProfileLink: r,
-                    guildId: S,
-                    channelId: h,
-                    onClose: A
+                    disableUserProfileLink: T,
+                    guildId: f,
+                    channelId: S,
+                    onClose: h
                 } = e, {
-                    activity: m,
-                    customStatusActivity: N,
-                    status: p,
-                    isMobile: O
-                } = (0, s.useStateFromStoresObject)([l.default, u.default], () => {
-                    let e = null != l.default.getAnyStreamForUser(t.id);
+                    activity: A,
+                    customStatusActivity: m,
+                    status: N,
+                    isMobile: p
+                } = (0, r.useStateFromStoresObject)([s.default, o.default], () => {
+                    let e = null != s.default.getAnyStreamForUser(t.id);
                     return {
-                        activity: u.default.findActivity(t.id, t => {
+                        activity: o.default.findActivity(t.id, t => {
                             let {
                                 type: n
                             } = t;
-                            return e ? n === I.ActivityTypes.PLAYING : n !== I.ActivityTypes.CUSTOM_STATUS
+                            return e ? n === c.ActivityTypes.PLAYING : n !== c.ActivityTypes.CUSTOM_STATUS
                         }),
-                        customStatusActivity: u.default.findActivity(t.id, e => {
+                        customStatusActivity: o.default.findActivity(t.id, e => {
                             let {
                                 type: t
                             } = e;
-                            return t === I.ActivityTypes.CUSTOM_STATUS
+                            return t === c.ActivityTypes.CUSTOM_STATUS
                         }),
-                        status: u.default.getStatus(t.id),
-                        isMobile: u.default.isMobileOnline(t.id)
+                        status: o.default.getStatus(t.id),
+                        isMobile: o.default.isMobileOnline(t.id)
                     }
-                }), R = a()(f.header, {
-                    [f.noCustomStatusMargin]: null == N
                 });
                 return (0, i.jsxs)("header", {
-                    className: R,
-                    children: [(0, i.jsx)(d.default, {
+                    className: I.header,
+                    children: [(0, i.jsx)(l.default, {
                         user: t,
                         displayProfile: n,
-                        guildId: S,
-                        profileType: E.UserProfileTypes.BITE_SIZE,
+                        guildId: f,
+                        profileType: _.UserProfileTypes.BITE_SIZE,
                         hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null
-                    }), (0, i.jsx)(c.UserPopoutAvatar, {
+                    }), (0, i.jsx)(d.UserPopoutAvatar, {
                         user: t,
                         displayProfile: n,
-                        status: (0, o.default)(m) ? T.StatusTypes.STREAMING : p,
-                        isMobile: O,
-                        guildId: S,
-                        channelId: h,
-                        onClose: A,
-                        disableUserProfileLink: r,
+                        status: (0, a.default)(A) ? E.StatusTypes.STREAMING : N,
+                        isMobile: p,
+                        guildId: f,
+                        channelId: S,
+                        onClose: h,
+                        disableUserProfileLink: T,
                         hasBanner: (null == n ? void 0 : n.banner) != null,
                         hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null,
-                        profileType: E.UserProfileTypes.BITE_SIZE
-                    }), null != N && (0, i.jsx)(_.UserProfileCustomStatusBubble, {
-                        statusActivity: N,
-                        profileType: E.UserProfileTypes.BITE_SIZE
+                        profileType: _.UserProfileTypes.BITE_SIZE
+                    }), (0, i.jsx)(u.UserProfileCustomStatusBubble, {
+                        user: t,
+                        statusActivity: m,
+                        profileType: _.UserProfileTypes.BITE_SIZE,
+                        onClose: h
                     })]
                 })
             }
@@ -247368,7 +247410,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8112a661c33625184043c289a7c13b1729de9b89"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "1e12be95ba16817c220d9236dade6315e6862e02"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276027,7 +276069,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289960"
+                                build_number: "289971"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -283354,7 +283396,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "289960", "289960"), 10);
+                let a = parseInt((n = "289971", "289971"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -310754,4 +310796,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.305759ed7e76ad78b6e0.js.map
+//# sourceMappingURL=35705.4e6dee9ef235e970fbc6.js.map

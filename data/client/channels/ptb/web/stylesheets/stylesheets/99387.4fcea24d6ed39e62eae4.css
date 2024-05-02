@@ -26512,8 +26512,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .positionStyle_bf57a1.biteSize__4396a {
-    top: calc(6px + var(--custom-user-banner-height-bite-size) + var(--custom-user-profile-themed-container-user-profile-themed-padding));
-    left: 112px
+    left: 112px;
+    top: calc(6px + var(--custom-user-banner-height-bite-size))
 }
 
 .positionStyle_bf57a1.fullSize_b0d012 {
@@ -26521,33 +26521,41 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     left: 158px
 }
 
-.statusBubble__1a4c3 {
-    -webkit-user-select: text;
-    -moz-user-select: text;
-    user-select: text;
-    position: relative;
-    color: var(--text-normal);
-    background-color: var(--bg-surface-raised);
-    word-wrap: break-word;
-    max-width: 184px;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    overflow: hidden;
-    text-overflow: ellipsis
+.custom-profile-theme .positionStyle_bf57a1.biteSize__4396a {
+    top: calc(6px + var(--custom-user-banner-height-bite-size) + var(--custom-user-profile-themed-container-user-profile-themed-padding))
 }
 
-.statusBubble__1a4c3:hover {
-    overflow: visible;
-    -webkit-line-clamp: unset
+.statusBubble__1a4c3 {
+    position: relative;
+    display: block;
+    background-color: var(--bg-surface-raised);
+    word-wrap: break-word
+}
+
+.statusBubbleAddStatusCursor__31830 {
+    cursor: pointer
+}
+
+.statusBubbleCopyStatusCursor_d67753 {
+    cursor: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text
 }
 
 .statusBubbleOuter__7e51b {
     position: relative;
     background-color: var(--bg-surface-raised);
     box-shadow: var(--shadow-low);
-    border: 1px solid var(--border-faint);
+    border: 1px solid var(--border-faint)
+}
+
+.statusBubbleOuter__7e51b.biteSize__4396a {
     max-width: 184px
+}
+
+.statusBubbleOuter__7e51b.fullSize_b0d012 {
+    max-width: 220px
 }
 
 .statusBubbleOuter__7e51b:before {
@@ -26578,7 +26586,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     height: 10px
 }
 
-.statusBubbleSingleLineEmojiOnlyShape_ffeca9 {
+.statusBubbleShape__093b0 {
     border-radius: 16px
 }
 
@@ -26586,57 +26594,76 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     border-radius: 12px
 }
 
-.statusBubbleMultiLineShape_e94b9b {
-    border-radius: 16px
-}
-
-.statusBubbleSingleLineEmojiOnly_d07ae7 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.statusBubbleEmojiOnlyPadding_ff949e {
     padding: 8px 12px
 }
 
-.statusBubbleSingleLineWithText_df155b {
+.statusBubbleWithTextPadding__2267b {
+    padding: 10px 12px
+}
+
+.statusBubbleWithTextMinWidth__7b594 {
+    min-width: 18px
+}
+
+.statusBubbleEmojiOnlyBottomMargin_eada36 {
+    margin-bottom: 52px
+}
+
+.statusBubbleMultiLineBottomMargin_b51483 {
+    margin-bottom: 62px
+}
+
+.content_faa8bf {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 12px
+    word-wrap: break-word;
+    word-break: break-all
 }
 
-.statusBubbleMultiLinePadding__0ac14 {
-    padding: 10px 12px
+.contentOverflow__4ab1c {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--text-normal);
+    word-wrap: break-word;
+    word-break: break-word
 }
 
-.statusBubbleMaxLinePadding__8edbc {
-    padding: 10px 12px 0
+.contentOverflow__4ab1c:hover {
+    overflow: visible;
+    -webkit-line-clamp: unset
 }
 
-.statusBubbleOuterMaxLine__97110 {
-    cursor: pointer;
-    position: relative;
-    top: -18px;
-    padding-bottom: 10px
+.content_faa8bf:hover .addStatusPrompt__07506 {
+    color: var(--text-normal)
 }
 
-.statusBubbleSingleLineEmojiOnlyBottomMargin__1251a {
-    margin-bottom: 50px
+.content_faa8bf:hover .addStatusIconColor__5979c {
+    fill: var(--interactive-hover)
 }
 
-.statusBubbleSingleLineWithTextBottomMargin__3e972 {
-    margin-bottom: 39px
+.addStatusPrompt__07506 {
+    display: inline;
+    color: var(--text-muted)
 }
 
-.statusBubbleMultiLineMaxLineBottomMargin_f9c97c {
-    margin-bottom: 55px
+.addStatusIcon__7d961 {
+    display: inline;
+    height: 18px;
+    width: 18px;
+    margin-right: 4px;
+    fill: var(--interactive-normal)
 }
 
 .statusText__32d26 {
-    color: var(--text-normal);
-    display: inline
+    display: inline;
+    color: var(--text-normal)
 }
 
 .statusEmojiInline__099a8 {
+    top: 50%;
     display: inline;
     height: 16px;
     width: 16px;
@@ -26649,11 +26676,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .header__725f2 {
-    z-index: 2
-}
-
-.noCustomStatusMargin_ece046 {
-    margin-bottom: 40px
+    z-index: 2;
+    min-height: calc(45px + var(--custom-user-banner-height-bite-size))
 }
 
 .roleDot__16273 {
@@ -136656,4 +136680,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d582159afef068a66763.css.map*/
+/*# sourceMappingURL=99387.4fcea24d6ed39e62eae4.css.map*/
