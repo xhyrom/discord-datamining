@@ -35236,6 +35236,10 @@ div:has(>div>.modal__06f49) {
     margin-bottom: 24px
 }
 
+.overviewText__01ee0 strong {
+    color: var(--interactive-active)
+}
+
 .overviewHeaderPrelude_a62bba {
     margin-bottom: 0
 }
@@ -45622,7 +45626,8 @@ img.thumbnail__18ece {
 }
 
 .clickableGame__38602 {
-    cursor: pointer
+    cursor: pointer;
+    transition: transform ease-in-out.2s
 }
 
 .clickableGame__38602:hover {
@@ -45631,6 +45636,10 @@ img.thumbnail__18ece {
 
 .clickableGame__38602:active {
     transform: translatey(2px)scale(.98)
+}
+
+.defaultGame__386c8 {
+    opacity: .8
 }
 
 .interestsCategoryTitle__18aeb {
@@ -45652,7 +45661,8 @@ img.thumbnail__18ece {
     border: 1px solid var(--border-subtle);
     color: var(--interactive-normal);
     padding: 8px 12px;
-    border-radius: 16px
+    border-radius: 16px;
+    transition: transform ease-in-out.2s
 }
 
 .interestsTag__64479:hover {
@@ -45704,7 +45714,8 @@ img.thumbnail__18ece {
     padding: 16px;
     border: 1px solid var(--border-subtle);
     border-radius: 8px;
-    width: 25%
+    width: 25%;
+    transition: tranform ease-in-out.2s, border-color ease-in-out.2s
 }
 
 .playstyleOption__67567:hover {
@@ -45771,7 +45782,8 @@ img.thumbnail__18ece {
 }
 
 .clickable_a588cd {
-    cursor: pointer
+    cursor: pointer;
+    transition: color ease-in-out.2s
 }
 
 .clickable_a588cd:hover {
@@ -136561,4 +136573,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7043662aca4f764dd556.css.map*/
+/*# sourceMappingURL=99387.afb3d12d96f56bfd4670.css.map*/

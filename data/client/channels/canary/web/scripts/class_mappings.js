@@ -5239,6 +5239,7 @@
                 content: "content_c05082",
                 contentLabel: "contentLabel_aa05d5",
                 contentWithMinHeight: "contentWithMinHeight__78ad4",
+                defaultGame: "defaultGame__386c8",
                 divider: "divider_b5fb95",
                 enterToSearchText: "enterToSearchText_c64e49",
                 errorText: "errorText__34a8a",
