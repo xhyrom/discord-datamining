@@ -36956,7 +36956,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289918", ", Version Hash: ").concat("084c6471a6b9fcd5a9fe6544a87284f65af173f2")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289932", ", Version Hash: ").concat("3b9e92c77ff9e5c96c9bcf2cb924d64a63526081")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -50565,7 +50565,7 @@
                 USER_SETTINGS_EMAIL_CATEGORY_TIPS: "Tip Emails",
                 USER_SETTINGS_EMAIL_CATEGORY_TIPS_SUBLABEL: "Receive emails with helpful advice on how to use Discord and information on lesser known features.",
                 USER_SETTINGS_EMAIL_CATEGORY_RECOMMENDATIONS_AND_EVENTS: "Recommendations Emails",
-                USER_SETTINGS_EMAIL_CATEGORY_RECOMMENDATIONS_AND_EVENTS_SUBLABEL: "Receive emails with recommended servers and suggested events such as exciting public stages.",
+                USER_SETTINGS_EMAIL_CATEGORY_RECOMMENDATIONS_AND_EVENTS_SUBLABEL: "Receive emails with recommended servers and suggested events.",
                 EMAIL_CATEGORY_UNSUBSCRIBE_HEADER: "You’re unsubscribed",
                 EMAIL_CATEGORY_UNSUBSCRIBE_EMAIL_BODY: "You have unsubscribed from: {category}. To change your email notification settings, visit user settings.",
                 EMAIL_CATEGORY_MANAGE_SETTING_LABEL: "Manage your user settings.",
@@ -65519,11 +65519,12 @@
                 let i = d(e),
                     r = o.default.can(l.Permissions.USE_EMBEDDED_ACTIVITIES, e),
                     a = r && o.default.can(l.Permissions.SEND_MESSAGES | l.Permissions.USE_APPLICATION_COMMANDS, e);
-                return (null == e ? void 0 : e.guild_id) == null ? u.getCurrentConfig({
+                if ((null == e ? void 0 : e.guild_id) != null) return t ? a && i : r && i;
+                return t ? u.getCurrentConfig({
                     location: n
                 }, {
                     autoTrackExposure: !0
-                }).activitiesInTextEnabled && i : t ? a && i : r && i
+                }).activitiesInTextEnabled && i : i
             }
 
             function c(e, t, n) {
@@ -65546,7 +65547,7 @@
                     autoTrackExposure: !c,
                     disable: c
                 });
-                return c ? _ && i : E.activitiesInTextEnabled && i
+                return c ? _ && i : t ? E.activitiesInTextEnabled && i : i
             }
 
             function E(e, t) {
@@ -75658,7 +75659,8 @@
                         allowEmptySections: n.allowEmptySections,
                         contextState: i,
                         userState: r,
-                        applicationStates: s
+                        applicationStates: s,
+                        singleApplicationId: n.applicationId
                     });
                     return d.loading = d.loading || u, d
                 }
@@ -76005,32 +76007,39 @@
                     text: a,
                     builtIns: s = g.BuiltInCommandFilter.ALLOW,
                     allowApplicationCommands: o = !0,
-                    allowEmptySections: u = !1,
-                    scoreMethod: d = g.ScoreMethod.NONE,
-                    sortOptions: _ = ee
+                    singleApplicationId: u,
+                    allowEmptySections: d = !1,
+                    scoreMethod: _ = g.ScoreMethod.NONE,
+                    sortOptions: c = ee
                 } = e, {
-                    commandType: c
-                } = t, E = null == a ? void 0 : a.toLowerCase(), T = null == E ? void 0 : E.split(" "), f = s === g.BuiltInCommandFilter.ONLY_TEXT, h = s !== g.BuiltInCommandFilter.DENY ? (0, p.getBuiltInCommands)(c, !0, f) : [], m = [], N = {
+                    commandType: E
+                } = t, T = null == a ? void 0 : a.toLowerCase(), f = null == T ? void 0 : T.split(" "), h = s === g.BuiltInCommandFilter.ONLY_TEXT, m = s !== g.BuiltInCommandFilter.DENY ? (0, p.getBuiltInCommands)(E, !0, h) : [], N = [], O = {
                     permissionContext: t,
-                    query: E,
-                    splitQuery: T,
-                    allowEmptySections: u,
-                    scoreMethod: d
+                    query: T,
+                    splitQuery: f,
+                    allowEmptySections: d,
+                    scoreMethod: _
                 };
                 if (o) {
-                    var O, C, L, v, D;
-                    let e = null !== (L = null === (O = n.result) || void 0 === O ? void 0 : O.sections) && void 0 !== L ? L : {},
-                        t = null !== (v = null === (C = i.result) || void 0 === C ? void 0 : C.sections) && void 0 !== v ? v : {},
+                    var C, L, v, D, M;
+                    let e = null !== (v = null === (C = n.result) || void 0 === C ? void 0 : C.sections) && void 0 !== v ? v : {},
+                        t = null !== (D = null === (L = i.result) || void 0 === L ? void 0 : L.sections) && void 0 !== D ? D : {},
                         a = new Set;
-                    for (let t in e) a.add(t);
-                    for (let e in t) a.add(e);
-                    let s = new Map;
-                    for (let [e, t] of r) {
-                        let e = null === (D = t.result) || void 0 === D ? void 0 : D.sections;
-                        if (null != e)
-                            for (let t of Object.keys(e)) a.add(t), s.set(t, e[t])
+                    for (let t in e) {
+                        let n = e[t];
+                        (null == u || n.descriptor.id === u) && a.add(t)
                     }
-                    for (let n of Array.from(a)) {
+                    for (let e in t) {
+                        let n = t[e];
+                        (null == u || n.descriptor.id === u) && a.add(e)
+                    }
+                    let s = new Map;
+                    for (let [e, t] of r)
+                        if (null == u || e === u) {
+                            let e = null === (M = t.result) || void 0 === M ? void 0 : M.sections;
+                            if (null != e)
+                                for (let t of Object.keys(e)) a.add(t), s.set(t, e[t])
+                        } for (let n of Array.from(a)) {
                         let i, r;
                         let a = e[n],
                             o = t[n],
@@ -76047,17 +76056,17 @@
                                 }
                         } else null != a ? (i = a.descriptor, r = Object.values(a.commands)) : null != o ? (i = o.descriptor, r = Object.values(o.commands)) : null != u && (i = u.descriptor, r = Object.values(u.commands));
                         l()(null != i, "Failed to select application descriptor"), l()(null != r, "Failed to select list of application commands");
-                        let d = en(i, r, N);
-                        null != d && m.push(d)
+                        let d = en(i, r, O);
+                        null != d && N.push(d)
                     }
-                    _.applications.useFrecency && S.FrecencyUserSettingsActionCreators.loadIfNecessary(), m.sort((e, t) => {
-                        if (_.applications.useScore && d === g.ScoreMethod.APPLICATION_ONLY) {
+                    c.applications.useFrecency && S.FrecencyUserSettingsActionCreators.loadIfNecessary(), N.sort((e, t) => {
+                        if (c.applications.useScore && _ === g.ScoreMethod.APPLICATION_ONLY) {
                             var n, i, r, a;
                             let s = null !== (r = null === (n = e.data[0]) || void 0 === n ? void 0 : n.score) && void 0 !== r ? r : Number.MAX_VALUE,
                                 o = null !== (a = null === (i = t.data[0]) || void 0 === i ? void 0 : i.score) && void 0 !== a ? a : Number.MAX_VALUE;
                             if (s !== o) return s - o
                         }
-                        if (_.applications.useFrecency) {
+                        if (c.applications.useFrecency) {
                             let n = I.default.getScoreWithoutLoadingLatest(e.section.id),
                                 i = I.default.getScoreWithoutLoadingLatest(t.section.id);
                             if (n !== i) return i - n
@@ -76065,25 +76074,25 @@
                         return el(e.section.name, t.section.name)
                     })
                 }
-                if (h.length > 0 || !0 === u) {
-                    let e = en(p.BUILT_IN_SECTIONS[y.BuiltInSectionId.BUILT_IN], h, N);
-                    null != e && m.push(e)
+                if (m.length > 0 || !0 === d) {
+                    let e = en(p.BUILT_IN_SECTIONS[y.BuiltInSectionId.BUILT_IN], m, O);
+                    null != e && N.push(e)
                 }
-                let M = m.flatMap(e => e.data.map(t => ({
+                let P = N.flatMap(e => e.data.map(t => ({
                     ...t,
                     section: e.section
                 })));
-                if (d === g.ScoreMethod.COMMAND_ONLY || d === g.ScoreMethod.COMMAND_OR_APPLICATION) {
+                if (_ === g.ScoreMethod.COMMAND_ONLY || _ === g.ScoreMethod.COMMAND_OR_APPLICATION) {
                     let e = t.context,
                         n = A.default.getGuild(t.context.guild_id);
-                    _.commands.useFrecency && S.FrecencyUserSettingsActionCreators.loadIfNecessary(), M.sort((t, i) => {
-                        if (_.commands.useScore) {
+                    c.commands.useFrecency && S.FrecencyUserSettingsActionCreators.loadIfNecessary(), P.sort((t, i) => {
+                        if (c.commands.useScore) {
                             var r, a;
                             let e = null !== (r = t.score) && void 0 !== r ? r : 0,
                                 n = null !== (a = i.score) && void 0 !== a ? a : 0;
                             if (e !== n) return e - n
                         }
-                        if (_.commands.useFrecency) {
+                        if (c.commands.useFrecency) {
                             let r = R.default.getScoreWithoutLoadingLatest({
                                     channel: e,
                                     guild: n
@@ -76098,9 +76107,9 @@
                     })
                 }
                 return {
-                    commands: M,
-                    descriptors: m.map(e => e.section),
-                    sectionedCommands: m,
+                    commands: P,
+                    descriptors: N.map(e => e.section),
+                    sectionedCommands: N,
                     loading: (null == n ? void 0 : n.fetchState.fetching) === !0 || (null == i ? void 0 : i.fetchState.fetching) === !0
                 }
             }
@@ -87365,8 +87374,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289918", "289918"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289918")), t = 0), t
+                let t = parseInt((e = "289932", "289932"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289932")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -114140,8 +114149,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289918",
-                    versionHash: "084c6471a6b9fcd5a9fe6544a87284f65af173f2"
+                    buildNumber: "289932",
+                    versionHash: "3b9e92c77ff9e5c96c9bcf2cb924d64a63526081"
                 }
             }
             n.r(t), n.d(t, {
@@ -169432,8 +169441,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714669090971",
-                                    build_number: "289918"
+                                    built_at: "1714670094687",
+                                    build_number: "289932"
                                 }
                             },
                             retries: 1
@@ -247357,7 +247366,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "084c6471a6b9fcd5a9fe6544a87284f65af173f2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3b9e92c77ff9e5c96c9bcf2cb924d64a63526081"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276016,7 +276025,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289918"
+                                build_number: "289932"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -283343,7 +283352,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "289918", "289918"), 10);
+                let a = parseInt((n = "289932", "289932"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -310743,4 +310752,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.61914cb11780dc818545.js.map
+//# sourceMappingURL=35705.b236765ac9aa1b20a00f.js.map
