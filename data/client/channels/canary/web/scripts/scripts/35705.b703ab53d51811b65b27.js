@@ -36956,7 +36956,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289971", ", Version Hash: ").concat("1e12be95ba16817c220d9236dade6315e6862e02")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("289989", ", Version Hash: ").concat("f0897db6d7c350118122edbb04abb1543723651b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -37325,46 +37325,6 @@
                 }]
             });
             t.default = i
-        },
-        31377: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var i = n("818083");
-            t.default = (0, i.createExperiment)({
-                kind: "user",
-                id: "2022-12_forum_activity",
-                label: "Increased activity view for Forums, per user",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enabled",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            })
-        },
-        837934: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var i = n("818083");
-            t.default = (0, i.createExperiment)({
-                kind: "guild",
-                id: "2023-01_forums_activity_2_guild",
-                label: "Increased activity view for Forums, per guild",
-                defaultConfig: {
-                    enabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enabled",
-                    config: {
-                        enabled: !0
-                    }
-                }]
-            })
         },
         948350: function(e, t, n) {
             "use strict";
@@ -87376,8 +87336,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "289971", "289971"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289971")), t = 0), t
+                let t = parseInt((e = "289989", "289989"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("289989")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -114151,8 +114111,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "289971",
-                    versionHash: "1e12be95ba16817c220d9236dade6315e6862e02"
+                    buildNumber: "289989",
+                    versionHash: "f0897db6d7c350118122edbb04abb1543723651b"
                 }
             }
             n.r(t), n.d(t, {
@@ -126415,28 +126375,6 @@
                 }
             })
         },
-        901648: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                isForumActivityExperimentEnabled: function() {
-                    return s
-                }
-            });
-            var i = n("31377"),
-                r = n("837934"),
-                a = n("981631");
-
-            function s(e) {
-                let t = r.default.getCurrentConfig({
-                        guildId: null != e ? e : a.EMPTY_STRING_SNOWFLAKE_ID,
-                        location: "3fde52_1"
-                    }),
-                    n = i.default.getCurrentConfig({
-                        location: "3fde52_2"
-                    });
-                return !!(t.enabled || n.enabled)
-            }
-        },
         710352: function(e, t, n) {
             "use strict";
             var i, r, a, s;
@@ -126563,13 +126501,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 preloadForumThreads: function() {
-                    return R
+                    return m
                 },
                 useFirstForumPostMessage: function() {
-                    return N
-                },
-                useMostRecentForumMessage: function() {
-                    return p
+                    return h
                 }
             }), n("47120");
             var i = n("392711"),
@@ -126580,12 +126515,11 @@
                 l = n("592125"),
                 u = n("709054"),
                 d = n("238349"),
-                _ = n("901648"),
-                c = n("660189"),
-                E = n("682474"),
-                I = n("981631");
+                _ = n("660189");
+            n("682474");
+            var c = n("981631");
 
-            function T(e, t, n) {
+            function E(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -126593,7 +126527,7 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            class f {
+            class I {
                 get(e) {
                     return !this._set.hasOwnProperty(e) && (this._set[e] = this._defaultValueFunc()), this._set[e]
                 }
@@ -126607,10 +126541,10 @@
                     return u.default.keys(this._set)[0]
                 }
                 constructor(e) {
-                    T(this, "_set", void 0), T(this, "_defaultValueFunc", void 0), this._set = {}, this._defaultValueFunc = e
+                    E(this, "_set", void 0), E(this, "_defaultValueFunc", void 0), this._set = {}, this._defaultValueFunc = e
                 }
             }
-            let S = new class e {
+            let T = new class e {
                     request(e, t) {
                         this.requested.get(e).add(t)
                     }
@@ -126619,7 +126553,7 @@
                     }
                     finishRequesting(e, t) {
                         let n = this.requested.get(e);
-                        t.forEach(e => n.delete(e)), S.compact(e)
+                        t.forEach(e => n.delete(e)), T.compact(e)
                     }
                     getRequested(e) {
                         return this.requested.get(e)
@@ -126637,82 +126571,58 @@
                         0 === this.requested.get(e).size && this.requested.delete(e)
                     }
                     constructor() {
-                        T(this, "requested", void 0), this.requested = new f(() => new Set)
+                        E(this, "requested", void 0), this.requested = new I(() => new Set)
                     }
                 },
-                h = null;
+                f = null;
 
-            function A(e, t) {
-                if ((0, _.isForumActivityExperimentEnabled)(e)) {
-                    let {
-                        loaded: e,
-                        message: n
-                    } = E.default.getMessageState(t);
-                    return !e && null == n
-                }
-                return !1
-            }
-
-            function m(e, t) {
+            function S(e, t) {
                 return !e && null == t
             }
 
-            function N(e) {
+            function h(e) {
                 var t, n;
                 let {
                     loaded: i,
                     firstMessage: r
-                } = (0, a.useStateFromStoresObject)([c.default], () => c.default.getMessage(e.id)), s = (0, a.useStateFromStores)([l.default], () => l.default.getChannel(e.parent_id));
-                if (null != s && (t = i, n = r, !t && null == n)) C(s, e.id);
+                } = (0, a.useStateFromStoresObject)([_.default], () => _.default.getMessage(e.id)), s = (0, a.useStateFromStores)([l.default], () => l.default.getChannel(e.parent_id));
+                if (null != s && (t = i, n = r, !t && null == n))(function(e, t) {
+                    if (T.hasRequested(e.id, t)) return;
+                    let n = (0, d.computeThreadIdsSnapshot)(e.id),
+                        i = n.findIndex(e => e === t),
+                        r = n.slice(i, i + 5).filter(t => !T.hasRequested(e.id, t));
+                    A(e, r)
+                })(s, e.id);
                 return {
                     loaded: i,
                     firstMessage: r
                 }
             }
 
-            function p(e, t) {
-                let {
-                    loaded: n,
-                    message: i
-                } = (0, a.useStateFromStoresObject)([E.default], () => E.default.getMessageState(t.id));
-                return null != e && A(t.guild_id, t.id) && C(e, t.id), {
-                    loaded: n,
-                    mostRecentMessage: i
-                }
-            }
-
-            function O(e, t) {
+            function A(e, t) {
                 let n = !1;
                 t.forEach(t => {
                     var i, r;
                     let {
                         loaded: a,
                         firstMessage: s
-                    } = c.default.getMessage(t);
-                    if (i = a, r = s, !i && null == r || A(e.guild_id, t)) S.request(e.id, t), n = !0
-                }), n && null == h && (h = setTimeout(g, 0))
+                    } = _.default.getMessage(t);
+                    if (i = a, r = s, !i && null == r) T.request(e.id, t), n = !0
+                }), n && null == f && (f = setTimeout(N, 0))
             }
 
-            function R(e) {
-                O(e, (0, d.computeThreadIdsSnapshot)(e.id).slice(0, 10))
+            function m(e) {
+                A(e, (0, d.computeThreadIdsSnapshot)(e.id).slice(0, 10))
             }
-
-            function C(e, t) {
-                if (S.hasRequested(e.id, t)) return;
-                let n = (0, d.computeThreadIdsSnapshot)(e.id),
-                    i = n.findIndex(e => e === t),
-                    r = n.slice(i, i + 5).filter(t => !S.hasRequested(e.id, t));
-                O(e, r)
-            }
-            async function g() {
+            async function N() {
                 try {
-                    for (; S.hasNext();) await L(S.next())
+                    for (; T.hasNext();) await p(T.next())
                 } finally {
-                    h = null
+                    f = null
                 }
             }
-            async function L(e) {
-                let t = S.getNextBatch(e, 10);
+            async function p(e) {
+                let t = T.getNextBatch(e, 10);
                 try {
                     var n;
                     if (0 === t.length) return;
@@ -126723,7 +126633,7 @@
                             threads: r
                         }
                     } = await s.HTTP.post({
-                        url: I.Endpoints.FORUM_POSTS(e),
+                        url: c.Endpoints.FORUM_POSTS(e),
                         body: {
                             thread_ids: t
                         }
@@ -126734,7 +126644,7 @@
                         threads: r
                     })
                 } catch (e) {} finally {
-                    S.finishRequesting(e, t)
+                    T.finishRequesting(e, t)
                 }
             }
         },
@@ -126744,26 +126654,23 @@
                 ForumPostMediaTypes: function() {
                     return i
                 },
-                getEmbedColor: function() {
-                    return S
-                },
                 messageContainsGifOrVideo: function() {
-                    return v
-                },
-                shouldShowAddMediaToOriginalPostModal: function() {
                     return L
                 },
-                useFindFirstMediaProperties: function() {
-                    return C
-                },
-                useFirstMediaIsEmbed: function() {
+                shouldShowAddMediaToOriginalPostModal: function() {
                     return g
                 },
-                useForumPostMediaProperties: function() {
+                useFindFirstMediaProperties: function() {
                     return R
                 },
-                useForumPostMediaThumbnail: function() {
+                useFirstMediaIsEmbed: function() {
+                    return C
+                },
+                useForumPostMediaProperties: function() {
                     return O
+                },
+                useForumPostMediaThumbnail: function() {
+                    return p
                 }
             }), n("789020"), n("47120"), n("724458");
             var i, r, a = n("470079"),
@@ -126779,15 +126686,7 @@
                 T = n("591759"),
                 f = n("981631");
 
-            function S(e, t) {
-                if (null == e || null == e.embeds[0]) return;
-                let {
-                    color: n
-                } = e.embeds[0];
-                return null != n && "#ffffff" === n.toLowerCase() || t ? void 0 : n
-            }
-
-            function h(e) {
+            function S(e) {
                 if (null == e) return !1;
                 let {
                     filename: t,
@@ -126797,20 +126696,20 @@
                 return (0, s.isImageFile)(t) && null != n && n > 0 && null != i && i > 0
             }
 
-            function A(e) {
+            function h(e) {
                 return null != e && null != e && (0, s.isVideoFile)(e.filename) && null != e.proxy_url
             }
 
-            function m(e) {
-                return h(e) || A(e)
+            function A(e) {
+                return S(e) || h(e)
             }(r = i || (i = {})).EMBED = "embed", r.ATTACHMENT = "attachment";
 
-            function N(e) {
+            function m(e) {
                 return function(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l.InlineAttachmentMedia.getSetting();
                     if (!t) return [];
                     let n = null == e ? void 0 : e.attachments;
-                    return null == e || null == n ? [] : n.filter(m).map(e => {
+                    return null == e || null == n ? [] : n.filter(A).map(e => {
                         let {
                             proxy_url: t,
                             url: n,
@@ -126847,7 +126746,7 @@
                 }(e, l.InlineAttachmentMedia.useSetting())
             }
 
-            function p(e, t) {
+            function N(e, t) {
                 let n = l.InlineEmbedMedia.useSetting(),
                     i = l.RenderEmbeds.useSetting();
                 if (null == e) return [];
@@ -126876,9 +126775,9 @@
                 }).filter(E.isNotNullish) : []
             }
 
-            function O(e, t) {
+            function p(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-                    i = R(e, n);
+                    i = O(e, n);
                 return a.useMemo(() => {
                     if (null == t) return [];
                     if (!t.isMediaChannel()) return i;
@@ -126889,33 +126788,33 @@
                 }, [t, i])
             }
 
-            function R(e, t) {
-                let n = N(e);
-                return [...n, ...p(e, t)]
+            function O(e, t) {
+                let n = m(e);
+                return [...n, ...N(e, t)]
             }
 
-            function C(e, t) {
+            function R(e, t) {
                 var n, i;
-                let r = N(e),
-                    a = p(e, t);
+                let r = m(e),
+                    a = N(e, t);
                 return null !== (i = null !== (n = r[0]) && void 0 !== n ? n : a[0]) && void 0 !== i ? i : null
             }
 
-            function g(e, t) {
-                let n = N(e),
-                    i = p(e, t);
+            function C(e, t) {
+                let n = m(e),
+                    i = N(e, t);
                 return null == n[0] && null != i[0]
             }
 
-            function L(e, t) {
+            function g(e, t) {
                 var n;
                 let i = u.default.getChannel(t);
                 if (null == i) return !1;
                 let r = d.default.getMessage(i.id, I.default.castChannelIdAsMessageId(i.id));
-                return null != r && e.length > 0 && null != e.find(e => e.isImage || e.isVideo) && i.isForumPost() && i.ownerId === (null === (n = _.default.getCurrentUser()) || void 0 === n ? void 0 : n.id) && 0 === o.default.getCount(i.id) && (0 === r.attachments.length || null == r.attachments.find(e => h(e) || A(e)))
+                return null != r && e.length > 0 && null != e.find(e => e.isImage || e.isVideo) && i.isForumPost() && i.ownerId === (null === (n = _.default.getCurrentUser()) || void 0 === n ? void 0 : n.id) && 0 === o.default.getCount(i.id) && (0 === r.attachments.length || null == r.attachments.find(e => S(e) || h(e)))
             }
 
-            function v(e) {
+            function L(e) {
                 return e.reduce((e, t) => ({
                     containsVideo: e.containsVideo || t.isVideo,
                     containsGif: e.containsGif || (0, s.isAnimatedImageUrl)(t.src)
@@ -127147,7 +127046,7 @@
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : i[r] = a, t.default = new m(l.default, {
+            }) : i[r] = a, new m(l.default, {
                 CONNECTION_OPEN: function() {
                     I = {}
                 },
@@ -127375,12 +127274,9 @@
         559241: function(e, t, n) {
             "use strict";
             n.r(t);
-            var i = n("313361"),
-                r = n("592125"),
-                a = n("901648"),
-                s = n("281301");
+            var i = n("592125");
 
-            function o(e, t, n) {
+            function r(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -127390,20 +127286,19 @@
             }
             t.default = new class e {
                 constructor() {
-                    o(this, "filterTagIds", null), o(this, "sortOrder", null), o(this, "layout", null), o(this, "setFilterTagIds", e => {
+                    r(this, "filterTagIds", null), r(this, "sortOrder", null), r(this, "layout", null), r(this, "setFilterTagIds", e => {
                         this.filterTagIds = e
-                    }), o(this, "setSortOrder", e => {
+                    }), r(this, "setSortOrder", e => {
                         this.sortOrder = e
-                    }), o(this, "setLayout", e => {
+                    }), r(this, "setLayout", e => {
                         this.layout = e
-                    }), o(this, "getFilterTagIdsAnalytics", () => null != this.filterTagIds ? Array.from(this.filterTagIds) : []), o(this, "getSortOrderAnalytics", e => {
+                    }), r(this, "getFilterTagIdsAnalytics", () => null != this.filterTagIds ? Array.from(this.filterTagIds) : []), r(this, "getSortOrderAnalytics", e => {
                         var t, n;
-                        return null !== (n = this.sortOrder) && void 0 !== n ? n : null === (t = r.default.getChannel(e)) || void 0 === t ? void 0 : t.getDefaultSortOrder()
-                    }), o(this, "getLayoutAnalytics", e => {
+                        return null !== (n = this.sortOrder) && void 0 !== n ? n : null === (t = i.default.getChannel(e)) || void 0 === t ? void 0 : t.getDefaultSortOrder()
+                    }), r(this, "getLayoutAnalytics", e => {
                         var t;
-                        let n = r.default.getChannel(e),
-                            o = null !== (t = this.layout) && void 0 !== t ? t : null == n ? void 0 : n.getDefaultLayout();
-                        return (0, a.isForumActivityExperimentEnabled)(null == n ? void 0 : n.guild_id) && o === i.ForumLayout.LIST ? s.INCREASED_ACTIVITY_LIST_FORUM_LAYOUT : o
+                        let n = i.default.getChannel(e);
+                        return null !== (t = this.layout) && void 0 !== t ? t : null == n ? void 0 : n.getDefaultLayout()
                     })
                 }
             }
@@ -127578,108 +127473,105 @@
             "use strict";
             n.r(t), n.d(t, {
                 maybeTrackForumNewPostDraftCreated: function() {
-                    return O
-                },
-                trackForumAddMediaToOriginalPostClicked: function() {
-                    return b
-                },
-                trackForumChannelMediaUploaderClicked: function() {
-                    return w
-                },
-                trackForumChannelSeenBatch: function() {
-                    return S
-                },
-                trackForumCreateNewPostClick: function() {
-                    return N
-                },
-                trackForumCreateNewPostKeybindUsed: function() {
-                    return p
-                },
-                trackForumCreateNewPostStarted: function() {
-                    return F
-                },
-                trackForumEnableAutomodClicked: function() {
-                    return B
-                },
-                trackForumHelperCardClicked: function() {
-                    return G
-                },
-                trackForumLayoutUpdated: function() {
-                    return M
-                },
-                trackForumMorePostsLoaded: function() {
-                    return L
-                },
-                trackForumNewPostCleared: function() {
-                    return R
-                },
-                trackForumOnboardingClicked: function() {
-                    return P
-                },
-                trackForumPostClicked: function() {
-                    return v
-                },
-                trackForumPostCreated: function() {
-                    return C
-                },
-                trackForumPostLinkCopied: function() {
-                    return y
-                },
-                trackForumPostSidebarViewed: function() {
-                    return V
-                },
-                trackForumPreviewPostClicked: function() {
-                    return k
-                },
-                trackForumScrolled: function() {
-                    return g
-                },
-                trackForumSearchCleared: function() {
-                    return A
-                },
-                trackForumSearched: function() {
-                    return h
-                },
-                trackForumSortOrderUpdated: function() {
-                    return D
-                },
-                trackForumTagFilterClicked: function() {
                     return m
                 },
-                trackForumUpsellModalClicked: function() {
+                trackForumAddMediaToOriginalPostClicked: function() {
+                    return y
+                },
+                trackForumChannelMediaUploaderClicked: function() {
                     return U
                 },
+                trackForumChannelSeenBatch: function() {
+                    return I
+                },
+                trackForumCreateNewPostClick: function() {
+                    return h
+                },
+                trackForumCreateNewPostKeybindUsed: function() {
+                    return A
+                },
+                trackForumCreateNewPostStarted: function() {
+                    return k
+                },
+                trackForumEnableAutomodClicked: function() {
+                    return b
+                },
+                trackForumHelperCardClicked: function() {
+                    return P
+                },
+                trackForumLayoutUpdated: function() {
+                    return L
+                },
+                trackForumMorePostsLoaded: function() {
+                    return R
+                },
+                trackForumNewPostCleared: function() {
+                    return N
+                },
+                trackForumOnboardingClicked: function() {
+                    return D
+                },
+                trackForumPostClicked: function() {
+                    return C
+                },
+                trackForumPostCreated: function() {
+                    return p
+                },
+                trackForumPostLinkCopied: function() {
+                    return v
+                },
+                trackForumPostSidebarViewed: function() {
+                    return w
+                },
+                trackForumPreviewPostClicked: function() {
+                    return G
+                },
+                trackForumScrolled: function() {
+                    return O
+                },
+                trackForumSearchCleared: function() {
+                    return f
+                },
+                trackForumSearched: function() {
+                    return T
+                },
+                trackForumSortOrderUpdated: function() {
+                    return g
+                },
+                trackForumTagFilterClicked: function() {
+                    return S
+                },
+                trackForumUpsellModalClicked: function() {
+                    return M
+                },
                 trackForumUpsellModalViewed: function() {
-                    return x
+                    return B
                 }
             });
-            var i = n("313361"),
-                r = n("367907"),
-                a = n("731429"),
-                s = n("188471"),
-                o = n("592125"),
-                l = n("703558"),
-                u = n("626135"),
-                d = n("358085"),
-                _ = n("901648"),
-                c = n("660189"),
-                E = n("208970"),
-                I = n("281301"),
-                T = n("6496"),
-                f = n("981631");
+            var i = n("367907"),
+                r = n("731429"),
+                a = n("188471"),
+                s = n("592125"),
+                o = n("703558"),
+                l = n("626135"),
+                u = n("358085"),
+                d = n("660189"),
+                _ = n("208970"),
+                c = n("6496"),
+                E = n("981631");
 
-            function S(e) {
+            function I(e) {
                 let {
                     guildId: t,
                     channelId: n,
-                    sessionId: i,
+                    sessionId: r,
                     postIds: a,
                     additionalTimes: s
                 } = e;
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_CHANNEL_SEEN_BATCH, {
-                    ...(0, T.collectForumAnalyticsMetadata)({
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_SEEN_BATCH, {
+                    ...(0, c.collectForumAnalyticsMetadata)({
                         channelId: n,
-                        sessionId: i
+                        sessionId: r
                     }),
                     guild_id: t,
                     channel_id: n,
@@ -127688,19 +127580,69 @@
                 })
             }
 
-            function h(e) {
+            function T(e) {
                 let {
                     guildId: t,
                     channelId: n,
-                    numSearchResults: i
+                    numSearchResults: r
                 } = e;
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_CHANNEL_SEARCHED, {
-                    ...(0, T.collectForumAnalyticsMetadata)({
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_SEARCHED, {
+                    ...(0, c.collectForumAnalyticsMetadata)({
                         channelId: n
                     }),
                     guild_id: t,
                     channel_id: n,
-                    num_search_results: i
+                    num_search_results: r
+                })
+            }
+
+            function f(e) {
+                let {
+                    guildId: t,
+                    channelId: n
+                } = e;
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_SEARCH_CLEARED, {
+                    ...(0, c.collectForumAnalyticsMetadata)({
+                        channelId: n
+                    }),
+                    guild_id: t,
+                    channel_id: n
+                })
+            }
+
+            function S(e) {
+                let {
+                    guildId: t,
+                    channelId: n,
+                    tagId: r,
+                    filterTagIds: a,
+                    added: s,
+                    location: o
+                } = e;
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_TAG_FILTER_CLICKED, {
+                    ...(0, c.collectForumAnalyticsMetadata)({
+                        channelId: n
+                    }),
+                    guild_id: t,
+                    channel_id: n,
+                    tag_id: r,
+                    filter_tag_ids: a,
+                    added: s,
+                    location: o
+                })
+            }
+
+            function h(e) {
+                let {
+                    guildId: t,
+                    channelId: n
+                } = e;
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_CREATE_NEW_POST_CLICKED, {
+                    ...(0, c.collectForumAnalyticsMetadata)({
+                        channelId: n
+                    }),
+                    guild_id: t,
+                    channel_id: n
                 })
             }
 
@@ -127709,8 +127651,8 @@
                     guildId: t,
                     channelId: n
                 } = e;
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_CHANNEL_SEARCH_CLEARED, {
-                    ...(0, T.collectForumAnalyticsMetadata)({
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_CREATE_NEW_POST_KEYBIND_USED, {
+                    ...(0, c.collectForumAnalyticsMetadata)({
                         channelId: n
                     }),
                     guild_id: t,
@@ -127719,24 +127661,26 @@
             }
 
             function m(e) {
+                var t, n, r, a;
                 let {
-                    guildId: t,
-                    channelId: n,
-                    tagId: i,
-                    filterTagIds: a,
-                    added: s,
-                    location: o
-                } = e;
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_CHANNEL_TAG_FILTER_CLICKED, {
-                    ...(0, T.collectForumAnalyticsMetadata)({
-                        channelId: n
+                    guildId: l,
+                    channelId: u
+                } = e, d = s.default.getChannel(u);
+                if (null == d) return;
+                let _ = o.default.getThreadSettings(u),
+                    I = null === (t = d.template) || void 0 === t ? void 0 : t.trim(),
+                    T = o.default.getDraft(u, o.DraftType.FirstThreadMessage),
+                    f = null == T || 0 === T.length || (null == T ? void 0 : T.trim()) === I,
+                    S = (null == _ ? void 0 : _.appliedTags) == null || (null == _ ? void 0 : null === (n = _.appliedTags) || void 0 === n ? void 0 : n.size) === 0,
+                    h = (null == _ ? void 0 : _.name) == null || (null == _ ? void 0 : null === (a = _.name) || void 0 === a ? void 0 : null === (r = a.trim()) || void 0 === r ? void 0 : r.length) === 0;
+                (!f || !S || !h) && i.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_NEW_POST_DRAFT_CREATED, {
+                    ...(0, c.collectForumAnalyticsMetadata)({
+                        channelId: u
                     }),
-                    guild_id: t,
-                    channel_id: n,
-                    tag_id: i,
-                    filter_tag_ids: a,
-                    added: s,
-                    location: o
+                    guild_id: l,
+                    channel_id: u,
+                    applied_tag_ids: (0, c.getForumPostDraftAppliedTagIds)(u),
+                    num_attachments: (0, c.getForumPostDraftNumAttachments)(u)
                 })
             }
 
@@ -127745,8 +127689,8 @@
                     guildId: t,
                     channelId: n
                 } = e;
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_CHANNEL_CREATE_NEW_POST_CLICKED, {
-                    ...(0, T.collectForumAnalyticsMetadata)({
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_NEW_POST_DRAFT_CLEARED, {
+                    ...(0, c.collectForumAnalyticsMetadata)({
                         channelId: n
                     }),
                     guild_id: t,
@@ -127757,52 +127701,58 @@
             function p(e) {
                 let {
                     guildId: t,
+                    channelId: n,
+                    postId: r
+                } = e;
+
+                function a() {
+                    i.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_POST_CREATED, {
+                        ...(0, c.collectForumPostAnalyticsMetadata)({
+                            channelId: r
+                        }),
+                        guild_id: t,
+                        channel_id: n
+                    })
+                }
+                d.default.isLoading(r) ? d.default.addConditionalChangeListener(() => !!d.default.isLoading(r) || (a(), !1)) : a()
+            }
+
+            function O(e) {
+                let {
+                    guildId: t,
                     channelId: n
                 } = e;
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_CHANNEL_CREATE_NEW_POST_KEYBIND_USED, {
-                    ...(0, T.collectForumAnalyticsMetadata)({
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_SCROLLED, {
+                    ...(0, c.collectForumAnalyticsMetadata)({
                         channelId: n
                     }),
                     guild_id: t,
                     channel_id: n
-                })
-            }
-
-            function O(e) {
-                var t, n, i, a;
-                let {
-                    guildId: s,
-                    channelId: u
-                } = e, d = o.default.getChannel(u);
-                if (null == d) return;
-                let _ = l.default.getThreadSettings(u),
-                    c = null === (t = d.template) || void 0 === t ? void 0 : t.trim(),
-                    E = l.default.getDraft(u, l.DraftType.FirstThreadMessage),
-                    I = null == E || 0 === E.length || (null == E ? void 0 : E.trim()) === c,
-                    S = (null == _ ? void 0 : _.appliedTags) == null || (null == _ ? void 0 : null === (n = _.appliedTags) || void 0 === n ? void 0 : n.size) === 0,
-                    h = (null == _ ? void 0 : _.name) == null || (null == _ ? void 0 : null === (a = _.name) || void 0 === a ? void 0 : null === (i = a.trim()) || void 0 === i ? void 0 : i.length) === 0;
-                (!I || !S || !h) && r.default.trackWithMetadata(f.AnalyticEvents.FORUM_CHANNEL_NEW_POST_DRAFT_CREATED, {
-                    ...(0, T.collectForumAnalyticsMetadata)({
-                        channelId: u
-                    }),
-                    guild_id: s,
-                    channel_id: u,
-                    applied_tag_ids: (0, T.getForumPostDraftAppliedTagIds)(u),
-                    num_attachments: (0, T.getForumPostDraftNumAttachments)(u)
                 })
             }
 
             function R(e) {
                 let {
                     guildId: t,
-                    channelId: n
+                    channelId: n,
+                    numArchivedThreads: r,
+                    hasMoreThreads: a,
+                    filterTagIds: o,
+                    sortOrder: u
                 } = e;
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_CHANNEL_NEW_POST_DRAFT_CLEARED, {
-                    ...(0, T.collectForumAnalyticsMetadata)({
+                l.default.track(E.AnalyticEvents.FORUM_CHANNEL_MORE_POSTS_LOADED, {
+                    ...(0, i.collectGuildAnalyticsMetadata)(t),
+                    ...(0, i.collectChannelAnalyticsMetadata)(s.default.getChannel(n)),
+                    ...(0, c.collectForumAnalyticsMetadata)({
                         channelId: n
                     }),
                     guild_id: t,
-                    channel_id: n
+                    channel_id: n,
+                    num_archived_threads: r,
+                    num_active_threads: (0, c.getNumActiveThreads)(t, n),
+                    has_more_threads: a,
+                    filter_tag_ids: o,
+                    sort_order: u
                 })
             }
 
@@ -127810,32 +127760,35 @@
                 let {
                     guildId: t,
                     channelId: n,
-                    postId: i
+                    postId: r,
+                    location: a
                 } = e;
-
-                function a() {
-                    r.default.trackWithMetadata(f.AnalyticEvents.FORUM_CHANNEL_POST_CREATED, {
-                        ...(0, T.collectForumPostAnalyticsMetadata)({
-                            channelId: i
-                        }),
-                        guild_id: t,
-                        channel_id: n
-                    })
-                }
-                c.default.isLoading(i) ? c.default.addConditionalChangeListener(() => !!c.default.isLoading(i) || (a(), !1)) : a()
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_POST_CLICKED, {
+                    ...(0, c.collectForumPostAnalyticsMetadata)({
+                        channelId: r
+                    }),
+                    guild_id: t,
+                    channel_id: n,
+                    is_search_result: null != _.default.getSearchResults(n),
+                    location: a
+                })
             }
 
             function g(e) {
                 let {
                     guildId: t,
-                    channelId: n
+                    channelId: n,
+                    sortOrder: r
                 } = e;
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_CHANNEL_SCROLLED, {
-                    ...(0, T.collectForumAnalyticsMetadata)({
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_POSTS_SORTED, {
+                    ...(0, c.collectForumAnalyticsMetadata)({
                         channelId: n
                     }),
                     guild_id: t,
-                    channel_id: n
+                    channel_id: n,
+                    sort_type: (0, c.convertSortOrderToReadableString)(r),
+                    sort_order: r,
+                    forum_channel_sort_order: r
                 })
             }
 
@@ -127843,172 +127796,111 @@
                 let {
                     guildId: t,
                     channelId: n,
-                    numArchivedThreads: i,
-                    hasMoreThreads: a,
-                    filterTagIds: s,
-                    sortOrder: l
+                    forumLayout: r
                 } = e;
-                u.default.track(f.AnalyticEvents.FORUM_CHANNEL_MORE_POSTS_LOADED, {
-                    ...(0, r.collectGuildAnalyticsMetadata)(t),
-                    ...(0, r.collectChannelAnalyticsMetadata)(o.default.getChannel(n)),
-                    ...(0, T.collectForumAnalyticsMetadata)({
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_LAYOUT_UPDATED, {
+                    ...(0, c.collectForumAnalyticsMetadata)({
                         channelId: n
                     }),
                     guild_id: t,
                     channel_id: n,
-                    num_archived_threads: i,
-                    num_active_threads: (0, T.getNumActiveThreads)(t, n),
-                    has_more_threads: a,
-                    filter_tag_ids: s,
-                    sort_order: l
+                    forum_channel_layout: r
                 })
             }
 
             function v(e) {
                 let {
-                    guildId: t,
-                    channelId: n,
-                    postId: i,
-                    location: a
-                } = e;
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_CHANNEL_POST_CLICKED, {
-                    ...(0, T.collectForumPostAnalyticsMetadata)({
-                        channelId: i
-                    }),
-                    guild_id: t,
-                    channel_id: n,
-                    is_search_result: null != E.default.getSearchResults(n),
-                    location: a
-                })
-            }
-
-            function D(e) {
-                let {
-                    guildId: t,
-                    channelId: n,
-                    sortOrder: i
-                } = e;
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_CHANNEL_POSTS_SORTED, {
-                    ...(0, T.collectForumAnalyticsMetadata)({
-                        channelId: n
-                    }),
-                    guild_id: t,
-                    channel_id: n,
-                    sort_type: (0, T.convertSortOrderToReadableString)(i),
-                    sort_order: i,
-                    forum_channel_sort_order: i
-                })
-            }
-
-            function M(e) {
-                let {
-                    guildId: t,
-                    channelId: n,
-                    forumLayout: a
-                } = e, s = (0, _.isForumActivityExperimentEnabled)(t) && a === i.ForumLayout.LIST ? I.INCREASED_ACTIVITY_LIST_FORUM_LAYOUT : a;
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_CHANNEL_LAYOUT_UPDATED, {
-                    ...(0, T.collectForumAnalyticsMetadata)({
-                        channelId: n
-                    }),
-                    guild_id: t,
-                    channel_id: n,
-                    forum_channel_layout: s
-                })
-            }
-
-            function y(e) {
-                let {
                     postId: t,
                     location: n
                 } = e;
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_POST_LINK_COPIED, {
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_POST_LINK_COPIED, {
                     forum_post_id: t,
                     location: n
                 })
             }
 
-            function P(e) {
+            function D(e) {
                 let {
                     onboardingCTA: t
                 } = e;
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_CHANNEL_ONBOARDING_CLICKED, {
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_ONBOARDING_CLICKED, {
                     onboarding_cta_type: t
+                })
+            }
+
+            function M(e) {
+                let {
+                    forumDemoId: t
+                } = e;
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_UPSELL_MODAL_CLICKED, {
+                    forum_demo_id: t
+                })
+            }
+
+            function y(e) {
+                let {
+                    added: t
+                } = e;
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_ADD_MEDIA_TO_ORIGINAL_POST_CLICKED, {
+                    added: t
+                })
+            }
+
+            function P(e) {
+                let {
+                    readGuideCta: t
+                } = e;
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_HELPER_CARD_CLICKED, {
+                    read_guide_cta: t
                 })
             }
 
             function U(e) {
                 let {
-                    forumDemoId: t
-                } = e;
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_UPSELL_MODAL_CLICKED, {
-                    forum_demo_id: t
-                })
-            }
-
-            function b(e) {
-                let {
-                    added: t
-                } = e;
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_ADD_MEDIA_TO_ORIGINAL_POST_CLICKED, {
-                    added: t
-                })
-            }
-
-            function G(e) {
-                let {
-                    readGuideCta: t
-                } = e;
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_CHANNEL_HELPER_CARD_CLICKED, {
-                    read_guide_cta: t
-                })
-            }
-
-            function w(e) {
-                let {
                     isMobile: t
                 } = e;
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_CHANNEL_MEDIA_UPLOADER_CLICKED, {
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_MEDIA_UPLOADER_CLICKED, {
                     is_mobile: t
                 })
             }
 
-            function B() {
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_CHANNEL_ENABLE_AUTOMOD_CLICKED)
+            function b() {
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_ENABLE_AUTOMOD_CLICKED)
             }
 
-            function k() {
-                r.default.trackWithMetadata(f.AnalyticEvents.FORUM_CHANNEL_ENABLE_PREVIEW_CLICKED)
+            function G() {
+                i.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_ENABLE_PREVIEW_CLICKED)
             }
 
-            function V(e) {
-                r.default.trackWithMetadata(f.AnalyticEvents.CHANNEL_OPENED, {
-                    ...(0, r.collectGuildAnalyticsMetadata)(e.guild_id),
-                    ...(0, r.collectChannelAnalyticsMetadata)(e),
-                    ...(0, a.collectThreadMetadata)(e, !0),
-                    ...(0, r.getChannelOpenedMetadata)(e.id),
+            function w(e) {
+                i.default.trackWithMetadata(E.AnalyticEvents.CHANNEL_OPENED, {
+                    ...(0, i.collectGuildAnalyticsMetadata)(e.guild_id),
+                    ...(0, i.collectChannelAnalyticsMetadata)(e),
+                    ...(0, r.collectThreadMetadata)(e, !0),
+                    ...(0, i.getChannelOpenedMetadata)(e.id),
                     channel_view: "Split View",
-                    platform: (0, d.getPlatform)()
-                }), (0, s.trackClickstream)(f.AnalyticEvents.CHANNEL_OPENED_CLICKSTREAM, {
+                    platform: (0, u.getPlatform)()
+                }), (0, a.trackClickstream)(E.AnalyticEvents.CHANNEL_OPENED_CLICKSTREAM, {
                     channelId: e.id
                 })
             }
 
-            function x() {
-                r.default.trackWithMetadata(f.AnalyticEvents.OPEN_MODAL, {
+            function B() {
+                i.default.trackWithMetadata(E.AnalyticEvents.OPEN_MODAL, {
                     type: "Forum Channel Upsell Modal",
                     location: {
-                        section: f.AnalyticsSections.CHANNEL_WELCOME_CTA
+                        section: E.AnalyticsSections.CHANNEL_WELCOME_CTA
                     }
                 })
             }
 
-            function F(e) {
+            function k(e) {
                 let {
                     guildId: t,
                     channelId: n
                 } = e;
-                r.default.trackWithMetadata(f.AnalyticEvents.THREAD_CREATION_STARTED, {
-                    ...(0, a.collectThreadMetadata)(o.default.getChannel(n)),
+                i.default.trackWithMetadata(E.AnalyticEvents.THREAD_CREATION_STARTED, {
+                    ...(0, r.collectThreadMetadata)(s.default.getChannel(n)),
                     channel_id: n,
                     guild_id: t
                 })
@@ -128173,32 +128065,6 @@
                         })
                     }(f.id)
                 } : null
-            }
-        },
-        281301: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                INCREASED_ACTIVITY_LIST_FORUM_LAYOUT: function() {
-                    return s
-                },
-                useForumActivityExperiment: function() {
-                    return o
-                }
-            });
-            var i = n("31377"),
-                r = n("837934"),
-                a = n("981631");
-            let s = 3;
-
-            function o(e) {
-                let t = r.default.useExperiment({
-                        guildId: null != e ? e : a.EMPTY_STRING_SNOWFLAKE_ID,
-                        location: "9a247a_1"
-                    }),
-                    n = i.default.useExperiment({
-                        location: "9a247a_2"
-                    });
-                return !!(t.enabled || n.enabled)
             }
         },
         222044: function(e, t, n) {
@@ -151755,7 +151621,7 @@
                     },
                     async open(e, t, i, r) {
                         var a;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("56630"), n.e("58227"), n.e("43643"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("67582"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("6085")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("24267"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("56630"), n.e("58227"), n.e("43643"), n.e("85093"), n.e("85552"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("67582"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("6085")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         a.default.dispatch({
@@ -169444,8 +169310,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714673533839",
-                                    build_number: "289971"
+                                    built_at: "1714674808036",
+                                    build_number: "289989"
                                 }
                             },
                             retries: 1
@@ -191283,13 +191149,10 @@
                     return d
                 },
                 transitionToMessage: function() {
-                    return E
+                    return c
                 },
                 transitionToThread: function() {
                     return _
-                },
-                transitionToThreadMessage: function() {
-                    return c
                 }
             });
             var i = n("512722"),
@@ -191314,12 +191177,6 @@
             }
 
             function c(e, t, n, i) {
-                r()(null != e.parent_id, "Thread must have a parent ID.");
-                let a = (0, s.getGuildIdForGenericRedirect)(e);
-                (0, l.transitionTo)(u.Routes.CHANNEL(a, e.id, t), i, n)
-            }
-
-            function E(e, t, n, i) {
                 let r = o.default.getChannel(e);
                 if (null == r) return;
                 let a = (0, s.getGuildIdForGenericRedirect)(r);
@@ -247410,7 +247267,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "1e12be95ba16817c220d9236dade6315e6862e02"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f0897db6d7c350118122edbb04abb1543723651b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276069,7 +275926,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "289971"
+                                build_number: "289989"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -283396,7 +283253,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "289971", "289971"), 10);
+                let a = parseInt((n = "289989", "289989"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -310796,4 +310653,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.4e6dee9ef235e970fbc6.js.map
+//# sourceMappingURL=35705.b703ab53d51811b65b27.js.map

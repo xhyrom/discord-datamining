@@ -8296,7 +8296,6 @@
                 header: "header_b2c494",
                 headerRow: "headerRow__86f2e",
                 headerWithMatchingPosts: "headerWithMatchingPosts__1d7ac",
-                increasedActivityMainCard: "increasedActivityMainCard_e53744",
                 key: "key__74772",
                 keyboardShortcut: "keyboardShortcut_b69e32",
                 label: "label_d099a0",
@@ -8305,7 +8304,6 @@
                 "loadingCard-0": "loadingCard-0__056b6",
                 "loadingCard-1": "loadingCard-1__5112b",
                 "loadingCard-2": "loadingCard-2__68173",
-                loadingCardWithIncreasedActivity: "loadingCardWithIncreasedActivity_ed3e90",
                 mainCard: "mainCard__0ec2c",
                 matchingPosts: "matchingPosts__97f88",
                 matchingPostsRow: "matchingPostsRow__6cdb0",
@@ -8603,28 +8601,6 @@
                 typingUsers: "typingUsers__7e22c"
             }
         },
-        590105: function(e) {
-            "use strict";
-            e.exports = {
-                body: "body_f92b49",
-                bodyMedia: "bodyMedia__2f39b",
-                card: "card__2c1e2",
-                content: "content_cf7bff",
-                engagement: "engagement_f3e27e",
-                firstMessage: "firstMessage_f78ddf loadingAnimation_feba48",
-                header: "header__687a3",
-                loadingAnimation: "loadingAnimation_feba48",
-                reactions: "reactions_b987c2 loadingAnimation_feba48",
-                replies: "replies__1c6b5 loadingAnimation_feba48",
-                seperator: "seperator__478a3",
-                shimmer: "shimmer__1d400",
-                tag: "tag__93797",
-                tags: "tags_ac25a4",
-                time: "time_a79435",
-                title: "title__8bfa0 loadingAnimation_feba48",
-                titleAndMessage: "titleAndMessage__7e7a3"
-            }
-        },
         733281: function(e) {
             "use strict";
             e.exports = {
@@ -8640,61 +8616,10 @@
                 closeCircle: "closeCircle_c7a6d7 emoji__1d40e",
                 disabled: "disabled_fbfabf",
                 emoji: "emoji__1d40e",
-                increasedActivityPill: "increasedActivityPill__2620e",
-                increasedActivitySmall: "increasedActivitySmall__041ab",
-                increasedActivityText: "increasedActivityText_b65602",
                 pill: "pill_f055c3",
                 selected: "selected__50db4",
                 small: "small_b35a0f",
                 tooltipPill: "tooltipPill__6b189"
-            }
-        },
-        911748: function(e) {
-            "use strict";
-            e.exports = {
-                addReactButton: "addReactButton_c67c5a",
-                addReactionContainer: "addReactionContainer__3b393",
-                body: "body__37dba",
-                bodyMedia: "bodyMedia_ef2282",
-                bullet: "bullet__07ba4",
-                container: "container__5130c",
-                content: "content__5a6e2",
-                contentContainer: "contentContainer_a5a654",
-                defaultReaction: "defaultReaction_cda082",
-                dots: "dots__2e6e2",
-                engagement: "engagement_cba15e",
-                firstMessageContent: "firstMessageContent__3e6ff",
-                focusTarget: "focusTarget_f544b9",
-                header: "header__9942d",
-                isOpen: "isOpen__036bf",
-                loading: "loading__64684",
-                lockedMessage: "lockedMessage_f5492b",
-                messageCountBox: "messageCountBox_dec14c",
-                messageCountIcon: "messageCountIcon__403d6",
-                messageCountText: "messageCountText__8cb94",
-                messageReactions: "messageReactions_ad8a7e",
-                mostRecentMessage: "mostRecentMessage_e4db62",
-                mostRecentMessageAuthor: "mostRecentMessageAuthor_cb1687",
-                mostRecentMessageContent: "mostRecentMessageContent_a55e34",
-                newBadge: "newBadge_b7f5a5",
-                nonUserMessage: "nonUserMessage_c3b49e",
-                obscured: "obscured__0c0a9",
-                obscuredTag: "obscuredTag__0c600",
-                pinIcon: "pinIcon_a93f74",
-                reaction: "reaction_a0e18f",
-                reactionRow: "reactionRow__0af05",
-                replies: "replies__1b03e",
-                separator: "separator_dc8de1",
-                startTheConversation: "startTheConversation_f742fe",
-                tags: "tags_b7acc4",
-                tagsRow: "tagsRow__5814f",
-                timestampTooltip: "timestampTooltip_ce7c30",
-                title: "title__4fa10",
-                titleAndMessage: "titleAndMessage__61ece",
-                typing: "typing__11513",
-                typingUsers: "typingUsers__2a111",
-                unreadMessagesCount: "unreadMessagesCount__36b4e",
-                wavingHand: "wavingHand__2d3c7"
             }
         },
         598244: function(e) {
@@ -8731,8 +8656,6 @@
         893361: function(e) {
             "use strict";
             e.exports = {
-                increasedActivityDotIcon: "increasedActivityDotIcon_feef86",
-                increasedActivityTags: "increasedActivityTags__917b7",
                 pinIcon: "pinIcon__054d8",
                 tagFiltered: "tagFiltered_a6df1a",
                 tags: "tags_e6c42a"
