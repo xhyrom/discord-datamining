@@ -15520,10 +15520,11 @@
             "use strict";
             e.exports = {
                 activityCardActivityIcon: "activityCardActivityIcon_ffae8f",
-                activityCardContainer: "activityCardContainer__6615c",
-                activityCardDetailsContainer: "activityCardDetailsContainer__32ad7",
                 activityCardImage: "activityCardImage__960a6",
-                channelIcon: "channelIcon__3faf0",
+                cardContainer: "cardContainer__5b0e3",
+                cardDetailsContainer: "cardDetailsContainer__399e5",
+                cardDetailsIcon: "cardDetailsIcon_e55f59",
+                cardDetailsTextContainer: "cardDetailsTextContainer_e358c7",
                 container: "container_a88e31",
                 emptyActivityCardContainer: "emptyActivityCardContainer_a8d8cf",
                 emptyActivityCardPrompt: "emptyActivityCardPrompt_b217cc",
@@ -15534,8 +15535,8 @@
                 header: "header__3a32b",
                 infoIcon: "infoIcon__6e0d9",
                 joinButton: "joinButton_f6f9af",
-                location: "location__73d84",
                 mask: "mask_beff87",
+                numberPill: "numberPill__7188a",
                 othersCount: "othersCount__89551",
                 rowIcon: "rowIcon__45dc2",
                 rowIconV2: "rowIconV2_fe06d9 rowIcon__45dc2"
