@@ -4196,7 +4196,11 @@
   },
   "APP_RECOMMENDATIONS": {
     "url": "/app-recommendations",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_FEED": {
     "url": "/guilds/:param/guild-feed",
@@ -4879,7 +4883,10 @@
   },
   "MY_SPOTIFY_CONTENT_INVENTORY": {
     "url": "/content-inventory/users/@me/spotify",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MY_CONTENT_INVENTORY_APPLICATION": {
     "url": "/content-inventory/users/@me/applications/:param",
