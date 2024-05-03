@@ -37022,7 +37022,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290554", ", Version Hash: ").concat("55ff35638cce4316d1bd19a4da1b147942f5f70b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290560", ", Version Hash: ").concat("cf5768beaacd91e4716e83b260ab32e0f5bc4a1f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -76848,34 +76848,46 @@
             "use strict";
             n.r(t), n.d(t, {
                 useIsMessageInteractionForcedEphemeral: function() {
-                    return o
+                    return u
                 },
                 useShouldShowUserAppBetaBar: function() {
-                    return l
+                    return d
                 }
             });
             var i = n("373793"),
-                r = n("213459"),
-                a = n("581364"),
-                s = n("104793");
+                r = n("911969"),
+                a = n("213459"),
+                s = n("581364"),
+                o = n("807169"),
+                l = n("104793");
 
-            function o(e, t, n) {
-                let r = (0, a.useIsGuildInUserAppExperiment)(null == t ? void 0 : t.guild_id, n);
+            function u(e, t, n) {
+                let r = (0, s.useIsGuildInUserAppExperiment)(null == t ? void 0 : t.guild_id, n);
                 if (null == e.interactionMetadata || r) return !1;
-                let s = e.interactionMetadata.authorizing_integration_owners;
-                return 1 === Object.keys(s).length && i.ApplicationIntegrationType.USER_INSTALL in s
+                let a = e.interactionMetadata.authorizing_integration_owners;
+                return 1 === Object.keys(a).length && i.ApplicationIntegrationType.USER_INSTALL in a
             }
 
-            function l(e, t, n) {
-                var i, o, l, u;
-                let d = (0, r.useUserIndexState)(!0, !1),
-                    _ = (0, r.useGuildIndexState)(null == t ? void 0 : t.guild_id, !1),
-                    c = (0, a.isGuildInUserAppExperiment)(null == t ? void 0 : t.guild_id, n);
-                if (null == e || c) return !1;
-                let E = null === (o = _.result) || void 0 === o ? void 0 : null === (i = o.sections[e.applicationId]) || void 0 === i ? void 0 : i.descriptor.permissions;
-                if ((0, s.computeAllowedForChannel)(E, t, null == t ? void 0 : t.guild_id)) return !1;
-                let I = null === (u = d.result) || void 0 === u ? void 0 : null === (l = u.sections[e.applicationId]) || void 0 === l ? void 0 : l.commands;
-                return null != I && e.id in I
+            function d(e, t, n) {
+                var i, u, d, _;
+                let c = (0, o.usePermissionContext)(t, r.ApplicationCommandType.CHAT),
+                    E = (0, a.useUserIndexState)(!0, !1),
+                    I = (0, a.useGuildIndexState)(null == t ? void 0 : t.guild_id, !1),
+                    T = (0, s.isGuildInUserAppExperiment)(null == t ? void 0 : t.guild_id, n);
+                if (null == e || T) return !1;
+                let {
+                    context: f,
+                    userId: S,
+                    roleIds: h,
+                    isImpersonating: A
+                } = c, m = null === (u = I.result) || void 0 === u ? void 0 : null === (i = u.sections[e.applicationId]) || void 0 === i ? void 0 : i.descriptor;
+                if (void 0 !== m) {
+                    let n = (0, l.computeAllowedForChannel)(m.permissions, t, null == t ? void 0 : t.guild_id),
+                        i = (0, l.computeAllowedForUser)(m.permissions, f.guild_id, S, h, A);
+                    if ((0, l.hasAccess)(e, c, i, n, m.botId) === l.HasAccessResult.ALLOWED) return !1
+                }
+                let N = null === (_ = E.result) || void 0 === _ ? void 0 : null === (d = _.sections[e.applicationId]) || void 0 === d ? void 0 : d.commands;
+                return null != N && e.id in N
             }
         },
         581364: function(e, t, n) {
@@ -87447,8 +87459,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290554", "290554"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290554")), t = 0), t
+                let t = parseInt((e = "290560", "290560"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290560")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115201,8 +115213,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290554",
-                    versionHash: "55ff35638cce4316d1bd19a4da1b147942f5f70b"
+                    buildNumber: "290560",
+                    versionHash: "cf5768beaacd91e4716e83b260ab32e0f5bc4a1f"
                 }
             }
             n.r(t), n.d(t, {
@@ -170540,8 +170552,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714770820069",
-                                    build_number: "290554"
+                                    built_at: "1714771531596",
+                                    build_number: "290560"
                                 }
                             },
                             retries: 1
@@ -248596,7 +248608,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "55ff35638cce4316d1bd19a4da1b147942f5f70b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "cf5768beaacd91e4716e83b260ab32e0f5bc4a1f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277260,7 +277272,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290554"
+                                build_number: "290560"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284587,7 +284599,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290554", "290554"), 10);
+                let a = parseInt((n = "290560", "290560"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -312052,4 +312064,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.31092f6340cbf18678f6.js.map
+//# sourceMappingURL=35705.f6b33a5edf0f599ed345.js.map
