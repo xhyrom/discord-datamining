@@ -36888,7 +36888,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290500", ", Version Hash: ").concat("e1eef0e45a0e582e07967ea38472c4f9d8debdea")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290510", ", Version Hash: ").concat("f15885a9674713ea82b6bbf939edca015bc059d2")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -69292,12 +69292,16 @@
                                     guildId: d,
                                     channelId: U,
                                     source: b,
+                                    look: w,
+                                    color: G,
                                     onAction: k
                                 }, "spotify-activity-sync-button"),
                                 r = (0, i.jsx)(L.default, {
                                     activity: t,
                                     user: n,
                                     source: b,
+                                    look: w,
+                                    color: G,
                                     onAction: k
                                 }, "spotify-activity-play-button");
                             return j ? (0, i.jsxs)(i.Fragment, {
@@ -69775,15 +69779,20 @@
                     activity: t,
                     user: n,
                     source: u,
-                    onAction: d
+                    look: d,
+                    color: _,
+                    onAction: c
                 } = e;
                 return null != t && (0, a.default)(t, o.ActivityFlags.PLAY) && (0, s.default)(t) ? (0, i.jsx)(r.default, {
                     className: l.button,
                     size: l.buttonSize,
+                    look: d,
+                    color: _,
+                    fullWidth: !0,
                     activity: t,
                     user: n,
                     source: u,
-                    onAction: d
+                    onAction: c
                 }, "play") : null
             }
         },
@@ -69809,17 +69818,21 @@
                     guildId: u,
                     channelId: d,
                     source: _,
-                    onAction: c
+                    look: c,
+                    color: E,
+                    onAction: I
                 } = e;
                 return null != t && (0, a.default)(t, o.ActivityFlags.SYNC) && (0, s.default)(t) ? (0, i.jsx)(r.default, {
                     className: l.button,
                     size: l.buttonSize,
+                    look: c,
+                    color: E,
                     user: n,
                     activity: t,
                     guildId: null != u ? u : void 0,
                     channelId: d,
                     source: _,
-                    onAction: c
+                    onAction: I
                 }, "sync") : null
             }
         },
@@ -87293,8 +87306,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290500", "290500"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290500")), t = 0), t
+                let t = parseInt((e = "290510", "290510"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290510")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115047,8 +115060,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290500",
-                    versionHash: "e1eef0e45a0e582e07967ea38472c4f9d8debdea"
+                    buildNumber: "290510",
+                    versionHash: "f15885a9674713ea82b6bbf939edca015bc059d2"
                 }
             }
             n.r(t), n.d(t, {
@@ -170374,8 +170387,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714766334273",
-                                    build_number: "290500"
+                                    built_at: "1714767156971",
+                                    build_number: "290510"
                                 }
                             },
                             retries: 1
@@ -197755,18 +197768,21 @@
                     source: u,
                     className: d,
                     size: _,
-                    onAction: c
+                    look: c,
+                    color: E,
+                    fullWidth: I,
+                    onAction: T
                 } = e, {
-                    label: E,
-                    tooltip: I,
-                    loading: T,
-                    disabled: f,
-                    onClick: S
-                } = (0, o.useSpotifyPlayAction)(t, n, u), h = () => {
-                    null == c || c(), S()
+                    label: f,
+                    tooltip: S,
+                    loading: h,
+                    disabled: A,
+                    onClick: m
+                } = (0, o.useSpotifyPlayAction)(t, n, u), N = () => {
+                    null == T || T(), m()
                 };
                 return (0, i.jsx)(r.Tooltip, {
-                    text: I,
+                    text: S,
                     children: e => {
                         let {
                             onMouseEnter: t,
@@ -197775,16 +197791,19 @@
                         return (0, i.jsx)(r.Button, {
                             className: d,
                             size: _,
-                            onClick: h,
+                            look: c,
+                            color: E,
+                            fullWidth: I,
+                            onClick: N,
                             onMouseEnter: t,
                             onMouseLeave: n,
-                            disabled: f,
-                            submitting: T,
+                            disabled: A,
+                            submitting: h,
                             children: (0, i.jsxs)(a.default, {
                                 align: a.default.Align.CENTER,
                                 children: [(0, i.jsx)(s.default, {
                                     className: l.spotifyButtonLogo
-                                }), E]
+                                }), f]
                             })
                         })
                     }
@@ -197816,18 +197835,20 @@
                     guildId: _,
                     source: c,
                     size: E,
-                    className: I,
-                    onAction: T
+                    look: I,
+                    color: T,
+                    className: f,
+                    onAction: S
                 } = e, {
-                    tooltip: f,
-                    loading: S,
-                    disabled: h,
-                    onClick: A
-                } = (0, u.useSpotifySyncAction)(t, n, c, l.default.getNickname(_, r, n)), m = () => {
-                    null == T || T(), A()
+                    tooltip: h,
+                    loading: A,
+                    disabled: m,
+                    onClick: N
+                } = (0, u.useSpotifySyncAction)(t, n, c, l.default.getNickname(_, r, n)), p = () => {
+                    null == S || S(), N()
                 };
                 return (0, i.jsx)(s.Tooltip, {
-                    text: f,
+                    text: h,
                     children: e => {
                         let {
                             onMouseEnter: n,
@@ -197835,13 +197856,15 @@
                         } = e;
                         return (0, i.jsx)(s.Button, {
                             size: a()(E, d.iconButtonSize),
-                            className: a()(I, d.iconButton),
-                            onClick: m,
+                            className: a()(f, d.iconButton),
+                            look: I,
+                            color: T,
+                            onClick: p,
                             onMouseEnter: n,
                             onMouseLeave: r,
-                            disabled: h,
-                            submitting: S,
-                            "aria-label": null != f ? f : t.name,
+                            disabled: m,
+                            submitting: A,
+                            "aria-label": null != h ? h : t.name,
                             children: (0, i.jsx)(o.default, {
                                 className: d.listenAlongIcon
                             })
@@ -248388,7 +248411,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e1eef0e45a0e582e07967ea38472c4f9d8debdea"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f15885a9674713ea82b6bbf939edca015bc059d2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276953,7 +276976,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290500"
+                                build_number: "290510"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284170,7 +284193,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290500", "290500"), 10);
+                let a = parseInt((n = "290510", "290510"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -311635,4 +311658,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.5c0286fb332b4697ba7d.js.map
+//# sourceMappingURL=35705.1e3bff172f42e126a39d.js.map
