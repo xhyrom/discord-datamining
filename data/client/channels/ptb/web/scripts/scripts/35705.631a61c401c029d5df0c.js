@@ -37022,7 +37022,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290593", ", Version Hash: ").concat("a7dc9a9d853de241c2d1ba5c150747eee0f41d2b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290608", ", Version Hash: ").concat("6d5073c98f4986d3d579ddabbdb37006e5d42d0f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -38434,6 +38434,7 @@
                 CHARACTER_COUNT_AT_LIMIT: "Message is at max length",
                 CHARACTER_COUNT_CLOSE_TO_LIMIT: "{count} characters remaining",
                 CHARACTER_COUNT_OVER_LIMIT: "Message is too long",
+                MESSAGE_UNSUPPORTED: "Message cannot be displayed by this version of the app.",
                 CHANNEL_SETTINGS_SUMMARIES_TOGGLE: "Enable Channel Summaries",
                 CHANNEL_SETTINGS_SUMMARIES_TOGGLE_DESCRIPTION: "If turned off, nobody will see the Summaries in this channel. [Learn More]({helpdeskArticle})",
                 CHANNEL_TOOLTIP_VOICE: "Voice",
@@ -87470,8 +87471,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290593", "290593"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290593")), t = 0), t
+                let t = parseInt((e = "290608", "290608"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290608")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115224,8 +115225,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290593",
-                    versionHash: "a7dc9a9d853de241c2d1ba5c150747eee0f41d2b"
+                    buildNumber: "290608",
+                    versionHash: "6d5073c98f4986d3d579ddabbdb37006e5d42d0f"
                 }
             }
             n.r(t), n.d(t, {
@@ -166872,54 +166873,61 @@
             });
 
             function N(e) {
-                var t, n, i, r, l, T, h, N, p, O;
+                var t, n, i, r, l, T, h, N, p, O, v;
                 let {
-                    reactions: v,
-                    interactionData: D
-                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, M = null !== (r = null === (t = e.mentions) || void 0 === t ? void 0 : t.map(e => e.id)) && void 0 !== r ? r : [], y = null !== (l = e.mention_roles) && void 0 !== l ? l : [], P = null !== (T = e.mention_channels) && void 0 !== T ? T : [], U = e.message_reference, b = new Date(e.timestamp), G = e.type === A.MessageTypes.THREAD_CREATED ? [] : (0, a.default)(e.content);
-                let w = null == (p = e).author ? m : null != p.webhook_id ? new _.default(p.author) : null !== (O = I.default.getUser(p.author.id)) && void 0 !== O ? O : new _.default(p.author),
-                    B = null == e ? void 0 : e.gift_info,
-                    k = null != e.interaction ? u.default.createFromServer(e.interaction) : null,
-                    V = e.type === A.MessageTypes.THREAD_STARTER_MESSAGE ? null === (i = e.referenced_message) || void 0 === i ? void 0 : null === (n = i.author) || void 0 === n ? void 0 : n.id : void 0,
-                    x = e.type === A.MessageTypes.PREMIUM_REFERRAL ? e.content : void 0,
-                    F = e.content;
-                return e.type === A.MessageTypes.PREMIUM_REFERRAL && (F = ""), new d.default({
+                    reactions: D,
+                    interactionData: M
+                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, y = null !== (r = null === (t = e.mentions) || void 0 === t ? void 0 : t.map(e => e.id)) && void 0 !== r ? r : [], P = null !== (l = e.mention_roles) && void 0 !== l ? l : [], U = null !== (T = e.mention_channels) && void 0 !== T ? T : [], b = e.message_reference, G = new Date(e.timestamp), w = e.type === A.MessageTypes.THREAD_CREATED ? [] : (0, a.default)(e.content);
+                let B = null == (p = e).author ? m : null != p.webhook_id ? new _.default(p.author) : null !== (O = I.default.getUser(p.author.id)) && void 0 !== O ? O : new _.default(p.author),
+                    k = null == e ? void 0 : e.gift_info,
+                    V = null != e.interaction ? u.default.createFromServer(e.interaction) : null,
+                    x = e.type === A.MessageTypes.THREAD_STARTER_MESSAGE ? null === (i = e.referenced_message) || void 0 === i ? void 0 : null === (n = i.author) || void 0 === n ? void 0 : n.id : void 0,
+                    F = e.type === A.MessageTypes.PREMIUM_REFERRAL ? e.content : void 0,
+                    H = e.content;
+                return (e.type === A.MessageTypes.PREMIUM_REFERRAL && (H = ""), null != (v = e).message_snapshots && v.message_snapshots.length > 0) ? new d.default({
+                    id: e.id,
+                    channel_id: e.channel_id,
+                    type: A.MessageTypes.DEFAULT,
+                    author: B,
+                    timestamp: G,
+                    isUnsupported: !0
+                }) : new d.default({
                     ...e,
-                    author: w,
+                    author: B,
                     webhookId: e.webhook_id,
-                    blocked: E.default.isBlocked(w.id) || null != V && E.default.isBlocked(V),
-                    timestamp: b,
+                    blocked: E.default.isBlocked(B.id) || null != x && E.default.isBlocked(x),
+                    timestamp: G,
                     editedTimestamp: null != e.edited_timestamp ? new Date(e.edited_timestamp) : null,
                     mentionEveryone: e.mention_everyone,
-                    mentions: M,
-                    mentionRoles: y,
-                    mentionChannels: P,
-                    messageReference: U,
+                    mentions: y,
+                    mentionRoles: P,
+                    mentionChannels: U,
+                    messageReference: b,
                     mentioned: (0, S.isMentioned)({
                         userId: c.default.getId(),
                         channelId: e.channel_id,
                         mentionEveryone: null !== (h = e.mention_everyone) && void 0 !== h && h,
-                        mentionUsers: M,
-                        mentionRoles: y
+                        mentionUsers: y,
+                        mentionRoles: P
                     }),
                     attachments: R(e),
                     embeds: g(e),
                     components: (0, s.transformComponents)(null !== (N = e.components) && void 0 !== N ? N : [], {
                         includeEmojiSrc: !1
                     }),
-                    codedLinks: G,
+                    codedLinks: w,
                     giftCodes: (0, f.isGiftCodeEmbed)(e) ? (0, f.findGiftCodes)(null == e ? void 0 : e.embeds[0].url) : (0, f.findGiftCodes)(e.content),
-                    content: F,
-                    referralTrialOfferId: x,
-                    call: C(e.call, b),
-                    reactions: L(null != v ? v : e.reactions, e.poll),
-                    interaction: k,
-                    interactionData: null != D ? D : e.interaction_data,
+                    content: H,
+                    referralTrialOfferId: F,
+                    call: C(e.call, G),
+                    reactions: L(null != D ? D : e.reactions, e.poll),
+                    interaction: V,
+                    interactionData: null != M ? M : e.interaction_data,
                     interactionMetadata: e.interaction_metadata,
                     roleSubscriptionData: e.role_subscription_data,
                     purchaseNotification: e.purchase_notification,
                     poll: null == e.poll ? void 0 : (0, o.default)(e.poll),
-                    giftInfo: null == B ? void 0 : B
+                    giftInfo: null == k ? void 0 : k
                 })
             }
 
@@ -170267,40 +170275,44 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return l
+                    return u
                 }
             });
             var i = n("470079"),
                 r = n("937889"),
                 a = n("761910"),
                 s = n("981631"),
-                o = n("126798");
+                o = n("689938"),
+                l = n("126798");
 
-            function l(e, t) {
+            function u(e, t) {
                 let {
                     hideSimpleEmbedContent: n,
-                    formatInline: l = !1,
-                    noStyleAndInteraction: u = !1,
-                    isInteracting: d = !1,
-                    allowHeading: _ = !1,
-                    allowList: c = !1,
-                    allowLinks: E = !1,
-                    allowDevLinks: I = !1,
-                    allowSubtext: T = !1,
-                    previewLinkTarget: f = !1
+                    formatInline: u = !1,
+                    noStyleAndInteraction: d = !1,
+                    isInteracting: _ = !1,
+                    allowHeading: c = !1,
+                    allowList: E = !1,
+                    allowLinks: I = !1,
+                    allowDevLinks: T = !1,
+                    allowSubtext: f = !1,
+                    previewLinkTarget: S = !1
                 } = t;
-                return i.useMemo(() => null != e.customRenderedContent ? e.customRenderedContent : e.isCommandType() && 0 === e.content.length || e.hasFlag(s.MessageFlags.LOADING) ? (0, a.default)(e) : e.type === s.MessageTypes.CHANGELOG ? (0, r.renderChangelogMessageMarkup)(e, o) : (0, r.default)(e, {
+                return i.useMemo(() => null != e.customRenderedContent ? e.customRenderedContent : e.isUnsupported ? {
+                    content: o.default.Messages.MESSAGE_UNSUPPORTED,
+                    hasSpoilerEmbeds: !1
+                } : e.isCommandType() && 0 === e.content.length || e.hasFlag(s.MessageFlags.LOADING) ? (0, a.default)(e) : e.type === s.MessageTypes.CHANGELOG ? (0, r.renderChangelogMessageMarkup)(e, l) : (0, r.default)(e, {
                     hideSimpleEmbedContent: n,
-                    formatInline: l,
-                    noStyleAndInteraction: u,
-                    isInteracting: d,
-                    allowHeading: _,
-                    allowList: c,
-                    allowLinks: E,
-                    allowSubtext: T,
-                    allowDevLinks: I,
-                    previewLinkTarget: f
-                }), [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, n, l, u, d, _, c, E, f, T])
+                    formatInline: u,
+                    noStyleAndInteraction: d,
+                    isInteracting: _,
+                    allowHeading: c,
+                    allowList: E,
+                    allowLinks: I,
+                    allowSubtext: f,
+                    allowDevLinks: T,
+                    previewLinkTarget: S
+                }), [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, n, u, d, _, c, E, I, S, f])
             }
         },
         761910: function(e, t, n) {
@@ -170558,8 +170570,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714774895496",
-                                    build_number: "290593"
+                                    built_at: "1714775993250",
+                                    build_number: "290608"
                                 }
                             },
                             retries: 1
@@ -224458,7 +224470,7 @@
                 }
                 constructor(e) {
                     var t, n, i, r;
-                    super(), _(this, "id", void 0), _(this, "type", void 0), _(this, "channel_id", void 0), _(this, "author", void 0), _(this, "bot", void 0), _(this, "content", void 0), _(this, "customRenderedContent", void 0), _(this, "attachments", void 0), _(this, "embeds", void 0), _(this, "pinned", void 0), _(this, "mentions", void 0), _(this, "mentionRoles", void 0), _(this, "mentionChannels", void 0), _(this, "mentionEveryone", void 0), _(this, "mentioned", void 0), _(this, "tts", void 0), _(this, "codedLinks", void 0), _(this, "giftCodes", void 0), _(this, "timestamp", void 0), _(this, "editedTimestamp", void 0), _(this, "state", void 0), _(this, "nonce", void 0), _(this, "blocked", void 0), _(this, "call", void 0), _(this, "webhookId", void 0), _(this, "reactions", void 0), _(this, "applicationId", void 0), _(this, "application", void 0), _(this, "activity", void 0), _(this, "activityInstance", void 0), _(this, "interaction", void 0), _(this, "interactionData", void 0), _(this, "interactionMetadata", void 0), _(this, "interactionError", void 0), _(this, "messageReference", void 0), _(this, "flags", void 0), _(this, "isSearchHit", void 0), _(this, "stickers", void 0), _(this, "stickerItems", void 0), _(this, "components", void 0), _(this, "roleSubscriptionData", void 0), _(this, "purchaseNotification", void 0), _(this, "poll", void 0), _(this, "loggingName", void 0), _(this, "referralTrialOfferId", void 0), _(this, "giftInfo", void 0), _(this, "colorString", void 0), _(this, "nick", void 0), this.id = e.id, this.type = e.type || d.MessageTypes.DEFAULT, this.channel_id = e.channel_id, this.author = e.author, this.content = e.content || "", this.customRenderedContent = e.customRenderedContent, this.attachments = e.attachments || [], this.embeds = e.embeds || [], this.mentions = e.mentions || [], this.mentionRoles = e.mentionRoles || [], this.mentionChannels = e.mentionChannels || [], this.mentioned = e.mentioned || !1, this.pinned = e.pinned || !1, this.mentionEveryone = e.mentionEveryone || !1, this.tts = e.tts || !1, this.codedLinks = e.codedLinks || [], this.giftCodes = e.giftCodes || [], this.timestamp = e.timestamp || new Date, this.editedTimestamp = e.editedTimestamp || null, this.state = e.state || d.MessageStates.SENT, this.nonce = e.nonce || null, this.blocked = e.blocked || !1, this.call = e.call || null, this.bot = e.bot || !1, this.webhookId = e.webhookId || null, this.reactions = e.reactions || [], this.applicationId = e.application_id || e.applicationId || null, this.application = e.application || null, this.activity = e.activity || null, this.activityInstance = e.activity_instance || e.activityInstance || null, this.messageReference = e.messageReference || null, this.flags = e.flags || 0, this.isSearchHit = e.hit || e.isSearchHit || !1, this.stickers = e.stickers || [], this.stickerItems = null !== (n = null !== (t = e.sticker_items) && void 0 !== t ? t : e.stickerItems) && void 0 !== n ? n : [], this.components = null !== (i = e.components) && void 0 !== i ? i : [], this.loggingName = e.loggingName || null, this.colorString = e.colorString, this.nick = e.nick, this.interaction = e.interaction || null, this.interactionData = e.interactionData || null, this.interactionMetadata = e.interactionMetadata || null, this.interactionError = e.interactionError || null, this.roleSubscriptionData = e.roleSubscriptionData, this.purchaseNotification = e.purchaseNotification, this.poll = e.poll, this.referralTrialOfferId = e.referralTrialOfferId || null, this.giftInfo = null !== (r = e.gift_info) && void 0 !== r ? r : e.giftInfo
+                    super(), _(this, "id", void 0), _(this, "type", void 0), _(this, "channel_id", void 0), _(this, "author", void 0), _(this, "bot", void 0), _(this, "content", void 0), _(this, "customRenderedContent", void 0), _(this, "attachments", void 0), _(this, "embeds", void 0), _(this, "pinned", void 0), _(this, "mentions", void 0), _(this, "mentionRoles", void 0), _(this, "mentionChannels", void 0), _(this, "mentionEveryone", void 0), _(this, "mentioned", void 0), _(this, "tts", void 0), _(this, "codedLinks", void 0), _(this, "giftCodes", void 0), _(this, "timestamp", void 0), _(this, "editedTimestamp", void 0), _(this, "state", void 0), _(this, "nonce", void 0), _(this, "blocked", void 0), _(this, "call", void 0), _(this, "webhookId", void 0), _(this, "reactions", void 0), _(this, "applicationId", void 0), _(this, "application", void 0), _(this, "activity", void 0), _(this, "activityInstance", void 0), _(this, "interaction", void 0), _(this, "interactionData", void 0), _(this, "interactionMetadata", void 0), _(this, "interactionError", void 0), _(this, "messageReference", void 0), _(this, "flags", void 0), _(this, "isSearchHit", void 0), _(this, "stickers", void 0), _(this, "stickerItems", void 0), _(this, "components", void 0), _(this, "roleSubscriptionData", void 0), _(this, "purchaseNotification", void 0), _(this, "poll", void 0), _(this, "loggingName", void 0), _(this, "referralTrialOfferId", void 0), _(this, "giftInfo", void 0), _(this, "isUnsupported", void 0), _(this, "colorString", void 0), _(this, "nick", void 0), this.id = e.id, this.type = e.type || d.MessageTypes.DEFAULT, this.channel_id = e.channel_id, this.author = e.author, this.content = e.content || "", this.customRenderedContent = e.customRenderedContent, this.attachments = e.attachments || [], this.embeds = e.embeds || [], this.mentions = e.mentions || [], this.mentionRoles = e.mentionRoles || [], this.mentionChannels = e.mentionChannels || [], this.mentioned = e.mentioned || !1, this.pinned = e.pinned || !1, this.mentionEveryone = e.mentionEveryone || !1, this.tts = e.tts || !1, this.codedLinks = e.codedLinks || [], this.giftCodes = e.giftCodes || [], this.timestamp = e.timestamp || new Date, this.editedTimestamp = e.editedTimestamp || null, this.state = e.state || d.MessageStates.SENT, this.nonce = e.nonce || null, this.blocked = e.blocked || !1, this.call = e.call || null, this.bot = e.bot || !1, this.webhookId = e.webhookId || null, this.reactions = e.reactions || [], this.applicationId = e.application_id || e.applicationId || null, this.application = e.application || null, this.activity = e.activity || null, this.activityInstance = e.activity_instance || e.activityInstance || null, this.messageReference = e.messageReference || null, this.flags = e.flags || 0, this.isSearchHit = e.hit || e.isSearchHit || !1, this.stickers = e.stickers || [], this.stickerItems = null !== (n = null !== (t = e.sticker_items) && void 0 !== t ? t : e.stickerItems) && void 0 !== n ? n : [], this.components = null !== (i = e.components) && void 0 !== i ? i : [], this.loggingName = e.loggingName || null, this.colorString = e.colorString, this.nick = e.nick, this.interaction = e.interaction || null, this.interactionData = e.interactionData || null, this.interactionMetadata = e.interactionMetadata || null, this.interactionError = e.interactionError || null, this.roleSubscriptionData = e.roleSubscriptionData, this.purchaseNotification = e.purchaseNotification, this.poll = e.poll, this.referralTrialOfferId = e.referralTrialOfferId || null, this.giftInfo = null !== (r = e.gift_info) && void 0 !== r ? r : e.giftInfo, this.isUnsupported = e.isUnsupported || !1
                 }
             }
             t.default = c
@@ -248615,7 +248627,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a7dc9a9d853de241c2d1ba5c150747eee0f41d2b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "6d5073c98f4986d3d579ddabbdb37006e5d42d0f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -267976,7 +267988,8 @@
                         [T.messageContent]: !0,
                         [T.isSending]: N && !p,
                         [T.markupRtl]: "rtl" === l()(a.content),
-                        [T.isFailed]: m
+                        [T.isFailed]: m,
+                        [T.isUnsupported]: a.isUnsupported
                     }),
                     children: [null != o ? o : f(a, u), A && null != a.editedTimestamp && (0, i.jsxs)(i.Fragment, {
                         children: [" ", (0, i.jsx)(_.default, {
@@ -277279,7 +277292,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290593"
+                                build_number: "290608"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284606,7 +284619,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290593", "290593"), 10);
+                let a = parseInt((n = "290608", "290608"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -312071,4 +312084,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.9b2207bcdb90c4a5c682.js.map
+//# sourceMappingURL=35705.631a61c401c029d5df0c.js.map

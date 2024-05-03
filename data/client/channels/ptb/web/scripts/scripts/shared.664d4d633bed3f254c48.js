@@ -3431,6 +3431,7 @@
                 isFailed: "isFailed__7bd49",
                 isSending: "isSending__93355",
                 isSystemMessage: "isSystemMessage__0f7c5",
+                isUnsupported: "isUnsupported__136fb",
                 latin12CompactTimeStamp: "latin12CompactTimeStamp_b48539",
                 latin24CompactTimeStamp: "latin24CompactTimeStamp_f2f700",
                 markupRtl: "markupRtl__05c1c",
