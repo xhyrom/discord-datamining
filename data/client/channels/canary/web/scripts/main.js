@@ -37022,7 +37022,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290637", ", Version Hash: ").concat("985c748055e3ada4da369098d3cbab2171598b93")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290639", ", Version Hash: ").concat("17488b054fb61a3a8fbf72dec159cf49869b96b5")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55895,13 +55895,13 @@
                 CLAN_SETUP_SUGGESTED_INTERESTS: "Interests",
                 CLAN_SETUP_INTERESTS_HELP: "Press ENTER to add a trait",
                 CLAN_SETUP_LANGUAGE_PLACEHOLDER: "Add a language...",
-                CLAN_SETUP_DESCRIPTION_TITLE: "Write a message to people thinking about joining your Guild",
+                CLAN_SETUP_DESCRIPTION_TITLE: "Tell potential recruits what your Guild is all about.",
                 CLAN_SETUP_DESCRIPTION_SUBTITLE: "They'll see this before they apply. Why should they apply for your Guild? What makes your Guild unique?",
                 CLAN_SETUP_DESCRIPTION_PLACEHOLDER: "We're a women gaming group that's been playing for a few months! We have weekly movie nights and plenty of snacks.",
-                CLAN_SETUP_CUSTOMIZE_TITLE: "Pick a badge and tag for your clan",
-                CLAN_SETUP_CUSTOMIZE_SUBTITLE: "Choose a badge to represent your clan. This will be shown on your clan tag and your clan's profile everywhere, so choose wisely!",
-                CLAN_SETUP_CUSTOMIZE_LOOK_TITLE: "Edit your clan's look",
-                CLAN_SETUP_CUSTOMIZE_LOOK_SUBTITLE: "See how your clan will appear to prospective members in the Clan Finder and beyond. Choose a brand color and generate a banner to get your clan looking ready to recruit.",
+                CLAN_SETUP_CUSTOMIZE_TITLE: "Pick a badge and tag for your Guild",
+                CLAN_SETUP_CUSTOMIZE_SUBTITLE: "Choose a badge that Guild members will rep next to their name and on their profiles across Discord.",
+                CLAN_SETUP_CUSTOMIZE_LOOK_TITLE: "Edit your Guild's look",
+                CLAN_SETUP_CUSTOMIZE_LOOK_SUBTITLE: "See how your Guild will appear to prospective members in the Clan Finder and beyond. Choose a brand color and generate a banner to get your clan looking ready to recruit.",
                 CLAN_SETUP_CUSTOMIZE_HELP_TEXT: "Maxmimum 4 characters, alphabet (A-Z) and numbers only",
                 CLAN_SETUP_TAG_PLACEHOLDER: "GGEZ",
                 CLAN_SETUP_SIGN_TITLE: "You're almost done!",
@@ -87471,8 +87471,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290637", "290637"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290637")), t = 0), t
+                let t = parseInt((e = "290639", "290639"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290639")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115231,8 +115231,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290637",
-                    versionHash: "985c748055e3ada4da369098d3cbab2171598b93"
+                    buildNumber: "290639",
+                    versionHash: "17488b054fb61a3a8fbf72dec159cf49869b96b5"
                 }
             }
             n.r(t), n.d(t, {
@@ -170576,8 +170576,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714779332801",
-                                    build_number: "290637"
+                                    built_at: "1714779582694",
+                                    build_number: "290639"
                                 }
                             },
                             retries: 1
@@ -248633,7 +248633,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "985c748055e3ada4da369098d3cbab2171598b93"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "17488b054fb61a3a8fbf72dec159cf49869b96b5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277298,7 +277298,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290637"
+                                build_number: "290639"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284625,7 +284625,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290637", "290637"), 10);
+                let a = parseInt((n = "290639", "290639"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -312090,4 +312090,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.7f42c622751948e440d5.js.map
+//# sourceMappingURL=35705.5482d4f5e34d066893ef.js.map

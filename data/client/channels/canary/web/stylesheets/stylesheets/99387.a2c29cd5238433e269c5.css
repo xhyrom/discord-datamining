@@ -45351,8 +45351,7 @@ img.thumbnail__18ece {
 }
 
 .clanCardWrapper__06f56 {
-    width: 264px;
-    margin-top: 92px
+    width: 264px
 }
 
 .clanBannerPreview__228bd {
@@ -45370,6 +45369,10 @@ img.thumbnail__18ece {
 
 .slideContentWithSidebar__251be {
     max-width: none
+}
+
+.maxWidthContainer__91587 {
+    max-width: 480px
 }
 
 .content_c05082 {
@@ -45394,12 +45397,10 @@ img.thumbnail__18ece {
 }
 
 .title__20916 {
-    max-width: 480px;
     margin-bottom: 12px
 }
 
 .subtitle__62596 {
-    max-width: 480px;
     margin-bottom: 40px
 }
 
@@ -46252,11 +46253,10 @@ img.thumbnail__18ece {
 }
 
 .backgroundContainer__8f24a {
-    background-color: var(--background-secondary);
+    background-color: var(--bg-base-tertiary);
     position: relative;
     flex: 1;
     border-radius: 8px;
-    border: 1px solid var(--background-modifier-accent);
     overflow: hidden
 }
 
@@ -46394,7 +46394,7 @@ img.thumbnail__18ece {
 }
 
 .fieldBackground__65920 {
-    background-color: var(--background-secondary-alt);
+    background-color: var(--input-background);
     border: 1px solid var(--background-tertiary);
     border-radius: 4px;
     opacity: 1
@@ -46496,7 +46496,7 @@ img.thumbnail__18ece {
 }
 
 .container__411e1 {
-    border: 2px dashed var(--border-subtle) !important;
+    border: 2px dashed var(--border-strong) !important;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -46507,7 +46507,9 @@ img.thumbnail__18ece {
 }
 
 .container__411e1:hover {
-    cursor: pointer
+    cursor: pointer;
+    transform: translatey(1px)scale(.99);
+    transition: ease-in-out.2s
 }
 
 .icon_b0d001 {
@@ -46668,8 +46670,7 @@ img.thumbnail__18ece {
 .badgesContainer__0f8f1 {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin-top: 40px
+    gap: 40px
 }
 
 .pickerContainer__5dd4f {
@@ -46712,10 +46713,7 @@ img.thumbnail__18ece {
 
 .tagContainer_eb01b9 {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
-    margin-top: 150px
+    flex-direction: column
 }
 
 .tagInputWrapper__7b1bc {
@@ -46725,6 +46723,8 @@ img.thumbnail__18ece {
     max-width: 164px;
     text-align: center;
     border-radius: 8px;
+    margin-top: 16px;
+    margin-bottom: 8px;
     background-color: var(--bg-surface-raised);
     border: 1px solid var(--border-subtle);
     padding: 12px 16px
@@ -46739,7 +46739,8 @@ img.thumbnail__18ece {
     padding: 0;
     font-size: 32px;
     background-color: transparent;
-    background-color: initial
+    background-color: initial;
+    text-align: center
 }
 
 div:has(>div>.modal__06f49) {
@@ -136232,4 +136233,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2e38c105e78477d48e4f.css.map*/
+/*# sourceMappingURL=99387.a2c29cd5238433e269c5.css.map*/
