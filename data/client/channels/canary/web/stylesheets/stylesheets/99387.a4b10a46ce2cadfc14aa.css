@@ -117690,7 +117690,7 @@ html .invoiceCancelRow__6ff3e {
     flex-grow: 1
 }
 
-.container__74bbc :focus {
+.container__74bbc :focus-visible {
     box-shadow: 0 0 0 4px var(--blue-345)
 }
 
@@ -117725,7 +117725,8 @@ html .invoiceCancelRow__6ff3e {
     --custom-card-z-index: 1001;
     --custom-confetti-canvas-z-index: 1002;
     --custom-close-button-z-index: 1004;
-    --custom-lightning-checkout-z-index: 1003
+    --custom-lightning-checkout-z-index: 1003;
+    --custom-shaker-z-index: 1005
 }
 
 .shopCard__9e3fe {
@@ -117990,6 +117991,11 @@ html .invoiceCancelRow__6ff3e {
     position: relative;
     display: flex;
     pointer-events: none
+}
+
+.shaker__2bf29 {
+    z-index: 1005;
+    z-index: var(--custom-shaker-z-index)
 }
 
 .backdrop__0e818 {
@@ -136189,4 +136195,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.431398c4255f70a8deac.css.map*/
+/*# sourceMappingURL=99387.a4b10a46ce2cadfc14aa.css.map*/
