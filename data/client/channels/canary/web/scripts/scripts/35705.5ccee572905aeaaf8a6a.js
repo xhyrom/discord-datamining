@@ -37013,7 +37013,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290384", ", Version Hash: ").concat("a598699c9e0b2d8f5ce6eece502e3daa7315dd43")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290393", ", Version Hash: ").concat("c890475c8e09b7960288ff3ac4dc06c63db8e312")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -39155,8 +39155,6 @@
                 EMBEDDED_ACTIVITIES_MINIMIZE_A11Y_LABEL: "Minimize activity",
                 EMBEDDED_ACTIVITIES_EXPAND_A11Y_LABEL: "Expand activity",
                 EMBEDDED_ACTIVITIES_DEVELOPER_ACTIVITY: "In Development",
-                EMBEDDED_ACTIVITIES_INTERACTION_EMBED_ENDED: "Activity has ended.",
-                EMBEDDED_ACTIVITIES_INTERACTION_EMBED_NO_PRESENCE: "Activity has started.",
                 EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GUILD_SIZE: "You cannot launch this activity in a server with more than 25 members",
                 EMBEDDED_ACTIVITIES_EXTERNAL_APP_LAUNCH_TITLE: "External Application",
                 EMBEDDED_ACTIVITIES_EXTERNAL_APP_LAUNCH_DESCRIPTION: "You're about to launch an external app. Do you want to continue?",
@@ -87437,8 +87435,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290384", "290384"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290384")), t = 0), t
+                let t = parseInt((e = "290393", "290393"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290393")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115185,8 +115183,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290384",
-                    versionHash: "a598699c9e0b2d8f5ce6eece502e3daa7315dd43"
+                    buildNumber: "290393",
+                    versionHash: "c890475c8e09b7960288ff3ac4dc06c63db8e312"
                 }
             }
             n.r(t), n.d(t, {
@@ -170545,8 +170543,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714755313529",
-                                    build_number: "290384"
+                                    built_at: "1714756032381",
+                                    build_number: "290393"
                                 }
                             },
                             retries: 1
@@ -187899,9 +187897,6 @@
                 try {
                     let e = await i.HTTP.post({
                         url: u.Endpoints.QUESTS_HEARTBEAT(t),
-                        headers: {
-                            "X-Discord-Resource-Optimization-Level": "1"
-                        },
                         body: {
                             stream_key: n,
                             terminal: s
@@ -248520,7 +248515,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a598699c9e0b2d8f5ce6eece502e3daa7315dd43"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "c890475c8e09b7960288ff3ac4dc06c63db8e312"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277179,7 +277174,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290384"
+                                build_number: "290393"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284506,7 +284501,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290384", "290384"), 10);
+                let a = parseInt((n = "290393", "290393"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -311971,4 +311966,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.1d6610fd5e3f5cf8e4e7.js.map
+//# sourceMappingURL=35705.5ccee572905aeaaf8a6a.js.map
