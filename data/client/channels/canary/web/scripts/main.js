@@ -37022,7 +37022,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290552", ", Version Hash: ").concat("22699a0f80be4280f321eb52556e9837dc80506b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290554", ", Version Hash: ").concat("55ff35638cce4316d1bd19a4da1b147942f5f70b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -43177,6 +43177,14 @@
                 FRIEND_PERMITTED_SOURCE_ALL: "Everyone",
                 FRIEND_PERMITTED_SOURCE_MUTUAL_FRIENDS: "Friends of Friends",
                 FRIEND_PERMITTED_SOURCE_MUTUAL_GUILDS: "Server Members",
+                USER_KEYWORD_FILTERS_TITLE: "Obscure Commonly Flagged Words",
+                USER_KEYWORD_FILTERS_DESCRIPTION: "Automatically replace words with asteriks that match our keyword filter presets",
+                USER_KEYWORD_FILTERS_PROFANITY_TITLE: "Severe Profanity",
+                USER_KEYWORD_FILTERS_PROFANITY_DESCRIPTION: "Extreme forms of swearing or cursing",
+                USER_KEYWORD_FILTERS_SLURS_TITLE: "Insults & Slurs",
+                USER_KEYWORD_FILTERS_SLURS_DESCRIPTION: "Personally insulting terms and terms that may be considered hate speech",
+                USER_KEYWORD_FILTERS_SEXUAL_CONTENT_TITLE: "Sexual Content",
+                USER_KEYWORD_FILTERS_SEXUAL_CONTENT_DESCRIPTION: "Terms that refer to sexually explicit behavior or activity",
                 USER_DIRECT_MESSAGE_FILTERS: "Direct message filters",
                 USER_EXPLICIT_CONTENT_FILTER: "Safe Direct Messaging",
                 USER_EXPLICIT_CONTENT_FILTER_V2: "Explicit image filter",
@@ -87439,8 +87447,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290552", "290552"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290552")), t = 0), t
+                let t = parseInt((e = "290554", "290554"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290554")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115193,8 +115201,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290552",
-                    versionHash: "22699a0f80be4280f321eb52556e9837dc80506b"
+                    buildNumber: "290554",
+                    versionHash: "55ff35638cce4316d1bd19a4da1b147942f5f70b"
                 }
             }
             n.r(t), n.d(t, {
@@ -170532,8 +170540,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714770563738",
-                                    build_number: "290552"
+                                    built_at: "1714770820069",
+                                    build_number: "290554"
                                 }
                             },
                             retries: 1
@@ -217030,10 +217038,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 ActivityJoiningRestrictedGuilds: function() {
-                    return eL
+                    return ev
                 },
                 ActivityRestrictedGuilds: function() {
-                    return eC
+                    return eg
                 },
                 AfkTimeout: function() {
                     return z
@@ -217048,49 +217056,49 @@
                     return g
                 },
                 AnimateEmoji: function() {
-                    return ep
-                },
-                AnimateStickers: function() {
                     return eO
                 },
-                BroadcastAllowFriends: function() {
-                    return eo
+                AnimateStickers: function() {
+                    return eR
                 },
-                BroadcastAllowedGuildIds: function() {
+                BroadcastAllowFriends: function() {
                     return el
                 },
-                BroadcastAllowedUserIds: function() {
+                BroadcastAllowedGuildIds: function() {
                     return eu
                 },
-                BroadcastAutoBroadcast: function() {
+                BroadcastAllowedUserIds: function() {
                     return ed
                 },
+                BroadcastAutoBroadcast: function() {
+                    return e_
+                },
                 ClientThemeSettings: function() {
-                    return em
+                    return eN
                 },
                 ClipsAllowVoiceRecording: function() {
-                    return e_
+                    return ec
                 },
                 ConvertEmoticons: function() {
                     return H
                 },
                 CustomStatusSetting: function() {
-                    return ea
+                    return es
                 },
                 DefaultGuildsActivityRestricted: function() {
-                    return ev
+                    return eD
                 },
                 DefaultGuildsRestricted: function() {
                     return k
                 },
                 DeveloperMode: function() {
-                    return eA
+                    return em
                 },
                 DisableGamesTab: function() {
                     return Q
                 },
                 DisableHomeAutoNav: function() {
-                    return eD
+                    return eM
                 },
                 DmSpamFilterV2: function() {
                     return $
@@ -217108,13 +217116,13 @@
                     return J
                 },
                 ExplicitContentSettings: function() {
-                    return eP
+                    return eU
                 },
                 ExpressionSuggestionsEnabled: function() {
                     return I
                 },
                 FamilyCenterEnabled: function() {
-                    return eM
+                    return ey
                 },
                 FocusMode: function() {
                     return h
@@ -217126,16 +217134,16 @@
                     return x
                 },
                 GifAutoPlay: function() {
-                    return eN
+                    return ep
                 },
                 IncludeStickersInAutocomplete: function() {
                     return T
                 },
                 InlineAttachmentMedia: function() {
-                    return ec
+                    return eE
                 },
                 InlineEmbedMedia: function() {
-                    return eE
+                    return eI
                 },
                 InstallShortcutDesktop: function() {
                     return M
@@ -217143,11 +217151,14 @@
                 InstallShortcutStartMenu: function() {
                     return y
                 },
+                KeywordFilterSettings: function() {
+                    return ee
+                },
                 LastReceivedChangelogId: function() {
-                    return eU
+                    return eb
                 },
                 LegacyUsernameDisabled: function() {
-                    return ey
+                    return eP
                 },
                 MessageDisplayCompact: function() {
                     return Y
@@ -217174,13 +217185,13 @@
                     return L
                 },
                 RecentGamesEnabled: function() {
-                    return et
+                    return en
                 },
                 RenderEmbeds: function() {
-                    return eI
+                    return eT
                 },
                 RenderReactions: function() {
-                    return eT
+                    return ef
                 },
                 RenderSpoilers: function() {
                     return f
@@ -217195,7 +217206,7 @@
                     return C
                 },
                 ShowCurrentGame: function() {
-                    return ee
+                    return et
                 },
                 SoundboardPickerCollapsedSections: function() {
                     return O
@@ -217204,16 +217215,16 @@
                     return j
                 },
                 StatusExpiresAtSetting: function() {
-                    return er
+                    return ea
                 },
                 StatusSetting: function() {
-                    return ei
+                    return er
                 },
                 StickerPickerCollapsedSections: function() {
                     return p
                 },
                 TimezoneOffset: function() {
-                    return ef
+                    return eS
                 },
                 UseLegacyChatInput: function() {
                     return c
@@ -217466,82 +217477,111 @@
                 value: e
             }));
             let $ = (0, o.defineProtoSetting)("textAndImages", "dmSpamFilterV2", e => null != e ? e : r.DmSpamFilterV2.DEFAULT_UNSET, e => e),
-                ee = (0, o.defineProtoSetting)("status", "showCurrentGame", e => {
+                ee = (0, o.defineProtoSetting)("textAndImages", "keywordFilterSettings", e => {
+                    let {
+                        profanity: t,
+                        sexualContent: n,
+                        slurs: i
+                    } = null != e ? e : {};
+                    return {
+                        profanity: null == t ? void 0 : t.value,
+                        sexualContent: null == n ? void 0 : n.value,
+                        slurs: null == i ? void 0 : i.value
+                    }
+                }, e => {
+                    let {
+                        profanity: t,
+                        sexualContent: n,
+                        slurs: i
+                    } = e;
+                    return {
+                        profanity: a.BoolValue.create({
+                            value: t
+                        }),
+                        sexualContent: a.BoolValue.create({
+                            value: n
+                        }),
+                        slurs: a.BoolValue.create({
+                            value: i
+                        })
+                    }
+                }),
+                et = (0, o.defineProtoSetting)("status", "showCurrentGame", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => a.BoolValue.create({
                     value: e
                 })),
-                et = (0, o.defineProtoSetting)("privacy", "recentGamesEnabled", e => {
+                en = (0, o.defineProtoSetting)("privacy", "recentGamesEnabled", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => a.BoolValue.create({
                     value: e
                 })),
-                en = new Set(Object.values(d.StatusTypes)),
-                ei = (0, o.defineProtoSetting)("status", "status", e => null != e && en.has(e.value) ? e.value : d.StatusTypes.UNKNOWN, e => a.StringValue.create({
+                ei = new Set(Object.values(d.StatusTypes)),
+                er = (0, o.defineProtoSetting)("status", "status", e => null != e && ei.has(e.value) ? e.value : d.StatusTypes.UNKNOWN, e => a.StringValue.create({
                     value: e
                 })),
-                er = (0, o.defineProtoSetting)("status", "statusExpiresAtMs", e => null != e ? e : "0", e => e),
-                ea = (0, o.defineProtoSetting)("status", "customStatus", e => e, e => e),
-                es = [],
-                eo = (0, o.defineProtoSetting)("broadcast", "allowFriends", e => null == e ? void 0 : e.value, e => a.BoolValue.create({
+                ea = (0, o.defineProtoSetting)("status", "statusExpiresAtMs", e => null != e ? e : "0", e => e),
+                es = (0, o.defineProtoSetting)("status", "customStatus", e => e, e => e),
+                eo = [],
+                el = (0, o.defineProtoSetting)("broadcast", "allowFriends", e => null == e ? void 0 : e.value, e => a.BoolValue.create({
                     value: e
                 })),
-                el = (0, o.defineProtoSetting)("broadcast", "allowedGuildIds", e => null != e ? e : es, e => e),
-                eu = (0, o.defineProtoSetting)("broadcast", "allowedUserIds", e => null != e ? e : es, e => e),
-                ed = (0, o.defineProtoSetting)("broadcast", "autoBroadcast", e => {
+                eu = (0, o.defineProtoSetting)("broadcast", "allowedGuildIds", e => null != e ? e : eo, e => e),
+                ed = (0, o.defineProtoSetting)("broadcast", "allowedUserIds", e => null != e ? e : eo, e => e),
+                e_ = (0, o.defineProtoSetting)("broadcast", "autoBroadcast", e => {
                     var t;
                     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
                 }, e => a.BoolValue.create({
                     value: e
                 })),
-                e_ = (0, o.defineProtoSetting)("clips", "allowVoiceRecording", e => {
+                ec = (0, o.defineProtoSetting)("clips", "allowVoiceRecording", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => a.BoolValue.create({
                     value: e
                 })),
-                ec = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "inlineAttachmentMedia", e => {
+                eE = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "inlineAttachmentMedia", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => a.BoolValue.create({
                     value: e
                 })), "text", "inlineAttachmentMedia"),
-                eE = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "inlineEmbedMedia", e => {
+                eI = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "inlineEmbedMedia", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => a.BoolValue.create({
                     value: e
                 })), "text", "inlineEmbedMedia"),
-                eI = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "renderEmbeds", e => {
+                eT = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "renderEmbeds", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => a.BoolValue.create({
                     value: e
                 })), "text", "renderEmbeds"),
-                eT = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "renderReactions", e => {
+                ef = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "renderReactions", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => a.BoolValue.create({
                     value: e
                 })), "text", "renderReactions"),
-                ef = (0, o.defineProtoSetting)("localization", "timezoneOffset", e => {
+                eS = (0, o.defineProtoSetting)("localization", "timezoneOffset", e => {
                     var t;
                     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t ? t : null
                 }, e => a.Int32Value.create({
                     value: null != e ? e : 0
                 })),
-                eS = new Set([s.ChannelListLayoutTypes.COZY, s.ChannelListLayoutTypes.COMPACT]);
-            (0, o.defineProtoSetting)("appearance", "channelListLayout", e => null != e && eS.has(e.value) ? e.value : s.ChannelListLayoutTypes.COZY, e => a.StringValue.create({
+                eh = new Set([s.ChannelListLayoutTypes.COZY, s.ChannelListLayoutTypes.COMPACT]);
+            (0, o.defineProtoSetting)("appearance", "channelListLayout", e => null != e && eh.has(e.value) ? e.value : s.ChannelListLayoutTypes.COZY, e => a.StringValue.create({
                 value: e
             }));
-            let eh = new Set([s.MessagePreviewTypes.ALL, s.MessagePreviewTypes.UNREADS, s.MessagePreviewTypes.NONE]);
-            (0, o.defineProtoSetting)("appearance", "messagePreviews", e => null != e && eh.has(e.value) ? e.value : s.MessagePreviewTypes.ALL, e => a.StringValue.create({
+            let eA = new Set([s.MessagePreviewTypes.ALL, s.MessagePreviewTypes.UNREADS, s.MessagePreviewTypes.NONE]);
+            (0, o.defineProtoSetting)("appearance", "messagePreviews", e => null != e && eA.has(e.value) ? e.value : s.MessagePreviewTypes.ALL, e => a.StringValue.create({
                 value: e
             }));
-            let eA = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
-                em = (0, o.defineProtoSetting)("appearance", "clientThemeSettings", e => {
+            let em = (0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
+                eN = (0, o.defineProtoSetting)("appearance", "clientThemeSettings", e => {
                     var t;
                     return {
                         backgroundGradientPresetId: null == e ? void 0 : null === (t = e.backgroundGradientPresetId) || void 0 === t ? void 0 : t.value
@@ -217551,7 +217591,7 @@
                         value: e.backgroundGradientPresetId
                     }) : void 0
                 })),
-                eN = (0, o.wrapSettingWithOverride)((0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "gifAutoPlay", e => {
+                ep = (0, o.wrapSettingWithOverride)((0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "gifAutoPlay", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => a.BoolValue.create({
@@ -217563,7 +217603,7 @@
                     var e;
                     return null === (e = l.default.getOverride("gifAutoPlay")) || void 0 === e ? void 0 : e.value
                 })),
-                ep = (0, o.wrapSettingWithOverride)((0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "animateEmoji", e => {
+                eO = (0, o.wrapSettingWithOverride)((0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "animateEmoji", e => {
                     var t;
                     return null === (t = null == e ? void 0 : e.value) || void 0 === t || t
                 }, e => a.BoolValue.create({
@@ -217575,7 +217615,7 @@
                     var e;
                     return null === (e = l.default.getOverride("animateEmoji")) || void 0 === e ? void 0 : e.value
                 })),
-                eO = (0, o.wrapSettingWithOverride)((0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "animateStickers", e => {
+                eR = (0, o.wrapSettingWithOverride)((0, o.wrapSettingWithSelectiveSyncing)((0, o.defineProtoSetting)("textAndImages", "animateStickers", e => {
                     var t;
                     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t ? t : _.StickerAnimationSettings.ALWAYS_ANIMATE
                 }, e => a.UInt32Value.create({
@@ -217587,27 +217627,27 @@
                     var e;
                     return null === (e = l.default.getOverride("animateStickers")) || void 0 === e ? void 0 : e.value
                 })),
-                eR = [],
-                eC = (0, o.defineProtoSetting)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eR, e => e),
-                eg = [],
-                eL = (0, o.defineProtoSetting)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : eg, e => e),
-                ev = (0, o.defineProtoSetting)("privacy", "defaultGuildsActivityRestricted", e => e === r.GuildActivityStatusRestrictionDefault.ON_FOR_LARGE_GUILDS, e => !0 === e ? r.GuildActivityStatusRestrictionDefault.ON_FOR_LARGE_GUILDS : r.GuildActivityStatusRestrictionDefault.OFF),
-                eD = (0, o.defineProtoSetting)("communities", "disableHomeAutoNav", e => {
+                eC = [],
+                eg = (0, o.defineProtoSetting)("privacy", "activityRestrictedGuildIds", e => null != e ? e : eC, e => e),
+                eL = [],
+                ev = (0, o.defineProtoSetting)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : eL, e => e),
+                eD = (0, o.defineProtoSetting)("privacy", "defaultGuildsActivityRestricted", e => e === r.GuildActivityStatusRestrictionDefault.ON_FOR_LARGE_GUILDS, e => !0 === e ? r.GuildActivityStatusRestrictionDefault.ON_FOR_LARGE_GUILDS : r.GuildActivityStatusRestrictionDefault.OFF),
+                eM = (0, o.defineProtoSetting)("communities", "disableHomeAutoNav", e => {
                     var t;
                     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
                 }, e => a.BoolValue.create({
                     value: e
                 })),
-                eM = (0, o.defineProtoSetting)("privacy", "familyCenterEnabledV2", e => null == e ? void 0 : e.value, e => a.BoolValue.create({
+                ey = (0, o.defineProtoSetting)("privacy", "familyCenterEnabledV2", e => null == e ? void 0 : e.value, e => a.BoolValue.create({
                     value: e
                 })),
-                ey = (0, o.defineProtoSetting)("privacy", "hideLegacyUsername", e => {
+                eP = (0, o.defineProtoSetting)("privacy", "hideLegacyUsername", e => {
                     var t;
                     return null !== (t = null == e ? void 0 : e.value) && void 0 !== t && t
                 }, e => a.BoolValue.create({
                     value: e
                 })),
-                eP = (0, o.defineProtoSetting)("textAndImages", "explicitContentSettings", e => {
+                eU = (0, o.defineProtoSetting)("textAndImages", "explicitContentSettings", e => {
                     let {
                         explicitContentGuilds: t,
                         explicitContentFriendDm: n,
@@ -217636,7 +217676,7 @@
             }, e => a.BoolValue.create({
                 value: e
             }));
-            let eU = (0, o.defineProtoSetting)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e)
+            let eb = (0, o.defineProtoSetting)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e)
         },
         516373: function(e, t, n) {
             "use strict";
@@ -248556,7 +248596,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "22699a0f80be4280f321eb52556e9837dc80506b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "55ff35638cce4316d1bd19a4da1b147942f5f70b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277220,7 +277260,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290552"
+                                build_number: "290554"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284547,7 +284587,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290552", "290552"), 10);
+                let a = parseInt((n = "290554", "290554"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -312012,4 +312052,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.1ab02a6eee780bbf9e74.js.map
+//# sourceMappingURL=35705.31092f6340cbf18678f6.js.map
