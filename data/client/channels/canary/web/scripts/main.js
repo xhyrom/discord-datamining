@@ -37001,7 +37001,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290356", ", Version Hash: ").concat("559f3f482ee5412c2545246253395c96745e230c")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290371", ", Version Hash: ").concat("56dee89356380cd0bb095574da8e176060084d50")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87425,8 +87425,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290356", "290356"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290356")), t = 0), t
+                let t = parseInt((e = "290371", "290371"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290371")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115157,8 +115157,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290356",
-                    versionHash: "559f3f482ee5412c2545246253395c96745e230c"
+                    buildNumber: "290371",
+                    versionHash: "56dee89356380cd0bb095574da8e176060084d50"
                 }
             }
             n.r(t), n.d(t, {
@@ -170477,8 +170477,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714751621451",
-                                    build_number: "290356"
+                                    built_at: "1714753838352",
+                                    build_number: "290371"
                                 }
                             },
                             retries: 1
@@ -213653,7 +213653,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return O
+                    return m
                 }
             });
             var i = n("735250");
@@ -213664,88 +213664,76 @@
                 o = n("246946"),
                 l = n("5192"),
                 u = n("447452"),
-                d = n("505737"),
-                _ = n("681837"),
-                c = n("724593"),
-                E = n("530"),
-                I = n("894374"),
-                T = n("705556"),
-                f = n("790711"),
-                S = n("580512"),
-                h = n("67152"),
-                A = n("901952"),
-                m = n("579285"),
-                N = n("287612"),
-                p = n("108997");
+                d = n("681837"),
+                _ = n("724593"),
+                c = n("530"),
+                E = n("894374"),
+                I = n("790711"),
+                T = n("580512"),
+                f = n("67152"),
+                S = n("579285"),
+                h = n("287612"),
+                A = n("108997");
 
-            function O(e) {
+            function m(e) {
                 let {
                     user: t,
                     currentUser: n,
                     displayProfile: r,
-                    guild: O,
-                    isHovering: C,
-                    onOpenProfile: R,
-                    channelId: g,
-                    onClose: L
+                    guild: m,
+                    isHovering: N,
+                    onOpenProfile: p,
+                    channelId: O,
+                    onClose: C
                 } = e, {
-                    moreUserDetailsEnabled: v
+                    moreUserDetailsEnabled: R
                 } = (0, u.useSimplifiedProfileExperiment)({
                     location: "BiteSizeProfileBody"
-                }), D = l.default.getName(null == O ? void 0 : O.id, g, t), M = (0, d.default)(t.id, null == O ? void 0 : O.id), y = (0, s.useStateFromStores)([o.default], () => o.default.hidePersonalInformation);
+                }), g = l.default.getName(null == m ? void 0 : m.id, O, t), L = (0, s.useStateFromStores)([o.default], () => o.default.hidePersonalInformation);
                 return (0, i.jsxs)("div", {
-                    className: p.body,
-                    children: [(0, i.jsx)(E.default, {
+                    className: A.body,
+                    children: [(0, i.jsx)(c.default, {
                         user: t,
-                        onOpenProfile: () => R(!1),
-                        guildId: null == O ? void 0 : O.id,
-                        usernameIcon: t.hasAvatarForGuild(null == O ? void 0 : O.id) && (0, i.jsx)(f.default, {
+                        onOpenProfile: () => p(!1),
+                        guildId: null == m ? void 0 : m.id,
+                        usernameIcon: t.hasAvatarForGuild(null == m ? void 0 : m.id) && (0, i.jsx)(I.default, {
                             user: t,
-                            nickname: D
+                            nickname: g
                         }),
                         pronouns: null == r ? void 0 : r.pronouns,
-                        tags: (0, i.jsx)(I.UserProfileBadgesTag, {
+                        tags: (0, i.jsx)(E.UserProfileBadgesTag, {
                             displayProfile: r,
-                            onClose: L
+                            onClose: C
                         }),
                         nicknameIcons: (0, i.jsxs)(i.Fragment, {
-                            children: [(0, i.jsx)(_.default, {
+                            children: [(0, i.jsx)(d.default, {
                                 userId: t.id
-                            }), v && !y && (0, i.jsx)(c.default, {
-                                className: a()(p.noteIcon, {
-                                    [p.visible]: C
+                            }), R && !L && (0, i.jsx)(_.default, {
+                                className: a()(A.noteIcon, {
+                                    [A.visible]: N
                                 }),
                                 user: t,
-                                onOpenProfile: () => R(!0)
+                                onOpenProfile: () => p(!0)
                             })]
                         })
-                    }), (0, i.jsx)(N.default, {
+                    }), (0, i.jsx)(h.default, {
                         user: t,
-                        onClose: L
-                    }), v && (0, i.jsx)(h.default, {
+                        onClose: C
+                    }), R && (0, i.jsx)(f.default, {
                         user: t,
                         bio: null == r ? void 0 : r.bio,
-                        hidePersonalInformation: y,
-                        onClose: L
-                    }), (0, i.jsx)(S.default, {
+                        hidePersonalInformation: L,
+                        onClose: C
+                    }), (0, i.jsx)(T.default, {
                         user: t,
-                        guild: O,
-                        channelId: g,
-                        onClose: L
-                    }), null != O && (0, i.jsx)(m.default, {
+                        guild: m,
+                        channelId: O,
+                        onClose: C
+                    }), null != m && (0, i.jsx)(S.default, {
                         user: t,
                         currentUser: n,
-                        guild: O,
-                        onOpenProfile: () => R(!1)
-                    }), M && (0, i.jsx)(A.default, {
-                        user: t,
-                        channelId: g,
-                        onClose: L
-                    }), (0, i.jsx)(T.default, {
-                        type: "action",
-                        user: t,
-                        guildId: null == O ? void 0 : O.id,
-                        onClose: L
+                        guild: m,
+                        onOpenProfile: () => p(!1)
                     })]
                 })
             }
@@ -213846,6 +213834,42 @@
                             }
                         }
                     }
+                })
+            }
+        },
+        215633: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return l
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("505737"),
+                a = n("705556"),
+                s = n("901952"),
+                o = n("806419");
+
+            function l(e) {
+                let {
+                    user: t,
+                    guildId: n,
+                    channelId: l,
+                    onClose: u
+                } = e, d = (0, r.default)(t.id, n);
+                return (0, i.jsxs)("footer", {
+                    className: o.footer,
+                    children: [d && (0, i.jsx)(s.default, {
+                        user: t,
+                        channelId: l,
+                        onClose: u
+                    }), !d && (0, i.jsx)(a.default, {
+                        type: "action",
+                        user: t,
+                        guildId: n,
+                        onClose: u
+                    })]
                 })
             }
         },
@@ -214133,7 +214157,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return L
+                    return v
                 }
             }), n("47120");
             var i = n("735250"),
@@ -214156,76 +214180,77 @@
                 m = n("980768"),
                 N = n("171368"),
                 p = n("958120"),
-                O = n("23293"),
-                C = n("228168"),
-                R = n("689938");
+                O = n("215633"),
+                C = n("23293"),
+                R = n("228168"),
+                g = n("689938");
 
-            function g(e) {
+            function L(e) {
                 e.stopPropagation()
             }
 
-            function L(e) {
+            function v(e) {
                 let {
                     user: t,
                     guildId: n,
-                    channelId: L,
-                    messageId: v,
-                    roleId: D,
-                    closePopout: M,
-                    setPopoutRef: y,
-                    disableUserProfileLink: P = __OVERLAY__,
-                    newAnalyticsLocations: U = []
+                    channelId: v,
+                    messageId: D,
+                    roleId: M,
+                    closePopout: y,
+                    setPopoutRef: P,
+                    disableUserProfileLink: U = __OVERLAY__,
+                    newAnalyticsLocations: b = []
                 } = e, {
-                    analyticsLocations: b
-                } = (0, u.default)([...U, l.default.BITE_SIZE_PROFILE_POPOUT]), G = (0, I.useTrackUserProfileAction)({
+                    analyticsLocations: G
+                } = (0, u.default)([...b, l.default.BITE_SIZE_PROFILE_POPOUT]), w = (0, I.useTrackUserProfileAction)({
                     layout: "BITE_SIZE_POPOUT",
                     userId: t.id,
                     guildId: n,
-                    channelId: L,
-                    messageId: v,
-                    roleId: D
-                }), w = (0, a.useStateFromStores)([E.default], () => E.default.getCurrentUser()), B = (0, a.useStateFromStores)([c.default], () => null != n ? c.default.getGuild(n) : null), k = (0, a.useStateFromStores)([_.default], () => null != n ? _.default.getMember(n, t.id) : null), V = r.useRef(null), x = (0, T.default)(t.id, n), F = (0, o.default)(V);
+                    channelId: v,
+                    messageId: D,
+                    roleId: M
+                }), B = (0, a.useStateFromStores)([E.default], () => E.default.getCurrentUser()), k = (0, a.useStateFromStores)([c.default], () => null != n ? c.default.getGuild(n) : null), V = (0, a.useStateFromStores)([_.default], () => null != n ? _.default.getMember(n, t.id) : null), x = r.useRef(null), F = (0, T.default)(t.id, n), H = (0, o.default)(x);
                 r.useEffect(() => {
-                    null == y || y(null == V ? void 0 : V.current)
-                }, [V, y]);
-                let H = e => {
-                    null == M || M(), (0, N.openUserProfileModal)({
-                        sourceAnalyticsLocations: b,
+                    null == P || P(null == x ? void 0 : x.current)
+                }, [x, P]);
+                let Y = e => {
+                    null == y || y(), (0, N.openUserProfileModal)({
+                        sourceAnalyticsLocations: G,
                         userId: t.id,
                         guildId: n,
-                        channelId: L,
-                        messageId: v,
-                        roleId: D,
+                        channelId: v,
+                        messageId: D,
+                        roleId: M,
                         autoFocusNote: e
                     })
                 };
-                return null == w ? null : (0, i.jsx)(u.AnalyticsLocationProvider, {
-                    value: b,
+                return null == B ? null : (0, i.jsx)(u.AnalyticsLocationProvider, {
+                    value: G,
                     children: (0, i.jsx)(I.UserProfileAnalyticsProvider, {
                         layout: "BITE_SIZE_POPOUT",
                         userId: t.id,
                         guildId: n,
-                        channelId: L,
-                        messageId: v,
-                        roleId: D,
-                        shouldTrackViewOnMount: null == k || null != k.fullProfileLoadedTimestamp,
+                        channelId: v,
+                        messageId: D,
+                        roleId: M,
+                        shouldTrackViewOnMount: null == V || null != V.fullProfileLoadedTimestamp,
                         children: (0, i.jsx)(s.Dialog, {
-                            ref: V,
+                            ref: x,
                             "aria-label": t.username,
-                            onClick: g,
-                            onContextMenu: g,
+                            onClick: L,
+                            onContextMenu: L,
                             children: (0, i.jsxs)(f.default, {
                                 user: t,
-                                displayProfile: x,
-                                profileType: C.UserProfileTypes.BITE_SIZE,
+                                displayProfile: F,
+                                profileType: R.UserProfileTypes.BITE_SIZE,
                                 children: [(0, i.jsxs)(m.default, {
-                                    profileType: C.UserProfileTypes.BITE_SIZE,
-                                    isFaded: (null == x ? void 0 : x.profileEffectId) != null && !F,
+                                    profileType: R.UserProfileTypes.BITE_SIZE,
+                                    isFaded: (null == F ? void 0 : F.profileEffectId) != null && !H,
                                     children: [(0, i.jsx)(h.default, {
                                         user: t,
                                         guildId: n,
-                                        channelId: L,
-                                        onClose: M
+                                        channelId: v,
+                                        onClose: y
                                     }), (0, i.jsx)(S.default, {
                                         user: t
                                     }), (0, i.jsx)(A.default, {
@@ -214233,34 +214258,39 @@
                                         guildId: n,
                                         viewProfileItem: (0, i.jsx)(s.MenuItem, {
                                             id: "view-profile",
-                                            label: R.default.Messages.VIEW_FULL_PROFILE,
+                                            label: g.default.Messages.VIEW_FULL_PROFILE,
                                             action: () => {
-                                                G({
+                                                w({
                                                     action: "PRESS_VIEW_PROFILE",
-                                                    analyticsLocations: b
-                                                }), H()
+                                                    analyticsLocations: G
+                                                }), Y()
                                             }
                                         })
                                     })]
-                                }), (0, i.jsx)(O.default, {
+                                }), (0, i.jsx)(C.default, {
                                     user: t,
-                                    displayProfile: x,
+                                    displayProfile: F,
                                     guildId: n,
-                                    channelId: L,
-                                    onClose: M,
-                                    disableUserProfileLink: P
+                                    channelId: v,
+                                    onClose: y,
+                                    disableUserProfileLink: U
                                 }), (0, i.jsx)(p.default, {
                                     user: t,
-                                    currentUser: w,
-                                    displayProfile: x,
-                                    guild: B,
-                                    isHovering: F,
-                                    onOpenProfile: H,
-                                    channelId: L,
-                                    onClose: M
-                                }), (null == x ? void 0 : x.profileEffectId) != null && (0, i.jsx)(d.default, {
-                                    profileEffectId: null == x ? void 0 : x.profileEffectId,
-                                    isHovering: F
+                                    currentUser: B,
+                                    displayProfile: F,
+                                    guild: k,
+                                    isHovering: H,
+                                    onOpenProfile: Y,
+                                    channelId: v,
+                                    onClose: y
+                                }), (0, i.jsx)(O.default, {
+                                    user: t,
+                                    guildId: n,
+                                    channelId: v,
+                                    onClose: y
+                                }), (null == F ? void 0 : F.profileEffectId) != null && (0, i.jsx)(d.default, {
+                                    profileEffectId: null == F ? void 0 : F.profileEffectId,
+                                    isHovering: H
                                 })]
                             })
                         })
@@ -248396,7 +248426,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "559f3f482ee5412c2545246253395c96745e230c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "56dee89356380cd0bb095574da8e176060084d50"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277055,7 +277085,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290356"
+                                build_number: "290371"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284382,7 +284412,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290356", "290356"), 10);
+                let a = parseInt((n = "290371", "290371"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -311847,4 +311877,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.98f0017ec4245b22c08b.js.map
+//# sourceMappingURL=35705.1780619099f8e43c2423.js.map

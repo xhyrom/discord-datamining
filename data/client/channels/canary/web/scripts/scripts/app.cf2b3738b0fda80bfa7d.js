@@ -25746,6 +25746,12 @@
                 inner: "inner_e8ffd7"
             }
         },
+        806419: function(e) {
+            "use strict";
+            e.exports = {
+                footer: "footer_b50e3f"
+            }
+        },
         821301: function(e) {
             "use strict";
             e.exports = {
