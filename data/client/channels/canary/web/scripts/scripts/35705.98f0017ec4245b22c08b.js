@@ -37001,7 +37001,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290341", ", Version Hash: ").concat("0b86d9a489c49c70e56ac9452712908eb6bee432")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290356", ", Version Hash: ").concat("559f3f482ee5412c2545246253395c96745e230c")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87425,8 +87425,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290341", "290341"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290341")), t = 0), t
+                let t = parseInt((e = "290356", "290356"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290356")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115157,8 +115157,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290341",
-                    versionHash: "0b86d9a489c49c70e56ac9452712908eb6bee432"
+                    buildNumber: "290356",
+                    versionHash: "559f3f482ee5412c2545246253395c96745e230c"
                 }
             }
             n.r(t), n.d(t, {
@@ -116156,18 +116156,19 @@
                     expanded: l,
                     isMember: d,
                     traitsToHighlight: _,
-                    className: T
+                    className: T,
+                    showBrandingFooter: f = !1
                 } = e, {
-                    tag: f,
-                    badge: S,
+                    tag: S,
+                    badge: h,
                     branding: {
-                        primaryColor: h,
-                        secondaryColor: A
+                        primaryColor: A,
+                        secondaryColor: N
                     },
-                    banner: N
-                } = r, p = (0, u.default)(r.games), L = C.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
+                    banner: p
+                } = r, L = (0, u.default)(r.games), M = C.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
                     count: r.memberCount
-                }), M = null !== (t = m.default.getGuildIconURL({
+                }), y = null !== (t = m.default.getGuildIconURL({
                     id: r.id,
                     icon: r.icon,
                     size: 64,
@@ -116178,12 +116179,12 @@
                     children: [(0, i.jsx)("div", {
                         className: R.cardBrandingHeader,
                         style: {
-                            background: "linear-gradient(90deg, ".concat(h, ", ").concat(A, ")")
+                            background: "linear-gradient(90deg, ".concat(A, ", ").concat(N, ")")
                         },
                         children: null != a ? a : (0, i.jsx)(I.default, {
-                            banner: N,
-                            primaryTintColor: h,
-                            secondaryTintColor: A
+                            banner: p,
+                            primaryTintColor: A,
+                            secondaryTintColor: N
                         })
                     }), (0, i.jsxs)("div", {
                         className: R.cardContent,
@@ -116193,7 +116194,7 @@
                                 className: R.cardNameAndTagWrapper,
                                 children: [(0, i.jsx)(c.ClanGuildIconSimple, {
                                     guildName: r.name,
-                                    guildIconURL: M,
+                                    guildIconURL: y,
                                     iconSize: 64,
                                     className: R.clanIcon
                                 }), (0, i.jsx)("div", {
@@ -116208,13 +116209,13 @@
                                             children: [(0, i.jsx)(E.ClanBadge, {
                                                 width: 16,
                                                 height: 16,
-                                                badge: S.badgeKind,
-                                                primaryTintColor: S.primaryColor,
-                                                secondaryTintColor: S.secondaryColor
+                                                badge: h.badgeKind,
+                                                primaryTintColor: h.primaryColor,
+                                                secondaryTintColor: h.secondaryColor
                                             }), (0, i.jsx)(o.Text, {
                                                 variant: "text-xs/medium",
                                                 color: "text-primary",
-                                                children: f
+                                                children: S
                                             })]
                                         })
                                     })
@@ -116264,19 +116265,19 @@
                                 children: (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: L
+                                    children: M
                                 })
                             })
                         }), (0, i.jsx)("div", {
                             className: R.cardFooterGames,
                             children: (0, i.jsx)(D, {
-                                games: p
+                                games: L
                             })
                         })]
-                    }), (0, i.jsx)("div", {
+                    }), f && (0, i.jsx)("div", {
                         className: R.cardBrandingFooter,
                         style: {
-                            background: "linear-gradient(90deg, ".concat(h, ", ").concat(A, ")")
+                            background: "linear-gradient(90deg, ".concat(A, ", ").concat(N, ")")
                         }
                     })]
                 })
@@ -116316,7 +116317,8 @@
                     className: R.clickableCard,
                     children: (0, i.jsx)(M, {
                         ...e,
-                        isMember: d
+                        isMember: d,
+                        showBrandingFooter: !0
                     })
                 })
             }
@@ -170475,8 +170477,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714749456994",
-                                    build_number: "290341"
+                                    built_at: "1714751621451",
+                                    build_number: "290356"
                                 }
                             },
                             retries: 1
@@ -248394,7 +248396,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0b86d9a489c49c70e56ac9452712908eb6bee432"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "559f3f482ee5412c2545246253395c96745e230c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277053,7 +277055,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290341"
+                                build_number: "290356"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284380,7 +284382,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290341", "290341"), 10);
+                let a = parseInt((n = "290356", "290356"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -311845,4 +311847,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.95181b9be211cb7841c7.js.map
+//# sourceMappingURL=35705.98f0017ec4245b22c08b.js.map
