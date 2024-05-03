@@ -25300,7 +25300,7 @@
                 biteSizeOuter: "biteSizeOuter_e0bb1d userPopoutOuter_d67f56 userProfileOuter__35e59",
                 biteSizeOverlayBackground: "biteSizeOverlayBackground__11aa7 overlayBackground__345c9",
                 fullSizeInnerThemed: "fullSizeInnerThemed_ae6977",
-                fullSizeOuter: "fullSizeOuter__64397 userProfileModalOuter__90b4a userProfileOuter__35e59",
+                fullSizeOuter: "fullSizeOuter__64397 userProfileOuter__35e59",
                 fullSizeOverlayBackground: "fullSizeOverlayBackground_a28b53 overlayBackground__345c9",
                 overlayBackground: "overlayBackground__345c9",
                 showOutOfBoundaryComponents: "showOutOfBoundaryComponents__3e39f",
@@ -25456,6 +25456,7 @@
             e.exports = {
                 body: "body_bd4552",
                 divider: "divider__7116f",
+                overlay: "overlay__679e5",
                 root: "root_ba16f0",
                 tabBar: "tabBar__35f81",
                 tabBarContainer: "tabBarContainer_b283be",
@@ -25545,6 +25546,7 @@
             e.exports = {
                 badgeList: "badgeList__70639",
                 container: "container__020e3",
+                overlay: "overlay__15b40",
                 username: "username__7cf20",
                 usernameBadgeList: "usernameBadgeList__9a1fb"
             }

@@ -15877,7 +15877,8 @@ span.clanTag_f4aadc {
 }
 
 .fullSizeOuter__64397 {
-    width: var(--custom-user-profile-width-full-size)
+    width: var(--custom-user-profile-width-full-size);
+    height: var(--custom-user-profile-height-full-size)
 }
 
 .userProfileOuterThemed_a425f3 {
@@ -15923,7 +15924,7 @@ span.clanTag_f4aadc {
 }
 
 .userProfileModalInner__84e47 {
-    max-height: 100%
+    height: 100%
 }
 
 .userProfileModalInner__84e47:before {
@@ -131007,12 +131008,16 @@ div.nagbar_c731ff {
 }
 
 .body_bd4552 {
-    flex: 0 1 385px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     border-radius: 8px;
     overflow: hidden
+}
+
+.overlay__679e5 {
+    height: 385px;
+    max-height: 100%
 }
 
 .divider__7116f {
@@ -131129,7 +131134,6 @@ div.nagbar_c731ff {
 }
 
 .container__8361e {
-    flex: 0 1 404px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -131162,7 +131166,13 @@ div.nagbar_c731ff {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin: 16px
+    margin: 16px;
+    overflow: hidden;
+    height: 100%
+}
+
+.overlay__15b40 {
+    height: 100%
 }
 
 .usernameBadgeList__9a1fb {
@@ -135500,7 +135510,8 @@ code {
     --custom-user-profile-themed-container-user-profile-themed-padding: 4px;
     --custom-user-profile-themed-container-profile-effects-user-popout-width: 280px;
     --custom-user-profile-width-bite-size: 300px;
-    --custom-user-profile-width-full-size: 600px
+    --custom-user-profile-width-full-size: 600px;
+    --custom-user-profile-height-full-size: 780px
 }
 
 :root {
@@ -136178,4 +136189,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.346ff1801b5fa3819906.css.map*/
+/*# sourceMappingURL=99387.431398c4255f70a8deac.css.map*/
