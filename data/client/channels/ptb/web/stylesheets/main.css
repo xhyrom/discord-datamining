@@ -18561,17 +18561,38 @@ span.clanTag_f4aadc {
     margin-top: 2px
 }
 
-.emptyActivityCardPrompt_b217cc {
+.emptyStatePrompt__43e42 {
     display: flex;
-    margin: 16px 8px
+    margin: 16px 8px;
+    height: 54px
 }
 
 .emptyStateTextContainer__84382 {
-    align-self: center
+    align-self: center;
+    margin-left: 10px
 }
 
-.emptyActivityCardContainer_a8d8cf {
-    height: 38px
+.emptyStateCardContainer_daadc2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--radius-sm);
+    padding: 10px;
+    margin-top: 8px;
+    width: 286px;
+    height: 18px;
+    cursor: pointer
+}
+
+.emptyStateCardContainer_daadc2:hover {
+    outline: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-low-hover)
+}
+
+.emptyStateCardContainer_daadc2:hover .joinButton_f6f9af {
+    display: block;
+    margin-left: 10px
 }
 
 .cardContainer__5b0e3 {
@@ -18592,24 +18613,32 @@ span.clanTag_f4aadc {
     box-shadow: var(--shadow-low-hover)
 }
 
+.cardContainer__5b0e3:hover .cardDetailsContainer__399e5 {
+    width: 152px;
+    margin-right: 8px
+}
+
 .cardContainer__5b0e3:hover .joinButton_f6f9af {
-    display: block
+    display: block;
+    flex-shrink: 0
 }
 
-.activityCardImage__960a6 {
-    width: 40px;
-    height: 40px;
-    border: 2px solid var(--redesign-button-active-background);
-    border-radius: var(--radius-sm)
+.cardContainer__5b0e3:hover .cardTypeIcon__1dd99 {
+    display: none
 }
 
-.activityCardActivityIcon_ffae8f {
+.cardImage__3249d {
+    width: 60px;
+    height: 60px;
+    outline: 2px solid var(--redesign-button-active-background);
+    border-radius: var(--radius-xs);
+    flex-shrink: 0
+}
+
+.cardImageIcon__1bd75 {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border: 2px solid var(--redesign-button-active-background);
-    border-radius: var(--radius-sm)
+    justify-content: center
 }
 
 .cardDetailsContainer__399e5 {
@@ -18624,16 +18653,23 @@ span.clanTag_f4aadc {
     align-items: center
 }
 
-.cardDetailsIcon_e55f59 {
+.cardIcon_fe1b52 {
     color: var(--icon-muted);
-    margin-right: 4px;
     flex-shrink: 0
+}
+
+.cardDetailsIcon_e55f59 {
+    margin-right: 4px
+}
+
+.cardTypeIcon__1dd99 {
+    align-self: flex-start
 }
 
 .othersCount__89551 {
     padding: 0 8px;
     background-color: var(--background-tertiary);
-    border-radius: 16px;
+    border-radius: var(--radius-lg);
     margin-left: -3px
 }
 
@@ -18643,14 +18679,8 @@ span.clanTag_f4aadc {
     align-items: center;
     padding: 4px 8px;
     background-color: var(--background-tertiary);
-    border-radius: 16px;
+    border-radius: var(--radius-lg);
     margin-left: 4px
-}
-
-.mask_beff87 {
-    position: absolute;
-    right: 0;
-    bottom: 0
 }
 
 .facepile__3688e {
@@ -18676,8 +18706,6 @@ span.clanTag_f4aadc {
 }
 
 .infoIcon__6e0d9 {
-    width: 12px;
-    height: 12px;
     color: var(--interactive-normal);
     margin-right: 8px
 }
@@ -124292,34 +124320,6 @@ html .invoiceCancelRow__6ff3e {
     }
 }
 
-.guildContainer__0e7ac {
-    display: flex;
-    gap: var(--spacing-16);
-    padding: var(--spacing-12);
-    background-color: var(--bg-base-tertiary);
-    border-radius: var(--radius-sm)
-}
-
-.guildAvatarPlaceholder__19191 {
-    border-radius: var(--radius-round);
-    background-color: var(--interactive-muted)
-}
-
-.guildName__5f165 {
-    color: var(--header-primary)
-}
-
-.removalDate_b6b794 {
-    color: var(--header-secondary);
-    font-style: italic
-}
-
-.titleContainer__063b9 {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-4)
-}
-
 .classificationEvidenceCard__37e9b {
     background: var(--channeltextarea-background);
     border-radius: var(--radius-sm);
@@ -136161,4 +136161,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7c0313918045a841f83e.css.map*/
+/*# sourceMappingURL=99387.df661e4bc9e24aa9c999.css.map*/

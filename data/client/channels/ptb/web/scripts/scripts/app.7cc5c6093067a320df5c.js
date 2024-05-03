@@ -15519,15 +15519,17 @@
         569779: function(e) {
             "use strict";
             e.exports = {
-                activityCardActivityIcon: "activityCardActivityIcon_ffae8f",
-                activityCardImage: "activityCardImage__960a6",
                 cardContainer: "cardContainer__5b0e3",
                 cardDetailsContainer: "cardDetailsContainer__399e5",
                 cardDetailsIcon: "cardDetailsIcon_e55f59",
                 cardDetailsTextContainer: "cardDetailsTextContainer_e358c7",
+                cardIcon: "cardIcon_fe1b52",
+                cardImage: "cardImage__3249d",
+                cardImageIcon: "cardImageIcon__1bd75",
+                cardTypeIcon: "cardTypeIcon__1dd99",
                 container: "container_a88e31",
-                emptyActivityCardContainer: "emptyActivityCardContainer_a8d8cf",
-                emptyActivityCardPrompt: "emptyActivityCardPrompt_b217cc",
+                emptyStateCardContainer: "emptyStateCardContainer_daadc2",
+                emptyStatePrompt: "emptyStatePrompt__43e42",
                 emptyStateTextContainer: "emptyStateTextContainer__84382",
                 facePileItem: "facePileItem__37c56",
                 facepile: "facepile__3688e",
@@ -15535,7 +15537,6 @@
                 header: "header__3a32b",
                 infoIcon: "infoIcon__6e0d9",
                 joinButton: "joinButton_f6f9af",
-                mask: "mask_beff87",
                 numberPill: "numberPill__7188a",
                 othersCount: "othersCount__89551",
                 rowIcon: "rowIcon__45dc2",
@@ -23409,16 +23410,6 @@
             "use strict";
             e.exports = {
                 classificationEvidenceContainer: "classificationEvidenceContainer__6e0de"
-            }
-        },
-        625096: function(e) {
-            "use strict";
-            e.exports = {
-                guildAvatarPlaceholder: "guildAvatarPlaceholder__19191",
-                guildContainer: "guildContainer__0e7ac",
-                guildName: "guildName__5f165",
-                removalDate: "removalDate_b6b794",
-                titleContainer: "titleContainer__063b9"
             }
         },
         390988: function(e) {
