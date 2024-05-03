@@ -70560,6 +70560,14 @@ div:has(>div>.modal__06f49) {
     background: var(--primary-600)
 }
 
+.darkerIcon__4a681 {
+    background: var(--plum-20)
+}
+
+.midnightIcon__1aef4 {
+    background: var(--black-500)
+}
+
 .lightIcon_b11aec {
     background: var(--white-500)
 }
@@ -136170,4 +136178,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.3ea29d4381d8e1e5f2e3.css.map*/
+/*# sourceMappingURL=99387.346ff1801b5fa3819906.css.map*/
