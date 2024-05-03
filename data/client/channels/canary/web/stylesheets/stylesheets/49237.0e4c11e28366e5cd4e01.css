@@ -15786,6 +15786,13 @@ h3.improved_e02592:after {
     color: var(--status-danger)
 }
 
+.theme-dark .isUnsupported__136fb {
+    color: var(--text-muted);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
 .cozy_f5c119 .markupRtl__05c1c {
     text-align: left;
     text-indent: 0;
@@ -28224,4 +28231,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.a8d9f6908b5e68feebe0.css.map*/
+/*# sourceMappingURL=49237.0e4c11e28366e5cd4e01.css.map*/
