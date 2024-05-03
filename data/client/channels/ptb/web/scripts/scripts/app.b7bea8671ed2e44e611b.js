@@ -15531,6 +15531,7 @@
                 cardIcon: "cardIcon_fe1b52",
                 cardImage: "cardImage__3249d",
                 cardImageIcon: "cardImageIcon__1bd75",
+                cardImageIconContainer: "cardImageIconContainer__801a1",
                 cardTypeIcon: "cardTypeIcon__1dd99",
                 container: "container_a88e31",
                 emptyStateCardContainer: "emptyStateCardContainer_daadc2",
