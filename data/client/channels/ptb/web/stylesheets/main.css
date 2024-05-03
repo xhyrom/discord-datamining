@@ -12732,6 +12732,7 @@ html .progress__00e29 {
 }
 
 .clickableCard__1c1e9 {
+    border-radius: 8px;
     cursor: pointer;
     box-shadow: var(--shadow-medium);
     transition: transform.2s, box-shadow.1s
@@ -45377,7 +45378,7 @@ img.thumbnail__18ece {
 }
 
 .interestsCategory__14517 {
-    margin-bottom: 24px;
+    margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     gap: 12px 8px
@@ -47253,6 +47254,16 @@ div:has(>div>.modal__06f49) {
     display: flex;
     flex-direction: column;
     gap: 40px
+}
+
+.theme-dark .container_ec1fbc {
+    background-color: var(--primary-600);
+    color: var(--white-500)
+}
+
+.theme-light .container_ec1fbc {
+    background-color: var(--white-500);
+    color: var(--primary-500)
 }
 
 @value responsiveWidthMobile from '../../../../uikit/auth/WaveSplash.module.css';
@@ -136150,4 +136161,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.13abb61b0fba51994d2f.css.map*/
+/*# sourceMappingURL=99387.7c0313918045a841f83e.css.map*/
