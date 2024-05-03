@@ -120815,11 +120815,7 @@ html .invoiceCancelRow__6ff3e {
 }
 
 .text_a878e2 {
-    margin-left: var(--spacing-8)
-}
-
-.spacer_e582b5 {
-    flex-grow: 1
+    margin: 0 var(--spacing-8)
 }
 
 .nitroButton_a1ac54 {
@@ -136155,4 +136151,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.51ba0e10f1acdd7faf3e.css.map*/
+/*# sourceMappingURL=99387.c240f0e5565dd6341395.css.map*/
