@@ -592,6 +592,16 @@
     border-top-color: var(--background-floating)
 }
 
+.theme-dark .tooltipNested_ee18f0,
+.theme-light .tooltipNested_ee18f0 {
+    background-color: var(--background-nested-floating)
+}
+
+.theme-dark .tooltipNested_ee18f0 .tooltipPointer_f7411c,
+.theme-light .tooltipNested_ee18f0 .tooltipPointer_f7411c {
+    border-top-color: var(--background-nested-floating)
+}
+
 .theme-dark .tooltipBlack__867ce,
 .theme-light .tooltipBlack__867ce {
     background-color: var(--black-500);
@@ -28213,4 +28223,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.c804728565ca63297678.css.map*/
+/*# sourceMappingURL=49237.5f5023bd1693776e1e97.css.map*/

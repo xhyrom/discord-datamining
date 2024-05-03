@@ -35560,7 +35560,7 @@
                     configurable: !0,
                     writable: !0
                 }) : e[t] = n, e
-            }(a = i || (i = {})).PRIMARY = "primary", a.BLACK = "black", a.GREY = "grey", a.BRAND = "brand", a.GREEN = "green", a.YELLOW = "yellow", a.RED = "red", a.CUSTOM = "custom", a.PREMIUM = "premium";
+            }(a = i || (i = {})).PRIMARY = "primary", a.NESTED = "nested", a.BLACK = "black", a.GREY = "grey", a.BRAND = "brand", a.GREEN = "green", a.YELLOW = "yellow", a.RED = "red", a.CUSTOM = "custom", a.PREMIUM = "premium";
             let p = Object.freeze({}),
                 O = Object.freeze({
                     top: m.tooltipTop,
@@ -35570,6 +35570,7 @@
                     center: m.tooltipCenter,
                     window_center: m.tooltipCenter,
                     primary: m.tooltipPrimary,
+                    nested: m.tooltipNested,
                     black: m.tooltipBlack,
                     grey: m.tooltipGrey,
                     brand: m.tooltipBrand,
@@ -37001,7 +37002,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290377", ", Version Hash: ").concat("5d9a6800cf229ed8b802b7040aaaccb52e8cbf7f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290379", ", Version Hash: ").concat("b3622ea75bf0afd1a6ac3c20a659d67990c44ee1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87425,8 +87426,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290377", "290377"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290377")), t = 0), t
+                let t = parseInt((e = "290379", "290379"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290379")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115157,8 +115158,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290377",
-                    versionHash: "5d9a6800cf229ed8b802b7040aaaccb52e8cbf7f"
+                    buildNumber: "290379",
+                    versionHash: "b3622ea75bf0afd1a6ac3c20a659d67990c44ee1"
                 }
             }
             n.r(t), n.d(t, {
@@ -170477,8 +170478,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714754325705",
-                                    build_number: "290377"
+                                    built_at: "1714754752734",
+                                    build_number: "290379"
                                 }
                             },
                             retries: 1
@@ -209878,6 +209879,7 @@
                     role: "group",
                     children: t.map(e => (0, i.jsx)(s.TooltipContainer, {
                         text: e.description,
+                        color: s.TooltipColors.NESTED,
                         children: (0, i.jsx)(s.Anchor, {
                             onClick: t => {
                                 p({
@@ -210003,6 +210005,7 @@
                         location_stack: T
                     }))
                 }, [T, a, t]), (0, i.jsx)(d.Tooltip, {
+                    color: d.TooltipColors.NESTED,
                     tooltipContentClassName: j.premiumIconTooltipContent,
                     text: u ? Y.default.Messages.PROFILE_CUSTOMIZATION_NITRO_ICON_TOOLTIP : Y.default.Messages.USER_SETTINGS_PROFILE_THEMES_USER_PROFILE_ICON_TOOLTIP_UPSELL,
                     children: e => (0, i.jsx)(d.Clickable, {
@@ -210064,6 +210067,7 @@
                     className: t ? j.pencilContainerDark : j.pencilContainer,
                     children: (0, i.jsx)(d.Tooltip, {
                         text: r,
+                        color: d.TooltipColors.NESTED,
                         children: e => (0, i.jsx)(l, {
                             ...e,
                             width: o,
@@ -210176,6 +210180,7 @@
                             className: j.pencilContainer,
                             children: (0, i.jsx)(d.Tooltip, {
                                 text: Y.default.Messages.BACK,
+                                color: d.TooltipColors.NESTED,
                                 children: e => (0, i.jsx)(g.default, {
                                     ...e,
                                     className: j.closeIcon,
@@ -210783,6 +210788,7 @@
                             position: "top",
                             text: e.description,
                             spacing: 12,
+                            color: l.TooltipColors.NESTED,
                             children: t => (0, a.jsx)(l.Anchor, {
                                 ...t,
                                 onClick: n => {
@@ -210966,6 +210972,7 @@
                 }) ? (0, i.jsx)(s.TooltipContainer, {
                     className: d.container,
                     text: u.default.Messages.USER_PROFILE_LOAD_ERROR,
+                    color: s.TooltipColors.NESTED,
                     children: (0, i.jsx)(o.default, {
                         color: a.default.colors.STATUS_WARNING.css,
                         width: 16,
@@ -211027,6 +211034,7 @@
                             className: I.memberSince,
                             children: [(0, i.jsx)(a.Tooltip, {
                                 text: E.default.Messages.DISCORD_NAME,
+                                color: a.TooltipColors.NESTED,
                                 children: e => (0, i.jsx)(_.default, {
                                     ...e,
                                     className: I.discordIcon
@@ -211042,6 +211050,7 @@
                             className: I.memberSince,
                             children: [(0, i.jsx)(a.Tooltip, {
                                 text: m.name,
+                                color: a.TooltipColors.NESTED,
                                 children: e => (0, i.jsx)(d.default, {
                                     ...e,
                                     guild: m,
@@ -211097,6 +211106,7 @@
                 return (0, i.jsx)(u.TooltipContainer, {
                     text: h,
                     "aria-label": A,
+                    color: u.TooltipColors.NESTED,
                     children: (0, i.jsx)(u.Clickable, {
                         onClick: () => {
                             I({
@@ -211303,6 +211313,7 @@
                                 className: d.dotSpacer
                             }), (0, i.jsx)(s.TooltipContainer, {
                                 text: u.default.Messages.USER_PROFILE_PRONOUNS,
+                                color: s.TooltipColors.NESTED,
                                 children: (0, i.jsx)(s.Text, {
                                     variant: h,
                                     className: d.pronouns,
@@ -211373,6 +211384,7 @@
                 });
                 return r ? (0, i.jsx)(o.Tooltip, {
                     text: n,
+                    color: o.TooltipColors.NESTED,
                     children: e => (0, i.jsx)(s.Button, {
                         className: a()(l.compactButton, u),
                         innerClassName: a()(l.compactButtonInner, d),
@@ -211777,6 +211789,7 @@
                 } = e;
                 return (0, i.jsx)(s.TooltipContainer, {
                     text: n,
+                    color: s.TooltipColors.NESTED,
                     children: (0, i.jsx)(s.Button, {
                         className: a()(o.button, r),
                         innerClassName: a()(o.buttonInner, l),
@@ -211933,6 +211946,7 @@
                         className: C.connectedAccount,
                         children: [(0, i.jsx)(u.Tooltip, {
                             text: null == G ? void 0 : G.name,
+                            color: u.TooltipColors.NESTED,
                             children: e => (0, i.jsx)("img", {
                                 ...e,
                                 alt: O.default.Messages.IMG_ALT_LOGO.format({
@@ -211950,6 +211964,7 @@
                                     children: [(0, i.jsx)(u.Tooltip, {
                                         overflowOnly: !0,
                                         text: S.name,
+                                        color: u.TooltipColors.NESTED,
                                         children: e => (0, i.jsx)(u.Text, {
                                             ...e,
                                             variant: "text-md/semibold",
@@ -212256,6 +212271,7 @@
                         });
                         return f ? (0, a.jsx)(d.TooltipContainer, {
                             text: p.default.Messages.USER_PROFILE_MUTUAL_FRIENDS_TOOLTIP,
+                            color: d.TooltipColors.NESTED,
                             children: e
                         }) : e
                     })(), k && V && (0, a.jsx)("div", {
@@ -212283,6 +212299,7 @@
                         });
                         return f ? (0, a.jsx)(d.TooltipContainer, {
                             text: p.default.Messages.USER_PROFILE_MUTUAL_GUILDS_TOOLTIP,
+                            color: d.TooltipColors.NESTED,
                             children: e
                         }) : e
                     })()]
@@ -212390,7 +212407,7 @@
                             className: R.recentGameTitleContainer,
                             children: [(0, i.jsx)(c.Tooltip, {
                                 text: a.name,
-                                color: c.Tooltip.Colors.PRIMARY,
+                                color: c.Tooltip.Colors.NESTED,
                                 shouldShow: T,
                                 children: e => (0, i.jsx)("span", {
                                     ref: u,
@@ -212400,7 +212417,7 @@
                                 })
                             }), n && (0, i.jsx)(c.Tooltip, {
                                 text: C.default.Messages.USER_RECENT_GAMES_YOU_BOTH_PLAY,
-                                color: c.Tooltip.Colors.PRIMARY,
+                                color: c.Tooltip.Colors.NESTED,
                                 children: e => (0, i.jsx)("div", {
                                     className: R.sharedGameIcon,
                                     ...e,
@@ -213308,6 +213325,7 @@
                     children: [(null == o ? void 0 : o.profileFetchFailed) && (!t.isClyde() || c) && (0, i.jsx)(d.Tooltip, {
                         text: U.default.Messages.USER_PROFILE_LOAD_ERROR,
                         spacing: 16,
+                        color: d.TooltipColors.NESTED,
                         children: e => (0, i.jsx)(S.default, {
                             ...e,
                             className: b.warningCircleIcon,
@@ -214451,7 +214469,7 @@
                         variant: "eyebrow",
                         className: h.title,
                         children: [f.default.Messages.USER_POPOUT_ABOUT_ME, null != t && m && (0, i.jsx)(o.Tooltip, {
-                            color: o.Tooltip.Colors.CUSTOM,
+                            color: o.Tooltip.Colors.NESTED,
                             tooltipClassName: S.aboutMeGuildIconTooltip,
                             "aria-label": f.default.Messages.GUILD_IDENTITY_BIO_TOAST.format({
                                 guildName: t.name
@@ -215143,6 +215161,7 @@
                             })
                         }), null != f && "" !== f && (0, i.jsx)(s.Tooltip, {
                             text: I.default.Messages.USER_PROFILE_PRONOUNS,
+                            color: s.TooltipColors.NESTED,
                             children: e => (0, i.jsx)(s.Text, {
                                 ...e,
                                 variant: "text-sm/normal",
@@ -248418,7 +248437,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5d9a6800cf229ed8b802b7040aaaccb52e8cbf7f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "b3622ea75bf0afd1a6ac3c20a659d67990c44ee1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277077,7 +277096,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290377"
+                                build_number: "290379"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284404,7 +284423,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290377", "290377"), 10);
+                let a = parseInt((n = "290379", "290379"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -311869,4 +311888,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.9fd98dca369617543338.js.map
+//# sourceMappingURL=35705.fd14cffd30e6df6e4f6e.js.map
