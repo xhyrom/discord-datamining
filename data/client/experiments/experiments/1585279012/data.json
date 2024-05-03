@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-05_desktop_visual_refresh",
+    "label": "Desktop Visual Refresh",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: Control",
+      "Treatment 1: Refresh Enabled"
+    ],
+    "hash": 1585279012,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
