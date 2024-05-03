@@ -45234,13 +45234,19 @@ img.thumbnail__18ece {
     padding: 0
 }
 
-.colorsContainer__2dee9 {
+.content__4e550 {
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 24px
+    flex-direction: row;
+    gap: 64px
 }
 
+.leftColumn__82ee9 {
+    display: flex;
+    flex-direction: column;
+    width: 480px
+}
+
+.colorsContainer__2dee9,
 .colorPickerContainer__9b7d0 {
     display: flex;
     flex-direction: column;
@@ -45268,11 +45274,18 @@ img.thumbnail__18ece {
     height: 86px;
     border-radius: 4px;
     border: solid 1px var(--border-subtle);
-    cursor: pointer
+    cursor: pointer;
+    transition-duration: .2s
+}
+
+.brandItemContainer_f07c0f:hover:not(.brandItemContainerSelected__51923) {
+    border-color: var(--border-strong)
 }
 
 .brandItemContainerSelected__51923 {
-    border: solid 1px var(--interactive-active)
+    border: solid 1px var(--interactive-active);
+    transform: translatey(2px)scale(.98);
+    transition-duration: .2s
 }
 
 .brandItemCircle_d72b8c {
@@ -45309,11 +45322,18 @@ img.thumbnail__18ece {
     padding: 14px;
     border-radius: 4px;
     border: solid 1px var(--border-subtle);
-    cursor: pointer
+    cursor: pointer;
+    transition-duration: .2s
+}
+
+.bannerItemContainer__78c77:hover:not(.bannerItemContainerSelected_c3e66a) {
+    border-color: var(--border-strong)
 }
 
 .bannerItemContainerSelected_c3e66a {
-    border: solid 1px var(--interactive-active)
+    border: solid 1px var(--interactive-active);
+    transform: translatey(2px)scale(.98);
+    transition-duration: .2s
 }
 
 .noWrap__133e4 {
@@ -45321,8 +45341,8 @@ img.thumbnail__18ece {
 }
 
 .clanCardWrapper__06f56 {
-    align-self: flex-start;
-    width: 264px
+    width: 264px;
+    margin-top: 92px
 }
 
 .clanBannerPreview__228bd {
@@ -46666,11 +46686,18 @@ img.thumbnail__18ece {
     height: 64px;
     border-radius: 4px;
     border: solid 1px var(--border-subtle);
-    cursor: pointer
+    cursor: pointer;
+    transition-duration: .2s
+}
+
+.badgeAssetContainer__3d9d5:hover:not(.badgeAssetContainerSelected__371e2) {
+    border-color: var(--border-strong)
 }
 
 .badgeAssetContainerSelected__371e2 {
-    border: solid 1px var(--interactive-active)
+    border: solid 1px var(--interactive-active);
+    transform: translatey(2px)scale(.98);
+    transition-duration: .2s
 }
 
 .tagContainer_eb01b9 {
@@ -136195,4 +136222,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.a4b10a46ce2cadfc14aa.css.map*/
+/*# sourceMappingURL=99387.2102372e57ace268676f.css.map*/
