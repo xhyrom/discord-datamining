@@ -24600,7 +24600,8 @@ span.button_ae40a4.disabled__1dc58 {
 }
 
 .borderRadius__1b387 {
-    border-radius: 8px
+    border-radius: 8px;
+    overflow: hidden
 }
 
 .hidden__576d2 {
@@ -28292,4 +28293,4 @@ html.disable-forced-colors * {
     }
 }
 
-/*# sourceMappingURL=49237.2c3b582a9e047b2cf89c.css.map*/
+/*# sourceMappingURL=49237.22dcf9f33fbe4b90604c.css.map*/
