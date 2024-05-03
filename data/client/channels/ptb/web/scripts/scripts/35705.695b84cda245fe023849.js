@@ -37013,7 +37013,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290415", ", Version Hash: ").concat("c496312d8374c734fe508f346280e2fbce4f123b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290426", ", Version Hash: ").concat("5e4fc64996d2c7ceb671e3d2ef85e39cc3b0bcc8")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87435,8 +87435,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290415", "290415"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290415")), t = 0), t
+                let t = parseInt((e = "290426", "290426"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290426")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115183,8 +115183,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290415",
-                    versionHash: "c496312d8374c734fe508f346280e2fbce4f123b"
+                    buildNumber: "290426",
+                    versionHash: "5e4fc64996d2c7ceb671e3d2ef85e39cc3b0bcc8"
                 }
             }
             n.r(t), n.d(t, {
@@ -170522,8 +170522,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714758136311",
-                                    build_number: "290415"
+                                    built_at: "1714759415098",
+                                    build_number: "290426"
                                 }
                             },
                             retries: 1
@@ -211167,92 +211167,94 @@
         502762: function(e, t, n) {
             "use strict";
             n.r(t), n("627341");
-            var i = n("735250");
-            n("470079");
-            var r = n("120356"),
-                a = n.n(r),
-                s = n("278074"),
-                o = n("721987"),
-                l = n("138655"),
-                u = n("793397"),
-                d = n("652853"),
-                _ = n("228168"),
-                c = n("194502");
-            let E = (e, t) => {
-                    let n = (0, s.match)(e).with(_.UserProfileTypes.MODAL, () => c.userProfileModalOuter).with(_.UserProfileTypes.PANEL, () => c.userPanelOuter).with(_.UserProfileTypes.CARD, () => c.userCardOuter).with(_.UserProfileTypes.BITE_SIZE, () => c.biteSizeOuter).with(_.UserProfileTypes.FULL_SIZE, () => c.fullSizeOuter).otherwise(() => c.userPopoutOuter),
-                        i = t ? c.userProfileOuterThemed : c.userProfileOuterUnthemed;
-                    return a()(n, i)
+            var i = n("735250"),
+                r = n("470079"),
+                a = n("120356"),
+                s = n.n(a),
+                o = n("278074"),
+                l = n("721987"),
+                u = n("138655"),
+                d = n("793397"),
+                _ = n("652853"),
+                c = n("228168"),
+                E = n("194502");
+            let I = (e, t) => {
+                    let n = (0, o.match)(e).with(c.UserProfileTypes.MODAL, () => E.userProfileModalOuter).with(c.UserProfileTypes.PANEL, () => E.userPanelOuter).with(c.UserProfileTypes.CARD, () => E.userCardOuter).with(c.UserProfileTypes.BITE_SIZE, () => E.biteSizeOuter).with(c.UserProfileTypes.FULL_SIZE, () => E.fullSizeOuter).otherwise(() => E.userPopoutOuter),
+                        i = t ? E.userProfileOuterThemed : E.userProfileOuterUnthemed;
+                    return s()(n, i)
                 },
-                I = (e, t, n) => {
-                    let i = (0, s.match)(e).with(_.UserProfileTypes.MODAL, _.UserProfileTypes.FULL_SIZE, () => c.userProfileModalInner).with(_.UserProfileTypes.PANEL, () => c.userPanelInner).with(_.UserProfileTypes.CARD, () => c.userCardInner).otherwise(() => c.userPopoutInner),
-                        r = (0, s.match)(e).with(_.UserProfileTypes.PANEL, () => c.userPanelInnerThemed).with(_.UserProfileTypes.BITE_SIZE, () => c.biteSizeInnerThemed).with(_.UserProfileTypes.FULL_SIZE, () => c.fullSizeInnerThemed).otherwise(() => (0, u.buildGetPremiumUserBannerStyles)({
-                            premiumUserWithBanner: c.userProfileInnerThemedWithBanner,
-                            premiumUserWithoutBanner: c.userProfileInnerThemedPremiumWithoutBanner,
-                            default: c.userProfileInnerThemedNonPremium
+                T = (e, t, n) => {
+                    let i = (0, o.match)(e).with(c.UserProfileTypes.MODAL, c.UserProfileTypes.FULL_SIZE, () => E.userProfileModalInner).with(c.UserProfileTypes.PANEL, () => E.userPanelInner).with(c.UserProfileTypes.CARD, () => E.userCardInner).otherwise(() => E.userPopoutInner),
+                        r = (0, o.match)(e).with(c.UserProfileTypes.PANEL, () => E.userPanelInnerThemed).with(c.UserProfileTypes.BITE_SIZE, () => E.biteSizeInnerThemed).with(c.UserProfileTypes.FULL_SIZE, () => E.fullSizeInnerThemed).otherwise(() => (0, d.buildGetPremiumUserBannerStyles)({
+                            premiumUserWithBanner: E.userProfileInnerThemedWithBanner,
+                            premiumUserWithoutBanner: E.userProfileInnerThemedPremiumWithoutBanner,
+                            default: E.userProfileInnerThemedNonPremium
                         })({
                             isPremium: t,
                             hasBanner: n
                         }));
-                    return a()(i, r)
-                };
-
-            function T(e) {
-                let {
-                    user: t,
-                    displayProfile: n,
-                    profileType: r,
-                    className: s,
-                    pendingThemeColors: u,
-                    pendingProfileEffectId: _,
-                    themeOverride: T,
-                    children: f,
-                    forceShowPremium: S = !1,
-                    showOutOfBoundaryComponents: h = !1
-                } = e, {
-                    theme: A,
-                    primaryColor: m,
-                    secondaryColor: N
-                } = (0, o.default)({
-                    user: t,
-                    displayProfile: n,
-                    pendingThemeColors: u,
-                    isPreview: S
-                }), {
-                    profileThemeStyle: p,
-                    profileThemeClassName: O
-                } = (0, l.default)({
-                    theme: null != T ? T : A,
-                    primaryColor: m,
-                    secondaryColor: N
-                }), C = (null == n ? void 0 : n.canEditThemes) || S, R = null !== _ && ((null == n ? void 0 : n.banner) != null || void 0 !== _);
-                return (0, i.jsx)("div", {
-                    className: a()(E(r, C), h ? c.showOutOfBoundaryComponents : void 0, O, s),
-                    style: p,
-                    children: (0, i.jsx)("div", {
-                        className: I(r, C, R),
-                        children: (0, i.jsx)(d.UserProfileThemeContextProvider, {
-                            profileType: r,
-                            theme: null != T ? T : A,
-                            primaryColor: m,
-                            secondaryColor: N,
-                            children: f
+                    return s()(i, r)
+                },
+                f = r.forwardRef(function(e, t) {
+                    let {
+                        user: n,
+                        displayProfile: r,
+                        profileType: a,
+                        className: o,
+                        pendingThemeColors: d,
+                        pendingProfileEffectId: c,
+                        themeOverride: f,
+                        children: S,
+                        forceShowPremium: h = !1,
+                        showOutOfBoundaryComponents: A = !1
+                    } = e, {
+                        theme: m,
+                        primaryColor: N,
+                        secondaryColor: p
+                    } = (0, l.default)({
+                        user: n,
+                        displayProfile: r,
+                        pendingThemeColors: d,
+                        isPreview: h
+                    }), {
+                        profileThemeStyle: O,
+                        profileThemeClassName: C
+                    } = (0, u.default)({
+                        theme: null != f ? f : m,
+                        primaryColor: N,
+                        secondaryColor: p
+                    }), R = (null == r ? void 0 : r.canEditThemes) || h, g = null !== c && ((null == r ? void 0 : r.banner) != null || void 0 !== c);
+                    return (0, i.jsx)("div", {
+                        className: s()(I(a, R), A ? E.showOutOfBoundaryComponents : void 0, C, o),
+                        style: O,
+                        ref: t,
+                        children: (0, i.jsx)("div", {
+                            className: T(a, R, g),
+                            children: (0, i.jsx)(_.UserProfileThemeContextProvider, {
+                                profileType: a,
+                                theme: null != f ? f : m,
+                                primaryColor: N,
+                                secondaryColor: p,
+                                children: S
+                            })
                         })
                     })
-                })
-            }
-            let f = e => (0, s.match)(e).with(_.UserProfileTypes.POPOUT, _.UserProfileTypes.SETTINGS, () => c.userPopoutOverlayBackground).with(_.UserProfileTypes.MODAL, () => c.userProfileModalOverlayBackground).with(_.UserProfileTypes.PANEL, () => c.userPanelOverlayBackground).with(_.UserProfileTypes.BITE_SIZE, () => c.biteSizeOverlayBackground).with(_.UserProfileTypes.FULL_SIZE, () => c.fullSizeOverlayBackground).otherwise(() => c.overlayBackground);
-            T.Overlay = function(e) {
-                let {
-                    children: t,
-                    className: n
-                } = e, {
-                    profileType: r
-                } = (0, d.useUserProfileThemeContext)();
-                return (0, i.jsx)("div", {
-                    className: a()(f(r), n),
-                    children: t
-                })
-            }, t.default = T
+                }),
+                S = e => (0, o.match)(e).with(c.UserProfileTypes.POPOUT, c.UserProfileTypes.SETTINGS, () => E.userPopoutOverlayBackground).with(c.UserProfileTypes.MODAL, () => E.userProfileModalOverlayBackground).with(c.UserProfileTypes.PANEL, () => E.userPanelOverlayBackground).with(c.UserProfileTypes.BITE_SIZE, () => E.biteSizeOverlayBackground).with(c.UserProfileTypes.FULL_SIZE, () => E.fullSizeOverlayBackground).otherwise(() => E.overlayBackground);
+            t.default = Object.assign(f, {
+                Overlay: function(e) {
+                    let {
+                        children: t,
+                        className: n
+                    } = e, {
+                        profileType: r
+                    } = (0, _.useUserProfileThemeContext)();
+                    return (0, i.jsx)("div", {
+                        className: s()(S(r), n),
+                        children: t
+                    })
+                }
+            })
         },
         652853: function(e, t, n) {
             "use strict";
@@ -248494,7 +248496,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "c496312d8374c734fe508f346280e2fbce4f123b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5e4fc64996d2c7ceb671e3d2ef85e39cc3b0bcc8"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277153,7 +277155,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290415"
+                                build_number: "290426"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284480,7 +284482,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290415", "290415"), 10);
+                let a = parseInt((n = "290426", "290426"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -311945,4 +311947,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.cd79ab8c11657d8394fd.js.map
+//# sourceMappingURL=35705.695b84cda245fe023849.js.map
