@@ -24058,7 +24058,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .aboutMeGuildIconTooltip__365ab {
-    background-color: var(--background-tertiary);
     max-width: 400px
 }
 
@@ -26182,6 +26181,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .noteText__9421a .noteTextArea__9e075 {
+    background-color: inherit;
+    color: var(--interactive-active);
     border: none;
     box-sizing: border-box;
     padding: 0;
@@ -136169,4 +136170,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1dd7d0097eb3f3dcfc5c.css.map*/
+/*# sourceMappingURL=99387.3ea29d4381d8e1e5f2e3.css.map*/

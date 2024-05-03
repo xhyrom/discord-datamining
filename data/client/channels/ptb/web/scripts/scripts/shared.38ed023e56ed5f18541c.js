@@ -879,6 +879,7 @@
                 tooltipGreen: "tooltipGreen__36421",
                 tooltipGrey: "tooltipGrey__3108e",
                 tooltipLeft: "tooltipLeft__4c05a",
+                tooltipNested: "tooltipNested_ee18f0",
                 tooltipPointer: "tooltipPointer_f7411c",
                 tooltipPremium: "tooltipPremium_efbf2d",
                 tooltipPrimary: "tooltipPrimary__51b23",
