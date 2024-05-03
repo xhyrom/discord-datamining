@@ -37001,7 +37001,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290371", ", Version Hash: ").concat("56dee89356380cd0bb095574da8e176060084d50")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290377", ", Version Hash: ").concat("5d9a6800cf229ed8b802b7040aaaccb52e8cbf7f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87425,8 +87425,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290371", "290371"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290371")), t = 0), t
+                let t = parseInt((e = "290377", "290377"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290377")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115157,8 +115157,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290371",
-                    versionHash: "56dee89356380cd0bb095574da8e176060084d50"
+                    buildNumber: "290377",
+                    versionHash: "5d9a6800cf229ed8b802b7040aaaccb52e8cbf7f"
                 }
             }
             n.r(t), n.d(t, {
@@ -170477,8 +170477,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714753838352",
-                                    build_number: "290371"
+                                    built_at: "1714754325705",
+                                    build_number: "290377"
                                 }
                             },
                             retries: 1
@@ -212180,17 +212180,16 @@
                     onClose: r,
                     analyticsLocation: o,
                     maxIcons: u = 3,
-                    showNoMutuals: I = !1,
-                    underlineTextOnHover: f = !1,
-                    showTooltips: h = !0
+                    underlineTextOnHover: I = !1,
+                    showTooltips: f = !0
                 } = e, {
-                    analyticsLocations: A
+                    analyticsLocations: h
                 } = (0, _.default)(), {
-                    guildId: C,
-                    channelId: R,
-                    messageId: g,
-                    roleId: L
-                } = (0, S.useUserProfileAnalyticsContext)(), v = s.useMemo(() => {
+                    guildId: A,
+                    channelId: C,
+                    messageId: R,
+                    roleId: g
+                } = (0, S.useUserProfileAnalyticsContext)(), L = s.useMemo(() => {
                     var e;
                     return null !== (e = null == n ? void 0 : n.map(e => {
                         let {
@@ -212198,7 +212197,7 @@
                         } = e;
                         return t
                     })) && void 0 !== e ? e : []
-                }, [n]), D = s.useMemo(() => {
+                }, [n]), v = s.useMemo(() => {
                     var e;
                     return null !== (e = null == i ? void 0 : i.map(e => {
                         let {
@@ -212206,93 +212205,87 @@
                         } = e;
                         return t
                     })) && void 0 !== e ? e : []
-                }, [i]), M = s.useMemo(() => p.default.Messages.USER_PROFILE_MUTUAL_FRIENDS_SHORT.format({
+                }, [i]), D = s.useMemo(() => p.default.Messages.USER_PROFILE_MUTUAL_FRIENDS_SHORT.format({
+                    count: L.length
+                }), [L]), M = s.useMemo(() => p.default.Messages.USER_PROFILE_MUTUAL_GUILDS_SHORT.format({
                     count: v.length
-                }), [v]), y = s.useMemo(() => p.default.Messages.USER_PROFILE_MUTUAL_GUILDS_SHORT.format({
-                    count: D.length
-                }), [D]), P = s.useRef(null), [U, b] = s.useState(!1), [G, w] = s.useState(!1), B = s.useCallback(() => {
-                    if (null != P.current) {
+                }), [v]), y = s.useRef(null), [P, U] = s.useState(!1), [b, G] = s.useState(!1), w = s.useCallback(() => {
+                    if (null != y.current) {
                         var e;
-                        w((null === (e = P.current) || void 0 === e ? void 0 : e.clientHeight) > 19), b(!0)
+                        G((null === (e = y.current) || void 0 === e ? void 0 : e.clientHeight) > 19), U(!0)
                     }
-                }, []), k = s.useCallback(e => () => {
+                }, []), B = s.useCallback(e => () => {
                     (0, m.openUserProfileModal)({
                         userId: t.id,
-                        sourceAnalyticsLocations: A,
-                        guildId: C,
-                        channelId: R,
-                        messageId: g,
-                        roleId: L,
+                        sourceAnalyticsLocations: h,
+                        guildId: A,
+                        channelId: C,
+                        messageId: R,
+                        roleId: g,
                         section: e,
                         analyticsLocation: o
                     }), null == r || r()
-                }, [o, A, r, t.id, C, R, g, L]);
+                }, [o, h, r, t.id, A, C, R, g]);
                 s.useEffect(() => {
-                    B()
-                }, [B, M]);
-                let V = v.length > 0,
-                    x = D.length > 0;
+                    w()
+                }, [w, D]);
+                let k = L.length > 0,
+                    V = v.length > 0;
                 return (0, a.jsxs)("div", {
-                    className: l()(O.compactItemContainer, !U && O.hideElement),
-                    ref: P,
-                    children: [V && (() => {
+                    className: l()(O.compactItemContainer, !P && O.hideElement),
+                    ref: y,
+                    children: [k && (() => {
                         let e = (0, a.jsxs)(d.Clickable, {
-                            onClick: k(N.UserProfileSections.MUTUAL_FRIENDS),
+                            onClick: B(N.UserProfileSections.MUTUAL_FRIENDS),
                             className: l()(O.avatarAndTextContainer, O.__invalid_friendsContainer),
                             children: [(0, a.jsx)("div", {
                                 className: O.__invalid_avatars,
                                 children: (0, a.jsx)(c.default, {
                                     maxUsers: u,
-                                    users: v,
+                                    users: L,
                                     size: d.AvatarSizes.SIZE_16,
                                     hideOverflowCount: !0,
                                     disableUsernameTooltip: !0
                                 })
                             }), (0, a.jsx)(d.Text, {
-                                className: l()(O.itemizedListText, f && O.underlineOnHover),
+                                className: l()(O.itemizedListText, I && O.underlineOnHover),
                                 variant: "text-sm/normal",
                                 color: "interactive-normal",
-                                children: M
+                                children: D
                             })]
                         });
-                        return h ? (0, a.jsx)(d.TooltipContainer, {
+                        return f ? (0, a.jsx)(d.TooltipContainer, {
                             text: p.default.Messages.USER_PROFILE_MUTUAL_FRIENDS_TOOLTIP,
                             children: e
                         }) : e
-                    })(), I && !V && (0, a.jsx)(d.Text, {
-                        variant: "text-xs/normal",
-                        children: p.default.Messages.USER_PROFILE_NO_MUTUAL_FRIENDS
-                    }), (V && x || I) && (0, a.jsx)("div", {
+                    })(), k && V && (0, a.jsx)("div", {
                         "aria-hidden": "true",
                         className: O.dotSpacer
-                    }), x && (() => {
+                    }), V && (() => {
                         let e = (0, a.jsxs)(d.Clickable, {
-                            onClick: k(N.UserProfileSections.MUTUAL_GUILDS),
+                            onClick: B(N.UserProfileSections.MUTUAL_GUILDS),
                             className: l()(O.avatarAndTextContainer, O.serverContainer),
-                            children: [!G && (0, a.jsx)("div", {
+                            children: [!b && (0, a.jsx)("div", {
                                 className: O.__invalid_avatars,
                                 children: (0, a.jsx)(E.default, {
                                     maxGuilds: u,
-                                    guilds: D,
+                                    guilds: v,
                                     size: T.default.Sizes.SMOL,
                                     hideOverflowCount: !0,
                                     disableGuildNameTooltip: !0
                                 })
                             }), (0, a.jsx)(d.Text, {
-                                className: l()(O.itemizedListText, f && O.underlineOnHover),
+                                className: l()(O.itemizedListText, I && O.underlineOnHover),
                                 variant: "text-sm/normal",
                                 color: "interactive-normal",
-                                children: y
+                                children: M
                             })]
                         });
-                        return h ? (0, a.jsx)(d.TooltipContainer, {
+                        return f ? (0, a.jsx)(d.TooltipContainer, {
                             text: p.default.Messages.USER_PROFILE_MUTUAL_GUILDS_TOOLTIP,
                             children: e
                         }) : e
-                    })(), I && !x && (0, a.jsx)(d.Text, {
-                        variant: "text-xs/normal",
-                        children: p.default.Messages.USER_PROFILE_NO_MUTUAL_SERVERS
-                    })]
+                    })()]
                 })
             });
             t.default = s.memo(function(e) {
@@ -214146,7 +214139,6 @@
                         mutualFriends: E,
                         mutualGuilds: c,
                         onClose: n,
-                        showNoMutuals: !0,
                         underlineTextOnHover: !0,
                         showTooltips: !1
                     })
@@ -248426,7 +248418,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "56dee89356380cd0bb095574da8e176060084d50"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5d9a6800cf229ed8b802b7040aaaccb52e8cbf7f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277085,7 +277077,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290371"
+                                build_number: "290377"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284412,7 +284404,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290371", "290371"), 10);
+                let a = parseInt((n = "290377", "290377"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -311877,4 +311869,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.1780619099f8e43c2423.js.map
+//# sourceMappingURL=35705.9fd98dca369617543338.js.map

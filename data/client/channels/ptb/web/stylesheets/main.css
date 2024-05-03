@@ -16187,7 +16187,7 @@ span.clanTag_f4aadc {
 }
 
 .dotSpacer_f8ba0a {
-    background-color: var(--background-accent);
+    background-color: var(--interactive-normal);
     width: 4px;
     height: 4px;
     border-radius: 50%
@@ -24604,7 +24604,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     height: 4px;
     width: 4px;
     border-radius: 50%;
-    background-color: var(--background-accent)
+    background-color: var(--interactive-normal)
 }
 
 .textarea__0461c {
@@ -136169,4 +136169,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ff2415f01951cd556958.css.map*/
+/*# sourceMappingURL=99387.1dd7d0097eb3f3dcfc5c.css.map*/
