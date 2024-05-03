@@ -5262,6 +5262,7 @@
                 introTitle: "introTitle__6a50e",
                 languageSelect: "languageSelect__46f09",
                 mainPanelContainer: "mainPanelContainer__54930",
+                maxWidthContainer: "maxWidthContainer__91587",
                 optionalTag: "optionalTag__36ca8",
                 playstyleOption: "playstyleOption__67567",
                 playstyleSelect: "playstyleSelect_b7d88b",
