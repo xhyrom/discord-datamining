@@ -18632,15 +18632,20 @@ span.clanTag_f4aadc {
 .cardImage__3249d {
     width: 60px;
     height: 60px;
-    outline: 2px solid var(--redesign-button-active-background);
+    outline: 1px solid var(--border-subtle);
     border-radius: var(--radius-xs);
     flex-shrink: 0
 }
 
-.cardImageIcon__1bd75 {
+.cardImageIconContainer__801a1 {
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    background-color: var(--background-primary)
+}
+
+.cardImageIcon__1bd75 {
+    color: var(--icon-secondary)
 }
 
 .cardDetailsContainer__399e5 {
@@ -51541,8 +51546,8 @@ div:has(>div>.modal__06f49) {
 }
 
 .name__4eb92 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -136222,4 +136227,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d3adc9f702099ed01d45.css.map*/
+/*# sourceMappingURL=99387.dd766ed28ad2a5637444.css.map*/
