@@ -2185,7 +2185,10 @@
   },
   "CHANGELOG_MESSAGES": {
     "url": "/changelogs/@me/messages",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_APPLICATIONS": {
     "url": "/guilds/:param/applications",
