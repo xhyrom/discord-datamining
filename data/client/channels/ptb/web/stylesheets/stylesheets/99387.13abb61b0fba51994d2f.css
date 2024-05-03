@@ -26592,6 +26592,11 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     height: 10px
 }
 
+.statusBubble__1a4c3:hover .contentOverflow__4ab1c {
+    overflow: visible;
+    -webkit-line-clamp: unset
+}
+
 .statusBubbleShape__093b0 {
     border-radius: 16px
 }
@@ -26637,18 +26642,12 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     word-break: break-word
 }
 
-.contentOverflow__4ab1c:hover {
-    overflow: visible;
-    -webkit-line-clamp: unset
-}
-
 .statusText__32d26 {
     display: inline;
     color: var(--text-normal)
 }
 
 .statusEmojiInline__099a8 {
-    top: 50%;
     display: inline;
     height: 16px;
     width: 16px;
@@ -136151,4 +136150,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c240f0e5565dd6341395.css.map*/
+/*# sourceMappingURL=99387.13abb61b0fba51994d2f.css.map*/
