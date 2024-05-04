@@ -131,7 +131,7 @@ export const getPaginator = async (
     const body = await res.json();
     const retryAfter = body.retry_after;
 
-    console.log(`[applications] 429: Waiting ${retryAfter}ms`);
+    console.log(`[paginator] 429: Waiting ${retryAfter}ms`);
 
     await sleep(retryAfter + 1000);
     return await getPaginator(url, dataField, page);
