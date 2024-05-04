@@ -4043,6 +4043,7 @@
                 iconTooltip: "iconTooltip_a10c3d",
                 iconTooltipContainer: "iconTooltipContainer_b8fcad",
                 icons: "icons__10dd7",
+                isOverlay: "isOverlay_ff42d2",
                 list: "list__54b1e",
                 listCollapse: "listCollapse_f47b82",
                 listDefault: "listDefault__4e3fa",

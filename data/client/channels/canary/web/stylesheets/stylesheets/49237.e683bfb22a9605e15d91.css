@@ -22341,6 +22341,10 @@ span.clanTag_c8f97c {
     background: var(--bg-mod-subtle)
 }
 
+span.clanTag_c8f97c.isOverlay_ff42d2 {
+    background: var(--background-tertiary)
+}
+
 .listDefault__4e3fa .clickable_a2c5ad:hover .clanTag_c8f97c {
     background: var(--background-accent)
 }
@@ -28231,4 +28235,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.0e4c11e28366e5cd4e01.css.map*/
+/*# sourceMappingURL=49237.e683bfb22a9605e15d91.css.map*/

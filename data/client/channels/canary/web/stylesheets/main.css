@@ -38820,24 +38820,60 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     align-items: center
 }
 
-.chipletContainer__2aa46 {
+.container__43fce .chipletContainer__2aa46 {
     overflow: hidden;
     display: inline-block
 }
 
-.chipletParent_db23c1 {
+.container__43fce .chipletParent_db23c1 {
     position: relative;
     overflow: hidden;
     display: inline
 }
 
-.usernameContainer__60276 {
+.container__43fce .usernameContainer__60276 {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
     max-width: 100%;
     flex: 1;
     margin-top: 2px
+}
+
+.container__43fce.isOverlayContainer__59bba {
+    height: 20px;
+    background: var(--background-primary);
+    flex: none;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-content: center
+}
+
+.container__43fce.isOverlayContainer__59bba .usernameContainer__60276 {
+    margin-top: 0
+}
+
+.container__43fce.isOverlayContainer__59bba .chipletParent_db23c1 {
+    display: flex;
+    align-content: center;
+    align-items: center
+}
+
+.container__43fce.isOverlayContainer__59bba .chipletContainer__2aa46 {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1.5px
+}
+
+.container__43fce.isOverlayContainer__59bba .chipletContainer__2aa46.noPadding__174a8 {
+    padding: 0
+}
+
+.isOverlayTag__33416 {
+    margin: 0
 }
 
 .body_f9b7dd {
@@ -136233,4 +136269,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.a2c29cd5238433e269c5.css.map*/
+/*# sourceMappingURL=99387.6632de7be9cb492fac0f.css.map*/
