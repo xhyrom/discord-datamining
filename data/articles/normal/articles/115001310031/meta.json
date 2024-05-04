@@ -1,0 +1,29 @@
+{
+  "id": 115001310031,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/115001310031.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/115001310031-Voice-Connection-Errors",
+  "author_id": 364802902112,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360007770592,
+  "created_at": "2017-08-28T21:08:04Z",
+  "name": "Voice Connection Errors",
+  "title": "Voice Connection Errors",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-06-21T18:11:19Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "voice",
+    "ice checking",
+    "no route",
+    "rtc connecting",
+    "answer-bot"
+  ]
+}

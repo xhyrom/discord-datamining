@@ -1,4 +1,4 @@
-<p>Starting from <strong>December 16th, 2023 (3PM PST)</strong> to <strong>June 17th, 2024 (11:59PM PST)</strong>, Opera GX Members can claim 1 month of Discord Nitro on us. Learn below about how you can claim<a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer"> Discord Nitro</a>.</p>
+<p>Starting from <strong>December 16th, 2023 (3PM PST)</strong> to <strong>May 7th, 2024 (11:59PM PST)</strong>, Opera GX Members can claim 1 month of Discord Nitro on us. Learn below about how you can claim<a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer"> Discord Nitro</a>.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19882336420247" width="484" height="540"></p>
 <p><strong>Promotion Summary</strong></p>
 <p><strong>Offer Details:</strong> 1 month of Discord Nitro on us</p>
@@ -7,7 +7,7 @@
 <p>We will not be able to refund any leftover membership time from those, and the user will be forfeiting the remainder of the existing membership when activating the 1 month Nitro trial.</p>
 <p>Users who have already claimed a gift from this promotion are not eligible to claim further gifts from this promotion.</p>
 <p>This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this<a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer"> Help Center article</a>.</p>
-<p><strong>Requirements:</strong> Claim through the Opera GX browser by <strong>June 17th, 2024 (11:59PM PST)</strong>, and redeem in your Discord account by <strong>July 16th, 2024 (11:59PM PST)</strong>.</p>
+<p><strong>Requirements:</strong> Claim through the Opera GX browser by <strong>May 7, 2024 (11:59PM PST)</strong>, and redeem in your Discord account by <strong>June 6, 2024 (11:59PM PST)</strong>.</p>
 <p><strong>Membership:</strong> After the 1 month free trial period, your Nitro membership will convert to a monthly recurring membership, and Discord will bill your payment method for per month until you cancel it. You can cancel at any time in your Discord <strong>User Settings</strong>. For more info, check out our support article on <a href="https://support.discord.com/hc/en-us/articles/19580873036695" target="_blank" rel="noopener noreferrer">How to Cancel Nitro memberships</a>.</p>
 <p><span class="wysiwyg-font-size-large"><strong>What does this article cover?</strong></span></p>
 <ul>
@@ -48,7 +48,7 @@
 <p>You should see the Nitro Promo offer in your Opera GX browser through the startpage speed dial or onboarding screen.</p>
 <p>To claim this Nitro gift, open an Opera GX browser window. Make sure your Opera GX browser is updated to the latest version!</p>
 <h1 id="h_01HHQG82JHCKJWEKKTE0TTZZMR">How do I redeem the Nitro Trial on my Discord Account?</h1>
-<p>Once you have claimed the promo, you'll now need to officially redeem this promo on your Discord account. You must redeem this Nitro trial by <strong>July 16th, 2024 (11:59PM PST).</strong></p>
+<p>Once you have claimed the promo, you'll now need to officially redeem this promo on your Discord account. You must redeem this Nitro trial by <strong>May 7, 2024 (11:59PM PST).</strong></p>
 <h2 id="h_01HHQG82JH2TV1XSHCAQW644T4">Eligibility for Redeeming the Nitro Trial</h2>
 <h3 id="h_01HHQG82JH3AF15YMASD5TVJNC">
     <strong>This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this</strong><a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer"> Help Center article.</a>
@@ -124,11 +124,11 @@
 </ul>
 <h2 id="h_01HHQG82JHSYTZNJC35WWCR2QH">Promotion Details</h2>
 <p><strong>Q: How long does this promotion run for?</strong></p>
-<p><strong>A:</strong> Opera GX users can claim Discord Nitro promo between <strong>December 16th, 2023 (3PM PST) to June 17th, 2024 (11:59PM PST).</strong></p>
-<p>After <strong>June 17th, 2024 (11:59PM PST)</strong>, Opera GX users will no longer be able to claim a trial promo.</p>
+<p><strong>A:</strong> Opera GX users can claim Discord Nitro promo between <strong>December 16th, 2023 (3PM PST) to May 7, 2024 (11:59PM PST).</strong></p>
+<p>After <strong>May 7th, 2024 (11:59PM PST)</strong>, Opera GX users will no longer be able to claim a trial promo.</p>
 <p><strong>Q: How long does the Discord Nitro promotion last for?</strong></p>
-<p><strong>A:</strong> You must redeem the Nitro promotion by <strong>July 16th, 2024 (11:59PM PST)</strong>.</p>
-<p>If a code has not been redeemed to the Discord account by <strong>June 17th, 2024 (11:59PM PST)</strong>, it will expire and you will no longer be able to have 1 month of Discord Nitro.</p>
+<p><strong>A:</strong> You must redeem the Nitro promotion by <strong>June 6, 2024 (11:59PM PST)</strong>.</p>
+<p>If a code has not been redeemed to the Discord account by <strong>May 7th, 2024 (11:59PM PST)</strong>, it will expire and you will no longer be able to have 1 month of Discord Nitro.</p>
 <h2 id="h_01HHQG82JHHZZJXYAABG2HKXGA">Eligibility for the Promotion</h2>
 <p><strong>Q: Who can redeem this Nitro trial to their Discord account?</strong></p>
 <p><strong>A: </strong>Users who have had an active Nitro membership or Nitro trial in the last 12 months are not eligible to redeem this Nitro promotion.</p>

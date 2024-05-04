@@ -1,0 +1,31 @@
+{
+  "id": 360023968311,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/360023968311.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/360023968311-Server-Discovery",
+  "author_id": 364802902112,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 201110577,
+  "created_at": "2019-02-17T02:31:44Z",
+  "name": "Server Discovery",
+  "title": "Server Discovery",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-06-08T01:08:45Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "servers",
+    "community",
+    "join server",
+    "answer-bot",
+    "communities",
+    "discover",
+    "public"
+  ]
+}

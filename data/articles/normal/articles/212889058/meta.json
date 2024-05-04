@@ -1,0 +1,30 @@
+{
+  "id": 212889058,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/212889058.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/212889058-Discord-s-Official-API",
+  "author_id": 1199351638,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 4,
+  "section_id": 360007770572,
+  "created_at": "2015-11-03T22:55:33Z",
+  "name": "Discord's Official API",
+  "title": "Discord's Official API",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2020-06-18T17:05:41Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "bot",
+    "bots",
+    "dev",
+    "devs",
+    "calls",
+    "answer-bot"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": 214836687,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/214836687.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/214836687-Role-Management-101",
+  "author_id": 1199351638,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 202857957,
+  "created_at": "2015-11-24T21:38:20Z",
+  "name": "Role Management 101",
+  "title": "Role Management 101",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-05-31T16:18:06Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "roles",
+    "color",
+    "role color",
+    "permissions",
+    "answer-bot"
+  ]
+}

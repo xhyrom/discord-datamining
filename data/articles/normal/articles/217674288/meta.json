@@ -1,0 +1,32 @@
+{
+  "id": 217674288,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/217674288.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/217674288-Friends-List-101",
+  "author_id": 1199351638,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 6,
+  "section_id": 201131298,
+  "created_at": "2016-03-16T22:20:22Z",
+  "name": "Friends List 101",
+  "title": "Friends List 101",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-06-05T18:11:35Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "invite",
+    "adding friends",
+    "ban",
+    "chat",
+    "add",
+    "adding",
+    "remove",
+    "answer-bot"
+  ]
+}

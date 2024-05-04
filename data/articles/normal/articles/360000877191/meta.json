@@ -1,0 +1,27 @@
+{
+  "id": 360000877191,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/360000877191.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/360000877191-Spellcheck-in-Discord",
+  "author_id": 2921470028,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 201110577,
+  "created_at": "2018-02-12T16:44:19Z",
+  "name": "Spellcheck in Discord",
+  "title": "Spellcheck in Discord",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-08-04T21:14:59Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "spellchecker",
+    "spellcheck"
+  ]
+}

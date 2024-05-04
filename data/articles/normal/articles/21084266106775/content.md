@@ -1,11 +1,11 @@
 <p><strong>What this article covers:</strong></p>
 <ul>
-    <li><a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HNNXQ6T226GDK5830TH563D9">What is the new notification feature?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/21084266106775#h_01HNNXQ6T226GDK5830TH563D9">What is the new notification feature?</a></li>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HNNXQ6T2NDX2BVBJT724Y9TC">How to setup the new notification feature</a>
+        <a href="https://support.discord.com/hc/en-us/articles/21084266106775#h_01HNNXQ6T2NDX2BVBJT724Y9TC">How to setup the new notification feature</a>
         <ul>
             <li>
-                <a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HNNXQ6T2YFE1F7MYV75QA4HV">Notification Settings</a>
+                <a href="https://support.discord.com/hc/en-us/articles/21084266106775#h_01HNNXQ6T2YFE1F7MYV75QA4HV">Notification Settings</a>
                 <ul>
                     <li>Desktop</li>
                     <li>Mobile</li>
@@ -13,7 +13,7 @@
             </li>
         </ul>
     </li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/undefined#h_01HNNXQ6T2EA493Y2Y4HFXZPNP">How do I turn this feature off?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/21084266106775#h_01HNNXQ6T2EA493Y2Y4HFXZPNP">How do I turn this feature off?</a></li>
 </ul>
 <h1 id="h_01HNNXQ6T226GDK5830TH563D9">What is the new notification feature?</h1>
 <h3 id="h_01HNNXQ6T2RKJPP1TYTTW8RYRW"><span style="color: #434343;">This is currently an experiment and not available to everyone.</span></h3>
