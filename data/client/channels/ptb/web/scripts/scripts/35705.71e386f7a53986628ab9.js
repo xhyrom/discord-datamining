@@ -37022,7 +37022,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290651", ", Version Hash: ").concat("b908b52d9bd9ec31e20d73cc61b3119f8aa3cd32")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290661", ", Version Hash: ").concat("216a0e60b09180d3816eb3b544a2d0c9d2973928")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -53777,6 +53777,8 @@
                 COLLECTIBLES_LOFI_VIBES_COACHTIP_DESCRIPTION: 'For when you want that "study & chill" look',
                 COLLECTIBLES_GALAXY_COACHTIP_TITLE: "New Galaxy styles",
                 COLLECTIBLES_GALAXY_COACHTIP_DESCRIPTION: "New arrivals just landed, and we don't mean aliens.",
+                COLLECTIBLES_FEELIN_RETRO_PIRATES_COACHTIP_TITLE: "Feelin' Retro & Pirates",
+                COLLECTIBLES_FEELIN_RETRO_PIRATES_COACHTIP_DESCRIPTION: "Check out TWO new themes in the Shop for my birthday!",
                 COLLECTIBLES_NEW_BADGE: "NEW",
                 INVENTORY_EMOJI_DETAILS_V2: "See emoji details",
                 PRIVATE_CHANNEL_INTEGRATION_ADDED: "$[!!{username}!!](usernameHook) added the $[!!{otherUsername}!!](otherUsernameHook) app. See our [help center]({helpCenterLink}) for more info.",
@@ -87471,8 +87473,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290651", "290651"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290651")), t = 0), t
+                let t = parseInt((e = "290661", "290661"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290661")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115231,8 +115233,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290651",
-                    versionHash: "b908b52d9bd9ec31e20d73cc61b3119f8aa3cd32"
+                    buildNumber: "290661",
+                    versionHash: "216a0e60b09180d3816eb3b544a2d0c9d2973928"
                 }
             }
             n.r(t), n.d(t, {
@@ -170576,8 +170578,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714781898344",
-                                    build_number: "290651"
+                                    built_at: "1714793142559",
+                                    build_number: "290661"
                                 }
                             },
                             retries: 1
@@ -248633,7 +248635,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b908b52d9bd9ec31e20d73cc61b3119f8aa3cd32"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "216a0e60b09180d3816eb3b544a2d0c9d2973928"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277298,7 +277300,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290651"
+                                build_number: "290661"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284625,7 +284627,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290651", "290651"), 10);
+                let a = parseInt((n = "290661", "290661"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -312090,4 +312092,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.d29ace2f862604fb4f31.js.map
+//# sourceMappingURL=35705.71e386f7a53986628ab9.js.map
