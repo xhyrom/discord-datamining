@@ -64,13 +64,11 @@ export class Github implements Module {
         join(
           this.baseDir,
           "repositories",
-          // @ts-nocheck
           repository.id.toString(),
           "meta.json"
         ),
         JSON.stringify(
           omitEndsWith(
-            // @ts-nocheck
             omit(
               repository,
               "open_issues",
@@ -103,7 +101,6 @@ export class Github implements Module {
 
   async repositories() {
     try {
-      // @ts-nocheck
       const repositories = await octokit.paginate(
         octokit.rest.repos.listForOrg,
         {
