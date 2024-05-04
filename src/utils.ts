@@ -30,6 +30,7 @@ import jsBeautify from "js-beautify";
 import simpleGit from "simple-git";
 import { REST } from "@discordjs/rest";
 import { Octokit } from "@octokit/rest";
+import { setTimeout as sleep } from "node:timers/promises";
 import { Routes, type APIEmbed, ButtonStyle } from "discord-api-types/v10";
 import { ActionRowBuilder, ButtonBuilder } from "@discordjs/builders";
 
@@ -125,6 +126,17 @@ export const getPaginator = async (
   if (!partial) partial = [];
 
   const res = await fetch(`${url}?page=${page}&per_page=100`);
+  // check for ratelimit
+  if (res.status === 429) {
+    const body = await res.json();
+    const retryAfter = body.retry_after;
+
+    console.log(`[applications] 429: Waiting ${retryAfter}ms`);
+
+    await sleep(retryAfter + 1000);
+    return await getPaginator(url, dataField, page);
+  }
+
   if (!res.ok) return partial;
 
   const json = await res.json();

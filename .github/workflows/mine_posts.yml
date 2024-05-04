@@ -1,7 +1,7 @@
-name: Mine
+name: Mine Posts
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "* */1 * * *"
   workflow_dispatch:
 
 permissions:
@@ -80,4 +80,4 @@ jobs:
           DISCORD_WEBHOOK_MISCELLANEOUS: ${{ secrets.DISCORD_WEBHOOK_MISCELLANEOUS }}
           DISCORDINSIDERS_DISCORD_WEBHOOK_MISCELLANEOUS: ${{ secrets.DISCORDINSIDERS_DISCORD_WEBHOOK_MISCELLANEOUS }} # miscellaneous but for discord insiders
 
-          SCRAPE_CLIENT: true
+          SCRAPE_POSTS: true

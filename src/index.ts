@@ -21,7 +21,7 @@ import "dotenv/config";
 import { Github } from "./modules/Github.ts";
 import { Domains } from "./modules/Domains.ts";
 import { Client } from "./modules/client/index.ts";
-//import { Posts } from "./modules/posts/index.ts";
+import { Posts } from "./modules/posts/index.ts";
 import { Applications } from "./modules/client/applications/index.ts";
 import { Routes } from "./modules/client/routes/index.ts";
 
@@ -42,7 +42,7 @@ if (process.env.SCRAPE_DOMAINS === "true")
 // Scrape all github data - organisation and repositories
 if (process.env.SCRAPE_GITHUB === "true") await new Github().run();
 
-//if (process.env.SCRAPE_POSTS === "true") await new Posts().run();
+if (process.env.SCRAPE_POSTS === "true") await new Posts().run();
 
 if (process.env.SCRAPE_CLIENT_ROUTES === "true") await new Routes().run();
 
