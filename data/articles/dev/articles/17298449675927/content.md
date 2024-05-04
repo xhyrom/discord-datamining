@@ -62,7 +62,7 @@
 <h3 id="h_01HW8RFERKJC212C3JY3MZXDN2">Unpublish</h3>
 <p>This action makes a SKU Unavailable. Note: it won’t cancel all subscribers right away, but when they reach their renewel period, it will not renew them. Does not delete a SKU.</p>
 <h3 id="h_01HW8RFERKKYDVZGD3JWRHGV3S">Delete</h3>
-<p>Deletes a SKU in the UI, but keep in mind this doesn’t fully delete. Deleted SKUs would still be listed from the endpoint. When deleting SKUs, keep in mind that this will unsubscribe everyone from it. If you are having any trouble removing SKUs,<span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;"><!-- notionvc: fdb8e1ef-4f2d-437f-bd2e-c0d76940e52c --> please <a href="https://dis.gd/developer-support/premium-apps" target="_blank" rel="noopener noreferrer">reach out to Developer Support</a>.</span></p>
+<p>Deletes a SKU in the UI, but keep in mind this doesn’t fully delete. Deleted SKUs would still be listed from the endpoint. When deleting SKUs, keep in mind that this will unsubscribe everyone from it. If you are having any trouble removing SKUs, please <a href="https://dis.gd/developer-support/premium-apps">reach out to Developer Support</a>.</p>
 <h3 id="h_01HW884JH9DEREEPTV4E436DZT">Editing SKUs</h3>
 <p>If you wish to change the SKU that is published, you can do so at any time by first unpublishing the currently published one. Keep in mind that when you unpublish a SKU, it is no longer available for sale, but users who have already subscribed will remain subscribed and you must continue to make the premium offering available to them until the end of their subscription.</p>
 <h3 id="h_01HW884JH9SA7GR08SWGGB3ZJT">Integrating SKUs</h3>
