@@ -4,5 +4,5 @@
     // Tell ts-node CLI to install the --loader automatically, explained below
     "esm": true
   },
-  "exclude": ["data"]
+  "exclude": ["data/"]
 }

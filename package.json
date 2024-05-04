@@ -7,7 +7,7 @@
   "author": "xHyroM",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node src/index.ts --transpileOnly"
+    "start": "ts-node src/index.ts"
   },
   "devDependencies": {
     "@types/diff": "^5.0.3",
