@@ -26189,30 +26189,32 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     display: flex
 }
 
-.noteClickable__153b6 {
-    display: flex;
-    align-items: center;
-    cursor: pointer
+.button__7b26d {
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+    transition: opacity var(--custom-button-transition-duration)ease
 }
 
-.noteText__9421a {
-    display: flex;
-    gap: 4px;
-    border-radius: 4px
+.button__7b26d.visible__95288,
+.button__7b26d:focus-visible {
+    opacity: 1
 }
 
-.noteText__9421a .noteTextArea__9e075 {
-    background-color: inherit;
-    color: var(--interactive-active);
-    border: none;
-    box-sizing: border-box;
-    padding: 0;
-    resize: none;
-    width: 100%;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 18px
+.color_df1d13 {
+    color: var(--interactive-normal)
+}
+
+.color_df1d13:hover {
+    color: var(--interactive-hover)
+}
+
+.color_df1d13:active {
+    color: var(--interactive-active)
+}
+
+.tooltip__74218 {
+    max-width: 224px
 }
 
 .container_df7ce7 {
@@ -26492,16 +26494,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     display: flex;
     flex-direction: column;
     gap: 12px
-}
-
-.noteIcon_d4555f {
-    opacity: 0;
-    transition: opacity var(--custom-button-transition-duration)ease
-}
-
-.noteIcon_d4555f.visible__24dad,
-.noteIcon_d4555f:focus-visible {
-    opacity: 1
 }
 
 .button_c03db1 {
@@ -41783,8 +41775,8 @@ div.profileThemedContainer__6e645 {
     display: flex;
     justify-content: center;
     font-family: var(--font-display);
-    font-size: 12px;
-    line-height: 16px;
+    font-size: .75rem;
+    line-height: 1rem;
     text-transform: uppercase
 }
 
@@ -48224,12 +48216,12 @@ div:has(>div>.modal__06f49) {
 .streamerModeEnabledBtn_b696dd {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 1.8125rem;
+    line-height: 29px;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -136333,4 +136325,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.622273062deece433315.css.map*/
+/*# sourceMappingURL=99387.52e16a1b523614dd0c16.css.map*/
