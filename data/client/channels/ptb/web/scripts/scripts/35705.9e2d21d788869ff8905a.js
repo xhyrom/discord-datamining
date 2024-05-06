@@ -37030,7 +37030,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290868", ", Version Hash: ").concat("a81324695ace3e2f84e0bd6e0c20dbe8cc395add")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290869", ", Version Hash: ").concat("82d34a5b1c6168fdb051f5a90b3d28b6e84829f4")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -44903,6 +44903,7 @@
                 PREMIUM_TIER_SERVER_BOOST_WITH_PERCENTAGE_ITEM: "{numBoosts, plural, =1 {# Server Boost} other {# Server Boosts}} + !!{percentageOff}!! off others",
                 PREMIUM_TIER_CUSTOM_PROFILE_ITEM: "Custom profiles and more!",
                 PREMIUM_TIER_0_MOBILE_PREMIUM_BADGE: "Starting at {monthlyPrice}",
+                PREMIUM_TIER_CLIENT_THEMES_ITEM: "Color app themes",
                 PREMIUM_TIER_2_TITLE: "Get an enhanced Discord experience for one low monthly cost.",
                 PREMIUM_TIER_2_SUBTITLE: "Customize your profile with a unique tag, access animated emoji, enjoy bigger file uploads, boost your favorite server, and more.",
                 PREMIUM_TIER_2_TRIAL_CTA_SUBTITLE: "Claim by signing up for Nitro and start your emoji collection today.",
@@ -46396,6 +46397,16 @@
                 PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_BOOSTS: "{numBoosts} Boosts + {percentageOff} off extra Boosts",
                 PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_PROFILE_THEMES: "Animated avatar, banner, and profile theme",
                 PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_SERVER_PROFILE: "Custom server profiles",
+                MARKETING_PAGE_COMPARISON_TABLE_PROFILE_THEMES_V2: "Custom profiles",
+                MARKETING_PAGE_COMPARISON_TABLE_CUSTOM_SOUNDS_V2: "Soundboard sounds anywhere",
+                MARKETING_PAGE_COMPARISON_TABLE_SERVER_PROFILES_V2: "Per-server profiles",
+                MARKETING_PAGE_COMPARISON_TABLE_ENTRANCE_SOUNDS_V2: "Entrance sounds",
+                MARKETING_PAGE_COMPARISON_TABLE_CUSTOM_EMOJI_V2: "Animated and custom emojis anywhere",
+                MARKETING_PAGE_COMPARISON_TABLE_CLIENT_THEME_V2: "20+ app theme colors",
+                MARKETING_PAGE_COMPARISON_TABLE_EARLY_ACCESS: "Early Access",
+                MARKETING_PAGE_COMPARISON_TABLE_SHOW_OFF_YOUR_STYLE_SECTION_V2: "Show off your style",
+                MARKETING_PAGE_COMPARISON_TABLE_YOUR_SPACE_SECTION_V2: "Make this place, your space",
+                MARKETING_PAGE_COMPARISON_TABLE_NO_LIMIT_ALL_FUN_SECTION_V2: "No limits, all fun",
                 PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_SHOP_DISCOUNTS_GENERIC: "Shop member pricing, and exclusive items",
                 PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_CLIENT_THEME: "Colors for your Discord theme",
                 PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_BADGE: "Nitro badge on your profile",
@@ -50850,6 +50861,7 @@
                 PREMIUM_SUBSCRIPTION_ONE_TIME_PAYMENT_PAST_DUE_SUBSCRIPTION_TEXT_NO_ACTION: "Your Nitro subscription expired {daysPastDue, plural, =0 {today} =1 {# day ago} other {# days ago}}.",
                 PREMIUM_SUBSCRIPTION_PAST_DUE_RENEW_NOW_BUTTON_TEXT: "Renew Now",
                 PREMIUM_MARKETING_HERO_HEADER_TITLE: "Unleash More Fun with Nitro",
+                PREMIUM_MARKETING_HERO_HEADER_TITLE_V2: "Explore a World of Perks with Nitro",
                 PREMIUM_MARKETING_HERO_HEADER_DESCRIPTION: "Plans start at only {cheapestMonthlyPrice}/month. Cancel anytime",
                 PREMIUM_MARKETING_TIER_2_CTA_COPY: "Get access to all the Nitro perks, including HD video, 2 Server Boosts, and more.",
                 PREMIUM_MARKETING_TIER_0_CTA_COPY_V2: "Get access to custom emoji & stickers, {uploadSize} uploads, and more.",
@@ -87543,8 +87555,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290868", "290868"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290868")), t = 0), t
+                let t = parseInt((e = "290869", "290869"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290869")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115450,8 +115462,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290868",
-                    versionHash: "a81324695ace3e2f84e0bd6e0c20dbe8cc395add"
+                    buildNumber: "290869",
+                    versionHash: "82d34a5b1c6168fdb051f5a90b3d28b6e84829f4"
                 }
             }
             n.r(t), n.d(t, {
@@ -170799,8 +170811,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715031307430",
-                                    build_number: "290868"
+                                    built_at: "1715031452198",
+                                    build_number: "290869"
                                 }
                             },
                             retries: 1
@@ -248852,7 +248864,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a81324695ace3e2f84e0bd6e0c20dbe8cc395add"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "82d34a5b1c6168fdb051f5a90b3d28b6e84829f4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277517,7 +277529,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290868"
+                                build_number: "290869"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284844,7 +284856,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290868", "290868"), 10);
+                let a = parseInt((n = "290869", "290869"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -312309,4 +312321,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.9e2a79bef1e37a9a164a.js.map
+//# sourceMappingURL=35705.9e2d21d788869ff8905a.js.map
