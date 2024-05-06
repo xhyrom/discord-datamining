@@ -117861,8 +117861,8 @@ html .invoiceCancelRow__6ff3e {
 
 :root {
     --custom-backdrop-z-index: 1000;
-    --custom-card-z-index: 1001;
-    --custom-confetti-canvas-z-index: 1002;
+    --custom-confetti-canvas-z-index: 1001;
+    --custom-card-z-index: 1002;
     --custom-close-button-z-index: 1004;
     --custom-lightning-checkout-z-index: 1003;
     --custom-shaker-z-index: 1005
@@ -118152,14 +118152,13 @@ html .invoiceCancelRow__6ff3e {
 }
 
 .confettiCanvas__9283c {
-    z-index: 1002;
+    z-index: 1001;
     z-index: var(--custom-confetti-canvas-z-index);
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
     pointer-events: none
 }
 
@@ -118171,7 +118170,7 @@ html .invoiceCancelRow__6ff3e {
 
 .lightningCheckout__9ef9b .shopCard__9e3fe {
     cursor: default;
-    z-index: 1001;
+    z-index: 1002;
     z-index: var(--custom-card-z-index)
 }
 
@@ -136334,4 +136333,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.dafac4cdf162c007bab5.css.map*/
+/*# sourceMappingURL=99387.d70cb0d1bb9d2706703d.css.map*/
