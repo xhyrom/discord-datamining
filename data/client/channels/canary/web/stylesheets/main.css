@@ -41775,8 +41775,8 @@ div.profileThemedContainer__6e645 {
     display: flex;
     justify-content: center;
     font-family: var(--font-display);
-    font-size: .75rem;
-    line-height: 1rem;
+    font-size: 12px;
+    line-height: 16px;
     text-transform: uppercase
 }
 
@@ -118449,6 +118449,20 @@ html .invoiceCancelRow__6ff3e {
     transition: opacity.5s
 }
 
+.fadeInAvatarImg_e7e289 {
+    animation: fadeIn__0cac8 1.5s
+}
+
+@keyframes fadeIn__0cac8 {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
 .cardText_a31179 {
     height: 124px;
     width: calc(100% + 4px);
@@ -136325,4 +136339,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.52e16a1b523614dd0c16.css.map*/
+/*# sourceMappingURL=99387.77c2a6c53a19f6fb7338.css.map*/
