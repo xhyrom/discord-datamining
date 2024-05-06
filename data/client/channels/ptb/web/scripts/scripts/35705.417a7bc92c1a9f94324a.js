@@ -37030,7 +37030,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290848", ", Version Hash: ").concat("3ee7e3d85c42c5f77064e5234a71543795622b9f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290859", ", Version Hash: ").concat("7c5986efbebd61ce9048ee32c8cd8af9337e5377")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -69512,7 +69512,8 @@
                                 color: G,
                                 look: w,
                                 isEmbedded: V,
-                                onAction: k
+                                onAction: k,
+                                channelId: U
                             }, "join-activity-button"), (0, i.jsx)(g.default, {
                                 activity: t,
                                 user: n,
@@ -69707,31 +69708,32 @@
                     hover: H,
                     user: Y,
                     onAction: j,
-                    isEmbedded: W = !1
+                    isEmbedded: W = !1,
+                    channelId: K
                 } = e, {
-                    analyticsLocations: K
-                } = (0, _.default)(), [z, Z] = r.useState(!1), X = (0, a.useStateFromStores)([p.default], () => p.default.getCurrentUser()), Q = null == t ? void 0 : t.application_id, q = (0, a.useStateFromStores)([v.default], () => W ? v.default.getEmbeddedActivityForUserId(Y.id, Q) : null, [Y.id, W, Q]), J = (0, y.default)({
-                    channelId: null == q ? void 0 : q.channelId,
+                    analyticsLocations: z
+                } = (0, _.default)(), [Z, X] = r.useState(!1), Q = (0, a.useStateFromStores)([p.default], () => p.default.getCurrentUser()), q = null == t ? void 0 : t.application_id, J = (0, a.useStateFromStores)([v.default], () => W ? null != K && null != q ? v.default.getEmbeddedActivitiesForChannel(K).find(e => e.applicationId === q) : v.default.getEmbeddedActivityForUserId(Y.id, q) : null, [Y.id, W, q, K]), $ = (0, y.default)({
+                    channelId: null == J ? void 0 : J.channelId,
                     userId: Y.id,
                     activity: t
-                }), $ = (0, a.useStateFromStores)([h.default, E.default, C.default, T.default], () => W || (null == t ? void 0 : t.application_id) != null && (0, L.isLaunchable)({
+                }), ee = (0, a.useStateFromStores)([h.default, E.default, C.default, T.default], () => W || (null == t ? void 0 : t.application_id) != null && (0, L.isLaunchable)({
                     LibraryApplicationStore: h.default,
                     LaunchableGameStore: E.default,
                     DispatchApplicationStore: C.default,
                     ConnectedAppsStore: T.default,
                     applicationId: t.application_id
-                })), ee = (0, a.useStateFromStores)([v.default], () => Array.from(v.default.getSelfEmbeddedActivities().values()).some(e => {
+                })), et = (0, a.useStateFromStores)([v.default], () => Array.from(v.default.getSelfEmbeddedActivities().values()).some(e => {
                     let {
                         applicationId: n,
                         channelId: i
                     } = e;
-                    return n === (null == t ? void 0 : t.application_id) && i === J
-                })), et = (0, a.useStateFromStores)([R.default], () => null != t && null != t.application_id && R.default.getState(t.application_id, B.ActivityActionTypes.JOIN) === B.ActivityActionStates.LOADING), [en] = (0, c.default)((null == t ? void 0 : t.application_id) != null ? [null == t ? void 0 : t.application_id] : []), ei = (0, a.useStateFromStores)([I.default, S.default, f.default, m.default, N.default, O.default, A.default], () => (0, M.default)({
+                    return n === (null == t ? void 0 : t.application_id) && i === $
+                })), en = (0, a.useStateFromStores)([R.default], () => null != t && null != t.application_id && R.default.getState(t.application_id, B.ActivityActionTypes.JOIN) === B.ActivityActionStates.LOADING), [ei] = (0, c.default)((null == t ? void 0 : t.application_id) != null ? [null == t ? void 0 : t.application_id] : []), er = (0, a.useStateFromStores)([I.default, S.default, f.default, m.default, N.default, O.default, A.default], () => (0, M.default)({
                     user: Y,
                     activity: t,
-                    application: en,
-                    channelId: J,
-                    currentUser: X,
+                    application: ei,
+                    channelId: $,
+                    currentUser: Q,
                     isEmbedded: W,
                     ChannelStore: I.default,
                     GuildStore: S.default,
@@ -69740,14 +69742,15 @@
                     SelectedChannelStore: N.default,
                     VoiceStateStore: O.default,
                     PermissionStore: A.default
-                })), er = (0, a.useStateFromStores)([v.default], () => Array.from(v.default.getSelfEmbeddedActivities().values()).some(e => e.applicationId === (null == q ? void 0 : q.applicationId) && e.channelId === (null == q ? void 0 : q.channelId))), ea = (0, d.useAnalyticsContext)(), es = !g.isPlatformEmbedded, eo = (0, P.default)(t, B.ActivityFlags.JOIN) || W;
-                if (null == t || !eo || null == t.application_id) return null;
-                let el = !V && (es || $) && !z && !ee && (!W || ei),
-                    eu = null;
-                V ? eu = k.default.Messages.USER_ACTIVITY_CANNOT_JOIN_SELF : !es && !$ && (eu = k.default.Messages.USER_ACTIVITY_NOT_DETECTED.format({
+                })), ea = (0, a.useStateFromStores)([v.default], () => Array.from(v.default.getSelfEmbeddedActivities().values()).some(e => e.applicationId === (null == J ? void 0 : J.applicationId) && e.channelId === (null == J ? void 0 : J.channelId))), es = (0, d.useAnalyticsContext)(), eo = !g.isPlatformEmbedded, el = (0, P.default)(t, B.ActivityFlags.JOIN) || W;
+                if (null == t || !el || null == t.application_id) return null;
+                let eu = !V || W && !ea,
+                    ed = eu && (eo || ee) && !Z && !et && (!W || er),
+                    e_ = null;
+                eu ? !eo && !ee && (e_ = k.default.Messages.USER_ACTIVITY_NOT_DETECTED.format({
                     name: t.name
-                }));
-                let ed = async (e, t) => {
+                })) : e_ = k.default.Messages.USER_ACTIVITY_CANNOT_JOIN_SELF;
+                let ec = async (e, t) => {
                     var n;
                     null != t.session_id && null != t.application_id && (await l.default.join({
                         userId: e.id,
@@ -69762,24 +69765,24 @@
                         userId: e.id,
                         applicationId: t.application_id,
                         partyId: null === (n = t.party) || void 0 === n ? void 0 : n.id,
-                        locationObject: ea.location,
-                        analyticsLocations: K
+                        locationObject: es.location,
+                        analyticsLocations: z
                     }))
-                }, e_ = async () => {
+                }, eE = async () => {
                     let e = !1;
                     if (W) {
-                        if (!ei || null == J || null == t.application_id) return;
+                        if (!er || null == $ || null == t.application_id) return;
                         e = await (0, D.default)({
                             applicationId: t.application_id,
                             currentEmbeddedApplication: n,
-                            activityChannelId: J,
-                            locationObject: ea.location,
+                            activityChannelId: $,
+                            locationObject: es.location,
                             embeddedActivitiesManager: b.default,
-                            analyticsLocations: K
+                            analyticsLocations: z
                         })
                     }
                     if (!e) {
-                        ei && (null == j || j(), ed(Y, t)), Z(!0);
+                        er && (null == j || j(), ec(Y, t)), X(!0);
                         let e = await o.default.sendActivityInviteUser({
                             type: B.ActivityActionTypes.JOIN_REQUEST,
                             userId: Y.id,
@@ -69788,25 +69791,25 @@
                         });
                         null != e && u.default.selectPrivateChannel(e.id)
                     }
-                }, ec = ei ? k.default.Messages.JOIN : k.default.Messages.USER_ACTIVITY_ACTION_ASK_TO_JOIN;
-                return W && (ec = k.default.Messages.EMBEDDED_ACTIVITIES_JOIN_ACTIVITY), er && (ec = k.default.Messages.EMBEDDED_ACTIVITIES_JOINED), (0, i.jsx)(s.Tooltip, {
-                    text: eu,
+                }, eI = er ? k.default.Messages.JOIN : k.default.Messages.USER_ACTIVITY_ACTION_ASK_TO_JOIN;
+                return W && (eI = k.default.Messages.EMBEDDED_ACTIVITIES_JOIN_ACTIVITY), ea && (eI = k.default.Messages.EMBEDDED_ACTIVITIES_JOINED), (0, i.jsx)(s.Tooltip, {
+                    text: e_,
                     children: e => {
                         let {
                             onMouseEnter: t,
                             onMouseLeave: n
                         } = e;
                         return (0, i.jsx)(G.default, {
-                            onClick: e_,
+                            onClick: eE,
                             onMouseEnter: t,
                             onMouseLeave: n,
                             color: x,
                             look: F,
                             hover: H,
-                            disabled: !el,
-                            submitting: et,
+                            disabled: !ed,
+                            submitting: en,
                             fullWidth: !0,
-                            children: ec
+                            children: eI
                         })
                     }
                 }, "join")
@@ -87538,8 +87541,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290848", "290848"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290848")), t = 0), t
+                let t = parseInt((e = "290859", "290859"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290859")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115445,8 +115448,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290848",
-                    versionHash: "3ee7e3d85c42c5f77064e5234a71543795622b9f"
+                    buildNumber: "290859",
+                    versionHash: "7c5986efbebd61ce9048ee32c8cd8af9337e5377"
                 }
             }
             n.r(t), n.d(t, {
@@ -170794,8 +170797,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715029344182",
-                                    build_number: "290848"
+                                    built_at: "1715030342098",
+                                    build_number: "290859"
                                 }
                             },
                             retries: 1
@@ -248847,7 +248850,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3ee7e3d85c42c5f77064e5234a71543795622b9f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7c5986efbebd61ce9048ee32c8cd8af9337e5377"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277512,7 +277515,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290848"
+                                build_number: "290859"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284839,7 +284842,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290848", "290848"), 10);
+                let a = parseInt((n = "290859", "290859"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -312304,4 +312307,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.e9b7aa63d822320a5efa.js.map
+//# sourceMappingURL=35705.417a7bc92c1a9f94324a.js.map
