@@ -12734,7 +12734,7 @@ html .progress__00e29 {
 .clickableCard__1c1e9 {
     border-radius: 8px;
     cursor: pointer;
-    box-shadow: var(--shadow-medium);
+    box-shadow: var(--shadow-low);
     transition: transform.2s, box-shadow.1s
 }
 
@@ -12755,7 +12755,7 @@ html .progress__00e29 {
     border-radius: 8px;
     border: 1px solid var(--border-subtle);
     overflow: hidden;
-    background: var(--background-floating);
+    background-color: var(--bg-surface-overlay);
     display: flex;
     flex-direction: column
 }
@@ -12959,6 +12959,21 @@ html .progress__00e29 {
     display: block;
     font-size: 12px;
     font-weight: 600
+}
+
+.customButton__66f8a {
+    background-color: var(--custom-clan-bg);
+    color: var(--custom-clan-text);
+    transition: background-color.25s
+}
+
+.customButton__66f8a:hover,
+.customButton__66f8a:focus {
+    background-color: var(--custom-clan-hover-bg, hsl(var(--black-500-hsl)/.3))
+}
+
+.customButton__66f8a:active {
+    background-color: var(--custom-clan-active-bg, hsl(var(--black-500-hsl)/.35))
 }
 
 .container__86b23 {
@@ -35165,21 +35180,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     justify-content: space-between
 }
 
-.customButton__03f9e {
-    background-color: var(--custom-clan-bg);
-    color: var(--custom-clan-text);
-    transition: background-color.25s
-}
-
-.customButton__03f9e:hover,
-.customButton__03f9e:focus {
-    background-color: var(--custom-clan-hover-bg, hsl(var(--black-500-hsl)/.3))
-}
-
-.customButton__03f9e:active {
-    background-color: var(--custom-clan-active-bg, hsl(var(--black-500-hsl)/.35))
-}
-
 .overviewSidebar__995aa {
     display: flex;
     box-sizing: border-box;
@@ -44485,6 +44485,10 @@ div.profileThemedContainer__6e645 {
     opacity: 1
 }
 
+.container__8d997:hover .additionalParticipantBadge__23702 {
+    background: var(--bg-overlay-4, var(--background-accent))
+}
+
 .reply_d4ce98 {
     position: absolute;
     top: 4px;
@@ -44568,7 +44572,7 @@ div.profileThemedContainer__6e645 {
 
 .additionalParticipantBadge__23702 {
     padding: 2.25px 4.4px 2.5px 4.2px;
-    background-color: var(--background-accent);
+    background: var(--bg-overlay-5, var(--background-accent));
     border-radius: 8px;
     margin-left: 4px
 }
@@ -45508,38 +45512,18 @@ img.thumbnail__18ece {
     display: flex;
     align-items: center;
     gap: 8px;
-    border: 1px solid var(--border-subtle);
+    border: 1px solid;
     color: var(--interactive-normal);
     padding: 8px 12px;
     border-radius: 16px;
-    transition: transform ease-in-out.2s
-}
-
-.interestsTag__64479:hover {
-    color: var(--interactive-hover);
-    border-color: var(--border-strong)
-}
-
-.interestsTag__64479:hover .utilityTagIcon__2b2c9 {
-    color: var(--interactive-hover)
+    transition: transform ease-in-out.2s, border-color ease-in-out.2s
 }
 
 .interestsTag__64479:active {
-    border-color: var(--border-strong);
     transform: translatey(2px)scale(.98)
 }
 
-.interestsTag__64479.selected__2779c {
-    color: var(--interactive-active);
-    border-color: var(--interactive-active)
-}
-
-.interestsTag__64479.selected__2779c .utilityTagIcon__2b2c9 {
-    color: var(--interactive-active)
-}
-
 .utilityTagIcon__2b2c9 {
-    color: var(--text-muted);
     width: 16px;
     height: 16px
 }
@@ -45559,31 +45543,17 @@ img.thumbnail__18ece {
 
 .playstyleOption__67567 {
     position: relative;
-    background-color: var(--bg-base-tertiary);
+    background-color: var(--bg-surface-overlay);
+    border: 1px solid;
     cursor: pointer;
     padding: 16px;
-    border: 1px solid var(--border-subtle);
     border-radius: 8px;
     width: 25%;
-    transition: tranform ease-in-out.2s, border-color ease-in-out.2s
-}
-
-.playstyleOption__67567:hover {
-    border-color: var(--border-strong)
+    transition: transform ease-in-out.2s, border-color ease-in-out.2s
 }
 
 .playstyleOption__67567:active {
-    border-color: var(--border-strong);
     transform: translatey(2px)scale(.98)
-}
-
-.selectedPlaystyle_e4490f {
-    border-color: var(--brand-experiment)
-}
-
-.selectedPlaystyle_e4490f:hover,
-.selectedPlaystyle_e4490f:active {
-    border-color: var(--brand-experiment)
 }
 
 .checkmark_c7b206 {
@@ -45698,6 +45668,48 @@ img.thumbnail__18ece {
 
 .wildcardInput_c66fdf {
     text-align: center
+}
+
+.theme-dark .selectableOption_d3c1a6 {
+    border-color: var(--border-subtle);
+    color: var(--text-secondary)
+}
+
+.theme-dark .selectableOption_d3c1a6:hover,
+.theme-dark .selectableOption_d3c1a6:active {
+    border-color: var(--border-strong);
+    color: var(--interactive-hover)
+}
+
+.theme-dark .selectableOption_d3c1a6.selectedOption__82947 {
+    border-color: var(--brand-experiment);
+    color: var(--interactive-active)
+}
+
+.theme-dark .selectableOption_d3c1a6.selectedOption__82947:hover,
+.theme-dark .selectableOption_d3c1a6.selectedOption__82947:active {
+    border-color: var(--brand-experiment)
+}
+
+.theme-light .selectableOption_d3c1a6 {
+    border-color: var(--border-strong);
+    color: var(--text-secondary)
+}
+
+.theme-light .selectableOption_d3c1a6:hover,
+.theme-light .selectableOption_d3c1a6:active {
+    border-color: var(--interactive-hover);
+    color: var(--interactive-hover)
+}
+
+.theme-light .selectedOption__82947 {
+    border-color: var(--brand-experiment);
+    color: var(--interactive-active)
+}
+
+.theme-light .selectedOption__82947:hover,
+.theme-light .selectedOption__82947:active {
+    border-color: var(--brand-experiment)
 }
 
 .tabBarItemContainer__5d798 {
@@ -45852,8 +45864,8 @@ img.thumbnail__18ece {
 
 .traitsContainer__01c4b {
     padding: 16px 12px;
-    -o-border-image: linear-gradient(180deg, rgba(255, 255, 255, 0)0%, rgba(255, 255, 255, .16)100%)1;
-    border-image: linear-gradient(180deg, rgba(255, 255, 255, 0)0%, rgba(255, 255, 255, .16)100%)1;
+    -o-border-image: linear-gradient(180deg, transparent 0%, var(--border-strong)100%)1;
+    border-image: linear-gradient(180deg, transparent 0%, var(--border-strong)100%)1;
     border-width: 1px;
     border-style: solid
 }
@@ -46975,8 +46987,7 @@ div:has(>div>.modal__06f49) {
 }
 
 .upsellTitle__75ee7 {
-    margin-bottom: 24px;
-    color: var(--primary-130)
+    margin-bottom: 24px
 }
 
 .upsellDetails_dbe31a {
@@ -47197,12 +47208,10 @@ div:has(>div>.modal__06f49) {
 }
 
 .upsellTitle__25132 {
-    color: var(--primary-130);
     margin-bottom: 16px
 }
 
 .upsellSubtitle__06626 {
-    color: var(--primary-330);
     margin-bottom: 40px
 }
 
@@ -47237,18 +47246,42 @@ div:has(>div>.modal__06f49) {
 .backgroundImage__778b2 {
     flex: 1;
     width: auto;
-    background-color: var(--black-500);
+    background-color: var(--bg-surface-overlay);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover
 }
 
-.genshinBackgroundImage__21a5c {
-    background-image: linear-gradient(180deg, rgba(17, 18, 20, .64)0%, #111214 64.1%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Genshin_Background.png)
+.theme-dark .genshinUpsellBackgroundImage__29999 {
+    background-image: linear-gradient(180deg, rgba(17, 18, 20, .5)0%, #111214 64.1%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Genshin_Background.png)
 }
 
-.valorantBackgroundImage_d382a2 {
-    background-image: linear-gradient(180deg, rgba(17, 18, 20, .64)0%, #111214 64.1%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Valorant_Background.png)
+.theme-dark .valorantUpsellBackgroundImage__2b813 {
+    background-image: linear-gradient(180deg, rgba(17, 18, 20, .5)0%, #111214 64.1%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Valorant_Background.png)
+}
+
+.theme-dark .genshinOnboardingBackgroundImage__9b7e1 {
+    background-image: linear-gradient(180deg, var(--bg-backdrop)0%, var(--black-500)54%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Genshin_Background.png)
+}
+
+.theme-dark .valorantOnboardingBackgroundImage__4bf87 {
+    background-image: linear-gradient(180deg, var(--bg-backdrop)0%, var(--black-500)54%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Valorant_Background.png)
+}
+
+.theme-light .genshinUpsellBackgroundImage__29999 {
+    background-image: linear-gradient(180deg, hsl(var(--white-500-hsl)/.5)0%, var(--white-500)64.1%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Genshin_Background.png)
+}
+
+.theme-light .valorantUpsellBackgroundImage__2b813 {
+    background-image: linear-gradient(180deg, hsl(var(--white-500-hsl)/.5)0%, var(--white-500)64.1%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Valorant_Background.png)
+}
+
+.theme-light .genshinOnboardingBackgroundImage__9b7e1 {
+    background-image: linear-gradient(180deg, hsl(var(--white-500-hsl)/.7)0%, var(--white-500)54%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Genshin_Background.png)
+}
+
+.theme-light .valorantOnboardingBackgroundImage__4bf87 {
+    background-image: linear-gradient(180deg, hsl(var(--white-500-hsl)/.7)0%, var(--white-500)54%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Valorant_Background.png)
 }
 
 .container_ec1fbc {
@@ -93758,11 +93791,11 @@ div:has(>div>.container__8ab05) {
 }
 
 .theme-dark .container__8ab05 {
-    background-color: hsl(var(--primary-800-hsl)/.7)
+    background-color: var(--bg-backdrop)
 }
 
 .theme-light .container__8ab05 {
-    background-color: hsl(var(--white-500-hsl)/.7)
+    background-color: hsl(var(--white-500-hsl)/.54)
 }
 
 .root_a5c8ff {
@@ -136283,4 +136316,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c4561b4f913ddfad3eef.css.map*/
+/*# sourceMappingURL=99387.0431a79e6a220b2ea0dd.css.map*/

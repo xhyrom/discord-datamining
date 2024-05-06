@@ -36133,9 +36133,6 @@
                 ThemeContextFlags: function() {
                     return s.ThemeContextFlags
                 },
-                ThemeContextProvider: function() {
-                    return s.ThemeContextProvider
-                },
                 WCAGContrastRatios: function() {
                     return l.WCAGContrastRatios
                 },
@@ -37028,7 +37025,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290709", ", Version Hash: ").concat("874203c155e4ae6f35cfd946b267edda2b8b37a4")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290729", ", Version Hash: ").concat("2838cbabd2c4232ebdd9f13eb9356a4d04c12596")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87479,8 +87476,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290709", "290709"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290709")), t = 0), t
+                let t = parseInt((e = "290729", "290729"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290729")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -102542,36 +102539,131 @@
                 })
             }
         },
-        353093: function(e, t, n) {
+        676327: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                formatSelectionList: function() {
-                    return c
+                getAccessibleClanColor: function() {
+                    return I
                 },
                 getAccessibleTextColor: function() {
-                    return E
+                    return c
                 },
-                getClanBadgeUrl: function() {
+                getClanPrimaryButtonStyles: function() {
                     return T
-                },
-                getUserClanData: function() {
-                    return u
-                },
-                isGuildAClan: function() {
-                    return d
-                },
-                isGuildAdoptedUserClanIdentity: function() {
-                    return _
                 }
             });
             var i = n("688619"),
                 r = n.n(i),
-                a = n("481060"),
-                s = n("308083"),
-                o = n("981631"),
-                l = n("689938");
+                a = n("392711"),
+                s = n.n(a),
+                o = n("780384"),
+                l = n("481060"),
+                u = n("564334"),
+                d = n("302221"),
+                _ = n("308083");
 
-            function u(e) {
+            function c(e) {
+                let t = r()(e),
+                    n = t.get("rgb.r"),
+                    i = t.get("rgb.g"),
+                    a = t.get("rgb.b");
+                return (299 * n + 587 * i + 114 * a) / 1e3 < 128 ? l.tokens.colors.HEADER_PRIMARY.resolve({
+                    theme: "dark",
+                    saturation: 1
+                }) : l.tokens.colors.HEADER_PRIMARY.resolve({
+                    theme: "light",
+                    saturation: 1
+                })
+            }
+
+            function E(e) {
+                return new u.default(e.get("rgb.r"), e.get("rgb.g"), e.get("rgb.b"), e.alpha())
+            }
+
+            function I(e, t) {
+                var n;
+                let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : o.WCAGContrastRatios.Text;
+                if (null == e) return;
+                let a = null !== (n = function(e) {
+                        var t;
+                        let n = r()(e);
+                        return null === (t = s()(_.CLAN_BRAND_PALETTE_PRESETS).map(e => {
+                            let {
+                                primary: t
+                            } = e;
+                            return {
+                                primary: t,
+                                distance: r().distance(n, r()(t), "hsl")
+                            }
+                        }).filter(e => {
+                            let {
+                                distance: t
+                            } = e;
+                            return t < 15
+                        }).minBy(e => {
+                            let {
+                                distance: t
+                            } = e;
+                            return t
+                        })) || void 0 === t ? void 0 : t.primary
+                    }(e)) && void 0 !== n ? n : e,
+                    l = r()(a),
+                    u = r()(t),
+                    c = (0, d.getAccessibleColor)({
+                        colors: [E(l), E(u)],
+                        ratio: i,
+                        saturationFactor: 1
+                    });
+                if (null != c) return r()(c.toHexString())
+            }
+
+            function T(e, t) {
+                let n = function(e, t) {
+                    if (null == e) return;
+                    let n = I(e, t, o.WCAGContrastRatios.NonText);
+                    if (null == n) return;
+                    let i = .2 > n.luminance() ? n.brighten(.3) : n.darken(.3),
+                        r = .2 > n.luminance() ? n.brighten(.35) : n.darken(.35);
+                    return {
+                        "--custom-clan-bg": n.css(),
+                        "--custom-clan-hover-bg": i.css(),
+                        "--custom-clan-active-bg": r.css()
+                    }
+                }(e, t);
+                if (null == n) return;
+                let i = {
+                    "--custom-clan-text": c(n["--custom-clan-bg"]).hex()
+                };
+                return {
+                    ...n,
+                    ...i
+                }
+            }
+        },
+        353093: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                formatSelectionList: function() {
+                    return u
+                },
+                getClanBadgeUrl: function() {
+                    return _
+                },
+                getUserClanData: function() {
+                    return s
+                },
+                isGuildAClan: function() {
+                    return o
+                },
+                isGuildAdoptedUserClanIdentity: function() {
+                    return l
+                }
+            });
+            var i = n("308083"),
+                r = n("981631"),
+                a = n("689938");
+
+            function s(e) {
                 return null != e && e.identityEnabled ? {
                     guildId: e.identityGuildId,
                     tag: e.tag,
@@ -102579,66 +102671,52 @@
                 } : {}
             }
 
-            function d(e) {
-                return null != e && e.hasFeature(o.GuildFeatures.CLAN)
+            function o(e) {
+                return null != e && e.hasFeature(r.GuildFeatures.CLAN)
             }
 
-            function _(e, t) {
+            function l(e, t) {
                 return null != e && null != t && null != t.identityGuildId && t.identityGuildId === e && !!t.identityEnabled || !1
             }
-            let c = (e, t) => {
-                if (0 === e.length) return null;
-                if (1 === e.length) return e[1];
-                if (2 === e.length) return l.default.Messages.CLAN_OVERVIEW_LIST_TWO_ITEMS.format({
-                    item1: e[0],
-                    item2: e[1]
-                });
-                if (null != t && e.length > t) {
-                    let n = e.slice(0, t).join(", "),
-                        i = l.default.Messages.CLAN_OVERVIEW_LIST_OTHERS_COUNT.format({
-                            n: e.length - t
-                        });
-                    return l.default.Messages.CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS.format({
-                        items: n,
-                        last: i
-                    })
-                } {
-                    let t = e.slice(0, -1).join(", "),
-                        n = e[e.length - 1];
-                    return l.default.Messages.CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS.format({
-                        items: t,
-                        last: n
-                    })
-                }
-            };
+            let u = (e, t) => {
+                    if (0 === e.length) return null;
+                    if (1 === e.length) return e[1];
+                    if (2 === e.length) return a.default.Messages.CLAN_OVERVIEW_LIST_TWO_ITEMS.format({
+                        item1: e[0],
+                        item2: e[1]
+                    });
+                    if (null != t && e.length > t) {
+                        let n = e.slice(0, t).join(", "),
+                            i = a.default.Messages.CLAN_OVERVIEW_LIST_OTHERS_COUNT.format({
+                                n: e.length - t
+                            });
+                        return a.default.Messages.CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS.format({
+                            items: n,
+                            last: i
+                        })
+                    } {
+                        let t = e.slice(0, -1).join(", "),
+                            n = e[e.length - 1];
+                        return a.default.Messages.CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS.format({
+                            items: t,
+                            last: n
+                        })
+                    }
+                },
+                d = {
+                    [i.ClanTagBadgeSize.SIZE_12]: 16,
+                    [i.ClanTagBadgeSize.SIZE_16]: 16,
+                    [i.ClanTagBadgeSize.SIZE_24]: 24,
+                    [i.ClanTagBadgeSize.SIZE_36]: 40
+                };
 
-            function E(e) {
-                let t = r()(e),
-                    n = t.get("rgb.r"),
-                    i = t.get("rgb.g"),
-                    s = t.get("rgb.b");
-                return (299 * n + 587 * i + 114 * s) / 1e3 < 128 ? a.tokens.colors.HEADER_PRIMARY.resolve({
-                    theme: "dark",
-                    saturation: 1
-                }) : a.tokens.colors.HEADER_PRIMARY.resolve({
-                    theme: "light",
-                    saturation: 1
-                })
-            }
-            let I = {
-                [s.ClanTagBadgeSize.SIZE_12]: 16,
-                [s.ClanTagBadgeSize.SIZE_16]: 16,
-                [s.ClanTagBadgeSize.SIZE_24]: 24,
-                [s.ClanTagBadgeSize.SIZE_36]: 40
-            };
-
-            function T(e, t) {
-                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.ClanTagBadgeSize.SIZE_12;
+            function _(e, t) {
+                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : i.ClanTagBadgeSize.SIZE_12;
                 if (null == t) return;
                 let {
-                    CDN_HOST: i
+                    CDN_HOST: r
                 } = window.GLOBAL_ENV;
-                if (null != i) return "".concat(location.protocol, "//").concat(i, "/clan-badges/").concat(e, "/").concat(t, ".png?size=").concat(I[n])
+                if (null != r) return "".concat(location.protocol, "//").concat(r, "/clan-badges/").concat(e, "/").concat(t, ".png?size=").concat(d[n])
             }
         },
         954138: function(e, t, n) {
@@ -102677,28 +102755,6 @@
                         clanDiscoveryEnabled: s
                     } = (0, a.useClanPilotExperiment)(e);
                 return n || s
-            }
-        },
-        728257: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                useColorIsLowContrastAgainstClientBackground: function() {
-                    return s
-                }
-            });
-            var i = n("780384"),
-                r = n("866442"),
-                a = n("410030");
-
-            function s(e) {
-                let t = (0, a.default)();
-                if (null == e || !(0, r.isValidHex)(e)) return !0;
-                let {
-                    l: n
-                } = (0, r.isValidHex)(e) ? (0, r.int2hslRaw)((0, r.hex2int)(e)) : {
-                    l: 0
-                };
-                return (0, i.isThemeDark)(t) && n < 30 || !(0, i.isThemeDark)(t) && n > 65
             }
         },
         114487: function(e, t, n) {
@@ -102787,113 +102843,107 @@
                 T = n("905362"),
                 f = n("353093"),
                 S = n("169559"),
-                h = n("981631"),
-                A = n("689938"),
-                m = n("917013");
+                h = n("284019"),
+                A = n("981631"),
+                m = n("689938"),
+                N = n("917013");
 
-            function N(e) {
+            function p(e) {
                 e.stopPropagation()
             }
             t.default = r.memo(function(e) {
-                var t;
+                var t, O;
                 let {
-                    clan: p,
-                    isLoading: O,
-                    onClose: R,
-                    profileViewedAnalytics: C
-                } = e, g = (0, I.useClanInfo)(null !== (t = null == p ? void 0 : p.identityGuildId) && void 0 !== t ? t : null), L = null == p ? void 0 : p.tag, v = (0, S.default)("clan_guild_profile"), D = null == p ? void 0 : p.identityGuildId, M = (0, s.useStateFromStores)([d.default], () => d.default.getId()), y = (0, s.useStateFromStores)([_.default], () => null != D ? _.default.getMember(D, M) : null, [D, M]), P = (0, s.useStateFromStores)([c.default], () => c.default.getUser(M), [M]), U = (null == y ? void 0 : y.joinedAt) != null, b = (0, f.isGuildAdoptedUserClanIdentity)(D, null == P ? void 0 : P.clan), G = null != (0, l.default)(D);
+                    clan: R,
+                    isLoading: C,
+                    onClose: g,
+                    profileViewedAnalytics: L
+                } = e, v = (0, I.useClanInfo)(null !== (O = null == R ? void 0 : R.identityGuildId) && void 0 !== O ? O : null), D = null == R ? void 0 : R.tag, M = (0, S.default)("clan_guild_profile"), y = null == R ? void 0 : R.identityGuildId, P = (0, s.useStateFromStores)([d.default], () => d.default.getId()), U = (0, s.useStateFromStores)([_.default], () => null != y ? _.default.getMember(y, P) : null, [y, P]), b = (0, s.useStateFromStores)([c.default], () => c.default.getUser(P), [P]), G = (null == U ? void 0 : U.joinedAt) != null, w = (0, f.isGuildAdoptedUserClanIdentity)(y, null == b ? void 0 : b.clan), B = null != (0, l.default)(y);
                 r.useEffect(() => {
-                    null != D && (0, E.trackClanProfileViewed)({
-                        guildId: D,
-                        hasJoinRequest: G,
-                        ...C
+                    null != y && (0, E.trackClanProfileViewed)({
+                        guildId: y,
+                        hasJoinRequest: B,
+                        ...L
                     })
-                }, [D, G, C]);
-                let w = r.useCallback(e => {
-                        null != D && (e.stopPropagation(), e.preventDefault(), null == R || R(), (0, T.openAdoptClanIdentityModal)(D))
-                    }, [D, R]),
-                    B = r.useCallback(e => {
-                        if (null != g) e.stopPropagation(), e.preventDefault(), null == R || R(), !G && (0, a.openModalLazy)(async () => {
+                }, [y, B, L]);
+                let k = r.useCallback(e => {
+                        null != y && (e.stopPropagation(), e.preventDefault(), null == g || g(), (0, T.openAdoptClanIdentityModal)(y))
+                    }, [y, g]),
+                    V = r.useCallback(e => {
+                        if (null != v) e.stopPropagation(), e.preventDefault(), null == g || g(), !B && (0, a.openModalLazy)(async () => {
                             let {
                                 default: e
                             } = await Promise.all([n.e("99387"), n.e("80026"), n.e("18482")]).then(n.bind(n, "767593"));
                             return t => (0, i.jsx)(e, {
                                 ...t,
-                                clan: g
+                                clan: v
                             })
                         })
-                    }, [g, G, R]),
-                    k = r.useCallback(() => {
-                        null != D && (0, u.transitionTo)(h.Routes.GUILD_MEMBER_VERIFICATION(D))
-                    }, [D]),
-                    V = r.useCallback(() => {
-                        null != D && (0, u.transitionToGuild)(D)
-                    }, [D]),
-                    x = r.useMemo(() => {
+                    }, [v, B, g]),
+                    x = r.useCallback(() => {
+                        null != y && (0, u.transitionTo)(A.Routes.GUILD_MEMBER_VERIFICATION(y))
+                    }, [y]),
+                    F = r.useCallback(() => {
+                        null != y && (0, u.transitionToGuild)(y)
+                    }, [y]),
+                    H = r.useMemo(() => {
                         var e, t;
-                        let n = null !== (t = null == g ? void 0 : null === (e = g.branding) || void 0 === e ? void 0 : e.primaryColor) && void 0 !== t ? t : null,
-                            i = {
-                                color: null != n ? a.Button.Colors.CUSTOM : a.Button.Colors.BRAND,
-                                size: a.Button.Sizes.SMALL,
-                                fullWidth: !0,
-                                className: m.button
-                            };
-                        return null != n && (i = {
-                            ...i,
-                            style: {
-                                backgroundColor: n,
-                                color: (0, f.getAccessibleTextColor)(n).hex()
-                            }
-                        }), i
-                    }, [g]),
-                    F = r.useMemo(() => {
+                        return {
+                            color: a.Button.Colors.BRAND,
+                            size: a.Button.Sizes.SMALL,
+                            fullWidth: !0,
+                            className: N.button,
+                            themeColor: null !== (t = null == v ? void 0 : null === (e = v.branding) || void 0 === e ? void 0 : e.primaryColor) && void 0 !== t ? t : null
+                        }
+                    }, [null == v ? void 0 : null === (t = v.branding) || void 0 === t ? void 0 : t.primaryColor]),
+                    Y = r.useMemo(() => {
                         switch (!0) {
-                            case !v:
+                            case !M:
                                 return null;
-                            case !U && G:
-                                return (0, i.jsx)(a.Button, {
-                                    onClick: k,
-                                    ...x,
-                                    children: A.default.Messages.CLAN_USER_APPLICATION_EXISTS_TAG_GUILD_PROFILE_CTA
+                            case !G && B:
+                                return (0, i.jsx)(h.default, {
+                                    onClick: x,
+                                    ...H,
+                                    children: m.default.Messages.CLAN_USER_APPLICATION_EXISTS_TAG_GUILD_PROFILE_CTA
                                 });
-                            case !U:
-                                return (0, i.jsx)(a.Button, {
-                                    onClick: B,
-                                    ...x,
-                                    children: A.default.Messages.CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA
-                                });
-                            case U && !b:
-                                return (0, i.jsx)(a.Button, {
-                                    onClick: w,
-                                    ...x,
-                                    children: A.default.Messages.CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA
-                                });
-                            case U && b:
-                                return (0, i.jsx)(a.Button, {
+                            case !G:
+                                return (0, i.jsx)(h.default, {
                                     onClick: V,
-                                    ...x,
-                                    children: A.default.Messages.CLAN_USER_GO_TO_CLAN_CTA
+                                    ...H,
+                                    children: m.default.Messages.CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA
+                                });
+                            case G && !w:
+                                return (0, i.jsx)(h.default, {
+                                    onClick: k,
+                                    ...H,
+                                    children: m.default.Messages.CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA
+                                });
+                            case G && w:
+                                return (0, i.jsx)(h.default, {
+                                    onClick: F,
+                                    ...H,
+                                    children: m.default.Messages.CLAN_USER_GO_TO_CLAN_CTA
                                 });
                             default:
                                 return null
                         }
-                    }, [x, w, B, k, V, G, b, U, v]),
-                    H = r.useMemo(() => ({
-                        className: m.container,
-                        onClick: N
+                    }, [H, k, V, x, F, B, w, G, M]),
+                    j = r.useMemo(() => ({
+                        className: N.container,
+                        onClick: p
                     }), []);
-                return null == L || null == g || null == D || O ? (0, i.jsx)("div", {
-                    ...H,
+                return null == D || null == v || null == y || C ? (0, i.jsx)("div", {
+                    ...j,
                     children: (0, i.jsx)(a.Spinner, {})
                 }) : (0, i.jsxs)("div", {
-                    ...H,
+                    ...j,
                     children: [(0, i.jsx)(o.ClanDiscoveryCardView, {
-                        clan: g,
-                        className: m.cardContainer,
-                        isMember: U
-                    }), null != F && (0, i.jsx)("div", {
-                        className: m.buttonContainer,
-                        children: F
+                        clan: v,
+                        className: N.cardContainer,
+                        isMember: G
+                    }), null != Y && (0, i.jsx)("div", {
+                        className: N.buttonContainer,
+                        children: Y
                     })]
                 })
             })
@@ -106489,6 +106539,38 @@
                         href: "".concat(o, "#wrapper-layer"),
                         id: m
                     })]
+                })
+            }
+        },
+        284019: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return u
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("120356"),
+                a = n.n(r),
+                s = n("481060"),
+                o = n("676327"),
+                l = n("763624");
+
+            function u(e) {
+                let {
+                    themeColor: t,
+                    color: n,
+                    className: r,
+                    ...u
+                } = e, d = (0, s.useToken)(s.tokens.colors.BG_SURFACE_OVERLAY), _ = (0, o.getClanPrimaryButtonStyles)(t, d.hex());
+                return (0, i.jsx)(s.Button, {
+                    ...u,
+                    style: _,
+                    className: a()(r, {
+                        [l.customButton]: null != _
+                    }),
+                    color: null != _ ? s.Button.Colors.CUSTOM : n
                 })
             }
         },
@@ -115242,8 +115324,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290709",
-                    versionHash: "874203c155e4ae6f35cfd946b267edda2b8b37a4"
+                    buildNumber: "290729",
+                    versionHash: "2838cbabd2c4232ebdd9f13eb9356a4d04c12596"
                 }
             }
             n.r(t), n.d(t, {
@@ -116086,8 +116168,8 @@
                 o = n("481060"),
                 l = n("442837"),
                 u = n("835473"),
-                d = n("353093"),
-                _ = n("728257"),
+                d = n("676327"),
+                _ = n("353093"),
                 c = n("114487"),
                 E = n("550271"),
                 I = n("175557"),
@@ -116111,14 +116193,14 @@
                     branding: {
                         primaryColor: a
                     }
-                } = t, s = n.filter(e => e !== O.EMPTY_WILDCARD).join(", "), l = (0, _.useColorIsLowContrastAgainstClientBackground)(a), u = r.useRef(null), [d, c] = r.useState(!1);
+                } = t, s = n.filter(e => e !== O.EMPTY_WILDCARD).join(", "), l = (0, o.useToken)(o.tokens.colors.BACKGROUND_FLOATING), u = (0, d.getAccessibleClanColor)(a, l.hex()), _ = r.useRef(null), [c, E] = r.useState(!1);
                 if (r.useEffect(() => {
-                        let e = u.current;
-                        null != e && null != e.offsetWidth && null != e.scrollWidth && c(e.offsetWidth < e.scrollWidth)
+                        let e = _.current;
+                        null != e && null != e.offsetWidth && null != e.scrollWidth && E(e.offsetWidth < e.scrollWidth)
                     }, []), 0 === s.length) return null;
-                let E = {
-                    color: l ? "var(--text-normal)" : a
-                };
+                let I = null != u ? {
+                    color: u.css()
+                } : void 0;
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-xs/normal",
@@ -116128,12 +116210,12 @@
                     }), (0, i.jsx)(o.Tooltip, {
                         text: s,
                         color: o.Tooltip.Colors.PRIMARY,
-                        shouldShow: d,
+                        shouldShow: c,
                         children: e => (0, i.jsx)("span", {
                             ...e,
-                            style: E,
+                            style: I,
                             className: C.wildCardText,
-                            ref: u,
+                            ref: _,
                             children: s
                         })
                     })]
@@ -116217,7 +116299,7 @@
                     if (null == t) return null;
                     if (n.length > 4) {
                         let r = n.slice(3).map(e => e.name),
-                            a = (0, d.formatSelectionList)(r);
+                            a = (0, _.formatSelectionList)(r);
                         return (0, i.jsx)(o.Tooltip, {
                             text: a,
                             position: "bottom",
@@ -170587,8 +170669,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714998610973",
-                                    build_number: "290709"
+                                    built_at: "1715008599944",
+                                    build_number: "290729"
                                 }
                             },
                             retries: 1
@@ -248644,7 +248726,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "874203c155e4ae6f35cfd946b267edda2b8b37a4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "2838cbabd2c4232ebdd9f13eb9356a4d04c12596"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277309,7 +277391,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290709"
+                                build_number: "290729"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284636,7 +284718,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290709", "290709"), 10);
+                let a = parseInt((n = "290729", "290729"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -312101,4 +312183,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.0699c400986d6086cfb4.js.map
+//# sourceMappingURL=35705.b77a174a48ff5bbe3249.js.map

@@ -5156,7 +5156,6 @@
                 charterClanTag: "charterClanTag_bb407f",
                 clickable: "clickable_b41429",
                 closeButton: "closeButton_e88b7d",
-                customButton: "customButton__03f9e",
                 customProgressStepFill: "customProgressStepFill_e1a0a9",
                 divider: "divider_ef3200",
                 errorIcon: "errorIcon__11e5e",
@@ -5272,8 +5271,8 @@
                 playstyleSelect: "playstyleSelect_b7d88b",
                 playstyleTitle: "playstyleTitle__00d17",
                 plusIcon: "plusIcon__22efe",
-                selected: "selected__2779c",
-                selectedPlaystyle: "selectedPlaystyle_e4490f",
+                selectableOption: "selectableOption_d3c1a6",
+                selectedOption: "selectedOption__82947",
                 selectedSection: "selectedSection__5c175",
                 slideContent: "slideContent__6ae94",
                 slideContentWithSidebar: "slideContentWithSidebar__251be slideContent__6ae94",
@@ -5286,6 +5285,12 @@
                 utilityTagIcon: "utilityTagIcon__2b2c9",
                 wildcardInput: "wildcardInput_c66fdf",
                 wildcardRow: "wildcardRow__85791"
+            }
+        },
+        763624: function(e) {
+            "use strict";
+            e.exports = {
+                customButton: "customButton__66f8a"
             }
         },
         156312: function(e) {
@@ -7366,11 +7371,13 @@
                 adminUpsell: "adminUpsell_a0161a",
                 backgroundImage: "backgroundImage__778b2",
                 container: "container_c12432",
-                genshinBackgroundImage: "genshinBackgroundImage__21a5c backgroundImage__778b2",
+                genshinOnboardingBackgroundImage: "genshinOnboardingBackgroundImage__9b7e1",
+                genshinUpsellBackgroundImage: "genshinUpsellBackgroundImage__29999",
                 upsellScroller: "upsellScroller__0225a",
                 userOnboarding: "userOnboarding__753ed",
                 userUpsell: "userUpsell__2b410",
-                valorantBackgroundImage: "valorantBackgroundImage_d382a2 backgroundImage__778b2"
+                valorantOnboardingBackgroundImage: "valorantOnboardingBackgroundImage__4bf87",
+                valorantUpsellBackgroundImage: "valorantUpsellBackgroundImage__2b813"
             }
         },
         442970: function(e) {
