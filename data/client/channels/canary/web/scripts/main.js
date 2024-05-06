@@ -37025,7 +37025,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290764", ", Version Hash: ").concat("45febd9be0a80f2d3e40a945ff19144894bd4f0b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290776", ", Version Hash: ").concat("3641899f2dee1b9f0fa6a58845cb5e6d2da862ce")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -66825,11 +66825,9 @@
                 if (!(null != A && d.default.canBasicChannel(m.BasicPermissions.CONNECT, A) || (null == A ? void 0 : A.type) === m.ChannelTypes.DM || (null == A ? void 0 : A.type) === m.ChannelTypes.GROUP_DM)) return;
                 let N = I.map(e => e.userId),
                     p = l.default.getId(),
-                    O = l.default.getSessionId(),
-                    v = null === (t = I.find(e => e.userId === p)) || void 0 === t ? void 0 : t.sessionId,
-                    D = null == v,
-                    M = R.get(o),
-                    y = {
+                    O = null === (t = I.find(e => e.userId === p)) || void 0 === t ? void 0 : t.sessionId,
+                    v = R.get(o),
+                    D = {
                         analyticsActivitySessionId: null != S ? S : "",
                         applicationId: o,
                         channelId: a,
@@ -66838,22 +66836,23 @@
                         launchId: _,
                         compositeInstanceId: c,
                         url: h,
-                        userIds: new Set(N)
+                        userIds: new Set(N),
+                        participants: I
                     };
-                N.some(e => e === p) && null != M && (D || O === v) && R.set(M.applicationId, {
-                    ...M,
-                    ...y
-                }), null != M && a === M.channelId && !N.some(e => e === p) && Array.from(M.userIds).some(e => e === p) ? L.get(a) === o ? L.delete(a) : R.delete(o) : N.some(e => e === p) && (null == M || M.applicationId !== o || M.channelId !== a) && (v === l.default.getSessionId() && !D || (0, T.shouldMountActivityIFrameFromGatewayUpdateWithoutSessionIdCheck)("EmbeddedActivitiesStore")) && (F({
+                N.some(e => e === p) && null != v && R.set(v.applicationId, {
+                    ...v,
+                    ...D
+                }), null != v && a === v.channelId && !N.some(e => e === p) && Array.from(v.userIds).some(e => e === p) ? L.get(a) === o ? L.delete(a) : R.delete(o) : N.some(e => e === p) && (null == v || v.applicationId !== o || v.channelId !== a) && (O === l.default.getSessionId() && null != O || (0, T.shouldMountActivityIFrameFromGatewayUpdateWithoutSessionIdCheck)("EmbeddedActivitiesStore")) && (F({
                     channelId: a,
                     applicationId: o,
                     launchId: _
                 }), E.ComponentDispatch.dispatch(m.ComponentActions.OPEN_EMBEDDED_ACTIVITY, {
                     channelId: a
                 }));
-                let P = (null !== (n = g.get(a)) && void 0 !== n ? n : []).filter(e => e.applicationId !== o),
-                    U = k(r),
-                    b = (null !== (i = C.get(U)) && void 0 !== i ? i : []).filter(e => !(e.applicationId === o && e.channelId === a));
-                N.length > 0 && (P.push(y), b.push(y)), g.set(a, P), C.set(U, b)
+                let M = (null !== (n = g.get(a)) && void 0 !== n ? n : []).filter(e => e.applicationId !== o),
+                    y = k(r),
+                    P = (null !== (i = C.get(y)) && void 0 !== i ? i : []).filter(e => !(e.applicationId === o && e.channelId === a));
+                N.length > 0 && (M.push(D), P.push(D)), g.set(a, M), C.set(y, P)
             }
 
             function x(e) {
@@ -68510,19 +68509,24 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return s
+                    return l
                 }
             });
             var i = n("106351"),
-                r = n("592125"),
-                a = n("944486");
+                r = n("314897"),
+                a = n("592125"),
+                s = n("944486"),
+                o = n("979651");
 
-            function s(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.default,
-                    n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : a.default,
-                    s = t.getChannel(e),
-                    o = n.getVoiceChannelId();
-                return null != s && (s.type === i.ChannelTypes.GUILD_VOICE || s.isPrivate() && s.id === o)
+            function l(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a.default,
+                    n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.default,
+                    l = t.getChannel(e),
+                    u = n.getVoiceChannelId();
+                if (null == l) return !1;
+                if (l.type === i.ChannelTypes.GUILD_VOICE) return !0;
+                if (l.isPrivate()) return l.id === u || null != o.default.getVoiceStatesForChannel(l.id)[r.default.getId()];
+                return !1
             }
         },
         74433: function(e, t, n) {
@@ -85667,14 +85671,14 @@
                 }
                 _getParticipantsForEmbeddedActivities() {
                     return this._getEmbeddedActivities().map((e, t) => {
-                        var n, i;
+                        var n, i, r;
                         return {
                             type: N.ParticipantTypes.ACTIVITY,
                             id: e.applicationId,
                             activityType: p.ActivityTypes.PLAYING,
                             activityUrl: e.url,
-                            participants: new Set(e.userIds),
-                            guildId: null !== (i = null === (n = E.default.getChannel(this.channelId)) || void 0 === n ? void 0 : n.getGuildId()) && void 0 !== i ? i : null,
+                            participants: [...null !== (i = e.participants) && void 0 !== i ? i : []],
+                            guildId: null !== (r = null === (n = E.default.getChannel(this.channelId)) || void 0 === n ? void 0 : n.getGuildId()) && void 0 !== r ? r : null,
                             sortKey: t.toString()
                         }
                     })
@@ -86479,7 +86483,7 @@
                         let e = I.default.getViewerIds(o.id);
                         return e.length > 0 ? e.map(e => T.default.getUser(e)).filter(h.isNotNullish) : L
                     }
-                    return o.type === m.ParticipantTypes.ACTIVITY ? o.participants.size > 0 ? Array.from(o.participants).map(e => T.default.getUser(e)).filter(h.isNotNullish) : L : L
+                    return o.type === m.ParticipantTypes.ACTIVITY ? o.participants.length > 0 ? Array.from(o.participants).map(e => T.default.getUser(e.userId)).filter(h.isNotNullish) : L : L
                 }, [o]), y = r.useCallback(() => {
                     D.current.cancel(), v(!0)
                 }, []), P = r.useCallback(() => {
@@ -87477,8 +87481,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290764", "290764"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290764")), t = 0), t
+                let t = parseInt((e = "290776", "290776"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290776")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115322,8 +115326,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290764",
-                    versionHash: "45febd9be0a80f2d3e40a945ff19144894bd4f0b"
+                    buildNumber: "290776",
+                    versionHash: "3641899f2dee1b9f0fa6a58845cb5e6d2da862ce"
                 }
             }
             n.r(t), n.d(t, {
@@ -170667,8 +170671,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715016300265",
-                                    build_number: "290764"
+                                    built_at: "1715019042262",
+                                    build_number: "290776"
                                 }
                             },
                             retries: 1
@@ -248722,7 +248726,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "45febd9be0a80f2d3e40a945ff19144894bd4f0b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3641899f2dee1b9f0fa6a58845cb5e6d2da862ce"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277387,7 +277391,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290764"
+                                build_number: "290776"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284714,7 +284718,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290764", "290764"), 10);
+                let a = parseInt((n = "290776", "290776"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -312179,4 +312183,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.bb23980072018ea037e7.js.map
+//# sourceMappingURL=35705.ca31e0ccfd9b5e13e398.js.map
