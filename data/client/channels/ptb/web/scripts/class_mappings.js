@@ -5116,6 +5116,25 @@
                 usernameContainer: "usernameContainer__60276"
             }
         },
+        396354: function(e) {
+            "use strict";
+            e.exports = {
+                charterClanBadge: "charterClanBadge_e740db",
+                charterClanTag: "charterClanTag__311c3",
+                clickable: "clickable__98c7c",
+                overviewGuildName: "overviewGuildName__2c32f overviewText__9e4a2",
+                overviewHeaderPrelude: "overviewHeaderPrelude__60592 overviewText__9e4a2",
+                overviewSidebarContent: "overviewSidebarContent__11ac5",
+                overviewSidebarWrapper: "overviewSidebarWrapper__97c37",
+                overviewText: "overviewText__9e4a2",
+                placeholderIcon: "placeholderIcon__70d9c",
+                scrollBg: "scrollBg_bf01f4",
+                scrollBgBottom: "scrollBgBottom__952b4",
+                scrollBgTop: "scrollBgTop__5ad5d",
+                signatureBlock: "signatureBlock_c3906a",
+                signatureText: "signatureText_ba8ce1"
+            }
+        },
         109267: function(e) {
             "use strict";
             e.exports = {
@@ -5150,53 +5169,46 @@
         156610: function(e) {
             "use strict";
             e.exports = {
-                animationContainer: "animationContainer_af2200",
-                buttonsContainer: "buttonsContainer_a90621",
-                charterClanBadge: "charterClanBadge__6db2b",
-                charterClanTag: "charterClanTag_bb407f",
-                clickable: "clickable_b41429",
-                closeButton: "closeButton_e88b7d",
-                customProgressStepFill: "customProgressStepFill_e1a0a9",
+                close: "close_fe82d9",
+                content: "content__845fb",
                 divider: "divider_ef3200",
-                errorIcon: "errorIcon__11e5e",
+                dividerResponsive: "dividerResponsive__989b4",
+                elevatedNavigationContainer: "elevatedNavigationContainer_f689e2",
                 errorLink: "errorLink_e96e0d",
                 errorText: "errorText_e99eec",
-                fadeIn: "fadeIn__0663f",
-                fadeOut: "fadeOut_de0df3",
-                finishButton: "finishButton__8590c",
-                flex: "flex__0016b",
-                footer: "footer_d63e9e",
-                footerAlphaMsg: "footerAlphaMsg_e3ec93",
-                footerAlphaTag: "footerAlphaTag__21ac5",
-                footerButtons: "footerButtons__6d962",
-                mainContent: "mainContent__23e7a",
+                hidden: "hidden__7c65d",
                 modal: "modal_f49d0b",
-                modalContents: "modalContents_e19dbf",
-                overviewGuildName: "overviewGuildName_da4828 overviewText__01ee0",
-                overviewHeaderPrelude: "overviewHeaderPrelude_a62bba overviewText__01ee0",
-                overviewSidebar: "overviewSidebar__995aa",
-                overviewSidebarContent: "overviewSidebarContent_b8b257",
-                overviewSidebarWrapper: "overviewSidebarWrapper__8ca7a",
-                overviewText: "overviewText__01ee0",
-                placeholderIcon: "placeholderIcon__8db19",
-                previousButton: "previousButton_b43130",
-                progressContainer: "progressContainer__378bd",
-                progressStep: "progressStep_dec95e",
-                progressStepContainer: "progressStepContainer__76950",
-                progressStepFill: "progressStepFill__47c59",
-                progressStepTooltip: "progressStepTooltip_defee0",
-                progressStepWrapper: "progressStepWrapper__6113c",
-                scrollBg: "scrollBg_b81d25",
-                scrollBgBottom: "scrollBgBottom__10a36",
-                scrollBgTop: "scrollBgTop_e0da83",
-                scrollContainer: "scrollContainer__3789e",
+                navigation: "navigation__6da90",
+                navigationContainer: "navigationContainer_d0c34b",
+                panel: "panel__73720",
+                scroll: "scroll__1ad6a",
                 scroller: "scroller__24eef",
                 sequencer: "sequencer__0bd4c",
+                sidebar: "sidebar__2100d",
+                sidebarContent: "sidebarContent_e262dc",
+                sidebarLeftDecoration: "sidebarLeftDecoration_a20674",
+                sidebarLeftDecorationContainer: "sidebarLeftDecorationContainer__88d1d",
+                sidebarResponsive: "sidebarResponsive_c4a2c0",
+                sidebarRightDecoration: "sidebarRightDecoration__5fc16",
+                sidebarRightDecorationContainer: "sidebarRightDecorationContainer__2f92e",
                 signButton: "signButton__6f375",
-                signTextLeft: "signTextLeft__88879",
-                signTextRight: "signTextRight_babb62",
-                signatureBlock: "signatureBlock__543fd",
-                signatureText: "signatureText_cb71b7"
+                steps: "steps_d254c3",
+                stepsContainer: "stepsContainer__8d5da",
+                submit: "submit__9d0ad"
+            }
+        },
+        258082: function(e) {
+            "use strict";
+            e.exports = {
+                buttonsContainer: "buttonsContainer__86ac6",
+                customProgressStepFill: "customProgressStepFill__475ff",
+                errorIcon: "errorIcon_dcc936",
+                progressContainer: "progressContainer_ddab6e",
+                progressStep: "progressStep__3aba3",
+                progressStepContainer: "progressStepContainer_dfe894",
+                progressStepFill: "progressStepFill_a81294",
+                progressStepTooltip: "progressStepTooltip__53c08",
+                progressStepWrapper: "progressStepWrapper__57a64"
             }
         },
         912982: function(e) {
