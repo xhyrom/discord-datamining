@@ -37025,7 +37025,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290797", ", Version Hash: ").concat("e60fe8175abc2909e97d8e4ad48852f8170c6aab")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290807", ", Version Hash: ").concat("a13bbec0e0699f73b9df64ddeaeeb9332c050a0c")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87517,8 +87517,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290797", "290797"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290797")), t = 0), t
+                let t = parseInt((e = "290807", "290807"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290807")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115416,8 +115416,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290797",
-                    versionHash: "e60fe8175abc2909e97d8e4ad48852f8170c6aab"
+                    buildNumber: "290807",
+                    versionHash: "a13bbec0e0699f73b9df64ddeaeeb9332c050a0c"
                 }
             }
             n.r(t), n.d(t, {
@@ -170765,8 +170765,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715021734548",
-                                    build_number: "290797"
+                                    built_at: "1715022630092",
+                                    build_number: "290807"
                                 }
                             },
                             retries: 1
@@ -211377,49 +211377,49 @@
             n("470079");
             var r = n("120356"),
                 a = n.n(r),
-                s = n("692547"),
-                o = n("10683"),
-                l = n("793080"),
-                u = n("481060"),
-                d = n("785717"),
-                _ = n("702557"),
+                s = n("10683"),
+                o = n("793080"),
+                l = n("481060"),
+                u = n("785717"),
+                d = n("702557"),
+                _ = n("537387"),
                 c = n("689938"),
                 E = n("742768");
 
             function I(e) {
                 let {
                     user: t,
-                    onOpenProfile: n,
-                    className: r
+                    isHovering: n,
+                    onOpenProfile: r
                 } = e, {
                     trackUserProfileAction: I
-                } = (0, d.useUserProfileAnalyticsContext)(), {
+                } = (0, u.useUserProfileAnalyticsContext)(), {
                     loading: T,
                     note: f
-                } = (0, _.default)(t.id), S = !T && null != f && f.length > 0, h = S ? (0, i.jsx)("div", {
-                    className: E.noteText,
-                    children: (0, i.jsx)(u.TextAreaAutosize, {
-                        className: E.noteTextArea,
-                        value: f
+                } = (0, d.default)(t.id), S = () => {
+                    I({
+                        action: "PRESS_ADD_NOTE"
+                    }), r()
+                };
+                return T ? null : null == f || "" === f ? (0, i.jsx)(_.default, {
+                    text: c.default.Messages.ADD_NOTE,
+                    "aria-label": c.default.Messages.ADD_NOTE,
+                    icon: o.PaperPlusIcon,
+                    onClick: S,
+                    color: E.color,
+                    look: l.Button.Looks.BLANK,
+                    className: a()(E.button, {
+                        [E.visible]: n
                     })
-                }) : c.default.Messages.ADD_NOTE, A = S ? f : c.default.Messages.ADD_NOTE, m = S ? o.PaperIcon : l.PaperPlusIcon;
-                return (0, i.jsx)(u.TooltipContainer, {
-                    text: h,
-                    "aria-label": A,
-                    color: u.TooltipColors.NESTED,
-                    children: (0, i.jsx)(u.Clickable, {
-                        onClick: () => {
-                            I({
-                                action: "PRESS_ADD_NOTE"
-                            }), n()
-                        },
-                        className: a()(E.noteClickable, r),
-                        children: (0, i.jsx)(m, {
-                            height: 16,
-                            width: 16,
-                            color: s.default.colors.INTERACTIVE_NORMAL
-                        })
-                    })
+                }) : (0, i.jsx)(_.default, {
+                    text: f,
+                    "aria-label": f,
+                    icon: s.PaperIcon,
+                    onClick: S,
+                    color: E.color,
+                    look: l.Button.Looks.BLANK,
+                    className: a()(E.button, E.visible),
+                    tooltipClassName: E.tooltip
                 })
             }
         },
@@ -211806,7 +211806,7 @@
                     onClick: () => {
                         m({
                             action: "EDIT_PROFILE"
-                        }), N(), null == f || f()
+                        }), null == f || f(), N()
                     }
                 }) : (0, i.jsx)(a.Popout, {
                     renderPopout: e => {
@@ -212087,9 +212087,11 @@
                     text: n,
                     className: r,
                     innerClassName: l,
-                    ...u
+                    tooltipClassName: u,
+                    ...d
                 } = e;
                 return (0, i.jsx)(s.TooltipContainer, {
+                    tooltipClassName: u,
                     text: n,
                     color: s.TooltipColors.NESTED,
                     children: (0, i.jsx)(s.Button, {
@@ -212100,7 +212102,7 @@
                         size: s.Button.Sizes.NONE,
                         grow: !1,
                         "aria-label": n,
-                        ...u,
+                        ...d,
                         children: (0, i.jsx)(t, {
                             width: 16,
                             height: 16,
@@ -213990,87 +213992,83 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return m
+                    return h
                 }
             });
             var i = n("735250");
             n("470079");
-            var r = n("120356"),
-                a = n.n(r),
-                s = n("442837"),
-                o = n("246946"),
-                l = n("5192"),
-                u = n("447452"),
-                d = n("681837"),
-                _ = n("724593"),
-                c = n("530"),
-                E = n("894374"),
-                I = n("790711"),
-                T = n("580512"),
-                f = n("67152"),
-                S = n("579285"),
-                h = n("287612"),
-                A = n("108997");
+            var r = n("442837"),
+                a = n("246946"),
+                s = n("5192"),
+                o = n("447452"),
+                l = n("681837"),
+                u = n("724593"),
+                d = n("530"),
+                _ = n("894374"),
+                c = n("790711"),
+                E = n("580512"),
+                I = n("67152"),
+                T = n("579285"),
+                f = n("287612"),
+                S = n("108997");
 
-            function m(e) {
+            function h(e) {
                 let {
                     user: t,
                     currentUser: n,
-                    displayProfile: r,
-                    guild: m,
-                    isHovering: N,
-                    onOpenProfile: p,
-                    channelId: O,
-                    onClose: R
+                    displayProfile: h,
+                    guild: A,
+                    isHovering: m,
+                    onOpenProfile: N,
+                    channelId: p,
+                    onClose: O
                 } = e, {
-                    moreUserDetailsEnabled: C
-                } = (0, u.useSimplifiedProfileExperiment)({
+                    moreUserDetailsEnabled: R
+                } = (0, o.useSimplifiedProfileExperiment)({
                     location: "BiteSizeProfileBody"
-                }), g = l.default.getName(null == m ? void 0 : m.id, O, t), L = (0, s.useStateFromStores)([o.default], () => o.default.hidePersonalInformation);
+                }), C = s.default.getName(null == A ? void 0 : A.id, p, t), g = (0, r.useStateFromStores)([a.default], () => a.default.hidePersonalInformation);
                 return (0, i.jsxs)("div", {
-                    className: A.body,
-                    children: [(0, i.jsx)(c.default, {
+                    className: S.body,
+                    children: [(0, i.jsx)(d.default, {
                         user: t,
-                        onOpenProfile: () => p(!1),
-                        guildId: null == m ? void 0 : m.id,
-                        usernameIcon: t.hasAvatarForGuild(null == m ? void 0 : m.id) && (0, i.jsx)(I.default, {
+                        onOpenProfile: () => N(!1),
+                        guildId: null == A ? void 0 : A.id,
+                        usernameIcon: t.hasAvatarForGuild(null == A ? void 0 : A.id) && (0, i.jsx)(c.default, {
                             user: t,
-                            nickname: g
+                            nickname: C
                         }),
-                        pronouns: null == r ? void 0 : r.pronouns,
-                        tags: (0, i.jsx)(E.UserProfileBadgesTag, {
-                            displayProfile: r,
-                            onClose: R
+                        pronouns: null == h ? void 0 : h.pronouns,
+                        tags: (0, i.jsx)(_.UserProfileBadgesTag, {
+                            displayProfile: h,
+                            onClose: O
                         }),
                         nicknameIcons: (0, i.jsxs)(i.Fragment, {
-                            children: [(0, i.jsx)(d.default, {
+                            children: [(0, i.jsx)(l.default, {
                                 userId: t.id
-                            }), C && !L && (0, i.jsx)(_.default, {
-                                className: a()(A.noteIcon, {
-                                    [A.visible]: N
-                                }),
+                            }), R && !g && (0, i.jsx)(u.default, {
                                 user: t,
-                                onOpenProfile: () => p(!0)
+                                isHovering: m,
+                                onOpenProfile: () => N(!0)
                             })]
                         })
-                    }), (0, i.jsx)(h.default, {
+                    }), (0, i.jsx)(f.default, {
                         user: t,
-                        onClose: R
-                    }), C && (0, i.jsx)(f.default, {
+                        onClose: O
+                    }), R && (0, i.jsx)(I.default, {
                         user: t,
-                        bio: null == r ? void 0 : r.bio,
-                        hidePersonalInformation: L,
-                        onClose: R
-                    }), (0, i.jsx)(T.default, {
+                        bio: null == h ? void 0 : h.bio,
+                        hidePersonalInformation: g,
+                        onClose: O
+                    }), (0, i.jsx)(E.default, {
                         user: t,
-                        guild: m,
-                        channelId: O,
-                        onClose: R
-                    }), null != m && (0, i.jsx)(S.default, {
+                        guild: A,
+                        channelId: p,
+                        onClose: O
+                    }), null != A && (0, i.jsx)(T.default, {
                         user: t,
                         currentUser: n,
-                        guild: m,
-                        onOpenProfile: () => p(!1)
+                        guild: A,
+                        onOpenProfile: () => N(!1)
                     })]
                 })
             }
@@ -248820,7 +248818,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e60fe8175abc2909e97d8e4ad48852f8170c6aab"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a13bbec0e0699f73b9df64ddeaeeb9332c050a0c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277485,7 +277483,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290797"
+                                build_number: "290807"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284812,7 +284810,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290797", "290797"), 10);
+                let a = parseInt((n = "290807", "290807"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -312277,4 +312275,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.34378d2a50974b6e34fd.js.map
+//# sourceMappingURL=35705.683d5327814c8d5ab24f.js.map
