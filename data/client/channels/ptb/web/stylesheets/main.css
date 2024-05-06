@@ -44383,7 +44383,10 @@ img.thumbnail__18ece {
 }
 
 .hero_dc420c {
+    display: flex;
+    flex-direction: column;
     padding: 16px;
+    gap: 16px;
     border-top-left-radius: var(--radius-md);
     border-top-right-radius: var(--radius-md)
 }
@@ -44611,6 +44614,28 @@ img.thumbnail__18ece {
 .popoutBlockedWarningIcon_a01b83 {
     margin-right: 3px;
     margin-bottom: -2px
+}
+
+.listeningTimeline_ec63b6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 9px
+}
+
+.seekBarContainer__39a4e {
+    background-color: var(--content-inventory-media-seekbar-container);
+    border-radius: 2px;
+    height: 2px;
+    position: relative;
+    width: 100%
+}
+
+.seekBarFill__5532b {
+    background-color: var(--text-normal);
+    border-radius: 2px;
+    height: 2px
 }
 
 .container__16e95 {
@@ -133885,6 +133910,7 @@ div.nagbar_c731ff {
     --chat-swipe-to-reply-background: var(--primary-660);
     --chat-swipe-to-reply-gradient-background: hsl(var(--black-500-hsl) / 0.1);
     --coachmark-bg: var(--primary-800);
+    --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
     --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.7);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
@@ -134202,6 +134228,7 @@ div.nagbar_c731ff {
     --chat-swipe-to-reply-background: var(--primary-160);
     --chat-swipe-to-reply-gradient-background: hsl(var(--white-500-hsl) / 0.4);
     --coachmark-bg: var(--white-500);
+    --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
     --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.54);
     --control-brand-foreground: var(--brand-500);
     --control-brand-foreground-new: var(--brand-500);
@@ -134519,6 +134546,7 @@ div.nagbar_c731ff {
     --chat-swipe-to-reply-background: var(--plum-22);
     --chat-swipe-to-reply-gradient-background: hsl(var(--black-500-hsl) / 0.1);
     --coachmark-bg: var(--plum-19);
+    --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
     --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.7);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
@@ -134836,6 +134864,7 @@ div.nagbar_c731ff {
     --chat-swipe-to-reply-background: var(--plum-22);
     --chat-swipe-to-reply-gradient-background: hsl(var(--black-500-hsl) / 0.1);
     --coachmark-bg: var(--plum-17);
+    --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
     --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.7);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
@@ -136360,4 +136389,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1c733c9b126a5a77ba62.css.map*/
+/*# sourceMappingURL=99387.c68970c051e650b36720.css.map*/
