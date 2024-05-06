@@ -36994,7 +36994,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290924", ", Version Hash: ").concat("e4769f34690d5a16ae684cafa87733613107157b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290927", ", Version Hash: ").concat("66f5ca257321eab0ba1a6e1d938b3f7b595bbbb7")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -50700,6 +50700,7 @@
                 PREMIUM_CANCEL_WHAT_YOU_LOSE_BACK: "Nevermind, keep Nitro",
                 PREMIUM_CANCEL_WHAT_YOU_LOSE_BACK_CTA: "Never mind, keep Nitro",
                 PREMIUM_CANCEL_WHAT_YOU_LOSE_SUBTITLE_TENURE_REWARD: "If you cancel, you will lose your reward progress and all of these rewards:",
+                PREMIUM_CANCEL_WHAT_YOU_LOSE_SUBTITLE_TENURE_REWARD_V2: "If you cancel, you will lose your reward progress and all of these perks:",
                 PREMIUM_PAUSE_INSTEAD: "Pause Instead",
                 PREMIUM_PAUSE_SELECT_TITLE: "Pause or cancel subscription",
                 PREMIUM_PAUSE_SELECT_SUBTITLE: "If you want to take a break from paid subscriptions, you have the option to pause it for a few months",
@@ -87520,8 +87521,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290924", "290924"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290924")), t = 0), t
+                let t = parseInt((e = "290927", "290927"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290927")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -114503,8 +114504,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290924",
-                    versionHash: "e4769f34690d5a16ae684cafa87733613107157b"
+                    buildNumber: "290927",
+                    versionHash: "66f5ca257321eab0ba1a6e1d938b3f7b595bbbb7"
                 }
             }
             n.r(t), n.d(t, {
@@ -169852,8 +169853,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715037657892",
-                                    build_number: "290924"
+                                    built_at: "1715038007303",
+                                    build_number: "290927"
                                 }
                             },
                             retries: 1
@@ -247905,7 +247906,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e4769f34690d5a16ae684cafa87733613107157b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "66f5ca257321eab0ba1a6e1d938b3f7b595bbbb7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276570,7 +276571,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290924"
+                                build_number: "290927"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -283897,7 +283898,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290924", "290924"), 10);
+                let a = parseInt((n = "290927", "290927"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -311362,4 +311363,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.208a8666996655afd298.js.map
+//# sourceMappingURL=35705.e81fcab914585673e63c.js.map
