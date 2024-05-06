@@ -37025,7 +37025,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290793", ", Version Hash: ").concat("b36b377d82353a5c4aa1c1e7ba5ba1b062285d89")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290797", ", Version Hash: ").concat("e60fe8175abc2909e97d8e4ad48852f8170c6aab")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -70255,7 +70255,7 @@
         100527: function(e, t, n) {
             "use strict";
             var i, r;
-            n.r(t), (r = i || (i = {})).POPOUT_WINDOW = "popout window", r.OVERLAY = "overlay", r.NOTICE = "notice", r.PREMIUM_UPSELL_TOOLTIP = "premium upsell tooltip", r.BADGE = "badge", r.USER_SETTINGS = "user settings", r.USER_SETTINGS_MENU = "user settings menu", r.USER_SETTINGS_GIFT_INVENTORY = "user settings gift inventory", r.ACCOUNT = "account", r.TEXT_AND_IMAGES = "text and images", r.GUILD_SETTINGS = "guild settings", r.OVERVIEW = "overview", r.STICKERS = "stickers", r.VANITY_URL = "vanity url", r.URI_SCHEME = "uri scheme", r.AKA = "aka", r.MESSAGES = "messages", r.NEW_MESSAGE_COMPOSER = "new message composer", r.NOTIFICATIONS = "notifications", r.NOTIFICATION_CENTER = "notification center", r.PUSH_NOTIFICATION = "push notification", r.FAMILY_CENTER = "family center", r.FRIENDS_LIST = "friends list", r.EXPANDED_FRIENDS_LIST = "expanded friends list", r.CONTACTS_LIST = "contacts list", r.ADD_FRIENDS = "add friends", r.FRIEND_REQUESTS = "friend requests", r.SUGGESTED_FRIENDS = "suggested friends", r.BLOCKED_USERS = "blocked users", r.PREMIUM_MARKETING = "premium marketing", r.PREMIUM_MARKETING_PLAN_COMPARISON = "premium marketing plan comparison", r.PREMIUM_PAYMENT_MODAL = "premium payment modal", r.PREMIUM_UPSELL_ALERT = "premium upsell alert", r.PREMIUM_UPSELL_MODAL = "premium upsell modal", r.PREMIUM_SETTINGS = "premium settings", r.PAYMENT_FLOW_TEST_PAGE = "payment flow test page", r.PREMIUM_PAYMENT_ACTION_SHEET = "premium payment action sheet", r.CHANNEL_CALL = "channel call", r.CHANNEL_CALL_CONNECTING_SCREEN = "channel call connecting screen", r.CHANNEL_DETAILS = "channel details", r.RTC_PANEL = "rtc panel", r.SOUNDBOARD_BUTTON = "soundboard button", r.SOUNDBOARD_POPOUT = "soundboard popout", r.SOUNDBOARD_WHEEL = "soundboard wheel", r.SOUNDBOARD_ACTION_SHEET = "soundboard action sheet", r.GIFT_BUTTON = "gift button", r.EXPRESSION_SUGGESTIONS = "expression suggestions", r.EMOJI_PICKER = "emoji picker", r.STICKER_PICKER = "sticker picker", r.STICKER_POPOUT = "sticker popout", r.PREMIUM_UPSELL = "premium upsell", r.EMPTY_STATE = "empty state", r.SUBSCRIPTION_DETAILS = "subscription details", r.SUBSCRIPTION_HEADER = "subscription header", r.ACCOUNT_CREDIT_BANNER = "account credit banner", r.PREMIUM_UNCANCEL_MODAL = "premium uncancel modal", r.PAST_DUE_ONE_TIME_PAYMENT_METHOD_BANNER = "past due one time payment method banner", r.STREAM_QUALITY_INDICATOR = "stream quality indicator", r.PREMIUM_TIER_0_TRIAL_ENDING_NOTICE = "premium tier 0 trial ending notice", r.PREMIUM_TIER_2_TRIAL_ENDING_NOTICE = "premium tier 2 trial ending notice", r.BOOSTED_GUILD_PERKS_MODAL = "boosted guild perks modal", r.GUILD_BOOSTING_PREMIUM_UPSELL = "guild boosting premium upsell", r.RPC = "rpc", r.BILLING_STANDALONE = "billing standalone", r.GUILD_CHANNEL_LIST = "guild channel list", r.GUILD_CHANNEL_LIST_FOOTER = "guild channel list footer", r.STICKER_MESSAGE = "sticker message", r.CHANNEL_TEXT_AREA = "channel text area", r.HEADER_BAR = "header bar", r.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL = "guild role subscription cancellation modal", r.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE = "guild role subscription purchase system message", r.GUILD_ROLE_SUBSCRIPTION_EMOJI_PICKER_UPSELL = "guild role subscription emoji picker upsell", r.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL = "guild role subscription emoji text popover upsell", r.PREMIUM_SUBSCRIPTION_CANCELLATION_MODAL = "premium subscription cancellation modal", r.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL = "application subscription cancellation modal", r.PENDING_PLAN_CHANGE_NOTICE = "pending plan change notice", r.SUBSCRIPTION_CANCEL_DOWNGRADE_MODAL = "subscription cancel downgrade modal", r.GUILD_HEADER = "guild header", r.GUILD_BANNER = "guild banner", r.GUILD_BANNER_NOTICE = "guild banner notice", r.GUILD_BOOST_PURCHASE_MODAL = "guild boost purchase modal", r.GUILD_BOOST_CANCELLATION_MODAL = "guild boost cancellation modal", r.GUILD_BOOST_UNCANCELLATION_MODAL = "guild boost uncancellation modal", r.GUILD_BOOSTING_PROGRESS_BAR = "guild boosting progress bar", r.GUILD_BOOSTING_TIER_NONE = "guild boosting tier none", r.GUILD_BOOSTING_TIER_1 = "guild boosting tier 1", r.GUILD_BOOSTING_TIER_2 = "guild boosting tier 2", r.GUILD_BOOSTING_TIER_3 = "guild boosting tier 3", r.GUILD_BOOSTING_UPSELL_BANNER = "guild boosting upsell banner", r.GUILD_BOOSTING_SIDEBAR_DISPLAY = "guild boosting sidebar display", r.GUILDS_LIST = "guilds list", r.ACTIVITY_CHANNEL_SELECTOR = "activity channel selector", r.ACTIVITY_DIRECTORY = "activity directory", r.ACTIVITY_TILE = "activity tile", r.ACTIVITY_UPSELL = "activity upsell", r.ACTIVITY_VOICE_CONTROLS_TOGGLE = "activity voice controls toggle", r.INSTANT_INVITE_MODAL = "instant invite modal", r.IMAGE_CROPPING_MODAL = "image cropping modal", r.GIF_PICKER = "gif picker", r.EXTERNAL_INVITE_LINK_MODAL = "external invite link modal", r.INVITE_MODAL = "invite modal", r.INVITE_EMBED = "invite embed", r.NEW_GUILD_BUTTON = "new guild button", r.CHARACTER_COUNT = "character count", r.DM_CHANNEL = "dm channel", r.GUILD_CHANNEL = "guild channel", r.FORUM_CHANNEL = "forum channel", r.FILE_UPLOAD_POPOUT = "file upload popout", r.VOICE_USER = "voice user", r.USER_LIST_ITEM = "user list item", r.EXECUTED_COMMAND = "executed command", r.EMOJI = "emoji", r.AVATAR = "avatar", r.USERNAME = "username", r.MEMBER_LIST = "member list", r.USER_MENTION = "user mention", r.ROLE_MENTION = "role mention", r.CONNECTIONS_ROLE_POPOUT = "connections role popout", r.PROFILE = "profile", r.PROFILE_MODAL = "profile modal", r.SIMPLIFIED_PROFILE_MODAL = "simplified profile modal", r.PROFILE_POPOUT = "profile popout", r.BITE_SIZE_PROFILE_POPOUT = "bite size profile popout", r.PROFILE_PANEL = "profile panel", r.GUILD_PROFILE = "guild profile", r.EDIT_AVATAR = "edit avatar", r.EDIT_BANNER = "edit banner", r.CHAT_INPUT = "chat input", r.CHAT_SIDEBAR = "chat sidebar", r.CREATE_THREAD = "create thread", r.PREMIUM_PREVIEW_UPSELL_HEADER = "premium preview upsell header", r.PREMIUM_UPSELL_OVERLAY = "premium upsell overlay", r.SELECT_IMAGE_MODAL = "select image modal", r.VIDEO_BACKGROUND_OPTIONS = "video background options", r.VIDEO_BACKGROUND_IMAGE_OPTION = "video background image option", r.VIDEO_BACKGROUND_CUSTOM_UPSELL = "video background custom upsell", r.CAMERA_PREVIEW = "camera preview", r.HOME_PAGE_PREMIUM_TAB = "home page premium tab", r.HOME_PAGE_SHOP_TAB = "home page shop tab", r.PREMIUM_MARKETING_SURFACE = "premium marketing surface", r.PREMIUM_MARKETING_HERO_CTA = "premium marketing hero cta", r.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR = "premium marketing referral program progress bar", r.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL = "premium marketing referral program share modal", r.PREMIUM_MARKETING_TIER_1_CTA = "premium marketing tier 1 cta", r.PREMIUM_MARKETING_TIER_2_CTA = "premium marketing tier 2 cta", r.PREMIUM_MARKETING_LOCALIZED_PRICING_TIER_2_CTA = "premium marketing localized pricing tier 2 cta", r.PREMIUM_MARKETING_SURFACE_HERO_CTA = "premium marketing surface hero cta", r.PREMIUM_MARKETING_SURFACE_TIER_2_CTA = "premium marketing surface tier 2 cta", r.PREMIUM_MARKETING_SURFACE_TIER_1_CTA = "premium marketing surface tier 1 cta", r.PREMIUM_MARKETING_TIER_CARD = "premium marketing tier card", r.PREMIUM_MARKETING_PERK_CARD = "premium marketing perk card", r.PREMIUM_MARKETING_FEATURE = "premium marketing feature", r.PREMIUM_MARKETING_COMPARISON_TABLE = "premium marketing comparison table", r.PREMIUM_MARKETING_FOOTER = "premium marketing footer", r.PREMIUM_MARKETING_GIFT_SECTION = "premium marketing gift section", r.CHANNEL_CALL_ACTION_BAR = "channel call action bar", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI = "aggregate premium upsell modal emoji", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_PROFILE_CUSTOMIZATION = "aggregate premium upsell modal profile customization", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_HD_STREAMING = "aggregate premium upsell modal hd streaming", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_LARGER_FILE_UPLOADS = "aggregate premium upsell modal larger file uploads", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_BOGO = "aggregate premium upsell modal bogo", r.CHANNEL_EXPANDED_CONTROLS = "channel expanded controls", r.VOICE_CONTROL_TRAY = "voice control tray", r.ACTIVE_NOW_COLUMN = "active now column", r.CONTEXT_MENU = "context menu", r.CHANNEL_ACTIVITY_FEED_VOICE_MENU = "channel activity feed voice menu", r.CHANNEL_AUDIT_LOG_MENU = "channel audit log menu", r.CHANNEL_CATEGORY_MENU = "channel category menu", r.CHANNEL_LIST_DIRECTORY_CHANNEL_MENU = "channel list menu", r.CHANNEL_LIST_STORE_CHANNEL_MENU = "channel list store channel menu", r.CHANNEL_LIST_TEXT_CHANNEL_MENU = "channel list text channel menu", r.CHANNEL_LIST_THREAD_MENU = "channel list thread menu", r.CHANNEL_LIST_VOICE_CHANNEL_MENU = "channel list voice channel menu", r.CHANNEL_TITLE_MENU = "channel title menu", r.GROUP_DM_MENU = "group dm menu", r.AUDIT_LOG_USER_MENU = "audit log user menu", r.BANNED_USER_MENU = "banned user menu", r.DM_USER_MENU = "dm user menu", r.GROUP_DM_USER_MENU = "group dm user menu", r.GUILD_CHANNEL_USER_MENU = "guild channel user menu", r.GUILD_MODERATION_USER_MENU = "guild moderation user menu", r.GUILD_MODERATION_RAID_MENU = "guild moderation raid menu", r.GUILD_SETTINGS_USER_MENU = "guild settings user menu", r.GUILD_USER_MENU = "guild user menu", r.UNKNOWN_USER_MENU = "unknown user menu", r.THREAD_USER_MENU = "thread user menu", r.USER_GENERIC_MENU = "user generic menu", r.USER_PROFILE_ACTIONS_MENU = "user profile actions menu", r.USER_PROFILE_OVERFLOW_MENU = "user profile overflow menu", r.VOICE_ACTION_SHEET = "voice action sheet", r.FOCUSED_VOICE_CONTROLS = "focused voice controls", r.MASKED_LINK = "masked link", r.LAST_NITRO_HOST_ACTION_SHEET = "last nitro host action sheet", r.LAST_NITRO_HOST_LEFT_ACTION_SHEET = "last nitro host left action sheet", r.PREMIUM_TIER_0_ANNOUNCEMENT_ACTION_SHEET = "premium tier 0 announcement action sheet", r.PS_VOICE_CONNECT_UPSELL = "ps voice connect upsell", r.PROFILE_THEME_UPSELL_MODAL = "profile theme upsell modal", r.EDIT_AVATAR_DECORATION_MODAL = "edit avatar decoration modal", r.EDIT_AVATAR_DECORATION_SHEET = "edit avatar decoration sheet", r.EDIT_PROFILE_EFFECT_MODAL = "edit profile effect modal", r.EDIT_PROFILE_EFFECT_ACTION_SHEET = "edit profile effect action sheet", r.COLLECTIBLES_MOBILE_SHOP_MARKETING_SHEET = "collectibles mobile shop marketing sheet", r.ACCOUNT_PROFILE_POPOUT = "account profile popout", r.CHANNEL_CALL_OVERFLOW_ACTION_SHEET = "channel_call_overflow_action_sheet", r.USER_SETTINGS_TRY_OUT_PREMIUM = "user settings try out premium", r.ACTIVITY_COACH_MARK_NITRO = "activity coach mark nitro", r.ACTIVITY_COACH_MARK_BOOSTING = "activity coach mark boosting", r.ACTIVITY_COACH_MARK_HALLOWEEN_2022 = "activity coach mark halloween 2022", r.PREMIUM_TRIAL_TUTORIAL_COACHMARK = "premium trial tutorial coachmark", r.PREMIUM_TRIAL_TUTORIAL_TOOLTIP = "premium trial tutorial tooltip", r.ACTIVITY_COACH_MARK_BASH_OUT = "activity coach mark bash out", r.ACTIVITY_COACH_MARK_POKER = "activity coach mark poker", r.ACTIVITIES_COACH_MARK_GAME_NIGHT = "activities coach mark game night", r.STAGE_CHANNEL_CALL = "stage channel call", r.REQUEST_TO_SPEAK = "request to speak", r.STAGE_VIDEO_LIMIT = "stage video limit", r.ACTIVITIES_MINI_SHELF = "activities mini shelf", r.ACTIVITIES_MINI_SHELF_BANNER = "activities mini shelf banner", r.APP_LAUNCHER = "app launcher", r.APP_DETAIL = "app detail", r.VC_TILE_ACTIVITY_INVITE = "vc tile activity invite", r.VC_TILE_ACTIVITY_SUGGESTION = "vc tile activity suggestion", r.VC_TILE_ACTIVITY_SHELF_BUTTON = "vc tile activity shelf button", r.BURST_REACTION_TUTORIAL_COACHMARK = "super reaction tutorial coachmark", r.MESSAGE_REACTIONS = "message reactions", r.MESSAGE_PREVIEW_REACTIONS = "message preview reactions", r.APP_ICON_EDITOR = "app icon editor", r.CLIENT_THEMES_EDITOR = "client themes editor", r.CLIENT_THEMES_THEME_SELECTOR = "client themes theme selector", r.AUTOMOD_PROFILE_QUARANTINE_ALERT = "automod profile quarantine alert", r.SHARE_NITRO_EMBED = "share nitro embed", r.EMBEDDED_ACTIVITY_MESSAGE = "embedded activity message", r.REFERRAL_TRIALS_COMPOSER_BUTTON = "referral trials composer button", r.REFERRAL_TRIALS_POPOUT = "referral trials popout", r.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL = "premium marketing announcement modal", r.PREMIUM_MARKETING_PAGE_BANNER = "premium marketing page banner", r.ACTIVITY_BOOKMARK = "activity bookmark", r.ACTIVITY_BOOKMARK_LAUNCHER = "activity bookmark launcher", r.ACTIVITY_INSTANCE_EMBED = "activity instance embed", r.ACTIVITY_DETAIL_PAGE = "activity detail page", r.ACTIVITIES_PAGE = "activities page", r.ACTIVITIES_PAGE_NOTIFICATION_DOT = "activities page cta", r.ACTIVITIES_PAGE_WHATS_NEW_TILE = "activities page whats new tile", r.VOICE_PANEL = "voice panel", r.VOICE_PANEL_PRE_JOIN = "voice panel pre-join content", r.ACTIVITIES_IM_FEELING_LUCKY = "activities im feeling lucky", r.ACTIVITIES_HAPPENING_NOW = "activities happening now", r.MEDIA_VIEWER = "media viewer", r.MESSAGE_LONG_PRESS_MENU = "message long press menu", r.CHANNEL_LONG_PRESS_MENU = "channel long press menu", r.COLLECTIBLES_SHOP = "collectibles shop", r.COLLECTIBLES_SHOP_FULLSCREEN = "collectibles shop fullscreen", r.COLLECTIBLES_SHOP_INDEX_PAGE = "collectibles shop index page", r.COLLECTIBLES_SHOP_CARD = "collectibles shop card", r.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON = "collectibles shop card preview button", r.COLLECTIBLES_SHOP_DETAILS_MODAL = "collectibles shop details modal", r.COLLECTIBLES_SHOP_PROFILE_PREVIEW = "collectibles shop long form profile preview", r.COLLECTIBLES_PROFILE_SETTINGS_UPSELL = "collectibles profile settings upsell", r.COLLECTIBLES_PAYMENT_MODAL = "collectibles payment modal", r.COLLECTIBLES_COLLECTED_MODAL = "collectibles collected modal", r.COLLECTIBLES_USER_POPOUT_UPSELL = "collectibles user popout upsell", r.COLLECTIBLES_FEATURE_EDUCATION_TOOLTIP = "collectibles feature education tooltip", r.PREMIUM_SUBSCRIPTION_APRIL_CAMPAIGN_MODAL = "premium subscription april campaign modal", r.PREMIUM_BILLING_INFO = "premium billing info", r.PREMIUM_SUBSCRIPTION_DETAILS = "premium subscription details", r.APP_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "application subscription payment source with invoice", r.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW = "guild boost slot cancellation modal current invoice preview", r.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW = "guild boost slot cancellation modal renewal invoice preview", r.GUILD_BOOSTING_REVIEW_PRORATED = "guild boosting review prorated", r.GUILD_BOOSTING_REVIEW_RENEWAL = "guild boosting review renewal", r.GUILD_ROLE_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "guild role subscription payment source with invoice", r.PREMIUM_PLAN_SELECT = "premium_plan_select", r.CANCEL_INVOICE_PREVIEW = "cancel_invoice_preview", r.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT = "premium subscription fine print content", r.SUBSCRIPTION_INVOICE_FOOTER = "subscription invoice footer", r.BILLING_SWITCH_PLAN_IMMEDIATE_PRORATED_INVOICE_PREVIEW = "billing switch plan immediate prorated invoice preview", r.BILLING_SWITCH_PLAN_IMMEDIATE_RENEWAL_INVOICE_PREVIEW = "billing switch plan immediate renewal invoice preview", r.GUILD_BOOSTING_PLAN_SELECT = "GUILD_BOOSTING_PLAN_SELECT", r.MEMBER_SAFETY_PAGE = "member safety page", r.GUILD_SETTINGS_MEMBERS_PAGE = "guild settings members page", r.GUILD_MEMBER_MOD_VIEW = "guild member mod view", r.GUILD_MEMBER_APPLICATION_REVIEW = "guild member application review", r.GUILD_PRODUCT_EMBED_CARD = "guild product embed card", r.GUILD_PRODUCT_INFO_MODAL = "guild product info modal", r.GUILD_PRODUCT_PAYMENT_MODAL = "guild product payment modal", r.GUILD_SHOP_PAGE = "guild shop page", r.ACTIVITY_SHELF_ACTIVITY_DETAILS = "activity shelf activty details", r.MESSAGE_REMIX_TAG = "message remix tag", r.MESSAGE_REMIX_BUTTON = "message remix button", r.HAPPENING_NOW_EMBEDDED_ACTIVITY = "happening now embedded activity", r.CLIPS_SETTINGS = "clips settings", r.CLIPS_GALLERY = "clips gallery", r.CLIPS_GALLERY_ITEM = "clips gallery item", r.CLIPS_EDITOR = "clips editor", r.CLIPS_SHARE_MODAL = "clips share modal", r.CHANNEL_ATTACH_BUTTON = "channel attach button", r.PREMIUM_TRIAL_OFFER_ACTION_SHEET = "premium trial offer action sheet", r.PREMIUM_SUBSCRIBER_NITRO_HOME = "premium subscriber nitro home", r.CLYDE_PROFILE_SHARE_MODAL = "clyde profile share modal", r.GUILD_EVENT_MODAL = "guild event modal", r.GUILD_EVENT_CARD = "guild event card", r.EVENT_SETTINGS = "event settings", r.GUILD_EVENT_RSVP_BUTTON = "guild event rsvp button", r.GIFT_CODE_MODAL = "gift code modal", r.APP_STOREFRONT = "app storefront", r.SHOP_PRODUCT_DETAILS = "shop product details", r.SEARCH_MEMBERS = "search members", r.POLL_VOTES = "poll votes", r.YOU_SCREEN = "you screen", r.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RESUME_PREVIEW = "billing payment modal paused subscription resume invoice preview", r.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RENEWAL_PREVIEW = "billing payment modal paused subscription renewal invoice preview", t.default = i
+            n.r(t), (r = i || (i = {})).POPOUT_WINDOW = "popout window", r.OVERLAY = "overlay", r.NOTICE = "notice", r.PREMIUM_UPSELL_TOOLTIP = "premium upsell tooltip", r.BADGE = "badge", r.USER_SETTINGS = "user settings", r.USER_SETTINGS_MENU = "user settings menu", r.USER_SETTINGS_GIFT_INVENTORY = "user settings gift inventory", r.ACCOUNT = "account", r.TEXT_AND_IMAGES = "text and images", r.GUILD_SETTINGS = "guild settings", r.OVERVIEW = "overview", r.STICKERS = "stickers", r.VANITY_URL = "vanity url", r.URI_SCHEME = "uri scheme", r.AKA = "aka", r.MESSAGES = "messages", r.NEW_MESSAGE_COMPOSER = "new message composer", r.NOTIFICATIONS = "notifications", r.NOTIFICATION_CENTER = "notification center", r.PUSH_NOTIFICATION = "push notification", r.FAMILY_CENTER = "family center", r.FRIENDS_LIST = "friends list", r.EXPANDED_FRIENDS_LIST = "expanded friends list", r.CONTACTS_LIST = "contacts list", r.ADD_FRIENDS = "add friends", r.FRIEND_REQUESTS = "friend requests", r.SUGGESTED_FRIENDS = "suggested friends", r.BLOCKED_USERS = "blocked users", r.PREMIUM_MARKETING = "premium marketing", r.PREMIUM_MARKETING_PLAN_COMPARISON = "premium marketing plan comparison", r.PREMIUM_PAYMENT_MODAL = "premium payment modal", r.PREMIUM_UPSELL_ALERT = "premium upsell alert", r.PREMIUM_UPSELL_MODAL = "premium upsell modal", r.PREMIUM_SETTINGS = "premium settings", r.PAYMENT_FLOW_TEST_PAGE = "payment flow test page", r.PREMIUM_PAYMENT_ACTION_SHEET = "premium payment action sheet", r.CHANNEL_CALL = "channel call", r.CHANNEL_CALL_CONNECTING_SCREEN = "channel call connecting screen", r.CHANNEL_DETAILS = "channel details", r.RTC_PANEL = "rtc panel", r.SOUNDBOARD_BUTTON = "soundboard button", r.SOUNDBOARD_POPOUT = "soundboard popout", r.SOUNDBOARD_WHEEL = "soundboard wheel", r.SOUNDBOARD_ACTION_SHEET = "soundboard action sheet", r.GIFT_BUTTON = "gift button", r.EXPRESSION_SUGGESTIONS = "expression suggestions", r.EMOJI_PICKER = "emoji picker", r.STICKER_PICKER = "sticker picker", r.STICKER_POPOUT = "sticker popout", r.PREMIUM_UPSELL = "premium upsell", r.EMPTY_STATE = "empty state", r.SUBSCRIPTION_DETAILS = "subscription details", r.SUBSCRIPTION_HEADER = "subscription header", r.ACCOUNT_CREDIT_BANNER = "account credit banner", r.PREMIUM_UNCANCEL_MODAL = "premium uncancel modal", r.PAST_DUE_ONE_TIME_PAYMENT_METHOD_BANNER = "past due one time payment method banner", r.STREAM_QUALITY_INDICATOR = "stream quality indicator", r.PREMIUM_TIER_0_TRIAL_ENDING_NOTICE = "premium tier 0 trial ending notice", r.PREMIUM_TIER_2_TRIAL_ENDING_NOTICE = "premium tier 2 trial ending notice", r.BOOSTED_GUILD_PERKS_MODAL = "boosted guild perks modal", r.GUILD_BOOSTING_PREMIUM_UPSELL = "guild boosting premium upsell", r.RPC = "rpc", r.BILLING_STANDALONE = "billing standalone", r.GUILD_CHANNEL_LIST = "guild channel list", r.GUILD_CHANNEL_LIST_FOOTER = "guild channel list footer", r.STICKER_MESSAGE = "sticker message", r.CHANNEL_TEXT_AREA = "channel text area", r.HEADER_BAR = "header bar", r.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL = "guild role subscription cancellation modal", r.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE = "guild role subscription purchase system message", r.GUILD_ROLE_SUBSCRIPTION_EMOJI_PICKER_UPSELL = "guild role subscription emoji picker upsell", r.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL = "guild role subscription emoji text popover upsell", r.PREMIUM_SUBSCRIPTION_CANCELLATION_MODAL = "premium subscription cancellation modal", r.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL = "application subscription cancellation modal", r.PENDING_PLAN_CHANGE_NOTICE = "pending plan change notice", r.SUBSCRIPTION_CANCEL_DOWNGRADE_MODAL = "subscription cancel downgrade modal", r.GUILD_HEADER = "guild header", r.GUILD_BANNER = "guild banner", r.GUILD_BANNER_NOTICE = "guild banner notice", r.GUILD_BOOST_PURCHASE_MODAL = "guild boost purchase modal", r.GUILD_BOOST_CANCELLATION_MODAL = "guild boost cancellation modal", r.GUILD_BOOST_UNCANCELLATION_MODAL = "guild boost uncancellation modal", r.GUILD_BOOSTING_PROGRESS_BAR = "guild boosting progress bar", r.GUILD_BOOSTING_TIER_NONE = "guild boosting tier none", r.GUILD_BOOSTING_TIER_1 = "guild boosting tier 1", r.GUILD_BOOSTING_TIER_2 = "guild boosting tier 2", r.GUILD_BOOSTING_TIER_3 = "guild boosting tier 3", r.GUILD_BOOSTING_UPSELL_BANNER = "guild boosting upsell banner", r.GUILD_BOOSTING_SIDEBAR_DISPLAY = "guild boosting sidebar display", r.GUILDS_LIST = "guilds list", r.ACTIVITY_CHANNEL_SELECTOR = "activity channel selector", r.ACTIVITY_DIRECTORY = "activity directory", r.ACTIVITY_TILE = "activity tile", r.ACTIVITY_UPSELL = "activity upsell", r.ACTIVITY_VOICE_CONTROLS_TOGGLE = "activity voice controls toggle", r.INSTANT_INVITE_MODAL = "instant invite modal", r.IMAGE_CROPPING_MODAL = "image cropping modal", r.GIF_PICKER = "gif picker", r.EXTERNAL_INVITE_LINK_MODAL = "external invite link modal", r.INVITE_MODAL = "invite modal", r.INVITE_EMBED = "invite embed", r.NEW_GUILD_BUTTON = "new guild button", r.CHARACTER_COUNT = "character count", r.DM_CHANNEL = "dm channel", r.GUILD_CHANNEL = "guild channel", r.FORUM_CHANNEL = "forum channel", r.FILE_UPLOAD_POPOUT = "file upload popout", r.VOICE_USER = "voice user", r.USER_LIST_ITEM = "user list item", r.EXECUTED_COMMAND = "executed command", r.EMOJI = "emoji", r.AVATAR = "avatar", r.USERNAME = "username", r.MEMBER_LIST = "member list", r.USER_MENTION = "user mention", r.ROLE_MENTION = "role mention", r.CONNECTIONS_ROLE_POPOUT = "connections role popout", r.PROFILE = "profile", r.PROFILE_MODAL = "profile modal", r.SIMPLIFIED_PROFILE_MODAL = "simplified profile modal", r.PROFILE_POPOUT = "profile popout", r.BITE_SIZE_PROFILE_POPOUT = "bite size profile popout", r.PROFILE_PANEL = "profile panel", r.GUILD_PROFILE = "guild profile", r.EDIT_AVATAR = "edit avatar", r.EDIT_BANNER = "edit banner", r.CHAT_INPUT = "chat input", r.CHAT_SIDEBAR = "chat sidebar", r.CREATE_THREAD = "create thread", r.PREMIUM_PREVIEW_UPSELL_HEADER = "premium preview upsell header", r.PREMIUM_UPSELL_OVERLAY = "premium upsell overlay", r.SELECT_IMAGE_MODAL = "select image modal", r.VIDEO_BACKGROUND_OPTIONS = "video background options", r.VIDEO_BACKGROUND_IMAGE_OPTION = "video background image option", r.VIDEO_BACKGROUND_CUSTOM_UPSELL = "video background custom upsell", r.CAMERA_PREVIEW = "camera preview", r.HOME_PAGE_PREMIUM_TAB = "home page premium tab", r.HOME_PAGE_SHOP_TAB = "home page shop tab", r.PREMIUM_MARKETING_SURFACE = "premium marketing surface", r.PREMIUM_MARKETING_HERO_CTA = "premium marketing hero cta", r.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR = "premium marketing referral program progress bar", r.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL = "premium marketing referral program share modal", r.PREMIUM_MARKETING_TIER_1_CTA = "premium marketing tier 1 cta", r.PREMIUM_MARKETING_TIER_2_CTA = "premium marketing tier 2 cta", r.PREMIUM_MARKETING_LOCALIZED_PRICING_TIER_2_CTA = "premium marketing localized pricing tier 2 cta", r.PREMIUM_MARKETING_SURFACE_HERO_CTA = "premium marketing surface hero cta", r.PREMIUM_MARKETING_SURFACE_TIER_2_CTA = "premium marketing surface tier 2 cta", r.PREMIUM_MARKETING_SURFACE_TIER_1_CTA = "premium marketing surface tier 1 cta", r.PREMIUM_MARKETING_TIER_CARD = "premium marketing tier card", r.PREMIUM_MARKETING_PERK_CARD = "premium marketing perk card", r.PREMIUM_MARKETING_FEATURE = "premium marketing feature", r.PREMIUM_MARKETING_COMPARISON_TABLE = "premium marketing comparison table", r.PREMIUM_MARKETING_FOOTER = "premium marketing footer", r.PREMIUM_MARKETING_GIFT_SECTION = "premium marketing gift section", r.CHANNEL_CALL_ACTION_BAR = "channel call action bar", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI = "aggregate premium upsell modal emoji", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_PROFILE_CUSTOMIZATION = "aggregate premium upsell modal profile customization", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_HD_STREAMING = "aggregate premium upsell modal hd streaming", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_LARGER_FILE_UPLOADS = "aggregate premium upsell modal larger file uploads", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_BOGO = "aggregate premium upsell modal bogo", r.CHANNEL_EXPANDED_CONTROLS = "channel expanded controls", r.VOICE_CONTROL_TRAY = "voice control tray", r.ACTIVE_NOW_COLUMN = "active now column", r.CONTEXT_MENU = "context menu", r.CHANNEL_ACTIVITY_FEED_VOICE_MENU = "channel activity feed voice menu", r.CHANNEL_AUDIT_LOG_MENU = "channel audit log menu", r.CHANNEL_CATEGORY_MENU = "channel category menu", r.CHANNEL_LIST_DIRECTORY_CHANNEL_MENU = "channel list menu", r.CHANNEL_LIST_STORE_CHANNEL_MENU = "channel list store channel menu", r.CHANNEL_LIST_TEXT_CHANNEL_MENU = "channel list text channel menu", r.CHANNEL_LIST_THREAD_MENU = "channel list thread menu", r.CHANNEL_LIST_VOICE_CHANNEL_MENU = "channel list voice channel menu", r.CHANNEL_TITLE_MENU = "channel title menu", r.GROUP_DM_MENU = "group dm menu", r.AUDIT_LOG_USER_MENU = "audit log user menu", r.BANNED_USER_MENU = "banned user menu", r.DM_USER_MENU = "dm user menu", r.GROUP_DM_USER_MENU = "group dm user menu", r.GUILD_CHANNEL_USER_MENU = "guild channel user menu", r.GUILD_MODERATION_USER_MENU = "guild moderation user menu", r.GUILD_MODERATION_RAID_MENU = "guild moderation raid menu", r.GUILD_SETTINGS_USER_MENU = "guild settings user menu", r.GUILD_USER_MENU = "guild user menu", r.UNKNOWN_USER_MENU = "unknown user menu", r.THREAD_USER_MENU = "thread user menu", r.USER_GENERIC_MENU = "user generic menu", r.USER_PROFILE_ACTIONS_MENU = "user profile actions menu", r.USER_PROFILE_OVERFLOW_MENU = "user profile overflow menu", r.VOICE_ACTION_SHEET = "voice action sheet", r.FOCUSED_VOICE_CONTROLS = "focused voice controls", r.MASKED_LINK = "masked link", r.LAST_NITRO_HOST_ACTION_SHEET = "last nitro host action sheet", r.LAST_NITRO_HOST_LEFT_ACTION_SHEET = "last nitro host left action sheet", r.PREMIUM_TIER_0_ANNOUNCEMENT_ACTION_SHEET = "premium tier 0 announcement action sheet", r.PS_VOICE_CONNECT_UPSELL = "ps voice connect upsell", r.PROFILE_THEME_UPSELL_MODAL = "profile theme upsell modal", r.EDIT_AVATAR_DECORATION_MODAL = "edit avatar decoration modal", r.EDIT_AVATAR_DECORATION_SHEET = "edit avatar decoration sheet", r.EDIT_PROFILE_EFFECT_MODAL = "edit profile effect modal", r.EDIT_PROFILE_EFFECT_ACTION_SHEET = "edit profile effect action sheet", r.COLLECTIBLES_MOBILE_SHOP_MARKETING_SHEET = "collectibles mobile shop marketing sheet", r.ACCOUNT_PROFILE_POPOUT = "account profile popout", r.CHANNEL_CALL_OVERFLOW_ACTION_SHEET = "channel_call_overflow_action_sheet", r.USER_SETTINGS_TRY_OUT_PREMIUM = "user settings try out premium", r.ACTIVITY_COACH_MARK_NITRO = "activity coach mark nitro", r.ACTIVITY_COACH_MARK_BOOSTING = "activity coach mark boosting", r.ACTIVITY_COACH_MARK_HALLOWEEN_2022 = "activity coach mark halloween 2022", r.PREMIUM_TRIAL_TUTORIAL_COACHMARK = "premium trial tutorial coachmark", r.PREMIUM_TRIAL_TUTORIAL_TOOLTIP = "premium trial tutorial tooltip", r.ACTIVITY_COACH_MARK_BASH_OUT = "activity coach mark bash out", r.ACTIVITY_COACH_MARK_POKER = "activity coach mark poker", r.ACTIVITIES_COACH_MARK_GAME_NIGHT = "activities coach mark game night", r.STAGE_CHANNEL_CALL = "stage channel call", r.REQUEST_TO_SPEAK = "request to speak", r.STAGE_VIDEO_LIMIT = "stage video limit", r.ACTIVITIES_MINI_SHELF = "activities mini shelf", r.ACTIVITIES_MINI_SHELF_BANNER = "activities mini shelf banner", r.APP_LAUNCHER = "app launcher", r.APP_DETAIL = "app detail", r.VC_TILE_ACTIVITY_INVITE = "vc tile activity invite", r.VC_TILE_ACTIVITY_SUGGESTION = "vc tile activity suggestion", r.VC_TILE_ACTIVITY_SHELF_BUTTON = "vc tile activity shelf button", r.BURST_REACTION_TUTORIAL_COACHMARK = "super reaction tutorial coachmark", r.MESSAGE_REACTIONS = "message reactions", r.MESSAGE_PREVIEW_REACTIONS = "message preview reactions", r.APP_ICON_EDITOR = "app icon editor", r.CLIENT_THEMES_EDITOR = "client themes editor", r.CLIENT_THEMES_THEME_SELECTOR = "client themes theme selector", r.AUTOMOD_PROFILE_QUARANTINE_ALERT = "automod profile quarantine alert", r.SHARE_NITRO_EMBED = "share nitro embed", r.EMBEDDED_ACTIVITY_MESSAGE = "embedded activity message", r.REFERRAL_TRIALS_COMPOSER_BUTTON = "referral trials composer button", r.REFERRAL_TRIALS_POPOUT = "referral trials popout", r.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL = "premium marketing announcement modal", r.PREMIUM_MARKETING_PAGE_BANNER = "premium marketing page banner", r.ACTIVITY_BOOKMARK = "activity bookmark", r.ACTIVITY_BOOKMARK_LAUNCHER = "activity bookmark launcher", r.ACTIVITY_INSTANCE_EMBED = "activity instance embed", r.ACTIVITY_DETAIL_PAGE = "activity detail page", r.ACTIVITIES_PAGE = "activities page", r.ACTIVITIES_PAGE_NOTIFICATION_DOT = "activities page cta", r.ACTIVITIES_PAGE_WHATS_NEW_TILE = "activities page whats new tile", r.VOICE_PANEL = "voice panel", r.VOICE_PANEL_PRE_JOIN = "voice panel pre-join content", r.ACTIVITIES_IM_FEELING_LUCKY = "activities im feeling lucky", r.ACTIVITIES_HAPPENING_NOW = "activities happening now", r.MEDIA_VIEWER = "media viewer", r.MESSAGE_LONG_PRESS_MENU = "message long press menu", r.CHANNEL_LONG_PRESS_MENU = "channel long press menu", r.COLLECTIBLES_SHOP = "collectibles shop", r.COLLECTIBLES_SHOP_FULLSCREEN = "collectibles shop fullscreen", r.COLLECTIBLES_SHOP_INDEX_PAGE = "collectibles shop index page", r.COLLECTIBLES_SHOP_CARD = "collectibles shop card", r.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON = "collectibles shop card preview button", r.COLLECTIBLES_SHOP_DETAILS_MODAL = "collectibles shop details modal", r.COLLECTIBLES_SHOP_PROFILE_PREVIEW = "collectibles shop long form profile preview", r.COLLECTIBLES_PROFILE_SETTINGS_UPSELL = "collectibles profile settings upsell", r.COLLECTIBLES_PAYMENT_MODAL = "collectibles payment modal", r.COLLECTIBLES_COLLECTED_MODAL = "collectibles collected modal", r.COLLECTIBLES_USER_POPOUT_UPSELL = "collectibles user popout upsell", r.COLLECTIBLES_FEATURE_EDUCATION_TOOLTIP = "collectibles feature education tooltip", r.PREMIUM_SUBSCRIPTION_APRIL_CAMPAIGN_MODAL = "premium subscription april campaign modal", r.PREMIUM_BILLING_INFO = "premium billing info", r.PREMIUM_SUBSCRIPTION_DETAILS = "premium subscription details", r.APP_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "application subscription payment source with invoice", r.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW = "guild boost slot cancellation modal current invoice preview", r.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW = "guild boost slot cancellation modal renewal invoice preview", r.GUILD_BOOSTING_REVIEW_PRORATED = "guild boosting review prorated", r.GUILD_BOOSTING_REVIEW_RENEWAL = "guild boosting review renewal", r.GUILD_ROLE_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "guild role subscription payment source with invoice", r.PREMIUM_PLAN_SELECT = "premium_plan_select", r.CANCEL_INVOICE_PREVIEW = "cancel_invoice_preview", r.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT = "premium subscription fine print content", r.SUBSCRIPTION_INVOICE_FOOTER = "subscription invoice footer", r.BILLING_SWITCH_PLAN_IMMEDIATE_PRORATED_INVOICE_PREVIEW = "billing switch plan immediate prorated invoice preview", r.BILLING_SWITCH_PLAN_IMMEDIATE_RENEWAL_INVOICE_PREVIEW = "billing switch plan immediate renewal invoice preview", r.GUILD_BOOSTING_PLAN_SELECT = "GUILD_BOOSTING_PLAN_SELECT", r.MEMBER_SAFETY_PAGE = "member safety page", r.GUILD_SETTINGS_MEMBERS_PAGE = "guild settings members page", r.GUILD_MEMBER_MOD_VIEW = "guild member mod view", r.GUILD_MEMBER_APPLICATION_REVIEW = "guild member application review", r.GUILD_PRODUCT_EMBED_CARD = "guild product embed card", r.GUILD_PRODUCT_INFO_MODAL = "guild product info modal", r.GUILD_PRODUCT_PAYMENT_MODAL = "guild product payment modal", r.GUILD_SHOP_PAGE = "guild shop page", r.ACTIVITY_SHELF_ACTIVITY_DETAILS = "activity shelf activty details", r.MESSAGE_REMIX_TAG = "message remix tag", r.MESSAGE_REMIX_BUTTON = "message remix button", r.HAPPENING_NOW_EMBEDDED_ACTIVITY = "happening now embedded activity", r.CLIPS_SETTINGS = "clips settings", r.CLIPS_GALLERY = "clips gallery", r.CLIPS_GALLERY_ITEM = "clips gallery item", r.CLIPS_EDITOR = "clips editor", r.CLIPS_SHARE_MODAL = "clips share modal", r.CHANNEL_ATTACH_BUTTON = "channel attach button", r.PREMIUM_TRIAL_OFFER_ACTION_SHEET = "premium trial offer action sheet", r.PREMIUM_SUBSCRIBER_NITRO_HOME = "premium subscriber nitro home", r.CLYDE_PROFILE_SHARE_MODAL = "clyde profile share modal", r.GUILD_EVENT_MODAL = "guild event modal", r.GUILD_EVENT_CARD = "guild event card", r.EVENT_SETTINGS = "event settings", r.GUILD_EVENT_RSVP_BUTTON = "guild event rsvp button", r.GIFT_CODE_MODAL = "gift code modal", r.APP_STOREFRONT = "app storefront", r.SHOP_PRODUCT_DETAILS = "shop product details", r.SEARCH_MEMBERS = "search members", r.POLL_VOTES = "poll votes", r.YOU_SCREEN = "you screen", r.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RESUME_PREVIEW = "billing payment modal paused subscription resume invoice preview", r.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RENEWAL_PREVIEW = "billing payment modal paused subscription renewal invoice preview", r.CLAN_GUILD_PROFILE = "clan guild profile", r.CLAN_TAG = "clan tag", t.default = i
         },
         98302: function(e, t, n) {
             "use strict";
@@ -87517,8 +87517,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290793", "290793"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290793")), t = 0), t
+                let t = parseInt((e = "290797", "290797"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290797")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -101855,6 +101855,9 @@
         970606: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                trackClanApplyToJoinViewed: function() {
+                    return l
+                },
                 trackClanProfileViewed: function() {
                     return o
                 }
@@ -101877,9 +101880,28 @@
                     is_member: c,
                     has_join_request: n,
                     source: o,
+                    location: o,
                     viewing_user_id: d,
                     tag_owner_user_id: u,
                     message_id: l
+                })
+            }
+
+            function l(e) {
+                let {
+                    guildId: t,
+                    source: n,
+                    location: r,
+                    messageId: o,
+                    tagUserId: l
+                } = e, u = i.default.getId();
+                a.default.track(s.AnalyticEvents.CLAN_APPLY_TO_JOIN_VIEWED, {
+                    guild_id: t,
+                    source: n,
+                    location: r,
+                    viewing_user_id: u,
+                    tag_owner_user_id: l,
+                    message_id: o
                 })
             }
         },
@@ -102567,16 +102589,20 @@
             "use strict";
             n.r(t), n.d(t, {
                 openAdoptClanIdentityModal: function() {
-                    return o
+                    return l
+                },
+                openClanApplyFlow: function() {
+                    return u
                 }
             });
             var i = n("735250");
             n("470079");
             var r = n("524437"),
                 a = n("481060"),
-                s = n("645041");
+                s = n("645041"),
+                o = n("970606");
 
-            function o(e) {
+            function l(e) {
                 (0, a.openModalLazy)(async () => {
                     let {
                         default: t
@@ -102587,6 +102613,21 @@
                             (0, s.markContentAsDismissed)(r.DismissibleGuildContent.ADOPT_CLAN_IDENTITY_NOTICE, e, !0, t), n.onClose()
                         },
                         guildId: e
+                    })
+                })
+            }
+
+            function u(e, t, r) {
+                (0, o.trackClanApplyToJoinViewed)({
+                    guildId: e,
+                    ...r
+                }), (0, a.openModalLazy)(async () => {
+                    let {
+                        default: e
+                    } = await Promise.all([n.e("99387"), n.e("80026"), n.e("18482")]).then(n.bind(n, "767593"));
+                    return n => (0, i.jsx)(e, {
+                        ...n,
+                        clan: t
                     })
                 })
             }
@@ -102884,59 +102925,58 @@
                 r = n("470079"),
                 a = n("481060"),
                 s = n("442837"),
-                o = n("231467"),
-                l = n("741606"),
-                u = n("703656"),
-                d = n("314897"),
-                _ = n("271383"),
-                c = n("594174"),
-                E = n("970606"),
-                I = n("645896"),
-                T = n("905362"),
-                f = n("353093"),
-                S = n("169559"),
-                h = n("284019"),
-                A = n("981631"),
-                m = n("689938"),
-                N = n("917013");
+                o = n("100527"),
+                l = n("231467"),
+                u = n("741606"),
+                d = n("703656"),
+                _ = n("314897"),
+                c = n("271383"),
+                E = n("594174"),
+                I = n("970606"),
+                T = n("645896"),
+                f = n("905362"),
+                S = n("353093"),
+                h = n("169559"),
+                A = n("284019"),
+                m = n("981631"),
+                N = n("689938"),
+                p = n("917013");
 
-            function p(e) {
+            function O(e) {
                 e.stopPropagation()
             }
             t.default = r.memo(function(e) {
-                var t, O;
+                var t, n;
                 let {
                     clan: R,
                     isLoading: C,
                     onClose: g,
                     profileViewedAnalytics: L
-                } = e, v = (0, I.useClanInfo)(null !== (O = null == R ? void 0 : R.identityGuildId) && void 0 !== O ? O : null), D = null == R ? void 0 : R.tag, M = (0, S.default)("clan_guild_profile"), y = null == R ? void 0 : R.identityGuildId, P = (0, s.useStateFromStores)([d.default], () => d.default.getId()), U = (0, s.useStateFromStores)([_.default], () => null != y ? _.default.getMember(y, P) : null, [y, P]), b = (0, s.useStateFromStores)([c.default], () => c.default.getUser(P), [P]), G = (null == U ? void 0 : U.joinedAt) != null, w = (0, f.isGuildAdoptedUserClanIdentity)(y, null == b ? void 0 : b.clan), B = null != (0, l.default)(y);
+                } = e, v = (0, T.useClanInfo)(null !== (n = null == R ? void 0 : R.identityGuildId) && void 0 !== n ? n : null), D = null == R ? void 0 : R.tag, M = (0, h.default)("clan_guild_profile"), y = null == R ? void 0 : R.identityGuildId, P = (0, s.useStateFromStores)([_.default], () => _.default.getId()), U = (0, s.useStateFromStores)([c.default], () => null != y ? c.default.getMember(y, P) : null, [y, P]), b = (0, s.useStateFromStores)([E.default], () => E.default.getUser(P), [P]), G = (null == U ? void 0 : U.joinedAt) != null, w = (0, S.isGuildAdoptedUserClanIdentity)(y, null == b ? void 0 : b.clan), B = null != (0, u.default)(y);
                 r.useEffect(() => {
-                    null != y && (0, E.trackClanProfileViewed)({
+                    null != y && (0, I.trackClanProfileViewed)({
                         guildId: y,
                         hasJoinRequest: B,
-                        ...L
+                        ...L,
+                        location: o.default.CLAN_GUILD_PROFILE
                     })
                 }, [y, B, L]);
                 let k = r.useCallback(e => {
-                        null != y && (e.stopPropagation(), e.preventDefault(), null == g || g(), (0, T.openAdoptClanIdentityModal)(y))
+                        null != y && (e.stopPropagation(), e.preventDefault(), null == g || g(), (0, f.openAdoptClanIdentityModal)(y))
                     }, [y, g]),
                     V = r.useCallback(e => {
-                        if (null != v) e.stopPropagation(), e.preventDefault(), null == g || g(), !B && (0, a.openModalLazy)(async () => {
-                            let {
-                                default: e
-                            } = await Promise.all([n.e("99387"), n.e("80026"), n.e("18482")]).then(n.bind(n, "767593"));
-                            return t => (0, i.jsx)(e, {
-                                ...t,
-                                clan: v
-                            })
+                        if (null != v && null != y) e.stopPropagation(), e.preventDefault(), null == g || g(), !B && (0, f.openClanApplyFlow)(y, v, {
+                            source: null == L ? void 0 : L.source,
+                            messageId: null == L ? void 0 : L.messageId,
+                            tagUserId: null == L ? void 0 : L.tagUserId,
+                            location: o.default.CLAN_GUILD_PROFILE
                         })
-                    }, [v, B, g]),
+                    }, [v, y, B, g, L]),
                     x = r.useCallback(() => {
-                        null != y && (0, u.transitionTo)(A.Routes.GUILD_MEMBER_VERIFICATION(y))
+                        null != y && (0, d.transitionTo)(m.Routes.GUILD_MEMBER_VERIFICATION(y))
                     }, [y]),
                     F = r.useCallback(() => {
-                        null != y && (0, u.transitionToGuild)(y)
+                        null != y && (0, d.transitionToGuild)(y)
                     }, [y]),
                     H = r.useMemo(() => {
                         var e, t;
@@ -102944,7 +102984,7 @@
                             color: a.Button.Colors.BRAND,
                             size: a.Button.Sizes.SMALL,
                             fullWidth: !0,
-                            className: N.button,
+                            className: p.button,
                             themeColor: null !== (t = null == v ? void 0 : null === (e = v.branding) || void 0 === e ? void 0 : e.primaryColor) && void 0 !== t ? t : null
                         }
                     }, [null == v ? void 0 : null === (t = v.branding) || void 0 === t ? void 0 : t.primaryColor]),
@@ -102953,48 +102993,48 @@
                             case !M:
                                 return null;
                             case !G && B:
-                                return (0, i.jsx)(h.default, {
+                                return (0, i.jsx)(A.default, {
                                     onClick: x,
                                     ...H,
-                                    children: m.default.Messages.CLAN_USER_APPLICATION_EXISTS_TAG_GUILD_PROFILE_CTA
+                                    children: N.default.Messages.CLAN_USER_APPLICATION_EXISTS_TAG_GUILD_PROFILE_CTA
                                 });
                             case !G:
-                                return (0, i.jsx)(h.default, {
+                                return (0, i.jsx)(A.default, {
                                     onClick: V,
                                     ...H,
-                                    children: m.default.Messages.CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA
+                                    children: N.default.Messages.CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA
                                 });
                             case G && !w:
-                                return (0, i.jsx)(h.default, {
+                                return (0, i.jsx)(A.default, {
                                     onClick: k,
                                     ...H,
-                                    children: m.default.Messages.CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA
+                                    children: N.default.Messages.CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA
                                 });
                             case G && w:
-                                return (0, i.jsx)(h.default, {
+                                return (0, i.jsx)(A.default, {
                                     onClick: F,
                                     ...H,
-                                    children: m.default.Messages.CLAN_USER_GO_TO_CLAN_CTA
+                                    children: N.default.Messages.CLAN_USER_GO_TO_CLAN_CTA
                                 });
                             default:
                                 return null
                         }
                     }, [H, k, V, x, F, B, w, G, M]),
                     j = r.useMemo(() => ({
-                        className: N.container,
-                        onClick: p
+                        className: p.container,
+                        onClick: O
                     }), []);
                 return null == D || null == v || null == y || C ? (0, i.jsx)("div", {
                     ...j,
                     children: (0, i.jsx)(a.Spinner, {})
                 }) : (0, i.jsxs)("div", {
                     ...j,
-                    children: [(0, i.jsx)(o.ClanDiscoveryCardView, {
+                    children: [(0, i.jsx)(l.ClanDiscoveryCardView, {
                         clan: v,
-                        className: N.cardContainer,
+                        className: p.cardContainer,
                         isMember: G
                     }), null != Y && (0, i.jsx)("div", {
-                        className: N.buttonContainer,
+                        className: p.buttonContainer,
                         children: Y
                     })]
                 })
@@ -115376,8 +115416,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290793",
-                    versionHash: "b36b377d82353a5c4aa1c1e7ba5ba1b062285d89"
+                    buildNumber: "290797",
+                    versionHash: "e60fe8175abc2909e97d8e4ad48852f8170c6aab"
                 }
             }
             n.r(t), n.d(t, {
@@ -116207,10 +116247,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 ClanDiscoveryCardTraits: function() {
-                    return v
+                    return D
                 },
                 ClanDiscoveryCardView: function() {
-                    return M
+                    return y
                 }
             }), n("47120");
             var i = n("735250"),
@@ -116220,24 +116260,25 @@
                 o = n("481060"),
                 l = n("442837"),
                 u = n("835473"),
-                d = n("676327"),
-                _ = n("353093"),
-                c = n("114487"),
-                E = n("550271"),
-                I = n("175557"),
-                T = n("937111"),
-                f = n("703656"),
-                S = n("271383"),
-                h = n("594174"),
-                A = n("626135"),
-                m = n("768581"),
-                N = n("524989"),
-                p = n("981631"),
-                O = n("308083"),
-                R = n("689938"),
-                C = n("228706");
+                d = n("905362"),
+                _ = n("676327"),
+                c = n("353093"),
+                E = n("114487"),
+                I = n("550271"),
+                T = n("175557"),
+                f = n("937111"),
+                S = n("703656"),
+                h = n("271383"),
+                A = n("594174"),
+                m = n("626135"),
+                N = n("768581"),
+                p = n("524989"),
+                O = n("981631"),
+                R = n("308083"),
+                C = n("689938"),
+                g = n("228706");
 
-            function g(e) {
+            function L(e) {
                 let {
                     clan: t
                 } = e, {
@@ -116245,9 +116286,9 @@
                     branding: {
                         primaryColor: a
                     }
-                } = t, s = n.filter(e => e !== O.EMPTY_WILDCARD).join(", "), l = (0, o.useToken)(o.tokens.colors.BACKGROUND_FLOATING), u = (0, d.getAccessibleClanColor)(a, l.hex()), _ = r.useRef(null), [c, E] = r.useState(!1);
+                } = t, s = n.filter(e => e !== R.EMPTY_WILDCARD).join(", "), l = (0, o.useToken)(o.tokens.colors.BACKGROUND_FLOATING), u = (0, _.getAccessibleClanColor)(a, l.hex()), d = r.useRef(null), [c, E] = r.useState(!1);
                 if (r.useEffect(() => {
-                        let e = _.current;
+                        let e = d.current;
                         null != e && null != e.offsetWidth && null != e.scrollWidth && E(e.offsetWidth < e.scrollWidth)
                     }, []), 0 === s.length) return null;
                 let I = null != u ? {
@@ -116257,7 +116298,7 @@
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-xs/normal",
                         color: "text-secondary",
-                        className: C.clanInfoItem,
+                        className: g.clanInfoItem,
                         children: "\xb7"
                     }), (0, i.jsx)(o.Tooltip, {
                         text: s,
@@ -116266,22 +116307,22 @@
                         children: e => (0, i.jsx)("span", {
                             ...e,
                             style: I,
-                            className: C.wildCardText,
-                            ref: _,
+                            className: g.wildCardText,
+                            ref: d,
                             children: s
                         })
                     })]
                 })
             }
 
-            function L(e) {
+            function v(e) {
                 let {
                     trait: t,
                     isHighlighted: n
                 } = e;
                 return (0, i.jsx)("div", {
-                    className: s()(C.trait, {
-                        [C.highlightedTrait]: n
+                    className: s()(g.trait, {
+                        [g.highlightedTrait]: n
                     }),
                     children: (0, i.jsx)(o.Text, {
                         variant: "text-xs/normal",
@@ -116292,29 +116333,29 @@
                 })
             }
 
-            function v(e) {
+            function D(e) {
                 let {
                     traits: t,
                     traitsToHighlight: n,
                     expanded: a
                 } = e, s = r.useMemo(() => new Set(n), [n]);
                 return a ? (0, i.jsx)("div", {
-                    className: C.expandedTraitsContainer,
-                    children: t.map(e => (0, i.jsx)(L, {
+                    className: g.expandedTraitsContainer,
+                    children: t.map(e => (0, i.jsx)(v, {
                         trait: e,
                         isHighlighted: s.has(e)
                     }, e))
-                }) : (0, i.jsx)(N.default, {
+                }) : (0, i.jsx)(p.default, {
                     items: t,
-                    renderItem: e => (0, i.jsx)(L, {
+                    renderItem: e => (0, i.jsx)(v, {
                         trait: e,
                         isHighlighted: s.has(e)
                     }, e),
                     renderOverflow: e => (0, i.jsx)(o.Tooltip, {
                         text: (0, i.jsx)("div", {
-                            className: C.overflowTooltip,
+                            className: g.overflowTooltip,
                             children: e.map(e => (0, i.jsx)("div", {
-                                className: C.trait,
+                                className: g.trait,
                                 children: (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-normal",
@@ -116326,22 +116367,22 @@
                         "aria-label": "overflow",
                         children: t => (0, i.jsx)("div", {
                             ...t,
-                            className: C.trait,
+                            className: g.trait,
                             children: (0, i.jsx)(o.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-normal",
-                                children: R.default.Messages.CLAN_DISCOVERY_TRAIT_OVERFLOW.format({
+                                children: C.default.Messages.CLAN_DISCOVERY_TRAIT_OVERFLOW.format({
                                     count: e.length
                                 })
                             })
                         })
                     }),
                     maxLines: 2,
-                    className: C.traitsContainer
+                    className: g.traitsContainer
                 })
             }
 
-            function D(e) {
+            function M(e) {
                 let {
                     games: t
                 } = e, n = t.filter(e => null != e && null != e.icon), a = n.slice(0, 3), s = r.useMemo(() => {
@@ -116351,19 +116392,19 @@
                     if (null == t) return null;
                     if (n.length > 4) {
                         let r = n.slice(3).map(e => e.name),
-                            a = (0, _.formatSelectionList)(r);
+                            a = (0, c.formatSelectionList)(r);
                         return (0, i.jsx)(o.Tooltip, {
                             text: a,
                             position: "bottom",
                             children: n => (0, i.jsxs)("div", {
                                 ...n,
-                                className: C.cardFooterGame,
+                                className: g.cardFooterGame,
                                 children: [(0, i.jsx)("img", {
                                     src: t,
                                     alt: e.name,
-                                    className: C.cardFooterGameImg
+                                    className: g.cardFooterGameImg
                                 }), (0, i.jsx)("div", {
-                                    className: C.cardFooterOtherCount,
+                                    className: g.cardFooterOtherCount,
                                     children: (0, i.jsx)(o.Text, {
                                         variant: "text-xs/medium",
                                         color: "always-white",
@@ -116378,11 +116419,11 @@
                         position: "bottom",
                         children: n => (0, i.jsx)("div", {
                             ...n,
-                            className: C.cardFooterGame,
+                            className: g.cardFooterGame,
                             children: (0, i.jsx)("img", {
                                 src: t,
                                 alt: e.name,
-                                className: C.cardFooterGameImg
+                                className: g.cardFooterGameImg
                             })
                         })
                     })
@@ -116395,11 +116436,11 @@
                             position: "bottom",
                             children: n => (0, i.jsx)("div", {
                                 ...n,
-                                className: C.cardFooterGame,
+                                className: g.cardFooterGame,
                                 children: (0, i.jsx)("img", {
                                     src: t,
                                     alt: e.name,
-                                    className: C.cardFooterGameImg
+                                    className: g.cardFooterGameImg
                                 })
                             })
                         }, e.id)
@@ -116407,7 +116448,7 @@
                 })
             }
 
-            function M(e) {
+            function y(e) {
                 var t, n;
                 let {
                     clan: r,
@@ -116415,57 +116456,57 @@
                     expanded: l,
                     isMember: d,
                     traitsToHighlight: _,
-                    className: T,
+                    className: c,
                     showBrandingFooter: f = !1
                 } = e, {
                     tag: S,
                     badge: h,
                     branding: {
                         primaryColor: A,
-                        secondaryColor: N
+                        secondaryColor: m
                     },
                     banner: p
-                } = r, L = (0, u.default)(r.games), M = R.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
+                } = r, O = (0, u.default)(r.games), v = C.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
                     count: r.memberCount
-                }), y = null !== (t = m.default.getGuildIconURL({
+                }), y = null !== (t = N.default.getGuildIconURL({
                     id: r.id,
                     icon: r.icon,
                     size: 64,
                     canAnimate: !0
                 })) && void 0 !== t ? t : void 0;
                 return (0, i.jsxs)("div", {
-                    className: s()(C.card, T),
+                    className: s()(g.card, c),
                     children: [(0, i.jsx)("div", {
-                        className: C.cardBrandingHeader,
+                        className: g.cardBrandingHeader,
                         style: {
-                            background: "linear-gradient(90deg, ".concat(A, ", ").concat(N, ")")
+                            background: "linear-gradient(90deg, ".concat(A, ", ").concat(m, ")")
                         },
-                        children: null != a ? a : (0, i.jsx)(I.default, {
+                        children: null != a ? a : (0, i.jsx)(T.default, {
                             banner: p,
                             primaryTintColor: A,
-                            secondaryTintColor: N
+                            secondaryTintColor: m
                         })
                     }), (0, i.jsxs)("div", {
-                        className: C.cardContent,
+                        className: g.cardContent,
                         children: [(0, i.jsxs)("div", {
-                            className: C.cardContentTitleSection,
+                            className: g.cardContentTitleSection,
                             children: [(0, i.jsxs)("div", {
-                                className: C.cardNameAndTagWrapper,
-                                children: [(0, i.jsx)(c.ClanGuildIconSimple, {
+                                className: g.cardNameAndTagWrapper,
+                                children: [(0, i.jsx)(E.ClanGuildIconSimple, {
                                     guildName: r.name,
                                     guildIconURL: y,
                                     iconSize: 64,
-                                    className: C.clanIcon
+                                    className: g.clanIcon
                                 }), (0, i.jsx)("div", {
-                                    className: C.clanTagChipletWrapper,
+                                    className: g.clanTagChipletWrapper,
                                     children: (0, i.jsx)(o.Tooltip, {
-                                        text: R.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
+                                        text: C.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
                                         position: "top",
                                         shouldShow: !d,
                                         children: e => (0, i.jsxs)("div", {
                                             ...e,
-                                            className: C.clanTagChiplet,
-                                            children: [(0, i.jsx)(E.ClanBadge, {
+                                            className: g.clanTagChiplet,
+                                            children: [(0, i.jsx)(I.ClanBadge, {
                                                 width: 16,
                                                 height: 16,
                                                 badge: h.badgeKind,
@@ -116485,58 +116526,58 @@
                                 lineClamp: 1,
                                 children: r.name
                             }), (0, i.jsxs)("div", {
-                                className: C.clanInfoRow,
+                                className: g.clanInfoRow,
                                 children: [(0, i.jsx)(o.Text, {
                                     variant: "text-xxs/normal",
-                                    className: C.clanInfoItem,
+                                    className: g.clanInfoItem,
                                     children: (0, i.jsx)("span", {
                                         role: "img",
-                                        "aria-label": R.default.Messages.CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL,
+                                        "aria-label": C.default.Messages.CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL,
                                         children: "\uD83C\uDFAE"
                                     })
                                 }), (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-secondary",
-                                    className: C.clanInfoItem,
-                                    children: null !== (n = (0, O.getPlaystyleTitle)(r.playstyle)) && void 0 !== n ? n : R.default.Messages.CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE
-                                }), (0, i.jsx)(g, {
+                                    className: g.clanInfoItem,
+                                    children: null !== (n = (0, R.getPlaystyleTitle)(r.playstyle)) && void 0 !== n ? n : C.default.Messages.CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE
+                                }), (0, i.jsx)(L, {
                                     clan: r
                                 })]
                             })]
                         }), (0, i.jsx)("div", {
-                            className: C.cardContentDescriptionSection,
+                            className: g.cardContentDescriptionSection,
                             children: (0, i.jsx)(o.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-muted",
                                 children: r.description
                             })
-                        }), (0, i.jsx)(v, {
-                            traits: (0, O.getSortedTraits)(r.traits, _),
+                        }), (0, i.jsx)(D, {
+                            traits: (0, R.getSortedTraits)(r.traits, _),
                             expanded: l,
                             traitsToHighlight: _
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: C.cardFooter,
+                        className: g.cardFooter,
                         children: [(0, i.jsx)("div", {
-                            className: C.cardFooterInfo,
+                            className: g.cardFooterInfo,
                             children: (0, i.jsx)("div", {
-                                className: C.cardFooterMembers,
+                                className: g.cardFooterMembers,
                                 children: (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: M
+                                    children: v
                                 })
                             })
                         }), (0, i.jsx)("div", {
-                            className: C.cardFooterGames,
-                            children: (0, i.jsx)(D, {
-                                games: L
+                            className: g.cardFooterGames,
+                            children: (0, i.jsx)(M, {
+                                games: O
                             })
                         })]
                     }), f && (0, i.jsx)("div", {
-                        className: C.cardBrandingFooter,
+                        className: g.cardBrandingFooter,
                         style: {
-                            background: "linear-gradient(90deg, ".concat(A, ", ").concat(N, ")")
+                            background: "linear-gradient(90deg, ".concat(A, ", ").concat(m, ")")
                         }
                     })]
                 })
@@ -116544,39 +116585,35 @@
             t.default = function(e) {
                 let {
                     clan: t,
-                    affinity: a,
-                    index: s
-                } = e, u = (0, l.useStateFromStores)([h.default], () => h.default.getCurrentUser()), d = (0, l.useStateFromStores)([S.default], () => S.default.isMember(t.id, null == u ? void 0 : u.id), [t, u]), _ = r.useCallback(() => {
-                    let e = null != T.default.getRequest(t.id);
-                    if (A.default.track(p.AnalyticEvents.CLAN_DISCOVERY_CARD_CLICKED, {
+                    affinity: n,
+                    index: a,
+                    source: s
+                } = e, u = (0, l.useStateFromStores)([A.default], () => A.default.getCurrentUser()), _ = (0, l.useStateFromStores)([h.default], () => h.default.isMember(t.id, null == u ? void 0 : u.id), [t, u]), c = r.useCallback(() => {
+                    let e = null != f.default.getRequest(t.id);
+                    if (m.default.track(O.AnalyticEvents.CLAN_DISCOVERY_CARD_CLICKED, {
                             guild_id: t.id,
-                            is_member: d,
+                            is_member: _,
                             has_join_request: e,
-                            affinity: a,
-                            index: s
-                        }), d) {
-                        (0, f.transitionToGuild)(t.id);
+                            affinity: n,
+                            index: a
+                        }), _) {
+                        (0, S.transitionToGuild)(t.id);
                         return
                     }
                     if (e) {
-                        (0, f.transitionTo)(p.Routes.GUILD_MEMBER_VERIFICATION(t.id));
+                        (0, S.transitionTo)(O.Routes.GUILD_MEMBER_VERIFICATION(t.id));
                         return
-                    }(0, o.openModalLazy)(async () => {
-                        let {
-                            default: e
-                        } = await Promise.all([n.e("99387"), n.e("80026"), n.e("18482")]).then(n.bind(n, "767593"));
-                        return n => (0, i.jsx)(e, {
-                            ...n,
-                            clan: t
-                        })
+                    }(0, d.openClanApplyFlow)(t.id, t, {
+                        source: s,
+                        location: O.AnalyticsLocations.CLAN_DISCOVERY_CARD
                     })
-                }, [t, d, a, s]);
+                }, [t, _, n, a, s]);
                 return (0, i.jsx)(o.Clickable, {
-                    onClick: _,
-                    className: C.clickableCard,
-                    children: (0, i.jsx)(M, {
+                    onClick: c,
+                    className: g.clickableCard,
+                    children: (0, i.jsx)(y, {
                         ...e,
-                        isMember: d,
+                        isMember: _,
                         showBrandingFooter: !0
                     })
                 })
@@ -170728,8 +170765,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715020954924",
-                                    build_number: "290793"
+                                    built_at: "1715021734548",
+                                    build_number: "290797"
                                 }
                             },
                             retries: 1
@@ -248783,7 +248820,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b36b377d82353a5c4aa1c1e7ba5ba1b062285d89"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e60fe8175abc2909e97d8e4ad48852f8170c6aab"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277448,7 +277485,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290793"
+                                build_number: "290797"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284775,7 +284812,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290793", "290793"), 10);
+                let a = parseInt((n = "290797", "290797"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -312240,4 +312277,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.d34a21c5b1b957feb4fe.js.map
+//# sourceMappingURL=35705.34378d2a50974b6e34fd.js.map
