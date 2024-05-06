@@ -45632,6 +45632,18 @@ img.thumbnail__18ece {
     white-space: nowrap
 }
 
+.remainingGame__11ccc {
+    position: absolute;
+    background-color: var(--bg-backdrop);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
 .traitsContainer__01c4b {
     padding: 16px 12px;
     -o-border-image: linear-gradient(180deg, transparent 0%, var(--border-strong)100%)1;
@@ -50407,8 +50419,7 @@ div:has(>div>.modal__06f49) {
 }
 
 .verticalSeparator__0074c {
-    margin: 0 32px;
-    border: 1px solid var(--background-modifier-accent)
+    margin: 0 32px
 }
 
 .authCaptcha__2ec56 {
@@ -136397,4 +136408,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.6f91bb36a8d8c56d4c76.css.map*/
+/*# sourceMappingURL=99387.5bf503504368889c3e8c.css.map*/

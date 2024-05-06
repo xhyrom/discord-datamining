@@ -5011,6 +5011,7 @@
                 gameName: "gameName_be13e2",
                 gameUnknownImage: "gameUnknownImage__080b3",
                 placeholderPulse: "placeholderPulse__8767a",
+                remainingGame: "remainingGame__11ccc",
                 selectedGame: "selectedGame_a69562",
                 selectedGameCheck: "selectedGameCheck_d9d855"
             }
