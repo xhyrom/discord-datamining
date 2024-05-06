@@ -132664,6 +132664,14 @@ div.nagbar_c731ff {
     min-height: 120px
 }
 
+.theme-light .sliderBar__3c099 {
+    background-color: var(--primary-200)
+}
+
+.theme-dark .sliderBar__3c099 {
+    background-color: var(--primary-400)
+}
+
 .sliderBar__3c099.speaking_cc1a7e {
     background-color: var(--green-230)
 }
@@ -136389,4 +136397,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c68970c051e650b36720.css.map*/
+/*# sourceMappingURL=99387.6f91bb36a8d8c56d4c76.css.map*/
