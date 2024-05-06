@@ -35609,32 +35609,36 @@
                         children: a,
                         onNonAccessibleClick: o,
                         tooltipClassName: l,
-                        tooltipContentClassName: d,
-                        spacing: _ = 8,
-                        animationStyle: E,
-                        disableTooltipPointerEvents: I = !1,
-                        allowOverflow: T = !1
-                    } = e, f = "".concat("string" == typeof a ? a : "", ":").concat(i);
+                        tooltipStyle: d,
+                        tooltipContentClassName: _,
+                        spacing: E = 8,
+                        animationStyle: I,
+                        disableTooltipPointerEvents: T = !1,
+                        allowOverflow: f = !1
+                    } = e, S = "".concat("string" == typeof a ? a : "", ":").concat(i);
                     return (0, s.jsx)(A.AppReferencePositionLayer, {
-                        disablePointerEvents: I,
+                        disablePointerEvents: T,
                         targetRef: t,
                         position: i,
                         autoInvert: !0,
                         align: n,
-                        positionKey: f,
-                        spacing: _,
+                        positionKey: S,
+                        spacing: E,
                         nudgeAlignIntoViewport: !0,
                         children: e => {
                             let {
                                 position: t,
-                                nudge: _
+                                nudge: E
                             } = e;
                             return (0, s.jsxs)(c.animated.div, {
                                 onClick: o,
                                 className: u()(m.tooltip, O[null != t ? t : i], O[r], {
-                                    [m.tooltipDisablePointerEvents]: I
+                                    [m.tooltipDisablePointerEvents]: T
                                 }, l),
-                                style: E,
+                                style: {
+                                    ...I,
+                                    ...d
+                                },
                                 children: [(0, s.jsx)("div", {
                                     className: m.tooltipPointer,
                                     style: function(e, t, n) {
@@ -35644,11 +35648,11 @@
                                         return t === (i ? "top" : "left") ? (r = "0%", a += 16) : t === (i ? "bottom" : "right") && (r = "100%", a -= 20), {
                                             [i ? "top" : "left"]: "calc(".concat(r, " + ").concat(a, "px)")
                                         }
-                                    }(null != t ? t : i, n, _)
+                                    }(null != t ? t : i, n, E)
                                 }), (0, s.jsx)("div", {
                                     className: u()(m.tooltipContent, {
-                                        [m.tooltipContentAllowOverflow]: T
-                                    }, d),
+                                        [m.tooltipContentAllowOverflow]: f
+                                    }, _),
                                     children: a
                                 })]
                             })
@@ -35742,27 +35746,29 @@
                         color: i,
                         spacing: r,
                         tooltipClassName: a,
-                        tooltipContentClassName: o,
-                        disableTooltipPointerEvents: l,
-                        onAnimationRest: u,
-                        allowOverflow: d,
-                        clickableOnMobile: _,
-                        hideOnClick: c
-                    } = this.props, I = (E.isMobile || E.isTablet) && !0 === _ && c, T = this.shouldShowTooltip(this.props, this.state) && this.hasDomElement, f = null;
-                    return f = e instanceof Function ? T ? e() : null : e, (0, s.jsx)(v, {
-                        disableTooltipPointerEvents: !1 !== l && !I || !0 === l,
+                        tooltipStyle: o,
+                        tooltipContentClassName: l,
+                        disableTooltipPointerEvents: u,
+                        onAnimationRest: d,
+                        allowOverflow: _,
+                        clickableOnMobile: c,
+                        hideOnClick: I
+                    } = this.props, T = (E.isMobile || E.isTablet) && !0 === c && I, f = this.shouldShowTooltip(this.props, this.state) && this.hasDomElement, S = null;
+                    return S = e instanceof Function ? f ? e() : null : e, (0, s.jsx)(v, {
+                        disableTooltipPointerEvents: !1 !== u && !T || !0 === u,
                         targetElementRef: this.domElementRef,
+                        tooltipStyle: o,
                         tooltipClassName: a,
-                        tooltipContentClassName: o,
+                        tooltipContentClassName: l,
                         align: t,
                         position: n,
                         color: i,
                         spacing: r,
-                        isVisible: T,
-                        onAnimationRest: u,
-                        onNonAccessibleClick: I ? this.handleClick : void 0,
-                        allowOverflow: d,
-                        children: f
+                        isVisible: f,
+                        onAnimationRest: d,
+                        onNonAccessibleClick: T ? this.handleClick : void 0,
+                        allowOverflow: _,
+                        children: S
                     })
                 }
                 show() {
@@ -37022,7 +37028,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290686", ", Version Hash: ").concat("e3b45f3c0104274bbe71454afa9a3053c2f86a42")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290709", ", Version Hash: ").concat("874203c155e4ae6f35cfd946b267edda2b8b37a4")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87473,8 +87479,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290686", "290686"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290686")), t = 0), t
+                let t = parseInt((e = "290709", "290709"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290709")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -102540,30 +102546,32 @@
             "use strict";
             n.r(t), n.d(t, {
                 formatSelectionList: function() {
-                    return d
+                    return c
                 },
                 getAccessibleTextColor: function() {
-                    return _
-                },
-                getClanBadgeUrl: function() {
                     return E
                 },
+                getClanBadgeUrl: function() {
+                    return T
+                },
                 getUserClanData: function() {
-                    return o
+                    return u
                 },
                 isGuildAClan: function() {
-                    return l
+                    return d
                 },
                 isGuildAdoptedUserClanIdentity: function() {
-                    return u
+                    return _
                 }
             });
-            var i = n("481060"),
-                r = n("308083"),
-                a = n("981631"),
-                s = n("689938");
+            var i = n("688619"),
+                r = n.n(i),
+                a = n("481060"),
+                s = n("308083"),
+                o = n("981631"),
+                l = n("689938");
 
-            function o(e) {
+            function u(e) {
                 return null != e && e.identityEnabled ? {
                     guildId: e.identityGuildId,
                     tag: e.tag,
@@ -102571,65 +102579,66 @@
                 } : {}
             }
 
-            function l(e) {
-                return null != e && e.hasFeature(a.GuildFeatures.CLAN)
+            function d(e) {
+                return null != e && e.hasFeature(o.GuildFeatures.CLAN)
             }
 
-            function u(e, t) {
+            function _(e, t) {
                 return null != e && null != t && null != t.identityGuildId && t.identityGuildId === e && !!t.identityEnabled || !1
             }
-            let d = (e, t) => {
+            let c = (e, t) => {
                 if (0 === e.length) return null;
                 if (1 === e.length) return e[1];
-                if (2 === e.length) return s.default.Messages.CLAN_OVERVIEW_LIST_TWO_ITEMS.format({
+                if (2 === e.length) return l.default.Messages.CLAN_OVERVIEW_LIST_TWO_ITEMS.format({
                     item1: e[0],
                     item2: e[1]
                 });
                 if (null != t && e.length > t) {
                     let n = e.slice(0, t).join(", "),
-                        i = s.default.Messages.CLAN_OVERVIEW_LIST_OTHERS_COUNT.format({
+                        i = l.default.Messages.CLAN_OVERVIEW_LIST_OTHERS_COUNT.format({
                             n: e.length - t
                         });
-                    return s.default.Messages.CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS.format({
+                    return l.default.Messages.CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS.format({
                         items: n,
                         last: i
                     })
                 } {
                     let t = e.slice(0, -1).join(", "),
                         n = e[e.length - 1];
-                    return s.default.Messages.CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS.format({
+                    return l.default.Messages.CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS.format({
                         items: t,
                         last: n
                     })
                 }
             };
 
-            function _(e) {
-                let t = parseInt(e.substr(1, 2), 16),
-                    n = parseInt(e.substr(3, 2), 16),
-                    r = parseInt(e.substr(5, 2), 16);
-                return (299 * t + 587 * n + 114 * r) / 1e3 < 128 ? i.tokens.colors.HEADER_PRIMARY.resolve({
+            function E(e) {
+                let t = r()(e),
+                    n = t.get("rgb.r"),
+                    i = t.get("rgb.g"),
+                    s = t.get("rgb.b");
+                return (299 * n + 587 * i + 114 * s) / 1e3 < 128 ? a.tokens.colors.HEADER_PRIMARY.resolve({
                     theme: "dark",
                     saturation: 1
-                }) : i.tokens.colors.HEADER_PRIMARY.resolve({
+                }) : a.tokens.colors.HEADER_PRIMARY.resolve({
                     theme: "light",
                     saturation: 1
                 })
             }
-            let c = {
-                [r.ClanTagBadgeSize.SIZE_12]: 16,
-                [r.ClanTagBadgeSize.SIZE_16]: 16,
-                [r.ClanTagBadgeSize.SIZE_24]: 24,
-                [r.ClanTagBadgeSize.SIZE_36]: 40
+            let I = {
+                [s.ClanTagBadgeSize.SIZE_12]: 16,
+                [s.ClanTagBadgeSize.SIZE_16]: 16,
+                [s.ClanTagBadgeSize.SIZE_24]: 24,
+                [s.ClanTagBadgeSize.SIZE_36]: 40
             };
 
-            function E(e, t) {
-                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : r.ClanTagBadgeSize.SIZE_12;
+            function T(e, t) {
+                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.ClanTagBadgeSize.SIZE_12;
                 if (null == t) return;
                 let {
                     CDN_HOST: i
                 } = window.GLOBAL_ENV;
-                if (null != i) return "".concat(location.protocol, "//").concat(i, "/clan-badges/").concat(e, "/").concat(t, ".png?size=").concat(c[n])
+                if (null != i) return "".concat(location.protocol, "//").concat(i, "/clan-badges/").concat(e, "/").concat(t, ".png?size=").concat(I[n])
             }
         },
         954138: function(e, t, n) {
@@ -115233,8 +115242,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290686",
-                    versionHash: "e3b45f3c0104274bbe71454afa9a3053c2f86a42"
+                    buildNumber: "290709",
+                    versionHash: "874203c155e4ae6f35cfd946b267edda2b8b37a4"
                 }
             }
             n.r(t), n.d(t, {
@@ -170578,8 +170587,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1714895883304",
-                                    build_number: "290686"
+                                    built_at: "1714998610973",
+                                    build_number: "290709"
                                 }
                             },
                             retries: 1
@@ -248635,7 +248644,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e3b45f3c0104274bbe71454afa9a3053c2f86a42"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "874203c155e4ae6f35cfd946b267edda2b8b37a4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277300,7 +277309,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290686"
+                                build_number: "290709"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284627,7 +284636,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290686", "290686"), 10);
+                let a = parseInt((n = "290709", "290709"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -312092,4 +312101,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.610575a969d00befa1ee.js.map
+//# sourceMappingURL=35705.0699c400986d6086cfb4.js.map
