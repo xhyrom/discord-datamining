@@ -5535,42 +5535,6 @@
             "use strict";
             e.exports = n.p + "36d64eef3d5b407d7106.svg"
         },
-        307536: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "5c4d9c5a2c4ead446bf7.svg"
-        },
-        408263: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "8082d1a66f2fb91e3641.svg"
-        },
-        585025: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "754e77ca7a2b4114fd06.svg"
-        },
-        444816: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "e1ca5bfd26d13f74b5ec.svg"
-        },
-        12008: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "f4ebd032f4be9d1271f0.svg"
-        },
-        136050: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "f7cfa41aec298eb597ed.svg"
-        },
-        924936: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "475287faf2161971d084.svg"
-        },
-        409814: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "c055a7380a3f2207e772.svg"
-        },
-        114266: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "150636fa20487fbd8258.svg"
-        },
         185672: function(e, t, n) {
             "use strict";
             e.exports = n.p + "ce9a6ca881a8a51b7496.png"
@@ -37030,7 +36994,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290885", ", Version Hash: ").concat("104a93dd805d8a29ef9e2d198f873cd9ce8f4ebf")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290898", ", Version Hash: ").concat("f1a884a6f1102d9d6a3cae52e617d0f8817243e9")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -67371,23 +67335,24 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return a
+                    return s
                 }
             });
             var i = n("668781"),
-                r = n("689938");
+                r = n("624138"),
+                a = n("689938");
 
-            function a(e, t, n, a) {
-                var s, o;
+            function s(e, t, n, s) {
+                var o;
                 i.default.show({
-                    title: r.default.Messages.EMBEDDED_ACTIVITY_CHANGE_CONFIRM_TITLE,
-                    cancelText: r.default.Messages.CANCEL,
-                    confirmText: r.default.Messages.CONFIRM,
+                    title: a.default.Messages.EMBEDDED_ACTIVITY_CHANGE_CONFIRM_TITLE,
+                    cancelText: a.default.Messages.CANCEL,
+                    confirmText: a.default.Messages.CONFIRM,
                     onConfirm: n,
-                    onCancel: a,
-                    body: r.default.Messages.EMBEDDED_ACTIVITY_CHANGE_ACTIVITY_CONFIRM_BODY.format({
-                        currentApplicationName: null !== (s = null == e ? void 0 : e.name) && void 0 !== s ? s : r.default.Messages.EMBEDDED_ACTIVITY_CURRENT_APPLICATION_DEFAULT,
-                        currentApplicationChannelName: null !== (o = null == t ? void 0 : t.name) && void 0 !== o ? o : r.default.Messages.EMBEDDED_ACTIVITY_CURRENT_APPLICATION_CHANNEL_DEFAULT
+                    onCancel: s,
+                    body: a.default.Messages.EMBEDDED_ACTIVITY_CHANGE_ACTIVITY_CONFIRM_BODY.format({
+                        currentApplicationName: null !== (o = null == e ? void 0 : e.name) && void 0 !== o ? o : a.default.Messages.EMBEDDED_ACTIVITY_CURRENT_APPLICATION_DEFAULT,
+                        currentApplicationChannelName: (0, r.isNullOrEmpty)(null == t ? void 0 : t.name) ? a.default.Messages.EMBEDDED_ACTIVITY_CURRENT_APPLICATION_CHANNEL_DEFAULT : null == t ? void 0 : t.name
                     })
                 })
             }
@@ -87555,8 +87520,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290885", "290885"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290885")), t = 0), t
+                let t = parseInt((e = "290898", "290898"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290898")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -102780,6 +102745,9 @@
                 getClanBadgeUrl: function() {
                     return _
                 },
+                getClanBannerUrl: function() {
+                    return c
+                },
                 getUserClanData: function() {
                     return s
                 },
@@ -102848,6 +102816,14 @@
                     CDN_HOST: r
                 } = window.GLOBAL_ENV;
                 if (null != r) return "".concat(location.protocol, "//").concat(r, "/clan-badges/").concat(e, "/").concat(t, ".png?size=").concat(d[n])
+            }
+
+            function c(e, t) {
+                if (null == t) return;
+                let {
+                    CDN_HOST: n
+                } = window.GLOBAL_ENV;
+                if (null != n) return "".concat(location.protocol, "//").concat(n, "/clan-banners/").concat(e, "/").concat(t, ".png?size=512")
             }
         },
         954138: function(e, t, n) {
@@ -105736,941 +105712,6 @@
                         })]
                     })
                 }
-        },
-        175557: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("108930"),
-                a = n("86406"),
-                s = n("146068"),
-                o = n("308545"),
-                l = n("397697"),
-                u = n("129871"),
-                d = n("206851"),
-                _ = n("246933"),
-                c = n("995414"),
-                E = n("308083");
-
-            function I(e) {
-                let {
-                    banner: t,
-                    ...n
-                } = e;
-                switch (t) {
-                    case E.ClanBannerKind.NIGHT_SKY:
-                        return (0, i.jsx)(l.default, {
-                            ...n
-                        });
-                    case E.ClanBannerKind.CASTLE:
-                        return (0, i.jsx)(r.default, {
-                            ...n
-                        });
-                    case E.ClanBannerKind.WORLD_MAP:
-                        return (0, i.jsx)(c.default, {
-                            ...n
-                        });
-                    case E.ClanBannerKind.SEA_FOAM:
-                        return (0, i.jsx)(u.default, {
-                            ...n
-                        });
-                    case E.ClanBannerKind.WARP_TUNNEL:
-                        return (0, i.jsx)(_.default, {
-                            ...n
-                        });
-                    case E.ClanBannerKind.HOUSE:
-                        return (0, i.jsx)(s.default, {
-                            ...n
-                        });
-                    case E.ClanBannerKind.HEIGHTMAP:
-                        return (0, i.jsx)(a.default, {
-                            ...n
-                        });
-                    case E.ClanBannerKind.MESH:
-                        return (0, i.jsx)(o.default, {
-                            ...n
-                        });
-                    case E.ClanBannerKind.SPATTER:
-                        return (0, i.jsx)(d.default, {
-                            ...n
-                        })
-                }
-                return null
-            }
-        },
-        108930: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("249849"),
-                a = n("907561"),
-                s = n("689938"),
-                o = n("307536");
-            let l = ["#50599c", "#cc99ff", "#fefefe"],
-                u = ["#39306f", "#aeaad2"],
-                d = [.05, .4, 1],
-                _ = [{
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 6,
-                    tint: 1
-                }, {
-                    base: 10,
-                    tint: 1
-                }],
-                c = [.05, .4],
-                E = [{
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }];
-
-            function I(e) {
-                let {
-                    width: t,
-                    height: n,
-                    primaryTintColor: I,
-                    secondaryTintColor: T,
-                    ...f
-                } = e, {
-                    primaryColorsTransformed: S,
-                    secondaryColorsTransformed: h
-                } = (0, r.getTransformedBadgeColors)({
-                    primaryBaseColors: l,
-                    primaryTintColor: I,
-                    primaryTintLuminances: d,
-                    primaryLuminanceWeights: _,
-                    secondaryBaseColors: u,
-                    secondaryTintColor: T,
-                    secondaryTintLuminances: c,
-                    secondaryLuminanceWeights: E
-                }), {
-                    styleContent: A,
-                    containerId: m
-                } = (0, a.useClanBannerStyleInjection)(S, h);
-                return (0, i.jsxs)("svg", {
-                    ...f,
-                    "aria-label": s.default.Messages.CLAN_LOOK_BANNER,
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 ".concat(a.CLAN_BANNER_WIDTH, " ").concat(a.CLAN_BANNER_HEIGHT),
-                    children: [(0, i.jsx)("defs", {
-                        children: (0, i.jsx)("style", {
-                            children: A
-                        })
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#wrapper-layer"),
-                        id: m
-                    })]
-                })
-            }
-        },
-        86406: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("249849"),
-                a = n("907561"),
-                s = n("689938"),
-                o = n("408263");
-            let l = ["#00ff00"],
-                u = ["#000000", "#ed1c24"],
-                d = [.7],
-                _ = [{
-                    base: 1,
-                    tint: 2
-                }],
-                c = [0, .2],
-                E = [{
-                    base: 1,
-                    tint: 0
-                }, {
-                    base: 1,
-                    tint: 4
-                }];
-
-            function I(e) {
-                let {
-                    width: t,
-                    height: n,
-                    primaryTintColor: I,
-                    secondaryTintColor: T,
-                    ...f
-                } = e, {
-                    primaryColorsTransformed: S,
-                    secondaryColorsTransformed: h
-                } = (0, r.getTransformedBadgeColors)({
-                    primaryBaseColors: l,
-                    primaryTintColor: I,
-                    primaryTintLuminances: d,
-                    primaryLuminanceWeights: _,
-                    secondaryBaseColors: u,
-                    secondaryTintColor: T,
-                    secondaryTintLuminances: c,
-                    secondaryLuminanceWeights: E
-                }), {
-                    styleContent: A,
-                    containerId: m
-                } = (0, a.useClanBannerStyleInjection)(S, h);
-                return (0, i.jsxs)("svg", {
-                    ...f,
-                    "aria-label": s.default.Messages.CLAN_LOOK_BANNER,
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 ".concat(a.CLAN_BANNER_WIDTH, " ").concat(a.CLAN_BANNER_HEIGHT),
-                    children: [(0, i.jsxs)("defs", {
-                        children: [(0, i.jsx)("defs", {
-                            children: (0, i.jsxs)("linearGradient", {
-                                id: "line-gradient",
-                                x1: "0",
-                                x2: "1",
-                                y1: "0",
-                                y2: "1",
-                                children: [(0, i.jsx)("stop", {
-                                    stopColor: h[1],
-                                    offset: "0%"
-                                }), (0, i.jsx)("stop", {
-                                    stopColor: S[0],
-                                    offset: "50%"
-                                }), (0, i.jsx)("stop", {
-                                    stopColor: S[0],
-                                    offset: "80%"
-                                }), (0, i.jsx)("stop", {
-                                    stopColor: h[1],
-                                    offset: "100%"
-                                })]
-                            })
-                        }), (0, i.jsx)("style", {
-                            children: A
-                        })]
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#wrapper-layer"),
-                        id: m
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#heightmap-lines-0"),
-                        style: {
-                            fill: "url(#line-gradient)"
-                        }
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#heightmap-lines-1"),
-                        style: {
-                            fill: "url(#line-gradient)"
-                        }
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#heightmap-lines-2"),
-                        style: {
-                            fill: "url(#line-gradient)"
-                        }
-                    })]
-                })
-            }
-        },
-        146068: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("249849"),
-                a = n("907561"),
-                s = n("689938"),
-                o = n("585025");
-            let l = ["#0fa3dd", "#a7e4e4", "#a2ccdd"],
-                u = ["#0b3215", "#a6b51a", "#35748a", "#65a88f", "#621c12", "#f96748", "#ffbbbb"],
-                d = [.25, .9, .9],
-                _ = [{
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 14,
-                    tint: 1
-                }, {
-                    base: 5,
-                    tint: 1
-                }],
-                c = [.05, .4, .15, .33, .1, .3, .6],
-                E = [{
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }];
-
-            function I(e) {
-                let {
-                    width: t,
-                    height: n,
-                    primaryTintColor: I,
-                    secondaryTintColor: T,
-                    ...f
-                } = e, {
-                    primaryColorsTransformed: S,
-                    secondaryColorsTransformed: h
-                } = (0, r.getTransformedBadgeColors)({
-                    primaryBaseColors: l,
-                    primaryTintColor: I,
-                    primaryTintLuminances: d,
-                    primaryLuminanceWeights: _,
-                    secondaryBaseColors: u,
-                    secondaryTintColor: T,
-                    secondaryTintLuminances: c,
-                    secondaryLuminanceWeights: E
-                }), {
-                    styleContent: A,
-                    containerId: m
-                } = (0, a.useClanBannerStyleInjection)(S, h);
-                return (0, i.jsxs)("svg", {
-                    ...f,
-                    "aria-label": s.default.Messages.CLAN_LOOK_BANNER,
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 ".concat(a.CLAN_BANNER_WIDTH, " ").concat(a.CLAN_BANNER_HEIGHT),
-                    children: [(0, i.jsxs)("defs", {
-                        children: [(0, i.jsx)("defs", {
-                            children: (0, i.jsxs)("linearGradient", {
-                                id: "sky-gradient",
-                                x1: "0",
-                                x2: "1",
-                                y1: "0",
-                                y2: "1",
-                                children: [(0, i.jsx)("stop", {
-                                    stopColor: S[2],
-                                    offset: "0%"
-                                }), (0, i.jsx)("stop", {
-                                    stopColor: S[0],
-                                    offset: "100%"
-                                })]
-                            })
-                        }), (0, i.jsx)("style", {
-                            children: A
-                        })]
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#sky"),
-                        style: {
-                            fill: "url(#sky-gradient)"
-                        }
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#wrapper-layer"),
-                        id: m
-                    })]
-                })
-            }
-        },
-        308545: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("249849"),
-                a = n("907561"),
-                s = n("689938"),
-                o = n("444816");
-            let l = ["#2d456e", "#395788", "#486ead", "#4f7ac2", "#5989d9", "#729bdd", "#96b3e3", "#b5c9e9", "#e0e0e2"],
-                u = ["#f7931e"],
-                d = [.05, .09, .15, .2, .25, .33, .44, .57, .95],
-                _ = [{
-                    base: 4,
-                    tint: 1
-                }, {
-                    base: 4,
-                    tint: 1
-                }, {
-                    base: 4,
-                    tint: 1
-                }, {
-                    base: 4,
-                    tint: 1
-                }, {
-                    base: 4,
-                    tint: 1
-                }, {
-                    base: 4,
-                    tint: 1
-                }, {
-                    base: 4,
-                    tint: 1
-                }, {
-                    base: 4,
-                    tint: 1
-                }, {
-                    base: 7,
-                    tint: 1
-                }],
-                c = [.4],
-                E = [{
-                    base: 1,
-                    tint: 5
-                }];
-
-            function I(e) {
-                let {
-                    width: t,
-                    height: n,
-                    primaryTintColor: I,
-                    secondaryTintColor: T,
-                    ...f
-                } = e, {
-                    primaryColorsTransformed: S,
-                    secondaryColorsTransformed: h
-                } = (0, r.getTransformedBadgeColors)({
-                    primaryBaseColors: l,
-                    primaryTintColor: I,
-                    primaryTintLuminances: d,
-                    primaryLuminanceWeights: _,
-                    secondaryBaseColors: u,
-                    secondaryTintColor: T,
-                    secondaryTintLuminances: c,
-                    secondaryLuminanceWeights: E
-                }), {
-                    styleContent: A,
-                    containerId: m
-                } = (0, a.useClanBannerStyleInjection)(S, h);
-                return (0, i.jsxs)("svg", {
-                    ...f,
-                    "aria-label": s.default.Messages.CLAN_LOOK_BANNER,
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 ".concat(a.CLAN_BANNER_WIDTH, " ").concat(a.CLAN_BANNER_HEIGHT),
-                    children: [(0, i.jsx)("defs", {
-                        children: (0, i.jsx)("style", {
-                            children: A
-                        })
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#wrapper-layer"),
-                        id: m
-                    })]
-                })
-            }
-        },
-        397697: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("249849"),
-                a = n("907561"),
-                s = n("689938"),
-                o = n("12008");
-            let l = ["#01007f", "#0000b0", "#0000e1", "#2d3dee", "#5470e9", "#a091eb", "#cc99ff"],
-                u = ["#a7e4e4", "#ffffff"],
-                d = [.01, .03, .055, .1, .19, .25, .35],
-                _ = [{
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 6,
-                    tint: 1
-                }, {
-                    base: 6,
-                    tint: 1
-                }, {
-                    base: 6,
-                    tint: 1
-                }, {
-                    base: 6,
-                    tint: 1
-                }, {
-                    base: 6,
-                    tint: 1
-                }, {
-                    base: 6,
-                    tint: 1
-                }],
-                c = [.55, 1],
-                E = [{
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 20,
-                    tint: 1
-                }];
-
-            function I(e) {
-                let {
-                    width: t,
-                    height: n,
-                    primaryTintColor: I,
-                    secondaryTintColor: T,
-                    ...f
-                } = e, {
-                    primaryColorsTransformed: S,
-                    secondaryColorsTransformed: h
-                } = (0, r.getTransformedBadgeColors)({
-                    primaryBaseColors: l,
-                    primaryTintColor: I,
-                    primaryTintLuminances: d,
-                    primaryLuminanceWeights: _,
-                    secondaryBaseColors: u,
-                    secondaryTintColor: T,
-                    secondaryTintLuminances: c,
-                    secondaryLuminanceWeights: E
-                }), {
-                    styleContent: A,
-                    containerId: m
-                } = (0, a.useClanBannerStyleInjection)(S, h);
-                return (0, i.jsxs)("svg", {
-                    ...f,
-                    "aria-label": s.default.Messages.CLAN_LOOK_BANNER,
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 ".concat(a.CLAN_BANNER_WIDTH, " ").concat(a.CLAN_BANNER_HEIGHT),
-                    children: [(0, i.jsx)("defs", {
-                        children: (0, i.jsx)("style", {
-                            children: A
-                        })
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#wrapper-layer"),
-                        id: m
-                    })]
-                })
-            }
-        },
-        129871: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("249849"),
-                a = n("907561"),
-                s = n("689938"),
-                o = n("136050");
-            let l = ["#7185f6", "#7799f3", "#7eb2eb", "#85d5e0", "#89e6dd", "#8cefda", "#68eacb"],
-                u = ["#ffffff", "#f0f0f0"],
-                d = [.15, .23, .32, .45, .57, .62, .7],
-                _ = [{
-                    base: 14,
-                    tint: 1
-                }, {
-                    base: 10,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }],
-                c = [.95, 1],
-                E = [{
-                    base: 1,
-                    tint: 2
-                }, {
-                    base: 14,
-                    tint: 1
-                }];
-
-            function I(e) {
-                let {
-                    width: t,
-                    height: n,
-                    primaryTintColor: I,
-                    secondaryTintColor: T,
-                    ...f
-                } = e, {
-                    primaryColorsTransformed: S,
-                    secondaryColorsTransformed: h
-                } = (0, r.getTransformedBadgeColors)({
-                    primaryBaseColors: l,
-                    primaryTintColor: I,
-                    primaryTintLuminances: d,
-                    primaryLuminanceWeights: _,
-                    secondaryBaseColors: u,
-                    secondaryTintColor: T,
-                    secondaryTintLuminances: c,
-                    secondaryLuminanceWeights: E
-                }), {
-                    styleContent: A,
-                    containerId: m
-                } = (0, a.useClanBannerStyleInjection)(S, h);
-                return (0, i.jsxs)("svg", {
-                    ...f,
-                    "aria-label": s.default.Messages.CLAN_LOOK_BANNER,
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 ".concat(a.CLAN_BANNER_WIDTH, " ").concat(a.CLAN_BANNER_HEIGHT),
-                    children: [(0, i.jsxs)("defs", {
-                        children: [(0, i.jsx)("defs", {
-                            children: (0, i.jsxs)("radialGradient", {
-                                id: "foam-gradient",
-                                cx: "0.5",
-                                cy: "0.5",
-                                r: "0.65",
-                                fx: "0.5",
-                                fy: "0.8",
-                                children: [(0, i.jsx)("stop", {
-                                    stopColor: h[1],
-                                    offset: "60%"
-                                }), (0, i.jsx)("stop", {
-                                    stopColor: h[0],
-                                    offset: "100%"
-                                })]
-                            })
-                        }), (0, i.jsx)("style", {
-                            children: A
-                        })]
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#wrapper-layer"),
-                        id: m
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#foam"),
-                        style: {
-                            fill: "url(#foam-gradient)"
-                        }
-                    })]
-                })
-            }
-        },
-        206851: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("249849"),
-                a = n("907561"),
-                s = n("689938"),
-                o = n("924936");
-            let l = ["#1e349e", "#4d61de", "#7887e2", "#92a6e4"],
-                u = ["#fc6e4e"],
-                d = [.05, .15, .26, .4],
-                _ = [{
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }],
-                c = [.35],
-                E = [{
-                    base: 4,
-                    tint: 1
-                }];
-
-            function I(e) {
-                let {
-                    width: t,
-                    height: n,
-                    primaryTintColor: I,
-                    secondaryTintColor: T,
-                    ...f
-                } = e, {
-                    primaryColorsTransformed: S,
-                    secondaryColorsTransformed: h
-                } = (0, r.getTransformedBadgeColors)({
-                    primaryBaseColors: l,
-                    primaryTintColor: I,
-                    primaryTintLuminances: d,
-                    primaryLuminanceWeights: _,
-                    secondaryBaseColors: u,
-                    secondaryTintColor: T,
-                    secondaryTintLuminances: c,
-                    secondaryLuminanceWeights: E
-                }), {
-                    styleContent: A,
-                    containerId: m
-                } = (0, a.useClanBannerStyleInjection)(S, h);
-                return (0, i.jsxs)("svg", {
-                    ...f,
-                    "aria-label": s.default.Messages.CLAN_LOOK_BANNER,
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 ".concat(a.CLAN_BANNER_WIDTH, " ").concat(a.CLAN_BANNER_HEIGHT),
-                    children: [(0, i.jsx)("defs", {
-                        children: (0, i.jsx)("style", {
-                            children: A
-                        })
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#wrapper-layer"),
-                        id: m
-                    })]
-                })
-            }
-        },
-        907561: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                CLAN_BANNER_HEIGHT: function() {
-                    return s
-                },
-                CLAN_BANNER_WIDTH: function() {
-                    return a
-                },
-                useClanBannerStyleInjection: function() {
-                    return o
-                }
-            });
-            var i = n("470079"),
-                r = n("153832");
-            let a = 262,
-                s = 100;
-
-            function o(e, t) {
-                let n = i.useMemo(() => "clan-banner-container-".concat((0, r.v4)()), []);
-                return {
-                    styleContent: i.useMemo(() => {
-                        let i = e.map((e, t) => "--primary-".concat(t, ": ").concat(e, ";")).join("\n"),
-                            r = t.map((e, t) => "--secondary-".concat(t, ": ").concat(e, ";")).join("\n");
-                        return "#".concat(n, " {\n        ").concat(i, "\n        ").concat(r, "\n      }")
-                    }, [n, e, t]),
-                    containerId: n
-                }
-            }
-        },
-        246933: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("249849"),
-                a = n("907561"),
-                s = n("689938"),
-                o = n("409814");
-            let l = ["#cc99ff", "#ffffff"],
-                u = ["#2d3dee", "#ffffff"],
-                d = [.3, 1],
-                _ = [{
-                    base: 2,
-                    tint: 1
-                }, {
-                    base: 5,
-                    tint: 1
-                }],
-                c = [.3, 1],
-                E = [{
-                    base: 2,
-                    tint: 1
-                }, {
-                    base: 5,
-                    tint: 1
-                }];
-
-            function I(e) {
-                let {
-                    width: t,
-                    height: n,
-                    primaryTintColor: I,
-                    secondaryTintColor: T,
-                    ...f
-                } = e, {
-                    primaryColorsTransformed: S,
-                    secondaryColorsTransformed: h
-                } = (0, r.getTransformedBadgeColors)({
-                    primaryBaseColors: l,
-                    primaryTintColor: I,
-                    primaryTintLuminances: d,
-                    primaryLuminanceWeights: _,
-                    secondaryBaseColors: u,
-                    secondaryTintColor: T,
-                    secondaryTintLuminances: c,
-                    secondaryLuminanceWeights: E
-                }), {
-                    styleContent: A,
-                    containerId: m
-                } = (0, a.useClanBannerStyleInjection)(S, h);
-                return (0, i.jsxs)("svg", {
-                    ...f,
-                    "aria-label": s.default.Messages.CLAN_LOOK_BANNER,
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 ".concat(a.CLAN_BANNER_WIDTH, " ").concat(a.CLAN_BANNER_HEIGHT),
-                    children: [(0, i.jsxs)("defs", {
-                        children: [(0, i.jsxs)("defs", {
-                            children: [(0, i.jsxs)("radialGradient", {
-                                id: "fog-gradient-primary",
-                                cx: ".5",
-                                cy: ".5",
-                                r: ".6",
-                                fx: ".76",
-                                fy: ".33",
-                                spreadMethod: "pad",
-                                children: [(0, i.jsx)("stop", {
-                                    stopColor: S[1],
-                                    offset: "0%"
-                                }), (0, i.jsx)("stop", {
-                                    stopColor: S[0],
-                                    offset: "70%"
-                                })]
-                            }), (0, i.jsxs)("radialGradient", {
-                                id: "fog-gradient-secondary",
-                                cx: ".5",
-                                cy: ".5",
-                                r: ".6",
-                                fx: ".76",
-                                fy: ".33",
-                                spreadMethod: "pad",
-                                children: [(0, i.jsx)("stop", {
-                                    stopColor: h[1],
-                                    offset: "0%"
-                                }), (0, i.jsx)("stop", {
-                                    stopColor: h[0],
-                                    offset: "70%"
-                                })]
-                            })]
-                        }), (0, i.jsx)("style", {
-                            children: A
-                        })]
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#wrapper-layer"),
-                        id: m
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#clan-banner-warp-tunnel-secondary"),
-                        style: {
-                            fill: "url(#fog-gradient-secondary)"
-                        }
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#clan-banner-warp-tunnel-primary"),
-                        style: {
-                            fill: "url(#fog-gradient-primary)"
-                        }
-                    })]
-                })
-            }
-        },
-        995414: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("249849"),
-                a = n("907561"),
-                s = n("689938"),
-                o = n("114266");
-            let l = ["#0089d9"],
-                u = ["#ff9e32", "#b4eefc", "#ffffff", "#804f19"],
-                d = [.2],
-                _ = [{
-                    base: 8,
-                    tint: 1
-                }],
-                c = [.45, .7, 1, .3],
-                E = [{
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 10,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }];
-
-            function I(e) {
-                let {
-                    width: t,
-                    height: n,
-                    primaryTintColor: I,
-                    secondaryTintColor: T,
-                    ...f
-                } = e, {
-                    primaryColorsTransformed: S,
-                    secondaryColorsTransformed: h
-                } = (0, r.getTransformedBadgeColors)({
-                    primaryBaseColors: l,
-                    primaryTintColor: I,
-                    primaryTintLuminances: d,
-                    primaryLuminanceWeights: _,
-                    secondaryBaseColors: u,
-                    secondaryTintColor: T,
-                    secondaryTintLuminances: c,
-                    secondaryLuminanceWeights: E
-                }), {
-                    styleContent: A,
-                    containerId: m
-                } = (0, a.useClanBannerStyleInjection)(S, h);
-                return (0, i.jsxs)("svg", {
-                    ...f,
-                    "aria-label": s.default.Messages.CLAN_LOOK_BANNER,
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 ".concat(a.CLAN_BANNER_WIDTH, " ").concat(a.CLAN_BANNER_HEIGHT),
-                    children: [(0, i.jsx)("defs", {
-                        children: (0, i.jsx)("style", {
-                            children: A
-                        })
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#wrapper-layer"),
-                        id: m
-                    })]
-                })
-            }
         },
         284019: function(e, t, n) {
             "use strict";
@@ -115462,8 +114503,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290885",
-                    versionHash: "104a93dd805d8a29ef9e2d198f873cd9ce8f4ebf"
+                    buildNumber: "290898",
+                    versionHash: "f1a884a6f1102d9d6a3cae52e617d0f8817243e9"
                 }
             }
             n.r(t), n.d(t, {
@@ -116088,6 +115129,7 @@
                     traits: e.search_terms,
                     tag: e.tag,
                     banner: e.banner,
+                    bannerHash: e.banner_hash,
                     badge: {
                         badgeKind: e.badge,
                         primaryColor: a(e.badge_color_primary, t.primary),
@@ -116293,10 +115335,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 ClanDiscoveryCardTraits: function() {
-                    return D
+                    return v
                 },
                 ClanDiscoveryCardView: function() {
-                    return y
+                    return M
                 }
             }), n("47120");
             var i = n("735250"),
@@ -116311,20 +115353,19 @@
                 c = n("353093"),
                 E = n("114487"),
                 I = n("550271"),
-                T = n("175557"),
-                f = n("937111"),
-                S = n("703656"),
-                h = n("271383"),
-                A = n("594174"),
-                m = n("626135"),
-                N = n("768581"),
-                p = n("524989"),
-                O = n("981631"),
-                R = n("308083"),
-                C = n("689938"),
-                g = n("228706");
+                T = n("937111"),
+                f = n("703656"),
+                S = n("271383"),
+                h = n("594174"),
+                A = n("626135"),
+                m = n("768581"),
+                N = n("524989"),
+                p = n("981631"),
+                O = n("308083"),
+                R = n("689938"),
+                C = n("228706");
 
-            function L(e) {
+            function g(e) {
                 let {
                     clan: t
                 } = e, {
@@ -116332,7 +115373,7 @@
                     branding: {
                         primaryColor: a
                     }
-                } = t, s = n.filter(e => e !== R.EMPTY_WILDCARD).join(", "), l = (0, o.useToken)(o.tokens.colors.BACKGROUND_FLOATING), u = (0, _.getAccessibleClanColor)(a, l.hex()), d = r.useRef(null), [c, E] = r.useState(!1);
+                } = t, s = n.filter(e => e !== O.EMPTY_WILDCARD).join(", "), l = (0, o.useToken)(o.tokens.colors.BACKGROUND_FLOATING), u = (0, _.getAccessibleClanColor)(a, l.hex()), d = r.useRef(null), [c, E] = r.useState(!1);
                 if (r.useEffect(() => {
                         let e = d.current;
                         null != e && null != e.offsetWidth && null != e.scrollWidth && E(e.offsetWidth < e.scrollWidth)
@@ -116344,7 +115385,7 @@
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-xs/normal",
                         color: "text-secondary",
-                        className: g.clanInfoItem,
+                        className: C.clanInfoItem,
                         children: "\xb7"
                     }), (0, i.jsx)(o.Tooltip, {
                         text: s,
@@ -116353,7 +115394,7 @@
                         children: e => (0, i.jsx)("span", {
                             ...e,
                             style: I,
-                            className: g.wildCardText,
+                            className: C.wildCardText,
                             ref: d,
                             children: s
                         })
@@ -116361,14 +115402,14 @@
                 })
             }
 
-            function v(e) {
+            function L(e) {
                 let {
                     trait: t,
                     isHighlighted: n
                 } = e;
                 return (0, i.jsx)("div", {
-                    className: s()(g.trait, {
-                        [g.highlightedTrait]: n
+                    className: s()(C.trait, {
+                        [C.highlightedTrait]: n
                     }),
                     children: (0, i.jsx)(o.Text, {
                         variant: "text-xs/normal",
@@ -116379,29 +115420,29 @@
                 })
             }
 
-            function D(e) {
+            function v(e) {
                 let {
                     traits: t,
                     traitsToHighlight: n,
                     expanded: a
                 } = e, s = r.useMemo(() => new Set(n), [n]);
                 return a ? (0, i.jsx)("div", {
-                    className: g.expandedTraitsContainer,
-                    children: t.map(e => (0, i.jsx)(v, {
+                    className: C.expandedTraitsContainer,
+                    children: t.map(e => (0, i.jsx)(L, {
                         trait: e,
                         isHighlighted: s.has(e)
                     }, e))
-                }) : (0, i.jsx)(p.default, {
+                }) : (0, i.jsx)(N.default, {
                     items: t,
-                    renderItem: e => (0, i.jsx)(v, {
+                    renderItem: e => (0, i.jsx)(L, {
                         trait: e,
                         isHighlighted: s.has(e)
                     }, e),
                     renderOverflow: e => (0, i.jsx)(o.Tooltip, {
                         text: (0, i.jsx)("div", {
-                            className: g.overflowTooltip,
+                            className: C.overflowTooltip,
                             children: e.map(e => (0, i.jsx)("div", {
-                                className: g.trait,
+                                className: C.trait,
                                 children: (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-normal",
@@ -116413,22 +115454,22 @@
                         "aria-label": "overflow",
                         children: t => (0, i.jsx)("div", {
                             ...t,
-                            className: g.trait,
+                            className: C.trait,
                             children: (0, i.jsx)(o.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-normal",
-                                children: C.default.Messages.CLAN_DISCOVERY_TRAIT_OVERFLOW.format({
+                                children: R.default.Messages.CLAN_DISCOVERY_TRAIT_OVERFLOW.format({
                                     count: e.length
                                 })
                             })
                         })
                     }),
                     maxLines: 2,
-                    className: g.traitsContainer
+                    className: C.traitsContainer
                 })
             }
 
-            function M(e) {
+            function D(e) {
                 let {
                     games: t
                 } = e, n = t.filter(e => null != e && null != e.icon), a = n.slice(0, 3), s = r.useMemo(() => {
@@ -116444,13 +115485,13 @@
                             position: "bottom",
                             children: n => (0, i.jsxs)("div", {
                                 ...n,
-                                className: g.cardFooterGame,
+                                className: C.cardFooterGame,
                                 children: [(0, i.jsx)("img", {
                                     src: t,
                                     alt: e.name,
-                                    className: g.cardFooterGameImg
+                                    className: C.cardFooterGameImg
                                 }), (0, i.jsx)("div", {
-                                    className: g.cardFooterOtherCount,
+                                    className: C.cardFooterOtherCount,
                                     children: (0, i.jsx)(o.Text, {
                                         variant: "text-xs/medium",
                                         color: "always-white",
@@ -116465,11 +115506,11 @@
                         position: "bottom",
                         children: n => (0, i.jsx)("div", {
                             ...n,
-                            className: g.cardFooterGame,
+                            className: C.cardFooterGame,
                             children: (0, i.jsx)("img", {
                                 src: t,
                                 alt: e.name,
-                                className: g.cardFooterGameImg
+                                className: C.cardFooterGameImg
                             })
                         })
                     })
@@ -116482,11 +115523,11 @@
                             position: "bottom",
                             children: n => (0, i.jsx)("div", {
                                 ...n,
-                                className: g.cardFooterGame,
+                                className: C.cardFooterGame,
                                 children: (0, i.jsx)("img", {
                                     src: t,
                                     alt: e.name,
-                                    className: g.cardFooterGameImg
+                                    className: C.cardFooterGameImg
                                 })
                             })
                         }, e.id)
@@ -116494,7 +115535,7 @@
                 })
             }
 
-            function y(e) {
+            function M(e) {
                 var t, n;
                 let {
                     clan: r,
@@ -116502,56 +115543,56 @@
                     expanded: l,
                     isMember: d,
                     traitsToHighlight: _,
-                    className: c,
+                    className: T,
                     showBrandingFooter: f = !1
                 } = e, {
                     tag: S,
                     badge: h,
                     branding: {
                         primaryColor: A,
-                        secondaryColor: m
+                        secondaryColor: N
                     },
-                    banner: p
-                } = r, O = (0, u.default)(r.games), v = C.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
+                    bannerHash: p
+                } = r, L = (0, u.default)(r.games), M = R.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
                     count: r.memberCount
-                }), y = null !== (t = N.default.getGuildIconURL({
+                }), y = null !== (t = m.default.getGuildIconURL({
                     id: r.id,
                     icon: r.icon,
                     size: 64,
                     canAnimate: !0
-                })) && void 0 !== t ? t : void 0;
+                })) && void 0 !== t ? t : void 0, P = (0, c.getClanBannerUrl)(r.id, p);
                 return (0, i.jsxs)("div", {
-                    className: s()(g.card, c),
+                    className: s()(C.card, T),
                     children: [(0, i.jsx)("div", {
-                        className: g.cardBrandingHeader,
+                        className: C.cardBrandingHeader,
                         style: {
-                            background: "linear-gradient(90deg, ".concat(A, ", ").concat(m, ")")
+                            background: "linear-gradient(90deg, ".concat(A, ", ").concat(N, ")")
                         },
-                        children: null != a ? a : (0, i.jsx)(T.default, {
-                            banner: p,
-                            primaryTintColor: A,
-                            secondaryTintColor: m
-                        })
+                        children: null != a ? a : null != P ? (0, i.jsx)("img", {
+                            alt: R.default.Messages.CLAN_LOOK_BANNER,
+                            src: P,
+                            className: C.bannerImage
+                        }) : null
                     }), (0, i.jsxs)("div", {
-                        className: g.cardContent,
+                        className: C.cardContent,
                         children: [(0, i.jsxs)("div", {
-                            className: g.cardContentTitleSection,
+                            className: C.cardContentTitleSection,
                             children: [(0, i.jsxs)("div", {
-                                className: g.cardNameAndTagWrapper,
+                                className: C.cardNameAndTagWrapper,
                                 children: [(0, i.jsx)(E.ClanGuildIconSimple, {
                                     guildName: r.name,
                                     guildIconURL: y,
                                     iconSize: 64,
-                                    className: g.clanIcon
+                                    className: C.clanIcon
                                 }), (0, i.jsx)("div", {
-                                    className: g.clanTagChipletWrapper,
+                                    className: C.clanTagChipletWrapper,
                                     children: (0, i.jsx)(o.Tooltip, {
-                                        text: C.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
+                                        text: R.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
                                         position: "top",
                                         shouldShow: !d,
                                         children: e => (0, i.jsxs)("div", {
                                             ...e,
-                                            className: g.clanTagChiplet,
+                                            className: C.clanTagChiplet,
                                             children: [(0, i.jsx)(I.ClanBadge, {
                                                 width: 16,
                                                 height: 16,
@@ -116572,58 +115613,58 @@
                                 lineClamp: 1,
                                 children: r.name
                             }), (0, i.jsxs)("div", {
-                                className: g.clanInfoRow,
+                                className: C.clanInfoRow,
                                 children: [(0, i.jsx)(o.Text, {
                                     variant: "text-xxs/normal",
-                                    className: g.clanInfoItem,
+                                    className: C.clanInfoItem,
                                     children: (0, i.jsx)("span", {
                                         role: "img",
-                                        "aria-label": C.default.Messages.CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL,
+                                        "aria-label": R.default.Messages.CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL,
                                         children: "\uD83C\uDFAE"
                                     })
                                 }), (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-secondary",
-                                    className: g.clanInfoItem,
-                                    children: null !== (n = (0, R.getPlaystyleTitle)(r.playstyle)) && void 0 !== n ? n : C.default.Messages.CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE
-                                }), (0, i.jsx)(L, {
+                                    className: C.clanInfoItem,
+                                    children: null !== (n = (0, O.getPlaystyleTitle)(r.playstyle)) && void 0 !== n ? n : R.default.Messages.CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE
+                                }), (0, i.jsx)(g, {
                                     clan: r
                                 })]
                             })]
                         }), (0, i.jsx)("div", {
-                            className: g.cardContentDescriptionSection,
+                            className: C.cardContentDescriptionSection,
                             children: (0, i.jsx)(o.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-muted",
                                 children: r.description
                             })
-                        }), (0, i.jsx)(D, {
-                            traits: (0, R.getSortedTraits)(r.traits, _),
+                        }), (0, i.jsx)(v, {
+                            traits: (0, O.getSortedTraits)(r.traits, _),
                             expanded: l,
                             traitsToHighlight: _
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: g.cardFooter,
+                        className: C.cardFooter,
                         children: [(0, i.jsx)("div", {
-                            className: g.cardFooterInfo,
+                            className: C.cardFooterInfo,
                             children: (0, i.jsx)("div", {
-                                className: g.cardFooterMembers,
+                                className: C.cardFooterMembers,
                                 children: (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: v
+                                    children: M
                                 })
                             })
                         }), (0, i.jsx)("div", {
-                            className: g.cardFooterGames,
-                            children: (0, i.jsx)(M, {
-                                games: O
+                            className: C.cardFooterGames,
+                            children: (0, i.jsx)(D, {
+                                games: L
                             })
                         })]
                     }), f && (0, i.jsx)("div", {
-                        className: g.cardBrandingFooter,
+                        className: C.cardBrandingFooter,
                         style: {
-                            background: "linear-gradient(90deg, ".concat(A, ", ").concat(m, ")")
+                            background: "linear-gradient(90deg, ".concat(A, ", ").concat(N, ")")
                         }
                     })]
                 })
@@ -116634,30 +115675,30 @@
                     affinity: n,
                     index: a,
                     source: s
-                } = e, u = (0, l.useStateFromStores)([A.default], () => A.default.getCurrentUser()), _ = (0, l.useStateFromStores)([h.default], () => h.default.isMember(t.id, null == u ? void 0 : u.id), [t, u]), c = r.useCallback(() => {
-                    let e = null != f.default.getRequest(t.id);
-                    if (m.default.track(O.AnalyticEvents.CLAN_DISCOVERY_CARD_CLICKED, {
+                } = e, u = (0, l.useStateFromStores)([h.default], () => h.default.getCurrentUser()), _ = (0, l.useStateFromStores)([S.default], () => S.default.isMember(t.id, null == u ? void 0 : u.id), [t, u]), c = r.useCallback(() => {
+                    let e = null != T.default.getRequest(t.id);
+                    if (A.default.track(p.AnalyticEvents.CLAN_DISCOVERY_CARD_CLICKED, {
                             guild_id: t.id,
                             is_member: _,
                             has_join_request: e,
                             affinity: n,
                             index: a
                         }), _) {
-                        (0, S.transitionToGuild)(t.id);
+                        (0, f.transitionToGuild)(t.id);
                         return
                     }
                     if (e) {
-                        (0, S.transitionTo)(O.Routes.GUILD_MEMBER_VERIFICATION(t.id));
+                        (0, f.transitionTo)(p.Routes.GUILD_MEMBER_VERIFICATION(t.id));
                         return
                     }(0, d.openClanApplyFlow)(t.id, t, {
                         source: s,
-                        location: O.AnalyticsLocations.CLAN_DISCOVERY_CARD
+                        location: p.AnalyticsLocations.CLAN_DISCOVERY_CARD
                     })
                 }, [t, _, n, a, s]);
                 return (0, i.jsx)(o.Clickable, {
                     onClick: c,
-                    className: g.clickableCard,
-                    children: (0, i.jsx)(y, {
+                    className: C.clickableCard,
+                    children: (0, i.jsx)(M, {
                         ...e,
                         isMember: _,
                         showBrandingFooter: !0
@@ -170811,8 +169852,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715032832499",
-                                    build_number: "290885"
+                                    built_at: "1715033973209",
+                                    build_number: "290898"
                                 }
                             },
                             retries: 1
@@ -248864,7 +247905,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "104a93dd805d8a29ef9e2d198f873cd9ce8f4ebf"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f1a884a6f1102d9d6a3cae52e617d0f8817243e9"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277529,7 +276570,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290885"
+                                build_number: "290898"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284856,7 +283897,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290885", "290885"), 10);
+                let a = parseInt((n = "290898", "290898"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -312321,4 +311362,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.0c1b91d465a4dc979ad0.js.map
+//# sourceMappingURL=35705.19301fa7b595a0bbcbe6.js.map
