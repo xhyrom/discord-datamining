@@ -21780,10 +21780,11 @@
             function C(e) {
                 let {
                     src: t,
-                    isSpeaking: n
+                    isSpeaking: n,
+                    className: r
                 } = e;
                 return (0, i.jsxs)("div", {
-                    className: h.avatarStack,
+                    className: s()(h.avatarStack, r),
                     children: [(0, i.jsx)("img", {
                         src: null != t ? t : void 0,
                         alt: " ",
@@ -21792,7 +21793,7 @@
                     }), n && (0, i.jsx)("div", {
                         className: h.avatarSpeaking
                     })]
-                })
+                }, t)
             }
 
             function g(e) {
@@ -21808,26 +21809,27 @@
                     statusTooltip: A = !1,
                     statusBackdropColor: m,
                     "aria-hidden": O = !1,
-                    "aria-label": g
-                } = e, L = n !== T.StatusTypes.UNKNOWN ? n : null, v = (0, I.getAvatarSpecs)(r), D = null != L ? Math.ceil((v.status * I.TYPING_WIDTH_RATIO - v.status) / 2) : 0, M = v.size + D, y = (0, d.useStatusFillColor)(L, a);
+                    "aria-label": g,
+                    imageClassName: L
+                } = e, v = n !== T.StatusTypes.UNKNOWN ? n : null, D = (0, I.getAvatarSpecs)(r), M = null != v ? Math.ceil((D.status * I.TYPING_WIDTH_RATIO - D.status) / 2) : 0, y = D.size + M, P = (0, d.useStatusFillColor)(v, a);
                 return (0, i.jsx)(R, {
                     ...e,
                     ariaLabel: g,
                     ariaHidden: O,
-                    status: L,
-                    specs: v,
-                    typingOffset: D,
+                    status: v,
+                    specs: D,
+                    typingOffset: M,
                     children: (0, i.jsxs)("svg", {
-                        width: M,
-                        height: M,
-                        viewBox: "0 0 ".concat(M, " ").concat(M),
+                        width: y,
+                        height: y,
+                        viewBox: "0 0 ".concat(y, " ").concat(y),
                         className: s()(h.mask, h.svg),
                         "aria-hidden": !0,
                         children: [(0, i.jsx)("foreignObject", {
                             x: 0,
                             y: 0,
-                            width: v.size,
-                            height: v.size,
+                            width: D.size,
+                            height: D.size,
                             mask: "url(#".concat(function(e, t, n, i) {
                                 if (null == e) return c.MaskIDs.AVATAR_DEFAULT;
                                 if (i) switch (t) {
@@ -21891,28 +21893,29 @@
                                         return c.MaskIDs.AVATAR_STATUS_ROUND_120
                                 }
                                 throw Error("getMaskId(): Unsupported type, size: ".concat(t, ", status: ").concat(e, ", isMobile: ").concat(n ? "true" : "false"))
-                            }(L, r, o, l), ")"),
+                            }(v, r, o, l), ")"),
                             children: (0, i.jsx)(C, {
                                 src: t,
-                                isSpeaking: S
+                                isSpeaking: S,
+                                className: L
                             })
-                        }), null != L ? (0, i.jsx)(_.Tooltip, {
-                            text: A ? (0, E.humanizeStatus)(L) : null,
+                        }), null != v ? (0, i.jsx)(_.Tooltip, {
+                            text: A ? (0, E.humanizeStatus)(v) : null,
                             "aria-label": !1,
                             position: "top",
-                            spacing: 5 + 1.5 * v.stroke,
+                            spacing: 5 + 1.5 * D.stroke,
                             children: e => (0, i.jsxs)(i.Fragment, {
-                                children: [null != m && p(m, o, v, L), (0, i.jsx)("rect", {
+                                children: [null != m && p(m, o, D, v), (0, i.jsx)("rect", {
                                     ...e,
-                                    ...N(v, L, o, l),
-                                    fill: y,
-                                    mask: "url(#".concat((0, d.getStatusMask)(L, o, l), ")"),
+                                    ...N(D, v, o, l),
+                                    fill: P,
+                                    mask: "url(#".concat((0, d.getStatusMask)(v, o, l), ")"),
                                     className: h.pointerEvents
                                 }), l ? (0, i.jsx)(u.Dots, {
                                     ref: f,
-                                    dotRadius: v.status / 4,
-                                    x: v.size - 1.375 * v.status - v.offset,
-                                    y: v.size - v.status / 1.333 - v.offset
+                                    dotRadius: D.status / 4,
+                                    x: D.size - 1.375 * D.status - D.offset,
+                                    y: D.size - D.status / 1.333 - D.offset
                                 }) : null]
                             })
                         }) : null]
@@ -21936,8 +21939,9 @@
                     statusTooltip: v = !1,
                     statusBackdropColor: D,
                     "aria-hidden": M = !1,
-                    "aria-label": y
-                } = e, P = (0, d.useStatusFillColor)(g, L), U = r.useId(), b = r.useId(), [G] = r.useState(() => ({
+                    "aria-label": y,
+                    imageClassName: P
+                } = e, U = (0, d.useStatusFillColor)(g, L), b = r.useId(), G = r.useId(), [w] = r.useState(() => ({
                     fill: a,
                     ...O({
                         size: S,
@@ -21945,68 +21949,69 @@
                         isMobile: t,
                         isTyping: !1
                     })
-                })), w = r.useMemo(() => ({
-                    fill: P,
+                })), B = r.useMemo(() => ({
+                    fill: U,
                     ...O({
                         size: S,
                         status: g,
                         isMobile: l,
                         isTyping: c
                     })
-                }), [P, S, g, l, c]), {
-                    avatarCutoutX: B,
-                    avatarCutoutY: k,
-                    avatarCutoutWidth: V,
-                    avatarCutoutHeight: x,
-                    avatarCutoutRadius: F,
-                    fill: H,
-                    ...Y
+                }), [U, S, g, l, c]), {
+                    avatarCutoutX: k,
+                    avatarCutoutY: V,
+                    avatarCutoutWidth: x,
+                    avatarCutoutHeight: F,
+                    avatarCutoutRadius: H,
+                    fill: Y,
+                    ...j
                 } = (0, o.useSpring)({
                     immediate: !document.hasFocus(),
                     config: A,
-                    from: G,
-                    to: w
-                }), j = (0, I.getAvatarSize)(S), W = (0, I.getAvatarSpecs)(S), K = W.status * I.TYPING_WIDTH_RATIO, z = W.status * I.MOBILE_HEIGHT_RATIO, Z = null != g ? (W.status * I.TYPING_WIDTH_RATIO - W.status) / 2 : 0, X = W.size - W.status - Z - W.offset, Q = W.size - z - W.offset, q = W.size + Math.ceil(Z);
+                    from: w,
+                    to: B
+                }), W = (0, I.getAvatarSize)(S), K = (0, I.getAvatarSpecs)(S), z = K.status * I.TYPING_WIDTH_RATIO, Z = K.status * I.MOBILE_HEIGHT_RATIO, X = null != g ? (K.status * I.TYPING_WIDTH_RATIO - K.status) / 2 : 0, Q = K.size - K.status - X - K.offset, q = K.size - Z - K.offset, J = K.size + Math.ceil(X);
                 return (0, i.jsx)(R, {
                     ...e,
                     ariaLabel: y,
                     ariaHidden: M,
-                    typingOffset: Z,
-                    specs: W,
+                    typingOffset: X,
+                    specs: K,
                     children: (0, i.jsxs)("svg", {
-                        width: q,
-                        height: q,
-                        viewBox: "0 0 ".concat(q, " ").concat(q),
+                        width: J,
+                        height: J,
+                        viewBox: "0 0 ".concat(J, " ").concat(J),
                         className: s()(h.mask, h.svg),
                         "aria-hidden": !0,
                         children: [(0, i.jsxs)("mask", {
-                            id: U,
-                            width: j,
-                            height: j,
+                            id: b,
+                            width: W,
+                            height: W,
                             children: [(0, i.jsx)("circle", {
-                                cx: j / 2,
-                                cy: j / 2,
-                                r: j / 2,
+                                cx: W / 2,
+                                cy: W / 2,
+                                r: W / 2,
                                 fill: "white"
                             }), (0, i.jsx)(o.animated.rect, {
                                 color: "black",
-                                x: B,
-                                y: k,
-                                width: V,
-                                height: x,
-                                rx: F,
-                                ry: F
+                                x: k,
+                                y: V,
+                                width: x,
+                                height: F,
+                                rx: H,
+                                ry: H
                             })]
                         }), (0, i.jsx)("foreignObject", {
                             className: h.__invalid_foreignObject,
                             x: 0,
                             y: 0,
-                            width: j,
-                            height: j,
-                            mask: "url(#".concat(U, ")"),
+                            width: W,
+                            height: W,
+                            mask: "url(#".concat(b, ")"),
                             children: (0, i.jsx)(C, {
                                 src: N,
-                                isSpeaking: f
+                                isSpeaking: f,
+                                className: P
                             })
                         }), (0, i.jsx)(_.Tooltip, {
                             text: v ? (0, E.humanizeStatus)(g) : null,
@@ -22015,25 +22020,25 @@
                             spacing: function(e, t, n) {
                                 let i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
                                 return 5 - (n && !i ? 0 : .5 * e) + 1.5 * t
-                            }(W.status, W.stroke, l, c),
+                            }(K.status, K.stroke, l, c),
                             children: e => (0, i.jsxs)(i.Fragment, {
-                                children: [null != D && p(D, l, W, g), (0, i.jsxs)("svg", {
-                                    x: X,
-                                    y: Q,
-                                    width: K,
-                                    height: z,
-                                    viewBox: "0 0 ".concat(K, " ").concat(z),
+                                children: [null != D && p(D, l, K, g), (0, i.jsxs)("svg", {
+                                    x: Q,
+                                    y: q,
+                                    width: z,
+                                    height: Z,
+                                    viewBox: "0 0 ".concat(z, " ").concat(Z),
                                     className: v ? h.cursorDefault : void 0,
-                                    children: [(0, d.renderStatusMask)(Y, W.status, b), (0, i.jsx)(o.animated.rect, {
-                                        fill: H,
-                                        width: K,
-                                        height: z,
-                                        mask: "url(#".concat(b, ")")
+                                    children: [(0, d.renderStatusMask)(j, K.status, G), (0, i.jsx)(o.animated.rect, {
+                                        fill: Y,
+                                        width: z,
+                                        height: Z,
+                                        mask: "url(#".concat(G, ")")
                                     }), (0, i.jsx)(u.Dots, {
                                         ref: T,
-                                        dotRadius: W.status / 4,
-                                        x: .15 * K,
-                                        y: .5 * z,
+                                        dotRadius: K.status / 4,
+                                        x: .15 * z,
+                                        y: .5 * Z,
                                         hide: !c
                                     })]
                                 }), (0, i.jsx)(m, {
@@ -37025,7 +37030,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290807", ", Version Hash: ").concat("a13bbec0e0699f73b9df64ddeaeeb9332c050a0c")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290810", ", Version Hash: ").concat("7f04734cc15850b458f1be1df4515f2c07f1639a")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87517,8 +87522,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290807", "290807"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290807")), t = 0), t
+                let t = parseInt((e = "290810", "290810"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290810")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115416,8 +115421,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290807",
-                    versionHash: "a13bbec0e0699f73b9df64ddeaeeb9332c050a0c"
+                    buildNumber: "290810",
+                    versionHash: "7f04734cc15850b458f1be1df4515f2c07f1639a"
                 }
             }
             n.r(t), n.d(t, {
@@ -170765,8 +170770,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715022630092",
-                                    build_number: "290807"
+                                    built_at: "1715023194072",
+                                    build_number: "290810"
                                 }
                             },
                             retries: 1
@@ -248818,7 +248823,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a13bbec0e0699f73b9df64ddeaeeb9332c050a0c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7f04734cc15850b458f1be1df4515f2c07f1639a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -277483,7 +277488,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290807"
+                                build_number: "290810"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284810,7 +284815,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290807", "290807"), 10);
+                let a = parseInt((n = "290810", "290810"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -312275,4 +312280,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.683d5327814c8d5ab24f.js.map
+//# sourceMappingURL=35705.10c4d5a639d45a7ba21c.js.map
