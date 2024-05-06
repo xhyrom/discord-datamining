@@ -53593,19 +53593,6 @@ div:has(>div>.modal__06f49) {
     background: var(--bg-overlay-2, var(--background-secondary))
 }
 
-.upsellContainer__6d38c {
-    padding: 8px 12px;
-    background-color: var(--background-tertiary);
-    border-radius: var(--radius-sm);
-    margin: 4px 8px;
-    cursor: pointer
-}
-
-.exclusive__6ed26 {
-    text-transform: uppercase;
-    margin-bottom: 4px
-}
-
 .container__7abe8 {
     position: relative;
     padding: var(--custom-channel-notice-padding);
@@ -53732,6 +53719,40 @@ div:has(>div>.modal__06f49) {
 
 .avatar_b4fc6a {
     flex-shrink: 0
+}
+
+.notice__5e8f3 {
+    background-color: var(--bg-surface-overlay)
+}
+
+.button__9ebf4 {
+    box-shadow: var(--shadow-high);
+    border-radius: 8px
+}
+
+.invite_e46f65 {
+    text-transform: uppercase;
+    color: var(--text-brand)
+}
+
+.title_c61169 {
+    margin-bottom: 4px
+}
+
+.inviteContainer__0d380 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 12px
+}
+
+.envelope_aff450 {
+    margin-right: 4px;
+    color: var(--text-brand)
+}
+
+.message__42438 {
+    margin-bottom: 12px
 }
 
 .channelNotice__4b1b9 {
@@ -136339,4 +136360,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.77c2a6c53a19f6fb7338.css.map*/
+/*# sourceMappingURL=99387.1c733c9b126a5a77ba62.css.map*/
