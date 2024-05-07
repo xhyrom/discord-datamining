@@ -31727,36 +31727,55 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .embed__26f68 {
-    margin-top: 8px
+    margin-top: 8px;
+    margin-bottom: var(--custom-message-spacing-vertical-container-cozy)
 }
 
 .container_e8183e {
-    display: grid;
-    grid-template: "emoji title       button" auto"emoji description button" auto/max-content 1fr max-content;
+    max-width: 376px;
     padding: 8px;
     padding-right: 16px;
+    display: flex;
+    gap: 0 8px;
+    align-items: center;
     background-color: var(--background-secondary);
-    border-radius: 8px;
-    max-width: 376px
+    border-radius: 8px
 }
 
-.emoji__496e3 {
-    grid-area: emoji;
-    align-self: center;
-    margin-right: 8px
-}
-
-.title_eb3605 {
-    grid-area: title
+.imageContainer_b8eb37 {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-sm);
+    background: var(--background-primary)
 }
 
 .description_c2c202 {
-    grid-area: description
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    gap: 2px 0;
+    overflow: hidden
 }
 
+.victorAnswer__797b7 {
+    display: flex;
+    gap: 0 4px;
+    align-items: center
+}
+
+.victorAnswerText_d5541e {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.victorIcon_b173ae,
 .button__2268e {
-    grid-area: button;
-    align-self: center
+    flex-shrink: 0
 }
 
 .ticketIcon_c730df {
@@ -45607,6 +45626,10 @@ img.thumbnail__18ece {
     height: 24px
 }
 
+.selectedGameCheckLocked_dc2cc2 {
+    color: var(--icon-muted)
+}
+
 @keyframes placeholderPulse__8767a {
     0% {
         opacity: .3
@@ -45637,7 +45660,10 @@ img.thumbnail__18ece {
 .gameName_be13e2 {
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 4px
 }
 
 .remainingGame__11ccc {
@@ -136416,4 +136442,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.350c58cf07fe2083caaf.css.map*/
+/*# sourceMappingURL=99387.f561f780e80f9f273c45.css.map*/
