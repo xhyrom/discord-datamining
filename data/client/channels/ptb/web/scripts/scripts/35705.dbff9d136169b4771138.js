@@ -37002,7 +37002,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291182", ", Version Hash: ").concat("21ab7019e5d071d34b2c7bcdca5cd4a98f89c2ae")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291188", ", Version Hash: ").concat("1462ac87a1b402042bbaf1ae201dfc35332bcc8f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87594,8 +87594,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291182", "291182"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291182")), t = 0), t
+                let t = parseInt((e = "291188", "291188"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291188")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -114643,8 +114643,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291182",
-                    versionHash: "21ab7019e5d071d34b2c7bcdca5cd4a98f89c2ae"
+                    buildNumber: "291188",
+                    versionHash: "1462ac87a1b402042bbaf1ae201dfc35332bcc8f"
                 }
             }
             n.r(t), n.d(t, {
@@ -152157,7 +152157,7 @@
                     },
                     async open(e, t, i, r) {
                         var a;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("23755"), n.e("70716"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("56630"), n.e("58227"), n.e("43643"), n.e("85093"), n.e("85552"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("43502"), n.e("52332"), n.e("74526"), n.e("33361"), n.e("50916"), n.e("62856"), n.e("56215"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("23755"), n.e("70716"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("56630"), n.e("58227"), n.e("43643"), n.e("85093"), n.e("85552"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("52332"), n.e("74526"), n.e("33361"), n.e("50916"), n.e("62856"), n.e("56215"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         a.default.dispatch({
@@ -169992,8 +169992,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715111494113",
-                                    build_number: "291182"
+                                    built_at: "1715112167231",
+                                    build_number: "291188"
                                 }
                             },
                             retries: 1
@@ -211003,7 +211003,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return T
+                    return I
                 }
             });
             var i = n("735250");
@@ -211017,25 +211017,23 @@
                 d = n("785717"),
                 _ = n("841040"),
                 c = n("993409"),
-                E = n("537387"),
-                I = n("689938");
+                E = n("689938");
 
-            function T(e) {
+            function I(e) {
                 let {
-                    type: t,
-                    user: n,
-                    guildId: T,
-                    onClose: f
-                } = e, S = "action" === t ? c.default : E.default, h = (0, r.useStateFromStores)([o.default], () => o.default.getId() === n.id), A = (0, r.useStateFromStores)([l.default], () => null != T ? l.default.getGuild(T) : null), {
-                    trackUserProfileAction: m
-                } = (0, d.useUserProfileAnalyticsContext)(), N = (0, s.default)();
-                return h ? null == A ? (0, i.jsx)(S, {
+                    user: t,
+                    guildId: n,
+                    onClose: I
+                } = e, T = (0, r.useStateFromStores)([o.default], () => o.default.getId() === t.id), f = (0, r.useStateFromStores)([l.default], () => null != n ? l.default.getGuild(n) : null), {
+                    trackUserProfileAction: S
+                } = (0, d.useUserProfileAnalyticsContext)(), h = (0, s.default)();
+                return T ? null == f ? (0, i.jsx)(c.default, {
                     icon: u.default,
-                    text: I.default.Messages.EDIT_PROFILE,
+                    text: E.default.Messages.EDIT_PROFILE,
                     onClick: () => {
-                        m({
+                        S({
                             action: "EDIT_PROFILE"
-                        }), null == f || f(), N()
+                        }), null == I || I(), h()
                     }
                 }) : (0, i.jsx)(a.Popout, {
                     renderPopout: e => {
@@ -211043,15 +211041,15 @@
                             closePopout: t
                         } = e;
                         return (0, i.jsx)(_.default, {
-                            guild: A,
+                            guild: f,
                             onClose: () => {
-                                t(), null == f || f()
+                                t(), null == I || I()
                             }
                         })
                     },
-                    children: e => (0, i.jsx)(S, {
+                    children: e => (0, i.jsx)(c.default, {
                         icon: u.default,
-                        text: I.default.Messages.EDIT_PROFILE,
+                        text: E.default.Messages.EDIT_PROFILE,
                         ...e
                     })
                 }) : null
@@ -213426,7 +213424,6 @@
                         channelId: l,
                         onClose: u
                     }), !d && (0, i.jsx)(a.default, {
-                        type: "action",
                         user: t,
                         guildId: n,
                         onClose: u
@@ -248051,7 +248048,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "21ab7019e5d071d34b2c7bcdca5cd4a98f89c2ae"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "1462ac87a1b402042bbaf1ae201dfc35332bcc8f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276735,7 +276732,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291182"
+                                build_number: "291188"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284084,7 +284081,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291182", "291182"), 10);
+                let a = parseInt((n = "291188", "291188"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -311583,4 +311580,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.a465ef45635471dce5d9.js.map
+//# sourceMappingURL=35705.dbff9d136169b4771138.js.map
