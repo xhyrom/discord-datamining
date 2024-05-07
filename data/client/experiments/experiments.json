@@ -10248,13 +10248,15 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Receive changelog updates as messages"
+        "Treatment 1: Receive changelog updates as messages",
+        "Treatment 2: Receive unpublished changelog updates as messages (server)"
       ],
       "hash": 977357519,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
