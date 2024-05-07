@@ -37002,7 +37002,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290998", ", Version Hash: ").concat("7b0693ab56a5123978cafefca1e10e70daf950f6")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291006", ", Version Hash: ").concat("149879b67bb6286f9513f3be0e68d5c4f9922ef7")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87542,8 +87542,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290998", "290998"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290998")), t = 0), t
+                let t = parseInt((e = "291006", "291006"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291006")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -114525,8 +114525,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290998",
-                    versionHash: "7b0693ab56a5123978cafefca1e10e70daf950f6"
+                    buildNumber: "291006",
+                    versionHash: "149879b67bb6286f9513f3be0e68d5c4f9922ef7"
                 }
             }
             n.r(t), n.d(t, {
@@ -169874,8 +169874,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715047549934",
-                                    build_number: "290998"
+                                    built_at: "1715052608855",
+                                    build_number: "291006"
                                 }
                             },
                             retries: 1
@@ -210433,61 +210433,44 @@
                 let {
                     userId: t,
                     guildId: n,
+                    textClassName: T
+                } = e, f = (0, r.useStateFromStores)([o.default], () => o.default.locale), S = (0, r.useStateFromStores)([u.default], () => null != n ? u.default.getGuild(n) : null), h = (0, r.useStateFromStores)([l.default], () => null != n ? l.default.getMember(n, t) : null), A = (0, s.getCreatedAtDate)(c.default.extractTimestamp(t), f), m = (0, s.getCreatedAtDate)(null == h ? void 0 : h.joinedAt, f);
+                return null == S || null == h ? (0, i.jsx)(a.Text, {
+                    variant: "text-sm/normal",
                     className: T,
-                    headingClassName: f,
-                    textClassName: S,
-                    headingVariant: h = "eyebrow"
-                } = e, A = (0, r.useStateFromStores)([o.default], () => o.default.locale), m = (0, r.useStateFromStores)([u.default], () => null != n ? u.default.getGuild(n) : null), N = (0, r.useStateFromStores)([l.default], () => null != n ? l.default.getMember(n, t) : null), p = (0, s.getCreatedAtDate)(c.default.extractTimestamp(t), A), O = (0, s.getCreatedAtDate)(null == N ? void 0 : N.joinedAt, A);
-                return null == m || null == N ? (0, i.jsxs)("div", {
-                    className: T,
-                    children: [(0, i.jsx)(a.Heading, {
-                        variant: h,
-                        className: f,
-                        children: E.default.Messages.USER_PROFILE_DISCORD_MEMBER_SINCE
-                    }), (0, i.jsx)(a.Text, {
-                        variant: "text-sm/normal",
-                        className: S,
-                        children: p
-                    })]
+                    children: A
                 }) : (0, i.jsxs)("div", {
-                    className: T,
-                    children: [(0, i.jsx)(a.Heading, {
-                        variant: h,
-                        className: f,
-                        children: E.default.Messages.USER_PROFILE_MEMBER_SINCE
+                    className: I.memberSinceWrapper,
+                    children: [(0, i.jsxs)("div", {
+                        className: I.memberSince,
+                        children: [(0, i.jsx)(a.Tooltip, {
+                            text: E.default.Messages.DISCORD_NAME,
+                            color: a.TooltipColors.NESTED,
+                            children: e => (0, i.jsx)(_.default, {
+                                ...e,
+                                className: I.discordIcon
+                            })
+                        }), (0, i.jsx)(a.Text, {
+                            variant: "text-sm/normal",
+                            className: T,
+                            children: A
+                        })]
+                    }), (0, i.jsx)("div", {
+                        className: I.divider
                     }), (0, i.jsxs)("div", {
-                        className: I.memberSinceWrapper,
-                        children: [(0, i.jsxs)("div", {
-                            className: I.memberSince,
-                            children: [(0, i.jsx)(a.Tooltip, {
-                                text: E.default.Messages.DISCORD_NAME,
-                                color: a.TooltipColors.NESTED,
-                                children: e => (0, i.jsx)(_.default, {
-                                    ...e,
-                                    className: I.discordIcon
-                                })
-                            }), (0, i.jsx)(a.Text, {
-                                variant: "text-sm/normal",
-                                className: S,
-                                children: p
-                            })]
-                        }), (0, i.jsx)("div", {
-                            className: I.divider
-                        }), (0, i.jsxs)("div", {
-                            className: I.memberSince,
-                            children: [(0, i.jsx)(a.Tooltip, {
-                                text: m.name,
-                                color: a.TooltipColors.NESTED,
-                                children: e => (0, i.jsx)(d.default, {
-                                    ...e,
-                                    guild: m,
-                                    size: d.default.Sizes.SMOL
-                                })
-                            }), (0, i.jsx)(a.Text, {
-                                variant: "text-sm/normal",
-                                className: S,
-                                children: O
-                            })]
+                        className: I.memberSince,
+                        children: [(0, i.jsx)(a.Tooltip, {
+                            text: S.name,
+                            color: a.TooltipColors.NESTED,
+                            children: e => (0, i.jsx)(d.default, {
+                                ...e,
+                                guild: S,
+                                size: d.default.Sizes.SMOL
+                            })
+                        }), (0, i.jsx)(a.Text, {
+                            variant: "text-sm/normal",
+                            className: T,
+                            children: m
                         })]
                     })]
                 })
@@ -214330,26 +214313,33 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return o
+                    return u
                 }
             });
             var i = n("735250");
             n("470079");
-            var r = n("81334"),
-                a = n("659101"),
-                s = n("795197");
+            var r = n("260034"),
+                a = n("81334"),
+                s = n("659101"),
+                o = n("689938"),
+                l = n("795197");
 
-            function o(e) {
+            function u(e) {
                 let {
                     userId: t,
                     guildId: n
                 } = e;
-                return (0, i.jsx)(a.default, {
-                    children: (0, i.jsx)(r.default, {
-                        userId: t,
-                        guildId: n,
-                        headingClassName: s.title,
-                        textClassName: s.body
+                return (0, i.jsx)(s.default, {
+                    children: (0, i.jsxs)("div", {
+                        children: [(0, i.jsx)(r.Heading, {
+                            variant: "eyebrow",
+                            className: l.title,
+                            children: o.default.Messages.USER_PROFILE_MEMBER_SINCE
+                        }), (0, i.jsx)(a.default, {
+                            userId: t,
+                            guildId: n,
+                            textClassName: l.body
+                        })]
                     })
                 })
             }
@@ -247943,7 +247933,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "7b0693ab56a5123978cafefca1e10e70daf950f6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "149879b67bb6286f9513f3be0e68d5c4f9922ef7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276627,7 +276617,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290998"
+                                build_number: "291006"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -283954,7 +283944,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290998", "290998"), 10);
+                let a = parseInt((n = "291006", "291006"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -311453,4 +311443,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.b7720b453327f10e7ec1.js.map
+//# sourceMappingURL=35705.cf7bf56b5d9d5295b5eb.js.map

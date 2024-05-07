@@ -51723,8 +51723,8 @@ div:has(>div>.modal__06f49) {
 }
 
 .name__4eb92 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -136450,4 +136450,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.423b4ff6d4ce760e821e.css.map*/
+/*# sourceMappingURL=99387.4afc220c09c3f6ae1fae.css.map*/
