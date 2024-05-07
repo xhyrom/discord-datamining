@@ -25398,7 +25398,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     display: flex;
     gap: 8px;
     z-index: 3;
-    opacity: .6;
     transition: opacity.6s ease
 }
 
@@ -25414,10 +25413,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 .wrapper__7f8df.fullSize__51728 {
     top: 12px;
     right: 16px
-}
-
-.wrapper__7f8df.hovering_ad089d {
-    opacity: 1
 }
 
 .button_e8c966 {
@@ -48419,12 +48414,12 @@ div:has(>div>.modal__06f49) {
 .streamerModeEnabledBtn_b696dd {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 1.8125rem;
+    line-height: 29px;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -136651,4 +136646,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.8f7f208ebcdebfc1e636.css.map*/
+/*# sourceMappingURL=99387.406e313ad7fcd04e4a52.css.map*/
