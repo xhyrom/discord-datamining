@@ -21,7 +21,7 @@
         <ul>
             <li style="font-weight: 400;" aria-level="1"><a href="https://support.discord.com/hc/en-us/articles/360012668071#docs-internal-guid-50354cf2-7fff-3088-9290-bc81d22b38c0">Server Subscription Refunds</a></li>
             <li style="font-weight: 400;" aria-level="1"><a href="https://support.discord.com/hc/en-us/articles/360012668071#docs-internal-guid-50354cf2-7fff-3088-9290-bc81d22b38c0">Server Shop Purchase Refunds</a></li>
-            <li style="font-weight: 400;" aria-level="1"><a href="https://support.discord.com/hc/en-us/articles/360012668071#h_01GXCJT1K30JVPCNX51X4DY8EF">Premium App Subscription Refunds</a></li>
+            <li style="font-weight: 400;" aria-level="1"><a href="https://support.discord.com/hc/en-us/articles/360012668071#h_01GXCJT1K30JVPCNX51X4DY8EF">Premium App Refunds</a></li>
         </ul>
     </li>
     <li style="font-weight: 400;" aria-level="1"><a href="https://support.discord.com/hc/en-us/articles/360012668071#h_01GK7B09R0VYPAT6VJWV2JR9RR">How to Submit a Refund Request</a></li>
@@ -55,7 +55,8 @@
 <h3 id="h_01HBCKWXX4KDAQ4H1QY515A639">For any refund requests or issues not covered by the above, please contact the creator or admin of the applicable server. If you are unable to address your issue directly with the creator or server admin, you can reach out to our <a href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000118612" target="_blank" rel="noopener noreferrer">Support Team</a>. </h3>
 <h2 id="docs-internal-guid-50354cf2-7fff-3088-9290-bc81d22b38c0">Server Shop Purchase Refunds</h2>
 <p>We are unable to provide refunds for items purchased from a Server Shop. If your Server Shop purchase is defective or you’re experiencing problems with the purchase, please contact us at <a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer">dis.gd/billing</a>.</p>
-<h2 id="h_01GXCJT1K30JVPCNX51X4DY8EF"><span style="font-weight: 400;">Premium App Subscription Refunds<br></span></h2>
+<h2 id="h_01GXCJT1K30JVPCNX51X4DY8EF"><span style="font-weight: 400;">Premium App Refunds<br></span></h2>
+<h3 id="h_01HXA3ZVHAKM449FNTDZWWEPQZ"><span style="font-weight: 400;">One-time Premium App purchases are non-refundable.</span></h3>
 <p><span style="font-weight: 400;">If you would like to request a refund for a Premium App Subscription purchase you’ve made, you must reach out to our Support Team within </span><strong>5 days</strong><span style="font-weight: 400;"> of your initial purchase of the subscription at </span><a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer">dis.gd/billing</a><span style="font-weight: 400;">. </span></p>
 <p><span style="font-weight: 400;">In addition, if an app you’ve purchased a Premium App Subscription for is removed from the applicable server by us or the developer, you may also request a pro-rated refund for the remainder of the subscription within </span><strong>5 days</strong><span style="font-weight: 400;"> of such event. </span></p>
 <h3 id="h_01HBCKWXX4CG27ATGZAADNESVQ">For any refund requests or issues not covered by the above, please contact the developer of the applicable app. </h3>
