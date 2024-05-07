@@ -37002,7 +37002,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291103", ", Version Hash: ").concat("215e553d3698afb627a4ea55d2dc4e91c7f238f9")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291131", ", Version Hash: ").concat("6a2d6fe891a75ba5e4d7d9c21565a865d51589c1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55391,9 +55391,7 @@
                 QUESTS_DISCLOSURE_LABEL: "Why am I seeing this?",
                 QUESTS_HIDE_THIS: "Hide This",
                 QUESTS_FIND_QUEST: "You can find this again in User Settings > Gift Inventory",
-                QUESTS_CLAIM_BY: "Claim by {expirationDate}.",
                 QUESTS_CLAIM_BY_DATE: "Claim by {expirationDate}",
-                QUESTS_AVAILABLE_UNTIL: "Available until {expirationDate}.",
                 QUESTS_AVAILABLE_UNTIL_DATE: "Available until {expirationDate}",
                 QUESTS_EXPIRED_ON: "Expired on {expirationDate}.",
                 QUESTS_EXPIRED_ON_DATE: "Expired on {expirationDate}",
@@ -55872,6 +55870,7 @@
                 CLAN_UPSELL_CONTENT: "Want to recruit more people to play games in your server?",
                 CLAN_UPSELL_CONTENT_VALORANT: "Want to recruit more people to play Valorant in your server?",
                 CLAN_UPSELL_CONTENT_GENSHIN: "Want to recruit more people to play Genshin Impact in your server?",
+                CLAN_GUILD_LIST_ADMIN_UPSELL_TITLE: "Join the first Guilds on Discord",
                 CLAN_CHANNEL_LIST_ADMIN_UPSELL_TITLE: "Your Guilds Invite is ready!",
                 CLAN_CHANNEL_LIST_ADMIN_UPSELL_VALORANT_MESSAGE: "Recruit new Valorant players to your server based on playstyle and vibe.",
                 CLAN_CHANNEL_LIST_ADMIN_UPSELL_GENSHIN_MESSAGE: "Recruit new Genshin players to your server based on playstyle and vibe.",
@@ -55916,7 +55915,7 @@
                 CLAN_SETUP_CUSTOMIZE_HELP_TEXT: "Maxmimum 4 characters, alphabet (A-Z) and numbers only",
                 CLAN_SETUP_TAG_PLACEHOLDER: "GGEZ",
                 CLAN_SETUP_SIGN_TITLE: "You're almost done!",
-                CLAN_SETUP_SIGN_SUBTITLE: "One last step - sign the charter to become a Gaming Guild.",
+                CLAN_SETUP_SIGN_SUBTITLE: "One last step - sign the charter to become a Guild.",
                 CLAN_SETUP_OPTIONAL: "Optional",
                 CLAN_SETUP_WILDCARDS_SUBTITLE: "How would you describe your Guild in three words? Be creative.",
                 CLAN_SETUP_NUM_TRAITS: "{n, plural, one {1 Trait} other {{n} Traits}}",
@@ -55967,7 +55966,7 @@
                 CLAN_SUBMIT_ERROR_TEXT: "There are errors you need to fix. $[**Go back**](backHook) and check error messages for more information.",
                 CLAN_SUBMIT_ERROR_TITLE: "There are errors you need to fix.",
                 CLAN_SUBMIT_ERROR_SUBTITLE: "Check the error message for more information.",
-                CLAN_SUCCESS_TITLE: "is now a Gaming Guild!",
+                CLAN_SUCCESS_TITLE: "is now a Guild!",
                 CLAN_SUCCESS_SUBTITLE: "Before you join the fun, you can choose to represent your guild tag next to your username whenever you chat.",
                 CLAN_SUCCESS_USE_TAG_TEXT: "Wear Guild Tag next to username",
                 CLAN_SUCCESS_USE_TAG_HELP: "You can always edit these settings later.",
@@ -55984,12 +55983,12 @@
                 CLAN_SETTINGS_SELECT_INTERESTS: "Select Topics",
                 CLAN_SETTINGS_WRITE_DESCRIPTION: "Write Description",
                 CLAN_SETTINGS_CUSTOMIZE_IDENTITY: "Customize Identity",
-                CLAN_SETTINGS_CLAN_BADGE: "Gaming Guild Badge",
-                CLAN_SETTINGS_CLAN_PROFILE: "Clan Profile",
+                CLAN_SETTINGS_CLAN_BADGE: "Guild Badge",
+                CLAN_SETTINGS_CLAN_PROFILE: "Guild Profile",
                 CLAN_SETTINGS_JOIN_APPLICATION: "Join Application",
-                CLAN_SETTINGS_DISABLE_CLAN: "Disable Gaming Guild",
+                CLAN_SETTINGS_DISABLE_CLAN: "Disable Guild",
                 CLAN_SETTINGS_DISABLE_CONFIRM_TITLE: "Are you sure?",
-                CLAN_SETTINGS_DISABLE_CONFIRM_BODY: "All open applications to your clan will be rejected. Members will lose their clan tags.",
+                CLAN_SETTINGS_DISABLE_CONFIRM_BODY: "All open applications to your Guild will be rejected. Members will lose their Guild tags.",
                 CLAN_START_INTERVIEW: "Start Interview",
                 CLAN_JOIN_INTERVIEW: "Join Interview",
                 CLAN_APPLICATION_SETUP_HEADER: "Set up the member screening application for **!!{guildName}!!** here. The application must have at least one Short Answer, Paragraph, or Multiple Choice section.",
@@ -56053,13 +56052,13 @@
                 CLAN_DISCOVERY_PRIMETIME_FILTER: "Prime Time",
                 CLAN_DISCOVERY_MEMBER_COUNT: "{count, plural, =1 {1 Member} other {{count} Members}}",
                 CLAN_DISCOVERY_PROFILE_TITLE: "Answer a few questions to join!",
-                CLAN_DISCOVERY_PROFILE_SUBTITLE: "The Gaming Guild leader will get back to you shortly after you submit.",
+                CLAN_DISCOVERY_PROFILE_SUBTITLE: "The Guild leader will get back to you shortly after you submit.",
                 CLAN_DISCOVERY_PLAYSTYLE_TITLE: "What's your playstyle?",
-                CLAN_DISCOVERY_PLAYSTYLE_SUBTITLE: "We'll recommend you Gaming Guilds that fit your playstyle.",
+                CLAN_DISCOVERY_PLAYSTYLE_SUBTITLE: "We'll recommend you Guilds that fit your playstyle.",
                 CLAN_DISCOVERY_TRAIT_TITLE: "Would you prefer to sort by any of these?",
-                CLAN_DISCOVERY_TRAIT_SUBTITLE: "We will prioritize Gaming Guilds that match the criteria you selected.",
+                CLAN_DISCOVERY_TRAIT_SUBTITLE: "We will prioritize Guilds that match the criteria you selected.",
                 CLAN_DISCOVERY_GAME_TITLE: "What games do you play?",
-                CLAN_DISCOVERY_GAME_SUBTITLE: "We'll recommend Gaming Guilds to join based on games you play.",
+                CLAN_DISCOVERY_GAME_SUBTITLE: "We'll recommend Guilds to join based on games you play.",
                 CLAN_DISCOVERY_GAMES_SEARCH_PLACEHOLDER: "Look for a Game...",
                 CLAN_DISCOVERY_GAMES_SELECTED: "Selected Games",
                 CLAN_DISCOVERY_TRAIT_OVERFLOW: "+ {count, number} more",
@@ -56082,9 +56081,9 @@
                 CLAN_DISCOVERY_UPSELL_RESERVE: "Reserve Your Spot",
                 CLAN_DISCOVERY_UPSELL_CONTINUE_SETUP: "Continue Setup",
                 CLAN_DISCOVERY_UPSELL_VALORANT_TITLE: "Just a few clicks to find your Valorant clique.",
-                CLAN_DISCOVERY_UPSELL_VALORANT_SUBTITLE: "Answer a few questions to discover Valorant Gaming Guilds on Discord based on your interests and playstyle.",
+                CLAN_DISCOVERY_UPSELL_VALORANT_SUBTITLE: "Answer a few questions to discover Valorant Guilds on Discord based on your interests and playstyle.",
                 CLAN_DISCOVERY_UPSELL_GENSHIN_TITLE: "Just a few clicks to find your Genshin clique.",
-                CLAN_DISCOVERY_UPSELL_GENSHIN_SUBTITLE: "Answer a few questions to discover Genshin Gaming Guilds on Discord based on your interests and playstyle.",
+                CLAN_DISCOVERY_UPSELL_GENSHIN_SUBTITLE: "Answer a few questions to discover Genshin Guilds on Discord based on your interests and playstyle.",
                 CLAN_DISCOVERY_UPSELL_GET_STARTED: "Get Started",
                 MESSAGE_ACTION_FORWARD: "Forward"
             })
@@ -87590,8 +87589,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291103", "291103"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291103")), t = 0), t
+                let t = parseInt((e = "291131", "291131"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291131")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -114639,8 +114638,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291103",
-                    versionHash: "215e553d3698afb627a4ea55d2dc4e91c7f238f9"
+                    buildNumber: "291131",
+                    versionHash: "6a2d6fe891a75ba5e4d7d9c21565a865d51589c1"
                 }
             }
             n.r(t), n.d(t, {
@@ -115947,7 +115946,7 @@
                 }
             }), n("47120");
             var i = n("524437");
-            let r = new Set([i.DismissibleContent.APPLICATION_COMMAND_TOOLTIP, i.DismissibleContent.NOW_PLAYING_CONSENT_CARD, i.DismissibleContent.GUILD_INSIGHTS_ACCESS_RATE_NEW, i.DismissibleContent.FORUM_CHANNEL_UPSELL_MODAL, i.DismissibleContent.FORUM_CHANNEL_HELPER_CARD, i.DismissibleContent.AUTH_SESSIONS_NEW, i.DismissibleContent.COMMANDS_MIGRATION_UPSELL_MODAL, i.DismissibleContent.HUB_BACK_TO_SCHOOL_UPSELL, i.DismissibleContent.CHANNEL_BROWSER_NUX, i.DismissibleContent.BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL, i.DismissibleContent.GG_ANNOUNCEMENT, i.DismissibleContent.GUILD_ONBOARDING_UPSELL_MODAL, i.DismissibleContent.SEASONAL_GIFTING_COACHMARK_2022, i.DismissibleContent.CLIENT_THEMES_SETTINGS_BADGE, i.DismissibleContent.CLIENT_THEMES_SPARKLE_PREVIEW, i.DismissibleContent.QUEST_1_COMPLETION_TOOLTIP, i.DismissibleContent.SOUNDBOARD_VOLUME_EDUCATION, i.DismissibleContent.REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE, i.DismissibleContent.GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE, i.DismissibleContent.CUSTOM_CALL_SOUNDS_PICKER_UPSELL, i.DismissibleContent.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK, i.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE, i.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_BADGE, i.DismissibleContent.WHATS_NEW_AVATAR_DECOS_FLIP, i.DismissibleContent.WHATS_NEW_PROFILE_EFFECTS_FLIP, i.DismissibleContent.RECURRING_CONTACT_SYNC_PROMPT, i.DismissibleContent.WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE, i.DismissibleContent.WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE, i.DismissibleContent.NUX_GUILD_CHANNEL_EXPLAINER, i.DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE, i.DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP, i.DismissibleContent.FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS, i.DismissibleContent.VOICE_CALL_BG_PICKER_NEW_BADGE, i.DismissibleContent.TENURE_REWARD_PENDING, i.DismissibleContent.TENURE_REWARD_REDEEMABLE, i.DismissibleContent.ACTIVITIES_CHAT_MENU_NEW_BADGE, i.DismissibleContent.ACTIVITIES_CHAT_BUTTON_NUX_V2, i.DismissibleContent.TENURE_REWARD_REDEEMABLE_CONFETTI, i.DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, i.DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER, i.DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER, i.DismissibleContent.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE, i.DismissibleContent.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK, i.DismissibleContent.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE, i.DismissibleContent.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP, i.DismissibleContent.CHANNEL_LIST_CLAN_ADMIN_UPSELL])
+            let r = new Set([i.DismissibleContent.APPLICATION_COMMAND_TOOLTIP, i.DismissibleContent.NOW_PLAYING_CONSENT_CARD, i.DismissibleContent.GUILD_INSIGHTS_ACCESS_RATE_NEW, i.DismissibleContent.FORUM_CHANNEL_UPSELL_MODAL, i.DismissibleContent.FORUM_CHANNEL_HELPER_CARD, i.DismissibleContent.AUTH_SESSIONS_NEW, i.DismissibleContent.COMMANDS_MIGRATION_UPSELL_MODAL, i.DismissibleContent.HUB_BACK_TO_SCHOOL_UPSELL, i.DismissibleContent.CHANNEL_BROWSER_NUX, i.DismissibleContent.BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL, i.DismissibleContent.GG_ANNOUNCEMENT, i.DismissibleContent.GUILD_ONBOARDING_UPSELL_MODAL, i.DismissibleContent.SEASONAL_GIFTING_COACHMARK_2022, i.DismissibleContent.CLIENT_THEMES_SETTINGS_BADGE, i.DismissibleContent.CLIENT_THEMES_SPARKLE_PREVIEW, i.DismissibleContent.QUEST_1_COMPLETION_TOOLTIP, i.DismissibleContent.SOUNDBOARD_VOLUME_EDUCATION, i.DismissibleContent.REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE, i.DismissibleContent.GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE, i.DismissibleContent.CUSTOM_CALL_SOUNDS_PICKER_UPSELL, i.DismissibleContent.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK, i.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE, i.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_BADGE, i.DismissibleContent.WHATS_NEW_AVATAR_DECOS_FLIP, i.DismissibleContent.WHATS_NEW_PROFILE_EFFECTS_FLIP, i.DismissibleContent.RECURRING_CONTACT_SYNC_PROMPT, i.DismissibleContent.WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE, i.DismissibleContent.WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE, i.DismissibleContent.NUX_GUILD_CHANNEL_EXPLAINER, i.DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE, i.DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP, i.DismissibleContent.FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS, i.DismissibleContent.VOICE_CALL_BG_PICKER_NEW_BADGE, i.DismissibleContent.TENURE_REWARD_PENDING, i.DismissibleContent.TENURE_REWARD_REDEEMABLE, i.DismissibleContent.ACTIVITIES_CHAT_MENU_NEW_BADGE, i.DismissibleContent.ACTIVITIES_CHAT_BUTTON_NUX_V2, i.DismissibleContent.TENURE_REWARD_REDEEMABLE_CONFETTI, i.DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, i.DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER, i.DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER, i.DismissibleContent.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE, i.DismissibleContent.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK, i.DismissibleContent.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE, i.DismissibleContent.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP, i.DismissibleContent.CHANNEL_LIST_CLAN_ADMIN_UPSELL, i.DismissibleContent.GUILD_LIST_CLAN_ADMIN_UPSELL])
         },
         883904: function(e, t, n) {
             "use strict";
@@ -152153,7 +152152,7 @@
                     },
                     async open(e, t, i, r) {
                         var a;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("70716"), n.e("23755"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("56630"), n.e("58227"), n.e("43643"), n.e("85093"), n.e("85552"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("70730"), n.e("74526"), n.e("33361"), n.e("62856"), n.e("85912"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("23755"), n.e("70716"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("56630"), n.e("58227"), n.e("43643"), n.e("85093"), n.e("85552"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("52332"), n.e("74526"), n.e("33361"), n.e("50916"), n.e("62856"), n.e("56215"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         a.default.dispatch({
@@ -169988,8 +169987,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715103417030",
-                                    build_number: "291103"
+                                    built_at: "1715105953430",
+                                    build_number: "291131"
                                 }
                             },
                             retries: 1
@@ -248047,7 +248046,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "215e553d3698afb627a4ea55d2dc4e91c7f238f9"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "6a2d6fe891a75ba5e4d7d9c21565a865d51589c1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276731,7 +276730,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291103"
+                                build_number: "291131"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -277785,142 +277784,142 @@
                     return r
                 },
                 castPremiumSubscriptionAsSkuId: function() {
-                    return eb
+                    return eG
                 },
                 coerceExistingItemsToNewItemInterval: function() {
-                    return eM
-                },
-                experimentalGetPrices: function() {
-                    return H
-                },
-                formatIntervalDuration: function() {
-                    return ep
-                },
-                formatTrialCtaIntervalDuration: function() {
-                    return eN
-                },
-                formatTrialOfferIntervalDuration: function() {
-                    return em
-                },
-                getBillingGracePeriodDaysAndExpiresDate: function() {
-                    return eu
-                },
-                getBillingReviewSubheader: function() {
-                    return eh
-                },
-                getDefaultPrice: function() {
-                    return x
-                },
-                getDiscountIntervalString: function() {
-                    return Y
-                },
-                getDisplayName: function() {
-                    return z
-                },
-                getDisplayNameFromSku: function() {
-                    return Z
-                },
-                getDisplayPremiumType: function() {
-                    return Q
-                },
-                getExternalPlanDisplayName: function() {
-                    return ee
-                },
-                getExternalSubscriptionMethodUrl: function() {
-                    return eO
-                },
-                getFormattedPriceForPlan: function() {
-                    return eE
-                },
-                getFormattedRateForPlan: function() {
-                    return eI
-                },
-                getIntervalForInvoice: function() {
-                    return eA
-                },
-                getIntervalString: function() {
-                    return j
-                },
-                getIntervalStringAsNoun: function() {
-                    return W
-                },
-                getItemsFromNewAdditionalPlans: function() {
-                    return eC
-                },
-                getItemsWithUpsertedPlanIdForGroup: function() {
-                    return eL
-                },
-                getItemsWithUpsertedPremiumGuildPlan: function() {
-                    return eD
-                },
-                getItemsWithUpsertedPremiumPlanId: function() {
-                    return ev
-                },
-                getItemsWithoutPremiumPlanItem: function() {
-                    return eg
-                },
-                getMaxFileSizeForPremiumType: function() {
                     return ey
                 },
-                getNumPremiumGuildSubscriptions: function() {
-                    return er
+                experimentalGetPrices: function() {
+                    return Y
                 },
-                getPlanDescriptionFromInvoice: function() {
-                    return $
+                formatIntervalDuration: function() {
+                    return eO
                 },
-                getPremiumGuildHeaderDescription: function() {
-                    return ec
+                formatTrialCtaIntervalDuration: function() {
+                    return ep
                 },
-                getPremiumPlanItem: function() {
-                    return V
+                formatTrialOfferIntervalDuration: function() {
+                    return eN
                 },
-                getPremiumPlanOptions: function() {
-                    return et
-                },
-                getPremiumSkuIdForSubscription: function() {
-                    return eU
-                },
-                getPremiumType: function() {
-                    return K
-                },
-                getPremiumTypeDisplayName: function() {
-                    return q
-                },
-                getPrice: function() {
-                    return F
-                },
-                getTierDisplayName: function() {
-                    return X
-                },
-                hasPremiumSubscriptionToDisplay: function() {
-                    return eR
-                },
-                isPremium: function() {
-                    return L.isPremium
-                },
-                isPremiumAtLeast: function() {
-                    return L.isPremiumAtLeast
-                },
-                isPremiumBaseSubscriptionPlan: function() {
-                    return es
-                },
-                isPremiumExactly: function() {
-                    return L.isPremiumExactly
-                },
-                isPremiumGuildSubscriptionCanceled: function() {
-                    return e_
-                },
-                isPremiumGuildSubscriptionPlan: function() {
-                    return eo
-                },
-                isPremiumSubscriptionPlan: function() {
-                    return el
-                },
-                isPrepaidPaymentSource: function() {
+                getBillingGracePeriodDaysAndExpiresDate: function() {
                     return ed
                 },
+                getBillingReviewSubheader: function() {
+                    return eA
+                },
+                getDefaultPrice: function() {
+                    return F
+                },
+                getDiscountIntervalString: function() {
+                    return j
+                },
+                getDisplayName: function() {
+                    return Z
+                },
+                getDisplayNameFromSku: function() {
+                    return X
+                },
+                getDisplayPremiumType: function() {
+                    return q
+                },
+                getExternalPlanDisplayName: function() {
+                    return et
+                },
+                getExternalSubscriptionMethodUrl: function() {
+                    return eR
+                },
+                getFormattedPriceForPlan: function() {
+                    return eI
+                },
+                getFormattedRateForPlan: function() {
+                    return eT
+                },
+                getIntervalForInvoice: function() {
+                    return em
+                },
+                getIntervalString: function() {
+                    return W
+                },
+                getIntervalStringAsNoun: function() {
+                    return K
+                },
+                getItemsFromNewAdditionalPlans: function() {
+                    return eg
+                },
+                getItemsWithUpsertedPlanIdForGroup: function() {
+                    return ev
+                },
+                getItemsWithUpsertedPremiumGuildPlan: function() {
+                    return eM
+                },
+                getItemsWithUpsertedPremiumPlanId: function() {
+                    return eD
+                },
+                getItemsWithoutPremiumPlanItem: function() {
+                    return eL
+                },
+                getMaxFileSizeForPremiumType: function() {
+                    return eP
+                },
+                getNumPremiumGuildSubscriptions: function() {
+                    return ea
+                },
+                getPlanDescriptionFromInvoice: function() {
+                    return ee
+                },
+                getPremiumGuildHeaderDescription: function() {
+                    return eE
+                },
+                getPremiumPlanItem: function() {
+                    return x
+                },
+                getPremiumPlanOptions: function() {
+                    return en
+                },
+                getPremiumSkuIdForSubscription: function() {
+                    return eb
+                },
+                getPremiumType: function() {
+                    return z
+                },
+                getPremiumTypeDisplayName: function() {
+                    return J
+                },
+                getPrice: function() {
+                    return H
+                },
+                getTierDisplayName: function() {
+                    return Q
+                },
+                hasPremiumSubscriptionToDisplay: function() {
+                    return eC
+                },
+                isPremium: function() {
+                    return v.isPremium
+                },
+                isPremiumAtLeast: function() {
+                    return v.isPremiumAtLeast
+                },
+                isPremiumBaseSubscriptionPlan: function() {
+                    return eo
+                },
+                isPremiumExactly: function() {
+                    return v.isPremiumExactly
+                },
+                isPremiumGuildSubscriptionCanceled: function() {
+                    return ec
+                },
+                isPremiumGuildSubscriptionPlan: function() {
+                    return el
+                },
+                isPremiumSubscriptionPlan: function() {
+                    return eu
+                },
+                isPrepaidPaymentSource: function() {
+                    return e_
+                },
                 isSubscriptionStatusFailedPayment: function() {
-                    return ef
+                    return eS
                 }
             }), n("411104"), n("47120"), n("733860"), n("724458"), n("653041");
             var i, r, a, s, o = n("512722"),
@@ -277941,56 +277940,57 @@
                 N = n("509545"),
                 p = n("78839"),
                 O = n("122289"),
-                R = n("424218"),
-                C = n("358085"),
-                g = n("380684"),
-                L = n("111361"),
-                v = n("74538"),
-                D = n("937615"),
-                M = n("981631"),
-                y = n("334431"),
-                P = n("474936"),
-                U = n("231338"),
-                b = n("689938");
-            let G = {
+                R = n("55935"),
+                C = n("424218"),
+                g = n("358085"),
+                L = n("380684"),
+                v = n("111361"),
+                D = n("74538"),
+                M = n("937615"),
+                y = n("981631"),
+                P = n("334431"),
+                U = n("474936"),
+                b = n("231338"),
+                G = n("689938");
+            let w = {
                     PAYMENT_SOURCE_MANAGEMENT: "https://support.apple.com/HT201266",
                     BILLING_HISTORY: "https://support.apple.com/HT201266",
                     SUBSCRIPTION_MANAGEMENT: "https://support.apple.com/HT202039"
                 },
-                w = {
+                B = {
                     SUBSCRIPTION_MANAGEMENT: "https://play.google.com/store/account/subscriptions",
                     PAYMENT_SOURCE_MANAGEMENT: "https://play.google.com/store/paymentmethods",
                     BILLING_HISTORY: "https://play.google.com/store/account/orderhistory"
                 },
-                B = new c.default("PremiumUtils.tsx"),
-                k = {
-                    [P.SubscriptionPlans.NONE_MONTH]: [P.SubscriptionPlans.NONE_YEAR, P.SubscriptionPlans.PREMIUM_YEAR_TIER_2, P.SubscriptionPlans.PREMIUM_MONTH_TIER_2, P.SubscriptionPlans.PREMIUM_YEAR_TIER_1, P.SubscriptionPlans.PREMIUM_MONTH_TIER_1],
-                    [P.SubscriptionPlans.NONE_YEAR]: [P.SubscriptionPlans.PREMIUM_YEAR_TIER_2, P.SubscriptionPlans.PREMIUM_MONTH_TIER_2, P.SubscriptionPlans.PREMIUM_YEAR_TIER_1, P.SubscriptionPlans.PREMIUM_MONTH_TIER_1],
-                    [P.SubscriptionPlans.PREMIUM_MONTH_TIER_0]: [P.SubscriptionPlans.PREMIUM_YEAR_TIER_2, P.SubscriptionPlans.PREMIUM_MONTH_TIER_2, P.SubscriptionPlans.PREMIUM_YEAR_TIER_1, P.SubscriptionPlans.PREMIUM_MONTH_TIER_1, P.SubscriptionPlans.PREMIUM_YEAR_TIER_0],
-                    [P.SubscriptionPlans.PREMIUM_YEAR_TIER_0]: [P.SubscriptionPlans.PREMIUM_YEAR_TIER_2, P.SubscriptionPlans.PREMIUM_MONTH_TIER_2, P.SubscriptionPlans.PREMIUM_YEAR_TIER_1, P.SubscriptionPlans.PREMIUM_MONTH_TIER_1],
-                    [P.SubscriptionPlans.PREMIUM_MONTH_TIER_1]: [P.SubscriptionPlans.PREMIUM_YEAR_TIER_2, P.SubscriptionPlans.PREMIUM_MONTH_TIER_2, P.SubscriptionPlans.PREMIUM_YEAR_TIER_1],
-                    [P.SubscriptionPlans.PREMIUM_YEAR_TIER_1]: [P.SubscriptionPlans.PREMIUM_YEAR_TIER_2],
-                    [P.SubscriptionPlans.PREMIUM_MONTH_TIER_2]: [P.SubscriptionPlans.PREMIUM_YEAR_TIER_2],
-                    [P.SubscriptionPlans.PREMIUM_YEAR_TIER_2]: [],
-                    ALL: [P.SubscriptionPlans.NONE_MONTH, P.SubscriptionPlans.NONE_YEAR, P.SubscriptionPlans.PREMIUM_YEAR_TIER_2, P.SubscriptionPlans.PREMIUM_MONTH_TIER_2, P.SubscriptionPlans.PREMIUM_YEAR_TIER_1, P.SubscriptionPlans.PREMIUM_MONTH_TIER_1, P.SubscriptionPlans.PREMIUM_YEAR_TIER_0, P.SubscriptionPlans.PREMIUM_MONTH_TIER_0]
+                k = new c.default("PremiumUtils.tsx"),
+                V = {
+                    [U.SubscriptionPlans.NONE_MONTH]: [U.SubscriptionPlans.NONE_YEAR, U.SubscriptionPlans.PREMIUM_YEAR_TIER_2, U.SubscriptionPlans.PREMIUM_MONTH_TIER_2, U.SubscriptionPlans.PREMIUM_YEAR_TIER_1, U.SubscriptionPlans.PREMIUM_MONTH_TIER_1],
+                    [U.SubscriptionPlans.NONE_YEAR]: [U.SubscriptionPlans.PREMIUM_YEAR_TIER_2, U.SubscriptionPlans.PREMIUM_MONTH_TIER_2, U.SubscriptionPlans.PREMIUM_YEAR_TIER_1, U.SubscriptionPlans.PREMIUM_MONTH_TIER_1],
+                    [U.SubscriptionPlans.PREMIUM_MONTH_TIER_0]: [U.SubscriptionPlans.PREMIUM_YEAR_TIER_2, U.SubscriptionPlans.PREMIUM_MONTH_TIER_2, U.SubscriptionPlans.PREMIUM_YEAR_TIER_1, U.SubscriptionPlans.PREMIUM_MONTH_TIER_1, U.SubscriptionPlans.PREMIUM_YEAR_TIER_0],
+                    [U.SubscriptionPlans.PREMIUM_YEAR_TIER_0]: [U.SubscriptionPlans.PREMIUM_YEAR_TIER_2, U.SubscriptionPlans.PREMIUM_MONTH_TIER_2, U.SubscriptionPlans.PREMIUM_YEAR_TIER_1, U.SubscriptionPlans.PREMIUM_MONTH_TIER_1],
+                    [U.SubscriptionPlans.PREMIUM_MONTH_TIER_1]: [U.SubscriptionPlans.PREMIUM_YEAR_TIER_2, U.SubscriptionPlans.PREMIUM_MONTH_TIER_2, U.SubscriptionPlans.PREMIUM_YEAR_TIER_1],
+                    [U.SubscriptionPlans.PREMIUM_YEAR_TIER_1]: [U.SubscriptionPlans.PREMIUM_YEAR_TIER_2],
+                    [U.SubscriptionPlans.PREMIUM_MONTH_TIER_2]: [U.SubscriptionPlans.PREMIUM_YEAR_TIER_2],
+                    [U.SubscriptionPlans.PREMIUM_YEAR_TIER_2]: [],
+                    ALL: [U.SubscriptionPlans.NONE_MONTH, U.SubscriptionPlans.NONE_YEAR, U.SubscriptionPlans.PREMIUM_YEAR_TIER_2, U.SubscriptionPlans.PREMIUM_MONTH_TIER_2, U.SubscriptionPlans.PREMIUM_YEAR_TIER_1, U.SubscriptionPlans.PREMIUM_MONTH_TIER_1, U.SubscriptionPlans.PREMIUM_YEAR_TIER_0, U.SubscriptionPlans.PREMIUM_MONTH_TIER_0]
                 };
 
-            function V(e) {
-                return e.items.find(e => P.PREMIUM_PLANS.has(e.planId))
+            function x(e) {
+                return e.items.find(e => U.PREMIUM_PLANS.has(e.planId))
             }
 
-            function x(e) {
+            function F(e) {
                 var t;
                 let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                     r = null !== (t = m.default.defaultPaymentSourceId) && void 0 !== t ? t : void 0,
                     a = p.default.getPremiumTypeSubscription();
-                return null != a && null != a.paymentSourceId && (r = a.paymentSourceId), F(e, n, i, {
+                return null != a && null != a.paymentSourceId && (r = a.paymentSourceId), H(e, n, i, {
                     paymentSourceId: r
                 })
             }
 
-            function F(e) {
+            function H(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                     i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {},
@@ -277999,20 +277999,20 @@
                         currency: a
                     } = i;
                 if (null != N.default.get(e)) {
-                    let i = M.PriceSetAssignmentPurchaseTypes.DEFAULT;
-                    n ? i = M.PriceSetAssignmentPurchaseTypes.GIFT : t && (i = M.PriceSetAssignmentPurchaseTypes.PREMIUM_TIER_1);
+                    let i = y.PriceSetAssignmentPurchaseTypes.DEFAULT;
+                    n ? i = y.PriceSetAssignmentPurchaseTypes.GIFT : t && (i = y.PriceSetAssignmentPurchaseTypes.PREMIUM_TIER_1);
                     let s = function(e) {
                         let {
                             paymentSourceId: t,
                             purchaseType: n,
                             currency: i
                         } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
-                            purchaseType: M.PriceSetAssignmentPurchaseTypes.DEFAULT
-                        }, r = H(e, {
+                            purchaseType: y.PriceSetAssignmentPurchaseTypes.DEFAULT
+                        }, r = Y(e, {
                             paymentSourceId: t,
                             purchaseType: n
                         });
-                        return (0 === r.length && B.warn("No prices found for planId: ".concat(e, ", paymentSourceId: ").concat(t, ", purchaseType: ").concat(n)), null != i) ? r.find(e => e.currency === i) : r[0]
+                        return (0 === r.length && k.warn("No prices found for planId: ".concat(e, ", paymentSourceId: ").concat(t, ", purchaseType: ").concat(n)), null != i) ? r.find(e => e.currency === i) : r[0]
                     }(e, {
                         paymentSourceId: r,
                         purchaseType: i,
@@ -278046,12 +278046,12 @@
                 }), s
             }(a = i || (i = {})).BUNDLE = "bundle", a.TIER_0 = "tier_0", a.TIER_1 = "tier_1", a.TIER_2 = "tier_2", a.PREMIUM_GUILD = "premium_guild", (s = r || (r = {})).MID = "mid", s.HIGH = "high";
 
-            function H(e) {
+            function Y(e) {
                 let {
                     paymentSourceId: t,
                     purchaseType: n
                 } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
-                    purchaseType: M.PriceSetAssignmentPurchaseTypes.DEFAULT
+                    purchaseType: y.PriceSetAssignmentPurchaseTypes.DEFAULT
                 }, i = function(e, t) {
                     let n = N.default.get(e);
                     if (null == n) {
@@ -278065,13 +278065,13 @@
                     }
                     if (null == n.prices) throw Error("No prices returned for ".concat(e, ", is your user in the experiment?"));
                     let i = n.prices[t];
-                    if (null == i) throw B.info("Purchase types: ".concat(JSON.stringify(Object.keys(n.prices)))), Error("No prices returned for purchase type ".concat(t, " for plan ").concat(e));
+                    if (null == i) throw k.info("Purchase types: ".concat(JSON.stringify(Object.keys(n.prices)))), Error("No prices returned for purchase type ".concat(t, " for plan ").concat(e));
                     return i
                 }(e, n);
                 if (null != t) {
                     let r = i.paymentSourcePrices[t];
                     if (null == r) {
-                        B.info("Payment sources IDs: ".concat(JSON.stringify(Object.keys(i.paymentSourcePrices)))), B.info("prices: ".concat(r));
+                        k.info("Payment sources IDs: ".concat(JSON.stringify(Object.keys(i.paymentSourcePrices)))), k.info("prices: ".concat(r));
                         let a = Error("Missing prices for payment source on subscription plan");
                         (0, O.captureBillingException)(a, {
                             extra: {
@@ -278085,7 +278085,7 @@
                     } else if (0 !== r.length) return r
                 }
                 if (null == i.countryPrices.prices) {
-                    B.info("countryPrices: ".concat(JSON.stringify(i.countryPrices)));
+                    k.info("countryPrices: ".concat(JSON.stringify(i.countryPrices)));
                     let t = Error("Missing prices for country");
                     throw (0, O.captureBillingException)(t, {
                         tags: {
@@ -278097,63 +278097,63 @@
                 return i.countryPrices.prices
             }
 
-            function Y(e) {
+            function j(e) {
                 switch (e) {
-                    case P.DiscountUserUsageLimitIntervalTypes.MONTH:
-                        return b.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_MONTH;
-                    case P.DiscountUserUsageLimitIntervalTypes.YEAR:
-                        return b.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_YEAR;
-                    case P.DiscountUserUsageLimitIntervalTypes.DAY:
-                    case P.DiscountUserUsageLimitIntervalTypes.WEEK:
+                    case U.DiscountUserUsageLimitIntervalTypes.MONTH:
+                        return G.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_MONTH;
+                    case U.DiscountUserUsageLimitIntervalTypes.YEAR:
+                        return G.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_YEAR;
+                    case U.DiscountUserUsageLimitIntervalTypes.DAY:
+                    case U.DiscountUserUsageLimitIntervalTypes.WEEK:
                     default:
                         throw Error("Unexpected interval")
                 }
             }
 
-            function j(e, t, n) {
+            function W(e, t, n) {
                 let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 1,
                     r = arguments.length > 4 && void 0 !== arguments[4] && arguments[4],
-                    a = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : P.PremiumTypes.TIER_2;
+                    a = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : U.PremiumTypes.TIER_2;
                 if (t || n) switch (e) {
-                    case P.SubscriptionIntervalTypes.MONTH:
-                        let s = (a === P.PremiumTypes.TIER_0 ? b.default.Messages.BASIC_GIFT_DURATION : b.default.Messages.GIFT_DURATION).format({
-                            timeInterval: b.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_MONTH
+                    case U.SubscriptionIntervalTypes.MONTH:
+                        let s = (a === U.PremiumTypes.TIER_0 ? G.default.Messages.BASIC_GIFT_DURATION : G.default.Messages.GIFT_DURATION).format({
+                            timeInterval: G.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_MONTH
                         });
-                        return r ? s : b.default.Messages.PAYMENT_MODAL_ONE_MONTH;
-                    case P.SubscriptionIntervalTypes.YEAR:
-                        let o = (a === P.PremiumTypes.TIER_0 ? b.default.Messages.BASIC_GIFT_DURATION : b.default.Messages.GIFT_DURATION).format({
-                            timeInterval: b.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_YEAR
+                        return r ? s : G.default.Messages.PAYMENT_MODAL_ONE_MONTH;
+                    case U.SubscriptionIntervalTypes.YEAR:
+                        let o = (a === U.PremiumTypes.TIER_0 ? G.default.Messages.BASIC_GIFT_DURATION : G.default.Messages.GIFT_DURATION).format({
+                            timeInterval: G.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_YEAR
                         });
-                        return r ? o : b.default.Messages.PAYMENT_MODAL_ONE_YEAR;
+                        return r ? o : G.default.Messages.PAYMENT_MODAL_ONE_YEAR;
                     default:
                         throw Error("Unexpected interval")
                 }
                 switch (e) {
-                    case P.SubscriptionIntervalTypes.MONTH:
-                        if (1 !== i) return b.default.Messages.MULTI_MONTHS.format({
+                    case U.SubscriptionIntervalTypes.MONTH:
+                        if (1 !== i) return G.default.Messages.MULTI_MONTHS.format({
                             intervalCount: i
                         });
-                        return b.default.Messages.MONTHLY;
-                    case P.SubscriptionIntervalTypes.YEAR:
-                        return b.default.Messages.YEARLY;
-                    default:
-                        throw Error("Unexpected interval")
-                }
-            }
-
-            function W(e) {
-                switch (e) {
-                    case P.SubscriptionIntervalTypes.MONTH:
-                        return b.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_MONTH;
-                    case P.SubscriptionIntervalTypes.YEAR:
-                        return b.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_YEAR;
+                        return G.default.Messages.MONTHLY;
+                    case U.SubscriptionIntervalTypes.YEAR:
+                        return G.default.Messages.YEARLY;
                     default:
                         throw Error("Unexpected interval")
                 }
             }
 
             function K(e) {
-                let t = P.SubscriptionPlanInfo[e];
+                switch (e) {
+                    case U.SubscriptionIntervalTypes.MONTH:
+                        return G.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_MONTH;
+                    case U.SubscriptionIntervalTypes.YEAR:
+                        return G.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_YEAR;
+                    default:
+                        throw Error("Unexpected interval")
+                }
+            }
+
+            function z(e) {
+                let t = U.SubscriptionPlanInfo[e];
                 if (null != t) return t.premiumType;
                 let n = Error("Unsupported plan");
                 throw (0, O.captureBillingException)(n, {
@@ -278163,47 +278163,47 @@
                 }), n
             }
 
-            function z(e) {
+            function Z(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                     i = arguments.length > 3 ? arguments[3] : void 0;
                 switch (e) {
-                    case P.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
-                        return t ? b.default.Messages.PREMIUM_PLAN_MONTH_TIER_0_TRIAL_DURATION.format({
+                    case U.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
+                        return t ? G.default.Messages.PREMIUM_PLAN_MONTH_TIER_0_TRIAL_DURATION.format({
                             duration: i
-                        }) : n ? b.default.Messages.PREMIUM_PLAN_ONE_MONTH_TIER_0 : b.default.Messages.PREMIUM_PLAN_MONTH_TIER_0;
-                    case P.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
-                        return t ? b.default.Messages.PREMIUM_PLAN_YEAR_TIER_0_TRIAL_DURATION.format({
+                        }) : n ? G.default.Messages.PREMIUM_PLAN_ONE_MONTH_TIER_0 : G.default.Messages.PREMIUM_PLAN_MONTH_TIER_0;
+                    case U.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
+                        return t ? G.default.Messages.PREMIUM_PLAN_YEAR_TIER_0_TRIAL_DURATION.format({
                             duration: i
-                        }) : n ? b.default.Messages.PREMIUM_PLAN_ONE_YEAR_TIER_0 : b.default.Messages.PREMIUM_PLAN_YEAR_TIER_0;
-                    case P.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
-                        return n ? b.default.Messages.PREMIUM_PLAN_ONE_MONTH_TIER_1 : b.default.Messages.PREMIUM_PLAN_MONTH_TIER_1;
-                    case P.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
-                        return n ? b.default.Messages.PREMIUM_PLAN_ONE_YEAR_TIER_1 : b.default.Messages.PREMIUM_PLAN_YEAR_TIER_1;
-                    case P.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
-                        return t ? b.default.Messages.PREMIUM_PLAN_MONTH_TIER_2_TRIAL_DURATION.format({
+                        }) : n ? G.default.Messages.PREMIUM_PLAN_ONE_YEAR_TIER_0 : G.default.Messages.PREMIUM_PLAN_YEAR_TIER_0;
+                    case U.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
+                        return n ? G.default.Messages.PREMIUM_PLAN_ONE_MONTH_TIER_1 : G.default.Messages.PREMIUM_PLAN_MONTH_TIER_1;
+                    case U.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
+                        return n ? G.default.Messages.PREMIUM_PLAN_ONE_YEAR_TIER_1 : G.default.Messages.PREMIUM_PLAN_YEAR_TIER_1;
+                    case U.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
+                        return t ? G.default.Messages.PREMIUM_PLAN_MONTH_TIER_2_TRIAL_DURATION.format({
                             duration: i
-                        }) : n ? b.default.Messages.PREMIUM_PLAN_ONE_MONTH_TIER_2 : b.default.Messages.PREMIUM_PLAN_MONTH_TIER_2;
-                    case P.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
-                        return t ? b.default.Messages.PREMIUM_PLAN_YEAR_TIER_2_TRIAL_DURATION.format({
+                        }) : n ? G.default.Messages.PREMIUM_PLAN_ONE_MONTH_TIER_2 : G.default.Messages.PREMIUM_PLAN_MONTH_TIER_2;
+                    case U.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
+                        return t ? G.default.Messages.PREMIUM_PLAN_YEAR_TIER_2_TRIAL_DURATION.format({
                             duration: i
-                        }) : n ? b.default.Messages.PREMIUM_PLAN_ONE_YEAR_TIER_2 : b.default.Messages.PREMIUM_PLAN_YEAR_TIER_2;
-                    case P.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
-                        return b.default.Messages.PREMIUM_PLAN_3_MONTH_TIER_2;
-                    case P.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
-                        return b.default.Messages.PREMIUM_PLAN_6_MONTH_TIER_2;
-                    case P.SubscriptionPlans.PREMIUM_MONTH_GUILD:
-                        return n ? b.default.Messages.PREMIUM_GUILD_PLAN_SINGLE_MONTH : b.default.Messages.PREMIUM_GUILD_PLAN_MONTH;
-                    case P.SubscriptionPlans.PREMIUM_YEAR_GUILD:
-                        return n ? b.default.Messages.PREMIUM_GUILD_PLAN_SINGLE_YEAR : b.default.Messages.PREMIUM_GUILD_PLAN_YEAR;
-                    case P.SubscriptionPlans.PREMIUM_3_MONTH_GUILD:
-                        return b.default.Messages.PREMIUM_GUILD_PLAN_3_MONTH;
-                    case P.SubscriptionPlans.PREMIUM_6_MONTH_GUILD:
-                        return b.default.Messages.PREMIUM_GUILD_PLAN_6_MONTH;
-                    case P.SubscriptionPlans.PREMIUM_MONTH_LEGACY:
-                        return b.default.Messages.PREMIUM_PLAN_MONTH;
-                    case P.SubscriptionPlans.PREMIUM_YEAR_LEGACY:
-                        return b.default.Messages.PREMIUM_PLAN_YEAR
+                        }) : n ? G.default.Messages.PREMIUM_PLAN_ONE_YEAR_TIER_2 : G.default.Messages.PREMIUM_PLAN_YEAR_TIER_2;
+                    case U.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
+                        return G.default.Messages.PREMIUM_PLAN_3_MONTH_TIER_2;
+                    case U.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
+                        return G.default.Messages.PREMIUM_PLAN_6_MONTH_TIER_2;
+                    case U.SubscriptionPlans.PREMIUM_MONTH_GUILD:
+                        return n ? G.default.Messages.PREMIUM_GUILD_PLAN_SINGLE_MONTH : G.default.Messages.PREMIUM_GUILD_PLAN_MONTH;
+                    case U.SubscriptionPlans.PREMIUM_YEAR_GUILD:
+                        return n ? G.default.Messages.PREMIUM_GUILD_PLAN_SINGLE_YEAR : G.default.Messages.PREMIUM_GUILD_PLAN_YEAR;
+                    case U.SubscriptionPlans.PREMIUM_3_MONTH_GUILD:
+                        return G.default.Messages.PREMIUM_GUILD_PLAN_3_MONTH;
+                    case U.SubscriptionPlans.PREMIUM_6_MONTH_GUILD:
+                        return G.default.Messages.PREMIUM_GUILD_PLAN_6_MONTH;
+                    case U.SubscriptionPlans.PREMIUM_MONTH_LEGACY:
+                        return G.default.Messages.PREMIUM_PLAN_MONTH;
+                    case U.SubscriptionPlans.PREMIUM_YEAR_LEGACY:
+                        return G.default.Messages.PREMIUM_PLAN_YEAR
                 }
                 let r = Error("Unsupported plan");
                 throw (0, O.captureBillingException)(r, {
@@ -278213,14 +278213,14 @@
                 }), r
             }
 
-            function Z(e) {
+            function X(e) {
                 switch (e) {
-                    case P.PremiumSubscriptionSKUs.TIER_0:
-                        return b.default.Messages.PREMIUM_TIER_0;
-                    case P.PremiumSubscriptionSKUs.TIER_1:
-                        return b.default.Messages.PREMIUM_TIER_1;
-                    case P.PremiumSubscriptionSKUs.TIER_2:
-                        return b.default.Messages.PREMIUM_TIER_2
+                    case U.PremiumSubscriptionSKUs.TIER_0:
+                        return G.default.Messages.PREMIUM_TIER_0;
+                    case U.PremiumSubscriptionSKUs.TIER_1:
+                        return G.default.Messages.PREMIUM_TIER_1;
+                    case U.PremiumSubscriptionSKUs.TIER_2:
+                        return G.default.Messages.PREMIUM_TIER_2
                 }
                 let t = Error("Unsupported sku");
                 throw (0, O.captureBillingException)(t, {
@@ -278230,19 +278230,19 @@
                 }), t
             }
 
-            function X(e) {
+            function Q(e) {
                 switch (e) {
-                    case P.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
-                    case P.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
-                        return b.default.Messages.PREMIUM_TIER_0;
-                    case P.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
-                    case P.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
-                        return b.default.Messages.PREMIUM_TIER_1;
-                    case P.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
-                    case P.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
-                    case P.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
-                    case P.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
-                        return b.default.Messages.PREMIUM_TIER_2
+                    case U.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
+                    case U.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
+                        return G.default.Messages.PREMIUM_TIER_0;
+                    case U.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
+                    case U.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
+                        return G.default.Messages.PREMIUM_TIER_1;
+                    case U.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
+                    case U.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
+                    case U.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
+                    case U.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
+                        return G.default.Messages.PREMIUM_TIER_2
                 }
                 let t = Error("Unsupported plan");
                 throw (0, O.captureBillingException)(t, {
@@ -278252,19 +278252,19 @@
                 }), t
             }
 
-            function Q(e) {
+            function q(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
                 switch (e) {
-                    case P.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
-                    case P.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
+                    case U.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
+                    case U.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
                         return t ? "Basic" : "Nitro Basic";
-                    case P.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
-                    case P.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
+                    case U.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
+                    case U.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
                         return t ? "Classic" : "Nitro Classic";
-                    case P.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
-                    case P.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
-                    case P.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
-                    case P.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
+                    case U.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
+                    case U.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
+                    case U.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
+                    case U.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
                         return "Nitro"
                 }
                 let n = Error("Unsupported plan");
@@ -278275,19 +278275,19 @@
                 }), n
             }
 
-            function q(e) {
+            function J(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
                 switch (e) {
-                    case P.PremiumTypes.TIER_0:
-                        return t ? "Basic" : b.default.Messages.PREMIUM_TIER_0;
-                    case P.PremiumTypes.TIER_1:
-                        return t ? "Classic" : b.default.Messages.PREMIUM_TIER_1;
-                    case P.PremiumTypes.TIER_2:
-                        return b.default.Messages.PREMIUM_TIER_2
+                    case U.PremiumTypes.TIER_0:
+                        return t ? "Basic" : G.default.Messages.PREMIUM_TIER_0;
+                    case U.PremiumTypes.TIER_1:
+                        return t ? "Classic" : G.default.Messages.PREMIUM_TIER_1;
+                    case U.PremiumTypes.TIER_2:
+                        return G.default.Messages.PREMIUM_TIER_2
                 }
             }
 
-            function J(e) {
+            function $(e) {
                 var t, n, i, r, a, s, o, l, u, _;
                 let {
                     subscription: c,
@@ -278297,147 +278297,168 @@
                     hasDiscountApplied: S,
                     activeDiscountInfo: A,
                     renewalInvoicePreview: m
-                } = e, N = P.SubscriptionPlanInfo[E], p = v.default.formatPriceString(v.default.getDefaultPrice(N.id), N.interval), {
+                } = e, N = U.SubscriptionPlanInfo[E], p = D.default.formatPriceString(D.default.getDefaultPrice(N.id), N.interval), {
                     annualDiscountPercentage: O
-                } = (0, T.getAnnualDiscountsExperimentConfig)("PremiumUtils"), R = eT(c) || null == c.paymentSourceId && !c.isPurchasedExternally && !(null === (t = h.default.getCurrentUser()) || void 0 === t ? void 0 : t.hasFreePremium()), C = null != I, g = c.status === M.SubscriptionStatusTypes.UNPAID && null !== c.latestInvoice && (null === (n = c.latestInvoice) || void 0 === n ? void 0 : n.status) === M.InvoiceStatusTypes.OPEN, L = R ? M.SubscriptionStatusTypes.CANCELED : g ? M.SubscriptionStatusTypes.UNPAID : c.status, D = null === (a = null !== (r = null == m ? void 0 : m.taxInclusive) && void 0 !== r ? r : null === (i = c.latestInvoice) || void 0 === i ? void 0 : i.taxInclusive) || void 0 === a || a, y = P.NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM + (f ? er(c.additionalPlans) : 0);
+                } = (0, T.getAnnualDiscountsExperimentConfig)("PremiumUtils"), C = ef(c) || null == c.paymentSourceId && !c.isPurchasedExternally && !(null === (t = h.default.getCurrentUser()) || void 0 === t ? void 0 : t.hasFreePremium()), g = null != I, L = c.status === y.SubscriptionStatusTypes.UNPAID && null !== c.latestInvoice && (null === (n = c.latestInvoice) || void 0 === n ? void 0 : n.status) === y.InvoiceStatusTypes.OPEN, v = C ? y.SubscriptionStatusTypes.CANCELED : L ? y.SubscriptionStatusTypes.UNPAID : c.status, M = null === (a = null !== (r = null == m ? void 0 : m.taxInclusive) && void 0 !== r ? r : null === (i = c.latestInvoice) || void 0 === i ? void 0 : i.taxInclusive) || void 0 === a || a, P = U.NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM + (f ? ea(c.additionalPlans) : 0);
                 switch (E) {
-                    case P.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
-                    case P.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
-                        switch (L) {
-                            case M.SubscriptionStatusTypes.CANCELED:
-                                return C ? D ? b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION.format({
+                    case U.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
+                    case U.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
+                        switch (v) {
+                            case y.SubscriptionStatusTypes.CANCELED:
+                                return g ? M ? G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION.format({
                                     price: I
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION_TAX_EXCLUSIVE.format({
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION_TAX_EXCLUSIVE.format({
                                     price: I
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION_NO_PRICE;
-                            case M.SubscriptionStatusTypes.ACCOUNT_HOLD:
-                                return C ? D ? b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD.format({
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_CANCELATION_NO_PRICE;
+                            case y.SubscriptionStatusTypes.ACCOUNT_HOLD:
+                                return g ? M ? G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD.format({
                                     price: I
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD_TAX_EXCLUSIVE.format({
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD_TAX_EXCLUSIVE.format({
                                     price: I
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD_NO_PRICE.format();
-                            case M.SubscriptionStatusTypes.UNPAID:
-                                return b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAYMENT.format();
-                            case M.SubscriptionStatusTypes.PAUSE_PENDING:
-                                let U = null != c.pauseEndsAt ? d()(c.pauseEndsAt).diff(c.currentPeriodEnd, "days") : null;
-                                return null != U ? b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING.format({
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_ACCOUNT_HOLD_NO_PRICE.format();
+                            case y.SubscriptionStatusTypes.UNPAID:
+                                return G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_PENDING_PAYMENT.format();
+                            case y.SubscriptionStatusTypes.PAUSE_PENDING:
+                                let b = null != c.pauseEndsAt ? d()(c.pauseEndsAt).diff(c.currentPeriodEnd, "days") : null;
+                                return null != b ? G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING.format({
                                     pauseDate: c.currentPeriodEnd,
-                                    pauseDuration: U
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING_NO_DURATION.format({
+                                    pauseDuration: b
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING_NO_DURATION.format({
                                     pauseDate: c.currentPeriodEnd
                                 });
-                            case M.SubscriptionStatusTypes.PAUSED:
-                                return b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED.format({
+                            case y.SubscriptionStatusTypes.PAUSED:
+                                return G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED.format({
                                     resumeDate: c.pauseEndsAt
                                 });
-                            default:
-                                return C ? D ? b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0.format({
-                                    price: I
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_TAX_EXCLUSIVE.format({
-                                    price: I
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_NO_PRICE
-                        }
-                    case P.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
-                    case P.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
-                        switch (L) {
-                            case M.SubscriptionStatusTypes.CANCELED:
-                                return C ? D ? b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION.format({
-                                    price: I
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION_TAX_EXCLUSIVE.format({
-                                    price: I
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION_NO_PRICE;
-                            case M.SubscriptionStatusTypes.ACCOUNT_HOLD:
-                                return C ? D ? b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD.format({
-                                    price: I
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_TAX_EXCLUSIVE.format({
-                                    price: I
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_NO_PRICE.format();
-                            case M.SubscriptionStatusTypes.UNPAID:
-                                return b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAYMENT.format();
-                            case M.SubscriptionStatusTypes.PAUSE_PENDING:
-                                let G = null != c.pauseEndsAt ? d()(c.pauseEndsAt).diff(c.currentPeriodEnd, "days") : null;
-                                return null != G ? b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING.format({
-                                    pauseDate: c.currentPeriodEnd,
-                                    pauseDuration: G
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING_NO_DURATION.format({
-                                    pauseDate: c.currentPeriodEnd
-                                });
-                            case M.SubscriptionStatusTypes.PAUSED:
-                                return b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED.format({
-                                    resumeDate: c.pauseEndsAt
+                            case y.SubscriptionStatusTypes.PAST_DUE:
+                                return G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_PAST_DUE_WITH_HC_LINK.format({
+                                    endDate: (0, R.dateFormat)(ed(c).expiresDate, "LL"),
+                                    onClick: () => {
+                                        window.open("https://support.discord.com/hc/articles/23082866222871")
+                                    }
                                 });
                             default:
-                                return C ? D ? b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1.format({
+                                return g ? M ? G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0.format({
                                     price: I
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_TAX_EXCLUSIVE.format({
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_TAX_EXCLUSIVE.format({
                                     price: I
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_NO_PRICE
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_0_NO_PRICE
                         }
-                    case P.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
-                    case P.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
-                    case P.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
-                    case P.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
-                        switch (L) {
-                            case M.SubscriptionStatusTypes.CANCELED:
-                                return C ? D ? b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION.format({
-                                    price: I,
-                                    num: y
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION_TAX_EXCLUSIVE.format({
-                                    price: I,
-                                    num: y
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION_NO_PRICE.format({
-                                    num: y
-                                });
-                            case M.SubscriptionStatusTypes.ACCOUNT_HOLD:
-                                return C ? D ? b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD.format({
-                                    price: I,
-                                    num: y
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD_TAX_EXCLUSIVE.format({
-                                    price: I,
-                                    num: y
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD_NO_PRICE.format({
-                                    num: y
-                                });
-                            case M.SubscriptionStatusTypes.UNPAID:
-                                return b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAYMENT.format({
-                                    num: y
-                                });
-                            case M.SubscriptionStatusTypes.PAUSE_PENDING:
+                    case U.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
+                    case U.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
+                        switch (v) {
+                            case y.SubscriptionStatusTypes.CANCELED:
+                                return g ? M ? G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION.format({
+                                    price: I
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION_TAX_EXCLUSIVE.format({
+                                    price: I
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_CANCELATION_NO_PRICE;
+                            case y.SubscriptionStatusTypes.ACCOUNT_HOLD:
+                                return g ? M ? G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD.format({
+                                    price: I
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_TAX_EXCLUSIVE.format({
+                                    price: I
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_ACCOUNT_HOLD_NO_PRICE.format();
+                            case y.SubscriptionStatusTypes.UNPAID:
+                                return G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_PENDING_PAYMENT.format();
+                            case y.SubscriptionStatusTypes.PAUSE_PENDING:
                                 let w = null != c.pauseEndsAt ? d()(c.pauseEndsAt).diff(c.currentPeriodEnd, "days") : null;
-                                return null != w ? b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING.format({
+                                return null != w ? G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING.format({
                                     pauseDate: c.currentPeriodEnd,
                                     pauseDuration: w
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING_NO_DURATION.format({
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING_NO_DURATION.format({
                                     pauseDate: c.currentPeriodEnd
                                 });
-                            case M.SubscriptionStatusTypes.PAUSED:
-                                return b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED.format({
+                            case y.SubscriptionStatusTypes.PAUSED:
+                                return G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED.format({
                                     resumeDate: c.pauseEndsAt
                                 });
-                            case M.SubscriptionStatusTypes.BILLING_RETRY:
-                                return b.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO.format({
-                                    endDate: d()(c.currentPeriodStart).add(P.PAID_SUBSCRIPTION_MAX_BILLING_RETRY_DAYS, "days")
+                            case y.SubscriptionStatusTypes.PAST_DUE:
+                                return G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_PAST_DUE_WITH_HC_LINK.format({
+                                    endDate: (0, R.dateFormat)(ed(c).expiresDate, "LL"),
+                                    onClick: () => {
+                                        window.open("https://support.discord.com/hc/articles/23082866222871")
+                                    }
                                 });
                             default:
-                                return S ? E === P.SubscriptionPlans.PREMIUM_YEAR_TIER_2 ? b.default.Messages.PREMIUM_TIER_CARD_ANNUAL_DISCOUNT_HEADER.format({
+                                return g ? M ? G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1.format({
+                                    price: I
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_TAX_EXCLUSIVE.format({
+                                    price: I
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_1_NO_PRICE
+                        }
+                    case U.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
+                    case U.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
+                    case U.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
+                    case U.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
+                        switch (v) {
+                            case y.SubscriptionStatusTypes.CANCELED:
+                                return g ? M ? G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION.format({
+                                    price: I,
+                                    num: P
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION_TAX_EXCLUSIVE.format({
+                                    price: I,
+                                    num: P
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_CANCELATION_NO_PRICE.format({
+                                    num: P
+                                });
+                            case y.SubscriptionStatusTypes.ACCOUNT_HOLD:
+                                return g ? M ? G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD.format({
+                                    price: I,
+                                    num: P
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD_TAX_EXCLUSIVE.format({
+                                    price: I,
+                                    num: P
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_ACCOUNT_HOLD_NO_PRICE.format({
+                                    num: P
+                                });
+                            case y.SubscriptionStatusTypes.UNPAID:
+                                return G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_PENDING_PAYMENT.format({
+                                    num: P
+                                });
+                            case y.SubscriptionStatusTypes.PAUSE_PENDING:
+                                let B = null != c.pauseEndsAt ? d()(c.pauseEndsAt).diff(c.currentPeriodEnd, "days") : null;
+                                return null != B ? G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING.format({
+                                    pauseDate: c.currentPeriodEnd,
+                                    pauseDuration: B
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSE_PENDING_NO_DURATION.format({
+                                    pauseDate: c.currentPeriodEnd
+                                });
+                            case y.SubscriptionStatusTypes.PAUSED:
+                                return G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_NITRO_PAUSED.format({
+                                    resumeDate: c.pauseEndsAt
+                                });
+                            case y.SubscriptionStatusTypes.BILLING_RETRY:
+                                return G.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO.format({
+                                    endDate: d()(c.currentPeriodStart).add(U.PAID_SUBSCRIPTION_MAX_BILLING_RETRY_DAYS, "days")
+                                });
+                            case y.SubscriptionStatusTypes.PAST_DUE:
+                                return G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_PAST_DUE_WITH_HC_LINK.format({
+                                    endDate: (0, R.dateFormat)(ed(c).expiresDate, "LL"),
+                                    onClick: () => {
+                                        window.open("https://support.discord.com/hc/articles/23082866222871")
+                                    }
+                                });
+                            default:
+                                return S ? E === U.SubscriptionPlans.PREMIUM_YEAR_TIER_2 ? G.default.Messages.PREMIUM_TIER_CARD_ANNUAL_DISCOUNT_HEADER.format({
                                     percent: null !== (s = null == A ? void 0 : A.percentage) && void 0 !== s ? s : O,
                                     regularPrice: p
-                                }) : D ? b.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC.format({
-                                    percent: null !== (o = null == A ? void 0 : A.percentage) && void 0 !== o ? o : P.DISCOUNT_PERCENTAGE_FALLBACK,
+                                }) : M ? G.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC.format({
+                                    percent: null !== (o = null == A ? void 0 : A.percentage) && void 0 !== o ? o : U.DISCOUNT_PERCENTAGE_FALLBACK,
                                     regularPrice: p,
-                                    numMonths: null !== (l = null == A ? void 0 : A.duration) && void 0 !== l ? l : P.DISCOUNT_DURATION_FALLBACK
-                                }) : b.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC_TAX_EXCLUSIVE.format({
-                                    percent: null !== (u = null == A ? void 0 : A.percentage) && void 0 !== u ? u : P.DISCOUNT_PERCENTAGE_FALLBACK,
+                                    numMonths: null !== (l = null == A ? void 0 : A.duration) && void 0 !== l ? l : U.DISCOUNT_DURATION_FALLBACK
+                                }) : G.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_HEADER_AFTER_REDEMPTION_GENERIC_TAX_EXCLUSIVE.format({
+                                    percent: null !== (u = null == A ? void 0 : A.percentage) && void 0 !== u ? u : U.DISCOUNT_PERCENTAGE_FALLBACK,
                                     regularPrice: p,
-                                    numMonths: null !== (_ = null == A ? void 0 : A.duration) && void 0 !== _ ? _ : P.DISCOUNT_DURATION_FALLBACK
-                                }) : C ? D ? b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2.format({
+                                    numMonths: null !== (_ = null == A ? void 0 : A.duration) && void 0 !== _ ? _ : U.DISCOUNT_DURATION_FALLBACK
+                                }) : g ? M ? G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2.format({
                                     price: I,
-                                    num: y
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_TAX_EXCLUSIVE.format({
+                                    num: P
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_TAX_EXCLUSIVE.format({
                                     price: I,
-                                    num: y
-                                }) : b.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_NO_PRICE.format({
-                                    num: y
+                                    num: P
+                                }) : G.default.Messages.PREMIUM_SUBSCRIPTION_DESCRIPTION_TIER_2_NO_PRICE.format({
+                                    num: P
                                 })
                         }
                     default:
@@ -278445,7 +278466,7 @@
                 }
             }
 
-            function $(e) {
+            function ee(e) {
                 let {
                     renewalInvoicePreview: t,
                     subscription: n,
@@ -278454,7 +278475,7 @@
                     hasDiscountApplied: a = !1,
                     activeDiscountInfo: s
                 } = e, o = N.default.get(i);
-                return l()(null != o, "Missing plan"), J({
+                return l()(null != o, "Missing plan"), $({
                     subscription: n,
                     planId: o.id,
                     price: function(e, t, n) {
@@ -278464,11 +278485,11 @@
                                 } = e;
                                 return t === n.id
                             }),
-                            r = null == i ? F(n.id, !1, !1, {
+                            r = null == i ? H(n.id, !1, !1, {
                                 paymentSourceId: t.paymentSourceId,
                                 currency: t.currency
                             }).amount : i.amount;
-                        return (0, D.formatRate)((0, D.formatPrice)(r, e.currency), n.interval, n.intervalCount)
+                        return (0, M.formatRate)((0, M.formatPrice)(r, e.currency), n.interval, n.intervalCount)
                     }(t, n, o),
                     includePremiumGuilds: r,
                     hasDiscountApplied: a,
@@ -278477,19 +278498,19 @@
                 })
             }
 
-            function ee(e) {
+            function et(e) {
                 let {
                     planId: t,
                     additionalPlans: n
-                } = e, i = (0, S.isNoneSubscription)(t) ? null : z(t), r = null == n ? void 0 : n.find(e => {
+                } = e, i = (0, S.isNoneSubscription)(t) ? null : Z(t), r = null == n ? void 0 : n.find(e => {
                     let {
                         planId: t
                     } = e;
-                    return P.PREMIUM_GUILD_SUBSCRIPTION_PLANS.has(t)
-                }), a = (null == r ? void 0 : r.planId) === P.SubscriptionPlans.PREMIUM_MONTH_GUILD ? b.default.Messages.PREMIUM_GUILD_NUM_MONTH_GUILD_SUBSCRIPTIONS_UNFORMATTED : (null == r ? void 0 : r.planId) === P.SubscriptionPlans.PREMIUM_YEAR_GUILD ? b.default.Messages.PREMIUM_GUILD_NUM_MONTH_GUILD_SUBSCRIPTIONS_UNFORMATTED : null, s = null == a ? void 0 : a.format({
+                    return U.PREMIUM_GUILD_SUBSCRIPTION_PLANS.has(t)
+                }), a = (null == r ? void 0 : r.planId) === U.SubscriptionPlans.PREMIUM_MONTH_GUILD ? G.default.Messages.PREMIUM_GUILD_NUM_MONTH_GUILD_SUBSCRIPTIONS_UNFORMATTED : (null == r ? void 0 : r.planId) === U.SubscriptionPlans.PREMIUM_YEAR_GUILD ? G.default.Messages.PREMIUM_GUILD_NUM_MONTH_GUILD_SUBSCRIPTIONS_UNFORMATTED : null, s = null == a ? void 0 : a.format({
                     num: null == r ? void 0 : r.quantity
                 });
-                if (null != i && null != s) return b.default.Messages.PREMIUM_WITH_PREMIUM_GUILD_EXTERNAL_PLAN_DESCRIPTION.format({
+                if (null != i && null != s) return G.default.Messages.PREMIUM_WITH_PREMIUM_GUILD_EXTERNAL_PLAN_DESCRIPTION.format({
                     premiumDescription: i,
                     premiumGuildDescription: s
                 });
@@ -278498,7 +278519,7 @@
                 else throw Error("Subscription without premium or premium guild subscription")
             }
 
-            function et(e) {
+            function en(e) {
                 let {
                     skuId: t,
                     isPremium: n,
@@ -278510,31 +278531,31 @@
                     defaultToMonthlyPlan: l
                 } = e;
                 if (null == t || !n) return [];
-                let u = void 0 !== o && t === P.SubscriptionPlanInfo[o].skuId ? o : void 0;
-                void 0 === u && l && !a && (u = P.PREMIUM_SKU_TO_MONTHLY_PLAN[t]), s && !a && (void 0 === o || l && P.PREMIUM_MONTHLY_PLANS.has(o)) && f.TrialRedemptionDefaultPlanExperiment.trackExposure({
+                let u = void 0 !== o && t === U.SubscriptionPlanInfo[o].skuId ? o : void 0;
+                void 0 === u && l && !a && (u = U.PREMIUM_SKU_TO_MONTHLY_PLAN[t]), s && !a && (void 0 === o || l && U.PREMIUM_MONTHLY_PLANS.has(o)) && f.TrialRedemptionDefaultPlanExperiment.trackExposure({
                     location: "de805e_1"
                 });
                 let d = [];
                 switch (t) {
-                    case P.PremiumSubscriptionSKUs.TIER_0:
-                        d = [P.SubscriptionPlans.PREMIUM_YEAR_TIER_0, P.SubscriptionPlans.PREMIUM_MONTH_TIER_0];
+                    case U.PremiumSubscriptionSKUs.TIER_0:
+                        d = [U.SubscriptionPlans.PREMIUM_YEAR_TIER_0, U.SubscriptionPlans.PREMIUM_MONTH_TIER_0];
                         break;
-                    case P.PremiumSubscriptionSKUs.TIER_1:
-                        d = [P.SubscriptionPlans.PREMIUM_MONTH_TIER_1];
+                    case U.PremiumSubscriptionSKUs.TIER_1:
+                        d = [U.SubscriptionPlans.PREMIUM_MONTH_TIER_1];
                         break;
-                    case P.PremiumSubscriptionSKUs.TIER_2:
+                    case U.PremiumSubscriptionSKUs.TIER_2:
                         let _ = i;
                         if (null != r) {
                             let e = r.items[0].planId;
-                            if (P.MULTI_MONTH_PLANS.has(e)) {
-                                let t = P.SubscriptionPlanInfo[e];
-                                _ = [...(0, P.MULTI_MONTH_PLANS)].filter(e => {
-                                    let n = P.SubscriptionPlanInfo[e];
-                                    return n.interval === t.interval && n.intervalCount === t.intervalCount && n.skuId === P.PremiumSubscriptionSKUs.TIER_2
+                            if (U.MULTI_MONTH_PLANS.has(e)) {
+                                let t = U.SubscriptionPlanInfo[e];
+                                _ = [...(0, U.MULTI_MONTH_PLANS)].filter(e => {
+                                    let n = U.SubscriptionPlanInfo[e];
+                                    return n.interval === t.interval && n.intervalCount === t.intervalCount && n.skuId === U.PremiumSubscriptionSKUs.TIER_2
                                 })
                             } else _ = []
                         }
-                        d = [P.SubscriptionPlans.PREMIUM_YEAR_TIER_2, ..._, P.SubscriptionPlans.PREMIUM_MONTH_TIER_2];
+                        d = [U.SubscriptionPlans.PREMIUM_YEAR_TIER_2, ..._, U.SubscriptionPlans.PREMIUM_MONTH_TIER_2];
                         break;
                     default:
                         throw Error("Unexpected SKU: ".concat(t))
@@ -278546,8 +278567,8 @@
                 return d
             }
 
-            function en(e) {
-                let t = P.SubscriptionPlanInfo[e];
+            function ei(e) {
+                let t = U.SubscriptionPlanInfo[e];
                 if (null == t) {
                     let t = Error("Unsupported plan");
                     throw (0, O.captureBillingException)(t, {
@@ -278559,13 +278580,13 @@
                 return t.skuId
             }
 
-            function ei(e) {
+            function er(e) {
                 var t;
-                return null == e ? k.ALL : null !== (t = k[e]) && void 0 !== t ? t : []
+                return null == e ? V.ALL : null !== (t = V[e]) && void 0 !== t ? t : []
             }
 
-            function er(e) {
-                let t = N.default.getPlanIdsForSkus([eb(P.PremiumSubscriptionSKUs.GUILD)]);
+            function ea(e) {
+                let t = N.default.getPlanIdsForSkus([eG(U.PremiumSubscriptionSKUs.GUILD)]);
                 l()(null != t, "Missing guildSubscriptionPlanIds");
                 let n = e.find(e => {
                     let {
@@ -278575,21 +278596,21 @@
                 });
                 return null != n ? n.quantity : 0
             }
-            let ea = new Set([P.SubscriptionPlans.NONE_MONTH, P.SubscriptionPlans.NONE_3_MONTH, P.SubscriptionPlans.NONE_6_MONTH, P.SubscriptionPlans.NONE_YEAR, P.SubscriptionPlans.PREMIUM_MONTH_TIER_0, P.SubscriptionPlans.PREMIUM_MONTH_TIER_1, P.SubscriptionPlans.PREMIUM_MONTH_TIER_2, P.SubscriptionPlans.PREMIUM_YEAR_TIER_0, P.SubscriptionPlans.PREMIUM_YEAR_TIER_1, P.SubscriptionPlans.PREMIUM_YEAR_TIER_2, P.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2, P.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2]);
-
-            function es(e) {
-                return ea.has(e)
-            }
+            let es = new Set([U.SubscriptionPlans.NONE_MONTH, U.SubscriptionPlans.NONE_3_MONTH, U.SubscriptionPlans.NONE_6_MONTH, U.SubscriptionPlans.NONE_YEAR, U.SubscriptionPlans.PREMIUM_MONTH_TIER_0, U.SubscriptionPlans.PREMIUM_MONTH_TIER_1, U.SubscriptionPlans.PREMIUM_MONTH_TIER_2, U.SubscriptionPlans.PREMIUM_YEAR_TIER_0, U.SubscriptionPlans.PREMIUM_YEAR_TIER_1, U.SubscriptionPlans.PREMIUM_YEAR_TIER_2, U.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2, U.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2]);
 
             function eo(e) {
-                return P.PREMIUM_GUILD_SUBSCRIPTION_PLANS.has(e)
+                return es.has(e)
             }
 
             function el(e) {
-                return es(e) || eo(e)
+                return U.PREMIUM_GUILD_SUBSCRIPTION_PLANS.has(e)
             }
 
             function eu(e) {
+                return eo(e) || el(e)
+            }
+
+            function ed(e) {
                 var t, n, i, r, a;
                 if (e.isPurchasedViaApple && (null === (t = e.metadata) || void 0 === t ? void 0 : t.apple_grace_period_expires_date) != null) {
                     let t = d()(e.metadata.apple_grace_period_expires_date);
@@ -278607,7 +278628,7 @@
                     }
                 }
                 if (e.isPurchasedExternally) {
-                    let t = e.isPurchasedViaApple ? P.DEFAULT_APPLE_GRACE_PERIOD_DAYS : P.DEFAULT_GOOGLE_GRACE_PERIOD_DAYS;
+                    let t = e.isPurchasedViaApple ? U.DEFAULT_APPLE_GRACE_PERIOD_DAYS : U.DEFAULT_GOOGLE_GRACE_PERIOD_DAYS;
                     return {
                         days: t,
                         expiresDate: d()(e.currentPeriodStart).add(t, "days")
@@ -278618,7 +278639,7 @@
                     expiresDate: d()(e.metadata.grace_period_expires_date)
                 };
                 {
-                    let t = null == e.paymentSourceId ? P.DEFAULT_MAX_GRACE_PERIOD_DAYS : P.PAID_SUBSCRIPTION_MAX_GRACE_PERIOD_DAYS;
+                    let t = null == e.paymentSourceId ? U.DEFAULT_MAX_GRACE_PERIOD_DAYS : U.PAID_SUBSCRIPTION_MAX_GRACE_PERIOD_DAYS;
                     return {
                         days: t,
                         expiresDate: d()(e.currentPeriodStart).add(t, "days")
@@ -278626,24 +278647,24 @@
                 }
             }
 
-            function ed(e) {
+            function e_(e) {
                 if (null == e) return !1;
                 let t = m.default.getPaymentSource(e);
-                return null != t && U.PREPAID_PAYMENT_SOURCES.has(t.type)
+                return null != t && b.PREPAID_PAYMENT_SOURCES.has(t.type)
             }
 
-            function e_(e) {
-                return e.isPurchasedExternally ? e.status === M.SubscriptionStatusTypes.CANCELED : function(e) {
+            function ec(e) {
+                return e.isPurchasedExternally ? e.status === y.SubscriptionStatusTypes.CANCELED : function(e) {
                     let {
                         renewalMutations: t,
                         additionalPlans: n,
                         status: i
-                    } = e, r = er(n);
-                    return 0 === (null != t ? er(t.additionalPlans) : null) && 0 !== r ? M.SubscriptionStatusTypes.CANCELED : i
-                }(e) === M.SubscriptionStatusTypes.CANCELED
+                    } = e, r = ea(n);
+                    return 0 === (null != t ? ea(t.additionalPlans) : null) && 0 !== r ? y.SubscriptionStatusTypes.CANCELED : i
+                }(e) === y.SubscriptionStatusTypes.CANCELED
             }
 
-            function ec(e) {
+            function eE(e) {
                 var t, n, i;
                 let {
                     subscription: r,
@@ -278655,78 +278676,78 @@
                     additionalPlans: d
                 } = r, _ = N.default.get(u);
                 l()(null != _, "Missing plan");
-                let c = er(d),
-                    E = eS(r.planId, r.paymentSourceId, r.currency, a).amount * c;
+                let c = ea(d),
+                    E = eh(r.planId, r.paymentSourceId, r.currency, a).amount * c;
                 if (null != o) {
-                    let e = o.invoiceItems.find(e => P.PREMIUM_GUILD_SUBSCRIPTION_PLANS.has(e.subscriptionPlanId));
+                    let e = o.invoiceItems.find(e => U.PREMIUM_GUILD_SUBSCRIPTION_PLANS.has(e.subscriptionPlanId));
                     null != e && (E = e.amount)
                 }
-                s = null != s ? s : (0, D.formatPrice)(E, r.currency);
+                s = null != s ? s : (0, M.formatPrice)(E, r.currency);
                 let I = null === (i = null !== (n = null == o ? void 0 : o.taxInclusive) && void 0 !== n ? n : null === (t = r.latestInvoice) || void 0 === t ? void 0 : t.taxInclusive) || void 0 === i || i;
-                if (e_(r)) return r.isPurchasedViaGoogle ? b.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION_NO_PRICE.format({
+                if (ec(r)) return r.isPurchasedViaGoogle ? G.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION_NO_PRICE.format({
                     quantity: c
-                }) : I ? b.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION.format({
+                }) : I ? G.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION.format({
                     quantity: c,
-                    rate: (0, D.formatRate)(s, _.interval, _.intervalCount)
-                }) : b.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION_TAX_EXCLUSIVE.format({
+                    rate: (0, M.formatRate)(s, _.interval, _.intervalCount)
+                }) : G.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_PENDING_CANCELATION_TAX_EXCLUSIVE.format({
                     quantity: c,
-                    rate: (0, D.formatRate)(s, _.interval, _.intervalCount)
+                    rate: (0, M.formatRate)(s, _.interval, _.intervalCount)
                 });
                 switch (r.status) {
-                    case M.SubscriptionStatusTypes.ACCOUNT_HOLD:
-                        return r.isPurchasedViaGoogle ? b.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD_NO_PRICE.format({
+                    case y.SubscriptionStatusTypes.ACCOUNT_HOLD:
+                        return r.isPurchasedViaGoogle ? G.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD_NO_PRICE.format({
                             quantity: c,
                             boostQuantity: c
-                        }) : I ? b.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD.format({
+                        }) : I ? G.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD.format({
                             quantity: c,
                             boostQuantity: c,
-                            rate: (0, D.formatRate)(s, _.interval, _.intervalCount)
-                        }) : b.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD_TAX_EXCLUSIVE.format({
+                            rate: (0, M.formatRate)(s, _.interval, _.intervalCount)
+                        }) : G.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_ACCOUNT_HOLD_TAX_EXCLUSIVE.format({
                             quantity: c,
                             boostQuantity: c,
-                            rate: (0, D.formatRate)(s, _.interval, _.intervalCount)
+                            rate: (0, M.formatRate)(s, _.interval, _.intervalCount)
                         });
-                    case M.SubscriptionStatusTypes.PAUSE_PENDING:
-                    case M.SubscriptionStatusTypes.PAUSED:
-                        return b.default.Messages.GUILD_BOOSTING_DISABLED_HEADER;
+                    case y.SubscriptionStatusTypes.PAUSE_PENDING:
+                    case y.SubscriptionStatusTypes.PAUSED:
+                        return G.default.Messages.GUILD_BOOSTING_DISABLED_HEADER;
                     default:
-                        return r.isPurchasedViaGoogle ? b.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_NO_PRICE.format({
+                        return r.isPurchasedViaGoogle ? G.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_NO_PRICE.format({
                             quantity: c
-                        }) : I ? b.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO.format({
+                        }) : I ? G.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO.format({
                             quantity: c,
-                            rate: (0, D.formatRate)(s, _.interval, _.intervalCount)
-                        }) : b.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_TAX_EXCLUSIVE.format({
+                            rate: (0, M.formatRate)(s, _.interval, _.intervalCount)
+                        }) : G.default.Messages.PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_TAX_EXCLUSIVE.format({
                             quantity: c,
-                            rate: (0, D.formatRate)(s, _.interval, _.intervalCount)
+                            rate: (0, M.formatRate)(s, _.interval, _.intervalCount)
                         })
                 }
             }
 
-            function eE(e, t, n) {
-                let i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-                    r = null != t ? F(e.id, !1, i, t) : x(e.id, !1, i),
-                    a = (0, D.formatPrice)(r.amount, r.currency);
-                return e.currency !== U.CurrencyCodes.USD && !0 === n && (a = a.concat("*")), a
-            }
-
             function eI(e, t, n) {
-                let i = eE(e, t, n);
-                return (0, D.formatRate)(i, e.interval, e.intervalCount)
+                let i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+                    r = null != t ? H(e.id, !1, i, t) : F(e.id, !1, i),
+                    a = (0, M.formatPrice)(r.amount, r.currency);
+                return e.currency !== b.CurrencyCodes.USD && !0 === n && (a = a.concat("*")), a
             }
 
-            function eT(e) {
+            function eT(e, t, n) {
+                let i = eI(e, t, n);
+                return (0, M.formatRate)(i, e.interval, e.intervalCount)
+            }
+
+            function ef(e) {
                 let {
                     status: t,
                     renewalMutations: n
                 } = e;
-                return t === M.SubscriptionStatusTypes.CANCELED || null != n && (0, S.isNoneSubscription)(n.planId) && !e.isPurchasedExternally
+                return t === y.SubscriptionStatusTypes.CANCELED || null != n && (0, S.isNoneSubscription)(n.planId) && !e.isPurchasedExternally
             }
 
-            function ef(e) {
-                return e === M.SubscriptionStatusTypes.PAST_DUE || e === M.SubscriptionStatusTypes.ACCOUNT_HOLD || e === M.SubscriptionStatusTypes.BILLING_RETRY
+            function eS(e) {
+                return e === y.SubscriptionStatusTypes.PAST_DUE || e === y.SubscriptionStatusTypes.ACCOUNT_HOLD || e === y.SubscriptionStatusTypes.BILLING_RETRY
             }
 
-            function eS(e, t, n, i) {
+            function eh(e, t, n, i) {
                 let r = null != t ? {
                         paymentSourceId: t,
                         currency: n
@@ -278743,7 +278764,7 @@
                         }
                     }), t
                 }
-                let s = N.default.getForSkuAndInterval(eb(P.PremiumSubscriptionSKUs.GUILD), a.interval, a.intervalCount);
+                let s = N.default.getForSkuAndInterval(eG(U.PremiumSubscriptionSKUs.GUILD), a.interval, a.intervalCount);
                 if (null == s) {
                     let t = Error("Unsupported plan");
                     throw (0, O.captureBillingException)(t, {
@@ -278752,52 +278773,52 @@
                         }
                     }), t
                 }
-                return F(s.id, (0, L.isPremium)(i), !1, r)
+                return H(s.id, (0, v.isPremium)(i), !1, r)
             }
 
-            function eh(e, t, n) {
+            function eA(e, t, n) {
                 let i = t.id;
                 if (null != e) switch (i) {
-                    case P.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
-                        return b.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_MONTH_TIER_0;
-                    case P.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
-                        return b.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_YEAR_TIER_0;
-                    case P.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
-                        return b.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_MONTH_TIER_1;
-                    case P.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
-                        return b.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_YEAR_TIER_1;
-                    case P.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
-                        return b.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_MONTH_TIER_2;
-                    case P.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
-                        return b.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_YEAR_TIER_2
+                    case U.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
+                        return G.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_MONTH_TIER_0;
+                    case U.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
+                        return G.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_YEAR_TIER_0;
+                    case U.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
+                        return G.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_MONTH_TIER_1;
+                    case U.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
+                        return G.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_YEAR_TIER_1;
+                    case U.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
+                        return G.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_MONTH_TIER_2;
+                    case U.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
+                        return G.default.Messages.PREMIUM_SWITCH_REVIEW_HEADER_PREMIUM_YEAR_TIER_2
                 }
                 switch (i) {
-                    case P.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
-                        return n ? b.default.Messages.BILLING_SELECT_PLAN : b.default.Messages.BILLING_SELECT_PLAN_PREMIUM_MONTH_TIER_0;
-                    case P.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
-                        return n ? b.default.Messages.BILLING_SELECT_PLAN : b.default.Messages.BILLING_SELECT_PLAN_PREMIUM_YEAR_TIER_0;
-                    case P.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
-                        return n ? b.default.Messages.BILLING_SELECT_PLAN : b.default.Messages.BILLING_SELECT_PLAN_PREMIUM_MONTH_TIER_1;
-                    case P.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
-                        return n ? b.default.Messages.BILLING_SELECT_PLAN : b.default.Messages.BILLING_SELECT_PLAN_PREMIUM_YEAR_TIER_1;
-                    case P.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
-                        return n ? b.default.Messages.BILLING_SELECT_PLAN : b.default.Messages.BILLING_SELECT_PLAN_PREMIUM_MONTH_TIER_2;
-                    case P.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
-                        return n ? b.default.Messages.BILLING_SELECT_PLAN : b.default.Messages.BILLING_SELECT_PLAN_PREMIUM_YEAR_TIER_2;
-                    case P.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
-                    case P.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
-                        return b.default.Messages.BILLING_SELECT_PLAN_PREMIUM_MONTHS_TIER_2.format({
+                    case U.SubscriptionPlans.PREMIUM_MONTH_TIER_0:
+                        return n ? G.default.Messages.BILLING_SELECT_PLAN : G.default.Messages.BILLING_SELECT_PLAN_PREMIUM_MONTH_TIER_0;
+                    case U.SubscriptionPlans.PREMIUM_YEAR_TIER_0:
+                        return n ? G.default.Messages.BILLING_SELECT_PLAN : G.default.Messages.BILLING_SELECT_PLAN_PREMIUM_YEAR_TIER_0;
+                    case U.SubscriptionPlans.PREMIUM_MONTH_TIER_1:
+                        return n ? G.default.Messages.BILLING_SELECT_PLAN : G.default.Messages.BILLING_SELECT_PLAN_PREMIUM_MONTH_TIER_1;
+                    case U.SubscriptionPlans.PREMIUM_YEAR_TIER_1:
+                        return n ? G.default.Messages.BILLING_SELECT_PLAN : G.default.Messages.BILLING_SELECT_PLAN_PREMIUM_YEAR_TIER_1;
+                    case U.SubscriptionPlans.PREMIUM_MONTH_TIER_2:
+                        return n ? G.default.Messages.BILLING_SELECT_PLAN : G.default.Messages.BILLING_SELECT_PLAN_PREMIUM_MONTH_TIER_2;
+                    case U.SubscriptionPlans.PREMIUM_YEAR_TIER_2:
+                        return n ? G.default.Messages.BILLING_SELECT_PLAN : G.default.Messages.BILLING_SELECT_PLAN_PREMIUM_YEAR_TIER_2;
+                    case U.SubscriptionPlans.PREMIUM_3_MONTH_TIER_2:
+                    case U.SubscriptionPlans.PREMIUM_6_MONTH_TIER_2:
+                        return G.default.Messages.BILLING_SELECT_PLAN_PREMIUM_MONTHS_TIER_2.format({
                             intervalCount: t.intervalCount
                         });
-                    case P.SubscriptionPlans.NONE_MONTH:
-                    case P.SubscriptionPlans.NONE_YEAR:
-                    case P.SubscriptionPlans.NONE_3_MONTH:
-                    case P.SubscriptionPlans.NONE_6_MONTH:
-                    case P.SubscriptionPlans.PREMIUM_MONTH_GUILD:
-                    case P.SubscriptionPlans.PREMIUM_YEAR_GUILD:
-                    case P.SubscriptionPlans.PREMIUM_3_MONTH_GUILD:
-                    case P.SubscriptionPlans.PREMIUM_6_MONTH_GUILD:
-                        return b.default.Messages.GUILD_SUBSCRIPTION_PURCHASE_MODAL_SUBMIT
+                    case U.SubscriptionPlans.NONE_MONTH:
+                    case U.SubscriptionPlans.NONE_YEAR:
+                    case U.SubscriptionPlans.NONE_3_MONTH:
+                    case U.SubscriptionPlans.NONE_6_MONTH:
+                    case U.SubscriptionPlans.PREMIUM_MONTH_GUILD:
+                    case U.SubscriptionPlans.PREMIUM_YEAR_GUILD:
+                    case U.SubscriptionPlans.PREMIUM_3_MONTH_GUILD:
+                    case U.SubscriptionPlans.PREMIUM_6_MONTH_GUILD:
+                        return G.default.Messages.GUILD_SUBSCRIPTION_PURCHASE_MODAL_SUBMIT
                 }
                 let r = Error("User is purchasing an unsupported plan");
                 throw (0, O.captureBillingException)(r, {
@@ -278807,7 +278828,7 @@
                 }), r
             }
 
-            function eA(e) {
+            function em(e) {
                 let t = e.invoiceItems[0].subscriptionPlanId,
                     n = N.default.get(t);
                 return l()(null != n, "Missing subscriptionPlan"), {
@@ -278816,60 +278837,34 @@
                 }
             }
 
-            function em(e) {
+            function eN(e) {
                 let {
-                    intervalType: t = P.SubscriptionIntervalTypes.MONTH,
+                    intervalType: t = U.SubscriptionIntervalTypes.MONTH,
                     intervalCount: n = 1,
                     capitalize: i = !1
                 } = e;
                 switch (t) {
-                    case P.SubscriptionIntervalTypes.DAY:
-                        if (n >= 7 && n % 7 == 0) return i ? b.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_HEADING_WEEKS.format({
+                    case U.SubscriptionIntervalTypes.DAY:
+                        if (n >= 7 && n % 7 == 0) return i ? G.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_HEADING_WEEKS.format({
                             weeks: n / 7
-                        }) : b.default.Messages.PREMIUM_TRIAL_FREE_DURATION_WEEKS.format({
+                        }) : G.default.Messages.PREMIUM_TRIAL_FREE_DURATION_WEEKS.format({
                             weeks: n / 7
                         });
-                        return i ? b.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_HEADING_DAYS.format({
+                        return i ? G.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_HEADING_DAYS.format({
                             days: n
-                        }) : b.default.Messages.PREMIUM_TRIAL_FREE_DURATION_DAYS.format({
+                        }) : G.default.Messages.PREMIUM_TRIAL_FREE_DURATION_DAYS.format({
                             days: n
                         });
-                    case P.SubscriptionIntervalTypes.MONTH:
-                        return i ? b.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_HEADING_MONTHS.format({
+                    case U.SubscriptionIntervalTypes.MONTH:
+                        return i ? G.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_HEADING_MONTHS.format({
                             months: n
-                        }) : b.default.Messages.PREMIUM_TRIAL_FREE_DURATION_MONTHS.format({
+                        }) : G.default.Messages.PREMIUM_TRIAL_FREE_DURATION_MONTHS.format({
                             months: n
                         });
-                    case P.SubscriptionIntervalTypes.YEAR:
-                        return i ? b.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_HEADING_YEARS.format({
+                    case U.SubscriptionIntervalTypes.YEAR:
+                        return i ? G.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_HEADING_YEARS.format({
                             years: n
-                        }) : b.default.Messages.PREMIUM_TRIAL_FREE_DURATION_YEARS.format({
-                            years: n
-                        });
-                    default:
-                        throw Error("Unsupported interval duration.")
-                }
-            }
-
-            function eN(e) {
-                let {
-                    intervalType: t = P.SubscriptionIntervalTypes.MONTH,
-                    intervalCount: n = 1
-                } = e;
-                switch (t) {
-                    case P.SubscriptionIntervalTypes.DAY:
-                        if (n >= 7 && n % 7 == 0) return b.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_CTA_WEEKS.format({
-                            weeks: n / 7
-                        });
-                        return b.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_CTA_DAYS.format({
-                            days: n
-                        });
-                    case P.SubscriptionIntervalTypes.MONTH:
-                        return b.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_CTA_MONTHS.format({
-                            months: n
-                        });
-                    case P.SubscriptionIntervalTypes.YEAR:
-                        return b.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_CTA_YEARS.format({
+                        }) : G.default.Messages.PREMIUM_TRIAL_FREE_DURATION_YEARS.format({
                             years: n
                         });
                     default:
@@ -278879,32 +278874,23 @@
 
             function ep(e) {
                 let {
-                    intervalType: t = P.SubscriptionIntervalTypes.MONTH,
-                    intervalCount: n = 1,
-                    capitalize: i = !1
+                    intervalType: t = U.SubscriptionIntervalTypes.MONTH,
+                    intervalCount: n = 1
                 } = e;
                 switch (t) {
-                    case P.SubscriptionIntervalTypes.DAY:
-                        if (n >= 7 && n % 7 == 0) return i ? b.default.Messages.DURATION_WEEKS_CAPITALIZE.format({
-                            weeks: n / 7
-                        }) : b.default.Messages.DURATION_WEEKS.format({
+                    case U.SubscriptionIntervalTypes.DAY:
+                        if (n >= 7 && n % 7 == 0) return G.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_CTA_WEEKS.format({
                             weeks: n / 7
                         });
-                        return i ? b.default.Messages.DURATION_DAYS_CAPITALIZE.format({
-                            days: n
-                        }) : b.default.Messages.DURATION_DAYS.format({
+                        return G.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_CTA_DAYS.format({
                             days: n
                         });
-                    case P.SubscriptionIntervalTypes.MONTH:
-                        return i ? b.default.Messages.DURATION_MONTHS_CAPITALIZE.format({
-                            months: n
-                        }) : b.default.Messages.DURATION_MONTHS.format({
+                    case U.SubscriptionIntervalTypes.MONTH:
+                        return G.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_CTA_MONTHS.format({
                             months: n
                         });
-                    case P.SubscriptionIntervalTypes.YEAR:
-                        return i ? b.default.Messages.DURATION_YEARS_CAPITALIZE.format({
-                            years: n
-                        }) : b.default.Messages.DURATION_YEARS.format({
+                    case U.SubscriptionIntervalTypes.YEAR:
+                        return G.default.Messages.PREMIUM_TRIAL_MARKETING_TRIAL_CTA_YEARS.format({
                             years: n
                         });
                     default:
@@ -278912,25 +278898,60 @@
                 }
             }
 
-            function eO(e, t) {
+            function eO(e) {
+                let {
+                    intervalType: t = U.SubscriptionIntervalTypes.MONTH,
+                    intervalCount: n = 1,
+                    capitalize: i = !1
+                } = e;
+                switch (t) {
+                    case U.SubscriptionIntervalTypes.DAY:
+                        if (n >= 7 && n % 7 == 0) return i ? G.default.Messages.DURATION_WEEKS_CAPITALIZE.format({
+                            weeks: n / 7
+                        }) : G.default.Messages.DURATION_WEEKS.format({
+                            weeks: n / 7
+                        });
+                        return i ? G.default.Messages.DURATION_DAYS_CAPITALIZE.format({
+                            days: n
+                        }) : G.default.Messages.DURATION_DAYS.format({
+                            days: n
+                        });
+                    case U.SubscriptionIntervalTypes.MONTH:
+                        return i ? G.default.Messages.DURATION_MONTHS_CAPITALIZE.format({
+                            months: n
+                        }) : G.default.Messages.DURATION_MONTHS.format({
+                            months: n
+                        });
+                    case U.SubscriptionIntervalTypes.YEAR:
+                        return i ? G.default.Messages.DURATION_YEARS_CAPITALIZE.format({
+                            years: n
+                        }) : G.default.Messages.DURATION_YEARS.format({
+                            years: n
+                        });
+                    default:
+                        throw Error("Unsupported interval duration.")
+                }
+            }
+
+            function eR(e, t) {
                 switch (e) {
-                    case M.PaymentGateways.APPLE_PARTNER:
-                    case M.PaymentGateways.APPLE:
-                        return G[t];
-                    case M.PaymentGateways.GOOGLE:
-                        return w[t]
+                    case y.PaymentGateways.APPLE_PARTNER:
+                    case y.PaymentGateways.APPLE:
+                        return w[t];
+                    case y.PaymentGateways.GOOGLE:
+                        return B[t]
                 }
                 throw Error("Invalid external payment gateway ".concat(e))
             }
 
-            function eR(e, t) {
-                return (0, L.isPremium)(e) || ef(null == t ? void 0 : t.status)
+            function eC(e, t) {
+                return (0, v.isPremium)(e) || eS(null == t ? void 0 : t.status)
             }
 
-            function eC(e, t) {
+            function eg(e, t) {
                 var n, i;
                 let r = [],
-                    a = (null !== (i = null === (n = e.renewalMutations) || void 0 === n ? void 0 : n.items) && void 0 !== i ? i : e.items).find(e => P.PREMIUM_PLANS.has(e.planId));
+                    a = (null !== (i = null === (n = e.renewalMutations) || void 0 === n ? void 0 : n.items) && void 0 !== i ? i : e.items).find(e => U.PREMIUM_PLANS.has(e.planId));
                 return null != a && r.push(a), r.push(...t), r.map(t => {
                     for (let n of e.items)
                         if (t.planId === n.planId) return {
@@ -278941,11 +278962,11 @@
                 })
             }
 
-            function eg(e) {
-                return e.filter(e => !P.PREMIUM_PLANS.has(e.planId))
+            function eL(e) {
+                return e.filter(e => !U.PREMIUM_PLANS.has(e.planId))
             }
 
-            function eL(e, t, n, i) {
+            function ev(e, t, n, i) {
                 var r, a;
                 l()(i.has(t), "Expected planId in group");
                 let s = !1,
@@ -278965,17 +278986,17 @@
                 return o.filter(e => 0 !== e.quantity)
             }
 
-            function ev(e, t) {
-                return eL(e, t, 1, P.PREMIUM_PLANS)
+            function eD(e, t) {
+                return ev(e, t, 1, U.PREMIUM_PLANS)
             }
 
-            function eD(e, t, n) {
-                return eL(e, n, t, P.PREMIUM_GUILD_SUBSCRIPTION_PLANS)
+            function eM(e, t, n) {
+                return ev(e, n, t, U.PREMIUM_GUILD_SUBSCRIPTION_PLANS)
             }
 
-            function eM(e) {
+            function ey(e) {
                 var t;
-                let n = null !== (t = e.find(e => !("id" in e))) && void 0 !== t ? t : e.find(e => P.PREMIUM_PLANS.has(e.planId));
+                let n = null !== (t = e.find(e => !("id" in e))) && void 0 !== t ? t : e.find(e => U.PREMIUM_PLANS.has(e.planId));
                 if (null != n) {
                     let t = N.default.get(n.planId);
                     l()(null != t, "Missing plan"), e = e.map(e => {
@@ -278992,38 +279013,38 @@
                 return e
             }
 
-            function ey(e) {
+            function eP(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
                         useSpace: !0
                     },
-                    n = P.PremiumUserLimits[e].fileSize;
-                return (0, R.formatSize)(n / 1024, {
+                    n = U.PremiumUserLimits[e].fileSize;
+                return (0, C.formatSize)(n / 1024, {
                     useKibibytes: !0,
                     useSpace: t.useSpace
                 })
             }
 
-            function eP(e) {
-                return null == e ? null : e.items.find(e => P.PREMIUM_GUILD_SUBSCRIPTION_PLANS.has(e.planId))
-            }
-
             function eU(e) {
-                let t = null != e ? V(e) : null;
-                return null != t ? en(t.planId) : null
+                return null == e ? null : e.items.find(e => U.PREMIUM_GUILD_SUBSCRIPTION_PLANS.has(e.planId))
             }
 
             function eb(e) {
+                let t = null != e ? x(e) : null;
+                return null != t ? ei(t.planId) : null
+            }
+
+            function eG(e) {
                 return e
             }
             t.default = Object.freeze({
                 isNewUser: e => null != e && Date.now() - e.createdAt.getTime() < 2592e6,
-                isPremiumAtLeast: L.isPremiumAtLeast,
-                isPremium: L.isPremium,
-                isPremiumExactly: L.isPremiumExactly,
-                getPrice: F,
-                getDefaultPrice: x,
+                isPremiumAtLeast: v.isPremiumAtLeast,
+                isPremium: v.isPremium,
+                isPremiumExactly: v.isPremiumExactly,
+                getPrice: H,
+                getDefaultPrice: F,
                 getInterval: function(e) {
-                    let t = P.SubscriptionPlanInfo[e];
+                    let t = U.SubscriptionPlanInfo[e];
                     if (null != t) return {
                         intervalType: t.interval,
                         intervalCount: t.intervalCount
@@ -279035,108 +279056,108 @@
                         }
                     }), n
                 },
-                getIntervalString: j,
-                getIntervalStringAsNoun: W,
-                getPremiumType: K,
-                getDisplayName: z,
-                getDisplayPremiumType: Q,
-                getPremiumPlanOptions: et,
-                getUpgradeEligibilities: ei,
-                getPlanDescription: J,
+                getIntervalString: W,
+                getIntervalStringAsNoun: K,
+                getPremiumType: z,
+                getDisplayName: Z,
+                getDisplayPremiumType: q,
+                getPremiumPlanOptions: en,
+                getUpgradeEligibilities: er,
+                getPlanDescription: $,
                 isPremiumSku: function(e) {
-                    return e === P.PremiumSubscriptionSKUs.TIER_0 || e === P.PremiumSubscriptionSKUs.TIER_1 || e === P.PremiumSubscriptionSKUs.TIER_2
+                    return e === U.PremiumSubscriptionSKUs.TIER_0 || e === U.PremiumSubscriptionSKUs.TIER_1 || e === U.PremiumSubscriptionSKUs.TIER_2
                 },
                 getClosestUpgrade: function(e) {
-                    let t = P.SubscriptionPlanInfo[e];
+                    let t = U.SubscriptionPlanInfo[e];
                     if (null == t) throw Error("Unrecognized plan.");
                     let {
                         interval: n
-                    } = t, i = ei(e);
-                    for (let e of Object.keys(P.SubscriptionPlanInfo)) {
+                    } = t, i = er(e);
+                    for (let e of Object.keys(U.SubscriptionPlanInfo)) {
                         let {
                             interval: t
-                        } = P.SubscriptionPlanInfo[e];
+                        } = U.SubscriptionPlanInfo[e];
                         if (n === t && i.includes(e)) return e
                     }
                     return null
                 },
                 getIntervalMonths: function(e, t) {
-                    if (e === P.SubscriptionIntervalTypes.MONTH) return t;
-                    if (e === P.SubscriptionIntervalTypes.YEAR) return 12 * t;
+                    if (e === U.SubscriptionIntervalTypes.MONTH) return t;
+                    if (e === U.SubscriptionIntervalTypes.YEAR) return 12 * t;
                     throw Error("".concat(e, " interval subscription period not implemented"))
                 },
-                getUserMaxFileSize: g.getUserMaxFileSize,
-                getSkuIdForPlan: en,
+                getUserMaxFileSize: L.getUserMaxFileSize,
+                getSkuIdForPlan: ei,
                 getSkuIdForPremiumType: function(e) {
                     switch (e) {
-                        case P.PremiumTypes.TIER_0:
-                            return P.PremiumSubscriptionSKUs.TIER_0;
-                        case P.PremiumTypes.TIER_1:
-                            return P.PremiumSubscriptionSKUs.TIER_1;
-                        case P.PremiumTypes.TIER_2:
-                            return P.PremiumSubscriptionSKUs.TIER_2
+                        case U.PremiumTypes.TIER_0:
+                            return U.PremiumSubscriptionSKUs.TIER_0;
+                        case U.PremiumTypes.TIER_1:
+                            return U.PremiumSubscriptionSKUs.TIER_1;
+                        case U.PremiumTypes.TIER_2:
+                            return U.PremiumSubscriptionSKUs.TIER_2
                     }
                 },
                 getNumIncludedPremiumGuildSubscriptionSlots: function(e) {
-                    if (K(e) === P.PremiumTypes.TIER_2) return P.NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM;
+                    if (z(e) === U.PremiumTypes.TIER_2) return U.NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM;
                     return 0
                 },
                 getBillingInformationString: function(e, t) {
                     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-                        i = n ? (0, D.formatPrice)(t.invoiceItems.filter(e => P.PREMIUM_TIER_2_PLANS.has(e.subscriptionPlanId)).map(e => e.amount).reduce((e, t) => t + e, 0), t.currency) : (0, D.formatPrice)(t.total, t.currency);
-                    if (e.status === M.SubscriptionStatusTypes.CANCELED) return b.default.Messages.PREMIUM_SETTINGS_CANCELLED_INFO.format({
+                        i = n ? (0, M.formatPrice)(t.invoiceItems.filter(e => U.PREMIUM_TIER_2_PLANS.has(e.subscriptionPlanId)).map(e => e.amount).reduce((e, t) => t + e, 0), t.currency) : (0, M.formatPrice)(t.total, t.currency);
+                    if (e.status === y.SubscriptionStatusTypes.CANCELED) return G.default.Messages.PREMIUM_SETTINGS_CANCELLED_INFO.format({
                         endDate: t.subscriptionPeriodStart
                     });
-                    if (e.status === M.SubscriptionStatusTypes.PAUSE_PENDING) return b.default.Messages.PREMIUM_SETTINGS_PAUSE_PENDING_INFO.format({
+                    if (e.status === y.SubscriptionStatusTypes.PAUSE_PENDING) return G.default.Messages.PREMIUM_SETTINGS_PAUSE_PENDING_INFO.format({
                         pauseDate: e.currentPeriodEnd,
                         resumeDate: e.pauseEndsAt
                     });
-                    if (e.status === M.SubscriptionStatusTypes.PAUSED) return null == e.pauseEndsAt ? n ? b.default.Messages.PREMIUM_SETTINGS_PAUSED_INFO_WITH_PLAN.format({
-                        planName: b.default.Messages.PREMIUM,
+                    if (e.status === y.SubscriptionStatusTypes.PAUSED) return null == e.pauseEndsAt ? n ? G.default.Messages.PREMIUM_SETTINGS_PAUSED_INFO_WITH_PLAN.format({
+                        planName: G.default.Messages.PREMIUM,
                         price: i
-                    }) : b.default.Messages.PREMIUM_SETTINGS_PAUSED_INFO : n ? b.default.Messages.PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO_WITH_PLAN.format({
-                        planName: b.default.Messages.PREMIUM,
+                    }) : G.default.Messages.PREMIUM_SETTINGS_PAUSED_INFO : n ? G.default.Messages.PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO_WITH_PLAN.format({
+                        planName: G.default.Messages.PREMIUM,
                         resumeDate: e.pauseEndsAt,
                         price: i
-                    }) : b.default.Messages.PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO.format({
+                    }) : G.default.Messages.PREMIUM_SETTINGS_PAUSE_ENDS_AT_INFO.format({
                         resumeDate: e.pauseEndsAt
                     });
-                    else if (e.status === M.SubscriptionStatusTypes.PAST_DUE) {
+                    else if (e.status === y.SubscriptionStatusTypes.PAST_DUE) {
                         var r, a;
-                        let t = eu(e).expiresDate;
-                        return (e.isPurchasedViaGoogle && (null === (r = e.metadata) || void 0 === r ? void 0 : r.google_grace_period_expires_date) != null && (t = d()(e.metadata.google_grace_period_expires_date)), e.isPurchasedViaApple && (null === (a = e.metadata) || void 0 === a ? void 0 : a.apple_grace_period_expires_date) != null && (t = d()(e.metadata.apple_grace_period_expires_date)), e.isPurchasedExternally) ? b.default.Messages.PREMIUM_SETTINGS_PAST_DUE_INFO_EXTERNAL.format({
+                        let t = ed(e).expiresDate;
+                        return (e.isPurchasedViaGoogle && (null === (r = e.metadata) || void 0 === r ? void 0 : r.google_grace_period_expires_date) != null && (t = d()(e.metadata.google_grace_period_expires_date)), e.isPurchasedViaApple && (null === (a = e.metadata) || void 0 === a ? void 0 : a.apple_grace_period_expires_date) != null && (t = d()(e.metadata.apple_grace_period_expires_date)), e.isPurchasedExternally) ? G.default.Messages.PREMIUM_SETTINGS_PAST_DUE_INFO_EXTERNAL.format({
                             endDate: t,
-                            paymentGatewayName: U.PaymentGatewayToFriendlyName[e.paymentGateway],
-                            paymentSourceLink: eO(e.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT")
-                        }) : b.default.Messages.PREMIUM_SETTINGS_PAST_DUE_INFO.format({
+                            paymentGatewayName: b.PaymentGatewayToFriendlyName[e.paymentGateway],
+                            paymentSourceLink: eR(e.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT")
+                        }) : G.default.Messages.PREMIUM_SETTINGS_PAST_DUE_INFO.format({
                             endDate: t,
                             price: i
                         })
-                    } else return e.status === M.SubscriptionStatusTypes.BILLING_RETRY ? b.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO_PRICE.format({
-                        endDate: d()(e.currentPeriodStart).add(P.PAID_SUBSCRIPTION_MAX_BILLING_RETRY_DAYS, "days"),
+                    } else return e.status === y.SubscriptionStatusTypes.BILLING_RETRY ? G.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO_PRICE.format({
+                        endDate: d()(e.currentPeriodStart).add(U.PAID_SUBSCRIPTION_MAX_BILLING_RETRY_DAYS, "days"),
                         price: i
-                    }) : e.status === M.SubscriptionStatusTypes.ACCOUNT_HOLD ? e.isPurchasedViaGoogle && !(0, C.isAndroid)() ? b.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO_EXTERNAL.format({
-                        endDate: d()(e.currentPeriodStart).add(P.MAX_ACCOUNT_HOLD_DAYS, "days"),
-                        paymentGatewayName: U.PaymentGatewayToFriendlyName[e.paymentGateway],
-                        paymentSourceLink: eO(e.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT")
-                    }) : b.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO_PRICE.format({
-                        endDate: d()(e.currentPeriodStart).add(P.MAX_ACCOUNT_HOLD_DAYS, "days"),
+                    }) : e.status === y.SubscriptionStatusTypes.ACCOUNT_HOLD ? e.isPurchasedViaGoogle && !(0, g.isAndroid)() ? G.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO_EXTERNAL.format({
+                        endDate: d()(e.currentPeriodStart).add(U.MAX_ACCOUNT_HOLD_DAYS, "days"),
+                        paymentGatewayName: b.PaymentGatewayToFriendlyName[e.paymentGateway],
+                        paymentSourceLink: eR(e.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT")
+                    }) : G.default.Messages.PREMIUM_SETTINGS_ACCOUNT_HOLD_INFO_PRICE.format({
+                        endDate: d()(e.currentPeriodStart).add(U.MAX_ACCOUNT_HOLD_DAYS, "days"),
                         price: i
                     }) : function(e) {
-                        return null != e.paymentSourceId && ed(e.paymentSourceId)
-                    }(e) ? b.default.Messages.PREMIUM_SETTINGS_PREPAID_THROUGH_DATE.format({
+                        return null != e.paymentSourceId && e_(e.paymentSourceId)
+                    }(e) ? G.default.Messages.PREMIUM_SETTINGS_PREPAID_THROUGH_DATE.format({
                         prepaidEndDate: e.currentPeriodEnd
-                    }) : e.status === M.SubscriptionStatusTypes.UNPAID ? b.default.Messages.PREMIUM_SETTINGS_PAYMENT_PROCESSING.format({
-                        maxProcessingTimeInDays: P.MAX_PAYMENT_PROCESSING_TIME_DAYS
-                    }) : e.isPurchasedExternally ? b.default.Messages.PREMIUM_SETTINGS_RENEWAL_INFO_EXTERNAL.format({
+                    }) : e.status === y.SubscriptionStatusTypes.UNPAID ? G.default.Messages.PREMIUM_SETTINGS_PAYMENT_PROCESSING.format({
+                        maxProcessingTimeInDays: U.MAX_PAYMENT_PROCESSING_TIME_DAYS
+                    }) : e.isPurchasedExternally ? G.default.Messages.PREMIUM_SETTINGS_RENEWAL_INFO_EXTERNAL.format({
                         renewalDate: t.subscriptionPeriodStart,
-                        paymentGatewayName: U.PaymentGatewayToFriendlyName[e.paymentGateway],
-                        subscriptionManagementLink: eO(e.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
-                    }) : n ? b.default.Messages.PREMIUM_SETTINGS_RENEWAL_INFO_WITH_PLAN.format({
-                        planName: b.default.Messages.PREMIUM,
+                        paymentGatewayName: b.PaymentGatewayToFriendlyName[e.paymentGateway],
+                        subscriptionManagementLink: eR(e.paymentGateway, "SUBSCRIPTION_MANAGEMENT")
+                    }) : n ? G.default.Messages.PREMIUM_SETTINGS_RENEWAL_INFO_WITH_PLAN.format({
+                        planName: G.default.Messages.PREMIUM,
                         renewalDate: t.subscriptionPeriodStart,
                         price: i
-                    }) : b.default.Messages.PREMIUM_SETTINGS_RENEWAL_INFO.format({
+                    }) : G.default.Messages.PREMIUM_SETTINGS_RENEWAL_INFO.format({
                         renewalDate: t.subscriptionPeriodStart,
                         price: i
                     })
@@ -279146,13 +279167,13 @@
                     let {
                         planId: n
                     } = e;
-                    if (e.status === M.SubscriptionStatusTypes.CANCELED || e.status === M.SubscriptionStatusTypes.PAUSE_PENDING) return n;
+                    if (e.status === y.SubscriptionStatusTypes.CANCELED || e.status === y.SubscriptionStatusTypes.PAUSE_PENDING) return n;
                     l()(null != t, "Expected invoicePreview");
                     let i = t.invoiceItems.find(e => {
                         let {
                             subscriptionPlanId: t
                         } = e;
-                        return es(t)
+                        return eo(t)
                     });
                     return n = null == i || (0, S.isNoneSubscription)(i.subscriptionPlanId) ? e.planId : null != e.renewalMutations && e.renewalMutations.planId !== e.planId ? e.planId : i.subscriptionPlanId
                 },
@@ -279160,18 +279181,18 @@
                     let {
                         status: n
                     } = e;
-                    if (e.status === M.SubscriptionStatusTypes.CANCELED || e.status === M.SubscriptionStatusTypes.PAUSE_PENDING) return n;
+                    if (e.status === y.SubscriptionStatusTypes.CANCELED || e.status === y.SubscriptionStatusTypes.PAUSE_PENDING) return n;
                     l()(null != t, "Expected invoicePreview");
                     let i = t.invoiceItems.find(e => {
                         let {
                             subscriptionPlanId: t
                         } = e;
-                        return es(t)
+                        return eo(t)
                     });
-                    return (null == i || (0, S.isNoneSubscription)(i.subscriptionPlanId)) && (n = M.SubscriptionStatusTypes.CANCELED), n
+                    return (null == i || (0, S.isNoneSubscription)(i.subscriptionPlanId)) && (n = y.SubscriptionStatusTypes.CANCELED), n
                 },
-                isBaseSubscriptionCanceled: eT,
-                getPremiumGuildIntervalPrice: eS,
+                isBaseSubscriptionCanceled: ef,
+                getPremiumGuildIntervalPrice: eh,
                 hasAccountCredit: function(e) {
                     return null != e && 0 !== e.size && Array.from(e).some(e => {
                         let {
@@ -279182,37 +279203,37 @@
                         return null != t && null != n && !i
                     })
                 },
-                getBillingReviewSubheader: eh,
-                getIntervalForInvoice: eA,
-                getPremiumPlanItem: V,
-                getGuildBoostPlanItem: eP,
+                getBillingReviewSubheader: eA,
+                getIntervalForInvoice: em,
+                getPremiumPlanItem: x,
+                getGuildBoostPlanItem: eU,
                 isBoostOnlySubscription: function(e) {
-                    return null != e && null == V(e) && null != eP(e)
+                    return null != e && null == x(e) && null != eU(e)
                 },
-                getPremiumSkuIdForSubscription: eU,
+                getPremiumSkuIdForSubscription: eb,
                 getPremiumTypeFromSubscription: function(e) {
                     if (null != e) {
-                        let t = V(e);
-                        if (null != t) return K(t.planId)
+                        let t = x(e);
+                        if (null != t) return z(t.planId)
                     }
                 },
                 getPremiumTypeFromSubscriptionRenewalMutations: function(e) {
                     if (null != e && null != e.renewalMutations) {
-                        let t = V(e.renewalMutations);
-                        if (null != t) return K(t.planId)
+                        let t = x(e.renewalMutations);
+                        if (null != t) return z(t.planId)
                     }
                 },
                 getPremiumGradientColor: function(e) {
                     switch (e) {
-                        case P.PremiumTypes.TIER_0:
-                            return y.Gradients.PREMIUM_TIER_0;
-                        case P.PremiumTypes.TIER_1:
-                            return y.Gradients.PREMIUM_TIER_1;
-                        case P.PremiumTypes.TIER_2:
-                            return y.Gradients.PREMIUM_TIER_2
+                        case U.PremiumTypes.TIER_0:
+                            return P.Gradients.PREMIUM_TIER_0;
+                        case U.PremiumTypes.TIER_1:
+                            return P.Gradients.PREMIUM_TIER_1;
+                        case U.PremiumTypes.TIER_2:
+                            return P.Gradients.PREMIUM_TIER_2
                     }
                 },
-                castPremiumSubscriptionAsSkuId: eb,
+                castPremiumSubscriptionAsSkuId: eG,
                 canUseAnimatedEmojis: function(e) {
                     return (0, I.canUserUse)(I.ANIMATED_EMOJIS, e)
                 },
@@ -279293,8 +279314,8 @@
                     return (0, I.canUserUse)(I.CUSTOM_NOTIFICATION_SOUNDS, e)
                 },
                 formatPriceString: function(e, t) {
-                    let n = (0, D.formatPrice)(e.amount, e.currency),
-                        i = W(t);
+                    let n = (0, M.formatPrice)(e.amount, e.currency),
+                        i = K(t);
                     return "".concat(n, "/").concat(i)
                 },
                 StreamQuality: r
@@ -284058,7 +284079,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291103", "291103"), 10);
+                let a = parseInt((n = "291131", "291131"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -304179,7 +304200,7 @@
                 g = n("381499"),
                 L = n("835913"),
                 v = n("397696");
-            (I = i || (i = {}))[I.UNSPECIFIED = 0] = "UNSPECIFIED", I[I.MENTIONS = 1] = "MENTIONS", I[I.UNREADS = 2] = "UNREADS", I[I.TODOS = 3] = "TODOS", I[I.FOR_YOU = 4] = "FOR_YOU", I[I.GAME_INVITES = 5] = "GAME_INVITES", (T = r || (r = {}))[T.NO_PROGRESS = 0] = "NO_PROGRESS", T[T.JOIN_GUILD = 1] = "JOIN_GUILD", T[T.INVITE_USER = 2] = "INVITE_USER", T[T.CONTACT_SYNC = 4] = "CONTACT_SYNC", (f = a || (a = {}))[f.NO_GUILD_ONBOARDING = 0] = "NO_GUILD_ONBOARDING", f[f.GUILD_NOTICE_SHOWN = 1] = "GUILD_NOTICE_SHOWN", f[f.GUILD_NOTICE_CLEARED = 2] = "GUILD_NOTICE_CLEARED", (S = s || (s = {}))[S.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = 0] = "DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE", S[S.CLYDE_GUILD_NOTICE_NUX = 1] = "CLYDE_GUILD_NOTICE_NUX", S[S.SUMMARIES_NOTICE = 2] = "SUMMARIES_NOTICE", S[S.SUMMARIES_ENABLED_NOTICE = 3] = "SUMMARIES_ENABLED_NOTICE", S[S.ADOPT_CLAN_IDENTITY_NOTICE = 4] = "ADOPT_CLAN_IDENTITY_NOTICE", (h = o || (o = {}))[h.HUB_WAITLIST_UPSELL = 0] = "HUB_WAITLIST_UPSELL", h[h.APPLICATION_COMMAND_TOOLTIP = 1] = "APPLICATION_COMMAND_TOOLTIP", h[h.HUB_EVENT_HEADER_UPSELL = 2] = "HUB_EVENT_HEADER_UPSELL", h[h.CHANNELINFO_CHANNELBANNER_NOTICE = 3] = "CHANNELINFO_CHANNELBANNER_NOTICE", h[h.ACCOUNT_MULTIACCOUNT_TOOLTIP = 4] = "ACCOUNT_MULTIACCOUNT_TOOLTIP", h[h.SEASONALGIFTING_CHANNELBUTTON_POPUP = 5] = "SEASONALGIFTING_CHANNELBUTTON_POPUP", h[h.CHANNEL_NOTICE_INVITE = 6] = "CHANNEL_NOTICE_INVITE", h[h.CHANNEL_NOTICE_HUBLINK = 7] = "CHANNEL_NOTICE_HUBLINK", h[h.CHANNEL_NOTICE_QUICKSWITCHER = 8] = "CHANNEL_NOTICE_QUICKSWITCHER", h[h.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION = 9] = "CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION", h[h.CHANNEL_NOTICE_GUILD_BANNER = 11] = "CHANNEL_NOTICE_GUILD_BANNER", h[h.GUILD_HEADER_EVENT_UPSELL = 12] = "GUILD_HEADER_EVENT_UPSELL", h[h.GUILD_HEADER_PREMIUM_GUILD_PROGRESS = 14] = "GUILD_HEADER_PREMIUM_GUILD_PROGRESS", h[h.GUILD_HEADER_ANIMATED_GUILD_BANNER = 15] = "GUILD_HEADER_ANIMATED_GUILD_BANNER", h[h.NAGBAR_NOTICE_DOWNLOAD = 16] = "NAGBAR_NOTICE_DOWNLOAD", h[h.NAGBAR_NOTICE_CONNECT_SPOTIFY = 17] = "NAGBAR_NOTICE_CONNECT_SPOTIFY", h[h.NAGBAR_NOTICE_CONNECT_PLAYSTATION = 18] = "NAGBAR_NOTICE_CONNECT_PLAYSTATION", h[h.NAGBAR_NOTICE_MFA_SMS_BACKUP = 19] = "NAGBAR_NOTICE_MFA_SMS_BACKUP", h[h.ACTIVITIES_SUNSET_COACH_MARK = 20] = "ACTIVITIES_SUNSET_COACH_MARK", h[h.NAGBAR_NOTICE_PREMIUM_PROMO = 21] = "NAGBAR_NOTICE_PREMIUM_PROMO", h[h.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING = 22] = "NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING", h[h.NAGBAR_NOTICE_PREMIUM_REACTIVATE = 23] = "NAGBAR_NOTICE_PREMIUM_REACTIVATE", h[h.PREMIUM_5TH_ANNIVERSARY_MODAL = 24] = "PREMIUM_5TH_ANNIVERSARY_MODAL", h[h.GUILD_JOIN_FEEDBACK_MODAL = 25] = "GUILD_JOIN_FEEDBACK_MODAL", h[h.VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP = 26] = "VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP", h[h.ACTIVITIES_EARLY_USER_COACH_MARK = 27] = "ACTIVITIES_EARLY_USER_COACH_MARK", h[h.GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP = 28] = "GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP", h[h.ACTIVITIES_TUTORIAL_COACH_MARK = 29] = "ACTIVITIES_TUTORIAL_COACH_MARK", h[h.GUILD_HEADER_INVITE_SPLASH = 31] = "GUILD_HEADER_INVITE_SPLASH", h[h.NAGBAR_NOTICE_LOCALIZED_PRICING = 33] = "NAGBAR_NOTICE_LOCALIZED_PRICING", h[h.SOUNDBOARD_EDUCATION = 35] = "SOUNDBOARD_EDUCATION", h[h.GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK = 36] = "GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK", h[h.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL = 37] = "GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL", h[h.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK = 38] = "CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK", h[h.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL = 39] = "GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL", h[h.GUILD_INSIGHTS_ACCESS_RATE_NEW = 40] = "GUILD_INSIGHTS_ACCESS_RATE_NEW", h[h.NOW_PLAYING_CONSENT_CARD = 41] = "NOW_PLAYING_CONSENT_CARD", h[h.GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP = 42] = "GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP", h[h.FORUM_CHANNEL_UPSELL_MODAL = 44] = "FORUM_CHANNEL_UPSELL_MODAL", h[h.POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP = 46] = "POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP", h[h.MWEB_APP_DOWNLOAD_HALFSHEET = 47] = "MWEB_APP_DOWNLOAD_HALFSHEET", h[h.MWEB_APP_DOWNLOAD_NAGBAR_THEMED = 48] = "MWEB_APP_DOWNLOAD_NAGBAR_THEMED", h[h.MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE = 49] = "MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE", h[h.GUILD_FEED_NUX_CARD = 50] = "GUILD_FEED_NUX_CARD", h[h.GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP = 52] = "GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP", h[h.ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2 = 53] = "ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2", h[h.ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES = 55] = "ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES", h[h.GUILD_DELETE_FEEDBACK = 56] = "GUILD_DELETE_FEEDBACK", h[h.GUILD_LEAVE_FEEDBACK = 57] = "GUILD_LEAVE_FEEDBACK", h[h.AUTH_SESSIONS_NEW = 63] = "AUTH_SESSIONS_NEW", h[h.DONUT_MOBILE_NUX = 65] = "DONUT_MOBILE_NUX", h[h.GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL = 66] = "GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL", h[h.FORUM_CHANNEL_HELPER_CARD = 67] = "FORUM_CHANNEL_HELPER_CARD", h[h.PASSPORT_USER_SETTINGS = 70] = "PASSPORT_USER_SETTINGS", h[h.SUMMER_BOGO_ANNOUNCEMENT = 71] = "SUMMER_BOGO_ANNOUNCEMENT", h[h.COMMANDS_MIGRATION_UPSELL_MODAL = 72] = "COMMANDS_MIGRATION_UPSELL_MODAL", h[h.FILE_LIMIT_UPLOAD_COACH_MARK = 73] = "FILE_LIMIT_UPLOAD_COACH_MARK", h[h.DONUT_DESKTOP_NUX = 77] = "DONUT_DESKTOP_NUX", h[h.GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL = 79] = "GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL", h[h.PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST = 80] = "PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST", h[h.STAGE_RAISED_HAND_MOVED = 81] = "STAGE_RAISED_HAND_MOVED", h[h.XBOX_ONE_WAY_RECONNECT = 82] = "XBOX_ONE_WAY_RECONNECT", h[h.XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT = 84] = "XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT", h[h.HUB_BACK_TO_SCHOOL_UPSELL = 85] = "HUB_BACK_TO_SCHOOL_UPSELL", h[h.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP = 86] = "STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP", h[h.ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX = 89] = "ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX", h[h.PROFILE_THEMES_SETTINGS_VIEWED_V2 = 92] = "PROFILE_THEMES_SETTINGS_VIEWED_V2", h[h.GUILD_HEADER_ACTIVE_THREADS_NOTICE = 93] = "GUILD_HEADER_ACTIVE_THREADS_NOTICE", h[h.CHANNEL_LIST_OPT_IN_NUX = 94] = "CHANNEL_LIST_OPT_IN_NUX", h[h.ACTIVITIES_MOBILE_NUX = 95] = "ACTIVITIES_MOBILE_NUX", h[h.PROFILE_THEMES_NEW_BADGE = 96] = "PROFILE_THEMES_NEW_BADGE", h[h.GUILD_AUTOMOD_DEFAULT_ON_UPSELL = 97] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL", h[h.CHANNEL_BROWSER_NUX = 98] = "CHANNEL_BROWSER_NUX", h[h.RNA_CHANGELOG_HC_NOTICE = 99] = "RNA_CHANGELOG_HC_NOTICE", h[h.MESSAGE_REQUEST_SETTINGS_COACH_MARK = 100] = "MESSAGE_REQUEST_SETTINGS_COACH_MARK", h[h.GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2 = 101] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2", h[h.GUILD_AUTOMOD_REGEX_UPSELL = 102] = "GUILD_AUTOMOD_REGEX_UPSELL", h[h.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP = 103] = "VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP", h[h.CONNECTIONS_NUX = 108] = "CONNECTIONS_NUX", h[h.XBOX_VOICE_SURVEY_NAGBAR = 110] = "XBOX_VOICE_SURVEY_NAGBAR", h[h.PS_ONE_WAY_RECONNECT = 112] = "PS_ONE_WAY_RECONNECT", h[h.HALLOWEEN_2022_ACTIVITIES_COACH_MARK = 115] = "HALLOWEEN_2022_ACTIVITIES_COACH_MARK", h[h.NITRODUCTION_STEP_PROFILE_CUSTOMIZATION = 116] = "NITRODUCTION_STEP_PROFILE_CUSTOMIZATION", h[h.NITRODUCTION_STEP_BOOSTING = 117] = "NITRODUCTION_STEP_BOOSTING", h[h.NITRODUCTION_STEP_CUSTOM_EMOJI = 118] = "NITRODUCTION_STEP_CUSTOM_EMOJI", h[h.NEW_CRUNCHYROLL_CONNECTION = 119] = "NEW_CRUNCHYROLL_CONNECTION", h[h.APP_DIRECTORY_UPSELL_MODAL = 121] = "APP_DIRECTORY_UPSELL_MODAL", h[h.BASH_OUT_COACH_MARK = 123] = "BASH_OUT_COACH_MARK", h[h.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL = 124] = "GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL", h[h.COMMUNITY_ONBOARDING_NEW_BADGE = 125] = "COMMUNITY_ONBOARDING_NEW_BADGE", h[h.CHURRO_LINK_UPSELL = 126] = "CHURRO_LINK_UPSELL", h[h.VERIFIED_ROLES_COACH_MARK = 127] = "VERIFIED_ROLES_COACH_MARK", h[h.PROFILE_THEMES_ACCESSIBILITY_TOOLTIP = 129] = "PROFILE_THEMES_ACCESSIBILITY_TOOLTIP", h[h.BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL = 130] = "BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL", h[h.USER_SAFETY_SAFE_DIRECT_MESSAGING = 131] = "USER_SAFETY_SAFE_DIRECT_MESSAGING", h[h.GG_ANNOUNCEMENT = 132] = "GG_ANNOUNCEMENT", h[h.CHANNEL_BROWSER_NEW_BADGE_NUX = 133] = "CHANNEL_BROWSER_NEW_BADGE_NUX", h[h.CREATOR_PROMO_PAGE_COACH_MARK = 134] = "CREATOR_PROMO_PAGE_COACH_MARK", h[h.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL = 136] = "CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL", h[h.GUILD_ONBOARDING_UPSELL_MODAL = 137] = "GUILD_ONBOARDING_UPSELL_MODAL", h[h.NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE = 138] = "NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE", h[h.DROPS_GO_LIVE_BANNER_NOTICE_HALO = 139] = "DROPS_GO_LIVE_BANNER_NOTICE_HALO", h[h.DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO = 140] = "DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO", h[h.DROPS_QUEST_COMPLETION_TOOLTIP_HALO = 141] = "DROPS_QUEST_COMPLETION_TOOLTIP_HALO", h[h.SEASONAL_GIFTING_COACHMARK_2022 = 146] = "SEASONAL_GIFTING_COACHMARK_2022", h[h.NAGBAR_BOUNCED_EMAIL_NOTICE = 147] = "NAGBAR_BOUNCED_EMAIL_NOTICE", h[h.GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE = 151] = "GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE", h[h.CONSOLE_PTT_DISABLE_ALERT = 152] = "CONSOLE_PTT_DISABLE_ALERT", h[h.ACTIVITIES_MINI_SHELF_SPARKLES = 153] = "ACTIVITIES_MINI_SHELF_SPARKLES", h[h.DROPS_ENDED_INCOMPLETE_HALO = 154] = "DROPS_ENDED_INCOMPLETE_HALO", h[h.GDM_INVITE_REMINDER = 157] = "GDM_INVITE_REMINDER", h[h.USER_SAFETY_CONSUMER_EDUCATION_BLOCK = 161] = "USER_SAFETY_CONSUMER_EDUCATION_BLOCK", h[h.USER_SAFETY_CONSUMER_EDUCATION_MUTE = 162] = "USER_SAFETY_CONSUMER_EDUCATION_MUTE", h[h.LINKED_ROLE_ADMIN_GUILD = 163] = "LINKED_ROLE_ADMIN_GUILD", h[h.NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION = 164] = "NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION", h[h.BURST_REACTION_BUTTON_SPARKLE = 165] = "BURST_REACTION_BUTTON_SPARKLE", h[h.NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING = 166] = "NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING", h[h.VC_TILE_ACTIVITIES_ENTRY_POINT = 167] = "VC_TILE_ACTIVITIES_ENTRY_POINT", h[h.BURST_REACTION_COACHMARK = 169] = "BURST_REACTION_COACHMARK", h[h.BURST_REACTIONS_REMOVE_MODAL = 170] = "BURST_REACTIONS_REMOVE_MODAL", h[h.BURST_REACTION_NITRO_TOOLTIP = 171] = "BURST_REACTION_NITRO_TOOLTIP", h[h.CLIENT_THEMES_SETTINGS_BADGE = 173] = "CLIENT_THEMES_SETTINGS_BADGE", h[h.CLIENT_THEMES_COACHMARK = 174] = "CLIENT_THEMES_COACHMARK", h[h.CLIENT_THEMES_SPARKLE_PREVIEW = 175] = "CLIENT_THEMES_SPARKLE_PREVIEW", h[h.STAGE_V2_UPSELL = 176] = "STAGE_V2_UPSELL", h[h.QUEST_1_ENROLLMENT_TOOLTIP = 177] = "QUEST_1_ENROLLMENT_TOOLTIP", h[h.QUEST_1_COMPLETION_TOOLTIP = 178] = "QUEST_1_COMPLETION_TOOLTIP", h[h.QUEST_1_GO_LIVE_BANNER = 179] = "QUEST_1_GO_LIVE_BANNER", h[h.QUEST_1_ENDED_INCOMPLETE = 180] = "QUEST_1_ENDED_INCOMPLETE", h[h.PREMIUM_TUTORIAL_EXPERIENCE = 181] = "PREMIUM_TUTORIAL_EXPERIENCE", h[h.APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL = 182] = "APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL", h[h.PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP = 183] = "PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP", h[h.PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP = 184] = "PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP", h[h.PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP = 185] = "PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP", h[h.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP = 186] = "PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP", h[h.TABS_V2_ANNOUNCEMENT_SHEET = 188] = "TABS_V2_ANNOUNCEMENT_SHEET", h[h.VOICE_MESSAGE_UPSELL_DM = 189] = "VOICE_MESSAGE_UPSELL_DM", h[h.SUPER_REACTIONS_NITRO_MARKETING = 190] = "SUPER_REACTIONS_NITRO_MARKETING", h[h.NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL = 191] = "NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL", h[h.CLYDE_GUILD_HEADER_NUX = 193] = "CLYDE_GUILD_HEADER_NUX", h[h.CLYDE_CHAT_BAR_NUX = 194] = "CLYDE_CHAT_BAR_NUX", h[h.VOICE_MESSAGE_UPSELL_GUILD = 195] = "VOICE_MESSAGE_UPSELL_GUILD", h[h.ACTIVITY_GDM_CALL_TOOLTIP = 196] = "ACTIVITY_GDM_CALL_TOOLTIP", h[h.ACTIVITY_GDM_ROCKET_SPARKLE = 197] = "ACTIVITY_GDM_ROCKET_SPARKLE", h[h.NITRO_DROP_2023_04_NITRO_TAB_BADGE = 205] = "NITRO_DROP_2023_04_NITRO_TAB_BADGE", h[h.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL = 206] = "GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL", h[h.ACTIVITIES_MOBILE_PIP_FAB_NUX = 208] = "ACTIVITIES_MOBILE_PIP_FAB_NUX", h[h.GUILD_HEADER_SOUNDBOARD_PERMISSION = 209] = "GUILD_HEADER_SOUNDBOARD_PERMISSION", h[h.GUILD_ONBOARDING_UPSELL_HEADER = 210] = "GUILD_ONBOARDING_UPSELL_HEADER", h[h.ACTIVITIES_COACH_MARK_GAME_NIGHT = 211] = "ACTIVITIES_COACH_MARK_GAME_NIGHT", h[h.GUILD_ONBOARDING_UPSELL_NAGBAR = 212] = "GUILD_ONBOARDING_UPSELL_NAGBAR", h[h.GUILD_ONBOARDING_UPSELL_MODAL_V2 = 213] = "GUILD_ONBOARDING_UPSELL_MODAL_V2", h[h.SUPER_REACTIONS_FREE_USER_FIRST_SENT = 214] = "SUPER_REACTIONS_FREE_USER_FIRST_SENT", h[h.SUPER_REACTIONS_TOOLTIP_COACHMARK = 215] = "SUPER_REACTIONS_TOOLTIP_COACHMARK", h[h.SOUNDBOARD_VOLUME_EDUCATION = 216] = "SOUNDBOARD_VOLUME_EDUCATION", h[h.NAGBAR_NOTICE_POMELO = 217] = "NAGBAR_NOTICE_POMELO", h[h.APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR = 218] = "APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR", h[h.APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR = 219] = "APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR", h[h.SUPER_REACTIONS_TAB_SPARKLE = 220] = "SUPER_REACTIONS_TAB_SPARKLE", h[h.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES = 221] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES", h[h.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES = 222] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES", h[h.MJ_NEW_USER_CHAT_BAR = 223] = "MJ_NEW_USER_CHAT_BAR", h[h.CHANNEL_NOTICE_CLYDE_NUX = 224] = "CHANNEL_NOTICE_CLYDE_NUX", h[h.USER_SAFETY_CONSUMER_EDUCATION_REPORTING = 225] = "USER_SAFETY_CONSUMER_EDUCATION_REPORTING", h[h.SUPER_REACTIONS_FIRST_SENT = 227] = "SUPER_REACTIONS_FIRST_SENT", h[h.COMMUNITY_GUILD_SETTINGS_SAFETY = 228] = "COMMUNITY_GUILD_SETTINGS_SAFETY", h[h.FRIEND_FINDER_FIRST_TIME_BADGE = 229] = "FRIEND_FINDER_FIRST_TIME_BADGE", h[h.SHARE_NITRO_BUTTON_SPARKLES = 230] = "SHARE_NITRO_BUTTON_SPARKLES", h[h.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE = 231] = "PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE", h[h.SOUNDBOARD_KEYBIND_TIP = 232] = "SOUNDBOARD_KEYBIND_TIP", h[h.QUEST_2_ENROLLMENT_TOOLTIP = 234] = "QUEST_2_ENROLLMENT_TOOLTIP", h[h.QUEST_2_COMPLETION_TOOLTIP = 235] = "QUEST_2_COMPLETION_TOOLTIP", h[h.QUEST_2_GO_LIVE_BANNER = 236] = "QUEST_2_GO_LIVE_BANNER", h[h.QUEST_2_ENDED_INCOMPLETE = 237] = "QUEST_2_ENDED_INCOMPLETE", h[h.GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES = 238] = "GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES", h[h.MEDIA_CHANNEL_UPSELL = 243] = "MEDIA_CHANNEL_UPSELL", h[h.ADD_FRIENDS_WIDGET = 244] = "ADD_FRIENDS_WIDGET", h[h.YOU_TAB_AVATAR_ONBOARDING = 245] = "YOU_TAB_AVATAR_ONBOARDING", h[h.YOU_TAB_ABOUT_ME_ONBOARDING = 246] = "YOU_TAB_ABOUT_ME_ONBOARDING", h[h.GUILD_HEADER_SUMMARIES_UPSELL = 247] = "GUILD_HEADER_SUMMARIES_UPSELL", h[h.SUPER_REACTIONS_COACHMARK_MOBILE = 250] = "SUPER_REACTIONS_COACHMARK_MOBILE", h[h.SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE = 251] = "SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE", h[h.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL = 252] = "SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL", h[h.EMOJI_PICKER_FAVORITE_EMOJIS_TIP = 253] = "EMOJI_PICKER_FAVORITE_EMOJIS_TIP", h[h.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE = 254] = "SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE", h[h.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS = 255] = "SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS", h[h.FAMILY_CENTER_NEW_BADGE = 256] = "FAMILY_CENTER_NEW_BADGE", h[h.CONSOLE_LOCAL_DETECT_CTA = 257] = "CONSOLE_LOCAL_DETECT_CTA", h[h.REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE = 263] = "REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE", h[h.GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE = 264] = "GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE", h[h.REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE = 265] = "REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE", h[h.GUILD_MEMBER_SAFETY_BANNER_NOTICE = 266] = "GUILD_MEMBER_SAFETY_BANNER_NOTICE", h[h.SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL = 270] = "SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL", h[h.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK = 271] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK", h[h.CUSTOM_CALL_SOUNDS_PICKER_UPSELL = 272] = "CUSTOM_CALL_SOUNDS_PICKER_UPSELL", h[h.CUSTOM_CALL_SOUNDS_SPARKLES = 274] = "CUSTOM_CALL_SOUNDS_SPARKLES", h[h.SOUNDBOARD_MOBILE_FLOATING_CTA = 275] = "SOUNDBOARD_MOBILE_FLOATING_CTA", h[h.SOUNDBOARD_MOBILE_NEW_BADGE = 276] = "SOUNDBOARD_MOBILE_NEW_BADGE", h[h.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2 = 277] = "PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2", h[h.VOICE_PANEL_BAD_CONNECTION_CTA = 278] = "VOICE_PANEL_BAD_CONNECTION_CTA", h[h.PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET = 279] = "PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET", h[h.MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE = 280] = "MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE", h[h.CLIPS_ONBOARDING_GO_LIVE_COACHMARK = 281] = "CLIPS_ONBOARDING_GO_LIVE_COACHMARK", h[h.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK = 282] = "CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK", h[h.CUSTOM_APP_ICONS_COACHMARK = 283] = "CUSTOM_APP_ICONS_COACHMARK", h[h.CUSTOM_APP_ICONS_NEW_BADGE = 284] = "CUSTOM_APP_ICONS_NEW_BADGE", h[h.BROADCASTING_BROADCASTER_TOOLTIP = 285] = "BROADCASTING_BROADCASTER_TOOLTIP", h[h.BROADCASTING_VIEWER_TOOLTIP = 286] = "BROADCASTING_VIEWER_TOOLTIP", h[h.SERVER_SHOP_UPSELL = 288] = "SERVER_SHOP_UPSELL", h[h.LAUNCH_PAD_PULL_TAB_NUX = 289] = "LAUNCH_PAD_PULL_TAB_NUX", h[h.CLIPS_SETTINGS_BETA_TAG = 290] = "CLIPS_SETTINGS_BETA_TAG", h[h.WHATS_NEW_AVATAR_DECOS_FLIP = 292] = "WHATS_NEW_AVATAR_DECOS_FLIP", h[h.WHATS_NEW_PROFILE_EFFECTS_FLIP = 293] = "WHATS_NEW_PROFILE_EFFECTS_FLIP", h[h.MEMBERS_LAUNCH_UPSELL = 294] = "MEMBERS_LAUNCH_UPSELL", h[h.SERVER_SHOP_PHANTOM_PREVIEW = 295] = "SERVER_SHOP_PHANTOM_PREVIEW", h[h.RECURRING_CONTACT_SYNC_PROMPT = 297] = "RECURRING_CONTACT_SYNC_PROMPT", h[h.INVENTORY_TRY_PACKS_MODAL = 302] = "INVENTORY_TRY_PACKS_MODAL", h[h.DEPRECATE_WIN32_MESSAGE = 305] = "DEPRECATE_WIN32_MESSAGE", h[h.DEKSTOP_CUSTOM_APP_ICON_COACHMARK = 306] = "DEKSTOP_CUSTOM_APP_ICON_COACHMARK", h[h.DEKSTOP_CUSTOM_APP_ICON_BADGE = 307] = "DEKSTOP_CUSTOM_APP_ICON_BADGE", h[h.WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE = 309] = "WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE", h[h.WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE = 310] = "WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE", h[h.CLYDE_AI_PERSONALITIES_NUX_MODAL = 312] = "CLYDE_AI_PERSONALITIES_NUX_MODAL", h[h.NUX_GUILD_CHANNEL_EXPLAINER = 313] = "NUX_GUILD_CHANNEL_EXPLAINER", h[h.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP = 316] = "SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP", h[h.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE = 317] = "SUPER_REACTION_TOGGLE_EDUCATION_MOBILE", h[h.SEEN_LAUNCH_WELCOME_OR_REDESIGN = 325] = "SEEN_LAUNCH_WELCOME_OR_REDESIGN", h[h.SEEN_OLD_DESIGN = 326] = "SEEN_OLD_DESIGN", h[h.SEASONAL_GIFTING_COACHMARK_2023 = 328] = "SEASONAL_GIFTING_COACHMARK_2023", h[h.SHOP_FOR_ALL_USER_POPOUT_UPSELL = 329] = "SHOP_FOR_ALL_USER_POPOUT_UPSELL", h[h.COLLECTIBLES_GIFTING_COACHMARK = 334] = "COLLECTIBLES_GIFTING_COACHMARK", h[h.SEEN_LAUNCH_WELCOME = 335] = "SEEN_LAUNCH_WELCOME", h[h.FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK = 336] = "FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK", h[h.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK = 337] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK", h[h.FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS = 338] = "FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS", h[h.OVERLAY_KEYBIND_NOTIFICATION = 340] = "OVERLAY_KEYBIND_NOTIFICATION", h[h.CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX = 343] = "CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX", h[h.UU_MIGRATION_NOTICE = 345] = "UU_MIGRATION_NOTICE", h[h.HANG_STATUS_NEW_BADGE = 346] = "HANG_STATUS_NEW_BADGE", h[h.VOICE_CALL_BG_PICKER_TOOLTIP = 347] = "VOICE_CALL_BG_PICKER_TOOLTIP", h[h.VOICE_CALL_BG_PICKER_NEW_BADGE = 348] = "VOICE_CALL_BG_PICKER_NEW_BADGE", h[h.SWIPE_TO_REPLY_COACHMARK = 349] = "SWIPE_TO_REPLY_COACHMARK", h[h.MOBILE_ACCESSIBILITY_COLOR_SETTINGS = 350] = "MOBILE_ACCESSIBILITY_COLOR_SETTINGS", h[h.POLLS_CHAT_INPUT_COACHMARK = 354] = "POLLS_CHAT_INPUT_COACHMARK", h[h.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK = 355] = "PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK", h[h.LOOTBOXES_ENTRYPOINT = 358] = "LOOTBOXES_ENTRYPOINT", h[h.TENURE_REWARD_PENDING = 360] = "TENURE_REWARD_PENDING", h[h.TENURE_REWARD_REDEEMABLE = 361] = "TENURE_REWARD_REDEEMABLE", h[h.TENURE_REWARD_REDEEMABLE_CONFETTI = 363] = "TENURE_REWARD_REDEEMABLE_CONFETTI", h[h.GAME_ONE_USER_SIGNUPS = 364] = "GAME_ONE_USER_SIGNUPS", h[h.COLLECTIBLES_SHOP_SHY_COACHTIP = 365] = "COLLECTIBLES_SHOP_SHY_COACHTIP", h[h.APP_LAUNCHER_ONBOARDING_BOTS_BANNER = 366] = "APP_LAUNCHER_ONBOARDING_BOTS_BANNER", h[h.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER = 367] = "APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER", h[h.APP_LAUNCHER_ONBOARDING_APPS_BANNER = 368] = "APP_LAUNCHER_ONBOARDING_APPS_BANNER", h[h.COLLECTIBLES_MOBILE_SHOP_MARKETING = 369] = "COLLECTIBLES_MOBILE_SHOP_MARKETING", h[h.COLLECTIBLES_MOBILE_SHOP_HALF_SHEET = 370] = "COLLECTIBLES_MOBILE_SHOP_HALF_SHEET", h[h.GENSHIN_USER_SIGNUPS = 371] = "GENSHIN_USER_SIGNUPS", h[h.ACTIVITIES_CHAT_BUTTON_NUX_V2 = 372] = "ACTIVITIES_CHAT_BUTTON_NUX_V2", h[h.ACTIVITIES_CHAT_MENU_NEW_BADGE = 373] = "ACTIVITIES_CHAT_MENU_NEW_BADGE", h[h.PREMIUM_2024_APRIL_MARKETING_MODAL = 374] = "PREMIUM_2024_APRIL_MARKETING_MODAL", h[h.PREMIUM_2024_APRIL_MARKETING_BADGE = 375] = "PREMIUM_2024_APRIL_MARKETING_BADGE", h[h.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK = 376] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK", h[h.REFERRAL_PROGRAM_PROGRESS_BAR_TOGGLE = 377] = "REFERRAL_PROGRAM_PROGRESS_BAR_TOGGLE", h[h.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE = 378] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE", h[h.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE = 379] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE", h[h.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE = 380] = "REFERRAL_PROGRAM_PREMIUM_TAB_BADGE", h[h.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP = 381] = "PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP", h[h.COLLECTIBLES_SHOP_LOFI_VIBES_COACHTIP = 382] = "COLLECTIBLES_SHOP_LOFI_VIBES_COACHTIP", h[h.COLLECTIBLES_SHOP_GALAXY_COACHTIP = 383] = "COLLECTIBLES_SHOP_GALAXY_COACHTIP", h[h.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP = 384] = "CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP", h[h.CHANNEL_LIST_CLAN_ADMIN_UPSELL = 385] = "CHANNEL_LIST_CLAN_ADMIN_UPSELL", (A = l || (l = {}))[A.UNSET_EXPLICIT_CONTENT_REDACTION = 0] = "UNSET_EXPLICIT_CONTENT_REDACTION", A[A.SHOW = 1] = "SHOW", A[A.BLUR = 2] = "BLUR", A[A.BLOCK = 3] = "BLOCK", (m = u || (u = {}))[m.DEFAULT_UNSET = 0] = "DEFAULT_UNSET", m[m.DISABLED = 1] = "DISABLED", m[m.NON_FRIENDS = 2] = "NON_FRIENDS", m[m.FRIENDS_AND_NON_FRIENDS = 3] = "FRIENDS_AND_NON_FRIENDS", (N = d || (d = {}))[N.OFF = 0] = "OFF", N[N.ON_FOR_LARGE_GUILDS = 1] = "ON_FOR_LARGE_GUILDS", (p = _ || (_ = {}))[p.UNSET = 0] = "UNSET", p[p.DARK = 1] = "DARK", p[p.LIGHT = 2] = "LIGHT", p[p.DARKER = 3] = "DARKER", p[p.MIDNIGHT = 4] = "MIDNIGHT", (O = c || (c = {}))[O.MINT_APPLE = 0] = "MINT_APPLE", O[O.CITRUS_SHERBERT = 1] = "CITRUS_SHERBERT", O[O.RETRO_RAINCLOUD = 2] = "RETRO_RAINCLOUD", O[O.HANAMI = 3] = "HANAMI", O[O.SUNRISE = 4] = "SUNRISE", O[O.COTTON_CANDY = 5] = "COTTON_CANDY", O[O.LOFI_VIBES = 6] = "LOFI_VIBES", O[O.DESERT_KHAKI = 7] = "DESERT_KHAKI", O[O.SUNSET = 8] = "SUNSET", O[O.CHROMA_GLOW = 9] = "CHROMA_GLOW", O[O.FOREST = 10] = "FOREST", O[O.CRIMSON_MOON = 11] = "CRIMSON_MOON", O[O.MIDNIGHT_BLURPLE = 12] = "MIDNIGHT_BLURPLE", O[O.MARS = 13] = "MARS", O[O.DUSK = 14] = "DUSK", O[O.UNDER_THE_SEA = 15] = "UNDER_THE_SEA", O[O.EASTER_EGG = 16] = "EASTER_EGG", O[O.RETRO_STORM = 17] = "RETRO_STORM", O[O.NEON_NIGHTS = 18] = "NEON_NIGHTS", O[O.SEPIA = 19] = "SEPIA", O[O.STRAWBERRY_LEMONADE = 20] = "STRAWBERRY_LEMONADE", O[O.AURORA = 21] = "AURORA", (R = E || (E = {}))[R.UNSET_FAVORITE_CHANNEL_TYPE = 0] = "UNSET_FAVORITE_CHANNEL_TYPE", R[R.REFERENCE_ORIGINAL = 1] = "REFERENCE_ORIGINAL", R[R.CATEGORY = 2] = "CATEGORY";
+            (I = i || (i = {}))[I.UNSPECIFIED = 0] = "UNSPECIFIED", I[I.MENTIONS = 1] = "MENTIONS", I[I.UNREADS = 2] = "UNREADS", I[I.TODOS = 3] = "TODOS", I[I.FOR_YOU = 4] = "FOR_YOU", I[I.GAME_INVITES = 5] = "GAME_INVITES", (T = r || (r = {}))[T.NO_PROGRESS = 0] = "NO_PROGRESS", T[T.JOIN_GUILD = 1] = "JOIN_GUILD", T[T.INVITE_USER = 2] = "INVITE_USER", T[T.CONTACT_SYNC = 4] = "CONTACT_SYNC", (f = a || (a = {}))[f.NO_GUILD_ONBOARDING = 0] = "NO_GUILD_ONBOARDING", f[f.GUILD_NOTICE_SHOWN = 1] = "GUILD_NOTICE_SHOWN", f[f.GUILD_NOTICE_CLEARED = 2] = "GUILD_NOTICE_CLEARED", (S = s || (s = {}))[S.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = 0] = "DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE", S[S.CLYDE_GUILD_NOTICE_NUX = 1] = "CLYDE_GUILD_NOTICE_NUX", S[S.SUMMARIES_NOTICE = 2] = "SUMMARIES_NOTICE", S[S.SUMMARIES_ENABLED_NOTICE = 3] = "SUMMARIES_ENABLED_NOTICE", S[S.ADOPT_CLAN_IDENTITY_NOTICE = 4] = "ADOPT_CLAN_IDENTITY_NOTICE", (h = o || (o = {}))[h.HUB_WAITLIST_UPSELL = 0] = "HUB_WAITLIST_UPSELL", h[h.APPLICATION_COMMAND_TOOLTIP = 1] = "APPLICATION_COMMAND_TOOLTIP", h[h.HUB_EVENT_HEADER_UPSELL = 2] = "HUB_EVENT_HEADER_UPSELL", h[h.CHANNELINFO_CHANNELBANNER_NOTICE = 3] = "CHANNELINFO_CHANNELBANNER_NOTICE", h[h.ACCOUNT_MULTIACCOUNT_TOOLTIP = 4] = "ACCOUNT_MULTIACCOUNT_TOOLTIP", h[h.SEASONALGIFTING_CHANNELBUTTON_POPUP = 5] = "SEASONALGIFTING_CHANNELBUTTON_POPUP", h[h.CHANNEL_NOTICE_INVITE = 6] = "CHANNEL_NOTICE_INVITE", h[h.CHANNEL_NOTICE_HUBLINK = 7] = "CHANNEL_NOTICE_HUBLINK", h[h.CHANNEL_NOTICE_QUICKSWITCHER = 8] = "CHANNEL_NOTICE_QUICKSWITCHER", h[h.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION = 9] = "CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION", h[h.CHANNEL_NOTICE_GUILD_BANNER = 11] = "CHANNEL_NOTICE_GUILD_BANNER", h[h.GUILD_HEADER_EVENT_UPSELL = 12] = "GUILD_HEADER_EVENT_UPSELL", h[h.GUILD_HEADER_PREMIUM_GUILD_PROGRESS = 14] = "GUILD_HEADER_PREMIUM_GUILD_PROGRESS", h[h.GUILD_HEADER_ANIMATED_GUILD_BANNER = 15] = "GUILD_HEADER_ANIMATED_GUILD_BANNER", h[h.NAGBAR_NOTICE_DOWNLOAD = 16] = "NAGBAR_NOTICE_DOWNLOAD", h[h.NAGBAR_NOTICE_CONNECT_SPOTIFY = 17] = "NAGBAR_NOTICE_CONNECT_SPOTIFY", h[h.NAGBAR_NOTICE_CONNECT_PLAYSTATION = 18] = "NAGBAR_NOTICE_CONNECT_PLAYSTATION", h[h.NAGBAR_NOTICE_MFA_SMS_BACKUP = 19] = "NAGBAR_NOTICE_MFA_SMS_BACKUP", h[h.ACTIVITIES_SUNSET_COACH_MARK = 20] = "ACTIVITIES_SUNSET_COACH_MARK", h[h.NAGBAR_NOTICE_PREMIUM_PROMO = 21] = "NAGBAR_NOTICE_PREMIUM_PROMO", h[h.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING = 22] = "NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING", h[h.NAGBAR_NOTICE_PREMIUM_REACTIVATE = 23] = "NAGBAR_NOTICE_PREMIUM_REACTIVATE", h[h.PREMIUM_5TH_ANNIVERSARY_MODAL = 24] = "PREMIUM_5TH_ANNIVERSARY_MODAL", h[h.GUILD_JOIN_FEEDBACK_MODAL = 25] = "GUILD_JOIN_FEEDBACK_MODAL", h[h.VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP = 26] = "VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP", h[h.ACTIVITIES_EARLY_USER_COACH_MARK = 27] = "ACTIVITIES_EARLY_USER_COACH_MARK", h[h.GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP = 28] = "GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP", h[h.ACTIVITIES_TUTORIAL_COACH_MARK = 29] = "ACTIVITIES_TUTORIAL_COACH_MARK", h[h.GUILD_HEADER_INVITE_SPLASH = 31] = "GUILD_HEADER_INVITE_SPLASH", h[h.NAGBAR_NOTICE_LOCALIZED_PRICING = 33] = "NAGBAR_NOTICE_LOCALIZED_PRICING", h[h.SOUNDBOARD_EDUCATION = 35] = "SOUNDBOARD_EDUCATION", h[h.GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK = 36] = "GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK", h[h.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL = 37] = "GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL", h[h.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK = 38] = "CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK", h[h.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL = 39] = "GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL", h[h.GUILD_INSIGHTS_ACCESS_RATE_NEW = 40] = "GUILD_INSIGHTS_ACCESS_RATE_NEW", h[h.NOW_PLAYING_CONSENT_CARD = 41] = "NOW_PLAYING_CONSENT_CARD", h[h.GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP = 42] = "GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP", h[h.FORUM_CHANNEL_UPSELL_MODAL = 44] = "FORUM_CHANNEL_UPSELL_MODAL", h[h.POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP = 46] = "POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP", h[h.MWEB_APP_DOWNLOAD_HALFSHEET = 47] = "MWEB_APP_DOWNLOAD_HALFSHEET", h[h.MWEB_APP_DOWNLOAD_NAGBAR_THEMED = 48] = "MWEB_APP_DOWNLOAD_NAGBAR_THEMED", h[h.MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE = 49] = "MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE", h[h.GUILD_FEED_NUX_CARD = 50] = "GUILD_FEED_NUX_CARD", h[h.GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP = 52] = "GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP", h[h.ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2 = 53] = "ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2", h[h.ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES = 55] = "ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES", h[h.GUILD_DELETE_FEEDBACK = 56] = "GUILD_DELETE_FEEDBACK", h[h.GUILD_LEAVE_FEEDBACK = 57] = "GUILD_LEAVE_FEEDBACK", h[h.AUTH_SESSIONS_NEW = 63] = "AUTH_SESSIONS_NEW", h[h.DONUT_MOBILE_NUX = 65] = "DONUT_MOBILE_NUX", h[h.GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL = 66] = "GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL", h[h.FORUM_CHANNEL_HELPER_CARD = 67] = "FORUM_CHANNEL_HELPER_CARD", h[h.PASSPORT_USER_SETTINGS = 70] = "PASSPORT_USER_SETTINGS", h[h.SUMMER_BOGO_ANNOUNCEMENT = 71] = "SUMMER_BOGO_ANNOUNCEMENT", h[h.COMMANDS_MIGRATION_UPSELL_MODAL = 72] = "COMMANDS_MIGRATION_UPSELL_MODAL", h[h.FILE_LIMIT_UPLOAD_COACH_MARK = 73] = "FILE_LIMIT_UPLOAD_COACH_MARK", h[h.DONUT_DESKTOP_NUX = 77] = "DONUT_DESKTOP_NUX", h[h.GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL = 79] = "GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL", h[h.PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST = 80] = "PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST", h[h.STAGE_RAISED_HAND_MOVED = 81] = "STAGE_RAISED_HAND_MOVED", h[h.XBOX_ONE_WAY_RECONNECT = 82] = "XBOX_ONE_WAY_RECONNECT", h[h.XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT = 84] = "XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT", h[h.HUB_BACK_TO_SCHOOL_UPSELL = 85] = "HUB_BACK_TO_SCHOOL_UPSELL", h[h.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP = 86] = "STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP", h[h.ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX = 89] = "ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX", h[h.PROFILE_THEMES_SETTINGS_VIEWED_V2 = 92] = "PROFILE_THEMES_SETTINGS_VIEWED_V2", h[h.GUILD_HEADER_ACTIVE_THREADS_NOTICE = 93] = "GUILD_HEADER_ACTIVE_THREADS_NOTICE", h[h.CHANNEL_LIST_OPT_IN_NUX = 94] = "CHANNEL_LIST_OPT_IN_NUX", h[h.ACTIVITIES_MOBILE_NUX = 95] = "ACTIVITIES_MOBILE_NUX", h[h.PROFILE_THEMES_NEW_BADGE = 96] = "PROFILE_THEMES_NEW_BADGE", h[h.GUILD_AUTOMOD_DEFAULT_ON_UPSELL = 97] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL", h[h.CHANNEL_BROWSER_NUX = 98] = "CHANNEL_BROWSER_NUX", h[h.RNA_CHANGELOG_HC_NOTICE = 99] = "RNA_CHANGELOG_HC_NOTICE", h[h.MESSAGE_REQUEST_SETTINGS_COACH_MARK = 100] = "MESSAGE_REQUEST_SETTINGS_COACH_MARK", h[h.GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2 = 101] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2", h[h.GUILD_AUTOMOD_REGEX_UPSELL = 102] = "GUILD_AUTOMOD_REGEX_UPSELL", h[h.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP = 103] = "VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP", h[h.CONNECTIONS_NUX = 108] = "CONNECTIONS_NUX", h[h.XBOX_VOICE_SURVEY_NAGBAR = 110] = "XBOX_VOICE_SURVEY_NAGBAR", h[h.PS_ONE_WAY_RECONNECT = 112] = "PS_ONE_WAY_RECONNECT", h[h.HALLOWEEN_2022_ACTIVITIES_COACH_MARK = 115] = "HALLOWEEN_2022_ACTIVITIES_COACH_MARK", h[h.NITRODUCTION_STEP_PROFILE_CUSTOMIZATION = 116] = "NITRODUCTION_STEP_PROFILE_CUSTOMIZATION", h[h.NITRODUCTION_STEP_BOOSTING = 117] = "NITRODUCTION_STEP_BOOSTING", h[h.NITRODUCTION_STEP_CUSTOM_EMOJI = 118] = "NITRODUCTION_STEP_CUSTOM_EMOJI", h[h.NEW_CRUNCHYROLL_CONNECTION = 119] = "NEW_CRUNCHYROLL_CONNECTION", h[h.APP_DIRECTORY_UPSELL_MODAL = 121] = "APP_DIRECTORY_UPSELL_MODAL", h[h.BASH_OUT_COACH_MARK = 123] = "BASH_OUT_COACH_MARK", h[h.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL = 124] = "GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL", h[h.COMMUNITY_ONBOARDING_NEW_BADGE = 125] = "COMMUNITY_ONBOARDING_NEW_BADGE", h[h.CHURRO_LINK_UPSELL = 126] = "CHURRO_LINK_UPSELL", h[h.VERIFIED_ROLES_COACH_MARK = 127] = "VERIFIED_ROLES_COACH_MARK", h[h.PROFILE_THEMES_ACCESSIBILITY_TOOLTIP = 129] = "PROFILE_THEMES_ACCESSIBILITY_TOOLTIP", h[h.BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL = 130] = "BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL", h[h.USER_SAFETY_SAFE_DIRECT_MESSAGING = 131] = "USER_SAFETY_SAFE_DIRECT_MESSAGING", h[h.GG_ANNOUNCEMENT = 132] = "GG_ANNOUNCEMENT", h[h.CHANNEL_BROWSER_NEW_BADGE_NUX = 133] = "CHANNEL_BROWSER_NEW_BADGE_NUX", h[h.CREATOR_PROMO_PAGE_COACH_MARK = 134] = "CREATOR_PROMO_PAGE_COACH_MARK", h[h.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL = 136] = "CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL", h[h.GUILD_ONBOARDING_UPSELL_MODAL = 137] = "GUILD_ONBOARDING_UPSELL_MODAL", h[h.NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE = 138] = "NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE", h[h.DROPS_GO_LIVE_BANNER_NOTICE_HALO = 139] = "DROPS_GO_LIVE_BANNER_NOTICE_HALO", h[h.DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO = 140] = "DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO", h[h.DROPS_QUEST_COMPLETION_TOOLTIP_HALO = 141] = "DROPS_QUEST_COMPLETION_TOOLTIP_HALO", h[h.SEASONAL_GIFTING_COACHMARK_2022 = 146] = "SEASONAL_GIFTING_COACHMARK_2022", h[h.NAGBAR_BOUNCED_EMAIL_NOTICE = 147] = "NAGBAR_BOUNCED_EMAIL_NOTICE", h[h.GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE = 151] = "GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE", h[h.CONSOLE_PTT_DISABLE_ALERT = 152] = "CONSOLE_PTT_DISABLE_ALERT", h[h.ACTIVITIES_MINI_SHELF_SPARKLES = 153] = "ACTIVITIES_MINI_SHELF_SPARKLES", h[h.DROPS_ENDED_INCOMPLETE_HALO = 154] = "DROPS_ENDED_INCOMPLETE_HALO", h[h.GDM_INVITE_REMINDER = 157] = "GDM_INVITE_REMINDER", h[h.USER_SAFETY_CONSUMER_EDUCATION_BLOCK = 161] = "USER_SAFETY_CONSUMER_EDUCATION_BLOCK", h[h.USER_SAFETY_CONSUMER_EDUCATION_MUTE = 162] = "USER_SAFETY_CONSUMER_EDUCATION_MUTE", h[h.LINKED_ROLE_ADMIN_GUILD = 163] = "LINKED_ROLE_ADMIN_GUILD", h[h.NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION = 164] = "NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION", h[h.BURST_REACTION_BUTTON_SPARKLE = 165] = "BURST_REACTION_BUTTON_SPARKLE", h[h.NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING = 166] = "NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING", h[h.VC_TILE_ACTIVITIES_ENTRY_POINT = 167] = "VC_TILE_ACTIVITIES_ENTRY_POINT", h[h.BURST_REACTION_COACHMARK = 169] = "BURST_REACTION_COACHMARK", h[h.BURST_REACTIONS_REMOVE_MODAL = 170] = "BURST_REACTIONS_REMOVE_MODAL", h[h.BURST_REACTION_NITRO_TOOLTIP = 171] = "BURST_REACTION_NITRO_TOOLTIP", h[h.CLIENT_THEMES_SETTINGS_BADGE = 173] = "CLIENT_THEMES_SETTINGS_BADGE", h[h.CLIENT_THEMES_COACHMARK = 174] = "CLIENT_THEMES_COACHMARK", h[h.CLIENT_THEMES_SPARKLE_PREVIEW = 175] = "CLIENT_THEMES_SPARKLE_PREVIEW", h[h.STAGE_V2_UPSELL = 176] = "STAGE_V2_UPSELL", h[h.QUEST_1_ENROLLMENT_TOOLTIP = 177] = "QUEST_1_ENROLLMENT_TOOLTIP", h[h.QUEST_1_COMPLETION_TOOLTIP = 178] = "QUEST_1_COMPLETION_TOOLTIP", h[h.QUEST_1_GO_LIVE_BANNER = 179] = "QUEST_1_GO_LIVE_BANNER", h[h.QUEST_1_ENDED_INCOMPLETE = 180] = "QUEST_1_ENDED_INCOMPLETE", h[h.PREMIUM_TUTORIAL_EXPERIENCE = 181] = "PREMIUM_TUTORIAL_EXPERIENCE", h[h.APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL = 182] = "APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL", h[h.PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP = 183] = "PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP", h[h.PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP = 184] = "PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP", h[h.PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP = 185] = "PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP", h[h.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP = 186] = "PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP", h[h.TABS_V2_ANNOUNCEMENT_SHEET = 188] = "TABS_V2_ANNOUNCEMENT_SHEET", h[h.VOICE_MESSAGE_UPSELL_DM = 189] = "VOICE_MESSAGE_UPSELL_DM", h[h.SUPER_REACTIONS_NITRO_MARKETING = 190] = "SUPER_REACTIONS_NITRO_MARKETING", h[h.NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL = 191] = "NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL", h[h.CLYDE_GUILD_HEADER_NUX = 193] = "CLYDE_GUILD_HEADER_NUX", h[h.CLYDE_CHAT_BAR_NUX = 194] = "CLYDE_CHAT_BAR_NUX", h[h.VOICE_MESSAGE_UPSELL_GUILD = 195] = "VOICE_MESSAGE_UPSELL_GUILD", h[h.ACTIVITY_GDM_CALL_TOOLTIP = 196] = "ACTIVITY_GDM_CALL_TOOLTIP", h[h.ACTIVITY_GDM_ROCKET_SPARKLE = 197] = "ACTIVITY_GDM_ROCKET_SPARKLE", h[h.NITRO_DROP_2023_04_NITRO_TAB_BADGE = 205] = "NITRO_DROP_2023_04_NITRO_TAB_BADGE", h[h.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL = 206] = "GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL", h[h.ACTIVITIES_MOBILE_PIP_FAB_NUX = 208] = "ACTIVITIES_MOBILE_PIP_FAB_NUX", h[h.GUILD_HEADER_SOUNDBOARD_PERMISSION = 209] = "GUILD_HEADER_SOUNDBOARD_PERMISSION", h[h.GUILD_ONBOARDING_UPSELL_HEADER = 210] = "GUILD_ONBOARDING_UPSELL_HEADER", h[h.ACTIVITIES_COACH_MARK_GAME_NIGHT = 211] = "ACTIVITIES_COACH_MARK_GAME_NIGHT", h[h.GUILD_ONBOARDING_UPSELL_NAGBAR = 212] = "GUILD_ONBOARDING_UPSELL_NAGBAR", h[h.GUILD_ONBOARDING_UPSELL_MODAL_V2 = 213] = "GUILD_ONBOARDING_UPSELL_MODAL_V2", h[h.SUPER_REACTIONS_FREE_USER_FIRST_SENT = 214] = "SUPER_REACTIONS_FREE_USER_FIRST_SENT", h[h.SUPER_REACTIONS_TOOLTIP_COACHMARK = 215] = "SUPER_REACTIONS_TOOLTIP_COACHMARK", h[h.SOUNDBOARD_VOLUME_EDUCATION = 216] = "SOUNDBOARD_VOLUME_EDUCATION", h[h.NAGBAR_NOTICE_POMELO = 217] = "NAGBAR_NOTICE_POMELO", h[h.APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR = 218] = "APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR", h[h.APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR = 219] = "APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR", h[h.SUPER_REACTIONS_TAB_SPARKLE = 220] = "SUPER_REACTIONS_TAB_SPARKLE", h[h.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES = 221] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES", h[h.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES = 222] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES", h[h.MJ_NEW_USER_CHAT_BAR = 223] = "MJ_NEW_USER_CHAT_BAR", h[h.CHANNEL_NOTICE_CLYDE_NUX = 224] = "CHANNEL_NOTICE_CLYDE_NUX", h[h.USER_SAFETY_CONSUMER_EDUCATION_REPORTING = 225] = "USER_SAFETY_CONSUMER_EDUCATION_REPORTING", h[h.SUPER_REACTIONS_FIRST_SENT = 227] = "SUPER_REACTIONS_FIRST_SENT", h[h.COMMUNITY_GUILD_SETTINGS_SAFETY = 228] = "COMMUNITY_GUILD_SETTINGS_SAFETY", h[h.FRIEND_FINDER_FIRST_TIME_BADGE = 229] = "FRIEND_FINDER_FIRST_TIME_BADGE", h[h.SHARE_NITRO_BUTTON_SPARKLES = 230] = "SHARE_NITRO_BUTTON_SPARKLES", h[h.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE = 231] = "PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE", h[h.SOUNDBOARD_KEYBIND_TIP = 232] = "SOUNDBOARD_KEYBIND_TIP", h[h.QUEST_2_ENROLLMENT_TOOLTIP = 234] = "QUEST_2_ENROLLMENT_TOOLTIP", h[h.QUEST_2_COMPLETION_TOOLTIP = 235] = "QUEST_2_COMPLETION_TOOLTIP", h[h.QUEST_2_GO_LIVE_BANNER = 236] = "QUEST_2_GO_LIVE_BANNER", h[h.QUEST_2_ENDED_INCOMPLETE = 237] = "QUEST_2_ENDED_INCOMPLETE", h[h.GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES = 238] = "GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES", h[h.MEDIA_CHANNEL_UPSELL = 243] = "MEDIA_CHANNEL_UPSELL", h[h.ADD_FRIENDS_WIDGET = 244] = "ADD_FRIENDS_WIDGET", h[h.YOU_TAB_AVATAR_ONBOARDING = 245] = "YOU_TAB_AVATAR_ONBOARDING", h[h.YOU_TAB_ABOUT_ME_ONBOARDING = 246] = "YOU_TAB_ABOUT_ME_ONBOARDING", h[h.GUILD_HEADER_SUMMARIES_UPSELL = 247] = "GUILD_HEADER_SUMMARIES_UPSELL", h[h.SUPER_REACTIONS_COACHMARK_MOBILE = 250] = "SUPER_REACTIONS_COACHMARK_MOBILE", h[h.SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE = 251] = "SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE", h[h.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL = 252] = "SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL", h[h.EMOJI_PICKER_FAVORITE_EMOJIS_TIP = 253] = "EMOJI_PICKER_FAVORITE_EMOJIS_TIP", h[h.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE = 254] = "SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE", h[h.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS = 255] = "SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS", h[h.FAMILY_CENTER_NEW_BADGE = 256] = "FAMILY_CENTER_NEW_BADGE", h[h.CONSOLE_LOCAL_DETECT_CTA = 257] = "CONSOLE_LOCAL_DETECT_CTA", h[h.REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE = 263] = "REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE", h[h.GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE = 264] = "GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE", h[h.REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE = 265] = "REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE", h[h.GUILD_MEMBER_SAFETY_BANNER_NOTICE = 266] = "GUILD_MEMBER_SAFETY_BANNER_NOTICE", h[h.SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL = 270] = "SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL", h[h.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK = 271] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK", h[h.CUSTOM_CALL_SOUNDS_PICKER_UPSELL = 272] = "CUSTOM_CALL_SOUNDS_PICKER_UPSELL", h[h.CUSTOM_CALL_SOUNDS_SPARKLES = 274] = "CUSTOM_CALL_SOUNDS_SPARKLES", h[h.SOUNDBOARD_MOBILE_FLOATING_CTA = 275] = "SOUNDBOARD_MOBILE_FLOATING_CTA", h[h.SOUNDBOARD_MOBILE_NEW_BADGE = 276] = "SOUNDBOARD_MOBILE_NEW_BADGE", h[h.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2 = 277] = "PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2", h[h.VOICE_PANEL_BAD_CONNECTION_CTA = 278] = "VOICE_PANEL_BAD_CONNECTION_CTA", h[h.PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET = 279] = "PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET", h[h.MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE = 280] = "MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE", h[h.CLIPS_ONBOARDING_GO_LIVE_COACHMARK = 281] = "CLIPS_ONBOARDING_GO_LIVE_COACHMARK", h[h.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK = 282] = "CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK", h[h.CUSTOM_APP_ICONS_COACHMARK = 283] = "CUSTOM_APP_ICONS_COACHMARK", h[h.CUSTOM_APP_ICONS_NEW_BADGE = 284] = "CUSTOM_APP_ICONS_NEW_BADGE", h[h.BROADCASTING_BROADCASTER_TOOLTIP = 285] = "BROADCASTING_BROADCASTER_TOOLTIP", h[h.BROADCASTING_VIEWER_TOOLTIP = 286] = "BROADCASTING_VIEWER_TOOLTIP", h[h.SERVER_SHOP_UPSELL = 288] = "SERVER_SHOP_UPSELL", h[h.LAUNCH_PAD_PULL_TAB_NUX = 289] = "LAUNCH_PAD_PULL_TAB_NUX", h[h.CLIPS_SETTINGS_BETA_TAG = 290] = "CLIPS_SETTINGS_BETA_TAG", h[h.WHATS_NEW_AVATAR_DECOS_FLIP = 292] = "WHATS_NEW_AVATAR_DECOS_FLIP", h[h.WHATS_NEW_PROFILE_EFFECTS_FLIP = 293] = "WHATS_NEW_PROFILE_EFFECTS_FLIP", h[h.MEMBERS_LAUNCH_UPSELL = 294] = "MEMBERS_LAUNCH_UPSELL", h[h.SERVER_SHOP_PHANTOM_PREVIEW = 295] = "SERVER_SHOP_PHANTOM_PREVIEW", h[h.RECURRING_CONTACT_SYNC_PROMPT = 297] = "RECURRING_CONTACT_SYNC_PROMPT", h[h.INVENTORY_TRY_PACKS_MODAL = 302] = "INVENTORY_TRY_PACKS_MODAL", h[h.DEPRECATE_WIN32_MESSAGE = 305] = "DEPRECATE_WIN32_MESSAGE", h[h.DEKSTOP_CUSTOM_APP_ICON_COACHMARK = 306] = "DEKSTOP_CUSTOM_APP_ICON_COACHMARK", h[h.DEKSTOP_CUSTOM_APP_ICON_BADGE = 307] = "DEKSTOP_CUSTOM_APP_ICON_BADGE", h[h.WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE = 309] = "WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE", h[h.WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE = 310] = "WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE", h[h.CLYDE_AI_PERSONALITIES_NUX_MODAL = 312] = "CLYDE_AI_PERSONALITIES_NUX_MODAL", h[h.NUX_GUILD_CHANNEL_EXPLAINER = 313] = "NUX_GUILD_CHANNEL_EXPLAINER", h[h.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP = 316] = "SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP", h[h.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE = 317] = "SUPER_REACTION_TOGGLE_EDUCATION_MOBILE", h[h.SEEN_LAUNCH_WELCOME_OR_REDESIGN = 325] = "SEEN_LAUNCH_WELCOME_OR_REDESIGN", h[h.SEEN_OLD_DESIGN = 326] = "SEEN_OLD_DESIGN", h[h.SEASONAL_GIFTING_COACHMARK_2023 = 328] = "SEASONAL_GIFTING_COACHMARK_2023", h[h.SHOP_FOR_ALL_USER_POPOUT_UPSELL = 329] = "SHOP_FOR_ALL_USER_POPOUT_UPSELL", h[h.COLLECTIBLES_GIFTING_COACHMARK = 334] = "COLLECTIBLES_GIFTING_COACHMARK", h[h.SEEN_LAUNCH_WELCOME = 335] = "SEEN_LAUNCH_WELCOME", h[h.FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK = 336] = "FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK", h[h.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK = 337] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK", h[h.FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS = 338] = "FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS", h[h.OVERLAY_KEYBIND_NOTIFICATION = 340] = "OVERLAY_KEYBIND_NOTIFICATION", h[h.CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX = 343] = "CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX", h[h.UU_MIGRATION_NOTICE = 345] = "UU_MIGRATION_NOTICE", h[h.HANG_STATUS_NEW_BADGE = 346] = "HANG_STATUS_NEW_BADGE", h[h.VOICE_CALL_BG_PICKER_TOOLTIP = 347] = "VOICE_CALL_BG_PICKER_TOOLTIP", h[h.VOICE_CALL_BG_PICKER_NEW_BADGE = 348] = "VOICE_CALL_BG_PICKER_NEW_BADGE", h[h.SWIPE_TO_REPLY_COACHMARK = 349] = "SWIPE_TO_REPLY_COACHMARK", h[h.MOBILE_ACCESSIBILITY_COLOR_SETTINGS = 350] = "MOBILE_ACCESSIBILITY_COLOR_SETTINGS", h[h.POLLS_CHAT_INPUT_COACHMARK = 354] = "POLLS_CHAT_INPUT_COACHMARK", h[h.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK = 355] = "PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK", h[h.LOOTBOXES_ENTRYPOINT = 358] = "LOOTBOXES_ENTRYPOINT", h[h.TENURE_REWARD_PENDING = 360] = "TENURE_REWARD_PENDING", h[h.TENURE_REWARD_REDEEMABLE = 361] = "TENURE_REWARD_REDEEMABLE", h[h.TENURE_REWARD_REDEEMABLE_CONFETTI = 363] = "TENURE_REWARD_REDEEMABLE_CONFETTI", h[h.GAME_ONE_USER_SIGNUPS = 364] = "GAME_ONE_USER_SIGNUPS", h[h.COLLECTIBLES_SHOP_SHY_COACHTIP = 365] = "COLLECTIBLES_SHOP_SHY_COACHTIP", h[h.APP_LAUNCHER_ONBOARDING_BOTS_BANNER = 366] = "APP_LAUNCHER_ONBOARDING_BOTS_BANNER", h[h.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER = 367] = "APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER", h[h.APP_LAUNCHER_ONBOARDING_APPS_BANNER = 368] = "APP_LAUNCHER_ONBOARDING_APPS_BANNER", h[h.COLLECTIBLES_MOBILE_SHOP_MARKETING = 369] = "COLLECTIBLES_MOBILE_SHOP_MARKETING", h[h.COLLECTIBLES_MOBILE_SHOP_HALF_SHEET = 370] = "COLLECTIBLES_MOBILE_SHOP_HALF_SHEET", h[h.GENSHIN_USER_SIGNUPS = 371] = "GENSHIN_USER_SIGNUPS", h[h.ACTIVITIES_CHAT_BUTTON_NUX_V2 = 372] = "ACTIVITIES_CHAT_BUTTON_NUX_V2", h[h.ACTIVITIES_CHAT_MENU_NEW_BADGE = 373] = "ACTIVITIES_CHAT_MENU_NEW_BADGE", h[h.PREMIUM_2024_APRIL_MARKETING_MODAL = 374] = "PREMIUM_2024_APRIL_MARKETING_MODAL", h[h.PREMIUM_2024_APRIL_MARKETING_BADGE = 375] = "PREMIUM_2024_APRIL_MARKETING_BADGE", h[h.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK = 376] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK", h[h.REFERRAL_PROGRAM_PROGRESS_BAR_TOGGLE = 377] = "REFERRAL_PROGRAM_PROGRESS_BAR_TOGGLE", h[h.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE = 378] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE", h[h.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE = 379] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE", h[h.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE = 380] = "REFERRAL_PROGRAM_PREMIUM_TAB_BADGE", h[h.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP = 381] = "PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP", h[h.COLLECTIBLES_SHOP_LOFI_VIBES_COACHTIP = 382] = "COLLECTIBLES_SHOP_LOFI_VIBES_COACHTIP", h[h.COLLECTIBLES_SHOP_GALAXY_COACHTIP = 383] = "COLLECTIBLES_SHOP_GALAXY_COACHTIP", h[h.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP = 384] = "CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP", h[h.CHANNEL_LIST_CLAN_ADMIN_UPSELL = 385] = "CHANNEL_LIST_CLAN_ADMIN_UPSELL", h[h.GUILD_LIST_CLAN_ADMIN_UPSELL = 386] = "GUILD_LIST_CLAN_ADMIN_UPSELL", (A = l || (l = {}))[A.UNSET_EXPLICIT_CONTENT_REDACTION = 0] = "UNSET_EXPLICIT_CONTENT_REDACTION", A[A.SHOW = 1] = "SHOW", A[A.BLUR = 2] = "BLUR", A[A.BLOCK = 3] = "BLOCK", (m = u || (u = {}))[m.DEFAULT_UNSET = 0] = "DEFAULT_UNSET", m[m.DISABLED = 1] = "DISABLED", m[m.NON_FRIENDS = 2] = "NON_FRIENDS", m[m.FRIENDS_AND_NON_FRIENDS = 3] = "FRIENDS_AND_NON_FRIENDS", (N = d || (d = {}))[N.OFF = 0] = "OFF", N[N.ON_FOR_LARGE_GUILDS = 1] = "ON_FOR_LARGE_GUILDS", (p = _ || (_ = {}))[p.UNSET = 0] = "UNSET", p[p.DARK = 1] = "DARK", p[p.LIGHT = 2] = "LIGHT", p[p.DARKER = 3] = "DARKER", p[p.MIDNIGHT = 4] = "MIDNIGHT", (O = c || (c = {}))[O.MINT_APPLE = 0] = "MINT_APPLE", O[O.CITRUS_SHERBERT = 1] = "CITRUS_SHERBERT", O[O.RETRO_RAINCLOUD = 2] = "RETRO_RAINCLOUD", O[O.HANAMI = 3] = "HANAMI", O[O.SUNRISE = 4] = "SUNRISE", O[O.COTTON_CANDY = 5] = "COTTON_CANDY", O[O.LOFI_VIBES = 6] = "LOFI_VIBES", O[O.DESERT_KHAKI = 7] = "DESERT_KHAKI", O[O.SUNSET = 8] = "SUNSET", O[O.CHROMA_GLOW = 9] = "CHROMA_GLOW", O[O.FOREST = 10] = "FOREST", O[O.CRIMSON_MOON = 11] = "CRIMSON_MOON", O[O.MIDNIGHT_BLURPLE = 12] = "MIDNIGHT_BLURPLE", O[O.MARS = 13] = "MARS", O[O.DUSK = 14] = "DUSK", O[O.UNDER_THE_SEA = 15] = "UNDER_THE_SEA", O[O.EASTER_EGG = 16] = "EASTER_EGG", O[O.RETRO_STORM = 17] = "RETRO_STORM", O[O.NEON_NIGHTS = 18] = "NEON_NIGHTS", O[O.SEPIA = 19] = "SEPIA", O[O.STRAWBERRY_LEMONADE = 20] = "STRAWBERRY_LEMONADE", O[O.AURORA = 21] = "AURORA", (R = E || (E = {}))[R.UNSET_FAVORITE_CHANNEL_TYPE = 0] = "UNSET_FAVORITE_CHANNEL_TYPE", R[R.REFERENCE_ORIGINAL = 1] = "REFERENCE_ORIGINAL", R[R.CATEGORY = 2] = "CATEGORY";
             class D extends C.MessageType {
                 create(e) {
                     let t = {};
@@ -311557,4 +311578,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.20a53cf94af838b5c2f3.js.map
+//# sourceMappingURL=35705.972db7b53ed16ef046a5.js.map

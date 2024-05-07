@@ -15620,6 +15620,7 @@
         295986: function(e) {
             "use strict";
             e.exports = {
+                fixedDiscoveryIcon: "fixedDiscoveryIcon__04053",
                 hidden: "hidden__7c832",
                 scroller: "scroller_de945b",
                 scrolling: "scrolling__921b8",
@@ -15704,7 +15705,16 @@
         434884: function(e) {
             "use strict";
             e.exports = {
-                icon: "icon__05aab"
+                backgroundImage: "backgroundImage__65618",
+                close: "close__298e6",
+                container: "container__1ac7e",
+                footer: "footer_b74401",
+                genshinBackgroundImage: "genshinBackgroundImage_b8f439 backgroundImage__65618",
+                popoutAnchor: "popoutAnchor_dd74d9",
+                popoutCaret: "popoutCaret__22ffc",
+                popoutContainer: "popoutContainer_f91849",
+                popoutContent: "popoutContent__3554c",
+                valorantBackgroundImage: "valorantBackgroundImage__3ad7b backgroundImage__65618"
             }
         },
         263: function(e) {
