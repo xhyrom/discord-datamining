@@ -36999,7 +36999,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291229", ", Version Hash: ").concat("4c163d084f57e685af1c7af679fa9e3ae0a33dbf")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291233", ", Version Hash: ").concat("9a9904e37461d50a4641fd92f3e69877a9f92199")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87593,8 +87593,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291229", "291229"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291229")), t = 0), t
+                let t = parseInt((e = "291233", "291233"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291233")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -114682,8 +114682,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291229",
-                    versionHash: "4c163d084f57e685af1c7af679fa9e3ae0a33dbf"
+                    buildNumber: "291233",
+                    versionHash: "9a9904e37461d50a4641fd92f3e69877a9f92199"
                 }
             }
             n.r(t), n.d(t, {
@@ -170031,8 +170031,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715114534853",
-                                    build_number: "291229"
+                                    built_at: "1715114915513",
+                                    build_number: "291233"
                                 }
                             },
                             retries: 1
@@ -225516,7 +225516,7 @@
             }
 
             function ec() {
-                eo("removeAuthToken called."), _.removeToken()
+                return eo("removeAuthToken called."), _.removeToken()
             }
 
             function eE() {
@@ -225526,7 +225526,10 @@
             }
 
             function eI(e) {
-                eo("handleLogout called."), ec(), ed(), !(null == e ? void 0 : e.isSwitchingAccount) && el(), E.default.PersistedStore.clearAll({
+                var t;
+                eo("handleLogout called.");
+                let n = ec();
+                !(null !== (t = null == e ? void 0 : e.isSwitchingAccount) && void 0 !== t && t) && (n && ed(), el()), E.default.PersistedStore.clearAll({
                     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore"],
                     type: (null == e ? void 0 : e.isSwitchingAccount) ? "user-data-only" : "all"
                 }), v.default.clearAll(), m.clear(), g.default.clearUser(), T.Storage.remove(G), w = null, Y = (null == e ? void 0 : e.isSwitchingAccount) ? D.LoginStates.LOGGING_IN : D.LoginStates.NONE, j = D.RegistrationStates.NONE, z = "", J = "", X = null, Z = !1, $ = !1, ee = !1, et = {}, en = {}
@@ -248064,7 +248067,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "4c163d084f57e685af1c7af679fa9e3ae0a33dbf"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9a9904e37461d50a4641fd92f3e69877a9f92199"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276748,7 +276751,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291229"
+                                build_number: "291233"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284097,7 +284100,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291229", "291229"), 10);
+                let a = parseInt((n = "291233", "291233"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -310457,7 +310460,7 @@
 
             function R(e) {
                 let t = i;
-                null != e && (t = c[e], delete c[e], delete E[e]), t === i && (i = null, r = null), f()
+                return null != e && (t = c[e], delete c[e], delete E[e]), t === i && (i = null, r = null), f(), null != t
             }
 
             function C() {
@@ -311596,4 +311599,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.5656d4a9e5e91d0601f5.js.map
+//# sourceMappingURL=35705.ddb6fb6f57171eece3ca.js.map
