@@ -7431,6 +7431,7 @@
         720395: function(e) {
             "use strict";
             e.exports = {
+                backgroundContainer: "backgroundContainer__412ee",
                 cards: "cards__2e3a6",
                 cardsContainer: "cardsContainer__43887",
                 clanCard: "clanCard__50538",
@@ -7444,6 +7445,11 @@
                 clanCardOuterContainer: "clanCardOuterContainer__05636",
                 clanCardOuterLeft: "clanCardOuterLeft_a7787d clanCardOuter__79a32 clanCard__50538",
                 clanCardOuterRight: "clanCardOuterRight__19d1a clanCardOuter__79a32 clanCard__50538",
+                ring: "ring__07750",
+                ringInner: "ringInner__1b7bc ring__07750",
+                ringMiddle: "ringMiddle__02bf7 ring__07750",
+                ringOuter: "ringOuter__042b2 ring__07750",
+                ringsContainer: "ringsContainer_f0e1d7",
                 upsellContainer: "upsellContainer_aae5af",
                 upsellDetails: "upsellDetails_fe7ec8",
                 upsellSubtitle: "upsellSubtitle__06626",
