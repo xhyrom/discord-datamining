@@ -26387,20 +26387,28 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     opacity: .9
 }
 
-.seeMoreText_ff3bd6 {
+.viewFullBio__0403a {
     width: -moz-fit-content;
     width: fit-content;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 4px
+    margin-top: 8px
 }
 
-.seeMoreText_ff3bd6:hover {
+.viewFullBio__0403a:hover {
     -webkit-text-decoration: underline;
     text-decoration: underline;
-    color: var(--text-normal);
+    color: var(--interactive-hover);
     cursor: pointer
+}
+
+.viewFullBioText_fe72b1 {
+    color: var(--interactive-normal)
+}
+
+.viewFullBioText_fe72b1:hover {
+    color: var(--interactive-hover)
 }
 
 .descriptionClamp__07797 {
@@ -136442,4 +136450,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f561f780e80f9f273c45.css.map*/
+/*# sourceMappingURL=99387.423b4ff6d4ce760e821e.css.map*/

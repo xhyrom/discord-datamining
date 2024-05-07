@@ -25782,7 +25782,8 @@
             "use strict";
             e.exports = {
                 descriptionClamp: "descriptionClamp__07797",
-                seeMoreText: "seeMoreText_ff3bd6"
+                viewFullBio: "viewFullBio__0403a",
+                viewFullBioText: "viewFullBioText_fe72b1"
             }
         },
         108997: function(e) {
