@@ -14,7 +14,6 @@
         <a href="#h_01GFV42K7SR7DPP1TCTTF0FKN3" target="_self"><span style="font-weight: 400;">What Payment Methods Work?</span></a>
         <ul>
             <li style="font-weight: 400;" aria-level="2"><a href="#h_01GFV42Y3CM7C0RSBYVNTQ11ZJ" target="_self"><span style="font-weight: 400;">Switching Payment Methods</span></a></li>
-            <li style="font-weight: 400;" aria-level="2"><a href="#h_01GFV435K1JY1K1BWNQG9E129T" target="_self"><span style="font-weight: 400;">Failed Payments</span></a></li>
         </ul>
     </li>
     <li style="font-weight: 400;" aria-level="1"><a href="#h_01GFV43NYQ6KM5V7MFYCFYZ7HP" target="_self"><span style="font-weight: 400;">What Discord Purchases will look like on your Statement?</span></a></li>
@@ -148,8 +147,6 @@
     </li>
     <li>At the bottom of the focused payment method information section, press the <strong>Delete Payment Method </strong>button. If you have an active subscription with this payment method, you cannot interact with this button.</li>
 </ol>
-<h2 id="h_01GFV435K1JY1K1BWNQG9E129T"><strong>Failed Payments</strong></h2>
-<p><span style="font-weight: 400;">You were so close, you input your information and clicked buy - but were stopped by some unforeseen power. If this is the case for you - be sure to send our team a message at</span> <a href="https://support.discordapp.com/hc/en-us/requests/new?ticket_form_id=360000118612"><strong>dis.gd/billing</strong></a><span style="font-weight: 400;"> so we can look into this for you!</span></p>
 <h1 id="h_01GFV43NYQ6KM5V7MFYCFYZ7HP"><strong>What Discord Purchases will look like on your Statement</strong></h1>
 <p><span style="font-weight: 400;">The deed has been done and you completed your purchase, now if you were at all curious how it’ll look like on your bank statements end, it should look like the below!</span></p>
 <p><span style="font-weight: 400;">Here is what you will see if you made a purchase with a <strong>Credit/Debit card</strong> directly:</span></p>
