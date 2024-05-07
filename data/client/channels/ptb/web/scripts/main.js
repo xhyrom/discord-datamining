@@ -17486,9 +17486,6 @@
                 MemberRole: function() {
                     return x
                 },
-                OverflowAddRolesButton: function() {
-                    return H
-                },
                 default: function() {
                     return W
                 }
@@ -37002,7 +36999,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291188", ", Version Hash: ").concat("1462ac87a1b402042bbaf1ae201dfc35332bcc8f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291211", ", Version Hash: ").concat("b5f24daca14bb48efe481e9ee6322b7af7b3b4e7")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -70269,7 +70266,7 @@
         100527: function(e, t, n) {
             "use strict";
             var i, r;
-            n.r(t), (r = i || (i = {})).POPOUT_WINDOW = "popout window", r.OVERLAY = "overlay", r.NOTICE = "notice", r.PREMIUM_UPSELL_TOOLTIP = "premium upsell tooltip", r.BADGE = "badge", r.USER_SETTINGS = "user settings", r.USER_SETTINGS_MENU = "user settings menu", r.USER_SETTINGS_GIFT_INVENTORY = "user settings gift inventory", r.ACCOUNT = "account", r.TEXT_AND_IMAGES = "text and images", r.GUILD_SETTINGS = "guild settings", r.OVERVIEW = "overview", r.STICKERS = "stickers", r.VANITY_URL = "vanity url", r.URI_SCHEME = "uri scheme", r.AKA = "aka", r.MESSAGES = "messages", r.NEW_MESSAGE_COMPOSER = "new message composer", r.NOTIFICATIONS = "notifications", r.NOTIFICATION_CENTER = "notification center", r.PUSH_NOTIFICATION = "push notification", r.FAMILY_CENTER = "family center", r.FRIENDS_LIST = "friends list", r.EXPANDED_FRIENDS_LIST = "expanded friends list", r.CONTACTS_LIST = "contacts list", r.ADD_FRIENDS = "add friends", r.FRIEND_REQUESTS = "friend requests", r.SUGGESTED_FRIENDS = "suggested friends", r.BLOCKED_USERS = "blocked users", r.PREMIUM_MARKETING = "premium marketing", r.PREMIUM_MARKETING_PLAN_COMPARISON = "premium marketing plan comparison", r.PREMIUM_PAYMENT_MODAL = "premium payment modal", r.PREMIUM_UPSELL_ALERT = "premium upsell alert", r.PREMIUM_UPSELL_MODAL = "premium upsell modal", r.PREMIUM_SETTINGS = "premium settings", r.PAYMENT_FLOW_TEST_PAGE = "payment flow test page", r.PREMIUM_PAYMENT_ACTION_SHEET = "premium payment action sheet", r.CHANNEL_CALL = "channel call", r.CHANNEL_CALL_CONNECTING_SCREEN = "channel call connecting screen", r.CHANNEL_DETAILS = "channel details", r.RTC_PANEL = "rtc panel", r.SOUNDBOARD_BUTTON = "soundboard button", r.SOUNDBOARD_POPOUT = "soundboard popout", r.SOUNDBOARD_WHEEL = "soundboard wheel", r.SOUNDBOARD_ACTION_SHEET = "soundboard action sheet", r.GIFT_BUTTON = "gift button", r.EXPRESSION_SUGGESTIONS = "expression suggestions", r.EMOJI_PICKER = "emoji picker", r.STICKER_PICKER = "sticker picker", r.STICKER_POPOUT = "sticker popout", r.PREMIUM_UPSELL = "premium upsell", r.EMPTY_STATE = "empty state", r.SUBSCRIPTION_DETAILS = "subscription details", r.SUBSCRIPTION_HEADER = "subscription header", r.ACCOUNT_CREDIT_BANNER = "account credit banner", r.PREMIUM_UNCANCEL_MODAL = "premium uncancel modal", r.PAST_DUE_ONE_TIME_PAYMENT_METHOD_BANNER = "past due one time payment method banner", r.STREAM_QUALITY_INDICATOR = "stream quality indicator", r.PREMIUM_TIER_0_TRIAL_ENDING_NOTICE = "premium tier 0 trial ending notice", r.PREMIUM_TIER_2_TRIAL_ENDING_NOTICE = "premium tier 2 trial ending notice", r.BOOSTED_GUILD_PERKS_MODAL = "boosted guild perks modal", r.GUILD_BOOSTING_PREMIUM_UPSELL = "guild boosting premium upsell", r.RPC = "rpc", r.BILLING_STANDALONE = "billing standalone", r.GUILD_CHANNEL_LIST = "guild channel list", r.GUILD_CHANNEL_LIST_FOOTER = "guild channel list footer", r.STICKER_MESSAGE = "sticker message", r.CHANNEL_TEXT_AREA = "channel text area", r.HEADER_BAR = "header bar", r.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL = "guild role subscription cancellation modal", r.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE = "guild role subscription purchase system message", r.GUILD_ROLE_SUBSCRIPTION_EMOJI_PICKER_UPSELL = "guild role subscription emoji picker upsell", r.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL = "guild role subscription emoji text popover upsell", r.PREMIUM_SUBSCRIPTION_CANCELLATION_MODAL = "premium subscription cancellation modal", r.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL = "application subscription cancellation modal", r.PENDING_PLAN_CHANGE_NOTICE = "pending plan change notice", r.SUBSCRIPTION_CANCEL_DOWNGRADE_MODAL = "subscription cancel downgrade modal", r.GUILD_HEADER = "guild header", r.GUILD_BANNER = "guild banner", r.GUILD_BANNER_NOTICE = "guild banner notice", r.GUILD_BOOST_PURCHASE_MODAL = "guild boost purchase modal", r.GUILD_BOOST_CANCELLATION_MODAL = "guild boost cancellation modal", r.GUILD_BOOST_UNCANCELLATION_MODAL = "guild boost uncancellation modal", r.GUILD_BOOSTING_PROGRESS_BAR = "guild boosting progress bar", r.GUILD_BOOSTING_TIER_NONE = "guild boosting tier none", r.GUILD_BOOSTING_TIER_1 = "guild boosting tier 1", r.GUILD_BOOSTING_TIER_2 = "guild boosting tier 2", r.GUILD_BOOSTING_TIER_3 = "guild boosting tier 3", r.GUILD_BOOSTING_UPSELL_BANNER = "guild boosting upsell banner", r.GUILD_BOOSTING_SIDEBAR_DISPLAY = "guild boosting sidebar display", r.GUILDS_LIST = "guilds list", r.ACTIVITY_CHANNEL_SELECTOR = "activity channel selector", r.ACTIVITY_DIRECTORY = "activity directory", r.ACTIVITY_TILE = "activity tile", r.ACTIVITY_UPSELL = "activity upsell", r.ACTIVITY_VOICE_CONTROLS_TOGGLE = "activity voice controls toggle", r.INSTANT_INVITE_MODAL = "instant invite modal", r.IMAGE_CROPPING_MODAL = "image cropping modal", r.GIF_PICKER = "gif picker", r.EXTERNAL_INVITE_LINK_MODAL = "external invite link modal", r.INVITE_MODAL = "invite modal", r.INVITE_EMBED = "invite embed", r.NEW_GUILD_BUTTON = "new guild button", r.CHARACTER_COUNT = "character count", r.DM_CHANNEL = "dm channel", r.GUILD_CHANNEL = "guild channel", r.FORUM_CHANNEL = "forum channel", r.FILE_UPLOAD_POPOUT = "file upload popout", r.VOICE_USER = "voice user", r.USER_LIST_ITEM = "user list item", r.EXECUTED_COMMAND = "executed command", r.EMOJI = "emoji", r.AVATAR = "avatar", r.USERNAME = "username", r.MEMBER_LIST = "member list", r.USER_MENTION = "user mention", r.ROLE_MENTION = "role mention", r.CONNECTIONS_ROLE_POPOUT = "connections role popout", r.PROFILE = "profile", r.PROFILE_MODAL = "profile modal", r.SIMPLIFIED_PROFILE_MODAL = "simplified profile modal", r.PROFILE_POPOUT = "profile popout", r.BITE_SIZE_PROFILE_POPOUT = "bite size profile popout", r.PROFILE_PANEL = "profile panel", r.GUILD_PROFILE = "guild profile", r.EDIT_AVATAR = "edit avatar", r.EDIT_BANNER = "edit banner", r.CHAT_INPUT = "chat input", r.CHAT_SIDEBAR = "chat sidebar", r.CREATE_THREAD = "create thread", r.PREMIUM_PREVIEW_UPSELL_HEADER = "premium preview upsell header", r.PREMIUM_UPSELL_OVERLAY = "premium upsell overlay", r.SELECT_IMAGE_MODAL = "select image modal", r.VIDEO_BACKGROUND_OPTIONS = "video background options", r.VIDEO_BACKGROUND_IMAGE_OPTION = "video background image option", r.VIDEO_BACKGROUND_CUSTOM_UPSELL = "video background custom upsell", r.CAMERA_PREVIEW = "camera preview", r.HOME_PAGE_PREMIUM_TAB = "home page premium tab", r.HOME_PAGE_SHOP_TAB = "home page shop tab", r.PREMIUM_MARKETING_SURFACE = "premium marketing surface", r.PREMIUM_MARKETING_HERO_CTA = "premium marketing hero cta", r.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR = "premium marketing referral program progress bar", r.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL = "premium marketing referral program share modal", r.PREMIUM_MARKETING_TIER_1_CTA = "premium marketing tier 1 cta", r.PREMIUM_MARKETING_TIER_2_CTA = "premium marketing tier 2 cta", r.PREMIUM_MARKETING_LOCALIZED_PRICING_TIER_2_CTA = "premium marketing localized pricing tier 2 cta", r.PREMIUM_MARKETING_SURFACE_HERO_CTA = "premium marketing surface hero cta", r.PREMIUM_MARKETING_SURFACE_TIER_2_CTA = "premium marketing surface tier 2 cta", r.PREMIUM_MARKETING_SURFACE_TIER_1_CTA = "premium marketing surface tier 1 cta", r.PREMIUM_MARKETING_TIER_CARD = "premium marketing tier card", r.PREMIUM_MARKETING_PERK_CARD = "premium marketing perk card", r.PREMIUM_MARKETING_FEATURE = "premium marketing feature", r.PREMIUM_MARKETING_COMPARISON_TABLE = "premium marketing comparison table", r.PREMIUM_MARKETING_FOOTER = "premium marketing footer", r.PREMIUM_MARKETING_GIFT_SECTION = "premium marketing gift section", r.CHANNEL_CALL_ACTION_BAR = "channel call action bar", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI = "aggregate premium upsell modal emoji", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_PROFILE_CUSTOMIZATION = "aggregate premium upsell modal profile customization", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_HD_STREAMING = "aggregate premium upsell modal hd streaming", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_LARGER_FILE_UPLOADS = "aggregate premium upsell modal larger file uploads", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_BOGO = "aggregate premium upsell modal bogo", r.CHANNEL_EXPANDED_CONTROLS = "channel expanded controls", r.VOICE_CONTROL_TRAY = "voice control tray", r.ACTIVE_NOW_COLUMN = "active now column", r.CONTEXT_MENU = "context menu", r.CHANNEL_ACTIVITY_FEED_VOICE_MENU = "channel activity feed voice menu", r.CHANNEL_AUDIT_LOG_MENU = "channel audit log menu", r.CHANNEL_CATEGORY_MENU = "channel category menu", r.CHANNEL_LIST_DIRECTORY_CHANNEL_MENU = "channel list menu", r.CHANNEL_LIST_STORE_CHANNEL_MENU = "channel list store channel menu", r.CHANNEL_LIST_TEXT_CHANNEL_MENU = "channel list text channel menu", r.CHANNEL_LIST_THREAD_MENU = "channel list thread menu", r.CHANNEL_LIST_VOICE_CHANNEL_MENU = "channel list voice channel menu", r.CHANNEL_TITLE_MENU = "channel title menu", r.GROUP_DM_MENU = "group dm menu", r.AUDIT_LOG_USER_MENU = "audit log user menu", r.BANNED_USER_MENU = "banned user menu", r.DM_USER_MENU = "dm user menu", r.GROUP_DM_USER_MENU = "group dm user menu", r.GUILD_CHANNEL_USER_MENU = "guild channel user menu", r.GUILD_MODERATION_USER_MENU = "guild moderation user menu", r.GUILD_MODERATION_RAID_MENU = "guild moderation raid menu", r.GUILD_SETTINGS_USER_MENU = "guild settings user menu", r.GUILD_USER_MENU = "guild user menu", r.UNKNOWN_USER_MENU = "unknown user menu", r.THREAD_USER_MENU = "thread user menu", r.USER_GENERIC_MENU = "user generic menu", r.USER_PROFILE_ACTIONS_MENU = "user profile actions menu", r.USER_PROFILE_OVERFLOW_MENU = "user profile overflow menu", r.VOICE_ACTION_SHEET = "voice action sheet", r.FOCUSED_VOICE_CONTROLS = "focused voice controls", r.MASKED_LINK = "masked link", r.LAST_NITRO_HOST_ACTION_SHEET = "last nitro host action sheet", r.LAST_NITRO_HOST_LEFT_ACTION_SHEET = "last nitro host left action sheet", r.PREMIUM_TIER_0_ANNOUNCEMENT_ACTION_SHEET = "premium tier 0 announcement action sheet", r.PS_VOICE_CONNECT_UPSELL = "ps voice connect upsell", r.PROFILE_THEME_UPSELL_MODAL = "profile theme upsell modal", r.EDIT_AVATAR_DECORATION_MODAL = "edit avatar decoration modal", r.EDIT_AVATAR_DECORATION_SHEET = "edit avatar decoration sheet", r.EDIT_PROFILE_EFFECT_MODAL = "edit profile effect modal", r.EDIT_PROFILE_EFFECT_ACTION_SHEET = "edit profile effect action sheet", r.COLLECTIBLES_MOBILE_SHOP_MARKETING_SHEET = "collectibles mobile shop marketing sheet", r.ACCOUNT_PROFILE_POPOUT = "account profile popout", r.CHANNEL_CALL_OVERFLOW_ACTION_SHEET = "channel_call_overflow_action_sheet", r.USER_SETTINGS_TRY_OUT_PREMIUM = "user settings try out premium", r.ACTIVITY_COACH_MARK_NITRO = "activity coach mark nitro", r.ACTIVITY_COACH_MARK_BOOSTING = "activity coach mark boosting", r.ACTIVITY_COACH_MARK_HALLOWEEN_2022 = "activity coach mark halloween 2022", r.PREMIUM_TRIAL_TUTORIAL_COACHMARK = "premium trial tutorial coachmark", r.PREMIUM_TRIAL_TUTORIAL_TOOLTIP = "premium trial tutorial tooltip", r.ACTIVITY_COACH_MARK_BASH_OUT = "activity coach mark bash out", r.ACTIVITY_COACH_MARK_POKER = "activity coach mark poker", r.ACTIVITIES_COACH_MARK_GAME_NIGHT = "activities coach mark game night", r.STAGE_CHANNEL_CALL = "stage channel call", r.REQUEST_TO_SPEAK = "request to speak", r.STAGE_VIDEO_LIMIT = "stage video limit", r.ACTIVITIES_MINI_SHELF = "activities mini shelf", r.ACTIVITIES_MINI_SHELF_BANNER = "activities mini shelf banner", r.APP_LAUNCHER = "app launcher", r.APP_DETAIL = "app detail", r.VC_TILE_ACTIVITY_INVITE = "vc tile activity invite", r.VC_TILE_ACTIVITY_SUGGESTION = "vc tile activity suggestion", r.VC_TILE_ACTIVITY_SHELF_BUTTON = "vc tile activity shelf button", r.BURST_REACTION_TUTORIAL_COACHMARK = "super reaction tutorial coachmark", r.MESSAGE_REACTIONS = "message reactions", r.MESSAGE_PREVIEW_REACTIONS = "message preview reactions", r.APP_ICON_EDITOR = "app icon editor", r.CLIENT_THEMES_EDITOR = "client themes editor", r.CLIENT_THEMES_THEME_SELECTOR = "client themes theme selector", r.AUTOMOD_PROFILE_QUARANTINE_ALERT = "automod profile quarantine alert", r.SHARE_NITRO_EMBED = "share nitro embed", r.EMBEDDED_ACTIVITY_MESSAGE = "embedded activity message", r.REFERRAL_TRIALS_COMPOSER_BUTTON = "referral trials composer button", r.REFERRAL_TRIALS_POPOUT = "referral trials popout", r.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL = "premium marketing announcement modal", r.PREMIUM_MARKETING_PAGE_BANNER = "premium marketing page banner", r.ACTIVITY_BOOKMARK = "activity bookmark", r.ACTIVITY_BOOKMARK_LAUNCHER = "activity bookmark launcher", r.ACTIVITY_INSTANCE_EMBED = "activity instance embed", r.ACTIVITY_DETAIL_PAGE = "activity detail page", r.ACTIVITIES_PAGE = "activities page", r.ACTIVITIES_PAGE_NOTIFICATION_DOT = "activities page cta", r.ACTIVITIES_PAGE_WHATS_NEW_TILE = "activities page whats new tile", r.VOICE_PANEL = "voice panel", r.VOICE_PANEL_PRE_JOIN = "voice panel pre-join content", r.ACTIVITIES_IM_FEELING_LUCKY = "activities im feeling lucky", r.ACTIVITIES_HAPPENING_NOW = "activities happening now", r.MEDIA_VIEWER = "media viewer", r.MESSAGE_LONG_PRESS_MENU = "message long press menu", r.CHANNEL_LONG_PRESS_MENU = "channel long press menu", r.COLLECTIBLES_SHOP = "collectibles shop", r.COLLECTIBLES_SHOP_FULLSCREEN = "collectibles shop fullscreen", r.COLLECTIBLES_SHOP_INDEX_PAGE = "collectibles shop index page", r.COLLECTIBLES_SHOP_CARD = "collectibles shop card", r.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON = "collectibles shop card preview button", r.COLLECTIBLES_SHOP_DETAILS_MODAL = "collectibles shop details modal", r.COLLECTIBLES_SHOP_PROFILE_PREVIEW = "collectibles shop long form profile preview", r.COLLECTIBLES_PROFILE_SETTINGS_UPSELL = "collectibles profile settings upsell", r.COLLECTIBLES_PAYMENT_MODAL = "collectibles payment modal", r.COLLECTIBLES_COLLECTED_MODAL = "collectibles collected modal", r.COLLECTIBLES_USER_POPOUT_UPSELL = "collectibles user popout upsell", r.COLLECTIBLES_FEATURE_EDUCATION_TOOLTIP = "collectibles feature education tooltip", r.PREMIUM_SUBSCRIPTION_APRIL_CAMPAIGN_MODAL = "premium subscription april campaign modal", r.PREMIUM_BILLING_INFO = "premium billing info", r.PREMIUM_SUBSCRIPTION_DETAILS = "premium subscription details", r.APP_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "application subscription payment source with invoice", r.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW = "guild boost slot cancellation modal current invoice preview", r.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW = "guild boost slot cancellation modal renewal invoice preview", r.GUILD_BOOSTING_REVIEW_PRORATED = "guild boosting review prorated", r.GUILD_BOOSTING_REVIEW_RENEWAL = "guild boosting review renewal", r.GUILD_ROLE_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "guild role subscription payment source with invoice", r.PREMIUM_PLAN_SELECT = "premium_plan_select", r.CANCEL_INVOICE_PREVIEW = "cancel_invoice_preview", r.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT = "premium subscription fine print content", r.SUBSCRIPTION_INVOICE_FOOTER = "subscription invoice footer", r.BILLING_SWITCH_PLAN_IMMEDIATE_PRORATED_INVOICE_PREVIEW = "billing switch plan immediate prorated invoice preview", r.BILLING_SWITCH_PLAN_IMMEDIATE_RENEWAL_INVOICE_PREVIEW = "billing switch plan immediate renewal invoice preview", r.GUILD_BOOSTING_PLAN_SELECT = "GUILD_BOOSTING_PLAN_SELECT", r.MEMBER_SAFETY_PAGE = "member safety page", r.GUILD_SETTINGS_MEMBERS_PAGE = "guild settings members page", r.GUILD_MEMBER_MOD_VIEW = "guild member mod view", r.GUILD_MEMBER_APPLICATION_REVIEW = "guild member application review", r.GUILD_PRODUCT_EMBED_CARD = "guild product embed card", r.GUILD_PRODUCT_INFO_MODAL = "guild product info modal", r.GUILD_PRODUCT_PAYMENT_MODAL = "guild product payment modal", r.GUILD_SHOP_PAGE = "guild shop page", r.ACTIVITY_SHELF_ACTIVITY_DETAILS = "activity shelf activty details", r.MESSAGE_REMIX_TAG = "message remix tag", r.MESSAGE_REMIX_BUTTON = "message remix button", r.HAPPENING_NOW_EMBEDDED_ACTIVITY = "happening now embedded activity", r.CLIPS_SETTINGS = "clips settings", r.CLIPS_GALLERY = "clips gallery", r.CLIPS_GALLERY_ITEM = "clips gallery item", r.CLIPS_EDITOR = "clips editor", r.CLIPS_SHARE_MODAL = "clips share modal", r.CHANNEL_ATTACH_BUTTON = "channel attach button", r.PREMIUM_TRIAL_OFFER_ACTION_SHEET = "premium trial offer action sheet", r.PREMIUM_SUBSCRIBER_NITRO_HOME = "premium subscriber nitro home", r.CLYDE_PROFILE_SHARE_MODAL = "clyde profile share modal", r.GUILD_EVENT_MODAL = "guild event modal", r.GUILD_EVENT_CARD = "guild event card", r.EVENT_SETTINGS = "event settings", r.GUILD_EVENT_RSVP_BUTTON = "guild event rsvp button", r.GIFT_CODE_MODAL = "gift code modal", r.APP_STOREFRONT = "app storefront", r.SHOP_PRODUCT_DETAILS = "shop product details", r.SEARCH_MEMBERS = "search members", r.POLL_VOTES = "poll votes", r.YOU_SCREEN = "you screen", r.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RESUME_PREVIEW = "billing payment modal paused subscription resume invoice preview", r.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RENEWAL_PREVIEW = "billing payment modal paused subscription renewal invoice preview", r.CLAN_GUILD_PROFILE = "clan guild profile", r.CLAN_TAG = "clan tag", t.default = i
+            n.r(t), (r = i || (i = {})).POPOUT_WINDOW = "popout window", r.OVERLAY = "overlay", r.NOTICE = "notice", r.PREMIUM_UPSELL_TOOLTIP = "premium upsell tooltip", r.BADGE = "badge", r.USER_SETTINGS = "user settings", r.USER_SETTINGS_MENU = "user settings menu", r.USER_SETTINGS_GIFT_INVENTORY = "user settings gift inventory", r.ACCOUNT = "account", r.TEXT_AND_IMAGES = "text and images", r.GUILD_SETTINGS = "guild settings", r.OVERVIEW = "overview", r.STICKERS = "stickers", r.VANITY_URL = "vanity url", r.URI_SCHEME = "uri scheme", r.AKA = "aka", r.MESSAGES = "messages", r.NEW_MESSAGE_COMPOSER = "new message composer", r.NOTIFICATIONS = "notifications", r.NOTIFICATION_CENTER = "notification center", r.PUSH_NOTIFICATION = "push notification", r.FAMILY_CENTER = "family center", r.FRIENDS_LIST = "friends list", r.EXPANDED_FRIENDS_LIST = "expanded friends list", r.CONTACTS_LIST = "contacts list", r.ADD_FRIENDS = "add friends", r.FRIEND_REQUESTS = "friend requests", r.SUGGESTED_FRIENDS = "suggested friends", r.BLOCKED_USERS = "blocked users", r.PREMIUM_MARKETING = "premium marketing", r.PREMIUM_MARKETING_PLAN_COMPARISON = "premium marketing plan comparison", r.PREMIUM_PAYMENT_MODAL = "premium payment modal", r.PREMIUM_UPSELL_ALERT = "premium upsell alert", r.PREMIUM_UPSELL_MODAL = "premium upsell modal", r.PREMIUM_SETTINGS = "premium settings", r.PAYMENT_FLOW_TEST_PAGE = "payment flow test page", r.PREMIUM_PAYMENT_ACTION_SHEET = "premium payment action sheet", r.CHANNEL_CALL = "channel call", r.CHANNEL_CALL_CONNECTING_SCREEN = "channel call connecting screen", r.CHANNEL_DETAILS = "channel details", r.RTC_PANEL = "rtc panel", r.SOUNDBOARD_BUTTON = "soundboard button", r.SOUNDBOARD_POPOUT = "soundboard popout", r.SOUNDBOARD_WHEEL = "soundboard wheel", r.SOUNDBOARD_ACTION_SHEET = "soundboard action sheet", r.GIFT_BUTTON = "gift button", r.EXPRESSION_SUGGESTIONS = "expression suggestions", r.EMOJI_PICKER = "emoji picker", r.STICKER_PICKER = "sticker picker", r.STICKER_POPOUT = "sticker popout", r.PREMIUM_UPSELL = "premium upsell", r.EMPTY_STATE = "empty state", r.SUBSCRIPTION_DETAILS = "subscription details", r.SUBSCRIPTION_HEADER = "subscription header", r.ACCOUNT_CREDIT_BANNER = "account credit banner", r.PREMIUM_UNCANCEL_MODAL = "premium uncancel modal", r.PAST_DUE_ONE_TIME_PAYMENT_METHOD_BANNER = "past due one time payment method banner", r.STREAM_QUALITY_INDICATOR = "stream quality indicator", r.PREMIUM_TIER_0_TRIAL_ENDING_NOTICE = "premium tier 0 trial ending notice", r.PREMIUM_TIER_2_TRIAL_ENDING_NOTICE = "premium tier 2 trial ending notice", r.BOOSTED_GUILD_PERKS_MODAL = "boosted guild perks modal", r.GUILD_BOOSTING_PREMIUM_UPSELL = "guild boosting premium upsell", r.RPC = "rpc", r.BILLING_STANDALONE = "billing standalone", r.GUILD_CHANNEL_LIST = "guild channel list", r.GUILD_CHANNEL_LIST_FOOTER = "guild channel list footer", r.STICKER_MESSAGE = "sticker message", r.CHANNEL_TEXT_AREA = "channel text area", r.HEADER_BAR = "header bar", r.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL = "guild role subscription cancellation modal", r.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE = "guild role subscription purchase system message", r.GUILD_ROLE_SUBSCRIPTION_EMOJI_PICKER_UPSELL = "guild role subscription emoji picker upsell", r.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL = "guild role subscription emoji text popover upsell", r.PREMIUM_SUBSCRIPTION_CANCELLATION_MODAL = "premium subscription cancellation modal", r.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL = "application subscription cancellation modal", r.PENDING_PLAN_CHANGE_NOTICE = "pending plan change notice", r.SUBSCRIPTION_CANCEL_DOWNGRADE_MODAL = "subscription cancel downgrade modal", r.GUILD_HEADER = "guild header", r.GUILD_BANNER = "guild banner", r.GUILD_BANNER_NOTICE = "guild banner notice", r.GUILD_BOOST_PURCHASE_MODAL = "guild boost purchase modal", r.GUILD_BOOST_CANCELLATION_MODAL = "guild boost cancellation modal", r.GUILD_BOOST_UNCANCELLATION_MODAL = "guild boost uncancellation modal", r.GUILD_BOOSTING_PROGRESS_BAR = "guild boosting progress bar", r.GUILD_BOOSTING_TIER_NONE = "guild boosting tier none", r.GUILD_BOOSTING_TIER_1 = "guild boosting tier 1", r.GUILD_BOOSTING_TIER_2 = "guild boosting tier 2", r.GUILD_BOOSTING_TIER_3 = "guild boosting tier 3", r.GUILD_BOOSTING_UPSELL_BANNER = "guild boosting upsell banner", r.GUILD_BOOSTING_SIDEBAR_DISPLAY = "guild boosting sidebar display", r.GUILDS_LIST = "guilds list", r.ACTIVITY_CHANNEL_SELECTOR = "activity channel selector", r.ACTIVITY_DIRECTORY = "activity directory", r.ACTIVITY_TILE = "activity tile", r.ACTIVITY_UPSELL = "activity upsell", r.ACTIVITY_VOICE_CONTROLS_TOGGLE = "activity voice controls toggle", r.INSTANT_INVITE_MODAL = "instant invite modal", r.IMAGE_CROPPING_MODAL = "image cropping modal", r.GIF_PICKER = "gif picker", r.EXTERNAL_INVITE_LINK_MODAL = "external invite link modal", r.INVITE_MODAL = "invite modal", r.INVITE_EMBED = "invite embed", r.NEW_GUILD_BUTTON = "new guild button", r.CHARACTER_COUNT = "character count", r.DM_CHANNEL = "dm channel", r.GUILD_CHANNEL = "guild channel", r.FORUM_CHANNEL = "forum channel", r.FILE_UPLOAD_POPOUT = "file upload popout", r.VOICE_USER = "voice user", r.USER_LIST_ITEM = "user list item", r.EXECUTED_COMMAND = "executed command", r.EMOJI = "emoji", r.AVATAR = "avatar", r.USERNAME = "username", r.MEMBER_LIST = "member list", r.USER_MENTION = "user mention", r.ROLE_MENTION = "role mention", r.CONNECTIONS_ROLE_POPOUT = "connections role popout", r.PROFILE = "profile", r.PROFILE_MODAL = "profile modal", r.SIMPLIFIED_PROFILE_MODAL = "simplified profile modal", r.PROFILE_POPOUT = "profile popout", r.BITE_SIZE_PROFILE_POPOUT = "bite size profile popout", r.PROFILE_PANEL = "profile panel", r.GUILD_PROFILE = "guild profile", r.EDIT_AVATAR = "edit avatar", r.EDIT_BANNER = "edit banner", r.CHAT_INPUT = "chat input", r.CHAT_SIDEBAR = "chat sidebar", r.CREATE_THREAD = "create thread", r.PREMIUM_PREVIEW_UPSELL_HEADER = "premium preview upsell header", r.PREMIUM_UPSELL_OVERLAY = "premium upsell overlay", r.SELECT_IMAGE_MODAL = "select image modal", r.VIDEO_BACKGROUND_OPTIONS = "video background options", r.VIDEO_BACKGROUND_IMAGE_OPTION = "video background image option", r.VIDEO_BACKGROUND_CUSTOM_UPSELL = "video background custom upsell", r.CAMERA_PREVIEW = "camera preview", r.HOME_PAGE_PREMIUM_TAB = "home page premium tab", r.HOME_PAGE_SHOP_TAB = "home page shop tab", r.PREMIUM_MARKETING_SURFACE = "premium marketing surface", r.PREMIUM_MARKETING_HERO_CTA = "premium marketing hero cta", r.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR = "premium marketing referral program progress bar", r.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL = "premium marketing referral program share modal", r.PREMIUM_MARKETING_TIER_1_CTA = "premium marketing tier 1 cta", r.PREMIUM_MARKETING_TIER_2_CTA = "premium marketing tier 2 cta", r.PREMIUM_MARKETING_LOCALIZED_PRICING_TIER_2_CTA = "premium marketing localized pricing tier 2 cta", r.PREMIUM_MARKETING_SURFACE_HERO_CTA = "premium marketing surface hero cta", r.PREMIUM_MARKETING_SURFACE_TIER_2_CTA = "premium marketing surface tier 2 cta", r.PREMIUM_MARKETING_SURFACE_TIER_1_CTA = "premium marketing surface tier 1 cta", r.PREMIUM_MARKETING_TIER_CARD = "premium marketing tier card", r.PREMIUM_MARKETING_PERK_CARD = "premium marketing perk card", r.PREMIUM_MARKETING_FEATURE = "premium marketing feature", r.PREMIUM_MARKETING_COMPARISON_TABLE = "premium marketing comparison table", r.PREMIUM_MARKETING_FOOTER = "premium marketing footer", r.PREMIUM_MARKETING_GIFT_SECTION = "premium marketing gift section", r.CHANNEL_CALL_ACTION_BAR = "channel call action bar", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI = "aggregate premium upsell modal emoji", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_PROFILE_CUSTOMIZATION = "aggregate premium upsell modal profile customization", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_HD_STREAMING = "aggregate premium upsell modal hd streaming", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_LARGER_FILE_UPLOADS = "aggregate premium upsell modal larger file uploads", r.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_BOGO = "aggregate premium upsell modal bogo", r.CHANNEL_EXPANDED_CONTROLS = "channel expanded controls", r.VOICE_CONTROL_TRAY = "voice control tray", r.ACTIVE_NOW_COLUMN = "active now column", r.CONTEXT_MENU = "context menu", r.CHANNEL_ACTIVITY_FEED_VOICE_MENU = "channel activity feed voice menu", r.CHANNEL_AUDIT_LOG_MENU = "channel audit log menu", r.CHANNEL_CATEGORY_MENU = "channel category menu", r.CHANNEL_LIST_DIRECTORY_CHANNEL_MENU = "channel list menu", r.CHANNEL_LIST_STORE_CHANNEL_MENU = "channel list store channel menu", r.CHANNEL_LIST_TEXT_CHANNEL_MENU = "channel list text channel menu", r.CHANNEL_LIST_THREAD_MENU = "channel list thread menu", r.CHANNEL_LIST_VOICE_CHANNEL_MENU = "channel list voice channel menu", r.CHANNEL_TITLE_MENU = "channel title menu", r.GROUP_DM_MENU = "group dm menu", r.AUDIT_LOG_USER_MENU = "audit log user menu", r.BANNED_USER_MENU = "banned user menu", r.DM_USER_MENU = "dm user menu", r.GROUP_DM_USER_MENU = "group dm user menu", r.GUILD_CHANNEL_USER_MENU = "guild channel user menu", r.GUILD_MODERATION_USER_MENU = "guild moderation user menu", r.GUILD_MODERATION_RAID_MENU = "guild moderation raid menu", r.GUILD_SETTINGS_USER_MENU = "guild settings user menu", r.GUILD_USER_MENU = "guild user menu", r.UNKNOWN_USER_MENU = "unknown user menu", r.THREAD_USER_MENU = "thread user menu", r.USER_GENERIC_MENU = "user generic menu", r.USER_PROFILE_ACTIONS_MENU = "user profile actions menu", r.USER_PROFILE_OVERFLOW_MENU = "user profile overflow menu", r.VOICE_ACTION_SHEET = "voice action sheet", r.FOCUSED_VOICE_CONTROLS = "focused voice controls", r.MASKED_LINK = "masked link", r.LAST_NITRO_HOST_ACTION_SHEET = "last nitro host action sheet", r.LAST_NITRO_HOST_LEFT_ACTION_SHEET = "last nitro host left action sheet", r.PREMIUM_TIER_0_ANNOUNCEMENT_ACTION_SHEET = "premium tier 0 announcement action sheet", r.PS_VOICE_CONNECT_UPSELL = "ps voice connect upsell", r.PROFILE_THEME_UPSELL_MODAL = "profile theme upsell modal", r.EDIT_AVATAR_DECORATION_MODAL = "edit avatar decoration modal", r.EDIT_AVATAR_DECORATION_SHEET = "edit avatar decoration sheet", r.EDIT_PROFILE_EFFECT_MODAL = "edit profile effect modal", r.EDIT_PROFILE_EFFECT_ACTION_SHEET = "edit profile effect action sheet", r.COLLECTIBLES_MOBILE_SHOP_MARKETING_SHEET = "collectibles mobile shop marketing sheet", r.ACCOUNT_PROFILE_POPOUT = "account profile popout", r.CHANNEL_CALL_OVERFLOW_ACTION_SHEET = "channel_call_overflow_action_sheet", r.USER_SETTINGS_TRY_OUT_PREMIUM = "user settings try out premium", r.ACTIVITY_COACH_MARK_NITRO = "activity coach mark nitro", r.ACTIVITY_COACH_MARK_BOOSTING = "activity coach mark boosting", r.ACTIVITY_COACH_MARK_HALLOWEEN_2022 = "activity coach mark halloween 2022", r.PREMIUM_TRIAL_TUTORIAL_COACHMARK = "premium trial tutorial coachmark", r.PREMIUM_TRIAL_TUTORIAL_TOOLTIP = "premium trial tutorial tooltip", r.ACTIVITY_COACH_MARK_BASH_OUT = "activity coach mark bash out", r.ACTIVITY_COACH_MARK_POKER = "activity coach mark poker", r.ACTIVITIES_COACH_MARK_GAME_NIGHT = "activities coach mark game night", r.STAGE_CHANNEL_CALL = "stage channel call", r.REQUEST_TO_SPEAK = "request to speak", r.STAGE_VIDEO_LIMIT = "stage video limit", r.ACTIVITIES_MINI_SHELF = "activities mini shelf", r.ACTIVITIES_MINI_SHELF_BANNER = "activities mini shelf banner", r.APP_LAUNCHER = "app launcher", r.APP_DETAIL = "app detail", r.VC_TILE_ACTIVITY_INVITE = "vc tile activity invite", r.VC_TILE_ACTIVITY_SUGGESTION = "vc tile activity suggestion", r.VC_TILE_ACTIVITY_SHELF_BUTTON = "vc tile activity shelf button", r.BURST_REACTION_TUTORIAL_COACHMARK = "super reaction tutorial coachmark", r.MESSAGE_REACTIONS = "message reactions", r.MESSAGE_PREVIEW_REACTIONS = "message preview reactions", r.APP_ICON_EDITOR = "app icon editor", r.CLIENT_THEMES_EDITOR = "client themes editor", r.CLIENT_THEMES_THEME_SELECTOR = "client themes theme selector", r.AUTOMOD_PROFILE_QUARANTINE_ALERT = "automod profile quarantine alert", r.SHARE_NITRO_EMBED = "share nitro embed", r.EMBEDDED_ACTIVITY_MESSAGE = "embedded activity message", r.REFERRAL_TRIALS_COMPOSER_BUTTON = "referral trials composer button", r.REFERRAL_TRIALS_POPOUT = "referral trials popout", r.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL = "premium marketing announcement modal", r.PREMIUM_MARKETING_PAGE_BANNER = "premium marketing page banner", r.ACTIVITY_BOOKMARK = "activity bookmark", r.ACTIVITY_BOOKMARK_LAUNCHER = "activity bookmark launcher", r.ACTIVITY_INSTANCE_EMBED = "activity instance embed", r.ACTIVITY_DETAIL_PAGE = "activity detail page", r.ACTIVITIES_PAGE = "activities page", r.ACTIVITIES_PAGE_NOTIFICATION_DOT = "activities page cta", r.ACTIVITIES_PAGE_WHATS_NEW_TILE = "activities page whats new tile", r.VOICE_PANEL = "voice panel", r.VOICE_PANEL_PRE_JOIN = "voice panel pre-join content", r.ACTIVITIES_IM_FEELING_LUCKY = "activities im feeling lucky", r.ACTIVITIES_HAPPENING_NOW = "activities happening now", r.MEDIA_VIEWER = "media viewer", r.MESSAGE_LONG_PRESS_MENU = "message long press menu", r.CHANNEL_LONG_PRESS_MENU = "channel long press menu", r.COLLECTIBLES_SHOP = "collectibles shop", r.COLLECTIBLES_SHOP_FULLSCREEN = "collectibles shop fullscreen", r.COLLECTIBLES_SHOP_INDEX_PAGE = "collectibles shop index page", r.COLLECTIBLES_SHOP_CARD = "collectibles shop card", r.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON = "collectibles shop card preview button", r.COLLECTIBLES_SHOP_DETAILS_MODAL = "collectibles shop details modal", r.COLLECTIBLES_SHOP_PROFILE_PREVIEW = "collectibles shop long form profile preview", r.COLLECTIBLES_PROFILE_SETTINGS_UPSELL = "collectibles profile settings upsell", r.COLLECTIBLES_PAYMENT_MODAL = "collectibles payment modal", r.COLLECTIBLES_COLLECTED_MODAL = "collectibles collected modal", r.COLLECTIBLES_USER_POPOUT_UPSELL = "collectibles user popout upsell", r.COLLECTIBLES_FEATURE_EDUCATION_TOOLTIP = "collectibles feature education tooltip", r.PREMIUM_SUBSCRIPTION_APRIL_CAMPAIGN_MODAL = "premium subscription april campaign modal", r.PREMIUM_BILLING_INFO = "premium billing info", r.PREMIUM_SUBSCRIPTION_DETAILS = "premium subscription details", r.APP_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "application subscription payment source with invoice", r.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW = "guild boost slot cancellation modal current invoice preview", r.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW = "guild boost slot cancellation modal renewal invoice preview", r.GUILD_BOOSTING_REVIEW_PRORATED = "guild boosting review prorated", r.GUILD_BOOSTING_REVIEW_RENEWAL = "guild boosting review renewal", r.GUILD_ROLE_SUBSCRIPTION_PAYMENT_SOURCE_WITH_INVOICE = "guild role subscription payment source with invoice", r.PREMIUM_PLAN_SELECT = "premium_plan_select", r.CANCEL_INVOICE_PREVIEW = "cancel_invoice_preview", r.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT = "premium subscription fine print content", r.SUBSCRIPTION_INVOICE_FOOTER = "subscription invoice footer", r.BILLING_SWITCH_PLAN_IMMEDIATE_PRORATED_INVOICE_PREVIEW = "billing switch plan immediate prorated invoice preview", r.BILLING_SWITCH_PLAN_IMMEDIATE_RENEWAL_INVOICE_PREVIEW = "billing switch plan immediate renewal invoice preview", r.GUILD_BOOSTING_PLAN_SELECT = "GUILD_BOOSTING_PLAN_SELECT", r.MEMBER_SAFETY_PAGE = "member safety page", r.GUILD_SETTINGS_MEMBERS_PAGE = "guild settings members page", r.GUILD_MEMBER_MOD_VIEW = "guild member mod view", r.GUILD_MEMBER_APPLICATION_REVIEW = "guild member application review", r.GUILD_PRODUCT_EMBED_CARD = "guild product embed card", r.GUILD_PRODUCT_INFO_MODAL = "guild product info modal", r.GUILD_PRODUCT_PAYMENT_MODAL = "guild product payment modal", r.GUILD_SHOP_PAGE = "guild shop page", r.ACTIVITY_SHELF_ACTIVITY_DETAILS = "activity shelf activty details", r.MESSAGE_REMIX_TAG = "message remix tag", r.MESSAGE_REMIX_BUTTON = "message remix button", r.HAPPENING_NOW_EMBEDDED_ACTIVITY = "happening now embedded activity", r.CLIPS_SETTINGS = "clips settings", r.CLIPS_GALLERY = "clips gallery", r.CLIPS_GALLERY_ITEM = "clips gallery item", r.CLIPS_EDITOR = "clips editor", r.CLIPS_SHARE_MODAL = "clips share modal", r.CHANNEL_ATTACH_BUTTON = "channel attach button", r.PREMIUM_TRIAL_OFFER_ACTION_SHEET = "premium trial offer action sheet", r.PREMIUM_SUBSCRIBER_NITRO_HOME = "premium subscriber nitro home", r.CLYDE_PROFILE_SHARE_MODAL = "clyde profile share modal", r.GUILD_EVENT_MODAL = "guild event modal", r.GUILD_EVENT_CARD = "guild event card", r.EVENT_SETTINGS = "event settings", r.GUILD_EVENT_RSVP_BUTTON = "guild event rsvp button", r.GIFT_CODE_MODAL = "gift code modal", r.APP_STOREFRONT = "app storefront", r.SHOP_PRODUCT_DETAILS = "shop product details", r.SEARCH_MEMBERS = "search members", r.POLL_VOTES = "poll votes", r.YOU_SCREEN = "you screen", r.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RESUME_PREVIEW = "billing payment modal paused subscription resume invoice preview", r.BILLING_PAUSED_SUBSCRIPTION_INVOICE_RENEWAL_PREVIEW = "billing payment modal paused subscription renewal invoice preview", r.CLAN_GUILD_PROFILE = "clan guild profile", r.CLAN_TAG = "clan tag", r.CLAN_DISCOVERY = "clan discovery", t.default = i
         },
         98302: function(e, t, n) {
             "use strict";
@@ -87594,8 +87591,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291188", "291188"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291188")), t = 0), t
+                let t = parseInt((e = "291211", "291211"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291211")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -101935,8 +101932,20 @@
                 getProgressStepAnalyticsName: function() {
                     return I
                 },
+                trackClanAdminInviteClicked: function() {
+                    return h
+                },
+                trackClanAdminInviteViewed: function() {
+                    return S
+                },
                 trackClanApplyToJoinViewed: function() {
                     return u
+                },
+                trackClanDiscoveryUserNuxClicked: function() {
+                    return f
+                },
+                trackClanDiscoveryUserNuxViewed: function() {
+                    return T
                 },
                 trackClanProfileViewed: function() {
                     return l
@@ -102046,6 +102055,34 @@
                     default:
                         return e
                 }
+            }
+
+            function T() {
+                a.default.track(o.AnalyticEvents.CLAN_DISCOVERY_USER_NUX_VIEWED)
+            }
+
+            function f() {
+                a.default.track(o.AnalyticEvents.CLAN_DISCOVERY_USER_NUX_CLICKED)
+            }
+
+            function S(e) {
+                let {
+                    location: t
+                } = e;
+                a.default.track(o.AnalyticEvents.CLAN_ADMIN_INVITE_VIEWED, {
+                    location: t
+                })
+            }
+
+            function h(e) {
+                let {
+                    guildId: t,
+                    location: n
+                } = e;
+                a.default.track(o.AnalyticEvents.CLAN_ADMIN_INVITE_CLICKED, {
+                    guild_id: t,
+                    location: n
+                })
             }
         },
         116175: function(e, t, n) {
@@ -114643,8 +114680,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291188",
-                    versionHash: "1462ac87a1b402042bbaf1ae201dfc35332bcc8f"
+                    buildNumber: "291211",
+                    versionHash: "b5f24daca14bb48efe481e9ee6322b7af7b3b4e7"
                 }
             }
             n.r(t), n.d(t, {
@@ -169992,8 +170029,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715112167231",
-                                    build_number: "291188"
+                                    built_at: "1715113203317",
+                                    build_number: "291211"
                                 }
                             },
                             retries: 1
@@ -210598,56 +210635,50 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return I
+                    return c
                 }
             });
             var i = n("735250");
             n("470079");
-            var r = n("120356"),
-                a = n.n(r),
-                s = n("10683"),
-                o = n("793080"),
-                l = n("481060"),
-                u = n("785717"),
-                d = n("702557"),
-                _ = n("537387"),
-                c = n("689938"),
-                E = n("742768");
+            var r = n("10683"),
+                a = n("793080"),
+                s = n("481060"),
+                o = n("785717"),
+                l = n("702557"),
+                u = n("537387"),
+                d = n("689938"),
+                _ = n("742768");
 
-            function I(e) {
+            function c(e) {
                 let {
                     user: t,
-                    isHovering: n,
-                    onOpenProfile: r
+                    onOpenProfile: n
                 } = e, {
-                    trackUserProfileAction: I
-                } = (0, u.useUserProfileAnalyticsContext)(), {
-                    loading: T,
-                    note: f
-                } = (0, d.default)(t.id), S = () => {
-                    I({
+                    trackUserProfileAction: c
+                } = (0, o.useUserProfileAnalyticsContext)(), {
+                    note: E
+                } = (0, l.default)(t.id), I = () => {
+                    c({
                         action: "PRESS_ADD_NOTE"
-                    }), r()
+                    }), n()
                 };
-                return T ? null : null == f || "" === f ? (0, i.jsx)(_.default, {
-                    text: c.default.Messages.ADD_NOTE,
-                    "aria-label": c.default.Messages.ADD_NOTE,
-                    icon: o.PaperPlusIcon,
-                    onClick: S,
-                    color: E.color,
-                    look: l.Button.Looks.BLANK,
-                    className: a()(E.button, {
-                        [E.visible]: n
-                    })
-                }) : (0, i.jsx)(_.default, {
-                    text: f,
-                    "aria-label": f,
-                    icon: s.PaperIcon,
-                    onClick: S,
-                    color: E.color,
-                    look: l.Button.Looks.BLANK,
-                    className: a()(E.button, E.visible),
-                    tooltipClassName: E.tooltip
+                return null == E || "" === E ? (0, i.jsx)(u.default, {
+                    text: d.default.Messages.ADD_NOTE,
+                    "aria-label": d.default.Messages.ADD_NOTE,
+                    icon: a.PaperPlusIcon,
+                    onClick: I,
+                    color: _.color,
+                    look: s.Button.Looks.BLANK,
+                    className: _.button
+                }) : (0, i.jsx)(u.default, {
+                    text: E,
+                    "aria-label": E,
+                    icon: r.PaperIcon,
+                    onClick: I,
+                    color: _.color,
+                    look: s.Button.Looks.BLANK,
+                    className: _.button,
+                    tooltipClassName: _.tooltip
                 })
             }
         },
@@ -210913,22 +210944,23 @@
                     height: 16,
                     color: "currentColor"
                 });
-                return r ? (0, i.jsx)(o.Tooltip, {
+                return r ? (0, i.jsx)(o.TooltipContainer, {
                     text: n,
                     color: o.TooltipColors.NESTED,
-                    children: e => (0, i.jsx)(s.Button, {
+                    "aria-label": _["aria-label"],
+                    children: (0, i.jsx)(s.Button, {
                         className: a()(l.compactButton, u),
                         innerClassName: a()(l.compactButtonInner, d),
                         color: a()(s.ButtonColors.PRIMARY, l.color),
                         look: s.Button.Looks.FILLED,
                         size: s.Button.Sizes.NONE,
                         grow: !1,
-                        ...e,
                         ..._,
                         children: c
                     })
                 }) : (0, i.jsxs)(s.Button, {
-                    innerClassName: a()(l.button, u),
+                    className: u,
+                    innerClassName: a()(l.button, d),
                     color: a()(s.ButtonColors.PRIMARY, l.color),
                     look: s.Button.Looks.FILLED,
                     size: s.Button.Sizes.MEDIUM,
@@ -210941,7 +210973,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return S
+                    return h
                 }
             });
             var i = n("735250");
@@ -210951,23 +210983,24 @@
                 s = n("442837"),
                 o = n("693789"),
                 l = n("235874"),
-                u = n("944613"),
-                d = n("607070"),
-                _ = n("605436"),
-                c = n("496675"),
-                E = n("729285"),
-                I = n("537387"),
-                T = n("689938"),
-                f = n("236219");
+                u = n("481060"),
+                d = n("944613"),
+                _ = n("607070"),
+                c = n("605436"),
+                E = n("496675"),
+                I = n("729285"),
+                T = n("993409"),
+                f = n("689938"),
+                S = n("236219");
 
-            function S(e) {
+            function h(e) {
                 let {
                     guild: t,
                     guildMember: n,
                     highestRole: r,
-                    onAddRole: S,
-                    className: h
-                } = e, A = (0, s.useStateFromStores)([d.default], () => d.default.roleStyle), m = e => (0, _.isNotEveryoneRoleId)(t.id, e.id) && !e.managed && c.default.isRoleHigher(t, r, e) && -1 === n.roles.indexOf(e.id);
+                    onAddRole: h,
+                    compact: A = !0
+                } = e, m = (0, s.useStateFromStores)([_.default], () => _.default.roleStyle), N = e => (0, c.isNotEveryoneRoleId)(t.id, e.id) && !e.managed && E.default.isRoleHigher(t, r, e) && -1 === n.roles.indexOf(e.id);
                 return (0, i.jsx)(l.Popout, {
                     position: "bottom",
                     align: "center",
@@ -210975,27 +211008,60 @@
                         let {
                             closePopout: n
                         } = e;
-                        return (0, i.jsx)(u.default, {
+                        return (0, i.jsx)(d.default, {
                             guild: t,
-                            roleStyle: A,
-                            roleFilter: m,
-                            onSelect: S,
+                            roleStyle: m,
+                            roleFilter: N,
+                            onSelect: h,
                             onClose: n
                         })
                     },
-                    children: e => (0, i.jsx)(I.default, {
+                    children: e => (0, i.jsx)(T.default, {
                         ...e,
-                        className: a()(f.button, h),
-                        innerClassName: f.buttonInner,
-                        text: T.default.Messages.USER_PROFILE_ADD_ROLE,
-                        icon: e => (0, i.jsx)(E.default, {
-                            ...e,
-                            width: 20,
-                            height: 20
+                        className: a()(S.button, {
+                            [S.compact]: A
                         }),
-                        color: f.color,
-                        look: o.Button.Looks.BLANK
+                        text: (0, i.jsx)(u.Text, {
+                            variant: "text-xs/medium",
+                            children: f.default.Messages.USER_PROFILE_ADD_ROLE
+                        }),
+                        "aria-label": f.default.Messages.USER_PROFILE_ADD_ROLE,
+                        icon: I.default,
+                        color: o.Button.Colors.CUSTOM,
+                        size: o.Button.Sizes.NONE,
+                        compact: A,
+                        grow: !1
                     })
+                })
+            }
+        },
+        544989: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return l
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("120356"),
+                a = n.n(r),
+                s = n("228168"),
+                o = n("330690");
+
+            function l(e) {
+                let {
+                    profileType: t,
+                    isHovering: n,
+                    children: r
+                } = e;
+                return (0, i.jsx)("div", {
+                    className: a()(o.wrapper, {
+                        [o.biteSize]: t === s.UserProfileTypes.BITE_SIZE,
+                        [o.fullSize]: t === s.UserProfileTypes.FULL_SIZE,
+                        [o.hovering]: n
+                    }),
+                    children: r
                 })
             }
         },
@@ -211336,36 +211402,6 @@
                             color: "currentColor"
                         })
                     })
-                })
-            }
-        },
-        980768: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return l
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("120356"),
-                a = n.n(r),
-                s = n("228168"),
-                o = n("36108");
-
-            function l(e) {
-                let {
-                    profileType: t,
-                    children: n,
-                    isFaded: r
-                } = e;
-                return (0, i.jsx)("div", {
-                    className: a()(o.wrapper, {
-                        [o.biteSize]: t === s.UserProfileTypes.BITE_SIZE,
-                        [o.fullSize]: t === s.UserProfileTypes.FULL_SIZE,
-                        [o.faded]: r
-                    }),
-                    children: n
                 })
             }
         },
@@ -213242,57 +213278,55 @@
                     currentUser: n,
                     displayProfile: h,
                     guild: A,
-                    isHovering: m,
-                    onOpenProfile: N,
-                    channelId: p,
-                    onClose: O
+                    onOpenProfile: m,
+                    channelId: N,
+                    onClose: p
                 } = e, {
-                    moreUserDetailsEnabled: R
+                    moreUserDetailsEnabled: O
                 } = (0, o.useSimplifiedProfileExperiment)({
                     location: "BiteSizeProfileBody"
-                }), C = s.default.getName(null == A ? void 0 : A.id, p, t), g = (0, r.useStateFromStores)([a.default], () => a.default.hidePersonalInformation);
+                }), R = s.default.getName(null == A ? void 0 : A.id, N, t), C = (0, r.useStateFromStores)([a.default], () => a.default.hidePersonalInformation);
                 return (0, i.jsxs)("div", {
                     className: S.body,
                     children: [(0, i.jsx)(d.default, {
                         user: t,
-                        onOpenProfile: () => N(!1),
+                        onOpenProfile: () => m(!1),
                         guildId: null == A ? void 0 : A.id,
                         usernameIcon: t.hasAvatarForGuild(null == A ? void 0 : A.id) && (0, i.jsx)(c.default, {
                             user: t,
-                            nickname: C
+                            nickname: R
                         }),
                         pronouns: null == h ? void 0 : h.pronouns,
                         tags: (0, i.jsx)(_.UserProfileBadgesTag, {
                             displayProfile: h,
-                            onClose: O
+                            onClose: p
                         }),
                         nicknameIcons: (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)(l.default, {
                                 userId: t.id
-                            }), R && !g && (0, i.jsx)(u.default, {
+                            }), O && !C && (0, i.jsx)(u.default, {
                                 user: t,
-                                isHovering: m,
-                                onOpenProfile: () => N(!0)
+                                onOpenProfile: () => m(!0)
                             })]
                         })
                     }), (0, i.jsx)(f.default, {
                         user: t,
-                        onClose: O
-                    }), R && (0, i.jsx)(I.default, {
+                        onClose: p
+                    }), O && (0, i.jsx)(I.default, {
                         user: t,
                         bio: null == h ? void 0 : h.bio,
-                        hidePersonalInformation: g,
-                        onClose: O
+                        hidePersonalInformation: C,
+                        onClose: p
                     }), (0, i.jsx)(E.default, {
                         user: t,
                         guild: A,
-                        channelId: p,
-                        onClose: O
+                        channelId: N,
+                        onClose: p
                     }), null != A && (0, i.jsx)(T.default, {
                         user: t,
                         currentUser: n,
                         guild: A,
-                        onOpenProfile: () => N(!1)
+                        onOpenProfile: () => m(!1)
                     })]
                 })
             }
@@ -213515,112 +213549,127 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return O
+                    return C
                 }
-            }), n("47120"), n("411104");
+            }), n("47120");
             var i = n("735250"),
                 r = n("470079"),
-                a = n("153832"),
-                s = n("924826"),
-                o = n("442837"),
-                l = n("481060"),
-                u = n("749210"),
-                d = n("412899"),
-                _ = n("112724"),
-                c = n("434404"),
-                E = n("271383"),
-                I = n("430824"),
-                T = n("496675"),
-                f = n("700785"),
-                S = n("785717"),
-                h = n("314172"),
-                A = n("981631"),
-                m = n("689938"),
-                N = n("705444");
-            let p = (0, _.default)(function(e) {
+                a = n("512722"),
+                s = n.n(a),
+                o = n("153832"),
+                l = n("924826"),
+                u = n("442837"),
+                d = n("481060"),
+                _ = n("749210"),
+                c = n("412899"),
+                E = n("112724"),
+                I = n("434404"),
+                T = n("271383"),
+                f = n("430824"),
+                S = n("496675"),
+                h = n("700785"),
+                A = n("785717"),
+                m = n("314172"),
+                N = n("981631"),
+                p = n("689938"),
+                O = n("705444");
+            let R = (0, E.default)(function(e) {
                 let {
                     user: t,
                     currentUser: n,
-                    guild: u,
-                    userRoles: _,
-                    highestRole: c,
-                    canManageRoles: E,
-                    width: T,
-                    onRemoveRole: S,
-                    onOpenProfile: h
-                } = e, p = r.useRef({}), [O, R] = r.useState(null), C = (0, o.useStateFromStores)([I.default], () => I.default.getRoles(u.id)), g = r.useMemo(() => {
-                    let e = Object.values(C).filter(e => _.includes(e.id)).sort((e, t) => {
-                        var n, i;
-                        let r = (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) !== null,
-                            a = (null === (i = t.tags) || void 0 === i ? void 0 : i.guild_connections) !== null;
-                        return r && !a ? 1 : !r && a ? -1 : 0
-                    });
-                    return null != O ? e.slice(0, O) : e
-                }, [C, O, _]), L = _.length - g.length;
+                    guild: a,
+                    guildMember: _,
+                    userRoles: E,
+                    highestRole: I,
+                    canManageRoles: T,
+                    width: S,
+                    onAddRole: A,
+                    onRemoveRole: R,
+                    onOpenProfile: C
+                } = e;
+                s()(null != S, "Unexpected null width");
+                let g = r.useRef({}),
+                    L = (e, t) => {
+                        null != t ? g.current[e] = t : delete g.current[e]
+                    },
+                    [v, D] = r.useState(null),
+                    M = (0, u.useStateFromStores)([f.default], () => f.default.getRoles(a.id)),
+                    y = r.useMemo(() => {
+                        let e = Object.values(M).filter(e => E.includes(e.id)).sort((e, t) => {
+                            var n, i;
+                            let r = (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) !== null,
+                                a = (null === (i = t.tags) || void 0 === i ? void 0 : i.guild_connections) !== null;
+                            return r && !a ? 1 : !r && a ? -1 : 0
+                        });
+                        return null != v ? e.slice(0, v) : e
+                    }, [M, v, E]),
+                    P = E.length - y.length,
+                    U = T && null != _ ? S - 32 - 30 : S - 32;
                 r.useLayoutEffect(() => {
-                    if ("number" != typeof T) throw Error("Unexpected null width");
                     let e = 0,
-                        t = 0,
-                        n = T - 32;
-                    for (let i = 0; i < 2; i++) {
                         t = 0;
-                        let r = 1 === i ? n : T;
-                        for (let n = e; n < g.length; n++) {
-                            let i = g[n],
-                                a = p.current[i.id];
+                    for (let n = 0; n < 2; n++) {
+                        t = 0;
+                        let i = 1 === n ? U : S;
+                        for (let n = e; n < y.length; n++) {
+                            let r = y[n],
+                                a = g.current[r.id];
                             if (null != a) {
-                                if ((t += a.offsetWidth) > r) break;
+                                if ((t += a.offsetWidth) > i) break;
                                 t += 4, e++
                             }
                         }
                     }
-                    R(t => e < g.length ? e : t)
-                }, [T, g]);
-                let v = r.useMemo(() => "roles-".concat((0, a.v4)()), []),
-                    D = (0, s.default)({
-                        id: v,
+                    D(t => e < y.length ? e : t)
+                }, [S, U, y]);
+                let b = r.useMemo(() => "roles-".concat((0, o.v4)()), []),
+                    G = (0, l.default)({
+                        id: b,
                         isEnabled: !0,
-                        scrollToStart: A.NOOP_PROMISE,
-                        scrollToEnd: A.NOOP_PROMISE,
+                        scrollToStart: N.NOOP_PROMISE,
+                        scrollToEnd: N.NOOP_PROMISE,
                         wrap: !0
                     }),
-                    M = g.map(e => {
+                    w = y.map(e => {
                         var r;
-                        return (0, i.jsx)(d.MemberRole, {
-                            className: N.role,
+                        return (0, i.jsx)(c.MemberRole, {
+                            className: O.role,
                             role: e,
-                            canRemove: E ? f.isRoleHigher(u, n.id, c, e) : (null === (r = e.tags) || void 0 === r ? void 0 : r.guild_connections) === null && t.id === n.id,
-                            onRemove: () => S(e),
-                            ref: t => {
-                                var n, i;
-                                return n = e.id, void(null != (i = t) ? p.current[n] = i : delete p.current[n])
-                            },
-                            guildId: u.id,
+                            canRemove: T ? h.isRoleHigher(a, n.id, I, e) : (null === (r = e.tags) || void 0 === r ? void 0 : r.guild_connections) === null && t.id === n.id,
+                            onRemove: () => R(e),
+                            ref: t => L(e.id, t),
+                            guildId: a.id,
                             disableBorderColor: !0
                         }, e.id)
                     });
-                return (0, i.jsx)(s.ListNavigatorProvider, {
-                    navigator: D,
-                    children: (0, i.jsx)(s.ListNavigatorContainer, {
+                return (0, i.jsx)(l.ListNavigatorProvider, {
+                    navigator: G,
+                    children: (0, i.jsx)(l.ListNavigatorContainer, {
                         children: e => {
                             let {
                                 ref: t,
                                 ...n
                             } = e;
                             return (0, i.jsxs)("div", {
-                                className: N.root,
-                                "aria-label": 0 === _.length ? m.default.Messages.ROLE_LIST_EMPTY : m.default.Messages.ROLES_LIST.format({
-                                    numRoles: _.length
+                                className: O.root,
+                                "aria-label": 0 === E.length ? p.default.Messages.ROLE_LIST_EMPTY : p.default.Messages.ROLES_LIST.format({
+                                    numRoles: E.length
                                 }),
                                 ref: t,
                                 ...n,
-                                children: [M, null != O && 0 !== L && (0, i.jsx)(l.Clickable, {
-                                    onClick: h,
-                                    className: N.overflowButton,
-                                    children: (0, i.jsx)(l.Text, {
+                                children: [w, null != v && 0 !== P && (0, i.jsx)(d.Clickable, {
+                                    onClick: C,
+                                    className: O.showMoreButton,
+                                    children: (0, i.jsx)(d.Text, {
                                         variant: "text-xs/medium",
-                                        children: "+".concat(L)
+                                        children: "+".concat(P)
                                     })
+                                }), T && null != _ && (0, i.jsx)(m.default, {
+                                    guild: a,
+                                    guildMember: _,
+                                    highestRole: I,
+                                    onAddRole: A,
+                                    compact: E.length > 0
                                 })]
                             })
                         }
@@ -213628,56 +213677,40 @@
                 })
             });
 
-            function O(e) {
+            function C(e) {
                 let {
                     user: t,
                     currentUser: n,
                     guild: a,
                     onOpenProfile: s
                 } = e, {
-                    trackUserProfileAction: d
-                } = (0, S.useUserProfileAnalyticsContext)(), _ = (0, o.useStateFromStores)([E.default], () => E.default.getMember(a.id, t.id)), I = null == _ ? void 0 : _.roles, O = null == I || 0 === I.length, R = f.getHighestRole(a, n.id), [C] = (0, o.useStateFromStoresArray)([T.default], () => [T.default.can(A.Permissions.MANAGE_ROLES, a), null != a ? T.default.getGuildVersion(a.id) : null]), g = r.useCallback(e => {
+                    trackUserProfileAction: o
+                } = (0, A.useUserProfileAnalyticsContext)(), l = (0, u.useStateFromStores)([T.default], () => T.default.getMember(a.id, t.id)), d = null == l ? void 0 : l.roles, c = null == d || 0 === d.length, E = h.getHighestRole(a, n.id), [f] = (0, u.useStateFromStoresArray)([S.default], () => [S.default.can(N.Permissions.MANAGE_ROLES, a), null != a ? S.default.getGuildVersion(a.id) : null]), m = r.useCallback(e => {
                     var n, i;
-                    d({
+                    o({
                         action: "REMOVE_ROLE"
                     });
-                    let r = null !== (i = null == I ? void 0 : I.filter(t => t !== e.id)) && void 0 !== i ? i : [];
-                    (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) === null ? u.default.unassignGuildRoleConnection(a.id, e.id) : c.default.updateMemberRoles(a.id, t.id, r, [], [e.id])
-                }, [I, a.id, t.id, d]), L = r.useCallback(e => {
-                    d({
+                    let r = null !== (i = null == d ? void 0 : d.filter(t => t !== e.id)) && void 0 !== i ? i : [];
+                    (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) === null ? _.default.unassignGuildRoleConnection(a.id, e.id) : I.default.updateMemberRoles(a.id, t.id, r, [], [e.id])
+                }, [d, a.id, t.id, o]), p = r.useCallback(e => {
+                    o({
                         action: "ADD_ROLE"
                     });
-                    let n = null != I ? I : []; - 1 === n.indexOf(e) && (n = n.concat([e])), c.default.updateMemberRoles(a.id, t.id, n, [e], [])
-                }, [I, a.id, t.id, d]);
-                return O && !C ? null : (0, i.jsxs)("div", {
-                    className: N.container,
-                    children: [(0, i.jsxs)("div", {
-                        className: N.rolesHeader,
-                        children: [(0, i.jsx)(l.Heading, {
-                            variant: "text-xs/semibold",
-                            children: m.default.Messages.ROLES
-                        }), C && null != _ && (0, i.jsx)(h.default, {
-                            guild: a,
-                            guildMember: _,
-                            highestRole: R,
-                            onAddRole: L,
-                            className: N.addRoleButton
-                        })]
-                    }), O ? (0, i.jsx)(l.Text, {
-                        variant: "text-sm/normal",
-                        children: m.default.Messages.ROLE_LIST_EMPTY
-                    }) : (0, i.jsx)("div", {
-                        children: (0, i.jsx)(p, {
-                            user: t,
-                            currentUser: n,
-                            guild: a,
-                            userRoles: I,
-                            highestRole: R,
-                            canManageRoles: C,
-                            onRemoveRole: g,
-                            onOpenProfile: s
-                        })
-                    })]
+                    let n = null != d ? d : []; - 1 === n.indexOf(e) && (n = n.concat([e])), I.default.updateMemberRoles(a.id, t.id, n, [e], [])
+                }, [d, a.id, t.id, o]);
+                return c && !f ? null : (0, i.jsx)("div", {
+                    children: (0, i.jsx)(R, {
+                        user: t,
+                        currentUser: n,
+                        guild: a,
+                        guildMember: l,
+                        userRoles: null != d ? d : [],
+                        highestRole: E,
+                        canManageRoles: f,
+                        onAddRole: p,
+                        onRemoveRole: m,
+                        onOpenProfile: s
+                    })
                 })
             }
         },
@@ -213731,10 +213764,10 @@
                 I = n("785717"),
                 T = n("318661"),
                 f = n("502762"),
-                S = n("301984"),
-                h = n("94918"),
-                A = n("664794"),
-                m = n("980768"),
+                S = n("544989"),
+                h = n("301984"),
+                A = n("94918"),
+                m = n("664794"),
                 N = n("171368"),
                 p = n("958120"),
                 O = n("215633"),
@@ -213800,17 +213833,17 @@
                                 user: t,
                                 displayProfile: F,
                                 profileType: C.UserProfileTypes.BITE_SIZE,
-                                children: [(0, i.jsxs)(m.default, {
+                                children: [(0, i.jsxs)(S.default, {
                                     profileType: C.UserProfileTypes.BITE_SIZE,
-                                    isFaded: (null == F ? void 0 : F.profileEffectId) != null && !H,
-                                    children: [(0, i.jsx)(h.default, {
+                                    isHovering: H,
+                                    children: [(0, i.jsx)(A.default, {
                                         user: t,
                                         guildId: n,
                                         channelId: v,
                                         onClose: y
-                                    }), (0, i.jsx)(S.default, {
+                                    }), (0, i.jsx)(h.default, {
                                         user: t
-                                    }), (0, i.jsx)(A.default, {
+                                    }), (0, i.jsx)(m.default, {
                                         user: t,
                                         guildId: n,
                                         viewProfileItem: (0, i.jsx)(s.MenuItem, {
@@ -213836,7 +213869,6 @@
                                     currentUser: B,
                                     displayProfile: F,
                                     guild: k,
-                                    isHovering: H,
                                     onOpenProfile: Y,
                                     channelId: v,
                                     onClose: y
@@ -248048,7 +248080,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "1462ac87a1b402042bbaf1ae201dfc35332bcc8f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "b5f24daca14bb48efe481e9ee6322b7af7b3b4e7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276732,7 +276764,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291188"
+                                build_number: "291211"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284081,7 +284113,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291188", "291188"), 10);
+                let a = parseInt((n = "291211", "291211"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -311580,4 +311612,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.dbff9d136169b4771138.js.map
+//# sourceMappingURL=35705.45ad380279b77952d176.js.map

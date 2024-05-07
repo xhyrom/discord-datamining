@@ -25355,8 +25355,7 @@
             e.exports = {
                 button: "button__7b26d",
                 color: "color_df1d13",
-                tooltip: "tooltip__74218",
-                visible: "visible__95288"
+                tooltip: "tooltip__74218"
             }
         },
         194502: function(e) {
@@ -25427,8 +25426,16 @@
             "use strict";
             e.exports = {
                 button: "button__6d63b",
-                buttonInner: "buttonInner_e7cd38",
-                color: "color__67b07"
+                compact: "compact_ac394c"
+            }
+        },
+        330690: function(e) {
+            "use strict";
+            e.exports = {
+                biteSize: "biteSize__89563",
+                fullSize: "fullSize__51728",
+                hovering: "hovering_ad089d",
+                wrapper: "wrapper__7f8df"
             }
         },
         142354: function(e) {
@@ -25437,15 +25444,6 @@
                 button: "button_e8c966",
                 buttonInner: "buttonInner__915b1",
                 color: "color_b28e35"
-            }
-        },
-        36108: function(e) {
-            "use strict";
-            e.exports = {
-                biteSize: "biteSize_b43281",
-                faded: "faded__699a5",
-                fullSize: "fullSize_c7ae09",
-                wrapper: "wrapper__3abe0"
             }
         },
         583483: function(e) {
@@ -25639,8 +25637,6 @@
         914672: function(e) {
             "use strict";
             e.exports = {
-                addButton: "addButton__3202c pill__6a2f4",
-                addButtonIcon: "addButtonIcon__7dfdc",
                 pill: "pill__6a2f4",
                 role: "role__31c33 pill__6a2f4",
                 root: "root_a2f407"
@@ -25831,13 +25827,10 @@
         705444: function(e) {
             "use strict";
             e.exports = {
-                addRoleButton: "addRoleButton__3dbb8",
-                container: "container_badb01",
-                overflowButton: "overflowButton_dcc4c2 pill__54982",
                 pill: "pill__54982",
                 role: "role_a3571c pill__54982",
-                rolesHeader: "rolesHeader__23273",
-                root: "root__076be"
+                root: "root__076be",
+                showMoreButton: "showMoreButton__50b95 pill__54982"
             }
         },
         659829: function(e) {
