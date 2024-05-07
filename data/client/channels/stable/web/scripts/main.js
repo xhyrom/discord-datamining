@@ -5535,42 +5535,6 @@
             "use strict";
             e.exports = n.p + "36d64eef3d5b407d7106.svg"
         },
-        307536: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "5c4d9c5a2c4ead446bf7.svg"
-        },
-        408263: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "8082d1a66f2fb91e3641.svg"
-        },
-        585025: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "754e77ca7a2b4114fd06.svg"
-        },
-        444816: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "e1ca5bfd26d13f74b5ec.svg"
-        },
-        12008: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "f4ebd032f4be9d1271f0.svg"
-        },
-        136050: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "f7cfa41aec298eb597ed.svg"
-        },
-        924936: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "475287faf2161971d084.svg"
-        },
-        409814: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "c055a7380a3f2207e772.svg"
-        },
-        114266: function(e, t, n) {
-            "use strict";
-            e.exports = n.p + "150636fa20487fbd8258.svg"
-        },
         185672: function(e, t, n) {
             "use strict";
             e.exports = n.p + "ce9a6ca881a8a51b7496.png"
@@ -19749,47 +19713,49 @@
                     useStoreStream: a = !0,
                     showActions: l = !0,
                     hideHeader: d = !1,
-                    analyticsParams: _,
-                    ...v
-                } = e, U = (0, o.useStateFromStores)([C.default, p.default], () => {
+                    showGuildDetails: _ = !1,
+                    analyticsParams: v,
+                    ...U
+                } = e, b = (0, o.useStateFromStores)([C.default, p.default], () => {
                     var e;
                     return p.default.getChannel(null === (e = C.default.getVoiceStateForUser(n.id)) || void 0 === e ? void 0 : e.channelId)
                 }), {
-                    enableHangStatus: b
+                    enableHangStatus: G
                 } = A.HangStatusExperiment.useExperiment({
-                    guildId: null == U ? void 0 : U.guild_id,
+                    guildId: null == b ? void 0 : b.guild_id,
                     location: "UserActivityContainer"
                 }, {
                     autoTrackExposure: !1
-                }), G = (0, o.useStateFromStores)([N.default], () => a ? N.default.getAnyStreamForUser(n.id) : null), w = b && R.default.can(D.Permissions.CONNECT, U), B = (null == t ? void 0 : t.type) === D.ActivityTypes.HANG_STATUS && w ? U : null, k = (0, o.useStateFromStores)([O.default, C.default, p.default], () => {
+                }), w = (0, o.useStateFromStores)([N.default], () => a ? N.default.getAnyStreamForUser(n.id) : null), B = G && R.default.can(D.Permissions.CONNECT, b), k = (null == t ? void 0 : t.type) === D.ActivityTypes.HANG_STATUS && B ? b : null, V = (0, o.useStateFromStores)([O.default, C.default, p.default], () => {
                     var e, i;
-                    return (0, u.default)(t, D.ActivityFlags.EMBEDDED) ? O.default.getGuild(null === (e = p.default.getChannel(null === (i = C.default.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) || void 0 === i ? void 0 : i.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null != B ? O.default.getGuild(B.getGuildId()) : null
-                }), V = (0, o.useStateFromStores)([O.default], () => null != G ? O.default.getGuild(G.guildId) : null), x = (0, o.useStateFromStores)([c.default], () => {
+                    return (0, u.default)(t, D.ActivityFlags.EMBEDDED) ? O.default.getGuild(null === (e = p.default.getChannel(null === (i = C.default.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) || void 0 === i ? void 0 : i.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null != k ? O.default.getGuild(k.getGuildId()) : null
+                }), x = (0, o.useStateFromStores)([O.default], () => null != w ? O.default.getGuild(w.guildId) : null), F = (0, o.useStateFromStores)([c.default], () => {
                     if (null != t) return null != t.application_id ? c.default.getApplication(t.application_id) : c.default.getApplicationByName(t.name);
                     return null
-                }), F = (0, E.default)(), H = (0, h.default)(n), Y = F && null != t && H;
+                }), H = (0, E.default)(), Y = (0, h.default)(n), j = H && null != t && Y;
                 return (r.useEffect(() => {
-                    (null == t ? void 0 : t.type) === D.ActivityTypes.HANG_STATUS && w && L.default.track(D.AnalyticEvents.VIEW_HANG_STATUS, {
+                    (null == t ? void 0 : t.type) === D.ActivityTypes.HANG_STATUS && B && L.default.track(D.AnalyticEvents.VIEW_HANG_STATUS, {
                         source: "UserProfilePopout",
-                        guild_id: null == B ? void 0 : B.guild_id,
-                        channel_id: null == B ? void 0 : B.id
+                        guild_id: null == k ? void 0 : k.guild_id,
+                        channel_id: null == k ? void 0 : k.id
                     })
-                }, [null == t ? void 0 : t.type, w, B]), (null == t ? void 0 : t.type) !== D.ActivityTypes.HANG_STATUS || w) ? (0, i.jsx)(g.default, {
-                    ...v,
+                }, [null == t ? void 0 : t.type, B, k]), (null == t ? void 0 : t.type) !== D.ActivityTypes.HANG_STATUS || B) ? (0, i.jsx)(g.default, {
+                    ...U,
                     activity: t,
                     user: n,
-                    application: x,
+                    application: F,
                     hideHeader: d,
-                    activityGuild: null != k ? k : V,
-                    showReactions: Y,
+                    activityGuild: null != V ? V : x,
+                    showReactions: j,
+                    showGuildDetails: _,
                     renderActions: l ? () => (0, i.jsxs)("div", {
-                        className: s()(Y && y.actionsWrapper),
+                        className: s()(j && y.actionsWrapper),
                         children: [(0, i.jsx)(P, {
-                            ...v,
-                            applicationStream: G,
+                            ...U,
+                            applicationStream: w,
                             activity: t,
                             user: n
-                        }), Y && (0, i.jsx)(I.default, {
+                        }), j && (0, i.jsx)(I.default, {
                             showReact: !0,
                             showReply: !0,
                             replyHeaderText: M.default.Messages.ACTIVITY_REACTION_REPLY_TITLE.format({
@@ -19807,21 +19773,21 @@
                                 L.default.track(D.AnalyticEvents.ACTIVITY_REACTOR_INTERACTED, {
                                     application_id: t.application_id,
                                     interaction_type: i,
-                                    ..._
+                                    ...v
                                 }), i === T.AtomicReactorInteractionTypes.ReactSubmit && null != r && (0, f.sendReactionToActivity)({
                                     reaction: r,
                                     user: n,
                                     activity: t,
-                                    application: x,
+                                    application: F,
                                     altText: (0, S.getActivityAltText)(n, t),
-                                    stream: G
+                                    stream: w
                                 }), i === T.AtomicReactorInteractionTypes.ReplySubmit && null != a && (0, f.sendReplyToActivity)({
                                     reply: a,
                                     user: n,
                                     activity: t,
-                                    application: x,
+                                    application: F,
                                     altText: (0, S.getActivityAltText)(n, t),
-                                    stream: G
+                                    stream: w
                                 })
                             }
                         })]
@@ -25966,6 +25932,12 @@
             "use strict";
             n.r(t);
             var i = n("919029");
+            n.es(i, t)
+        },
+        304497: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("927515");
             n.es(i, t)
         },
         690597: function(e, t, n) {
@@ -37030,7 +37002,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290810", ", Version Hash: ").concat("7f04734cc15850b458f1be1df4515f2c07f1639a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290998", ", Version Hash: ").concat("7b0693ab56a5123978cafefca1e10e70daf950f6")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -42817,6 +42789,7 @@
                 CLIENT_THEMES_GRADIENT_SEPIA: "Sepia",
                 CLIENT_THEMES_GRADIENT_STRAWBERRY_LEMONADE: "Strawberry Lemonade",
                 CLIENT_THEMES_GRADIENT_AURORA: "Aurora",
+                CLIENT_THEMES_GRADIENT_BLURPLE_TWILIGHT: "Blurple Twilight",
                 CLIENT_THEMES_GRADIENT_MINT_APPLE: "Mint Apple",
                 CLIENT_THEMES_GRADIENT_CITRUS_SHERBERT: "Citrus Sherbert",
                 CLIENT_THEMES_GRADIENT_RETRO_RAINCLOUD: "Retro Raincloud",
@@ -44902,6 +44875,7 @@
                 PREMIUM_TIER_SERVER_BOOST_WITH_PERCENTAGE_ITEM: "{numBoosts, plural, =1 {# Server Boost} other {# Server Boosts}} + !!{percentageOff}!! off others",
                 PREMIUM_TIER_CUSTOM_PROFILE_ITEM: "Custom profiles and more!",
                 PREMIUM_TIER_0_MOBILE_PREMIUM_BADGE: "Starting at {monthlyPrice}",
+                PREMIUM_TIER_CLIENT_THEMES_ITEM: "Color app themes",
                 PREMIUM_TIER_2_TITLE: "Get an enhanced Discord experience for one low monthly cost.",
                 PREMIUM_TIER_2_SUBTITLE: "Customize your profile with a unique tag, access animated emoji, enjoy bigger file uploads, boost your favorite server, and more.",
                 PREMIUM_TIER_2_TRIAL_CTA_SUBTITLE: "Claim by signing up for Nitro and start your emoji collection today.",
@@ -46395,6 +46369,16 @@
                 PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_BOOSTS: "{numBoosts} Boosts + {percentageOff} off extra Boosts",
                 PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_PROFILE_THEMES: "Animated avatar, banner, and profile theme",
                 PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_SERVER_PROFILE: "Custom server profiles",
+                MARKETING_PAGE_COMPARISON_TABLE_PROFILE_THEMES_V2: "Custom profiles",
+                MARKETING_PAGE_COMPARISON_TABLE_CUSTOM_SOUNDS_V2: "Soundboard sounds anywhere",
+                MARKETING_PAGE_COMPARISON_TABLE_SERVER_PROFILES_V2: "Per-server profiles",
+                MARKETING_PAGE_COMPARISON_TABLE_ENTRANCE_SOUNDS_V2: "Entrance sounds",
+                MARKETING_PAGE_COMPARISON_TABLE_CUSTOM_EMOJI_V2: "Animated and custom emojis anywhere",
+                MARKETING_PAGE_COMPARISON_TABLE_CLIENT_THEME_V2: "20+ app theme colors",
+                MARKETING_PAGE_COMPARISON_TABLE_EARLY_ACCESS: "Early Access",
+                MARKETING_PAGE_COMPARISON_TABLE_SHOW_OFF_YOUR_STYLE_SECTION_V2: "Show off your style",
+                MARKETING_PAGE_COMPARISON_TABLE_YOUR_SPACE_SECTION_V2: "Make this place, your space",
+                MARKETING_PAGE_COMPARISON_TABLE_NO_LIMIT_ALL_FUN_SECTION_V2: "No limits, all fun",
                 PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_SHOP_DISCOUNTS_GENERIC: "Shop member pricing, and exclusive items",
                 PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_CLIENT_THEME: "Colors for your Discord theme",
                 PREMIUM_TIER_0_DESKTOP_MARKETING_COMPARISON_TABLE_ROW_LABEL_BADGE: "Nitro badge on your profile",
@@ -47989,6 +47973,7 @@
                 USER_PROFILE_HEADER_A11Y_ANIMATE: "Animate Profile Banner GIF",
                 USER_PROFILE_HEADER_A11Y_LABEL: "{username}'s User Profile Banner",
                 USER_PROFILE_ACTIVITY_LISTENING_TO: "Listening to **{name}**",
+                USER_PROFILE_IN_GUILD_DETAILS: "in {guildName}",
                 SERVER_INSIGHTS: "Server Insights",
                 GUILD_ANALYTICS_DESCRIPTION: "We’ve put together a bunch of helpful data to help you better run your community. Learn how active your community is, where new members are coming from, and much more. Use what you learn to make informed decisions to improve your server’s engagement!\n\nAnalytics about Announcement Channels, Server Discovery, and Welcome Screen also live here.",
                 GUILD_ANALYTICS_DEVELOPERS_CTA: "Server Insights is hosted on a separate website so that it’s easier to share links and browse cross platform.",
@@ -50724,6 +50709,7 @@
                 PREMIUM_CANCEL_WHAT_YOU_LOSE_BACK: "Nevermind, keep Nitro",
                 PREMIUM_CANCEL_WHAT_YOU_LOSE_BACK_CTA: "Never mind, keep Nitro",
                 PREMIUM_CANCEL_WHAT_YOU_LOSE_SUBTITLE_TENURE_REWARD: "If you cancel, you will lose your reward progress and all of these rewards:",
+                PREMIUM_CANCEL_WHAT_YOU_LOSE_SUBTITLE_TENURE_REWARD_V2: "If you cancel, you will lose your reward progress and all of these perks:",
                 PREMIUM_PAUSE_INSTEAD: "Pause Instead",
                 PREMIUM_PAUSE_SELECT_TITLE: "Pause or cancel subscription",
                 PREMIUM_PAUSE_SELECT_SUBTITLE: "If you want to take a break from paid subscriptions, you have the option to pause it for a few months",
@@ -50849,6 +50835,7 @@
                 PREMIUM_SUBSCRIPTION_ONE_TIME_PAYMENT_PAST_DUE_SUBSCRIPTION_TEXT_NO_ACTION: "Your Nitro subscription expired {daysPastDue, plural, =0 {today} =1 {# day ago} other {# days ago}}.",
                 PREMIUM_SUBSCRIPTION_PAST_DUE_RENEW_NOW_BUTTON_TEXT: "Renew Now",
                 PREMIUM_MARKETING_HERO_HEADER_TITLE: "Unleash More Fun with Nitro",
+                PREMIUM_MARKETING_HERO_HEADER_TITLE_V2: "Explore a World of Perks with Nitro",
                 PREMIUM_MARKETING_HERO_HEADER_DESCRIPTION: "Plans start at only {cheapestMonthlyPrice}/month. Cancel anytime",
                 PREMIUM_MARKETING_TIER_2_CTA_COPY: "Get access to all the Nitro perks, including HD video, 2 Server Boosts, and more.",
                 PREMIUM_MARKETING_TIER_0_CTA_COPY_V2: "Get access to custom emoji & stickers, {uploadSize} uploads, and more.",
@@ -51805,6 +51792,8 @@
                 GUILD_AUTOMOD_NOTIFICATION_MARK_AS_RESOLVED: "Mark as resolved",
                 GUILD_AUTOMOD_NOTIFICATION_MENTION_RAID_TITLE: "Unusual Mention Activity Detected",
                 GUILD_AUTOMOD_NOTIFICATION_MENTION_RAID_DESCRIPTION: "We're restricting some messages due to a potential mention raid.",
+                GUILD_AUTOMOD_NOTFICATION_MODAL_BLOCKED_TITLE: "Modal Blocked",
+                GUILD_AUTOMOD_NOTFICATION_MODAL_BLOCKED_DESCRIPTION: "Your last action failed because the application tried to open a modal that contained content blocked by this server.",
                 MEMBER_SAFETY_CHANNEL_TITLE: "Members",
                 MEMBER_SAFETY_TABLE_TITLE: "Recent Members",
                 MEMBER_SAFETY_TABLE_TITLE_SEARCH: "Search Results",
@@ -55314,7 +55303,10 @@
                 POLL_END_EARLY_CONFIRMATION_TITLE: "End Poll Now?",
                 POLL_END_EARLY_CONFIRMATION_TEXT: "This will close the poll immediately and reveal the results.",
                 POLL_SENT_NOTIFICATION: "[poll] !!{question}!!",
-                POLL_RESULT_MESSAGE_TITLE: "Poll results are in",
+                POLL_RESULT_MESSAGE_HEADER: "The poll [!!{title}!!](titleOnClick) has closed.",
+                POLL_RESULT_REPLY_TEXT: "The poll **{title}** has closed",
+                POLL_RESULT_NO_VOTERS: "There was no winner",
+                POLL_RESULT_TIED: "The results were tied",
                 POLL_RESULT_WINNING: "Winning answer",
                 POLL_RESULT_VIEW_POLL: "View Poll",
                 SUMMONED: "Summoned!",
@@ -55518,11 +55510,16 @@
                 MEMBER_LIST_CONTENT_FEED_EPIC_MARATHON: "Epic-Marathon",
                 MEMBER_LIST_CONTENT_FEED_PLAYED_FOR_HOURS: "Played for {hours}h",
                 MEMBER_LIST_CONTENT_FEED_STREAK_DAYS: "{days}x Streak",
-                MEMBER_LIST_CONTENT_POPOUT_USER_PLAYING: "$[{countOthers, plural, =0 {{user1} is} =1 {{user1} and {user2} are} other {{user1} and {countOthers} others are}}](nameHook) playing",
-                MEMBER_LIST_CONTENT_POPOUT_USER_PLAYED: "$[{countOthers, plural, =0 {{user1}} =1 {{user1} and {user2}} other {{user1} and {countOthers} others}}](nameHook) played",
-                MEMBER_LIST_CONTENT_POPOUT_USER_WATCHING: "$[{countOthers, plural, =0 {{user1} is} =1 {{user1} and {user2} are} other {{user1} and {countOthers} others are}}](nameHook) watching",
-                MEMBER_LIST_CONTENT_POPOUT_USER_WATCHED: "$[{countOthers, plural, =0 {{user1}} =1 {{user1} and {user2}} other {{user1} and {countOthers} others}}](nameHook) watched",
+                MEMBER_LIST_CONTENT_FEED_LISTENING_TO_MEDIA: "Listening to **{media}**",
+                MEMBER_LIST_CONTENT_FEED_LISTENED_TO_MEDIA: "Listened to **{media}**",
+                MEMBER_LIST_CONTENT_FEED_USER_LISTENING_TO_MEDIA_ARTIST: "{userName} is listening to **{media}** by **{artist}**",
+                MEMBER_LIST_CONTENT_POPOUT_USER_PLAYING: "{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} playing",
+                MEMBER_LIST_CONTENT_POPOUT_USER_PLAYED: "{countOthers, plural, =0 {$[{user1}](nameHook)} =1 {$[{user1}](nameHook) and $[{user2}](nameHook)} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others}} played",
+                MEMBER_LIST_CONTENT_POPOUT_USER_WATCHING: "{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} watching",
+                MEMBER_LIST_CONTENT_POPOUT_USER_WATCHED: "{countOthers, plural, =0 {$[{user1}](nameHook)} =1 {$[{user1}](nameHook) and $[{user2}](nameHook)} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others}} watched",
                 MEMBER_LIST_CONTENT_POPOUT_USER_STREAMING: "$[{countOthers, plural, =0 {{user1} is} =1 {{user1} and {user2} are} other {{user1} and {countOthers} others are}}](nameHook) streaming",
+                MEMBER_LIST_CONTENT_POPOUT_USER_LISTENED: "{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} listened to",
+                MEMBER_LIST_CONTENT_POPOUT_USER_LISTENING: "{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} listening to",
                 MEMBER_LIST_CONTENT_POPOUT_BLOCKED_USER_WARNING: "Users you've blocked or muted are in this voice channel",
                 CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity",
                 CONTENT_INVENTORY_MEMBERLIST_SETTINGS_HIDE: "Hide Activity Cards",
@@ -55875,12 +55872,15 @@
                 CLAN_UPSELL_CONTENT: "Want to recruit more people to play games in your server?",
                 CLAN_UPSELL_CONTENT_VALORANT: "Want to recruit more people to play Valorant in your server?",
                 CLAN_UPSELL_CONTENT_GENSHIN: "Want to recruit more people to play Genshin Impact in your server?",
+                CLAN_CHANNEL_LIST_ADMIN_UPSELL_TITLE: "Your Guilds Invite is ready!",
+                CLAN_CHANNEL_LIST_ADMIN_UPSELL_VALORANT_MESSAGE: "Recruit new Valorant players to your server based on playstyle and vibe.",
+                CLAN_CHANNEL_LIST_ADMIN_UPSELL_GENSHIN_MESSAGE: "Recruit new Genshin players to your server based on playstyle and vibe.",
                 CLAN_SETUP_MODAL_SAVE_AND_QUIT: "Save & Exit",
                 CLAN_SETUP_APPLICATION_TITLE: "Add questions for prospective members to answer.",
                 CLAN_SETUP_APPLICATION_SUBTITLE: "You'll be able to review applications for each applicant and approve, deny, or interview them before they join.",
                 CLAN_SETUP_GAMES_TITLE: "What games does your Guild play?",
                 CLAN_SETUP_GAMES_SUBTITLE: "You can always add more games later.",
-                CLAN_SETUP_GAMES_SEARCH_PLACEHOLDER: "Look for a game...",
+                CLAN_SETUP_GAMES_SEARCH_PLACEHOLDER: "Search for a game...",
                 CLAN_SETUP_SELECTED_GAMES: "Selected Games",
                 CLAN_SETUP_PLAYSTYLE_TITLE: "What's your Guild's playstyle?",
                 CLAN_SETUP_PLAYSTYLE_SUBTITLE: "Let potential members know how people in your Guild generally play games.",
@@ -55960,6 +55960,7 @@
                 CLAN_SETUP_OVERVIEW_SIGNATURE: "sign here",
                 CLAN_SETUP_OVERVIEW_SIGN_CTA: "Click to Sign",
                 CLAN_SETUP_OVERVIEW_SIGN_HELP: "By signing this charter, I agree to grow and uphold the values of the Guild.",
+                CLAN_SETUP_OVERVIEW_SIGN_AGREEMENT: "By becoming a Guild, you agree that your server complies with the [Discovery Guidelines](onGuidelinesClick).",
                 CLAN_OVERVIEW_LIST_TWO_ITEMS: "!!{item1}!! and !!{item2}!!",
                 CLAN_OVERVIEW_LIST_MULTIPLE_ITEMS: "!!{items}!!, and !!{last}!!",
                 CLAN_OVERVIEW_LIST_OTHERS_COUNT: "{n, plural, one {1 other} other {{n} others}}",
@@ -66109,7 +66110,7 @@
                     if ((0, O.isActivityInTextStart)(e, o.applicationId, h.default, S.default) || n) {
                         let t;
                         try {
-                            t = await (0, _.default)(e, o.applicationId)
+                            n && (t = await (0, _.default)(e, o.applicationId))
                         } catch (e) {
                             if (e.message !== _.NO_PRIMARY_APP_COMMAND_ERROR) throw e
                         }
@@ -67348,23 +67349,24 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return a
+                    return s
                 }
             });
             var i = n("668781"),
-                r = n("689938");
+                r = n("624138"),
+                a = n("689938");
 
-            function a(e, t, n, a) {
-                var s, o;
+            function s(e, t, n, s) {
+                var o;
                 i.default.show({
-                    title: r.default.Messages.EMBEDDED_ACTIVITY_CHANGE_CONFIRM_TITLE,
-                    cancelText: r.default.Messages.CANCEL,
-                    confirmText: r.default.Messages.CONFIRM,
+                    title: a.default.Messages.EMBEDDED_ACTIVITY_CHANGE_CONFIRM_TITLE,
+                    cancelText: a.default.Messages.CANCEL,
+                    confirmText: a.default.Messages.CONFIRM,
                     onConfirm: n,
-                    onCancel: a,
-                    body: r.default.Messages.EMBEDDED_ACTIVITY_CHANGE_ACTIVITY_CONFIRM_BODY.format({
-                        currentApplicationName: null !== (s = null == e ? void 0 : e.name) && void 0 !== s ? s : r.default.Messages.EMBEDDED_ACTIVITY_CURRENT_APPLICATION_DEFAULT,
-                        currentApplicationChannelName: null !== (o = null == t ? void 0 : t.name) && void 0 !== o ? o : r.default.Messages.EMBEDDED_ACTIVITY_CURRENT_APPLICATION_CHANNEL_DEFAULT
+                    onCancel: s,
+                    body: a.default.Messages.EMBEDDED_ACTIVITY_CHANGE_ACTIVITY_CONFIRM_BODY.format({
+                        currentApplicationName: null !== (o = null == e ? void 0 : e.name) && void 0 !== o ? o : a.default.Messages.EMBEDDED_ACTIVITY_CURRENT_APPLICATION_DEFAULT,
+                        currentApplicationChannelName: (0, r.isNullOrEmpty)(null == t ? void 0 : t.name) ? a.default.Messages.EMBEDDED_ACTIVITY_CURRENT_APPLICATION_CHANNEL_DEFAULT : null == t ? void 0 : t.name
                     })
                 })
             }
@@ -69503,7 +69505,8 @@
                                 color: G,
                                 look: w,
                                 isEmbedded: V,
-                                onAction: k
+                                onAction: k,
+                                channelId: U
                             }, "join-activity-button"), (0, i.jsx)(g.default, {
                                 activity: t,
                                 user: n,
@@ -69698,31 +69701,32 @@
                     hover: H,
                     user: Y,
                     onAction: j,
-                    isEmbedded: W = !1
+                    isEmbedded: W = !1,
+                    channelId: K
                 } = e, {
-                    analyticsLocations: K
-                } = (0, _.default)(), [z, Z] = r.useState(!1), X = (0, a.useStateFromStores)([p.default], () => p.default.getCurrentUser()), Q = null == t ? void 0 : t.application_id, q = (0, a.useStateFromStores)([v.default], () => W ? v.default.getEmbeddedActivityForUserId(Y.id, Q) : null, [Y.id, W, Q]), J = (0, y.default)({
-                    channelId: null == q ? void 0 : q.channelId,
+                    analyticsLocations: z
+                } = (0, _.default)(), [Z, X] = r.useState(!1), Q = (0, a.useStateFromStores)([p.default], () => p.default.getCurrentUser()), q = null == t ? void 0 : t.application_id, J = (0, a.useStateFromStores)([v.default], () => W ? null != K && null != q ? v.default.getEmbeddedActivitiesForChannel(K).find(e => e.applicationId === q) : v.default.getEmbeddedActivityForUserId(Y.id, q) : null, [Y.id, W, q, K]), $ = (0, y.default)({
+                    channelId: null == J ? void 0 : J.channelId,
                     userId: Y.id,
                     activity: t
-                }), $ = (0, a.useStateFromStores)([h.default, E.default, C.default, T.default], () => W || (null == t ? void 0 : t.application_id) != null && (0, L.isLaunchable)({
+                }), ee = (0, a.useStateFromStores)([h.default, E.default, C.default, T.default], () => W || (null == t ? void 0 : t.application_id) != null && (0, L.isLaunchable)({
                     LibraryApplicationStore: h.default,
                     LaunchableGameStore: E.default,
                     DispatchApplicationStore: C.default,
                     ConnectedAppsStore: T.default,
                     applicationId: t.application_id
-                })), ee = (0, a.useStateFromStores)([v.default], () => Array.from(v.default.getSelfEmbeddedActivities().values()).some(e => {
+                })), et = (0, a.useStateFromStores)([v.default], () => Array.from(v.default.getSelfEmbeddedActivities().values()).some(e => {
                     let {
                         applicationId: n,
                         channelId: i
                     } = e;
-                    return n === (null == t ? void 0 : t.application_id) && i === J
-                })), et = (0, a.useStateFromStores)([R.default], () => null != t && null != t.application_id && R.default.getState(t.application_id, B.ActivityActionTypes.JOIN) === B.ActivityActionStates.LOADING), [en] = (0, c.default)((null == t ? void 0 : t.application_id) != null ? [null == t ? void 0 : t.application_id] : []), ei = (0, a.useStateFromStores)([I.default, S.default, f.default, m.default, N.default, O.default, A.default], () => (0, M.default)({
+                    return n === (null == t ? void 0 : t.application_id) && i === $
+                })), en = (0, a.useStateFromStores)([R.default], () => null != t && null != t.application_id && R.default.getState(t.application_id, B.ActivityActionTypes.JOIN) === B.ActivityActionStates.LOADING), [ei] = (0, c.default)((null == t ? void 0 : t.application_id) != null ? [null == t ? void 0 : t.application_id] : []), er = (0, a.useStateFromStores)([I.default, S.default, f.default, m.default, N.default, O.default, A.default], () => (0, M.default)({
                     user: Y,
                     activity: t,
-                    application: en,
-                    channelId: J,
-                    currentUser: X,
+                    application: ei,
+                    channelId: $,
+                    currentUser: Q,
                     isEmbedded: W,
                     ChannelStore: I.default,
                     GuildStore: S.default,
@@ -69731,14 +69735,15 @@
                     SelectedChannelStore: N.default,
                     VoiceStateStore: O.default,
                     PermissionStore: A.default
-                })), er = (0, a.useStateFromStores)([v.default], () => Array.from(v.default.getSelfEmbeddedActivities().values()).some(e => e.applicationId === (null == q ? void 0 : q.applicationId) && e.channelId === (null == q ? void 0 : q.channelId))), ea = (0, d.useAnalyticsContext)(), es = !g.isPlatformEmbedded, eo = (0, P.default)(t, B.ActivityFlags.JOIN) || W;
-                if (null == t || !eo || null == t.application_id) return null;
-                let el = !V && (es || $) && !z && !ee && (!W || ei),
-                    eu = null;
-                V ? eu = k.default.Messages.USER_ACTIVITY_CANNOT_JOIN_SELF : !es && !$ && (eu = k.default.Messages.USER_ACTIVITY_NOT_DETECTED.format({
+                })), ea = (0, a.useStateFromStores)([v.default], () => Array.from(v.default.getSelfEmbeddedActivities().values()).some(e => e.applicationId === (null == J ? void 0 : J.applicationId) && e.channelId === (null == J ? void 0 : J.channelId))), es = (0, d.useAnalyticsContext)(), eo = !g.isPlatformEmbedded, el = (0, P.default)(t, B.ActivityFlags.JOIN) || W;
+                if (null == t || !el || null == t.application_id) return null;
+                let eu = !V || W && !ea,
+                    ed = eu && (eo || ee) && !Z && !et && (!W || er),
+                    e_ = null;
+                eu ? !eo && !ee && (e_ = k.default.Messages.USER_ACTIVITY_NOT_DETECTED.format({
                     name: t.name
-                }));
-                let ed = async (e, t) => {
+                })) : e_ = k.default.Messages.USER_ACTIVITY_CANNOT_JOIN_SELF;
+                let ec = async (e, t) => {
                     var n;
                     null != t.session_id && null != t.application_id && (await l.default.join({
                         userId: e.id,
@@ -69753,24 +69758,24 @@
                         userId: e.id,
                         applicationId: t.application_id,
                         partyId: null === (n = t.party) || void 0 === n ? void 0 : n.id,
-                        locationObject: ea.location,
-                        analyticsLocations: K
+                        locationObject: es.location,
+                        analyticsLocations: z
                     }))
-                }, e_ = async () => {
+                }, eE = async () => {
                     let e = !1;
                     if (W) {
-                        if (!ei || null == J || null == t.application_id) return;
+                        if (!er || null == $ || null == t.application_id) return;
                         e = await (0, D.default)({
                             applicationId: t.application_id,
                             currentEmbeddedApplication: n,
-                            activityChannelId: J,
-                            locationObject: ea.location,
+                            activityChannelId: $,
+                            locationObject: es.location,
                             embeddedActivitiesManager: b.default,
-                            analyticsLocations: K
+                            analyticsLocations: z
                         })
                     }
                     if (!e) {
-                        ei && (null == j || j(), ed(Y, t)), Z(!0);
+                        er && (null == j || j(), ec(Y, t)), X(!0);
                         let e = await o.default.sendActivityInviteUser({
                             type: B.ActivityActionTypes.JOIN_REQUEST,
                             userId: Y.id,
@@ -69779,25 +69784,25 @@
                         });
                         null != e && u.default.selectPrivateChannel(e.id)
                     }
-                }, ec = ei ? k.default.Messages.JOIN : k.default.Messages.USER_ACTIVITY_ACTION_ASK_TO_JOIN;
-                return W && (ec = k.default.Messages.EMBEDDED_ACTIVITIES_JOIN_ACTIVITY), er && (ec = k.default.Messages.EMBEDDED_ACTIVITIES_JOINED), (0, i.jsx)(s.Tooltip, {
-                    text: eu,
+                }, eI = er ? k.default.Messages.JOIN : k.default.Messages.USER_ACTIVITY_ACTION_ASK_TO_JOIN;
+                return W && (eI = k.default.Messages.EMBEDDED_ACTIVITIES_JOIN_ACTIVITY), ea && (eI = k.default.Messages.EMBEDDED_ACTIVITIES_JOINED), (0, i.jsx)(s.Tooltip, {
+                    text: e_,
                     children: e => {
                         let {
                             onMouseEnter: t,
                             onMouseLeave: n
                         } = e;
                         return (0, i.jsx)(G.default, {
-                            onClick: e_,
+                            onClick: eE,
                             onMouseEnter: t,
                             onMouseLeave: n,
                             color: x,
                             look: F,
                             hover: H,
-                            disabled: !el,
-                            submitting: et,
+                            disabled: !ed,
+                            submitting: en,
                             fullWidth: !0,
-                            children: ec
+                            children: eI
                         })
                     }
                 }, "join")
@@ -70771,13 +70776,18 @@
 
             function r(e, t) {
                 let n = new Date;
-                if (e === i.AnalyticEvents.CHANNEL_OPENED_CLICKSTREAM) return {
-                    time_minus: t.map(e => n.getTime() - e.timestamp.getTime()),
-                    channel_ids: t.map(e => e.channelId),
-                    channel_types: t.map(e => e.channelType),
-                    rtc_states: t.map(e => e.rtcState)
-                };
-                throw Error("getClicksteamDrainEvent: Unknown event: ".concat(e))
+                switch (e) {
+                    case i.AnalyticEvents.CHANNEL_OPENED_CLICKSTREAM:
+                        return {
+                            time_minus: t.map(e => n.getTime() - e.timestamp.getTime()), channel_ids: t.map(e => e.channelId), channel_types: t.map(e => e.channelType), rtc_states: t.map(e => e.rtcState)
+                        };
+                    case i.AnalyticEvents.GUILD_VIEWED_CLICKSTREAM:
+                        return {
+                            time_minus: t.map(e => n.getTime() - e.timestamp.getTime()), guild_ids: t.map(e => e.guildId), rtc_states: t.map(e => e.rtcState)
+                        };
+                    default:
+                        throw Error("getClicksteamDrainEvent: Unknown event: ".concat(e))
+                }
             }
         },
         15379: function(e, t, n) {
@@ -70793,29 +70803,32 @@
                 s = n("176505");
 
             function o(e, t) {
-                if (e === a.AnalyticEvents.CHANNEL_OPENED_CLICKSTREAM) {
-                    var n, o;
-                    let e = t.channelId;
-                    switch (e) {
-                        case s.StaticChannelRoute.CHANNEL_BROWSER:
-                        case s.StaticChannelRoute.GUILD_HOME:
-                        case s.StaticChannelRoute.GUILD_SHOP:
-                        case s.StaticChannelRoute.MEMBER_APPLICATIONS:
-                        case s.StaticChannelRoute.ROLE_SUBSCRIPTIONS:
-                        case s.StaticChannelRoute.CUSTOMIZE_COMMUNITY:
-                        case s.StaticChannelRoute.MEMBER_SAFETY:
-                        case s.StaticChannelRoute.GUILD_ONBOARDING:
-                            return
-                    }
-                    let l = null !== (o = null === (n = i.default.getChannel(e)) || void 0 === n ? void 0 : n.type) && void 0 !== o ? o : a.ChannelTypes.UNKNOWN;
-                    return {
-                        channelId: e,
-                        channelType: l,
-                        rtcState: r.default.getState(),
-                        timestamp: new Date
-                    }
+                switch (e) {
+                    case a.AnalyticEvents.CHANNEL_OPENED_CLICKSTREAM:
+                        var n, o;
+                        let l = t.channelId;
+                        switch (l) {
+                            case s.StaticChannelRoute.CHANNEL_BROWSER:
+                            case s.StaticChannelRoute.GUILD_HOME:
+                            case s.StaticChannelRoute.GUILD_SHOP:
+                            case s.StaticChannelRoute.MEMBER_APPLICATIONS:
+                            case s.StaticChannelRoute.ROLE_SUBSCRIPTIONS:
+                            case s.StaticChannelRoute.CUSTOMIZE_COMMUNITY:
+                            case s.StaticChannelRoute.MEMBER_SAFETY:
+                            case s.StaticChannelRoute.GUILD_ONBOARDING:
+                                return
+                        }
+                        let u = null !== (o = null === (n = i.default.getChannel(l)) || void 0 === n ? void 0 : n.type) && void 0 !== o ? o : a.ChannelTypes.UNKNOWN;
+                        return {
+                            channelId: l, channelType: u, rtcState: r.default.getState(), timestamp: new Date
+                        };
+                    case a.AnalyticEvents.GUILD_VIEWED_CLICKSTREAM:
+                        return {
+                            guildId: t.guildId, rtcState: r.default.getState(), timestamp: new Date
+                        };
+                    default:
+                        throw Error("getClickstreamTrackEvent: Unknown event: ".concat(e))
                 }
-                throw Error("getClickstreamTrackEvent: Unknown event: ".concat(e))
             }
         },
         906732: function(e, t, n) {
@@ -86761,7 +86774,7 @@
         },
         129508: function(e, t, n) {
             "use strict";
-            n.r(t);
+            n.r(t), n("47120");
             var i = n("512722"),
                 r = n.n(i),
                 a = n("921608"),
@@ -86794,6 +86807,13 @@
                         return
                     }
                     return t
+                }
+                drawRoundedImageWithFallbacks(e, t, n, i, r) {
+                    for (let a of e) {
+                        let e = this.drawRoundedImage(a, t, n, i, r);
+                        if (e !== s.DrawResultStatus.Failure) return e
+                    }
+                    return s.DrawResultStatus.Failure
                 }
                 constructor(e, t) {
                     o(this, "color", "black"), o(this, "font", {
@@ -87522,8 +87542,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290810", "290810"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290810")), t = 0), t
+                let t = parseInt((e = "290998", "290998"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290998")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -102747,6 +102767,9 @@
                 getClanBadgeUrl: function() {
                     return _
                 },
+                getClanBannerUrl: function() {
+                    return c
+                },
                 getUserClanData: function() {
                     return s
                 },
@@ -102815,6 +102838,14 @@
                     CDN_HOST: r
                 } = window.GLOBAL_ENV;
                 if (null != r) return "".concat(location.protocol, "//").concat(r, "/clan-badges/").concat(e, "/").concat(t, ".png?size=").concat(d[n])
+            }
+
+            function c(e, t) {
+                if (null == t) return;
+                let {
+                    CDN_HOST: n
+                } = window.GLOBAL_ENV;
+                if (null != n) return "".concat(location.protocol, "//").concat(n, "/clan-banners/").concat(e, "/").concat(t, ".png?size=512")
             }
         },
         954138: function(e, t, n) {
@@ -105703,941 +105734,6 @@
                         })]
                     })
                 }
-        },
-        175557: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("108930"),
-                a = n("86406"),
-                s = n("146068"),
-                o = n("308545"),
-                l = n("397697"),
-                u = n("129871"),
-                d = n("206851"),
-                _ = n("246933"),
-                c = n("995414"),
-                E = n("308083");
-
-            function I(e) {
-                let {
-                    banner: t,
-                    ...n
-                } = e;
-                switch (t) {
-                    case E.ClanBannerKind.NIGHT_SKY:
-                        return (0, i.jsx)(l.default, {
-                            ...n
-                        });
-                    case E.ClanBannerKind.CASTLE:
-                        return (0, i.jsx)(r.default, {
-                            ...n
-                        });
-                    case E.ClanBannerKind.WORLD_MAP:
-                        return (0, i.jsx)(c.default, {
-                            ...n
-                        });
-                    case E.ClanBannerKind.SEA_FOAM:
-                        return (0, i.jsx)(u.default, {
-                            ...n
-                        });
-                    case E.ClanBannerKind.WARP_TUNNEL:
-                        return (0, i.jsx)(_.default, {
-                            ...n
-                        });
-                    case E.ClanBannerKind.HOUSE:
-                        return (0, i.jsx)(s.default, {
-                            ...n
-                        });
-                    case E.ClanBannerKind.HEIGHTMAP:
-                        return (0, i.jsx)(a.default, {
-                            ...n
-                        });
-                    case E.ClanBannerKind.MESH:
-                        return (0, i.jsx)(o.default, {
-                            ...n
-                        });
-                    case E.ClanBannerKind.SPATTER:
-                        return (0, i.jsx)(d.default, {
-                            ...n
-                        })
-                }
-                return null
-            }
-        },
-        108930: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("249849"),
-                a = n("907561"),
-                s = n("689938"),
-                o = n("307536");
-            let l = ["#50599c", "#cc99ff", "#fefefe"],
-                u = ["#39306f", "#aeaad2"],
-                d = [.05, .4, 1],
-                _ = [{
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 6,
-                    tint: 1
-                }, {
-                    base: 10,
-                    tint: 1
-                }],
-                c = [.05, .4],
-                E = [{
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }];
-
-            function I(e) {
-                let {
-                    width: t,
-                    height: n,
-                    primaryTintColor: I,
-                    secondaryTintColor: T,
-                    ...f
-                } = e, {
-                    primaryColorsTransformed: S,
-                    secondaryColorsTransformed: h
-                } = (0, r.getTransformedBadgeColors)({
-                    primaryBaseColors: l,
-                    primaryTintColor: I,
-                    primaryTintLuminances: d,
-                    primaryLuminanceWeights: _,
-                    secondaryBaseColors: u,
-                    secondaryTintColor: T,
-                    secondaryTintLuminances: c,
-                    secondaryLuminanceWeights: E
-                }), {
-                    styleContent: A,
-                    containerId: m
-                } = (0, a.useClanBannerStyleInjection)(S, h);
-                return (0, i.jsxs)("svg", {
-                    ...f,
-                    "aria-label": s.default.Messages.CLAN_LOOK_BANNER,
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 ".concat(a.CLAN_BANNER_WIDTH, " ").concat(a.CLAN_BANNER_HEIGHT),
-                    children: [(0, i.jsx)("defs", {
-                        children: (0, i.jsx)("style", {
-                            children: A
-                        })
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#wrapper-layer"),
-                        id: m
-                    })]
-                })
-            }
-        },
-        86406: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("249849"),
-                a = n("907561"),
-                s = n("689938"),
-                o = n("408263");
-            let l = ["#00ff00"],
-                u = ["#000000", "#ed1c24"],
-                d = [.7],
-                _ = [{
-                    base: 1,
-                    tint: 2
-                }],
-                c = [0, .2],
-                E = [{
-                    base: 1,
-                    tint: 0
-                }, {
-                    base: 1,
-                    tint: 4
-                }];
-
-            function I(e) {
-                let {
-                    width: t,
-                    height: n,
-                    primaryTintColor: I,
-                    secondaryTintColor: T,
-                    ...f
-                } = e, {
-                    primaryColorsTransformed: S,
-                    secondaryColorsTransformed: h
-                } = (0, r.getTransformedBadgeColors)({
-                    primaryBaseColors: l,
-                    primaryTintColor: I,
-                    primaryTintLuminances: d,
-                    primaryLuminanceWeights: _,
-                    secondaryBaseColors: u,
-                    secondaryTintColor: T,
-                    secondaryTintLuminances: c,
-                    secondaryLuminanceWeights: E
-                }), {
-                    styleContent: A,
-                    containerId: m
-                } = (0, a.useClanBannerStyleInjection)(S, h);
-                return (0, i.jsxs)("svg", {
-                    ...f,
-                    "aria-label": s.default.Messages.CLAN_LOOK_BANNER,
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 ".concat(a.CLAN_BANNER_WIDTH, " ").concat(a.CLAN_BANNER_HEIGHT),
-                    children: [(0, i.jsxs)("defs", {
-                        children: [(0, i.jsx)("defs", {
-                            children: (0, i.jsxs)("linearGradient", {
-                                id: "line-gradient",
-                                x1: "0",
-                                x2: "1",
-                                y1: "0",
-                                y2: "1",
-                                children: [(0, i.jsx)("stop", {
-                                    stopColor: h[1],
-                                    offset: "0%"
-                                }), (0, i.jsx)("stop", {
-                                    stopColor: S[0],
-                                    offset: "50%"
-                                }), (0, i.jsx)("stop", {
-                                    stopColor: S[0],
-                                    offset: "80%"
-                                }), (0, i.jsx)("stop", {
-                                    stopColor: h[1],
-                                    offset: "100%"
-                                })]
-                            })
-                        }), (0, i.jsx)("style", {
-                            children: A
-                        })]
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#wrapper-layer"),
-                        id: m
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#heightmap-lines-0"),
-                        style: {
-                            fill: "url(#line-gradient)"
-                        }
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#heightmap-lines-1"),
-                        style: {
-                            fill: "url(#line-gradient)"
-                        }
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#heightmap-lines-2"),
-                        style: {
-                            fill: "url(#line-gradient)"
-                        }
-                    })]
-                })
-            }
-        },
-        146068: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("249849"),
-                a = n("907561"),
-                s = n("689938"),
-                o = n("585025");
-            let l = ["#0fa3dd", "#a7e4e4", "#a2ccdd"],
-                u = ["#0b3215", "#a6b51a", "#35748a", "#65a88f", "#621c12", "#f96748", "#ffbbbb"],
-                d = [.25, .9, .9],
-                _ = [{
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 14,
-                    tint: 1
-                }, {
-                    base: 5,
-                    tint: 1
-                }],
-                c = [.05, .4, .15, .33, .1, .3, .6],
-                E = [{
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }];
-
-            function I(e) {
-                let {
-                    width: t,
-                    height: n,
-                    primaryTintColor: I,
-                    secondaryTintColor: T,
-                    ...f
-                } = e, {
-                    primaryColorsTransformed: S,
-                    secondaryColorsTransformed: h
-                } = (0, r.getTransformedBadgeColors)({
-                    primaryBaseColors: l,
-                    primaryTintColor: I,
-                    primaryTintLuminances: d,
-                    primaryLuminanceWeights: _,
-                    secondaryBaseColors: u,
-                    secondaryTintColor: T,
-                    secondaryTintLuminances: c,
-                    secondaryLuminanceWeights: E
-                }), {
-                    styleContent: A,
-                    containerId: m
-                } = (0, a.useClanBannerStyleInjection)(S, h);
-                return (0, i.jsxs)("svg", {
-                    ...f,
-                    "aria-label": s.default.Messages.CLAN_LOOK_BANNER,
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 ".concat(a.CLAN_BANNER_WIDTH, " ").concat(a.CLAN_BANNER_HEIGHT),
-                    children: [(0, i.jsxs)("defs", {
-                        children: [(0, i.jsx)("defs", {
-                            children: (0, i.jsxs)("linearGradient", {
-                                id: "sky-gradient",
-                                x1: "0",
-                                x2: "1",
-                                y1: "0",
-                                y2: "1",
-                                children: [(0, i.jsx)("stop", {
-                                    stopColor: S[2],
-                                    offset: "0%"
-                                }), (0, i.jsx)("stop", {
-                                    stopColor: S[0],
-                                    offset: "100%"
-                                })]
-                            })
-                        }), (0, i.jsx)("style", {
-                            children: A
-                        })]
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#sky"),
-                        style: {
-                            fill: "url(#sky-gradient)"
-                        }
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#wrapper-layer"),
-                        id: m
-                    })]
-                })
-            }
-        },
-        308545: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("249849"),
-                a = n("907561"),
-                s = n("689938"),
-                o = n("444816");
-            let l = ["#2d456e", "#395788", "#486ead", "#4f7ac2", "#5989d9", "#729bdd", "#96b3e3", "#b5c9e9", "#e0e0e2"],
-                u = ["#f7931e"],
-                d = [.05, .09, .15, .2, .25, .33, .44, .57, .95],
-                _ = [{
-                    base: 4,
-                    tint: 1
-                }, {
-                    base: 4,
-                    tint: 1
-                }, {
-                    base: 4,
-                    tint: 1
-                }, {
-                    base: 4,
-                    tint: 1
-                }, {
-                    base: 4,
-                    tint: 1
-                }, {
-                    base: 4,
-                    tint: 1
-                }, {
-                    base: 4,
-                    tint: 1
-                }, {
-                    base: 4,
-                    tint: 1
-                }, {
-                    base: 7,
-                    tint: 1
-                }],
-                c = [.4],
-                E = [{
-                    base: 1,
-                    tint: 5
-                }];
-
-            function I(e) {
-                let {
-                    width: t,
-                    height: n,
-                    primaryTintColor: I,
-                    secondaryTintColor: T,
-                    ...f
-                } = e, {
-                    primaryColorsTransformed: S,
-                    secondaryColorsTransformed: h
-                } = (0, r.getTransformedBadgeColors)({
-                    primaryBaseColors: l,
-                    primaryTintColor: I,
-                    primaryTintLuminances: d,
-                    primaryLuminanceWeights: _,
-                    secondaryBaseColors: u,
-                    secondaryTintColor: T,
-                    secondaryTintLuminances: c,
-                    secondaryLuminanceWeights: E
-                }), {
-                    styleContent: A,
-                    containerId: m
-                } = (0, a.useClanBannerStyleInjection)(S, h);
-                return (0, i.jsxs)("svg", {
-                    ...f,
-                    "aria-label": s.default.Messages.CLAN_LOOK_BANNER,
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 ".concat(a.CLAN_BANNER_WIDTH, " ").concat(a.CLAN_BANNER_HEIGHT),
-                    children: [(0, i.jsx)("defs", {
-                        children: (0, i.jsx)("style", {
-                            children: A
-                        })
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#wrapper-layer"),
-                        id: m
-                    })]
-                })
-            }
-        },
-        397697: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("249849"),
-                a = n("907561"),
-                s = n("689938"),
-                o = n("12008");
-            let l = ["#01007f", "#0000b0", "#0000e1", "#2d3dee", "#5470e9", "#a091eb", "#cc99ff"],
-                u = ["#a7e4e4", "#ffffff"],
-                d = [.01, .03, .055, .1, .19, .25, .35],
-                _ = [{
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 6,
-                    tint: 1
-                }, {
-                    base: 6,
-                    tint: 1
-                }, {
-                    base: 6,
-                    tint: 1
-                }, {
-                    base: 6,
-                    tint: 1
-                }, {
-                    base: 6,
-                    tint: 1
-                }, {
-                    base: 6,
-                    tint: 1
-                }],
-                c = [.55, 1],
-                E = [{
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 20,
-                    tint: 1
-                }];
-
-            function I(e) {
-                let {
-                    width: t,
-                    height: n,
-                    primaryTintColor: I,
-                    secondaryTintColor: T,
-                    ...f
-                } = e, {
-                    primaryColorsTransformed: S,
-                    secondaryColorsTransformed: h
-                } = (0, r.getTransformedBadgeColors)({
-                    primaryBaseColors: l,
-                    primaryTintColor: I,
-                    primaryTintLuminances: d,
-                    primaryLuminanceWeights: _,
-                    secondaryBaseColors: u,
-                    secondaryTintColor: T,
-                    secondaryTintLuminances: c,
-                    secondaryLuminanceWeights: E
-                }), {
-                    styleContent: A,
-                    containerId: m
-                } = (0, a.useClanBannerStyleInjection)(S, h);
-                return (0, i.jsxs)("svg", {
-                    ...f,
-                    "aria-label": s.default.Messages.CLAN_LOOK_BANNER,
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 ".concat(a.CLAN_BANNER_WIDTH, " ").concat(a.CLAN_BANNER_HEIGHT),
-                    children: [(0, i.jsx)("defs", {
-                        children: (0, i.jsx)("style", {
-                            children: A
-                        })
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#wrapper-layer"),
-                        id: m
-                    })]
-                })
-            }
-        },
-        129871: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("249849"),
-                a = n("907561"),
-                s = n("689938"),
-                o = n("136050");
-            let l = ["#7185f6", "#7799f3", "#7eb2eb", "#85d5e0", "#89e6dd", "#8cefda", "#68eacb"],
-                u = ["#ffffff", "#f0f0f0"],
-                d = [.15, .23, .32, .45, .57, .62, .7],
-                _ = [{
-                    base: 14,
-                    tint: 1
-                }, {
-                    base: 10,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }],
-                c = [.95, 1],
-                E = [{
-                    base: 1,
-                    tint: 2
-                }, {
-                    base: 14,
-                    tint: 1
-                }];
-
-            function I(e) {
-                let {
-                    width: t,
-                    height: n,
-                    primaryTintColor: I,
-                    secondaryTintColor: T,
-                    ...f
-                } = e, {
-                    primaryColorsTransformed: S,
-                    secondaryColorsTransformed: h
-                } = (0, r.getTransformedBadgeColors)({
-                    primaryBaseColors: l,
-                    primaryTintColor: I,
-                    primaryTintLuminances: d,
-                    primaryLuminanceWeights: _,
-                    secondaryBaseColors: u,
-                    secondaryTintColor: T,
-                    secondaryTintLuminances: c,
-                    secondaryLuminanceWeights: E
-                }), {
-                    styleContent: A,
-                    containerId: m
-                } = (0, a.useClanBannerStyleInjection)(S, h);
-                return (0, i.jsxs)("svg", {
-                    ...f,
-                    "aria-label": s.default.Messages.CLAN_LOOK_BANNER,
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 ".concat(a.CLAN_BANNER_WIDTH, " ").concat(a.CLAN_BANNER_HEIGHT),
-                    children: [(0, i.jsxs)("defs", {
-                        children: [(0, i.jsx)("defs", {
-                            children: (0, i.jsxs)("radialGradient", {
-                                id: "foam-gradient",
-                                cx: "0.5",
-                                cy: "0.5",
-                                r: "0.65",
-                                fx: "0.5",
-                                fy: "0.8",
-                                children: [(0, i.jsx)("stop", {
-                                    stopColor: h[1],
-                                    offset: "60%"
-                                }), (0, i.jsx)("stop", {
-                                    stopColor: h[0],
-                                    offset: "100%"
-                                })]
-                            })
-                        }), (0, i.jsx)("style", {
-                            children: A
-                        })]
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#wrapper-layer"),
-                        id: m
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#foam"),
-                        style: {
-                            fill: "url(#foam-gradient)"
-                        }
-                    })]
-                })
-            }
-        },
-        206851: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("249849"),
-                a = n("907561"),
-                s = n("689938"),
-                o = n("924936");
-            let l = ["#1e349e", "#4d61de", "#7887e2", "#92a6e4"],
-                u = ["#fc6e4e"],
-                d = [.05, .15, .26, .4],
-                _ = [{
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }],
-                c = [.35],
-                E = [{
-                    base: 4,
-                    tint: 1
-                }];
-
-            function I(e) {
-                let {
-                    width: t,
-                    height: n,
-                    primaryTintColor: I,
-                    secondaryTintColor: T,
-                    ...f
-                } = e, {
-                    primaryColorsTransformed: S,
-                    secondaryColorsTransformed: h
-                } = (0, r.getTransformedBadgeColors)({
-                    primaryBaseColors: l,
-                    primaryTintColor: I,
-                    primaryTintLuminances: d,
-                    primaryLuminanceWeights: _,
-                    secondaryBaseColors: u,
-                    secondaryTintColor: T,
-                    secondaryTintLuminances: c,
-                    secondaryLuminanceWeights: E
-                }), {
-                    styleContent: A,
-                    containerId: m
-                } = (0, a.useClanBannerStyleInjection)(S, h);
-                return (0, i.jsxs)("svg", {
-                    ...f,
-                    "aria-label": s.default.Messages.CLAN_LOOK_BANNER,
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 ".concat(a.CLAN_BANNER_WIDTH, " ").concat(a.CLAN_BANNER_HEIGHT),
-                    children: [(0, i.jsx)("defs", {
-                        children: (0, i.jsx)("style", {
-                            children: A
-                        })
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#wrapper-layer"),
-                        id: m
-                    })]
-                })
-            }
-        },
-        907561: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                CLAN_BANNER_HEIGHT: function() {
-                    return s
-                },
-                CLAN_BANNER_WIDTH: function() {
-                    return a
-                },
-                useClanBannerStyleInjection: function() {
-                    return o
-                }
-            });
-            var i = n("470079"),
-                r = n("153832");
-            let a = 262,
-                s = 100;
-
-            function o(e, t) {
-                let n = i.useMemo(() => "clan-banner-container-".concat((0, r.v4)()), []);
-                return {
-                    styleContent: i.useMemo(() => {
-                        let i = e.map((e, t) => "--primary-".concat(t, ": ").concat(e, ";")).join("\n"),
-                            r = t.map((e, t) => "--secondary-".concat(t, ": ").concat(e, ";")).join("\n");
-                        return "#".concat(n, " {\n        ").concat(i, "\n        ").concat(r, "\n      }")
-                    }, [n, e, t]),
-                    containerId: n
-                }
-            }
-        },
-        246933: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("249849"),
-                a = n("907561"),
-                s = n("689938"),
-                o = n("409814");
-            let l = ["#cc99ff", "#ffffff"],
-                u = ["#2d3dee", "#ffffff"],
-                d = [.3, 1],
-                _ = [{
-                    base: 2,
-                    tint: 1
-                }, {
-                    base: 5,
-                    tint: 1
-                }],
-                c = [.3, 1],
-                E = [{
-                    base: 2,
-                    tint: 1
-                }, {
-                    base: 5,
-                    tint: 1
-                }];
-
-            function I(e) {
-                let {
-                    width: t,
-                    height: n,
-                    primaryTintColor: I,
-                    secondaryTintColor: T,
-                    ...f
-                } = e, {
-                    primaryColorsTransformed: S,
-                    secondaryColorsTransformed: h
-                } = (0, r.getTransformedBadgeColors)({
-                    primaryBaseColors: l,
-                    primaryTintColor: I,
-                    primaryTintLuminances: d,
-                    primaryLuminanceWeights: _,
-                    secondaryBaseColors: u,
-                    secondaryTintColor: T,
-                    secondaryTintLuminances: c,
-                    secondaryLuminanceWeights: E
-                }), {
-                    styleContent: A,
-                    containerId: m
-                } = (0, a.useClanBannerStyleInjection)(S, h);
-                return (0, i.jsxs)("svg", {
-                    ...f,
-                    "aria-label": s.default.Messages.CLAN_LOOK_BANNER,
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 ".concat(a.CLAN_BANNER_WIDTH, " ").concat(a.CLAN_BANNER_HEIGHT),
-                    children: [(0, i.jsxs)("defs", {
-                        children: [(0, i.jsxs)("defs", {
-                            children: [(0, i.jsxs)("radialGradient", {
-                                id: "fog-gradient-primary",
-                                cx: ".5",
-                                cy: ".5",
-                                r: ".6",
-                                fx: ".76",
-                                fy: ".33",
-                                spreadMethod: "pad",
-                                children: [(0, i.jsx)("stop", {
-                                    stopColor: S[1],
-                                    offset: "0%"
-                                }), (0, i.jsx)("stop", {
-                                    stopColor: S[0],
-                                    offset: "70%"
-                                })]
-                            }), (0, i.jsxs)("radialGradient", {
-                                id: "fog-gradient-secondary",
-                                cx: ".5",
-                                cy: ".5",
-                                r: ".6",
-                                fx: ".76",
-                                fy: ".33",
-                                spreadMethod: "pad",
-                                children: [(0, i.jsx)("stop", {
-                                    stopColor: h[1],
-                                    offset: "0%"
-                                }), (0, i.jsx)("stop", {
-                                    stopColor: h[0],
-                                    offset: "70%"
-                                })]
-                            })]
-                        }), (0, i.jsx)("style", {
-                            children: A
-                        })]
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#wrapper-layer"),
-                        id: m
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#clan-banner-warp-tunnel-secondary"),
-                        style: {
-                            fill: "url(#fog-gradient-secondary)"
-                        }
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#clan-banner-warp-tunnel-primary"),
-                        style: {
-                            fill: "url(#fog-gradient-primary)"
-                        }
-                    })]
-                })
-            }
-        },
-        995414: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return I
-                }
-            });
-            var i = n("735250");
-            n("470079");
-            var r = n("249849"),
-                a = n("907561"),
-                s = n("689938"),
-                o = n("114266");
-            let l = ["#0089d9"],
-                u = ["#ff9e32", "#b4eefc", "#ffffff", "#804f19"],
-                d = [.2],
-                _ = [{
-                    base: 8,
-                    tint: 1
-                }],
-                c = [.45, .7, 1, .3],
-                E = [{
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }, {
-                    base: 10,
-                    tint: 1
-                }, {
-                    base: 8,
-                    tint: 1
-                }];
-
-            function I(e) {
-                let {
-                    width: t,
-                    height: n,
-                    primaryTintColor: I,
-                    secondaryTintColor: T,
-                    ...f
-                } = e, {
-                    primaryColorsTransformed: S,
-                    secondaryColorsTransformed: h
-                } = (0, r.getTransformedBadgeColors)({
-                    primaryBaseColors: l,
-                    primaryTintColor: I,
-                    primaryTintLuminances: d,
-                    primaryLuminanceWeights: _,
-                    secondaryBaseColors: u,
-                    secondaryTintColor: T,
-                    secondaryTintLuminances: c,
-                    secondaryLuminanceWeights: E
-                }), {
-                    styleContent: A,
-                    containerId: m
-                } = (0, a.useClanBannerStyleInjection)(S, h);
-                return (0, i.jsxs)("svg", {
-                    ...f,
-                    "aria-label": s.default.Messages.CLAN_LOOK_BANNER,
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 ".concat(a.CLAN_BANNER_WIDTH, " ").concat(a.CLAN_BANNER_HEIGHT),
-                    children: [(0, i.jsx)("defs", {
-                        children: (0, i.jsx)("style", {
-                            children: A
-                        })
-                    }), (0, i.jsx)("use", {
-                        href: "".concat(o, "#wrapper-layer"),
-                        id: m
-                    })]
-                })
-            }
         },
         284019: function(e, t, n) {
             "use strict";
@@ -113339,7 +112435,14 @@
                 l = n("570140");
             let u = new Map,
                 d = !1;
-            class _ extends(i = o.default.Store) {
+
+            function _(e) {
+                e(u), u = new Map(u)
+            }
+            class c extends(i = o.default.Store) {
+                getFeeds() {
+                    return u
+                }
                 getFeed(e) {
                     return u.get(e)
                 }
@@ -113351,27 +112454,28 @@
                     return d
                 }
             }
-            s = "ContentInventoryStore", (a = "displayName") in(r = _) ? Object.defineProperty(r, a, {
+            s = "ContentInventoryStore", (a = "displayName") in(r = c) ? Object.defineProperty(r, a, {
                 value: s,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : r[a] = s, t.default = new _(l.default, {
+            }) : r[a] = s, t.default = new c(l.default, {
                 CONNECTION_OPEN: function() {
-                    u.clear(), d = !1
+                    u = new Map, d = !1
                 },
                 CONTENT_INVENTORY_SET_FEED: function(e) {
                     let {
                         feedId: t,
                         feed: n
                     } = e;
-                    u.set(t, n)
+                    _(e => e.set(t, n))
                 },
                 CONTENT_INVENTORY_CLEAR_FEED: function(e) {
                     let {
                         feedId: t
                     } = e;
-                    u.delete(t)
+                    if (!u.has(t)) return !1;
+                    _(e => e.delete(t))
                 },
                 CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: function() {
                     d = !d
@@ -115421,8 +114525,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290810",
-                    versionHash: "7f04734cc15850b458f1be1df4515f2c07f1639a"
+                    buildNumber: "290998",
+                    versionHash: "7b0693ab56a5123978cafefca1e10e70daf950f6"
                 }
             }
             n.r(t), n.d(t, {
@@ -116047,6 +115151,7 @@
                     traits: e.search_terms,
                     tag: e.tag,
                     banner: e.banner,
+                    bannerHash: e.banner_hash,
                     badge: {
                         badgeKind: e.badge,
                         primaryColor: a(e.badge_color_primary, t.primary),
@@ -116252,10 +115357,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 ClanDiscoveryCardTraits: function() {
-                    return D
+                    return v
                 },
                 ClanDiscoveryCardView: function() {
-                    return y
+                    return M
                 }
             }), n("47120");
             var i = n("735250"),
@@ -116270,20 +115375,19 @@
                 c = n("353093"),
                 E = n("114487"),
                 I = n("550271"),
-                T = n("175557"),
-                f = n("937111"),
-                S = n("703656"),
-                h = n("271383"),
-                A = n("594174"),
-                m = n("626135"),
-                N = n("768581"),
-                p = n("524989"),
-                O = n("981631"),
-                R = n("308083"),
-                C = n("689938"),
-                g = n("228706");
+                T = n("937111"),
+                f = n("703656"),
+                S = n("271383"),
+                h = n("594174"),
+                A = n("626135"),
+                m = n("768581"),
+                N = n("524989"),
+                p = n("981631"),
+                O = n("308083"),
+                R = n("689938"),
+                C = n("228706");
 
-            function L(e) {
+            function g(e) {
                 let {
                     clan: t
                 } = e, {
@@ -116291,7 +115395,7 @@
                     branding: {
                         primaryColor: a
                     }
-                } = t, s = n.filter(e => e !== R.EMPTY_WILDCARD).join(", "), l = (0, o.useToken)(o.tokens.colors.BACKGROUND_FLOATING), u = (0, _.getAccessibleClanColor)(a, l.hex()), d = r.useRef(null), [c, E] = r.useState(!1);
+                } = t, s = n.filter(e => e !== O.EMPTY_WILDCARD).join(", "), l = (0, o.useToken)(o.tokens.colors.BACKGROUND_FLOATING), u = (0, _.getAccessibleClanColor)(a, l.hex()), d = r.useRef(null), [c, E] = r.useState(!1);
                 if (r.useEffect(() => {
                         let e = d.current;
                         null != e && null != e.offsetWidth && null != e.scrollWidth && E(e.offsetWidth < e.scrollWidth)
@@ -116303,7 +115407,7 @@
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-xs/normal",
                         color: "text-secondary",
-                        className: g.clanInfoItem,
+                        className: C.clanInfoItem,
                         children: "\xb7"
                     }), (0, i.jsx)(o.Tooltip, {
                         text: s,
@@ -116312,7 +115416,7 @@
                         children: e => (0, i.jsx)("span", {
                             ...e,
                             style: I,
-                            className: g.wildCardText,
+                            className: C.wildCardText,
                             ref: d,
                             children: s
                         })
@@ -116320,14 +115424,14 @@
                 })
             }
 
-            function v(e) {
+            function L(e) {
                 let {
                     trait: t,
                     isHighlighted: n
                 } = e;
                 return (0, i.jsx)("div", {
-                    className: s()(g.trait, {
-                        [g.highlightedTrait]: n
+                    className: s()(C.trait, {
+                        [C.highlightedTrait]: n
                     }),
                     children: (0, i.jsx)(o.Text, {
                         variant: "text-xs/normal",
@@ -116338,29 +115442,29 @@
                 })
             }
 
-            function D(e) {
+            function v(e) {
                 let {
                     traits: t,
                     traitsToHighlight: n,
                     expanded: a
                 } = e, s = r.useMemo(() => new Set(n), [n]);
                 return a ? (0, i.jsx)("div", {
-                    className: g.expandedTraitsContainer,
-                    children: t.map(e => (0, i.jsx)(v, {
+                    className: C.expandedTraitsContainer,
+                    children: t.map(e => (0, i.jsx)(L, {
                         trait: e,
                         isHighlighted: s.has(e)
                     }, e))
-                }) : (0, i.jsx)(p.default, {
+                }) : (0, i.jsx)(N.default, {
                     items: t,
-                    renderItem: e => (0, i.jsx)(v, {
+                    renderItem: e => (0, i.jsx)(L, {
                         trait: e,
                         isHighlighted: s.has(e)
                     }, e),
                     renderOverflow: e => (0, i.jsx)(o.Tooltip, {
                         text: (0, i.jsx)("div", {
-                            className: g.overflowTooltip,
+                            className: C.overflowTooltip,
                             children: e.map(e => (0, i.jsx)("div", {
-                                className: g.trait,
+                                className: C.trait,
                                 children: (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-normal",
@@ -116372,22 +115476,22 @@
                         "aria-label": "overflow",
                         children: t => (0, i.jsx)("div", {
                             ...t,
-                            className: g.trait,
+                            className: C.trait,
                             children: (0, i.jsx)(o.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-normal",
-                                children: C.default.Messages.CLAN_DISCOVERY_TRAIT_OVERFLOW.format({
+                                children: R.default.Messages.CLAN_DISCOVERY_TRAIT_OVERFLOW.format({
                                     count: e.length
                                 })
                             })
                         })
                     }),
                     maxLines: 2,
-                    className: g.traitsContainer
+                    className: C.traitsContainer
                 })
             }
 
-            function M(e) {
+            function D(e) {
                 let {
                     games: t
                 } = e, n = t.filter(e => null != e && null != e.icon), a = n.slice(0, 3), s = r.useMemo(() => {
@@ -116403,13 +115507,13 @@
                             position: "bottom",
                             children: n => (0, i.jsxs)("div", {
                                 ...n,
-                                className: g.cardFooterGame,
+                                className: C.cardFooterGame,
                                 children: [(0, i.jsx)("img", {
                                     src: t,
                                     alt: e.name,
-                                    className: g.cardFooterGameImg
+                                    className: C.cardFooterGameImg
                                 }), (0, i.jsx)("div", {
-                                    className: g.cardFooterOtherCount,
+                                    className: C.cardFooterOtherCount,
                                     children: (0, i.jsx)(o.Text, {
                                         variant: "text-xs/medium",
                                         color: "always-white",
@@ -116424,11 +115528,11 @@
                         position: "bottom",
                         children: n => (0, i.jsx)("div", {
                             ...n,
-                            className: g.cardFooterGame,
+                            className: C.cardFooterGame,
                             children: (0, i.jsx)("img", {
                                 src: t,
                                 alt: e.name,
-                                className: g.cardFooterGameImg
+                                className: C.cardFooterGameImg
                             })
                         })
                     })
@@ -116441,11 +115545,11 @@
                             position: "bottom",
                             children: n => (0, i.jsx)("div", {
                                 ...n,
-                                className: g.cardFooterGame,
+                                className: C.cardFooterGame,
                                 children: (0, i.jsx)("img", {
                                     src: t,
                                     alt: e.name,
-                                    className: g.cardFooterGameImg
+                                    className: C.cardFooterGameImg
                                 })
                             })
                         }, e.id)
@@ -116453,7 +115557,7 @@
                 })
             }
 
-            function y(e) {
+            function M(e) {
                 var t, n;
                 let {
                     clan: r,
@@ -116461,56 +115565,56 @@
                     expanded: l,
                     isMember: d,
                     traitsToHighlight: _,
-                    className: c,
+                    className: T,
                     showBrandingFooter: f = !1
                 } = e, {
                     tag: S,
                     badge: h,
                     branding: {
                         primaryColor: A,
-                        secondaryColor: m
+                        secondaryColor: N
                     },
-                    banner: p
-                } = r, O = (0, u.default)(r.games), v = C.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
+                    bannerHash: p
+                } = r, L = (0, u.default)(r.games), M = R.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
                     count: r.memberCount
-                }), y = null !== (t = N.default.getGuildIconURL({
+                }), y = null !== (t = m.default.getGuildIconURL({
                     id: r.id,
                     icon: r.icon,
                     size: 64,
                     canAnimate: !0
-                })) && void 0 !== t ? t : void 0;
+                })) && void 0 !== t ? t : void 0, P = (0, c.getClanBannerUrl)(r.id, p);
                 return (0, i.jsxs)("div", {
-                    className: s()(g.card, c),
+                    className: s()(C.card, T),
                     children: [(0, i.jsx)("div", {
-                        className: g.cardBrandingHeader,
+                        className: C.cardBrandingHeader,
                         style: {
-                            background: "linear-gradient(90deg, ".concat(A, ", ").concat(m, ")")
+                            background: "linear-gradient(90deg, ".concat(A, ", ").concat(N, ")")
                         },
-                        children: null != a ? a : (0, i.jsx)(T.default, {
-                            banner: p,
-                            primaryTintColor: A,
-                            secondaryTintColor: m
-                        })
+                        children: null != a ? a : null != P ? (0, i.jsx)("img", {
+                            alt: R.default.Messages.CLAN_LOOK_BANNER,
+                            src: P,
+                            className: C.bannerImage
+                        }) : null
                     }), (0, i.jsxs)("div", {
-                        className: g.cardContent,
+                        className: C.cardContent,
                         children: [(0, i.jsxs)("div", {
-                            className: g.cardContentTitleSection,
+                            className: C.cardContentTitleSection,
                             children: [(0, i.jsxs)("div", {
-                                className: g.cardNameAndTagWrapper,
+                                className: C.cardNameAndTagWrapper,
                                 children: [(0, i.jsx)(E.ClanGuildIconSimple, {
                                     guildName: r.name,
                                     guildIconURL: y,
                                     iconSize: 64,
-                                    className: g.clanIcon
+                                    className: C.clanIcon
                                 }), (0, i.jsx)("div", {
-                                    className: g.clanTagChipletWrapper,
+                                    className: C.clanTagChipletWrapper,
                                     children: (0, i.jsx)(o.Tooltip, {
-                                        text: C.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
+                                        text: R.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
                                         position: "top",
                                         shouldShow: !d,
                                         children: e => (0, i.jsxs)("div", {
                                             ...e,
-                                            className: g.clanTagChiplet,
+                                            className: C.clanTagChiplet,
                                             children: [(0, i.jsx)(I.ClanBadge, {
                                                 width: 16,
                                                 height: 16,
@@ -116531,58 +115635,58 @@
                                 lineClamp: 1,
                                 children: r.name
                             }), (0, i.jsxs)("div", {
-                                className: g.clanInfoRow,
+                                className: C.clanInfoRow,
                                 children: [(0, i.jsx)(o.Text, {
                                     variant: "text-xxs/normal",
-                                    className: g.clanInfoItem,
+                                    className: C.clanInfoItem,
                                     children: (0, i.jsx)("span", {
                                         role: "img",
-                                        "aria-label": C.default.Messages.CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL,
+                                        "aria-label": R.default.Messages.CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL,
                                         children: "\uD83C\uDFAE"
                                     })
                                 }), (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-secondary",
-                                    className: g.clanInfoItem,
-                                    children: null !== (n = (0, R.getPlaystyleTitle)(r.playstyle)) && void 0 !== n ? n : C.default.Messages.CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE
-                                }), (0, i.jsx)(L, {
+                                    className: C.clanInfoItem,
+                                    children: null !== (n = (0, O.getPlaystyleTitle)(r.playstyle)) && void 0 !== n ? n : R.default.Messages.CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE
+                                }), (0, i.jsx)(g, {
                                     clan: r
                                 })]
                             })]
                         }), (0, i.jsx)("div", {
-                            className: g.cardContentDescriptionSection,
+                            className: C.cardContentDescriptionSection,
                             children: (0, i.jsx)(o.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-muted",
                                 children: r.description
                             })
-                        }), (0, i.jsx)(D, {
-                            traits: (0, R.getSortedTraits)(r.traits, _),
+                        }), (0, i.jsx)(v, {
+                            traits: (0, O.getSortedTraits)(r.traits, _),
                             expanded: l,
                             traitsToHighlight: _
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: g.cardFooter,
+                        className: C.cardFooter,
                         children: [(0, i.jsx)("div", {
-                            className: g.cardFooterInfo,
+                            className: C.cardFooterInfo,
                             children: (0, i.jsx)("div", {
-                                className: g.cardFooterMembers,
+                                className: C.cardFooterMembers,
                                 children: (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: v
+                                    children: M
                                 })
                             })
                         }), (0, i.jsx)("div", {
-                            className: g.cardFooterGames,
-                            children: (0, i.jsx)(M, {
-                                games: O
+                            className: C.cardFooterGames,
+                            children: (0, i.jsx)(D, {
+                                games: L
                             })
                         })]
                     }), f && (0, i.jsx)("div", {
-                        className: g.cardBrandingFooter,
+                        className: C.cardBrandingFooter,
                         style: {
-                            background: "linear-gradient(90deg, ".concat(A, ", ").concat(m, ")")
+                            background: "linear-gradient(90deg, ".concat(A, ", ").concat(N, ")")
                         }
                     })]
                 })
@@ -116593,30 +115697,30 @@
                     affinity: n,
                     index: a,
                     source: s
-                } = e, u = (0, l.useStateFromStores)([A.default], () => A.default.getCurrentUser()), _ = (0, l.useStateFromStores)([h.default], () => h.default.isMember(t.id, null == u ? void 0 : u.id), [t, u]), c = r.useCallback(() => {
-                    let e = null != f.default.getRequest(t.id);
-                    if (m.default.track(O.AnalyticEvents.CLAN_DISCOVERY_CARD_CLICKED, {
+                } = e, u = (0, l.useStateFromStores)([h.default], () => h.default.getCurrentUser()), _ = (0, l.useStateFromStores)([S.default], () => S.default.isMember(t.id, null == u ? void 0 : u.id), [t, u]), c = r.useCallback(() => {
+                    let e = null != T.default.getRequest(t.id);
+                    if (A.default.track(p.AnalyticEvents.CLAN_DISCOVERY_CARD_CLICKED, {
                             guild_id: t.id,
                             is_member: _,
                             has_join_request: e,
                             affinity: n,
                             index: a
                         }), _) {
-                        (0, S.transitionToGuild)(t.id);
+                        (0, f.transitionToGuild)(t.id);
                         return
                     }
                     if (e) {
-                        (0, S.transitionTo)(O.Routes.GUILD_MEMBER_VERIFICATION(t.id));
+                        (0, f.transitionTo)(p.Routes.GUILD_MEMBER_VERIFICATION(t.id));
                         return
                     }(0, d.openClanApplyFlow)(t.id, t, {
                         source: s,
-                        location: O.AnalyticsLocations.CLAN_DISCOVERY_CARD
+                        location: p.AnalyticsLocations.CLAN_DISCOVERY_CARD
                     })
                 }, [t, _, n, a, s]);
                 return (0, i.jsx)(o.Clickable, {
                     onClick: c,
-                    className: g.clickableCard,
-                    children: (0, i.jsx)(y, {
+                    className: C.clickableCard,
+                    children: (0, i.jsx)(M, {
                         ...e,
                         isMember: _,
                         showBrandingFooter: !0
@@ -116729,7 +115833,7 @@
                 }
             }), n("47120");
             var i = n("524437");
-            let r = new Set([i.DismissibleContent.APPLICATION_COMMAND_TOOLTIP, i.DismissibleContent.NOW_PLAYING_CONSENT_CARD, i.DismissibleContent.GUILD_INSIGHTS_ACCESS_RATE_NEW, i.DismissibleContent.FORUM_CHANNEL_UPSELL_MODAL, i.DismissibleContent.FORUM_CHANNEL_HELPER_CARD, i.DismissibleContent.AUTH_SESSIONS_NEW, i.DismissibleContent.COMMANDS_MIGRATION_UPSELL_MODAL, i.DismissibleContent.HUB_BACK_TO_SCHOOL_UPSELL, i.DismissibleContent.CHANNEL_BROWSER_NUX, i.DismissibleContent.BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL, i.DismissibleContent.GG_ANNOUNCEMENT, i.DismissibleContent.GUILD_ONBOARDING_UPSELL_MODAL, i.DismissibleContent.SEASONAL_GIFTING_COACHMARK_2022, i.DismissibleContent.CLIENT_THEMES_SETTINGS_BADGE, i.DismissibleContent.CLIENT_THEMES_SPARKLE_PREVIEW, i.DismissibleContent.QUEST_1_COMPLETION_TOOLTIP, i.DismissibleContent.SOUNDBOARD_VOLUME_EDUCATION, i.DismissibleContent.REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE, i.DismissibleContent.GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE, i.DismissibleContent.CUSTOM_CALL_SOUNDS_PICKER_UPSELL, i.DismissibleContent.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK, i.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE, i.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_BADGE, i.DismissibleContent.WHATS_NEW_AVATAR_DECOS_FLIP, i.DismissibleContent.WHATS_NEW_PROFILE_EFFECTS_FLIP, i.DismissibleContent.RECURRING_CONTACT_SYNC_PROMPT, i.DismissibleContent.WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE, i.DismissibleContent.WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE, i.DismissibleContent.NUX_GUILD_CHANNEL_EXPLAINER, i.DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE, i.DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP, i.DismissibleContent.FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS, i.DismissibleContent.VOICE_CALL_BG_PICKER_NEW_BADGE, i.DismissibleContent.TENURE_REWARD_PENDING, i.DismissibleContent.TENURE_REWARD_REDEEMABLE, i.DismissibleContent.ACTIVITIES_CHAT_MENU_NEW_BADGE, i.DismissibleContent.ACTIVITIES_CHAT_BUTTON_NUX_V2, i.DismissibleContent.TENURE_REWARD_REDEEMABLE_CONFETTI, i.DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, i.DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER, i.DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER, i.DismissibleContent.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE, i.DismissibleContent.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK, i.DismissibleContent.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE, i.DismissibleContent.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP])
+            let r = new Set([i.DismissibleContent.APPLICATION_COMMAND_TOOLTIP, i.DismissibleContent.NOW_PLAYING_CONSENT_CARD, i.DismissibleContent.GUILD_INSIGHTS_ACCESS_RATE_NEW, i.DismissibleContent.FORUM_CHANNEL_UPSELL_MODAL, i.DismissibleContent.FORUM_CHANNEL_HELPER_CARD, i.DismissibleContent.AUTH_SESSIONS_NEW, i.DismissibleContent.COMMANDS_MIGRATION_UPSELL_MODAL, i.DismissibleContent.HUB_BACK_TO_SCHOOL_UPSELL, i.DismissibleContent.CHANNEL_BROWSER_NUX, i.DismissibleContent.BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL, i.DismissibleContent.GG_ANNOUNCEMENT, i.DismissibleContent.GUILD_ONBOARDING_UPSELL_MODAL, i.DismissibleContent.SEASONAL_GIFTING_COACHMARK_2022, i.DismissibleContent.CLIENT_THEMES_SETTINGS_BADGE, i.DismissibleContent.CLIENT_THEMES_SPARKLE_PREVIEW, i.DismissibleContent.QUEST_1_COMPLETION_TOOLTIP, i.DismissibleContent.SOUNDBOARD_VOLUME_EDUCATION, i.DismissibleContent.REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE, i.DismissibleContent.GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE, i.DismissibleContent.CUSTOM_CALL_SOUNDS_PICKER_UPSELL, i.DismissibleContent.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK, i.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE, i.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_BADGE, i.DismissibleContent.WHATS_NEW_AVATAR_DECOS_FLIP, i.DismissibleContent.WHATS_NEW_PROFILE_EFFECTS_FLIP, i.DismissibleContent.RECURRING_CONTACT_SYNC_PROMPT, i.DismissibleContent.WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE, i.DismissibleContent.WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE, i.DismissibleContent.NUX_GUILD_CHANNEL_EXPLAINER, i.DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE, i.DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP, i.DismissibleContent.FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS, i.DismissibleContent.VOICE_CALL_BG_PICKER_NEW_BADGE, i.DismissibleContent.TENURE_REWARD_PENDING, i.DismissibleContent.TENURE_REWARD_REDEEMABLE, i.DismissibleContent.ACTIVITIES_CHAT_MENU_NEW_BADGE, i.DismissibleContent.ACTIVITIES_CHAT_BUTTON_NUX_V2, i.DismissibleContent.TENURE_REWARD_REDEEMABLE_CONFETTI, i.DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, i.DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER, i.DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER, i.DismissibleContent.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE, i.DismissibleContent.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK, i.DismissibleContent.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE, i.DismissibleContent.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP, i.DismissibleContent.CHANNEL_LIST_CLAN_ADMIN_UPSELL])
         },
         883904: function(e, t, n) {
             "use strict";
@@ -170770,8 +169874,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715023194072",
-                                    build_number: "290810"
+                                    built_at: "1715047549934",
+                                    build_number: "290998"
                                 }
                             },
                             retries: 1
@@ -177497,6 +176601,9 @@
                 POLL_CREATION_MODAL_KEY: function() {
                     return s
                 },
+                POLL_RESULT_MESSAGE_POLL_TITLE_MAX_VISIBLE_CHARS: function() {
+                    return c
+                },
                 PollDurations: function() {
                     return i
                 },
@@ -177510,7 +176617,8 @@
                 l = 10,
                 u = 300,
                 d = 55,
-                _ = 3;
+                _ = 3,
+                c = 50;
             (r = i || (i = {}))[r.ONE_HOUR = 1] = "ONE_HOUR", r[r.FOUR_HOURS = 4] = "FOUR_HOURS", r[r.EIGHT_HOURS = 8] = "EIGHT_HOURS", r[r.ONE_DAY = 24] = "ONE_DAY", r[r.THREE_DAYS = 72] = "THREE_DAYS", r[r.SEVEN_DAYS = 168] = "SEVEN_DAYS", a.ExpressionPickerViewType.GIF, a.ExpressionPickerViewType.EMOJI
         },
         192616: function(e, t, n) {
@@ -177577,61 +176685,65 @@
             "use strict";
             n.r(t), n.d(t, {
                 createPollServerDataFromCreateRequest: function() {
-                    return D
+                    return M
                 },
                 filterOutUUID: function() {
-                    return N
+                    return p
                 },
                 generateEmptyPollAnswer: function() {
-                    return m
+                    return N
                 },
                 getPollAnswerVotesTooltipText: function() {
+                    return U
+                },
+                getPollResultsReplyPreview: function() {
                     return y
                 },
                 getTotalVotes: function() {
-                    return M
+                    return P
                 },
                 hasNonVoteReactions: function() {
-                    return p
-                },
-                isAnswerFilled: function() {
-                    return L
-                },
-                isIncompleteAnswer: function() {
-                    return v
-                },
-                isPollCreationEmpty: function() {
-                    return g
-                },
-                useCanPostImagePolls: function() {
-                    return C
-                },
-                useCanPostPollsInChannel: function() {
                     return O
                 },
-                useCanShowPollsChatInputCoachmarkInGuild: function() {
+                isAnswerFilled: function() {
+                    return v
+                },
+                isIncompleteAnswer: function() {
+                    return D
+                },
+                isPollCreationEmpty: function() {
+                    return L
+                },
+                useCanPostImagePolls: function() {
+                    return g
+                },
+                useCanPostPollsInChannel: function() {
                     return R
+                },
+                useCanShowPollsChatInputCoachmarkInGuild: function() {
+                    return C
                 }
             }), n("757143"), n("47120"), n("724458");
             var i = n("392711"),
                 r = n.n(i),
                 a = n("153832"),
                 s = n("263568"),
-                o = n("442837"),
-                l = n("566006"),
-                u = n("592125"),
-                d = n("542578"),
-                _ = n("375954"),
-                c = n("496675"),
-                E = n("699516"),
-                I = n("70956"),
-                T = n("5192"),
-                f = n("192616"),
-                S = n("489887"),
-                h = n("981631"),
-                A = n("689938");
+                o = n("468194"),
+                l = n("442837"),
+                u = n("566006"),
+                d = n("592125"),
+                _ = n("542578"),
+                c = n("375954"),
+                E = n("496675"),
+                I = n("699516"),
+                T = n("70956"),
+                f = n("5192"),
+                S = n("192616"),
+                h = n("489887"),
+                A = n("981631"),
+                m = n("689938");
 
-            function m() {
+            function N() {
                 return {
                     text: void 0,
                     image: void 0,
@@ -177641,22 +176753,22 @@
                 }
             }
 
-            function N(e) {
+            function p(e) {
                 return e.replace(/\b[a-f\d]{8}-(?:[a-f\d]{4}-){3}[a-f\d]{12}-\b/i, "")
             }
 
-            function p(e) {
+            function O(e) {
                 for (let t of e.reactions)
                     if (null == t.me_vote) return !0;
                 return !1
             }
 
-            function O(e) {
-                let t = h.ChannelTypesSets.POLLS.has(null == e ? void 0 : e.type),
-                    n = (0, o.useStateFromStores)([c.default], () => c.default.can(h.Permissions.SEND_MESSAGES, e) && c.default.can(h.Permissions.SEND_POLLS, e)),
+            function R(e) {
+                let t = A.ChannelTypesSets.POLLS.has(null == e ? void 0 : e.type),
+                    n = (0, l.useStateFromStores)([E.default], () => E.default.can(A.Permissions.SEND_MESSAGES, e) && E.default.can(A.Permissions.SEND_POLLS, e)),
                     {
                         enabled: i
-                    } = f.CreateGuildPollsExperiment.useExperiment({
+                    } = S.CreateGuildPollsExperiment.useExperiment({
                         guildId: null == e ? void 0 : e.guild_id,
                         location: "useCanPostPollsInChannel"
                     }, {
@@ -177665,7 +176777,7 @@
                     }),
                     {
                         enabled: r
-                    } = f.CreatePollsUserExperiment.useExperiment({
+                    } = S.CreatePollsUserExperiment.useExperiment({
                         location: "useCanPostPollsInChannel"
                     }, {
                         autoTrackExposure: !0,
@@ -177674,25 +176786,25 @@
                 return i || r
             }
 
-            function R(e) {
+            function C(e) {
                 let {
                     enabled: t
-                } = f.CreatePollsGuildCoachmarkExperiment.useExperiment({
+                } = S.CreatePollsGuildCoachmarkExperiment.useExperiment({
                     guildId: e,
                     location: "useCanShowPollsChatInputCoachmarkInGuild"
                 });
                 return t
             }
 
-            function C() {
+            function g() {
                 return !1
             }
 
-            function g(e, t, n) {
-                return 0 === e.length && null == t.find(e => L(e, n))
+            function L(e, t, n) {
+                return 0 === e.length && null == t.find(e => v(e, n))
             }
 
-            function L(e, t) {
+            function v(e, t) {
                 if (t === s.PollLayoutTypes.IMAGE_ONLY_ANSWERS) return null != e.image;
                 {
                     var n;
@@ -177701,13 +176813,13 @@
                 }
             }
 
-            function v(e, t) {
+            function D(e, t) {
                 var n;
                 let i = null === (n = e.text) || void 0 === n ? void 0 : n.trim();
                 return t === s.PollLayoutTypes.DEFAULT && null != e.image && (null == i || 0 === i.length)
             }
 
-            function D(e) {
+            function M(e) {
                 var t, n;
                 if (null == e) return;
                 let i = null == e ? void 0 : null === (t = e.answers) || void 0 === t ? void 0 : t.map((e, t) => {
@@ -177726,7 +176838,7 @@
                         poll_media: a
                     }
                 });
-                let r = (null == e ? void 0 : e.duration) != null ? (n = e.duration, new Date(Date.now() + n * I.default.Millis.HOUR).toISOString()) : "0";
+                let r = (null == e ? void 0 : e.duration) != null ? (n = e.duration, new Date(Date.now() + n * T.default.Millis.HOUR).toISOString()) : "0";
                 return {
                     ...e,
                     expiry: r,
@@ -177734,62 +176846,71 @@
                 }
             }
 
-            function M(e) {
+            function y(e) {
+                var t, n, i, r;
+                let a = null !== (r = null === (i = e.embeds[0]) || void 0 === i ? void 0 : null === (n = i.fields) || void 0 === n ? void 0 : null === (t = n.find(e => "poll_question_text" === e.rawName)) || void 0 === t ? void 0 : t.rawValue) && void 0 !== r ? r : "",
+                    s = (0, o.truncateText)(a, h.POLL_RESULT_MESSAGE_POLL_TITLE_MAX_VISIBLE_CHARS);
+                return m.default.Messages.POLL_RESULT_REPLY_TEXT.format({
+                    title: s
+                })
+            }
+
+            function P(e) {
                 return e.reduce((e, t) => {
                     var n, i;
                     return e + (null !== (i = null === (n = t.count_details) || void 0 === n ? void 0 : n.vote) && void 0 !== i ? i : 0)
                 }, 0)
             }
 
-            function y(e, t, n) {
+            function U(e, t, n) {
                 var i, a;
-                let s = _.default.getMessage(t, e);
+                let s = c.default.getMessage(t, e);
                 if (null == s) return "";
                 let o = s.getReaction({
                         id: n,
                         name: "",
                         animated: !1
                     }),
-                    c = null !== (a = null == o ? void 0 : null === (i = o.count_details) || void 0 === i ? void 0 : i.vote) && void 0 !== a ? a : 0,
-                    I = function(e, t) {
+                    l = null !== (a = null == o ? void 0 : null === (i = o.count_details) || void 0 === i ? void 0 : i.vote) && void 0 !== a ? a : 0,
+                    E = function(e, t) {
                         let n = e.getChannelId(),
-                            i = d.default.getReactions(n, e.id, {
+                            i = _.default.getReactions(n, e.id, {
                                 id: t,
                                 name: "",
                                 animated: !1
-                            }, S.VOTES_TOOLTIP_MAX_USERS, l.ReactionTypes.VOTE),
-                            a = u.default.getChannel(n),
+                            }, h.VOTES_TOOLTIP_MAX_USERS, u.ReactionTypes.VOTE),
+                            a = d.default.getChannel(n),
                             s = null == a || a.isPrivate() ? null : a.getGuildId();
-                        return r()(i).reject(e => E.default.isBlocked(e.id)).take(S.VOTES_TOOLTIP_MAX_USERS).map(e => T.default.getName(s, null == a ? void 0 : a.id, e)).value()
+                        return r()(i).reject(e => I.default.isBlocked(e.id)).take(h.VOTES_TOOLTIP_MAX_USERS).map(e => f.default.getName(s, null == a ? void 0 : a.id, e)).value()
                     }(s, n);
-                return 0 === I.length ? "" : function(e, t) {
+                return 0 === E.length ? "" : function(e, t) {
                     let n = Math.max(0, t - e.length);
-                    if (1 === e.length) return n > 0 ? A.default.Messages.POLL_VOTES_TOOLTIP_1_N.format({
+                    if (1 === e.length) return n > 0 ? m.default.Messages.POLL_VOTES_TOOLTIP_1_N.format({
                         a: e[0],
                         n: n.toLocaleString()
                     }) : e[0];
-                    if (2 === e.length) return n > 0 ? A.default.Messages.POLL_VOTES_TOOLTIP_2_N.format({
+                    if (2 === e.length) return n > 0 ? m.default.Messages.POLL_VOTES_TOOLTIP_2_N.format({
                         a: e[0],
                         b: e[1],
                         n: n.toLocaleString()
-                    }) : A.default.Messages.POLL_VOTES_TOOLTIP_2.format({
+                    }) : m.default.Messages.POLL_VOTES_TOOLTIP_2.format({
                         a: e[0],
                         b: e[1]
                     });
-                    if (3 !== e.length) return A.default.Messages.POLL_VOTES_TOOLTIP_N.format({
+                    if (3 !== e.length) return m.default.Messages.POLL_VOTES_TOOLTIP_N.format({
                         n: n.toLocaleString()
                     });
-                    else return n > 0 ? A.default.Messages.POLL_VOTES_TOOLTIP_3_N.format({
+                    else return n > 0 ? m.default.Messages.POLL_VOTES_TOOLTIP_3_N.format({
                         a: e[0],
                         b: e[1],
                         c: e[2],
                         n: n.toLocaleString()
-                    }) : A.default.Messages.POLL_VOTES_TOOLTIP_3.format({
+                    }) : m.default.Messages.POLL_VOTES_TOOLTIP_3.format({
                         a: e[0],
                         b: e[1],
                         c: e[2]
                     })
-                }(I, c)
+                }(E, l)
             }
         },
         330044: function(e, t, n) {
@@ -210760,6 +209881,7 @@
                     children: (0, i.jsx)(o.Text, {
                         variant: "text-sm/normal",
                         lineClamp: E ? c : void 0,
+                        color: "header-primary",
                         children: (0, i.jsx)(u.MessagesInteractionContext.Provider, {
                             value: {
                                 disableAnimations: a && !_,
@@ -211624,6 +210746,7 @@
                                 children: (0, i.jsx)(s.Text, {
                                     variant: h,
                                     className: d.pronouns,
+                                    color: "header-primary",
                                     children: I
                                 })
                             })]
@@ -213924,7 +213047,8 @@
                         }), null == I || I()
                     },
                     actionColor: c.buttonColor,
-                    hideHeader: !0
+                    hideHeader: !0,
+                    showGuildDetails: !0
                 })
             }
         },
@@ -213935,60 +213059,56 @@
                 r = n("470079"),
                 a = n("481060"),
                 s = n("906732"),
-                o = n("692437"),
-                l = n("785717"),
-                u = n("588822"),
-                d = n("171368"),
-                _ = n("981631"),
-                c = n("689938"),
-                E = n("884317");
+                o = n("785717"),
+                l = n("588822"),
+                u = n("171368"),
+                d = n("981631"),
+                _ = n("689938"),
+                c = n("884317");
             t.default = r.memo(function(e) {
                 let {
                     user: t,
                     onClose: n,
-                    bio: I,
-                    hidePersonalInformation: T
+                    bio: E,
+                    hidePersonalInformation: I
                 } = e, {
-                    guildId: f,
-                    channelId: S,
-                    messageId: h,
-                    roleId: A
-                } = (0, l.useUserProfileAnalyticsContext)(), {
-                    analyticsLocations: m
-                } = (0, s.default)(), [N, p] = r.useState(!1);
-                return T || null == I || "" === I ? null : (0, i.jsxs)("div", {
+                    guildId: T,
+                    channelId: f,
+                    messageId: S,
+                    roleId: h
+                } = (0, o.useUserProfileAnalyticsContext)(), {
+                    analyticsLocations: A
+                } = (0, s.default)(), [m, N] = r.useState(!1);
+                return I || null == E || "" === E ? null : (0, i.jsxs)("div", {
                     children: [(0, i.jsx)("div", {
                         ref: e => {
-                            null != e && p(e.scrollHeight - e.clientHeight > 1)
+                            null != e && N(e.scrollHeight - e.clientHeight > 1)
                         },
-                        className: E.descriptionClamp,
-                        children: (0, i.jsx)(u.default, {
-                            userBio: I,
+                        className: c.descriptionClamp,
+                        children: (0, i.jsx)(l.default, {
+                            userBio: E,
                             setLineClamp: !1
                         })
-                    }), N && (0, i.jsxs)(a.Clickable, {
+                    }), m && (0, i.jsx)(a.Clickable, {
                         onClick: () => {
-                            null == n || n(), (0, d.openUserProfileModal)({
+                            null == n || n(), (0, u.openUserProfileModal)({
                                 userId: t.id,
-                                guildId: null != f ? f : void 0,
-                                channelId: null != S ? S : void 0,
-                                messageId: null != h ? h : void 0,
-                                roleId: null != A ? A : void 0,
+                                guildId: null != T ? T : void 0,
+                                channelId: null != f ? f : void 0,
+                                messageId: null != S ? S : void 0,
+                                roleId: null != h ? h : void 0,
                                 analyticsLocation: {
-                                    section: _.AnalyticsSections.BITE_SIZE_PROFILE_POPOUT
+                                    section: d.AnalyticsSections.BITE_SIZE_PROFILE_POPOUT
                                 },
-                                sourceAnalyticsLocations: m
+                                sourceAnalyticsLocations: A
                             })
                         },
-                        className: E.seeMoreText,
-                        children: [(0, i.jsx)(a.Text, {
-                            variant: "text-xs/normal",
-                            children: c.default.Messages.USER_PROFILE_VIEW_FULL_BIO
-                        }), (0, i.jsx)(o.default, {
-                            width: 16,
-                            height: 16,
-                            color: "var(--interactive-normal)"
-                        })]
+                        className: c.viewFullBio,
+                        children: (0, i.jsx)(a.Text, {
+                            variant: "text-xs/medium",
+                            className: c.viewFullBioText,
+                            children: _.default.Messages.USER_PROFILE_VIEW_FULL_BIO
+                        })
                     })]
                 })
             })
@@ -248823,7 +247943,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "7f04734cc15850b458f1be1df4515f2c07f1639a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7b0693ab56a5123978cafefca1e10e70daf950f6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -256876,6 +255996,18 @@
                         children: a
                     })
                 }
+                renderGuildDetails(e) {
+                    let {
+                        activityGuild: t,
+                        showGuildDetails: n
+                    } = this.props;
+                    return n && null != t ? (0, s.jsx)("div", {
+                        className: (0, p.default)(e) || (0, m.default)(e) ? F.detailsWrap : F.details,
+                        children: x.default.Messages.USER_PROFILE_IN_GUILD_DETAILS.format({
+                            guildName: t.name
+                        })
+                    }) : null
+                }
                 renderTimePlayed(e) {
                     let {
                         activityGuild: t
@@ -256964,24 +256096,25 @@
                         T = this.renderDetails(o),
                         f = this.renderState(o, r),
                         S = this.renderTimePlayed(o),
-                        h = null != n ? n() : null,
-                        A = this.renderTimeBar(o),
-                        m = ![e, I, T, f, S, A, h].some(e => null != e);
+                        h = this.renderGuildDetails(o),
+                        A = null != n ? n() : null,
+                        m = this.renderTimeBar(o),
+                        p = ![e, I, T, f, S, m, A].some(e => null != e);
                     return (0, s.jsxs)("div", {
                         className: u()(this.getTypeClass("activity"), i),
-                        children: [this.renderHeader(m), (0, s.jsx)("div", {
+                        children: [this.renderHeader(p), (0, s.jsx)("div", {
                             className: u()(E ? F.bodyAlignCenter : F.bodyNormal, a && !l && !c && F.wrap),
                             children: (0, s.jsxs)("div", {
                                 className: F.activityDetails,
                                 children: [e, this.isStreamerOnTypeActivityFeed() ? null : (0, s.jsxs)(P.default.Child, {
                                     className: u()((0, M.getClass)(F, "content", E ? "GameImage" : null != e ? "Images" : "NoImages", t)),
-                                    children: [I, T, f, S, l || c ? null : A, _ ? h : null]
+                                    children: [I, T, f, S, h, l || c ? null : m, _ ? A : null]
                                 }), d ? (0, s.jsx)("div", {
                                     className: F.actions,
-                                    children: h
+                                    children: A
                                 }) : null]
                             })
-                        }), l ? A : null, l || c ? h : null, (0, s.jsx)(K, {
+                        }), l ? m : null, l || c ? A : null, (0, s.jsx)(K, {
                             activity: o
                         })]
                     })
@@ -268694,10 +267827,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return G
+                    return B
                 },
                 renderSingleLineMessage: function() {
-                    return b
+                    return w
                 }
             });
             var i = n("735250"),
@@ -268706,31 +267839,33 @@
                 s = n.n(a),
                 o = n("913527"),
                 l = n.n(o),
-                u = n("481060"),
-                d = n("100527"),
-                _ = n("906732"),
-                c = n("372900"),
-                E = n("453687"),
-                I = n("123145"),
-                T = n("223021"),
-                f = n("869765"),
-                S = n("403132"),
-                h = n("378233"),
-                A = n("377617"),
-                m = n("84017"),
-                N = n("748500"),
-                p = n("836879"),
-                O = n("191741"),
-                R = n("768581"),
-                C = n("55935"),
-                g = n("823379"),
-                L = n("113039"),
-                v = n("768760"),
-                D = n("981631"),
-                M = n("689938"),
-                y = n("904335");
+                u = n("304497"),
+                d = n("481060"),
+                _ = n("100527"),
+                c = n("906732"),
+                E = n("372900"),
+                I = n("453687"),
+                T = n("123145"),
+                f = n("223021"),
+                S = n("79390"),
+                h = n("869765"),
+                A = n("403132"),
+                m = n("378233"),
+                N = n("377617"),
+                p = n("84017"),
+                O = n("748500"),
+                R = n("836879"),
+                C = n("191741"),
+                g = n("768581"),
+                L = n("55935"),
+                v = n("823379"),
+                D = n("113039"),
+                M = n("768760"),
+                y = n("981631"),
+                P = n("689938"),
+                U = n("904335");
 
-            function P(e) {
+            function b(e) {
                 let {
                     width: t = 12,
                     height: n = 8,
@@ -268751,7 +267886,7 @@
                 })
             }
 
-            function U(e) {
+            function G(e) {
                 let {
                     width: t = 18,
                     height: n = 18,
@@ -268771,44 +267906,48 @@
                 })
             }
 
-            function b(e, t, n, r, a) {
+            function w(e, t, n, r, a) {
                 let s, o, l;
                 let {
-                    iconClass: u,
-                    iconSize: d
-                } = a, _ = null == t || "" === t || Array.isArray(t) && 0 === t.length, c = (0, h.getMessageStickers)(e).length > 0, E = null != e.interaction, I = e.hasFlag(D.MessageFlags.IS_VOICE_MESSAGE), T = e.isPoll();
-                if (n) s = M.default.Messages.REPLY_QUOTE_MESSAGE_BLOCKED;
-                else if (e.type === D.MessageTypes.CHANNEL_PINNED_MESSAGE) s = M.default.Messages.MESSAGE_PINNED;
-                else if (_) {
-                    if (T) {
-                        var f, S;
-                        o = null == e ? void 0 : null === (S = e.poll) || void 0 === S ? void 0 : null === (f = S.question) || void 0 === f ? void 0 : f.text
-                    } else c ? s = M.default.Messages.REPLY_QUOTE_STICKER : E ? s = M.default.Messages.REPLY_QUOTE_COMMAND : I ? s = M.default.Messages.REPLY_QUOTE_VOICE_MESSAGE : (s = M.default.Messages.REPLY_QUOTE_NO_TEXT_CONTENT, l = (0, i.jsx)(m.default, {
-                        className: u,
-                        width: d,
-                        height: d
+                    iconClass: d,
+                    iconSize: _
+                } = a, c = null == t || "" === t || Array.isArray(t) && 0 === t.length, E = (0, m.getMessageStickers)(e).length > 0, I = null != e.interaction, T = e.hasFlag(y.MessageFlags.IS_VOICE_MESSAGE), f = e.isPoll(), h = e.type === y.MessageTypes.POLL_RESULT;
+                if (n) s = P.default.Messages.REPLY_QUOTE_MESSAGE_BLOCKED;
+                else if (e.type === y.MessageTypes.CHANNEL_PINNED_MESSAGE) s = P.default.Messages.MESSAGE_PINNED;
+                else if (c) {
+                    if (f) {
+                        var A, C;
+                        o = null == e ? void 0 : null === (C = e.poll) || void 0 === C ? void 0 : null === (A = C.question) || void 0 === A ? void 0 : A.text
+                    } else h ? s = (0, S.getPollResultsReplyPreview)(e) : E ? s = P.default.Messages.REPLY_QUOTE_STICKER : I ? s = P.default.Messages.REPLY_QUOTE_COMMAND : T ? s = P.default.Messages.REPLY_QUOTE_VOICE_MESSAGE : (s = P.default.Messages.REPLY_QUOTE_NO_TEXT_CONTENT, l = (0, i.jsx)(p.default, {
+                        className: d,
+                        width: _,
+                        height: _
                     }))
-                } else o = (0, i.jsx)(L.default, {
+                } else o = (0, i.jsx)(D.default, {
                     message: e,
                     content: t,
                     className: r
                 });
-                return c ? l = (0, i.jsx)(p.default, {
-                    className: u,
-                    width: d,
-                    height: d
-                }) : E ? l = (0, i.jsx)(A.default, {
-                    className: u,
-                    width: d,
-                    height: d
+                return E ? l = (0, i.jsx)(R.default, {
+                    className: d,
+                    width: _,
+                    height: _
                 }) : I ? l = (0, i.jsx)(N.default, {
-                    className: u,
-                    width: 19 / 24 * d,
-                    height: d
-                }) : (e.attachments.length > 0 || e.embeds.length > 0) && (l = (0, i.jsx)(m.default, {
-                    className: u,
-                    width: d,
-                    height: d
+                    className: d,
+                    width: _,
+                    height: _
+                }) : T ? l = (0, i.jsx)(O.default, {
+                    className: d,
+                    width: 19 / 24 * _,
+                    height: _
+                }) : h ? l = (0, i.jsx)(u.PollsIcon, {
+                    className: d,
+                    width: _,
+                    height: _
+                }) : (e.attachments.length > 0 || e.embeds.length > 0) && (l = (0, i.jsx)(p.default, {
+                    className: d,
+                    width: _,
+                    height: _
                 })), {
                     contentPlaceholder: s,
                     renderedContent: o,
@@ -268816,44 +267955,44 @@
                 }
             }
 
-            function G(e) {
+            function B(e) {
                 let t;
                 let {
                     repliedAuthor: n,
                     baseAuthor: a,
                     baseMessage: o,
-                    referencedMessage: h,
-                    renderPopout: A
-                } = e, m = r.useMemo(() => null != A && h.state === f.ReferencedMessageState.LOADED ? e => A(e, h.message) : void 0, [h, A]), N = function(e, t, n) {
+                    referencedMessage: u,
+                    renderPopout: S
+                } = e, m = r.useMemo(() => null != S && u.state === h.ReferencedMessageState.LOADED ? e => S(e, u.message) : void 0, [u, S]), N = function(e, t, n) {
                     let {
                         referencedMessage: r,
                         compact: a,
                         isReplyAuthorBlocked: o,
                         repliedAuthor: l,
-                        showAvatarPopout: c,
+                        showAvatarPopout: u,
                         onClickAvatar: E,
                         onContextMenu: I,
                         onPopoutRequestClose: T
                     } = e, {
-                        analyticsLocations: S
-                    } = (0, _.default)(d.default.AVATAR);
-                    if (a || r.state !== f.ReferencedMessageState.LOADED || o) return (0, i.jsx)("div", {
-                        className: y.replyBadge,
-                        children: (0, i.jsx)(P, {
-                            className: y.replyIcon
+                        analyticsLocations: f
+                    } = (0, c.default)(_.default.AVATAR);
+                    if (a || r.state !== h.ReferencedMessageState.LOADED || o) return (0, i.jsx)("div", {
+                        className: U.replyBadge,
+                        children: (0, i.jsx)(b, {
+                            className: U.replyIcon
                         })
                     });
-                    if (r.message.type === D.MessageTypes.USER_JOIN || r.message.type === D.MessageTypes.ROLE_SUBSCRIPTION_PURCHASE || r.message.type === D.MessageTypes.GUILD_DEADCHAT_REVIVE_PROMPT || r.message.type === D.MessageTypes.GUILD_GAMING_STATS_PROMPT) return (0, i.jsx)(U, {
-                        className: y.userJoinSystemMessageIcon
+                    if (r.message.type === y.MessageTypes.USER_JOIN || r.message.type === y.MessageTypes.ROLE_SUBSCRIPTION_PURCHASE || r.message.type === y.MessageTypes.GUILD_DEADCHAT_REVIVE_PROMPT || r.message.type === y.MessageTypes.GUILD_GAMING_STATS_PROMPT) return (0, i.jsx)(G, {
+                        className: U.userJoinSystemMessageIcon
                     });
-                    if (r.message.type === D.MessageTypes.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, i.jsx)(O.default, {
-                        className: y.ticketIcon
+                    if (r.message.type === y.MessageTypes.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, i.jsx)(C.default, {
+                        className: U.ticketIcon
                     });
-                    let h = () => {
+                    let S = () => {
                         var e, n, a, o, u;
                         return e = r.message.author, n = l, a = t, o = E, u = I, (0, i.jsx)("img", {
                             alt: "",
-                            src: (null == n ? void 0 : n.guildMemberAvatar) != null && null != a ? (0, R.getGuildMemberAvatarURLSimple)({
+                            src: (null == n ? void 0 : n.guildMemberAvatar) != null && null != a ? (0, g.getGuildMemberAvatarURLSimple)({
                                 guildId: a,
                                 userId: e.id,
                                 avatar: n.guildMemberAvatar
@@ -268861,25 +268000,25 @@
                             onClick: o,
                             onContextMenu: u,
                             className: s()({
-                                [y.replyAvatar]: !0,
-                                [y.clickable]: null != o
+                                [U.replyAvatar]: !0,
+                                [U.clickable]: null != o
                             })
                         })
                     };
-                    return null != n && null != c ? (0, i.jsx)(_.AnalyticsLocationProvider, {
-                        value: S,
-                        children: (0, i.jsx)(u.Popout, {
+                    return null != n && null != u ? (0, i.jsx)(c.AnalyticsLocationProvider, {
+                        value: f,
+                        children: (0, i.jsx)(d.Popout, {
                             renderPopout: n,
-                            shouldShow: c,
+                            shouldShow: u,
                             position: "right",
                             onRequestClose: T,
-                            children: h
+                            children: S
                         })
-                    }) : (0, i.jsx)(_.AnalyticsLocationProvider, {
-                        value: S,
-                        children: h()
+                    }) : (0, i.jsx)(c.AnalyticsLocationProvider, {
+                        value: f,
+                        children: S()
                     })
-                }(e, r.useContext(c.default), m), p = function(e, t) {
+                }(e, r.useContext(E.default), m), p = function(e, t) {
                     let {
                         baseMessage: n,
                         channel: r,
@@ -268888,12 +268027,12 @@
                         onClickUsername: o,
                         onContextMenu: l,
                         onPopoutRequestClose: u
-                    } = e, d = (null == a ? void 0 : a.state) === f.ReferencedMessageState.LOADED ? a.message : void 0;
-                    return null == d || d.type === D.MessageTypes.USER_JOIN || d.type === D.MessageTypes.ROLE_SUBSCRIPTION_PURCHASE || d.type === D.MessageTypes.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION || d.type === D.MessageTypes.GUILD_DEADCHAT_REVIVE_PROMPT || d.type === D.MessageTypes.GUILD_GAMING_STATS_PROMPT ? null : (0, i.jsx)(I.default, {
+                    } = e, d = (null == a ? void 0 : a.state) === h.ReferencedMessageState.LOADED ? a.message : void 0;
+                    return null == d || d.type === y.MessageTypes.USER_JOIN || d.type === y.MessageTypes.ROLE_SUBSCRIPTION_PURCHASE || d.type === y.MessageTypes.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION || d.type === y.MessageTypes.GUILD_DEADCHAT_REVIVE_PROMPT || d.type === y.MessageTypes.GUILD_GAMING_STATS_PROMPT ? null : (0, i.jsx)(T.default, {
                         message: d,
                         channel: r,
                         compact: !0,
-                        withMentionPrefix: (0, S.default)(n, d),
+                        withMentionPrefix: (0, A.default)(n, d),
                         showPopout: s,
                         renderPopout: t,
                         onClick: o,
@@ -268901,64 +268040,64 @@
                         onPopoutRequestClose: u,
                         isRepliedMessage: !0
                     })
-                }(e, m), L = function(e) {
+                }(e, m), O = function(e) {
                     let {
                         content: t,
                         referencedMessage: n,
                         isReplyAuthorBlocked: r
-                    } = e, a = n.state !== f.ReferencedMessageState.DELETED ? e.onClickReply : void 0;
+                    } = e, a = n.state !== h.ReferencedMessageState.DELETED ? e.onClickReply : void 0;
                     switch (n.state) {
-                        case f.ReferencedMessageState.LOADED: {
+                        case h.ReferencedMessageState.LOADED: {
                             let {
                                 contentPlaceholder: e,
                                 renderedContent: o,
                                 icon: l
-                            } = b(n.message, t, r, y.repliedTextContent, {
-                                iconClass: y.repliedTextContentIcon,
-                                iconSize: v.SINGLE_LINE_MESSAGE_DEFAULT_ICON_SIZE
+                            } = w(n.message, t, r, U.repliedTextContent, {
+                                iconClass: U.repliedTextContentIcon,
+                                iconSize: M.SINGLE_LINE_MESSAGE_DEFAULT_ICON_SIZE
                             });
                             return (0, i.jsxs)(i.Fragment, {
-                                children: [(0, i.jsx)(u.Clickable, {
-                                    className: s()(y.repliedTextPreview, y.clickable),
+                                children: [(0, i.jsx)(d.Clickable, {
+                                    className: s()(U.repliedTextPreview, U.clickable),
                                     onClick: a,
-                                    children: (0, i.jsx)(u.BlockInteractions, {
+                                    children: (0, i.jsx)(d.BlockInteractions, {
                                         children: null != o ? o : (0, i.jsx)("span", {
-                                            className: y.repliedTextPlaceholder,
+                                            className: U.repliedTextPlaceholder,
                                             children: e
                                         })
                                     })
                                 }), l]
                             })
                         }
-                        case f.ReferencedMessageState.NOT_LOADED:
-                            return (0, i.jsx)(u.Clickable, {
-                                className: s()(y.repliedTextPreview, y.clickable),
+                        case h.ReferencedMessageState.NOT_LOADED:
+                            return (0, i.jsx)(d.Clickable, {
+                                className: s()(U.repliedTextPreview, U.clickable),
                                 onClick: a,
                                 children: (0, i.jsx)("span", {
-                                    className: y.repliedTextPlaceholder,
-                                    children: M.default.Messages.REPLY_QUOTE_MESSAGE_NOT_LOADED
+                                    className: U.repliedTextPlaceholder,
+                                    children: P.default.Messages.REPLY_QUOTE_MESSAGE_NOT_LOADED
                                 })
                             });
-                        case f.ReferencedMessageState.DELETED:
+                        case h.ReferencedMessageState.DELETED:
                             return (0, i.jsx)("div", {
-                                className: y.repliedTextPreview,
+                                className: U.repliedTextPreview,
                                 children: (0, i.jsx)("span", {
-                                    className: y.repliedTextPlaceholder,
-                                    children: M.default.Messages.REPLY_QUOTE_MESSAGE_DELETED
+                                    className: U.repliedTextPlaceholder,
+                                    children: P.default.Messages.REPLY_QUOTE_MESSAGE_DELETED
                                 })
                             });
                         default:
-                            (0, g.assertNever)(n)
+                            (0, v.assertNever)(n)
                     }
-                }(e), G = r.useMemo(() => e.compact ? (0, T.default)((0, C.dateFormat)(l()(), "LT")) : null, [e.compact]);
-                return null != n && null != a && (t = M.default.Messages.CHANNEL_MESSAGE_REPLY_A11Y_LABEL.format({
+                }(e), R = r.useMemo(() => e.compact ? (0, f.default)((0, L.dateFormat)(l()(), "LT")) : null, [e.compact]);
+                return null != n && null != a && (t = P.default.Messages.CHANNEL_MESSAGE_REPLY_A11Y_LABEL.format({
                     author: null == a ? void 0 : a.nick,
                     repliedAuthor: null == n ? void 0 : n.nick
                 })), (0, i.jsxs)("div", {
-                    id: (0, E.getMessageReplyId)(o),
-                    className: s()(y.repliedMessage, G),
+                    id: (0, I.getMessageReplyId)(o),
+                    className: s()(U.repliedMessage, R),
                     "aria-label": t,
-                    children: [N, p, L]
+                    children: [N, p, O]
                 })
             }
         },
@@ -277488,7 +276627,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290810"
+                                build_number: "290998"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284815,7 +283954,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290810", "290810"), 10);
+                let a = parseInt((n = "290998", "290998"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -290056,6 +289195,40 @@
                     children: (0, i.jsx)("path", {
                         fill: "string" == typeof s ? s : s.css,
                         d: "M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5V6Z",
+                        className: o
+                    })
+                })
+            }
+        },
+        927515: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                PollsIcon: function() {
+                    return s
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("692547"),
+                a = n("331595");
+            let s = e => {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: s = r.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: o = "",
+                    ...l
+                } = e;
+                return (0, i.jsx)("svg", {
+                    ...(0, a.default)(l),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: n,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: (0, i.jsx)("path", {
+                        fill: "string" == typeof s ? s : s.css,
+                        d: "M2 5c0-1.1.9-2 2-2h16a2 2 0 1 1 0 4H4a2 2 0 0 1-2-2ZM2 12c0-1.1.9-2 2-2h6a2 2 0 1 1 0 4H4a2 2 0 0 1-2-2ZM4 17a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Z",
                         className: o
                     })
                 })
@@ -304902,7 +304075,7 @@
                 g = n("381499"),
                 L = n("835913"),
                 v = n("397696");
-            (I = i || (i = {}))[I.UNSPECIFIED = 0] = "UNSPECIFIED", I[I.MENTIONS = 1] = "MENTIONS", I[I.UNREADS = 2] = "UNREADS", I[I.TODOS = 3] = "TODOS", I[I.FOR_YOU = 4] = "FOR_YOU", I[I.GAME_INVITES = 5] = "GAME_INVITES", (T = r || (r = {}))[T.NO_PROGRESS = 0] = "NO_PROGRESS", T[T.JOIN_GUILD = 1] = "JOIN_GUILD", T[T.INVITE_USER = 2] = "INVITE_USER", T[T.CONTACT_SYNC = 4] = "CONTACT_SYNC", (f = a || (a = {}))[f.NO_GUILD_ONBOARDING = 0] = "NO_GUILD_ONBOARDING", f[f.GUILD_NOTICE_SHOWN = 1] = "GUILD_NOTICE_SHOWN", f[f.GUILD_NOTICE_CLEARED = 2] = "GUILD_NOTICE_CLEARED", (S = s || (s = {}))[S.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = 0] = "DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE", S[S.CLYDE_GUILD_NOTICE_NUX = 1] = "CLYDE_GUILD_NOTICE_NUX", S[S.SUMMARIES_NOTICE = 2] = "SUMMARIES_NOTICE", S[S.SUMMARIES_ENABLED_NOTICE = 3] = "SUMMARIES_ENABLED_NOTICE", S[S.ADOPT_CLAN_IDENTITY_NOTICE = 4] = "ADOPT_CLAN_IDENTITY_NOTICE", (h = o || (o = {}))[h.HUB_WAITLIST_UPSELL = 0] = "HUB_WAITLIST_UPSELL", h[h.APPLICATION_COMMAND_TOOLTIP = 1] = "APPLICATION_COMMAND_TOOLTIP", h[h.HUB_EVENT_HEADER_UPSELL = 2] = "HUB_EVENT_HEADER_UPSELL", h[h.CHANNELINFO_CHANNELBANNER_NOTICE = 3] = "CHANNELINFO_CHANNELBANNER_NOTICE", h[h.ACCOUNT_MULTIACCOUNT_TOOLTIP = 4] = "ACCOUNT_MULTIACCOUNT_TOOLTIP", h[h.SEASONALGIFTING_CHANNELBUTTON_POPUP = 5] = "SEASONALGIFTING_CHANNELBUTTON_POPUP", h[h.CHANNEL_NOTICE_INVITE = 6] = "CHANNEL_NOTICE_INVITE", h[h.CHANNEL_NOTICE_HUBLINK = 7] = "CHANNEL_NOTICE_HUBLINK", h[h.CHANNEL_NOTICE_QUICKSWITCHER = 8] = "CHANNEL_NOTICE_QUICKSWITCHER", h[h.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION = 9] = "CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION", h[h.CHANNEL_NOTICE_GUILD_BANNER = 11] = "CHANNEL_NOTICE_GUILD_BANNER", h[h.GUILD_HEADER_EVENT_UPSELL = 12] = "GUILD_HEADER_EVENT_UPSELL", h[h.GUILD_HEADER_PREMIUM_GUILD_PROGRESS = 14] = "GUILD_HEADER_PREMIUM_GUILD_PROGRESS", h[h.GUILD_HEADER_ANIMATED_GUILD_BANNER = 15] = "GUILD_HEADER_ANIMATED_GUILD_BANNER", h[h.NAGBAR_NOTICE_DOWNLOAD = 16] = "NAGBAR_NOTICE_DOWNLOAD", h[h.NAGBAR_NOTICE_CONNECT_SPOTIFY = 17] = "NAGBAR_NOTICE_CONNECT_SPOTIFY", h[h.NAGBAR_NOTICE_CONNECT_PLAYSTATION = 18] = "NAGBAR_NOTICE_CONNECT_PLAYSTATION", h[h.NAGBAR_NOTICE_MFA_SMS_BACKUP = 19] = "NAGBAR_NOTICE_MFA_SMS_BACKUP", h[h.ACTIVITIES_SUNSET_COACH_MARK = 20] = "ACTIVITIES_SUNSET_COACH_MARK", h[h.NAGBAR_NOTICE_PREMIUM_PROMO = 21] = "NAGBAR_NOTICE_PREMIUM_PROMO", h[h.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING = 22] = "NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING", h[h.NAGBAR_NOTICE_PREMIUM_REACTIVATE = 23] = "NAGBAR_NOTICE_PREMIUM_REACTIVATE", h[h.PREMIUM_5TH_ANNIVERSARY_MODAL = 24] = "PREMIUM_5TH_ANNIVERSARY_MODAL", h[h.GUILD_JOIN_FEEDBACK_MODAL = 25] = "GUILD_JOIN_FEEDBACK_MODAL", h[h.VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP = 26] = "VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP", h[h.ACTIVITIES_EARLY_USER_COACH_MARK = 27] = "ACTIVITIES_EARLY_USER_COACH_MARK", h[h.GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP = 28] = "GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP", h[h.ACTIVITIES_TUTORIAL_COACH_MARK = 29] = "ACTIVITIES_TUTORIAL_COACH_MARK", h[h.GUILD_HEADER_INVITE_SPLASH = 31] = "GUILD_HEADER_INVITE_SPLASH", h[h.NAGBAR_NOTICE_LOCALIZED_PRICING = 33] = "NAGBAR_NOTICE_LOCALIZED_PRICING", h[h.SOUNDBOARD_EDUCATION = 35] = "SOUNDBOARD_EDUCATION", h[h.GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK = 36] = "GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK", h[h.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL = 37] = "GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL", h[h.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK = 38] = "CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK", h[h.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL = 39] = "GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL", h[h.GUILD_INSIGHTS_ACCESS_RATE_NEW = 40] = "GUILD_INSIGHTS_ACCESS_RATE_NEW", h[h.NOW_PLAYING_CONSENT_CARD = 41] = "NOW_PLAYING_CONSENT_CARD", h[h.GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP = 42] = "GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP", h[h.FORUM_CHANNEL_UPSELL_MODAL = 44] = "FORUM_CHANNEL_UPSELL_MODAL", h[h.POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP = 46] = "POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP", h[h.MWEB_APP_DOWNLOAD_HALFSHEET = 47] = "MWEB_APP_DOWNLOAD_HALFSHEET", h[h.MWEB_APP_DOWNLOAD_NAGBAR_THEMED = 48] = "MWEB_APP_DOWNLOAD_NAGBAR_THEMED", h[h.MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE = 49] = "MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE", h[h.GUILD_FEED_NUX_CARD = 50] = "GUILD_FEED_NUX_CARD", h[h.GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP = 52] = "GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP", h[h.ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2 = 53] = "ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2", h[h.ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES = 55] = "ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES", h[h.GUILD_DELETE_FEEDBACK = 56] = "GUILD_DELETE_FEEDBACK", h[h.GUILD_LEAVE_FEEDBACK = 57] = "GUILD_LEAVE_FEEDBACK", h[h.AUTH_SESSIONS_NEW = 63] = "AUTH_SESSIONS_NEW", h[h.DONUT_MOBILE_NUX = 65] = "DONUT_MOBILE_NUX", h[h.GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL = 66] = "GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL", h[h.FORUM_CHANNEL_HELPER_CARD = 67] = "FORUM_CHANNEL_HELPER_CARD", h[h.PASSPORT_USER_SETTINGS = 70] = "PASSPORT_USER_SETTINGS", h[h.SUMMER_BOGO_ANNOUNCEMENT = 71] = "SUMMER_BOGO_ANNOUNCEMENT", h[h.COMMANDS_MIGRATION_UPSELL_MODAL = 72] = "COMMANDS_MIGRATION_UPSELL_MODAL", h[h.FILE_LIMIT_UPLOAD_COACH_MARK = 73] = "FILE_LIMIT_UPLOAD_COACH_MARK", h[h.DONUT_DESKTOP_NUX = 77] = "DONUT_DESKTOP_NUX", h[h.GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL = 79] = "GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL", h[h.PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST = 80] = "PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST", h[h.STAGE_RAISED_HAND_MOVED = 81] = "STAGE_RAISED_HAND_MOVED", h[h.XBOX_ONE_WAY_RECONNECT = 82] = "XBOX_ONE_WAY_RECONNECT", h[h.XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT = 84] = "XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT", h[h.HUB_BACK_TO_SCHOOL_UPSELL = 85] = "HUB_BACK_TO_SCHOOL_UPSELL", h[h.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP = 86] = "STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP", h[h.ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX = 89] = "ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX", h[h.PROFILE_THEMES_SETTINGS_VIEWED_V2 = 92] = "PROFILE_THEMES_SETTINGS_VIEWED_V2", h[h.GUILD_HEADER_ACTIVE_THREADS_NOTICE = 93] = "GUILD_HEADER_ACTIVE_THREADS_NOTICE", h[h.CHANNEL_LIST_OPT_IN_NUX = 94] = "CHANNEL_LIST_OPT_IN_NUX", h[h.ACTIVITIES_MOBILE_NUX = 95] = "ACTIVITIES_MOBILE_NUX", h[h.PROFILE_THEMES_NEW_BADGE = 96] = "PROFILE_THEMES_NEW_BADGE", h[h.GUILD_AUTOMOD_DEFAULT_ON_UPSELL = 97] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL", h[h.CHANNEL_BROWSER_NUX = 98] = "CHANNEL_BROWSER_NUX", h[h.RNA_CHANGELOG_HC_NOTICE = 99] = "RNA_CHANGELOG_HC_NOTICE", h[h.MESSAGE_REQUEST_SETTINGS_COACH_MARK = 100] = "MESSAGE_REQUEST_SETTINGS_COACH_MARK", h[h.GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2 = 101] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2", h[h.GUILD_AUTOMOD_REGEX_UPSELL = 102] = "GUILD_AUTOMOD_REGEX_UPSELL", h[h.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP = 103] = "VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP", h[h.CONNECTIONS_NUX = 108] = "CONNECTIONS_NUX", h[h.XBOX_VOICE_SURVEY_NAGBAR = 110] = "XBOX_VOICE_SURVEY_NAGBAR", h[h.PS_ONE_WAY_RECONNECT = 112] = "PS_ONE_WAY_RECONNECT", h[h.HALLOWEEN_2022_ACTIVITIES_COACH_MARK = 115] = "HALLOWEEN_2022_ACTIVITIES_COACH_MARK", h[h.NITRODUCTION_STEP_PROFILE_CUSTOMIZATION = 116] = "NITRODUCTION_STEP_PROFILE_CUSTOMIZATION", h[h.NITRODUCTION_STEP_BOOSTING = 117] = "NITRODUCTION_STEP_BOOSTING", h[h.NITRODUCTION_STEP_CUSTOM_EMOJI = 118] = "NITRODUCTION_STEP_CUSTOM_EMOJI", h[h.NEW_CRUNCHYROLL_CONNECTION = 119] = "NEW_CRUNCHYROLL_CONNECTION", h[h.APP_DIRECTORY_UPSELL_MODAL = 121] = "APP_DIRECTORY_UPSELL_MODAL", h[h.BASH_OUT_COACH_MARK = 123] = "BASH_OUT_COACH_MARK", h[h.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL = 124] = "GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL", h[h.COMMUNITY_ONBOARDING_NEW_BADGE = 125] = "COMMUNITY_ONBOARDING_NEW_BADGE", h[h.CHURRO_LINK_UPSELL = 126] = "CHURRO_LINK_UPSELL", h[h.VERIFIED_ROLES_COACH_MARK = 127] = "VERIFIED_ROLES_COACH_MARK", h[h.PROFILE_THEMES_ACCESSIBILITY_TOOLTIP = 129] = "PROFILE_THEMES_ACCESSIBILITY_TOOLTIP", h[h.BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL = 130] = "BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL", h[h.USER_SAFETY_SAFE_DIRECT_MESSAGING = 131] = "USER_SAFETY_SAFE_DIRECT_MESSAGING", h[h.GG_ANNOUNCEMENT = 132] = "GG_ANNOUNCEMENT", h[h.CHANNEL_BROWSER_NEW_BADGE_NUX = 133] = "CHANNEL_BROWSER_NEW_BADGE_NUX", h[h.CREATOR_PROMO_PAGE_COACH_MARK = 134] = "CREATOR_PROMO_PAGE_COACH_MARK", h[h.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL = 136] = "CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL", h[h.GUILD_ONBOARDING_UPSELL_MODAL = 137] = "GUILD_ONBOARDING_UPSELL_MODAL", h[h.NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE = 138] = "NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE", h[h.DROPS_GO_LIVE_BANNER_NOTICE_HALO = 139] = "DROPS_GO_LIVE_BANNER_NOTICE_HALO", h[h.DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO = 140] = "DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO", h[h.DROPS_QUEST_COMPLETION_TOOLTIP_HALO = 141] = "DROPS_QUEST_COMPLETION_TOOLTIP_HALO", h[h.SEASONAL_GIFTING_COACHMARK_2022 = 146] = "SEASONAL_GIFTING_COACHMARK_2022", h[h.NAGBAR_BOUNCED_EMAIL_NOTICE = 147] = "NAGBAR_BOUNCED_EMAIL_NOTICE", h[h.GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE = 151] = "GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE", h[h.CONSOLE_PTT_DISABLE_ALERT = 152] = "CONSOLE_PTT_DISABLE_ALERT", h[h.ACTIVITIES_MINI_SHELF_SPARKLES = 153] = "ACTIVITIES_MINI_SHELF_SPARKLES", h[h.DROPS_ENDED_INCOMPLETE_HALO = 154] = "DROPS_ENDED_INCOMPLETE_HALO", h[h.GDM_INVITE_REMINDER = 157] = "GDM_INVITE_REMINDER", h[h.USER_SAFETY_CONSUMER_EDUCATION_BLOCK = 161] = "USER_SAFETY_CONSUMER_EDUCATION_BLOCK", h[h.USER_SAFETY_CONSUMER_EDUCATION_MUTE = 162] = "USER_SAFETY_CONSUMER_EDUCATION_MUTE", h[h.LINKED_ROLE_ADMIN_GUILD = 163] = "LINKED_ROLE_ADMIN_GUILD", h[h.NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION = 164] = "NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION", h[h.BURST_REACTION_BUTTON_SPARKLE = 165] = "BURST_REACTION_BUTTON_SPARKLE", h[h.NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING = 166] = "NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING", h[h.VC_TILE_ACTIVITIES_ENTRY_POINT = 167] = "VC_TILE_ACTIVITIES_ENTRY_POINT", h[h.BURST_REACTION_COACHMARK = 169] = "BURST_REACTION_COACHMARK", h[h.BURST_REACTIONS_REMOVE_MODAL = 170] = "BURST_REACTIONS_REMOVE_MODAL", h[h.BURST_REACTION_NITRO_TOOLTIP = 171] = "BURST_REACTION_NITRO_TOOLTIP", h[h.CLIENT_THEMES_SETTINGS_BADGE = 173] = "CLIENT_THEMES_SETTINGS_BADGE", h[h.CLIENT_THEMES_COACHMARK = 174] = "CLIENT_THEMES_COACHMARK", h[h.CLIENT_THEMES_SPARKLE_PREVIEW = 175] = "CLIENT_THEMES_SPARKLE_PREVIEW", h[h.STAGE_V2_UPSELL = 176] = "STAGE_V2_UPSELL", h[h.QUEST_1_ENROLLMENT_TOOLTIP = 177] = "QUEST_1_ENROLLMENT_TOOLTIP", h[h.QUEST_1_COMPLETION_TOOLTIP = 178] = "QUEST_1_COMPLETION_TOOLTIP", h[h.QUEST_1_GO_LIVE_BANNER = 179] = "QUEST_1_GO_LIVE_BANNER", h[h.QUEST_1_ENDED_INCOMPLETE = 180] = "QUEST_1_ENDED_INCOMPLETE", h[h.PREMIUM_TUTORIAL_EXPERIENCE = 181] = "PREMIUM_TUTORIAL_EXPERIENCE", h[h.APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL = 182] = "APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL", h[h.PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP = 183] = "PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP", h[h.PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP = 184] = "PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP", h[h.PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP = 185] = "PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP", h[h.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP = 186] = "PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP", h[h.TABS_V2_ANNOUNCEMENT_SHEET = 188] = "TABS_V2_ANNOUNCEMENT_SHEET", h[h.VOICE_MESSAGE_UPSELL_DM = 189] = "VOICE_MESSAGE_UPSELL_DM", h[h.SUPER_REACTIONS_NITRO_MARKETING = 190] = "SUPER_REACTIONS_NITRO_MARKETING", h[h.NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL = 191] = "NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL", h[h.CLYDE_GUILD_HEADER_NUX = 193] = "CLYDE_GUILD_HEADER_NUX", h[h.CLYDE_CHAT_BAR_NUX = 194] = "CLYDE_CHAT_BAR_NUX", h[h.VOICE_MESSAGE_UPSELL_GUILD = 195] = "VOICE_MESSAGE_UPSELL_GUILD", h[h.ACTIVITY_GDM_CALL_TOOLTIP = 196] = "ACTIVITY_GDM_CALL_TOOLTIP", h[h.ACTIVITY_GDM_ROCKET_SPARKLE = 197] = "ACTIVITY_GDM_ROCKET_SPARKLE", h[h.NITRO_DROP_2023_04_NITRO_TAB_BADGE = 205] = "NITRO_DROP_2023_04_NITRO_TAB_BADGE", h[h.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL = 206] = "GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL", h[h.ACTIVITIES_MOBILE_PIP_FAB_NUX = 208] = "ACTIVITIES_MOBILE_PIP_FAB_NUX", h[h.GUILD_HEADER_SOUNDBOARD_PERMISSION = 209] = "GUILD_HEADER_SOUNDBOARD_PERMISSION", h[h.GUILD_ONBOARDING_UPSELL_HEADER = 210] = "GUILD_ONBOARDING_UPSELL_HEADER", h[h.ACTIVITIES_COACH_MARK_GAME_NIGHT = 211] = "ACTIVITIES_COACH_MARK_GAME_NIGHT", h[h.GUILD_ONBOARDING_UPSELL_NAGBAR = 212] = "GUILD_ONBOARDING_UPSELL_NAGBAR", h[h.GUILD_ONBOARDING_UPSELL_MODAL_V2 = 213] = "GUILD_ONBOARDING_UPSELL_MODAL_V2", h[h.SUPER_REACTIONS_FREE_USER_FIRST_SENT = 214] = "SUPER_REACTIONS_FREE_USER_FIRST_SENT", h[h.SUPER_REACTIONS_TOOLTIP_COACHMARK = 215] = "SUPER_REACTIONS_TOOLTIP_COACHMARK", h[h.SOUNDBOARD_VOLUME_EDUCATION = 216] = "SOUNDBOARD_VOLUME_EDUCATION", h[h.NAGBAR_NOTICE_POMELO = 217] = "NAGBAR_NOTICE_POMELO", h[h.APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR = 218] = "APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR", h[h.APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR = 219] = "APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR", h[h.SUPER_REACTIONS_TAB_SPARKLE = 220] = "SUPER_REACTIONS_TAB_SPARKLE", h[h.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES = 221] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES", h[h.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES = 222] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES", h[h.MJ_NEW_USER_CHAT_BAR = 223] = "MJ_NEW_USER_CHAT_BAR", h[h.CHANNEL_NOTICE_CLYDE_NUX = 224] = "CHANNEL_NOTICE_CLYDE_NUX", h[h.USER_SAFETY_CONSUMER_EDUCATION_REPORTING = 225] = "USER_SAFETY_CONSUMER_EDUCATION_REPORTING", h[h.SUPER_REACTIONS_FIRST_SENT = 227] = "SUPER_REACTIONS_FIRST_SENT", h[h.COMMUNITY_GUILD_SETTINGS_SAFETY = 228] = "COMMUNITY_GUILD_SETTINGS_SAFETY", h[h.FRIEND_FINDER_FIRST_TIME_BADGE = 229] = "FRIEND_FINDER_FIRST_TIME_BADGE", h[h.SHARE_NITRO_BUTTON_SPARKLES = 230] = "SHARE_NITRO_BUTTON_SPARKLES", h[h.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE = 231] = "PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE", h[h.SOUNDBOARD_KEYBIND_TIP = 232] = "SOUNDBOARD_KEYBIND_TIP", h[h.QUEST_2_ENROLLMENT_TOOLTIP = 234] = "QUEST_2_ENROLLMENT_TOOLTIP", h[h.QUEST_2_COMPLETION_TOOLTIP = 235] = "QUEST_2_COMPLETION_TOOLTIP", h[h.QUEST_2_GO_LIVE_BANNER = 236] = "QUEST_2_GO_LIVE_BANNER", h[h.QUEST_2_ENDED_INCOMPLETE = 237] = "QUEST_2_ENDED_INCOMPLETE", h[h.GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES = 238] = "GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES", h[h.MEDIA_CHANNEL_UPSELL = 243] = "MEDIA_CHANNEL_UPSELL", h[h.ADD_FRIENDS_WIDGET = 244] = "ADD_FRIENDS_WIDGET", h[h.YOU_TAB_AVATAR_ONBOARDING = 245] = "YOU_TAB_AVATAR_ONBOARDING", h[h.YOU_TAB_ABOUT_ME_ONBOARDING = 246] = "YOU_TAB_ABOUT_ME_ONBOARDING", h[h.GUILD_HEADER_SUMMARIES_UPSELL = 247] = "GUILD_HEADER_SUMMARIES_UPSELL", h[h.SUPER_REACTIONS_COACHMARK_MOBILE = 250] = "SUPER_REACTIONS_COACHMARK_MOBILE", h[h.SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE = 251] = "SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE", h[h.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL = 252] = "SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL", h[h.EMOJI_PICKER_FAVORITE_EMOJIS_TIP = 253] = "EMOJI_PICKER_FAVORITE_EMOJIS_TIP", h[h.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE = 254] = "SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE", h[h.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS = 255] = "SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS", h[h.FAMILY_CENTER_NEW_BADGE = 256] = "FAMILY_CENTER_NEW_BADGE", h[h.CONSOLE_LOCAL_DETECT_CTA = 257] = "CONSOLE_LOCAL_DETECT_CTA", h[h.REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE = 263] = "REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE", h[h.GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE = 264] = "GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE", h[h.REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE = 265] = "REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE", h[h.GUILD_MEMBER_SAFETY_BANNER_NOTICE = 266] = "GUILD_MEMBER_SAFETY_BANNER_NOTICE", h[h.SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL = 270] = "SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL", h[h.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK = 271] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK", h[h.CUSTOM_CALL_SOUNDS_PICKER_UPSELL = 272] = "CUSTOM_CALL_SOUNDS_PICKER_UPSELL", h[h.CUSTOM_CALL_SOUNDS_SPARKLES = 274] = "CUSTOM_CALL_SOUNDS_SPARKLES", h[h.SOUNDBOARD_MOBILE_FLOATING_CTA = 275] = "SOUNDBOARD_MOBILE_FLOATING_CTA", h[h.SOUNDBOARD_MOBILE_NEW_BADGE = 276] = "SOUNDBOARD_MOBILE_NEW_BADGE", h[h.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2 = 277] = "PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2", h[h.VOICE_PANEL_BAD_CONNECTION_CTA = 278] = "VOICE_PANEL_BAD_CONNECTION_CTA", h[h.PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET = 279] = "PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET", h[h.MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE = 280] = "MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE", h[h.CLIPS_ONBOARDING_GO_LIVE_COACHMARK = 281] = "CLIPS_ONBOARDING_GO_LIVE_COACHMARK", h[h.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK = 282] = "CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK", h[h.CUSTOM_APP_ICONS_COACHMARK = 283] = "CUSTOM_APP_ICONS_COACHMARK", h[h.CUSTOM_APP_ICONS_NEW_BADGE = 284] = "CUSTOM_APP_ICONS_NEW_BADGE", h[h.BROADCASTING_BROADCASTER_TOOLTIP = 285] = "BROADCASTING_BROADCASTER_TOOLTIP", h[h.BROADCASTING_VIEWER_TOOLTIP = 286] = "BROADCASTING_VIEWER_TOOLTIP", h[h.SERVER_SHOP_UPSELL = 288] = "SERVER_SHOP_UPSELL", h[h.LAUNCH_PAD_PULL_TAB_NUX = 289] = "LAUNCH_PAD_PULL_TAB_NUX", h[h.CLIPS_SETTINGS_BETA_TAG = 290] = "CLIPS_SETTINGS_BETA_TAG", h[h.WHATS_NEW_AVATAR_DECOS_FLIP = 292] = "WHATS_NEW_AVATAR_DECOS_FLIP", h[h.WHATS_NEW_PROFILE_EFFECTS_FLIP = 293] = "WHATS_NEW_PROFILE_EFFECTS_FLIP", h[h.MEMBERS_LAUNCH_UPSELL = 294] = "MEMBERS_LAUNCH_UPSELL", h[h.SERVER_SHOP_PHANTOM_PREVIEW = 295] = "SERVER_SHOP_PHANTOM_PREVIEW", h[h.RECURRING_CONTACT_SYNC_PROMPT = 297] = "RECURRING_CONTACT_SYNC_PROMPT", h[h.INVENTORY_TRY_PACKS_MODAL = 302] = "INVENTORY_TRY_PACKS_MODAL", h[h.DEPRECATE_WIN32_MESSAGE = 305] = "DEPRECATE_WIN32_MESSAGE", h[h.DEKSTOP_CUSTOM_APP_ICON_COACHMARK = 306] = "DEKSTOP_CUSTOM_APP_ICON_COACHMARK", h[h.DEKSTOP_CUSTOM_APP_ICON_BADGE = 307] = "DEKSTOP_CUSTOM_APP_ICON_BADGE", h[h.WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE = 309] = "WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE", h[h.WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE = 310] = "WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE", h[h.CLYDE_AI_PERSONALITIES_NUX_MODAL = 312] = "CLYDE_AI_PERSONALITIES_NUX_MODAL", h[h.NUX_GUILD_CHANNEL_EXPLAINER = 313] = "NUX_GUILD_CHANNEL_EXPLAINER", h[h.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP = 316] = "SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP", h[h.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE = 317] = "SUPER_REACTION_TOGGLE_EDUCATION_MOBILE", h[h.SEEN_LAUNCH_WELCOME_OR_REDESIGN = 325] = "SEEN_LAUNCH_WELCOME_OR_REDESIGN", h[h.SEEN_OLD_DESIGN = 326] = "SEEN_OLD_DESIGN", h[h.SEASONAL_GIFTING_COACHMARK_2023 = 328] = "SEASONAL_GIFTING_COACHMARK_2023", h[h.SHOP_FOR_ALL_USER_POPOUT_UPSELL = 329] = "SHOP_FOR_ALL_USER_POPOUT_UPSELL", h[h.COLLECTIBLES_GIFTING_COACHMARK = 334] = "COLLECTIBLES_GIFTING_COACHMARK", h[h.SEEN_LAUNCH_WELCOME = 335] = "SEEN_LAUNCH_WELCOME", h[h.FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK = 336] = "FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK", h[h.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK = 337] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK", h[h.FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS = 338] = "FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS", h[h.OVERLAY_KEYBIND_NOTIFICATION = 340] = "OVERLAY_KEYBIND_NOTIFICATION", h[h.CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX = 343] = "CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX", h[h.UU_MIGRATION_NOTICE = 345] = "UU_MIGRATION_NOTICE", h[h.HANG_STATUS_NEW_BADGE = 346] = "HANG_STATUS_NEW_BADGE", h[h.VOICE_CALL_BG_PICKER_TOOLTIP = 347] = "VOICE_CALL_BG_PICKER_TOOLTIP", h[h.VOICE_CALL_BG_PICKER_NEW_BADGE = 348] = "VOICE_CALL_BG_PICKER_NEW_BADGE", h[h.SWIPE_TO_REPLY_COACHMARK = 349] = "SWIPE_TO_REPLY_COACHMARK", h[h.MOBILE_ACCESSIBILITY_COLOR_SETTINGS = 350] = "MOBILE_ACCESSIBILITY_COLOR_SETTINGS", h[h.POLLS_CHAT_INPUT_COACHMARK = 354] = "POLLS_CHAT_INPUT_COACHMARK", h[h.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK = 355] = "PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK", h[h.LOOTBOXES_ENTRYPOINT = 358] = "LOOTBOXES_ENTRYPOINT", h[h.TENURE_REWARD_PENDING = 360] = "TENURE_REWARD_PENDING", h[h.TENURE_REWARD_REDEEMABLE = 361] = "TENURE_REWARD_REDEEMABLE", h[h.TENURE_REWARD_REDEEMABLE_CONFETTI = 363] = "TENURE_REWARD_REDEEMABLE_CONFETTI", h[h.GAME_ONE_USER_SIGNUPS = 364] = "GAME_ONE_USER_SIGNUPS", h[h.COLLECTIBLES_SHOP_SHY_COACHTIP = 365] = "COLLECTIBLES_SHOP_SHY_COACHTIP", h[h.APP_LAUNCHER_ONBOARDING_BOTS_BANNER = 366] = "APP_LAUNCHER_ONBOARDING_BOTS_BANNER", h[h.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER = 367] = "APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER", h[h.APP_LAUNCHER_ONBOARDING_APPS_BANNER = 368] = "APP_LAUNCHER_ONBOARDING_APPS_BANNER", h[h.COLLECTIBLES_MOBILE_SHOP_MARKETING = 369] = "COLLECTIBLES_MOBILE_SHOP_MARKETING", h[h.COLLECTIBLES_MOBILE_SHOP_HALF_SHEET = 370] = "COLLECTIBLES_MOBILE_SHOP_HALF_SHEET", h[h.GENSHIN_USER_SIGNUPS = 371] = "GENSHIN_USER_SIGNUPS", h[h.ACTIVITIES_CHAT_BUTTON_NUX_V2 = 372] = "ACTIVITIES_CHAT_BUTTON_NUX_V2", h[h.ACTIVITIES_CHAT_MENU_NEW_BADGE = 373] = "ACTIVITIES_CHAT_MENU_NEW_BADGE", h[h.PREMIUM_2024_APRIL_MARKETING_MODAL = 374] = "PREMIUM_2024_APRIL_MARKETING_MODAL", h[h.PREMIUM_2024_APRIL_MARKETING_BADGE = 375] = "PREMIUM_2024_APRIL_MARKETING_BADGE", h[h.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK = 376] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK", h[h.REFERRAL_PROGRAM_PROGRESS_BAR_TOGGLE = 377] = "REFERRAL_PROGRAM_PROGRESS_BAR_TOGGLE", h[h.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE = 378] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE", h[h.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE = 379] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE", h[h.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE = 380] = "REFERRAL_PROGRAM_PREMIUM_TAB_BADGE", h[h.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP = 381] = "PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP", h[h.COLLECTIBLES_SHOP_LOFI_VIBES_COACHTIP = 382] = "COLLECTIBLES_SHOP_LOFI_VIBES_COACHTIP", h[h.COLLECTIBLES_SHOP_GALAXY_COACHTIP = 383] = "COLLECTIBLES_SHOP_GALAXY_COACHTIP", h[h.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP = 384] = "CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP", (A = l || (l = {}))[A.UNSET_EXPLICIT_CONTENT_REDACTION = 0] = "UNSET_EXPLICIT_CONTENT_REDACTION", A[A.SHOW = 1] = "SHOW", A[A.BLUR = 2] = "BLUR", A[A.BLOCK = 3] = "BLOCK", (m = u || (u = {}))[m.DEFAULT_UNSET = 0] = "DEFAULT_UNSET", m[m.DISABLED = 1] = "DISABLED", m[m.NON_FRIENDS = 2] = "NON_FRIENDS", m[m.FRIENDS_AND_NON_FRIENDS = 3] = "FRIENDS_AND_NON_FRIENDS", (N = d || (d = {}))[N.OFF = 0] = "OFF", N[N.ON_FOR_LARGE_GUILDS = 1] = "ON_FOR_LARGE_GUILDS", (p = _ || (_ = {}))[p.UNSET = 0] = "UNSET", p[p.DARK = 1] = "DARK", p[p.LIGHT = 2] = "LIGHT", p[p.DARKER = 3] = "DARKER", p[p.MIDNIGHT = 4] = "MIDNIGHT", (O = c || (c = {}))[O.MINT_APPLE = 0] = "MINT_APPLE", O[O.CITRUS_SHERBERT = 1] = "CITRUS_SHERBERT", O[O.RETRO_RAINCLOUD = 2] = "RETRO_RAINCLOUD", O[O.HANAMI = 3] = "HANAMI", O[O.SUNRISE = 4] = "SUNRISE", O[O.COTTON_CANDY = 5] = "COTTON_CANDY", O[O.LOFI_VIBES = 6] = "LOFI_VIBES", O[O.DESERT_KHAKI = 7] = "DESERT_KHAKI", O[O.SUNSET = 8] = "SUNSET", O[O.CHROMA_GLOW = 9] = "CHROMA_GLOW", O[O.FOREST = 10] = "FOREST", O[O.CRIMSON_MOON = 11] = "CRIMSON_MOON", O[O.MIDNIGHT_BLURPLE = 12] = "MIDNIGHT_BLURPLE", O[O.MARS = 13] = "MARS", O[O.DUSK = 14] = "DUSK", O[O.UNDER_THE_SEA = 15] = "UNDER_THE_SEA", O[O.EASTER_EGG = 16] = "EASTER_EGG", O[O.RETRO_STORM = 17] = "RETRO_STORM", O[O.NEON_NIGHTS = 18] = "NEON_NIGHTS", O[O.SEPIA = 19] = "SEPIA", O[O.STRAWBERRY_LEMONADE = 20] = "STRAWBERRY_LEMONADE", O[O.AURORA = 21] = "AURORA", (R = E || (E = {}))[R.UNSET_FAVORITE_CHANNEL_TYPE = 0] = "UNSET_FAVORITE_CHANNEL_TYPE", R[R.REFERENCE_ORIGINAL = 1] = "REFERENCE_ORIGINAL", R[R.CATEGORY = 2] = "CATEGORY";
+            (I = i || (i = {}))[I.UNSPECIFIED = 0] = "UNSPECIFIED", I[I.MENTIONS = 1] = "MENTIONS", I[I.UNREADS = 2] = "UNREADS", I[I.TODOS = 3] = "TODOS", I[I.FOR_YOU = 4] = "FOR_YOU", I[I.GAME_INVITES = 5] = "GAME_INVITES", (T = r || (r = {}))[T.NO_PROGRESS = 0] = "NO_PROGRESS", T[T.JOIN_GUILD = 1] = "JOIN_GUILD", T[T.INVITE_USER = 2] = "INVITE_USER", T[T.CONTACT_SYNC = 4] = "CONTACT_SYNC", (f = a || (a = {}))[f.NO_GUILD_ONBOARDING = 0] = "NO_GUILD_ONBOARDING", f[f.GUILD_NOTICE_SHOWN = 1] = "GUILD_NOTICE_SHOWN", f[f.GUILD_NOTICE_CLEARED = 2] = "GUILD_NOTICE_CLEARED", (S = s || (s = {}))[S.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = 0] = "DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE", S[S.CLYDE_GUILD_NOTICE_NUX = 1] = "CLYDE_GUILD_NOTICE_NUX", S[S.SUMMARIES_NOTICE = 2] = "SUMMARIES_NOTICE", S[S.SUMMARIES_ENABLED_NOTICE = 3] = "SUMMARIES_ENABLED_NOTICE", S[S.ADOPT_CLAN_IDENTITY_NOTICE = 4] = "ADOPT_CLAN_IDENTITY_NOTICE", (h = o || (o = {}))[h.HUB_WAITLIST_UPSELL = 0] = "HUB_WAITLIST_UPSELL", h[h.APPLICATION_COMMAND_TOOLTIP = 1] = "APPLICATION_COMMAND_TOOLTIP", h[h.HUB_EVENT_HEADER_UPSELL = 2] = "HUB_EVENT_HEADER_UPSELL", h[h.CHANNELINFO_CHANNELBANNER_NOTICE = 3] = "CHANNELINFO_CHANNELBANNER_NOTICE", h[h.ACCOUNT_MULTIACCOUNT_TOOLTIP = 4] = "ACCOUNT_MULTIACCOUNT_TOOLTIP", h[h.SEASONALGIFTING_CHANNELBUTTON_POPUP = 5] = "SEASONALGIFTING_CHANNELBUTTON_POPUP", h[h.CHANNEL_NOTICE_INVITE = 6] = "CHANNEL_NOTICE_INVITE", h[h.CHANNEL_NOTICE_HUBLINK = 7] = "CHANNEL_NOTICE_HUBLINK", h[h.CHANNEL_NOTICE_QUICKSWITCHER = 8] = "CHANNEL_NOTICE_QUICKSWITCHER", h[h.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION = 9] = "CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION", h[h.CHANNEL_NOTICE_GUILD_BANNER = 11] = "CHANNEL_NOTICE_GUILD_BANNER", h[h.GUILD_HEADER_EVENT_UPSELL = 12] = "GUILD_HEADER_EVENT_UPSELL", h[h.GUILD_HEADER_PREMIUM_GUILD_PROGRESS = 14] = "GUILD_HEADER_PREMIUM_GUILD_PROGRESS", h[h.GUILD_HEADER_ANIMATED_GUILD_BANNER = 15] = "GUILD_HEADER_ANIMATED_GUILD_BANNER", h[h.NAGBAR_NOTICE_DOWNLOAD = 16] = "NAGBAR_NOTICE_DOWNLOAD", h[h.NAGBAR_NOTICE_CONNECT_SPOTIFY = 17] = "NAGBAR_NOTICE_CONNECT_SPOTIFY", h[h.NAGBAR_NOTICE_CONNECT_PLAYSTATION = 18] = "NAGBAR_NOTICE_CONNECT_PLAYSTATION", h[h.NAGBAR_NOTICE_MFA_SMS_BACKUP = 19] = "NAGBAR_NOTICE_MFA_SMS_BACKUP", h[h.ACTIVITIES_SUNSET_COACH_MARK = 20] = "ACTIVITIES_SUNSET_COACH_MARK", h[h.NAGBAR_NOTICE_PREMIUM_PROMO = 21] = "NAGBAR_NOTICE_PREMIUM_PROMO", h[h.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING = 22] = "NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING", h[h.NAGBAR_NOTICE_PREMIUM_REACTIVATE = 23] = "NAGBAR_NOTICE_PREMIUM_REACTIVATE", h[h.PREMIUM_5TH_ANNIVERSARY_MODAL = 24] = "PREMIUM_5TH_ANNIVERSARY_MODAL", h[h.GUILD_JOIN_FEEDBACK_MODAL = 25] = "GUILD_JOIN_FEEDBACK_MODAL", h[h.VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP = 26] = "VOICE_QUALITY_BOOSTING_UPSELL_TOOLTIP", h[h.ACTIVITIES_EARLY_USER_COACH_MARK = 27] = "ACTIVITIES_EARLY_USER_COACH_MARK", h[h.GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP = 28] = "GUILD_HEADER_SERVER_DISCOVERY_TOOLTIP", h[h.ACTIVITIES_TUTORIAL_COACH_MARK = 29] = "ACTIVITIES_TUTORIAL_COACH_MARK", h[h.GUILD_HEADER_INVITE_SPLASH = 31] = "GUILD_HEADER_INVITE_SPLASH", h[h.NAGBAR_NOTICE_LOCALIZED_PRICING = 33] = "NAGBAR_NOTICE_LOCALIZED_PRICING", h[h.SOUNDBOARD_EDUCATION = 35] = "SOUNDBOARD_EDUCATION", h[h.GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK = 36] = "GUILD_HEADER_PROGRESS_BAR_SIZE_COACH_MARK", h[h.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL = 37] = "GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL", h[h.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK = 38] = "CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK", h[h.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL = 39] = "GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL", h[h.GUILD_INSIGHTS_ACCESS_RATE_NEW = 40] = "GUILD_INSIGHTS_ACCESS_RATE_NEW", h[h.NOW_PLAYING_CONSENT_CARD = 41] = "NOW_PLAYING_CONSENT_CARD", h[h.GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP = 42] = "GUILD_HEADER_BOOSTING_LOW_PRICE_EXPERIMENT_TOOLTIP", h[h.FORUM_CHANNEL_UPSELL_MODAL = 44] = "FORUM_CHANNEL_UPSELL_MODAL", h[h.POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP = 46] = "POGGERMODE_BIRTHDAY_EDUCATION_TOOLTIP", h[h.MWEB_APP_DOWNLOAD_HALFSHEET = 47] = "MWEB_APP_DOWNLOAD_HALFSHEET", h[h.MWEB_APP_DOWNLOAD_NAGBAR_THEMED = 48] = "MWEB_APP_DOWNLOAD_NAGBAR_THEMED", h[h.MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE = 49] = "MWEB_APP_DOWNLOAD_NAGBAR_BLURPLE", h[h.GUILD_FEED_NUX_CARD = 50] = "GUILD_FEED_NUX_CARD", h[h.GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP = 52] = "GUILD_HEADER_FREE_STICKER_SLOTS_TOOLTIP", h[h.ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2 = 53] = "ACTIVITIES_NITRO_TUTORIAL_COACH_MARK_V2", h[h.ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES = 55] = "ACTIVITIES_TEXT_INPUT_BUTTON_SPARKLES", h[h.GUILD_DELETE_FEEDBACK = 56] = "GUILD_DELETE_FEEDBACK", h[h.GUILD_LEAVE_FEEDBACK = 57] = "GUILD_LEAVE_FEEDBACK", h[h.AUTH_SESSIONS_NEW = 63] = "AUTH_SESSIONS_NEW", h[h.DONUT_MOBILE_NUX = 65] = "DONUT_MOBILE_NUX", h[h.GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL = 66] = "GUILD_ROLE_SUBSCRIPTION_MWEB_PURCHASE_UPSELL", h[h.FORUM_CHANNEL_HELPER_CARD = 67] = "FORUM_CHANNEL_HELPER_CARD", h[h.PASSPORT_USER_SETTINGS = 70] = "PASSPORT_USER_SETTINGS", h[h.SUMMER_BOGO_ANNOUNCEMENT = 71] = "SUMMER_BOGO_ANNOUNCEMENT", h[h.COMMANDS_MIGRATION_UPSELL_MODAL = 72] = "COMMANDS_MIGRATION_UPSELL_MODAL", h[h.FILE_LIMIT_UPLOAD_COACH_MARK = 73] = "FILE_LIMIT_UPLOAD_COACH_MARK", h[h.DONUT_DESKTOP_NUX = 77] = "DONUT_DESKTOP_NUX", h[h.GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL = 79] = "GUILD_ROLE_SUBSCRIPTION_EMOJI_UPSELL", h[h.PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST = 80] = "PREMIUM_SUBSCRIPTION_UPSELL_EMOJI_PICKER_TOP_OF_LIST", h[h.STAGE_RAISED_HAND_MOVED = 81] = "STAGE_RAISED_HAND_MOVED", h[h.XBOX_ONE_WAY_RECONNECT = 82] = "XBOX_ONE_WAY_RECONNECT", h[h.XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT = 84] = "XBOX_VOICE_DESKTOP_SETTINGS_UPSELL_POPOUT", h[h.HUB_BACK_TO_SCHOOL_UPSELL = 85] = "HUB_BACK_TO_SCHOOL_UPSELL", h[h.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP = 86] = "STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP", h[h.ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX = 89] = "ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX", h[h.PROFILE_THEMES_SETTINGS_VIEWED_V2 = 92] = "PROFILE_THEMES_SETTINGS_VIEWED_V2", h[h.GUILD_HEADER_ACTIVE_THREADS_NOTICE = 93] = "GUILD_HEADER_ACTIVE_THREADS_NOTICE", h[h.CHANNEL_LIST_OPT_IN_NUX = 94] = "CHANNEL_LIST_OPT_IN_NUX", h[h.ACTIVITIES_MOBILE_NUX = 95] = "ACTIVITIES_MOBILE_NUX", h[h.PROFILE_THEMES_NEW_BADGE = 96] = "PROFILE_THEMES_NEW_BADGE", h[h.GUILD_AUTOMOD_DEFAULT_ON_UPSELL = 97] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL", h[h.CHANNEL_BROWSER_NUX = 98] = "CHANNEL_BROWSER_NUX", h[h.RNA_CHANGELOG_HC_NOTICE = 99] = "RNA_CHANGELOG_HC_NOTICE", h[h.MESSAGE_REQUEST_SETTINGS_COACH_MARK = 100] = "MESSAGE_REQUEST_SETTINGS_COACH_MARK", h[h.GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2 = 101] = "GUILD_AUTOMOD_DEFAULT_ON_UPSELL_2", h[h.GUILD_AUTOMOD_REGEX_UPSELL = 102] = "GUILD_AUTOMOD_REGEX_UPSELL", h[h.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP = 103] = "VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP", h[h.CONNECTIONS_NUX = 108] = "CONNECTIONS_NUX", h[h.XBOX_VOICE_SURVEY_NAGBAR = 110] = "XBOX_VOICE_SURVEY_NAGBAR", h[h.PS_ONE_WAY_RECONNECT = 112] = "PS_ONE_WAY_RECONNECT", h[h.HALLOWEEN_2022_ACTIVITIES_COACH_MARK = 115] = "HALLOWEEN_2022_ACTIVITIES_COACH_MARK", h[h.NITRODUCTION_STEP_PROFILE_CUSTOMIZATION = 116] = "NITRODUCTION_STEP_PROFILE_CUSTOMIZATION", h[h.NITRODUCTION_STEP_BOOSTING = 117] = "NITRODUCTION_STEP_BOOSTING", h[h.NITRODUCTION_STEP_CUSTOM_EMOJI = 118] = "NITRODUCTION_STEP_CUSTOM_EMOJI", h[h.NEW_CRUNCHYROLL_CONNECTION = 119] = "NEW_CRUNCHYROLL_CONNECTION", h[h.APP_DIRECTORY_UPSELL_MODAL = 121] = "APP_DIRECTORY_UPSELL_MODAL", h[h.BASH_OUT_COACH_MARK = 123] = "BASH_OUT_COACH_MARK", h[h.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL = 124] = "GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL", h[h.COMMUNITY_ONBOARDING_NEW_BADGE = 125] = "COMMUNITY_ONBOARDING_NEW_BADGE", h[h.CHURRO_LINK_UPSELL = 126] = "CHURRO_LINK_UPSELL", h[h.VERIFIED_ROLES_COACH_MARK = 127] = "VERIFIED_ROLES_COACH_MARK", h[h.PROFILE_THEMES_ACCESSIBILITY_TOOLTIP = 129] = "PROFILE_THEMES_ACCESSIBILITY_TOOLTIP", h[h.BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL = 130] = "BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL", h[h.USER_SAFETY_SAFE_DIRECT_MESSAGING = 131] = "USER_SAFETY_SAFE_DIRECT_MESSAGING", h[h.GG_ANNOUNCEMENT = 132] = "GG_ANNOUNCEMENT", h[h.CHANNEL_BROWSER_NEW_BADGE_NUX = 133] = "CHANNEL_BROWSER_NEW_BADGE_NUX", h[h.CREATOR_PROMO_PAGE_COACH_MARK = 134] = "CREATOR_PROMO_PAGE_COACH_MARK", h[h.CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL = 136] = "CREATOR_MONETIZATION_ONBOARDING_V2_UPSELL", h[h.GUILD_ONBOARDING_UPSELL_MODAL = 137] = "GUILD_ONBOARDING_UPSELL_MODAL", h[h.NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE = 138] = "NAGBAR_NOTICE_ONE_TIME_PAYMENT_PAST_DUE", h[h.DROPS_GO_LIVE_BANNER_NOTICE_HALO = 139] = "DROPS_GO_LIVE_BANNER_NOTICE_HALO", h[h.DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO = 140] = "DROPS_ELIGIBILITY_ENROLLMENT_TOOLTIP_HALO", h[h.DROPS_QUEST_COMPLETION_TOOLTIP_HALO = 141] = "DROPS_QUEST_COMPLETION_TOOLTIP_HALO", h[h.SEASONAL_GIFTING_COACHMARK_2022 = 146] = "SEASONAL_GIFTING_COACHMARK_2022", h[h.NAGBAR_BOUNCED_EMAIL_NOTICE = 147] = "NAGBAR_BOUNCED_EMAIL_NOTICE", h[h.GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE = 151] = "GUILD_ONBOARDING_UPSELL_CHANNEL_NOTICE", h[h.CONSOLE_PTT_DISABLE_ALERT = 152] = "CONSOLE_PTT_DISABLE_ALERT", h[h.ACTIVITIES_MINI_SHELF_SPARKLES = 153] = "ACTIVITIES_MINI_SHELF_SPARKLES", h[h.DROPS_ENDED_INCOMPLETE_HALO = 154] = "DROPS_ENDED_INCOMPLETE_HALO", h[h.GDM_INVITE_REMINDER = 157] = "GDM_INVITE_REMINDER", h[h.USER_SAFETY_CONSUMER_EDUCATION_BLOCK = 161] = "USER_SAFETY_CONSUMER_EDUCATION_BLOCK", h[h.USER_SAFETY_CONSUMER_EDUCATION_MUTE = 162] = "USER_SAFETY_CONSUMER_EDUCATION_MUTE", h[h.LINKED_ROLE_ADMIN_GUILD = 163] = "LINKED_ROLE_ADMIN_GUILD", h[h.NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION = 164] = "NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION", h[h.BURST_REACTION_BUTTON_SPARKLE = 165] = "BURST_REACTION_BUTTON_SPARKLE", h[h.NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING = 166] = "NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING", h[h.VC_TILE_ACTIVITIES_ENTRY_POINT = 167] = "VC_TILE_ACTIVITIES_ENTRY_POINT", h[h.BURST_REACTION_COACHMARK = 169] = "BURST_REACTION_COACHMARK", h[h.BURST_REACTIONS_REMOVE_MODAL = 170] = "BURST_REACTIONS_REMOVE_MODAL", h[h.BURST_REACTION_NITRO_TOOLTIP = 171] = "BURST_REACTION_NITRO_TOOLTIP", h[h.CLIENT_THEMES_SETTINGS_BADGE = 173] = "CLIENT_THEMES_SETTINGS_BADGE", h[h.CLIENT_THEMES_COACHMARK = 174] = "CLIENT_THEMES_COACHMARK", h[h.CLIENT_THEMES_SPARKLE_PREVIEW = 175] = "CLIENT_THEMES_SPARKLE_PREVIEW", h[h.STAGE_V2_UPSELL = 176] = "STAGE_V2_UPSELL", h[h.QUEST_1_ENROLLMENT_TOOLTIP = 177] = "QUEST_1_ENROLLMENT_TOOLTIP", h[h.QUEST_1_COMPLETION_TOOLTIP = 178] = "QUEST_1_COMPLETION_TOOLTIP", h[h.QUEST_1_GO_LIVE_BANNER = 179] = "QUEST_1_GO_LIVE_BANNER", h[h.QUEST_1_ENDED_INCOMPLETE = 180] = "QUEST_1_ENDED_INCOMPLETE", h[h.PREMIUM_TUTORIAL_EXPERIENCE = 181] = "PREMIUM_TUTORIAL_EXPERIENCE", h[h.APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL = 182] = "APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL", h[h.PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP = 183] = "PREMIUM_TUTORIAL_FILE_UPLOAD_COMPOSER_TOOLTIP", h[h.PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP = 184] = "PREMIUM_TUTORIAL_STICKER_PICKER_COMPOSER_TOOLTIP", h[h.PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP = 185] = "PREMIUM_TUTORIAL_EMOJI_PICKER_COMPOSER_TOOLTIP", h[h.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP = 186] = "PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP", h[h.TABS_V2_ANNOUNCEMENT_SHEET = 188] = "TABS_V2_ANNOUNCEMENT_SHEET", h[h.VOICE_MESSAGE_UPSELL_DM = 189] = "VOICE_MESSAGE_UPSELL_DM", h[h.SUPER_REACTIONS_NITRO_MARKETING = 190] = "SUPER_REACTIONS_NITRO_MARKETING", h[h.NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL = 191] = "NITRO_DROP_2023_04_ANNOUNCEMENT_MODAL", h[h.CLYDE_GUILD_HEADER_NUX = 193] = "CLYDE_GUILD_HEADER_NUX", h[h.CLYDE_CHAT_BAR_NUX = 194] = "CLYDE_CHAT_BAR_NUX", h[h.VOICE_MESSAGE_UPSELL_GUILD = 195] = "VOICE_MESSAGE_UPSELL_GUILD", h[h.ACTIVITY_GDM_CALL_TOOLTIP = 196] = "ACTIVITY_GDM_CALL_TOOLTIP", h[h.ACTIVITY_GDM_ROCKET_SPARKLE = 197] = "ACTIVITY_GDM_ROCKET_SPARKLE", h[h.NITRO_DROP_2023_04_NITRO_TAB_BADGE = 205] = "NITRO_DROP_2023_04_NITRO_TAB_BADGE", h[h.GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL = 206] = "GUILD_ROLE_SUBSCRIPTION_IAP_UPSELL", h[h.ACTIVITIES_MOBILE_PIP_FAB_NUX = 208] = "ACTIVITIES_MOBILE_PIP_FAB_NUX", h[h.GUILD_HEADER_SOUNDBOARD_PERMISSION = 209] = "GUILD_HEADER_SOUNDBOARD_PERMISSION", h[h.GUILD_ONBOARDING_UPSELL_HEADER = 210] = "GUILD_ONBOARDING_UPSELL_HEADER", h[h.ACTIVITIES_COACH_MARK_GAME_NIGHT = 211] = "ACTIVITIES_COACH_MARK_GAME_NIGHT", h[h.GUILD_ONBOARDING_UPSELL_NAGBAR = 212] = "GUILD_ONBOARDING_UPSELL_NAGBAR", h[h.GUILD_ONBOARDING_UPSELL_MODAL_V2 = 213] = "GUILD_ONBOARDING_UPSELL_MODAL_V2", h[h.SUPER_REACTIONS_FREE_USER_FIRST_SENT = 214] = "SUPER_REACTIONS_FREE_USER_FIRST_SENT", h[h.SUPER_REACTIONS_TOOLTIP_COACHMARK = 215] = "SUPER_REACTIONS_TOOLTIP_COACHMARK", h[h.SOUNDBOARD_VOLUME_EDUCATION = 216] = "SOUNDBOARD_VOLUME_EDUCATION", h[h.NAGBAR_NOTICE_POMELO = 217] = "NAGBAR_NOTICE_POMELO", h[h.APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR = 218] = "APP_DIRECTORY_GUILD_SETTINGS_NEW_INDICATOR", h[h.APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR = 219] = "APP_DIRECTORY_GUILD_SETTINGS_CONTEXT_MENU_NEW_INDICATOR", h[h.SUPER_REACTIONS_TAB_SPARKLE = 220] = "SUPER_REACTIONS_TAB_SPARKLE", h[h.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES = 221] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES", h[h.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES = 222] = "ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES", h[h.MJ_NEW_USER_CHAT_BAR = 223] = "MJ_NEW_USER_CHAT_BAR", h[h.CHANNEL_NOTICE_CLYDE_NUX = 224] = "CHANNEL_NOTICE_CLYDE_NUX", h[h.USER_SAFETY_CONSUMER_EDUCATION_REPORTING = 225] = "USER_SAFETY_CONSUMER_EDUCATION_REPORTING", h[h.SUPER_REACTIONS_FIRST_SENT = 227] = "SUPER_REACTIONS_FIRST_SENT", h[h.COMMUNITY_GUILD_SETTINGS_SAFETY = 228] = "COMMUNITY_GUILD_SETTINGS_SAFETY", h[h.FRIEND_FINDER_FIRST_TIME_BADGE = 229] = "FRIEND_FINDER_FIRST_TIME_BADGE", h[h.SHARE_NITRO_BUTTON_SPARKLES = 230] = "SHARE_NITRO_BUTTON_SPARKLES", h[h.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE = 231] = "PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE", h[h.SOUNDBOARD_KEYBIND_TIP = 232] = "SOUNDBOARD_KEYBIND_TIP", h[h.QUEST_2_ENROLLMENT_TOOLTIP = 234] = "QUEST_2_ENROLLMENT_TOOLTIP", h[h.QUEST_2_COMPLETION_TOOLTIP = 235] = "QUEST_2_COMPLETION_TOOLTIP", h[h.QUEST_2_GO_LIVE_BANNER = 236] = "QUEST_2_GO_LIVE_BANNER", h[h.QUEST_2_ENDED_INCOMPLETE = 237] = "QUEST_2_ENDED_INCOMPLETE", h[h.GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES = 238] = "GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATES", h[h.MEDIA_CHANNEL_UPSELL = 243] = "MEDIA_CHANNEL_UPSELL", h[h.ADD_FRIENDS_WIDGET = 244] = "ADD_FRIENDS_WIDGET", h[h.YOU_TAB_AVATAR_ONBOARDING = 245] = "YOU_TAB_AVATAR_ONBOARDING", h[h.YOU_TAB_ABOUT_ME_ONBOARDING = 246] = "YOU_TAB_ABOUT_ME_ONBOARDING", h[h.GUILD_HEADER_SUMMARIES_UPSELL = 247] = "GUILD_HEADER_SUMMARIES_UPSELL", h[h.SUPER_REACTIONS_COACHMARK_MOBILE = 250] = "SUPER_REACTIONS_COACHMARK_MOBILE", h[h.SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE = 251] = "SUPER_REACTIONS_SPARKLES_ACTION_SHEET_MOBILE", h[h.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL = 252] = "SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL", h[h.EMOJI_PICKER_FAVORITE_EMOJIS_TIP = 253] = "EMOJI_PICKER_FAVORITE_EMOJIS_TIP", h[h.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE = 254] = "SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE", h[h.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS = 255] = "SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS", h[h.FAMILY_CENTER_NEW_BADGE = 256] = "FAMILY_CENTER_NEW_BADGE", h[h.CONSOLE_LOCAL_DETECT_CTA = 257] = "CONSOLE_LOCAL_DETECT_CTA", h[h.REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE = 263] = "REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE", h[h.GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE = 264] = "GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE", h[h.REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE = 265] = "REMIXING_ENTRYPOINT_OPEN_MEDIA_KEYBOARD_UPSELL_MOBILE", h[h.GUILD_MEMBER_SAFETY_BANNER_NOTICE = 266] = "GUILD_MEMBER_SAFETY_BANNER_NOTICE", h[h.SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL = 270] = "SUMMER_2023_BOGO_ANNOUNCEMENT_MODAL", h[h.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK = 271] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK", h[h.CUSTOM_CALL_SOUNDS_PICKER_UPSELL = 272] = "CUSTOM_CALL_SOUNDS_PICKER_UPSELL", h[h.CUSTOM_CALL_SOUNDS_SPARKLES = 274] = "CUSTOM_CALL_SOUNDS_SPARKLES", h[h.SOUNDBOARD_MOBILE_FLOATING_CTA = 275] = "SOUNDBOARD_MOBILE_FLOATING_CTA", h[h.SOUNDBOARD_MOBILE_NEW_BADGE = 276] = "SOUNDBOARD_MOBILE_NEW_BADGE", h[h.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2 = 277] = "PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2", h[h.VOICE_PANEL_BAD_CONNECTION_CTA = 278] = "VOICE_PANEL_BAD_CONNECTION_CTA", h[h.PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET = 279] = "PREMIUM_TRIAL_OFFER_MOBILE_ACTION_SHEET", h[h.MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE = 280] = "MEDIA_CHANNEL_MULTIPLE_THUMBNAIL_NOTICE", h[h.CLIPS_ONBOARDING_GO_LIVE_COACHMARK = 281] = "CLIPS_ONBOARDING_GO_LIVE_COACHMARK", h[h.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK = 282] = "CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK", h[h.CUSTOM_APP_ICONS_COACHMARK = 283] = "CUSTOM_APP_ICONS_COACHMARK", h[h.CUSTOM_APP_ICONS_NEW_BADGE = 284] = "CUSTOM_APP_ICONS_NEW_BADGE", h[h.BROADCASTING_BROADCASTER_TOOLTIP = 285] = "BROADCASTING_BROADCASTER_TOOLTIP", h[h.BROADCASTING_VIEWER_TOOLTIP = 286] = "BROADCASTING_VIEWER_TOOLTIP", h[h.SERVER_SHOP_UPSELL = 288] = "SERVER_SHOP_UPSELL", h[h.LAUNCH_PAD_PULL_TAB_NUX = 289] = "LAUNCH_PAD_PULL_TAB_NUX", h[h.CLIPS_SETTINGS_BETA_TAG = 290] = "CLIPS_SETTINGS_BETA_TAG", h[h.WHATS_NEW_AVATAR_DECOS_FLIP = 292] = "WHATS_NEW_AVATAR_DECOS_FLIP", h[h.WHATS_NEW_PROFILE_EFFECTS_FLIP = 293] = "WHATS_NEW_PROFILE_EFFECTS_FLIP", h[h.MEMBERS_LAUNCH_UPSELL = 294] = "MEMBERS_LAUNCH_UPSELL", h[h.SERVER_SHOP_PHANTOM_PREVIEW = 295] = "SERVER_SHOP_PHANTOM_PREVIEW", h[h.RECURRING_CONTACT_SYNC_PROMPT = 297] = "RECURRING_CONTACT_SYNC_PROMPT", h[h.INVENTORY_TRY_PACKS_MODAL = 302] = "INVENTORY_TRY_PACKS_MODAL", h[h.DEPRECATE_WIN32_MESSAGE = 305] = "DEPRECATE_WIN32_MESSAGE", h[h.DEKSTOP_CUSTOM_APP_ICON_COACHMARK = 306] = "DEKSTOP_CUSTOM_APP_ICON_COACHMARK", h[h.DEKSTOP_CUSTOM_APP_ICON_BADGE = 307] = "DEKSTOP_CUSTOM_APP_ICON_BADGE", h[h.WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE = 309] = "WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE", h[h.WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE = 310] = "WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE", h[h.CLYDE_AI_PERSONALITIES_NUX_MODAL = 312] = "CLYDE_AI_PERSONALITIES_NUX_MODAL", h[h.NUX_GUILD_CHANNEL_EXPLAINER = 313] = "NUX_GUILD_CHANNEL_EXPLAINER", h[h.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP = 316] = "SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP", h[h.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE = 317] = "SUPER_REACTION_TOGGLE_EDUCATION_MOBILE", h[h.SEEN_LAUNCH_WELCOME_OR_REDESIGN = 325] = "SEEN_LAUNCH_WELCOME_OR_REDESIGN", h[h.SEEN_OLD_DESIGN = 326] = "SEEN_OLD_DESIGN", h[h.SEASONAL_GIFTING_COACHMARK_2023 = 328] = "SEASONAL_GIFTING_COACHMARK_2023", h[h.SHOP_FOR_ALL_USER_POPOUT_UPSELL = 329] = "SHOP_FOR_ALL_USER_POPOUT_UPSELL", h[h.COLLECTIBLES_GIFTING_COACHMARK = 334] = "COLLECTIBLES_GIFTING_COACHMARK", h[h.SEEN_LAUNCH_WELCOME = 335] = "SEEN_LAUNCH_WELCOME", h[h.FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK = 336] = "FAVORITE_SERVER_ADD_TO_FAVORITES_COACHMARK", h[h.INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK = 337] = "INVENTORY_GUILD_SETTINGS_MODMIN_COACHMARK_ROLLBACK", h[h.FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS = 338] = "FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS", h[h.OVERLAY_KEYBIND_NOTIFICATION = 340] = "OVERLAY_KEYBIND_NOTIFICATION", h[h.CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX = 343] = "CHANNEL_LIST_V2_BROWSE_CHANNELS_NUX", h[h.UU_MIGRATION_NOTICE = 345] = "UU_MIGRATION_NOTICE", h[h.HANG_STATUS_NEW_BADGE = 346] = "HANG_STATUS_NEW_BADGE", h[h.VOICE_CALL_BG_PICKER_TOOLTIP = 347] = "VOICE_CALL_BG_PICKER_TOOLTIP", h[h.VOICE_CALL_BG_PICKER_NEW_BADGE = 348] = "VOICE_CALL_BG_PICKER_NEW_BADGE", h[h.SWIPE_TO_REPLY_COACHMARK = 349] = "SWIPE_TO_REPLY_COACHMARK", h[h.MOBILE_ACCESSIBILITY_COLOR_SETTINGS = 350] = "MOBILE_ACCESSIBILITY_COLOR_SETTINGS", h[h.POLLS_CHAT_INPUT_COACHMARK = 354] = "POLLS_CHAT_INPUT_COACHMARK", h[h.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK = 355] = "PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK", h[h.LOOTBOXES_ENTRYPOINT = 358] = "LOOTBOXES_ENTRYPOINT", h[h.TENURE_REWARD_PENDING = 360] = "TENURE_REWARD_PENDING", h[h.TENURE_REWARD_REDEEMABLE = 361] = "TENURE_REWARD_REDEEMABLE", h[h.TENURE_REWARD_REDEEMABLE_CONFETTI = 363] = "TENURE_REWARD_REDEEMABLE_CONFETTI", h[h.GAME_ONE_USER_SIGNUPS = 364] = "GAME_ONE_USER_SIGNUPS", h[h.COLLECTIBLES_SHOP_SHY_COACHTIP = 365] = "COLLECTIBLES_SHOP_SHY_COACHTIP", h[h.APP_LAUNCHER_ONBOARDING_BOTS_BANNER = 366] = "APP_LAUNCHER_ONBOARDING_BOTS_BANNER", h[h.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER = 367] = "APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER", h[h.APP_LAUNCHER_ONBOARDING_APPS_BANNER = 368] = "APP_LAUNCHER_ONBOARDING_APPS_BANNER", h[h.COLLECTIBLES_MOBILE_SHOP_MARKETING = 369] = "COLLECTIBLES_MOBILE_SHOP_MARKETING", h[h.COLLECTIBLES_MOBILE_SHOP_HALF_SHEET = 370] = "COLLECTIBLES_MOBILE_SHOP_HALF_SHEET", h[h.GENSHIN_USER_SIGNUPS = 371] = "GENSHIN_USER_SIGNUPS", h[h.ACTIVITIES_CHAT_BUTTON_NUX_V2 = 372] = "ACTIVITIES_CHAT_BUTTON_NUX_V2", h[h.ACTIVITIES_CHAT_MENU_NEW_BADGE = 373] = "ACTIVITIES_CHAT_MENU_NEW_BADGE", h[h.PREMIUM_2024_APRIL_MARKETING_MODAL = 374] = "PREMIUM_2024_APRIL_MARKETING_MODAL", h[h.PREMIUM_2024_APRIL_MARKETING_BADGE = 375] = "PREMIUM_2024_APRIL_MARKETING_BADGE", h[h.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK = 376] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK", h[h.REFERRAL_PROGRAM_PROGRESS_BAR_TOGGLE = 377] = "REFERRAL_PROGRAM_PROGRESS_BAR_TOGGLE", h[h.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE = 378] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE", h[h.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE = 379] = "PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE", h[h.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE = 380] = "REFERRAL_PROGRAM_PREMIUM_TAB_BADGE", h[h.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP = 381] = "PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP", h[h.COLLECTIBLES_SHOP_LOFI_VIBES_COACHTIP = 382] = "COLLECTIBLES_SHOP_LOFI_VIBES_COACHTIP", h[h.COLLECTIBLES_SHOP_GALAXY_COACHTIP = 383] = "COLLECTIBLES_SHOP_GALAXY_COACHTIP", h[h.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP = 384] = "CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP", h[h.CHANNEL_LIST_CLAN_ADMIN_UPSELL = 385] = "CHANNEL_LIST_CLAN_ADMIN_UPSELL", (A = l || (l = {}))[A.UNSET_EXPLICIT_CONTENT_REDACTION = 0] = "UNSET_EXPLICIT_CONTENT_REDACTION", A[A.SHOW = 1] = "SHOW", A[A.BLUR = 2] = "BLUR", A[A.BLOCK = 3] = "BLOCK", (m = u || (u = {}))[m.DEFAULT_UNSET = 0] = "DEFAULT_UNSET", m[m.DISABLED = 1] = "DISABLED", m[m.NON_FRIENDS = 2] = "NON_FRIENDS", m[m.FRIENDS_AND_NON_FRIENDS = 3] = "FRIENDS_AND_NON_FRIENDS", (N = d || (d = {}))[N.OFF = 0] = "OFF", N[N.ON_FOR_LARGE_GUILDS = 1] = "ON_FOR_LARGE_GUILDS", (p = _ || (_ = {}))[p.UNSET = 0] = "UNSET", p[p.DARK = 1] = "DARK", p[p.LIGHT = 2] = "LIGHT", p[p.DARKER = 3] = "DARKER", p[p.MIDNIGHT = 4] = "MIDNIGHT", (O = c || (c = {}))[O.MINT_APPLE = 0] = "MINT_APPLE", O[O.CITRUS_SHERBERT = 1] = "CITRUS_SHERBERT", O[O.RETRO_RAINCLOUD = 2] = "RETRO_RAINCLOUD", O[O.HANAMI = 3] = "HANAMI", O[O.SUNRISE = 4] = "SUNRISE", O[O.COTTON_CANDY = 5] = "COTTON_CANDY", O[O.LOFI_VIBES = 6] = "LOFI_VIBES", O[O.DESERT_KHAKI = 7] = "DESERT_KHAKI", O[O.SUNSET = 8] = "SUNSET", O[O.CHROMA_GLOW = 9] = "CHROMA_GLOW", O[O.FOREST = 10] = "FOREST", O[O.CRIMSON_MOON = 11] = "CRIMSON_MOON", O[O.MIDNIGHT_BLURPLE = 12] = "MIDNIGHT_BLURPLE", O[O.MARS = 13] = "MARS", O[O.DUSK = 14] = "DUSK", O[O.UNDER_THE_SEA = 15] = "UNDER_THE_SEA", O[O.EASTER_EGG = 16] = "EASTER_EGG", O[O.RETRO_STORM = 17] = "RETRO_STORM", O[O.NEON_NIGHTS = 18] = "NEON_NIGHTS", O[O.SEPIA = 19] = "SEPIA", O[O.STRAWBERRY_LEMONADE = 20] = "STRAWBERRY_LEMONADE", O[O.AURORA = 21] = "AURORA", (R = E || (E = {}))[R.UNSET_FAVORITE_CHANNEL_TYPE = 0] = "UNSET_FAVORITE_CHANNEL_TYPE", R[R.REFERENCE_ORIGINAL = 1] = "REFERENCE_ORIGINAL", R[R.CATEGORY = 2] = "CATEGORY";
             class D extends C.MessageType {
                 create(e) {
                     let t = {};
@@ -310784,7 +309957,7 @@
         831209: function(e, t, n) {
             "use strict";
             var i, r;
-            n.r(t), (r = i || (i = {})).ACTION_SHEET_GRADIENT_BG = "var(--action-sheet-gradient-bg)", r.ACTIVITY_CARD_BACKGROUND = "var(--activity-card-background)", r.ACTIVITY_CARD_ICON_OVERLAY = "var(--activity-card-icon-overlay)", r.ALERT_BG = "var(--alert-bg)", r.ANDROID_NAVIGATION_BAR_BACKGROUND = "var(--android-navigation-bar-background)", r.ANDROID_NAVIGATION_SCRIM_BACKGROUND = "var(--android-navigation-scrim-background)", r.ANDROID_RIPPLE = "var(--android-ripple)", r.BACKGROUND_ACCENT = "var(--background-accent)", r.BACKGROUND_FLOATING = "var(--background-floating)", r.BACKGROUND_MENTIONED = "var(--background-mentioned)", r.BACKGROUND_MENTIONED_HOVER = "var(--background-mentioned-hover)", r.BACKGROUND_MESSAGE_AUTOMOD = "var(--background-message-automod)", r.BACKGROUND_MESSAGE_AUTOMOD_HOVER = "var(--background-message-automod-hover)", r.BACKGROUND_MESSAGE_HIGHLIGHT = "var(--background-message-highlight)", r.BACKGROUND_MESSAGE_HIGHLIGHT_HOVER = "var(--background-message-highlight-hover)", r.BACKGROUND_MESSAGE_HOVER = "var(--background-message-hover)", r.BACKGROUND_MOBILE_PRIMARY = "var(--background-mobile-primary)", r.BACKGROUND_MOBILE_SECONDARY = "var(--background-mobile-secondary)", r.BACKGROUND_MODIFIER_ACCENT = "var(--background-modifier-accent)", r.BACKGROUND_MODIFIER_ACCENT_2 = "var(--background-modifier-accent-2)", r.BACKGROUND_MODIFIER_ACTIVE = "var(--background-modifier-active)", r.BACKGROUND_MODIFIER_HOVER = "var(--background-modifier-hover)", r.BACKGROUND_MODIFIER_SELECTED = "var(--background-modifier-selected)", r.BACKGROUND_NESTED_FLOATING = "var(--background-nested-floating)", r.BACKGROUND_PRIMARY = "var(--background-primary)", r.BACKGROUND_SECONDARY = "var(--background-secondary)", r.BACKGROUND_SECONDARY_ALT = "var(--background-secondary-alt)", r.BACKGROUND_TERTIARY = "var(--background-tertiary)", r.BG_BACKDROP = "var(--bg-backdrop)", r.BG_BACKDROP_NO_OPACITY = "var(--bg-backdrop-no-opacity)", r.BG_BASE_PRIMARY = "var(--bg-base-primary)", r.BG_BASE_SECONDARY = "var(--bg-base-secondary)", r.BG_BASE_TERTIARY = "var(--bg-base-tertiary)", r.BG_BRAND = "var(--bg-brand)", r.BG_MOD_FAINT = "var(--bg-mod-faint)", r.BG_MOD_STRONG = "var(--bg-mod-strong)", r.BG_MOD_SUBTLE = "var(--bg-mod-subtle)", r.BG_SURFACE_OVERLAY = "var(--bg-surface-overlay)", r.BG_SURFACE_OVERLAY_TMP = "var(--bg-surface-overlay-tmp)", r.BG_SURFACE_RAISED = "var(--bg-surface-raised)", r.BLACK = "var(--black)", r.BLUR_FALLBACK = "var(--blur-fallback)", r.BLUR_FALLBACK_PRESSED = "var(--blur-fallback-pressed)", r.BORDER_FAINT = "var(--border-faint)", r.BORDER_STRONG = "var(--border-strong)", r.BORDER_SUBTLE = "var(--border-subtle)", r.BUG_REPORTER_MODAL_SUBMITTING_BACKGROUND = "var(--bug-reporter-modal-submitting-background)", r.BUTTON_CREATOR_REVENUE_BACKGROUND = "var(--button-creator-revenue-background)", r.BUTTON_DANGER_BACKGROUND = "var(--button-danger-background)", r.BUTTON_DANGER_BACKGROUND_ACTIVE = "var(--button-danger-background-active)", r.BUTTON_DANGER_BACKGROUND_DISABLED = "var(--button-danger-background-disabled)", r.BUTTON_DANGER_BACKGROUND_HOVER = "var(--button-danger-background-hover)", r.BUTTON_OUTLINE_BRAND_BACKGROUND = "var(--button-outline-brand-background)", r.BUTTON_OUTLINE_BRAND_BACKGROUND_ACTIVE = "var(--button-outline-brand-background-active)", r.BUTTON_OUTLINE_BRAND_BACKGROUND_HOVER = "var(--button-outline-brand-background-hover)", r.BUTTON_OUTLINE_BRAND_BORDER = "var(--button-outline-brand-border)", r.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE = "var(--button-outline-brand-border-active)", r.BUTTON_OUTLINE_BRAND_BORDER_HOVER = "var(--button-outline-brand-border-hover)", r.BUTTON_OUTLINE_BRAND_TEXT = "var(--button-outline-brand-text)", r.BUTTON_OUTLINE_BRAND_TEXT_ACTIVE = "var(--button-outline-brand-text-active)", r.BUTTON_OUTLINE_BRAND_TEXT_HOVER = "var(--button-outline-brand-text-hover)", r.BUTTON_OUTLINE_DANGER_BACKGROUND = "var(--button-outline-danger-background)", r.BUTTON_OUTLINE_DANGER_BACKGROUND_ACTIVE = "var(--button-outline-danger-background-active)", r.BUTTON_OUTLINE_DANGER_BACKGROUND_HOVER = "var(--button-outline-danger-background-hover)", r.BUTTON_OUTLINE_DANGER_BORDER = "var(--button-outline-danger-border)", r.BUTTON_OUTLINE_DANGER_BORDER_ACTIVE = "var(--button-outline-danger-border-active)", r.BUTTON_OUTLINE_DANGER_BORDER_HOVER = "var(--button-outline-danger-border-hover)", r.BUTTON_OUTLINE_DANGER_TEXT = "var(--button-outline-danger-text)", r.BUTTON_OUTLINE_DANGER_TEXT_ACTIVE = "var(--button-outline-danger-text-active)", r.BUTTON_OUTLINE_DANGER_TEXT_HOVER = "var(--button-outline-danger-text-hover)", r.BUTTON_OUTLINE_POSITIVE_BACKGROUND = "var(--button-outline-positive-background)", r.BUTTON_OUTLINE_POSITIVE_BACKGROUND_ACTIVE = "var(--button-outline-positive-background-active)", r.BUTTON_OUTLINE_POSITIVE_BACKGROUND_HOVER = "var(--button-outline-positive-background-hover)", r.BUTTON_OUTLINE_POSITIVE_BORDER = "var(--button-outline-positive-border)", r.BUTTON_OUTLINE_POSITIVE_BORDER_ACTIVE = "var(--button-outline-positive-border-active)", r.BUTTON_OUTLINE_POSITIVE_BORDER_HOVER = "var(--button-outline-positive-border-hover)", r.BUTTON_OUTLINE_POSITIVE_TEXT = "var(--button-outline-positive-text)", r.BUTTON_OUTLINE_POSITIVE_TEXT_ACTIVE = "var(--button-outline-positive-text-active)", r.BUTTON_OUTLINE_POSITIVE_TEXT_HOVER = "var(--button-outline-positive-text-hover)", r.BUTTON_OUTLINE_PRIMARY_BACKGROUND = "var(--button-outline-primary-background)", r.BUTTON_OUTLINE_PRIMARY_BACKGROUND_ACTIVE = "var(--button-outline-primary-background-active)", r.BUTTON_OUTLINE_PRIMARY_BACKGROUND_HOVER = "var(--button-outline-primary-background-hover)", r.BUTTON_OUTLINE_PRIMARY_BORDER = "var(--button-outline-primary-border)", r.BUTTON_OUTLINE_PRIMARY_BORDER_ACTIVE = "var(--button-outline-primary-border-active)", r.BUTTON_OUTLINE_PRIMARY_BORDER_HOVER = "var(--button-outline-primary-border-hover)", r.BUTTON_OUTLINE_PRIMARY_TEXT = "var(--button-outline-primary-text)", r.BUTTON_OUTLINE_PRIMARY_TEXT_ACTIVE = "var(--button-outline-primary-text-active)", r.BUTTON_OUTLINE_PRIMARY_TEXT_HOVER = "var(--button-outline-primary-text-hover)", r.BUTTON_POSITIVE_BACKGROUND = "var(--button-positive-background)", r.BUTTON_POSITIVE_BACKGROUND_ACTIVE = "var(--button-positive-background-active)", r.BUTTON_POSITIVE_BACKGROUND_DISABLED = "var(--button-positive-background-disabled)", r.BUTTON_POSITIVE_BACKGROUND_HOVER = "var(--button-positive-background-hover)", r.BUTTON_SECONDARY_BACKGROUND = "var(--button-secondary-background)", r.BUTTON_SECONDARY_BACKGROUND_ACTIVE = "var(--button-secondary-background-active)", r.BUTTON_SECONDARY_BACKGROUND_DISABLED = "var(--button-secondary-background-disabled)", r.BUTTON_SECONDARY_BACKGROUND_HOVER = "var(--button-secondary-background-hover)", r.CARD_GRADIENT_BG = "var(--card-gradient-bg)", r.CARD_GRADIENT_PRESSED_BG = "var(--card-gradient-pressed-bg)", r.CARD_PRIMARY_BG = "var(--card-primary-bg)", r.CARD_PRIMARY_PRESSED_BG = "var(--card-primary-pressed-bg)", r.CARD_SECONDARY_BG = "var(--card-secondary-bg)", r.CARD_SECONDARY_PRESSED_BG = "var(--card-secondary-pressed-bg)", r.CHANNEL_ICON = "var(--channel-icon)", r.CHANNEL_TEXT_AREA_PLACEHOLDER = "var(--channel-text-area-placeholder)", r.CHANNELS_DEFAULT = "var(--channels-default)", r.CHANNELTEXTAREA_BACKGROUND = "var(--channeltextarea-background)", r.CHAT_BACKGROUND = "var(--chat-background)", r.CHAT_BANNER_BG = "var(--chat-banner-bg)", r.CHAT_BORDER = "var(--chat-border)", r.CHAT_INPUT_CONTAINER_BACKGROUND = "var(--chat-input-container-background)", r.CHAT_SWIPE_TO_REPLY_BACKGROUND = "var(--chat-swipe-to-reply-background)", r.CHAT_SWIPE_TO_REPLY_GRADIENT_BACKGROUND = "var(--chat-swipe-to-reply-gradient-background)", r.COACHMARK_BG = "var(--coachmark-bg)", r.CONTEXT_MENU_BACKDROP_BACKGROUND = "var(--context-menu-backdrop-background)", r.CONTROL_BRAND_FOREGROUND = "var(--control-brand-foreground)", r.CONTROL_BRAND_FOREGROUND_NEW = "var(--control-brand-foreground-new)", r.CREATOR_REVENUE_ICON_GRADIENT_END = "var(--creator-revenue-icon-gradient-end)", r.CREATOR_REVENUE_ICON_GRADIENT_START = "var(--creator-revenue-icon-gradient-start)", r.CREATOR_REVENUE_INFO_BOX_BACKGROUND = "var(--creator-revenue-info-box-background)", r.CREATOR_REVENUE_INFO_BOX_BORDER = "var(--creator-revenue-info-box-border)", r.CREATOR_REVENUE_LOCKED_CHANNEL_ICON = "var(--creator-revenue-locked-channel-icon)", r.CREATOR_REVENUE_PROGRESS_BAR = "var(--creator-revenue-progress-bar)", r.DEPRECATED_CARD_BG = "var(--deprecated-card-bg)", r.DEPRECATED_CARD_EDITABLE_BG = "var(--deprecated-card-editable-bg)", r.DEPRECATED_QUICKSWITCHER_INPUT_BACKGROUND = "var(--deprecated-quickswitcher-input-background)", r.DEPRECATED_QUICKSWITCHER_INPUT_PLACEHOLDER = "var(--deprecated-quickswitcher-input-placeholder)", r.DEPRECATED_STORE_BG = "var(--deprecated-store-bg)", r.DEPRECATED_TEXT_INPUT_BG = "var(--deprecated-text-input-bg)", r.DEPRECATED_TEXT_INPUT_BORDER = "var(--deprecated-text-input-border)", r.DEPRECATED_TEXT_INPUT_BORDER_DISABLED = "var(--deprecated-text-input-border-disabled)", r.DEPRECATED_TEXT_INPUT_BORDER_HOVER = "var(--deprecated-text-input-border-hover)", r.DEPRECATED_TEXT_INPUT_PREFIX = "var(--deprecated-text-input-prefix)", r.DISPLAY_BANNER_OVERFLOW_BACKGROUND = "var(--display-banner-overflow-background)", r.DIVIDER_STRONG = "var(--divider-strong)", r.DIVIDER_SUBTLE = "var(--divider-subtle)", r.EMBED_BACKGROUND = "var(--embed-background)", r.EMBED_BACKGROUND_ALTERNATE = "var(--embed-background-alternate)", r.EMBED_TITLE = "var(--embed-title)", r.EXPRESSION_PICKER_BG = "var(--expression-picker-bg)", r.FOCUS_PRIMARY = "var(--focus-primary)", r.FORUM_POST_EXTRA_MEDIA_COUNT_CONTAINER_BACKGROUND = "var(--forum-post-extra-media-count-container-background)", r.FORUM_POST_TAG_BACKGROUND = "var(--forum-post-tag-background)", r.GUILD_ICON_INACTIVE_BG = "var(--guild-icon-inactive-bg)", r.GUILD_ICON_INACTIVE_NESTED_BG = "var(--guild-icon-inactive-nested-bg)", r.GUILD_NOTIFICATIONS_BOTTOM_SHEET_PILL_BACKGROUND = "var(--guild-notifications-bottom-sheet-pill-background)", r.HALO_POSITIVE = "var(--halo-positive)", r.HEADER_MUTED = "var(--header-muted)", r.HEADER_PRIMARY = "var(--header-primary)", r.HEADER_SECONDARY = "var(--header-secondary)", r.HOME_BACKGROUND = "var(--home-background)", r.HOME_CARD_RESTING_BORDER = "var(--home-card-resting-border)", r.ICON_MUTED = "var(--icon-muted)", r.ICON_PRIMARY = "var(--icon-primary)", r.ICON_SECONDARY = "var(--icon-secondary)", r.ICON_TRANSPARENT = "var(--icon-transparent)", r.INFO_BOX_BACKGROUND = "var(--info-box-background)", r.INFO_DANGER_BACKGROUND = "var(--info-danger-background)", r.INFO_DANGER_FOREGROUND = "var(--info-danger-foreground)", r.INFO_DANGER_TEXT = "var(--info-danger-text)", r.INFO_HELP_BACKGROUND = "var(--info-help-background)", r.INFO_HELP_FOREGROUND = "var(--info-help-foreground)", r.INFO_HELP_TEXT = "var(--info-help-text)", r.INFO_POSITIVE_BACKGROUND = "var(--info-positive-background)", r.INFO_POSITIVE_FOREGROUND = "var(--info-positive-foreground)", r.INFO_POSITIVE_TEXT = "var(--info-positive-text)", r.INFO_WARNING_BACKGROUND = "var(--info-warning-background)", r.INFO_WARNING_FOREGROUND = "var(--info-warning-foreground)", r.INFO_WARNING_TEXT = "var(--info-warning-text)", r.INPUT_BACKGROUND = "var(--input-background)", r.INPUT_FOCUSED_BORDER = "var(--input-focused-border)", r.INPUT_PLACEHOLDER_TEXT = "var(--input-placeholder-text)", r.INTERACTIVE_ACTIVE = "var(--interactive-active)", r.INTERACTIVE_HOVER = "var(--interactive-hover)", r.INTERACTIVE_MUTED = "var(--interactive-muted)", r.INTERACTIVE_NORMAL = "var(--interactive-normal)", r.LEGACY_ANDROID_BLUR_OVERLAY_DEFAULT = "var(--legacy-android-blur-overlay-default)", r.LEGACY_ANDROID_BLUR_OVERLAY_ULTRA_THIN = "var(--legacy-android-blur-overlay-ultra-thin)", r.LEGACY_BLUR_FALLBACK_DEFAULT = "var(--legacy-blur-fallback-default)", r.LEGACY_BLUR_FALLBACK_ULTRA_THIN = "var(--legacy-blur-fallback-ultra-thin)", r.LIVE_STAGE_TILE_BORDER = "var(--live-stage-tile-border)", r.LOGO_PRIMARY = "var(--logo-primary)", r.MENTION_BACKGROUND = "var(--mention-background)", r.MENTION_FOREGROUND = "var(--mention-foreground)", r.MODAL_BACKGROUND = "var(--modal-background)", r.MODAL_FOOTER_BACKGROUND = "var(--modal-footer-background)", r.NAVIGATOR_HEADER_TINT = "var(--navigator-header-tint)", r.PANEL_BG = "var(--panel-bg)", r.POLLS_NORMAL_FILL_HOVER = "var(--polls-normal-fill-hover)", r.POLLS_NORMAL_IMAGE_BACKGROUND = "var(--polls-normal-image-background)", r.POLLS_VICTOR_FILL = "var(--polls-victor-fill)", r.POLLS_VOTED_FILL = "var(--polls-voted-fill)", r.PROFILE_GRADIENT_CARD_BACKGROUND = "var(--profile-gradient-card-background)", r.PROFILE_GRADIENT_MESSAGE_INPUT_BORDER = "var(--profile-gradient-message-input-border)", r.PROFILE_GRADIENT_NOTE_BACKGROUND = "var(--profile-gradient-note-background)", r.PROFILE_GRADIENT_OVERLAY = "var(--profile-gradient-overlay)", r.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME = "var(--profile-gradient-overlay-synced-with-user-theme)", r.PROFILE_GRADIENT_PROFILE_BODY_BACKGROUND_HOVER = "var(--profile-gradient-profile-body-background-hover)", r.PROFILE_GRADIENT_ROLE_PILL_BACKGROUND = "var(--profile-gradient-role-pill-background)", r.PROFILE_GRADIENT_ROLE_PILL_BORDER = "var(--profile-gradient-role-pill-border)", r.PROFILE_GRADIENT_SECTION_BOX = "var(--profile-gradient-section-box)", r.REDESIGN_ACTIVITY_CARD_BACKGROUND = "var(--redesign-activity-card-background)", r.REDESIGN_ACTIVITY_CARD_BACKGROUND_PRESSED = "var(--redesign-activity-card-background-pressed)", r.REDESIGN_ACTIVITY_CARD_BADGE_ICON = "var(--redesign-activity-card-badge-icon)", r.REDESIGN_ACTIVITY_CARD_BORDER = "var(--redesign-activity-card-border)", r.REDESIGN_ACTIVITY_CARD_OVERFLOW_BACKGROUND = "var(--redesign-activity-card-overflow-background)", r.REDESIGN_BUTTON_ACTIVE_BACKGROUND = "var(--redesign-button-active-background)", r.REDESIGN_BUTTON_ACTIVE_PRESSED_BACKGROUND = "var(--redesign-button-active-pressed-background)", r.REDESIGN_BUTTON_ACTIVE_TEXT = "var(--redesign-button-active-text)", r.REDESIGN_BUTTON_DANGER_BACKGROUND = "var(--redesign-button-danger-background)", r.REDESIGN_BUTTON_DANGER_PRESSED_BACKGROUND = "var(--redesign-button-danger-pressed-background)", r.REDESIGN_BUTTON_DANGER_TEXT = "var(--redesign-button-danger-text)", r.REDESIGN_BUTTON_DESTRUCTIVE_BACKGROUND = "var(--redesign-button-destructive-background)", r.REDESIGN_BUTTON_DESTRUCTIVE_PRESSED_BACKGROUND = "var(--redesign-button-destructive-pressed-background)", r.REDESIGN_BUTTON_DESTRUCTIVE_TEXT = "var(--redesign-button-destructive-text)", r.REDESIGN_BUTTON_OVERLAY_ALPHA_BACKGROUND = "var(--redesign-button-overlay-alpha-background)", r.REDESIGN_BUTTON_OVERLAY_ALPHA_PRESSED_BACKGROUND = "var(--redesign-button-overlay-alpha-pressed-background)", r.REDESIGN_BUTTON_OVERLAY_ALPHA_TEXT = "var(--redesign-button-overlay-alpha-text)", r.REDESIGN_BUTTON_OVERLAY_BACKGROUND = "var(--redesign-button-overlay-background)", r.REDESIGN_BUTTON_OVERLAY_PRESSED_BACKGROUND = "var(--redesign-button-overlay-pressed-background)", r.REDESIGN_BUTTON_OVERLAY_TEXT = "var(--redesign-button-overlay-text)", r.REDESIGN_BUTTON_POSITIVE_BACKGROUND = "var(--redesign-button-positive-background)", r.REDESIGN_BUTTON_POSITIVE_PRESSED_BACKGROUND = "var(--redesign-button-positive-pressed-background)", r.REDESIGN_BUTTON_POSITIVE_TEXT = "var(--redesign-button-positive-text)", r.REDESIGN_BUTTON_PRIMARY_ALT_BACKGROUND = "var(--redesign-button-primary-alt-background)", r.REDESIGN_BUTTON_PRIMARY_ALT_BORDER = "var(--redesign-button-primary-alt-border)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_BACKGROUND = "var(--redesign-button-primary-alt-on-blurple-background)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_BORDER = "var(--redesign-button-primary-alt-on-blurple-border)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_PRESSED_BACKGROUND = "var(--redesign-button-primary-alt-on-blurple-pressed-background)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_PRESSED_BORDER = "var(--redesign-button-primary-alt-on-blurple-pressed-border)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_TEXT = "var(--redesign-button-primary-alt-on-blurple-text)", r.REDESIGN_BUTTON_PRIMARY_ALT_PRESSED_BACKGROUND = "var(--redesign-button-primary-alt-pressed-background)", r.REDESIGN_BUTTON_PRIMARY_ALT_PRESSED_BORDER = "var(--redesign-button-primary-alt-pressed-border)", r.REDESIGN_BUTTON_PRIMARY_ALT_PRESSED_TEXT = "var(--redesign-button-primary-alt-pressed-text)", r.REDESIGN_BUTTON_PRIMARY_ALT_TEXT = "var(--redesign-button-primary-alt-text)", r.REDESIGN_BUTTON_PRIMARY_BACKGROUND = "var(--redesign-button-primary-background)", r.REDESIGN_BUTTON_PRIMARY_ON_BLURPLE_PRESSED_TEXT = "var(--redesign-button-primary-on-blurple-pressed-text)", r.REDESIGN_BUTTON_PRIMARY_OVERLAY_BACKGROUND = "var(--redesign-button-primary-overlay-background)", r.REDESIGN_BUTTON_PRIMARY_OVERLAY_PRESSED_BACKGROUND = "var(--redesign-button-primary-overlay-pressed-background)", r.REDESIGN_BUTTON_PRIMARY_OVERLAY_TEXT = "var(--redesign-button-primary-overlay-text)", r.REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND = "var(--redesign-button-primary-pressed-background)", r.REDESIGN_BUTTON_PRIMARY_TEXT = "var(--redesign-button-primary-text)", r.REDESIGN_BUTTON_SECONDARY_BACKGROUND = "var(--redesign-button-secondary-background)", r.REDESIGN_BUTTON_SECONDARY_BORDER = "var(--redesign-button-secondary-border)", r.REDESIGN_BUTTON_SECONDARY_OVERLAY_BACKGROUND = "var(--redesign-button-secondary-overlay-background)", r.REDESIGN_BUTTON_SECONDARY_OVERLAY_PRESSED_BACKGROUND = "var(--redesign-button-secondary-overlay-pressed-background)", r.REDESIGN_BUTTON_SECONDARY_OVERLAY_TEXT = "var(--redesign-button-secondary-overlay-text)", r.REDESIGN_BUTTON_SECONDARY_PRESSED_BACKGROUND = "var(--redesign-button-secondary-pressed-background)", r.REDESIGN_BUTTON_SECONDARY_PRESSED_BORDER = "var(--redesign-button-secondary-pressed-border)", r.REDESIGN_BUTTON_SECONDARY_TEXT = "var(--redesign-button-secondary-text)", r.REDESIGN_BUTTON_SELECTED_BACKGROUND = "var(--redesign-button-selected-background)", r.REDESIGN_BUTTON_SELECTED_PRESSED_BACKGROUND = "var(--redesign-button-selected-pressed-background)", r.REDESIGN_BUTTON_SELECTED_TEXT = "var(--redesign-button-selected-text)", r.REDESIGN_BUTTON_TERTIARY_BACKGROUND = "var(--redesign-button-tertiary-background)", r.REDESIGN_BUTTON_TERTIARY_PRESSED_BACKGROUND = "var(--redesign-button-tertiary-pressed-background)", r.REDESIGN_BUTTON_TERTIARY_PRESSED_TEXT = "var(--redesign-button-tertiary-pressed-text)", r.REDESIGN_BUTTON_TERTIARY_TEXT = "var(--redesign-button-tertiary-text)", r.REDESIGN_CHANNEL_CATEGORY_NAME_TEXT = "var(--redesign-channel-category-name-text)", r.REDESIGN_CHANNEL_MESSAGE_PREVIEW_TEXT = "var(--redesign-channel-message-preview-text)", r.REDESIGN_CHANNEL_NAME_MUTED_TEXT = "var(--redesign-channel-name-muted-text)", r.REDESIGN_CHANNEL_NAME_TEXT = "var(--redesign-channel-name-text)", r.REDESIGN_CHAT_INPUT_BACKGROUND = "var(--redesign-chat-input-background)", r.REDESIGN_IMAGE_BUTTON_PRESSED_BACKGROUND = "var(--redesign-image-button-pressed-background)", r.REDESIGN_INPUT_CONTROL_ACTIVE_BG = "var(--redesign-input-control-active-bg)", r.REDESIGN_INPUT_CONTROL_SELECTED = "var(--redesign-input-control-selected)", r.REDESIGN_ONLY_BACKGROUND_ACTIVE = "var(--redesign-only-background-active)", r.REDESIGN_ONLY_BACKGROUND_DEFAULT = "var(--redesign-only-background-default)", r.REDESIGN_ONLY_BACKGROUND_OVERLAY = "var(--redesign-only-background-overlay)", r.REDESIGN_ONLY_BACKGROUND_RAISED = "var(--redesign-only-background-raised)", r.REDESIGN_ONLY_BACKGROUND_SUNKEN = "var(--redesign-only-background-sunken)", r.SCROLLBAR_AUTO_SCROLLBAR_COLOR_THUMB = "var(--scrollbar-auto-scrollbar-color-thumb)", r.SCROLLBAR_AUTO_SCROLLBAR_COLOR_TRACK = "var(--scrollbar-auto-scrollbar-color-track)", r.SCROLLBAR_AUTO_THUMB = "var(--scrollbar-auto-thumb)", r.SCROLLBAR_AUTO_TRACK = "var(--scrollbar-auto-track)", r.SCROLLBAR_THIN_THUMB = "var(--scrollbar-thin-thumb)", r.SCROLLBAR_THIN_TRACK = "var(--scrollbar-thin-track)", r.SPOILER_HIDDEN_BACKGROUND = "var(--spoiler-hidden-background)", r.SPOILER_REVEALED_BACKGROUND = "var(--spoiler-revealed-background)", r.STATUS_DANGER = "var(--status-danger)", r.STATUS_DANGER_BACKGROUND = "var(--status-danger-background)", r.STATUS_DANGER_TEXT = "var(--status-danger-text)", r.STATUS_DND = "var(--status-dnd)", r.STATUS_IDLE = "var(--status-idle)", r.STATUS_OFFLINE = "var(--status-offline)", r.STATUS_ONLINE = "var(--status-online)", r.STATUS_POSITIVE = "var(--status-positive)", r.STATUS_POSITIVE_BACKGROUND = "var(--status-positive-background)", r.STATUS_POSITIVE_TEXT = "var(--status-positive-text)", r.STATUS_SPEAKING = "var(--status-speaking)", r.STATUS_WARNING = "var(--status-warning)", r.STATUS_WARNING_BACKGROUND = "var(--status-warning-background)", r.STATUS_WARNING_TEXT = "var(--status-warning-text)", r.TEXT_BRAND = "var(--text-brand)", r.TEXT_DANGER = "var(--text-danger)", r.TEXT_LINK = "var(--text-link)", r.TEXT_LINK_LOW_SATURATION = "var(--text-link-low-saturation)", r.TEXT_LOW_CONTRAST = "var(--text-low-contrast)", r.TEXT_MESSAGE_PREVIEW_LOW_SAT = "var(--text-message-preview-low-sat)", r.TEXT_MUTED = "var(--text-muted)", r.TEXT_MUTED_ON_DEFAULT = "var(--text-muted-on-default)", r.TEXT_NORMAL = "var(--text-normal)", r.TEXT_POSITIVE = "var(--text-positive)", r.TEXT_PRIMARY = "var(--text-primary)", r.TEXT_SECONDARY = "var(--text-secondary)", r.TEXT_WARNING = "var(--text-warning)", r.TEXTBOX_MARKDOWN_SYNTAX = "var(--textbox-markdown-syntax)", r.THEME_LOCKED_BLUR_FALLBACK = "var(--theme-locked-blur-fallback)", r.THREAD_CHANNEL_SPINE = "var(--thread-channel-spine)", r.TOAST_BG = "var(--toast-bg)", r.TYPING_INDICATOR_BG = "var(--typing-indicator-bg)", r.USER_PROFILE_HEADER_OVERFLOW_BACKGROUND = "var(--user-profile-header-overflow-background)", r.VOICE_VIDEO_VIDEO_TILE_BACKGROUND = "var(--voice-video-video-tile-background)", r.VOICE_VIDEO_VIDEO_TILE_BLUR_FALLBACK = "var(--voice-video-video-tile-blur-fallback)", r.WHITE = "var(--white)", r.YOU_BAR_BG = "var(--you-bar-bg)", t.default = i
+            n.r(t), (r = i || (i = {})).ACTION_SHEET_GRADIENT_BG = "var(--action-sheet-gradient-bg)", r.ACTIVITY_CARD_BACKGROUND = "var(--activity-card-background)", r.ACTIVITY_CARD_ICON_OVERLAY = "var(--activity-card-icon-overlay)", r.ALERT_BG = "var(--alert-bg)", r.ANDROID_NAVIGATION_BAR_BACKGROUND = "var(--android-navigation-bar-background)", r.ANDROID_NAVIGATION_SCRIM_BACKGROUND = "var(--android-navigation-scrim-background)", r.ANDROID_RIPPLE = "var(--android-ripple)", r.BACKGROUND_ACCENT = "var(--background-accent)", r.BACKGROUND_FLOATING = "var(--background-floating)", r.BACKGROUND_MENTIONED = "var(--background-mentioned)", r.BACKGROUND_MENTIONED_HOVER = "var(--background-mentioned-hover)", r.BACKGROUND_MESSAGE_AUTOMOD = "var(--background-message-automod)", r.BACKGROUND_MESSAGE_AUTOMOD_HOVER = "var(--background-message-automod-hover)", r.BACKGROUND_MESSAGE_HIGHLIGHT = "var(--background-message-highlight)", r.BACKGROUND_MESSAGE_HIGHLIGHT_HOVER = "var(--background-message-highlight-hover)", r.BACKGROUND_MESSAGE_HOVER = "var(--background-message-hover)", r.BACKGROUND_MOBILE_PRIMARY = "var(--background-mobile-primary)", r.BACKGROUND_MOBILE_SECONDARY = "var(--background-mobile-secondary)", r.BACKGROUND_MODIFIER_ACCENT = "var(--background-modifier-accent)", r.BACKGROUND_MODIFIER_ACCENT_2 = "var(--background-modifier-accent-2)", r.BACKGROUND_MODIFIER_ACTIVE = "var(--background-modifier-active)", r.BACKGROUND_MODIFIER_HOVER = "var(--background-modifier-hover)", r.BACKGROUND_MODIFIER_SELECTED = "var(--background-modifier-selected)", r.BACKGROUND_NESTED_FLOATING = "var(--background-nested-floating)", r.BACKGROUND_PRIMARY = "var(--background-primary)", r.BACKGROUND_SECONDARY = "var(--background-secondary)", r.BACKGROUND_SECONDARY_ALT = "var(--background-secondary-alt)", r.BACKGROUND_TERTIARY = "var(--background-tertiary)", r.BG_BACKDROP = "var(--bg-backdrop)", r.BG_BACKDROP_NO_OPACITY = "var(--bg-backdrop-no-opacity)", r.BG_BASE_PRIMARY = "var(--bg-base-primary)", r.BG_BASE_SECONDARY = "var(--bg-base-secondary)", r.BG_BASE_TERTIARY = "var(--bg-base-tertiary)", r.BG_BRAND = "var(--bg-brand)", r.BG_MOD_FAINT = "var(--bg-mod-faint)", r.BG_MOD_STRONG = "var(--bg-mod-strong)", r.BG_MOD_SUBTLE = "var(--bg-mod-subtle)", r.BG_SURFACE_OVERLAY = "var(--bg-surface-overlay)", r.BG_SURFACE_OVERLAY_TMP = "var(--bg-surface-overlay-tmp)", r.BG_SURFACE_RAISED = "var(--bg-surface-raised)", r.BLACK = "var(--black)", r.BLUR_FALLBACK = "var(--blur-fallback)", r.BLUR_FALLBACK_PRESSED = "var(--blur-fallback-pressed)", r.BORDER_FAINT = "var(--border-faint)", r.BORDER_STRONG = "var(--border-strong)", r.BORDER_SUBTLE = "var(--border-subtle)", r.BUG_REPORTER_MODAL_SUBMITTING_BACKGROUND = "var(--bug-reporter-modal-submitting-background)", r.BUTTON_CREATOR_REVENUE_BACKGROUND = "var(--button-creator-revenue-background)", r.BUTTON_DANGER_BACKGROUND = "var(--button-danger-background)", r.BUTTON_DANGER_BACKGROUND_ACTIVE = "var(--button-danger-background-active)", r.BUTTON_DANGER_BACKGROUND_DISABLED = "var(--button-danger-background-disabled)", r.BUTTON_DANGER_BACKGROUND_HOVER = "var(--button-danger-background-hover)", r.BUTTON_OUTLINE_BRAND_BACKGROUND = "var(--button-outline-brand-background)", r.BUTTON_OUTLINE_BRAND_BACKGROUND_ACTIVE = "var(--button-outline-brand-background-active)", r.BUTTON_OUTLINE_BRAND_BACKGROUND_HOVER = "var(--button-outline-brand-background-hover)", r.BUTTON_OUTLINE_BRAND_BORDER = "var(--button-outline-brand-border)", r.BUTTON_OUTLINE_BRAND_BORDER_ACTIVE = "var(--button-outline-brand-border-active)", r.BUTTON_OUTLINE_BRAND_BORDER_HOVER = "var(--button-outline-brand-border-hover)", r.BUTTON_OUTLINE_BRAND_TEXT = "var(--button-outline-brand-text)", r.BUTTON_OUTLINE_BRAND_TEXT_ACTIVE = "var(--button-outline-brand-text-active)", r.BUTTON_OUTLINE_BRAND_TEXT_HOVER = "var(--button-outline-brand-text-hover)", r.BUTTON_OUTLINE_DANGER_BACKGROUND = "var(--button-outline-danger-background)", r.BUTTON_OUTLINE_DANGER_BACKGROUND_ACTIVE = "var(--button-outline-danger-background-active)", r.BUTTON_OUTLINE_DANGER_BACKGROUND_HOVER = "var(--button-outline-danger-background-hover)", r.BUTTON_OUTLINE_DANGER_BORDER = "var(--button-outline-danger-border)", r.BUTTON_OUTLINE_DANGER_BORDER_ACTIVE = "var(--button-outline-danger-border-active)", r.BUTTON_OUTLINE_DANGER_BORDER_HOVER = "var(--button-outline-danger-border-hover)", r.BUTTON_OUTLINE_DANGER_TEXT = "var(--button-outline-danger-text)", r.BUTTON_OUTLINE_DANGER_TEXT_ACTIVE = "var(--button-outline-danger-text-active)", r.BUTTON_OUTLINE_DANGER_TEXT_HOVER = "var(--button-outline-danger-text-hover)", r.BUTTON_OUTLINE_POSITIVE_BACKGROUND = "var(--button-outline-positive-background)", r.BUTTON_OUTLINE_POSITIVE_BACKGROUND_ACTIVE = "var(--button-outline-positive-background-active)", r.BUTTON_OUTLINE_POSITIVE_BACKGROUND_HOVER = "var(--button-outline-positive-background-hover)", r.BUTTON_OUTLINE_POSITIVE_BORDER = "var(--button-outline-positive-border)", r.BUTTON_OUTLINE_POSITIVE_BORDER_ACTIVE = "var(--button-outline-positive-border-active)", r.BUTTON_OUTLINE_POSITIVE_BORDER_HOVER = "var(--button-outline-positive-border-hover)", r.BUTTON_OUTLINE_POSITIVE_TEXT = "var(--button-outline-positive-text)", r.BUTTON_OUTLINE_POSITIVE_TEXT_ACTIVE = "var(--button-outline-positive-text-active)", r.BUTTON_OUTLINE_POSITIVE_TEXT_HOVER = "var(--button-outline-positive-text-hover)", r.BUTTON_OUTLINE_PRIMARY_BACKGROUND = "var(--button-outline-primary-background)", r.BUTTON_OUTLINE_PRIMARY_BACKGROUND_ACTIVE = "var(--button-outline-primary-background-active)", r.BUTTON_OUTLINE_PRIMARY_BACKGROUND_HOVER = "var(--button-outline-primary-background-hover)", r.BUTTON_OUTLINE_PRIMARY_BORDER = "var(--button-outline-primary-border)", r.BUTTON_OUTLINE_PRIMARY_BORDER_ACTIVE = "var(--button-outline-primary-border-active)", r.BUTTON_OUTLINE_PRIMARY_BORDER_HOVER = "var(--button-outline-primary-border-hover)", r.BUTTON_OUTLINE_PRIMARY_TEXT = "var(--button-outline-primary-text)", r.BUTTON_OUTLINE_PRIMARY_TEXT_ACTIVE = "var(--button-outline-primary-text-active)", r.BUTTON_OUTLINE_PRIMARY_TEXT_HOVER = "var(--button-outline-primary-text-hover)", r.BUTTON_POSITIVE_BACKGROUND = "var(--button-positive-background)", r.BUTTON_POSITIVE_BACKGROUND_ACTIVE = "var(--button-positive-background-active)", r.BUTTON_POSITIVE_BACKGROUND_DISABLED = "var(--button-positive-background-disabled)", r.BUTTON_POSITIVE_BACKGROUND_HOVER = "var(--button-positive-background-hover)", r.BUTTON_SECONDARY_BACKGROUND = "var(--button-secondary-background)", r.BUTTON_SECONDARY_BACKGROUND_ACTIVE = "var(--button-secondary-background-active)", r.BUTTON_SECONDARY_BACKGROUND_DISABLED = "var(--button-secondary-background-disabled)", r.BUTTON_SECONDARY_BACKGROUND_HOVER = "var(--button-secondary-background-hover)", r.CARD_GRADIENT_BG = "var(--card-gradient-bg)", r.CARD_GRADIENT_PRESSED_BG = "var(--card-gradient-pressed-bg)", r.CARD_PRIMARY_BG = "var(--card-primary-bg)", r.CARD_PRIMARY_PRESSED_BG = "var(--card-primary-pressed-bg)", r.CARD_SECONDARY_BG = "var(--card-secondary-bg)", r.CARD_SECONDARY_PRESSED_BG = "var(--card-secondary-pressed-bg)", r.CHANNEL_ICON = "var(--channel-icon)", r.CHANNEL_TEXT_AREA_PLACEHOLDER = "var(--channel-text-area-placeholder)", r.CHANNELS_DEFAULT = "var(--channels-default)", r.CHANNELTEXTAREA_BACKGROUND = "var(--channeltextarea-background)", r.CHAT_BACKGROUND = "var(--chat-background)", r.CHAT_BANNER_BG = "var(--chat-banner-bg)", r.CHAT_BORDER = "var(--chat-border)", r.CHAT_INPUT_CONTAINER_BACKGROUND = "var(--chat-input-container-background)", r.CHAT_SWIPE_TO_REPLY_BACKGROUND = "var(--chat-swipe-to-reply-background)", r.CHAT_SWIPE_TO_REPLY_GRADIENT_BACKGROUND = "var(--chat-swipe-to-reply-gradient-background)", r.COACHMARK_BG = "var(--coachmark-bg)", r.CONTENT_INVENTORY_MEDIA_SEEKBAR_CONTAINER = "var(--content-inventory-media-seekbar-container)", r.CONTEXT_MENU_BACKDROP_BACKGROUND = "var(--context-menu-backdrop-background)", r.CONTROL_BRAND_FOREGROUND = "var(--control-brand-foreground)", r.CONTROL_BRAND_FOREGROUND_NEW = "var(--control-brand-foreground-new)", r.CREATOR_REVENUE_ICON_GRADIENT_END = "var(--creator-revenue-icon-gradient-end)", r.CREATOR_REVENUE_ICON_GRADIENT_START = "var(--creator-revenue-icon-gradient-start)", r.CREATOR_REVENUE_INFO_BOX_BACKGROUND = "var(--creator-revenue-info-box-background)", r.CREATOR_REVENUE_INFO_BOX_BORDER = "var(--creator-revenue-info-box-border)", r.CREATOR_REVENUE_LOCKED_CHANNEL_ICON = "var(--creator-revenue-locked-channel-icon)", r.CREATOR_REVENUE_PROGRESS_BAR = "var(--creator-revenue-progress-bar)", r.DEPRECATED_CARD_BG = "var(--deprecated-card-bg)", r.DEPRECATED_CARD_EDITABLE_BG = "var(--deprecated-card-editable-bg)", r.DEPRECATED_QUICKSWITCHER_INPUT_BACKGROUND = "var(--deprecated-quickswitcher-input-background)", r.DEPRECATED_QUICKSWITCHER_INPUT_PLACEHOLDER = "var(--deprecated-quickswitcher-input-placeholder)", r.DEPRECATED_STORE_BG = "var(--deprecated-store-bg)", r.DEPRECATED_TEXT_INPUT_BG = "var(--deprecated-text-input-bg)", r.DEPRECATED_TEXT_INPUT_BORDER = "var(--deprecated-text-input-border)", r.DEPRECATED_TEXT_INPUT_BORDER_DISABLED = "var(--deprecated-text-input-border-disabled)", r.DEPRECATED_TEXT_INPUT_BORDER_HOVER = "var(--deprecated-text-input-border-hover)", r.DEPRECATED_TEXT_INPUT_PREFIX = "var(--deprecated-text-input-prefix)", r.DISPLAY_BANNER_OVERFLOW_BACKGROUND = "var(--display-banner-overflow-background)", r.DIVIDER_STRONG = "var(--divider-strong)", r.DIVIDER_SUBTLE = "var(--divider-subtle)", r.EMBED_BACKGROUND = "var(--embed-background)", r.EMBED_BACKGROUND_ALTERNATE = "var(--embed-background-alternate)", r.EMBED_TITLE = "var(--embed-title)", r.EXPRESSION_PICKER_BG = "var(--expression-picker-bg)", r.FOCUS_PRIMARY = "var(--focus-primary)", r.FORUM_POST_EXTRA_MEDIA_COUNT_CONTAINER_BACKGROUND = "var(--forum-post-extra-media-count-container-background)", r.FORUM_POST_TAG_BACKGROUND = "var(--forum-post-tag-background)", r.GUILD_ICON_INACTIVE_BG = "var(--guild-icon-inactive-bg)", r.GUILD_ICON_INACTIVE_NESTED_BG = "var(--guild-icon-inactive-nested-bg)", r.GUILD_NOTIFICATIONS_BOTTOM_SHEET_PILL_BACKGROUND = "var(--guild-notifications-bottom-sheet-pill-background)", r.HALO_POSITIVE = "var(--halo-positive)", r.HEADER_MUTED = "var(--header-muted)", r.HEADER_PRIMARY = "var(--header-primary)", r.HEADER_SECONDARY = "var(--header-secondary)", r.HOME_BACKGROUND = "var(--home-background)", r.HOME_CARD_RESTING_BORDER = "var(--home-card-resting-border)", r.ICON_MUTED = "var(--icon-muted)", r.ICON_PRIMARY = "var(--icon-primary)", r.ICON_SECONDARY = "var(--icon-secondary)", r.ICON_TRANSPARENT = "var(--icon-transparent)", r.INFO_BOX_BACKGROUND = "var(--info-box-background)", r.INFO_DANGER_BACKGROUND = "var(--info-danger-background)", r.INFO_DANGER_FOREGROUND = "var(--info-danger-foreground)", r.INFO_DANGER_TEXT = "var(--info-danger-text)", r.INFO_HELP_BACKGROUND = "var(--info-help-background)", r.INFO_HELP_FOREGROUND = "var(--info-help-foreground)", r.INFO_HELP_TEXT = "var(--info-help-text)", r.INFO_POSITIVE_BACKGROUND = "var(--info-positive-background)", r.INFO_POSITIVE_FOREGROUND = "var(--info-positive-foreground)", r.INFO_POSITIVE_TEXT = "var(--info-positive-text)", r.INFO_WARNING_BACKGROUND = "var(--info-warning-background)", r.INFO_WARNING_FOREGROUND = "var(--info-warning-foreground)", r.INFO_WARNING_TEXT = "var(--info-warning-text)", r.INPUT_BACKGROUND = "var(--input-background)", r.INPUT_FOCUSED_BORDER = "var(--input-focused-border)", r.INPUT_PLACEHOLDER_TEXT = "var(--input-placeholder-text)", r.INTERACTIVE_ACTIVE = "var(--interactive-active)", r.INTERACTIVE_HOVER = "var(--interactive-hover)", r.INTERACTIVE_MUTED = "var(--interactive-muted)", r.INTERACTIVE_NORMAL = "var(--interactive-normal)", r.LEGACY_ANDROID_BLUR_OVERLAY_DEFAULT = "var(--legacy-android-blur-overlay-default)", r.LEGACY_ANDROID_BLUR_OVERLAY_ULTRA_THIN = "var(--legacy-android-blur-overlay-ultra-thin)", r.LEGACY_BLUR_FALLBACK_DEFAULT = "var(--legacy-blur-fallback-default)", r.LEGACY_BLUR_FALLBACK_ULTRA_THIN = "var(--legacy-blur-fallback-ultra-thin)", r.LIVE_STAGE_TILE_BORDER = "var(--live-stage-tile-border)", r.LOGO_PRIMARY = "var(--logo-primary)", r.MENTION_BACKGROUND = "var(--mention-background)", r.MENTION_FOREGROUND = "var(--mention-foreground)", r.MODAL_BACKGROUND = "var(--modal-background)", r.MODAL_FOOTER_BACKGROUND = "var(--modal-footer-background)", r.NAVIGATOR_HEADER_TINT = "var(--navigator-header-tint)", r.PANEL_BG = "var(--panel-bg)", r.POLLS_NORMAL_FILL_HOVER = "var(--polls-normal-fill-hover)", r.POLLS_NORMAL_IMAGE_BACKGROUND = "var(--polls-normal-image-background)", r.POLLS_VICTOR_FILL = "var(--polls-victor-fill)", r.POLLS_VOTED_FILL = "var(--polls-voted-fill)", r.PROFILE_GRADIENT_CARD_BACKGROUND = "var(--profile-gradient-card-background)", r.PROFILE_GRADIENT_MESSAGE_INPUT_BORDER = "var(--profile-gradient-message-input-border)", r.PROFILE_GRADIENT_NOTE_BACKGROUND = "var(--profile-gradient-note-background)", r.PROFILE_GRADIENT_OVERLAY = "var(--profile-gradient-overlay)", r.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME = "var(--profile-gradient-overlay-synced-with-user-theme)", r.PROFILE_GRADIENT_PROFILE_BODY_BACKGROUND_HOVER = "var(--profile-gradient-profile-body-background-hover)", r.PROFILE_GRADIENT_ROLE_PILL_BACKGROUND = "var(--profile-gradient-role-pill-background)", r.PROFILE_GRADIENT_ROLE_PILL_BORDER = "var(--profile-gradient-role-pill-border)", r.PROFILE_GRADIENT_SECTION_BOX = "var(--profile-gradient-section-box)", r.REDESIGN_ACTIVITY_CARD_BACKGROUND = "var(--redesign-activity-card-background)", r.REDESIGN_ACTIVITY_CARD_BACKGROUND_PRESSED = "var(--redesign-activity-card-background-pressed)", r.REDESIGN_ACTIVITY_CARD_BADGE_ICON = "var(--redesign-activity-card-badge-icon)", r.REDESIGN_ACTIVITY_CARD_BORDER = "var(--redesign-activity-card-border)", r.REDESIGN_ACTIVITY_CARD_OVERFLOW_BACKGROUND = "var(--redesign-activity-card-overflow-background)", r.REDESIGN_BUTTON_ACTIVE_BACKGROUND = "var(--redesign-button-active-background)", r.REDESIGN_BUTTON_ACTIVE_PRESSED_BACKGROUND = "var(--redesign-button-active-pressed-background)", r.REDESIGN_BUTTON_ACTIVE_TEXT = "var(--redesign-button-active-text)", r.REDESIGN_BUTTON_DANGER_BACKGROUND = "var(--redesign-button-danger-background)", r.REDESIGN_BUTTON_DANGER_PRESSED_BACKGROUND = "var(--redesign-button-danger-pressed-background)", r.REDESIGN_BUTTON_DANGER_TEXT = "var(--redesign-button-danger-text)", r.REDESIGN_BUTTON_DESTRUCTIVE_BACKGROUND = "var(--redesign-button-destructive-background)", r.REDESIGN_BUTTON_DESTRUCTIVE_PRESSED_BACKGROUND = "var(--redesign-button-destructive-pressed-background)", r.REDESIGN_BUTTON_DESTRUCTIVE_TEXT = "var(--redesign-button-destructive-text)", r.REDESIGN_BUTTON_OVERLAY_ALPHA_BACKGROUND = "var(--redesign-button-overlay-alpha-background)", r.REDESIGN_BUTTON_OVERLAY_ALPHA_PRESSED_BACKGROUND = "var(--redesign-button-overlay-alpha-pressed-background)", r.REDESIGN_BUTTON_OVERLAY_ALPHA_TEXT = "var(--redesign-button-overlay-alpha-text)", r.REDESIGN_BUTTON_OVERLAY_BACKGROUND = "var(--redesign-button-overlay-background)", r.REDESIGN_BUTTON_OVERLAY_PRESSED_BACKGROUND = "var(--redesign-button-overlay-pressed-background)", r.REDESIGN_BUTTON_OVERLAY_TEXT = "var(--redesign-button-overlay-text)", r.REDESIGN_BUTTON_POSITIVE_BACKGROUND = "var(--redesign-button-positive-background)", r.REDESIGN_BUTTON_POSITIVE_PRESSED_BACKGROUND = "var(--redesign-button-positive-pressed-background)", r.REDESIGN_BUTTON_POSITIVE_TEXT = "var(--redesign-button-positive-text)", r.REDESIGN_BUTTON_PRIMARY_ALT_BACKGROUND = "var(--redesign-button-primary-alt-background)", r.REDESIGN_BUTTON_PRIMARY_ALT_BORDER = "var(--redesign-button-primary-alt-border)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_BACKGROUND = "var(--redesign-button-primary-alt-on-blurple-background)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_BORDER = "var(--redesign-button-primary-alt-on-blurple-border)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_PRESSED_BACKGROUND = "var(--redesign-button-primary-alt-on-blurple-pressed-background)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_PRESSED_BORDER = "var(--redesign-button-primary-alt-on-blurple-pressed-border)", r.REDESIGN_BUTTON_PRIMARY_ALT_ON_BLURPLE_TEXT = "var(--redesign-button-primary-alt-on-blurple-text)", r.REDESIGN_BUTTON_PRIMARY_ALT_PRESSED_BACKGROUND = "var(--redesign-button-primary-alt-pressed-background)", r.REDESIGN_BUTTON_PRIMARY_ALT_PRESSED_BORDER = "var(--redesign-button-primary-alt-pressed-border)", r.REDESIGN_BUTTON_PRIMARY_ALT_PRESSED_TEXT = "var(--redesign-button-primary-alt-pressed-text)", r.REDESIGN_BUTTON_PRIMARY_ALT_TEXT = "var(--redesign-button-primary-alt-text)", r.REDESIGN_BUTTON_PRIMARY_BACKGROUND = "var(--redesign-button-primary-background)", r.REDESIGN_BUTTON_PRIMARY_ON_BLURPLE_PRESSED_TEXT = "var(--redesign-button-primary-on-blurple-pressed-text)", r.REDESIGN_BUTTON_PRIMARY_OVERLAY_BACKGROUND = "var(--redesign-button-primary-overlay-background)", r.REDESIGN_BUTTON_PRIMARY_OVERLAY_PRESSED_BACKGROUND = "var(--redesign-button-primary-overlay-pressed-background)", r.REDESIGN_BUTTON_PRIMARY_OVERLAY_TEXT = "var(--redesign-button-primary-overlay-text)", r.REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND = "var(--redesign-button-primary-pressed-background)", r.REDESIGN_BUTTON_PRIMARY_TEXT = "var(--redesign-button-primary-text)", r.REDESIGN_BUTTON_SECONDARY_BACKGROUND = "var(--redesign-button-secondary-background)", r.REDESIGN_BUTTON_SECONDARY_BORDER = "var(--redesign-button-secondary-border)", r.REDESIGN_BUTTON_SECONDARY_OVERLAY_BACKGROUND = "var(--redesign-button-secondary-overlay-background)", r.REDESIGN_BUTTON_SECONDARY_OVERLAY_PRESSED_BACKGROUND = "var(--redesign-button-secondary-overlay-pressed-background)", r.REDESIGN_BUTTON_SECONDARY_OVERLAY_TEXT = "var(--redesign-button-secondary-overlay-text)", r.REDESIGN_BUTTON_SECONDARY_PRESSED_BACKGROUND = "var(--redesign-button-secondary-pressed-background)", r.REDESIGN_BUTTON_SECONDARY_PRESSED_BORDER = "var(--redesign-button-secondary-pressed-border)", r.REDESIGN_BUTTON_SECONDARY_TEXT = "var(--redesign-button-secondary-text)", r.REDESIGN_BUTTON_SELECTED_BACKGROUND = "var(--redesign-button-selected-background)", r.REDESIGN_BUTTON_SELECTED_PRESSED_BACKGROUND = "var(--redesign-button-selected-pressed-background)", r.REDESIGN_BUTTON_SELECTED_TEXT = "var(--redesign-button-selected-text)", r.REDESIGN_BUTTON_TERTIARY_BACKGROUND = "var(--redesign-button-tertiary-background)", r.REDESIGN_BUTTON_TERTIARY_PRESSED_BACKGROUND = "var(--redesign-button-tertiary-pressed-background)", r.REDESIGN_BUTTON_TERTIARY_PRESSED_TEXT = "var(--redesign-button-tertiary-pressed-text)", r.REDESIGN_BUTTON_TERTIARY_TEXT = "var(--redesign-button-tertiary-text)", r.REDESIGN_CHANNEL_CATEGORY_NAME_TEXT = "var(--redesign-channel-category-name-text)", r.REDESIGN_CHANNEL_MESSAGE_PREVIEW_TEXT = "var(--redesign-channel-message-preview-text)", r.REDESIGN_CHANNEL_NAME_MUTED_TEXT = "var(--redesign-channel-name-muted-text)", r.REDESIGN_CHANNEL_NAME_TEXT = "var(--redesign-channel-name-text)", r.REDESIGN_CHAT_INPUT_BACKGROUND = "var(--redesign-chat-input-background)", r.REDESIGN_IMAGE_BUTTON_PRESSED_BACKGROUND = "var(--redesign-image-button-pressed-background)", r.REDESIGN_INPUT_CONTROL_ACTIVE_BG = "var(--redesign-input-control-active-bg)", r.REDESIGN_INPUT_CONTROL_SELECTED = "var(--redesign-input-control-selected)", r.REDESIGN_ONLY_BACKGROUND_ACTIVE = "var(--redesign-only-background-active)", r.REDESIGN_ONLY_BACKGROUND_DEFAULT = "var(--redesign-only-background-default)", r.REDESIGN_ONLY_BACKGROUND_OVERLAY = "var(--redesign-only-background-overlay)", r.REDESIGN_ONLY_BACKGROUND_RAISED = "var(--redesign-only-background-raised)", r.REDESIGN_ONLY_BACKGROUND_SUNKEN = "var(--redesign-only-background-sunken)", r.SCROLLBAR_AUTO_SCROLLBAR_COLOR_THUMB = "var(--scrollbar-auto-scrollbar-color-thumb)", r.SCROLLBAR_AUTO_SCROLLBAR_COLOR_TRACK = "var(--scrollbar-auto-scrollbar-color-track)", r.SCROLLBAR_AUTO_THUMB = "var(--scrollbar-auto-thumb)", r.SCROLLBAR_AUTO_TRACK = "var(--scrollbar-auto-track)", r.SCROLLBAR_THIN_THUMB = "var(--scrollbar-thin-thumb)", r.SCROLLBAR_THIN_TRACK = "var(--scrollbar-thin-track)", r.SPOILER_HIDDEN_BACKGROUND = "var(--spoiler-hidden-background)", r.SPOILER_REVEALED_BACKGROUND = "var(--spoiler-revealed-background)", r.STATUS_DANGER = "var(--status-danger)", r.STATUS_DANGER_BACKGROUND = "var(--status-danger-background)", r.STATUS_DANGER_TEXT = "var(--status-danger-text)", r.STATUS_DND = "var(--status-dnd)", r.STATUS_IDLE = "var(--status-idle)", r.STATUS_OFFLINE = "var(--status-offline)", r.STATUS_ONLINE = "var(--status-online)", r.STATUS_POSITIVE = "var(--status-positive)", r.STATUS_POSITIVE_BACKGROUND = "var(--status-positive-background)", r.STATUS_POSITIVE_TEXT = "var(--status-positive-text)", r.STATUS_SPEAKING = "var(--status-speaking)", r.STATUS_WARNING = "var(--status-warning)", r.STATUS_WARNING_BACKGROUND = "var(--status-warning-background)", r.STATUS_WARNING_TEXT = "var(--status-warning-text)", r.TEXT_BRAND = "var(--text-brand)", r.TEXT_DANGER = "var(--text-danger)", r.TEXT_LINK = "var(--text-link)", r.TEXT_LINK_LOW_SATURATION = "var(--text-link-low-saturation)", r.TEXT_LOW_CONTRAST = "var(--text-low-contrast)", r.TEXT_MESSAGE_PREVIEW_LOW_SAT = "var(--text-message-preview-low-sat)", r.TEXT_MUTED = "var(--text-muted)", r.TEXT_MUTED_ON_DEFAULT = "var(--text-muted-on-default)", r.TEXT_NORMAL = "var(--text-normal)", r.TEXT_POSITIVE = "var(--text-positive)", r.TEXT_PRIMARY = "var(--text-primary)", r.TEXT_SECONDARY = "var(--text-secondary)", r.TEXT_WARNING = "var(--text-warning)", r.TEXTBOX_MARKDOWN_SYNTAX = "var(--textbox-markdown-syntax)", r.THEME_LOCKED_BLUR_FALLBACK = "var(--theme-locked-blur-fallback)", r.THREAD_CHANNEL_SPINE = "var(--thread-channel-spine)", r.TOAST_BG = "var(--toast-bg)", r.TYPING_INDICATOR_BG = "var(--typing-indicator-bg)", r.USER_PROFILE_HEADER_OVERFLOW_BACKGROUND = "var(--user-profile-header-overflow-background)", r.VOICE_VIDEO_VIDEO_TILE_BACKGROUND = "var(--voice-video-video-tile-background)", r.VOICE_VIDEO_VIDEO_TILE_BLUR_FALLBACK = "var(--voice-video-video-tile-blur-fallback)", r.WHITE = "var(--white)", r.YOU_BAR_BG = "var(--you-bar-bg)", t.default = i
         },
         719711: function(e, t, n) {
             "use strict";
@@ -312280,4 +311453,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.10c4d5a639d45a7ba21c.js.map
+//# sourceMappingURL=35705.b7720b453327f10e7ec1.js.map
