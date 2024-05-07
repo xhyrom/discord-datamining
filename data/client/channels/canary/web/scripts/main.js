@@ -36999,7 +36999,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291211", ", Version Hash: ").concat("b5f24daca14bb48efe481e9ee6322b7af7b3b4e7")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291217", ", Version Hash: ").concat("0e265d4306e36ad9b6d491b177fb78685c2dc7e7")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -63962,6 +63962,7 @@
                         video_upload_quality: c.default.videoUploadQuality,
                         data_saving_mode: c.default.dataSavingMode,
                         low_quality_image_mode: c.default.lowQualityImageMode,
+                        channel_id: this.channelId,
                         connection_type: E.default.getType(),
                         effective_connection_speed: E.default.getEffectiveConnectionSpeed(),
                         service_provider: E.default.getServiceProvider()
@@ -63994,6 +63995,7 @@
                         source_media_height: this.uploadAnalytics.sourceMediaHeight,
                         source_media_format: this.uploadAnalytics.sourceMediaFormat,
                         source_video_bitrate: this.uploadAnalytics.sourceVideoBitrate,
+                        channel_id: this.channelId,
                         connection_type: E.default.getType(),
                         effective_connection_speed: E.default.getEffectiveConnectionSpeed(),
                         service_provider: E.default.getServiceProvider()
@@ -87591,8 +87593,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291211", "291211"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291211")), t = 0), t
+                let t = parseInt((e = "291217", "291217"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291217")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -114680,8 +114682,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291211",
-                    versionHash: "b5f24daca14bb48efe481e9ee6322b7af7b3b4e7"
+                    buildNumber: "291217",
+                    versionHash: "0e265d4306e36ad9b6d491b177fb78685c2dc7e7"
                 }
             }
             n.r(t), n.d(t, {
@@ -170029,8 +170031,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715113203317",
-                                    build_number: "291211"
+                                    built_at: "1715113748603",
+                                    build_number: "291217"
                                 }
                             },
                             retries: 1
@@ -210453,13 +210455,8 @@
                             m(N.current)
                         }, 200)
                     }, [N, m]), !A) return null;
-                let p = () => f ? h ? (0, i.jsx)(l.ActivityEmoji, {
-                        className: _.statusEmojiInline,
-                        emoji: T,
-                        animate: a,
-                        hideTooltip: c
-                    }) : (0, i.jsx)(l.ActivityEmoji, {
-                        className: _.statusEmojiOnly,
+                let p = () => f ? (0, i.jsx)(l.ActivityEmoji, {
+                        className: h ? _.statusEmojiInline : _.statusEmojiOnly,
                         emoji: T,
                         animate: a,
                         hideTooltip: c
@@ -210469,21 +210466,12 @@
                         className: _.statusText,
                         children: S
                     }) : null,
-                    R = () => {
-                        let e = s()({
-                            [_.content]: f && !h || E < 2,
-                            [_.contentOverflow]: E >= 2
-                        });
-                        return (0, i.jsxs)("div", {
-                            className: e,
-                            ref: N,
-                            children: [p(), O()]
-                        })
-                    },
-                    C = s()(_.positionStyle, {
-                        [_.biteSize]: n === d.UserProfileTypes.BITE_SIZE,
-                        [_.fullSize]: n === d.UserProfileTypes.FULL_SIZE
+                    R = () => (0, i.jsxs)("div", {
+                        className: _.contentOverflow,
+                        ref: N,
+                        children: [p(), O()]
                     }),
+                    C = n === d.UserProfileTypes.BITE_SIZE ? _.biteSize : _.fullSize,
                     g = s()(_.statusBubbleOuter, {
                         [_.statusBubbleShape]: E <= 1 && !h && f || E > 1,
                         [_.statusBubbleSingleLineWithTextShape]: 1 === E && h,
@@ -210498,24 +210486,9 @@
                         [_.statusBubbleWithTextMinWidth]: h,
                         [_.statusBubbleCopyStatusCursor]: A
                     });
-                if (n === d.UserProfileTypes.FULL_SIZE) return (0, i.jsx)("div", {
-                    className: C,
-                    children: (0, i.jsx)("div", {
-                        className: g,
-                        children: (0, i.jsx)("span", {
-                            className: L,
-                            children: R()
-                        })
-                    })
-                });
-                let v = s()({
-                    [_.statusBubbleEmojiOnlyBottomMargin]: f && !h,
-                    [_.statusBubbleMultiLineBottomMargin]: E > 1 && h
-                });
-                return (0, i.jsx)("div", {
-                    className: v,
-                    children: (0, i.jsx)("div", {
-                        className: C,
+                return (0, i.jsxs)("div", {
+                    children: [n === d.UserProfileTypes.BITE_SIZE ? (0, i.jsx)("div", {
+                        className: s()(_.invisibleContainer, C),
                         children: (0, i.jsx)("div", {
                             className: g,
                             children: (0, i.jsx)("span", {
@@ -210523,7 +210496,16 @@
                                 children: R()
                             })
                         })
-                    })
+                    }) : null, (0, i.jsx)("div", {
+                        className: s()(_.visibleContainer, C),
+                        children: (0, i.jsx)("div", {
+                            className: g,
+                            children: (0, i.jsx)("span", {
+                                className: L,
+                                children: R()
+                            })
+                        })
+                    })]
                 })
             }
         },
@@ -248080,7 +248062,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b5f24daca14bb48efe481e9ee6322b7af7b3b4e7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "0e265d4306e36ad9b6d491b177fb78685c2dc7e7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276764,7 +276746,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291211"
+                                build_number: "291217"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284113,7 +284095,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291211", "291211"), 10);
+                let a = parseInt((n = "291217", "291217"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -311612,4 +311594,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.45ad380279b77952d176.js.map
+//# sourceMappingURL=35705.5907c9b6a8e0dc63c230.js.map
