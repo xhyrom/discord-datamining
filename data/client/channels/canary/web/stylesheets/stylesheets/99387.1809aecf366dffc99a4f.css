@@ -46093,14 +46093,14 @@ img.thumbnail__18ece {
     position: absolute;
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
-    border-right: 12px solid var(--brand-experiment);
+    border-right: 12px solid var(--custom-clan-bg);
     left: -11px;
     transition: border-color var(--custom-button-transition-duration)ease
 }
 
 .signButton__6f375:hover:before,
 .signButton__6f375:active:before {
-    border-right: 12px solid var(--brand-experiment-560)
+    border-right: 12px solid var(--custom-clan-hover-bg)
 }
 
 .errorText_e99eec {
@@ -136489,4 +136489,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.221e74603a86ed521861.css.map*/
+/*# sourceMappingURL=99387.1809aecf366dffc99a4f.css.map*/
