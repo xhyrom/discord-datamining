@@ -15626,6 +15626,7 @@
                 scrolling: "scrolling__921b8",
                 tree: "tree__7a511",
                 unreadMentionsBar: "unreadMentionsBar__8cd45",
+                unreadMentionsFixedFooter: "unreadMentionsFixedFooter_b9e41d",
                 unreadMentionsIndicatorBottom: "unreadMentionsIndicatorBottom__9351c",
                 unreadMentionsIndicatorTop: "unreadMentionsIndicatorTop__153ad",
                 wrapper: "wrapper__216eb"
@@ -25316,15 +25317,12 @@
             "use strict";
             e.exports = {
                 biteSize: "biteSize__4396a",
-                content: "content_faa8bf",
                 contentOverflow: "contentOverflow__4ab1c",
                 fullSize: "fullSize_b0d012",
-                positionStyle: "positionStyle_bf57a1",
+                invisibleContainer: "invisibleContainer__1e05d",
                 statusBubble: "statusBubble__1a4c3",
                 statusBubbleCopyStatusCursor: "statusBubbleCopyStatusCursor_d67753",
-                statusBubbleEmojiOnlyBottomMargin: "statusBubbleEmojiOnlyBottomMargin_eada36",
                 statusBubbleEmojiOnlyPadding: "statusBubbleEmojiOnlyPadding_ff949e",
-                statusBubbleMultiLineBottomMargin: "statusBubbleMultiLineBottomMargin_b51483",
                 statusBubbleOuter: "statusBubbleOuter__7e51b",
                 statusBubbleShape: "statusBubbleShape__093b0",
                 statusBubbleSingleLineWithTextShape: "statusBubbleSingleLineWithTextShape__4c016",
@@ -25332,7 +25330,8 @@
                 statusBubbleWithTextPadding: "statusBubbleWithTextPadding__2267b",
                 statusEmojiInline: "statusEmojiInline__099a8",
                 statusEmojiOnly: "statusEmojiOnly__3469b",
-                statusText: "statusText__32d26"
+                statusText: "statusText__32d26",
+                visibleContainer: "visibleContainer_adf761"
             }
         },
         705850: function(e) {

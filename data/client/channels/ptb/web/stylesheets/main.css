@@ -26548,21 +26548,34 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     border: 1px solid var(--border-subtle)
 }
 
-.positionStyle_bf57a1 {
+.invisibleContainer__1e05d {
+    pointer-events: none;
+    visibility: hidden;
+    position: relative;
+    top: 4px;
+    left: 112px
+}
+
+.visibleContainer_adf761 {
     position: absolute
 }
 
-.positionStyle_bf57a1.biteSize__4396a {
-    left: 112px;
-    top: calc(6px + var(--custom-user-banner-height-bite-size))
+.visibleContainer_adf761.biteSize__4396a {
+    top: calc(6px + var(--custom-user-banner-height-bite-size));
+    left: 112px
 }
 
-.positionStyle_bf57a1.fullSize_b0d012 {
+.visibleContainer_adf761.fullSize_b0d012 {
     top: 4px;
     left: 158px
 }
 
-.custom-profile-theme .positionStyle_bf57a1.biteSize__4396a {
+.custom-profile-theme .invisibleContainer__1e05d {
+    top: var(--custom-user-profile-themed-container-user-profile-themed-padding);
+    left: 108px
+}
+
+.custom-profile-theme .visibleContainer_adf761.biteSize__4396a {
     top: calc(6px + var(--custom-user-banner-height-bite-size) + var(--custom-user-profile-themed-container-user-profile-themed-padding))
 }
 
@@ -26648,20 +26661,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     min-width: 18px
 }
 
-.statusBubbleEmojiOnlyBottomMargin_eada36 {
-    margin-bottom: 52px
-}
-
-.statusBubbleMultiLineBottomMargin_b51483 {
-    margin-bottom: 62px
-}
-
-.content_faa8bf {
-    display: flex;
-    word-wrap: break-word;
-    word-break: break-all
-}
-
 .contentOverflow__4ab1c {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -26693,6 +26692,10 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 .header__725f2 {
     z-index: 2;
     min-height: calc(45px + var(--custom-user-banner-height-bite-size))
+}
+
+.custom-profile-theme .header__725f2 {
+    min-height: calc(35px + var(--custom-user-banner-height-bite-size))
 }
 
 .roleDot__16273 {
@@ -54945,6 +54948,10 @@ div:has(>div>.modal__06f49) {
 
 .unreadMentionsIndicatorBottom__9351c .unreadMentionsBar__8cd45:before {
     bottom: -8px
+}
+
+.unreadMentionsFixedFooter_b9e41d {
+    bottom: 72px
 }
 
 .fixedDiscoveryIcon__04053 {
@@ -136588,4 +136595,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.034a0aa9c0ca6475b4dd.css.map*/
+/*# sourceMappingURL=99387.42d08468db6789142005.css.map*/
