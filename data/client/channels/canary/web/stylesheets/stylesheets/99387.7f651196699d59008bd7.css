@@ -26242,7 +26242,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    gap: 4px
+    gap: 8px
 }
 
 .tags__18aee {
@@ -26251,16 +26251,14 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     flex-wrap: wrap;
     align-items: center;
     -moz-column-gap: 6px;
-    column-gap: 6px;
-    row-gap: 2px;
-    margin-top: 2px
+    column-gap: 6px
 }
 
 .userTag_eb9b2a {
     font-size: 14px;
-    font-weight: 500;
     display: block;
-    font-family: var(--font-primary);
+    font-family: var(--header-primary);
+    font-weight: 400;
     line-height: 18px
 }
 
@@ -136606,4 +136604,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c85d31187c26a4bf3b5d.css.map*/
+/*# sourceMappingURL=99387.7f651196699d59008bd7.css.map*/
