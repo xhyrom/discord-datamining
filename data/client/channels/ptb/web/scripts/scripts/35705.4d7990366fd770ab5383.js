@@ -37002,7 +37002,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290981", ", Version Hash: ").concat("480e36d5a1c329e098799fc7942af34b8e2d7a5c")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("290991", ", Version Hash: ").concat("f4ef2d80f0a9da031fc48b5d427f44b43eaffebc")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55513,13 +55513,13 @@
                 MEMBER_LIST_CONTENT_FEED_LISTENING_TO_MEDIA: "Listening to **{media}**",
                 MEMBER_LIST_CONTENT_FEED_LISTENED_TO_MEDIA: "Listened to **{media}**",
                 MEMBER_LIST_CONTENT_FEED_USER_LISTENING_TO_MEDIA_ARTIST: "{userName} is listening to **{media}** by **{artist}**",
-                MEMBER_LIST_CONTENT_POPOUT_USER_PLAYING: "$[{countOthers, plural, =0 {{user1} is} =1 {{user1} and {user2} are} other {{user1} and {countOthers} others are}}](nameHook) playing",
-                MEMBER_LIST_CONTENT_POPOUT_USER_PLAYED: "$[{countOthers, plural, =0 {{user1}} =1 {{user1} and {user2}} other {{user1} and {countOthers} others}}](nameHook) played",
-                MEMBER_LIST_CONTENT_POPOUT_USER_WATCHING: "$[{countOthers, plural, =0 {{user1} is} =1 {{user1} and {user2} are} other {{user1} and {countOthers} others are}}](nameHook) watching",
-                MEMBER_LIST_CONTENT_POPOUT_USER_WATCHED: "$[{countOthers, plural, =0 {{user1}} =1 {{user1} and {user2}} other {{user1} and {countOthers} others}}](nameHook) watched",
+                MEMBER_LIST_CONTENT_POPOUT_USER_PLAYING: "{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} playing",
+                MEMBER_LIST_CONTENT_POPOUT_USER_PLAYED: "{countOthers, plural, =0 {$[{user1}](nameHook)} =1 {$[{user1}](nameHook) and $[{user2}](nameHook)} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others}} played",
+                MEMBER_LIST_CONTENT_POPOUT_USER_WATCHING: "{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} watching",
+                MEMBER_LIST_CONTENT_POPOUT_USER_WATCHED: "{countOthers, plural, =0 {$[{user1}](nameHook)} =1 {$[{user1}](nameHook) and $[{user2}](nameHook)} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others}} watched",
                 MEMBER_LIST_CONTENT_POPOUT_USER_STREAMING: "$[{countOthers, plural, =0 {{user1} is} =1 {{user1} and {user2} are} other {{user1} and {countOthers} others are}}](nameHook) streaming",
-                MEMBER_LIST_CONTENT_POPOUT_USER_LISTENED: "$[{countOthers, plural, =0 {{user1}} =1 {{user1} and {user2}} other {{user1} and {countOthers} others}}](nameHook) listened to",
-                MEMBER_LIST_CONTENT_POPOUT_USER_LISTENING: "$[{countOthers, plural, =0 {{user1} is} =1 {{user1} and {user2} are} other {{user1} and {countOthers} others are}}](nameHook) listening to",
+                MEMBER_LIST_CONTENT_POPOUT_USER_LISTENED: "{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} listened to",
+                MEMBER_LIST_CONTENT_POPOUT_USER_LISTENING: "{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} listening to",
                 MEMBER_LIST_CONTENT_POPOUT_BLOCKED_USER_WARNING: "Users you've blocked or muted are in this voice channel",
                 CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity",
                 CONTENT_INVENTORY_MEMBERLIST_SETTINGS_HIDE: "Hide Activity Cards",
@@ -87542,8 +87542,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "290981", "290981"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290981")), t = 0), t
+                let t = parseInt((e = "290991", "290991"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("290991")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -114525,8 +114525,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "290981",
-                    versionHash: "480e36d5a1c329e098799fc7942af34b8e2d7a5c"
+                    buildNumber: "290991",
+                    versionHash: "f4ef2d80f0a9da031fc48b5d427f44b43eaffebc"
                 }
             }
             n.r(t), n.d(t, {
@@ -169874,8 +169874,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715043502467",
-                                    build_number: "290981"
+                                    built_at: "1715045363032",
+                                    build_number: "290991"
                                 }
                             },
                             retries: 1
@@ -209881,6 +209881,7 @@
                     children: (0, i.jsx)(o.Text, {
                         variant: "text-sm/normal",
                         lineClamp: E ? c : void 0,
+                        color: "header-primary",
                         children: (0, i.jsx)(u.MessagesInteractionContext.Provider, {
                             value: {
                                 disableAnimations: a && !_,
@@ -210745,6 +210746,7 @@
                                 children: (0, i.jsx)(s.Text, {
                                     variant: h,
                                     className: d.pronouns,
+                                    color: "header-primary",
                                     children: I
                                 })
                             })]
@@ -213057,60 +213059,56 @@
                 r = n("470079"),
                 a = n("481060"),
                 s = n("906732"),
-                o = n("692437"),
-                l = n("785717"),
-                u = n("588822"),
-                d = n("171368"),
-                _ = n("981631"),
-                c = n("689938"),
-                E = n("884317");
+                o = n("785717"),
+                l = n("588822"),
+                u = n("171368"),
+                d = n("981631"),
+                _ = n("689938"),
+                c = n("884317");
             t.default = r.memo(function(e) {
                 let {
                     user: t,
                     onClose: n,
-                    bio: I,
-                    hidePersonalInformation: T
+                    bio: E,
+                    hidePersonalInformation: I
                 } = e, {
-                    guildId: f,
-                    channelId: S,
-                    messageId: h,
-                    roleId: A
-                } = (0, l.useUserProfileAnalyticsContext)(), {
-                    analyticsLocations: m
-                } = (0, s.default)(), [N, p] = r.useState(!1);
-                return T || null == I || "" === I ? null : (0, i.jsxs)("div", {
+                    guildId: T,
+                    channelId: f,
+                    messageId: S,
+                    roleId: h
+                } = (0, o.useUserProfileAnalyticsContext)(), {
+                    analyticsLocations: A
+                } = (0, s.default)(), [m, N] = r.useState(!1);
+                return I || null == E || "" === E ? null : (0, i.jsxs)("div", {
                     children: [(0, i.jsx)("div", {
                         ref: e => {
-                            null != e && p(e.scrollHeight - e.clientHeight > 1)
+                            null != e && N(e.scrollHeight - e.clientHeight > 1)
                         },
-                        className: E.descriptionClamp,
-                        children: (0, i.jsx)(u.default, {
-                            userBio: I,
+                        className: c.descriptionClamp,
+                        children: (0, i.jsx)(l.default, {
+                            userBio: E,
                             setLineClamp: !1
                         })
-                    }), N && (0, i.jsxs)(a.Clickable, {
+                    }), m && (0, i.jsx)(a.Clickable, {
                         onClick: () => {
-                            null == n || n(), (0, d.openUserProfileModal)({
+                            null == n || n(), (0, u.openUserProfileModal)({
                                 userId: t.id,
-                                guildId: null != f ? f : void 0,
-                                channelId: null != S ? S : void 0,
-                                messageId: null != h ? h : void 0,
-                                roleId: null != A ? A : void 0,
+                                guildId: null != T ? T : void 0,
+                                channelId: null != f ? f : void 0,
+                                messageId: null != S ? S : void 0,
+                                roleId: null != h ? h : void 0,
                                 analyticsLocation: {
-                                    section: _.AnalyticsSections.BITE_SIZE_PROFILE_POPOUT
+                                    section: d.AnalyticsSections.BITE_SIZE_PROFILE_POPOUT
                                 },
-                                sourceAnalyticsLocations: m
+                                sourceAnalyticsLocations: A
                             })
                         },
-                        className: E.seeMoreText,
-                        children: [(0, i.jsx)(a.Text, {
-                            variant: "text-xs/normal",
-                            children: c.default.Messages.USER_PROFILE_VIEW_FULL_BIO
-                        }), (0, i.jsx)(o.default, {
-                            width: 16,
-                            height: 16,
-                            color: "var(--interactive-normal)"
-                        })]
+                        className: c.viewFullBio,
+                        children: (0, i.jsx)(a.Text, {
+                            variant: "text-xs/medium",
+                            className: c.viewFullBioText,
+                            children: _.default.Messages.USER_PROFILE_VIEW_FULL_BIO
+                        })
                     })]
                 })
             })
@@ -247945,7 +247943,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "480e36d5a1c329e098799fc7942af34b8e2d7a5c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f4ef2d80f0a9da031fc48b5d427f44b43eaffebc"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276629,7 +276627,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "290981"
+                                build_number: "290991"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -283956,7 +283954,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "290981", "290981"), 10);
+                let a = parseInt((n = "290991", "290991"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -311455,4 +311453,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.50ab10667a838d8fbc6e.js.map
+//# sourceMappingURL=35705.4d7990366fd770ab5383.js.map
