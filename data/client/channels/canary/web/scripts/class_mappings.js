@@ -7383,6 +7383,8 @@
                 clanEnvelope: "clanEnvelope__0b99c",
                 clanEnvelopeBottom: "clanEnvelopeBottom_e5cdee",
                 clanEnvelopeTop: "clanEnvelopeTop_bf09a8",
+                joinWFS: "joinWFS_b2bee7",
+                joinWFSContainer: "joinWFSContainer_feee17",
                 reserveButton: "reserveButton_c5765e",
                 spacer: "spacer__960c0",
                 upsellBackButton: "upsellBackButton__339ae",
@@ -25835,7 +25837,11 @@
         659829: function(e) {
             "use strict";
             e.exports = {
-                container: "container_f63223"
+                container: "container_f63223",
+                mutuals: "mutuals__60a9f",
+                section: "section_e4c9af",
+                spacer: "spacer__93f54",
+                text: "text_c93504"
             }
         },
         389573: function(e) {

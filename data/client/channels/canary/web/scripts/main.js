@@ -36999,7 +36999,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291327", ", Version Hash: ").concat("55cbedda20d95fbd88100867272ea5baf53d21b0")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291339", ", Version Hash: ").concat("d1d73b99a2c9bb5cf7a2f6eb773b5feba97746ef")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56082,6 +56082,8 @@
                 CLAN_DISCOVERY_UPSELL_GENSHIN_TITLE: "Just a few clicks to find your Genshin clique.",
                 CLAN_DISCOVERY_UPSELL_GENSHIN_SUBTITLE: "Answer a few questions to discover Genshin Guilds on Discord based on your interests and playstyle.",
                 CLAN_DISCOVERY_UPSELL_GET_STARTED: "Get Started",
+                CLAN_DISCOVERY_UPSELL_JOIN_WFS: "Questions? Head over to the $[Wumpus Feedback Squad](wfsHook) server to ask Discord questions or give feedback!",
+                CLAN_DISCOVERY_UPSELL_JOIN_WFS_ARIA_LABEL: "Join Wumpus Feedback Squad server",
                 MESSAGE_ACTION_FORWARD: "Forward"
             })
         },
@@ -87593,8 +87595,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291327", "291327"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291327")), t = 0), t
+                let t = parseInt((e = "291339", "291339"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291339")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -101757,6 +101759,9 @@
                 getClanInfo: function() {
                     return u
                 },
+                joinWumpusFeedbackSquad: function() {
+                    return h
+                },
                 resetClanSetup: function() {
                     return _
                 },
@@ -101922,6 +101927,15 @@
                 try {
                     await i.HTTP.post({
                         url: s.Endpoints.DISABLE_CLAN(e)
+                    })
+                } catch (e) {
+                    throw e
+                }
+            }
+            async function h(e) {
+                try {
+                    await i.HTTP.post({
+                        url: s.Endpoints.JOIN_WUMPUS_FEEDBACK_SQUAD(e)
                     })
                 } catch (e) {
                     throw e
@@ -114695,8 +114709,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291327",
-                    versionHash: "55cbedda20d95fbd88100867272ea5baf53d21b0"
+                    buildNumber: "291339",
+                    versionHash: "d1d73b99a2c9bb5cf7a2f6eb773b5feba97746ef"
                 }
             }
             n.r(t), n.d(t, {
@@ -152209,7 +152223,7 @@
                     },
                     async open(e, t, i, r) {
                         var a;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("23755"), n.e("70716"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("56630"), n.e("58227"), n.e("43643"), n.e("85093"), n.e("85552"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("52332"), n.e("74526"), n.e("33361"), n.e("50916"), n.e("62856"), n.e("56215"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("23755"), n.e("70716"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("56630"), n.e("58227"), n.e("43643"), n.e("85093"), n.e("85552"), n.e("71697"), n.e("3084"), n.e("6857"), n.e("43502"), n.e("52332"), n.e("74526"), n.e("33361"), n.e("50916"), n.e("62856"), n.e("56215"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         a.default.dispatch({
@@ -170044,8 +170058,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715120446929",
-                                    build_number: "291327"
+                                    built_at: "1715120864896",
+                                    build_number: "291339"
                                 }
                             },
                             retries: 1
@@ -211724,11 +211738,7 @@
         },
         421486: function(e, t, n) {
             "use strict";
-            n.r(t), n.d(t, {
-                SmallMutualFriendsAndGuilds: function() {
-                    return R
-                }
-            }), n("47120");
+            n.r(t), n("47120");
             var i, r, a = n("735250"),
                 s = n("470079"),
                 o = n("120356"),
@@ -213287,7 +213297,9 @@
                     className: S.body,
                     children: [(0, i.jsx)(d.default, {
                         user: t,
-                        onOpenProfile: () => m(!1),
+                        onOpenProfile: () => m({
+                            autoFocusNote: !1
+                        }),
                         guildId: null == A ? void 0 : A.id,
                         usernameIcon: t.hasAvatarForGuild(null == A ? void 0 : A.id) && (0, i.jsx)(c.default, {
                             user: t,
@@ -213303,12 +213315,17 @@
                                 userId: t.id
                             }), O && !C && (0, i.jsx)(u.default, {
                                 user: t,
-                                onOpenProfile: () => m(!0)
+                                onOpenProfile: () => m({
+                                    autoFocusNote: !0
+                                })
                             })]
                         })
-                    }), (0, i.jsx)(f.default, {
+                    }), t.id !== n.id && (0, i.jsx)(f.default, {
                         user: t,
-                        onClose: p
+                        onOpenProfile: e => m({
+                            section: e,
+                            autoFocusNote: !1
+                        })
                     }), O && (0, i.jsx)(I.default, {
                         user: t,
                         bio: null == h ? void 0 : h.bio,
@@ -213323,7 +213340,9 @@
                         user: t,
                         currentUser: n,
                         guild: A,
-                        onOpenProfile: () => m(!1)
+                        onOpenProfile: () => m({
+                            autoFocusNote: !1
+                        })
                     })]
                 })
             }
@@ -213713,32 +213732,85 @@
         },
         287612: function(e, t, n) {
             "use strict";
-            n.r(t);
-            var i = n("735250"),
-                r = n("470079"),
-                a = n("442837"),
-                s = n("314897"),
-                o = n("706327"),
-                l = n("285470"),
-                u = n("421486"),
-                d = n("659829");
-            t.default = r.memo(function(e) {
+            n.r(t), n.d(t, {
+                default: function() {
+                    return I
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("481060"),
+                a = n("318374"),
+                s = n("522289"),
+                o = n("346656"),
+                l = n("706327"),
+                u = n("285470"),
+                d = n("228168"),
+                _ = n("182294"),
+                c = n("689938"),
+                E = n("659829");
+
+            function I(e) {
                 let {
                     user: t,
-                    onClose: n
-                } = e, r = (0, a.useStateFromStores)([s.default], () => s.default.getId()), _ = t.id === r, c = (0, l.useMutualGuilds)(t), E = (0, o.useMutualFriends)(t);
-                return _ ? null : (0, i.jsx)("div", {
-                    className: d.container,
-                    children: (0, i.jsx)(u.SmallMutualFriendsAndGuilds, {
-                        user: t,
-                        mutualFriends: E,
-                        mutualGuilds: c,
-                        onClose: n,
-                        underlineTextOnHover: !0,
-                        showTooltips: !1
-                    })
+                    onOpenProfile: n
+                } = e, I = (0, l.useMutualFriends)(t), T = (0, u.useMutualGuilds)(t), f = null != I && I.length > 0, S = null != T && T.length > 0, h = f && S ? "text-xs/normal" : "text-sm/normal";
+                return (0, i.jsxs)("div", {
+                    className: E.mutuals,
+                    children: [f ? (0, i.jsxs)(r.Clickable, {
+                        className: E.section,
+                        onClick: () => n(d.UserProfileSections.MUTUAL_FRIENDS),
+                        children: [(0, i.jsx)("div", {
+                            children: (0, i.jsx)(a.default, {
+                                maxUsers: 3,
+                                users: I.map(e => {
+                                    let {
+                                        user: t
+                                    } = e;
+                                    return t
+                                }),
+                                size: _.AvatarSizes.SIZE_16,
+                                hideOverflowCount: !0,
+                                disableUsernameTooltip: !0
+                            })
+                        }), (0, i.jsx)(r.Text, {
+                            className: E.text,
+                            variant: h,
+                            color: "header-primary",
+                            children: c.default.Messages.USER_PROFILE_MUTUAL_FRIENDS.format({
+                                count: I.length
+                            })
+                        })]
+                    }) : null, f && S ? (0, i.jsx)("div", {
+                        "aria-hidden": "true",
+                        className: E.spacer
+                    }) : null, S ? (0, i.jsxs)(r.Clickable, {
+                        className: E.section,
+                        onClick: () => n(d.UserProfileSections.MUTUAL_GUILDS),
+                        children: [!f && (0, i.jsx)("div", {
+                            children: (0, i.jsx)(s.default, {
+                                maxGuilds: 3,
+                                guilds: T.map(e => {
+                                    let {
+                                        guild: t
+                                    } = e;
+                                    return t
+                                }),
+                                size: o.default.Sizes.SMOL,
+                                hideOverflowCount: !0,
+                                disableGuildNameTooltip: !0
+                            })
+                        }), (0, i.jsx)(r.Text, {
+                            className: E.text,
+                            variant: h,
+                            color: "header-primary",
+                            children: c.default.Messages.USER_PROFILE_MUTUAL_GUILDS.format({
+                                count: T.length
+                            })
+                        })]
+                    }) : null]
                 })
-            })
+            }
         },
         969835: function(e, t, n) {
             "use strict";
@@ -213808,7 +213880,7 @@
                         channelId: v,
                         messageId: D,
                         roleId: M,
-                        autoFocusNote: e
+                        ...e
                     })
                 };
                 return null == k ? null : (0, i.jsx)(u.AnalyticsLocationProvider, {
@@ -248085,7 +248157,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "55cbedda20d95fbd88100867272ea5baf53d21b0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d1d73b99a2c9bb5cf7a2f6eb773b5feba97746ef"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276769,7 +276841,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291327"
+                                build_number: "291339"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284118,7 +284190,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291327", "291327"), 10);
+                let a = parseInt((n = "291339", "291339"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -311617,4 +311689,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.d7475f248a1ac7b5d395.js.map
+//# sourceMappingURL=35705.5605a0acb2f06c261649.js.map
