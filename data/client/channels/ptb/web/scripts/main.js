@@ -37374,7 +37374,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291511", ", Version Hash: ").concat("493f7f655c495bb00c0f3d73100334abfe42d775")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291528", ", Version Hash: ").concat("13ebc7fe1dbff514b298a5fbecdcbe596aefb110")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88364,8 +88364,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291511", "291511"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291511")), t = 0), t
+                let t = parseInt((e = "291528", "291528"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291528")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -102626,56 +102626,58 @@
             "use strict";
             n.r(t), n.d(t, {
                 adoptClanIdentity: function() {
-                    return d
+                    return c
                 },
                 convertGuildToClan: function() {
-                    return l
+                    return d
                 },
                 disableClan: function() {
-                    return S
+                    return A
                 },
                 fetchClanSettings: function() {
-                    return T
+                    return S
                 },
                 getClanInfo: function() {
-                    return u
-                },
-                joinWumpusFeedbackSquad: function() {
-                    return h
-                },
-                resetClanSetup: function() {
                     return _
                 },
-                saveClanSettings: function() {
-                    return f
+                joinWumpusFeedbackSquad: function() {
+                    return m
                 },
-                updateClanSettings: function() {
+                resetClanSetup: function() {
                     return E
                 },
+                saveClanSettings: function() {
+                    return h
+                },
+                updateClanSettings: function() {
+                    return T
+                },
                 updateClanSetup: function() {
-                    return c
+                    return I
                 }
             }), n("47120");
             var i = n("544891"),
                 r = n("570140"),
                 a = n("479531"),
-                s = n("981631"),
-                o = n("976757");
-            async function l(e, t) {
+                s = n("314897"),
+                o = n("970606"),
+                l = n("981631"),
+                u = n("976757");
+            async function d(e, t) {
                 r.default.dispatch({
                     type: "CLAN_SETUP_SUBMIT",
                     guildId: e
                 });
                 try {
-                    var n, o, l, u;
+                    var n, s, o, u;
                     await i.HTTP.post({
-                        url: s.Endpoints.GUILD_CONVERT_TO_CLAN(e),
+                        url: l.Endpoints.GUILD_CONVERT_TO_CLAN(e),
                         body: {
                             tag: t.tag,
                             description: t.description,
                             play_style: t.playstyle,
-                            search_terms: Array.from(null !== (o = t.interests) && void 0 !== o ? o : new Set),
-                            game_application_ids: Array.from(null !== (l = t.gameApplicationIds) && void 0 !== l ? l : new Set),
+                            search_terms: Array.from(null !== (s = t.interests) && void 0 !== s ? s : new Set),
+                            game_application_ids: Array.from(null !== (o = t.gameApplicationIds) && void 0 !== o ? o : new Set),
                             verification_form: {
                                 form_fields: null !== (u = null === (n = t.verificationForm) || void 0 === n ? void 0 : n.formFields) && void 0 !== u ? u : []
                             },
@@ -102700,16 +102702,21 @@
                     }), t
                 }
             }
-            async function u(e) {
+            async function _(e) {
                 let t = await i.HTTP.get({
-                    url: s.Endpoints.GUILD_CLAN_DISCOVERY_INFO(e)
+                    url: l.Endpoints.GUILD_CLAN_DISCOVERY_INFO(e)
                 });
-                return (0, o.buildClanFromServer)(t.body)
+                return (0, u.buildClanFromServer)(t.body)
             }
-            async function d(e, t) {
+            async function c(e, t, n) {
                 try {
-                    let n = await i.HTTP.put({
-                        url: s.Endpoints.USER_SET_CLAN_IDENTITY,
+                    null != e && !0 === t && (0, o.trackClanAdoptIdentity)({
+                        guildId: e,
+                        userId: s.default.getId(),
+                        source: n
+                    });
+                    let a = await i.HTTP.put({
+                        url: l.Endpoints.USER_SET_CLAN_IDENTITY,
                         body: {
                             identity_guild_id: e,
                             identity_enabled: t
@@ -102717,20 +102724,20 @@
                     });
                     r.default.dispatch({
                         type: "CURRENT_USER_UPDATE",
-                        user: n.body
+                        user: a.body
                     })
                 } catch (e) {
                     return
                 }
             }
 
-            function _() {
+            function E() {
                 r.default.dispatch({
                     type: "CLAN_SETUP_RESET"
                 })
             }
 
-            function c(e, t) {
+            function I(e, t) {
                 r.default.dispatch({
                     type: "CLAN_SETUP_UPDATE",
                     guildId: e,
@@ -102738,14 +102745,14 @@
                 })
             }
 
-            function E(e, t) {
+            function T(e, t) {
                 r.default.dispatch({
                     type: "CLAN_SETTINGS_UPDATE",
                     guildId: e,
                     updates: t
                 })
             }
-            let I = e => {
+            let f = e => {
                 var t, n, i, r, a, s;
                 return {
                     tag: e.tag,
@@ -102767,23 +102774,23 @@
                     brandSecondaryColor: e.brand_color_secondary
                 }
             };
-            async function T(e) {
+            async function S(e) {
                 r.default.dispatch({
                     type: "CLAN_SETTINGS_FETCH_START"
                 });
                 let t = await i.HTTP.get({
-                    url: s.Endpoints.CLAN_SETTINGS(e)
+                    url: l.Endpoints.CLAN_SETTINGS(e)
                 });
                 r.default.dispatch({
                     type: "CLAN_SETTINGS_FETCH_SUCCESS",
                     guildId: e,
-                    settings: I(t.body)
+                    settings: f(t.body)
                 })
             }
-            async function f(e, t) {
-                var n, r, a, o;
+            async function h(e, t) {
+                var n, r, a, s;
                 return await i.HTTP.patch({
-                    url: s.Endpoints.CLAN_SETTINGS(e),
+                    url: l.Endpoints.CLAN_SETTINGS(e),
                     body: {
                         tag: t.tag,
                         description: t.description,
@@ -102791,7 +102798,7 @@
                         search_terms: Array.from(null !== (r = t.interests) && void 0 !== r ? r : new Set),
                         game_application_ids: Array.from(null !== (a = t.gameApplicationIds) && void 0 !== a ? a : new Set),
                         verification_form: {
-                            form_fields: null !== (o = null === (n = t.verificationForm) || void 0 === n ? void 0 : n.formFields) && void 0 !== o ? o : []
+                            form_fields: null !== (s = null === (n = t.verificationForm) || void 0 === n ? void 0 : n.formFields) && void 0 !== s ? s : []
                         },
                         badge: t.badgeKind,
                         badge_color_primary: t.badgePrimaryColor,
@@ -102804,19 +102811,19 @@
                     }
                 })
             }
-            async function S(e) {
+            async function A(e) {
                 try {
                     await i.HTTP.post({
-                        url: s.Endpoints.DISABLE_CLAN(e)
+                        url: l.Endpoints.DISABLE_CLAN(e)
                     })
                 } catch (e) {
                     throw e
                 }
             }
-            async function h(e) {
+            async function m(e) {
                 try {
                     await i.HTTP.post({
-                        url: s.Endpoints.JOIN_WUMPUS_FEEDBACK_SQUAD(e)
+                        url: l.Endpoints.JOIN_WUMPUS_FEEDBACK_SQUAD(e)
                     })
                 } catch (e) {
                     throw e
@@ -102827,43 +102834,46 @@
             "use strict";
             n.r(t), n.d(t, {
                 getProgressStepAnalyticsName: function() {
-                    return T
+                    return f
                 },
                 trackClanAdminInviteClicked: function() {
-                    return A
+                    return m
                 },
                 trackClanAdminInviteViewed: function() {
-                    return h
+                    return A
+                },
+                trackClanAdoptIdentity: function() {
+                    return d
                 },
                 trackClanApplyToJoinViewed: function() {
                     return u
                 },
                 trackClanDiscoveryCardClicked: function() {
-                    return m
+                    return N
                 },
                 trackClanDiscoveryUserNuxClicked: function() {
-                    return S
+                    return h
                 },
                 trackClanDiscoveryUserNuxViewed: function() {
-                    return f
+                    return S
                 },
                 trackClanDiscoveryViewed: function() {
-                    return I
+                    return T
                 },
                 trackClanProfileViewed: function() {
                     return l
                 },
                 trackConvertStepViewed: function() {
-                    return d
+                    return _
                 },
                 trackConvertSuccessModalConfirm: function() {
-                    return E
+                    return I
                 },
                 trackConvertSuccessModalViewed: function() {
-                    return c
+                    return E
                 },
                 trackSettingsViewed: function() {
-                    return _
+                    return c
                 }
             });
             var i = n("314897"),
@@ -102910,34 +102920,47 @@
                 })
             }
 
-            function d(e, t) {
+            function d(e) {
+                let {
+                    guildId: t,
+                    userId: n,
+                    source: i
+                } = e;
+                a.default.track(o.AnalyticEvents.CLAN_ADOPT_IDENTITY, {
+                    guild_id: t,
+                    user_id: n,
+                    source: i
+                })
+            }
+
+            function _(e, t) {
                 a.default.track(o.AnalyticEvents.CLAN_CONVERT_STEP_VIEWED, {
                     guild_id: e,
                     step: t
                 })
             }
 
-            function _(e, t) {
+            function c(e, t) {
                 a.default.track(o.AnalyticEvents.CLAN_SETTINGS_VIEWED, {
                     guild_id: e,
                     page: t
                 })
             }
 
-            function c(e) {
+            function E(e) {
                 a.default.track(o.AnalyticEvents.CLAN_CONVERT_SUCCESS_MODAL_VIEWED, {
                     guild_id: e
                 })
             }
 
-            function E(e, t) {
+            function I(e, t) {
                 a.default.track(o.AnalyticEvents.CLAN_CONVERT_SUCCESS_MODAL_CONFIRM, {
                     guild_id: e,
                     enable_tag: t
                 })
             }
 
-            function I(e, t, n) {
+            function T(e, t, n) {
                 a.default.track(o.AnalyticEvents.CLAN_DISCOVERY_VIEWED, {
                     guild_ids: e,
                     section: t,
@@ -102947,7 +102970,7 @@
                 })
             }
 
-            function T(e) {
+            function f(e) {
                 switch (e) {
                     case s.ClanSetupSteps.GAMES:
                         return "games";
@@ -102970,15 +102993,15 @@
                 }
             }
 
-            function f() {
+            function S() {
                 a.default.track(o.AnalyticEvents.CLAN_DISCOVERY_USER_NUX_VIEWED)
             }
 
-            function S() {
+            function h() {
                 a.default.track(o.AnalyticEvents.CLAN_DISCOVERY_USER_NUX_CLICKED)
             }
 
-            function h(e) {
+            function A(e) {
                 let {
                     location: t
                 } = e;
@@ -102987,7 +103010,7 @@
                 })
             }
 
-            function A(e) {
+            function m(e) {
                 let {
                     guildId: t,
                     location: n
@@ -102998,7 +103021,7 @@
                 })
             }
 
-            function m(e) {
+            function N(e) {
                 let {
                     guildId: t,
                     isMember: n,
@@ -115617,8 +115640,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291511",
-                    versionHash: "493f7f655c495bb00c0f3d73100334abfe42d775"
+                    buildNumber: "291528",
+                    versionHash: "13ebc7fe1dbff514b298a5fbecdcbe596aefb110"
                 }
             }
             n.r(t), n.d(t, {
@@ -171093,8 +171116,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715190154559",
-                                    build_number: "291511"
+                                    built_at: "1715191934536",
+                                    build_number: "291528"
                                 }
                             },
                             retries: 1
@@ -249382,7 +249405,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "493f7f655c495bb00c0f3d73100334abfe42d775"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "13ebc7fe1dbff514b298a5fbecdcbe596aefb110"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278302,7 +278325,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291511"
+                                build_number: "291528"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285651,7 +285674,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291511", "291511"), 10);
+                let a = parseInt((n = "291528", "291528"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313256,4 +313279,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.000345ac998ce739ed46.js.map
+//# sourceMappingURL=35705.da193f1f81b6c4ffd0aa.js.map
