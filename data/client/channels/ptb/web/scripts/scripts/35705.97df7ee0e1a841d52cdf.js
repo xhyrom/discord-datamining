@@ -37394,7 +37394,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291663", ", Version Hash: ").concat("1dd730ebdb183b9567a3d172b40d5059d6811751")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291677", ", Version Hash: ").concat("8077e08ff97c16f58f2efbeb3c4f56e85040c720")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86811,6 +86811,43 @@
             var i = n("153248");
             t.default = i.default
         },
+        362721: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                canSetVoiceChannelStatus: function() {
+                    return d
+                },
+                default: function() {
+                    return _
+                }
+            });
+            var i = n("442837"),
+                r = n("496675"),
+                a = n("700785"),
+                s = n("231338");
+            let o = [s.Permissions.SET_VOICE_CHANNEL_STATUS, s.Permissions.CONNECT, s.Permissions.VIEW_CHANNEL],
+                l = [s.Permissions.SET_VOICE_CHANNEL_STATUS];
+
+            function u(e, t, n, i) {
+                return (n ? l : o).every(n => null == i ? t.can(n, e) : a.can({
+                    permission: n,
+                    user: i,
+                    context: e
+                }))
+            }
+
+            function d(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                    n = arguments.length > 2 ? arguments[2] : void 0;
+                return u(e, r.default, t, n)
+            }
+
+            function _(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                    n = arguments.length > 2 ? arguments[2] : void 0;
+                return (0, i.useStateFromStores)([r.default], () => u(e, r.default, t, n), [e, t, n])
+            }
+        },
         966302: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -88386,8 +88423,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291663", "291663"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291663")), t = 0), t
+                let t = parseInt((e = "291677", "291677"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291677")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115650,8 +115687,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291663",
-                    versionHash: "1dd730ebdb183b9567a3d172b40d5059d6811751"
+                    buildNumber: "291677",
+                    versionHash: "8077e08ff97c16f58f2efbeb3c4f56e85040c720"
                 }
             }
             n.r(t), n.d(t, {
@@ -156159,9 +156196,9 @@
             "use strict";
             n.r(t), n("47120");
             var i = n("147913"),
-                r = n("314897"),
-                a = n("592125"),
-                s = n("496675"),
+                r = n("362721"),
+                a = n("314897"),
+                s = n("592125"),
                 o = n("979651"),
                 l = n("906605"),
                 u = n("574176"),
@@ -156188,7 +156225,7 @@
                             guildId: n
                         } = e, {
                             enableHangStatus: i,
-                            setDefaultStatus: r
+                            setDefaultStatus: a
                         } = u.HangStatusExperiment.getCurrentConfig({
                             guildId: null != n ? n : _.EMPTY_STRING_SNOWFLAKE_ID,
                             location: "HangStatusManager"
@@ -156201,8 +156238,8 @@
                         }
                         if (!i || t === this.previousVoiceChannelId) return;
                         if (this.previousVoiceChannelId = t, null == n || null == t) return;
-                        let o = a.default.getChannel(t);
-                        if (null == o || o.type !== _.ChannelTypes.GUILD_VOICE || !s.default.can(_.Permissions.SET_VOICE_CHANNEL_STATUS, o) || null != d.default.getCurrentHangStatus()) return;
+                        let o = s.default.getChannel(t);
+                        if (null == o || o.type !== _.ChannelTypes.GUILD_VOICE || !(0, r.canSetVoiceChannelStatus)(o, !0) || null != d.default.getCurrentHangStatus()) return;
                         let c = d.default.getCurrentDefaultStatus();
                         if ((null == c ? void 0 : c.expiresAt) != null && (null == c ? void 0 : c.expiresAt) >= Date.now()) {
                             if (c.status === _.HangStatusTypes.CUSTOM && null != c.customHangStatus) {
@@ -156219,17 +156256,17 @@
                                 return
                             }
                         }
-                        r && (0, l.updateHangStatus)(_.HangStatusTypes.CHILLING)
+                        a && (0, l.updateHangStatus)(_.HangStatusTypes.CHILLING)
                     }), c(this, "handleGuildMemberUpdate", e => {
                         let {
                             user: t,
                             guildId: n
                         } = e;
-                        if (t.id !== r.default.getId()) return;
+                        if (t.id !== a.default.getId()) return;
                         let i = o.default.getCurrentClientVoiceChannelId(n);
                         if (null == i || null == d.default.getCurrentHangStatus()) return;
-                        let u = a.default.getChannel(i);
-                        !s.default.can(_.Permissions.SET_VOICE_CHANNEL_STATUS, u) && (0, l.clearHangStatus)()
+                        let u = s.default.getChannel(i);
+                        !(0, r.canSetVoiceChannelStatus)(u, !0) && (0, l.clearHangStatus)()
                     }), c(this, "handleDisconnectFromVoiceChannel", () => {
                         (0, l.clearHangStatus)()
                     }), c(this, "handleLogout", () => {
@@ -171350,8 +171387,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715206001785",
-                                    build_number: "291663"
+                                    built_at: "1715207459375",
+                                    build_number: "291677"
                                 }
                             },
                             retries: 1
@@ -249646,7 +249683,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "1dd730ebdb183b9567a3d172b40d5059d6811751"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8077e08ff97c16f58f2efbeb3c4f56e85040c720"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278566,7 +278603,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291663"
+                                build_number: "291677"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285919,7 +285956,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291663", "291663"), 10);
+                let a = parseInt((n = "291677", "291677"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313524,4 +313561,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.78f99f23497b4f101fe7.js.map
+//# sourceMappingURL=35705.97df7ee0e1a841d52cdf.js.map
