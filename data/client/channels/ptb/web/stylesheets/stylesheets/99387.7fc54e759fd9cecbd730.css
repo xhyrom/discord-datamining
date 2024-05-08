@@ -47069,21 +47069,21 @@ img.thumbnail__18ece {
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
-    margin: 24px;
-    gap: 16px
+    margin: 24px
 }
 
-.scroller_bf9c9a,
 .sequencer__7fa68 {
+    display: flex;
+    flex: 1;
+    min-height: 0
+}
+
+.scroller_bf9c9a {
     display: flex;
     flex: 1
 }
 
-.scroller_bf9c9a {
-    flex: 1
-}
-
-. .footerButtons {
+.footerButtons__58d4a {
     margin-top: 12px
 }
 
@@ -47237,6 +47237,10 @@ img.thumbnail__18ece {
     top: 20%
 }
 
+@value backgroundImageElevation 5;
+@value backgroundImageBlurElevation 10;
+@value contentElevation 15;
+
 .container_c12432 {
     display: flex;
     flex-direction: column;
@@ -47247,8 +47251,13 @@ img.thumbnail__18ece {
     position: relative
 }
 
-.userUpsell__2b410 {
+.backgroundImageContent__3a238 {
     position: relative;
+    z-index: 15;
+    flex: 1
+}
+
+.userUpsell__2b410 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47256,6 +47265,7 @@ img.thumbnail__18ece {
 }
 
 .userOnboarding__753ed {
+    display: flex;
     height: 100%
 }
 
@@ -47269,40 +47279,54 @@ img.thumbnail__18ece {
     flex: 1;
     width: auto;
     background-color: var(--bg-surface-overlay);
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+    z-index: 5
 }
 
-.theme-dark .genshinUpsellBackgroundImage__29999 {
+.backgroundImageBlur__8990e {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: 10
+}
+
+.genshinUpsellBackgroundImageDark_edee17 {
     background-image: linear-gradient(180deg, rgba(17, 18, 20, .5)0%, #111214 64.1%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Genshin_Background.png)
 }
 
-.theme-dark .valorantUpsellBackgroundImage__2b813 {
+.valorantUpsellBackgroundImageDark__8d00e {
     background-image: linear-gradient(180deg, rgba(17, 18, 20, .5)0%, #111214 64.1%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Valorant_Background.png)
 }
 
-.theme-dark .genshinOnboardingBackgroundImage__9b7e1 {
+.genshinOnboardingBackgroundImageDark_dd41e7 {
     background-image: linear-gradient(180deg, var(--bg-backdrop)0%, var(--black-500)54%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Genshin_Background.png)
 }
 
-.theme-dark .valorantOnboardingBackgroundImage__4bf87 {
+.valorantOnboardingBackgroundImageDark__69c90 {
     background-image: linear-gradient(180deg, var(--bg-backdrop)0%, var(--black-500)54%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Valorant_Background.png)
 }
 
-.theme-light .genshinUpsellBackgroundImage__29999 {
+.genshinUpsellBackgroundImageLight_c46b96 {
     background-image: linear-gradient(180deg, hsl(var(--white-500-hsl)/.5)0%, var(--white-500)64.1%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Genshin_Background.png)
 }
 
-.theme-light .valorantUpsellBackgroundImage__2b813 {
+.valorantUpsellBackgroundImageLight__5ce9b {
     background-image: linear-gradient(180deg, hsl(var(--white-500-hsl)/.5)0%, var(--white-500)64.1%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Valorant_Background.png)
 }
 
-.theme-light .genshinOnboardingBackgroundImage__9b7e1 {
+.genshinOnboardingBackgroundImageLight_f794f5 {
     background-image: linear-gradient(180deg, hsl(var(--white-500-hsl)/.7)0%, var(--white-500)54%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Genshin_Background.png)
 }
 
-.theme-light .valorantOnboardingBackgroundImage__4bf87 {
+.valorantOnboardingBackgroundImageLight__855b1 {
     background-image: linear-gradient(180deg, hsl(var(--white-500-hsl)/.7)0%, var(--white-500)54%), url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Valorant_Background.png)
 }
 
@@ -136646,4 +136670,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f87344b06493ee001e21.css.map*/
+/*# sourceMappingURL=99387.7fc54e759fd9cecbd730.css.map*/
