@@ -16340,6 +16340,10 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     padding: 0 !important
 }
 
+.textAreaForUserProfile__8ffe1 {
+    font-size: .875rem
+}
+
 .textAreaCustomGift__373a0[role=textbox] {
     position: absolute !important;
     height: 100%;
@@ -19840,10 +19844,14 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     word-break: break-word
 }
 
+.nicknameIcons__1b2d1 {
+    align-self: flex-start;
+    padding-top: 4px
+}
+
 .usernameRow__73bf0 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
     gap: 8px
 }
@@ -20162,7 +20170,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .editor_f63872 {
-    --channel-text-area-placeholder: var(--text-muted)
+    --channel-text-area-placeholder: var(--text-muted);
+    font-size: 14px
 }
 
 .footer_b50e3f {
@@ -136765,4 +136774,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.dfaa0b92eae3910b2852.css.map*/
+/*# sourceMappingURL=99387.2b6c5a9cc6ab8dfca3be.css.map*/
