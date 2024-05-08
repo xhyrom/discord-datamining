@@ -4036,6 +4036,10 @@
       "POST"
     ]
   },
+  "JOIN_WUMPUS_FEEDBACK_SQUAD": {
+    "url": "/guilds/:param/join-wfs-server",
+    "allowed_methods": null
+  },
   "TENOR_ASSET_PATH": {
     "url": "/tenor",
     "allowed_methods": null
