@@ -36999,7 +36999,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291370", ", Version Hash: ").concat("4950f8fdc8bd6f1e7694896c95a1058f406729e7")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291399", ", Version Hash: ").concat("b4173a44feea757638d6a2acc8a85c630e42658f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87603,8 +87603,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291370", "291370"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291370")), t = 0), t
+                let t = parseInt((e = "291399", "291399"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291399")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -101965,6 +101965,9 @@
                 trackClanApplyToJoinViewed: function() {
                     return u
                 },
+                trackClanDiscoveryCardClicked: function() {
+                    return m
+                },
                 trackClanDiscoveryUserNuxClicked: function() {
                     return S
                 },
@@ -102119,6 +102122,23 @@
                 a.default.track(o.AnalyticEvents.CLAN_ADMIN_INVITE_CLICKED, {
                     guild_id: t,
                     location: n
+                })
+            }
+
+            function m(e) {
+                let {
+                    guildId: t,
+                    isMember: n,
+                    hasJoinRequest: i,
+                    affinity: r,
+                    index: s
+                } = e;
+                a.default.track(o.AnalyticEvents.CLAN_DISCOVERY_CARD_CLICKED, {
+                    guild_id: t,
+                    is_member: n,
+                    has_join_request: i,
+                    affinity: r,
+                    index: s
                 })
             }
         },
@@ -114717,8 +114737,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291370",
-                    versionHash: "4950f8fdc8bd6f1e7694896c95a1058f406729e7"
+                    buildNumber: "291399",
+                    versionHash: "b4173a44feea757638d6a2acc8a85c630e42658f"
                 }
             }
             n.r(t), n.d(t, {
@@ -115562,16 +115582,16 @@
                 o = n("481060"),
                 l = n("442837"),
                 u = n("835473"),
-                d = n("905362"),
-                _ = n("676327"),
-                c = n("353093"),
-                E = n("114487"),
-                I = n("550271"),
-                T = n("937111"),
-                f = n("703656"),
-                S = n("271383"),
-                h = n("594174"),
-                A = n("626135"),
+                d = n("970606"),
+                _ = n("905362"),
+                c = n("676327"),
+                E = n("353093"),
+                I = n("114487"),
+                T = n("550271"),
+                f = n("937111"),
+                S = n("703656"),
+                h = n("271383"),
+                A = n("594174"),
                 m = n("768581"),
                 N = n("524989"),
                 p = n("981631"),
@@ -115587,7 +115607,7 @@
                     branding: {
                         primaryColor: a
                     }
-                } = t, s = n.filter(e => e !== O.EMPTY_WILDCARD).join(", "), l = (0, o.useToken)(o.tokens.colors.BACKGROUND_FLOATING), u = (0, _.getAccessibleClanColor)(a, l.hex()), d = r.useRef(null), [c, E] = r.useState(!1);
+                } = t, s = n.filter(e => e !== O.EMPTY_WILDCARD).join(", "), l = (0, o.useToken)(o.tokens.colors.BACKGROUND_FLOATING), u = (0, c.getAccessibleClanColor)(a, l.hex()), d = r.useRef(null), [_, E] = r.useState(!1);
                 if (r.useEffect(() => {
                         let e = d.current;
                         null != e && null != e.offsetWidth && null != e.scrollWidth && E(e.offsetWidth < e.scrollWidth)
@@ -115604,7 +115624,7 @@
                     }), (0, i.jsx)(o.Tooltip, {
                         text: s,
                         color: o.Tooltip.Colors.PRIMARY,
-                        shouldShow: c,
+                        shouldShow: _,
                         children: e => (0, i.jsx)("span", {
                             ...e,
                             style: I,
@@ -115693,7 +115713,7 @@
                     if (null == t) return null;
                     if (n.length > 4) {
                         let r = n.slice(3).map(e => e.name),
-                            a = (0, c.formatSelectionList)(r);
+                            a = (0, E.formatSelectionList)(r);
                         return (0, i.jsx)(o.Tooltip, {
                             text: a,
                             position: "bottom",
@@ -115757,7 +115777,7 @@
                     expanded: l,
                     isMember: d,
                     traitsToHighlight: _,
-                    className: T,
+                    className: c,
                     showBrandingFooter: f = !1
                 } = e, {
                     tag: S,
@@ -115774,9 +115794,9 @@
                     icon: r.icon,
                     size: 64,
                     canAnimate: !0
-                })) && void 0 !== t ? t : void 0, P = (0, c.getClanBannerUrl)(r.id, p);
+                })) && void 0 !== t ? t : void 0, P = (0, E.getClanBannerUrl)(r.id, p);
                 return (0, i.jsxs)("div", {
-                    className: s()(C.card, T),
+                    className: s()(C.card, c),
                     children: [(0, i.jsx)("div", {
                         className: C.cardBrandingHeader,
                         style: {
@@ -115793,7 +115813,7 @@
                             className: C.cardContentTitleSection,
                             children: [(0, i.jsxs)("div", {
                                 className: C.cardNameAndTagWrapper,
-                                children: [(0, i.jsx)(E.ClanGuildIconSimple, {
+                                children: [(0, i.jsx)(I.ClanGuildIconSimple, {
                                     guildName: r.name,
                                     guildIconURL: y,
                                     iconSize: 64,
@@ -115807,7 +115827,7 @@
                                         children: e => (0, i.jsxs)("div", {
                                             ...e,
                                             className: C.clanTagChiplet,
-                                            children: [(0, i.jsx)(I.ClanBadge, {
+                                            children: [(0, i.jsx)(T.ClanBadge, {
                                                 width: 16,
                                                 height: 16,
                                                 badge: h.badgeKind,
@@ -115889,32 +115909,32 @@
                     affinity: n,
                     index: a,
                     source: s
-                } = e, u = (0, l.useStateFromStores)([h.default], () => h.default.getCurrentUser()), _ = (0, l.useStateFromStores)([S.default], () => S.default.isMember(t.id, null == u ? void 0 : u.id), [t, u]), c = r.useCallback(() => {
-                    let e = null != T.default.getRequest(t.id);
-                    if (A.default.track(p.AnalyticEvents.CLAN_DISCOVERY_CARD_CLICKED, {
-                            guild_id: t.id,
-                            is_member: _,
-                            has_join_request: e,
+                } = e, u = (0, l.useStateFromStores)([A.default], () => A.default.getCurrentUser()), c = (0, l.useStateFromStores)([h.default], () => h.default.isMember(t.id, null == u ? void 0 : u.id), [t, u]), E = r.useCallback(() => {
+                    let e = null != f.default.getRequest(t.id);
+                    if ((0, d.trackClanDiscoveryCardClicked)({
+                            guildId: t.id,
+                            isMember: c,
+                            hasJoinRequest: e,
                             affinity: n,
                             index: a
-                        }), _) {
-                        (0, f.transitionToGuild)(t.id);
+                        }), c) {
+                        (0, S.transitionToGuild)(t.id);
                         return
                     }
                     if (e) {
-                        (0, f.transitionTo)(p.Routes.GUILD_MEMBER_VERIFICATION(t.id));
+                        (0, S.transitionTo)(p.Routes.GUILD_MEMBER_VERIFICATION(t.id));
                         return
-                    }(0, d.openClanApplyFlow)(t.id, t, {
+                    }(0, _.openClanApplyFlow)(t.id, t, {
                         source: s,
                         location: p.AnalyticsLocations.CLAN_DISCOVERY_CARD
                     })
-                }, [t, _, n, a, s]);
+                }, [t, c, n, a, s]);
                 return (0, i.jsx)(o.Clickable, {
-                    onClick: c,
+                    onClick: E,
                     className: C.clickableCard,
                     children: (0, i.jsx)(M, {
                         ...e,
-                        isMember: _,
+                        isMember: c,
                         showBrandingFooter: !0
                     })
                 })
@@ -170066,8 +170086,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715123335525",
-                                    build_number: "291370"
+                                    built_at: "1715127538671",
+                                    build_number: "291399"
                                 }
                             },
                             retries: 1
@@ -248162,7 +248182,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "4950f8fdc8bd6f1e7694896c95a1058f406729e7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "b4173a44feea757638d6a2acc8a85c630e42658f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276846,7 +276866,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291370"
+                                build_number: "291399"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284195,7 +284215,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291370", "291370"), 10);
+                let a = parseInt((n = "291399", "291399"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -311694,4 +311714,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.427e2c5f5348e2b2c2dc.js.map
+//# sourceMappingURL=35705.4fe6d3b2694bd0a0850d.js.map
