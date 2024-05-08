@@ -74783,7 +74783,19 @@ html .invoiceCancelRow_aa7946 {
     display: flex;
     flex: 1;
     align-items: center;
-    justify-content: flex-start
+    justify-content: space-between;
+    min-width: 0
+}
+
+.guildPrefixContainer_ea26db {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0
+}
+
+.guildPrefixIcon__04f98 {
+    flex: 1 0 auto
 }
 
 .profileContainer_db7b75 {
@@ -74791,10 +74803,6 @@ html .invoiceCancelRow_aa7946 {
     border-radius: 8px;
     overflow: hidden;
     background-color: var(--card-secondary-bg)
-}
-
-.icon_c1e831 {
-    flex: 0 0 auto
 }
 
 .details__39ae8 {
@@ -74822,6 +74830,11 @@ html .invoiceCancelRow_aa7946 {
     background-color: var(--bg-surface-raised);
     padding: 4px 8px;
     border: 1px solid var(--border-strong)
+}
+
+.badge__6dc6e {
+    vertical-align: top;
+    margin-right: 2px
 }
 
 .tagContainer__4e826 {
@@ -136677,4 +136690,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.712637fb12544b3b19bf.css.map*/
+/*# sourceMappingURL=99387.21fdea0ce9041e20d95f.css.map*/
