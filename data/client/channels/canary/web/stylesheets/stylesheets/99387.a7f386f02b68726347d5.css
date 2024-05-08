@@ -34730,6 +34730,11 @@ html .progress__00e29 {
     margin-right: 16px
 }
 
+@font-face {
+    font-family: Corinthia;
+    src: url(/assets/e4cd97e442a56e8f5850.ttf)
+}
+
 .container_b8f6a6 {
     position: relative
 }
@@ -34814,8 +34819,12 @@ html .progress__00e29 {
 }
 
 .signatureText__4a423 {
-    font-family: cursive;
-    color: var(--border-strong)
+    color: var(--border-strong);
+    font-family: Corinthia, cursive;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: -4px
 }
 
 .overviewSidebarContent_d1aa6a,
@@ -34918,6 +34927,16 @@ html .progress__00e29 {
     display: none
 }
 
+@font-face {
+    font-family: Corinthia;
+    src: url(/assets/e4cd97e442a56e8f5850.ttf)
+}
+
+@font-face {
+    font-family: Fraunces;
+    src: url(/assets/4b1803acc2067756e573.ttf)
+}
+
 .scrollBg_bf01f4 {
     position: absolute;
     top: 24px;
@@ -34972,23 +34991,6 @@ html .progress__00e29 {
     border-bottom-right-radius: 20px
 }
 
-.signatureBlock_c3906a {
-    flex: 1;
-    display: flex;
-    align-items: flex-end;
-    border-bottom: 1px solid var(--border-strong);
-    flex-direction: row;
-    gap: 8px;
-    color: var(--border-strong);
-    padding: 0 8px;
-    margin-bottom: 4px
-}
-
-.signatureText_ba8ce1 {
-    font-family: cursive;
-    color: var(--border-strong)
-}
-
 .overviewSidebarWrapper__97c37 {
     padding: 104px 76px 148px 64px;
     position: relative;
@@ -35003,20 +35005,29 @@ html .progress__00e29 {
 }
 
 .overviewText__9e4a2 {
+    font-family: Fraunces, serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
     text-overflow: ellipsis;
     max-width: 240px;
     margin-bottom: 24px
 }
 
 .overviewText__9e4a2 strong {
+    font-weight: 300;
     color: var(--interactive-active)
 }
 
 .overviewHeaderPrelude__60592 {
+    font-size: 24px;
+    line-height: 24px;
     margin-bottom: 0
 }
 
 .overviewGuildName__2c32f {
+    font-size: 24px;
+    line-height: 24px;
     margin-bottom: 12px
 }
 
@@ -35059,8 +35070,12 @@ html .progress__00e29 {
 }
 
 .signatureText_ba8ce1 {
-    font-family: cursive;
-    color: var(--border-strong)
+    font-family: Corinthia, cursive;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--border-strong);
+    margin-bottom: -4px
 }
 
 .clickable__98c7c {
@@ -35099,6 +35114,11 @@ html .progress__00e29 {
 
 .theme-dark .scrollBg_bf01f4 .scrollBgBottom__952b4:after {
     background-color: var(--background-secondary)
+}
+
+@font-face {
+    font-family: Fraunces;
+    src: url(/assets/4b1803acc2067756e573.ttf)
 }
 
 .modal_a2e1b0 {
@@ -35219,14 +35239,24 @@ html .progress__00e29 {
 }
 
 .charterHeaderText_e9da53 {
-    font-family: Serif
+    font-family: Fraunces, serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px
 }
 
 .charterBodyText_bdc8e4 {
-    font-family: Times New Roman
+    font-family: Fraunces, serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px
 }
 
 .establishedDate__2a79a {
+    font-family: Fraunces, serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
     margin-top: 16px
 }
 
@@ -44661,6 +44691,14 @@ img.thumbnail__18ece {
 .popoutBlockedWarningIcon_a01b83 {
     margin-right: 3px;
     margin-bottom: -2px
+}
+
+.popoutTextPrimary_d83570 {
+    color: var(--content-inventory-overlay-text-primary)
+}
+
+.popoutTextSecondary__579ec {
+    color: var(--content-inventory-overlay-text-secondary)
 }
 
 .listeningTimeline_ec63b6 {
@@ -134222,6 +134260,10 @@ div.nagbar_c731ff {
     --chat-swipe-to-reply-gradient-background: hsl(var(--black-500-hsl) / 0.1);
     --coachmark-bg: var(--primary-800);
     --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
+    --content-inventory-overlay-text-primary: hsl(var(--white-500-hsl) / 0.85);
+    --content-inventory-overlay-text-secondary: hsl(var(--white-500-hsl) / 0.7);
+    --content-inventory-overlay-ui-mod: hsl(var(--white-500-hsl) / 0.7);
+    --content-inventory-overlay-ui-mod-bg: hsl(var(--black-500-hsl) / 0.1);
     --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.7);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
@@ -134540,6 +134582,10 @@ div.nagbar_c731ff {
     --chat-swipe-to-reply-gradient-background: hsl(var(--white-500-hsl) / 0.4);
     --coachmark-bg: var(--white-500);
     --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
+    --content-inventory-overlay-text-primary: hsl(var(--white-500-hsl) / 0.85);
+    --content-inventory-overlay-text-secondary: hsl(var(--white-500-hsl) / 0.7);
+    --content-inventory-overlay-ui-mod: hsl(var(--white-500-hsl) / 0.7);
+    --content-inventory-overlay-ui-mod-bg: hsl(var(--black-500-hsl) / 0.1);
     --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.54);
     --control-brand-foreground: var(--brand-500);
     --control-brand-foreground-new: var(--brand-500);
@@ -134858,6 +134904,10 @@ div.nagbar_c731ff {
     --chat-swipe-to-reply-gradient-background: hsl(var(--black-500-hsl) / 0.1);
     --coachmark-bg: var(--plum-19);
     --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
+    --content-inventory-overlay-text-primary: hsl(var(--white-500-hsl) / 0.85);
+    --content-inventory-overlay-text-secondary: hsl(var(--white-500-hsl) / 0.7);
+    --content-inventory-overlay-ui-mod: hsl(var(--white-500-hsl) / 0.7);
+    --content-inventory-overlay-ui-mod-bg: hsl(var(--black-500-hsl) / 0.1);
     --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.7);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
@@ -135176,6 +135226,10 @@ div.nagbar_c731ff {
     --chat-swipe-to-reply-gradient-background: hsl(var(--black-500-hsl) / 0.1);
     --coachmark-bg: var(--plum-17);
     --content-inventory-media-seekbar-container: hsl(var(--plum-6-hsl) / 0.24);
+    --content-inventory-overlay-text-primary: hsl(var(--white-500-hsl) / 0.85);
+    --content-inventory-overlay-text-secondary: hsl(var(--white-500-hsl) / 0.7);
+    --content-inventory-overlay-ui-mod: hsl(var(--white-500-hsl) / 0.7);
+    --content-inventory-overlay-ui-mod-bg: hsl(var(--black-500-hsl) / 0.1);
     --context-menu-backdrop-background: hsl(var(--black-500-hsl) / 0.7);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
@@ -136700,4 +136754,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.e533ab313a2834eb27af.css.map*/
+/*# sourceMappingURL=99387.a7f386f02b68726347d5.css.map*/
