@@ -54894,6 +54894,13 @@ img.thumbnail__18ece {
     color: #b449b6
 }
 
+.rootContainer_b1d9f3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
 .headerContainer_d09a13 {
     display: flex;
     flex-direction: row
@@ -136774,4 +136781,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.2b6c5a9cc6ab8dfca3be.css.map*/
+/*# sourceMappingURL=99387.aad1cffcc121f6586ce6.css.map*/
