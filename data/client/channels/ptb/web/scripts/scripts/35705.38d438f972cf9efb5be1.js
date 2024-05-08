@@ -37374,7 +37374,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291491", ", Version Hash: ").concat("b506ce04bc5a18cd412745e70191f0ef43934ae7")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291503", ", Version Hash: ").concat("ac0d29f51f11e05e025d65a7860a67799463bedd")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88364,8 +88364,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291491", "291491"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291491")), t = 0), t
+                let t = parseInt((e = "291503", "291503"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291503")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103368,25 +103368,25 @@
         963202: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                isClanPrepilotExperimentEnabled: function() {
-                    return d
+                useAnyClanPrepilotExperiment: function() {
+                    return c
                 },
                 useAnyClanPrepilotExperimentEnabled: function() {
-                    return _
+                    return I
                 },
                 useClanGeneralExperiment: function() {
-                    return S
+                    return m
                 },
                 useClanPilotExperiment: function() {
-                    return T
+                    return h
                 },
                 useClanPrepilotExperiment: function() {
-                    return u
+                    return E
                 },
                 useClanPrepilotExperimentDefaultGameId: function() {
-                    return c
+                    return T
                 }
-            });
+            }), n("653041");
             var i = n("818083"),
                 r = n("308083"),
                 a = n("981631");
@@ -103456,54 +103456,25 @@
                     }]
                 });
 
-            function u(e, t) {
-                var n, i, r, u, d, _;
-                let c = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-                    E = o.useExperiment({
-                        location: t
-                    }, {
-                        autoTrackExposure: c
-                    }),
-                    I = l.useExperiment({
-                        location: t
-                    }, {
-                        autoTrackExposure: c
-                    }),
-                    T = s.useExperiment({
-                        location: t
-                    }, {
-                        autoTrackExposure: c
-                    }),
-                    f = null !== (n = null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN_PILOT_GENSHIN)) && void 0 !== n && n && I.enableClanCreation;
-                return {
-                    enableClanCreation: null !== (i = null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN_PILOT_VALORANT)) && void 0 !== i && i && E.enableClanCreation || f || null !== (r = T.enableClanCreation) && void 0 !== r && r,
-                    defaultGameId: null !== (_ = null !== (d = null !== (u = E.defaultGameId) && void 0 !== u ? u : I.defaultGameId) && void 0 !== d ? d : T.defaultGameId) && void 0 !== _ ? _ : null
-                }
+            function u(e) {
+                var t, n, i;
+                let {
+                    valorantConfig: r,
+                    genshinConfig: a,
+                    oldConfig: s
+                } = e;
+                return null !== (i = null !== (n = null !== (t = r.defaultGameId) && void 0 !== t ? t : a.defaultGameId) && void 0 !== n ? n : s.defaultGameId) && void 0 !== i ? i : null
             }
 
-            function d(e, t) {
-                var n, i, r;
-                let u = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-                    d = o.getCurrentConfig({
-                        location: t
-                    }, {
-                        autoTrackExposure: u
-                    }),
-                    _ = l.getCurrentConfig({
-                        location: t
-                    }, {
-                        autoTrackExposure: u
-                    }),
-                    c = s.getCurrentConfig({
-                        location: t
-                    }, {
-                        autoTrackExposure: u
-                    }),
-                    E = null !== (n = null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN_PILOT_GENSHIN)) && void 0 !== n && n && _.enableClanCreation;
-                return null !== (i = null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN_PILOT_VALORANT)) && void 0 !== i && i && d.enableClanCreation || E || null !== (r = c.enableClanCreation) && void 0 !== r && r
+            function d(e) {
+                return (null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN_PILOT_VALORANT)) === !0
             }
 
-            function _(e, t) {
+            function _(e) {
+                return (null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN_PILOT_GENSHIN)) === !0
+            }
+
+            function c(e, t) {
                 let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
                     i = o.useExperiment({
                         location: t
@@ -103514,37 +103485,69 @@
                         location: t
                     }, {
                         autoTrackExposure: n
-                    }),
-                    u = s.useExperiment({
+                    });
+                return function(e) {
+                    var t;
+                    let {
+                        guilds: n,
+                        valorantConfig: i,
+                        genshinConfig: r,
+                        oldConfig: a
+                    } = e, s = n.filter(_), o = s.length > 0 && r.enableClanCreation, l = n.filter(d), c = l.length > 0 && i.enableClanCreation, E = [];
+                    return o && s.forEach(e => E.push(e)), c && l.forEach(e => E.push(e)), {
+                        guilds: E,
+                        enableClanCreation: c || o || null !== (t = a.enableClanCreation) && void 0 !== t && t,
+                        defaultGameId: u({
+                            valorantConfig: i,
+                            genshinConfig: r,
+                            oldConfig: a
+                        })
+                    }
+                }({
+                    guilds: e,
+                    valorantConfig: i,
+                    genshinConfig: r,
+                    oldConfig: s.useExperiment({
                         location: t
                     }, {
                         autoTrackExposure: n
-                    }),
-                    d = e.some(e => e.hasFeature(a.GuildFeatures.CLAN_PILOT_GENSHIN)) && r.enableClanCreation;
-                return e.some(e => e.hasFeature(a.GuildFeatures.CLAN_PILOT_VALORANT)) && i.enableClanCreation || d || u.enableClanCreation
+                    })
+                })
             }
 
-            function c(e) {
-                var t, n, i;
-                let r = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-                    a = o.useExperiment({
-                        location: e
-                    }, {
-                        autoTrackExposure: r
-                    }),
-                    u = l.useExperiment({
-                        location: e
-                    }, {
-                        autoTrackExposure: r
-                    }),
-                    d = s.useExperiment({
-                        location: e
-                    }, {
-                        autoTrackExposure: r
-                    });
-                return null !== (i = null !== (n = null !== (t = a.defaultGameId) && void 0 !== t ? t : u.defaultGameId) && void 0 !== n ? n : d.defaultGameId) && void 0 !== i ? i : null
+            function E(e, t) {
+                let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
+                return c([e], t, n)
             }
-            let E = (0, i.createExperiment)({
+
+            function I(e, t) {
+                let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
+                return c(e, t, n).enableClanCreation
+            }
+
+            function T(e) {
+                let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
+                    n = o.useExperiment({
+                        location: e
+                    }, {
+                        autoTrackExposure: t
+                    }),
+                    i = l.useExperiment({
+                        location: e
+                    }, {
+                        autoTrackExposure: t
+                    });
+                return u({
+                    valorantConfig: n,
+                    genshinConfig: i,
+                    oldConfig: s.useExperiment({
+                        location: e
+                    }, {
+                        autoTrackExposure: t
+                    })
+                })
+            }
+            let f = (0, i.createExperiment)({
                     kind: "user",
                     id: "2024-05_clans_valorant_pilot",
                     label: "Clans Valorant Pilot",
@@ -103561,7 +103564,7 @@
                         }
                     }]
                 }),
-                I = (0, i.createExperiment)({
+                S = (0, i.createExperiment)({
                     kind: "user",
                     id: "2024-05_clans_genshin_pilot",
                     label: "Clans Genshin Pilot",
@@ -103579,15 +103582,15 @@
                     }]
                 });
 
-            function T(e) {
+            function h(e) {
                 var t, n;
                 let i = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-                    r = E.useExperiment({
+                    r = f.useExperiment({
                         location: e
                     }, {
                         autoTrackExposure: i
                     }),
-                    a = I.useExperiment({
+                    a = S.useExperiment({
                         location: e
                     }, {
                         autoTrackExposure: i
@@ -103597,7 +103600,7 @@
                     defaultGameId: null !== (n = null !== (t = r.defaultGameId) && void 0 !== t ? t : a.defaultGameId) && void 0 !== n ? n : null
                 }
             }
-            let f = (0, i.createExperiment)({
+            let A = (0, i.createExperiment)({
                 kind: "user",
                 id: "2024-05_clans_general",
                 label: "Clans General",
@@ -103613,9 +103616,9 @@
                 }]
             });
 
-            function S(e) {
+            function m(e) {
                 let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-                return f.useExperiment({
+                return A.useExperiment({
                     location: e
                 }, {
                     autoTrackExposure: t
@@ -115613,8 +115616,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291491",
-                    versionHash: "b506ce04bc5a18cd412745e70191f0ef43934ae7"
+                    buildNumber: "291503",
+                    versionHash: "ac0d29f51f11e05e025d65a7860a67799463bedd"
                 }
             }
             n.r(t), n.d(t, {
@@ -153127,7 +153130,7 @@
                     },
                     async open(e, t, i, r) {
                         var a;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("23755"), n.e("70716"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("56630"), n.e("58227"), n.e("85093"), n.e("85552"), n.e("71697"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("43502"), n.e("52332"), n.e("74526"), n.e("33361"), n.e("50916"), n.e("62856"), n.e("56215"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("23755"), n.e("70716"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("90508"), n.e("56630"), n.e("58227"), n.e("85093"), n.e("85552"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("52332"), n.e("74526"), n.e("33361"), n.e("50916"), n.e("62856"), n.e("56215"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         a.default.dispatch({
@@ -171089,8 +171092,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715188262910",
-                                    build_number: "291491"
+                                    built_at: "1715189583254",
+                                    build_number: "291503"
                                 }
                             },
                             retries: 1
@@ -249378,7 +249381,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b506ce04bc5a18cd412745e70191f0ef43934ae7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ac0d29f51f11e05e025d65a7860a67799463bedd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278298,7 +278301,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291491"
+                                build_number: "291503"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285647,7 +285650,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291491", "291491"), 10);
+                let a = parseInt((n = "291503", "291503"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -312228,7 +312231,7 @@
                 CollectiblesItemType: function() {
                     return i
                 }
-            }), (r = i || (i = {}))[r.NONE = 100] = "NONE", r[r.AVATAR_DECORATION = 0] = "AVATAR_DECORATION", r[r.PROFILE_EFFECT = 1] = "PROFILE_EFFECT"
+            }), (r = i || (i = {}))[r.NONE = 100] = "NONE", r[r.AVATAR_DECORATION = 0] = "AVATAR_DECORATION", r[r.PROFILE_EFFECT = 1] = "PROFILE_EFFECT", r[r.BUNDLE = 1e3] = "BUNDLE"
         },
         434179: function(e, t, n) {
             "use strict";
@@ -313252,4 +313255,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.d737989cfecc47567522.js.map
+//# sourceMappingURL=35705.38d438f972cf9efb5be1.js.map
