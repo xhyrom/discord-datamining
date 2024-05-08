@@ -20132,8 +20132,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     cursor: pointer
 }
 
-.text_c93504:hover,
-.text_c93504:focus-visible {
+.section_e4c9af:hover .text_c93504,
+.section_e4c9af:focus-visible .text_c93504 {
     -webkit-text-decoration: underline;
     text-decoration: underline
 }
@@ -136765,4 +136765,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7ddc65b41adf42b322f7.css.map*/
+/*# sourceMappingURL=99387.dfaa0b92eae3910b2852.css.map*/
