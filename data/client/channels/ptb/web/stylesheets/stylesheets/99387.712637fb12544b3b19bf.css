@@ -59511,12 +59511,12 @@ div:has(>div>.modal__06f49) {
 .streamerModeEnabledBtn_b696dd {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 1.8125rem;
+    line-height: 29px;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -136677,4 +136677,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.b897ca482c7929c22466.css.map*/
+/*# sourceMappingURL=99387.712637fb12544b3b19bf.css.map*/
