@@ -7404,14 +7404,20 @@
             e.exports = {
                 adminUpsell: "adminUpsell_a0161a",
                 backgroundImage: "backgroundImage__778b2",
+                backgroundImageBlur: "backgroundImageBlur__8990e",
+                backgroundImageContent: "backgroundImageContent__3a238",
                 container: "container_c12432",
-                genshinOnboardingBackgroundImage: "genshinOnboardingBackgroundImage__9b7e1",
-                genshinUpsellBackgroundImage: "genshinUpsellBackgroundImage__29999",
+                genshinOnboardingBackgroundImageDark: "genshinOnboardingBackgroundImageDark_dd41e7 backgroundImage__778b2",
+                genshinOnboardingBackgroundImageLight: "genshinOnboardingBackgroundImageLight_f794f5 backgroundImage__778b2",
+                genshinUpsellBackgroundImageDark: "genshinUpsellBackgroundImageDark_edee17 backgroundImage__778b2",
+                genshinUpsellBackgroundImageLight: "genshinUpsellBackgroundImageLight_c46b96 backgroundImage__778b2",
                 upsellScroller: "upsellScroller__0225a",
                 userOnboarding: "userOnboarding__753ed",
                 userUpsell: "userUpsell__2b410",
-                valorantOnboardingBackgroundImage: "valorantOnboardingBackgroundImage__4bf87",
-                valorantUpsellBackgroundImage: "valorantUpsellBackgroundImage__2b813"
+                valorantOnboardingBackgroundImageDark: "valorantOnboardingBackgroundImageDark__69c90 backgroundImage__778b2",
+                valorantOnboardingBackgroundImageLight: "valorantOnboardingBackgroundImageLight__855b1 backgroundImage__778b2",
+                valorantUpsellBackgroundImageDark: "valorantUpsellBackgroundImageDark__8d00e backgroundImage__778b2",
+                valorantUpsellBackgroundImageLight: "valorantUpsellBackgroundImageLight__5ce9b backgroundImage__778b2"
             }
         },
         442970: function(e) {
@@ -7426,6 +7432,7 @@
             e.exports = {
                 container: "container__5c0c5",
                 footer: "footer__259a2",
+                footerButtons: "footerButtons__58d4a",
                 scroller: "scroller_bf9c9a",
                 sequencer: "sequencer__7fa68",
                 stepsContainer: "stepsContainer_fd80f9"
