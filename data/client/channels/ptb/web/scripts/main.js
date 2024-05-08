@@ -36999,7 +36999,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291399", ", Version Hash: ").concat("b4173a44feea757638d6a2acc8a85c630e42658f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291406", ", Version Hash: ").concat("5aabb3b1b5523d5402e73793ae6057c87bb53128")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -70781,15 +70781,20 @@
             var i = n("981631");
 
             function r(e, t) {
-                let n = new Date;
+                let n;
+                let r = new Date;
                 switch (e) {
                     case i.AnalyticEvents.CHANNEL_OPENED_CLICKSTREAM:
                         return {
-                            time_minus: t.map(e => n.getTime() - e.timestamp.getTime()), channel_ids: t.map(e => e.channelId), channel_types: t.map(e => e.channelType), rtc_states: t.map(e => e.rtcState)
+                            time_minus: (n = t).map(e => r.getTime() - e.timestamp.getTime()), channel_ids: n.map(e => e.channelId), channel_types: n.map(e => e.channelType), rtc_states: n.map(e => e.rtc_state)
                         };
                     case i.AnalyticEvents.GUILD_VIEWED_CLICKSTREAM:
                         return {
-                            time_minus: t.map(e => n.getTime() - e.timestamp.getTime()), guild_ids: t.map(e => e.guildId), rtc_states: t.map(e => e.rtcState)
+                            time_minus: (n = t).map(e => r.getTime() - e.timestamp.getTime()), guild_ids: n.map(e => e.guildId), rtc_states: n.map(e => e.rtc_state)
+                        };
+                    case i.AnalyticEvents.FRIENDS_LIST_VIEWED_CLICKSTREAM:
+                        return {
+                            time_minus: (n = t).map(e => r.getTime() - e.timestamp.getTime()), rtc_states: n.map(e => e.rtc_state), tab_opened: n.map(e => e.tab_opened), num_friends: n.map(e => e.num_friends), now_playing_visible: n.map(e => e.now_playing_visible), now_playing_num_cards: n.map(e => e.now_playing_num_cards)
                         };
                     default:
                         throw Error("getClicksteamDrainEvent: Unknown event: ".concat(e))
@@ -70809,11 +70814,12 @@
                 s = n("176505");
 
             function o(e, t) {
+                let n;
                 switch (e) {
                     case a.AnalyticEvents.CHANNEL_OPENED_CLICKSTREAM:
-                        var n, o;
-                        let l = t.channelId;
-                        switch (l) {
+                        var o, l;
+                        let u = (n = t).channelId;
+                        switch (u) {
                             case s.StaticChannelRoute.CHANNEL_BROWSER:
                             case s.StaticChannelRoute.GUILD_HOME:
                             case s.StaticChannelRoute.GUILD_SHOP:
@@ -70824,13 +70830,23 @@
                             case s.StaticChannelRoute.GUILD_ONBOARDING:
                                 return
                         }
-                        let u = null !== (o = null === (n = i.default.getChannel(l)) || void 0 === n ? void 0 : n.type) && void 0 !== o ? o : a.ChannelTypes.UNKNOWN;
+                        let d = null !== (l = null === (o = i.default.getChannel(u)) || void 0 === o ? void 0 : o.type) && void 0 !== l ? l : a.ChannelTypes.UNKNOWN;
                         return {
-                            channelId: l, channelType: u, rtcState: r.default.getState(), timestamp: new Date
+                            timestamp: new Date, rtc_state: r.default.getState(), channelId: u, channelType: d
                         };
                     case a.AnalyticEvents.GUILD_VIEWED_CLICKSTREAM:
+                        let _ = (n = t).guildId;
                         return {
-                            guildId: t.guildId, rtcState: r.default.getState(), timestamp: new Date
+                            timestamp: new Date, rtc_state: r.default.getState(), guildId: _
+                        };
+                    case a.AnalyticEvents.FRIENDS_LIST_VIEWED_CLICKSTREAM:
+                        return n = t, {
+                            timestamp: new Date,
+                            rtc_state: r.default.getState(),
+                            tab_opened: n.tab_opened,
+                            num_friends: n.num_friends,
+                            now_playing_visible: n.now_playing_visible,
+                            now_playing_num_cards: n.now_playing_num_cards
                         };
                     default:
                         throw Error("getClickstreamTrackEvent: Unknown event: ".concat(e))
@@ -87603,8 +87619,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291399", "291399"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291399")), t = 0), t
+                let t = parseInt((e = "291406", "291406"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291406")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -114737,8 +114753,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291399",
-                    versionHash: "b4173a44feea757638d6a2acc8a85c630e42658f"
+                    buildNumber: "291406",
+                    versionHash: "5aabb3b1b5523d5402e73793ae6057c87bb53128"
                 }
             }
             n.r(t), n.d(t, {
@@ -170086,8 +170102,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715127538671",
-                                    build_number: "291399"
+                                    built_at: "1715129107569",
+                                    build_number: "291406"
                                 }
                             },
                             retries: 1
@@ -248182,7 +248198,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b4173a44feea757638d6a2acc8a85c630e42658f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5aabb3b1b5523d5402e73793ae6057c87bb53128"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276866,7 +276882,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291399"
+                                build_number: "291406"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -284215,7 +284231,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291399", "291399"), 10);
+                let a = parseInt((n = "291406", "291406"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -311714,4 +311730,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.4fe6d3b2694bd0a0850d.js.map
+//# sourceMappingURL=35705.8a659744f9512c94a3d5.js.map
