@@ -45952,7 +45952,7 @@ img.thumbnail__18ece {
 .leftColumn__82ee9 {
     display: flex;
     flex-direction: column;
-    width: 480px
+    width: 466px
 }
 
 .colorsContainer__2dee9,
@@ -46754,7 +46754,8 @@ img.thumbnail__18ece {
 
 .container__208b2 {
     display: flex;
-    gap: 64px
+    gap: 64px;
+    min-width: 800px
 }
 
 .badgesContainer__0f8f1 {
@@ -46787,6 +46788,7 @@ img.thumbnail__18ece {
     height: 64px;
     border-radius: 4px;
     border: solid 1px var(--border-subtle);
+    box-sizing: border-box;
     cursor: pointer;
     transition-duration: .2s
 }
@@ -46826,11 +46828,16 @@ img.thumbnail__18ece {
 }
 
 .tagInput__82542 {
+    flex: 1;
     padding: 0;
     font-size: 32px;
     background-color: transparent;
     background-color: initial;
     text-align: center
+}
+
+.tagValidationText_ee7d11 {
+    max-width: 240px
 }
 
 @value baseClanCardWidth 242px;
@@ -59504,12 +59511,12 @@ div:has(>div>.modal__06f49) {
 .streamerModeEnabledBtn_b696dd {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -136670,4 +136677,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7fc54e759fd9cecbd730.css.map*/
+/*# sourceMappingURL=99387.b897ca482c7929c22466.css.map*/
