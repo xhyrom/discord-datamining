@@ -37394,7 +37394,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291610", ", Version Hash: ").concat("03bb8a9c4032286a494bace48c03a626ccc36ac0")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291630", ", Version Hash: ").concat("6850dcbeecfe8b4ab46ba774e0087279ed8d432b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88386,8 +88386,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291610", "291610"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291610")), t = 0), t
+                let t = parseInt((e = "291630", "291630"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291630")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115648,8 +115648,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291610",
-                    versionHash: "03bb8a9c4032286a494bace48c03a626ccc36ac0"
+                    buildNumber: "291630",
+                    versionHash: "6850dcbeecfe8b4ab46ba774e0087279ed8d432b"
                 }
             }
             n.r(t), n.d(t, {
@@ -151825,9 +151825,7 @@
                     return L({
                         user_id: i,
                         guild_scheduled_event_id: r,
-                        member: null != d ? d : {
-                            guildId: a
-                        },
+                        member: null != d ? d : void 0,
                         guild_scheduled_event_exception_id: s,
                         response: o
                     }), !0
@@ -171350,8 +171348,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715200330544",
-                                    build_number: "291610"
+                                    built_at: "1715202690745",
+                                    build_number: "291630"
                                 }
                             },
                             retries: 1
@@ -198593,8 +198591,8 @@
                             sourceId: e,
                             sound: n
                         } = null == t ? void 0 : t.desktopSettings;
-                        null != e && m.default.getObservedAppNameForWindow(e) === G.name && n ? (en = new I.Interval).start(B, eI) : en = null
-                    }
+                        null != e && m.default.getObservedAppNameForWindow(e) === G.name && n ? (en = new I.Interval).start(B, eI) : (null == en || en.stop(), en = null)
+                    } else null == t && (null == en || en.stop(), en = null)
                 }
             });
             t.default = eA
@@ -234349,12 +234347,13 @@
                 N = n("581883"),
                 p = n("199902"),
                 O = n("272053"),
-                R = n("981631"),
-                C = n("689938");
-            let g = [],
-                L = {};
+                R = n("77498"),
+                C = n("981631"),
+                g = n("689938");
+            let L = [],
+                v = {};
 
-            function v() {
+            function D() {
                 let e = [],
                     t = m.CustomStatusSetting.getSetting();
                 null != t && ("0" === t.expiresAtMs || new Date(Number(t.expiresAtMs)).getTime() - new Date().getTime() > 0) && e.push((0, T.getActivityFromCustomStatus)(t));
@@ -234362,12 +234361,12 @@
                 e.push(...n);
                 let i = O.default.getStream();
                 null != i && e.push({
-                    type: R.ActivityTypes.STREAMING,
+                    type: C.ActivityTypes.STREAMING,
                     ...i
                 });
                 let r = new Set,
                     a = new Set;
-                d().forEach(L, t => {
+                d().forEach(v, t => {
                     null != t.application_id && (r.add(t.name), a.add(t.application_id), e.push(t))
                 }), E.default.getSelfEmbeddedActivities().forEach(t => {
                     var n;
@@ -234377,107 +234376,110 @@
                     if (a.has(i)) return;
                     let r = null === (n = I.default.getApplication(i)) || void 0 === n ? void 0 : n.name;
                     e.push({
-                        type: R.ActivityTypes.PLAYING,
-                        name: null != r ? r : C.default.Messages.EMBEDDED_ACTIVITIES_LAUNCHING_ACTIVITY,
+                        type: C.ActivityTypes.PLAYING,
+                        name: null != r ? r : g.default.Messages.EMBEDDED_ACTIVITIES_LAUNCHING_ACTIVITY,
                         application_id: i,
-                        flags: R.ActivityFlags.EMBEDDED
+                        flags: C.ActivityFlags.EMBEDDED
                     })
                 });
                 let s = f.default.getVisibleGame(),
                     o = null != s && null != s.name && r.has(s.name),
                     u = null != s && s.isLauncher,
                     _ = p.default.getCurrentUserActiveStream();
-                null != s && null != s.name && !(o || u && !(null != _)) && e.push({
-                    type: R.ActivityTypes.PLAYING,
-                    name: s.name,
-                    application_id: s.id,
-                    timestamps: {
-                        start: s.start
-                    }
+                if (null != s && null != s.name && !(o || u && !(null != _))) {
+                    var c, N;
+                    e.push({
+                        type: C.ActivityTypes.PLAYING,
+                        name: s.name,
+                        application_id: null !== (N = s.id) && void 0 !== N ? N : null === (c = R.default.getGameByName(s.name)) || void 0 === c ? void 0 : c.id,
+                        timestamps: {
+                            start: s.start
+                        }
+                    })
+                }
+                let D = A.default.getActivity();
+                null != D && e.push({
+                    type: C.ActivityTypes.LISTENING,
+                    ...D
                 });
-                let c = A.default.getActivity();
-                null != c && e.push({
-                    type: R.ActivityTypes.LISTENING,
-                    ...c
-                });
-                let N = S.default.getCurrentHangStatus();
-                if (null != N) {
+                let M = S.default.getCurrentHangStatus();
+                if (null != M) {
                     let t = S.default.getCustomHangStatus();
                     e.push({
-                        type: R.ActivityTypes.HANG_STATUS,
+                        type: C.ActivityTypes.HANG_STATUS,
                         name: "Hang Status",
-                        state: N,
+                        state: M,
                         details: null == t ? void 0 : t.status,
                         emoji: null == t ? void 0 : t.emoji
                     })
-                }!l()(g, e) && (g = e)
+                }!l()(L, e) && (L = e)
             }
-            class D extends(i = _.default.Store) {
+            class M extends(i = _.default.Store) {
                 initialize() {
-                    this.waitFor(f.default, E.default, O.default, p.default, A.default, N.default, S.default), this.syncWith([h.default, S.default], () => v())
+                    this.waitFor(f.default, E.default, O.default, p.default, A.default, N.default, S.default, R.default), this.syncWith([h.default, S.default], () => D())
                 }
                 getActivities() {
-                    return g
+                    return L
                 }
                 getPrimaryActivity() {
-                    return g[0]
+                    return L[0]
                 }
                 getApplicationActivity(e) {
                     return this.findActivity(t => t.application_id === e)
                 }
                 getCustomStatusActivity() {
-                    return this.findActivity(e => e.type === R.ActivityTypes.CUSTOM_STATUS)
+                    return this.findActivity(e => e.type === C.ActivityTypes.CUSTOM_STATUS)
                 }
                 findActivity(e) {
-                    return g.find(e)
+                    return L.find(e)
                 }
                 getApplicationActivities() {
-                    return L
+                    return v
                 }
             }
-            s = "LocalActivityStore", (a = "displayName") in(r = D) ? Object.defineProperty(r, a, {
+            s = "LocalActivityStore", (a = "displayName") in(r = M) ? Object.defineProperty(r, a, {
                 value: s,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : r[a] = s, t.default = new D(c.default, {
+            }) : r[a] = s, t.default = new M(c.default, {
                 OVERLAY_INITIALIZE: function(e) {
                     let {
                         localActivities: t
                     } = e;
-                    L = {
+                    v = {
                         ...t
-                    }, v()
+                    }, D()
                 },
                 START_SESSION: function() {
-                    L = {}, v()
+                    v = {}, D()
                 },
                 LOCAL_ACTIVITY_UPDATE: function(e) {
                     let {
                         socketId: t,
                         activity: n
                     } = e;
-                    if (l()(L[t], n)) return !1;
-                    null != n ? L[t] = n : delete L[t], v()
+                    if (l()(v[t], n)) return !1;
+                    null != n ? v[t] = n : delete v[t], D()
                 },
                 RPC_APP_DISCONNECTED: function(e) {
                     let {
                         socketId: t
                     } = e;
-                    delete L[t], v()
+                    delete v[t], D()
                 },
-                RUNNING_GAMES_CHANGE: v,
-                LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: v,
-                SPOTIFY_PLAYER_STATE: v,
-                SPOTIFY_PLAYER_PLAY: v,
-                STREAMING_UPDATE: v,
-                USER_CONNECTIONS_UPDATE: v,
-                STREAM_START: v,
-                STREAM_STOP: v,
-                USER_SETTINGS_PROTO_UPDATE: v,
-                EMBEDDED_ACTIVITY_OPEN: v,
-                EMBEDDED_ACTIVITY_CLOSE: v,
-                UPDATE_HANG_STATUS: v
+                RUNNING_GAMES_CHANGE: D,
+                LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: D,
+                SPOTIFY_PLAYER_STATE: D,
+                SPOTIFY_PLAYER_PLAY: D,
+                STREAMING_UPDATE: D,
+                USER_CONNECTIONS_UPDATE: D,
+                STREAM_START: D,
+                STREAM_STOP: D,
+                USER_SETTINGS_PROTO_UPDATE: D,
+                EMBEDDED_ACTIVITY_OPEN: D,
+                EMBEDDED_ACTIVITY_CLOSE: D,
+                UPDATE_HANG_STATUS: D
             })
         },
         20303: function(e, t, n) {
@@ -249644,7 +249646,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "03bb8a9c4032286a494bace48c03a626ccc36ac0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "6850dcbeecfe8b4ab46ba774e0087279ed8d432b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278564,7 +278566,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291610"
+                                build_number: "291630"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285913,7 +285915,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291610", "291610"), 10);
+                let a = parseInt((n = "291630", "291630"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313518,4 +313520,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.837b023464c6e771fbba.js.map
+//# sourceMappingURL=35705.a66d73502bae947c2348.js.map
