@@ -12,7 +12,7 @@
 </ul>
 <h1 id="h_01HX06JJ3TNC38Y3HBCEQHF8P6">What does it mean when my membership shows as past due?</h1>
 <p>When taking a look in your <strong>Subscriptions</strong> tab, you may notice that your <strong>Billing Information </strong>shows as <strong>past due</strong>. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23247418892567" width="487" height="411"> <img src="https://support.discord.com/hc/article_attachments/23247451165719" width="204" height="412"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23247418892567" width="515" height="435"> <img src="https://support.discord.com/hc/article_attachments/23342368618391" alt="mobile.png" width="201" height="435"></p>
 <p>When a membership is past due, it means that your membership renewal payment failed. This happens when a payment fails to go through on the renewal date. </p>
 <h2 id="h_01HX06JJ3T7FGTGYNQCXNW7P9W">What happens to my membership when it’s past due?</h2>
 <p>If your <a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic" target="_blank" rel="noopener noreferrer">Nitro, Nitro Basic, Nitro Classic</a>, or <a href="https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ" target="_blank" rel="noopener noreferrer">Server Boost</a> membership is past due, you will have <strong>28 to 30 days</strong> to pay for your membership depending on where you signed up:</p>
