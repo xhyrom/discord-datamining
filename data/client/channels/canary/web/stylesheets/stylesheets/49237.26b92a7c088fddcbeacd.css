@@ -27219,7 +27219,7 @@ html.disable-forced-colors * {
 
     .locale__533cd {
         padding: 10px;
-        font-size: 14px;
+        font-size: .875rem;
         opacity: .8;
         display: flex;
         position: relative
@@ -27258,7 +27258,7 @@ html.disable-forced-colors * {
     position: absolute;
     top: 30px;
     left: 0;
-    font-size: 13px;
+    font-size: .8125rem;
     box-shadow: 0 1px 3px hsl(calc(1 * 0%), 0%-hsl / 0.1);
     box-shadow: 0 1px 3px hsl(var(0, calc(0%*var(--saturation-factor, 1)), 0%-hsl)/.1);
     overflow: hidden;
@@ -28235,4 +28235,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.b97884b64b682c59cc8e.css.map*/
+/*# sourceMappingURL=49237.26b92a7c088fddcbeacd.css.map*/
