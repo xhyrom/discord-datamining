@@ -45784,9 +45784,20 @@ img.thumbnail__18ece {
     display: flex
 }
 
-.steps_d254c3 {
+.stepsTransitionGroup__770f6 {
+    position: relative;
     flex: 1;
     display: flex
+}
+
+.step__4b7ad {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex: 1
 }
 
 .hidden__7c65d {
@@ -136690,4 +136701,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.21fdea0ce9041e20d95f.css.map*/
+/*# sourceMappingURL=99387.f8a4dd98b7735310a8ea.css.map*/

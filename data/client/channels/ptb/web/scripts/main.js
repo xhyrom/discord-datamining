@@ -37374,7 +37374,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291463", ", Version Hash: ").concat("8b92b14ad2defa981fd6e0da68d81ead47a4777e")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291472", ", Version Hash: ").concat("42fe34ccc052996f3e5cf19f690897e59af4cd31")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55892,6 +55892,8 @@
                 MEMBER_LIST_CONTENT_POPOUT_USER_LISTENED: "{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} listened to",
                 MEMBER_LIST_CONTENT_POPOUT_USER_LISTENING: "{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} listening to",
                 MEMBER_LIST_CONTENT_POPOUT_BLOCKED_USER_WARNING: "Users you've blocked or muted are in this voice channel",
+                CONTENT_INVENTORY_REACTION_USER_PLAYING: "{countOthers, plural, =0 {{user1} is} =1 {{user1} and {user2} are} other {{user1} and {countOthers} others are}} playing **{gameName}**",
+                CONTENT_INVENTORY_REACTION_USER_PLAYED: "{countOthers, plural, =0 {{user1}} =1 {{user1} and {user2}} other {{user1} and {countOthers} others}} played **{gameName}**",
                 CONTENT_INVENTORY_MEMBERLIST_GROUP_TITLE: "Activity",
                 CONTENT_INVENTORY_MEMBERLIST_SETTINGS_HIDE: "Hide Activity Cards",
                 CONTENT_INVENTORY_MEMBERLIST_SETTINGS_ABOUT: "About Recent Activity",
@@ -88360,8 +88362,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291463", "291463"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291463")), t = 0), t
+                let t = parseInt((e = "291472", "291472"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291472")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115609,8 +115611,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291463",
-                    versionHash: "8b92b14ad2defa981fd6e0da68d81ead47a4777e"
+                    buildNumber: "291472",
+                    versionHash: "42fe34ccc052996f3e5cf19f690897e59af4cd31"
                 }
             }
             n.r(t), n.d(t, {
@@ -171085,8 +171087,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715183797869",
-                                    build_number: "291463"
+                                    built_at: "1715185402164",
+                                    build_number: "291472"
                                 }
                             },
                             retries: 1
@@ -249374,7 +249376,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8b92b14ad2defa981fd6e0da68d81ead47a4777e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "42fe34ccc052996f3e5cf19f690897e59af4cd31"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278294,7 +278296,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291463"
+                                build_number: "291472"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285643,7 +285645,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291463", "291463"), 10);
+                let a = parseInt((n = "291472", "291472"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313248,4 +313250,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.9a6028498bb05f33916b.js.map
+//# sourceMappingURL=35705.30cdfa7c4445db395865.js.map
