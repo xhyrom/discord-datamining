@@ -37374,7 +37374,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291563", ", Version Hash: ").concat("59cbf9a3ebc185d5df73604113aae78d97e68109")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291570", ", Version Hash: ").concat("1a61de5c230b33d18a7c432b44bb3ca5dc2ed2a2")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88365,8 +88365,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291563", "291563"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291563")), t = 0), t
+                let t = parseInt((e = "291570", "291570"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291570")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -102873,6 +102873,9 @@
                 trackConvertSuccessModalViewed: function() {
                     return E
                 },
+                trackMemberVerificationApplicationViewed: function() {
+                    return p
+                },
                 trackSettingsViewed: function() {
                     return c
                 }
@@ -103036,6 +103039,12 @@
                     has_join_request: i,
                     affinity: r,
                     index: s
+                })
+            }
+
+            function p(e) {
+                a.default.track(o.AnalyticEvents.MEMBER_VERIFICATION_APPLICATION_VIEWED, {
+                    guild_id: e
                 })
             }
         },
@@ -115595,8 +115604,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291563",
-                    versionHash: "59cbf9a3ebc185d5df73604113aae78d97e68109"
+                    buildNumber: "291570",
+                    versionHash: "1a61de5c230b33d18a7c432b44bb3ca5dc2ed2a2"
                 }
             }
             n.r(t), n.d(t, {
@@ -157759,6 +157768,40 @@
                 return t
             }
         },
+        545197: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                isIarSpamReorderExperimentEnabled: function() {
+                    return r
+                }
+            });
+            let i = (0, n("818083").createExperiment)({
+                kind: "user",
+                id: "2024-05_iar_spam_reorder",
+                label: "IAR Spam Reorder",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enabled",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            });
+
+            function r(e) {
+                let {
+                    enabled: t
+                } = i.getCurrentConfig({
+                    location: e
+                }, {
+                    autoTrackExposure: !0
+                });
+                return t
+            }
+        },
         375790: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -157784,40 +157827,40 @@
             "use strict";
             n.r(t), n.d(t, {
                 showReportModalForDiscoverableGuild: function() {
-                    return c
-                },
-                showReportModalForFirstDM: function() {
-                    return S
-                },
-                showReportModalForGuildDirectoryEntry: function() {
                     return E
                 },
-                showReportModalForGuildScheduledEvent: function() {
-                    return f
-                },
-                showReportModalForInappropriateConversationSafetyAlert: function() {
-                    return O
-                },
-                showReportModalForMessage: function() {
-                    return I
-                },
-                showReportModalForStageChannel: function() {
-                    return T
-                },
-                showReportModalForUser: function() {
-                    return A
-                },
-                showUnauthenticatedReportModalForMessage: function() {
-                    return N
-                },
-                showUnauthenticatedReportModalForUser: function() {
-                    return m
-                },
-                submitHamReportForFirstDM: function() {
+                showReportModalForFirstDM: function() {
                     return h
                 },
-                submitReportForInappropriateConversationSafetyAlert: function() {
+                showReportModalForGuildDirectoryEntry: function() {
+                    return I
+                },
+                showReportModalForGuildScheduledEvent: function() {
+                    return S
+                },
+                showReportModalForInappropriateConversationSafetyAlert: function() {
+                    return C
+                },
+                showReportModalForMessage: function() {
+                    return T
+                },
+                showReportModalForStageChannel: function() {
+                    return f
+                },
+                showReportModalForUser: function() {
+                    return m
+                },
+                showUnauthenticatedReportModalForMessage: function() {
                     return p
+                },
+                showUnauthenticatedReportModalForUser: function() {
+                    return N
+                },
+                submitHamReportForFirstDM: function() {
+                    return A
+                },
+                submitReportForInappropriateConversationSafetyAlert: function() {
+                    return O
                 }
             });
             var i = n("367907"),
@@ -157825,81 +157868,84 @@
                 a = n("23750"),
                 s = n("598077"),
                 o = n("91156"),
-                l = n("82554"),
-                u = n("185625"),
-                d = n("443599"),
-                _ = n("981631");
-
-            function c(e, t) {
-                C(l.ReportNames.GUILD_DISCOVERY, {
-                    guild_id: e.id
-                }), (0, d.showReportModal)({
-                    name: l.ReportNames.GUILD_DISCOVERY,
-                    record: e
-                }, {}, t)
-            }
+                l = n("545197"),
+                u = n("82554"),
+                d = n("185625"),
+                _ = n("443599"),
+                c = n("981631");
 
             function E(e, t) {
-                C(l.ReportNames.GUILD_DIRECTORY_ENTRY, {
-                    channel_id: e.channelId,
-                    guild_id: e.guildId
-                }), (0, d.showReportModal)({
-                    name: l.ReportNames.GUILD_DIRECTORY_ENTRY,
+                R(u.ReportNames.GUILD_DISCOVERY, {
+                    guild_id: e.id
+                }), (0, _.showReportModal)({
+                    name: u.ReportNames.GUILD_DISCOVERY,
                     record: e
                 }, {}, t)
             }
 
-            function I(e, t, n) {
-                C(l.ReportNames.MESSAGE, {
+            function I(e, t) {
+                R(u.ReportNames.GUILD_DIRECTORY_ENTRY, {
+                    channel_id: e.channelId,
+                    guild_id: e.guildId
+                }), (0, _.showReportModal)({
+                    name: u.ReportNames.GUILD_DIRECTORY_ENTRY,
+                    record: e
+                }, {}, t)
+            }
+
+            function T(e, t, n) {
+                let i;
+                R(u.ReportNames.MESSAGE, {
                     message_id: e.id,
                     channel_id: e.channel_id
                 });
-                let i = (0, o.isIarMessageDislikeEnabled)(t);
-                (0, d.showReportModal)({
-                    name: l.ReportNames.MESSAGE,
+                let r = (0, o.isIarMessageDislikeEnabled)(t),
+                    a = (0, l.isIarSpamReorderExperimentEnabled)(t);
+                a && r ? i = "6a_spam_reorder_with_dislikes_experiment" : a ? i = "6b_spam_reorder_experiment" : r && (i = "5_dislike_experiment"), (0, _.showReportModal)({
+                    name: u.ReportNames.MESSAGE,
                     record: e
                 }, {
-                    variant: i ? "5_dislike_experiment" : void 0
+                    variant: i
                 }, n)
             }
 
-            function T(e, t) {
+            function f(e, t) {
                 let n = r.default.getStageInstanceByChannel(e.id);
-                null != n && (C(l.ReportNames.STAGE_CHANNEL, {
+                null != n && (R(u.ReportNames.STAGE_CHANNEL, {
                     stage_instance_id: n.id,
                     channel_id: n.channel_id,
                     guild_id: n.guild_id
-                }), (0, d.showReportModal)({
-                    name: l.ReportNames.STAGE_CHANNEL,
+                }), (0, _.showReportModal)({
+                    name: u.ReportNames.STAGE_CHANNEL,
                     record: n
                 }, {}, t))
             }
 
-            function f(e, t) {
+            function S(e, t) {
                 var n;
-                C(l.ReportNames.GUILD_SCHEDULED_EVENT, {
+                R(u.ReportNames.GUILD_SCHEDULED_EVENT, {
                     guild_scheduled_event_id: e.id,
                     guild_id: e.guild_id,
                     channel_id: null !== (n = e.channel_id) && void 0 !== n ? n : void 0
-                }), (0, d.showReportModal)({
-                    name: l.ReportNames.GUILD_SCHEDULED_EVENT,
+                }), (0, _.showReportModal)({
+                    name: u.ReportNames.GUILD_SCHEDULED_EVENT,
                     record: e
                 }, {}, t)
             }
 
-            function S(e, t) {
-                C(l.ReportNames.FIRST_DM, {
+            function h(e, t) {
+                R(u.ReportNames.FIRST_DM, {
                     message_id: e.id,
                     channel_id: e.channel_id
-                }), (0, d.showReportModal)({
-                    name: l.ReportNames.FIRST_DM,
+                }), (0, _.showReportModal)({
+                    name: u.ReportNames.FIRST_DM,
                     record: e
                 }, {}, t, void 0, !1)
             }
-            async function h(e, t) {
+            async function A(e, t) {
                 try {
-                    await (0, u.submitHeadlessReport)({
-                        name: l.ReportNames.FIRST_DM,
+                    await (0, d.submitHeadlessReport)({
+                        name: u.ReportNames.FIRST_DM,
                         record: e
                     }, {
                         variant: "_first_dm_ham_v1"
@@ -157907,40 +157953,40 @@
                 } catch {}
             }
 
-            function A(e, t, n) {
-                C(l.ReportNames.USER, {
+            function m(e, t, n) {
+                R(u.ReportNames.USER, {
                     reported_user_id: e.id
-                }), (0, d.showReportModal)({
-                    name: l.ReportNames.USER,
+                }), (0, _.showReportModal)({
+                    name: u.ReportNames.USER,
                     record: e,
                     contextualGuildId: t
                 }, {}, n, void 0, !1)
             }
 
-            function m(e, t) {
+            function N(e, t) {
                 let n = new s.default({});
-                C(l.UnauthenticatedReportNames.USER, {
+                R(u.UnauthenticatedReportNames.USER, {
                     reported_user_id: n.id
-                }), (0, d.showReportModal)({
-                    name: l.UnauthenticatedReportNames.USER,
+                }), (0, _.showReportModal)({
+                    name: u.UnauthenticatedReportNames.USER,
                     record: n
                 }, {}, t, void 0, !1, !1, e)
             }
 
-            function N(e, t) {
+            function p(e, t) {
                 let n = new a.default({});
-                C(l.UnauthenticatedReportNames.MESSAGE, {
+                R(u.UnauthenticatedReportNames.MESSAGE, {
                     message_id: void 0,
                     channel_id: void 0
-                }), (0, d.showReportModal)({
-                    name: l.UnauthenticatedReportNames.MESSAGE,
+                }), (0, _.showReportModal)({
+                    name: u.UnauthenticatedReportNames.MESSAGE,
                     record: n
                 }, {}, t, void 0, !1, !1, e)
             }
-            async function p(e, t, n) {
+            async function O(e, t, n) {
                 try {
-                    await (0, u.submitHeadlessReport)({
-                        name: l.ReportNames.MESSAGE,
+                    await (0, d.submitHeadlessReport)({
+                        name: u.ReportNames.MESSAGE,
                         record: e
                     }, {
                         variant: "safety_alerts_headless_v1"
@@ -157950,20 +157996,20 @@
                 }
             }
 
-            function O(e, t) {
-                C(l.ReportNames.MESSAGE, {
+            function C(e, t) {
+                R(u.ReportNames.MESSAGE, {
                     message_id: e.id,
                     channel_id: e.channel_id
-                }), (0, d.showReportModal)({
-                    name: l.ReportNames.MESSAGE,
+                }), (0, _.showReportModal)({
+                    name: u.ReportNames.MESSAGE,
                     record: e
                 }, {
                     variant: "safety_alerts_v1"
                 }, t)
             }
 
-            function C(e, t) {
-                i.default.trackWithMetadata(_.AnalyticEvents.IAR_MODAL_OPEN, {
+            function R(e, t) {
+                i.default.trackWithMetadata(c.AnalyticEvents.IAR_MODAL_OPEN, {
                     report_type: e,
                     ...t
                 })
@@ -171071,8 +171117,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715194939625",
-                                    build_number: "291563"
+                                    built_at: "1715195390227",
+                                    build_number: "291570"
                                 }
                             },
                             retries: 1
@@ -249360,7 +249406,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "59cbf9a3ebc185d5df73604113aae78d97e68109"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "1a61de5c230b33d18a7c432b44bb3ca5dc2ed2a2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278280,7 +278326,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291563"
+                                build_number: "291570"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285629,7 +285675,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291563", "291563"), 10);
+                let a = parseInt((n = "291570", "291570"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313234,4 +313280,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.b2f7b808934709dffc1e.js.map
+//# sourceMappingURL=35705.c9ea8f36bac3cca5d1e5.js.map
