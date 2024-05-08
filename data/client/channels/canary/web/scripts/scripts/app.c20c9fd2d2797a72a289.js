@@ -6325,6 +6325,8 @@
                 popoutContentHeader: "popoutContentHeader_daecb8",
                 popoutStackedAvatar: "popoutStackedAvatar__339c9",
                 popoutStreamImg: "popoutStreamImg_a5f0ae",
+                popoutTextPrimary: "popoutTextPrimary_d83570",
+                popoutTextSecondary: "popoutTextSecondary__579ec",
                 popoutThumbnailContainer: "popoutThumbnailContainer_b66fac",
                 popoutUserContainer: "popoutUserContainer__5ed24",
                 popoutUsername: "popoutUsername__8e4a7",
