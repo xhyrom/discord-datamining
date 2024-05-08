@@ -37394,7 +37394,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291601", ", Version Hash: ").concat("0a392b606c2cb1f3049e36d20ee8c5ffed950fe2")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291605", ", Version Hash: ").concat("16e7500edc60aaf684ef42571d00704110356fa2")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88386,8 +88386,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291601", "291601"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291601")), t = 0), t
+                let t = parseInt((e = "291605", "291605"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291605")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115648,8 +115648,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291601",
-                    versionHash: "0a392b606c2cb1f3049e36d20ee8c5ffed950fe2"
+                    buildNumber: "291605",
+                    versionHash: "16e7500edc60aaf684ef42571d00704110356fa2"
                 }
             }
             n.r(t), n.d(t, {
@@ -171350,8 +171350,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715199608357",
-                                    build_number: "291601"
+                                    built_at: "1715200041271",
+                                    build_number: "291605"
                                 }
                             },
                             retries: 1
@@ -188316,28 +188316,33 @@
             n.r(t);
             var i = n("735250");
             n("470079");
-            var r = n("293335");
+            var r = n("293335"),
+                a = n("808654");
             t.default = e => {
                 let {
                     profileEffectConfig: t,
                     onReady: n
                 } = e, {
-                    pendingRef: a,
-                    setPending: s
+                    pendingRef: s,
+                    setPending: o
                 } = (0, r.default)(t.effects, n);
                 return (0, i.jsx)("div", {
-                    children: t.effects.map(e => (0, i.jsx)("img", {
-                        src: e.src,
-                        alt: "Preload Profile Effect Asset",
-                        "aria-hidden": !0,
-                        style: {
-                            opacity: 0,
-                            position: "absolute"
-                        },
-                        onLoad: () => {
-                            s(a.current - 1), a.current = a.current - 1
-                        }
-                    }, e.src))
+                    className: a.profileEffects,
+                    children: (0, i.jsx)("div", {
+                        className: a.inner,
+                        children: t.effects.map(e => (0, i.jsx)("img", {
+                            src: e.src,
+                            alt: "Preload Profile Effect Asset",
+                            "aria-hidden": !0,
+                            style: {
+                                opacity: 0,
+                                position: "absolute"
+                            },
+                            onLoad: () => {
+                                o(s.current - 1), s.current = s.current - 1
+                            }
+                        }, e.src))
+                    })
                 })
             }
         },
@@ -215183,12 +215188,12 @@
                         messageId: D,
                         roleId: M,
                         shouldTrackViewOnMount: null == V || null != V.fullProfileLoadedTimestamp,
-                        children: (0, i.jsx)(s.Dialog, {
+                        children: (0, i.jsxs)(s.Dialog, {
                             ref: x,
                             "aria-label": t.username,
                             onClick: L,
                             onContextMenu: L,
-                            children: (0, i.jsxs)(f.default, {
+                            children: [(0, i.jsxs)(f.default, {
                                 user: t,
                                 displayProfile: F,
                                 profileType: C.UserProfileTypes.BITE_SIZE,
@@ -215235,11 +215240,11 @@
                                     guildId: n,
                                     channelId: v,
                                     onClose: y
-                                }), (null == F ? void 0 : F.profileEffectId) != null && (0, i.jsx)(d.default, {
-                                    profileEffectId: null == F ? void 0 : F.profileEffectId,
-                                    isHovering: H
                                 })]
-                            })
+                            }), (null == F ? void 0 : F.profileEffectId) != null && (0, i.jsx)(d.default, {
+                                profileEffectId: null == F ? void 0 : F.profileEffectId,
+                                isHovering: H
+                            })]
                         })
                     })
                 })
@@ -249639,7 +249644,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0a392b606c2cb1f3049e36d20ee8c5ffed950fe2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "16e7500edc60aaf684ef42571d00704110356fa2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278559,7 +278564,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291601"
+                                build_number: "291605"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285908,7 +285913,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291601", "291601"), 10);
+                let a = parseInt((n = "291605", "291605"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313513,4 +313518,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.f3465ffcdf47ead0ce04.js.map
+//# sourceMappingURL=35705.42c932de3fc4ce936a0f.js.map
