@@ -37394,7 +37394,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291644", ", Version Hash: ").concat("4ead6b509952e800b085241763c8ccc0b8ca4a5e")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291660", ", Version Hash: ").concat("a32c80a6137160f6b96c0da3b8e35370f44e44d2")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88386,8 +88386,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291644", "291644"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291644")), t = 0), t
+                let t = parseInt((e = "291660", "291660"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291660")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103031,10 +103031,12 @@
 
             function A(e) {
                 let {
-                    location: t
+                    guildId: t,
+                    location: n
                 } = e;
                 a.default.track(o.AnalyticEvents.CLAN_ADMIN_INVITE_VIEWED, {
-                    location: t
+                    guild_id: t,
+                    location: n
                 })
             }
 
@@ -115648,8 +115650,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291644",
-                    versionHash: "4ead6b509952e800b085241763c8ccc0b8ca4a5e"
+                    buildNumber: "291660",
+                    versionHash: "a32c80a6137160f6b96c0da3b8e35370f44e44d2"
                 }
             }
             n.r(t), n.d(t, {
@@ -171348,8 +171350,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715203891468",
-                                    build_number: "291644"
+                                    built_at: "1715205844042",
+                                    build_number: "291660"
                                 }
                             },
                             retries: 1
@@ -249648,7 +249650,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "4ead6b509952e800b085241763c8ccc0b8ca4a5e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a32c80a6137160f6b96c0da3b8e35370f44e44d2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278568,7 +278570,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291644"
+                                build_number: "291660"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -282390,48 +282392,52 @@
             let i;
             n.r(t), n.d(t, {
                 createSound: function() {
-                    return u
+                    return _
                 },
                 createSoundForPack: function() {
-                    return l
+                    return d
                 },
                 playSound: function() {
-                    return d
+                    return c
                 }
             });
-            var r = n("292619"),
-                a = n("474873"),
-                s = n("135906"),
-                o = n("246946");
+            var r = n("259443"),
+                a = n("292619"),
+                s = n("474873"),
+                o = n("135906"),
+                l = n("246946");
             {
-                let e = (0, r.isEligibleForWebAudioAPI)({
+                let e = (0, a.isEligibleForWebAudioAPI)({
                         location: "SoundUtils"
                     }),
                     t = n("902653");
                 i = e ? t.WebAudioAPISound : t.WebAudioSound
             }
+            let u = new r.Logger("SoundUtils");
 
-            function l(e, t) {
+            function d(e, t) {
                 var n;
                 let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1;
-                return u(null !== (n = (0, s.default)(t)[e]) && void 0 !== n ? n : e, e, i)
+                return _(null !== (n = (0, o.default)(t)[e]) && void 0 !== n ? n : e, e, i)
             }
 
-            function u(e, t) {
+            function _(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1;
                 return new i(e, t, n)
             }
 
-            function d(e) {
+            function c(e) {
                 var t;
                 let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
                     i = arguments.length > 2 ? arguments[2] : void 0,
                     r = arguments.length > 3 ? arguments[3] : void 0;
-                if (o.default.disableSounds) return;
-                let l = u(null !== (t = (0, s.default)(null != r ? r : a.default.getSoundpack())[e]) && void 0 !== t ? t : e, e, n);
-                return null != i ? l.playWithListener().then(e => {
+                if (l.default.disableSounds) return;
+                let a = (0, o.default)(null != r ? r : s.default.getSoundpack());
+                null == a && u.log("Unable to find sound for pack name: ".concat(r));
+                let d = _(null !== (t = a[e]) && void 0 !== t ? t : e, e, n);
+                return null != i ? d.playWithListener().then(e => {
                     e && i()
-                }) : l.play(), l
+                }) : d.play(), d
             }
         },
         601993: function(e, t, n) {
@@ -285917,7 +285923,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291644", "291644"), 10);
+                let a = parseInt((n = "291660", "291660"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313522,4 +313528,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.d4f7a2a7985b372ac394.js.map
+//# sourceMappingURL=35705.6ee753c8a4a0ebd59fa0.js.map
