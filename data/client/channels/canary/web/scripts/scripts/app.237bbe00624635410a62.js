@@ -5248,7 +5248,8 @@
                 pickerGrid: "pickerGrid__1da1d",
                 tagContainer: "tagContainer_eb01b9",
                 tagInput: "tagInput__82542",
-                tagInputWrapper: "tagInputWrapper__7b1bc"
+                tagInputWrapper: "tagInputWrapper__7b1bc",
+                tagValidationText: "tagValidationText_ee7d11"
             }
         },
         599666: function(e) {
