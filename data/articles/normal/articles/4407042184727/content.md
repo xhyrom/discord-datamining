@@ -35,23 +35,23 @@
 <h2 id="h_01FDXAQ1QS6H3APPXHD99G6R7P">On the Desktop/Web Apps</h2>
 <p><strong><span class="wysiwyg-font-size-large">If you are eligible</span></strong></p>
 <p>If you do not have a current subscription will see the following embed:</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4407042916887/eligible_subscription.png" alt="eligible_subscription.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4407042916887" alt="eligible_subscription.png"></p>
 <p>Once you accept, the first screen on the modal you see will ask you to continue:</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4407042401047/accept_modal.png" alt="accept_modal.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4407042401047" alt="accept_modal.png"></p>
 <p>After clicking "Continue" you will follow the subscription process!</p>
 <p><strong><span class="wysiwyg-font-size-large">If you already have an active subscription</span></strong></p>
 <p><span class="wysiwyg-font-size-large">If you have a current subscription (of any type: Nitro Classic or Premium) you will see the following embed:</span></p>
-<p class="wysiwyg-text-align-center"><span class="wysiwyg-font-size-large"><img src="https://support.discord.com/hc/article_attachments/4407042619799/not_eligible.png" alt="not_eligible.png"></span></p>
+<p class="wysiwyg-text-align-center"><span class="wysiwyg-font-size-large"><img src="https://support.discord.com/hc/article_attachments/4407042619799" alt="not_eligible.png"></span></p>
 <p><span class="wysiwyg-font-size-large">If you <strong>previously subscribed to Nitro but no longer have a subscription</strong> you will be able to continue to subscribe but the sub<strong> will not</strong> qualify in order for the affiliate to receive part of the proceeds. You will see the following:</span></p>
-<p class="wysiwyg-text-align-center"><span class="wysiwyg-font-size-large"><img src="https://support.discord.com/hc/article_attachments/4407048547223/not_eligible_modal.png" alt="not_eligible_modal.png"></span></p>
+<p class="wysiwyg-text-align-center"><span class="wysiwyg-font-size-large"><img src="https://support.discord.com/hc/article_attachments/4407048547223" alt="not_eligible_modal.png"></span></p>
 <p class="wysiwyg-text-align-left"> </p>
 <p><strong><span class="wysiwyg-font-size-large">If the link is expired or invalid:</span></strong></p>
 <p>If the <strong>referral code is invalid or the experiment is over</strong> (it ends on September 30th, 2021 at 11:59 PM PST) You will see the following embed:</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4407042724631/event_over.png" alt="event_over.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4407042724631" alt="event_over.png"></p>
 <h2 id="h_01FDXAQ8TAHJ8PM2SH936RRA7Z">On iOS</h2>
 <p>The purchase flow is <strong>NOT supported</strong> on the Discord <strong>iOS app or in-app browser</strong>. ("in-app browser" here is referring to a browser window that is opened directly through a non-browser app by clicking a link.) </p>
 <p>You can also directly paste the affiliate link into a Mobile Web browser, such as Safari if you do not have access to a PC or Laptop. You will then be prompted to log in to Discord through there in order to subscribe.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4407042791191/ios_link.png" alt="ios_link.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4407042791191" alt="ios_link.png"></p>
 <h2 id="h_01FDXAQFT7N65MC4NF7QZXCCJ7">On Android</h2>
 <p>On any Android app (whether it's the Discord app or an external app), the affiliate link will show. However, tapping on the link will open an in-app browser, and you will need to log in through that browser in order to subscribe.</p>
 <h3>Note: Subscribing with an affiliate link through Google Play is not supported at this time.</h3>

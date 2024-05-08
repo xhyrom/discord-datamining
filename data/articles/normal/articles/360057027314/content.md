@@ -1,4 +1,4 @@
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360099255273/clubs.png" alt="clubs.png"><br><strong>Greetings summoners! Welcome to Discord. </strong></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360099255273" alt="clubs.png"><br><strong>Greetings summoners! Welcome to Discord. </strong></p>
 <p><span class="wysiwyg-font-size-large"><strong>What does this article cover? </strong></span></p>
 <ul>
     <li><span class="wysiwyg-font-size-large"><strong><a href="#h_01EQ3DZJHBTZZBA5MC5ZPB321P" target="_self">New to Discord?</a> </strong></span></li>
@@ -23,24 +23,24 @@
 </ul>
 <h1 id="h_01EQ3DZSZ6B1YJDRSEC2T22GZ3">Channel Following</h1>
 <p>You can stay up to date on all the League of Legends news directly in your club server by following the <strong>Announcement Channel</strong> in the League of Legends server, which are special channels labeled with a Megaphone icon.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360097222834/announcement.png" alt="announcement.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360097222834" alt="announcement.png"></p>
 <p class="wysiwyg-text-align-left">You'll be able to use the new <strong>Follow</strong> option to have any messages from that channel posted directly into your server as they're posted! </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360099528533/Follow.png" alt="Follow.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360099528533" alt="Follow.png"></p>
 <p class="wysiwyg-text-align-left">Let's say your group of friends wants to know when the new League update comes out. First, find the announcement channel in the server you want to follow--in this case, the League official server has an announcement channel that looks just like this!</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360099528713/announcement__2_.png" alt="announcement__2_.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360099528713" alt="announcement__2_.png"></p>
 <p class="wysiwyg-text-align-left">Make sure that you have the Manage Webhooks permission in your server, as you'll need it to allow followed posts to be hooked to your channel! Then, click the Follow button!</p>
 <h1 id="h_01EQ3E07QWRHBHG3EQVC7Q5AZA">Adding it to your server</h1>
 <p>When you click the Follow button in an eligible channel, you'll be greeted with a whole host of options for where you want that Announcement channel's posts to appear in your own server!</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360097222994/follow_channels_2.png" alt="follow_channels_2.png" width="616" height="685"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360097222994" alt="follow_channels_2.png" width="616" height="685"></p>
 <p>From here, you can select which server and channel you want your new announcements bot to post in! Keep in mind that only servers and channels you have <strong>Manage Webhook permissions</strong> in will be shown. </p>
 <p>Once you're finished configuring these options, press Follow and you're ready to start getting announcements delivered to your server by your very own delivery bot! As the server you followed continues to post announcements, you'll receive posts from that server in the channel you picked. </p>
 <p>The posts will come from a bot named after the server in question. All the links and images in the post will be delivered as you'd expect, but our delivery bots will remove any and all role mentions in the post, including @everyone and @here.</p>
 <h3>Keep in mind, server admins have the ability to choose which announcement posts will be published and sent to your server through Channel Following. If you're missing an announcement post, it's likely the admins have chosen to not publish that post.</h3>
 <h1 id="h_01EQ3E0J9BJVGY0PQHXCAJKPBK">How to remove followed posts</h1>
 <p>If you've got Manage Webhooks permissions, you can follow and unfollow servers at any time! If you want to stop receiving posts from a server that you followed, it's easy! Any servers you follow are added to your server as a Webhook. To unfollow a server, look for the server's listing in Server Settings &gt; Integrations &gt; Channels Followed:</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360097223094/remove.png" alt="remove.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360097223094" alt="remove.png"></p>
 <p>Delete the bot that corresponds with that server's name to unfollow it! The bot will be removed from your server and you'll stop receiving posts from the server right away. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360099528993/unfollow_2.png" alt="unfollow_2.png" width="702" height="359"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360099528993" alt="unfollow_2.png" width="702" height="359"></p>
 <h3><span style="font-weight: 400;">Note: You can use the Webhooks settings to modify your new follow bot too--you can change the channel it posts in, the bot's name, and the avatar of the bot, all using the Edit button! </span></h3>
 <p> </p>
 <h2 id="h_01EQ3E174HAWMK0MKCHWG8WZ0H"><strong>Official Riot game Discord Servers</strong></h2>

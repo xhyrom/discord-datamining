@@ -1,4 +1,4 @@
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360025364771/youtube_header1.jpg" alt="youtube_header1.jpg"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360025364771" alt="youtube_header1.jpg"></p>
 <p>If you’re a YouTube partner, you can integrate your YouTube channel into your Discord server so you can hang out with all of your members. </p>
 <p>Or if you’re supporting your favorite YouTube creator through a membership, you can join their Discord server and chat. </p>
 <p><span class="wysiwyg-font-size-large"><strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">What this article covers:</span></strong></span></p>

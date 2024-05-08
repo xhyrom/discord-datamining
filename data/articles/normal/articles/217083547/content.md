@@ -3,15 +3,15 @@
 <p>Discord's got a couple of other super handy Keybind possibilities that you can use to become a hotkey extraordinaire.</p>
 <p>Here's how to check them out:</p>
 <p><strong>1. </strong><span class="wysiwyg-underline">Open your User Settings tab</span></p>
-<p><img src="https://support.discord.com/hc/en-us/article_attachments/211028108/user_settings.png" alt=""></p>
+<p><img src="https://support.discord.com/hc/article_attachments/211028108" alt=""></p>
 <p> </p>
 <p> </p>
 <p><strong>2. </strong><span class="wysiwyg-underline">Click the Keybinds tab</span></p>
-<p><img src="https://support.discord.com/hc/article_attachments/360058107612/Capture45.jpg" alt="Capture45.jpg"></p>
+<p><img src="https://support.discord.com/hc/article_attachments/360058107612" alt="Capture45.jpg"></p>
 <p>And now we're in business. We've got a few points to touch on as far as setting everything up goes.</p>
 <p><span class="wysiwyg-underline"><strong>Getting started</strong></span></p>
 <p>While you can add as many separate Keybinds as you want, you have start add them individually. Start by pressing the "Add a Keybind" button:</p>
-<p><img src="https://support.discord.com/hc/article_attachments/360058271371/Capture46.jpg" alt="Capture46.jpg"></p>
+<p><img src="https://support.discord.com/hc/article_attachments/360058271371" alt="Capture46.jpg"></p>
 <p> </p>
 <p>Note: When you're editing keybinds, keybinds are disabled. Leave this page to turn them on.</p>
 <p> </p>
@@ -22,7 +22,7 @@
     <tbody>
         <tr>
             <td style="width: 225px;">
-                <img src="https://support.discord.com/hc/en-us/article_attachments/211028148/unassigned.png" alt=""> 
+                <img src="https://support.discord.com/hc/article_attachments/211028148" alt=""> 
             </td>
             <td>
                 <span class="wysiwyg-underline"><strong>Unassigned:</strong></span> This doesn't have any function! Make sure you choose a different option in the list.
@@ -30,7 +30,7 @@
         </tr>
         <tr>
             <td>
-                <img src="https://support.discord.com/hc/en-us/article_attachments/211165787/push_to_talk.png" alt=""> 
+                <img src="https://support.discord.com/hc/article_attachments/211165787" alt=""> 
             </td>
             <td>
                 <span class="wysiwyg-underline"><strong>Push to Talk:</strong></span> Hold this Keybind to temporarily enable your mic while in Push to Talk mode.
@@ -38,7 +38,7 @@
         </tr>
         <tr>
             <td>
-                <img src="https://support.discord.com/hc/en-us/article_attachments/211028168/push_to_mute.png" alt=""> 
+                <img src="https://support.discord.com/hc/article_attachments/211028168" alt=""> 
             </td>
             <td>
                 <span class="wysiwyg-underline"><strong>Push To Mute</strong><strong>:</strong></span> Hold this Keybind to disable your mic activity while in Voice Activity mode.
@@ -46,38 +46,38 @@
         </tr>
         <tr>
             <td>
-                <img src="https://support.discord.com/hc/en-us/article_attachments/211165827/toggle_mute.png" alt=""> 
+                <img src="https://support.discord.com/hc/article_attachments/211165827" alt=""> 
             </td>
             <td>
                 <strong><span class="wysiwyg-underline">Toggle Mute:</span></strong> Press this Keybind to toggle your mic's transmission on or off.
             </td>
         </tr>
         <tr>
-            <td><img src="https://support.discord.com/hc/en-us/article_attachments/211028188/toggle_deafen.png" alt=""></td>
+            <td><img src="https://support.discord.com/hc/article_attachments/211028188" alt=""></td>
             <td>
                 <span class="wysiwyg-underline"><strong>Toggle Deafen:</strong></span> Toggle your output's playback on or off. Also disables your mic.
             </td>
         </tr>
         <tr>
-            <td><img src="https://support.discord.com/hc/en-us/article_attachments/211165847/toggle_VAD.png" alt=""></td>
+            <td><img src="https://support.discord.com/hc/article_attachments/211165847" alt=""></td>
             <td>
                 <strong><span class="wysiwyg-underline">Toggle VAD:</span></strong> Toggle to switch between Voice activity and Push to Talk modes.
             </td>
         </tr>
         <tr>
-            <td><img src="https://support.discord.com/hc/en-us/article_attachments/211028228/toggle_streamer_mode.png" alt=""></td>
+            <td><img src="https://support.discord.com/hc/article_attachments/211028228" alt=""></td>
             <td>
                 <strong><span class="wysiwyg-underline">Toggle Streamer Mode:</span></strong> Turns on and off streamer mode. 
             </td>
         </tr>
         <tr>
-            <td><img src="https://support.discord.com/hc/en-us/article_attachments/211028268/toggle_overlay.png" alt=""></td>
+            <td><img src="https://support.discord.com/hc/article_attachments/211028268" alt=""></td>
             <td>
                 <p><strong><span class="wysiwyg-underline"><strong><span class="wysiwyg-underline">Toggle Overlay:</span></strong></span></strong> Toggle the overlay on or off to display in game.</p>
             </td>
         </tr>
         <tr>
-            <td><img src="https://support.discord.com/hc/en-us/article_attachments/211028248/toggle_overlay_lock.png" alt=""></td>
+            <td><img src="https://support.discord.com/hc/article_attachments/211028248" alt=""></td>
             <td>
                 <p><strong><span class="wysiwyg-underline"><strong><span class="wysiwyg-underline">Toggle Overlay Lock:</span></strong></span></strong> Toggle the lock of the overlay in game.</p>
             </td>
@@ -85,9 +85,9 @@
     </tbody>
 </table>
 <p>Once you've chose which selection of separate Keybinds you want to use, go ahead and click the blank box next to it:</p>
-<p><img src="https://support.discord.com/hc/en-us/article_attachments/205316167/SelectPTTblank.png" alt=""></p>
+<p><img src="https://support.discord.com/hc/article_attachments/205316167" alt=""></p>
 <p>Then enter your desired key press:</p>
-<p><img src="https://support.discord.com/hc/en-us/article_attachments/205292648/SelectPTTannoy.png" alt=""></p>
+<p><img src="https://support.discord.com/hc/article_attachments/205292648" alt=""></p>
 <p><em>Note: I wouldn't recommend using this Keypress combination. It'd probably be pretty difficult to use.</em></p>
 <p> </p>
 <p>And you're all set! Wash, rinse, and repeat for all keybinds you want to utilize.</p>

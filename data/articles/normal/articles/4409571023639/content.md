@@ -17,7 +17,7 @@
 <p>Custom role icons are a <a href="https://support.discord.com/hc/en-us/articles/360028038352" target="_blank" rel="noopener"><strong>Level 2 Server Boosting</strong> </a>perk. Servers at this level can set a custom icon for each and every role within their server!</p>
 <p>Custom role icons <span style="font-weight: 400;">are a fun way to customize and differentiate each role in your server</span>. They can be used to distinguish role rankings, identify personal interests, or tie into your overall server theme for a more comprehensive aesthetic!</p>
 <p>Role icons will display in the members list next to the role name, and next to each user's name in chat. You can see all roles and icons that a user has in their user profile from within the server as well.</p>
-<p><img src="https://support.discord.com/hc/article_attachments/4409580020759/Screen_Shot_2021-09-27_at_6.29.17_PM.png" alt="Screen_Shot_2021-09-27_at_6.29.17_PM.png"><img src="https://support.discord.com/hc/article_attachments/4409571914903/Screen_Shot_2021-09-27_at_6.26.14_PM.png" alt="Screen_Shot_2021-09-27_at_6.26.14_PM.png" width="803" height="378"></p>
+<p><img src="https://support.discord.com/hc/article_attachments/4409580020759" alt="Screen_Shot_2021-09-27_at_6.29.17_PM.png"><img src="https://support.discord.com/hc/article_attachments/4409571914903" alt="Screen_Shot_2021-09-27_at_6.26.14_PM.png" width="803" height="378"></p>
 <h1 id="h_01FGN0DHM4C3GQ0SRVJNYGGHH4">How do I set custom role icons?</h1>
 <p>First off, you'll need to make sure you have the necessary permission within your server! Only server members who have the “<strong>Manage Roles</strong>” permission will be able to set, change, and delete icons.</p>
 <p>If you have the “<strong>Manage Roles</strong>” permission within the server, you can then follow these steps below!</p>
@@ -36,10 +36,10 @@
 <h3>
     <strong>Note:</strong> The requirements for the images are 64x64 pixels and the max size is 256kb.
 </h3>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4409579576599/custom_role_icon_flow.gif" alt="custom_role_icon_flow.gif"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4409579576599" alt="custom_role_icon_flow.gif"></p>
 <h2 id="h_01FGN0DY8RDXFFX6NJHVY0REC1">How do I remove/change a Custom role icon?</h2>
 <p>To delete an icon, just select the “<strong>Remove icon</strong>” option in the same panel.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4409579756823/Screen_Shot_2021-09-27_at_6.10.03_PM.png" alt="Screen_Shot_2021-09-27_at_6.10.03_PM.png" width="562" height="250"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4409579756823" alt="Screen_Shot_2021-09-27_at_6.10.03_PM.png" width="562" height="250"></p>
 <p>And if you change your mind and want to choose a new image, you can select the “<strong>Choose Image</strong>” option.</p>
 <h2 id="h_01FGN0E5W9CD9WGVVZQETPS10N">Which Custom Role icon is Shown if I have Multiple Roles? </h2>
 <p><span style="font-weight: 400;">While we would love to show all the different custom role icons at once - Discord will only show one icon in the members list and in chat. <strong>However</strong> - you can still see all roles with icons for any user in the server by opening their user profile. </span></p>

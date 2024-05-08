@@ -1,7 +1,7 @@
 <p>Do you use multiple Discord clients and find yourself having to collapse and expand categories every time in each server you're in? Well, with our new <strong>Collapse Syncing</strong> feature, that will be a thing of the past! Now when you collapse or expand a category within a server, this will be reflected across all Discord clients.</p>
 <h3>Note: This feature is only available on desktop at this time. Stay tuned for more details on syncing across mobile clients as well!</h3>
 <h2>How Does It Work</h2>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500008970641/categorycollapse.gif" alt="categorycollapse.gif"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500008970641" alt="categorycollapse.gif"></p>
 <p>The first client that connects to Discord will have all of the currently collapsed categories saved to the server. After you log into another client, those saved settings will be downloaded and used - syncing them and making sure you don't have to redo the work again! </p>
 <h1 id="h_01F02KGV1F91VW1TB3V5EBJ2HR">Need Further Help?</h1>
 <p>For more information regarding channels and categories, you can check out our <a href="https://support.discord.com/hc/en-us/articles/115001580171" target="_self">Channel Categories</a> support article.</p>
