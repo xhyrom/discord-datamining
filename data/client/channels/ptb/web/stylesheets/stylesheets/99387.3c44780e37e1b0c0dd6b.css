@@ -18326,6 +18326,10 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     position: relative
 }
 
+.roleRemoveButtonCanRemove__3d3fa {
+    cursor: pointer
+}
+
 .roleDot__4756e {
     font-size: 1.34em
 }
@@ -136781,4 +136785,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.aad1cffcc121f6586ce6.css.map*/
+/*# sourceMappingURL=99387.3c44780e37e1b0c0dd6b.css.map*/

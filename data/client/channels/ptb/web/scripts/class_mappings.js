@@ -83,6 +83,7 @@
                 roleName: "roleName__851c9",
                 roleNameOverflow: "roleNameOverflow__27401",
                 roleRemoveButton: "roleRemoveButton__20c70",
+                roleRemoveButtonCanRemove: "roleRemoveButtonCanRemove__3d3fa",
                 roleRemoveIcon: "roleRemoveIcon_c3913a",
                 roleRemoveIconFocused: "roleRemoveIconFocused__13220",
                 roleVerifiedIcon: "roleVerifiedIcon__76b57",
