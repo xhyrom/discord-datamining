@@ -19849,6 +19849,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .nicknameIcons__1b2d1 {
+    display: flex;
     align-self: flex-start;
     padding-top: 4px
 }
@@ -136873,4 +136874,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d81638db596379814949.css.map*/
+/*# sourceMappingURL=99387.a6412d9ed0f6c505ca84.css.map*/
