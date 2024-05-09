@@ -37398,7 +37398,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291854", ", Version Hash: ").concat("43852c25aa983ccdb0a478b82321eeb29d181cd4")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291859", ", Version Hash: ").concat("df05e9c18bd9a656debc640dc13451fde0fedf23")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88471,8 +88471,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291854", "291854"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291854")), t = 0), t
+                let t = parseInt((e = "291859", "291859"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291859")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115792,8 +115792,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291854",
-                    versionHash: "43852c25aa983ccdb0a478b82321eeb29d181cd4"
+                    buildNumber: "291859",
+                    versionHash: "df05e9c18bd9a656debc640dc13451fde0fedf23"
                 }
             }
             n.r(t), n.d(t, {
@@ -117165,7 +117165,8 @@
                 dailyCapPeriodStart: null,
                 dismissibleContentSeenDuringSession: new Set,
                 dailyCapOverridden: !1,
-                renderedAtTimestamps: new Map
+                renderedAtTimestamps: new Map,
+                lastDCDismissed: null
             };
             class _ extends(i = r.default.PersistedStore) {
                 initialize(e) {
@@ -117173,13 +117174,16 @@
                         var t;
                         d.numberOfDCsShownToday = null !== (t = e.numberOfDCsShownToday) && void 0 !== t ? t : 0, d.dailyCapPeriodStart = e.dailyCapPeriodStart, d.dailyCapOverridden = e.dailyCapOverridden
                     }
-                    d.dismissibleContentSeenDuringSession = new Set
+                    d.dismissibleContentSeenDuringSession = new Set, d.lastDCDismissed = null
                 }
                 getState() {
                     return d
                 }
                 get dailyCapOverridden() {
                     return d.dailyCapOverridden
+                }
+                get lastDCDismissed() {
+                    return d.lastDCDismissed
                 }
                 getRenderedAtTimestamp(e) {
                     return d.renderedAtTimestamps.get(e)
@@ -117228,10 +117232,10 @@
                     let {
                         dismissibleContent: t
                     } = e;
-                    d.renderedAtTimestamps.delete(t)
+                    d.lastDCDismissed = t, d.renderedAtTimestamps.delete(t)
                 },
                 DCF_RESET: function() {
-                    d.dailyCapPeriodStart = null, d.numberOfDCsShownToday = 0, d.dismissibleContentSeenDuringSession = new Set
+                    d.dailyCapPeriodStart = null, d.numberOfDCsShownToday = 0, d.dismissibleContentSeenDuringSession = new Set, d.lastDCDismissed = null
                 }
             })
         },
@@ -117560,11 +117564,12 @@
                         }, e)
                     }
                 }, [f, t, I, h, n]);
-                let A = i.useCallback(e => {
+                let A = i.useCallback((e, n) => {
                     null != f && (0, d.markDismissibleContentAsDismissed)(f, {
                         dismissAction: e,
                         groupName: t,
-                        guildId: I
+                        guildId: I,
+                        forceTrack: n
                     })
                 }, [f, t, I]);
                 return [S && null != f ? f : null, A]
@@ -117574,10 +117579,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return _
+                    return c
                 },
                 useSelectedDismissibleContent: function() {
-                    return d
+                    return _
                 }
             }), n("47120");
             var i = n("735250"),
@@ -117585,26 +117590,27 @@
                 a = n("399606"),
                 s = n("237997"),
                 o = n("261376"),
-                l = n("706140"),
-                u = n("921944");
+                l = n("68985"),
+                u = n("706140"),
+                d = n("921944");
 
-            function d(e, t) {
+            function _(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                     i = (0, a.useStateFromStores)([s.default], () => !!__OVERLAY__ && s.default.isInstanceUILocked()),
-                    [d, _] = (0, l.useGetDismissibleContent)(e, t, i),
-                    c = !n && null != d && !o.CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(d);
+                    [_, c] = (0, u.useGetDismissibleContent)(e, t, i),
+                    E = !n && null != _ && !o.CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(_);
                 return r.useEffect(() => () => {
-                    c && _(u.ContentDismissActionType.AUTO_DISMISS)
-                }, [c, _]), [d, _]
+                    E && l.default.lastDCDismissed !== _ && c(d.ContentDismissActionType.AUTO_DISMISS, !0)
+                }, [E, c, _]), [_, c]
             }
 
-            function _(e) {
+            function c(e) {
                 let {
                     contentTypes: t,
                     children: n,
                     groupName: r,
                     bypassAutoDismiss: a
-                } = e, [s, o] = d(t, r, a);
+                } = e, [s, o] = _(t, r, a);
                 return (0, i.jsx)(i.Fragment, {
                     children: n({
                         visibleContent: s,
@@ -171492,8 +171498,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715271370706",
-                                    build_number: "291854"
+                                    built_at: "1715272283327",
+                                    build_number: "291859"
                                 }
                             },
                             retries: 1
@@ -249960,7 +249966,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "43852c25aa983ccdb0a478b82321eeb29d181cd4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "df05e9c18bd9a656debc640dc13451fde0fedf23"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278880,7 +278886,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291854"
+                                build_number: "291859"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286233,7 +286239,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291854", "291854"), 10);
+                let a = parseInt((n = "291859", "291859"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313838,4 +313844,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.6bc637565fafdfb83f89.js.map
+//# sourceMappingURL=35705.658067515d2cc4b62a17.js.map
