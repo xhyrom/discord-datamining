@@ -20166,7 +20166,8 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .inner_e8ffd7 {
-    background: var(--input-background)
+    background: var(--input-background);
+    border-radius: 3px
 }
 
 .custom-profile-theme .inner_e8ffd7 {
@@ -71909,6 +71910,17 @@ div:has(>div>.modal__06f49) {
 
 .disabled__52159 {
     pointer-events: none
+}
+
+.newBadgeCircle__2b010 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--red-430);
+    box-shadow: inset 0 0 0 2px var(--background-primary)
 }
 
 .presets__230dd {
@@ -136785,4 +136797,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.3c44780e37e1b0c0dd6b.css.map*/
+/*# sourceMappingURL=99387.4f37f20aabd55a3be3ff.css.map*/
