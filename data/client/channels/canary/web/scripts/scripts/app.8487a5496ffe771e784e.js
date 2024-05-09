@@ -5078,12 +5078,18 @@
             e.exports = {
                 closeButton: "closeButton__290e3",
                 deleteItem: "deleteItem__6d453",
+                errorIcon: "errorIcon__7a24c",
+                errorIconTooltip: "errorIconTooltip__54303",
+                errorText: "errorText__174c2",
                 mainContent: "mainContent__465e0",
                 modal: "modal__06f49",
                 modalContents: "modalContents_d4af1c",
+                settingsTab: "settingsTab_c602d2",
                 sidebar: "sidebar__57865",
                 sidebarWrapper: "sidebarWrapper_c37160",
-                statusDanger: "statusDanger__3c2dd"
+                statusDanger: "statusDanger__3c2dd",
+                tooltip: "tooltip_b69b2e",
+                tooltipContents: "tooltipContents__7694a"
             }
         },
         40700: function(e) {
@@ -5185,6 +5191,7 @@
                 divider: "divider_ef3200",
                 dividerResponsive: "dividerResponsive__989b4",
                 elevatedNavigationContainer: "elevatedNavigationContainer_f689e2",
+                errorIcon: "errorIcon__11e5e",
                 errorLink: "errorLink_e96e0d",
                 errorText: "errorText_e99eec",
                 hidden: "hidden__7c65d",
@@ -5206,7 +5213,9 @@
                 step: "step__4b7ad",
                 stepsContainer: "stepsContainer__8d5da",
                 stepsTransitionGroup: "stepsTransitionGroup__770f6",
-                submit: "submit__9d0ad"
+                submit: "submit__9d0ad",
+                tooltip: "tooltip__54b01",
+                tooltipContents: "tooltipContents__93e3b"
             }
         },
         258082: function(e) {

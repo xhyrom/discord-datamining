@@ -45956,9 +45956,27 @@ img.thumbnail__18ece {
 }
 
 .errorLink_e96e0d {
-    color: var(--status-danger);
     -webkit-text-decoration: underline;
-    text-decoration: underline
+    text-decoration: underline;
+    pointer-events: all
+}
+
+.tooltip__54b01 {
+    max-width: 360px;
+    padding: 4px 0
+}
+
+.tooltipContents__93e3b {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center
+}
+
+.errorIcon__11e5e {
+    color: var(--status-danger);
+    height: 28px;
+    width: 28px
 }
 
 .popoutContainer__629b8 {
@@ -59432,7 +59450,15 @@ div:has(>div>.modal__06f49) {
 .closeButton__290e3 {
     position: absolute;
     top: 48px;
-    right: 48px
+    right: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px
+}
+
+.errorText__174c2 {
+    text-align: right
 }
 
 .modalContents_d4af1c {
@@ -59471,6 +59497,37 @@ div:has(>div>.modal__06f49) {
 }
 
 .statusDanger__3c2dd {
+    color: var(--status-danger)
+}
+
+.settingsTab_c602d2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px
+}
+
+.errorIcon__7a24c {
+    height: 16px;
+    width: 16px;
+    color: var(--status-danger)
+}
+
+.tooltip_b69b2e {
+    max-width: 360px;
+    padding: 4px 0
+}
+
+.tooltipContents__7694a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px
+}
+
+.errorIconTooltip__54303 {
+    height: 28px;
+    width: 28px;
     color: var(--status-danger)
 }
 
@@ -136816,4 +136873,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.e2c30e22e3ebc2b6e661.css.map*/
+/*# sourceMappingURL=99387.d81638db596379814949.css.map*/
