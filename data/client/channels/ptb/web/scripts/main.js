@@ -37398,7 +37398,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291795", ", Version Hash: ").concat("dc5027f3c36c4c7118adffe09e1197f58eb8c33c")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291797", ", Version Hash: ").concat("523e6315662eeb5105f1df46d2fbfac6aa0aacd2")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88470,8 +88470,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291795", "291795"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291795")), t = 0), t
+                let t = parseInt((e = "291797", "291797"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291797")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115791,8 +115791,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291795",
-                    versionHash: "dc5027f3c36c4c7118adffe09e1197f58eb8c33c"
+                    buildNumber: "291797",
+                    versionHash: "523e6315662eeb5105f1df46d2fbfac6aa0aacd2"
                 }
             }
             n.r(t), n.d(t, {
@@ -171491,8 +171491,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715223550046",
-                                    build_number: "291795"
+                                    built_at: "1715223855437",
+                                    build_number: "291797"
                                 }
                             },
                             retries: 1
@@ -214973,7 +214973,7 @@
                 _ = n("893718"),
                 c = n("957730"),
                 E = n("592125"),
-                I = n("51144"),
+                I = n("5192"),
                 T = n("838440"),
                 f = n("785717"),
                 S = n("689938"),
@@ -215002,45 +215002,46 @@
             function m(e) {
                 let {
                     user: t,
-                    channelId: n,
-                    onClose: s
+                    guildId: n,
+                    channelId: s,
+                    onClose: o
                 } = e, {
-                    newestAnalyticsLocation: o
+                    newestAnalyticsLocation: c
                 } = (0, l.default)(), {
-                    trackUserProfileAction: c
-                } = (0, f.useUserProfileAnalyticsContext)(), T = (0, a.useStateFromStores)([E.default], () => E.default.getChannel(n)), [m, N] = r.useState(""), [p, O] = r.useState((0, d.toRichValue)(m)), R = r.useRef(!1);
-                return null == T ? null : (0, i.jsx)(_.default, {
+                    trackUserProfileAction: T
+                } = (0, f.useUserProfileAnalyticsContext)(), m = (0, a.useStateFromStores)([E.default], () => E.default.getChannel(s)), [N, p] = r.useState(""), [O, R] = r.useState((0, d.toRichValue)(N)), C = r.useRef(!1);
+                return null == m ? null : (0, i.jsx)(_.default, {
                     innerClassName: h.inner,
                     editorClassName: h.editor,
                     type: u.ChatInputTypes.USER_PROFILE,
                     placeholder: S.default.Messages.QUICK_DM_USER.format({
-                        name: I.default.getName(t)
+                        name: I.default.getName(n, s, t)
                     }),
-                    channel: T,
-                    textValue: m,
-                    richValue: p,
+                    channel: m,
+                    textValue: N,
+                    richValue: O,
                     onChange: (e, t, n) => {
-                        t !== m && (N(t), O(n))
+                        t !== N && (p(t), R(n))
                     },
-                    focused: R.current,
+                    focused: C.current,
                     onFocus: () => {
-                        R.current = !0
+                        C.current = !0
                     },
                     onBlur: () => {
-                        R.current = !1
+                        C.current = !1
                     },
                     onSubmit: async e => {
                         let {
                             value: n
                         } = e;
                         try {
-                            return c({
+                            return T({
                                 action: "SEND_DIRECT_MESSAGE"
                             }), await A({
                                 userId: t.id,
                                 content: n.trim(),
-                                location: o
-                            }), null == s || s(), {
+                                location: c
+                            }), null == o || o(), {
                                 shouldClear: !0,
                                 shouldRefocus: !1
                             }
@@ -215079,6 +215080,7 @@
                     className: o.footer,
                     children: [d && (0, i.jsx)(s.default, {
                         user: t,
+                        guildId: n,
                         channelId: l,
                         onClose: u
                     }), !d && (0, i.jsx)(a.default, {
@@ -249957,7 +249959,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "dc5027f3c36c4c7118adffe09e1197f58eb8c33c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "523e6315662eeb5105f1df46d2fbfac6aa0aacd2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278877,7 +278879,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291795"
+                                build_number: "291797"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286230,7 +286232,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291795", "291795"), 10);
+                let a = parseInt((n = "291797", "291797"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313835,4 +313837,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.f12c020b37092edad8c6.js.map
+//# sourceMappingURL=35705.4df38851fbc8e4202b81.js.map
