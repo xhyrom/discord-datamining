@@ -19435,6 +19435,7 @@
                         }), (0, i.jsx)(d.default, {
                             clan: null == b ? void 0 : b.clan,
                             userId: null == b ? void 0 : b.id,
+                            contextGuildId: Y,
                             disableTooltip: !0,
                             className: D.clanTag,
                             profileViewedAnalytics: eT
@@ -37404,7 +37405,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291938", ", Version Hash: ").concat("7cbb24d9e6f9c5ddd3a60e00aef7aac16bf8b187")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291962", ", Version Hash: ").concat("13af24244ce8d4bf358bcca7e1e28b40dca93d92")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56285,52 +56286,53 @@
                 CLAN_UPSELL_CONTENT_GENSHIN: "Want to recruit more people to play Genshin Impact in your server?",
                 CLAN_GUILD_LIST_ADMIN_UPSELL_TITLE: "Join the first Guilds on Discord",
                 CLAN_CHANNEL_LIST_ADMIN_UPSELL_TITLE: "Your Guilds Invite is ready!",
-                CLAN_CHANNEL_LIST_ADMIN_UPSELL_VALORANT_MESSAGE: "Recruit new Valorant players to your server based on playstyle and vibe.",
-                CLAN_CHANNEL_LIST_ADMIN_UPSELL_GENSHIN_MESSAGE: "Recruit new Genshin players to your server based on playstyle and vibe.",
+                CLAN_CHANNEL_LIST_ADMIN_UPSELL_VALORANT_TITLE: "Recruit more Valorant friends",
+                CLAN_CHANNEL_LIST_ADMIN_UPSELL_GENSHIN_TITLE: "Recruit more Genshin friends",
+                CLAN_CHANNEL_LIST_ADMIN_UPSELL_MESSAGE: "Become one of the first Guilds and recruit players that match your server's playstyle and vibe.",
                 CLAN_SETUP_MODAL_SAVE_AND_QUIT: "Save & Exit",
-                CLAN_SETUP_APPLICATION_TITLE: "Add questions for prospective members to answer.",
-                CLAN_SETUP_APPLICATION_SUBTITLE: "You'll be able to review applications for each applicant and approve, deny, or interview them before they join.",
+                CLAN_SETUP_APPLICATION_TITLE: "Last Step! Set up the application.",
+                CLAN_SETUP_APPLICATION_SUBTITLE: "Ask questions to get to know potential members better. You'll review their answers and decide if they are approved to join. You'll also be able to interview applicants to get to know them better.",
                 CLAN_SETUP_GAMES_TITLE: "What games does your Guild play?",
-                CLAN_SETUP_GAMES_SUBTITLE: "You can always add more games later.",
+                CLAN_SETUP_GAMES_SUBTITLE: "You can always edit this later. Console games coming soon!",
                 CLAN_SETUP_GAMES_SEARCH_PLACEHOLDER: "Search for a game...",
                 CLAN_SETUP_SELECTED_GAMES: "Selected Games",
                 CLAN_SETUP_PLAYSTYLE_TITLE: "What's your Guild's playstyle?",
-                CLAN_SETUP_PLAYSTYLE_SUBTITLE: "Let potential members know how people in your Guild generally play games.",
+                CLAN_SETUP_PLAYSTYLE_SUBTITLE: "Let potential members know the expectations and vibe in your server. How competitive or skillset based is your Guild?",
                 CLAN_SETUP_PLAYSTYLE_SOCIAL_TITLE: "Very Casual",
                 CLAN_SETUP_PLAYSTYLE_SOCIAL_SUBTITLE: "Skill doesn't matter. We have a good time win or lose.",
                 CLAN_SETUP_PLAYSTYLE_CASUAL_TITLE: "Casual",
                 CLAN_SETUP_PLAYSTYLE_CASUAL_SUBTITLE: "We play to chill and have fun, but more fun if we win!",
-                CLAN_SETUP_PLAYSTYLE_COMPETITIVE_TITLE: "Hardcore",
+                CLAN_SETUP_PLAYSTYLE_COMPETITIVE_TITLE: "Competitive",
                 CLAN_SETUP_PLAYSTYLE_COMPETITIVE_SUBTITLE: "We play together to win, rank up, or beat challenges.",
-                CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_TITLE: "Very Hardcore",
-                CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_SUBTITLE: "We won't sleep until we win or beat the boss.",
-                CLAN_SETUP_UTILITY_TRAITS_TITLE: "Who's your target audience?",
-                CLAN_SETUP_UTILITY_TRAITS_SUBTITLE: "These traits will help the right people find and apply for your Guild.",
+                CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_TITLE: "Very Competitive",
+                CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_SUBTITLE: "We won't sleep until we win.",
+                CLAN_SETUP_UTILITY_TRAITS_TITLE: "Who's welcome in your Guild?",
+                CLAN_SETUP_UTILITY_TRAITS_SUBTITLE: "These traits will help the right people find and apply for your Guild. You can add custom traits in the next step.",
                 CLAN_SETUP_UTILITY_TRAITS_CATEGORY_VALORANT: "Valorant",
-                CLAN_SETUP_UTILITY_TRAITS_CATEGORY_AGE: "Minimum Age",
-                CLAN_SETUP_UTILITY_TRAITS_CATEGORY_IDENTITY: "Identity",
+                CLAN_SETUP_UTILITY_TRAITS_CATEGORY_AGE: "Minimum Age Preferred",
+                CLAN_SETUP_UTILITY_TRAITS_CATEGORY_IDENTITY: "Traits",
                 CLAN_SETUP_UTILITY_TRAITS_CATEGORY_LANGUAGE: "Language",
                 CLAN_SETUP_UTILITY_TRAITS_CATEGORY_LOCALE: "Region",
                 CLAN_SETUP_INTERESTS_TITLE: "What does your Guild like to talk about?",
-                CLAN_SETUP_INTERESTS_SUBTITLE: "Add at least 3 topics that you and your Guild members discuss or traits that you share. It doesn't have to be just about gaming!",
+                CLAN_SETUP_INTERESTS_SUBTITLE: "Add at least 3 topics that your Guild discusses or traits that you share. The more niche, the better, so you can find people with your same weird obsessions!",
                 CLAN_SETUP_INTERESTS_PLACEHOLDER: "Anime, Roman History, Sad Hamsters, etc...",
                 CLAN_SETUP_SELECTED_INTERESTS: "Selected Interests",
-                CLAN_SETUP_SUGGESTED_INTERESTS: "Interests",
+                CLAN_SETUP_SUGGESTED_INTERESTS: "Some Ideas...",
                 CLAN_SETUP_INTERESTS_HELP: "Press ENTER to add a trait",
                 CLAN_SETUP_LANGUAGE_PLACEHOLDER: "Add a language...",
                 CLAN_SETUP_DESCRIPTION_TITLE: "Tell potential recruits what your Guild is all about.",
-                CLAN_SETUP_DESCRIPTION_SUBTITLE: "They'll see this before they apply. Why should they apply for your Guild? What makes your Guild unique?",
+                CLAN_SETUP_DESCRIPTION_SUBTITLE: "They'll see this as a Guild bio before they apply. What brought you together? What makes your Guild unique? Why should they apply?",
                 CLAN_SETUP_DESCRIPTION_PLACEHOLDER: "We're a women gaming group that's been playing for a few months! We have weekly movie nights and plenty of snacks.",
-                CLAN_SETUP_CUSTOMIZE_TITLE: "Pick a badge and tag for your Guild",
-                CLAN_SETUP_CUSTOMIZE_SUBTITLE: "Choose a badge that Guild members will rep next to their name and on their profiles across Discord.",
-                CLAN_SETUP_CUSTOMIZE_LOOK_TITLE: "Edit your Guild's look",
-                CLAN_SETUP_CUSTOMIZE_LOOK_SUBTITLE: "See how your Guild will appear to prospective members in the Clan Finder and beyond. Choose a brand color and generate a banner to get your clan looking ready to recruit.",
+                CLAN_SETUP_CUSTOMIZE_TITLE: "Create a badge and tag for your Guild",
+                CLAN_SETUP_CUSTOMIZE_SUBTITLE: "Guild members will rep these next to their name and on their profiles across Discord.",
+                CLAN_SETUP_CUSTOMIZE_LOOK_TITLE: "Customize your Guild's look",
+                CLAN_SETUP_CUSTOMIZE_LOOK_SUBTITLE: "This is how your Guild will appear to prospective members in the Guild finder and beyond. You're almost ready to recruit!",
                 CLAN_SETUP_CUSTOMIZE_HELP_TEXT: "Maxmimum 4 characters, alphabet (A-Z) and numbers only",
                 CLAN_SETUP_TAG_PLACEHOLDER: "GGEZ",
                 CLAN_SETUP_SIGN_TITLE: "You're almost done!",
                 CLAN_SETUP_SIGN_SUBTITLE: "One last step - sign the charter to become a Guild.",
                 CLAN_SETUP_OPTIONAL: "Optional",
-                CLAN_SETUP_WILDCARDS_SUBTITLE: "How would you describe your Guild in three words? Be creative.",
+                CLAN_SETUP_WILDCARDS_SUBTITLE: "Choose 3 worlds that describe your Guild. Be creative.",
                 CLAN_SETUP_NUM_TRAITS: "{n, plural, one {1 Trait} other {{n} Traits}}",
                 CLAN_SETUP_GAMES_STEP: "Games",
                 CLAN_SETUP_PLAYSTYLE_STEP: "Playstyle",
@@ -56412,7 +56414,7 @@
                 CLAN_APPLICATION_GDM_CONSENT: "By applying, you give the guild admins permission to message you regarding your application.",
                 CLAN_BADGE: "Badge",
                 CLAN_BADGE_COLORS: "Badge Colors",
-                CLAN_TAG_VALIDATION_RULES: "Maximum 4 characters, alphabet (A-Z) and numbers only.",
+                CLAN_TAG_VALIDATION_RULES: "Max 4 characters",
                 CLAN_LOOK_BRAND_COLOR: "Brand Color",
                 CLAN_LOOK_BANNER: "Banner",
                 CLAN_LOOK_PRESET_BADGE: "Badge",
@@ -56465,14 +56467,14 @@
                 CLAN_DISCOVERY_PREFERENCES_FILTER: "Preferences",
                 CLAN_DISCOVERY_PRIMETIME_FILTER: "Prime Time",
                 CLAN_DISCOVERY_MEMBER_COUNT: "{count, plural, =1 {1 Member} other {{count} Members}}",
-                CLAN_DISCOVERY_PROFILE_TITLE: "Answer a few questions to join!",
-                CLAN_DISCOVERY_PROFILE_SUBTITLE: "The Guild leader will get back to you shortly after you submit.",
+                CLAN_DISCOVERY_PROFILE_TITLE: "Answer a few questions to join.",
+                CLAN_DISCOVERY_PROFILE_SUBTITLE: "You'll get notified when there's an update.",
                 CLAN_DISCOVERY_PLAYSTYLE_TITLE: "What's your playstyle?",
-                CLAN_DISCOVERY_PLAYSTYLE_SUBTITLE: "We'll recommend you Guilds that fit your playstyle.",
+                CLAN_DISCOVERY_PLAYSTYLE_SUBTITLE: "How serious or casual do you want your friends to be? Your selections will sort the Guilds you see. You can always change this later.",
                 CLAN_DISCOVERY_TRAIT_TITLE: "Would you prefer to sort by any of these?",
-                CLAN_DISCOVERY_TRAIT_SUBTITLE: "We will prioritize Guilds that match the criteria you selected.",
+                CLAN_DISCOVERY_TRAIT_SUBTITLE: "You can always change this later.",
                 CLAN_DISCOVERY_GAME_TITLE: "What games do you play?",
-                CLAN_DISCOVERY_GAME_SUBTITLE: "We'll recommend Guilds to join based on games you play.",
+                CLAN_DISCOVERY_GAME_SUBTITLE: "Your selections will sort the Guilds you see. You can always change this later.",
                 CLAN_DISCOVERY_GAMES_SEARCH_PLACEHOLDER: "Look for a Game...",
                 CLAN_DISCOVERY_GAMES_SELECTED: "Selected Games",
                 CLAN_DISCOVERY_TRAIT_OVERFLOW: "+ {count, number} more",
@@ -56482,7 +56484,7 @@
                 CLAN_DISCOVERY_UPSELL_BROWSE: "Browse Guilds",
                 CLANS: "Guilds",
                 CLAN_USER_PROFILE_PRIMARY_CLAN: "Primary Guild",
-                CLAN_USER_PROFILE_PRIMARY_CLAN_SUBTITLE: "Choose your primary Guild and wear the Guild Tag next to your name",
+                CLAN_USER_PROFILE_PRIMARY_CLAN_SUBTITLE: "Choose a Guild tag to rep next to your name across Discord.",
                 CLAN_DISCOVERY_SAVED_FILTER: "{count, number} Saved",
                 CLAN_DISCOVERY_CARD_TAG_TOOLTIP: "Become a member to unlock this tag",
                 CLAN_DISCOVERY_MAX_GAMES_SELECTED: "Only a maximum of three games can be selected at a time.",
@@ -56494,10 +56496,10 @@
                 CLAN_DISCOVERY_UPSELL_MAX_SIZE: "Guilds are max 200 people in size.",
                 CLAN_DISCOVERY_UPSELL_RESERVE: "Reserve Your Spot",
                 CLAN_DISCOVERY_UPSELL_CONTINUE_SETUP: "Continue Setup",
-                CLAN_DISCOVERY_UPSELL_VALORANT_TITLE: "Just a few clicks to find your Valorant clique.",
-                CLAN_DISCOVERY_UPSELL_VALORANT_SUBTITLE: "Answer a few questions to discover Valorant Guilds on Discord based on your interests and playstyle.",
+                CLAN_DISCOVERY_UPSELL_TITLE: "Join an exclusive gaming Guild",
+                CLAN_DISCOVERY_UPSELL_VALORANT_SUBTITLE: "Check out small Guilds looking to recruit Valorant players and make new friends.",
                 CLAN_DISCOVERY_UPSELL_GENSHIN_TITLE: "Just a few clicks to find your Genshin clique.",
-                CLAN_DISCOVERY_UPSELL_GENSHIN_SUBTITLE: "Answer a few questions to discover Genshin Guilds on Discord based on your interests and playstyle.",
+                CLAN_DISCOVERY_UPSELL_GENSHIN_SUBTITLE: "Check out small Guilds looking to recruit Genshin players and make new friends.",
                 CLAN_DISCOVERY_UPSELL_GET_STARTED: "Get Started",
                 CLAN_DISCOVERY_UPSELL_JOIN_WFS: "Questions? Head over to the $[Wumpus Feedback Squad](wfsHook) server to ask Discord questions or give feedback!",
                 CLAN_DISCOVERY_UPSELL_JOIN_WFS_ARIA_LABEL: "Join Wumpus Feedback Squad server",
@@ -88483,8 +88485,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291938", "291938"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291938")), t = 0), t
+                let t = parseInt((e = "291962", "291962"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291962")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103505,10 +103507,10 @@
                 y = "762434991303950386",
                 P = ["Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF", "Unrated", "All Ranks", "Bronze+", "Silver+", "Gold+", "Platinum+", "Diamond+"],
                 U = ["20+", "30+", "40+", "All Ages"],
-                b = ["Beginner Friendly", "PUGs", "LGBTQIA+", "Parent Friendly", "Work-life Balance", "Streamers"],
+                b = ["Beginner Friendly", "PUGs", "Diverse", "Inclusive", "Parent Friendly", "Work-life Balance", "Streamers"],
                 G = new Set([...P, ...U, ...b]),
                 w = new Set(T.default.getAvailableLocales().map(e => e.localizedName)),
-                B = new Set(["anime", "fanart", "venting", "movie nights", "gacha games", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pictures", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "desk setups", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1"]);
+                B = new Set(["anime", "fanart", "venting", "movie nights", "pirate shows", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pics", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "horses", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1"]);
             (d = a || (a = {}))[d.NIGHT_SKY = 0] = "NIGHT_SKY", d[d.CASTLE = 1] = "CASTLE", d[d.WORLD_MAP = 2] = "WORLD_MAP", d[d.SEA_FOAM = 3] = "SEA_FOAM", d[d.WARP_TUNNEL = 4] = "WARP_TUNNEL", d[d.HOUSE = 5] = "HOUSE", d[d.HEIGHTMAP = 6] = "HEIGHTMAP", d[d.MESH = 7] = "MESH", d[d.SPATTER = 8] = "SPATTER", (_ = s || (s = {})).BOULDER = "boulder", _.CASCADE = "cascade", _.THUNDER = "thunder", _.SOUL = "soul", _.MARSH = "marsh", _.VOLCANO = "volcano", _.EARTH = "earth", _.ZEPHYR = "zephyr";
             let k = [{
                     name: "boulder",
@@ -104328,13 +104330,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 BaseClanTagChiplet: function() {
-                    return h
+                    return m
                 },
                 ClanTagBadge: function() {
-                    return S
+                    return A
                 },
                 useShouldDisplayClanTag: function() {
-                    return m
+                    return p
                 }
             }), n("47120");
             var i = n("735250"),
@@ -104343,29 +104345,31 @@
                 s = n.n(a),
                 o = n("442837"),
                 l = n("481060"),
-                u = n("594174"),
-                d = n("645896"),
-                _ = n("353093"),
-                c = n("954138"),
-                E = n("426964"),
-                I = n("308083"),
-                T = n("689938"),
-                f = n("40700");
-            let S = r.memo(function(e) {
+                u = n("715903"),
+                d = n("271383"),
+                _ = n("594174"),
+                c = n("645896"),
+                E = n("353093"),
+                I = n("954138"),
+                T = n("426964"),
+                f = n("308083"),
+                S = n("689938"),
+                h = n("40700");
+            let A = r.memo(function(e) {
                     let {
                         src: t,
                         className: n,
-                        size: r = I.ClanTagBadgeSize.SIZE_16
+                        size: r = f.ClanTagBadgeSize.SIZE_16
                     } = e;
                     return null == t ? null : (0, i.jsx)("img", {
                         src: t,
-                        alt: T.default.Messages.CLAN_BADGE,
-                        className: s()(f.badge, n),
+                        alt: S.default.Messages.CLAN_BADGE,
+                        className: s()(h.badge, n),
                         width: r,
                         height: r
                     })
                 }),
-                h = r.memo(function(e) {
+                m = r.memo(function(e) {
                     let {
                         clanTag: t,
                         clanBadge: n,
@@ -104375,56 +104379,56 @@
                         onClick: u,
                         onMouseEnter: d,
                         textVariant: _ = "text-xs/medium",
-                        textColor: E = "text-normal",
-                        badgeSize: T = I.ClanTagBadgeSize.SIZE_12,
-                        inline: h = !0
+                        textColor: c = "text-normal",
+                        badgeSize: E = f.ClanTagBadgeSize.SIZE_12,
+                        inline: T = !0
                     } = e;
-                    return (0, c.default)("base_clan_tag_chiplet") ? (0, i.jsx)(l.Clickable, {
+                    return (0, I.default)("base_clan_tag_chiplet") ? (0, i.jsx)(l.Clickable, {
                         tag: "span",
                         tabIndex: null == u ? -1 : void 0,
                         onClick: u,
                         onMouseEnter: d,
-                        className: s()(f.chipletContainerInner, h && f.chipletContainerInline, null != u && f.clickable, r),
+                        className: s()(h.chipletContainerInner, T && h.chipletContainerInline, null != u && h.clickable, r),
                         children: (0, i.jsxs)(l.Text, {
                             variant: _,
-                            color: E,
+                            color: c,
                             tag: "span",
-                            className: s()(f.text, a),
-                            children: [null != n && "string" == typeof n ? (0, i.jsx)(S, {
+                            className: s()(h.text, a),
+                            children: [null != n && "string" == typeof n ? (0, i.jsx)(A, {
                                 src: n,
-                                size: T,
+                                size: E,
                                 className: o
                             }) : n, t]
                         })
                     }) : null
                 }),
-                A = r.memo(function(e) {
+                N = r.memo(function(e) {
                     var t, n;
                     let {
                         clan: a,
                         userId: s,
-                        children: _,
-                        profileViewedAnalytics: c
-                    } = e, I = (0, o.useStateFromStores)([u.default], () => u.default.getUser(s), [s]), T = null !== (t = null == I ? void 0 : I.clan) && void 0 !== t ? t : a, [S, h] = (0, d.useFetchClanInfo)(null !== (n = null == T ? void 0 : T.identityGuildId) && void 0 !== n ? n : null), A = r.useCallback(() => {
-                        h()
-                    }, [h]);
+                        children: u,
+                        profileViewedAnalytics: d
+                    } = e, E = (0, o.useStateFromStores)([_.default], () => _.default.getUser(s), [s]), I = null !== (t = null == E ? void 0 : E.clan) && void 0 !== t ? t : a, [f, S] = (0, c.useFetchClanInfo)(null !== (n = null == I ? void 0 : I.identityGuildId) && void 0 !== n ? n : null), A = r.useCallback(() => {
+                        S()
+                    }, [S]);
                     return (0, i.jsx)(l.Popout, {
                         renderPopout: e => {
                             let {
                                 closePopout: t
                             } = e;
-                            return (0, i.jsx)(E.default, {
-                                isLoading: S,
-                                clan: T,
+                            return (0, i.jsx)(T.default, {
+                                isLoading: f,
+                                clan: I,
                                 onClose: t,
-                                profileViewedAnalytics: c
+                                profileViewedAnalytics: d
                             })
                         },
                         position: "top",
                         animationPosition: "top",
                         spacing: 16,
                         children: e => (0, i.jsx)(l.Clickable, {
-                            className: f.clickable,
+                            className: h.clickable,
                             tag: "span",
                             ...e,
                             onClick: t => {
@@ -104435,58 +104439,64 @@
                                 var t;
                                 A(), null === (t = e.onMouseEnter) || void 0 === t || t.call(e)
                             },
-                            children: _
+                            children: u
                         })
                     })
                 });
 
-            function m(e) {
-                let t = (0, o.useStateFromStores)([u.default], () => u.default.getUser(e), [e]),
+            function p(e, t) {
+                let n = (0, o.useStateFromStores)([_.default], () => _.default.getUser(e), [e]),
+                    i = (0, o.useStateFromStores)([d.default], () => {
+                        if (null == t || null == e) return null;
+                        let n = d.default.getMember(t, e);
+                        return (0, u.hasAutomodQuarantinedProfile)(n)
+                    }, [t, e]),
                     {
-                        tag: n,
-                        guildId: i
-                    } = (0, _.getUserClanData)(null == t ? void 0 : t.clan);
-                return !!(0, c.default)("clan_tag_chiplet") && null != i && null != n || !1
+                        tag: r,
+                        guildId: a
+                    } = (0, E.getUserClanData)(null == n ? void 0 : n.clan);
+                return !!(0, I.default)("clan_tag_chiplet") && null != a && null != r && !i && !0
             }
             t.default = r.memo(function(e) {
                 var t;
                 let {
                     clan: n,
                     userId: r,
-                    className: a,
-                    textVariant: l,
+                    contextGuildId: a,
+                    className: l,
+                    textVariant: u,
                     textColor: d,
                     badgeSize: c,
-                    disableTooltip: E = !1,
-                    inline: I = !0,
-                    profileViewedAnalytics: T
-                } = e, S = (0, o.useStateFromStores)([u.default], () => u.default.getUser(r), [r]), N = null !== (t = null == S ? void 0 : S.clan) && void 0 !== t ? t : n, {
-                    tag: p,
-                    badge: O,
-                    guildId: R
-                } = (0, _.getUserClanData)(N);
-                if (!m(r) || null == R) return null;
-                let C = (0, _.getClanBadgeUrl)(R, O, c);
-                return E ? (0, i.jsx)(h, {
-                    clanTag: p,
-                    clanBadge: C,
-                    className: s()(f.noTooltip, a),
-                    textVariant: l,
+                    disableTooltip: I = !1,
+                    inline: T = !0,
+                    profileViewedAnalytics: f
+                } = e, S = (0, o.useStateFromStores)([_.default], () => _.default.getUser(r), [r]), A = null !== (t = null == S ? void 0 : S.clan) && void 0 !== t ? t : n, {
+                    tag: O,
+                    badge: R,
+                    guildId: C
+                } = (0, E.getUserClanData)(A);
+                if (!p(r, a) || null == C) return null;
+                let g = (0, E.getClanBadgeUrl)(C, R, c);
+                return I ? (0, i.jsx)(m, {
+                    clanTag: O,
+                    clanBadge: g,
+                    className: s()(h.noTooltip, l),
+                    textVariant: u,
                     textColor: d,
                     badgeSize: c,
-                    inline: I
-                }) : (0, i.jsx)(A, {
-                    clan: N,
+                    inline: T
+                }) : (0, i.jsx)(N, {
+                    clan: A,
                     userId: r,
-                    profileViewedAnalytics: T,
-                    children: (0, i.jsx)(h, {
-                        clanTag: p,
-                        clanBadge: C,
-                        className: a,
-                        textVariant: l,
+                    profileViewedAnalytics: f,
+                    children: (0, i.jsx)(m, {
+                        clanTag: O,
+                        clanBadge: g,
+                        className: l,
+                        textVariant: u,
                         textColor: d,
                         badgeSize: c,
-                        inline: I
+                        inline: T
                     })
                 })
             })
@@ -115822,8 +115832,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291938",
-                    versionHash: "7cbb24d9e6f9c5ddd3a60e00aef7aac16bf8b187"
+                    buildNumber: "291962",
+                    versionHash: "13af24244ce8d4bf358bcca7e1e28b40dca93d92"
                 }
             }
             n.r(t), n.d(t, {
@@ -153529,7 +153539,7 @@
                     },
                     async open(e, t, i, r) {
                         var a;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("23755"), n.e("70716"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("56630"), n.e("58227"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("52332"), n.e("74526"), n.e("33361"), n.e("50916"), n.e("62856"), n.e("56215"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("23755"), n.e("70716"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("56630"), n.e("58227"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("71697"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("43502"), n.e("52332"), n.e("74526"), n.e("33361"), n.e("50916"), n.e("62856"), n.e("56215"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         a.default.dispatch({
@@ -171528,8 +171538,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715281228459",
-                                    build_number: "291938"
+                                    built_at: "1715283493126",
+                                    build_number: "291962"
                                 }
                             },
                             retries: 1
@@ -250013,7 +250023,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "7cbb24d9e6f9c5ddd3a60e00aef7aac16bf8b187"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "13af24244ce8d4bf358bcca7e1e28b40dca93d92"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -270401,6 +270411,7 @@
                             children: [G + w, (0, a.jsx)(T.default, {
                                 clan: n.clan,
                                 userId: i.author.id,
+                                contextGuildId: U,
                                 className: O.clanTagChiplet,
                                 profileViewedAnalytics: H
                             })]
@@ -270454,6 +270465,7 @@
                     }) : null, t, !o && (0, a.jsx)(T.default, {
                         clan: n.clan,
                         userId: i.author.id,
+                        contextGuildId: U,
                         className: O.clanTagChiplet,
                         profileViewedAnalytics: H
                     }), null != W ? (0, a.jsx)(a.Fragment, {
@@ -278933,7 +278945,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291938"
+                                build_number: "291962"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286286,7 +286298,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291938", "291938"), 10);
+                let a = parseInt((n = "291962", "291962"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313908,4 +313920,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.be423a9c4d5c164346b8.js.map
+//# sourceMappingURL=35705.bd051e42a8b2151ead2b.js.map
