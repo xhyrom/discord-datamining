@@ -37406,7 +37406,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292039", ", Version Hash: ").concat("610fcb83c00742cc89e1cb6f9c0f767f0314f5b1")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292056", ", Version Hash: ").concat("98dea40e2e60e786955029c1cd6a59c33533e717")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -44024,10 +44024,12 @@
                 STREAM_PREMIUM_UPSELL_BANNER: "Unlock all resolutions and frame rates.",
                 STREAM_PREMIUM_UPSELL_BANNER_V2: "Stream in HD resolution with Nitro",
                 STREAM_PREMIUM_UPSELL_BANNER_LEARN_MORE_V2: "Stream in HD resolution with Nitro. [Learn more](onClick)",
+                STREAM_PREMIUM_UPSELL_BANNER_LEARN_MORE_V3: "Stream in HD resolution with [Nitro](onClick)",
                 STREAM_PREMIUM_UPSELL_BANNER_PRESET_DOCUMENTS: "Level up your streaming.",
                 STREAM_PREMIUM_UPSELL_BANNER_CTA: "Get Nitro",
                 STREAM_PREMIUM_UPSELL_BODY: "Stream HD resolutions at 60 frames per second, get access to chat perks, [and more with Discord Nitro!](onPressMore)",
                 STREAM_PREMIUM_UPSELL_BODY_V2: "Unlock up to 4k/60fps streaming, custom emoji everywhere, animated avatar, and more with Nitro.",
+                STREAM_PREMIUM_UPSELL_BODY_V3: "Unlock up to 4k/60 fps for streaming your gameplay. Or funniest cat videos, we don't judge.",
                 STREAM_PREMIUM_UPSELL_BODY_NO_CTA: "Stream HD resolutions at 60 frames per second, get access to chat perks, and more with Discord Nitro!",
                 STREAM_PREMIUM_UPSELL_WITH_ACTION: "Lift off with Discord Nitro to stream HD resolutions at 60 frames per second. [Learn more](onClick).",
                 STREAM_PREMIUM_UPSELL_CTA: "Subscribe",
@@ -88497,8 +88499,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292039", "292039"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292039")), t = 0), t
+                let t = parseInt((e = "292056", "292056"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292056")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115878,8 +115880,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292039",
-                    versionHash: "610fcb83c00742cc89e1cb6f9c0f767f0314f5b1"
+                    buildNumber: "292056",
+                    versionHash: "98dea40e2e60e786955029c1cd6a59c33533e717"
                 }
             }
             n.r(t), n.d(t, {
@@ -171617,8 +171619,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715288517782",
-                                    build_number: "292039"
+                                    built_at: "1715289299127",
+                                    build_number: "292056"
                                 }
                             },
                             retries: 1
@@ -250118,7 +250120,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "610fcb83c00742cc89e1cb6f9c0f767f0314f5b1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "98dea40e2e60e786955029c1cd6a59c33533e717"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279064,7 +279066,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292039"
+                                build_number: "292056"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286417,7 +286419,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292039", "292039"), 10);
+                let a = parseInt((n = "292056", "292056"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314039,4 +314041,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.d1734055de21806ebeff.js.map
+//# sourceMappingURL=35705.c8ed1e626ba49e7f98b5.js.map
