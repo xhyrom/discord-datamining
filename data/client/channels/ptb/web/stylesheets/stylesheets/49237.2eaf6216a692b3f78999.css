@@ -12319,6 +12319,23 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     text-decoration: underline
 }
 
+.guildIcon__65d1b {
+    border-radius: var(--radius-xs)
+}
+
+.guildDetails_ac7c68 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 4px
+}
+
+.voiceChannelInfo__78368 {
+    display: flex;
+    align-items: center;
+    gap: 2px
+}
+
 .activityActivityFeed__402fc .name__0ac4b {
     display: none
 }
@@ -28235,4 +28252,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.b97884b64b682c59cc8e.css.map*/
+/*# sourceMappingURL=49237.2eaf6216a692b3f78999.css.map*/
