@@ -37404,7 +37404,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291891", ", Version Hash: ").concat("798cfe664f6959f31e3c4d6327d15b4a48aa5975")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291911", ", Version Hash: ").concat("32613fd4ea63084c11e519592685ac48c3601b6e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88483,8 +88483,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291891", "291891"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291891")), t = 0), t
+                let t = parseInt((e = "291911", "291911"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291911")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103507,7 +103507,7 @@
                 U = ["20+", "30+", "40+", "All Ages"],
                 b = ["Beginner Friendly", "PUGs", "LGBTQIA+", "Parent Friendly", "Work-life Balance", "Streamers"],
                 G = new Set([...P, ...U, ...b]),
-                w = new Set(T.default.getAvailableLocales().map(e => e.value)),
+                w = new Set(T.default.getAvailableLocales().map(e => e.localizedName)),
                 B = new Set(["anime", "fanart", "venting", "movie nights", "gacha games", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pictures", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "desk setups", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1"]);
             (d = a || (a = {}))[d.NIGHT_SKY = 0] = "NIGHT_SKY", d[d.CASTLE = 1] = "CASTLE", d[d.WORLD_MAP = 2] = "WORLD_MAP", d[d.SEA_FOAM = 3] = "SEA_FOAM", d[d.WARP_TUNNEL = 4] = "WARP_TUNNEL", d[d.HOUSE = 5] = "HOUSE", d[d.HEIGHTMAP = 6] = "HEIGHTMAP", d[d.MESH = 7] = "MESH", d[d.SPATTER = 8] = "SPATTER", (_ = s || (s = {})).BOULDER = "boulder", _.CASCADE = "cascade", _.THUNDER = "thunder", _.SOUL = "soul", _.MARSH = "marsh", _.VOLCANO = "volcano", _.EARTH = "earth", _.ZEPHYR = "zephyr";
             let k = [{
@@ -115817,8 +115817,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291891",
-                    versionHash: "798cfe664f6959f31e3c4d6327d15b4a48aa5975"
+                    buildNumber: "291911",
+                    versionHash: "32613fd4ea63084c11e519592685ac48c3601b6e"
                 }
             }
             n.r(t), n.d(t, {
@@ -171523,8 +171523,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715276613604",
-                                    build_number: "291891"
+                                    built_at: "1715278580964",
+                                    build_number: "291911"
                                 }
                             },
                             retries: 1
@@ -250008,7 +250008,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "798cfe664f6959f31e3c4d6327d15b4a48aa5975"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "32613fd4ea63084c11e519592685ac48c3601b6e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278928,7 +278928,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291891"
+                                build_number: "291911"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286281,7 +286281,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291891", "291891"), 10);
+                let a = parseInt((n = "291911", "291911"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313886,4 +313886,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.328bed0f98c03480a73b.js.map
+//# sourceMappingURL=35705.289138ab1c5d17e8ad83.js.map
