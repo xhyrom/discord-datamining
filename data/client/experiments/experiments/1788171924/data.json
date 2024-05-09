@@ -6,18 +6,21 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable custom notificstion sounds"
+      "Treatment 1: Enable custom notification sounds",
+      "Treatment 2: Enable custom notification sounds + nested entry point"
     ],
     "hash": 1788171924,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,
     "config_keys": [
-      "enabled"
+      "enabled",
+      "nestedEntry"
     ]
   }
 }
