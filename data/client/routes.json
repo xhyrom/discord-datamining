@@ -151,7 +151,9 @@
   },
   "GUILD_FEATURE_ACK": {
     "url": "/guilds/:param/ack/:param/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "POST"
+    ]
   },
   "USER_NON_CHANNEL_ACK": {
     "url": "/users/@me/:param/:param/ack",
