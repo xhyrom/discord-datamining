@@ -37404,7 +37404,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291916", ", Version Hash: ").concat("d235a2dc8dcc3a9b62563b953eb789669d592269")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291934", ", Version Hash: ").concat("9b5205245c0af2baa5748302634bc93a292186d3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88483,8 +88483,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291916", "291916"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291916")), t = 0), t
+                let t = parseInt((e = "291934", "291934"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291934")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -112661,7 +112661,8 @@
                 let {
                     platformType: t,
                     location: _,
-                    overrideUrl: c
+                    overrideUrl: c,
+                    successRedirect: E
                 } = e;
                 if (t === d.PlatformTypes.LEAGUE_OF_LEGENDS && (t = d.PlatformTypes.RIOT_GAMES), t === d.PlatformTypes.CRUNCHYROLL) {
                     a.showModal([null != _ ? _ : "unknown"]);
@@ -112693,13 +112694,15 @@
                         href: c,
                         onConfirm: () => {
                             (0, u.openProviderAuthorize)(t, {
-                                location: _
+                                location: _,
+                                successRedirect: E
                             }, c)
                         }
                     });
                     return
                 }(0, u.openProviderAuthorize)(t, {
-                    location: _
+                    location: _,
+                    successRedirect: E
                 })
             }
         },
@@ -113389,20 +113392,22 @@
             async function o(e) {
                 let {
                     location: t,
-                    twoWayLinkType: n
-                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, o = arguments.length > 2 ? arguments[2] : void 0, l = Math.round(screen.width / 2 - 350), u = screen.height > 640 ? Math.round(screen.height / 2 - 320) : 0, d = null;
-                !(0, r.isDesktop)() && (d = window.open("".concat(window.location.protocol, "//").concat(window.location.host).concat(s.Routes.CONNECTIONS(e), "?loading=true"), "authorize", "scrollbars=yes,resizable=yes,toolbar=no,location=yes,top=".concat(u, ",left=").concat(l, ",width=").concat(700, ",height=").concat(640)));
-                let _ = o;
-                if (null == _ && e !== a.GUILD_ROLE_CONNECTION_APPLICATION_CONNECTION_TYPE) {
+                    twoWayLinkType: n,
+                    successRedirect: o
+                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, l = arguments.length > 2 ? arguments[2] : void 0, u = Math.round(screen.width / 2 - 350), d = screen.height > 640 ? Math.round(screen.height / 2 - 320) : 0, _ = null;
+                !(0, r.isDesktop)() && (_ = window.open("".concat(window.location.protocol, "//").concat(window.location.host).concat(s.Routes.CONNECTIONS(e), "?loading=true"), "authorize", "scrollbars=yes,resizable=yes,toolbar=no,location=yes,top=".concat(d, ",left=").concat(u, ",width=").concat(700, ",height=").concat(640)));
+                let c = l;
+                if (null == c && e !== a.GUILD_ROLE_CONNECTION_APPLICATION_CONNECTION_TYPE) {
                     let {
                         body: r
                     } = await i.default.authorize(e, {
                         location: t,
-                        twoWayLinkType: n
+                        twoWayLinkType: n,
+                        successRedirect: o
                     });
-                    _ = r.url
+                    c = r.url
                 }
-                if (null != _) return null != d ? d.location.href = _ : window.open(_), _
+                if (null != c) return null != _ ? _.location.href = c : window.open(c), c
             }
         },
         458034: function(e, t, n) {
@@ -115817,8 +115822,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291916",
-                    versionHash: "d235a2dc8dcc3a9b62563b953eb789669d592269"
+                    buildNumber: "291934",
+                    versionHash: "9b5205245c0af2baa5748302634bc93a292186d3"
                 }
             }
             n.r(t), n.d(t, {
@@ -153524,7 +153529,7 @@
                     },
                     async open(e, t, i, r) {
                         var a;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("23755"), n.e("70716"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("56630"), n.e("58227"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("71697"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("43502"), n.e("52332"), n.e("74526"), n.e("33361"), n.e("50916"), n.e("62856"), n.e("56215"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("66635"), n.e("23755"), n.e("70716"), n.e("61613"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("56630"), n.e("58227"), n.e("90508"), n.e("85093"), n.e("85552"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("52332"), n.e("74526"), n.e("33361"), n.e("50916"), n.e("62856"), n.e("56215"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         a.default.dispatch({
@@ -171523,8 +171528,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715279244615",
-                                    build_number: "291916"
+                                    built_at: "1715280739573",
+                                    build_number: "291934"
                                 }
                             },
                             retries: 1
@@ -250008,7 +250013,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d235a2dc8dcc3a9b62563b953eb789669d592269"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9b5205245c0af2baa5748302634bc93a292186d3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278928,7 +278933,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291916"
+                                build_number: "291934"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286281,7 +286286,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291916", "291916"), 10);
+                let a = parseInt((n = "291934", "291934"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313886,4 +313891,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.74298efacb416de7a247.js.map
+//# sourceMappingURL=35705.58fef3bcb41e623c8be9.js.map
