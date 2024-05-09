@@ -70632,6 +70632,33 @@ div:has(>div>.modal__06f49) {
     height: 18px
 }
 
+.content__42e44 {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%
+}
+
+.refreshContainer_d55750 {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    padding: 8px
+}
+
+.cell_af63da {
+    padding: 0 8px
+}
+
+.cellType__36e49 {
+    width: 40%
+}
+
+.cellCount_f14363 {
+    width: 20%
+}
+
 .container__33430 {
     border-top: 1px solid var(--background-tertiary);
     background: var(--background-primary);
@@ -136874,4 +136901,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.a6412d9ed0f6c505ca84.css.map*/
+/*# sourceMappingURL=99387.854d184cb41366b7bd78.css.map*/

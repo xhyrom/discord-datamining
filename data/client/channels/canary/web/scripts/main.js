@@ -37406,7 +37406,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292006", ", Version Hash: ").concat("74034531c5be10e37b8aa3c5660e97b13ccc619b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292022", ", Version Hash: ").concat("9f1105269499d845a6975a485409d4315116861c")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -71657,7 +71657,7 @@
                 }
             }
 
-            function s(e, t) {
+            function s(e, t, n) {
                 try {
                     return t()
                 } catch (t) {
@@ -71666,12 +71666,13 @@
                         args: {
                             error: t,
                             action: "tryLoadOrResetCacheGateway (".concat(e, ")"),
+                            metricAction: "tryLoadOrResetCacheGateway (".concat(null != n ? n : e, ")"),
                             clearCache: !0
                         }
                     }), null
                 }
             }
-            async function o(e, t) {
+            async function o(e, t, n) {
                 try {
                     return await t()
                 } catch (t) {
@@ -71680,6 +71681,7 @@
                         args: {
                             error: t,
                             action: "tryLoadOrResetCacheGatewayAsync (".concat(e, ")"),
+                            metricAction: "tryLoadOrResetCacheGatewayAsync (".concat(null != n ? n : e, ")"),
                             clearCache: !0
                         }
                     }), null
@@ -74736,7 +74738,7 @@
                     neverLoadBeforeConnectionOpen: !0
                 },
                 ContentInventoryManager: {
-                    actions: ["POST_CONNECTION_OPEN", "CONNECTION_CLOSED", "IDLE", "WINDOW_FOCUS", "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN", "SPOTIFY_NEW_TRACK"],
+                    actions: ["POST_CONNECTION_OPEN", "CONNECTION_CLOSED", "IDLE", "WINDOW_FOCUS", "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN", "CONTENT_INVENTORY_MANUAL_REFRESH", "SPOTIFY_NEW_TRACK"],
                     inlineRequire: () => n("342879").default,
                     neverLoadBeforeConnectionOpen: !0
                 },
@@ -88495,8 +88497,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292006", "292006"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292006")), t = 0), t
+                let t = parseInt((e = "292022", "292022"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292022")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -113711,7 +113713,10 @@
                 E = setTimeout(() => m(), null == t ? 0 : new Date(t).getTime() - Date.now())
             }
             async function m() {
-                if (S()) try {
+                let {
+                    force: e = !1
+                } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+                if (S() || e) try {
                     I = !0;
                     let e = await (0, u.getMyContentInventory)();
                     i.default.dispatch({
@@ -113731,14 +113736,20 @@
                 A()
             }
 
-            function p(e) {
+            function p() {
+                h(), m({
+                    force: !0
+                })
+            }
+
+            function O(e) {
                 let {
                     connectionId: t,
                     track: n
                 } = e;
                 if (null != t)(0, l.isEligibleForListenedMediaInventory)("ContentInventoryManager.handleSpotifyNewTrack") && (0, u.postTrackToContentInventory)(t, n)
             }
-            class O extends r.default {
+            class R extends r.default {
                 constructor(...e) {
                     var t, n, i;
                     super(...e), t = this, n = "actions", i = {
@@ -113747,7 +113758,8 @@
                         WINDOW_FOCUS: N,
                         IDLE: N,
                         CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: N,
-                        SPOTIFY_NEW_TRACK: p
+                        CONTENT_INVENTORY_MANUAL_REFRESH: p,
+                        SPOTIFY_NEW_TRACK: O
                     }, n in t ? Object.defineProperty(t, n, {
                         value: i,
                         enumerable: !0,
@@ -113756,59 +113768,69 @@
                     }) : t[n] = i
                 }
             }
-            t.default = new O
+            t.default = new R
         },
         146282: function(e, t, n) {
             "use strict";
+            let i;
             n.r(t), n("47120");
-            var i, r, a, s, o = n("442837"),
-                l = n("570140");
-            let u = new Map,
-                d = !1;
+            var r, a, s, o, l = n("442837"),
+                u = n("570140");
+            let d = new Map,
+                _ = !1;
 
-            function _(e) {
-                e(u), u = new Map(u)
+            function c(e) {
+                e(d), d = new Map(d)
             }
-            class c extends(i = o.default.Store) {
+            class E extends(r = l.default.Store) {
                 getFeeds() {
-                    return u
+                    return d
                 }
                 getFeed(e) {
-                    return u.get(e)
+                    return d.get(e)
+                }
+                getFilters() {
+                    return i
                 }
                 getFeedRequestId(e) {
                     var t;
                     return null === (t = this.getFeed(e)) || void 0 === t ? void 0 : t.request_id
                 }
                 get hidden() {
-                    return d
+                    return _
                 }
             }
-            s = "ContentInventoryStore", (a = "displayName") in(r = c) ? Object.defineProperty(r, a, {
-                value: s,
+            o = "ContentInventoryStore", (s = "displayName") in(a = E) ? Object.defineProperty(a, s, {
+                value: o,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : r[a] = s, t.default = new c(l.default, {
+            }) : a[s] = o, t.default = new E(u.default, {
                 CONNECTION_OPEN: function() {
-                    u = new Map, d = !1
+                    d = new Map, _ = !1
                 },
                 CONTENT_INVENTORY_SET_FEED: function(e) {
                     let {
                         feedId: t,
                         feed: n
                     } = e;
-                    _(e => e.set(t, n))
+                    c(e => e.set(t, n))
+                },
+                CONTENT_INVENTORY_SET_FILTERS: function(e) {
+                    let {
+                        filters: t
+                    } = e;
+                    i = t
                 },
                 CONTENT_INVENTORY_CLEAR_FEED: function(e) {
                     let {
                         feedId: t
                     } = e;
-                    if (!u.has(t)) return !1;
-                    _(e => e.delete(t))
+                    if (!d.has(t)) return !1;
+                    c(e => e.delete(t))
                 },
                 CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN: function() {
-                    d = !d
+                    _ = !_
                 }
             })
         },
@@ -115856,8 +115878,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292006",
-                    versionHash: "74034531c5be10e37b8aa3c5660e97b13ccc619b"
+                    buildNumber: "292022",
+                    versionHash: "9f1105269499d845a6975a485409d4315116861c"
                 }
             }
             n.r(t), n.d(t, {
@@ -133530,11 +133552,12 @@
                 resetSocketOnError(e) {
                     let {
                         action: t,
-                        error: n
+                        error: n,
+                        metricAction: i
                     } = e;
                     B.error("resetSocketOnError during ".concat(t, ": ").concat(n.message), n.stack), S.default.increment({
                         name: l.MetricEvents.SOCKET_CRASHED,
-                        tags: ["action:".concat(t)]
+                        tags: ["action:".concat(null != i ? i : t)]
                     }, !0), !1 !== e.sentry && R.default.captureException(n, {
                         tags: {
                             socketCrashedAction: t
@@ -133544,8 +133567,8 @@
                         error_stack: n.stack,
                         action: t
                     }), this._cleanup(e => e.close()), this._reset(!0, 1e3, "Resetting socket due to error."), this.dispatcher.clear(), this.connectionState = C.default.WILL_RECONNECT, this.dispatchExceptionBackoff.cancel();
-                    let i = e.clearCache || this.dispatchExceptionBackoff._fails > 0;
-                    0 === this.dispatchExceptionBackoff._fails ? (B.verbose("Triggering fast reconnect"), this.dispatchExceptionBackoff.fail(() => {}), setTimeout(() => this._connect(), 0)) : this.dispatchExceptionBackoff.fail(() => this._connect()), i && (this.didForceClearGuildHashes = !0, _.default.dispatch({
+                    let r = e.clearCache || this.dispatchExceptionBackoff._fails > 0;
+                    0 === this.dispatchExceptionBackoff._fails ? (B.verbose("Triggering fast reconnect"), this.dispatchExceptionBackoff.fail(() => {}), setTimeout(() => this._connect(), 0)) : this.dispatchExceptionBackoff.fail(() => this._connect()), r && (this.didForceClearGuildHashes = !0, _.default.dispatch({
                         type: "CLEAR_CACHES",
                         reason: "Socket reset during ".concat(t)
                     })), clearTimeout(this.dispatchSuccessTimer), this.dispatchSuccessTimer = setTimeout(() => this.dispatchExceptionBackoff.succeed(), 2 * H)
@@ -171594,8 +171617,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715287298974",
-                                    build_number: "292006"
+                                    built_at: "1715287790873",
+                                    build_number: "292022"
                                 }
                             },
                             retries: 1
@@ -228852,7 +228875,7 @@
                 let i = c.default.database();
                 if (null == i) return;
                 L.verbose("hydrating guild (guild: ".concat(e, ", trace: ").concat(n, ")"));
-                let r = (0, E.tryLoadOrResetCacheGateway)("ensureGuildLoaded(".concat(e, ")"), () => I.default.getSync(i, e));
+                let r = (0, E.tryLoadOrResetCacheGateway)("ensureGuildLoaded(".concat(e, ")"), () => I.default.getSync(i, e), "ensureGuildLoaded");
                 if (null == r) {
                     k.add(e), T.default.restored(e), L.log("load returned null; early returning (guild: ".concat(e, ", database: ").concat(i, ")"));
                     return
@@ -250095,7 +250118,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "74034531c5be10e37b8aa3c5660e97b13ccc619b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9f1105269499d845a6975a485409d4315116861c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279041,7 +279064,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292006"
+                                build_number: "292022"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286394,7 +286417,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292006", "292006"), 10);
+                let a = parseInt((n = "292022", "292022"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314016,4 +314039,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.ddc2b4a48b2e38297ad0.js.map
+//# sourceMappingURL=35705.ffa4c24288baee9074be.js.map
