@@ -37406,7 +37406,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292073", ", Version Hash: ").concat("0fdb6e1ce0db2b23c0e867070c13dbcfc8259872")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292085", ", Version Hash: ").concat("2b9873bc1dac985273de669df2eae2848429b499")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -39555,6 +39555,7 @@
                 EMBEDDED_ACTIVITIES_LAUNCH_FAIL_GUILD_SIZE: "You cannot launch this activity in a server with more than 25 members",
                 EMBEDDED_ACTIVITIES_EXTERNAL_APP_LAUNCH_TITLE: "External Application",
                 EMBEDDED_ACTIVITIES_EXTERNAL_APP_LAUNCH_DESCRIPTION: "You're about to launch an external app. Do you want to continue?",
+                EMBEDDED_ACTIVITIES_MINI_SHELF_DEATH_BY_AI_POSTER: "Death By AI",
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_ENDED: "Activity ended. Start a new one?",
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_PRESENCE: "Activity started",
                 EMBEDDED_ACTIVITIES_INSTANCE_EMBED_NO_VOICE_PERMISSION: "You do not have permissions to join this Voice Channel.",
@@ -66101,7 +66102,7 @@
                     return C
                 },
                 ACTIVITY_SHELF_WEB_MODAL_KEY: function() {
-                    return $
+                    return ee
                 },
                 AM_HARMONY_PRD_APPLICATION_ID: function() {
                     return X
@@ -66110,10 +66111,10 @@
                     return Z
                 },
                 APPLICATIONS_WITH_ALLOWED_POPUPS: function() {
-                    return ee
+                    return et
                 },
                 APPLICATIONS_WITH_NO_REFFERER: function() {
-                    return et
+                    return en
                 },
                 ActivityFeedbackReasons: function() {
                     return i
@@ -66157,11 +66158,14 @@
                 COLOR_TOGETHER_APPLICATION_ID: function() {
                     return U
                 },
+                DEATH_BY_AI_APPLICATION_ID: function() {
+                    return Q
+                },
                 DEFAULT_EMBEDDED_ACTIVITY_CONFIG: function() {
-                    return ei
+                    return er
                 },
                 EMBEDDED_ACTIVITY_SURVEY_URL: function() {
-                    return Q
+                    return q
                 },
                 END_GAME_APPLICATION_ID: function() {
                     return v
@@ -66173,7 +66177,7 @@
                     return P
                 },
                 ImageSizes: function() {
-                    return q
+                    return J
                 },
                 JAM_SPACE_APPLICATION_ID: function() {
                     return y
@@ -66194,7 +66198,7 @@
                     return H
                 },
                 PRIVATE_APPS_HELP_ARTICLE: function() {
-                    return ea
+                    return es
                 },
                 PUTT_PARTY_APPLICATION_ID: function() {
                     return K
@@ -66203,10 +66207,10 @@
                     return b
                 },
                 STAFF_RELEASE_PHASES: function() {
-                    return J
+                    return $
                 },
                 SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES: function() {
-                    return er
+                    return ea
                 },
                 WATCH_YOUTUBE_PROD_APP_ID: function() {
                     return w
@@ -66248,38 +66252,39 @@
                 z = "1011683823555199066",
                 Z = "1234546995360694434",
                 X = "1214629548377768066",
-                Q = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
-                q = {
+                Q = "1194351737264406548",
+                q = "https://discord.sjc1.qualtrics.com/jfe/form/SV_6SvWAOxlcSRWiEu",
+                J = {
                     SMALL: 64,
                     LARGE: 160
                 },
-                J = ["in_development", "activities_team", "employee_release"];
+                $ = ["in_development", "activities_team", "employee_release"];
             (E = i || (i = {})).ADS = "ADS", E.FAILED_LOAD = "FAILED_LOAD", E.LAGGING = "LAGGING", E.CONFUSING = "CONFUSING", E.NOT_FUN = "NOT_FUN", E.OTHER = "OTHER", (I = r || (r = {}))[I.PLAY = 0] = "PLAY", I[I.SPECTATE = 1] = "SPECTATE", (T = a || (a = {})).DESKTOP = "desktop", T.MOBILE = "mobile", (f = s || (s = {})).BETRAYAL_MARKETING_TOOLTIP = "BETRAYAL_MARKETING_TOOLTIP", f.FISHINGTON_MARKETING_TOOLTIP = "FISHINGTON_MARKETING_TOOLTIP", f.POKER_MARKETING_TOOLTIP = "POKER_MARKETING_TOOLTIP", f.YOUTUBE_MARKETING_TOOLTIP = "YOUTUBE_MARKETING_TOOLTIP", (S = o || (o = {}))[S.NO_UPDATE = 0] = "NO_UPDATE", S[S.ACTIVITY_STATE_UPDATE = 1] = "ACTIVITY_STATE_UPDATE", S[S.ACTIVITY_STARTED = 2] = "ACTIVITY_STARTED", S[S.ACTIVITY_ENDED = 3] = "ACTIVITY_ENDED", S[S.USER_JOINED = 4] = "USER_JOINED", S[S.USER_LEFT = 5] = "USER_LEFT", S[S.ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST = 6] = "ACTIVITY_TERMINATED_NO_ELIGIBLE_HOST", (h = l || (l = {}))[h.UNLOCKED = 1] = "UNLOCKED", h[h.PORTRAIT = 2] = "PORTRAIT", h[h.LANDSCAPE = 3] = "LANDSCAPE", (A = u || (u = {}))[A.DIRECTORY = 0] = "DIRECTORY", A[A.SELECT_CHANNEL = 1] = "SELECT_CHANNEL", A[A.DETAIL_PAGE = 2] = "DETAIL_PAGE";
-            let $ = "activity-shelf",
-                ee = new Set(["755600276941176913", D, M, w]),
-                et = new Set([D, M, w]);
+            let ee = "activity-shelf",
+                et = new Set(["755600276941176913", D, M, w]),
+                en = new Set([D, M, w]);
             (m = d || (d = {})).DISCORD_TURNS_8 = "DISCORD_TURNS_8", m.GDM_ACTIVITIES = "GDM_ACTIVITIES", m.PUTT_PARTY = "PUTT_PARTY", m.JAMSPACE_OLD = "JAMSPACE", m.JAMSPACE = "JAMSPACE2", m.POKER = "POKER", m.FREE = "FREE", (N = _ || (_ = {}))[N.PORTRAIT = 0] = "PORTRAIT", N[N.LANDSCAPE = 1] = "LANDSCAPE", (p = c || (c = {}))[p.FOCUSED = 0] = "FOCUSED", p[p.PIP = 1] = "PIP", p[p.GRID = 2] = "GRID";
-            let en = {
+            let ei = {
                     label_type: O.EmbeddedActivityLabelTypes.NONE,
                     release_phase: "",
                     label_until: null
                 },
-                ei = {
+                er = {
                     application_id: "",
                     requires_age_gate: !1,
                     default_orientation_lock_state: 1,
                     tablet_default_orientation_lock_state: 1,
                     supported_platforms: [O.EmbeddedActivitySupportedPlatforms.WEB],
                     client_platform_config: {
-                        [O.EmbeddedActivitySupportedPlatforms.WEB]: en,
-                        [O.EmbeddedActivitySupportedPlatforms.IOS]: en,
-                        [O.EmbeddedActivitySupportedPlatforms.ANDROID]: en
+                        [O.EmbeddedActivitySupportedPlatforms.WEB]: ei,
+                        [O.EmbeddedActivitySupportedPlatforms.IOS]: ei,
+                        [O.EmbeddedActivitySupportedPlatforms.ANDROID]: ei
                     },
                     has_csp_exception: !1,
                     displays_advertisements: !1
                 },
-                er = [R.ChannelTypes.GUILD_TEXT, R.ChannelTypes.DM, R.ChannelTypes.GROUP_DM],
-                ea = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety"
+                ea = [R.ChannelTypes.GUILD_TEXT, R.ChannelTypes.DM, R.ChannelTypes.GROUP_DM],
+                es = "https://support-dev.discord.com/hc/en-us/articles/21692628851351-Private-Activity-Safety"
         },
         337682: function(e, t, n) {
             "use strict";
@@ -88500,8 +88505,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292073", "292073"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292073")), t = 0), t
+                let t = parseInt((e = "292085", "292085"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292085")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115881,8 +115886,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292073",
-                    versionHash: "0fdb6e1ce0db2b23c0e867070c13dbcfc8259872"
+                    buildNumber: "292085",
+                    versionHash: "2b9873bc1dac985273de669df2eae2848429b499"
                 }
             }
             n.r(t), n.d(t, {
@@ -171620,8 +171625,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715290382078",
-                                    build_number: "292073"
+                                    built_at: "1715291221744",
+                                    build_number: "292085"
                                 }
                             },
                             retries: 1
@@ -250121,7 +250126,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0fdb6e1ce0db2b23c0e867070c13dbcfc8259872"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "2b9873bc1dac985273de669df2eae2848429b499"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279067,7 +279072,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292073"
+                                build_number: "292085"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286420,7 +286425,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292073", "292073"), 10);
+                let a = parseInt((n = "292085", "292085"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314042,4 +314047,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.475e593c0d8e1bc99a77.js.map
+//# sourceMappingURL=35705.2b054459a8de31906dbc.js.map
