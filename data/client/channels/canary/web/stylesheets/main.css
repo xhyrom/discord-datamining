@@ -119686,6 +119686,20 @@ html .invoiceCancelRow__6ff3e {
     margin: 0 auto
 }
 
+.fadeInAvatarImg__1b38b {
+    animation: fadeIn_fef79b 1.5s
+}
+
+@keyframes fadeIn_fef79b {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
 .page__8ffff {
     width: 100%;
     max-width: 1124px;
@@ -136901,4 +136915,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.854d184cb41366b7bd78.css.map*/
+/*# sourceMappingURL=99387.4ba751321dd87a066ec5.css.map*/

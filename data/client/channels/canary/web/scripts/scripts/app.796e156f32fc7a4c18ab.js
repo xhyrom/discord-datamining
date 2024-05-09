@@ -5929,6 +5929,8 @@
                 description: "description_e42a26",
                 detailsWrapper: "detailsWrapper__51cc5",
                 errorImg: "errorImg__9eaa9",
+                fadeIn: "fadeIn_fef79b",
+                fadeInAvatarImg: "fadeInAvatarImg__1b38b",
                 hoverUpsellContainer: "hoverUpsellContainer__33ac1",
                 innerBlur: "innerBlur_fbd376",
                 innerHover: "innerHover_a72c9b",
