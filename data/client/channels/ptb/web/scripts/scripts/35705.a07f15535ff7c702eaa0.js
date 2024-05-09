@@ -37406,7 +37406,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292085", ", Version Hash: ").concat("2b9873bc1dac985273de669df2eae2848429b499")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292089", ", Version Hash: ").concat("d1b468d586776f9912ea8f7c38cde42e1ab6900a")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88505,8 +88505,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292085", "292085"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292085")), t = 0), t
+                let t = parseInt((e = "292089", "292089"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292089")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103017,6 +103017,9 @@
                 trackClanApplicationNavigation: function() {
                     return R
                 },
+                trackClanApplicationViewed: function() {
+                    return C
+                },
                 trackClanApplyToJoinViewed: function() {
                     return u
                 },
@@ -103254,6 +103257,20 @@
                     guild_id: t,
                     source: n,
                     tab: i
+                })
+            }
+
+            function C(e) {
+                let {
+                    guildId: t,
+                    applicationUserId: n,
+                    applicationStatus: r
+                } = e;
+                a.default.track(o.AnalyticEvents.CLAN_APPLICATION_VIEWED, {
+                    guild_id: t,
+                    viewing_user_id: i.default.getId(),
+                    application_user_id: n,
+                    application_status: r
                 })
             }
         },
@@ -115886,8 +115903,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292085",
-                    versionHash: "2b9873bc1dac985273de669df2eae2848429b499"
+                    buildNumber: "292089",
+                    versionHash: "d1b468d586776f9912ea8f7c38cde42e1ab6900a"
                 }
             }
             n.r(t), n.d(t, {
@@ -144206,26 +144223,27 @@
             var i = n("544891"),
                 r = n("570140"),
                 a = n("287734"),
-                s = n("131704"),
-                o = n("246364"),
-                l = n("937111"),
-                u = n("981631");
-            let d = async e => {
+                s = n("970606"),
+                o = n("131704"),
+                l = n("246364"),
+                u = n("937111"),
+                d = n("981631");
+            let _ = async e => {
                 let t = await i.HTTP.get({
-                        url: u.Endpoints.GUILD_JOIN_REQUEST_BY_ID(e)
+                        url: d.Endpoints.GUILD_JOIN_REQUEST_BY_ID(e)
                     }),
-                    n = (0, l.joinRequestFromServer)(t.body);
+                    n = (0, u.joinRequestFromServer)(t.body);
                 return r.default.dispatch({
                     type: "GUILD_JOIN_REQUEST_BY_ID_FETCH_SUCCESS",
                     joinRequest: n
                 }), t
-            }, _ = async e => {
+            }, c = async e => {
                 let {
                     guildId: t,
-                    status: n = o.GuildJoinRequestApplicationStatuses.SUBMITTED,
+                    status: n = l.GuildJoinRequestApplicationStatuses.SUBMITTED,
                     before: a,
                     after: s,
-                    limit: d = o.MAX_RESULTS_PER_PAGE
+                    limit: o = l.MAX_RESULTS_PER_PAGE
                 } = e;
                 r.default.dispatch({
                     type: "GUILD_JOIN_REQUESTS_FETCH_START"
@@ -144233,22 +144251,22 @@
                 try {
                     var _;
                     let e = await i.HTTP.get({
-                            url: u.Endpoints.GUILD_JOIN_REQUESTS(t),
+                            url: d.Endpoints.GUILD_JOIN_REQUESTS(t),
                             query: {
                                 status: n,
-                                limit: d,
+                                limit: o,
                                 before: a,
                                 after: s
                             }
                         }),
-                        o = e.body.total,
-                        c = (null !== (_ = e.body.guild_join_requests) && void 0 !== _ ? _ : []).map(l.joinRequestFromServer);
+                        l = e.body.total,
+                        c = (null !== (_ = e.body.guild_join_requests) && void 0 !== _ ? _ : []).map(u.joinRequestFromServer);
                     return r.default.dispatch({
                         type: "GUILD_JOIN_REQUESTS_FETCH_SUCCESS",
                         status: n,
                         requests: c,
-                        total: o,
-                        limit: d,
+                        total: l,
+                        limit: o,
                         guildId: t
                     }), e
                 } catch (e) {
@@ -144256,10 +144274,10 @@
                         type: "GUILD_JOIN_REQUESTS_FETCH_FAILURE"
                     }), e
                 }
-            }, c = async e => {
+            }, E = async e => {
                 try {
                     let t = await i.HTTP.del({
-                        url: u.Endpoints.GUILD_MEMBER_REQUEST_TO_JOIN(e)
+                        url: d.Endpoints.GUILD_MEMBER_REQUEST_TO_JOIN(e)
                     });
                     return r.default.dispatch({
                         type: "USER_GUILD_JOIN_REQUEST_UPDATE",
@@ -144269,10 +144287,10 @@
                 } catch (e) {
                     throw e
                 }
-            }, E = async (e, t) => {
+            }, I = async (e, t) => {
                 try {
                     return await i.HTTP.post({
-                        url: u.Endpoints.GUILD_JOIN_REQUEST_ACK(e, t)
+                        url: d.Endpoints.GUILD_JOIN_REQUEST_ACK(e, t)
                     })
                 } catch (e) {} finally {
                     r.default.dispatch({
@@ -144281,11 +144299,11 @@
                         guildId: e
                     })
                 }
-            }, I = async function(e, t) {
-                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : o.GuildJoinRequestApplicationStatuses.APPROVED,
+            }, T = async function(e, t) {
+                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : l.GuildJoinRequestApplicationStatuses.APPROVED,
                     a = arguments.length > 3 ? arguments[3] : void 0,
                     s = await i.HTTP.patch({
-                        url: u.Endpoints.GUILD_JOIN_REQUEST(e, t),
+                        url: d.Endpoints.GUILD_JOIN_REQUEST(e, t),
                         body: {
                             action: n,
                             rejection_reason: a
@@ -144297,9 +144315,9 @@
                     status: s.body.application_status,
                     request: s.body
                 })
-            }, T = async (e, t) => {
+            }, f = async (e, t) => {
                 let n = await i.HTTP.patch({
-                    url: u.Endpoints.GUILD_JOIN_REQUESTS(e),
+                    url: d.Endpoints.GUILD_JOIN_REQUESTS(e),
                     body: {
                         action: t
                     }
@@ -144309,12 +144327,12 @@
                     guildId: e,
                     action: t
                 }), n.body
-            }, f = async e => {
+            }, S = async e => {
                 try {
                     let {
                         body: t
                     } = await i.HTTP.post({
-                        url: u.Endpoints.GUILD_MEMBER_REQUEST_TO_JOIN(e)
+                        url: d.Endpoints.GUILD_MEMBER_REQUEST_TO_JOIN(e)
                     });
                     return r.default.dispatch({
                         type: "USER_GUILD_JOIN_REQUEST_UPDATE",
@@ -144324,34 +144342,34 @@
                 } catch (e) {
                     throw e
                 }
-            }, S = async () => {
+            }, h = async () => {
                 let e = await i.HTTP.get({
-                    url: u.Endpoints.USER_JOIN_REQUEST_GUILDS
+                    url: d.Endpoints.USER_JOIN_REQUEST_GUILDS
                 });
                 r.default.dispatch({
                     type: "USER_JOIN_REQUEST_GUILDS_FETCH",
                     guilds: e.body
                 })
-            }, h = async function(e) {
+            }, A = async function(e) {
                 let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
                     n = await i.HTTP.post({
-                        url: u.Endpoints.GUILD_JOIN_REQUEST_INTERVIEW(e)
+                        url: d.Endpoints.GUILD_JOIN_REQUEST_INTERVIEW(e)
                     }),
-                    o = (0, s.createChannelRecordFromServer)(n.body);
+                    s = (0, o.createChannelRecordFromServer)(n.body);
                 return r.default.dispatch({
                     type: "CHANNEL_CREATE",
-                    channel: o
-                }), t && a.default.selectPrivateChannel(o.id), o.id
+                    channel: s
+                }), t && a.default.selectPrivateChannel(s.id), s.id
             };
             t.default = {
-                fetchGuildJoinRequest: d,
-                fetchGuildJoinRequests: _,
-                ackUserGuildJoinRequest: E,
-                removeGuildJoinRequest: c,
-                updateGuildJoinRequest: I,
-                actionAllPendingJoinRequests: T,
-                resetGuildJoinRequest: f,
-                fetchRequestToJoinGuilds: S,
+                fetchGuildJoinRequest: _,
+                fetchGuildJoinRequests: c,
+                ackUserGuildJoinRequest: I,
+                removeGuildJoinRequest: E,
+                updateGuildJoinRequest: T,
+                actionAllPendingJoinRequests: f,
+                resetGuildJoinRequest: S,
+                fetchRequestToJoinGuilds: h,
                 setSelectedApplicationTab: (e, t) => {
                     r.default.dispatch({
                         type: "GUILD_JOIN_REQUESTS_SET_APPLICATION_TAB",
@@ -144367,13 +144385,17 @@
                     })
                 },
                 setSelectedGuildJoinRequest: (e, t) => {
-                    r.default.dispatch({
+                    null != t && (0, s.trackClanApplicationViewed)({
+                        guildId: e,
+                        applicationStatus: t.applicationStatus,
+                        applicationUserId: t.userId
+                    }), r.default.dispatch({
                         type: "GUILD_JOIN_REQUESTS_SET_SELECTED",
                         guildId: e,
                         request: t
                     })
                 },
-                createOrEnterJoinRequestInterview: h
+                createOrEnterJoinRequestInterview: A
             }
         },
         826581: function(e, t, n) {
@@ -171625,8 +171647,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715291221744",
-                                    build_number: "292085"
+                                    built_at: "1715291777317",
+                                    build_number: "292089"
                                 }
                             },
                             retries: 1
@@ -250126,7 +250148,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "2b9873bc1dac985273de669df2eae2848429b499"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d1b468d586776f9912ea8f7c38cde42e1ab6900a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279072,7 +279094,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292085"
+                                build_number: "292089"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286425,7 +286447,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292085", "292085"), 10);
+                let a = parseInt((n = "292089", "292089"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314047,4 +314069,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.2b054459a8de31906dbc.js.map
+//# sourceMappingURL=35705.a07f15535ff7c702eaa0.js.map
