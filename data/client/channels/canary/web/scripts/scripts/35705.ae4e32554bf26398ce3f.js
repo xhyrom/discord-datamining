@@ -37406,7 +37406,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292140", ", Version Hash: ").concat("5b3e1927f78d9fcb1053af8f0e4cea57ed307cce")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292150", ", Version Hash: ").concat("67ea2982159e4dbb918a2278fda1f11355ed42bd")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56319,7 +56319,7 @@
                 CLAN_SETUP_UTILITY_TRAITS_CATEGORY_LANGUAGE: "Language",
                 CLAN_SETUP_UTILITY_TRAITS_CATEGORY_LOCALE: "Region",
                 CLAN_SETUP_INTERESTS_TITLE: "What does your Guild like to talk about?",
-                CLAN_SETUP_INTERESTS_SUBTITLE: "Add at least 3 topics that your Guild discusses or traits that you share. The more niche, the better, so you can find people with your same weird obsessions!",
+                CLAN_SETUP_INTERESTS_SUBTITLE: "Add at least **3 topics** that your Guild discusses or traits that you share. The more niche, the better, so you can find people with your same weird obsessions!",
                 CLAN_SETUP_INTERESTS_PLACEHOLDER: "Anime, Roman History, Sad Hamsters, etc...",
                 CLAN_SETUP_SELECTED_INTERESTS: "Selected Interests",
                 CLAN_SETUP_SUGGESTED_INTERESTS: "Some Ideas...",
@@ -56337,7 +56337,7 @@
                 CLAN_SETUP_SIGN_TITLE: "You're almost done!",
                 CLAN_SETUP_SIGN_SUBTITLE: "One last step - sign the charter to become a Guild.",
                 CLAN_SETUP_OPTIONAL: "Optional",
-                CLAN_SETUP_WILDCARDS_SUBTITLE: "Choose 3 worlds that describe your Guild. Be creative.",
+                CLAN_SETUP_WILDCARDS_SUBTITLE: "Choose 3 words that describe your Guild. Be creative.",
                 CLAN_SETUP_NUM_TRAITS: "{n, plural, one {1 Trait} other {{n} Traits}}",
                 CLAN_SETUP_GAMES_STEP: "Games",
                 CLAN_SETUP_PLAYSTYLE_STEP: "Playstyle",
@@ -88505,8 +88505,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292140", "292140"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292140")), t = 0), t
+                let t = parseInt((e = "292150", "292150"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292150")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103690,15 +103690,15 @@
                     valorantConfig: i,
                     genshinConfig: r
                 } = e;
-                return null !== (n = null !== (t = i.defaultGameId) && void 0 !== t ? t : r.defaultGameId) && void 0 !== n ? n : null
+                return null !== (n = null !== (t = r.defaultGameId) && void 0 !== t ? t : i.defaultGameId) && void 0 !== n ? n : null
             }
 
             function u(e) {
-                return (null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN_PILOT_VALORANT)) === !0
+                return (null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN_PILOT_VALORANT)) === !0 && (null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN)) === !1
             }
 
             function d(e) {
-                return (null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN_PILOT_GENSHIN)) === !0
+                return (null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN_PILOT_GENSHIN)) === !0 && (null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN)) === !1
             }
 
             function _(e, t) {
@@ -103734,8 +103734,41 @@
             }
 
             function c(e, t) {
-                let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
-                return _([e], t, n)
+                let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
+                    i = s.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: n
+                    });
+                return function(e) {
+                    let {
+                        guild: t,
+                        valorantConfig: n,
+                        genshinConfig: i
+                    } = e;
+                    if (null == t) return {
+                        defaultGameId: null,
+                        enableClanCreation: !1
+                    };
+                    let r = d(t),
+                        a = u(t),
+                        s = r && i.enableClanCreation;
+                    return {
+                        enableClanCreation: a && n.enableClanCreation || s,
+                        defaultGameId: l({
+                            genshinConfig: i,
+                            valorantConfig: n
+                        })
+                    }
+                }({
+                    guild: e,
+                    valorantConfig: i,
+                    genshinConfig: o.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: n
+                    })
+                })
             }
 
             function E(e, t) {
@@ -115903,8 +115936,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292140",
-                    versionHash: "5b3e1927f78d9fcb1053af8f0e4cea57ed307cce"
+                    buildNumber: "292150",
+                    versionHash: "67ea2982159e4dbb918a2278fda1f11355ed42bd"
                 }
             }
             n.r(t), n.d(t, {
@@ -153648,7 +153681,7 @@
                     },
                     async open(e, t, i, r) {
                         var a;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("23755"), n.e("70716"), n.e("80301"), n.e("33053"), n.e("56630"), n.e("49146"), n.e("4970"), n.e("90508"), n.e("75475"), n.e("85093"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("55012"), n.e("72278"), n.e("33361"), n.e("50916"), n.e("62856"), n.e("98854"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("33053"), n.e("56630"), n.e("49146"), n.e("4970"), n.e("90508"), n.e("75475"), n.e("85093"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("72317"), n.e("72278"), n.e("33361"), n.e("62856"), n.e("19874"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         a.default.dispatch({
@@ -171647,8 +171680,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715295136325",
-                                    build_number: "292140"
+                                    built_at: "1715295760591",
+                                    build_number: "292150"
                                 }
                             },
                             retries: 1
@@ -250148,7 +250181,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5b3e1927f78d9fcb1053af8f0e4cea57ed307cce"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "67ea2982159e4dbb918a2278fda1f11355ed42bd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279094,7 +279127,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292140"
+                                build_number: "292150"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286447,7 +286480,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292140", "292140"), 10);
+                let a = parseInt((n = "292150", "292150"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314069,4 +314102,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.921e797d605708a47d06.js.map
+//# sourceMappingURL=35705.ae4e32554bf26398ce3f.js.map
