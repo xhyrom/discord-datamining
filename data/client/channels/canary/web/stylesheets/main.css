@@ -48342,8 +48342,8 @@ div:has(>div>.modal__06f49) {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -136915,4 +136915,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c0556bdeef86c51872a1.css.map*/
+/*# sourceMappingURL=99387.21686f336336ac46cab8.css.map*/
