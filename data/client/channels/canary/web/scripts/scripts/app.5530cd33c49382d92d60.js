@@ -5374,6 +5374,7 @@
                 lightIcon: "lightIcon_b11aec",
                 lightOverlay: "lightOverlay_fe4bff",
                 midnightIcon: "midnightIcon__1aef4",
+                redCircle: "redCircle__0c879",
                 selected: "selected_de3345",
                 selectionCircle: "selectionCircle_aa3fcd",
                 themeSelection: "themeSelection_b3e3ae",
