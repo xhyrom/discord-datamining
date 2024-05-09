@@ -37404,7 +37404,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291871", ", Version Hash: ").concat("5aa6f26cc096af9199b123f38a9e0a3210e2935e")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291891", ", Version Hash: ").concat("798cfe664f6959f31e3c4d6327d15b4a48aa5975")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -48266,13 +48266,15 @@
                 CUSTOM_STATUS_CLEARS_IN_HOURS: "Clears in {hours} hours",
                 CUSTOM_STATUS_PLACEHOLDER: "What're you up to?",
                 CUSTOM_STATUS_DURATION: "Status Duration",
-                SYSTEM_DM_CHANNEL_DESCRIPTION: "This thread is reserved for official Discord notifications.",
+                SYSTEM_DM_CHANNEL_DESCRIPTION: "This chat is reserved for official Discord notifications.",
                 SYSTEM_DM_CHANNEL_DESCRIPTION_SUBTEXT: "Discord will never ask you for your password or account token.",
                 SYSTEM_DM_EMPTY_MESSAGE: "This is an official message from Team Discord. Please be advised that Discord will never ask you for your password or account token.",
                 SYSTEM_DM_TAG_SYSTEM: "SYSTEM",
                 SYSTEM_DM_ACTIVITY_TEXT: "Official Discord Message",
                 SYSTEM_DM_URGENT_MESSAGE_MODAL_HEADER: "Urgent Message",
                 SYSTEM_DM_URGENT_MESSAGE_MODAL_BODY: "There's an official message from the Discord team that needs your attention.",
+                SYSTEM_DM_CHANGELOG_BIO: "The official source for official Discord product updates, new features & patch notes.",
+                SYSTEM_DM_CHANGELOG_BIO_CTA: "Read our official changelog",
                 BUILD_OVERRIDE: "Build Override",
                 BUILD_OVERRIDE_FOR: "Build Override for {releaseChannel}",
                 BUILD_OVERRIDE_ID: "Commit Hash",
@@ -88197,6 +88199,9 @@
                 CHANGELOG_MODAL_KEY: function() {
                     return _
                 },
+                CHANGELOG_URL: function() {
+                    return E
+                },
                 ChangelogLoadState: function() {
                     return a
                 },
@@ -88208,7 +88213,8 @@
                 }
             });
             let _ = "CHANGELOG_MODAL",
-                c = "1232523165893132288";
+                c = "1232523165893132288",
+                E = "https://discord.com/category/product";
             (o = i || (i = {}))[o.DESKTOP = 0] = "DESKTOP", o[o.MOBILE = 1] = "MOBILE", (l = r || (r = {}))[l.YOUTUBE_VIDEO_ID = 0] = "YOUTUBE_VIDEO_ID", l[l.IMAGE = 1] = "IMAGE", (u = a || (a = {}))[u.NOT_LOADED = 0] = "NOT_LOADED", u[u.LOADED_SUCCESS = 1] = "LOADED_SUCCESS", u[u.LOADED_FAILURE = 2] = "LOADED_FAILURE", (d = s || (s = {})).SPECIAL = "special", d.STANDARD = "standard"
         },
         839627: function(e, t, n) {
@@ -88477,8 +88483,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291871", "291871"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291871")), t = 0), t
+                let t = parseInt((e = "291891", "291891"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291891")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -88519,6 +88525,19 @@
 
             function a(e) {
                 return e === i.default.getDMFromUserId(r.SYSTEM_UPDATES_USER_ID)
+            }
+        },
+        580552: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return r
+                }
+            });
+            var i = n("596401");
+
+            function r(e) {
+                return null != e && e === i.SYSTEM_UPDATES_USER_ID
             }
         },
         176505: function(e, t, n) {
@@ -115798,8 +115817,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291871",
-                    versionHash: "5aa6f26cc096af9199b123f38a9e0a3210e2935e"
+                    buildNumber: "291891",
+                    versionHash: "798cfe664f6959f31e3c4d6327d15b4a48aa5975"
                 }
             }
             n.r(t), n.d(t, {
@@ -171504,8 +171523,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715273934651",
-                                    build_number: "291871"
+                                    built_at: "1715276613604",
+                                    build_number: "291891"
                                 }
                             },
                             retries: 1
@@ -211660,7 +211679,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return _
+                    return I
                 }
             });
             var i = n("735250"),
@@ -211668,35 +211687,49 @@
                 a = n("120356"),
                 s = n.n(a),
                 o = n("481060"),
-                l = n("240991"),
-                u = n("278297"),
-                d = n("990291");
+                l = n("580552"),
+                u = n("240991"),
+                d = n("278297"),
+                _ = n("596401"),
+                c = n("689938"),
+                E = n("990291");
 
-            function _(e) {
+            function I(e) {
                 let {
                     userBio: t,
                     className: n,
                     animateOnHover: a = !1,
-                    isHovering: _ = !1,
-                    lineClamp: c = 6,
-                    setLineClamp: E = !0,
-                    textColor: I
-                } = e, T = r.useMemo(() => (0, l.parseBioReact)(t), [t]);
-                return (0, i.jsx)("div", {
-                    className: s()(n, d.markup),
+                    isHovering: I = !1,
+                    lineClamp: T = 6,
+                    setLineClamp: f = !0,
+                    textColor: S,
+                    userId: h
+                } = e, A = r.useMemo(() => null != t ? (0, u.parseBioReact)(t) : null, [t]);
+                return null == t && null == h ? null : ((0, l.default)(h) && (A = (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)("span", {
+                        children: c.default.Messages.SYSTEM_DM_CHANGELOG_BIO
+                    }), (0, i.jsx)("br", {}), (0, i.jsx)("br", {}), (0, i.jsx)(o.Anchor, {
+                        title: c.default.Messages.SYSTEM_DM_CHANGELOG_BIO_CTA,
+                        target: "_blank",
+                        rel: "noreferrer noopener",
+                        href: _.CHANGELOG_URL,
+                        children: c.default.Messages.SYSTEM_DM_CHANGELOG_BIO_CTA
+                    })]
+                })), (0, i.jsx)("div", {
+                    className: s()(n, E.markup),
                     children: (0, i.jsx)(o.Text, {
                         variant: "text-sm/normal",
-                        lineClamp: E ? c : void 0,
-                        color: void 0 !== I ? I : void 0,
-                        children: (0, i.jsx)(u.MessagesInteractionContext.Provider, {
+                        lineClamp: f ? T : void 0,
+                        color: void 0 !== S ? S : void 0,
+                        children: (0, i.jsx)(d.MessagesInteractionContext.Provider, {
                             value: {
-                                disableAnimations: a && !_,
+                                disableAnimations: a && !I,
                                 disableInteractions: !1
                             },
-                            children: T
+                            children: A
                         })
                     })
-                })
+                }))
             }
         },
         103575: function(e, t, n) {
@@ -215688,7 +215721,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return m
+                    return N
                 }
             });
             var i = n("735250");
@@ -215698,87 +215731,90 @@
                 s = n("442837"),
                 o = n("481060"),
                 l = n("2052"),
-                u = n("594174"),
-                d = n("346656"),
-                _ = n("466111"),
-                c = n("74538"),
-                E = n("588822"),
-                I = n("659101"),
-                T = n("981631"),
-                f = n("689938"),
-                S = n("378882"),
-                h = n("795197");
+                u = n("580552"),
+                d = n("594174"),
+                _ = n("346656"),
+                c = n("466111"),
+                E = n("74538"),
+                I = n("588822"),
+                T = n("659101"),
+                f = n("981631"),
+                S = n("689938"),
+                h = n("378882"),
+                A = n("795197");
 
-            function A(e) {
+            function m(e) {
                 let {
                     guildName: t
                 } = e;
                 return (0, i.jsxs)("div", {
-                    className: S.guildMemberProfileTooltip,
-                    children: [(0, i.jsx)(_.default, {
-                        className: S.guildMemberProfileTooltipNitroWheel
-                    }), f.default.Messages.GUILD_IDENTITY_BIO_TOAST.format({
+                    className: h.guildMemberProfileTooltip,
+                    children: [(0, i.jsx)(c.default, {
+                        className: h.guildMemberProfileTooltipNitroWheel
+                    }), S.default.Messages.GUILD_IDENTITY_BIO_TOAST.format({
                         guildName: t
                     })]
                 })
             }
 
-            function m(e) {
+            function N(e) {
                 let {
                     guild: t,
                     bio: r,
-                    hidePersonalInformation: _,
-                    isUsingGuildBio: m,
-                    lastSection: N = !1,
-                    animateOnHover: p = !1,
-                    isHovering: O = !1,
-                    lineClamp: R
+                    hidePersonalInformation: c,
+                    isUsingGuildBio: N,
+                    lastSection: p = !1,
+                    animateOnHover: O = !1,
+                    isHovering: R = !1,
+                    lineClamp: C,
+                    userId: g
                 } = e, {
-                    location: C
-                } = (0, l.useAnalyticsContext)(), g = (0, s.useStateFromStores)([u.default], () => u.default.getCurrentUser()), L = c.default.canUsePremiumGuildMemberProfile(g);
-                return _ || null == r || "" === r ? null : (0, i.jsxs)(I.default, {
-                    lastSection: N,
+                    location: L
+                } = (0, l.useAnalyticsContext)(), v = (0, s.useStateFromStores)([d.default], () => d.default.getCurrentUser()), D = E.default.canUsePremiumGuildMemberProfile(v), M = (0, u.default)(g);
+                return (c || null == r || "" === r) && !M ? null : (0, i.jsxs)(T.default, {
+                    lastSection: p,
                     children: [(0, i.jsxs)(o.Heading, {
                         variant: "eyebrow",
-                        className: h.title,
-                        children: [f.default.Messages.USER_POPOUT_ABOUT_ME, null != t && m && (0, i.jsx)(o.Tooltip, {
+                        className: A.title,
+                        children: [S.default.Messages.USER_POPOUT_ABOUT_ME, null != t && N && (0, i.jsx)(o.Tooltip, {
                             color: o.Tooltip.Colors.NESTED,
-                            tooltipClassName: S.aboutMeGuildIconTooltip,
-                            "aria-label": f.default.Messages.GUILD_IDENTITY_BIO_TOAST.format({
+                            tooltipClassName: h.aboutMeGuildIconTooltip,
+                            "aria-label": S.default.Messages.GUILD_IDENTITY_BIO_TOAST.format({
                                 guildName: t.name
                             }),
-                            text: (0, i.jsx)(A, {
+                            text: (0, i.jsx)(m, {
                                 guildName: t.name
                             }),
-                            children: e => (0, i.jsx)(d.default, {
+                            children: e => (0, i.jsx)(_.default, {
                                 ...e,
                                 onClick: () => {
                                     var t;
-                                    null == (t = e.onClick) || t(), null != g && !L && (0, o.openModalLazy)(async () => {
+                                    null == (t = e.onClick) || t(), null != v && !D && (0, o.openModalLazy)(async () => {
                                         let {
                                             default: e
                                         } = await n.e("84509").then(n.bind(n, "933696"));
                                         return t => (0, i.jsx)(e, {
                                             ...t,
                                             source: {
-                                                ...C,
-                                                object: T.AnalyticsObjects.GUILD_ICON
+                                                ...L,
+                                                object: f.AnalyticsObjects.GUILD_ICON
                                             }
                                         })
                                     })
                                 },
                                 guild: t,
-                                size: d.default.Sizes.SMOL,
-                                className: a()(S.aboutMeGuildIcon, {
-                                    [S.nonPremiumHoverState]: !L
+                                size: _.default.Sizes.SMOL,
+                                className: a()(h.aboutMeGuildIcon, {
+                                    [h.nonPremiumHoverState]: !D
                                 })
                             })
                         })]
-                    }), (0, i.jsx)(E.default, {
+                    }), (0, i.jsx)(I.default, {
                         userBio: r,
-                        animateOnHover: p,
-                        isHovering: O,
-                        lineClamp: R
+                        animateOnHover: O,
+                        isHovering: R,
+                        lineClamp: C,
+                        userId: g
                     })]
                 })
             }
@@ -249972,7 +250008,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5aa6f26cc096af9199b123f38a9e0a3210e2935e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "798cfe664f6959f31e3c4d6327d15b4a48aa5975"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278892,7 +278928,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291871"
+                                build_number: "291891"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286245,7 +286281,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291871", "291871"), 10);
+                let a = parseInt((n = "291891", "291891"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313850,4 +313886,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.febc1bd7fb7be95e9c10.js.map
+//# sourceMappingURL=35705.328bed0f98c03480a73b.js.map
