@@ -37406,7 +37406,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292115", ", Version Hash: ").concat("b0c544eb095b37b8c8a59381c17789285967b2fc")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292131", ", Version Hash: ").concat("f6aa7d26fd1e0727cfdc9297da16fdc6fc10174b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -80661,7 +80661,7 @@
                     path: _.Routes.APPLICATION_DIRECTORY_SEARCH,
                     exact: !0
                 }), a = (0, o.matchPath)(n, {
-                    path: [_.Routes.APPLICATION_DIRECTORY_PROFILE(":applicationId"), _.Routes.APPLICATION_DIRECTORY_PROFILE(":applicationId", ":section")],
+                    path: [_.Routes.APPLICATION_DIRECTORY_PROFILE(":applicationId"), _.Routes.APPLICATION_DIRECTORY_PROFILE_SECTION(":applicationId", ":section")],
                     exact: !0
                 }), {
                     applicationId: s,
@@ -80716,7 +80716,7 @@
                 ApplicationDirectoryProfileSections: function() {
                     return i
                 }
-            }), (r = i || (i = {})).GENERAL = "GENERAL", r.IMAGES = "IMAGES", r.PREMIUM = "PREMIUM", r.PRIVACY = "PRIVACY"
+            }), (r = i || (i = {})).GENERAL = "general", r.IMAGES = "images", r.PREMIUM = "premium", r.PRIVACY = "privacy"
         },
         395661: function(e, t, n) {
             "use strict";
@@ -88505,8 +88505,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292115", "292115"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292115")), t = 0), t
+                let t = parseInt((e = "292131", "292131"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292131")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115903,8 +115903,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292115",
-                    versionHash: "b0c544eb095b37b8c8a59381c17789285967b2fc"
+                    buildNumber: "292131",
+                    versionHash: "f6aa7d26fd1e0727cfdc9297da16fdc6fc10174b"
                 }
             }
             n.r(t), n.d(t, {
@@ -153648,7 +153648,7 @@
                     },
                     async open(e, t, i, r) {
                         var a;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("23755"), n.e("70716"), n.e("80301"), n.e("33053"), n.e("49146"), n.e("75475"), n.e("85093"), n.e("56630"), n.e("90508"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("71697"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("52332"), n.e("10333"), n.e("33361"), n.e("50916"), n.e("62856"), n.e("98854"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("23755"), n.e("70716"), n.e("80301"), n.e("33053"), n.e("56630"), n.e("49146"), n.e("4970"), n.e("90508"), n.e("75475"), n.e("85093"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("55012"), n.e("72278"), n.e("33361"), n.e("50916"), n.e("62856"), n.e("98854"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         a.default.dispatch({
@@ -171647,8 +171647,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715293633341",
-                                    build_number: "292115"
+                                    built_at: "1715294519382",
+                                    build_number: "292131"
                                 }
                             },
                             retries: 1
@@ -250148,7 +250148,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "b0c544eb095b37b8c8a59381c17789285967b2fc"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "f6aa7d26fd1e0727cfdc9297da16fdc6fc10174b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279094,7 +279094,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292115"
+                                build_number: "292131"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286447,7 +286447,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292115", "292115"), 10);
+                let a = parseInt((n = "292131", "292131"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313255,9 +313255,9 @@
                 ReleaseChannelsSets: function() {
                     return a
                 }
-            }), n("47120"), (r = i || (i = {})).STABLE = "stable", r.PTB = "ptb", r.CANARY = "canary", r.BETA_RELEASE = "betaRelease", r.CANARY_RELEASE = "canaryRelease", r.GOOGLE_RELEASE = "googleRelease", r.STAGING = "staging", r.DEVELOPMENT = "development";
+            }), n("47120"), (r = i || (i = {})).CANARY_RELEASE = "canaryRelease", r.BETA_RELEASE = "betaRelease", r.GOOGLE_RELEASE = "googleRelease", r.CANARY = "canary", r.PTB = "ptb", r.STABLE = "stable", r.ADHOC = "adhoc", r.STAGING = "staging", r.DEVELOPMENT = "development", r.N_A = "N/A";
             let a = {
-                ALL: new Set(["betaRelease", "canary", "canaryRelease", "development", "googleRelease", "ptb", "stable", "staging"])
+                ALL: new Set(["N/A", "adhoc", "betaRelease", "canary", "canaryRelease", "development", "googleRelease", "ptb", "stable", "staging"])
             }
         },
         697988: function(e, t, n) {
@@ -314069,4 +314069,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.d26a2fdd34a63552fc5f.js.map
+//# sourceMappingURL=35705.5dc868c9e530edce586d.js.map
