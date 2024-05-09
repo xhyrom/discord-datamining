@@ -18016,21 +18016,23 @@
                     emoji: t,
                     className: n,
                     animate: r = !0,
-                    hideTooltip: a
-                } = e, o = h.AnimateEmoji.useSetting(), l = null != t.id ? ":".concat(t.name, ":") : I.default.translateSurrogatesToInlineEmoji(t.name), _ = {
+                    hideTooltip: a,
+                    tooltipDelay: o
+                } = e, l = h.AnimateEmoji.useSetting(), _ = null != t.id ? ":".concat(t.name, ":") : I.default.translateSurrogatesToInlineEmoji(t.name), c = {
                     className: s()(g.emoji, n),
                     emojiId: t.id,
                     emojiName: t.name,
                     autoplay: !0,
-                    animated: !!(t.animated && o && r)
+                    animated: !!(t.animated && l && r)
                 };
                 return a ? (0, i.jsx)(d.default, {
-                    ..._
+                    ...c
                 }) : (0, i.jsx)(u.Tooltip, {
-                    text: l,
+                    text: _,
+                    delay: o,
                     children: e => (0, i.jsx)(d.default, {
                         ...e,
-                        ..._
+                        ...c
                     })
                 })
             }
@@ -22151,29 +22153,30 @@
                     typingIndicatorRef: f,
                     isSpeaking: S = !1,
                     statusTooltip: A = !1,
-                    statusBackdropColor: m,
-                    "aria-hidden": O = !1,
-                    "aria-label": g,
-                    imageClassName: L
-                } = e, v = n !== T.StatusTypes.UNKNOWN ? n : null, D = (0, I.getAvatarSpecs)(r), M = null != v ? Math.ceil((D.status * I.TYPING_WIDTH_RATIO - D.status) / 2) : 0, y = D.size + M, P = (0, d.useStatusFillColor)(v, a);
+                    statusTooltipDelay: m,
+                    statusBackdropColor: O,
+                    "aria-hidden": g = !1,
+                    "aria-label": L,
+                    imageClassName: v
+                } = e, D = n !== T.StatusTypes.UNKNOWN ? n : null, M = (0, I.getAvatarSpecs)(r), y = null != D ? Math.ceil((M.status * I.TYPING_WIDTH_RATIO - M.status) / 2) : 0, P = M.size + y, U = (0, d.useStatusFillColor)(D, a);
                 return (0, i.jsx)(R, {
                     ...e,
-                    ariaLabel: g,
-                    ariaHidden: O,
-                    status: v,
-                    specs: D,
-                    typingOffset: M,
+                    ariaLabel: L,
+                    ariaHidden: g,
+                    status: D,
+                    specs: M,
+                    typingOffset: y,
                     children: (0, i.jsxs)("svg", {
-                        width: y,
-                        height: y,
-                        viewBox: "0 0 ".concat(y, " ").concat(y),
+                        width: P,
+                        height: P,
+                        viewBox: "0 0 ".concat(P, " ").concat(P),
                         className: s()(h.mask, h.svg),
                         "aria-hidden": !0,
                         children: [(0, i.jsx)("foreignObject", {
                             x: 0,
                             y: 0,
-                            width: D.size,
-                            height: D.size,
+                            width: M.size,
+                            height: M.size,
                             mask: "url(#".concat(function(e, t, n, i) {
                                 if (null == e) return c.MaskIDs.AVATAR_DEFAULT;
                                 if (i) switch (t) {
@@ -22237,29 +22240,30 @@
                                         return c.MaskIDs.AVATAR_STATUS_ROUND_120
                                 }
                                 throw Error("getMaskId(): Unsupported type, size: ".concat(t, ", status: ").concat(e, ", isMobile: ").concat(n ? "true" : "false"))
-                            }(v, r, o, l), ")"),
+                            }(D, r, o, l), ")"),
                             children: (0, i.jsx)(C, {
                                 src: t,
                                 isSpeaking: S,
-                                className: L
+                                className: v
                             })
-                        }), null != v ? (0, i.jsx)(_.Tooltip, {
-                            text: A ? (0, E.humanizeStatus)(v) : null,
+                        }), null != D ? (0, i.jsx)(_.Tooltip, {
+                            text: A ? (0, E.humanizeStatus)(D) : null,
                             "aria-label": !1,
                             position: "top",
-                            spacing: 5 + 1.5 * D.stroke,
+                            spacing: 5 + 1.5 * M.stroke,
+                            delay: m,
                             children: e => (0, i.jsxs)(i.Fragment, {
-                                children: [null != m && p(m, o, D, v), (0, i.jsx)("rect", {
+                                children: [null != O && p(O, o, M, D), (0, i.jsx)("rect", {
                                     ...e,
-                                    ...N(D, v, o, l),
-                                    fill: P,
-                                    mask: "url(#".concat((0, d.getStatusMask)(v, o, l), ")"),
+                                    ...N(M, D, o, l),
+                                    fill: U,
+                                    mask: "url(#".concat((0, d.getStatusMask)(D, o, l), ")"),
                                     className: h.pointerEvents
                                 }), l ? (0, i.jsx)(u.Dots, {
                                     ref: f,
-                                    dotRadius: D.status / 4,
-                                    x: D.size - 1.375 * D.status - D.offset,
-                                    y: D.size - D.status / 1.333 - D.offset
+                                    dotRadius: M.status / 4,
+                                    x: M.size - 1.375 * M.status - M.offset,
+                                    y: M.size - M.status / 1.333 - M.offset
                                 }) : null]
                             })
                         }) : null]
@@ -22281,11 +22285,12 @@
                     status: g,
                     statusColor: L,
                     statusTooltip: v = !1,
-                    statusBackdropColor: D,
-                    "aria-hidden": M = !1,
-                    "aria-label": y,
-                    imageClassName: P
-                } = e, U = (0, d.useStatusFillColor)(g, L), b = r.useId(), G = r.useId(), [w] = r.useState(() => ({
+                    statusTooltipDelay: D,
+                    statusBackdropColor: M,
+                    "aria-hidden": y = !1,
+                    "aria-label": P,
+                    imageClassName: U
+                } = e, b = (0, d.useStatusFillColor)(g, L), G = r.useId(), w = r.useId(), [B] = r.useState(() => ({
                     fill: a,
                     ...O({
                         size: S,
@@ -22293,69 +22298,69 @@
                         isMobile: t,
                         isTyping: !1
                     })
-                })), B = r.useMemo(() => ({
-                    fill: U,
+                })), k = r.useMemo(() => ({
+                    fill: b,
                     ...O({
                         size: S,
                         status: g,
                         isMobile: l,
                         isTyping: c
                     })
-                }), [U, S, g, l, c]), {
-                    avatarCutoutX: k,
-                    avatarCutoutY: V,
-                    avatarCutoutWidth: x,
-                    avatarCutoutHeight: F,
-                    avatarCutoutRadius: H,
-                    fill: Y,
-                    ...j
+                }), [b, S, g, l, c]), {
+                    avatarCutoutX: V,
+                    avatarCutoutY: x,
+                    avatarCutoutWidth: F,
+                    avatarCutoutHeight: H,
+                    avatarCutoutRadius: Y,
+                    fill: j,
+                    ...W
                 } = (0, o.useSpring)({
                     immediate: !document.hasFocus(),
                     config: A,
-                    from: w,
-                    to: B
-                }), W = (0, I.getAvatarSize)(S), K = (0, I.getAvatarSpecs)(S), z = K.status * I.TYPING_WIDTH_RATIO, Z = K.status * I.MOBILE_HEIGHT_RATIO, X = null != g ? (K.status * I.TYPING_WIDTH_RATIO - K.status) / 2 : 0, Q = K.size - K.status - X - K.offset, q = K.size - Z - K.offset, J = K.size + Math.ceil(X);
+                    from: B,
+                    to: k
+                }), K = (0, I.getAvatarSize)(S), z = (0, I.getAvatarSpecs)(S), Z = z.status * I.TYPING_WIDTH_RATIO, X = z.status * I.MOBILE_HEIGHT_RATIO, Q = null != g ? (z.status * I.TYPING_WIDTH_RATIO - z.status) / 2 : 0, q = z.size - z.status - Q - z.offset, J = z.size - X - z.offset, $ = z.size + Math.ceil(Q);
                 return (0, i.jsx)(R, {
                     ...e,
-                    ariaLabel: y,
-                    ariaHidden: M,
-                    typingOffset: X,
-                    specs: K,
+                    ariaLabel: P,
+                    ariaHidden: y,
+                    typingOffset: Q,
+                    specs: z,
                     children: (0, i.jsxs)("svg", {
-                        width: J,
-                        height: J,
-                        viewBox: "0 0 ".concat(J, " ").concat(J),
+                        width: $,
+                        height: $,
+                        viewBox: "0 0 ".concat($, " ").concat($),
                         className: s()(h.mask, h.svg),
                         "aria-hidden": !0,
                         children: [(0, i.jsxs)("mask", {
-                            id: b,
-                            width: W,
-                            height: W,
+                            id: G,
+                            width: K,
+                            height: K,
                             children: [(0, i.jsx)("circle", {
-                                cx: W / 2,
-                                cy: W / 2,
-                                r: W / 2,
+                                cx: K / 2,
+                                cy: K / 2,
+                                r: K / 2,
                                 fill: "white"
                             }), (0, i.jsx)(o.animated.rect, {
                                 color: "black",
-                                x: k,
-                                y: V,
-                                width: x,
-                                height: F,
-                                rx: H,
-                                ry: H
+                                x: V,
+                                y: x,
+                                width: F,
+                                height: H,
+                                rx: Y,
+                                ry: Y
                             })]
                         }), (0, i.jsx)("foreignObject", {
                             className: h.__invalid_foreignObject,
                             x: 0,
                             y: 0,
-                            width: W,
-                            height: W,
-                            mask: "url(#".concat(b, ")"),
+                            width: K,
+                            height: K,
+                            mask: "url(#".concat(G, ")"),
                             children: (0, i.jsx)(C, {
                                 src: N,
                                 isSpeaking: f,
-                                className: P
+                                className: U
                             })
                         }), (0, i.jsx)(_.Tooltip, {
                             text: v ? (0, E.humanizeStatus)(g) : null,
@@ -22364,25 +22369,26 @@
                             spacing: function(e, t, n) {
                                 let i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
                                 return 5 - (n && !i ? 0 : .5 * e) + 1.5 * t
-                            }(K.status, K.stroke, l, c),
+                            }(z.status, z.stroke, l, c),
+                            delay: D,
                             children: e => (0, i.jsxs)(i.Fragment, {
-                                children: [null != D && p(D, l, K, g), (0, i.jsxs)("svg", {
-                                    x: Q,
-                                    y: q,
-                                    width: z,
-                                    height: Z,
-                                    viewBox: "0 0 ".concat(z, " ").concat(Z),
+                                children: [null != M && p(M, l, z, g), (0, i.jsxs)("svg", {
+                                    x: q,
+                                    y: J,
+                                    width: Z,
+                                    height: X,
+                                    viewBox: "0 0 ".concat(Z, " ").concat(X),
                                     className: v ? h.cursorDefault : void 0,
-                                    children: [(0, d.renderStatusMask)(j, K.status, G), (0, i.jsx)(o.animated.rect, {
-                                        fill: Y,
-                                        width: z,
-                                        height: Z,
-                                        mask: "url(#".concat(G, ")")
+                                    children: [(0, d.renderStatusMask)(W, z.status, w), (0, i.jsx)(o.animated.rect, {
+                                        fill: j,
+                                        width: Z,
+                                        height: X,
+                                        mask: "url(#".concat(w, ")")
                                     }), (0, i.jsx)(u.Dots, {
                                         ref: T,
-                                        dotRadius: K.status / 4,
-                                        x: .15 * z,
-                                        y: .5 * Z,
+                                        dotRadius: z.status / 4,
+                                        x: .15 * Z,
+                                        y: .5 * X,
                                         hide: !c
                                     })]
                                 }), (0, i.jsx)(m, {
@@ -37398,7 +37404,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291867", ", Version Hash: ").concat("f6a676b2863bdf35482b4110870e8ea94a2e261b")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291871", ", Version Hash: ").concat("5aa6f26cc096af9199b123f38a9e0a3210e2935e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88471,8 +88477,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291867", "291867"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291867")), t = 0), t
+                let t = parseInt((e = "291871", "291871"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291871")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115792,8 +115798,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291867",
-                    versionHash: "f6a676b2863bdf35482b4110870e8ea94a2e261b"
+                    buildNumber: "291871",
+                    versionHash: "5aa6f26cc096af9199b123f38a9e0a3210e2935e"
                 }
             }
             n.r(t), n.d(t, {
@@ -171498,8 +171504,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715273312839",
-                                    build_number: "291867"
+                                    built_at: "1715273934651",
+                                    build_number: "291871"
                                 }
                             },
                             retries: 1
@@ -209336,6 +209342,9 @@
                 TrackUserProfileProperties: function() {
                     return c
                 },
+                USER_PROFILE_TOOLTIP_DELAY: function() {
+                    return T
+                },
                 UserProfileSections: function() {
                     return l
                 },
@@ -209343,12 +209352,13 @@
                     return d
                 },
                 getBadgeAsset: function() {
-                    return T
+                    return f
                 }
             });
             var i, r, a, s, o, l, u, d, _, c, E, I = n("981631");
+            let T = 300;
 
-            function T(e) {
+            function f(e) {
                 let {
                     API_ENDPOINT: t,
                     CDN_HOST: n
@@ -211103,7 +211113,7 @@
                     role: "group",
                     children: t.map(e => (0, i.jsx)(s.TooltipContainer, {
                         text: e.description,
-                        color: s.TooltipColors.NESTED,
+                        delay: f.USER_PROFILE_TOOLTIP_DELAY,
                         children: (0, i.jsx)(s.Anchor, {
                             onClick: t => {
                                 p({
@@ -211229,7 +211239,6 @@
                         location_stack: T
                     }))
                 }, [T, a, t]), (0, i.jsx)(d.Tooltip, {
-                    color: d.TooltipColors.NESTED,
                     tooltipContentClassName: j.premiumIconTooltipContent,
                     text: u ? Y.default.Messages.PROFILE_CUSTOMIZATION_NITRO_ICON_TOOLTIP : Y.default.Messages.USER_SETTINGS_PROFILE_THEMES_USER_PROFILE_ICON_TOOLTIP_UPSELL,
                     children: e => (0, i.jsx)(d.Clickable, {
@@ -211291,7 +211300,6 @@
                     className: t ? j.pencilContainerDark : j.pencilContainer,
                     children: (0, i.jsx)(d.Tooltip, {
                         text: r,
-                        color: d.TooltipColors.NESTED,
                         children: e => (0, i.jsx)(l, {
                             ...e,
                             width: o,
@@ -211404,7 +211412,6 @@
                             className: j.pencilContainer,
                             children: (0, i.jsx)(d.Tooltip, {
                                 text: Y.default.Messages.BACK,
-                                color: d.TooltipColors.NESTED,
                                 children: e => (0, i.jsx)(g.default, {
                                     ...e,
                                     className: j.closeIcon,
@@ -212014,7 +212021,6 @@
                             position: "top",
                             text: e.description,
                             spacing: 12,
-                            color: l.TooltipColors.NESTED,
                             children: t => (0, a.jsx)(l.Anchor, {
                                 ...t,
                                 onClick: n => {
@@ -212080,71 +212086,71 @@
                 let {
                     statusActivity: t,
                     profileType: n,
-                    animate: a = !0,
-                    hideTooltip: c = !1
-                } = e, [E, I] = r.useState(1), {
-                    emoji: T
-                } = null != t ? t : {}, f = null != T, S = (null == t ? void 0 : t.state) != null && "" !== t.state ? t.state : null, h = null != S && S.length > 0, A = f || h, m = r.useCallback(e => {
+                    animate: a = !0
+                } = e, [c, E] = r.useState(1), {
+                    emoji: I
+                } = null != t ? t : {}, T = null != I, f = (null == t ? void 0 : t.state) != null && "" !== t.state ? t.state : null, S = null != f && f.length > 0, h = T || S, A = r.useCallback(e => {
                     var t;
                     if (null == e) return;
                     let n = e.getBoundingClientRect(),
                         i = parseFloat(null !== (t = window.getComputedStyle(e).getPropertyValue("line-height")) && void 0 !== t ? t : "0"),
                         r = n.height;
-                    i > 0 && r > 0 && I(Math.floor(r / i))
-                }, []), N = (0, u.useResizeObserver)(m);
+                    i > 0 && r > 0 && E(Math.floor(r / i))
+                }, []), m = (0, u.useResizeObserver)(A);
                 if (r.useLayoutEffect(() => {
                         setTimeout(() => {
-                            m(N.current)
+                            A(m.current)
                         }, 200)
-                    }, [N, m]), !A) return null;
-                let p = () => f ? (0, i.jsx)(l.ActivityEmoji, {
-                        className: h ? _.statusEmojiInline : _.statusEmojiOnly,
-                        emoji: T,
+                    }, [m, A]), !h) return null;
+                let N = () => T ? (0, i.jsx)(l.ActivityEmoji, {
+                        className: S ? _.statusEmojiInline : _.statusEmojiOnly,
+                        emoji: I,
                         animate: a,
-                        hideTooltip: c
+                        hideTooltip: !1,
+                        tooltipDelay: d.USER_PROFILE_TOOLTIP_DELAY
                     }) : null,
-                    O = () => h ? (0, i.jsx)(o.Text, {
+                    p = () => S ? (0, i.jsx)(o.Text, {
                         variant: "text-sm/medium",
                         className: _.statusText,
-                        children: S
+                        children: f
                     }) : null,
-                    R = () => (0, i.jsxs)("div", {
+                    O = () => (0, i.jsxs)("div", {
                         className: _.contentOverflow,
-                        ref: N,
-                        children: [p(), O()]
+                        ref: m,
+                        children: [N(), p()]
                     }),
-                    C = n === d.UserProfileTypes.BITE_SIZE ? _.biteSize : _.fullSize,
-                    g = s()(_.statusBubbleOuter, {
-                        [_.statusBubbleShape]: E <= 1 && !h && f || E > 1,
-                        [_.statusBubbleSingleLineWithTextShape]: 1 === E && h,
+                    R = n === d.UserProfileTypes.BITE_SIZE ? _.biteSize : _.fullSize,
+                    C = s()(_.statusBubbleOuter, {
+                        [_.statusBubbleShape]: c <= 1 && !S && T || c > 1,
+                        [_.statusBubbleSingleLineWithTextShape]: 1 === c && S,
                         [_.biteSize]: n === d.UserProfileTypes.BITE_SIZE,
                         [_.fullSize]: n === d.UserProfileTypes.FULL_SIZE
                     }),
-                    L = s()(_.statusBubble, {
-                        [_.statusBubbleShape]: E <= 1 && !h && f || E > 1,
-                        [_.statusBubbleSingleLineWithTextShape]: E <= 1 && h,
-                        [_.statusBubbleEmojiOnlyPadding]: f && !h,
-                        [_.statusBubbleWithTextPadding]: h,
-                        [_.statusBubbleWithTextMinWidth]: h,
-                        [_.statusBubbleCopyStatusCursor]: A
+                    g = s()(_.statusBubble, {
+                        [_.statusBubbleShape]: c <= 1 && !S && T || c > 1,
+                        [_.statusBubbleSingleLineWithTextShape]: c <= 1 && S,
+                        [_.statusBubbleEmojiOnlyPadding]: T && !S,
+                        [_.statusBubbleWithTextPadding]: S,
+                        [_.statusBubbleWithTextMinWidth]: S,
+                        [_.statusBubbleCopyStatusCursor]: h
                     });
                 return (0, i.jsxs)("div", {
                     children: [n === d.UserProfileTypes.BITE_SIZE ? (0, i.jsx)("div", {
-                        className: s()(_.invisibleContainer, C),
+                        className: s()(_.invisibleContainer, R),
                         children: (0, i.jsx)("div", {
-                            className: g,
+                            className: C,
                             children: (0, i.jsx)("span", {
-                                className: L,
-                                children: R()
+                                className: g,
+                                children: O()
                             })
                         })
                     }) : null, (0, i.jsx)("div", {
-                        className: s()(_.visibleContainer, C),
+                        className: s()(_.visibleContainer, R),
                         children: (0, i.jsx)("div", {
-                            className: g,
+                            className: C,
                             children: (0, i.jsx)("span", {
-                                className: L,
-                                children: R()
+                                className: g,
+                                children: O()
                             })
                         })
                     })]
@@ -212155,7 +212161,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return _
+                    return c
                 }
             });
             var i = n("735250");
@@ -212165,10 +212171,11 @@
                 s = n("981729"),
                 o = n("759231"),
                 l = n("621853"),
-                u = n("689938"),
-                d = n("705850");
+                u = n("228168"),
+                d = n("689938"),
+                _ = n("705850");
 
-            function _(e) {
+            function c(e) {
                 let {
                     userId: t
                 } = e;
@@ -212176,9 +212183,9 @@
                     var e, n;
                     return null !== (n = null === (e = l.default.getUserProfile(t)) || void 0 === e ? void 0 : e.profileFetchFailed) && void 0 !== n && n
                 }) ? (0, i.jsx)(s.TooltipContainer, {
-                    className: d.container,
-                    text: u.default.Messages.USER_PROFILE_LOAD_ERROR,
-                    color: s.TooltipColors.NESTED,
+                    className: _.container,
+                    text: d.default.Messages.USER_PROFILE_LOAD_ERROR,
+                    delay: u.USER_PROFILE_TOOLTIP_DELAY,
                     children: (0, i.jsx)(o.default, {
                         color: a.default.colors.STATUS_WARNING.css,
                         width: 16,
@@ -212212,19 +212219,20 @@
                 let {
                     userId: t,
                     guildId: n,
-                    textClassName: T
-                } = e, f = (0, r.useStateFromStores)([o.default], () => o.default.locale), S = (0, r.useStateFromStores)([u.default], () => null != n ? u.default.getGuild(n) : null), h = (0, r.useStateFromStores)([l.default], () => null != n ? l.default.getMember(n, t) : null), A = (0, s.getCreatedAtDate)(c.default.extractTimestamp(t), f), m = (0, s.getCreatedAtDate)(null == h ? void 0 : h.joinedAt, f);
-                return null == S || null == h ? (0, i.jsx)(a.Text, {
+                    textClassName: T,
+                    tooltipDelay: f
+                } = e, S = (0, r.useStateFromStores)([o.default], () => o.default.locale), h = (0, r.useStateFromStores)([u.default], () => null != n ? u.default.getGuild(n) : null), A = (0, r.useStateFromStores)([l.default], () => null != n ? l.default.getMember(n, t) : null), m = (0, s.getCreatedAtDate)(c.default.extractTimestamp(t), S), N = (0, s.getCreatedAtDate)(null == A ? void 0 : A.joinedAt, S);
+                return null == h || null == A ? (0, i.jsx)(a.Text, {
                     variant: "text-sm/normal",
                     className: T,
-                    children: A
+                    children: m
                 }) : (0, i.jsxs)("div", {
                     className: I.memberSinceWrapper,
                     children: [(0, i.jsxs)("div", {
                         className: I.memberSince,
                         children: [(0, i.jsx)(a.Tooltip, {
                             text: E.default.Messages.DISCORD_NAME,
-                            color: a.TooltipColors.NESTED,
+                            delay: f,
                             children: e => (0, i.jsx)(_.default, {
                                 ...e,
                                 className: I.discordIcon
@@ -212232,24 +212240,24 @@
                         }), (0, i.jsx)(a.Text, {
                             variant: "text-sm/normal",
                             className: T,
-                            children: A
+                            children: m
                         })]
                     }), (0, i.jsx)("div", {
                         className: I.divider
                     }), (0, i.jsxs)("div", {
                         className: I.memberSince,
                         children: [(0, i.jsx)(a.Tooltip, {
-                            text: S.name,
-                            color: a.TooltipColors.NESTED,
+                            text: h.name,
+                            delay: f,
                             children: e => (0, i.jsx)(d.default, {
                                 ...e,
-                                guild: S,
+                                guild: h,
                                 size: d.default.Sizes.SMOL
                             })
                         }), (0, i.jsx)(a.Text, {
                             variant: "text-sm/normal",
                             className: T,
-                            children: m
+                            children: N
                         })]
                     })]
                 })
@@ -212443,7 +212451,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return _
+                    return c
                 }
             });
             var i = n("735250");
@@ -212453,63 +212461,64 @@
                 s = n("481060"),
                 o = n("129861"),
                 l = n("5192"),
-                u = n("689938"),
-                d = n("173110");
+                u = n("228168"),
+                d = n("689938"),
+                _ = n("173110");
 
-            function _(e) {
+            function c(e) {
                 let {
                     user: t,
                     guildId: n,
                     channelId: r,
-                    usernameIcon: _,
-                    tags: c,
-                    nicknameIcons: E,
-                    pronouns: I,
-                    className: T,
-                    onOpenProfile: f,
-                    nicknameVariant: S = "heading-lg/bold",
-                    pronounsVariant: h = "text-sm/medium"
-                } = e, A = e => null == f ? e : (0, i.jsx)(s.Clickable, {
-                    onClick: f,
-                    className: d.clickableUsername,
+                    usernameIcon: c,
+                    tags: E,
+                    nicknameIcons: I,
+                    pronouns: T,
+                    className: f,
+                    onOpenProfile: S,
+                    nicknameVariant: h = "heading-lg/bold",
+                    pronounsVariant: A = "text-sm/medium"
+                } = e, m = e => null == S ? e : (0, i.jsx)(s.Clickable, {
+                    onClick: S,
+                    className: _.clickableUsername,
                     children: e
                 });
                 return (0, i.jsxs)("div", {
-                    className: a()(d.container, T),
+                    className: a()(_.container, f),
                     children: [(0, i.jsxs)("div", {
-                        className: d.usernameRow,
-                        children: [A((0, i.jsx)(s.Heading, {
-                            className: d.nickname,
-                            variant: S,
+                        className: _.usernameRow,
+                        children: [m((0, i.jsx)(s.Heading, {
+                            className: _.nickname,
+                            variant: h,
                             children: l.default.getName(n, r, t)
                         })), (0, i.jsx)("div", {
-                            className: d.nicknameIcons,
-                            children: E
+                            className: _.nicknameIcons,
+                            children: I
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: d.tags,
-                        children: [A((0, i.jsx)(o.default, {
+                        className: _.tags,
+                        children: [m((0, i.jsx)(o.default, {
                             user: t,
-                            usernameIcon: _,
+                            usernameIcon: c,
                             forceUsername: !0,
-                            className: d.userTag,
-                            usernameClass: d.userTagUsername,
-                            discriminatorClass: d.userTagDiscriminator
-                        })), null != I && I.length > 0 && (0, i.jsxs)(i.Fragment, {
+                            className: _.userTag,
+                            usernameClass: _.userTagUsername,
+                            discriminatorClass: _.userTagDiscriminator
+                        })), null != T && T.length > 0 && (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)("div", {
                                 "aria-hidden": "true",
-                                className: d.dotSpacer
+                                className: _.dotSpacer
                             }), (0, i.jsx)(s.TooltipContainer, {
-                                text: u.default.Messages.USER_PROFILE_PRONOUNS,
-                                color: s.TooltipColors.NESTED,
+                                text: d.default.Messages.USER_PROFILE_PRONOUNS,
+                                delay: u.USER_PROFILE_TOOLTIP_DELAY,
                                 children: (0, i.jsx)(s.Text, {
-                                    variant: h,
-                                    className: d.pronouns,
+                                    variant: A,
+                                    className: _.pronouns,
                                     color: "header-primary",
-                                    children: I
+                                    children: T
                                 })
                             })]
-                        }), c]
+                        }), E]
                     })]
                 })
             }
@@ -212573,7 +212582,6 @@
                 });
                 return r ? (0, i.jsx)(o.TooltipContainer, {
                     text: n,
-                    color: o.TooltipColors.NESTED,
                     "aria-label": _["aria-label"],
                     children: (0, i.jsx)(s.Button, {
                         className: a()(l.compactButton, u),
@@ -213005,13 +213013,14 @@
                     text: n,
                     className: r,
                     innerClassName: l,
-                    tooltipClassName: u,
-                    ...d
+                    tooltipDelay: u,
+                    tooltipClassName: d,
+                    ..._
                 } = e;
                 return (0, i.jsx)(s.TooltipContainer, {
-                    tooltipClassName: u,
+                    tooltipClassName: d,
                     text: n,
-                    color: s.TooltipColors.NESTED,
+                    delay: u,
                     children: (0, i.jsx)(s.Button, {
                         className: a()(o.button, r),
                         innerClassName: a()(o.buttonInner, l),
@@ -213020,7 +213029,7 @@
                         size: s.Button.Sizes.NONE,
                         grow: !1,
                         "aria-label": n,
-                        ...d,
+                        ..._,
                         children: (0, i.jsx)(t, {
                             width: 16,
                             height: 16,
@@ -213138,7 +213147,6 @@
                         className: R.connectedAccount,
                         children: [(0, i.jsx)(u.Tooltip, {
                             text: null == G ? void 0 : G.name,
-                            color: u.TooltipColors.NESTED,
                             children: e => (0, i.jsx)("img", {
                                 ...e,
                                 alt: O.default.Messages.IMG_ALT_LOGO.format({
@@ -213156,7 +213164,6 @@
                                     children: [(0, i.jsx)(u.Tooltip, {
                                         overflowOnly: !0,
                                         text: S.name,
-                                        color: u.TooltipColors.NESTED,
                                         children: e => (0, i.jsx)(u.Text, {
                                             ...e,
                                             variant: "text-md/semibold",
@@ -213459,7 +213466,6 @@
                         });
                         return f ? (0, a.jsx)(d.TooltipContainer, {
                             text: p.default.Messages.USER_PROFILE_MUTUAL_FRIENDS_TOOLTIP,
-                            color: d.TooltipColors.NESTED,
                             children: e
                         }) : e
                     })(), k && V && (0, a.jsx)("div", {
@@ -213487,7 +213493,6 @@
                         });
                         return f ? (0, a.jsx)(d.TooltipContainer, {
                             text: p.default.Messages.USER_PROFILE_MUTUAL_GUILDS_TOOLTIP,
-                            color: d.TooltipColors.NESTED,
                             children: e
                         }) : e
                     })()]
@@ -214513,7 +214518,6 @@
                     children: [(null == o ? void 0 : o.profileFetchFailed) && (!t.isClyde() || c) && (0, i.jsx)(d.Tooltip, {
                         text: U.default.Messages.USER_PROFILE_LOAD_ERROR,
                         spacing: 16,
-                        color: d.TooltipColors.NESTED,
                         children: e => (0, i.jsx)(S.default, {
                             ...e,
                             className: b.warningCircleIcon,
@@ -214545,71 +214549,73 @@
                     disableUserProfileLink: S,
                     profileType: N,
                     animateOnHover: O,
-                    hasProfileEffect: C
+                    hasProfileEffect: C,
+                    statusTooltipDelay: L
                 } = e, {
-                    theme: L
-                } = (0, v.useUserProfileThemeContext)(), B = r.useContext(A.AnalyticsContext), V = t.isNonUserBot() && !t.isClyde(), x = m.default.isPremiumAtLeast(null == n ? void 0 : n.premiumType, P.PremiumTypes.TIER_2), F = r.useMemo(() => (0, I.shouldDisableUserPresenceInChannel)(t, T), [t, T]), {
-                    analyticsLocations: H
+                    theme: B
+                } = (0, v.useUserProfileThemeContext)(), V = r.useContext(A.AnalyticsContext), x = t.isNonUserBot() && !t.isClyde(), F = m.default.isPremiumAtLeast(null == n ? void 0 : n.premiumType, P.PremiumTypes.TIER_2), H = r.useMemo(() => (0, I.shouldDisableUserPresenceInChannel)(t, T), [t, T]), {
+                    analyticsLocations: Y
                 } = (0, _.default)(), {
-                    trackUserProfileAction: Y,
-                    messageId: j,
-                    roleId: W
-                } = (0, p.useUserProfileAnalyticsContext)(), K = S || t.isClyde(), {
-                    avatarDecorationSrc: z,
-                    avatarSrc: Z,
-                    eventHandlers: X
+                    trackUserProfileAction: j,
+                    messageId: W,
+                    roleId: K
+                } = (0, p.useUserProfileAnalyticsContext)(), z = S || t.isClyde(), {
+                    avatarDecorationSrc: Z,
+                    avatarSrc: X,
+                    eventHandlers: Q
                 } = (0, R.default)({
                     user: t,
                     guildId: E,
                     size: G,
                     animateOnHover: O
-                }), Q = (0, i.jsx)("div", {
+                }), q = (0, i.jsx)("div", {
                     className: b.avatarHoverTarget,
-                    ...X,
+                    ...Q,
                     children: (0, i.jsx)(k, {
-                        src: null != a ? a : Z,
-                        avatarDecoration: z,
+                        src: null != a ? a : X,
+                        avatarDecoration: Z,
                         size: G,
                         "aria-label": t.username,
-                        status: F ? y.StatusTypes.UNKNOWN : u,
-                        statusBackdropColor: x && !F ? (0, d.getStatusBackdropColor)(L) : void 0,
+                        status: H ? y.StatusTypes.UNKNOWN : u,
+                        statusBackdropColor: F && !H ? (0, d.getStatusBackdropColor)(B) : void 0,
                         isMobile: c,
-                        statusTooltip: !0
+                        statusTooltip: !0,
+                        statusTooltipDelay: L
                     })
-                }), q = (0, o.match)(N).with(M.UserProfileTypes.POPOUT, () => (0, g.buildGetPremiumUserBannerStyles)({
+                }), J = (0, o.match)(N).with(M.UserProfileTypes.POPOUT, () => (0, g.buildGetPremiumUserBannerStyles)({
                     premiumUserWithBanner: b.avatarPositionPremiumBanner,
                     premiumUserWithoutBanner: b.avatarPositionPremiumNoBanner,
                     default: b.avatarPositionNormal
                 })({
-                    isPremium: x,
+                    isPremium: F,
                     hasBanner: l,
                     hasProfileEffect: C
                 })).with(M.UserProfileTypes.POMELO_POPOUT, () => b.avatarPositionPomelo).with(M.UserProfileTypes.PANEL, () => b.avatarPositionPanel).with(M.UserProfileTypes.BITE_SIZE, () => b.avatarPositionBiteSize).exhaustive();
                 return (0, i.jsx)(i.Fragment, {
                     children: (0, i.jsxs)(d.Clickable, {
                         className: s()({
-                            [b.clickable]: !K,
-                            [b.avatarWrapperNonUserBot]: V,
-                            [b.avatarWrapperNormal]: !V
-                        }, q),
-                        onClick: V || K ? void 0 : function() {
-                            Y({
+                            [b.clickable]: !z,
+                            [b.avatarWrapperNonUserBot]: x,
+                            [b.avatarWrapperNormal]: !x
+                        }, J),
+                        onClick: x || z ? void 0 : function() {
+                            j({
                                 action: "PRESS_VIEW_PROFILE"
                             }), (0, D.openUserProfileModal)({
                                 userId: t.id,
                                 guildId: E,
                                 channelId: T,
-                                messageId: j,
-                                roleId: W,
-                                sourceAnalyticsLocations: H,
-                                analyticsLocation: B.location
+                                messageId: W,
+                                roleId: K,
+                                sourceAnalyticsLocations: Y,
+                                analyticsLocation: V.location
                             }), null == f || f()
                         },
-                        children: [Q, !K && function() {
-                            let e = null != z,
+                        children: [q, !z && function() {
+                            let e = null != Z,
                                 t = e ? w : (0, d.getAvatarSize)(G);
                             return (0, i.jsx)(h.default, {
-                                mask: null == u || u === y.StatusTypes.UNKNOWN || F ? h.default.Masks.AVATAR_DEFAULT : (0, o.match)([e, c]).with([!0, !0], () => h.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_MOBILE_SQUARE_80).with([!0, !1], () => h.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_SQUARE_80).with([!1, !0], () => h.default.Masks.AVATAR_STATUS_MOBILE_80).with([!1, !1], () => h.default.Masks.AVATAR_STATUS_ROUND_80).exhaustive(),
+                                mask: null == u || u === y.StatusTypes.UNKNOWN || H ? h.default.Masks.AVATAR_DEFAULT : (0, o.match)([e, c]).with([!0, !0], () => h.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_MOBILE_SQUARE_80).with([!0, !1], () => h.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_SQUARE_80).with([!1, !0], () => h.default.Masks.AVATAR_STATUS_MOBILE_80).with([!1, !1], () => h.default.Masks.AVATAR_STATUS_ROUND_80).exhaustive(),
                                 className: e ? b.avatarDecorationHint : b.avatarHint,
                                 style: e ? {
                                     borderRadius: .4 * t
@@ -215170,7 +215176,8 @@
                         disableUserProfileLink: T,
                         hasBanner: (null == n ? void 0 : n.banner) != null,
                         hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null,
-                        profileType: _.UserProfileTypes.BITE_SIZE
+                        profileType: _.UserProfileTypes.BITE_SIZE,
+                        statusTooltipDelay: _.USER_PROFILE_TOOLTIP_DELAY
                     }), (0, i.jsx)(u.UserProfileCustomStatusBubble, {
                         statusActivity: m,
                         profileType: _.UserProfileTypes.BITE_SIZE
@@ -216437,7 +216444,6 @@
                             })
                         }), null != S && "" !== S && (0, i.jsx)(o.Tooltip, {
                             text: T.default.Messages.USER_PROFILE_PRONOUNS,
-                            color: o.TooltipColors.NESTED,
                             children: e => (0, i.jsx)(o.Text, {
                                 ...e,
                                 variant: "text-sm/normal",
@@ -249966,7 +249972,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "f6a676b2863bdf35482b4110870e8ea94a2e261b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5aa6f26cc096af9199b123f38a9e0a3210e2935e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278886,7 +278892,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291867"
+                                build_number: "291871"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286239,7 +286245,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291867", "291867"), 10);
+                let a = parseInt((n = "291871", "291871"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313844,4 +313850,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.4cccc0339c27c068b573.js.map
+//# sourceMappingURL=35705.febc1bd7fb7be95e9c10.js.map
