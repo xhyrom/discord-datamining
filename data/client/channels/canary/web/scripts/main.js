@@ -37398,7 +37398,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291762", ", Version Hash: ").concat("f6649e76dccccac5ca4f4183bf3aebc1e49dd0ed")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("291780", ", Version Hash: ").concat("d7fc478fd7dbae5471986d672a3d06b9c1921041")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88470,8 +88470,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "291762", "291762"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291762")), t = 0), t
+                let t = parseInt((e = "291780", "291780"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("291780")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115751,8 +115751,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "291762",
-                    versionHash: "f6649e76dccccac5ca4f4183bf3aebc1e49dd0ed"
+                    buildNumber: "291780",
+                    versionHash: "d7fc478fd7dbae5471986d672a3d06b9c1921041"
                 }
             }
             n.r(t), n.d(t, {
@@ -171451,8 +171451,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715215190925",
-                                    build_number: "291762"
+                                    built_at: "1715220429506",
+                                    build_number: "291780"
                                 }
                             },
                             retries: 1
@@ -189118,28 +189118,31 @@
             "use strict";
             n.r(t), n.d(t, {
                 useDismissNewQuestBadge: function() {
-                    return m
+                    return O
                 },
                 useExpiredQuestsMap: function() {
-                    return f
-                },
-                useIsQuestExpired: function() {
-                    return S
-                },
-                useQuestCollectibles: function() {
-                    return p
-                },
-                useQuestFormattedDate: function() {
                     return h
                 },
+                useIsQuestExpired: function() {
+                    return A
+                },
+                useQuestCollectibles: function() {
+                    return C
+                },
+                useQuestFormattedDate: function() {
+                    return m
+                },
                 useQuestFromActivities: function() {
+                    return R
+                },
+                useQuestInstructionTitle: function() {
                     return N
                 },
                 useQuests: function() {
-                    return T
+                    return S
                 },
                 useQuestsForSettingsBadge: function() {
-                    return A
+                    return p
                 }
             }), n("47120"), n("653041");
             var i = n("470079"),
@@ -189151,11 +189154,13 @@
                 u = n("569984"),
                 d = n("497505"),
                 _ = n("918701"),
-                c = n("977156"),
-                E = n("31055"),
-                I = n("46140");
+                c = n("242755"),
+                E = n("977156"),
+                I = n("31055"),
+                T = n("46140"),
+                f = n("689938");
 
-            function T() {
+            function S() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
                         fetchPolicy: "cache-only"
                     },
@@ -189168,8 +189173,8 @@
                         isFetchingCurrentQuests: u.default.isFetchingCurrentQuests,
                         lastFetchedCurrentQuests: u.default.lastFetchedCurrentQuests
                     })),
-                    d = (0, c.getIsEligibleForQuests)({
-                        location: I.QuestsExperimentLocations.USE_QUESTS
+                    d = (0, E.getIsEligibleForQuests)({
+                        location: T.QuestsExperimentLocations.USE_QUESTS
                     });
                 return i.useEffect(() => {
                     if ("cache-only" !== e.fetchPolicy)("cache-and-network" === e.fetchPolicy || "cache-or-network" === e.fetchPolicy && 0 === o) && d && !t && !s && (n(!0), (0, l.fetchCurrentQuests)())
@@ -189179,11 +189184,11 @@
                 }
             }
 
-            function f() {
+            function h() {
                 let {
                     quests: e,
                     isFetchingCurrentQuests: t
-                } = T({
+                } = S({
                     fetchPolicy: "cache-only"
                 }), [n, a] = i.useState(() => new Map(e.map(e => [e.id, (0, _.isQuestExpired)(e)])));
                 return i.useEffect(() => {
@@ -189206,15 +189211,15 @@
                 }, [e, t]), n
             }
 
-            function S(e) {
-                let t = f();
+            function A(e) {
+                let t = h();
                 return i.useMemo(() => {
                     var n;
                     return null != e && null !== (n = t.get(e.id)) && void 0 !== n && n
                 }, [e, t])
             }
 
-            function h(e) {
+            function m(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
                         dateStyle: "short"
                     },
@@ -189222,13 +189227,24 @@
                 return i.useMemo(() => null == e ? "" : new Date(e).toLocaleDateString(n, t), [e, t, n])
             }
 
-            function A() {
+            function N(e, t) {
+                return ((0, c.useIsEligibleForQuestPlaytime)({
+                    location: t
+                }) && (0, _.hasPlaytimeTaskVariant)({
+                    quest: e
+                }) ? f.default.Messages.QUESTS_PLAY_TASK : f.default.Messages.QUESTS_STREAM_TASK).format({
+                    minutes: e.config.streamDurationRequirementMinutes,
+                    gameTitle: e.config.messages.gameTitle
+                })
+            }
+
+            function p() {
                 let {
                     quests: e,
                     isFetchingCurrentQuests: t
-                } = T({
+                } = S({
                     fetchPolicy: "cache-or-network"
-                }), n = f();
+                }), n = h();
                 return i.useMemo(() => {
                     let i = [];
                     if (t || 0 === e.length) return i;
@@ -189250,23 +189266,23 @@
                 }, [e, n, t])
             }
 
-            function m() {
-                let e = A();
+            function O() {
+                let e = p();
                 i.useEffect(() => {
                     for (let t of e)(0, l.dismissQuestContent)(t.id, d.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE)
                 }, [e])
             }
 
-            function N(e) {
-                let t = (0, E.useIsEligibleForMembersListQuestEntrypoint)({
-                        location: I.QuestsExperimentLocations.MEMBERS_LIST
+            function R(e) {
+                let t = (0, I.useIsEligibleForMembersListQuestEntrypoint)({
+                        location: T.QuestsExperimentLocations.MEMBERS_LIST
                     }),
                     n = (0, a.useStateFromStores)([u.default], () => t ? u.default.quests : null),
                     r = i.useMemo(() => (0, _.getQuestsFromActivities)(n, e), [e, n]);
-                return S(r) ? null : r
+                return A(r) ? null : r
             }
 
-            function p(e) {
+            function C(e) {
                 var t;
                 let n = (0, _.hasQuestCollectibleRewards)(e),
                     {
@@ -189654,97 +189670,97 @@
             "use strict";
             n.r(t), n.d(t, {
                 calculatePercentComplete: function() {
-                    return y
-                },
-                captureQuestsException: function() {
-                    return k
-                },
-                getContextualEntrypointHeading: function() {
                     return P
                 },
-                getGameLogotypeAssetUrl: function() {
-                    return g
-                },
-                getGameTileAssetUrl: function() {
-                    return C
-                },
-                getHeroAssetUrl: function() {
-                    return O
-                },
-                getPlatformString: function() {
-                    return M
-                },
-                getQuestBarHeroAssetUrl: function() {
-                    return R
-                },
-                getQuestByApplicationId: function() {
-                    return I
-                },
-                getQuestForTargetedContent: function() {
-                    return v
-                },
-                getQuestUrl: function() {
-                    return L
-                },
-                getQuestsFromActivities: function() {
+                captureQuestsException: function() {
                     return V
                 },
-                getQuestsInstructionsToWinReward: function() {
-                    return z
-                },
-                getRewardAssetUrl: function() {
-                    return p
-                },
-                getRewardCodeQuestReward: function() {
-                    return K
-                },
-                getVideoAssetMimeType: function() {
-                    return Y
-                },
-                hasPlaytimeTaskVariant: function() {
-                    return W
-                },
-                hasQuestCollectibleRewards: function() {
-                    return w
-                },
-                includesTarget: function() {
-                    return B
-                },
-                isAssetAnimated: function() {
-                    return x
-                },
-                isCollectibleReward: function() {
-                    return G
-                },
-                isDismissed: function() {
-                    return b
-                },
-                isDismissible: function() {
+                getContextualEntrypointHeading: function() {
                     return U
                 },
-                isQuestExpired: function() {
+                getGameLogotypeAssetUrl: function() {
+                    return L
+                },
+                getGameTileAssetUrl: function() {
+                    return g
+                },
+                getHeroAssetUrl: function() {
+                    return R
+                },
+                getPlatformString: function() {
+                    return y
+                },
+                getQuestBarHeroAssetUrl: function() {
+                    return C
+                },
+                getQuestByApplicationId: function() {
                     return T
                 },
-                isQuestWithKnownConfigVersion: function() {
-                    return E
-                },
-                isTargetedForContent: function() {
+                getQuestForTargetedContent: function() {
                     return D
                 },
-                isTieredRewardCodeQuest: function() {
+                getQuestUrl: function() {
+                    return v
+                },
+                getQuestsFromActivities: function() {
+                    return x
+                },
+                getQuestsInstructionsToWinReward: function() {
+                    return Z
+                },
+                getRewardAssetUrl: function() {
+                    return O
+                },
+                getRewardCodeQuestReward: function() {
+                    return z
+                },
+                getVideoAssetMimeType: function() {
                     return j
                 },
-                questUserStatusFromServer: function() {
+                hasPlaytimeTaskVariant: function() {
+                    return K
+                },
+                hasQuestCollectibleRewards: function() {
+                    return B
+                },
+                includesTarget: function() {
+                    return k
+                },
+                isAssetAnimated: function() {
+                    return F
+                },
+                isCollectibleReward: function() {
+                    return w
+                },
+                isDismissed: function() {
+                    return G
+                },
+                isDismissible: function() {
+                    return b
+                },
+                isQuestExpired: function() {
                     return f
                 },
-                questWithUserStatusFromServer: function() {
+                isQuestWithKnownConfigVersion: function() {
+                    return I
+                },
+                isTargetedForContent: function() {
+                    return M
+                },
+                isTieredRewardCodeQuest: function() {
+                    return W
+                },
+                questUserStatusFromServer: function() {
                     return S
                 },
+                questWithUserStatusFromServer: function() {
+                    return h
+                },
                 questsEntitlementsFromServer: function() {
-                    return m
+                    return N
                 },
                 questsRewardCodeFromServer: function() {
-                    return h
+                    return A
                 }
             }), n("627341"), n("47120"), n("411104");
             var i = n("278074"),
@@ -189755,11 +189771,12 @@
                 o = n("960048"),
                 l = n("687744"),
                 u = n("497505"),
-                d = n("46140"),
-                _ = n("689938");
-            let c = "https://cdn.discordapp.com/assets/quests/";
+                d = n("242755"),
+                _ = n("46140"),
+                c = n("689938");
+            let E = "https://cdn.discordapp.com/assets/quests/";
 
-            function E(e) {
+            function I(e) {
                 try {
                     return (0, i.match)(e.config).with({
                         config_version: 1
@@ -189772,20 +189789,20 @@
                 }
             }
 
-            function I(e, t) {
+            function T(e, t) {
                 let n;
                 for (let [i, r] of e)
-                    if (r.config.applicationId === t && !T(r)) {
+                    if (r.config.applicationId === t && !f(r)) {
                         n = r;
                         break
                     } return n
             }
 
-            function T(e) {
+            function f(e) {
                 return new Date(e.config.expiresAt).valueOf() <= Date.now()
             }
 
-            function f(e) {
+            function S(e) {
                 var t;
                 return {
                     userId: e.user_id,
@@ -189810,7 +189827,7 @@
                 }
             }
 
-            function S(e) {
+            function h(e) {
                 var t;
                 return {
                     id: e.id,
@@ -189897,12 +189914,12 @@
                         },
                         inGameQuestConfig: null
                     })).exhaustive()),
-                    userStatus: null == e.user_status ? null : f(e.user_status),
+                    userStatus: null == e.user_status ? null : S(e.user_status),
                     targetedContent: e.targeted_content
                 }
             }
 
-            function h(e) {
+            function A(e) {
                 var t;
                 return {
                     userId: e.user_id,
@@ -189914,7 +189931,7 @@
                 }
             }
 
-            function A(e) {
+            function m(e) {
                 return {
                     skuId: e.sku_id,
                     tenantMetadata: function(e) {
@@ -189934,7 +189951,7 @@
                                     questRewards: {
                                         reward: {
                                             tag: t.reward.tag,
-                                            rewardCode: h(t.reward.reward_code)
+                                            rewardCode: A(t.reward.reward_code)
                                         }
                                     }
                                 }
@@ -189943,59 +189960,59 @@
                 }
             }
 
-            function m(e) {
+            function N(e) {
                 return {
                     claimedAt: e.claimed_at,
-                    items: e.entitlements.map(A),
+                    items: e.entitlements.map(m),
                     errors: e.errors
                 }
             }
 
-            function N(e, t) {
+            function p(e, t) {
                 return e.startsWith("data") ? e : t
             }
-            let p = e => {
+            let O = e => {
                     var t, n;
-                    let i = j({
+                    let i = W({
                             quest: e
-                        }) ? K({
+                        }) ? z({
                             quest: e,
                             idx: null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedTier
                         }) : null,
                         r = null !== (n = null == i ? void 0 : i.asset) && void 0 !== n ? n : e.config.assets.rewardTile;
-                    return N(r, "".concat(c).concat(e.id, "/").concat(r))
+                    return p(r, "".concat(E).concat(e.id, "/").concat(r))
                 },
-                O = e => N(e.config.assets.hero, "".concat(c).concat(e.id, "/").concat(e.config.assets.hero)),
-                R = e => e.config.assets.questBarHero.startsWith("data") ? e.config.assets.questBarHero : N(e.config.assets.questBarHero, "".concat(c).concat(e.id, "/").concat(e.config.assets.questBarHero)),
-                C = (e, t) => N(e.config.assets.gameTile, "".concat(c).concat(e.id, "/").concat(t, "/").concat(e.config.assets.gameTile)),
-                g = (e, t) => N(e.config.assets.logotype, "".concat(c).concat(e.id, "/").concat(t, "/").concat(e.config.assets.logotype)),
-                L = e => "".concat(location.protocol, "//").concat(location.host, "/quests/").concat(e);
+                R = e => p(e.config.assets.hero, "".concat(E).concat(e.id, "/").concat(e.config.assets.hero)),
+                C = e => e.config.assets.questBarHero.startsWith("data") ? e.config.assets.questBarHero : p(e.config.assets.questBarHero, "".concat(E).concat(e.id, "/").concat(e.config.assets.questBarHero)),
+                g = (e, t) => p(e.config.assets.gameTile, "".concat(E).concat(e.id, "/").concat(t, "/").concat(e.config.assets.gameTile)),
+                L = (e, t) => p(e.config.assets.logotype, "".concat(E).concat(e.id, "/").concat(t, "/").concat(e.config.assets.logotype)),
+                v = e => "".concat(location.protocol, "//").concat(location.host, "/quests/").concat(e);
 
-            function v(e, t) {
+            function D(e, t) {
                 for (let [n, i] of e)
-                    if (!T(i) && i.targetedContent.includes(t)) return i;
+                    if (!f(i) && i.targetedContent.includes(t)) return i;
                 return null
             }
 
-            function D(e, t) {
+            function M(e, t) {
                 return e.targetedContent.includes(t)
             }
-            let M = e => {
+            let y = e => {
                 switch (e) {
                     case u.QuestRewardCodePlatforms.XBOX:
-                        return _.default.Messages.QUESTS_REWARD_CODE_PLATFORM_XBOX;
+                        return c.default.Messages.QUESTS_REWARD_CODE_PLATFORM_XBOX;
                     case u.QuestRewardCodePlatforms.PLAYSTATION:
-                        return _.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PLAYSTATION;
+                        return c.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PLAYSTATION;
                     case u.QuestRewardCodePlatforms.SWITCH:
-                        return _.default.Messages.QUESTS_REWARD_CODE_PLATFORM_SWITCH;
+                        return c.default.Messages.QUESTS_REWARD_CODE_PLATFORM_SWITCH;
                     case u.QuestRewardCodePlatforms.PC:
-                        return _.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PC;
+                        return c.default.Messages.QUESTS_REWARD_CODE_PLATFORM_PC;
                     case u.QuestRewardCodePlatforms.CROSS_PLATFORM:
-                        return _.default.Messages.QUESTS_REWARD_CODE_PLATFORM_CROSS_PLATFORM
+                        return c.default.Messages.QUESTS_REWARD_CODE_PLATFORM_CROSS_PLATFORM
                 }
             };
 
-            function y(e) {
+            function P(e) {
                 if (null == e.userStatus) return 0;
                 let {
                     streamProgressSeconds: t,
@@ -190008,41 +190025,41 @@
                 return Math.min(t / 60 / i, 1)
             }
 
-            function P(e) {
+            function U(e) {
                 var t, n;
-                if ((null === (t = e.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return _.default.Messages.QUESTS_COMPLETION_PROGRESS_COMPLETE;
+                if ((null === (t = e.userStatus) || void 0 === t ? void 0 : t.completedAt) != null) return c.default.Messages.QUESTS_COMPLETION_PROGRESS_COMPLETE;
                 if ((null === (n = e.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null) {
-                    let t = y(e);
-                    return t >= .75 ? _.default.Messages.QUESTS_COMPLETION_PROGRESS_ALMOST_COMPLETE : t >= .45 && t <= .55 ? _.default.Messages.QUESTS_COMPLETION_PROGRESS_HALFWAY : t > 0 ? _.default.Messages.QUESTS_COMPLETION_PROGRESS_STARTED : _.default.Messages.QUESTS_COMPLETION_PROGRESS_NOT_STARTED
+                    let t = P(e);
+                    return t >= .75 ? c.default.Messages.QUESTS_COMPLETION_PROGRESS_ALMOST_COMPLETE : t >= .45 && t <= .55 ? c.default.Messages.QUESTS_COMPLETION_PROGRESS_HALFWAY : t > 0 ? c.default.Messages.QUESTS_COMPLETION_PROGRESS_STARTED : c.default.Messages.QUESTS_COMPLETION_PROGRESS_NOT_STARTED
                 }
-                return _.default.Messages.QUESTS_TITLE.format({
+                return c.default.Messages.QUESTS_TITLE.format({
                     questName: e.config.messages.questName
                 })
             }
 
-            function U(e) {
-                return Object.keys(d.DismissibleQuestContentFlags).includes(u.QuestContent[e])
+            function b(e) {
+                return Object.keys(_.DismissibleQuestContentFlags).includes(u.QuestContent[e])
             }
 
-            function b(e, t) {
-                if (!U(t)) return !1;
+            function G(e, t) {
+                if (!b(t)) return !1;
                 let n = u.QuestContent[t];
-                return (0, s.hasFlag)(e.dismissedQuestContent, d.DismissibleQuestContentFlags[n])
-            }
-
-            function G(e) {
-                return e.tag === a.QuestRewardTypes.COLLECTIBLE
+                return (0, s.hasFlag)(e.dismissedQuestContent, _.DismissibleQuestContentFlags[n])
             }
 
             function w(e) {
-                return e.rewardsConfig.rewards.some(G)
+                return e.tag === a.QuestRewardTypes.COLLECTIBLE
             }
 
-            function B(e, t) {
-                return e.targetedContent.includes(t)
+            function B(e) {
+                return e.rewardsConfig.rewards.some(w)
             }
 
             function k(e, t) {
+                return e.targetedContent.includes(t)
+            }
+
+            function V(e, t) {
                 o.default.captureException(e, {
                     ...t,
                     tags: {
@@ -190052,25 +190069,25 @@
                 })
             }
 
-            function V(e, t) {
+            function x(e, t) {
                 if (null == t || null == e) return null;
                 for (let n of t) {
                     if (null == n.application_id) continue;
-                    let t = I(e, n.application_id);
+                    let t = T(e, n.application_id);
                     if (null != t) return t
                 }
                 return null
             }
 
-            function x(e) {
+            function F(e) {
                 return e.endsWith(".webm") || e.endsWith(".mp4") || e.startsWith("data:video")
             }
-            let F = /\.([a-zA-Z0-9]+)$/,
-                H = /^data:video\/([a-zA-Z0-9]+)\;/;
+            let H = /\.([a-zA-Z0-9]+)$/,
+                Y = /^data:video\/([a-zA-Z0-9]+)\;/;
 
-            function Y(e) {
+            function j(e) {
                 var t, n, i, r, a;
-                switch (null !== (a = null === (n = F.exec(e)) || void 0 === n ? void 0 : null === (t = n[1]) || void 0 === t ? void 0 : t.toLowerCase()) && void 0 !== a ? a : null === (r = H.exec(e)) || void 0 === r ? void 0 : null === (i = r[1]) || void 0 === i ? void 0 : i.toLowerCase()) {
+                switch (null !== (a = null === (n = H.exec(e)) || void 0 === n ? void 0 : null === (t = n[1]) || void 0 === t ? void 0 : t.toLowerCase()) && void 0 !== a ? a : null === (r = Y.exec(e)) || void 0 === r ? void 0 : null === (i = r[1]) || void 0 === i ? void 0 : i.toLowerCase()) {
                     case "webm":
                         return "video/webm";
                     case "mp4":
@@ -190080,21 +190097,21 @@
                 }
             }
 
-            function j(e) {
+            function W(e) {
                 let {
                     quest: t
                 } = e, n = t.config.rewardsConfig;
                 return n.assignmentMethod === r.QuestRewardAssignmentMethods.TIERED && n.rewards.length > 0 && n.rewards.every(e => e.tag === a.QuestRewardTypes.REWARD_CODE)
             }
 
-            function W(e) {
+            function K(e) {
                 let {
                     quest: t
                 } = e;
-                return t.config.variants.includes(d.QuestVariants.PLAYTIME_TASK)
+                return t.config.variants.includes(_.QuestVariants.PLAYTIME_TASK)
             }
 
-            function K(e) {
+            function z(e) {
                 let {
                     quest: t,
                     idx: n
@@ -190106,27 +190123,35 @@
                 return null
             }
 
-            function z(e) {
+            function Z(e) {
                 let {
                     quest: t,
-                    useV2Variants: n = !1
-                } = e;
-                return j({
+                    location: n,
+                    useV2Variants: i = !1
+                } = e, {
+                    messages: r,
+                    streamDurationRequirementMinutes: a
+                } = t.config, {
+                    gameTitle: s,
+                    rewardNameWithArticle: o
+                } = r;
+                return (0, d.isEligibleForQuestPlaytime)({
+                    location: n
+                }) && K({
                     quest: t
-                }) ? n ? _.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED_V2.format({
-                    gameTitle: t.config.messages.gameTitle,
-                    streamingDurationRequirement: t.config.streamDurationRequirementMinutes
-                }) : _.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED.format({
-                    gameTitle: t.config.messages.gameTitle,
-                    streamingDurationRequirement: t.config.streamDurationRequirementMinutes
-                }) : n ? _.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_V2.format({
-                    gameTitle: t.config.messages.gameTitle,
-                    questReward: t.config.messages.rewardNameWithArticle,
-                    streamingDurationRequirement: t.config.streamDurationRequirementMinutes
-                }) : _.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD.format({
-                    gameTitle: t.config.messages.gameTitle,
-                    questReward: t.config.messages.rewardNameWithArticle,
-                    streamingDurationRequirement: t.config.streamDurationRequirementMinutes
+                }) ? c.default.Messages.QUESTS_PLAY_INSTRUCTIONS_TO_WIN_REWARD.format({
+                    gameTitle: s,
+                    questReward: o,
+                    streamingDurationRequirement: a
+                }) : W({
+                    quest: t
+                }) ? (i ? c.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED_V2 : c.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED).format({
+                    gameTitle: s,
+                    streamingDurationRequirement: a
+                }) : (i ? c.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD_V2 : c.default.Messages.QUESTS_INSTRUCTIONS_TO_WIN_REWARD).format({
+                    gameTitle: s,
+                    questReward: o,
+                    streamingDurationRequirement: a
                 })
             }
         },
@@ -190134,12 +190159,15 @@
             "use strict";
             n.r(t), n.d(t, {
                 isEligibleForQuestPlaytime: function() {
-                    return a
+                    return s
+                },
+                useIsEligibleForQuestPlaytime: function() {
+                    return o
                 }
             });
-            var i = n("818083");
-            n("977156");
-            let r = (0, i.createExperiment)({
+            var i = n("818083"),
+                r = n("977156");
+            let a = (0, i.createExperiment)({
                     id: "2024-04_quest_playtime_task",
                     kind: "user",
                     label: "Quest Playtime Task",
@@ -190160,16 +190188,31 @@
                         }
                     }]
                 }),
-                a = e => {
+                s = e => {
                     let {
                         location: t,
                         autoTrackExposure: n = !1
                     } = e;
-                    return r.getCurrentConfig({
+                    return a.getCurrentConfig({
                         location: t
                     }, {
                         autoTrackExposure: n
                     }).enabled
+                },
+                o = e => {
+                    let {
+                        location: t,
+                        autoTrackExposure: n = !1
+                    } = e, i = (0, r.useIsEligibleForQuests)({
+                        location: t
+                    }), {
+                        enabled: s
+                    } = a.useExperiment({
+                        location: t
+                    }, {
+                        autoTrackExposure: n
+                    });
+                    return i && s
                 }
         },
         432945: function(e, t, n) {
@@ -249874,7 +249917,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "f6649e76dccccac5ca4f4183bf3aebc1e49dd0ed"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d7fc478fd7dbae5471986d672a3d06b9c1921041"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278794,7 +278837,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "291762"
+                                build_number: "291780"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286147,7 +286190,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "291762", "291762"), 10);
+                let a = parseInt((n = "291780", "291780"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313752,4 +313795,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.be6889827dec26a9864c.js.map
+//# sourceMappingURL=35705.15a23bdfe4b639f8fdac.js.map
