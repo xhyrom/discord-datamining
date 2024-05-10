@@ -44796,7 +44796,6 @@ img.thumbnail__18ece {
     flex: 1;
     min-height: 0;
     padding-top: 144px;
-    padding-left: 124px;
     display: flex
 }
 
@@ -44851,7 +44850,8 @@ img.thumbnail__18ece {
 
 .scroller__24eef {
     padding-right: 52px;
-    padding-bottom: 52px
+    padding-bottom: 52px;
+    justify-content: center
 }
 
 .sidebarContent_e262dc {
@@ -88643,8 +88643,8 @@ input::-webkit-inner-spin-button {
 
 .bodyText_fa331b {
     color: var(--interactive-normal);
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -88691,8 +88691,8 @@ input::-webkit-inner-spin-button {
 }
 
 .trialCheckboxLabel__7d1e0 {
-    font-size: 14px;
-    line-height: 18px
+    font-size: .875rem;
+    line-height: 1.125rem
 }
 
 .loader_acb69b {
@@ -136909,4 +136909,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.eac8897c6c7cdab2c49a.css.map*/
+/*# sourceMappingURL=99387.22dc7ec76ad1f4a514db.css.map*/
