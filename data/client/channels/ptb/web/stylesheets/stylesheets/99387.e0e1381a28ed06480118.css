@@ -20160,7 +20160,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .body__489bc {
     z-index: 1;
-    padding: 0 16px 16px;
+    padding: 0 16px 8px;
     display: flex;
     flex-direction: column;
     gap: 12px
@@ -136880,4 +136880,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.8d263ad5a8ad12cea429.css.map*/
+/*# sourceMappingURL=99387.e0e1381a28ed06480118.css.map*/
