@@ -37407,7 +37407,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292245", ", Version Hash: ").concat("133b48ee5bb105cdf31ff1ad55171e1f42867428")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292253", ", Version Hash: ").concat("a18275335aa7f1d14efc8161d3d4778b1c1f5c55")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56467,7 +56467,10 @@
                 SIGNUP_CLAN_OPTION_VERY_HARDCORE_TITLE: "Very Hardcore",
                 SIGNUP_CLAN_OPTION_VERY_HARDCORE_DESCRIPTION: "We won't sleep until we win or beat the boss.",
                 CLAN_DISCOVERY_TOP_PICKS_TITLE: "Top Picks",
+                CLAN_DISCOVERY_VALORANT_TITLE: "Valorant Guilds",
+                CLAN_DISCOVERY_GENSHIN_TITLE: "Genshin Guilds",
                 CLAN_DISCOVERY_TOP_PICKS_SUBTITLE: "Best Guilds to join based on your preferences",
+                CLAN_DISCOVERY_PREPILOT_SUBTITLE: "Other Gaming Guilds currently on waitlist for launch",
                 CLAN_DISCOVERY_GAME_FILTER: "{count, number} Games",
                 CLAN_DISCOVERY_PREFERENCES_FILTER: "Preferences",
                 CLAN_DISCOVERY_PRIMETIME_FILTER: "Prime Time",
@@ -88505,8 +88508,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292245", "292245"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292245")), t = 0), t
+                let t = parseInt((e = "292253", "292253"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292253")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103690,7 +103693,7 @@
                     valorantConfig: i,
                     genshinConfig: r
                 } = e;
-                return null !== (n = null !== (t = r.defaultGameId) && void 0 !== t ? t : i.defaultGameId) && void 0 !== n ? n : null
+                return null !== (n = null !== (t = null == r ? void 0 : r.defaultGameId) && void 0 !== t ? t : null == i ? void 0 : i.defaultGameId) && void 0 !== n ? n : null
             }
 
             function u(e) {
@@ -103756,8 +103759,8 @@
                     return {
                         enableClanCreation: a && n.enableClanCreation || s,
                         defaultGameId: l({
-                            genshinConfig: i,
-                            valorantConfig: n
+                            genshinConfig: r ? i : void 0,
+                            valorantConfig: a ? n : void 0
                         })
                     }
                 }({
@@ -115936,8 +115939,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292245",
-                    versionHash: "133b48ee5bb105cdf31ff1ad55171e1f42867428"
+                    buildNumber: "292253",
+                    versionHash: "a18275335aa7f1d14efc8161d3d4778b1c1f5c55"
                 }
             }
             n.r(t), n.d(t, {
@@ -171680,8 +171683,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715309462140",
-                                    build_number: "292245"
+                                    built_at: "1715316621033",
+                                    build_number: "292253"
                                 }
                             },
                             retries: 1
@@ -250181,7 +250184,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "133b48ee5bb105cdf31ff1ad55171e1f42867428"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a18275335aa7f1d14efc8161d3d4778b1c1f5c55"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279127,7 +279130,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292245"
+                                build_number: "292253"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286480,7 +286483,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292245", "292245"), 10);
+                let a = parseInt((n = "292253", "292253"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314102,4 +314105,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.9b7251e2fccc284d5b1c.js.map
+//# sourceMappingURL=35705.8c68ff146b8f7e34f0ea.js.map
