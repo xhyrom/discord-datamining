@@ -37407,7 +37407,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292381", ", Version Hash: ").concat("6e42a50c1c4d7904848e105874a78e441c197725")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292398", ", Version Hash: ").concat("97e9343d2030c1368a37d990d840d82c5e5e976e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -42225,6 +42225,8 @@
                 DEFAULT_APP_DESCRIPTION: "- None provided -",
                 NO_AUTHORIZED_APPS: "No Authorized Apps",
                 NO_AUTHORIZED_APPS_NOTE: "Enhance your Discord experience by authorizing and integrating third-party services",
+                AUTHORIZED_APPS_TERMS_OF_SERVICE: "Terms of Service",
+                AUTHORIZED_APPS_PRIVACY_POLICY: "Privacy Policy",
                 DELETE_APP_CONFIRM_MSG: "This action will remove the link between your Discord account and this app.",
                 JOIN_GUILD: "Join",
                 JOINING_GUILD: "Joining",
@@ -43321,6 +43323,7 @@
                 OAUTH2_GO_TO_SERVER_DEFAULT_CTA: "Go to Server",
                 OAUTH2_IP_LOCATION_DISCLOSURE: "Developer may see your IP address while you use this application.",
                 OAUTH2_ADVERTISEMENTS_DISCLOSURE: "Developer may show ads while you use this application.",
+                OAUTH2_UNKNOWN_DISCLOSURE: "Unknown Developer disclosure.",
                 SETTINGS_TWO_FA: "Multi-Factor Authentication",
                 TWO_FA: "Authenticator App",
                 TWO_FA_DESCRIPTION: "Configuring an authenticator app is a good way to add an extra layer of security to your Discord account to make sure that only you have the ability to log in.",
@@ -81394,16 +81397,20 @@
                     return r.ApplicationDisclosureType
                 },
                 ackDisclosures: function() {
-                    return o
+                    return l
                 },
                 getDisclosures: function() {
-                    return s
+                    return o
+                },
+                getTextForDisclosure: function() {
+                    return u
                 }
             });
             var i = n("544891"),
                 r = n("921072"),
-                a = n("981631");
-            async function s(e) {
+                a = n("981631"),
+                s = n("689938");
+            async function o(e) {
                 let t = a.Endpoints.APPLICATION_DISCLOSURES(e),
                     n = await i.HTTP.get({
                         url: t,
@@ -81417,7 +81424,7 @@
                     allAcked: n.body.all_acked
                 }
             }
-            async function o(e, t) {
+            async function l(e, t) {
                 let n = a.Endpoints.APPLICATION_DISCLOSURES(e);
                 await i.HTTP.post({
                     url: n,
@@ -81425,6 +81432,17 @@
                         disclosures: t
                     }
                 })
+            }
+
+            function u(e) {
+                switch (e) {
+                    case r.ApplicationDisclosureType.IP_LOCATION:
+                        return s.default.Messages.OAUTH2_IP_LOCATION_DISCLOSURE;
+                    case r.ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS:
+                        return s.default.Messages.OAUTH2_ADVERTISEMENTS_DISCLOSURE;
+                    default:
+                        return s.default.Messages.OAUTH2_UNKNOWN_DISCLOSURE
+                }
             }
         },
         311819: function(e, t, n) {
@@ -88542,8 +88560,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292381", "292381"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292381")), t = 0), t
+                let t = parseInt((e = "292398", "292398"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292398")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115973,8 +115991,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292381",
-                    versionHash: "6e42a50c1c4d7904848e105874a78e441c197725"
+                    buildNumber: "292398",
+                    versionHash: "97e9343d2030c1368a37d990d840d82c5e5e976e"
                 }
             }
             n.r(t), n.d(t, {
@@ -171728,8 +171746,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715363457406",
-                                    build_number: "292381"
+                                    built_at: "1715364298812",
+                                    build_number: "292398"
                                 }
                             },
                             retries: 1
@@ -250239,7 +250257,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "6e42a50c1c4d7904848e105874a78e441c197725"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "97e9343d2030c1368a37d990d840d82c5e5e976e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279185,7 +279203,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292381"
+                                build_number: "292398"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286538,7 +286556,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292381", "292381"), 10);
+                let a = parseInt((n = "292398", "292398"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314160,4 +314178,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.6d6825e79fb70908dce1.js.map
+//# sourceMappingURL=35705.ca6d63f96f043930d782.js.map
