@@ -37407,7 +37407,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292330", ", Version Hash: ").concat("5619e87bd472e77f61e5c807b802e86b618d4eac")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292333", ", Version Hash: ").concat("3234e7e26ff5c8139af9a89a10a5e7e64ddcf4a1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88541,8 +88541,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292330", "292330"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292330")), t = 0), t
+                let t = parseInt((e = "292333", "292333"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292333")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115972,8 +115972,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292330",
-                    versionHash: "5619e87bd472e77f61e5c807b802e86b618d4eac"
+                    buildNumber: "292333",
+                    versionHash: "3234e7e26ff5c8139af9a89a10a5e7e64ddcf4a1"
                 }
             }
             n.r(t), n.d(t, {
@@ -171727,8 +171727,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715359215486",
-                                    build_number: "292330"
+                                    built_at: "1715359694326",
+                                    build_number: "292333"
                                 }
                             },
                             retries: 1
@@ -189008,10 +189008,11 @@
                 }
             }
 
-            function T(e) {
+            function T(e, t) {
                 return {
                     content_id: e,
-                    content_name: c(e)
+                    content_name: c(e),
+                    content_position: t
                 }
             }
 
@@ -189044,16 +189045,17 @@
                     questId: t,
                     questContent: n,
                     questContentCTA: i,
-                    trackGuildAndChannelMetadata: r = !1
+                    questContentPosition: r,
+                    trackGuildAndChannelMetadata: a = !1
                 } = e;
                 f({
                     questId: t,
                     event: d.AnalyticEvents.QUEST_CONTENT_CLICKED,
                     properties: {
-                        ...T(n),
+                        ...T(n, r),
                         cta_name: i
                     },
-                    trackGuildAndChannelMetadata: r
+                    trackGuildAndChannelMetadata: a
                 })
             }(i = r || (r = {})).LEARN_MORE = "LEARN_MORE", i.SHOW_REWARD = "SHOW_REWARD", i.CLAIM_REWARD = "CLAIM_REWARD", i.GET_REWARD_CODE = "GET_REWARD_CODE", i.COPY_REWARD_CODE = "COPY_REWARD_CODE", i.ACCEPT_QUEST = "ACCEPT_QUEST", i.COPY_QUEST_URL = "COPY_QUEST_URL", i.TRACK_PROGRESS = "TRACK_PROGRESS", i.OPEN_DISCLOSURE = "OPEN_DISCLOSURE", i.WATCH_STREAM = "WATCH_STREAM", i.REWARD_LEARN_MORE = "REWARD_LEARN_MORE", i.OPEN_GAME_LINK = "OPEN_GAME_LINK", i.OPEN_CONTEXT_MENU = "OPEN_CONTEXT_MENU", i.CONTEXT_MENU_COPY_LINK = "CONTEXT_MENU.COPY_LINK", i.CONTEXT_MENU_HIDE_CONTENT = "CONTEXT_MENU.HIDE_CONTENT", i.CONTEXT_MENU_OPEN_GAME_LINK = "CONTEXT_MENU.OPEN_GAME_LINK", i.CONTEXT_MENU_OPEN_DISCLOSURE = "CONTEXT_MENU.OPEN_DISCLOSURE", i.CONTEXT_MENU_LEARN_MORE = "CONTEXT_MENU.LEARN_MORE", i.EXPAND = "EXPAND", i.COLLAPSE = "COLLAPSE"
         },
@@ -189161,7 +189163,8 @@
                 if (null != t.questContentCTA && (0, s.trackQuestContentClicked)({
                         questId: e,
                         questContent: t.questContent,
-                        questContentCTA: t.questContentCTA
+                        questContentCTA: t.questContentCTA,
+                        questContentPosition: t.questContentPosition
                     }), !o.default.isEnrolling(e)) {
                     r.default.dispatch({
                         type: "QUESTS_ENROLL_BEGIN",
@@ -190812,9 +190815,9 @@
                 }) : e[t] = n, e
             }
             class f {
-                constructor(e, t, n, i) {
-                    var r = this;
-                    T(this, "id", void 0), T(this, "quests", void 0), T(this, "questContent", void 0), T(this, "trackGuildAndChannelMetadata", void 0), T(this, "triggeredByStatusChange", void 0), T(this, "beatTimeout", void 0), T(this, "lastBeatTime", void 0), T(this, "minViewTimeReachedTimeout", void 0), T(this, "minViewTimeSecond", void 0), T(this, "minViewportPercentage", void 0), T(this, "onMinViewTimeReached", () => {
+                constructor(e, t, n, i, r) {
+                    var o = this;
+                    T(this, "id", void 0), T(this, "quests", void 0), T(this, "questContent", void 0), T(this, "questContentPosition", void 0), T(this, "trackGuildAndChannelMetadata", void 0), T(this, "triggeredByStatusChange", void 0), T(this, "beatTimeout", void 0), T(this, "lastBeatTime", void 0), T(this, "minViewTimeReachedTimeout", void 0), T(this, "minViewTimeSecond", void 0), T(this, "minViewportPercentage", void 0), T(this, "onMinViewTimeReached", () => {
                         this.quests.forEach(e => {
                             (0, c.trackQuestEvent)({
                                 questId: e.id,
@@ -190830,23 +190833,23 @@
                         })
                     }), T(this, "heartbeat", function() {
                         let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-                        r.quests.forEach(t => {
-                            null != r.lastBeatTime && (0, c.trackQuestEvent)({
+                        o.quests.forEach(t => {
+                            null != o.lastBeatTime && (0, c.trackQuestEvent)({
                                 questId: t.id,
                                 event: I.AnalyticEvents.QUEST_CONTENT_VIEW_TIME,
                                 properties: {
                                     is_termination_beat: e,
-                                    viewed_time_ms: Date.now() - r.lastBeatTime,
-                                    triggered_by_status_change: r.triggeredByStatusChange,
-                                    ...r.commonProperties(t)
+                                    viewed_time_ms: Date.now() - o.lastBeatTime,
+                                    triggered_by_status_change: o.triggeredByStatusChange,
+                                    ...o.commonProperties(t)
                                 },
-                                trackGuildAndChannelMetadata: r.trackGuildAndChannelMetadata
+                                trackGuildAndChannelMetadata: o.trackGuildAndChannelMetadata
                             })
-                        }), r.lastBeatTime = Date.now()
+                        }), o.lastBeatTime = Date.now()
                     }), T(this, "commonProperties", e => ({
                         impression_id: this.id,
                         quest_status: (0, c.getQuestStatus)(e),
-                        ...(0, c.getContentProperties)(this.questContent)
+                        ...(0, c.getContentProperties)(this.questContent, this.questContentPosition)
                     })), T(this, "start", () => {
                         this.stop(!1), this.lastBeatTime = Date.now(), this.beatTimeout = setInterval(() => this.heartbeat(), 6e4), this.minViewTimeReachedTimeout = setTimeout(this.onMinViewTimeReached, 1e3 * this.minViewTimeSecond), this.quests.forEach(e => {
                             (0, c.trackQuestEvent)({
@@ -190864,8 +190867,8 @@
                         })
                     }), T(this, "stop", function() {
                         let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-                        e && r.heartbeat(!0), r.lastBeatTime = void 0, clearInterval(r.beatTimeout), clearTimeout(r.minViewTimeReachedTimeout)
-                    }), this.id = (0, a.v4)(), this.questContent = t, this.minViewTimeSecond = 1, this.minViewportPercentage = .5, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = i, this.triggeredByStatusChange = n
+                        e && o.heartbeat(!0), o.lastBeatTime = void 0, clearInterval(o.beatTimeout), clearTimeout(o.minViewTimeReachedTimeout)
+                    }), this.id = (0, a.v4)(), this.questContent = t, this.questContentPosition = n, this.minViewTimeSecond = 1, this.minViewportPercentage = .5, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = i
                 }
             }
 
@@ -190894,8 +190897,8 @@
                     let t = n && E,
                         i = (I || a || h) && t,
                         r = (I || a) && !t || h;
-                    (i || r) && null != A.current && A.current.stop(), i && (A.current = new f(e.questOrQuests, e.questContent, h, e.trackGuildAndChannelMetadata), A.current.start())
-                }, [n, E, A, a, I, e.questOrQuests, e.questContent, e.trackGuildAndChannelMetadata, h]), (0, i.jsx)(i.Fragment, {
+                    (i || r) && null != A.current && A.current.stop(), i && (A.current = new f(e.questOrQuests, e.questContent, e.questContentPosition, h, e.trackGuildAndChannelMetadata), A.current.start())
+                }, [n, E, A, a, I, e.questOrQuests, e.questContent, e.questContentPosition, e.trackGuildAndChannelMetadata, h]), (0, i.jsx)(i.Fragment, {
                     children: e.children(m)
                 })
             }
@@ -190930,6 +190933,7 @@
                     (0, E.trackQuestContentClicked)({
                         questId: n.id,
                         questContent: e.questContent,
+                        questContentPosition: e.questContentPosition,
                         questContentCTA: E.QuestContentCTA.REWARD_LEARN_MORE
                     }), u.default.open(f.UserSettingsSections.INVENTORY), null === (i = e.onClick) || void 0 === i || i.call(e, t)
                 }, [n.id, e]), O = r.useRef(null), C = r.useRef(a);
@@ -191133,8 +191137,9 @@
             function c(e) {
                 let {
                     quest: t,
-                    location: n
-                } = e, a = (0, r.useStateFromStores)([s.default], () => {
+                    location: n,
+                    questContentPosition: a
+                } = e, c = (0, r.useStateFromStores)([s.default], () => {
                     var e;
                     return null === (e = s.default.getCurrentUser()) || void 0 === e ? void 0 : e.verified
                 });
@@ -191142,12 +191147,14 @@
                     null != t && ((0, o.trackQuestContentClicked)({
                         questId: t.id,
                         questContent: n,
-                        questContentCTA: o.QuestContentCTA.CLAIM_REWARD
-                    }), a ? (0, l.hasQuestCollectibleRewards)(t.config) ? (0, u.openCollectibleRewardModal)(t, n) : (0, _.openQuestsRewardCodeModal)({
+                        questContentCTA: o.QuestContentCTA.CLAIM_REWARD,
+                        questContentPosition: a
+                    }), c ? (0, l.hasQuestCollectibleRewards)(t.config) ? (0, u.openCollectibleRewardModal)(t, n) : (0, _.openQuestsRewardCodeModal)({
                         questId: t.id,
-                        location: n
+                        location: n,
+                        questContentPosition: a
                     }) : (0, d.openRewardModalUnverified)())
-                }, [t, n, a])
+                }, [t, n, a, c])
             }
 
             function E(e) {
@@ -192230,7 +192237,8 @@
             function l(e) {
                 let {
                     questId: t,
-                    location: a
+                    location: a,
+                    questContentPosition: s
                 } = e;
                 (0, r.openModalLazy)(async () => {
                     let {
@@ -192239,6 +192247,7 @@
                     return n => (0, i.jsx)(e, {
                         ...n,
                         questId: t,
+                        questContentPosition: s,
                         location: a
                     })
                 })
@@ -192251,7 +192260,8 @@
                         (0, o.trackQuestContentClicked)({
                             questId: e.id,
                             questContent: t.content,
-                            questContentCTA: t.ctaContent
+                            questContentCTA: t.ctaContent,
+                            questContentPosition: t.position
                         }), (0, a.default)(e.config.getGameLink)
                     }
                 })
@@ -250228,7 +250238,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "5619e87bd472e77f61e5c807b802e86b618d4eac"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3234e7e26ff5c8139af9a89a10a5e7e64ddcf4a1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279174,7 +279184,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292330"
+                                build_number: "292333"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286527,7 +286537,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292330", "292330"), 10);
+                let a = parseInt((n = "292333", "292333"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314149,4 +314159,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.3a6d388b60b36efb6b05.js.map
+//# sourceMappingURL=35705.45d1669b42390816d980.js.map
