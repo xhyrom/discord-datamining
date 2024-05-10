@@ -18997,7 +18997,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .avatarPositionBiteSize_edf897 {
-    top: 76px
+    top: 66px
 }
 
 .avatarHoverTarget__9b4a9 {
@@ -50257,8 +50257,8 @@ div:has(>div>.modal__06f49) {
 }
 
 .name__4eb92 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -83869,7 +83869,7 @@ input::-webkit-inner-spin-button {
 }
 
 .title__63238 {
-    font-size: 17px
+    font-size: 1.0625rem
 }
 
 .developerResources__8ef1d:hover {
@@ -83900,8 +83900,8 @@ input::-webkit-inner-spin-button {
 }
 
 .backHeader_cff6da {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     color: var(--interactive-normal)
 }
 
@@ -136294,7 +136294,7 @@ code {
     --custom-user-banner-banner-height-profile: 106px;
     --custom-user-banner-banner-height-panel: 120px;
     --custom-user-banner-cancel-modal-height: 42px;
-    --custom-user-banner-height-bite-size: 120px;
+    --custom-user-banner-height-bite-size: 110px;
     --custom-user-banner-height-full-size: 210px;
     --custom-user-profile-themed-container-user-popout-width: 340px;
     --custom-user-profile-themed-container-user-profile-modal-width: 600px;
@@ -136980,4 +136980,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.4c875508366ba7ae8a9f.css.map*/
+/*# sourceMappingURL=99387.54af435ba4a61fa25665.css.map*/
