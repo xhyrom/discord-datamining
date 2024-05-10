@@ -37404,7 +37404,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292609", ", Version Hash: ").concat("d98fad8dec79b24feec38e0d3cc12b997225b29d")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292610", ", Version Hash: ").concat("6e0fccaa42fa942bb811ac7b4705aeb297abb083")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88555,8 +88555,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292609", "292609"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292609")), t = 0), t
+                let t = parseInt((e = "292610", "292610"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292610")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116014,8 +116014,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292609",
-                    versionHash: "d98fad8dec79b24feec38e0d3cc12b997225b29d"
+                    buildNumber: "292610",
+                    versionHash: "6e0fccaa42fa942bb811ac7b4705aeb297abb083"
                 }
             }
             n.r(t), n.d(t, {
@@ -171772,8 +171772,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715381124688",
-                                    build_number: "292609"
+                                    built_at: "1715381402430",
+                                    build_number: "292610"
                                 }
                             },
                             retries: 1
@@ -240041,7 +240041,7 @@
                 }
                 getAckTimestamp() {
                     let e, t;
-                    if (0 !== this._ackMessageTimestamp) return this._ackMessageTimestamp;
+                    if (0 !== this._ackMessageTimestamp && !isNaN(this._ackMessageTimestamp)) return this._ackMessageTimestamp;
                     if (this._isThread) return this._ackMessageTimestamp = eG(this.guildId, this.channelId), this._ackMessageId = x.default.fromTimestamp(this._ackMessageTimestamp), this._ackMessageTimestamp;
                     if (this.type === es.ReadStateTypes.GUILD_EVENT || this.type === es.ReadStateTypes.GUILD_ONBOARDING_QUESTION) e = z.default.getGuild(this.channelId);
                     else if ((0, er.isStaticChannelRoute)(this.channelId)) e = z.default.getGuild(this.guildId);
@@ -240052,7 +240052,7 @@
                             e = z.default.getGuild(n)
                         }
                     }
-                    return t = null != e ? ew(e) : x.default.extractTimestamp(this.channelId), this._ackMessageTimestamp = t, t
+                    return null != e ? isNaN(t = ew(e)) && (t = x.default.extractTimestamp(this.channelId)) : t = x.default.extractTimestamp(this.channelId), this._ackMessageTimestamp = t, t
                 }
                 get oldestUnreadTimestamp() {
                     return null != this.oldestUnreadMessageId ? x.default.extractTimestamp(this.oldestUnreadMessageId) : 0
@@ -240137,16 +240137,19 @@
                 let a = Y.default.getChannel(t),
                     s = z.default.getGuild(null != e ? e : null == a ? void 0 : a.guild_id),
                     o = (null == a ? void 0 : a.isForumPost()) ? 0 : ew(s),
-                    l = (null !== (r = null === (n = y.default.joinTimestamp(t)) || void 0 === n ? void 0 : n.getTime()) && void 0 !== r ? r : 0) - 5e3,
-                    u = null == a ? void 0 : null === (i = a.threadMetadata) || void 0 === i ? void 0 : i.archiveTimestamp,
-                    d = Math.max(l, null != u ? new Date(u).getTime() - 1 : 0);
-                return d <= 0 && (d = x.default.extractTimestamp(t) - 1), isNaN(o) ? d : Math.max(o, d)
+                    l = (null !== (r = null === (n = y.default.joinTimestamp(t)) || void 0 === n ? void 0 : n.getTime()) && void 0 !== r ? r : 0) - 5e3;
+                isNaN(l) && (l = -5e3);
+                let u = null == a ? void 0 : null === (i = a.threadMetadata) || void 0 === i ? void 0 : i.archiveTimestamp,
+                    d = null != u ? new Date(u).getTime() - 1 : 0;
+                isNaN(d) && (d = 0);
+                let _ = Math.max(l, d);
+                return _ <= 0 && (_ = x.default.extractTimestamp(t) - 1), (isNaN(_) || _ <= 0) && (_ = 0), isNaN(o) ? _ : Math.max(o, _)
             }
 
             function ew(e) {
                 if (null != e && null != e.joinedAt) {
-                    if (e.joinedAt instanceof Date) return e.joinedAt.getTime();
-                    if ("string" == typeof e.joinedAt) return new Date(e.joinedAt).getTime();
+                    if (e.joinedAt instanceof Date) isNaN(e.joinedAt.getTime());
+                    else if ("string" == typeof e.joinedAt) isNaN(new Date(e.joinedAt).getTime());
                     else if ("number" == typeof e.joinedAt && !isNaN(e.joinedAt)) return e.joinedAt
                 }
                 return Date.now()
@@ -250383,7 +250386,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d98fad8dec79b24feec38e0d3cc12b997225b29d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "6e0fccaa42fa942bb811ac7b4705aeb297abb083"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279334,7 +279337,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292609"
+                                build_number: "292610"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286692,7 +286695,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292609", "292609"), 10);
+                let a = parseInt((n = "292610", "292610"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314314,4 +314317,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.7815546e36803f978c59.js.map
+//# sourceMappingURL=35705.6f5592a1f2933c60d4fd.js.map
