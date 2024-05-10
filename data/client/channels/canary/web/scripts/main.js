@@ -37407,7 +37407,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292459", ", Version Hash: ").concat("454da0c94859705fe6758da93e5128d0bd75eee2")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292460", ", Version Hash: ").concat("4cd32e1d187ac576bbb257198cd56f20cf88a8c3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88560,8 +88560,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292459", "292459"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292459")), t = 0), t
+                let t = parseInt((e = "292460", "292460"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292460")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103069,11 +103069,14 @@
                 trackClanAdoptIdentity: function() {
                     return d
                 },
+                trackClanApplicationAction: function() {
+                    return R
+                },
                 trackClanApplicationNavigation: function() {
                     return C
                 },
                 trackClanApplicationViewed: function() {
-                    return R
+                    return g
                 },
                 trackClanApplyToJoinViewed: function() {
                     return u
@@ -103316,6 +103319,20 @@
             }
 
             function R(e) {
+                let {
+                    guildId: t,
+                    actionType: n,
+                    applicationUserId: r
+                } = e;
+                a.default.track(o.AnalyticEvents.CLAN_APPLICATION_ACTION, {
+                    guild_id: t,
+                    action_type: n,
+                    application_user_id: r,
+                    viewing_user_id: i.default.getId()
+                })
+            }
+
+            function g(e) {
                 let {
                     guildId: t,
                     applicationUserId: n,
@@ -115991,8 +116008,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292459",
-                    versionHash: "454da0c94859705fe6758da93e5128d0bd75eee2"
+                    buildNumber: "292460",
+                    versionHash: "4cd32e1d187ac576bbb257198cd56f20cf88a8c3"
                 }
             }
             n.r(t), n.d(t, {
@@ -144374,19 +144391,24 @@
                 }
             }, T = async function(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : l.GuildJoinRequestApplicationStatuses.APPROVED,
-                    a = arguments.length > 3 ? arguments[3] : void 0,
-                    s = await i.HTTP.patch({
-                        url: d.Endpoints.GUILD_JOIN_REQUEST(e, t),
-                        body: {
-                            action: n,
-                            rejection_reason: a
-                        }
-                    });
+                    a = arguments.length > 3 ? arguments[3] : void 0;
+                (0, s.trackClanApplicationAction)({
+                    guildId: e,
+                    actionType: n,
+                    applicationUserId: t
+                });
+                let o = await i.HTTP.patch({
+                    url: d.Endpoints.GUILD_JOIN_REQUEST(e, t),
+                    body: {
+                        action: n,
+                        rejection_reason: a
+                    }
+                });
                 r.default.dispatch({
                     type: "GUILD_JOIN_REQUEST_UPDATE",
                     guildId: e,
-                    status: s.body.application_status,
-                    request: s.body
+                    status: o.body.application_status,
+                    request: o.body
                 })
             }, f = async (e, t) => {
                 let n = await i.HTTP.patch({
@@ -171734,8 +171756,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715369301293",
-                                    build_number: "292459"
+                                    built_at: "1715369409793",
+                                    build_number: "292460"
                                 }
                             },
                             retries: 1
@@ -250253,7 +250275,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "454da0c94859705fe6758da93e5128d0bd75eee2"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "4cd32e1d187ac576bbb257198cd56f20cf88a8c3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279204,7 +279226,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292459"
+                                build_number: "292460"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286562,7 +286584,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292459", "292459"), 10);
+                let a = parseInt((n = "292460", "292460"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314184,4 +314206,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.54c6ee7f554dfcd8ff34.js.map
+//# sourceMappingURL=35705.9f0d11f773c83a437034.js.map
