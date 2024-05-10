@@ -58662,8 +58662,8 @@ div:has(>div>.modal__06f49) {
 
 .utils_ab6626 {
     align-items: center;
-    -webkit-backdrop-filter: blur(10px)brightness(.9);
-    backdrop-filter: blur(10px)brightness(.9);
+    -webkit-backdrop-filter: blur(10px)brightness(.8);
+    backdrop-filter: blur(10px)brightness(.8);
     border-radius: 8px;
     display: flex;
     flex: 0 0 auto;
@@ -83869,7 +83869,7 @@ input::-webkit-inner-spin-button {
 }
 
 .title__63238 {
-    font-size: 17px
+    font-size: 1.0625rem
 }
 
 .developerResources__8ef1d:hover {
@@ -83900,8 +83900,8 @@ input::-webkit-inner-spin-button {
 }
 
 .backHeader_cff6da {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     color: var(--interactive-normal)
 }
 
@@ -136980,4 +136980,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.5bc933dee07ace5d29e7.css.map*/
+/*# sourceMappingURL=99387.f36c04adf04afd2c9a58.css.map*/
