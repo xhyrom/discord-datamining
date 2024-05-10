@@ -2723,7 +2723,10 @@
             e.exports = {
                 filterError: "filterError_ff4f9f",
                 poster: "poster_dc3c22",
+                posterBackground: "posterBackground__54400",
                 posterDivider: "posterDivider__89a65",
+                posterText: "posterText__0b223",
+                posterTextParent: "posterTextParent__1d5cd",
                 scrollBackgroundContainer: "scrollBackgroundContainer_e8de10",
                 scrollContainer: "scrollContainer__99a28",
                 scrollSection: "scrollSection_e2e4f3",

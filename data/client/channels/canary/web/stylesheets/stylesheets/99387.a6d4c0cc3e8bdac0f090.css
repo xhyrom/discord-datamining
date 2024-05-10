@@ -83361,11 +83361,34 @@ input::-webkit-inner-spin-button {
 }
 
 .poster_dc3c22 {
+    position: relative;
     width: calc(100% - 28px);
     height: auto;
     margin-top: 16px;
     margin-left: 16px;
-    border-radius: 12px
+    border-radius: 12px;
+    perspective: 45px
+}
+
+.posterBackground__54400 {
+    width: 100%;
+    height: auto
+}
+
+.posterTextParent__1d5cd {
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 29%;
+    width: 90%;
+    height: 110%;
+    transform: scale(.5)rotate3d(1, -9, 18, 6deg);
+    transform-origin: top left
+}
+
+.posterText__0b223 {
+    align-content: center;
+    text-shadow: 2px 2px black
 }
 
 .posterDivider__89a65 {
@@ -136909,4 +136932,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.22a1eb8103deb309fc25.css.map*/
+/*# sourceMappingURL=99387.a6d4c0cc3e8bdac0f090.css.map*/
