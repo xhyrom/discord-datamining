@@ -19446,16 +19446,13 @@
                     avatarSize: l.AvatarSizes.SIZE_32,
                     className: D.placeholder
                 }) : (0, i.jsx)(l.Popout, {
-                    renderPopout: e => {
-                        var t, n;
-                        return (0, i.jsx)(I.default, {
-                            quest: eh,
-                            applicationStream: B,
-                            width: null !== (n = null === (t = eo.current) || void 0 === t ? void 0 : t.clientWidth) && void 0 !== n ? n : 222,
-                            ...e,
-                            closePopout: () => eS(!0)
-                        })
-                    },
+                    renderPopout: e => (0, i.jsx)(I.default, {
+                        quest: eh,
+                        memberListItemRef: eo,
+                        applicationStream: B,
+                        ...e,
+                        closePopout: () => eS(!0)
+                    }),
                     position: "bottom",
                     shouldShow: eA,
                     nudgeAlignIntoViewport: !1,
@@ -37407,7 +37404,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292595", ", Version Hash: ").concat("16c34e608d3a80512a93fd4256261bafa2cef801")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292609", ", Version Hash: ").concat("d98fad8dec79b24feec38e0d3cc12b997225b29d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88558,8 +88555,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292595", "292595"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292595")), t = 0), t
+                let t = parseInt((e = "292609", "292609"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292609")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116017,8 +116014,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292595",
-                    versionHash: "16c34e608d3a80512a93fd4256261bafa2cef801"
+                    buildNumber: "292609",
+                    versionHash: "d98fad8dec79b24feec38e0d3cc12b997225b29d"
                 }
             }
             n.r(t), n.d(t, {
@@ -171775,8 +171772,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715380287613",
-                                    build_number: "292595"
+                                    built_at: "1715381124688",
+                                    build_number: "292609"
                                 }
                             },
                             retries: 1
@@ -191758,39 +191755,51 @@
                 var t, S, h;
                 let {
                     quest: N,
-                    width: p,
+                    memberListItemRef: p,
                     applicationStream: O,
                     position: B,
-                    closePopout: k
-                } = e, V = (0, l.useStateFromStores)([m.default], () => {
+                    closePopout: k,
+                    updatePosition: V
+                } = e, x = (0, l.useStateFromStores)([m.default], () => {
                     var e;
                     return null !== (e = m.default.getChannel(null == O ? void 0 : O.channelId)) && void 0 !== e ? e : null
-                }), x = (0, M.useHandleClaimQuestsReward)({
+                }), F = (0, M.useHandleClaimQuestsReward)({
                     quest: N,
                     location: g.QuestContent.MEMBERS_LIST
-                }), F = (0, R.useIsQuestExpired)(N), H = (null == N ? void 0 : null === (t = N.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, Y = (null == N ? void 0 : null === (S = N.userStatus) || void 0 === S ? void 0 : S.enrolledAt) != null, j = (null == N ? void 0 : null === (h = N.userStatus) || void 0 === h ? void 0 : h.completedAt) != null, W = (0, l.useStateFromStores)([A.default], () => A.default.getState().theme), K = (0, u.isThemeDark)(W) ? P.ThemeTypes.DARK : P.ThemeTypes.LIGHT, z = (0, l.useStateFromStores)([f.default], () => f.default.useReducedMotion), {
-                    ref: Z,
-                    height: X
-                } = (0, I.default)(), [Q, q] = r.useState(z), J = (0, T.useWindowDispatch)(), $ = (0, s.useListContainerScrollerRef)();
+                }), H = (0, R.useIsQuestExpired)(N), Y = (null == N ? void 0 : null === (t = N.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, j = (null == N ? void 0 : null === (S = N.userStatus) || void 0 === S ? void 0 : S.enrolledAt) != null, W = (null == N ? void 0 : null === (h = N.userStatus) || void 0 === h ? void 0 : h.completedAt) != null, K = (0, l.useStateFromStores)([A.default], () => A.default.getState().theme), z = (0, u.isThemeDark)(K) ? P.ThemeTypes.DARK : P.ThemeTypes.LIGHT, Z = (0, l.useStateFromStores)([f.default], () => f.default.useReducedMotion), {
+                    ref: X,
+                    height: Q
+                } = (0, I.default)(), [q, J] = r.useState(Z), $ = (0, T.useWindowDispatch)(), ee = (0, s.useListContainerScrollerRef)();
                 r.useEffect(() => {
-                    let e = $.current;
+                    let e = ee.current;
                     return null == e || e.addEventListener("scroll", k), () => {
                         null == e || e.removeEventListener("scroll", k)
                     }
-                }, [k, $]);
-                let ee = (0, a.useSpring)({
+                }, [k, ee]), r.useEffect(() => {
+                    let e = ee.current,
+                        t = p.current;
+                    if (null == e || null == t) return;
+                    let n = new MutationObserver(() => V());
+                    return n.observe(e, {
+                        childList: !0,
+                        subtree: !0
+                    }), () => {
+                        n.disconnect()
+                    }
+                }, [p, ee, V]);
+                let et = (0, a.useSpring)({
                         from: {
                             height: 0
                         },
-                        height: null != X ? X : 0,
+                        height: null != Q ? Q : 0,
                         config: {
                             tension: 450,
                             friction: 45
                         },
-                        immediate: z,
-                        onRest: () => q(!0)
+                        immediate: Z,
+                        onRest: () => J(!0)
                     }),
-                    et = (0, a.useTransition)(Q, {
+                    en = (0, a.useTransition)(q, {
                         from: {
                             opacity: 0,
                             scale: 0
@@ -191800,12 +191809,12 @@
                             scale: 1
                         }
                     }),
-                    en = () => {
-                        J.dispatch(y.ComponentActions.POPOUT_CLOSE)
+                    ei = () => {
+                        $.dispatch(y.ComponentActions.POPOUT_CLOSE)
                     },
-                    ei = "top" === B ? "".concat("4px", " ").concat("4px", " 0 0") : "0 0 ".concat("4px", " ").concat("4px");
-                if (null == N || F || H && !w(O, V)) return null;
-                let er = () => {
+                    er = "top" === B ? "".concat("4px", " ").concat("4px", " 0 0") : "0 0 ".concat("4px", " ").concat("4px");
+                if (null == N || H || Y && !w(O, x)) return null;
+                let ea = () => {
                         (0, C.trackQuestContentClicked)({
                             questId: N.id,
                             questContent: g.QuestContent.MEMBERS_LIST,
@@ -191822,7 +191831,7 @@
                             })
                         })
                     },
-                    ea = () => {
+                    es = () => {
                         (0, C.trackQuestContentClicked)({
                             questId: N.id,
                             questContent: g.QuestContent.MEMBERS_LIST,
@@ -191830,123 +191839,126 @@
                             trackGuildAndChannelMetadata: !0
                         }), E.default.open(y.UserSettingsSections.INVENTORY)
                     },
-                    es = e => {
-                        e.stopPropagation(), er()
+                    eo = e => {
+                        e.stopPropagation(), ea()
                     },
-                    eo = () => {
-                        if (w(O, V) && null != V) return (0, C.trackQuestContentClicked)({
+                    el = () => {
+                        if (w(O, x) && null != x) return (0, C.trackQuestContentClicked)({
                             questId: N.id,
                             questContent: g.QuestContent.MEMBERS_LIST,
                             questContentCTA: C.QuestContentCTA.WATCH_STREAM,
                             trackGuildAndChannelMetadata: !0
-                        }), _.default.selectVoiceChannel(V.id), (0, c.watchStreamAndTransitionToStream)(O);
-                        ea()
+                        }), _.default.selectVoiceChannel(x.id), (0, c.watchStreamAndTransitionToStream)(O);
+                        es()
                     },
-                    el = j && !H ? {
+                    eu = W && !Y ? {
                         headerText: U.default.Messages.QUESTS_MEMBERS_LIST_CLAIM_REWARD,
                         ctaText: U.default.Messages.QUESTS_CLAIM_REWARD,
-                        handleClickCta: x,
+                        handleClickCta: F,
                         tileAssetType: "reward"
-                    } : Y && !H ? {
+                    } : j && !Y ? {
                         headerText: U.default.Messages.QUESTS_MEMBERS_LIST_FINISH,
                         ctaText: U.default.Messages.QUESTS_MEMBERS_LIST_PROGRESS_CTA,
-                        handleClickCta: ea,
+                        handleClickCta: es,
                         tileAssetType: "reward"
-                    } : w(O, V) ? {
+                    } : w(O, x) ? {
                         headerText: U.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE,
                         ctaText: U.default.Messages.QUESTS_MEMBERS_LIST_WATCH_CTA,
-                        handleClickCta: eo,
+                        handleClickCta: el,
                         tileAssetType: "game"
                     } : {
                         headerText: U.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE,
                         ctaText: U.default.Messages.QUESTS_MEMBERS_LIST_BEGIN_CTA,
-                        handleClickCta: ea,
+                        handleClickCta: es,
                         tileAssetType: "game"
                     };
                 return (0, i.jsx)(v.QuestContentImpressionTracker, {
                     questOrQuests: N,
                     questContent: g.QuestContent.MEMBERS_LIST,
                     trackGuildAndChannelMetadata: !0,
-                    children: e => (0, i.jsx)(a.animated.div, {
-                        ref: t => {
-                            e.current = t
-                        },
-                        "aria-expanded": Q,
-                        className: b.wrapper,
-                        style: {
-                            width: p,
-                            height: ee.height,
-                            overflow: Q ? "visible" : "hidden",
-                            borderRadius: ei
-                        },
-                        children: (0, i.jsxs)("div", {
-                            ref: e => {
-                                Z.current = e
+                    children: e => {
+                        var t, n;
+                        return (0, i.jsx)(a.animated.div, {
+                            ref: t => {
+                                e.current = t
                             },
-                            className: b.container,
+                            "aria-expanded": q,
+                            className: b.wrapper,
                             style: {
-                                borderRadius: ei
+                                width: null !== (n = null === (t = p.current) || void 0 === t ? void 0 : t.clientWidth) && void 0 !== n ? n : 222,
+                                height: et.height,
+                                overflow: q ? "visible" : "hidden",
+                                borderRadius: er
                             },
-                            children: [(0, i.jsxs)("div", {
-                                className: b.top,
-                                children: [(0, i.jsxs)("div", {
-                                    className: b.left,
-                                    children: [(0, i.jsx)(d.Heading, {
-                                        variant: "heading-sm/semibold",
-                                        children: el.headerText
-                                    }), (0, i.jsxs)(d.Clickable, {
-                                        className: b.help,
-                                        onClick: e => {
-                                            en(), es(e)
-                                        },
-                                        children: [(0, i.jsx)(d.Text, {
-                                            variant: "text-xs/medium",
-                                            color: "text-muted",
-                                            className: b.helpText,
-                                            children: U.default.Messages.QUESTS_MEMBERS_LIST_PROMOTED_BY.format({
-                                                gamePublisher: N.config.messages.gamePublisher
-                                            })
-                                        }), (0, i.jsx)(o.CircleQuestionIcon, {
-                                            className: b.helpIcon,
-                                            width: G,
-                                            height: G,
-                                            color: d.tokens.colors.INTERACTIVE_NORMAL
-                                        })]
-                                    })]
-                                }), (0, i.jsx)("div", {
-                                    className: b.right,
-                                    children: (0, i.jsxs)("div", {
-                                        className: b.imgWrapper,
-                                        children: [et((e, t) => t && (0, i.jsx)(a.animated.div, {
-                                            style: e,
-                                            className: b.imgUnderlay
-                                        })), "game" === el.tileAssetType && (0, i.jsx)("img", {
-                                            alt: U.default.Messages.QUESTS_MEMBERS_LIST_GAME_TILE_ALT.format({
-                                                gameTitle: N.config.messages.gameTitle,
-                                                gamePublisher: N.config.messages.gamePublisher
-                                            }),
-                                            className: b.assetTile,
-                                            src: (0, L.getGameTileAssetUrl)(N, K)
-                                        }), "reward" === el.tileAssetType && (0, i.jsx)(D.default, {
-                                            className: b.assetTile,
-                                            quest: N,
-                                            questContent: g.QuestContent.MEMBERS_LIST,
-                                            learnMoreStyle: "icon",
-                                            onClick: en
-                                        })]
-                                    })
-                                })]
-                            }), (0, i.jsx)(d.Button, {
-                                onClick: () => {
-                                    en(), el.handleClickCta()
+                            children: (0, i.jsxs)("div", {
+                                ref: e => {
+                                    X.current = e
                                 },
-                                color: d.Button.Colors.CUSTOM,
-                                hover: d.Button.Hovers.PRIMARY,
-                                className: b.ctaButton,
-                                children: el.ctaText
-                            })]
+                                className: b.container,
+                                style: {
+                                    borderRadius: er
+                                },
+                                children: [(0, i.jsxs)("div", {
+                                    className: b.top,
+                                    children: [(0, i.jsxs)("div", {
+                                        className: b.left,
+                                        children: [(0, i.jsx)(d.Heading, {
+                                            variant: "heading-sm/semibold",
+                                            children: eu.headerText
+                                        }), (0, i.jsxs)(d.Clickable, {
+                                            className: b.help,
+                                            onClick: e => {
+                                                ei(), eo(e)
+                                            },
+                                            children: [(0, i.jsx)(d.Text, {
+                                                variant: "text-xs/medium",
+                                                color: "text-muted",
+                                                className: b.helpText,
+                                                children: U.default.Messages.QUESTS_MEMBERS_LIST_PROMOTED_BY.format({
+                                                    gamePublisher: N.config.messages.gamePublisher
+                                                })
+                                            }), (0, i.jsx)(o.CircleQuestionIcon, {
+                                                className: b.helpIcon,
+                                                width: G,
+                                                height: G,
+                                                color: d.tokens.colors.INTERACTIVE_NORMAL
+                                            })]
+                                        })]
+                                    }), (0, i.jsx)("div", {
+                                        className: b.right,
+                                        children: (0, i.jsxs)("div", {
+                                            className: b.imgWrapper,
+                                            children: [en((e, t) => t && (0, i.jsx)(a.animated.div, {
+                                                style: e,
+                                                className: b.imgUnderlay
+                                            })), "game" === eu.tileAssetType && (0, i.jsx)("img", {
+                                                alt: U.default.Messages.QUESTS_MEMBERS_LIST_GAME_TILE_ALT.format({
+                                                    gameTitle: N.config.messages.gameTitle,
+                                                    gamePublisher: N.config.messages.gamePublisher
+                                                }),
+                                                className: b.assetTile,
+                                                src: (0, L.getGameTileAssetUrl)(N, z)
+                                            }), "reward" === eu.tileAssetType && (0, i.jsx)(D.default, {
+                                                className: b.assetTile,
+                                                quest: N,
+                                                questContent: g.QuestContent.MEMBERS_LIST,
+                                                learnMoreStyle: "icon",
+                                                onClick: ei
+                                            })]
+                                        })
+                                    })]
+                                }), (0, i.jsx)(d.Button, {
+                                    onClick: () => {
+                                        ei(), eu.handleClickCta()
+                                    },
+                                    color: d.Button.Colors.CUSTOM,
+                                    hover: d.Button.Hovers.PRIMARY,
+                                    className: b.ctaButton,
+                                    children: eu.ctaText
+                                })]
+                            })
                         })
-                    })
+                    }
                 })
             }
         },
@@ -250371,7 +250383,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "16c34e608d3a80512a93fd4256261bafa2cef801"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d98fad8dec79b24feec38e0d3cc12b997225b29d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279322,7 +279334,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292595"
+                                build_number: "292609"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286680,7 +286692,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292595", "292595"), 10);
+                let a = parseInt((n = "292609", "292609"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314302,4 +314314,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.578d70ff72783028498a.js.map
+//# sourceMappingURL=35705.7815546e36803f978c59.js.map
