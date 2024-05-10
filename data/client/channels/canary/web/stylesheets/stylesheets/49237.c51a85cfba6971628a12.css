@@ -16612,8 +16612,8 @@ strong {
 
 .title_bdbe69 {
     font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     text-transform: uppercase
 }
 
@@ -16703,8 +16703,8 @@ h3.improved_e02592:after {
     display: flex;
     align-items: center;
     border-radius: 5px;
-    font-size: 1rem;
-    line-height: 1.125rem;
+    font-size: 16px;
+    line-height: 18px;
     padding: 16px
 }
 
@@ -28252,4 +28252,4 @@ h6.title_c2a544 {
     white-space: break-spaces
 }
 
-/*# sourceMappingURL=49237.de3454f70cbaf6c0ce83.css.map*/
+/*# sourceMappingURL=49237.c51a85cfba6971628a12.css.map*/
