@@ -52913,7 +52913,7 @@ div:has(>div>.modal__06f49) {
     bottom: -6px;
     left: 18px;
     border-color: var(--bg-surface-overlay);
-    box-shadow: var(--elevation-high)
+    z-index: 1
 }
 
 .footer_b74401 {
@@ -52957,7 +52957,8 @@ div:has(>div>.modal__06f49) {
 .popoutContent__3554c {
     width: 256px;
     box-sizing: border-box;
-    padding: 16px
+    padding: 16px;
+    z-index: 2
 }
 
 .close__298e6 {
@@ -136932,4 +136933,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.a6d4c0cc3e8bdac0f090.css.map*/
+/*# sourceMappingURL=99387.dfa5e6de8252011f973d.css.map*/
