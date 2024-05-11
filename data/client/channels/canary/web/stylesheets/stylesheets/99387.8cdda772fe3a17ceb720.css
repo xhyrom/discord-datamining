@@ -95299,7 +95299,11 @@ div.content_aac020 {
     left: 0;
     height: 100%;
     width: 100%;
-    border-radius: 10px
+    border-radius: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top
 }
 
 .chatPreview__8e939 {
@@ -136880,4 +136884,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.e0e1381a28ed06480118.css.map*/
+/*# sourceMappingURL=99387.8cdda772fe3a17ceb720.css.map*/
