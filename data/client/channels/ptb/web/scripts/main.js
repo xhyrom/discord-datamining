@@ -9469,18 +9469,22 @@
             var i = n("544891"),
                 r = n("780384"),
                 a = n("570140"),
-                s = n("408987"),
-                o = n("57132"),
-                l = n("895886"),
-                u = n("703656"),
-                d = n("131704"),
-                _ = n("592125"),
-                c = n("73346"),
-                E = n("26151"),
-                I = n("287734"),
-                T = n("981631"),
-                f = n("423219"),
-                S = n("689938");
+                s = n("802098"),
+                o = n("702321"),
+                l = n("408987"),
+                u = n("57132"),
+                d = n("895886"),
+                _ = n("703656"),
+                c = n("131704"),
+                E = n("592125"),
+                I = n("306680"),
+                T = n("626135"),
+                f = n("73346"),
+                S = n("26151"),
+                h = n("287734"),
+                A = n("981631"),
+                m = n("423219"),
+                N = n("689938");
             t.default = {
                 async openPrivateChannel(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
@@ -9489,7 +9493,7 @@
                         a = arguments.length > 4 ? arguments[4] : void 0,
                         s = this._getRecipients(e),
                         o = e => {
-                            t && E.default.call(e.id, n, !0, e.isDM() ? e.getRecipientId() : null)
+                            t && S.default.call(e.id, n, !0, e.isDM() ? e.getRecipientId() : null)
                         };
                     if (1 === s.length) {
                         let [e] = s, t = this._openCachedDMChannel(e, a);
@@ -9497,7 +9501,7 @@
                     }
                     try {
                         let e = await i.HTTP.post({
-                            url: T.Endpoints.USER_CHANNELS,
+                            url: A.Endpoints.USER_CHANNELS,
                             body: {
                                 recipients: s
                             },
@@ -9510,51 +9514,51 @@
                         let t = this._openPrivateChannel(e.body);
                         return o(t), e.body.id
                     } catch (e) {
-                        var u;
-                        throw (null == e ? void 0 : null === (u = e.body) || void 0 === u ? void 0 : u.code) === T.AbortCodes.QUARANTINED && (0, l.default)(), e
+                        var l;
+                        throw (null == e ? void 0 : null === (l = e.body) || void 0 === l ? void 0 : l.code) === A.AbortCodes.QUARANTINED && (0, d.default)(), e
                     }
                 },
                 async createBroadcastPrivateChannel() {
                     try {
                         let e = await i.HTTP.post({
-                                url: T.Endpoints.BROADCAST_PRIVATE_CHANNEL
+                                url: A.Endpoints.BROADCAST_PRIVATE_CHANNEL
                             }),
-                            t = (0, d.createChannelRecordFromServer)(e.body);
-                        return E.default.call(t.id, !1, !1, null), e.body.id
+                            t = (0, c.createChannelRecordFromServer)(e.body);
+                        return S.default.call(t.id, !1, !1, null), e.body.id
                     } catch (t) {
                         var e;
-                        throw (null == t ? void 0 : null === (e = t.body) || void 0 === e ? void 0 : e.code) === T.AbortCodes.QUARANTINED && (0, l.default)(), t
+                        throw (null == t ? void 0 : null === (e = t.body) || void 0 === e ? void 0 : e.code) === A.AbortCodes.QUARANTINED && (0, d.default)(), t
                     }
                 },
                 _openCachedDMChannel(e, t) {
-                    let n = _.default.getDMFromUserId(e),
-                        i = null != n ? _.default.getChannel(n) : null;
-                    return null != i ? (null == t || t(), null != (0, o.getRootNavigationRefIfInExperiment)() ? (0, u.transitionTo)(T.Routes.CHANNEL(T.ME, i.id), {
+                    let n = E.default.getDMFromUserId(e),
+                        i = null != n ? E.default.getChannel(n) : null;
+                    return null != i ? (null == t || t(), null != (0, u.getRootNavigationRefIfInExperiment)() ? (0, _.transitionTo)(A.Routes.CHANNEL(A.ME, i.id), {
                         navigationReplace: !0
-                    }) : I.default.selectPrivateChannel(i.id), i) : null
+                    }) : h.default.selectPrivateChannel(i.id), i) : null
                 },
                 async ensurePrivateChannel(e) {
                     let t = this._getRecipients(e),
                         n = await i.HTTP.post({
-                            url: T.Endpoints.USER_CHANNELS,
+                            url: A.Endpoints.USER_CHANNELS,
                             body: {
                                 recipients: t
                             },
                             oldFormErrors: !0
                         }),
-                        r = (0, d.createChannelRecordFromServer)(n.body);
+                        r = (0, c.createChannelRecordFromServer)(n.body);
                     return a.default.dispatch({
                         type: "CHANNEL_CREATE",
                         channel: r
                     }), r.id
                 },
                 async getOrEnsurePrivateChannel(e) {
-                    let t = _.default.getDMFromUserId(e);
+                    let t = E.default.getDMFromUserId(e);
                     return null != t ? t : await this.ensurePrivateChannel(e)
                 },
                 async getDMChannel(e) {
-                    let t = await i.HTTP.get(T.Endpoints.DM_CHANNEL(e)),
-                        n = (0, d.createChannelRecordFromServer)(t.body);
+                    let t = await i.HTTP.get(A.Endpoints.DM_CHANNEL(e)),
+                        n = (0, c.createChannelRecordFromServer)(t.body);
                     return a.default.dispatch({
                         type: "CHANNEL_CREATE",
                         channel: n
@@ -9562,18 +9566,21 @@
                 },
                 _getRecipients: e => null != e ? Array.isArray(e) ? e : [e] : [],
                 _openPrivateChannel(e) {
-                    let t = (0, d.createChannelRecordFromServer)(e);
+                    let t = (0, c.createChannelRecordFromServer)(e);
                     return a.default.dispatch({
                         type: "CHANNEL_CREATE",
                         channel: t
-                    }), null != (0, o.getRootNavigationRefIfInExperiment)() ? (0, u.transitionTo)(T.Routes.CHANNEL(T.ME, t.id), {
+                    }), null != (0, u.getRootNavigationRefIfInExperiment)() ? (0, _.transitionTo)(A.Routes.CHANNEL(A.ME, t.id), {
                         navigationReplace: !0
-                    }) : I.default.selectPrivateChannel(t.id), t
+                    }) : h.default.selectPrivateChannel(t.id), t
                 },
                 closePrivateChannel(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                         n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-                    return a.default.dispatch({
+                    return (0, o.default)(e) && T.default.track(A.AnalyticEvents.CHANGE_LOG_DM_REMOVED, {
+                        last_changelog_id: s.default.latestChangelogId(),
+                        unread_count: I.default.getUnreadCount(e)
+                    }), a.default.dispatch({
                         type: "CHANNEL_DELETE",
                         channel: {
                             id: e,
@@ -9581,82 +9588,82 @@
                             parent_id: void 0
                         },
                         silent: n
-                    }), t && !__OVERLAY__ && (0, u.transitionTo)(T.Routes.FRIENDS), i.HTTP.del({
-                        url: T.Endpoints.CHANNEL(e),
+                    }), t && !__OVERLAY__ && (0, _.transitionTo)(A.Routes.FRIENDS), i.HTTP.del({
+                        url: A.Endpoints.CHANNEL(e),
                         query: {
                             silent: n
                         },
                         oldFormErrors: !0
                     }).then(() => {
-                        r.AccessibilityAnnouncer.announce(S.default.Messages.A11Y_ANNOUNCEMENT_DM_CLOSED)
+                        r.AccessibilityAnnouncer.announce(N.default.Messages.A11Y_ANNOUNCEMENT_DM_CLOSED)
                     }).catch(() => {
-                        r.AccessibilityAnnouncer.announce(S.default.Messages.A11Y_ANNOUNCEMENT_DM_CLOSED_FAILED)
+                        r.AccessibilityAnnouncer.announce(N.default.Messages.A11Y_ANNOUNCEMENT_DM_CLOSED_FAILED)
                     })
                 },
                 updatePermissionOverwrite: (e, t) => i.HTTP.put({
-                    url: T.Endpoints.CHANNEL_PERMISSIONS_OVERWRITE(e, t.id),
+                    url: A.Endpoints.CHANNEL_PERMISSIONS_OVERWRITE(e, t.id),
                     body: t,
                     oldFormErrors: !0
                 }),
                 clearPermissionOverwrite: (e, t) => i.HTTP.del({
-                    url: T.Endpoints.CHANNEL_PERMISSIONS_OVERWRITE(e, t),
+                    url: A.Endpoints.CHANNEL_PERMISSIONS_OVERWRITE(e, t),
                     oldFormErrors: !0
                 }),
                 addRecipient(e, t, n, a) {
                     return i.HTTP.put({
-                        url: T.Endpoints.CHANNEL_RECIPIENT(e, t),
+                        url: A.Endpoints.CHANNEL_RECIPIENT(e, t),
                         context: {
                             location: n
                         },
                         oldFormErrors: !0
-                    }).then(t => (r.AccessibilityAnnouncer.announce(S.default.Messages.A11Y_ANNOUNCEMENT_USER_ADDED_TO_GROUP_DM), null == a || a(), 201 === t.status) ? this._openPrivateChannel(t.body).id : e).catch(() => (r.AccessibilityAnnouncer.announce(S.default.Messages.A11Y_ANNOUNCEMENT_USER_ADDED_TO_GROUP_DM_FAILED), e))
+                    }).then(t => (r.AccessibilityAnnouncer.announce(N.default.Messages.A11Y_ANNOUNCEMENT_USER_ADDED_TO_GROUP_DM), null == a || a(), 201 === t.status) ? this._openPrivateChannel(t.body).id : e).catch(() => (r.AccessibilityAnnouncer.announce(N.default.Messages.A11Y_ANNOUNCEMENT_USER_ADDED_TO_GROUP_DM_FAILED), e))
                 },
                 addRecipients(e, t, n, i) {
                     return this.addRecipient(e, t[0], n, i).then(e => Promise.all(t.slice(1).map(t => this.addRecipient(e, t, n))).then(() => e))
                 },
                 removeRecipient: (e, t) => i.HTTP.del({
-                    url: T.Endpoints.CHANNEL_RECIPIENT(e, t),
+                    url: A.Endpoints.CHANNEL_RECIPIENT(e, t),
                     oldFormErrors: !0
                 }),
                 setDMOwner: (e, t) => i.HTTP.patch({
-                    url: T.Endpoints.CHANNEL(e),
+                    url: A.Endpoints.CHANNEL(e),
                     body: {
                         owner: t
                     },
                     oldFormErrors: !0
                 }),
                 async setName(e, t) {
-                    let n = _.default.getChannel(e),
+                    let n = E.default.getChannel(e),
                         r = await i.HTTP.patch({
-                            url: T.Endpoints.CHANNEL(e),
+                            url: A.Endpoints.CHANNEL(e),
                             body: {
                                 name: t
                             },
                             oldFormErrors: !0
                         }),
                         a = null == n ? void 0 : n.getGuildId();
-                    return null != a && !(null == n ? void 0 : n.isThread()) && s.default.checkGuildTemplateDirty(a), r
+                    return null != a && !(null == n ? void 0 : n.isThread()) && l.default.checkGuildTemplateDirty(a), r
                 },
                 setIcon(e, t) {
-                    let n = _.default.getChannel(e);
+                    let n = E.default.getChannel(e);
                     i.HTTP.patch({
-                        url: T.Endpoints.CHANNEL(e),
+                        url: A.Endpoints.CHANNEL(e),
                         body: {
                             icon: t
                         },
                         oldFormErrors: !0
                     }).then(() => {
                         let e = null == n ? void 0 : n.getGuildId();
-                        null != e && !(null == n ? void 0 : n.isThread()) && s.default.checkGuildTemplateDirty(e)
+                        null != e && !(null == n ? void 0 : n.isThread()) && l.default.checkGuildTemplateDirty(e)
                     })
                 },
                 setVoiceBackgroundDisplay(e, t) {
                     let n;
-                    return n = t.type === f.VoiceCallBackgroundTypes.EMPTY ? t : {
+                    return n = t.type === m.VoiceCallBackgroundTypes.EMPTY ? t : {
                         type: t.type,
                         resource_id: t.resourceId
                     }, i.HTTP.put({
-                        url: T.Endpoints.UPDATE_VOICE_CHANNEL_BACKGROUND(e),
+                        url: A.Endpoints.UPDATE_VOICE_CHANNEL_BACKGROUND(e),
                         body: {
                             voice_background_display: n
                         },
@@ -9664,20 +9671,20 @@
                     })
                 },
                 convertToGuild: e => i.HTTP.post({
-                    url: T.Endpoints.CHANNEL_CONVERT(e),
+                    url: A.Endpoints.CHANNEL_CONVERT(e),
                     oldFormErrors: !0
                 }),
                 preload(e, t) {
                     a.default.dispatch({
                         type: "CHANNEL_PRELOAD",
-                        guildId: e === T.ME ? null : e,
+                        guildId: e === A.ME ? null : e,
                         channelId: t,
-                        context: T.CURRENT_APP_CONTEXT
+                        context: A.CURRENT_APP_CONTEXT
                     })
                 },
                 fetchChannelStoreListing(e, t) {
-                    let n = null != t ? T.Endpoints.CHANNEL_STORE_LISTING_SKU(e, t) : T.Endpoints.CHANNEL_STORE_LISTING(e);
-                    return (0, c.httpGetWithCountryCodeQuery)(n).then(t => {
+                    let n = null != t ? A.Endpoints.CHANNEL_STORE_LISTING_SKU(e, t) : A.Endpoints.CHANNEL_STORE_LISTING(e);
+                    return (0, f.httpGetWithCountryCodeQuery)(n).then(t => {
                         a.default.dispatch({
                             type: "STORE_LISTING_FETCH_SUCCESS",
                             channelId: e,
@@ -9687,17 +9694,17 @@
                 },
                 async createTextChannel(e, t, n, r) {
                     let a = {
-                        type: T.ChannelTypes.GUILD_TEXT,
+                        type: A.ChannelTypes.GUILD_TEXT,
                         name: t,
                         permission_overwrites: []
                     };
                     null != n && (a.parent_id = n), null != r && (a.topic = r);
-                    let o = await i.HTTP.post({
-                        url: T.Endpoints.GUILD_CHANNELS(e),
+                    let s = await i.HTTP.post({
+                        url: A.Endpoints.GUILD_CHANNELS(e),
                         body: a,
                         oldFormErrors: !0
                     });
-                    return s.default.checkGuildTemplateDirty(e), o
+                    return l.default.checkGuildTemplateDirty(e), s
                 }
             }
         },
@@ -37404,7 +37411,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292634", ", Version Hash: ").concat("46b5d44a10d4e1a12b91d737c61910a54e19e67f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292648", ", Version Hash: ").concat("4665401f10bb2f944a36f182cbc9e56129c8aa53")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55723,7 +55730,7 @@
                 POLL_END_EARLY_CONFIRMATION_TITLE: "End Poll Now?",
                 POLL_END_EARLY_CONFIRMATION_TEXT: "This will close the poll immediately and reveal the results.",
                 POLL_SENT_NOTIFICATION: "[poll] !!{question}!!",
-                POLL_RESULTS_NOTIFICATION: "Poll results are in: !!{question}!!",
+                POLL_RESULTS_NOTIFICATION: "The poll !!{question}!! has closed",
                 POLL_RESULT_MESSAGE_HEADER: "The poll [!!{title}!!](titleOnClick) has closed.",
                 POLL_RESULT_REPLY_TEXT: "The poll **{title}** has closed",
                 POLL_RESULT_NO_VOTERS: "There was no winner",
@@ -88557,8 +88564,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292634", "292634"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292634")), t = 0), t
+                let t = parseInt((e = "292648", "292648"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292648")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116016,8 +116023,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292634",
-                    versionHash: "46b5d44a10d4e1a12b91d737c61910a54e19e67f"
+                    buildNumber: "292648",
+                    versionHash: "4665401f10bb2f944a36f182cbc9e56129c8aa53"
                 }
             }
             n.r(t), n.d(t, {
@@ -171774,8 +171781,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715384930696",
-                                    build_number: "292634"
+                                    built_at: "1715388169030",
+                                    build_number: "292648"
                                 }
                             },
                             retries: 1
@@ -250396,7 +250403,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "46b5d44a10d4e1a12b91d737c61910a54e19e67f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "4665401f10bb2f944a36f182cbc9e56129c8aa53"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279347,7 +279354,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292634"
+                                build_number: "292648"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286705,7 +286712,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292634", "292634"), 10);
+                let a = parseInt((n = "292648", "292648"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314327,4 +314334,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.d10507a6dd0cdc4f2269.js.map
+//# sourceMappingURL=35705.09c2d1b22ed9f4aa8bcf.js.map
