@@ -4003,8 +4003,6 @@
   "GUILD_CONVERT_TO_CLAN": {
     "url": "/clan/:param",
     "allowed_methods": [
-      "GET",
-      "HEAD",
       "OPTIONS",
       "POST"
     ]
