@@ -37411,7 +37411,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292876", ", Version Hash: ").concat("9df3a86f2229cda2d26be3f642a56a3d4a4e5c70")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292882", ", Version Hash: ").concat("229772e8d26733e4359f2afd8086d452aee3ce51")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88582,8 +88582,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292876", "292876"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292876")), t = 0), t
+                let t = parseInt((e = "292882", "292882"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292882")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116144,8 +116144,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292876",
-                    versionHash: "9df3a86f2229cda2d26be3f642a56a3d4a4e5c70"
+                    buildNumber: "292882",
+                    versionHash: "229772e8d26733e4359f2afd8086d452aee3ce51"
                 }
             }
             n.r(t), n.d(t, {
@@ -144466,59 +144466,62 @@
                 a = n("287734"),
                 s = n("970606"),
                 o = n("131704"),
-                l = n("246364"),
-                u = n("937111"),
-                d = n("981631");
-            let _ = async e => {
+                l = n("826581"),
+                u = n("246364"),
+                d = n("937111"),
+                _ = n("981631");
+            let c = async e => {
                 let t = await i.HTTP.get({
-                        url: d.Endpoints.GUILD_JOIN_REQUEST_BY_ID(e)
+                        url: _.Endpoints.GUILD_JOIN_REQUEST_BY_ID(e)
                     }),
-                    n = (0, u.joinRequestFromServer)(t.body);
+                    n = (0, d.joinRequestFromServer)(t.body);
                 return r.default.dispatch({
                     type: "GUILD_JOIN_REQUEST_BY_ID_FETCH_SUCCESS",
                     joinRequest: n
                 }), t
-            }, c = async e => {
+            }, E = async e => {
                 let {
                     guildId: t,
-                    status: n = l.GuildJoinRequestApplicationStatuses.SUBMITTED,
+                    status: n = u.GuildJoinRequestApplicationStatuses.SUBMITTED,
                     before: a,
                     after: s,
-                    limit: o = l.MAX_RESULTS_PER_PAGE
+                    limit: o = u.MAX_RESULTS_PER_PAGE
                 } = e;
-                r.default.dispatch({
-                    type: "GUILD_JOIN_REQUESTS_FETCH_START"
-                });
-                try {
-                    var _;
-                    let e = await i.HTTP.get({
-                            url: d.Endpoints.GUILD_JOIN_REQUESTS(t),
-                            query: {
-                                status: n,
-                                limit: o,
-                                before: a,
-                                after: s
-                            }
-                        }),
-                        l = e.body.total,
-                        c = (null !== (_ = e.body.guild_join_requests) && void 0 !== _ ? _ : []).map(u.joinRequestFromServer);
-                    return r.default.dispatch({
-                        type: "GUILD_JOIN_REQUESTS_FETCH_SUCCESS",
-                        status: n,
-                        requests: c,
-                        total: l,
-                        limit: o,
-                        guildId: t
-                    }), e
-                } catch (e) {
-                    throw r.default.dispatch({
-                        type: "GUILD_JOIN_REQUESTS_FETCH_FAILURE"
-                    }), e
+                if (!(l.default.isFetching() || l.default.hasFetched(t))) {
+                    r.default.dispatch({
+                        type: "GUILD_JOIN_REQUESTS_FETCH_START"
+                    });
+                    try {
+                        var c;
+                        let e = await i.HTTP.get({
+                                url: _.Endpoints.GUILD_JOIN_REQUESTS(t),
+                                query: {
+                                    status: n,
+                                    limit: o,
+                                    before: a,
+                                    after: s
+                                }
+                            }),
+                            l = e.body.total,
+                            u = (null !== (c = e.body.guild_join_requests) && void 0 !== c ? c : []).map(d.joinRequestFromServer);
+                        return r.default.dispatch({
+                            type: "GUILD_JOIN_REQUESTS_FETCH_SUCCESS",
+                            status: n,
+                            requests: u,
+                            total: l,
+                            limit: o,
+                            guildId: t
+                        }), e
+                    } catch (e) {
+                        throw r.default.dispatch({
+                            type: "GUILD_JOIN_REQUESTS_FETCH_FAILURE"
+                        }), e
+                    }
                 }
-            }, E = async e => {
+            }, I = async e => {
                 try {
                     let t = await i.HTTP.del({
-                        url: d.Endpoints.GUILD_MEMBER_REQUEST_TO_JOIN(e)
+                        url: _.Endpoints.GUILD_MEMBER_REQUEST_TO_JOIN(e)
                     });
                     return r.default.dispatch({
                         type: "USER_GUILD_JOIN_REQUEST_UPDATE",
@@ -144528,10 +144531,10 @@
                 } catch (e) {
                     throw e
                 }
-            }, I = async (e, t) => {
+            }, T = async (e, t) => {
                 try {
                     return await i.HTTP.post({
-                        url: d.Endpoints.GUILD_JOIN_REQUEST_ACK(e, t)
+                        url: _.Endpoints.GUILD_JOIN_REQUEST_ACK(e, t)
                     })
                 } catch (e) {} finally {
                     r.default.dispatch({
@@ -144540,8 +144543,8 @@
                         guildId: e
                     })
                 }
-            }, T = async function(e, t) {
-                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : l.GuildJoinRequestApplicationStatuses.APPROVED,
+            }, f = async function(e, t) {
+                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : u.GuildJoinRequestApplicationStatuses.APPROVED,
                     a = arguments.length > 3 ? arguments[3] : void 0;
                 (0, s.trackClanApplicationAction)({
                     guildId: e,
@@ -144549,7 +144552,7 @@
                     applicationUserId: t
                 });
                 let o = await i.HTTP.patch({
-                    url: d.Endpoints.GUILD_JOIN_REQUEST(e, t),
+                    url: _.Endpoints.GUILD_JOIN_REQUEST(e, t),
                     body: {
                         action: n,
                         rejection_reason: a
@@ -144561,9 +144564,9 @@
                     status: o.body.application_status,
                     request: o.body
                 })
-            }, f = async (e, t) => {
+            }, S = async (e, t) => {
                 let n = await i.HTTP.patch({
-                    url: d.Endpoints.GUILD_JOIN_REQUESTS(e),
+                    url: _.Endpoints.GUILD_JOIN_REQUESTS(e),
                     body: {
                         action: t
                     }
@@ -144573,12 +144576,12 @@
                     guildId: e,
                     action: t
                 }), n.body
-            }, S = async e => {
+            }, h = async e => {
                 try {
                     let {
                         body: t
                     } = await i.HTTP.post({
-                        url: d.Endpoints.GUILD_MEMBER_REQUEST_TO_JOIN(e)
+                        url: _.Endpoints.GUILD_MEMBER_REQUEST_TO_JOIN(e)
                     });
                     return r.default.dispatch({
                         type: "USER_GUILD_JOIN_REQUEST_UPDATE",
@@ -144588,18 +144591,18 @@
                 } catch (e) {
                     throw e
                 }
-            }, h = async () => {
+            }, A = async () => {
                 let e = await i.HTTP.get({
-                    url: d.Endpoints.USER_JOIN_REQUEST_GUILDS
+                    url: _.Endpoints.USER_JOIN_REQUEST_GUILDS
                 });
                 r.default.dispatch({
                     type: "USER_JOIN_REQUEST_GUILDS_FETCH",
                     guilds: e.body
                 })
-            }, A = async function(e) {
+            }, m = async function(e) {
                 let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
                     n = await i.HTTP.post({
-                        url: d.Endpoints.GUILD_JOIN_REQUEST_INTERVIEW(e)
+                        url: _.Endpoints.GUILD_JOIN_REQUEST_INTERVIEW(e)
                     }),
                     s = (0, o.createChannelRecordFromServer)(n.body);
                 return r.default.dispatch({
@@ -144608,14 +144611,14 @@
                 }), t && a.default.selectPrivateChannel(s.id), s.id
             };
             t.default = {
-                fetchGuildJoinRequest: _,
-                fetchGuildJoinRequests: c,
-                ackUserGuildJoinRequest: I,
-                removeGuildJoinRequest: E,
-                updateGuildJoinRequest: T,
-                actionAllPendingJoinRequests: f,
-                resetGuildJoinRequest: S,
-                fetchRequestToJoinGuilds: h,
+                fetchGuildJoinRequest: c,
+                fetchGuildJoinRequests: E,
+                ackUserGuildJoinRequest: T,
+                removeGuildJoinRequest: I,
+                updateGuildJoinRequest: f,
+                actionAllPendingJoinRequests: S,
+                resetGuildJoinRequest: h,
+                fetchRequestToJoinGuilds: A,
                 setSelectedApplicationTab: (e, t) => {
                     r.default.dispatch({
                         type: "GUILD_JOIN_REQUESTS_SET_APPLICATION_TAB",
@@ -144641,123 +144644,130 @@
                         request: t
                     })
                 },
-                createOrEnterJoinRequestInterview: A
+                createOrEnterJoinRequestInterview: m
             }
         },
         826581: function(e, t, n) {
             "use strict";
-            n.r(t), n("653041"), n("47120");
-            var i, r, a, s, o = n("442837"),
-                l = n("759174"),
-                u = n("570140"),
-                d = n("430824"),
-                _ = n("594174"),
-                c = n("881952"),
-                E = n("246364"),
-                I = n("937111"),
-                T = n("981631");
-            let f = {};
+            n.r(t), n("47120"), n("653041");
+            var i, r, a, s, o = n("913527"),
+                l = n.n(o),
+                u = n("442837"),
+                d = n("759174"),
+                _ = n("570140"),
+                c = n("430824"),
+                E = n("594174"),
+                I = n("70956"),
+                T = n("881952"),
+                f = n("246364"),
+                S = n("937111"),
+                h = n("981631");
+            let A = new Map,
+                m = {};
 
-            function S(e) {
-                return f[e]
+            function N(e) {
+                return m[e]
             }
 
-            function h(e, t) {
-                f[e] = t
+            function p(e, t) {
+                m[e] = t, A.set(e, l()())
             }
 
-            function A(e, t, n) {
+            function O(e, t, n) {
                 if (t !== n && null != t) {
-                    var i, r, a, s;
-                    if (t === E.GuildJoinRequestApplicationStatuses.SUBMITTED) {
-                        ;
-                        let t = f[e];
-                        i = e, r = t + 1, f[i] = r
+                    if (t === f.GuildJoinRequestApplicationStatuses.SUBMITTED) {
+                        let t = m[e];
+                        p(e, t + 1)
                     }
-                    if (n === E.GuildJoinRequestApplicationStatuses.SUBMITTED) {
-                        ;
-                        let t = f[e];
-                        a = e, s = Math.max(0, t - 1), f[a] = s
+                    if (n === f.GuildJoinRequestApplicationStatuses.SUBMITTED) {
+                        let t = m[e];
+                        p(e, Math.max(0, t - 1))
                     }
                 }
             }
-            let m = !1,
-                N = {
+            let C = !1,
+                R = {
                     GUILD_JOIN_REQUESTS_BY_ID: e => "guild-join-request=".concat(e),
                     GUILD_JOIN_REQUESTS_BY_STATUS: (e, t) => "guild-".concat(e, "-").concat(t)
                 };
 
-            function p(e) {
-                let t = [];
-                return t.push(N.GUILD_JOIN_REQUESTS_BY_ID(e.joinRequestId)), t.push(N.GUILD_JOIN_REQUESTS_BY_STATUS(e.guildId, e.applicationStatus)), t
-            }
-            let O = new l.SecondaryIndexMap(p, e => "".concat(e.joinRequestId)),
-                C = new l.SecondaryIndexMap(p, e => "".concat(e.joinRequestId)),
-                R = new l.SecondaryIndexMap(p, e => "".concat(e.actionedAt));
-
             function g(e) {
-                return O.get(e)
+                let t = [];
+                return t.push(R.GUILD_JOIN_REQUESTS_BY_ID(e.joinRequestId)), t.push(R.GUILD_JOIN_REQUESTS_BY_STATUS(e.guildId, e.applicationStatus)), t
+            }
+            let L = new d.SecondaryIndexMap(g, e => "".concat(e.joinRequestId)),
+                v = new d.SecondaryIndexMap(g, e => "".concat(e.joinRequestId)),
+                D = new d.SecondaryIndexMap(g, e => "".concat(e.actionedAt));
+
+            function M(e) {
+                return L.get(e)
             }
 
-            function L(e) {
-                P[e.joinRequestId] = e, O.set(e.joinRequestId, e), (0, c.isSubmittedApplicationStatus)(e.applicationStatus) && (R.delete(e.joinRequestId), C.set(e.joinRequestId, e)), (0, c.isActionedApplicationStatus)(e.applicationStatus) && (C.delete(e.joinRequestId), R.set(e.joinRequestId, e))
+            function y(e) {
+                w[e.joinRequestId] = e, L.set(e.joinRequestId, e), (0, T.isSubmittedApplicationStatus)(e.applicationStatus) && (D.delete(e.joinRequestId), v.set(e.joinRequestId, e)), (0, T.isActionedApplicationStatus)(e.applicationStatus) && (v.delete(e.joinRequestId), D.set(e.joinRequestId, e))
             }
 
-            function v(e) {
+            function P(e) {
                 var t, n;
                 let {
                     guildId: i,
                     request: r
-                } = e, a = (0, I.joinRequestFromServer)(r), s = _.default.getCurrentUser();
+                } = e, a = (0, S.joinRequestFromServer)(r), s = E.default.getCurrentUser();
                 if (null == s || a.userId === s.id) return !1;
-                let o = null === (n = a.joinRequestId, t = O.get(n)) || void 0 === t ? void 0 : t.applicationStatus;
-                return A(i, a.applicationStatus, o), L(a), !0
+                let o = null === (n = a.joinRequestId, t = L.get(n)) || void 0 === t ? void 0 : t.applicationStatus;
+                return O(i, a.applicationStatus, o), y(a), !0
             }
-            let D = {},
-                M = {},
-                y = {},
-                P = {};
-            class U extends(i = o.default.Store) {
+            let U = {},
+                b = {},
+                G = {},
+                w = {},
+                B = 10 * I.default.Seconds.MINUTE;
+            class k extends(i = u.default.Store) {
                 getRequest(e) {
-                    return P[e]
+                    return w[e]
                 }
                 getRequests(e, t) {
-                    let n = N.GUILD_JOIN_REQUESTS_BY_STATUS(e, t);
-                    return (0, c.isActionedApplicationStatus)(t) ? R.values(n) : (0, c.isSubmittedApplicationStatus)(t) ? C.values(n) : O.values(n)
+                    let n = R.GUILD_JOIN_REQUESTS_BY_STATUS(e, t);
+                    return (0, T.isActionedApplicationStatus)(t) ? D.values(n) : (0, T.isSubmittedApplicationStatus)(t) ? v.values(n) : L.values(n)
                 }
                 getSubmittedGuildJoinRequestTotal(e) {
-                    return f[e]
+                    return m[e]
                 }
                 isFetching() {
-                    return m
+                    return C
+                }
+                hasFetched(e) {
+                    if (!A.has(e)) return !1;
+                    let t = A.get(e);
+                    return null != t && l()().diff(t, "seconds") < B
                 }
                 getSelectedApplicationTab(e) {
                     var t;
-                    let n = d.default.getGuild(e),
-                        i = (null == n ? void 0 : n.hasFeature(T.GuildFeatures.CLAN)) ? "REVIEW_APPLICATION" : E.GuildJoinRequestApplicationStatuses.SUBMITTED;
-                    return null !== (t = D[e]) && void 0 !== t ? t : i
+                    let n = c.default.getGuild(e),
+                        i = (null == n ? void 0 : n.hasFeature(h.GuildFeatures.CLAN)) ? "REVIEW_APPLICATION" : f.GuildJoinRequestApplicationStatuses.SUBMITTED;
+                    return null !== (t = U[e]) && void 0 !== t ? t : i
                 }
                 getSelectedSortOrder(e) {
                     var t;
-                    return null !== (t = M[e]) && void 0 !== t ? t : E.GuildJoinRequestSortOrders.TIMESTAMP_DESC
+                    return null !== (t = b[e]) && void 0 !== t ? t : f.GuildJoinRequestSortOrders.TIMESTAMP_DESC
                 }
                 getSelectedGuildJoinRequest(e) {
                     var t;
-                    let n = y[e];
-                    return null != n ? (t = n.joinRequestId, O.get(t)) : null
+                    let n = G[e];
+                    return null != n ? (t = n.joinRequestId, L.get(t)) : null
                 }
             }
-            s = "GuildJoinRequestStoreV2", (a = "displayName") in(r = U) ? Object.defineProperty(r, a, {
+            s = "GuildJoinRequestStoreV2", (a = "displayName") in(r = k) ? Object.defineProperty(r, a, {
                 value: s,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : r[a] = s, t.default = new U(u.default, {
+            }) : r[a] = s, t.default = new k(_.default, {
                 GUILD_JOIN_REQUEST_BY_ID_FETCH_SUCCESS: function(e) {
                     let {
                         joinRequest: t
                     } = e;
-                    L(t)
+                    y(t)
                 },
                 GUILD_JOIN_REQUESTS_FETCH_SUCCESS: function(e) {
                     let {
@@ -144766,44 +144776,40 @@
                         total: i,
                         guildId: r
                     } = e;
-                    if (m = !1, t === E.GuildJoinRequestApplicationStatuses.SUBMITTED) {
-                        var a, s;
-                        a = r, s = i, f[a] = s
-                    }
-                    n.forEach(e => {
-                        L(e)
+                    C = !1, t === f.GuildJoinRequestApplicationStatuses.SUBMITTED && p(r, i), n.forEach(e => {
+                        y(e)
                     })
                 },
                 GUILD_JOIN_REQUESTS_FETCH_START: function() {
-                    m = !0
+                    C = !0
                 },
                 GUILD_JOIN_REQUESTS_FETCH_FAILURE: function() {
-                    m = !1
+                    C = !1
                 },
                 GUILD_JOIN_REQUESTS_BULK_ACTION: function(e) {
                     let {
                         guildId: t,
                         action: n
                     } = e;
-                    O.values(N.GUILD_JOIN_REQUESTS_BY_STATUS(t, E.GuildJoinRequestApplicationStatuses.SUBMITTED)).forEach(e => {
-                        L({
+                    L.values(R.GUILD_JOIN_REQUESTS_BY_STATUS(t, f.GuildJoinRequestApplicationStatuses.SUBMITTED)).forEach(e => {
+                        y({
                             ...e,
                             applicationStatus: n
                         })
-                    }), f[t] = 0
+                    }), p(t, 0)
                 },
-                GUILD_JOIN_REQUEST_CREATE: v,
-                GUILD_JOIN_REQUEST_UPDATE: v,
+                GUILD_JOIN_REQUEST_CREATE: P,
+                GUILD_JOIN_REQUEST_UPDATE: P,
                 GUILD_JOIN_REQUEST_DELETE: function(e) {
                     var t, n;
                     let {
                         id: i,
                         guildId: r
                     } = e;
-                    let a = (t = i, O.get(t));
+                    let a = (t = i, L.get(t));
                     if (null != a) {
                         ;
-                        A(r, null, a.applicationStatus), n = i, delete P[n], O.delete(n), C.delete(n), R.delete(n)
+                        O(r, null, a.applicationStatus), n = i, delete w[n], L.delete(n), v.delete(n), D.delete(n)
                     }
                 },
                 GUILD_JOIN_REQUESTS_SET_APPLICATION_TAB: function(e) {
@@ -144811,7 +144817,7 @@
                         guildId: t,
                         applicationTab: n
                     } = e;
-                    n !== D[t] && (D[t] = n)
+                    n !== U[t] && (U[t] = n)
                 },
                 GUILD_JOIN_REQUESTS_SET_SORT_ORDER: function(e) {
                     var t;
@@ -144819,17 +144825,17 @@
                         guildId: n,
                         sortOrder: i
                     } = e;
-                    if (i === M[n]) return;
-                    M[n] = i;
-                    let r = null !== (t = D[n]) && void 0 !== t ? t : E.GuildJoinRequestApplicationStatuses.SUBMITTED;
-                    "REVIEW_APPLICATION" !== r && ((0, c.isActionedApplicationStatus)(r) && R.clear(), (0, c.isSubmittedApplicationStatus)(r) && C.clear())
+                    if (i === b[n]) return;
+                    b[n] = i;
+                    let r = null !== (t = U[n]) && void 0 !== t ? t : f.GuildJoinRequestApplicationStatuses.SUBMITTED;
+                    "REVIEW_APPLICATION" !== r && ((0, T.isActionedApplicationStatus)(r) && D.clear(), (0, T.isSubmittedApplicationStatus)(r) && v.clear())
                 },
                 GUILD_JOIN_REQUESTS_SET_SELECTED: function(e) {
                     let {
                         guildId: t,
                         request: n
                     } = e;
-                    y[t] = n
+                    G[t] = n
                 }
             })
         },
@@ -171907,8 +171913,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715636390385",
-                                    build_number: "292876"
+                                    built_at: "1715637001608",
+                                    build_number: "292882"
                                 }
                             },
                             retries: 1
@@ -213426,7 +213432,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return T
+                    return f
                 }
             });
             var i = n("735250");
@@ -213441,42 +213447,48 @@
                 _ = n("808268"),
                 c = n("785717"),
                 E = n("537387"),
-                I = n("689938");
+                I = n("228168"),
+                T = n("689938");
 
-            function T(e) {
+            function f(e) {
                 let {
                     user: t,
-                    guildId: n,
-                    viewProfileItem: T
-                } = e, f = (0, r.useStateFromStores)([d.default], () => d.default.getId() === t.id), {
-                    trackUserProfileAction: S
+                    profileType: n,
+                    guildId: f,
+                    viewProfileItem: S
+                } = e, h = (0, r.useStateFromStores)([d.default], () => d.default.getId() === t.id), {
+                    trackUserProfileAction: A
                 } = (0, c.useUserProfileAnalyticsContext)(), {
-                    analyticsLocations: h,
-                    newestAnalyticsLocation: A
-                } = (0, o.default)(s.default.USER_PROFILE_OVERFLOW_MENU), m = (0, l.default)({
+                    analyticsLocations: m,
+                    newestAnalyticsLocation: N
+                } = (0, o.default)(s.default.USER_PROFILE_OVERFLOW_MENU), p = (0, l.default)({
                     user: t,
                     color: "danger",
-                    location: A,
-                    onBlock: () => S({
+                    location: N,
+                    onBlock: () => A({
                         action: "BLOCK",
-                        analyticsLocations: h
+                        analyticsLocations: m
                     }),
-                    onUnblock: () => S({
+                    onUnblock: () => A({
                         action: "UNBLOCK",
-                        analyticsLocations: h
+                        analyticsLocations: m
                     })
-                }), N = (0, u.default)({
+                }), O = (0, u.default)({
                     user: t,
-                    guildId: n,
+                    guildId: f,
                     color: "danger",
-                    location: A,
-                    onAction: () => S({
+                    location: N,
+                    onAction: () => A({
                         action: "REPORT",
-                        analyticsLocations: h
+                        analyticsLocations: m
                     })
                 });
-                return f ? null : (0, i.jsx)(o.AnalyticsLocationProvider, {
-                    value: h,
+                if (h && n !== I.UserProfileTypes.FULL_SIZE) return null;
+                let C = () => h ? null : (0, i.jsxs)(a.MenuGroup, {
+                    children: [p, O]
+                });
+                return (0, i.jsx)(o.AnalyticsLocationProvider, {
+                    value: m,
                     children: (0, i.jsx)(a.Popout, {
                         renderPopout: e => {
                             let {
@@ -213486,16 +213498,14 @@
                                 navId: "user-profile-overflow-menu",
                                 onSelect: void 0,
                                 onClose: t,
-                                "aria-label": I.default.Messages.PROFILE_ACTIONS_MENU_LABEL,
+                                "aria-label": T.default.Messages.PROFILE_ACTIONS_MENU_LABEL,
                                 children: [(0, i.jsx)(a.MenuGroup, {
-                                    children: T
-                                }), (0, i.jsxs)(a.MenuGroup, {
-                                    children: [m, N]
-                                })]
+                                    children: S
+                                }), C()]
                             })
                         },
                         children: e => (0, i.jsx)(E.default, {
-                            text: I.default.Messages.MORE,
+                            text: T.default.Messages.MORE,
                             icon: _.default,
                             ...e
                         })
@@ -216053,6 +216063,7 @@
                                         user: t
                                     }), (0, i.jsx)(m.default, {
                                         user: t,
+                                        profileType: R.UserProfileTypes.BITE_SIZE,
                                         guildId: n,
                                         viewProfileItem: (0, i.jsx)(s.MenuItem, {
                                             id: "view-profile",
@@ -250498,7 +250509,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9df3a86f2229cda2d26be3f642a56a3d4a4e5c70"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "229772e8d26733e4359f2afd8086d452aee3ce51"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279449,7 +279460,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292876"
+                                build_number: "292882"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286807,7 +286818,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292876", "292876"), 10);
+                let a = parseInt((n = "292882", "292882"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314429,4 +314440,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.92c6861e4b03e002bdaf.js.map
+//# sourceMappingURL=35705.d6ef982791a0f5a73a49.js.map
