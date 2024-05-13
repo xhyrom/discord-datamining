@@ -1,18 +1,18 @@
 <p id="docs-internal-guid-8e384414-7fff-8f72-b665-2553f06bd35f"><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
-    <li><a href="#h_01HXACBPSS19HF80ZDDWETDJDH">What’s Happening on Discord’s 9th Birthday?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/23195696138519#h_01HXACBPSS19HF80ZDDWETDJDH">What’s Happening on Discord’s 9th Birthday?</a></li>
     <li>
-        <a href="#h_01HXACBPSSE77YB1565J6EVM7V">JP Discord’s 9th Birthday Celebration Dates</a>
+        <a href="https://support.discord.com/hc/en-us/articles/23195696138519#h_01HXACBPSSE77YB1565J6EVM7V">JP Discord’s 9th Birthday Celebration Dates</a>
         <ul>
-            <li><a href="#h_01HXACBPSS8BCXA7RXTVB49YFY">Day 1: Custom Joystick Giveaway for Discord’s 9th Birthday</a></li>
-            <li><a href="#h_01HXACBPSS45GR78MHZKRGP783">Day 2: Kigurumi Giveaway for Discord’s 9th Birthday</a></li>
-            <li><a href="#h_01HXACBPSS33ZGRKCZVX2C0N06">Day 3: Stream Deck and Mic Giveaway for Discord's 9th Birthday</a></li>
-            <li><a href="#h_01HXACBPSS6HACGDGW1FVYGRX8">Day 4: Discord Shop Item Giveaway for Discord's 9th Birthday</a></li>
-            <li><a href="#h_01HXACBPSS7DQ3A86Q0MRJF0E5">Day 5: Album and Lightsticks Giveaway for Discord’s 9th Birthday</a></li>
-            <li><a href="#h_01HXACBPSSZHG922M546HRA455">Day 6: Discord Nitro Giveaway for Discord’s 9th Birthday</a></li>
-            <li><a href="#h_01HXACBPSS29PCGSHR75PQ2S9B">Day 7: Keyboard Giveaway for Discord’s 9th Birthday</a></li>
-            <li><a href="#h_01HXACBPSS9B8KW7503RSY2PP9">Day 8: Discord Nitro Giveaway for Discord’s 9th Birthday</a></li>
-            <li><a href="#h_01HXACBPSSRNEJNSGY74QPQZEZ">Day 9: Discord Nitro Dice and Discord Blurple Dice Giveaway for Discord’s 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23195696138519#h_01HXACBPSS8BCXA7RXTVB49YFY">Day 1: Custom Joystick Giveaway for Discord’s 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23195696138519#h_01HXACBPSS45GR78MHZKRGP783">Day 2: Kigurumi Giveaway for Discord’s 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23195696138519#h_01HXACBPSS33ZGRKCZVX2C0N06">Day 3: Stream Deck and Mic Giveaway for Discord's 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23195696138519#h_01HXACBPSS6HACGDGW1FVYGRX8">Day 4: Discord Shop Item Giveaway for Discord's 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23195696138519#h_01HXACBPSS7DQ3A86Q0MRJF0E5">Day 5: Album and Lightsticks Giveaway for Discord’s 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23195696138519#h_01HXACBPSSZHG922M546HRA455">Day 6: Discord Nitro Giveaway for Discord’s 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23195696138519#h_01HXACBPSS29PCGSHR75PQ2S9B">Day 7: Keyboard Giveaway for Discord’s 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23195696138519#h_01HXACBPSS9B8KW7503RSY2PP9">Day 8: Discord Nitro Giveaway for Discord’s 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23195696138519#h_01HXACBPSSRNEJNSGY74QPQZEZ">Day 9: Discord Nitro Dice and Discord Blurple Dice Giveaway for Discord’s 9th Birthday</a></li>
         </ul>
     </li>
 </ul>
@@ -186,9 +186,9 @@
                 <strong>How to Enter: </strong>To be announced!
             </li>
             <li>
-                <strong>Prize: Prize: </strong>Eighteen (18) total winners (Total Value: $2,157.84 USD)
+                <strong>Prize: </strong>Eighteen (18) total winners (Total Value: $2,157.84 USD)
                 <ul>
-                    <li>One (1) One (1) year Nitro Code for JP ($119.88)</li>
+                    <li>One (1) year Nitro Code for JP ($119.88)</li>
                 </ul>
             </li>
         </ul>
@@ -242,9 +242,9 @@
                 <strong>How to Enter: </strong>Follow the Discord_jp Twitter/X account and like and retweet the official Discord_jp Giveaway post.
             </li>
             <li>
-                <strong>Prize: Prize: </strong>Nine (9) Winners ($1,078.92)
+                <strong>Prize: </strong>Nine (9) Winners ($1,078.92)
                 <ul>
-                    <li>One (1) One (1) year Nitro Code for JP ($119.88)</li>
+                    <li>One (1) year Nitro Code for JP ($119.88)</li>
                 </ul>
             </li>
             <li>

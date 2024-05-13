@@ -1,18 +1,18 @@
 <p id="docs-internal-guid-51e6ed0b-7fff-9efd-c5a3-feecf0ad427a"><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
-    <li><a href="#h_01HXACXA3XX286RPDGBMHNN71Q">What’s Happening on Discord’s 9th Birthday?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/23195712858903#h_01HXACXA3XX286RPDGBMHNN71Q">What’s Happening on Discord’s 9th Birthday?</a></li>
     <li>
-        <a href="#h_01HXACXA3YDY7F1512TQTPWN4K">FR Discord’s 9th Birthday Celebration Dates</a>
+        <a href="https://support.discord.com/hc/en-us/articles/23195712858903#h_01HXACXA3YDY7F1512TQTPWN4K">FR Discord’s 9th Birthday Celebration Dates</a>
         <ul>
-            <li><a href="#h_01HXACXA3YN4VRP40C0TWF7EHG">Day 1: Custom Joystick Giveaway for Discord’s 9th Birthday</a></li>
-            <li><a href="#h_01HXACXA3YRMK2BJD8HQCY46CC">Day 2: Stream Deck, Mic, and Keyboard Giveaway for Discord’s 9th Birthday</a></li>
-            <li><a href="#h_01HXACXA3YB13D7XQN8S595MJD">Day 3: Discord Shop Item Giveaway for Discord’s 9th Birthday</a></li>
-            <li><a href="#h_01HXACXA3YWVT93VR20PB16HSK">Day 4: Albums and Lightsticks Giveaway for Discord’s 9th Birthday</a></li>
-            <li><a href="#h_01HXACXA3YZZYMFCVA5EGPJ8VB">Day 5: Discord Nitro Giveaway for Discord’s 9th Birthday</a></li>
-            <li><a href="#h_01HXACXA3Y82FN71T6JYBV2AH6">Day 6: Asus ROG Strix G15, Asus ROG Delta S Core, and Asus ROG Strix Impact III Giveaway for Discord’s 9th Birthday</a></li>
-            <li><a href="#h_01HXACXA3YRYZ8S911HESXCRZ3">Day 7: Discord Nitro Giveaway for Discord’s 9th Birthday</a></li>
-            <li><a href="#h_01HXACXA3YCKT4ADTACKT5AW5Y">Day 8: Discord Nitro Dice and Discord Blurple Dice Giveaway for Discord’s 9th Birthday</a></li>
-            <li><a href="#h_01HXACXA3YPMYEVHYEHCKJZMQN">Day 9: Kigurumi and Animation Digital Network Subscription Giveaway for Discord’s 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23195712858903#h_01HXACXA3YN4VRP40C0TWF7EHG">Day 1: Custom Joystick Giveaway for Discord’s 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23195712858903#h_01HXACXA3YRMK2BJD8HQCY46CC">Day 2: Stream Deck, Mic, and Keyboard Giveaway for Discord’s 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23195712858903#h_01HXACXA3YB13D7XQN8S595MJD">Day 3: Discord Shop Item Giveaway for Discord’s 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23195712858903#h_01HXACXA3YWVT93VR20PB16HSK">Day 4: Albums and Lightsticks Giveaway for Discord’s 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23195712858903#h_01HXACXA3YZZYMFCVA5EGPJ8VB">Day 5: Discord Nitro Giveaway for Discord’s 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23195712858903#h_01HXACXA3Y82FN71T6JYBV2AH6">Day 6: Asus ROG Strix G15, Asus ROG Delta S Core, and Asus ROG Strix Impact III Giveaway for Discord’s 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23195712858903#h_01HXACXA3YRYZ8S911HESXCRZ3">Day 7: Discord Nitro Giveaway for Discord’s 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23195712858903#h_01HXACXA3YCKT4ADTACKT5AW5Y">Day 8: Discord Nitro Dice and Discord Blurple Dice Giveaway for Discord’s 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23195712858903#h_01HXACXA3YPMYEVHYEHCKJZMQN">Day 9: Kigurumi and Animation Digital Network Subscription Giveaway for Discord’s 9th Birthday</a></li>
         </ul>
     </li>
 </ul>
@@ -24,7 +24,7 @@
 <h2 id="h_01HXACXA3YN4VRP40C0TWF7EHG">Day 1: Custom Joystick Giveaway for Discord’s 9th Birthday</h2>
 <ul>
     <li>
-        <strong>Rules: </strong>The French Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with one winner per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
+        <strong>Rules: </strong>The French Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with winner(s) per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
     </li>
     <li>
         <strong>Additional Eligibility: </strong>In addition to the additional eligibility requirements described in the Official Rules, entrants must be thirteen (13) years of age or older (with legal guardian approval if they are under the age of majority) and a legal resident of France.
@@ -53,7 +53,7 @@
 <h2 id="h_01HXACXA3YRMK2BJD8HQCY46CC">Day 2: Stream Deck, Mic, and Keyboard Giveaway for Discord’s 9th Birthday </h2>
 <ul>
     <li>
-        <strong>Rules: </strong>The French Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with one winner per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
+        <strong>Rules: </strong>The French Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with winner(s) per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
     </li>
     <li>
         <strong>Additional Eligibility: </strong>In addition to the additional eligibility requirements described in the Official Rules, entrants must be thirteen (13) years of age or older (with legal guardian approval if they are under the age of majority) and a legal resident of France.
@@ -103,7 +103,7 @@
 <h2 id="h_01HXACXA3YB13D7XQN8S595MJD">Day 3: Discord Shop Item Giveaway for Discord’s 9th Birthday</h2>
 <ul>
     <li>
-        <strong>Rules: </strong>The French Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with one winner per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
+        <strong>Rules: </strong>The French Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with winner(s) per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
     </li>
     <li>
         <strong>Additional Eligibility: </strong>In addition to the additional eligibility requirements described in the Official Rules, entrants must be thirteen (13) years of age or older (with legal guardian approval if they are under the age of majority) and a legal resident of France.
@@ -149,7 +149,7 @@
 <h2 id="h_01HXACXA3YWVT93VR20PB16HSK">Day 4: Albums and Lightsticks Giveaway for Discord’s 9th Birthday</h2>
 <ul>
     <li>
-        <strong>Rules: </strong>The French Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with one winner per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
+        <strong>Rules: </strong>The French Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with winner(s) per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
     </li>
     <li>
         <strong>Additional Eligibility: </strong>In addition to the additional eligibility requirements described in the Official Rules, entrants must be thirteen (13) years of age or older (with legal guardian approval if they are under the age of majority) and a legal resident of France.
@@ -179,7 +179,7 @@
 <h2 id="h_01HXACXA3YZZYMFCVA5EGPJ8VB">Day 5: Discord Nitro Giveaway for Discord’s 9th Birthday</h2>
 <ul>
     <li>
-        <strong>Rules: </strong><span id="docs-internal-guid-fbfb6865-7fff-bd07-bde8-85fec6d638b8">The Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“</span><strong>Official Rules</strong>”). Discord will run one Sweepstakes per platform as described below, with one winner per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
+        <strong>Rules: </strong><span id="docs-internal-guid-fbfb6865-7fff-bd07-bde8-85fec6d638b8">The Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“</span><strong>Official Rules</strong>”). Discord will run one Sweepstakes per platform as described below, with winner(s) per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
     </li>
     <li>
         <strong>Additional Eligibility: </strong><span id="docs-internal-guid-201ea97e-7fff-eae2-5f11-8488201730ba">In addition to the additional eligibility requirements described in the Official Rules, entrants must be thirteen (13) years of age or older (with legal guardian approval if they are under the age of majority) and a legal resident of a country where Nitro is available and excluding Italy, Brazil and the province of Quebec in Canada.</span>
@@ -256,7 +256,7 @@
 <h2 id="h_01HXACXA3Y82FN71T6JYBV2AH6">Day 6: Asus ROG Strix G15, Asus ROG Delta S Core, and Asus ROG Strix Impact III Giveaway for Discord’s 9th Birthday</h2>
 <ul>
     <li>
-        <strong>Rules: </strong>The French Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with one winner per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
+        <strong>Rules: </strong>The French Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with winner(s) per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
     </li>
     <li>
         <strong>Additional Eligibility: </strong>In addition to the additional eligibility requirements described in the Official Rules, entrants must be thirteen (13) years of age or older (with legal guardian approval if they are under the age of majority) and a legal resident of France.
@@ -287,7 +287,7 @@
 <h2 id="h_01HXACXA3YRYZ8S911HESXCRZ3">Day 7: Discord Nitro Giveaway for Discord’s 9th Birthday </h2>
 <ul>
     <li>
-        <strong>Rules: </strong>The French Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with one winner per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
+        <strong>Rules: </strong>The French Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with winner(s) per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
     </li>
     <li>
         <strong>Additional Eligibility: </strong>In addition to the additional eligibility requirements described in the Official Rules, entrants must be thirteen (13) years of age or older (with legal guardian approval if they are under the age of majority) and a legal resident of France.
@@ -333,7 +333,7 @@
 <h2 id="h_01HXACXA3YCKT4ADTACKT5AW5Y">Day 8: Discord Nitro Dice and Discord Blurple Dice Giveaway for Discord’s 9th Birthday</h2>
 <ul>
     <li>
-        <strong>Rules: </strong>The French Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with one winner per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
+        <strong>Rules: </strong>The French Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with winner(s) per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
     </li>
     <li>
         <strong>Additional Eligibility: </strong>In addition to the additional eligibility requirements described in the Official Rules, entrants must be thirteen (13) years of age or older (with legal guardian approval if they are under the age of majority) and a legal resident of France.
@@ -381,7 +381,7 @@
 <h2 id="h_01HXACXA3YPMYEVHYEHCKJZMQN">Day 9: Kigurumi and Animation Digital Network Subscription Giveaway for Discord’s 9th Birthday </h2>
 <ul>
     <li>
-        <strong>Rules: </strong>The French Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with one winner per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
+        <strong>Rules: </strong>The French Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with winner(s) per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
     </li>
     <li>
         <strong>Additional Eligibility: </strong>In addition to the additional eligibility requirements described in the Official Rules, entrants must be thirteen (13) years of age or older (with legal guardian approval if they are under the age of majority) and a legal resident of France.
@@ -393,7 +393,7 @@
         <strong>Twitter / X Sweepstakes: </strong>
         <ul>
             <li>
-                <strong>How to Enter: </strong>Follow the Discord_fr and ADNanime Twitter accounts, and like and retweet the official Discord Giveaway post.
+                <strong>How to Enter: </strong>Follow the Discord_fr and ADNanime Twitter accounts, and like and retweet the official Discord_fr Giveaway post.
             </li>
             <li>
                 <strong>Prize: </strong>
