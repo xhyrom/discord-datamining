@@ -37411,7 +37411,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292699", ", Version Hash: ").concat("a650880c004c22a9915eb4b230574293f0f2a98f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292719", ", Version Hash: ").concat("ff1bfdc996890e29c8afa7399338e3e3206905e7")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -42406,6 +42406,10 @@
                 APP_ICON_BRAIN: "Big Brain",
                 APP_ICON_SLIMY: "Slimy",
                 APP_ICON_DRIP: "Drip",
+                APP_ICON_PRIDE: "Pride",
+                APP_ICON_IN_RAINBOWS: "In Rainbows",
+                APP_ICON_COLOR_WAVE: "Color Wave",
+                APP_ICON_MIDNIGHT_PRISM: "Midnight Prism",
                 VOICE_BACKGROUND_DEFAULT: "Default",
                 VOICE_BACKGROUND_SOFT_RAIN: "Soft Rain",
                 VOICE_BACKGROUND_PICNIC: "Picnic",
@@ -56528,6 +56532,7 @@
                 CLAN_DISCOVERY_UPSELL_GET_STARTED: "Get Started",
                 CLAN_DISCOVERY_UPSELL_JOIN_WFS: "Questions? Head over to the $[Wumpus Feedback Squad](wfsHook) server to ask Discord questions or give feedback!",
                 CLAN_DISCOVERY_UPSELL_JOIN_WFS_ARIA_LABEL: "Join Wumpus Feedback Squad server",
+                CLAN_DISCOVERY_APPLICATION_DISABLED_TOOLTIP: "You cannot apply to Guilds right now",
                 MESSAGE_ACTION_FORWARD: "Forward"
             })
         },
@@ -88564,8 +88569,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292699", "292699"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292699")), t = 0), t
+                let t = parseInt((e = "292719", "292719"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292719")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103695,22 +103700,25 @@
             "use strict";
             n.r(t), n.d(t, {
                 useAnyClanPrepilotExperiment: function() {
-                    return _
-                },
-                useAnyClanPrepilotExperimentEnabled: function() {
                     return E
                 },
+                useAnyClanPrepilotExperimentEnabled: function() {
+                    return T
+                },
                 useClanGeneralExperiment: function() {
-                    return A
+                    return N
                 },
                 useClanPilotExperiment: function() {
-                    return S
+                    return A
+                },
+                useClanPrePilotApplicationExperiment: function() {
+                    return u
                 },
                 useClanPrepilotExperiment: function() {
-                    return c
+                    return I
                 },
                 useClanPrepilotExperimentDefaultGameId: function() {
-                    return I
+                    return f
                 }
             }), n("653041");
             var i = n("818083"),
@@ -103749,9 +103757,32 @@
                             defaultGameId: r.GENSHIN_ID
                         }
                     }]
+                }),
+                l = (0, i.createExperiment)({
+                    kind: "user",
+                    id: "2024-05_rapidash_prepilot_applications",
+                    label: "Rapidash Prepilot Application Gate",
+                    defaultConfig: {
+                        enableApplication: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Enable application of guilds",
+                        config: {
+                            enableApplication: !0
+                        }
+                    }]
                 });
 
-            function l(e) {
+            function u(e) {
+                return l.useExperiment({
+                    location: e
+                }, {
+                    autoTrackExposure: !1
+                })
+            }
+
+            function d(e) {
                 var t, n;
                 let {
                     valorantConfig: i,
@@ -103760,15 +103791,15 @@
                 return null !== (n = null !== (t = null == r ? void 0 : r.defaultGameId) && void 0 !== t ? t : null == i ? void 0 : i.defaultGameId) && void 0 !== n ? n : null
             }
 
-            function u(e) {
+            function _(e) {
                 return (null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN_PILOT_VALORANT)) === !0 && (null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN)) === !1
             }
 
-            function d(e) {
+            function c(e) {
                 return (null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN_PILOT_GENSHIN)) === !0 && (null == e ? void 0 : e.hasFeature(a.GuildFeatures.CLAN)) === !1
             }
 
-            function _(e, t) {
+            function E(e, t) {
                 let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
                     i = s.useExperiment({
                         location: t
@@ -103780,11 +103811,11 @@
                         guilds: t,
                         valorantConfig: n,
                         genshinConfig: i
-                    } = e, r = t.filter(d), a = r.length > 0 && i.enableClanCreation, s = t.filter(u), o = s.length > 0 && n.enableClanCreation, _ = [];
-                    return a && r.forEach(e => _.push(e)), o && s.forEach(e => _.push(e)), {
-                        guilds: _,
+                    } = e, r = t.filter(c), a = r.length > 0 && i.enableClanCreation, s = t.filter(_), o = s.length > 0 && n.enableClanCreation, l = [];
+                    return a && r.forEach(e => l.push(e)), o && s.forEach(e => l.push(e)), {
+                        guilds: l,
                         enableClanCreation: o || a,
-                        defaultGameId: l({
+                        defaultGameId: d({
                             valorantConfig: n,
                             genshinConfig: i
                         })
@@ -103800,7 +103831,7 @@
                 })
             }
 
-            function c(e, t) {
+            function I(e, t) {
                 let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
                     i = s.useExperiment({
                         location: t
@@ -103817,12 +103848,12 @@
                         defaultGameId: null,
                         enableClanCreation: !1
                     };
-                    let r = d(t),
-                        a = u(t),
+                    let r = c(t),
+                        a = _(t),
                         s = r && i.enableClanCreation;
                     return {
                         enableClanCreation: a && n.enableClanCreation || s,
-                        defaultGameId: l({
+                        defaultGameId: d({
                             genshinConfig: r ? i : void 0,
                             valorantConfig: a ? n : void 0
                         })
@@ -103838,19 +103869,19 @@
                 })
             }
 
-            function E(e, t) {
+            function T(e, t) {
                 let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
-                return _(e, t, n).enableClanCreation
+                return E(e, t, n).enableClanCreation
             }
 
-            function I(e) {
+            function f(e) {
                 let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
                     n = s.useExperiment({
                         location: e
                     }, {
                         autoTrackExposure: t
                     });
-                return l({
+                return d({
                     valorantConfig: n,
                     genshinConfig: o.useExperiment({
                         location: e
@@ -103859,7 +103890,7 @@
                     })
                 })
             }
-            let T = (0, i.createExperiment)({
+            let S = (0, i.createExperiment)({
                     kind: "user",
                     id: "2024-05_clans_valorant_pilot",
                     label: "Clans Valorant Pilot",
@@ -103876,7 +103907,7 @@
                         }
                     }]
                 }),
-                f = (0, i.createExperiment)({
+                h = (0, i.createExperiment)({
                     kind: "user",
                     id: "2024-05_clans_genshin_pilot",
                     label: "Clans Genshin Pilot",
@@ -103894,15 +103925,15 @@
                     }]
                 });
 
-            function S(e) {
+            function A(e) {
                 var t, n;
                 let i = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-                    r = T.useExperiment({
+                    r = S.useExperiment({
                         location: e
                     }, {
                         autoTrackExposure: i
                     }),
-                    a = f.useExperiment({
+                    a = h.useExperiment({
                         location: e
                     }, {
                         autoTrackExposure: i
@@ -103912,7 +103943,7 @@
                     defaultGameId: null !== (n = null !== (t = r.defaultGameId) && void 0 !== t ? t : a.defaultGameId) && void 0 !== n ? n : null
                 }
             }
-            let h = (0, i.createExperiment)({
+            let m = (0, i.createExperiment)({
                 kind: "user",
                 id: "2024-05_clans_general",
                 label: "Clans General",
@@ -103928,9 +103959,9 @@
                 }]
             });
 
-            function A(e) {
+            function N(e) {
                 let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-                return h.useExperiment({
+                return m.useExperiment({
                     location: e
                 }, {
                     autoTrackExposure: t
@@ -116037,8 +116068,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292699",
-                    versionHash: "a650880c004c22a9915eb4b230574293f0f2a98f"
+                    buildNumber: "292719",
+                    versionHash: "ff1bfdc996890e29c8afa7399338e3e3206905e7"
                 }
             }
             n.r(t), n.d(t, {
@@ -171795,8 +171826,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715616714708",
-                                    build_number: "292699"
+                                    built_at: "1715619680856",
+                                    build_number: "292719"
                                 }
                             },
                             retries: 1
@@ -250417,7 +250448,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a650880c004c22a9915eb4b230574293f0f2a98f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ff1bfdc996890e29c8afa7399338e3e3206905e7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279368,7 +279399,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292699"
+                                build_number: "292719"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286726,7 +286757,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292699", "292699"), 10);
+                let a = parseInt((n = "292719", "292719"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314348,4 +314379,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.e16058f53f785faa9643.js.map
+//# sourceMappingURL=35705.7fd9cf195e15458b95b9.js.map
