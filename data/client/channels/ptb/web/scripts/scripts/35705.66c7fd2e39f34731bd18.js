@@ -37411,7 +37411,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292739", ", Version Hash: ").concat("36519c4d2647736c5857716ccf05a0c52325b3ac")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292744", ", Version Hash: ").concat("a9e041f8b34c8d8932f11588a8d44e2a3dd79bc3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -86077,12 +86077,16 @@
             function d(e) {
                 return (null == e ? void 0 : e.type) === 2
             }
+
+            function _(e) {
+                return (null == e ? void 0 : e.type) === 3
+            }
             n.r(t), n.d(t, {
                 EMOJI_PICKER_EMOJI_TO_SHOW_COUNT: function() {
-                    return c
+                    return E
                 },
                 PIP_WIDTH: function() {
-                    return _
+                    return c
                 },
                 ParticipantSelectionTypes: function() {
                     return r
@@ -86093,6 +86097,9 @@
                 VoicePlatforms: function() {
                     return a
                 },
+                isActivityParticipant: function() {
+                    return _
+                },
                 isStreamParticipant: function() {
                     return u
                 },
@@ -86100,8 +86107,8 @@
                     return d
                 }
             }), (s = i || (i = {}))[s.STREAM = 0] = "STREAM", s[s.HIDDEN_STREAM = 1] = "HIDDEN_STREAM", s[s.USER = 2] = "USER", s[s.ACTIVITY = 3] = "ACTIVITY", (o = r || (r = {})).NONE = "NONE", o.AUTO = "AUTO", (l = a || (a = {}))[l.DESKTOP = 0] = "DESKTOP", l[l.MOBILE = 1] = "MOBILE", l[l.XBOX = 2] = "XBOX", l[l.PLAYSTATION = 3] = "PLAYSTATION";
-            let _ = 320,
-                c = 8
+            let c = 320,
+                E = 8
         },
         258833: function(e, t, n) {
             "use strict";
@@ -88571,8 +88578,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292739", "292739"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292739")), t = 0), t
+                let t = parseInt((e = "292744", "292744"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292744")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116075,8 +116082,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292739",
-                    versionHash: "36519c4d2647736c5857716ccf05a0c52325b3ac"
+                    buildNumber: "292744",
+                    versionHash: "a9e041f8b34c8d8932f11588a8d44e2a3dd79bc3"
                 }
             }
             n.r(t), n.d(t, {
@@ -171833,8 +171840,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715620679401",
-                                    build_number: "292739"
+                                    built_at: "1715620983532",
+                                    build_number: "292744"
                                 }
                             },
                             retries: 1
@@ -250461,7 +250468,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "36519c4d2647736c5857716ccf05a0c52325b3ac"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "a9e041f8b34c8d8932f11588a8d44e2a3dd79bc3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279412,7 +279419,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292739"
+                                build_number: "292744"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286770,7 +286777,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292739", "292739"), 10);
+                let a = parseInt((n = "292744", "292744"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314392,4 +314399,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.4543a9b5c24f8db1f45a.js.map
+//# sourceMappingURL=35705.66c7fd2e39f34731bd18.js.map
