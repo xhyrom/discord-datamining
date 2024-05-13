@@ -94513,96 +94513,6 @@ div.content_aac020 {
     color: var(--white-500)
 }
 
-.banner__1f369 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-16);
-    margin-top: 40px;
-    width: 100%;
-    max-width: 1060px;
-    min-height: 240px;
-    border-radius: var(--radius-xxl);
-    outline: 2px solid transparent;
-    outline-offset: -2px
-}
-
-.shyBanner__78fa4 {
-    min-width: 700px;
-    background-color: #ff4655;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 0;
-    background-position-y: 100%;
-    background-origin: border-box;
-    justify-content: center;
-    gap: 120px;
-    box-shadow: 0 0 27.6px 0 rgba(255, 70, 85, .5)
-}
-
-.noOverflow_cde9b3 {
-    position: absolute;
-    bottom: 0;
-    overflow: hidden;
-    border-radius: inherit;
-    width: 100%;
-    height: 240px
-}
-
-.shyGrid__4bae9 {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 394px;
-    -o-object-fit: cover;
-    object-fit: cover
-}
-
-.shyBannerImage__176aa {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    border-radius: var(--radius-xxl);
-    height: 394px
-}
-
-.shyBannerLeft__52726 {
-    -o-object-position: left center;
-    object-position: left center
-}
-
-.shyBannerRight__52404 {
-    -o-object-position: right center;
-    object-position: right center
-}
-
-.attributionLogos__35ea7 {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: var(--white)
-}
-
-.attributionLogos__35ea7 img {
-    height: 16px;
-    margin: 0 4px;
-    -o-object-fit: contain;
-    object-fit: contain
-}
-
-.shyBannerLogo__8ebd1 {
-    position: absolute;
-    max-width: 55%
-}
-
-.summary__25fda {
-    z-index: 1;
-    color: var(--white-500)
-}
-
 .shopBanner_e2f915 {
     grid-column: 1/-1;
     margin-top: 40px;
@@ -94617,10 +94527,12 @@ div.content_aac020 {
     justify-content: center;
     gap: var(--spacing-16);
     outline: 2px solid transparent;
-    outline-offset: -2px
+    outline-offset: -2px;
+    pointer-events: none
 }
 
 .categoryLogo_bd13ba {
+    position: relative;
     z-index: 1;
     max-height: 96px;
     max-width: 55%
@@ -94660,10 +94572,70 @@ div.content_aac020 {
     z-index: 1
 }
 
+.limitedTimeBadgeLeft__8b477 {
+    left: 16px;
+    right: auto
+}
+
 .getPremiumHook__9a256 {
     cursor: pointer;
     -webkit-text-decoration: underline;
     text-decoration: underline
+}
+
+.condensedBannerContainer__8f66e {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+    min-width: 600px;
+    height: 140px;
+    border-radius: var(--radius-lg);
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    pointer-events: none
+}
+
+.condensedBannerImage_d283ed {
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    border-radius: inherit
+}
+
+.overflowImage__6547b {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 500px;
+    height: 157px;
+    overflow: visible;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: inherit
+}
+
+.overflowImageLeft__82592 {
+    left: 0;
+    right: auto
+}
+
+.condensedCategoryLogo_ec0168 {
+    position: relative;
+    z-index: 1;
+    max-height: 60px;
+    margin: 0 60px;
+    align-self: flex-end
+}
+
+.condensedCategoryLogoLeft_d43fc7 {
+    align-self: flex-start
 }
 
 .previewContainer__73054 {
@@ -136866,4 +136838,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.3bfe0d81f1d923eb219a.css.map*/
+/*# sourceMappingURL=99387.f23075810c6588ef624a.css.map*/
