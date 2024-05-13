@@ -37411,7 +37411,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292836", ", Version Hash: ").concat("da3e0df1b1883ada515a138ce1dce661c31652fc")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292849", ", Version Hash: ").concat("199bc07f8f1738ad71758dcb049341b7b9d61e0f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56491,6 +56491,8 @@
                 SIGNUP_CLAN_OPTION_VERY_HARDCORE_TITLE: "Very Hardcore",
                 SIGNUP_CLAN_OPTION_VERY_HARDCORE_DESCRIPTION: "We won't sleep until we win or beat the boss.",
                 CLAN_DISCOVERY_TOP_PICKS_TITLE: "Top Picks",
+                CLAN_DISCOVERY_OTHER_GUIDES_TITLE: "More Search Results",
+                CLAN_DISCOVERY_OTHER_GUIDES_SUBTITLE: "Other guild guides that match your preferences.",
                 CLAN_DISCOVERY_VALORANT_TITLE: "Valorant Guilds",
                 CLAN_DISCOVERY_GENSHIN_TITLE: "Genshin Guilds",
                 CLAN_DISCOVERY_TOP_PICKS_SUBTITLE: "Best Guilds to join based on your preferences",
@@ -88581,8 +88583,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292836", "292836"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292836")), t = 0), t
+                let t = parseInt((e = "292849", "292849"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292849")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103843,11 +103845,11 @@
 
             function E(e, t) {
                 let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-                    i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+                    i = !(arguments.length > 3) || void 0 === arguments[3] || arguments[3],
                     r = s.useExperiment({
                         location: t
                     }, {
-                        autoTrackExposure: n
+                        autoTrackExposure: i
                     });
                 return function(e) {
                     let {
@@ -103870,9 +103872,9 @@
                     genshinConfig: o.useExperiment({
                         location: t
                     }, {
-                        autoTrackExposure: n
+                        autoTrackExposure: i
                     }),
-                    includeConverted: i
+                    includeConverted: n
                 })
             }
 
@@ -103915,8 +103917,9 @@
             }
 
             function T(e, t) {
-                let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
-                return E(e, t, n).enableClanCreation
+                let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
+                    i = !(arguments.length > 3) || void 0 === arguments[3] || arguments[3];
+                return E(e, t, n, i).enableClanCreation
             }
 
             function f(e) {
@@ -104390,7 +104393,7 @@
 
             function s(e) {
                 let t = (0, i.useStateFromStoresArray)([r.default], () => Object.values(r.default.getGuilds())),
-                    n = (0, a.useAnyClanPrepilotExperimentEnabled)(t, e),
+                    n = (0, a.useAnyClanPrepilotExperimentEnabled)(t, e, !1),
                     {
                         clanDiscoveryEnabled: s
                     } = (0, a.useClanPilotExperiment)(e);
@@ -116142,8 +116145,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292836",
-                    versionHash: "da3e0df1b1883ada515a138ce1dce661c31652fc"
+                    buildNumber: "292849",
+                    versionHash: "199bc07f8f1738ad71758dcb049341b7b9d61e0f"
                 }
             }
             n.r(t), n.d(t, {
@@ -117320,36 +117323,40 @@
             }
             t.default = function(e) {
                 let {
-                    clan: t,
-                    affinity: n,
-                    index: a,
-                    source: s
-                } = e, u = (0, l.useStateFromStores)([A.default], () => A.default.getCurrentUser()), c = (0, l.useStateFromStores)([h.default], () => h.default.isMember(t.id, null == u ? void 0 : u.id), [t, u]), E = r.useCallback(() => {
-                    let e = null != f.default.getRequest(t.id);
+                    style: t,
+                    ...n
+                } = e, {
+                    clan: a,
+                    affinity: s,
+                    index: u,
+                    source: c
+                } = n, E = (0, l.useStateFromStores)([A.default], () => A.default.getCurrentUser()), I = (0, l.useStateFromStores)([h.default], () => h.default.isMember(a.id, null == E ? void 0 : E.id), [a, E]), T = r.useCallback(() => {
+                    let e = null != f.default.getRequest(a.id);
                     if ((0, d.trackClanDiscoveryCardClicked)({
-                            guildId: t.id,
-                            isMember: c,
+                            guildId: a.id,
+                            isMember: I,
                             hasJoinRequest: e,
-                            affinity: n,
-                            index: a
-                        }), c) {
-                        (0, S.transitionToGuild)(t.id);
+                            affinity: s,
+                            index: u
+                        }), I) {
+                        (0, S.transitionToGuild)(a.id);
                         return
                     }
                     if (e) {
-                        (0, S.transitionTo)(p.Routes.GUILD_MEMBER_VERIFICATION(t.id));
+                        (0, S.transitionTo)(p.Routes.GUILD_MEMBER_VERIFICATION(a.id));
                         return
-                    }(0, _.openClanApplyFlow)(t.id, t, {
-                        source: s,
+                    }(0, _.openClanApplyFlow)(a.id, a, {
+                        source: c,
                         location: p.AnalyticsLocations.CLAN_DISCOVERY_CARD
                     })
-                }, [t, c, n, a, s]);
+                }, [a, I, s, u, c]);
                 return (0, i.jsx)(o.Clickable, {
-                    onClick: E,
+                    onClick: T,
                     className: R.clickableCard,
+                    style: t,
                     children: (0, i.jsx)(M, {
-                        ...e,
-                        isMember: c,
+                        ...n,
+                        isMember: I,
                         showBrandingFooter: !0
                     })
                 })
@@ -171900,8 +171907,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715632919297",
-                                    build_number: "292836"
+                                    built_at: "1715634254455",
+                                    build_number: "292849"
                                 }
                             },
                             retries: 1
@@ -250540,7 +250547,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "da3e0df1b1883ada515a138ce1dce661c31652fc"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "199bc07f8f1738ad71758dcb049341b7b9d61e0f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279491,7 +279498,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292836"
+                                build_number: "292849"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286849,7 +286856,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292836", "292836"), 10);
+                let a = parseInt((n = "292849", "292849"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314471,4 +314478,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.97abd18bebacb30bad7a.js.map
+//# sourceMappingURL=35705.f3d5b68f593711f9da14.js.map
