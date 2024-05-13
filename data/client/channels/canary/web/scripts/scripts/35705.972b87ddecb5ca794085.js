@@ -37411,7 +37411,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292908", ", Version Hash: ").concat("0748581033bcba809099e3095c41651abf970603")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292922", ", Version Hash: ").concat("7b9ce737d82a9534e97c9743ac77fb9fa34d3504")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -45814,6 +45814,9 @@
                 PREMIUM_SETTINGS_NAVIGATE_TO_HOME_CTA: "Take Me to My Nitro",
                 PREMIUM_SETTINGS_NATIGATE_TO_SUBSCRIPTIONS_CTA: "Manage Plan in Subscriptions",
                 PREMIUM_SETTINGS_NAVIGATE_TO_HOME_CTA_V2: "Learn More About My Nitro",
+                PREMIUM_SETTINGS_NITRO_HOME_HEADER: "Your Nitro Home",
+                PREMIUM_SETTINGS_PLAN_MANAGEMENT_HEADER: "Your Nitro Plan",
+                PREMIUM_SETTINGS_SUBSCRIPTION_DESCRIPTION: "This is where your current subscriptions live. If you have multiple subscriptions, they will be billed on the same billing cycle. You can [switch plans](onSwitchPlans) or [cancel](onCancel) at any time.",
                 PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO: "**{quantity}x** {quantity, plural, =1 {Server Boost} other {Server Boosts}} - **!!{rate}!!**",
                 PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_TAX_EXCLUSIVE: "**{quantity}x** {quantity, plural, =1 {Server Boost} other {Server Boosts}} - **!!{rate}!!** + applicable taxes",
                 PREMIUM_GUILD_SUBSCRIPTIONS_RENEWAL_INFO_NO_PRICE: "**{quantity}x** {quantity, plural, =1 {Server Boost} other {Server Boosts}}",
@@ -46971,6 +46974,7 @@
                 NITRO_HOME_CARD_CHOOSE_CUSTOM_EMOJI: "Choose from all of your custom emojis in any conversation.",
                 NITRO_HOME_CARD_CUSTOM_SOUNDS_EVERYWHERE: "Custom Sounds Everywhere",
                 NITRO_HOME_CARD_USE_CUSTOM_SOUNDS: "Use custom soundboard sounds across voice channels.",
+                NITRO_HOME_CARD_USE_CUSTOM_SOUNDS_V2: "Use custom soundboard sounds across voice channels. Only with Nitro.",
                 NITRO_HOME_CARD_UPLOAD_POWER: "Feel the upload power.",
                 NITRO_HOME_STREAM_UP_TO_4K: "Up to 4K and 60FPS.",
                 NITRO_HOME_UPLOAD_ALL_YOU_WANT: "Upload what you want with increased 500MB upload size.",
@@ -47004,6 +47008,13 @@
                 NITRO_HOME_REWARDING_REDEEMED_LABEL: "Redeemed",
                 NITRO_HOME_SHY_PROJECT_TITLE: "25% off VALORANT",
                 NITRO_HOME_SHY_PROJECT_SUBTITLE: "Lock in. Stand out. Enjoy 25% off limited time VALORANT styles in the Shop.",
+                NITRO_HOME_SPECIAL_PRICING: "Special Member Pricing",
+                NITRO_HOME_SPECIAL_PRICING_DESCRIPTION: "Snag sweet discounts on any - or every! - item at the Shop. Only with Nitro.",
+                NITRO_HOME_FILE_UPLOADS: "500MB Uploads",
+                NITRO_HOME_EARLY_ACCESS_DESCRIPTION: "Get exclusive access to certain new features before they’re released to everyone.",
+                NITRO_HOME_TAB_NEW: "New",
+                NITRO_HOME_TAB_PERKS: "Perks",
+                NITRO_HOME_CATEGORY_FAVORITES: "Nitro Favorites",
                 GUILD_BOOST_NITRO_REWARD_BANNER: "You earned an extra Boost, nice work.",
                 SINGLE_UNUSED_GUILD_BOOST_NITRO_REWARD_TITLE: "Your Boost awaits!",
                 SINGLE_UNUSED_GUILD_BOOST_NITRO_REWARD_SUBTITLE_1_MONTH_VARIANT: "Thanks for being a Nitro member. Here’s an extra Boost for reaching your first month of Nitro.",
@@ -88600,8 +88611,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292908", "292908"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292908")), t = 0), t
+                let t = parseInt((e = "292922", "292922"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292922")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116162,8 +116173,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292908",
-                    versionHash: "0748581033bcba809099e3095c41651abf970603"
+                    buildNumber: "292922",
+                    versionHash: "7b9ce737d82a9534e97c9743ac77fb9fa34d3504"
                 }
             }
             n.r(t), n.d(t, {
@@ -171931,8 +171942,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715640220637",
-                                    build_number: "292908"
+                                    built_at: "1715641884462",
+                                    build_number: "292922"
                                 }
                             },
                             retries: 1
@@ -250527,7 +250538,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0748581033bcba809099e3095c41651abf970603"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7b9ce737d82a9534e97c9743ac77fb9fa34d3504"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279478,7 +279489,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292908"
+                                build_number: "292922"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286836,7 +286847,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292908", "292908"), 10);
+                let a = parseInt((n = "292922", "292922"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314458,4 +314469,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.892619bbf127f0832ce3.js.map
+//# sourceMappingURL=35705.972b87ddecb5ca794085.js.map
