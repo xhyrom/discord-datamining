@@ -6363,6 +6363,7 @@
                 shareToChannelButton: "shareToChannelButton_ee0e50",
                 shareToChannelInput: "shareToChannelInput_a160d6",
                 shareToChannelInputHasAttachments: "shareToChannelInputHasAttachments__4d1e1",
+                streamingPopoutHero: "streamingPopoutHero__03808",
                 toastContainer: "toastContainer__40273",
                 voiceChannelAdditionalParticipants: "voiceChannelAdditionalParticipants__03b6f",
                 voiceChannelGuildIcon: "voiceChannelGuildIcon__1cbcc",
