@@ -1,18 +1,18 @@
 <p id="docs-internal-guid-ae83e2a7-7fff-9bb1-1e11-e14c4ab280ee"><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
-    <li><a href="#h_01HXABM7ZDGXPQRHYTG6EVMY8N">What’s Happening on Discord’s 9th Birthday?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/23006769442455#h_01HXABM7ZDGXPQRHYTG6EVMY8N">What’s Happening on Discord’s 9th Birthday?</a></li>
     <li>
-        <a href="#h_01HXABM7ZD2M3WZ5FF5VPY894K">US Discord’s 9th Birthday Celebration Dates</a>
+        <a href="https://support.discord.com/hc/en-us/articles/23006769442455#h_01HXABM7ZD2M3WZ5FF5VPY894K">US Discord’s 9th Birthday Celebration Dates</a>
         <ul>
-            <li><a href="#h_01HXABM7ZDWN9H7X49CTSJT4MP">Day 1: Mystery Box Giveaway for Discord's 9th Birthday</a></li>
-            <li><a href="#h_01HXABM7ZD4YVHY0J0CW55GT52">Day 2: Stream Deck and Mic Giveaway for Discord's 9th Birthday</a></li>
-            <li><a href="#h_01HXABM7ZDVGBH5BPQ8MA6JDCR">Day 3: Discord Nitro Giveaway for Discord's 9th Birthday</a></li>
-            <li><a href="#h_01HXABM7ZEF4PWRJN9NJXSBDAX">Day 4: Wumpus Piñata Giveaway for Discord's 9th Birthday</a></li>
-            <li><a href="#h_01HXABM7ZESMP43ZPEJERDAXPR">Day 5: Discord Nitro Giveaway for Discord's 9th Birthday</a></li>
-            <li><a href="#h_01HXABM7ZEV7XJCFQC7BNQGVPA">Day 6: Keyboard Rug and Discord Keyboard Giveaway for Discord's 9th Birthday</a></li>
-            <li><a href="#h_01HXABM7ZEZQCZHNRGJ4H0QX34">Day 7: Discord Shop Item Giveaway for Discord's 9th Birthday</a></li>
-            <li><a href="#h_01HXABM7ZE4A21KT035SFT3SRB">Day 8: Discord Nitro Dice Set Giveaway for Discord's 9th Birthday</a></li>
-            <li><a href="#h_01HXABM7ZE5K1T1VARW6MS3CE4">Day 9: Cake-Ified Headset Stand Giveaway for Discord’s 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23006769442455#h_01HXABM7ZDWN9H7X49CTSJT4MP">Day 1: Mystery Box Giveaway for Discord's 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23006769442455#h_01HXABM7ZD4YVHY0J0CW55GT52">Day 2: Stream Deck and Mic Giveaway for Discord's 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23006769442455#h_01HXABM7ZDVGBH5BPQ8MA6JDCR">Day 3: Discord Nitro Giveaway for Discord's 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23006769442455#h_01HXABM7ZEF4PWRJN9NJXSBDAX">Day 4: Wumpus Piñata Giveaway for Discord's 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23006769442455#h_01HXABM7ZESMP43ZPEJERDAXPR">Day 5: Discord Nitro Giveaway for Discord's 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23006769442455#h_01HXABM7ZEV7XJCFQC7BNQGVPA">Day 6: Keyboard Rug and Discord Keyboard Giveaway for Discord's 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23006769442455#h_01HXABM7ZEZQCZHNRGJ4H0QX34">Day 7: Discord Shop Item Giveaway for Discord's 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23006769442455#h_01HXABM7ZE4A21KT035SFT3SRB">Day 8: Discord Nitro Dice Set Giveaway for Discord's 9th Birthday</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/23006769442455#h_01HXABM7ZE5K1T1VARW6MS3CE4">Day 9: Cake-Ified Headset Stand Giveaway for Discord’s 9th Birthday</a></li>
         </ul>
     </li>
 </ul>
@@ -36,7 +36,7 @@
         <strong>Twitter Sweepstakes:</strong>
         <ul>
             <li>
-                <strong>How to Enter: </strong><span id="docs-internal-guid-b5864ed9-7fff-d824-c19a-7714e720872d">Reply with a HAPPY BIRTHDAY DISCORD &amp; the hashtag #discordsweepstakes and we'll randomly select winners</span>
+                <strong>How to Enter: </strong>React to the Discord official Giveaway bot post in the Town Hall server
             </li>
             <li>
                 <strong>Prize: </strong>One (1) Winner (Estimate Value)
