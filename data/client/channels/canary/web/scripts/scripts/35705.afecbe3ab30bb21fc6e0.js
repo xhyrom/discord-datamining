@@ -37411,7 +37411,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292819", ", Version Hash: ").concat("14a0e5ec9c93dc620557a4fabbf315241be27cdd")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292835", ", Version Hash: ").concat("ceaaf4e8e0ebbc7432f78d0f05b9f5abcfd787f6")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88581,8 +88581,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292819", "292819"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292819")), t = 0), t
+                let t = parseInt((e = "292835", "292835"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292835")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116142,8 +116142,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292819",
-                    versionHash: "14a0e5ec9c93dc620557a4fabbf315241be27cdd"
+                    buildNumber: "292835",
+                    versionHash: "ceaaf4e8e0ebbc7432f78d0f05b9f5abcfd787f6"
                 }
             }
             n.r(t), n.d(t, {
@@ -171900,8 +171900,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715631430969",
-                                    build_number: "292819"
+                                    built_at: "1715632522464",
+                                    build_number: "292835"
                                 }
                             },
                             retries: 1
@@ -213184,8 +213184,9 @@
                     guildMember: n,
                     highestRole: r,
                     onAddRole: h,
-                    compact: A = !0
-                } = e, m = (0, s.useStateFromStores)([_.default], () => _.default.roleStyle), N = e => (0, c.isNotEveryoneRoleId)(t.id, e.id) && !e.managed && E.default.isRoleHigher(t, r, e) && -1 === n.roles.indexOf(e.id);
+                    compact: A = !0,
+                    ...m
+                } = e, N = (0, s.useStateFromStores)([_.default], () => _.default.roleStyle), p = e => (0, c.isNotEveryoneRoleId)(t.id, e.id) && !e.managed && E.default.isRoleHigher(t, r, e) && -1 === n.roles.indexOf(e.id);
                 return (0, i.jsx)(l.Popout, {
                     position: "bottom",
                     align: "center",
@@ -213195,14 +213196,13 @@
                         } = e;
                         return (0, i.jsx)(d.default, {
                             guild: t,
-                            roleStyle: m,
-                            roleFilter: N,
+                            roleStyle: N,
+                            roleFilter: p,
                             onSelect: h,
                             onClose: n
                         })
                     },
                     children: e => (0, i.jsx)(T.default, {
-                        ...e,
                         className: a()(S.button, {
                             [S.compact]: A
                         }),
@@ -213215,7 +213215,9 @@
                         color: o.Button.Colors.CUSTOM,
                         size: o.Button.Sizes.NONE,
                         compact: A,
-                        grow: !1
+                        grow: !1,
+                        ...e,
+                        ...m
                     })
                 })
             }
@@ -215741,7 +215743,7 @@
                 default: function() {
                     return R
                 }
-            }), n("47120");
+            }), n("47120"), n("653041");
             var i = n("735250"),
                 r = n("470079"),
                 a = n("512722"),
@@ -215782,58 +215784,68 @@
                     L = (e, t) => {
                         null != t ? g.current[e] = t : delete g.current[e]
                     },
-                    [v, D] = r.useState(null),
-                    M = (0, u.useStateFromStores)([f.default], () => f.default.getRoles(a.id)),
-                    y = r.useMemo(() => {
-                        let e = Object.values(M).filter(e => E.includes(e.id)).sort((e, t) => {
-                            var n, i;
-                            let r = (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) !== null,
-                                a = (null === (i = t.tags) || void 0 === i ? void 0 : i.guild_connections) !== null;
-                            return r && !a ? 1 : !r && a ? -1 : 0
-                        });
-                        return null != v ? e.slice(0, v) : e
-                    }, [M, v, E]),
-                    P = E.length - y.length,
-                    U = T && null != _ ? S - 32 - 30 : S - 32;
+                    v = (0, u.useStateFromStores)([f.default], () => f.default.getRoles(a.id)),
+                    D = r.useMemo(() => Object.values(v).filter(e => E.includes(e.id)).sort((e, t) => {
+                        var n, i;
+                        let r = (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) !== null,
+                            a = (null === (i = t.tags) || void 0 === i ? void 0 : i.guild_connections) !== null;
+                        return r && !a ? 1 : !r && a ? -1 : 0
+                    }), [v, E]),
+                    [M, y] = r.useState(D),
+                    [P, U] = r.useState(S),
+                    b = M.length < D.length,
+                    G = T && null != _,
+                    w = r.useRef(null),
+                    B = r.useRef(null);
                 r.useLayoutEffect(() => {
-                    let e = 0,
-                        t = 0;
-                    for (let n = 0; n < 2; n++) {
-                        t = 0;
-                        let i = 1 === n ? U : S;
-                        for (let n = e; n < y.length; n++) {
-                            let r = y[n],
-                                a = g.current[r.id];
-                            if (null != a) {
-                                if ((t += a.offsetWidth) > i) break;
-                                t += 4, e++
+                    var e, t, n, i, r, a;
+                    let s = null !== (r = null === (t = w.current) || void 0 === t ? void 0 : null === (e = t.getBoundingClientRect()) || void 0 === e ? void 0 : e.width) && void 0 !== r ? r : 0,
+                        o = null !== (a = null === (i = B.current) || void 0 === i ? void 0 : null === (n = i.getBoundingClientRect()) || void 0 === n ? void 0 : n.width) && void 0 !== a ? a : 0,
+                        l = S - (s > 0 ? s + 4 : 0) - (o > 0 ? o + 4 : 0),
+                        u = [];
+                    for (let e = 0; e < 2; e++) {
+                        let t = 1 === e,
+                            n = 0;
+                        for (let e = u.length; e < D.length; e++) {
+                            let i = D[e],
+                                r = g.current[i.id];
+                            if (null != r) {
+                                if (n > 0 && !t && n + r.offsetWidth > S || n > 0 && t && n + r.offsetWidth > l) break;
+                                n += r.offsetWidth + 4, u.push(i)
                             }
                         }
                     }
-                    D(t => e < y.length ? e : t)
-                }, [S, U, y]);
-                let b = r.useMemo(() => "roles-".concat((0, o.v4)()), []),
-                    G = (0, l.default)({
-                        id: b,
+                    U(l), y(e => e.length !== u.length ? u : e)
+                }, [S, D, M]);
+                let k = r.useMemo(() => "roles-".concat((0, o.v4)()), []),
+                    V = (0, l.default)({
+                        id: k,
                         isEnabled: !0,
                         scrollToStart: N.NOOP_PROMISE,
                         scrollToEnd: N.NOOP_PROMISE,
                         wrap: !0
                     }),
-                    w = y.map(e => {
-                        var r;
+                    x = D.length,
+                    F = 0 === x ? p.default.Messages.ROLE_LIST_EMPTY : p.default.Messages.ROLES_LIST.format({
+                        numRoles: x
+                    }),
+                    H = M.map((e, r) => {
+                        var s;
                         return (0, i.jsx)(c.MemberRole, {
                             className: O.role,
                             role: e,
-                            canRemove: T ? h.isRoleHigher(a, n.id, I, e) : (null === (r = e.tags) || void 0 === r ? void 0 : r.guild_connections) === null && t.id === n.id,
-                            onRemove: () => C(e),
-                            ref: t => L(e.id, t),
                             guildId: a.id,
-                            disableBorderColor: !0
+                            style: {
+                                maxWidth: r === M.length - 1 ? P : S
+                            },
+                            disableBorderColor: !0,
+                            ref: t => L(e.id, t),
+                            onRemove: () => C(e),
+                            canRemove: T ? h.isRoleHigher(a, n.id, I, e) : (null === (s = e.tags) || void 0 === s ? void 0 : s.guild_connections) === null && t.id === n.id
                         }, e.id)
                     });
                 return (0, i.jsx)(l.ListNavigatorProvider, {
-                    navigator: G,
+                    navigator: V,
                     children: (0, i.jsx)(l.ListNavigatorContainer, {
                         children: e => {
                             let {
@@ -215842,24 +215854,24 @@
                             } = e;
                             return (0, i.jsxs)("div", {
                                 className: O.root,
-                                "aria-label": 0 === E.length ? p.default.Messages.ROLE_LIST_EMPTY : p.default.Messages.ROLES_LIST.format({
-                                    numRoles: E.length
-                                }),
+                                "aria-label": F,
                                 ref: t,
                                 ...n,
-                                children: [w, null != v && 0 !== P && (0, i.jsx)(d.Clickable, {
+                                children: [H, b && (0, i.jsx)(d.Clickable, {
+                                    innerRef: w,
                                     onClick: R,
                                     className: O.showMoreButton,
                                     children: (0, i.jsx)(d.Text, {
                                         variant: "text-xs/medium",
-                                        children: "+".concat(P)
+                                        children: "+".concat(D.length - M.length)
                                     })
-                                }), T && null != _ && (0, i.jsx)(m.default, {
+                                }), G && (0, i.jsx)(m.default, {
+                                    buttonRef: B,
                                     guild: a,
                                     guildMember: _,
                                     highestRole: I,
                                     onAddRole: A,
-                                    compact: E.length > 0
+                                    compact: D.length > 0
                                 })]
                             })
                         }
@@ -250528,7 +250540,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "14a0e5ec9c93dc620557a4fabbf315241be27cdd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ceaaf4e8e0ebbc7432f78d0f05b9f5abcfd787f6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279479,7 +279491,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292819"
+                                build_number: "292835"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286837,7 +286849,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292819", "292819"), 10);
+                let a = parseInt((n = "292835", "292835"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314459,4 +314471,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.e836017425cf2f6c5660.js.map
+//# sourceMappingURL=35705.afecbe3ab30bb21fc6e0.js.map
