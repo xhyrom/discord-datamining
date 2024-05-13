@@ -37411,7 +37411,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292859", ", Version Hash: ").concat("26ab4b4daff7d5d7c2beda7a91829540433b2be5")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292860", ", Version Hash: ").concat("395ed711cbc7b96b5a6bec1849460b5b7cc3b57c")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -87370,7 +87370,7 @@
                     y(), (0, c.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("99387"), n.e("79695"), n.e("1502"), n.e("15421")]).then(n.bind(n, "881351"));
+                        } = await Promise.all([n.e("99387"), n.e("79695"), n.e("32006"), n.e("15421")]).then(n.bind(n, "881351"));
                         return n => (0, i.jsx)(e, {
                             ...n,
                             user: t
@@ -88583,8 +88583,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292859", "292859"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292859")), t = 0), t
+                let t = parseInt((e = "292860", "292860"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292860")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116145,8 +116145,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292859",
-                    versionHash: "26ab4b4daff7d5d7c2beda7a91829540433b2be5"
+                    buildNumber: "292860",
+                    versionHash: "395ed711cbc7b96b5a6bec1849460b5b7cc3b57c"
                 }
             }
             n.r(t), n.d(t, {
@@ -123409,7 +123409,7 @@
                                 onContextMenu: t => (0, d.openContextMenuLazy)(t, async () => {
                                     let {
                                         default: t
-                                    } = await Promise.all([n.e("99387"), n.e("79695"), n.e("1502"), n.e("15421")]).then(n.bind(n, "881351"));
+                                    } = await Promise.all([n.e("99387"), n.e("79695"), n.e("32006"), n.e("15421")]).then(n.bind(n, "881351"));
                                     return n => (0, i.jsx)(t, {
                                         ...n,
                                         user: e
@@ -141450,7 +141450,7 @@
                 await (0, r.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("440"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("22646"), n.e("54999"), n.e("99873")]).then(n.bind(n, "343649"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("440"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("8016"), n.e("22646"), n.e("20533"), n.e("98573")]).then(n.bind(n, "343649"));
                     return n => {
                         let {
                             transitionState: r,
@@ -153905,7 +153905,7 @@
                     },
                     async open(e, t, i, r) {
                         var a;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("33053"), n.e("56630"), n.e("49146"), n.e("4970"), n.e("90508"), n.e("75475"), n.e("85093"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("62217"), n.e("72278"), n.e("33361"), n.e("62856"), n.e("19874"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("56630"), n.e("33053"), n.e("49146"), n.e("4970"), n.e("90508"), n.e("75475"), n.e("85093"), n.e("3084"), n.e("75837"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("40400"), n.e("43643"), n.e("62217"), n.e("33361"), n.e("9804"), n.e("62856"), n.e("19874"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         a.default.dispatch({
@@ -164820,7 +164820,7 @@
                     null != l && (0, r.openContextMenuLazy)(s, async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("99387"), n.e("79695"), n.e("1502"), n.e("82882"), n.e("12435"), n.e("6696")]).then(n.bind(n, "757387"));
+                        } = await Promise.all([n.e("99387"), n.e("79695"), n.e("32006"), n.e("82882"), n.e("12435"), n.e("6696")]).then(n.bind(n, "757387"));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             user: e,
@@ -171276,7 +171276,7 @@
                                                     (0, _.openContextMenuLazy)(e, async () => {
                                                         let {
                                                             default: e
-                                                        } = await Promise.all([n.e("99387"), n.e("79695"), n.e("1502"), n.e("82882"), n.e("12435"), n.e("6696")]).then(n.bind(n, "757387"));
+                                                        } = await Promise.all([n.e("99387"), n.e("79695"), n.e("32006"), n.e("82882"), n.e("12435"), n.e("6696")]).then(n.bind(n, "757387"));
                                                         return n => (0, i.jsx)(e, {
                                                             ...n,
                                                             user: r,
@@ -171389,7 +171389,7 @@
                     null != y && (0, d.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("99387"), n.e("79695"), n.e("1502"), n.e("82882"), n.e("12435"), n.e("6696")]).then(n.bind(n, "757387"));
+                        } = await Promise.all([n.e("99387"), n.e("79695"), n.e("32006"), n.e("82882"), n.e("12435"), n.e("6696")]).then(n.bind(n, "757387"));
                         return t => (0, i.jsx)(e, {
                             ...t,
                             user: M,
@@ -171907,8 +171907,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715635602436",
-                                    build_number: "292859"
+                                    built_at: "1715635638143",
+                                    build_number: "292860"
                                 }
                             },
                             retries: 1
@@ -177553,7 +177553,7 @@
                 (0, a.openModalLazy)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("440"), n.e("6416"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("32776"), n.e("57878"), n.e("8016"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("40146")]).then(n.bind(n, "7305"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("40326"), n.e("23357"), n.e("15972"), n.e("440"), n.e("6416"), n.e("63438"), n.e("62511"), n.e("58600"), n.e("57878"), n.e("32776"), n.e("8016"), n.e("95900"), n.e("17938"), n.e("84992"), n.e("19959"), n.e("40146")]).then(n.bind(n, "7305"));
                     return n => {
                         let {
                             onClose: r,
@@ -209610,48 +209610,6 @@
                 return ((null !== (t = e.flags) && void 0 !== t ? t : 0) & i.UserFlags.STAFF) === i.UserFlags.STAFF || (null == e ? void 0 : e.personal_connection_id) != null
             }
         },
-        858488: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return l
-                }
-            }), n("47120");
-            var i = n("735250");
-            n("470079");
-            var r = n("442837"),
-                a = n("481060"),
-                s = n("699516"),
-                o = n("689938");
-
-            function l(e) {
-                let {
-                    user: t,
-                    onAction: l
-                } = e, u = t.id, [d, _] = (0, r.useStateFromStoresArray)([s.default], () => {
-                    var e;
-                    return [s.default.isFriend(u), null !== (e = s.default.getNickname(u)) && void 0 !== e ? e : null]
-                }, [u]);
-                if (!d) return null;
-                let c = null == _ ? o.default.Messages.ADD_FRIEND_NICKNAME : o.default.Messages.CHANGE_FRIEND_NICKNAME;
-                return (0, i.jsx)(a.MenuItem, {
-                    id: null == _ ? "add-friend-nickname" : "edit-friend-nickname",
-                    label: c,
-                    action: () => {
-                        null == l || l(), (0, a.openModalLazy)(async () => {
-                            let {
-                                default: e
-                            } = await Promise.all([n.e("99387"), n.e("25070")]).then(n.bind(n, "670794"));
-                            return n => (0, i.jsx)(e, {
-                                user: t,
-                                nickname: _,
-                                ...n
-                            })
-                        })
-                    }
-                })
-            }
-        },
         389052: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -213468,7 +213426,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return f
+                    return T
                 }
             });
             var i = n("735250");
@@ -213477,55 +213435,48 @@
                 a = n("481060"),
                 s = n("100527"),
                 o = n("906732"),
-                l = n("858488"),
-                u = n("389052"),
-                d = n("622724"),
-                _ = n("314897"),
-                c = n("808268"),
-                E = n("785717"),
-                I = n("537387"),
-                T = n("689938");
+                l = n("389052"),
+                u = n("622724"),
+                d = n("314897"),
+                _ = n("808268"),
+                c = n("785717"),
+                E = n("537387"),
+                I = n("689938");
 
-            function f(e) {
+            function T(e) {
                 let {
                     user: t,
                     guildId: n,
-                    viewProfileItem: f
-                } = e, S = (0, r.useStateFromStores)([_.default], () => _.default.getId() === t.id), {
-                    trackUserProfileAction: h
-                } = (0, E.useUserProfileAnalyticsContext)(), {
-                    analyticsLocations: A,
-                    newestAnalyticsLocation: m
-                } = (0, o.default)(s.default.USER_PROFILE_OVERFLOW_MENU), N = (0, l.default)({
-                    user: t,
-                    onAction: () => h({
-                        action: "PRESS_SET_FRIEND_NICKNAME",
-                        analyticsLocations: A
-                    })
-                }), p = (0, u.default)({
+                    viewProfileItem: T
+                } = e, f = (0, r.useStateFromStores)([d.default], () => d.default.getId() === t.id), {
+                    trackUserProfileAction: S
+                } = (0, c.useUserProfileAnalyticsContext)(), {
+                    analyticsLocations: h,
+                    newestAnalyticsLocation: A
+                } = (0, o.default)(s.default.USER_PROFILE_OVERFLOW_MENU), m = (0, l.default)({
                     user: t,
                     color: "danger",
-                    location: m,
-                    onBlock: () => h({
+                    location: A,
+                    onBlock: () => S({
                         action: "BLOCK",
-                        analyticsLocations: A
+                        analyticsLocations: h
                     }),
-                    onUnblock: () => h({
+                    onUnblock: () => S({
                         action: "UNBLOCK",
-                        analyticsLocations: A
+                        analyticsLocations: h
                     })
-                }), O = (0, d.default)({
+                }), N = (0, u.default)({
                     user: t,
                     guildId: n,
                     color: "danger",
-                    location: m,
-                    onAction: () => h({
+                    location: A,
+                    onAction: () => S({
                         action: "REPORT",
-                        analyticsLocations: A
+                        analyticsLocations: h
                     })
                 });
-                return S ? null : (0, i.jsx)(o.AnalyticsLocationProvider, {
-                    value: A,
+                return f ? null : (0, i.jsx)(o.AnalyticsLocationProvider, {
+                    value: h,
                     children: (0, i.jsx)(a.Popout, {
                         renderPopout: e => {
                             let {
@@ -213535,17 +213486,17 @@
                                 navId: "user-profile-overflow-menu",
                                 onSelect: void 0,
                                 onClose: t,
-                                "aria-label": T.default.Messages.PROFILE_ACTIONS_MENU_LABEL,
-                                children: [(0, i.jsxs)(a.MenuGroup, {
-                                    children: [f, N]
+                                "aria-label": I.default.Messages.PROFILE_ACTIONS_MENU_LABEL,
+                                children: [(0, i.jsx)(a.MenuGroup, {
+                                    children: T
                                 }), (0, i.jsxs)(a.MenuGroup, {
-                                    children: [p, O]
+                                    children: [m, N]
                                 })]
                             })
                         },
-                        children: e => (0, i.jsx)(I.default, {
-                            text: T.default.Messages.MORE,
-                            icon: c.default,
+                        children: e => (0, i.jsx)(E.default, {
+                            text: I.default.Messages.MORE,
+                            icon: _.default,
                             ...e
                         })
                     })
@@ -250547,7 +250498,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "26ab4b4daff7d5d7c2beda7a91829540433b2be5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "395ed711cbc7b96b5a6bec1849460b5b7cc3b57c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279498,7 +279449,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292859"
+                                build_number: "292860"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286856,7 +286807,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292859", "292859"), 10);
+                let a = parseInt((n = "292860", "292860"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314478,4 +314429,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.7d6f5063b260f1d4d3b1.js.map
+//# sourceMappingURL=35705.56c4b2002d5599b0a304.js.map
