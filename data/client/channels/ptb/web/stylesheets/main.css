@@ -58589,7 +58589,7 @@ div:has(>div>.modal__06f49) {
 }
 
 .background__70795 {
-    background-color: var(--background-secondary-alt)
+    background-color: transparent
 }
 
 .backgroundAnimation_c42d48 {
@@ -58620,6 +58620,60 @@ div:has(>div>.modal__06f49) {
 .questProgressBar__3d3fa,
 .questProgressHint__75b1c {
     flex: 1 1 auto
+}
+
+.heroAssetWrapper__1bc27 {
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1
+}
+
+.heroAssetWrapper__1bc27:after {
+    background-color: currentColor;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    -webkit-mask-image: linear-gradient(180deg, transparent, black);
+    mask-image: linear-gradient(180deg, transparent, black);
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    color: transparent
+}
+
+.heroAssetTint__7e70f {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: .6
+}
+
+.heroAssetDarken_f74a79 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: .7;
+    background-color: var(--primary-760)
+}
+
+.heroAsset_b69e74 {
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    filter: blur(5px);
+    transform: scale(3.5)
 }
 
 .contentExpanded__9eb0c {
@@ -136843,4 +136897,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.986c51a1cdcf2191446b.css.map*/
+/*# sourceMappingURL=99387.49ab7b12ce00c63e3615.css.map*/
