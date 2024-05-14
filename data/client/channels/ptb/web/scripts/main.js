@@ -37421,7 +37421,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293245", ", Version Hash: ").concat("c3ff9f09d686bd883ce86989afa0f997a1ed076f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293247", ", Version Hash: ").concat("e2b7e5990b635d3f311c365c8ea912bec4028ddd")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88635,8 +88635,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293245", "293245"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293245")), t = 0), t
+                let t = parseInt((e = "293247", "293247"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293247")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103134,61 +103134,64 @@
             "use strict";
             n.r(t), n.d(t, {
                 getProgressStepAnalyticsName: function() {
-                    return A
+                    return m
                 },
                 trackClanAdminInviteClicked: function() {
-                    return O
+                    return C
                 },
                 trackClanAdminInviteViewed: function() {
-                    return p
+                    return O
                 },
                 trackClanAdoptIdentity: function() {
                     return E
                 },
                 trackClanApplicationAction: function() {
-                    return v
+                    return D
                 },
                 trackClanApplicationNavigation: function() {
-                    return L
+                    return v
                 },
                 trackClanApplicationViewed: function() {
-                    return D
+                    return M
                 },
                 trackClanApplyToJoinViewed: function() {
                     return c
                 },
                 trackClanApplyWaitlist: function() {
-                    return M
+                    return y
                 },
                 trackClanDiscoveryCardClicked: function() {
-                    return C
+                    return R
                 },
                 trackClanDiscoveryViewed: function() {
-                    return h
+                    return A
                 },
                 trackClanProfileViewed: function() {
                     return _
                 },
                 trackClanSendInterviewMessage: function() {
-                    return g
+                    return L
                 },
                 trackClanUserInviteClicked: function() {
-                    return N
+                    return p
                 },
                 trackClanUserInviteViewed: function() {
-                    return m
+                    return N
                 },
                 trackConvertStepViewed: function() {
                     return I
                 },
                 trackConvertSuccessModalConfirm: function() {
-                    return S
+                    return h
                 },
                 trackConvertSuccessModalViewed: function() {
-                    return f
+                    return S
                 },
                 trackMemberVerificationApplicationViewed: function() {
-                    return R
+                    return g
+                },
+                trackSettingsSaved: function() {
+                    return f
                 },
                 trackSettingsViewed: function() {
                     return T
@@ -103270,19 +103273,25 @@
             }
 
             function f(e) {
+                o.default.track(u.AnalyticEvents.CLAN_SETTINGS_SAVED, {
+                    guild_id: e
+                })
+            }
+
+            function S(e) {
                 o.default.track(u.AnalyticEvents.CLAN_CONVERT_SUCCESS_MODAL_VIEWED, {
                     guild_id: e
                 })
             }
 
-            function S(e, t) {
+            function h(e, t) {
                 o.default.track(u.AnalyticEvents.CLAN_CONVERT_SUCCESS_MODAL_CONFIRM, {
                     guild_id: e,
                     enable_tag: t
                 })
             }
 
-            function h(e, t, n) {
+            function A(e, t, n) {
                 o.default.track(u.AnalyticEvents.CLAN_DISCOVERY_VIEWED, {
                     guild_ids: e,
                     section: t,
@@ -103292,7 +103301,7 @@
                 })
             }
 
-            function A(e) {
+            function m(e) {
                 switch (e) {
                     case l.ClanSetupSteps.GAMES:
                         return "games";
@@ -103315,7 +103324,7 @@
                 }
             }
 
-            function m(e) {
+            function N(e) {
                 let {
                     location: t
                 } = e;
@@ -103324,7 +103333,7 @@
                 })
             }
 
-            function N(e) {
+            function p(e) {
                 let {
                     location: t
                 } = e;
@@ -103333,7 +103342,7 @@
                 })
             }
 
-            function p(e) {
+            function O(e) {
                 let {
                     guildId: t,
                     location: n
@@ -103344,7 +103353,7 @@
                 })
             }
 
-            function O(e) {
+            function C(e) {
                 let {
                     guildId: t,
                     location: n
@@ -103355,7 +103364,7 @@
                 })
             }
 
-            function C(e) {
+            function R(e) {
                 let {
                     guildId: t,
                     isMember: n,
@@ -103372,13 +103381,13 @@
                 })
             }
 
-            function R(e) {
+            function g(e) {
                 o.default.track(u.AnalyticEvents.MEMBER_VERIFICATION_APPLICATION_VIEWED, {
                     guild_id: e
                 })
             }
 
-            function g(e) {
+            function L(e) {
                 var t;
                 let {
                     guildId: n,
@@ -103398,7 +103407,7 @@
                 })
             }
 
-            function L(e) {
+            function v(e) {
                 let {
                     guildId: t,
                     source: n,
@@ -103411,7 +103420,7 @@
                 })
             }
 
-            function v(e) {
+            function D(e) {
                 let {
                     guildId: t,
                     actionType: n,
@@ -103425,7 +103434,7 @@
                 })
             }
 
-            function D(e) {
+            function M(e) {
                 let {
                     guildId: t,
                     applicationUserId: n,
@@ -103439,7 +103448,7 @@
                 })
             }
 
-            function M(e) {
+            function y(e) {
                 let {
                     originGuildId: t,
                     tagGuildId: n,
@@ -116232,8 +116241,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293245",
-                    versionHash: "c3ff9f09d686bd883ce86989afa0f997a1ed076f"
+                    buildNumber: "293247",
+                    versionHash: "e2b7e5990b635d3f311c365c8ea912bec4028ddd"
                 }
             }
             n.r(t), n.d(t, {
@@ -172474,8 +172483,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715715687527",
-                                    build_number: "293245"
+                                    built_at: "1715715819631",
+                                    build_number: "293247"
                                 }
                             },
                             retries: 1
@@ -251268,7 +251277,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "c3ff9f09d686bd883ce86989afa0f997a1ed076f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e2b7e5990b635d3f311c365c8ea912bec4028ddd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280276,7 +280285,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293245"
+                                build_number: "293247"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287634,7 +287643,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293245", "293245"), 10);
+                let a = parseInt((n = "293247", "293247"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -315294,4 +315303,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.35e2da0712671ad800fb.js.map
+//# sourceMappingURL=35705.8e3d112cb33c70aa5bea.js.map
