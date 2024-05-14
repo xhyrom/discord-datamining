@@ -20016,6 +20016,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    row-gap: 2px;
     -moz-column-gap: 6px;
     column-gap: 6px
 }
@@ -137074,4 +137075,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.a16fed8340013df89b52.css.map*/
+/*# sourceMappingURL=99387.ab8a9a4a9dfa65289811.css.map*/

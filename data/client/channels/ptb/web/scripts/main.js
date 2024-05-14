@@ -16043,22 +16043,22 @@
             "use strict";
             n.r(t), n.d(t, {
                 acceptAgreements: function() {
-                    return T
+                    return f
                 },
                 fetchCurrentUser: function() {
-                    return I
+                    return T
                 },
                 fetchMutualFriends: function() {
-                    return A
+                    return m
                 },
                 fetchProfile: function() {
-                    return h
+                    return A
                 },
                 getUser: function() {
-                    return S
+                    return h
                 },
                 setFlag: function() {
-                    return f
+                    return S
                 }
             }), n("789020");
             var i = n("512722"),
@@ -16069,17 +16069,18 @@
                 l = n("570140"),
                 u = n("598077"),
                 d = n("594174"),
-                _ = n("573261"),
-                c = n("981631");
-            let E = new s.Logger("UserProfileModalActionCreators");
+                _ = n("960048"),
+                c = n("573261"),
+                E = n("981631");
+            let I = new s.Logger("UserProfileModalActionCreators");
 
-            function I() {
+            function T() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
                     {
                         withAnalyticsToken: t = !1
                     } = e;
                 return o.HTTP.get({
-                    url: c.Endpoints.ME,
+                    url: E.Endpoints.ME,
                     query: {
                         with_analytics_token: t
                     },
@@ -16091,11 +16092,11 @@
                 }), new u.default(e.body)))
             }
 
-            function T() {
+            function f() {
                 let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
                     t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-                return _.default.patch({
-                    url: c.Endpoints.USER_AGREEMENTS,
+                return c.default.patch({
+                    url: E.Endpoints.USER_AGREEMENTS,
                     trackedActionData: {
                         event: a.NetworkActionNames.USER_ACCEPT_AGREEMENTS
                     },
@@ -16107,12 +16108,12 @@
                 }).then(() => !0, () => !1)
             }
 
-            function f(e, t) {
+            function S(e, t) {
                 let n = d.default.getCurrentUser();
                 r()(null != n, "setFlag: user cannot be undefined");
                 let i = t ? n.flags | e : n.flags & ~e;
                 return o.HTTP.patch({
-                    url: c.Endpoints.ME,
+                    url: E.Endpoints.ME,
                     oldFormErrors: !0,
                     body: {
                         flags: i
@@ -16120,17 +16121,17 @@
                 })
             }
 
-            function S(e) {
+            function h(e) {
                 let t = d.default.getUser(e);
                 return null != t ? Promise.resolve(t) : o.HTTP.get({
-                    url: c.Endpoints.USER(e),
+                    url: E.Endpoints.USER(e),
                     oldFormErrors: !0
                 }).then(t => (l.default.dispatch({
                     type: "USER_UPDATE",
                     user: t.body
                 }), d.default.getUser(e)))
             }
-            async function h(e) {
+            async function A(e) {
                 let {
                     friendToken: t,
                     withMutualGuilds: n,
@@ -16145,7 +16146,7 @@
                 });
                 try {
                     let d = await o.HTTP.get({
-                        url: c.Endpoints.USER_PROFILE(e),
+                        url: E.Endpoints.USER_PROFILE(e),
                         query: {
                             friend_token: t,
                             with_mutual_guilds: n,
@@ -16168,20 +16169,20 @@
                         guildMember: d.body.guild_member
                     }), d.body
                 } catch (t) {
-                    throw null != t && (null == t ? void 0 : t.body) != null && E.warn("fetchProfile error: ".concat(t.body.code, " - ").concat(t.body.message)), l.default.dispatch({
+                    throw _.default.captureException(t), null != t && (null == t ? void 0 : t.body) != null && I.warn("fetchProfile error: ".concat(t.body.code, " - ").concat(t.body.message)), l.default.dispatch({
                         type: "USER_PROFILE_FETCH_FAILURE",
                         userId: e
                     }), t
                 }
             }
-            async function A(e, t) {
+            async function m(e, t) {
                 l.default.dispatch({
                     type: "MUTUAL_FRIENDS_FETCH_START",
                     userId: e
                 });
                 try {
                     let n = await o.HTTP.get({
-                        url: c.Endpoints.USER_RELATIONSHIPS(e),
+                        url: E.Endpoints.USER_RELATIONSHIPS(e),
                         oldFormErrors: !0,
                         signal: t
                     });
@@ -16191,7 +16192,7 @@
                         mutualFriends: n.body
                     })
                 } catch (t) {
-                    throw (null == t ? void 0 : t.body) != null && E.warn("fetchMutualFriends error: ".concat(t.body.code, " - ").concat(t.body.message)), l.default.dispatch({
+                    throw (null == t ? void 0 : t.body) != null && I.warn("fetchMutualFriends error: ".concat(t.body.code, " - ").concat(t.body.message)), l.default.dispatch({
                         type: "MUTUAL_FRIENDS_FETCH_FAILURE",
                         userId: e
                     }), t
@@ -37414,7 +37415,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293135", ", Version Hash: ").concat("e8d99d1c1451c042e0f7a6eda829b257199b52d4")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293158", ", Version Hash: ").concat("69230a3bfceba9dbe525e72e99f948db9a7fea00")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88620,8 +88621,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293135", "293135"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293135")), t = 0), t
+                let t = parseInt((e = "293158", "293158"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293158")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116207,8 +116208,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293135",
-                    versionHash: "e8d99d1c1451c042e0f7a6eda829b257199b52d4"
+                    buildNumber: "293158",
+                    versionHash: "69230a3bfceba9dbe525e72e99f948db9a7fea00"
                 }
             }
             n.r(t), n.d(t, {
@@ -172445,8 +172446,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715708383758",
-                                    build_number: "293135"
+                                    built_at: "1715709361192",
+                                    build_number: "293158"
                                 }
                             },
                             retries: 1
@@ -251226,7 +251227,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e8d99d1c1451c042e0f7a6eda829b257199b52d4"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "69230a3bfceba9dbe525e72e99f948db9a7fea00"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280234,7 +280235,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293135"
+                                build_number: "293158"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287592,7 +287593,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293135", "293135"), 10);
+                let a = parseInt((n = "293158", "293158"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -315214,4 +315215,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.e91b79f5ab10106d3778.js.map
+//# sourceMappingURL=35705.4cf923863fbff40084a9.js.map
