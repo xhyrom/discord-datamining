@@ -5233,6 +5233,7 @@
                 progressStepContainer: "progressStepContainer_dfe894",
                 progressStepFill: "progressStepFill_a81294",
                 progressStepTooltip: "progressStepTooltip__53c08",
+                progressStepTooltipCustomColors: "progressStepTooltipCustomColors_d247ec",
                 progressStepWrapper: "progressStepWrapper__57a64"
             }
         },
