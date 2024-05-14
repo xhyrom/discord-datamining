@@ -37411,7 +37411,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292991", ", Version Hash: ").concat("7f72a01bfad068a87af79da2892c706bcdd25eae")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("292993", ", Version Hash: ").concat("5eecee48b735c7def0c5a422ceb9ab92a7908e54")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88611,8 +88611,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "292991", "292991"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292991")), t = 0), t
+                let t = parseInt((e = "292993", "292993"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("292993")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -88652,7 +88652,7 @@
                 r = n("596401");
 
             function a(e) {
-                return e === i.default.getDMFromUserId(r.SYSTEM_UPDATES_USER_ID)
+                return null != e && e === i.default.getDMFromUserId(r.SYSTEM_UPDATES_USER_ID)
             }
         },
         580552: function(e, t, n) {
@@ -116173,8 +116173,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "292991",
-                    versionHash: "7f72a01bfad068a87af79da2892c706bcdd25eae"
+                    buildNumber: "292993",
+                    versionHash: "5eecee48b735c7def0c5a422ceb9ab92a7908e54"
                 }
             }
             n.r(t), n.d(t, {
@@ -171942,8 +171942,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715654054766",
-                                    build_number: "292991"
+                                    built_at: "1715655569194",
+                                    build_number: "292993"
                                 }
                             },
                             retries: 1
@@ -250538,7 +250538,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "7f72a01bfad068a87af79da2892c706bcdd25eae"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5eecee48b735c7def0c5a422ceb9ab92a7908e54"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -274794,24 +274794,26 @@
             n.r(t), n("757143");
             var r = n("302454"),
                 a = n.n(r),
-                s = n("594199");
-            let o = a().defaultRules.lheading,
-                l = a().defaultRules.heading,
-                u = a().defaultRules.link,
-                d = a().defaultRules.image,
-                _ = a().defaultRules.list,
-                c = a().defaultRules.blockQuote,
-                E = a().defaultRules.paragraph,
-                I = /\{(.+?)}/,
-                T = /^\$(\w+?)\$/;
+                s = n("800927"),
+                o = n("945884"),
+                l = n("594199");
+            let u = a().defaultRules.lheading,
+                d = a().defaultRules.heading,
+                _ = a().defaultRules.link,
+                c = a().defaultRules.image,
+                E = a().defaultRules.list,
+                I = a().defaultRules.blockQuote,
+                T = a().defaultRules.paragraph,
+                f = /\{(.+?)}/,
+                S = /^\$(\w+?)\$/;
             i = n("235375");
-            let f = e => {
+            let h = e => {
                     let {
                         transformUpperCase: t = !1
                     } = e;
                     return (e, n, i) => {
-                        let r = I.exec(e[1]),
-                            s = e[1].replace(I, "");
+                        let r = f.exec(e[1]),
+                            s = e[1].replace(f, "");
                         return t && (s = s.toUpperCase()), {
                             className: null != r ? r[1] : null,
                             level: "=" === e[2] ? 1 : 2,
@@ -274819,23 +274821,23 @@
                         }
                     }
                 },
-                S = e => ({
+                A = e => ({
                     ...i.baseRules,
                     image: {
-                        ...d,
+                        ...c,
                         ..."function" == typeof i.customRules.image ? i.customRules.image(e) : i.customRules.image
                     },
                     link: {
-                        ...u,
+                        ..._,
                         ..."function" == typeof i.customRules.link ? i.customRules.link(e) : i.customRules.link
                     },
                     list: {
-                        ..._,
+                        ...E,
                         ..."function" == typeof i.customRules.list ? i.customRules.list(e) : i.customRules.list
                     },
                     interpolation: {
-                        order: s.default.order,
-                        match: e => T.exec(e),
+                        order: l.default.order,
+                        match: e => S.exec(e),
                         parse(e, t, n) {
                             let i = n.interpolations[e[1]];
                             return null == i ? {
@@ -274849,41 +274851,53 @@
                         react: e => e.renderer()
                     },
                     lheading: {
-                        ...o,
-                        parse: f({
+                        ...u,
+                        parse: h({
                             transformUpperCase: !0
                         }),
                         ..."function" == typeof i.customRules.lheading ? i.customRules.lheading(e) : i.customRules.lheading
                     },
                     heading: {
-                        ...l,
+                        ...d,
                         ..."function" == typeof i.customRules.heading ? i.customRules.heading(e) : i.customRules.heading
                     },
                     blockQuote: {
-                        ...c,
+                        ...I,
                         ..."function" == typeof i.customRules.blockQuote ? i.customRules.blockQuote(e) : i.customRules.blockQuote
                     },
                     paragraph: {
-                        ...E,
+                        ...T,
                         ..."function" == typeof i.customRules.paragraph ? i.customRules.paragraph(e) : i.customRules.paragraph
                     }
                 }),
-                h = e => ({
+                m = e => ({
                     lheading: {
-                        ...o,
-                        parse: f({
+                        ...u,
+                        parse: h({
                             transformUpperCase: !1
                         }),
                         ..."function" == typeof i.customRules.lheading ? i.customRules.lheading(e) : i.customRules.lheading
                     }
+                }),
+                N = e => ({
+                    ...A(e),
+                    newline: {
+                        ...a().defaultRules.newline
+                    },
+                    text: l.default,
+                    list: s.default,
+                    subtext: o.default
                 });
             t.default = {
                 getDefaultRules: e => ({
-                    ...S(e)
+                    ...A(e)
                 }),
                 getSpecialRules: e => ({
-                    ...S(e),
-                    ...h(e)
+                    ...A(e),
+                    ...m(e)
+                }),
+                getMessageRules: e => ({
+                    ...N(e)
                 })
             }
         },
@@ -279496,7 +279510,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "292991"
+                                build_number: "292993"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286854,7 +286868,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "292991", "292991"), 10);
+                let a = parseInt((n = "292993", "292993"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -314476,4 +314490,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.fdfa1764dd99945c89d3.js.map
+//# sourceMappingURL=35705.3938d8f414355cf49540.js.map
