@@ -37421,7 +37421,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293180", ", Version Hash: ").concat("884c67f689b983f184267aae58be0fa662680b1f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293189", ", Version Hash: ").concat("8c5dd2e8c0f9d3773f4f53875c0160f873e3a94d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88635,8 +88635,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293180", "293180"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293180")), t = 0), t
+                let t = parseInt((e = "293189", "293189"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293189")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116232,8 +116232,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293180",
-                    versionHash: "884c67f689b983f184267aae58be0fa662680b1f"
+                    buildNumber: "293189",
+                    versionHash: "8c5dd2e8c0f9d3773f4f53875c0160f873e3a94d"
                 }
             }
             n.r(t), n.d(t, {
@@ -172470,8 +172470,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715710735617",
-                                    build_number: "293180"
+                                    built_at: "1715711472303",
+                                    build_number: "293189"
                                 }
                             },
                             retries: 1
@@ -189565,10 +189565,10 @@
 
             function a() {
                 if (0 === Object.keys(i).length) return "";
-                let e = "|".concat(r("id", 20), "|").concat(r("Mounts", 8), "|").concat(r("Mount Average", 20), "|").concat(r("Updates", 8), "|").concat(r("Update Average", 20), "|").concat(r("Nested", 8), "|").concat(r("Nested Average", 20), "|\n");
-                return "Component Render Averages:\n" + e + Object.entries(i).map(e => {
+                let e = "|".concat(r("id", 20), "|").concat(r("Mounts", 8), "|").concat(r("Mount Mean", 20), "|").concat(r("Updates", 8), "|").concat(r("Update Mean", 20), "|").concat(r("Nested", 8), "|").concat(r("Nested Mean", 20), "|\n");
+                return "Component Render Stats (microseconds):\n" + e + Object.entries(i).map(e => {
                     let [t, n] = e;
-                    return "|".concat(r(t, 20), "|").concat(r(n.mountAverage.count.toString(), 8), "|").concat(r(n.mountAverage.currentAverage.toString(), 20), "|").concat(r(n.updateAverage.count.toString(), 8), "|").concat(r(n.updateAverage.currentAverage.toString(), 20), "|").concat(r(n.nestedUpdateAverage.count.toString(), 8), "|").concat(r(n.nestedUpdateAverage.currentAverage.toString(), 20), "|\n")
+                    return "|".concat(r(t, 20), "|").concat(r(n.mount.count.toString(), 8), "|").concat(r(n.mount.mean.toString(), 20), "|").concat(r(n.update.count.toString(), 8), "|").concat(r(n.update.mean.toString(), 20), "|").concat(r(n.nestedUpdate.count.toString(), 8), "|").concat(r(n.nestedUpdate.mean.toString(), 20), "|\n")
                 })
             }
         },
@@ -251264,7 +251264,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "884c67f689b983f184267aae58be0fa662680b1f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8c5dd2e8c0f9d3773f4f53875c0160f873e3a94d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280272,7 +280272,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293180"
+                                build_number: "293189"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287630,7 +287630,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293180", "293180"), 10);
+                let a = parseInt((n = "293189", "293189"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -315290,4 +315290,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.47a786e05b02ae725f74.js.map
+//# sourceMappingURL=35705.d1fd739355d4cd8a8273.js.map
