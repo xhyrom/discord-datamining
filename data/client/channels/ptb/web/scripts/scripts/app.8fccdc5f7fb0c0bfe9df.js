@@ -7151,6 +7151,7 @@
                 cardFooterOtherCount: "cardFooterOtherCount_a26e63",
                 cardNameAndTagWrapper: "cardNameAndTagWrapper_d87ceb",
                 clanBadge: "clanBadge__4c045",
+                clanBannerPreview: "clanBannerPreview__4375a",
                 clanIcon: "clanIcon_d70524",
                 clanInfoItem: "clanInfoItem__65fdd",
                 clanInfoRow: "clanInfoRow__15925",
