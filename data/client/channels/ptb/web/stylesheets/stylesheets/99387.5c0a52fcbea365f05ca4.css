@@ -20001,7 +20001,14 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .nickname__745d1 {
-    word-break: break-word
+    word-break: break-word;
+    max-height: 72px;
+    overflow: hidden
+}
+
+.fullSizeNickname_a36463 {
+    max-height: 90px;
+    max-width: 500px
 }
 
 .nicknameIcons__1b2d1 {
@@ -137177,4 +137184,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ef605288231e29839449.css.map*/
+/*# sourceMappingURL=99387.5c0a52fcbea365f05ca4.css.map*/
