@@ -25663,7 +25663,6 @@
                 badgeList: "badgeList__70639",
                 container: "container__020e3",
                 overlay: "overlay__15b40",
-                username: "username__7cf20",
                 usernameBadgeList: "usernameBadgeList__9a1fb"
             }
         },
@@ -25840,6 +25839,13 @@
             e.exports = {
                 activity: "activity__47d03",
                 buttonColor: "buttonColor_b3c4e5"
+            }
+        },
+        579935: function(e) {
+            "use strict";
+            e.exports = {
+                clickable: "clickable_bf76d2",
+                overlay: "overlay__2bab7"
             }
         },
         783116: function(e) {

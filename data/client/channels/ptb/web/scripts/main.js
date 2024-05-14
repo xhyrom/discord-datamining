@@ -37414,7 +37414,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293100", ", Version Hash: ").concat("3e360b7a14f67ebb9aa6e61df82233fdfcbbee31")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293107", ", Version Hash: ").concat("015b6e56a3a83ee00fdbb8101ab33271d3f40395")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88618,8 +88618,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293100", "293100"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293100")), t = 0), t
+                let t = parseInt((e = "293107", "293107"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293107")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116187,8 +116187,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293100",
-                    versionHash: "3e360b7a14f67ebb9aa6e61df82233fdfcbbee31"
+                    buildNumber: "293107",
+                    versionHash: "015b6e56a3a83ee00fdbb8101ab33271d3f40395"
                 }
             }
             n.r(t), n.d(t, {
@@ -172425,8 +172425,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715705237785",
-                                    build_number: "293100"
+                                    built_at: "1715706073174",
+                                    build_number: "293107"
                                 }
                             },
                             retries: 1
@@ -213805,6 +213805,7 @@
                     children: e => (0, i.jsx)(c.default, {
                         icon: u.default,
                         text: E.default.Messages.EDIT_PROFILE,
+                        autoFocus: !0,
                         ...e
                     })
                 }) : null
@@ -215867,6 +215868,93 @@
                 })
             }
         },
+        513099: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return p
+                }
+            });
+            var i = n("735250"),
+                r = n("470079"),
+                a = n("442837"),
+                s = n("481060"),
+                o = n("420660"),
+                l = n("233440"),
+                u = n("199902"),
+                d = n("158776"),
+                _ = n("74538"),
+                c = n("998502"),
+                E = n("785717"),
+                I = n("204197"),
+                T = n("652853"),
+                f = n("228168"),
+                S = n("981631"),
+                h = n("474936"),
+                A = n("579935");
+            let m = s.AvatarSizes.SIZE_80,
+                N = c.default.getEnableHardwareAcceleration() ? s.AnimatedAvatar : s.Avatar;
+
+            function p(e) {
+                let {
+                    user: t,
+                    displayProfile: n,
+                    guildId: c,
+                    channelId: p,
+                    animateOnHover: O,
+                    onOpenProfile: C
+                } = e, {
+                    theme: R
+                } = (0, T.useUserProfileThemeContext)(), {
+                    trackUserProfileAction: g
+                } = (0, E.useUserProfileAnalyticsContext)(), L = _.default.isPremiumAtLeast(null == n ? void 0 : n.premiumType, h.PremiumTypes.TIER_2), v = r.useMemo(() => (0, l.shouldDisableUserPresenceInChannel)(t, p), [t, p]), {
+                    status: D,
+                    isMobileOnline: M
+                } = (0, a.useStateFromStoresObject)([u.default, d.default], () => {
+                    let e = null != u.default.getAnyStreamForUser(t.id),
+                        n = d.default.findActivity(t.id, t => {
+                            let {
+                                type: n
+                            } = t;
+                            return e ? n === S.ActivityTypes.PLAYING : n !== S.ActivityTypes.CUSTOM_STATUS
+                        });
+                    return {
+                        status: (0, o.default)(n) ? S.StatusTypes.STREAMING : d.default.getStatus(t.id),
+                        isMobileOnline: d.default.isMobileOnline(t.id)
+                    }
+                }), {
+                    avatarDecorationSrc: y,
+                    avatarSrc: P,
+                    eventHandlers: U
+                } = (0, I.default)({
+                    user: t,
+                    guildId: c,
+                    size: m,
+                    animateOnHover: O
+                });
+                return (0, i.jsx)(s.Clickable, {
+                    ...U,
+                    className: A.clickable,
+                    onClick: null == C ? void 0 : () => {
+                        g({
+                            action: "PRESS_VIEW_PROFILE"
+                        }), null == C || C()
+                    },
+                    children: (0, i.jsx)(N, {
+                        src: P,
+                        avatarDecoration: y,
+                        size: m,
+                        "aria-label": t.username,
+                        imageClassName: null != C ? A.overlay : void 0,
+                        status: v ? S.StatusTypes.UNKNOWN : D,
+                        statusBackdropColor: L && !v ? (0, s.getStatusBackdropColor)(R) : void 0,
+                        isMobile: M,
+                        statusTooltip: !0,
+                        statusTooltipDelay: f.USER_PROFILE_TOOLTIP_DELAY
+                    })
+                })
+            }
+        },
         67152: function(e, t, n) {
             "use strict";
             n.r(t), n("47120");
@@ -216161,79 +216249,50 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return T
+                    return c
                 }
             });
             var i = n("735250");
             n("470079");
             var r = n("442837"),
-                a = n("420660"),
-                s = n("199902"),
-                o = n("158776"),
-                l = n("78675"),
-                u = n("438163"),
-                d = n("131640"),
-                _ = n("228168"),
-                c = n("981631"),
-                E = n("231338"),
-                I = n("170022");
+                a = n("158776"),
+                s = n("78675"),
+                o = n("438163"),
+                l = n("513099"),
+                u = n("228168"),
+                d = n("981631"),
+                _ = n("170022");
 
-            function T(e) {
+            function c(e) {
                 let {
                     user: t,
                     displayProfile: n,
-                    disableUserProfileLink: T,
-                    guildId: f,
-                    channelId: S,
-                    onClose: h
-                } = e, {
-                    activity: A,
-                    customStatusActivity: m,
-                    status: N,
-                    isMobile: p
-                } = (0, r.useStateFromStoresObject)([s.default, o.default], () => {
-                    let e = null != s.default.getAnyStreamForUser(t.id);
-                    return {
-                        activity: o.default.findActivity(t.id, t => {
-                            let {
-                                type: n
-                            } = t;
-                            return e ? n === c.ActivityTypes.PLAYING : n !== c.ActivityTypes.CUSTOM_STATUS
-                        }),
-                        customStatusActivity: o.default.findActivity(t.id, e => {
-                            let {
-                                type: t
-                            } = e;
-                            return t === c.ActivityTypes.CUSTOM_STATUS
-                        }),
-                        status: o.default.getStatus(t.id),
-                        isMobile: o.default.isMobileOnline(t.id)
-                    }
-                });
+                    guildId: c,
+                    channelId: E,
+                    onOpenProfile: I
+                } = e, T = (0, r.useStateFromStores)([a.default], () => a.default.findActivity(t.id, e => {
+                    let {
+                        type: t
+                    } = e;
+                    return t === d.ActivityTypes.CUSTOM_STATUS
+                }));
                 return (0, i.jsxs)("header", {
-                    className: I.header,
-                    children: [(0, i.jsx)(l.default, {
+                    className: _.header,
+                    children: [(0, i.jsx)(s.default, {
                         user: t,
                         displayProfile: n,
-                        guildId: f,
-                        profileType: _.UserProfileTypes.BITE_SIZE,
+                        guildId: c,
+                        profileType: u.UserProfileTypes.BITE_SIZE,
                         hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null
-                    }), (0, i.jsx)(d.UserPopoutAvatar, {
+                    }), (0, i.jsx)(l.default, {
                         user: t,
                         displayProfile: n,
-                        status: (0, a.default)(A) ? E.StatusTypes.STREAMING : N,
-                        isMobile: p,
-                        guildId: f,
-                        channelId: S,
-                        onClose: h,
-                        disableUserProfileLink: T,
-                        hasBanner: (null == n ? void 0 : n.banner) != null,
-                        hasProfileEffect: (null == n ? void 0 : n.profileEffectId) != null,
-                        profileType: _.UserProfileTypes.BITE_SIZE,
-                        statusTooltipDelay: _.USER_PROFILE_TOOLTIP_DELAY
-                    }), (0, i.jsx)(u.UserProfileCustomStatusBubble, {
-                        statusActivity: m,
-                        profileType: _.UserProfileTypes.BITE_SIZE
+                        guildId: c,
+                        channelId: E,
+                        onOpenProfile: I
+                    }), (0, i.jsx)(o.UserProfileCustomStatusBubble, {
+                        statusActivity: T,
+                        profileType: u.UserProfileTypes.BITE_SIZE
                     })]
                 })
             }
@@ -216614,8 +216673,7 @@
                                     displayProfile: F,
                                     guildId: n,
                                     channelId: v,
-                                    onClose: y,
-                                    disableUserProfileLink: U
+                                    onOpenProfile: U ? void 0 : Y
                                 }), (0, i.jsx)(p.default, {
                                     user: t,
                                     currentUser: k,
@@ -251148,7 +251206,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3e360b7a14f67ebb9aa6e61df82233fdfcbbee31"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "015b6e56a3a83ee00fdbb8101ab33271d3f40395"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280156,7 +280214,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293100"
+                                build_number: "293107"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287514,7 +287572,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293100", "293100"), 10);
+                let a = parseInt((n = "293107", "293107"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -315136,4 +315194,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.4b738632ac1d5ef9b28f.js.map
+//# sourceMappingURL=35705.747c464cc860814ddb42.js.map
