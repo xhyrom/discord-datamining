@@ -46056,7 +46056,8 @@ img.thumbnail__18ece {
 
 .buttonWithSelect_eaaa35 {
     min-width: 152px;
-    height: auto
+    height: auto;
+    width: auto
 }
 
 .upsellSelect_e29580 {
@@ -46086,16 +46087,16 @@ img.thumbnail__18ece {
 }
 
 .reserveButton_c5765e {
-    background-color: var(--yellow-230);
     box-shadow: var(--shadow-high);
-    border-radius: 8px
+    color: var(--white-500);
+    border-radius: 8px;
+    width: 240px
 }
 
 .browseButton__17d35 {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: var(--interactive-active);
     cursor: pointer;
     height: auto;
     border-radius: 8px
@@ -46323,7 +46324,8 @@ img.thumbnail__18ece {
 }
 
 .adminUpsell_a0161a {
-    position: relative
+    position: relative;
+    box-shadow: var(--elevation-stroke)
 }
 
 .backgroundImageContent__3a238 {
@@ -136838,4 +136840,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f23075810c6588ef624a.css.map*/
+/*# sourceMappingURL=99387.03a180ac5f81647d2c8d.css.map*/
