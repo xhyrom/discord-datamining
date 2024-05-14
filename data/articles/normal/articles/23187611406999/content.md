@@ -37,7 +37,7 @@
 <p>5. You can write the discovery description for your Guild. Focus on why someone should join and what your Guild offers. You can also describe your Guild in 3 words here too. Be creative!</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23478777511319" width="624" height="536"></p>
 <p>6. Create a Guild tag and badge that members will wear all over Discord to rep your Guild. Once you select a badge, you can change the color to either one of the preset color schemes or use the color picker to customize. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23478777518231" width="624" height="536"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23480168916503" width="655" height="562"></p>
 <p>7. Customize your Guild brand even further by selecting a banner color scheme or using the eyedropper tool to pick 2 colors. You can also select the banner style and pick between the following:</p>
 <ul>
     <li>Night Sky</li>
