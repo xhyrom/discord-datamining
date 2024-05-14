@@ -37421,7 +37421,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293255", ", Version Hash: ").concat("73875370d1199dff92b98943cae8c7cea29af9cb")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293274", ", Version Hash: ").concat("ab86d1450a50fda562046eca9f3d9244505b8319")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56356,24 +56356,24 @@
                 CLAN_SETUP_APPLICATION_TITLE: "Last Step! Set up the application.",
                 CLAN_SETUP_APPLICATION_SUBTITLE: "Ask questions to get to know potential members better. You'll review their answers and decide if they are approved to join. You'll also be able to interview applicants to get to know them better.",
                 CLAN_SETUP_GAMES_TITLE: "What games does your Guild play?",
-                CLAN_SETUP_GAMES_SUBTITLE: "You can always edit this later. Console games coming soon!",
+                CLAN_SETUP_GAMES_SUBTITLE: "You can always edit this later. More game options coming soon!",
                 CLAN_SETUP_GAMES_SEARCH_PLACEHOLDER: "Search for a game...",
                 CLAN_SETUP_SELECTED_GAMES: "Selected Games",
                 CLAN_SETUP_PLAYSTYLE_TITLE: "What's your Guild's playstyle?",
-                CLAN_SETUP_PLAYSTYLE_SUBTITLE: "Let potential members know the expectations and vibe in your server. How competitive or skillset based is your Guild?",
+                CLAN_SETUP_PLAYSTYLE_SUBTITLE: "Let potential members know the expectations and vibe in your server. How competitive or chill is your Guild?",
                 CLAN_SETUP_PLAYSTYLE_SOCIAL_SUBTITLE: "Skill doesn't matter. We have a good time win or lose.",
                 CLAN_SETUP_PLAYSTYLE_CASUAL_SUBTITLE: "We play to chill and have fun, but more fun if we win!",
                 CLAN_SETUP_PLAYSTYLE_COMPETITIVE_SUBTITLE: "We play together to win, rank up, or beat challenges.",
                 CLAN_SETUP_PLAYSTYLE_VERY_HARDCORE_SUBTITLE: "We won't sleep until we win.",
-                CLAN_SETUP_UTILITY_TRAITS_TITLE: "Who's welcome in your Guild?",
-                CLAN_SETUP_UTILITY_TRAITS_SUBTITLE: "These traits will help the right people find and apply for your Guild. You can add custom traits in the next step.",
+                CLAN_SETUP_UTILITY_TRAITS_TITLE: "Who would be a good fit for your Guild?",
+                CLAN_SETUP_UTILITY_TRAITS_SUBTITLE: "These traits will help the right people find and apply for your Guild. You can customize more traits in the next step.",
                 CLAN_SETUP_UTILITY_TRAITS_CATEGORY_VALORANT: "Valorant",
-                CLAN_SETUP_UTILITY_TRAITS_CATEGORY_AGE: "Minimum Age Preferred",
+                CLAN_SETUP_UTILITY_TRAITS_CATEGORY_AGE: "Age Demographic",
                 CLAN_SETUP_UTILITY_TRAITS_CATEGORY_IDENTITY: "Traits",
                 CLAN_SETUP_UTILITY_TRAITS_CATEGORY_LANGUAGE: "Language",
                 CLAN_SETUP_UTILITY_TRAITS_CATEGORY_LOCALE: "Region",
                 CLAN_SETUP_INTERESTS_TITLE: "What does your Guild like to talk about?",
-                CLAN_SETUP_INTERESTS_SUBTITLE: "Add at least **3 topics** that your Guild discusses or traits that you share. The more niche, the better, so you can find people with your same weird obsessions!",
+                CLAN_SETUP_INTERESTS_SUBTITLE: "Add at least **3 topics** that your Guild discusses or traits that you share. The more niche, the better!",
                 CLAN_SETUP_INTERESTS_PLACEHOLDER: "Anime, Roman History, Sad Hamsters, etc...",
                 CLAN_SETUP_SELECTED_INTERESTS: "Selected Interests",
                 CLAN_SETUP_SUGGESTED_INTERESTS: "Some Ideas...",
@@ -56381,7 +56381,7 @@
                 CLAN_SETUP_LANGUAGE_PLACEHOLDER: "Add a language...",
                 CLAN_SETUP_DESCRIPTION_TITLE: "Tell potential recruits what your Guild is all about.",
                 CLAN_SETUP_DESCRIPTION_SUBTITLE: "They'll see this as a Guild bio before they apply. What brought you together? What makes your Guild unique? Why should they apply?",
-                CLAN_SETUP_DESCRIPTION_PLACEHOLDER: "We're a women gaming group that's been playing for a few months! We have weekly movie nights and plenty of snacks.",
+                CLAN_SETUP_DESCRIPTION_PLACEHOLDER: "We're a cozy group of friends who've been playing co-op games for a couple years! Looking for like-minded people to join us at our weekly movie nights :D",
                 CLAN_SETUP_CUSTOMIZE_TITLE: "Create a badge and tag for your Guild",
                 CLAN_SETUP_CUSTOMIZE_SUBTITLE: "Guild members will rep these next to their name and on their profiles across Discord.",
                 CLAN_SETUP_CUSTOMIZE_LOOK_TITLE: "Customize your Guild's look",
@@ -56391,7 +56391,7 @@
                 CLAN_SETUP_SIGN_TITLE: "You're almost done!",
                 CLAN_SETUP_SIGN_SUBTITLE: "One last step - sign the charter to become a Guild.",
                 CLAN_SETUP_OPTIONAL: "Optional",
-                CLAN_SETUP_WILDCARDS_SUBTITLE: "Choose 3 words that describe your Guild. Be creative.",
+                CLAN_SETUP_WILDCARDS_SUBTITLE: "Choose 3 words that describe your Guild. Be creative!!",
                 CLAN_SETUP_NUM_TRAITS: "{n, plural, one {1 Trait} other {{n} Traits}}",
                 CLAN_SETUP_GAMES_STEP: "Games",
                 CLAN_SETUP_PLAYSTYLE_STEP: "Playstyle",
@@ -56440,15 +56440,15 @@
                 CLAN_SUBMIT_ERROR_TEXT: "$[**Go back**](backHook) and check error messages for more information.",
                 CLAN_SUBMIT_ERROR_TITLE: "There are errors you need to fix.",
                 CLAN_SUBMIT_ERROR_SUBTITLE: "Please resolve steps marked as error and try again.",
-                CLAN_SUCCESS_TITLE: "is now a Guild!",
-                CLAN_SUCCESS_SUBTITLE: "Before you join the fun, you can choose to represent your guild tag next to your username whenever you chat.",
+                CLAN_SUCCESS_TITLE: "Congratulations, **{name}** is now a Guild!",
+                CLAN_SUCCESS_SUBTITLE: "Get ready to rep your Guild, make new friends, and play some games.",
                 CLAN_SUCCESS_USE_TAG_TEXT: "Wear Guild Tag next to username",
-                CLAN_SUCCESS_USE_TAG_HELP: "You can always edit these settings later.",
+                CLAN_SUCCESS_USE_TAG_HELP: "You can always edit this in Profile settings.",
                 CLAN_SUCCESS_CTA: "Let's Go",
-                CLAN_JOIN_SUCCESS_TITLE: " You are now a member of",
-                CLAN_JOIN_SUCCESS_SUBTITLE: "Welcome to your new guild! Before you join the fun, you can choose to represent your guild tag next to your username whenever you chat.",
+                CLAN_JOIN_SUCCESS_TITLE: "Congratulations, you're an official member of **{name}**!",
+                CLAN_JOIN_SUCCESS_SUBTITLE: "Rep your Guild, make new friends, and play some games. Get in and say hi to your new guildmates.",
                 CLAN_JOIN_SUCCESS_MAIN_CTA: "Let's Go",
-                CLAN_JOIN_SUCCESS_SUBTITLE_MOBILE: "You've been accepted! Come chat with your new guild members.",
+                CLAN_JOIN_SUCCESS_SUBTITLE_MOBILE: "Rep your Guild, make new friends, and play some games. Get in and say hi to your new guildmates.",
                 CLAN_SETTINGS: "Guild Settings",
                 CLAN_SETTINGS_BASIC_INFO: "Basic Info",
                 CLAN_SETTTINGS_SELECT_GAMES: "Select Games",
@@ -56518,7 +56518,7 @@
                 SIGNUP_CLAN_ACKNOWLEDGEMENT_CAP: "Gaming Guilds are capped to 200 members max",
                 SIGNUP_CLAN_ACKNOWLEDGEMENT_APPROVAL: "New members must be approved by you in order to join",
                 SIGNUP_CLAN_OPTION_VERY_CASUAL_TITLE: "Very Casual",
-                SIGNUP_CLAN_OPTION_VERY_CASUAL_DESCRIPTION: "Skill doesn't matter. We have a good time win or lose.",
+                SIGNUP_CLAN_OPTION_VERY_CASUAL_DESCRIPTION: "We always have a good time - win or lose!",
                 SIGNUP_CLAN_OPTION_CASUAL_TITLE: "Casual",
                 SIGNUP_CLAN_OPTION_CASUAL_DESCRIPTION: "We play to chill and have fun, but more fun if we win!",
                 SIGNUP_CLAN_OPTION_HARDCORE_TITLE: "Hardcore",
@@ -56528,10 +56528,9 @@
                 CLAN_DISCOVERY_TOP_PICKS_TITLE: "Top Picks",
                 CLAN_DISCOVERY_OTHER_GUIDES_TITLE: "More Search Results",
                 CLAN_DISCOVERY_OTHER_GUIDES_SUBTITLE: "Other guild guides that match your preferences.",
-                CLAN_DISCOVERY_VALORANT_TITLE: "Valorant Guilds",
-                CLAN_DISCOVERY_GENSHIN_TITLE: "Genshin Guilds",
                 CLAN_DISCOVERY_TOP_PICKS_SUBTITLE: "Best Guilds to join based on your preferences",
-                CLAN_DISCOVERY_PREPILOT_SUBTITLE: "Other Gaming Guilds currently on waitlist for launch",
+                CLAN_DISCOVERY_PREPILOT_SUBTITLE: "Your fellow Guilds waiting to launch!",
+                CLAN_DISCOVERY_STANDBY_TITLE: "Standby Guilds",
                 CLAN_DISCOVERY_GAME_FILTER: "{count, number} Games",
                 CLAN_DISCOVERY_PREFERENCES_FILTER: "Preferences",
                 CLAN_DISCOVERY_PRIMETIME_FILTER: "Prime Time",
@@ -56555,12 +56554,11 @@
                 CLAN_USER_PROFILE_PRIMARY_CLAN: "Primary Guild",
                 CLAN_USER_PROFILE_PRIMARY_CLAN_SUBTITLE: "Choose a Guild tag to rep next to your name across Discord.",
                 CLAN_DISCOVERY_ADMIN_UPSELL_COMPLETE_TITLE: "You're all set!",
-                CLAN_DISCOVERY_ADMIN_UPSELL_COMPLETE_SUBTITLE: "We'll give you a heads up when your server officially becomes open for others to join.",
+                CLAN_DISCOVERY_ADMIN_UPSELL_COMPLETE_SUBTITLE: "Sit tight, this discovery page is only visible to you and your fellow Guild leaders for now. We'll give you a heads up when this Guilds page launches.",
                 CLAN_DISCOVERY_SAVED_FILTER: "{count, number} Saved",
                 CLAN_DISCOVERY_MAX_GAMES_SELECTED: "Only a maximum of three games can be selected at a time.",
                 CLAN_DISCOVERY_UPSELL_CTA_GUILD_INVITE: "You're invited to become a Guild!",
-                CLAN_DISCOVERY_UPSELL_CTA_RECRUIT_VALORANT: "Recruit more Valorant players for your server",
-                CLAN_DISCOVERY_UPSELL_CTA_RECRUIT_GENSHIN: "Recruit more Genshin players for your server",
+                CLAN_DISCOVERY_UPSELL_CTA_RECRUIT: "Recruit more gaming friends for your server",
                 CLAN_DISCOVERY_UPSELL_VIBES_OR_SKILL: "Discover players with similar vibes or skill.",
                 CLAN_DISCOVERY_UPSELL_APPLICATIONS: "Approve new members and keep it exclusive",
                 CLAN_DISCOVERY_UPSELL_MAX_SIZE: "Guilds are max 200 people in size.",
@@ -88635,8 +88633,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293255", "293255"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293255")), t = 0), t
+                let t = parseInt((e = "293274", "293274"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293274")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103748,7 +103746,7 @@
                 M = "762434991303950386",
                 y = ["Server: NA", "Server: EU", "Server: LATAM", "Server: KR", "Server: AP", "Voice ON", "Voice OFF", "Unrated", "All Ranks", "Bronze+", "Silver+", "Gold+", "Platinum+", "Diamond+"],
                 P = ["20+", "30+", "40+", "All Ages"],
-                U = ["Beginner Friendly", "PUGs", "Diverse", "Inclusive", "Parent Friendly", "Work-life Balance", "Streamers"],
+                U = ["Beginner Friendly", "PUGs", "Inclusive", "Parent Friendly", "Work-life Balance", "Streamers"],
                 b = new Set([...y, ...P, ...U]),
                 G = new Set(["Bulgarian", "Chinese (Simplified)", "Chinese (Traditional)", "Croatian", "Czech", "Danish", "Dutch", "English", "Finnish", "French", "German", "Greek", "Hindi", "Hungarian", "Italian", "Japanese", "Korean", "Lithuanian", "Norwegian", "Polish", "Portuguese", "Romanian", "Russian", "Spanish", "Swedish", "Thai", "Turkish", "Ukrainian", "Vietnamese"]),
                 w = new Set(["anime", "fanart", "venting", "movie nights", "pirate shows", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pics", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "horses", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1", "roman history"]);
@@ -116241,8 +116239,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293255",
-                    versionHash: "73875370d1199dff92b98943cae8c7cea29af9cb"
+                    buildNumber: "293274",
+                    versionHash: "ab86d1450a50fda562046eca9f3d9244505b8319"
                 }
             }
             n.r(t), n.d(t, {
@@ -172483,8 +172481,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715716429831",
-                                    build_number: "293255"
+                                    built_at: "1715717843127",
+                                    build_number: "293274"
                                 }
                             },
                             retries: 1
@@ -213593,43 +213591,44 @@
             function c(e) {
                 let {
                     user: t,
-                    guildId: n,
-                    channelId: r,
-                    usernameIcon: c,
-                    tags: E,
-                    nicknameIcons: I,
-                    pronouns: T,
-                    className: f,
-                    onOpenProfile: S,
-                    nicknameVariant: h = "heading-lg/bold",
-                    pronounsVariant: A = "text-sm/medium"
-                } = e, m = e => null == S ? e : (0, i.jsx)(s.Clickable, {
-                    onClick: S,
+                    profileType: n,
+                    guildId: r,
+                    channelId: c,
+                    usernameIcon: E,
+                    tags: I,
+                    nicknameIcons: T,
+                    pronouns: f,
+                    className: S,
+                    onOpenProfile: h,
+                    nicknameVariant: A = "heading-lg/bold",
+                    pronounsVariant: m = "text-sm/medium"
+                } = e, N = e => null == h ? e : (0, i.jsx)(s.Clickable, {
+                    onClick: h,
                     className: _.clickableUsername,
                     children: e
                 });
                 return (0, i.jsxs)("div", {
-                    className: a()(_.container, f),
+                    className: a()(_.container, S),
                     children: [(0, i.jsxs)("div", {
                         className: _.usernameRow,
-                        children: [m((0, i.jsx)(s.Heading, {
-                            className: _.nickname,
-                            variant: h,
-                            children: l.default.getName(n, r, t)
+                        children: [N((0, i.jsx)(s.Heading, {
+                            className: a()(_.nickname, n === u.UserProfileTypes.FULL_SIZE && _.fullSizeNickname),
+                            variant: A,
+                            children: l.default.getName(r, c, t)
                         })), (0, i.jsx)("div", {
                             className: _.nicknameIcons,
-                            children: I
+                            children: T
                         })]
                     }), (0, i.jsxs)("div", {
                         className: _.tags,
-                        children: [m((0, i.jsx)(o.default, {
+                        children: [N((0, i.jsx)(o.default, {
                             user: t,
-                            usernameIcon: c,
+                            usernameIcon: E,
                             forceUsername: !0,
                             className: _.userTag,
                             usernameClass: _.userTagUsername,
                             discriminatorClass: _.userTagDiscriminator
-                        })), null != T && T.length > 0 && (0, i.jsxs)(i.Fragment, {
+                        })), null != f && f.length > 0 && (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)("div", {
                                 "aria-hidden": "true",
                                 className: _.dotSpacer
@@ -213637,13 +213636,13 @@
                                 text: d.default.Messages.USER_PROFILE_PRONOUNS,
                                 delay: u.USER_PROFILE_TOOLTIP_DELAY,
                                 children: (0, i.jsx)(s.Text, {
-                                    variant: A,
+                                    variant: m,
                                     className: _.pronouns,
                                     color: "header-primary",
-                                    children: T
+                                    children: f
                                 })
                             })]
-                        }), E]
+                        }), I]
                     })]
                 })
             }
@@ -216092,7 +216091,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return h
+                    return A
                 }
             });
             var i = n("735250");
@@ -216110,70 +216109,72 @@
                 I = n("67152"),
                 T = n("579285"),
                 f = n("287612"),
-                S = n("153362");
+                S = n("228168"),
+                h = n("153362");
 
-            function h(e) {
+            function A(e) {
                 let {
                     user: t,
                     currentUser: n,
-                    displayProfile: h,
-                    guild: A,
-                    onOpenProfile: m,
-                    channelId: N,
-                    onClose: p
+                    displayProfile: A,
+                    guild: m,
+                    onOpenProfile: N,
+                    channelId: p,
+                    onClose: O
                 } = e, {
-                    moreUserDetailsEnabled: O
+                    moreUserDetailsEnabled: C
                 } = (0, o.useSimplifiedProfileExperiment)({
                     location: "BiteSizeProfileBody"
-                }), C = s.default.getName(null == A ? void 0 : A.id, N, t), R = (0, r.useStateFromStores)([a.default], () => a.default.hidePersonalInformation);
+                }), R = s.default.getName(null == m ? void 0 : m.id, p, t), g = (0, r.useStateFromStores)([a.default], () => a.default.hidePersonalInformation);
                 return (0, i.jsxs)("div", {
-                    className: S.body,
+                    className: h.body,
                     children: [(0, i.jsx)(d.default, {
                         user: t,
-                        onOpenProfile: () => m({
+                        profileType: S.UserProfileTypes.BITE_SIZE,
+                        onOpenProfile: () => N({
                             autoFocusNote: !1
                         }),
-                        guildId: null == A ? void 0 : A.id,
-                        usernameIcon: t.hasAvatarForGuild(null == A ? void 0 : A.id) && (0, i.jsx)(c.default, {
+                        guildId: null == m ? void 0 : m.id,
+                        usernameIcon: t.hasAvatarForGuild(null == m ? void 0 : m.id) && (0, i.jsx)(c.default, {
                             user: t,
-                            nickname: C
+                            nickname: R
                         }),
-                        pronouns: null == h ? void 0 : h.pronouns,
+                        pronouns: null == A ? void 0 : A.pronouns,
                         tags: (0, i.jsx)(_.UserProfileBadgesTag, {
-                            displayProfile: h,
-                            onClose: p
+                            displayProfile: A,
+                            onClose: O
                         }),
                         nicknameIcons: (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)(l.default, {
                                 userId: t.id
-                            }), O && !R && (0, i.jsx)(u.default, {
+                            }), C && !g && (0, i.jsx)(u.default, {
                                 user: t,
-                                onOpenProfile: () => m({
+                                onOpenProfile: () => N({
                                     autoFocusNote: !0
                                 })
                             })]
                         })
                     }), t.id !== n.id && (0, i.jsx)(f.default, {
                         user: t,
-                        onOpenProfile: e => m({
+                        onOpenProfile: e => N({
                             section: e,
                             autoFocusNote: !1
                         })
-                    }), O && (0, i.jsx)(I.default, {
+                    }), C && (0, i.jsx)(I.default, {
                         user: t,
-                        bio: null == h ? void 0 : h.bio,
-                        hidePersonalInformation: R,
-                        onClose: p
+                        bio: null == A ? void 0 : A.bio,
+                        hidePersonalInformation: g,
+                        onClose: O
                     }), (0, i.jsx)(E.default, {
                         user: t,
-                        guild: A,
-                        channelId: N,
-                        onClose: p
-                    }), null != A && (0, i.jsx)(T.default, {
+                        guild: m,
+                        channelId: p,
+                        onClose: O
+                    }), null != m && (0, i.jsx)(T.default, {
                         user: t,
                         currentUser: n,
-                        guild: A,
-                        onOpenProfile: () => m({
+                        guild: m,
+                        onOpenProfile: () => N({
                             autoFocusNote: !1
                         })
                     })]
@@ -216184,89 +216185,94 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return m
+                    return p
                 }
             }), n("411104"), n("47120");
             var i = n("735250"),
                 r = n("470079"),
-                a = n("442837"),
-                s = n("493683"),
-                o = n("904245"),
-                l = n("906732"),
-                u = n("541716"),
-                d = n("752305"),
-                _ = n("893718"),
-                c = n("957730"),
+                a = n("493683"),
+                s = n("904245"),
+                o = n("906732"),
+                l = n("541716"),
+                u = n("752305"),
+                d = n("893718"),
+                _ = n("957730"),
+                c = n("131704"),
                 E = n("592125"),
                 I = n("5192"),
                 T = n("838440"),
                 f = n("785717"),
-                S = n("689938"),
-                h = n("112147");
-            let A = async e => {
-                let {
-                    userId: t,
-                    content: n,
-                    location: i
-                } = e, {
-                    valid: r,
-                    failureReason: a
-                } = await (0, T.applyChatRestrictions)({
-                    type: u.ChatInputTypes.NORMAL,
-                    content: n,
-                    channel: null
-                });
-                if (!r) throw Error(a);
-                let l = await s.default.openPrivateChannel(t, !1, !1, i),
-                    d = E.default.getChannel(l);
-                if (null == d) throw Error("Failed to open private channel");
-                let _ = c.default.parse(d, n);
-                return o.default.sendMessage(d.id, _)
-            };
+                S = n("981631"),
+                h = n("689938"),
+                A = n("112147");
+            let m = (0, c.createChannelRecord)({
+                    id: "1",
+                    type: S.ChannelTypes.DM
+                }),
+                N = async e => {
+                    let {
+                        userId: t,
+                        content: n,
+                        location: i
+                    } = e, {
+                        valid: r,
+                        failureReason: o
+                    } = await (0, T.applyChatRestrictions)({
+                        type: l.ChatInputTypes.NORMAL,
+                        content: n,
+                        channel: null
+                    });
+                    if (!r) throw Error(o);
+                    let u = await a.default.openPrivateChannel(t, !1, !1, i),
+                        d = E.default.getChannel(u);
+                    if (null == d) throw Error("Failed to open private channel");
+                    let c = _.default.parse(d, n);
+                    return s.default.sendMessage(d.id, c)
+                };
 
-            function m(e) {
+            function p(e) {
                 let {
                     user: t,
                     guildId: n,
-                    channelId: s,
-                    onClose: o
+                    channelId: a,
+                    onClose: s
                 } = e, {
-                    newestAnalyticsLocation: c
-                } = (0, l.default)(), {
-                    trackUserProfileAction: T
-                } = (0, f.useUserProfileAnalyticsContext)(), m = (0, a.useStateFromStores)([E.default], () => E.default.getChannel(s)), [N, p] = r.useState(""), [O, C] = r.useState((0, d.toRichValue)(N)), R = r.useRef(!1);
-                return null == m ? null : (0, i.jsx)(_.default, {
-                    innerClassName: h.inner,
-                    editorClassName: h.editor,
-                    type: u.ChatInputTypes.USER_PROFILE,
-                    placeholder: S.default.Messages.QUICK_DM_USER.format({
-                        name: I.default.getName(n, s, t)
+                    newestAnalyticsLocation: _
+                } = (0, o.default)(), {
+                    trackUserProfileAction: c
+                } = (0, f.useUserProfileAnalyticsContext)(), [E, T] = r.useState(""), [S, p] = r.useState((0, u.toRichValue)(E)), O = r.useRef(!1);
+                return (0, i.jsx)(d.default, {
+                    innerClassName: A.inner,
+                    editorClassName: A.editor,
+                    type: l.ChatInputTypes.USER_PROFILE,
+                    placeholder: h.default.Messages.QUICK_DM_USER.format({
+                        name: I.default.getName(n, a, t)
                     }),
                     channel: m,
-                    textValue: N,
-                    richValue: O,
+                    textValue: E,
+                    richValue: S,
                     onChange: (e, t, n) => {
-                        t !== N && (p(t), C(n))
+                        t !== E && (T(t), p(n))
                     },
-                    focused: R.current,
+                    focused: O.current,
                     onFocus: () => {
-                        R.current = !0
+                        O.current = !0
                     },
                     onBlur: () => {
-                        R.current = !1
+                        O.current = !1
                     },
                     onSubmit: async e => {
                         let {
                             value: n
                         } = e;
                         try {
-                            return T({
+                            return c({
                                 action: "SEND_DIRECT_MESSAGE"
-                            }), await A({
+                            }), await N({
                                 userId: t.id,
                                 content: n.trim(),
-                                location: c
-                            }), null == o || o(), {
+                                location: _
+                            }), null == s || s(), {
                                 shouldClear: !0,
                                 shouldRefocus: !1
                             }
@@ -251277,7 +251283,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "73875370d1199dff92b98943cae8c7cea29af9cb"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ab86d1450a50fda562046eca9f3d9244505b8319"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280285,7 +280291,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293255"
+                                build_number: "293274"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287643,7 +287649,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293255", "293255"), 10);
+                let a = parseInt((n = "293274", "293274"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -315303,4 +315309,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.6d5eada24c64afe2ef77.js.map
+//# sourceMappingURL=35705.d8b1a9e2cd77c96f5164.js.map
