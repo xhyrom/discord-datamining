@@ -1,0 +1,29 @@
+{
+  "id": 23187611406999,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/23187611406999.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/23187611406999-Guilds-FAQ",
+  "author_id": 2921470028,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 115000457731,
+  "created_at": "2024-05-01T17:10:08Z",
+  "name": "Guilds FAQ",
+  "title": "Guilds FAQ",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2024-05-14T17:37:25Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "guilds",
+    "guild",
+    "join guilds",
+    "create guilds"
+  ]
+}

@@ -4,6 +4,7 @@
     <li>
         <a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests</a>
         <ul>
+            <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HXSYAWEMHMCTSD1HCX0RBPES">PUBG: BATTLEGROUNDS Erangel Classic Quest</a></li>
             <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#docs-internal-guid-e62232d5-7fff-b513-9744-35d424566193">Honkai: Star Rail </a></li>
             <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#docs-internal-guid-4952a335-7fff-8091-7e1e-cd54a0ef17db">Genshin Impact</a></li>
             <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5FKTMK7STY97AE7YHC">THE FINALS</a></li>
@@ -22,6 +23,8 @@
     <li><a href="https://support.discord.com/hc/en-us/articles/22225719947543#h_01HVPBZR5FBM7QBFR9KDBASXP5">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01HVPBZR5E0CYD1A3MZ59RH71S">Active Discord Quests </h1>
+<h2 id="h_01HXSYAWEMHMCTSD1HCX0RBPES"><a href="https://support.discord.com/hc/en-us/articles/23351867829527/" target="_blank" rel="noopener noreferrer">PUBG: BATTLEGROUNDS Erangel Classic Quest</a></h2>
+<p>The <strong>OG is Back Pack </strong>Quest can be accepted on Discord from <strong>May 14, 2024</strong> until <strong>May 28, 2024 (5:00PM PT)</strong>. Quest requirements must be completed during this period to receive the reward. Reward gift codes expire <strong>August 11, 2024</strong>.</p>
 <h2 id="docs-internal-guid-e62232d5-7fff-b513-9744-35d424566193"><a href="https://support.discord.com/hc/articles/23165034438295" target="_blank" rel="noopener noreferrer">Honkai: Star Rail - V2.2 Quest</a></h2>
 <p>The <strong>V2.2 Quest</strong> can be accepted on Discord from <strong>May 8, 2024</strong> until <strong>May 21, 2024 (11:59pm UTC)</strong>. Quest requirements must be completed during this period to receive the reward. Reward gift codes expire <strong>June 6, 2024 (4:00pm UTC)</strong>.</p>
 <h2 id="docs-internal-guid-4952a335-7fff-8091-7e1e-cd54a0ef17db"><a href="https://support.discord.com/hc/articles/22908324765591" target="_blank" rel="noopener noreferrer">Genshin Impact - V4.6 Quest</a></h2>
@@ -101,3 +104,6 @@
 <p>A: Quests are typically only available for a limited amount of time. If you no longer see a Quest in the <strong>Gift Inventory</strong> or in-app notifications about the quest, the period to complete and claim the reward for the Quest is over.</p>
 <p id="docs-internal-guid-71d96506-7fff-8afb-2bbe-3b99192e8c49"><strong>Q: I have completed previous Quests. Why don’t I see the Discord Quests Badge in my profile?</strong></p>
 <p id="docs-internal-guid-158454ad-7fff-deb0-aba1-5d26c202523c">A: If you have completed a Quest before <strong>April 24, 2024</strong>, the Discord Quests Badge will not appear in your profile. However, if you complete a Quest the Discord Quest after <strong>April 24, 2024 </strong>the Quests badge will be added to your profile. For more information about profile badges, visit our <a href="https://support.discord.com/hc/articles/360035962891" target="_blank" rel="noopener noreferrer">Profile Badges 101 Help Center article</a>. </p>
+<div id="gtx-trans" style="position: absolute; left: 45px; top: 101.797px;">
+    <div class="gtx-trans-icon"> </div>
+</div>
