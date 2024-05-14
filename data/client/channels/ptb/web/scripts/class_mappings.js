@@ -22797,6 +22797,14 @@
                 progressBar: "progressBar__3fee8"
             }
         },
+        977524: function(e) {
+            "use strict";
+            e.exports = {
+                background: "background_ff581d",
+                confetti: "confetti__98722",
+                wrapper: "wrapper_a1297f"
+            }
+        },
         481900: function(e) {
             "use strict";
             e.exports = {
