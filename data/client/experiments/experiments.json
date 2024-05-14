@@ -10679,15 +10679,17 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: With the new tooltip and without the activity empty state",
-        "Treatment 2: With the new tooltip and activity empty state"
+        "Treatment 1: Show new tooltip focusing on WHAT, no empty state",
+        "Treatment 2: Show new tooltip focusing on WHAT, with empty state",
+        "Treatment 3: Show new tooltip focusing on WHO, no empty state"
       ],
       "hash": 2438939149,
       "buckets": [
         -1,
         0,
         1,
-        2
+        2,
+        3
       ],
       "holdout": {},
       "aa_mode": false,
