@@ -54569,7 +54569,7 @@ div:has(>div>.modal__06f49) {
 }
 
 .container__97762 {
-    background-color: var(--brand-500);
+    background: linear-gradient(180deg, #894c7c, #4b1840);
     display: flex;
     align-items: center;
     align-content: center;
@@ -54644,7 +54644,7 @@ div:has(>div>.modal__06f49) {
     top: 100%;
     left: 50%;
     margin-left: -10px;
-    border-top-color: var(--brand-500)
+    border-top-color: #4b1840
 }
 
 .container_ebee1d {
@@ -58853,6 +58853,36 @@ div:has(>div>.modal__06f49) {
 
 .content__4f323 {
     overflow: hidden
+}
+
+.wrapper_a1297f {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 8px 8px 0 0;
+    pointer-events: none
+}
+
+.background_ff581d {
+    position: absolute;
+    border-radius: 8px 8px 0 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, rgba(45, 199, 113, 5%)0%, rgba(45, 199, 113, .1)100%)
+}
+
+.confetti__98722 {
+    position: absolute;
+    border-radius: 8px 8px 0 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0
 }
 
 .outer__69f24 {
@@ -137339,4 +137369,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ed3fa71be402dd6d7d08.css.map*/
+/*# sourceMappingURL=99387.569424697065256089a9.css.map*/
