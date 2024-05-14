@@ -15783,6 +15783,7 @@
                 footer: "footer_eacf42",
                 genshinBackgroundImage: "genshinBackgroundImage__67141 backgroundImage__6b7c7",
                 gradient: "gradient__091fa",
+                gradientHidden: "gradientHidden__0cdc2",
                 popoutAnchor: "popoutAnchor__4e269",
                 popoutCaret: "popoutCaret_ca2beb",
                 popoutContainer: "popoutContainer_dd3678",
