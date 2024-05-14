@@ -53053,17 +53053,17 @@ div:has(>div>.modal__06f49) {
 @value guildsBarWidth 72px;
 @value popoutWidth 256px;
 
-.container__1ac7e {
+.container_ab66cd {
     display: flex;
     flex-direction: column
 }
 
-.popoutAnchor_dd74d9 {
+.popoutAnchor__4e269 {
     width: 48px;
     align-self: center
 }
 
-.popoutContainer_f91849 {
+.popoutContainer_dd3678 {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -53073,7 +53073,7 @@ div:has(>div>.modal__06f49) {
     width: 256px
 }
 
-.popoutCaret__22ffc {
+.popoutCaret_ca2beb {
     position: absolute;
     transform: rotate(45deg);
     height: 0;
@@ -53085,7 +53085,7 @@ div:has(>div>.modal__06f49) {
     z-index: 1
 }
 
-.footer_b74401 {
+.footer_eacf42 {
     width: 72px;
     padding-bottom: 4px;
     padding-top: 8px;
@@ -53093,7 +53093,7 @@ div:has(>div>.modal__06f49) {
     background: var(--bg-overlay-app-frame, var(--background-tertiary))
 }
 
-.gradient_b29dbd {
+.gradient__091fa {
     height: 24px;
     position: absolute;
     top: -24px;
@@ -53104,7 +53104,7 @@ div:has(>div>.modal__06f49) {
     background: var(--bg-overlay-app-frame, var(--background-tertiary))
 }
 
-.backgroundImage__65618 {
+.backgroundImage__6b7c7 {
     flex: 0 0 144px;
     width: 256px;
     background-position: top;
@@ -53115,22 +53115,22 @@ div:has(>div>.modal__06f49) {
     overflow: hidden
 }
 
-.genshinBackgroundImage_b8f439 {
+.genshinBackgroundImage__67141 {
     background-image: url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Genshin_Background.png)
 }
 
-.valorantBackgroundImage__3ad7b {
+.valorantBackgroundImage_eb06a5 {
     background-image: url(https://cdn.discordapp.com/assets/clans/DiscoveryUpsell_Valorant_Background.png)
 }
 
-.popoutContent__3554c {
+.popoutContent_a7c733 {
     width: 256px;
     box-sizing: border-box;
     padding: 16px;
     z-index: 2
 }
 
-.close__298e6 {
+.close__8441b {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -137075,4 +137075,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ab8a9a4a9dfa65289811.css.map*/
+/*# sourceMappingURL=99387.e9d3ece61a6b019d3749.css.map*/
