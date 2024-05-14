@@ -37421,7 +37421,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293206", ", Version Hash: ").concat("81e93d32f4f07dd1d21cb66d486a8ca8b3742941")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293212", ", Version Hash: ").concat("237cff87d2ba64fa9ee28274ad3fe2b9e51e393d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88635,8 +88635,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293206", "293206"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293206")), t = 0), t
+                let t = parseInt((e = "293212", "293212"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293212")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116232,8 +116232,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293206",
-                    versionHash: "81e93d32f4f07dd1d21cb66d486a8ca8b3742941"
+                    buildNumber: "293212",
+                    versionHash: "237cff87d2ba64fa9ee28274ad3fe2b9e51e393d"
                 }
             }
             n.r(t), n.d(t, {
@@ -134621,13 +134621,27 @@
                 return null == i && (i = (0, E.supportsZstd)() && (0, E.getFastConnectZstd)()), i
             }
 
-            function p(e) {
+            function p() {
+                if (h) {
+                    S.info("Ignoring zstd experiment config because we fell back to zlib");
+                    return
+                }
+                let e = T.getCurrentConfig({
+                        location: "GatewayZstdStore"
+                    }),
+                    t = e.useZstd;
+                e.doVerification && (t = f.getCurrentConfig({
+                    location: "GatewayZstdStore"
+                }).useZstd), O(t), A = 0
+            }
+
+            function O(e) {
                 if (e && !(0, E.supportsZstd)()) {
                     S.warn("Attempting to enable zstd but it is not supported");
                     return
                 }(0, E.setFastConnectZstd)(e), e !== i && S.info("Setting Zstd to ".concat(e)), i = e
             }
-            class O extends(o = u.default.Store) {
+            class C extends(o = u.default.Store) {
                 initialize() {
                     this.waitFor(c.default)
                 }
@@ -134641,31 +134655,20 @@
                     m = !1
                 }
             }
-            s = "GatewayZstdStore", (a = "displayName") in(r = O) ? Object.defineProperty(r, a, {
+            s = "GatewayZstdStore", (a = "displayName") in(r = C) ? Object.defineProperty(r, a, {
                 value: s,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : r[a] = s, t.default = new O(d.default, {
-                CONNECTION_OPEN: function() {
-                    if (h) {
-                        S.info("Ignoring zstd experiment config because we fell back to zlib");
-                        return
-                    }
-                    let e = T.getCurrentConfig({
-                            location: "GatewayZstdStore"
-                        }),
-                        t = e.useZstd;
-                    e.doVerification && (t = f.getCurrentConfig({
-                        location: "GatewayZstdStore"
-                    }).useZstd), p(t), A = 0
-                },
+            }) : r[a] = s, t.default = new C(d.default, {
+                CONNECTION_OPEN: p,
                 CONNECTION_INTERRUPTED: function(e) {
                     let {
                         code: t
                     } = e;
-                    N() && m && 1e3 !== t && (A += 1) > 3 && (S.error("Disabling zstd due to consecutive errors"), p(!1), h = !0)
-                }
+                    N() && m && 1e3 !== t && (A += 1) > 3 && (S.error("Disabling zstd due to consecutive errors"), O(!1), h = !0)
+                },
+                CONNECTION_RESUMED: p
             })
         },
         988348: function(e, t, n) {
@@ -134705,7 +134708,7 @@
             }
 
             function l(e) {
-                e ? i.Storage.set("zstd_fast_connect", "true") : i.Storage.remove("zstd_fast_connect")
+                e ? i.Storage.set("zstd_fast_connect", "true") : i.Storage.set("zstd_fast_connect", "false")
             }
 
             function u() {
@@ -172470,8 +172473,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715712490950",
-                                    build_number: "293206"
+                                    built_at: "1715712940590",
+                                    build_number: "293212"
                                 }
                             },
                             retries: 1
@@ -251264,7 +251267,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "81e93d32f4f07dd1d21cb66d486a8ca8b3742941"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "237cff87d2ba64fa9ee28274ad3fe2b9e51e393d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280272,7 +280275,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293206"
+                                build_number: "293212"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -287630,7 +287633,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293206", "293206"), 10);
+                let a = parseInt((n = "293212", "293212"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -315290,4 +315293,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.d3eeaafbb1c27c2f80ba.js.map
+//# sourceMappingURL=35705.cac8f2802b74d78f7828.js.map
