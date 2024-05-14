@@ -50481,8 +50481,8 @@ div:has(>div>.modal__06f49) {
 }
 
 .name__4eb92 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -135015,6 +135015,7 @@ div.nagbar_c731ff {
     --scrollbar-thin-track: hsl(var(--black-500-hsl) / 0);
     --spoiler-hidden-background: var(--primary-700);
     --spoiler-revealed-background: var(--primary-660);
+    --stage-card-pill-bg: var(--primary-630);
     --status-danger: var(--red-400);
     --status-danger-background: var(--red-430);
     --status-danger-text: var(--white-500);
@@ -135337,6 +135338,7 @@ div.nagbar_c731ff {
     --scrollbar-thin-track: hsl(var(--black-500-hsl) / 0);
     --spoiler-hidden-background: var(--primary-200);
     --spoiler-revealed-background: var(--primary-160);
+    --stage-card-pill-bg: var(--white-500);
     --status-danger: var(--red-430);
     --status-danger-background: var(--red-430);
     --status-danger-text: var(--white-500);
@@ -135659,6 +135661,7 @@ div.nagbar_c731ff {
     --scrollbar-thin-track: hsl(var(--black-500-hsl) / 0);
     --spoiler-hidden-background: var(--plum-14);
     --spoiler-revealed-background: hsl(var(--plum-11-hsl) / 0.16);
+    --stage-card-pill-bg: var(--plum-25);
     --status-danger: var(--red-400);
     --status-danger-background: var(--red-430);
     --status-danger-text: var(--white-500);
@@ -135981,6 +135984,7 @@ div.nagbar_c731ff {
     --scrollbar-thin-track: hsl(var(--black-500-hsl) / 0);
     --spoiler-hidden-background: var(--plum-14);
     --spoiler-revealed-background: hsl(var(--plum-11-hsl) / 0.16);
+    --stage-card-pill-bg: var(--plum-19);
     --status-danger: var(--red-400);
     --status-danger-background: var(--red-430);
     --status-danger-text: var(--white-500);
@@ -137376,4 +137380,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c314d3aaa288e2624395.css.map*/
+/*# sourceMappingURL=99387.65c7c22a67d4cb366800.css.map*/
