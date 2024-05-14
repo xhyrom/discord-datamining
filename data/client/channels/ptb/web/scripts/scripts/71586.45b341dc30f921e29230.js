@@ -37465,7 +37465,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293433", ", Version Hash: ").concat("92af39065db09fb007f11991cabac74318d43cbe")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293440", ", Version Hash: ").concat("46c583bfd1e40ec0f41302ebd37dd07c14dbb8a1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88675,8 +88675,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293433", "293433"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293433")), t = 0), t
+                let t = parseInt((e = "293440", "293440"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293440")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117237,8 +117237,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293433",
-                    versionHash: "92af39065db09fb007f11991cabac74318d43cbe"
+                    buildNumber: "293440",
+                    versionHash: "46c583bfd1e40ec0f41302ebd37dd07c14dbb8a1"
                 }
             }
             n.r(t), n.d(t, {
@@ -173695,8 +173695,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715728204842",
-                                    build_number: "293433"
+                                    built_at: "1715728757895",
+                                    build_number: "293440"
                                 }
                             },
                             retries: 1
@@ -189540,7 +189540,7 @@
         },
         696906: function(e, t, n) {
             "use strict";
-            n.r(t);
+            n.r(t), n("789020");
             var i = n("735250"),
                 r = n("470079"),
                 a = n("512722"),
@@ -189553,86 +189553,90 @@
                 c = n("724870"),
                 E = n("594174"),
                 I = n("509545"),
-                T = n("270144"),
-                f = n("171246"),
-                S = n("689011"),
-                h = n("714441"),
-                A = n("981631"),
-                m = n("689938");
+                T = n("55563"),
+                f = n("551428"),
+                S = n("630388"),
+                h = n("270144"),
+                A = n("171246"),
+                m = n("689011"),
+                N = n("714441"),
+                p = n("981631"),
+                O = n("689938");
             t.default = e => {
                 var t;
                 let n, {
-                        listing: a,
-                        guildId: N,
-                        groupListingId: p,
-                        analyticsLocation: O,
-                        showBenefitsFirst: C,
-                        onComplete: R,
-                        forcesTransitionToGuild: g
+                        guildId: a,
+                        groupListingId: C,
+                        analyticsLocation: R,
+                        showBenefitsFirst: g,
+                        skuId: L,
+                        onComplete: v,
+                        forcesTransitionToGuild: D
                     } = e,
-                    L = null == a ? void 0 : a.subscription_plans[0],
-                    v = null == a ? void 0 : a.application_id,
-                    D = null == L ? void 0 : L.id,
-                    M = (null == a ? void 0 : a.published) === !0,
-                    y = null == L ? void 0 : L.sku_id,
-                    P = (0, o.useStateFromStores)([I.default], () => null != D ? I.default.get(D) : null),
-                    U = (0, T.useApplication)(v),
-                    b = (0, T.useSubscriptionListingsForGroup)(p, {
+                    M = (0, o.useStateFromStores)([T.default], () => null != L ? T.default.get(L) : void 0, [L]),
+                    y = (0, o.useStateFromStores)([f.default], () => null != L ? f.default.getForSKU(L) : void 0, [L]),
+                    P = (0, o.useStateFromStores)([I.default], () => null != L ? I.default.getForSKU(L) : void 0, [L]),
+                    U = null != P ? P[0] : void 0,
+                    b = null == M ? void 0 : M.applicationId,
+                    G = (null == y ? void 0 : y.published) === !0 && null != M && (0, S.hasFlag)(M.flags, p.SKUFlags.AVAILABLE),
+                    w = null == U ? void 0 : U.skuId,
+                    B = (0, h.useApplication)(b),
+                    k = (0, h.useSubscriptionListingsForGroup)(C, {
                         includeSoftDeleted: !0
                     }).map(e => e.subscription_plans[0].id),
                     {
-                        analyticsLocations: G
+                        analyticsLocations: V
                     } = (0, d.default)(),
                     {
-                        activeSubscription: w,
-                        activeEntitlement: B
-                    } = (0, T.useActiveSubscriptionListingForApplication)(v, N),
-                    k = (0, T.useEligibleApplicationSubscriptionGuilds)(v, N),
-                    V = (0, _.default)(),
-                    x = null != a && (0, f.isApplicationUserSubscription)(a.sku_flags),
-                    F = null != B && B.userId === (null === (t = E.default.getCurrentUser()) || void 0 === t ? void 0 : t.id),
-                    H = null == B || F,
-                    Y = null == B || b.length > 1,
-                    j = null != N || k.length > 0,
-                    W = x && F,
-                    K = null != P && null != U && H && Y && (j || x) && !W;
-                return H ? j ? W && null != P && (n = m.default.Messages.APPLICATION_USER_SUBSCRIPTION_ALREADY_SUBSCRIBED.format({
-                    tierName: P.name
-                })) : n = m.default.Messages.APPLICATION_SUBSCRIPTION_NO_GUILD_AVAILABLE : n = m.default.Messages.APPLICATION_SUBSCRIPTIONS_CANNOT_MANAGE_SUBSCRIPTION, r.useEffect(() => {
-                    M && null != y && V && !(I.default.isFetchingForSKU(y) || I.default.isLoadedForSKU(y)) && l.default.wait(() => {
-                        (0, u.fetchSubscriptionPlansForSKU)(y)
+                        activeSubscription: x,
+                        activeEntitlement: F
+                    } = (0, h.useActiveSubscriptionListingForApplication)(b, a),
+                    H = (0, h.useEligibleApplicationSubscriptionGuilds)(b, a),
+                    Y = (0, _.default)(),
+                    j = null != M && (0, A.isApplicationUserSubscription)(M.flags),
+                    W = null != F && F.userId === (null === (t = E.default.getCurrentUser()) || void 0 === t ? void 0 : t.id),
+                    K = null == F || W,
+                    z = null == F || k.length > 1,
+                    Z = null != a || H.length > 0,
+                    X = j && W,
+                    Q = null != U && null != B && K && z && (Z || j) && !X;
+                return K ? Z ? X && null != U && (n = O.default.Messages.APPLICATION_USER_SUBSCRIPTION_ALREADY_SUBSCRIBED.format({
+                    tierName: U.name
+                })) : n = O.default.Messages.APPLICATION_SUBSCRIPTION_NO_GUILD_AVAILABLE : n = O.default.Messages.APPLICATION_SUBSCRIPTIONS_CANNOT_MANAGE_SUBSCRIPTION, r.useEffect(() => {
+                    G && null != w && Y && !(I.default.isFetchingForSKU(w) || I.default.isLoadedForSKU(w)) && l.default.wait(() => {
+                        (0, u.fetchSubscriptionPlansForSKU)(w)
                     })
-                }, [M, y, V]), {
+                }, [G, w, Y]), {
                     openModal: r.useCallback(() => {
-                        s()(null != U, "No application"), s()(null != L, "No subscription plan"), s()(M, "Cannot purchase this unpublished plan");
+                        s()(null != B, "No application"), s()(null != U, "No subscription plan"), s()(G, "Cannot purchase this unpublished plan");
                         let e = () => {
                             (0, c.openApplicationPaymentModal)({
-                                activeSubscription: w,
-                                analyticsSubscriptionType: A.SubscriptionTypes.APPLICATION,
-                                analyticsLocations: G,
-                                analyticsLocation: O,
-                                renderHeader: (e, t, n) => (0, i.jsx)(S.PurchaseHeader, {
+                                activeSubscription: x,
+                                analyticsSubscriptionType: p.SubscriptionTypes.APPLICATION,
+                                analyticsLocations: V,
+                                analyticsLocation: R,
+                                renderHeader: (e, t, n) => (0, i.jsx)(m.PurchaseHeader, {
                                     step: n,
                                     onClose: () => t(!1)
                                 }),
-                                initialPlanId: L.id,
-                                skuId: L.sku_id,
-                                guildId: N,
-                                eligibleApplicationSubscriptionGuilds: k,
-                                planGroup: b,
-                                applicationId: U.id,
-                                showBenefitsFirst: C,
-                                onComplete: R,
-                                forcesTransitionToGuild: g
+                                initialPlanId: U.id,
+                                skuId: U.skuId,
+                                guildId: a,
+                                eligibleApplicationSubscriptionGuilds: H,
+                                planGroup: k,
+                                applicationId: B.id,
+                                showBenefitsFirst: g,
+                                onComplete: v,
+                                forcesTransitionToGuild: D
                             })
                         };
-                        !j && x ? (0, h.confirmNoSharedServerSubscribeWarningModal)({
-                            applicationName: U.name,
+                        !Z && j ? (0, N.confirmNoSharedServerSubscribeWarningModal)({
+                            applicationName: B.name,
                             onConfirm: e,
                             onCancel: () => {}
                         }) : e()
-                    }, [M, L, b, U, N, j, x, G, O, w, C, k, R, g]),
-                    canOpenModal: K,
+                    }, [G, U, k, B, a, Z, j, V, R, x, g, H, v, D]),
+                    canOpenModal: Q,
                     cannotOpenReason: n
                 }
             }
@@ -218323,11 +218327,11 @@
                 }), s = null != a ? (0, l.getPayableSubscriptionListing)(a) : null, {
                     openModal: o
                 } = (0, _.default)({
-                    listing: s,
                     guildId: n,
                     groupListingId: null == a ? void 0 : a.id,
                     showBenefitsFirst: !0,
-                    analyticsLocation: h.AnalyticsLocations.BOT_PROFILE_POPOUT
+                    analyticsLocation: h.AnalyticsLocations.BOT_PROFILE_POPOUT,
+                    skuId: null == s ? void 0 : s.id
                 });
                 return r && null != s ? (0, i.jsx)(u.default, {
                     onClick: o,
@@ -252579,7 +252583,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "92af39065db09fb007f11991cabac74318d43cbe"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "46c583bfd1e40ec0f41302ebd37dd07c14dbb8a1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281587,7 +281591,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293433"
+                                build_number: "293440"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288945,7 +288949,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293433", "293433"), 10);
+                let a = parseInt((n = "293440", "293440"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -316609,4 +316613,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.2a140b631e6062350f65.js.map
+//# sourceMappingURL=71586.45b341dc30f921e29230.js.map
