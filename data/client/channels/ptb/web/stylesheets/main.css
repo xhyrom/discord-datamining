@@ -12171,11 +12171,160 @@ span.clanTag_f4aadc {
     margin-bottom: 64px
 }
 
+.groupContainer__39e48 {
+    position: relative;
+    left: -37px;
+    top: -37px
+}
+
+.avatarContainer_aea862 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 38px;
+    height: 38px;
+    margin-top: 18px;
+    margin-left: 18px
+}
+
+.avatar__93ab6 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    border-radius: 16px
+}
+
+.avatarWrapper__860da {
+    display: flex;
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    background-color: var(--background-primary)
+}
+
+.overflowCount__630c2 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    border-radius: 16px;
+    background-color: var(--background-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.container__0998c {
+    padding: 8px;
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--radius-sm);
+    display: flex;
+    gap: 8px;
+    min-width: 280px
+}
+
+.image__75373 {
+    width: 64px;
+    height: 64px;
+    border-radius: var(--radius-sm);
+    background-color: var(--background-primary);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.content_c9b545 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.pill__2f6a4 {
+    display: flex;
+    gap: 2px;
+    padding: 4px 8px;
+    background-color: var(--background-tertiary);
+    border-radius: var(--radius-md);
+    align-self: baseline;
+    align-items: center
+}
+
+.pillIcon__62bae {
+    width: 12px;
+    height: 12px;
+    color: var(--icon-muted)
+}
+
+.categoryIcon__79c68 {
+    width: 14px;
+    height: 14px;
+    color: var(--icon-muted)
+}
+
+.actions_f9b6b2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-grow: 1
+}
+
+.singleLineTitle_f21580 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden
+}
+
+.multiLineTitle__68afa {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden
+}
+
+.streamContainer_a26d75 {
+    display: block
+}
+
+.streamPreview__38008 {
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: var(--radius-sm)
+}
+
+.liveBadge__4290f {
+    position: relative;
+    bottom: 16px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: -moz-fit-content;
+    width: fit-content;
+    border: 2px solid var(--background-secondary-alt);
+    height: 20px;
+    border-radius: var(--radius-xl)
+}
+
+.groupAvatar__4cf21 {
+    background: linear-gradient(45deg, var(--premium-perk-green), var(--premium-perk-purple)), linear-gradient(180deg, var(--premium-perk-orange), var(--premium-perk-pink))
+}
+
+.gameIcon__4a06f {
+    width: 64px;
+    height: 64px
+}
+
 .container_a88e31 {
     background-color: var(--background-floating);
     padding: 8px;
     border-radius: var(--radius-xs);
-    max-width: 312px
+    max-width: 312px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column
 }
 
 .header__3a32b {
@@ -12211,7 +12360,6 @@ span.clanTag_f4aadc {
     background-color: var(--background-secondary-alt);
     border-radius: var(--radius-sm);
     padding: 10px;
-    margin-top: 8px;
     width: 286px;
     height: 18px;
     cursor: pointer
@@ -12234,7 +12382,6 @@ span.clanTag_f4aadc {
     background-color: var(--background-secondary-alt);
     border-radius: var(--radius-sm);
     padding: 10px;
-    margin-top: 8px;
     width: 286px;
     height: 60px;
     cursor: pointer
@@ -92044,6 +92191,11 @@ input::-webkit-inner-spin-button {
     color: var(--channels-default)
 }
 
+.overflowTooltip__6cbcb {
+    width: auto;
+    max-width: 500px
+}
+
 .interactiveSelected__689f0 {
     color: var(--interactive-active)
 }
@@ -136897,4 +137049,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.49ab7b12ce00c63e3615.css.map*/
+/*# sourceMappingURL=99387.5b663dbfbda258ec9172.css.map*/

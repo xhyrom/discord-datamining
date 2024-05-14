@@ -952,6 +952,7 @@
                 link: "link__3a950",
                 linkButton: "linkButton__9da2c",
                 linkButtonIcon: "linkButtonIcon_cff89e",
+                overflowTooltip: "overflowTooltip__6cbcb",
                 subtext: "subtext__798a4"
             }
         },
@@ -15597,6 +15598,16 @@
                 pill: "pill__357e7"
             }
         },
+        411511: function(e) {
+            "use strict";
+            e.exports = {
+                avatar: "avatar__93ab6",
+                avatarContainer: "avatarContainer_aea862",
+                avatarWrapper: "avatarWrapper__860da",
+                groupContainer: "groupContainer__39e48",
+                overflowCount: "overflowCount__630c2"
+            }
+        },
         990237: function(e) {
             "use strict";
             e.exports = {
@@ -15637,6 +15648,25 @@
                 othersCount: "othersCount__89551",
                 rowIcon: "rowIcon__45dc2",
                 rowIconV2: "rowIconV2_fe06d9 rowIcon__45dc2"
+            }
+        },
+        181096: function(e) {
+            "use strict";
+            e.exports = {
+                actions: "actions_f9b6b2",
+                categoryIcon: "categoryIcon__79c68",
+                container: "container__0998c",
+                content: "content_c9b545",
+                gameIcon: "gameIcon__4a06f",
+                groupAvatar: "groupAvatar__4cf21",
+                image: "image__75373",
+                liveBadge: "liveBadge__4290f",
+                multiLineTitle: "multiLineTitle__68afa",
+                pill: "pill__2f6a4",
+                pillIcon: "pillIcon__62bae",
+                singleLineTitle: "singleLineTitle_f21580",
+                streamContainer: "streamContainer_a26d75",
+                streamPreview: "streamPreview__38008"
             }
         },
         952972: function(e) {
