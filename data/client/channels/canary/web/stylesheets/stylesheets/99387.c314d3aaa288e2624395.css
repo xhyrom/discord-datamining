@@ -12237,6 +12237,10 @@ span.clanTag_f4aadc {
     cursor: pointer
 }
 
+.clickableContainer__6a669 {
+    display: none
+}
+
 .image__75373 {
     width: 64px;
     height: 64px;
@@ -12356,11 +12360,34 @@ span.clanTag_f4aadc {
     flex-shrink: 0
 }
 
+.joinButtonWrapper_f4db6e {
+    position: absolute;
+    right: 16px;
+    background: linear-gradient(90deg, transparent, var(--background-secondary-alt)30px);
+    padding-left: 40px;
+    height: 70px;
+    display: flex;
+    align-items: center
+}
+
+.imageIcon_fdf820 {
+    width: 24px;
+    height: 24px;
+    color: var(--icon-secondary)
+}
+
 .container_a88e31 {
     background-color: var(--background-floating);
     padding: 8px;
     border-radius: var(--radius-xs);
-    max-width: 312px;
+    max-width: 296px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column
+}
+
+.cards__3f65d {
+    margin-top: 4px;
     gap: 8px;
     display: flex;
     flex-direction: column
@@ -12368,8 +12395,7 @@ span.clanTag_f4aadc {
 
 .header__3a32b {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 4px
+    flex-direction: row
 }
 
 .rowIcon__45dc2 {
@@ -50455,8 +50481,8 @@ div:has(>div>.modal__06f49) {
 }
 
 .name__4eb92 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -137350,4 +137376,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.847aa3b3c703be74f386.css.map*/
+/*# sourceMappingURL=99387.c314d3aaa288e2624395.css.map*/
