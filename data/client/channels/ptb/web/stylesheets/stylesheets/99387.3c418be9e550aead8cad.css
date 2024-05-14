@@ -46186,7 +46186,6 @@ img.thumbnail__18ece {
 }
 
 .clanCardCenterContainer__3c574 {
-    overflow: hidden;
     position: absolute;
     z-index: 30;
     height: 400px;
@@ -46312,8 +46311,7 @@ img.thumbnail__18ece {
     top: 0;
     padding: 16px;
     display: flex;
-    width: 100%;
-    border-bottom: 1px solid var(--border-subtle)
+    width: 100%
 }
 
 .upsellBackButton__339ae {
@@ -137380,4 +137378,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.65c7c22a67d4cb366800.css.map*/
+/*# sourceMappingURL=99387.3c418be9e550aead8cad.css.map*/
