@@ -294,6 +294,7 @@
                 characterBackground: "characterBackground__1966f",
                 loggingIn: "loggingIn_be6510",
                 logo: "logo__61b7c",
+                logoWithText: "logoWithText_b6d5d4",
                 splashBackground: "splashBackground_b22a7b"
             }
         },
@@ -3033,6 +3034,20 @@
                 selectionGroup: "selectionGroup__0ec12",
                 slidein: "slidein_e1ab41",
                 title: "title_fc742a"
+            }
+        },
+        693063: function(e) {
+            "use strict";
+            e.exports = {
+                banner: "banner__3fb37",
+                body: "body__931c2",
+                closeButton: "closeButton__59eda",
+                closeIcon: "closeIcon__7657a",
+                container: "container__97762",
+                cta: "cta_b3dafc",
+                icon: "icon__7f33e",
+                pointer: "pointer_c1544c",
+                poweredByNitroContainer: "poweredByNitroContainer__6865d"
             }
         },
         761064: function(e) {
@@ -7150,6 +7165,7 @@
                 cardFooterOtherCount: "cardFooterOtherCount_a26e63",
                 cardNameAndTagWrapper: "cardNameAndTagWrapper_d87ceb",
                 clanBadge: "clanBadge__4c045",
+                clanBannerPreview: "clanBannerPreview__4375a",
                 clanIcon: "clanIcon_d70524",
                 clanInfoItem: "clanInfoItem__65fdd",
                 clanInfoRow: "clanInfoRow__15925",
@@ -15657,12 +15673,16 @@
                 categoryIcon: "categoryIcon__79c68",
                 container: "container__0998c",
                 content: "content_c9b545",
+                footer: "footer__86943",
                 gameIcon: "gameIcon__4a06f",
                 groupAvatar: "groupAvatar__4cf21",
+                header: "header_ccd333",
                 image: "image__75373",
+                joinButton: "joinButton__081d8",
                 liveBadge: "liveBadge__4290f",
                 multiLineTitle: "multiLineTitle__68afa",
                 pill: "pill__2f6a4",
+                pillContainer: "pillContainer_d3df22",
                 pillIcon: "pillIcon__62bae",
                 singleLineTitle: "singleLineTitle_f21580",
                 streamContainer: "streamContainer_a26d75",
@@ -15782,6 +15802,7 @@
                 footer: "footer_eacf42",
                 genshinBackgroundImage: "genshinBackgroundImage__67141 backgroundImage__6b7c7",
                 gradient: "gradient__091fa",
+                gradientHidden: "gradientHidden__0cdc2",
                 popoutAnchor: "popoutAnchor__4e269",
                 popoutCaret: "popoutCaret_ca2beb",
                 popoutContainer: "popoutContainer_dd3678",
@@ -25389,7 +25410,8 @@
             "use strict";
             e.exports = {
                 biteSize: "biteSize__4396a",
-                contentOverflow: "contentOverflow__4ab1c",
+                clamp: "clamp__79a59",
+                content: "content_faa8bf",
                 fullSize: "fullSize_b0d012",
                 invisibleContainer: "invisibleContainer__1e05d",
                 statusBubble: "statusBubble__1a4c3",
@@ -25403,6 +25425,7 @@
                 statusEmojiInline: "statusEmojiInline__099a8",
                 statusEmojiOnly: "statusEmojiOnly__3469b",
                 statusText: "statusText__32d26",
+                unclamp: "unclamp__1fab3",
                 visibleContainer: "visibleContainer_adf761"
             }
         },
@@ -25426,7 +25449,8 @@
             e.exports = {
                 button: "button__7b26d",
                 color: "color_df1d13",
-                tooltip: "tooltip__74218"
+                tooltip: "tooltip__74218",
+                visible: "visible__95288"
             }
         },
         983094: function(e) {
@@ -25468,6 +25492,7 @@
                 clickableUsername: "clickableUsername_f267b3",
                 container: "container_df7ce7",
                 dotSpacer: "dotSpacer__0412c",
+                fullSizeNickname: "fullSizeNickname_a36463",
                 nickname: "nickname__745d1",
                 nicknameIcons: "nicknameIcons__1b2d1",
                 pronouns: "pronouns__1266d userTag_eb9b2a",

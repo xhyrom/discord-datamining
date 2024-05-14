@@ -3388,6 +3388,12 @@
     height: 100%
 }
 
+.characterBackground__1966f .logoWithText_b6d5d4 {
+    position: relative;
+    top: 48px;
+    left: 48px
+}
+
 .characterBackground__1966f .logo__61b7c {
     display: block;
     position: fixed;
@@ -6395,6 +6401,11 @@
     position: relative;
     height: 100px;
     width: 100%
+}
+
+.clanBannerPreview__4375a {
+    height: 98px;
+    margin-top: -2px
 }
 
 .cardBrandingFooter__98c32 {
@@ -12222,7 +12233,8 @@ span.clanTag_f4aadc {
     border-radius: var(--radius-sm);
     display: flex;
     gap: 8px;
-    min-width: 280px
+    width: 280px;
+    cursor: pointer
 }
 
 .image__75373 {
@@ -12239,7 +12251,23 @@ span.clanTag_f4aadc {
 .content_c9b545 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 2px
+}
+
+.header_ccd333 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px
+}
+
+.footer__86943 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 8px
 }
 
 .pill__2f6a4 {
@@ -12261,7 +12289,8 @@ span.clanTag_f4aadc {
 .categoryIcon__79c68 {
     width: 14px;
     height: 14px;
-    color: var(--icon-muted)
+    color: var(--icon-muted);
+    flex-shrink: 0
 }
 
 .actions_f9b6b2 {
@@ -12315,6 +12344,16 @@ span.clanTag_f4aadc {
 .gameIcon__4a06f {
     width: 64px;
     height: 64px
+}
+
+.pillContainer_d3df22 {
+    display: flex
+}
+
+.joinButton__081d8 {
+    padding: 4px 8px;
+    flex-grow: 0;
+    flex-shrink: 0
 }
 
 .container_a88e31 {
@@ -19957,7 +19996,14 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .button__7b26d {
     width: 16px;
-    height: 16px
+    height: 16px;
+    opacity: 0;
+    transition: opacity var(--custom-button-transition-duration)ease
+}
+
+.button__7b26d.visible__95288,
+.button__7b26d:focus-visible {
+    opacity: 1
 }
 
 .color_df1d13 {
@@ -19995,7 +20041,14 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .nickname__745d1 {
-    word-break: break-word
+    word-break: break-word;
+    max-height: 72px;
+    overflow: hidden
+}
+
+.fullSizeNickname_a36463 {
+    max-height: 90px;
+    max-width: 500px
 }
 
 .nicknameIcons__1b2d1 {
@@ -20348,7 +20401,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 .theme-dark .statusBubbleOuter__7e51b,
 .theme-dark .statusBubbleOuter__7e51b:before,
 .theme-dark .statusBubbleOuter__7e51b:after {
-    border: 1px solid var(--border-subtle)
+    border: 1px solid var(--border-strong)
 }
 
 .invisibleContainer__1e05d {
@@ -20439,11 +20492,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     height: 10px
 }
 
-.statusBubble__1a4c3:hover .contentOverflow__4ab1c {
-    overflow: visible;
-    -webkit-line-clamp: unset
-}
-
 .statusBubbleShape__093b0 {
     border-radius: 16px
 }
@@ -20464,15 +20512,22 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     min-width: 18px
 }
 
-.contentOverflow__4ab1c {
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+.content_faa8bf {
     display: -webkit-box;
+    -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
     color: var(--text-normal);
     word-wrap: break-word;
-    word-break: break-word
+    word-break: break-word;
+    line-height: 16px
+}
+
+.clamp__79a59 {
+    -webkit-line-clamp: 2
+}
+
+.unclamp__1fab3 {
+    -webkit-line-clamp: unset
 }
 
 .statusText__32d26 {
@@ -20497,7 +20552,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     border-radius: var(--radius-round);
     position: absolute;
     z-index: 0;
-    top: 76px;
+    top: 66px;
     left: 22px
 }
 
@@ -53101,7 +53156,12 @@ div:has(>div>.modal__06f49) {
     right: 0;
     -webkit-mask-image: linear-gradient(to top, #000 0, rgba(0, 0, 0, 0)100%);
     mask-image: linear-gradient(to top, #000 0, rgba(0, 0, 0, 0)100%);
-    background: var(--bg-overlay-app-frame, var(--background-tertiary))
+    background: var(--bg-overlay-app-frame, var(--background-tertiary));
+    transition: opacity.2s ease
+}
+
+.gradientHidden__0cdc2 {
+    opacity: 0
 }
 
 .backgroundImage__6b7c7 {
@@ -54506,6 +54566,85 @@ div:has(>div>.modal__06f49) {
 
 .switchAccountsIcon__8147c {
     margin-left: -2px
+}
+
+.container__97762 {
+    background-color: var(--brand-500);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    border-radius: 12px;
+    padding: 0 16px 16px;
+    width: 280px
+}
+
+.banner__3fb37 {
+    background-image: url(/assets/8de28552d274e387f740.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 98px;
+    top: -50px;
+    left: calc(50% - 100px);
+    position: absolute
+}
+
+.closeButton__59eda {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, .25);
+    width: 24px;
+    height: 24px;
+    border-radius: 24px
+}
+
+.closeIcon__7657a {
+    display: flex;
+    width: 16px;
+    height: 16px
+}
+
+.body__931c2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 60px
+}
+
+.poweredByNitroContainer__6865d {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.poweredByNitroContainer__6865d .icon__7f33e {
+    margin-right: 2px
+}
+
+.cta_b3dafc {
+    margin-top: 16px;
+    width: 100%;
+    border-radius: 4px;
+    background: var(--primary-130);
+    color: var(--brand-500)
+}
+
+.pointer_c1544c {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-width: 10px;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-top-color: var(--brand-500)
 }
 
 .container_ebee1d {
@@ -136154,13 +136293,29 @@ div.nagbar_c731ff {
     src: url(/assets/9f557929f8c3c0afd1a7.woff2)format("woff2")
 }
 
+@font-face {
+    font-family: "Corinthia";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/3d562610073d4e8ae400.woff2)format("woff2")
+}
+
+@font-face {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/d6129d2c7325b2fac2bf.woff2)format("woff2")
+}
+
 :root {
     --font-primary: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-display: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-headline: 'ABC Ginto Nord', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
         'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
-        'Courier New', Courier, monospace
+        'Courier New', Courier, monospace;
+    --font-clan-body: Fraunces, 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-clan-signature: Corinthia, 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
 :root:lang(el),
@@ -136172,7 +136327,9 @@ div.nagbar_c731ff {
     --font-headline: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
         'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
-        'Courier New', Courier, monospace
+        'Courier New', Courier, monospace;
+    --font-clan-body: Fraunces, 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-clan-signature: Corinthia, 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
 :root:lang(ko) {
@@ -136184,7 +136341,11 @@ div.nagbar_c731ff {
         Dotum, 돋움, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
         'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
-        'Courier New', Courier, monospace
+        'Courier New', Courier, monospace;
+    --font-clan-body: Fraunces, 'gg sans', 'Apple SD Gothic Neo', NanumBarunGothic, '맑은 고딕', 'Malgun Gothic', Gulim,
+        굴림, Dotum, 돋움, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-clan-signature: Corinthia, 'gg sans', 'Apple SD Gothic Neo', NanumBarunGothic, '맑은 고딕', 'Malgun Gothic',
+        Gulim, 굴림, Dotum, 돋움, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
 :root:lang(ja) {
@@ -136196,7 +136357,11 @@ div.nagbar_c731ff {
         Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
         'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
-        'Courier New', Courier, monospace
+        'Courier New', Courier, monospace;
+    --font-clan-body: Fraunces, 'gg sans', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ,
+        Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-clan-signature: Corinthia, 'gg sans', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN',
+        メイリオ, Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
 :root:lang(zh-CN) {
@@ -136208,7 +136373,11 @@ div.nagbar_c731ff {
         SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
         'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
-        'Courier New', Courier, monospace
+        'Courier New', Courier, monospace;
+    --font-clan-body: Fraunces, 'gg sans', 'Microsoft YaHei New', 微软雅黑, 'Microsoft Yahei', 'Microsoft JhengHei', 宋体,
+        SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-clan-signature: Corinthia, 'gg sans', 'Microsoft YaHei New', 微软雅黑, 'Microsoft Yahei', 'Microsoft JhengHei',
+        宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
 :root:lang(zh-TW) {
@@ -136220,7 +136389,11 @@ div.nagbar_c731ff {
         微軟雅黑, 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
         'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
-        'Courier New', Courier, monospace
+        'Courier New', Courier, monospace;
+    --font-clan-body: Fraunces, 'gg sans', 'Microsoft JhengHei', 微軟正黑體, 'Microsoft JhengHei UI', 'Microsoft YaHei',
+        微軟雅黑, 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-clan-signature: Corinthia, 'gg sans', 'Microsoft JhengHei', 微軟正黑體, 'Microsoft JhengHei UI',
+        'Microsoft YaHei', 微軟雅黑, 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
 :root {
@@ -137166,4 +137339,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.9c659cd43355d55f2ed8.css.map*/
+/*# sourceMappingURL=99387.ed3fa71be402dd6d7d08.css.map*/
