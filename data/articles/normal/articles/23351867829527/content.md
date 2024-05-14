@@ -1,10 +1,10 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23411615519895" alt="pubg-erangel-quest-banner.png"></p>
 <p id="docs-internal-guid-1cf8060d-7fff-6bd1-8635-6fe0c1a6bba6"><strong>What this article covers: </strong></p>
 <ul>
-    <li><a href="#h_01HXK5PX877CKE98M2RRFT660V">Promotion Terms</a></li>
-    <li><a href="#h_01HXK5PX87BHHX96B7GVKMWK16">How to Complete the Quest</a></li>
-    <li><a href="#docs-internal-guid-476a92c8-7fff-862b-b425-cdaea6c82c05">Redemption Instructions</a></li>
-    <li><a href="#docs-internal-guid-8219ab2f-7fff-39ad-c4d6-b81138714eb6">Frequently Asked Questions</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/23351867829527#h_01HXK5PX877CKE98M2RRFT660V">Promotion Terms</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/23351867829527#h_01HXK5PX87BHHX96B7GVKMWK16">How to Complete the Quest</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/23351867829527#docs-internal-guid-476a92c8-7fff-862b-b425-cdaea6c82c05">Redemption Instructions</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/23351867829527#docs-internal-guid-8219ab2f-7fff-39ad-c4d6-b81138714eb6">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01HXK5PX877CKE98M2RRFT660V">Promotion Terms</h1>
 <p><strong>Quest Game:</strong> <strong>PUBG: BATTLEGROUNDS</strong><br><strong>Quest Name: Erangel Classic Quest</strong></p>
@@ -17,7 +17,7 @@
 </ul>
 <p><strong>Who is Eligible: </strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">Available on all platforms where the <strong>PUBG: BATTLEGROUNDS </strong></span><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">is available. </span></p>
 <p><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">Discord’s premium services are restricted in some regions. If you are unable to access the Gift Inventory, you are not eligible for this Quest or reward.</span></p>
-<p><strong>Availability Period: </strong>The <strong>Erangel Classic Quest</strong> can be accepted on Discord from <strong>May 14, 2024 </strong>to <strong>May 28, 2024 (5:00PM PT)</strong>. </p>
+<p><strong>Availability Period: </strong>The <strong>Erangel Classic Quest</strong> can be accepted on Discord from <strong>May 14, 2024 </strong>to <strong>May 28, 2024 (11:59PM UTC)</strong>. </p>
 <p>Quest requirements must be completed during this period to receive the reward. Reward gift codes expire <strong>August 11, 2024</strong>.</p>
 <p><strong>Other Terms:</strong> </p>
 <p>Limit of one reward redemption per account.</p>
