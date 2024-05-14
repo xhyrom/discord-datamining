@@ -15659,12 +15659,16 @@
                 categoryIcon: "categoryIcon__79c68",
                 container: "container__0998c",
                 content: "content_c9b545",
+                footer: "footer__86943",
                 gameIcon: "gameIcon__4a06f",
                 groupAvatar: "groupAvatar__4cf21",
+                header: "header_ccd333",
                 image: "image__75373",
+                joinButton: "joinButton__081d8",
                 liveBadge: "liveBadge__4290f",
                 multiLineTitle: "multiLineTitle__68afa",
                 pill: "pill__2f6a4",
+                pillContainer: "pillContainer_d3df22",
                 pillIcon: "pillIcon__62bae",
                 singleLineTitle: "singleLineTitle_f21580",
                 streamContainer: "streamContainer_a26d75",
@@ -25392,7 +25396,8 @@
             "use strict";
             e.exports = {
                 biteSize: "biteSize__4396a",
-                contentOverflow: "contentOverflow__4ab1c",
+                clamp: "clamp__79a59",
+                content: "content_faa8bf",
                 fullSize: "fullSize_b0d012",
                 invisibleContainer: "invisibleContainer__1e05d",
                 statusBubble: "statusBubble__1a4c3",
@@ -25406,6 +25411,7 @@
                 statusEmojiInline: "statusEmojiInline__099a8",
                 statusEmojiOnly: "statusEmojiOnly__3469b",
                 statusText: "statusText__32d26",
+                unclamp: "unclamp__1fab3",
                 visibleContainer: "visibleContainer_adf761"
             }
         },

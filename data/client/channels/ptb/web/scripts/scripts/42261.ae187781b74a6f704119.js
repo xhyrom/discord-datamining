@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["35705"], {
+    ["42261"], {
         290034: function(e, t, n) {
             var i = {
                     "./bg.jsona": function() {
@@ -6322,6 +6322,14 @@
         858855: function(e, t, n) {
             "use strict";
             e.exports = n.p + "d5541e31f4669799d489.woff2"
+        },
+        622814: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "3d562610073d4e8ae400.woff2"
+        },
+        18182: function(e, t, n) {
+            "use strict";
+            e.exports = n.p + "d6129d2c7325b2fac2bf.woff2"
         },
         349374: function(e, t, n) {
             "use strict";
@@ -37457,7 +37465,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293303", ", Version Hash: ").concat("8aa44bebf465d3c7ecfaf7c36374caa50f2f9300")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293315", ", Version Hash: ").concat("e8415e321605ef87a25ee0e8e74fd4342fef45b0")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88669,8 +88677,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293303", "293303"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293303")), t = 0), t
+                let t = parseInt((e = "293315", "293315"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293315")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117210,8 +117218,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293303",
-                    versionHash: "8aa44bebf465d3c7ecfaf7c36374caa50f2f9300"
+                    buildNumber: "293315",
+                    versionHash: "e8415e321605ef87a25ee0e8e74fd4342fef45b0"
                 }
             }
             n.r(t), n.d(t, {
@@ -157200,7 +157208,7 @@
                 } = e, s = (0, W.useCanShowNewGuildTooltipActivityEmptyState)(), o = a === Z.GuildPeekCardTypes.WHO, u = (0, K.useGuildPopoutCards)(t), d = r.useMemo(() => u.map(e => {
                     if (o && e.category !== Z.CardCategory.EMPTY) {
                         let n = null;
-                        return e.category === Z.CardCategory.EMBEDDED_ACTIVITY ? n = e.embeddedActivity.channelId : e.category === Z.CardCategory.HANGOUT || e.category === Z.CardCategory.GAMING ? n = e.channelId : e.category === Z.CardCategory.EVENT && (n = e.event.channel_id), (0, i.jsx)(z.default, {
+                        return e.category === Z.CardCategory.EMBEDDED_ACTIVITY ? n = e.embeddedActivities[0].channelId : e.category === Z.CardCategory.HANGOUT || e.category === Z.CardCategory.GAMING ? n = e.channelId : e.category === Z.CardCategory.EVENT && (n = e.event.channel_id), (0, i.jsx)(z.default, {
                             cardData: e,
                             guildId: t.id
                         }, "".concat(e.category, "-").concat(n))
@@ -157217,7 +157225,7 @@
                             channelId: n,
                             applicationId: r,
                             userIds: a
-                        } = e.embeddedActivity;
+                        } = e.embeddedActivities[0];
                         return (0, i.jsx)(en, {
                             channelId: n,
                             applicationId: r,
@@ -157225,17 +157233,17 @@
                             guildId: t.id,
                             streamersCount: e.streamersCount,
                             cardType: Z.CardCategory.EMBEDDED_ACTIVITY
-                        }, "".concat(e.category, "-").concat(e.embeddedActivity.channelId))
+                        }, "".concat(e.category, "-").concat(e.embeddedActivities[0].channelId))
                     } else if (e.category === Z.CardCategory.GAMING) {
                         let {
                             channelId: n,
-                            game: r,
+                            games: r,
                             voiceStates: a,
                             streamersCount: s
                         } = e;
                         return (0, i.jsx)(en, {
                             channelId: n,
-                            applicationId: r.application_id,
+                            applicationId: r[0].application_id,
                             userIds: a.map(e => {
                                 let {
                                     user: t
@@ -157358,15 +157366,15 @@
             "use strict";
             n.r(t), n.d(t, {
                 useGetCardUsers: function() {
-                    return P
+                    return y
                 },
                 useGetEventCardUsers: function() {
-                    return U
+                    return P
                 },
                 useGuildPopoutCards: function() {
-                    return M
+                    return D
                 }
-            }), n("47120"), n("390547"), n("627341");
+            }), n("47120"), n("390547"), n("653041"), n("627341");
             var i = n("470079"),
                 r = n("392711"),
                 a = n.n(r),
@@ -157389,11 +157397,10 @@
                 p = n("938475"),
                 O = n("823379"),
                 C = n("5192"),
-                R = n("709054"),
-                g = n("126134"),
-                L = n("981631"),
-                v = n("689938");
-            let D = {
+                R = n("126134"),
+                g = n("981631"),
+                L = n("689938");
+            let v = {
                 Event: 7,
                 Game: 6,
                 EmbeddedActivity: 5,
@@ -157403,7 +157410,7 @@
                 Base: 1
             };
 
-            function M(e) {
+            function D(e) {
                 let t = e.id,
                     [n, a] = i.useState([]),
                     [_, c] = i.useState(0),
@@ -157412,7 +157419,7 @@
                             let {
                                 channel: t
                             } = e;
-                            return t.type === L.ChannelTypes.GUILD_VOICE
+                            return t.type === g.ChannelTypes.GUILD_VOICE
                         }).map(e => {
                             let {
                                 channel: t
@@ -157422,73 +157429,80 @@
                         return [...e, ...Object.values(E.default.getThreadsForGuild(t)).flatMap(e => Object.keys(e))]
                     }, [t]),
                     C = (0, o.useStateFromStoresArray)([d.default], () => d.default.getGuildScheduledEventsForGuild(t).filter(e => (0, d.isGuildScheduledEventActive)(e)).map(e => ({
-                        category: g.CardCategory.EVENT,
+                        category: R.CardCategory.EVENT,
                         event: e
                     })), [t]),
-                    v = (0, o.useStateFromStores)([h.default, p.default, l.default, N.default, S.default, I.default], () => {
-                        let n = h.default.getRelationships(),
-                            i = R.default.keys(n).filter(e => n[e] === L.RelationshipTypes.BLOCKED),
-                            r = C.map(e => {
-                                let {
-                                    event: t
-                                } = e;
-                                return t.channel_id
-                            }),
-                            a = p.default.getVoiceStates(t),
-                            s = Object.keys(a);
-                        return 0 === s.length ? [] : s.filter(t => {
-                            let n = a[t].filter(O.isNotNullish);
-                            return !(0 === n.length || r.includes(t)) && null == n.find(e => {
+                    L = C.map(e => {
+                        let {
+                            event: t
+                        } = e;
+                        return t.channel_id
+                    }),
+                    v = (0, o.useStateFromStores)([h.default], () => h.default.getRelationships()),
+                    D = i.useMemo(() => Object.keys(v).filter(e => v[e] === g.RelationshipTypes.BLOCKED), [v]),
+                    y = (0, o.useStateFromStores)([p.default], () => p.default.getVoiceStates(t), [t]),
+                    P = i.useMemo(() => {
+                        let t = Object.keys(y);
+                        return 0 === t.length ? [] : t.filter(t => {
+                            let n = y[t].filter(O.isNotNullish);
+                            return !(0 === n.length || L.includes(t)) && null == n.find(e => {
                                 let {
                                     user: t
                                 } = e;
-                                return i.includes(t.id)
+                                return D.includes(t.id)
                             }) && t !== e.afkChannelId && m.includes(t)
-                        }).map(e => {
-                            let t = I.default.getAllApplicationStreamsForChannel(e).map(e => e.ownerId),
-                                n = l.default.getEmbeddedActivitiesForChannel(e);
-                            if (n.length > 0)
-                                for (let e of n) return {
-                                    category: g.CardCategory.EMBEDDED_ACTIVITY,
-                                    embeddedActivity: e,
-                                    streamersCount: t.length
-                                };
-                            let i = a[e].filter(O.isNotNullish);
-                            for (let n of i) {
-                                let r = S.default.findActivity(n.user.id, y(n));
-                                if (null != r && !(0, u.default)(r)) return {
-                                    category: g.CardCategory.GAMING,
-                                    channelId: e,
-                                    game: r,
-                                    voiceStates: i,
-                                    streamersCount: t.length
-                                }
-                            }
-                            let r = i.map(e => {
-                                    let {
-                                        user: t
-                                    } = e;
-                                    return t.id
-                                }),
-                                s = N.default.hasVideo(e);
-                            return {
-                                category: g.CardCategory.HANGOUT,
-                                channelId: e,
-                                userIds: r,
-                                streamUserIds: t,
-                                channelHasVideo: s
-                            }
                         })
-                    }, [m, C, e.afkChannelId, t]),
-                    D = (0, o.useStateFromStores)([T.default], () => T.default.hasConsented(L.Consents.PERSONALIZATION)),
-                    M = (0, o.useStateFromStores)([A.default], () => A.default.getUserAffinities());
-                if (0 === v.length && 0 === C.length) return 0 === m.length ? [] : m.slice(0, 2).map(e => ({
-                    category: g.CardCategory.EMPTY,
+                    }, [y, L, m, D, e.afkChannelId]),
+                    U = (0, o.useStateFromStoresArray)([l.default, N.default, S.default, I.default], () => P.map(e => {
+                        let t = I.default.getAllApplicationStreamsForChannel(e).map(e => e.ownerId),
+                            n = y[e].filter(O.isNotNullish),
+                            i = l.default.getEmbeddedActivitiesForChannel(e),
+                            r = R.CardCategory.HANGOUT,
+                            a = [],
+                            s = [],
+                            o = n.map(e => {
+                                let {
+                                    user: t
+                                } = e;
+                                return t.id
+                            }),
+                            d = N.default.hasVideo(e),
+                            _ = [];
+                        if (i.length > 0)
+                            for (let e of (r = R.CardCategory.EMBEDDED_ACTIVITY, i)) a.push(e);
+                        for (let e of n) {
+                            let t = S.default.findActivity(e.user.id, M(e));
+                            null != t && !(0, u.default)(t) && (r = R.CardCategory.GAMING, s.push(t), _.push(e.user.id))
+                        }
+                        return r === R.CardCategory.EMBEDDED_ACTIVITY ? {
+                            category: r,
+                            embeddedActivities: a,
+                            streamersCount: t.length,
+                            voiceUsersCount: n.length
+                        } : r === R.CardCategory.GAMING ? {
+                            category: r,
+                            channelId: e,
+                            games: s,
+                            voiceStates: n,
+                            streamersCount: t.length,
+                            gameUserIds: _
+                        } : {
+                            category: r,
+                            channelId: e,
+                            userIds: o,
+                            streamUserIds: t,
+                            channelHasVideo: d
+                        }
+                    }), [y, P]),
+                    b = (0, o.useStateFromStores)([T.default], () => T.default.hasConsented(g.Consents.PERSONALIZATION)),
+                    G = (0, o.useStateFromStores)([A.default], () => A.default.getUserAffinities());
+                if (0 === U.length && 0 === C.length) return 0 === m.length ? [] : m.slice(0, 2).map(e => ({
+                    category: R.CardCategory.EMPTY,
                     channelId: e
                 }));
-                let P = D && M.length > 0,
-                    U = [...v, ...C];
-                return _ !== U.length && (a((function(e, t) {
+                let w = b && G.length > 0,
+                    B = [...U, ...C];
+                return _ !== B.length && (a((function(e, t) {
                     return (0, r.orderBy)(e, [e => (function(e, t) {
                         let n = e => e > 0 ? Math.log(e + 1) : 0,
                             i = e => e.map(e => {
@@ -157496,38 +157510,55 @@
                                 return null !== (n = null === (t = A.default.getUserAffinity(e)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
                             }).map(n),
                             r = (0, s.match)(e).with({
-                                category: g.CardCategory.EVENT
+                                category: R.CardCategory.EVENT
                             }, () => 7).with({
-                                category: g.CardCategory.GAMING
+                                category: R.CardCategory.GAMING
                             }, () => 6).with({
-                                category: g.CardCategory.EMBEDDED_ACTIVITY
+                                category: R.CardCategory.EMBEDDED_ACTIVITY
                             }, () => 5).with({
                                 streamUserIds: s.P.when(e => e.length > 0)
                             }, () => 4).with({
                                 channelHasVideo: !0
                             }, () => 3).with({
-                                category: g.CardCategory.HANGOUT
+                                category: R.CardCategory.HANGOUT
                             }, () => 2).otherwise(() => 1),
                             a = 0;
-                        return t ? ("userIds" in e && (a += Math.max(...i(e.userIds))), "embeddedActivity" in e && (a += Math.max(...i([...e.embeddedActivity.userIds]))), "voiceStates" in e && (a += Math.max(...i(e.voiceStates.filter(O.isNotNullish).map(e => {
-                            let {
-                                user: t
-                            } = e;
-                            return t.id
-                        }))))) : ("userIds" in e && (a += e.userIds.length), "embeddedActivity" in e && (a += [...e.embeddedActivity.userIds].length), "voiceStates" in e && (a += e.voiceStates.filter(O.isNotNullish).map(e => {
-                            let {
-                                user: t
-                            } = e;
-                            return t.id
-                        }).length)), a = a > 0 ? a * r : 1e-5 * r
+                        if (t) {
+                            if ("userIds" in e && (a += Math.max(...i(e.userIds))), "embeddedActivities" in e) {
+                                let t = new Set;
+                                e.embeddedActivities.forEach(e => {
+                                    t = new Set([...t, ...e.userIds])
+                                }), a += Math.max(...i([...t]))
+                            }
+                            "voiceStates" in e && (a += Math.max(...i(e.voiceStates.filter(O.isNotNullish).map(e => {
+                                let {
+                                    user: t
+                                } = e;
+                                return t.id
+                            }))))
+                        } else {
+                            if ("userIds" in e && (a += e.userIds.length), "embeddedActivities" in e) {
+                                let t = new Set;
+                                e.embeddedActivities.forEach(e => {
+                                    t = new Set([t, ...e.userIds])
+                                }), a += t.size
+                            }
+                            "voiceStates" in e && (a += e.voiceStates.filter(O.isNotNullish).map(e => {
+                                let {
+                                    user: t
+                                } = e;
+                                return t.id
+                            }).length)
+                        }
+                        return a = a > 0 ? a * r : 1e-5 * r
                     })(e, t)], ["desc"])
-                })(U, P).slice(0, 3)), c(U.length)), n
+                })(B, w).slice(0, 3)), c(B.length)), n
             }
-            let y = e => t => [L.ActivityTypes.PLAYING, L.ActivityTypes.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId);
+            let M = e => t => [g.ActivityTypes.PLAYING, g.ActivityTypes.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId);
 
-            function P(e, t, n, i) {
+            function y(e, t, n, i) {
                 let s = (0, o.useStateFromStoresArray)([T.default, A.default, m.default], () => {
-                        let t = T.default.hasConsented(L.Consents.PERSONALIZATION),
+                        let t = T.default.hasConsented(g.Consents.PERSONALIZATION),
                             n = A.default.getUserAffinities(),
                             i = a()(e).map(e => m.default.getUser(e)).filter(O.isNotNullish).value();
                         return t && n.length > 0 ? (0, r.orderBy)(i, [e => {
@@ -157541,9 +157572,9 @@
                 if (null != i && i.length > 0) {
                     let e = 1 === i.length ? i[0] : null,
                         r = C.default.getName(t, n, m.default.getUser(e));
-                    d = null != e ? v.default.Messages.GUILD_POPOUT_ACTIVITY_STREAMER.format({
+                    d = null != e ? L.default.Messages.GUILD_POPOUT_ACTIVITY_STREAMER.format({
                         username: r
-                    }) : v.default.Messages.GUILD_POPOUT_ACTIVITY_STREAMERS.format({
+                    }) : L.default.Messages.GUILD_POPOUT_ACTIVITY_STREAMERS.format({
                         streamerCount: i.length
                     })
                 }
@@ -157555,7 +157586,7 @@
                 }
             }
 
-            function U(e) {
+            function P(e) {
                 let t = (0, o.useStateFromStores)([_.default], () => null == e ? null : _.default.getParticipantCount(e.id, c.StageChannelParticipantNamedIndex.AUDIENCE)),
                     n = (0, o.useStateFromStoresArray)([_.default], () => null == e ? [] : _.default.getMutableParticipants(e.id, c.StageChannelParticipantNamedIndex.SPEAKER).filter(e => e.type === c.StageChannelParticipantTypes.VOICE).map(e => {
                         let {
@@ -157569,7 +157600,7 @@
                         } = e;
                         return t
                     }));
-                if ((null == e ? void 0 : e.type) === L.ChannelTypes.GUILD_STAGE_VOICE) {
+                if ((null == e ? void 0 : e.type) === g.ChannelTypes.GUILD_STAGE_VOICE) {
                     let e = n.slice(0, 3),
                         i = Math.max(0, n.length - e.length);
                     return {
@@ -157578,7 +157609,7 @@
                         audienceCount: null != t ? t : 0
                     }
                 }
-                if ((null == e ? void 0 : e.type) === L.ChannelTypes.GUILD_VOICE) {
+                if ((null == e ? void 0 : e.type) === g.ChannelTypes.GUILD_VOICE) {
                     let e = i.slice(0, 7),
                         t = Math.max(0, i.length - e.length);
                     return {
@@ -157598,269 +157629,79 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return M
+                    return E
                 }
             }), n("47120");
-            var i = n("735250");
-            n("470079");
-            var r = n("120356"),
-                a = n.n(r),
-                s = n("831209"),
+            var i = n("735250"),
+                r = n("470079"),
+                a = n("120356"),
+                s = n.n(a),
                 o = n("442837"),
                 l = n("481060"),
-                u = n("812206"),
-                d = n("924301"),
-                _ = n("543882"),
-                c = n("592125"),
-                E = n("271383"),
-                I = n("594174"),
-                T = n("366695"),
-                f = n("305878"),
-                S = n("737688"),
-                h = n("158010"),
-                A = n("944581"),
-                m = n("645284"),
-                N = n("632184"),
-                p = n("26290"),
-                O = n("51144"),
-                C = n("623552"),
-                R = n("126134"),
-                g = n("765305"),
-                L = n("689938"),
-                v = n("181096");
+                u = n("543882"),
+                d = n("837771"),
+                _ = n("126134"),
+                c = n("181096");
 
-            function D(e, t) {
-                let n = function(e, t) {
-                        return e.map(e => {
-                            var n;
-                            let i = I.default.getUser(e);
-                            if (null == i) return null;
-                            let r = E.default.getNick(t, i.id);
-                            return null !== (n = null != r ? r : O.default.getGlobalName(i)) && void 0 !== n ? n : O.default.getUserTag(i)
-                        }).filter(e => null != e)
-                    }(e, t),
-                    i = n.length;
-                if (i > 0) {
-                    if (1 === i) return n[0];
-                    if (2 === i) return L.default.Messages.USER_SUMMARY_TWO.format({
-                        first: n[0],
-                        second: n[1]
-                    });
-                    else if (3 === i) return L.default.Messages.USER_SUMMARY_THREE.format({
-                        first: n[0],
-                        second: n[1],
-                        third: n[2]
-                    });
-                    else return L.default.Messages.USER_SUMMARY_THREE_AND_OTHERS.format({
-                        first: n[0],
-                        second: n[1],
-                        third: n[2],
-                        count: i - 3
-                    })
-                }
-            }
-
-            function M(e) {
+            function E(e) {
                 let {
                     cardData: t,
                     guildId: n
-                } = e, r = (0, o.useStateFromStores)([_.default], () => t.category === R.CardCategory.HANGOUT && t.streamUserIds.length > 0 ? _.default.getPreviewURL(n, t.channelId, t.streamUserIds[0]) : null), E = function(e, t, n) {
-                    let {
-                        category: r
-                    } = e;
-                    switch (r) {
-                        case R.CardCategory.GAMING:
-                            let {
-                                game: a
-                            } = e;
-                            if (null == a.application_id) return (0, i.jsx)(S.default, {});
-                            return (0, i.jsx)(T.default, {
-                                game: u.default.getApplication(a.application_id),
-                                size: "xl",
-                                className: v.gameIcon
-                            });
-                        case R.CardCategory.EVENT:
-                            return (0, i.jsx)(f.default, {});
-                        case R.CardCategory.EMBEDDED_ACTIVITY:
-                            let {
-                                embeddedActivity: o
-                            } = e;
-                            if (null == o.applicationId) return (0, i.jsx)(A.default, {});
-                            return (0, i.jsx)(T.default, {
-                                game: u.default.getApplication(o.applicationId),
-                                size: "xl",
-                                className: v.gameIcon
-                            });
-                        case R.CardCategory.HANGOUT: {
-                            let {
-                                streamUserIds: r,
-                                userIds: a
-                            } = e;
-                            if (r.length > 0) {
-                                let e = e => (0, i.jsx)(p.TextBadge, {
-                                    text: L.default.Messages.LIVE,
-                                    color: s.default.STATUS_DANGER,
-                                    className: e
-                                });
-                                if (null == n) return e();
-                                return (0, i.jsxs)(i.Fragment, {
-                                    children: [(0, i.jsx)("img", {
-                                        src: n,
-                                        alt: "",
-                                        height: 64,
-                                        width: 64,
-                                        className: v.streamPreview
-                                    }), e(v.liveBadge)]
-                                })
-                            }
-                            let o = a.map(e => I.default.getUser(e)).filter(e => null != e);
-                            return (0, i.jsx)(C.default, {
-                                guildId: t,
-                                users: o
-                            })
-                        }
-                    }
-                }(t, n, r), O = function(e, t) {
-                    let {
-                        category: n
-                    } = e;
-                    switch (n) {
-                        case R.CardCategory.HANGOUT: {
-                            let {
-                                streamUserIds: n,
-                                userIds: i
-                            } = e;
-                            if (n.length > 0) return D(n, t);
-                            return D(i, t)
-                        }
-                        case R.CardCategory.EVENT:
-                            return e.event.name;
-                        case R.CardCategory.EMBEDDED_ACTIVITY:
-                            return D([...e.embeddedActivity.userIds], t);
-                        default:
-                            return "gamers"
-                    }
-                }(t, n), M = function(e) {
-                    var t, n, i, r, a, s;
-                    let {
-                        category: o
-                    } = e;
-                    switch (o) {
-                        case R.CardCategory.GAMING:
-                            let {
-                                game: l, channelId: d
-                            } = e;
-                            return L.default.Messages.GAMING_IN_CHANNEL.format({
-                                channelName: null === (t = c.default.getChannel(d)) || void 0 === t ? void 0 : t.name,
-                                gameName: l.name
-                            });
-                        case R.CardCategory.EVENT:
-                            let {
-                                event: _
-                            } = e;
-                            if (_.entity_type === g.GuildScheduledEventEntityTypes.EXTERNAL) return _.entity_metadata.location;
-                            return null === (n = c.default.getChannel(_.channel_id)) || void 0 === n ? void 0 : n.name;
-                        case R.CardCategory.EMBEDDED_ACTIVITY:
-                            let {
-                                embeddedActivity: E
-                            } = e;
-                            return L.default.Messages.GAMING_IN_CHANNEL.format({
-                                channelName: null === (i = c.default.getChannel(E.channelId)) || void 0 === i ? void 0 : i.name,
-                                gameName: null === (r = u.default.getApplication(E.applicationId)) || void 0 === r ? void 0 : r.name
-                            });
-                        case R.CardCategory.HANGOUT: {
-                            let {
-                                streamUserIds: t,
-                                channelId: n
-                            } = e;
-                            if (t.length > 0) return L.default.Messages.STREAMING_IN_CHANNEL.format({
-                                channelName: null === (s = c.default.getChannel(n)) || void 0 === s ? void 0 : s.name
-                            });
-                            return null === (a = c.default.getChannel(n)) || void 0 === a ? void 0 : a.name
-                        }
-                    }
-                }(t), {
-                    icon: y,
-                    count: P
-                } = function(e) {
-                    let {
-                        category: t
-                    } = e;
-                    switch (t) {
-                        case R.CardCategory.EVENT:
-                            return {
-                                icon: f.default, count: d.default.getUserCount(e.event.id, null)
-                            };
-                        case R.CardCategory.HANGOUT:
-                            let {
-                                streamUserIds: n, userIds: i
-                            } = e;
-                            if (n.length > 0) return {
-                                icon: h.default,
-                                count: i.length
-                            };
-                            return {
-                                icon: null, count: 0
-                            };
-                        default:
-                            return {
-                                icon: null, count: 0
-                            }
-                    }
-                }(t), U = function(e) {
-                    let {
-                        category: t
-                    } = e;
-                    switch (t) {
-                        case R.CardCategory.GAMING:
-                            return S.default;
-                        case R.CardCategory.EVENT:
-                            return f.default;
-                        case R.CardCategory.EMBEDDED_ACTIVITY:
-                            return A.default;
-                        case R.CardCategory.HANGOUT: {
-                            let {
-                                streamUserIds: t
-                            } = e;
-                            if (t.length > 0) return m.default;
-                            return N.default
-                        }
-                    }
-                }(t), b = t.category === R.CardCategory.HANGOUT && 0 === t.streamUserIds.length;
-                return (0, i.jsxs)("div", {
-                    className: v.container,
+                } = e, [a, E] = r.useState(!1), I = (0, o.useStateFromStores)([u.default], () => t.category === _.CardCategory.HANGOUT && t.streamUserIds.length > 0 ? u.default.getPreviewURL(n, t.channelId, t.streamUserIds[0]) : null), T = (0, d.getImage)(t, n, I), f = (0, d.getCardTitle)(t, n), S = (0, d.getSubtitle)(t), h = (0, d.getCount)(t), A = (0, d.getCategoryIcon)(t), m = (0, d.getClickHandler)(t, n), N = (0, d.getJoinButton)(t, n), p = t.category === _.CardCategory.HANGOUT && 0 === t.streamUserIds.length;
+                return (0, i.jsxs)(l.Clickable, {
+                    onClick: () => null == m ? void 0 : m(),
+                    tag: "div",
+                    className: c.container,
+                    onMouseEnter: () => E(!0),
+                    onMouseLeave: () => E(!1),
                     children: [(0, i.jsx)("div", {
-                        className: a()(v.image, {
-                            [v.streamContainer]: null != r,
-                            [v.groupAvatar]: b
+                        className: s()(c.image, {
+                            [c.streamContainer]: null != I,
+                            [c.groupAvatar]: p
                         }),
-                        children: E
+                        children: T
                     }), (0, i.jsxs)("div", {
-                        className: v.content,
-                        children: [(0, i.jsx)(l.Heading, {
-                            color: "header-primary",
-                            variant: "heading-sm/semibold",
-                            className: b ? v.multiLineTitle : v.singleLineTitle,
-                            children: O
-                        }), (0, i.jsx)(l.Text, {
-                            variant: "text-xs/medium",
-                            color: "text-secondary",
-                            children: M
-                        }), null != y && P > 0 && (0, i.jsxs)("div", {
-                            className: v.pill,
-                            children: [(0, i.jsx)(y, {
-                                className: v.pillIcon
-                            }), (0, i.jsx)(l.Text, {
-                                variant: "text-xs/medium",
-                                color: "text-normal",
-                                children: P
+                        className: c.content,
+                        children: [(0, i.jsxs)("div", {
+                            className: c.header,
+                            children: [null != f && (0, i.jsx)(l.Heading, {
+                                color: "header-primary",
+                                variant: "heading-sm/semibold",
+                                className: p ? c.multiLineTitle : c.singleLineTitle,
+                                children: f
+                            }), (0, i.jsx)(A, {
+                                className: c.categoryIcon
                             })]
+                        }), (0, i.jsxs)("div", {
+                            className: c.footer,
+                            children: [(0, i.jsxs)("div", {
+                                className: c.content,
+                                children: [null != S && (0, i.jsx)(l.Text, {
+                                    variant: "text-xs/medium",
+                                    color: "text-secondary",
+                                    className: c.singleLineTitle,
+                                    children: S
+                                }), h.length > 0 && (0, i.jsx)("div", {
+                                    className: c.pillContainer,
+                                    children: h.map((e, t) => {
+                                        let {
+                                            icon: n,
+                                            count: r
+                                        } = e;
+                                        return r > 0 && (0, i.jsxs)("div", {
+                                            className: c.pill,
+                                            children: [(0, i.jsx)(n, {
+                                                className: c.pillIcon
+                                            }), (0, i.jsx)(l.Text, {
+                                                variant: "text-xs/medium",
+                                                color: "text-normal",
+                                                children: r
+                                            })]
+                                        }, t)
+                                    })
+                                })]
+                            }), a && N]
                         })]
-                    }), (0, i.jsx)("div", {
-                        className: v.actions,
-                        children: (0, i.jsx)(U, {
-                            className: v.categoryIcon
-                        })
                     })]
                 })
             }
@@ -158145,6 +157986,396 @@
                             })
                         })
                     }
+                })
+            }
+        },
+        837771: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getCardTitle: function() {
+                    return G
+                },
+                getCategoryIcon: function() {
+                    return k
+                },
+                getClickHandler: function() {
+                    return x
+                },
+                getCount: function() {
+                    return w
+                },
+                getImage: function() {
+                    return B
+                },
+                getJoinButton: function() {
+                    return F
+                },
+                getSubtitle: function() {
+                    return V
+                }
+            }), n("47120");
+            var i = n("735250");
+            n("470079");
+            var r = n("831209"),
+                a = n("481060"),
+                s = n("812206"),
+                o = n("557135"),
+                l = n("66999"),
+                u = n("15274"),
+                d = n("924301"),
+                _ = n("703656"),
+                c = n("881824"),
+                E = n("922482"),
+                I = n("592125"),
+                T = n("271383"),
+                f = n("496675"),
+                S = n("594174"),
+                h = n("979651"),
+                A = n("366695"),
+                m = n("305878"),
+                N = n("737688"),
+                p = n("158010"),
+                O = n("944581"),
+                C = n("645284"),
+                R = n("632184"),
+                g = n("26290"),
+                L = n("51144"),
+                v = n("623552"),
+                D = n("126134"),
+                M = n("981631"),
+                y = n("765305"),
+                P = n("689938"),
+                U = n("181096");
+
+            function b(e, t) {
+                var n, i;
+                let r = (n = e, i = t, n.map(e => {
+                        var t;
+                        let n = S.default.getUser(e);
+                        if (null == n) return null;
+                        let r = T.default.getNick(i, n.id);
+                        return null !== (t = null != r ? r : L.default.getGlobalName(n)) && void 0 !== t ? t : L.default.getUserTag(n)
+                    }).filter(e => null != e)),
+                    a = r.length;
+                if (a > 0) {
+                    if (1 === a) return r[0];
+                    if (2 === a) return P.default.Messages.USER_SUMMARY_TWO.format({
+                        first: r[0],
+                        second: r[1]
+                    });
+                    else if (3 === a) return P.default.Messages.USER_SUMMARY_THREE.format({
+                        first: r[0],
+                        second: r[1],
+                        third: r[2]
+                    });
+                    else return P.default.Messages.USER_SUMMARY_THREE_AND_OTHERS.format({
+                        first: r[0],
+                        second: r[1],
+                        third: r[2],
+                        count: a - 3
+                    })
+                }
+            }
+
+            function G(e, t) {
+                let {
+                    category: n
+                } = e;
+                switch (n) {
+                    case D.CardCategory.HANGOUT: {
+                        let {
+                            streamUserIds: n,
+                            userIds: i
+                        } = e;
+                        if (n.length > 0) return b(n, t);
+                        return b(i, t)
+                    }
+                    case D.CardCategory.EVENT:
+                        return e.event.name;
+                    case D.CardCategory.EMBEDDED_ACTIVITY: {
+                        let n = new Set;
+                        return e.embeddedActivities.forEach(e => {
+                            n = new Set([...n, ...e.userIds])
+                        }), b([...n], t)
+                    }
+                    case D.CardCategory.GAMING:
+                        return b(e.gameUserIds, t);
+                    default:
+                        return null
+                }
+            }
+
+            function w(e) {
+                let {
+                    category: t
+                } = e;
+                switch (t) {
+                    case D.CardCategory.EVENT:
+                        return [{
+                            icon: m.default,
+                            count: d.default.getUserCount(e.event.id, null)
+                        }];
+                    case D.CardCategory.HANGOUT:
+                        let {
+                            streamUserIds: n, userIds: i
+                        } = e;
+                        if (n.length > 0) return [{
+                            icon: p.default,
+                            count: i.length
+                        }];
+                        return [];
+                    case D.CardCategory.EMBEDDED_ACTIVITY:
+                        return [{
+                            icon: p.default,
+                            count: e.voiceUsersCount
+                        }, {
+                            icon: C.default,
+                            count: e.streamersCount
+                        }];
+                    case D.CardCategory.GAMING:
+                        return [{
+                            icon: p.default,
+                            count: e.voiceStates.length
+                        }];
+                    default:
+                        return []
+                }
+            }
+
+            function B(e, t, n) {
+                let {
+                    category: a
+                } = e;
+                switch (a) {
+                    case D.CardCategory.GAMING:
+                        let {
+                            games: o
+                        } = e;
+                        if (null == o[0].application_id) return (0, i.jsx)(N.default, {});
+                        return (0, i.jsx)(A.default, {
+                            game: s.default.getApplication(o[0].application_id),
+                            size: "xl",
+                            className: U.gameIcon
+                        });
+                    case D.CardCategory.EVENT:
+                        return (0, i.jsx)(m.default, {});
+                    case D.CardCategory.EMBEDDED_ACTIVITY:
+                        let {
+                            embeddedActivities: l
+                        } = e;
+                        if (null == l[0].applicationId) return (0, i.jsx)(O.default, {});
+                        return (0, i.jsx)(A.default, {
+                            game: s.default.getApplication(l[0].applicationId),
+                            size: "xl",
+                            className: U.gameIcon
+                        });
+                    case D.CardCategory.HANGOUT: {
+                        let {
+                            streamUserIds: a,
+                            userIds: s
+                        } = e;
+                        if (a.length > 0) {
+                            let e = e => (0, i.jsx)(g.TextBadge, {
+                                text: P.default.Messages.LIVE,
+                                color: r.default.STATUS_DANGER,
+                                className: e
+                            });
+                            if (null == n) return e();
+                            return (0, i.jsxs)(i.Fragment, {
+                                children: [(0, i.jsx)("img", {
+                                    src: n,
+                                    alt: "",
+                                    height: 64,
+                                    width: 64,
+                                    className: U.streamPreview
+                                }), e(U.liveBadge)]
+                            })
+                        }
+                        let o = s.map(e => S.default.getUser(e)).filter(e => null != e);
+                        return (0, i.jsx)(v.default, {
+                            guildId: t,
+                            users: o
+                        })
+                    }
+                }
+            }
+
+            function k(e) {
+                let {
+                    category: t
+                } = e;
+                switch (t) {
+                    case D.CardCategory.GAMING:
+                        return N.default;
+                    case D.CardCategory.EVENT:
+                        return m.default;
+                    case D.CardCategory.EMBEDDED_ACTIVITY:
+                        return O.default;
+                    case D.CardCategory.HANGOUT: {
+                        let {
+                            streamUserIds: t
+                        } = e;
+                        if (t.length > 0) return C.default;
+                        return R.default
+                    }
+                }
+            }
+
+            function V(e) {
+                var t, n, i, r, a, o, l, u;
+                let {
+                    category: d
+                } = e;
+                switch (d) {
+                    case D.CardCategory.GAMING:
+                        let {
+                            games: _, channelId: c
+                        } = e;
+                        if (1 === _.length) return P.default.Messages.GAMING_IN_CHANNEL.format({
+                            channelName: null === (n = I.default.getChannel(c)) || void 0 === n ? void 0 : n.name,
+                            gameName: _[0].name
+                        });
+                        return P.default.Messages.MULTIPLE_GAMES_IN_CHANNEL.format({
+                            numGames: _.length,
+                            channelName: null === (t = I.default.getChannel(c)) || void 0 === t ? void 0 : t.name
+                        });
+                    case D.CardCategory.EVENT:
+                        let {
+                            event: E
+                        } = e;
+                        if (E.entity_type === y.GuildScheduledEventEntityTypes.EXTERNAL) return E.entity_metadata.location;
+                        return null === (i = I.default.getChannel(E.channel_id)) || void 0 === i ? void 0 : i.name;
+                    case D.CardCategory.EMBEDDED_ACTIVITY:
+                        let {
+                            embeddedActivities: T
+                        } = e;
+                        if (1 === T.length) return P.default.Messages.GAMING_IN_CHANNEL.format({
+                            channelName: null === (a = I.default.getChannel(T[0].channelId)) || void 0 === a ? void 0 : a.name,
+                            gameName: null === (o = s.default.getApplication(T[0].applicationId)) || void 0 === o ? void 0 : o.name
+                        });
+                        return P.default.Messages.MULTIPLE_ACTIVITIES_IN_CHANNEL.format({
+                            channelName: null === (r = I.default.getChannel(T[0].channelId)) || void 0 === r ? void 0 : r.name,
+                            numActivities: T.length
+                        });
+                    case D.CardCategory.HANGOUT: {
+                        let {
+                            streamUserIds: t,
+                            channelId: n
+                        } = e;
+                        if (t.length > 0) return P.default.Messages.STREAMING_IN_CHANNEL.format({
+                            channelName: null === (u = I.default.getChannel(n)) || void 0 === u ? void 0 : u.name
+                        });
+                        return null === (l = I.default.getChannel(n)) || void 0 === l ? void 0 : l.name
+                    }
+                    default:
+                        return null
+                }
+            }
+
+            function x(e, t) {
+                let {
+                    category: n
+                } = e;
+                switch (n) {
+                    case D.CardCategory.GAMING:
+                        return () => {
+                            (0, _.transitionToGuild)(t, e.channelId)
+                        };
+                    case D.CardCategory.EMBEDDED_ACTIVITY:
+                        return () => {
+                            (0, _.transitionToGuild)(t, e.embeddedActivities[0].channelId)
+                        };
+                    case D.CardCategory.EVENT:
+                        return () => {
+                            (0, u.openGuildEventDetails)({
+                                eventId: e.event.id
+                            })
+                        };
+                    case D.CardCategory.HANGOUT:
+                        return () => {
+                            (0, _.transitionToGuild)(t, e.channelId)
+                        };
+                    default:
+                        return null
+                }
+            }
+
+            function F(e, t) {
+                let {
+                    category: n
+                } = e, r = null;
+                if (null == (r = n === D.CardCategory.EVENT ? e.event.channel_id : n === D.CardCategory.EMBEDDED_ACTIVITY ? e.embeddedActivities[0].channelId : e.channelId)) return;
+                let s = h.default.isInChannel(r),
+                    d = s ? P.default.Messages.GUILD_POPOUT_JOINED : P.default.Messages.JOIN,
+                    T = function(e, t) {
+                        let {
+                            category: n
+                        } = e;
+                        switch (n) {
+                            case D.CardCategory.HANGOUT:
+                            case D.CardCategory.GAMING:
+                                return () => {
+                                    let {
+                                        channelId: n
+                                    } = e, i = I.default.getChannel(n);
+                                    null != i && i.type === M.ChannelTypes.GUILD_VOICE && f.default.can(M.Permissions.CONNECT, i) && (o.default.handleVoiceConnect({
+                                        channel: i,
+                                        connected: h.default.isInChannel(n),
+                                        needSubscriptionToAccess: (0, l.getChannelRoleSubscriptionStatus)(n).needSubscriptionToAccess,
+                                        locked: !1
+                                    }), (0, _.transitionToGuild)(t, n))
+                                };
+                            case D.CardCategory.EMBEDDED_ACTIVITY:
+                                return () => {
+                                    let {
+                                        channelId: n
+                                    } = e.embeddedActivities[0], i = I.default.getChannel(n);
+                                    null != i && i.type === M.ChannelTypes.GUILD_VOICE && f.default.can(M.Permissions.CONNECT, i) && (o.default.handleVoiceConnect({
+                                        channel: i,
+                                        connected: h.default.isInChannel(n),
+                                        needSubscriptionToAccess: (0, l.getChannelRoleSubscriptionStatus)(n).needSubscriptionToAccess,
+                                        locked: !1
+                                    }), (0, _.transitionToGuild)(t, n))
+                                };
+                            case D.CardCategory.EVENT:
+                                return () => {
+                                    let {
+                                        event: t
+                                    } = e, {
+                                        channel_id: n,
+                                        guild_id: i,
+                                        entity_type: r
+                                    } = t, a = I.default.getChannel(n);
+                                    if (null == n || null == a || !f.default.can(M.Permissions.CONNECT, a)) {
+                                        (0, u.openGuildEventDetails)({
+                                            eventId: t.id
+                                        });
+                                        return
+                                    }
+                                    let s = async () => {
+                                        let e = await (0, E.connectOrLurkStage)(i, n);
+                                        (0, c.navigateToStage)(e)
+                                    };
+                                    r === y.GuildScheduledEventEntityTypes.STAGE_INSTANCE ? s() : r === y.GuildScheduledEventEntityTypes.VOICE && (o.default.handleVoiceConnect({
+                                        channel: a,
+                                        connected: h.default.isInChannel(n),
+                                        needSubscriptionToAccess: (0, l.getChannelRoleSubscriptionStatus)(n).needSubscriptionToAccess,
+                                        locked: !1
+                                    }), (0, _.transitionToGuild)(i, n))
+                                };
+                            default:
+                                return null
+                        }
+                    }(e, t);
+                return (0, i.jsx)(a.Button, {
+                    size: a.Button.Sizes.MIN,
+                    color: a.Button.Colors.GREEN,
+                    disabled: s,
+                    onClick: e => {
+                        e.stopPropagation(), null == T || T()
+                    },
+                    className: U.joinButton,
+                    children: d
                 })
             }
         },
@@ -173459,8 +173690,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715719744841",
-                                    build_number: "293303"
+                                    built_at: "1715720581004",
+                                    build_number: "293315"
                                 }
                             },
                             retries: 1
@@ -188168,7 +188399,8 @@
                     summary: e.description,
                     description: e.description,
                     benefits: null !== (t = e.store_listing_benefits) && void 0 !== t ? t : [],
-                    thumbnail: e.image_asset
+                    thumbnail: e.image_asset,
+                    published: e.published
                 }
             }
 
@@ -214170,88 +214402,130 @@
             "use strict";
             n.r(t), n.d(t, {
                 UserProfileCustomStatusBubble: function() {
-                    return c
+                    return S
                 }
             }), n("47120");
             var i = n("735250"),
                 r = n("470079"),
                 a = n("120356"),
                 s = n.n(a),
-                o = n("481060"),
-                l = n("788307"),
-                u = n("393903"),
-                d = n("228168"),
-                _ = n("660762");
+                o = n("685626"),
+                l = n("442837"),
+                u = n("846519"),
+                d = n("481060"),
+                _ = n("788307"),
+                c = n("393903"),
+                E = n("607070"),
+                I = n("228168"),
+                T = n("660762");
+            let f = "36px";
 
-            function c(e) {
+            function S(e) {
                 let {
                     statusActivity: t,
                     profileType: n,
                     animate: a = !0
-                } = e, [c, E] = r.useState(1), {
-                    emoji: I
-                } = null != t ? t : {}, T = null != I, f = (null == t ? void 0 : t.state) != null && "" !== t.state ? t.state : null, S = null != f && f.length > 0, h = T || S, A = r.useCallback(e => {
+                } = e, S = (0, l.useStateFromStores)([E.default], () => E.default.useReducedMotion), [h, A] = r.useState(1), [m, N] = r.useState(!0), [p] = r.useState(() => new u.Timeout), {
+                    emoji: O
+                } = null != t ? t : {}, C = null != O, R = (null == t ? void 0 : t.state) != null && "" !== t.state ? t.state : null, g = null != R && R.length > 0, L = C || g, v = r.useCallback(e => {
                     var t;
                     if (null == e) return;
                     let n = e.getBoundingClientRect(),
                         i = parseFloat(null !== (t = window.getComputedStyle(e).getPropertyValue("line-height")) && void 0 !== t ? t : "0"),
                         r = n.height;
-                    i > 0 && r > 0 && E(Math.floor(r / i))
-                }, []), m = (0, u.useResizeObserver)(A);
-                if (r.useLayoutEffect(() => {
-                        setTimeout(() => {
-                            A(m.current)
-                        }, 200)
-                    }, [m, A]), !h) return null;
-                let N = () => T ? (0, i.jsx)(l.ActivityEmoji, {
-                        className: S ? _.statusEmojiInline : _.statusEmojiOnly,
-                        emoji: I,
+                    i > 0 && r > 0 && A(Math.floor(r / i))
+                }, []), D = (0, c.useResizeObserver)(v);
+                r.useLayoutEffect(() => {
+                    setTimeout(() => {
+                        v(D.current)
+                    }, 200)
+                }, [D, v]);
+                let [M, y] = (0, o.useSpring)(() => ({
+                    maxHeight: f,
+                    config: {
+                        clamp: !0,
+                        immediate: S,
+                        duration: 300
+                    }
+                }));
+                r.useEffect(() => () => p.stop(), [p]);
+                let P = e => {
+                    e ? y({
+                        maxHeight: "144px",
+                        delay: 300
+                    }) : y({
+                        maxHeight: f,
+                        delay: 0
+                    }), p.start(300, () => {
+                        N(!e)
+                    })
+                };
+                if (!L) return null;
+                let U = () => C ? (0, i.jsx)(_.ActivityEmoji, {
+                        className: g ? T.statusEmojiInline : T.statusEmojiOnly,
+                        emoji: O,
                         animate: a,
                         hideTooltip: !1,
-                        tooltipDelay: d.USER_PROFILE_TOOLTIP_DELAY
+                        tooltipDelay: I.USER_PROFILE_TOOLTIP_DELAY
                     }) : null,
-                    p = () => S ? (0, i.jsx)(o.Text, {
+                    b = () => g ? (0, i.jsx)(d.Text, {
                         variant: "text-sm/medium",
-                        className: _.statusText,
-                        children: f
+                        className: T.statusText,
+                        children: R
                     }) : null,
-                    O = () => (0, i.jsxs)("div", {
-                        className: _.contentOverflow,
-                        ref: m,
-                        children: [N(), p()]
+                    G = n === I.UserProfileTypes.BITE_SIZE ? T.biteSize : T.fullSize,
+                    w = s()(T.statusBubbleOuter, {
+                        [T.statusBubbleShape]: h <= 1 && !g && C || h > 1,
+                        [T.statusBubbleSingleLineWithTextShape]: 1 === h && g,
+                        [T.biteSize]: n === I.UserProfileTypes.BITE_SIZE,
+                        [T.fullSize]: n === I.UserProfileTypes.FULL_SIZE
                     }),
-                    C = n === d.UserProfileTypes.BITE_SIZE ? _.biteSize : _.fullSize,
-                    R = s()(_.statusBubbleOuter, {
-                        [_.statusBubbleShape]: c <= 1 && !S && T || c > 1,
-                        [_.statusBubbleSingleLineWithTextShape]: 1 === c && S,
-                        [_.biteSize]: n === d.UserProfileTypes.BITE_SIZE,
-                        [_.fullSize]: n === d.UserProfileTypes.FULL_SIZE
-                    }),
-                    g = s()(_.statusBubble, {
-                        [_.statusBubbleShape]: c <= 1 && !S && T || c > 1,
-                        [_.statusBubbleSingleLineWithTextShape]: c <= 1 && S,
-                        [_.statusBubbleEmojiOnlyPadding]: T && !S,
-                        [_.statusBubbleWithTextPadding]: S,
-                        [_.statusBubbleWithTextMinWidth]: S,
-                        [_.statusBubbleCopyStatusCursor]: h
+                    B = s()(T.statusBubble, {
+                        [T.statusBubbleShape]: h <= 1 && !g && C || h > 1,
+                        [T.statusBubbleSingleLineWithTextShape]: h <= 1 && g,
+                        [T.statusBubbleEmojiOnlyPadding]: C && !g,
+                        [T.statusBubbleWithTextPadding]: g,
+                        [T.statusBubbleWithTextMinWidth]: g,
+                        [T.statusBubbleCopyStatusCursor]: L
                     });
                 return (0, i.jsxs)("div", {
-                    children: [n === d.UserProfileTypes.BITE_SIZE ? (0, i.jsx)("div", {
-                        className: s()(_.invisibleContainer, C),
+                    children: [n === I.UserProfileTypes.BITE_SIZE ? (0, i.jsx)("div", {
+                        className: s()(T.invisibleContainer, G),
                         children: (0, i.jsx)("div", {
-                            className: R,
+                            className: w,
                             children: (0, i.jsx)("span", {
-                                className: g,
-                                children: O()
+                                className: B,
+                                children: (0, i.jsxs)("div", {
+                                    className: s()(T.content, T.clamp),
+                                    children: [U(), b()]
+                                })
                             })
                         })
                     }) : null, (0, i.jsx)("div", {
-                        className: s()(_.visibleContainer, C),
+                        className: s()(T.visibleContainer, G),
                         children: (0, i.jsx)("div", {
-                            className: R,
+                            tabIndex: 0,
+                            className: w,
+                            onFocus: () => P(!0),
+                            onBlur: () => P(!1),
+                            onMouseEnter: () => P(!0),
+                            onMouseLeave: () => P(!1),
                             children: (0, i.jsx)("span", {
-                                className: g,
-                                children: O()
+                                className: B,
+                                children: (() => {
+                                    let e = s()(T.content, {
+                                        [T.clamp]: m,
+                                        [T.unclamp]: !m
+                                    });
+                                    return (0, i.jsx)(o.animated.div, {
+                                        style: M,
+                                        className: s()(T.content, e),
+                                        children: (0, i.jsxs)("div", {
+                                            ref: D,
+                                            children: [U(), b()]
+                                        })
+                                    })
+                                })()
                             })
                         })
                     })]
@@ -228395,14 +228669,15 @@
                         heroBackground: null != e.hero_background ? (0, r.transformStoreAssetFromServer)(e.hero_background) : null,
                         heroVideo: null != e.hero_video ? (0, r.transformStoreAssetFromServer)(e.hero_video) : null,
                         entitlementBranchId: e.entitlement_branch_id,
-                        benefits: e.benefits
+                        benefits: e.benefits,
+                        published: e.published
                     })
                 }
                 isSlimDirectoryVersion() {
                     return null == this.description
                 }
                 constructor(e) {
-                    super(), s(this, "id", void 0), s(this, "skuId", void 0), s(this, "summary", void 0), s(this, "tagline", void 0), s(this, "flavorText", void 0), s(this, "description", void 0), s(this, "carouselItems", void 0), s(this, "childSkuIds", void 0), s(this, "alternativeSkuIds", void 0), s(this, "assets", void 0), s(this, "staffNotes", void 0), s(this, "guild", void 0), s(this, "thumbnail", void 0), s(this, "boxArt", void 0), s(this, "previewVideo", void 0), s(this, "headerBackground", void 0), s(this, "headerLogoDarkTheme", void 0), s(this, "headerLogoLightTheme", void 0), s(this, "heroBackground", void 0), s(this, "heroVideo", void 0), s(this, "entitlementBranchId", void 0), s(this, "benefits", void 0), this.id = e.id, this.skuId = e.skuId, this.summary = e.summary, this.tagline = e.tagline, this.flavorText = e.flavorText, this.description = e.description, this.carouselItems = e.carouselItems || [], this.childSkuIds = e.childSkuIds || [], this.alternativeSkuIds = e.alternativeSkuIds || [], this.assets = e.assets || [], this.staffNotes = e.staffNotes, this.guild = e.guild, this.thumbnail = e.thumbnail || null, this.boxArt = e.boxArt || null, this.previewVideo = e.previewVideo || null, this.headerBackground = e.headerBackground || null, this.headerLogoDarkTheme = e.headerLogoDarkTheme || null, this.headerLogoLightTheme = e.headerLogoLightTheme || null, this.heroBackground = e.heroBackground || null, this.heroVideo = e.heroVideo || null, this.entitlementBranchId = e.entitlementBranchId || null, this.benefits = e.benefits || []
+                    super(), s(this, "id", void 0), s(this, "skuId", void 0), s(this, "summary", void 0), s(this, "tagline", void 0), s(this, "flavorText", void 0), s(this, "description", void 0), s(this, "carouselItems", void 0), s(this, "childSkuIds", void 0), s(this, "alternativeSkuIds", void 0), s(this, "assets", void 0), s(this, "staffNotes", void 0), s(this, "guild", void 0), s(this, "thumbnail", void 0), s(this, "boxArt", void 0), s(this, "previewVideo", void 0), s(this, "headerBackground", void 0), s(this, "headerLogoDarkTheme", void 0), s(this, "headerLogoLightTheme", void 0), s(this, "heroBackground", void 0), s(this, "heroVideo", void 0), s(this, "entitlementBranchId", void 0), s(this, "benefits", void 0), s(this, "published", void 0), this.id = e.id, this.skuId = e.skuId, this.summary = e.summary, this.tagline = e.tagline, this.flavorText = e.flavorText, this.description = e.description, this.carouselItems = e.carouselItems || [], this.childSkuIds = e.childSkuIds || [], this.alternativeSkuIds = e.alternativeSkuIds || [], this.assets = e.assets || [], this.staffNotes = e.staffNotes, this.guild = e.guild, this.thumbnail = e.thumbnail || null, this.boxArt = e.boxArt || null, this.previewVideo = e.previewVideo || null, this.headerBackground = e.headerBackground || null, this.headerLogoDarkTheme = e.headerLogoDarkTheme || null, this.headerLogoLightTheme = e.headerLogoLightTheme || null, this.heroBackground = e.heroBackground || null, this.heroVideo = e.heroVideo || null, this.entitlementBranchId = e.entitlementBranchId || null, this.benefits = e.benefits || [], this.published = !!e.published
                 }
             }
         },
@@ -228542,6 +228817,34 @@
                 getPremiumUserPrice() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
                     return e ? this.giftPremiumUserPrice : this.premiumUserPrice
+                }
+                toServerData() {
+                    let e = {};
+                    return Object.keys(this.prices).forEach(t => {
+                        let n = this.prices[t];
+                        e[t] = {
+                            country_prices: {
+                                country_code: n.countryPrices.countryCode,
+                                prices: n.countryPrices.prices
+                            },
+                            payment_source_prices: n.paymentSourcePrices
+                        }
+                    }), {
+                        id: this.id,
+                        name: this.name,
+                        sku_id: this.skuId,
+                        interval: this.interval,
+                        interval_count: this.intervalCount,
+                        tax_inclusive: this.taxInclusive,
+                        currency: this.currency,
+                        price: this.price,
+                        prices: e,
+                        price_tier: this.price,
+                        discount_price: this.premiumUserPrice,
+                        fallback_price: this.fallbackPrice,
+                        fallback_currency: this.fallbackCurrency,
+                        fallback_discount_price: this.fallbackPremiumUserPrice
+                    }
                 }
                 constructor(e) {
                     super(), s(this, "id", void 0), s(this, "name", void 0), s(this, "interval", void 0), s(this, "intervalCount", void 0), s(this, "taxInclusive", void 0), s(this, "skuId", void 0), s(this, "currency", void 0), s(this, "price", void 0), s(this, "prices", void 0), s(this, "premiumUserPrice", void 0), s(this, "fallbackPrice", void 0), s(this, "fallbackCurrency", void 0), s(this, "fallbackPremiumUserPrice", void 0), this.id = e.id, this.name = e.name, this.interval = e.interval, this.intervalCount = e.intervalCount, this.taxInclusive = e.taxInclusive, this.skuId = e.skuId, this.currency = e.currency, this.price = e.price, this.premiumUserPrice = e.premiumUserPrice, this.prices = e.prices, e.fallbackPrice && (this.fallbackPrice = e.fallbackPrice, this.fallbackCurrency = e.fallbackCurrency, this.fallbackPremiumUserPrice = e.fallbackPremiumUserPrice)
@@ -252261,7 +252564,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8aa44bebf465d3c7ecfaf7c36374caa50f2f9300"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e8415e321605ef87a25ee0e8e74fd4342fef45b0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281269,7 +281572,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293303"
+                                build_number: "293315"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288627,7 +288930,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293303", "293303"), 10);
+                let a = parseInt((n = "293315", "293315"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -316287,4 +316590,4 @@
         }
     }
 ]);
-//# sourceMappingURL=35705.f8a02b7a421ca73c6be7.js.map
+//# sourceMappingURL=42261.ae187781b74a6f704119.js.map
