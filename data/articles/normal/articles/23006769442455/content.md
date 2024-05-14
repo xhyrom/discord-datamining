@@ -39,7 +39,7 @@
                 <strong>How to Enter: </strong>React to the Discord official Giveaway bot post in the Town Hall server
             </li>
             <li>
-                <strong>Prize: </strong>One (1) Winner (Estimate Value)
+                <strong>Prize: </strong>One (1) Winner ($100)
                 <ul>
                     <li>One (1) mystery box with Discord Merch (approximate retail value $100 )</li>
                 </ul>
@@ -56,7 +56,7 @@
                 <strong>How to Enter: </strong><span id="docs-internal-guid-b5864ed9-7fff-d824-c19a-7714e720872d">Reply with a HAPPY BIRTHDAY DISCORD &amp; the hashtag #discordsweepstakes and we'll randomly select winners</span>
             </li>
             <li>
-                <strong>Prize: </strong>One (1) Winner (Estimate Value)
+                <strong>Prize: </strong>One (1) Winner ($100)
                 <ul>
                     <li>One (1) mystery box with Discord Merch (approximate retail value $100)</li>
                 </ul>
@@ -73,7 +73,7 @@
                 <strong>How to Enter: </strong><span id="docs-internal-guid-b5864ed9-7fff-d824-c19a-7714e720872d">Reply with a HAPPY BIRTHDAY DISCORD &amp; the hashtag #discordsweepstakes<br></span>
             </li>
             <li>
-                <strong>Prize: </strong>One (1) Winner (Estimate Value)
+                <strong>Prize: </strong>One (1) Winner ($100)
                 <ul>
                     <li>One (1) mystery box with Discord Merch (approximate retail value $100)</li>
                 </ul>
@@ -153,7 +153,7 @@
 <h2 id="h_01HXABM7ZDVGBH5BPQ8MA6JDCR">Day 3: Discord Nitro Giveaway for Discord's 9th Birthday</h2>
 <ul>
     <li>
-        <strong>Rules: </strong>The Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one Sweepstakes per platform as described below, with one winner per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
+        <strong>Rules: </strong>The Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one Sweepstakes per platform as described below, with nine winners per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
     </li>
     <li>
         <strong>Additional Eligibility: </strong>In addition to the additional eligibility requirements described in the Official Rules, entrants must be thirteen (13) years of age or older (with legal guardian approval if they are under the age of majority) and a legal resident of a country where Nitro is available and excluding Italy, Brazil and the province of Quebec in Canada.
@@ -262,7 +262,7 @@
 <h2 id="h_01HXJNV6GTGVZ23FPWKHVAHBG8">Day 5: Discord Nitro Giveaway for Discord's 9th Birthday</h2>
 <ul id="docs-internal-guid-337d5151-7fff-43ec-cbab-7fad4c521de5">
     <li>
-        <strong>Rules: </strong>The Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one Sweepstakes per platform as described below, with one winner per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
+        <strong>Rules: </strong>The Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one Sweepstakes per platform as described below, with nine winners per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
     </li>
     <li>
         <strong>Additional Eligibility: </strong>In addition to the additional eligibility requirements described in the Official Rules, entrants must be thirteen (13) years of age or older (with legal guardian approval if they are under the age of majority) and a legal resident of a country where Nitro is available and excluding Italy, Brazil and the province of Quebec in Canada.
@@ -277,7 +277,7 @@
                 <strong>How to Enter: </strong>Reply to the Discord official Giveaway post with “I want Nitro” and the hashtag #discordsweepstakes
             </li>
             <li>
-                <strong>Prize: </strong>Eighteen (18) total winners (Total Value: $2,157.84 USD)
+                <strong>Prize: </strong>Nine (9) total winners (Total Value: $2,157.84 USD)
                 <ul>
                     <li>One (1) year of Discord Nitro ($119.88 USD)</li>
                 </ul>
@@ -294,7 +294,7 @@
                 <strong>How to Enter: </strong>Reply to the Discord official Giveaway post with “I want Nitro” and the hashtag #discordsweepstakes
             </li>
             <li>
-                <strong>Prize: </strong>Eighteen (18) total winners (Total Value: $2,157.84 USD)
+                <strong>Prize: </strong>Nine (9) total winners (Total Value: $2,157.84 USD)
                 <ul>
                     <li>One (1) year of Discord Nitro ($119.88 USD)</li>
                 </ul>
@@ -311,7 +311,7 @@
                 <strong>How to Enter: </strong>Reply to the Discord official Giveaway post with “I want Nitro” and the hashtag #discordsweepstakes
             </li>
             <li>
-                <strong>Prize: </strong>Eighteen (18) total winners (Total Value: $2,157.84 USD)
+                <strong>Prize: </strong>Nine (9) total winners (Total Value: $2,157.84 USD)
                 <ul>
                     <li>One (1) year of Discord Nitro ($119.88 USD)</li>
                 </ul>
@@ -328,7 +328,7 @@
                 <strong>How to Enter: </strong>React to the Discord official Giveaway bot post in the Town Hall server
             </li>
             <li>
-                <strong>Prize: </strong>Eighteen (18) total winners (Total Value: $2,157.84 USD)
+                <strong>Prize: </strong>Nine (9) total winners (Total Value: $2,157.84 USD)
                 <ul>
                     <li>One (1) year of Discord Nitro ($119.88 USD)</li>
                 </ul>
@@ -346,7 +346,7 @@
         <strong>Additional Eligibility: </strong>In addition to the additional eligibility requirements described in the Official Rules, entrants must be thirteen (13) years of age or older (with legal guardian approval if they are under the age of majority) and a legal resident of the United States.
     </li>
     <li>
-        <strong>Entry Term: </strong>Saturday May 18, 2024 10:00 AM PST - 10:00 AM PST on Sunday May 26, 2024
+        <strong>Entry Term: </strong>Saturday May 18, 2024 10:00 AM PST - 10:00 AM PST on Sunday May 27, 2024
     </li>
     <li>
         <strong>Instagram Sweepstakes:</strong>
@@ -370,7 +370,7 @@
 <h2 id="h_01HXABM7ZEZQCZHNRGJ4H0QX34">Day 7: Discord Shop Item Giveaway for Discord's 9th Birthday</h2>
 <ul>
     <li>
-        <strong>Rules: </strong>The Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one Sweepstakes per platform as described below, with one winner per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
+        <strong>Rules: </strong>The Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one Sweepstakes per platform as described below, with nine winners per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
     </li>
     <li>
         <strong>Additional Eligibility: </strong>In addition to the additional eligibility requirements described in the Official Rules, entrants must be thirteen (13) years of age or older (with legal guardian approval if they are under the age of majority) and a legal resident of a country where the Discord Shop is available and excluding Italy, Brazil and the province of Quebec in Canada.

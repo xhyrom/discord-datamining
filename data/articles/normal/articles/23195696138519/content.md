@@ -171,7 +171,7 @@
 <h2 id="h_01HXACBPSSZHG922M546HRA455">Day 6: Discord Nitro Giveaway for Discord’s 9th Birthday</h2>
 <ul id="docs-internal-guid-b1ace2aa-7fff-dcee-8feb-adc8d7ba231f">
     <li>
-        <strong>Rules: </strong>The Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with one winner per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
+        <strong>Rules: </strong>The Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with nine winners per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
     </li>
     <li>
         <strong>Additional Eligibility: </strong>In addition to the additional eligibility requirements described in the Official Rules, entrants must be thirteen (13) years of age or older (with legal guardian approval if they are under the age of majority) and a legal resident of Japan.
@@ -186,7 +186,7 @@
                 <strong>How to Enter: </strong>To be announced!
             </li>
             <li>
-                <strong>Prize: </strong>Eighteen (18) total winners (Total Value: $2,157.84 USD)
+                <strong>Prize: </strong>Nine (9) total winners (Total Value: $2,157.84 USD)
                 <ul>
                     <li>One (1) year Nitro Code for JP ($119.88)</li>
                 </ul>
@@ -227,7 +227,7 @@
 <h2 id="h_01HXACBPSS9B8KW7503RSY2PP9">Day 8: Discord Nitro Giveaway for Discord’s 9th Birthday </h2>
 <ul>
     <li>
-        <strong>Rules: </strong>The Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with one winner per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
+        <strong>Rules: </strong>The Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with nine winners per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
     </li>
     <li>
         <strong>Additional Eligibility: </strong>In addition to the additional eligibility requirements described in the Official Rules, entrants must be thirteen (13) years of age or older (with legal guardian approval if they are under the age of majority) and a legal resident of Japan.
