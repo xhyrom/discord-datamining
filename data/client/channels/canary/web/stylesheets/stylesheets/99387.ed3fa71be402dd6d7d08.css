@@ -19996,7 +19996,14 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .button__7b26d {
     width: 16px;
-    height: 16px
+    height: 16px;
+    opacity: 0;
+    transition: opacity var(--custom-button-transition-duration)ease
+}
+
+.button__7b26d.visible__95288,
+.button__7b26d:focus-visible {
+    opacity: 1
 }
 
 .color_df1d13 {
@@ -137332,4 +137339,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f1fb5dd5566dfbb61b54.css.map*/
+/*# sourceMappingURL=99387.ed3fa71be402dd6d7d08.css.map*/

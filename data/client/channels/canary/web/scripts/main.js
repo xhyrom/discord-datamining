@@ -37465,7 +37465,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293331", ", Version Hash: ").concat("3ca000ef42970fcbc9e55c67f4c9f5d25ad4a001")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293347", ", Version Hash: ").concat("3e5b2ae242d63baf03b1ab56497de407e8b20535")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -73283,13 +73283,16 @@
                 }
             }), n("47120");
             var i, r, a, s, o, l = n("524437");
-            (i || (i = {})).DEFAULT = "AppIcon", (s = r || (r = {})).BRAND_DARK = "BrandDarkIcon", s.BRAND_INVERTED = "BrandInvertedIcon", s.MATTE_LIGHT = "MatteLightIcon", s.MATTE_DARK = "MatteDarkIcon", s.PASTEL = "PastelIcon", s.PIRATE = "PirateIcon", s.CAMO = "CamoIcon", s.SUNSET = "SunsetIcon", s.GALAXY = "GalaxyIcon", s.Y2K = "Y2KIcon", s.CHERRY_BLOSSOM = "CherryBlossomIcon", s.BEANIE = "BeanieIcon", s.GAMING = "GamingIcon", s.CIRCUIT = "CircuitIcon", s.HOLO_WAVES = "HoloWavesIcon", s.BLUSH = "BlushIcon", s.ANGRY = "AngryIcon", s.MANGA = "MangaIcon", s.CONTROLLER = "ControllerIcon", s.MUSHROOM = "MushroomIcon", s.BLURPLE_TWILIGHT = "BlurpleTwilightIcon", (o = a || (a = {})).DRIP = "DripIcon", o.SLIMY = "SlimyIcon", o.ZOMBIE = "ZombieIcon", o.CLYDE_STEIN = "ClydeSteinIcon", {
+            (i || (i = {})).DEFAULT = "AppIcon", (s = r || (r = {})).BRAND_DARK = "BrandDarkIcon", s.BRAND_INVERTED = "BrandInvertedIcon", s.MATTE_LIGHT = "MatteLightIcon", s.MATTE_DARK = "MatteDarkIcon", s.PASTEL = "PastelIcon", s.PIRATE = "PirateIcon", s.CAMO = "CamoIcon", s.SUNSET = "SunsetIcon", s.GALAXY = "GalaxyIcon", s.Y2K = "Y2KIcon", s.CHERRY_BLOSSOM = "CherryBlossomIcon", s.BEANIE = "BeanieIcon", s.GAMING = "GamingIcon", s.CIRCUIT = "CircuitIcon", s.HOLO_WAVES = "HoloWavesIcon", s.BLUSH = "BlushIcon", s.ANGRY = "AngryIcon", s.MANGA = "MangaIcon", s.CONTROLLER = "ControllerIcon", s.MUSHROOM = "MushroomIcon", s.BLURPLE_TWILIGHT = "BlurpleTwilightIcon", s.IN_RAINBOWS = "InRainbowsIcon", s.COLOR_WAVE = "ColorWaveIcon", s.MIDNIGHT_PRISM = "MidnightPrismIcon", (o = a || (a = {})).DRIP = "DripIcon", o.SLIMY = "SlimyIcon", o.ZOMBIE = "ZombieIcon", o.CLYDE_STEIN = "ClydeSteinIcon", {
                 ...i,
                 ...r,
                 ...a
             };
             let u = new Map([
-                ["BlurpleTwilightIcon", l.DismissibleContent.BRAND_REFRESH_BLURPLE_TWILIGHT_APP_ICON_BADGE]
+                ["BlurpleTwilightIcon", l.DismissibleContent.BRAND_REFRESH_BLURPLE_TWILIGHT_APP_ICON_BADGE],
+                ["InRainbowsIcon", l.DismissibleContent.PRIDE_ICONS],
+                ["MidnightPrismIcon", l.DismissibleContent.PRIDE_ICONS],
+                ["ColorWaveIcon", l.DismissibleContent.PRIDE_ICONS]
             ])
         },
         630117: function(e, t, n) {
@@ -88669,8 +88672,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293331", "293331"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293331")), t = 0), t
+                let t = parseInt((e = "293347", "293347"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293347")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117210,8 +117213,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293331",
-                    versionHash: "3ca000ef42970fcbc9e55c67f4c9f5d25ad4a001"
+                    buildNumber: "293347",
+                    versionHash: "3e5b2ae242d63baf03b1ab56497de407e8b20535"
                 }
             }
             n.r(t), n.d(t, {
@@ -118540,7 +118543,7 @@
                 }
             }), n("47120");
             var i = n("524437");
-            let r = new Set([i.DismissibleContent.APPLICATION_COMMAND_TOOLTIP, i.DismissibleContent.NOW_PLAYING_CONSENT_CARD, i.DismissibleContent.GUILD_INSIGHTS_ACCESS_RATE_NEW, i.DismissibleContent.FORUM_CHANNEL_UPSELL_MODAL, i.DismissibleContent.FORUM_CHANNEL_HELPER_CARD, i.DismissibleContent.AUTH_SESSIONS_NEW, i.DismissibleContent.COMMANDS_MIGRATION_UPSELL_MODAL, i.DismissibleContent.HUB_BACK_TO_SCHOOL_UPSELL, i.DismissibleContent.CHANNEL_BROWSER_NUX, i.DismissibleContent.BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL, i.DismissibleContent.GG_ANNOUNCEMENT, i.DismissibleContent.GUILD_ONBOARDING_UPSELL_MODAL, i.DismissibleContent.SEASONAL_GIFTING_COACHMARK_2022, i.DismissibleContent.CLIENT_THEMES_SETTINGS_BADGE, i.DismissibleContent.CLIENT_THEMES_SPARKLE_PREVIEW, i.DismissibleContent.QUEST_1_COMPLETION_TOOLTIP, i.DismissibleContent.SOUNDBOARD_VOLUME_EDUCATION, i.DismissibleContent.REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE, i.DismissibleContent.GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE, i.DismissibleContent.CUSTOM_CALL_SOUNDS_PICKER_UPSELL, i.DismissibleContent.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK, i.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE, i.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_BADGE, i.DismissibleContent.WHATS_NEW_AVATAR_DECOS_FLIP, i.DismissibleContent.WHATS_NEW_PROFILE_EFFECTS_FLIP, i.DismissibleContent.RECURRING_CONTACT_SYNC_PROMPT, i.DismissibleContent.WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE, i.DismissibleContent.WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE, i.DismissibleContent.NUX_GUILD_CHANNEL_EXPLAINER, i.DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE, i.DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP, i.DismissibleContent.FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS, i.DismissibleContent.VOICE_CALL_BG_PICKER_NEW_BADGE, i.DismissibleContent.TENURE_REWARD_PENDING, i.DismissibleContent.TENURE_REWARD_REDEEMABLE, i.DismissibleContent.ACTIVITIES_CHAT_MENU_NEW_BADGE, i.DismissibleContent.ACTIVITIES_CHAT_BUTTON_NUX_V2, i.DismissibleContent.TENURE_REWARD_REDEEMABLE_CONFETTI, i.DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, i.DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER, i.DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER, i.DismissibleContent.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE, i.DismissibleContent.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK, i.DismissibleContent.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE, i.DismissibleContent.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP, i.DismissibleContent.CHANNEL_LIST_CLAN_ADMIN_UPSELL, i.DismissibleContent.GUILD_LIST_CLAN_ADMIN_UPSELL, i.DismissibleContent.BRAND_REFRESH_NEW_BADGE, i.DismissibleContent.BRAND_REFRESH_CLIENT_THEME_BADGE, i.DismissibleContent.APP_LAUNCHER_USER_APP_BETA_NOTICE])
+            let r = new Set([i.DismissibleContent.APPLICATION_COMMAND_TOOLTIP, i.DismissibleContent.NOW_PLAYING_CONSENT_CARD, i.DismissibleContent.GUILD_INSIGHTS_ACCESS_RATE_NEW, i.DismissibleContent.FORUM_CHANNEL_UPSELL_MODAL, i.DismissibleContent.FORUM_CHANNEL_HELPER_CARD, i.DismissibleContent.AUTH_SESSIONS_NEW, i.DismissibleContent.COMMANDS_MIGRATION_UPSELL_MODAL, i.DismissibleContent.HUB_BACK_TO_SCHOOL_UPSELL, i.DismissibleContent.CHANNEL_BROWSER_NUX, i.DismissibleContent.BLACK_FRIDAY_2022_BOGO_ANNOUNCEMENT_MODAL, i.DismissibleContent.GG_ANNOUNCEMENT, i.DismissibleContent.GUILD_ONBOARDING_UPSELL_MODAL, i.DismissibleContent.SEASONAL_GIFTING_COACHMARK_2022, i.DismissibleContent.CLIENT_THEMES_SETTINGS_BADGE, i.DismissibleContent.CLIENT_THEMES_SPARKLE_PREVIEW, i.DismissibleContent.QUEST_1_COMPLETION_TOOLTIP, i.DismissibleContent.SOUNDBOARD_VOLUME_EDUCATION, i.DismissibleContent.REMIXING_ENTRYPOINT_EDUCATION_UPSELLS_MOBILE, i.DismissibleContent.GUEST_VOICE_INVITES_MENU_ITEM_NEW_BADGE, i.DismissibleContent.CUSTOM_CALL_SOUNDS_PICKER_UPSELL, i.DismissibleContent.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK, i.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE, i.DismissibleContent.DEKSTOP_CUSTOM_APP_ICON_BADGE, i.DismissibleContent.WHATS_NEW_AVATAR_DECOS_FLIP, i.DismissibleContent.WHATS_NEW_PROFILE_EFFECTS_FLIP, i.DismissibleContent.RECURRING_CONTACT_SYNC_PROMPT, i.DismissibleContent.WHATS_NEW_AVATAR_DECOS_NOTIF_BADGE, i.DismissibleContent.WHATS_NEW_PROFILE_EFFECTS_NOTIF_BADGE, i.DismissibleContent.NUX_GUILD_CHANNEL_EXPLAINER, i.DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_MOBILE, i.DismissibleContent.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP, i.DismissibleContent.FRIEND_FINDER_CONTACTS_IN_NOTIFICATIONS, i.DismissibleContent.VOICE_CALL_BG_PICKER_NEW_BADGE, i.DismissibleContent.TENURE_REWARD_PENDING, i.DismissibleContent.TENURE_REWARD_REDEEMABLE, i.DismissibleContent.ACTIVITIES_CHAT_MENU_NEW_BADGE, i.DismissibleContent.ACTIVITIES_CHAT_BUTTON_NUX_V2, i.DismissibleContent.TENURE_REWARD_REDEEMABLE_CONFETTI, i.DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, i.DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER, i.DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER, i.DismissibleContent.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GDM_DM_BADGE, i.DismissibleContent.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_COACHMARK, i.DismissibleContent.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE, i.DismissibleContent.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP, i.DismissibleContent.CHANNEL_LIST_CLAN_ADMIN_UPSELL, i.DismissibleContent.GUILD_LIST_CLAN_ADMIN_UPSELL, i.DismissibleContent.BRAND_REFRESH_NEW_BADGE, i.DismissibleContent.BRAND_REFRESH_CLIENT_THEME_BADGE, i.DismissibleContent.APP_LAUNCHER_USER_APP_BETA_NOTICE, i.DismissibleContent.PRIDE_ICONS_APPEARANCE_BADGE])
         },
         883904: function(e, t, n) {
             "use strict";
@@ -173703,8 +173706,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715721616617",
-                                    build_number: "293331"
+                                    built_at: "1715722615885",
+                                    build_number: "293347"
                                 }
                             },
                             retries: 1
@@ -214655,50 +214658,57 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return c
+                    return I
                 }
             });
             var i = n("735250");
             n("470079");
-            var r = n("10683"),
-                a = n("793080"),
-                s = n("481060"),
-                o = n("785717"),
-                l = n("702557"),
-                u = n("537387"),
-                d = n("689938"),
-                _ = n("66073");
+            var r = n("120356"),
+                a = n.n(r),
+                s = n("10683"),
+                o = n("793080"),
+                l = n("481060"),
+                u = n("785717"),
+                d = n("702557"),
+                _ = n("537387"),
+                c = n("689938"),
+                E = n("66073");
 
-            function c(e) {
+            function I(e) {
                 let {
                     user: t,
-                    onOpenProfile: n
+                    isHovering: n,
+                    onOpenProfile: r
                 } = e, {
-                    trackUserProfileAction: c
-                } = (0, o.useUserProfileAnalyticsContext)(), {
-                    note: E
-                } = (0, l.default)(t.id), I = () => {
-                    c({
+                    trackUserProfileAction: I
+                } = (0, u.useUserProfileAnalyticsContext)(), {
+                    note: T
+                } = (0, d.default)(t.id), f = () => {
+                    I({
                         action: "PRESS_ADD_NOTE"
-                    }), n()
+                    }), r()
                 };
-                return null == E || "" === E ? (0, i.jsx)(u.default, {
-                    text: d.default.Messages.ADD_NOTE,
-                    "aria-label": d.default.Messages.ADD_NOTE,
-                    icon: a.PaperPlusIcon,
-                    onClick: I,
-                    color: _.color,
-                    look: s.Button.Looks.BLANK,
-                    className: _.button
-                }) : (0, i.jsx)(u.default, {
-                    text: E,
-                    "aria-label": E,
-                    icon: r.PaperIcon,
-                    onClick: I,
-                    color: _.color,
-                    look: s.Button.Looks.BLANK,
-                    className: _.button,
-                    tooltipClassName: _.tooltip
+                return null == T || "" === T ? (0, i.jsx)(_.default, {
+                    text: c.default.Messages.ADD_NOTE,
+                    "aria-label": c.default.Messages.ADD_NOTE,
+                    icon: o.PaperPlusIcon,
+                    onClick: f,
+                    color: E.color,
+                    look: l.Button.Looks.BLANK,
+                    className: a()(E.button, {
+                        [E.visible]: n
+                    })
+                }) : (0, i.jsx)(_.default, {
+                    text: T,
+                    "aria-label": T,
+                    icon: s.PaperIcon,
+                    onClick: f,
+                    color: E.color,
+                    look: l.Button.Looks.BLANK,
+                    className: a()(E.button, {
+                        [E.visible]: n
+                    }),
+                    tooltipClassName: E.tooltip
                 })
             }
         },
@@ -217383,63 +217393,65 @@
                     currentUser: n,
                     displayProfile: A,
                     guild: m,
-                    onOpenProfile: N,
-                    channelId: p,
-                    onClose: O
+                    isHovering: N,
+                    onOpenProfile: p,
+                    channelId: O,
+                    onClose: C
                 } = e, {
-                    moreUserDetailsEnabled: C
+                    moreUserDetailsEnabled: R
                 } = (0, o.useSimplifiedProfileExperiment)({
                     location: "BiteSizeProfileBody"
-                }), R = s.default.getName(null == m ? void 0 : m.id, p, t), g = (0, r.useStateFromStores)([a.default], () => a.default.hidePersonalInformation);
+                }), g = s.default.getName(null == m ? void 0 : m.id, O, t), L = (0, r.useStateFromStores)([a.default], () => a.default.hidePersonalInformation);
                 return (0, i.jsxs)("div", {
                     className: h.body,
                     children: [(0, i.jsx)(d.default, {
                         user: t,
                         profileType: S.UserProfileTypes.BITE_SIZE,
-                        onOpenProfile: () => N({
+                        onOpenProfile: () => p({
                             autoFocusNote: !1
                         }),
                         guildId: null == m ? void 0 : m.id,
                         usernameIcon: t.hasAvatarForGuild(null == m ? void 0 : m.id) && (0, i.jsx)(c.default, {
                             user: t,
-                            nickname: R
+                            nickname: g
                         }),
                         pronouns: null == A ? void 0 : A.pronouns,
                         tags: (0, i.jsx)(_.UserProfileBadgesTag, {
                             displayProfile: A,
-                            onClose: O
+                            onClose: C
                         }),
                         nicknameIcons: (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)(l.default, {
                                 userId: t.id
-                            }), C && !g && (0, i.jsx)(u.default, {
+                            }), R && !L && (0, i.jsx)(u.default, {
                                 user: t,
-                                onOpenProfile: () => N({
+                                isHovering: N,
+                                onOpenProfile: () => p({
                                     autoFocusNote: !0
                                 })
                             })]
                         })
                     }), t.id !== n.id && (0, i.jsx)(f.default, {
                         user: t,
-                        onOpenProfile: e => N({
+                        onOpenProfile: e => p({
                             section: e,
                             autoFocusNote: !1
                         })
-                    }), C && (0, i.jsx)(I.default, {
+                    }), R && (0, i.jsx)(I.default, {
                         user: t,
                         bio: null == A ? void 0 : A.bio,
-                        hidePersonalInformation: g,
-                        onClose: O
+                        hidePersonalInformation: L,
+                        onClose: C
                     }), (0, i.jsx)(E.default, {
                         user: t,
                         guild: m,
-                        channelId: p,
-                        onClose: O
+                        channelId: O,
+                        onClose: C
                     }), null != m && (0, i.jsx)(T.default, {
                         user: t,
                         currentUser: n,
                         guild: m,
-                        onOpenProfile: () => N({
+                        onOpenProfile: () => p({
                             autoFocusNote: !1
                         })
                     })]
@@ -218021,6 +218033,7 @@
                                     currentUser: B,
                                     displayProfile: F,
                                     guild: k,
+                                    isHovering: H,
                                     onOpenProfile: Y,
                                     channelId: v,
                                     onClose: y
@@ -252577,7 +252590,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3ca000ef42970fcbc9e55c67f4c9f5d25ad4a001"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3e5b2ae242d63baf03b1ab56497de407e8b20535"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281585,7 +281598,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293331"
+                                build_number: "293347"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288943,7 +288956,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293331", "293331"), 10);
+                let a = parseInt((n = "293347", "293347"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -316607,4 +316620,4 @@
         }
     }
 ]);
-//# sourceMappingURL=42261.d73a2400a4c298b1d94a.js.map
+//# sourceMappingURL=42261.eb01b3e27c8455a2faef.js.map
