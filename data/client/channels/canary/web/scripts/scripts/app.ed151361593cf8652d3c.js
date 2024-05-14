@@ -294,6 +294,7 @@
                 characterBackground: "characterBackground__1966f",
                 loggingIn: "loggingIn_be6510",
                 logo: "logo__61b7c",
+                logoWithText: "logoWithText_b6d5d4",
                 splashBackground: "splashBackground_b22a7b"
             }
         },
@@ -22767,6 +22768,15 @@
                 content: "content_acf450"
             }
         },
+        956506: function(e) {
+            "use strict";
+            e.exports = {
+                inner: "inner__5276f",
+                outer: "outer__69f24",
+                progress: "progress__5a2a1",
+                progressBar: "progressBar__3fee8"
+            }
+        },
         481900: function(e) {
             "use strict";
             e.exports = {
@@ -22781,6 +22791,7 @@
                 heroAssetTint: "heroAssetTint__7e70f",
                 heroAssetWrapper: "heroAssetWrapper__1bc27",
                 partnerBranding: "partnerBranding__46b3f",
+                postEnrollmentBackground: "postEnrollmentBackground__79a8d",
                 preEnrollmentWrapper: "preEnrollmentWrapper_de7def",
                 questAvailable: "questAvailable_d9e1f5",
                 questProgressBar: "questProgressBar__3d3fa",
@@ -22794,13 +22805,20 @@
             "use strict";
             e.exports = {
                 contentExpanded: "contentExpanded__9eb0c",
+                contentExpandedAccepted: "contentExpandedAccepted__1b9ab",
                 contentInteractable: "contentInteractable__2acd1",
                 cta: "cta_f1dfa0",
                 ctaClaimReward: "ctaClaimReward__68e9b",
+                ctaContainer: "ctaContainer_d3ce3d",
                 description: "description_b0850b",
                 details: "details_ac38e4",
+                divider: "divider_bf4c89",
+                flex: "flex_fcc03e",
+                headerText: "headerText__020fc",
                 heroAsset: "heroAsset__8e1c6",
                 heroAssetWrapper: "heroAssetWrapper__954c7",
+                iconButton: "iconButton_a5db4c",
+                interactiveNormal: "interactiveNormal_a449a5",
                 partnerBranding: "partnerBranding__96958",
                 promotedBadge: "promotedBadge__73648",
                 promotedBadgeIcon: "promotedBadgeIcon__07043",
@@ -22808,14 +22826,17 @@
                 questAcceptedContent: "questAcceptedContent_dc6593",
                 questAcceptedContentCopySubheading: "questAcceptedContentCopySubheading__7fba0",
                 questAcceptedContentHeading: "questAcceptedContentHeading_a32b86",
+                questAcceptedHeader: "questAcceptedHeader_f7d1f7",
                 questProgressRewardTile: "questProgressRewardTile_c72c7a",
                 questPromoContent: "questPromoContent_f910bc",
                 questUnacceptedContent: "questUnacceptedContent_c91b61",
                 rewardTile: "rewardTile__66594",
+                shareIcon: "shareIcon__6b675",
                 submenuIcon: "submenuIcon__4f60b",
                 submenuWrapper: "submenuWrapper__19139",
                 title: "title_de2774",
-                utils: "utils_ab6626"
+                utils: "utils_ab6626",
+                white: "white__5d308"
             }
         },
         862317: function(e) {
