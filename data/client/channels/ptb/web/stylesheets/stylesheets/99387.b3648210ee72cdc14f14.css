@@ -3388,6 +3388,12 @@
     height: 100%
 }
 
+.characterBackground__1966f .logoWithText_b6d5d4 {
+    position: relative;
+    top: 48px;
+    left: 48px
+}
+
 .characterBackground__1966f .logo__61b7c {
     display: block;
     position: fixed;
@@ -58716,6 +58722,35 @@ div:has(>div>.modal__06f49) {
     overflow: hidden
 }
 
+.outer__69f24 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center
+}
+
+.progressBar__3fee8 {
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    shape-rendering: geometricPrecision
+}
+
+.progress__5a2a1 {
+    transform: rotate(270deg);
+    transform-origin: 50%50%;
+    transition: stroke-dashoffset.35s
+}
+
+.inner__5276f {
+    border-radius: 50%;
+    margin: 5px;
+    overflow: visible
+}
+
 .contentCollapsed__82666 {
     bottom: 0;
     box-sizing: border-box;
@@ -58738,9 +58773,7 @@ div:has(>div>.modal__06f49) {
 }
 
 .contentCollapsedAccepted__3a865 {
-    padding-bottom: 6px;
-    padding-right: 8px;
-    padding-top: 6px
+    padding: 0 12px
 }
 
 .contentCollapsedExpanded__6173a {
@@ -58751,6 +58784,18 @@ div:has(>div>.modal__06f49) {
     align-items: center;
     display: flex;
     justify-content: space-between
+}
+
+.postEnrollmentBackground__79a8d {
+    background-color: var(--background-secondary-alt);
+    border-radius: 8px 8px 0 0;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1
 }
 
 .partnerBranding__46b3f {
@@ -58780,17 +58825,17 @@ div:has(>div>.modal__06f49) {
 
 .questProgressWrapper__88aa7 {
     align-items: center;
-    display: flex
+    display: flex;
+    gap: 8px
 }
 
 .questProgressRewardTile_ce3d11 {
-    border-radius: 4px;
+    border-radius: 50%;
     box-shadow: var(--shadow-high);
     display: block;
-    flex: 0 0 auto;
-    margin-right: 8px;
-    height: 28px;
-    width: 28px
+    flex: 1;
+    height: 32px;
+    width: 32px
 }
 
 .questProgressBar__3d3fa,
@@ -58864,6 +58909,10 @@ div:has(>div>.modal__06f49) {
     z-index: 1
 }
 
+.contentExpandedAccepted__1b9ab {
+    padding: 12px
+}
+
 .contentInteractable__2acd1 {
     pointer-events: all
 }
@@ -58896,9 +58945,20 @@ div:has(>div>.modal__06f49) {
     height: 254px
 }
 
-.questAcceptedContent_dc6593 .utils_ab6626 {
-    align-items: flex-start;
-    margin-bottom: 6px
+.questAcceptedContent_dc6593 {
+    padding-bottom: 12px
+}
+
+.questAcceptedHeader_f7d1f7 {
+    display: flex;
+    flex-direction: row
+}
+
+.divider_bf4c89 {
+    height: 1px;
+    width: 100%;
+    background-color: var(--background-modifier-hover);
+    margin-bottom: 12px
 }
 
 .details_ac38e4 {
@@ -58934,12 +58994,19 @@ div:has(>div>.modal__06f49) {
 }
 
 .submenuIcon__4f60b {
-    color: var(--white-500);
     height: 16px;
     left: 2px;
     position: absolute;
     top: 2px;
     width: 16px
+}
+
+.interactiveNormal_a449a5 {
+    color: var(--interactive-normal)
+}
+
+.white__5d308 {
+    color: var(--white-500)
 }
 
 .questAcceptedContent_dc6593 .submenuIcon__4f60b {
@@ -58984,6 +59051,35 @@ div:has(>div>.modal__06f49) {
 .cta_f1dfa0 {
     flex: 0 0 auto;
     margin-top: 8px
+}
+
+.flex_fcc03e {
+    flex: 1
+}
+
+.headerText__020fc {
+    opacity: .7
+}
+
+.iconButton_a5db4c {
+    padding: 8px;
+    background-color: var(--background-modifier-hover)
+}
+
+.iconButton_a5db4c:hover {
+    background-color: var(--background-modifier-accent)
+}
+
+.shareIcon__6b675 {
+    color: var(--interactive-normal);
+    display: flex;
+    align-items: center
+}
+
+.ctaContainer_d3ce3d {
+    display: flex;
+    gap: 4px;
+    margin-top: 12px
 }
 
 .ctaClaimReward__68e9b {
@@ -59111,7 +59207,8 @@ div:has(>div>.modal__06f49) {
     left: 0;
     position: absolute;
     width: 100%;
-    z-index: 2
+    z-index: 2;
+    border-radius: 8px 8px 0 0
 }
 
 .contentWrapper_bfbca4:after {
@@ -137075,4 +137172,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.e9d3ece61a6b019d3749.css.map*/
+/*# sourceMappingURL=99387.b3648210ee72cdc14f14.css.map*/
