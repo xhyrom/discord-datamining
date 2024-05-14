@@ -33502,11 +33502,6 @@ html .progress__00e29 {
     margin-right: 16px
 }
 
-@font-face {
-    font-family: Corinthia;
-    src: url(/assets/e4cd97e442a56e8f5850.ttf)
-}
-
 .container_b8f6a6 {
     position: relative
 }
@@ -33592,7 +33587,7 @@ html .progress__00e29 {
 
 .signatureText__4a423 {
     color: var(--border-strong);
-    font-family: Corinthia, cursive;
+    font-family: var(--font-clan-signature);
     font-size: 32px;
     font-weight: 400;
     line-height: 32px;
@@ -33699,16 +33694,6 @@ html .progress__00e29 {
     display: none
 }
 
-@font-face {
-    font-family: Corinthia;
-    src: url(/assets/e4cd97e442a56e8f5850.ttf)
-}
-
-@font-face {
-    font-family: Fraunces;
-    src: url(/assets/4b1803acc2067756e573.ttf)
-}
-
 .scrollBg_bf01f4 {
     position: absolute;
     top: 24px;
@@ -33777,7 +33762,7 @@ html .progress__00e29 {
 }
 
 .overviewText__9e4a2 {
-    font-family: Fraunces, serif;
+    font-family: var(--font-clan-body);
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
@@ -33842,7 +33827,7 @@ html .progress__00e29 {
 }
 
 .signatureText_ba8ce1 {
-    font-family: Corinthia, cursive;
+    font-family: var(--font-clan-signature);
     font-size: 32px;
     font-weight: 400;
     line-height: 32px;
@@ -33886,11 +33871,6 @@ html .progress__00e29 {
 
 .theme-dark .scrollBg_bf01f4 .scrollBgBottom__952b4:after {
     background-color: var(--background-secondary)
-}
-
-@font-face {
-    font-family: Fraunces;
-    src: url(/assets/4b1803acc2067756e573.ttf)
 }
 
 .modal_a2e1b0 {
@@ -34011,21 +33991,21 @@ html .progress__00e29 {
 }
 
 .charterHeaderText_e9da53 {
-    font-family: Fraunces, serif;
+    font-family: var(--font-clan-body);
     font-weight: 300;
     font-size: 24px;
     line-height: 28px
 }
 
 .charterBodyText_bdc8e4 {
-    font-family: Fraunces, serif;
+    font-family: var(--font-clan-body);
     font-weight: 300;
     font-size: 14px;
     line-height: 20px
 }
 
 .establishedDate__2a79a {
-    font-family: Fraunces, serif;
+    font-family: var(--font-clan-body);
     font-weight: 300;
     font-size: 16px;
     line-height: 20px;
@@ -136333,8 +136313,8 @@ div.nagbar_c731ff {
 @font-face {
     font-family: "Fraunces";
     font-style: normal;
-    font-weight: 400;
-    src: url(/assets/d6129d2c7325b2fac2bf.woff2)format("woff2")
+    font-weight: 300 800;
+    src: url(/assets/1e8115068767d9700855.woff2)format("woff2")
 }
 
 :root {
@@ -136344,8 +136324,8 @@ div.nagbar_c731ff {
     --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
         'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
         'Courier New', Courier, monospace;
-    --font-clan-body: Fraunces, 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-clan-signature: Corinthia, 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+    --font-clan-body: Fraunces, 'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-clan-signature: Corinthia, 'gg sans', cursive, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
 :root:lang(el),
@@ -136358,8 +136338,8 @@ div.nagbar_c731ff {
     --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
         'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
         'Courier New', Courier, monospace;
-    --font-clan-body: Fraunces, 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-clan-signature: Corinthia, 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+    --font-clan-body: Fraunces, 'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-clan-signature: Corinthia, 'gg sans', cursive, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
 :root:lang(ko) {
@@ -136372,10 +136352,10 @@ div.nagbar_c731ff {
     --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
         'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
         'Courier New', Courier, monospace;
-    --font-clan-body: Fraunces, 'gg sans', 'Apple SD Gothic Neo', NanumBarunGothic, '맑은 고딕', 'Malgun Gothic', Gulim,
-        굴림, Dotum, 돋움, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-clan-signature: Corinthia, 'gg sans', 'Apple SD Gothic Neo', NanumBarunGothic, '맑은 고딕', 'Malgun Gothic',
-        Gulim, 굴림, Dotum, 돋움, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+    --font-clan-body: Fraunces, 'gg sans', serif, 'Apple SD Gothic Neo', NanumBarunGothic, '맑은 고딕', 'Malgun Gothic',
+        Gulim, 굴림, Dotum, 돋움, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-clan-signature: Corinthia, 'gg sans', cursive, 'Apple SD Gothic Neo', NanumBarunGothic, '맑은 고딕',
+        'Malgun Gothic', Gulim, 굴림, Dotum, 돋움, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
 :root:lang(ja) {
@@ -136388,10 +136368,11 @@ div.nagbar_c731ff {
     --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
         'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
         'Courier New', Courier, monospace;
-    --font-clan-body: Fraunces, 'gg sans', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ,
-        Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-clan-signature: Corinthia, 'gg sans', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN',
-        メイリオ, Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+    --font-clan-body: Fraunces, 'gg sans', serif, 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN',
+        メイリオ, Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-clan-signature: Corinthia, 'gg sans', cursive, 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3',
+        'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, Osaka, 'MS PGothic', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial,
+        sans-serif
 }
 
 :root:lang(zh-CN) {
@@ -136404,10 +136385,10 @@ div.nagbar_c731ff {
     --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
         'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
         'Courier New', Courier, monospace;
-    --font-clan-body: Fraunces, 'gg sans', 'Microsoft YaHei New', 微软雅黑, 'Microsoft Yahei', 'Microsoft JhengHei', 宋体,
-        SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-clan-signature: Corinthia, 'gg sans', 'Microsoft YaHei New', 微软雅黑, 'Microsoft Yahei', 'Microsoft JhengHei',
-        宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
+    --font-clan-body: Fraunces, 'gg sans', serif, 'Microsoft YaHei New', 微软雅黑, 'Microsoft Yahei', 'Microsoft JhengHei',
+        宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-clan-signature: Corinthia, 'gg sans', cursive, 'Microsoft YaHei New', 微软雅黑, 'Microsoft Yahei',
+        'Microsoft JhengHei', 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
 :root:lang(zh-TW) {
@@ -136420,9 +136401,9 @@ div.nagbar_c731ff {
     --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
         'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
         'Courier New', Courier, monospace;
-    --font-clan-body: Fraunces, 'gg sans', 'Microsoft JhengHei', 微軟正黑體, 'Microsoft JhengHei UI', 'Microsoft YaHei',
-        微軟雅黑, 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-clan-signature: Corinthia, 'gg sans', 'Microsoft JhengHei', 微軟正黑體, 'Microsoft JhengHei UI',
+    --font-clan-body: Fraunces, 'gg sans', serif, 'Microsoft JhengHei', 微軟正黑體, 'Microsoft JhengHei UI',
+        'Microsoft YaHei', 微軟雅黑, 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-clan-signature: Corinthia, 'gg sans', cursive, 'Microsoft JhengHei', 微軟正黑體, 'Microsoft JhengHei UI',
         'Microsoft YaHei', 微軟雅黑, 宋体, SimSun, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
@@ -137369,4 +137350,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.569424697065256089a9.css.map*/
+/*# sourceMappingURL=99387.847aa3b3c703be74f386.css.map*/
