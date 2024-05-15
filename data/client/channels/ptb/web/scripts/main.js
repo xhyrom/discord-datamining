@@ -37483,7 +37483,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293787", ", Version Hash: ").concat("336e509138b94215a3c0038bb4bf03fa1e453b51")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293808", ", Version Hash: ").concat("82d84367d2c6a1f0a32e711e54fd89b726a6652e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88735,8 +88735,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293787", "293787"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293787")), t = 0), t
+                let t = parseInt((e = "293808", "293808"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293808")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117323,8 +117323,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293787",
-                    versionHash: "336e509138b94215a3c0038bb4bf03fa1e453b51"
+                    buildNumber: "293808",
+                    versionHash: "82d84367d2c6a1f0a32e711e54fd89b726a6652e"
                 }
             }
             n.r(t), n.d(t, {
@@ -169152,6 +169152,20 @@
             });
             t.default = i
         },
+        817384: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                EMBED_TYPES_WITH_PARSEABLE_FIELDS: function() {
+                    return r
+                },
+                EMBED_TYPES_WITH_SPECIAL_RENDERER: function() {
+                    return a
+                }
+            }), n("47120");
+            var i = n("981631");
+            let r = new Set([i.MessageEmbedTypes.AUTO_MODERATION_MESSAGE, i.MessageEmbedTypes.AUTO_MODERATION_NOTIFICATION, i.MessageEmbedTypes.RICH, i.MessageEmbedTypes.SAFETY_POLICY_NOTICE, i.MessageEmbedTypes.SAFETY_SYSTEM_NOTIFICATION, i.MessageEmbedTypes.VOICE_CHANNEL, i.MessageEmbedTypes.POLL_RESULT]),
+                a = new Set([i.MessageEmbedTypes.AUTO_MODERATION_MESSAGE, i.MessageEmbedTypes.AUTO_MODERATION_NOTIFICATION, i.MessageEmbedTypes.APPLICATION_NEWS, i.MessageEmbedTypes.POST_PREVIEW, i.MessageEmbedTypes.SAFETY_POLICY_NOTICE, i.MessageEmbedTypes.SAFETY_SYSTEM_NOTIFICATION, i.MessageEmbedTypes.VOICE_CHANNEL, i.MessageEmbedTypes.POLL_RESULT])
+        },
         118139: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -173930,8 +173944,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715806838598",
-                                    build_number: "293787"
+                                    built_at: "1715808736007",
+                                    build_number: "293808"
                                 }
                             },
                             retries: 1
@@ -252850,7 +252864,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "336e509138b94215a3c0038bb4bf03fa1e453b51"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "82d84367d2c6a1f0a32e711e54fd89b726a6652e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278498,20 +278512,20 @@
                 sanitizeEmbed: function() {
                     return h
                 }
-            }), n("47120"), n("789020"), n("315314"), n("610138"), n("216116"), n("78328"), n("815648"), n("653041");
+            }), n("789020"), n("315314"), n("610138"), n("216116"), n("78328"), n("815648"), n("47120"), n("653041");
             var i = n("392711"),
                 r = n.n(i),
                 a = n("913527"),
                 s = n.n(a),
                 o = n("866442"),
                 l = n("709054"),
-                u = n("981631");
-            let d = /sketchfab/i,
-                _ = /^https:\/\/sketchfab\.com/i,
-                c = /youtube|steam|imgur|vimeo|sketchfab|soundcloud|streamable|twitch|vid\.me|twitter/i,
-                E = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop$/,
-                I = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
-                T = new Set([u.MessageEmbedTypes.AUTO_MODERATION_MESSAGE, u.MessageEmbedTypes.AUTO_MODERATION_NOTIFICATION, u.MessageEmbedTypes.RICH, u.MessageEmbedTypes.SAFETY_POLICY_NOTICE, u.MessageEmbedTypes.SAFETY_SYSTEM_NOTIFICATION, u.MessageEmbedTypes.VOICE_CHANNEL, u.MessageEmbedTypes.POLL_RESULT]);
+                u = n("981631"),
+                d = n("817384");
+            let _ = /sketchfab/i,
+                c = /^https:\/\/sketchfab\.com/i,
+                E = /youtube|steam|imgur|vimeo|sketchfab|soundcloud|streamable|twitch|vid\.me|twitter/i,
+                I = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop$/,
+                T = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop\/([0-9]+)$/;
 
             function f(e) {
                 let {
@@ -278583,10 +278597,10 @@
                             format: "jpeg"
                         })
                     }), null != i.thumbnail && f(n.video) && function(e, t, n) {
-                        if (null != t && d.test(t.name) || _.test(n.url)) return !1;
+                        if (null != t && _.test(t.name) || c.test(n.url)) return !1;
                         let i = null != n.proxy_url || /^https:/i.test(n.url);
-                        return null != e && 1492472454139 > l.default.extractTimestamp(e) && (i = i && null != t && c.test(t.name)), i
-                    }(t, n.provider, n.video) && (i.video = S(n.video))), T.has(i.type)) {
+                        return null != e && 1492472454139 > l.default.extractTimestamp(e) && (i = i && null != t && E.test(t.name)), i
+                    }(t, n.provider, n.video) && (i.video = S(n.video))), d.EMBED_TYPES_WITH_PARSEABLE_FIELDS.has(i.type)) {
                     var a;
                     let e = null !== (a = n.fields) && void 0 !== a ? a : [];
                     i.fields = e.map(e => {
@@ -278634,7 +278648,7 @@
             }
 
             function N(e) {
-                return e.type === u.MessageEmbedTypes.ARTICLE && null != e.url && (I.test(e.url) || E.test(e.url))
+                return e.type === u.MessageEmbedTypes.ARTICLE && null != e.url && (T.test(e.url) || I.test(e.url))
             }
 
             function p(e, t, n) {
@@ -281891,7 +281905,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293787"
+                                build_number: "293808"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289249,7 +289263,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293787", "293787"), 10);
+                let a = parseInt((n = "293808", "293808"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -316960,4 +316974,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.36c3aef2393a7e909175.js.map
+//# sourceMappingURL=71586.e9540576c3520f84564d.js.map
