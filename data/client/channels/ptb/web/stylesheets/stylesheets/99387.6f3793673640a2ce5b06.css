@@ -54167,7 +54167,7 @@ div:has(>div>.modal__06f49) {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin-right: 16px
+    margin-right: var(--spacing-16)
 }
 
 .container_c29f7c {
@@ -54179,8 +54179,9 @@ div:has(>div>.modal__06f49) {
 
 .userContainerWithPreview__0f0c2 {
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-start
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--spacing-8)
 }
 
 .tagContainer__76b01 {
@@ -54210,13 +54211,30 @@ div:has(>div>.modal__06f49) {
 
 .messagePreview__486f6 {
     display: flex;
-    padding-top: 4px
+    padding-top: var(--spacing-4)
 }
 
 .timestampWithPreview__44a71 {
-    margin-left: 8px;
-    flex-shrink: 0;
-    flex-grow: 1
+    flex-shrink: 0
+}
+
+.mutualGuildsContainer__46675 {
+    display: flex;
+    align-items: center;
+    padding-top: var(--spacing-4);
+    gap: var(--spacing-4)
+}
+
+.mutualGuilds__4caba {
+    display: none;
+    flex-shrink: 1
+}
+
+@media(min-width:900px) {
+    .mutualGuilds__4caba {
+        display: flex;
+        align-items: center
+    }
 }
 
 .container_bf38a1 {
@@ -137407,4 +137425,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.80a98d0d722c31f2e0dd.css.map*/
+/*# sourceMappingURL=99387.6f3793673640a2ce5b06.css.map*/
