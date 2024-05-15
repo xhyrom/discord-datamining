@@ -152,8 +152,9 @@
 <p><strong>Q: Will AutoMod work on Threads and Text Chat in Voice channels?</strong></p>
 <p>A: Yes! When containing a keyword or term from your rules:<br>1. Threads are not created</p>
 <p>2. Messages within a Thread or Text Chat in Voice channel can be blocked and sent as an alert</p>
-<p><strong>Q: Will AutoMod flag messages from bots?</strong></p>
-<p>A: No - all bot alerts and messages will be exempt from AutoMod.</p>
+<p id="docs-internal-guid-f8653126-7fff-1660-f852-5bdb5dd537ae"><strong>Q: Will AutoMod flag messages from apps?</strong></p>
+<p>A: AutoMod will not flag messages from apps that you’ve installed onto your server.</p>
+<p>AutoMod will only flag messages from apps that are installed directly onto a user’s account. Any actions taken by AutoMod will happen on the user who installed the application and first used it in a server. This means if an application creates a message with buttons, additional messages created from interacting with those buttons will also action against the user who used the command initially.</p>
 <p><strong>Q: I have the Commonly Flagged Words rule enabled - why am I still seeing undesirable words?</strong></p>
 <p>A: Our Commonly Flagged Words filters are designed to provide every Community with a quick and effective way to set up defenses against commonly flagged keywords so you don’t have to think about them yourself and build from scratch.</p>
 <p>However, we understand every Community has their own rules and tolerance for certain words. Some communities prefer to maintain a more family-friendly environment, while others accept and encourage rowdier language. And oftentimes it’s not the word itself that causes harm, but the intent with which it’s being used.</p>
