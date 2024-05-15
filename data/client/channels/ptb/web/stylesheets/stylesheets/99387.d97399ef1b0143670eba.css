@@ -12252,26 +12252,18 @@ span.clanTag_f4aadc {
     justify-content: center
 }
 
+.inline__51026 {
+    display: flex;
+    gap: 4px;
+    align-items: center
+}
+
 .content_c9b545 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     flex-grow: 1;
     gap: 2px
-}
-
-.header_ccd333 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 8px
-}
-
-.footer__86943 {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 8px
 }
 
 .pill__2f6a4 {
@@ -12360,12 +12352,23 @@ span.clanTag_f4aadc {
     flex-shrink: 0
 }
 
-.joinButtonWrapper_f4db6e {
+.joinButtonWhatWrapper_fa34bc {
     position: absolute;
     right: 16px;
     background: linear-gradient(90deg, transparent, var(--background-secondary-alt)30px);
     padding-left: 40px;
     height: 70px;
+    display: flex;
+    align-items: center
+}
+
+.joinButtonWhoWrapper__15fe3 {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    background: linear-gradient(90deg, transparent, var(--background-secondary-alt)30px);
+    padding-left: 40px;
+    padding-top: 16px;
     display: flex;
     align-items: center
 }
@@ -95679,7 +95682,10 @@ div.content_aac020 {
 }
 
 .productName__6ec1f {
-    position: relative
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
 }
 
 .wrapper_cc1e1c {
@@ -119101,7 +119107,10 @@ html .invoiceCancelRow__6ff3e {
 }
 
 .productName__52b8d {
-    position: relative
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
 }
 
 .newBadge__10ade {
@@ -119657,7 +119666,10 @@ html .invoiceCancelRow__6ff3e {
 }
 
 .productName__651db {
-    position: relative
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
 }
 
 .newBadge__40fa3 {
@@ -137426,4 +137438,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ee2a155ce53a89a08ee3.css.map*/
+/*# sourceMappingURL=99387.d97399ef1b0143670eba.css.map*/
