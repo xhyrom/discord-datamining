@@ -37477,7 +37477,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293588", ", Version Hash: ").concat("9799a3bdb8169a3a22bfed2dfa78ce49c2323a11")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293598", ", Version Hash: ").concat("92f8a2082f28a8e3b3585fdeaa89246d2ecd78ee")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -43397,7 +43397,6 @@
                 OAUTH2_GO_TO_SERVER_DEFAULT_CTA: "Go to Server",
                 OAUTH2_IP_LOCATION_DISCLOSURE: "Developer may see your IP address while you use this application.",
                 OAUTH2_ADVERTISEMENTS_DISCLOSURE: "Developer may show ads while you use this application.",
-                OAUTH2_UNKNOWN_DISCLOSURE: "Unknown Developer disclosure.",
                 SETTINGS_TWO_FA: "Multi-Factor Authentication",
                 TWO_FA: "Authenticator App",
                 TWO_FA_DESCRIPTION: "Configuring an authenticator app is a good way to add an extra layer of security to your Discord account to make sure that only you have the ability to log in.",
@@ -81609,7 +81608,7 @@
                     case r.ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS:
                         return s.default.Messages.OAUTH2_ADVERTISEMENTS_DISCLOSURE;
                     default:
-                        return s.default.Messages.OAUTH2_UNKNOWN_DISCLOSURE
+                        return null
                 }
             }
         },
@@ -88731,8 +88730,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293588", "293588"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293588")), t = 0), t
+                let t = parseInt((e = "293598", "293598"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293598")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117297,8 +117296,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293588",
-                    versionHash: "9799a3bdb8169a3a22bfed2dfa78ce49c2323a11"
+                    buildNumber: "293598",
+                    versionHash: "92f8a2082f28a8e3b3585fdeaa89246d2ecd78ee"
                 }
             }
             n.r(t), n.d(t, {
@@ -173755,8 +173754,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715785536094",
-                                    build_number: "293588"
+                                    built_at: "1715788448998",
+                                    build_number: "293598"
                                 }
                             },
                             retries: 1
@@ -176585,7 +176584,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return O
+                    return C
                 }
             }), n("789020"), n("315314"), n("610138"), n("216116"), n("78328"), n("815648"), n("47120");
             var i = n("735250");
@@ -176609,59 +176608,70 @@
                 m = n("231338"),
                 N = n("689938"),
                 p = n("236099");
+            let O = e => {
+                switch (e) {
+                    case l.ApplicationDisclosure.IP_LOCATION:
+                        return d.default;
+                    case l.ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS:
+                        return s.EmbedIcon;
+                    default:
+                        return null
+                }
+            };
 
-            function O(e) {
+            function C(e) {
                 var t;
                 let n, {
                         application: r,
                         scopes: a,
-                        redirectUri: o,
-                        approximateGuildCount: O,
-                        isEmbeddedFlow: R,
-                        disclosures: g
+                        redirectUri: s,
+                        approximateGuildCount: o,
+                        isEmbeddedFlow: d,
+                        disclosures: C
                     } = e,
-                    L = new Date(f.default.extractTimestamp(r.id)),
-                    v = (0, h.getSecurityMessage)(a),
-                    D = (0, T.hasFlag)(null !== (t = r.flags) && void 0 !== t ? t : 0, A.ApplicationFlags.EMBEDDED);
-                if (null != o && !D && !R) {
-                    let e = new URL(o);
+                    g = new Date(f.default.extractTimestamp(r.id)),
+                    L = (0, h.getSecurityMessage)(a),
+                    v = (0, T.hasFlag)(null !== (t = r.flags) && void 0 !== t ? t : 0, A.ApplicationFlags.EMBEDDED);
+                if (null != s && !v && !d) {
+                    let e = new URL(s);
                     n = null != e.host && e.host.length > 0 ? e.origin : e.href
                 }
                 return (0, i.jsxs)("div", {
                     className: p.applicationDetails,
-                    children: [null != n ? (0, i.jsx)(C, {
+                    children: [null != n ? (0, i.jsx)(R, {
                         className: p.redirectWarning,
                         icon: _.default,
                         text: N.default.Messages.OAUTH2_DETAILS_REDIRECT.format({
                             origin: n
                         })
-                    }) : null, (0, i.jsx)(C, {
+                    }) : null, (0, i.jsx)(R, {
                         icon: c.default,
                         text: (0, S.getApplicationDetailsText)(r)
-                    }), (0, i.jsx)(C, {
+                    }), (0, i.jsx)(R, {
                         icon: u.default,
                         text: N.default.Messages.OAUTH2_DETAILS_CREATION_DATE.format({
-                            date: L
+                            date: g
                         })
-                    }), a.includes(m.OAuth2Scopes.BOT) && null != O ? (0, i.jsx)(C, {
+                    }), a.includes(m.OAuth2Scopes.BOT) && null != o ? (0, i.jsx)(R, {
                         icon: E.default,
                         text: N.default.Messages.OAUTH2_DETAILS_GUILDS.format({
-                            guildCount: O
+                            guildCount: o
                         })
-                    }) : null, (0, i.jsx)(C, {
+                    }) : null, (0, i.jsx)(R, {
                         icon: I.default,
-                        text: v
-                    }), null != g && g.includes(l.ApplicationDisclosure.IP_LOCATION) ? (0, i.jsx)(C, {
-                        icon: d.default,
-                        text: N.default.Messages.OAUTH2_IP_LOCATION_DISCLOSURE
-                    }) : null, null != g && g.includes(l.ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS) ? (0, i.jsx)(C, {
-                        icon: s.EmbedIcon,
-                        text: N.default.Messages.OAUTH2_ADVERTISEMENTS_DISCLOSURE
+                        text: L
+                    }), null != C ? C.map(e => {
+                        let t = (0, l.getTextForDisclosure)(e),
+                            n = O(e);
+                        return null != n && null != t ? (0, i.jsx)(R, {
+                            icon: n,
+                            text: t
+                        }) : null
                     }) : null]
                 })
             }
 
-            function C(e) {
+            function R(e) {
                 let {
                     icon: t,
                     text: n,
@@ -252677,7 +252687,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9799a3bdb8169a3a22bfed2dfa78ce49c2323a11"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "92f8a2082f28a8e3b3585fdeaa89246d2ecd78ee"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281685,7 +281695,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293588"
+                                build_number: "293598"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289043,7 +289053,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293588", "293588"), 10);
+                let a = parseInt((n = "293598", "293598"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -316714,4 +316724,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.a29bb2034a04c73ba9b8.js.map
+//# sourceMappingURL=71586.0d1f57d8d1c18bb772e7.js.map
