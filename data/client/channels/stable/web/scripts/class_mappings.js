@@ -7432,6 +7432,7 @@
                 clanEnvelopeTop: "clanEnvelopeTop_bf09a8",
                 joinWFS: "joinWFS_b2bee7",
                 joinWFSContainer: "joinWFSContainer_feee17",
+                joinWFSLink: "joinWFSLink_fee015",
                 reserveButton: "reserveButton_c5765e",
                 spacer: "spacer__960c0",
                 upsellBackButton: "upsellBackButton__339ae",
@@ -15650,6 +15651,7 @@
                 cardImageIcon: "cardImageIcon__1bd75",
                 cardImageIconContainer: "cardImageIconContainer__801a1",
                 cardTypeIcon: "cardTypeIcon__1dd99",
+                cards: "cards__3f65d",
                 container: "container_a88e31",
                 emptyStateCardContainer: "emptyStateCardContainer_daadc2",
                 emptyStatePrompt: "emptyStatePrompt__43e42",
@@ -15671,6 +15673,7 @@
             e.exports = {
                 actions: "actions_f9b6b2",
                 categoryIcon: "categoryIcon__79c68",
+                clickableContainer: "clickableContainer__6a669",
                 container: "container__0998c",
                 content: "content_c9b545",
                 footer: "footer__86943",
@@ -15678,7 +15681,9 @@
                 groupAvatar: "groupAvatar__4cf21",
                 header: "header_ccd333",
                 image: "image__75373",
+                imageIcon: "imageIcon_fdf820",
                 joinButton: "joinButton__081d8",
+                joinButtonWrapper: "joinButtonWrapper_f4db6e",
                 liveBadge: "liveBadge__4290f",
                 multiLineTitle: "multiLineTitle__68afa",
                 pill: "pill__2f6a4",
@@ -22795,6 +22800,14 @@
                 outer: "outer__69f24",
                 progress: "progress__5a2a1",
                 progressBar: "progressBar__3fee8"
+            }
+        },
+        977524: function(e) {
+            "use strict";
+            e.exports = {
+                background: "background_ff581d",
+                confetti: "confetti__98722",
+                wrapper: "wrapper_a1297f"
             }
         },
         481900: function(e) {
