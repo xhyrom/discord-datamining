@@ -6359,6 +6359,7 @@
                 interactionsContainer: "interactionsContainer__97fe3",
                 interactionsContainerHeader: "interactionsContainerHeader_a937d2",
                 joinPromptContainer: "joinPromptContainer_e5abcb",
+                maybeClickable: "maybeClickable__0a29f",
                 popout: "popout_cfa8bc",
                 popoutBlockedWarningIcon: "popoutBlockedWarningIcon_a01b83",
                 popoutContentBody: "popoutContentBody_f9fe14",

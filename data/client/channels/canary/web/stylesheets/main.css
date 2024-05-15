@@ -43488,6 +43488,18 @@ img.thumbnail__18ece {
     gap: 0
 }
 
+.maybeClickable__0a29f[role=button] {
+    cursor: pointer
+}
+
+.maybeClickable__0a29f[role=button]:hover .popoutTextPrimary_d83570,
+.maybeClickable__0a29f[role=button]:hover .popoutTextSecondary__579ec,
+.maybeClickable__0a29f[role=button]:focus-visible .popoutTextPrimary_d83570,
+.maybeClickable__0a29f[role=button]:focus-visible .popoutTextSecondary__579ec {
+    -webkit-text-decoration: underline;
+    text-decoration: underline
+}
+
 .container__92138 {
     align-items: center;
     background-color: var(--content-inventory-overlay-ui-mod-bg);
@@ -137454,4 +137466,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.467be12f9512b43ea0b4.css.map*/
+/*# sourceMappingURL=99387.36e9ce5beabf2e79856b.css.map*/
