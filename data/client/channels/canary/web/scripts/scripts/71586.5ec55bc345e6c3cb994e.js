@@ -37477,7 +37477,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293575", ", Version Hash: ").concat("d0e53a0106b9c4604aae2ecd006e4103a4cbb211")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293582", ", Version Hash: ").concat("3fb64f71d0f49d9af8f0de80713443817c8d1a5c")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56447,7 +56447,7 @@
                 CLAN_SETUP_CUSTOMIZE_LOOK_TITLE: "Customize your Guild's look",
                 CLAN_SETUP_CUSTOMIZE_LOOK_SUBTITLE: "This is how your Guild will appear to prospective members in the Guild finder and beyond. You're almost ready to recruit!",
                 CLAN_SETUP_CUSTOMIZE_HELP_TEXT: "Maxmimum 4 characters, alphabet (A-Z) and numbers only",
-                CLAN_SETUP_TAG_PLACEHOLDER: "GGEZ",
+                CLAN_SETUP_TAG_PLACEHOLDER: "GLHF",
                 CLAN_SETUP_SIGN_TITLE: "You're almost done!",
                 CLAN_SETUP_SIGN_SUBTITLE: "One last step - sign the charter to become a Guild.",
                 CLAN_SETUP_OPTIONAL: "Optional",
@@ -88731,8 +88731,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293575", "293575"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293575")), t = 0), t
+                let t = parseInt((e = "293582", "293582"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293582")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103852,37 +103852,37 @@
                 G = new Set([...y, ...U, ...b]),
                 w = new Set(["Bulgarian", "Chinese (Simplified)", "Chinese (Traditional)", "Croatian", "Czech", "Danish", "Dutch", "English", "Finnish", "French", "German", "Greek", "Hindi", "Hungarian", "Italian", "Japanese", "Korean", "Lithuanian", "Norwegian", "Polish", "Portuguese", "Romanian", "Russian", "Spanish", "Swedish", "Thai", "Turkish", "Ukrainian", "Vietnamese"]),
                 B = new Set(["anime", "fanart", "venting", "movie nights", "pirate shows", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pics", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "horses", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1", "roman history"]);
-            (l = r || (r = {}))[l.NIGHT_SKY = 0] = "NIGHT_SKY", l[l.CASTLE = 1] = "CASTLE", l[l.WORLD_MAP = 2] = "WORLD_MAP", l[l.SEA_FOAM = 3] = "SEA_FOAM", l[l.WARP_TUNNEL = 4] = "WARP_TUNNEL", l[l.HOUSE = 5] = "HOUSE", l[l.HEIGHTMAP = 6] = "HEIGHTMAP", l[l.MESH = 7] = "MESH", l[l.SPATTER = 8] = "SPATTER", (u = a || (a = {})).BOULDER = "boulder", u.CASCADE = "cascade", u.THUNDER = "thunder", u.SOUL = "soul", u.MARSH = "marsh", u.VOLCANO = "volcano", u.EARTH = "earth", u.ZEPHYR = "zephyr";
+            (l = r || (r = {}))[l.NIGHT_SKY = 0] = "NIGHT_SKY", l[l.CASTLE = 1] = "CASTLE", l[l.WORLD_MAP = 2] = "WORLD_MAP", l[l.SEA_FOAM = 3] = "SEA_FOAM", l[l.WARP_TUNNEL = 4] = "WARP_TUNNEL", l[l.HOUSE = 5] = "HOUSE", l[l.HEIGHTMAP = 6] = "HEIGHTMAP", l[l.MESH = 7] = "MESH", l[l.SPATTER = 8] = "SPATTER", (u = a || (a = {})).BOULDER = "Boulder", u.CASCADE = "Cascade", u.THUNDER = "Thunder", u.SOUL = "Soul", u.MARSH = "Marsh", u.VOLCANO = "Volcano", u.EARTH = "Earth", u.ZEPHYR = "Zephyr";
             let k = [{
-                    name: "boulder",
+                    name: "Boulder",
                     primary: "#8c8d8d",
                     secondary: "#d0d0d1"
                 }, {
-                    name: "cascade",
+                    name: "Cascade",
                     primary: "#43abe9",
                     secondary: "#8ad3e8"
                 }, {
-                    name: "thunder",
+                    name: "Thunder",
                     primary: "#e8c02f",
                     secondary: "#e8d387"
                 }, {
-                    name: "soul",
+                    name: "Soul",
                     primary: "#e72282",
                     secondary: "#e875ad"
                 }, {
-                    name: "marsh",
+                    name: "Marsh",
                     primary: "#e86e1d",
                     secondary: "#e89055"
                 }, {
-                    name: "volcano",
+                    name: "Volcano",
                     primary: "#e81d1e",
                     secondary: "#e86868"
                 }, {
-                    name: "earth",
+                    name: "Earth",
                     primary: "#406601",
                     secondary: "#d3e65e"
                 }, {
-                    name: "zephyr",
+                    name: "Zephyr",
                     primary: "#4892d5",
                     secondary: "#78b6f0"
                 }],
@@ -117282,8 +117282,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293575",
-                    versionHash: "d0e53a0106b9c4604aae2ecd006e4103a4cbb211"
+                    buildNumber: "293582",
+                    versionHash: "3fb64f71d0f49d9af8f0de80713443817c8d1a5c"
                 }
             }
             n.r(t), n.d(t, {
@@ -173740,8 +173740,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715781127241",
-                                    build_number: "293575"
+                                    built_at: "1715782570613",
+                                    build_number: "293582"
                                 }
                             },
                             retries: 1
@@ -252662,7 +252662,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "d0e53a0106b9c4604aae2ecd006e4103a4cbb211"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "3fb64f71d0f49d9af8f0de80713443817c8d1a5c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281670,7 +281670,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293575"
+                                build_number: "293582"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289028,7 +289028,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293575", "293575"), 10);
+                let a = parseInt((n = "293582", "293582"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -316699,4 +316699,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.92fbd899de069b05c35d.js.map
+//# sourceMappingURL=71586.5ec55bc345e6c3cb994e.js.map
