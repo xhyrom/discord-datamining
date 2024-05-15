@@ -43172,7 +43172,7 @@ div.profileThemedContainer__6e645 {
 
 .additionalParticipantBadge__23702 {
     padding: 2.25px 4.4px 2.5px 4.2px;
-    background: var(--bg-overlay-5, var(--background-accent));
+    background: var(--background-modifier-accent);
     border-radius: 8px;
     margin-left: 4px
 }
@@ -43498,6 +43498,11 @@ img.thumbnail__18ece {
 .maybeClickable__0a29f[role=button]:focus-visible .popoutTextSecondary__579ec {
     -webkit-text-decoration: underline;
     text-decoration: underline
+}
+
+.popoutHeaderIcons__3a068 {
+    display: flex;
+    align-items: center
 }
 
 .container__92138 {
@@ -137466,4 +137471,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.36e9ce5beabf2e79856b.css.map*/
+/*# sourceMappingURL=99387.d7678fb60f5085b458c6.css.map*/
