@@ -37483,7 +37483,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293630", ", Version Hash: ").concat("57a4bacc91fd36d23113fd6d73fd155a84293b88")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293640", ", Version Hash: ").concat("0469506e5b9d07671f685c7841010a6b4648cdd5")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55903,7 +55903,6 @@
                 QUESTS_INSTRUCTIONS_TO_WIN_REWARD_TIERED_V2: "Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win **in-game rewards**.",
                 QUESTS_ACCEPTED_INSTRUCTIONS_TO_WIN_REWARD: "**Quest accepted!** Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win {questReward}.",
                 QUESTS_ACCEPTED_INSTRUCTIONS_TO_WIN_REWARD_TIERED: "**Quest accepted!** Stream {gameTitle} to a friend for {streamingDurationRequirement, number} minutes and win in-game rewards.",
-                QUESTS_TRACK_YOUR_PROGRESS: "Track Your Progress",
                 QUESTS_TITLE: "{questName} Quest",
                 QUESTS_LANDING_PAGE_ERROR_HEADING: "Whoops!",
                 QUESTS_LANDING_PAGE_MOBILE_WEB_BODY: "Quests aren’t available on mobile...yet. Sorry about that! From your desktop Discord app or browser you can go to **User Settings > Gift Inventory** and accept the Quest there.",
@@ -55943,10 +55942,6 @@
                 QUESTS_MEMBERS_LIST_AVAILBLE: "Quest Available!",
                 QUESTS_MEMBERS_LIST_FINISH: "Finish your Quest!",
                 QUESTS_MEMBERS_LIST_CLAIM_REWARD: "You did it!",
-                QUESTS_MEMBERS_LIST_BEGIN_CTA: "Start Unlocking Rewards",
-                QUESTS_MEMBERS_LIST_WATCH_CTA: "Join Me and Check It Out",
-                QUESTS_MEMBERS_LIST_PROGRESS_CTA: "Check Out Your Progress",
-                QUESTS_MEMBERS_LIST_CLAIM_CTA: "Claim Your Reward",
                 QUESTS_MEMBERS_LIST_PROMOTED_BY: "Promoted by {gamePublisher}",
                 QUESTS_MEMBERS_LIST_GAME_TILE_ALT: "A game tile displaying {gameTitle}, published by {gamePublisher}.",
                 QUESTS_REWARD_AVATAR_DECORATION_HEADER: "Congratulations!",
@@ -88738,8 +88733,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293630", "293630"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293630")), t = 0), t
+                let t = parseInt((e = "293640", "293640"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293640")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103721,6 +103716,9 @@
                 EMPTY_WILDCARD: function() {
                     return R
                 },
+                FAKE_CLAN_APP_IDS: function() {
+                    return K
+                },
                 GENSHIN_ID: function() {
                     return M
                 },
@@ -103728,7 +103726,7 @@
                     return P
                 },
                 HOISTED_SEARCH_APPLICATION_IDS_BY_PRIORITY: function() {
-                    return K
+                    return z
                 },
                 IDENTITY_TRAITS: function() {
                     return b
@@ -103933,7 +103931,19 @@
                     tag: e.tag
                 }
             }
-            let K = new Map(["432980957394370572", "363445589247131668", "356869127241072640", "700136079562375258", "356875570916753438", "1158877933042143272", "1197827812623650866", "356876176465199104", "1167674267748540516", "542075586886107149", "356875221078245376", "1149118246826561609", "356877880938070016", "356875988589740042", "762434991303950386", "356873622985506820", "356876590342340608", "1205090671527071784", "1182713227491147776", "631914894446297148", "1137125502985961543", "357607478105604096", "359509007423242240", "1121201675240210523", "643897785271189524", "742897755160313986", "356888738724446208", "1199745463918788740", "1116835216464543946", "406637848297472017", "356888961353908224", "905961880789590076", "367827983903490050", "356944273133928458", "356942674672091136", "946609449680908348", "356875762940379136", "615752773690064908", "357607133254254632", "356943499456937984", "477175586805252107", "787443973538971748", "359508713658253318", "356877880938070016", "422772752647323649", "356954277803065354", "359509387670192128", "428055627030331402", "363447565905166336", "372438022647578634", "614380482620293151", "506950362461110273", "356879032584896512", "1161772875901051042", "535371564850479134", "363413743335374859", "385538724592746496", "426526722322726912", "1174041358995042375", "1124351876033425529", "477152881196269569", "1113966530531704943", "425778010222886912", "356875890958925834", "1124358970618953818", "356888577310851072", "398632010442211348", "1124349969906815007", "770314100885422095", "1080277149623271444", "428054228511227914", "358420454764969994", "358421669603311616", "363430548028522496", "1129504162200166401", "1200228630245159032", "356889262362329098", "356887282982191114", "363409643973771264", "1164697075582238730", "940810636273795162", "982316905262120990", "359510095811444736", "363411421553360896", "359509332490059776", "1162076274622222346", "1162085521816813721", "359507724196773888", "359801269008859136", "569253958967885828", "457301824110723113", "1140238527980916757", "1124353632758939688", "542075586886107149", "512699108809637890", "653432003798106122"].map((e, t, n) => [e, n.length - t]));
+            let K = {
+                    AGE_OF_EMPIRES_2: "720771660768084008",
+                    VALORANT: "700136079562375258",
+                    HELLDIVERS_2: "1205090671527071784",
+                    APEX: "542075586886107149",
+                    LETHAL_COMPANY: "1167674267748540516",
+                    SIMS_4: "359509007423242240",
+                    ROBLOX: "363445589247131668",
+                    BALDURS_GATE_3: "1137125502985961543",
+                    AIMLAB: "506950362461110273",
+                    HONKAI_STAR_RAIL: "1121201675240210523"
+                },
+                z = new Map(["432980957394370572", "363445589247131668", "356869127241072640", "700136079562375258", "356875570916753438", "1158877933042143272", "1197827812623650866", "356876176465199104", "1167674267748540516", "542075586886107149", "356875221078245376", "1149118246826561609", "356877880938070016", "356875988589740042", "762434991303950386", "356873622985506820", "356876590342340608", "1205090671527071784", "1182713227491147776", "631914894446297148", "1137125502985961543", "357607478105604096", "359509007423242240", "1121201675240210523", "643897785271189524", "742897755160313986", "356888738724446208", "1199745463918788740", "1116835216464543946", "406637848297472017", "356888961353908224", "905961880789590076", "367827983903490050", "356944273133928458", "356942674672091136", "946609449680908348", "356875762940379136", "615752773690064908", "357607133254254632", "356943499456937984", "477175586805252107", "787443973538971748", "359508713658253318", "356877880938070016", "422772752647323649", "356954277803065354", "359509387670192128", "428055627030331402", "363447565905166336", "372438022647578634", "614380482620293151", "506950362461110273", "356879032584896512", "1161772875901051042", "535371564850479134", "363413743335374859", "385538724592746496", "426526722322726912", "1174041358995042375", "1124351876033425529", "477152881196269569", "1113966530531704943", "425778010222886912", "356875890958925834", "1124358970618953818", "356888577310851072", "398632010442211348", "1124349969906815007", "770314100885422095", "1080277149623271444", "428054228511227914", "358420454764969994", "358421669603311616", "363430548028522496", "1129504162200166401", "1200228630245159032", "356889262362329098", "356887282982191114", "363409643973771264", "1164697075582238730", "940810636273795162", "982316905262120990", "359510095811444736", "363411421553360896", "359509332490059776", "1162076274622222346", "1162085521816813721", "359507724196773888", "359801269008859136", "569253958967885828", "457301824110723113", "1140238527980916757", "1124353632758939688", "542075586886107149", "512699108809637890", "653432003798106122"].map((e, t, n) => [e, n.length - t]));
             (d = s || (s = {}))[d.SIZE_12 = 12] = "SIZE_12", d[d.SIZE_16 = 16] = "SIZE_16", d[d.SIZE_24 = 24] = "SIZE_24", d[d.SIZE_32 = 32] = "SIZE_32", d[d.SIZE_36 = 36] = "SIZE_36"
         },
         963202: function(e, t, n) {
@@ -117304,8 +117314,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293630",
-                    versionHash: "57a4bacc91fd36d23113fd6d73fd155a84293b88"
+                    buildNumber: "293640",
+                    versionHash: "0469506e5b9d07671f685c7841010a6b4648cdd5"
                 }
             }
             n.r(t), n.d(t, {
@@ -173801,8 +173811,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715793692706",
-                                    build_number: "293630"
+                                    built_at: "1715794492450",
+                                    build_number: "293640"
                                 }
                             },
                             retries: 1
@@ -193916,17 +193926,17 @@
                         tileAssetType: "reward"
                     } : j && !Y ? {
                         headerText: U.default.Messages.QUESTS_MEMBERS_LIST_FINISH,
-                        ctaText: U.default.Messages.QUESTS_MEMBERS_LIST_PROGRESS_CTA,
+                        ctaText: U.default.Messages.QUESTS_CHECK_PROGRESS,
                         handleClickCta: es,
                         tileAssetType: "reward"
                     } : w(O, x) ? {
                         headerText: U.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE,
-                        ctaText: U.default.Messages.QUESTS_MEMBERS_LIST_WATCH_CTA,
+                        ctaText: U.default.Messages.QUESTS_JOIN_ME,
                         handleClickCta: el,
                         tileAssetType: "game"
                     } : {
                         headerText: U.default.Messages.QUESTS_MEMBERS_LIST_AVAILBLE,
-                        ctaText: U.default.Messages.QUESTS_MEMBERS_LIST_BEGIN_CTA,
+                        ctaText: U.default.Messages.QUESTS_UNLOCK_REWARDS,
                         handleClickCta: es,
                         tileAssetType: "game"
                     };
@@ -252721,7 +252731,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "57a4bacc91fd36d23113fd6d73fd155a84293b88"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "0469506e5b9d07671f685c7841010a6b4648cdd5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281762,7 +281772,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293630"
+                                build_number: "293640"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289120,7 +289130,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293630", "293630"), 10);
+                let a = parseInt((n = "293640", "293640"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -316831,4 +316841,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.66f17ea7df1b3c1b2b77.js.map
+//# sourceMappingURL=71586.7c49477cc5d71d666a4a.js.map
