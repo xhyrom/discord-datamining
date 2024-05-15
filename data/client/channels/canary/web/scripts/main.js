@@ -37477,7 +37477,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293603", ", Version Hash: ").concat("36f3a4b062e8707e9d214cbb8e4bd08a0d790fb5")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293608", ", Version Hash: ").concat("5c22b840114767038a398821662bc3f0c989af9c")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88730,8 +88730,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293603", "293603"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293603")), t = 0), t
+                let t = parseInt((e = "293608", "293608"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293608")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117296,8 +117296,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293603",
-                    versionHash: "36f3a4b062e8707e9d214cbb8e4bd08a0d790fb5"
+                    buildNumber: "293608",
+                    versionHash: "5c22b840114767038a398821662bc3f0c989af9c"
                 }
             }
             n.r(t), n.d(t, {
@@ -173754,8 +173754,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715789676938",
-                                    build_number: "293603"
+                                    built_at: "1715790849943",
+                                    build_number: "293608"
                                 }
                             },
                             retries: 1
@@ -191167,6 +191167,9 @@
                 optimisticallyUpdateQuestProgress: function() {
                     return N
                 },
+                overrideQuestDelivery: function() {
+                    return p
+                },
                 resetQuestDismissibilityStatus: function() {
                     return m
                 },
@@ -191447,6 +191450,13 @@
                     userStatus: e
                 })
             }
+
+            function p(e) {
+                r.default.dispatch({
+                    type: "QUESTS_DELIVERY_OVERRIDE",
+                    questId: e
+                })
+            }
         },
         46140: function(e, t, n) {
             "use strict";
@@ -191699,21 +191709,21 @@
         },
         569984: function(e, t, n) {
             "use strict";
-            let i, r, a, s, o, l, u, d, _, c, E;
+            let i, r, a, s, o, l, u, d, _, c, E, I;
             n.r(t), n("47120");
-            var I, T, f, S, h = n("887003"),
-                A = n("442837"),
-                m = n("570140"),
-                N = n("497505"),
-                p = n("918701"),
-                O = n("5881"),
-                C = n("46140");
+            var T, f, S, h, A = n("887003"),
+                m = n("442837"),
+                N = n("570140"),
+                p = n("497505"),
+                O = n("918701"),
+                C = n("5881"),
+                R = n("46140");
 
-            function R() {
-                i = !1, r = new Map, a = 0, s = new Set, o = new Set, l = new Set, u = new Set, d = new Set, _ = new Map, c = new Map, E = new Map
+            function g() {
+                i = !1, r = new Map, a = 0, s = new Set, o = new Set, l = new Set, u = new Set, d = new Set, _ = new Map, c = new Map, E = new Map, I = null
             }
 
-            function g(e, t) {
+            function L(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
                         updateProgress: !1
                     },
@@ -191732,38 +191742,38 @@
                 }
             }
 
-            function L(e, t) {
+            function v(e, t) {
                 let n = new Map(_);
                 n.set(e, t), _ = n
             }
 
-            function v(e, t) {
-                L(e, t);
+            function D(e, t) {
+                v(e, t);
                 let n = r.get(e),
                     i = null == n ? void 0 : n.userStatus;
-                null != i && null == i.claimedAt && g(e, {
+                null != i && null == i.claimedAt && L(e, {
                     userStatus: {
                         ...i,
                         claimedAt: t.claimedAt
                     }
                 })
             }
-            R();
+            g();
 
-            function D(e) {
+            function M(e) {
                 null != E.get(e) && (E = new Map(E)).delete(e)
             }
 
-            function M(e) {
+            function y(e) {
                 let t = new Set(s);
                 t.delete(e), s = t
             }
 
-            function y(e) {
+            function P(e) {
                 let t = new Set(d);
                 t.delete(e), d = t
             }
-            class P extends(I = A.default.Store) {
+            class U extends(T = m.default.Store) {
                 get quests() {
                     return r
                 }
@@ -191772,6 +191782,9 @@
                 }
                 get lastFetchedCurrentQuests() {
                     return a
+                }
+                get questDeliveryOverride() {
+                    return r.get(null != I ? I : "")
                 }
                 isEnrolling(e) {
                     return s.has(e)
@@ -191801,14 +191814,14 @@
                     return r.get(e)
                 }
             }
-            S = "QuestsStore", (f = "displayName") in(T = P) ? Object.defineProperty(T, f, {
-                value: S,
+            h = "QuestsStore", (S = "displayName") in(f = U) ? Object.defineProperty(f, S, {
+                value: h,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : T[f] = S, t.default = new P(m.default, {
+            }) : f[S] = h, t.default = new U(N.default, {
                 LOGOUT: function() {
-                    R()
+                    g()
                 },
                 QUESTS_FETCH_CURRENT_QUESTS_BEGIN: function() {
                     a = Date.now(), i = !0
@@ -191817,8 +191830,8 @@
                     let {
                         quests: t
                     } = e;
-                    for (let e of (i = !1, r = new Map, t)) r.set(e.id, e), e.targetedContent.includes(N.QuestContent.QUEST_BAR) && (0, O.getQuestLogger)({
-                        location: C.QuestsExperimentLocations.QUESTS_STORE
+                    for (let e of (i = !1, r = new Map, t)) r.set(e.id, e), e.targetedContent.includes(p.QuestContent.QUEST_BAR) && (0, C.getQuestLogger)({
+                        location: R.QuestsExperimentLocations.QUESTS_STORE
                     }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"))
                 },
                 QUESTS_FETCH_CURRENT_QUESTS_FAILURE: function() {
@@ -191830,11 +191843,11 @@
                         streamKey: n,
                         userStatus: i
                     } = e;
-                    g(t, {
+                    L(t, {
                         userStatus: i
                     }, {
                         updateProgress: !0
-                    }), D(n)
+                    }), M(n)
                 },
                 QUESTS_SEND_HEARTBEAT_FAILURE: function(e) {
                     let {
@@ -191857,15 +191870,15 @@
                     let {
                         enrolledQuestUserStatus: t
                     } = e;
-                    g(t.questId, {
+                    L(t.questId, {
                         userStatus: t
-                    }), M(t.questId)
+                    }), y(t.questId)
                 },
                 QUESTS_ENROLL_FAILURE: function(e) {
                     let {
                         questId: t
                     } = e;
-                    M(t)
+                    y(t)
                 },
                 QUESTS_FETCH_REWARD_CODE_BEGIN: function(e) {
                     let {
@@ -191878,7 +191891,7 @@
                         questId: t,
                         rewardCode: n
                     } = e, i = new Set(u);
-                    i.delete(t), u = i, v(t, n)
+                    i.delete(t), u = i, D(t, n)
                 },
                 QUESTS_FETCH_REWARD_CODE_FAILURE: function(e) {
                     let {
@@ -191897,7 +191910,7 @@
                         questId: t,
                         rewardCode: n
                     } = e, i = new Set(o);
-                    i.delete(t), o = i, v(t, n)
+                    i.delete(t), o = i, D(t, n)
                 },
                 QUESTS_CLAIM_REWARD_CODE_FAILURE: function(e) {
                     let {
@@ -191929,16 +191942,16 @@
                                     quest: n,
                                     entitlements: i
                                 } = e;
-                                if (!(0, p.isTieredRewardCodeQuest)({
+                                if (!(0, O.isTieredRewardCodeQuest)({
                                         quest: n
                                     })) return null;
                                 let r = null === (t = i.items[0].tenantMetadata) || void 0 === t ? void 0 : t.questRewards.reward;
-                                return (null == r ? void 0 : r.tag) !== h.QuestRewardTypes.REWARD_CODE ? null : r.rewardCode
+                                return (null == r ? void 0 : r.tag) !== A.QuestRewardTypes.REWARD_CODE ? null : r.rewardCode
                             }({
                                 quest: i,
                                 entitlements: t
                             });
-                            null != n && L(e, n), g(e, {
+                            null != n && v(e, n), L(e, {
                                 userStatus: {
                                     ...a,
                                     claimedAt: t.claimedAt,
@@ -191964,33 +191977,33 @@
                     let {
                         dismissedQuestUserStatus: t
                     } = e;
-                    g(t.questId, {
+                    L(t.questId, {
                         userStatus: t
-                    }), y(t.questId)
+                    }), P(t.questId)
                 },
                 QUESTS_DISMISS_CONTENT_FAILURE: function(e) {
                     let {
                         questId: t
                     } = e;
-                    y(t)
+                    P(t)
                 },
                 STREAM_CLOSE: function(e) {
                     let {
                         streamKey: t
                     } = e;
-                    D(t)
+                    M(t)
                 },
                 QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: function(e) {
                     let {
                         streamKey: t
                     } = e;
-                    D(t)
+                    M(t)
                 },
                 QUESTS_PREVIEW_UPDATE_SUCCESS: function(e) {
                     let {
                         previewQuestUserStatus: t
                     } = e;
-                    g(t.questId, {
+                    L(t.questId, {
                         userStatus: t
                     }), null == t.claimedAt && (_ = new Map(_)).delete(t.questId)
                 },
@@ -191998,11 +192011,17 @@
                     let {
                         userStatus: t
                     } = e;
-                    g(t.questId, {
+                    L(t.questId, {
                         userStatus: t
                     }, {
                         updateProgress: !0
                     })
+                },
+                QUESTS_DELIVERY_OVERRIDE: function(e) {
+                    let {
+                        questId: t
+                    } = e;
+                    I = I === t ? null : t
                 }
             })
         },
@@ -252687,7 +252706,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "36f3a4b062e8707e9d214cbb8e4bd08a0d790fb5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5c22b840114767038a398821662bc3f0c989af9c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281695,7 +281714,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293603"
+                                build_number: "293608"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289053,7 +289072,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293603", "293603"), 10);
+                let a = parseInt((n = "293608", "293608"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -316724,4 +316743,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.631f876256371e1770aa.js.map
+//# sourceMappingURL=71586.eab019e35b4213cfd218.js.map
