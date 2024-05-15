@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-05_quest_home",
+    "label": "Quest Home",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Quest Home in the Friends List"
+    ],
+    "hash": 1633289124,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
