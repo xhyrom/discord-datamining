@@ -6,13 +6,15 @@
     "description": [
       "Not Eligible",
       "Treatment 0: Control",
-      "Treatment 1: Enabled"
+      "Treatment 1: Early Release",
+      "Treatment 2: Treatment"
     ],
     "hash": 2467249597,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "holdout": {},
     "aa_mode": false,

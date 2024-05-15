@@ -8701,13 +8701,15 @@
       "description": [
         "Not Eligible",
         "Treatment 0: Control",
-        "Treatment 1: Enabled"
+        "Treatment 1: Early Release",
+        "Treatment 2: Treatment"
       ],
       "hash": 2467249597,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "holdout": {},
       "aa_mode": false,
@@ -8955,7 +8957,7 @@
       "label": "Referral Program Sender Experience",
       "description": [
         "Not Eligible",
-        "Control Bucket",
+        "Treatment 0: Disabled",
         "Treatment 1: Enabled",
         "Treatment 2: Enabled"
       ],
@@ -8970,7 +8972,8 @@
       "aa_mode": false,
       "config_keys": [
         "enabled",
-        "subscriberHomeVariant"
+        "subscriberHomeVariant",
+        "eligibleToFetch"
       ]
     }
   },
