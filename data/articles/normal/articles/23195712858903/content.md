@@ -115,7 +115,7 @@
         <strong>Twitter / X Sweepstakes:</strong>
         <ul>
             <li>
-                <strong>How to Enter: </strong>Follow the Discord_fr Twitter/X account, like and retweet the official Discord_fr Giveaway post, and tag a friend.
+                <strong>How to Enter: </strong><span id="docs-internal-guid-15d00022-7fff-d167-7aa0-519ba83b7477">Follow the Discord_fr Twitter/X account, retweet the official Discord_fr Giveaway post, and tag a friend.</span>
             </li>
             <li>
                 <strong>Prize: </strong>Nine (9) Winners ($45 - $81)
@@ -161,7 +161,7 @@
         <strong>Twitter / X Sweepstakes: </strong>
         <ul>
             <li>
-                <strong>How to Enter: </strong>Follow the Discord_fr Twitter/X account, like and retweet the official Discord_fr Giveaway post, and tag a friend.
+                <strong>How to Enter: </strong><span id="docs-internal-guid-9e131db9-7fff-2233-6cec-ec31fd1abd8a">Follow the Discord_fr Twitter/X account, retweet the official Discord_fr Giveaway post, and tag a friend.</span>
             </li>
             <li>
                 <strong>Prize: </strong>One (1) Winner ($246)
@@ -364,7 +364,7 @@
 <h2 id="h_01HXACXA3YPMYEVHYEHCKJZMQN">Day 9: Kigurumi and Animation Digital Network Subscription Giveaway for Discord’s 9th Birthday </h2>
 <ul>
     <li>
-        <strong>Rules: </strong>The French Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below, with one winner per platform. Eligibility and Entry timing are consistent across each Sweepstakes.
+        <strong>Rules: </strong>The French Discord’s 9th Birthday Sweepstakes is governed by the Discord Sweepstakes Terms, listed below (“<strong>Official Rules</strong>”). Discord will run one sweepstakes per platform as described below. Eligibility and Entry timing are consistent across each Sweepstakes.
     </li>
     <li>
         <strong>Additional Eligibility: </strong>In addition to the additional eligibility requirements described in the Official Rules, entrants must be thirteen (13) years of age or older (with legal guardian approval if they are under the age of majority) and a legal resident of France.
