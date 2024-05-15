@@ -6364,6 +6364,7 @@
                 popoutBlockedWarningIcon: "popoutBlockedWarningIcon_a01b83",
                 popoutContentBody: "popoutContentBody_f9fe14",
                 popoutContentHeader: "popoutContentHeader_daecb8",
+                popoutHeaderIcons: "popoutHeaderIcons__3a068",
                 popoutStackedAvatar: "popoutStackedAvatar__339c9",
                 popoutStreamImg: "popoutStreamImg_a5f0ae",
                 popoutTextPrimary: "popoutTextPrimary_d83570",
