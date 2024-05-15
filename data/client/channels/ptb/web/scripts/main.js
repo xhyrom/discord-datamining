@@ -37483,7 +37483,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293640", ", Version Hash: ").concat("0469506e5b9d07671f685c7841010a6b4648cdd5")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293645", ", Version Hash: ").concat("dd6a2d82be116c521c48658667eb6e2ef026b21d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56384,6 +56384,8 @@
                 GUILD_POPOUT_USERS_STREAMING: "{username} and {count, plural, one {{count} other is} other {{count} others are}} streaming",
                 GUILD_POPOUT_USER_IN_VOICE: "{username} is in voice",
                 GUILD_POPOUT_USERS_IN_VOICE: "{username} and {count, plural, one {{count} other is} other {{count} others are}} in voice",
+                GUILD_POPOUT_USER_ON_VIDEO: "{username} is on video",
+                GUILD_POPOUT_USERS_ON_VIDEO: "{username} and {count, plural, one {{count} other is} other {{count} others are}} on video",
                 INAPPROPRIATE_CONVERSATION_CONTACT_CRISIS_TEXT_LINE_HEADER: "Contact Crisis Text Line",
                 INAPPROPRIATE_CONVERSATION_CONTACT_CRISIS_TEXT_LINE_DESCRIPTION: "Get 24-hour, live support from a counselor. To start, text DISCORD to 741-741.",
                 INAPPROPRIATE_CONVERSATION_CONTACT_CRISIS_TEXT_LINE_ALT: "Illustration of floating phone surrounded by various abstract health info bubbles",
@@ -88733,8 +88735,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293640", "293640"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293640")), t = 0), t
+                let t = parseInt((e = "293645", "293645"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293645")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117314,8 +117316,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293640",
-                    versionHash: "0469506e5b9d07671f685c7841010a6b4648cdd5"
+                    buildNumber: "293645",
+                    versionHash: "dd6a2d82be116c521c48658667eb6e2ef026b21d"
                 }
             }
             n.r(t), n.d(t, {
@@ -156811,7 +156813,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return d
+                    return _
                 }
             });
             var i = n("735250"),
@@ -156819,8 +156821,9 @@
                 a = n("120356"),
                 s = n.n(a),
                 o = n("481060"),
-                l = n("411511");
-            let u = [
+                l = n("718582"),
+                u = n("411511");
+            let d = [
                 [{
                     translateY: 0,
                     translateX: 0,
@@ -156891,51 +156894,51 @@
                 }]
             ];
 
-            function d(e) {
+            function _(e) {
                 let {
                     users: t,
                     guildId: n
-                } = e, a = r.useRef(!1);
+                } = e, a = (0, l.useSortUsersByAffinity)(t), o = r.useRef(!1);
                 r.useEffect(() => {
-                    a.current = !0
+                    o.current = !0
                 }, []);
-                let o = Math.min(u.length - 1, t.length - 1),
-                    d = u[Math.max(0, o)],
-                    E = t.length > 4,
-                    I = t.length - 3,
-                    T = I >= 10 ? 1 : 2,
-                    f = d.map((e, r) => {
-                        let a = t[r];
-                        if (null == a) return null;
-                        let o = E && r === T;
+                let _ = Math.min(d.length - 1, a.length - 1),
+                    I = d[Math.max(0, _)],
+                    T = a.length > 4,
+                    f = a.length - 3,
+                    S = f >= 10 ? 1 : 2,
+                    h = I.map((e, t) => {
+                        let r = a[t];
+                        if (null == r) return null;
+                        let o = T && t === S;
                         return (0, i.jsx)("div", {
-                            className: s()(l.avatarContainer),
+                            className: s()(u.avatarContainer),
                             style: {
                                 opacity: 1,
                                 transform: "translateX(".concat(e.translateX, "px) translateY(").concat(e.translateY, "px) scale(").concat(e.scale, ")")
                             },
-                            children: o ? (0, i.jsx)(_, {
-                                count: I
-                            }) : (0, i.jsx)(c, {
+                            children: o ? (0, i.jsx)(c, {
+                                count: f
+                            }) : (0, i.jsx)(E, {
                                 guildId: n,
-                                user: a
+                                user: r
                             })
-                        }, a.id)
+                        }, r.id)
                     });
                 return (0, i.jsx)("div", {
-                    className: l.groupContainer,
-                    children: f
+                    className: u.groupContainer,
+                    children: h
                 })
             }
 
-            function _(e) {
+            function c(e) {
                 let {
                     count: t
                 } = e;
                 return (0, i.jsx)("div", {
-                    className: l.avatarWrapper,
+                    className: u.avatarWrapper,
                     children: (0, i.jsx)("div", {
-                        className: l.overflowCount,
+                        className: u.overflowCount,
                         children: (0, i.jsxs)(o.Text, {
                             variant: "text-sm/semibold",
                             children: ["+", t]
@@ -156944,15 +156947,15 @@
                 })
             }
 
-            function c(e) {
+            function E(e) {
                 let {
                     guildId: t,
                     user: n
                 } = e;
                 return null == r.useMemo(() => null == n ? void 0 : n.getAvatarSource(t, !1, 32), [t, n]) ? null : (0, i.jsx)("div", {
-                    className: l.avatarWrapper,
+                    className: u.avatarWrapper,
                     children: (0, i.jsx)("img", {
-                        className: l.avatar,
+                        className: u.avatar,
                         src: null == n ? void 0 : n.getAvatarURL(t, 80),
                         alt: ""
                     })
@@ -156963,7 +156966,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return et
+                    return en
                 }
             }), n("47120");
             var i = n("735250"),
@@ -156982,17 +156985,17 @@
                 f = n("17181"),
                 S = n("303737"),
                 h = n("66999"),
-                A = n("15274"),
-                m = n("217804"),
-                N = n("965638"),
-                p = n("434404"),
-                O = n("962086"),
-                C = n("160404"),
-                R = n("41776"),
-                g = n("703656"),
-                L = n("592125"),
-                v = n("607744"),
-                D = n("496675"),
+                A = n("217804"),
+                m = n("965638"),
+                N = n("434404"),
+                p = n("962086"),
+                O = n("160404"),
+                C = n("41776"),
+                R = n("703656"),
+                g = n("592125"),
+                L = n("607744"),
+                v = n("496675"),
+                D = n("594174"),
                 M = n("940627"),
                 y = n("705600"),
                 P = n("242315"),
@@ -157000,25 +157003,26 @@
                 b = n("645284"),
                 G = n("632184"),
                 w = n("806519"),
-                B = n("59688"),
-                k = n("718582"),
-                V = n("599539"),
-                x = n("837771"),
-                F = n("126134"),
-                H = n("981631"),
-                Y = n("765305"),
-                j = n("689938"),
-                W = n("303820"),
-                K = n("181096");
+                B = n("5192"),
+                k = n("59688"),
+                V = n("718582"),
+                x = n("599539"),
+                F = n("837771"),
+                H = n("126134"),
+                Y = n("981631"),
+                j = n("765305"),
+                W = n("689938"),
+                K = n("303820"),
+                z = n("181096");
 
-            function z(e) {
+            function Z(e) {
                 let {
                     users: t,
                     othersCount: n,
                     extraPill: r
                 } = e;
                 return (0, i.jsxs)("div", {
-                    className: W.facepile,
+                    className: K.facepile,
                     children: [t.map((e, r) => {
                         let a = (0, i.jsx)(u.default, {
                             user: e,
@@ -157026,25 +157030,25 @@
                             "aria-label": ""
                         });
                         return r === t.length - 1 && 0 === n ? (0, i.jsx)("div", {
-                            className: W.facePileItem,
+                            className: K.facePileItem,
                             children: a
                         }, e.id) : (0, i.jsx)(w.default, {
                             width: 24,
                             height: 24,
                             mask: w.default.Masks.GUILD_POPOUT_FACE_PILE_AVATAR,
-                            className: W.facePileItem,
+                            className: K.facePileItem,
                             children: a
                         }, e.id)
                     }), n > 0 && (0, i.jsxs)(l.Text, {
                         color: "interactive-normal",
                         variant: "text-xs/medium",
-                        className: W.othersCount,
+                        className: K.othersCount,
                         children: ["+", n]
                     }), r]
                 })
             }
 
-            function Z(e) {
+            function X(e) {
                 let {
                     title: t,
                     subtitle: n,
@@ -157055,21 +157059,21 @@
                     titleClassName: u
                 } = e;
                 return (0, i.jsxs)("div", {
-                    className: K.content,
+                    className: z.content,
                     children: [(0, i.jsx)(l.Heading, {
                         color: "header-primary",
                         variant: "heading-sm/semibold",
                         className: u,
                         children: t
                     }), (0, i.jsxs)("div", {
-                        className: W.cardDetailsTextContainer,
+                        className: K.cardDetailsTextContainer,
                         children: [s, (0, i.jsx)(l.Text, {
                             color: "text-secondary",
                             variant: "text-xs/medium",
-                            className: K.singleLineTitle,
+                            className: z.singleLineTitle,
                             children: n
                         })]
-                    }), r.length > 0 && (0, i.jsx)(z, {
+                    }), r.length > 0 && (0, i.jsx)(Z, {
                         users: r,
                         othersCount: a,
                         extraPill: o
@@ -157077,11 +157081,11 @@
                 })
             }
 
-            function X(e) {
+            function Q(e) {
                 let {
                     onClick: t,
                     inCall: n
-                } = e, a = n ? j.default.Messages.GUILD_POPOUT_JOINED : j.default.Messages.JOIN, s = r.useCallback(e => {
+                } = e, a = n ? W.default.Messages.GUILD_POPOUT_JOINED : W.default.Messages.JOIN, s = r.useCallback(e => {
                     e.stopPropagation(), t()
                 }, [t]);
                 return (0, i.jsx)(l.Button, {
@@ -157089,12 +157093,12 @@
                     color: l.Button.Colors.GREEN,
                     disabled: n,
                     onClick: s,
-                    className: W.joinButton,
+                    className: K.joinButton,
                     children: a
                 })
             }
 
-            function Q(e) {
+            function q(e) {
                 let {
                     channelId: t,
                     userIds: n,
@@ -157102,33 +157106,30 @@
                     guildId: u,
                     streamersCount: _,
                     cardData: E
-                } = e, [I, T] = r.useState(!1), f = (0, o.useStateFromStores)([L.default], () => L.default.getChannel(t)), {
+                } = e, [I, T] = r.useState(!1), f = (0, o.useStateFromStores)([g.default], () => g.default.getChannel(t)), {
                     totalUsers: S,
                     usersToShow: h,
                     othersCount: A
-                } = (0, k.useGetCardUsers)(n, u, t), m = (0, d.useGetOrFetchApplication)(a), N = r.useCallback(() => {
-                    (0, g.transitionToGuild)(u, t)
-                }, [t, u]);
+                } = (0, V.useGetCardUsers)(n, u, t), m = (0, d.useGetOrFetchApplication)(a);
                 if (null == m || null == f) return null;
-                let p = (0, x.getJoinButton)(E, u),
-                    O = (0, x.getImage)(E, u),
+                let N = (0, F.getClickHandler)(E, u),
+                    p = (0, F.getJoinButton)(E, u),
+                    O = (0, F.getImage)(E, u),
                     C = (0, c.getSimpleChannelIconComponent)(f.type),
                     R = _ > 0 ? (0, i.jsxs)("div", {
-                        className: W.numberPill,
+                        className: z.pill,
                         children: [(0, i.jsx)(b.default, {
-                            width: 12,
-                            height: 12,
-                            className: s()(W.cardIcon, W.cardDetailsIcon)
+                            className: z.pillIcon
                         }), (0, i.jsx)(l.Text, {
                             color: "text-normal",
-                            variant: "text-xs/normal",
+                            variant: "text-xs/medium",
                             children: _
                         })]
                     }) : null;
                 return (0, i.jsx)(l.ClickableContainer, {
-                    onClick: N,
+                    onClick: () => null == N ? void 0 : N(),
                     tag: "div",
-                    "aria-label": j.default.Messages.GUILD_POPOUT_ACTIVITY_EMBEDDED_ACTIVITY_CARD_ARIA.format({
+                    "aria-label": W.default.Messages.GUILD_POPOUT_ACTIVITY_EMBEDDED_ACTIVITY_CARD_ARIA.format({
                         users: S,
                         gameName: m.name,
                         channelName: null == f ? void 0 : f.name
@@ -157136,28 +157137,28 @@
                     onMouseOver: () => T(!0),
                     onMouseLeave: () => T(!1),
                     children: (0, i.jsxs)("div", {
-                        className: K.container,
+                        className: z.container,
                         children: [(0, i.jsx)("div", {
-                            className: K.image,
+                            className: z.image,
                             children: O
-                        }), (0, i.jsx)(Z, {
+                        }), (0, i.jsx)(X, {
                             title: m.name,
                             subtitle: null == f ? void 0 : f.name,
                             icon: null != C ? (0, i.jsx)(C, {
                                 width: 12,
                                 height: 12,
-                                className: s()(W.cardIcon, W.cardDetailsIcon)
+                                className: s()(K.cardIcon, K.cardDetailsIcon)
                             }) : null,
                             usersToShow: h,
                             othersCount: A,
                             extraPill: R,
-                            titleClassName: K.singleLineTitle
+                            titleClassName: z.singleLineTitle
                         }), I && p]
                     })
                 })
             }
 
-            function q(e) {
+            function J(e) {
                 var t;
                 let {
                     hangoutActivity: n,
@@ -157165,179 +157166,181 @@
                 } = e, [s, u] = r.useState(!1), {
                     channelId: d,
                     userIds: _,
-                    streamUserIds: c
-                } = n, E = (0, o.useStateFromStores)([L.default], () => L.default.getChannel(d)), {
-                    totalUsers: I,
-                    usersToShow: T,
-                    othersCount: f,
-                    usersText: S
-                } = (0, k.useGetCardUsers)(_, a, d, c), h = r.useCallback(() => {
-                    (0, g.transitionToGuild)(a, d)
-                }, [d, a]), A = (0, x.getJoinButton)(n, a), m = (0, x.getImage)(n, a);
+                    streamUserIds: c,
+                    videoUserIds: E
+                } = n, I = (0, o.useStateFromStores)([g.default], () => g.default.getChannel(d)), {
+                    totalUsers: T,
+                    usersToShow: f,
+                    othersCount: S,
+                    usersText: h
+                } = (0, V.useGetCardUsers)(_, a, d, c), A = (0, F.getClickHandler)(n, a), m = (0, F.getJoinButton)(n, a), N = (0, F.getImage)(n, a), p = h;
+                if (0 === c.length && E.length > 0) {
+                    let e = B.default.getName(a, d, D.default.getUser(E[0]));
+                    p = 1 === E.length ? W.default.Messages.GUILD_POPOUT_USER_ON_VIDEO.format({
+                        username: e
+                    }) : W.default.Messages.GUILD_POPOUT_USERS_ON_VIDEO.format({
+                        username: e,
+                        count: E.length - 1
+                    })
+                }
                 return (0, i.jsx)(l.ClickableContainer, {
-                    onClick: h,
+                    onClick: () => null == A ? void 0 : A(),
                     tag: "div",
-                    "aria-label": j.default.Messages.GUILD_POPOUT_ACTIVITY_HANGOUT_CARD_ARIA.format({
-                        users: I,
-                        channelName: null == E ? void 0 : E.name
+                    "aria-label": W.default.Messages.GUILD_POPOUT_ACTIVITY_HANGOUT_CARD_ARIA.format({
+                        users: T,
+                        channelName: null == I ? void 0 : I.name
                     }),
                     onMouseOver: () => u(!0),
                     onMouseLeave: () => u(!1),
                     children: (0, i.jsxs)("div", {
-                        className: K.container,
+                        className: z.container,
                         children: [(0, i.jsx)("div", {
-                            className: K.image,
-                            children: m
-                        }), (0, i.jsx)(Z, {
-                            title: null !== (t = null == E ? void 0 : E.name) && void 0 !== t ? t : "",
-                            subtitle: S,
-                            usersToShow: T,
-                            othersCount: f,
-                            titleClassName: K.singleLineTitle
-                        }), s && A]
-                    })
-                })
-            }
-
-            function J(e) {
-                let {
-                    event: t,
-                    cardData: n
-                } = e, [a, u] = r.useState(!1), d = (0, o.useStateFromStores)([L.default], () => L.default.getChannel(t.channel_id)), {
-                    usersToShow: _,
-                    othersCount: c,
-                    audienceCount: E
-                } = (0, k.useGetEventCardUsers)(d), I = (0, m.getLocationDataForEvent)(t, d), T = null == I ? void 0 : I.locationName, f = null == I ? void 0 : I.IconComponent, S = r.useCallback(() => {
-                    (0, A.openGuildEventDetails)({
-                        eventId: t.id
-                    })
-                }, [t.id]), h = (0, x.getJoinButton)(n, t.guild_id), N = (0, x.getImage)(n, t.guild_id), p = null != E ? (0, i.jsxs)("div", {
-                    className: W.numberPill,
-                    children: [(0, i.jsx)(P.default, {
-                        width: 12,
-                        height: 12,
-                        className: s()(W.cardIcon, W.cardDetailsIcon)
-                    }), (0, i.jsx)(l.Text, {
-                        color: "text-normal",
-                        variant: "text-xs/normal",
-                        children: E
-                    })]
-                }) : null;
-                return (0, i.jsx)(l.ClickableContainer, {
-                    onClick: S,
-                    tag: "div",
-                    onMouseOver: () => u(!0),
-                    onMouseLeave: () => u(!1),
-                    "aria-label": j.default.Messages.GUILD_POPOUT_ACTIVITY_EVENT_CARD_ARIA.format({
-                        eventName: t.name
-                    }),
-                    children: (0, i.jsxs)("div", {
-                        className: K.container,
-                        children: [(0, i.jsx)("div", {
-                            className: K.image,
+                            className: z.image,
                             children: N
-                        }), (0, i.jsx)(Z, {
-                            title: t.name,
-                            subtitle: null != d ? d.name : T,
-                            icon: null != f ? (0, i.jsx)(f, {
-                                width: 12,
-                                height: 12,
-                                className: s()(W.cardIcon, W.cardDetailsIcon)
-                            }) : null,
-                            usersToShow: _,
-                            othersCount: c,
-                            extraPill: p,
-                            titleClassName: t.entity_type === Y.GuildScheduledEventEntityTypes.EXTERNAL || t.entity_type === Y.GuildScheduledEventEntityTypes.NONE ? K.multiLineTitle : K.singleLineTitle
-                        }), a && h]
+                        }), (0, i.jsx)(X, {
+                            title: null !== (t = null == I ? void 0 : I.name) && void 0 !== t ? t : "",
+                            subtitle: p,
+                            usersToShow: f,
+                            othersCount: S,
+                            titleClassName: z.singleLineTitle
+                        }), s && m]
                     })
                 })
             }
 
             function $(e) {
+                let {
+                    event: t,
+                    cardData: n
+                } = e, [a, u] = r.useState(!1), d = (0, o.useStateFromStores)([g.default], () => g.default.getChannel(t.channel_id)), {
+                    usersToShow: _,
+                    othersCount: c,
+                    audienceCount: E
+                } = (0, V.useGetEventCardUsers)(d), I = (0, A.getLocationDataForEvent)(t, d), T = null == I ? void 0 : I.locationName, f = null == I ? void 0 : I.IconComponent, S = (0, F.getClickHandler)(n, t.guild_id), h = (0, F.getJoinButton)(n, t.guild_id), m = (0, F.getImage)(n, t.guild_id), N = null != E ? (0, i.jsxs)("div", {
+                    className: z.pill,
+                    children: [(0, i.jsx)(P.default, {
+                        className: z.pillIcon
+                    }), (0, i.jsx)(l.Text, {
+                        color: "text-normal",
+                        variant: "text-xs/medium",
+                        children: E
+                    })]
+                }) : null;
+                return (0, i.jsx)(l.ClickableContainer, {
+                    onClick: () => null == S ? void 0 : S(),
+                    tag: "div",
+                    onMouseOver: () => u(!0),
+                    onMouseLeave: () => u(!1),
+                    "aria-label": W.default.Messages.GUILD_POPOUT_ACTIVITY_EVENT_CARD_ARIA.format({
+                        eventName: t.name
+                    }),
+                    children: (0, i.jsxs)("div", {
+                        className: z.container,
+                        children: [(0, i.jsx)("div", {
+                            className: z.image,
+                            children: m
+                        }), (0, i.jsx)(X, {
+                            title: t.name,
+                            subtitle: null != d ? d.name : T,
+                            icon: null != f ? (0, i.jsx)(f, {
+                                width: 12,
+                                height: 12,
+                                className: s()(K.cardIcon, K.cardDetailsIcon)
+                            }) : null,
+                            usersToShow: _,
+                            othersCount: c,
+                            extraPill: N,
+                            titleClassName: t.entity_type === j.GuildScheduledEventEntityTypes.EXTERNAL || t.entity_type === j.GuildScheduledEventEntityTypes.NONE ? z.multiLineTitle : z.singleLineTitle
+                        }), a && h]
+                    })
+                })
+            }
+
+            function ee(e) {
                 var t;
                 let {
                     channelId: n,
                     guildId: a
-                } = e, s = (0, o.useStateFromStores)([L.default], () => L.default.getChannel(n)), {
+                } = e, s = (0, o.useStateFromStores)([g.default], () => g.default.getChannel(n)), {
                     needSubscriptionToAccess: u
-                } = (0, h.default)(null !== (t = null == s ? void 0 : s.id) && void 0 !== t ? t : void 0), d = (0, o.useStateFromStores)([D.default], () => !D.default.can(H.Permissions.CONNECT, s)), c = r.useCallback(() => {
-                    (0, g.transitionToGuild)(a, n)
+                } = (0, h.default)(null !== (t = null == s ? void 0 : s.id) && void 0 !== t ? t : void 0), d = (0, o.useStateFromStores)([v.default], () => !v.default.can(Y.Permissions.CONNECT, s)), c = r.useCallback(() => {
+                    (0, R.transitionToGuild)(a, n)
                 }, [n, a]), E = r.useCallback(() => {
                     null != s && (!d && _.default.handleVoiceConnect({
                         channel: s,
                         connected: !1,
                         needSubscriptionToAccess: u,
                         locked: d
-                    }), (0, g.transitionToGuild)(a, n))
+                    }), (0, R.transitionToGuild)(a, n))
                 }, [s, n, a, d, u]);
                 return (0, i.jsxs)(l.ClickableContainer, {
                     onClick: c,
                     tag: "div",
-                    "aria-label": j.default.Messages.GUILD_POPOUT_EMPTY_PROMPT_ARIA.format({
+                    "aria-label": W.default.Messages.GUILD_POPOUT_EMPTY_PROMPT_ARIA.format({
                         channelName: null == s ? void 0 : s.name
                     }),
-                    className: W.emptyStateCardContainer,
+                    className: K.emptyStateCardContainer,
                     children: [(0, i.jsx)(G.default, {
                         width: 12,
                         height: 12,
-                        className: W.cardIcon
+                        className: K.cardIcon
                     }), (0, i.jsx)("div", {
-                        className: W.cardDetailsContainer,
+                        className: K.cardDetailsContainer,
                         children: (0, i.jsx)(l.Text, {
                             variant: "text-sm/semibold",
                             color: "header-primary",
                             lineClamp: 1,
                             children: null == s ? void 0 : s.name
                         })
-                    }), (0, i.jsx)(X, {
+                    }), (0, i.jsx)(Q, {
                         onClick: E
                     })]
                 })
             }
 
-            function ee(e) {
+            function et(e) {
                 let {
                     guild: t,
                     guildPeekCardType: a
-                } = e, s = (0, B.useCanShowNewGuildTooltipActivityEmptyState)(), o = a === F.GuildPeekCardTypes.WHO, u = (0, k.useGuildPopoutCards)(t), d = r.useMemo(() => u.map(e => {
-                    if (o && e.category !== F.CardCategory.EMPTY) {
+                } = e, s = (0, k.useCanShowNewGuildTooltipActivityEmptyState)(), o = a === H.GuildPeekCardTypes.WHO, u = (0, V.useGuildPopoutCards)(t), d = r.useMemo(() => u.map(e => {
+                    if (o && e.category !== H.CardCategory.EMPTY) {
                         let n = null;
-                        return e.category === F.CardCategory.EMBEDDED_ACTIVITY ? n = e.embeddedActivities[0].channelId : e.category === F.CardCategory.HANGOUT || e.category === F.CardCategory.GAMING ? n = e.channelId : e.category === F.CardCategory.EVENT && (n = e.event.channel_id), (0, i.jsx)(V.default, {
+                        return e.category === H.CardCategory.EMBEDDED_ACTIVITY ? n = e.embeddedActivities[0].channelId : e.category === H.CardCategory.HANGOUT || e.category === H.CardCategory.GAMING ? n = e.channelId : e.category === H.CardCategory.EVENT && (n = e.event.channel_id), (0, i.jsx)(x.default, {
                             cardData: e,
                             guildId: t.id
                         }, "".concat(e.category, "-").concat(n))
                     }
-                    if (e.category === F.CardCategory.HANGOUT) return (0, i.jsx)(q, {
+                    if (e.category === H.CardCategory.HANGOUT) return (0, i.jsx)(J, {
                         hangoutActivity: e,
                         guildId: t.id
                     }, "".concat(e.category, "-").concat(e.channelId));
-                    if (e.category === F.CardCategory.EVENT) return (0, i.jsx)(J, {
+                    if (e.category === H.CardCategory.EVENT) return (0, i.jsx)($, {
                         event: e.event,
                         cardData: e
                     }, "".concat(e.category, "-").concat(e.event.id));
-                    if (e.category === F.CardCategory.EMBEDDED_ACTIVITY) {
+                    if (e.category === H.CardCategory.EMBEDDED_ACTIVITY) {
                         let {
                             channelId: n,
                             applicationId: r,
                             userIds: a
                         } = e.embeddedActivities[0];
-                        return (0, i.jsx)(Q, {
+                        return (0, i.jsx)(q, {
                             channelId: n,
                             applicationId: r,
                             userIds: Array.from(a),
                             guildId: t.id,
                             streamersCount: e.streamersCount,
-                            cardType: F.CardCategory.EMBEDDED_ACTIVITY,
+                            cardType: H.CardCategory.EMBEDDED_ACTIVITY,
                             cardData: e
                         }, "".concat(e.category, "-").concat(e.embeddedActivities[0].channelId))
-                    } else if (e.category === F.CardCategory.GAMING) {
+                    } else if (e.category === H.CardCategory.GAMING) {
                         let {
                             channelId: n,
                             games: r,
                             voiceStates: a,
                             streamersCount: s
                         } = e;
-                        return (0, i.jsx)(Q, {
+                        return (0, i.jsx)(q, {
                             channelId: n,
                             applicationId: r[0].application_id,
                             userIds: a.map(e => {
@@ -157348,108 +157351,109 @@
                             }),
                             guildId: t.id,
                             streamersCount: s,
-                            cardType: F.CardCategory.GAMING,
+                            cardType: H.CardCategory.GAMING,
                             cardData: e
                         }, "".concat(e.category, "-").concat(e.channelId))
-                    } else if (e.category === F.CardCategory.EMPTY) return (0, i.jsx)($, {
+                    } else if (e.category === H.CardCategory.EMPTY) return (0, i.jsx)(ee, {
                         channelId: e.channelId,
                         guildId: t.id
                     }, "".concat(e.category, "-").concat(e.channelId))
                 }), [u, t.id, o]);
                 if (0 === u.length) return null;
-                if (u[0].category === F.CardCategory.EMPTY) return s ? (0, i.jsxs)(i.Fragment, {
+                if (u[0].category === H.CardCategory.EMPTY) return s ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
-                        className: W.emptyStatePrompt,
+                        className: K.emptyStatePrompt,
                         children: [(0, i.jsx)("img", {
                             src: n("121727"),
                             alt: ""
                         }), (0, i.jsxs)("div", {
-                            className: W.emptyStateTextContainer,
+                            className: K.emptyStateTextContainer,
                             children: [(0, i.jsx)(l.Heading, {
                                 variant: "heading-sm/semibold",
                                 color: "header-primary",
-                                children: j.default.Messages.GUILD_POPOUT_EMPTY_PROMPT_HEADER
+                                children: W.default.Messages.GUILD_POPOUT_EMPTY_PROMPT_HEADER
                             }), (0, i.jsx)(l.Text, {
                                 variant: "text-xs/medium",
                                 color: "text-muted",
-                                children: j.default.Messages.GUILD_POPOUT_EMPTY_PROMPT_BODY
+                                children: W.default.Messages.GUILD_POPOUT_EMPTY_PROMPT_BODY
                             })]
                         })]
                     }), d]
                 }) : null;
                 return (0, i.jsx)("div", {
-                    className: W.cards,
+                    className: K.cards,
                     children: d
                 })
             }
 
-            function et(e) {
+            function en(e) {
                 let {
                     guild: t,
                     closePopout: n
-                } = e, r = (0, B.useGuildPeekCardType)(), a = (0, E.default)(t), s = (0, N.useShouldShowInvitesDisabledNotif)(t), {
+                } = e, r = (0, k.useGuildPeekCardType)(), a = (0, E.default)(t), s = (0, m.useShouldShowInvitesDisabledNotif)(t), {
                     isViewingRoles: u,
                     backNavigationSection: d
-                } = (0, o.useStateFromStoresObject)([C.default], () => ({
-                    isViewingRoles: C.default.isViewingRoles(t.id),
-                    backNavigationSection: C.default.getBackNavigationSection(t.id)
+                } = (0, o.useStateFromStoresObject)([O.default], () => ({
+                    isViewingRoles: O.default.isViewingRoles(t.id),
+                    backNavigationSection: O.default.getBackNavigationSection(t.id)
                 })), {
                     isUserLurking: _,
                     isUnverifiedAccount: c
-                } = (0, o.useStateFromStoresObject)([R.default, v.default], () => {
-                    let e = R.default.isLurking(t.id);
+                } = (0, o.useStateFromStoresObject)([C.default, L.default], () => {
+                    let e = C.default.isLurking(t.id);
                     return {
                         isUserLurking: e,
-                        isUnverifiedAccount: !v.default.getCheck(t.id).canChat
+                        isUnverifiedAccount: !L.default.getCheck(t.id).canChat
                     }
                 }), h = () => {
-                    C.default.isFullServerPreview(t.id) && (0, g.transitionTo)(H.Routes.CHANNEL(t.id)), T.default.shouldShowOnboarding(t.id) && (I.default.finishOnboarding(t.id), (0, f.discardOnboardingPromise)(t.id)), (0, O.stopImpersonating)(t.id), p.default.open(t.id, d), d === H.GuildSettingsSections.ROLE_SUBSCRIPTIONS && (0, S.announceDeleteTemplateChannels)(t.id)
+                    O.default.isFullServerPreview(t.id) && (0, R.transitionTo)(Y.Routes.CHANNEL(t.id)), T.default.shouldShowOnboarding(t.id) && (I.default.finishOnboarding(t.id), (0, f.discardOnboardingPromise)(t.id)), (0, p.stopImpersonating)(t.id), N.default.open(t.id, d), d === Y.GuildSettingsSections.ROLE_SUBSCRIPTIONS && (0, S.announceDeleteTemplateChannels)(t.id)
                 };
                 return (0, i.jsxs)("div", {
-                    className: W.container,
+                    className: K.container,
                     children: [(0, i.jsxs)("div", {
-                        className: W.header,
+                        className: K.header,
                         children: [a ? (0, i.jsx)(y.default, {
                             guild: t,
                             size: 16,
-                            className: W.rowIconV2
+                            className: K.rowIconV2,
+                            tooltipColor: l.Tooltip.Colors.PRIMARY
                         }) : (0, i.jsx)(M.default, {
                             guild: t,
                             size: 20,
-                            className: W.rowIcon
+                            className: K.rowIcon
                         }), (0, i.jsx)(l.Text, {
                             variant: "text-md/bold",
                             color: "header-primary",
                             children: t.name
                         })]
-                    }), !_ && !c && (0, i.jsx)(ee, {
+                    }), !_ && !c && (0, i.jsx)(et, {
                         guild: t,
                         guildPeekCardType: r
                     }), s ? (0, i.jsxs)("div", {
-                        className: W.footer,
+                        className: K.footer,
                         children: [(0, i.jsx)(U.default, {
                             width: 12,
                             height: 12,
-                            className: W.infoIcon
+                            className: K.infoIcon
                         }), (0, i.jsx)(l.Text, {
                             color: "text-muted",
                             variant: "text-xs/medium",
-                            children: j.default.Messages.GUILD_POPOUT_INVITES_PAUSED.format({
+                            children: W.default.Messages.GUILD_POPOUT_INVITES_PAUSED.format({
                                 onClick: () => {
-                                    n(), p.default.open(t.id, H.GuildSettingsSections.INSTANT_INVITES)
+                                    n(), N.default.open(t.id, Y.GuildSettingsSections.INSTANT_INVITES)
                                 }
                             })
                         })]
                     }) : null, u ? (0, i.jsxs)("div", {
-                        className: W.footer,
+                        className: K.footer,
                         children: [(0, i.jsx)(U.default, {
                             width: 12,
                             height: 12,
-                            className: W.infoIcon
+                            className: K.infoIcon
                         }), (0, i.jsx)(l.Text, {
                             color: "text-muted",
                             variant: "text-xs/medium",
-                            children: j.default.Messages.GUILD_POPOUT_VIEWING_AS_ROLES.format({
+                            children: W.default.Messages.GUILD_POPOUT_VIEWING_AS_ROLES.format({
                                 onClick: () => {
                                     n(), h()
                                 }
@@ -157463,41 +157467,46 @@
             "use strict";
             n.r(t), n.d(t, {
                 useGetCardUsers: function() {
-                    return y
-                },
-                useGetEventCardUsers: function() {
                     return P
                 },
+                useGetEventCardUsers: function() {
+                    return U
+                },
                 useGuildPopoutCards: function() {
-                    return D
+                    return v
+                },
+                useSortUserIdsByAffinity: function() {
+                    return M
+                },
+                useSortUsersByAffinity: function() {
+                    return y
                 }
             }), n("47120"), n("390547"), n("653041"), n("627341");
             var i = n("470079"),
                 r = n("392711"),
-                a = n.n(r),
-                s = n("278074"),
-                o = n("442837"),
-                l = n("317381"),
-                u = n("841784"),
-                d = n("924301"),
-                _ = n("565799"),
-                c = n("501655"),
-                E = n("344185"),
-                I = n("199902"),
-                T = n("480294"),
-                f = n("984933"),
-                S = n("158776"),
-                h = n("699516"),
-                A = n("800599"),
-                m = n("594174"),
-                N = n("979651"),
-                p = n("938475"),
-                O = n("823379"),
-                C = n("5192"),
-                R = n("126134"),
-                g = n("981631"),
-                L = n("689938");
-            let v = {
+                a = n("278074"),
+                s = n("442837"),
+                o = n("317381"),
+                l = n("841784"),
+                u = n("924301"),
+                d = n("565799"),
+                _ = n("501655"),
+                c = n("344185"),
+                E = n("199902"),
+                I = n("480294"),
+                T = n("984933"),
+                f = n("158776"),
+                S = n("699516"),
+                h = n("800599"),
+                A = n("594174"),
+                m = n("979651"),
+                N = n("938475"),
+                p = n("823379"),
+                O = n("5192"),
+                C = n("126134"),
+                R = n("981631"),
+                g = n("689938");
+            let L = {
                 Event: 7,
                 Game: 6,
                 EmbeddedActivity: 5,
@@ -157507,76 +157516,77 @@
                 Base: 1
             };
 
-            function D(e) {
+            function v(e) {
                 let t = e.id,
-                    [n, a] = i.useState([]),
-                    [_, c] = i.useState(0),
-                    m = (0, o.useStateFromStoresArray)([f.default, E.default], () => {
-                        let e = f.default.getChannels(t)[f.GUILD_VOCAL_CHANNELS_KEY].filter(e => {
+                    [n, d] = i.useState([]),
+                    [_, A] = i.useState(0),
+                    O = (0, s.useStateFromStoresArray)([T.default, c.default], () => {
+                        let e = T.default.getChannels(t)[T.GUILD_VOCAL_CHANNELS_KEY].filter(e => {
                             let {
                                 channel: t
                             } = e;
-                            return t.type === g.ChannelTypes.GUILD_VOICE
+                            return t.type === R.ChannelTypes.GUILD_VOICE
                         }).map(e => {
                             let {
                                 channel: t
                             } = e;
                             return t.id
                         });
-                        return [...e, ...Object.values(E.default.getThreadsForGuild(t)).flatMap(e => Object.keys(e))]
+                        return [...e, ...Object.values(c.default.getThreadsForGuild(t)).flatMap(e => Object.keys(e))]
                     }, [t]),
-                    C = (0, o.useStateFromStoresArray)([d.default], () => d.default.getGuildScheduledEventsForGuild(t).filter(e => (0, d.isGuildScheduledEventActive)(e)).map(e => ({
-                        category: R.CardCategory.EVENT,
+                    g = (0, s.useStateFromStoresArray)([u.default], () => u.default.getGuildScheduledEventsForGuild(t).filter(e => (0, u.isGuildScheduledEventActive)(e)).map(e => ({
+                        category: C.CardCategory.EVENT,
                         event: e
                     })), [t]),
-                    L = C.map(e => {
+                    L = g.map(e => {
                         let {
                             event: t
                         } = e;
                         return t.channel_id
                     }),
-                    v = (0, o.useStateFromStores)([h.default], () => h.default.getRelationships()),
-                    D = i.useMemo(() => Object.keys(v).filter(e => v[e] === g.RelationshipTypes.BLOCKED), [v]),
-                    y = (0, o.useStateFromStores)([p.default], () => p.default.getVoiceStates(t), [t]),
+                    v = (0, s.useStateFromStores)([S.default], () => S.default.getRelationships()),
+                    M = i.useMemo(() => Object.keys(v).filter(e => v[e] === R.RelationshipTypes.BLOCKED), [v]),
+                    y = (0, s.useStateFromStores)([N.default], () => N.default.getVoiceStates(t), [t]),
                     P = i.useMemo(() => {
                         let t = Object.keys(y);
                         return 0 === t.length ? [] : t.filter(t => {
-                            let n = y[t].filter(O.isNotNullish);
+                            let n = y[t].filter(p.isNotNullish);
                             return !(0 === n.length || L.includes(t)) && null == n.find(e => {
                                 let {
                                     user: t
                                 } = e;
-                                return D.includes(t.id)
-                            }) && t !== e.afkChannelId && m.includes(t)
+                                return M.includes(t.id)
+                            }) && t !== e.afkChannelId && O.includes(t)
                         })
-                    }, [y, L, m, D, e.afkChannelId]),
-                    U = (0, o.useStateFromStoresArray)([l.default, N.default, S.default, I.default], () => P.map(e => {
-                        let t = I.default.getAllApplicationStreamsForChannel(e).map(e => e.ownerId),
-                            n = y[e].filter(O.isNotNullish),
-                            i = l.default.getEmbeddedActivitiesForChannel(e),
-                            r = R.CardCategory.HANGOUT,
+                    }, [y, L, O, M, e.afkChannelId]),
+                    U = (0, s.useStateFromStoresArray)([o.default, m.default, f.default, E.default], () => P.map(e => {
+                        let t = E.default.getAllApplicationStreamsForChannel(e).map(e => e.ownerId),
+                            n = y[e].filter(p.isNotNullish),
+                            i = o.default.getEmbeddedActivitiesForChannel(e),
+                            r = C.CardCategory.HANGOUT,
                             a = [],
                             s = [],
-                            o = n.map(e => {
+                            u = n.map(e => {
                                 let {
                                     user: t
                                 } = e;
                                 return t.id
                             }),
-                            d = N.default.hasVideo(e),
-                            _ = [];
+                            d = m.default.hasVideo(e),
+                            _ = [],
+                            c = [];
                         if (i.length > 0)
-                            for (let e of (r = R.CardCategory.EMBEDDED_ACTIVITY, i)) a.push(e);
+                            for (let e of (r = C.CardCategory.EMBEDDED_ACTIVITY, i)) a.push(e);
                         for (let e of n) {
-                            let t = S.default.findActivity(e.user.id, M(e));
-                            null != t && !(0, u.default)(t) && (r = R.CardCategory.GAMING, s.push(t), _.push(e.user.id))
+                            let t = f.default.findActivity(e.user.id, D(e));
+                            null != t && !(0, l.default)(t) && (r = C.CardCategory.GAMING, s.push(t), _.push(e.user.id)), e.voiceState.selfVideo && c.push(e.user.id)
                         }
-                        return r === R.CardCategory.EMBEDDED_ACTIVITY ? {
+                        return r === C.CardCategory.EMBEDDED_ACTIVITY ? {
                             category: r,
                             embeddedActivities: a,
                             streamersCount: t.length,
                             voiceUsersCount: n.length
-                        } : r === R.CardCategory.GAMING ? {
+                        } : r === C.CardCategory.GAMING ? {
                             category: r,
                             channelId: e,
                             games: s,
@@ -157586,126 +157596,142 @@
                         } : {
                             category: r,
                             channelId: e,
-                            userIds: o,
+                            userIds: u,
                             streamUserIds: t,
-                            channelHasVideo: d
+                            channelHasVideo: d,
+                            videoUserIds: c
                         }
                     }), [y, P]),
-                    b = (0, o.useStateFromStores)([T.default], () => T.default.hasConsented(g.Consents.PERSONALIZATION)),
-                    G = (0, o.useStateFromStores)([A.default], () => A.default.getUserAffinities());
-                if (0 === U.length && 0 === C.length) return 0 === m.length ? [] : m.slice(0, 2).map(e => ({
-                    category: R.CardCategory.EMPTY,
+                    b = (0, s.useStateFromStores)([I.default], () => I.default.hasConsented(R.Consents.PERSONALIZATION)),
+                    G = (0, s.useStateFromStores)([h.default], () => h.default.getUserAffinities());
+                if (0 === U.length && 0 === g.length) return 0 === O.length ? [] : O.slice(0, 2).map(e => ({
+                    category: C.CardCategory.EMPTY,
                     channelId: e
                 }));
                 let w = b && G.length > 0,
-                    B = [...U, ...C];
-                return _ !== B.length && (a((function(e, t) {
+                    B = [...U, ...g];
+                return _ !== B.length && (d((function(e, t) {
                     return (0, r.orderBy)(e, [e => (function(e, t) {
                         let n = e => e > 0 ? Math.log(e + 1) : 0,
                             i = e => e.map(e => {
                                 var t, n;
-                                return null !== (n = null === (t = A.default.getUserAffinity(e)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
+                                return null !== (n = null === (t = h.default.getUserAffinity(e)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
                             }).map(n),
-                            r = (0, s.match)(e).with({
-                                category: R.CardCategory.EVENT
+                            r = (0, a.match)(e).with({
+                                category: C.CardCategory.EVENT
                             }, () => 7).with({
-                                category: R.CardCategory.GAMING
+                                category: C.CardCategory.GAMING
                             }, () => 6).with({
-                                category: R.CardCategory.EMBEDDED_ACTIVITY
+                                category: C.CardCategory.EMBEDDED_ACTIVITY
                             }, () => 5).with({
-                                streamUserIds: s.P.when(e => e.length > 0)
+                                streamUserIds: a.P.when(e => e.length > 0)
                             }, () => 4).with({
                                 channelHasVideo: !0
                             }, () => 3).with({
-                                category: R.CardCategory.HANGOUT
+                                category: C.CardCategory.HANGOUT
                             }, () => 2).otherwise(() => 1),
-                            a = 0;
+                            s = 0;
                         if (t) {
-                            if ("userIds" in e && (a += Math.max(...i(e.userIds))), "embeddedActivities" in e) {
+                            if ("userIds" in e && (s += Math.max(...i(e.userIds))), "embeddedActivities" in e) {
                                 let t = new Set;
                                 e.embeddedActivities.forEach(e => {
                                     t = new Set([...t, ...e.userIds])
-                                }), a += Math.max(...i([...t]))
+                                }), s += Math.max(...i([...t]))
                             }
-                            "voiceStates" in e && (a += Math.max(...i(e.voiceStates.filter(O.isNotNullish).map(e => {
+                            "voiceStates" in e && (s += Math.max(...i(e.voiceStates.filter(p.isNotNullish).map(e => {
                                 let {
                                     user: t
                                 } = e;
                                 return t.id
                             }))))
                         } else {
-                            if ("userIds" in e && (a += e.userIds.length), "embeddedActivities" in e) {
+                            if ("userIds" in e && (s += e.userIds.length), "embeddedActivities" in e) {
                                 let t = new Set;
                                 e.embeddedActivities.forEach(e => {
                                     t = new Set([t, ...e.userIds])
-                                }), a += t.size
+                                }), s += t.size
                             }
-                            "voiceStates" in e && (a += e.voiceStates.filter(O.isNotNullish).map(e => {
+                            "voiceStates" in e && (s += e.voiceStates.filter(p.isNotNullish).map(e => {
                                 let {
                                     user: t
                                 } = e;
                                 return t.id
                             }).length)
                         }
-                        return a = a > 0 ? a * r : 1e-5 * r
+                        return s = s > 0 ? s * r : 1e-5 * r
                     })(e, t)], ["desc"])
-                })(B, w).slice(0, 3)), c(B.length)), n
+                })(B, w).slice(0, 3)), A(B.length)), n
             }
-            let M = e => t => [g.ActivityTypes.PLAYING, g.ActivityTypes.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId);
+            let D = e => t => [R.ActivityTypes.PLAYING, R.ActivityTypes.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId);
 
-            function y(e, t, n, i) {
-                let s;
-                let l = (0, o.useStateFromStoresArray)([T.default, A.default, m.default], () => {
-                        let t = T.default.hasConsented(g.Consents.PERSONALIZATION),
-                            n = A.default.getUserAffinities(),
-                            i = a()(e).map(e => m.default.getUser(e)).filter(O.isNotNullish).value();
-                        return t && n.length > 0 ? (0, r.orderBy)(i, [e => {
-                            var t, n;
-                            return null !== (n = null === (t = A.default.getUserAffinity(e.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
-                        }], ["desc"]) : i
-                    }),
-                    u = l.slice(0, 7),
-                    d = Math.max(0, l.length - u.length);
-                if (null != i && i.length > 0) {
-                    let e = C.default.getName(t, n, m.default.getUser(i[0]));
-                    s = 1 === i.length ? L.default.Messages.GUILD_POPOUT_ACTIVITY_STREAMER.format({
+            function M(e) {
+                return (0, s.useStateFromStoresArray)([I.default, h.default], () => {
+                    let t = I.default.hasConsented(R.Consents.PERSONALIZATION),
+                        n = h.default.getUserAffinities();
+                    return t && n.length > 0 ? (0, r.orderBy)(e, [e => {
+                        var t, n;
+                        return null !== (n = null === (t = h.default.getUserAffinity(e)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
+                    }], ["desc"]) : e
+                }, [e])
+            }
+
+            function y(e) {
+                return (0, s.useStateFromStoresArray)([I.default, h.default], () => {
+                    let t = I.default.hasConsented(R.Consents.PERSONALIZATION),
+                        n = h.default.getUserAffinities();
+                    return t && n.length > 0 ? (0, r.orderBy)(e, [e => {
+                        var t, n;
+                        return null !== (n = null === (t = h.default.getUserAffinity(e.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== n ? n : 0
+                    }], ["desc"]) : e
+                }, [e])
+            }
+
+            function P(e, t, n, r) {
+                let a;
+                let s = M(e),
+                    o = i.useMemo(() => s.map(e => A.default.getUser(e)).filter(p.isNotNullish), [s]),
+                    l = o.slice(0, 6),
+                    u = Math.max(0, o.length - l.length);
+                if (null != r && r.length > 0) {
+                    let e = O.default.getName(t, n, A.default.getUser(r[0]));
+                    a = 1 === r.length ? g.default.Messages.GUILD_POPOUT_ACTIVITY_STREAMER.format({
                         username: e
-                    }) : L.default.Messages.GUILD_POPOUT_USERS_STREAMING.format({
+                    }) : g.default.Messages.GUILD_POPOUT_USERS_STREAMING.format({
                         username: e,
-                        count: i.length - 1
+                        count: r.length - 1
                     })
                 } else {
-                    let e = C.default.getName(t, n, m.default.getUser(u[0].id));
-                    s = 1 === u.length ? L.default.Messages.GUILD_POPOUT_USER_IN_VOICE.format({
+                    let e = O.default.getName(t, n, A.default.getUser(l[0].id));
+                    a = 1 === l.length ? g.default.Messages.GUILD_POPOUT_USER_IN_VOICE.format({
                         username: e
-                    }) : L.default.Messages.GUILD_POPOUT_USERS_IN_VOICE.format({
+                    }) : g.default.Messages.GUILD_POPOUT_USERS_IN_VOICE.format({
                         username: e,
-                        count: u.length - 1
+                        count: l.length - 1
                     })
                 }
                 return {
-                    totalUsers: l.length,
-                    usersToShow: u,
-                    othersCount: d,
-                    usersText: s
+                    totalUsers: o.length,
+                    usersToShow: l,
+                    othersCount: u,
+                    usersText: a
                 }
             }
 
-            function P(e) {
-                let t = (0, o.useStateFromStores)([_.default], () => null == e ? null : _.default.getParticipantCount(e.id, c.StageChannelParticipantNamedIndex.AUDIENCE)),
-                    n = (0, o.useStateFromStoresArray)([_.default], () => null == e ? [] : _.default.getMutableParticipants(e.id, c.StageChannelParticipantNamedIndex.SPEAKER).filter(e => e.type === c.StageChannelParticipantTypes.VOICE).map(e => {
+            function U(e) {
+                let t = (0, s.useStateFromStores)([d.default], () => null == e ? null : d.default.getParticipantCount(e.id, _.StageChannelParticipantNamedIndex.AUDIENCE)),
+                    n = (0, s.useStateFromStoresArray)([d.default], () => null == e ? [] : d.default.getMutableParticipants(e.id, _.StageChannelParticipantNamedIndex.SPEAKER).filter(e => e.type === _.StageChannelParticipantTypes.VOICE).map(e => {
                         let {
                             user: t
                         } = e;
                         return t
                     })),
-                    i = (0, o.useStateFromStoresArray)([p.default], () => null == e ? [] : p.default.getVoiceStatesForChannel(e).filter(O.isNotNullish).map(e => {
+                    i = (0, s.useStateFromStoresArray)([N.default], () => null == e ? [] : N.default.getVoiceStatesForChannel(e).filter(p.isNotNullish).map(e => {
                         let {
                             user: t
                         } = e;
                         return t
                     }));
-                if ((null == e ? void 0 : e.type) === g.ChannelTypes.GUILD_STAGE_VOICE) {
+                if ((null == e ? void 0 : e.type) === R.ChannelTypes.GUILD_STAGE_VOICE) {
                     let e = n.slice(0, 3),
                         i = Math.max(0, n.length - e.length);
                     return {
@@ -157714,7 +157740,7 @@
                         audienceCount: null != t ? t : 0
                     }
                 }
-                if ((null == e ? void 0 : e.type) === g.ChannelTypes.GUILD_VOICE) {
+                if ((null == e ? void 0 : e.type) === R.ChannelTypes.GUILD_VOICE) {
                     let e = i.slice(0, 7),
                         t = Math.max(0, i.length - e.length);
                     return {
@@ -157752,7 +157778,7 @@
                 let {
                     cardData: t,
                     guildId: n
-                } = e, [a, E] = r.useState(!1), I = (0, o.useStateFromStores)([u.default], () => t.category === _.CardCategory.HANGOUT && t.streamUserIds.length > 0 ? u.default.getPreviewURL(n, t.channelId, t.streamUserIds[0]) : null), T = (0, d.getImage)(t, n, I), f = (0, d.getCardTitle)(t, n), S = (0, d.getSubtitle)(t), h = (0, d.getCount)(t), A = (0, d.getCategoryIcon)(t), m = (0, d.getClickHandler)(t, n), N = (0, d.getJoinButton)(t, n), p = t.category === _.CardCategory.HANGOUT && 0 === t.streamUserIds.length;
+                } = e, [a, E] = r.useState(!1), I = (0, o.useStateFromStores)([u.default], () => t.category === _.CardCategory.HANGOUT && t.streamUserIds.length > 0 ? u.default.getPreviewURL(n, t.channelId, t.streamUserIds[0]) : null), T = (0, d.getImage)(t, n, I), f = (0, d.useCardTitle)(t, n), S = (0, d.getSubtitle)(t), h = (0, d.getCount)(t), A = (0, d.getCategoryIcon)(t), m = (0, d.getClickHandler)(t, n), N = (0, d.getJoinButton)(t, n), p = t.category === _.CardCategory.HANGOUT && 0 === t.streamUserIds.length;
                 return (0, i.jsxs)(l.Clickable, {
                     onClick: () => null == m ? void 0 : m(),
                     tag: "div",
@@ -157815,10 +157841,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 GuildTooltipText: function() {
-                    return ee
+                    return $
                 },
                 default: function() {
-                    return et
+                    return ee
                 }
             }), n("390547"), n("47120");
             var i = n("735250"),
@@ -157828,53 +157854,52 @@
                 o = n("392711"),
                 l = n.n(o),
                 u = n("442837"),
-                d = n("846519"),
-                _ = n("477690"),
-                c = n("481060"),
-                E = n("317381"),
-                I = n("666188"),
-                T = n("246364"),
-                f = n("746916"),
-                S = n("965638"),
-                h = n("160404"),
-                A = n("777861"),
-                m = n("565799"),
-                N = n("501655"),
-                p = n("517334"),
-                O = n("344185"),
-                C = n("199902"),
-                R = n("77498"),
-                g = n("984933"),
-                L = n("158776"),
-                v = n("9156"),
-                D = n("594174"),
-                M = n("938475"),
-                y = n("940627"),
-                P = n("705600"),
-                U = n("737688"),
-                b = n("242315"),
-                G = n("944581"),
-                w = n("632184"),
-                B = n("170039"),
-                k = n("761374"),
-                V = n("602623"),
-                x = n("624138"),
-                F = n("510601"),
-                H = n("59688"),
-                Y = n("456774"),
-                j = n("981631"),
-                W = n("689938"),
-                K = n("952972"),
-                z = n("81311");
-            let Z = (0, x.cssValueToNumber)(_.default.GUILD_TOOLTIP_ICON_SIZE),
-                X = (0, x.cssValueToNumber)(_.default.GUILD_TOOLTIP_ICON_SIZE_V_2);
+                d = n("477690"),
+                _ = n("481060"),
+                c = n("317381"),
+                E = n("666188"),
+                I = n("246364"),
+                T = n("746916"),
+                f = n("965638"),
+                S = n("160404"),
+                h = n("777861"),
+                A = n("565799"),
+                m = n("501655"),
+                N = n("517334"),
+                p = n("344185"),
+                O = n("199902"),
+                C = n("77498"),
+                R = n("984933"),
+                g = n("158776"),
+                L = n("9156"),
+                v = n("594174"),
+                D = n("938475"),
+                M = n("940627"),
+                y = n("705600"),
+                P = n("737688"),
+                U = n("242315"),
+                b = n("944581"),
+                G = n("632184"),
+                w = n("170039"),
+                B = n("761374"),
+                k = n("602623"),
+                V = n("624138"),
+                x = n("510601"),
+                F = n("59688"),
+                H = n("456774"),
+                Y = n("981631"),
+                j = n("689938"),
+                W = n("952972"),
+                K = n("81311");
+            let z = (0, V.cssValueToNumber)(d.default.GUILD_TOOLTIP_ICON_SIZE),
+                Z = (0, V.cssValueToNumber)(d.default.GUILD_TOOLTIP_ICON_SIZE_V_2);
 
-            function Q(e, t, n) {
+            function X(e, t, n) {
                 return 0 === t.length ? null : (0, i.jsxs)("div", {
-                    className: K.row,
+                    className: W.row,
                     children: [(0, i.jsx)(e, {
-                        className: K.activityIcon
-                    }), (0, i.jsx)(V.default, {
+                        className: W.activityIcon
+                    }), (0, i.jsx)(k.default, {
                         guildId: n,
                         users: t,
                         max: 6
@@ -157882,40 +157907,40 @@
                 })
             }
 
-            function q(e) {
+            function Q(e) {
                 let {
                     muteConfig: t,
                     className: n
                 } = e;
-                return (null == t ? void 0 : t.end_time) == null ? (0, i.jsx)(c.Text, {
+                return (null == t ? void 0 : t.end_time) == null ? (0, i.jsx)(_.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",
                     className: n,
-                    children: W.default.Messages.FORM_LABEL_MUTED
-                }) : (0, i.jsx)(A.default, {
+                    children: j.default.Messages.FORM_LABEL_MUTED
+                }) : (0, i.jsx)(h.default, {
                     muteConfig: t,
                     className: n
                 })
             }
 
-            function J(e) {
+            function q(e) {
                 var t, n, a;
                 let {
                     guild: o
-                } = e, d = o.id, _ = (0, u.useStateFromStoresArray)([g.default, O.default], () => {
-                    let e = g.default.getChannels(d)[g.GUILD_VOCAL_CHANNELS_KEY].filter(e => {
+                } = e, d = o.id, E = (0, u.useStateFromStoresArray)([R.default, p.default], () => {
+                    let e = R.default.getChannels(d)[R.GUILD_VOCAL_CHANNELS_KEY].filter(e => {
                         let {
                             channel: t
                         } = e;
-                        return t.type === j.ChannelTypes.GUILD_VOICE
+                        return t.type === Y.ChannelTypes.GUILD_VOICE
                     }).map(e => {
                         let {
                             channel: t
                         } = e;
                         return t.id
                     });
-                    return [...e, ...Object.values(O.default.getThreadsForGuild(d)).flatMap(e => Object.keys(e))]
-                }, [d]), I = (0, p.default)(d), T = r.useMemo(() => I.map(e => e.id), [I]), f = (0, u.useStateFromStores)([M.default], () => M.default.getVoiceStates(d), [d]), S = l().flatMap(_, e => {
+                    return [...e, ...Object.values(p.default.getThreadsForGuild(d)).flatMap(e => Object.keys(e))]
+                }, [d]), I = (0, N.default)(d), T = r.useMemo(() => I.map(e => e.id), [I]), f = (0, u.useStateFromStores)([D.default], () => D.default.getVoiceStates(d), [d]), S = l().flatMap(E, e => {
                     var t;
                     return e === o.afkChannelId ? [] : (null !== (t = f[e]) && void 0 !== t ? t : []).map(e => {
                         let {
@@ -157923,122 +157948,122 @@
                         } = e;
                         return t
                     })
-                }), h = (0, u.useStateFromStoresArray)([m.default], () => l().flatMap(T, e => e === o.afkChannelId ? [] : m.default.getMutableParticipants(e, N.StageChannelParticipantNamedIndex.SPEAKER).filter(e => e.type === N.StageChannelParticipantTypes.VOICE).map(e => {
+                }), h = (0, u.useStateFromStoresArray)([A.default], () => l().flatMap(T, e => e === o.afkChannelId ? [] : A.default.getMutableParticipants(e, m.StageChannelParticipantNamedIndex.SPEAKER).filter(e => e.type === m.StageChannelParticipantTypes.VOICE).map(e => {
                     let {
                         user: t
                     } = e;
                     return t
-                }))), A = (0, u.useStateFromStores)([m.default], () => {
+                }))), M = (0, u.useStateFromStores)([A.default], () => {
                     let e = 0;
-                    for (let t of T) e += m.default.getParticipantCount(t, N.StageChannelParticipantNamedIndex.AUDIENCE);
+                    for (let t of T) e += A.default.getParticipantCount(t, m.StageChannelParticipantNamedIndex.AUDIENCE);
                     return e
-                }), y = (0, u.useStateFromStoresArray)([C.default], () => C.default.getAllApplicationStreams().filter(e => e.guildId === d).map(e => e.ownerId), [d]), P = (0, F.useIsGamingVoiceActivityEnabled)("Guild Tooltip", !1), x = (0, u.useStateFromStoresArray)([L.default, R.default], () => S.filter(e => L.default.getActivities(e.id, d).some(e => (null == e ? void 0 : e.application_id) != null && null != R.default.getDetectableGame(null == e ? void 0 : e.application_id)))), H = Q(U.default, x, d), Y = P ? x.map(e => e.id) : [], W = (0, u.useStateFromStoresArray)([E.default], () => E.default.getEmbeddedActivitiesForGuild(d).flatMap(e => Array.from(e.userIds)), [d]), z = (0, u.useStateFromStoresArray)([D.default], () => W.map(e => D.default.getUser(e)), [W]), Z = (0, u.useStateFromStoresArray)([D.default], () => y.map(e => D.default.getUser(e)), [y]), X = Q(w.default, S.filter(e => !y.includes(e.id) && !W.includes(e.id) && !Y.includes(e.id)), d);
-                let J = (t = d, n = h, a = A, 0 === n.length ? null : (0, i.jsxs)("div", {
-                        className: K.row,
-                        children: [(0, i.jsx)(B.default, {
-                            className: K.activityIcon
-                        }), (0, i.jsx)(V.default, {
+                }), y = (0, u.useStateFromStoresArray)([O.default], () => O.default.getAllApplicationStreams().filter(e => e.guildId === d).map(e => e.ownerId), [d]), V = (0, x.useIsGamingVoiceActivityEnabled)("Guild Tooltip", !1), F = (0, u.useStateFromStoresArray)([g.default, C.default], () => S.filter(e => g.default.getActivities(e.id, d).some(e => (null == e ? void 0 : e.application_id) != null && null != C.default.getDetectableGame(null == e ? void 0 : e.application_id)))), H = X(P.default, F, d), j = V ? F.map(e => e.id) : [], K = (0, u.useStateFromStoresArray)([c.default], () => c.default.getEmbeddedActivitiesForGuild(d).flatMap(e => Array.from(e.userIds)), [d]), z = (0, u.useStateFromStoresArray)([v.default], () => K.map(e => v.default.getUser(e)), [K]), Z = (0, u.useStateFromStoresArray)([v.default], () => y.map(e => v.default.getUser(e)), [y]), q = X(G.default, S.filter(e => !y.includes(e.id) && !K.includes(e.id) && !j.includes(e.id)), d);
+                let J = (t = d, n = h, a = M, 0 === n.length ? null : (0, i.jsxs)("div", {
+                        className: W.row,
+                        children: [(0, i.jsx)(w.default, {
+                            className: W.activityIcon
+                        }), (0, i.jsx)(k.default, {
                             guildId: t,
                             users: n,
                             max: 3
                         }), (0, i.jsxs)("div", {
-                            className: K.stageListenerPill,
-                            children: [(0, i.jsx)(b.default, {
+                            className: W.stageListenerPill,
+                            children: [(0, i.jsx)(U.default, {
                                 width: 16,
                                 height: 16
-                            }), (0, i.jsx)(c.Text, {
-                                className: K.stageListenerCount,
+                            }), (0, i.jsx)(_.Text, {
+                                className: W.stageListenerCount,
                                 color: "text-normal",
                                 variant: "text-xs/normal",
                                 children: a
                             })]
                         })]
                     })),
-                    $ = Q(k.default, Z.filter(e => null != e && !W.includes(e.id)), d),
-                    ee = Q(G.default, z, d),
+                    $ = X(B.default, Z.filter(e => null != e && !K.includes(e.id)), d),
+                    ee = X(b.default, z, d),
                     {
                         isMuted: et,
                         muteConfig: en
-                    } = (0, u.useStateFromStoresObject)([v.default], () => ({
-                        isMuted: v.default.isMuted(d),
-                        muteConfig: v.default.getMuteConfig(d)
+                    } = (0, u.useStateFromStoresObject)([L.default], () => ({
+                        isMuted: L.default.isMuted(d),
+                        muteConfig: L.default.getMuteConfig(d)
                     }), [d]);
-                return null != H && F.default.trackExposure({
+                return null != H && x.default.trackExposure({
                     location: "Guild Tooltip"
                 }), (0, i.jsxs)(i.Fragment, {
-                    children: [J, X, $, P && H, ee, et ? (0, i.jsx)(q, {
+                    children: [J, q, $, V && H, ee, et ? (0, i.jsx)(Q, {
                         muteConfig: en,
-                        className: s()(K.muteText, {
-                            [K.muteTextWithActivity]: null != X || null != $
+                        className: s()(W.muteText, {
+                            [W.muteTextWithActivity]: null != q || null != $
                         })
                     }) : null]
                 })
             }
 
-            function $(e) {
+            function J(e) {
                 let {
                     guildJoinRequestStatus: t
                 } = e;
-                return (0, i.jsx)(c.Text, {
-                    className: K.viewAsRolesWarning,
+                return (0, i.jsx)(_.Text, {
+                    className: W.viewAsRolesWarning,
                     color: "text-normal",
                     variant: "text-xs/normal",
                     children: function(e) {
                         switch (e) {
-                            case T.GuildJoinRequestApplicationStatuses.SUBMITTED:
-                                return W.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_PENDING;
-                            case T.GuildJoinRequestApplicationStatuses.REJECTED:
-                                return W.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_REJECTED;
-                            case T.GuildJoinRequestApplicationStatuses.APPROVED:
-                                return W.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_APPROVED;
+                            case I.GuildJoinRequestApplicationStatuses.SUBMITTED:
+                                return j.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_PENDING;
+                            case I.GuildJoinRequestApplicationStatuses.REJECTED:
+                                return j.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_REJECTED;
+                            case I.GuildJoinRequestApplicationStatuses.APPROVED:
+                                return j.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_APPROVED;
                             default:
-                                return W.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_STARTED
+                                return j.default.Messages.GUILD_JOIN_REQUEST_STATUS_TOOLTIP_STARTED
                         }
                     }(t)
                 })
             }
 
-            function ee(e) {
+            function $(e) {
                 let {
                     guild: t,
                     includeActivity: n = !0
-                } = e, r = (0, I.default)(t), a = (0, f.useCurrentUserGuildBadgeStatus)(t.id), o = null != a ? (0, i.jsx)($, {
+                } = e, r = (0, E.default)(t), a = (0, T.useCurrentUserGuildBadgeStatus)(t.id), o = null != a ? (0, i.jsx)(J, {
                     guildJoinRequestStatus: a
-                }) : null, l = n ? (0, i.jsx)(J, {
+                }) : null, l = n ? (0, i.jsx)(q, {
                     guild: t
-                }) : null, d = (0, u.useStateFromStores)([h.default], () => h.default.isViewingRoles(t.id)), _ = (0, S.useShouldShowInvitesDisabledNotif)(t);
+                }) : null, d = (0, u.useStateFromStores)([S.default], () => S.default.isViewingRoles(t.id)), c = (0, f.useShouldShowInvitesDisabledNotif)(t);
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
-                        className: s()(K.row, K.rowGuildName),
-                        children: [r ? (0, i.jsx)(P.default, {
-                            guild: t,
-                            size: X,
-                            className: K.rowIconV2
-                        }) : (0, i.jsx)(y.default, {
+                        className: s()(W.row, W.rowGuildName),
+                        children: [r ? (0, i.jsx)(y.default, {
                             guild: t,
                             size: Z,
-                            className: K.rowIcon
+                            className: W.rowIconV2
+                        }) : (0, i.jsx)(M.default, {
+                            guild: t,
+                            size: z,
+                            className: W.rowIcon
                         }), (0, i.jsx)("span", {
-                            className: s()(K.guildNameText, {
-                                [K.guildNameTextLimitedSize]: null != l
+                            className: s()(W.guildNameText, {
+                                [W.guildNameTextLimitedSize]: null != l
                             }),
                             children: t.toString()
                         })]
-                    }), _ ? (0, i.jsx)(c.Text, {
-                        className: K.invitesDisabledTooltip,
+                    }), c ? (0, i.jsx)(_.Text, {
+                        className: W.invitesDisabledTooltip,
                         color: "header-secondary",
                         variant: "text-sm/medium",
-                        children: W.default.Messages.INVITES_DISABLED_TOOLTIP
-                    }) : null, d ? (0, i.jsx)(c.Text, {
-                        className: K.viewAsRolesWarning,
+                        children: j.default.Messages.INVITES_DISABLED_TOOLTIP
+                    }) : null, d ? (0, i.jsx)(_.Text, {
+                        className: W.viewAsRolesWarning,
                         color: "text-normal",
                         variant: "text-xs/normal",
-                        children: W.default.Messages.VIEW_AS_ROLES_MENTIONS_WARNING
+                        children: j.default.Messages.VIEW_AS_ROLES_MENTIONS_WARNING
                     }) : null != o ? o : l]
                 })
             }
 
-            function et(e) {
+            function ee(e) {
                 let {
                     guild: t,
                     disabled: n = !1,
@@ -158046,37 +158071,34 @@
                     children: s,
                     includeActivity: o = !0,
                     isDragging: l
-                } = e, u = (0, H.useCanShowNewGuildTooltip)(), [_, E] = r.useState(!1), I = r.useRef(new d.DelayedCall(50, () => E(!1))), T = r.useCallback(() => {
-                    I.current.cancel(), E(!0)
-                }, []), f = r.useCallback(() => {
-                    I.current.delay()
-                }, []);
+                } = e, u = (0, F.useCanShowNewGuildTooltip)(), [d, c] = r.useState(!1);
                 return u && o ? (0, i.jsx)("div", {
-                    onMouseEnter: T,
-                    onMouseLeave: f,
-                    children: (0, i.jsx)(c.Popout, {
+                    onMouseEnter: () => c(!0),
+                    onMouseLeave: () => c(!1),
+                    children: (0, i.jsx)(_.Popout, {
                         position: "right",
-                        renderPopout: () => (0, i.jsx)(Y.default, {
+                        renderPopout: () => (0, i.jsx)(H.default, {
                             guild: t,
-                            closePopout: f
+                            closePopout: () => c(!1)
                         }),
-                        spacing: 15,
-                        shouldShow: !l && _,
+                        spacing: 0,
+                        onRequestClose: () => c(!1),
+                        shouldShow: !l && d,
                         children: e => (0, i.jsx)("div", {
                             ...e,
                             children: s
                         })
                     })
-                }) : (0, i.jsx)(c.Tooltip, {
+                }) : (0, i.jsx)(_.Tooltip, {
                     hideOnClick: !0,
                     spacing: 20,
                     position: "right",
-                    text: n ? null : (0, i.jsx)(ee, {
+                    text: n ? null : (0, i.jsx)($, {
                         guild: t,
                         includeActivity: o
                     }),
                     "aria-label": a,
-                    tooltipClassName: z.listItemTooltip,
+                    tooltipClassName: K.listItemTooltip,
                     children: e => {
                         let {
                             onFocus: t,
@@ -158097,26 +158119,26 @@
         837771: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                getCardTitle: function() {
-                    return B
-                },
                 getCategoryIcon: function() {
-                    return x
+                    return F
                 },
                 getClickHandler: function() {
-                    return H
-                },
-                getCount: function() {
-                    return k
-                },
-                getImage: function() {
-                    return V
-                },
-                getJoinButton: function() {
                     return Y
                 },
+                getCount: function() {
+                    return V
+                },
+                getImage: function() {
+                    return x
+                },
+                getJoinButton: function() {
+                    return j
+                },
                 getSubtitle: function() {
-                    return F
+                    return H
+                },
+                useCardTitle: function() {
+                    return k
                 }
             }), n("47120");
             var i = n("735250");
@@ -158148,13 +158170,14 @@
                 v = n("51144"),
                 D = n("59688"),
                 M = n("623552"),
-                y = n("126134"),
-                P = n("981631"),
-                U = n("765305"),
-                b = n("689938"),
-                G = n("181096");
+                y = n("718582"),
+                P = n("126134"),
+                U = n("981631"),
+                b = n("765305"),
+                G = n("689938"),
+                w = n("181096");
 
-            function w(e, t) {
+            function B(e, t) {
                 var n, i;
                 let r = (n = e, i = t, n.map(e => {
                         var t;
@@ -158164,7 +158187,7 @@
                         return null !== (t = null != r ? r : v.default.getGlobalName(n)) && void 0 !== t ? t : v.default.getUserTag(n)
                     }).filter(e => null != e)),
                     a = r.length;
-                if (a > 0) return 1 === a ? r[0] : (2 === a ? b.default.Messages.USER_SUMMARY_TWO : 3 === a ? b.default.Messages.USER_SUMMARY_THREE : b.default.Messages.USER_SUMMARY_THREE_AND_OTHERS).format({
+                if (a > 0) return 1 === a ? r[0] : (2 === a ? G.default.Messages.USER_SUMMARY_TWO : 3 === a ? G.default.Messages.USER_SUMMARY_THREE : G.default.Messages.USER_SUMMARY_THREE_AND_OTHERS).format({
                     first: r[0],
                     second: null == r ? void 0 : r[1],
                     third: null == r ? void 0 : r[2],
@@ -158172,45 +158195,40 @@
                 })
             }
 
-            function B(e, t) {
+            function k(e, t) {
                 let {
                     category: n
-                } = e;
+                } = e, i = (0, y.useSortUserIdsByAffinity)(n === P.CardCategory.HANGOUT ? null == e ? void 0 : e.userIds : []), r = (0, y.useSortUserIdsByAffinity)(n === P.CardCategory.HANGOUT ? null == e ? void 0 : e.streamUserIds : []), a = (0, y.useSortUserIdsByAffinity)(n === P.CardCategory.GAMING ? null == e ? void 0 : e.gameUserIds : []), s = new Set;
+                n === P.CardCategory.EMBEDDED_ACTIVITY && e.embeddedActivities.forEach(e => {
+                    s = new Set([...s, ...e.userIds])
+                });
+                let o = (0, y.useSortUserIdsByAffinity)(n === P.CardCategory.EMBEDDED_ACTIVITY ? [...s] : []);
                 switch (n) {
-                    case y.CardCategory.HANGOUT: {
-                        let {
-                            streamUserIds: n,
-                            userIds: i
-                        } = e;
-                        if (n.length > 0) return w(n, t);
-                        return w(i, t)
-                    }
-                    case y.CardCategory.EVENT:
+                    case P.CardCategory.HANGOUT:
+                        if (r.length > 0) return B(r, t);
+                        return B(i, t);
+                    case P.CardCategory.EVENT:
                         return e.event.name;
-                    case y.CardCategory.EMBEDDED_ACTIVITY: {
-                        let n = new Set;
-                        return e.embeddedActivities.forEach(e => {
-                            n = new Set([...n, ...e.userIds])
-                        }), w([...n], t)
-                    }
-                    case y.CardCategory.GAMING:
-                        return w(e.gameUserIds, t);
+                    case P.CardCategory.EMBEDDED_ACTIVITY:
+                        return B(o, t);
+                    case P.CardCategory.GAMING:
+                        return B(a, t);
                     default:
                         return null
                 }
             }
 
-            function k(e) {
+            function V(e) {
                 let {
                     category: t
                 } = e;
                 switch (t) {
-                    case y.CardCategory.EVENT:
+                    case P.CardCategory.EVENT:
                         return [{
                             icon: m.default,
                             count: d.default.getUserCount(e.event.id, null)
                         }];
-                    case y.CardCategory.HANGOUT:
+                    case P.CardCategory.HANGOUT:
                         let {
                             streamUserIds: n, userIds: i
                         } = e;
@@ -158219,7 +158237,7 @@
                             count: i.length
                         }];
                         return [];
-                    case y.CardCategory.EMBEDDED_ACTIVITY:
+                    case P.CardCategory.EMBEDDED_ACTIVITY:
                         return [{
                             icon: O.default,
                             count: e.voiceUsersCount
@@ -158227,7 +158245,7 @@
                             icon: R.default,
                             count: e.streamersCount
                         }];
-                    case y.CardCategory.GAMING:
+                    case P.CardCategory.GAMING:
                         return [{
                             icon: O.default,
                             count: e.voiceStates.length
@@ -158237,18 +158255,18 @@
                 }
             }
 
-            function V(e, t, n) {
+            function x(e, t, n) {
                 let {
                     cardType: a
                 } = D.default.getCurrentConfig({
                     location: "join_button"
                 }, {
                     autoTrackExposure: !1
-                }), o = a === y.GuildPeekCardTypes.WHAT, {
+                }), o = a === P.GuildPeekCardTypes.WHAT, {
                     category: l
                 } = e;
                 switch (l) {
-                    case y.CardCategory.GAMING:
+                    case P.CardCategory.GAMING:
                         let {
                             games: u
                         } = e;
@@ -158256,13 +158274,13 @@
                         return (0, i.jsx)(A.default, {
                             game: s.default.getApplication(u[0].application_id),
                             size: "xl",
-                            className: G.gameIcon
+                            className: w.gameIcon
                         });
-                    case y.CardCategory.EVENT:
+                    case P.CardCategory.EVENT:
                         return (0, i.jsx)(m.default, {
-                            className: G.imageIcon
+                            className: w.imageIcon
                         });
-                    case y.CardCategory.EMBEDDED_ACTIVITY:
+                    case P.CardCategory.EMBEDDED_ACTIVITY:
                         let {
                             embeddedActivities: d
                         } = e;
@@ -158270,24 +158288,24 @@
                         return (0, i.jsx)(A.default, {
                             game: s.default.getApplication(d[0].applicationId),
                             size: "xl",
-                            className: G.gameIcon
+                            className: w.gameIcon
                         });
-                    case y.CardCategory.HANGOUT: {
+                    case P.CardCategory.HANGOUT: {
                         let {
                             streamUserIds: a,
                             userIds: s,
                             channelHasVideo: l
                         } = e;
                         if (o) return a.length > 0 ? (0, i.jsx)(R.default, {
-                            className: G.imageIcon
+                            className: w.imageIcon
                         }) : l ? (0, i.jsx)(N.default, {
-                            className: G.imageIcon
+                            className: w.imageIcon
                         }) : (0, i.jsx)(g.default, {
-                            className: G.imageIcon
+                            className: w.imageIcon
                         });
                         if (a.length > 0) {
                             let e = e => (0, i.jsx)(L.TextBadge, {
-                                text: b.default.Messages.LIVE,
+                                text: G.default.Messages.LIVE,
                                 color: r.default.STATUS_DANGER,
                                 className: e
                             });
@@ -158298,8 +158316,8 @@
                                     alt: "",
                                     height: 64,
                                     width: 64,
-                                    className: G.streamPreview
-                                }), e(G.liveBadge)]
+                                    className: w.streamPreview
+                                }), e(w.liveBadge)]
                             })
                         }
                         let u = s.map(e => S.default.getUser(e)).filter(e => null != e);
@@ -158311,18 +158329,18 @@
                 }
             }
 
-            function x(e) {
+            function F(e) {
                 let {
                     category: t
                 } = e;
                 switch (t) {
-                    case y.CardCategory.GAMING:
+                    case P.CardCategory.GAMING:
                         return p.default;
-                    case y.CardCategory.EVENT:
+                    case P.CardCategory.EVENT:
                         return m.default;
-                    case y.CardCategory.EMBEDDED_ACTIVITY:
+                    case P.CardCategory.EMBEDDED_ACTIVITY:
                         return C.default;
-                    case y.CardCategory.HANGOUT: {
+                    case P.CardCategory.HANGOUT: {
                         let {
                             streamUserIds: t
                         } = e;
@@ -158332,48 +158350,48 @@
                 }
             }
 
-            function F(e) {
+            function H(e) {
                 var t, n, i, r, a, o, l, u;
                 let {
                     category: d
                 } = e;
                 switch (d) {
-                    case y.CardCategory.GAMING:
+                    case P.CardCategory.GAMING:
                         let {
                             games: _, channelId: c
                         } = e;
-                        if (1 === _.length) return b.default.Messages.GAMING_IN_CHANNEL.format({
+                        if (1 === _.length) return G.default.Messages.GAMING_IN_CHANNEL.format({
                             channelName: null === (n = I.default.getChannel(c)) || void 0 === n ? void 0 : n.name,
                             gameName: _[0].name
                         });
-                        return b.default.Messages.MULTIPLE_GAMES_IN_CHANNEL.format({
+                        return G.default.Messages.MULTIPLE_GAMES_IN_CHANNEL.format({
                             numGames: _.length,
                             channelName: null === (t = I.default.getChannel(c)) || void 0 === t ? void 0 : t.name
                         });
-                    case y.CardCategory.EVENT:
+                    case P.CardCategory.EVENT:
                         let {
                             event: E
                         } = e;
-                        if (E.entity_type === U.GuildScheduledEventEntityTypes.EXTERNAL) return E.entity_metadata.location;
+                        if (E.entity_type === b.GuildScheduledEventEntityTypes.EXTERNAL) return E.entity_metadata.location;
                         return null === (i = I.default.getChannel(E.channel_id)) || void 0 === i ? void 0 : i.name;
-                    case y.CardCategory.EMBEDDED_ACTIVITY:
+                    case P.CardCategory.EMBEDDED_ACTIVITY:
                         let {
                             embeddedActivities: T
                         } = e;
-                        if (1 === T.length) return b.default.Messages.GAMING_IN_CHANNEL.format({
+                        if (1 === T.length) return G.default.Messages.GAMING_IN_CHANNEL.format({
                             channelName: null === (a = I.default.getChannel(T[0].channelId)) || void 0 === a ? void 0 : a.name,
                             gameName: null === (o = s.default.getApplication(T[0].applicationId)) || void 0 === o ? void 0 : o.name
                         });
-                        return b.default.Messages.MULTIPLE_ACTIVITIES_IN_CHANNEL.format({
+                        return G.default.Messages.MULTIPLE_ACTIVITIES_IN_CHANNEL.format({
                             channelName: null === (r = I.default.getChannel(T[0].channelId)) || void 0 === r ? void 0 : r.name,
                             numActivities: T.length
                         });
-                    case y.CardCategory.HANGOUT: {
+                    case P.CardCategory.HANGOUT: {
                         let {
                             streamUserIds: t,
                             channelId: n
                         } = e;
-                        if (t.length > 0) return b.default.Messages.STREAMING_IN_CHANNEL.format({
+                        if (t.length > 0) return G.default.Messages.STREAMING_IN_CHANNEL.format({
                             channelName: null === (u = I.default.getChannel(n)) || void 0 === u ? void 0 : u.name
                         });
                         return null === (l = I.default.getChannel(n)) || void 0 === l ? void 0 : l.name
@@ -158383,26 +158401,26 @@
                 }
             }
 
-            function H(e, t) {
+            function Y(e, t) {
                 let {
                     category: n
                 } = e;
                 switch (n) {
-                    case y.CardCategory.GAMING:
+                    case P.CardCategory.GAMING:
                         return () => {
                             (0, _.transitionToGuild)(t, e.channelId)
                         };
-                    case y.CardCategory.EMBEDDED_ACTIVITY:
+                    case P.CardCategory.EMBEDDED_ACTIVITY:
                         return () => {
                             (0, _.transitionToGuild)(t, e.embeddedActivities[0].channelId)
                         };
-                    case y.CardCategory.EVENT:
+                    case P.CardCategory.EVENT:
                         return () => {
                             (0, u.openGuildEventDetails)({
                                 eventId: e.event.id
                             })
                         };
-                    case y.CardCategory.HANGOUT:
+                    case P.CardCategory.HANGOUT:
                         return () => {
                             (0, _.transitionToGuild)(t, e.channelId)
                         };
@@ -158411,7 +158429,7 @@
                 }
             }
 
-            function Y(e, t) {
+            function j(e, t) {
                 let {
                     cardType: n
                 } = D.default.getCurrentConfig({
@@ -158421,40 +158439,40 @@
                 }), {
                     category: r
                 } = e, s = null;
-                if (null == (s = r === y.CardCategory.EVENT ? e.event.channel_id : r === y.CardCategory.EMBEDDED_ACTIVITY ? e.embeddedActivities[0].channelId : e.channelId)) return;
+                if (null == (s = r === P.CardCategory.EVENT ? e.event.channel_id : r === P.CardCategory.EMBEDDED_ACTIVITY ? e.embeddedActivities[0].channelId : e.channelId)) return;
                 let d = h.default.isInChannel(s),
-                    T = d ? b.default.Messages.GUILD_POPOUT_JOINED : b.default.Messages.JOIN,
+                    T = d ? G.default.Messages.GUILD_POPOUT_JOINED : G.default.Messages.JOIN,
                     S = function(e, t) {
                         let {
                             category: n
                         } = e;
                         switch (n) {
-                            case y.CardCategory.HANGOUT:
-                            case y.CardCategory.GAMING:
+                            case P.CardCategory.HANGOUT:
+                            case P.CardCategory.GAMING:
                                 return () => {
                                     let {
                                         channelId: n
                                     } = e, i = I.default.getChannel(n);
-                                    null != i && i.type === P.ChannelTypes.GUILD_VOICE && f.default.can(P.Permissions.CONNECT, i) && (o.default.handleVoiceConnect({
+                                    null != i && i.type === U.ChannelTypes.GUILD_VOICE && f.default.can(U.Permissions.CONNECT, i) && (o.default.handleVoiceConnect({
                                         channel: i,
                                         connected: h.default.isInChannel(n),
                                         needSubscriptionToAccess: (0, l.getChannelRoleSubscriptionStatus)(n).needSubscriptionToAccess,
                                         locked: !1
                                     }), (0, _.transitionToGuild)(t, n))
                                 };
-                            case y.CardCategory.EMBEDDED_ACTIVITY:
+                            case P.CardCategory.EMBEDDED_ACTIVITY:
                                 return () => {
                                     let {
                                         channelId: n
                                     } = e.embeddedActivities[0], i = I.default.getChannel(n);
-                                    null != i && i.type === P.ChannelTypes.GUILD_VOICE && f.default.can(P.Permissions.CONNECT, i) && (o.default.handleVoiceConnect({
+                                    null != i && i.type === U.ChannelTypes.GUILD_VOICE && f.default.can(U.Permissions.CONNECT, i) && (o.default.handleVoiceConnect({
                                         channel: i,
                                         connected: h.default.isInChannel(n),
                                         needSubscriptionToAccess: (0, l.getChannelRoleSubscriptionStatus)(n).needSubscriptionToAccess,
                                         locked: !1
                                     }), (0, _.transitionToGuild)(t, n))
                                 };
-                            case y.CardCategory.EVENT:
+                            case P.CardCategory.EVENT:
                                 return () => {
                                     let {
                                         event: t
@@ -158463,7 +158481,7 @@
                                         guild_id: i,
                                         entity_type: r
                                     } = t, a = I.default.getChannel(n);
-                                    if (null == n || null == a || !f.default.can(P.Permissions.CONNECT, a)) {
+                                    if (null == n || null == a || !f.default.can(U.Permissions.CONNECT, a)) {
                                         (0, u.openGuildEventDetails)({
                                             eventId: t.id
                                         });
@@ -158473,7 +158491,7 @@
                                         let e = await (0, E.connectOrLurkStage)(i, n);
                                         (0, c.navigateToStage)(e)
                                     };
-                                    r === U.GuildScheduledEventEntityTypes.STAGE_INSTANCE ? s() : r === U.GuildScheduledEventEntityTypes.VOICE && (o.default.handleVoiceConnect({
+                                    r === b.GuildScheduledEventEntityTypes.STAGE_INSTANCE ? s() : r === b.GuildScheduledEventEntityTypes.VOICE && (o.default.handleVoiceConnect({
                                         channel: a,
                                         connected: h.default.isInChannel(n),
                                         needSubscriptionToAccess: (0, l.getChannelRoleSubscriptionStatus)(n).needSubscriptionToAccess,
@@ -158491,11 +158509,11 @@
                         onClick: e => {
                             e.stopPropagation(), null == S || S()
                         },
-                        className: G.joinButton,
+                        className: w.joinButton,
                         children: T
                     });
-                return n === y.GuildPeekCardTypes.WHAT ? (0, i.jsx)("div", {
-                    className: G.joinButtonWrapper,
+                return n === P.GuildPeekCardTypes.WHAT ? (0, i.jsx)("div", {
+                    className: w.joinButtonWrapper,
                     children: A
                 }) : A
             }
@@ -173811,8 +173829,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715794492450",
-                                    build_number: "293640"
+                                    built_at: "1715794794348",
+                                    build_number: "293645"
                                 }
                             },
                             retries: 1
@@ -252731,7 +252749,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0469506e5b9d07671f685c7841010a6b4648cdd5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "dd6a2d82be116c521c48658667eb6e2ef026b21d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281772,7 +281790,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293640"
+                                build_number: "293645"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289130,7 +289148,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293640", "293640"), 10);
+                let a = parseInt((n = "293645", "293645"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -316841,4 +316859,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.7c49477cc5d71d666a4a.js.map
+//# sourceMappingURL=71586.8685c9ca3b1e24edf75e.js.map
