@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-05_desktop_user_settings_search",
+    "label": "Desktop User Settings Search",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable User Settings Search on Desktop"
+    ],
+    "hash": 1800298008,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
