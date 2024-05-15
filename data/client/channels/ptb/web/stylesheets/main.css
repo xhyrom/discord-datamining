@@ -44876,7 +44876,7 @@ img.thumbnail__18ece {
 
 .gamesTooltip_cdb5ec {
     display: flex;
-    gap: 4px
+    gap: 8px
 }
 
 .filterTooltip_d6d060 {
@@ -46297,7 +46297,7 @@ img.thumbnail__18ece {
 }
 
 .upsellSubtitle__944fa {
-    max-width: 400px;
+    max-width: 640px;
     margin-bottom: 24px
 }
 
@@ -137471,4 +137471,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d7678fb60f5085b458c6.css.map*/
+/*# sourceMappingURL=99387.ec9aa75cdf41e99f100b.css.map*/

@@ -37447,7 +37447,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293847", ", Version Hash: ").concat("63aa30b0a15b18fc42c26d63f629e60f5e17ec22")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293860", ", Version Hash: ").concat("b7d1d040aa1494426e03a779c1cc5f8da4283267")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -48211,6 +48211,7 @@
                 CLAN_DISCOVERY_CARD_TAG_TOOLTIP: "Become a member to unlock this tag",
                 CLAN_USER_WAITLIST_TOAST_SUCCESS: "You have been added to the waitlist!",
                 CLAN_USER_WAITLISTED: "Waitlisted",
+                CLAN_USER_WAITLIST_CTA: "Join Waitlist for Guilds",
                 GUILD_POPOUT_VIEW_SERVER_BUTTON: "View Server",
                 GUILD_POPOUT_UNAVAILABLE_HEADER: "This server is not available.",
                 GUILD_POPOUT_UNAVAILABLE_FLAVOR: "We can't show any further details.",
@@ -88696,8 +88697,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293847", "293847"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293847")), t = 0), t
+                let t = parseInt((e = "293860", "293860"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293860")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -104734,7 +104735,7 @@
                                     color: s.Button.Colors.PRIMARY,
                                     size: s.Button.Sizes.SMALL,
                                     fullWidth: !0,
-                                    children: C.default.Messages.JOIN_WAITLIST
+                                    children: C.default.Messages.CLAN_USER_WAITLIST_CTA
                                 });
                             case !V && !U && B:
                                 return (0, i.jsx)(s.Button, {
@@ -116350,8 +116351,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293847",
-                    versionHash: "63aa30b0a15b18fc42c26d63f629e60f5e17ec22"
+                    buildNumber: "293860",
+                    versionHash: "b7d1d040aa1494426e03a779c1cc5f8da4283267"
                 }
             }
             n.r(t), n.d(t, {
@@ -172979,8 +172980,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715812400429",
-                                    build_number: "293847"
+                                    built_at: "1715814240377",
+                                    build_number: "293860"
                                 }
                             },
                             retries: 1
@@ -251899,7 +251900,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "63aa30b0a15b18fc42c26d63f629e60f5e17ec22"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "b7d1d040aa1494426e03a779c1cc5f8da4283267"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -280940,7 +280941,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293847"
+                                build_number: "293860"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -288298,7 +288299,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293847", "293847"), 10);
+                let a = parseInt((n = "293860", "293860"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -316009,4 +316010,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.011c9f48c665169a08fe.js.map
+//# sourceMappingURL=71586.14bafc0b9e14723ae338.js.map
