@@ -119217,6 +119217,26 @@ html .invoiceCancelRow__6ff3e {
     margin-top: 8px
 }
 
+.headerBar__7effc {
+    position: relative
+}
+
+.shopLogoContainer__5fd13 {
+    position: static
+}
+
+.shopLogo__7193c {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20px
+}
+
+.categoryWrapper__3d4f2 {
+    position: relative
+}
+
 .closeWrapper_fa833c {
     box-sizing: border-box;
     display: flex;
@@ -119296,10 +119316,6 @@ html .invoiceCancelRow__6ff3e {
 
 .title__132e2 {
     margin-left: -6px
-}
-
-.categoryWrapper__3d4f2 {
-    position: relative
 }
 
 @keyframes easterEggAnimation_c14e21 {
@@ -137438,4 +137454,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.d97399ef1b0143670eba.css.map*/
+/*# sourceMappingURL=99387.467be12f9512b43ea0b4.css.map*/
