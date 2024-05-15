@@ -26246,6 +26246,12 @@
             var i = n("596815");
             n.es(i, t)
         },
+        14468: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("528109");
+            n.es(i, t)
+        },
         485303: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -37477,7 +37483,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293582", ", Version Hash: ").concat("3fb64f71d0f49d9af8f0de80713443817c8d1a5c")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293622", ", Version Hash: ").concat("aa8d041d91cdf9fee134f7d18c5753d0b4330d91")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -43014,6 +43020,7 @@
                 TWITTER: "Twitter",
                 FACEBOOK: "Facebook",
                 INSTAGRAM: "Instagram",
+                SPOTIFY: "Spotify",
                 VIEW_SPECTATORS: "View spectators",
                 OPEN: "Open",
                 SELECT_PICTURE: "Select picture",
@@ -43397,7 +43404,6 @@
                 OAUTH2_GO_TO_SERVER_DEFAULT_CTA: "Go to Server",
                 OAUTH2_IP_LOCATION_DISCLOSURE: "Developer may see your IP address while you use this application.",
                 OAUTH2_ADVERTISEMENTS_DISCLOSURE: "Developer may show ads while you use this application.",
-                OAUTH2_UNKNOWN_DISCLOSURE: "Unknown Developer disclosure.",
                 SETTINGS_TWO_FA: "Multi-Factor Authentication",
                 TWO_FA: "Authenticator App",
                 TWO_FA_DESCRIPTION: "Configuring an authenticator app is a good way to add an extra layer of security to your Discord account to make sure that only you have the ability to log in.",
@@ -81609,7 +81615,7 @@
                     case r.ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS:
                         return s.default.Messages.OAUTH2_ADVERTISEMENTS_DISCLOSURE;
                     default:
-                        return s.default.Messages.OAUTH2_UNKNOWN_DISCLOSURE
+                        return null
                 }
             }
         },
@@ -87518,7 +87524,7 @@
                     y(), (0, c.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("99387"), n.e("79695"), n.e("32006"), n.e("15421")]).then(n.bind(n, "881351"));
+                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("15421")]).then(n.bind(n, "881351"));
                         return n => (0, i.jsx)(e, {
                             ...n,
                             user: t
@@ -88731,8 +88737,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293582", "293582"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293582")), t = 0), t
+                let t = parseInt((e = "293622", "293622"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293622")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103584,6 +103590,9 @@
                 ClanBadgeKind: function() {
                     return i
                 },
+                getRandomClanBadgeKind: function() {
+                    return d
+                },
                 getRandomClanBadgePreset: function() {
                     return l
                 }
@@ -103656,6 +103665,11 @@
                 18: 2,
                 19: 2,
                 20: 2
+            };
+
+            function d() {
+                let e = Object.keys(i).filter(e => isNaN(Number(e)));
+                return i[e[Math.round(Math.random() * e.length - 1)]]
             }
         },
         308083: function(e, t, n) {
@@ -103668,16 +103682,16 @@
                     return G
                 },
                 CLAN_BRAND_PALETTE_PRESETS: function() {
-                    return k
-                },
-                CLAN_BRAND_PALETTE_PRESETS_BY_NAME: function() {
-                    return F
-                },
-                CLAN_BRAND_PRIMARY_DEFAULT: function() {
                     return V
                 },
-                CLAN_BRAND_SECONDARY_DEFAULT: function() {
+                CLAN_BRAND_PALETTE_PRESETS_BY_NAME: function() {
+                    return H
+                },
+                CLAN_BRAND_PRIMARY_DEFAULT: function() {
                     return x
+                },
+                CLAN_BRAND_SECONDARY_DEFAULT: function() {
+                    return F
                 },
                 CLAN_SETTINGS_MODAL_LAYER_KEY: function() {
                     return S
@@ -103713,7 +103727,7 @@
                     return P
                 },
                 HOISTED_SEARCH_APPLICATION_IDS_BY_PRIORITY: function() {
-                    return W
+                    return K
                 },
                 IDENTITY_TRAITS: function() {
                     return b
@@ -103755,7 +103769,7 @@
                     return y
                 },
                 ensureUserClanData: function() {
-                    return Y
+                    return j
                 },
                 getPlaystyleOptions: function() {
                     return v
@@ -103763,8 +103777,11 @@
                 getPlaystyleTitle: function() {
                     return L
                 },
+                getRandomClanBannerKind: function() {
+                    return k
+                },
                 getRandomClanBrandPreset: function() {
-                    return H
+                    return Y
                 },
                 getSortedTraits: function() {
                     return function e(t, n) {
@@ -103777,7 +103794,7 @@
                     }
                 },
                 toServerClanData: function() {
-                    return j
+                    return W
                 }
             }), n("47120"), n("653041");
             var i, r, a, s, o, l, u, d, _ = n("913527"),
@@ -103852,8 +103869,12 @@
                 G = new Set([...y, ...U, ...b]),
                 w = new Set(["Bulgarian", "Chinese (Simplified)", "Chinese (Traditional)", "Croatian", "Czech", "Danish", "Dutch", "English", "Finnish", "French", "German", "Greek", "Hindi", "Hungarian", "Italian", "Japanese", "Korean", "Lithuanian", "Norwegian", "Polish", "Portuguese", "Romanian", "Russian", "Spanish", "Swedish", "Thai", "Turkish", "Ukrainian", "Vietnamese"]),
                 B = new Set(["anime", "fanart", "venting", "movie nights", "pirate shows", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pics", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "horses", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1", "roman history"]);
-            (l = r || (r = {}))[l.NIGHT_SKY = 0] = "NIGHT_SKY", l[l.CASTLE = 1] = "CASTLE", l[l.WORLD_MAP = 2] = "WORLD_MAP", l[l.SEA_FOAM = 3] = "SEA_FOAM", l[l.WARP_TUNNEL = 4] = "WARP_TUNNEL", l[l.HOUSE = 5] = "HOUSE", l[l.HEIGHTMAP = 6] = "HEIGHTMAP", l[l.MESH = 7] = "MESH", l[l.SPATTER = 8] = "SPATTER", (u = a || (a = {})).BOULDER = "Boulder", u.CASCADE = "Cascade", u.THUNDER = "Thunder", u.SOUL = "Soul", u.MARSH = "Marsh", u.VOLCANO = "Volcano", u.EARTH = "Earth", u.ZEPHYR = "Zephyr";
-            let k = [{
+
+            function k() {
+                let e = Object.keys(r).filter(e => isNaN(Number(e)));
+                return r[e[Math.round(Math.random() * e.length - 1)]]
+            }(l = r || (r = {}))[l.NIGHT_SKY = 0] = "NIGHT_SKY", l[l.CASTLE = 1] = "CASTLE", l[l.WORLD_MAP = 2] = "WORLD_MAP", l[l.SEA_FOAM = 3] = "SEA_FOAM", l[l.WARP_TUNNEL = 4] = "WARP_TUNNEL", l[l.HOUSE = 5] = "HOUSE", l[l.HEIGHTMAP = 6] = "HEIGHTMAP", l[l.MESH = 7] = "MESH", l[l.SPATTER = 8] = "SPATTER", (u = a || (a = {})).BOULDER = "Boulder", u.CASCADE = "Cascade", u.THUNDER = "Thunder", u.SOUL = "Soul", u.MARSH = "Marsh", u.VOLCANO = "Volcano", u.EARTH = "Earth", u.ZEPHYR = "Zephyr";
+            let V = [{
                     name: "Boulder",
                     primary: "#8c8d8d",
                     secondary: "#d0d0d1"
@@ -103886,18 +103907,18 @@
                     primary: "#4892d5",
                     secondary: "#78b6f0"
                 }],
-                V = k[0].primary,
-                x = k[0].secondary,
-                F = Object.fromEntries(k.map(e => [e.name, {
+                x = V[0].primary,
+                F = V[0].secondary,
+                H = Object.fromEntries(V.map(e => [e.name, {
                     primary: e.primary,
                     secondary: e.secondary
                 }]));
 
-            function H() {
-                return k[Math.floor(Math.random() * k.length)]
+            function Y() {
+                return V[Math.floor(Math.random() * V.length)]
             }
 
-            function Y(e) {
+            function j(e) {
                 return null == e ? null : "identityGuildId" in e ? e : {
                     identityGuildId: e.identity_guild_id,
                     identityEnabled: e.identity_enabled,
@@ -103906,12 +103927,12 @@
                 }
             }
 
-            function j(e) {
+            function W(e) {
                 return {
                     tag: e.tag
                 }
             }
-            let W = new Map(["432980957394370572", "363445589247131668", "356869127241072640", "700136079562375258", "356875570916753438", "1158877933042143272", "1197827812623650866", "356876176465199104", "1167674267748540516", "542075586886107149", "356875221078245376", "1149118246826561609", "356877880938070016", "356875988589740042", "762434991303950386", "356873622985506820", "356876590342340608", "1205090671527071784", "1182713227491147776", "631914894446297148", "1137125502985961543", "357607478105604096", "359509007423242240", "1121201675240210523", "643897785271189524", "742897755160313986", "356888738724446208", "1199745463918788740", "1116835216464543946", "406637848297472017", "356888961353908224", "905961880789590076", "367827983903490050", "356944273133928458", "356942674672091136", "946609449680908348", "356875762940379136", "615752773690064908", "357607133254254632", "356943499456937984", "477175586805252107", "787443973538971748", "359508713658253318", "356877880938070016", "422772752647323649", "356954277803065354", "359509387670192128", "428055627030331402", "363447565905166336", "372438022647578634", "614380482620293151", "506950362461110273", "356879032584896512", "1161772875901051042", "535371564850479134", "363413743335374859", "385538724592746496", "426526722322726912", "1174041358995042375", "1124351876033425529", "477152881196269569", "1113966530531704943", "425778010222886912", "356875890958925834", "1124358970618953818", "356888577310851072", "398632010442211348", "1124349969906815007", "770314100885422095", "1080277149623271444", "428054228511227914", "358420454764969994", "358421669603311616", "363430548028522496", "1129504162200166401", "1200228630245159032", "356889262362329098", "356887282982191114", "363409643973771264", "1164697075582238730", "940810636273795162", "982316905262120990", "359510095811444736", "363411421553360896", "359509332490059776", "1162076274622222346", "1162085521816813721", "359507724196773888", "359801269008859136", "569253958967885828", "457301824110723113", "1140238527980916757", "1124353632758939688", "542075586886107149", "512699108809637890", "653432003798106122"].map((e, t, n) => [e, n.length - t]));
+            let K = new Map(["432980957394370572", "363445589247131668", "356869127241072640", "700136079562375258", "356875570916753438", "1158877933042143272", "1197827812623650866", "356876176465199104", "1167674267748540516", "542075586886107149", "356875221078245376", "1149118246826561609", "356877880938070016", "356875988589740042", "762434991303950386", "356873622985506820", "356876590342340608", "1205090671527071784", "1182713227491147776", "631914894446297148", "1137125502985961543", "357607478105604096", "359509007423242240", "1121201675240210523", "643897785271189524", "742897755160313986", "356888738724446208", "1199745463918788740", "1116835216464543946", "406637848297472017", "356888961353908224", "905961880789590076", "367827983903490050", "356944273133928458", "356942674672091136", "946609449680908348", "356875762940379136", "615752773690064908", "357607133254254632", "356943499456937984", "477175586805252107", "787443973538971748", "359508713658253318", "356877880938070016", "422772752647323649", "356954277803065354", "359509387670192128", "428055627030331402", "363447565905166336", "372438022647578634", "614380482620293151", "506950362461110273", "356879032584896512", "1161772875901051042", "535371564850479134", "363413743335374859", "385538724592746496", "426526722322726912", "1174041358995042375", "1124351876033425529", "477152881196269569", "1113966530531704943", "425778010222886912", "356875890958925834", "1124358970618953818", "356888577310851072", "398632010442211348", "1124349969906815007", "770314100885422095", "1080277149623271444", "428054228511227914", "358420454764969994", "358421669603311616", "363430548028522496", "1129504162200166401", "1200228630245159032", "356889262362329098", "356887282982191114", "363409643973771264", "1164697075582238730", "940810636273795162", "982316905262120990", "359510095811444736", "363411421553360896", "359509332490059776", "1162076274622222346", "1162085521816813721", "359507724196773888", "359801269008859136", "569253958967885828", "457301824110723113", "1140238527980916757", "1124353632758939688", "542075586886107149", "512699108809637890", "653432003798106122"].map((e, t, n) => [e, n.length - t]));
             (d = s || (s = {}))[d.SIZE_12 = 12] = "SIZE_12", d[d.SIZE_16 = 16] = "SIZE_16", d[d.SIZE_24 = 24] = "SIZE_24", d[d.SIZE_32 = 32] = "SIZE_32", d[d.SIZE_36 = 36] = "SIZE_36"
         },
         963202: function(e, t, n) {
@@ -117282,8 +117303,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293582",
-                    versionHash: "3fb64f71d0f49d9af8f0de80713443817c8d1a5c"
+                    buildNumber: "293622",
+                    versionHash: "aa8d041d91cdf9fee134f7d18c5753d0b4330d91"
                 }
             }
             n.r(t), n.d(t, {
@@ -117498,6 +117519,45 @@
                 }, {
                     autoTrackExposure: !1
                 }).enabled
+            }
+        },
+        299206: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return d
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("512722"),
+                a = n.n(r),
+                s = n("481060"),
+                o = n("695346"),
+                l = n("754424"),
+                u = n("572004");
+
+            function d(e) {
+                let {
+                    id: t,
+                    label: n,
+                    onSuccess: r,
+                    shiftId: d,
+                    showIconFirst: _,
+                    showWithoutDeveloperMode: c
+                } = e, E = o.DeveloperMode.useSetting();
+                if (__OVERLAY__ || !(c || E) || !u.SUPPORTS_COPY || null == t) return null;
+                let I = "devmode-copy-id-".concat(t);
+                return (0, i.jsx)(s.MenuItem, {
+                    id: I,
+                    label: n,
+                    action: function(e) {
+                        let n = null != d && e.shiftKey ? d : t;
+                        a()(null != n, "cannot copy null text"), (0, u.copy)(n), null == r || r()
+                    },
+                    icon: l.default,
+                    showIconFirst: _
+                }, I)
             }
         },
         811660: function(e, t, n) {
@@ -124554,7 +124614,7 @@
                                 onContextMenu: t => (0, d.openContextMenuLazy)(t, async () => {
                                     let {
                                         default: t
-                                    } = await Promise.all([n.e("99387"), n.e("79695"), n.e("32006"), n.e("15421")]).then(n.bind(n, "881351"));
+                                    } = await Promise.all([n.e("99387"), n.e("36441"), n.e("15421")]).then(n.bind(n, "881351"));
                                     return n => (0, i.jsx)(t, {
                                         ...n,
                                         user: e
@@ -155080,7 +155140,7 @@
                     },
                     async open(e, t, i, r) {
                         var a;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("33053"), n.e("56630"), n.e("49146"), n.e("4970"), n.e("90508"), n.e("75475"), n.e("85093"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("92714"), n.e("72278"), n.e("33361"), n.e("62856"), n.e("19874"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("33053"), n.e("56630"), n.e("49146"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("90508"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("92714"), n.e("72278"), n.e("92557"), n.e("62856"), n.e("19874"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         a.default.dispatch({
@@ -166652,7 +166712,7 @@
                     null != l && (0, r.openContextMenuLazy)(s, async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("99387"), n.e("79695"), n.e("32006"), n.e("82882"), n.e("12435"), n.e("6696")]).then(n.bind(n, "757387"));
+                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("82882"), n.e("12435"), n.e("7717"), n.e("80869")]).then(n.bind(n, "757387"));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             user: e,
@@ -173109,7 +173169,7 @@
                                                     (0, _.openContextMenuLazy)(e, async () => {
                                                         let {
                                                             default: e
-                                                        } = await Promise.all([n.e("99387"), n.e("79695"), n.e("32006"), n.e("82882"), n.e("12435"), n.e("6696")]).then(n.bind(n, "757387"));
+                                                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("82882"), n.e("12435"), n.e("7717"), n.e("80869")]).then(n.bind(n, "757387"));
                                                         return n => (0, i.jsx)(e, {
                                                             ...n,
                                                             user: r,
@@ -173222,7 +173282,7 @@
                     null != y && (0, d.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("99387"), n.e("79695"), n.e("32006"), n.e("82882"), n.e("12435"), n.e("6696")]).then(n.bind(n, "757387"));
+                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("82882"), n.e("12435"), n.e("7717"), n.e("80869")]).then(n.bind(n, "757387"));
                         return t => (0, i.jsx)(e, {
                             ...t,
                             user: M,
@@ -173740,8 +173800,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715782570613",
-                                    build_number: "293582"
+                                    built_at: "1715792978172",
+                                    build_number: "293622"
                                 }
                             },
                             retries: 1
@@ -176570,7 +176630,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return O
+                    return C
                 }
             }), n("789020"), n("315314"), n("610138"), n("216116"), n("78328"), n("815648"), n("47120");
             var i = n("735250");
@@ -176594,59 +176654,70 @@
                 m = n("231338"),
                 N = n("689938"),
                 p = n("236099");
+            let O = e => {
+                switch (e) {
+                    case l.ApplicationDisclosure.IP_LOCATION:
+                        return d.default;
+                    case l.ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS:
+                        return s.EmbedIcon;
+                    default:
+                        return null
+                }
+            };
 
-            function O(e) {
+            function C(e) {
                 var t;
                 let n, {
                         application: r,
                         scopes: a,
-                        redirectUri: o,
-                        approximateGuildCount: O,
-                        isEmbeddedFlow: R,
-                        disclosures: g
+                        redirectUri: s,
+                        approximateGuildCount: o,
+                        isEmbeddedFlow: d,
+                        disclosures: C
                     } = e,
-                    L = new Date(f.default.extractTimestamp(r.id)),
-                    v = (0, h.getSecurityMessage)(a),
-                    D = (0, T.hasFlag)(null !== (t = r.flags) && void 0 !== t ? t : 0, A.ApplicationFlags.EMBEDDED);
-                if (null != o && !D && !R) {
-                    let e = new URL(o);
+                    g = new Date(f.default.extractTimestamp(r.id)),
+                    L = (0, h.getSecurityMessage)(a),
+                    v = (0, T.hasFlag)(null !== (t = r.flags) && void 0 !== t ? t : 0, A.ApplicationFlags.EMBEDDED);
+                if (null != s && !v && !d) {
+                    let e = new URL(s);
                     n = null != e.host && e.host.length > 0 ? e.origin : e.href
                 }
                 return (0, i.jsxs)("div", {
                     className: p.applicationDetails,
-                    children: [null != n ? (0, i.jsx)(C, {
+                    children: [null != n ? (0, i.jsx)(R, {
                         className: p.redirectWarning,
                         icon: _.default,
                         text: N.default.Messages.OAUTH2_DETAILS_REDIRECT.format({
                             origin: n
                         })
-                    }) : null, (0, i.jsx)(C, {
+                    }) : null, (0, i.jsx)(R, {
                         icon: c.default,
                         text: (0, S.getApplicationDetailsText)(r)
-                    }), (0, i.jsx)(C, {
+                    }), (0, i.jsx)(R, {
                         icon: u.default,
                         text: N.default.Messages.OAUTH2_DETAILS_CREATION_DATE.format({
-                            date: L
+                            date: g
                         })
-                    }), a.includes(m.OAuth2Scopes.BOT) && null != O ? (0, i.jsx)(C, {
+                    }), a.includes(m.OAuth2Scopes.BOT) && null != o ? (0, i.jsx)(R, {
                         icon: E.default,
                         text: N.default.Messages.OAUTH2_DETAILS_GUILDS.format({
-                            guildCount: O
+                            guildCount: o
                         })
-                    }) : null, (0, i.jsx)(C, {
+                    }) : null, (0, i.jsx)(R, {
                         icon: I.default,
-                        text: v
-                    }), null != g && g.includes(l.ApplicationDisclosure.IP_LOCATION) ? (0, i.jsx)(C, {
-                        icon: d.default,
-                        text: N.default.Messages.OAUTH2_IP_LOCATION_DISCLOSURE
-                    }) : null, null != g && g.includes(l.ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS) ? (0, i.jsx)(C, {
-                        icon: s.EmbedIcon,
-                        text: N.default.Messages.OAUTH2_ADVERTISEMENTS_DISCLOSURE
+                        text: L
+                    }), null != C ? C.map(e => {
+                        let t = (0, l.getTextForDisclosure)(e),
+                            n = O(e);
+                        return null != n && null != t ? (0, i.jsx)(R, {
+                            icon: n,
+                            text: t
+                        }) : null
                     }) : null]
                 })
             }
 
-            function C(e) {
+            function R(e) {
                 let {
                     icon: t,
                     text: n,
@@ -191142,6 +191213,9 @@
                 optimisticallyUpdateQuestProgress: function() {
                     return N
                 },
+                overrideQuestDelivery: function() {
+                    return p
+                },
                 resetQuestDismissibilityStatus: function() {
                     return m
                 },
@@ -191422,6 +191496,13 @@
                     userStatus: e
                 })
             }
+
+            function p(e) {
+                r.default.dispatch({
+                    type: "QUESTS_DELIVERY_OVERRIDE",
+                    questId: e
+                })
+            }
         },
         46140: function(e, t, n) {
             "use strict";
@@ -191674,21 +191755,21 @@
         },
         569984: function(e, t, n) {
             "use strict";
-            let i, r, a, s, o, l, u, d, _, c, E;
+            let i, r, a, s, o, l, u, d, _, c, E, I;
             n.r(t), n("47120");
-            var I, T, f, S, h = n("887003"),
-                A = n("442837"),
-                m = n("570140"),
-                N = n("497505"),
-                p = n("918701"),
-                O = n("5881"),
-                C = n("46140");
+            var T, f, S, h, A = n("887003"),
+                m = n("442837"),
+                N = n("570140"),
+                p = n("497505"),
+                O = n("918701"),
+                C = n("5881"),
+                R = n("46140");
 
-            function R() {
-                i = !1, r = new Map, a = 0, s = new Set, o = new Set, l = new Set, u = new Set, d = new Set, _ = new Map, c = new Map, E = new Map
+            function g() {
+                i = !1, r = new Map, a = 0, s = new Set, o = new Set, l = new Set, u = new Set, d = new Set, _ = new Map, c = new Map, E = new Map, I = null
             }
 
-            function g(e, t) {
+            function L(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
                         updateProgress: !1
                     },
@@ -191707,38 +191788,38 @@
                 }
             }
 
-            function L(e, t) {
+            function v(e, t) {
                 let n = new Map(_);
                 n.set(e, t), _ = n
             }
 
-            function v(e, t) {
-                L(e, t);
+            function D(e, t) {
+                v(e, t);
                 let n = r.get(e),
                     i = null == n ? void 0 : n.userStatus;
-                null != i && null == i.claimedAt && g(e, {
+                null != i && null == i.claimedAt && L(e, {
                     userStatus: {
                         ...i,
                         claimedAt: t.claimedAt
                     }
                 })
             }
-            R();
+            g();
 
-            function D(e) {
+            function M(e) {
                 null != E.get(e) && (E = new Map(E)).delete(e)
             }
 
-            function M(e) {
+            function y(e) {
                 let t = new Set(s);
                 t.delete(e), s = t
             }
 
-            function y(e) {
+            function P(e) {
                 let t = new Set(d);
                 t.delete(e), d = t
             }
-            class P extends(I = A.default.Store) {
+            class U extends(T = m.default.Store) {
                 get quests() {
                     return r
                 }
@@ -191747,6 +191828,9 @@
                 }
                 get lastFetchedCurrentQuests() {
                     return a
+                }
+                get questDeliveryOverride() {
+                    return r.get(null != I ? I : "")
                 }
                 isEnrolling(e) {
                     return s.has(e)
@@ -191776,14 +191860,14 @@
                     return r.get(e)
                 }
             }
-            S = "QuestsStore", (f = "displayName") in(T = P) ? Object.defineProperty(T, f, {
-                value: S,
+            h = "QuestsStore", (S = "displayName") in(f = U) ? Object.defineProperty(f, S, {
+                value: h,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-            }) : T[f] = S, t.default = new P(m.default, {
+            }) : f[S] = h, t.default = new U(N.default, {
                 LOGOUT: function() {
-                    R()
+                    g()
                 },
                 QUESTS_FETCH_CURRENT_QUESTS_BEGIN: function() {
                     a = Date.now(), i = !0
@@ -191792,8 +191876,8 @@
                     let {
                         quests: t
                     } = e;
-                    for (let e of (i = !1, r = new Map, t)) r.set(e.id, e), e.targetedContent.includes(N.QuestContent.QUEST_BAR) && (0, O.getQuestLogger)({
-                        location: C.QuestsExperimentLocations.QUESTS_STORE
+                    for (let e of (i = !1, r = new Map, t)) r.set(e.id, e), e.targetedContent.includes(p.QuestContent.QUEST_BAR) && (0, C.getQuestLogger)({
+                        location: R.QuestsExperimentLocations.QUESTS_STORE
                     }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"))
                 },
                 QUESTS_FETCH_CURRENT_QUESTS_FAILURE: function() {
@@ -191805,11 +191889,11 @@
                         streamKey: n,
                         userStatus: i
                     } = e;
-                    g(t, {
+                    L(t, {
                         userStatus: i
                     }, {
                         updateProgress: !0
-                    }), D(n)
+                    }), M(n)
                 },
                 QUESTS_SEND_HEARTBEAT_FAILURE: function(e) {
                     let {
@@ -191832,15 +191916,15 @@
                     let {
                         enrolledQuestUserStatus: t
                     } = e;
-                    g(t.questId, {
+                    L(t.questId, {
                         userStatus: t
-                    }), M(t.questId)
+                    }), y(t.questId)
                 },
                 QUESTS_ENROLL_FAILURE: function(e) {
                     let {
                         questId: t
                     } = e;
-                    M(t)
+                    y(t)
                 },
                 QUESTS_FETCH_REWARD_CODE_BEGIN: function(e) {
                     let {
@@ -191853,7 +191937,7 @@
                         questId: t,
                         rewardCode: n
                     } = e, i = new Set(u);
-                    i.delete(t), u = i, v(t, n)
+                    i.delete(t), u = i, D(t, n)
                 },
                 QUESTS_FETCH_REWARD_CODE_FAILURE: function(e) {
                     let {
@@ -191872,7 +191956,7 @@
                         questId: t,
                         rewardCode: n
                     } = e, i = new Set(o);
-                    i.delete(t), o = i, v(t, n)
+                    i.delete(t), o = i, D(t, n)
                 },
                 QUESTS_CLAIM_REWARD_CODE_FAILURE: function(e) {
                     let {
@@ -191904,16 +191988,16 @@
                                     quest: n,
                                     entitlements: i
                                 } = e;
-                                if (!(0, p.isTieredRewardCodeQuest)({
+                                if (!(0, O.isTieredRewardCodeQuest)({
                                         quest: n
                                     })) return null;
                                 let r = null === (t = i.items[0].tenantMetadata) || void 0 === t ? void 0 : t.questRewards.reward;
-                                return (null == r ? void 0 : r.tag) !== h.QuestRewardTypes.REWARD_CODE ? null : r.rewardCode
+                                return (null == r ? void 0 : r.tag) !== A.QuestRewardTypes.REWARD_CODE ? null : r.rewardCode
                             }({
                                 quest: i,
                                 entitlements: t
                             });
-                            null != n && L(e, n), g(e, {
+                            null != n && v(e, n), L(e, {
                                 userStatus: {
                                     ...a,
                                     claimedAt: t.claimedAt,
@@ -191939,33 +192023,33 @@
                     let {
                         dismissedQuestUserStatus: t
                     } = e;
-                    g(t.questId, {
+                    L(t.questId, {
                         userStatus: t
-                    }), y(t.questId)
+                    }), P(t.questId)
                 },
                 QUESTS_DISMISS_CONTENT_FAILURE: function(e) {
                     let {
                         questId: t
                     } = e;
-                    y(t)
+                    P(t)
                 },
                 STREAM_CLOSE: function(e) {
                     let {
                         streamKey: t
                     } = e;
-                    D(t)
+                    M(t)
                 },
                 QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: function(e) {
                     let {
                         streamKey: t
                     } = e;
-                    D(t)
+                    M(t)
                 },
                 QUESTS_PREVIEW_UPDATE_SUCCESS: function(e) {
                     let {
                         previewQuestUserStatus: t
                     } = e;
-                    g(t.questId, {
+                    L(t.questId, {
                         userStatus: t
                     }), null == t.claimedAt && (_ = new Map(_)).delete(t.questId)
                 },
@@ -191973,11 +192057,17 @@
                     let {
                         userStatus: t
                     } = e;
-                    g(t.questId, {
+                    L(t.questId, {
                         userStatus: t
                     }, {
                         updateProgress: !0
                     })
+                },
+                QUESTS_DELIVERY_OVERRIDE: function(e) {
+                    let {
+                        questId: t
+                    } = e;
+                    I = I === t ? null : t
                 }
             })
         },
@@ -201713,18 +201803,25 @@
                     d = e.getTrack(),
                     _ = e.getSyncingWith(),
                     c = e.getActivity(),
-                    E = null !== (o = null !== (s = null == d ? void 0 : d.id) && void 0 !== s ? s : null == c ? void 0 : c.sync_id) && void 0 !== o ? o : e.getLastPlayedTrackId();
+                    E = null !== (o = null !== (s = null == d ? void 0 : d.id) && void 0 !== s ? s : null == c ? void 0 : c.sync_id) && void 0 !== o ? o : e.getLastPlayedTrackId(),
+                    I = n.id === t.getId(),
+                    T = l && !u,
+                    f = null != E && E === (null == r ? void 0 : r.sync_id),
+                    S = (null == c ? void 0 : c.party) != null && (null == r ? void 0 : null === (a = r.party) || void 0 === a ? void 0 : a.id) === c.party.id,
+                    h = (null == _ ? void 0 : _.userId) != null && (null == _ ? void 0 : _.userId) === n.id;
                 return {
                     user: n,
                     activity: r,
                     hasSpotifyAccount: l,
                     canPlaySpotify: u,
-                    notPlayable: l && !u,
-                    syncingWithParty: (null == c ? void 0 : c.party) != null && (null == r ? void 0 : null === (a = r.party) || void 0 === a ? void 0 : a.id) === c.party.id,
-                    syncingWithUser: (null == _ ? void 0 : _.userId) != null && (null == _ ? void 0 : _.userId) === n.id,
-                    isCurrentUser: n.id === t.getId(),
+                    notPlayable: T,
+                    syncingWithParty: S,
+                    syncingWithUser: h,
+                    isCurrentUser: I,
                     currentUserTrackId: E,
-                    playingSameTrack: null != E && E === (null == r ? void 0 : r.sync_id)
+                    playingSameTrack: f,
+                    playDisabled: I || T || f,
+                    syncDisabled: I || h || S
                 }
             }
         },
@@ -215383,7 +215480,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return f
+                    return S
                 }
             });
             var i = n("735250");
@@ -215392,54 +215489,61 @@
                 a = n("481060"),
                 s = n("100527"),
                 o = n("906732"),
-                l = n("389052"),
-                u = n("622724"),
-                d = n("314897"),
-                _ = n("808268"),
-                c = n("785717"),
-                E = n("537387"),
-                I = n("228168"),
-                T = n("689938");
+                l = n("299206"),
+                u = n("389052"),
+                d = n("622724"),
+                _ = n("314897"),
+                c = n("808268"),
+                E = n("785717"),
+                I = n("537387"),
+                T = n("228168"),
+                f = n("689938");
 
-            function f(e) {
+            function S(e) {
                 let {
                     user: t,
                     profileType: n,
-                    guildId: f,
-                    viewProfileItem: S
-                } = e, h = (0, r.useStateFromStores)([d.default], () => d.default.getId() === t.id), {
-                    trackUserProfileAction: A
-                } = (0, c.useUserProfileAnalyticsContext)(), {
-                    analyticsLocations: m,
-                    newestAnalyticsLocation: N
-                } = (0, o.default)(s.default.USER_PROFILE_OVERFLOW_MENU), p = (0, l.default)({
+                    guildId: S,
+                    viewProfileItem: h
+                } = e, A = (0, r.useStateFromStores)([_.default], () => _.default.getId() === t.id), {
+                    trackUserProfileAction: m
+                } = (0, E.useUserProfileAnalyticsContext)(), {
+                    analyticsLocations: N,
+                    newestAnalyticsLocation: p
+                } = (0, o.default)(s.default.USER_PROFILE_OVERFLOW_MENU), O = (0, u.default)({
                     user: t,
                     color: "danger",
-                    location: N,
-                    onBlock: () => A({
+                    location: p,
+                    onBlock: () => m({
                         action: "BLOCK",
-                        analyticsLocations: m
+                        analyticsLocations: N
                     }),
-                    onUnblock: () => A({
+                    onUnblock: () => m({
                         action: "UNBLOCK",
-                        analyticsLocations: m
+                        analyticsLocations: N
                     })
-                }), O = (0, u.default)({
+                }), C = (0, d.default)({
                     user: t,
-                    guildId: f,
+                    guildId: S,
                     color: "danger",
-                    location: N,
-                    onAction: () => A({
+                    location: p,
+                    onAction: () => m({
                         action: "REPORT",
-                        analyticsLocations: m
+                        analyticsLocations: N
                     })
+                }), R = (0, l.default)({
+                    id: t.id,
+                    label: f.default.Messages.COPY_ID_USER
                 });
-                if (h && n !== I.UserProfileTypes.FULL_SIZE) return null;
-                let C = () => h ? null : (0, i.jsxs)(a.MenuGroup, {
-                    children: [p, O]
-                });
+                if (A && n !== T.UserProfileTypes.FULL_SIZE) return null;
+                let g = () => A ? null : (0, i.jsxs)(a.MenuGroup, {
+                        children: [O, C]
+                    }),
+                    L = () => null == R ? null : (0, i.jsx)(a.MenuGroup, {
+                        children: R
+                    });
                 return (0, i.jsx)(o.AnalyticsLocationProvider, {
-                    value: m,
+                    value: N,
                     children: (0, i.jsx)(a.Popout, {
                         renderPopout: e => {
                             let {
@@ -215449,15 +215553,15 @@
                                 navId: "user-profile-overflow-menu",
                                 onSelect: void 0,
                                 onClose: t,
-                                "aria-label": T.default.Messages.PROFILE_ACTIONS_MENU_LABEL,
+                                "aria-label": f.default.Messages.PROFILE_ACTIONS_MENU_LABEL,
                                 children: [(0, i.jsx)(a.MenuGroup, {
-                                    children: S
-                                }), C()]
+                                    children: h
+                                }), g(), L()]
                             })
                         },
-                        children: e => (0, i.jsx)(E.default, {
-                            text: T.default.Messages.MORE,
-                            icon: _.default,
+                        children: e => (0, i.jsx)(I.default, {
+                            text: f.default.Messages.MORE,
+                            icon: c.default,
                             ...e
                         })
                     })
@@ -252662,7 +252766,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3fb64f71d0f49d9af8f0de80713443817c8d1a5c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "aa8d041d91cdf9fee134f7d18c5753d0b4330d91"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -264084,6 +264188,39 @@
                 })
             }, a.CopyIcon, void 0, {
                 size: 16
+            })
+        },
+        754424: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("735250");
+            n("470079");
+            var r = n("960259"),
+                a = n("14468"),
+                s = n("325767");
+            t.default = (0, r.replaceIcon)(function(e) {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: r = "currentColor",
+                    foreground: a,
+                    ...o
+                } = e;
+                return (0, i.jsx)("svg", {
+                    ...(0, s.default)(o),
+                    width: t,
+                    height: n,
+                    viewBox: "0 0 24 24",
+                    children: (0, i.jsx)("path", {
+                        className: a,
+                        fill: r,
+                        fillRule: "evenodd",
+                        clipRule: "evenodd",
+                        d: "M3.37868 2.87868C3.94129 2.31607 4.70435 2 5.5 2H19.5C20.2956 2 21.0587 2.31607 21.6213 2.87868C22.1839 3.44129 22.5 4.20435 22.5 5V19C22.5 19.7956 22.1839 20.5587 21.6213 21.1213C21.0587 21.6839 20.2956 22 19.5 22H5.5C4.70435 22 3.94129 21.6839 3.37868 21.1213C2.81607 20.5587 2.5 19.7956 2.5 19V5C2.5 4.20435 2.81607 3.44129 3.37868 2.87868ZM7.65332 16.3125H9.47832V7.6875H7.65332V16.3125ZM11.23 7.6875V16.3125H14.2925C15.6008 16.3125 16.6091 15.9417 17.3175 15.2C18.0341 14.4583 18.3925 13.3917 18.3925 12C18.3925 10.6083 18.0341 9.54167 17.3175 8.8C16.6091 8.05833 15.6008 7.6875 14.2925 7.6875H11.23ZM15.955 14.0625C15.5466 14.4625 14.9925 14.6625 14.2925 14.6625H13.055V9.3375H14.2925C14.9925 9.3375 15.5466 9.5375 15.955 9.9375C16.3633 10.3375 16.5675 11.025 16.5675 12C16.5675 12.975 16.3633 13.6625 15.955 14.0625Z"
+                    })
+                })
+            }, a.IdIcon, void 0, {
+                size: 24
             })
         },
         551388: function(e, t, n) {
@@ -281670,7 +281807,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293582"
+                                build_number: "293622"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289028,7 +289165,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293582", "293582"), 10);
+                let a = parseInt((n = "293622", "293622"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -293419,6 +293556,46 @@
                         d: "M13 7.83a3 3 0 1 0-2 0V11H8a4 4 0 0 0-4 4v1.17a3 3 0 1 0 2 0V15c0-1.1.9-2 2-2h3v3.17a3 3 0 1 0 2 0V13h3a2 2 0 0 1 2 2v1.17a3 3 0 1 0 2 0V15a4 4 0 0 0-4-4h-3V7.83Z",
                         className: o
                     })
+                })
+            }
+        },
+        528109: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                IdIcon: function() {
+                    return s
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("692547"),
+                a = n("331595");
+            let s = e => {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: s = r.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: o = "",
+                    ...l
+                } = e;
+                return (0, i.jsxs)("svg", {
+                    ...(0, a.default)(l),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: n,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: [(0, i.jsx)("path", {
+                        fill: "string" == typeof s ? s : s.css,
+                        d: "M15.3 14.48c-.46.45-1.08.67-1.86.67h-1.39V9.2h1.39c.78 0 1.4.22 1.86.67.46.45.68 1.22.68 2.31 0 1.1-.22 1.86-.68 2.31Z",
+                        className: o
+                    }), (0, i.jsx)("path", {
+                        fill: "string" == typeof s ? s : s.css,
+                        fillRule: "evenodd",
+                        d: "M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5Zm1 15h2.04V7.34H6V17Zm4-9.66V17h3.44c1.46 0 2.6-.42 3.38-1.25.8-.83 1.2-2.02 1.2-3.58s-.4-2.75-1.2-3.58c-.79-.83-1.92-1.25-3.38-1.25H10Z",
+                        clipRule: "evenodd",
+                        className: o
+                    })]
                 })
             }
         },
@@ -316699,4 +316876,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.5ec55bc345e6c3cb994e.js.map
+//# sourceMappingURL=71586.b910f7911ba8cfa05591.js.map
