@@ -12383,7 +12383,8 @@ span.clanTag_f4aadc {
     max-width: 296px;
     gap: 8px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    margin-left: 16px
 }
 
 .cards__3f65d {
@@ -137396,4 +137397,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c1693c4c08765db1a4b2.css.map*/
+/*# sourceMappingURL=99387.b172ae1bef16cde4e66a.css.map*/
