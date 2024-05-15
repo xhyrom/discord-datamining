@@ -66317,8 +66317,9 @@ div:has(>div>.modal__06f49) {
     align-items: stretch;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    width: 100%
+    gap: 32px;
+    width: 100%;
+    padding: 16px 8px
 }
 
 .refreshContainer_d55750 {
@@ -137425,4 +137426,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.6f3793673640a2ce5b06.css.map*/
+/*# sourceMappingURL=99387.ee2a155ce53a89a08ee3.css.map*/
