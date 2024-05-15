@@ -37477,7 +37477,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293454", ", Version Hash: ").concat("0d8e2aa25d4dc49b31d7c34b82a61869ab274004")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293456", ", Version Hash: ").concat("2666461172510bb21c8e9371dc6f3c3b1c7d5008")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88730,8 +88730,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293454", "293454"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293454")), t = 0), t
+                let t = parseInt((e = "293456", "293456"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293456")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117295,8 +117295,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293454",
-                    versionHash: "0d8e2aa25d4dc49b31d7c34b82a61869ab274004"
+                    buildNumber: "293456",
+                    versionHash: "2666461172510bb21c8e9371dc6f3c3b1c7d5008"
                 }
             }
             n.r(t), n.d(t, {
@@ -173753,8 +173753,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715730060332",
-                                    build_number: "293454"
+                                    built_at: "1715730144429",
+                                    build_number: "293456"
                                 }
                             },
                             retries: 1
@@ -238199,7 +238199,7 @@
                         }, {
                             autoTrackExposure: !0
                         });
-                        if (T && eR.setHasFullbandPerformance((0, L.hasPerformanceForKrispFullband)()), (0, R.default)(i)) {
+                        if (T && eR.setHasFullbandPerformance((0, L.hasPerformanceForKrispFullband)()), e.setRemoteAudioHistory(0), (0, R.default)(i)) {
                             let t = C.default.getSettings();
                             e.setExperimentFlag(eS.ExperimentFlags.STREAMER_CLIP, t.clipsEnabled);
                             let {
@@ -252675,7 +252675,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "0d8e2aa25d4dc49b31d7c34b82a61869ab274004"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "2666461172510bb21c8e9371dc6f3c3b1c7d5008"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281683,7 +281683,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293454"
+                                build_number: "293456"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289041,7 +289041,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293454", "293454"), 10);
+                let a = parseInt((n = "293456", "293456"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -301609,6 +301609,7 @@
                 setCallExperience(e) {}
                 setClipRecordUser(e, t, n) {}
                 setViewerSideClip(e) {}
+                setRemoteAudioHistory(e) {}
                 setClipsKeyFrameInterval(e) {}
                 setQualityDecoupling(e) {}
                 getStreamParameters() {
@@ -302718,6 +302719,11 @@
                 setViewerSideClip(e) {
                     this.context === O.MediaEngineContextTypes.STREAM && this.conn.setTransportOptions({
                         enableViewerSideClip: e
+                    })
+                }
+                setRemoteAudioHistory(e) {
+                    this.conn.setTransportOptions({
+                        remoteAudioHistoryMs: e
                     })
                 }
                 setQualityDecoupling(e) {
@@ -304560,6 +304566,7 @@
                         decodingNormal: s.decodingNormal,
                         decodingPLC: s.decodingPLC,
                         decodingPLCCNG: s.decodingPLCCNG,
+                        nackCount: s.nackCount,
                         accelerateRate: 100 * s.accelerateRate,
                         expandRate: 100 * s.expandRate,
                         preemptiveExpandRate: 100 * s.preemptiveExpandRate,
@@ -316705,4 +316712,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.42cc8737899146258e2f.js.map
+//# sourceMappingURL=71586.407f0965556c2870591b.js.map
