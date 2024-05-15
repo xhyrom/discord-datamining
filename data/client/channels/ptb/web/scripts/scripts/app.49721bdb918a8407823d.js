@@ -22878,6 +22878,18 @@
                 white: "white__5d308"
             }
         },
+        981079: function(e) {
+            "use strict";
+            e.exports = {
+                newBadge: "newBadge_d8a97a"
+            }
+        },
+        233269: function(e) {
+            "use strict";
+            e.exports = {
+                container: "container_ab2539"
+            }
+        },
         862317: function(e) {
             "use strict";
             e.exports = {

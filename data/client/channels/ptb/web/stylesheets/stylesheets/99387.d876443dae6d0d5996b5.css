@@ -59418,6 +59418,13 @@ div:has(>div>.modal__06f49) {
     border-radius: 8px 8px 0 0
 }
 
+.container_ab2539 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start
+}
+
 .container__5e7db {
     display: flex;
     flex-direction: column;
@@ -92772,6 +92779,10 @@ input::-webkit-inner-spin-button {
 
 .localizeBadge_f5c4cb {
     background-color: rgba(79, 84, 92, .24)
+}
+
+.newBadge_d8a97a {
+    margin-right: 8px
 }
 
 .empty__086ba {
@@ -137397,4 +137408,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.b172ae1bef16cde4e66a.css.map*/
+/*# sourceMappingURL=99387.d876443dae6d0d5996b5.css.map*/
