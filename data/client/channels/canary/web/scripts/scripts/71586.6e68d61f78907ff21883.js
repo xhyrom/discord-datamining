@@ -37477,7 +37477,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293610", ", Version Hash: ").concat("15721aefdf0eb2770712184a3f690c5e3ade15dc")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293613", ", Version Hash: ").concat("ced1023d2a2cca3b89d3f162e475a23ca2e3167d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -43014,6 +43014,7 @@
                 TWITTER: "Twitter",
                 FACEBOOK: "Facebook",
                 INSTAGRAM: "Instagram",
+                SPOTIFY: "Spotify",
                 VIEW_SPECTATORS: "View spectators",
                 OPEN: "Open",
                 SELECT_PICTURE: "Select picture",
@@ -87517,7 +87518,7 @@
                     y(), (0, c.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("99387"), n.e("79695"), n.e("32006"), n.e("15421")]).then(n.bind(n, "881351"));
+                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("15421")]).then(n.bind(n, "881351"));
                         return n => (0, i.jsx)(e, {
                             ...n,
                             user: t
@@ -88730,8 +88731,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293610", "293610"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293610")), t = 0), t
+                let t = parseInt((e = "293613", "293613"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293613")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -117296,8 +117297,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293610",
-                    versionHash: "15721aefdf0eb2770712184a3f690c5e3ade15dc"
+                    buildNumber: "293613",
+                    versionHash: "ced1023d2a2cca3b89d3f162e475a23ca2e3167d"
                 }
             }
             n.r(t), n.d(t, {
@@ -124568,7 +124569,7 @@
                                 onContextMenu: t => (0, d.openContextMenuLazy)(t, async () => {
                                     let {
                                         default: t
-                                    } = await Promise.all([n.e("99387"), n.e("79695"), n.e("32006"), n.e("15421")]).then(n.bind(n, "881351"));
+                                    } = await Promise.all([n.e("99387"), n.e("36441"), n.e("15421")]).then(n.bind(n, "881351"));
                                     return n => (0, i.jsx)(t, {
                                         ...n,
                                         user: e
@@ -166666,7 +166667,7 @@
                     null != l && (0, r.openContextMenuLazy)(s, async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("99387"), n.e("79695"), n.e("32006"), n.e("82882"), n.e("12435"), n.e("6696")]).then(n.bind(n, "757387"));
+                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("82882"), n.e("12435"), n.e("7717"), n.e("24509")]).then(n.bind(n, "757387"));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             user: e,
@@ -173123,7 +173124,7 @@
                                                     (0, _.openContextMenuLazy)(e, async () => {
                                                         let {
                                                             default: e
-                                                        } = await Promise.all([n.e("99387"), n.e("79695"), n.e("32006"), n.e("82882"), n.e("12435"), n.e("6696")]).then(n.bind(n, "757387"));
+                                                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("82882"), n.e("12435"), n.e("7717"), n.e("24509")]).then(n.bind(n, "757387"));
                                                         return n => (0, i.jsx)(e, {
                                                             ...n,
                                                             user: r,
@@ -173236,7 +173237,7 @@
                     null != y && (0, d.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("99387"), n.e("79695"), n.e("32006"), n.e("82882"), n.e("12435"), n.e("6696")]).then(n.bind(n, "757387"));
+                        } = await Promise.all([n.e("99387"), n.e("36441"), n.e("82882"), n.e("12435"), n.e("7717"), n.e("24509")]).then(n.bind(n, "757387"));
                         return t => (0, i.jsx)(e, {
                             ...t,
                             user: M,
@@ -173754,8 +173755,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715791394258",
-                                    build_number: "293610"
+                                    built_at: "1715792206107",
+                                    build_number: "293613"
                                 }
                             },
                             retries: 1
@@ -201757,18 +201758,25 @@
                     d = e.getTrack(),
                     _ = e.getSyncingWith(),
                     c = e.getActivity(),
-                    E = null !== (o = null !== (s = null == d ? void 0 : d.id) && void 0 !== s ? s : null == c ? void 0 : c.sync_id) && void 0 !== o ? o : e.getLastPlayedTrackId();
+                    E = null !== (o = null !== (s = null == d ? void 0 : d.id) && void 0 !== s ? s : null == c ? void 0 : c.sync_id) && void 0 !== o ? o : e.getLastPlayedTrackId(),
+                    I = n.id === t.getId(),
+                    T = l && !u,
+                    f = null != E && E === (null == r ? void 0 : r.sync_id),
+                    S = (null == c ? void 0 : c.party) != null && (null == r ? void 0 : null === (a = r.party) || void 0 === a ? void 0 : a.id) === c.party.id,
+                    h = (null == _ ? void 0 : _.userId) != null && (null == _ ? void 0 : _.userId) === n.id;
                 return {
                     user: n,
                     activity: r,
                     hasSpotifyAccount: l,
                     canPlaySpotify: u,
-                    notPlayable: l && !u,
-                    syncingWithParty: (null == c ? void 0 : c.party) != null && (null == r ? void 0 : null === (a = r.party) || void 0 === a ? void 0 : a.id) === c.party.id,
-                    syncingWithUser: (null == _ ? void 0 : _.userId) != null && (null == _ ? void 0 : _.userId) === n.id,
-                    isCurrentUser: n.id === t.getId(),
+                    notPlayable: T,
+                    syncingWithParty: S,
+                    syncingWithUser: h,
+                    isCurrentUser: I,
                     currentUserTrackId: E,
-                    playingSameTrack: null != E && E === (null == r ? void 0 : r.sync_id)
+                    playingSameTrack: f,
+                    playDisabled: I || T || f,
+                    syncDisabled: I || h || S
                 }
             }
         },
@@ -252706,7 +252714,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "15721aefdf0eb2770712184a3f690c5e3ade15dc"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "ced1023d2a2cca3b89d3f162e475a23ca2e3167d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -281714,7 +281722,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293610"
+                                build_number: "293613"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -289072,7 +289080,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293610", "293610"), 10);
+                let a = parseInt((n = "293613", "293613"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -316743,4 +316751,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.fc2b94f20ba2bf3552c7.js.map
+//# sourceMappingURL=71586.6e68d61f78907ff21883.js.map
