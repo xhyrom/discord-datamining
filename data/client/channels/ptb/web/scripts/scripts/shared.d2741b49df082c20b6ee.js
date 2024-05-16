@@ -2887,6 +2887,7 @@
                 icon: "icon__42743",
                 name: "name__0ac4b",
                 nameNormal: "nameNormal_cb5c2b ellipsis__46552 textRow_c835f1",
+                namePlatformIconMarginBiteSizePopout: "namePlatformIconMarginBiteSizePopout_d0b16c",
                 nameWrap: "nameWrap_b61c4b textRow_c835f1",
                 platformIcon: "platformIcon_a2d873",
                 playTime: "playTime_a445ec ellipsis__46552 textRow_c835f1",
