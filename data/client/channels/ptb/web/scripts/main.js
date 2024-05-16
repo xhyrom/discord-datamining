@@ -37067,7 +37067,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294196", ", Version Hash: ").concat("53254e1377833ed9b05c4d42e136c16b86f9f509")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294210", ", Version Hash: ").concat("e735336f34b5a62fc269fbe00a42c3dc458171d1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -54992,9 +54992,10 @@
                 REPORTS_FREE_TEXT_PLACEHOLDER: "(Optional) Provide more context about your report here",
                 REPORTS_BLOCK_USER_ELEMENT_DESCRIPTION: "This is whose profile you reported. Block them to stop seeing any of their messages.",
                 SAFETY_HUB_PAGE_TITLE: "Safety Hub",
-                PRIVACY_AND_SAFETY_TAB_TITLE_SETTINGS: "Preferences",
+                PRIVACY_AND_SAFETY_TAB_TITLE_SETTINGS: "User Settings",
                 PRIVACY_AND_SAFETY_TAB_TITLE_SUPPORT: "Account Standing",
                 PRIVACY_AND_SAFETY_TAB_TITLE_SUPPORT_V2: "Standing",
+                PRIVACY_AND_SAFETY_GUILD_TAB_TITLE: "Server Settings",
                 SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_TITLE: "Your account is $[all good!](hook)",
                 SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_TITLE_V2: "Your account is $[all good](hook)",
                 SAFETY_HUB_ACCOUNT_STANDING_ALL_GOOD_DESCRIPTION: "Thanks for upholding Discord's [Terms of Service]({termsOfService}) and [Community Guidelines]({communityGuidelines}).",
@@ -88307,8 +88308,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294196", "294196"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294196")), t = 0), t
+                let t = parseInt((e = "294210", "294210"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294210")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116071,8 +116072,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294196",
-                    versionHash: "53254e1377833ed9b05c4d42e136c16b86f9f509"
+                    buildNumber: "294210",
+                    versionHash: "e735336f34b5a62fc269fbe00a42c3dc458171d1"
                 }
             }
             n.r(t), n.d(t, {
@@ -172684,8 +172685,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715894404166",
-                                    build_number: "294196"
+                                    built_at: "1715895061604",
+                                    build_number: "294210"
                                 }
                             },
                             retries: 1
@@ -249549,7 +249550,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "53254e1377833ed9b05c4d42e136c16b86f9f509"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e735336f34b5a62fc269fbe00a42c3dc458171d1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278635,7 +278636,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294196"
+                                build_number: "294210"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285993,7 +285994,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "294196", "294196"), 10);
+                let a = parseInt((n = "294210", "294210"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313686,4 +313687,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.0a98e3c1aa5eb9a79388.js.map
+//# sourceMappingURL=71586.08f6e38b527297a6668b.js.map
