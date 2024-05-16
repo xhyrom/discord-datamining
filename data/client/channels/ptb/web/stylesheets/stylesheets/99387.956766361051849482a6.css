@@ -40952,8 +40952,8 @@ div.profileThemedContainer__6e645 {
 .errorState_c6cca2 {
     padding: 20px 20px 40px;
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center
 }
 
@@ -41015,7 +41015,7 @@ div.profileThemedContainer__6e645 {
 
 .confirmChannelName_a42e11 {
     font-weight: 500;
-    font-size: .875rem;
+    font-size: 14px;
     margin-left: 8px;
     color: var(--header-primary)
 }
@@ -41023,7 +41023,7 @@ div.profileThemedContainer__6e645 {
 .lastActiveTimestamp_d49b9c {
     margin-left: 8px;
     color: var(--text-muted);
-    font-size: .75rem;
+    font-size: 12px;
     margin-top: 2px
 }
 
@@ -137668,4 +137668,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.b022483b12957e78bcd5.css.map*/
+/*# sourceMappingURL=99387.956766361051849482a6.css.map*/
