@@ -37054,7 +37054,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294281", ", Version Hash: ").concat("270328fce2a815008d87195c33727396ad44360f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294292", ", Version Hash: ").concat("825898c33ab60a76c13e63fd9851b0ff370b0760")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -51762,6 +51762,8 @@
                 GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_ACTION_FLAGGED_MOBILE: "flagged a message",
                 GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_ACTION_BLOCKED_HOOK: "has blocked a message in $[**!!{channelName}!!**](channelHook)",
                 GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_ACTION_FLAGGED_HOOK: "has flagged a message in $[**!!{channelName}!!**](channelHook)",
+                GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_ACTION_APP_BLOCKED_HOOK: "has blocked **!!{applicationName}!!**'s message in $[**!!{channelName}!!**](channelHook), sent by $[](userHook)",
+                GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_ACTION_APP_FLAGGED_HOOK: "has flagged **!!{applicationName}!!**'s message in $[**!!{channelName}!!**](channelHook), sent by $[](userHook)",
                 GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_ACTION_BLOCKED_VOICE_CHANNEL_STATUS_HOOK: "has blocked a voice channel status for $[**!!{channelName}!!**](channelHook)",
                 GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_ACTION_FLAGGED_VOICE_CHANNEL_STATUS_HOOK: "has flagged a voice channel status for $[**!!{channelName}!!**](channelHook)",
                 GUILD_AUTOMOD_USERNAME: "AutoMod",
@@ -55571,6 +55573,7 @@
                 ACTIVITY_REACTION_IMAGE_ALT_TEXT_WATCHING: "An activity card showing @{username} watching {activity}",
                 ACTIVITY_REACTION_IMAGE_ALT_TEXT_LISTENING: "An activity card showing @{username} listening to {activity}",
                 ACTIVITY_REACTION_IMAGE_ALT_TEXT_SPOTIFY: "An activity card showing @{username} listening to {song} by {artist}",
+                ACTIVITY_REACTION_IMAGE_ALT_TEXT_TOP_ARTIST: "An activity card showing @{username}'s top artist, {artist}",
                 ACTIVITY_REACTION_IMAGE_ALT_TEXT_STREAMING: "An activity card showing @{username} streaming {activity}",
                 MEMBER_LIST_CONTENT_FEED_PLAYING_GAME: "Playing **{gameName}**",
                 MEMBER_LIST_CONTENT_FEED_PLAYED_GAME: "Played **{gameName}**",
@@ -55594,7 +55597,9 @@
                 MEMBER_LIST_CONTENT_FEED_USER_WATCHED_MEDIA: "{userName} watched **{mediaTitle}**: {episodeDescription}",
                 MEMBER_LIST_CONTENT_FEED_TOP_GAME: "Most played",
                 MEMBER_LIST_CONTENT_FEED_TOP_GAME_WEEK_POPOUT: "{userName}'s most played this week: **{gameName}**",
-                MEMBER_LIST_CONTENT_FEED_TOP_ARTIST_TRACKS_THIS_WEEK: "Top artist — {count} tracks this week",
+                MEMBER_LIST_CONTENT_FEED_TOP_ARTIST_WEEK_POPOUT: "{userName}'s top artist this week: **{artist}**",
+                MEMBER_LIST_CONTENT_FEED_TOP_ARTIST_TRACKS_THIS_WEEK: "Top Artist — {count} tracks this week",
+                MEMBER_LIST_CONTENT_FEED_TOP_ARTIST_WEEK: "{userName}'s top artist this week: **{artistName}**",
                 MEMBER_LIST_CONTENT_FEED_WATCH_SEASON_EPISODE: "S{seasonNum}E{episodeNum}",
                 MEMBER_LIST_CONTENT_FEED_RESURRECTED: "Returning",
                 MEMBER_LIST_CONTENT_FEED_RESURRECTED_AFTER: "Returning after {months, plural, =-1 {} =0 {} other {{months} months}}{weeks, plural, =-1 {} =0 {} other {{weeks} weeks}}{days, plural, =-1 {} =0 {} other {{days} days}}",
@@ -55614,7 +55619,7 @@
                 MEMBER_LIST_CONTENT_POPOUT_USER_WATCHING: "{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} watching",
                 MEMBER_LIST_CONTENT_POPOUT_USER_WATCHED: "{countOthers, plural, =0 {$[{user1}](nameHook)} =1 {$[{user1}](nameHook) and $[{user2}](nameHook)} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others}} watched",
                 MEMBER_LIST_CONTENT_POPOUT_USER_STREAMING: "$[{countOthers, plural, =0 {{user1} is} =1 {{user1} and {user2} are} other {{user1} and {countOthers} others are}}](nameHook) streaming",
-                MEMBER_LIST_CONTENT_POPOUT_USER_LISTENED: "{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} listened to",
+                MEMBER_LIST_CONTENT_POPOUT_USER_LISTENED: "{countOthers, plural, =0 {$[{user1}](nameHook)} =1 {$[{user1}](nameHook) and $[{user2}](nameHook)} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others}} listened to",
                 MEMBER_LIST_CONTENT_POPOUT_USER_LISTENING: "{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} listening to",
                 MEMBER_LIST_CONTENT_POPOUT_BLOCKED_USER_WARNING: "Users you've blocked or muted are in this voice channel",
                 CONTENT_INVENTORY_REACTION_USER_PLAYING: "{countOthers, plural, =0 {{user1} is} =1 {{user1} and {user2} are} other {{user1} and {countOthers} others are}} playing **{gameName}**",
@@ -88289,8 +88294,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294281", "294281"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294281")), t = 0), t
+                let t = parseInt((e = "294292", "294292"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294292")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116053,8 +116058,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294281",
-                    versionHash: "270328fce2a815008d87195c33727396ad44360f"
+                    buildNumber: "294292",
+                    versionHash: "825898c33ab60a76c13e63fd9851b0ff370b0760"
                 }
             }
             n.r(t), n.d(t, {
@@ -172690,8 +172695,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715900584868",
-                                    build_number: "294281"
+                                    built_at: "1715902018995",
+                                    build_number: "294292"
                                 }
                             },
                             retries: 1
@@ -189610,9 +189615,7 @@
                 try {
                     return (0, i.match)(e.config).with({
                         config_version: 1
-                    }, () => !0).with({
-                        config_version: 2
-                    }, () => !0).exhaustive()
+                    }, () => !0).otherwise(() => !1)
                 } catch (n) {
                     var t;
                     return console.error("Unknown config version '".concat(null == e ? void 0 : null === (t = e.config) || void 0 === t ? void 0 : t.config_version, "'"), n), !1
@@ -189718,44 +189721,7 @@
                             variants: e.variants,
                             supplementaryApplicationIds: e.supplementary_application_ids
                         }
-                    }).with({
-                        config_version: 2
-                    }, e => ({
-                        configVersion: 2,
-                        expiresAt: e.expires_at,
-                        getGameLink: e.get_game_link,
-                        applicationId: e.application_id,
-                        applicationName: e.application_name,
-                        variants: e.variants,
-                        streamDurationRequirementMinutes: 0,
-                        rewardCodeExpiresAt: "",
-                        gameTitle: "",
-                        messages: {
-                            questName: "",
-                            rewardName: "",
-                            rewardNameWithArticle: "",
-                            rewardRedemptionInstructionsByPlatform: {},
-                            gameTitle: "",
-                            gamePublisher: ""
-                        },
-                        colors: {
-                            primary: "",
-                            secondary: ""
-                        },
-                        rewardsConfig: {
-                            assignmentMethod: r.QuestRewardAssignmentMethods.ALL,
-                            rewards: []
-                        },
-                        rewardCodePlatforms: [],
-                        assets: {
-                            rewardTile: "",
-                            hero: "",
-                            questBarHero: "",
-                            gameTile: "",
-                            logotype: ""
-                        },
-                        inGameQuestConfig: null
-                    })).exhaustive()),
+                    }).exhaustive()),
                     userStatus: null == e.user_status ? null : A(e.user_status),
                     targetedContent: e.targeted_content
                 }
@@ -249513,7 +249479,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "270328fce2a815008d87195c33727396ad44360f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "825898c33ab60a76c13e63fd9851b0ff370b0760"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -276504,12 +276470,19 @@
             function a(e, t) {
                 return e.size === t.size && (0 === e.size && 0 === t.size || Array.from(e).every(e => t.has(e)))
             }
+
+            function s(e, t) {
+                return t.includes(e)
+            }
             n.r(t), n.d(t, {
                 areSetsEqual: function() {
                     return a
                 },
                 assertNever: function() {
                     return i
+                },
+                isIn: function() {
+                    return s
                 },
                 isNotNullish: function() {
                     return r
@@ -278599,7 +278572,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294281"
+                                build_number: "294292"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285957,7 +285930,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "294281", "294281"), 10);
+                let a = parseInt((n = "294292", "294292"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313659,4 +313632,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.041075f28c6eb4650aab.js.map
+//# sourceMappingURL=71586.793183fe4660cce641a2.js.map
