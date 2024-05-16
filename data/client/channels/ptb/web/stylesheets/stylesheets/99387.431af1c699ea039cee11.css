@@ -26948,6 +26948,63 @@ html .progress__00e29 {
     gap: 4px
 }
 
+.wrapper__17603 {
+    padding: 16px 0
+}
+
+.productSection_d2504b {
+    margin-top: 40px
+}
+
+@value gridSize: 320px;
+
+.productList_b12dd0 {
+    display: grid;
+    grid-gap: 16px;
+    gap: 16px;
+    padding-top: 16px;
+    grid-template-columns: 320px;
+    justify-items: center
+}
+
+@media(min-width:760px) {
+    .productList_b12dd0 {
+        grid-template-columns: 320px 320px
+    }
+}
+
+@media(min-width:1100px) {
+    .productList_b12dd0 {
+        grid-template-columns: 320px 320px 320px
+    }
+}
+
+.subDetailsModal_c2c023 {
+    border-radius: 12px;
+    overflow: hidden
+}
+
+.legalText__3817f {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--background-modifier-accent)
+}
+
+.footer_cf774b {
+    align-items: center;
+    background: var(--background-secondary-alt);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
+    position: relative
+}
+
+.backButton__91fb9 {
+    background: inherit;
+    padding: 0
+}
+
 .content_da5e31 {
     display: flex;
     flex-direction: row;
@@ -86992,63 +87049,6 @@ input::-webkit-inner-spin-button {
     margin-top: 8px
 }
 
-.wrapper__17603 {
-    padding: 16px 0
-}
-
-.productSection_d2504b {
-    margin-top: 40px
-}
-
-@value gridSize: 320px;
-
-.productList_b12dd0 {
-    display: grid;
-    grid-gap: 16px;
-    gap: 16px;
-    padding-top: 16px;
-    grid-template-columns: 320px;
-    justify-items: center
-}
-
-@media(min-width:760px) {
-    .productList_b12dd0 {
-        grid-template-columns: 320px 320px
-    }
-}
-
-@media(min-width:1100px) {
-    .productList_b12dd0 {
-        grid-template-columns: 320px 320px 320px
-    }
-}
-
-.subDetailsModal_c2c023 {
-    border-radius: 12px;
-    overflow: hidden
-}
-
-.legalText__3817f {
-    margin-top: 24px;
-    padding-top: 24px;
-    border-top: 1px solid var(--background-modifier-accent)
-}
-
-.footer_cf774b {
-    align-items: center;
-    background: var(--background-secondary-alt);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 16px;
-    position: relative
-}
-
-.backButton__91fb9 {
-    background: inherit;
-    padding: 0
-}
-
 .modal_af101e {
     border-radius: 12px;
     overflow: hidden;
@@ -137532,4 +137532,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.90979f27dfdecf78b54b.css.map*/
+/*# sourceMappingURL=99387.431af1c699ea039cee11.css.map*/

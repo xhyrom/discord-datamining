@@ -37067,7 +37067,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294028", ", Version Hash: ").concat("6098afc9bfd904a21675ca7c8fab79c84c833dc5")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294031", ", Version Hash: ").concat("d51a652bfebc0eb575c63fe8b0411b838d447f4f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -37583,7 +37583,7 @@
                 TextComponentStyle: function() {
                     return I
                 }
-            }), (A = i || (i = {}))[A.ROLE = 0] = "ROLE", A[A.MEMBER = 1] = "MEMBER", (m = r || (r = {})).IOS = "ios", m.ANDROID = "android", m.WEB = "web", (N = a || (a = {}))[N.NONE = 0] = "NONE", N[N.NEW = 1] = "NEW", N[N.UPDATED = 2] = "UPDATED", (p = s || (s = {}))[p.MEDIA_PROXY = 1] = "MEDIA_PROXY", p[p.YOUTUBE = 2] = "YOUTUBE", (O = o || (o = {}))[O.GUILD = 0] = "GUILD", O[O.BOT_DM = 1] = "BOT_DM", O[O.PRIVATE_CHANNEL = 2] = "PRIVATE_CHANNEL", (C = l || (l = {}))[C.NO_INTERCEPT = 1] = "NO_INTERCEPT", C[C.LAUNCH_ACTIVITY_INTERCEPT = 2] = "LAUNCH_ACTIVITY_INTERCEPT", (R = u || (u = {}))[R.SUB_COMMAND = 1] = "SUB_COMMAND", R[R.SUB_COMMAND_GROUP = 2] = "SUB_COMMAND_GROUP", R[R.STRING = 3] = "STRING", R[R.INTEGER = 4] = "INTEGER", R[R.BOOLEAN = 5] = "BOOLEAN", R[R.USER = 6] = "USER", R[R.CHANNEL = 7] = "CHANNEL", R[R.ROLE = 8] = "ROLE", R[R.MENTIONABLE = 9] = "MENTIONABLE", R[R.NUMBER = 10] = "NUMBER", R[R.ATTACHMENT = 11] = "ATTACHMENT", (g = d || (d = {}))[g.CHAT = 1] = "CHAT", g[g.USER = 2] = "USER", g[g.MESSAGE = 3] = "MESSAGE", g[g.PRIMARY_ENTRY_POINT = 4] = "PRIMARY_ENTRY_POINT", (L = _ || (_ = {}))[L.APPLICATION_COMMAND = 2] = "APPLICATION_COMMAND", L[L.MESSAGE_COMPONENT = 3] = "MESSAGE_COMPONENT", L[L.APPLICATION_COMMAND_AUTOCOMPLETE = 4] = "APPLICATION_COMMAND_AUTOCOMPLETE", L[L.MODAL_SUBMIT = 5] = "MODAL_SUBMIT", (v = c || (c = {}))[v.ACTION_ROW = 1] = "ACTION_ROW", v[v.BUTTON = 2] = "BUTTON", v[v.STRING_SELECT = 3] = "STRING_SELECT", v[v.INPUT_TEXT = 4] = "INPUT_TEXT", v[v.USER_SELECT = 5] = "USER_SELECT", v[v.ROLE_SELECT = 6] = "ROLE_SELECT", v[v.MENTIONABLE_SELECT = 7] = "MENTIONABLE_SELECT", v[v.CHANNEL_SELECT = 8] = "CHANNEL_SELECT", v[v.TEXT = 10] = "TEXT", v[v.MEDIA_GALLERY = 12] = "MEDIA_GALLERY", v[v.SEPARATOR = 14] = "SEPARATOR", (D = E || (E = {}))[D.PRIMARY = 1] = "PRIMARY", D[D.SECONDARY = 2] = "SECONDARY", D[D.SUCCESS = 3] = "SUCCESS", D[D.DESTRUCTIVE = 4] = "DESTRUCTIVE", D[D.LINK = 5] = "LINK", (M = I || (I = {}))[M.SMALL = 1] = "SMALL", M[M.PARAGRAPH = 2] = "PARAGRAPH", (y = T || (T = {}))[y.SMALL = 1] = "SMALL", y[y.LARGE = 2] = "LARGE", (P = f || (f = {}))[P.SUBSCRIPTION_PLAN = 1] = "SUBSCRIPTION_PLAN", P[P.ENTITLEMENT = 2] = "ENTITLEMENT", P[P.PREMIUM_LEGACY_UPGRADE_PROMOTION = 3] = "PREMIUM_LEGACY_UPGRADE_PROMOTION", P[P.PREMIUM_TRIAL = 4] = "PREMIUM_TRIAL", (U = S || (S = {}))[U.GUILD_PRODUCT = 0] = "GUILD_PRODUCT", (b = h || (h = {}))[b.WEBAUTHN = 1] = "WEBAUTHN", b[b.TOTP = 2] = "TOTP", b[b.SMS = 3] = "SMS"
+            }), (A = i || (i = {}))[A.ROLE = 0] = "ROLE", A[A.MEMBER = 1] = "MEMBER", (m = r || (r = {})).IOS = "ios", m.ANDROID = "android", m.WEB = "web", (N = a || (a = {}))[N.NONE = 0] = "NONE", N[N.NEW = 1] = "NEW", N[N.UPDATED = 2] = "UPDATED", (p = s || (s = {}))[p.MEDIA_PROXY = 1] = "MEDIA_PROXY", p[p.YOUTUBE = 2] = "YOUTUBE", (O = o || (o = {}))[O.GUILD = 0] = "GUILD", O[O.BOT_DM = 1] = "BOT_DM", O[O.PRIVATE_CHANNEL = 2] = "PRIVATE_CHANNEL", (C = l || (l = {}))[C.NO_INTERCEPT = 1] = "NO_INTERCEPT", C[C.LAUNCH_ACTIVITY_INTERCEPT = 2] = "LAUNCH_ACTIVITY_INTERCEPT", (R = u || (u = {}))[R.SUB_COMMAND = 1] = "SUB_COMMAND", R[R.SUB_COMMAND_GROUP = 2] = "SUB_COMMAND_GROUP", R[R.STRING = 3] = "STRING", R[R.INTEGER = 4] = "INTEGER", R[R.BOOLEAN = 5] = "BOOLEAN", R[R.USER = 6] = "USER", R[R.CHANNEL = 7] = "CHANNEL", R[R.ROLE = 8] = "ROLE", R[R.MENTIONABLE = 9] = "MENTIONABLE", R[R.NUMBER = 10] = "NUMBER", R[R.ATTACHMENT = 11] = "ATTACHMENT", (g = d || (d = {}))[g.CHAT = 1] = "CHAT", g[g.USER = 2] = "USER", g[g.MESSAGE = 3] = "MESSAGE", g[g.PRIMARY_ENTRY_POINT = 4] = "PRIMARY_ENTRY_POINT", (L = _ || (_ = {}))[L.APPLICATION_COMMAND = 2] = "APPLICATION_COMMAND", L[L.MESSAGE_COMPONENT = 3] = "MESSAGE_COMPONENT", L[L.APPLICATION_COMMAND_AUTOCOMPLETE = 4] = "APPLICATION_COMMAND_AUTOCOMPLETE", L[L.MODAL_SUBMIT = 5] = "MODAL_SUBMIT", (v = c || (c = {}))[v.ACTION_ROW = 1] = "ACTION_ROW", v[v.BUTTON = 2] = "BUTTON", v[v.STRING_SELECT = 3] = "STRING_SELECT", v[v.INPUT_TEXT = 4] = "INPUT_TEXT", v[v.USER_SELECT = 5] = "USER_SELECT", v[v.ROLE_SELECT = 6] = "ROLE_SELECT", v[v.MENTIONABLE_SELECT = 7] = "MENTIONABLE_SELECT", v[v.CHANNEL_SELECT = 8] = "CHANNEL_SELECT", v[v.TEXT = 10] = "TEXT", v[v.MEDIA_GALLERY = 12] = "MEDIA_GALLERY", v[v.SEPARATOR = 14] = "SEPARATOR", (D = E || (E = {}))[D.PRIMARY = 1] = "PRIMARY", D[D.SECONDARY = 2] = "SECONDARY", D[D.SUCCESS = 3] = "SUCCESS", D[D.DESTRUCTIVE = 4] = "DESTRUCTIVE", D[D.LINK = 5] = "LINK", D[D.PREMIUM = 6] = "PREMIUM", (M = I || (I = {}))[M.SMALL = 1] = "SMALL", M[M.PARAGRAPH = 2] = "PARAGRAPH", (y = T || (T = {}))[y.SMALL = 1] = "SMALL", y[y.LARGE = 2] = "LARGE", (P = f || (f = {}))[P.SUBSCRIPTION_PLAN = 1] = "SUBSCRIPTION_PLAN", P[P.ENTITLEMENT = 2] = "ENTITLEMENT", P[P.PREMIUM_LEGACY_UPGRADE_PROMOTION = 3] = "PREMIUM_LEGACY_UPGRADE_PROMOTION", P[P.PREMIUM_TRIAL = 4] = "PREMIUM_TRIAL", (U = S || (S = {}))[U.GUILD_PRODUCT = 0] = "GUILD_PRODUCT", (b = h || (h = {}))[b.WEBAUTHN = 1] = "WEBAUTHN", b[b.TOTP = 2] = "TOTP", b[b.SMS = 3] = "SMS"
         },
         2052: function(e, t, n) {
             "use strict";
@@ -88304,8 +88304,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294028", "294028"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294028")), t = 0), t
+                let t = parseInt((e = "294031", "294031"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294031")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116027,8 +116027,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294028",
-                    versionHash: "6098afc9bfd904a21675ca7c8fab79c84c833dc5"
+                    buildNumber: "294031",
+                    versionHash: "d51a652bfebc0eb575c63fe8b0411b838d447f4f"
                 }
             }
             n.r(t), n.d(t, {
@@ -153853,7 +153853,7 @@
                     },
                     async open(e, t, i, r) {
                         var a;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("33053"), n.e("56630"), n.e("31605"), n.e("49146"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("90508"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("92714"), n.e("17220"), n.e("92557"), n.e("62856"), n.e("19874"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("49146"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("90508"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("92714"), n.e("17220"), n.e("92557"), n.e("62856"), n.e("19874"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         a.default.dispatch({
@@ -161769,7 +161769,7 @@
             async function _(e) {
                 let {
                     openInteractionModal: t
-                } = await Promise.all([n.e("49237"), n.e("99387"), n.e("8739"), n.e("58286"), n.e("30243"), n.e("80621")]).then(n.bind(n, "440934"));
+                } = await Promise.all([n.e("49237"), n.e("99387"), n.e("29549"), n.e("31605"), n.e("77172"), n.e("8739"), n.e("58286"), n.e("30243"), n.e("66712")]).then(n.bind(n, "440934"));
                 t(e), a.default.track(l.AnalyticEvents.OPEN_MODAL, {
                     type: "interaction_modal",
                     application_id: e.application.id
@@ -172637,8 +172637,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715881369462",
-                                    build_number: "294028"
+                                    built_at: "1715881573729",
+                                    build_number: "294031"
                                 }
                             },
                             retries: 1
@@ -215842,7 +215842,7 @@
                         (0, a.openModalLazy)(async () => {
                             let {
                                 default: a
-                            } = await Promise.all([n.e("49237"), n.e("99387"), n.e("29549"), n.e("31605"), n.e("98538"), n.e("20869")]).then(n.bind(n, "7225"));
+                            } = await Promise.all([n.e("49237"), n.e("99387"), n.e("29549"), n.e("31605"), n.e("77172"), n.e("98538"), n.e("20869")]).then(n.bind(n, "7225"));
                             return n => (0, i.jsx)(a, {
                                 transitionState: n.transitionState,
                                 onClose: n.onClose,
@@ -249391,7 +249391,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "6098afc9bfd904a21675ca7c8fab79c84c833dc5"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d51a652bfebc0eb575c63fe8b0411b838d447f4f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278349,7 +278349,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294028"
+                                build_number: "294031"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285707,7 +285707,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "294028", "294028"), 10);
+                let a = parseInt((n = "294031", "294031"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313388,4 +313388,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.8260968f22edb79fb4f8.js.map
+//# sourceMappingURL=71586.26f3a38e9e8e2b9a5627.js.map
