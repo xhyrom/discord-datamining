@@ -20734,7 +20734,7 @@ h3.improved_e02592:after {
 
 .usernameContainer__69123 .systemTag__0146b {
     margin-right: 4px;
-    margin-top: 2px
+    margin-top: 0
 }
 
 .usernameContainer__69123.compact__52a0e {
@@ -20785,7 +20785,8 @@ h3.improved_e02592:after {
     display: flex !important;
     flex-direction: row;
     white-space: pre;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    align-items: center
 }
 
 .compact__52a0e .spanCorrection__313ad {
@@ -28290,4 +28291,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.b8038f5462cc6c701987.css.map*/
+/*# sourceMappingURL=49237.1ace769add1bd9d9e0ae.css.map*/
