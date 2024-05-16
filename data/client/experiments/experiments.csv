@@ -588,6 +588,7 @@ id,hash,label
 2024-05_content_inventory_top_artist_cards,2933142378,Content Inventory: TOP_ARTIST cards
 2024-05_desktop_user_settings_search,1800298008,Desktop User Settings Search
 2024-05_desktop_visual_refresh,1585279012,Desktop Visual Refresh
+2024-05_enable_stripe_link_on_split_cardelement,2700487382,Enable Stripe Link Experiment on Split CardElement
 2024-05_iar_spam_reorder,1000552881,IAR Spam Reorder
 2024-05_marketing_page_hero_header_v2,1412791758,Marketing page hero header v2
 2024-05_message_forwarding,2255117514,Message forwarding
