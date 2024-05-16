@@ -132400,7 +132400,7 @@ div.nagbar_c731ff {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 12px
+    padding: 16px
 }
 
 .section_d2e3ea {
@@ -132481,7 +132481,7 @@ div.nagbar_c731ff {
 .tabBar__6db53 {
     display: flex;
     gap: 32px;
-    margin: 12px 12px 0;
+    margin: 16px 16px 0;
     border-bottom: 1px solid var(--profile-body-divider-color)
 }
 
@@ -132492,10 +132492,6 @@ div.nagbar_c731ff {
 .tabBarItem__7bc74 {
     height: 25px;
     box-sizing: border-box
-}
-
-.infoTab__29f80 {
-    padding-top: 16px
 }
 
 .container__020e3 {
@@ -132516,7 +132512,8 @@ div.nagbar_c731ff {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 16px
+    gap: 16px;
+    padding-left: 1px
 }
 
 .badgeList__70639 {
@@ -137594,4 +137591,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.e74a84a399bf636adef3.css.map*/
+/*# sourceMappingURL=99387.d99d66ede491236d2944.css.map*/
