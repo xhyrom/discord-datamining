@@ -37054,7 +37054,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294259", ", Version Hash: ").concat("9321e3d0a3a4609439978469b3acf9ed399b9ac1")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294268", ", Version Hash: ").concat("6acac6fdce303d0d65ebd62fa155761fc4fd3d4a")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55431,6 +55431,8 @@
                 QUESTS_JOIN_ME: "Join Me",
                 QUESTS_FOR_YOU: "QUESTS FOR YOU",
                 QUESTS_OTHER: "OTHER QUESTS",
+                QUESTS_ALL: "All Quests",
+                QUESTS_COMPLETED: "Completed Quests",
                 QUESTS_REWARD_VERIFICATION_TITLE: "Verify your account to claim rewards!",
                 QUESTS_REWARD_VERIFICATION_BODY: "We have sent a verification email to: [{emailAddress}]({emailAddressLink})",
                 QUESTS_REWARD_VERIFICATION_ERROR: "Uh oh! We failed to send you a verification email.",
@@ -88287,8 +88289,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294259", "294259"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294259")), t = 0), t
+                let t = parseInt((e = "294268", "294268"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294268")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116051,8 +116053,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294259",
-                    versionHash: "9321e3d0a3a4609439978469b3acf9ed399b9ac1"
+                    buildNumber: "294268",
+                    versionHash: "6acac6fdce303d0d65ebd62fa155761fc4fd3d4a"
                 }
             }
             n.r(t), n.d(t, {
@@ -172688,8 +172690,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715897547250",
-                                    build_number: "294259"
+                                    built_at: "1715898658404",
+                                    build_number: "294268"
                                 }
                             },
                             retries: 1
@@ -188930,6 +188932,9 @@
         113434: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                QuestFilters: function() {
+                    return r
+                },
                 useDismissNewQuestBadge: function() {
                     return L
                 },
@@ -189107,7 +189112,7 @@
                     avatarDecoration: null == i ? void 0 : null === (t = i.items) || void 0 === t ? void 0 : t[0],
                     isFetching: r
                 }
-            }(a = i || (i = {}))[a.DESC = 0] = "DESC", a[a.ASC = 1] = "ASC", (s = r || (r = {}))[s.INCOMPLETE = 0] = "INCOMPLETE", s[s.COMPLETED = 1] = "COMPLETED"
+            }(a = i || (i = {}))[a.DESC = 0] = "DESC", a[a.ASC = 1] = "ASC", (s = r || (r = {})).INCOMPLETE = "incomplete", s.COMPLETE = "complete"
         },
         687744: function(e, t, n) {
             "use strict";
@@ -211518,7 +211523,7 @@
                         premiumUserWithBanner: 212,
                         premiumUserWithoutBanner: 106,
                         default: 106
-                    })(n)).with(r.UserProfileTypes.BITE_SIZE, () => 110).with(r.UserProfileTypes.FULL_SIZE, () => 210).with(r.UserProfileTypes.POMELO_POPOUT, () => 64).with(r.UserProfileTypes.SETTINGS, () => 100).with(r.UserProfileTypes.PANEL, () => 120).with(r.UserProfileTypes.CANCEL_MODAL, () => 42).exhaustive()
+                    })(n)).with(r.UserProfileTypes.BITE_SIZE, () => 105).with(r.UserProfileTypes.FULL_SIZE, () => 210).with(r.UserProfileTypes.POMELO_POPOUT, () => 64).with(r.UserProfileTypes.SETTINGS, () => 100).with(r.UserProfileTypes.PANEL, () => 120).with(r.UserProfileTypes.CANCEL_MODAL, () => 42).exhaustive()
                 },
                 u = Object.freeze({
                     [r.UserProfileTypes.POPOUT]: 340,
@@ -249509,7 +249514,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9321e3d0a3a4609439978469b3acf9ed399b9ac1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "6acac6fdce303d0d65ebd62fa155761fc4fd3d4a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278595,7 +278600,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294259"
+                                build_number: "294268"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285953,7 +285958,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "294259", "294259"), 10);
+                let a = parseInt((n = "294268", "294268"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313655,4 +313660,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.86e416f80a8831c1ab53.js.map
+//# sourceMappingURL=71586.4c8a88226ebeb7381c44.js.map
