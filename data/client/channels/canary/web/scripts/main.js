@@ -37067,7 +37067,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294176", ", Version Hash: ").concat("ccf4082dc19b3ff1a5ed75cad1d8c51570131b17")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294179", ", Version Hash: ").concat("7c5a135a786cefb0ef9b143726dd34ebe845d267")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -66794,10 +66794,10 @@
 
             function Z(e) {
                 let t = C.default.getSelfEmbeddedActivityForChannel(e);
-                null != t && (0, O.stopEmbeddedActivity)({
+                null != t && ((0, O.stopEmbeddedActivity)({
                     channelId: e,
                     applicationId: t.applicationId
-                })
+                }), (0, O.disconnectEmbeddedActivity)(e, t.applicationId))
             }
 
             function X(e) {
@@ -88307,8 +88307,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294176", "294176"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294176")), t = 0), t
+                let t = parseInt((e = "294179", "294179"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294179")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -110836,7 +110836,7 @@
                         type: "COLLECTIBLES_CATEGORIES_FETCH"
                     });
                     let t = {};
-                    null != e && (!0 === e.noCache && (t.no_cache = !0), !0 === e.includeUnpublished && (t.include_unpublished = !0), null != e.countryCode && (t.country_code = e.countryCode), null !== e.paymentGateway && (t.payment_gateway = e.paymentGateway));
+                    null != e && (!0 === e.noCache && (t.no_cache = !0), !0 === e.includeUnpublished && (t.include_unpublished = !0), !0 === e.includeBundles && (t.include_bundles = !0), null != e.countryCode && (t.country_code = e.countryCode), null !== e.paymentGateway && (t.payment_gateway = e.paymentGateway));
                     try {
                         let e = await i.HTTP.get({
                             url: d.Endpoints.COLLECTIBLES_CATEGORIES,
@@ -111512,6 +111512,32 @@
                     return null != t && new Date().getTime() < t
                 }
         },
+        617452: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                useShopBundleEnabled: function() {
+                    return r
+                }
+            });
+            let i = (0, n("818083").createExperiment)({
+                    kind: "user",
+                    id: "2024-05_collectibles_shop_bundle",
+                    label: "Collectibles Shop Bundle",
+                    defaultConfig: {
+                        enabled: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Shop with bundle",
+                        config: {
+                            enabled: !0
+                        }
+                    }]
+                }),
+                r = e => i.useExperiment({
+                    location: e
+                }).enabled
+        },
         449217: function(e, t, n) {
             "use strict";
             n.r(t), n("47120");
@@ -111531,10 +111557,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return _
+                    return E
                 },
                 useFetchPurchases: function() {
-                    return d
+                    return c
+                },
+                useMaybeFetchCollectiblesCategories: function() {
+                    return _
                 }
             }), n("47120");
             var i = n("470079"),
@@ -111543,9 +111572,36 @@
                 s = n("335131"),
                 o = n("597688"),
                 l = n("337679"),
-                u = n("1870");
+                u = n("1870"),
+                d = n("617452");
 
-            function d() {
+            function _(e) {
+                let t = "useMaybeFetchCollectiblesCategories";
+                (0, a.useTriggerDebuggingAA)({
+                    location: t + " auto on",
+                    autoTrackExposure: !0
+                }), (0, a.useTriggerDebuggingAA)({
+                    location: t + " auto off",
+                    autoTrackExposure: !1
+                });
+                let n = (0, d.useShopBundleEnabled)("useMaybeFetchCollectiblesCategories"),
+                    [l, u, _, c] = (0, r.useStateFromStoresArray)([o.default], () => {
+                        var e;
+                        return [o.default.isFetchingCategories, o.default.error, null !== (e = o.default.lastFetched) && void 0 !== e ? e : 0, o.default.categories]
+                    });
+                return (0, i.useEffect)(() => {
+                    !(l || u || Date.now() - _ < 6e5) && (0, s.fetchCollectiblesCategories)({
+                        ...e,
+                        includeBundles: n
+                    })
+                }, [l, _, u, e, n]), {
+                    isFetching: l,
+                    categories: c,
+                    error: u
+                }
+            }
+
+            function c() {
                 let e = "useFetchPurchases";
                 (0, a.useTriggerDebuggingAA)({
                     location: e + " auto on",
@@ -111570,7 +111626,7 @@
                 }
             }
 
-            function _(e) {
+            function E(e) {
                 var t;
                 let n = "useFetchCollectiblesCategoriesAndPurchases";
                 (0, a.useTriggerDebuggingAA)({
@@ -111581,44 +111637,24 @@
                     autoTrackExposure: !1
                 });
                 let {
-                    isFetching: l,
-                    categories: u,
-                    error: _
-                } = function(e) {
-                    let t = "useMaybeFetchCollectiblesCategories";
-                    (0, a.useTriggerDebuggingAA)({
-                        location: t + " auto on",
-                        autoTrackExposure: !0
-                    }), (0, a.useTriggerDebuggingAA)({
-                        location: t + " auto off",
-                        autoTrackExposure: !1
-                    });
-                    let [n, l, u, d] = (0, r.useStateFromStoresArray)([o.default], () => {
-                        var e;
-                        return [o.default.isFetchingCategories, o.default.error, null !== (e = o.default.lastFetched) && void 0 !== e ? e : 0, o.default.categories]
-                    });
-                    return (0, i.useEffect)(() => {
-                        !(n || l || Date.now() - u < 6e5) && (0, s.fetchCollectiblesCategories)(e)
-                    }, [n, u, l, e]), {
-                        isFetching: n,
-                        categories: d,
-                        error: l
-                    }
-                }(e), {
-                    isClaiming: c,
-                    fetchError: E,
-                    claimError: I,
-                    isFetching: T,
-                    purchases: f
-                } = d();
+                    isFetching: i,
+                    categories: r,
+                    error: s
+                } = _(e), {
+                    isClaiming: o,
+                    fetchError: l,
+                    claimError: u,
+                    isFetching: d,
+                    purchases: E
+                } = c();
                 return {
-                    isFetching: l || T,
-                    isFetchingCategories: l,
-                    isFetchingPurchases: T,
-                    isClaiming: c,
-                    categories: u,
-                    purchases: f,
-                    error: null !== (t = null != _ ? _ : E) && void 0 !== t ? t : I
+                    isFetching: i || d,
+                    isFetchingCategories: i,
+                    isFetchingPurchases: d,
+                    isClaiming: o,
+                    categories: r,
+                    purchases: E,
+                    error: null !== (t = null != s ? s : l) && void 0 !== t ? t : u
                 }
             }
         },
@@ -116030,8 +116066,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294176",
-                    versionHash: "ccf4082dc19b3ff1a5ed75cad1d8c51570131b17"
+                    buildNumber: "294179",
+                    versionHash: "7c5a135a786cefb0ef9b143726dd34ebe845d267"
                 }
             }
             n.r(t), n.d(t, {
@@ -172643,8 +172679,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715892716355",
-                                    build_number: "294176"
+                                    built_at: "1715892950437",
+                                    build_number: "294179"
                                 }
                             },
                             retries: 1
@@ -249508,7 +249544,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ccf4082dc19b3ff1a5ed75cad1d8c51570131b17"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "7c5a135a786cefb0ef9b143726dd34ebe845d267"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278555,7 +278591,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294176"
+                                build_number: "294179"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285913,7 +285949,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "294176", "294176"), 10);
+                let a = parseInt((n = "294179", "294179"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313594,4 +313630,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.5a070a63a5b09fca1d62.js.map
+//# sourceMappingURL=71586.2ea62d111ab04e5b4d6c.js.map
