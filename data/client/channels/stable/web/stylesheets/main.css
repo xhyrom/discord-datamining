@@ -12252,26 +12252,18 @@ span.clanTag_f4aadc {
     justify-content: center
 }
 
+.inline__51026 {
+    display: flex;
+    gap: 4px;
+    align-items: center
+}
+
 .content_c9b545 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     flex-grow: 1;
     gap: 2px
-}
-
-.header_ccd333 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 8px
-}
-
-.footer__86943 {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 8px
 }
 
 .pill__2f6a4 {
@@ -12360,12 +12352,23 @@ span.clanTag_f4aadc {
     flex-shrink: 0
 }
 
-.joinButtonWrapper_f4db6e {
+.joinButtonWhatWrapper_fa34bc {
     position: absolute;
     right: 16px;
     background: linear-gradient(90deg, transparent, var(--background-secondary-alt)30px);
     padding-left: 40px;
     height: 70px;
+    display: flex;
+    align-items: center
+}
+
+.joinButtonWhoWrapper__15fe3 {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    background: linear-gradient(90deg, transparent, var(--background-secondary-alt)30px);
+    padding-left: 40px;
+    padding-top: 16px;
     display: flex;
     align-items: center
 }
@@ -17925,118 +17928,6 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 
 .storeBtn_aa1533 {
     display: flex
-}
-
-.icon__05b65 {
-    align-self: center;
-    background-color: var(--background-floating);
-    border-radius: 50%
-}
-
-.icon__05b65.small__3f7b0 {
-    width: 40px;
-    height: 40px
-}
-
-.icon__05b65.medium__36ff2 {
-    width: 66px;
-    height: 66px
-}
-
-.container_ecfe5a {
-    display: flex;
-    flex-direction: column
-}
-
-.header__4e325 {
-    margin-top: 16px;
-    text-align: center;
-    color: var(--header-secondary)
-}
-
-.header__4e325 strong {
-    color: var(--header-primary)
-}
-
-.divider__34227 {
-    height: 1px;
-    background-color: var(--background-modifier-accent);
-    border: none;
-    width: 100%;
-    margin: 28px 0
-}
-
-.benefitsContainer__27ef4 {
-    margin-top: 16px;
-    gap: 8px;
-    display: flex;
-    flex-direction: column
-}
-
-.benefit_a3ea9e {
-    background-color: var(--background-secondary);
-    padding: 16px;
-    border-radius: 8px
-}
-
-.headerContainer__61621 {
-    width: 100%;
-    height: 112px;
-    position: relative;
-    background-color: var(--background-primary)
-}
-
-.closeContainer__4ed29 {
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    background-color: hsl(var(--black-500-hsl)/.85);
-    border-radius: 50%;
-    cursor: pointer
-}
-
-.closeIcon_aafc04 {
-    width: 16px;
-    height: 16px;
-    color: var(--interactive-normal)
-}
-
-.headerImageContainer_c09f9d {
-    width: 100%;
-    height: 100%
-}
-
-.headerImage_eea72d {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px
-}
-
-.confirmationContainer__7b100 {
-    margin-top: 32px
-}
-
-.purchaseConfirmation_c2bdf8 {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center
-}
-
-.confirmationTitle__0a919 {
-    margin-top: 16px
-}
-
-.confirmationSubtitle__9a015 {
-    margin-top: 8px
 }
 
 .applicationInstallButtonContent__4b859 {
@@ -24446,6 +24337,118 @@ html:not(.keyboard-mode) .root__3eef0.idle_d696d0 .chatButton_a40cc3:not(.chatBu
     z-index: 4;
     pointer-events: none;
     left: -10px
+}
+
+.icon__05b65 {
+    align-self: center;
+    background-color: var(--background-floating);
+    border-radius: 50%
+}
+
+.icon__05b65.small__3f7b0 {
+    width: 40px;
+    height: 40px
+}
+
+.icon__05b65.medium__36ff2 {
+    width: 66px;
+    height: 66px
+}
+
+.container_ecfe5a {
+    display: flex;
+    flex-direction: column
+}
+
+.header__4e325 {
+    margin-top: 16px;
+    text-align: center;
+    color: var(--header-secondary)
+}
+
+.header__4e325 strong {
+    color: var(--header-primary)
+}
+
+.divider__34227 {
+    height: 1px;
+    background-color: var(--background-modifier-accent);
+    border: none;
+    width: 100%;
+    margin: 28px 0
+}
+
+.benefitsContainer__27ef4 {
+    margin-top: 16px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column
+}
+
+.benefit_a3ea9e {
+    background-color: var(--background-secondary);
+    padding: 16px;
+    border-radius: 8px
+}
+
+.headerContainer__61621 {
+    width: 100%;
+    height: 112px;
+    position: relative;
+    background-color: var(--background-primary)
+}
+
+.closeContainer__4ed29 {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: hsl(var(--black-500-hsl)/.85);
+    border-radius: 50%;
+    cursor: pointer
+}
+
+.closeIcon_aafc04 {
+    width: 16px;
+    height: 16px;
+    color: var(--interactive-normal)
+}
+
+.headerImageContainer_c09f9d {
+    width: 100%;
+    height: 100%
+}
+
+.headerImage_eea72d {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px
+}
+
+.confirmationContainer__7b100 {
+    margin-top: 32px
+}
+
+.purchaseConfirmation_c2bdf8 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center
+}
+
+.confirmationTitle__0a919 {
+    margin-top: 16px
+}
+
+.confirmationSubtitle__9a015 {
+    margin-top: 8px
 }
 
 .applicationBuyButton_d4eab1 {
@@ -43169,7 +43172,7 @@ div.profileThemedContainer__6e645 {
 
 .additionalParticipantBadge__23702 {
     padding: 2.25px 4.4px 2.5px 4.2px;
-    background: var(--bg-overlay-5, var(--background-accent));
+    background: var(--background-modifier-accent);
     border-radius: 8px;
     margin-left: 4px
 }
@@ -43483,6 +43486,23 @@ img.thumbnail__18ece {
 
 .streamingPopoutHero__03808 {
     gap: 0
+}
+
+.maybeClickable__0a29f[role=button] {
+    cursor: pointer
+}
+
+.maybeClickable__0a29f[role=button]:hover .popoutTextPrimary_d83570,
+.maybeClickable__0a29f[role=button]:hover .popoutTextSecondary__579ec,
+.maybeClickable__0a29f[role=button]:focus-visible .popoutTextPrimary_d83570,
+.maybeClickable__0a29f[role=button]:focus-visible .popoutTextSecondary__579ec {
+    -webkit-text-decoration: underline;
+    text-decoration: underline
+}
+
+.popoutHeaderIcons__3a068 {
+    display: flex;
+    align-items: center
 }
 
 .container__92138 {
@@ -44856,7 +44876,7 @@ img.thumbnail__18ece {
 
 .gamesTooltip_cdb5ec {
     display: flex;
-    gap: 4px
+    gap: 8px
 }
 
 .filterTooltip_d6d060 {
@@ -46277,7 +46297,7 @@ img.thumbnail__18ece {
 }
 
 .upsellSubtitle__944fa {
-    max-width: 400px;
+    max-width: 640px;
     margin-bottom: 24px
 }
 
@@ -95679,7 +95699,10 @@ div.content_aac020 {
 }
 
 .productName__6ec1f {
-    position: relative
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
 }
 
 .wrapper_cc1e1c {
@@ -119101,7 +119124,10 @@ html .invoiceCancelRow__6ff3e {
 }
 
 .productName__52b8d {
-    position: relative
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
 }
 
 .newBadge__10ade {
@@ -119208,6 +119234,26 @@ html .invoiceCancelRow__6ff3e {
     margin-top: 8px
 }
 
+.headerBar__7effc {
+    position: relative
+}
+
+.shopLogoContainer__5fd13 {
+    position: static
+}
+
+.shopLogo__7193c {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20px
+}
+
+.categoryWrapper__3d4f2 {
+    position: relative
+}
+
 .closeWrapper_fa833c {
     box-sizing: border-box;
     display: flex;
@@ -119287,10 +119333,6 @@ html .invoiceCancelRow__6ff3e {
 
 .title__132e2 {
     margin-left: -6px
-}
-
-.categoryWrapper__3d4f2 {
-    position: relative
 }
 
 @keyframes easterEggAnimation_c14e21 {
@@ -119657,7 +119699,10 @@ html .invoiceCancelRow__6ff3e {
 }
 
 .productName__651db {
-    position: relative
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
 }
 
 .newBadge__40fa3 {
@@ -137426,4 +137471,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ee2a155ce53a89a08ee3.css.map*/
+/*# sourceMappingURL=99387.2d7e48955e914828286d.css.map*/
