@@ -16095,6 +16095,37 @@ h3.improved_e02592:after {
     margin: 0 0 0 .25rem
 }
 
+@use postcss-pxtorem;
+
+.gameIcon__2f065 {
+    position: relative;
+    top: .1875rem;
+    cursor: pointer;
+    margin-left: 4px
+}
+
+.gameMessageTooltip__8e99d {
+    max-width: none
+}
+
+.gameMessageTooltipContent__2e554 {
+    display: flex;
+    padding: 16px;
+    align-items: center
+}
+
+.textContainer_e1f8ac {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 8px;
+    width: 200px
+}
+
+.timestamp_f0be43 {
+    margin-bottom: 4px
+}
+
 .wrapper__40fdf {
     width: auto
 }
@@ -28252,4 +28283,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.9a9008f469e6d91f7522.css.map*/
+/*# sourceMappingURL=49237.e7160d8307e08433cf5f.css.map*/

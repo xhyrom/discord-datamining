@@ -5215,6 +5215,24 @@
                 noWrap: "noWrap__133e4"
             }
         },
+        455658: function(e) {
+            "use strict";
+            e.exports = {
+                clanInfoItem: "clanInfoItem_d2f9bc",
+                clanInfoRow: "clanInfoRow_e038da",
+                description: "description_ea6699",
+                descriptionBorderMask: "descriptionBorderMask__08213",
+                descriptionMask: "descriptionMask_d8fc7b",
+                descriptionText: "descriptionText_bcd405",
+                tags: "tags_ec044d",
+                tagsContainer: "tagsContainer__3f5f9",
+                tagsCount: "tagsCount__9f3ec",
+                trait: "trait_d1186b",
+                traitsBorderMask: "traitsBorderMask__07042",
+                traitsMask: "traitsMask__094bf",
+                wildCardText: "wildCardText_c764c9"
+            }
+        },
         590190: function(e) {
             "use strict";
             e.exports = {
@@ -5296,14 +5314,6 @@
                 tagInput: "tagInput__82542",
                 tagInputWrapper: "tagInputWrapper__7b1bc",
                 tagValidationText: "tagValidationText_ee7d11"
-            }
-        },
-        825999: function(e) {
-            "use strict";
-            e.exports = {
-                tags: "tags_ec9b5d",
-                tagsCount: "tagsCount_f1c2de",
-                traitsContainer: "traitsContainer__01c4b"
             }
         },
         661926: function(e) {
