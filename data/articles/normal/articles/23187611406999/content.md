@@ -29,15 +29,15 @@
     <li>Hardcore</li>
     <li>Very Hardcore</li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23478777481239" width="624" height="536"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23536776850967"></p>
 <p>3. (Optional) Choose the type of demographic you want to recruit to your Guild. Depending on the type of Guild you have, you can select ranks for a specific game, minimum ages, and more. Pick what best suits your Guild.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23478777485207" width="624" height="536"></p>
 <p>4. Tell people what your Guild talks about. Does everyone have a <em>HUGE </em>love of cheesecake? Does everyone listen to k-pop while gaming? Select at least 3 Traits for your Guild.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23478777494807" width="624" height="536"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23536770882967"></p>
 <p>5. You can write the discovery description for your Guild. Focus on why someone should join and what your Guild offers. You can also describe your Guild in 3 words here too. Be creative!</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23478777511319" width="624" height="536"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23536770889495"></p>
 <p>6. Create a Guild tag and badge that members will wear all over Discord to rep your Guild. Once you select a badge, you can change the color to either one of the preset color schemes or use the color picker to customize. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23480168916503" width="655" height="562"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23536770898071"></p>
 <p>7. Customize your Guild brand even further by selecting a banner color scheme or using the eyedropper tool to pick 2 colors. You can also select the banner style and pick between the following:</p>
 <ul>
     <li>Night Sky</li>
@@ -50,10 +50,9 @@
     <li>Mesh</li>
     <li>Spatter</li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23478789974423" width="624" height="536"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23536776893719"></p>
 <p>8. Set up an application for users interested in joining your Guild. You can include questions like, “why do you want to join this Guild?” Or “what’s your favorite dinosaur and why?” You can choose to make the responses be a short paragraph, a long paragraph, or multiple choice. You must have at least one question set up to proceed.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23478789996439" width="624" height="536"></p>
-<p> </p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/23536776910615"></p>
 <p>9. Now you’re done! Sign the charter and your Guild is now created. Don’t forget to don your Guild tag!</p>
 <h1 id="h_01HXW2MCD03G1R7JS55J1FGBD8">How to make Changes to your Guild</h1>
 <p>1. Navigate to the Guild you want to make changes to.</p>
