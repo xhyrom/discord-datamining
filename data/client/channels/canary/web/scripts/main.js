@@ -37067,7 +37067,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294192", ", Version Hash: ").concat("81cde0840cfecf637e5c9923360a3726b20e07c7")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294196", ", Version Hash: ").concat("53254e1377833ed9b05c4d42e136c16b86f9f509")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88307,8 +88307,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294192", "294192"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294192")), t = 0), t
+                let t = parseInt((e = "294196", "294196"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294196")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -104309,137 +104309,142 @@
                 E = n("314897"),
                 I = n("271383"),
                 T = n("594174"),
-                f = n("970606"),
-                S = n("645896"),
-                h = n("905362"),
-                A = n("353093"),
-                m = n("954138"),
-                N = n("169559"),
-                p = n("284019"),
-                O = n("981631"),
-                C = n("689938"),
-                R = n("534856");
+                f = n("87888"),
+                S = n("63063"),
+                h = n("970606"),
+                A = n("645896"),
+                m = n("905362"),
+                N = n("353093"),
+                p = n("954138"),
+                O = n("169559"),
+                C = n("284019"),
+                R = n("981631"),
+                g = n("689938"),
+                L = n("534856");
 
-            function g(e) {
+            function v(e) {
                 e.stopPropagation()
             }
             t.default = r.memo(function(e) {
                 var t;
                 let {
                     clan: n,
-                    isLoading: L,
-                    onClose: v,
-                    profileViewedAnalytics: D
-                } = e, M = null == n ? void 0 : n.identityGuildId, y = (0, S.useClanInfo)(null != M ? M : null), P = null == n ? void 0 : n.tag, U = (0, N.default)("clan_guild_profile"), b = (0, m.default)("base_clan_tag_chiplet"), G = (0, o.useStateFromStores)([E.default], () => E.default.getId()), w = (0, o.useStateFromStores)([I.default], () => null != M ? I.default.getMember(M, G) : null, [M, G]), k = (0, d.useIsDismissibleContentDismissed)(a.DismissibleContent.CLAN_TAG_WAITLIST), B = (0, o.useStateFromStores)([T.default], () => T.default.getUser(G), [G]), V = (null == w ? void 0 : w.joinedAt) != null, x = (0, A.isGuildAdoptedUserClanIdentity)(M, null == B ? void 0 : B.clan), F = null != (0, _.default)(M);
+                    isLoading: D,
+                    onClose: M,
+                    profileViewedAnalytics: y
+                } = e, P = null == n ? void 0 : n.identityGuildId, U = (0, A.useClanInfo)(null != P ? P : null), b = null == n ? void 0 : n.tag, G = (0, O.default)("clan_guild_profile"), w = (0, p.default)("base_clan_tag_chiplet"), k = (0, o.useStateFromStores)([E.default], () => E.default.getId()), B = (0, o.useStateFromStores)([I.default], () => null != P ? I.default.getMember(P, k) : null, [P, k]), V = (0, d.useIsDismissibleContentDismissed)(a.DismissibleContent.CLAN_TAG_WAITLIST), x = (0, o.useStateFromStores)([T.default], () => T.default.getUser(k), [k]), F = (null == B ? void 0 : B.joinedAt) != null, H = (0, N.isGuildAdoptedUserClanIdentity)(P, null == x ? void 0 : x.clan), Y = null != (0, _.default)(P);
                 r.useEffect(() => {
-                    null != M && (0, f.trackClanProfileViewed)({
-                        guildId: M,
-                        hasJoinRequest: F,
-                        ...D,
+                    null != P && (0, h.trackClanProfileViewed)({
+                        guildId: P,
+                        hasJoinRequest: Y,
+                        ...y,
                         location: l.default.CLAN_GUILD_PROFILE
                     })
-                }, [M, F, D]);
-                let H = r.useCallback(() => {
-                        !k && ((0, f.trackClanApplyWaitlist)({
-                            originGuildId: null == D ? void 0 : D.guildId,
-                            tagGuildId: M,
-                            messageId: null == D ? void 0 : D.messageId,
-                            tagUserId: null == D ? void 0 : D.tagUserId,
+                }, [P, Y, y]);
+                let j = r.useCallback(() => {
+                        !V && ((0, h.trackClanApplyWaitlist)({
+                            originGuildId: null == y ? void 0 : y.guildId,
+                            tagGuildId: P,
+                            messageId: null == y ? void 0 : y.messageId,
+                            tagUserId: null == y ? void 0 : y.tagUserId,
                             location: l.default.CLAN_GUILD_PROFILE
-                        }), (0, s.showToast)((0, s.createToast)(C.default.Messages.CLAN_USER_WAITLIST_TOAST_SUCCESS, s.ToastType.SUCCESS)))
-                    }, [M, k, D]),
-                    Y = r.useCallback(e => {
-                        null != M && (e.stopPropagation(), e.preventDefault(), null == v || v(), (0, h.openAdoptClanIdentityModal)(M))
-                    }, [M, v]),
-                    j = r.useCallback(e => {
-                        if (null != y && null != M) e.stopPropagation(), e.preventDefault(), null == v || v(), !F && (0, h.openClanApplyFlow)(M, y, {
-                            source: null == D ? void 0 : D.source,
-                            messageId: null == D ? void 0 : D.messageId,
-                            tagUserId: null == D ? void 0 : D.tagUserId,
+                        }), (0, s.showToast)((0, s.createToast)(g.default.Messages.CLAN_USER_WAITLIST_TOAST_SUCCESS, s.ToastType.SUCCESS)))
+                    }, [P, V, y]),
+                    W = r.useCallback(e => {
+                        null != P && (e.stopPropagation(), e.preventDefault(), null == M || M(), (0, m.openAdoptClanIdentityModal)(P))
+                    }, [P, M]),
+                    K = r.useCallback(e => {
+                        if (null != U && null != P) e.stopPropagation(), e.preventDefault(), null == M || M(), !Y && (0, m.openClanApplyFlow)(P, U, {
+                            source: null == y ? void 0 : y.source,
+                            messageId: null == y ? void 0 : y.messageId,
+                            tagUserId: null == y ? void 0 : y.tagUserId,
                             location: l.default.CLAN_GUILD_PROFILE
                         })
-                    }, [y, M, F, v, D]),
-                    W = r.useCallback(() => {
-                        null != M && (0, c.transitionTo)(O.Routes.GUILD_MEMBER_VERIFICATION(M))
-                    }, [M]),
-                    K = r.useCallback(() => {
-                        null != M && (0, c.transitionToGuild)(M)
-                    }, [M]),
-                    z = r.useMemo(() => {
+                    }, [U, P, Y, M, y]),
+                    z = r.useCallback(() => {
+                        open(S.default.getArticleURL(R.HelpdeskArticles.CLANS_FAQ))
+                    }, []),
+                    Z = r.useCallback(() => {
+                        null != P && (0, c.transitionTo)(R.Routes.GUILD_MEMBER_VERIFICATION(P))
+                    }, [P]),
+                    X = r.useCallback(() => {
+                        null != P && (0, c.transitionToGuild)(P)
+                    }, [P]),
+                    Q = r.useMemo(() => {
                         var e, t;
                         return {
                             color: s.Button.Colors.BRAND,
                             size: s.Button.Sizes.SMALL,
                             fullWidth: !0,
-                            className: R.button,
-                            themeColor: null !== (t = null == y ? void 0 : null === (e = y.branding) || void 0 === e ? void 0 : e.primaryColor) && void 0 !== t ? t : null
+                            className: L.button,
+                            themeColor: null !== (t = null == U ? void 0 : null === (e = U.branding) || void 0 === e ? void 0 : e.primaryColor) && void 0 !== t ? t : null
                         }
-                    }, [null == y ? void 0 : null === (t = y.branding) || void 0 === t ? void 0 : t.primaryColor]),
-                    Z = r.useMemo(() => {
+                    }, [null == U ? void 0 : null === (t = U.branding) || void 0 === t ? void 0 : t.primaryColor]),
+                    q = r.useMemo(() => {
                         switch (!0) {
-                            case !b:
+                            case !w:
                                 return null;
-                            case !V && !U && !k:
+                            case !F && !G && !V:
                                 return (0, i.jsx)(s.Button, {
-                                    onClick: H,
-                                    color: s.Button.Colors.PRIMARY,
-                                    size: s.Button.Sizes.SMALL,
-                                    fullWidth: !0,
-                                    children: C.default.Messages.CLAN_USER_WAITLIST_CTA
-                                });
-                            case !V && !U && k:
-                                return (0, i.jsx)(s.Button, {
-                                    onClick: H,
-                                    color: s.Button.Colors.PRIMARY,
-                                    size: s.Button.Sizes.SMALL,
-                                    fullWidth: !0,
-                                    disabled: !0,
-                                    children: C.default.Messages.CLAN_USER_WAITLISTED
-                                });
-                            case !V && F:
-                                return (0, i.jsx)(p.default, {
-                                    onClick: W,
-                                    ...z,
-                                    children: C.default.Messages.CLAN_USER_APPLICATION_EXISTS_TAG_GUILD_PROFILE_CTA
-                                });
-                            case !V:
-                                return (0, i.jsx)(p.default, {
                                     onClick: j,
-                                    ...z,
-                                    children: C.default.Messages.CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA
+                                    color: s.Button.Colors.PRIMARY,
+                                    size: s.Button.Sizes.SMALL,
+                                    fullWidth: !0,
+                                    children: g.default.Messages.CLAN_USER_WAITLIST_CTA
                                 });
-                            case V && !x:
-                                return (0, i.jsx)(p.default, {
-                                    onClick: Y,
-                                    ...z,
-                                    children: C.default.Messages.CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA
+                            case !F && !G && V:
+                                return (0, i.jsxs)(s.Button, {
+                                    innerClassName: L.waitlistedButton,
+                                    onClick: z,
+                                    color: s.Button.Colors.PRIMARY,
+                                    size: s.Button.Sizes.SMALL,
+                                    fullWidth: !0,
+                                    children: [g.default.Messages.CLAN_USER_WAITLISTED, (0, i.jsx)(f.default, {})]
                                 });
-                            case V && x:
-                                return (0, i.jsx)(p.default, {
+                            case !F && Y:
+                                return (0, i.jsx)(C.default, {
+                                    onClick: Z,
+                                    ...Q,
+                                    children: g.default.Messages.CLAN_USER_APPLICATION_EXISTS_TAG_GUILD_PROFILE_CTA
+                                });
+                            case !F:
+                                return (0, i.jsx)(C.default, {
                                     onClick: K,
-                                    ...z,
-                                    children: C.default.Messages.CLAN_USER_GO_TO_CLAN_CTA
+                                    ...Q,
+                                    children: g.default.Messages.CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA
+                                });
+                            case F && !H:
+                                return (0, i.jsx)(C.default, {
+                                    onClick: W,
+                                    ...Q,
+                                    children: g.default.Messages.CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA
+                                });
+                            case F && H:
+                                return (0, i.jsx)(C.default, {
+                                    onClick: X,
+                                    ...Q,
+                                    children: g.default.Messages.CLAN_USER_GO_TO_CLAN_CTA
                                 });
                             default:
                                 return null
                         }
-                    }, [z, Y, j, W, K, F, x, U, k, H, b, V]),
-                    X = r.useMemo(() => ({
-                        className: R.container,
-                        onClick: g
+                    }, [Q, W, K, Z, X, Y, H, G, V, j, z, w, F]),
+                    J = r.useMemo(() => ({
+                        className: L.container,
+                        onClick: v
                     }), []);
-                return null == P || null == y || null == M || L ? (0, i.jsx)("div", {
-                    ...X,
+                return null == b || null == U || null == P || D ? (0, i.jsx)("div", {
+                    ...J,
                     children: (0, i.jsx)(s.Spinner, {})
                 }) : (0, i.jsxs)("div", {
-                    ...X,
+                    ...J,
                     children: [(0, i.jsx)(u.ClanDiscoveryCardView, {
-                        clan: y,
-                        className: R.cardContainer,
-                        isMember: V
-                    }), null != Z && (0, i.jsx)("div", {
-                        className: R.buttonContainer,
-                        children: Z
+                        clan: U,
+                        className: L.cardContainer,
+                        isMember: F
+                    }), null != q && (0, i.jsx)("div", {
+                        className: L.buttonContainer,
+                        children: q
                     })]
                 })
             })
@@ -116066,8 +116071,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294192",
-                    versionHash: "81cde0840cfecf637e5c9923360a3726b20e07c7"
+                    buildNumber: "294196",
+                    versionHash: "53254e1377833ed9b05c4d42e136c16b86f9f509"
                 }
             }
             n.r(t), n.d(t, {
@@ -172679,8 +172684,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715894015576",
-                                    build_number: "294192"
+                                    built_at: "1715894404166",
+                                    build_number: "294196"
                                 }
                             },
                             retries: 1
@@ -249544,7 +249549,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "81cde0840cfecf637e5c9923360a3726b20e07c7"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "53254e1377833ed9b05c4d42e136c16b86f9f509"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -262643,6 +262648,45 @@
                     })]
                 })
             }
+        },
+        87888: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("735250");
+            n("470079");
+            var r = n("960259"),
+                a = n("882485"),
+                s = n("325767");
+            t.default = (0, r.replaceIcon)(function(e) {
+                let {
+                    width: t = 16,
+                    height: n = 16,
+                    color: r = "currentColor",
+                    foreground: a,
+                    ...o
+                } = e;
+                return (0, i.jsx)("svg", {
+                    ...(0, s.default)(o),
+                    width: t,
+                    height: n,
+                    viewBox: "0 0 24 24",
+                    children: (0, i.jsxs)("g", {
+                        fill: "none",
+                        fillRule: "evenodd",
+                        children: [(0, i.jsx)("rect", {
+                            width: "24",
+                            height: "24"
+                        }), (0, i.jsx)("path", {
+                            fill: r,
+                            className: a,
+                            d: "M9,7 L11,7 L11,5 L9,5 L9,7 Z M10,18 C5.59,18 2,14.41 2,10 C2,5.59 5.59,2 10,2 C14.41,2 18,5.59 18,10 C18,14.41 14.41,18 10,18 L10,18 Z M10,4.4408921e-16 C4.4771525,-1.77635684e-15 4.4408921e-16,4.4771525 0,10 C-1.33226763e-15,12.6521649 1.0535684,15.195704 2.92893219,17.0710678 C4.80429597,18.9464316 7.3478351,20 10,20 C12.6521649,20 15.195704,18.9464316 17.0710678,17.0710678 C18.9464316,15.195704 20,12.6521649 20,10 C20,7.3478351 18.9464316,4.80429597 17.0710678,2.92893219 C15.195704,1.0535684 12.6521649,2.22044605e-16 10,0 L10,4.4408921e-16 Z M9,15 L11,15 L11,9 L9,9 L9,15 L9,15 Z",
+                            transform: "translate(2 2)"
+                        })]
+                    })
+                })
+            }, a.CircleInformationIcon, void 0, {
+                size: 16
+            })
         },
         507893: function(e, t, n) {
             "use strict";
@@ -278591,7 +278635,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294192"
+                                build_number: "294196"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285949,7 +285993,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "294192", "294192"), 10);
+                let a = parseInt((n = "294196", "294196"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313642,4 +313686,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.9127eb360e3209e85348.js.map
+//# sourceMappingURL=71586.0a98e3c1aa5eb9a79388.js.map

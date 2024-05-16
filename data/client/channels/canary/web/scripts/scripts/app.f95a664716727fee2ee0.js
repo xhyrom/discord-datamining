@@ -5055,7 +5055,8 @@
                 buttonContainer: "buttonContainer_de2133",
                 cardContainer: "cardContainer__94a1c",
                 container: "container__86b23",
-                tooltipFooter: "tooltipFooter__11121"
+                tooltipFooter: "tooltipFooter__11121",
+                waitlistedButton: "waitlistedButton__5769e"
             }
         },
         946984: function(e) {
