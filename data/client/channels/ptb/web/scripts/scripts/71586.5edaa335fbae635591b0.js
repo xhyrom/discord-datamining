@@ -37067,7 +37067,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("293995", ", Version Hash: ").concat("34af84aa058f52c99a7b59a8782b31a0597e196f")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294000", ", Version Hash: ").concat("e835a6439e4fd115dc54f5311fdcb30743b02b18")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88298,8 +88298,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "293995", "293995"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("293995")), t = 0), t
+                let t = parseInt((e = "294000", "294000"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294000")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -115981,8 +115981,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "293995",
-                    versionHash: "34af84aa058f52c99a7b59a8782b31a0597e196f"
+                    buildNumber: "294000",
+                    versionHash: "e835a6439e4fd115dc54f5311fdcb30743b02b18"
                 }
             }
             n.r(t), n.d(t, {
@@ -172591,8 +172591,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715876952280",
-                                    build_number: "293995"
+                                    built_at: "1715877516552",
+                                    build_number: "294000"
                                 }
                             },
                             retries: 1
@@ -212637,14 +212637,14 @@
                 a = n("124597"),
                 s = n("657147"),
                 o = n("97910"),
-                l = n("481060"),
-                u = n("194359"),
-                d = n("906732"),
-                _ = n("822972"),
-                c = n("314897"),
-                E = n("699516"),
-                I = n("465670"),
-                T = n("782089"),
+                l = n("780014"),
+                u = n("481060"),
+                d = n("194359"),
+                _ = n("906732"),
+                c = n("822972"),
+                E = n("314897"),
+                I = n("699516"),
+                T = n("465670"),
                 f = n("785717"),
                 S = n("537387"),
                 h = n("981631"),
@@ -212656,10 +212656,10 @@
                     friendToken: n
                 } = e, {
                     trackUserProfileAction: m
-                } = (0, f.useUserProfileAnalyticsContext)(), N = (0, r.useStateFromStores)([c.default], () => c.default.getId() === (null == t ? void 0 : t.id)), p = (0, r.useStateFromStores)([E.default], () => null != t ? E.default.getRelationshipType(t.id) : h.RelationshipTypes.NONE), {
+                } = (0, f.useUserProfileAnalyticsContext)(), N = (0, r.useStateFromStores)([E.default], () => E.default.getId() === (null == t ? void 0 : t.id)), p = (0, r.useStateFromStores)([I.default], () => null != t ? I.default.getRelationshipType(t.id) : h.RelationshipTypes.NONE), {
                     analyticsLocations: O,
                     newestAnalyticsLocation: C
-                } = (0, d.default)(), R = (0, _.default)({
+                } = (0, _.default)(), R = (0, c.default)({
                     user: t,
                     color: "danger",
                     location: C,
@@ -212668,12 +212668,12 @@
                         analyticsLocations: O
                     })
                 });
-                return null == t || t.bot || N || p === h.RelationshipTypes.BLOCKED ? null : p === h.RelationshipTypes.FRIEND ? (0, i.jsx)(l.Popout, {
+                return null == t || t.bot || N || p === h.RelationshipTypes.BLOCKED ? null : p === h.RelationshipTypes.FRIEND ? (0, i.jsx)(u.Popout, {
                     renderPopout: e => {
                         let {
                             closePopout: t
                         } = e;
-                        return (0, i.jsx)(l.Menu, {
+                        return (0, i.jsx)(u.Menu, {
                             navId: "user-profile-friend-request-buttons",
                             onSelect: void 0,
                             onClose: t,
@@ -212690,24 +212690,24 @@
                     children: [(0, i.jsx)(S.default, {
                         icon: e => (0, i.jsx)(a.CheckmarkLargeIcon, {
                             ...e,
-                            color: l.tokens.colors.TEXT_BRAND
+                            color: u.tokens.colors.TEXT_BRAND
                         }),
                         text: A.default.Messages.ACCEPT_FRIEND_REQUEST,
                         onClick: () => {
                             m({
                                 action: "ACCEPT_FRIEND_REQUEST"
-                            }), u.default.addRelationship({
+                            }), d.default.addRelationship({
                                 userId: t.id,
                                 friendToken: n
                             })
                         }
                     }), (0, i.jsx)(S.default, {
-                        icon: I.default,
+                        icon: T.default,
                         text: A.default.Messages.IGNORE_FRIEND_REQUEST,
                         onClick: () => {
                             m({
                                 action: "IGNORE_FRIEND_REQUEST"
-                            }), u.default.cancelFriendRequest(t.id)
+                            }), d.default.cancelFriendRequest(t.id)
                         }
                     })]
                 }) : p === h.RelationshipTypes.PENDING_OUTGOING ? (0, i.jsx)(S.default, {
@@ -212715,12 +212715,12 @@
                     text: A.default.Messages.REQUEST_SENT,
                     disabled: !0
                 }) : (0, i.jsx)(S.default, {
-                    icon: T.default,
+                    icon: l.UserPlusIcon,
                     text: A.default.Messages.ADD_FRIEND,
                     onClick: () => {
                         m({
                             action: "SEND_FRIEND_REQUEST"
-                        }), u.default.addRelationship({
+                        }), d.default.addRelationship({
                             userId: t.id,
                             friendToken: n
                         })
@@ -249345,7 +249345,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "34af84aa058f52c99a7b59a8782b31a0597e196f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "e835a6439e4fd115dc54f5311fdcb30743b02b18"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -264500,57 +264500,6 @@
                 size: 24
             })
         },
-        782089: function(e, t, n) {
-            "use strict";
-            n.r(t);
-            var i = n("735250");
-            n("470079");
-            var r = n("960259"),
-                a = n("780014"),
-                s = n("325767");
-            t.default = (0, r.replaceIcon)(function(e) {
-                let {
-                    width: t = 24,
-                    height: n = 24,
-                    color: r = "currentColor",
-                    foreground: a,
-                    ...o
-                } = e;
-                return 16 === t || 16 === n ? (0, i.jsxs)("svg", {
-                    ...(0, s.default)(o),
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 16 16",
-                    children: [(0, i.jsx)("path", {
-                        className: a,
-                        fill: r,
-                        d: "M14 2H16V3H14V5H13V3H11V2H13V0H14V2Z"
-                    }), (0, i.jsx)("path", {
-                        className: a,
-                        fill: r,
-                        d: "M6.5 8.00667C7.88 8.00667 9 6.88667 9 5.50667C9 4.12667 7.88 3.00667 6.5 3.00667C5.12 3.00667 4 4.12667 4 5.50667C4 6.88667 5.12 8.00667 6.5 8.00667Z"
-                    }), (0, i.jsx)("path", {
-                        className: a,
-                        fill: r,
-                        d: "M6.5 8.34C3.26 8.34 1 9.98666 1 12.34V13.0067H12V12.34C12 9.98 9.74 8.34 6.5 8.34Z"
-                    })]
-                }) : (0, i.jsx)("svg", {
-                    ...(0, s.default)(o),
-                    width: t,
-                    height: n,
-                    viewBox: "0 0 24 24",
-                    children: (0, i.jsx)("path", {
-                        className: a,
-                        fill: r,
-                        fillRule: "evenodd",
-                        clipRule: "evenodd",
-                        d: "M21 3H24V5H21V8H19V5H16V3H19V0H21V3ZM10 12C12.205 12 14 10.205 14 8C14 5.795 12.205 4 10 4C7.795 4 6 5.795 6 8C6 10.205 7.795 12 10 12ZM10 13C5.289 13 2 15.467 2 19V20H18V19C18 15.467 14.711 13 10 13Z"
-                    })
-                })
-            }, a.UserPlusIcon, void 0, {
-                size: 24
-            })
-        },
         432247: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -278354,7 +278303,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "293995"
+                                build_number: "294000"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285712,7 +285661,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "293995", "293995"), 10);
+                let a = parseInt((n = "294000", "294000"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313393,4 +313342,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.33042f3cbf796ccc472e.js.map
+//# sourceMappingURL=71586.5edaa335fbae635591b0.js.map
