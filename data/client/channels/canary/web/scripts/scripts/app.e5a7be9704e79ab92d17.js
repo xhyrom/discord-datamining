@@ -4978,11 +4978,11 @@
                 chat: "chat_da0bee",
                 chatHeader: "chatHeader__9dfc0",
                 chiplet: "chiplet__77325",
-                footerText: "footerText__55c70",
-                footerTextContainer: "footerTextContainer__68455",
                 headerTextContainer: "headerTextContainer_e5ac08",
                 infoContainer: "infoContainer_d6d5d7",
                 mainContainer: "mainContainer__9d423",
+                modal: "modal__4a752",
+                modalFooter: "modalFooter__715d5",
                 roleContainer: "roleContainer__89192",
                 skeletonChatBody: "skeletonChatBody__87e20",
                 skeletonChatContainer: "skeletonChatContainer__07b95"
@@ -5110,6 +5110,18 @@
                 statusDanger: "statusDanger__3c2dd",
                 tooltip: "tooltip_b69b2e",
                 tooltipContents: "tooltipContents__7694a"
+            }
+        },
+        182976: function(e) {
+            "use strict";
+            e.exports = {
+                chatPreview: "chatPreview_b035d6",
+                divider: "divider__15ffb",
+                fakeMessage: "fakeMessage__6740a",
+                previewSection: "previewSection_e0dc08",
+                previewText: "previewText__5904d",
+                settingSection: "settingSection__8b3ea",
+                userName: "userName__1f744"
             }
         },
         53408: function(e) {

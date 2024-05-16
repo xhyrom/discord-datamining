@@ -37067,7 +37067,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294020", ", Version Hash: ").concat("41e6f75fba9864bce3f27b78da6b1f97cf9e143d")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294024", ", Version Hash: ").concat("5c044d22ec79c6672d3af35180f1c8a6199db98c")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56144,11 +56144,17 @@
                 CLAN_USER_ADOPT_TAG_UPSELL_TITLE: "{guildName} - Tag Up!",
                 CLAN_USER_ADOPT_TAG_UPSELL_ARIA_LABEL: "Adopt the {guildName} guild tag as part of your identity",
                 CLAN_USER_ADOPT_TAG_UPSELL_DESCRIPTION: "Rep your guild everywhere",
-                CLAN_USER_ADOPT_TAG_MODAL_HEADING: "{guildName} Tag Up",
+                CLAN_USER_ADOPT_TAG_NEW_IDENTITY_TITLE: "{guildName} - New Tag!",
+                CLAN_USER_ADOPT_TAG_NEW_IDENTITY_ARIA_LABEL: "A new tag is available for {guildName}",
+                CLAN_USER_ADOPT_TAG_NEW_IDENTITY_DESCRIPTION: "An update to your tag is available",
+                CLAN_USER_ADOPT_TAG_MODAL_HEADING: "**{guildName}**\n\nis now a guild",
                 CLAN_USER_ADOPT_TAG_MODAL_DESCRIPTION: "{guildName} adopted a new guild tag, and you can now rep this server everywhere you chat.",
+                CLAN_USER_ADOPT_TAG_MODAL_NEW_IDENTITY_HEADING: "**{guildName}**\n\nhas changed their tag",
+                CLAN_USER_ADOPT_TAG_MODAL_NEW_IDENTITY_DESCRIPTION: "A new tag is available for {guildName}. Would you like to adopt it?",
                 CLAN_USER_ADOPT_TAG_MODAL_FEATURE: "Wear this tag everywhere",
                 CLAN_USER_ADOPT_TAG_MODAL_FEATURE_CALLOUT: "You can always change your tag in User Profile",
                 CLAN_USER_ADOPT_TAG_MODAL_CTA: "Adopt Tag",
+                CLAN_USER_ADOPT_TAG_MODAL_NEW_IDENTITY_CTA: "Update Tag",
                 CLAN_USER_ADOPT_TAG_MODAL_CANCEL: "Not Now",
                 CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA: "Don The Tag",
                 CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA: "Apply To Join",
@@ -88298,8 +88304,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294020", "294020"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294020")), t = 0), t
+                let t = parseInt((e = "294024", "294024"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294024")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103909,57 +103915,65 @@
             "use strict";
             n.r(t), n.d(t, {
                 getAccessibleClanColor: function() {
-                    return I
+                    return f
                 },
                 getAccessibleTextColor: function() {
-                    return c
+                    return I
                 },
                 getClanPrimaryButtonStyles: function() {
-                    return T
+                    return S
+                },
+                getClanRadialBackgroundStyle: function() {
+                    return A
+                },
+                useBrandColor: function() {
+                    return h
                 }
-            });
-            var i = n("688619"),
-                r = n.n(i),
-                a = n("392711"),
-                s = n.n(a),
-                o = n("780384"),
-                l = n("481060"),
-                u = n("564334"),
-                d = n("302221"),
-                _ = n("308083");
+            }), n("47120");
+            var i = n("470079"),
+                r = n("688619"),
+                a = n.n(r),
+                s = n("392711"),
+                o = n.n(s),
+                l = n("780384"),
+                u = n("481060"),
+                d = n("410030"),
+                _ = n("564334"),
+                c = n("302221"),
+                E = n("308083");
 
-            function c(e) {
-                let t = r()(e),
+            function I(e) {
+                let t = a()(e),
                     n = t.get("rgb.r"),
                     i = t.get("rgb.g"),
-                    a = t.get("rgb.b");
-                return (299 * n + 587 * i + 114 * a) / 1e3 < 128 ? l.tokens.colors.HEADER_PRIMARY.resolve({
+                    r = t.get("rgb.b");
+                return (299 * n + 587 * i + 114 * r) / 1e3 < 128 ? u.tokens.colors.HEADER_PRIMARY.resolve({
                     theme: "dark",
                     saturation: 1
-                }) : l.tokens.colors.HEADER_PRIMARY.resolve({
+                }) : u.tokens.colors.HEADER_PRIMARY.resolve({
                     theme: "light",
                     saturation: 1
                 })
             }
 
-            function E(e) {
-                return new u.default(e.get("rgb.r"), e.get("rgb.g"), e.get("rgb.b"), e.alpha())
+            function T(e) {
+                return new _.default(e.get("rgb.r"), e.get("rgb.g"), e.get("rgb.b"), e.alpha())
             }
 
-            function I(e, t) {
+            function f(e, t) {
                 var n;
-                let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : o.WCAGContrastRatios.Text;
+                let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : l.WCAGContrastRatios.Text;
                 if (null == e) return;
-                let a = null !== (n = function(e) {
+                let r = null !== (n = function(e) {
                         var t;
-                        let n = r()(e);
-                        return null === (t = s()(_.CLAN_BRAND_PALETTE_PRESETS).map(e => {
+                        let n = a()(e);
+                        return null === (t = o()(E.CLAN_BRAND_PALETTE_PRESETS).map(e => {
                             let {
                                 primary: t
                             } = e;
                             return {
                                 primary: t,
-                                distance: r().distance(n, r()(t), "hsl")
+                                distance: a().distance(n, a()(t), "hsl")
                             }
                         }).filter(e => {
                             let {
@@ -103973,20 +103987,20 @@
                             return t
                         })) || void 0 === t ? void 0 : t.primary
                     }(e)) && void 0 !== n ? n : e,
-                    l = r()(a),
-                    u = r()(t),
-                    c = (0, d.getAccessibleColor)({
-                        colors: [E(l), E(u)],
+                    s = a()(r),
+                    u = a()(t),
+                    d = (0, c.getAccessibleColor)({
+                        colors: [T(s), T(u)],
                         ratio: i,
                         saturationFactor: 1
                     });
-                if (null != c) return r()(c.toHexString())
+                if (null != d) return a()(d.toHexString())
             }
 
-            function T(e, t) {
+            function S(e, t) {
                 let n = function(e, t) {
                     if (null == e) return;
-                    let n = I(e, t, o.WCAGContrastRatios.NonText);
+                    let n = f(e, t, l.WCAGContrastRatios.NonText);
                     if (null == n) return;
                     let i = .2 > n.luminance() ? n.brighten(.3) : n.darken(.3),
                         r = .2 > n.luminance() ? n.brighten(.35) : n.darken(.35);
@@ -103998,28 +104012,52 @@
                 }(e, t);
                 if (null == n) return;
                 let i = {
-                    "--custom-clan-text": c(n["--custom-clan-bg"]).hex()
+                    "--custom-clan-text": I(n["--custom-clan-bg"]).hex()
                 };
                 return {
                     ...n,
                     ...i
                 }
             }
+
+            function h(e, t) {
+                let [n, r = 1] = t, a = (0, d.default)();
+                return i.useMemo(() => null != e ? e : n.resolve({
+                    theme: a,
+                    saturation: r
+                }).hex(), [e, n, r, a])
+            }
+
+            function A(e, t) {
+                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "top left",
+                    i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : .3,
+                    r = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "50%";
+                if (null == e) return;
+                let s = a()(e),
+                    o = {
+                        background: "\n      radial-gradient(\n        circle at ".concat(n, ",\n        ").concat(s.alpha(i).hex(), " 0%,\n        transparent ").concat(r, "\n      )\n    ")
+                    };
+                if (null != t) {
+                    let e = a()(t);
+                    o.background += ", ".concat(e.hex())
+                }
+                return o
+            }
         },
         353093: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 formatSelectionList: function() {
-                    return c
+                    return E
                 },
                 getClanBadgeUrl: function() {
-                    return I
-                },
-                getClanBadgeUrlFromClan: function() {
                     return T
                 },
-                getClanBannerUrl: function() {
+                getClanBadgeUrlFromClan: function() {
                     return f
+                },
+                getClanBannerUrl: function() {
+                    return S
                 },
                 getUserClanData: function() {
                     return u
@@ -104028,6 +104066,9 @@
                     return d
                 },
                 isGuildAdoptedUserClanIdentity: function() {
+                    return c
+                },
+                isGuildAdoptedUserClanIdentityChanged: function() {
                     return _
                 },
                 stableSortSet: function() {
@@ -104061,9 +104102,14 @@
             }
 
             function _(e, t) {
+                var n, i;
+                return null != t && t.identityGuildId === (null == e ? void 0 : e.id) && ((null == e ? void 0 : null === (n = e.clan) || void 0 === n ? void 0 : n.tag) != null && (null == e ? void 0 : null === (i = e.clan) || void 0 === i ? void 0 : i.tag) !== t.tag || null == t.identityEnabled)
+            }
+
+            function c(e, t) {
                 return null != e && null != t && null != t.identityGuildId && t.identityGuildId === e && !!t.identityEnabled || !1
             }
-            let c = (e, t) => {
+            let E = (e, t) => {
                     if (0 === e.length) return null;
                     if (1 === e.length) return e[1];
                     if (2 === e.length) return o.default.Messages.CLAN_OVERVIEW_LIST_TWO_ITEMS.format({
@@ -104088,7 +104134,7 @@
                         })
                     }
                 },
-                E = {
+                I = {
                     [a.ClanTagBadgeSize.SIZE_12]: 16,
                     [a.ClanTagBadgeSize.SIZE_16]: 16,
                     [a.ClanTagBadgeSize.SIZE_24]: 24,
@@ -104096,20 +104142,20 @@
                     [a.ClanTagBadgeSize.SIZE_36]: 40
                 };
 
-            function I(e, t) {
+            function T(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : a.ClanTagBadgeSize.SIZE_12;
                 if (null == t) return;
                 let {
                     CDN_HOST: i
                 } = window.GLOBAL_ENV;
-                if (null != i) return "".concat(location.protocol, "//").concat(i, "/clan-badges/").concat(e, "/").concat(t, ".png?size=").concat(E[n])
-            }
-
-            function T(e, t) {
-                if (null != e && null != e.identityGuildId) return I(e.identityGuildId, e.badge, t)
+                if (null != i) return "".concat(location.protocol, "//").concat(i, "/clan-badges/").concat(e, "/").concat(t, ".png?size=").concat(I[n])
             }
 
             function f(e, t) {
+                if (null != e && null != e.identityGuildId) return T(e.identityGuildId, e.badge, t)
+            }
+
+            function S(e, t) {
                 if (null == t) return;
                 let {
                     CDN_HOST: n
@@ -115981,8 +116027,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294020",
-                    versionHash: "41e6f75fba9864bce3f27b78da6b1f97cf9e143d"
+                    buildNumber: "294024",
+                    versionHash: "5c044d22ec79c6672d3af35180f1c8a6199db98c"
                 }
             }
             n.r(t), n.d(t, {
@@ -172591,8 +172637,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715880316690",
-                                    build_number: "294020"
+                                    built_at: "1715880781334",
+                                    build_number: "294024"
                                 }
                             },
                             retries: 1
@@ -249345,7 +249391,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "41e6f75fba9864bce3f27b78da6b1f97cf9e143d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5c044d22ec79c6672d3af35180f1c8a6199db98c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278303,7 +278349,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294020"
+                                build_number: "294024"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285661,7 +285707,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "294020", "294020"), 10);
+                let a = parseInt((n = "294024", "294024"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313342,4 +313388,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.98399f1f50bf26626310.js.map
+//# sourceMappingURL=71586.1b059dd52bd045e0f412.js.map
