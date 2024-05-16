@@ -37054,7 +37054,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294268", ", Version Hash: ").concat("6acac6fdce303d0d65ebd62fa155761fc4fd3d4a")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294281", ", Version Hash: ").concat("270328fce2a815008d87195c33727396ad44360f")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88289,8 +88289,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294268", "294268"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294268")), t = 0), t
+                let t = parseInt((e = "294281", "294281"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294281")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116053,8 +116053,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294268",
-                    versionHash: "6acac6fdce303d0d65ebd62fa155761fc4fd3d4a"
+                    buildNumber: "294281",
+                    versionHash: "270328fce2a815008d87195c33727396ad44360f"
                 }
             }
             n.r(t), n.d(t, {
@@ -172690,8 +172690,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715898658404",
-                                    build_number: "294268"
+                                    built_at: "1715900584868",
+                                    build_number: "294281"
                                 }
                             },
                             retries: 1
@@ -211762,95 +211762,94 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return O
+                    return N
                 }
             });
             var i = n("735250");
             n("470079");
-            var r = n("120356"),
-                a = n.n(r),
-                s = n("243814"),
-                o = n("481060"),
-                l = n("239091"),
-                u = n("311819"),
-                d = n("69580"),
-                _ = n("556084"),
-                c = n("592125"),
-                E = n("944486"),
-                I = n("682864"),
-                T = n("441957"),
-                f = n("151785"),
-                S = n("572004"),
-                h = n("591759"),
-                A = n("135431"),
-                m = n("981631"),
-                N = n("689938"),
-                p = n("731208");
+            var r = n("243814"),
+                a = n("481060"),
+                s = n("239091"),
+                o = n("311819"),
+                l = n("69580"),
+                u = n("556084"),
+                d = n("592125"),
+                _ = n("944486"),
+                c = n("682864"),
+                E = n("441957"),
+                I = n("151785"),
+                T = n("572004"),
+                f = n("591759"),
+                S = n("135431"),
+                h = n("981631"),
+                A = n("689938"),
+                m = n("731208");
 
-            function O(e) {
+            function N(e) {
                 var t;
                 let {
                     application: n,
-                    className: r
-                } = e, O = c.default.getChannel(E.default.getChannelId()), {
-                    appsInGDMEnabled: C,
-                    availableApplications: R
-                } = (0, _.usePrivateChannelIntegrationState)({
-                    channelId: null !== (t = null == O ? void 0 : O.id) && void 0 !== t ? t : m.EMPTY_STRING_SNOWFLAKE_ID
+                    className: N
+                } = e, p = d.default.getChannel(_.default.getChannelId()), {
+                    appsInGDMEnabled: O,
+                    availableApplications: C
+                } = (0, u.usePrivateChannelIntegrationState)({
+                    channelId: null !== (t = null == p ? void 0 : p.id) && void 0 !== t ? t : h.EMPTY_STRING_SNOWFLAKE_ID
                 });
-                if (null == n || !(0, A.canInstallApplication)({
+                if (!(0, S.canInstallApplication)({
                         customInstallUrl: n.customInstallUrl,
                         installParams: n.installParams,
                         integrationTypesConfig: n.integrationTypesConfig
                     })) return null;
-                let g = C && null != R.find(e => e.id === (null == n ? void 0 : n.id));
-                return (0, i.jsx)(o.Button, {
-                    color: o.Button.Colors.PRIMARY,
-                    look: o.Button.Looks.FILLED,
-                    size: o.Button.Sizes.SMALL,
-                    onContextMenu: S.SUPPORTS_COPY ? e => {
-                        (0, l.openContextMenu)(e, e => (0, i.jsx)(o.Menu, {
+                let R = O && null != C.find(e => e.id === (null == n ? void 0 : n.id)),
+                    g = null != n.customInstallUrl && !f.default.isDiscordUrl(n.customInstallUrl);
+                return (0, i.jsx)(a.Button, {
+                    color: a.Button.Colors.PRIMARY,
+                    look: a.Button.Looks.FILLED,
+                    size: a.Button.Sizes.SMALL,
+                    onContextMenu: T.SUPPORTS_COPY ? e => {
+                        (0, s.openContextMenu)(e, e => (0, i.jsx)(a.Menu, {
                             navId: "component-button",
-                            onClose: l.closeContextMenu,
-                            "aria-label": N.default.Messages.APPLICATION_ADD_BUTTON_ACTIONS,
+                            onClose: s.closeContextMenu,
+                            "aria-label": A.default.Messages.APPLICATION_ADD_BUTTON_ACTIONS,
                             onSelect: void 0,
                             ...e,
-                            children: (0, i.jsx)(o.MenuGroup, {
-                                children: (0, i.jsx)(o.MenuItem, {
+                            children: (0, i.jsx)(a.MenuGroup, {
+                                children: (0, i.jsx)(a.MenuItem, {
                                     id: "copy",
-                                    label: N.default.Messages.APPLICATION_ADD_BUTTON_ACTIONS_COPY,
-                                    action: () => (0, S.copy)((0, u.getApplicationInstallURL)(n))
+                                    label: A.default.Messages.APPLICATION_ADD_BUTTON_ACTIONS_COPY,
+                                    action: () => (0, T.copy)((0, o.getApplicationInstallURL)(n))
                                 })
                             })
                         }))
                     } : void 0,
                     onClick: () => {
-                        g ? (0, d.openOAuth2Modal)({
+                        R ? (0, l.openOAuth2Modal)({
                             clientId: n.id,
-                            scopes: [s.OAuth2Scopes.APPLICATIONS_COMMANDS],
-                            channelId: O.id,
+                            scopes: [r.OAuth2Scopes.APPLICATIONS_COMMANDS],
+                            channelId: p.id,
                             disableGuildSelect: !0
-                        }) : (0, A.installApplication)({
+                        }) : (0, S.installApplication)({
                             applicationId: n.id,
                             customInstallUrl: n.customInstallUrl,
                             installParams: n.installParams,
                             integrationTypesConfig: n.integrationTypesConfig
                         })
                     },
-                    className: a()(p.__invalid_applicationInstallButton, r),
+                    className: N,
                     children: (0, i.jsxs)("div", {
-                        className: p.applicationInstallButtonContent,
-                        children: [(0, i.jsx)(f.default, {
+                        className: m.applicationInstallButtonContent,
+                        children: [!g && (0, i.jsx)(I.default, {
                             width: 16,
                             height: 16
-                        }), (0, i.jsx)(I.default, {
+                        }), (0, i.jsx)(c.default, {
                             size: 4,
                             horizontal: !0
                         }), (0, i.jsx)("span", {
-                            className: p.applicationInstallButtonText,
-                            children: g ? N.default.Messages.ADD : N.default.Messages.APPLICATION_ADD_BUTTON
-                        }), null == n.customInstallUrl || h.default.isDiscordUrl(n.customInstallUrl) ? null : (0, i.jsx)(T.default, {
-                            className: p.launchIcon,
+                            className: m.applicationInstallButtonText,
+                            children: R ? A.default.Messages.ADD : A.default.Messages.APPLICATION_ADD_BUTTON
+                        }), g && (0, i.jsx)(E.default, {
+                            className: m.launchIcon,
                             width: 16,
                             height: 16
                         })]
@@ -215972,14 +215971,14 @@
                     var e;
                     return null === (e = l.default.getUserProfile(n.id)) || void 0 === e ? void 0 : e.application
                 }), u = (0, s.useAppStorefrontAvailable)(null !== (t = null == o ? void 0 : o.id) && void 0 !== t ? t : "");
-                return (0, i.jsx)(_.default, {
+                return null == o ? null : (0, i.jsx)(_.default, {
                     children: (0, i.jsxs)("div", {
                         className: c.buttonsContainer,
                         children: [(0, i.jsx)(d.default, {
                             application: o,
                             className: c.button
-                        }), u && (0, i.jsx)(I, {
-                            app: o,
+                        }), u && null != a && (0, i.jsx)(I, {
+                            application: o,
                             user: n,
                             guildId: a
                         })]
@@ -215990,14 +215989,14 @@
             function I(e) {
                 var t;
                 let {
-                    app: r,
+                    application: r,
                     user: s,
                     guildId: l
                 } = e, d = null !== (t = (0, u.default)({
                     user: s,
                     guildId: l
                 }).subscriptionGroupListing) && void 0 !== t ? t : void 0;
-                return null == r || null == l ? null : (0, i.jsx)(o.StorefrontButton, {
+                return (0, i.jsx)(o.StorefrontButton, {
                     onClick: () => (function(e, t, r) {
                         (0, a.openModalLazy)(async () => {
                             let {
@@ -249514,7 +249513,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "6acac6fdce303d0d65ebd62fa155761fc4fd3d4a"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "270328fce2a815008d87195c33727396ad44360f"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278600,7 +278599,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294268"
+                                build_number: "294281"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285958,7 +285957,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "294268", "294268"), 10);
+                let a = parseInt((n = "294281", "294281"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313660,4 +313659,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.4c8a88226ebeb7381c44.js.map
+//# sourceMappingURL=71586.041075f28c6eb4650aab.js.map
