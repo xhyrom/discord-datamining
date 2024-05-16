@@ -21525,7 +21525,7 @@
                 r = n("470079"),
                 a = n("120356"),
                 s = n.n(a),
-                o = n("685626"),
+                o = n("920906"),
                 l = n("1561"),
                 u = n("438784"),
                 d = n("696826"),
@@ -22224,7 +22224,7 @@
                 u = n("96355"),
                 d = n("47759"),
                 _ = n.n(d),
-                c = n("685626"),
+                c = n("920906"),
                 E = n("153832"),
                 I = n("722770"),
                 T = n("846519"),
@@ -23290,7 +23290,7 @@
                 r = n("470079"),
                 a = n("120356"),
                 s = n.n(a),
-                o = n("685626"),
+                o = n("920906"),
                 l = n("442837"),
                 u = n("393238"),
                 d = n("607070"),
@@ -23867,7 +23867,7 @@
                 r = n("470079"),
                 a = n("120356"),
                 s = n.n(a),
-                o = n("685626"),
+                o = n("920906"),
                 l = n("122274");
 
             function u() {
@@ -23995,7 +23995,7 @@
             });
             var i = n("735250"),
                 r = n("470079"),
-                a = n("685626"),
+                a = n("920906"),
                 s = n("442837"),
                 o = n("710593"),
                 l = n("993365"),
@@ -29400,7 +29400,7 @@
                 s = n("470079"),
                 o = n("120356"),
                 l = n.n(o),
-                u = n("685626"),
+                u = n("920906"),
                 d = n("990547"),
                 _ = n("748780"),
                 c = n("186325"),
@@ -33639,7 +33639,7 @@
             });
             var i = n("735250"),
                 r = n("470079"),
-                a = n("685626"),
+                a = n("920906"),
                 s = n("990547"),
                 o = n("873546"),
                 l = n("186325"),
@@ -33914,7 +33914,7 @@
                 r = n("470079"),
                 a = n("120356"),
                 s = n.n(a),
-                o = n("685626"),
+                o = n("920906"),
                 l = n("780384"),
                 u = n("44315"),
                 d = n("806519"),
@@ -34191,7 +34191,7 @@
                 r = n("470079"),
                 a = n("120356"),
                 s = n.n(a),
-                o = n("685626"),
+                o = n("920906"),
                 l = n("692547"),
                 u = n("186325"),
                 d = n("84735"),
@@ -35112,7 +35112,7 @@
                 a = n("470079"),
                 s = n("120356"),
                 o = n.n(s),
-                l = n("685626"),
+                l = n("920906"),
                 u = n("84735"),
                 d = n("15127"),
                 _ = n("993365"),
@@ -35479,7 +35479,7 @@
             });
             var i = n("735250"),
                 r = n("470079"),
-                a = n("685626"),
+                a = n("920906"),
                 s = n("442837"),
                 o = n("607070"),
                 l = n("345332"),
@@ -35605,7 +35605,7 @@
                 u = n.n(l),
                 d = n("699581"),
                 _ = n.n(d),
-                c = n("685626"),
+                c = n("920906"),
                 E = n("873546"),
                 I = n("374470"),
                 T = n("846519"),
@@ -37067,7 +37067,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294003", ", Version Hash: ").concat("7019d211ac472fbeec59eb2f7d92221ab4f94572")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294150", ", Version Hash: ").concat("efd60b0fc4117dd6352c5c65b3a5f4251f6fd723")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -37583,7 +37583,7 @@
                 TextComponentStyle: function() {
                     return I
                 }
-            }), (A = i || (i = {}))[A.ROLE = 0] = "ROLE", A[A.MEMBER = 1] = "MEMBER", (m = r || (r = {})).IOS = "ios", m.ANDROID = "android", m.WEB = "web", (N = a || (a = {}))[N.NONE = 0] = "NONE", N[N.NEW = 1] = "NEW", N[N.UPDATED = 2] = "UPDATED", (p = s || (s = {}))[p.MEDIA_PROXY = 1] = "MEDIA_PROXY", p[p.YOUTUBE = 2] = "YOUTUBE", (O = o || (o = {}))[O.GUILD = 0] = "GUILD", O[O.BOT_DM = 1] = "BOT_DM", O[O.PRIVATE_CHANNEL = 2] = "PRIVATE_CHANNEL", (C = l || (l = {}))[C.NO_INTERCEPT = 1] = "NO_INTERCEPT", C[C.LAUNCH_ACTIVITY_INTERCEPT = 2] = "LAUNCH_ACTIVITY_INTERCEPT", (R = u || (u = {}))[R.SUB_COMMAND = 1] = "SUB_COMMAND", R[R.SUB_COMMAND_GROUP = 2] = "SUB_COMMAND_GROUP", R[R.STRING = 3] = "STRING", R[R.INTEGER = 4] = "INTEGER", R[R.BOOLEAN = 5] = "BOOLEAN", R[R.USER = 6] = "USER", R[R.CHANNEL = 7] = "CHANNEL", R[R.ROLE = 8] = "ROLE", R[R.MENTIONABLE = 9] = "MENTIONABLE", R[R.NUMBER = 10] = "NUMBER", R[R.ATTACHMENT = 11] = "ATTACHMENT", (g = d || (d = {}))[g.CHAT = 1] = "CHAT", g[g.USER = 2] = "USER", g[g.MESSAGE = 3] = "MESSAGE", g[g.PRIMARY_ENTRY_POINT = 4] = "PRIMARY_ENTRY_POINT", (L = _ || (_ = {}))[L.APPLICATION_COMMAND = 2] = "APPLICATION_COMMAND", L[L.MESSAGE_COMPONENT = 3] = "MESSAGE_COMPONENT", L[L.APPLICATION_COMMAND_AUTOCOMPLETE = 4] = "APPLICATION_COMMAND_AUTOCOMPLETE", L[L.MODAL_SUBMIT = 5] = "MODAL_SUBMIT", (v = c || (c = {}))[v.ACTION_ROW = 1] = "ACTION_ROW", v[v.BUTTON = 2] = "BUTTON", v[v.STRING_SELECT = 3] = "STRING_SELECT", v[v.INPUT_TEXT = 4] = "INPUT_TEXT", v[v.USER_SELECT = 5] = "USER_SELECT", v[v.ROLE_SELECT = 6] = "ROLE_SELECT", v[v.MENTIONABLE_SELECT = 7] = "MENTIONABLE_SELECT", v[v.CHANNEL_SELECT = 8] = "CHANNEL_SELECT", v[v.TEXT = 10] = "TEXT", v[v.MEDIA_GALLERY = 12] = "MEDIA_GALLERY", v[v.SEPARATOR = 14] = "SEPARATOR", (D = E || (E = {}))[D.PRIMARY = 1] = "PRIMARY", D[D.SECONDARY = 2] = "SECONDARY", D[D.SUCCESS = 3] = "SUCCESS", D[D.DESTRUCTIVE = 4] = "DESTRUCTIVE", D[D.LINK = 5] = "LINK", (M = I || (I = {}))[M.SMALL = 1] = "SMALL", M[M.PARAGRAPH = 2] = "PARAGRAPH", (y = T || (T = {}))[y.SMALL = 1] = "SMALL", y[y.LARGE = 2] = "LARGE", (P = f || (f = {}))[P.SUBSCRIPTION_PLAN = 1] = "SUBSCRIPTION_PLAN", P[P.ENTITLEMENT = 2] = "ENTITLEMENT", P[P.PREMIUM_LEGACY_UPGRADE_PROMOTION = 3] = "PREMIUM_LEGACY_UPGRADE_PROMOTION", P[P.PREMIUM_TRIAL = 4] = "PREMIUM_TRIAL", (U = S || (S = {}))[U.GUILD_PRODUCT = 0] = "GUILD_PRODUCT", (b = h || (h = {}))[b.WEBAUTHN = 1] = "WEBAUTHN", b[b.TOTP = 2] = "TOTP", b[b.SMS = 3] = "SMS"
+            }), (A = i || (i = {}))[A.ROLE = 0] = "ROLE", A[A.MEMBER = 1] = "MEMBER", (m = r || (r = {})).IOS = "ios", m.ANDROID = "android", m.WEB = "web", (N = a || (a = {}))[N.NONE = 0] = "NONE", N[N.NEW = 1] = "NEW", N[N.UPDATED = 2] = "UPDATED", (p = s || (s = {}))[p.MEDIA_PROXY = 1] = "MEDIA_PROXY", p[p.YOUTUBE = 2] = "YOUTUBE", (O = o || (o = {}))[O.GUILD = 0] = "GUILD", O[O.BOT_DM = 1] = "BOT_DM", O[O.PRIVATE_CHANNEL = 2] = "PRIVATE_CHANNEL", (C = l || (l = {}))[C.NO_INTERCEPT = 1] = "NO_INTERCEPT", C[C.LAUNCH_ACTIVITY_INTERCEPT = 2] = "LAUNCH_ACTIVITY_INTERCEPT", (R = u || (u = {}))[R.SUB_COMMAND = 1] = "SUB_COMMAND", R[R.SUB_COMMAND_GROUP = 2] = "SUB_COMMAND_GROUP", R[R.STRING = 3] = "STRING", R[R.INTEGER = 4] = "INTEGER", R[R.BOOLEAN = 5] = "BOOLEAN", R[R.USER = 6] = "USER", R[R.CHANNEL = 7] = "CHANNEL", R[R.ROLE = 8] = "ROLE", R[R.MENTIONABLE = 9] = "MENTIONABLE", R[R.NUMBER = 10] = "NUMBER", R[R.ATTACHMENT = 11] = "ATTACHMENT", (g = d || (d = {}))[g.CHAT = 1] = "CHAT", g[g.USER = 2] = "USER", g[g.MESSAGE = 3] = "MESSAGE", g[g.PRIMARY_ENTRY_POINT = 4] = "PRIMARY_ENTRY_POINT", (L = _ || (_ = {}))[L.APPLICATION_COMMAND = 2] = "APPLICATION_COMMAND", L[L.MESSAGE_COMPONENT = 3] = "MESSAGE_COMPONENT", L[L.APPLICATION_COMMAND_AUTOCOMPLETE = 4] = "APPLICATION_COMMAND_AUTOCOMPLETE", L[L.MODAL_SUBMIT = 5] = "MODAL_SUBMIT", (v = c || (c = {}))[v.ACTION_ROW = 1] = "ACTION_ROW", v[v.BUTTON = 2] = "BUTTON", v[v.STRING_SELECT = 3] = "STRING_SELECT", v[v.INPUT_TEXT = 4] = "INPUT_TEXT", v[v.USER_SELECT = 5] = "USER_SELECT", v[v.ROLE_SELECT = 6] = "ROLE_SELECT", v[v.MENTIONABLE_SELECT = 7] = "MENTIONABLE_SELECT", v[v.CHANNEL_SELECT = 8] = "CHANNEL_SELECT", v[v.TEXT = 10] = "TEXT", v[v.MEDIA_GALLERY = 12] = "MEDIA_GALLERY", v[v.SEPARATOR = 14] = "SEPARATOR", (D = E || (E = {}))[D.PRIMARY = 1] = "PRIMARY", D[D.SECONDARY = 2] = "SECONDARY", D[D.SUCCESS = 3] = "SUCCESS", D[D.DESTRUCTIVE = 4] = "DESTRUCTIVE", D[D.LINK = 5] = "LINK", D[D.PREMIUM = 6] = "PREMIUM", (M = I || (I = {}))[M.SMALL = 1] = "SMALL", M[M.PARAGRAPH = 2] = "PARAGRAPH", (y = T || (T = {}))[y.SMALL = 1] = "SMALL", y[y.LARGE = 2] = "LARGE", (P = f || (f = {}))[P.SUBSCRIPTION_PLAN = 1] = "SUBSCRIPTION_PLAN", P[P.ENTITLEMENT = 2] = "ENTITLEMENT", P[P.PREMIUM_LEGACY_UPGRADE_PROMOTION = 3] = "PREMIUM_LEGACY_UPGRADE_PROMOTION", P[P.PREMIUM_TRIAL = 4] = "PREMIUM_TRIAL", (U = S || (S = {}))[U.GUILD_PRODUCT = 0] = "GUILD_PRODUCT", (b = h || (h = {}))[b.WEBAUTHN = 1] = "WEBAUTHN", b[b.TOTP = 2] = "TOTP", b[b.SMS = 3] = "SMS"
         },
         2052: function(e, t, n) {
             "use strict";
@@ -41054,6 +41054,8 @@
                 BEGINNING_CHAT_DM_MOBILE: "This is the very beginning of your legendary conversation with !!{username}!!.",
                 MESSAGE_EDITED: "edited",
                 MESSAGE_EDITED_TIMESTAMP_A11Y_LABEL: "Edited !!{timeFormatted}!!",
+                MESSAGE_GAME_ICON_TOOLTIP: "Game message tooltip",
+                MESSAGE_GAME_ICON_TOOLTIP_CONTENT: "This message was sent from !!{applicationName}!!.",
                 EDIT_TEXTAREA_HELP: "escape to [cancel](onCancel) • enter to [save](onSave)",
                 INVALID_VOICE_CHANNEL: "Invalid Channel",
                 INVALID_TEXT_CHANNEL: "invalid-channel",
@@ -55624,6 +55626,7 @@
                 MEMBER_LIST_CONTENT_FEED_TRACKS_THIS_WEEK: "{count} tracks this week",
                 MEMBER_LIST_CONTENT_FEED_USER_LISTENING_TO_MEDIA_ARTIST: "{userName} is listening to **{media}** by **{artist}**",
                 MEMBER_LIST_CONTENT_FEED_STREAK_TOOLTIP: "Played {days} days in a row",
+                MEMBER_LIST_CONTENT_FEED_TRENDING: "Trending",
                 MEMBER_LIST_CONTENT_POPOUT_USER_PLAYING: "{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} playing",
                 MEMBER_LIST_CONTENT_POPOUT_USER_PLAYED: "{countOthers, plural, =0 {$[{user1}](nameHook)} =1 {$[{user1}](nameHook) and $[{user2}](nameHook)} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others}} played",
                 MEMBER_LIST_CONTENT_POPOUT_USER_WATCHING: "{countOthers, plural, =0 {$[{user1}](nameHook) is} =1 {$[{user1}](nameHook) and $[{user2}](nameHook) are} other {$[{user1}](nameHook) and $[{countOthers}](nameHook) others are}} watching",
@@ -56144,11 +56147,17 @@
                 CLAN_USER_ADOPT_TAG_UPSELL_TITLE: "{guildName} - Tag Up!",
                 CLAN_USER_ADOPT_TAG_UPSELL_ARIA_LABEL: "Adopt the {guildName} guild tag as part of your identity",
                 CLAN_USER_ADOPT_TAG_UPSELL_DESCRIPTION: "Rep your guild everywhere",
-                CLAN_USER_ADOPT_TAG_MODAL_HEADING: "{guildName} Tag Up",
+                CLAN_USER_ADOPT_TAG_NEW_IDENTITY_TITLE: "{guildName} - New Tag!",
+                CLAN_USER_ADOPT_TAG_NEW_IDENTITY_ARIA_LABEL: "A new tag is available for {guildName}",
+                CLAN_USER_ADOPT_TAG_NEW_IDENTITY_DESCRIPTION: "An update to your tag is available",
+                CLAN_USER_ADOPT_TAG_MODAL_HEADING: "**{guildName}**\n\nis now a guild",
                 CLAN_USER_ADOPT_TAG_MODAL_DESCRIPTION: "{guildName} adopted a new guild tag, and you can now rep this server everywhere you chat.",
+                CLAN_USER_ADOPT_TAG_MODAL_NEW_IDENTITY_HEADING: "**{guildName}**\n\nhas changed their tag",
+                CLAN_USER_ADOPT_TAG_MODAL_NEW_IDENTITY_DESCRIPTION: "A new tag is available for {guildName}. Would you like to adopt it?",
                 CLAN_USER_ADOPT_TAG_MODAL_FEATURE: "Wear this tag everywhere",
                 CLAN_USER_ADOPT_TAG_MODAL_FEATURE_CALLOUT: "You can always change your tag in User Profile",
                 CLAN_USER_ADOPT_TAG_MODAL_CTA: "Adopt Tag",
+                CLAN_USER_ADOPT_TAG_MODAL_NEW_IDENTITY_CTA: "Update Tag",
                 CLAN_USER_ADOPT_TAG_MODAL_CANCEL: "Not Now",
                 CLAN_USER_ADOPT_TAG_GUILD_PROFILE_CTA: "Don The Tag",
                 CLAN_USER_APPLY_TAG_GUILD_PROFILE_CTA: "Apply To Join",
@@ -63204,7 +63213,7 @@
                     return a
                 }
             }), n("47120");
-            var i = n("685626");
+            var i = n("920906");
 
             function r(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
@@ -63278,7 +63287,7 @@
                     return r
                 }
             });
-            var i = n("685626");
+            var i = n("920906");
             let r = new(n("603767")).default;
             i.Globals.assign({
                 frameLoop: r
@@ -86730,7 +86739,7 @@
                 r = n("470079"),
                 a = n("120356"),
                 s = n.n(a),
-                o = n("685626"),
+                o = n("920906"),
                 l = n("442837"),
                 u = n("481060"),
                 d = n("26151"),
@@ -88298,8 +88307,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294003", "294003"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294003")), t = 0), t
+                let t = parseInt((e = "294150", "294150"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294150")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -94135,7 +94144,7 @@
             }), n("47120"), n("653041");
             var i = n("735250"),
                 r = n("470079"),
-                a = n("685626"),
+                a = n("920906"),
                 s = n("442837"),
                 o = n("524437"),
                 l = n("780384"),
@@ -102449,7 +102458,7 @@
                 a = n("392711"),
                 s = n.n(a),
                 o = n("207561"),
-                l = n("685626"),
+                l = n("920906"),
                 u = n("442837"),
                 d = n("317381"),
                 _ = n("966302"),
@@ -103909,57 +103918,65 @@
             "use strict";
             n.r(t), n.d(t, {
                 getAccessibleClanColor: function() {
-                    return I
+                    return f
                 },
                 getAccessibleTextColor: function() {
-                    return c
+                    return I
                 },
                 getClanPrimaryButtonStyles: function() {
-                    return T
+                    return S
+                },
+                getClanRadialBackgroundStyle: function() {
+                    return A
+                },
+                useBrandColor: function() {
+                    return h
                 }
-            });
-            var i = n("688619"),
-                r = n.n(i),
-                a = n("392711"),
-                s = n.n(a),
-                o = n("780384"),
-                l = n("481060"),
-                u = n("564334"),
-                d = n("302221"),
-                _ = n("308083");
+            }), n("47120");
+            var i = n("470079"),
+                r = n("688619"),
+                a = n.n(r),
+                s = n("392711"),
+                o = n.n(s),
+                l = n("780384"),
+                u = n("481060"),
+                d = n("410030"),
+                _ = n("564334"),
+                c = n("302221"),
+                E = n("308083");
 
-            function c(e) {
-                let t = r()(e),
+            function I(e) {
+                let t = a()(e),
                     n = t.get("rgb.r"),
                     i = t.get("rgb.g"),
-                    a = t.get("rgb.b");
-                return (299 * n + 587 * i + 114 * a) / 1e3 < 128 ? l.tokens.colors.HEADER_PRIMARY.resolve({
+                    r = t.get("rgb.b");
+                return (299 * n + 587 * i + 114 * r) / 1e3 < 128 ? u.tokens.colors.HEADER_PRIMARY.resolve({
                     theme: "dark",
                     saturation: 1
-                }) : l.tokens.colors.HEADER_PRIMARY.resolve({
+                }) : u.tokens.colors.HEADER_PRIMARY.resolve({
                     theme: "light",
                     saturation: 1
                 })
             }
 
-            function E(e) {
-                return new u.default(e.get("rgb.r"), e.get("rgb.g"), e.get("rgb.b"), e.alpha())
+            function T(e) {
+                return new _.default(e.get("rgb.r"), e.get("rgb.g"), e.get("rgb.b"), e.alpha())
             }
 
-            function I(e, t) {
+            function f(e, t) {
                 var n;
-                let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : o.WCAGContrastRatios.Text;
+                let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : l.WCAGContrastRatios.Text;
                 if (null == e) return;
-                let a = null !== (n = function(e) {
+                let r = null !== (n = function(e) {
                         var t;
-                        let n = r()(e);
-                        return null === (t = s()(_.CLAN_BRAND_PALETTE_PRESETS).map(e => {
+                        let n = a()(e);
+                        return null === (t = o()(E.CLAN_BRAND_PALETTE_PRESETS).map(e => {
                             let {
                                 primary: t
                             } = e;
                             return {
                                 primary: t,
-                                distance: r().distance(n, r()(t), "hsl")
+                                distance: a().distance(n, a()(t), "hsl")
                             }
                         }).filter(e => {
                             let {
@@ -103973,20 +103990,20 @@
                             return t
                         })) || void 0 === t ? void 0 : t.primary
                     }(e)) && void 0 !== n ? n : e,
-                    l = r()(a),
-                    u = r()(t),
-                    c = (0, d.getAccessibleColor)({
-                        colors: [E(l), E(u)],
+                    s = a()(r),
+                    u = a()(t),
+                    d = (0, c.getAccessibleColor)({
+                        colors: [T(s), T(u)],
                         ratio: i,
                         saturationFactor: 1
                     });
-                if (null != c) return r()(c.toHexString())
+                if (null != d) return a()(d.toHexString())
             }
 
-            function T(e, t) {
+            function S(e, t) {
                 let n = function(e, t) {
                     if (null == e) return;
-                    let n = I(e, t, o.WCAGContrastRatios.NonText);
+                    let n = f(e, t, l.WCAGContrastRatios.NonText);
                     if (null == n) return;
                     let i = .2 > n.luminance() ? n.brighten(.3) : n.darken(.3),
                         r = .2 > n.luminance() ? n.brighten(.35) : n.darken(.35);
@@ -103998,28 +104015,52 @@
                 }(e, t);
                 if (null == n) return;
                 let i = {
-                    "--custom-clan-text": c(n["--custom-clan-bg"]).hex()
+                    "--custom-clan-text": I(n["--custom-clan-bg"]).hex()
                 };
                 return {
                     ...n,
                     ...i
                 }
             }
+
+            function h(e, t) {
+                let [n, r = 1] = t, a = (0, d.default)();
+                return i.useMemo(() => null != e ? e : n.resolve({
+                    theme: a,
+                    saturation: r
+                }).hex(), [e, n, r, a])
+            }
+
+            function A(e, t) {
+                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "top left",
+                    i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : .3,
+                    r = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "50%";
+                if (null == e) return;
+                let s = a()(e),
+                    o = {
+                        background: "\n      radial-gradient(\n        circle at ".concat(n, ",\n        ").concat(s.alpha(i).hex(), " 0%,\n        transparent ").concat(r, "\n      )\n    ")
+                    };
+                if (null != t) {
+                    let e = a()(t);
+                    o.background += ", ".concat(e.hex())
+                }
+                return o
+            }
         },
         353093: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 formatSelectionList: function() {
-                    return c
+                    return E
                 },
                 getClanBadgeUrl: function() {
-                    return I
-                },
-                getClanBadgeUrlFromClan: function() {
                     return T
                 },
-                getClanBannerUrl: function() {
+                getClanBadgeUrlFromClan: function() {
                     return f
+                },
+                getClanBannerUrl: function() {
+                    return S
                 },
                 getUserClanData: function() {
                     return u
@@ -104028,6 +104069,9 @@
                     return d
                 },
                 isGuildAdoptedUserClanIdentity: function() {
+                    return c
+                },
+                isGuildAdoptedUserClanIdentityChanged: function() {
                     return _
                 },
                 stableSortSet: function() {
@@ -104061,9 +104105,14 @@
             }
 
             function _(e, t) {
+                var n, i;
+                return null != t && t.identityGuildId === (null == e ? void 0 : e.id) && ((null == e ? void 0 : null === (n = e.clan) || void 0 === n ? void 0 : n.tag) != null && (null == e ? void 0 : null === (i = e.clan) || void 0 === i ? void 0 : i.tag) !== t.tag || null == t.identityEnabled)
+            }
+
+            function c(e, t) {
                 return null != e && null != t && null != t.identityGuildId && t.identityGuildId === e && !!t.identityEnabled || !1
             }
-            let c = (e, t) => {
+            let E = (e, t) => {
                     if (0 === e.length) return null;
                     if (1 === e.length) return e[1];
                     if (2 === e.length) return o.default.Messages.CLAN_OVERVIEW_LIST_TWO_ITEMS.format({
@@ -104088,7 +104137,7 @@
                         })
                     }
                 },
-                E = {
+                I = {
                     [a.ClanTagBadgeSize.SIZE_12]: 16,
                     [a.ClanTagBadgeSize.SIZE_16]: 16,
                     [a.ClanTagBadgeSize.SIZE_24]: 24,
@@ -104096,20 +104145,20 @@
                     [a.ClanTagBadgeSize.SIZE_36]: 40
                 };
 
-            function I(e, t) {
+            function T(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : a.ClanTagBadgeSize.SIZE_12;
                 if (null == t) return;
                 let {
                     CDN_HOST: i
                 } = window.GLOBAL_ENV;
-                if (null != i) return "".concat(location.protocol, "//").concat(i, "/clan-badges/").concat(e, "/").concat(t, ".png?size=").concat(E[n])
-            }
-
-            function T(e, t) {
-                if (null != e && null != e.identityGuildId) return I(e.identityGuildId, e.badge, t)
+                if (null != i) return "".concat(location.protocol, "//").concat(i, "/clan-badges/").concat(e, "/").concat(t, ".png?size=").concat(I[n])
             }
 
             function f(e, t) {
+                if (null != e && null != e.identityGuildId) return T(e.identityGuildId, e.badge, t)
+            }
+
+            function S(e, t) {
                 if (null == t) return;
                 let {
                     CDN_HOST: n
@@ -115981,8 +116030,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294003",
-                    versionHash: "7019d211ac472fbeec59eb2f7d92221ab4f94572"
+                    buildNumber: "294150",
+                    versionHash: "efd60b0fc4117dd6352c5c65b3a5f4251f6fd723"
                 }
             }
             n.r(t), n.d(t, {
@@ -116866,6 +116915,9 @@
                 },
                 ClanDiscoveryCardView: function() {
                     return y
+                },
+                Wildcards: function() {
+                    return L
                 }
             }), n("47120"), n("733860");
             var i = n("735250"),
@@ -116895,19 +116947,15 @@
 
             function L(e) {
                 let {
-                    clan: t
-                } = e, {
-                    wildcardDescriptors: n,
-                    branding: {
-                        primaryColor: a
-                    }
-                } = t, s = n.filter(e => e !== C.EMPTY_WILDCARD).join(", "), l = (0, o.useToken)(o.tokens.colors.BACKGROUND_FLOATING), u = (0, c.getAccessibleClanColor)(a, l.hex()), d = r.useRef(null), [_, E] = r.useState(!1);
+                    wildcardDescriptors: t,
+                    primaryColor: n
+                } = e, a = t.filter(e => e !== C.EMPTY_WILDCARD).join(", "), s = (0, o.useToken)(o.tokens.colors.BACKGROUND_FLOATING), l = (0, c.getAccessibleClanColor)(n, s.hex()), u = r.useRef(null), [d, _] = r.useState(!1);
                 if (r.useEffect(() => {
-                        let e = d.current;
-                        null != e && null != e.offsetWidth && null != e.scrollWidth && E(e.offsetWidth < e.scrollWidth)
-                    }, []), 0 === s.length) return null;
-                let I = null != u ? {
-                    color: u.css()
+                        let e = u.current;
+                        null != e && null != e.offsetWidth && null != e.scrollWidth && _(e.offsetWidth < e.scrollWidth)
+                    }, []), 0 === a.length) return null;
+                let E = null != l ? {
+                    color: l.css()
                 } : void 0;
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(o.Text, {
@@ -116916,15 +116964,15 @@
                         className: g.clanInfoItem,
                         children: "\xb7"
                     }), (0, i.jsx)(o.Tooltip, {
-                        text: s,
+                        text: a,
                         color: o.Tooltip.Colors.PRIMARY,
-                        shouldShow: _,
+                        shouldShow: d,
                         children: e => (0, i.jsx)("span", {
                             ...e,
-                            style: I,
+                            style: E,
                             className: g.wildCardText,
-                            ref: d,
-                            children: s
+                            ref: u,
+                            children: a
                         })
                     })]
                 })
@@ -116933,10 +116981,11 @@
             function v(e) {
                 let {
                     trait: t,
-                    isHighlighted: n
+                    isHighlighted: n,
+                    className: r
                 } = e;
                 return (0, i.jsx)("div", {
-                    className: s()(g.trait, {
+                    className: s()(r, g.trait, {
                         [g.highlightedTrait]: n
                     }),
                     children: (0, i.jsx)(o.Text, {
@@ -116952,19 +117001,21 @@
                 let {
                     traits: t,
                     traitsToHighlight: n,
-                    expanded: a
-                } = e, s = r.useMemo(() => new Set(n), [n]);
+                    expanded: a,
+                    traitClassName: s
+                } = e, l = r.useMemo(() => new Set(n), [n]);
                 return a ? (0, i.jsx)("div", {
                     className: g.expandedTraitsContainer,
                     children: t.map(e => (0, i.jsx)(v, {
+                        className: s,
                         trait: e,
-                        isHighlighted: s.has(e)
+                        isHighlighted: l.has(e)
                     }, e))
                 }) : (0, i.jsx)(p.default, {
                     items: t,
                     renderItem: e => (0, i.jsx)(v, {
                         trait: e,
-                        isHighlighted: s.has(e)
+                        isHighlighted: l.has(e)
                     }, e),
                     renderOverflow: e => (0, i.jsx)(o.Tooltip, {
                         text: (0, i.jsx)("div", {
@@ -117168,7 +117219,8 @@
                                     className: g.clanInfoItem,
                                     children: null !== (n = (0, C.getPlaystyleTitle)(r.playstyle)) && void 0 !== n ? n : R.default.Messages.CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE
                                 }), (0, i.jsx)(L, {
-                                    clan: r
+                                    wildcardDescriptors: r.wildcardDescriptors,
+                                    primaryColor: r.branding.primaryColor
                                 })]
                             })]
                         }), (0, i.jsx)("div", {
@@ -119551,7 +119603,7 @@
                 s = n.n(a),
                 o = n("392711"),
                 l = n.n(o),
-                u = n("685626"),
+                u = n("920906"),
                 d = n("924826"),
                 _ = n("946188"),
                 c = n("477690"),
@@ -120414,7 +120466,7 @@
                 s = n.n(a),
                 o = n("392711"),
                 l = n.n(o),
-                u = n("685626"),
+                u = n("920906"),
                 d = n("873546"),
                 _ = n("442837"),
                 c = n("946188"),
@@ -140206,7 +140258,7 @@
             n.r(t);
             var i = n("735250");
             n("470079");
-            var r = n("685626"),
+            var r = n("920906"),
                 a = n("399606"),
                 s = n("481060"),
                 o = n("607070"),
@@ -140270,7 +140322,7 @@
             }), n("47120");
             var i = n("735250"),
                 r = n("470079"),
-                a = n("685626"),
+                a = n("920906"),
                 s = n("442837"),
                 o = n("607070"),
                 l = n("267642"),
@@ -140405,7 +140457,7 @@
             }), n("47120");
             var i, r, a = n("735250"),
                 s = n("470079"),
-                o = n("685626"),
+                o = n("920906"),
                 l = n("442837"),
                 u = n("481060"),
                 d = n("607070"),
@@ -140507,7 +140559,7 @@
             n("470079");
             var r = n("120356"),
                 a = n.n(r),
-                s = n("685626"),
+                s = n("920906"),
                 o = n("399606"),
                 l = n("481060"),
                 u = n("607070"),
@@ -153807,7 +153859,7 @@
                     },
                     async open(e, t, i, r) {
                         var a;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("33053"), n.e("56630"), n.e("31605"), n.e("49146"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("90508"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("92714"), n.e("17220"), n.e("92557"), n.e("62856"), n.e("19874"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("49146"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("90508"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("92714"), n.e("17220"), n.e("92557"), n.e("62856"), n.e("19874"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         a.default.dispatch({
@@ -161723,7 +161775,7 @@
             async function _(e) {
                 let {
                     openInteractionModal: t
-                } = await Promise.all([n.e("49237"), n.e("99387"), n.e("8739"), n.e("58286"), n.e("30243"), n.e("80621")]).then(n.bind(n, "440934"));
+                } = await Promise.all([n.e("49237"), n.e("99387"), n.e("29549"), n.e("31605"), n.e("77172"), n.e("8739"), n.e("58286"), n.e("30243"), n.e("66712")]).then(n.bind(n, "440934"));
                 t(e), a.default.track(l.AnalyticEvents.OPEN_MODAL, {
                     type: "interaction_modal",
                     application_id: e.application.id
@@ -172159,7 +172211,7 @@
                 r = n("470079"),
                 a = n("120356"),
                 s = n.n(a),
-                o = n("685626"),
+                o = n("920906"),
                 l = n("442837"),
                 u = n("524437"),
                 d = n("389710"),
@@ -172591,8 +172643,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715877823882",
-                                    build_number: "294003"
+                                    built_at: "1715890648346",
+                                    build_number: "294150"
                                 }
                             },
                             retries: 1
@@ -191118,7 +191170,7 @@
             n.r(t), n("47120");
             var i = n("735250"),
                 r = n("470079"),
-                a = n("685626"),
+                a = n("920906"),
                 s = n("91192"),
                 o = n("946835"),
                 l = n("442837"),
@@ -202332,7 +202384,7 @@
                 s = n.n(a),
                 o = n("512722"),
                 l = n.n(o),
-                u = n("685626"),
+                u = n("920906"),
                 d = n("442837"),
                 _ = n("622535"),
                 c = n("481060"),
@@ -211893,7 +211945,7 @@
                 r = n("470079"),
                 a = n("120356"),
                 s = n.n(a),
-                o = n("685626"),
+                o = n("920906"),
                 l = n("442837"),
                 u = n("846519"),
                 d = n("481060"),
@@ -215796,7 +215848,7 @@
                         (0, a.openModalLazy)(async () => {
                             let {
                                 default: a
-                            } = await Promise.all([n.e("49237"), n.e("99387"), n.e("29549"), n.e("31605"), n.e("98538"), n.e("20869")]).then(n.bind(n, "7225"));
+                            } = await Promise.all([n.e("49237"), n.e("99387"), n.e("29549"), n.e("31605"), n.e("77172"), n.e("98538"), n.e("20869")]).then(n.bind(n, "7225"));
                             return n => (0, i.jsx)(a, {
                                 transitionState: n.transitionState,
                                 onClose: n.onClose,
@@ -219686,7 +219738,7 @@
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: t
-                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("14734"), n.e("74112"), n.e("61366")]).then(n.bind(n, "598576"));
+                    } = await Promise.all([n.e("49237"), n.e("99387"), n.e("49368"), n.e("74112"), n.e("61366")]).then(n.bind(n, "598576"));
                     return n => (0, i.jsx)(t, {
                         analyticsLocation: e,
                         ...n
@@ -241128,7 +241180,7 @@
                             clearInterval(u), u = void 0, l = 0;
                             let n = null === (r = R.default.getChannel(o)) || void 0 === r ? void 0 : r.getGuildId(),
                                 i = null === (a = R.default.getChannel(t.channelId)) || void 0 === a ? void 0 : a.getGuildId();
-                            null != n && i === n && (o = null), B()
+                            (null != n && i === n || o === t.channelId) && (o = null), B()
                         }
                         return !0
                     }, !1)
@@ -249345,7 +249397,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "7019d211ac472fbeec59eb2f7d92221ab4f94572"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "efd60b0fc4117dd6352c5c65b3a5f4251f6fd723"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -250710,7 +250762,7 @@
                 s = n("470079"),
                 o = n("120356"),
                 l = n.n(o),
-                u = n("685626"),
+                u = n("920906"),
                 d = n("481060"),
                 _ = n("110924"),
                 c = n("190720");
@@ -250964,7 +251016,7 @@
                 s = n("470079"),
                 o = n("120356"),
                 l = n.n(o),
-                u = n("685626"),
+                u = n("920906"),
                 d = n("481060"),
                 _ = n("855981"),
                 c = n("55543"),
@@ -251461,7 +251513,7 @@
                 r = n("470079"),
                 a = n("120356"),
                 s = n.n(a),
-                o = n("685626"),
+                o = n("920906"),
                 l = n("481060"),
                 u = n("130402"),
                 d = n("153066"),
@@ -252791,7 +252843,7 @@
             }), n("47120"), n("518263"), n("970173"), n("520712"), n("268111"), n("941497"), n("32026"), n("480839"), n("744285"), n("492257"), n("873817"), n("863942"), n("642549");
             var i = n("735250"),
                 r = n("470079"),
-                a = n("685626"),
+                a = n("920906"),
                 s = n("788900"),
                 o = n("481060"),
                 l = n("504053"),
@@ -257105,25 +257157,33 @@
                 });
 
             function X(e) {
-                let t, {
-                        activity: n
-                    } = e,
-                    i = (0, T.default)();
-                if ((0, m.default)(n) && (t = F.PlatformTypes.SPOTIFY), null != n.platform && [F.ActivityGamePlatforms.PS4, F.ActivityGamePlatforms.PS5].includes(n.platform) && (t = F.PlatformTypes.PLAYSTATION), null == t) return null;
-                let r = f.default.get(t);
+                let {
+                    activity: t
+                } = e, n = null;
+                return (0, m.default)(t) && (n = F.PlatformTypes.SPOTIFY), null != t.platform && [F.ActivityGamePlatforms.PS4, F.ActivityGamePlatforms.PS5].includes(t.platform) && (n = F.PlatformTypes.PLAYSTATION), n
+            }
+
+            function Q(e) {
+                let {
+                    activity: t
+                } = e, n = (0, T.default)(), i = X({
+                    activity: t
+                });
+                if (null == i) return null;
+                let r = f.default.get(i);
                 return (0, s.jsx)("img", {
                     alt: "",
-                    src: (0, c.isThemeLight)(i) ? r.icon.lightSVG : r.icon.darkSVG,
+                    src: (0, c.isThemeLight)(n) ? r.icon.lightSVG : r.icon.darkSVG,
                     className: j.platformIcon
                 })
             }
-            class Q extends(r = o.PureComponent) {
+            class q extends(r = o.PureComponent) {
                 get activity() {
                     let {
                         activity: e,
                         activityGuild: t
                     } = this.props;
-                    return null != t && (null == e ? void 0 : e.type) !== F.ActivityTypes.PLAYING && (null == e ? void 0 : e.type) !== F.ActivityTypes.WATCHING && (null == e ? void 0 : e.type) !== F.ActivityTypes.HANG_STATUS ? {
+                    return null != t && (null == e ? void 0 : e.type) !== F.ActivityTypes.PLAYING && (null == e ? void 0 : e.type) !== F.ActivityTypes.WATCHING && (null == e ? void 0 : e.type) !== F.ActivityTypes.LISTENING && (null == e ? void 0 : e.type) !== F.ActivityTypes.HANG_STATUS ? {
                         type: F.ActivityTypes.PLAYING,
                         name: Y.default.Messages.SHARING_SCREEN
                     } : e
@@ -257338,20 +257398,24 @@
                     } = e;
                     if (o === F.ActivityTypes.CUSTOM_STATUS) return null;
                     let l = (0, A.default)(e),
-                        u = e.name,
-                        d = u;
-                    return (o === F.ActivityTypes.HANG_STATUS ? d = (0, C.getHangStatusText)(e) : l && null != n ? d = (0, s.jsx)("span", {
-                        className: j.activityName,
-                        children: d
-                    }) : !l && (u = a, d = a, (0, m.default)(e) && null != e.sync_id && null != a ? d = (0, s.jsx)(E.Anchor, {
-                        className: j.bodyLink,
-                        onClick: this.handleOpenSpotifyTrack,
-                        children: a
-                    }) : (0, L.isStageActivity)(e) && (d = e.name)), null == d) ? null : (0, s.jsx)(E.Text, {
-                        title: u,
+                        d = e.name,
+                        _ = d;
+                    if (o === F.ActivityTypes.HANG_STATUS ? _ = (0, C.getHangStatusText)(e) : l && null != n ? _ = (0, s.jsx)("span", {
+                            className: j.activityName,
+                            children: _
+                        }) : !l && (d = a, _ = a, (0, m.default)(e) && null != e.sync_id && null != a ? _ = (0, s.jsx)(E.Anchor, {
+                            className: j.bodyLink,
+                            onClick: this.handleOpenSpotifyTrack,
+                            children: a
+                        }) : (0, L.isStageActivity)(e) && (_ = e.name)), null == _) return null;
+                    let c = null != X({
+                        activity: e
+                    }) && "BiteSizePopout" === this.props.type;
+                    return (0, s.jsx)(E.Text, {
+                        title: d,
                         variant: r ? "text-md/semibold" : "text-sm/semibold",
-                        className: (0, M.getClass)(j, "name", t.bot || this.isStreamerOnTypeProfile() ? "wrap" : "normal"),
-                        children: d
+                        className: u()((0, M.getClass)(j, "name", t.bot || this.isStreamerOnTypeProfile() ? "wrap" : "normal"), c && j.namePlatformIconMarginBiteSizePopout),
+                        children: _
                     })
                 }
                 renderDetails(e) {
@@ -257534,7 +257598,7 @@
                                     children: A
                                 }) : null]
                             })
-                        }), l ? m : null, l || c ? A : null, (0, s.jsx)(X, {
+                        }), l ? m : null, l || c ? A : null, (0, s.jsx)(Q, {
                             activity: o
                         })]
                     })
@@ -257563,7 +257627,7 @@
                     })
                 }
             }
-            W(Q, "Types", i), t.default = Q
+            W(q, "Types", i), t.default = q
         },
         321148: function(e, t, n) {
             "use strict";
@@ -269251,6 +269315,78 @@
                 })
             }
         },
+        51063: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return I
+                }
+            }), n("789020");
+            var i = n("735250");
+            n("470079");
+            var r = n("913527"),
+                a = n.n(r),
+                s = n("481060"),
+                o = n("835473"),
+                l = n("366695"),
+                u = n("630388"),
+                d = n("981631"),
+                _ = n("689938"),
+                c = n("707533");
+
+            function E(e) {
+                let {
+                    application: t,
+                    messageTimestamp: n
+                } = e;
+                return (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)(l.default, {
+                        size: l.default.Sizes.LARGE,
+                        game: t
+                    }), (0, i.jsxs)("div", {
+                        className: c.textContainer,
+                        children: [(0, i.jsx)(s.Text, {
+                            className: c.timestamp,
+                            variant: "text-xs/medium",
+                            color: "text-muted",
+                            children: a()(n).format("LLLL")
+                        }), (0, i.jsx)(s.Text, {
+                            variant: "text-md/normal",
+                            color: "interactive-active",
+                            children: _.default.Messages.MESSAGE_GAME_ICON_TOOLTIP_CONTENT.format({
+                                applicationName: t.name
+                            })
+                        })]
+                    })]
+                })
+            }
+
+            function I(e) {
+                let {
+                    message: t
+                } = e, n = (0, o.useGetOrFetchApplication)(t.applicationId);
+                return null != n && (0, u.hasFlag)(n.flags, d.ApplicationFlags.SOCIAL_LAYER_INTEGRATION) ? (0, i.jsx)(s.Tooltip, {
+                    hideOnClick: !0,
+                    position: "top",
+                    "aria-label": _.default.Messages.MESSAGE_GAME_ICON_TOOLTIP,
+                    tooltipClassName: c.gameMessageTooltip,
+                    tooltipContentClassName: c.gameMessageTooltipContent,
+                    text: (0, i.jsx)(E, {
+                        application: n,
+                        messageTimestamp: t.timestamp
+                    }),
+                    children: e => (0, i.jsx)(s.Clickable, {
+                        tag: "span",
+                        ...e,
+                        children: (0, i.jsx)(l.default, {
+                            className: c.gameIcon,
+                            size: l.default.Sizes.XXSMALL,
+                            game: n
+                        })
+                    })
+                }) : null
+            }
+        },
         534761: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -269654,7 +269790,7 @@
                     return r
                 },
                 default: function() {
-                    return R
+                    return g
                 }
             });
             var i, r, a = n("735250"),
@@ -269674,90 +269810,91 @@
                 A = n("484459"),
                 m = n("467679"),
                 N = n("768581"),
-                p = n("981631"),
-                O = n("822545");
+                p = n("51063"),
+                O = n("981631"),
+                C = n("822545");
 
-            function C(e) {
+            function R(e) {
                 let {
                     compact: t
                 } = e;
                 return (0, a.jsx)(m.default, {
-                    className: t ? O.botTagCompact : O.botTagCozy,
+                    className: t ? C.botTagCompact : C.botTagCozy,
                     type: m.default.Types.REMIX,
                     useRemSizes: !0
                 })
             }
 
-            function R(e) {
+            function g(e) {
                 let t, {
                         author: n,
                         message: i,
                         userOverride: r,
                         compact: o = !1,
                         withMentionPrefix: m = !1,
-                        showPopout: R = !1,
-                        className: g,
-                        onClick: L,
-                        onContextMenu: v,
-                        onPopoutRequestClose: D,
-                        renderPopout: M,
-                        renderRemixTag: y = !1,
-                        decorations: P
+                        showPopout: g = !1,
+                        className: L,
+                        onClick: v,
+                        onContextMenu: D,
+                        onPopoutRequestClose: M,
+                        renderPopout: y,
+                        renderRemixTag: P = !1,
+                        decorations: U
                     } = e,
-                    U = s.useContext(f.default),
+                    b = s.useContext(f.default),
                     {
-                        analyticsLocations: b
+                        analyticsLocations: G
                     } = (0, I.default)(E.default.USERNAME),
-                    G = m ? "@" : "",
+                    w = m ? "@" : "",
                     {
-                        nick: w,
-                        colorString: k,
-                        colorRoleName: B
+                        nick: k,
+                        colorString: B,
+                        colorRoleName: V
                     } = n,
-                    V = null != i.messageReference && null != i.webhookId,
-                    x = (0, d.useStateFromStores)([c.default], () => c.default.roleStyle),
-                    F = (0, h.useCanSeeRemixBadge)(),
-                    H = s.useMemo(() => ({
-                        source: p.AnalyticsSections.CHANNEL,
+                    x = null != i.messageReference && null != i.webhookId,
+                    F = (0, d.useStateFromStores)([c.default], () => c.default.roleStyle),
+                    H = (0, h.useCanSeeRemixBadge)(),
+                    Y = s.useMemo(() => ({
+                        source: O.AnalyticsSections.CHANNEL,
                         messageId: i.id,
                         tagUserId: i.author.id
                     }), [i.id, i.author.id]),
-                    Y = {
-                        className: O.username,
-                        style: "username" === x && null != k ? {
-                            color: k
+                    j = {
+                        className: C.username,
+                        style: "username" === F && null != B ? {
+                            color: B
                         } : void 0,
-                        onClick: L,
-                        onContextMenu: v,
+                        onClick: v,
+                        onContextMenu: D,
                         children: o ? (0, a.jsxs)(a.Fragment, {
-                            children: [G + w, (0, a.jsx)(T.default, {
+                            children: [w + k, (0, a.jsx)(T.default, {
                                 clan: n.clan,
                                 userId: i.author.id,
-                                contextGuildId: U,
-                                className: O.clanTagChiplet,
-                                profileViewedAnalytics: H
+                                contextGuildId: b,
+                                className: C.clanTagChiplet,
+                                profileViewedAnalytics: Y
                             })]
                         }) : (0, a.jsx)(a.Fragment, {
-                            children: G + w
+                            children: w + k
                         })
                     };
-                t = null != M && null != R ? (0, a.jsx)(_.Popout, {
-                    preload: V ? void 0 : function() {
+                t = null != y && null != g ? (0, a.jsx)(_.Popout, {
+                    preload: x ? void 0 : function() {
                         let e = null != r ? r : i.author;
-                        return (0, A.maybeFetchUserProfileForPopout)(e.id, null != n.guildMemberAvatar && null != U ? (0, N.getGuildMemberAvatarURLSimple)({
-                            guildId: U,
+                        return (0, A.maybeFetchUserProfileForPopout)(e.id, null != n.guildMemberAvatar && null != b ? (0, N.getGuildMemberAvatarURLSimple)({
+                            guildId: b,
                             userId: e.id,
                             avatar: n.guildMemberAvatar,
                             size: 80
-                        }) : e.getAvatarURL(U, 80), {
-                            guildId: U,
+                        }) : e.getAvatarURL(b, 80), {
+                            guildId: b,
                             channelId: i.channel_id
                         })
                     },
-                    renderPopout: M,
-                    shouldShow: R,
+                    renderPopout: y,
+                    shouldShow: g,
                     position: u.isMobile ? "window_center" : "right",
-                    onRequestClose: D,
+                    onRequestClose: M,
                     children: e => {
                         let {
                             onClick: t,
@@ -269766,33 +269903,37 @@
                         return (0, a.jsx)(_.Clickable, {
                             tag: "span",
                             ...n,
-                            ...Y,
-                            className: l()(Y.className, O.clickable, g)
+                            ...j,
+                            className: l()(j.className, C.clickable, L)
                         })
                     }
                 }) : (0, a.jsx)(_.Clickable, {
-                    ...Y,
-                    className: l()(Y.className, g)
+                    ...j,
+                    className: l()(j.className, L)
                 });
-                let j = null != P ? P[0] : null,
-                    W = null != P ? P[1] : null;
+                let W = null != U ? U[0] : null,
+                    K = null != U ? U[1] : null;
                 return (0, a.jsxs)(I.AnalyticsLocationProvider, {
-                    value: b,
-                    children: [null != j && o ? (0, a.jsxs)(a.Fragment, {
-                        children: [" ", j, " "]
-                    }) : null, "dot" === x ? (0, a.jsx)(_.RoleDot, {
-                        color: k,
-                        name: B,
-                        className: O.roleDot
-                    }) : null, t, !o && (0, a.jsx)(T.default, {
-                        clan: n.clan,
-                        userId: i.author.id,
-                        contextGuildId: U,
-                        className: O.clanTagChiplet,
-                        profileViewedAnalytics: H
-                    }), null != W ? (0, a.jsx)(a.Fragment, {
-                        children: W
-                    }) : null, null == j || o ? null : j, null != i && (0, S.default)(i) && F && y ? (0, a.jsx)(C, {}) : null]
+                    value: G,
+                    children: [null != W && o ? (0, a.jsxs)(a.Fragment, {
+                        children: [" ", W, " "]
+                    }) : null, "dot" === F ? (0, a.jsx)(_.RoleDot, {
+                        color: B,
+                        name: V,
+                        className: C.roleDot
+                    }) : null, t, !o && (0, a.jsxs)(a.Fragment, {
+                        children: [(0, a.jsx)(T.default, {
+                            clan: n.clan,
+                            userId: i.author.id,
+                            contextGuildId: b,
+                            className: C.clanTagChiplet,
+                            profileViewedAnalytics: Y
+                        }), (0, a.jsx)(p.default, {
+                            message: i
+                        })]
+                    }), null != K ? (0, a.jsx)(a.Fragment, {
+                        children: K
+                    }) : null, null == W || o ? null : W, null != i && (0, S.default)(i) && H && P ? (0, a.jsx)(R, {}) : null]
                 })
             }(i = r || (r = {}))[i.SYSTEM_TAG = 0] = "SYSTEM_TAG", i[i.BADGES = 1] = "BADGES"
         },
@@ -269807,7 +269948,7 @@
             n("470079");
             var r = n("120356"),
                 a = n.n(r),
-                s = n("685626"),
+                s = n("920906"),
                 o = n("771941");
             let l = Object.freeze({
                     tension: 400,
@@ -278303,7 +278444,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294003"
+                                build_number: "294150"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285661,7 +285802,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "294003", "294003"), 10);
+                let a = parseInt((n = "294150", "294150"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313342,4 +313483,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.88b50a1488228b2b6d2a.js.map
+//# sourceMappingURL=71586.0eb3273a5d532bcc0223.js.map
