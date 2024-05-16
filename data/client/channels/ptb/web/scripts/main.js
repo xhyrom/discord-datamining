@@ -37067,7 +37067,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294150", ", Version Hash: ").concat("efd60b0fc4117dd6352c5c65b3a5f4251f6fd723")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294160", ", Version Hash: ").concat("af17075f47cc328cfd7475a4bae6efb5214fbbf6")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88307,8 +88307,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294150", "294150"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294150")), t = 0), t
+                let t = parseInt((e = "294160", "294160"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294160")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116030,8 +116030,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294150",
-                    versionHash: "efd60b0fc4117dd6352c5c65b3a5f4251f6fd723"
+                    buildNumber: "294160",
+                    versionHash: "af17075f47cc328cfd7475a4bae6efb5214fbbf6"
                 }
             }
             n.r(t), n.d(t, {
@@ -153859,7 +153859,7 @@
                     },
                     async open(e, t, i, r) {
                         var a;
-                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("49146"), n.e("4970"), n.e("75475"), n.e("85093"), n.e("90508"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("92714"), n.e("17220"), n.e("92557"), n.e("62856"), n.e("19874"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
+                        await Promise.all([n.e("49237"), n.e("99387"), n.e("96427"), n.e("70716"), n.e("23755"), n.e("80301"), n.e("29549"), n.e("31605"), n.e("33053"), n.e("56630"), n.e("49146"), n.e("4970"), n.e("90508"), n.e("75475"), n.e("85093"), n.e("85552"), n.e("58227"), n.e("43502"), n.e("3084"), n.e("62809"), n.e("43643"), n.e("92714"), n.e("17220"), n.e("92557"), n.e("62856"), n.e("19874"), n.e("85107")]).then(n.bind(n, "994763")), (null === (a = T.default.getGuild(e)) || void 0 === a ? void 0 : a.hasFeature(A.GuildFeatures.COMMUNITY)) && (t === A.GuildSettingsSections.GUILD_AUTOMOD && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_AUTOMOD), t === A.GuildSettingsSections.MEMBER_VERIFICATION && (t = A.GuildSettingsSections.SAFETY, r = A.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), O.init(e, t, i, r), (0, s.pushLayer)(A.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         a.default.dispatch({
@@ -172643,8 +172643,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715890648346",
-                                    build_number: "294150"
+                                    built_at: "1715891348670",
+                                    build_number: "294160"
                                 }
                             },
                             retries: 1
@@ -212174,6 +212174,120 @@
                 })
             }
         },
+        256226: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("735250"),
+                r = n("470079"),
+                a = n("120356"),
+                s = n.n(a),
+                o = n("924826"),
+                l = n("866442"),
+                u = n("442837"),
+                d = n("692547"),
+                _ = n("481060"),
+                c = n("239091"),
+                E = n("607070"),
+                I = n("134433"),
+                T = n("518738"),
+                f = n("465670"),
+                S = n("176278"),
+                h = n("689938"),
+                A = n("904726");
+            t.default = r.forwardRef(function(e, t) {
+                var a, m, N;
+                let p;
+                let {
+                    canRemove: O,
+                    className: C,
+                    role: R,
+                    onRemove: g,
+                    guildId: L,
+                    disableBorderColor: v,
+                    onMouseDown: D
+                } = e, {
+                    tabIndex: M,
+                    ...y
+                } = (0, o.useListItem)(R.id), P = (0, T.useRoleIcon)({
+                    roleId: R.id,
+                    size: 16,
+                    guildId: L
+                }), U = (0, u.useStateFromStores)([E.default], () => E.default.roleStyle), b = (null === (a = R.tags) || void 0 === a ? void 0 : a.guild_connections) === null, G = r.useCallback(e => {
+                    (0, c.openContextMenuLazy)(e, async () => {
+                        let {
+                            default: e
+                        } = await n.e("5396").then(n.bind(n, "731646"));
+                        return t => (0, i.jsx)(e, {
+                            ...t,
+                            id: R.id,
+                            label: h.default.Messages.COPY_ID_ROLE
+                        })
+                    })
+                }, [R.id]), w = (0, _.useToken)(d.default.unsafe_rawColors.PRIMARY_300).hsl(), k = null !== (m = R.colorString) && void 0 !== m ? m : w, B = null !== (N = (0, l.hex2rgb)(k, .6)) && void 0 !== N ? N : void 0, V = d.default.unsafe_rawColors.WHITE_500.css, x = (0, l.hex2int)(k);
+                null != x && .3 > (0, l.getDarkness)(x) && (V = d.default.unsafe_rawColors.PRIMARY_630.css), p = b ? (0, i.jsx)(I.default, {
+                    className: A.roleFlowerStar,
+                    iconClassName: O ? A.roleVerifiedIcon : void 0,
+                    color: k,
+                    size: 14
+                }) : "dot" === U ? (0, i.jsx)(_.RoleDot, {
+                    className: A.roleDot,
+                    color: k,
+                    background: !1,
+                    tooltip: !1
+                }) : (0, i.jsx)(_.RoleCircle, {
+                    color: k,
+                    className: A.roleCircle
+                });
+                let F = r.useMemo(() => {
+                    var t;
+                    return {
+                        borderColor: v ? void 0 : B,
+                        ...null !== (t = e.style) && void 0 !== t ? t : {}
+                    }
+                }, [B, v, e.style]);
+                return (0, i.jsx)(_.FocusRing, {
+                    children: (0, i.jsxs)("div", {
+                        ref: t,
+                        className: s()(A.role, C),
+                        style: F,
+                        onContextMenu: G,
+                        onMouseDown: D,
+                        "aria-label": R.name,
+                        tabIndex: M,
+                        ...y,
+                        children: [(0, i.jsxs)(_.Clickable, {
+                            className: s()(O && A.roleRemoveButtonCanRemove, A.roleRemoveButton),
+                            onClick: O ? g : void 0,
+                            tabIndex: O ? M : -1,
+                            focusProps: {
+                                focusClassName: A.roleRemoveIconFocused
+                            },
+                            "aria-hidden": !O,
+                            "aria-label": h.default.Messages.GUILD_SETTINGS_MEMBERS_REMOVE_ROLE.format({
+                                roleName: R.name
+                            }),
+                            children: [p, O ? (0, i.jsx)(f.default, {
+                                color: V,
+                                className: A.roleRemoveIcon,
+                                "aria-hidden": !0
+                            }) : null]
+                        }), null != P ? (0, i.jsx)(S.default, {
+                            className: A.roleIcon,
+                            ...P,
+                            enableTooltip: !1
+                        }) : null, (0, i.jsx)("div", {
+                            "aria-hidden": !0,
+                            className: A.roleName,
+                            children: (0, i.jsx)(_.Text, {
+                                variant: "text-xs/medium",
+                                className: A.roleNameOverflow,
+                                children: R.name
+                            })
+                        })]
+                    })
+                })
+            })
+        },
         724593: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -212572,9 +212686,7 @@
                         })
                     },
                     children: e => (0, i.jsx)(T.default, {
-                        className: a()(S.button, {
-                            [S.compact]: A
-                        }),
+                        className: a()(S.button),
                         text: (0, i.jsx)(u.Text, {
                             variant: "text-xs/medium",
                             children: f.default.Messages.USER_PROFILE_ADD_ROLE
@@ -215194,55 +215306,55 @@
                 u = n("442837"),
                 d = n("481060"),
                 _ = n("749210"),
-                c = n("412899"),
-                E = n("112724"),
-                I = n("434404"),
-                T = n("271383"),
-                f = n("430824"),
-                S = n("496675"),
-                h = n("700785"),
-                A = n("785717"),
+                c = n("112724"),
+                E = n("434404"),
+                I = n("271383"),
+                T = n("430824"),
+                f = n("496675"),
+                S = n("700785"),
+                h = n("785717"),
+                A = n("256226"),
                 m = n("314172"),
                 N = n("981631"),
                 p = n("689938"),
                 O = n("384878");
-            let C = (0, E.default)(function(e) {
+            let C = (0, c.default)(function(e) {
                 let {
                     user: t,
                     currentUser: n,
                     guild: a,
                     guildMember: _,
-                    userRoles: E,
-                    highestRole: I,
-                    canManageRoles: T,
-                    width: S,
-                    onAddRole: A,
+                    userRoles: c,
+                    highestRole: E,
+                    canManageRoles: I,
+                    width: f,
+                    onAddRole: h,
                     onRemoveRole: C,
                     onOpenProfile: R
                 } = e;
-                s()(null != S, "Unexpected null width");
+                s()(null != f, "Unexpected null width");
                 let g = r.useRef({}),
                     L = (e, t) => {
                         null != t ? g.current[e] = t : delete g.current[e]
                     },
-                    v = (0, u.useStateFromStores)([f.default], () => f.default.getRoles(a.id)),
-                    D = r.useMemo(() => Object.values(v).filter(e => E.includes(e.id)).sort((e, t) => {
+                    v = (0, u.useStateFromStores)([T.default], () => T.default.getRoles(a.id)),
+                    D = r.useMemo(() => Object.values(v).filter(e => c.includes(e.id)).sort((e, t) => {
                         var n, i;
                         let r = (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) !== null,
                             a = (null === (i = t.tags) || void 0 === i ? void 0 : i.guild_connections) !== null;
                         return r && !a ? 1 : !r && a ? -1 : 0
-                    }), [v, E]),
+                    }), [v, c]),
                     [M, y] = r.useState(D),
-                    [P, U] = r.useState(S),
+                    [P, U] = r.useState(f),
                     b = M.length < D.length,
-                    G = T && null != _,
+                    G = I && null != _,
                     w = r.useRef(null),
                     k = r.useRef(null);
                 r.useLayoutEffect(() => {
                     var e, t, n, i, r, a;
                     let s = null !== (r = null === (t = w.current) || void 0 === t ? void 0 : null === (e = t.getBoundingClientRect()) || void 0 === e ? void 0 : e.width) && void 0 !== r ? r : 0,
                         o = null !== (a = null === (i = k.current) || void 0 === i ? void 0 : null === (n = i.getBoundingClientRect()) || void 0 === n ? void 0 : n.width) && void 0 !== a ? a : 0,
-                        l = S - (s > 0 ? s + 4 : 0) - (o > 0 ? o + 4 : 0),
+                        l = f - (s > 0 ? s + 4 : 0) - (o > 0 ? o + 4 : 0),
                         u = [];
                     for (let e = 0; e < 2; e++) {
                         let t = 1 === e,
@@ -215251,13 +215363,13 @@
                             let i = D[e],
                                 r = g.current[i.id];
                             if (null != r) {
-                                if (n > 0 && !t && n + r.offsetWidth > S || n > 0 && t && n + r.offsetWidth > l) break;
+                                if (n > 0 && !t && n + r.offsetWidth > f || n > 0 && t && n + r.offsetWidth > l) break;
                                 n += r.offsetWidth + 4, u.push(i)
                             }
                         }
                     }
                     U(l), y(e => e.length !== u.length ? u : e)
-                }, [S, D, M]);
+                }, [f, D, M]);
                 let B = r.useMemo(() => "roles-".concat((0, o.v4)()), []),
                     V = (0, l.default)({
                         id: B,
@@ -215272,17 +215384,16 @@
                     }),
                     H = M.map((e, r) => {
                         var s;
-                        return (0, i.jsx)(c.MemberRole, {
-                            className: O.role,
+                        return (0, i.jsx)(A.default, {
                             role: e,
                             guildId: a.id,
                             style: {
-                                maxWidth: r === M.length - 1 ? P : S
+                                maxWidth: r === M.length - 1 ? P : f
                             },
                             disableBorderColor: !0,
                             ref: t => L(e.id, t),
                             onRemove: () => C(e),
-                            canRemove: T ? h.isRoleHigher(a, n.id, I, e) : (null === (s = e.tags) || void 0 === s ? void 0 : s.guild_connections) === null && t.id === n.id
+                            canRemove: I ? S.isRoleHigher(a, n.id, E, e) : (null === (s = e.tags) || void 0 === s ? void 0 : s.guild_connections) === null && t.id === n.id
                         }, e.id)
                     });
                 return (0, i.jsx)(l.ListNavigatorProvider, {
@@ -215310,8 +215421,8 @@
                                     buttonRef: k,
                                     guild: a,
                                     guildMember: _,
-                                    highestRole: I,
-                                    onAddRole: A,
+                                    highestRole: E,
+                                    onAddRole: h,
                                     compact: D.length > 0
                                 })]
                             })
@@ -215328,28 +215439,28 @@
                     onOpenProfile: s
                 } = e, {
                     trackUserProfileAction: o
-                } = (0, A.useUserProfileAnalyticsContext)(), l = (0, u.useStateFromStores)([T.default], () => T.default.getMember(a.id, t.id)), d = null == l ? void 0 : l.roles, c = null == d || 0 === d.length, E = h.getHighestRole(a, n.id), [f] = (0, u.useStateFromStoresArray)([S.default], () => [S.default.can(N.Permissions.MANAGE_ROLES, a), null != a ? S.default.getGuildVersion(a.id) : null]), m = r.useCallback(e => {
+                } = (0, h.useUserProfileAnalyticsContext)(), l = (0, u.useStateFromStores)([I.default], () => I.default.getMember(a.id, t.id)), d = null == l ? void 0 : l.roles, c = null == d || 0 === d.length, T = S.getHighestRole(a, n.id), [A] = (0, u.useStateFromStoresArray)([f.default], () => [f.default.can(N.Permissions.MANAGE_ROLES, a), null != a ? f.default.getGuildVersion(a.id) : null]), m = r.useCallback(e => {
                     var n, i;
                     o({
                         action: "REMOVE_ROLE"
                     });
                     let r = null !== (i = null == d ? void 0 : d.filter(t => t !== e.id)) && void 0 !== i ? i : [];
-                    (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) === null ? _.default.unassignGuildRoleConnection(a.id, e.id) : I.default.updateMemberRoles(a.id, t.id, r, [], [e.id])
+                    (null === (n = e.tags) || void 0 === n ? void 0 : n.guild_connections) === null ? _.default.unassignGuildRoleConnection(a.id, e.id) : E.default.updateMemberRoles(a.id, t.id, r, [], [e.id])
                 }, [d, a.id, t.id, o]), p = r.useCallback(e => {
                     o({
                         action: "ADD_ROLE"
                     });
-                    let n = null != d ? d : []; - 1 === n.indexOf(e) && (n = n.concat([e])), I.default.updateMemberRoles(a.id, t.id, n, [e], [])
+                    let n = null != d ? d : []; - 1 === n.indexOf(e) && (n = n.concat([e])), E.default.updateMemberRoles(a.id, t.id, n, [e], [])
                 }, [d, a.id, t.id, o]);
-                return c && !f ? null : (0, i.jsx)("div", {
+                return c && !A ? null : (0, i.jsx)("div", {
                     children: (0, i.jsx)(C, {
                         user: t,
                         currentUser: n,
                         guild: a,
                         guildMember: l,
                         userRoles: null != d ? d : [],
-                        highestRole: E,
-                        canManageRoles: f,
+                        highestRole: T,
+                        canManageRoles: A,
                         onAddRole: p,
                         onRemoveRole: m,
                         onOpenProfile: s
@@ -249397,7 +249508,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "efd60b0fc4117dd6352c5c65b3a5f4251f6fd723"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "af17075f47cc328cfd7475a4bae6efb5214fbbf6"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278444,7 +278555,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294150"
+                                build_number: "294160"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285802,7 +285913,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "294150", "294150"), 10);
+                let a = parseInt((n = "294160", "294160"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313483,4 +313594,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.0eb3273a5d532bcc0223.js.map
+//# sourceMappingURL=71586.eb3d74239a8512c2acf1.js.map
