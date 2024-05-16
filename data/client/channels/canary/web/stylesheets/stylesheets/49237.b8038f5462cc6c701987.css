@@ -27816,7 +27816,7 @@ html.disable-forced-colors * {
 .header_c75fa4 {
     box-sizing: border-box;
     color: #fff;
-    font-size: .875rem;
+    font-size: 14px;
     font-weight: 400;
     height: 72px;
     padding: 8px 0;
@@ -27863,7 +27863,7 @@ html.disable-forced-colors * {
     margin-top: 1em;
     padding: 4px;
     color: #fff;
-    font-size: 1rem
+    font-size: 16px
 }
 
 @supports(color:rgba(0, 0, 0, 0))and (top:var(--f)) {
@@ -27963,7 +27963,7 @@ html.disable-forced-colors * {
     border: 2px solid hsl(var(0, calc(0%*var(--saturation-factor, 1)), 100%-hsl)/.8);
     padding: 5px 17px 7px;
     border-radius: 20px;
-    line-height: 1.5rem;
+    line-height: 24px;
     margin-right: 18px
 }
 
@@ -28290,4 +28290,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.7ab40c3b96139247ebd9.css.map*/
+/*# sourceMappingURL=49237.b8038f5462cc6c701987.css.map*/
