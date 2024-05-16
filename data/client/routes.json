@@ -943,13 +943,6 @@
       "PUT"
     ]
   },
-  "UPDATE_VOICE_CHANNEL_BACKGROUND": {
-    "url": "/channels/:param/voice-background",
-    "allowed_methods": [
-      "OPTIONS",
-      "PUT"
-    ]
-  },
   "MESSAGE_DELETE_UPLOAD": {
     "url": "/attachments/:param",
     "allowed_methods": [
