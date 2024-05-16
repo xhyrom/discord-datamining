@@ -12689,7 +12689,13 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 }
 
 .contentImagesBiteSizePopout_f9ea3c {
-    margin-right: 10px
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.namePlatformIconMarginBiteSizePopout_d0b16c {
+    margin-right: 18px
 }
 
 .contentImagesActivityFeed__7b53b,
@@ -12998,10 +13004,11 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 .theme-light .activityBiteSizePopout__67f8f .platformIcon_a2d873 {
     display: block;
     position: absolute;
+    top: 0;
+    right: 0;
     width: 14px;
     height: 14px;
-    top: 8px;
-    right: 8px
+    padding: inherit
 }
 
 .theme-dark .activityProfile__5d0ec .platformIcon_a2d873,
@@ -28283,4 +28290,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.e7160d8307e08433cf5f.css.map*/
+/*# sourceMappingURL=49237.b8038f5462cc6c701987.css.map*/

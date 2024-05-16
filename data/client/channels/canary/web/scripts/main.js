@@ -37067,7 +37067,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294113", ", Version Hash: ").concat("cd51a493ef71c8f1b2dbae2a724eca15ff3444dd")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294123", ", Version Hash: ").concat("19eada6346b933be5f953fddc23151262b73732c")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88306,8 +88306,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294113", "294113"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294113")), t = 0), t
+                let t = parseInt((e = "294123", "294123"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294123")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116029,8 +116029,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294113",
-                    versionHash: "cd51a493ef71c8f1b2dbae2a724eca15ff3444dd"
+                    buildNumber: "294123",
+                    versionHash: "19eada6346b933be5f953fddc23151262b73732c"
                 }
             }
             n.r(t), n.d(t, {
@@ -172642,8 +172642,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715888100656",
-                                    build_number: "294113"
+                                    built_at: "1715888659503",
+                                    build_number: "294123"
                                 }
                             },
                             retries: 1
@@ -249396,7 +249396,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "cd51a493ef71c8f1b2dbae2a724eca15ff3444dd"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "19eada6346b933be5f953fddc23151262b73732c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -257156,19 +257156,27 @@
                 });
 
             function X(e) {
-                let t, {
-                        activity: n
-                    } = e,
-                    i = (0, T.default)();
-                if ((0, m.default)(n) && (t = F.PlatformTypes.SPOTIFY), null != n.platform && [F.ActivityGamePlatforms.PS4, F.ActivityGamePlatforms.PS5].includes(n.platform) && (t = F.PlatformTypes.PLAYSTATION), null == t) return null;
-                let r = f.default.get(t);
+                let {
+                    activity: t
+                } = e, n = null;
+                return (0, m.default)(t) && (n = F.PlatformTypes.SPOTIFY), null != t.platform && [F.ActivityGamePlatforms.PS4, F.ActivityGamePlatforms.PS5].includes(t.platform) && (n = F.PlatformTypes.PLAYSTATION), n
+            }
+
+            function Q(e) {
+                let {
+                    activity: t
+                } = e, n = (0, T.default)(), i = X({
+                    activity: t
+                });
+                if (null == i) return null;
+                let r = f.default.get(i);
                 return (0, s.jsx)("img", {
                     alt: "",
-                    src: (0, c.isThemeLight)(i) ? r.icon.lightSVG : r.icon.darkSVG,
+                    src: (0, c.isThemeLight)(n) ? r.icon.lightSVG : r.icon.darkSVG,
                     className: j.platformIcon
                 })
             }
-            class Q extends(r = o.PureComponent) {
+            class q extends(r = o.PureComponent) {
                 get activity() {
                     let {
                         activity: e,
@@ -257389,20 +257397,24 @@
                     } = e;
                     if (o === F.ActivityTypes.CUSTOM_STATUS) return null;
                     let l = (0, A.default)(e),
-                        u = e.name,
-                        d = u;
-                    return (o === F.ActivityTypes.HANG_STATUS ? d = (0, C.getHangStatusText)(e) : l && null != n ? d = (0, s.jsx)("span", {
-                        className: j.activityName,
-                        children: d
-                    }) : !l && (u = a, d = a, (0, m.default)(e) && null != e.sync_id && null != a ? d = (0, s.jsx)(E.Anchor, {
-                        className: j.bodyLink,
-                        onClick: this.handleOpenSpotifyTrack,
-                        children: a
-                    }) : (0, L.isStageActivity)(e) && (d = e.name)), null == d) ? null : (0, s.jsx)(E.Text, {
-                        title: u,
+                        d = e.name,
+                        _ = d;
+                    if (o === F.ActivityTypes.HANG_STATUS ? _ = (0, C.getHangStatusText)(e) : l && null != n ? _ = (0, s.jsx)("span", {
+                            className: j.activityName,
+                            children: _
+                        }) : !l && (d = a, _ = a, (0, m.default)(e) && null != e.sync_id && null != a ? _ = (0, s.jsx)(E.Anchor, {
+                            className: j.bodyLink,
+                            onClick: this.handleOpenSpotifyTrack,
+                            children: a
+                        }) : (0, L.isStageActivity)(e) && (_ = e.name)), null == _) return null;
+                    let c = null != X({
+                        activity: e
+                    }) && "BiteSizePopout" === this.props.type;
+                    return (0, s.jsx)(E.Text, {
+                        title: d,
                         variant: r ? "text-md/semibold" : "text-sm/semibold",
-                        className: (0, M.getClass)(j, "name", t.bot || this.isStreamerOnTypeProfile() ? "wrap" : "normal"),
-                        children: d
+                        className: u()((0, M.getClass)(j, "name", t.bot || this.isStreamerOnTypeProfile() ? "wrap" : "normal"), c && j.namePlatformIconMarginBiteSizePopout),
+                        children: _
                     })
                 }
                 renderDetails(e) {
@@ -257585,7 +257597,7 @@
                                     children: A
                                 }) : null]
                             })
-                        }), l ? m : null, l || c ? A : null, (0, s.jsx)(X, {
+                        }), l ? m : null, l || c ? A : null, (0, s.jsx)(Q, {
                             activity: o
                         })]
                     })
@@ -257614,7 +257626,7 @@
                     })
                 }
             }
-            W(Q, "Types", i), t.default = Q
+            W(q, "Types", i), t.default = q
         },
         321148: function(e, t, n) {
             "use strict";
@@ -278431,7 +278443,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294113"
+                                build_number: "294123"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285789,7 +285801,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "294113", "294113"), 10);
+                let a = parseInt((n = "294123", "294123"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313470,4 +313482,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.76b69c42c14d2ed1e8ea.js.map
+//# sourceMappingURL=71586.8b0152942e515a85c4b8.js.map
