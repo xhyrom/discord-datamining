@@ -37067,7 +37067,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294082", ", Version Hash: ").concat("e0eb593e385c253887ad1e32cea57f77469b3642")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294085", ", Version Hash: ").concat("8f37c9988a69359d44c6778f95333f1f402fc800")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -41054,6 +41054,8 @@
                 BEGINNING_CHAT_DM_MOBILE: "This is the very beginning of your legendary conversation with !!{username}!!.",
                 MESSAGE_EDITED: "edited",
                 MESSAGE_EDITED_TIMESTAMP_A11Y_LABEL: "Edited !!{timeFormatted}!!",
+                MESSAGE_GAME_ICON_TOOLTIP: "Game message tooltip",
+                MESSAGE_GAME_ICON_TOOLTIP_CONTENT: "This message was sent from !!{applicationName}!!.",
                 EDIT_TEXTAREA_HELP: "escape to [cancel](onCancel) • enter to [save](onSave)",
                 INVALID_VOICE_CHANNEL: "Invalid Channel",
                 INVALID_TEXT_CHANNEL: "invalid-channel",
@@ -88304,8 +88306,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294082", "294082"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294082")), t = 0), t
+                let t = parseInt((e = "294085", "294085"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294085")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116027,8 +116029,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294082",
-                    versionHash: "e0eb593e385c253887ad1e32cea57f77469b3642"
+                    buildNumber: "294085",
+                    versionHash: "8f37c9988a69359d44c6778f95333f1f402fc800"
                 }
             }
             n.r(t), n.d(t, {
@@ -116912,6 +116914,9 @@
                 },
                 ClanDiscoveryCardView: function() {
                     return y
+                },
+                Wildcards: function() {
+                    return L
                 }
             }), n("47120"), n("733860");
             var i = n("735250"),
@@ -116941,19 +116946,15 @@
 
             function L(e) {
                 let {
-                    clan: t
-                } = e, {
-                    wildcardDescriptors: n,
-                    branding: {
-                        primaryColor: a
-                    }
-                } = t, s = n.filter(e => e !== C.EMPTY_WILDCARD).join(", "), l = (0, o.useToken)(o.tokens.colors.BACKGROUND_FLOATING), u = (0, c.getAccessibleClanColor)(a, l.hex()), d = r.useRef(null), [_, E] = r.useState(!1);
+                    wildcardDescriptors: t,
+                    primaryColor: n
+                } = e, a = t.filter(e => e !== C.EMPTY_WILDCARD).join(", "), s = (0, o.useToken)(o.tokens.colors.BACKGROUND_FLOATING), l = (0, c.getAccessibleClanColor)(n, s.hex()), u = r.useRef(null), [d, _] = r.useState(!1);
                 if (r.useEffect(() => {
-                        let e = d.current;
-                        null != e && null != e.offsetWidth && null != e.scrollWidth && E(e.offsetWidth < e.scrollWidth)
-                    }, []), 0 === s.length) return null;
-                let I = null != u ? {
-                    color: u.css()
+                        let e = u.current;
+                        null != e && null != e.offsetWidth && null != e.scrollWidth && _(e.offsetWidth < e.scrollWidth)
+                    }, []), 0 === a.length) return null;
+                let E = null != l ? {
+                    color: l.css()
                 } : void 0;
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(o.Text, {
@@ -116962,15 +116963,15 @@
                         className: g.clanInfoItem,
                         children: "\xb7"
                     }), (0, i.jsx)(o.Tooltip, {
-                        text: s,
+                        text: a,
                         color: o.Tooltip.Colors.PRIMARY,
-                        shouldShow: _,
+                        shouldShow: d,
                         children: e => (0, i.jsx)("span", {
                             ...e,
-                            style: I,
+                            style: E,
                             className: g.wildCardText,
-                            ref: d,
-                            children: s
+                            ref: u,
+                            children: a
                         })
                     })]
                 })
@@ -116979,10 +116980,11 @@
             function v(e) {
                 let {
                     trait: t,
-                    isHighlighted: n
+                    isHighlighted: n,
+                    className: r
                 } = e;
                 return (0, i.jsx)("div", {
-                    className: s()(g.trait, {
+                    className: s()(r, g.trait, {
                         [g.highlightedTrait]: n
                     }),
                     children: (0, i.jsx)(o.Text, {
@@ -116998,19 +117000,21 @@
                 let {
                     traits: t,
                     traitsToHighlight: n,
-                    expanded: a
-                } = e, s = r.useMemo(() => new Set(n), [n]);
+                    expanded: a,
+                    traitClassName: s
+                } = e, l = r.useMemo(() => new Set(n), [n]);
                 return a ? (0, i.jsx)("div", {
                     className: g.expandedTraitsContainer,
                     children: t.map(e => (0, i.jsx)(v, {
+                        className: s,
                         trait: e,
-                        isHighlighted: s.has(e)
+                        isHighlighted: l.has(e)
                     }, e))
                 }) : (0, i.jsx)(p.default, {
                     items: t,
                     renderItem: e => (0, i.jsx)(v, {
                         trait: e,
-                        isHighlighted: s.has(e)
+                        isHighlighted: l.has(e)
                     }, e),
                     renderOverflow: e => (0, i.jsx)(o.Tooltip, {
                         text: (0, i.jsx)("div", {
@@ -117214,7 +117218,8 @@
                                     className: g.clanInfoItem,
                                     children: null !== (n = (0, C.getPlaystyleTitle)(r.playstyle)) && void 0 !== n ? n : R.default.Messages.CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE
                                 }), (0, i.jsx)(L, {
-                                    clan: r
+                                    wildcardDescriptors: r.wildcardDescriptors,
+                                    primaryColor: r.branding.primaryColor
                                 })]
                             })]
                         }), (0, i.jsx)("div", {
@@ -172637,8 +172642,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715886204544",
-                                    build_number: "294082"
+                                    built_at: "1715886384164",
+                                    build_number: "294085"
                                 }
                             },
                             retries: 1
@@ -249391,7 +249396,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "e0eb593e385c253887ad1e32cea57f77469b3642"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8f37c9988a69359d44c6778f95333f1f402fc800"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -269297,6 +269302,78 @@
                 })
             }
         },
+        51063: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return I
+                }
+            }), n("789020");
+            var i = n("735250");
+            n("470079");
+            var r = n("913527"),
+                a = n.n(r),
+                s = n("481060"),
+                o = n("835473"),
+                l = n("366695"),
+                u = n("630388"),
+                d = n("981631"),
+                _ = n("689938"),
+                c = n("707533");
+
+            function E(e) {
+                let {
+                    application: t,
+                    messageTimestamp: n
+                } = e;
+                return (0, i.jsxs)(i.Fragment, {
+                    children: [(0, i.jsx)(l.default, {
+                        size: l.default.Sizes.LARGE,
+                        game: t
+                    }), (0, i.jsxs)("div", {
+                        className: c.textContainer,
+                        children: [(0, i.jsx)(s.Text, {
+                            className: c.timestamp,
+                            variant: "text-xs/medium",
+                            color: "text-muted",
+                            children: a()(n).format("LLLL")
+                        }), (0, i.jsx)(s.Text, {
+                            variant: "text-md/normal",
+                            color: "interactive-active",
+                            children: _.default.Messages.MESSAGE_GAME_ICON_TOOLTIP_CONTENT.format({
+                                applicationName: t.name
+                            })
+                        })]
+                    })]
+                })
+            }
+
+            function I(e) {
+                let {
+                    message: t
+                } = e, n = (0, o.useGetOrFetchApplication)(t.applicationId);
+                return null != n && (0, u.hasFlag)(n.flags, d.ApplicationFlags.SOCIAL_LAYER_INTEGRATION) ? (0, i.jsx)(s.Tooltip, {
+                    hideOnClick: !0,
+                    position: "top",
+                    "aria-label": _.default.Messages.MESSAGE_GAME_ICON_TOOLTIP,
+                    tooltipClassName: c.gameMessageTooltip,
+                    tooltipContentClassName: c.gameMessageTooltipContent,
+                    text: (0, i.jsx)(E, {
+                        application: n,
+                        messageTimestamp: t.timestamp
+                    }),
+                    children: e => (0, i.jsx)(s.Clickable, {
+                        tag: "span",
+                        ...e,
+                        children: (0, i.jsx)(l.default, {
+                            className: c.gameIcon,
+                            size: l.default.Sizes.XXSMALL,
+                            game: n
+                        })
+                    })
+                }) : null
+            }
+        },
         534761: function(e, t, n) {
             "use strict";
             n.r(t);
@@ -269700,7 +269777,7 @@
                     return r
                 },
                 default: function() {
-                    return R
+                    return g
                 }
             });
             var i, r, a = n("735250"),
@@ -269720,90 +269797,91 @@
                 A = n("484459"),
                 m = n("467679"),
                 N = n("768581"),
-                p = n("981631"),
-                O = n("822545");
+                p = n("51063"),
+                O = n("981631"),
+                C = n("822545");
 
-            function C(e) {
+            function R(e) {
                 let {
                     compact: t
                 } = e;
                 return (0, a.jsx)(m.default, {
-                    className: t ? O.botTagCompact : O.botTagCozy,
+                    className: t ? C.botTagCompact : C.botTagCozy,
                     type: m.default.Types.REMIX,
                     useRemSizes: !0
                 })
             }
 
-            function R(e) {
+            function g(e) {
                 let t, {
                         author: n,
                         message: i,
                         userOverride: r,
                         compact: o = !1,
                         withMentionPrefix: m = !1,
-                        showPopout: R = !1,
-                        className: g,
-                        onClick: L,
-                        onContextMenu: v,
-                        onPopoutRequestClose: D,
-                        renderPopout: M,
-                        renderRemixTag: y = !1,
-                        decorations: P
+                        showPopout: g = !1,
+                        className: L,
+                        onClick: v,
+                        onContextMenu: D,
+                        onPopoutRequestClose: M,
+                        renderPopout: y,
+                        renderRemixTag: P = !1,
+                        decorations: U
                     } = e,
-                    U = s.useContext(f.default),
+                    b = s.useContext(f.default),
                     {
-                        analyticsLocations: b
+                        analyticsLocations: G
                     } = (0, I.default)(E.default.USERNAME),
-                    G = m ? "@" : "",
+                    w = m ? "@" : "",
                     {
-                        nick: w,
-                        colorString: k,
-                        colorRoleName: B
+                        nick: k,
+                        colorString: B,
+                        colorRoleName: V
                     } = n,
-                    V = null != i.messageReference && null != i.webhookId,
-                    x = (0, d.useStateFromStores)([c.default], () => c.default.roleStyle),
-                    F = (0, h.useCanSeeRemixBadge)(),
-                    H = s.useMemo(() => ({
-                        source: p.AnalyticsSections.CHANNEL,
+                    x = null != i.messageReference && null != i.webhookId,
+                    F = (0, d.useStateFromStores)([c.default], () => c.default.roleStyle),
+                    H = (0, h.useCanSeeRemixBadge)(),
+                    Y = s.useMemo(() => ({
+                        source: O.AnalyticsSections.CHANNEL,
                         messageId: i.id,
                         tagUserId: i.author.id
                     }), [i.id, i.author.id]),
-                    Y = {
-                        className: O.username,
-                        style: "username" === x && null != k ? {
-                            color: k
+                    j = {
+                        className: C.username,
+                        style: "username" === F && null != B ? {
+                            color: B
                         } : void 0,
-                        onClick: L,
-                        onContextMenu: v,
+                        onClick: v,
+                        onContextMenu: D,
                         children: o ? (0, a.jsxs)(a.Fragment, {
-                            children: [G + w, (0, a.jsx)(T.default, {
+                            children: [w + k, (0, a.jsx)(T.default, {
                                 clan: n.clan,
                                 userId: i.author.id,
-                                contextGuildId: U,
-                                className: O.clanTagChiplet,
-                                profileViewedAnalytics: H
+                                contextGuildId: b,
+                                className: C.clanTagChiplet,
+                                profileViewedAnalytics: Y
                             })]
                         }) : (0, a.jsx)(a.Fragment, {
-                            children: G + w
+                            children: w + k
                         })
                     };
-                t = null != M && null != R ? (0, a.jsx)(_.Popout, {
-                    preload: V ? void 0 : function() {
+                t = null != y && null != g ? (0, a.jsx)(_.Popout, {
+                    preload: x ? void 0 : function() {
                         let e = null != r ? r : i.author;
-                        return (0, A.maybeFetchUserProfileForPopout)(e.id, null != n.guildMemberAvatar && null != U ? (0, N.getGuildMemberAvatarURLSimple)({
-                            guildId: U,
+                        return (0, A.maybeFetchUserProfileForPopout)(e.id, null != n.guildMemberAvatar && null != b ? (0, N.getGuildMemberAvatarURLSimple)({
+                            guildId: b,
                             userId: e.id,
                             avatar: n.guildMemberAvatar,
                             size: 80
-                        }) : e.getAvatarURL(U, 80), {
-                            guildId: U,
+                        }) : e.getAvatarURL(b, 80), {
+                            guildId: b,
                             channelId: i.channel_id
                         })
                     },
-                    renderPopout: M,
-                    shouldShow: R,
+                    renderPopout: y,
+                    shouldShow: g,
                     position: u.isMobile ? "window_center" : "right",
-                    onRequestClose: D,
+                    onRequestClose: M,
                     children: e => {
                         let {
                             onClick: t,
@@ -269812,33 +269890,37 @@
                         return (0, a.jsx)(_.Clickable, {
                             tag: "span",
                             ...n,
-                            ...Y,
-                            className: l()(Y.className, O.clickable, g)
+                            ...j,
+                            className: l()(j.className, C.clickable, L)
                         })
                     }
                 }) : (0, a.jsx)(_.Clickable, {
-                    ...Y,
-                    className: l()(Y.className, g)
+                    ...j,
+                    className: l()(j.className, L)
                 });
-                let j = null != P ? P[0] : null,
-                    W = null != P ? P[1] : null;
+                let W = null != U ? U[0] : null,
+                    K = null != U ? U[1] : null;
                 return (0, a.jsxs)(I.AnalyticsLocationProvider, {
-                    value: b,
-                    children: [null != j && o ? (0, a.jsxs)(a.Fragment, {
-                        children: [" ", j, " "]
-                    }) : null, "dot" === x ? (0, a.jsx)(_.RoleDot, {
-                        color: k,
-                        name: B,
-                        className: O.roleDot
-                    }) : null, t, !o && (0, a.jsx)(T.default, {
-                        clan: n.clan,
-                        userId: i.author.id,
-                        contextGuildId: U,
-                        className: O.clanTagChiplet,
-                        profileViewedAnalytics: H
-                    }), null != W ? (0, a.jsx)(a.Fragment, {
-                        children: W
-                    }) : null, null == j || o ? null : j, null != i && (0, S.default)(i) && F && y ? (0, a.jsx)(C, {}) : null]
+                    value: G,
+                    children: [null != W && o ? (0, a.jsxs)(a.Fragment, {
+                        children: [" ", W, " "]
+                    }) : null, "dot" === F ? (0, a.jsx)(_.RoleDot, {
+                        color: B,
+                        name: V,
+                        className: C.roleDot
+                    }) : null, t, !o && (0, a.jsxs)(a.Fragment, {
+                        children: [(0, a.jsx)(T.default, {
+                            clan: n.clan,
+                            userId: i.author.id,
+                            contextGuildId: b,
+                            className: C.clanTagChiplet,
+                            profileViewedAnalytics: Y
+                        }), (0, a.jsx)(p.default, {
+                            message: i
+                        })]
+                    }), null != K ? (0, a.jsx)(a.Fragment, {
+                        children: K
+                    }) : null, null == W || o ? null : W, null != i && (0, S.default)(i) && H && P ? (0, a.jsx)(R, {}) : null]
                 })
             }(i = r || (r = {}))[i.SYSTEM_TAG = 0] = "SYSTEM_TAG", i[i.BADGES = 1] = "BADGES"
         },
@@ -278349,7 +278431,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294082"
+                                build_number: "294085"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285707,7 +285789,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "294082", "294082"), 10);
+                let a = parseInt((n = "294085", "294085"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313388,4 +313470,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.bb909aec06b8678987c5.js.map
+//# sourceMappingURL=71586.6a6ab4572648a9bd346a.js.map

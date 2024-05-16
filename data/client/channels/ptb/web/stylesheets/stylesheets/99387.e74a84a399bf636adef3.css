@@ -44605,7 +44605,8 @@ img.thumbnail__18ece {
 }
 
 .fixedWidthSidebar__39d7a {
-    flex: 0 0 262px
+    flex: 0 0 262px;
+    width: 262px
 }
 
 .stepNum_b5f2f3,
@@ -44875,15 +44876,28 @@ img.thumbnail__18ece {
     border-color: var(--brand-experiment)
 }
 
-.traitsContainer__01c4b {
-    padding: 16px 12px;
-    -o-border-image: linear-gradient(180deg, transparent 0%, var(--border-strong)100%)1;
-    border-image: linear-gradient(180deg, transparent 0%, var(--border-strong)100%)1;
-    border-width: 1px;
-    border-style: solid
+.description_ea6699 {
+    position: relative;
+    border: 1px solid var(--border-strong);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 12px 12px 16px
 }
 
-.tagsCount_f1c2de {
+.descriptionText_bcd405 {
+    margin-top: 4px
+}
+
+.tagsContainer__3f5f9 {
+    position: relative;
+    padding: 16px 8px 12px 12px;
+    border: 1px solid var(--border-strong);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top: none
+}
+
+.tagsCount__9f3ec {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -44891,8 +44905,56 @@ img.thumbnail__18ece {
     margin-bottom: 4px
 }
 
-.tags_ec9b5d {
+.tags_ec044d {
     fill: var(--text-muted)
+}
+
+.trait_d1186b {
+    padding: 8px 12px;
+    border-radius: 16px;
+    margin: 0 4px 4px 0
+}
+
+.clanInfoRow_e038da {
+    display: flex;
+    gap: 4px;
+    align-items: center
+}
+
+.clanInfoItem_d2f9bc {
+    flex: 0 0 auto
+}
+
+.descriptionMask_d8fc7b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, var(--bg-surface-overlay)0%, rgba(17, 18, 20, .9)100%)
+}
+
+.descriptionBorderMask__08213 {
+    -o-border-image: linear-gradient(180deg, transparent 0%, var(--border-strong)100%)1;
+    border-image: linear-gradient(180deg, transparent 0%, var(--border-strong)100%)1
+}
+
+.traitsMask__094bf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(17, 18, 20, .9)0%, var(--bg-surface-overlay)90%)
+}
+
+.traitsBorderMask__07042 {
+    -o-border-image: linear-gradient(180deg, var(--border-strong)0%, transparent 90%)1;
+    border-image: linear-gradient(180deg, var(--border-strong)0%, transparent 90%)1
+}
+
+.wildCardText_c764c9 {
+    margin-left: 4px
 }
 
 .toolbar__2fcb0 {
@@ -70477,8 +70539,8 @@ html .invoiceCancelRow_aa7946 {
 }
 
 .planInfo_c12dc8 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     margin-top: 8px
 }
 
@@ -137532,4 +137594,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.432e21beaf386db11f96.css.map*/
+/*# sourceMappingURL=99387.e74a84a399bf636adef3.css.map*/
