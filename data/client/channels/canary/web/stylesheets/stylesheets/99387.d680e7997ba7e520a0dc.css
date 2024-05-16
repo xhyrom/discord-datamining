@@ -17939,9 +17939,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 .applicationInstallButtonContent__4b859 {
     display: flex;
     flex-direction: row;
-    flex: 1;
-    min-width: -moz-max-content;
-    min-width: max-content
+    flex: 1
 }
 
 .applicationInstallButtonText__90897 {
@@ -48876,8 +48874,8 @@ div:has(>div>.modal__06f49) {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -132198,7 +132196,7 @@ div.nagbar_c731ff {
     position: absolute;
     top: 16px;
     right: 16px;
-    left: 160px;
+    width: calc(100% - 176px);
     display: flex;
     justify-content: space-between;
     align-items: flex-start
@@ -132230,7 +132228,8 @@ div.nagbar_c731ff {
 
 .relationshipButtons_b880ad {
     display: flex;
-    align-items: center
+    align-items: center;
+    overflow: hidden
 }
 
 .additionalActionsIcon__6b109 {
@@ -137570,4 +137569,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.a3904e59c2969faa9d15.css.map*/
+/*# sourceMappingURL=99387.d680e7997ba7e520a0dc.css.map*/
