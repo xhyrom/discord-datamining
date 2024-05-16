@@ -50517,8 +50517,8 @@ div:has(>div>.modal__06f49) {
 }
 
 .name__4eb92 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -137471,4 +137471,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.ec9aa75cdf41e99f100b.css.map*/
+/*# sourceMappingURL=99387.13db742e2ceb1d7b3649.css.map*/
