@@ -300,37 +300,6 @@
   {
     "data": {
       "kind": "guild",
-      "hash": 747043176,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {},
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
       "hash": 848173753,
       "holdout": {
         "name": null,
@@ -463,53 +432,6 @@
           ]
         }
       ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 968663312,
-      "holdout": {
-        "name": null,
-        "bucket": null
-      },
-      "aa_mode": false
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "997637077099364383",
-          "743213213142876203",
-          "943265993613008967",
-          "809943708283830302",
-          "281683040739262465",
-          "1083177865400553502",
-          "877393448309772319",
-          "855181690824425512",
-          "814196235741167637",
-          "409190184744255490",
-          "1096494224343584858",
-          "1070131921218174976",
-          "308304292006330369"
-        ]
-      },
-      "overrides_formatted": []
     }
   },
   {
@@ -8359,31 +8281,6 @@
   },
   {
     "data": {
-      "kind": "guild",
-      "id": "2024-01_voice_call_backgrounds_mobile",
-      "label": "Custom backgrounds for mobile voice calls",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable custom voice backgrounds (full set)",
-        "Treatment 2: Enable custom voice backgrounds (small set)"
-      ],
-      "hash": 326566519,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "user",
       "id": "2024-01_voice_user_game_activity",
       "label": "Voice User Game Activity",
@@ -8611,6 +8508,107 @@
   {
     "data": {
       "kind": "user",
+      "id": "2024-02_safety_hub_guild_violation_in_app_appeals",
+      "label": "Safety Hub Guild Violation In App Appeals",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Allow guild violations to be applied using the new appeals ingestion flow"
+      ],
+      "hash": 668094544,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 747043176,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {},
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 968663312,
+      "holdout": {
+        "name": null,
+        "bucket": null
+      },
+      "aa_mode": false
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "997637077099364383",
+          "743213213142876203",
+          "943265993613008967",
+          "809943708283830302",
+          "281683040739262465",
+          "1083177865400553502",
+          "877393448309772319",
+          "855181690824425512",
+          "814196235741167637",
+          "409190184744255490",
+          "1096494224343584858",
+          "1070131921218174976",
+          "308304292006330369"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2024-02_family_center_vc_join",
       "label": "Family Center VC Join",
       "description": [
@@ -8745,29 +8743,6 @@
       "aa_mode": false,
       "config_keys": [
         "nvEnableNewPresets"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-02_safety_hub_guild_violation_in_app_appeals",
-      "label": "Safety Hub Guild Violation In App Appeals",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Allow guild violations to be applied using the new appeals ingestion flow"
-      ],
-      "hash": 668094544,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
       ]
     }
   },
@@ -11007,6 +10982,29 @@
   {
     "data": {
       "kind": "user",
+      "id": "2024-05_desktop_user_settings_search",
+      "label": "Desktop User Settings Search",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable User Settings Search on Desktop"
+      ],
+      "hash": 1800298008,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2024-05_desktop_visual_refresh",
       "label": "Desktop Visual Refresh",
       "description": [
@@ -11015,6 +11013,29 @@
         "Treatment 1: Refresh Enabled"
       ],
       "hash": 1585279012,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-05_enable_stripe_link_on_split_cardelement",
+      "label": "Enable Stripe Link Experiment on Split CardElement",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Stripe Link"
+      ],
+      "hash": 2700487382,
       "buckets": [
         -1,
         0,
@@ -11061,6 +11082,29 @@
         "Treatment 1: Variant 1"
       ],
       "hash": 1412791758,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "holdout": {},
+      "aa_mode": false,
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2024-05_server_settings_in_user_settings",
+      "label": "Server privacy settings in user settings menu",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Server Settings in user settings"
+      ],
+      "hash": 1348950821,
       "buckets": [
         -1,
         0,
@@ -11697,29 +11741,6 @@
   },
   {
     "data": {
-      "kind": "user",
-      "id": "2024-05_desktop_user_settings_search",
-      "label": "Desktop User Settings Search",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable User Settings Search on Desktop"
-      ],
-      "hash": 1800298008,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "guild",
       "hash": 1865413295,
       "holdout": {
@@ -12238,29 +12259,6 @@
             }
           ]
         }
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2024-05_enable_stripe_link_on_split_cardelement",
-      "label": "Enable Stripe Link Experiment on Split CardElement",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable Stripe Link"
-      ],
-      "hash": 2700487382,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "holdout": {},
-      "aa_mode": false,
-      "config_keys": [
-        "enabled"
       ]
     }
   },
