@@ -93319,7 +93319,6 @@ input::-webkit-inner-spin-button {
     align-items: flex-start;
     padding: 24px;
     opacity: 0;
-    pointer-events: none;
     transition: all.1s ease-in-out;
     border-radius: 20px;
     z-index: 20
@@ -137596,4 +137595,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.727fc9ef7c365ceacaf5.css.map*/
+/*# sourceMappingURL=99387.29eb749e74158b7244bb.css.map*/
