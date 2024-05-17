@@ -15077,8 +15077,8 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .title_bdbe69 {
     font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     text-transform: uppercase
 }
 
@@ -15168,8 +15168,8 @@ h3.improved_e02592:after {
     display: flex;
     align-items: center;
     border-radius: 5px;
-    font-size: 1rem;
-    line-height: 1.125rem;
+    font-size: 16px;
+    line-height: 18px;
     padding: 16px
 }
 
@@ -28291,4 +28291,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.20774ae7e9f8381689d1.css.map*/
+/*# sourceMappingURL=49237.1ace769add1bd9d9e0ae.css.map*/
