@@ -37054,7 +37054,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294607", ", Version Hash: ").concat("de50758c4b2a78fb176a56a26c4a184482ebd95c")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294611", ", Version Hash: ").concat("4125de627349f2f713fc35e7d63bad369b4c2ff3")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55455,6 +55455,8 @@
                 QUESTS_OTHER: "OTHER QUESTS",
                 QUESTS_ALL: "All Quests",
                 QUESTS_COMPLETED: "Completed Quests",
+                QUESTS_PROMOTED_BY_GUILD: "Promoted by $[{guildName}]({guildHook})",
+                QUESTS_PROMOTED_BY_BRAND: "Promoted by **{brandName}**",
                 QUESTS_REWARD_VERIFICATION_TITLE: "Verify your account to claim rewards!",
                 QUESTS_REWARD_VERIFICATION_BODY: "We have sent a verification email to: [{emailAddress}]({emailAddressLink})",
                 QUESTS_REWARD_VERIFICATION_ERROR: "Uh oh! We failed to send you a verification email.",
@@ -88315,8 +88317,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294607", "294607"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294607")), t = 0), t
+                let t = parseInt((e = "294611", "294611"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294611")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116139,8 +116141,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294607",
-                    versionHash: "de50758c4b2a78fb176a56a26c4a184482ebd95c"
+                    buildNumber: "294611",
+                    versionHash: "4125de627349f2f713fc35e7d63bad369b4c2ff3"
                 }
             }
             n.r(t), n.d(t, {
@@ -172820,8 +172822,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715989518246",
-                                    build_number: "294607"
+                                    built_at: "1715989909968",
+                                    build_number: "294611"
                                 }
                             },
                             retries: 1
@@ -189066,31 +189068,34 @@
                     return r
                 },
                 useDismissNewQuestBadge: function() {
-                    return L
-                },
-                useExpiredQuestsMap: function() {
-                    return p
-                },
-                useIsQuestExpired: function() {
-                    return O
-                },
-                useQuestCollectibles: function() {
                     return D
                 },
-                useQuestFormattedDate: function() {
+                useExpiredQuestsMap: function() {
                     return C
                 },
+                useFilteredQuests: function() {
+                    return O
+                },
+                useIsQuestExpired: function() {
+                    return R
+                },
+                useQuestCollectibles: function() {
+                    return y
+                },
+                useQuestFormattedDate: function() {
+                    return g
+                },
                 useQuestFromActivities: function() {
-                    return v
+                    return M
                 },
                 useQuestInstructionTitle: function() {
-                    return R
+                    return L
                 },
                 useQuests: function() {
                     return N
                 },
                 useQuestsForSettingsBadge: function() {
-                    return g
+                    return v
                 }
             }), n("47120"), n("653041");
             var i, r, a, s, o = n("470079"),
@@ -189132,7 +189137,69 @@
                 }
             }
 
-            function p() {
+            function p(e, t, n) {
+                return e.localeCompare(t) * (0 === n ? -1 : 1)
+            }(a = i || (i = {}))[a.DESC = 0] = "DESC", a[a.ASC = 1] = "ASC";
+
+            function O(e) {
+                let {
+                    quests: t,
+                    isFetchingCurrentQuests: n
+                } = N({
+                    fetchPolicy: "cache-and-network"
+                }), i = function(e) {
+                    let t = o.useMemo(() => e.filter(e => {
+                            var t;
+                            return !((null === (t = e.userStatus) || void 0 === t ? void 0 : t.completedAt) != null)
+                        }), [e]),
+                        n = o.useRef([]);
+                    return o.useMemo(() => {
+                        if (0 === t.length) return [];
+                        if (n.current.length > 0) return n.current;
+                        let e = t.sort((e, t) => {
+                            var n, i, r, a, s, o;
+                            let l = !(0, T.isQuestExpired)(e),
+                                u = !(0, T.isQuestExpired)(t);
+                            if (l !== u) return l ? -1 : 1;
+                            let d = (null === (n = e.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null,
+                                _ = (null === (i = t.userStatus) || void 0 === i ? void 0 : i.enrolledAt) != null,
+                                c = d && l;
+                            if (c !== (_ && u)) return c ? -1 : 1;
+                            let E = (0, T.isTargetedForContent)(e, I.QuestContent.QUEST_BAR),
+                                f = (0, T.isTargetedForContent)(t, I.QuestContent.QUEST_BAR),
+                                S = E && l;
+                            if (S !== (f && u)) return S ? -1 : 1;
+                            let h = d && !l;
+                            return h !== (_ && !u) ? h ? -1 : 1 : l && u ? p(null === (s = e.config) || void 0 === s ? void 0 : s.expiresAt, null === (o = t.config) || void 0 === o ? void 0 : o.expiresAt, 1) : p(null === (r = e.config) || void 0 === r ? void 0 : r.expiresAt, null === (a = t.config) || void 0 === a ? void 0 : a.expiresAt, 0)
+                        });
+                        return n.current = e, e
+                    }, [t])
+                }(t), r = function(e) {
+                    let t = o.useMemo(() => e.filter(e => {
+                            var t;
+                            return (null === (t = e.userStatus) || void 0 === t ? void 0 : t.completedAt) != null
+                        }), [e]),
+                        n = o.useRef([]);
+                    return o.useMemo(() => {
+                        if (0 === t.length) return [];
+                        if (n.current.length > 0) return n.current;
+                        let e = t.sort((e, t) => {
+                            var n, i, r, a;
+                            let s = (null === (n = e.userStatus) || void 0 === n ? void 0 : n.claimedAt) == null;
+                            if (s !== ((null === (i = t.userStatus) || void 0 === i ? void 0 : i.claimedAt) == null)) return s ? -1 : 1;
+                            let o = null === (r = e.config) || void 0 === r ? void 0 : r.rewardCodeExpiresAt;
+                            return p(o, null === (a = t.config) || void 0 === a ? void 0 : a.rewardCodeExpiresAt, 1)
+                        });
+                        return n.current = e, e
+                    }, [t])
+                }(t), a = [];
+                return {
+                    quests: a = "incomplete" === e ? i : r,
+                    isFetchingCurrentQuests: n
+                }
+            }
+
+            function C() {
                 let {
                     quests: e,
                     isFetchingCurrentQuests: t
@@ -189159,15 +189226,15 @@
                 }, [e, t]), n
             }
 
-            function O(e) {
-                let t = p();
+            function R(e) {
+                let t = C();
                 return o.useMemo(() => {
                     var n;
                     return null != e && null !== (n = t.get(e.id)) && void 0 !== n && n
                 }, [e, t])
             }
 
-            function C(e) {
+            function g(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
                         dateStyle: "short"
                     },
@@ -189175,7 +189242,7 @@
                 return o.useMemo(() => null == e ? "" : new Date(e).toLocaleDateString(n, t), [e, t, n])
             }
 
-            function R(e, t) {
+            function L(e, t) {
                 return ((0, f.useIsEligibleForQuestPlaytime)({
                     location: t
                 }) && (0, T.hasPlaytimeTaskVariant)({
@@ -189186,13 +189253,13 @@
                 })
             }
 
-            function g() {
+            function v() {
                 let {
                     quests: e,
                     isFetchingCurrentQuests: t
                 } = N({
                     fetchPolicy: "cache-or-network"
-                }), n = p();
+                }), n = C();
                 return o.useMemo(() => {
                     let i = [];
                     if (t || 0 === e.length) return i;
@@ -189214,23 +189281,23 @@
                 }, [e, n, t])
             }
 
-            function L() {
-                let e = g();
+            function D() {
+                let e = v();
                 o.useEffect(() => {
                     for (let t of e)(0, c.dismissQuestContent)(t.id, I.QuestContent.GIFT_INVENTORY_SETTINGS_BADGE)
                 }, [e])
             }
 
-            function v(e) {
+            function M(e) {
                 let t = (0, h.useIsEligibleForMembersListQuestEntrypoint)({
                         location: A.QuestsExperimentLocations.MEMBERS_LIST
                     }),
                     n = (0, u.useStateFromStores)([E.default], () => t ? E.default.quests : null),
                     i = o.useMemo(() => (0, T.getQuestsFromActivities)(n, e), [e, n]);
-                return O(i) ? null : i
+                return R(i) ? null : i
             }
 
-            function D(e) {
+            function y(e) {
                 var t;
                 let n = (0, T.hasQuestCollectibleRewards)(e),
                     {
@@ -189242,7 +189309,7 @@
                     avatarDecoration: null == i ? void 0 : null === (t = i.items) || void 0 === t ? void 0 : t[0],
                     isFetching: r
                 }
-            }(a = i || (i = {}))[a.DESC = 0] = "DESC", a[a.ASC = 1] = "ASC", (s = r || (r = {})).INCOMPLETE = "incomplete", s.COMPLETE = "complete"
+            }(s = r || (r = {})).INCOMPLETE = "incomplete", s.COMPLETE = "complete"
         },
         687744: function(e, t, n) {
             "use strict";
@@ -249627,7 +249694,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "de50758c4b2a78fb176a56a26c4a184482ebd95c"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "4125de627349f2f713fc35e7d63bad369b4c2ff3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278719,7 +278786,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294607"
+                                build_number: "294611"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286077,7 +286144,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "294607", "294607"), 10);
+                let a = parseInt((n = "294611", "294611"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -312911,7 +312978,7 @@
                 QuestContent: function() {
                     return i
                 }
-            }), (r = i || (i = {}))[r.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", r[r.QUEST_BAR = 1] = "QUEST_BAR", r[r.QUEST_INVENTORY_CARD = 2] = "QUEST_INVENTORY_CARD", r[r.QUESTS_EMBED = 3] = "QUESTS_EMBED", r[r.ACTIVITY_PANEL = 4] = "ACTIVITY_PANEL", r[r.QUEST_LIVE_STREAM = 5] = "QUEST_LIVE_STREAM", r[r.MEMBERS_LIST = 6] = "MEMBERS_LIST", r[r.QUEST_BADGE = 7] = "QUEST_BADGE", r[r.GIFT_INVENTORY_FOR_YOU = 8] = "GIFT_INVENTORY_FOR_YOU", r[r.GIFT_INVENTORY_OTHER = 9] = "GIFT_INVENTORY_OTHER", r[r.QUEST_BAR_V2 = 10] = "QUEST_BAR_V2"
+            }), (r = i || (i = {}))[r.GIFT_INVENTORY_SETTINGS_BADGE = 0] = "GIFT_INVENTORY_SETTINGS_BADGE", r[r.QUEST_BAR = 1] = "QUEST_BAR", r[r.QUEST_INVENTORY_CARD = 2] = "QUEST_INVENTORY_CARD", r[r.QUESTS_EMBED = 3] = "QUESTS_EMBED", r[r.ACTIVITY_PANEL = 4] = "ACTIVITY_PANEL", r[r.QUEST_LIVE_STREAM = 5] = "QUEST_LIVE_STREAM", r[r.MEMBERS_LIST = 6] = "MEMBERS_LIST", r[r.QUEST_BADGE = 7] = "QUEST_BADGE", r[r.GIFT_INVENTORY_FOR_YOU = 8] = "GIFT_INVENTORY_FOR_YOU", r[r.GIFT_INVENTORY_OTHER = 9] = "GIFT_INVENTORY_OTHER", r[r.QUEST_BAR_V2 = 10] = "QUEST_BAR_V2", r[r.QUEST_HOME_DESKTOP = 11] = "QUEST_HOME_DESKTOP"
         },
         551910: function(e, t, n) {
             "use strict";
@@ -313779,4 +313846,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.68cdb0a70268d075e065.js.map
+//# sourceMappingURL=71586.d380a9ee06f9840fe867.js.map
