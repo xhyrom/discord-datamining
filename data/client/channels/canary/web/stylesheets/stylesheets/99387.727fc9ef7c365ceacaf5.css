@@ -46960,13 +46960,16 @@ img.thumbnail__18ece {
     flex: 1
 }
 
-.content__7833e {
+.discoveryContainer__34773 {
     display: flex;
-    flex: 1 1 auto;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-    position: relative
+    height: 100%
+}
+
+.content__7833e {
+    flex: 1;
+    min-height: 0;
+    height: 100%
 }
 
 .toolbar__4e903 {
@@ -132651,6 +132654,17 @@ div.nagbar_c731ff {
     margin-top: 0
 }
 
+.container__2c99f {
+    margin-top: var(--spacing-32);
+    align-self: center
+}
+
+.emptySearchIcon_edf055 {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 8px
+}
+
 .description_fef198 {
     white-space: pre-wrap
 }
@@ -137582,4 +137596,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.aa791ab044cac5035765.css.map*/
+/*# sourceMappingURL=99387.727fc9ef7c365ceacaf5.css.map*/

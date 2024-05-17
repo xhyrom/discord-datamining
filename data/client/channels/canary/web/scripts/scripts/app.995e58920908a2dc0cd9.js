@@ -7149,6 +7149,7 @@
                 card: "card__56b24",
                 container: "container_ec1fbc",
                 content: "content__7833e",
+                discoveryContainer: "discoveryContainer__34773",
                 dragRegion: "dragRegion__53c6d",
                 gradient: "gradient__1ca13",
                 toolbar: "toolbar__4e903",
@@ -26637,6 +26638,13 @@
                 settingsTabBar: "settingsTabBar_c54406",
                 settingsTabBarItem: "settingsTabBarItem__94457",
                 status: "status__58720"
+            }
+        },
+        305373: function(e) {
+            "use strict";
+            e.exports = {
+                container: "container__2c99f",
+                emptySearchIcon: "emptySearchIcon_edf055"
             }
         },
         663563: function(e) {
