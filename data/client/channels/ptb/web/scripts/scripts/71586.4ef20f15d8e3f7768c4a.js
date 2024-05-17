@@ -37054,7 +37054,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294295", ", Version Hash: ").concat("32895396f50a59b26b07cca6ddf50add6f9ce823")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294316", ", Version Hash: ").concat("d8b03454bd620099648200ef09f517ca1735b086")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -56018,6 +56018,7 @@
                 CLAN_SETUP_UTILITY_TRAITS_CATEGORY_LOCALE: "Region",
                 CLAN_SETUP_INTERESTS_TITLE: "What does your Guild like to talk about?",
                 CLAN_SETUP_INTERESTS_SUBTITLE: "Add at least **3 topics** that your Guild discusses or traits that you share. The more niche, the better! Here's some ideas, but you can write in your own.",
+                CLAN_SETUP_INTERESTS_LABEL: "Add a topic",
                 CLAN_SETUP_INTERESTS_PLACEHOLDER: "Anime, Roman History, Sad Hamsters, etc...",
                 CLAN_SETUP_SELECTED_INTERESTS: "Selected Interests",
                 CLAN_SETUP_SUGGESTED_INTERESTS: "Some Ideas...",
@@ -88295,8 +88296,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294295", "294295"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294295")), t = 0), t
+                let t = parseInt((e = "294316", "294316"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294316")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -103429,7 +103430,7 @@
                 b = ["Beginner Friendly", "PUGs", "Inclusive", "Parent Friendly", "Work-life Balance", "Streamers"],
                 G = new Set([...y, ...U, ...b]),
                 w = new Set(["Bulgarian", "Chinese (Simplified)", "Chinese (Traditional)", "Croatian", "Czech", "Danish", "Dutch", "English", "Finnish", "French", "German", "Greek", "Hindi", "Hungarian", "Italian", "Japanese", "Korean", "Lithuanian", "Norwegian", "Polish", "Portuguese", "Romanian", "Russian", "Spanish", "Swedish", "Thai", "Turkish", "Ukrainian", "Vietnamese"]),
-                k = new Set(["anime", "fanart", "venting", "movie nights", "pirate shows", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pics", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "horses", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1", "roman history"]);
+                k = new Set(["anime", "fanart", "venting", "movie nights", "pirate shows", "skincare", "microwaved food", "board games", "sci-fi books", "sleeping", "brunch pics", "pet pics", "recipes", "speedrunning", "eating on mic", "k-pop", "deafened", "programming", "study buddies", "DnD", "lore dumping", "sleepy cats", "podcasts", "houseplants", "knitting", "tech", "keyboards", "horses", "bad movies", "hiking", "lo-fi chilling", "watch together", "listen alongs", "late night tacos", "drip", "trading", "travel", "cups", "coffee", "F1", "roman history", "ssense doomscrolling", "skibidi toilet", "capcut editing", "tiktok rizz party", "industrial grade glycine", "frutiger aero", "y2k", "sanrio", "nuzlockes", "small form factor pcs", "esports", "game modding", "chiikawa", "underground rap", "pc music", "homestuck", "horse hoof cleaning", "analog horror", "pimple popping", "asmr", "ya fiction", "fanfiction", "cosplay", "fanart", "zines", "vtubers", "jrpgs", "retro gaming", "collecting", "coquette", "true crime", "critical role", "cottagecore", "goblincore", "renfaire", "letterboxd"]);
 
             function B() {
                 let e = Object.keys(r).filter(e => isNaN(Number(e)));
@@ -116059,8 +116060,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294295",
-                    versionHash: "32895396f50a59b26b07cca6ddf50add6f9ce823"
+                    buildNumber: "294316",
+                    versionHash: "d8b03454bd620099648200ef09f517ca1735b086"
                 }
             }
             n.r(t), n.d(t, {
@@ -172696,8 +172697,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715902566539",
-                                    build_number: "294295"
+                                    built_at: "1715905584842",
+                                    build_number: "294316"
                                 }
                             },
                             retries: 1
@@ -249480,7 +249481,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "32895396f50a59b26b07cca6ddf50add6f9ce823"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "d8b03454bd620099648200ef09f517ca1735b086"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278573,7 +278574,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294295"
+                                build_number: "294316"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285931,7 +285932,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "294295", "294295"), 10);
+                let a = parseInt((n = "294316", "294316"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313633,4 +313634,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.b39e0ad4ff659fb643bd.js.map
+//# sourceMappingURL=71586.4ef20f15d8e3f7768c4a.js.map
