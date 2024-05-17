@@ -77,7 +77,7 @@
 </ul>
 <h3 id="h_01HRDJ0P8B7CDZT7RNSX7YEHTA"><span style="color: #434343;" data-darkreader-inline-color="">If you manually delete a message - it is no longer stored in Discord and therefore may not be included in your Data Package.</span></h3>
 <h2 id="h_01HRDJ0P8BYVARNQE1KVHFYC7T">Servers</h2>
-<h3 id="h_01HRDJ0P8BNCZW338JDX31115J"><span style="color: #434343;" data-darkreader-inline-color="">If you leave a server before requesting your Data Package, that server will not be included. Your Data Package only includes servers you are a member of at the time of the request as well as any recently-departed servers.</span></h3>
+<h3 id="h_01HRDJ0P8BNCZW338JDX31115J"><span style="color: #434343;" data-darkreader-inline-color="">If you leave a server before requesting your Data Package, that server may not be included. Your Data Package only includes servers you are a member of at the time of the request as well as any recently-departed servers.</span></h3>
 <p>The servers folder contains information for all of the servers that you are a member of. This includes servers that you own. The information provided for each is a little different. There is a JSON file which also contains a full list of the folders included.</p>
 <p>The folder for a server you own will contain the following:</p>
 <ul>
