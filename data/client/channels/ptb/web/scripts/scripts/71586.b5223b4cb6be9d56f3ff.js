@@ -37054,7 +37054,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294350", ", Version Hash: ").concat("594501765d12e3c19af942a79d8224819fce6f5e")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294352", ", Version Hash: ").concat("aa1cc8edc35ebdabe5199930d412fb1ee0ba6b31")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88296,8 +88296,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294350", "294350"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294350")), t = 0), t
+                let t = parseInt((e = "294352", "294352"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294352")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -111773,6 +111773,47 @@
                 }
             }
         },
+        587177: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return a
+                }
+            });
+            var i = n("311850");
+
+            function r(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            class a {
+                static fromServer(e) {
+                    let {
+                        prices: t,
+                        type: n,
+                        premium_type: r,
+                        name: s,
+                        sku_id: o,
+                        summary: l
+                    } = e;
+                    return new a({
+                        prices: (0, i.getPricesFromServer)(t),
+                        type: n,
+                        premiumType: r,
+                        name: s,
+                        skuId: o,
+                        summary: l
+                    })
+                }
+                constructor(e) {
+                    r(this, "prices", void 0), r(this, "type", void 0), r(this, "premiumType", void 0), r(this, "name", void 0), r(this, "skuId", void 0), r(this, "summary", void 0), this.prices = e.prices, this.type = e.type, this.premiumType = e.premiumType, this.name = e.name, this.skuId = e.skuId, this.summary = e.summary
+                }
+            }
+        },
         549616: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -111820,22 +111861,46 @@
                 }
             }
         },
+        311850: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getPricesFromServer: function() {
+                    return r
+                }
+            }), n("724458");
+            var i = n("301766");
+
+            function r(e) {
+                return null == e ? {} : Object.keys(e).reduce((t, n) => {
+                    if (null == e) return t;
+                    let r = e[n];
+                    return t[n] = {
+                        countryPrices: {
+                            countryCode: r.country_prices.country_code,
+                            prices: r.country_prices.prices.map(e => (0, i.getPriceFromServer)(e, !0))
+                        },
+                        paymentSourcePrices: {}
+                    }, t
+                }, {})
+            }
+        },
         778787: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return _
+                    return c
                 }
             }), n("724458"), n("627341"), n("653041");
             var i = n("278074"),
                 r = n("979554"),
-                a = n("301766"),
-                s = n("922347"),
-                o = n("803358"),
-                l = n("212161"),
-                u = n("981631");
+                a = n("922347"),
+                s = n("587177"),
+                o = n("311850"),
+                l = n("803358"),
+                u = n("212161"),
+                d = n("981631");
 
-            function d(e, t, n) {
+            function _(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -111843,41 +111908,32 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            class _ extends o.default {
+            class c extends l.default {
                 static fromServer(e) {
-                    var t;
                     let {
-                        type: n,
-                        premium_type: o,
-                        category_sku_id: d,
-                        prices: c,
-                        ...E
+                        type: t,
+                        premium_type: n,
+                        category_sku_id: l,
+                        prices: _,
+                        bundled_products: E,
+                        ...I
                     } = e;
-                    return new _({
-                        ...super.fromServer(E),
-                        type: n,
-                        premiumType: o === u.PREMIUM_TYPE_NONE ? null : o,
-                        categorySkuId: d,
-                        prices: null == (t = c) ? {} : Object.keys(t).reduce((e, n) => {
-                            if (null == t) return e;
-                            let i = t[n];
-                            return e[n] = {
-                                countryPrices: {
-                                    countryCode: i.country_prices.country_code,
-                                    prices: i.country_prices.prices.map(e => (0, a.getPriceFromServer)(e, !0))
-                                },
-                                paymentSourcePrices: {}
-                            }, e
-                        }, {}),
-                        items: E.items.reduce((e, t) => (0, i.match)(t).with({
+                    return new c({
+                        ...super.fromServer(I),
+                        type: t,
+                        premiumType: n === d.PREMIUM_TYPE_NONE ? null : n,
+                        categorySkuId: l,
+                        prices: (0, o.getPricesFromServer)(_),
+                        items: I.items.reduce((e, t) => (0, i.match)(t).with({
                             type: r.CollectiblesItemType.AVATAR_DECORATION
-                        }, t => (e.push(s.default.fromServer(t)), e)).with({
+                        }, t => (e.push(a.default.fromServer(t)), e)).with({
                             type: r.CollectiblesItemType.PROFILE_EFFECT
-                        }, t => (e.push(l.default.fromServer(t)), e)).otherwise(() => e), [])
+                        }, t => (e.push(u.default.fromServer(t)), e)).otherwise(() => e), []),
+                        bundledProducts: null == E ? void 0 : E.map(s.default.fromServer)
                     })
                 }
                 constructor(e) {
-                    super(e), d(this, "prices", void 0), d(this, "type", void 0), d(this, "premiumType", void 0), d(this, "items", void 0), d(this, "categorySkuId", void 0), this.summary = e.summary, this.type = e.type, this.premiumType = e.premiumType, this.items = e.items, this.categorySkuId = e.categorySkuId, this.prices = e.prices
+                    super(e), _(this, "prices", void 0), _(this, "type", void 0), _(this, "premiumType", void 0), _(this, "items", void 0), _(this, "categorySkuId", void 0), _(this, "bundledProducts", void 0), this.summary = e.summary, this.type = e.type, this.premiumType = e.premiumType, this.items = e.items, this.categorySkuId = e.categorySkuId, this.prices = e.prices, this.bundledProducts = e.bundledProducts
                 }
             }
         },
@@ -116060,8 +116116,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294350",
-                    versionHash: "594501765d12e3c19af942a79d8224819fce6f5e"
+                    buildNumber: "294352",
+                    versionHash: "aa1cc8edc35ebdabe5199930d412fb1ee0ba6b31"
                 }
             }
             n.r(t), n.d(t, {
@@ -172697,8 +172753,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715914423825",
-                                    build_number: "294350"
+                                    built_at: "1715915990016",
+                                    build_number: "294352"
                                 }
                             },
                             retries: 1
@@ -249481,7 +249537,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "594501765d12e3c19af942a79d8224819fce6f5e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "aa1cc8edc35ebdabe5199930d412fb1ee0ba6b31"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278574,7 +278630,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294350"
+                                build_number: "294352"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -285932,7 +285988,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "294350", "294350"), 10);
+                let a = parseInt((n = "294352", "294352"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313634,4 +313690,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.c7464255cdae46684441.js.map
+//# sourceMappingURL=71586.b5223b4cb6be9d56f3ff.js.map
