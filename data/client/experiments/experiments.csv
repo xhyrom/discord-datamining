@@ -392,6 +392,7 @@ id,hash,label
 2023-11_adyen_auth_without_capture,1511378616,Adyen auth without capture rollout
 2023-11_app_launcher_desktop,822676134,App Launcher - Desktop
 2023-11_attachment_link_markup,1894288113,Attachment Link Config User Experiment
+2023-11_cannibalization_model_data_collection,1294709229,Cannibalization Model Data Collection
 2023-11_clyde_ai_aa,1485389700,ClydeAI
 2023-11_collectibles_gifting,538840187,Collectibles Gifting
 2023-11_colonist_minishelf_banner,2188337804,Actvity Colonist Mini-Shelf Banner
@@ -590,8 +591,10 @@ id,hash,label
 2024-05_content_inventory_top_artist_cards,2933142378,Content Inventory: TOP_ARTIST cards
 2024-05_desktop_user_settings_search,1800298008,Desktop User Settings Search
 2024-05_desktop_visual_refresh,1585279012,Desktop Visual Refresh
+2024-05_discount_model_data_collection,2631310213,Discount Model Data Collection
 2024-05_enable_stripe_link_on_split_cardelement,2700487382,Enable Stripe Link Experiment on Split CardElement
 2024-05_iar_spam_reorder,1000552881,IAR Spam Reorder
+2024-05_june_2024_marketing_moment,2234275423,June 2024 Marketing Moment
 2024-05_marketing_page_hero_header_v2,1412791758,Marketing page hero header v2
 2024-05_message_forwarding,2255117514,Message forwarding
 2024-05_pride_month_perks_experiment,4117501358,Pride Month Perks Experiment
