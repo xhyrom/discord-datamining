@@ -465,13 +465,9 @@
       "OPTIONS"
     ]
   },
-  "DISCOVERY_GAME": {
-    "url": "/discovery/games/:param",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+  "DISCOVERY_ALL_GAMES": {
+    "url": "/discovery/games/all",
+    "allowed_methods": null
   },
   "GUILD_RECOMMENDATIONS": {
     "url": "/guild-recommendations",
