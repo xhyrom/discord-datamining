@@ -7172,13 +7172,10 @@
                 cardContentDescriptionSection: "cardContentDescriptionSection__30f21",
                 cardContentTitleSection: "cardContentTitleSection_dd3bf1",
                 cardFooter: "cardFooter_ed5f2e",
-                cardFooterGame: "cardFooterGame_de9392",
-                cardFooterGameImg: "cardFooterGameImg_a0eeb2",
                 cardFooterGames: "cardFooterGames_aebfa9",
                 cardFooterInfo: "cardFooterInfo__5a461",
                 cardFooterMembers: "cardFooterMembers__5eb8a",
                 cardFooterMembersIcon: "cardFooterMembersIcon__1c10d",
-                cardFooterOtherCount: "cardFooterOtherCount_a26e63",
                 cardNameAndTagWrapper: "cardNameAndTagWrapper_d87ceb",
                 clanBadge: "clanBadge__4c045",
                 clanBannerPreview: "clanBannerPreview__4375a",
@@ -7196,6 +7193,19 @@
                 trait: "trait_dfdb34",
                 traitsContainer: "traitsContainer__23f4b",
                 wildCardText: "wildCardText_ed09a2"
+            }
+        },
+        785008: function(e) {
+            "use strict";
+            e.exports = {
+                extraGameCount: "extraGameCount__4a2d9",
+                gameImage: "gameImage__8bfdc",
+                gameImageContainer: "gameImageContainer_ecf6f5",
+                tooltipGame: "tooltipGame__14597",
+                tooltipGameImage: "tooltipGameImage__7288c",
+                tooltipGameImageContainer: "tooltipGameImageContainer__97924 gameImageContainer_ecf6f5",
+                tooltipGameName: "tooltipGameName__274e4",
+                tooltipGames: "tooltipGames__2a826"
             }
         },
         209423: function(e) {

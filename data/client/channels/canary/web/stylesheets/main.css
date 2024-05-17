@@ -6339,6 +6339,63 @@
     align-items: center
 }
 
+.gameImageContainer_ecf6f5 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid var(--border-subtle);
+    overflow: hidden
+}
+
+.extraGameCount__4a2d9 {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: var(--bg-backdrop);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.gameImage__8bfdc {
+    width: 24px;
+    height: 24px
+}
+
+.tooltipGameImageContainer__97924 {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px
+}
+
+.tooltipGameImage__7288c {
+    width: 16px;
+    height: 16px
+}
+
+.tooltipGameName__274e4 {
+    flex: 1
+}
+
+.tooltipGames__2a826 {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    gap: 8px
+}
+
+.tooltipGame__14597 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px
+}
+
 .container_fb01d4 {
     display: flex;
     flex-direction: row;
@@ -6527,33 +6584,6 @@
 .cardFooterGames_aebfa9 {
     display: flex;
     gap: 4px
-}
-
-.cardFooterGame_de9392 {
-    position: relative;
-    width: 24px;
-    height: 24px;
-    border-radius: 4px;
-    border: 1px solid var(--border-subtle);
-    overflow: hidden
-}
-
-.cardFooterOtherCount_a26e63 {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    background-color: var(--bg-backdrop);
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
-.cardFooterGameImg_a0eeb2 {
-    width: 100%
 }
 
 .overflowTooltip__7c9d4 {
@@ -137595,4 +137625,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.29eb749e74158b7244bb.css.map*/
+/*# sourceMappingURL=99387.07cdbf9279a483ce2ee7.css.map*/
