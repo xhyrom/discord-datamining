@@ -6485,7 +6485,8 @@
     gap: 4px;
     border: 1px solid var(--border-subtle);
     border-radius: 16px;
-    max-width: 200px
+    max-width: 200px;
+    transition: border-color.2s ease-in-out
 }
 
 .trait_dfdb34:hover {
@@ -6520,7 +6521,7 @@
 .cardFooterMembersIcon__1c10d {
     width: 12px;
     height: 12px;
-    color: var(--text-muted)
+    color: var(--text-secondary)
 }
 
 .cardFooterGames_aebfa9 {
@@ -47053,6 +47054,18 @@ img.thumbnail__18ece {
 
 .theme-light .gradient__1ca13 {
     background: radial-gradient(at top center, rgba(245, 191, 196, .8)0%, rgba(252, 238, 196, .8)50%, #fff 100%)
+}
+
+.platform-osx .dragRegion__53c6d {
+    -webkit-app-region: drag
+}
+
+.dragRegion__53c6d {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px
 }
 
 @value responsiveWidthMobile from '../../../../uikit/auth/WaveSplash.module.css';
@@ -137569,4 +137582,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.e6697441c57472117251.css.map*/
+/*# sourceMappingURL=99387.aa791ab044cac5035765.css.map*/
