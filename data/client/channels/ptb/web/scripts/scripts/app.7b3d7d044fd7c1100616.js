@@ -7149,6 +7149,7 @@
                 card: "card__56b24",
                 container: "container_ec1fbc",
                 content: "content__7833e",
+                discoveryContainer: "discoveryContainer__34773",
                 dragRegion: "dragRegion__53c6d",
                 gradient: "gradient__1ca13",
                 toolbar: "toolbar__4e903",
