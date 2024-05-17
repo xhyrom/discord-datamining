@@ -6332,6 +6332,7 @@
                 fontScaling: "fontScaling__42daa",
                 icon: "icon_c888a7",
                 infoSection: "infoSection__07f39",
+                openOnHover: "openOnHover__53ecc",
                 reply: "reply_d4ce98",
                 selected: "selected__31bdc",
                 thumbnail: "thumbnail__18ece",

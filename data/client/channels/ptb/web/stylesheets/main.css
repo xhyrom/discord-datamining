@@ -43309,12 +43309,12 @@ div.profileThemedContainer__6e645 {
     border-radius: var(--radius-md);
     gap: 8px;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    cursor: pointer
 }
 
 .container__8d997:hover {
-    background: var(--bg-overlay-5, var(--background-modifier-hover));
-    cursor: pointer
+    background: var(--bg-overlay-5, var(--background-modifier-hover))
 }
 
 .container__8d997:hover .contentDescription_e07aa0 {
@@ -43327,6 +43327,10 @@ div.profileThemedContainer__6e645 {
 
 .container__8d997:hover .additionalParticipantBadge__23702 {
     background: var(--bg-overlay-4, var(--background-accent))
+}
+
+.openOnHover__53ecc {
+    cursor: auto
 }
 
 .reply_d4ce98 {
@@ -137630,4 +137634,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.a56617f407d30b098d1b.css.map*/
+/*# sourceMappingURL=99387.79198ed2c4c799556971.css.map*/
