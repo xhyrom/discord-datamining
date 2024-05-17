@@ -12728,6 +12728,19 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
     margin-left: 10px
 }
 
+.activityBiteSizePopout__67f8f .textRow_c835f1 {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400
+}
+
+.activityBiteSizePopout__67f8f .nameWrap_b61c4b,
+.activityBiteSizePopout__67f8f .nameNormal_cb5c2b {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500
+}
+
 .textRow_c835f1 {
     display: block;
     font-size: 14px;
@@ -28291,4 +28304,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.1ace769add1bd9d9e0ae.css.map*/
+/*# sourceMappingURL=49237.424560fc8dddce9987bf.css.map*/
