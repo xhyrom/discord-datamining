@@ -15077,8 +15077,8 @@ html.decorate-links .lowSaturationUnderline_a62e4d {
 
 .title_bdbe69 {
     font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-transform: uppercase
 }
 
@@ -15168,8 +15168,8 @@ h3.improved_e02592:after {
     display: flex;
     align-items: center;
     border-radius: 5px;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 1rem;
+    line-height: 1.125rem;
     padding: 16px
 }
 
@@ -24109,7 +24109,7 @@ h6.title_c2a544 {
 }
 
 .markdown__8e519 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -28291,4 +28291,4 @@ html.disable-forced-colors * {
     padding: 16px
 }
 
-/*# sourceMappingURL=49237.c798b3d53367f5d9e5f5.css.map*/
+/*# sourceMappingURL=49237.20774ae7e9f8381689d1.css.map*/
