@@ -37054,7 +37054,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294452", ", Version Hash: ").concat("a7e421cfbabbe1e5a327de450d1b8aca5846d834")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294467", ", Version Hash: ").concat("860e6d88796333656bf98462925f18ef2e998113")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88314,8 +88314,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294452", "294452"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294452")), t = 0), t
+                let t = parseInt((e = "294467", "294467"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294467")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -96902,122 +96902,126 @@
             "use strict";
             n.r(t), n.d(t, {
                 findTextOptions: function() {
-                    return p
+                    return C
                 },
                 getCommandBlock: function() {
-                    return T
-                },
-                getCurrentCommandOption: function() {
-                    return f
-                },
-                getOptionNames: function() {
                     return S
                 },
-                getOptionValues: function() {
+                getCurrentCommandOption: function() {
                     return h
                 },
-                optionToValues: function() {
+                getOptionNames: function() {
                     return A
                 },
-                validateOption: function() {
+                getOptionValues: function() {
+                    return m
+                },
+                optionToValues: function() {
                     return N
                 },
+                validateOption: function() {
+                    return O
+                },
                 validateOptionValues: function() {
-                    return m
+                    return p
                 }
             }), n("653041"), n("47120");
             var i = n("911969"),
                 r = n("555573"),
                 a = n("998698"),
                 s = n("509716"),
-                o = n("703558"),
-                l = n("944486"),
-                u = n("117530"),
-                d = n("752305"),
-                _ = n("925994"),
-                c = n("887490"),
-                E = n("42530");
-            let I = /([\p{L}\p{N}\p{sc=Deva}\p{sc=Thai}_-]+):/gu;
+                o = n("897473"),
+                l = n("433355"),
+                u = n("703558"),
+                d = n("944486"),
+                _ = n("117530"),
+                c = n("752305"),
+                E = n("925994"),
+                I = n("887490"),
+                T = n("42530");
+            let f = /([\p{L}\p{N}\p{sc=Deva}\p{sc=Thai}_-]+):/gu;
 
-            function T(e) {
-                let t = c.EditorUtils.richValue(e)[0];
-                return null == t || "applicationCommand" !== t.type ? null : [t, E.FIRST_BLOCK_PATH]
+            function S(e) {
+                let t = I.EditorUtils.richValue(e)[0];
+                return null == t || "applicationCommand" !== t.type ? null : [t, T.FIRST_BLOCK_PATH]
             }
 
-            function f(e) {
+            function h(e) {
                 var t, n;
                 if (null == e.selection) return null;
-                let i = null !== (t = c.EditorUtils.above(e, {
+                let i = null !== (t = I.EditorUtils.above(e, {
                     at: e.selection.focus,
-                    match: e => c.NodeUtils.isType(e, "applicationCommandOption")
+                    match: e => I.NodeUtils.isType(e, "applicationCommandOption")
                 })) && void 0 !== t ? t : null;
-                return null != i || c.RangeUtils.isCollapsed(e.selection) ? i : null !== (n = c.EditorUtils.above(e, {
+                return null != i || I.RangeUtils.isCollapsed(e.selection) ? i : null !== (n = I.EditorUtils.above(e, {
                     at: e.selection.anchor,
-                    match: e => c.NodeUtils.isType(e, "applicationCommandOption")
+                    match: e => I.NodeUtils.isType(e, "applicationCommandOption")
                 })) && void 0 !== n ? n : null
             }
 
-            function S(e) {
-                let t = T(e),
+            function A(e) {
+                let t = S(e),
                     n = [],
                     i = null == t ? void 0 : t[0].children;
                 if (null != i)
-                    for (let e of i) c.NodeUtils.isType(e, "applicationCommandOption") && n.push(e.optionName);
+                    for (let e of i) I.NodeUtils.isType(e, "applicationCommandOption") && n.push(e.optionName);
                 return n
             }
 
-            function h(e, t) {
+            function m(e, t) {
                 let n = {};
                 if (null == t.options) return {};
-                let i = T(e),
+                let i = S(e),
                     r = Object.fromEntries(t.options.map(e => [e.name, e])),
                     a = null == i ? void 0 : i[0].children;
                 if (null != a) {
                     for (let t of a)
-                        if (c.NodeUtils.isType(t, "applicationCommandOption")) {
+                        if (I.NodeUtils.isType(t, "applicationCommandOption")) {
                             let i = r[t.optionName];
-                            null != i && (n[t.optionName] = A(e, i, t))
+                            null != i && (n[t.optionName] = N(e, i, t))
                         }
                 }
                 return n
             }
 
-            function A(e, t, n) {
-                let r = l.default.getCurrentlySelectedChannelId(),
-                    a = n.children.map(n => {
+            function N(e, t, n) {
+                let r = d.default.getCurrentlySelectedChannelId(),
+                    a = l.default.getSidebarState(r),
+                    s = (null == a ? void 0 : a.type) === o.SidebarType.VIEW_THREAD ? a.channelId : r,
+                    T = n.children.map(n => {
                         if (t.type === i.ApplicationCommandOptionType.ATTACHMENT) {
-                            let e = u.default.getUpload(r, t.name, o.DraftType.SlashCommand);
+                            let e = _.default.getUpload(s, t.name, u.DraftType.SlashCommand);
                             if (null != e) {
-                                var a;
+                                var r;
                                 return {
                                     type: "text",
-                                    text: null !== (a = e.filename) && void 0 !== a ? a : ""
+                                    text: null !== (r = e.filename) && void 0 !== r ? r : ""
                                 }
                             }
                         }
-                        if (c.TextUtils.isText(n)) return {
+                        if (I.TextUtils.isText(n)) return {
                             type: "text",
                             text: n.text
                         };
-                        if (c.EditorUtils.isVoid(e, n)) {
-                            let e = (0, d.voidToOptionValue)(n);
+                        if (I.EditorUtils.isVoid(e, n)) {
+                            let e = (0, c.voidToOptionValue)(n);
                             if (null != e) return e
                         }
                         return {
                             type: "text",
-                            text: (0, _.serializeDescendant)(n, {
+                            text: (0, E.serializeDescendant)(n, {
                                 mode: "raw"
                             })
                         }
                     });
                 if (t.type !== i.ApplicationCommandOptionType.STRING) {
-                    for (; a.length > 0 && "text" === a[0].type && "" === a[0].text.trim();) a.shift();
-                    for (; a.length > 0 && "text" === a[a.length - 1].type && "" === a[a.length - 1].text.trim();) a.pop()
+                    for (; T.length > 0 && "text" === T[0].type && "" === T[0].text.trim();) T.shift();
+                    for (; T.length > 0 && "text" === T[T.length - 1].type && "" === T[T.length - 1].text.trim();) T.pop()
                 }
-                return a
+                return T
             }
 
-            function m(e, t, n, i, a) {
+            function p(e, t, n, i, a) {
                 if (null == e.options) return {};
                 let o = Object.fromEntries(e.options.map(e => {
                     var r;
@@ -97032,11 +97036,11 @@
                 return r.updateOptionValidationStates(n, o), o
             }
 
-            function N(e, t, n, i, o) {
+            function O(e, t, n, i, o) {
                 var l;
                 let [u] = i, d = a.default.getActiveCommand(n), _ = null == d ? void 0 : null === (l = d.options) || void 0 === l ? void 0 : l.find(e => e.name === u.optionName);
                 if (null == _) return;
-                let c = A(e, _, u),
+                let c = N(e, _, u),
                     E = s.validateOptionContent({
                         option: _,
                         content: c,
@@ -97051,11 +97055,11 @@
                 }), E
             }
 
-            function p(e, t) {
+            function C(e, t) {
                 if (null == t.options || 0 === t.options.length) return [];
-                let n = c.EditorUtils.richValue(e),
+                let n = I.EditorUtils.richValue(e),
                     i = [],
-                    r = new Set(S(e)),
+                    r = new Set(A(e)),
                     a = {},
                     s = new Set;
                 for (let e of t.options) a[e.displayName] = e, !r.has(e.name) && s.add(e.displayName);
@@ -97065,39 +97069,39 @@
                     if ("line" === r.type || "applicationCommand" === r.type)
                         for (let u = 0; u < r.children.length; u++) {
                             let d;
-                            let E = r.children[u],
-                                T = [t, u];
-                            if (c.NodeUtils.isType(E, "applicationCommandOption")) {
+                            let _ = r.children[u],
+                                c = [t, u];
+                            if (I.NodeUtils.isType(_, "applicationCommandOption")) {
                                 if (null != o) {
                                     var l;
-                                    o.valueRange.focus = null !== (l = c.EditorUtils.before(e, T)) && void 0 !== l ? l : c.EditorUtils.start(e, []), o.text = (0, _.toTextValue)(n, {
+                                    o.valueRange.focus = null !== (l = I.EditorUtils.before(e, c)) && void 0 !== l ? l : I.EditorUtils.start(e, []), o.text = (0, E.toTextValue)(n, {
                                         mode: "raw",
                                         range: o.valueRange
                                     }).trim(), i.push(o), o = null
                                 }
                                 continue
                             }
-                            if (!!c.TextUtils.isText(E))
-                                for (I.lastIndex = 0; null != (d = I.exec(E.text));) {
-                                    if (0 !== d.index && null == E.text.charAt(d.index - 1).match(/(\t|\s)/)) continue;
+                            if (!!I.TextUtils.isText(_))
+                                for (f.lastIndex = 0; null != (d = f.exec(_.text));) {
+                                    if (0 !== d.index && null == _.text.charAt(d.index - 1).match(/(\t|\s)/)) continue;
                                     let e = d[1];
                                     if (!s.has(e)) continue;
                                     s.delete(e);
                                     let t = a[e];
                                     if (null == t) continue;
                                     let r = {
-                                            path: T,
+                                            path: c,
                                             offset: d.index
                                         },
                                         l = {
-                                            path: T,
+                                            path: c,
                                             offset: r.offset + d[0].length
                                         },
                                         u = {
-                                            path: T,
+                                            path: c,
                                             offset: l.offset
                                         },
-                                        c = {
+                                        I = {
                                             name: t.name,
                                             displayName: t.displayName,
                                             type: t.type,
@@ -97111,14 +97115,14 @@
                                             },
                                             text: ""
                                         };
-                                    null != o && (o.valueRange.focus = c.keyRange.anchor, o.text = (0, _.toTextValue)(n, {
+                                    null != o && (o.valueRange.focus = I.keyRange.anchor, o.text = (0, E.toTextValue)(n, {
                                         mode: "raw",
                                         range: o.valueRange
-                                    }).trim(), i.push(o)), o = c
+                                    }).trim(), i.push(o)), o = I
                                 }
                         }
                 }
-                return null != o && (o.valueRange.focus = c.EditorUtils.end(e, []), o.text = (0, _.toTextValue)(n, {
+                return null != o && (o.valueRange.focus = I.EditorUtils.end(e, []), o.text = (0, E.toTextValue)(n, {
                     mode: "raw",
                     range: o.valueRange
                 }).trim(), i.push(o)), i
@@ -116134,8 +116138,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294452",
-                    versionHash: "a7e421cfbabbe1e5a327de450d1b8aca5846d834"
+                    buildNumber: "294467",
+                    versionHash: "860e6d88796333656bf98462925f18ef2e998113"
                 }
             }
             n.r(t), n.d(t, {
@@ -117015,15 +117019,15 @@
             "use strict";
             n.r(t), n.d(t, {
                 ClanDiscoveryCardTraits: function() {
-                    return D
+                    return M
                 },
                 ClanDiscoveryCardView: function() {
                     return y
                 },
                 Wildcards: function() {
-                    return L
+                    return v
                 }
-            }), n("47120"), n("733860");
+            }), n("47120");
             var i = n("735250"),
                 r = n("470079"),
                 a = n("120356"),
@@ -117043,17 +117047,18 @@
                 A = n("271383"),
                 m = n("594174"),
                 N = n("768581"),
-                p = n("524989"),
-                O = n("981631"),
-                C = n("308083"),
-                R = n("689938"),
-                g = n("449729");
+                p = n("778045"),
+                O = n("524989"),
+                C = n("981631"),
+                R = n("308083"),
+                g = n("689938"),
+                L = n("449729");
 
-            function L(e) {
+            function v(e) {
                 let {
                     wildcardDescriptors: t,
                     primaryColor: n
-                } = e, a = t.filter(e => e !== C.EMPTY_WILDCARD).join(", "), s = (0, o.useToken)(o.tokens.colors.BACKGROUND_FLOATING), l = (0, c.getAccessibleClanColor)(n, s.hex()), u = r.useRef(null), [d, _] = r.useState(!1);
+                } = e, a = t.filter(e => e !== R.EMPTY_WILDCARD).join(", "), s = (0, o.useToken)(o.tokens.colors.BACKGROUND_FLOATING), l = (0, c.getAccessibleClanColor)(n, s.hex()), u = r.useRef(null), [d, _] = r.useState(!1);
                 if (r.useEffect(() => {
                         let e = u.current;
                         null != e && null != e.offsetWidth && null != e.scrollWidth && _(e.offsetWidth < e.scrollWidth)
@@ -117065,7 +117070,7 @@
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-xs/normal",
                         color: "text-secondary",
-                        className: g.clanInfoItem,
+                        className: L.clanInfoItem,
                         children: "\xb7"
                     }), (0, i.jsx)(o.Tooltip, {
                         text: a,
@@ -117074,7 +117079,7 @@
                         children: e => (0, i.jsx)("span", {
                             ...e,
                             style: E,
-                            className: g.wildCardText,
+                            className: L.wildCardText,
                             ref: u,
                             children: a
                         })
@@ -117082,15 +117087,15 @@
                 })
             }
 
-            function v(e) {
+            function D(e) {
                 let {
                     trait: t,
                     isHighlighted: n,
                     className: r
                 } = e;
                 return (0, i.jsx)("div", {
-                    className: s()(r, g.trait, {
-                        [g.highlightedTrait]: n
+                    className: s()(r, L.trait, {
+                        [L.highlightedTrait]: n
                     }),
                     children: (0, i.jsx)(o.Text, {
                         variant: "text-xs/normal",
@@ -117101,7 +117106,7 @@
                 })
             }
 
-            function D(e) {
+            function M(e) {
                 let {
                     traits: t,
                     traitsToHighlight: n,
@@ -117109,23 +117114,23 @@
                     traitClassName: s
                 } = e, l = r.useMemo(() => new Set(n), [n]);
                 return a ? (0, i.jsx)("div", {
-                    className: g.expandedTraitsContainer,
-                    children: t.map(e => (0, i.jsx)(v, {
+                    className: L.expandedTraitsContainer,
+                    children: t.map(e => (0, i.jsx)(D, {
                         className: s,
                         trait: e,
                         isHighlighted: l.has(e)
                     }, e))
-                }) : (0, i.jsx)(p.default, {
+                }) : (0, i.jsx)(O.default, {
                     items: t,
-                    renderItem: e => (0, i.jsx)(v, {
+                    renderItem: e => (0, i.jsx)(D, {
                         trait: e,
                         isHighlighted: l.has(e)
                     }, e),
                     renderOverflow: e => (0, i.jsx)(o.Tooltip, {
                         text: (0, i.jsx)("div", {
-                            className: g.overflowTooltip,
+                            className: L.overflowTooltip,
                             children: e.map(e => (0, i.jsx)("div", {
-                                className: g.trait,
+                                className: L.trait,
                                 children: (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-normal",
@@ -117137,94 +117142,18 @@
                         "aria-label": "overflow",
                         children: t => (0, i.jsx)("div", {
                             ...t,
-                            className: g.trait,
+                            className: L.trait,
                             children: (0, i.jsx)(o.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-normal",
-                                children: R.default.Messages.CLAN_DISCOVERY_TRAIT_OVERFLOW.format({
+                                children: g.default.Messages.CLAN_DISCOVERY_TRAIT_OVERFLOW.format({
                                     count: e.length
                                 })
                             })
                         })
                     }),
                     maxLines: 2,
-                    className: g.traitsContainer
-                })
-            }
-
-            function M(e) {
-                let {
-                    games: t,
-                    prioritizedGameIds: n
-                } = e, a = t.filter(e => null != e && null != e.icon);
-                if (null != n && n.size > 0) {
-                    for (let e = 0; e < a.length; e++)
-                        if (n.has(a[e].id)) {
-                            let t = a.splice(e, 1)[0];
-                            a.unshift(t)
-                        }
-                }
-                let s = a.slice(0, 3),
-                    l = r.useMemo(() => {
-                        let e = a[3];
-                        if (null == e) return null;
-                        let t = e.getIconURL(24);
-                        if (null == t) return null;
-                        if (a.length > 4) {
-                            let n = a.slice(3).map(e => e.name),
-                                r = (0, E.formatSelectionList)(n);
-                            return (0, i.jsx)(o.Tooltip, {
-                                text: r,
-                                position: "bottom",
-                                children: r => (0, i.jsxs)("div", {
-                                    ...r,
-                                    className: g.cardFooterGame,
-                                    children: [(0, i.jsx)("img", {
-                                        src: t,
-                                        alt: e.name,
-                                        className: g.cardFooterGameImg
-                                    }), (0, i.jsx)("div", {
-                                        className: g.cardFooterOtherCount,
-                                        children: (0, i.jsx)(o.Text, {
-                                            variant: "text-xs/medium",
-                                            color: "always-white",
-                                            children: "+".concat(n.length)
-                                        })
-                                    })]
-                                })
-                            })
-                        }
-                        return (0, i.jsx)(o.Tooltip, {
-                            text: e.name,
-                            position: "bottom",
-                            children: n => (0, i.jsx)("div", {
-                                ...n,
-                                className: g.cardFooterGame,
-                                children: (0, i.jsx)("img", {
-                                    src: t,
-                                    alt: e.name,
-                                    className: g.cardFooterGameImg
-                                })
-                            })
-                        })
-                    }, [a]);
-                return (0, i.jsxs)(i.Fragment, {
-                    children: [s.map(e => {
-                        let t = e.getIconURL(24);
-                        return null == t ? null : (0, i.jsx)(o.Tooltip, {
-                            text: e.name,
-                            position: "bottom",
-                            children: n => (0, i.jsx)("div", {
-                                ...n,
-                                className: g.cardFooterGame,
-                                children: (0, i.jsx)("img", {
-                                    src: t,
-                                    alt: e.name,
-                                    className: g.cardFooterGameImg
-                                })
-                            })
-                        }, e.id)
-                    }), l]
+                    className: L.traitsContainer
                 })
             }
 
@@ -117242,13 +117171,13 @@
                     bannerUrl: A
                 } = e, {
                     tag: m,
-                    badge: p,
+                    badge: O,
                     branding: {
-                        primaryColor: O,
-                        secondaryColor: v
+                        primaryColor: C,
+                        secondaryColor: D
                     },
                     bannerHash: y
-                } = r, P = (0, u.default)(r.games), U = (0, I.default)("clan_discovery_card"), b = R.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
+                } = r, P = (0, u.default)(r.games), U = (0, I.default)("clan_discovery_card"), b = g.default.Messages.CLAN_DISCOVERY_MEMBER_COUNT.format({
                     count: r.memberCount
                 }), G = null !== (t = N.default.getGuildIconURL({
                     id: r.id,
@@ -117256,44 +117185,44 @@
                     size: 64,
                     canAnimate: !0
                 })) && void 0 !== t ? t : void 0, w = null != A ? A : (0, E.getClanBannerUrl)(r.id, y), k = null == a && null == w ? {
-                    background: "linear-gradient(90deg, ".concat(O, ", ").concat(v, ")")
+                    background: "linear-gradient(90deg, ".concat(C, ", ").concat(D, ")")
                 } : void 0, B = null != a ? a : null != w ? (0, i.jsx)("img", {
-                    alt: R.default.Messages.CLAN_LOOK_BANNER,
+                    alt: g.default.Messages.CLAN_LOOK_BANNER,
                     src: w,
-                    className: g.bannerImage
+                    className: L.bannerImage
                 }) : null;
                 return (0, i.jsxs)("div", {
-                    className: s()(g.card, S),
+                    className: s()(L.card, S),
                     children: [(0, i.jsx)("div", {
-                        className: g.cardBrandingHeader,
+                        className: L.cardBrandingHeader,
                         style: k,
                         children: B
                     }), (0, i.jsxs)("div", {
-                        className: g.cardContent,
+                        className: L.cardContent,
                         children: [(0, i.jsxs)("div", {
-                            className: g.cardContentTitleSection,
+                            className: L.cardContentTitleSection,
                             children: [(0, i.jsxs)("div", {
-                                className: g.cardNameAndTagWrapper,
+                                className: L.cardNameAndTagWrapper,
                                 children: [(0, i.jsx)(T.ClanGuildIconSimple, {
                                     guildName: r.name,
                                     guildIconURL: G,
                                     iconSize: 64,
-                                    className: g.clanIcon
+                                    className: L.clanIcon
                                 }), (0, i.jsx)("div", {
-                                    className: g.clanTagChipletWrapper,
+                                    className: L.clanTagChipletWrapper,
                                     children: (0, i.jsx)(o.Tooltip, {
-                                        text: R.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
+                                        text: g.default.Messages.CLAN_DISCOVERY_CARD_TAG_TOOLTIP,
                                         position: "top",
                                         shouldShow: !d && U,
                                         children: e => (0, i.jsxs)("div", {
                                             ...e,
-                                            className: g.clanTagChiplet,
+                                            className: L.clanTagChiplet,
                                             children: [(0, i.jsx)(f.ClanBadge, {
                                                 width: 16,
                                                 height: 16,
-                                                badge: p.badgeKind,
-                                                primaryTintColor: p.primaryColor,
-                                                secondaryTintColor: p.secondaryColor
+                                                badge: O.badgeKind,
+                                                primaryTintColor: O.primaryColor,
+                                                secondaryTintColor: O.secondaryColor
                                             }), (0, i.jsx)(o.Text, {
                                                 variant: "text-xs/medium",
                                                 color: "text-primary",
@@ -117308,43 +117237,43 @@
                                 lineClamp: 1,
                                 children: r.name
                             }), (0, i.jsxs)("div", {
-                                className: g.clanInfoRow,
+                                className: L.clanInfoRow,
                                 children: [(0, i.jsx)(o.Text, {
                                     variant: "text-xxs/normal",
-                                    className: g.clanInfoItem,
+                                    className: L.clanInfoItem,
                                     children: (0, i.jsx)("span", {
                                         role: "img",
-                                        "aria-label": R.default.Messages.CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL,
+                                        "aria-label": g.default.Messages.CLAN_DISCOVERY_PLAYSTYLE_ARIA_LABEL,
                                         children: "\uD83C\uDFAE"
                                     })
                                 }), (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-secondary",
-                                    className: g.clanInfoItem,
-                                    children: null !== (n = (0, C.getPlaystyleTitle)(r.playstyle)) && void 0 !== n ? n : R.default.Messages.CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE
-                                }), (0, i.jsx)(L, {
+                                    className: L.clanInfoItem,
+                                    children: null !== (n = (0, R.getPlaystyleTitle)(r.playstyle)) && void 0 !== n ? n : g.default.Messages.CLAN_DISCOVERY_UNKNOWN_PLAYSTYLE
+                                }), (0, i.jsx)(v, {
                                     wildcardDescriptors: r.wildcardDescriptors,
                                     primaryColor: r.branding.primaryColor
                                 })]
                             })]
                         }), (0, i.jsx)("div", {
-                            className: g.cardContentDescriptionSection,
+                            className: L.cardContentDescriptionSection,
                             children: (0, i.jsx)(o.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-muted",
                                 children: r.description
                             })
-                        }), (0, i.jsx)(D, {
-                            traits: (0, C.getSortedTraits)(r.traits, _),
+                        }), (0, i.jsx)(M, {
+                            traits: (0, R.getSortedTraits)(r.traits, _),
                             expanded: l,
                             traitsToHighlight: _
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: g.cardFooter,
+                        className: L.cardFooter,
                         children: [(0, i.jsx)("div", {
-                            className: g.cardFooterInfo,
+                            className: L.cardFooterInfo,
                             children: (0, i.jsx)("div", {
-                                className: g.cardFooterMembers,
+                                className: L.cardFooterMembers,
                                 children: (0, i.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
@@ -117352,16 +117281,16 @@
                                 })
                             })
                         }), (0, i.jsx)("div", {
-                            className: g.cardFooterGames,
-                            children: (0, i.jsx)(M, {
+                            className: L.cardFooterGames,
+                            children: (0, i.jsx)(p.default, {
                                 games: P,
                                 prioritizedGameIds: c
                             })
                         })]
                     }), h && (0, i.jsx)("div", {
-                        className: g.cardBrandingFooter,
+                        className: L.cardBrandingFooter,
                         style: {
-                            background: "linear-gradient(90deg, ".concat(O, ", ").concat(v, ")")
+                            background: "linear-gradient(90deg, ".concat(C, ", ").concat(D, ")")
                         }
                     })]
                 })
@@ -117389,16 +117318,16 @@
                         return
                     }
                     if (e) {
-                        (0, h.transitionTo)(O.Routes.GUILD_MEMBER_VERIFICATION(s.id));
+                        (0, h.transitionTo)(C.Routes.GUILD_MEMBER_VERIFICATION(s.id));
                         return
                     }(0, _.openClanApplyFlow)(s.id, s, {
                         source: E,
-                        location: O.AnalyticsLocations.CLAN_DISCOVERY_CARD
+                        location: C.AnalyticsLocations.CLAN_DISCOVERY_CARD
                     }, n)
                 }, [s, T, u, c, E, n]);
                 return (0, i.jsx)(o.Clickable, {
                     onClick: f,
-                    className: g.clickableCard,
+                    className: L.clickableCard,
                     style: t,
                     children: (0, i.jsx)(y, {
                         ...a,
@@ -117408,6 +117337,119 @@
                     })
                 })
             }
+        },
+        778045: function(e, t, n) {
+            "use strict";
+            n.r(t), n("733860");
+            var i = n("735250"),
+                r = n("470079"),
+                a = n("481060"),
+                s = n("353093"),
+                o = n("785008");
+
+            function l(e) {
+                let {
+                    games: t
+                } = e;
+                return (0, i.jsx)("div", {
+                    className: o.tooltipGames,
+                    children: t.map(e => {
+                        let t = e.getIconURL(24);
+                        return null == t ? null : (0, i.jsxs)("div", {
+                            className: o.tooltipGame,
+                            children: [(0, i.jsx)("div", {
+                                className: o.tooltipGameImageContainer,
+                                children: (0, i.jsx)("img", {
+                                    src: t,
+                                    alt: e.name,
+                                    className: o.tooltipGameImage
+                                })
+                            }), (0, i.jsx)("span", {
+                                className: o.tooltipGameName,
+                                children: e.name
+                            })]
+                        }, e.id)
+                    })
+                })
+            }
+            t.default = r.memo(function(e) {
+                let {
+                    games: t,
+                    prioritizedGameIds: n
+                } = e, u = t.filter(e => null != e && null != e.icon);
+                if (null != n && n.size > 0) {
+                    for (let e = 0; e < u.length; e++)
+                        if (n.has(u[e].id)) {
+                            let t = u.splice(e, 1)[0];
+                            u.unshift(t)
+                        }
+                }
+                let d = u.slice(0, 3),
+                    _ = r.useMemo(() => {
+                        let e = u[3];
+                        if (null == e) return null;
+                        let t = e.getIconURL(24);
+                        if (null == t) return null;
+                        if (u.length > 4) {
+                            let n = u.slice(3),
+                                r = (0, s.formatSelectionList)(n.map(e => e.name));
+                            return (0, i.jsx)(a.Tooltip, {
+                                "aria-label": null != r ? r : "",
+                                text: (0, i.jsx)(l, {
+                                    games: n
+                                }),
+                                position: "bottom",
+                                children: r => (0, i.jsxs)("div", {
+                                    ...r,
+                                    className: o.gameImageContainer,
+                                    children: [(0, i.jsx)("img", {
+                                        src: t,
+                                        alt: e.name,
+                                        className: o.gameImage
+                                    }), (0, i.jsx)("div", {
+                                        className: o.extraGameCount,
+                                        children: (0, i.jsx)(a.Text, {
+                                            variant: "text-xs/medium",
+                                            color: "always-white",
+                                            children: "+".concat(n.length)
+                                        })
+                                    })]
+                                })
+                            })
+                        }
+                        return (0, i.jsx)(a.Tooltip, {
+                            text: e.name,
+                            position: "bottom",
+                            children: n => (0, i.jsx)("div", {
+                                ...n,
+                                className: o.gameImageContainer,
+                                children: (0, i.jsx)("img", {
+                                    src: t,
+                                    alt: e.name,
+                                    className: o.gameImage
+                                })
+                            })
+                        })
+                    }, [u]);
+                return (0, i.jsxs)(i.Fragment, {
+                    children: [d.map(e => {
+                        let t = e.getIconURL(24);
+                        return null == t ? null : (0, i.jsx)(a.Tooltip, {
+                            text: e.name,
+                            position: "bottom",
+                            children: n => (0, i.jsx)("div", {
+                                ...n,
+                                className: o.gameImageContainer,
+                                children: (0, i.jsx)("img", {
+                                    src: t,
+                                    alt: e.name,
+                                    className: o.gameImage
+                                })
+                            })
+                        }, e.id)
+                    }), _]
+                })
+            })
         },
         524989: function(e, t, n) {
             "use strict";
@@ -172777,8 +172819,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715967745351",
-                                    build_number: "294452"
+                                    built_at: "1715969074594",
+                                    build_number: "294467"
                                 }
                             },
                             retries: 1
@@ -249584,7 +249626,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a7e421cfbabbe1e5a327de450d1b8aca5846d834"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "860e6d88796333656bf98462925f18ef2e998113"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278676,7 +278718,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294452"
+                                build_number: "294467"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286034,7 +286076,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "294452", "294452"), 10);
+                let a = parseInt((n = "294467", "294467"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313736,4 +313778,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.1676a9b54f4787ee283c.js.map
+//# sourceMappingURL=71586.3d14a0bb077b15eb793e.js.map
