@@ -27164,6 +27164,11 @@ html .progress__00e29 {
     flex-shrink: 1
 }
 
+.premium__0b60b {
+    background: linear-gradient(to right, var(--application-subscription-start), var(--application-subscription-end));
+    color: var(--white-500)
+}
+
 .container__60cb6 {
     width: 100%;
     display: flex;
@@ -137625,4 +137630,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.07cdbf9279a483ce2ee7.css.map*/
+/*# sourceMappingURL=99387.a56617f407d30b098d1b.css.map*/
