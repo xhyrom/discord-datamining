@@ -37054,7 +37054,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294611", ", Version Hash: ").concat("4125de627349f2f713fc35e7d63bad369b4c2ff3")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294646", ", Version Hash: ").concat("5d8266496625c6de0c2bb80f19454dabdc26a92d")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88317,8 +88317,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294611", "294611"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294611")), t = 0), t
+                let t = parseInt((e = "294646", "294646"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294646")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116141,8 +116141,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294611",
-                    versionHash: "4125de627349f2f713fc35e7d63bad369b4c2ff3"
+                    buildNumber: "294646",
+                    versionHash: "5d8266496625c6de0c2bb80f19454dabdc26a92d"
                 }
             }
             n.r(t), n.d(t, {
@@ -172822,8 +172822,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1715989909968",
-                                    build_number: "294611"
+                                    built_at: "1716002097327",
+                                    build_number: "294646"
                                 }
                             },
                             retries: 1
@@ -249694,7 +249694,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "4125de627349f2f713fc35e7d63bad369b4c2ff3"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "5d8266496625c6de0c2bb80f19454dabdc26a92d"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278786,7 +278786,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294611"
+                                build_number: "294646"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286144,7 +286144,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "294611", "294611"), 10);
+                let a = parseInt((n = "294646", "294646"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -299456,16 +299456,11 @@
                     return null == e && null == t || null != e && null != t && e.width === t.width && e.height === t.height && e.framerate === t.framerate
                 }
                 static extend(e, t) {
-                    var n, i, r, a, s;
-                    if (null == e) return t;
-                    if (null == t) return e;
-                    let o = null !== (i = null !== (n = null == t ? void 0 : t.width) && void 0 !== n ? n : null == e ? void 0 : e.width) && void 0 !== i ? i : 0,
-                        l = null !== (a = null !== (r = null == t ? void 0 : t.height) && void 0 !== r ? r : null == e ? void 0 : e.height) && void 0 !== a ? a : 0;
-                    return {
-                        width: o,
-                        height: l,
-                        framerate: null !== (s = null == t ? void 0 : t.framerate) && void 0 !== s ? s : null == e ? void 0 : e.framerate,
-                        pixelCount: o * l
+                    var n, i, r;
+                    return null == e ? t : null == t ? e : {
+                        width: null !== (n = null == t ? void 0 : t.width) && void 0 !== n ? n : null == e ? void 0 : e.width,
+                        height: null !== (i = null == t ? void 0 : t.height) && void 0 !== i ? i : null == e ? void 0 : e.height,
+                        framerate: null !== (r = null == t ? void 0 : t.framerate) && void 0 !== r ? r : null == e ? void 0 : e.framerate
                     }
                 }
                 constructor(e) {
@@ -299474,20 +299469,19 @@
             }
             class u {
                 getQuality(e) {
-                    let t = this.connection.getLocalWant(e),
-                        n = this.isStreamContext ? this.getGoliveQuality(t) : this.getVideoQuality(t);
+                    let t = this.isStreamContext ? this.getGoliveQuality(e) : this.getVideoQuality(this.connection.getLocalWant(e));
                     if (null != this.qualityOverwrite) {
-                        var i, r, a;
+                        var n, i, r;
                         return new o({
-                            encode: l.extend(n.encode, this.qualityOverwrite.encode),
-                            capture: l.extend(n.capture, this.qualityOverwrite.capture),
-                            bitrateMin: null !== (i = this.qualityOverwrite.bitrateMin) && void 0 !== i ? i : n.bitrateMin,
-                            bitrateMax: null !== (r = this.qualityOverwrite.bitrateMax) && void 0 !== r ? r : n.bitrateMax,
-                            bitrateTarget: null !== (a = this.qualityOverwrite.bitrateTarget) && void 0 !== a ? a : n.bitrateTarget,
-                            localWant: n.localWant
+                            encode: l.extend(t.encode, this.qualityOverwrite.encode),
+                            capture: l.extend(t.capture, this.qualityOverwrite.capture),
+                            bitrateMin: null !== (n = this.qualityOverwrite.bitrateMin) && void 0 !== n ? n : t.bitrateMin,
+                            bitrateMax: null !== (i = this.qualityOverwrite.bitrateMax) && void 0 !== i ? i : t.bitrateMax,
+                            bitrateTarget: null !== (r = this.qualityOverwrite.bitrateTarget) && void 0 !== r ? r : t.bitrateTarget,
+                            localWant: t.localWant
                         })
                     }
-                    return n
+                    return t
                 }
                 applyQualityConstraints(e, t) {
                     let n = this.getQuality(t);
@@ -299534,7 +299528,8 @@
                     })
                 }
                 getGoliveQuality(e) {
-                    return this.goliveSimulcastEnabled && e < 100 ? this.getDefaultGoliveQuality() : this.goliveMaxQuality
+                    let t = this.connection.getLocalWant(e);
+                    return this.goliveSimulcastEnabled ? this.getVideoQuality(t) : this.goliveMaxQuality
                 }
                 getDefaultGoliveQuality() {
                     return new o({
@@ -299542,12 +299537,6 @@
                             width: 1280,
                             height: 720,
                             framerate: r.VIDEO_QUALITY_FRAMERATE
-                        },
-                        encode: {
-                            width: 1280,
-                            height: 720,
-                            framerate: r.VIDEO_QUALITY_FRAMERATE,
-                            pixelCount: 921600
                         },
                         bitrateMin: this.options.desktopBitrate.min,
                         bitrateMax: this.options.desktopBitrate.max,
@@ -300102,7 +300091,6 @@
                         a = this.videoQualityManager.getQuality();
                     (!T.VideoQuality.equals(r, a.capture) || a.bitrateMax !== i) && (this.videoQualityManager.setGoliveQuality({
                         capture: r,
-                        encode: r,
                         bitrateMax: i
                     }), this.videoStreamParameters.length > 0 && (this.videoStreamParameters[0].maxResolution = {
                         type: 0 === e && 0 === t ? O.ResolutionTypes.SOURCE : O.ResolutionTypes.FIXED,
@@ -313846,4 +313834,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.d380a9ee06f9840fe867.js.map
+//# sourceMappingURL=71586.54bd708229c20d987189.js.map
