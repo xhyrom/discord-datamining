@@ -923,7 +923,9 @@
   },
   "MESSAGE_ACK": {
     "url": "/channels/:param/messages/:param/ack",
-    "allowed_methods": null
+    "allowed_methods": [
+      "POST"
+    ]
   },
   "MESSAGE_CREATE_ATTACHMENT_UPLOAD": {
     "url": "/channels/:param/attachments",
