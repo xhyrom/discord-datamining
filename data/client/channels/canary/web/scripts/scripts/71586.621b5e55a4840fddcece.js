@@ -37054,7 +37054,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294886", ", Version Hash: ").concat("7407d26b6d3877b81e2a25300530a2c8ea29fd63")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294892", ", Version Hash: ").concat("8fd2bc9a1f51ee78b901ed67c653e8fd7202f0c1")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -66567,10 +66567,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return Q
+                    return z
                 },
                 getActiveAnalyticsSessionIDs: function() {
-                    return X
+                    return K
                 }
             }), n("653041"), n("47120");
             var i = n("512722"),
@@ -66792,33 +66792,14 @@
             }
 
             function K(e) {
-                let {
-                    channelId: t
-                } = e, n = h.default.getVoiceChannelId();
-                null != n && n === t && Z(t)
-            }
-
-            function z(e) {
-                if (e.state === b.RTCConnectionStates.DISCONNECTED) Z(e.channelId)
-            }
-
-            function Z(e) {
-                let t = C.default.getSelfEmbeddedActivityForChannel(e);
-                null != t && ((0, O.stopEmbeddedActivity)({
-                    channelId: e,
-                    applicationId: t.applicationId
-                }), (0, O.disconnectEmbeddedActivity)(e, t.applicationId))
-            }
-
-            function X(e) {
                 return k[e]
             }
-            class Q extends u.default {
+            class z extends u.default {
                 _initialize() {
-                    h.default.addChangeListener(this.handleSelectedChannelUpdate), o.default.subscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), o.default.subscribe("EMBEDDED_ACTIVITY_OPEN", x), o.default.subscribe("EMBEDDED_ACTIVITY_CLOSE", F), o.default.subscribe("EMBEDDED_ACTIVITY_UPDATE", H), o.default.subscribe("EMBEDDED_ACTIVITY_UPDATE_V2", Y), o.default.subscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), o.default.subscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), o.default.subscribe("MEDIA_SESSION_JOINED", W), o.default.subscribe("CALL_DELETE", K), o.default.subscribe("RTC_CONNECTION_STATE", z)
+                    h.default.addChangeListener(this.handleSelectedChannelUpdate), o.default.subscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), o.default.subscribe("EMBEDDED_ACTIVITY_OPEN", x), o.default.subscribe("EMBEDDED_ACTIVITY_CLOSE", F), o.default.subscribe("EMBEDDED_ACTIVITY_UPDATE", H), o.default.subscribe("EMBEDDED_ACTIVITY_UPDATE_V2", Y), o.default.subscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), o.default.subscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), o.default.subscribe("MEDIA_SESSION_JOINED", W), o.default.subscribe("CALL_DELETE", this.handleCallDelete), o.default.subscribe("RTC_CONNECTION_STATE", this.handleRTCConnectionState)
                 }
                 _terminate() {
-                    h.default.removeChangeListener(this.handleSelectedChannelUpdate), o.default.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), o.default.unsubscribe("EMBEDDED_ACTIVITY_OPEN", x), o.default.unsubscribe("EMBEDDED_ACTIVITY_CLOSE", F), o.default.unsubscribe("EMBEDDED_ACTIVITY_UPDATE", H), o.default.unsubscribe("EMBEDDED_ACTIVITY_UPDATE_V2", Y), o.default.unsubscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), o.default.unsubscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), o.default.unsubscribe("MEDIA_SESSION_JOINED", W), o.default.unsubscribe("CALL_DELETE", K), o.default.unsubscribe("RTC_CONNECTION_STATE", z)
+                    h.default.removeChangeListener(this.handleSelectedChannelUpdate), o.default.unsubscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), o.default.unsubscribe("EMBEDDED_ACTIVITY_OPEN", x), o.default.unsubscribe("EMBEDDED_ACTIVITY_CLOSE", F), o.default.unsubscribe("EMBEDDED_ACTIVITY_UPDATE", H), o.default.unsubscribe("EMBEDDED_ACTIVITY_UPDATE_V2", Y), o.default.unsubscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), o.default.unsubscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), o.default.unsubscribe("MEDIA_SESSION_JOINED", W), o.default.unsubscribe("CALL_DELETE", this.handleCallDelete), o.default.unsubscribe("RTC_CONNECTION_STATE", this.handleRTCConnectionState)
                 }
                 constructor(...e) {
                     super(...e), w(this, "handleSelectedChannelUpdate", () => {
@@ -66884,6 +66865,21 @@
                             });
                             t.code !== b.RPCCloseCodes.CLOSE_NORMAL && this.showErrorModal(t, i)
                         }
+                    }), w(this, "handleCallDelete", e => {
+                        let {
+                            channelId: t
+                        } = e, n = h.default.getVoiceChannelId();
+                        null != n && n === t && this.handleCallEnded(t)
+                    }), w(this, "handleRTCConnectionState", e => {
+                        if (e.state !== b.RTCConnectionStates.DISCONNECTED) return;
+                        let t = e.channelId;
+                        this.handleCallEnded(t)
+                    }), w(this, "handleCallEnded", e => {
+                        let t = C.default.getSelfEmbeddedActivityForChannel(e);
+                        null != t && this.leaveActivity({
+                            channelId: e,
+                            applicationId: t.applicationId
+                        })
                     }), w(this, "handleDeferredOpen", async e => {
                         var t, n, i;
                         let r;
@@ -69117,10 +69113,12 @@
                         channelId: t,
                         applicationId: n
                     } = e;
-                    s.default.wait(() => (0, o.stopEmbeddedActivity)({
-                        channelId: t,
-                        applicationId: n
-                    }))
+                    s.default.wait(() => {
+                        (0, o.stopEmbeddedActivity)({
+                            channelId: t,
+                            applicationId: n
+                        })
+                    })
                 }
                 constructor(...e) {
                     var t, n, i;
@@ -88340,8 +88338,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294886", "294886"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294886")), t = 0), t
+                let t = parseInt((e = "294892", "294892"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294892")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116174,8 +116172,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294886",
-                    versionHash: "7407d26b6d3877b81e2a25300530a2c8ea29fd63"
+                    buildNumber: "294892",
+                    versionHash: "8fd2bc9a1f51ee78b901ed67c653e8fd7202f0c1"
                 }
             }
             n.r(t), n.d(t, {
@@ -173190,8 +173188,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716241776857",
-                                    build_number: "294886"
+                                    built_at: "1716242510709",
+                                    build_number: "294892"
                                 }
                             },
                             retries: 1
@@ -250093,7 +250091,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "7407d26b6d3877b81e2a25300530a2c8ea29fd63"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "8fd2bc9a1f51ee78b901ed67c653e8fd7202f0c1"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279186,7 +279184,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294886"
+                                build_number: "294892"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286544,7 +286542,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "294886", "294886"), 10);
+                let s = parseInt((n = "294892", "294892"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314234,4 +314232,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.05530495138c8f423010.js.map
+//# sourceMappingURL=71586.621b5e55a4840fddcece.js.map
