@@ -6732,6 +6732,21 @@ div.cardContainer__94a1c {
     height: 64px
 }
 
+.questRewardTile__0a963:before {
+    border: 2px solid var(--white-500);
+    border-radius: inherit;
+    box-sizing: border-box;
+    content: "";
+    height: 100%;
+    left: 0;
+    -webkit-mask-image: linear-gradient(315deg, transparent 50%, black);
+    mask-image: linear-gradient(315deg, transparent 50%, black);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1
+}
+
 .questRewardTileInteractive_c349cf {
     cursor: pointer
 }
@@ -137010,8 +137025,8 @@ button {
 
 code {
     font-family: var(--font-code);
-    font-size: .875rem;
-    line-height: 1rem
+    font-size: 14px;
+    line-height: 16px
 }
 
 :root {
@@ -137813,4 +137828,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7b4f730e389fb6fe790c.css.map*/
+/*# sourceMappingURL=99387.1012e2eecfbbaecfd195.css.map*/
