@@ -12274,6 +12274,12 @@ span.clanTag_f4aadc {
     cursor: pointer
 }
 
+.container__0998c:hover {
+    background-color: var(--background-secondary);
+    transition: background-color.3s ease;
+    border: inset 1px solid var(--border-strong)
+}
+
 .clickableContainer__6a669 {
     display: none
 }
@@ -12392,20 +12398,21 @@ span.clanTag_f4aadc {
 .joinButtonWhatWrapper_fa34bc {
     position: absolute;
     right: 16px;
-    background: linear-gradient(90deg, transparent, var(--background-secondary-alt)30px);
+    background: linear-gradient(90deg, transparent, var(--background-secondary)30px);
     padding-left: 40px;
     height: 70px;
     display: flex;
-    align-items: center
+    align-items: center;
+    animation: fadeIn__485ae.3s
 }
 
 .joinButtonWhoWrapper__15fe3 {
     position: absolute;
     right: 16px;
-    bottom: 16px;
-    background: linear-gradient(90deg, transparent, var(--background-secondary-alt)30px);
+    margin-top: 30px;
+    background: linear-gradient(90deg, transparent, var(--background-secondary)30px);
     padding-left: 40px;
-    padding-top: 16px;
+    padding-top: 8px;
     display: flex;
     align-items: center
 }
@@ -12416,6 +12423,16 @@ span.clanTag_f4aadc {
     color: var(--icon-secondary)
 }
 
+@keyframes fadeIn__485ae {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
 .container_a88e31 {
     background-color: var(--background-floating);
     padding: 8px;
@@ -12424,7 +12441,8 @@ span.clanTag_f4aadc {
     gap: 8px;
     display: flex;
     flex-direction: column;
-    margin-left: 16px
+    margin-left: 16px;
+    box-shadow: var(--elevation-high)
 }
 
 .cards__3f65d {
@@ -12446,6 +12464,16 @@ span.clanTag_f4aadc {
 
 .rowIconV2_fe06d9 {
     margin-top: 2px
+}
+
+.tooltipPointer__87949 {
+    position: absolute;
+    left: 3px;
+    top: 10px;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-right-color: var(--background-floating)
 }
 
 .emptyStatePrompt__43e42 {
@@ -137785,4 +137813,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f9bc8c942321da6c96b6.css.map*/
+/*# sourceMappingURL=99387.180e8bd2d372b3e9b7c0.css.map*/

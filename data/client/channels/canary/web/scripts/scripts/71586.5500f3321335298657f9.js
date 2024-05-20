@@ -37054,7 +37054,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, a.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(s.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294757", ", Version Hash: ").concat("ec99ca8e1b01cc9c8ca8bdd549fb5a4a63b651fe")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294765", ", Version Hash: ").concat("716c2ad41df52d8da2a5a5ee9f8db28ab7b43b0b")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -55985,11 +55985,11 @@
                 GAMING_IN_CHANNEL: "{gameName} • {channelName}",
                 MULTIPLE_GAMES_IN_CHANNEL: "{numGames} games • {channelName}",
                 MULTIPLE_ACTIVITIES_IN_CHANNEL: "{numActivities} activities • {channelName}",
-                GUILD_POPOUT_USERS_STREAMING: "{username} and {count, plural, one {{count} other is} other {{count} others are}} streaming",
+                GUILD_POPOUT_USERS_STREAMING: "{username} and {count, plural, one {{count} other are} other {{count} others are}} streaming",
                 GUILD_POPOUT_USER_IN_VOICE: "{username} is in voice",
-                GUILD_POPOUT_USERS_IN_VOICE: "{username} and {count, plural, one {{count} other is} other {{count} others are}} in voice",
+                GUILD_POPOUT_USERS_IN_VOICE: "{username} and {count, plural, one {{count} other are} other {{count} others are}} in voice",
                 GUILD_POPOUT_USER_ON_VIDEO: "{username} is on video",
-                GUILD_POPOUT_USERS_ON_VIDEO: "{username} and {count, plural, one {{count} other is} other {{count} others are}} on video",
+                GUILD_POPOUT_USERS_ON_VIDEO: "{username} and {count, plural, one {{count} other are} other {{count} others are}} on video",
                 INAPPROPRIATE_CONVERSATION_CONTACT_CRISIS_TEXT_LINE_HEADER: "Contact Crisis Text Line",
                 INAPPROPRIATE_CONVERSATION_CONTACT_CRISIS_TEXT_LINE_DESCRIPTION: "Get 24-hour, live support from a counselor. To start, text DISCORD to 741-741.",
                 INAPPROPRIATE_CONVERSATION_CONTACT_CRISIS_TEXT_LINE_ALT: "Illustration of floating phone surrounded by various abstract health info bubbles",
@@ -88324,8 +88324,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294757", "294757"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294757")), t = 0), t
+                let t = parseInt((e = "294765", "294765"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294765")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116148,8 +116148,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294757",
-                    versionHash: "ec99ca8e1b01cc9c8ca8bdd549fb5a4a63b651fe"
+                    buildNumber: "294765",
+                    versionHash: "716c2ad41df52d8da2a5a5ee9f8db28ab7b43b0b"
                 }
             }
             n.r(t), n.d(t, {
@@ -155695,6 +155695,27 @@
             }
             t.default = a
         },
+        912787: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return s
+                }
+            });
+            var i = n("442837"),
+                r = n("592125"),
+                a = n("126134");
+
+            function s(e) {
+                let {
+                    category: t
+                } = e;
+                return (0, i.useStateFromStores)([r.default], () => {
+                    let n = t === a.CardCategory.HANGOUT || t === a.CardCategory.GAMING ? e.channelId : t === a.CardCategory.EVENT ? e.event.channel_id : t === a.CardCategory.EMBEDDED_ACTIVITY ? e.embeddedActivities[0].channelId : null;
+                    return r.default.getChannel(n)
+                })
+            }
+        },
         623552: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -156321,7 +156342,9 @@
                 };
                 return (0, i.jsxs)("div", {
                     className: Z.container,
-                    children: [(0, i.jsxs)("div", {
+                    children: [(0, i.jsx)("div", {
+                        className: Z.tooltipPointer
+                    }), (0, i.jsxs)("div", {
                         className: Z.header,
                         children: [a ? (0, i.jsx)(P.default, {
                             guild: t,
@@ -156575,7 +156598,7 @@
                     })(e, t)], ["desc"])
                 })(B, k).slice(0, 3)), m(B.length)), n
             }
-            let y = e => t => [L.ActivityTypes.PLAYING, L.ActivityTypes.WATCHING].includes(t.type) && (null != t.assets || null != t.state || null != t.details || null != t.party) && (null == t.session_id || t.session_id === e.voiceState.sessionId);
+            let y = e => e => [L.ActivityTypes.PLAYING, L.ActivityTypes.WATCHING].includes(e.type) && (null != e.assets || null != e.state || null != e.details || null != e.party) && !1;
 
             function P(e) {
                 return (0, s.useStateFromStoresArray)([T.default, A.default], () => {
@@ -157034,79 +157057,84 @@
             "use strict";
             n.r(t), n.d(t, {
                 getCategoryIcon: function() {
-                    return K
+                    return q
                 },
                 getClickHandler: function() {
-                    return Z
+                    return $
                 },
                 getJoinButton: function() {
-                    return X
+                    return ee
                 },
                 getSubtitle: function() {
-                    return z
+                    return J
                 },
                 useCardTitle: function() {
-                    return Y
+                    return Z
                 },
                 useCount: function() {
-                    return j
+                    return X
                 },
                 useImage: function() {
-                    return W
+                    return Q
                 }
             }), n("47120");
             var i = n("735250");
             n("470079");
             var r = n("831209"),
-                a = n("442837"),
-                s = n("481060"),
-                o = n("812206"),
-                l = n("557135"),
-                u = n("66999"),
-                d = n("15274"),
-                _ = n("217804"),
-                c = n("703656"),
-                E = n("881824"),
-                I = n("922482"),
-                T = n("565799"),
-                f = n("501655"),
-                S = n("427679"),
-                h = n("592125"),
-                A = n("271383"),
-                m = n("496675"),
-                N = n("594174"),
-                p = n("979651"),
-                O = n("366695"),
-                C = n("305878"),
-                R = n("119828"),
-                g = n("737688"),
-                L = n("158010"),
-                v = n("944581"),
-                D = n("645284"),
-                M = n("632184"),
-                y = n("170039"),
-                P = n("26290"),
-                U = n("51144"),
-                b = n("59688"),
+                a = n("481060"),
+                s = n("812206"),
+                o = n("557135"),
+                l = n("66999"),
+                u = n("15274"),
+                d = n("217804"),
+                _ = n("703656"),
+                c = n("881824"),
+                E = n("922482"),
+                I = n("565799"),
+                T = n("501655"),
+                f = n("427679"),
+                S = n("592125"),
+                h = n("271383"),
+                A = n("496675"),
+                m = n("594174"),
+                N = n("979651"),
+                p = n("366695"),
+                O = n("305878"),
+                C = n("737688"),
+                R = n("242315"),
+                g = n("158010"),
+                L = n("944581"),
+                v = n("645284"),
+                D = n("632184"),
+                M = n("170039"),
+                y = n("26290"),
+                P = n("51144"),
+                U = n("59688"),
+                b = n("912787"),
                 G = n("623552"),
                 w = n("718582"),
-                k = n("126134"),
-                B = n("981631"),
-                V = n("765305"),
-                x = n("689938"),
-                F = n("181096");
+                k = n("177963"),
+                B = n("835248"),
+                V = n("437431"),
+                x = n("874070"),
+                F = n("185885"),
+                H = n("126134"),
+                Y = n("981631"),
+                j = n("765305"),
+                W = n("689938"),
+                K = n("181096");
 
-            function H(e, t) {
+            function z(e, t) {
                 var n, i;
                 let r = (n = e, i = t, n.map(e => {
                         var t;
-                        let n = N.default.getUser(e);
+                        let n = m.default.getUser(e);
                         if (null == n) return null;
-                        let r = A.default.getNick(i, n.id);
-                        return null !== (t = null != r ? r : U.default.getGlobalName(n)) && void 0 !== t ? t : U.default.getUserTag(n)
+                        let r = h.default.getNick(i, n.id);
+                        return null !== (t = null != r ? r : P.default.getGlobalName(n)) && void 0 !== t ? t : P.default.getUserTag(n)
                     }).filter(e => null != e)),
                     a = r.length;
-                if (a > 0) return 1 === a ? r[0] : (2 === a ? x.default.Messages.USER_SUMMARY_TWO : 3 === a ? x.default.Messages.USER_SUMMARY_THREE : x.default.Messages.USER_SUMMARY_THREE_AND_OTHERS).format({
+                if (a > 0) return 1 === a ? r[0] : (2 === a ? W.default.Messages.USER_SUMMARY_TWO : 3 === a ? W.default.Messages.USER_SUMMARY_THREE : W.default.Messages.USER_SUMMARY_THREE_AND_OTHERS).format({
                     first: r[0],
                     second: null == r ? void 0 : r[1],
                     third: null == r ? void 0 : r[2],
@@ -157114,86 +157142,79 @@
                 })
             }
 
-            function Y(e, t) {
+            function Z(e, t) {
                 let {
                     category: n
-                } = e, i = (0, w.useSortUserIdsByAffinity)(n === k.CardCategory.HANGOUT ? null == e ? void 0 : e.userIds : []), r = (0, w.useSortUserIdsByAffinity)(n === k.CardCategory.HANGOUT ? null == e ? void 0 : e.streamUserIds : []), s = (0, w.useSortUserIdsByAffinity)(n === k.CardCategory.GAMING ? null == e ? void 0 : e.gameUserIds : []), o = (0, a.useStateFromStores)([h.default], () => {
-                    let t = n === k.CardCategory.HANGOUT || n === k.CardCategory.GAMING ? e.channelId : n === k.CardCategory.EVENT ? e.event.channel_id : n === k.CardCategory.EMBEDDED_ACTIVITY ? e.embeddedActivities[0].channelId : null;
-                    return h.default.getChannel(t)
-                }), {
-                    usersToShow: l
-                } = (0, w.useGetEventCardUsers)(o), u = new Set;
-                n === k.CardCategory.EMBEDDED_ACTIVITY && e.embeddedActivities.forEach(e => {
+                } = e, i = (0, w.useSortUserIdsByAffinity)(n === H.CardCategory.HANGOUT ? null == e ? void 0 : e.userIds : []), r = (0, w.useSortUserIdsByAffinity)(n === H.CardCategory.HANGOUT ? null == e ? void 0 : e.streamUserIds : []), a = (0, w.useSortUserIdsByAffinity)(n === H.CardCategory.GAMING ? null == e ? void 0 : e.gameUserIds : []), s = (0, b.default)(e), {
+                    usersToShow: o
+                } = (0, w.useGetEventCardUsers)(s), l = (0, w.useSortUserIdsByAffinity)(n === H.CardCategory.HANGOUT && e.isStage ? o.map(e => e.id) : []), u = new Set;
+                n === H.CardCategory.EMBEDDED_ACTIVITY && e.embeddedActivities.forEach(e => {
                     u = new Set([...u, ...e.userIds])
                 });
-                let d = (0, w.useSortUserIdsByAffinity)(n === k.CardCategory.EMBEDDED_ACTIVITY ? [...u] : []);
+                let d = (0, w.useSortUserIdsByAffinity)(n === H.CardCategory.EMBEDDED_ACTIVITY ? [...u] : []);
                 switch (n) {
-                    case k.CardCategory.HANGOUT: {
-                        let n = e.isStage ? l.map(e => e.id) : [],
-                            a = H(n.length > 0 ? n : r.length > 0 ? r : i, t);
+                    case H.CardCategory.HANGOUT: {
+                        let n = z(l.length > 0 ? l : r.length > 0 ? r : i, t);
                         if (e.isStage) {
                             var _, c;
-                            return null !== (c = null === (_ = S.default.getStageInstanceByChannel(e.channelId)) || void 0 === _ ? void 0 : _.topic) && void 0 !== c ? c : a
+                            return null !== (c = null === (_ = f.default.getStageInstanceByChannel(e.channelId)) || void 0 === _ ? void 0 : _.topic) && void 0 !== c ? c : n
                         }
-                        return a
+                        return n
                     }
-                    case k.CardCategory.EVENT:
+                    case H.CardCategory.EVENT:
                         return e.event.name;
-                    case k.CardCategory.EMBEDDED_ACTIVITY:
-                        return H(d, t);
-                    case k.CardCategory.GAMING:
-                        return H(s, t);
+                    case H.CardCategory.EMBEDDED_ACTIVITY:
+                        return z(d, t);
+                    case H.CardCategory.GAMING:
+                        return z(a, t);
                     default:
                         return null
                 }
             }
 
-            function j(e) {
+            function X(e) {
                 let {
                     category: t
-                } = e, n = (0, a.useStateFromStores)([h.default], () => {
-                    let n = t === k.CardCategory.HANGOUT || t === k.CardCategory.GAMING ? e.channelId : t === k.CardCategory.EVENT ? e.event.channel_id : t === k.CardCategory.EMBEDDED_ACTIVITY ? e.embeddedActivities[0].channelId : null;
-                    return h.default.getChannel(n)
-                }), {
+                } = e, n = (0, b.default)(e), {
                     audienceCount: i
                 } = (0, w.useGetEventCardUsers)(n);
                 switch (t) {
-                    case k.CardCategory.EVENT:
+                    case H.CardCategory.EVENT:
                         if (null != i) return [{
-                            icon: y.default,
+                            icon: R.default,
                             count: i
                         }];
                         return [];
-                    case k.CardCategory.HANGOUT:
+                    case H.CardCategory.HANGOUT:
                         let {
-                            streamUserIds: r, userIds: s, channelId: o, isStage: l
+                            streamUserIds: r, userIds: a, channelId: s, isStage: o
                         } = e;
-                        if (l) {
-                            var u;
+                        if (o) {
+                            var l;
                             return [{
-                                icon: y.default,
-                                count: null !== (u = T.default.getParticipantCount(o, f.StageChannelParticipantNamedIndex.AUDIENCE)) && void 0 !== u ? u : 0
+                                icon: R.default,
+                                count: null !== (l = I.default.getParticipantCount(s, T.StageChannelParticipantNamedIndex.AUDIENCE)) && void 0 !== l ? l : 0
                             }]
                         }
                         if (r.length > 0) return [{
-                            icon: L.default,
-                            count: s.length > 0 ? s.length : null
+                            icon: g.default,
+                            count: a.length > 0 ? a.length : null
                         }];
                         return [];
-                    case k.CardCategory.EMBEDDED_ACTIVITY:
+                    case H.CardCategory.EMBEDDED_ACTIVITY:
                         return [{
-                            icon: L.default,
+                            icon: g.default,
                             count: e.voiceUsersCount > 0 ? e.voiceUsersCount : null
                         }, {
-                            icon: D.default,
+                            icon: v.default,
                             count: e.streamersCount > 0 ? e.streamersCount : null
                         }];
-                    case k.CardCategory.GAMING:
+                    case H.CardCategory.GAMING:
                         return [{
-                            icon: L.default,
+                            icon: g.default,
                             count: e.voiceStates.length > 0 ? e.voiceStates.length : null
                         }, {
-                            icon: D.default,
+                            icon: v.default,
                             count: e.streamersCount > 0 ? e.streamersCount : null
                         }];
                     default:
@@ -157201,84 +157222,83 @@
                 }
             }
 
-            function W(e, t, n) {
+            function Q(e, t, n) {
                 let {
-                    cardType: s
-                } = b.default.getCurrentConfig({
+                    cardType: a
+                } = U.default.getCurrentConfig({
                     location: "join_button"
                 }, {
                     autoTrackExposure: !1
-                }), l = s === k.GuildPeekCardTypes.WHAT, {
-                    category: u
-                } = e, d = (0, a.useStateFromStores)([h.default], () => {
-                    let t = u === k.CardCategory.HANGOUT || u === k.CardCategory.GAMING ? e.channelId : u === k.CardCategory.EVENT ? e.event.channel_id : u === k.CardCategory.EMBEDDED_ACTIVITY ? e.embeddedActivities[0].channelId : null;
-                    return h.default.getChannel(t)
-                }), {
-                    usersToShow: _
-                } = (0, w.useGetEventCardUsers)(d);
-                switch (u) {
-                    case k.CardCategory.GAMING:
+                }), o = a === H.GuildPeekCardTypes.WHAT, {
+                    category: l
+                } = e, u = (0, b.default)(e), {
+                    usersToShow: d
+                } = (0, w.useGetEventCardUsers)(u);
+                switch (l) {
+                    case H.CardCategory.GAMING:
                         let {
-                            games: c
+                            games: _
                         } = e;
-                        if (null == c[0].application_id) return (0, i.jsx)(g.default, {});
-                        return (0, i.jsx)(O.default, {
-                            game: o.default.getApplication(c[0].application_id),
+                        if (null == _[0].application_id) return (0, i.jsx)(C.default, {});
+                        return (0, i.jsx)(p.default, {
+                            game: s.default.getApplication(_[0].application_id),
                             size: "xl",
-                            className: F.gameIcon
+                            className: K.gameIcon
                         });
-                    case k.CardCategory.EVENT:
-                        if (_.length > 0) return (0, i.jsx)(G.default, {
+                    case H.CardCategory.EVENT:
+                        if (d.length > 0 && !o) return (0, i.jsx)(G.default, {
                             guildId: t,
-                            users: _
+                            users: d
                         });
-                        return e.isStage ? (0, i.jsx)(y.default, {
-                            className: F.imageIcon
-                        }) : (0, i.jsx)(C.default, {
-                            className: F.imageIcon
+                        return e.isStage && !o ? (0, i.jsx)(V.default, {
+                            className: K.imageIcon
+                        }) : (0, i.jsx)(k.default, {
+                            className: K.imageIcon
                         });
-                    case k.CardCategory.EMBEDDED_ACTIVITY:
+                    case H.CardCategory.EMBEDDED_ACTIVITY:
                         let {
-                            embeddedActivities: E
+                            embeddedActivities: c
                         } = e;
-                        if (null == E[0].applicationId) return (0, i.jsx)(v.default, {});
-                        return (0, i.jsx)(O.default, {
-                            game: o.default.getApplication(E[0].applicationId),
+                        if (null == c[0].applicationId) return (0, i.jsx)(L.default, {});
+                        return (0, i.jsx)(p.default, {
+                            game: s.default.getApplication(c[0].applicationId),
                             size: "xl",
-                            className: F.gameIcon
+                            className: K.gameIcon
                         });
-                    case k.CardCategory.HANGOUT: {
+                    case H.CardCategory.HANGOUT: {
                         let {
                             streamUserIds: a,
                             userIds: s,
-                            channelHasVideo: o,
+                            channelHasVideo: l,
                             isStage: u
                         } = e;
-                        if (l) {
-                            if (u) return (0, i.jsx)(y.default, {
-                                className: F.imageIcon
+                        if (o) {
+                            if (u) return (0, i.jsx)(V.default, {
+                                className: K.imageIcon
                             });
-                            return a.length > 0 ? (0, i.jsx)(D.default, {
-                                className: F.imageIcon
-                            }) : o ? (0, i.jsx)(R.default, {
-                                className: F.imageIcon
-                            }) : (0, i.jsx)(M.default, {
-                                className: F.imageIcon
+                            if (a.length > 0) return (0, i.jsx)(B.default, {
+                                className: K.imageIcon
+                            });
+                            if (l) return (0, i.jsx)(x.default, {
+                                className: K.imageIcon
+                            });
+                            return (0, i.jsx)(F.default, {
+                                className: K.imageIcon
                             })
                         }
-                        let d = u ? _ : [];
+                        let _ = u ? d : [];
                         if (u) {
-                            if (0 === d.length) return (0, i.jsx)(y.default, {
-                                className: F.imageIcon
+                            if (0 === _.length) return (0, i.jsx)(V.default, {
+                                className: K.imageIcon
                             });
                             return (0, i.jsx)(G.default, {
                                 guildId: t,
-                                users: d
+                                users: _
                             })
                         }
                         if (a.length > 0) {
-                            let e = e => (0, i.jsx)(P.TextBadge, {
-                                text: x.default.Messages.LIVE,
+                            let e = e => (0, i.jsx)(y.TextBadge, {
+                                text: W.default.Messages.LIVE,
                                 color: r.default.STATUS_DANGER,
                                 className: e
                             });
@@ -157289,11 +157309,11 @@
                                     alt: "",
                                     height: 64,
                                     width: 64,
-                                    className: F.streamPreview
-                                }), e(F.liveBadge)]
+                                    className: K.streamPreview
+                                }), e(K.liveBadge)]
                             })
                         }
-                        let c = s.map(e => N.default.getUser(e)).filter(e => null != e);
+                        let c = s.map(e => m.default.getUser(e)).filter(e => null != e);
                         return (0, i.jsx)(G.default, {
                             guildId: t,
                             users: c
@@ -157302,157 +157322,151 @@
                 }
             }
 
-            function K(e) {
+            function q(e) {
                 let {
                     category: t
                 } = e;
                 switch (t) {
-                    case k.CardCategory.GAMING:
-                        return g.default;
-                    case k.CardCategory.EVENT:
+                    case H.CardCategory.GAMING:
                         return C.default;
-                    case k.CardCategory.EMBEDDED_ACTIVITY:
-                        return v.default;
-                    case k.CardCategory.HANGOUT: {
+                    case H.CardCategory.EVENT:
+                        return O.default;
+                    case H.CardCategory.EMBEDDED_ACTIVITY:
+                        return L.default;
+                    case H.CardCategory.HANGOUT: {
                         let {
                             streamUserIds: t,
                             isStage: n
                         } = e;
-                        if (n) return y.default;
-                        if (t.length > 0) return D.default;
-                        return M.default
+                        if (n) return M.default;
+                        if (t.length > 0) return v.default;
+                        return D.default
                     }
                 }
             }
 
-            function z(e) {
-                var t, n, r, a, s, l, u;
+            function J(e) {
+                var t, n, r, a, o, l, u;
                 let {
-                    category: d
+                    category: _
                 } = e;
-                switch (d) {
-                    case k.CardCategory.GAMING:
+                switch (_) {
+                    case H.CardCategory.GAMING:
                         let {
                             games: c, channelId: E
                         } = e;
-                        if (1 === c.length) return x.default.Messages.GAMING_IN_CHANNEL.format({
-                            channelName: null === (n = h.default.getChannel(E)) || void 0 === n ? void 0 : n.name,
+                        if (1 === c.length) return W.default.Messages.GAMING_IN_CHANNEL.format({
+                            channelName: null === (n = S.default.getChannel(E)) || void 0 === n ? void 0 : n.name,
                             gameName: c[0].name
                         });
-                        return x.default.Messages.MULTIPLE_GAMES_IN_CHANNEL.format({
+                        return W.default.Messages.MULTIPLE_GAMES_IN_CHANNEL.format({
                             numGames: c.length,
-                            channelName: null === (t = h.default.getChannel(E)) || void 0 === t ? void 0 : t.name
+                            channelName: null === (t = S.default.getChannel(E)) || void 0 === t ? void 0 : t.name
                         });
-                    case k.CardCategory.EVENT:
+                    case H.CardCategory.EVENT:
                         let {
                             event: I
-                        } = e, T = (0, _.getLocationDataForEvent)(I, h.default.getChannel(I.channel_id)), f = null == T ? void 0 : T.IconComponent, S = null == T ? void 0 : T.locationName;
-                        if (null != f && null != S) return (0, i.jsxs)("div", {
-                            className: F.inline,
+                        } = e, T = (0, d.getLocationDataForEvent)(I, S.default.getChannel(I.channel_id)), f = null == T ? void 0 : T.IconComponent, h = null == T ? void 0 : T.locationName;
+                        if (null != f && null != h) return (0, i.jsxs)("div", {
+                            className: K.inline,
                             children: [(0, i.jsx)(f, {
-                                className: F.categoryIcon
-                            }), S]
+                                className: K.categoryIcon
+                            }), h]
                         });
                         return null;
-                    case k.CardCategory.EMBEDDED_ACTIVITY:
+                    case H.CardCategory.EMBEDDED_ACTIVITY:
                         let {
                             embeddedActivities: A
                         } = e;
-                        if (1 === A.length) return x.default.Messages.GAMING_IN_CHANNEL.format({
-                            channelName: null === (a = h.default.getChannel(A[0].channelId)) || void 0 === a ? void 0 : a.name,
-                            gameName: null === (s = o.default.getApplication(A[0].applicationId)) || void 0 === s ? void 0 : s.name
+                        if (1 === A.length) return W.default.Messages.GAMING_IN_CHANNEL.format({
+                            channelName: null === (a = S.default.getChannel(A[0].channelId)) || void 0 === a ? void 0 : a.name,
+                            gameName: null === (o = s.default.getApplication(A[0].applicationId)) || void 0 === o ? void 0 : o.name
                         });
-                        return x.default.Messages.MULTIPLE_ACTIVITIES_IN_CHANNEL.format({
-                            channelName: null === (r = h.default.getChannel(A[0].channelId)) || void 0 === r ? void 0 : r.name,
+                        return W.default.Messages.MULTIPLE_ACTIVITIES_IN_CHANNEL.format({
+                            channelName: null === (r = S.default.getChannel(A[0].channelId)) || void 0 === r ? void 0 : r.name,
                             numActivities: A.length
                         });
-                    case k.CardCategory.HANGOUT: {
+                    case H.CardCategory.HANGOUT: {
                         let {
                             streamUserIds: t,
                             channelId: n
                         } = e;
-                        if (t.length > 0) return x.default.Messages.STREAMING_IN_CHANNEL.format({
-                            channelName: null === (u = h.default.getChannel(n)) || void 0 === u ? void 0 : u.name
+                        if (t.length > 0) return W.default.Messages.STREAMING_IN_CHANNEL.format({
+                            channelName: null === (u = S.default.getChannel(n)) || void 0 === u ? void 0 : u.name
                         });
-                        return null === (l = h.default.getChannel(n)) || void 0 === l ? void 0 : l.name
+                        return null === (l = S.default.getChannel(n)) || void 0 === l ? void 0 : l.name
                     }
                     default:
                         return null
                 }
             }
 
-            function Z(e, t) {
+            function $(e, t) {
                 let {
                     category: n
                 } = e;
                 switch (n) {
-                    case k.CardCategory.GAMING:
+                    case H.CardCategory.GAMING:
                         return () => {
-                            (0, c.transitionToGuild)(t, e.channelId)
+                            (0, _.transitionToGuild)(t, e.channelId)
                         };
-                    case k.CardCategory.EMBEDDED_ACTIVITY:
+                    case H.CardCategory.EMBEDDED_ACTIVITY:
                         return () => {
-                            (0, c.transitionToGuild)(t, e.embeddedActivities[0].channelId)
+                            (0, _.transitionToGuild)(t, e.embeddedActivities[0].channelId)
                         };
-                    case k.CardCategory.EVENT:
+                    case H.CardCategory.EVENT:
                         return () => {
-                            (0, d.openGuildEventDetails)({
+                            (0, u.openGuildEventDetails)({
                                 eventId: e.event.id
                             })
                         };
-                    case k.CardCategory.HANGOUT:
+                    case H.CardCategory.HANGOUT:
                         return () => {
-                            (0, c.transitionToGuild)(t, e.channelId)
+                            (0, _.transitionToGuild)(t, e.channelId)
                         };
                     default:
                         return null
                 }
             }
 
-            function X(e, t) {
+            function ee(e, t) {
                 let {
-                    cardType: n
-                } = b.default.getCurrentConfig({
-                    location: "join_button"
-                }, {
-                    autoTrackExposure: !1
-                }), {
-                    category: r
-                } = e, a = null;
-                if (null == (a = r === k.CardCategory.EVENT ? e.event.channel_id : r === k.CardCategory.EMBEDDED_ACTIVITY ? e.embeddedActivities[0].channelId : e.channelId)) return;
-                let o = p.default.isInChannel(a),
-                    _ = o ? x.default.Messages.GUILD_POPOUT_JOINED : x.default.Messages.JOIN,
-                    T = function(e, t) {
+                    category: n
+                } = e, r = null;
+                if (null == (r = n === H.CardCategory.EVENT ? e.event.channel_id : n === H.CardCategory.EMBEDDED_ACTIVITY ? e.embeddedActivities[0].channelId : e.channelId)) return;
+                let s = N.default.isInChannel(r),
+                    d = s ? W.default.Messages.GUILD_POPOUT_JOINED : W.default.Messages.JOIN,
+                    I = function(e, t) {
                         let {
                             category: n
                         } = e;
                         switch (n) {
-                            case k.CardCategory.HANGOUT:
-                            case k.CardCategory.GAMING:
+                            case H.CardCategory.HANGOUT:
+                            case H.CardCategory.GAMING:
                                 return () => {
                                     let {
                                         channelId: n
-                                    } = e, i = h.default.getChannel(n);
-                                    null != i && i.type === B.ChannelTypes.GUILD_VOICE && m.default.can(B.Permissions.CONNECT, i) && (l.default.handleVoiceConnect({
+                                    } = e, i = S.default.getChannel(n);
+                                    null != i && i.type === Y.ChannelTypes.GUILD_VOICE && A.default.can(Y.Permissions.CONNECT, i) && (o.default.handleVoiceConnect({
                                         channel: i,
-                                        connected: p.default.isInChannel(n),
-                                        needSubscriptionToAccess: (0, u.getChannelRoleSubscriptionStatus)(n).needSubscriptionToAccess,
+                                        connected: N.default.isInChannel(n),
+                                        needSubscriptionToAccess: (0, l.getChannelRoleSubscriptionStatus)(n).needSubscriptionToAccess,
                                         locked: !1
-                                    }), (0, c.transitionToGuild)(t, n))
+                                    }), (0, _.transitionToGuild)(t, n))
                                 };
-                            case k.CardCategory.EMBEDDED_ACTIVITY:
+                            case H.CardCategory.EMBEDDED_ACTIVITY:
                                 return () => {
                                     let {
                                         channelId: n
-                                    } = e.embeddedActivities[0], i = h.default.getChannel(n);
-                                    null != i && i.type === B.ChannelTypes.GUILD_VOICE && m.default.can(B.Permissions.CONNECT, i) && (l.default.handleVoiceConnect({
+                                    } = e.embeddedActivities[0], i = S.default.getChannel(n);
+                                    null != i && i.type === Y.ChannelTypes.GUILD_VOICE && A.default.can(Y.Permissions.CONNECT, i) && (o.default.handleVoiceConnect({
                                         channel: i,
-                                        connected: p.default.isInChannel(n),
-                                        needSubscriptionToAccess: (0, u.getChannelRoleSubscriptionStatus)(n).needSubscriptionToAccess,
+                                        connected: N.default.isInChannel(n),
+                                        needSubscriptionToAccess: (0, l.getChannelRoleSubscriptionStatus)(n).needSubscriptionToAccess,
                                         locked: !1
-                                    }), (0, c.transitionToGuild)(t, n))
+                                    }), (0, _.transitionToGuild)(t, n))
                                 };
-                            case k.CardCategory.EVENT:
+                            case H.CardCategory.EVENT:
                                 return () => {
                                     let {
                                         event: t
@@ -157460,41 +157474,330 @@
                                         channel_id: n,
                                         guild_id: i,
                                         entity_type: r
-                                    } = t, a = h.default.getChannel(n);
-                                    if (null == n || null == a || !m.default.can(B.Permissions.CONNECT, a)) {
-                                        (0, d.openGuildEventDetails)({
+                                    } = t, a = S.default.getChannel(n);
+                                    if (null == n || null == a || !A.default.can(Y.Permissions.CONNECT, a)) {
+                                        (0, u.openGuildEventDetails)({
                                             eventId: t.id
                                         });
                                         return
                                     }
                                     let s = async () => {
-                                        let e = await (0, I.connectOrLurkStage)(i, n);
-                                        (0, E.navigateToStage)(e)
+                                        let e = await (0, E.connectOrLurkStage)(i, n);
+                                        (0, c.navigateToStage)(e)
                                     };
-                                    r === V.GuildScheduledEventEntityTypes.STAGE_INSTANCE ? s() : r === V.GuildScheduledEventEntityTypes.VOICE && (l.default.handleVoiceConnect({
+                                    r === j.GuildScheduledEventEntityTypes.STAGE_INSTANCE ? s() : r === j.GuildScheduledEventEntityTypes.VOICE && (o.default.handleVoiceConnect({
                                         channel: a,
-                                        connected: p.default.isInChannel(n),
-                                        needSubscriptionToAccess: (0, u.getChannelRoleSubscriptionStatus)(n).needSubscriptionToAccess,
+                                        connected: N.default.isInChannel(n),
+                                        needSubscriptionToAccess: (0, l.getChannelRoleSubscriptionStatus)(n).needSubscriptionToAccess,
                                         locked: !1
-                                    }), (0, c.transitionToGuild)(i, n))
+                                    }), (0, _.transitionToGuild)(i, n))
                                 };
                             default:
                                 return null
                         }
                     }(e, t),
-                    f = (0, i.jsx)(s.Button, {
-                        size: s.Button.Sizes.MIN,
-                        color: s.Button.Colors.GREEN,
-                        disabled: o,
+                    T = (0, i.jsx)(a.Button, {
+                        size: a.Button.Sizes.MIN,
+                        color: a.Button.Colors.GREEN,
+                        disabled: s,
                         onClick: e => {
-                            e.stopPropagation(), null == T || T()
+                            e.stopPropagation(), null == I || I()
                         },
-                        className: F.joinButton,
-                        children: _
+                        className: K.joinButton,
+                        children: d
                     });
                 return (0, i.jsx)("div", {
-                    className: n === k.GuildPeekCardTypes.WHAT ? F.joinButtonWhatWrapper : F.joinButtonWhoWrapper,
-                    children: f
+                    className: K.joinButtonWhatWrapper,
+                    children: T
+                })
+            }
+        },
+        177963: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return a
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("325767");
+
+            function a(e) {
+                let {
+                    color: t = "currentColor",
+                    ...n
+                } = e;
+                return (0, i.jsxs)("svg", {
+                    ...(0, r.default)(n),
+                    viewBox: "0 0 24 24",
+                    fill: "none",
+                    children: [(0, i.jsx)("path", {
+                        d: "M6.14287 0.428589C6.44598 0.428589 6.73667 0.549013 6.951 0.763341C7.16533 0.977668 7.28573 1.26834 7.28573 1.57145V2.42859C7.28573 2.50436 7.31584 2.57705 7.36942 2.63063C7.423 2.68421 7.49567 2.7143 7.57145 2.7143H16.1429C16.2187 2.7143 16.2913 2.68421 16.3449 2.63063C16.3985 2.57705 16.4286 2.50436 16.4286 2.42859V1.57145C16.4286 1.26834 16.549 0.977668 16.7633 0.763341C16.9777 0.549013 17.2683 0.428589 17.5714 0.428589C17.8746 0.428589 18.1652 0.549013 18.3796 0.763341C18.5939 0.977668 18.7143 1.26834 18.7143 1.57145V2.42859C18.7143 2.50436 18.7444 2.57705 18.798 2.63063C18.8516 2.68421 18.9242 2.7143 19 2.7143H19.8572C20.7665 2.7143 21.6385 3.07554 22.2815 3.71852C22.9245 4.36151 23.2857 5.23356 23.2857 6.14287C23.2857 6.44598 23.1653 6.73669 22.951 6.95101C22.7367 7.16534 22.446 7.28573 22.1429 7.28573H1.57145C1.26834 7.28573 0.97765 7.16534 0.763323 6.95101C0.548996 6.73669 0.428589 6.44598 0.428589 6.14287C0.428589 5.23356 0.78981 4.36151 1.43279 3.71852C2.07577 3.07554 2.94785 2.7143 3.85716 2.7143H4.7143C4.79008 2.7143 4.86276 2.68421 4.91634 2.63063C4.96992 2.57705 5.00002 2.50436 5.00002 2.42859V1.57145C5.00002 1.26834 5.12042 0.977668 5.33475 0.763341C5.54908 0.549013 5.83977 0.428589 6.14287 0.428589Z",
+                        fill: "url(#paint0_linear_2245_132278)"
+                    }), (0, i.jsx)("path", {
+                        "fill-rule": "evenodd",
+                        "clip-rule": "evenodd",
+                        d: "M0.428589 10.7143C0.428589 10.4112 0.548996 10.1205 0.763323 9.90616C0.97765 9.69184 1.26834 9.57141 1.57145 9.57141H22.1429C22.446 9.57141 22.7367 9.69184 22.951 9.90616C23.1653 10.1205 23.2857 10.4112 23.2857 10.7143V21C23.2857 21.9093 22.9245 22.7814 22.2815 23.4244C21.6385 24.0674 20.7665 24.4286 19.8572 24.4286H3.85716C2.94785 24.4286 2.07577 24.0674 1.43279 23.4244C0.78981 22.7814 0.428589 21.9093 0.428589 21V10.7143ZM4.42859 13C4.27704 13 4.13169 13.0602 4.02453 13.1674C3.91736 13.2745 3.85716 13.4199 3.85716 13.5714V17C3.86009 17.1506 3.92123 17.2943 4.02776 17.4008C4.1343 17.5074 4.27795 17.5685 4.42859 17.5714H7.85716C8.00871 17.5714 8.15406 17.5112 8.26122 17.404C8.36839 17.2969 8.42859 17.1515 8.42859 17V13.5714C8.42859 13.4199 8.36839 13.2745 8.26122 13.1674C8.15406 13.0602 8.00871 13 7.85716 13H4.42859Z",
+                        fill: t
+                    }), (0, i.jsx)("defs", {
+                        children: (0, i.jsxs)("linearGradient", {
+                            id: "paint0_linear_2245_132278",
+                            x1: "11.8572",
+                            y1: "7.28573",
+                            x2: "11.8572",
+                            y2: "0.428589",
+                            gradientUnits: "userSpaceOnUse",
+                            children: [(0, i.jsx)("stop", {
+                                "stop-color": "#EB80B4"
+                            }), (0, i.jsx)("stop", {
+                                offset: "1",
+                                "stop-color": "#F8E573"
+                            })]
+                        })
+                    })]
+                })
+            }
+        },
+        835248: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return a
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("325767");
+
+            function a(e) {
+                let {
+                    color: t = "currentColor",
+                    ...n
+                } = e;
+                return (0, i.jsxs)("svg", {
+                    ...(0, r.default)(n),
+                    viewBox: "0 0 31 27",
+                    fill: "none",
+                    children: [(0, i.jsx)("path", {
+                        d: "M3.21429 4.75714C2.3618 4.75714 1.54424 5.0958 0.94144 5.6986C0.338645 6.30139 0 7.11895 0 7.97143V16.5429C0 17.3953 0.338645 18.2129 0.94144 18.8157C1.54424 19.4185 2.3618 19.7571 3.21429 19.7571H18.2143C19.0668 19.7571 19.8843 19.4185 20.4871 18.8157C21.0899 18.2129 21.4286 17.3953 21.4286 16.5429V7.97143C21.4286 7.11895 21.0899 6.30139 20.4871 5.6986C19.8843 5.0958 19.0668 4.75714 18.2143 4.75714H3.21429Z",
+                        fill: t
+                    }), (0, i.jsx)("path", {
+                        d: "M12.3214 24.0428C12.1794 24.0428 12.0431 23.9864 11.9426 23.8859C11.8422 23.7855 11.7857 23.6492 11.7857 23.5071V21.3643C11.783 21.223 11.7257 21.0884 11.6258 20.9885C11.5259 20.8886 11.3912 20.8313 11.25 20.8286H10.1786C10.0365 20.8286 9.90025 20.885 9.79978 20.9855C9.69932 21.0859 9.64287 21.2222 9.64287 21.3643V23.5071C9.64287 23.6492 9.58643 23.7855 9.48597 23.8859C9.3855 23.9864 9.24924 24.0428 9.10716 24.0428H7.50002C7.21586 24.0428 6.94333 24.1557 6.7424 24.3567C6.54147 24.5576 6.42859 24.8301 6.42859 25.1143C6.42859 25.3984 6.54147 25.671 6.7424 25.8719C6.94333 26.0728 7.21586 26.1857 7.50002 26.1857H13.9286C14.2127 26.1857 14.4853 26.0728 14.6862 25.8719C14.8871 25.671 15 25.3984 15 25.1143C15 24.8301 14.8871 24.5576 14.6862 24.3567C14.4853 24.1557 14.2127 24.0428 13.9286 24.0428H12.3214Z",
+                        fill: t
+                    }), (0, i.jsx)("path", {
+                        d: "M30.9693 6.68689L24.1 0.100865C24.0458 0.0556697 23.9795 0.0261025 23.9088 0.0155205C23.8418 -0.0051735 23.7698 -0.0051735 23.7028 0.0155205C23.6394 0.045501 23.584 0.0893215 23.541 0.143537C23.5196 0.208306 23.5196 0.277935 23.541 0.342704V2.81778H20.0108C18.3266 2.81093 16.691 3.36328 15.3773 4.3825C14.0554 5.39146 13.1397 6.81537 12.7884 8.40807L11.6999 13.2587C11.686 13.3196 11.686 13.3827 11.6999 13.4436C11.7145 13.5024 11.745 13.5564 11.7882 13.6001C11.8316 13.6503 11.8872 13.6894 11.95 13.7139C12.1013 13.771 12.2694 13.771 12.4207 13.7139H12.509L13.8769 12.7609C15.3439 11.7045 17.1227 11.1311 18.9517 11.125H23.5116V13.5859C23.4902 13.6506 23.4902 13.7203 23.5116 13.785C23.5546 13.8392 23.61 13.8831 23.6734 13.9131C23.7404 13.9337 23.8124 13.9337 23.8794 13.9131C23.9535 13.9033 24.0214 13.8679 24.0706 13.8135L30.9399 7.18477C30.9611 7.10546 30.9611 7.02223 30.9399 6.94293C30.9728 6.86155 30.9829 6.77326 30.9693 6.68689Z",
+                        fill: "url(#paint0_linear_2245_133739)"
+                    }), (0, i.jsx)("defs", {
+                        children: (0, i.jsxs)("linearGradient", {
+                            id: "paint0_linear_2245_133739",
+                            x1: "21.3493",
+                            y1: "13.9273",
+                            x2: "21.3493",
+                            y2: "0.00129654",
+                            gradientUnits: "userSpaceOnUse",
+                            children: [(0, i.jsx)("stop", {
+                                "stop-color": "#5A65E7"
+                            }), (0, i.jsx)("stop", {
+                                offset: "1",
+                                "stop-color": "#7BB7F6"
+                            })]
+                        })
+                    })]
+                })
+            }
+        },
+        437431: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return a
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("325767");
+
+            function a(e) {
+                let {
+                    color: t = "currentColor",
+                    ...n
+                } = e;
+                return (0, i.jsxs)("svg", {
+                    ...(0, r.default)(n),
+                    viewBox: "0 0 26 26",
+                    fill: "none",
+                    children: [(0, i.jsx)("path", {
+                        d: "M21.8106 20.2536C21.6261 20.0429 21.5173 19.7766 21.5018 19.4969C21.4863 19.2173 21.5648 18.9405 21.7249 18.7107C22.8337 17.0128 23.4221 15.0279 23.4178 13C23.4192 11.6278 23.15 10.2687 22.6255 9.00064C22.101 7.73259 21.3316 6.58044 20.3612 5.61012C19.3909 4.6398 18.2388 3.87037 16.9707 3.34589C15.7027 2.82141 14.3436 2.55216 12.9714 2.55356C10.2008 2.55356 7.54371 3.65417 5.58462 5.61326C3.62553 7.57234 2.52494 10.2294 2.52494 13C2.52377 15.029 3.11593 17.014 4.2285 18.7107C4.38718 18.9417 4.4639 19.2191 4.44642 19.4988C4.42894 19.7784 4.31827 20.0442 4.13208 20.2536C4.02624 20.3764 3.89391 20.4735 3.74507 20.5378C3.59623 20.602 3.43475 20.6316 3.2728 20.6244C3.11085 20.6172 2.95265 20.5733 2.81011 20.4961C2.66758 20.4188 2.54443 20.3103 2.44994 20.1786C1.00044 18.0577 0.227222 15.5475 0.232078 12.9786C0.243319 9.61177 1.58356 6.38558 3.96126 4.00186C6.33895 1.61815 9.56174 0.269753 12.9285 0.25C16.312 0.249995 19.5572 1.59262 21.9517 3.9831C24.3462 6.37357 25.6943 9.61651 25.6999 13C25.7048 15.5689 24.9316 18.0791 23.4821 20.2C23.3878 20.3337 23.2641 20.444 23.1206 20.5224C22.9771 20.6009 22.8175 20.6454 22.654 20.6527C22.4906 20.6599 22.3277 20.6296 22.1778 20.5642C22.0279 20.4987 21.895 20.3998 21.7892 20.275L21.8106 20.2536Z",
+                        fill: "url(#paint0_linear_2245_132278)"
+                    }), (0, i.jsx)("path", {
+                        d: "M18.5967 16.7501C18.7094 16.8679 18.8475 16.9585 19.0005 17.0149C19.1535 17.0713 19.3174 17.092 19.4797 17.0755C19.6419 17.0589 19.7982 17.0056 19.9367 16.9195C20.0752 16.8334 20.1922 16.7168 20.2788 16.5786C20.8304 15.4665 21.1165 14.2415 21.1145 13.0001C21.1145 10.8433 20.2578 8.77483 18.7327 7.24976C17.2076 5.72469 15.1392 4.86792 12.9824 4.86792C10.8275 4.87076 8.76179 5.72879 7.23903 7.25356C5.71627 8.77832 4.86097 10.8451 4.86097 13.0001C4.859 14.2415 5.14507 15.4665 5.69669 16.5786C5.7833 16.7168 5.90032 16.8334 6.03881 16.9195C6.17731 17.0056 6.33362 17.0589 6.49586 17.0755C6.65809 17.092 6.82197 17.0713 6.97498 17.0149C7.128 16.9585 7.26612 16.8679 7.37883 16.7501L7.44311 16.6858C7.60954 16.4902 7.71622 16.2508 7.75041 15.9963C7.7846 15.7417 7.74487 15.4827 7.63597 15.2501C7.33809 14.5374 7.18512 13.7725 7.18597 13.0001C7.18597 11.4618 7.79632 9.98632 8.88306 8.89758C9.96979 7.80884 11.4441 7.19577 12.9824 7.19293C13.745 7.19293 14.5001 7.34313 15.2047 7.63497C15.9093 7.92681 16.5494 8.35454 17.0887 8.89379C17.6279 9.43303 18.0557 10.0732 18.3475 10.7778C18.6393 11.4823 18.7895 12.2375 18.7895 13.0001C18.7904 13.7725 18.6374 14.5374 18.3395 15.2501C18.2306 15.4827 18.1909 15.7417 18.2251 15.9963C18.2593 16.2508 18.366 16.4902 18.5324 16.6858L18.5967 16.7501Z",
+                        fill: "url(#paint1_linear_2245_132278)"
+                    }), (0, i.jsx)("path", {
+                        d: "M16.4537 13C16.4537 13.9235 16.0868 14.8092 15.4338 15.4622C14.7807 16.1153 13.895 16.4821 12.9715 16.4821C12.0489 16.4793 11.1648 16.1115 10.5124 15.4591C9.85998 14.8067 9.49221 13.9226 9.48938 13C9.48938 12.0765 9.85625 11.1908 10.5093 10.5377C11.1623 9.88471 12.048 9.51784 12.9715 9.51784C13.4292 9.51642 13.8826 9.60555 14.3058 9.78004C14.7289 9.95453 15.1133 10.211 15.4369 10.5346C15.7606 10.8582 16.017 11.2427 16.1915 11.6658C16.366 12.0889 16.4551 12.5423 16.4537 13Z",
+                        fill: t
+                    }), (0, i.jsx)("path", {
+                        d: "M6.34977 22.3214C6.21616 22.732 6.23845 23.1775 6.41236 23.5727C6.58626 23.968 6.89962 24.2854 7.29262 24.4643C9.04622 25.3261 10.9744 25.7733 12.9283 25.7714C14.8938 25.7734 16.8332 25.3224 18.5962 24.4536C18.9888 24.2746 19.3013 23.9567 19.4735 23.561C19.6456 23.1653 19.6651 22.7199 19.5283 22.3107C19.0569 20.9418 18.1693 19.7545 16.9897 18.9149C15.8101 18.0754 14.3976 17.6256 12.9498 17.6286C11.4977 17.6251 10.0809 18.0756 8.89753 18.917C7.71414 19.7585 6.82335 20.9488 6.34977 22.3214Z",
+                        fill: t
+                    }), (0, i.jsxs)("defs", {
+                        children: [(0, i.jsxs)("linearGradient", {
+                            id: "paint0_linear_2245_132278",
+                            x1: "15.481",
+                            y1: "21.827",
+                            x2: "12.2345",
+                            y2: "-1.16702",
+                            gradientUnits: "userSpaceOnUse",
+                            children: [(0, i.jsx)("stop", {
+                                "stop-color": "#FD78B7"
+                            }), (0, i.jsx)("stop", {
+                                offset: "1",
+                                "stop-color": "#FDE55C"
+                            })]
+                        }), (0, i.jsxs)("linearGradient", {
+                            id: "paint1_linear_2245_132278",
+                            x1: "14.5928",
+                            y1: "17.7832",
+                            x2: "12.7659",
+                            y2: "3.98729",
+                            gradientUnits: "userSpaceOnUse",
+                            children: [(0, i.jsx)("stop", {
+                                "stop-color": "#FD78B7"
+                            }), (0, i.jsx)("stop", {
+                                offset: "1",
+                                "stop-color": "#FDE55C"
+                            })]
+                        })]
+                    })]
+                })
+            }
+        },
+        874070: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return a
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("325767");
+
+            function a(e) {
+                let {
+                    color: t = "currentColor",
+                    ...n
+                } = e;
+                return (0, i.jsxs)("svg", {
+                    ...(0, r.default)(n),
+                    viewBox: "0 0 26 19",
+                    fill: "none",
+                    children: [(0, i.jsx)("path", {
+                        d: "M3.48216 6.25115e-10C2.55864 6.25115e-10 1.67294 0.366869 1.01991 1.0199C0.366882 1.67293 1.65873e-05 2.55862 1.65873e-05 3.48214V15.0857C-0.00139819 15.5434 0.0877037 15.9969 0.262197 16.42C0.43669 16.8431 0.693126 17.2275 1.01675 17.5511C1.34038 17.8747 1.72482 18.1312 2.14793 18.3057C2.57104 18.4802 3.02449 18.5693 3.48216 18.5679H16.2857C16.7434 18.5693 17.1969 18.4802 17.62 18.3057C18.0431 18.1312 18.4275 17.8747 18.7511 17.5511C19.0748 17.2275 19.3312 16.8431 19.5057 16.42C19.6802 15.9969 19.7693 15.5434 19.7679 15.0857V12.6107C19.7638 12.8316 19.822 13.0492 19.9356 13.2387C20.0493 13.4281 20.2139 13.5818 20.4107 13.6822L23.8929 15.4179C24.0723 15.5094 24.2726 15.5525 24.4738 15.5428C24.6751 15.5332 24.8703 15.4712 25.0402 15.363C25.2102 15.2548 25.3489 15.1041 25.4427 14.9258C25.5365 14.7475 25.5821 14.5478 25.575 14.3464V4.1786C25.579 3.97835 25.5313 3.78044 25.4367 3.60391C25.3421 3.42738 25.2037 3.27813 25.0348 3.17054C24.8659 3.06294 24.6721 3.00063 24.4721 2.98952C24.2721 2.97842 24.0727 3.01893 23.8929 3.10717L20.4107 4.8536C20.2139 4.95399 20.0493 5.10767 19.9356 5.29711C19.822 5.48656 19.7638 5.70414 19.7679 5.92503V3.46076C19.7622 2.54096 19.3928 1.66071 18.7404 1.01231C18.088 0.363911 17.2056 -1.74163e-05 16.2857 6.25115e-10H3.48216Z",
+                        fill: t
+                    }), (0, i.jsx)("path", {
+                        d: "M23.85 3.16075L20.3679 4.90718C20.1711 5.00757 20.0065 5.16125 19.8928 5.35069C19.7791 5.54014 19.721 5.75772 19.7251 5.97861V12.6108C19.721 12.8316 19.7791 13.0492 19.8928 13.2387C20.0065 13.4281 20.1711 13.5818 20.3679 13.6822L23.85 15.4179C24.0295 15.5094 24.2298 15.5525 24.431 15.5429C24.6323 15.5332 24.8275 15.4713 24.9974 15.363C25.1673 15.2548 25.3061 15.1041 25.3998 14.9258C25.4936 14.7475 25.5393 14.5478 25.5322 14.3465V4.17862C25.5271 3.98292 25.4729 3.79164 25.3745 3.62237C25.2762 3.4531 25.1368 3.31128 24.9693 3.20993C24.8018 3.10858 24.6115 3.05097 24.416 3.04239C24.2204 3.0338 24.0258 3.07447 23.85 3.16075Z",
+                        fill: "url(#paint0_linear_2245_133669)"
+                    }), (0, i.jsx)("defs", {
+                        children: (0, i.jsxs)("linearGradient", {
+                            id: "paint0_linear_2245_133669",
+                            x1: "22.6286",
+                            y1: "15.5357",
+                            x2: "22.6286",
+                            y2: "3.04293",
+                            gradientUnits: "userSpaceOnUse",
+                            children: [(0, i.jsx)("stop", {
+                                "stop-color": "#5865F0"
+                            }), (0, i.jsx)("stop", {
+                                offset: "1",
+                                "stop-color": "#E9459D"
+                            })]
+                        })
+                    })]
+                })
+            }
+        },
+        185885: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return a
+                }
+            });
+            var i = n("735250");
+            n("470079");
+            var r = n("325767");
+
+            function a(e) {
+                let {
+                    color: t = "currentColor",
+                    ...n
+                } = e;
+                return (0, i.jsxs)("svg", {
+                    ...(0, r.default)(n),
+                    viewBox: "0 0 24 24",
+                    fill: "none",
+                    children: [(0, i.jsx)("path", {
+                        d: "M16.411 2.73127C16.2521 2.71268 16.0914 2.72983 15.9392 2.78162C15.7871 2.8334 15.6471 2.91867 15.5283 3.03175C15.4096 3.14483 15.3148 3.28319 15.2503 3.43775C15.1857 3.59231 15.1529 3.75957 15.1538 3.92851C15.1676 4.28687 15.3017 4.62834 15.5321 4.89163C15.7625 5.15492 16.0741 5.32282 16.411 5.36522C17.8829 5.58524 19.222 6.38444 20.1606 7.60304C21.0992 8.82164 21.5682 10.3698 21.4736 11.9381C21.5682 13.5063 21.0992 15.0545 20.1606 16.2731C19.222 17.4917 17.8829 18.2909 16.411 18.5109C16.0732 18.551 15.7603 18.7182 15.5295 18.982C15.2986 19.2458 15.1653 19.5885 15.1538 19.9476C15.1529 20.1166 15.1857 20.2838 15.2503 20.4384C15.3148 20.593 15.4096 20.7313 15.5283 20.8444C15.6471 20.9575 15.7871 21.0428 15.9392 21.0945C16.0914 21.1463 16.2521 21.1635 16.411 21.1449C18.5283 20.8519 20.4704 19.7479 21.869 18.0421C23.2677 16.3363 24.0257 14.1473 23.9993 11.8901C24.0035 9.6494 23.2355 7.48376 21.8389 5.79811C20.4423 4.11246 18.5128 3.02227 16.411 2.73127Z",
+                        fill: "url(#paint0_linear_2246_138556)"
+                    }), (0, i.jsx)("path", {
+                        d: "M18.9481 11.9859C18.9454 11.1542 18.6989 10.3438 18.2426 9.66624C17.7862 8.98871 17.1424 8.47741 16.3998 8.20265C16.2448 8.1567 16.0815 8.15157 15.9243 8.18774C15.767 8.22391 15.6205 8.30025 15.4976 8.4101C15.3746 8.51996 15.2791 8.66 15.2192 8.81793C15.1593 8.97586 15.1369 9.14689 15.1539 9.31607C15.1539 10.0584 15.8448 10.645 16.2186 11.2676C16.3504 11.4814 16.4211 11.7307 16.4224 11.9859C16.4211 12.2411 16.3504 12.4905 16.2186 12.7043C15.8448 13.3269 15.1539 13.9015 15.1539 14.6557C15.1396 14.8242 15.1638 14.9939 15.2246 15.1504C15.2854 15.3068 15.3809 15.4456 15.5031 15.5548C15.6253 15.664 15.7706 15.7405 15.9267 15.7778C16.0827 15.8151 16.245 15.8122 16.3998 15.7692C17.1424 15.4945 17.7862 14.9831 18.2426 14.3056C18.6989 13.628 18.9454 12.8176 18.9481 11.9859Z",
+                        fill: "url(#paint1_linear_2246_138556)"
+                    }), (0, i.jsx)("path", {
+                        d: "M11.8468 0.0973136C11.6166 -0.000323793 11.3645 -0.0251653 11.1212 0.0258473C10.8779 0.0768599 10.6539 0.201516 10.4763 0.38464L5.0513 6.67017H1.26849C0.932067 6.67017 0.60942 6.81147 0.371532 7.06294C0.133645 7.31441 0 7.65545 0 8.01108V16.0087C0 16.3643 0.133645 16.7054 0.371532 16.9569C0.60942 17.2083 0.932067 17.3496 1.26849 17.3496H5.0513L10.5216 23.6112C10.6976 23.797 10.9217 23.9235 11.1656 23.9746C11.4096 24.0257 11.6624 23.9993 11.8921 23.8985C12.1183 23.8009 12.3127 23.6356 12.4515 23.423C12.5903 23.2103 12.6675 22.9595 12.6735 22.7013V1.29456C12.6638 1.03076 12.58 0.776026 12.4327 0.562795C12.2855 0.349563 12.0815 0.187493 11.8468 0.0973136Z",
+                        fill: t
+                    }), (0, i.jsxs)("defs", {
+                        children: [(0, i.jsxs)("linearGradient", {
+                            id: "paint0_linear_2246_138556",
+                            x1: "20.4504",
+                            y1: "22.2118",
+                            x2: "13.5979",
+                            y2: "3.54591",
+                            gradientUnits: "userSpaceOnUse",
+                            children: [(0, i.jsx)("stop", {
+                                "stop-color": "#4197F0"
+                            }), (0, i.jsx)("stop", {
+                                offset: "0.17",
+                                "stop-color": "#46AFD2"
+                            }), (0, i.jsx)("stop", {
+                                offset: "0.4",
+                                "stop-color": "#4CCBB0"
+                            }), (0, i.jsx)("stop", {
+                                offset: "0.63",
+                                "stop-color": "#51DF98"
+                            }), (0, i.jsx)("stop", {
+                                offset: "0.83",
+                                "stop-color": "#54EB8A"
+                            }), (0, i.jsx)("stop", {
+                                offset: "1",
+                                "stop-color": "#55F085"
+                            })]
+                        }), (0, i.jsxs)("linearGradient", {
+                            id: "paint1_linear_2246_138556",
+                            x1: "17.4234",
+                            y1: "16.2431",
+                            x2: "14.659",
+                            y2: "8.44127",
+                            gradientUnits: "userSpaceOnUse",
+                            children: [(0, i.jsx)("stop", {
+                                "stop-color": "#4197F0"
+                            }), (0, i.jsx)("stop", {
+                                offset: "0.17",
+                                "stop-color": "#46AFD2"
+                            }), (0, i.jsx)("stop", {
+                                offset: "0.4",
+                                "stop-color": "#4CCBB0"
+                            }), (0, i.jsx)("stop", {
+                                offset: "0.63",
+                                "stop-color": "#51DF98"
+                            }), (0, i.jsx)("stop", {
+                                offset: "0.83",
+                                "stop-color": "#54EB8A"
+                            }), (0, i.jsx)("stop", {
+                                offset: "1",
+                                "stop-color": "#55F085"
+                            })]
+                        })]
+                    })]
                 })
             }
         },
@@ -172857,8 +173160,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716227547758",
-                                    build_number: "294757"
+                                    built_at: "1716228722624",
+                                    build_number: "294765"
                                 }
                             },
                             retries: 1
@@ -249790,7 +250093,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "ec99ca8e1b01cc9c8ca8bdd549fb5a4a63b651fe"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "716c2ad41df52d8da2a5a5ee9f8db28ab7b43b0b"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -278882,7 +279185,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294757"
+                                build_number: "294765"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286240,7 +286543,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let a = parseInt((n = "294757", "294757"), 10);
+                let a = parseInt((n = "294765", "294765"), 10);
                 !isNaN(a) && (i.client_build_number = a);
                 let s = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -313930,4 +314233,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.be1273b25aa0ab7b3c7f.js.map
+//# sourceMappingURL=71586.5500f3321335298657f9.js.map
