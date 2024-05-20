@@ -37054,7 +37054,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294835", ", Version Hash: ").concat("9ea5456a330452044603fa666c5827fe63ea7698")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294851", ", Version Hash: ").concat("dbd085a8563d4c8268df76ba119ca535ea3065df")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -79719,28 +79719,32 @@
                     onSuccessCallback: l
                 } = e, {
                     page: u,
-                    categoryId: _
-                } = null != o ? o : {}, c = Date.now(), I = d.default.getFetchState({
+                    categoryId: _,
+                    integrationType: c
+                } = null != o ? o : {}, I = Date.now(), T = d.default.getFetchState({
                     query: n,
                     guildId: i,
                     page: u,
-                    categoryId: _
+                    categoryId: _,
+                    integrationType: c
                 }), {
-                    lastFetchTimeMs: T
+                    lastFetchTimeMs: f
                 } = null !== (t = d.default.getSearchResults({
                     query: n,
                     guildId: i,
                     page: u,
-                    categoryId: _
+                    categoryId: _,
+                    integrationType: c
                 })) && void 0 !== t ? t : {};
-                if (I !== d.FetchState.FETCHING) {
-                    if (null == T || !(T + 6e5 > c)) {
+                if (T !== d.FetchState.FETCHING) {
+                    if (null == f || !(f + 6e5 > I)) {
                         s.default.dispatch({
                             type: "APPLICATION_DIRECTORY_FETCH_SEARCH",
                             query: n,
                             guildId: i,
                             page: u,
-                            categoryId: _
+                            categoryId: _,
+                            integrationType: c
                         });
                         try {
                             let e = await r.HTTP.get({
@@ -79750,7 +79754,8 @@
                                     guild_id: i,
                                     page: u,
                                     category_id: _,
-                                    locale: a.default.locale
+                                    locale: a.default.locale,
+                                    integration_type: c
                                 }
                             });
                             s.default.dispatch({
@@ -79759,6 +79764,7 @@
                                 guildId: i,
                                 page: u,
                                 categoryId: _,
+                                integrationType: c,
                                 result: {
                                     results: e.body.results,
                                     countsByCategory: e.body.counts_by_category,
@@ -79774,7 +79780,8 @@
                                 query: n,
                                 guildId: i,
                                 page: u,
-                                categoryId: _
+                                categoryId: _,
+                                integrationType: c
                             })
                         }
                     }
@@ -80079,9 +80086,10 @@
                     query: t,
                     guildId: n,
                     page: i,
-                    categoryId: r
+                    categoryId: r,
+                    integrationType: s
                 } = e;
-                return "query:'".concat(t, "' guildId:").concat(n, " page:").concat(i, " categoryId:").concat(r)
+                return "query:'".concat(t, "' guildId:").concat(n, " page:").concat(i, " categoryId:").concat(r, " integrationType:").concat(s)
             }(i = o || (o = {}))[i.FETCHING = 0] = "FETCHING", i[i.FETCHED = 1] = "FETCHED", i[i.ERROR = 2] = "ERROR";
             let I = new(d())({
                     max: 20
@@ -80093,27 +80101,31 @@
                         query: t,
                         guildId: n,
                         page: i,
-                        categoryId: r
-                    } = e, s = E({
+                        categoryId: r,
+                        integrationType: s
+                    } = e, a = E({
                         query: t,
                         guildId: n,
                         page: i,
-                        categoryId: r
+                        categoryId: r,
+                        integrationType: s
                     });
-                    return I.get(s)
+                    return I.get(a)
                 }
                 getFetchState(e) {
                     let {
                         query: t,
                         guildId: n,
                         page: i,
-                        categoryId: r
+                        categoryId: r,
+                        integrationType: s
                     } = e;
                     return T[E({
                         query: t,
                         guildId: n,
                         page: i,
-                        categoryId: r
+                        categoryId: r,
+                        integrationType: s
                     })]
                 }
             }
@@ -80128,16 +80140,18 @@
                         query: t,
                         guildId: n,
                         page: i,
-                        categoryId: r
-                    } = e, s = E({
+                        categoryId: r,
+                        integrationType: s
+                    } = e, a = E({
                         query: t,
                         guildId: n,
                         page: i,
-                        categoryId: r
+                        categoryId: r,
+                        integrationType: s
                     });
                     T = {
                         ...T,
-                        [s]: 0
+                        [a]: 0
                     }
                 },
                 APPLICATION_DIRECTORY_FETCH_SEARCH_SUCCESS: function(e) {
@@ -80146,19 +80160,21 @@
                         guildId: n,
                         page: i,
                         categoryId: r,
-                        result: s
-                    } = e, a = E({
+                        result: s,
+                        integrationType: a
+                    } = e, o = E({
                         query: t,
                         guildId: n,
                         page: i,
-                        categoryId: r
+                        categoryId: r,
+                        integrationType: a
                     });
-                    I.set(a, {
+                    I.set(o, {
                         lastFetchTimeMs: Date.now(),
                         ...s
                     }), T = {
                         ...T,
-                        [a]: 1
+                        [o]: 1
                     }
                 },
                 APPLICATION_DIRECTORY_FETCH_SEARCH_FAILURE: function(e) {
@@ -80166,16 +80182,18 @@
                         query: t,
                         guildId: n,
                         page: i,
-                        categoryId: r
-                    } = e, s = E({
+                        categoryId: r,
+                        integrationType: s
+                    } = e, a = E({
                         query: t,
                         guildId: n,
                         page: i,
-                        categoryId: r
+                        categoryId: r,
+                        integrationType: s
                     });
                     T = {
                         ...T,
-                        [s]: 2
+                        [a]: 2
                     }
                 }
             })
@@ -88322,8 +88340,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294835", "294835"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294835")), t = 0), t
+                let t = parseInt((e = "294851", "294851"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294851")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116144,8 +116162,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294835",
-                    versionHash: "9ea5456a330452044603fa666c5827fe63ea7698"
+                    buildNumber: "294851",
+                    versionHash: "dbd085a8563d4c8268df76ba119ca535ea3065df"
                 }
             }
             n.r(t), n.d(t, {
@@ -173160,8 +173178,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716236519024",
-                                    build_number: "294835"
+                                    built_at: "1716238289638",
+                                    build_number: "294851"
                                 }
                             },
                             retries: 1
@@ -250040,7 +250058,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "9ea5456a330452044603fa666c5827fe63ea7698"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "dbd085a8563d4c8268df76ba119ca535ea3065df"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279132,7 +279150,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294835"
+                                build_number: "294851"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286490,7 +286508,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "294835", "294835"), 10);
+                let s = parseInt((n = "294851", "294851"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314180,4 +314198,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.295b0327aba20edf0493.js.map
+//# sourceMappingURL=71586.7b3741745c6ad24d972c.js.map
