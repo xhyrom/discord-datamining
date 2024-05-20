@@ -25628,6 +25628,7 @@
                 nickname: "nickname__745d1",
                 nicknameIcons: "nicknameIcons__1b2d1",
                 pronouns: "pronouns__1266d userTag_eb9b2a",
+                pronounsTooltip: "pronounsTooltip__77e16",
                 tags: "tags__18aee",
                 userTag: "userTag_eb9b2a",
                 userTagDiscriminator: "userTagDiscriminator_dd0ae5",
@@ -25839,6 +25840,7 @@
                 badgeList: "badgeList__70639",
                 container: "container__020e3",
                 overlay: "overlay__15b40",
+                username: "username__7cf20",
                 usernameBadgeList: "usernameBadgeList__9a1fb"
             }
         },
