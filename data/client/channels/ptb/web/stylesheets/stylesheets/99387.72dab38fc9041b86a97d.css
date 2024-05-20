@@ -43063,6 +43063,29 @@ div.profileThemedContainer__6e645 {
     background-image: url(/assets/f6aed2534952941c0532.svg)
 }
 
+.guildAvatar__1cbcb {
+    margin-right: 4px;
+    flex: 0 0 auto
+}
+
+.guildAvatarWithoutIcon__907b8 {
+    background-color: var(--brand-experiment);
+    color: var(--white-500)
+}
+
+.guildNick_d76c11 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--text-muted)
+}
+
 .icon__7c52c {
     border-radius: 100%
 }
@@ -43135,29 +43158,6 @@ div.profileThemedContainer__6e645 {
 
 .guildProfile__21170 {
     display: flex
-}
-
-.guildAvatar__1cbcb {
-    margin-right: 4px;
-    flex: 0 0 auto
-}
-
-.guildAvatarWithoutIcon__907b8 {
-    background-color: var(--brand-experiment);
-    color: var(--white-500)
-}
-
-.guildNick_d76c11 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-weight: 500;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    font-size: 12px;
-    line-height: 16px;
-    color: var(--text-muted)
 }
 
 .badgeList__76720 {
@@ -137750,4 +137750,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.b92ea0102bf1ba39673e.css.map*/
+/*# sourceMappingURL=99387.72dab38fc9041b86a97d.css.map*/
