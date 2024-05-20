@@ -15692,7 +15692,8 @@
                 numberPill: "numberPill__7188a",
                 othersCount: "othersCount__89551",
                 rowIcon: "rowIcon__45dc2",
-                rowIconV2: "rowIconV2_fe06d9 rowIcon__45dc2"
+                rowIconV2: "rowIconV2_fe06d9 rowIcon__45dc2",
+                tooltipPointer: "tooltipPointer__87949"
             }
         },
         181096: function(e) {
@@ -15703,6 +15704,7 @@
                 clickableContainer: "clickableContainer__6a669",
                 container: "container__0998c",
                 content: "content_c9b545",
+                fadeIn: "fadeIn__485ae",
                 gameIcon: "gameIcon__4a06f",
                 groupAvatar: "groupAvatar__4cf21",
                 image: "image__75373",
