@@ -20043,8 +20043,7 @@ input[type=checkbox]:focus-visible+.label__8e100 {
 }
 
 .fullSizeNickname_a36463 {
-    max-height: 90px;
-    max-width: 500px
+    max-height: 90px
 }
 
 .nicknameIcons__1b2d1 {
@@ -20078,8 +20077,15 @@ input[type=checkbox]:focus-visible+.label__8e100 {
     line-height: 18px
 }
 
+.pronounsTooltip__77e16 {
+    max-width: 100%
+}
+
 .pronouns__1266d {
-    margin-right: 2px
+    margin-right: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden
 }
 
 .userTagUsername__88953 {
@@ -132726,6 +132732,10 @@ div.nagbar_c731ff {
     height: 100%
 }
 
+.username__7cf20 {
+    max-width: 376px
+}
+
 .overlay__15b40 {
     height: 100%
 }
@@ -137828,4 +137838,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.1012e2eecfbbaecfd195.css.map*/
+/*# sourceMappingURL=99387.993f9f11def1235cd4b5.css.map*/
