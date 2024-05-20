@@ -5105,6 +5105,7 @@
                 mainContent: "mainContent__465e0",
                 modal: "modal__06f49",
                 modalContents: "modalContents_d4af1c",
+                noticeRegion: "noticeRegion_f037d9",
                 settingsTab: "settingsTab_c602d2",
                 sidebar: "sidebar__57865",
                 sidebarWrapper: "sidebarWrapper_c37160",
@@ -15704,6 +15705,7 @@
                 clickableContainer: "clickableContainer__6a669",
                 container: "container__0998c",
                 content: "content_c9b545",
+                ellipsis: "ellipsis_d32cd5",
                 fadeIn: "fadeIn__485ae",
                 gameIcon: "gameIcon__4a06f",
                 groupAvatar: "groupAvatar__4cf21",
@@ -15720,7 +15722,8 @@
                 pillIcon: "pillIcon__62bae",
                 singleLineTitle: "singleLineTitle_f21580",
                 streamContainer: "streamContainer_a26d75",
-                streamPreview: "streamPreview__38008"
+                streamPreview: "streamPreview__38008",
+                subtitle: "subtitle__8eb80"
             }
         },
         952972: function(e) {
