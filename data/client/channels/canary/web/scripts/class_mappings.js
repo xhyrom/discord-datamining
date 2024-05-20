@@ -5907,6 +5907,7 @@
         577687: function(e) {
             "use strict";
             e.exports = {
+                defaultPrice: "defaultPrice__04919",
                 fullPrice: "fullPrice__8d254",
                 premiumIcon: "premiumIcon_a6a247",
                 priceTagsContainer: "priceTagsContainer_b12e66",
@@ -5994,7 +5995,6 @@
                 nonPremiumPrice: "nonPremiumPrice__59e8a",
                 pfxPreviewContainer: "pfxPreviewContainer__6eda3",
                 premiumIcon: "premiumIcon__355c8",
-                premiumPriceTag: "premiumPriceTag_fb5ea7",
                 premiumPriceTagIcon: "premiumPriceTagIcon__21d57",
                 previewsContainerInner: "previewsContainerInner__71adf",
                 priceTag: "priceTag__1abdb",
@@ -22955,14 +22955,18 @@
                 partnerBranding: "partnerBranding__0ba05",
                 positionContentOverBackground: "positionContentOverBackground__8fd75",
                 submenuIcon: "submenuIcon__7e66b",
-                submenuWrapper: "submenuWrapper__7b769",
-                white: "white__6bc0a"
+                submenuWrapper: "submenuWrapper__7b769"
             }
         },
         641935: function(e) {
             "use strict";
             e.exports = {
-                container: "container__118f6"
+                container: "container__118f6",
+                description: "description__65ac8",
+                header: "header_fbecef",
+                headerSpan: "headerSpan__051f7",
+                questRewardTileAsset: "questRewardTileAsset__33149",
+                textContainer: "textContainer_fb0d3e"
             }
         },
         862317: function(e) {
