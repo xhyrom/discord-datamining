@@ -12389,7 +12389,9 @@ span.clanTag_f4aadc {
 .streamPreview__38008 {
     -o-object-fit: cover;
     object-fit: cover;
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    height: 64px;
+    width: 64px
 }
 
 .liveBadge__4290f {
@@ -140565,4 +140567,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.989fe1451b0ebd6b03b8.css.map*/
+/*# sourceMappingURL=99387.0c253ce017417bac0dc7.css.map*/
