@@ -37054,7 +37054,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294833", ", Version Hash: ").concat("a5e9eb3bf6d7da3b41b7a5f973dc4e2d48c7c5c0")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("294835", ", Version Hash: ").concat("9ea5456a330452044603fa666c5827fe63ea7698")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88322,8 +88322,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "294833", "294833"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294833")), t = 0), t
+                let t = parseInt((e = "294835", "294835"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("294835")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116144,8 +116144,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "294833",
-                    versionHash: "a5e9eb3bf6d7da3b41b7a5f973dc4e2d48c7c5c0"
+                    buildNumber: "294835",
+                    versionHash: "9ea5456a330452044603fa666c5827fe63ea7698"
                 }
             }
             n.r(t), n.d(t, {
@@ -173160,8 +173160,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716236271291",
-                                    build_number: "294833"
+                                    built_at: "1716236519024",
+                                    build_number: "294835"
                                 }
                             },
                             retries: 1
@@ -178971,62 +178971,25 @@
         192616: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                CreateGuildPollsExperiment: function() {
-                    return r
-                },
                 CreatePollsGuildCoachmarkExperiment: function() {
-                    return a
-                },
-                CreatePollsUserExperiment: function() {
-                    return s
+                    return i
                 }
             });
-            var i = n("818083");
-            let r = (0, i.createExperiment)({
-                    kind: "guild",
-                    id: "2023-09_guild_polls",
-                    label: "Create Guild Polls",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 1,
-                        label: "Enables creation of polls within a guild",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                }),
-                s = (0, i.createExperiment)({
-                    kind: "user",
-                    id: "2024-01_create_gdm_polls",
-                    label: "Create GDM Polls",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 1,
-                        label: "Enables creation of polls within a GDM or guild",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                }),
-                a = (0, i.createExperiment)({
-                    kind: "guild",
-                    id: "2024-03_polls_coachmark",
-                    label: "Show coachmark for poll creation entry point in guild",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 1,
-                        label: "Can show coachmark for poll creation entry point in guild",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                })
+            let i = (0, n("818083").createExperiment)({
+                kind: "guild",
+                id: "2024-03_polls_coachmark",
+                label: "Show coachmark for poll creation entry point in guild",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Can show coachmark for poll creation entry point in guild",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            })
         },
         79390: function(e, t, n) {
             "use strict";
@@ -179111,26 +179074,7 @@
             }
 
             function C(e) {
-                let t = A.ChannelTypesSets.POLLS.has(null == e ? void 0 : e.type),
-                    n = (0, l.useStateFromStores)([E.default], () => E.default.can(A.Permissions.SEND_MESSAGES, e) && E.default.can(A.Permissions.SEND_POLLS, e)),
-                    {
-                        enabled: i
-                    } = S.CreateGuildPollsExperiment.useExperiment({
-                        guildId: null == e ? void 0 : e.guild_id,
-                        location: "useCanPostPollsInChannel"
-                    }, {
-                        autoTrackExposure: !0,
-                        disable: !t || (null == e ? void 0 : e.isPrivate()) || !n
-                    }),
-                    {
-                        enabled: r
-                    } = S.CreatePollsUserExperiment.useExperiment({
-                        location: "useCanPostPollsInChannel"
-                    }, {
-                        autoTrackExposure: !0,
-                        disable: !t || !(null == e ? void 0 : e.isPrivate()) && !n
-                    });
-                return i || r
+                return (0, l.useStateFromStores)([E.default], () => !!(null != e && A.ChannelTypesSets.POLLS.has(e.type)) && (!!e.isPrivate() || E.default.can(A.Permissions.SEND_MESSAGES, e) && E.default.can(A.Permissions.SEND_POLLS, e)))
             }
 
             function R(e) {
@@ -250096,7 +250040,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "a5e9eb3bf6d7da3b41b7a5f973dc4e2d48c7c5c0"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9ea5456a330452044603fa666c5827fe63ea7698"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279188,7 +279132,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "294833"
+                                build_number: "294835"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286546,7 +286490,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "294833", "294833"), 10);
+                let s = parseInt((n = "294835", "294835"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314236,4 +314180,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.c7ebf263fdeb0e461ed0.js.map
+//# sourceMappingURL=71586.295b0327aba20edf0493.js.map
