@@ -40497,7 +40497,7 @@ div.profileThemedContainer__6e645 {
     margin-top: 16px;
     font-weight: 600;
     color: var(--interactive-active);
-    font-size: 24px
+    font-size: 1.5rem
 }
 
 .tierPeriod_f6d7e1 {
@@ -40779,8 +40779,8 @@ div.profileThemedContainer__6e645 {
     display: flex;
     justify-content: center;
     font-family: var(--font-display);
-    font-size: 12px;
-    line-height: 16px;
+    font-size: .75rem;
+    line-height: 1rem;
     text-transform: uppercase
 }
 
@@ -75502,7 +75502,7 @@ html .invoiceCancelRow_aa7946 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 1rem;
     gap: 4px
 }
 
@@ -135725,7 +135725,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --activity-card-icon-overlay: color-mix(in oklab,
                 hsl(var(--primary-600-hsl) / 0.85) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.85) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.85) var(--custom-theme-mix-amount-base, 0%));
         --alert-bg: color-mix(in oklab,
                 var(--primary-600) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135734,10 +135734,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --android-navigation-scrim-background: color-mix(in oklab,
                 hsl(var(--primary-830-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --android-ripple: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.07) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.07) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.07) var(--custom-theme-mix-amount-base, 0%));
         --background-accent: color-mix(in oklab,
                 var(--primary-530) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135746,25 +135746,25 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --background-mentioned: color-mix(in oklab,
                 hsl(var(--yellow-300-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --background-mentioned-hover: color-mix(in oklab,
                 hsl(var(--yellow-300-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --background-message-automod: color-mix(in oklab,
                 hsl(var(--red-400-hsl) / 0.05) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.05) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.05) var(--custom-theme-mix-amount-base, 0%));
         --background-message-automod-hover: color-mix(in oklab,
                 hsl(var(--red-400-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --background-message-highlight: color-mix(in oklab,
                 hsl(var(--brand-360-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --background-message-highlight-hover: color-mix(in oklab,
                 hsl(var(--brand-360-hsl) / 0.06) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.06) var(--custom-theme-mix-amount-base, 0%));
         --background-message-hover: color-mix(in oklab,
                 hsl(var(--primary-900-hsl) / 0.06) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.06) var(--custom-theme-mix-amount-base, 0%));
         --background-mobile-primary: color-mix(in oklab,
                 var(--primary-600) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135773,19 +135773,19 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-accent: color-mix(in oklab,
                 hsl(var(--primary-500-hsl) / 0.48) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.48) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-accent-2: color-mix(in oklab,
                 hsl(var(--primary-500-hsl) / 0.48) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.48) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-active: color-mix(in oklab,
                 hsl(var(--primary-500-hsl) / 0.48) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.48) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-hover: color-mix(in oklab,
                 hsl(var(--primary-500-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-selected: color-mix(in oklab,
                 hsl(var(--primary-500-hsl) / 0.6) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --background-nested-floating: color-mix(in oklab,
                 var(--primary-630) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135803,7 +135803,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --bg-backdrop: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.7) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --bg-backdrop-no-opacity: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135821,13 +135821,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --bg-mod-faint: color-mix(in oklab,
                 hsl(var(--primary-500-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --bg-mod-strong: color-mix(in oklab,
                 hsl(var(--primary-500-hsl) / 0.54) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.54) var(--custom-theme-mix-amount-base, 0%));
         --bg-mod-subtle: color-mix(in oklab,
                 hsl(var(--primary-500-hsl) / 0.48) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.48) var(--custom-theme-mix-amount-base, 0%));
         --bg-surface-overlay: color-mix(in oklab,
                 var(--primary-800) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135842,22 +135842,22 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --blur-fallback: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.96) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.96) var(--custom-theme-mix-amount-base, 0%));
         --blur-fallback-pressed: color-mix(in oklab,
                 hsl(var(--primary-730-hsl) / 0.96) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.96) var(--custom-theme-mix-amount-base, 0%));
         --border-faint: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.03) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.03) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.03) var(--custom-theme-mix-amount-base, 0%));
         --border-strong: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --border-subtle: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --bug-reporter-modal-submitting-background: color-mix(in oklab,
                 hsl(var(--primary-800-hsl) / 0.6) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --button-creator-revenue-background: color-mix(in oklab,
                 var(--teal-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135875,7 +135875,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-brand-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-brand-background-active: color-mix(in oklab,
                 var(--brand-560) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135902,7 +135902,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-danger-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-danger-background-active: color-mix(in oklab,
                 var(--red-460) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135929,7 +135929,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-positive-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-positive-background-active: color-mix(in oklab,
                 var(--green-530) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -135956,7 +135956,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-primary-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-primary-background-active: color-mix(in oklab,
                 var(--primary-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136007,10 +136007,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --card-gradient-bg: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.4) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.4) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.4) var(--custom-theme-mix-amount-base, 0%));
         --card-gradient-pressed-bg: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --card-primary-bg: color-mix(in oklab,
                 var(--primary-600) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136052,28 +136052,28 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --chat-swipe-to-reply-gradient-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --coachmark-bg: color-mix(in oklab,
                 var(--primary-800) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-media-seekbar-container: color-mix(in oklab,
                 hsl(var(--plum-6-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-overlay-text-primary: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.85) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.85) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.85) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-overlay-text-secondary: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.7) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-overlay-ui-mod: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.7) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-overlay-ui-mod-bg: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --context-menu-backdrop-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.7) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --control-brand-foreground: color-mix(in oklab,
                 var(--brand-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136088,7 +136088,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --creator-revenue-info-box-background: color-mix(in oklab,
                 hsl(var(--teal-430-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --creator-revenue-info-box-border: color-mix(in oklab,
                 var(--teal-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136100,16 +136100,16 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-card-bg: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.6) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-card-editable-bg: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-quickswitcher-input-background: color-mix(in oklab,
                 var(--primary-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-quickswitcher-input-placeholder: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-store-bg: color-mix(in oklab,
                 var(--primary-600) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136118,7 +136118,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-text-input-border: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-text-input-border-disabled: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136130,13 +136130,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --display-banner-overflow-background: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --divider-strong: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --divider-subtle: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --embed-background: color-mix(in oklab,
                 var(--primary-630) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136154,10 +136154,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --forum-post-extra-media-count-container-background: color-mix(in oklab,
                 hsl(var(--primary-660-hsl) / 0.8) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.8) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.8) var(--custom-theme-mix-amount-base, 0%));
         --forum-post-tag-background: color-mix(in oklab,
                 hsl(var(--primary-660-hsl) / 0.9) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.9) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.9) var(--custom-theme-mix-amount-base, 0%));
         --guild-icon-inactive-bg: color-mix(in oklab,
                 var(--primary-630) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136169,7 +136169,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --halo-positive: color-mix(in oklab,
                 hsl(var(--green-360-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --header-muted: color-mix(in oklab,
                 var(--primary-360) 100%,
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
@@ -136184,7 +136184,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --home-card-resting-border: color-mix(in oklab,
                 hsl(var(--transparent-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --icon-muted: color-mix(in oklab,
                 var(--primary-400) 100%,
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
@@ -136196,13 +136196,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --icon-transparent: color-mix(in oklab,
                 hsl(var(--transparent-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-text, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-text, 0%));
         --info-box-background: color-mix(in oklab,
                 hsl(var(--blue-345-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-danger-background: color-mix(in oklab,
                 hsl(var(--red-400-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-danger-foreground: color-mix(in oklab,
                 var(--red-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136211,7 +136211,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-help-background: color-mix(in oklab,
                 hsl(var(--blue-345-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-help-foreground: color-mix(in oklab,
                 var(--blue-345) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136220,7 +136220,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-positive-background: color-mix(in oklab,
                 hsl(var(--green-360-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-positive-foreground: color-mix(in oklab,
                 var(--green-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136229,7 +136229,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-warning-background: color-mix(in oklab,
                 hsl(var(--yellow-300-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-warning-foreground: color-mix(in oklab,
                 var(--yellow-300) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136241,7 +136241,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --input-focused-border: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --input-placeholder-text: color-mix(in oklab,
                 var(--input-placeholder-text-dark) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136259,28 +136259,28 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --legacy-android-blur-overlay-default: color-mix(in oklab,
                 hsl(var(--primary-660-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --legacy-android-blur-overlay-ultra-thin: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.025) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.025) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.025) var(--custom-theme-mix-amount-base, 0%));
         --legacy-blur-fallback-default: color-mix(in oklab,
                 hsl(var(--primary-660-hsl) / 0.975) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.975) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.975) var(--custom-theme-mix-amount-base, 0%));
         --legacy-blur-fallback-ultra-thin: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.95) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.95) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.95) var(--custom-theme-mix-amount-base, 0%));
         --live-stage-tile-border: color-mix(in oklab,
                 hsl(var(--primary-500-hsl) / 0.6) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --logo-primary: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --mention-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --mention-foreground: color-mix(in oklab,
                 var(--brand-260) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --modal-background: color-mix(in oklab,
                 var(--primary-600) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136301,37 +136301,37 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --polls-victor-fill: color-mix(in oklab,
                 hsl(var(--green-360-hsl) / 0.2) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --polls-voted-fill: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.2) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-card-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.7) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-message-input-border: color-mix(in oklab,
                 hsl(var(--primary-500-hsl) / 0.48) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.48) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-note-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-overlay: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.6) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-overlay-synced-with-user-theme: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.8) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.8) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.8) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-profile-body-background-hover: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-role-pill-background: color-mix(in oklab,
                 hsl(var(--primary-660-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-role-pill-border: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.2) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-section-box: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.45) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.45) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.45) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-background: color-mix(in oklab,
                 var(--primary-560) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136343,7 +136343,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-border: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.02) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.02) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.02) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-overflow-background: color-mix(in oklab,
                 var(--primary-630) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136376,10 +136376,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-overlay-alpha-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.54) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.54) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-overlay-alpha-pressed-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.64) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.64) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.64) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-overlay-alpha-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136403,13 +136403,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-border: color-mix(in oklab,
                 var(--brand-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-on-blurple-background: color-mix(in oklab,
                 hsl(var(--brand-530-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-on-blurple-border: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136424,10 +136424,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-pressed-background: color-mix(in oklab,
                 hsl(var(--brand-700-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-pressed-border: color-mix(in oklab,
                 hsl(var(--brand-400-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-pressed-text: color-mix(in oklab,
                 var(--brand-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136460,13 +136460,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-border: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-overlay-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.54) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.54) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-overlay-pressed-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.64) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.64) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.64) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-overlay-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136475,16 +136475,16 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-pressed-border: color-mix(in oklab,
                 hsl(var(--transparent-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-text: color-mix(in oklab,
                 var(--primary-230) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-selected-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-selected-pressed-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.28) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.28) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.28) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-selected-text: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136517,7 +136517,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-image-button-pressed-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --redesign-input-control-active-bg: color-mix(in oklab,
                 var(--primary-645) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136556,7 +136556,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --scrollbar-thin-track: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --spoiler-hidden-background: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136652,7 +136652,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --theme-locked-blur-fallback: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.96) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.96) var(--custom-theme-mix-amount-base, 0%));
         --thread-channel-spine: color-mix(in oklab,
                 var(--primary-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -136664,13 +136664,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --user-profile-header-overflow-background: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --voice-video-video-tile-background: color-mix(in oklab,
                 hsl(var(--plum-17-hsl) / 0.4) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.4) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.4) var(--custom-theme-mix-amount-base, 0%));
         --voice-video-video-tile-blur-fallback: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.48) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.48) var(--custom-theme-mix-amount-base, 0%));
         --white: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137013,7 +137013,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --activity-card-icon-overlay: color-mix(in oklab,
                 hsl(var(--primary-600-hsl) / 0.85) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.85) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.85) var(--custom-theme-mix-amount-base, 0%));
         --alert-bg: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137022,10 +137022,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --android-navigation-scrim-background: color-mix(in oklab,
                 hsl(var(--primary-100-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --android-ripple: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.12) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.12) var(--custom-theme-mix-amount-base, 0%));
         --background-accent: color-mix(in oklab,
                 var(--primary-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137034,25 +137034,25 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --background-mentioned: color-mix(in oklab,
                 hsl(var(--yellow-300-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --background-mentioned-hover: color-mix(in oklab,
                 hsl(var(--yellow-300-hsl) / 0.2) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --background-message-automod: color-mix(in oklab,
                 hsl(var(--red-400-hsl) / 0.05) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.05) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.05) var(--custom-theme-mix-amount-base, 0%));
         --background-message-automod-hover: color-mix(in oklab,
                 hsl(var(--red-400-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --background-message-highlight: color-mix(in oklab,
                 hsl(var(--brand-360-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --background-message-highlight-hover: color-mix(in oklab,
                 hsl(var(--brand-360-hsl) / 0.2) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --background-message-hover: color-mix(in oklab,
                 hsl(var(--primary-900-hsl) / 0.03) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.03) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.03) var(--custom-theme-mix-amount-base, 0%));
         --background-mobile-primary: color-mix(in oklab,
                 var(--primary-100) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137061,19 +137061,19 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-accent: color-mix(in oklab,
                 hsl(var(--primary-400-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-accent-2: color-mix(in oklab,
                 hsl(var(--primary-400-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-active: color-mix(in oklab,
                 hsl(var(--primary-400-hsl) / 0.2) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-hover: color-mix(in oklab,
                 hsl(var(--primary-400-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-selected: color-mix(in oklab,
                 hsl(var(--primary-400-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --background-nested-floating: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137091,7 +137091,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --bg-backdrop: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.54) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.54) var(--custom-theme-mix-amount-base, 0%));
         --bg-backdrop-no-opacity: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137109,13 +137109,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --bg-mod-faint: color-mix(in oklab,
                 hsl(var(--primary-400-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --bg-mod-strong: color-mix(in oklab,
                 hsl(var(--primary-400-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --bg-mod-subtle: color-mix(in oklab,
                 hsl(var(--primary-400-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --bg-surface-overlay: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137130,22 +137130,22 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --blur-fallback: color-mix(in oklab,
                 hsl(var(--primary-530-hsl) / 0.96) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.96) var(--custom-theme-mix-amount-base, 0%));
         --blur-fallback-pressed: color-mix(in oklab,
                 hsl(var(--primary-560-hsl) / 0.96) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.96) var(--custom-theme-mix-amount-base, 0%));
         --border-faint: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.04) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.04) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.04) var(--custom-theme-mix-amount-base, 0%));
         --border-strong: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --border-subtle: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --bug-reporter-modal-submitting-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.6) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --button-creator-revenue-background: color-mix(in oklab,
                 var(--teal-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137163,7 +137163,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-brand-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-brand-background-active: color-mix(in oklab,
                 var(--brand-560) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137190,7 +137190,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-danger-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-danger-background-active: color-mix(in oklab,
                 var(--red-460) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137217,7 +137217,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-positive-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-positive-background-active: color-mix(in oklab,
                 var(--green-530) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137244,7 +137244,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-primary-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-primary-background-active: color-mix(in oklab,
                 var(--primary-600) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137295,10 +137295,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --card-gradient-bg: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.7) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --card-gradient-pressed-bg: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --card-primary-bg: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137340,28 +137340,28 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --chat-swipe-to-reply-gradient-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.4) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.4) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.4) var(--custom-theme-mix-amount-base, 0%));
         --coachmark-bg: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-media-seekbar-container: color-mix(in oklab,
                 hsl(var(--plum-6-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-overlay-text-primary: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.85) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.85) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.85) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-overlay-text-secondary: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.7) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-overlay-ui-mod: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.7) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-overlay-ui-mod-bg: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --context-menu-backdrop-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.54) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.54) var(--custom-theme-mix-amount-base, 0%));
         --control-brand-foreground: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137376,7 +137376,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --creator-revenue-info-box-background: color-mix(in oklab,
                 hsl(var(--teal-430-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --creator-revenue-info-box-border: color-mix(in oklab,
                 var(--teal-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137391,13 +137391,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-card-editable-bg: color-mix(in oklab,
                 hsl(var(--primary-100-hsl) / 0.6) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-quickswitcher-input-background: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-quickswitcher-input-placeholder: color-mix(in oklab,
                 hsl(var(--primary-500-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-store-bg: color-mix(in oklab,
                 var(--primary-100) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137406,7 +137406,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-text-input-border: color-mix(in oklab,
                 hsl(var(--primary-500-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-text-input-border-disabled: color-mix(in oklab,
                 var(--primary-200) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137418,13 +137418,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --display-banner-overflow-background: color-mix(in oklab,
                 hsl(var(--white-200-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --divider-strong: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --divider-subtle: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --embed-background: color-mix(in oklab,
                 var(--primary-130) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137442,10 +137442,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --forum-post-extra-media-count-container-background: color-mix(in oklab,
                 hsl(var(--primary-160-hsl) / 0.8) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.8) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.8) var(--custom-theme-mix-amount-base, 0%));
         --forum-post-tag-background: color-mix(in oklab,
                 hsl(var(--primary-160-hsl) / 0.9) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.9) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.9) var(--custom-theme-mix-amount-base, 0%));
         --guild-icon-inactive-bg: color-mix(in oklab,
                 var(--primary-130) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137457,7 +137457,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --halo-positive: color-mix(in oklab,
                 hsl(var(--green-360-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --header-muted: color-mix(in oklab,
                 var(--primary-460) 100%,
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
@@ -137472,7 +137472,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --home-card-resting-border: color-mix(in oklab,
                 hsl(var(--primary-400-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --icon-muted: color-mix(in oklab,
                 var(--primary-400) 100%,
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
@@ -137484,13 +137484,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --icon-transparent: color-mix(in oklab,
                 hsl(var(--transparent-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-text, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-text, 0%));
         --info-box-background: color-mix(in oklab,
                 hsl(var(--blue-345-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-danger-background: color-mix(in oklab,
                 hsl(var(--red-430-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-danger-foreground: color-mix(in oklab,
                 var(--red-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137499,7 +137499,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-help-background: color-mix(in oklab,
                 hsl(var(--blue-430-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-help-foreground: color-mix(in oklab,
                 var(--blue-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137508,7 +137508,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-positive-background: color-mix(in oklab,
                 hsl(var(--green-400-hsl) / 0.05) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.05) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.05) var(--custom-theme-mix-amount-base, 0%));
         --info-positive-foreground: color-mix(in oklab,
                 var(--green-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137517,7 +137517,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-warning-background: color-mix(in oklab,
                 hsl(var(--yellow-400-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-warning-foreground: color-mix(in oklab,
                 var(--yellow-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137526,10 +137526,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --input-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --input-focused-border: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --input-placeholder-text: color-mix(in oklab,
                 var(--primary-460) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137547,28 +137547,28 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --legacy-android-blur-overlay-default: color-mix(in oklab,
                 hsl(var(--primary-130-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --legacy-android-blur-overlay-ultra-thin: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.25) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.25) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.25) var(--custom-theme-mix-amount-base, 0%));
         --legacy-blur-fallback-default: color-mix(in oklab,
                 hsl(var(--primary-230-hsl) / 0.975) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.975) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.975) var(--custom-theme-mix-amount-base, 0%));
         --legacy-blur-fallback-ultra-thin: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.95) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.95) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.95) var(--custom-theme-mix-amount-base, 0%));
         --live-stage-tile-border: color-mix(in oklab,
                 hsl(var(--primary-430-hsl) / 0.15) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.15) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.15) var(--custom-theme-mix-amount-base, 0%));
         --logo-primary: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --mention-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.15) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.15) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.15) var(--custom-theme-mix-amount-base, 0%));
         --mention-foreground: color-mix(in oklab,
                 var(--brand-500) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --modal-background: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137589,37 +137589,37 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --polls-victor-fill: color-mix(in oklab,
                 hsl(var(--green-400-hsl) / 0.2) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --polls-voted-fill: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.2) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-card-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.7) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-message-input-border: color-mix(in oklab,
                 hsl(var(--primary-430-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-note-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-overlay: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.6) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-overlay-synced-with-user-theme: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.8) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.8) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.8) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-profile-body-background-hover: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-role-pill-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-role-pill-border: color-mix(in oklab,
                 hsl(var(--primary-660-hsl) / 0.2) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-section-box: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.45) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.45) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.45) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-background: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137631,7 +137631,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-border: color-mix(in oklab,
                 hsl(var(--primary-400-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-overflow-background: color-mix(in oklab,
                 var(--primary-230) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137664,10 +137664,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-overlay-alpha-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.54) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.54) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-overlay-alpha-pressed-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.64) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.64) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.64) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-overlay-alpha-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137691,13 +137691,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-border: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-on-blurple-background: color-mix(in oklab,
                 hsl(var(--brand-530-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-on-blurple-border: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137712,7 +137712,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-pressed-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.06) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.06) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-pressed-border: color-mix(in oklab,
                 var(--brand-330) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137748,13 +137748,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-border: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-overlay-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.54) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.54) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-overlay-pressed-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.64) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.64) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.64) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-overlay-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137763,25 +137763,25 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-pressed-border: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.04) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.04) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.04) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-text: color-mix(in oklab,
                 var(--primary-600) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-selected-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-selected-pressed-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-selected-text: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-tertiary-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-tertiary-pressed-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-tertiary-pressed-text: color-mix(in oklab,
                 var(--primary-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137802,10 +137802,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-chat-input-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --redesign-image-button-pressed-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --redesign-input-control-active-bg: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137841,10 +137841,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --scrollbar-thin-thumb: color-mix(in oklab,
                 hsl(var(--primary-500-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --scrollbar-thin-track: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --spoiler-hidden-background: color-mix(in oklab,
                 var(--primary-200) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137940,7 +137940,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --theme-locked-blur-fallback: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.96) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.96) var(--custom-theme-mix-amount-base, 0%));
         --thread-channel-spine: color-mix(in oklab,
                 var(--primary-300) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -137952,13 +137952,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --user-profile-header-overflow-background: color-mix(in oklab,
                 hsl(var(--white-200-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --voice-video-video-tile-background: color-mix(in oklab,
                 hsl(var(--plum-17-hsl) / 0.4) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.4) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.4) var(--custom-theme-mix-amount-base, 0%));
         --voice-video-video-tile-blur-fallback: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.48) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.48) var(--custom-theme-mix-amount-base, 0%));
         --white: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138301,7 +138301,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --activity-card-icon-overlay: color-mix(in oklab,
                 hsl(var(--primary-600-hsl) / 0.85) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.85) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.85) var(--custom-theme-mix-amount-base, 0%));
         --alert-bg: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138310,10 +138310,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --android-navigation-scrim-background: color-mix(in oklab,
                 hsl(var(--plum-24-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --android-ripple: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.07) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.07) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.07) var(--custom-theme-mix-amount-base, 0%));
         --background-accent: color-mix(in oklab,
                 var(--plum-17) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138322,22 +138322,22 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --background-mentioned: color-mix(in oklab,
                 hsl(var(--yellow-260-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --background-mentioned-hover: color-mix(in oklab,
                 hsl(var(--yellow-300-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --background-message-automod: color-mix(in oklab,
                 hsl(var(--red-345-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --background-message-automod-hover: color-mix(in oklab,
                 hsl(var(--red-400-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --background-message-highlight: color-mix(in oklab,
                 hsl(var(--brand-360-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --background-message-highlight-hover: color-mix(in oklab,
                 hsl(var(--brand-360-hsl) / 0.06) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.06) var(--custom-theme-mix-amount-base, 0%));
         --background-message-hover: color-mix(in oklab,
                 var(--plum-21) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138349,19 +138349,19 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-accent: color-mix(in oklab,
                 hsl(var(--plum-23-alpha-hsl) / 0.09) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.09) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.09) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-accent-2: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.32) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.32) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.32) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-active: color-mix(in oklab,
                 hsl(var(--plum-13-hsl) / 0.48) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.48) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-hover: color-mix(in oklab,
                 hsl(var(--plum-13-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-selected: color-mix(in oklab,
                 hsl(var(--plum-13-hsl) / 0.6) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --background-nested-floating: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138379,7 +138379,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --bg-backdrop: color-mix(in oklab,
                 hsl(var(--plum-19-hsl) / 0.75) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.75) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.75) var(--custom-theme-mix-amount-base, 0%));
         --bg-backdrop-no-opacity: color-mix(in oklab,
                 var(--plum-19) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138397,13 +138397,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --bg-mod-faint: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --bg-mod-strong: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.18) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.18) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.18) var(--custom-theme-mix-amount-base, 0%));
         --bg-mod-subtle: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.12) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.12) var(--custom-theme-mix-amount-base, 0%));
         --bg-surface-overlay: color-mix(in oklab,
                 var(--plum-19) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138418,22 +138418,22 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --blur-fallback: color-mix(in oklab,
                 hsl(var(--plum-19-hsl) / 0.96) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.96) var(--custom-theme-mix-amount-base, 0%));
         --blur-fallback-pressed: color-mix(in oklab,
                 hsl(var(--plum-20-hsl) / 0.96) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.96) var(--custom-theme-mix-amount-base, 0%));
         --border-faint: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.06) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.06) var(--custom-theme-mix-amount-base, 0%));
         --border-strong: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --border-subtle: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.12) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.12) var(--custom-theme-mix-amount-base, 0%));
         --bug-reporter-modal-submitting-background: color-mix(in oklab,
                 hsl(var(--plum-23-hsl) / 0.6) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --button-creator-revenue-background: color-mix(in oklab,
                 var(--teal-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138451,7 +138451,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-brand-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-brand-background-active: color-mix(in oklab,
                 var(--brand-560) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138478,7 +138478,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-danger-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-danger-background-active: color-mix(in oklab,
                 var(--red-460) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138505,7 +138505,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-positive-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-positive-background-active: color-mix(in oklab,
                 var(--green-530) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138532,7 +138532,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-primary-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-primary-background-active: color-mix(in oklab,
                 var(--plum-11) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138583,10 +138583,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --card-gradient-bg: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.4) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.4) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.4) var(--custom-theme-mix-amount-base, 0%));
         --card-gradient-pressed-bg: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --card-primary-bg: color-mix(in oklab,
                 var(--plum-23) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138628,28 +138628,28 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --chat-swipe-to-reply-gradient-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --coachmark-bg: color-mix(in oklab,
                 var(--plum-19) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-media-seekbar-container: color-mix(in oklab,
                 hsl(var(--plum-6-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-overlay-text-primary: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.85) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.85) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.85) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-overlay-text-secondary: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.7) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-overlay-ui-mod: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.7) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-overlay-ui-mod-bg: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --context-menu-backdrop-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.7) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --control-brand-foreground: color-mix(in oklab,
                 var(--brand-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138664,7 +138664,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --creator-revenue-info-box-background: color-mix(in oklab,
                 hsl(var(--teal-430-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --creator-revenue-info-box-border: color-mix(in oklab,
                 var(--teal-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138676,16 +138676,16 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-card-bg: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.6) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-card-editable-bg: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-quickswitcher-input-background: color-mix(in oklab,
                 var(--primary-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-quickswitcher-input-placeholder: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-store-bg: color-mix(in oklab,
                 var(--primary-600) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138694,7 +138694,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-text-input-border: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-text-input-border-disabled: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138706,13 +138706,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --display-banner-overflow-background: color-mix(in oklab,
                 hsl(var(--plum-20-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --divider-strong: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --divider-subtle: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.12) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.12) var(--custom-theme-mix-amount-base, 0%));
         --embed-background: color-mix(in oklab,
                 var(--plum-23) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138730,10 +138730,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --forum-post-extra-media-count-container-background: color-mix(in oklab,
                 hsl(var(--plum-19-hsl) / 0.8) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.8) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.8) var(--custom-theme-mix-amount-base, 0%));
         --forum-post-tag-background: color-mix(in oklab,
                 hsl(var(--plum-19-hsl) / 0.9) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.9) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.9) var(--custom-theme-mix-amount-base, 0%));
         --guild-icon-inactive-bg: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138745,7 +138745,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --halo-positive: color-mix(in oklab,
                 hsl(var(--green-360-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --header-muted: color-mix(in oklab,
                 var(--plum-10) 100%,
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
@@ -138760,7 +138760,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --home-card-resting-border: color-mix(in oklab,
                 hsl(var(--transparent-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --icon-muted: color-mix(in oklab,
                 var(--plum-12) 100%,
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
@@ -138772,13 +138772,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --icon-transparent: color-mix(in oklab,
                 hsl(var(--transparent-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-text, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-text, 0%));
         --info-box-background: color-mix(in oklab,
                 hsl(var(--blue-345-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-danger-background: color-mix(in oklab,
                 hsl(var(--red-400-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-danger-foreground: color-mix(in oklab,
                 var(--red-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138787,7 +138787,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-help-background: color-mix(in oklab,
                 hsl(var(--blue-345-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-help-foreground: color-mix(in oklab,
                 var(--blue-345) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138796,7 +138796,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-positive-background: color-mix(in oklab,
                 hsl(var(--green-360-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-positive-foreground: color-mix(in oklab,
                 var(--green-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138805,7 +138805,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-warning-background: color-mix(in oklab,
                 hsl(var(--yellow-300-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-warning-foreground: color-mix(in oklab,
                 var(--yellow-300) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138814,10 +138814,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --input-background: color-mix(in oklab,
                 hsl(var(--plum-23-alpha-hsl) / 0.09) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.09) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.09) var(--custom-theme-mix-amount-base, 0%));
         --input-focused-border: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --input-placeholder-text: color-mix(in oklab,
                 var(--plum-9) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138835,28 +138835,28 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --legacy-android-blur-overlay-default: color-mix(in oklab,
                 hsl(var(--primary-660-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --legacy-android-blur-overlay-ultra-thin: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.025) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.025) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.025) var(--custom-theme-mix-amount-base, 0%));
         --legacy-blur-fallback-default: color-mix(in oklab,
                 hsl(var(--primary-660-hsl) / 0.975) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.975) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.975) var(--custom-theme-mix-amount-base, 0%));
         --legacy-blur-fallback-ultra-thin: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.95) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.95) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.95) var(--custom-theme-mix-amount-base, 0%));
         --live-stage-tile-border: color-mix(in oklab,
                 hsl(var(--plum-13-hsl) / 0.6) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --logo-primary: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --mention-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --mention-foreground: color-mix(in oklab,
                 var(--brand-230) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --modal-background: color-mix(in oklab,
                 var(--plum-16) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138877,37 +138877,37 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --polls-victor-fill: color-mix(in oklab,
                 hsl(var(--green-360-hsl) / 0.2) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --polls-voted-fill: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.2) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-card-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.7) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-message-input-border: color-mix(in oklab,
                 hsl(var(--primary-500-hsl) / 0.48) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.48) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-note-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-overlay: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.6) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-overlay-synced-with-user-theme: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.8) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.8) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.8) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-profile-body-background-hover: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-role-pill-background: color-mix(in oklab,
                 hsl(var(--primary-660-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-role-pill-border: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.2) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-section-box: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.45) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.45) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.45) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-background: color-mix(in oklab,
                 var(--primary-560) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138919,7 +138919,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-border: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.12) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.12) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-overflow-background: color-mix(in oklab,
                 var(--primary-630) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138952,10 +138952,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-overlay-alpha-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.54) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.54) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-overlay-alpha-pressed-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.64) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.64) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.64) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-overlay-alpha-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -138979,13 +138979,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-border: color-mix(in oklab,
                 var(--brand-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-on-blurple-background: color-mix(in oklab,
                 hsl(var(--brand-530-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-on-blurple-border: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139000,10 +139000,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-pressed-background: color-mix(in oklab,
                 hsl(var(--brand-700-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-pressed-border: color-mix(in oklab,
                 hsl(var(--brand-400-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-pressed-text: color-mix(in oklab,
                 var(--brand-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139036,13 +139036,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-border: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.12) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.12) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-overlay-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.54) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.54) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-overlay-pressed-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.64) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.64) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.64) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-overlay-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139051,25 +139051,25 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-pressed-border: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.06) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.06) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-text: color-mix(in oklab,
                 var(--plum-4) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-selected-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-selected-pressed-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.28) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.28) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.28) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-selected-text: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-tertiary-background: color-mix(in oklab,
                 hsl(var(--plum-23-alpha-hsl) / 0.09) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.09) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.09) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-tertiary-pressed-background: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.2) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-tertiary-pressed-text: color-mix(in oklab,
                 var(--plum-6) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139090,10 +139090,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-chat-input-background: color-mix(in oklab,
                 hsl(var(--plum-23-alpha-hsl) / 0.09) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.09) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.09) var(--custom-theme-mix-amount-base, 0%));
         --redesign-image-button-pressed-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --redesign-input-control-active-bg: color-mix(in oklab,
                 var(--plum-17) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139132,13 +139132,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --scrollbar-thin-track: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --spoiler-hidden-background: color-mix(in oklab,
                 var(--plum-14) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --spoiler-revealed-background: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --stage-card-pill-bg: color-mix(in oklab,
                 var(--plum-25) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139228,7 +139228,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --theme-locked-blur-fallback: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.96) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.96) var(--custom-theme-mix-amount-base, 0%));
         --thread-channel-spine: color-mix(in oklab,
                 var(--plum-13) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139240,13 +139240,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --user-profile-header-overflow-background: color-mix(in oklab,
                 hsl(var(--plum-20-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --voice-video-video-tile-background: color-mix(in oklab,
                 hsl(var(--plum-17-hsl) / 0.4) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.4) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.4) var(--custom-theme-mix-amount-base, 0%));
         --voice-video-video-tile-blur-fallback: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.48) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.48) var(--custom-theme-mix-amount-base, 0%));
         --white: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139589,7 +139589,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --activity-card-icon-overlay: color-mix(in oklab,
                 hsl(var(--primary-600-hsl) / 0.85) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.85) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.85) var(--custom-theme-mix-amount-base, 0%));
         --alert-bg: color-mix(in oklab,
                 var(--plum-20) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139598,10 +139598,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --android-navigation-scrim-background: color-mix(in oklab,
                 hsl(var(--plum-24-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --android-ripple: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.07) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.07) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.07) var(--custom-theme-mix-amount-base, 0%));
         --background-accent: color-mix(in oklab,
                 var(--plum-15) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139610,22 +139610,22 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --background-mentioned: color-mix(in oklab,
                 hsl(var(--yellow-260-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --background-mentioned-hover: color-mix(in oklab,
                 hsl(var(--yellow-300-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --background-message-automod: color-mix(in oklab,
                 hsl(var(--red-345-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --background-message-automod-hover: color-mix(in oklab,
                 hsl(var(--red-400-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --background-message-highlight: color-mix(in oklab,
                 hsl(var(--brand-360-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --background-message-highlight-hover: color-mix(in oklab,
                 hsl(var(--brand-360-hsl) / 0.06) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.06) var(--custom-theme-mix-amount-base, 0%));
         --background-message-hover: color-mix(in oklab,
                 var(--plum-21) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139637,19 +139637,19 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-accent: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.12) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.12) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-accent-2: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-active: color-mix(in oklab,
                 hsl(var(--plum-13-hsl) / 0.48) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.48) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-hover: color-mix(in oklab,
                 hsl(var(--plum-13-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --background-modifier-selected: color-mix(in oklab,
                 hsl(var(--plum-13-hsl) / 0.6) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --background-nested-floating: color-mix(in oklab,
                 var(--plum-22) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139667,7 +139667,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --bg-backdrop: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.7) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --bg-backdrop-no-opacity: color-mix(in oklab,
                 var(--black-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139685,13 +139685,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --bg-mod-faint: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.12) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.12) var(--custom-theme-mix-amount-base, 0%));
         --bg-mod-strong: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --bg-mod-subtle: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --bg-surface-overlay: color-mix(in oklab,
                 var(--plum-17) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139706,22 +139706,22 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --blur-fallback: color-mix(in oklab,
                 hsl(var(--plum-17-hsl) / 0.96) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.96) var(--custom-theme-mix-amount-base, 0%));
         --blur-fallback-pressed: color-mix(in oklab,
                 hsl(var(--plum-18-hsl) / 0.96) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.96) var(--custom-theme-mix-amount-base, 0%));
         --border-faint: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.06) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.06) var(--custom-theme-mix-amount-base, 0%));
         --border-strong: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.22) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.22) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.22) var(--custom-theme-mix-amount-base, 0%));
         --border-subtle: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.12) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.12) var(--custom-theme-mix-amount-base, 0%));
         --bug-reporter-modal-submitting-background: color-mix(in oklab,
                 hsl(var(--plum-23-hsl) / 0.6) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --button-creator-revenue-background: color-mix(in oklab,
                 var(--teal-430) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139739,7 +139739,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-brand-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-brand-background-active: color-mix(in oklab,
                 var(--brand-560) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139766,7 +139766,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-danger-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-danger-background-active: color-mix(in oklab,
                 var(--red-460) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139793,7 +139793,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-positive-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-positive-background-active: color-mix(in oklab,
                 var(--green-530) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139820,7 +139820,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-primary-background: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --button-outline-primary-background-active: color-mix(in oklab,
                 var(--plum-11) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139871,10 +139871,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --card-gradient-bg: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.4) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.4) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.4) var(--custom-theme-mix-amount-base, 0%));
         --card-gradient-pressed-bg: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --card-primary-bg: color-mix(in oklab,
                 var(--plum-18) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139916,28 +139916,28 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --chat-swipe-to-reply-gradient-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --coachmark-bg: color-mix(in oklab,
                 var(--plum-17) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-media-seekbar-container: color-mix(in oklab,
                 hsl(var(--plum-6-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-overlay-text-primary: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.85) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.85) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.85) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-overlay-text-secondary: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.7) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-overlay-ui-mod: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.7) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --content-inventory-overlay-ui-mod-bg: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --context-menu-backdrop-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.7) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --control-brand-foreground: color-mix(in oklab,
                 var(--brand-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139952,7 +139952,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --creator-revenue-info-box-background: color-mix(in oklab,
                 hsl(var(--teal-430-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --creator-revenue-info-box-border: color-mix(in oklab,
                 var(--teal-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139964,16 +139964,16 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-card-bg: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.6) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-card-editable-bg: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-quickswitcher-input-background: color-mix(in oklab,
                 var(--primary-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-quickswitcher-input-placeholder: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-store-bg: color-mix(in oklab,
                 var(--primary-600) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139982,7 +139982,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-text-input-border: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --deprecated-text-input-border-disabled: color-mix(in oklab,
                 var(--primary-700) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -139994,13 +139994,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --display-banner-overflow-background: color-mix(in oklab,
                 hsl(var(--plum-20-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --divider-strong: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.22) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.22) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.22) var(--custom-theme-mix-amount-base, 0%));
         --divider-subtle: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.12) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.12) var(--custom-theme-mix-amount-base, 0%));
         --embed-background: color-mix(in oklab,
                 var(--plum-18) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140018,10 +140018,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --forum-post-extra-media-count-container-background: color-mix(in oklab,
                 hsl(var(--plum-19-hsl) / 0.8) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.8) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.8) var(--custom-theme-mix-amount-base, 0%));
         --forum-post-tag-background: color-mix(in oklab,
                 hsl(var(--plum-19-hsl) / 0.9) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.9) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.9) var(--custom-theme-mix-amount-base, 0%));
         --guild-icon-inactive-bg: color-mix(in oklab,
                 var(--plum-20) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140033,7 +140033,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --halo-positive: color-mix(in oklab,
                 hsl(var(--green-360-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --header-muted: color-mix(in oklab,
                 var(--plum-10) 100%,
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
@@ -140048,7 +140048,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --home-card-resting-border: color-mix(in oklab,
                 hsl(var(--transparent-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --icon-muted: color-mix(in oklab,
                 var(--plum-11) 100%,
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
@@ -140060,13 +140060,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --icon-transparent: color-mix(in oklab,
                 hsl(var(--transparent-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-text, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-text, 0%));
         --info-box-background: color-mix(in oklab,
                 hsl(var(--blue-345-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-danger-background: color-mix(in oklab,
                 hsl(var(--red-400-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-danger-foreground: color-mix(in oklab,
                 var(--red-400) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140075,7 +140075,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-help-background: color-mix(in oklab,
                 hsl(var(--blue-345-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-help-foreground: color-mix(in oklab,
                 var(--blue-345) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140084,7 +140084,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-positive-background: color-mix(in oklab,
                 hsl(var(--green-360-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-positive-foreground: color-mix(in oklab,
                 var(--green-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140093,7 +140093,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --info-warning-background: color-mix(in oklab,
                 hsl(var(--yellow-300-hsl) / 0.1) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.1) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.1) var(--custom-theme-mix-amount-base, 0%));
         --info-warning-foreground: color-mix(in oklab,
                 var(--yellow-300) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140102,10 +140102,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --input-background: color-mix(in oklab,
                 hsl(var(--plum-24-hsl) / 0.85) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.85) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.85) var(--custom-theme-mix-amount-base, 0%));
         --input-focused-border: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.32) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.32) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.32) var(--custom-theme-mix-amount-base, 0%));
         --input-placeholder-text: color-mix(in oklab,
                 var(--plum-10) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140123,28 +140123,28 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --legacy-android-blur-overlay-default: color-mix(in oklab,
                 hsl(var(--primary-660-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --legacy-android-blur-overlay-ultra-thin: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.025) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.025) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.025) var(--custom-theme-mix-amount-base, 0%));
         --legacy-blur-fallback-default: color-mix(in oklab,
                 hsl(var(--primary-660-hsl) / 0.975) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.975) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.975) var(--custom-theme-mix-amount-base, 0%));
         --legacy-blur-fallback-ultra-thin: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.95) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.95) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.95) var(--custom-theme-mix-amount-base, 0%));
         --live-stage-tile-border: color-mix(in oklab,
                 hsl(var(--plum-13-hsl) / 0.6) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --logo-primary: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --mention-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --mention-foreground: color-mix(in oklab,
                 var(--brand-230) 100%,
-                var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
+                var(--custom-theme-mix-text, black) var(--custom-theme-mix-amount-text, 0%));
         --modal-background: color-mix(in oklab,
                 var(--plum-16) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140165,37 +140165,37 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --polls-victor-fill: color-mix(in oklab,
                 hsl(var(--green-360-hsl) / 0.2) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --polls-voted-fill: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.2) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-card-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.7) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.7) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.7) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-message-input-border: color-mix(in oklab,
                 hsl(var(--primary-500-hsl) / 0.48) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.48) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-note-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.3) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.3) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.3) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-overlay: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.6) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.6) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.6) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-overlay-synced-with-user-theme: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.8) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.8) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.8) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-profile-body-background-hover: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-role-pill-background: color-mix(in oklab,
                 hsl(var(--primary-660-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-role-pill-border: color-mix(in oklab,
                 hsl(var(--white-500-hsl) / 0.2) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --profile-gradient-section-box: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.45) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.45) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.45) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-background: color-mix(in oklab,
                 var(--primary-560) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140207,7 +140207,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-border: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.06) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.06) var(--custom-theme-mix-amount-base, 0%));
         --redesign-activity-card-overflow-background: color-mix(in oklab,
                 var(--plum-17) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140240,10 +140240,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-overlay-alpha-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.54) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.54) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-overlay-alpha-pressed-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.64) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.64) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.64) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-overlay-alpha-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140267,13 +140267,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-border: color-mix(in oklab,
                 var(--brand-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-on-blurple-background: color-mix(in oklab,
                 hsl(var(--brand-530-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-on-blurple-border: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140288,10 +140288,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-pressed-background: color-mix(in oklab,
                 hsl(var(--brand-700-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-pressed-border: color-mix(in oklab,
                 hsl(var(--brand-400-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-primary-alt-pressed-text: color-mix(in oklab,
                 var(--brand-360) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140324,13 +140324,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-border: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.12) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.12) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-overlay-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.54) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.54) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.54) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-overlay-pressed-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.64) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.64) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.64) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-overlay-text: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140339,25 +140339,25 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-pressed-border: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.06) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.06) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.06) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-secondary-text: color-mix(in oklab,
                 var(--plum-6) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-selected-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.24) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.24) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.24) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-selected-pressed-background: color-mix(in oklab,
                 hsl(var(--brand-500-hsl) / 0.28) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.28) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.28) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-selected-text: color-mix(in oklab,
                 var(--brand-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-tertiary-background: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.12) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.12) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-tertiary-pressed-background: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.2) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.2) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.2) var(--custom-theme-mix-amount-base, 0%));
         --redesign-button-tertiary-pressed-text: color-mix(in oklab,
                 var(--plum-5) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140378,10 +140378,10 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --redesign-chat-input-background: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.12) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.12) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.12) var(--custom-theme-mix-amount-base, 0%));
         --redesign-image-button-pressed-background: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0.08) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.08) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.08) var(--custom-theme-mix-amount-base, 0%));
         --redesign-input-control-active-bg: color-mix(in oklab,
                 var(--plum-16) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140420,13 +140420,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --scrollbar-thin-track: color-mix(in oklab,
                 hsl(var(--black-500-hsl) / 0) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0) var(--custom-theme-mix-amount-base, 0%));
         --spoiler-hidden-background: color-mix(in oklab,
                 var(--plum-14) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --spoiler-revealed-background: color-mix(in oklab,
                 hsl(var(--plum-11-hsl) / 0.16) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.16) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.16) var(--custom-theme-mix-amount-base, 0%));
         --stage-card-pill-bg: color-mix(in oklab,
                 var(--plum-19) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140516,7 +140516,7 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --theme-locked-blur-fallback: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.96) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.96) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.96) var(--custom-theme-mix-amount-base, 0%));
         --thread-channel-spine: color-mix(in oklab,
                 var(--plum-13) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -140528,13 +140528,13 @@ div.nagbar_c731ff {
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
         --user-profile-header-overflow-background: color-mix(in oklab,
                 hsl(var(--plum-20-hsl) / 0.5) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.5) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.5) var(--custom-theme-mix-amount-base, 0%));
         --voice-video-video-tile-background: color-mix(in oklab,
                 hsl(var(--plum-17-hsl) / 0.4) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.4) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.4) var(--custom-theme-mix-amount-base, 0%));
         --voice-video-video-tile-blur-fallback: color-mix(in oklab,
                 hsl(var(--primary-700-hsl) / 0.48) 100%,
-                hsl(var(--custom-theme-mix-base-hsl) / 0.48) var(--custom-theme-mix-amount-base, 0%));
+                hsl(var(--custom-theme-mix-base-hsl, 0 0% 0%) / 0.48) var(--custom-theme-mix-amount-base, 0%));
         --white: color-mix(in oklab,
                 var(--white-500) 100%,
                 var(--custom-theme-mix-base, black) var(--custom-theme-mix-amount-base, 0%));
@@ -141900,4 +141900,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.34b1db7202cde444a7ae.css.map*/
+/*# sourceMappingURL=99387.c2c2bb2307c02c906933.css.map*/
