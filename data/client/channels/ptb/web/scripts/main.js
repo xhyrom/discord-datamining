@@ -37059,7 +37059,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295222", ", Version Hash: ").concat("054617cddf20b6c15ea0865937d13d3bd530c858")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295243", ", Version Hash: ").concat("1c608a55cca17ab57f5215b26ded4e240f0fff0e")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -38588,6 +38588,8 @@
                 FORM_LABEL_SLOWMODE_OFF: "Slowmode is off.",
                 FORM_LABEL_SLOWMODE_SEARCH_PLACEHOLDER: "Select a default or enter a custom duration!",
                 CANNOT_DELETE_CHANNEL: "Cannot Delete Channel",
+                CANNOT_PRIVATIZE_CHANNEL: "Cannot Make Channel Private",
+                DESIGNATE_OTHER_CHANNEL_ONBOARDING_PRIVATE: "You must designate a replacement Default Channel in [Server Settings > Community > Onboarding](onClick) before this channel can be made private.",
                 DELETE_RULES_CHANNEL_BODY: "Community Servers are required to have a rules channel.",
                 DELETE_DEFAULT_CHANNEL_BODY: "Deleting this channel will make your server incompatible with Community Onboarding.",
                 DELETE_UPDATES_CHANNEL_BODY: "Community Servers are required to have a Community Updates channel where Discord can send important community server updates.",
@@ -88504,8 +88506,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295222", "295222"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295222")), t = 0), t
+                let t = parseInt((e = "295243", "295243"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295243")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116369,8 +116371,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295222",
-                    versionHash: "054617cddf20b6c15ea0865937d13d3bd530c858"
+                    buildNumber: "295243",
+                    versionHash: "1c608a55cca17ab57f5215b26ded4e240f0fff0e"
                 }
             }
             n.r(t), n.d(t, {
@@ -149418,22 +149420,19 @@
             "use strict";
             n.r(t), n.d(t, {
                 completeNewMemberAction: function() {
-                    return N
+                    return m
                 },
                 fetchGuildHomeSettings: function() {
-                    return S
+                    return f
                 },
                 fetchNewMemberActions: function() {
-                    return h
-                },
-                getBlockForChannelDeletion: function() {
-                    return p
+                    return S
                 },
                 selectHomeResourceChannel: function() {
-                    return A
+                    return h
                 },
                 selectNewMemberActionChannel: function() {
-                    return m
+                    return A
                 }
             }), n("47120"), n("724458");
             var i = n("544891"),
@@ -149448,16 +149447,15 @@
                 c = n("563534"),
                 E = n("734893"),
                 I = n("846121"),
-                T = n("931261"),
-                f = n("981631");
-            let S = async e => {
+                T = n("981631");
+            let f = async e => {
                 r.default.dispatch({
                     type: "GUILD_HOME_SETTINGS_FETCH_START",
                     guildId: e
                 });
                 try {
                     let t = await i.HTTP.get({
-                            url: f.Endpoints.GUILD_HOME_SETTINGS(e),
+                            url: T.Endpoints.GUILD_HOME_SETTINGS(e),
                             oldFormErrors: !0
                         }),
                         n = (0, E.settingsFromServer)(t.body);
@@ -149472,7 +149470,7 @@
                         guildId: e
                     })
                 }
-            }, h = async e => {
+            }, S = async e => {
                 if (!o.default.isFullServerPreview(e)) {
                     r.default.dispatch({
                         type: "GUILD_NEW_MEMBER_ACTIONS_FETCH_START",
@@ -149480,7 +149478,7 @@
                     });
                     try {
                         let t = await i.HTTP.get({
-                                url: f.Endpoints.GUILD_MEMBER_ACTIONS(e),
+                                url: T.Endpoints.GUILD_MEMBER_ACTIONS(e),
                                 oldFormErrors: !0
                             }),
                             n = (0, E.actionsFromServer)(t.body);
@@ -149496,7 +149494,7 @@
                         })
                     }
                 }
-            }, A = function(e, t) {
+            }, h = function(e, t) {
                 let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
                 if (r.default.dispatch({
                         type: "SELECT_HOME_RESOURCE_CHANNEL",
@@ -149505,7 +149503,7 @@
                     }), null == t) return;
                 let i = u.default.getChannel(t),
                     E = c.default.getResourceForChannel(e, t);
-                null != e && !o.default.isFullServerPreview(e) && null != i && null != E && d.default.track(f.AnalyticEvents.SERVER_GUIDE_CHANNEL_SELECTED, {
+                null != e && !o.default.isFullServerPreview(e) && null != i && null != E && d.default.track(T.AnalyticEvents.SERVER_GUIDE_CHANNEL_SELECTED, {
                     guild_id: e,
                     channel_id: i.id,
                     server_guide_channel_type: "resource",
@@ -149516,7 +149514,7 @@
                     flash: !1,
                     jumpType: a.JumpTypes.INSTANT
                 })
-            }, m = (e, t) => {
+            }, A = (e, t) => {
                 r.default.dispatch({
                     type: "SELECT_NEW_MEMBER_ACTION_CHANNEL",
                     guildId: e,
@@ -149524,13 +149522,13 @@
                 });
                 let n = u.default.getChannel(t),
                     i = c.default.getActionForChannel(e, t);
-                null != e && !o.default.isFullServerPreview(e) && null != n && null != i && d.default.track(f.AnalyticEvents.SERVER_GUIDE_CHANNEL_SELECTED, {
+                null != e && !o.default.isFullServerPreview(e) && null != n && null != i && d.default.track(T.AnalyticEvents.SERVER_GUIDE_CHANNEL_SELECTED, {
                     guild_id: e,
                     channel_id: n.id,
                     server_guide_channel_type: "member action",
                     channel_action_type: i.actionType
                 }), (0, l.transitionToChannel)(t)
-            }, N = (e, t) => {
+            }, m = (e, t) => {
                 if (r.default.dispatch({
                         type: "COMPLETE_NEW_MEMBER_ACTION",
                         guildId: e,
@@ -149542,7 +149540,7 @@
                     var a, l;
                     let t = _.default.keys(null !== (a = I.default.getCompletedActions(e)) && void 0 !== a ? a : {}),
                         i = null !== (l = c.default.getNewMemberActions(e)) && void 0 !== l ? l : [];
-                    d.default.track(f.AnalyticEvents.SERVER_GUIDE_ACTION_COMPLETED, {
+                    d.default.track(T.AnalyticEvents.SERVER_GUIDE_ACTION_COMPLETED, {
                         guild_id: n.guild_id,
                         channel_id: n.id,
                         channel_action_type: s.actionType,
@@ -149550,13 +149548,8 @@
                     })
                 }
                 i.HTTP.post({
-                    url: f.Endpoints.GUILD_MEMBER_ACTION_UPDATE(e, t)
+                    url: T.Endpoints.GUILD_MEMBER_ACTION_UPDATE(e, t)
                 })
-            };
-            async function p(e, t) {
-                if (null == e || !(0, T.canSeeOnboardingHome)(e)) return !1;
-                let n = c.default.getSettings(e);
-                return n === c.NO_SETTINGS && (await S(e), n = c.default.getSettings(e)), n !== c.NO_SETTINGS && null != n && (null != n.newMemberActions && null != n.newMemberActions.find(e => e.channelId === t) ? "todo" : null != n.resourceChannels && null != n.resourceChannels.find(e => e.channelId === t) && "resource")
             }
         },
         563534: function(e, t, n) {
@@ -149700,82 +149693,85 @@
         734893: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                ChannelEditBlockTypes: function() {
+                    return a
+                },
                 NEW_MEMBER_ACTION_MAX: function() {
-                    return E
-                },
-                NEW_MEMBER_ACTION_TITLE_MAX_LENGTH: function() {
-                    return c
-                },
-                NEW_MEMBER_ACTION_TITLE_MIN_LENGTH: function() {
-                    return _
-                },
-                NewMemberActionTypes: function() {
-                    return r
-                },
-                RESOURCE_CHANNEL_DESCRIPTION_MAX_LENGTH: function() {
-                    return f
-                },
-                RESOURCE_CHANNEL_MAX: function() {
-                    return S
-                },
-                RESOURCE_CHANNEL_TITLE_MAX_LENGTH: function() {
                     return T
                 },
-                RESOURCE_CHANNEL_TITLE_MIN_LENGTH: function() {
+                NEW_MEMBER_ACTION_TITLE_MAX_LENGTH: function() {
                     return I
                 },
-                WELCOME_MESSAGE_MAX_LENGTH: function() {
-                    return d
+                NEW_MEMBER_ACTION_TITLE_MIN_LENGTH: function() {
+                    return E
                 },
-                WELCOME_MESSAGE_MIN_LENGTH: function() {
-                    return u
+                NewMemberActionTypes: function() {
+                    return s
                 },
-                actionsFromServer: function() {
-                    return p
-                },
-                isChannelValidForNewMemberAction: function() {
-                    return L
-                },
-                isChannelValidForResourceChannel: function() {
-                    return g
-                },
-                isSettingsEmpty: function() {
-                    return C
-                },
-                isSettingsValid: function() {
-                    return R
-                },
-                isWelcomeMessageEmpty: function() {
-                    return O
-                },
-                newMemberActionFromServer: function() {
+                RESOURCE_CHANNEL_DESCRIPTION_MAX_LENGTH: function() {
                     return h
                 },
-                resourceChannelFromServer: function() {
+                RESOURCE_CHANNEL_MAX: function() {
                     return A
                 },
-                settingsFromServer: function() {
+                RESOURCE_CHANNEL_TITLE_MAX_LENGTH: function() {
+                    return S
+                },
+                RESOURCE_CHANNEL_TITLE_MIN_LENGTH: function() {
+                    return f
+                },
+                WELCOME_MESSAGE_MAX_LENGTH: function() {
+                    return c
+                },
+                WELCOME_MESSAGE_MIN_LENGTH: function() {
+                    return _
+                },
+                actionsFromServer: function() {
+                    return C
+                },
+                isChannelValidForNewMemberAction: function() {
+                    return D
+                },
+                isChannelValidForResourceChannel: function() {
+                    return v
+                },
+                isSettingsEmpty: function() {
+                    return g
+                },
+                isSettingsValid: function() {
+                    return L
+                },
+                isWelcomeMessageEmpty: function() {
+                    return R
+                },
+                newMemberActionFromServer: function() {
                     return m
                 },
-                settingsToServer: function() {
+                resourceChannelFromServer: function() {
                     return N
+                },
+                settingsFromServer: function() {
+                    return p
+                },
+                settingsToServer: function() {
+                    return O
                 }
             });
-            var i, r, s = n("592125"),
-                a = n("823379"),
-                o = n("700785"),
-                l = n("981631");
-            let u = 7,
-                d = 300,
-                _ = 7,
-                c = 60,
-                E = 5,
-                I = 1,
-                T = 30,
-                f = 200,
-                S = 7;
+            var i, r, s, a, o = n("592125"),
+                l = n("823379"),
+                u = n("700785"),
+                d = n("981631");
+            let _ = 7,
+                c = 300,
+                E = 7,
+                I = 60,
+                T = 5,
+                f = 1,
+                S = 30,
+                h = 200,
+                A = 7;
 
-            function h(e) {
+            function m(e) {
                 var t;
                 return {
                     channelId: e.channel_id,
@@ -149791,7 +149787,7 @@
                 }
             }
 
-            function A(e) {
+            function N(e) {
                 var t, n;
                 return {
                     channelId: e.channel_id,
@@ -149806,37 +149802,37 @@
                 }
             }
 
-            function m(e) {
+            function p(e) {
                 if (null == e) return null;
                 let {
                     welcome_message: t,
                     new_member_actions: n,
                     resource_channels: i,
                     enabled: r
-                } = e, o = {
+                } = e, s = {
                     authorIds: t.author_ids,
                     message: t.message
-                }, l = n.filter(e => (0, a.isNotNullish)(s.default.getChannel(e.channel_id))).map(h);
+                }, a = n.filter(e => (0, l.isNotNullish)(o.default.getChannel(e.channel_id))).map(m);
                 return {
-                    welcomeMessage: o,
-                    newMemberActions: l,
-                    resourceChannels: i.filter(e => (0, a.isNotNullish)(s.default.getChannel(e.channel_id))).map(A),
+                    welcomeMessage: s,
+                    newMemberActions: a,
+                    resourceChannels: i.filter(e => (0, l.isNotNullish)(o.default.getChannel(e.channel_id))).map(N),
                     enabled: r
                 }
             }
 
-            function N(e, t) {
+            function O(e, t) {
                 var n, i;
                 if (null == t) return null;
                 let {
                     welcomeMessage: r,
-                    newMemberActions: o,
-                    resourceChannels: l,
+                    newMemberActions: s,
+                    resourceChannels: a,
                     enabled: u
                 } = t, d = {
                     author_ids: null !== (n = null == r ? void 0 : r.authorIds) && void 0 !== n ? n : [],
                     message: null !== (i = null == r ? void 0 : r.message) && void 0 !== i ? i : ""
-                }, _ = (null != o ? o : []).filter(e => (0, a.isNotNullish)(s.default.getChannel(e.channelId))).map(e => {
+                }, _ = (null != s ? s : []).filter(e => (0, l.isNotNullish)(o.default.getChannel(e.channelId))).map(e => {
                     var t, n, i, r, s, a, o;
                     return {
                         channel_id: e.channelId,
@@ -149855,7 +149851,7 @@
                     guild_id: e,
                     welcome_message: d,
                     new_member_actions: _,
-                    resource_channels: (null != l ? l : []).filter(e => (0, a.isNotNullish)(s.default.getChannel(e.channelId))).map(e => {
+                    resource_channels: (null != a ? a : []).filter(e => (0, l.isNotNullish)(o.default.getChannel(e.channelId))).map(e => {
                         var t, n, i, r, s, a, o;
                         return {
                             channel_id: e.channelId,
@@ -149871,42 +149867,42 @@
                     }),
                     enabled: u
                 }
-            }(i = r || (r = {}))[i.VIEW = 0] = "VIEW", i[i.CHAT = 1] = "CHAT";
-            let p = e => {
+            }(i = s || (s = {}))[i.VIEW = 0] = "VIEW", i[i.CHAT = 1] = "CHAT";
+            let C = e => {
                 if (null == e) return null;
                 let t = {};
                 for (let n in e.channel_actions) t[n] = e.channel_actions[n].completed;
                 return t
             };
 
-            function O(e) {
+            function R(e) {
                 return null == e || (null == e.message || !(e.message.length > 0)) && (null == e.authorIds || !(e.authorIds.length > 0)) && !0
             }
 
-            function C(e) {
-                return null == e || !!O(e.welcomeMessage) && (null == e.newMemberActions || !(e.newMemberActions.length > 0)) && (null == e.resourceChannels || !(e.resourceChannels.length > 0)) && !0
-            }
-
-            function R(e) {
-                var t, n;
-                return null != e && (!!C(e) || (null === (t = e.welcomeMessage) || void 0 === t ? void 0 : t.message) != null && !(e.welcomeMessage.message.length < u) && (null === (n = e.welcomeMessage) || void 0 === n ? void 0 : n.authorIds) != null && 0 !== e.welcomeMessage.authorIds.length && null != e.newMemberActions && !(e.newMemberActions.length < 3) && !0)
-            }
-
             function g(e) {
-                return e.type === l.ChannelTypes.GUILD_TEXT && !o.canEveryoneRole(l.Permissions.SEND_MESSAGES, e) && o.canEveryoneRole(l.Permissions.VIEW_CHANNEL, e)
+                return null == e || !!R(e.welcomeMessage) && (null == e.newMemberActions || !(e.newMemberActions.length > 0)) && (null == e.resourceChannels || !(e.resourceChannels.length > 0)) && !0
             }
 
             function L(e) {
+                var t, n;
+                return null != e && (!!g(e) || (null === (t = e.welcomeMessage) || void 0 === t ? void 0 : t.message) != null && !(e.welcomeMessage.message.length < _) && (null === (n = e.welcomeMessage) || void 0 === n ? void 0 : n.authorIds) != null && 0 !== e.welcomeMessage.authorIds.length && null != e.newMemberActions && !(e.newMemberActions.length < 3) && !0)
+            }
+
+            function v(e) {
+                return e.type === d.ChannelTypes.GUILD_TEXT && !u.canEveryoneRole(d.Permissions.SEND_MESSAGES, e) && u.canEveryoneRole(d.Permissions.VIEW_CHANNEL, e)
+            }
+
+            function D(e) {
                 switch (e.type) {
-                    case l.ChannelTypes.GUILD_TEXT:
-                    case l.ChannelTypes.GUILD_ANNOUNCEMENT:
-                    case l.ChannelTypes.GUILD_FORUM:
-                    case l.ChannelTypes.GUILD_MEDIA:
-                        return o.canEveryoneRole(l.Permissions.VIEW_CHANNEL, e);
+                    case d.ChannelTypes.GUILD_TEXT:
+                    case d.ChannelTypes.GUILD_ANNOUNCEMENT:
+                    case d.ChannelTypes.GUILD_FORUM:
+                    case d.ChannelTypes.GUILD_MEDIA:
+                        return u.canEveryoneRole(d.Permissions.VIEW_CHANNEL, e);
                     default:
                         return !1
                 }
-            }
+            }(r = a || (a = {}))[r.DEFAULT = 0] = "DEFAULT", r[r.TODO = 1] = "TODO", r[r.RESOURCE = 2] = "RESOURCE"
         },
         846121: function(e, t, n) {
             "use strict";
@@ -173371,8 +173367,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716322679218",
-                                    build_number: "295222"
+                                    built_at: "1716324165217",
+                                    build_number: "295243"
                                 }
                             },
                             retries: 1
@@ -250314,7 +250310,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "054617cddf20b6c15ea0865937d13d3bd530c858"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "1c608a55cca17ab57f5215b26ded4e240f0fff0e"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279413,7 +279409,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295222"
+                                build_number: "295243"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286771,7 +286767,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295222", "295222"), 10);
+                let s = parseInt((n = "295243", "295243"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314461,4 +314457,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.d689041835d0314ac5b5.js.map
+//# sourceMappingURL=71586.dfe0a7dd6a5f180fcdeb.js.map
