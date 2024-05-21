@@ -15673,22 +15673,22 @@
             "use strict";
             n.r(t), n.d(t, {
                 acceptAgreements: function() {
-                    return f
-                },
-                fetchCurrentUser: function() {
                     return T
                 },
-                fetchMutualFriends: function() {
-                    return m
+                fetchCurrentUser: function() {
+                    return I
                 },
-                fetchProfile: function() {
+                fetchMutualFriends: function() {
                     return A
                 },
-                getUser: function() {
+                fetchProfile: function() {
                     return h
                 },
-                setFlag: function() {
+                getUser: function() {
                     return S
+                },
+                setFlag: function() {
+                    return f
                 }
             }), n("789020");
             var i = n("512722"),
@@ -15699,18 +15699,17 @@
                 l = n("570140"),
                 u = n("598077"),
                 d = n("594174"),
-                _ = n("960048"),
-                c = n("573261"),
-                E = n("981631");
-            let I = new a.Logger("UserProfileModalActionCreators");
+                _ = n("573261"),
+                c = n("981631");
+            let E = new a.Logger("UserProfileModalActionCreators");
 
-            function T() {
+            function I() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
                     {
                         withAnalyticsToken: t = !1
                     } = e;
                 return o.HTTP.get({
-                    url: E.Endpoints.ME,
+                    url: c.Endpoints.ME,
                     query: {
                         with_analytics_token: t
                     },
@@ -15722,11 +15721,11 @@
                 }), new u.default(e.body)))
             }
 
-            function f() {
+            function T() {
                 let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
                     t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-                return c.default.patch({
-                    url: E.Endpoints.USER_AGREEMENTS,
+                return _.default.patch({
+                    url: c.Endpoints.USER_AGREEMENTS,
                     trackedActionData: {
                         event: s.NetworkActionNames.USER_ACCEPT_AGREEMENTS
                     },
@@ -15738,12 +15737,12 @@
                 }).then(() => !0, () => !1)
             }
 
-            function S(e, t) {
+            function f(e, t) {
                 let n = d.default.getCurrentUser();
                 r()(null != n, "setFlag: user cannot be undefined");
                 let i = t ? n.flags | e : n.flags & ~e;
                 return o.HTTP.patch({
-                    url: E.Endpoints.ME,
+                    url: c.Endpoints.ME,
                     oldFormErrors: !0,
                     body: {
                         flags: i
@@ -15751,17 +15750,17 @@
                 })
             }
 
-            function h(e) {
+            function S(e) {
                 let t = d.default.getUser(e);
                 return null != t ? Promise.resolve(t) : o.HTTP.get({
-                    url: E.Endpoints.USER(e),
+                    url: c.Endpoints.USER(e),
                     oldFormErrors: !0
                 }).then(t => (l.default.dispatch({
                     type: "USER_UPDATE",
                     user: t.body
                 }), d.default.getUser(e)))
             }
-            async function A(e) {
+            async function h(e) {
                 let {
                     friendToken: t,
                     withMutualGuilds: n,
@@ -15776,7 +15775,7 @@
                 });
                 try {
                     let d = await o.HTTP.get({
-                        url: E.Endpoints.USER_PROFILE(e),
+                        url: c.Endpoints.USER_PROFILE(e),
                         query: {
                             friend_token: t,
                             with_mutual_guilds: n,
@@ -15799,20 +15798,20 @@
                         guildMember: d.body.guild_member
                     }), d.body
                 } catch (t) {
-                    throw _.default.captureException(t), null != t && (null == t ? void 0 : t.body) != null && I.warn("fetchProfile error: ".concat(t.body.code, " - ").concat(t.body.message)), l.default.dispatch({
+                    throw null != t && (null == t ? void 0 : t.body) != null && E.warn("fetchProfile error: ".concat(t.body.code, " - ").concat(t.body.message)), l.default.dispatch({
                         type: "USER_PROFILE_FETCH_FAILURE",
                         userId: e
                     }), t
                 }
             }
-            async function m(e, t) {
+            async function A(e, t) {
                 l.default.dispatch({
                     type: "MUTUAL_FRIENDS_FETCH_START",
                     userId: e
                 });
                 try {
                     let n = await o.HTTP.get({
-                        url: E.Endpoints.USER_RELATIONSHIPS(e),
+                        url: c.Endpoints.USER_RELATIONSHIPS(e),
                         oldFormErrors: !0,
                         signal: t
                     });
@@ -15822,7 +15821,7 @@
                         mutualFriends: n.body
                     })
                 } catch (t) {
-                    throw (null == t ? void 0 : t.body) != null && I.warn("fetchMutualFriends error: ".concat(t.body.code, " - ").concat(t.body.message)), l.default.dispatch({
+                    throw (null == t ? void 0 : t.body) != null && E.warn("fetchMutualFriends error: ".concat(t.body.code, " - ").concat(t.body.message)), l.default.dispatch({
                         type: "MUTUAL_FRIENDS_FETCH_FAILURE",
                         userId: e
                     }), t
@@ -37060,7 +37059,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295050", ", Version Hash: ").concat("3590ac5013aefdd73ac43e2c0544af5837561abe")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295052", ", Version Hash: ").concat("494b84bf59a5df01d18e7fd2add49876bf4ea4fc")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -88339,8 +88338,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295050", "295050"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295050")), t = 0), t
+                let t = parseInt((e = "295052", "295052"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295052")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116217,8 +116216,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295050",
-                    versionHash: "3590ac5013aefdd73ac43e2c0544af5837561abe"
+                    buildNumber: "295052",
+                    versionHash: "494b84bf59a5df01d18e7fd2add49876bf4ea4fc"
                 }
             }
             n.r(t), n.d(t, {
@@ -173169,8 +173168,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716308577691",
-                                    build_number: "295050"
+                                    built_at: "1716308906797",
+                                    build_number: "295052"
                                 }
                             },
                             retries: 1
@@ -250083,7 +250082,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "3590ac5013aefdd73ac43e2c0544af5837561abe"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "494b84bf59a5df01d18e7fd2add49876bf4ea4fc"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -252706,11 +252705,12 @@
                         badgeStrokeColor: r,
                         tooltipColor: a = u.Tooltip.Colors.BRAND,
                         tooltipPosition: o,
-                        size: c = 16,
-                        badgeColor: E,
-                        iconClassName: I,
-                        flowerStarClassName: T
-                    } = this.props, f = function(e) {
+                        tooltipDelay: c,
+                        size: E = 16,
+                        badgeColor: I,
+                        iconClassName: T,
+                        flowerStarClassName: f
+                    } = this.props, A = function(e) {
                         switch (e) {
                             case 2:
                                 return S.default.Messages.GUILD_VERIFIED;
@@ -252733,26 +252733,27 @@
                     return (0, s.jsx)(u.Tooltip, {
                         color: a,
                         position: o,
-                        text: f,
+                        delay: c,
+                        text: A,
                         children: a => 5 === e || 4 === e ? (0, s.jsx)("div", {
                             ...a,
                             className: l()(n, i),
                             style: {
-                                width: c,
-                                height: c
+                                width: E,
+                                height: E
                             },
                             children: (0, s.jsx)(t, {
-                                className: l()(h.icon, I)
+                                className: l()(h.icon, T)
                             })
                         }) : (0, s.jsx)(_.default, {
                             ...a,
                             className: l()(n, i),
-                            flowerStarClassName: T,
-                            color: E,
+                            flowerStarClassName: f,
+                            color: I,
                             stroke: r,
-                            size: c,
+                            size: E,
                             children: (0, s.jsx)(t, {
-                                className: l()(h.icon, I)
+                                className: l()(h.icon, T)
                             })
                         })
                     })
@@ -253114,12 +253115,16 @@
                     let {
                         showBadge: e,
                         guild: t,
-                        badgeStrokeColor: n
+                        badgeStrokeColor: n,
+                        badgeTooltipColor: i,
+                        badgeTooltipDelay: s
                     } = this.props;
                     return e && null != t.hasFeature ? (0, r.jsx)(f.default, {
                         className: S.guildIconBadge,
                         guild: t,
-                        badgeStrokeColor: n
+                        badgeStrokeColor: n,
+                        tooltipColor: i,
+                        tooltipDelay: s
                     }) : null
                 }
                 renderIcon() {
@@ -279176,7 +279181,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295050"
+                                build_number: "295052"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286534,7 +286539,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295050", "295050"), 10);
+                let s = parseInt((n = "295052", "295052"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314224,4 +314229,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.53e5478475c6f9c14e0e.js.map
+//# sourceMappingURL=71586.cfec1e9dc865853516ae.js.map
