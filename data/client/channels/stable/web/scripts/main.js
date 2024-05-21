@@ -37059,7 +37059,7 @@
                 S = n("689938");
             (0, l.setUpdateRules)(d.default), (0, s.UserDefenses)(S.default, r, _.default), o.default.Emitter.injectBatchEmitChanges(a.batchUpdates), o.default.PersistedStore.disableWrites = __OVERLAY__, o.default.initialize();
             let h = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295196", ", Version Hash: ").concat("8764494144b09e1d4c2370fd8d8d0cd09d9195ae")), i.default.setTags({
+            new T.default().log("[BUILD INFO] Release Channel: ".concat(h, ", Build Number: ").concat("295287", ", Version Hash: ").concat("9f7bef1283f77fd794edefa9ddc9bf558ed7d1ee")), i.default.setTags({
                 appContext: f.CURRENT_APP_CONTEXT
             }), c.default.initBasic(), E.default.init(), u.FocusRingManager.init(), I.init()
         },
@@ -38588,6 +38588,8 @@
                 FORM_LABEL_SLOWMODE_OFF: "Slowmode is off.",
                 FORM_LABEL_SLOWMODE_SEARCH_PLACEHOLDER: "Select a default or enter a custom duration!",
                 CANNOT_DELETE_CHANNEL: "Cannot Delete Channel",
+                CANNOT_PRIVATIZE_CHANNEL: "Cannot Make Channel Private",
+                DESIGNATE_OTHER_CHANNEL_ONBOARDING_PRIVATE: "You must designate a replacement Default Channel in [Server Settings > Community > Onboarding](onClick) before this channel can be made private.",
                 DELETE_RULES_CHANNEL_BODY: "Community Servers are required to have a rules channel.",
                 DELETE_DEFAULT_CHANNEL_BODY: "Deleting this channel will make your server incompatible with Community Onboarding.",
                 DELETE_UPDATES_CHANNEL_BODY: "Community Servers are required to have a Community Updates channel where Discord can send important community server updates.",
@@ -56019,10 +56021,10 @@
                 CLAN_CHANNEL_LIST_ADMIN_UPSELL_VALORANT_TITLE: "Recruit more Valorant friends",
                 CLAN_CHANNEL_LIST_ADMIN_UPSELL_GENSHIN_TITLE: "Recruit more Genshin friends",
                 CLAN_CHANNEL_LIST_ADMIN_UPSELL_MESSAGE: "Become one of the first Guilds and recruit players that match your server's playstyle and vibe.",
-                CLAN_GUILD_LIST_USER_UPSELL_VALORANT_TITLE: "Find new people to play Valorant on Discord!",
-                CLAN_GUILD_LIST_USER_UPSELL_VALORANT_MESSAGE: "Discover small, organized Valorant servers with similar vibes and playstyle.",
-                CLAN_GUILD_LIST_USER_UPSELL_GENSHIN_TITLE: "Find new people to play Genshin on Discord!",
-                CLAN_GUILD_LIST_USER_UPSELL_GENSHIN_MESSAGE: "Discover small, organized Genshin servers with similar vibes and playstyle.",
+                CLAN_GUILD_LIST_USER_UPSELL_VALORANT_TITLE: "Join an exclusive gaming Guild",
+                CLAN_GUILD_LIST_USER_UPSELL_VALORANT_MESSAGE: "Check out small Guilds looking to recruit Valorant players and make new friends.",
+                CLAN_GUILD_LIST_USER_UPSELL_GENSHIN_TITLE: "Join an exclusive gaming Guild",
+                CLAN_GUILD_LIST_USER_UPSELL_GENSHIN_MESSAGE: "Check out small Guilds looking to recruit Genshin players and make new friends.",
                 CLAN_SETUP_MODAL_SAVE_AND_QUIT: "Save & Exit",
                 CLAN_SETUP_APPLICATION_TITLE: "Last Step! Set up the application.",
                 CLAN_SETUP_APPLICATION_SUBTITLE: "Ask questions to get to know potential members better. You'll review their answers and decide if they are approved to join. You'll also be able to interview applicants to get to know them better.",
@@ -56123,7 +56125,7 @@
                 CLAN_JOIN_SUCCESS_MAIN_CTA: "Let's Go",
                 CLAN_JOIN_SUCCESS_SUBTITLE_MOBILE: "Rep your Guild, make new friends, and play some games. Get in and say hi to your new guildmates.",
                 CLAN_USER_APPLICATION_COACHMARK_TITLE: "Your application is pending!",
-                CLAN_USER_APPLICATION_COACHMARK_BODY: "Admin of the guild will get back to you after they reviewed your application.",
+                CLAN_USER_APPLICATION_COACHMARK_BODY: "The Guild leader will get back to you soon.",
                 CLAN_USER_APPLICATION_COACHMARK_CTA: "Got it",
                 CLAN_SETTINGS: "Guild Settings",
                 CLAN_SETTINGS_BASIC_INFO: "Basic Info",
@@ -56211,8 +56213,9 @@
                 CLAN_DISCOVERY_OTHER_GUIDES_TITLE: "More Search Results",
                 CLAN_DISCOVERY_OTHER_GUIDES_SUBTITLE: "Other guild guides that match your preferences.",
                 CLAN_DISCOVERY_TOP_PICKS_SUBTITLE: "Best Guilds to join based on your preferences",
+                CLAN_DISCOVERY_INSPIRATION_TITLE: "A few Guilds for inspiration",
                 CLAN_DISCOVERY_PREPILOT_SUBTITLE: "Your fellow Guilds waiting to launch!",
-                CLAN_DISCOVERY_STANDBY_TITLE: "Standby Guilds",
+                CLAN_DISCOVERY_PILOT_SUBTITLE: "Select **Browse Guilds** to see them all",
                 CLAN_DISCOVERY_GAME_FILTER: "{count, number} Games",
                 CLAN_DISCOVERY_PREFERENCES_FILTER: "Preferences",
                 CLAN_DISCOVERY_PRIMETIME_FILTER: "Prime Time",
@@ -59096,8 +59099,7 @@
                     })
                 }
                 _handleVideo(e, t, n, i, r) {
-                    let s = this._connection;
-                    if (null != s && this.userId !== t) {
+                    if (null != this._connection && this.userId !== t) {
                         if (null != this._localMediaSinkWantsManager) {
                             this._localMediaSinkWantsManager.setAudioSSRC(t, n);
                             let e = r.map(e => ({
@@ -59116,15 +59118,15 @@
                                 quality: 100,
                                 active: i > 0
                             }), this._localMediaSinkWantsManager.setVideoSSRCs(t, e)
-                        } else if (2 === r.length) {
-                            var a, o;
+                        } else {
+                            var s, a;
                             let e = [];
                             for (let t of r) null != t.ssrc && null != t.quality && e.push({
                                 ssrc: t.ssrc,
                                 quality: t.quality
                             });
-                            null === (a = this._goLiveQualityManager) || void 0 === a || a.setUserID(t), null === (o = this._goLiveQualityManager) || void 0 === o || o.updateAudioAndVideoStreamInfo(n, e)
-                        } else s.createUser(t, n, [i]);
+                            null === (s = this._goLiveQualityManager) || void 0 === s || s.setUserID(t), null === (a = this._goLiveQualityManager) || void 0 === a || a.updateAudioAndVideoStreamInfo(n, e)
+                        }
                         null == r || r.forEach(e => {
                             100 === e.quality && this.emit(K.RTCConnectionEvent.VideoSourceQualityChanged, this.guildId, this.channelId, t, e.maxResolution, e.maxFrameRate, this.context)
                         })
@@ -59915,13 +59917,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 DEFAULT_WANTS_FULL: function() {
-                    return T
+                    return f
                 },
                 RTCMediaSinkWantsManagerEvent: function() {
                     return i
                 },
                 default: function() {
-                    return A
+                    return m
                 }
             }), n("47120"), n("653041");
             var i, r, s = n("47770"),
@@ -59932,9 +59934,10 @@
                 d = n("526167"),
                 _ = n("70956"),
                 c = n("709054"),
-                E = n("981631");
+                E = n("562319"),
+                I = n("981631");
 
-            function I(e, t, n) {
+            function T(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -59942,14 +59945,14 @@
                     writable: !0
                 }) : e[t] = n, e
             }
-            let T = {
+            let f = {
                     any: 100
                 },
-                f = 30 * _.default.Millis.SECOND,
-                S = 120 * _.default.Millis.SECOND,
-                h = -1 !== (0, d.getFirefoxVersion)();
+                S = 30 * _.default.Millis.SECOND,
+                h = 120 * _.default.Millis.SECOND,
+                A = -1 !== (0, d.getFirefoxVersion)();
             (r = i || (i = {})).UserSSRCUpdate = "user-ssrc-update", r.Update = "update";
-            class A extends s.default {
+            class m extends s.default {
                 getWantsLevel() {
                     let e = this.getVideoParticipantCount();
                     return this.ladder.getMaxSinkValue(e)
@@ -59959,7 +59962,8 @@
                 }
                 shouldReceiveFromUser(e) {
                     var t, n;
-                    return !((null === (t = this.connection) || void 0 === t ? void 0 : t.getLocalVideoDisabled(e)) || this.userVideoDisabled(e) && (null === (n = this.videoHealthManager) || void 0 === n ? void 0 : n.getCurrentVideoToggleState(e)) !== E.VideoToggleState.AUTO_PROBING)
+                    let i = !((null === (t = this.connection) || void 0 === t ? void 0 : t.getLocalVideoDisabled(e)) || this.userVideoDisabled(e) && (null === (n = this.videoHealthManager) || void 0 === n ? void 0 : n.getCurrentVideoToggleState(e)) !== I.VideoToggleState.AUTO_PROBING);
+                    return E.default.isIncomingVideoEnabled() && i
                 }
                 getAudioSSRCs() {
                     return this.audioSsrcs
@@ -60004,7 +60008,7 @@
                     return delete this.audioSsrcs[e], delete this.videoSsrcs[e], this.participants.delete(e), delete this.streamIds[e], this.update(Array.from(this.participants))
                 }
                 reset() {
-                    this.setConnection(null, !1), this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.latestWants = T
+                    this.setConnection(null, !1), this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.latestWants = f
                 }
                 setSelectedParticipant(e) {
                     if (e === this.selectedParticipantId) return this.latestWants;
@@ -60045,11 +60049,11 @@
                     return e
                 }
                 getOffscreenTimeoutMs() {
-                    return this.isStageChannel ? S : f
+                    return this.isStageChannel ? h : S
                 }
                 constructor(e, t, n, i = new o.MediaSinkWantsLadder) {
                     var r;
-                    super(), r = this, I(this, "userId", void 0), I(this, "isStageChannel", void 0), I(this, "supportsSeamless", void 0), I(this, "ladder", void 0), I(this, "connection", void 0), I(this, "audioSsrcs", void 0), I(this, "videoSsrcs", void 0), I(this, "remoteVideoSsrcs", void 0), I(this, "framesReceived", void 0), I(this, "streamIds", void 0), I(this, "offscreenUsers", void 0), I(this, "offscreenDisabledUsers", void 0), I(this, "latestWants", void 0), I(this, "participants", void 0), I(this, "selectedParticipantId", void 0), I(this, "delayedCall", void 0), I(this, "offscreenTimeout", void 0), I(this, "pipOpen", void 0), I(this, "videoHealthManager", void 0), I(this, "delayedUpdate", void 0), I(this, "addLru", void 0), I(this, "updateOffscreenUsers", void 0), I(this, "handleLocalVideoDisabled", void 0), I(this, "handleLocalMute", void 0), I(this, "update", void 0), this.userId = e, this.isStageChannel = t, this.supportsSeamless = n, this.ladder = i, this.connection = null, this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.offscreenUsers = {}, this.offscreenDisabledUsers = {}, this.latestWants = T, this.participants = new Set, this.selectedParticipantId = null, this.pipOpen = !1, this.videoHealthManager = null, this.delayedUpdate = () => {
+                    super(), r = this, T(this, "userId", void 0), T(this, "isStageChannel", void 0), T(this, "supportsSeamless", void 0), T(this, "ladder", void 0), T(this, "connection", void 0), T(this, "audioSsrcs", void 0), T(this, "videoSsrcs", void 0), T(this, "remoteVideoSsrcs", void 0), T(this, "framesReceived", void 0), T(this, "streamIds", void 0), T(this, "offscreenUsers", void 0), T(this, "offscreenDisabledUsers", void 0), T(this, "latestWants", void 0), T(this, "participants", void 0), T(this, "selectedParticipantId", void 0), T(this, "delayedCall", void 0), T(this, "offscreenTimeout", void 0), T(this, "pipOpen", void 0), T(this, "videoHealthManager", void 0), T(this, "delayedUpdate", void 0), T(this, "addLru", void 0), T(this, "updateOffscreenUsers", void 0), T(this, "handleLocalVideoDisabled", void 0), T(this, "handleLocalMute", void 0), T(this, "update", void 0), this.userId = e, this.isStageChannel = t, this.supportsSeamless = n, this.ladder = i, this.connection = null, this.audioSsrcs = {}, this.videoSsrcs = {}, this.remoteVideoSsrcs = {}, this.framesReceived = {}, this.streamIds = {}, this.offscreenUsers = {}, this.offscreenDisabledUsers = {}, this.latestWants = f, this.participants = new Set, this.selectedParticipantId = null, this.pipOpen = !1, this.videoHealthManager = null, this.delayedUpdate = () => {
                         this.delayedCall.delay()
                     }, this.addLru = (e, t, n) => {
                         if (n.push(e), n.length <= 3) return;
@@ -60102,8 +60106,10 @@
                             var i;
                             (null === (i = r.connection) || void 0 === i ? void 0 : i.getLocalMute(e)) && (n[t] = 0)
                         }
-                        return h ? r.latestWants : (null != r.connection && !(0, l.default)(r.latestWants, n) && (r.latestWants = n, r.emit("update", n)), n)
-                    }, this.delayedCall = new u.DelayedCall(100, this.update), this.offscreenTimeout = new u.Timeout
+                        return A ? r.latestWants : (null != r.connection && !(0, l.default)(r.latestWants, n) && (r.latestWants = n, r.emit("update", n)), n)
+                    }, this.delayedCall = new u.DelayedCall(100, this.update), this.offscreenTimeout = new u.Timeout, E.default.subscribe(() => {
+                        this.update()
+                    })
                 }
             }
         },
@@ -62076,6 +62082,67 @@
                 }
                 constructor(e, t) {
                     a(this, "userId", void 0), a(this, "channelId", void 0), a(this, "maxVoiceStateCount", 1), a(this, "totalParticipants", void 0), a(this, "speaking", s.SpeakingFlags.NONE), a(this, "maxListenerCount", 0), a(this, "totalListeners", void 0), a(this, "maxSpeakerCount", 0), a(this, "totalSpeakers", void 0), this.userId = e, this.setChannelId(t)
+                }
+            }
+        },
+        562319: function(e, t, n) {
+            "use strict";
+            n.r(t), n("47120");
+            var i = n("846519"),
+                r = n("570140"),
+                s = n("710845"),
+                a = n("671335"),
+                o = n("928518"),
+                l = n("451478"),
+                u = n("70956"),
+                d = n("981631");
+
+            function _(e, t, n) {
+                return t in e ? Object.defineProperty(e, t, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = n, e
+            }
+            let c = new class e {
+                isIncomingVideoEnabled() {
+                    return this.incomingVideoEnabled
+                }
+                subscribe(e) {
+                    this.videoEnabledObservers.add(e)
+                }
+                unsubscribe(e) {
+                    this.videoEnabledObservers.delete(e)
+                }
+                setIncomingVideoEnabled(e) {
+                    let t = this.incomingVideoEnabled !== e;
+                    this.incomingVideoEnabled = e, t && (this.logger.info("Window visibility incoming video changed, incomingVideoEnabled = ".concat(this.incomingVideoEnabled)), this.videoEnabledObservers.forEach(e => e(this.incomingVideoEnabled)))
+                }
+                anyDiscordWindowVisible() {
+                    return l.default.isVisible() || o.default.getWindowVisible(d.PopoutWindowKeys.CHANNEL_CALL_POPOUT)
+                }
+                constructor() {
+                    _(this, "hiddenWindowDisableVideoTimer", new i.Timeout), _(this, "incomingVideoEnabled", !0), _(this, "videoEnabledObservers", new Set), _(this, "logger", new s.default("WindowVisibilityVideoManager")), _(this, "HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS", 30 * u.default.Millis.SECOND), _(this, "handleWindowVisibilityChange", () => {
+                        a.default.getCurrentConfig({
+                            location: "WindowVisibilityVideoManager"
+                        }, {
+                            autoTrackExposure: !0
+                        }).stopVideoForHiddenWindow && (this.anyDiscordWindowVisible() ? (this.hiddenWindowDisableVideoTimer.stop(), this.setIncomingVideoEnabled(!0)) : this.hiddenWindowDisableVideoTimer.start(this.HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS, () => {
+                            this.setIncomingVideoEnabled(!1)
+                        }))
+                    }), r.default.subscribe("WINDOW_VISIBILITY_CHANGE", this.handleWindowVisibilityChange)
+                }
+            };
+            t.default = new class e {
+                isIncomingVideoEnabled() {
+                    return c.isIncomingVideoEnabled()
+                }
+                subscribe(e) {
+                    c.subscribe(e)
+                }
+                unsubscribe(e) {
+                    c.unsubscribe(e)
                 }
             }
         },
@@ -88439,8 +88506,8 @@
 
             function r() {
                 var e;
-                let t = parseInt((e = "295196", "295196"));
-                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295196")), t = 0), t
+                let t = parseInt((e = "295287", "295287"));
+                return Number.isNaN(t) && (i.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("295287")), t = 0), t
             }
         },
         163379: function(e, t, n) {
@@ -116304,8 +116371,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "295196",
-                    versionHash: "8764494144b09e1d4c2370fd8d8d0cd09d9195ae"
+                    buildNumber: "295287",
+                    versionHash: "9f7bef1283f77fd794edefa9ddc9bf558ed7d1ee"
                 }
             }
             n.r(t), n.d(t, {
@@ -137739,14 +137806,15 @@
                     return i
                 },
                 default: function() {
-                    return u
+                    return d
                 }
             }), n("653041"), n("47120");
             var i, r, s = n("392711"),
                 a = n.n(s),
-                o = n("47770");
+                o = n("47770"),
+                l = n("562319");
 
-            function l(e, t, n) {
+            function u(e, t, n) {
                 return t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: !0,
@@ -137754,7 +137822,7 @@
                     writable: !0
                 }) : e[t] = n, e
             }(r = i || (i = {})).RequestedSSRCsUpdate = "requested-ssrcs-update", r.RequestedStreamsUpdate = "requested-streams-update";
-            class u extends o.default {
+            class d extends o.default {
                 setUserID(e) {
                     this.userId = e
                 }
@@ -137772,20 +137840,25 @@
                 }
                 update() {
                     if (void 0 === this.userId || null === this.userId) return;
-                    let e = a().minBy(this.videoStreams, e => e.quality),
-                        t = a().maxBy(this.videoStreams, e => e.quality);
-                    if (void 0 === e || void 0 === t) return;
-                    let n = [],
-                        i = {
+                    let e = this.videoStreams.length > 1,
+                        t = a().minBy(this.videoStreams, e => e.quality),
+                        n = a().maxBy(this.videoStreams, e => e.quality);
+                    if (void 0 === t || void 0 === n) return;
+                    let i = [],
+                        r = {
                             any: 100
                         };
-                    for (let r of (this.downgraded ? (n.push(e.ssrc), this.supportsSeamless && !this.framesReceived.get(e.ssrc) && this.hasEverReceivedFrame() && n.push(t.ssrc)) : (n.push(t.ssrc), this.supportsSeamless && !this.framesReceived.get(t.ssrc) && this.hasEverReceivedFrame() && n.push(e.ssrc)), n)) r === e.ssrc ? i[r] = 60 : r === t.ssrc && (i[r] = 100);
+                    for (let s of (this.downgraded && e ? (i.push(t.ssrc), this.supportsSeamless && !this.framesReceived.get(t.ssrc) && this.hasEverReceivedFrame() && i.push(n.ssrc)) : (i.push(n.ssrc), this.supportsSeamless && !this.framesReceived.get(n.ssrc) && this.hasEverReceivedFrame() && i.push(t.ssrc)), i)) s === t.ssrc ? r[s] = 60 : s === n.ssrc && (r[s] = 100);
+                    if (!l.default.isIncomingVideoEnabled())
+                        for (let e in i = [], r) "any" !== e && (r[e] = 0);
                     if (this.hasEverReceivedFrame())
-                        for (let e of this.videoStreams) !n.includes(e.ssrc) && this.framesReceived.delete(e.ssrc);
-                    this.emit("requested-ssrcs-update", this.userId, this.audioSSRC, n), this.emit("requested-streams-update", i)
+                        for (let e of this.videoStreams) !i.includes(e.ssrc) && this.framesReceived.delete(e.ssrc);
+                    this.emit("requested-ssrcs-update", this.userId, this.audioSSRC, i), this.emit("requested-streams-update", r)
                 }
                 constructor(e) {
-                    super(), l(this, "supportsSeamless", void 0), l(this, "userId", void 0), l(this, "videoStreams", void 0), l(this, "audioSSRC", void 0), l(this, "downgraded", void 0), l(this, "framesReceived", void 0), this.supportsSeamless = e, this.videoStreams = [], this.audioSSRC = 0, this.downgraded = !1, this.framesReceived = new Map
+                    super(), u(this, "supportsSeamless", void 0), u(this, "userId", void 0), u(this, "videoStreams", void 0), u(this, "audioSSRC", void 0), u(this, "downgraded", void 0), u(this, "framesReceived", void 0), this.supportsSeamless = e, this.videoStreams = [], this.audioSSRC = 0, this.downgraded = !1, this.framesReceived = new Map, l.default.subscribe(() => {
+                        this.update()
+                    })
                 }
             }
         },
@@ -149347,22 +149420,19 @@
             "use strict";
             n.r(t), n.d(t, {
                 completeNewMemberAction: function() {
-                    return N
+                    return m
                 },
                 fetchGuildHomeSettings: function() {
-                    return S
+                    return f
                 },
                 fetchNewMemberActions: function() {
-                    return h
-                },
-                getBlockForChannelDeletion: function() {
-                    return p
+                    return S
                 },
                 selectHomeResourceChannel: function() {
-                    return A
+                    return h
                 },
                 selectNewMemberActionChannel: function() {
-                    return m
+                    return A
                 }
             }), n("47120"), n("724458");
             var i = n("544891"),
@@ -149377,16 +149447,15 @@
                 c = n("563534"),
                 E = n("734893"),
                 I = n("846121"),
-                T = n("931261"),
-                f = n("981631");
-            let S = async e => {
+                T = n("981631");
+            let f = async e => {
                 r.default.dispatch({
                     type: "GUILD_HOME_SETTINGS_FETCH_START",
                     guildId: e
                 });
                 try {
                     let t = await i.HTTP.get({
-                            url: f.Endpoints.GUILD_HOME_SETTINGS(e),
+                            url: T.Endpoints.GUILD_HOME_SETTINGS(e),
                             oldFormErrors: !0
                         }),
                         n = (0, E.settingsFromServer)(t.body);
@@ -149401,7 +149470,7 @@
                         guildId: e
                     })
                 }
-            }, h = async e => {
+            }, S = async e => {
                 if (!o.default.isFullServerPreview(e)) {
                     r.default.dispatch({
                         type: "GUILD_NEW_MEMBER_ACTIONS_FETCH_START",
@@ -149409,7 +149478,7 @@
                     });
                     try {
                         let t = await i.HTTP.get({
-                                url: f.Endpoints.GUILD_MEMBER_ACTIONS(e),
+                                url: T.Endpoints.GUILD_MEMBER_ACTIONS(e),
                                 oldFormErrors: !0
                             }),
                             n = (0, E.actionsFromServer)(t.body);
@@ -149425,7 +149494,7 @@
                         })
                     }
                 }
-            }, A = function(e, t) {
+            }, h = function(e, t) {
                 let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
                 if (r.default.dispatch({
                         type: "SELECT_HOME_RESOURCE_CHANNEL",
@@ -149434,7 +149503,7 @@
                     }), null == t) return;
                 let i = u.default.getChannel(t),
                     E = c.default.getResourceForChannel(e, t);
-                null != e && !o.default.isFullServerPreview(e) && null != i && null != E && d.default.track(f.AnalyticEvents.SERVER_GUIDE_CHANNEL_SELECTED, {
+                null != e && !o.default.isFullServerPreview(e) && null != i && null != E && d.default.track(T.AnalyticEvents.SERVER_GUIDE_CHANNEL_SELECTED, {
                     guild_id: e,
                     channel_id: i.id,
                     server_guide_channel_type: "resource",
@@ -149445,7 +149514,7 @@
                     flash: !1,
                     jumpType: a.JumpTypes.INSTANT
                 })
-            }, m = (e, t) => {
+            }, A = (e, t) => {
                 r.default.dispatch({
                     type: "SELECT_NEW_MEMBER_ACTION_CHANNEL",
                     guildId: e,
@@ -149453,13 +149522,13 @@
                 });
                 let n = u.default.getChannel(t),
                     i = c.default.getActionForChannel(e, t);
-                null != e && !o.default.isFullServerPreview(e) && null != n && null != i && d.default.track(f.AnalyticEvents.SERVER_GUIDE_CHANNEL_SELECTED, {
+                null != e && !o.default.isFullServerPreview(e) && null != n && null != i && d.default.track(T.AnalyticEvents.SERVER_GUIDE_CHANNEL_SELECTED, {
                     guild_id: e,
                     channel_id: n.id,
                     server_guide_channel_type: "member action",
                     channel_action_type: i.actionType
                 }), (0, l.transitionToChannel)(t)
-            }, N = (e, t) => {
+            }, m = (e, t) => {
                 if (r.default.dispatch({
                         type: "COMPLETE_NEW_MEMBER_ACTION",
                         guildId: e,
@@ -149471,7 +149540,7 @@
                     var a, l;
                     let t = _.default.keys(null !== (a = I.default.getCompletedActions(e)) && void 0 !== a ? a : {}),
                         i = null !== (l = c.default.getNewMemberActions(e)) && void 0 !== l ? l : [];
-                    d.default.track(f.AnalyticEvents.SERVER_GUIDE_ACTION_COMPLETED, {
+                    d.default.track(T.AnalyticEvents.SERVER_GUIDE_ACTION_COMPLETED, {
                         guild_id: n.guild_id,
                         channel_id: n.id,
                         channel_action_type: s.actionType,
@@ -149479,13 +149548,8 @@
                     })
                 }
                 i.HTTP.post({
-                    url: f.Endpoints.GUILD_MEMBER_ACTION_UPDATE(e, t)
+                    url: T.Endpoints.GUILD_MEMBER_ACTION_UPDATE(e, t)
                 })
-            };
-            async function p(e, t) {
-                if (null == e || !(0, T.canSeeOnboardingHome)(e)) return !1;
-                let n = c.default.getSettings(e);
-                return n === c.NO_SETTINGS && (await S(e), n = c.default.getSettings(e)), n !== c.NO_SETTINGS && null != n && (null != n.newMemberActions && null != n.newMemberActions.find(e => e.channelId === t) ? "todo" : null != n.resourceChannels && null != n.resourceChannels.find(e => e.channelId === t) && "resource")
             }
         },
         563534: function(e, t, n) {
@@ -149629,82 +149693,85 @@
         734893: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                ChannelEditBlockTypes: function() {
+                    return a
+                },
                 NEW_MEMBER_ACTION_MAX: function() {
-                    return E
-                },
-                NEW_MEMBER_ACTION_TITLE_MAX_LENGTH: function() {
-                    return c
-                },
-                NEW_MEMBER_ACTION_TITLE_MIN_LENGTH: function() {
-                    return _
-                },
-                NewMemberActionTypes: function() {
-                    return r
-                },
-                RESOURCE_CHANNEL_DESCRIPTION_MAX_LENGTH: function() {
-                    return f
-                },
-                RESOURCE_CHANNEL_MAX: function() {
-                    return S
-                },
-                RESOURCE_CHANNEL_TITLE_MAX_LENGTH: function() {
                     return T
                 },
-                RESOURCE_CHANNEL_TITLE_MIN_LENGTH: function() {
+                NEW_MEMBER_ACTION_TITLE_MAX_LENGTH: function() {
                     return I
                 },
-                WELCOME_MESSAGE_MAX_LENGTH: function() {
-                    return d
+                NEW_MEMBER_ACTION_TITLE_MIN_LENGTH: function() {
+                    return E
                 },
-                WELCOME_MESSAGE_MIN_LENGTH: function() {
-                    return u
+                NewMemberActionTypes: function() {
+                    return s
                 },
-                actionsFromServer: function() {
-                    return p
-                },
-                isChannelValidForNewMemberAction: function() {
-                    return L
-                },
-                isChannelValidForResourceChannel: function() {
-                    return g
-                },
-                isSettingsEmpty: function() {
-                    return C
-                },
-                isSettingsValid: function() {
-                    return R
-                },
-                isWelcomeMessageEmpty: function() {
-                    return O
-                },
-                newMemberActionFromServer: function() {
+                RESOURCE_CHANNEL_DESCRIPTION_MAX_LENGTH: function() {
                     return h
                 },
-                resourceChannelFromServer: function() {
+                RESOURCE_CHANNEL_MAX: function() {
                     return A
                 },
-                settingsFromServer: function() {
+                RESOURCE_CHANNEL_TITLE_MAX_LENGTH: function() {
+                    return S
+                },
+                RESOURCE_CHANNEL_TITLE_MIN_LENGTH: function() {
+                    return f
+                },
+                WELCOME_MESSAGE_MAX_LENGTH: function() {
+                    return c
+                },
+                WELCOME_MESSAGE_MIN_LENGTH: function() {
+                    return _
+                },
+                actionsFromServer: function() {
+                    return C
+                },
+                isChannelValidForNewMemberAction: function() {
+                    return D
+                },
+                isChannelValidForResourceChannel: function() {
+                    return v
+                },
+                isSettingsEmpty: function() {
+                    return g
+                },
+                isSettingsValid: function() {
+                    return L
+                },
+                isWelcomeMessageEmpty: function() {
+                    return R
+                },
+                newMemberActionFromServer: function() {
                     return m
                 },
-                settingsToServer: function() {
+                resourceChannelFromServer: function() {
                     return N
+                },
+                settingsFromServer: function() {
+                    return p
+                },
+                settingsToServer: function() {
+                    return O
                 }
             });
-            var i, r, s = n("592125"),
-                a = n("823379"),
-                o = n("700785"),
-                l = n("981631");
-            let u = 7,
-                d = 300,
-                _ = 7,
-                c = 60,
-                E = 5,
-                I = 1,
-                T = 30,
-                f = 200,
-                S = 7;
+            var i, r, s, a, o = n("592125"),
+                l = n("823379"),
+                u = n("700785"),
+                d = n("981631");
+            let _ = 7,
+                c = 300,
+                E = 7,
+                I = 60,
+                T = 5,
+                f = 1,
+                S = 30,
+                h = 200,
+                A = 7;
 
-            function h(e) {
+            function m(e) {
                 var t;
                 return {
                     channelId: e.channel_id,
@@ -149720,7 +149787,7 @@
                 }
             }
 
-            function A(e) {
+            function N(e) {
                 var t, n;
                 return {
                     channelId: e.channel_id,
@@ -149735,37 +149802,37 @@
                 }
             }
 
-            function m(e) {
+            function p(e) {
                 if (null == e) return null;
                 let {
                     welcome_message: t,
                     new_member_actions: n,
                     resource_channels: i,
                     enabled: r
-                } = e, o = {
+                } = e, s = {
                     authorIds: t.author_ids,
                     message: t.message
-                }, l = n.filter(e => (0, a.isNotNullish)(s.default.getChannel(e.channel_id))).map(h);
+                }, a = n.filter(e => (0, l.isNotNullish)(o.default.getChannel(e.channel_id))).map(m);
                 return {
-                    welcomeMessage: o,
-                    newMemberActions: l,
-                    resourceChannels: i.filter(e => (0, a.isNotNullish)(s.default.getChannel(e.channel_id))).map(A),
+                    welcomeMessage: s,
+                    newMemberActions: a,
+                    resourceChannels: i.filter(e => (0, l.isNotNullish)(o.default.getChannel(e.channel_id))).map(N),
                     enabled: r
                 }
             }
 
-            function N(e, t) {
+            function O(e, t) {
                 var n, i;
                 if (null == t) return null;
                 let {
                     welcomeMessage: r,
-                    newMemberActions: o,
-                    resourceChannels: l,
+                    newMemberActions: s,
+                    resourceChannels: a,
                     enabled: u
                 } = t, d = {
                     author_ids: null !== (n = null == r ? void 0 : r.authorIds) && void 0 !== n ? n : [],
                     message: null !== (i = null == r ? void 0 : r.message) && void 0 !== i ? i : ""
-                }, _ = (null != o ? o : []).filter(e => (0, a.isNotNullish)(s.default.getChannel(e.channelId))).map(e => {
+                }, _ = (null != s ? s : []).filter(e => (0, l.isNotNullish)(o.default.getChannel(e.channelId))).map(e => {
                     var t, n, i, r, s, a, o;
                     return {
                         channel_id: e.channelId,
@@ -149784,7 +149851,7 @@
                     guild_id: e,
                     welcome_message: d,
                     new_member_actions: _,
-                    resource_channels: (null != l ? l : []).filter(e => (0, a.isNotNullish)(s.default.getChannel(e.channelId))).map(e => {
+                    resource_channels: (null != a ? a : []).filter(e => (0, l.isNotNullish)(o.default.getChannel(e.channelId))).map(e => {
                         var t, n, i, r, s, a, o;
                         return {
                             channel_id: e.channelId,
@@ -149800,42 +149867,42 @@
                     }),
                     enabled: u
                 }
-            }(i = r || (r = {}))[i.VIEW = 0] = "VIEW", i[i.CHAT = 1] = "CHAT";
-            let p = e => {
+            }(i = s || (s = {}))[i.VIEW = 0] = "VIEW", i[i.CHAT = 1] = "CHAT";
+            let C = e => {
                 if (null == e) return null;
                 let t = {};
                 for (let n in e.channel_actions) t[n] = e.channel_actions[n].completed;
                 return t
             };
 
-            function O(e) {
+            function R(e) {
                 return null == e || (null == e.message || !(e.message.length > 0)) && (null == e.authorIds || !(e.authorIds.length > 0)) && !0
             }
 
-            function C(e) {
-                return null == e || !!O(e.welcomeMessage) && (null == e.newMemberActions || !(e.newMemberActions.length > 0)) && (null == e.resourceChannels || !(e.resourceChannels.length > 0)) && !0
-            }
-
-            function R(e) {
-                var t, n;
-                return null != e && (!!C(e) || (null === (t = e.welcomeMessage) || void 0 === t ? void 0 : t.message) != null && !(e.welcomeMessage.message.length < u) && (null === (n = e.welcomeMessage) || void 0 === n ? void 0 : n.authorIds) != null && 0 !== e.welcomeMessage.authorIds.length && null != e.newMemberActions && !(e.newMemberActions.length < 3) && !0)
-            }
-
             function g(e) {
-                return e.type === l.ChannelTypes.GUILD_TEXT && !o.canEveryoneRole(l.Permissions.SEND_MESSAGES, e) && o.canEveryoneRole(l.Permissions.VIEW_CHANNEL, e)
+                return null == e || !!R(e.welcomeMessage) && (null == e.newMemberActions || !(e.newMemberActions.length > 0)) && (null == e.resourceChannels || !(e.resourceChannels.length > 0)) && !0
             }
 
             function L(e) {
+                var t, n;
+                return null != e && (!!g(e) || (null === (t = e.welcomeMessage) || void 0 === t ? void 0 : t.message) != null && !(e.welcomeMessage.message.length < _) && (null === (n = e.welcomeMessage) || void 0 === n ? void 0 : n.authorIds) != null && 0 !== e.welcomeMessage.authorIds.length && null != e.newMemberActions && !(e.newMemberActions.length < 3) && !0)
+            }
+
+            function v(e) {
+                return e.type === d.ChannelTypes.GUILD_TEXT && !u.canEveryoneRole(d.Permissions.SEND_MESSAGES, e) && u.canEveryoneRole(d.Permissions.VIEW_CHANNEL, e)
+            }
+
+            function D(e) {
                 switch (e.type) {
-                    case l.ChannelTypes.GUILD_TEXT:
-                    case l.ChannelTypes.GUILD_ANNOUNCEMENT:
-                    case l.ChannelTypes.GUILD_FORUM:
-                    case l.ChannelTypes.GUILD_MEDIA:
-                        return o.canEveryoneRole(l.Permissions.VIEW_CHANNEL, e);
+                    case d.ChannelTypes.GUILD_TEXT:
+                    case d.ChannelTypes.GUILD_ANNOUNCEMENT:
+                    case d.ChannelTypes.GUILD_FORUM:
+                    case d.ChannelTypes.GUILD_MEDIA:
+                        return u.canEveryoneRole(d.Permissions.VIEW_CHANNEL, e);
                     default:
                         return !1
                 }
-            }
+            }(r = a || (a = {}))[r.DEFAULT = 0] = "DEFAULT", r[r.TODO = 1] = "TODO", r[r.RESOURCE = 2] = "RESOURCE"
         },
         846121: function(e, t, n) {
             "use strict";
@@ -160718,48 +160785,54 @@
                     history: G,
                     onSelectChild: w,
                     onModalClose: k,
-                    multiSelect: B,
-                    reportId: V,
-                    textInput: x
-                } = e, F = U(t, "checkbox"), H = U(t, "text_line_resource"), Y = b(t, "external_link"), j = b(t, "free_text"), W = b(t, "dropdown"), [K, z] = r.useState(!1), [Z, X] = r.useState(""), [Q, q] = r.useState(() => ({})), [J, $] = r.useState(() => ({})), [ee, et] = r.useState((0, o.areRequiredElementsUnfilled)(j, W, F, x, B)), en = function(e, t) {
+                    onSubmit: B,
+                    multiSelect: V,
+                    reportId: x,
+                    textInput: F
+                } = e, H = U(t, "checkbox"), Y = U(t, "text_line_resource"), j = b(t, "external_link"), W = b(t, "free_text"), K = b(t, "dropdown"), [z, Z] = r.useState(!1), [X, Q] = r.useState(!1), [q, J] = r.useState(""), [$, ee] = r.useState(() => ({})), [et, en] = r.useState(() => ({})), [ei, er] = r.useState((0, o.areRequiredElementsUnfilled)(W, K, H, F, V)), es = function(e, t) {
                     let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
                         i = {
-                            ...J
+                            ...et
                         };
                     i[e] = {
                         value: t,
                         isValid: n
-                    }, $(i), et((0, o.areRequiredElementsUnfilled)(j, W, F, i, Q))
-                }, ei = r.useMemo(() => e => {
+                    }, en(i), er((0, o.areRequiredElementsUnfilled)(W, K, H, i, $))
+                }, ea = r.useMemo(() => e => {
                     w({
                         nodeRef: t.id,
                         destination: e,
-                        textInput: null != j || null != W ? J : void 0,
-                        multiSelect: null != F ? {
-                            name: F.name,
-                            state: Q
+                        textInput: null != W || null != K ? et : void 0,
+                        multiSelect: null != H ? {
+                            name: H.name,
+                            state: $
                         } : void 0
                     })
-                }, [t, w, F, Q, J, j, W]);
+                }, [t, w, H, $, et, W, K]);
                 r.useEffect(() => {
-                    null != B && q(B), null != x && $(x)
-                }, [B, x]);
-                let er = e => {
-                        if (e === M.AbortCodes.INVALID_FORM_BODY) X(y.default.Messages.IN_APP_REPORTING_SUBMIT_VALIDATION_ERROR);
-                        else X(y.default.Messages.MOBILE_REPORTS_SUBMIT_FAILED)
+                    null != V && ee(V), null != F && en(F)
+                }, [V, F]);
+                let eo = e => {
+                        if (e === M.AbortCodes.INVALID_FORM_BODY) J(y.default.Messages.IN_APP_REPORTING_SUBMIT_VALIDATION_ERROR);
+                        else J(y.default.Messages.MOBILE_REPORTS_SUBMIT_FAILED)
                     },
-                    es = () => e.onSubmit({
+                    el = () => B({
                         nodeRef: t.id,
                         destination: ["", e.successNodeId]
                     }).then(() => {
-                        X(""), ei(["", e.successNodeId])
+                        J(""), ea(["", e.successNodeId])
                     }).catch(e => {
                         var t;
-                        er(null === (t = e.body) || void 0 === t ? void 0 : t.code)
+                        eo(null === (t = e.body) || void 0 === t ? void 0 : t.code)
                     }).finally(() => {
-                        z(!1)
+                        Z(!1)
                     });
-                return (0, i.jsxs)("div", {
+                return r.useEffect(() => {
+                    t.is_auto_submit && !X && (Q(!0), B({
+                        nodeRef: t.id,
+                        destination: ["", t.id]
+                    }))
+                }, [t.is_auto_submit, X, B, t.id]), (0, i.jsxs)("div", {
                     className: P.container,
                     children: [(0, i.jsxs)(s.ModalHeader, {
                         separator: !1,
@@ -160774,8 +160847,8 @@
                         })]
                     }), (0, i.jsxs)(s.ModalContent, {
                         className: P.body,
-                        children: [null != H ? (0, i.jsx)(L.default, {
-                            element: H
+                        children: [null != Y ? (0, i.jsx)(L.default, {
+                            element: Y
                         }) : null, null != U(t, "breadcrumbs") && (0, i.jsx)(d.default, {
                             history: G
                         }), null != U(t, "message_preview") && ("message" === n.name || "first_dm" === n.name) && (0, i.jsx)(O.default, {
@@ -160798,14 +160871,14 @@
                             children: y.default.Messages.MOBILE_REPORTS_BLOCK_ELEMENT_HEADER
                         }), null != U(t, "block_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name) && (0, i.jsx)(u.default, {
                             userId: "user" === n.name ? n.record.id : n.record.author.id,
-                            reportId: V,
+                            reportId: x,
                             reportName: n.name
                         }), null != U(t, "delete_message") && "message" === n.name && (0, i.jsx)(c.default, {
                             message: n.record,
-                            reportId: V
+                            reportId: x
                         }), null != U(t, "leave_guild") && "guild" === n.name && (0, i.jsx)(p.default, {
                             guildId: n.record.id,
-                            reportId: V
+                            reportId: x
                         }), null != U(t, "channel_preview") && "stage_channel" === n.name && (0, i.jsx)(R.default, {
                             stageInstance: n.record
                         }), null != U(t, "guild_scheduled_event_preview") && "guild_scheduled_event" === n.name && (0, i.jsx)(A.default, {
@@ -160814,38 +160887,38 @@
                             entry: n.record
                         }), null != U(t, "guild_discovery_preview") && "guild_discovery" === n.name && (0, i.jsx)(h.default, {
                             entry: n.record
-                        }), null != F && (0, i.jsx)(C.default, {
-                            element: F,
+                        }), null != H && (0, i.jsx)(C.default, {
+                            element: H,
                             onChange: (e, t) => {
                                 let n = {
-                                    ...Q
+                                    ...$
                                 };
-                                e in Q ? delete n[e] : n[e] = t, q(n), et((0, o.areRequiredElementsUnfilled)(j, W, F, J, n))
+                                e in $ ? delete n[e] : n[e] = t, ee(n), er((0, o.areRequiredElementsUnfilled)(W, K, H, et, n))
                             },
-                            state: Q
-                        }), ("user_urf" === n.name || "message_urf" === n.name) && null != W && W.length > 0 && (0, i.jsx)(E.default, {
+                            state: $
+                        }), ("user_urf" === n.name || "message_urf" === n.name) && null != K && K.length > 0 && (0, i.jsx)(E.default, {
+                            elements: K,
+                            onChange: es,
+                            state: et
+                        }), ("user_urf" === n.name || "message_urf" === n.name) && null != W && W.length > 0 && (0, i.jsx)(f.default, {
                             elements: W,
-                            onChange: en,
-                            state: J
-                        }), ("user_urf" === n.name || "message_urf" === n.name) && null != j && j.length > 0 && (0, i.jsx)(f.default, {
-                            elements: j,
-                            onChange: en,
-                            state: J
+                            onChange: es,
+                            state: et
                         }), (0, i.jsx)(_.default, {
                             node: t,
-                            onSelectChild: ei
-                        }), null != Y && Y.length > 0 ? (0, i.jsx)(T.default, {
-                            elements: Y
+                            onSelectChild: ea
+                        }), null != j && j.length > 0 ? (0, i.jsx)(T.default, {
+                            elements: j
                         }) : null, (0, i.jsx)(I.default, {
-                            errorMessage: Z,
+                            errorMessage: q,
                             onClose: () => {
-                                X("")
+                                J("")
                             }
                         })]
                     }), (0, i.jsx)(l.default, {
                         button: t.button,
-                        submitting: K,
-                        disableNext: ee,
+                        submitting: z,
+                        disableNext: ei,
                         onClick: e => {
                             switch (e.type) {
                                 case "done":
@@ -160853,10 +160926,10 @@
                                     k();
                                     break;
                                 case "next":
-                                    ei(["", e.target]);
+                                    ea(["", e.target]);
                                     break;
                                 case "submit":
-                                    z(!0), es()
+                                    Z(!0), el()
                             }
                         },
                         onBackClicked: e.onNavigateBack,
@@ -166924,6 +166997,26 @@
                     label: "Permitted Devices Only",
                     config: {
                         hdrCaptureMode: "permittedDevicesOnly"
+                    }
+                }]
+            })
+        },
+        671335: function(e, t, n) {
+            "use strict";
+            n.r(t);
+            var i = n("818083");
+            t.default = (0, i.createExperiment)({
+                kind: "user",
+                id: "2024-05_hiding_window_disables_video",
+                label: "Hiding Window Disables Incoming Video",
+                defaultConfig: {
+                    stopVideoForHiddenWindow: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "test",
+                    config: {
+                        stopVideoForHiddenWindow: !0
                     }
                 }]
             })
@@ -173280,8 +173373,8 @@
                             body: {
                                 metrics: e,
                                 client_info: {
-                                    built_at: "1716319276460",
-                                    build_number: "295196"
+                                    built_at: "1716327407161",
+                                    build_number: "295287"
                                 }
                             },
                             retries: 1
@@ -250223,7 +250316,7 @@
                     } = e;
                     z = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
                     let n = new URLSearchParams;
-                    n.append("build_id", "8764494144b09e1d4c2370fd8d8d0cd09d9195ae"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+                    n.append("build_id", "9f7bef1283f77fd794edefa9ddc9bf558ed7d1ee"), n.append("rpc", String(t)), n.append("rpc_auth_token", z), i = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -279322,7 +279415,7 @@
                         var i;
                         let _ = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "295196"
+                                build_number: "295287"
                             },
                             c = l.default.getCurrentUser();
                         null != c && (_.user_id = c.id, _.user_name = c.tag, null != c.email && (_.email = c.email));
@@ -286680,7 +286773,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let s = parseInt((n = "295196", "295196"), 10);
+                let s = parseInt((n = "295287", "295287"), 10);
                 !isNaN(s) && (i.client_build_number = s);
                 let a = null == g ? void 0 : null === (e = (t = g.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(a) && (i.native_build_number = a), i.client_event_source = function() {
@@ -314370,4 +314463,4 @@
         }
     }
 ]);
-//# sourceMappingURL=71586.86978b760841c9579ca3.js.map
+//# sourceMappingURL=71586.1f3d8b90f12db76f27f0.js.map
