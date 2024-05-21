@@ -172,9 +172,9 @@
     <p><strong>A:</strong> If you're seeing an "Oh no! It looks like you have Nitro already" error, that means that the Discord account you're trying to redeem this promotion on currently has a Nitro membership so it is ineligible for this Nitro promotion.</p>
     <p>Please make sure you're logged into the account that you want to redeem this promotion on. Or you can give the promotion link to a friend who hasn't had Nitro before.</p>
     <p id="docs-internal-guid-ad7c3722-7fff-1ab5-bb9b-dcedaef74d0b"><strong>Q: I see a "Sorry, looks like you’ve already had a Nitro sub!" error when I try to redeem my Nitro promo.</strong></p>
-    <p><strong>A: </strong>If you're seeing an “Sorry, looks like you’ve already had a Nitro sub” error, that means that you've previously subscribed to Nitro on your Discord account and you won't be able to redeem this [X] month perk.</p>
+    <p><strong>A: </strong>If you're seeing an “Sorry, looks like you’ve already had a Nitro sub” error, that means that you've previously subscribed to Nitro on your Discord account and you won't be able to redeem this 1 month perk.</p>
     <p>If you have never subscribed to Nitro, please submit a ticket through our support system:<a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"> https://dis.gd/contact</a> and our support team will be able to investigate further.</p>
-    <p><span id="docs-internal-guid-1a341f87-7fff-e96e-a02f-455212ded691">Be sure to include your full Discord ID and email address tied to your Discord account</span>.</p>
+    <p><span id="docs-internal-guid-1a341f87-7fff-e96e-a02f-455212ded691">Be sure to include your full Discord username and email address tied to your Discord account</span>.</p>
     <p id="docs-internal-guid-9f6ac880-7fff-26ba-b755-5720ca90077f"><strong>Q: I see a "This gift has already been claimed" error when I try to claim my Nitro promo.</strong></p>
     <p><strong>A:</strong> If you are seeing a "This gift has been redeemed already" error, that means that the Nitro promo link has already been used and cannot be used again. You may need to double check if you've redeemed this promo link on another Discord account.</p>
     <p>In particular, if you redeem this promo link using your mobile device, double check the browser on your mobile device and see which Discord account you are currently logged into.</p>
