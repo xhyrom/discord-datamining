@@ -6385,7 +6385,6 @@
 .tooltipGames__2a826 {
     display: flex;
     flex-direction: column;
-    max-height: 200px;
     gap: 8px
 }
 
@@ -43822,6 +43821,25 @@ img.thumbnail__18ece {
 
 .streamingPopoutHero__03808 {
     gap: 0
+}
+
+.streamCTA__558dc {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-backdrop);
+    opacity: 0;
+    transition: opacity.1s linear
+}
+
+.streamCTA__558dc:hover {
+    opacity: 1
 }
 
 .maybeClickable__0a29f[role=button] {
@@ -141882,4 +141900,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.f42e971a8f5dcdde4628.css.map*/
+/*# sourceMappingURL=99387.34b1db7202cde444a7ae.css.map*/
