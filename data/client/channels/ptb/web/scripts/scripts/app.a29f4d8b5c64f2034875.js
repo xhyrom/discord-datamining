@@ -7173,19 +7173,12 @@
         93118: function(e) {
             "use strict";
             e.exports = {
-                card: "card__56b24",
                 container: "container_ec1fbc",
                 content: "content__7833e",
                 discoveryContainer: "discoveryContainer__34773",
                 dragRegion: "dragRegion__53c6d",
-                gradient: "gradient__1ca13",
                 toolbar: "toolbar__4e903",
-                topPicks: "topPicks__3115d",
-                topPicksContent: "topPicksContent__7c8f8",
-                topPicksHeader: "topPicksHeader_d3b9c1",
-                topPicksList: "topPicksList_d0f37b",
-                topPicksSpacer: "topPicksSpacer__6fc8d",
-                topPicksTitle: "topPicksTitle__399da"
+                topPicksContent: "topPicksContent__7c8f8"
             }
         },
         449729: function(e) {
@@ -7566,6 +7559,22 @@
                 upsellDetails: "upsellDetails_fe7ec8",
                 upsellSubtitle: "upsellSubtitle__06626",
                 upsellTitle: "upsellTitle__25132"
+            }
+        },
+        886722: function(e) {
+            "use strict";
+            e.exports = {
+                card: "card_e4e263",
+                gradient: "gradient__3bfb3",
+                masonryList: "masonryList__7a8d2",
+                masonryListContainer: "masonryListContainer__755e5",
+                masonryListGradient: "masonryListGradient__25591",
+                previewList: "previewList__9dd4d",
+                previewListContainer: "previewListContainer_cf8f67",
+                previewListSection: "previewListSection_d7bd92",
+                sectionHeader: "sectionHeader_d05f3e",
+                sectionHeaderSpacer: "sectionHeaderSpacer__8428f",
+                sectionHeaderTitle: "sectionHeaderTitle__06f77"
             }
         },
         353964: function(e) {
