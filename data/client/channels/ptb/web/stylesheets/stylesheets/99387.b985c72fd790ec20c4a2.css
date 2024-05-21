@@ -51797,7 +51797,8 @@ div:has(>div>.modal__06f49) {
     width: 256px
 }
 
-.popoutCaret_ca2beb {
+.popoutCaret_ca2beb,
+.popoutCaretLeft_bfe18a {
     position: absolute;
     transform: rotate(45deg);
     height: 0;
@@ -51807,6 +51808,11 @@ div:has(>div>.modal__06f49) {
     left: 18px;
     border-color: var(--bg-surface-overlay);
     z-index: 1
+}
+
+.popoutCaretLeft_bfe18a {
+    left: -6px;
+    top: 18px
 }
 
 .footer_eacf42 {
@@ -51871,6 +51877,13 @@ div:has(>div>.modal__06f49) {
     height: 24px;
     border-radius: 24px;
     background-color: var(--bg-backdrop)
+}
+
+.coachmarkTextContainer__422cd {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px
 }
 
 .progressContainer_c67fbb {
@@ -141918,4 +141931,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.0eb55b3ad4876834ee67.css.map*/
+/*# sourceMappingURL=99387.b985c72fd790ec20c4a2.css.map*/

@@ -15869,6 +15869,7 @@
             e.exports = {
                 backgroundImage: "backgroundImage__6b7c7",
                 close: "close__8441b",
+                coachmarkTextContainer: "coachmarkTextContainer__422cd",
                 container: "container_ab66cd",
                 footer: "footer_eacf42",
                 genshinBackgroundImage: "genshinBackgroundImage__67141 backgroundImage__6b7c7",
@@ -15876,6 +15877,7 @@
                 gradientHidden: "gradientHidden__0cdc2",
                 popoutAnchor: "popoutAnchor__4e269",
                 popoutCaret: "popoutCaret_ca2beb",
+                popoutCaretLeft: "popoutCaretLeft_bfe18a",
                 popoutContainer: "popoutContainer_dd3678",
                 popoutContent: "popoutContent_a7c733",
                 valorantBackgroundImage: "valorantBackgroundImage_eb06a5 backgroundImage__6b7c7"
