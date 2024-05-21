@@ -40497,7 +40497,7 @@ div.profileThemedContainer__6e645 {
     margin-top: 16px;
     font-weight: 600;
     color: var(--interactive-active);
-    font-size: 1.5rem
+    font-size: 24px
 }
 
 .tierPeriod_f6d7e1 {
@@ -40779,8 +40779,8 @@ div.profileThemedContainer__6e645 {
     display: flex;
     justify-content: center;
     font-family: var(--font-display);
-    font-size: .75rem;
-    line-height: 1rem;
+    font-size: 12px;
+    line-height: 16px;
     text-transform: uppercase
 }
 
@@ -75502,7 +75502,7 @@ html .invoiceCancelRow_aa7946 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 16px;
     gap: 4px
 }
 
@@ -141900,4 +141900,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.c2c2bb2307c02c906933.css.map*/
+/*# sourceMappingURL=99387.916db0c4f1f41c93b72f.css.map*/
