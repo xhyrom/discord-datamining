@@ -2623,7 +2623,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-a2547f5bf5dfefca4bf732b15e86709c48c3a4b2",
+                    release: "discord_web-d170542c243c0bf80fec66f73030e2e339007f59",
                     beforeSend: _ => {
                         var E, e;
                         return !(null != (E = _).exception && null != E.exception.values && E.exception.values.every(_ => null == _.stacktrace || null != _.stacktrace.frames && 1 === _.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || a.some(_ => window.navigator.appVersion.toLowerCase().indexOf(_) >= 0)) && !R() && !("Aborted" === (e = _).message || "cancel captcha" === e.message) && t() ? _ : null
@@ -2641,7 +2641,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "ResizeObserver loop completed with undelivered notifications.", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), I.setTag("buildNumber", (_ = "295166", "295166")), I.setTag("builtAt", String("1716317806292"));
+                }), I.setTag("buildNumber", (_ = "295191", "295191")), I.setTag("builtAt", String("1716318906835"));
                 let E = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != E && "object" == typeof E)
                     for (let _ in E) I.setTag(_, E[_]);
@@ -10980,7 +10980,7 @@
                     VIEW_GUILD_ANALYTICS: _a.getFlag(19),
                     VIEW_CREATOR_MONETIZATION_ANALYTICS: _a.getFlag(41),
                     MODERATE_MEMBERS: _a.getFlag(40),
-                    USE_EMBEDDED_ACTIVITIES: _a.getFlag(39),
+                    USE_EXTERNAL_APPS: _a.getFlag(39),
                     SEND_MESSAGES: _a.getFlag(11),
                     SEND_TTS_MESSAGES: _a.getFlag(12),
                     MANAGE_MESSAGES: _a.getFlag(13),
@@ -14206,4 +14206,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84471.27861578430695fc79fe.js.map
+//# sourceMappingURL=84471.898d24d61e1a02803d99.js.map

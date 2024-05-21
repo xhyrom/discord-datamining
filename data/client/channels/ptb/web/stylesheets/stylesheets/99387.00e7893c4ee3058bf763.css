@@ -12301,7 +12301,7 @@ span.clanTag_f4aadc {
 .image__75373 {
     width: 64px;
     height: 64px;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-xs);
     background-color: var(--background-primary);
     flex-shrink: 0;
     display: flex;
@@ -12333,14 +12333,14 @@ span.clanTag_f4aadc {
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
-    gap: 2px
+    gap: 4px
 }
 
 .pill__2f6a4 {
     display: flex;
     gap: 2px;
     padding: 4px 8px;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-modifier-accent-2);
     border-radius: var(--radius-md);
     align-self: baseline;
     align-items: center
@@ -12388,7 +12388,7 @@ span.clanTag_f4aadc {
 .streamPreview__38008 {
     -o-object-fit: cover;
     object-fit: cover;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-xs);
     height: 64px;
     width: 64px
 }
@@ -12427,7 +12427,7 @@ span.clanTag_f4aadc {
 .joinButtonWhatWrapper_fa34bc {
     position: absolute;
     right: 16px;
-    background: linear-gradient(90deg, transparent, var(--background-secondary)30px);
+    background: linear-gradient(90deg, transparent, var(--background-secondary)34px);
     padding-left: 40px;
     height: 70px;
     display: flex;
@@ -12449,7 +12449,7 @@ span.clanTag_f4aadc {
 .imageIcon_fdf820 {
     width: 24px;
     height: 24px;
-    color: var(--icon-secondary)
+    color: var(--interactive-active)
 }
 
 @keyframes fadeIn__485ae {
@@ -12465,7 +12465,7 @@ span.clanTag_f4aadc {
 .container_a88e31 {
     background-color: var(--background-floating);
     padding: 8px;
-    border-radius: var(--radius-xs);
+    border-radius: var(--radius-sm);
     max-width: 296px;
     gap: 8px;
     display: flex;
@@ -12475,7 +12475,6 @@ span.clanTag_f4aadc {
 }
 
 .cards__3f65d {
-    margin-top: 4px;
     gap: 8px;
     display: flex;
     flex-direction: column
@@ -12615,7 +12614,7 @@ span.clanTag_f4aadc {
 
 .othersCount__89551 {
     padding: 0 8px;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-modifier-accent-2);
     border-radius: var(--radius-lg);
     margin-left: -3px
 }
@@ -12625,7 +12624,7 @@ span.clanTag_f4aadc {
     flex-direction: row;
     align-items: center;
     padding: 4px 8px;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-modifier-accent-2);
     border-radius: var(--radius-lg);
     margin-left: 4px
 }
@@ -12633,8 +12632,7 @@ span.clanTag_f4aadc {
 .facepile__3688e {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin-top: 4px
+    align-items: center
 }
 
 .facePileItem__37c56:not(:first-child) {
@@ -44958,8 +44956,8 @@ img.thumbnail__18ece {
 
 .message__702f7 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -99358,6 +99356,35 @@ div.content_aac020 {
     position: relative
 }
 
+.bundlePreviewContainer__4f4af {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.bundlePreviewSlide_dc62a3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 276px
+}
+
+.bundleAvatarPreviewContainer_e07383 {
+    padding: 30px
+}
+
+.bundlePfxPreviewContainer_ec3791 {
+    height: 245px;
+    width: 148px;
+    position: relative
+}
+
+.bundleSlideTitle_f39228 {
+    text-align: center;
+    padding-top: 8px
+}
+
 .sampleProfileAsset__4d996 {
     width: 100%
 }
@@ -99365,6 +99392,7 @@ div.content_aac020 {
 .staticPfxPreview__9aa70 {
     position: absolute;
     left: 0;
+    top: 0;
     height: 100%;
     width: 100%;
     border-radius: 10px;
@@ -141931,4 +141959,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=99387.7ee5ed20d2ab33dd7c64.css.map*/
+/*# sourceMappingURL=99387.00e7893c4ee3058bf763.css.map*/
