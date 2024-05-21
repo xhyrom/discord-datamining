@@ -1,0 +1,28 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2024-05_clientside_recently_online_desktop",
+    "label": "Recently Online Clientside Desktop",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Friends/DMs Only",
+      "Treatment 2: Guild Member List Only",
+      "Treatment 3: Friends/DMs and Guild Member List"
+    ],
+    "hash": 4231847915,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "holdout": {},
+    "aa_mode": false,
+    "config_keys": [
+      "isFriendsAndDMsEnabled",
+      "isGuildMemberListEnabled"
+    ]
+  }
+}
